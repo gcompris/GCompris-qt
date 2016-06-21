@@ -78,7 +78,7 @@ ActivityBase {
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
-    property  string inputText: ""
+    property string inputText: ""
     property variant sections: [
         {
             icon: menuActivity.url + "all.svg",
@@ -129,8 +129,8 @@ ActivityBase {
         source: menuActivity.url + "background.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
         height: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard ?
-                    main.height - (((keyboard.keyHeight+keyboard.rowSpacing) * keyboard.rows)+keyboard.margin)
-                  :main.height
+                main.height - (((keyboard.keyHeight+keyboard.rowSpacing) * keyboard.rows)+keyboard.margin)
+                :main.height
         fillMode: Image.PreserveAspectCrop
 
         function loadActivity() {
@@ -173,9 +173,16 @@ ActivityBase {
                     event.key === Qt.Key_S) {
                 // Ctrl+S toggle show / hide section
                 ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
+            } else if(currentTag === "search") {
+                // forward to the virtual keyboard the pressed keys
+                if(event.key == Qt.Key_Backspace)
+                    keyboard.keypress(keyboard.backspace);
+                else
+                    keyboard.keypress(event.text);
             } else if(event.key === Qt.Key_Space && currentActiveGrid.currentItem) {
                 currentActiveGrid.currentItem.selectCurrentItem()
             }
+            
         }
         Keys.onReleased: {
             keyboardMode = true
@@ -184,7 +191,7 @@ ActivityBase {
         Keys.onTabPressed: currentActiveGrid = ((currentActiveGrid == activitiesGrid) ?
                                                     section : activitiesGrid);
         Keys.onEnterPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
-        Keys.onReturnPressed: if(currentActiveGrid.currentItem)  currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onReturnPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onRightPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexRight();
         Keys.onLeftPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexLeft();
         Keys.onDownPressed: if(currentActiveGrid.currentItem && !currentActiveGrid.atYEnd) currentActiveGrid.moveCurrentIndexDown();
@@ -194,12 +201,9 @@ ActivityBase {
             id: section
             model: sections
             width: horizontal ? main.width : sectionCellWidth
-            height:
-            {
-               if(currentTag === "search"){
-
-                   if(horizontal) return sectionCellHeight + searchbar.height
-                    else return background.height - bar.height
+            height: {
+               if(currentTag === "search") {
+                   return horizontal ? sectionCellHeight : background.height - bar.height
                }
                else
                    return horizontal ? (sectionCellHeight) : main.height - bar.height
@@ -241,24 +245,17 @@ ActivityBase {
                     }
 
                     function selectCurrentItem() {
-
-
-                               if(modelData.tag === "search"){
-
-                                   section.currentIndex = index
-                                   menuActivity.currentTag = modelData.tag
-                                   ActivityInfoTree.filterBySearch(input.text);
-                               }
-                               else
-                               {
-                                   particles.burst(10)
-                                   ActivityInfoTree.filterByTag(modelData.tag)
-                                   ActivityInfoTree.filterLockedActivities()
-                                   ActivityInfoTree.filterEnabledActivities()
-                                   menuActivity.currentTag = modelData.tag
-                                   section.currentIndex = index
-                               }
-
+                        section.currentIndex = index
+                        menuActivity.currentTag = modelData.tag
+                        if(modelData.tag === "search") {
+                            ActivityInfoTree.filterBySearch(input.text);
+                        }
+                        else {
+                            particles.burst(10)
+                            ActivityInfoTree.filterByTag(modelData.tag)
+                            ActivityInfoTree.filterLockedActivities()
+                            ActivityInfoTree.filterEnabledActivities()
+                        }
                     }
                 }
             }
@@ -317,7 +314,6 @@ ActivityBase {
                                "sun on each activity top right.")
                 }
                 Rectangle {
-
                     anchors.fill: instructionTxt
                     anchors.margins: -6
                     z: 1
@@ -339,14 +335,11 @@ ActivityBase {
             layer.enabled: true
 
             anchors {
-                top:
-                {
+                top: {
                     if(menuActivity.currentTag === "search")
-                    {
-                        return horizontal ? (section.bottom ) : searchbar.bottom
-                    }
+                        return searchbar.bottom
                     else
-                        return horizontal ? (section.bottom ) : parent.top
+                        return horizontal ? section.bottom : parent.top
                 }
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
@@ -504,127 +497,102 @@ ActivityBase {
         }
 
 
-        Rectangle{
+        Rectangle {
             id: searchbar
-            width: horizontal ? parent.width/2 : parent.width - (section.width+10)
+            width: horizontal ?  parent.width/2 : parent.width - (section.width+10)
             height: horizontal ? parent.height/10 : parent.height/17
-            visible:  menuActivity.currentTag === "search" ? true :false
-            anchors
-            {
-               bottom : horizontal ? activitiesGrid.top : undefined
-               top: horizontal ? undefined : parent.top
-               left: horizontal ? undefined : section.right
+            visible: menuActivity.currentTag === "search"
+            anchors {
+                top: horizontal ? section.bottom : parent.top
+                left: horizontal ? undefined : section.right
             }
-            anchors.topMargin: horizontal ? undefined : 4
-            anchors.bottomMargin: horizontal ? undefined : 4
-            x: horizontal ? (parent.width/2) - (searchbar.width/2) : 0
+            anchors.topMargin: horizontal ? 0 : 4
+            anchors.bottomMargin: horizontal ? 0 : 4
+            anchors.horizontalCenter: horizontal ? parent.horizontalCenter : undefined
             opacity: 0.5
             radius: 10
             border.width: 2
             border.color: "black"
             gradient: Gradient {
-
                GradientStop { position: 0.3; color: "#000" }
                GradientStop { position: 0.9; color: "#666" }
                GradientStop { position: 1.0; color: "#AAA" }
+            }
 
-           }
-
-            TextField{
-                id : input
+            TextField {
+                id: input
                 anchors.fill: parent
-                text: ""
+                text: menuActivity.inputText
                 textColor: "black"
                 font.pixelSize: 28
                 font.bold: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
-                font.family:GCSingletonFontLoader.fontLoader.name
-                activeFocusOnPress:  !ApplicationSettings.isVirtualKeyboard
-                onTextChanged:
-                {
-                    menuActivity.inputText = input.text;
+                font.family: GCSingletonFontLoader.fontLoader.name
+                activeFocusOnPress: !ApplicationInfo.mobile
+                placeholderText: qsTr("Search specific activities")
+                onTextChanged: {
                     ActivityInfoTree.filterBySearch(input.text);
                 }
             }
         }
 
-        VirtualKeyboard{
-            id:keyboard
-            parent: background
-            property string search;
-            property var letter;
+        VirtualKeyboard {
+            id: keyboard
+//            parent: background
+            readonly property var letter: ActivityInfoTree.characters
             property int rows;
-            width: horizontal ? main.width :parent.width - (section.width +10)
-            visible: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard ?
-                          true :false
-            anchors
-            {
-                top: background.bottom
-                left:  parent.left
-             }
-            onKeypress:
-            {
-                var string  = text
-                if ( string == keyboard.backspace){
-                     backspace(string)
-                     return
+            width: parent.width//horizontal ? main.width : parent.width - (section.width +10)
+            visible: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
+//            anchors {
+//                top: background.bottom
+//                left: parent.left
+//            }
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            onKeypress: {
+                if(text == keyboard.backspace) {
+                    input.text = input.text.slice(0, -1);
                 }
-                if (string == keyboard.space){
-                        space(string)
-                        return
-                }
-                input.text = input.text.concat(string);
-
-                function backspace(string_)
-                {
-                        input.text = input.text.slice(0,-1);
-                }
-                function space(string_)
-                {
+                else if(text == keyboard.space) {
                     input.text = input.text.concat(" ");
                 }
-
-
+                else {
+                    input.text = input.text.concat(text);
+                }
             }
-           letter: ActivityInfoTree.characters
-           layout:
-           {
+            layout: {
                var layout = [];
                var row = 0;
                var offset = 0;
                var cols;
-               while (offset < letter.length-1) {
-
-                   if(letter.length <=100){
+               while(offset < letter.length-1) {
+                   if(letter.length <= 100) {
                        cols = Math.ceil((letter.length-offset) / (3 - row));
                    }
-                   else{
+                   else {
                        cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
                                                        :(Math.ceil((letter.length-offset) / (22 - row)))
-                       if(row == 0){
-                       layout[row] = new Array();
-                       layout[row].push({ label: keyboard.backspace });
-                       layout[row].push({label: keyboard.space});
-                       row++;
+                       if(row == 0) {
+                           layout[row] = new Array();
+                           layout[row].push({ label: keyboard.backspace });
+                           layout[row].push({ label: keyboard.space });
+                           row++;
                        }
-
-                  }
+                   }
 
                    layout[row] = new Array();
                    for (var j = 0; j < cols; j++)
                        layout[row][j] = { label: letter[j+offset] };
                    offset += j;
-                   row++;
+                   row ++;
                }
-               if(letter.length <=100){
+               if(letter.length <= 100){
                    layout[0].push({ label: keyboard.space });
-                   layout[row -1].push({label: keyboard.backspace});
+                   layout[row-1].push({ label: keyboard.backspace });
                }
-
                keyboard.rows = 3;
                return layout;
-
            }
         }
 
@@ -634,6 +602,7 @@ ActivityBase {
             content: BarEnumContent {
                 value: help | config | about | (ApplicationInfo.isMobile ? 0 : exit)
             }
+            anchors.bottom: keyboard.visible ? keyboard.top : parent.bottom
             onAboutClicked: {
                 displayDialog(dialogAbout)
             }
@@ -676,7 +645,7 @@ ActivityBase {
             dialogActivityConfig.configItem.save();
         }
         onClose: {
-            if(menuActivity.currentTag != "search"){
+            if(menuActivity.currentTag != "search") {
                 ActivityInfoTree.filterByTag(menuActivity.currentTag)
                 ActivityInfoTree.filterLockedActivities()
                 ActivityInfoTree.filterEnabledActivities()

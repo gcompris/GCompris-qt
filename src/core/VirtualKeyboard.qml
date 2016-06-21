@@ -297,18 +297,19 @@ Item {
          */
     }
 
-//    Behavior on height {
-//        NumberAnimation {
-//            duration: 500
-//            easing.type: Easing.OutCubic
-//        }
-//    }
+    Behavior on height {
+        NumberAnimation {
+            duration: 500
+            easing.type: Easing.OutCubic
+        }
+    }
 
     Rectangle {
         id: keyboardBackground
 
         width: parent.width
-        height: 1000
+        height: keyboard.height // ??? parent.height
+
         color: "#8C8F8C"
         opacity: keyboard.opacity
 
@@ -324,7 +325,7 @@ Item {
             spacing: keyboard.rowSpacing
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom
-            interactive: true
+            interactive: false
 
             model: rowListModel
 
