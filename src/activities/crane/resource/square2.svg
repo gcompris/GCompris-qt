@@ -8,12 +8,12 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="39.999996"
-   height="39.820225"
+   width="40"
+   height="40"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="rectangle1.svg">
+   sodipodi:docname="square2.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -23,17 +23,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1176"
+     inkscape:window-width="1623"
+     inkscape:window-height="1029"
      id="namedview92"
      showgrid="false"
-     inkscape:zoom="22.57958"
-     inkscape:cx="25.409764"
-     inkscape:cy="20.265589"
-     inkscape:window-x="1680"
-     inkscape:window-y="24"
+     inkscape:zoom="15.966174"
+     inkscape:cx="23.705107"
+     inkscape:cy="22.60369"
+     inkscape:window-x="57"
+     inkscape:window-y="21"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2"
+     inkscape:current-layer="g4234"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -64,9 +64,9 @@
          id="imagebot_79" />
     </filter>
     <linearGradient
-       x1="24.171039"
+       x1="24.17104"
        y1="47.577785"
-       x2="24.171039"
+       x2="24.17104"
        y2="1.0341095"
        id="imagebot_21"
        gradientTransform="scale(1.0342956,0.96684156)"
@@ -344,10 +344,10 @@
        inkscape:collect="always"
        xlink:href="#imagebot_14"
        id="linearGradient4223"
-       x1="43.507754"
+       x1="43.507755"
        y1="7.2410396e-05"
-       x2="4.8343238"
-       y2="48.611821"
+       x2="4.8343239"
+       y2="48.61182"
        gradientTransform="scale(1.0342956,0.96684156)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
@@ -355,8 +355,8 @@
        xlink:href="#imagebot_10"
        id="linearGradient4225"
        x1="0.72041303"
-       y1="-0.31747701"
-       x2="5.4129399"
+       y1="-0.31747702"
+       x2="5.41294"
        y2="19.887384"
        gradientTransform="scale(1.0342956,0.96684156)"
        gradientUnits="userSpaceOnUse" />
@@ -366,7 +366,7 @@
      label="The button"
      id="imagebot_26"
      style="display:none"
-     transform="translate(29.580861,-467.17877)">
+     transform="translate(29.580861,-466.99899)">
     <g
        transform="translate(0,453)"
        display="none"
@@ -486,74 +486,78 @@
        id="title77">The button</title>
   </g>
   <g
-     id="g10617"
-     transform="matrix(0.92381366,0,0,0.92381366,1.7172167,1.6656697)">
-    <rect
-       transform="matrix(0.7879393,0,0,0.83912351,-0.56100219,-0.59042768)"
-       style="fill:#2e343b;fill-opacity:1;filter:url(#imagebot_25)"
-       id="imagebot_24"
-       ry="5"
-       rx="5"
-       height="43"
-       width="46"
-       y="2.8999801"
-       x="2.9319999" />
-    <rect
-       style="fill:#007fff"
-       id="imagebot_23"
-       rx="3.9396968"
-       ry="4.1956177"
-       height="36.08231"
-       width="36.245209"
-       y="1.1450537"
-       x="1.2438136" />
-    <rect
-       transform="matrix(0.7879393,0,0,0.83912351,-0.33206508,-0.53319338)"
-       style="opacity:0.2;fill:#007fff;filter:url(#imagebot_22)"
-       id="imagebot_19"
-       clip-path="url(#imagebot_20)"
-       rx="5"
-       ry="5"
-       height="43"
-       width="46"
-       y="2"
-       x="2" />
-    <rect
-       transform="matrix(0.7879393,0,0,0.83912351,-0.33206508,-0.53319338)"
-       style="opacity:0.2;fill:#007fff;filter:url(#imagebot_18)"
-       id="imagebot_15"
-       clip-path="url(#imagebot_16)"
-       rx="5"
-       ry="5"
-       height="43"
-       width="46"
-       y="2"
-       x="2" />
-    <rect
-       transform="matrix(0.7879393,0,0,0.83912351,-0.33206508,-0.53319338)"
-       style="opacity:0.75;fill:#007fff;stroke:url(#linearGradient4220);stroke-width:3;filter:url(#imagebot_13)"
-       id="imagebot_11"
-       clip-path="url(#imagebot_12)"
-       rx="5"
-       ry="5"
-       height="43"
-       width="46"
-       y="2"
-       x="2" />
-    <path
-       transform="matrix(0.7879393,0,0,0.83912351,-0.33206508,-0.53319338)"
-       inkscape:connector-curvature="0"
-       style="opacity:0.4;fill:#01a2ff;fill-opacity:1;stroke:url(#linearGradient4222);stroke-width:4;filter:url(#imagebot_9)"
-       id="imagebot_7"
-       d="M 8.4688,6.1875 C 3.8476,7.782 7.4393,15.029 6.3125,18.6555 c 0.62103,6.9955 -1.1298,14.718 0.65625,21.375 4.5637,2.3956 10.868,-0.08174 15.969,0.8125 6.4509,-0.5986 13.667,1.0479 19.781,-0.53125 2.639,-4.145 0.061,-10.224 0.97,-14.969 -0.637,-5.988 1.153,-12.73 -0.657,-18.375 -4.563,-2.3958 -10.868,0.0815 -15.969,-0.8128 -6.197,0.0245 -12.399,-0.0465 -18.593,0.0313 L 8.4688,6.1875 Z"
-       clip-path="url(#imagebot_8)" />
-    <path
-       transform="matrix(0.7879393,0,0,0.83912351,-0.33206508,-0.53319338)"
-       style="opacity:0.2;fill:#01a2ff;fill-opacity:1;filter:url(#imagebot_6)"
-       inkscape:connector-curvature="0"
-       id="imagebot_4"
-       d="M 7,2 C 4.23,2 2,4.23 2,7 L 2,29.031 C 15.226,18.119 37.357,23.935 48,19 L 48,7 C 48,4.23 45.77,2 43,2 L 7,2 Z"
-       clip-path="url(#imagebot_5)" />
+     id="g4234"
+     transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,19.880559,-8.0477991)">
+    <g
+       id="g10644"
+       transform="matrix(0.92729065,0,0,0.92729065,1.5913939,2.0181814)">
+      <rect
+         x="2.9319999"
+         y="2.8999801"
+         width="46"
+         height="43"
+         rx="5"
+         ry="5"
+         id="imagebot_24"
+         style="fill:#2e343b;fill-opacity:1;filter:url(#imagebot_25)"
+         transform="matrix(0.62304522,0,0,0.66351798,3.9029285,3.4438143)" />
+      <rect
+         x="5.3300457"
+         y="4.8161073"
+         width="28.66008"
+         height="28.531273"
+         ry="3.31759"
+         rx="3.1152263"
+         id="imagebot_23"
+         style="fill:#812ee7;fill-opacity:1" />
+      <rect
+         x="2"
+         y="2"
+         width="46"
+         height="43"
+         ry="5"
+         rx="5"
+         clip-path="url(#imagebot_20)"
+         id="imagebot_19"
+         style="opacity:0.2;fill:#da33fa;fill-opacity:1;filter:url(#imagebot_22)"
+         transform="matrix(0.62304522,0,0,0.66351798,4.0839553,3.4890711)" />
+      <rect
+         x="2"
+         y="2"
+         width="46"
+         height="43"
+         ry="5"
+         rx="5"
+         clip-path="url(#imagebot_16)"
+         id="imagebot_15"
+         style="opacity:0.2;fill:#e94eff;fill-opacity:1;filter:url(#imagebot_18)"
+         transform="matrix(0.62304522,0,0,0.66351798,4.0839553,3.4890711)" />
+      <rect
+         x="2"
+         y="2"
+         width="46"
+         height="43"
+         ry="5"
+         rx="5"
+         clip-path="url(#imagebot_12)"
+         id="imagebot_11"
+         style="opacity:0.75;fill:#c22bff;fill-opacity:1;stroke:url(#linearGradient4220);stroke-width:3;filter:url(#imagebot_13)"
+         transform="matrix(0.62304522,0,0,0.66351798,4.0839553,3.4890711)" />
+      <path
+         clip-path="url(#imagebot_8)"
+         d="M 8.4688,6.1875 C 3.8476,7.782 7.4393,15.029 6.3125,18.6555 c 0.62103,6.9955 -1.1298,14.718 0.65625,21.375 4.5637,2.3956 10.868,-0.08174 15.969,0.8125 6.4509,-0.5986 13.667,1.0479 19.781,-0.53125 2.639,-4.145 0.061,-10.224 0.97,-14.969 -0.637,-5.988 1.153,-12.73 -0.657,-18.375 -4.563,-2.3958 -10.868,0.0815 -15.969,-0.8128 -6.197,0.0245 -12.399,-0.0465 -18.593,0.0313 L 8.4688,6.1875 Z"
+         id="imagebot_7"
+         style="opacity:0.4;fill:#9701ff;fill-opacity:1;stroke:url(#linearGradient4222);stroke-width:4;filter:url(#imagebot_9)"
+         inkscape:connector-curvature="0"
+         transform="matrix(0.62304522,0,0,0.66351798,4.3344846,3.6143359)" />
+      <path
+         clip-path="url(#imagebot_5)"
+         d="M 7,2 C 4.23,2 2,4.23 2,7 L 2,29.031 C 15.226,18.119 37.357,23.935 48,19 L 48,7 C 48,4.23 45.77,2 43,2 L 7,2 Z"
+         id="imagebot_4"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#ffffff;fill-opacity:1;filter:url(#imagebot_6)"
+         transform="matrix(-0.01850167,-0.62277045,0.66322536,-0.01970353,5.835686,34.679836)" />
+    </g>
   </g>
   <metadata
      id="metadata90">image/svg+xmlOpenclipartCustom color round square button2011-10-20T12:29:43I see you liked my last button so, here it another one for you. 

@@ -65,11 +65,11 @@
   </defs>
   <sodipodi:namedview
      id="base"
-     inkscape:zoom="10.053334"
+     inkscape:zoom="8.0000004"
      height="300px"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="27.614756"
+     inkscape:cx="11.949038"
      inkscape:window-y="21"
      width="300px"
      inkscape:guide-bbox="true"
@@ -83,7 +83,7 @@
      inkscape:pageshadow="2"
      pagecolor="#ffffff"
      gridtolerance="10000"
-     inkscape:cy="29.677664"
+     inkscape:cy="19.741699"
      inkscape:document-units="px"
      inkscape:window-height="1029"
      showgrid="false"
@@ -91,7 +91,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-to-guides="true"
+     inkscape:snap-others="true" />
   <g
      id="layer1"
      inkscape:label="Layer 1"
@@ -103,12 +105,12 @@
        style="fill:#2d251c;filter:url(#filter3334)"
        d="m 145.24,30.124 128.67,223.81 -242.85,0 -10e-4,0 114.18,-223.81 0,0.004 z"
        inkscape:connector-curvature="0"
-       transform="matrix(0.14241272,0,0,0.14241272,-19.350064,279.26916)" />
+       transform="matrix(0.13139446,0,0,0.14389503,-16.125147,279.05863)" />
     <path
        id="rect3253"
        sodipodi:nodetypes="ccccccc"
        style="fill:#ff01a7;fill-opacity:0.89455782"
-       d="m -0.66790147,281.59584 19.65820847,34.1937 -37.102631,0 -1.57e-4,0 17.44442287,-34.1937 0,6.1e-4 z"
+       d="m 1.1116043,281.40953 18.1372817,34.5496 -34.232055,0 -1.45e-4,0 16.0947737,-34.5496 0,6.1e-4 z"
        inkscape:connector-curvature="0" />
     <path
        id="path3338"
@@ -116,7 +118,7 @@
        style="fill:url(#linearGradient3346);filter:url(#filter3392)"
        d="m 126.87,27.712 114.79,201.31 -217.51,0.62 0.001,0 102.72,-201.93 0,0.002 z"
        inkscape:connector-curvature="0"
-       transform="matrix(0.15278003,0,0,0.15278003,-20.406039,279.23904)" />
+       transform="matrix(0.14095967,0,0,0.15437025,-16.683824,279.0282)" />
   </g>
   <metadata
      id="metadata16">

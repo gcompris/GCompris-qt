@@ -13,7 +13,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="imagebot11.svg">
+   sodipodi:docname="rectangle2.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -28,8 +28,8 @@
      id="namedview92"
      showgrid="false"
      inkscape:zoom="15.966174"
-     inkscape:cx="19.192875"
-     inkscape:cy="21.693419"
+     inkscape:cx="20.549048"
+     inkscape:cy="18.226155"
      inkscape:window-x="57"
      inkscape:window-y="21"
      inkscape:window-maximized="1"
@@ -489,72 +489,76 @@
      label="Big Preview"
      id="imagebot_2"
      transform="translate(26.746441,-467.88738)">
-    <rect
-       style="fill:#250137;fill-opacity:1;filter:url(#imagebot_25)"
-       id="imagebot_24"
-       ry="5"
-       rx="5"
-       height="43"
-       width="46"
-       y="2.8999801"
-       x="2.9319999"
-       transform="matrix(0.79302373,0,0,0.84453821,-27.177384,467.44131)" />
-    <rect
-       style="fill:#ff007f"
-       id="imagebot_23"
-       rx="3.9651189"
-       ry="4.2226911"
-       height="36.315144"
-       width="36.479092"
-       y="469.13037"
-       x="-25.591337" />
-    <rect
-       style="opacity:0.2;fill:#ff007f;filter:url(#imagebot_22)"
-       id="imagebot_19"
-       clip-path="url(#imagebot_20)"
-       rx="5"
-       ry="5"
-       height="43"
-       width="46"
-       y="2"
-       x="2"
-       transform="matrix(0.79302373,0,0,0.84453821,-27.177384,467.44131)" />
-    <rect
-       style="opacity:0.2;fill:#ff007f;filter:url(#imagebot_18)"
-       id="imagebot_15"
-       clip-path="url(#imagebot_16)"
-       rx="5"
-       ry="5"
-       height="43"
-       width="46"
-       y="2"
-       x="2"
-       transform="matrix(0.79302373,0,0,0.84453821,-27.177384,467.44131)" />
-    <rect
-       style="opacity:0.75;fill:#a30137;fill-opacity:0.81292515;stroke:url(#linearGradient4220);stroke-width:3;filter:url(#imagebot_13)"
-       id="imagebot_11"
-       clip-path="url(#imagebot_12)"
-       rx="5"
-       ry="5"
-       height="43"
-       width="46"
-       y="2"
-       x="2"
-       transform="matrix(0.79302373,0,0,0.84453821,-27.177384,467.44131)" />
-    <path
-       inkscape:connector-curvature="0"
-       style="opacity:0.4;fill:#ff0137;fill-opacity:1;stroke:url(#linearGradient4222);stroke-width:4;filter:url(#imagebot_9)"
-       id="imagebot_7"
-       d="M 8.4688,6.1875 C 3.8476,7.782 7.4393,15.029 6.3125,18.6555 c 0.62103,6.9955 -1.1298,14.718 0.65625,21.375 4.5637,2.3956 10.868,-0.08174 15.969,0.8125 6.4509,-0.5986 13.667,1.0479 19.781,-0.53125 2.639,-4.145 0.061,-10.224 0.97,-14.969 -0.637,-5.988 1.153,-12.73 -0.657,-18.375 -4.563,-2.3958 -10.868,0.0815 -15.969,-0.8128 -6.197,0.0245 -12.399,-0.0465 -18.593,0.0313 L 8.4688,6.1875 Z"
-       clip-path="url(#imagebot_8)"
-       transform="matrix(0.79302373,0,0,0.84453821,-27.177384,467.44131)" />
-    <path
-       style="opacity:0.2;fill:#ff0137;fill-opacity:1;filter:url(#imagebot_6)"
-       inkscape:connector-curvature="0"
-       id="imagebot_4"
-       d="M 7,2 C 4.23,2 2,4.23 2,7 L 2,29.031 C 15.226,18.119 37.357,23.935 48,19 L 48,7 C 48,4.23 45.77,2 43,2 L 7,2 Z"
-       clip-path="url(#imagebot_5)"
-       transform="matrix(0.79302373,0,0,0.84453821,-27.177384,467.44131)" />
+    <g
+       id="g10626"
+       transform="translate(0.9394862,-1.1900158)">
+      <rect
+         transform="matrix(0.7279091,0,0,0.77519376,-26.471774,470.30143)"
+         x="2.9319999"
+         y="2.8999801"
+         width="46"
+         height="43"
+         rx="5"
+         ry="5"
+         id="imagebot_24"
+         style="fill:#250137;fill-opacity:1;filter:url(#imagebot_25)" />
+      <rect
+         x="-25.015957"
+         y="471.85181"
+         width="33.483818"
+         height="33.333332"
+         ry="3.8759689"
+         rx="3.6395459"
+         id="imagebot_23"
+         style="fill:#ff007f" />
+      <rect
+         transform="matrix(0.7279091,0,0,0.77519376,-26.471774,470.30143)"
+         x="2"
+         y="2"
+         width="46"
+         height="43"
+         ry="5"
+         rx="5"
+         clip-path="url(#imagebot_20)"
+         id="imagebot_19"
+         style="opacity:0.2;fill:#ff007f;filter:url(#imagebot_22)" />
+      <rect
+         transform="matrix(0.7279091,0,0,0.77519376,-26.471774,470.30143)"
+         x="2"
+         y="2"
+         width="46"
+         height="43"
+         ry="5"
+         rx="5"
+         clip-path="url(#imagebot_16)"
+         id="imagebot_15"
+         style="opacity:0.2;fill:#ff007f;filter:url(#imagebot_18)" />
+      <rect
+         transform="matrix(0.7279091,0,0,0.77519376,-26.471774,470.30143)"
+         x="2"
+         y="2"
+         width="46"
+         height="43"
+         ry="5"
+         rx="5"
+         clip-path="url(#imagebot_12)"
+         id="imagebot_11"
+         style="opacity:0.75;fill:#a30137;fill-opacity:0.81292515;stroke:url(#linearGradient4220);stroke-width:3;filter:url(#imagebot_13)" />
+      <path
+         transform="matrix(0.7279091,0,0,0.77519376,-26.471774,470.30143)"
+         clip-path="url(#imagebot_8)"
+         d="M 8.4688,6.1875 C 3.8476,7.782 7.4393,15.029 6.3125,18.6555 c 0.62103,6.9955 -1.1298,14.718 0.65625,21.375 4.5637,2.3956 10.868,-0.08174 15.969,0.8125 6.4509,-0.5986 13.667,1.0479 19.781,-0.53125 2.639,-4.145 0.061,-10.224 0.97,-14.969 -0.637,-5.988 1.153,-12.73 -0.657,-18.375 -4.563,-2.3958 -10.868,0.0815 -15.969,-0.8128 -6.197,0.0245 -12.399,-0.0465 -18.593,0.0313 L 8.4688,6.1875 Z"
+         id="imagebot_7"
+         style="opacity:0.4;fill:#ff0137;fill-opacity:1;stroke:url(#linearGradient4222);stroke-width:4;filter:url(#imagebot_9)"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0.7279091,0,0,0.77519376,-26.471774,470.30143)"
+         clip-path="url(#imagebot_5)"
+         d="M 7,2 C 4.23,2 2,4.23 2,7 L 2,29.031 C 15.226,18.119 37.357,23.935 48,19 L 48,7 C 48,4.23 45.77,2 43,2 L 7,2 Z"
+         id="imagebot_4"
+         inkscape:connector-curvature="0"
+         style="opacity:0.2;fill:#ff0137;fill-opacity:1;filter:url(#imagebot_6)" />
+    </g>
     <title
        id="title88">Big Preview</title>
   </g>

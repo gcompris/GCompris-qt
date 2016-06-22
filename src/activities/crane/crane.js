@@ -29,12 +29,13 @@ var numberOfLevel = 10
 var items
 var url = "qrc:/gcompris/src/activities/crane/resource/"
 
+var showGrid = [1,1,1,0,0,1,1,0,0,0]
 var howManyFigures = [3,3,3,4,5,5,6,7,8,9,10,11,12,13]
-var allNames = ["bulb.png","letter-a.svg","letter-b.svg",
-                "rectangle1.svg","rectangle2.svg","square1.png",
-                "square2.png","triangle1.svg","triangle2.svg",
-                "tux.png","water_drop1.png","water_drop2.png",
-                "water_spot1.png","water_spot2.png"]
+var allNames = ["bulb.svg","letter-a.svg","letter-b.svg",
+                "rectangle1.svg","rectangle2.svg","square1.svg",
+                "square2.svg","triangle1.svg","triangle2.svg",
+                "tux.svg","water_drop1.svg","water_drop2.svg",
+                "water_spot1.svg","water_spot2.svg"]
 var words = ["cat","dog","win","good","happy"]
 var names = []
 var names2 = []
@@ -71,6 +72,11 @@ function init() {
 
     //set opacity for first item's "selection frame"
     items.repeater.itemAt(items.selected).selected.opacity = 1
+
+    //show or hide the grid
+    if (showGrid[currentLevel])
+        items.showGrid1.opacity = 1
+    else items.showGrid1.opacity = 0
 }
 
 function setRandomModel(){
@@ -113,6 +119,7 @@ function setRandomModel(){
 
     items.repeater.model = names.length
     items.modelRepeater.model = names2.length
+    items.gridRepeater.model = names.length
 
     for (i = 0; i < names.length; i++) {
         items.repeater.itemAt(i).source = names[i]

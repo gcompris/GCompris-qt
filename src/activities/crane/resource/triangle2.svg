@@ -16,7 +16,7 @@
    inkscape:export-xdpi="90"
    version="1.0"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   sodipodi:docname="nlyl-orange-triangle.svg"
+   sodipodi:docname="triangle2.svg"
    inkscape:export-filename="C:\Documents and Settings\sm\Desktop\inkscape graphics\orange_triangle.png"
    inkscape:version="0.91 r13725"
    sodipodi:version="0.32"
@@ -38,16 +38,16 @@
     </filter>
     <linearGradient
        id="linearGradient3346"
-       y2="122.31302"
+       y2="128.4601"
        gradientUnits="userSpaceOnUse"
-       x2="137.69939"
+       x2="141.19279"
        gradientTransform="translate(-15.119,-28.647)"
-       y1="214.32419"
-       x1="196.68362"
+       y1="276.90256"
+       x1="295.49481"
        inkscape:collect="always">
       <stop
          id="stop3342"
-         style="stop-color:#8c7e03;stop-opacity:0.3197279"
+         style="stop-color:#fae41f;stop-opacity:0"
          offset="0" />
       <stop
          id="stop3344"
@@ -69,7 +69,7 @@
      height="300px"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="6.179081"
+     inkscape:cx="-1.778478"
      inkscape:window-y="21"
      width="300px"
      inkscape:guide-bbox="true"
@@ -83,7 +83,7 @@
      inkscape:pageshadow="2"
      pagecolor="#ffffff"
      gridtolerance="10000"
-     inkscape:cy="29.677664"
+     inkscape:cy="13.563607"
      inkscape:document-units="px"
      inkscape:window-height="1029"
      showgrid="false"
@@ -103,20 +103,20 @@
        style="fill:#2d251c;filter:url(#filter3334)"
        d="m 145.24,30.124 128.67,223.81 -242.85,0 -10e-4,0 114.18,-223.81 0,0.004 z"
        inkscape:connector-curvature="0"
-       transform="matrix(0.14241272,0,0,0.14241272,-19.350064,279.26916)" />
+       transform="matrix(0.13363973,0,0,0.14358673,-16.719194,279.10242)" />
     <path
        id="rect3253"
        sodipodi:nodetypes="ccccccc"
-       style="fill:#ffe701;fill-opacity:0.90476191"
-       d="m -0.66790147,281.59584 19.65820847,34.1937 -37.102631,0 -1.57e-4,0 17.44442287,-34.1937 0,6.1e-4 z"
+       style="fill:#ffe701;fill-opacity:0.90476194"
+       d="m 0.81209897,281.44828 18.44721103,34.47558 -34.817012,0 -1.48e-4,0 16.36980196,-34.47558 0,6.1e-4 z"
        inkscape:connector-curvature="0" />
     <path
        id="path3338"
        sodipodi:nodetypes="ccccccc"
-       style="fill:url(#linearGradient3346);filter:url(#filter3392)"
+       style="fill:url(#linearGradient3346);fill-opacity:1;filter:url(#filter3392)"
        d="m 126.87,27.712 114.79,201.31 -217.51,0.62 0.001,0 102.72,-201.93 0,0.002 z"
        inkscape:connector-curvature="0"
-       transform="matrix(0.15278003,0,0,0.15278003,-20.406039,279.23904)" />
+       transform="matrix(0.14336838,0,0,0.1540395,-17.710118,279.07205)" />
   </g>
   <metadata
      id="metadata16">

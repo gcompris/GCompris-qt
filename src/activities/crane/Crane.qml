@@ -25,10 +25,6 @@ import QtQuick 2.1
 import "../../core"
 import "crane.js" as Activity
 
-/* TODOs
-  1. add grid for first levels
-  2. change images from png to svg
-  */
 
 ActivityBase {
     id: activity
@@ -39,7 +35,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "white"
+        color: "#ffeecc"
 
         signal start
         signal stop
@@ -60,6 +56,8 @@ ActivityBase {
             property alias grid: grid
             property alias repeater: repeater
             property alias modelRepeater: modelRepeater
+            property alias gridRepeater: gridRepeater
+            property alias showGrid1: showGrid1
             property int selected
             property int columns
             property int rows
@@ -121,10 +119,42 @@ ActivityBase {
         }
 
         Grid {
+            id: showGrid1
+            columns: items.columns
+            rows: items.rows
+            z: 1
+            anchors.fill: board
+            Repeater {
+                id: gridRepeater
+
+                Rectangle {
+                    width:  board.width/items.columns
+                    height:  board.height/items.rows
+                    color: "transparent"
+                    border.width: 2
+                    border.color: "grey"
+                }
+            }
+        }
+
+        Rectangle {
+            id: coverEgdes1
+            color: "transparent"
+            width: board.width
+            height: board.height
+            border.color: board.color
+            border.width: 10
+            opacity: showGrid1.opacity
+            anchors.centerIn: board
+            z: 3
+        }
+
+
+        Grid {
             id: grid
             columns: items.columns
             rows: items.rows
-            z: 3
+            z: 4
             anchors.fill: board
 
             Repeater {
@@ -173,6 +203,7 @@ ActivityBase {
                         onPressed: {
                             startX = mouse.x;
                             startY = mouse.y;
+                            print("print: ",Activity.showGrid[Activity.currentLevel]=="true" )
                         }
 
                         onReleased:
@@ -205,6 +236,7 @@ ActivityBase {
             id: modelBoard
             color: "pink"
             radius: width * 0.02
+            z: 1
 
             anchors {
                 left: background.portrait ? board.left : crane_vertical.right
@@ -216,23 +248,59 @@ ActivityBase {
             width: board.width
             height: board.height
 
-            Grid {
-                id: modelGrid
-                columns: items.columns
-                rows: items.rows
+        }
 
-                Repeater {
-                    id: modelRepeater
+        Grid {
+            id: modelGrid
+            columns: items.columns
+            rows: items.rows
+            anchors.fill: modelBoard
+            z: 4
 
-                    Image {
-                        id: modelFigure
-                        sourceSize.height: board.height/items.rows
-                        sourceSize.width: board.width/items.columns
-                        width: board.width/items.columns
-                        height: board.height/items.rows
-                    }
+            Repeater {
+                id: modelRepeater
+
+                Image {
+                    id: modelFigure
+                    sourceSize.height: board.height/items.rows
+                    sourceSize.width: board.width/items.columns
+                    width: board.width/items.columns
+                    height: board.height/items.rows
                 }
             }
+        }
+
+        Grid {
+            id: showGrid2
+            columns: items.columns
+            rows: items.rows
+            z: 1
+            opacity: showGrid1.opacity
+            anchors.fill: modelBoard
+            Repeater {
+                id: gridRepeater2
+                model: gridRepeater.model
+
+                Rectangle {
+                    width:  modelBoard.width/items.columns
+                    height:  modelBoard.height/items.rows
+                    color: "transparent"
+                    border.width: 2
+                    border.color: Activity.showGrid[Activity.currentLevel] ? "grey" : "transparent"
+                }
+            }
+        }
+
+        Rectangle {
+            id: coverEgdes2
+            color: "transparent"
+            width: modelBoard.width
+            height: modelBoard.height
+            border.color: Activity.showGrid[Activity.currentLevel] ? modelBoard.color : transparent
+            border.width: 10
+            anchors.centerIn: modelBoard
+            opacity: showGrid1.opacity
+            z: 3
         }
 
         Image {
@@ -242,7 +310,7 @@ ActivityBase {
             sourceSize.height: background.portrait ? background.height * 0.03 : background.height * 0.06
             width:  background.portrait ? background.width * 0.8 : background.width * 0.5
             height: background.portrait ? background.height * 0.03 : background.height * 0.06
-            z: 3
+            z: 4
             anchors {
                 top: parent.top
                 right: crane_vertical.right
@@ -270,12 +338,15 @@ ActivityBase {
         Image {
             id: crane_body
             source: "resource/crane_only.svg"
-            sourceSize.width: parent.width / 6
-            sourceSize.height: parent.height/ 4
+            z: 2
+            sourceSize.width: parent.width / 5
+            sourceSize.height: parent.height/ 3.6
+            mirror: background.portrait ? true : false
             anchors {
                 top: crane_vertical.bottom
                 topMargin: - (height / 1.8)
                 right: crane_vertical.right
+                rightMargin: background.portrait ? board.anchors.margins : - crane_body.width + crane_vertical.width
                 margins: board.anchors.margins
             }
         }
@@ -283,11 +354,14 @@ ActivityBase {
         Image {
             id: crane_wire
             source: "resource/crane-wire.svg"
+            z: 1
             sourceSize.width: parent.width / 22
             sourceSize.height: parent.width / 17
             anchors {
                 right: crane_body.left
                 bottom: crane_command.verticalCenter
+                rightMargin: -10
+                bottomMargin: -10
             }
         }
 
@@ -297,11 +371,13 @@ ActivityBase {
             sourceSize.width: parent.width / 4
             sourceSize.height: parent.height/ 3.5
             mirror: true
+
             anchors {
                 top: crane_body.top
                 bottom: crane_body.bottom
                 right: crane_wire.left
                 rightMargin: 0
+                topMargin: background.portrait ? board.anchors.margins : 50
                 margins: board.anchors.margins
             }
 
@@ -352,8 +428,10 @@ ActivityBase {
             width: 5
             height: convert.y
             x: convert.x + items.repeater.itemAt(items.selected).width / 2
-            y: crane_top.height/2
-            z: 1
+            z: 3
+            anchors.top: crane_top.top
+            anchors.topMargin: 10
+
             property var convert: items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,items.repeater.itemAt(items.selected).y)
 
             Behavior on x {
