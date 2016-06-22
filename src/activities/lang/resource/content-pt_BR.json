@@ -568,5 +568,19 @@
     "tired.ogg": "cansado",
     "under.ogg": "embaixo",
     "wet.ogg": "encharcado",
-    "wheat.ogg": "trigo"
+    "wheat.ogg": "trigo",
+    "U0030.ogg": "zero",
+    "U0031.ogg": "um",
+    "U0032.ogg": "dois",
+    "U0033.ogg": "três",
+    "U0034.ogg": "quatro",
+    "U0035.ogg": "cinco",
+    "U0036.ogg": "seis",
+    "U0037.ogg": "sete",
+    "U0038.ogg": "oito",
+    "U0039.ogg": "nove",
+    "10.ogg": "dez",
+    "11.ogg": "onze",
+    "12.ogg": "doze",
+    "16.ogg": "dezesseis"
 }
