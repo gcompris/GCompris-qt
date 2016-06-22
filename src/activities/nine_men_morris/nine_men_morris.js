@@ -31,7 +31,6 @@ var currentPiece
 var currentPlayer
 var currentLocation
 var twoPlayer
-var track = []      //For tracking moves
 var stopper     //For stopping game when doing reset
 //var dragPoints = []
 //var firstPhase
@@ -41,6 +40,7 @@ var otherRepeater
 var numberOfFirstPieces
 var numberOfSecondPieces
 var numberOfPieces
+var numberOfDragPoints
 var chance
 
 function start(items_, twoPlayer_) {
@@ -53,6 +53,7 @@ function start(items_, twoPlayer_) {
     twoPlayer = twoPlayer_
     numberOfLevel = 6
     numberOfPieces = 9
+    numberOfDragPoints = 24
     items.playSecond = false
 
     // First time Drag point creation
@@ -80,7 +81,7 @@ function start(items_, twoPlayer_) {
     }
 
     // For assigning left and right point
-    for (var i = 0 ; i < 24 ; i++) {
+    for (var i = 0 ; i < numberOfDragPoints ; i++) {
         if(i % 3)
             items.dragPoints.itemAt(i).leftPoint = items.dragPoints.itemAt(i - 1)
         else
@@ -166,7 +167,6 @@ function initLevel() {
     //items.board.sourceSize.width = 3.5 * Math.min(items.background.width / 4 , items.background.height / 6)
     //items.board.anchors.horizontalCenterOffset = -0.18 * items.board.width
     //items.pieces.clear()
-    track = []
     /*for(var y = 0;  y < items.rows; y++) {
         for(var x = 0;  x < items.columns; x++) {
             items.pieces.append({'stateTemp': "invisible"})
@@ -176,7 +176,7 @@ function initLevel() {
     // Clear first and second player pieces, and initialize dragPoints
     items.firstPlayerPieces.model.clear()
     items.secondPlayerPieces.model.clear()
-    for (var i = 0 ; i < 24 ; ++i)
+    for (var i = 0 ; i < numberOfDragPoints ; ++i)
             items.dragPoints.itemAt(i).state = "AVAILABLE"
 
     // Create first and second player pieces
@@ -368,7 +368,7 @@ function changePlayToSecond() {
         return 0
     }
     if(!twoPlayer) {
-        var rand = Math.floor((Math.random() * 24))
+        var rand = Math.floor((Math.random() * numberOfDragPoints))
         handleCreate(rand)
     }
 }
@@ -410,7 +410,7 @@ function secondPhase() {
     //items.board.sourceSize.width = 3.4 * Math.min(items.background.width / 4 , items.background.height / 6)
     //items.board.sourceSize.width = Math.min(items.background.height - 1.4*items.player1.height - 1.2*items.bar.height,
                                             //0.9*items.background.width)
-    for (var i = 0 ; i < 24 ; ++i) {
+    for (var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state != "1" && items.dragPoints.itemAt(i).state != "2")
             items.dragPoints.itemAt(i).state = "EMPTY"
     }
@@ -428,33 +428,34 @@ function pieceSelected(pieceIndex) {
        (currentPiece.state == "2" && numberOfSecondPieces > 3)) {
 
         // Initialize values
-        for (var i = 0 ; i < 24 ; ++i) {
+        for (var i = 0 ; i < numberOfDragPoints ; ++i) {
             if(items.dragPoints.itemAt(i).state == "EMPTY" || items.dragPoints.itemAt(i).state == "AVAILABLE")
                 items.dragPoints.itemAt(i).state = "UNAVAILABLE"
         }
 
         // Now assign values
         var index = currentRepeater.itemAt(pieceIndex).parentIndex // Drag Point index
+        var dragPoint = items.dragPoints.itemAt(index)
 
-        if(items.dragPoints.itemAt(index).leftPoint) {
-            if(items.dragPoints.itemAt(index).leftPoint.state == "UNAVAILABLE")
-                items.dragPoints.itemAt(index).leftPoint.state = "AVAILABLE"
+        if(dragPoint.leftPoint) {
+            if(dragPoint.leftPoint.state == "UNAVAILABLE")
+                dragPoint.leftPoint.state = "AVAILABLE"
         }
-        if(items.dragPoints.itemAt(index).upperPoint) {
-            if(items.dragPoints.itemAt(index).upperPoint.state == "UNAVAILABLE")
-                items.dragPoints.itemAt(index).upperPoint.state = "AVAILABLE"
+        if(dragPoint.upperPoint) {
+            if(dragPoint.upperPoint.state == "UNAVAILABLE")
+                dragPoint.upperPoint.state = "AVAILABLE"
         }
-        if(items.dragPoints.itemAt(index).rightPoint) {
-            if(items.dragPoints.itemAt(index).rightPoint.state == "UNAVAILABLE")
-                items.dragPoints.itemAt(index).rightPoint.state = "AVAILABLE"
+        if(dragPoint.rightPoint) {
+            if(dragPoint.rightPoint.state == "UNAVAILABLE")
+                dragPoint.rightPoint.state = "AVAILABLE"
         }
-        if(items.dragPoints.itemAt(index).lowerPoint) {
-            if(items.dragPoints.itemAt(index).lowerPoint.state == "UNAVAILABLE")
-                items.dragPoints.itemAt(index).lowerPoint.state = "AVAILABLE"
+        if(dragPoint.lowerPoint) {
+            if(dragPoint.lowerPoint.state == "UNAVAILABLE")
+                dragPoint.lowerPoint.state = "AVAILABLE"
         }
     }
     else {
-        for (var i = 0 ; i < 24 ; ++i) {
+        for (var i = 0 ; i < numberOfDragPoints ; ++i) {
             if(items.dragPoints.itemAt(i).state == "EMPTY" || items.dragPoints.itemAt(i).state == "UNAVAILABLE")
                 items.dragPoints.itemAt(i).state = "AVAILABLE"
         }
@@ -466,7 +467,7 @@ function movePiece(index) {
     items.pieceBeingMoved = true
     currentPiece.parent.state = "EMPTY"
     currentPiece.isSelected = false
-    for (var i = 0 ; i < 24 ; ++i) {
+    for (var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state != "1" && items.dragPoints.itemAt(i).state != "2")
             items.dragPoints.itemAt(i).state = "EMPTY"
     }
@@ -480,7 +481,7 @@ function shouldComputerPlay() {
     if(!twoPlayer) {
         if(items.counter % 2 && items.playSecond == false && stopper == 0)
             doMove()
-        else if((items.counter % 2 == 0) && items.playSecond == true && stopper == 0)
+        else if((items.counter % 2 == 0) && items.playSecond && stopper == 0)
             doMove()
         else
             items.pieceBeingMoved = false
@@ -533,7 +534,7 @@ function setFirstPhaseMove() {
 
     var found = false
     while (!found) {
-        var randno = Math.floor((Math.random() * 24))
+        var randno = Math.floor((Math.random() * numberOfDragPoints))
         //console.log(randno)
         if(items.dragPoints.itemAt(randno).state == "EMPTY" || items.dragPoints.itemAt(randno).state == "AVAILABLE")
             found = true
@@ -543,7 +544,7 @@ function setFirstPhaseMove() {
 
 function evaluateBoard(state) {
 
-    for(var i = 0 ; i < 24 ; ++i) {
+    for(var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state == "EMPTY" || items.dragPoints.itemAt(i).state == "AVAILABLE") {
             if(checkMill(i,state))
                 return i
@@ -556,105 +557,95 @@ function setSecondPhaseMove() {
 
     console.log("setSecondPhaseMove()")
     var index = []
-    var fl = false
+    var found = false
 
     if(currentLevel > 1) {
         for(var i = 0 ; i < numberOfPieces ; ++i) {
-            if(currentRepeater.itemAt(i).visible) {
+            var piece = currentRepeater.itemAt(i)
+            if(piece.visible) {
                 index[0] = i
-                if(currentRepeater.itemAt(i).pieceParent.leftPoint &&
-                   currentRepeater.itemAt(i).pieceParent.leftPoint.state == "EMPTY") {
-                    if(checkMill(currentRepeater.itemAt(i).pieceParent.leftPoint.index,
-                                 currentRepeater.itemAt(i).state, "left")) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.leftPoint.index
-                        fl = true
+                if(piece.pieceParent.leftPoint && piece.pieceParent.leftPoint.state == "EMPTY") {
+                    if(checkMill(piece.pieceParent.leftPoint.index, piece.state, "left")) {
+                        index[1] = piece.pieceParent.leftPoint.index
+                        found = true
                         console.log("leftPoint")
                         break
                     }
                 }
-                if(currentRepeater.itemAt(i).pieceParent.rightPoint &&
-                   currentRepeater.itemAt(i).pieceParent.rightPoint.state == "EMPTY") {
-                    if(checkMill(currentRepeater.itemAt(i).pieceParent.rightPoint.index,
-                                 currentRepeater.itemAt(i).state, "right")) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.rightPoint.index
-                        fl = true
+                if(piece.pieceParent.rightPoint && piece.pieceParent.rightPoint.state == "EMPTY") {
+                    if(checkMill(piece.pieceParent.rightPoint.index, piece.state, "right")) {
+                        index[1] = piece.pieceParent.rightPoint.index
+                        found = true
                         console.log("rightPoint")
                         break
                     }
                 }
-                if(currentRepeater.itemAt(i).pieceParent.upperPoint &&
-                   currentRepeater.itemAt(i).pieceParent.upperPoint.state == "EMPTY") {
-                    if(checkMill(currentRepeater.itemAt(i).pieceParent.upperPoint.index,
-                                 currentRepeater.itemAt(i).state, "upper")) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.upperPoint.index
-                        fl = true
+                if(piece.pieceParent.upperPoint && piece.pieceParent.upperPoint.state == "EMPTY") {
+                    if(checkMill(piece.pieceParent.upperPoint.index, piece.state, "upper")) {
+                        index[1] = piece.pieceParent.upperPoint.index
+                        found = true
                         console.log("upperPoint")
                         break
                     }
                 }
-                if(currentRepeater.itemAt(i).pieceParent.lowerPoint &&
-                   currentRepeater.itemAt(i).pieceParent.lowerPoint.state == "EMPTY") {
-                    if(checkMill(currentRepeater.itemAt(i).pieceParent.lowerPoint.index,
-                                 currentRepeater.itemAt(i).state, "lower")) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.lowerPoint.index
-                        fl = true
+                if(piece.pieceParent.lowerPoint && piece.pieceParent.lowerPoint.state == "EMPTY") {
+                    if(checkMill(piece.pieceParent.lowerPoint.index, piece.state, "lower")) {
+                        index[1] = piece.pieceParent.lowerPoint.index
+                        found = true
                         console.log("lowerPoint")
                         break
                     }
                 }
             }
         }
-        if(fl) {
-            console.log("1 fl=",fl," 0=",index[0]," 1=",index[1])
+        if(found) {
+            console.log("1 found=",found," 0=",index[0]," 1=",index[1])
             return index
         }
     }
 
+    var playerState = items.playSecond ? "2" : "1"
     if(currentLevel > 2) {
-        var playerState = items.playSecond ? "2" : "1"
         for(var i = 0 ; i < numberOfPieces ; ++i) {
-            if(currentRepeater.itemAt(i).visible) {
+            var piece = currentRepeater.itemAt(i)
+            if(piece.visible) {
                 index[0] = i
-                if(currentRepeater.itemAt(i).pieceParent.leftPoint &&
-                   currentRepeater.itemAt(i).pieceParent.leftPoint.state == "EMPTY") {
-                    if(checkMillPossible(currentRepeater.itemAt(i).pieceParent.leftPoint.index, playerState)) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.leftPoint.index
-                        fl = true
+                if(piece.pieceParent.leftPoint && piece.pieceParent.leftPoint.state == "EMPTY") {
+                    if(checkMillPossible(piece.pieceParent.leftPoint.index, playerState)) {
+                        index[1] = piece.pieceParent.leftPoint.index
+                        found = true
                         console.log("leftPoint")
                         break
                     }
                 }
-                if(currentRepeater.itemAt(i).pieceParent.rightPoint &&
-                   currentRepeater.itemAt(i).pieceParent.rightPoint.state == "EMPTY") {
-                    if(checkMillPossible(currentRepeater.itemAt(i).pieceParent.rightPoint.index, playerState)) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.rightPoint.index
-                        fl = true
+                if(piece.pieceParent.rightPoint && piece.pieceParent.rightPoint.state == "EMPTY") {
+                    if(checkMillPossible(piece.pieceParent.rightPoint.index, playerState)) {
+                        index[1] = piece.pieceParent.rightPoint.index
+                        found = true
                         console.log("rightPoint")
                         break
                     }
                 }
-                if(currentRepeater.itemAt(i).pieceParent.upperPoint &&
-                   currentRepeater.itemAt(i).pieceParent.upperPoint.state == "EMPTY") {
-                    if(checkMillPossible(currentRepeater.itemAt(i).pieceParent.upperPoint.index, playerState)) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.upperPoint.index
-                        fl = true
+                if(piece.pieceParent.upperPoint && piece.pieceParent.upperPoint.state == "EMPTY") {
+                    if(checkMillPossible(piece.pieceParent.upperPoint.index, playerState)) {
+                        index[1] = piece.pieceParent.upperPoint.index
+                        found = true
                         console.log("upperPoint")
                         break
                     }
                 }
-                if(currentRepeater.itemAt(i).pieceParent.lowerPoint &&
-                   currentRepeater.itemAt(i).pieceParent.lowerPoint.state == "EMPTY") {
-                    if(checkMillPossible(currentRepeater.itemAt(i).pieceParent.lowerPoint.index, playerState)) {
-                        index[1] = currentRepeater.itemAt(i).pieceParent.lowerPoint.index
-                        fl = true
+                if(piece.pieceParent.lowerPoint && piece.pieceParent.lowerPoint.state == "EMPTY") {
+                    if(checkMillPossible(piece.pieceParent.lowerPoint.index, playerState)) {
+                        index[1] = piece.pieceParent.lowerPoint.index
+                        found = true
                         console.log("lowerPoint")
                         break
                     }
                 }
             }
         }
-        if(fl) {
-            console.log("2 fl=",fl," 0=",index[0]," 1=",index[1])
+        if(found) {
+            console.log("2 found=",found," 0=",index[0]," 1=",index[1])
             return index
         }
     }
@@ -664,7 +655,7 @@ function setSecondPhaseMove() {
     for(var i = 0 ; i < numberOfPieces ; ++i) {
         if(currentRepeater.itemAt(i).visible) {
             //console.log("ppi=",i)
-            if(!checkMill(currentRepeater.itemAt(i).pieceParent.index, otherRepeater.itemAt(0).state))
+            if(!checkMill(currentRepeater.itemAt(i).pieceParent.index, playerState))
                 permittedPieceIndex.push(i)
         }
     }
@@ -681,21 +672,19 @@ function setSecondPhaseMove() {
         var randno = Math.floor((Math.random() * permittedPieceIndex.length))
         index[0] = permittedPieceIndex[randno]
         var permittedPointIndex = []
-        if(currentRepeater.itemAt(index[0]).pieceParent.leftPoint &&
-           currentRepeater.itemAt(index[0]).pieceParent.leftPoint.state == "EMPTY") {
-            permittedPointIndex.push(currentRepeater.itemAt(index[0]).pieceParent.leftPoint.index)
+        var dragPoint = currentRepeater.itemAt(index[0]).pieceParent
+
+        if(dragPoint.leftPoint && dragPoint.leftPoint.state == "EMPTY") {
+            permittedPointIndex.push(dragPoint.leftPoint.index)
         }
-        if(currentRepeater.itemAt(index[0]).pieceParent.rightPoint &&
-           currentRepeater.itemAt(index[0]).pieceParent.rightPoint.state == "EMPTY") {
-            permittedPointIndex.push(currentRepeater.itemAt(index[0]).pieceParent.rightPoint.index)
+        if(dragPoint.rightPoint && dragPoint.rightPoint.state == "EMPTY") {
+            permittedPointIndex.push(dragPoint.rightPoint.index)
         }
-        if(currentRepeater.itemAt(index[0]).pieceParent.upperPoint &&
-           currentRepeater.itemAt(index[0]).pieceParent.upperPoint.state == "EMPTY") {
-            permittedPointIndex.push(currentRepeater.itemAt(index[0]).pieceParent.upperPoint.index)
+        if(dragPoint.upperPoint && dragPoint.upperPoint.state == "EMPTY") {
+            permittedPointIndex.push(dragPoint.upperPoint.index)
         }
-        if(currentRepeater.itemAt(index[0]).pieceParent.lowerPoint &&
-           currentRepeater.itemAt(index[0]).pieceParent.lowerPoint.state == "EMPTY") {
-            permittedPointIndex.push(currentRepeater.itemAt(index[0]).pieceParent.lowerPoint.index)
+        if(dragPoint.lowerPoint && dragPoint.lowerPoint.state == "EMPTY") {
+            permittedPointIndex.push(dragPoint.lowerPoint.index)
         }
         if(permittedPointIndex.length) {
             var randNo = Math.floor((Math.random() * permittedPointIndex.length))
@@ -712,76 +701,48 @@ function checkMillPossible(index, state) {
 
    // thirdPhase is true if opponent can move its piece anywhere
    var thirdPhase = (items.playSecond && numberOfSecondPieces < 4) || (!items.playSecond && numberOfFirstPieces < 4)
-   if(items.dragPoints.itemAt(index).leftPoint) {
-        if(items.dragPoints.itemAt(index).leftPoint.leftPoint) {
-            if(state == items.dragPoints.itemAt(index).leftPoint.state &&
-                state == items.dragPoints.itemAt(index).leftPoint.leftPoint.state) {
-                    if((items.dragPoints.itemAt(index).upperPoint &&
-                        state == items.dragPoints.itemAt(index).upperPoint.state) ||
-                       (items.dragPoints.itemAt(index).lowerPoint &&
-                        state == items.dragPoints.itemAt(index).lowerPoint.state) || thirdPhase)
-                            return true;
-            }
+   var dragPoint = items.dragPoints.itemAt(index)
+
+   if(dragPoint.leftPoint && dragPoint.leftPoint.leftPoint) {
+        if(state == dragPoint.leftPoint.state && state == dragPoint.leftPoint.leftPoint.state) {
+            if((dragPoint.upperPoint && state == dragPoint.upperPoint.state) ||
+               (dragPoint.lowerPoint && state == dragPoint.lowerPoint.state) || thirdPhase)
+                return true
         }
     }
-    if(items.dragPoints.itemAt(index).upperPoint) {
-        if(items.dragPoints.itemAt(index).upperPoint.upperPoint) {
-            if(state == items.dragPoints.itemAt(index).upperPoint.state &&
-                state == items.dragPoints.itemAt(index).upperPoint.upperPoint.state) {
-                    if((items.dragPoints.itemAt(index).leftPoint &&
-                        state == items.dragPoints.itemAt(index).leftPoint.state) ||
-                       (items.dragPoints.itemAt(index).rightPoint &&
-                        state == items.dragPoints.itemAt(index).rightPoint.state) || thirdPhase)
-                            return true;
-            }
+    if(dragPoint.upperPoint && dragPoint.upperPoint.upperPoint) {
+        if(state == dragPoint.upperPoint.state && state == dragPoint.upperPoint.upperPoint.state) {
+            if((dragPoint.leftPoint && state == dragPoint.leftPoint.state) ||
+               (dragPoint.rightPoint && state == dragPoint.rightPoint.state) || thirdPhase)
+                return true
         }
     }
-    if(items.dragPoints.itemAt(index).rightPoint) {
-        if(items.dragPoints.itemAt(index).rightPoint.rightPoint) {
-            if(state == items.dragPoints.itemAt(index).rightPoint.state &&
-                state == items.dragPoints.itemAt(index).rightPoint.rightPoint.state) {
-                    if((items.dragPoints.itemAt(index).upperPoint &&
-                        state == items.dragPoints.itemAt(index).upperPoint.state) ||
-                       (items.dragPoints.itemAt(index).lowerPoint &&
-                        state == items.dragPoints.itemAt(index).lowerPoint.state) || thirdPhase)
-                            return true;
-            }
+    if(dragPoint.rightPoint && dragPoint.rightPoint.rightPoint) {
+        if(state == dragPoint.rightPoint.state && state == dragPoint.rightPoint.rightPoint.state) {
+            if((dragPoint.upperPoint && state == dragPoint.upperPoint.state) ||
+               (dragPoint.lowerPoint && state == dragPoint.lowerPoint.state) || thirdPhase)
+                return true
         }
     }
-    if(items.dragPoints.itemAt(index).lowerPoint) {
-        if(items.dragPoints.itemAt(index).lowerPoint.lowerPoint) {
-            if(state == items.dragPoints.itemAt(index).lowerPoint.state &&
-                state == items.dragPoints.itemAt(index).lowerPoint.lowerPoint.state) {
-                    if((items.dragPoints.itemAt(index).leftPoint &&
-                        state == items.dragPoints.itemAt(index).leftPoint.state) ||
-                       (items.dragPoints.itemAt(index).rightPoint &&
-                        state == items.dragPoints.itemAt(index).rightPoint.state) || thirdPhase)
-                            return true;
-            }
+    if(dragPoint.lowerPoint && dragPoint.lowerPoint.lowerPoint) {
+        if(state == dragPoint.lowerPoint.state && state == dragPoint.lowerPoint.lowerPoint.state) {
+            if((dragPoint.leftPoint && state == dragPoint.leftPoint.state) ||
+               (dragPoint.rightPoint && state == dragPoint.rightPoint.state) || thirdPhase)
+                return true
         }
     }
-    if(items.dragPoints.itemAt(index).lowerPoint) {
-        if(items.dragPoints.itemAt(index).upperPoint) {
-            if(state == items.dragPoints.itemAt(index).lowerPoint.state &&
-                state == items.dragPoints.itemAt(index).upperPoint.state) {
-                    if((items.dragPoints.itemAt(index).leftPoint &&
-                        state == items.dragPoints.itemAt(index).leftPoint.state) ||
-                       (items.dragPoints.itemAt(index).rightPoint &&
-                        state == items.dragPoints.itemAt(index).rightPoint.state) || thirdPhase)
-                            return true;
-            }
+    if(dragPoint.lowerPoint && dragPoint.upperPoint) {
+        if(state == dragPoint.lowerPoint.state && state == dragPoint.upperPoint.state) {
+            if((dragPoint.leftPoint && state == dragPoint.leftPoint.state) ||
+               (dragPoint.rightPoint && state == dragPoint.rightPoint.state) || thirdPhase)
+                return true;
         }
     }
-    if(items.dragPoints.itemAt(index).leftPoint) {
-        if(items.dragPoints.itemAt(index).rightPoint) {
-            if(state == items.dragPoints.itemAt(index).leftPoint.state &&
-                state == items.dragPoints.itemAt(index).rightPoint.state) {
-                    if((items.dragPoints.itemAt(index).upperPoint &&
-                        state == items.dragPoints.itemAt(index).upperPoint.state) ||
-                       (items.dragPoints.itemAt(index).lowerPoint &&
-                        state == items.dragPoints.itemAt(index).lowerPoint.state) || thirdPhase)
-                            return true;
-            }
+    if(dragPoint.leftPoint && dragPoint.rightPoint) {
+        if(state == dragPoint.leftPoint.state && state == dragPoint.rightPoint.state) {
+            if((dragPoint.upperPoint && state == dragPoint.upperPoint.state) ||
+               (dragPoint.lowerPoint && state == dragPoint.lowerPoint.state) || thirdPhase)
+                return true;
         }
     }
 }
@@ -821,7 +782,7 @@ function setThirdPhaseMove() {
     var index = []
 
     if(currentLevel > 2) {
-        for(var i = 0 ; i < 24 ; ++i) {
+        for(var i = 0 ; i < numberOfDragPoints ; ++i) {
             if(items.dragPoints.itemAt(i).state == "EMPTY") {
                 var value = checkMillThirdPhase(i, computerState)
                 if(value != -1) {
@@ -857,7 +818,7 @@ function setThirdPhaseMove() {
     index[0] = permittedPieceIndex[randno]
 
     if(currentLevel > 3) {
-        for(var i = 0 ; i < 24 ; ++i) {
+        for(var i = 0 ; i < numberOfDragPoints ; ++i) {
             if(items.dragPoints.itemAt(i).state == "EMPTY") {
                 if(checkMillPossible(i,playerState)) {
                     index[1] = i
@@ -868,16 +829,18 @@ function setThirdPhaseMove() {
         }
     }
 
-    for(var i = 0 ; i < 24 ; ++i) {
-        if(items.dragPoints.itemAt(i).state == "EMPTY" &&
-          ((items.dragPoints.itemAt(i).leftPoint && items.dragPoints.itemAt(i).leftPoint.state == computerState
-            && items.dragPoints.itemAt(i).leftPoint.pieceIndex != index[0]) ||
-           (items.dragPoints.itemAt(i).rightPoint && items.dragPoints.itemAt(i).rightPoint.state == computerState
-            && items.dragPoints.itemAt(i).rightPoint.pieceIndex != index[0]) ||
-           (items.dragPoints.itemAt(i).upperPoint && items.dragPoints.itemAt(i).upperPoint.state == computerState
-            && items.dragPoints.itemAt(i).upperPoint.pieceIndex != index[0]) ||
-           (items.dragPoints.itemAt(i).lowerPoint && items.dragPoints.itemAt(i).lowerPoint.state == computerState
-            && items.dragPoints.itemAt(i).lowerPoint.pieceIndex != index[0]))) {
+    for(var i = 0 ; i < numberOfDragPoints ; ++i) {
+        var dragPoint = items.dragPoints.itemAt(i)
+
+        if(dragPoint.state == "EMPTY" &&
+          ((dragPoint.leftPoint && dragPoint.leftPoint.state == computerState
+            && dragPoint.leftPoint.pieceIndex != index[0]) ||
+           (dragPoint.rightPoint && dragPoint.rightPoint.state == computerState
+            && dragPoint.rightPoint.pieceIndex != index[0]) ||
+           (dragPoint.upperPoint && dragPoint.upperPoint.state == computerState
+            && dragPoint.upperPoint.pieceIndex != index[0]) ||
+           (dragPoint.lowerPoint && dragPoint.lowerPoint.state == computerState
+            && dragPoint.lowerPoint.pieceIndex != index[0]))) {
                 index[1] = i
                 console.log("3 3=",index[0],index[1])
                 return index
@@ -885,7 +848,7 @@ function setThirdPhaseMove() {
     }
 
     var permittedPointIndex = []
-    for(var i = 0 ; i < 24 ; ++i) {
+    for(var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state == "EMPTY")
             permittedPointIndex.push(i)
     }
@@ -896,81 +859,64 @@ function setThirdPhaseMove() {
 
 function checkMillThirdPhase(index, state) {
 
-    if(items.dragPoints.itemAt(index).leftPoint) {
-        if(items.dragPoints.itemAt(index).leftPoint.leftPoint) {
-            if(state == items.dragPoints.itemAt(index).leftPoint.state &&
-                state == items.dragPoints.itemAt(index).leftPoint.leftPoint.state) {
-                    for(var i = 0 ; i < numberOfPieces ; ++i) {
-                        if(currentRepeater.itemAt(i).visible && i != items.dragPoints.itemAt(index).leftPoint.pieceIndex
-                           && i != items.dragPoints.itemAt(index).leftPoint.leftPoint.pieceIndex) {
-                            return i
-                        }
-                    }
+    var dragPoint = items.dragPoints.itemAt(index)
+    if(dragPoint.leftPoint && dragPoint.leftPoint.leftPoint) {
+        if(state == dragPoint.leftPoint.state && state == dragPoint.leftPoint.leftPoint.state) {
+            for(var i = 0 ; i < numberOfPieces ; ++i) {
+                if(currentRepeater.itemAt(i).visible && i != dragPoint.leftPoint.pieceIndex
+                   && i != dragPoint.leftPoint.leftPoint.pieceIndex) {
+                    return i
+                }
             }
         }
     }
-    if(items.dragPoints.itemAt(index).upperPoint) {
-        if(items.dragPoints.itemAt(index).upperPoint.upperPoint) {
-            if(state == items.dragPoints.itemAt(index).upperPoint.state &&
-                state == items.dragPoints.itemAt(index).upperPoint.upperPoint.state) {
-                    for(var i = 0 ; i < numberOfPieces ; ++i) {
-                        if(currentRepeater.itemAt(i).visible && i != items.dragPoints.itemAt(index).upperPoint.pieceIndex
-                           && i != items.dragPoints.itemAt(index).upperPoint.upperPoint.pieceIndex) {
-                               return i
-                        }
-                    }
+    if(dragPoint.upperPoint && dragPoint.upperPoint.upperPoint) {
+        if(state == dragPoint.upperPoint.state && state == dragPoint.upperPoint.upperPoint.state) {
+            for(var i = 0 ; i < numberOfPieces ; ++i) {
+                if(currentRepeater.itemAt(i).visible && i != dragPoint.upperPoint.pieceIndex
+                   && i != dragPoint.upperPoint.upperPoint.pieceIndex) {
+                       return i
+                }
             }
         }
     }
-    if(items.dragPoints.itemAt(index).rightPoint) {
-        if(items.dragPoints.itemAt(index).rightPoint.rightPoint) {
-            if(state == items.dragPoints.itemAt(index).rightPoint.state &&
-                state == items.dragPoints.itemAt(index).rightPoint.rightPoint.state) {
-                    for(var i = 0 ; i < numberOfPieces ; ++i) {
-                        if(currentRepeater.itemAt(i).visible && i != items.dragPoints.itemAt(index).rightPoint.pieceIndex
-                           && i != items.dragPoints.itemAt(index).rightPoint.rightPoint.pieceIndex) {
-                               return i
-                        }
-                    }
+    if(dragPoint.rightPoint && dragPoint.rightPoint.rightPoint) {
+        if(state == dragPoint.rightPoint.state && state == dragPoint.rightPoint.rightPoint.state) {
+            for(var i = 0 ; i < numberOfPieces ; ++i) {
+                if(currentRepeater.itemAt(i).visible && i != dragPoint.rightPoint.pieceIndex
+                   && i != dragPoint.rightPoint.rightPoint.pieceIndex) {
+                       return i
+                }
             }
         }
     }
-    if(items.dragPoints.itemAt(index).lowerPoint) {
-        if(items.dragPoints.itemAt(index).lowerPoint.lowerPoint) {
-            if(state == items.dragPoints.itemAt(index).lowerPoint.state &&
-                state == items.dragPoints.itemAt(index).lowerPoint.lowerPoint.state) {
-                    for(var i = 0 ; i < numberOfPieces ; ++i) {
-                        if(currentRepeater.itemAt(i).visible && i != items.dragPoints.itemAt(index).lowerPoint.pieceIndex
-                           && i != items.dragPoints.itemAt(index).lowerPoint.lowerPoint.pieceIndex) {
-                               return i
-                        }
-                    }
+    if(dragPoint.lowerPoint && dragPoint.lowerPoint.lowerPoint) {
+        if(state == dragPoint.lowerPoint.state && state == dragPoint.lowerPoint.lowerPoint.state) {
+            for(var i = 0 ; i < numberOfPieces ; ++i) {
+                if(currentRepeater.itemAt(i).visible && i != dragPoint.lowerPoint.pieceIndex
+                   && i != dragPoint.lowerPoint.lowerPoint.pieceIndex) {
+                       return i
+                }
             }
         }
     }
-    if(items.dragPoints.itemAt(index).lowerPoint) {
-        if(items.dragPoints.itemAt(index).upperPoint) {
-            if(state == items.dragPoints.itemAt(index).lowerPoint.state &&
-                state == items.dragPoints.itemAt(index).upperPoint.state) {
-                    for(var i = 0 ; i < numberOfPieces ; ++i) {
-                        if(currentRepeater.itemAt(i).visible && i != items.dragPoints.itemAt(index).lowerPoint.pieceIndex
-                           && i != items.dragPoints.itemAt(index).upperPoint.pieceIndex) {
-                               return i
-                        }
-                    }
+    if(dragPoint.lowerPoint && dragPoint.upperPoint) {
+        if(state == dragPoint.lowerPoint.state && state == dragPoint.upperPoint.state) {
+            for(var i = 0 ; i < numberOfPieces ; ++i) {
+                if(currentRepeater.itemAt(i).visible && i != dragPoint.lowerPoint.pieceIndex
+                   && i != dragPoint.upperPoint.pieceIndex) {
+                       return i
+                }
             }
         }
     }
-    if(items.dragPoints.itemAt(index).leftPoint) {
-        if(items.dragPoints.itemAt(index).rightPoint) {
-            if(state == items.dragPoints.itemAt(index).leftPoint.state &&
-                state == items.dragPoints.itemAt(index).rightPoint.state) {
-                    for(var i = 0 ; i < numberOfPieces ; ++i) {
-                        if(currentRepeater.itemAt(i).visible && i != items.dragPoints.itemAt(index).leftPoint.pieceIndex
-                           && i != items.dragPoints.itemAt(index).rightPoint.pieceIndex) {
-                               return i
-                        }
-                    }
+    if(dragPoint.leftPoint && dragPoint.rightPoint) {
+        if(state == dragPoint.leftPoint.state && state == dragPoint.rightPoint.state) {
+            for(var i = 0 ; i < numberOfPieces ; ++i) {
+                if(currentRepeater.itemAt(i).visible && i != dragPoint.leftPoint.pieceIndex
+                   && i != dragPoint.rightPoint.pieceIndex) {
+                       return i
+                }
             }
         }
     }
@@ -1010,47 +956,30 @@ function checkMill(index, state, position) {
         if(dragPoints[1].state == dragPoints[2].state &&  dragPoints[2].state == state)
             //console.log("mill")
     }*/
-    if(items.dragPoints.itemAt(index).leftPoint && position != "left" && position != "right") {
-        if(items.dragPoints.itemAt(index).leftPoint.leftPoint) {
-            if(state == items.dragPoints.itemAt(index).leftPoint.state &&
-               state == items.dragPoints.itemAt(index).leftPoint.leftPoint.state)
-                    return true;
-        }
+    var dragPoint = items.dragPoints.itemAt(index)
+    if(dragPoint.leftPoint && dragPoint.leftPoint.leftPoint && position != "left" && position != "right") {
+        if(state == dragPoint.leftPoint.state && state == dragPoint.leftPoint.leftPoint.state)
+            return true;
     }
-    if(items.dragPoints.itemAt(index).upperPoint && position != "upper" && position != "lower") {
-        if(items.dragPoints.itemAt(index).upperPoint.upperPoint) {
-            if(state == items.dragPoints.itemAt(index).upperPoint.state &&
-               state == items.dragPoints.itemAt(index).upperPoint.upperPoint.state)
-                    return true;
-        }
+    if(dragPoint.upperPoint && dragPoint.upperPoint.upperPoint && position != "upper" && position != "lower") {
+        if(state == dragPoint.upperPoint.state && state == dragPoint.upperPoint.upperPoint.state)
+            return true;
     }
-    if(items.dragPoints.itemAt(index).rightPoint && position != "right" && position != "left") {
-        if(items.dragPoints.itemAt(index).rightPoint.rightPoint) {
-            if(state == items.dragPoints.itemAt(index).rightPoint.state &&
-               state == items.dragPoints.itemAt(index).rightPoint.rightPoint.state)
-                    return true;
-        }
+    if(dragPoint.rightPoint && dragPoint.rightPoint.rightPoint && position != "right" && position != "left") {
+        if(state == dragPoint.rightPoint.state && state == dragPoint.rightPoint.rightPoint.state)
+            return true;
     }
-    if(items.dragPoints.itemAt(index).lowerPoint && position != "lower" && position != "upper") {
-        if(items.dragPoints.itemAt(index).lowerPoint.lowerPoint) {
-            if(state == items.dragPoints.itemAt(index).lowerPoint.state &&
-               state == items.dragPoints.itemAt(index).lowerPoint.lowerPoint.state)
-                    return true;
-        }
+    if(dragPoint.lowerPoint && dragPoint.lowerPoint.lowerPoint && position != "lower" && position != "upper") {
+        if(state == dragPoint.lowerPoint.state && state == dragPoint.lowerPoint.lowerPoint.state)
+            return true;
     }
-    if(items.dragPoints.itemAt(index).lowerPoint && position != "lower" && position != "upper") {
-        if(items.dragPoints.itemAt(index).upperPoint) {
-            if(state == items.dragPoints.itemAt(index).lowerPoint.state &&
-               state == items.dragPoints.itemAt(index).upperPoint.state)
-                    return true;
-        }
+    if(dragPoint.lowerPoint && dragPoint.upperPoint && position != "lower" && position != "upper") {
+        if(state == dragPoint.lowerPoint.state && state == dragPoint.upperPoint.state)
+            return true;
     }
-    if(items.dragPoints.itemAt(index).leftPoint && position != "left" && position != "right") {
-        if(items.dragPoints.itemAt(index).rightPoint) {
-            if(state == items.dragPoints.itemAt(index).leftPoint.state &&
-               state == items.dragPoints.itemAt(index).rightPoint.state)
-                    return true;
-        }
+    if(dragPoint.leftPoint && dragPoint.rightPoint && position != "left" && position != "right") {
+        if(state == dragPoint.leftPoint.state && state == dragPoint.rightPoint.state)
+            return true;
     }
 }
 
@@ -1062,17 +991,17 @@ function UpdateRemovablePiece() {
         var foundOne = false
         for(var i = 0 ; i < numberOfPieces ; ++i) {
             //console.log(i)
-            if(otherRepeater.itemAt(i).parentIndex != -1) {
-                if(!checkMill(otherRepeater.itemAt(i).parentIndex, otherRepeater.itemAt(i).state) &&
-                    otherRepeater.itemAt(i).visible == true) {
+            var piece = otherRepeater.itemAt(i)
+            if(piece.parentIndex != -1) {
+                if(!checkMill(piece.parentIndex, piece.state) && piece.visible) {
                     foundOne = true
-                    otherRepeater.itemAt(i).canBeRemoved = true // Mark pieces of other player for removal
+                    piece.canBeRemoved = true // Mark pieces of other player for removal
                 }
             }
         }
         if(!foundOne) {
             for(var i = 0 ; i < numberOfPieces ; ++i) {
-                if((otherRepeater.itemAt(i).parentIndex != -1) && (otherRepeater.itemAt(i).visible == true))
+                if(otherRepeater.itemAt(i).parentIndex != -1 && otherRepeater.itemAt(i).visible)
                     otherRepeater.itemAt(i).canBeRemoved = true
             }
         }
@@ -1091,16 +1020,15 @@ function getFirstPhaseRemoveIndex() {
     var permittedIndex = [];
     for(var i = 0 ; i < numberOfPieces ; ++i) {
         //console.log(i)
-        if(otherRepeater.itemAt(i).parentIndex != -1) {
-            if(!checkMill(otherRepeater.itemAt(i).parentIndex, otherRepeater.itemAt(i).state) &&
-                otherRepeater.itemAt(i).visible == true) {
+        var piece = otherRepeater.itemAt(i)
+        if(piece.parentIndex != -1) {
+            if(!checkMill(piece.parentIndex, piece.state) && piece.visible)
                 permittedIndex.push(i)
-            }
         }
     }
-    if(!permittedIndex.length) {
+    if(permittedIndex.length == 0) {
         for(var i = 0 ; i < numberOfPieces ; ++i) {
-            if((otherRepeater.itemAt(i).parentIndex != -1) && (otherRepeater.itemAt(i).visible == true))
+            if((otherRepeater.itemAt(i).parentIndex != -1) && (otherRepeater.itemAt(i).visible))
                 permittedIndex.push(i)
         }
     }
@@ -1110,39 +1038,40 @@ function getFirstPhaseRemoveIndex() {
         if(index != -1) {
             //console.log(index)
             var value = -1
-            if(items.dragPoints.itemAt(index).leftPoint)
-                value = checkRemovedIndex(playerState, items.dragPoints.itemAt(index).leftPoint,
-                                          items.dragPoints.itemAt(index).leftPoint.leftPoint, permittedIndex)
+            var dragPoint = items.dragPoints.itemAt(index)
+            if(dragPoint.leftPoint)
+                value = checkRemovedIndex(playerState, dragPoint.leftPoint,
+                                          dragPoint.leftPoint.leftPoint, permittedIndex)
             if(value != -1)
                 return value
 
-            if(items.dragPoints.itemAt(index).upperPoint)
-                value = checkRemovedIndex(playerState, items.dragPoints.itemAt(index).upperPoint,
-                                          items.dragPoints.itemAt(index).upperPoint.upperPoint, permittedIndex)
+            if(dragPoint.upperPoint)
+                value = checkRemovedIndex(playerState, dragPoint.upperPoint,
+                                          dragPoint.upperPoint.upperPoint, permittedIndex)
             if(value != -1)
                 return value
 
-            if(items.dragPoints.itemAt(index).rightPoint)
-                value = checkRemovedIndex(playerState, items.dragPoints.itemAt(index).rightPoint,
-                                          items.dragPoints.itemAt(index).rightPoint.rightPoint, permittedIndex)
+            if(dragPoint.rightPoint)
+                value = checkRemovedIndex(playerState, dragPoint.rightPoint,
+                                          dragPoint.rightPoint.rightPoint, permittedIndex)
             if(value != -1)
                 return value
 
-            if(items.dragPoints.itemAt(index).lowerPoint)
-                value = checkRemovedIndex(playerState, items.dragPoints.itemAt(index).lowerPoint,
-                                          items.dragPoints.itemAt(index).lowerPoint.lowerPoint, permittedIndex)
+            if(dragPoint.lowerPoint)
+                value = checkRemovedIndex(playerState, dragPoint.lowerPoint,
+                                          dragPoint.lowerPoint.lowerPoint, permittedIndex)
             if(value != -1)
                 return value
 
-            if(items.dragPoints.itemAt(index).lowerPoint)
-                value = checkRemovedIndex(playerState, items.dragPoints.itemAt(index).lowerPoint,
-                                          items.dragPoints.itemAt(index).upperPoint, permittedIndex)
+            if(dragPoint.lowerPoint)
+                value = checkRemovedIndex(playerState, dragPoint.lowerPoint,
+                                          dragPoint.upperPoint, permittedIndex)
             if(value != -1)
                 return value
 
-            if(items.dragPoints.itemAt(index).leftPoint)
-                value = checkRemovedIndex(playerState, items.dragPoints.itemAt(index).leftPoint,
-                                          items.dragPoints.itemAt(index).rightPoint, permittedIndex)
+            if(dragPoint.leftPoint)
+                value = checkRemovedIndex(playerState, dragPoint.leftPoint,
+                                          dragPoint.rightPoint, permittedIndex)
             if(value != -1)
                 return value
         }
@@ -1155,8 +1084,7 @@ function getFirstPhaseRemoveIndex() {
 function checkRemovedIndex(state,first,second,permittedIndex) {
 
     if(second) {
-        if(state == first.state &&
-           state == second.state) {
+        if(state == first.state && state == second.state) {
                 //console.log("leftleft",first.pieceIndex)
                 if(Math.floor((Math.random() * 2))) {
                     for (var i = 0 ; i < permittedIndex.length ; ++ i) {
@@ -1188,58 +1116,53 @@ function getSecondPhaseRemoveIndex() {
     var permittedIndex = [];
     for(var i = 0 ; i < numberOfPieces ; ++i) {
         //console.log(i)
-        if(otherRepeater.itemAt(i).parentIndex != -1) {
-            if(otherRepeater.itemAt(i).visible == true &&
-               !checkMill(otherRepeater.itemAt(i).parentIndex, otherRepeater.itemAt(i).state)) {
+        var piece = otherRepeater.itemAt(i)
+        if(piece.parentIndex != -1) {
+            if(piece.visible && !checkMill(piece.parentIndex, piece.state))
                 permittedIndex.push(i)
-            }
         }
     }
-    if(!permittedIndex.length) {
+
+    if(permittedIndex.length == 0) {
         for(var i = 0 ; i < numberOfPieces ; ++i) {
-            if((otherRepeater.itemAt(i).parentIndex != -1) && (otherRepeater.itemAt(i).visible == true))
+            if((otherRepeater.itemAt(i).parentIndex != -1) && (otherRepeater.itemAt(i).visible))
                 permittedIndex.push(i)
         }
     }
 
     for(var index = 0 ; index < permittedIndex.length ; ++index) {
         var i = permittedIndex[index]
-        if(otherRepeater.itemAt(i).visible) {
-            if(otherRepeater.itemAt(i).pieceParent.leftPoint &&
-               otherRepeater.itemAt(i).pieceParent.leftPoint.state == "EMPTY") {
-                if(checkMill(otherRepeater.itemAt(i).pieceParent.leftPoint.index,
-                             otherRepeater.itemAt(i).state, "left")) {
-                    console.log("getSecondPhaseRemoveIndex","left",otherRepeater.itemAt(i).pieceParent.index)
+        var piece = otherRepeater.itemAt(i)
+
+        if(piece.visible) {
+            if(piece.pieceParent.leftPoint && piece.pieceParent.leftPoint.state == "EMPTY") {
+                if(checkMill(piece.pieceParent.leftPoint.index, piece.state, "left")) {
+                    console.log("getSecondPhaseRemoveIndex","left",piece.pieceParent.index)
                     return i
                 }
             }
-            if(otherRepeater.itemAt(i).pieceParent.rightPoint &&
-               otherRepeater.itemAt(i).pieceParent.rightPoint.state == "EMPTY") {
-                if(checkMill(otherRepeater.itemAt(i).pieceParent.rightPoint.index,
-                             otherRepeater.itemAt(i).state, "right")) {
-                    console.log("getSecondPhaseRemoveIndex","right",otherRepeater.itemAt(i).pieceParent.index)
+            if(piece.pieceParent.rightPoint && piece.pieceParent.rightPoint.state == "EMPTY") {
+                if(checkMill(piece.pieceParent.rightPoint.index, piece.state, "right")) {
+                    console.log("getSecondPhaseRemoveIndex","right",piece.pieceParent.index)
                     return i
                 }
             }
-            if(otherRepeater.itemAt(i).pieceParent.upperPoint &&
-               otherRepeater.itemAt(i).pieceParent.upperPoint.state == "EMPTY") {
-                if(checkMill(otherRepeater.itemAt(i).pieceParent.upperPoint.index,
-                             otherRepeater.itemAt(i).state, "upper")) {
-                    console.log("getSecondPhaseRemoveIndex","upper",otherRepeater.itemAt(i).pieceParent.index)
+            if(piece.pieceParent.upperPoint && piece.pieceParent.upperPoint.state == "EMPTY") {
+                if(checkMill(piece.pieceParent.upperPoint.index, piece.state, "upper")) {
+                    console.log("getSecondPhaseRemoveIndex","upper",piece.pieceParent.index)
                     return i
                 }
             }
-            if(otherRepeater.itemAt(i).pieceParent.lowerPoint &&
-               otherRepeater.itemAt(i).pieceParent.lowerPoint.state == "EMPTY") {
-                if(checkMill(otherRepeater.itemAt(i).pieceParent.lowerPoint.index,
-                             otherRepeater.itemAt(i).state, "lower")) {
-                    console.log("getSecondPhaseRemoveIndex","lower",otherRepeater.itemAt(i).pieceParent.index)
+            if(piece.pieceParent.lowerPoint && piece.pieceParent.lowerPoint.state == "EMPTY") {
+                if(checkMill(piece.pieceParent.lowerPoint.index, piece.state, "lower")) {
+                    console.log("getSecondPhaseRemoveIndex","lower",piece.pieceParent.index)
                     return i
                 }
             }
         }
     }
-    console.log("getFirstPhaseRemoveIndex")
+
+    console.log("getSecondPhaseRemoveIndex getFirstPhaseRemoveIndex")
     return getFirstPhaseRemoveIndex()
 }
 
@@ -1276,19 +1199,16 @@ function checkGameWon() {
     var flag = true;
     for (var i = 0 ; i < numberOfPieces ; ++i) {
         //console.log("otherRepeater.itemAt(i).visible",otherRepeater.itemAt(i).visible)
-        if(otherRepeater.itemAt(i).visible) {
-            //console.log("left",otherRepeater.itemAt(i).parent.leftPoint ? otherRepeater.itemAt(i).parent.leftPoint.state : "Null")
-            //console.log("right",otherRepeater.itemAt(i).parent.rightPoint ? otherRepeater.itemAt(i).parent.rightPoint.state : "Null")
-            //console.log("upper",otherRepeater.itemAt(i).parent.upperPoint ? otherRepeater.itemAt(i).parent.upperPoint.state : "Null")
-            //console.log("lower",otherRepeater.itemAt(i).parent.lowerPoint ? otherRepeater.itemAt(i).parent.lowerPoint.state : "Null")
-            if((otherRepeater.itemAt(i).parent.leftPoint &&
-                otherRepeater.itemAt(i).parent.leftPoint.state == "EMPTY") ||
-               (otherRepeater.itemAt(i).parent.rightPoint &&
-                otherRepeater.itemAt(i).parent.rightPoint.state == "EMPTY") ||
-               (otherRepeater.itemAt(i).parent.upperPoint &&
-                otherRepeater.itemAt(i).parent.upperPoint.state == "EMPTY") ||
-               (otherRepeater.itemAt(i).parent.lowerPoint &&
-                otherRepeater.itemAt(i).parent.lowerPoint.state == "EMPTY")) {
+        var piece = otherRepeater.itemAt(i)
+        if(piece.visible) {
+            //console.log("left",piece.parent.leftPoint ? piece.parent.leftPoint.state : "Null")
+            //console.log("right",piece.parent.rightPoint ? piece.parent.rightPoint.state : "Null")
+            //console.log("upper",piece.parent.upperPoint ? piece.parent.upperPoint.state : "Null")
+            //console.log("lower",piece.parent.lowerPoint ? piece.parent.lowerPoint.state : "Null")
+            if((piece.parent.leftPoint && piece.parent.leftPoint.state == "EMPTY") ||
+               (piece.parent.rightPoint && piece.parent.rightPoint.state == "EMPTY") ||
+               (piece.parent.upperPoint && piece.parent.upperPoint.state == "EMPTY") ||
+               (piece.parent.lowerPoint && piece.parent.lowerPoint.state == "EMPTY")) {
                     flag = false
                     break
             }

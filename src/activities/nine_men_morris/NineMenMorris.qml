@@ -720,7 +720,6 @@ ActivityBase {
             height: Math.min(implicitHeight, 0.25 * parent.height )
             wrapMode: TextEdit.WordWrap
             visible: items.isTutorial
-            text: "Tutorial"
             z: 2
             property int tutNum: 1
 
@@ -756,12 +755,12 @@ ActivityBase {
             id: tutorialImage
             source: Activity.url + "tutorial" + tutorialTxt.tutNum + ".svg"
             property int heightNeed: background.height - tutorialTxtContainer.height - bar.height -
-                                     4 * skipTutorialContainer.height
+                                     2 * skipTutorialContainer.height
             //sourceSize.height: Math.min(background.height - tutorialTxtContainer.height - 1.2 * bar.height - 2 * skipTutorial.height, 0.5 * background.width)
             //sourceSize.width: background.width
             //height: sourceSize.height >= sourceSize.width ? heightNeed : 0.5 * background.width //heightNeed * parent.width/sourceSize.width
-            width: (sourceSize.width/sourceSize.height) > (0.9 * background.width/heightNeed) ? 0.9 * background.width :
-                   (sourceSize.width * heightNeed)/sourceSize.height
+            width: (sourceSize.width/sourceSize.height) > (0.9 * background.width / heightNeed) ? 0.9 * background.width :
+                   (sourceSize.width * heightNeed) / sourceSize.height
             fillMode: Image.PreserveAspectFit
             visible: items.isTutorial
             anchors {
@@ -781,7 +780,8 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: (twoPlayer ? (help | home | reload) : (help | home | level | reload))}
+            content: BarEnumContent { value: (twoPlayer || items.isTutorial) ? (help | home | reload) :
+                                                                               (help | home | level | reload)}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
