@@ -2,6 +2,7 @@
 <application>
   <id type="desktop">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="ca">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="ca-valencia">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="da">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="de">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="es">org.kde.gcompris.desktop</id>
