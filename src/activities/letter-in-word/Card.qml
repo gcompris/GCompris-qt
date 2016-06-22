@@ -63,7 +63,7 @@ Item {
             style: Text.Outline
             width: cardImage.width
             height: cardImage.height
-            wrapMode: Text.WordWrap
+            wrapMode: spelling.indexOf(' ') === -1 ? Text.WrapAnywhere : Text.WordWrap
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             styleColor: "#2a2a2a"
