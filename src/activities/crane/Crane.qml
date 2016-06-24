@@ -168,6 +168,8 @@ ActivityBase {
                     width: board.width/items.columns
                     height: board.height/items.rows
 
+                    property int initialIndex: -1
+
                     property bool showSelected: false
                     property alias selected: selected
                     property alias anim: anim
@@ -188,6 +190,10 @@ ActivityBase {
                         PropertyAction { target: figure; property: "opacity"; value: 1 }
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "opac"; value: 1 }
+
+                        PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "initialIndex"; value: figure.initialIndex }
+                        PropertyAction { target: figure; property: "initialIndex"; value: -1 }
+
                         PropertyAction { target: figure; property: "source"; value: "" }
                         PropertyAction { target: items; property: "ok"; value: "true"}
                         ScriptAction { script: Activity.checkAnswer() }
@@ -296,7 +302,7 @@ ActivityBase {
             color: "transparent"
             width: modelBoard.width
             height: modelBoard.height
-            border.color: Activity.showGrid[Activity.currentLevel] ? modelBoard.color : transparent
+            border.color: Activity.showGrid[Activity.currentLevel] ? modelBoard.color : "transparent"
             border.width: 10
             anchors.centerIn: modelBoard
             opacity: showGrid1.opacity
@@ -426,20 +432,18 @@ ActivityBase {
             id: cable
             color: "black"
             width: 5
-            height: convert.y
-            x: convert.x + items.repeater.itemAt(items.selected).width / 2
+            height: convert.y - crane_top.y
+            x: convert.x + board.width / items.columns / 2
             z: 3
             anchors.top: crane_top.top
             anchors.topMargin: 10
 
-            property var convert: items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,items.repeater.itemAt(items.selected).y)
+            property var convert: items.selected == 0 ? grid :
+                items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,
+                                         items.repeater.itemAt(items.selected).y)
 
-            Behavior on x {
-                NumberAnimation { duration: 200 }
-            }
-            Behavior on height {
-                NumberAnimation { duration: 200 }
-            }
+            Behavior on x { NumberAnimation { duration: 200 } }
+            Behavior on height { NumberAnimation { duration: 200 } }
         }
 
 

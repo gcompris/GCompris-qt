@@ -39,6 +39,7 @@ var allNames = ["bulb.svg","letter-a.svg","letter-b.svg",
 var words = ["cat","dog","win","good","happy"]
 var names = []
 var names2 = []
+var good = []
 
 function start(items_) {
     items = items_
@@ -61,6 +62,17 @@ function init() {
     items.gameFinished = false
 
     setRandomModel()
+
+    for(var i = 0; i < names.length; i++) {
+        if (items.repeater.itemAt(i).source != "") {
+            items.repeater.itemAt(i).initialIndex = i
+            good[i] = i
+        }
+        else {
+            items.repeater.itemAt(i).initialIndex = -1
+            good[i] = -1
+        }
+    }
 
     //select the first item in the grid
     for(var i = 0; i < items.repeater.count; i++) {
@@ -141,85 +153,67 @@ function setModel() {
         randomCol = randomCol - Math.abs(items.columns - randomCol - words[currentLevel].length)
 
     for (i=0; i<words[currentLevel].length; i++) {
-        model[randomRow * items.columns + randomCol + i] =  url + "Letters/" + words[currentLevel].charAt(i) + ".svg"
+        model[randomRow * items.columns + randomCol + i] =  url + "letters/" + words[currentLevel].charAt(i) + ".svg"
     }
 
     return model
 }
 
+function newFunction() {
 
-function getNextIndex1(index) {
+    var index = items.repeater.itemAt(items.selected).initialIndex
 
-    var length = items.repeater.count
+    var min = 100
+    var realMin = 100
+    var indexx = -1
+    var realMinIndex = -1
 
-    for (var i = index + 1; i < length; i++) {
-        if (items.repeater.itemAt(i).source != "") {
-            return i
+    for (var i = 0; i < items.repeater.count; i++) {
+        if (index < items.repeater.itemAt(i).initialIndex) {
+            if (min > items.repeater.itemAt(i).initialIndex) {
+                min = items.repeater.itemAt(i).initialIndex
+                indexx = i
+            }
+        }
+        if (items.repeater.itemAt(i).initialIndex >= 0 && realMin > items.repeater.itemAt(i).initialIndex) {
+            realMin = items.repeater.itemAt(i).initialIndex
+            realMinIndex = i
         }
     }
-    for (i = 0; i < index-1; i++) {
-        if (items.repeater.itemAt(i).source != "") {
-            return i
-        }
+
+    if (indexx != -1) {
+        return indexx
     }
 
-    return -1;
+    return realMinIndex
 }
 
+//function getNextIndex (index) {
+//    var i
+//    var min = 100
+//    var indexx = -1
 
-function getNextIndex(source) {
-    var length = names.length
+//    for (i = 0; i < good.length; i++) {
+//        if (good[i] > good[index] && min > good[i]) {
+//            min = good[i]
+//            indexx = i
+//        }
+//    }
+//    if (min!=100) {
+//        print("found after index")
+//        return indexx
+//    }
 
-    //find index of curent image in ordonated "names" list
-    for(var i = 0; i < length; i++)
-        if (names[i] == source) {
-            break
-        }
+//    for (i = 0; i < good.length; i++) {
+//        if (good[i] > 0 && min > good[i]) {
+//            min = good[i]
+//            indexx = i
+//        }
+//    }
 
-    //print("indexOf: ", names.indexOf(source))
-
-    //go to next index
-    i++
-
-    //bool variable
-    var ok = false
-
-    //search from current index
-    for (; i<names.length; i++) {
-        if (names[i] != "")  {
-            ok = true  // the item was found in the right part of the list
-            break
-        }
-    }
-
-    // ok == true only if the image is in the right part of the list
-    if (ok==true) {
-        for (var j = 0; j<items.repeater.count; j++) {
-            if (names[i] == items.repeater.itemAt(j).source) {
-                return j
-            }
-        }
-    }
-    //ok == false, meaning that we have to start the search from left
-    else {   //search from begging of the list
-        for (i=0; i<names.length; i++) {
-            if (names[i] != "")  {
-                ok = true
-                //when finding the first image, stop
-                break
-            }
-        }
-        //search for the index of that image in the repater and
-        //return the index
-        for (j = 0; j < items.repeater.count; j++) {
-            if (names[i] == items.repeater.itemAt(j).source) {
-                return j
-            }
-        }
-    }
-
-    return -1;
-}
+//    print("found before index")
+//    return indexx
+//}
 
 //touchscreen gestures
 function gesture(deltax, deltay) {
@@ -241,20 +235,37 @@ function move(command) {
     if (items.ok == true && items.gameFinished == false) {
         var item = items.repeater.itemAt(items.selected)
         if (command === "left") {
-            if (items.selected % items.columns != 0)
+            if (items.selected % items.columns != 0) {
+//                var aux = good[items.selected-1]
+//                good[items.selected-1] = good[items.selected]
+//                good[items.selected] = aux
                 makeMove(item,-item.width,item.x,-1,"x")
+            }
         } else if (command === "right") {
-            if ((items.selected+1) % items.columns != 0)
+            if ((items.selected+1) % items.columns != 0) {
+//                aux = good[items.selected+1]
+//                good[items.selected+1] = good[items.selected]
+//                good[items.selected] = aux
                 makeMove(item,item.width,item.x,1,"x")
+            }
         } else if (command === "up") {
-            if (items.selected > items.columns-1)
+            if (items.selected > items.columns-1) {
+//                aux = good[items.selected-items.columns]
+//                good[items.selected-items.columns] = good[items.selected]
+//                good[items.selected] = aux
                 makeMove(item,-item.height,item.y,-items.columns,"y")
+            }
         } else if (command === "down") {
-            if (items.selected < (items.repeater.count-items.columns))
+            if (items.selected < (items.repeater.count-items.columns)) {
+//                aux = good[items.selected+items.columns]
+//                good[items.selected+items.columns] = good[items.selected]
+//                good[items.selected] = aux
                 makeMove(item,item.height,item.y,items.columns,"y")
+            }
         } else if (command === "next") {
             items.repeater.itemAt(items.selected).selected.opacity = 0
-            items.selected = (currentLevel < words.length) ? getNextIndex1(items.selected) : getNextIndex(items.repeater.itemAt(items.selected).source)
+//            items.selected = getNextIndex(items.selected)
+            items.selected = newFunction()
             items.repeater.itemAt(items.selected).selected.opacity = 1
         }
     }
