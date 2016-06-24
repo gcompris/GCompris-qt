@@ -247,6 +247,18 @@ add_custom_target(BundleTranslations
   COMMENT "If you want to provide a zip of the translations on a server (run make BuildTranslations first)"
   )
 
+add_custom_command(
+    OUTPUT doDlAndInstallBundledTranslations
+    COMMAND wget -O ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z http://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
+    COMMAND 7z x -y -o${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME} ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    )
+# Bundle translations
+add_custom_target(DlAndInstallBundledTranslations
+  DEPENDS doDlAndInstallBundledTranslations
+  COMMENT "Download the bundled translation and install them in the build dir"
+  )
+
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
 else()
