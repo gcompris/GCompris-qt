@@ -253,7 +253,7 @@ add_custom_command(
     COMMAND 7z x -y -o${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME} translations-${GCOMPRIS_VERSION}.7z
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
     )
-# Bundle translations
+# Download and install bundled translations
 add_custom_target(DlAndInstallBundledTranslations
   DEPENDS doDlAndInstallBundledTranslations
   COMMENT "Download the bundled translation and install them in the build dir"
