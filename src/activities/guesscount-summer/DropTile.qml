@@ -22,7 +22,7 @@
 import QtQuick 2.1
 
 import "../../core"
-import "guesscount.js" as Activity
+import "guesscount-summer.js" as Activity
 
 DropArea {
     id: dragTarget
@@ -35,10 +35,9 @@ DropArea {
         width: parent.width
         height: parent.height
         anchors.fill: parent
-        anchors.bottomMargin: 30
         color: "transparent"
         border.width: 5
-        border.color: dragTarget.type=="operators" ? "red" : "green"
+        border.color: 'red'
         radius: 20
         states: [
             State {
