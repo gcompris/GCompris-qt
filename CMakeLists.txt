@@ -232,7 +232,7 @@ add_custom_target(BuildTranslations
 
 add_custom_command(
     OUTPUT doBundleTranslations
-    COMMAND 7z a -w${CMAKE_BINARY_DIR}/share/gcompris-qt ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z ${CMAKE_BINARY_DIR}/share/gcompris-qt/translations
+    COMMAND 7z a -w${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME} ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z ${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME}/translations
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 # Bundle translations
