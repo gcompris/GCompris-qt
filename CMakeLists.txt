@@ -274,7 +274,7 @@ add_custom_target(BundleConvertedOggs
 add_custom_command(
     OUTPUT doDlAndInstallBundledConvertedOggs
     COMMAND curl -fsS -o converted_ogg_to_${COMPRESSED_AUDIO}.7z http://gcompris.net/download/converted_ogg_to_${COMPRESSED_AUDIO}.7z
-    COMMAND 7z x -y -osrc${CMAKE_SOURCE_DIR}/src converted_ogg_to_${COMPRESSED_AUDIO}.7z
+    COMMAND 7z x -y converted_ogg_to_${COMPRESSED_AUDIO}.7z
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 # Download and install bundled converted oggs
