@@ -241,11 +241,17 @@ add_custom_target(BundleTranslations
   COMMENT "If you want to provide a zip of the translations on a server (run make BuildTranslations first)"
   )
 
+if($ENV{APPVEYOR})
+    set(DL_CMD appveyor DownloadFile)
+else()
+    set(DL_CMD wget)
+endif()
+
 add_custom_command(
     OUTPUT doDlAndInstallBundledTranslations
-    COMMAND wget -O ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z http://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
-    COMMAND 7z x -y -o${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME} ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    COMMAND ${DL_CMD} http://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
+    COMMAND 7z x -y -o${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME} translations-${GCOMPRIS_VERSION}.7z
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
     )
 # Bundle translations
 add_custom_target(DlAndInstallBundledTranslations
