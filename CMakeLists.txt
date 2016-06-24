@@ -253,30 +253,6 @@ add_custom_target(DlAndInstallBundledTranslations
   COMMENT "Download the bundled translation and install them in the build dir"
   )
 
-add_custom_command(
-    OUTPUT doBundleConvertedOggs
-    COMMAND 7z a converted_ogg_to_${COMPRESSED_AUDIO}.7z '-ir!src/*${COMPRESSED_AUDIO}'
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    )
-# Bundle oggs ready to be uploaded on a server. This ease build on system without the appropriate audio
-# convertion tools.
-add_custom_target(BundleConvertedOggs
-  DEPENDS doBundleConvertedOggs
-  COMMENT "Bundle the converted oggs to upload them on a server. First set COMPRESSED_AUDIO appropriately."
-  )
-
-add_custom_command(
-    OUTPUT doDlAndInstallBundledConvertedOggs
-    COMMAND curl -fsS -o converted_ogg_to_${COMPRESSED_AUDIO}.7z http://gcompris.net/download/converted_ogg_to_${COMPRESSED_AUDIO}.7z
-    COMMAND 7z x -y converted_ogg_to_${COMPRESSED_AUDIO}.7z
-    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
-    )
-# Download and install bundled converted oggs
-add_custom_target(DlAndInstallBundledConvertedOggs
-  DEPENDS doDlAndInstallBundledConvertedOggs
-  COMMENT "Download the bundled converted oggs and install them in the source dir"
-  )
-
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
 else()
@@ -356,6 +332,29 @@ add_custom_target(getAssets
   DEPENDS assetsFolders predownloadAssets
   )
 
+add_custom_command(
+    OUTPUT doBundleConvertedOggs
+    COMMAND 7z a converted_ogg_to_${COMPRESSED_AUDIO}.7z '-ir!src/*${COMPRESSED_AUDIO}'
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    )
+# Bundle oggs ready to be uploaded on a server. This ease build on system without the appropriate audio
+# convertion tools.
+add_custom_target(BundleConvertedOggs
+  DEPENDS doBundleConvertedOggs
+  COMMENT "Bundle the converted oggs to upload them on a server. First set COMPRESSED_AUDIO appropriately."
+  )
+
+add_custom_command(
+    OUTPUT doDlAndInstallBundledConvertedOggs
+    COMMAND curl -fsS -o converted_ogg_to_${COMPRESSED_AUDIO}.7z http://gcompris.net/download/converted_ogg_to_${COMPRESSED_AUDIO}.7z
+    COMMAND 7z x -y converted_ogg_to_${COMPRESSED_AUDIO}.7z
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    )
+# Download and install bundled converted oggs
+add_custom_target(DlAndInstallBundledConvertedOggs
+  DEPENDS doDlAndInstallBundledConvertedOggs
+  COMMENT "Download the bundled converted oggs and install them in the source dir"
+  )
 
 
 set(ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${GCOMPRIS_VERSION})
