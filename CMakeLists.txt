@@ -230,6 +230,17 @@ add_custom_target(BuildTranslations
   COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
   )
 
+add_custom_command(
+    OUTPUT doBundleTranslations
+    COMMAND 7z a -w${CMAKE_BINARY_DIR}/share/gcompris-qt ${CMAKE_BINARY_DIR}/translations-${GCOMPRIS_VERSION}.7z ${CMAKE_BINARY_DIR}/share/gcompris-qt/translations
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    )
+# Bundle translations
+add_custom_target(BundleTranslations
+  DEPENDS doBundleTranslations
+  COMMENT "If you want to provide a zip of the translations on a server (run make BuildTranslations first)"
+  )
+
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
 else()
