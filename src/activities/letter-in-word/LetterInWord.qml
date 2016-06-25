@@ -79,6 +79,14 @@ ActivityBase {
 
         onStop: Activity.stop()
 
+        onWidthChanged: {
+                animateX.restart();
+        }
+
+        onHeightChanged: {
+                animateX.restart();
+        }
+
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
