@@ -126,8 +126,7 @@ function initLevel() {
             items.wordsModel.append({
                                         "spelling": words[i].translatedTxt,
                                         "imgurl": words[i].image,
-                                        "selected": false,
-                                        "textData": words[i].translatedTxt
+                                        "selected": false
                                     });
         }
     }

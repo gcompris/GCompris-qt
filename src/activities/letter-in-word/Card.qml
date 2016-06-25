@@ -54,8 +54,9 @@ Item {
         GCText {
             id: textItem
             z: 11
-            // textData is the rich text with letter found, spelling is the text in the dataset
-            text: selected ? textData : spelling
+            // textFound is the rich text with letter found, spelling is the text in the dataset
+            text:"<font color=\"white\">" + (selected ? textFound : spelling) + "</font>"
+            property string textFound: spelling
             textFormat: Text.RichText
             font.pointSize: NaN  // need to clear font.pointSize explicitly
             font.pixelSize: spelling.length > 5 ? (spelling.length > 7 ? cardImage.width * 0.19 : cardImage.width * 0.25): cardImage.width * 0.30
@@ -67,7 +68,6 @@ Item {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             styleColor: "#2a2a2a"
-            color: "white"
         }
 
         ParticleSystemStarLoader {
@@ -92,7 +92,7 @@ Item {
         SequentialAnimation {
             id: successAnimation
             running: selected
-            loops: Animation.Infinite
+            loops: 2
             NumberAnimation {
                 target: cardImage
                 easing.type: Easing.InOutQuad
@@ -104,6 +104,11 @@ Item {
                 easing.type: Easing.InOutQuad
                 property: "rotation"; to: -20
                 duration: 500
+            }
+            onRunningChanged: {
+                if(!running && selected) {
+                    rotationStop.restart()
+                }
             }
         }
 
@@ -156,7 +161,7 @@ Item {
             if (Activity.checkWord(index)) {
                 successAnimation.restart();
                 particle.burst(30);
-                textData = spelling.replace(RegExp(Activity.currentLetter, "g"), "<font color=\"green\">"+Activity.currentLetter+"</font>");
+                textItem.textFound = spelling.replace(RegExp(Activity.currentLetter, "g"), "<font color=\"#00FF00\">"+Activity.currentLetter+"</font>");
             }
             else {
                 failureAnimation.restart()

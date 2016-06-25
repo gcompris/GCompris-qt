@@ -31,5 +31,5 @@ ActivityInfo {
   manual: ""
   credit: ""
   section: "reading"
-  createdInVersion: 6000
+  createdInVersion: 7000
 }

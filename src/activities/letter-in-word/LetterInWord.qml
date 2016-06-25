@@ -225,7 +225,7 @@ ActivityBase {
                 id: animateX
                 target: planeText
                 properties: "x"
-                from: - planeText.width
+                from: -planeText.width
                 //to:background.width/2 - planeText.width/2
                 to: bar.level <= 2 ? background.width/3.7 : background.width
                 duration: bar.level <= 2 ? 5500: 11000
@@ -269,7 +269,7 @@ ActivityBase {
             id: wordsModel
         }
 
-        property int itemWidth: Math.min(parent.width / 7.5, parent.height / 5)
+        property int itemWidth: Math.min(parent.width / 7.5, parent.height / 6.5)
         property int itemHeight: itemWidth * 1.11
 
         GridView {
@@ -282,7 +282,7 @@ ActivityBase {
             anchors.leftMargin: 15 * ApplicationInfo.ratio
             anchors.rightMargin: 15 * ApplicationInfo.ratio
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            cellWidth: itemWidth + 43*ApplicationInfo.ratio
+            cellWidth: itemWidth + 25*ApplicationInfo.ratio
             cellHeight: itemHeight + 15*ApplicationInfo.ratio
             clip: false
             interactive: false
