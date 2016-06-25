@@ -334,7 +334,7 @@ add_custom_target(getAssets
 
 add_custom_command(
     OUTPUT doBundleConvertedOggs
-    COMMAND 7z a converted_ogg_to_${COMPRESSED_AUDIO}.7z '-ir!src/*${COMPRESSED_AUDIO}'
+    COMMAND 7z a converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z '-ir!src/*${COMPRESSED_AUDIO}'
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 # Bundle oggs ready to be uploaded on a server. This ease build on system without the appropriate audio
@@ -346,8 +346,9 @@ add_custom_target(BundleConvertedOggs
 
 add_custom_command(
     OUTPUT doDlAndInstallBundledConvertedOggs
-    COMMAND curl -fsS -o converted_ogg_to_${COMPRESSED_AUDIO}.7z http://gcompris.net/download/converted_ogg_to_${COMPRESSED_AUDIO}.7z
-    COMMAND 7z x -y converted_ogg_to_${COMPRESSED_AUDIO}.7z
+    COMMAND curl -fsS -o converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z
+            http://gcompris.net/download/converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z
+    COMMAND 7z x -y converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 # Download and install bundled converted oggs
