@@ -201,12 +201,10 @@ ActivityBase {
 
             Image {
                 id: plane
-                width: itemWidth*3.5
-                height: itemHeight
                 anchors.centerIn: planeText
                 anchors.top: parent.top
                 source: Activity.resUrl + "plane.svg"
-                sourceSize.height: 90 * ApplicationInfo.ratio
+                sourceSize.height: itemHeight
             }
 
             GCText {
