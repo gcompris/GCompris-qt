@@ -82,7 +82,7 @@ ActivityBase {
             property alias parser: parser
             property alias locale: background.locale
             property alias ok: ok
-            property int   remainingLife
+            property int remainingLife
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog

@@ -156,12 +156,19 @@ Item {
         }
     }
 
+    function playWord() {
+        var locale = ApplicationInfo.getVoicesLocale(items.locale)
+        activity.audioVoices.append(
+             ApplicationInfo.getAudioFilePathForLocale(voice, locale))
+    }
+
     function select() {
         if(mouseActive && !successAnimation.running) {
             if (Activity.checkWord(index)) {
                 successAnimation.restart();
                 particle.burst(30);
                 textItem.textFound = spelling.replace(RegExp(Activity.currentLetter, "g"), "<font color=\"#00FF00\">"+Activity.currentLetter+"</font>");
+                playWord();
             }
             else {
                 failureAnimation.restart()
