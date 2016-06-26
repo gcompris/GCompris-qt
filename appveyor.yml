@@ -1,0 +1,43 @@
+version: 1.0.{build}
+branches:
+  only:
+  - KDE/0.60
+skip_tags: true
+image: Visual Studio 2015
+configuration: Release
+platform: x86
+init:
+- cmd: 
+environment:
+  CMAKE_GENERATOR: Visual Studio 14
+  QT5: C:\Qt\5.6\msvc2015
+install:
+- cmd: >-
+    set Path=%QT5%\bin;%Path%
+
+    cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DQML_BOX2D_MODULE=disabled -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
+
+    cmake --build build --config RelWithDebInfo --target DlAndInstallBundledConvertedOggs
+
+    cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DQML_BOX2D_MODULE=disabled -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
+
+    curl -fsS -o build/vcruntime140.dll http://gcompris.net/private/microsoft/vcredist32/vcruntime140.dll
+
+    curl -fsS -o build/msvcp140.dll http://gcompris.net/private/microsoft/vcredist32/msvcp140.dll
+
+    cmake --build build --config RelWithDebInfo
+
+    cmake --build build --config RelWithDebInfo --target DlAndInstallBundledTranslations
+
+    cmake --build build --config RelWithDebInfo --target package
+build: off
+artifacts:
+- path: build/*.exe
+deploy:
+- provider: FTP
+  host: gcompris.net
+  protocol: sftp
+  username: releaser
+  password:
+    secure: kt7OLxDoaFlmFwDtcGfa/X3uVhQj0y1q2YVdBroxp9U=
+  folder: www
