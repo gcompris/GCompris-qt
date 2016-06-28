@@ -5,6 +5,7 @@ import "guesscount-summer.js" as Activity
 Row {
     id: operand_row
     property alias repeater: repeater
+    property int row_sum
     spacing: 40
     Rectangle{
         id: operands
@@ -23,6 +24,7 @@ Row {
     Repeater {
         id: repeater
         delegate: DragTile{
+            id: root
             type: "operands"
             width: 100
             height: 100

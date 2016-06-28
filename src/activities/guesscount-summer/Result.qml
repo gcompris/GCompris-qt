@@ -22,31 +22,20 @@
 import QtQuick 2.1
 
 import "../../core"
-import "guesscount.js" as Activity
+import "guesscount-summer.js" as Activity
 
-DropArea {
-    id: dragTarget
-    property string type
-    property int count: 0
-    keys: [ type ]
-    Rectangle {
-        id: dropRectangle
-        width: parent.width
-        height: parent.height
-        anchors.fill: parent
-        anchors.bottomMargin: 30
-        color: "transparent"
-        border.width: 5
-        border.color: dragTarget.type=="operators" ? "red" : "green"
-        radius: 20
-        states: [
-            State {
-                when: dragTarget.containsDrag
-                PropertyChanges {
-                    target: dropRectangle
-                    border.color: "white"
-                }
-            }
-        ]
+Rectangle {
+    id: result
+    width: 100
+    height: 100
+    color: "white"
+    border.color: "black"
+    GCText{
+        id: tile
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
+        fontSize: mediumSize
+        text: ''
     }
+    radius: 20.0
 }
