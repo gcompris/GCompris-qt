@@ -66,7 +66,10 @@ ActivityBase {
             Repeater {
                 id: repeat
                 model: items.operand_row.repeater.model.length-1
-                delegate: Operation_row{}
+                delegate: Operation_row{
+                    id: operation_row
+                    row_no: modelData
+                }
             }
         }
         DialogHelp {

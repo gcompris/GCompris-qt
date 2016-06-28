@@ -27,8 +27,6 @@ import "guesscount-summer.js" as Activity
 DropArea {
     id: dragTarget
     property string type
-    property alias dropProxy: dragTarget
-    property int count: 0
     keys: [ type ]
     Rectangle {
         id: dropRectangle
@@ -37,7 +35,7 @@ DropArea {
         anchors.fill: parent
         color: "transparent"
         border.width: 5
-        border.color: 'red'
+        border.color: type == "operators" ? "red" : "green"
         radius: 20
         states: [
             State {

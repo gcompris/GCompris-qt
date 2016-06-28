@@ -21,6 +21,7 @@ Row {
     Repeater {
         model: Activity.signs
         delegate: DragTile{
+            id: root
             type: "operators"
             width: 100
             height: 100

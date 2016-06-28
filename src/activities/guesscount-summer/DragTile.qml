@@ -47,7 +47,7 @@ Item {
             property var datavalue: modelData
             radius: 20
             opacity: 0.7
-            color: root.type=="operators" ? "red" : "green"
+            color: root.type == "operators" ? "red" : "green"
             Drag.keys: [ type ]
             Drag.active: mouseArea.drag.active
             Drag.hotSpot.x: parent.width/2
