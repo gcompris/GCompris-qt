@@ -1,0 +1,8 @@
+<RCC>
+	<qresource prefix="/gcompris/src/activities/nitish_drawletters">
+		<file>Nitish_drawletters.qml</file>
+		<file>ActivityInfo.qml</file>
+		<file>nitish_drawletters.svg</file>
+		<file>nitish_drawletters.js</file>
+	</qresource>
+</RCC>
