@@ -70,6 +70,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         property bool portrait: height > width ? true : false
+        property bool inLine: true
 
         Keys.onPressed: {
             if (event.key === Qt.Key_Left)
@@ -149,7 +150,6 @@ ActivityBase {
             z: 3
         }
 
-
         Grid {
             id: grid
             columns: items.columns
@@ -190,10 +190,8 @@ ActivityBase {
                         PropertyAction { target: figure; property: "opacity"; value: 1 }
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "opac"; value: 1 }
-
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "initialIndex"; value: figure.initialIndex }
                         PropertyAction { target: figure; property: "initialIndex"; value: -1 }
-
                         PropertyAction { target: figure; property: "source"; value: "" }
                         PropertyAction { target: items; property: "ok"; value: "true"}
                         ScriptAction { script: Activity.checkAnswer() }
@@ -209,7 +207,6 @@ ActivityBase {
                         onPressed: {
                             startX = mouse.x;
                             startY = mouse.y;
-                            print("print: ",Activity.showGrid[Activity.currentLevel]=="true" )
                         }
 
                         onReleased:
@@ -223,7 +220,6 @@ ActivityBase {
                                 items.repeater.itemAt(items.selected).opac = 1
                             }
                         }
-
                     }
 
                     // selected marker
@@ -246,8 +242,9 @@ ActivityBase {
 
             anchors {
                 left: background.portrait ? board.left : crane_vertical.right
-                top: background.portrait ? crane_body.bottom : parent.top
-                topMargin: background.portrait ? board.anchors.margins : crane_top.height * 1.5
+                top: background.portrait ? crane_body.bottom : background.inLine ? board.top : parent.top
+                topMargin: background.portrait ? board.anchors.margins : background.inLine ? 0 : crane_top.height * 1.5
+                leftMargin: background.portrait ? 0 : board.anchors.margins * 1.2
                 margins: board.anchors.margins
             }
 
@@ -292,7 +289,7 @@ ActivityBase {
                     height:  modelBoard.height/items.rows
                     color: "transparent"
                     border.width: 2
-                    border.color: Activity.showGrid[Activity.currentLevel] ? "grey" : "transparent"
+                    border.color: showGrid1.opacity == 1 ? "grey" : "transparent"
                 }
             }
         }
@@ -302,7 +299,7 @@ ActivityBase {
             color: "transparent"
             width: modelBoard.width
             height: modelBoard.height
-            border.color: Activity.showGrid[Activity.currentLevel] ? modelBoard.color : "transparent"
+            border.color: showGrid1.opacity == 1 ? modelBoard.color : "transparent"
             border.width: 10
             anchors.centerIn: modelBoard
             opacity: showGrid1.opacity

@@ -23,20 +23,39 @@
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-
 var currentLevel = 0
-var numberOfLevel = 10
+var numberLevelsWords = 2
+var maxWordLevels = 3 * numberLevelsWords
+var maxImageLevels = 10
+var numberOfLevel = maxWordLevels + maxImageLevels
 var items
 var url = "qrc:/gcompris/src/activities/crane/resource/"
 
-var showGrid = [1,1,1,0,0,1,1,0,0,0]
-var howManyFigures = [3,3,3,4,5,5,6,7,8,9,10,11,12,13]
+var levels = [{showGrid: 1, noOfItems: 2, inLine: 1, columns: 4, rows: 3 },
+              {showGrid: 1, noOfItems: 3, inLine: 1, columns: 5, rows: 4 },
+              {showGrid: 1, noOfItems: 4, inLine: 1, columns: 6, rows: 5 },
+              {showGrid: 0, noOfItems: 5, inLine: 0, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 6, inLine: 0, columns: 7, rows: 6 },
+              {showGrid: 1, noOfItems: 7, inLine: 1, columns: 7, rows: 6 },
+              {showGrid: 1, noOfItems: 8, inLine: 1, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 9, inLine: 0, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 10, inLine: 0, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 11, inLine: 0, columns: 7, rows: 6 }]
+
 var allNames = ["bulb.svg","letter-a.svg","letter-b.svg",
                 "rectangle1.svg","rectangle2.svg","square1.svg",
                 "square2.svg","triangle1.svg","triangle2.svg",
                 "tux.svg","water_drop1.svg","water_drop2.svg",
                 "water_spot1.svg","water_spot2.svg"]
-var words = ["cat","dog","win","good","happy"]
+
+
+var words3Letters = ["cat","dog","win","red","yes","big","box","air","arm",
+                     "car","bus","fun","day","eat","hat","leg","ice","old","egg"]
+var words4Letters = ["blue","best","good","area","bell","coat","easy","farm",
+                     "food","else","girl","give","hero","help","hour","sand","song"]
+var words5Letters = ["happy","child","white","apple","brown","truth","fresh",
+                     "green","horse","hotel","house","paper","shape","shirt","study"]
+
 var names = []
 var names2 = []
 var good = []
@@ -44,6 +63,9 @@ var good = []
 function start(items_) {
     items = items_
     currentLevel = 0
+    Core.shuffle(words3Letters)
+    Core.shuffle(words4Letters)
+    Core.shuffle(words5Letters)
     initLevel()
 }
 
@@ -52,87 +74,111 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-
     init()
 }
 
 function init() {
-    items.columns = 7
-    items.rows = 6
+    // set models for repaters
+    if (currentLevel >= maxWordLevels)
+        setRandomModelImage()
+    else setRandomModelWord()
+
     items.gameFinished = false
 
-    setRandomModel()
-
+    // set "initialIndex" to the position in the repeater
     for(var i = 0; i < names.length; i++) {
         if (items.repeater.itemAt(i).source != "") {
             items.repeater.itemAt(i).initialIndex = i
             good[i] = i
         }
         else {
+            // set the initialIndex to -1 if there is no item inside (no source)
             items.repeater.itemAt(i).initialIndex = -1
             good[i] = -1
         }
     }
 
-    //select the first item in the grid
-    for(var i = 0; i < items.repeater.count; i++) {
+    // select the first item in the grid
+    for(i = 0; i < items.repeater.count; i++) {
         if (items.repeater.itemAt(i).source != "") {
             items.selected = i
             break
         }
     }
 
-    //set opacity for first item's "selection frame"
+    // set opacity for first item's "selection frame"
     items.repeater.itemAt(items.selected).selected.opacity = 1
-
-    //show or hide the grid
-    if (showGrid[currentLevel])
-        items.showGrid1.opacity = 1
-    else items.showGrid1.opacity = 0
 }
 
-function setRandomModel(){
-    var numbers = []
+// levels with words as items
+function setRandomModelWord(){
+    // reset the arrays
+    names = []
+    names2 = []
 
-    for (var i = 0; i < items.columns * items.rows; i++){
-        names[i] = ""    // reset the board
+    var numbers = []
+    var i
+    var wordsUsed = []
+
+    if (currentLevel < numberLevelsWords) {
+        wordsUsed = words3Letters
+        // set the number of columns and rows from "levels"
+        items.columns = 4
+        items.rows = 3
+        // show or hide the grid
+        items.showGrid1.opacity = 1
+        // set the two boards in line or not
+        items.background.inLine = true
+    } else if (currentLevel < numberLevelsWords * 2) {
+        wordsUsed = words4Letters
+        // set the number of columns and rows from "levels"
+        items.columns = 5
+        items.rows = 4
+        // show or hide the grid
+        items.showGrid1.opacity = 1
+        // set the two boards in line or not
+        items.background.inLine = false
+    } else {
+        wordsUsed = words5Letters
+        // set the number of columns and rows from "levels"
+        items.columns = 6
+        items.rows = 5
+        // show or hide the grid
+        items.showGrid1.opacity = 0
+        // set the two boards in line or not
+        items.background.inLine = false
+    }
+
+    for (i = 0; i < items.columns * items.rows; i++) {
+        names[i] = ""
         names2[i] = ""
         numbers[i] = i;  // generate columns*rows numbers
     }
 
-    if (currentLevel >= words.length) {
-        // randomize the names
-        Core.shuffle(allNames)
+    var currentIndex = currentLevel % numberLevelsWords
 
-        //get "howManyFigures[currentLevel]" random numbers
-        Core.shuffle(numbers)
+    // place the word at a random position in the grid
+    var randomRow = Math.floor(Math.random() * items.rows)
+    var randomCol = Math.floor(Math.random() * items.columns)
 
-        for (i = 0; i < howManyFigures[currentLevel]; i++)
-            names[numbers[i]] = url + allNames[i]
+    // check if the word goes out of the frame and replace to left it if needed
+    if (items.columns - randomCol - wordsUsed[currentIndex].length < 0)
+        randomCol = randomCol - Math.abs(items.columns - randomCol - wordsUsed[currentIndex].length)
 
-        Core.shuffle(numbers)
-
-        for (i = 0; i < howManyFigures[currentLevel]; i++)
-            names2[numbers[i]] = url + allNames[i]
-
-    } else {
-
-        var model = setModel()
-
-        for (i = 0; i < model.length; i++) {
-            if (model[i] != "") {
-                names[i] = model[i]
-                names2[i] = model[i]
-            }
-        }
-
-        Core.shuffle(names)
+    // set full path (url) to the letter image
+    for (i = 0; i < wordsUsed[currentIndex].length; i++) {
+        names[randomRow * items.columns + randomCol + i] =  url + "letters/" + wordsUsed[currentIndex].charAt(i) + ".svg"
+        names2[randomRow * items.columns + randomCol + i] = names[randomRow * items.columns + randomCol + i]
     }
 
+    Core.shuffle(names)
+
+    // set model for repeaters
     items.repeater.model = names.length
     items.modelRepeater.model = names2.length
     items.gridRepeater.model = names.length
 
+    // set the source of items inside repeaters to names and names2
     for (i = 0; i < names.length; i++) {
         items.repeater.itemAt(i).source = names[i]
         items.repeater.itemAt(i).opac = 0
@@ -140,94 +186,105 @@ function setRandomModel(){
     }
 }
 
-function setModel() {
-    var model = []
-    for (var i = 0; i < items.columns * items.rows; i++){
-        model[i] = ""
+// levels with images as items
+function setRandomModelImage(){
+    // reset the arrays
+    names = []
+    names2 = []
+
+    var numbers = []
+    var i
+
+    // set the number of columns and rows from "levels"
+    items.columns = levels[currentLevel - maxWordLevels].columns
+    items.rows = levels[currentLevel - maxWordLevels].rows
+
+    for (i = 0; i < items.columns * items.rows; i++) {
+        names[i] = ""
+        names2[i] = ""
+        numbers[i] = i;  // generate columns*rows numbers
     }
 
-    var randomRow = Math.floor(Math.random() * items.rows)
-    var randomCol = Math.floor(Math.random() * items.columns)
+    // randomize the names
+    Core.shuffle(allNames)
 
-    if (items.columns - randomCol - words[currentLevel].length < 0)
-        randomCol = randomCol - Math.abs(items.columns - randomCol - words[currentLevel].length)
+    //get "levels[currentLevel].noOfItems" random numbers
+    Core.shuffle(numbers)
 
-    for (i=0; i<words[currentLevel].length; i++) {
-        model[randomRow * items.columns + randomCol + i] =  url + "letters/" + words[currentLevel].charAt(i) + ".svg"
+    for (i = 0; i < levels[currentLevel - maxWordLevels].noOfItems; i++)
+        names[numbers[i]] = url + allNames[i]
+
+    Core.shuffle(numbers)
+
+    for (i = 0; i < levels[currentLevel - maxWordLevels].noOfItems; i++)
+        names2[numbers[i]] = url + allNames[i]
+
+    // set model for repeaters
+    items.repeater.model = names.length
+    items.modelRepeater.model = names2.length
+    items.gridRepeater.model = names.length
+
+    // set the source of items inside repeaters to names and names2
+    for (i = 0; i < names.length; i++) {
+        items.repeater.itemAt(i).source = names[i]
+        items.repeater.itemAt(i).opac = 0
+        items.modelRepeater.itemAt(i).source = names2[i]
     }
 
-    return model
+    // show or hide the grid
+    items.showGrid1.opacity = levels[currentLevel - maxWordLevels].showGrid
+
+    // set the two boards in line or not
+    if (levels[currentLevel - maxWordLevels].inLine)
+        items.background.inLine = true
+    else items.background.inLine = false
 }
 
-function newFunction() {
-
+// returns the next index needed for switching to another item
+function getNextIndex() {
+    // get the initialIndex
     var index = items.repeater.itemAt(items.selected).initialIndex
 
     var min = 100
-    var realMin = 100
-    var indexx = -1
-    var realMinIndex = -1
+    var min2 = 100
+    var biggerIndex = -1
+    var smallestIndex = -1
 
     for (var i = 0; i < items.repeater.count; i++) {
+        // get the imediat bigger index
         if (index < items.repeater.itemAt(i).initialIndex) {
             if (min > items.repeater.itemAt(i).initialIndex) {
+                // update min and index
                 min = items.repeater.itemAt(i).initialIndex
-                indexx = i
+                biggerIndex = i
             }
         }
-        if (items.repeater.itemAt(i).initialIndex >= 0 && realMin > items.repeater.itemAt(i).initialIndex) {
-            realMin = items.repeater.itemAt(i).initialIndex
-            realMinIndex = i
+        // in case current index is the biggest, search the smalles index from start
+        if (items.repeater.itemAt(i).initialIndex >= 0 && min2 > items.repeater.itemAt(i).initialIndex) {
+            min2 = items.repeater.itemAt(i).initialIndex
+            smallestIndex = i
         }
     }
 
-    if (indexx != -1) {
-        return indexx
-    }
+    // if a bigger index was found, return it
+    if (biggerIndex != -1)
+        return biggerIndex
 
-    return realMinIndex
+    // this is the biggest index; the next one is the smallest in the array
+    return smallestIndex
 }
-
-//function getNextIndex (index) {
-//    var i
-//    var min = 100
-//    var indexx = -1
-
-//    for (i = 0; i < good.length; i++) {
-//        if (good[i] > good[index] && min > good[i]) {
-//            min = good[i]
-//            indexx = i
-//        }
-//    }
-//    if (min!=100) {
-//        print("found after index")
-//        return indexx
-//    }
-
-//    for (i = 0; i < good.length; i++) {
-//        if (good[i] > 0 && min > good[i]) {
-//            min = good[i]
-//            indexx = i
-//        }
-//    }
-
-//    print("found before index")
-//    return indexx
-//}
 
 //touchscreen gestures
 function gesture(deltax, deltay) {
-    if (Math.abs(deltax) > 40 || Math.abs(deltay) > 40) {
-        if (deltax > 30 && Math.abs(deltay) < items.sensivity) {
+    if (Math.abs(deltax) > 40 || Math.abs(deltay) > 40)
+        if (deltax > 30 && Math.abs(deltay) < items.sensivity)
             move("right")
-        } else if (deltax < -30 && Math.abs(deltay) < items.sensivity) {
+        else if (deltax < -30 && Math.abs(deltay) < items.sensivity)
             move("left")
-        } else if (Math.abs(deltax) < items.sensivity && deltay > 30) {
+        else if (Math.abs(deltax) < items.sensivity && deltay > 30)
             move("down")
-        } else if (Math.abs(deltax) < items.sensivity && deltay < 30) {
+        else if (Math.abs(deltax) < items.sensivity && deltay < 30)
             move("up")
-        }
-    }
 }
 
 //depeding on the command, make a move to left/right/up/down or select next item
@@ -235,37 +292,20 @@ function move(command) {
     if (items.ok == true && items.gameFinished == false) {
         var item = items.repeater.itemAt(items.selected)
         if (command === "left") {
-            if (items.selected % items.columns != 0) {
-//                var aux = good[items.selected-1]
-//                good[items.selected-1] = good[items.selected]
-//                good[items.selected] = aux
+            if (items.selected % items.columns != 0)
                 makeMove(item,-item.width,item.x,-1,"x")
-            }
         } else if (command === "right") {
-            if ((items.selected+1) % items.columns != 0) {
-//                aux = good[items.selected+1]
-//                good[items.selected+1] = good[items.selected]
-//                good[items.selected] = aux
+            if ((items.selected+1) % items.columns != 0)
                 makeMove(item,item.width,item.x,1,"x")
-            }
         } else if (command === "up") {
-            if (items.selected > items.columns-1) {
-//                aux = good[items.selected-items.columns]
-//                good[items.selected-items.columns] = good[items.selected]
-//                good[items.selected] = aux
+            if (items.selected > items.columns-1)
                 makeMove(item,-item.height,item.y,-items.columns,"y")
-            }
         } else if (command === "down") {
-            if (items.selected < (items.repeater.count-items.columns)) {
-//                aux = good[items.selected+items.columns]
-//                good[items.selected+items.columns] = good[items.selected]
-//                good[items.selected] = aux
+            if (items.selected < (items.repeater.count-items.columns))
                 makeMove(item,item.height,item.y,items.columns,"y")
-            }
         } else if (command === "next") {
             items.repeater.itemAt(items.selected).selected.opacity = 0
-//            items.selected = getNextIndex(items.selected)
-            items.selected = newFunction()
+            items.selected = getNextIndex()
             items.repeater.itemAt(items.selected).selected.opacity = 1
         }
     }
