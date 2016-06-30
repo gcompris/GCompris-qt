@@ -76,6 +76,23 @@ ButtonStyle {
         }
     }
 
+    property string textSize: "regular"
+    
+    property variant textSizes: {
+        "regular": {
+            fontSize: 14,
+            fontBold: false
+        },
+        "subtitle": {
+            fontSize: 16,
+            fontBold: true
+        },
+        "title": {
+            fontSize: 24,
+            fontBold: true
+        }
+    }
+    
     background: Rectangle {
         border.width: control.activeFocus ? 4 : 2
         border.color: themes[theme].borderColor
@@ -95,7 +112,8 @@ ButtonStyle {
             id: labelText
             color: themes[theme].textColor
             text: control.text
-            fontSize: regularSize
+            fontSize: textSizes[textSize].fontSize
+            font.bold: textSizes[textSize].fontBold
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
             wrapMode: Text.WordWrap

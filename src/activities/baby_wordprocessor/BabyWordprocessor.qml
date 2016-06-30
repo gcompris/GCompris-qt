@@ -48,7 +48,7 @@ ActivityBase {
 
         Column {
             id: controls
-            width: 200 * ApplicationInfo.ratio
+            width: 120 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
                 top: parent.top
@@ -58,22 +58,19 @@ ActivityBase {
             spacing: 10
 
             Button {
-                style: GCButtonStyle {}
-                height: 30 * ApplicationInfo.ratio
-                width: parent.width
+                style: GCButtonStyle { textSize: "title"}
                 text: qsTr("Title")
+                width: parent.width
                 onClicked: edit.formatLineWith('h2')
             }
             Button {
-                style: GCButtonStyle {}
-                height: 30 * ApplicationInfo.ratio
-                width: parent.width
+                style: GCButtonStyle { textSize: "subtitle"}
                 text: qsTr("Subtitle")
+                width: parent.width
                 onClicked: edit.formatLineWith('h3')
             }
             Button {
-                style: GCButtonStyle {}
-                height: 30 * ApplicationInfo.ratio
+                style: GCButtonStyle { textSize: "regular"}
                 width: parent.width
                 text: qsTr("Paragraph")
                 onClicked: edit.formatLineWith('p')
