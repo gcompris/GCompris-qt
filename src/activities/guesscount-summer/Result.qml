@@ -30,6 +30,7 @@ Rectangle {
     height: 100
     color: "white"
     border.color: "black"
+    property var datavalue: title.text
     GCText{
         id: tile
         anchors.horizontalCenter: parent.horizontalCenter

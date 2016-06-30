@@ -31,7 +31,7 @@ var signs = [
         ]
 var dataset=[
             [
-                [[1,2,5],3],
+                [[1,2,4,5],3],
                 [[3,1],3],
                 [[9,4],5],
                 [[8,4],2]
@@ -86,4 +86,26 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function calculate(operand1,operator,operand2,row_result)
+{
+    switch (operand) {
+    case "+":
+        row_result=operand1+operand2
+        console.log(row_result)
+        break;
+    case "-":
+        row_result=operand1-operand2
+        console.log(row_result)
+        break;
+    case "/":
+        row_result=operand1/operand2
+        console.log(row_result)
+        break;
+    case "*":
+        row_result=operand1*operand2
+        console.log(row_result)
+    }
+    return row_result
 }
