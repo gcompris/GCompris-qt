@@ -42,7 +42,7 @@ ButtonStyle {
 
     /**
      * type:string
-     * theme of the button. For now, two themes are accepted: "light" and "dark"
+     * theme of the button. For now, three themes are accepted: "light" and "dark" and "highContrast"
      *
      * Default is dark.
     */
@@ -73,6 +73,15 @@ ButtonStyle {
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
             textColor: "white"
+        },
+        "highContrast": {
+            backgroundColorGradient0: "#EEFFFFFF",
+            selectedColorGradient0: "#C03ACAFF",
+            backgroundColorGradient1: "#AAFFFFFF",
+            selectedColorGradient1: "#803ACAFF",
+            borderColor: "white",
+            textColor: "373737"
+            
         }
     }
 
