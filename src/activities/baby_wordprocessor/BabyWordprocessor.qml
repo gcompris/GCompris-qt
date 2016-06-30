@@ -112,6 +112,7 @@ ActivityBase {
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 textFormat: TextEdit.RichText
+                color: "#373737"
                 font {
                     pointSize: (18 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
@@ -126,7 +127,7 @@ ActivityBase {
                     // height should be set automatically as mention in cursorRectangle property
                     // documentation but it does not work
                     height: parent.cursorRectangle.height
-                    color: 'red'
+                    color: '#DF543D'
                     SequentialAnimation on opacity {
                         running: true
                         loops: Animation.Infinite
