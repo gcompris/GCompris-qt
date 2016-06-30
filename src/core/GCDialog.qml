@@ -181,6 +181,7 @@ Item {
                 topMargin: 10
             }
             style: GCButtonStyle {
+                theme: "highContrast"
             }
             visible: text != ""
             onClicked: {
@@ -199,6 +200,7 @@ Item {
                 topMargin: 10
             }
             style: GCButtonStyle {
+                theme: "highContrast"
             }
             visible: text != ""
             onClicked: {
