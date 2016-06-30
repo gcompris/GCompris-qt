@@ -25,11 +25,10 @@ ActivityInfo {
     demo: true
     title: "Nitish_drawletters"
     description: qsTr("You have to join the dots in the right order to finally draw some letters & numbers")
-    //intro: "put here in comment the text for the intro voice"
-     goal: qsTr("Teach children about characters & letters in a fun way.")
+
+    goal: qsTr("Children will learn about different letters & Numbers in a fun way.")
     prerequisite: ""
     manual: qsTr("Draw the figure by connecting each number in the correct order")
-    credit: ""
     section: "fun"
     createdInVersion: 7000
 }
