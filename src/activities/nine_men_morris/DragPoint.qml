@@ -27,16 +27,15 @@ import GCompris 1.0
 
 Rectangle {
     id: dragPoint
-    width: parent.width/26
+    width: parent.width / 26
     height: width
-    radius: width/2
+    radius: width / 2
     opacity: 1.0
     border.color: "#803300"
     border.width: state == "EMPTY" ? 0 : width/6
     state: "AVAILABLE"
 
     property int index
-    //property bool pieceBeingRemoved
     property bool firstPhase
     property bool pieceBeingMoved
     property int pieceIndex
@@ -54,7 +53,7 @@ Rectangle {
             }
         },
         State {
-            name: "UNAVAILABLE" // Red color
+            name: "UNAVAILABLE"
             PropertyChanges{
                 target: dragPoint
                 color: "Red"
@@ -68,14 +67,14 @@ Rectangle {
             }
         },
         State {
-            name: "1" // Red color
+            name: "1"
             PropertyChanges {
                 target: dragPoint
                 color: "Red"
             }
         },
         State {
-            name: "2" // Red color
+            name: "2"
             PropertyChanges {
                 target: dragPoint
                 color: "Red"
@@ -87,8 +86,8 @@ Rectangle {
         id: area
         enabled: parent.state == "AVAILABLE" && !pieceBeingMoved
         anchors.centerIn: parent
-        width: 2.5*parent.width
-        height: 2.5*parent.height
+        width: 2.5 * parent.width
+        height: 2.5 * parent.height
         onClicked: {
             if (firstPhase)
                 Activity.handleCreate(index)

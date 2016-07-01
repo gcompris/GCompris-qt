@@ -20,7 +20,6 @@
  */
 import QtQuick 2.1
 
-import QtGraphicalEffects 1.0
 import "../../core"
 import "nine_men_morris.js" as Activity
 
@@ -33,14 +32,13 @@ Image {
     property double moveY
     property int parentIndex: -1
     property bool canBeRemoved: false
-    property bool initial: true
     property bool firstPhase
     property bool isSelected: false
     property bool playSecond
     property bool gameDone
     property bool pieceBeingMoved
     property int chance
-    opacity: 1.0//0.5
+    opacity: 1.0
 
     ParallelAnimation {
         id: pieceAnimation
@@ -61,14 +59,8 @@ Image {
         onStarted: {
             piece.anchors.verticalCenter = undefined
             piece.anchors.centerIn = undefined
-            //piece.sourceSize.height = pieceParent.width*2.5
-            //piece.sourceSize.height = Qt.binding(function() { return pieceParent.parent.width/8 })
-            //piece.sourceSize.height = Qt.binding(function() { return pieceParent.width*2.5 })
         }
         onStopped: {
-            //tileImage.parent = tileImage.tileImageParent
-            //tileImage.anchors.centerIn = tileImage.currentTargetSpot == null ? tileImage.parent : tileImage.currentTargetSpot
-            //updateOkButton()
             piece.parent = pieceParent
             piece.anchors.centerIn = pieceParent
             piece.parent.state = piece.state
@@ -118,11 +110,8 @@ Image {
         width: parent.width
         height: parent.height
         onClicked: {
-            //console.log("gameDone",gameDone,"enabled",enabled)
-            console.log("index=",index)
             if (canBeRemoved)
                 removePieceAnimation.start()
-                //Activity.removePiece(index)
             else {
                 isSelected = true
                 Activity.pieceSelected(index);
@@ -138,7 +127,7 @@ Image {
         visible: ((piece.visible && area.enabled && firstPhase) || isSelected) || canBeRemoved
         opacity: 1
         radius: width / 2
-        border.width: width / 10 //2.5
+        border.width: width / 10
         border.color: canBeRemoved ? "red" : "green"
         color: "transparent"
         z: -1
@@ -147,9 +136,9 @@ Image {
     function move(pieceChangeParent) {
         piece.pieceParent = pieceChangeParent
         piece.parentIndex = pieceChangeParent.index
-        piece.sourceSize.height = Qt.binding(function() { return pieceParent.width*2.5 })
-        var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width/2 -
-                    piece.width/2, pieceChangeParent.y + pieceChangeParent.height/2 - piece.height/2)
+        piece.sourceSize.height = Qt.binding(function() { return pieceParent.width * 2.5 })
+        var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width / 2 -
+                    piece.width / 2, pieceChangeParent.y + pieceChangeParent.height / 2 - piece.height / 2)
         piece.moveX = coord.x
         piece.moveY = coord.y
         pieceAnimation.start()

@@ -49,8 +49,6 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
-            property alias board: board
             property alias dragPointsModel: dragPointsModel
             property alias dragPoints: dragPoints
 
@@ -89,18 +87,11 @@ ActivityBase {
             property int counter
             property bool playSecond
             property bool firstPhase
-            //property bool pieceBeingRemoved
             property bool pieceBeingMoved
 
             property alias bar: bar
             property alias bonus: bonus
-            property alias positionSet: positionSet
             property alias instructionTxt: instruction.text
-        }
-
-        Loader {
-            id: positionSet
-            asynchronous: false
         }
 
         onStart: Activity.start(items, twoPlayer)
@@ -109,7 +100,6 @@ ActivityBase {
         Image {
             id: board
             source: Activity.url + "board.svg"
-            //sourceSize.width: 5 * Math.min(background.width / 4 , background.height / 6)
             sourceSize.width: Math.min(background.height - 1.4 * player1.height - 1.2 * bar.height,
                                        background.width - 2.2 * firstInitial.width)
             visible: !items.isTutorial
@@ -127,7 +117,6 @@ ActivityBase {
                     id: point
                     DragPoint {
                         id: dragPoint
-                        //pieceBeingRemoved: items.pieceBeingRemoved
                         x: posX * parent.width - width / 2
                         y: posY * parent.height - height / 2
                         index: myIndex
@@ -136,18 +125,6 @@ ActivityBase {
                     }
                 }
             }
-
-            /* MouseArea {
-                id: area
-                enabled: true
-                hoverEnabled: true
-                width: parent.width
-                height: parent.height
-                onClicked: {
-                    console.log("Doneb")
-                    //Activity.handleCreate(parent)
-                }
-            } */
         }
 
         ListModel {
@@ -157,10 +134,6 @@ ActivityBase {
         Rectangle {
             id: firstInitial
             anchors {
-                //left: board.right
-                //leftMargin: 15
-                //bottom: board.verticalCenter
-                //bottomMargin: 30
                 left: player1.left
                 top: player1.bottom
                 topMargin: player1.height * 0.5
@@ -186,11 +159,8 @@ ActivityBase {
                     id: firstPieceInitial
                     Piece {
                         id: firstPiece
-                        state: "1" //items.playSecond % 2 ? "2": "1"
+                        state: "1"
                         firstPhase: items.firstPhase
-                        //source: Activity.url + "white_piece.svg"
-                        //width: (grid.height / 4) * 1.1
-                        //height: (grid.height / 4) * 1.1
                         sourceSize.height: Math.min(firstInitial.height * 0.8, firstInitial.width * 0.4)
                         x: firstInitial.width * 0.06
                         anchors.verticalCenter: firstInitial.verticalCenter
@@ -198,7 +168,6 @@ ActivityBase {
                         playSecond: items.playSecond
                         gameDone: items.gameDone
                         pieceBeingMoved: items.pieceBeingMoved
-                        //opacity: 1
                     }
                 }
             }
@@ -210,7 +179,7 @@ ActivityBase {
                     right: parent.right
                     rightMargin: parent.width * 0.1
                 }
-                fontSize: mediumSize //Math.max(Math.min(parent.height * 0.4, parent.width * 0.2),12)
+                fontSize: mediumSize
                 color: "white"
                 style: Text.Outline
                 styleColor: "black"
@@ -227,18 +196,12 @@ ActivityBase {
         Rectangle {
             id: secondInitial
             anchors {
-            /*
-                left: board.right
-                leftMargin: 15
-                top: board.verticalCenter
-                topMargin: 30
-            */
                 right: player2.right
                 top: player2.bottom
                 topMargin: player2.height * 0.5
             }
-            width: firstInitial.width //(Math.min(0.9 * parent.width - board.x - board.width, 0.68 * board.width), 150)
-            height: firstInitial.height //0.18 * board.height
+            width: firstInitial.width
+            height: firstInitial.height
             visible: !items.isTutorial && items.firstPhase
             opacity: 0.8
             radius: 10
@@ -250,34 +213,23 @@ ActivityBase {
                 GradientStop { position: 1.0; color: "#AAA" }
             }
             Repeater {
-                    id: secondPlayerPieces
-                    model: secondPlayerPiecesModel
-                    delegate: secondPieceInitial
-                    Component {
-                        id: secondPieceInitial
-                        /* Image {
-                            id: initialBlack
-                            source: Activity.url + "black_piece.svg"
-                            sourceSize.height: Math.min(parent.height * 0.8,parent.width * 0.4)
-                            x: parent.width * 0.06
-                            anchors.verticalCenter: parent.verticalCenter
-                        } */
-                        Piece {
-                            id: secondPiece
-                            state: "2" //items.playSecond % 2 ? "1": "2"
-                            firstPhase: items.firstPhase
-                            //source: Activity.url + "black_piece.svg"
-                            //width: (grid.height/4) * 1.1
-                            //height: (grid.height/4) * 1.1
-                            sourceSize.height: Math.min(secondInitial.height * 0.8, secondInitial.width * 0.4)
-                            x: secondInitial.width * 0.06
-                            anchors.verticalCenter: secondInitial.verticalCenter
-                            chance: items.counter % 2
-                            playSecond: items.playSecond
-                            gameDone: items.gameDone
-                            pieceBeingMoved: items.pieceBeingMoved
-                            //opacity: 1
-                        }
+                id: secondPlayerPieces
+                model: secondPlayerPiecesModel
+                delegate: secondPieceInitial
+                Component {
+                    id: secondPieceInitial
+                    Piece {
+                        id: secondPiece
+                        state: "2"
+                        firstPhase: items.firstPhase
+                        sourceSize.height: Math.min(secondInitial.height * 0.8, secondInitial.width * 0.4)
+                        x: secondInitial.width * 0.06
+                        anchors.verticalCenter: secondInitial.verticalCenter
+                        chance: items.counter % 2
+                        playSecond: items.playSecond
+                        gameDone: items.gameDone
+                        pieceBeingMoved: items.pieceBeingMoved
+                    }
                 }
             }
 
@@ -288,7 +240,7 @@ ActivityBase {
                     right: parent.right
                     rightMargin: parent.width * 0.1
                 }
-                fontSize: mediumSize //Math.max(Math.min(parent.height * 0.8, parent.width * 0.4) / 2,12)
+                fontSize: mediumSize
                 color: "white"
                 style: Text.Outline
                 styleColor: "black"
@@ -307,23 +259,18 @@ ActivityBase {
             id: instruction
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                //left: parent.left
-                //leftMargin: 5
                 top: parent.top
                 topMargin: 5
             }
-            //fontSize: 13 //Math.min(parent.width/10, parent.height/2.5)
             fontSizeMode: Text.Fit
             minimumPixelSize: 10
             color: "white"
             style: Text.Outline
             styleColor: "black"
             horizontalAlignment: Text.AlignHLeft
-            width: implicitWidth //Math.min(implicitWidth, 0.9 * parent.width - 2 * player1.width)
+            width: implicitWidth
             height: implicitHeight
-            //wrapMode: TextEdit.WordWrap
             visible: !items.isTutorial
-            //text: qsTr("Remove a Piece")
             z: 2
         }
 
@@ -332,7 +279,7 @@ ActivityBase {
             anchors.top: instruction.top
             anchors.horizontalCenter: parent.horizontalCenter
             width: instruction.width + 20
-            height: instruction.height + 2 //instruction.fontSize * 2.28 * Math.ceil(instruction.implicitWidth / instruction.width)
+            height: instruction.height + 2
             opacity: 0.8
             radius: 10
             border.width: 2
@@ -449,7 +396,6 @@ ActivityBase {
                 source: Activity.url + "score_1.svg"
                 sourceSize.height: parent.height * 0.93
                 anchors.centerIn: parent
-                //anchors.horizontalCenterOffset: 0.5
 
                 Image {
                     id: player1image
@@ -607,11 +553,10 @@ ActivityBase {
         }
         // Animation section ends
 
-
         // Tutorial section starts
         Image {
             id: previousTutorial
-            source: Activity.url + "bar_previous.svg"
+            source: "../../core/resource/bar_previous.svg"
             sourceSize.height: skipTutorial.height * 1.1
             visible: items.isTutorial && tutorialTxt.tutNum != 1
             anchors {
@@ -631,7 +576,7 @@ ActivityBase {
 
         Image {
             id: nextTutorial
-            source: Activity.url + "bar_next.svg"
+            source: "../../core/resource/bar_next.svg"
             sourceSize.height: skipTutorial.height * 1.1
             visible: items.isTutorial && tutorialTxt.tutNum != 5
             anchors {
@@ -653,12 +598,9 @@ ActivityBase {
             id: skipTutorial
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                //left: parent.left
-                //leftMargin: 5
                 top: parent.top
                 topMargin: 5
             }
-            //fontSize: 12 //Math.min(parent.width/10, parent.height/2.5)
             fontSizeMode: Text.Fit
             minimumPixelSize: 10
             color: "white"
@@ -667,7 +609,6 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
             width: Math.min(implicitWidth, 0.8 * parent.width )
             height: implicitHeight
-            //wrapMode: TextEdit.WordWrap
             visible: items.isTutorial
             text: qsTr("Skip Tutorial")
             z: 2
@@ -678,7 +619,7 @@ ActivityBase {
             anchors.top: skipTutorial.top
             anchors.horizontalCenter: skipTutorial.horizontalCenter
             width: skipTutorial.width + 10
-            height: skipTutorial.height + 2//skipTutorial.fontSize * 2.28 * Math.ceil(skipTutorial.implicitWidth / skipTutorial.width)
+            height: skipTutorial.height + 2
             opacity: 0.8
             radius: 10
             border.width: 2
@@ -704,33 +645,21 @@ ActivityBase {
             id: tutorialTxt
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                //left: parent.left
-                //leftMargin: 5
                 top: skipTutorial.bottom
                 topMargin: skipTutorial.height * 0.5
             }
-            //fontSize: 13 //Math.min(parent.width/10, parent.height/2.5)
             fontSizeMode: Text.Fit
             minimumPixelSize: 10
             color: "white"
             style: Text.Outline
             styleColor: "black"
             horizontalAlignment: Text.AlignHLeft
-            width: Math.min(implicitWidth, 0.8 * parent.width )//, textWidth * tutorialTxt.parent.width)
+            width: Math.min(implicitWidth, 0.8 * parent.width )
             height: Math.min(implicitHeight, 0.25 * parent.height )
             wrapMode: TextEdit.WordWrap
             visible: items.isTutorial
             z: 2
             property int tutNum: 1
-
-            /*
-            function changeTutorialText() {
-                if (tutNum == 1) {
-                    text = qsTr("Each player starts with 9 pieces. Initially, they take turns to \
-                                        place all their 9 peices onto the empty spots on the board.")
-                }
-            }
-             */
         }
 
         Rectangle {
@@ -738,7 +667,7 @@ ActivityBase {
             anchors.top: tutorialTxt.top
             anchors.horizontalCenter: tutorialTxt.horizontalCenter
             width: tutorialTxt.width + 20
-            height: tutorialTxt.height + 2//tutorialTxt.fontSize * 2.5 * Math.ceil(tutorialTxt.implicitWidth / tutorialTxt.width)
+            height: tutorialTxt.height + 2
             opacity: 0.8
             radius: 10
             border.width: 2
@@ -756,18 +685,13 @@ ActivityBase {
             source: Activity.url + "tutorial" + tutorialTxt.tutNum + ".svg"
             property int heightNeed: background.height - tutorialTxtContainer.height - bar.height -
                                      2 * skipTutorialContainer.height
-            //sourceSize.height: Math.min(background.height - tutorialTxtContainer.height - 1.2 * bar.height - 2 * skipTutorial.height, 0.5 * background.width)
-            //sourceSize.width: background.width
-            //height: sourceSize.height >= sourceSize.width ? heightNeed : 0.5 * background.width //heightNeed * parent.width/sourceSize.width
-            width: (sourceSize.width/sourceSize.height) > (0.9 * background.width / heightNeed) ? 0.9 * background.width :
-                   (sourceSize.width * heightNeed) / sourceSize.height
+            width: (sourceSize.width/sourceSize.height) > (0.9 * background.width / heightNeed) ?
+                   0.9 * background.width : (sourceSize.width * heightNeed) / sourceSize.height
             fillMode: Image.PreserveAspectFit
             visible: items.isTutorial
             anchors {
                 top: tutorialTxt.bottom
                 topMargin: 10
-                //bottom: bar.top
-                //bottomMargin: 10
                 horizontalCenter: parent.horizontalCenter
             }
         }
@@ -780,8 +704,8 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: (twoPlayer || items.isTutorial) ? (help | home | reload) :
-                                                                               (help | home | level | reload)}
+            content: BarEnumContent { value: twoPlayer ? (help | home | reload) : items.isTutorial ?
+                                             (help | home) : (help | home | level | reload)}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
