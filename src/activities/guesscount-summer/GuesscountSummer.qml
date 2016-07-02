@@ -51,7 +51,6 @@ ActivityBase {
             property alias bonus: bonus
             property int sublevel: 0
             property alias operand_row : operand_row
-            property alias row_repeat: repeat
         }
 
         onStart: { Activity.start(items) }
@@ -69,6 +68,7 @@ ActivityBase {
                 delegate: Operation_row{
                     id: operation_row
                     row_no: modelData
+                    prev_object: repeat.itemAt(1)
                 }
             }
         }
