@@ -16,42 +16,16 @@ Row{
         dropped_item: operand1.children[1]
         property int count: 0
         onDropped: {
-            console.log('drop')
-            if(operand1.count==0)
-            {
-                console.log('inc 1')
-              operand1.count+=1
-                }
-            else if(operand1.count==1)
-            {
-                console.log('reparent')
-                operand1.dropped_item.parent=operand1.dropped_item.reparent
-                }
-            console.log(operand1.dropped_item.datavalue)
+            Activity.drop_item(operand1)
             if(operand1.count==1 && operator.count==1 && operand2.count==1)
             {
-                console.log('add')
                 operation_row.row_result=Activity.calculate(operand1.dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row.row_result)
                 end_result.text=Qt.binding(function() { return operation_row.row_result.toString() })
             }
         }
-        onChildrenChanged: {
-            console.log('parent change')
-
-            if(!operand1.dropped_item && operand1.count)
-            {
-                console.log('dec 1')
-                operand1.count-=1
-            }
-            console.log(operand1.count +'     count')
-                if(operand1.count==0 || operator.count==0 || operand2.count==0)
-            {
-                    console.log('clear')
-                end_result.text=Qt.binding(function() { return '' })
-            }
-        }
+        onChildrenChanged: Activity.children_change(operand1,end_result)
     }
-    Rectangle {
+        Rectangle {
         id: prev_result
         width: 100
         height: 100
@@ -76,17 +50,14 @@ Row{
         property int count: 0
         dropped_item: operator.children[1]
         onDropped: {
-            if(!operator.count)
+            Activity.drop_item(operator)
+            if(operand1.count==1 && operator.count==1 && operand2.count==1)
             {
-                operator.count+=1
-                console.log(operator.dropped_item.datavalue)
+                operation_row.row_result=Activity.calculate(operand1.dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row.row_result)
+                end_result.text=Qt.binding(function() { return operation_row.row_result.toString() })
             }
-            else
-            {
-                operator.dropped_item.parent=operator.dropped_item.reparent
-            }
-
         }
+        onChildrenChanged: Activity.children_change(operator,end_result)
     }
     DropTile {
         id: operand2
@@ -96,17 +67,14 @@ Row{
         property int count: 0
         dropped_item: operand2.children[1]
         onDropped: {
-            if(!operand2.count)
+            Activity.drop_item(operand2)
+            if(operand1.count==1 && operator.count==1 && operand2.count==1)
             {
-                operand2.count+=1
-                console.log(operand2.dropped_item.datavalue)
+                operation_row.row_result=Activity.calculate(operand1.dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row.row_result)
+                end_result.text=Qt.binding(function() { return operation_row.row_result.toString() })
             }
-            else
-            {
-                operand2.dropped_item.parent=operand2.dropped_item.reparent
-            }
-
         }
+        onChildrenChanged: Activity.children_change(operand2,end_result)
     }
 
     Rectangle {

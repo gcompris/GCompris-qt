@@ -108,3 +108,25 @@ function calculate(operand1,operator,operand2,row_result)
     }
     return row_result
 }
+
+function drop_item(item)
+{
+    if(item.count==0)
+    {
+        item.count+=1
+    }
+    else if(item.count==1)
+    {
+        item.dropped_item.parent=item.dropped_item.reparent
+    }
+    console.log(item.dropped_item.datavalue)
+}
+
+function children_change(item,end_result)
+{
+    if(!item.dropped_item && item.count)
+    {               item.count-=1
+    }
+    end_result.text=Qt.binding(function() { return '' })
+}
+
