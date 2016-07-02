@@ -69,7 +69,6 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.sublevel = 1
-    console.log(currentLevel)
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
 
 }
@@ -90,7 +89,7 @@ function previousLevel() {
 
 function calculate(operand1,operator,operand2,row_result)
 {
-    switch (operand) {
+    switch (operator) {
     case "+":
         row_result=operand1+operand2
         console.log(row_result)
