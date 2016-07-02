@@ -27,6 +27,7 @@ import "guesscount-summer.js" as Activity
 DropArea {
     id: dragTarget
     property string type
+    property var dropped_item
     keys: [ type ]
     Rectangle {
         id: dropRectangle

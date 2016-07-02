@@ -13,33 +13,42 @@ Row{
         width: 100
         height: 100
         visible: row_no ? false : true
-        property bool drop: false
+        dropped_item: operand1.children[1]
+        property int count: 0
         onDropped: {
-            if(operand1.drop==false)
+            console.log('drop')
+            if(operand1.count==0)
             {
-                operand1.drop=true
-                console.log(operand1.children[1].datavalue)
-                if(operand1.drop && operator.drop && operand2.drop)
-                {
-                    operation_row.row_result=Activity.calculate(operand1.children[1].datavalue,operator.children[1].datavalue,operand2.children[1].datavalue,operation_row.row_result)
-                    console.log(operation_row.row_result)
-                    end_result.children[1].text=Number(operation_row.row_result).toString()
-                    // check if integer
-                    /*if(Activity.check_if_not_integer(row4))
-                    {
-                        dialog.visible=true
-                        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
-                        row4.children[5].children[0].text=" "
-                    }
-                    row5.enabled=true
-                    Activity.check_answer(row4,items,1)*/
+                console.log('inc 1')
+              operand1.count+=1
                 }
-            else
+            else if(operand1.count==1)
             {
-                operand1.children[1].parent=operand1.children[1].reparent
+                console.log('reparent')
+                operand1.dropped_item.parent=operand1.dropped_item.reparent
+                }
+            console.log(operand1.dropped_item.datavalue)
+            if(operand1.count==1 && operator.count==1 && operand2.count==1)
+            {
+                console.log('add')
+                operation_row.row_result=Activity.calculate(operand1.dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row.row_result)
+                end_result.text=Qt.binding(function() { return operation_row.row_result.toString() })
             }
-            }
+        }
+        onChildrenChanged: {
+            console.log('parent change')
 
+            if(!operand1.dropped_item && operand1.count)
+            {
+                console.log('dec 1')
+                operand1.count-=1
+            }
+            console.log(operand1.count +'     count')
+                if(operand1.count==0 || operator.count==0 || operand2.count==0)
+            {
+                    console.log('clear')
+                end_result.text=Qt.binding(function() { return '' })
+            }
         }
     }
     Rectangle {
@@ -64,17 +73,17 @@ Row{
         type : "operators"
         width: 100
         height: 100
-        property bool drop: false
+        property int count: 0
+        dropped_item: operator.children[1]
         onDropped: {
-            if(operator.drop==false)
+            if(!operator.count)
             {
-                operator.drop=true
-                console.log(operator.children[1].datavalue)
-
+                operator.count+=1
+                console.log(operator.dropped_item.datavalue)
             }
             else
             {
-                operator.children[1].parent=operator.children[1].reparent
+                operator.dropped_item.parent=operator.dropped_item.reparent
             }
 
         }
@@ -84,16 +93,17 @@ Row{
         type : "operands"
         width: 100
         height: 100
-        property bool drop: false
+        property int count: 0
+        dropped_item: operand2.children[1]
         onDropped: {
-            if(operand2.drop==false)
+            if(!operand2.count)
             {
-                operand2.drop=true
-                console.log(operand2.children[1].datavalue)
+                operand2.count+=1
+                console.log(operand2.dropped_item.datavalue)
             }
             else
             {
-                operand2.children[1].parent=operand2.children[1].reparent
+                operand2.dropped_item.parent=operand2.dropped_item.reparent
             }
 
         }
@@ -111,11 +121,11 @@ Row{
         radius: 20.0
     }
     Rectangle {
-        id: end_result
         width: 100
         height: 100
         border.color: "black"
         GCText{
+            id: end_result
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: mediumSize
