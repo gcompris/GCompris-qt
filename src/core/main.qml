@@ -111,8 +111,9 @@ Window {
     function checkWordset() {
         var wordset = ApplicationSettings.wordset
         if(wordset == '')
-            // Try the default one, maybe we have it bundled
-            wordset = "data2/words/words.rcc"
+            // Maybe the wordset has been bundled or copied manually
+            // we have to register it if we find it.
+            wordset = 'data2/words/words.rcc'
 
         // check for words.rcc:
         if (DownloadManager.isDataRegistered("words")) {
@@ -126,7 +127,7 @@ Window {
                     if(wordset === arguments[0]) {
                         DownloadManager.resourceRegistered.disconnect(arguments.callee);
                         // force configuration to use the local wordset
-                        ApplicationSettings.wordset = 'data2/words/words.rcc'
+                        ApplicationSettings.wordset = wordset
                     }
                 })
             }
