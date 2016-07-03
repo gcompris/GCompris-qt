@@ -210,6 +210,7 @@ Item {
             text: qsTr("Background")
             style: GCButtonStyle {
                 fixedFontSize: downloadDialog.fixedFontSize
+                theme: "highContrast"
             }
             visible: true
             onClicked: downloadDialog.shutdown();
@@ -227,6 +228,7 @@ Item {
             text: qsTr("Abort")
             style: GCButtonStyle {
                 fixedFontSize: downloadDialog.fixedFontSize
+                theme: "highContrast"
             }
             visible: true
             onClicked: {
