@@ -108,8 +108,9 @@ Window {
     }
 
     function checkWordset() {
+        var wordset = ApplicationSettings.wordset
         if(ApplicationSettings.wordset == '')
-            return
+            wordset = 'data2/words/words.rcc'
 
         // check for words.rcc:
         if (DownloadManager.isDataRegistered("words")) {
@@ -123,7 +124,7 @@ Window {
                     if(wordset === arguments[0]) {
                         DownloadManager.resourceRegistered.disconnect(arguments.callee);
                         // force configuration to use the local wordset
-                        ApplicationSettings.wordset = 'data2/words/words.rcc'
+                        ApplicationSettings.wordset = wordset
                     }
                 })
             }
