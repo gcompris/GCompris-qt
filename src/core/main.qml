@@ -109,7 +109,9 @@ Window {
 
     function checkWordset() {
         var wordset = ApplicationSettings.wordset
-        if(ApplicationSettings.wordset == '')
+        if(wordset == '')
+            // Maybe the wordset has been bundled or copied manually
+            // we have to register it if we find it.
             wordset = 'data2/words/words.rcc'
 
         // check for words.rcc:
