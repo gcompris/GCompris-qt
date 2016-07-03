@@ -129,11 +129,9 @@ Rectangle {
 
     signal stop
 
-
     color: "#696da3"
     border.color: "black"
     border.width: 1
-    z: 1000
 
     function getInitialConfiguration() {
         if(activityName == "") {

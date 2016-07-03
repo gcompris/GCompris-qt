@@ -159,7 +159,7 @@ Item {
         height: parent.height
         
         parent: background
-        
+        z: 100
         focus: visible
 
         // Forward event to activity if key pressed is not one of the handled key
@@ -243,7 +243,7 @@ Item {
             
             Rectangle {
                 id : headerDescription
-		z: 10
+		        z: 10
                 width: gridview.width
                 height: gridview.elementHeight
                 GCText {
@@ -256,7 +256,6 @@ Item {
                     id: discardIcon
                     anchors.right: headerDescription.right
                     anchors.top: headerDescription.top
-
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
