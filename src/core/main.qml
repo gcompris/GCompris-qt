@@ -114,11 +114,22 @@ Window {
         // check for words.rcc:
         if (DownloadManager.isDataRegistered("words")) {
             // words.rcc is already registered -> nothing to do
-        } else if(DownloadManager.haveLocalResource(ApplicationSettings.wordset)) {
+        } else if(DownloadManager.haveLocalResource(wordset)) {
             // words.rcc is there -> register old file first
             // then try to update in the background
-            DownloadManager.updateResource(ApplicationSettings.wordset);
-        } else {
+            if(DownloadManager.updateResource(wordset)) {
+                DownloadManager.resourceRegistered.connect(function() {
+                    // not sure if needed, we check if the resource registered is the one we updated here?
+                    if(wordset === arguments[0]) {
+                        DownloadManager.resourceRegistered.disconnect(arguments.callee);
+                        // force configuration to use the local wordset
+                        ApplicationSettings.wordset = 'data2/words/words.rcc'
+                    }
+                })
+            }
+
+
+        } else if(ApplicationSettings.wordset) { // Only if wordset specified
             // words.rcc has not been downloaded yet -> ask for download
             Core.showMessageDialog(
                         main,
@@ -126,7 +137,7 @@ Window {
                         + qsTr("Do you want to download them now?"),
                         qsTr("Yes"),
                         function() {
-                            if (DownloadManager.downloadResource(ApplicationSettings.wordset))
+                            if (DownloadManager.downloadResource(wordset))
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
                         qsTr("No"), null,
@@ -180,10 +191,6 @@ Window {
             if (!DownloadManager.areVoicesRegistered()) {
                 if (DownloadManager.updateResource(
                             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))) {
-                    DownloadManager.downloadFinished.connect(function() {
-                        checkWordset();
-                        DownloadManager.downloadFinished.disconnect(arguments.callee);
-                    });
                     DownloadManager.resourceRegistered.connect(function() {
                         // not sure if needed, we check if the resource registered is the one we updated here?
                         if(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale) === arguments[0]) {
