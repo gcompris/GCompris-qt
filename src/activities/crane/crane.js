@@ -56,6 +56,10 @@ var words4Letters = ["blue","best","good","area","bell","coat","easy","farm",
 var words5Letters = ["happy","child","white","apple","brown","truth","fresh",
                      "green","horse","hotel","house","paper","shape","shirt","study"]
 
+var alreadyUsed3 = []
+var alreadyUsed4 = []
+var alreadyUsed5 = []
+
 var names = []
 var names2 = []
 var good = []
@@ -63,9 +67,9 @@ var good = []
 function start(items_) {
     items = items_
     currentLevel = 0
-    Core.shuffle(words3Letters)
-    Core.shuffle(words4Letters)
-    Core.shuffle(words5Letters)
+    alreadyUsed3 = []
+    alreadyUsed4 = []
+    alreadyUsed5 = []
     initLevel()
 }
 
@@ -74,6 +78,9 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    Core.shuffle(words3Letters)
+    Core.shuffle(words4Letters)
+    Core.shuffle(words5Letters)
     init()
 }
 
@@ -155,7 +162,44 @@ function setRandomModelWord(){
         numbers[i] = i;  // generate columns*rows numbers
     }
 
-    var currentIndex = currentLevel % numberLevelsWords
+    // before: // var currentIndex = currentLevel % numberLevelsWords
+
+    // get a random word: Math.floor(Math.random() * (max - min + 1)) + min;
+    var currentIndex = Math.floor(Math.random() * wordsUsed.length)
+
+    // use vectors to store the words already used
+    if (wordsUsed[0].length == 3) {
+        while(alreadyUsed3.indexOf(wordsUsed[currentIndex]) >= 0) {
+            // there are no more words to use => clear the "alreadyUsed3" vector
+            if (alreadyUsed3.length == wordsUsed.length)
+                alreadyUsed3 = []
+            // get another random index
+            currentIndex = Math.floor(Math.random() * wordsUsed.length)
+        }
+        // add the word in the "aredayUsed3" vector
+        alreadyUsed3 = alreadyUsed3.concat(wordsUsed[currentIndex])
+    } else if (wordsUsed[0].length == 4) {
+        while(alreadyUsed4.indexOf(wordsUsed[currentIndex]) >= 0) {
+            // there are no more words to use => clear the "alreadyUsed4" vector
+            if (alreadyUsed4.length == wordsUsed.length)
+                alreadyUsed4 = []
+            // get another random index
+            currentIndex = Math.floor(Math.random() * wordsUsed.length)
+        }
+        // add the word in the "aredayUsed4" vector
+        alreadyUsed4 = alreadyUsed4.concat(wordsUsed[currentIndex])
+    } else if (wordsUsed[0].length == 5) {
+        while(alreadyUsed5.indexOf(wordsUsed[currentIndex]) >= 0) {
+            // there are no more words to use => clear the "alreadyUsed4" vector
+            if (alreadyUsed5.length == wordsUsed.length)
+                alreadyUsed5 = []
+            // get another random index
+            currentIndex = Math.floor(Math.random() * wordsUsed.length)
+        }
+        // add the word in the "aredayUsed4" vector
+        alreadyUsed5 = alreadyUsed5.concat(wordsUsed[currentIndex])
+    } else print("wordsUsed[0].length ",wordsUsed[0].length)
+
 
     // place the word at a random position in the grid
     var randomRow = Math.floor(Math.random() * items.rows)

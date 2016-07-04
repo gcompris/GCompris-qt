@@ -327,9 +327,9 @@ ActivityBase {
             id: crane_vertical
             source: "resource/crane_vertical.svg"
             sourceSize.width: background.width * 0.04
-            sourceSize.height: background.height * 0.73
+            sourceSize.height: background.portrait ? background.height * 0.5 : background.height * 0.73
             width: background.width * 0.05
-            height: background.portrait ? background.height * 0.45 : background.height * 0.73
+            height: background.portrait ? background.height * 0.5 : background.height * 0.73
             anchors {
                 top: crane_top.top
                 right: background.portrait ? parent.right : parent.horizontalCenter
@@ -371,8 +371,12 @@ ActivityBase {
         Image {
             id: crane_command
             source: "resource/command.svg"
-            sourceSize.width: parent.width / 4
-            sourceSize.height: parent.height/ 3.5
+            sourceSize.width: background.portrait ? parent.width / 2.7 : parent.width / 3.5
+            sourceSize.height: background.portrait ? parent.height / 3.5 :  parent.height / 4
+
+            width: background.portrait ? parent.width / 2.7 : parent.width / 3.5
+            height: background.portrait ? parent.height / 3.5 :  parent.height / 4
+
             mirror: true
 
             anchors {
@@ -380,8 +384,8 @@ ActivityBase {
                 bottom: crane_body.bottom
                 right: crane_wire.left
                 rightMargin: 0
-                topMargin: background.portrait ? board.anchors.margins : 50
-                margins: board.anchors.margins
+                topMargin: background.portrait ? 0 : board.anchors.margins * 1.5
+                bottomMargin: background.portrait ? 0 : board.anchors.margins * 1.5
             }
 
             Controls {
@@ -389,7 +393,7 @@ ActivityBase {
                 source: "resource/arrow_up.svg"
                 anchors {
                     left: parent.left
-                    leftMargin: parent.width / 10
+                    leftMargin: parent.width / 13
                 }
                 command: "up"
             }
@@ -399,7 +403,7 @@ ActivityBase {
                 source: "resource/arrow_down.svg"
                 anchors {
                     left: up.right
-                    leftMargin: parent.width / 20
+                    leftMargin: parent.width / 30
                 }
                 command: "down"
             }
@@ -409,7 +413,7 @@ ActivityBase {
                 source: "resource/arrow_left.svg"
                 anchors {
                     right: right.left
-                    rightMargin: parent.width / 20
+                    rightMargin: parent.width / 30
                 }
                 command: "left"
             }
