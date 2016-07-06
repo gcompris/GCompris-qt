@@ -20,11 +20,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-
 import QtQuick 2.2
 import GCompris 1.0
 import "../../core"
-import QtQuick.Particles 2.0
 import "drawletters.js" as Activity
 
 ActivityBase {
@@ -34,13 +32,11 @@ ActivityBase {
     property real pointImageOpacity: 1.0
 
     onStart: focus = true
-
     onStop: {}
 
     pageComponent: Item {
         id: background
         anchors.fill: parent
-
         signal start
         signal stop
 
@@ -63,20 +59,16 @@ ActivityBase {
             property alias segmentsRepeater: segmentsRepeater
             property alias imageBack: imageBack
             property int pointIndexToClick
-
-
-                    }
+                 }
 
 
         onStart: {
-
-
             Activity.start(items, clickanddrawflag)
-
-
-
         }
-        onStop: { Activity.stop() }
+
+        onStop: {
+            Activity.stop()
+        }
 
         Image {
             id: imageBack
@@ -89,20 +81,19 @@ ActivityBase {
         GCText {
                 id: number
                 opacity: pointImageOpacity
-                text: "Connect the Dots in the right sequence to Draw"
-                anchors {
-                                  right: parent.right
-                                  bottom: parent.bottom
-                                  margins: 15
-                              }
+                text: qsTr("Connect the Dots in the right sequence to Draw")
+                anchors {          
+                            right: parent.right
+                            bottom: parent.bottom
+                            margins: 15
+                        }
 
                 fontSize: 16
                 font.weight: Font.DemiBold
                 style: Text.Outline
                 styleColor: "black"
                 color: "orange"
-            }
-
+        }
 
 
         Repeater {
@@ -110,13 +101,11 @@ ActivityBase {
 
             Rectangle {
                 id: line
-
                 opacity: 0
                 color: "black"
                 transformOrigin: Item.TopLeft
                 x: modelData[0] * background.width / 800
                 y: modelData[1] * background.height / 520
-
                 property var x2: modelData[2] * background.width / 800
                 property var y2: modelData[3] * background.height / 520
                 width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
@@ -132,7 +121,6 @@ ActivityBase {
 
             Repeater {
                 id: pointImageRepeater
-
                 Image {
                     id: pointImage
 
@@ -154,7 +142,6 @@ ActivityBase {
 
                     GCText {
                         id: pointNumberText
-
                         opacity: pointImageOpacity
                         text: index + 1
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -221,7 +208,6 @@ ActivityBase {
             }
         }
 
-
         MultiPointTouchArea {
             anchors.fill: parent
             minimumTouchPoints: 1
@@ -233,7 +219,6 @@ ActivityBase {
                     var touch = touchPoints[i]
                     for(var p = 0; p < pointImageRepeater.count; p++) {
                         var part = pointImageRepeater.itemAt(p)
-
                         if(touch.x > part.x && touch.x < part.x + part.width &&
                            touch.y > part.y && touch.y < part.y + part.height) {
                             part.drawSegment()
@@ -248,7 +233,6 @@ ActivityBase {
                 checkPoints(touchPoints)
                 // to play upon clicking
                 activity.audioEffects.play(Activity.url + "buttonclick."+ApplicationInfo.CompressedAudio)
-
             }
             onTouchUpdated: {
                 checkPoints(touchPoints)
@@ -272,15 +256,10 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
 
-
         Bonus {
             id: bonus
-
             Component.onCompleted: win.connect(Activity.nextLevel)
-
         }
-
-
 
     }
 

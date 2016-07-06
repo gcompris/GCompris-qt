@@ -23,13 +23,10 @@ ActivityInfo {
   icon: "drawletters/drawletters.svg"
   author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
   demo: true
-  title: "Draw Letters"
+  title: qsTr("Draw Letters")
   description: qsTr("You have to join the dots in the right order to finally draw some letters & numbers")
-  //intro: "put here in comment the text for the intro voice"
   goal: qsTr("Children will learn about different letters & Numbers in a fun way.")
-  prerequisite: ""
   manual: qsTr("Draw the figure by connecting each number in the correct order")
-  credit: ""
   section: "fun"
   createdInVersion: 7000
 }
