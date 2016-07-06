@@ -26,7 +26,9 @@ ActivityInfo {
   title: qsTr("Draw Letters")
   description: qsTr("You have to join the dots in the right order to finally draw some letters & numbers")
   goal: qsTr("Children will learn about different letters & Numbers in a fun way.")
+  prerequisite: ""
   manual: qsTr("Draw the figure by connecting each number in the correct order")
+  credit: ""
   section: "fun"
   createdInVersion: 7000
 }
