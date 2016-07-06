@@ -68,10 +68,23 @@ ActivityBase {
                 delegate: Operation_row{
                     id: operation_row
                     row_no: modelData
-                    prev_object: repeat.itemAt(1)
+                    prev_result: modelData ? repeat.itemAt(modelData).row_result : -1
                 }
             }
         }
+
+Repeater {
+                id: repeat2
+                model: 5
+                Text {
+                    height: 100
+                    width: 100
+                    property var index: modelData.toString()
+                    text: repeat2.childAt(modelData).index
+                }
+            }
+
+
         DialogHelp {
             id: dialogHelp
             onClose: home()

@@ -7,7 +7,7 @@ Row{
     spacing: 40
     property int row_result
     property int row_no
-    property var prev_object
+    property var prev_result
    Component{
        id: component1
        //property alias operand1: operand1
@@ -47,7 +47,7 @@ Row{
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: mediumSize
-            text: ''
+            text: Qt.binding(function() { return operation_row.prev_result })
         }
         radius: 20.0
     }
