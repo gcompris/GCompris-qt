@@ -224,7 +224,6 @@ Item {
     z: 9999
     width: parent.width
     height: visible ? priv.cHeight : 0
-    anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
 
     property int modifiers: Qt.NoModifier;  // currently active key modifiers, internal only
@@ -308,8 +307,7 @@ Item {
         id: keyboardBackground
 
         width: parent.width
-        height: keyboard.height // ??? parent.height
-
+        height: keyboard.height
         color: "#8C8F8C"
         opacity: keyboard.opacity
 
@@ -325,7 +323,7 @@ Item {
             spacing: keyboard.rowSpacing
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom
-            interactive: false
+            interactive: true
 
             model: rowListModel
 

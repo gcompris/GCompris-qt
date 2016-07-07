@@ -529,7 +529,15 @@ ActivityBase {
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 font.family: GCSingletonFontLoader.fontLoader.name
-                activeFocusOnPress: !ApplicationInfo.mobile
+                activeFocusOnPress:{
+                    //don't let the android keyboard interfere with the virtual keyboard.Both of them should
+                    //not be allowed to work simultaneously
+                    if(ApplicationInfo.isMobile)
+                        return !ApplicationSettings.isVirtualKeyboard
+
+                    else
+                        return true
+                }
                 placeholderText: qsTr("Search specific activities")
                 onTextChanged: {
                     ActivityInfoTree.filterBySearch(input.text);
@@ -539,16 +547,11 @@ ActivityBase {
 
         VirtualKeyboard {
             id: keyboard
-//            parent: background
             readonly property var letter: ActivityInfoTree.characters
             property int rows;
             width: parent.width//horizontal ? main.width : parent.width - (section.width +10)
             visible: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
-//            anchors {
-//                top: background.bottom
-//                left: parent.left
-//            }
-            anchors.bottom: parent.bottom
+            anchors.top: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             onKeypress: {
                 if(text == keyboard.backspace) {
@@ -603,6 +606,7 @@ ActivityBase {
                 value: help | config | about | (ApplicationInfo.isMobile ? 0 : exit)
             }
             anchors.bottom: keyboard.visible ? keyboard.top : parent.bottom
+
             onAboutClicked: {
                 displayDialog(dialogAbout)
             }
