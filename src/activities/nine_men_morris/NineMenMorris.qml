@@ -84,7 +84,7 @@ ActivityBase {
             property alias rotateTux: rotateTux
 
             property bool gameDone
-            property int counter
+            property int turn
             property bool playSecond
             property bool firstPhase
             property bool pieceBeingMoved
@@ -164,7 +164,7 @@ ActivityBase {
                         sourceSize.height: Math.min(firstInitial.height * 0.8, firstInitial.width * 0.4)
                         x: firstInitial.width * 0.06
                         anchors.verticalCenter: firstInitial.verticalCenter
-                        chance: items.counter % 2
+                        chance: items.turn % 2
                         playSecond: items.playSecond
                         gameDone: items.gameDone
                         pieceBeingMoved: items.pieceBeingMoved
@@ -225,7 +225,7 @@ ActivityBase {
                         sourceSize.height: Math.min(secondInitial.height * 0.8, secondInitial.width * 0.4)
                         x: secondInitial.width * 0.06
                         anchors.verticalCenter: secondInitial.verticalCenter
-                        chance: items.counter % 2
+                        chance: items.turn % 2
                         playSecond: items.playSecond
                         gameDone: items.gameDone
                         pieceBeingMoved: items.pieceBeingMoved
@@ -556,7 +556,7 @@ ActivityBase {
         // Tutorial section starts
         Image {
             id: previousTutorial
-            source: "../../core/resource/bar_previous.svg"
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
             sourceSize.height: skipTutorial.height * 1.1
             visible: items.isTutorial && tutorialTxt.tutNum != 1
             anchors {
@@ -576,7 +576,7 @@ ActivityBase {
 
         Image {
             id: nextTutorial
-            source: "../../core/resource/bar_next.svg"
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
             sourceSize.height: skipTutorial.height * 1.1
             visible: items.isTutorial && tutorialTxt.tutNum != 5
             anchors {

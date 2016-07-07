@@ -244,7 +244,7 @@ function stop() {
 function initLevel() {
 
     items.bar.level = currentLevel
-    items.counter = 0
+    items.turn = 0
     items.gameDone = false
     items.firstPhase = true
     items.pieceBeingMoved = false
@@ -270,14 +270,17 @@ function initLevel() {
     currentRepeater = items.firstPlayerPieces
     otherRepeater = items.secondPlayerPieces
 
-    if(items.playSecond)
+    stopper = false
+
+    if(items.playSecond) {
         initiatePlayer2()
+        if(!twoPlayer) {
+            var rand = Math.floor((Math.random() * numberOfDragPoints))
+            handleCreate(rand)
+        }
+    }
     else
         initiatePlayer1()
-
-    stopper = 0
-    if(items.playSecond)
-        changePlayToSecond()
 }
 
 function tutorial() {
@@ -343,14 +346,11 @@ function previousLevel() {
 
 function reset() {
 
-    stopper = 1
+    stopper = true
     stopAnimations()
     items.player1image.rotation = 0
     items.player2image.rotation = 0
-    if(items.playSecond)
-        items.playSecond = false
-    else
-        items.playSecond = true
+    items.playSecond = !items.playSecond
     initLevel()
 }
 
@@ -406,44 +406,24 @@ function initiatePlayer2() {
 function changeScale() {
 
    if(items.playSecond) {
-        if(items.counter % 2 == 0)
+        if(items.turn % 2 == 0)
             items.player2turn.start()
         else
             items.player1turn.start()
     }
     else {
-        if(items.counter % 2 == 0)
+        if(items.turn % 2 == 0)
             items.player1turn.start()
         else
             items.player2turn.start()
     }
-}
-
-function changePlayToSecond() {
-
-    if(items.playSecond == 0) {
-        items.playSecond = true
-        reset()
-        return 0
-    }
-    if(!twoPlayer) {
-        var rand = Math.floor((Math.random() * numberOfDragPoints))
-        handleCreate(rand)
-    }
-}
-
-//Changing play to second in single player mode
-function changePlayToFirst() {
-
-    items.playSecond = false
-    reset()
 }
 
 //Create the piece at given position
 function handleCreate(index) {
 
     items.pieceBeingMoved = true
-    currentPiece = currentRepeater.itemAt(items.counter/2)
+    currentPiece = currentRepeater.itemAt(items.turn/2)
     if(currentPiece.state == "2") {
         items.secondPieceNumberCount--
         numberOfSecondPieces++
@@ -524,9 +504,9 @@ function movePiece(index) {
 function shouldComputerPlay() {
 
     if(!twoPlayer) {
-        if(items.counter % 2 && items.playSecond == false && stopper == 0)
+        if(items.turn % 2 && items.playSecond == false && stopper == false)
             doMove()
-        else if((items.counter % 2 == 0) && items.playSecond && stopper == 0)
+        else if((items.turn % 2 == 0) && items.playSecond && stopper == false)
             doMove()
         else
             items.pieceBeingMoved = false
@@ -930,14 +910,14 @@ function checkMillThirdPhase(index, state) {
 // called after removePiece(index) has removed a piece
 function continueGame() {
 
-    items.counter++
-    if(items.counter == (2 * numberOfPieces) && items.firstPhase) {
+    items.turn++
+    if(items.turn == (2 * numberOfPieces) && items.firstPhase) {
         secondPhase()
-        items.counter--
+        items.turn--
         checkGameWon()
         return
     }
-    if(items.counter % 2) {
+    if(items.turn % 2) {
         currentRepeater = items.secondPlayerPieces
         otherRepeater = items.firstPlayerPieces
     }
@@ -982,8 +962,7 @@ function checkMill(index, state, position) {
 // UpdateRemovablePiece called by Piece when its animation stops and checkMill(piece) is true
 function UpdateRemovablePiece() {
 
-    //items.pieceBeingRemoved = true
-    if(twoPlayer || ((items.counter % 2) && items.playSecond) || (!(items.counter % 2) && !items.playSecond)) {
+    if(twoPlayer || ((items.turn % 2) && items.playSecond) || (!(items.turn % 2) && !items.playSecond)) {
         var foundOne = false
         for(var i = 0 ; i < numberOfPieces ; ++i) {
             var piece = otherRepeater.itemAt(i)
@@ -1165,7 +1144,7 @@ function removePiece(index) {
 
     otherRepeater.itemAt(index).visible = false
     // Decrease number of pieces of other player by 1
-    if(items.counter % 2)
+    if(items.turn % 2)
         numberOfFirstPieces--
     else
         numberOfSecondPieces--
@@ -1209,7 +1188,7 @@ function checkGameWon() {
         items.instructionTxt = qsTr("Congratulations")
         items.bonus.good("flower")
         if(twoPlayer) {
-            items.instructionTxt = qsTr("Congratulation Player 1")
+            items.instructionTxt = qsTr("Congratulations Player 1")
             items.bonus.isWin = false
         }
     }
@@ -1221,7 +1200,7 @@ function checkGameWon() {
         items.player2.state = "win"
         if(twoPlayer) {
             items.bonus.good("flower")
-            items.instructionTxt = qsTr("Congratulation Player 2")
+            items.instructionTxt = qsTr("Congratulations Player 2")
             items.bonus.isWin = false
         }
         else {
