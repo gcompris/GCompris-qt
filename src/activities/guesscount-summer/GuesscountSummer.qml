@@ -72,19 +72,7 @@ ActivityBase {
                 }
             }
         }
-
-Repeater {
-                id: repeat2
-                model: 5
-                Text {
-                    height: 100
-                    width: 100
-                    property var index: modelData.toString()
-                    text: repeat2.childAt(modelData).index
-                }
-            }
-
-
+        
         DialogHelp {
             id: dialogHelp
             onClose: home()
