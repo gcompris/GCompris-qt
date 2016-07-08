@@ -18,44 +18,51 @@
 import QtQuick 2.0
 
 /*	
-	Level 10 to 12
 	Numbers of kids are not given anymore in the left widget.
-	There is a rest and a basket.
+	There is a rest (basket).
 */
 
 QtObject {
 	property variant levels : [
 		{
-			"instruction" : qsTr("Paul wants to equally share 2 candies between his friends. They are 2. One girl and one boy. Can you help him? Place first the children in center, then drag the candies to each of them."),
+            "instruction" : qsTr("Michael wants to equally share 5 candies between his friends. They are 2. One girl and one boy. Can you help him? Place first the children in center, then drag the candies to each of them!"),
 			"totalBoys" : 1,
 			"totalGirls" : 1,
 			"totalCandies" : 5,
 			"showCount": false,
-			"forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
 		},
 		{
-			"instruction" : qsTr("Now he wants to give 4 candies to his friends."),
+            "instruction" : qsTr("Helen has 3 friends: one boy and two girls. She wants to give them 7 candies. Help her split the candies between her friends!"),
 			"totalBoys" : 1,
 			"totalGirls" : 2,
 			"totalCandies" : 7,
 			"showCount": false,
-			"forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
 		},
 		{
-			"instruction" : qsTr("Can you now give 6 of Paul's candies to his friends?"),
+            "instruction" : qsTr("Michelle has 9 candies and wants to split them with two brothers and two sisters. Help her share the candies!"),
 			"totalBoys" : 2,
 			"totalGirls" : 2,
 			"totalCandies" : 9,
 			"showCount": false,
-			"forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
 		},
 		{
-			"instruction" : qsTr("Paul has only 10 candies left. He eats 2 candies and he gives the rest to his friends. Can you help him equally split the 8 remaining candies?"),
+            "instruction" : qsTr("Thomas wants to share his 11 candies with his friends: three boys and one girl. Can you help him?"),
 			"totalBoys" : 3,
 			"totalGirls" : 1,
 			"totalCandies" : 11,
 			"showCount": false,
-			"forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
 		}
 	]
 }

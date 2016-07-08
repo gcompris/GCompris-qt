@@ -41,7 +41,6 @@ Rectangle {
     property int total: 0
     property string name
     property bool canDrag: true
-    property bool showCount: true
     property alias element: element
 
     Image {
@@ -57,7 +56,7 @@ Rectangle {
             id: elementText
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            text: (widget.showCount === true && widget.name !== "basket") ?
+            text: (background.showCount && widget.name !== "basket" && background.easyMode) ?
                       widget.total - widget.current : ""
         }
 
@@ -82,43 +81,82 @@ Rectangle {
 
                 switch(widget.name) {
                 case "candy":
-                    if (background.currentCandies < items.totalCandies) {
-                        items.acceptCandy = true
+                    ////////////////////// START of EASY mode
+                    if (background.easyMode) {
+                        if (background.currentCandies < items.totalCandies) {
+                            items.acceptCandy = true
 
-                        for (var i = 0; i < listModel.count; i++) {
-                            var currentChild = repeater_drop_areas.itemAt(i)
-                            var childCoordinate = drop_areas.mapToItem(background, currentChild.x, currentChild.y)
-                            //coordinates of "boy/girl rectangle" in background coordinates
-                            var currentElement = element.parent.mapToItem(background, element.x, element.y)
+                            for (var i = 0; i < listModel.count; i++) {
+                                var currentChild = repeater_drop_areas.itemAt(i)
+                                var childCoordinate = drop_areas.mapToItem(background, currentChild.x, currentChild.y)
+                                //coordinates of "boy/girl rectangle" in background coordinates
+                                if ((listModel.get(i).countS + 1) > 8) {
+                                    print("in if: ", listModel.get(i).countS+1 + " -------------> CONINTUE ------->")
+                                    continue
+                                }
 
-                            if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
-                                    currentElement.y > childCoordinate.y + currentChild.childImage.height &&
-                                    currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
-                                listModel.setProperty(i, "countS", listModel.get(i).countS+1)
-                                background.currentCandies ++
+                                var currentElement = element.parent.mapToItem(background, element.x, element.y)
+
+                                if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
+                                        currentElement.y > childCoordinate.y + currentChild.childImage.height &&
+                                        currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
+                                    listModel.setProperty(i, "countS", listModel.get(i).countS+1)
+                                    background.currentCandies ++
+                                }
+
+                                if (background.currentCandies == items.totalCandies) {
+                                    widget.canDrag = false
+                                    background.resetCandy()
+                                    candyWidget.element.opacity = 0.6
+                                }
+
+                                //find if the basket is already present on the board
+                                if (currentChild.name === "basket" && background.rest != 0) {
+                                    basketActive = true
+                                }
                             }
 
-                            if (background.currentCandies == items.totalCandies) {
-                                widget.canDrag = false
-                                background.resetCandy()
-                                candyWidget.element.opacity = 0.6
-                            }
-
-                            //find if the basket is already present on the board
-                            if (currentChild.name === "basket" && background.rest != 0) {
-                                basketActive = true
-                            }
+                            //if there is rest and the basket is not yet present on the board, show the basket
+                            if (background.rest != 0 && basketActive === false)
+                                items.basketWidget.element.opacity = 1
+                        }
+                        else {
+                            widget.canDrag = false
+                            background.resetCandy()
+                            element.opacity = 0.6
                         }
 
-                        //if there is rest and the basket is not yet present on the board, show the basket
-                        if (background.rest != 0 && basketActive === false)
-                            items.basketWidget.element.opacity = 1
+                    ////////////////////// END of EASY mode
+                    } else {
+                        if (background.currentCandies < widget.total) {
+                            items.acceptCandy = true
+
+                            for (i = 0; i < listModel.count; i++) {
+                                currentChild = repeater_drop_areas.itemAt(i)
+                                childCoordinate = drop_areas.mapToItem(background, currentChild.x, currentChild.y)
+                                //coordinates of "boy/girl rectangle" in background coordinates
+                                currentElement = element.parent.mapToItem(background, element.x, element.y)
+
+                                if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
+                                        currentElement.y > childCoordinate.y + currentChild.childImage.height &&
+                                        currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
+
+                                    if ((listModel.get(i).countS + 1) > 8) {
+                                        print("in if: ", listModel.get(i).countS+1 + " -------------> CONINTUE ------->  i " + i)
+                                        background.wrongMove.fadeInOut.start()
+                                        continue
+                                    }
+
+                                    listModel.setProperty(i, "countS", listModel.get(i).countS+1)
+                                    background.currentCandies ++
+                                }
+                            }
+                            // if all the "dropAreas" are full with 8 candies, then stop the "swing" effect of the candy in leftWidget
+                            if (background.currentCandies + 1 == widget.total)
+                                background.resetCandy()
+                        }
                     }
-                    else {
-                        widget.canDrag = false
-                        background.resetCandy()
-                        element.opacity = 0.6
-                    }
+                    /////////////////// END of HARD mode
                     break;
 
                 case "basket":
@@ -138,6 +176,13 @@ Rectangle {
                             if (widget.canDrag) {
                                 widget.current ++
                                 listModel.append({countS: 0, nameS: widget.name});
+
+                                // set the candies already "preset"
+                                if (widget.name == "boy")
+                                    listModel.setProperty(listModel.count-1, "countS", background.placedInBoys)
+                                if (widget.name == "girl")
+                                    listModel.setProperty(listModel.count-1, "countS", background.placedInGirls)
+
                                 if (widget.current === widget.total) {
                                     widget.canDrag = false
                                     element.opacity = 0.6

@@ -19,40 +19,41 @@ import QtQuick 2.0
 
 /*
 	Numbers of kids are not given anymore in the left widget.
-	There is always a basket even if the rest can be equal to 0
+	No rest (basket).
+	Boy or Girl rectangles already contain a given number of candies.
 */
 
 QtObject {
 	property variant levels : [
+				{
+            "instruction" : qsTr("Help Jon split 9 candies to three boys and two girls. The rest will remain to Jon."),
+            "totalBoys" : 3,
+            "totalGirls" : 2,
+            "totalCandies" : 9,
+			"showCount": false,
+            "forceShowBakset": true,
+            "placedInGirls": 0,
+            "placedInBoys": 0
+		},
 		{
-            "instruction" : qsTr("Charles wants to share his 8 candies to one boy and two girls. Can he split the candies equally?"),
+            "instruction" : qsTr("Jon wants to share the rest of his candies with his brother and his sister. Can you split them equally, knowing that his brother already has two candies?"),
+			"totalBoys" : 1,
+			"totalGirls" : 1,
+            "totalCandies" : 6,
+			"showCount": false,
+            "forceShowBakset": true,
+            "placedInGirls": 0,
+            "placedInBoys": 2
+		},
+		{
+            "instruction" : qsTr("Help Tux split some candies to his friends: 9 candies to one boy and two girls."),
 			"totalBoys" : 1,
             "totalGirls" : 2,
-            "totalCandies" : 8,
-            "showCount": true,
+            "totalCandies" : 13,
+            "showCount": false,
             "forceShowBakset": true,
-            "placedInGirls": 0,
+            "placedInGirls": 2,
             "placedInBoys": 0
-		},
-		{
-            "instruction" : qsTr("For her birthday, Elizabeth has 12 candies to share with her friends. They are two girls and two boys. How should she split the candies to her friends?"),
-            "totalBoys" : 2,
-            "totalGirls" : 2,
-            "totalCandies" : 12,
-            "showCount": true,
-            "forceShowBakset": true,
-            "placedInGirls": 0,
-            "placedInBoys": 0
-		},
-		{
-            "instruction" : qsTr("Jason's father gave him 14 candies to share with his friends: two boys and three girls. Help him give the candies to his friends!"),
-            "totalBoys" : 2,
-            "totalGirls" : 3,
-            "totalCandies" : 14,
-            "showCount": true,
-            "forceShowBakset": true,
-            "placedInGirls": 0,
-            "placedInBoys": 0
-        }
+		}
 	]
 }

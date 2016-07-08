@@ -18,9 +18,8 @@
 import QtQuick 2.0
 
 /*  
-    Level 7 to 9
     Numbers of kids are not given anymore in the left widget which forces kids to understand this part.
-    No rest (no basket).
+    No rest (basket).
 */
 
 QtObject {
@@ -31,7 +30,9 @@ QtObject {
             "totalGirls" : 1,
             "totalCandies" : 3,
             "showCount": false,
-            "forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
         },
         {
             "instruction" : qsTr("Now, Alice wants to give 6 candies to her friends"),
@@ -39,7 +40,9 @@ QtObject {
             "totalGirls" : 1,
             "totalCandies" : 6,
             "showCount": false,
-            "forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
         },
         {
             "instruction" : qsTr("Can you help Alice give 9 candies to her friends: one girl and two boys?"),
@@ -47,7 +50,9 @@ QtObject {
             "totalGirls" : 1,
             "totalCandies" : 9,
             "showCount": false,
-            "forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
         },
         {
             "instruction" : qsTr("Alice has 12 candies left. She wants to give them all to her friends. Can you help her split the candies equally?"),
@@ -55,7 +60,9 @@ QtObject {
             "totalGirls" : 1,
             "totalCandies" : 12,
             "showCount": false,
-            "forceShowBakset": false
+            "forceShowBakset": false,
+            "placedInGirls": 0,
+            "placedInBoys": 0
         }
     ]
 }

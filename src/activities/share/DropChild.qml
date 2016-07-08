@@ -55,7 +55,8 @@ Rectangle {
         anchors.rightMargin: 20
 
         //"listModel.get(index) ? ... " because of an error received at startup of each level
-        text: listModel.get(index) ? listModel.get(index).countS : ""
+        text: (listModel.get(index) && background.showCount) ? listModel.get(index).countS : ""
+
     }
 
     Rectangle {
@@ -80,24 +81,52 @@ Rectangle {
 
             onClicked: {
                 if (items.acceptCandy)
-                    if (background.currentCandies < items.totalCandies) {
-                        //add candies in the first rectangle
-                        listModel.setProperty(index,"countS",listModel.get(index).countS+1)
-                        //the current number of candies increases
-                        background.currentCandies ++
-                        //on the last one, the candy image from top goes away (destroy)
-                        if (background.currentCandies === items.totalCandies) {
+                    ////////////////////// START of EASY mode
+                    if (background.easyMode) {
+                        if (background.currentCandies < items.totalCandies) {
+                            if (listModel.get(index).countS + 1 <= 8) {
+                                //add candies in the first rectangle
+                                listModel.setProperty(index,"countS",listModel.get(index).countS+1)
+                                //the current number of candies increases
+                                background.currentCandies ++
+                                //on the last one, the candy image from top goes away (destroy)
+                                if (background.currentCandies === items.totalCandies) {
+                                    background.resetCandy()
+                                    candyWidget.element.opacity = 0.6
+                                }
+                                //show the basket if there is a rest
+                                if (background.rest!=0 && background.basketShown() === false)
+                                    items.basketWidget.element.opacity = 1
+                            } else print("onclidked else: ", listModel.get(index).countS+1 + " -------------> NO MORE")
+                        }
+                        else {
                             background.resetCandy()
                             candyWidget.element.opacity = 0.6
                         }
-                        //show the basket if there is a rest
-                        if (background.rest!=0 && background.basketShown() === false)
-                            items.basketWidget.element.opacity = 1
+
+                    ////////////////////// END of EASY mode
+                    } else {
+                        if (background.currentCandies < items.candyWidget.total) {
+                            if (listModel.get(index).countS + 1 <= 8) {
+                                //add candies in the first rectangle
+                                listModel.setProperty(index,"countS",listModel.get(index).countS+1)
+                                //the current number of candies increases
+                                background.currentCandies ++
+
+                                //show the basket if there is a rest
+                                if (background.rest!=0 && background.basketShown() === false)
+                                    items.basketWidget.element.opacity = 1
+
+                                if (background.currentCandies + 1 === items.candyWidget.total) {
+                                    background.resetCandy()
+                                }
+                            } else {
+                                background.wrongMove.fadeInOut.start()
+                                print("onclidked else: ", listModel.get(index).countS+1 + " -------------> NO MORE")
+                            }
+                        }
                     }
-                    else {
-                        background.resetCandy()
-                        candyWidget.element.opacity = 0.6
-                    }
+                    /////////////////// END of HARD mode
             }
         }
 
@@ -135,12 +164,17 @@ Rectangle {
                             //move this rectangle/grid on top of everything
                             dropChild.z++
                             grid.z++
+
+                            print("new dropChild.z " + dropChild.z + "   grid.z " +  grid.z)
                         }
 
                         onReleased:  {
                             //move this rectangle/grid to its previous state
                             dropChild.z--
                             grid.z--
+
+                            print("orig dropChild.z " + dropChild.z + "   grid.z " +  grid.z)
+
                             //check where the candy is being dropped
                             for (var i=0; i<listModel.count; i++) {
                                 var currentChild = repeater_drop_areas.itemAt(i)

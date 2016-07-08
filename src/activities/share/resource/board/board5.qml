@@ -17,53 +17,43 @@
  */
 import QtQuick 2.0
 
-/*	
-	Numbers of kids are given in the left widget which eases kid work.
+/*
+	Numbers of kids are not given anymore in the left widget.
 	No rest (basket).
+	Boy or Girl rectangles already contain a given number of candies.
 */
 
 QtObject {
 	property variant levels : [
-		{
-			"instruction" : qsTr("Paul wants to equally share 2 candies between his friends. They are 2. One girl and one boy. Can you help him? Place first the children in center, then drag the candies to each of them."),
-			"totalBoys" : 1,
+				{
+            "instruction" : qsTr("Bob wants to give 5 candies to his friends: two boys and one girl, his girlfriend already has one candy. Can you help him equally split the candies so each friend will have the same amount of candies?"),
+			"totalBoys" : 2,
 			"totalGirls" : 1,
-			"totalCandies" : 2,
+            "totalCandies" : 6,
 			"showCount": true,
-            "forceShowBakset": "false",
-            "placedInGirls": 0,
+            "forceShowBakset": false,
+            "placedInGirls": 1,
             "placedInBoys": 0
 		},
 		{
-			"instruction" : qsTr("Now he wants to give 4 candies to his friends."),
+            "instruction" : qsTr("Harry wants to equally share 8 candies between his friends: one boy and two girls. Place the children in center, then drag the candies to each of them so each of them has an equal number of candies."),
 			"totalBoys" : 1,
-			"totalGirls" : 1,
-			"totalCandies" : 4,
+			"totalGirls" : 2,
+            "totalCandies" : 9,
 			"showCount": true,
             "forceShowBakset": false,
             "placedInGirls": 0,
-            "placedInBoys": 0
+            "placedInBoys": 1
 		},
 		{
-			"instruction" : qsTr("Can you now give 6 of Paul's candies to his friends?"),
+			"instruction" : qsTr("Can you now give 6 of Harry's candies to his friends?"),
 			"totalBoys" : 1,
-			"totalGirls" : 1,
-			"totalCandies" : 6,
+			"totalGirls" : 2,
+            "totalCandies" : 8,
 			"showCount": true,
             "forceShowBakset": false,
             "placedInGirls": 0,
-            "placedInBoys": 0
-
-		},
-		{
-			"instruction" : qsTr("Paul has only 10 candies left. He eats 2 candies and he gives the rest to his friends. Can you help him equally split the 8 remaining candies?"),
-			"totalBoys" : 1,
-			"totalGirls" : 1,
-			"totalCandies" : 8,
-			"showCount": true,
-            "forceShowBakset": false,
-            "placedInGirls": 0,
-            "placedInBoys": 0
+            "placedInBoys": 2
 		}
 	]
 }

@@ -84,6 +84,12 @@ ActivityBase {
         property int currentGirls: 0
         property int currentCandies: 0
         property int rest
+        property int placedInGirls
+        property int placedInBoys
+        property bool showCount: true
+        property bool easyMode: false
+        property alias wrongMove: wrongMove
+        property bool finished: false
 
         //returns true if the x and y is in the "dest" area
         function contains(x,y,dest) {
@@ -109,6 +115,9 @@ ActivityBase {
 
         //check if the answer is correct
         function check() {
+            background.resetCandy()
+            background.finished = true
+
             var ok = 0
             var okRest = 0
             var rest = items.totalCandies - Math.floor(items.totalCandies/items.totalChildren) * items.totalChildren
@@ -277,9 +286,11 @@ ActivityBase {
                     MouseArea {
                         id: mouseArea
                         anchors.fill: parent
+                        enabled: background.finished ? false : true
                         onPressed: okButton.opacity = 0.6
                         onReleased: okButton.opacity = 1
                         onClicked: background.check()
+
                     }
                 }
 
@@ -303,7 +314,7 @@ ActivityBase {
                     id: candyWidget
                     src: "resource/images/candy.svg"
                     name: "candy"
-                    total: items.totalCandies
+                    total: background.easyMode ? items.totalCandies : 8 * items.totalChildren + 1
                     current: background.currentCandies
 
                     //swing animation for candies
@@ -326,7 +337,6 @@ ActivityBase {
                             easing.type: Easing.InOutQuad
                         }
                     }
-
                 }
 
                 WidgetOption {
@@ -341,6 +351,69 @@ ActivityBase {
             }
         }
 
+        // show message warning for placing too many candies in one area
+        Rectangle {
+            id: wrongMove
+            anchors.fill: wrongMoveText
+            z: 5
+            color: "#FFFF42"
+            radius: width / height * 10
+            opacity: 0
+
+            property alias fadeInOut: fadeInOut
+
+            SequentialAnimation {
+                id: fadeInOut
+                PropertyAction { target: wrongMove; property: "z"; value: 5 }
+                NumberAnimation { target: wrongMove; property: "opacity"; to: 1; duration: 300 }
+                NumberAnimation { target: wrongMove; property: "opacity"; to: 1; duration: 500 }
+                NumberAnimation { target: wrongMove; property: "opacity"; to: 0; duration: 200 }
+                PropertyAction { target: wrongMove; property: "z"; value: -5 }
+            }
+        }
+
+        GCText {
+            id: wrongMoveText
+            anchors.horizontalCenter: grid.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            fontSize: background.vert ? hugeSize : largeSize
+            opacity: wrongMove.opacity
+            z: wrongMove.z
+            color: "#404040"
+            text: qsTr(" Too many candies!! ")
+        }
+
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    height: column.height
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                        GCDialogCheckBox {
+                            id: easyModeBox
+                            width: 250 * ApplicationInfo.ratio
+                            text: qsTr("Easy mode")
+                            checked: background.easyMode
+                            onCheckedChanged: {
+                                background.easyMode = checked
+                                if (checked == false)
+                                    candyWidget.element.opacity = 1
+                                else Activity.reloadRandom()
+                                print("easyModeBox: ",checked)
+                            }
+                        }
+                    }
+                }
+            }
+
+            onClose: home()
+        }
 
         //bar buttons
         DialogHelp {
@@ -350,14 +423,18 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: help | home | level | reload | config}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.initLevel()
+            onReloadClicked: Activity.reloadRandom()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
@@ -365,6 +442,7 @@ ActivityBase {
             Component.onCompleted: {
                 win.connect(Activity.nextSubLevel)
             }
+            onStop: background.finished = false
         }
 
         Score {
