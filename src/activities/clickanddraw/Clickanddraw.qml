@@ -25,6 +25,6 @@ import "../../core"
 import "../drawnumber"
 
 Drawnumber {
-    clickanddrawflag: true
+    mode: "clickanddraw"
     pointImageOpacity: 0
 }
