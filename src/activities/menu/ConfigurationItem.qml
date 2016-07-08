@@ -166,7 +166,7 @@ Item {
                         activationMsg.text = qsTr('Sorry, your code is too old for this version of GCompris');
                         break;
                     case 2:
-                        activationMsg.text = qsTr('You code is valid, thanks a lot for your support');
+                        activationMsg.text = qsTr('Your code is valid, thanks a lot for your support');
                         activationCodeEntry.visible = false
                         ApplicationSettings.codeKey = code
                         break;
