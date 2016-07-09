@@ -23,24 +23,24 @@
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
+var levels = [{showGrid: 1, noOfItems: 2, inLine: true, columns: 4, rows: 3 },
+              {showGrid: 1, noOfItems: 3, inLine: true, columns: 5, rows: 4 },
+              {showGrid: 1, noOfItems: 4, inLine: true, columns: 6, rows: 5 },
+              {showGrid: 0, noOfItems: 5, inLine: false, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 6, inLine: false, columns: 7, rows: 6 },
+              {showGrid: 1, noOfItems: 7, inLine: true, columns: 7, rows: 6 },
+              {showGrid: 1, noOfItems: 8, inLine: true, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 9, inLine: false, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 10, inLine: false, columns: 7, rows: 6 },
+              {showGrid: 0, noOfItems: 11, inLine: false, columns: 7, rows: 6 }]
+
 var currentLevel = 0
 var numberLevelsWords = 2
 var maxWordLevels = 3 * numberLevelsWords
-var maxImageLevels = 10
+var maxImageLevels = levels.length
 var numberOfLevel = maxWordLevels + maxImageLevels
 var items
 var url = "qrc:/gcompris/src/activities/crane/resource/"
-
-var levels = [{showGrid: 1, noOfItems: 2, inLine: 1, columns: 4, rows: 3 },
-              {showGrid: 1, noOfItems: 3, inLine: 1, columns: 5, rows: 4 },
-              {showGrid: 1, noOfItems: 4, inLine: 1, columns: 6, rows: 5 },
-              {showGrid: 0, noOfItems: 5, inLine: 0, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 6, inLine: 0, columns: 7, rows: 6 },
-              {showGrid: 1, noOfItems: 7, inLine: 1, columns: 7, rows: 6 },
-              {showGrid: 1, noOfItems: 8, inLine: 1, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 9, inLine: 0, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 10, inLine: 0, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 11, inLine: 0, columns: 7, rows: 6 }]
 
 var allNames = ["bulb.svg","letter-a.svg","letter-b.svg",
                 "rectangle1.svg","rectangle2.svg","square1.svg",
@@ -85,10 +85,15 @@ function initLevel() {
 }
 
 function init() {
-    // set models for repaters
+    // reset the arrays
+    names = []
+    names2 = []
+
+    // set models for repeaters
     if (currentLevel >= maxWordLevels)
         setRandomModelImage()
-    else setRandomModelWord()
+    else
+        setRandomModelWord()
 
     items.gameFinished = false
 
@@ -117,44 +122,52 @@ function init() {
     items.repeater.itemAt(items.selected).selected.opacity = 1
 }
 
-// levels with words as items
-function setRandomModelWord(){
-    // reset the arrays
-    names = []
-    names2 = []
+function getNextUnusedWord(wordsUsed, alreadyUsed) {
+    var currentIndex = Math.floor(Math.random() * wordsUsed.length)
+    while(alreadyUsed.indexOf(wordsUsed[currentIndex]) >= 0) {
+        // there are no more words to use => clear the "alreadyUsed" vector
+        if (alreadyUsed.length == wordsUsed.length)
+            alreadyUsed = []
+        // get another random index
+        currentIndex = Math.floor(Math.random() * wordsUsed.length)
+    }
+    // add the word in the "alreadyUsed" vector
+    alreadyUsed = alreadyUsed.concat(wordsUsed[currentIndex])
+    return wordsUsed[currentIndex]
+}
 
+// levels with words as items
+function setRandomModelWord() {
     var numbers = []
     var i
-    var wordsUsed = []
+    var wordsUsed
 
     if (currentLevel < numberLevelsWords) {
         wordsUsed = words3Letters
-        // set the number of columns and rows from "levels"
-        items.columns = 4
-        items.rows = 3
         // show or hide the grid
         items.showGrid1.opacity = 1
         // set the two boards in line or not
         items.background.inLine = true
-    } else if (currentLevel < numberLevelsWords * 2) {
+    }
+    else if (currentLevel < numberLevelsWords * 2) {
         wordsUsed = words4Letters
-        // set the number of columns and rows from "levels"
-        items.columns = 5
-        items.rows = 4
         // show or hide the grid
         items.showGrid1.opacity = 1
         // set the two boards in line or not
         items.background.inLine = false
-    } else {
+    }
+    else {
         wordsUsed = words5Letters
-        // set the number of columns and rows from "levels"
-        items.columns = 6
-        items.rows = 5
         // show or hide the grid
         items.showGrid1.opacity = 0
         // set the two boards in line or not
         items.background.inLine = false
     }
+    // take the first word and keep its length
+    var currentWordsLength = wordsUsed[0].length;
+    // set the number of columns and rows, be sure we have enough space to display the word
+    items.columns = currentWordsLength + 1
+    items.rows = currentWordsLength
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -164,41 +177,19 @@ function setRandomModelWord(){
 
     // before: // var currentIndex = currentLevel % numberLevelsWords
 
-    // get a random word: Math.floor(Math.random() * (max - min + 1)) + min;
-    var currentIndex = Math.floor(Math.random() * wordsUsed.length)
+    // get a random word
+    var word
 
     // use vectors to store the words already used
-    if (wordsUsed[0].length == 3) {
-        while(alreadyUsed3.indexOf(wordsUsed[currentIndex]) >= 0) {
-            // there are no more words to use => clear the "alreadyUsed3" vector
-            if (alreadyUsed3.length == wordsUsed.length)
-                alreadyUsed3 = []
-            // get another random index
-            currentIndex = Math.floor(Math.random() * wordsUsed.length)
-        }
-        // add the word in the "aredayUsed3" vector
-        alreadyUsed3 = alreadyUsed3.concat(wordsUsed[currentIndex])
-    } else if (wordsUsed[0].length == 4) {
-        while(alreadyUsed4.indexOf(wordsUsed[currentIndex]) >= 0) {
-            // there are no more words to use => clear the "alreadyUsed4" vector
-            if (alreadyUsed4.length == wordsUsed.length)
-                alreadyUsed4 = []
-            // get another random index
-            currentIndex = Math.floor(Math.random() * wordsUsed.length)
-        }
-        // add the word in the "aredayUsed4" vector
-        alreadyUsed4 = alreadyUsed4.concat(wordsUsed[currentIndex])
-    } else if (wordsUsed[0].length == 5) {
-        while(alreadyUsed5.indexOf(wordsUsed[currentIndex]) >= 0) {
-            // there are no more words to use => clear the "alreadyUsed4" vector
-            if (alreadyUsed5.length == wordsUsed.length)
-                alreadyUsed5 = []
-            // get another random index
-            currentIndex = Math.floor(Math.random() * wordsUsed.length)
-        }
-        // add the word in the "aredayUsed4" vector
-        alreadyUsed5 = alreadyUsed5.concat(wordsUsed[currentIndex])
-    } else print("wordsUsed[0].length ",wordsUsed[0].length)
+    if (currentWordsLength == 3) {
+        word = getNextUnusedWord(wordsUsed, alreadyUsed3);
+    }
+    else if (currentWordsLength == 4) {
+        word = getNextUnusedWord(wordsUsed, alreadyUsed4);
+    }
+    else if (currentWordsLength == 5) {
+        word = getNextUnusedWord(wordsUsed, alreadyUsed5);
+    }
 
 
     // place the word at a random position in the grid
@@ -206,13 +197,15 @@ function setRandomModelWord(){
     var randomCol = Math.floor(Math.random() * items.columns)
 
     // check if the word goes out of the frame and replace to left it if needed
-    if (items.columns - randomCol - wordsUsed[currentIndex].length < 0)
-        randomCol = randomCol - Math.abs(items.columns - randomCol - wordsUsed[currentIndex].length)
+    if (items.columns - randomCol - word.length < 0)
+        randomCol = randomCol - Math.abs(items.columns - randomCol - word.length)
 
     // set full path (url) to the letter image
-    for (i = 0; i < wordsUsed[currentIndex].length; i++) {
-        names[randomRow * items.columns + randomCol + i] =  url + "letters/" + wordsUsed[currentIndex].charAt(i) + ".svg"
-        names2[randomRow * items.columns + randomCol + i] = names[randomRow * items.columns + randomCol + i]
+    var index = 0;
+    for (i = 0; i < word.length; i++) {
+        index = randomRow * items.columns + randomCol + i
+        names[index] =  url + "letters/" + word.charAt(i) + ".svg"
+        names2[index] = names[index]
     }
 
     Core.shuffle(names)
@@ -231,11 +224,7 @@ function setRandomModelWord(){
 }
 
 // levels with images as items
-function setRandomModelImage(){
-    // reset the arrays
-    names = []
-    names2 = []
-
+function setRandomModelImage() {
     var numbers = []
     var i
 
@@ -279,9 +268,7 @@ function setRandomModelImage(){
     items.showGrid1.opacity = levels[currentLevel - maxWordLevels].showGrid
 
     // set the two boards in line or not
-    if (levels[currentLevel - maxWordLevels].inLine)
-        items.background.inLine = true
-    else items.background.inLine = false
+    items.background.inLine = levels[currentLevel - maxWordLevels].inLine
 }
 
 // returns the next index needed for switching to another item
@@ -295,17 +282,18 @@ function getNextIndex() {
     var smallestIndex = -1
 
     for (var i = 0; i < items.repeater.count; i++) {
-        // get the imediat bigger index
-        if (index < items.repeater.itemAt(i).initialIndex) {
-            if (min > items.repeater.itemAt(i).initialIndex) {
+        var currentItemIndex = items.repeater.itemAt(i).initialIndex
+        // get the immediat bigger index
+        if (index < currentItemIndex) {
+            if (min > currentItemIndex) {
                 // update min and index
-                min = items.repeater.itemAt(i).initialIndex
+                min = currentItemIndex
                 biggerIndex = i
             }
         }
-        // in case current index is the biggest, search the smalles index from start
-        if (items.repeater.itemAt(i).initialIndex >= 0 && min2 > items.repeater.itemAt(i).initialIndex) {
-            min2 = items.repeater.itemAt(i).initialIndex
+        // in case current index is the biggest, search the smallest index from start
+        if (currentItemIndex >= 0 && min2 > currentItemIndex) {
+            min2 = currentItemIndex
             smallestIndex = i
         }
     }
@@ -337,16 +325,16 @@ function move(command) {
         var item = items.repeater.itemAt(items.selected)
         if (command === "left") {
             if (items.selected % items.columns != 0)
-                makeMove(item,-item.width,item.x,-1,"x")
+                makeMove(item, -item.width, item.x, -1, "x")
         } else if (command === "right") {
             if ((items.selected+1) % items.columns != 0)
-                makeMove(item,item.width,item.x,1,"x")
+                makeMove(item, item.width, item.x, 1, "x")
         } else if (command === "up") {
             if (items.selected > items.columns-1)
-                makeMove(item,-item.height,item.y,-items.columns,"y")
+                makeMove(item, -item.height, item.y, -items.columns, "y")
         } else if (command === "down") {
             if (items.selected < (items.repeater.count-items.columns))
-                makeMove(item,item.height,item.y,items.columns,"y")
+                makeMove(item, item.height, item.y, items.columns, "y")
         } else if (command === "next") {
             items.repeater.itemAt(items.selected).selected.opacity = 0
             items.selected = getNextIndex()
@@ -356,7 +344,7 @@ function move(command) {
 }
 
 //set the environment for making a move and start the animation
-function makeMove(item,distance,startPoint,add,animationProperty) {
+function makeMove(item, distance, startPoint, add, animationProperty) {
     if (items.repeater.itemAt(items.selected+add).source == "") {
         //setup the animation
         item.distance = distance
@@ -374,20 +362,20 @@ function makeMove(item,distance,startPoint,add,animationProperty) {
 
 //check the answer; advance to next level if the answer is good
 function checkAnswer() {
-    var count = 0
-    for (var i = 0; i < items.repeater.count; i++) {
-        if (items.repeater.itemAt(i).source != items.modelRepeater.itemAt(i).source){
-            count = -1
+    var hasWon = true
+    for (var i = 0; i < items.repeater.count && hasWon; i++) {
+        if (items.repeater.itemAt(i).source != items.modelRepeater.itemAt(i).source) {
+            hasWon = false
         }
     }
-    if (count == 0) {
+    if (hasWon) {
         items.bonus.good("flower")
         items.gameFinished = true
     }
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();

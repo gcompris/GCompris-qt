@@ -129,8 +129,8 @@ ActivityBase {
                 id: gridRepeater
 
                 Rectangle {
-                    width:  board.width/items.columns
-                    height:  board.height/items.rows
+                    width: board.width/items.columns
+                    height: board.height/items.rows
                     color: "transparent"
                     border.width: 2
                     border.color: "grey"
@@ -178,7 +178,7 @@ ActivityBase {
                     property int indexChange
                     property int startPoint
                     property string animationProperty
-                    property int _index: index   // make current index accessible from outside
+                    property int _index: index // make current index accessible from outside
 
                     SequentialAnimation {
                         id: anim
@@ -250,7 +250,6 @@ ActivityBase {
 
             width: board.width
             height: board.height
-
         }
 
         Grid {
@@ -285,8 +284,8 @@ ActivityBase {
                 model: gridRepeater.model
 
                 Rectangle {
-                    width:  modelBoard.width/items.columns
-                    height:  modelBoard.height/items.rows
+                    width: modelBoard.width/items.columns
+                    height: modelBoard.height/items.rows
                     color: "transparent"
                     border.width: 2
                     border.color: showGrid1.opacity == 1 ? "grey" : "transparent"
@@ -311,7 +310,7 @@ ActivityBase {
             source: "resource/crane_up.svg"
             sourceSize.width: background.portrait ? background.width * 0.8 : background.width * 0.5
             sourceSize.height: background.portrait ? background.height * 0.03 : background.height * 0.06
-            width:  background.portrait ? background.width * 0.8 : background.width * 0.5
+            width: background.portrait ? background.width * 0.8 : background.width * 0.5
             height: background.portrait ? background.height * 0.03 : background.height * 0.06
             z: 4
             anchors {
@@ -321,7 +320,6 @@ ActivityBase {
                 margins: board.anchors.margins
             }
         }
-
 
         Image {
             id: crane_vertical

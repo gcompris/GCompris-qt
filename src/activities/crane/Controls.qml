@@ -24,7 +24,7 @@ import QtQuick 2.1
 import "crane.js" as Activity
 
 Image {
-    property var command
+    property string command
     sourceSize.width: background.portrait ? parent.width * 0.175 : parent.width * 0.17
     sourceSize.height: background.portrait ? parent.height * 0.6 : parent.height * 0.48
     width: background.portrait ? parent.width * 0.175 : parent.width * 0.17
