@@ -51,6 +51,7 @@ ActivityBase {
             property alias bonus: bonus
             property int sublevel: 0
             property alias operand_row : operand_row
+            property int result
         }
 
         onStart: { Activity.start(items) }
@@ -60,19 +61,19 @@ ActivityBase {
             spacing: 10
             Operator_row {}
             Operand_row {
-            id: operand_row
+                id: operand_row
             }
             Repeater {
                 id: repeat
                 model: items.operand_row.repeater.model.length-1
                 delegate: Operation_row{
                     id: operation_row
+                    property alias operation_row: operation_row
                     row_no: modelData
-                    prev_result: modelData ? repeat.itemAt(modelData).row_result : -1
+                    prev_result: modelData ? repeat.itemAt(modelData-1).row_result : -1
                 }
             }
         }
-        
         DialogHelp {
             id: dialogHelp
             onClose: home()
