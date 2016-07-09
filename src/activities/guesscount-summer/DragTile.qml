@@ -29,9 +29,9 @@ Item {
     property string type
     MouseArea {
         id: mouseArea
-        property alias reparent: root
         property alias tile: tile
         property alias datavalue: tile.datavalue
+        signal reparent
         width: parent.width
         height: parent.height
         anchors.centerIn: parent

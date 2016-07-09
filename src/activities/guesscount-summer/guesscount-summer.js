@@ -29,7 +29,7 @@ var signs = [
             "/",
             "*",
         ]
-var dataset=[
+var dataset = [
             [
                 [[1,2,4,5],3],
                 [[3,1],3],
@@ -70,7 +70,8 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
-
+    items.result = dataset[currentLevel][items.sublevel-1][1]
+    console.log(items.result)
 }
 
 function nextLevel() {
@@ -87,46 +88,53 @@ function previousLevel() {
     initLevel();
 }
 
-function calculate(operand1,operator,operand2,row_result)
+function calculate(operand1,operator,operand2,operation_row)
 {
     switch (operator) {
     case "+":
-        row_result=operand1+operand2
-        console.log(row_result)
+        operation_row.row_result = operand1+operand2
+        console.log(operation_row.row_result)
         break;
     case "-":
-        row_result=operand1-operand2
-        console.log(row_result)
+        operation_row.row_result = operand1-operand2
+        console.log(operation_row.row_result)
         break;
     case "/":
-        row_result=operand1/operand2
-        console.log(row_result)
+        operation_row.row_result = operand1/operand2
+        console.log(operation_row.row_result)
         break;
     case "*":
-        row_result=operand1*operand2
-        console.log(row_result)
+        operation_row.row_result = operand1*operand2
+        console.log(operation_row.row_result)
     }
-    return row_result
+    //operation_row.completed=true
+    operation_row.end_result.text=operation_row.row_result.toString()
+    /*if(operation_row.row_no == 2 && operation_row.row_result == operation_row.guesscount)
+    {
+
+    }*/
 }
 
 function drop_item(item)
 {
-    if(item.count==0)
+    if(item.count == 0)
     {
-        item.count+=1
+        item.count += 1
     }
-    else if(item.count==1)
+    else if(item.count == 1)
     {
-        item.dropped_item.parent=item.dropped_item.reparent
+        item.dropped_item.parent = item.dropped_item.reparent
     }
     console.log(item.dropped_item.datavalue)
 }
 
-function children_change(item,end_result)
+function children_change(item,operation_row)
 {
     if(!item.dropped_item && item.count)
-    {               item.count-=1
+    {
+        item.count -= 1
     }
-    end_result.text=Qt.binding(function() { return '' })
+    operation_row.end_result.text = Qt.binding(function() { return '' })
+    operation_row.row_result=0
 }
 
