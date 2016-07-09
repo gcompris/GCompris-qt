@@ -74,7 +74,6 @@ ActivityBase {
                 }
             }
         }
-
         DialogHelp {
             id: dialogHelp
             onClose: home()
