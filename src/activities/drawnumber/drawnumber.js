@@ -110,7 +110,7 @@ function initLevel() {
 
     if(mode=="drawletters") {
         //function to play letter sound at start
-        playLetterSound(dataset[currentLevel].sound)
+        playLetterSound(playLetterSound(dataset[currentLevel].sound))
     }
 }
 
@@ -131,8 +131,9 @@ function previousLevel() {
 //function to play the sound of chararcter at start & end
 function playLetterSound(number) {
         items.audioVoices.play(
-            GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"+ Core.getSoundFilenamForChar(number)))
+            GCompris.ApplicationInfo.getAudioFilePath(number))
 }
+
 
 function drawSegment(pointIndex) {
 
