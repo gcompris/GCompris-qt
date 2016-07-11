@@ -145,7 +145,7 @@ Item {
         anchors.fill: parent
         opacity: 0
         Behavior on opacity { PropertyAnimation { duration: 200 } }
-    }
+    
 
     Rectangle {
         id: categoryTextbg
@@ -348,7 +348,7 @@ Item {
         anchors.rightMargin: 10 * ApplicationInfo.ratio
         anchors.top: parent.top
     }
-
+    }
     Loader {
         id: miniGameLoader
         width: parent.width
