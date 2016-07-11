@@ -30,6 +30,7 @@ color_mix
 color_mix_light
 colors
 details
+drawletters
 drawnumber
 enumerate
 erase
