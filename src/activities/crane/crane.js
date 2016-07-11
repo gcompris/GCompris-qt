@@ -117,9 +117,6 @@ function init() {
             break
         }
     }
-
-    // set opacity for first item's "selection frame"
-    items.repeater.itemAt(items.selected).selected.opacity = 1
 }
 
 function getNextUnusedWord(wordsUsed, alreadyUsed) {
@@ -218,7 +215,6 @@ function setRandomModelWord() {
     // set the source of items inside repeaters to names and names2
     for (i = 0; i < names.length; i++) {
         items.repeater.itemAt(i).source = names[i]
-        items.repeater.itemAt(i).opac = 0
         items.modelRepeater.itemAt(i).source = names2[i]
     }
 }
@@ -260,7 +256,6 @@ function setRandomModelImage() {
     // set the source of items inside repeaters to names and names2
     for (i = 0; i < names.length; i++) {
         items.repeater.itemAt(i).source = names[i]
-        items.repeater.itemAt(i).opac = 0
         items.modelRepeater.itemAt(i).source = names2[i]
     }
 
@@ -336,9 +331,7 @@ function move(command) {
             if (items.selected < (items.repeater.count-items.columns))
                 makeMove(item, item.height, item.y, items.columns, "y")
         } else if (command === "next") {
-            items.repeater.itemAt(items.selected).selected.opacity = 0
             items.selected = getNextIndex()
-            items.repeater.itemAt(items.selected).selected.opacity = 1
         }
     }
 }

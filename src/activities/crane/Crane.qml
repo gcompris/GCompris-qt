@@ -162,18 +162,14 @@ ActivityBase {
 
                 Image {
                     id: figure
-                    sourceSize.height: board.height/3
-                    sourceSize.width: board.width/3
-
+                    sourceSize.height: board.width/items.columns
+                    sourceSize.width: board.height/items.rows
                     width: board.width/items.columns
                     height: board.height/items.rows
 
                     property int initialIndex: -1
 
-                    property bool showSelected: false
-                    property alias selected: selected
                     property alias anim: anim
-                    property alias opac: selected.opacity
                     property int distance
                     property int indexChange
                     property int startPoint
@@ -185,11 +181,9 @@ ActivityBase {
                         PropertyAction { target: items; property: "ok"; value: "false"}
                         NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint; to: figure.startPoint + distance; duration: 200 }
                         PropertyAction { target: figure; property: "opacity"; value: 0 }
-                        PropertyAction { target: selected; property: "opacity"; value: 0 }
                         NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + distance; to: figure.startPoint; duration: 0; }
                         PropertyAction { target: figure; property: "opacity"; value: 1 }
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
-                        PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "opac"; value: 1 }
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "initialIndex"; value: figure.initialIndex }
                         PropertyAction { target: figure; property: "initialIndex"; value: -1 }
                         PropertyAction { target: figure; property: "source"; value: "" }
@@ -214,24 +208,33 @@ ActivityBase {
 
                         // Select a figure with mouse/touch
                         onClicked: {
-                            if (source != "") {
-                                items.repeater.itemAt(items.selected).opac = 0
+                            if (source != "")
                                 items.selected = index
-                                items.repeater.itemAt(items.selected).opac = 1
-                            }
                         }
-                    }
-
-                    // selected marker
-                    Image {
-                        id: selected
-                        source: "resource/selected.png"
-                        width: parent.width
-                        height: parent.height
-                        opacity: 0
                     }
                 }
             }
+        }
+
+        Image {
+            id: selected
+            source: "resource/selected.png"
+            sourceSize.width: board.width/items.columns
+            sourceSize.height: board.height/items.rows
+            width: board.width/items.columns
+            height: board.height/items.rows
+            opacity: 1
+
+            property var newCoord: items.selected == 0 ? grid :
+                                                         items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,
+                                                                                  items.repeater.itemAt(items.selected).y)
+            x: newCoord.x
+            y: newCoord.y
+            z: 100
+
+            Behavior on x { NumberAnimation { duration: 200 } }
+            Behavior on y { NumberAnimation { duration: 200 } }
+
         }
 
         Rectangle {
