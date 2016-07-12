@@ -1,24 +1,24 @@
 /* GCompris - drawnumber.js
- *
- * Copyright (C) 2014 Emmanuel Charruau
- *
- * Authors:
- *   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
- *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) 2014 Emmanuel Charruau
+*
+* Authors:
+*   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
+*   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 .pragma library
 .import QtQuick 2.2 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
@@ -52,28 +52,28 @@ function initLevel() {
     loadBackgroundImage()
     if(mode=="drawletters") {
         //function to play letter sound at start
-        playLetterSound(playLetterSound(dataset[currentLevel].sound))
+        playLetterSound(dataset[currentLevel].sound)
     }
 }
 
 function nextLevel() {
-        if(numberOfLevel <= ++currentLevel ) {
-            currentLevel = 0
+    if(numberOfLevel <= ++currentLevel ) {
+        currentLevel = 0
     }
-         initLevel();
+    initLevel();
 }
 
 function previousLevel() {
-        if(--currentLevel < 0) {
-            currentLevel = numberOfLevel - 1
-        }
-        initLevel();
+    if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
+    }
+    initLevel();
 }
 
 //function to play the sound of chararcter at start & end
 function playLetterSound(sound) {
-       items.audioVoices.play(sound)
-  }
+    items.audioVoices.play(sound)
+}
 
 
 function drawSegment(pointIndex) {
@@ -81,7 +81,7 @@ function drawSegment(pointIndex) {
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
         if (mode=="clickanddraw" || mode=="drawletters") {
             if (pointIndex < items.pointImageRepeater.count-1) {
-                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
+                items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
             }
         }
         // Draw the line from pointIndex - 1 to pointIndex
@@ -89,36 +89,36 @@ function drawSegment(pointIndex) {
             items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
         }
         if (pointIndex == items.pointImageRepeater.count-1) {
-                for (var i = 1; i < dataset[currentLevel].coordinates.length; i++) {
-                    items.segmentsRepeater.itemAt(i-1).opacity = 0
-                }
-                items.imageBack.source = url + dataset[currentLevel].imageName2
-                won()
+            for (var i = 1; i < dataset[currentLevel].coordinates.length; i++) {
+                items.segmentsRepeater.itemAt(i-1).opacity = 0
+            }
+            items.imageBack.source = url + dataset[currentLevel].imageName2
+            won()
         }
         items.pointIndexToClick++
     }
 }
 
 function loadCoordinates() {
-        // prepare points data
-        pointPositions = dataset[currentLevel].coordinates
-        items.pointImageRepeater.model = pointPositions
-        items.pointImageRepeater.itemAt(0).highlight = true
-        // prepare segments data
-        linePropertiesArray = []
-        for (var i = 0; i < (pointPositions.length)-1; i++) {
-            var lineProperties = []                   // properties are x1,y1,x2,y,angle rotation
-            lineProperties[0] = pointPositions[i][0]                                    // x
-            lineProperties[1] = pointPositions[i][1]                                    // y
-            lineProperties[2] = pointPositions[i+1][0]                                  // x2
-            lineProperties[3] = pointPositions[i+1][1]                                  // y2
-            linePropertiesArray[i] = lineProperties
-        }
-        items.segmentsRepeater.model = linePropertiesArray
+    // prepare points data
+    pointPositions = dataset[currentLevel].coordinates
+    items.pointImageRepeater.model = pointPositions
+    items.pointImageRepeater.itemAt(0).highlight = true
+    // prepare segments data
+    linePropertiesArray = []
+    for (var i = 0; i < (pointPositions.length)-1; i++) {
+        var lineProperties = []                   // properties are x1,y1,x2,y,angle rotation
+        lineProperties[0] = pointPositions[i][0]                                    // x
+        lineProperties[1] = pointPositions[i][1]                                    // y
+        lineProperties[2] = pointPositions[i+1][0]                                  // x2
+        lineProperties[3] = pointPositions[i+1][1]                                  // y2
+        linePropertiesArray[i] = lineProperties
+    }
+    items.segmentsRepeater.model = linePropertiesArray
 }
 
 function loadBackgroundImage() {
-        items.imageBack.source = url + dataset[currentLevel].imageName1
+    items.imageBack.source = url + dataset[currentLevel].imageName1
 }
 
 function won() {

@@ -1,29 +1,30 @@
 /* GCompris - drawnumber.qml
- *
- * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
- *
- * Authors:
- *   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
- *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
+*
+* Authors:
+*   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
+*   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 import QtQuick 2.1
 import GCompris 1.0
 import "../../core"
 import "drawnumber.js" as Activity
 import "drawnumber_dataset.js" as Dataset
+import "."
 
 ActivityBase {
     id: activity
@@ -98,14 +99,14 @@ ActivityBase {
                 Image {
                     id: pointImage
                     source: Activity.url + (highlight ?
-                                                (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
-                                                "greenpoint.svg")
+                    (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
+                    "greenpoint.svg")
                     sourceSize.height: background.height / 25  //to change the size of dots
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
                     visible: index == pointImageRepeater.count - 1 &&
-                             items.pointIndexToClick == 0 ? false : true
+                    items.pointIndexToClick == 0 ? false : true
 
                     function drawSegment() {
                         Activity.drawSegment(index)
@@ -193,7 +194,7 @@ ActivityBase {
                         var part = pointImageRepeater.itemAt(p)
                         // Could not make it work with the item.contains() api
                         if(touch.x > part.x && touch.x < part.x + part.width &&
-                           touch.y > part.y && touch.y < part.y + part.height) {
+                        touch.y > part.y && touch.y < part.y + part.height) {
                             part.drawSegment()
                         }
                     }

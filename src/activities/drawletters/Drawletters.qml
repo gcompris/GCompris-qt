@@ -28,3 +28,5 @@ Drawnumber {
     dataset: Dataset
     pointImageOpacity: 0
 }
+
+
