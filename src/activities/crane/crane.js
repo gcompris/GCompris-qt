@@ -316,7 +316,7 @@ function gesture(deltax, deltay) {
 
 //depeding on the command, make a move to left/right/up/down or select next item
 function move(command) {
-    if (items.ok == true && items.gameFinished == false) {
+    if (items.ok && !items.gameFinished && !items.pieceIsMoving) {
         var item = items.repeater.itemAt(items.selected)
         if (command === "left") {
             if (items.selected % items.columns != 0)
@@ -339,6 +339,7 @@ function move(command) {
 //set the environment for making a move and start the animation
 function makeMove(item, distance, startPoint, add, animationProperty) {
     if (items.repeater.itemAt(items.selected+add).source == "") {
+        items.pieceIsMoving = true
         //setup the animation
         item.distance = distance
         item.indexChange = add
@@ -361,6 +362,7 @@ function checkAnswer() {
             hasWon = false
         }
     }
+
     if (hasWon) {
         items.bonus.good("flower")
         items.gameFinished = true

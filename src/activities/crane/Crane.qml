@@ -25,7 +25,6 @@ import QtQuick 2.1
 import "../../core"
 import "crane.js" as Activity
 
-
 ActivityBase {
     id: activity
 
@@ -64,6 +63,7 @@ ActivityBase {
             property bool ok: true
             property int sensivity: 80
             property bool gameFinished: false
+            property bool pieceIsMoving: false
         }
 
         onStart: { Activity.start(items) }
@@ -188,6 +188,7 @@ ActivityBase {
                         PropertyAction { target: figure; property: "initialIndex"; value: -1 }
                         PropertyAction { target: figure; property: "source"; value: "" }
                         PropertyAction { target: items; property: "ok"; value: "true"}
+                        PropertyAction { target: items; property: "pieceIsMoving"; value: "false"}
                         ScriptAction { script: Activity.checkAnswer() }
                     }
 
