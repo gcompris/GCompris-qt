@@ -71,7 +71,7 @@ function initLevel() {
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.result = dataset[currentLevel][items.sublevel-1][1]
-    console.log(items.result)
+    //console.log(items.result)
 }
 
 function nextLevel() {
@@ -115,26 +115,25 @@ function calculate(operand1,operator,operand2,operation_row)
     }*/
 }
 
-function drop_item(item)
-{
-    if(item.count == 0)
-    {
-        item.count += 1
-    }
-    else if(item.count == 1)
-    {
-        item.dropped_item.parent = item.dropped_item.reparent
-    }
-    console.log(item.dropped_item.datavalue)
-}
-
 function children_change(item,operation_row)
 {
-    if(!item.dropped_item && item.count)
+    if(item.children.length==2 && item.count==0)
     {
-        item.count -= 1
+        item.count+=1
+        console.log(" first item is dropped "+item.count)
     }
-    operation_row.end_result.text = Qt.binding(function() { return '' })
-    operation_row.row_result=0
+    else if(item.children.length==3)
+    {
+        item.dropped_item.parent=item.dropped_item.reparent
+        console.log(" second item is replaced "+item.count)
+    }
+    else if(item.children.length==1)
+    {
+        item.count-=1
+        console.log(" first item left "+item.count)
+        operation_row.end_result.text=""
+        operation_row.row_result=0
+        operation_row.complete=false
+    }
 }
 

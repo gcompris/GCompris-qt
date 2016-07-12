@@ -70,7 +70,8 @@ ActivityBase {
                     id: operation_row
                     property alias operation_row: operation_row
                     row_no: modelData
-                    prev_result: modelData ? repeat.itemAt(modelData-1).row_result : -1
+                    prev_result: modelData ? repeat.itemAt(modelData-1).row_result : ""
+                    prev_complete: modelData ? repeat.itemAt(modelData-1).complete : ""
                 }
             }
         }
