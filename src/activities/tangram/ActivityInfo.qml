@@ -25,12 +25,12 @@ ActivityInfo {
   demo: false
   title: qsTr("The tangram puzzle game")
   description: qsTr("The objective is to form a given shape")
-  goal: qsTr("From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven boards of cunning') is a Chinese puzzle. While the tangram is often said to be ancient, its existence has only been verified as far back as 1800. It consists of 7 pieces, called tans, which fit together to form a square; taking the square as the unit:
-    5 right isosceles triangles
-    2 small (legs of 1)
-    1 medium size (legs of square root of 2)
-    2 large size (legs of 2)
-    1 square (side of 1)
+  goal: qsTr("From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven boards of cunning') is a Chinese puzzle. While the tangram is often said to be ancient, its existence has only been verified as far back as 1800. It consists of 7 pieces, called tans, which fit together to form a square; Using the square side as 1 unit, the 7 pieces contains:
+    5 right isosceles triangles, including:
+        - 2 small size ones (legs of 1)
+        - 1 medium size (legs of square root of 2)
+        - 2 large size (legs of 2)
+    1 square (side of 1) and
     1 parallelogram (sides of 1 and square root of 2)
     ")
   prerequisite: qsTr("Mouse-manipulation")
