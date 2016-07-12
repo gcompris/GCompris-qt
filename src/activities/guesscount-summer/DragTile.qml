@@ -31,7 +31,7 @@ Item {
         id: mouseArea
         property alias tile: tile
         property alias datavalue: tile.datavalue
-        signal reparent
+        property alias reparent: root
         width: parent.width
         height: parent.height
         anchors.centerIn: parent
