@@ -28,11 +28,23 @@ import "photo_hunter.js" as Activity
 Image {
     id: card
 
+    sourceSize.width: background.startedHelp ? background.width : background.vert ? undefined : (background.width - 30) / 2
+    sourceSize.height: background.startedHelp ? background.height - background.barHeight * 1.3 - frame.problemTextHeight - slider.height : background.vert ?
+                            (background.height - background.barHeight - 40 - frame.problemTextHeight) / 2 :
+                            background.height - background.barHeight - 30 - frame.problemTextHeight
+
     property GCAudio audioEffects: activity.audioEffects
     property alias repeater: repeater
     property alias circleRepeater: circleRepeater
     property int good: 0
     property bool show: false
+
+    Behavior on anchors.horizontalCenterOffset {
+        NumberAnimation {
+            duration: 1000
+            easing.type: Easing.InOutQuad
+        }
+    }
 
     Image {
         id: wrong
@@ -63,6 +75,7 @@ Image {
     MouseArea {
         id: big
         anchors.fill: parent
+        enabled: !background.startedHelp
         onClicked: {
             audioEffects.play('qrc:/gcompris/src/core/resource/sounds/brick.wav')
             wrongAnim.start()
@@ -81,13 +94,17 @@ Image {
             id: photo
             property alias particleLoader: particleLoader
             property alias differenceAnimation: differenceAnimation
-            property double widthScale
-            property double heightScale
+            property double widthScale: Activity.dataset[Activity.currentLevel].coordinates[index].w
+            property double heightScale: Activity.dataset[Activity.currentLevel].coordinates[index].h
+
+            sourceSize.width: Activity.dataset[Activity.currentLevel].coordinates[index].r * 200
+            sourceSize.height: Activity.dataset[Activity.currentLevel].coordinates[index].r * 200
 
             width: card.width / 10 * widthScale
             height: card.height / 10 * heightScale
 
-            opacity: 1
+            source: Activity.url + "photo" + (Activity.currentLevel + 1) + "_" + (index + 1) + ".svg"
+            opacity: card.show ? 1 : 0
 
             x: modelData[0] * card.width / 1200
             y: modelData[1] * card.height / 1700
@@ -122,6 +139,7 @@ Image {
                 anchors.centerIn: parent
                 width: parent.width * 3
                 height: parent.height * 3
+                enabled: !background.startedHelp
                 onClicked: {
                     Activity.photoClicked(card,index)
                     audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
@@ -142,12 +160,13 @@ Image {
             border.color: card.show ? "blue" : "red"
             border.width: 6
             opacity: 0
-            x: card.repeater.itemAt(index).x - width / 6
-            y: card.repeater.itemAt(index).y - height / 6
-            width: card.repeater.itemAt(index).width * 1.5
-            height: card.repeater.itemAt(index).height * 1.5
+            x: itemAt.x - width / 6
+            y: itemAt.y - height / 6
+            width: itemAt.width * 1.5
+            height: itemAt.height * 1.5
 
             property alias scaleAnim: scaleAnim
+            property var itemAt: card.repeater.itemAt(index) ? card.repeater.itemAt(index) : card
 
             NumberAnimation {
                 id: scaleAnim

@@ -21,6 +21,8 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
+import QtQuick.Controls 1.4
+import QtQuick.Controls.Styles 1.4
 
 import "../../core"
 import "photo_hunter.js" as Activity
@@ -54,10 +56,12 @@ ActivityBase {
             property bool notShowed: true
             property alias img1: img1
             property alias img2: img2
+            property alias helpButton: helpButton
             property int total
             property int totalFound: img1.good + img2.good
             property alias problem: problem
             property alias frame: frame
+            property int helpPressed: 0
 
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 ,
@@ -69,15 +73,20 @@ ActivityBase {
 
         property bool vert: background.width < background.height
         property double barHeight: (items.barHeightAddon == 1) ? 0 : bar.height
+        property bool startedHelp: false
 
         function checkAnswer() {
             if (items.totalFound === items.model.length) {
                 bonus.good("flower")
 
-                //remove the problem from the board after first level
-                if (problem.opacity != 0) {
-                    Activity.hideProblem()
+                // after completing a level, mark the problem as shown
+                if (items.notShowed) {
+                    items.notShowed = false
                 }
+
+                //remove the problem from the board after first level
+                if (problem.z > 0)
+                    Activity.hideProblem()
             }
         }
 
@@ -90,6 +99,7 @@ ActivityBase {
             border.width: 2
             border.color: "black"
             color: "red"
+            z: 5
 
             property alias problemText: problemText
 
@@ -100,8 +110,15 @@ ActivityBase {
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
-                text: qsTr("Click on the differences between the two images!")
+                text: background.startedHelp ? qsTr("Drag the slider to show the differences!") :
+                                          qsTr("Click on the differences between the two images!")
                 color: "white"
+                onHeightChanged: {
+                    if (!items.notShowed || !helpButton.notPressed) {
+                        frame.problemTextHeight = problemText.height
+                        print("GCText height changed to: ",frame.problemTextHeight)
+                    }
+                }
             }
 
             MouseArea {
@@ -120,34 +137,115 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.margins: 10
 
+            property real problemTextHeight: problemText.height
+
             //left/top image
             Observe {
                 id: img1
-                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemText.height) / 2
-                sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40 - problemText.height) /2 :
-                                       background.height - background.barHeight - 30
                 show: true
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: background.vert ? 0 : -img1.width/2-5
+                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : - img1.width/2 - 5
                 }
             }
 
             //right/bottom image
             Observe {
                 id: img2
-                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemText.height) / 2
-                sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40 - problemText.height) /2 :
-                                       background.height - background.barHeight - 30
+                opacity: background.startedHelp ? 1 - slider.value : 1
                 show: false
                 anchors {
-                    top: background.vert ? img1.bottom : parent.top
-                    topMargin: background.vert ? 10 : 0
-                    left: background.vert ? img1.left : img1.right
-                    leftMargin: background.vert ? 0 : 10
+                    top: background.startedHelp ? img1.top : background.vert ? img1.bottom : parent.top
+                    topMargin: background.startedHelp ? 0 : background.vert ? 10 : 0
+                    horizontalCenter: parent.horizontalCenter
+                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : img1.width/2 + 5
+                }
+            }
+
+            Slider {
+                id: slider
+                value: 0
+                height: 50
+                width: img1.width * 0.9
+                z: background.startedHelp ? 5 : -5
+                opacity: background.startedHelp ? 1 : 0
+                enabled: background.startedHelp
+
+                style: SliderStyle {
+                        handle: Rectangle {
+                            height: background.vert ? 80 : 70
+                            width: height
+                            radius: width / 2
+                            color: "lightblue"
+                        }
+
+                        groove: Rectangle {
+                            implicitHeight: slider.height
+                            implicitWidth: background.vert ? slider.width * 0.85 : slider.width
+                            radius: height / 2
+                            border.color: "#6699ff"
+                            color: "#99bbff"
+
+                            Rectangle {
+                                height: parent.height
+                                width: styleData.handlePosition
+                                implicitHeight: 6
+                                implicitWidth: 100
+                                radius: height/2
+                                color: "#4d88ff"
+                            }
+                        }
+                    }
+
+                anchors {
+                    top: img1.bottom
+                    topMargin: 20
+                    horizontalCenter: img1.horizontalCenter
+                }
+            }
+        }
+
+        //help button
+        Image {
+            id: helpButton
+            source: Activity.url + "help.svg"
+            sourceSize.height: background.vert ? bar.height * 0.7 : bar.height * 0.9
+            fillMode: Image.PreserveAspectFit
+            anchors {
+                bottom: background.vert ? bar.top : bar.bottom
+                bottomMargin: 10
+                left: background.vert ? parent.left : bar.right
+                leftMargin: background.vert || ApplicationSettings.isBarHidden ? 10 : bar.width * 3.55
+            }
+
+            property bool notPressed: true
+
+            MouseArea {
+                id: mouseArea
+                anchors.fill: parent
+                enabled: items.helpPressed < 2 ? true : false
+                onClicked: {
+                    background.startedHelp = !background.startedHelp
+
+                    if (!background.startedHelp)
+                        items.helpPressed ++
+
+                    if (!background.startedHelp && items.helpPressed < 2)
+                        helpButton.opacity = 1
+                    else
+                        helpButton.opacity = 0.6
+
+                    if (helpButton.notPressed) {
+                        items.frame.anchors.top = items.problem.bottom
+                        items.problem.z = 5
+                        frame.problemTextHeight = problemText.height
+                        helpButton.notPressed = false
+                    } else if (!items.notShowed)
+                        Activity.hideProblem()
+
+                    slider.value = 0
+
                 }
             }
         }

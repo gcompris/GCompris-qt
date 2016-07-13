@@ -106,35 +106,11 @@ function initLevel() {
 }
 
 function setUp() {
-    if (items.notShowed === true) {
-        items.notShowed = false
-    }
-    else hideProblem()
-
     loadCoordinate()
 
-    for (var i=0;i<items.model.length;i++) {
-        items.img1.repeater.itemAt(i).opacity = items.img1.show ? 1 : 0
-        items.img2.repeater.itemAt(i).opacity = items.img2.show ? 1 : 0
-
-        items.img1.repeater.itemAt(i).source = url + "photo" + (currentLevel+1) + "_" + (i+1) + ".svg"
-        items.img2.repeater.itemAt(i).source = url + "photo" + (currentLevel+1) + "_" + (i+1) + ".svg"
-
-        items.img1.repeater.itemAt(i).sourceSize.width = dataset[currentLevel].coordinates[i].r * 200
-        items.img1.repeater.itemAt(i).sourceSize.height = dataset[currentLevel].coordinates[i].r * 200
-
-        items.img2.repeater.itemAt(i).sourceSize.width = dataset[currentLevel].coordinates[i].r * 200
-        items.img2.repeater.itemAt(i).sourceSize.height = dataset[currentLevel].coordinates[i].r * 200
-
-        items.img1.repeater.itemAt(i).widthScale = dataset[currentLevel].coordinates[i].w
-        items.img1.repeater.itemAt(i).heightScale = dataset[currentLevel].coordinates[i].h
-
-        items.img2.repeater.itemAt(i).widthScale = dataset[currentLevel].coordinates[i].w
-        items.img2.repeater.itemAt(i).heightScale = dataset[currentLevel].coordinates[i].h
-
+    for (var i = 0; i < items.model.length; i++) {
         items.img1.circleRepeater.itemAt(i).opacity = 0
         items.img2.circleRepeater.itemAt(i).opacity = 0
-
     }
 
     items.img1.good = 0
@@ -144,6 +120,9 @@ function setUp() {
 
     items.img1.source = url + "photo" + (currentLevel+1) + ".svg"
     items.img2.source = url + "photo" + (currentLevel+1) + ".svg"
+
+    items.helpPressed = 0
+    items.helpButton.opacity = 1
 }
 
 function loadCoordinate() {
@@ -187,9 +166,8 @@ function photoClicked(item,index) {
 
 function hideProblem() {
     items.frame.anchors.top = items.background.top
-    items.problem.problemText.opacity = 0
-    items.problem.problemText.height = 0
-    items.problem.opacity = 0
+    items.frame.problemTextHeight = 0
+    items.problem.z = -5
 }
 
 function nextLevel() {
