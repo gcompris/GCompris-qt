@@ -209,7 +209,7 @@ ActivityBase {
 
                         // Select a figure with mouse/touch
                         onClicked: {
-                            if (source != "")
+                            if (source != "" && !items.pieceIsMoving)
                                 items.selected = index
                         }
                     }
