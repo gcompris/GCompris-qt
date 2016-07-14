@@ -42,9 +42,6 @@ ActivityBase {
         oldHeight: height
     }
 
-
-
-
     pageComponent: Item {
         id: background
         anchors.fill: parent
@@ -74,7 +71,8 @@ ActivityBase {
             property bool hasWon: false
         }
 
-        onStart: { barAtStart = ApplicationSettings.isBarHidden;
+        onStart: {
+            barAtStart = ApplicationSettings.isBarHidden;
             ApplicationSettings.isBarHidden = true;
         }
         onStop: {
