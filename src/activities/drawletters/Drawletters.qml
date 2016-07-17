@@ -1,10 +1,10 @@
-/* GCompris - Clickanddraw.qml
+/* GCompris - drawletters.qml
  *
- * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
+ * Copyright (C) 2016 NITISH CHAUHAN <nitish.nc18@gmail.com>
  *
  * Authors:
  *   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
- *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
+ *   Nitish Chauhan <nitish.nc18@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -25,6 +25,6 @@ import "../../core"
 import "../drawnumber"
 
 Drawnumber {
-    mode: "clickanddraw"
+    mode: "drawletters"
     pointImageOpacity: 0
 }
