@@ -31,6 +31,7 @@ color_mix_light
 colors
 crane
 details
+drawletters
 drawnumber
 enumerate
 erase

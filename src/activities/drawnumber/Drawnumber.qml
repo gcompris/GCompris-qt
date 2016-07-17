@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-
 import "../../core"
 import "drawnumber.js" as Activity
 import GCompris 1.0
@@ -28,17 +27,15 @@ import GCompris 1.0
 
 ActivityBase {
     id: activity
-
-    property bool clickanddrawflag: false
+    property string mode: "drawnumber"
+    property var dataset
     property real pointImageOpacity: 1.0
-
     onStart: focus = true
     onStop: {}
 
     pageComponent: Item {
         id: background
         anchors.fill: parent
-
         signal start
         signal stop
 
@@ -55,32 +52,28 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property GCAudio audioEffects: activity.audioEffects
-
+            property GCAudio audioVoices: activity.audioVoices
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
             property alias imageBack: imageBack
             property int pointIndexToClick
         }
 
-
-        onStart: { Activity.start(items, clickanddrawflag) }
+        onStart: { Activity.start(items,mode,dataset) }
         onStop: { Activity.stop() }
 
         Image {
             id: imageBack
-
             anchors.top: parent.top
             width: background.width
             height: background.height
         }
-
 
         Repeater {
             id: segmentsRepeater
 
             Rectangle {
                 id: line
-
                 opacity: 0
                 color: "black"
                 transformOrigin: Item.TopLeft
@@ -108,7 +101,7 @@ ActivityBase {
                     source: Activity.url + (highlight ?
                                                 (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
                                                 "greenpoint.svg")
-                    sourceSize.height: background.height / 15
+                    sourceSize.height: background.height / 25  //to change the size of dots
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
@@ -122,12 +115,11 @@ ActivityBase {
 
                     GCText {
                         id: pointNumberText
-
                         opacity: pointImageOpacity
                         text: index + 1
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
-                        fontSize: 18
+                        fontSize: 11
                         font.weight: Font.DemiBold
                         style: Text.Outline
                         styleColor: "black"
@@ -212,6 +204,7 @@ ActivityBase {
 
             onPressed: {
                 checkPoints(touchPoints)
+                activity.audioEffects.play(Activity.url + "buttonclick."+ApplicationInfo.CompressedAudio)
             }
             onTouchUpdated: {
                 checkPoints(touchPoints)
@@ -222,7 +215,6 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-
 
         Bar {
             id: bar
@@ -239,7 +231,5 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-
     }
-
 }
