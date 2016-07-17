@@ -24,6 +24,7 @@ import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.2
+import QtQuick.Controls.Styles 1.2
 
 
 /**
@@ -44,13 +45,13 @@ import QtQuick.Controls 1.2
  * @inherit QtQuick.Item
  */
 ActivityBase {
-    id: menuActivity
+    id: activity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
     onBack: {
         pageView.pop(to);
         // Restore focus that has been taken by the loaded activity
-        if(pageView.currentItem == menuActivity)
+        if(pageView.currentItem == activity)
             focus = true;
     }
 
@@ -61,7 +62,7 @@ ActivityBase {
         else {
             pageView.pop();
             // Restore focus that has been taken by the loaded activity
-            if(pageView.currentItem == menuActivity)
+            if(pageView.currentItem == activity)
                 focus = true;
         }
     }
@@ -81,43 +82,43 @@ ActivityBase {
     property string inputText: ""
     property variant sections: [
         {
-            icon: menuActivity.url + "all.svg",
+            icon: activity.url + "all.svg",
             tag: "favorite"
         },
         {
-            icon: menuActivity.url + "computer.svg",
+            icon: activity.url + "computer.svg",
             tag: "computer"
         },
         {
-            icon: menuActivity.url + "discovery.svg",
+            icon: activity.url + "discovery.svg",
             tag: "discovery"
         },
         {
-            icon: menuActivity.url + "experience.svg",
+            icon: activity.url + "experience.svg",
             tag: "experiment"
         },
         {
-            icon: menuActivity.url + "fun.svg",
+            icon: activity.url + "fun.svg",
             tag: "fun"
         },
         {
-            icon: menuActivity.url + "math.svg",
+            icon: activity.url + "math.svg",
             tag: "math"
         },
         {
-            icon: menuActivity.url + "puzzle.svg",
+            icon: activity.url + "puzzle.svg",
             tag: "puzzle"
         },
         {
-            icon: menuActivity.url + "reading.svg",
+            icon: activity.url + "reading.svg",
             tag: "reading"
         },
         {
-            icon: menuActivity.url + "strategy.svg",
+            icon: activity.url + "strategy.svg",
             tag: "strategy"
         },
         {
-            icon: menuActivity.url + "search-icon.svg",
+            icon: activity.url + "search-icon.svg",
             tag: "search"
         }
     ]
@@ -126,16 +127,24 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: menuActivity.url + "background.svg"
+        source: activity.url + "background.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
-        height: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard ?
+        height: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard ?
                 main.height - (((keyboard.keyHeight+keyboard.rowSpacing) * keyboard.rows)+keyboard.margin)
                 :main.height
         fillMode: Image.PreserveAspectCrop
+        Timer{
+            // triggered once at startup to populate the keyboard
+            id: keyboardFiller
+            interval: 1000; running: true;
+            onTriggered: { keyboard.populate(); }
+        }
 
         function loadActivity() {
             // @TODO init of item would be better in setsource but it crashes on Qt5.6
             // https://bugreports.qt.io/browse/QTBUG-49793
+            //take the focus away from textField before statring an activity
+            input.focus = false
             activityLoader.item.audioVoices = audioVoices
             activityLoader.item.audioEffects = audioEffects
             activityLoader.item.loading = loading
@@ -246,7 +255,7 @@ ActivityBase {
 
                     function selectCurrentItem() {
                         section.currentIndex = index
-                        menuActivity.currentTag = modelData.tag
+                        activity.currentTag = modelData.tag
                         if(modelData.tag === "search") {
                             ActivityInfoTree.filterBySearch(input.text);
                         }
@@ -336,7 +345,7 @@ ActivityBase {
 
             anchors {
                 top: {
-                    if(menuActivity.currentTag === "search")
+                    if(activity.currentTag === "search")
                         return searchbar.bottom
                     else
                         return horizontal ? section.bottom : parent.top
@@ -386,7 +395,7 @@ ActivityBase {
                         }
                         source: demo || !ApplicationSettings.isDemoMode
                                 ? "" :
-                                  menuActivity.url + "lock.svg"
+                                  activity.url + "lock.svg"
                         sourceSize.width: 30 * ApplicationInfo.ratio
                     }
                     Image {
@@ -395,7 +404,7 @@ ActivityBase {
                             bottom: parent.bottom
                         }
                         source: ActivityInfoTree.menuTree[index].createdInVersion == ApplicationInfo.GCVersionCode
-                                ? menuActivity.url + "new.svg" : ""
+                                ? activity.url + "new.svg" : ""
                         sourceSize.width: 30 * ApplicationInfo.ratio
                     }
                     GCText {
@@ -438,7 +447,7 @@ ActivityBase {
                     onClicked: selectCurrentItem()
                 }
                 Image {
-                    source: menuActivity.url + (favorite ? "all.svg" : "all_disabled.svg");
+                    source: activity.url + (favorite ? "all.svg" : "all_disabled.svg");
                     anchors {
                         top: parent.top
                         right: parent.right
@@ -459,7 +468,7 @@ ActivityBase {
                     ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.menuTree[index].name,
                                              {
-                                                 'menu': menuActivity,
+                                                 'menu': activity,
                                                  'activityInfo': ActivityInfoTree.currentActivity
                                              })
                     if (activityLoader.status == Loader.Ready) loadActivity()
@@ -501,7 +510,7 @@ ActivityBase {
             id: searchbar
             width: horizontal ?  parent.width/2 : parent.width - (section.width+10)
             height: horizontal ? parent.height/10 : parent.height/17
-            visible: menuActivity.currentTag === "search"
+            visible: activity.currentTag === "search"
             anchors {
                 top: horizontal ? section.bottom : parent.top
                 left: horizontal ? undefined : section.right
@@ -522,7 +531,7 @@ ActivityBase {
             TextField {
                 id: input
                 anchors.fill: parent
-                text: menuActivity.inputText
+                text: activity.inputText
                 textColor: "black"
                 font.pixelSize: 28
                 font.bold: true
@@ -538,6 +547,10 @@ ActivityBase {
                     else
                         return true
                 }
+                style: TextFieldStyle{
+                    placeholderTextColor: "black"
+                }
+
                 placeholderText: qsTr("Search specific activities")
                 onTextChanged: {
                     ActivityInfoTree.filterBySearch(input.text);
@@ -550,7 +563,7 @@ ActivityBase {
             readonly property var letter: ActivityInfoTree.characters
             property int rows;
             width: parent.width//horizontal ? main.width : parent.width - (section.width +10)
-            visible: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
+            visible: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
             anchors.top: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             onKeypress: {
@@ -564,8 +577,8 @@ ActivityBase {
                     input.text = input.text.concat(text);
                 }
             }
-            layout: {
-               var layout = [];
+            function populate(){
+               var tmplayout = [];
                var row = 0;
                var offset = 0;
                var cols;
@@ -577,25 +590,25 @@ ActivityBase {
                        cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
                                                        :(Math.ceil((letter.length-offset) / (22 - row)))
                        if(row == 0) {
-                           layout[row] = new Array();
-                           layout[row].push({ label: keyboard.backspace });
-                           layout[row].push({ label: keyboard.space });
+                           tmplayout[row] = new Array();
+                           tmplayout[row].push({ label: keyboard.backspace });
+                           tmplayout[row].push({ label: keyboard.space });
                            row++;
                        }
                    }
 
-                   layout[row] = new Array();
+                   tmplayout[row] = new Array();
                    for (var j = 0; j < cols; j++)
-                       layout[row][j] = { label: letter[j+offset] };
+                       tmplayout[row][j] = { label: letter[j+offset] };
                    offset += j;
                    row ++;
                }
                if(letter.length <= 100){
-                   layout[0].push({ label: keyboard.space });
-                   layout[row-1].push({ label: keyboard.backspace });
+                   tmplayout[0].push({ label: keyboard.space });
+                   tmplayout[row-1].push({ label: keyboard.backspace });
                }
                keyboard.rows = 3;
-               return layout;
+               keyboard.layout = tmplayout
            }
         }
 
@@ -636,7 +649,7 @@ ActivityBase {
 
     DialogActivityConfig {
         id: dialogActivityConfig
-        currentActivity: menuActivity
+        currentActivity: activity
 
         content: Component {
             ConfigurationItem {
@@ -649,13 +662,13 @@ ActivityBase {
             dialogActivityConfig.configItem.save();
         }
         onClose: {
-            if(menuActivity.currentTag != "search") {
-                ActivityInfoTree.filterByTag(menuActivity.currentTag)
+            if(activity.currentTag != "search") {
+                ActivityInfoTree.filterByTag(activity.currentTag)
                 ActivityInfoTree.filterLockedActivities()
                 ActivityInfoTree.filterEnabledActivities()
             }
             else
-                ActivityInfoTree.filterBySearch(menuActivity.inputText);
+                ActivityInfoTree.filterBySearch(activity.inputText);
             home()
         }
     }

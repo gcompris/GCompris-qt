@@ -256,7 +256,8 @@ Item {
     }
 
     function populateKeyboard(a) {
-        activity.loading.start();
+        if(activity.activityInfo.name != "menu/Menu.qml")
+            activity.loading.start();
         // populate asynchronously in a worker thread:
         keyboardWorker.sendMessage({
                                        shiftKey: keyboard.shiftKey,
