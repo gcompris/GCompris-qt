@@ -27,6 +27,7 @@ Drawnumber {
     mode: "drawletters"
     dataset: Dataset
     pointImageOpacity: 0
+    url: "qrc:/gcompris/src/activities/drawletters/resource/"
 }
 
 

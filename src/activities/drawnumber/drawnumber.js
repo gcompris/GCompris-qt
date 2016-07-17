@@ -31,12 +31,13 @@ var dataset
 var numberOfLevel
 var pointPositions = []
 var linePropertiesArray = []
-var url = "qrc:/gcompris/src/activities/drawnumber/resource/"
+var url
 
-function start(_items, _mode,_dataset) {
+function start(_items, _mode,_dataset,_url) {
     items = _items
     mode = _mode
     dataset = _dataset.get()
+    url = _url
     numberOfLevel = dataset.length
     currentLevel = 0
     initLevel()

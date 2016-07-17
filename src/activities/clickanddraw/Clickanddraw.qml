@@ -28,4 +28,5 @@ Drawnumber {
     mode: "clickanddraw"
     pointImageOpacity: 0
     dataset: Dataset
+    url: "qrc:/gcompris/src/activities/drawnumber/resource/"
 }
