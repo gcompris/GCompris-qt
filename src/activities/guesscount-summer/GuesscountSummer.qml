@@ -51,8 +51,8 @@ ActivityBase {
             property alias bonus: bonus
             property int sublevel: 0
             property alias operand_row : operand_row
-            property int result
             property  var data
+            property int result: data[sublevel-1][1]
             property alias timer: timer
             property GCAudio audioEffects: activity.audioEffects
             property bool solved
@@ -110,6 +110,8 @@ ActivityBase {
             spacing: 10
             anchors.top:row1.bottom
             anchors.topMargin: 10
+            width: parent.width
+            height: parent.height
             Operator_row {
                 width: parent.width
                 height: parent.height/10
@@ -124,6 +126,8 @@ ActivityBase {
                 model: items.operand_row.repeater.model.length-1
                 delegate: Operation_row{
                     id: operation_row
+                    width: parent.width
+                    height: parent.height/10
                     property alias operation_row: operation_row
                     no_of_rows: items.operand_row.repeater.model.length-1
                     row_no: modelData
