@@ -1,11 +1,10 @@
-/* GCompris - Clickanddraw.qml
+/* GCompris - drawletters.qml
  *
- * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
+ * Copyright (C) 2016 NITISH CHAUHAN <nitish.nc18@gmail.com>
  *
  * Authors:
- *   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
- *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
  *
+ *   Nitish Chauhan <nitish.nc18@gmail.com> (Qt Quick port)
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
  *   the Free Software Foundation; either version 3 of the License, or
@@ -22,11 +21,13 @@
 import QtQuick 2.1
 import "../drawnumber"
 import "../../core" as Core
-import "clickanddraw_dataset.js" as Dataset
+import "drawletters_dataset.js" as Dataset
 
 Drawnumber {
-    mode: "clickanddraw"
-    pointImageOpacity: 0
+    mode: "drawletters"
     dataset: Dataset
-    url: "qrc:/gcompris/src/activities/drawnumber/resource/"
+    pointImageOpacity: 0
+    url: "qrc:/gcompris/src/activities/drawletters/resource/"
 }
+
+
