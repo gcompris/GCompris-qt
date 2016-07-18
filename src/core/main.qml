@@ -159,7 +159,9 @@ Window {
                     + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
                     + ", sharedWritablePath=" + ApplicationInfo.getSharedWritablePath()
                     + ")");
-        if (ApplicationSettings.exeCount === 1 && !ApplicationSettings.isKioskMode) {
+        if (ApplicationSettings.exeCount === 1 &&
+                !ApplicationSettings.isKioskMode &&
+                ApplicationInfo.isDownloadAllowed) {
             // first run
             var dialog;
             dialog = Core.showMessageDialog(
