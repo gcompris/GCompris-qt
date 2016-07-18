@@ -19,8 +19,8 @@ Row{
         DropTile {
             id: operand1
             type : "operands"
-            width: 100
-            height: 100
+            width: operation_row.width*0.1
+            height: operation_row.height
             dropped_item: operand1.children[count]
             property int count: 0
             onChildrenChanged: {
@@ -42,8 +42,8 @@ Row{
         id:component2
         Rectangle {
             id: prev_result
-            width: 100
-            height: 100
+            width: operation_row.width*0.1
+            height: operation_row.height
             color: "white"
             border.color: "black"
             property alias dropped_item: tile
@@ -68,8 +68,8 @@ Row{
     DropTile {
         id: operator
         type : "operators"
-        width: 100
-        height: 100
+        width: operation_row.width*0.1
+        height: operation_row.height
         property int count: 0
         dropped_item: operator.children[count]
         onChildrenChanged: {
@@ -89,8 +89,8 @@ Row{
     DropTile {
         id: operand2
         type : "operands"
-        width: 100
-        height: 100
+        width: operation_row.width*0.1
+        height: operation_row.height
         property int count: 0
         dropped_item: operand2.children[count]
         onChildrenChanged: {
@@ -109,8 +109,8 @@ Row{
     }
 
     Rectangle {
-        width: 100
-        height: 100
+        width: operation_row.width*0.1
+        height: operation_row.height
         color: "transparent"
         Image {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -120,8 +120,8 @@ Row{
         radius: 20.0
     }
     Rectangle {
-        width: 100
-        height: 100
+        width: operation_row.width*0.1
+        height: operation_row.height
         border.color: "black"
         GCText{
             id: end_result
@@ -138,13 +138,11 @@ Row{
             end_result.text=""
             operation_row.complete=false
             operation_row.row_result=0
-
         }
         else
         {
             if( operator.count==1 && operand2.count==1)
             {
-
                 Activity.calculate(loader.children[0].dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
                 operation_row.complete=true
             }
@@ -153,10 +151,10 @@ Row{
 
     }
     onReparentChanged: {
-        console.log('reparent')
+        console.log('reparent   1')
         if(operation_row.reparent)
         {
-            if(row_no)
+            if(row_no==0)
             {
                 loader.children[0].dropped_item.parent=loader.children[0].dropped_item.reparent
             }

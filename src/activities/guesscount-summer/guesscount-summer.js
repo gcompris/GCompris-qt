@@ -31,24 +31,28 @@ var signs = [
         ]
 var dataset = [
             [
-                [[1,2,3],9],
-                [[3,1],3],
+                [[1,2],3],
+                [[3,1],4],
+                [[3,4],7],
+                [[4,6],10]
             ],
             [
-                [[6,7],42],
-                [[8,4],2],
-                [[10,2],8],
-                [[8,4],12],
+                [[1,2],2],
+                [[8,2],16],
+                [[3,4],12],
+                [[4,6],24]
             ],
             [
-                [[11,7],77],
-                [[8,16,4],2],
-                [[10,2,3],8]
+                [[4,2],2],
+                [[6,6],1],
+                [[20,5],4],
+                [[4,1],13]
             ],
             [
-                [[9,7],63],
-                [[4,2,9],17],
-                [[15,3,2,3],21]
+                [[4,2,3],2],
+                [[6,4,2],1],
+                [[20,5,3],12],
+                [[4,2,2,3],2]
             ]
         ]
 var currentLevel = 0
@@ -68,7 +72,6 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
-    items.result = dataset[currentLevel][items.sublevel-1][1]
     items.data=dataset[currentLevel]
     items.solved=false
     //console.log(items.result)
@@ -76,7 +79,6 @@ function initLevel() {
 function next_sublevel() {
     items.sublevel += 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
-    items.result = dataset[currentLevel][items.sublevel-1][1]
     items.data=dataset[currentLevel]
     items.solved=false
 }
