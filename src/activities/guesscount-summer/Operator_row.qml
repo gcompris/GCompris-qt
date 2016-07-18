@@ -7,8 +7,8 @@ Row {
     spacing: 40
     Rectangle{
         id: operator
-        width: 350
-        height: 100
+        width: parent.width*0.328
+        height: parent.height
         radius: 20.0;
         color: "red"
         GCText{
@@ -23,8 +23,8 @@ Row {
         delegate: DragTile{
             id: root
             type: "operators"
-            width: 100
-            height: 100
+            width: parent.width*0.1
+            height: parent.height
         }
     }
 }

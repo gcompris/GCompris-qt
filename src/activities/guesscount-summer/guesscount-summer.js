@@ -31,10 +31,8 @@ var signs = [
         ]
 var dataset = [
             [
-                [[1,2,4,5],3],
+                [[1,2,3],9],
                 [[3,1],3],
-                [[9,4],5],
-                [[8,4],2]
             ],
             [
                 [[6,7],42],
@@ -71,7 +69,16 @@ function initLevel() {
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.result = dataset[currentLevel][items.sublevel-1][1]
+    items.data=dataset[currentLevel]
+    items.solved=false
     //console.log(items.result)
+}
+function next_sublevel() {
+    items.sublevel += 1
+    items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
+    items.result = dataset[currentLevel][items.sublevel-1][1]
+    items.data=dataset[currentLevel]
+    items.solved=false
 }
 
 function nextLevel() {
@@ -107,12 +114,8 @@ function calculate(operand1,operator,operand2,operation_row)
         operation_row.row_result = operand1*operand2
         console.log(operation_row.row_result)
     }
-    //operation_row.completed=true
     operation_row.end_result.text=operation_row.row_result.toString()
-    /*if(operation_row.row_no == 2 && operation_row.row_result == operation_row.guesscount)
-    {
 
-    }*/
 }
 
 function children_change(item,operation_row)
@@ -121,6 +124,7 @@ function children_change(item,operation_row)
     {
         item.count+=1
         console.log(" first item is dropped "+item.count)
+
     }
     else if(item.children.length==3)
     {
@@ -134,6 +138,19 @@ function children_change(item,operation_row)
         operation_row.end_result.text=""
         operation_row.row_result=0
         operation_row.complete=false
+    }
+}
+
+function check_answer(row){
+    if(items.sublevel<dataset[currentLevel].length)
+    {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+        items.timer.start()
+    }
+    else if(items.sublevel==dataset[currentLevel].length)
+    {
+        items.timer.start()
+        items.bonus.good("smiley")
     }
 }
 
