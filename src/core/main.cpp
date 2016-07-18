@@ -158,12 +158,12 @@ int main(int argc, char *argv[])
     QCommandLineOption clMute(QStringList() << "m" << "mute",
                                        QObject::tr("Run GCompris without sound."));
     parser.addOption(clMute);
-    QCommandLineOption clWithoutConfig(QStringList() << "disable-config",
-                                       QObject::tr("Disable the configuration button."));
-    parser.addOption(clWithoutConfig);
-    QCommandLineOption clWithConfig(QStringList() << "enable-config",
-                                       QObject::tr("Enable the configuration button (default)."));
-    parser.addOption(clWithConfig);
+    QCommandLineOption clWithoutKioskMode(QStringList() << "disable-kioskmode",
+                                       QObject::tr("Disable the kiosk mode."));
+    parser.addOption(clWithoutKioskMode);
+    QCommandLineOption clWithKioskMode(QStringList() << "enable-kioskmode",
+                                       QObject::tr("Enable the kiosk mode (default)."));
+    parser.addOption(clWithKioskMode);
     parser.process(app);
 
 
@@ -224,10 +224,10 @@ int main(int argc, char *argv[])
         ApplicationSettings::getInstance()->setIsAudioEffectsEnabled(true);
         ApplicationSettings::getInstance()->setIsAudioVoicesEnabled(true);
     }
-    if(parser.isSet(clWithConfig)) {
+    if(parser.isSet(clWithoutKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(false);
     }
-    if(parser.isSet(clWithoutConfig)) {
+    if(parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
     }
 

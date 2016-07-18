@@ -182,7 +182,7 @@ Item {
         {
             'bid': exit,
             'contentId': content.exit,
-            'allowed': true
+            'allowed': !ApplicationSettings.isKioskMode
         },
         {
             'bid': about,

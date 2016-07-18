@@ -54,7 +54,7 @@ ActivityBase {
     }
 
     onHome: {
-        if(pageView.depth === 1) {
+        if(pageView.depth === 1 && !ApplicationSettings.isKioskMode) {
             Core.quit(main);
         }
         else {
