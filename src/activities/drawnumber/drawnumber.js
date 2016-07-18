@@ -51,14 +51,14 @@ function initLevel() {
     items.pointIndexToClick = 0
     loadCoordinates()
     loadBackgroundImage()
-    if(mode=="drawletters") {
+    if(mode == "drawletters") {
         //function to play letter sound at start
         playLetterSound(dataset[currentLevel].sound)
     }
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
@@ -80,7 +80,7 @@ function playLetterSound(sound) {
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick) {
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
-        if (mode=="clickanddraw" || mode=="drawletters") {
+        if (mode == "clickanddraw" || mode == "drawletters") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
             }
@@ -104,15 +104,16 @@ function loadCoordinates() {
     // prepare points data
     pointPositions = dataset[currentLevel].coordinates
     items.pointImageRepeater.model = pointPositions
-    items.pointImageRepeater.itemAt(0).highlight = true
+    if (mode == "clickanddraw" || mode == "drawletters")
+        items.pointImageRepeater.itemAt(0).highlight = true
     // prepare segments data
     linePropertiesArray = []
     for (var i = 0; i < (pointPositions.length)-1; i++) {
-        var lineProperties = []                   // properties are x1,y1,x2,y,angle rotation
-        lineProperties[0] = pointPositions[i][0]                                    // x
-        lineProperties[1] = pointPositions[i][1]                                    // y
-        lineProperties[2] = pointPositions[i+1][0]                                  // x2
-        lineProperties[3] = pointPositions[i+1][1]                                  // y2
+        var lineProperties = []                    // properties are x1,y1,x2,y,angle rotation
+        lineProperties[0] = pointPositions[i][0]   // x
+        lineProperties[1] = pointPositions[i][1]   // y
+        lineProperties[2] = pointPositions[i+1][0] // x2
+        lineProperties[3] = pointPositions[i+1][1] // y2
         linePropertiesArray[i] = lineProperties
     }
     items.segmentsRepeater.model = linePropertiesArray

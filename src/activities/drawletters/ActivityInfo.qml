@@ -25,7 +25,7 @@ ActivityInfo {
       demo: true
       title: qsTr("Draw Letters")
       description: qsTr("Connect the dots to draw some alphabets")
-      //intro: "put here in comment the text for the intro voice"
+      //  intro: "Click on the selected points and draw the letter"
       goal: qsTr("Children will learn about different letters & alphabets in a fun way.")
       prerequisite: ""
       manual: qsTr("Draw the figure by connecting the dots in the correct order")
