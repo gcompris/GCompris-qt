@@ -9,8 +9,8 @@ Row {
     spacing: 40
     Rectangle{
         id: operands
-        width: 350;
-        height: 100
+        width: parent.width*0.328;
+        height: parent.height
         radius: 20.0;
         color: "green"
         GCText{
@@ -26,8 +26,8 @@ Row {
         delegate: DragTile{
             id: root
             type: "operands"
-            width: 100
-            height: 100
+            width: parent.width*0.1
+            height: parent.height
         }
     }
 }

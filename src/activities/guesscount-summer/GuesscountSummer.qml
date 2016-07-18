@@ -52,16 +52,72 @@ ActivityBase {
             property int sublevel: 0
             property alias operand_row : operand_row
             property int result
+            property  var data
+            property alias timer: timer
+            property GCAudio audioEffects: activity.audioEffects
+            property bool solved
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Rectangle {
+            id: row1
+            width: parent.width
+            height: parent.height/10
+            anchors{
+                top: parent.top
+                topMargin: (parent.height/80)*3
+            }
+            color: "transparent"
+            Rectangle {
+                id: question_no
+                width: parent.width*0.328;
+                height: parent.height;
+                radius: 20.0;
+                color: "steelblue"
+                anchors{
+                    left: parent.left
+                    leftMargin: parent.width*0.028
+                }
+                GCText{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text: qsTr("%1/%2").arg(items.sublevel).arg(items.data.length)
+                }
+            }
+            Rectangle{
+                width: parent.width*0.35;
+                height: parent.height;
+                radius: 20
+                color: "orange"
+                anchors{
+                    right: parent.right
+                    rightMargin: parent.width*0.028
+                }
+                GCText{
+                    id: guess
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text: qsTr("Guesscount : %1").arg(items.result)
+                }
+            }
+        }
+
         Column {
             spacing: 10
-            Operator_row {}
+            anchors.top:row1.bottom
+            anchors.topMargin: 10
+            Operator_row {
+                width: parent.width
+                height: parent.height/10
+            }
             Operand_row {
                 id: operand_row
+                width: parent.width
+                height: parent.height/10
             }
             Repeater {
                 id: repeat
@@ -69,12 +125,16 @@ ActivityBase {
                 delegate: Operation_row{
                     id: operation_row
                     property alias operation_row: operation_row
+                    no_of_rows: items.operand_row.repeater.model.length-1
                     row_no: modelData
-                    prev_result: modelData ? repeat.itemAt(modelData-1).row_result : ""
-                    prev_complete: modelData ? repeat.itemAt(modelData-1).complete : ""
+                    guesscount: items.result
+                    prev_result: modelData ? repeat.itemAt(modelData-1).row_result : -1
+                    prev_complete: modelData ? repeat.itemAt(modelData-1).complete : false
+                    reparent: items.solved
                 }
             }
-        }
+            }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -94,6 +154,18 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
+        }
+        Timer {
+            id: timer
+            interval: 1500
+            repeat: false
+            onTriggered: {
+                items.solved=true
+                if(items.sublevel<items.data.length)
+                {
+                    Activity.next_sublevel()
+                }
+            }
         }
     }
 

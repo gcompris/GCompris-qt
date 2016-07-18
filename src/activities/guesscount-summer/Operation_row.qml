@@ -7,10 +7,13 @@ Row{
     spacing: 40
     property alias end_result: end_result
     property int row_result
+    property int no_of_rows
     property int row_no
+    property int guesscount
     property var prev_result
     property bool complete: false
-    property var prev_complete
+    property bool prev_complete
+    property bool reparent
     Component{
         id: component1
         DropTile {
@@ -26,6 +29,10 @@ Row{
                 {
                     Activity.calculate(operand1.dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
                     operation_row.complete=true
+                    if(operation_row.row_no==operation_row.no_of_rows-1 && operation_row.row_result==operation_row.guesscount)
+                    {
+                        Activity.check_answer()
+                    }
                 }
 
             }
@@ -40,7 +47,7 @@ Row{
             color: "white"
             border.color: "black"
             property alias dropped_item: tile
-            property int count: 1
+            property int count: operation_row.prev_complete ? 1 : 0
             GCText{
                 id: tile
                 property int datavalue: Number(tile.text)
@@ -71,6 +78,10 @@ Row{
             {
                 Activity.calculate(loader.children[0].dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
                 operation_row.complete=true
+                if(operation_row.row_no==operation_row.no_of_rows-1 && operation_row.row_result==operation_row.guesscount)
+                {
+                    Activity.check_answer()
+                }
             }
 
         }
@@ -88,6 +99,10 @@ Row{
             {
                 Activity.calculate(loader.children[0].dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
                 operation_row.complete=true
+                if(operation_row.row_no==operation_row.no_of_rows-1 && operation_row.row_result==operation_row.guesscount)
+                {
+                    Activity.check_answer(operation_row)
+                }
             }
 
         }
@@ -122,14 +137,31 @@ Row{
         {
             end_result.text=""
             operation_row.complete=false
+            operation_row.row_result=0
+
         }
         else
         {
-            operation_row.complete=true
-            if(loader.children[0].count==1 && operator.count==1 && operand2.count==1)
+            if( operator.count==1 && operand2.count==1)
             {
+
                 Activity.calculate(loader.children[0].dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
+                operation_row.complete=true
             }
+        }
+
+
+    }
+    onReparentChanged: {
+        console.log('reparent')
+        if(operation_row.reparent)
+        {
+            if(row_no)
+            {
+                loader.children[0].dropped_item.parent=loader.children[0].dropped_item.reparent
+            }
+            operator.dropped_item.parent=operator.dropped_item.reparent
+            operand2.dropped_item.parent=operand2.dropped_item.reparent
         }
 
     }
