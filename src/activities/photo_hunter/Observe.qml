@@ -28,10 +28,11 @@ import "photo_hunter.js" as Activity
 Image {
     id: card
 
-    sourceSize.width: background.startedHelp ? background.width : background.vert ? undefined : (background.width - 30) / 2
-    sourceSize.height: background.startedHelp ? background.height - background.barHeight * 1.3 - frame.problemTextHeight - slider.height : background.vert ?
-                            (background.height - background.barHeight - 40 - frame.problemTextHeight) / 2 :
-                            background.height - background.barHeight - 30 - frame.problemTextHeight
+    sourceSize.width: background.startedHelp ? background.width - helpButton.width * 1.5 :
+                                               background.vert ? background.width : (background.width - 30) / 2
+    sourceSize.height: background.startedHelp ? background.height - background.barHeight * 1.5 - frame.problemTextHeight - slider.height :
+                                                background.vert ? (background.height - background.barHeight - 40 - frame.problemTextHeight) / 2 :
+                                                                  background.height - background.barHeight - 30 - frame.problemTextHeight
 
     property GCAudio audioEffects: activity.audioEffects
     property alias repeater: repeater
@@ -40,11 +41,21 @@ Image {
     property bool show: false
 
     Behavior on anchors.horizontalCenterOffset {
+        enabled: !background.vert
         NumberAnimation {
             duration: 1000
             easing.type: Easing.InOutQuad
         }
     }
+
+    Behavior on anchors.verticalCenterOffset {
+        enabled: background.vert
+        NumberAnimation {
+            duration: 1000
+            easing.type: Easing.InOutQuad
+        }
+    }
+
 
     Image {
         id: wrong

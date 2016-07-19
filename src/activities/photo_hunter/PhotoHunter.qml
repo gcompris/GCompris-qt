@@ -114,10 +114,7 @@ ActivityBase {
                                           qsTr("Click on the differences between the two images!")
                 color: "white"
                 onHeightChanged: {
-                    if (!items.notShowed || !helpButton.notPressed) {
-                        frame.problemTextHeight = problemText.height
-                        print("GCText height changed to: ",frame.problemTextHeight)
-                    }
+                    frame.problemTextHeight = problemText.height
                 }
             }
 
@@ -144,9 +141,12 @@ ActivityBase {
                 id: img1
                 show: true
                 anchors {
-                    top: parent.top
                     horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : - img1.width/2 - 5
+                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : - img1.width / 2 - 5
+
+                    verticalCenter: parent.verticalCenter
+                    verticalCenterOffset: background.startedHelp ?  background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
+                                                                    background.vert ? - frame.problemTextHeight * 0.5 - img1.height * 0.5 - 5 : 0
                 }
             }
 
@@ -156,10 +156,12 @@ ActivityBase {
                 opacity: background.startedHelp ? 1 - slider.value : 1
                 show: false
                 anchors {
-                    top: background.startedHelp ? img1.top : background.vert ? img1.bottom : parent.top
-                    topMargin: background.startedHelp ? 0 : background.vert ? 10 : 0
                     horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : img1.width/2 + 5
+                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : img1.width / 2 + 5
+
+                    verticalCenter: parent.verticalCenter
+                    verticalCenterOffset: background.startedHelp ? background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
+                                                                   background.vert ? - frame.problemTextHeight * 0.5 + img1.height * 0.5 + 5 : 0
                 }
             }
 
@@ -210,7 +212,8 @@ ActivityBase {
         Image {
             id: helpButton
             source: Activity.url + "help.svg"
-            sourceSize.height: background.vert ? bar.height * 0.7 : bar.height * 0.9
+            sourceSize.height: background.vert ? bar.height * 0.77 : bar.height * 1
+            height: background.vert ? bar.height * 0.7 : bar.height * 0.9
             fillMode: Image.PreserveAspectFit
             anchors {
                 bottom: background.vert ? bar.top : bar.bottom
@@ -221,31 +224,52 @@ ActivityBase {
 
             property bool notPressed: true
 
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 200
+                    easing.type: Easing.InOutQuad
+                }
+            }
+
+            states: State {
+                name: "scaled"; when: mouseArea.containsMouse
+                PropertyChanges {
+                    target: helpButton
+                    scale: 1.1
+                }
+            }
+
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
                 enabled: items.helpPressed < 2 ? true : false
+                hoverEnabled: ApplicationInfo.isMobile ? false : true
+
                 onClicked: {
                     background.startedHelp = !background.startedHelp
 
                     if (!background.startedHelp)
                         items.helpPressed ++
 
-                    if (!background.startedHelp && items.helpPressed < 2)
-                        helpButton.opacity = 1
-                    else
-                        helpButton.opacity = 0.6
+                    if (items.helpPressed < 2)
+                        if (!background.startedHelp)
+                            helpButton.opacity = 1
+                        else
+                            helpButton.opacity = 0.8
+                    else helpButton.opacity = 0.5
 
                     if (helpButton.notPressed) {
                         items.frame.anchors.top = items.problem.bottom
                         items.problem.z = 5
                         frame.problemTextHeight = problemText.height
                         helpButton.notPressed = false
-                    } else if (!items.notShowed)
+                    } else if (!items.notShowed) {
                         Activity.hideProblem()
+                        frame.problemTextHeight = 0
+                    }
+
 
                     slider.value = 0
-
                 }
             }
         }
