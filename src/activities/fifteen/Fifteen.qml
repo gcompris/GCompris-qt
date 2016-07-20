@@ -65,7 +65,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Image {
-            source: Activity.url + "goldframe.svg"
+            source: Activity.url + "blueframe.svg"
             sourceSize.width: Math.min(background.width * 0.9,
                                        background.height * 0.9)
             anchors.horizontalCenter: parent.horizontalCenter
@@ -121,6 +121,9 @@ ActivityBase {
                         anchors.verticalCenter: parent.verticalCenter
                         text: value && bar.level % 2 == 1 ? value : ""
                         fontSize: mediumSize
+                        color: "#ffe9f0fb"
+                        style: Text.Outline
+                        styleColor: "#ff1c4788"
                     }
 
                     DropShadow {
@@ -128,9 +131,9 @@ ActivityBase {
                         cached: false
                         horizontalOffset: 3
                         verticalOffset: 3
-                        radius: 8.0
+                        radius: 1
                         samples: 16
-                        color: "#80000000"
+                        color: "#ff1c4788"
                         source: text
                     }
                 }
