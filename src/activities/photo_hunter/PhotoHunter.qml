@@ -114,7 +114,8 @@ ActivityBase {
                                           qsTr("Click on the differences between the two images!")
                 color: "white"
                 onHeightChanged: {
-                    frame.problemTextHeight = problemText.height
+                    if (items.problem.z > 0)
+                        frame.problemTextHeight = problemText.height
                 }
             }
 
@@ -146,7 +147,7 @@ ActivityBase {
 
                     verticalCenter: parent.verticalCenter
                     verticalCenterOffset: background.startedHelp ?  background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
-                                                                    background.vert ? - frame.problemTextHeight * 0.5 - img1.height * 0.5 - 5 : 0
+                                                                    background.vert ? - frame.problemTextHeight * 0.5 - img1.height * 0.5 - 5 : - frame.problemTextHeight * 0.5
                 }
             }
 
@@ -161,7 +162,7 @@ ActivityBase {
 
                     verticalCenter: parent.verticalCenter
                     verticalCenterOffset: background.startedHelp ? background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
-                                                                   background.vert ? - frame.problemTextHeight * 0.5 + img1.height * 0.5 + 5 : 0
+                                                                   background.vert ? - frame.problemTextHeight * 0.5 + img1.height * 0.5 + 5 : - frame.problemTextHeight * 0.5
                 }
             }
 
@@ -267,7 +268,6 @@ ActivityBase {
                         Activity.hideProblem()
                         frame.problemTextHeight = 0
                     }
-
 
                     slider.value = 0
                 }
