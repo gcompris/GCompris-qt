@@ -37,6 +37,7 @@ color_mix_light
 colors
 crane
 details
+digital_electricity
 drawletters
 drawnumbers
 enumerate
