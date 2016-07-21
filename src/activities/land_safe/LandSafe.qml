@@ -671,9 +671,6 @@ ActivityBase {
             onIntroDone: {
                 items.world.running = true;
             }
-            intro: [
-                Activity.introText1
-            ]
             z: 20
             anchors {
                 top: parent.top
