@@ -1,8 +1,30 @@
+/* GCompris - guesscount-summer.qml
+ *
+ * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
+ *
+ * Authors:
+ *   <Pascal Georges> (GTK+ version)
+ *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
 import QtQuick 2.1
 import "../../core"
 import "guesscount-summer.js" as Activity
 
-Row{
+Row {
     id: operation_row
     spacing: 40
     property alias end_result: end_result
@@ -14,7 +36,7 @@ Row{
     property bool complete: false
     property bool prev_complete
     property bool reparent
-    Component{
+    Component {
         id: component1
         DropTile {
             id: operand1
@@ -38,7 +60,7 @@ Row{
             }
         }
     }
-    Component{
+    Component {
         id:component2
         Rectangle {
             id: prev_result
@@ -48,7 +70,7 @@ Row{
             border.color: "black"
             property alias dropped_item: tile
             property int count: operation_row.prev_complete ? 1 : 0
-            GCText{
+            GCText {
                 id: tile
                 property int datavalue: Number(tile.text)
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -60,7 +82,7 @@ Row{
         }
     }
 
-    Loader{
+    Loader {
         id: loader
         sourceComponent: row_no ? component2 : component1
     }
@@ -161,6 +183,5 @@ Row{
             operator.dropped_item.parent=operator.dropped_item.reparent
             operand2.dropped_item.parent=operand2.dropped_item.reparent
         }
-
     }
 }

@@ -36,7 +36,7 @@ Item {
         height: parent.height
         anchors.centerIn: parent
         drag.target: tile
-        onReleased:{
+        onReleased: {
             parent = tile.Drag.target !== null ? tile.Drag.target : root
             tile.Drag.drop()
         }
@@ -53,7 +53,7 @@ Item {
             Drag.active: mouseArea.drag.active
             Drag.hotSpot.x: parent.width/2
             Drag.hotSpot.y: parent.height/2
-            GCText{
+            GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 text: modelData
