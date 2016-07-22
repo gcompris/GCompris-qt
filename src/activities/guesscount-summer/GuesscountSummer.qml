@@ -1,10 +1,10 @@
 /* GCompris - guesscount-summer.qml
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   <Pascal Georges> (GTK+ version)
+ *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -54,6 +54,7 @@ ActivityBase {
             property  var data
             property int result: data[sublevel-1][1]
             property alias timer: timer
+            property alias dialog: dialog
             property GCAudio audioEffects: activity.audioEffects
             property bool solved
         }
@@ -137,7 +138,7 @@ ActivityBase {
                     reparent: items.solved
                 }
             }
-            }
+        }
 
         DialogHelp {
             id: dialogHelp
@@ -169,6 +170,24 @@ ActivityBase {
                 {
                     Activity.next_sublevel()
                 }
+            }
+        }
+        Rectangle {
+            id: dialog
+            width: parent.width*0.49
+            height: parent.height/8
+            visible: false
+            color: "steelblue"
+            radius: 30
+            anchors.centerIn: parent
+            GCText{
+                anchors.centerIn: parent
+                fontSize: mediumSize
+                text: qsTr("result is not an integer")
+            }
+            onVisibleChanged:SequentialAnimation{
+                PropertyAnimation { target: dialog; property: "opacity";from : 1 ; to: 0 ;duration: 3000 }
+                PropertyAnimation { target: dialog; property: "visible";to: false }
             }
         }
     }

@@ -21,15 +21,15 @@ ActivityInfo {
   name: "guesscount-summer/GuesscountSummer.qml"
   difficulty: 1
   icon: "guesscount-summer/guesscount-summer.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
   demo: true
-  title: "GuesscountSummer activity"
-  description: ""
-  //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
+  title: qsTr("Guessing the algebraic expression for the answer")
+  description:qsTr("guess the algebraic expression and click on the buttons to add them.")
+  //intro: "guesscount activity"
+  goal: qsTr("To teach algebra")
+  prerequisite: qsTr("knowledge of arithematic oprations")
   manual: ""
   credit: ""
   section: "math"
-  createdInVersion: 6000
+  createdInVersion:6000
 }

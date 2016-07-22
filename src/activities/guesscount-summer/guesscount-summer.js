@@ -33,8 +33,7 @@ var dataset = [
             [
                 [[1,2],3],
                 [[3,1],4],
-                [[3,4],7],
-                [[4,6],10]
+
             ],
             [
                 [[1,2],2],
@@ -73,7 +72,6 @@ function initLevel() {
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.data=dataset[currentLevel]
-    items.solved=false
     //console.log(items.result)
 }
 function next_sublevel() {
@@ -99,24 +97,33 @@ function previousLevel() {
 
 function calculate(operand1,operator,operand2,operation_row)
 {
+    var result
     switch (operator) {
     case "+":
-        operation_row.row_result = operand1+operand2
-        console.log(operation_row.row_result)
+        result = operand1+operand2
+        console.log(result)
         break;
     case "-":
-        operation_row.row_result = operand1-operand2
-        console.log(operation_row.row_result)
+        result = operand1-operand2
+        console.log(result)
         break;
     case "/":
-        operation_row.row_result = operand1/operand2
-        console.log(operation_row.row_result)
+        result = operand1/operand2
+        console.log(result)
         break;
     case "*":
         operation_row.row_result = operand1*operand2
-        console.log(operation_row.row_result)
+        console.log(result)
     }
-    operation_row.end_result.text=operation_row.row_result.toString()
+    if(Math.round(result) == result)
+    {
+        operation_row.row_result=result
+        operation_row.end_result.text=operation_row.row_result.toString()
+    }
+    else
+    {
+    items.dialog.visible=true
+    }
 
 }
 
@@ -148,6 +155,7 @@ function check_answer(row){
     {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
         items.timer.start()
+        //items.dialog.visible=true
     }
     else if(items.sublevel==dataset[currentLevel].length)
     {
