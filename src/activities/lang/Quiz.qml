@@ -274,7 +274,6 @@ Item {
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.top: parent.top
-            anchors.left: imageFrame.right
         }
 
         Bonus {
