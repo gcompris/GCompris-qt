@@ -60,6 +60,7 @@ Item {
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: Math.max(parent.width, parent.height)
         height: parent.height
+        anchors.fill: parent
 
         property bool keyNavigation: false
 
@@ -127,7 +128,7 @@ Item {
                         verticalCenter: parent.verticalCenter
                     }
                     source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-                    sourceSize.width: quiz.horizontalLayout ? parent.width * 0.7 : parent.height * 1.2
+                    sourceSize.width: quiz.horizontalLayout ? parent.width * 0.7 : quiz.width - repeatItem.width - score.width - 50 * ApplicationInfo.ratio
                     z: 11
                     visible: QuizActivity.mode !== 3
 
@@ -267,11 +268,13 @@ Item {
 
         Score {
             id: score
+            parent: quiz
             anchors.bottom: undefined
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.top: parent.top
+            anchors.left: imageFrame.right
         }
 
         Bonus {
