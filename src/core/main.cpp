@@ -159,10 +159,10 @@ int main(int argc, char *argv[])
                                        QObject::tr("Run GCompris without sound."));
     parser.addOption(clMute);
     QCommandLineOption clWithoutKioskMode(QStringList() << "disable-kioskmode",
-                                       QObject::tr("Disable the kiosk mode."));
+                                       QObject::tr("Disable the kiosk mode (default)."));
     parser.addOption(clWithoutKioskMode);
     QCommandLineOption clWithKioskMode(QStringList() << "enable-kioskmode",
-                                       QObject::tr("Enable the kiosk mode (default)."));
+                                       QObject::tr("Enable the kiosk mode."));
     parser.addOption(clWithKioskMode);
     parser.process(app);
 
