@@ -129,11 +129,9 @@ ActivityBase {
         id: background
         source: activity.url + "background.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
-        height: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard ?
-                main.height - (((keyboard.keyHeight+keyboard.rowSpacing) * keyboard.rows)+keyboard.margin)
-                :main.height
+        height: main.height
         fillMode: Image.PreserveAspectCrop
-        Timer{
+        Timer {
             // triggered once at startup to populate the keyboard
             id: keyboardFiller
             interval: 1000; running: true;
@@ -165,12 +163,17 @@ ActivityBase {
             }
         }
 
+        property int keyboardHeight: (keyboard.keyHeight+keyboard.rowSpacing) * keyboard.rows + keyboard.margin
         // Filters
         property bool horizontal: main.width > main.height
-        property int sectionIconWidth:
-            horizontal ?
-                Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1)) :
-                Math.min(100 * ApplicationInfo.ratio, (background.height - bar.height) / (sections.length + 1))
+        property int sectionIconWidth: {
+            if(horizontal)
+                return  Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))
+            else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
+                return Math.min(100 * ApplicationInfo.ratio, (background.height - (bar.height+keyboardHeight)) / (sections.length + 1))
+            else
+                return Math.min(100 * ApplicationInfo.ratio, (background.height - bar.height) / (sections.length + 1))
+        }
         property int sectionIconHeight: sectionIconWidth
         property int sectionCellWidth: sectionIconWidth * 1.1
         property int sectionCellHeight: sectionIconHeight * 1.1
@@ -211,11 +214,12 @@ ActivityBase {
             model: sections
             width: horizontal ? main.width : sectionCellWidth
             height: {
-               if(currentTag === "search") {
-                   return horizontal ? sectionCellHeight : background.height - bar.height
-               }
+               if(horizontal)
+                   return  sectionCellHeight
+               else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
+                   return sectionCellHeight * (sections.length+1)
                else
-                   return horizontal ? (sectionCellHeight) : main.height - bar.height
+                   return main.height - bar.height
             }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
@@ -553,6 +557,7 @@ ActivityBase {
 
                 placeholderText: qsTr("Search specific activities")
                 onTextChanged: {
+                    activity.inputText = input.text
                     ActivityInfoTree.filterBySearch(input.text);
                 }
             }
@@ -562,9 +567,9 @@ ActivityBase {
             id: keyboard
             readonly property var letter: ActivityInfoTree.characters
             property int rows;
-            width: parent.width//horizontal ? main.width : parent.width - (section.width +10)
+            width: parent.width
             visible: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
-            anchors.top: parent.bottom
+            anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             onKeypress: {
                 if(text == keyboard.backspace) {
@@ -619,16 +624,18 @@ ActivityBase {
                 value: help | config | about | (ApplicationInfo.isMobile ? 0 : exit)
             }
             anchors.bottom: keyboard.visible ? keyboard.top : parent.bottom
-
             onAboutClicked: {
+                input.focus = false
                 displayDialog(dialogAbout)
             }
 
             onHelpClicked: {
+                input.focus = false
                 displayDialog(dialogHelp)
             }
 
             onConfigClicked: {
+                input.focus = false
                 dialogActivityConfig.active = true
                 dialogActivityConfig.loader.item.loadFromConfig()
                 displayDialog(dialogActivityConfig)
