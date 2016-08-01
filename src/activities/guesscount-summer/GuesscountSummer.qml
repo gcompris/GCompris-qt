@@ -127,8 +127,8 @@ ActivityBase {
                 model: items.operand_row.repeater.model.length-1
                 delegate: Operation_row{
                     id: operation_row
-                    width: parent.width
-                    height: parent.height/10
+                    width: background.width
+                    height: background.height/10
                     property alias operation_row: operation_row
                     no_of_rows: items.operand_row.repeater.model.length-1
                     row_no: modelData
