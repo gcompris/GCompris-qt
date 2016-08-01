@@ -42,13 +42,13 @@ var dataset = [
                 [[4,6],24]
             ],
             [
-                [[4,2],2],
+                [[4,2],8],
                 [[6,6],1],
                 [[20,5],4],
                 [[4,1],13]
             ],
             [
-                [[4,2,3],2],
+                [[4,2,3],20],
                 [[6,4,2],1],
                 [[20,5,3],12],
                 [[4,2,2,3],2]
@@ -72,7 +72,6 @@ function initLevel() {
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.data=dataset[currentLevel]
-    //console.log(items.result)
 }
 function next_sublevel() {
     items.sublevel += 1
@@ -112,10 +111,10 @@ function calculate(operand1,operator,operand2,operation_row)
         console.log(result)
         break;
     case "*":
-        operation_row.row_result = operand1*operand2
+        result = operand1*operand2
         console.log(result)
     }
-    if(Math.round(result) == result)
+    if(Math.round(result)-result==0)
     {
         operation_row.row_result=result
         operation_row.end_result.text=operation_row.row_result.toString()
