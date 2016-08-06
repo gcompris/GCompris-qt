@@ -252,7 +252,7 @@ function initLevel() {
     numberOfSecondPieces = 0
     items.firstPieceNumberCount = numberOfPieces
     items.secondPieceNumberCount = numberOfPieces
-    items.instructionTxt = qsTr("Place a Piece")
+    items.instructionTxt = qsTr("Place a piece")
     depthMax = 2
 
     // Clear first and second player pieces, and initialize dragPoints
@@ -284,7 +284,6 @@ function initLevel() {
 }
 
 function tutorial() {
-
     items.isTutorial = true
     setTutorial(1)
 }
@@ -292,7 +291,7 @@ function tutorial() {
 function setTutorial(tutNum) {
 
     if(tutNum == 1) {
-        items.tutorialTxt = qsTr("You and Tux starts with 9 pieces each, and take turns to place " +
+        items.tutorialTxt = qsTr("You and Tux start with 9 pieces each, and take turns to place " +
                                  "your pieces on to the empty spots (by clicking on the spots) on the board.")
     }
     else if(tutNum == 2) {
@@ -323,13 +322,11 @@ function tutorialPrevious() {
 }
 
 function tutorialSkip() {
-
     items.isTutorial = false
     initLevel()
 }
 
 function nextLevel() {
-
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 1
     }
@@ -337,7 +334,6 @@ function nextLevel() {
 }
 
 function previousLevel() {
-
     if(--currentLevel < 1) {
         currentLevel = numberOfLevel - 1
     }
@@ -345,7 +341,6 @@ function previousLevel() {
 }
 
 function reset() {
-
     stopper = true
     stopAnimations()
     items.player1image.rotation = 0
@@ -355,7 +350,6 @@ function reset() {
 }
 
 function stopAnimations() {
-
     items.player1turn.stop()
     items.player2turn.stop()
     items.player1shrink.stop()
@@ -366,7 +360,6 @@ function stopAnimations() {
 
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer1() {
-
     items.changeScalePlayer1.scale = 1.4
     items.changeScalePlayer2.scale = 1.0
     items.player1.state = "first"
@@ -385,7 +378,6 @@ function initiatePlayer1() {
 
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer2() {
-
     items.changeScalePlayer1.scale = 1.0
     items.changeScalePlayer2.scale = 1.4
     items.player1.state = "second"
@@ -404,7 +396,6 @@ function initiatePlayer2() {
 
 //Change scale of score boxes according to turns
 function changeScale() {
-
    if(items.playSecond) {
         if(items.turn % 2 == 0)
             items.player2turn.start()
@@ -421,7 +412,6 @@ function changeScale() {
 
 //Create the piece at given position
 function handleCreate(index) {
-
     items.pieceBeingMoved = true
     currentPiece = currentRepeater.itemAt(items.turn/2)
     if(currentPiece.state == "2") {
@@ -436,18 +426,16 @@ function handleCreate(index) {
 }
 
 function secondPhase() {
-
     items.firstPhase = false
     for (var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state != "1" && items.dragPoints.itemAt(i).state != "2")
             items.dragPoints.itemAt(i).state = "EMPTY"
     }
 
-    items.instructionTxt = qsTr("Move a Piece")
+    items.instructionTxt = qsTr("Move a piece")
 }
 
 function pieceSelected(pieceIndex) {
-
     currentPiece.isSelected = false
     currentPiece = currentRepeater.itemAt(pieceIndex)
     currentPiece.isSelected = true
@@ -490,7 +478,6 @@ function pieceSelected(pieceIndex) {
 }
 
 function movePiece(index) {
-
     items.pieceBeingMoved = true
     currentPiece.parent.state = "EMPTY"
     currentPiece.isSelected = false
@@ -502,7 +489,6 @@ function movePiece(index) {
 }
 
 function shouldComputerPlay() {
-
     if(!twoPlayer) {
         if(items.turn % 2 && items.playSecond == false && stopper == false)
             doMove()
@@ -516,7 +502,6 @@ function shouldComputerPlay() {
 }
 
 function doMove() {
-
     if(items.firstPhase) {
         if(currentLevel < 5)
             var index = setFirstPhaseMove()
@@ -549,7 +534,6 @@ function doMove() {
 }
 
 function setFirstPhaseMove() {
-
     //Assigning States -> State "1" or "2" is used for identifying player and computer
     var playerState = items.playSecond ? "2" : "1"
     var computerState = items.playSecond ? "1" : "2"
@@ -576,7 +560,6 @@ function setFirstPhaseMove() {
 }
 
 function evaluateBoard(state) {
-
     for(var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state == "EMPTY" || items.dragPoints.itemAt(i).state == "AVAILABLE") {
             if(checkMill(i,state))
@@ -587,7 +570,6 @@ function evaluateBoard(state) {
 }
 
 function setSecondPhaseMove() {
-
     var index = []
     var found = false
 
@@ -853,6 +835,7 @@ function checkMillThirdPhase(index, state) {
             }
         }
     }
+
     if(dragPoint.upperPoint && dragPoint.upperPoint.upperPoint) {
         if(state == dragPoint.upperPoint.state && state == dragPoint.upperPoint.upperPoint.state) {
             for(var i = 0 ; i < numberOfPieces ; ++i) {
@@ -909,11 +892,10 @@ function checkMillThirdPhase(index, state) {
 // continueGame() called by Piece when its animation stops and checkMill(piece) is false or
 // called after removePiece(index) has removed a piece
 function continueGame() {
-
-    items.turn++
+    items.turn ++
     if(items.turn == (2 * numberOfPieces) && items.firstPhase) {
         secondPhase()
-        items.turn--
+        items.turn --
         checkGameWon()
         return
     }
@@ -959,8 +941,8 @@ function checkMill(index, state, position) {
     }
 }
 
-// UpdateRemovablePiece called by Piece when its animation stops and checkMill(piece) is true
-function UpdateRemovablePiece() {
+// updateRemovablePiece called by Piece when its animation stops and checkMill(piece) is true
+function updateRemovablePiece() {
 
     if(twoPlayer || ((items.turn % 2) && items.playSecond) || (!(items.turn % 2) && !items.playSecond)) {
         var foundOne = false
@@ -979,7 +961,7 @@ function UpdateRemovablePiece() {
                     otherRepeater.itemAt(i).canBeRemoved = true
             }
         }
-        items.instructionTxt = qsTr("Remove a Piece")
+        items.instructionTxt = qsTr("Remove a piece")
     }
     else if(currentLevel < 5) {
         if(items.firstPhase)
@@ -1091,7 +1073,6 @@ function checkRemovedIndex(state,first,second,permittedIndex) {
 }
 
 function getSecondPhaseRemoveIndex() {
-
     var permittedIndex = [];
     for(var i = 0 ; i < numberOfPieces ; ++i) {
         var piece = otherRepeater.itemAt(i)
@@ -1141,15 +1122,14 @@ function getSecondPhaseRemoveIndex() {
 
 // removePiece(index) called by Piece when items.pieceBeingRemoved is true
 function removePiece(index) {
-
     otherRepeater.itemAt(index).visible = false
     // Decrease number of pieces of other player by 1
     if(items.turn % 2)
-        numberOfFirstPieces--
+        numberOfFirstPieces --
     else
-        numberOfSecondPieces--
+        numberOfSecondPieces --
     if(items.firstPhase) {
-        items.instructionTxt = qsTr("Place a Piece")
+        items.instructionTxt = qsTr("Place a piece")
         continueGame()
     }
     else
@@ -1157,14 +1137,12 @@ function removePiece(index) {
 }
 
 function removePieceSelected(index) {
-
     otherRepeater.itemAt(index).parent.state = items.firstPhase ? "AVAILABLE" : "EMPTY"
     for(var i = 0 ; i < numberOfPieces ; ++i)
         otherRepeater.itemAt(i).canBeRemoved = false
 }
 
 function checkGameWon() {
-
     // Check if other player can mover or not
     var flag = true;
     for (var i = 0 ; i < numberOfPieces ; ++i) {
@@ -1204,32 +1182,31 @@ function checkGameWon() {
             items.bonus.isWin = false
         }
         else {
-            items.instructionTxt = qsTr("Try Again")
+            items.instructionTxt = qsTr("Try again")
             items.bonus.bad("tux")
         }
     }
     else {
         // Continue the game
-        items.instructionTxt = qsTr("Move a Piece")
+        items.instructionTxt = qsTr("Move a piece")
         continueGame()
     }
 }
 
 function getBoard() {
-
     var board = []
     for (var i = 0 ; i < numberOfDragPoints ; ++i) {
         if(items.dragPoints.itemAt(i).state == "1") {
-            if(!items.playSecond)
-                board.push(1)
-            else
+            if(items.playSecond)
                 board.push(2)
+            else
+                board.push(1)
         }
         else if(items.dragPoints.itemAt(i).state == "2") {
-            if(!items.playSecond)
-                board.push(2)
-            else
+            if(items.playSecond)
                 board.push(1)
+            else
+                board.push(2)
         }
         else
             board.push(0)
@@ -1607,40 +1584,37 @@ function getValue(board, firstPhase, player) {
 }
 
 function getNumberOfPieces(board, state) {
-
     var no = 0
-    for (var i = 0 ; i < numberOfDragPoints ; ++i) {
+    for (var i = 0 ; i < numberOfDragPoints ; ++ i) {
             if (board[i] == state)
-                no++
+                no ++
     }
     return no
 }
 
 function positionAchievable(board, index, noOfBoardPieces, firstPhase) {
-
     var positions = 0
     if(noOfBoardPieces == 3 && !firstPhase) {
-        for (var i = 0 ; i < numberOfDragPoints ; ++i) {
+        for (var i = 0 ; i < numberOfDragPoints ; ++ i) {
             if (board[i] == 0)
-                positions++
+                positions ++
         }
     }
     else {
         var point = items.dragPoints.itemAt(index)
         if(point.leftPoint && board[point.leftPoint.index] == 0)
-            positions++
+            positions ++
         if(point.rightPoint && board[point.rightPoint.index] == 0)
-            positions++
+            positions ++
         if(point.upperPoint && board[point.upperPoint.index] == 0)
-            positions++
+            positions ++
         if(point.lowerPoint && board[point.lowerPoint.index] == 0)
-            positions++
+            positions ++
     }
     return positions
 }
 
 function positionReachable(board, index, state, firstPhase, noOfBoardPieces) {
-
     if(noOfBoardPieces == 3 || firstPhase)
         return true
     else {
@@ -1658,7 +1632,6 @@ function positionReachable(board, index, state, firstPhase, noOfBoardPieces) {
 }
 
 function checkMillBoard(board, index, millsIndex) {
-
     var point = items.dragPoints.itemAt(index)
     var state = board[index]
     var mills = 0
@@ -1667,37 +1640,37 @@ function checkMillBoard(board, index, millsIndex) {
 
     if(point.leftPoint && point.leftPoint.leftPoint && state == board[point.leftPoint.index]
        && state == board[point.leftPoint.leftPoint.index]) {
-        mills++
+        mills ++
         millsIndex.push(point.leftPoint.index)
         millsIndex.push(point.leftPoint.leftPoint.index)
     }
     if(point.upperPoint && point.upperPoint.upperPoint && state == board[point.upperPoint.index]
        && state == board[point.upperPoint.upperPoint.index]) {
-        mills++
+        mills ++
         millsIndex.push(point.upperPoint.index)
         millsIndex.push(point.upperPoint.upperPoint.index)
     }
     if(point.rightPoint && point.rightPoint.rightPoint && state == board[point.rightPoint.index]
        && state == board[point.rightPoint.rightPoint.index]) {
-        mills++
+        mills ++
         millsIndex.push(point.rightPoint.index)
         millsIndex.push(point.rightPoint.rightPoint.index)
     }
     if(point.lowerPoint && point.lowerPoint.lowerPoint && state == board[point.lowerPoint.index]
        && state == board[point.lowerPoint.lowerPoint.index]) {
-        mills++
+        mills ++
         millsIndex.push(point.lowerPoint.index)
         millsIndex.push(point.lowerPoint.lowerPoint.index)
     }
     if(point.lowerPoint && point.upperPoint && state == board[point.lowerPoint.index]
        && state == board[point.upperPoint.index]) {
-        mills++
+        mills ++
         millsIndex.push(point.lowerPoint.index)
         millsIndex.push(point.upperPoint.index)
     }
     if(point.leftPoint && point.rightPoint && state == board[point.leftPoint.index]
        && state == board[point.rightPoint.index]) {
-        mills++
+        mills ++
         millsIndex.push(point.rightPoint.index)
         millsIndex.push(point.leftPoint.index)
     }

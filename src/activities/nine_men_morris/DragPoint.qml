@@ -47,21 +47,21 @@ Rectangle {
     states: [
         State {
             name: "AVAILABLE" // Green color
-            PropertyChanges{
+            PropertyChanges {
                 target: dragPoint
                 color: "#00ff00"
             }
         },
         State {
             name: "UNAVAILABLE"
-            PropertyChanges{
+            PropertyChanges {
                 target: dragPoint
-                color: "Red"
+                color: "#ff0000"
             }
         },
         State {
             name: "EMPTY" // Brown color
-            PropertyChanges{
+            PropertyChanges {
                 target: dragPoint
                 color: "#803300"
             }
@@ -70,14 +70,14 @@ Rectangle {
             name: "1"
             PropertyChanges {
                 target: dragPoint
-                color: "Red"
+                color: "#ff0000"
             }
         },
         State {
             name: "2"
             PropertyChanges {
                 target: dragPoint
-                color: "Red"
+                color: "#ff0000"
             }
         }
     ]

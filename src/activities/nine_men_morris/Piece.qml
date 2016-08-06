@@ -66,7 +66,7 @@ Image {
             piece.parent.state = piece.state
             piece.parent.pieceIndex = index
             if (Activity.checkMill(piece.parentIndex,piece.state))
-                Activity.UpdateRemovablePiece()
+                Activity.updateRemovablePiece()
             else if (firstPhase)
                 Activity.continueGame()
             else
@@ -80,14 +80,14 @@ Image {
         property: "opacity"
         to: 0
         duration: 430
-        onStarted: {Activity.removePieceSelected(index)}
-        onStopped: {Activity.removePiece(index)}
+        onStarted: { Activity.removePieceSelected(index) }
+        onStopped: { Activity.removePiece(index) }
     }
 
     states: [
         State {
             name: "1" // Player 1
-            PropertyChanges{
+            PropertyChanges {
                 target: piece
                 source: playSecond ? Activity.url + "black_piece.svg" : Activity.url + "white_piece.svg"
             }

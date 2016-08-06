@@ -610,7 +610,7 @@ ActivityBase {
             width: Math.min(implicitWidth, 0.8 * parent.width )
             height: implicitHeight
             visible: items.isTutorial
-            text: qsTr("Skip Tutorial")
+            text: qsTr("Skip tutorial")
             z: 2
         }
 
