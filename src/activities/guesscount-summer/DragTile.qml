@@ -32,8 +32,8 @@ Item {
         property alias tile: tile
         property alias datavalue: tile.datavalue
         property alias reparent: root
-        width: parent.width
-        height: parent.height
+        width: root.width
+        height: root.height
         anchors.centerIn: parent
         drag.target: tile
         onReleased: {

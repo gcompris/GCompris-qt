@@ -176,12 +176,18 @@ Row {
         console.log('reparent   1')
         if(operation_row.reparent)
         {
-            if(row_no==0)
-            {
-                loader.children[0].dropped_item.parent=loader.children[0].dropped_item.reparent
+            //console.log(loader.children[0].count)
+            if(loader.children[0]){
+            if(loader.children[0].count!=0 && row_no==0){
+                    loader.children[0].dropped_item.parent=loader.children[0].dropped_item.reparent
             }
-            operator.dropped_item.parent=operator.dropped_item.reparent
-            operand2.dropped_item.parent=operand2.dropped_item.reparent
+            }
+            if(operator.count!=0){
+                operator.dropped_item.parent=operator.dropped_item.reparent
+            }
+            if(operand2.count!=0){
+                operand2.dropped_item.parent=operand2.dropped_item.reparent
+            }
         }
     }
 }
