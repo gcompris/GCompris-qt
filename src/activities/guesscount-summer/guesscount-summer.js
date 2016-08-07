@@ -45,7 +45,7 @@ var dataset = [
                 [[4,2],8],
                 [[6,6],1],
                 [[20,5],4],
-                [[4,1],13]
+                [[4,1],4]
             ],
             [
                 [[4,2,3],20],
@@ -72,6 +72,7 @@ function initLevel() {
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.data=dataset[currentLevel]
+    items.levelchanged=false
 }
 function next_sublevel() {
     items.sublevel += 1
@@ -162,4 +163,6 @@ function check_answer(row){
         items.bonus.good("smiley")
     }
 }
+
+
 

@@ -57,6 +57,7 @@ ActivityBase {
             property alias dialog: dialog
             property GCAudio audioEffects: activity.audioEffects
             property bool solved
+            property bool levelchanged : false
         }
 
         onStart: { Activity.start(items) }
@@ -135,7 +136,7 @@ ActivityBase {
                     guesscount: items.result
                     prev_result: modelData ? repeat.itemAt(modelData-1).row_result : -1
                     prev_complete: modelData ? repeat.itemAt(modelData-1).complete : false
-                    reparent: items.solved
+                    reparent: items.solved || items.levelchanged
                 }
             }
         }
@@ -151,8 +152,14 @@ ActivityBase {
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onPreviousLevelClicked: {
+                items.levelchanged=true
+                Activity.previousLevel()
+            }
+            onNextLevelClicked: {
+                items.levelchanged=true
+                Activity.nextLevel()
+                }
             onHomeClicked: activity.home()
         }
 
