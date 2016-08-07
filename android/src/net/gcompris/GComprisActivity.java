@@ -91,8 +91,9 @@ public class GComprisActivity extends QtActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-
-        bindService(new Intent("com.android.vending.billing.InAppBillingService.BIND"),
+        Intent intent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
+        intent.setPackage("com.android.vending");
+        bindService(intent,
                     m_serviceConnection, Context.BIND_AUTO_CREATE);
     }
 
