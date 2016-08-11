@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Toncu Stefan <stefan.toncu29@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,9 +21,9 @@ ActivityInfo {
   name: "paint/Paint.qml"
   difficulty: 1
   icon: "paint/paint.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
-  title: "Tuxpaint"
+  title: "TuxPaint"
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: ""
@@ -31,4 +31,5 @@ ActivityInfo {
   manual: ""
   credit: ""
   section: "fun"
+  createdInVersion: 7000
 }
