@@ -26,8 +26,6 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 // TODO1: undo/redo
 
-// TODO2: add size to Text Tool
-
 // TODO: (optional): Shape creator: press on the canvas to draw lines; at the end, press on the starting point to create a shape
 
 ActivityBase {
@@ -1118,6 +1116,9 @@ ActivityBase {
                                     } else {
                                         items.paintColor = color
                                     }
+
+                                    timer.index = 0
+                                    timer.start()
                                 }
                             }
                         }
@@ -1340,14 +1341,21 @@ ActivityBase {
 
                             brushContext.clip()  // create clip from triangle path
 
-                            if (items.patternType == "dot.jpg")
-                                Activity.getPattern(1)
-                            if (items.patternType == "pattern2.png")
-                                Activity.getPattern2(1)
-                            if (items.patternType == "pattern3")
-                                Activity.getPattern3(1)
+                            if (items.toolSelected == "pattern") {
+                                if (items.patternType == "dot.jpg")
+                                    Activity.getPattern(1)
+                                if (items.patternType == "pattern2.png")
+                                    Activity.getPattern2(1)
+                                if (items.patternType == "pattern3")
+                                    Activity.getPattern3(1)
 
-                            brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), 'repeat')
+                                brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), 'repeat')
+                            } else if (items.toolSelected == "pencil") {
+                                brushContext.fillStyle = items.paintColor
+                            } else {
+                                brushContext.fillStyle = items.paintColor
+                            }
+
                             brushContext.fillRect(0, 0, 500,500)
 
                             brushContext.restore()
