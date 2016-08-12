@@ -484,6 +484,7 @@ ActivityBase {
 //                        print("items.toool         -------------             ",items.toolSelected)
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
                             removeShadow()
+                            print("pencil")
                             canvas.ctx.lineWidth = items.toolSelected == "eraser" ? items.sizeS * 4 : items.sizeS
                             canvas.ctx.lineCap = 'round'
                             canvas.ctx.lineJoin = 'round'
@@ -496,7 +497,9 @@ ActivityBase {
                             ctx.stroke()
                         } else if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
                             removeShadow()
+                            print("rectangle")
                             var itemm = area.currentShape
+//                            canvas.ctx = getContext("2d")
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.beginPath()
                             canvas.ctx.moveTo(itemm.x,itemm.y)
@@ -508,6 +511,8 @@ ActivityBase {
                             resetShape()
                         } else if (items.toolSelected == "circle") {
                             removeShadow()
+                            print("circle")
+
                             var itemm = area.currentShape
                             canvas.ctx = canvas.getContext('2d')
 
@@ -519,11 +524,14 @@ ActivityBase {
                             resetShape()
                         } else if (items.toolSelected == "line") {
                             removeShadow()
+                            print("line")
+
                             var itemm = area.currentShape
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.beginPath()
 
                             var angleRad = (360 - area.currentShape.rotationn) * Math.PI / 180
+
                             var auxX = items.sizeS * Math.sin(angleRad)
                             var auxY = items.sizeS * Math.cos(angleRad)
 
@@ -537,6 +545,8 @@ ActivityBase {
                             resetShape()
                         } else if (items.toolSelected == "fill") {
                             removeShadow()
+                            print("fill")
+
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.beginPath()
                             canvas.ctx.moveTo(0, 0)
@@ -547,6 +557,8 @@ ActivityBase {
                             canvas.ctx.fill()
                         } else if (items.toolSelected == "text") {
                             removeShadow()
+                            print("text")
+
                             canvas.ctx.fillStyle = items.paintColor
 //                            canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
                             canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
@@ -554,6 +566,7 @@ ActivityBase {
                             onBoardText.text = ""
                         } else if (items.toolSelected == "tools" ) {
                             removeShadow()
+                            print("tools")
                             canvas.ctx.lineWidth = items.sizeS
                             ctx.lineJoin = ctx.lineCap = 'round'
 
@@ -576,6 +589,7 @@ ActivityBase {
                             ctx.stroke()
                         } else if (items.toolSelected == "brush2" ) {
                             removeShadow()
+                            print("brush2")
                             ctx.lineJoin = ctx.lineCap = 'round'
 
                             var dist = distanceBetween(lastPoint, currentPoint)
@@ -590,6 +604,7 @@ ActivityBase {
                             lastPoint = {x: currentPoint.x, y: currentPoint.y}
                         } else if (items.toolSelected == "pattern" ) {
                             removeShadow()
+                            print("pattern")
                             ctx.lineWidth = items.sizeS * 5
                             ctx.lineJoin = ctx.lineCap = 'round'
 
@@ -612,6 +627,7 @@ ActivityBase {
                             ctx.stroke();
                         } else if (items.toolSelected == "spray" ) {
                             removeShadow()
+                            print("spray")
                             ctx.lineWidth = items.sizeS * 5
                             ctx.lineJoin = ctx.lineCap = 'round'
                             ctx.moveTo(canvas.lastX, canvas.lastY)
@@ -625,6 +641,7 @@ ActivityBase {
                             }
                         } else if (items.toolSelected == "brush3" ) {
                             removeShadow()
+                            print("brush3")
                             ctx.lineWidth = items.sizeS * 1.2
                             ctx.lineJoin = ctx.lineCap = 'round';
 
@@ -655,6 +672,7 @@ ActivityBase {
 
                         } else if (items.toolSelected == "brush4"){
                             removeShadow()
+                            print("brush4")
                             ctx.lineJoin = ctx.lineCap = 'round'
                             ctx.fillStyle = items.paintColor
                             ctx.lineWidth = items.sizeS / 4
@@ -666,6 +684,7 @@ ActivityBase {
                             }
                         } else if (items.toolSelected == "brush5"){
                             removeShadow()
+                            print("brush5")
                             ctx.lineJoin = ctx.lineCap = 'round';
                             ctx.lineWidth = 1
 
@@ -704,11 +723,13 @@ ActivityBase {
                             }
                         } else if (items.toolSelected == "reset"){
                             removeShadow()
+                            print("reset")
                             items.toolSelected = "pencil"
                             items.paintColor = colors[0]
                         } else if (items.toolSelected == "blur"){
+                            print("blur")
                         } else {
-                            removeShadow()
+//                            removeShadow()
                             print("tool not known, resetting to Pencil")
                             items.toolSelected = "pencil"
                         }
@@ -1712,6 +1733,20 @@ ActivityBase {
                             onPressed: saveButton.opacity = 1
                             onReleased: saveButton.opacity = 0.6
                             onClicked: Activity.saveToFile(true)
+                        }
+                    }
+
+                    // save button
+                    Image {
+                        sourceSize.width: 48
+                        sourceSize.height: 48
+                        width: 48; height: 48
+                        source: Activity.url + "save.svg"
+                        opacity: 0.6
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: print("=================================:    " + canvas.toDataURL())
                         }
                     }
                 }
