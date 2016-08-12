@@ -38,6 +38,10 @@ Image {
             // make the hover over the canvas false
             area.hoverEnabled = false
 
+            // change the selectBrush tool
+            timer.index = 0
+            timer.start()
+
             click()
         }
     }
