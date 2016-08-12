@@ -25,7 +25,6 @@ import "paint.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 // TODO1: undo/redo
-
 // TODO: (optional): Shape creator: press on the canvas to draw lines; at the end, press on the starting point to create a shape
 
 ActivityBase {
@@ -137,30 +136,29 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias canvas: canvas
-
-            property int sizeS: 2
-            property color paintColor
-            property string toolSelected: "pencil"
             property alias colorTools: colorTools
             property alias rightPannel: rightPannel
+            property alias parser: parser
+            property alias gridView2: gridView2
+            property alias file: file
+            property alias shape: shape
+            property alias brushSelectCanvas: brushSelectCanvas
+            property color paintColor
             property var urlImage
             property bool next: false
             property bool next2: false
             property bool loadSavedImage: false
-            property alias file: file
             property bool initSave: false
-            property alias parser: parser
-            property alias gridView2: gridView2
+            property bool nothingChanged: true
+            property bool widthHeightChanged: false
             property bool mainAnimationOnX: true
             property bool undoRedo: false
+            property int sizeS: 2
             property int index: 0
-            property string patternType: "dot.jpg"
-            property bool nothingChanged: true
+            property string toolSelected: "pencil"
+            property string patternType: "dot"
             property string lastUrl
-            property bool widthHeightChanged: false
-            property alias shape: shape
             property string lastToolSelected: "pencil"
-            property alias brushSelectCanvas: brushSelectCanvas
         }
 
         JsonParser {
@@ -231,12 +229,6 @@ ActivityBase {
             inputText.text = ""
         }
 
-//        function changeSelectedCoord(object) {
-//            var modified = object.mapToItem(background,object.x,object.y)
-//            selected.x = modified.x - 1
-//            selected.y = object.y + 9 + colorTools.height + colorTools.anchors.margins  // + 9 because of the margins (10)
-//        }
-
         Rectangle {
             id: main
             width: parent.width
@@ -253,9 +245,6 @@ ActivityBase {
                     duration: 800
                     easing.type: Easing.InOutQuad
                 }
-//                PropertyAction {
-//                    target: main; property: "opacity"; value: main.x == - background.width ? 0 : 1
-//                }
             }
 
             Behavior on y {
@@ -266,15 +255,6 @@ ActivityBase {
                     easing.type: Easing.InOutQuad
                 }
             }
-
-
-//            Rectangle {
-//                id: selected
-//                color: "#ffb3ff"
-//                z: rightPannelFrame.z
-//                width: 50; height: 50
-//                opacity: 0.8
-//            }
 
             Rectangle {
                 id: inputTextFrame
@@ -348,7 +328,7 @@ ActivityBase {
                     property real lastY
 
 
-                    // for brush2
+                    // for brush
                     property var lastPoint
                     property var currentPoint
 
@@ -465,14 +445,16 @@ ActivityBase {
                     onPaint: {
 
                         if (items.toolSelected == "pattern") {
-                            if (items.patternType == "dot.jpg")
+                            if (items.patternType == "dot")
                                 Activity.getPattern()
-                            if (items.patternType == "pattern2.png")
+                            if (items.patternType == "horizLine")
                                 Activity.getPattern2()
-                            if (items.patternType == "pattern3")
+                            if (items.patternType == "vertLine")
                                 Activity.getPattern3()
                         }
 
+                        //                   |
+                        //TODO: remove this \|/
                         canvas.ctx = getContext('2d')
                         canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? "#ffffff" :
 //                                                 items.toolSelected == "pattern" ? ctx.createPattern(Activity.url + items.patternType, 'repeat') :
@@ -480,235 +462,35 @@ ActivityBase {
                                                  items.toolSelected == "brush4" ? "black" :
                                                                                          items.paintColor
 
-
-//                        print("items.toool         -------------             ",items.toolSelected)
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
-                            removeShadow()
-                            canvas.ctx.lineWidth = items.toolSelected == "eraser" ? items.sizeS * 4 : items.sizeS
-                            canvas.ctx.lineCap = 'round'
-                            canvas.ctx.lineJoin = 'round'
 
-                            canvas.ctx.beginPath()
-                            ctx.moveTo(lastX, lastY)
-                            lastX = area.mouseX
-                            lastY = area.mouseY
-                            ctx.lineTo(lastX, lastY)
-                            ctx.stroke()
                         } else if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
-                            removeShadow()
-                            var itemm = area.currentShape
-                            canvas.ctx.fillStyle = items.paintColor
-                            canvas.ctx.beginPath()
-                            canvas.ctx.moveTo(itemm.x,itemm.y)
-                            canvas.ctx.lineTo(itemm.x + itemm.width,itemm.y)
-                            canvas.ctx.lineTo(itemm.x + itemm.width,itemm.y + itemm.height)
-                            canvas.ctx.lineTo(itemm.x,itemm.y + itemm.height)
-                            canvas.ctx.closePath()
-                            canvas.ctx.fill()
-                            resetShape()
+
                         } else if (items.toolSelected == "circle") {
-                            removeShadow()
-                            var itemm = area.currentShape
-                            canvas.ctx = canvas.getContext('2d')
 
-                            canvas.ctx.beginPath();
-                            canvas.ctx.arc(itemm.x + itemm.width / 2, itemm.y + itemm.width / 2,
-                                           itemm.width / 2, 0, 2 * Math.PI, false);
-                            canvas.ctx.fillStyle = items.paintColor
-                            canvas.ctx.fill();
-                            resetShape()
                         } else if (items.toolSelected == "line") {
-                            removeShadow()
-                            var itemm = area.currentShape
-                            canvas.ctx.fillStyle = items.paintColor
-                            canvas.ctx.beginPath()
 
-                            var angleRad = (360 - area.currentShape.rotationn) * Math.PI / 180
-                            var auxX = items.sizeS * Math.sin(angleRad)
-                            var auxY = items.sizeS * Math.cos(angleRad)
-
-                            canvas.ctx.moveTo(itemm.x,itemm.y)
-                            canvas.ctx.lineTo(area.endX,area.endY)
-                            canvas.ctx.lineTo(area.endX + auxX,area.endY + auxY)
-                            canvas.ctx.lineTo(itemm.x + auxX,itemm.y + auxY)
-                            canvas.ctx.closePath()
-                            canvas.ctx.fill()
-
-                            resetShape()
                         } else if (items.toolSelected == "fill") {
-                            removeShadow()
-                            canvas.ctx.fillStyle = items.paintColor
-                            canvas.ctx.beginPath()
-                            canvas.ctx.moveTo(0, 0)
-                            canvas.ctx.lineTo(background.width, 0)
-                            canvas.ctx.lineTo(background.width, background.height)
-                            canvas.ctx.lineTo(0, background.height)
-                            canvas.ctx.closePath()
-                            canvas.ctx.fill()
+
                         } else if (items.toolSelected == "text") {
-                            removeShadow()
-                            canvas.ctx.fillStyle = items.paintColor
-//                            canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
-                            canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
-                            canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
-                            onBoardText.text = ""
+
                         } else if (items.toolSelected == "tools" ) {
-                            removeShadow()
-                            canvas.ctx.lineWidth = items.sizeS
-                            ctx.lineJoin = ctx.lineCap = 'round'
 
-                            var p1 = Activity.points[0]
-                            var p2 = Activity.points[1]
+                        } else if (items.toolSelected == "brush" ) {
 
-                            if (!p1 || !p2)
-                                return
-
-                            ctx.beginPath()
-                            ctx.moveTo(p1.x, p1.y)
-
-                            for (var i = 1, len = Activity.points.length; i < len; i++) {
-                              var midPoint = midPointBtw(p1, p2)
-                              ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y)
-                              p1 = Activity.points[i]
-                              p2 = Activity.points[i+1]
-                            }
-                            ctx.lineTo(p1.x, p1.y)
-                            ctx.stroke()
-                        } else if (items.toolSelected == "brush2" ) {
-                            removeShadow()
-                            ctx.lineJoin = ctx.lineCap = 'round'
-
-                            var dist = distanceBetween(lastPoint, currentPoint)
-                            var angle = angleBetween(lastPoint, currentPoint)
-
-                            for (var i = 0; i < dist; i++) {
-                                var xx = lastPoint.x + (Math.sin(angle) * i) - 25;
-                                var yy = lastPoint.y + (Math.cos(angle) * i) - 25;
-                                ctx.drawImage(Activity.url + "brush2.png", xx, yy, items.sizeS * 5, items.sizeS * 10);
-                            }
-
-                            lastPoint = {x: currentPoint.x, y: currentPoint.y}
                         } else if (items.toolSelected == "pattern" ) {
-                            removeShadow()
-                            ctx.lineWidth = items.sizeS * 5
-                            ctx.lineJoin = ctx.lineCap = 'round'
 
-                            var p1 = Activity.points[0]
-                            var p2 = Activity.points[1]
-
-                            if (!p1 || !p2)
-                                return
-
-                            ctx.beginPath()
-                            ctx.moveTo(p1.x, p1.y)
-
-                            for (var i = 1, len = Activity.points.length; i < len; i++) {
-                              var midPoint = midPointBtw(p1, p2);
-                              ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
-                              p1 = Activity.points[i];
-                              p2 = Activity.points[i+1];
-                            }
-                            ctx.lineTo(p1.x, p1.y);
-                            ctx.stroke();
                         } else if (items.toolSelected == "spray" ) {
-                            removeShadow()
-                            ctx.lineWidth = items.sizeS * 5
-                            ctx.lineJoin = ctx.lineCap = 'round'
-                            ctx.moveTo(canvas.lastX, canvas.lastY)
-                            ctx.fillStyle = items.paintColor
 
-                            for (var i = 50; i--; i >= 0) {
-                                var radius = items.sizeS * 5;
-                                var offsetX = getRandomInt(-radius, radius);
-                                var offsetY = getRandomInt(-radius, radius);
-                                ctx.fillRect(canvas.lastX + offsetX, canvas.lastY + offsetY, 1, 1);
-                            }
                         } else if (items.toolSelected == "brush3" ) {
-                            removeShadow()
-                            ctx.lineWidth = items.sizeS * 1.2
-                            ctx.lineJoin = ctx.lineCap = 'round';
-
-                            ctx.beginPath();
-
-                            ctx.globalAlpha = 1;
-                            ctx.moveTo(lastPoint.x, lastPoint.y);
-                            ctx.lineTo(canvas.lastX, canvas.lastY);
-                            ctx.stroke();
-
-                            ctx.moveTo(lastPoint.x - 3, lastPoint.y - 3);
-                            ctx.lineTo(canvas.lastX - 3, canvas.lastY - 3);
-                            ctx.stroke();
-
-                            ctx.moveTo(lastPoint.x - 2, lastPoint.y - 2);
-                            ctx.lineTo(canvas.lastX - 2, canvas.lastY - 2);
-                            ctx.stroke();
-
-                            ctx.moveTo(lastPoint.x + 2, lastPoint.y + 2);
-                            ctx.lineTo(canvas.lastX + 2, canvas.lastY + 2);
-                            ctx.stroke();
-
-                            ctx.moveTo(lastPoint.x + 3, lastPoint.y + 3);
-                            ctx.lineTo(canvas.lastX + 3, canvas.lastY + 3);
-                            ctx.stroke();
-
-                            lastPoint = { x: canvas.lastX, y: canvas.lastY };
 
                         } else if (items.toolSelected == "brush4"){
-                            removeShadow()
-                            ctx.lineJoin = ctx.lineCap = 'round'
-                            ctx.fillStyle = items.paintColor
-                            ctx.lineWidth = items.sizeS / 4
-                            for (var i = 0; i < Activity.points.length; i++) {
-                              ctx.beginPath();
-                              ctx.arc(Activity.points[i].x, Activity.points[i].y, 5 * items.sizeS, 0, Math.PI * 2, false);
-                              ctx.fill();
-                              ctx.stroke();
-                            }
+
                         } else if (items.toolSelected == "brush5"){
-                            removeShadow()
-                            ctx.lineJoin = ctx.lineCap = 'round';
-                            ctx.lineWidth = 1
 
-                            var p1 = Activity.connectedPoints[0]
-                            var p2 = Activity.connectedPoints[1]
-
-                            if (!p1 || !p2)
-                                return
-
-                            ctx.beginPath()
-                            ctx.moveTo(p1.x, p1.y)
-
-                            for (var i = 1, len = Activity.connectedPoints.length; i < len; i++) {
-                              var midPoint = midPointBtw(p1, p2)
-                              ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y)
-                              p1 = Activity.connectedPoints[i]
-                              p2 = Activity.connectedPoints[i+1]
-                            }
-                            ctx.lineTo(p1.x, p1.y)
-                            ctx.stroke()
-
-                            for (var i = 0; i < Activity.connectedPoints.length; i++) {
-                              var dx = Activity.connectedPoints[i].x - Activity.connectedPoints[Activity.connectedPoints.length-1].x;
-                              var dy = Activity.connectedPoints[i].y - Activity.connectedPoints[Activity.connectedPoints.length-1].y;
-                              var d = dx * dx + dy * dy;
-
-                              if (d < 1000) {
-                                ctx.beginPath();
-                                ctx.strokeStyle = 'rgba(0,0,0,0.8)';
-                                ctx.moveTo( Activity.connectedPoints[Activity.connectedPoints.length-1].x + (dx * 0.1),
-                                           Activity.connectedPoints[Activity.connectedPoints.length-1].y + (dy * 0.1));
-                                ctx.lineTo( Activity.connectedPoints[i].x - (dx * 0.1),
-                                           Activity.connectedPoints[i].y - (dy * 0.1));
-                                ctx.stroke();
-                              }
-                            }
-                        } else if (items.toolSelected == "reset"){
-                            removeShadow()
-                            items.toolSelected = "pencil"
-                            items.paintColor = colors[0]
                         } else if (items.toolSelected == "blur"){
+                            print("blur")
                         } else {
-                            removeShadow()
                             print("tool not known, resetting to Pencil")
                             items.toolSelected = "pencil"
                         }
@@ -717,7 +499,6 @@ ActivityBase {
                     MouseArea {
                         id: area
                         anchors.fill: parent
-
 
                         hoverEnabled: false
                         property var mappedMouse: mapToItem(parent,mouseX,mouseY)
@@ -778,7 +559,7 @@ ActivityBase {
                                 canvas.lastY = mouseY
                             } else if (items.toolSelected == "tools") {
                                 Activity.points.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "brush2") {
+                            } else if (items.toolSelected == "brush") {
                                 canvas.currentPoint = { x: mouseX, y: mouseY }
                                 canvas.lastPoint = { x: mouseX, y: mouseY }
                             } else if (items.toolSelected == "pattern") {
@@ -841,15 +622,73 @@ ActivityBase {
                             area.hoverEnabled = false
                             /////////  reset text elements
 
-                            if (items.toolSelected == "rectangle" || items.toolSelected == "circle" ||
-                                    items.toolSelected == "line" ||  items.toolSelected == "lineShift") {
-                                // paint the rectangle/circle
+                            if (items.toolSelected == "line" ) {
+                                canvas.removeShadow()
+                                print("line")
+
+                                canvas.ctx.fillStyle = items.paintColor
+                                canvas.ctx.beginPath()
+
+                                var angleRad = (360 - area.currentShape.rotationn) * Math.PI / 180
+
+                                var auxX = items.sizeS * Math.sin(angleRad)
+                                var auxY = items.sizeS * Math.cos(angleRad)
+
+                                canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
+                                canvas.ctx.lineTo(area.endX,area.endY)
+                                canvas.ctx.lineTo(area.endX + auxX,area.endY + auxY)
+                                canvas.ctx.lineTo(area.currentShape.x + auxX,area.currentShape.y + auxY)
+                                canvas.ctx.closePath()
+                                canvas.ctx.fill()
+
+                                canvas.resetShape()
                                 canvas.requestPaint()
                             }
 
-                            if (items.toolSelected == "text" && onBoardText.text != "")
+                            if (items.toolSelected == "circle") {
+                                canvas.removeShadow()
+                                print("circle")
+                                canvas.ctx = canvas.getContext('2d')
+                                canvas.ctx.beginPath();
+                                canvas.ctx.arc(area.currentShape.x + area.currentShape.width / 2,
+                                               area.currentShape.y + area.currentShape.width / 2,
+                                               area.currentShape.width / 2, 0, 2 * Math.PI, false);
+                                canvas.ctx.fillStyle = items.paintColor
+                                canvas.ctx.fill();
+                                canvas.resetShape()
                                 canvas.requestPaint()
 
+                            }
+
+                            if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
+                                canvas.removeShadow()
+                                print("rectangle")
+                                canvas.ctx.fillStyle = items.paintColor
+                                canvas.ctx.beginPath()
+                                canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
+                                canvas.ctx.lineTo(area.currentShape.x + area.currentShape.width,area.currentShape.y)
+                                canvas.ctx.lineTo(area.currentShape.x + area.currentShape.width,area.currentShape.y + area.currentShape.height)
+                                canvas.ctx.lineTo(area.currentShape.x,area.currentShape.y + area.currentShape.height)
+                                canvas.ctx.closePath()
+                                canvas.ctx.fill()
+                                canvas.resetShape()
+                                canvas.requestPaint()
+                            }
+
+                            if (items.toolSelected == "text" && onBoardText.text != "") {
+                                canvas.removeShadow()
+                                print("text")
+
+                                canvas.ctx.fillStyle = items.paintColor
+    //                            canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
+                                canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
+                                canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
+                                onBoardText.text = ""
+
+                                canvas.requestPaint()
+                            }
+
+                            // reset the "points" array
                             if (items.toolSelected == "tools" ||
                                     items.toolSelected == "pattern" ||
                                     items.toolSelected == "brush4")
@@ -883,10 +722,21 @@ ActivityBase {
 
                         onPositionChanged: {
                             if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
+                                canvas.removeShadow()
+                                canvas.ctx = canvas.getContext('2d')
+                                canvas.ctx.lineWidth = items.toolSelected == "eraser" ?
+                                            items.sizeS * 4 : items.sizeS
+                                canvas.ctx.lineCap = 'round'
+                                canvas.ctx.lineJoin = 'round'
+                                canvas.ctx.beginPath()
+                                canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
+                                canvas.lastX = area.mouseX
+                                canvas.lastY = area.mouseY
+                                canvas.ctx.lineTo(canvas.lastX, canvas.lastY)
+                                canvas.ctx.stroke()
+
                                 canvas.requestPaint()
                             } else if (items.toolSelected == "rectangle") {
-//                                currentShape.width = mappedMouse.x - currentShape.x
-//                                currentShape.height = mappedMouse.y - currentShape.y
                                 mappedMouse = mapToItem(parent,mouseX,mouseY)
                                 var width = mappedMouse.x - area.originalX
                                 var height = mappedMouse.y - area.originalY
@@ -912,7 +762,6 @@ ActivityBase {
                                     currentShape.height = Math.abs(height)
                                     currentShape.width = Math.abs(width)
                                 }
-//                                print(currentShape.height + "   " + currentShape.width)
                             } else if (items.toolSelected == "circle") {
                                 mappedMouse = mapToItem(parent,mouseX,mouseY)
                                 var width = mappedMouse.x - area.originalX
@@ -956,17 +805,12 @@ ActivityBase {
                                 var angleRad = Math.acos((p12 * p12 + p31 * p31 - p23 * p23) / (2 * p12 * p31))
                                 var angleDegrees
 
-                                if (height < 0) {
+                                if (height < 0)
                                     angleDegrees = angleRad * 180 / Math.PI
-//                                    print("===========================>  angleDegrees ", angleDegrees)
-                                } else {
-                                    angleDegrees = 360 - angleRad * 180 / Math.PI
-//                                    print("===========================>  angleDegrees ", angleDegrees)
-                                }
+                                else angleDegrees = 360 - angleRad * 180 / Math.PI
 
                                 currentShape.rotationn = 360 - angleDegrees
                                 currentShape.width = distance
-//                                print(currentShape.height + "   " + currentShape.width)
                             } else if (items.toolSelected == "lineShift") {
                                 mappedMouse = mapToItem(parent,mouseX,mouseY)
                                 var width = mappedMouse.x - area.originalX
@@ -991,29 +835,177 @@ ActivityBase {
                                     currentShape.height = Math.abs(height)
                                     currentShape.width = items.sizeS
                                 }
-//                                print(currentShape.height + "   " + currentShape.width)
                             } else if (items.toolSelected == "tools") {
+                                canvas.removeShadow()
                                 Activity.points.push({ x: mouseX, y: mouseY })
+                                canvas.ctx = canvas.getContext('2d')
+                                canvas.ctx.lineWidth = items.sizeS
+                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+
+                                var p1 = Activity.points[0]
+                                var p2 = Activity.points[1]
+
+                                if (!p1 || !p2)
+                                    return
+
+                                canvas.ctx.beginPath()
+                                canvas.ctx.moveTo(p1.x, p1.y)
+
+                                for (var i = 1, len = Activity.points.length; i < len; i++) {
+                                  var midPoint = canvas.midPointBtw(p1, p2)
+                                  canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y)
+                                  p1 = Activity.points[i]
+                                  p2 = Activity.points[i+1]
+                                }
+                                canvas.ctx.lineTo(p1.x, p1.y)
+                                canvas.ctx.stroke()
                                 canvas.requestPaint()
-                            } else if (items.toolSelected == "brush2") {
+                            } else if (items.toolSelected == "brush") {
                                 canvas.currentPoint = { x: mouseX, y: mouseY }
+                                canvas.removeShadow()
+                                canvas.ctx = canvas.getContext('2d')
+                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+
+                                var dist = canvas.distanceBetween(canvas.lastPoint, canvas.currentPoint)
+                                var angle = canvas.angleBetween(canvas.lastPoint, canvas.currentPoint)
+
+                                for (var i = 0; i < dist; i++) {
+                                    var xx = canvas.lastPoint.x + (Math.sin(angle) * i) - 25;
+                                    var yy = canvas.lastPoint.y + (Math.cos(angle) * i) - 25;
+                                    canvas.ctx.drawImage(Activity.url + "brush.png", xx, yy, items.sizeS * 5, items.sizeS * 10);
+                                }
+                                canvas.lastPoint = {x: canvas.currentPoint.x, y: canvas.currentPoint.y}
                                 canvas.requestPaint()
                             } else if (items.toolSelected == "pattern") {
+                                canvas.removeShadow()
                                 Activity.points.push({x: mouseX, y: mouseY})
+                                canvas.ctx = canvas.getContext('2d')
+                                canvas.ctx.lineWidth = items.sizeS * 5
+                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+
+                                var p1 = Activity.points[0]
+                                var p2 = Activity.points[1]
+
+                                if (!p1 || !p2)
+                                    return
+
+                                canvas.ctx.beginPath()
+                                canvas.ctx.moveTo(p1.x, p1.y)
+
+                                for (var i = 1, len = Activity.points.length; i < len; i++) {
+                                  var midPoint = canvas.midPointBtw(p1, p2);
+                                  canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
+                                  p1 = Activity.points[i];
+                                  p2 = Activity.points[i+1];
+                                }
+                                canvas.ctx.lineTo(p1.x, p1.y);
+                                canvas.ctx.stroke();
                                 canvas.requestPaint()
                             } else if (items.toolSelected == "spray" ) {
+                                canvas.removeShadow()
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
+                                canvas.ctx = canvas.getContext('2d')
+                                canvas.ctx.lineWidth = items.sizeS * 5
+                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+                                canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
+                                canvas.ctx.fillStyle = items.paintColor
+
+                                for (var i = 50; i--; i >= 0) {
+                                    var radius = items.sizeS * 5;
+                                    var offsetX = canvas.getRandomInt(-radius, radius);
+                                    var offsetY = canvas.getRandomInt(-radius, radius);
+                                    canvas.ctx.fillRect(canvas.lastX + offsetX, canvas.lastY + offsetY, 1, 1);
+                                }
+
                                 canvas.requestPaint()
                             } else if (items.toolSelected == "brush3" ) {
-                                canvas.requestPaint()
+                                canvas.removeShadow()
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
+                                print("brush3")
+                                canvas.ctx.lineWidth = items.sizeS * 1.2
+                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
+
+                                canvas.ctx.beginPath();
+
+                                canvas.ctx.globalAlpha = 1;
+                                canvas.ctx.moveTo(canvas.lastPoint.x, canvas.lastPoint.y);
+                                canvas.ctx.lineTo(canvas.lastX, canvas.lastY);
+                                canvas.ctx.stroke();
+
+                                canvas.ctx.moveTo(canvas.lastPoint.x - 3, canvas.lastPoint.y - 3);
+                                canvas.ctx.lineTo(canvas.lastX - 3, canvas.lastY - 3);
+                                canvas.ctx.stroke();
+
+                                canvas.ctx.moveTo(canvas.lastPoint.x - 2, canvas.lastPoint.y - 2);
+                                canvas.ctx.lineTo(canvas.lastX - 2, canvas.lastY - 2);
+                                canvas.ctx.stroke();
+
+                                canvas.ctx.moveTo(canvas.lastPoint.x + 2, canvas.lastPoint.y + 2);
+                                canvas.ctx.lineTo(canvas.lastX + 2, canvas.lastY + 2);
+                                canvas.ctx.stroke();
+
+                                canvas.ctx.moveTo(canvas.lastPoint.x + 3, canvas.lastPoint.y + 3);
+                                canvas.ctx.lineTo(canvas.lastX + 3, canvas.lastY + 3);
+                                canvas.ctx.stroke();
+
+                                canvas.lastPoint = { x: canvas.lastX, y: canvas.lastY };
+
+                                canvas.requestPaint()
                             } else if(items.toolSelected == "brush4" ) {
+                                canvas.removeShadow()
                                 Activity.points.push({x: mouseX, y: mouseY})
+                                print("brush4")
+                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+                                canvas.ctx.fillStyle = items.paintColor
+                                canvas.ctx.lineWidth = items.sizeS / 4
+                                for (var i = 0; i < Activity.points.length; i++) {
+                                  canvas.ctx.beginPath();
+                                  canvas.ctx.arc(Activity.points[i].x, Activity.points[i].y, 5 * items.sizeS, 0, Math.PI * 2, false);
+                                  canvas.ctx.fill();
+                                  canvas.ctx.stroke();
+                                }
                                 canvas.requestPaint()
                             } else if(items.toolSelected == "brush5" ) {
+                                canvas.removeShadow()
                                 Activity.connectedPoints.push({x: mouseX, y: mouseY})
+                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
+                                canvas.ctx.lineWidth = 1
+
+                                var p1 = Activity.connectedPoints[0]
+                                var p2 = Activity.connectedPoints[1]
+
+                                if (!p1 || !p2)
+                                    return
+
+                                canvas.ctx.beginPath()
+                                canvas.ctx.moveTo(p1.x, p1.y)
+
+                                for (var i = 1, len = Activity.connectedPoints.length; i < len; i++) {
+                                    var midPoint = canvas.midPointBtw(p1, p2)
+                                    canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y)
+                                    p1 = Activity.connectedPoints[i]
+                                    p2 = Activity.connectedPoints[i+1]
+                                }
+                                canvas.ctx.lineTo(p1.x, p1.y)
+                                canvas.ctx.stroke()
+
+                                for (var i = 0; i < Activity.connectedPoints.length; i++) {
+                                    var dx = Activity.connectedPoints[i].x - Activity.connectedPoints[Activity.connectedPoints.length-1].x;
+                                    var dy = Activity.connectedPoints[i].y - Activity.connectedPoints[Activity.connectedPoints.length-1].y;
+                                    var d = dx * dx + dy * dy;
+
+                                    if (d < 1000) {
+                                        canvas.ctx.beginPath();
+                                        canvas.ctx.strokeStyle = 'rgba(0,0,0,0.8)';
+                                        canvas.ctx.moveTo( Activity.connectedPoints[Activity.connectedPoints.length-1].x + (dx * 0.1),
+                                                          Activity.connectedPoints[Activity.connectedPoints.length-1].y + (dy * 0.1));
+                                        canvas.ctx.lineTo( Activity.connectedPoints[i].x - (dx * 0.1),
+                                                          Activity.connectedPoints[i].y - (dy * 0.1));
+                                        canvas.ctx.stroke();
+                                    }
+                                }
                                 canvas.requestPaint()
                             } else if (items.toolSelected == "blur") {
                                 canvas.ctx = canvas.getContext('2d')
@@ -1035,8 +1027,16 @@ ActivityBase {
 
                         onClicked: {
                             if (items.toolSelected == "fill") {
+                                canvas.removeShadow()
+                                canvas.ctx.fillStyle = items.paintColor
+                                canvas.ctx.beginPath()
+                                canvas.ctx.moveTo(0, 0)
+                                canvas.ctx.lineTo(background.width, 0)
+                                canvas.ctx.lineTo(background.width, background.height)
+                                canvas.ctx.lineTo(0, background.height)
+                                canvas.ctx.closePath()
+                                canvas.ctx.fill()
                                 canvas.requestPaint()
-                                print("requestPaint FILL  ")
                             }
                         }
                     }
@@ -1200,14 +1200,14 @@ ActivityBase {
 
                     spacing: 10
 
-                    ToolItem { id: pencil; name: "pencil" }
+                    ToolItem { id: pencil; source: Activity.url + "pencil.png"; name: "pencil" }
                     ToolItem {
                         name: "dot"
-//                        source:  Activity.url + "dot.jpg"
-                        opacity: items.toolSelected == "pattern" && items.patternType == "dot.jpg"  ? 1 : 0.6
+                        source: Activity.url + "pattern1.png"
+                        opacity: items.toolSelected == "pattern" && items.patternType == "dot"  ? 1 : 0.6
                         onClick: {
                             items.toolSelected = "pattern"
-                            items.patternType = "dot.jpg"
+                            items.patternType = "dot"
                             items.lastToolSelected = "pattern"
                             Activity.getPattern(1)
                             timer.index = 0
@@ -1216,25 +1216,25 @@ ActivityBase {
                     }
                     ToolItem {
                         name: "pattern2"
-//                        source:  Activity.url + "pattern2.png"
-                        opacity: items.toolSelected == "pattern" && items.patternType == "pattern2.png"  ? 1 : 0.6
+                        source: Activity.url + "pattern2.png"
+                        opacity: items.toolSelected == "pattern" && items.patternType == "horizLine"  ? 1 : 0.6
                         onClick: {
                             items.toolSelected = "pattern"
-                            items.patternType = "pattern2.png"
+                            items.patternType = "horizLine"
                             items.lastToolSelected = "pattern"
                             Activity.getPattern2(1)
                             timer.index = 0
                             timer.start()
-                            // brushSelectCanvas.requestPaint()
                         }
                     }
 
                     ToolItem {
                         name: "pattern3"
-                        opacity: items.toolSelected == "pattern" && items.patternType == "pattern3"  ? 1 : 0.6
+                        source: Activity.url + "pattern3.png"
+                        opacity: items.toolSelected == "pattern" && items.patternType == "vertLine"  ? 1 : 0.6
                         onClick: {
                             items.toolSelected = "pattern"
-                            items.patternType = "pattern3"
+                            items.patternType = "vertLine"
                             items.lastToolSelected = "pattern"
                             Activity.getPattern3(1)
                             timer.index = 0
@@ -1243,12 +1243,12 @@ ActivityBase {
                     }
 
                     ToolItem { name: "tools"  }
-                    ToolItem { name: "brush2" }
-                    ToolItem { name: "spray"  }
-                    ToolItem { name: "brush3" }
-                    ToolItem { name: "brush4" }
-                    ToolItem { name: "brush5" }
-                    ToolItem { name: "blur"   }
+                    ToolItem { name: "brush"; source: Activity.url + "brush_paint.png"}
+                    ToolItem { name: "spray"; source: Activity.url + "spray.png"}
+                    ToolItem { name: "brush3";source: Activity.url + "brush3.png"}
+                    ToolItem { name: "brush4";source: Activity.url + "brush4.png"}
+                    ToolItem { name: "brush5";source: Activity.url + "brush5.png"}
+                    ToolItem { name: "blur";  source: Activity.url + "blur.png"}
                 }
             }
 
@@ -1289,8 +1289,6 @@ ActivityBase {
                             onClicked: {
                                 items.toolSelected = "eraser"
                                 background.hideExpandedTools()
-                                print("anchors ",rightPannel.anchors.topMargin)
-                                print("bool: ",background.height - colorTools.height > rightPannel.height)
                             }
                         }
                     }
@@ -1359,17 +1357,34 @@ ActivityBase {
                             brushContext.clip()  // create clip from triangle path
 
                             if (items.toolSelected == "pattern") {
-                                if (items.patternType == "dot.jpg")
+                                if (items.patternType == "dot")
                                     Activity.getPattern(1)
-                                if (items.patternType == "pattern2.png")
+                                if (items.patternType == "horizLine")
                                     Activity.getPattern2(1)
-                                if (items.patternType == "pattern3")
+                                if (items.patternType == "vertLine")
                                     Activity.getPattern3(1)
 
                                 brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), 'repeat')
                             } else if (items.toolSelected == "pencil") {
                                 brushContext.fillStyle = items.paintColor
+                            } else if (items.toolSelected == "tools") {
+
+                                brushContext.fillStyle = "#ffffff"
+                            } else if (items.toolSelected == "brush") {
+                                // image with a brush
+                                brushContext.fillStyle = "#ffffff"
+                            } else if (items.toolSelected == "spray") {
+                                brushContext.fillStyle = "#ffffff"
+                            } else if (items.toolSelected == "brush3") {
+                                brushContext.fillStyle = "#ffffff"
+                            } else if (items.toolSelected == "brush4") {
+                                brushContext.fillStyle = "#ffffff"
+                            } else if (items.toolSelected == "brush5") {
+                                brushContext.fillStyle = "#ffffff"
+                            } else if (items.toolSelected == "blur") {
+                                brushContext.fillStyle = "#ffffff"
                             } else {
+                                print("else default color")
                                 brushContext.fillStyle = items.paintColor
                             }
 
@@ -1712,6 +1727,20 @@ ActivityBase {
                             onPressed: saveButton.opacity = 1
                             onReleased: saveButton.opacity = 0.6
                             onClicked: Activity.saveToFile(true)
+                        }
+                    }
+
+                    // save button
+                    Image {
+                        sourceSize.width: 48
+                        sourceSize.height: 48
+                        width: 48; height: 48
+                        source: Activity.url + "save.svg"
+                        opacity: 0.6
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: print("=================================:    " + canvas.toDataURL())
                         }
                     }
                 }
