@@ -25,6 +25,10 @@ install:
 
     curl -fsS -o build/msvcp140.dll http://gcompris.net/private/microsoft/vcredist32/msvcp140.dll
 
+    cp "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/redist/x64/Microsoft.VC140.CRT/api-ms-win-crt-runtime-l1-1.0.dll" build/api-ms-win-crt-runtime-l1-1.0.dll
+
+    curl -fsS -o build/libgcc_s_dw2-1.dll http://gcompris.net/private/microsoft/vcredist32/libgcc_s_dw2-1.dll
+
     cmake --build build --config RelWithDebInfo
 
     cmake --build build --config RelWithDebInfo --target DlAndInstallBundledTranslations

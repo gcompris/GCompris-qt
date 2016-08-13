@@ -230,6 +230,8 @@ if(WIN32)
     install(FILES ${Qt5_DIR}/../../../../../Tools/QtCreator/bin/d3dcompiler_47.dll DESTINATION bin)
     install(FILES ${VCREDIST_DIR}/msvcp140.dll DESTINATION bin)
     install(FILES ${VCREDIST_DIR}/vcruntime140.dll DESTINATION bin)
+    install(FILES ${VCREDIST_DIR}/api-ms-win-crt-runtime-l1-1.0.dll DESTINATION bin)
+    install(FILES ${VCREDIST_DIR}/libgcc_s_dw2-1.dll DESTINATION bin)
 endif()
 
 # Packaging
