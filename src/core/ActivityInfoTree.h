@@ -31,11 +31,12 @@ class ActivityInfoTree : public QObject
 	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
 	Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
     Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
+    Q_PROPERTY(QVariantList characters READ allCharacters CONSTANT)
 
 public:
 	explicit ActivityInfoTree(QObject *parent = 0);
 	QQmlListProperty<ActivityInfo> menuTree();
-	ActivityInfo *getRootMenu() const;
+    ActivityInfo *getRootMenu() const;
 	void setRootMenu(ActivityInfo *rootMenu);
 	ActivityInfo *menuTree(int) const;
 	void setCurrentActivity(ActivityInfo *currentActivity);
@@ -46,6 +47,7 @@ public:
 						const QDir &menuDir, const QString &menuFile);
 	void sortByDifficulty();
 	void sortByName();
+        QVariantList allCharacters();
 
 protected slots:
     Q_INVOKABLE void filterByTag(const QString &tag);
@@ -53,10 +55,13 @@ protected slots:
     Q_INVOKABLE void filterEnabledActivities();
     // create a tree from the whole list of activities with the activities created between the two versions
     Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion);
+    Q_INVOKABLE void filterBySearch(const QString& text);
+    Q_INVOKABLE void filterByDifficulty(int levelMin, int levelMax);
 
 signals:
-	void menuTreeChanged();
-	void currentActivityChanged();
+    void menuTreeChanged();
+    void currentActivityChanged();
+    void allCharactersChanged();
 
 private:
     // this is the full activity list, it never changes
@@ -65,11 +70,12 @@ private:
     QList<ActivityInfo *> m_menuTree;
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
+    QVariantList m_keyboardCharacters;
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
 
-	struct SortByDifficulty
-	{
+    struct SortByDifficulty
+    {
 		bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
 		{
 			return a->difficulty() < b->difficulty();
@@ -88,7 +94,6 @@ public:
 	static void init();
 	static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
     void exportAsSQL();
-
 };
 
 #endif // ACTIVITYINFOTREE_H

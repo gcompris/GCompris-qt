@@ -87,6 +87,13 @@ Item {
                            { label: "n", shiftLabel: "N" },
                            { label: "m", shiftLabel: "M" } ]]
 
+
+    /**
+     * type:string
+     * Symbol that can be used for the space key.
+    */
+    readonly property string space : "\u2423"
+
     /**
      * type:string
      * Symbol that can be used for the backspace key.
@@ -217,7 +224,6 @@ Item {
     z: 9999
     width: parent.width
     height: visible ? priv.cHeight : 0
-    anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
 
     property int modifiers: Qt.NoModifier;  // currently active key modifiers, internal only
@@ -250,7 +256,8 @@ Item {
     }
 
     function populateKeyboard(a) {
-        activity.loading.start();
+        if(activity.activityInfo.name != "menu/Menu.qml")
+            activity.loading.start();
         // populate asynchronously in a worker thread:
         keyboardWorker.sendMessage({
                                        shiftKey: keyboard.shiftKey,
@@ -317,7 +324,7 @@ Item {
             spacing: keyboard.rowSpacing
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom
-            interactive: false
+            interactive: true
 
             model: rowListModel
 
