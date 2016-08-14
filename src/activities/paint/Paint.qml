@@ -36,7 +36,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "lightblue"
+        color: "#add8e6"
         signal start
         signal stop
 
@@ -81,9 +81,12 @@ ActivityBase {
                     stop()
 
                 brushSelectCanvas.requestPaint()
-
             }
+        }
 
+        function reloadSelectedPen() {
+            timer.index = 0
+            timer.start()
         }
 
         SaveToFilePrompt {
@@ -217,11 +220,10 @@ ActivityBase {
         }
 
         function hideExpandedTools () {
-            selectSize.z = -1
-            selectSize.opacity = 0
-
-            selectBrush.z = -1
-            selectBrush.opacity = 0
+            if (selectBrush.z > 0)
+                hideAnimation.start()
+            if (selectSize.z > 0)
+                hideSelectSizeAnimation.start()
 
             // hide the inputTextFrame
             inputTextFrame.opacity = 0
@@ -234,7 +236,7 @@ ActivityBase {
             width: parent.width
             height: parent.height
 
-            color: "lightblue"
+            color: background.color
 
 
             Behavior on x {
@@ -277,7 +279,7 @@ ActivityBase {
                     font.pointSize: 32
                 }
 
-                //ok button
+                // ok button
                 Image {
                     id: okButton
                     source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -358,7 +360,6 @@ ActivityBase {
                     }
 
                     function paintWhite() {
-                        print("painted canvas in white")
                         canvas.ctx = getContext("2d")
                         canvas.ctx.fillStyle = "#ffffff"
                         canvas.ctx.beginPath()
@@ -373,7 +374,6 @@ ActivityBase {
                     onImageLoaded: {
                         // load images from files
                         if (canvas.url != "") {
-                            print("url != vid ")
                             canvas.clearCanvas()
 
                             if (items.loadSavedImage) {
@@ -385,8 +385,6 @@ ActivityBase {
                             // mark the loadSavedImage as finished
                             items.loadSavedImage = false
                             requestPaint()
-                            items.toolSelected = ""
-                            print("requestPaint onImageLoaded from FILE      " + items.toolSelected)
                             items.lastUrl = canvas.url
                             unloadImage(canvas.url)
                             items.mainAnimationOnX = true
@@ -396,7 +394,6 @@ ActivityBase {
                         } else if (items.undoRedo) {
                             ctx.drawImage(items.urlImage,0,0)
                             requestPaint()
-                            print("requestPaint onImageLoaded UNDO REDO ")
                             items.lastUrl = canvas.url
                             unloadImage(items.urlImage)
                             items.undoRedo = false
@@ -443,57 +440,7 @@ ActivityBase {
                     }
 
                     onPaint: {
-
-                        if (items.toolSelected == "pattern") {
-                            if (items.patternType == "dot")
-                                Activity.getPattern()
-                            if (items.patternType == "horizLine")
-                                Activity.getPattern2()
-                            if (items.patternType == "vertLine")
-                                Activity.getPattern3()
-                        }
-
-                        //                   |
-                        //TODO: remove this \|/
                         canvas.ctx = getContext('2d')
-                        canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? "#ffffff" :
-//                                                 items.toolSelected == "pattern" ? ctx.createPattern(Activity.url + items.patternType, 'repeat') :
-                                                 items.toolSelected == "pattern" ? ctx.createPattern(shape.toDataURL(), 'repeat') :
-                                                 items.toolSelected == "brush4" ? "black" :
-                                                                                         items.paintColor
-
-                        if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
-
-                        } else if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
-
-                        } else if (items.toolSelected == "circle") {
-
-                        } else if (items.toolSelected == "line") {
-
-                        } else if (items.toolSelected == "fill") {
-
-                        } else if (items.toolSelected == "text") {
-
-                        } else if (items.toolSelected == "tools" ) {
-
-                        } else if (items.toolSelected == "brush" ) {
-
-                        } else if (items.toolSelected == "pattern" ) {
-
-                        } else if (items.toolSelected == "spray" ) {
-
-                        } else if (items.toolSelected == "brush3" ) {
-
-                        } else if (items.toolSelected == "brush4"){
-
-                        } else if (items.toolSelected == "brush5"){
-
-                        } else if (items.toolSelected == "blur"){
-                            print("blur")
-                        } else {
-                            print("tool not known, resetting to Pencil")
-                            items.toolSelected = "pencil"
-                        }
                     }
 
                     MouseArea {
@@ -557,11 +504,6 @@ ActivityBase {
                             } else if (items.toolSelected == "text") {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
-                            } else if (items.toolSelected == "tools") {
-                                Activity.points.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "brush") {
-                                canvas.currentPoint = { x: mouseX, y: mouseY }
-                                canvas.lastPoint = { x: mouseX, y: mouseY }
                             } else if (items.toolSelected == "pattern") {
                                 canvas.ctx.strokeStyle = "#ffffff"  // very important!
                                 canvas.lastX = mouseX
@@ -574,15 +516,9 @@ ActivityBase {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
                                 canvas.ctx.strokeStyle = "#ffefff"
-                                // enable the hover so the points will be closer one to the other
-                                area.hoverEnabled = true
                             } else if (items.toolSelected == "pencil"){
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
-                                // enable the hover so the points will be closer one to the other
-//                                area.hoverEnabled = true
-//                                canvas.ctx.lineCap = 'butt'
-//                                canvas.ctx.lineJoin = 'bevel'
                             } else if (items.toolSelected == "brush3"){
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
@@ -598,7 +534,7 @@ ActivityBase {
                             } else {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
-                                print("ON Pressed - tool not known? ")
+                                print("ON Pressed - tool not known")
                             }
                         }
 
@@ -609,7 +545,7 @@ ActivityBase {
                             area.endX = mappedMouse.x
                             area.endY = mappedMouse.y
 
-                            /////////  reset text elements
+                            // Reset text elements:
                             // hide the text
                             onBoardText.opacity = 0
                             onBoardText.z = -1
@@ -620,17 +556,13 @@ ActivityBase {
 
                             // disable hover
                             area.hoverEnabled = false
-                            /////////  reset text elements
 
                             if (items.toolSelected == "line" ) {
                                 canvas.removeShadow()
-                                print("line")
-
                                 canvas.ctx.fillStyle = items.paintColor
                                 canvas.ctx.beginPath()
 
                                 var angleRad = (360 - area.currentShape.rotationn) * Math.PI / 180
-
                                 var auxX = items.sizeS * Math.sin(angleRad)
                                 var auxY = items.sizeS * Math.cos(angleRad)
 
@@ -647,7 +579,6 @@ ActivityBase {
 
                             if (items.toolSelected == "circle") {
                                 canvas.removeShadow()
-                                print("circle")
                                 canvas.ctx = canvas.getContext('2d')
                                 canvas.ctx.beginPath();
                                 canvas.ctx.arc(area.currentShape.x + area.currentShape.width / 2,
@@ -662,7 +593,6 @@ ActivityBase {
 
                             if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
                                 canvas.removeShadow()
-                                print("rectangle")
                                 canvas.ctx.fillStyle = items.paintColor
                                 canvas.ctx.beginPath()
                                 canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
@@ -677,10 +607,8 @@ ActivityBase {
 
                             if (items.toolSelected == "text" && onBoardText.text != "") {
                                 canvas.removeShadow()
-                                print("text")
-
                                 canvas.ctx.fillStyle = items.paintColor
-    //                            canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
+                                // canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
                                 canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
                                 canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
                                 onBoardText.text = ""
@@ -689,9 +617,8 @@ ActivityBase {
                             }
 
                             // reset the "points" array
-                            if (items.toolSelected == "tools" ||
-                                    items.toolSelected == "pattern" ||
-                                    items.toolSelected == "brush4")
+                            if (items.toolSelected == "pattern" ||
+                                  items.toolSelected == "brush4")
                                 Activity.points = []
 
                             if (items.toolSelected == "brush5")
@@ -704,7 +631,7 @@ ActivityBase {
                             Activity.undo = Activity.undo.concat(items.urlImage)
 
                             if (Activity.redo.length != 0) {
-                                print("     reset  redo")
+                                print("resetting redo array!")
                                 Activity.redo = []
                             }
 
@@ -715,12 +642,17 @@ ActivityBase {
                                 items.next = true
                             else items.next = false
 
-                            print("undo:   " + Activity.undo.length + "  redo:  " + Activity.redo.length)
-
+                            // print("undo: " + Activity.undo.length + " redo: " + Activity.redo.length)
                             area.hoverEnabled = false
                         }
 
                         onPositionChanged: {
+                            canvas.ctx = canvas.getContext('2d')
+                            canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? "#ffffff" :
+                                                     items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
+                                                     items.toolSelected == "brush4" ? "black" :
+                                                                                       items.paintColor
+
                             if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
                                 canvas.removeShadow()
                                 canvas.ctx = canvas.getContext('2d')
@@ -835,47 +767,6 @@ ActivityBase {
                                     currentShape.height = Math.abs(height)
                                     currentShape.width = items.sizeS
                                 }
-                            } else if (items.toolSelected == "tools") {
-                                canvas.removeShadow()
-                                Activity.points.push({ x: mouseX, y: mouseY })
-                                canvas.ctx = canvas.getContext('2d')
-                                canvas.ctx.lineWidth = items.sizeS
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
-
-                                var p1 = Activity.points[0]
-                                var p2 = Activity.points[1]
-
-                                if (!p1 || !p2)
-                                    return
-
-                                canvas.ctx.beginPath()
-                                canvas.ctx.moveTo(p1.x, p1.y)
-
-                                for (var i = 1, len = Activity.points.length; i < len; i++) {
-                                  var midPoint = canvas.midPointBtw(p1, p2)
-                                  canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y)
-                                  p1 = Activity.points[i]
-                                  p2 = Activity.points[i+1]
-                                }
-                                canvas.ctx.lineTo(p1.x, p1.y)
-                                canvas.ctx.stroke()
-                                canvas.requestPaint()
-                            } else if (items.toolSelected == "brush") {
-                                canvas.currentPoint = { x: mouseX, y: mouseY }
-                                canvas.removeShadow()
-                                canvas.ctx = canvas.getContext('2d')
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
-
-                                var dist = canvas.distanceBetween(canvas.lastPoint, canvas.currentPoint)
-                                var angle = canvas.angleBetween(canvas.lastPoint, canvas.currentPoint)
-
-                                for (var i = 0; i < dist; i++) {
-                                    var xx = canvas.lastPoint.x + (Math.sin(angle) * i) - 25;
-                                    var yy = canvas.lastPoint.y + (Math.cos(angle) * i) - 25;
-                                    canvas.ctx.drawImage(Activity.url + "brush.png", xx, yy, items.sizeS * 5, items.sizeS * 10);
-                                }
-                                canvas.lastPoint = {x: canvas.currentPoint.x, y: canvas.currentPoint.y}
-                                canvas.requestPaint()
                             } else if (items.toolSelected == "pattern") {
                                 canvas.removeShadow()
                                 Activity.points.push({x: mouseX, y: mouseY})
@@ -923,7 +814,6 @@ ActivityBase {
                                 canvas.removeShadow()
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
-                                print("brush3")
                                 canvas.ctx.lineWidth = items.sizeS * 1.2
                                 canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
 
@@ -956,7 +846,6 @@ ActivityBase {
                             } else if(items.toolSelected == "brush4" ) {
                                 canvas.removeShadow()
                                 Activity.points.push({x: mouseX, y: mouseY})
-                                print("brush4")
                                 canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
                                 canvas.ctx.fillStyle = items.paintColor
                                 canvas.ctx.lineWidth = items.sizeS / 4
@@ -1111,13 +1000,15 @@ ActivityBase {
 
                             MouseArea {
                                 anchors.fill :parent
+
+                                // choose other color:
                                 onDoubleClicked: {
-                                    print("choose a color: ")
                                     items.index = index
                                     colorDialog.visible = true
                                 }
+
+                                // set this color as current paint color
                                 onClicked: {
-                                    print("root.width: ",root.width)
                                     root.active = true
                                     items.paintColor = root.color
 
@@ -1126,16 +1017,16 @@ ActivityBase {
                                             colorRepeater.itemAt(i).active = false
 
                                     background.hideExpandedTools()
+
+                                    // choose other color
                                     if (color == "#c2c2d6") {
-                                        print("choose a color: ")
                                         items.index = index
                                         colorDialog.visible = true
                                     } else {
                                         items.paintColor = color
                                     }
 
-                                    timer.index = 0
-                                    timer.start()
+                                    background.reloadSelectedPen()
                                 }
                             }
                         }
@@ -1148,15 +1039,43 @@ ActivityBase {
                 height: row.height * 1.1
                 width: row.width * 1.2
 
-                x: rightPannelFrame.x - width
+                x: rightPannelFrame.x + rightPannelFrame.width
                 y: rightPannelFrame.y - height / 2 + sizeTool.height * 1.5 +
                    rightPannel.spacing * 2 + rightPannel.anchors.topMargin
+                z: -10
 
                 radius: width * 0.05
                 opacity: 0
+                color: background.color
 
-                z: 100
-                color: "lightblue"
+                SequentialAnimation {
+                    id: hideSelectSizeAnimation
+                    PropertyAction { target: selectSize; property: "z"; value: 2 }
+                    NumberAnimation {
+                        target: selectSize
+                        property: "x"
+                        duration: 500
+                        easing.type: Easing.InOutQuad
+                        from: rightPannelFrame.x - selectSize.width
+                        to: rightPannelFrame.x + rightPannelFrame.width
+                    }
+                    PropertyAction { target: selectSize; property: "opacity"; value: 0 }
+                    PropertyAction { target: selectSize; property: "z"; value: -10 }
+                }
+
+                SequentialAnimation {
+                    id: showSelectSizeAnimation
+                    PropertyAction { target: selectSize; property: "opacity"; value: 0.9 }
+                    PropertyAction { target: selectSize; property: "z"; value: 2 }
+                    NumberAnimation {
+                        target: selectSize
+                        property: "x"
+                        duration: 500
+                        easing.type: Easing.InOutQuad
+                        from: rightPannelFrame.x + rightPannelFrame.width
+                        to: rightPannelFrame.x - selectSize.width
+                    }
+                }
 
                 Row {
                     id: row
@@ -1180,15 +1099,57 @@ ActivityBase {
                 height: row2.height * 1.15
                 width: row2.width * 1.05
 
-                x: rightPannelFrame.x - width
+                x: rightPannelFrame.x + rightPannelFrame.width
                 y: rightPannelFrame.y - height / 2 + eraser.height * 3.5 +
-                   rightPannel.spacing * 2 + rightPannel.anchors.topMargin
+                   rightPannel.spacing * 3 + rightPannel.anchors.topMargin
 
                 radius: width * 0.02
                 opacity: 0
 
-                z: 100
-                color: "lightblue"
+                z: -10
+                color: background.color
+
+                SequentialAnimation {
+                    id: hideAnimation
+                    PropertyAction { target: selectBrush; property: "z"; value: 2 }
+                    NumberAnimation {
+                        target: selectBrush
+                        property: "x"
+                        duration: 500
+                        easing.type: Easing.InOutQuad
+                        from: rightPannelFrame.x - selectBrush.width
+                        to: rightPannelFrame.x + rightPannelFrame.width
+                    }
+                    PropertyAction { target: selectBrush; property: "opacity"; value: 0 }
+                    PropertyAction { target: selectBrush; property: "z"; value: -10 }
+                }
+
+                SequentialAnimation {
+                    id: showAnimation
+                    PropertyAction { target: selectBrush; property: "opacity"; value: 0.9 }
+                    PropertyAction { target: selectBrush; property: "z"; value: 2 }
+                    NumberAnimation {
+                        target: selectBrush
+                        property: "x"
+                        duration: 500
+                        easing.type: Easing.InOutQuad
+                        from: rightPannelFrame.x + rightPannelFrame.width
+                        to: rightPannelFrame.x - selectBrush.width
+                    }
+                }
+
+                property alias showSelected: showSelected
+
+                Rectangle {
+                    id: showSelected
+                    width: 70; height: 70
+                    color: "#ffffb3"
+                    opacity: 0.7
+                    x: pencil.x + row2.spacing; y: pencil.y + row2.spacing / 2
+                    z: 3
+                    radius: width * 0.1
+                }
+
 
                 Row {
                     id: row2
@@ -1198,6 +1159,7 @@ ActivityBase {
                     anchors.leftMargin: 10
                     anchors.verticalCenter: parent.verticalCenter
 
+                    z: 5
                     spacing: 10
 
                     ToolItem { id: pencil; source: Activity.url + "pencil.png"; name: "pencil" }
@@ -1209,9 +1171,8 @@ ActivityBase {
                             items.toolSelected = "pattern"
                             items.patternType = "dot"
                             items.lastToolSelected = "pattern"
-                            Activity.getPattern(1)
-                            timer.index = 0
-                            timer.start()
+                            Activity.getPattern()
+                            background.reloadSelectedPen()
                         }
                     }
                     ToolItem {
@@ -1222,12 +1183,10 @@ ActivityBase {
                             items.toolSelected = "pattern"
                             items.patternType = "horizLine"
                             items.lastToolSelected = "pattern"
-                            Activity.getPattern2(1)
-                            timer.index = 0
-                            timer.start()
+                            Activity.getPattern2()
+                            background.reloadSelectedPen()
                         }
                     }
-
                     ToolItem {
                         name: "pattern3"
                         source: Activity.url + "pattern3.png"
@@ -1236,14 +1195,11 @@ ActivityBase {
                             items.toolSelected = "pattern"
                             items.patternType = "vertLine"
                             items.lastToolSelected = "pattern"
-                            Activity.getPattern3(1)
-                            timer.index = 0
-                            timer.start()
+                            Activity.getPattern3()
+                            background.reloadSelectedPen()
                         }
                     }
 
-                    ToolItem { name: "tools"  }
-                    ToolItem { name: "brush"; source: Activity.url + "brush_paint.png"}
                     ToolItem { name: "spray"; source: Activity.url + "spray.png"}
                     ToolItem { name: "brush3";source: Activity.url + "brush3.png"}
                     ToolItem { name: "brush4";source: Activity.url + "brush4.png"}
@@ -1270,17 +1226,18 @@ ActivityBase {
                     anchors {
                         right: parent.right
                         top: parent.top
-                        topMargin: background.height - colorTools.height > rightPannel.height ?
-                                       (background.height - colorTools.height - rightPannel.height) / 2 : 0
+                        bottom: parent.bottom
                         margins: 8
                     }
 
-                    spacing: 5
+                    property real dime: (background.height - colorTools.height) / 14 - 10
+
+                    spacing: 15
 
                     // eraser tool
                     Image {
                         id: eraser
-                        width: 48; height: 48
+                        width: rightPannel.dime; height: rightPannel.dime
                         source: Activity.url + "eraser.svg"
                         opacity: items.toolSelected == "eraser" ? 1 : 0.6
 
@@ -1289,6 +1246,7 @@ ActivityBase {
                             onClicked: {
                                 items.toolSelected = "eraser"
                                 background.hideExpandedTools()
+                                background.reloadSelectedPen()
                             }
                         }
                     }
@@ -1298,7 +1256,7 @@ ActivityBase {
                     // select size
                     Image {
                         id: sizeTool
-                        width: 48; height: 48
+                        width: rightPannel.dime; height: rightPannel.dime
                         source: Activity.url + "size.PNG"
                         opacity: 0.6
 
@@ -1306,28 +1264,43 @@ ActivityBase {
                             id: toolArea
                             anchors.fill: parent
                             onClicked: {
-                                if (selectSize.opacity == 0) {
-                                    sizeTool.opacity = 1
-                                    selectSize.opacity = 0.9
-                                    selectSize.z = 100
-                                }
-                                else {
-                                    selectSize.opacity = 0
-                                    selectSize.z = -1
-                                    sizeTool.opacity = 0.6
-                                }
-                                selectBrush.opacity = 0
-                                selectBrush.z = -1
+                                if (selectSize.z > 0) {
+                                    hideSelectSizeAnimation.start()
+                                } else showSelectSizeAnimation.start()
+
+                                hideAnimation.start()
                             }
                         }
                     }
 
+                    Image {
+                        id: button
+                        sourceSize.width: rightPannel.dime; sourceSize.height: rightPannel.dime
+                        width: rightPannel.dime; height: rightPannel.dime
+                        source: Activity.url + "fill.svg"
+                        opacity: items.toolSelected == "fill" ? 1 : 0.6
 
-                    ToolItem { name: "fill"; width: 48; height: 48 }
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                items.toolSelected = "fill"
+                                background.hideExpandedTools()
+
+                                // make the hover over the canvas false
+                                area.hoverEnabled = false
+
+                                // change the selectBrush tool
+                                timer.index = 0
+                                timer.start()
+
+                                background.reloadSelectedPen()
+                            }
+                        }
+                    }
 
                     Canvas {
                         id: brushSelectCanvas
-                        width: 48; height: 48
+                        width: rightPannel.dime; height: rightPannel.dime
                         function c(x) {
                             return width * x / 510
                         }
@@ -1338,18 +1311,35 @@ ActivityBase {
 
                             brushContext.save()
 
-                            brushContext.strokeStyle = ''
+                            brushContext.strokeStyle = 'transparent'
+
+                            if (items.toolSelected == "blur") {
+                                brushContext.shadowBlur = 10
+                                brushContext.shadowColor = items.paintColor
+                                brushContext.strokeStyle = items.paintColor
+                                brushContext.lineWidth = 8
+                            } else {
+                                brushContext.shadowColor = 'rgba(0,0,0,0)'
+                                brushContext.shadowBlur = 0
+                                brushContext.shadowOffsetX = 0
+                                brushContext.shadowOffsetY = 0
+                            }
+
                             // create a triangle as clip region
                             brushContext.beginPath()
+
                             brushContext.moveTo( c(17), c(494))
-                            brushContext.lineTo( c(53), c(327))
-                            brushContext.lineTo(c(336),  c(40))
-                            brushContext.lineTo(c(390),  c(11))
-                            brushContext.lineTo(c(457),  c(41))
-                            brushContext.lineTo(c(497), c(107))
-                            brushContext.lineTo(c(475), c(155))
-                            brushContext.lineTo(c(133), c(438))
+                            brushContext.lineTo( c(53), c(320))
+                            if (items.toolSelected != "pencil") {
+                                brushContext.lineTo(c(336),  c(40))
+                                brushContext.lineTo(c(390),  c(11))
+                                brushContext.lineTo(c(457),  c(41))
+                                brushContext.lineTo(c(497), c(107))
+                                brushContext.lineTo(c(475), c(155))
+                            }
+                            brushContext.lineTo(c(160), c(405))
                             brushContext.lineTo( c(17), c(494))
+
 
                             brushContext.closePath()
                             brushContext.stroke()
@@ -1358,152 +1348,111 @@ ActivityBase {
 
                             if (items.toolSelected == "pattern") {
                                 if (items.patternType == "dot")
-                                    Activity.getPattern(1)
+                                    Activity.getPattern()
                                 if (items.patternType == "horizLine")
-                                    Activity.getPattern2(1)
+                                    Activity.getPattern2()
                                 if (items.patternType == "vertLine")
-                                    Activity.getPattern3(1)
+                                    Activity.getPattern3()
 
                                 brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), 'repeat')
                             } else if (items.toolSelected == "pencil") {
                                 brushContext.fillStyle = items.paintColor
-                            } else if (items.toolSelected == "tools") {
-
-                                brushContext.fillStyle = "#ffffff"
-                            } else if (items.toolSelected == "brush") {
-                                // image with a brush
-                                brushContext.fillStyle = "#ffffff"
                             } else if (items.toolSelected == "spray") {
-                                brushContext.fillStyle = "#ffffff"
+                                Activity.getSprayPattern()
+                                brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), 'repeat')
                             } else if (items.toolSelected == "brush3") {
-                                brushContext.fillStyle = "#ffffff"
-                            } else if (items.toolSelected == "brush4") {
-                                brushContext.fillStyle = "#ffffff"
-                            } else if (items.toolSelected == "brush5") {
-                                brushContext.fillStyle = "#ffffff"
-                            } else if (items.toolSelected == "blur") {
-                                brushContext.fillStyle = "#ffffff"
-                            } else {
-                                print("else default color")
                                 brushContext.fillStyle = items.paintColor
+                            } else if (items.toolSelected == "brush4") {
+                                Activity.getCirclePattern()
+                                brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), "repeat")
+                            } else if (items.toolSelected == "brush5") {
+                                brushContext.strokeStyle = items.paintColor
+                                brushContext.lineWidth = 2
+                                brushContext.beginPath()
+                                brushContext.moveTo(0,0)
+                                brushContext.lineTo(brushSelectCanvas.width,brushSelectCanvas.height)
+                                brushContext.lineTo(brushSelectCanvas.width/2,0)
+                                brushContext.lineTo(0, brushSelectCanvas.height)
+                                brushContext.lineTo(brushSelectCanvas.width, brushSelectCanvas.height * 0.1)
+                                brushContext.lineTo(0, brushSelectCanvas.height * 0.5)
+                                brushContext.lineTo(brushSelectCanvas.width,brushSelectCanvas.height * 0.5)
+                                brushContext.lineTo(brushSelectCanvas.width * 0.5, 0)
+                                brushContext.lineTo(brushSelectCanvas.width * 0.5, brushSelectCanvas.height)
+                                brushContext.closePath()
+                                brushContext.stroke()
+                            } else if (items.toolSelected == "blur") {
+                                brushContext.fillStyle = items.paintColor
+                            } else {
+                                // set the color of the tool to white
+                                brushContext.fillStyle = "#ffffff"
                             }
 
-                            brushContext.fillRect(0, 0, 500,500)
+                            if (items.toolSelected != "brush5") {
+                                brushContext.fillRect(0, 0, 100,100)
+                            }
 
                             brushContext.restore()
-                            brushContext.drawImage(Activity.url + "pen.svg", 0, 0,48,48)
+                            brushContext.drawImage(Activity.url + "pen.svg", 0, 0,rightPannel.dime,rightPannel.dime)
                            }
 
                         MouseArea {
                             anchors.fill: parent
-                            onDoubleClicked: {
-                                selectBrush.opacity = 0.9
-                                selectBrush.z = 100
-
-                                selectSize.opacity = 0
-                                selectSize.z = -1
-                            }
 
                             onPressAndHold: {
-                                selectBrush.opacity = 0.9
-                                selectBrush.z = 100
+                                showAnimation.start()
 
                                 selectSize.opacity = 0
                                 selectSize.z = -1
                             }
-                            /*onClicked: {
-                                if ( selectBrush.opacity == 0) {
-                                    selectBrush.opacity = 0.9
-                                    selectBrush.z = 100
-                                } else {
-                                    selectBrush.opacity = 0
-                                    selectBrush.z = -1
-                                }
-                                selectSize.opacity = 0
-                                selectSize.z = -1
-                            }*/
 
                             onClicked: {
                                 items.toolSelected = items.lastToolSelected
                                 background.hideExpandedTools()
+                                background.reloadSelectedPen()
                             }
                         }
+
                         Image {
                             x: 0; y: 0
                             source: Activity.url + "pen.svg"
-                            sourceSize.width: 48; sourceSize.height: 48
-                            width: 48; height: 48
+                            sourceSize.width: rightPannel.dime; sourceSize.height: rightPannel.dime
+                            width: rightPannel.dime; height: rightPannel.dime
                         }
                     }
-/*
-                    Image {
-                        id: brushSelector2
-                        width: 48; height: 48
-                        source: Activity.url + "pencil.svg"
-                        opacity: items.toolSelected == "" ? 1 : 0.6
 
-                        MouseArea {
-                            anchors.fill: parent
-                            onDoubleClicked: {
-                                selectBrush.opacity = 0.9
-                                selectBrush.z = 100
-
-                                selectSize.opacity = 0
-                                selectSize.z = -1
-                            }
-
-                            onPressAndHold: {
-                                selectBrush.opacity = 0.9
-                                selectBrush.z = 100
-
-                                selectSize.opacity = 0
-                                selectSize.z = -1
-                            }
-//                            onClicked: {
-//                                if ( selectBrush.opacity == 0) {
-//                                    selectBrush.opacity = 0.9
-//                                    selectBrush.z = 100
-//                                } else {
-//                                    selectBrush.opacity = 0
-//                                    selectBrush.z = -1
-//                                }
-//                                selectSize.opacity = 0
-//                                selectSize.z = -1
-//                            }
-
-                            onClicked: {
-                                items.toolSelected = items.lastToolSelected
-                                background.hideExpandedTools()
-                            }
-                        }
-                    }
-*/
                     // draw a circle
-                    Rectangle {
-                        width: 48; height: 48
-                        radius: width / 2
-                        color: items.toolSelected == "circle" ? items.paintColor : "white"
-                        border.color: "black"
-                        border.width: 2
+                    Rectangle { // border of the circle
+                        width: rightPannel.dime; height: rightPannel.dime
+                        color: "transparent"
                         opacity: items.toolSelected == "circle" ? 1 : 0.6
+
+                        Rectangle {
+                            width: parent.width * 0.9; height: parent.height  * 0.9
+                            radius: width / 2
+                            color: items.toolSelected == "circle" ? items.paintColor : "white"
+                            border.color: "black"
+                            border.width: 2
+                            anchors.centerIn: parent
+                        }
 
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
                                 items.toolSelected = "circle"
                                 background.hideExpandedTools()
+                                background.reloadSelectedPen()
                             }
                         }
                     }
 
                     // draw a rectangle
                     Rectangle { // border of the rectangle
-                        width: 48; height: 48
+                        width: rightPannel.dime; height: rightPannel.dime
                         color: "transparent"
                         opacity: items.toolSelected == "rectangle" ? 1 : 0.6
 
                         Rectangle { // actual rectangle
-                            width: 42; height: 27
+                            width: parent.width * 0.9; height: parent.height * 0.65
                             border.color: "black"
                             border.width: 2
                             color: items.toolSelected == "rectangle" ? items.paintColor : "white"
@@ -1515,22 +1464,23 @@ ActivityBase {
                             onClicked: {
                                 items.toolSelected = "rectangle"
                                 background.hideExpandedTools()
+                                background.reloadSelectedPen()
                             }
                         }
                     }
 
                     // draw a line
                     Rectangle { // border of the line
-                        width: 48; height: 48
+                        width: rightPannel.dime; height: rightPannel.dime * 0.7
                         color: "transparent"
                         opacity: items.toolSelected == "line" ? 1 : 0.6
 
                         Rectangle { // actual line
-                            width: 42; height: 10
+                            width: parent.width * 0.9; height: parent.height * 0.3
                             rotation: -30
                             border.color: "black"
                             border.width: 2
-                            color: items.toolSelected == "line" ? items.paintColor : "grey"
+                            color: items.toolSelected == "line" ? items.paintColor : "#ffffff"
                             anchors.centerIn: parent
                         }
 
@@ -1539,21 +1489,22 @@ ActivityBase {
                             onClicked: {
                                 items.toolSelected = "line"
                                 background.hideExpandedTools()
+                                background.reloadSelectedPen()
                             }
                         }
                     }
 
                     // draw a line
                     Rectangle { // border of the line
-                        width: 48; height: 48
+                        width: rightPannel.dime; height: rightPannel.dime * 0.7
                         color: "transparent"
                         opacity: items.toolSelected == "lineShift" ? 1 : 0.6
 
                         Rectangle { // actual line
-                            width: 42; height: 10
+                            width: parent.width * 0.9; height: parent.height * 0.3
                             border.color: "black"
                             border.width: 2
-                            color: items.toolSelected == "lineShift" ? items.paintColor : "grey"
+                            color: items.toolSelected == "lineShift" ? items.paintColor : "#ffffff"
                             anchors.centerIn: parent
                         }
 
@@ -1562,19 +1513,20 @@ ActivityBase {
                             onClicked: {
                                 items.toolSelected = "lineShift"
                                 background.hideExpandedTools()
+                                background.reloadSelectedPen()
                             }
                         }
                     }
 
                     // write text
                     Rectangle { // background of text
-                        width: 48; height: 48
+                        width: rightPannel.dime; height: rightPannel.dime
                         color: "transparent"
                         opacity: items.toolSelected == "text" ? 1 : 0.6
 
                         GCText { // text
                             text: "A"
-                            color: items.toolSelected == "text" ? items.paintColor : "grey"
+                            color: items.toolSelected == "text" ? items.paintColor : "#ffffff"
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.verticalCenter: parent.verticalCenter
                         }
@@ -1584,6 +1536,7 @@ ActivityBase {
                             onClicked: {
                                 items.toolSelected = "text"
                                 background.hideExpandedTools()
+                                background.reloadSelectedPen()
 
                                 // enable the text to follow the cursor movement
                                 area.hoverEnabled = true
@@ -1601,9 +1554,9 @@ ActivityBase {
                     // undo button
                     Image {
                         id: undoButton
-                        sourceSize.width: 48
-                        sourceSize.height: 48
-                        width: 48; height: 48
+                        sourceSize.width: rightPannel.dime
+                        sourceSize.height: rightPannel.dime
+                        width: rightPannel.dime; height: rightPannel.dime
                         source: Activity.url + "back.svg"
                         opacity: 0.6
 
@@ -1618,10 +1571,7 @@ ActivityBase {
                                         Activity.undo.length > 1 && items.next == false) {
                                     items.undoRedo = true
 
-                                    //                            if (Activity.undo[Activity.undo.length - 1] == items.urlImage) {
-                                    //                            if (Activity.redo.length == 0) {
                                     if (items.next) {
-                                        print("items.next: ",items.next)
                                         Activity.redo = Activity.redo.concat(Activity.undo.pop())
                                     }
 
@@ -1637,7 +1587,7 @@ ActivityBase {
                                     // save the image into the "redo" array
                                     Activity.redo = Activity.redo.concat(items.urlImage)
 
-                                    print("undo:   " + Activity.undo.length + "  redo:  " + Activity.redo.length + "              undo Pressed")
+                                    // print("undo:   " + Activity.undo.length + "  redo:  " + Activity.redo.length + "     undo Pressed")
                                 }
                             }
                         }
@@ -1646,9 +1596,9 @@ ActivityBase {
                     // redo button
                     Image {
                         id: redoButton
-                        sourceSize.width: 48
-                        sourceSize.height: 48
-                        width: 48; height: 48
+                        sourceSize.width: rightPannel.dime
+                        sourceSize.height: rightPannel.dime
+                        width: rightPannel.dime; height: rightPannel.dime
                         source: Activity.url + "forward.svg"
                         opacity: 0.6
 
@@ -1663,7 +1613,6 @@ ActivityBase {
                                     items.undoRedo = true
 
                                     if (items.next2) {
-                                        print("=======items.next: ",items.next)
                                         Activity.undo = Activity.undo.concat(Activity.redo.pop())
                                     }
 
@@ -1676,7 +1625,7 @@ ActivityBase {
                                     canvas.loadImage(items.urlImage)
                                     Activity.undo = Activity.undo.concat(items.urlImage)
 
-                                    print("undo:   " + Activity.undo.length + "  redo:  " + Activity.redo.length + "              redo Pressed")
+                                    // print("undo:   " + Activity.undo.length + "  redo:  " + Activity.redo.length + "     redo Pressed")
                                 }
                             }
                         }
@@ -1685,9 +1634,9 @@ ActivityBase {
                     // load button
                     Image {
                         id: loadButton
-                        sourceSize.width: 48
-                        sourceSize.height: 48
-                        width: 48; height: 48
+                        sourceSize.width: rightPannel.dime
+                        sourceSize.height: rightPannel.dime
+                        width: rightPannel.dime; height: rightPannel.dime
                         source: Activity.url + "load.svg"
                         opacity: 0.6
 
@@ -1706,9 +1655,6 @@ ActivityBase {
 
                                 // move the main screen to right
                                 main.x = background.width
-                                print("background.width: ",background.width)
-                                print("main.x: ", main.x)
-                                print("load pressed")
                             }
                         }
                     }
@@ -1716,9 +1662,9 @@ ActivityBase {
                     // save button
                     Image {
                         id: saveButton
-                        sourceSize.width: 48
-                        sourceSize.height: 48
-                        width: 48; height: 48
+                        sourceSize.width: rightPannel.dime
+                        sourceSize.height: rightPannel.dime
+                        width: rightPannel.dime; height: rightPannel.dime
                         source: Activity.url + "save.svg"
                         opacity: 0.6
 
@@ -1729,20 +1675,6 @@ ActivityBase {
                             onClicked: Activity.saveToFile(true)
                         }
                     }
-
-                    // save button
-                    Image {
-                        sourceSize.width: 48
-                        sourceSize.height: 48
-                        width: 48; height: 48
-                        source: Activity.url + "save.svg"
-                        opacity: 0.6
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: print("=================================:    " + canvas.toDataURL())
-                        }
-                    }
                 }
             }
         }
@@ -1750,7 +1682,7 @@ ActivityBase {
         // load images screen
         Rectangle {
             id: load
-            color: "lightblue"
+            color: background.color
             width: background.width
             height: background.height
             opacity: 0
@@ -1815,7 +1747,6 @@ ActivityBase {
             GCButtonCancel {
                 id: exitButton
                 onClose: {
-                    print("onClose")
                     items.mainAnimationOnX = true
                     main.x = 0
                 }
@@ -1871,7 +1802,7 @@ ActivityBase {
                             height: 80
                             width: height
                             radius: width / 2
-                            color: "lightblue"
+                            color: background.color
                         }
 
                         groove: Rectangle {
@@ -1897,7 +1828,7 @@ ActivityBase {
         // load screen 2
         Rectangle {
             id: loadSavedPainting
-            color: "lightblue"
+            color: background.color
             width: background.width
             height: background.height
             opacity: 0
@@ -2026,7 +1957,7 @@ ActivityBase {
                             height: 80
                             width: height
                             radius: width / 2
-                            color: "lightblue"
+                            color: background.color
                         }
 
                         groove: Rectangle {
@@ -2072,10 +2003,7 @@ ActivityBase {
 
         Canvas {
             id: shape
-            width: 300; height: 300
             opacity: 0
-            onPaint: {
-            }
         }
     }
 }

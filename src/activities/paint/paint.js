@@ -69,6 +69,8 @@ var connectedPoints = []
 function start(items_) {
     items = items_
     currentLevel = 0
+    items.toolSelected = "pencil"
+    items.paintColor = colors[0]
     initLevel()
 }
 
@@ -97,8 +99,6 @@ function initLevel() {
     ctx.fill()
     items.canvas.requestPaint()
 
-    items.toolSelected = ""
-    items.paintColor = colors[0]
 
     items.next = false
     items.next2 = false
@@ -121,13 +121,11 @@ function initLevel() {
     getPattern()
     items.background.started = true
 
+    items.background.hideExpandedTools()
 }
 
-function getPattern(size) {
+function getPattern() {
     var dotWidth = 20, dotDistance = 5
-    if (size) {
-        dotWidth = 10; dotDistance = 2.5
-    }
     var patternCtx = items.shape.getContext("2d")
     patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
     items.shape.width = items.shape.height = dotWidth + dotDistance
@@ -139,12 +137,8 @@ function getPattern(size) {
     items.shape.requestPaint()
 }
 
-function getPattern2(size) {
+function getPattern2() {
     var lineSize = 10, lineWidth = 5
-    if (size) {
-        lineSize = 5; lineWidth = 2.5
-    }
-
     var patternCtx = items.shape.getContext("2d")
     patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
     items.shape.width = items.shape.height = lineSize
@@ -157,16 +151,34 @@ function getPattern2(size) {
     patternCtx.stroke()
 }
 
-function getPattern3(size) {
+function getPattern3() {
     var lineSize = 20, lineWidth = 10
-    if (size) {
-        lineSize = 10; lineWidth = 5
-    }
     var ctx = items.shape.getContext("2d")
     ctx.clearRect(0, 0, items.shape.width, items.shape.height)
     items.shape.width = lineWidth; items.shape.height = lineSize;
     ctx.fillStyle = items.paintColor
     ctx.fillRect(lineWidth / 2, 0, lineWidth, lineSize);
+}
+
+function getSprayPattern() {
+    var patternCtx = items.shape.getContext("2d")
+    patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
+    items.shape.width = items.shape.height = 3
+    patternCtx.fillStyle = items.paintColor
+    patternCtx.fillRect(0, 0, 2, 2);
+}
+
+function getCirclePattern() {
+    var dotWidth = 10, dotDistance = 2.5
+    var patternCtx = items.shape.getContext("2d")
+    patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
+    items.shape.width = items.shape.height = dotWidth * 0.6 + dotDistance * 2
+    patternCtx.strokeStyle = items.paintColor
+    patternCtx.lineWidth = 1
+    patternCtx.beginPath()
+    patternCtx.arc(dotWidth / 2, dotWidth / 2, dotWidth / 2, 0, Math.PI * 2, false);
+    patternCtx.closePath()
+    patternCtx.stroke()
 }
 
 // parse the content of the paintings saved by the user
@@ -188,7 +200,7 @@ function saveToFile(showMessage) {
             console.error("Could not create directory " + path)
         else
             console.debug("Created directory " + path)
-    } else print("else")
+    }
 
     // add current painting to the dataset
     if (showMessage)
