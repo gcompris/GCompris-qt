@@ -20,10 +20,11 @@ import QtQuick 2.1
 import "paint.js" as Activity
 
 Image {
-    id: button
-    width: 60; height: 60
+    id: toolItem
+    sourceSize.width: 70; sourceSize.height: 70
+    width: 70; height: 70
     source: Activity.url + name + ".svg"
-    opacity: items.toolSelected == name ? 1 : 0.6
+    opacity: items.toolSelected == name ? 1 : 0.4
 
     property string name
     signal click
@@ -35,12 +36,17 @@ Image {
             items.lastToolSelected = name
             background.hideExpandedTools()
 
+            showSelected.x = toolItem.x + row2.spacing
+            showSelected.y = toolItem.y + row2.spacing * 0.5
+
             // make the hover over the canvas false
             area.hoverEnabled = false
 
             // change the selectBrush tool
             timer.index = 0
             timer.start()
+
+            background.reloadSelectedPen()
 
             click()
         }
