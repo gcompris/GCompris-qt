@@ -9,126 +9,101 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="15.862905mm"
-   height="15.132608mm"
-   viewBox="0 0 56.207142 53.619478"
-   id="svg2"
+   id="svg1363"
+   sodipodi:docname="load.svg"
+   viewBox="0 0 24.999999 24.999999"
+   sodipodi:version="0.32"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="joede-load2-symbol.svg">
-  <title
-     id="title4238">Modern Load Symbol #2</title>
+   width="25"
+   height="25">
   <defs
-     id="defs4" />
+     id="defs3" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="32.312506"
-     inkscape:cy="18.725495"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     showguides="true"
-     inkscape:window-width="1146"
-     inkscape:window-height="773"
-     inkscape:window-x="981"
-     inkscape:window-y="150"
-     inkscape:window-maximized="0"
+     inkscape:window-y="24"
+     pagecolor="#ffffff"
+     inkscape:window-maximized="1"
+     inkscape:window-width="1855"
+     inkscape:zoom="38.508391"
+     inkscape:window-x="65"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="g1222"
+     inkscape:cx="12.660377"
+     inkscape:cy="12.867925"
+     inkscape:window-height="1176"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
-    <inkscape:grid
-       type="xygrid"
-       id="grid4136"
-       originx="-211.19102"
-       originy="-601.90513" />
-  </sodipodi:namedview>
+     fit-margin-bottom="0" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-1.7408655,0.296892)">
+    <g
+       id="g1222"
+       inkscape:export-ydpi="72.000000"
+       inkscape:export-xdpi="72.000000"
+       inkscape:export-filename="/home/chef/eclipse/devOO/ressources/btnSauver.png"
+       transform="translate(-134.6,-204.78528)">
+      <g
+         id="g4145">
+        <path
+           id="rect5637"
+           style="fill:#ada915;fill-rule:evenodd;stroke:#898c19;stroke-width:1.00282276;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+           d="m 138.6549,210.3965 3.19982,0 c 0.59524,0.0355 0.90962,0.50315 0.90662,1.16614 0.003,0.59787 0.39276,0.9116 0.86535,0.9116 l 11.35775,-0.071 c 0.93041,0 1.66299,0.89976 1.64968,2.01263 l -0.0461,11.2648 c -0.0133,1.11287 -0.77234,2.01263 -1.69783,2.01263 l -16.44215,0 c -0.92549,0 -1.66299,-0.89976 -1.64968,-2.01263 l 0.15874,-13.27151 c 0.0133,-1.11287 0.77234,-2.01263 1.69782,-2.01263 z"
+           sodipodi:nodetypes="cccccccccccc"
+           inkscape:connector-curvature="0" />
+        <rect
+           id="rect5015"
+           style="fill:#ccc818;fill-rule:evenodd;stroke:#898c19;stroke-width:0.87982941;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+           ry="1.5510825"
+           transform="matrix(1,0,-0.35733888,0.9339748,0,0)"
+           width="19.79064"
+           y="230.45377"
+           x="223.9101"
+           height="13.313995" />
+        <path
+           d="m 155.33,205.93 -4.7,0 0,3.73 -2.2,0 4.66,4.35 4.51,-4.24 -2.27,-0.02 0,-3.82 z"
+           style="fill:#2fd20b;fill-rule:evenodd;stroke:#238c19;stroke-width:0.98565;stroke-linecap:round;stroke-linejoin:round"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:connector-curvature="0"
+           id="path7824" />
+      </g>
+    </g>
+  </g>
   <metadata
-     id="metadata7">
+     id="metadata19">
     <rdf:RDF>
-      <cc:Work
-         rdf:about="">
+      <cc:Work>
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title>Modern Load Symbol #2</dc:title>
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
-        <dc:source>https://openclipart.org/user-detail/joede</dc:source>
-        <dc:description>A simple but more modern &quot;Load&quot; symbol (variant #2) for designing keypad buttons. Remember, who knows disc drives today...</dc:description>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>keypad</rdf:li>
-            <rdf:li>store</rdf:li>
-            <rdf:li>save</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title />
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <g
-     inkscape:label="Ebene 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-211.19102,-396.83757)">
-    <g
-       id="g4256">
-      <path
-         inkscape:connector-curvature="0"
-         id="rect4140"
-         d="m 265.62633,432.93954 0,7.87298 c 0,4.36157 -2.93599,7.87288 -6.58294,7.87288 l -39.4976,0 c -3.64695,0 -6.58294,-3.51131 -6.58294,-7.87288 l 0,-7.87298"
-         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:3.54330683;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4153"
-         d="m 218.2336,442.58437 42.12198,0"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165365;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <path
-         inkscape:connector-curvature="0"
-         id="path4153-2"
-         d="m 218.2336,437.70445 42.12198,0"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165365;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-      <g
-         transform="matrix(1.4118814,0,0,-1.4118814,-606.07332,1656.9417)"
-         id="g7883">
-        <path
-           inkscape:connector-curvature="0"
-           style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
-           d="m 598.58794,889.75054 0.0659,-0.1417 c 0.97995,-2.08545 1.95973,-4.17081 2.93963,-6.25616 l 0.0528,-0.11242 -0.11433,0 c -1.85373,0 -3.70899,0 -5.56278,0 l -0.10987,0 0.044,0.11242 c 0.87389,2.08535 1.74931,4.17071 2.6232,6.25616 l 0.0619,0.1417 z"
-           id="path3507-6-8-1-6-5-3"
-           sodipodi:nodetypes="cccccccccc" />
-        <path
-           style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.07747102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           d="m 598.75275,872.19645 0,12.46483"
-           id="path5153-5"
-           inkscape:connector-curvature="0" />
-      </g>
-      <path
-         inkscape:connector-curvature="0"
-         id="path4153-2-1"
-         d="m 218.2336,397.72349 42.12198,0"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165365;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
-  </g>
 </svg>
