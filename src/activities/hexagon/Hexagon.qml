@@ -67,7 +67,6 @@ ActivityBase {
         MultiPointTouchArea {
             anchors.fill: parent
             onPressed: checkTouchPoint(touchPoints)
-            onTouchUpdated: checkTouchPoint(touchPoints)
         }
 
         Item {
@@ -112,7 +111,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            interval: 3000
+            interval: 2000
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
