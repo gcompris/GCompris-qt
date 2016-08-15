@@ -257,6 +257,19 @@ add_custom_target(DlAndInstallBundledTranslations
   COMMENT "Download the bundled translation and install them in the build dir"
   )
 
+add_custom_command(
+    OUTPUT doDlAndInstallVCRedistDll
+    COMMAND curl -fsS -o vcredist.7z
+                 http://gcompris.net/private/microsoft/vcredist32/vcredist.7z
+    COMMAND 7z x -y -o${CMAKE_BINARY_DIR} vcredist.7z
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+    )
+# Download and install windows dll
+add_custom_target(DlAndInstallVCRedistDll
+  DEPENDS doDlAndInstallVCRedistDll
+  COMMENT "Download the vcredist dll and install them in the build dir (https://bugreports.qt.io/browse/QTBUG-55216)"
+  )
+
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
 else()

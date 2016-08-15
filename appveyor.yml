@@ -19,13 +19,13 @@ install:
 
     cmake --build build --config RelWithDebInfo --target DlAndInstallBundledConvertedOggs
 
+    cmake --build build --config RelWithDebInfo --target DlAndInstallVCRedistDll
+
     cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DQML_BOX2D_MODULE=disabled -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
 
     curl -fsS -o build/vcruntime140.dll http://gcompris.net/private/microsoft/vcredist32/vcruntime140.dll
 
     curl -fsS -o build/msvcp140.dll http://gcompris.net/private/microsoft/vcredist32/msvcp140.dll
-
-    curl -fsS -o build/api-ms-win-crt-runtime-l1-1.0.dll  http://gcompris.net/private/microsoft/vcredist32/api-ms-win-crt-runtime-l1-1.0.dll
 
     curl -fsS -o build/libgcc_s_dw2-1.dll http://gcompris.net/private/microsoft/vcredist32/libgcc_s_dw2-1.dll
 
