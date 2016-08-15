@@ -34,6 +34,7 @@
 
 class QQuickWindow;
 
+
 /**
  * @class ApplicationInfo
  * @short A general purpose singleton that exposes miscellaneous native
