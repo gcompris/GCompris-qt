@@ -38,6 +38,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -407,6 +408,16 @@ ActivityBase {
                         }
                     }
                 }
+            }
+
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    background.easyMode = dataToSave["mode"];
+                }
+            }
+
+            onSaveData: {
+                dataToSave = {"mode": background.easyMode}
             }
 
             onClose: home()
