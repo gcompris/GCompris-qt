@@ -31,8 +31,8 @@
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
-{}
-
+{
+}
 
 void ActivityInfoTree::setRootMenu(ActivityInfo *rootMenu)
 {
@@ -137,14 +137,14 @@ void ActivityInfoTree::filterByTag(const QString &tag)
 {
     m_menuTree.clear();
     for(const auto &activity: m_menuTreeFull) {
-            if((activity->section().indexOf(tag) != -1 ||
-                tag == "all" ||
-                (tag == "favorite" && activity->favorite())) &&
-                (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
-                 activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
-                m_menuTree.push_back(activity);
-            }
+        if((activity->section().indexOf(tag) != -1 ||
+            tag == "all" ||
+            (tag == "favorite" && activity->favorite())) &&
+            (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
+             activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
+            m_menuTree.push_back(activity);
         }
+    }
     sortByDifficulty();
     emit menuTreeChanged();
 }
@@ -300,24 +300,24 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     m_menuTree.clear();
     if(!text.trimmed().isEmpty()) {
         // perform search on each word entered in the searchField
-        QStringList list = text.split(" ", QString::SkipEmptyParts);
-        Q_FOREACH(const QString &searchTerm, list) {
+        QStringList wordsList = text.split(" ", QString::SkipEmptyParts);
+        Q_FOREACH(const QString &searchTerm, wordsList) {
             const QString trimmedText = searchTerm.trimmed();
             for(const auto &activity: m_menuTreeFull) {
                 if(activity->title().contains(trimmedText, Qt::CaseInsensitive) ||
                     activity->name().contains(trimmedText, Qt::CaseInsensitive) ||
-                    activity->description().contains(trimmedText, Qt::CaseInsensitive)){
+                    activity->description().contains(trimmedText, Qt::CaseInsensitive)) {
 
                     // add the activity only if it's not added
                     if(m_menuTree.indexOf(activity) == -1)
                         m_menuTree.push_back(activity);
                 }
             }
-
         }
     }
     else
         m_menuTree = m_menuTreeFull;
+
     filterEnabledActivities();
     filterLockedActivities();
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(), ApplicationSettings::getInstance()->filterLevelMax());

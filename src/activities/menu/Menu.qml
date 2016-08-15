@@ -26,7 +26,6 @@ import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.2
 import QtQuick.Controls.Styles 1.2
 
-
 /**
  * GCompris' top level menu screen.
  *
@@ -141,11 +140,13 @@ ActivityBase {
         function loadActivity() {
             // @TODO init of item would be better in setsource but it crashes on Qt5.6
             // https://bugreports.qt.io/browse/QTBUG-49793
-            //take the focus away from textField before statring an activity
-            input.focus = false
             activityLoader.item.audioVoices = audioVoices
             activityLoader.item.audioEffects = audioEffects
             activityLoader.item.loading = loading
+
+            //take the focus away from textField before starting an activity
+            searchTextField.focus = false
+
             pageView.push(activityLoader.item)
         }
 
@@ -163,14 +164,13 @@ ActivityBase {
             }
         }
 
-        property int keyboardHeight: (keyboard.keyHeight+keyboard.rowSpacing) * keyboard.rows + keyboard.margin
         // Filters
         property bool horizontal: main.width > main.height
         property int sectionIconWidth: {
             if(horizontal)
-                return  Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))
+                return Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))
             else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
-                return Math.min(100 * ApplicationInfo.ratio, (background.height - (bar.height+keyboardHeight)) / (sections.length + 1))
+                return Math.min(100 * ApplicationInfo.ratio, (background.height - (bar.height+keyboard.height)) / (sections.length + 1))
             else
                 return Math.min(100 * ApplicationInfo.ratio, (background.height - bar.height) / (sections.length + 1))
         }
@@ -194,7 +194,6 @@ ActivityBase {
             } else if(event.key === Qt.Key_Space && currentActiveGrid.currentItem) {
                 currentActiveGrid.currentItem.selectCurrentItem()
             }
-            
         }
         Keys.onReleased: {
             keyboardMode = true
@@ -215,7 +214,7 @@ ActivityBase {
             width: horizontal ? main.width : sectionCellWidth
             height: {
                if(horizontal)
-                   return  sectionCellHeight
+                   return sectionCellHeight
                else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
                    return sectionCellHeight * (sections.length+1)
                else
@@ -226,7 +225,7 @@ ActivityBase {
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
-            keyNavigationWraps: true 
+            keyNavigationWraps: true
             property int initialX: 4
             property int initialY: 4
 
@@ -242,7 +241,6 @@ ActivityBase {
                         sourceSize.height: sectionIconHeight
                         anchors.margins: 5
                         anchors.horizontalCenter: parent.horizontalCenter
-
                     }
 
                     ParticleSystemStarLoader {
@@ -261,7 +259,7 @@ ActivityBase {
                         section.currentIndex = index
                         activity.currentTag = modelData.tag
                         if(modelData.tag === "search") {
-                            ActivityInfoTree.filterBySearch(input.text);
+                            ActivityInfoTree.filterBySearch(searchTextField.text);
                         }
                         else {
                             particles.burst(10)
@@ -289,8 +287,6 @@ ActivityBase {
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
-
-
 
         // Activities
         property int iconWidth: 120 * ApplicationInfo.ratio
@@ -350,7 +346,7 @@ ActivityBase {
             anchors {
                 top: {
                     if(activity.currentTag === "search")
-                        return searchbar.bottom
+                        return searchBar.bottom
                     else
                         return horizontal ? section.bottom : parent.top
                 }
@@ -506,14 +502,12 @@ ActivityBase {
                 maskSource: activitiesMask
                 anchors.fill: activitiesGrid
             }
-
         }
 
-
         Rectangle {
-            id: searchbar
+            id: searchBar
             width: horizontal ?  parent.width/2 : parent.width - (section.width+10)
-            height: horizontal ? parent.height/10 : parent.height/17
+            height: searchTextField.height
             visible: activity.currentTag === "search"
             anchors {
                 top: horizontal ? section.bottom : parent.top
@@ -527,38 +521,33 @@ ActivityBase {
             border.width: 2
             border.color: "black"
             gradient: Gradient {
-               GradientStop { position: 0.3; color: "#000" }
-               GradientStop { position: 0.9; color: "#666" }
-               GradientStop { position: 1.0; color: "#AAA" }
+                GradientStop { position: 0.3; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
             }
 
             TextField {
-                id: input
-                anchors.fill: parent
+                id: searchTextField
+                width: parent.width
                 text: activity.inputText
                 textColor: "black"
-                font.pixelSize: 28
+                font.pointSize: 16
                 font.bold: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 font.family: GCSingletonFontLoader.fontLoader.name
-                activeFocusOnPress:{
-                    //don't let the android keyboard interfere with the virtual keyboard.Both of them should
-                    //not be allowed to work simultaneously
-                    if(ApplicationInfo.isMobile)
-                        return !ApplicationSettings.isVirtualKeyboard
+                // Don't let the android keyboard interfere with the virtual keyboard.
+                // Both of them should not be allowed to work simultaneously
+                activeFocusOnPress: ApplicationInfo.isMobile ? !ApplicationSettings.isVirtualKeyboard : true
 
-                    else
-                        return true
-                }
-                style: TextFieldStyle{
+                style: TextFieldStyle {
                     placeholderTextColor: "black"
                 }
 
                 placeholderText: qsTr("Search specific activities")
                 onTextChanged: {
-                    activity.inputText = input.text
-                    ActivityInfoTree.filterBySearch(input.text);
+                    activity.inputText = searchTextField.text
+                    ActivityInfoTree.filterBySearch(searchTextField.text);
                 }
             }
         }
@@ -566,23 +555,22 @@ ActivityBase {
         VirtualKeyboard {
             id: keyboard
             readonly property var letter: ActivityInfoTree.characters
-            property int rows;
             width: parent.width
             visible: activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             onKeypress: {
                 if(text == keyboard.backspace) {
-                    input.text = input.text.slice(0, -1);
+                    searchTextField.text = searchTextField.text.slice(0, -1);
                 }
                 else if(text == keyboard.space) {
-                    input.text = input.text.concat(" ");
+                    searchTextField.text = searchTextField.text.concat(" ");
                 }
                 else {
-                    input.text = input.text.concat(text);
+                    searchTextField.text = searchTextField.text.concat(text);
                 }
             }
-            function populate(){
+            function populate() {
                var tmplayout = [];
                var row = 0;
                var offset = 0;
@@ -598,7 +586,7 @@ ActivityBase {
                            tmplayout[row] = new Array();
                            tmplayout[row].push({ label: keyboard.backspace });
                            tmplayout[row].push({ label: keyboard.space });
-                           row++;
+                           row ++;
                        }
                    }
 
@@ -608,11 +596,10 @@ ActivityBase {
                    offset += j;
                    row ++;
                }
-               if(letter.length <= 100){
+               if(letter.length <= 100) {
                    tmplayout[0].push({ label: keyboard.space });
                    tmplayout[row-1].push({ label: keyboard.backspace });
                }
-               keyboard.rows = 3;
                keyboard.layout = tmplayout
            }
         }
@@ -625,17 +612,17 @@ ActivityBase {
             }
             anchors.bottom: keyboard.visible ? keyboard.top : parent.bottom
             onAboutClicked: {
-                input.focus = false
+                searchTextField.focus = false
                 displayDialog(dialogAbout)
             }
 
             onHelpClicked: {
-                input.focus = false
+                searchTextField.focus = false
                 displayDialog(dialogHelp)
             }
 
             onConfigClicked: {
-                input.focus = false
+                searchTextField.focus = false
                 dialogActivityConfig.active = true
                 dialogActivityConfig.loader.item.loadFromConfig()
                 displayDialog(dialogActivityConfig)

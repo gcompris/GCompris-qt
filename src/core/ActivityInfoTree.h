@@ -27,27 +27,27 @@
 
 class ActivityInfoTree : public QObject
 {
-	Q_OBJECT
-	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
-	Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
+    Q_OBJECT
+    Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
+    Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
     Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
     Q_PROPERTY(QVariantList characters READ allCharacters CONSTANT)
 
 public:
-	explicit ActivityInfoTree(QObject *parent = 0);
-	QQmlListProperty<ActivityInfo> menuTree();
+    explicit ActivityInfoTree(QObject *parent = 0);
+    QQmlListProperty<ActivityInfo> menuTree();
     ActivityInfo *getRootMenu() const;
-	void setRootMenu(ActivityInfo *rootMenu);
-	ActivityInfo *menuTree(int) const;
-	void setCurrentActivity(ActivityInfo *currentActivity);
-	ActivityInfo *getCurrentActivity() const;
-	ActivityInfo *getParentActivity(ActivityInfo *root, ActivityInfo *menu);
-	void menuTreeAppend(ActivityInfo *menu);
-	void menuTreeAppend(QQmlEngine *engine,
-						const QDir &menuDir, const QString &menuFile);
-	void sortByDifficulty();
-	void sortByName();
-        QVariantList allCharacters();
+    void setRootMenu(ActivityInfo *rootMenu);
+    ActivityInfo *menuTree(int) const;
+    void setCurrentActivity(ActivityInfo *currentActivity);
+    ActivityInfo *getCurrentActivity() const;
+    ActivityInfo *getParentActivity(ActivityInfo *root, ActivityInfo *menu);
+    void menuTreeAppend(ActivityInfo *menu);
+    void menuTreeAppend(QQmlEngine *engine,
+                        const QDir &menuDir, const QString &menuFile);
+    void sortByDifficulty();
+    void sortByName();
+    QVariantList allCharacters();
 
 protected slots:
     Q_INVOKABLE void filterByTag(const QString &tag);
@@ -76,23 +76,23 @@ private:
 
     struct SortByDifficulty
     {
-		bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
-		{
-			return a->difficulty() < b->difficulty();
-		}
-	};
+        bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
+        {
+            return a->difficulty() < b->difficulty();
+        }
+    };
 
 	struct SortByName
 	{
-		bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
-		{
-			return a->name() < b->name();
-		}
+            bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
+            {
+                return a->name() < b->name();
+            }
 	};
 
 public:
-	static void init();
-	static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
+    static void init();
+    static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
     void exportAsSQL();
 };
 
