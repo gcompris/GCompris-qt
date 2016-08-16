@@ -78,7 +78,7 @@ Rectangle {
 
                 switch(widget.name) {
                 case "candy":
-                    ////////////////////// START of EASY mode
+                    // Easy mode
                     if (background.easyMode) {
                         if (background.currentCandies < items.totalCandies) {
                             items.acceptCandy = true
@@ -88,7 +88,6 @@ Rectangle {
                                 var childCoordinate = drop_areas.mapToItem(background, currentChild.x, currentChild.y)
                                 //coordinates of "boy/girl rectangle" in background coordinates
                                 if ((listModel.get(i).countS + 1) > 8) {
-                                    print("in if: ", listModel.get(i).countS+1 + " -------------> CONINTUE ------->")
                                     continue
                                 }
 
@@ -97,7 +96,8 @@ Rectangle {
                                 if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
                                         currentElement.y > childCoordinate.y + currentChild.childImage.height &&
                                         currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
-                                    listModel.setProperty(i, "countS", listModel.get(i).countS+1)
+                                    repeater_drop_areas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
+                                    listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
                                     background.currentCandies ++
                                 }
 
@@ -123,7 +123,7 @@ Rectangle {
                             element.opacity = 0.6
                         }
 
-                    ////////////////////// END of EASY mode
+                    // Hard mode
                     } else {
                         if (background.currentCandies < widget.total) {
                             items.acceptCandy = true
@@ -139,12 +139,12 @@ Rectangle {
                                         currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
 
                                     if ((listModel.get(i).countS + 1) > 8) {
-                                        print("in if: ", listModel.get(i).countS+1 + " -------------> CONINTUE ------->  i " + i)
                                         background.wrongMove.fadeInOut.start()
                                         continue
                                     }
 
-                                    listModel.setProperty(i, "countS", listModel.get(i).countS+1)
+                                    repeater_drop_areas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
+                                    listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
                                     background.currentCandies ++
                                 }
                             }
@@ -153,7 +153,6 @@ Rectangle {
                                 background.resetCandy()
                         }
                     }
-                    /////////////////// END of HARD mode
                     break;
 
                 case "basket":
@@ -174,11 +173,15 @@ Rectangle {
                                 widget.current ++
                                 listModel.append({countS: 0, nameS: widget.name});
 
-                                // set the candies already "preset"
-                                if (widget.name == "boy")
+                                // set the candies already "present"
+                                if (widget.name == "boy") {
+                                    repeater_drop_areas.itemAt(listModel.count-1).candyCount.text = background.placedInBoys
                                     listModel.setProperty(listModel.count-1, "countS", background.placedInBoys)
-                                if (widget.name == "girl")
+                                }
+                                if (widget.name == "girl") {
+                                    repeater_drop_areas.itemAt(listModel.count-1).candyCount.text = background.placedInGirls
                                     listModel.setProperty(listModel.count-1, "countS", background.placedInGirls)
+                                }
 
                                 if (widget.current === widget.total) {
                                     widget.canDrag = false

@@ -28,8 +28,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    // TODO: handle Qt 5.7 listModel bug
-
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
@@ -38,7 +36,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+        	dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -67,6 +65,7 @@ ActivityBase {
             property int totalChildren: totalBoys + totalGirls
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
+            property alias repeater_drop_areas: repeater_drop_areas
         }
 
         Loader {
@@ -415,10 +414,11 @@ ActivityBase {
                     background.easyMode = dataToSave["mode"];
                 }
             }
-
+ 
             onSaveData: {
                 dataToSave = {"mode": background.easyMode}
             }
+ 
 
             onClose: home()
         }
