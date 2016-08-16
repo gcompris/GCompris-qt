@@ -101,6 +101,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.background.startedHelp = false
 
     setUp()
 }
