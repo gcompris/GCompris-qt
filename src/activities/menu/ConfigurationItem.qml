@@ -31,6 +31,8 @@ Item {
     id: dialogConfig
 
     property var languages: allLangs.languages
+    property string servername
+    property bool connected: false
     height: column.height
 
     LanguageList {
@@ -521,7 +523,172 @@ Item {
                 }
             }
         }
+
+        Button {
+            id: connectToServer
+            style: GCButtonStyle {}
+            text: qsTr("Connect to server")
+            onClicked: {
+                ClientNetworkMessages.connectToServer(ClientNetworkMessages.host)
+            }
+        }
+
+        Rectangle {
+            id: rect
+            color: 'white'
+            width: parent.width
+            height: 50
+            TextInput {
+                id: serverHost
+                anchors.fill: parent
+                focus: true
+                font.weight: Font.DemiBold
+                font.pointSize: ApplicationSettings.baseFontSize
+                + 14 * ApplicationInfo.fontRatio
+                horizontalAlignment: Text.AlignHCenter
+                onTextChanged: {
+                    ClientNetworkMessages.host = serverHost.text;
+                }
+            }
+        }
+
+        Rectangle {
+            height: 50
+            color: 'yellow'
+            width: parent.width
+            TextInput {
+                id: serverPort
+                anchors.fill: parent
+                focus: true
+                font.weight: Font.DemiBold
+                font.pointSize: ApplicationSettings.baseFontSize
+                + 14 * ApplicationInfo.fontRatio
+                horizontalAlignment: Text.AlignHCenter
+                onTextChanged: {
+                    ClientNetworkMessages.port = text;
+                }
+            }
+        }
+
+        Flow {
+            layoutDirection: Qt.LeftToRight
+            spacing: 30
+            GCText {
+                text: qsTr("Available Servers")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+        }
+
+        ListView {
+            id: view
+
+            spacing: 10
+            width:  parent.width/6
+            height: 300
+            model:ClientNetworkMessages.serversAvailable
+            delegate: Button {
+                id: button
+                width: serverName.width + signalRect.width
+                height: view.height/7
+                GCText {
+                    id: serverName
+                    text: modelData
+                    fontSize: smallSize
+                    wrapMode: Text.WordWrap
+                }
+
+                style: GCButtonStyle {}
+                onClicked: {
+                    connectBackground.visible = true
+                    servername = serverName.text
+                }
+
+                Rectangle {
+                    id: signalRect
+
+                    width: parent.width/10
+                    height: parent.height/1.5
+                    radius: parent.width
+                    color: connected ? "green" : "red"
+                    anchors.right: parent.right
+                    anchors.rightMargin: 10
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+            }
+        }
     }
+
+    Button {
+        id: connectBackground
+        width: parent.width/3
+        height: 200
+        style: GCButtonStyle {}
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.horizontalCenterOffset: 20
+
+        visible: false
+
+        GCText {
+            id: info
+            text: qsTr("Do you wish to make a connection with %1?").arg(servername)
+            anchors.fill: parent
+            fontSizeMode: Text.Fit
+            anchors.horizontalCenter: parent.horizontalCenter
+            color: "black"
+        }
+        Button {
+            id: connect
+            anchors.bottom: parent.bottom
+            width: parent.width/2
+            height: parent.height/4
+            style: GCButtonStyle {}
+            GCText {
+                id: connectText
+                text: qsTr("Connect")
+                anchors.centerIn: parent
+                fontSize: smallSize
+                wrapMode: Text.WordWrap
+
+            }
+            onClicked: {
+                ClientNetworkMessages.connectToServer(servername);
+                connected = true
+                connectBackground.visible = false
+            }
+        }
+        Button {
+            id: cancel
+            anchors.bottom: parent.bottom
+            anchors.left: connect.right
+            width: parent.width/2
+            height: parent.height/4
+            style: GCButtonStyle {}
+            GCText {
+                id: cancelText
+                text: qsTr("Cancel")
+                anchors.centerIn: parent
+                fontSize: smallSize
+                wrapMode: Text.WordWrap
+
+            }
+            onClicked: {
+                connectBackground.visible = false
+            }
+        }
+    }
+    /*
+    ListView {
+        id: allServers
+        model: 10
+        delegate: Rectangle {
+            id: serverRect
+            width: 50
+            height: 100
+            color: "black"
+        }
+    }*/
 
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
@@ -730,5 +897,3 @@ Item {
         );
     }
 }
-
-    
