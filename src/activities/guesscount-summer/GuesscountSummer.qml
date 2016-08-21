@@ -146,9 +146,36 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content:Column {
+                spacing: 10
+                anchors.top:row1.bottom
+                anchors.topMargin: 10
+                width: parent.width
+                height: parent.height
+                Repeater{
+                id:levels
+                model: 6
+                Admin{
+                id: level
+                level: modelData+1
+                width: background.width
+                height: background.height/10
+            }
+}
+            }
+            onClose: home()
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config}
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                displayDialog(dialogActivityConfig)
+            }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -159,8 +186,9 @@ ActivityBase {
             onNextLevelClicked: {
                 items.levelchanged=true
                 Activity.nextLevel()
-                }
+            }
             onHomeClicked: activity.home()
+
         }
 
         Bonus {
