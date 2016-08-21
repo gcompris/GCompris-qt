@@ -82,7 +82,8 @@ Item {
         anchors.verticalCenter: parent.verticalCenter
         // We need to manually horizonally center the text, because in wrongAnswerAnimation,
         // the x of the text is changed, which would not work if we use an anchor layout.
-        property int horizontallyCenteredX: (button.width - width) >> 1;
+        property int horizontallyCenteredX: (button.width - contentWidth) >> 1;
+        width: button.width
         x: horizontallyCenteredX;
         fontSizeMode: Text.Fit
         font.bold: true
