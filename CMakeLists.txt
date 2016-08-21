@@ -144,6 +144,12 @@ if(WITH_DOWNLOAD)
   set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
 endif(WITH_DOWNLOAD)
 
+option(WITH_SERVER "Allow broadcast from server to detect clients" OFF)
+if(WITH_SERVER)
+  set(ANDROID_WIFI_BROADCAST_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\" />\n
+    <uses-permission android:name=\"android.permission.CHANGE_WIFI_MULTICAST_STATE\" />")
+endif(WITH_SERVER)
+
 # Set output directory
 if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)

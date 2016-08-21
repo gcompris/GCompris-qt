@@ -58,6 +58,8 @@ import java.util.ArrayList;
 import android.view.WindowManager;
 import java.text.Collator;
 import java.util.Locale;
+import android.net.wifi.WifiManager;
+import android.net.wifi.WifiManager.MulticastLock;
 
 public class GComprisActivity extends QtActivity
 {
@@ -91,6 +93,13 @@ public class GComprisActivity extends QtActivity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        /* Turn off multicast filter */
+        WifiManager wifi = (WifiManager)getSystemService(Context.WIFI_SERVICE);
+	if (wifi != null) {
+            WifiManager.MulticastLock lock = wifi.createMulticastLock("mylock");
+            lock.acquire();
+	}
+
         Intent intent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
         intent.setPackage("com.android.vending");
         bindService(intent,
