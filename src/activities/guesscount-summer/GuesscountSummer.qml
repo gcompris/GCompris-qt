@@ -36,8 +36,10 @@ ActivityBase {
         color: "#ABCDEF"
         signal start
         signal stop
+        property string mode: "builtin"
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -62,6 +64,28 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Loader {
+            id: admin
+            active: false
+            sourceComponent: Column {
+                spacing: 10
+                width: parent.width
+                height: parent.height
+
+                Repeater{
+                    id:levels
+                    model: 6
+                    Admin{
+                        id:level
+                        level: modelData+1
+                        width: parent.width
+                        height: parent.height
+                    }
+                }
+            }
+
+        }
 
         Rectangle {
             id: row1
@@ -149,24 +173,65 @@ ActivityBase {
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
-            content:Column {
-                spacing: 10
-                anchors.top:row1.bottom
-                anchors.topMargin: 10
-                width: parent.width
-                height: parent.height
-                Repeater{
-                id:levels
-                model: 6
-                Admin{
-                id: level
-                level: modelData+1
-                width: background.width
-                height: background.height/10
-            }
-}
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+
+                    property var availableModes: [
+                        { "text": qsTr("Admin"), "value": "admin" },
+                        { "text": qsTr("BuiltIn"), "value": "builtin" }
+                    ]
+
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: modeBox
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select your mode")
+                        }
+                        Column {
+                            visible: modeBox.currentIndex==0
+                            spacing: 10
+                            width: parent.width
+                            Repeater{
+                                id:levels
+                                model: 10
+                                Admin{
+                                    id: level
+                                    level: modelData+1
+                                    width: background.width
+                                    height: background.height/10
+                                }
+                            }
+                        }
+                    }
+                }
             }
             onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    mode = dataToSave["mode"];
+                    Activity.mode = dataToSave["mode"];
+                }
+            }
+
+            onSaveData: {
+                mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                dataToSave = {"mode": mode}
+                Activity.mode = mode;
+            }
+
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
         }
 
         Bar {
@@ -174,6 +239,8 @@ ActivityBase {
             content: BarEnumContent { value: help | home | level | config}
             onConfigClicked: {
                 dialogActivityConfig.active = true
+                // Set default values
+                dialogActivityConfig.setDefaultValues();
                 displayDialog(dialogActivityConfig)
             }
             onHelpClicked: {
