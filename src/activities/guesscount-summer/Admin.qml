@@ -27,7 +27,7 @@ import "guesscount-summer.js" as Activity
 
 Row {
     id: operator_row
-    spacing: 40
+    spacing: 30
     property int level
     Rectangle {
         id: operator
@@ -35,6 +35,7 @@ Row {
         height: parent.height
         radius: 20.0;
         color: "red"
+        state: "selected"
         GCText {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
@@ -43,12 +44,40 @@ Row {
         }
     }
     Repeater {
-        model: Activity.signs
-        delegate: DragTile{
-            id: root
-            type: "operators"
-            width: parent.width*0.1
+        model: Activity.operators
+        delegate: Rectangle {
+            id: tile
+            width: 100
             height: parent.height
+            radius: 20
+            opacity: 0.7
+            state: "selected"
+            GCText {
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                text: modelData
+                fontSize: mediumSize
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if(tile.state=="selected")
+                        tile.state="notselected"
+                    else
+                        tile.state="selected"
+                }
+            }
+            states: [
+                State {
+                    name: "selected"
+                    PropertyChanges { target: tile; color: "red"}
+                },
+                State {
+                    name: "notselected"
+                    PropertyChanges { target: tile; color: "green"}
+                }
+            ]
         }
     }
 }
+

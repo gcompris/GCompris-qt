@@ -23,12 +23,13 @@
 .import QtQuick 2.0 as Quick
 
 var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
-var signs = [
+var operators = [
             "+",
             "-",
             "/",
             "*",
         ]
+var mode = null
 var dataset = [
             [
                 [[1,2],3],
