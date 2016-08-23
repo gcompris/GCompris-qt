@@ -133,10 +133,10 @@ set(ACTIVATION_MODE "no" CACHE STRING "Policy for activation [no|inapp|internal]
 option(WITH_DEMO_ONLY "Include only demo activities" OFF)
 
 option(WITH_DOWNLOAD "Internal download" ON)
-if(WITH_DOWNLOAD)
-  set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
-  set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
-endif(WITH_DOWNLOAD)
+# @FIXME These permissions should be removed if download is disable
+#        but it makes the application crash on exit (tested on Andoid 6)
+set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
+set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
 
 # Set output directory
 if(CMAKE_HOST_APPLE)
