@@ -65,7 +65,7 @@ var dataset = [
             ]
         ]
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = dataset.length
 var items
 
 function start(items_) {
@@ -80,6 +80,7 @@ function stop() {
 function initLevel() {
     default_operators = items.parser.parseFromUrl(builtinFile)
     items.bar.level = currentLevel + 1
+    items.currentlevel = currentLevel
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.data=dataset[currentLevel]

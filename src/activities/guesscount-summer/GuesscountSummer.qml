@@ -62,8 +62,9 @@ ActivityBase {
             property alias parser: parser
             property var level_arr
             property alias load: dialogActivityConfig
-            property var operators
+            property alias operators: items.level_arr
             property string mode
+            property int currentlevel
         }
 
         onStart:  if (activity.needRestart) {
@@ -155,7 +156,8 @@ ActivityBase {
                 width: parent.width
                 height: parent.height/10
                 mode: items.mode
-                operators: items.level_arr
+                operators: items.operators
+                level: items.currentlevel
             }
             Operand_row {
                 id: operand_row
