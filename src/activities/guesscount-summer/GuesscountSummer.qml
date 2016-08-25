@@ -29,6 +29,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+    property bool needRestart: true
 
     pageComponent: Rectangle {
         id: background
@@ -37,7 +38,6 @@ ActivityBase {
         signal start
         signal stop
         property string mode: "builtin"
-
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
@@ -60,10 +60,22 @@ ActivityBase {
             property GCAudio audioEffects: activity.audioEffects
             property bool solved
             property bool levelchanged : false
+            property alias parser: parser
+            property var level_arr
+
         }
 
-        onStart: { Activity.start(items) }
+        onStart:  if (activity.needRestart) {
+                Activity.start(items);
+                activity.needRestart = false;
+            } else
+                Activity.initLevel();
         onStop: { Activity.stop() }
+
+        JsonParser {
+            id: parser
+            onError: console.error("Guesscount: Error parsing JSON: " + msg);
+        }
 
         Loader {
             id: admin
@@ -198,13 +210,16 @@ ActivityBase {
                             width: parent.width
                             Repeater{
                                 id:levels
-                                model: 10
-                                Admin{
+                                model: items.level_arr.length
+                                Admin {
                                     id: level
-                                    level: modelData+1
+                                    level: modelData
+                                    level_operators: items.level_arr
                                     width: background.width
                                     height: background.height/10
+                                    Component.onCompleted: {console.log("level "+modelData+"   "+ level_operators[modelData])}
                                 }
+
                             }
                         }
                     }
@@ -212,17 +227,22 @@ ActivityBase {
             }
             onClose: home()
             onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    mode = dataToSave["mode"];
-                    Activity.mode = dataToSave["mode"];
+                if(dataToSave && dataToSave["mode"] ) {
+                    console.log("loaded data :"+ dataToSave['level_arr'])
+                    mode = dataToSave["mode"]
+                    items.level_arr = dataToSave["level_arr"]
+                    Activity.mode = dataToSave["mode"]
                 }
             }
 
             onSaveData: {
                 mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                dataToSave = {"mode": mode}
+                console.log("saving data:  "+items.level_arr)
+                dataToSave = {"mode": mode,"level_arr":items.level_arr}
                 Activity.mode = mode;
+                activity.needRestart=true
             }
+
 
             function setDefaultValues() {
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
