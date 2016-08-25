@@ -30,6 +30,7 @@ Row {
     spacing: 40
     property string mode
     property var operators
+    property int level
     Rectangle {
         id: operator
         width: parent.width*0.328
@@ -44,12 +45,13 @@ Row {
         }
     }
     Repeater {
-        model:  mode=="builtin" ? Activity.default_operators[Activity.currentLevel] : operators[Activity.currentLevel]
+        model:  mode=="builtin" ? Activity.default_operators[level] : operators[level]
         delegate: DragTile{
             id: root
             type: "operators"
             width: operator_row.width*0.1
             height: operator_row.height
         }
+        //Component.onCompleted: console.log("operators     :"+operators)
     }
 }
