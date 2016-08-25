@@ -45,7 +45,7 @@ Row {
         }
     }
     Repeater {
-        model: Activity.operators
+        model: Activity.default_operators[level]
         delegate: Rectangle {
             id: tile
             width: 100
@@ -56,7 +56,7 @@ Row {
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                text: modelData
+                text: qsTr(modelData)
                 fontSize: mediumSize
             }
             MouseArea {

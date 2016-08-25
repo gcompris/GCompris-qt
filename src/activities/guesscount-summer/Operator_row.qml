@@ -28,6 +28,8 @@ import "guesscount-summer.js" as Activity
 Row {
     id: operator_row
     spacing: 40
+    property string mode
+    property var operators
     Rectangle {
         id: operator
         width: parent.width*0.328
@@ -42,12 +44,12 @@ Row {
         }
     }
     Repeater {
-        model: Activity.signs
+        model:  mode=="builtin" ? Activity.default_operators[Activity.currentLevel] : operators[Activity.currentLevel]
         delegate: DragTile{
             id: root
             type: "operators"
-            width: parent.width*0.1
-            height: parent.height
+            width: operator_row.width*0.1
+            height: operator_row.height
         }
     }
 }

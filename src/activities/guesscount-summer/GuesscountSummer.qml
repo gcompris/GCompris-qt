@@ -37,7 +37,6 @@ ActivityBase {
         color: "#ABCDEF"
         signal start
         signal stop
-        property string mode: "builtin"
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
@@ -62,7 +61,9 @@ ActivityBase {
             property bool levelchanged : false
             property alias parser: parser
             property var level_arr
-
+            property alias load: dialogActivityConfig
+            property var operators
+            property string mode
         }
 
         onStart:  if (activity.needRestart) {
@@ -153,6 +154,8 @@ ActivityBase {
             Operator_row {
                 width: parent.width
                 height: parent.height/10
+                mode: items.mode
+                operators: items.level_arr
             }
             Operand_row {
                 id: operand_row
@@ -210,14 +213,14 @@ ActivityBase {
                             width: parent.width
                             Repeater{
                                 id:levels
-                                model: items.level_arr.length
+                                model: Activity.dataset.length
                                 Admin {
                                     id: level
                                     level: modelData
                                     level_operators: items.level_arr
                                     width: background.width
                                     height: background.height/10
-                                    Component.onCompleted: {console.log("level "+modelData+"   "+ level_operators[modelData])}
+                                    Component.onCompleted: {console.log("level "+modelData+"   "+ level_operators.length)}
                                 }
 
                             }
@@ -228,25 +231,28 @@ ActivityBase {
             onClose: home()
             onLoadData: {
                 if(dataToSave && dataToSave["mode"] ) {
+                    items.mode = dataToSave["mode"]
+                    if(dataToSave["level_arr"]==undefined)
+                        dataToSave["level_arr"]=[]
                     console.log("loaded data :"+ dataToSave['level_arr'])
-                    mode = dataToSave["mode"]
-                    items.level_arr = dataToSave["level_arr"]
-                    Activity.mode = dataToSave["mode"]
+                    if(dataToSave["level_arr"].length!=Activity.dataset.length)
+                        items.level_arr=Activity.add_empty_array(dataToSave["level_arr"].length,Activity.dataset.length)
+                    else
+                        items.level_arr = dataToSave["level_arr"]
                 }
             }
 
             onSaveData: {
-                mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                items.mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
                 console.log("saving data:  "+items.level_arr)
-                dataToSave = {"mode": mode,"level_arr":items.level_arr}
-                Activity.mode = mode;
+                dataToSave = {"mode": items.mode,"level_arr":items.level_arr}
                 activity.needRestart=true
             }
 
 
             function setDefaultValues() {
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === mode) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
                         dialogActivityConfig.configItem.modeBox.currentIndex = i;
                         break;
                     }
@@ -259,7 +265,6 @@ ActivityBase {
             content: BarEnumContent { value: help | home | level | config}
             onConfigClicked: {
                 dialogActivityConfig.active = true
-                // Set default values
                 dialogActivityConfig.setDefaultValues();
                 displayDialog(dialogActivityConfig)
             }

@@ -24,13 +24,13 @@
 .import GCompris 1.0 as GCompris
 
 var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
-var operators = [
+/*var operators = [
             "+",
             "-",
             "/",
             "*",
-        ]
-var mode = null
+        ]*/
+var default_operators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = [
@@ -78,6 +78,7 @@ function stop() {
 }
 
 function initLevel() {
+    default_operators = items.parser.parseFromUrl(builtinFile)
     items.bar.level = currentLevel + 1
     items.sublevel = 1
     items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
@@ -165,7 +166,6 @@ function check_answer(row){
     {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
         items.timer.start()
-        //items.dialog.visible=true
     }
     else if(items.sublevel==dataset[currentLevel].length)
     {
@@ -185,6 +185,12 @@ function check(operator,array){
         }
     }
     return false
+}
+function add_empty_array(start,length){
+    var temp=[]
+    for(var i=start;i<length;i++)
+        temp.push([])
+    return temp
 }
 
 
