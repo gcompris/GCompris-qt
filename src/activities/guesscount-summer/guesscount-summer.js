@@ -21,6 +21,7 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris
 
 var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
 var operators = [
@@ -30,6 +31,8 @@ var operators = [
             "*",
         ]
 var mode = null
+var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
+var builtinFile = baseUrl + "/levels-default.json";
 var dataset = [
             [
                 [[1,2],3],
@@ -129,7 +132,7 @@ function calculate(operand1,operator,operand2,operation_row)
     }
     else
     {
-    items.dialog.visible=true
+        items.dialog.visible=true
     }
 
 }
@@ -171,5 +174,17 @@ function check_answer(row){
     }
 }
 
+function sync(array,level){
+    items.level_arr=array
+    console.log("level "+level+"  "+array[level])
+}
+function check(operator,array){
+    for (var i in array){
+        if(array[i]==operator ){
+            return true
+        }
+    }
+    return false
+}
 
 

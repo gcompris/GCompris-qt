@@ -26,9 +26,10 @@ import "../../core"
 import "guesscount-summer.js" as Activity
 
 Row {
-    id: operator_row
+    id: admin
     spacing: 30
     property int level
+    property var level_operators
     Rectangle {
         id: operator
         width: parent.width*0.328
@@ -51,7 +52,7 @@ Row {
             height: parent.height
             radius: 20
             opacity: 0.7
-            state: "selected"
+            state: Activity.check(modelData,level_operators[level]) ? "selected" : "notselected"
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -61,23 +62,28 @@ Row {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    if(tile.state=="selected")
+                    if(tile.state=="selected"){
                         tile.state="notselected"
-                    else
+                        level_operators[level].splice(level_operators[level].indexOf(modelData),1)
+                        Activity.sync(level_operators,level)
+                    }
+                    else{
                         tile.state="selected"
+                        level_operators[level].push(modelData)
+                        Activity.sync(level_operators,level)
+                    }
                 }
             }
             states: [
                 State {
                     name: "selected"
-                    PropertyChanges { target: tile; color: "red"}
+                    PropertyChanges { target: tile; color: "green"}
                 },
                 State {
                     name: "notselected"
-                    PropertyChanges { target: tile; color: "green"}
+                    PropertyChanges { target: tile; color: "red"}
                 }
             ]
         }
     }
 }
-
