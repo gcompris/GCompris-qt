@@ -63,8 +63,30 @@ var dataset = [
                 [[20,5,3],12],
                 [[4,2,2,3],9]
             ],
-
-
+            [
+                [[4,2,3],18],
+                [[6,4,2],1],
+                [[20,5,3],12],
+                [[4,2,2,3],9]
+            ],
+            [
+                [[4,2,3],18],
+                [[6,4,2],1],
+                [[20,5,3],12],
+                [[4,2,2,3],9]
+            ],
+            [
+                [[4,2,3],18],
+                [[6,4,2],1],
+                [[20,5,3],12],
+                [[4,2,2,3],9]
+            ],
+            [
+                [[4,2,3],18],
+                [[6,4,2],1],
+                [[20,5,3],12],
+                [[4,2,2,3],9]
+            ]
         ]
 var currentLevel = 0
 var numberOfLevel = dataset.length
@@ -189,11 +211,10 @@ function check(operator,array){
     }
     return false
 }
-function add_empty_array(start,length){
-    var temp=[]
-    for(var i=start;i<length;i++)
-        temp.push([])
-    return temp
+function add_empty_array(array,length){
+    for(var i=array.length;i<length;i++)
+        array.push([])
+    return array
 }
 
 

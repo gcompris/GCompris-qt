@@ -257,7 +257,7 @@ ActivityBase {
                         dataToSave["level_arr"]=[]
                     console.log("loaded data :"+ dataToSave['level_arr'])
                     if(dataToSave["level_arr"].length!=Activity.dataset.length)
-                        items.level_arr=Activity.add_empty_array(dataToSave["level_arr"].length,Activity.dataset.length)
+                        items.level_arr=Activity.add_empty_array(dataToSave["level_arr"],Activity.dataset.length)
                     else
                         items.level_arr = dataToSave["level_arr"]
                 }
