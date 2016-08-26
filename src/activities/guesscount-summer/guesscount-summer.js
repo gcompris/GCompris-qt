@@ -62,7 +62,9 @@ var dataset = [
                 [[6,4,2],1],
                 [[20,5,3],12],
                 [[4,2,2,3],9]
-            ]
+            ],
+
+
         ]
 var currentLevel = 0
 var numberOfLevel = dataset.length
