@@ -68,10 +68,10 @@ ActivityBase {
         }
 
         onStart:  if (activity.needRestart) {
-                Activity.start(items);
-                activity.needRestart = false;
-            } else
-                Activity.initLevel();
+                      Activity.start(items);
+                      activity.needRestart = false;
+                  } else
+                      Activity.initLevel();
         onStop: { Activity.stop() }
 
         JsonParser {
@@ -98,7 +98,6 @@ ActivityBase {
                     }
                 }
             }
-
         }
 
         Rectangle {
@@ -210,6 +209,7 @@ ActivityBase {
                             label: qsTr("Select your mode")
                         }
                         Row{
+                            id: labels
                             spacing: 20
                             Repeater{
                                 model: 2
@@ -228,22 +228,23 @@ ActivityBase {
                                 }
                             }
                         }
-                        Column {
-                            visible: modeBox.currentIndex==0
-                            spacing: 10
+                        Rectangle{
                             width: parent.width
-                            Repeater{
-                                id:levels
+                            color: "transparent"
+                            height: background.height/1.5
+                            ListView {
+                                anchors.fill: parent
+                                visible: modeBox.currentIndex==0
+                                spacing: 10
                                 model: Activity.dataset.length
-                                Admin {
+                                clip: true
+                                delegate: Admin {
                                     id: level
                                     level: modelData
                                     level_operators: items.level_arr
                                     width: background.width
                                     height: background.height/10
-                                    Component.onCompleted: {console.log("level "+modelData+"   "+ level_operators.length)}
                                 }
-
                             }
                         }
                     }
@@ -339,5 +340,4 @@ ActivityBase {
             }
         }
     }
-
 }

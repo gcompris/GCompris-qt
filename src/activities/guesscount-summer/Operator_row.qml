@@ -52,6 +52,5 @@ Row {
             width: operator_row.width*0.1
             height: operator_row.height
         }
-        //Component.onCompleted: console.log("operators     :"+operators)
     }
 }
