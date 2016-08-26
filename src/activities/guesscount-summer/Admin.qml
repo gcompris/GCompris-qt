@@ -41,7 +41,7 @@ Row {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: mediumSize
-            text: qsTr("Level "+level.toString())
+            text: qsTr("Level "+(level+1).toString())
         }
     }
     Repeater {
