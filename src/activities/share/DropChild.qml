@@ -65,7 +65,7 @@ Rectangle {
 
         color: "#cfecf0"
 
-        property var childCoordinate: repeater_drop_areas.mapToItem(background, dropChild.x, dropChild.y)
+        property var childCoordinate: repeaterDropAreas.mapToItem(background, dropChild.x, dropChild.y)
         property var candyCoord: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
 
         opacity: candyCoord.x > childCoordinate.x &&
@@ -77,65 +77,59 @@ Rectangle {
             anchors.fill: parent
 
             onClicked: {
-                if (items.acceptCandy)
+                if (items.acceptCandy) {
                     // Easy mode
                     if (background.easyMode) {
-                        if (background.currentCandies < items.totalCandies) {
+                        if (background.currentCandies < items.candyWidget.total) {
                             if (listModel.get(index).countS + 1 <= 8) {
                                 //add candies in the first rectangle
-                                repeater_drop_areas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
-                                listModel.setProperty(index,"countS",listModel.get(index).countS + 1)
+                                repeaterDropAreas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
+                                listModel.setProperty(index, "countS", listModel.get(index).countS + 1)
                                 //the current number of candies increases
                                 background.currentCandies ++
                                 //on the last one, the candy image from top goes away (destroy)
-                                if (background.currentCandies === items.totalCandies) {
+                                if (background.currentCandies === items.candyWidget.total) {
                                     background.resetCandy()
                                     candyWidget.element.opacity = 0.6
                                 }
-                                //show the basket if there is a rest
-                                if (background.rest!=0 && background.basketShown() === false)
-                                    items.basketWidget.element.opacity = 1
                             }
                         }
                         else {
                             background.resetCandy()
                             candyWidget.element.opacity = 0.6
                         }
-
+                    }
                     // Hard mode
-                    } else {
+                    else {
                         if (background.currentCandies < items.candyWidget.total) {
                             if (listModel.get(index).countS + 1 <= 8) {
                                 //add candies in the first rectangle
-                                repeater_drop_areas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
-                                listModel.setProperty(index,"countS",listModel.get(index).countS + 1)
+                                repeaterDropAreas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
+                                listModel.setProperty(index, "countS", listModel.get(index).countS + 1)
                                 //the current number of candies increases
                                 background.currentCandies ++
-
-                                //show the basket if there is a rest
-                                if (background.rest!=0 && background.basketShown() === false)
-                                    items.basketWidget.element.opacity = 1
 
                                 if (background.currentCandies + 1 === items.candyWidget.total) {
                                     background.resetCandy()
                                 }
-                            } else {
+                            }
+                            else {
                                 background.wrongMove.fadeInOut.start()
                             }
                         }
                     }
+                }
             }
         }
 
-
         Flow {
-            id: candy_drop_area
+            id: candyDropArea
             spacing: 5
             width: parent.width
             height: parent.height
 
             Repeater {
-                id: repeater_candy_drop_area
+                id: repeaterCandyDropArea
                 model: countS
 
                 Image {
@@ -163,40 +157,43 @@ Rectangle {
                             grid.z++
                         }
 
-                        onReleased:  {
+                        function childContainsCandy(currentChild, candy) {
+                            //coordinates of "boy/girl rectangle" in background coordinates
+                            var child = dropAreas.mapToItem(items.background, currentChild.x, currentChild.y)
+                            return (candy.x > child.x &&
+                                candy.x < child.x + currentChild.area.width &&
+                                candy.y > child.y + currentChild.childImage.height &&
+                                candy.y < child.y + currentChild.childImage.height + currentChild.area.height)
+                        }
+
+                        onReleased: {
                             //move this rectangle/grid to its previous state
                             dropChild.z--
                             grid.z--
 
-                            //check where the candy is being dropped
-                            for (var i=0; i<listModel.count; i++) {
-                                var currentChild = repeater_drop_areas.itemAt(i)
-                                //coordinates of "boy/girl rectangle" in background coordinates
-                                var childCoordinate = drop_areas.mapToItem(items.background, currentChild.x, currentChild.y)
+                            var candyCoordinate = candyArea.parent.mapToItem(background, candyArea.x, candyArea.y)
 
-                                var candyCoordinate = candyArea.parent.mapToItem(background, candyArea.x, candyArea.y)
-                                var wid = items.leftWidget
+                            //check where the candy is being dropped
+                            for (var i = 0 ; i < listModel.count ; i++) {
+                                var currentChild = repeaterDropAreas.itemAt(i)
 
                                 if (currentChild !== dropChild) {
                                     //check if the user wants to put a candy to another rectangle
-                                    if (candyCoordinate.x > childCoordinate.x &&
-                                            candyCoordinate.x < childCoordinate.x + currentChild.area.width &&
-                                            candyCoordinate.y > childCoordinate.y + currentChild.childImage.height &&
-                                            candyCoordinate.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
-                                        //add the candy to the "i"th recthangle
-                                        repeater_drop_areas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
+                                    if (childContainsCandy(currentChild, candyCoordinate)) {
+                                        //add the candy to the i-th rectangle
+                                        repeaterDropAreas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
                                         listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
                                         //remove the candy from current rectangle
-                                        repeater_drop_areas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
+                                        repeaterDropAreas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
                                         listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
                                         break;
                                     }
                                 }
-                                else {
+                                else if (childContainsCandy(currentChild, candyCoordinate)) {
                                     //check if the user wants to put back the candy
-                                    repeater_drop_areas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
+                                    repeaterDropAreas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
                                     //restore the candy to the leftWidget
-                                    background.currentCandies--
+                                    background.currentCandies --
                                     candyWidget.element.opacity = 1
                                     items.candyWidget.canDrag = true
                                     //remove the candy from current rectangle
@@ -211,8 +208,8 @@ Rectangle {
                         }
 
                         //when clicked, it will restore the candy
-                        onClicked:  {
-                            repeater_drop_areas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
+                        onClicked: {
+                            repeaterDropAreas.itemAt(rect2.indexS).candyCount.text = listModel.get(rect2.indexS).countS - 1
                             background.currentCandies--
                             candyWidget.element.opacity = 1
                             items.candyWidget.canDrag = true

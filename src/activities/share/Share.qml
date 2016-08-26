@@ -1,4 +1,4 @@
-/* GCompris - share.qml
+/* GCompris - Share.qml
  *
  * Copyright (C) 2016 Stefan Toncu <stefan.toncu29@gmail.com>
  *
@@ -65,7 +65,7 @@ ActivityBase {
             property int totalChildren: totalBoys + totalGirls
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
-            property alias repeater_drop_areas: repeater_drop_areas
+            property alias repeaterDropAreas: repeaterDropAreas
         }
 
         Loader {
@@ -100,16 +100,6 @@ ActivityBase {
             candyWidget.element.rotation = 0
         }
 
-        //searches in the board for the basket; if it exists, returns true
-        function basketShown() {
-            for (var i=0; i<listModel.count; i++) {
-                if (repeater_drop_areas.itemAt(i).name === "basket" && background.rest != 0) {
-                    return true
-                }
-            }
-            return false
-        }
-
         //check if the answer is correct
         function check() {
             background.resetCandy()
@@ -117,21 +107,20 @@ ActivityBase {
 
             var ok = 0
             var okRest = 0
-            var rest = items.totalCandies - Math.floor(items.totalCandies/items.totalChildren) * items.totalChildren
 
             if (listModel.count >= items.totalChildren) {
-                for (var i=0; i<listModel.count; i++)
+                for (var i = 0 ; i < listModel.count ; i++) {
                     if (listModel.get(i).nameS === "basket")
                         okRest = listModel.get(i).countS
                     else if (listModel.get(i).countS === Math.floor(items.totalCandies/items.totalChildren))
-                        ok++
+                        ok ++
+                }
 
                 //condition without rest
                 if (rest == 0 && ok == items.totalChildren) {
                     bonus.good("flower")
                     return
                 }
-
                 //condition with rest
                 else if (rest == okRest && ok == items.totalChildren) {
                     bonus.good("tux")
@@ -184,14 +173,14 @@ ActivityBase {
             }
 
             Flow {
-                id: drop_areas
+                id: dropAreas
                 spacing: 10
 
                 width: parent.width
                 height: parent.height
 
                 Repeater {
-                    id: repeater_drop_areas
+                    id: repeaterDropAreas
                     model: listModel
 
                     DropChild {
@@ -221,6 +210,13 @@ ActivityBase {
             property alias text: instructionTxt.text
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            //shows/hides the Instruction
+            MouseArea {
+                anchors.fill: parent
+                onClicked: instruction.hide()
+                enabled: instruction.opacity !== 0
+            }
 
             function show() {
                 if(text)
@@ -287,63 +283,33 @@ ActivityBase {
                         onPressed: okButton.opacity = 0.6
                         onReleased: okButton.opacity = 1
                         onClicked: background.check()
-
                     }
                 }
 
-                WidgetOption {
+                ChildWidget {
                     id: girlWidget
-                    src: "resource/images/girl.svg"
                     name: "girl"
                     total: items.totalGirls
                     current: background.currentGirls
+                    placedInChild: background.placedInGirls
                 }
 
-                WidgetOption {
+                ChildWidget {
                     id: boyWidget
-                    src: "resource/images/boy.svg"
                     name: "boy"
                     total: items.totalBoys
                     current: background.currentBoys
+                    placedInChild: background.placedInBoys
                 }
 
-                WidgetOption {
+                CandyWidget {
                     id: candyWidget
-                    src: "resource/images/candy.svg"
-                    name: "candy"
                     total: background.easyMode ? items.totalCandies : 8 * items.totalChildren + 1
                     current: background.currentCandies
-
-                    //swing animation for candies
-                    SequentialAnimation {
-                        id: anim
-                        running: items.acceptCandy ? true : false
-                        loops: Animation.Infinite
-                        NumberAnimation {
-                            target: candyWidget.element
-                            property: "rotation"
-                            from: -10; to: 10
-                            duration: 400 + Math.floor(Math.random() * 400)
-                            easing.type: Easing.InOutQuad
-                        }
-                        NumberAnimation {
-                            target: candyWidget.element
-                            property: "rotation"
-                            from: 10; to: -10
-                            duration: 400 + Math.floor(Math.random() * 400)
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
                 }
 
-                WidgetOption {
+                BasketWidget {
                     id: basketWidget
-                    src: "resource/images/basket.svg"
-                    name: "basket"
-                    element {
-                        opacity: 0
-                        Behavior on opacity { PropertyAnimation { duration: 500 } }
-                    }
                 }
             }
         }
@@ -363,7 +329,7 @@ ActivityBase {
                 id: fadeInOut
                 PropertyAction { target: wrongMove; property: "z"; value: 5 }
                 NumberAnimation { target: wrongMove; property: "opacity"; to: 1; duration: 300 }
-                NumberAnimation { target: wrongMove; property: "opacity"; to: 1; duration: 500 }
+                NumberAnimation { target: wrongMove; property: "opacity"; to: 1; duration: 1000 }
                 NumberAnimation { target: wrongMove; property: "opacity"; to: 0; duration: 200 }
                 PropertyAction { target: wrongMove; property: "z"; value: -5 }
             }
@@ -377,7 +343,7 @@ ActivityBase {
             opacity: wrongMove.opacity
             z: wrongMove.z
             color: "#404040"
-            text: qsTr(" Too many candies!! ")
+            text: qsTr("Too many candies!")
         }
 
         DialogActivityConfig {
@@ -401,8 +367,8 @@ ActivityBase {
                                 background.easyMode = checked
                                 if (checked == false)
                                     candyWidget.element.opacity = 1
-                                else Activity.reloadRandom()
-                                print("easyModeBox: ",checked)
+                                else
+                                    Activity.reloadRandom()
                             }
                         }
                     }
@@ -414,11 +380,10 @@ ActivityBase {
                     background.easyMode = dataToSave["mode"];
                 }
             }
- 
+
             onSaveData: {
                 dataToSave = {"mode": background.easyMode}
             }
- 
 
             onClose: home()
         }

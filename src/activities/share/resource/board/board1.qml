@@ -25,32 +25,32 @@ import QtQuick 2.0
 QtObject {
     property variant levels : [
         {
-            "instruction" : qsTr("George wants to equally share 3 candies between his friends. They are 2. One girl and one boy. Can he equally split the candies to his friends? Place first the children in center, then drag the candies to each of them. Be careful, a rest will remain!"),
-            "totalBoys" : 1,
-            "totalGirls" : 1,
-            "totalCandies" : 3,
+            "instruction": qsTr("George wants to equally share 3 candies between his friends. They are 2. One girl and one boy. Can he equally split the candies to his friends? Place first the children in center, then drag the candies to each of them. Be careful, a rest will remain!"),
+            "totalBoys": 1,
+            "totalGirls": 1,
+            "totalCandies": 3,
             "showCount": true,
-            "forceShowBakset": false,
+            "forceShowBasket": false,
             "placedInGirls": 0,
             "placedInBoys": 0
         },
         {
-            "instruction" : qsTr("Maria wants to equally share 5 candies between her friends. They are 3. One girl and two boys. Can she equally split the candies to her friends? Place first the children in center, then drag the candies to each of them. Be careful, a rest will remain!"),
-            "totalBoys" : 2,
-            "totalGirls" : 1,
-            "totalCandies" : 5,
+            "instruction": qsTr("Maria wants to equally share 5 candies between her friends. They are 3. One girl and two boys. Can she equally split the candies to her friends? Place first the children in center, then drag the candies to each of them. Be careful, a rest will remain!"),
+            "totalBoys": 2,
+            "totalGirls": 1,
+            "totalCandies": 5,
             "showCount": true,
-            "forceShowBakset": false,
+            "forceShowBasket": false,
             "placedInGirls": 0,
             "placedInBoys": 0
         },
         {
-            "instruction" : qsTr("John wants to equally share 10 candies between his friends. They are 3. One boy and two girls. Can he equally split the candies to his friends? Place first the children in center, then drag the candies to each of them."),
-            "totalBoys" : 1,
-            "totalGirls" : 2,
-            "totalCandies" : 10,
+            "instruction": qsTr("John wants to equally share 10 candies between his friends. They are 3. One boy and two girls. Can he equally split the candies to his friends? Place first the children in center, then drag the candies to each of them."),
+            "totalBoys": 1,
+            "totalGirls": 2,
+            "totalCandies": 10,
             "showCount": true,
-            "forceShowBakset": false,
+            "forceShowBasket": false,
             "placedInGirls": 0,
             "placedInBoys": 0
         }

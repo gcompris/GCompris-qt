@@ -26,7 +26,7 @@ var items
 var savedTotalBoys
 var savedTotalGirls
 var savedTotalCandies
-var savedPlacedInGrils
+var savedPlacedInGirls
 var savedPlacedInBoys
 var savedCurrentCandies
 
@@ -52,29 +52,29 @@ function setUp() {
 
     // use board levels
     if (currentLevel < 7) {
-        items.totalBoys = levelData.levels[items.currentSubLevel].totalBoys
-        items.totalGirls = levelData.levels[items.currentSubLevel].totalGirls
-        items.totalCandies = levelData.levels[items.currentSubLevel].totalCandies
+        var subLevelData = levelData.levels[items.currentSubLevel];
+        items.totalBoys = subLevelData.totalBoys
+        items.totalGirls = subLevelData.totalGirls
+        items.totalCandies = subLevelData.totalCandies
 
-        items.instruction.text = levelData.levels[items.currentSubLevel].instruction
+        items.instruction.text = subLevelData.instruction
         items.nbSubLevel = levelData.levels.length
 
+        items.background.currentCandies = items.totalGirls * subLevelData.placedInGirls +
+                items.totalBoys * subLevelData.placedInBoys
 
-        items.background.currentCandies = items.totalGirls * levelData.levels[items.currentSubLevel].placedInGirls +
-                items.totalBoys * levelData.levels[items.currentSubLevel].placedInBoys
-
-        items.background.placedInGirls = levelData.levels[items.currentSubLevel].placedInGirls
-        items.background.placedInBoys = levelData.levels[items.currentSubLevel].placedInBoys
-        items.background.showCount = levelData.levels[items.currentSubLevel].showCount
-
+        items.background.placedInGirls = subLevelData.placedInGirls
+        items.background.placedInBoys = subLevelData.placedInBoys
+        items.background.showCount = subLevelData.showCount
 
         items.background.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
-        items.basketWidget.element.opacity = (levelData.levels[items.currentSubLevel].forceShowBakset === true ||
+        items.basketWidget.element.opacity = (subLevelData.forceShowBasket === true ||
                                               items.background.rest !== 0) ? 1 : 0
 
     // create random (guided) levels
-    } else {
+    }
+    else {
         // get a random number between 1 and max for boys, girls and candies
         var maxBoys = levelData.levels[0].maxBoys
         var maxGirls = levelData.levels[0].maxGirls
@@ -90,20 +90,13 @@ function setUp() {
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
 
-        // grammer correction depending the number of children: 1 (singular) or more (plural)
-        var boys
-        var girls
+        //~ singular Place %1 boy and %2 girl in the center, then equally split  %3 candy between them
+        //~ plural Place %1 boys and %2 girls in the center, then equally split  %3 candies between them
+        items.instruction.text = qsTr("Place %1 boy(s) and %2 girl(s) in the center, then equally split %3 candies between them", "", items.totalBoys, items.totalGirls, items.totalCandies);
 
-        if (items.totalBoys > 1)
-            boys = "boys"
-        else boys = "boy"
-
-        if (items.totalGirls > 1)
-            girls = "girls"
-        else girls = "girl"
-
-        items.instruction.text = qsTr("Place " + items.totalBoys + " " + boys + " and " +
-                 items.totalGirls + " " + girls + " in the center, then equally split " +
+        // todo, kept because it works, remove it when having a clean solution
+        items.instruction.text = qsTr("Place " + items.totalBoys + " boys and " +
+                 items.totalGirls + " girls in the center, then equally split " +
                  items.totalCandies + " candies between them.")
 
         items.background.showCount = false
@@ -114,55 +107,59 @@ function setUp() {
             items.background.placedInGirls = 0
             items.background.placedInBoys = 0
             items.background.currentCandies = 0
-        } else {
+        }
+        else {
             items.background.currentCandies = items.totalCandies * 2
+            // Place randomly between 0 and 3 candies for each child
             while (items.background.currentCandies > items.totalCandies / 3) {
-                items.background.placedInGirls = Math.floor(Math.random() * 3) + 0
-                items.background.placedInBoys = Math.floor(Math.random() * 3) + 0
+                items.background.placedInGirls = Math.floor(Math.random() * 3)
+                items.background.placedInBoys = Math.floor(Math.random() * 3)
                 items.background.currentCandies = items.totalGirls * items.background.placedInGirls
                         + items.totalBoys * items.background.placedInBoys
             }
-            // update the total number of candies with the candies already added
-            items.totalCandies += items.background.currentCandies
         }
 
         items.background.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
+
         items.basketWidget.element.opacity = 1
 
         saveVariables()
     }
+    resetBoard()
+}
 
-        items.background.currentGirls = 0
-        items.background.currentBoys = 0
-        items.background.resetCandy()
-        items.background.finished = false
+function resetBoard() {
+    items.background.currentGirls = 0
+    items.background.currentBoys = 0
+    items.background.resetCandy()
+    items.background.finished = false
 
-        items.acceptCandy = false
-        items.instruction.opacity = 1
-        items.listModel.clear()
+    items.acceptCandy = false
+    items.instruction.opacity = 1
+    items.listModel.clear()
 
-        items.girlWidget.current = 0
-        items.girlWidget.canDrag = true
-        items.girlWidget.element.opacity = 1
+    items.girlWidget.current = 0
+    items.girlWidget.canDrag = true
+    items.girlWidget.element.opacity = 1
 
-        items.boyWidget.current = 0
-        items.boyWidget.canDrag = true
-        items.boyWidget.element.opacity = 1
+    items.boyWidget.current = 0
+    items.boyWidget.canDrag = true
+    items.boyWidget.element.opacity = 1
 
-        items.candyWidget.canDrag = true
-        items.candyWidget.element.opacity = 1
-        if (items.totalCandies - items.background.currentCandies == 0)
-            items.candyWidget.element.opacity = 0.6
+    items.candyWidget.canDrag = true
+    items.candyWidget.element.opacity = 1
+    if (items.totalCandies - items.background.currentCandies == 0)
+        items.candyWidget.element.opacity = 0.6
 
-        items.basketWidget.canDrag = true
+    items.basketWidget.canDrag = true
 }
 
 function saveVariables() {
     savedTotalBoys = items.totalBoys
     savedTotalGirls = items.totalGirls
     savedTotalCandies = items.totalCandies
-    savedPlacedInGrils = items.background.placedInGirls
+    savedPlacedInGirls = items.background.placedInGirls
     savedPlacedInBoys = items.background.placedInBoys
     savedCurrentCandies = items.background.currentCandies
 }
@@ -171,7 +168,7 @@ function loadVariables() {
     items.totalBoys = savedTotalBoys
     items.totalGirls = savedTotalGirls
     items.totalCandies = savedTotalCandies
-    items.background.placedInGirls = savedPlacedInGrils
+    items.background.placedInGirls = savedPlacedInGirls
     items.background.placedInBoys = savedPlacedInBoys
     items.background.currentCandies = savedCurrentCandies
 }
@@ -179,34 +176,14 @@ function loadVariables() {
 function reloadRandom() {
     if (currentLevel < 7) {
         initLevel()
-    } else {
+    }
+    else {
         loadVariables()
+        resetBoard()
 
-        items.background.currentGirls = 0
-        items.background.currentBoys = 0
         items.background.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
-        items.background.resetCandy()
         items.background.showCount = false
-        items.acceptCandy = false
-
-        items.instruction.opacity = 1
-        items.listModel.clear()
-
-        items.girlWidget.current = 0
-        items.girlWidget.canDrag = true
-        items.girlWidget.element.opacity = 1
-
-        items.boyWidget.current = 0
-        items.boyWidget.canDrag = true
-        items.boyWidget.element.opacity = 1
-
-        items.candyWidget.canDrag = true
-        items.candyWidget.element.opacity = 1
-        if (items.totalCandies - items.background.currentCandies == 0)
-            items.candyWidget.element.opacity = 0.6
-
-        items.basketWidget.canDrag = true
         items.basketWidget.element.opacity = 1
     }
 }
@@ -216,12 +193,13 @@ function nextSubLevel() {
     if (items.currentSubLevel === items.nbSubLevel) {
         nextLevel()
     }
-    else
+    else {
         setUp()
+    }
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     items.currentSubLevel = 0;

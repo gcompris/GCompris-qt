@@ -18,42 +18,42 @@
 import QtQuick 2.0
 
 /*
-	Numbers of kids are not given anymore in the left widget.
-	No rest (basket).
-	Boy or Girl rectangles already contain a given number of candies.
+    Numbers of kids are not given anymore in the left widget.
+    No rest (basket).
+    Boy or Girl rectangles already contain a given number of candies.
 */
 
 QtObject {
-	property variant levels : [
-				{
-            "instruction" : qsTr("Help Jon split 9 candies to three boys and two girls. The rest will remain to Jon."),
-            "totalBoys" : 3,
-            "totalGirls" : 2,
-            "totalCandies" : 9,
-			"showCount": false,
-            "forceShowBakset": true,
+    property variant levels : [
+                {
+            "instruction": qsTr("Help Jon split 9 candies to three boys and two girls. The rest will remain to Jon."),
+            "totalBoys": 3,
+            "totalGirls": 2,
+            "totalCandies": 9,
+            "showCount": false,
+            "forceShowBasket": true,
             "placedInGirls": 0,
             "placedInBoys": 0
-		},
-		{
-            "instruction" : qsTr("Jon wants to share the rest of his candies with his brother and his sister. Can you split them equally, knowing that his brother already has two candies?"),
-			"totalBoys" : 1,
-			"totalGirls" : 1,
-            "totalCandies" : 6,
-			"showCount": false,
-            "forceShowBakset": true,
+        },
+        {
+            "instruction": qsTr("Jon wants to share the rest of his candies with his brother and his sister. Can you split them equally, knowing that his brother already has two candies?"),
+            "totalBoys": 1,
+            "totalGirls": 1,
+            "totalCandies": 6,
+            "showCount": false,
+            "forceShowBasket": true,
             "placedInGirls": 0,
             "placedInBoys": 2
-		},
-		{
-            "instruction" : qsTr("Help Tux split some candies to his friends: 9 candies to one boy and two girls."),
-			"totalBoys" : 1,
-            "totalGirls" : 2,
-            "totalCandies" : 13,
+        },
+        {
+            "instruction": qsTr("Help Tux split some candies to his friends: 9 candies to one boy and two girls."),
+            "totalBoys": 1,
+            "totalGirls": 2,
+            "totalCandies": 13,
             "showCount": false,
-            "forceShowBakset": true,
+            "forceShowBasket": true,
             "placedInGirls": 2,
             "placedInBoys": 0
-		}
-	]
+        }
+    ]
 }

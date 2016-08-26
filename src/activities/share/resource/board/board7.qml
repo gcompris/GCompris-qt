@@ -18,12 +18,12 @@
 import QtQuick 2.0
 
 QtObject {
-	property variant levels : [
+    property variant levels : [
         {
-			"maxBoys" : 2,
-			"maxGirls" : 2,
-			"maxCandies" : 16,
+            "maxBoys": 2,
+            "maxGirls": 2,
+            "maxCandies": 16,
             "alreadyPlaced": false
-		}
-	]
+        }
+    ]
 }
