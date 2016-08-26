@@ -209,6 +209,25 @@ ActivityBase {
                             background: dialogActivityConfig
                             label: qsTr("Select your mode")
                         }
+                        Row{
+                            spacing: 20
+                            Repeater{
+                                model: 2
+                                Row {
+                                    spacing: 10
+                                    Rectangle {
+                                        id: box
+                                        width: 20
+                                        height: 20
+                                        color: modelData==0 ? "red" : "green"
+                                    }
+                                    GCText{
+                                        fontSize: mediumSize
+                                        text: modelData==0 ? qsTr("  NotSelected  ") : qsTr("  Selected  ")
+                                    }
+                                }
+                            }
+                        }
                         Column {
                             visible: modeBox.currentIndex==0
                             spacing: 10
