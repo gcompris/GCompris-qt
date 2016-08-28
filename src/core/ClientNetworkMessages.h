@@ -1,4 +1,4 @@
-/* GCompris - ApplicationSettingsDefault.cpp
+/* GCompris - ClientNetworkMessages.h
  *
  * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -35,7 +35,7 @@ class ClientNetworkMessages : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QStringList serversAvailable MEMBER serversAvailable NOTIFY newServers)
-
+    Q_PROPERTY(bool connected MEMBER _connected NOTIFY connectionStatus)
     Q_PROPERTY(QString host READ host WRITE setHost NOTIFY hostChanged)
     Q_PROPERTY(int port READ port WRITE setPort NOTIFY portChanged)
 
@@ -43,14 +43,16 @@ signals:
     void newServers();
     void hostChanged();
     void portChanged();
-
+    void connectionStatus();
+ 
 private:
     ClientNetworkMessages();  // prohibit external creation, we are a singleton!
     static ClientNetworkMessages* _instance;  // singleton instance
 
     QString _host;
     int _port;
-
+    bool _connected;
+    
 public:
     /**
      * Registers ClientNetworkMessages singleton in the QML engine.
@@ -61,9 +63,11 @@ public:
     static ClientNetworkMessages* getInstance();
 
     Q_INVOKABLE void sendMessage(const QString &message);
+    void sendMessage(const QByteArray &message);
 
     virtual ~ClientNetworkMessages();
     Q_INVOKABLE void connectToServer(const QString& serverName);
+    Q_INVOKABLE void disconnectFromServer();
     QStringList serversAvailable;
 
     QString host() const{
@@ -89,7 +93,9 @@ private slots:
 //    void displayError(QAbstractSocket::SocketError socketError);
     void sessionOpened();
     void udpRead();
-
+    void connected();
+    void serverDisconnected();
+    
 private:
     QTcpSocket *tcpSocket;
     QUdpSocket* udpSocket;

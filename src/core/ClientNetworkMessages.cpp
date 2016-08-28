@@ -1,4 +1,4 @@
-/* GCompris - ApplicationSettingsDefault.cpp
+/* GCompris - ClientNetworkMessages.cpp
  *
  * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -24,6 +24,8 @@
 #include <QString>
 #include <QTcpSocket>
 #include <QUdpSocket>
+#include "Messages.h"
+#include "DataStreamConverter.h"
 #include "ClientNetworkMessages.h"
 
 ClientNetworkMessages* ClientNetworkMessages::_instance = 0;
@@ -31,15 +33,18 @@ ClientNetworkMessages* ClientNetworkMessages::_instance = 0;
 ClientNetworkMessages::ClientNetworkMessages(): QObject(),
                                                 tcpSocket(new QTcpSocket(this)),
                                                 udpSocket(new QUdpSocket(this)),
-                                                networkSession(Q_NULLPTR)
+                                                networkSession(Q_NULLPTR),
+                                                _connected(false)
 {
     if(!udpSocket->bind(5678, QUdpSocket::ShareAddress))
          qDebug("could not bind");
      else
          qDebug("success");
 
-    connect(udpSocket,SIGNAL(readyRead()),this,SLOT(udpRead()));
-
+    connect(udpSocket, &QUdpSocket::readyRead, this, &ClientNetworkMessages::udpRead);
+    connect(tcpSocket, &QTcpSocket::connected, this, &ClientNetworkMessages::connected);
+    connect(tcpSocket, &QTcpSocket::disconnected, this, &ClientNetworkMessages::serverDisconnected);
+    connect(tcpSocket, &QAbstractSocket::readyRead, this, &ClientNetworkMessages::readFromSocket);
 
     QNetworkConfigurationManager manager;
     if (manager.capabilities() & QNetworkConfigurationManager::NetworkSessionRequired) {
@@ -99,16 +104,47 @@ void ClientNetworkMessages::init()
 void ClientNetworkMessages::connectToServer(const QString& serverName) {
     QString ip = _host;
     int port = _port;
+
+    //if we are already connected to some server, disconnect from it first and then make a connection with new server
+    if(_connected) { // and newServer != currentServer
+        disconnectFromServer();
+    }
     if(serverMap.count(serverName) != 0) {
         ip = serverMap.value(serverName).toString();
         port = 5678;
     }
+    qDebug()<< "connect to " << ip << ":" << port;
     if(tcpSocket->state() != QAbstractSocket::ConnectedState) {
-        qDebug()<< "connect to " << ip << ":" << port;
         tcpSocket->connectToHost(ip, port);
     }
-    sendMessage("test");
 }
+
+void ClientNetworkMessages::disconnectFromServer() {
+    tcpSocket->disconnectFromHost();
+}
+
+void ClientNetworkMessages::connected() {
+    QTcpSocket* socket = qobject_cast<QTcpSocket*>(sender());
+    _host = serverMap.key(socket->peerAddress());
+    _connected = true;
+    emit connectionStatus();
+    emit hostChanged();
+
+    // Send Login message
+    QByteArray bytes;
+    QDataStream out(&bytes, QIODevice::WriteOnly);
+    Login login {QString("-%1-").arg(QHostInfo::localHostName()) };
+    out << MessageIdentifier::LOGIN << login;
+    sendMessage(bytes);
+}
+
+void ClientNetworkMessages::serverDisconnected() {
+    _host = "";
+    _connected = false;
+    emit connectionStatus();
+    emit hostChanged();
+}
+
 
 void ClientNetworkMessages::udpRead() {
     // someone is out there whom I can connect with.Let's get it's address and store it in the list;
@@ -119,8 +155,8 @@ void ClientNetworkMessages::udpRead() {
     QHostAddress address;
     quint16 port;
     datagram.resize(udpSocket->pendingDatagramSize());
-    udpSocket->readDatagram(datagram.data(), datagram.size(), &address, &port);
-
+    udpSocket->readDatagram(datagram.data(), datagram.size(), &address, &port)
+;
     // since our server keeps on sending the broadcast message udpread() will be called everytime it receives the broadcast message
     // add the server's address to list only if it was not added before;
 //    qDebug()<< datagram.data();
@@ -146,19 +182,43 @@ void ClientNetworkMessages::sessionOpened()
 void ClientNetworkMessages::sendMessage(const QString &message)
 {
     qDebug() << "Message:" << message;
-    qDebug() << tcpSocket->state() << "(connected: " << QAbstractSocket::ConnectedState << ")";
     if(tcpSocket->state() == QAbstractSocket::ConnectedState) {
-        QByteArray bytes;
-        QDataStream out(&bytes, QIODevice::WriteOnly);
-        QString tmp = QString("-%1-").arg(QHostInfo::localHostName());
-        out << 0 << tmp.toStdString().c_str();
-        tcpSocket->write(bytes);
+        // QByteArray bytes;
+        // QDataStream out(&bytes, QIODevice::WriteOnly);
+        // Login login {const_cast<char*>(QString("-%1-").arg(QHostInfo::localHostName()).toStdString().c_str()) };
+        // out << MessageIdentifier::LOGIN << login;
+        // tcpSocket->write(bytes);
+    }
+}
+
+void ClientNetworkMessages::sendMessage(const QByteArray &message)
+{
+    qDebug() << "Message:" << message;
+    if(tcpSocket->state() == QAbstractSocket::ConnectedState) {
+        tcpSocket->write(message);
     }
 }
 
 void ClientNetworkMessages::readFromSocket()
 {
-    qDebug() << "Reading " << tcpSocket->readAll();
+    QByteArray data = tcpSocket->readAll();
+    QDataStream in(&data, QIODevice::ReadOnly);
+    in.setVersion(QDataStream::Qt_4_0);
+
+    Identifier messageId;
+    in >> messageId;
+    qDebug() << "Reading " << data << " from " << tcpSocket;
+    switch(messageId._id) {
+    case MessageIdentifier::DISPLAYED_ACTIVITIES:
+        {
+            DisplayedActivities activities;
+            in >> activities;
+            qDebug() << "--" << activities.activitiesToDisplay;
+            break;
+        }
+    default:
+        qDebug() << messageId._id << " received but not handled";
+    }
 }
 
 //void ClientNetworkMessages::displayError(QAbstractSocket::SocketError socketError)

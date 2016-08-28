@@ -1,89 +1,47 @@
 include(qt_helper)
 
-configure_file(config.h.in "${CMAKE_CURRENT_BINARY_DIR}/config.h" @ONLY)
-
-if(WITH_KIOSK_MODE)
-  add_definitions(-DWITH_KIOSK_MODE)
-endif()
-
-if(SAILFISHOS)
-  add_definitions(-DSAILFISHOS)
-endif()
+set(GCOMPRIS_SERVER_EXECUTABLE_NAME gcompris-server)
 
 # Note: put .cpp files before .h files in the following or cmake messes up
 # moc generation -- WTF! 
-set(gcompris_SRCS
-   ActivityInfo.cpp
-   ActivityInfo.h
-   ActivityInfoTree.cpp
-   ActivityInfoTree.h
-   ApplicationInfo.cpp
-   ApplicationInfo.h
-   ApplicationSettings.cpp
-   ApplicationSettings.h
-   File.cpp
-   File.h
-   DownloadManager.cpp
-   DownloadManager.h
-   ClientNetworkMessages.cpp
-   ClientNetworkMessages.h
+set(server_SRCS
+  MessageHandler.cpp
+  MessageHandler.h
+  Server.cpp
+  Server.h
 )
 
-qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS})
+qt5_wrap_cpp(server_MOC ${server_SRCS})
 
 # Add files that do no need to pass through the moc processor
-set(gcompris_SRCS
-   ${gcompris_SRCS}
+set(server_SRCS
+   ${server_SRCS}
    main.cpp
-   config.h.in
-   DataStreamConverter.h
-   Messages.h
 )
 
-if(ANDROID)
-  list(APPEND gcompris_SRCS ApplicationAndroid.cpp)
-else()
-  list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp ApplicationInfoDefault.cpp)
-endif()
-
 include_directories(
+  ../core/                        # messages
   "${CMAKE_CURRENT_BINARY_DIR}"   # to find config.h
 )
 
-# Resources
-set(GCOMPRIS_RESOURCES "${PROJECT_SOURCE_DIR}/installer")
-if(CMAKE_HOST_WIN32)
-  set(gcompris_icon GCompris.ico)
-  set(gcompris_RES
-    ${GCOMPRIS_RESOURCES}/${gcompris_icon}
-	GCompris.rc
-  )
-elseif(CMAKE_HOST_APPLE)
-  set(gcompris_icon GCompris.icns)
-  set(gcompris_RES ${GCOMPRIS_RESOURCES}/${gcompris_icon})
-  set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
-endif()
-
 if(ANDROID)
-  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
+  add_library(${GCOMPRIS_SERVER_EXECUTABLE_NAME} SHARED ${server_SRCS} ${server_MOC})
+  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} MACOSX_BUNDLE ${server_SRCS} ${server_MOC} ${gcompris_RES})
+  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 elseif(CMAKE_HOST_WIN32)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} WIN32 ${server_SRCS} ${server_MOC} ${gcompris_RES})
+  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 else()
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${server_SRCS} ${server_MOC} ${gcompris_RES})
+  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 endif()
-
-GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir)
 
 # Installation
 # ============
 
-install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
+install(TARGETS ${GCOMPRIS_SERVER_EXECUTABLE_NAME}
   ARCHIVE DESTINATION bin
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
@@ -168,9 +126,9 @@ if(BUILD_STANDALONE)
     set(_qt_plugins_destdir bin/plugins)
     set(_qt_qml_destdir bin/qml)
     if(CMAKE_HOST_WIN32)
-      set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}.exe")
+      set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_SERVER_EXECUTABLE_NAME}.exe")
     else()
-      set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}")
+      set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_SERVER_EXECUTABLE_NAME}")
     endif()
   endif()
 
@@ -218,7 +176,7 @@ if(BUILD_STANDALONE)
       FILE(GLOB LIBICUUC_SO "/usr/lib/*/libicuuc.so.[0-9][0-9]")
     endif()
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
-    TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
+    TARGET_LINK_LIBRARIES(${GCOMPRIS_SERVER_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
   endif()
 endif(BUILD_STANDALONE)
 
@@ -262,17 +220,17 @@ set(CPACK_RESOURCE_FILE_LICENSE "${PROJECT_SOURCE_DIR}/COPYING")
 set(CPACK_RESOURCE_FILE_README "${PROJECT_SOURCE_DIR}/README")
 
 if(WIN32)
-  set(CPACK_PACKAGE_INSTALL_DIRECTORY "${GCOMPRIS_EXECUTABLE_NAME}-Qt")
-  set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "${GCOMPRIS_EXECUTABLE_NAME}-Qt")
+  set(CPACK_PACKAGE_INSTALL_DIRECTORY "${GCOMPRIS_SERVER_EXECUTABLE_NAME}-Qt")
+  set(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "${GCOMPRIS_SERVER_EXECUTABLE_NAME}-Qt")
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/installer\\\\gcompris-header.bmp")
   set(CPACK_NSIS_MUI_ICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-install.ico")
   set(CPACK_NSIS_MUI_UNIICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-uninstall.ico")
   set(CPACK_NSIS_EXECUTABLES_DIRECTORY "bin")
-  set(CPACK_PACKAGE_EXECUTABLES "${GCOMPRIS_EXECUTABLE_NAME};GCompris")
-  set(CPACK_CREATE_DESKTOP_LINKS "${GCOMPRIS_EXECUTABLE_NAME};GCompris")
+  set(CPACK_PACKAGE_EXECUTABLES "${GCOMPRIS_SERVER_EXECUTABLE_NAME};GCompris")
+  set(CPACK_CREATE_DESKTOP_LINKS "${GCOMPRIS_SERVER_EXECUTABLE_NAME};GCompris")
   set(CPACK_NSIS_URL_INFO_ABOUT "http:\\\\\\\\gcompris.net")
   set(CPACK_NSIS_DISPLAY_NAME "GCompris Educational Software")
-  set(CPACK_NSIS_MUI_FINISHPAGE_RUN "${GCOMPRIS_EXECUTABLE_NAME}")
+  set(CPACK_NSIS_MUI_FINISHPAGE_RUN "${GCOMPRIS_SERVER_EXECUTABLE_NAME}")
 else(WIN32)
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
 endif()
@@ -291,7 +249,7 @@ elseif(SAILFISHOS)
   set(CPACK_RPM_PACKAGE_SUMMARY "gcompris-qt")
   # BUILD_ARCH is either armv7hl or i486
   set(CPACK_RPM_PACKAGE_ARCHITECTURE "${BUILD_ARCH}")
-  set(CPACK_RPM_PACKAGE_NAME "${GCOMPRIS_EXECUTABLE_NAME}")
+  set(CPACK_RPM_PACKAGE_NAME "${GCOMPRIS_SERVER_EXECUTABLE_NAME}")
   set(CPACK_RPM_PACKAGE_VERSION "${GCOMPRIS_VERSION}")
   set(CPACK_RPM_PACKAGE_LICENSED "GPLv3")
   set(CPACK_RPM_PACKAGE_URL "https://www.gcompris.org")
