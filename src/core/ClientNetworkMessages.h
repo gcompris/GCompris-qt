@@ -62,8 +62,8 @@ public:
             QJSEngine *scriptEngine);
     static ClientNetworkMessages* getInstance();
 
-    Q_INVOKABLE void sendMessage(const QString &message);
-    void sendMessage(const QByteArray &message);
+    Q_INVOKABLE void sendActivityData(const QString &activity, const QVariantMap &data);
+    bool sendMessage(const QByteArray &message);
 
     virtual ~ClientNetworkMessages();
     Q_INVOKABLE void connectToServer(const QString& serverName);

@@ -34,7 +34,6 @@ qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS})
 # Add files that do no need to pass through the moc processor
 set(gcompris_SRCS
    ${gcompris_SRCS}
-   main.cpp
    config.h.in
    DataStreamConverter.h
    Messages.h
@@ -64,18 +63,28 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
+add_library(gcompris_core SHARED ${gcompris_SRCS} ${gcompris_MOC})
+
+set(used_qt_modules Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors)
+
 if(ANDROID)
-  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
+  # fixme use the created lib instead of ${gcompris_SRCS} ${gcompris_MOC}
+  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED main.cpp ${gcompris_SRCS} ${gcompris_MOC})
+  set(used_qt_modules ${used_qt_modules} AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE main.cpp ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 main.cpp ${gcompris_RES})
 else()
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} main.cpp ${gcompris_RES})
+endif()
+
+qt5_use_modules(gcompris_core ${used_qt_modules})
+qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
+
+# fixme use the created lib
+if(NOT ANDROID)
+  target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} gcompris_core)
 endif()
 
 GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir)
@@ -218,7 +227,7 @@ if(BUILD_STANDALONE)
       FILE(GLOB LIBICUUC_SO "/usr/lib/*/libicuuc.so.[0-9][0-9]")
     endif()
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
-    TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
   endif()
 endif(BUILD_STANDALONE)
 

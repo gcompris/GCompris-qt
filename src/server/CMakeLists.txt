@@ -7,6 +7,8 @@ set(GCOMPRIS_SERVER_EXECUTABLE_NAME gcompris-server)
 set(server_SRCS
   MessageHandler.cpp
   MessageHandler.h
+  ClientData.cpp
+  ClientData.h
   Server.cpp
   Server.h
 )
@@ -21,7 +23,7 @@ set(server_SRCS
 
 include_directories(
   ../core/                        # messages
-  "${CMAKE_CURRENT_BINARY_DIR}"   # to find config.h
+  "${CMAKE_CURRENT_BINARY_DIR}/../core"   # to find config.h
 )
 
 if(ANDROID)
@@ -37,6 +39,10 @@ else()
   add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${server_SRCS} ${server_MOC} ${gcompris_RES})
   qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 endif()
+
+target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
+
+GCOMPRIS_ADD_RCC(server main.qml views/*.qml)
 
 # Installation
 # ============
@@ -119,7 +125,7 @@ if(BUILD_STANDALONE)
       MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
       MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
       MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
-      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2015 Bruno Coudoin and Others.")
+      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2016 Bruno Coudoin and Others.")
     set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
   else()
     set(_qtconf_destdir bin)

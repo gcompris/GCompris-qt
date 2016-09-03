@@ -299,8 +299,6 @@ void ActivityInfoTree::init()
 
     qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
     qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
-
-
 }
 
 void ActivityInfoTree::filterBySearch(const QString& text)

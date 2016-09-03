@@ -141,9 +141,9 @@ int main(int argc, char *argv[])
     parser.addVersionOption();
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
-	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
+    QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
                                        QObject::tr("Run GCompris with the default system cursor."));
-	parser.addOption(clDefaultCursor);
+    parser.addOption(clDefaultCursor);
     QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
                                        QObject::tr("Run GCompris without cursor (touch screen mode)."));
     parser.addOption(clNoCursor);
@@ -185,28 +185,27 @@ int main(int argc, char *argv[])
     // Getting fullscreen mode from config if exist, else true is default value
     bool isFullscreen = true;
     {
-
         if(config.contains("General/fullscreen")) {
             isFullscreen = config.value("General/fullscreen").toBool();
         }
 
-		// Set the cursor image
-		bool defaultCursor = false;
-		if(config.contains("General/defaultCursor")) {
-			defaultCursor = config.value("General/defaultCursor").toBool();
-		}
-		if(!defaultCursor && !parser.isSet(clDefaultCursor))
-			QGuiApplication::setOverrideCursor(
-						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
-								0, 0));
+        // Set the cursor image
+        bool defaultCursor = false;
+        if(config.contains("General/defaultCursor")) {
+            defaultCursor = config.value("General/defaultCursor").toBool();
+        }
+        if(!defaultCursor && !parser.isSet(clDefaultCursor))
+            QGuiApplication::setOverrideCursor(
+                                               QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
+                                                       0, 0));
 
-		// Hide the cursor
-		bool noCursor = false;
-		if(config.contains("General/noCursor")) {
-			noCursor = config.value("General/noCursor").toBool();
-		}
-		if(noCursor || parser.isSet(clNoCursor))
-			QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
+        // Hide the cursor
+        bool noCursor = false;
+        if(config.contains("General/noCursor")) {
+            noCursor = config.value("General/noCursor").toBool();
+        }
+        if(noCursor || parser.isSet(clNoCursor))
+            QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
     }
 
     // Update execution counter
@@ -255,9 +254,9 @@ int main(int argc, char *argv[])
 
     QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
     if (!window) {
-		qWarning("Error: Your root item has to be a Window.");
-		return -1;
-	}
+        qWarning("Error: Your root item has to be a Window.");
+        return -1;
+    }
 
     ApplicationInfo::setWindow(window);
 
@@ -270,6 +269,5 @@ int main(int argc, char *argv[])
         window->show();
     }
 
-	return app.exec();
-
+    return app.exec();
 }

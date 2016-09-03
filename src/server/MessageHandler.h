@@ -22,21 +22,41 @@
 #define MESSAGEHANDLER_H
 
 #include "Messages.h"
+#include "ClientData.h"
 #include <QObject>
-
-class Server;
+#include <QtQml>
 
 class MessageHandler: public QObject
 {
     Q_OBJECT
+
+    Q_PROPERTY(QList<QObject*> clients MEMBER m_clients NOTIFY newClients)
+
+private:
+    MessageHandler();  // prohibit external creation, we are a singleton!
+    static MessageHandler* _instance;  // singleton instance
+    
 public:
-    MessageHandler(const Server &server);
+    /**
+     * Registers MessageHandler singleton in the QML engine.
+     */
+    static void init();
+    static QObject *systeminfoProvider(QQmlEngine *engine,
+            QJSEngine *scriptEngine);
+    static MessageHandler* getInstance();
 
 public slots:
     void onLoginReceived(const Login &data);
+    void onActivityDataReceived(const ActivityData &act);
+    void onNewClientReceived(const ClientData &client);
+    void onClientDisconnected(const ClientData &client);
 
- private:
-    const Server &_server;
+signals:
+    void newClients();
+
+private:
+    ClientData *getClientData(const ClientData &cd);
+    QList<QObject*> m_clients;
 };
 
 #endif

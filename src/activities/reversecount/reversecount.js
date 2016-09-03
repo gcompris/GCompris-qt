@@ -42,7 +42,6 @@ var backgrounds = [
 var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
 var tuxIsMoving = false;
-var debuginttmp = 0
 var placeFishToReachBool = false
 
 var level = null;
@@ -121,13 +120,11 @@ var items
 
 var url = "qrc:/gcompris/src/activities/reversecount/resource/"
 
-
 function start(items_) {
     items = items_
     currentLevel = 0
     initLevel()
 }
-
 
 function stop() {
     fishIndex = -1
@@ -152,7 +149,6 @@ function initLevel() {
     items.clockPosition = 4
 }
 
-
 function moveTux() {
     calculateTuxIceBlockNextPos()
 
@@ -168,7 +164,6 @@ function moveTux() {
         moveTuxToNextIceBlock()
     }
 }
-
 
 function moveTuxToNextIceBlock() {
     tuxIsMoving = false;
@@ -219,7 +214,6 @@ function moveTuxToNextIceBlock() {
     tuxIsMoving = true
 }
 
-
 function moveTuxToIceBlock() {
     items.tux.x = iceBlocksLayout[tuxIceBlockNumber % iceBlocksLayout.length][0] *
             items.background.width / 5 +
@@ -229,10 +223,7 @@ function moveTuxToIceBlock() {
             (items.background.height / 5 - items.tux.height) / 2
 }
 
-
-
 function tuxRunningChanged() {
-
     if (tuxIsMoving) {
         moveTuxToNextIceBlock()
     } else {
@@ -242,7 +233,6 @@ function tuxRunningChanged() {
         }
     }
 }
-
 
 function calculateTuxIceBlockNextPos() {
     tuxIceBlockNumberGoal = tuxIceBlockNumber +
@@ -305,4 +295,3 @@ function lost() {
 function won() {
     items.bonus.good("flower")
 }
-

@@ -23,12 +23,75 @@
 #include "Server.h"
 #include "MessageHandler.h"
 
-MessageHandler::MessageHandler(const Server &server) : _server(server)
+MessageHandler* MessageHandler::_instance = 0;
+
+MessageHandler::MessageHandler()
 {
+    Server &server = *Server::getInstance();
     connect(&server, &Server::loginReceived, this, &MessageHandler::onLoginReceived);
+    connect(&server, &Server::activityDataReceived, this, &MessageHandler::onActivityDataReceived);
+    connect(&server, &Server::newClientReceived, this, &MessageHandler::onNewClientReceived);
+    connect(&server, &Server::clientDisconnected, this, &MessageHandler::onClientDisconnected);
+}
+
+MessageHandler* MessageHandler::getInstance()
+{
+    if (!_instance)
+        _instance = new MessageHandler;
+    return _instance;
+}
+
+QObject *MessageHandler::systeminfoProvider(QQmlEngine *engine,
+        QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    return getInstance();
+}
+
+void MessageHandler::init()
+{
+    qmlRegisterSingletonType<MessageHandler>("GCompris", 1, 0,
+            "MessageHandler",
+            systeminfoProvider);
 }
 
 void MessageHandler::onLoginReceived(const Login &data)
 {
     qDebug() << "Login received '" << data._name << "'";
+}
+
+void MessageHandler::onActivityDataReceived(const ActivityData &act)
+{
+    qDebug() << "Activity: " << act.activityName << ", date: " << act.date << ", data:" << act.data;
+}
+
+void MessageHandler::onNewClientReceived(const ClientData &client)
+{
+    qDebug() << "New client";
+    ClientData *c = new ClientData(client);
+
+    m_clients.push_back((QObject*)c);
+    emit newClients();
+}
+
+void MessageHandler::onClientDisconnected(const ClientData &client)
+{
+    qDebug() << "client disconnected";
+    ClientData *c = getClientData(client);
+    m_clients.removeAll(c);
+    delete c;
+    emit newClients();
+}
+
+ClientData *MessageHandler::getClientData(const ClientData &cd)
+{
+    const QTcpSocket *socket = cd.getSocket();
+    for (QObject *oc: m_clients) {
+        ClientData *c = (ClientData *) oc;
+        if (c->getSocket() == socket) {
+            return c;
+        }        
+    }    
 }

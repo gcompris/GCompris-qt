@@ -25,7 +25,6 @@ import GCompris 1.0
 import "../../core"
 import "reversecount.js" as Activity
 
-
 Item {
     id: chooseDiceBar
     z: 1000
@@ -35,13 +34,16 @@ Item {
     property alias valueMax: domino.valueMax
     property GCAudio audioEffects
 
+    function click() {
+        ok.buttonClicked()
+    }
+
     Row {
         id: barRow
         spacing: 8
-        BarButton {
+        OkButton {
             id: ok
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-            sourceSize.width: 75 * ApplicationInfo.ratio
+            width: 75 * ApplicationInfo.ratio
             visible: true
             anchors {
                 right: undefined
@@ -51,6 +53,11 @@ Item {
             }
 
             onClicked: Activity.moveTux()
+
+            getDataCallback: function() {
+                var data = {"index": Activity.fishIndex, "currentPosition": Activity.tuxIceBlockNumber, "dice1": chooseDiceBar.value1, "dice2": chooseDiceBar.value2};
+                return data
+            }
         }
 
         Domino {
@@ -62,4 +69,3 @@ Item {
         }
     }
 }
-

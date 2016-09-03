@@ -1,9 +1,8 @@
-/* GCompris - Messages.h
+/* GCompris - Groups.qml
  *
- * Copyright (C) 2016 Emmanuel Charruau <echarruau@gmail.com>, Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   Emmanuel Charruau <echarruau@gmail.com>
  *   Johnny Jazeix <jazeix@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -19,39 +18,37 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef MESSAGES_H
-#define MESSAGES_H
+import QtQuick 2.1
 
-#include <QString>
-#include <QStringList>
-#include <QDateTime>
-#include <QVariantMap>
+import "../../core"
 
-enum MessageIdentifier : int {
-    LOGIN = 0,
-    REQUEST_CONTROL,
-    REQUEST_USERNAME,
-    DISPLAYED_ACTIVITIES,
-    ACTIVITY_DATA
-};
+ActivityBase {
+    id: activity
 
-struct Identifier {
-    MessageIdentifier _id;
-};
+    activityInfo: QtObject {
+        property bool demo: false
+    }
 
-struct Login {
-    QString _name;
-};
+    pageComponent: Item {
+        anchors.fill: parent
+        Grid {
+            id: clients
+            spacing: 10
+            columns: 2
+            Repeater {
+                model: 12
+                Rectangle {
+                    width: 50
+                    height: 50
+                    color: "red"
+                }
+            }
+        }
 
-struct DisplayedActivities {
-    QStringList activitiesToDisplay;
-};
-
-struct ActivityData {
-    QString activityName;
-    QString username;
-    QDateTime date;
-    QVariantMap data;
-};
-
-#endif
+        Bar {
+            id: bar
+            content: BarEnumContent { value: home }
+            onHomeClicked: activity.home()
+        }
+    }
+}

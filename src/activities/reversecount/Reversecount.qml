@@ -64,8 +64,8 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Keys.onEnterPressed: Activity.moveTux()
-        Keys.onReturnPressed: Activity.moveTux()
+        Keys.onEnterPressed: chooseDiceBar.click()
+        Keys.onReturnPressed: chooseDiceBar.click()
 
         onWidthChanged: {
             if(Activity.fishIndex > 0) {
@@ -116,13 +116,11 @@ ActivityBase {
             }
         }
 
-
         Tux {
             id: tux
             sourceSize.width: Math.min(background.width / 6, background.height / 6)
             z: 11
         }
-
 
         Image {
             id: fishToReach
@@ -153,7 +151,6 @@ ActivityBase {
 
             Behavior on opacity { NumberAnimation { duration: 500 } }
         }
-
 
         DialogHelp {
             id: dialogHelp

@@ -1,117 +1,40 @@
-/****************************************************************************
-**
-** Copyright (C) 2016 The Qt Company Ltd.
-** Contact: https://www.qt.io/licensing/
-**
-** This file is part of the examples of the Qt Toolkit.
-**
-** $QT_BEGIN_LICENSE:BSD$
-** Commercial License Usage
-** Licensees holding valid commercial Qt licenses may use this file in
-** accordance with the commercial license agreement provided with the
-** Software or, alternatively, in accordance with the terms contained in
-** a written agreement between you and The Qt Company. For licensing terms
-** and conditions see https://www.qt.io/terms-conditions. For further
-** information use the contact form at https://www.qt.io/contact-us.
-**
-** BSD License Usage
-** Alternatively, you may use this file under the terms of the BSD license
-** as follows:
-**
-** Redistribution and use in source and binary forms, with or without
-** modification, are permitted provided that the following conditions are
-** met:
-**   * Redistributions of source code must retain the above copyright
-**     notice, this list of conditions and the following disclaimer.
-**   * Redistributions in binary form must reproduce the above copyright
-**     notice, this list of conditions and the following disclaimer in
-**     the documentation and/or other materials provided with the
-**     distribution.
-**   * Neither the name of The Qt Company Ltd nor the names of its
-**     contributors may be used to endorse or promote products derived
-**     from this software without specific prior written permission.
-**
-**
-** THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-** "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-** LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-** A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
-** OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-** SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-** LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
-** DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
-** THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-** (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-** OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-**
-** $QT_END_LICENSE$
-**
-****************************************************************************/
-
+/* GCompris - Server.cpp
+ *
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+ *
+ * Authors:
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 #include <QtWidgets>
 #include <QtNetwork>
 
 #include "Messages.h"
 #include "DataStreamConverter.h"
+#include "ClientData.h"
 #include "Server.h"
 
-//
-MyModel::MyModel(QObject *parent)
-    :QAbstractTableModel(parent)
-{
-}
+#include <QtQml>
 
-int MyModel::rowCount(const QModelIndex & /*parent*/) const
-{
-    return list->size();
-}
-
-int MyModel::columnCount(const QModelIndex & /*parent*/) const
-{
-    return 2;
-}
-
-bool MyModel::insertRows(int position, int rows, const QModelIndex &index)
-{
-    Q_UNUSED(index);
-    beginInsertRows(QModelIndex(), position, position+rows-1);
-
-    for (int row=0; row < rows; row++) {
-        QPair<QString, QString> pair((*list)[0]->peerAddress().toString(), " ");
-        //list.insert(position, pair);
-    }
-
-    endInsertRows();
-    return true;
-}
-
-QVariant MyModel::data(const QModelIndex &index, int role) const
-{
-    if (role == Qt::DisplayRole)
-    {
-        switch(index.column()) {
-        case 0:
-            return QString("%1")
-                .arg((*list)[index.row()]->peerAddress().toString());
-        break;
-        case 1:
-            return QString("toto");
-        }
-    }
-    return QVariant();
-}
-//
+Server* Server::_instance = 0;
 
 Server::Server(QWidget *parent)
     : QDialog(parent)
-    , statusLabel(new QLabel)
     , tcpServer(Q_NULLPTR)
     , networkSession(0)
-    , tableView(new QTableView)
-    , model(parent)      
 {
-    statusLabel->setTextInteractionFlags(Qt::TextBrowserInteraction);
-
     udpSocket = new QUdpSocket(this);
     messageNo = 1;
 
@@ -133,7 +56,6 @@ Server::Server(QWidget *parent)
         networkSession = new QNetworkSession(config, this);
         connect(networkSession, &QNetworkSession::opened, this, &Server::sessionOpened);
 
-        statusLabel->setText(tr("Opening network session."));
         networkSession->open();
     }
     else {
@@ -168,15 +90,35 @@ Server::Server(QWidget *parent)
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
 
-    model.list = &list;
-    tableView->setModel(&model);
-    mainLayout->addWidget(tableView);
-    mainLayout->addWidget(statusLabel);
     mainLayout->addLayout(buttonLayout);
     mainLayout->addLayout(buttonLayout2);
 
     setWindowTitle(QGuiApplication::applicationDisplayName());
 }
+
+Server* Server::getInstance()
+{
+    if (!_instance)
+        _instance = new Server;
+    return _instance;
+}
+
+QObject *Server::systeminfoProvider(QQmlEngine *engine,
+        QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    return getInstance();
+}
+
+void Server::init()
+{
+    qmlRegisterSingletonType<Server>("GCompris", 1, 0,
+                                     "Server",
+                                     systeminfoProvider);
+}
+
 
 void Server::sessionOpened()
 {
@@ -199,7 +141,7 @@ void Server::sessionOpened()
     connect(tcpServer, &QTcpServer::newConnection, this, &Server::newTcpConnection);
 
     if (!tcpServer->listen(QHostAddress::Any, 5678)) {
-        QMessageBox::critical(this, tr("Server"),
+        QMessageBox::critical(this, tr("GCompris Server"),
                               tr("Unable to start the server: %1.")
                               .arg(tcpServer->errorString()));
         close();
@@ -218,10 +160,6 @@ void Server::sessionOpened()
     // if we did not find one, use IPv4 localhost
     if (ipAddress.isEmpty())
         ipAddress = QHostAddress(QHostAddress::LocalHost).toString();
-
-    statusLabel->setText(tr("The server is running on\n\nIP: %1\nport: %2\n\n"
-                            "Run the client now.")
-                         .arg(ipAddress).arg(tcpServer->serverPort()));
 }
 
 void Server::newTcpConnection()
@@ -237,12 +175,16 @@ void Server::newTcpConnection()
 
     list.push_back(clientConnection);
     qDebug() << clientConnection->peerAddress().toString();
-    model.insertRows(0, 1, QModelIndex());
+    ClientData newClient;
+    newClient.setSocket(clientConnection);
+    // temporary...
+    newClient.setLogin(clientConnection->peerAddress().toString());
+    qDebug("New tcp connection");
+    emit newClientReceived(newClient);
 }
 
 void Server::broadcastDatagram()
 {
-    statusLabel->setText(tr("Now broadcasting datagram %1").arg(messageNo));  
     qDebug()<< "is anyone out there";
     qDebug()<< QHostInfo::localHostName();
     QByteArray datagram;
@@ -269,6 +211,13 @@ void Server::slotReadyRead()
             emit loginReceived(log);
             break;
         }
+    case MessageIdentifier::ACTIVITY_DATA:
+        {
+            ActivityData act;
+            in >> act;
+            emit activityDataReceived(act);
+            break;
+        }
     default:
         qDebug() << messageId._id << " received but not handled";
     };
@@ -277,9 +226,14 @@ void Server::slotReadyRead()
 void Server::disconnected()
 {
     QTcpSocket* clientConnection = qobject_cast<QTcpSocket*>(sender());
+    if(!clientConnection)
+        return;
     qDebug() << "Removing " << clientConnection;
     list.removeAll(clientConnection);
     clientConnection->deleteLater();
+    ClientData newClient;
+    newClient.setSocket(clientConnection);
+    emit clientDisconnected(newClient);
 }
 
 void Server::sendActivities()

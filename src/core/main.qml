@@ -337,10 +337,8 @@ Window {
                     easing.type: Easing.OutSine
                 }
             }
-
             property Component replaceTransition: pushHTransition
         }
     }
-
     /// @endcond
 }

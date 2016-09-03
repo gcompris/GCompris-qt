@@ -21,6 +21,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+#include <QDateTime>
 #include <QString>
 #include <QTcpSocket>
 #include <QUdpSocket>
@@ -148,7 +149,7 @@ void ClientNetworkMessages::serverDisconnected() {
 
 void ClientNetworkMessages::udpRead() {
     // someone is out there whom I can connect with.Let's get it's address and store it in the list;
-
+    qDebug() << "Receiving data";
     // to get the address we need to read the datagram sent by server .Is there a way to get server's address without
     // reading the datagram ?
     QByteArray datagram;
@@ -179,24 +180,29 @@ void ClientNetworkMessages::sessionOpened()
         id = config.identifier();
 }
 
-void ClientNetworkMessages::sendMessage(const QString &message)
+void ClientNetworkMessages::sendActivityData(const QString &activity,
+                                             const QVariantMap &data)
 {
-    qDebug() << "Message:" << message;
-    if(tcpSocket->state() == QAbstractSocket::ConnectedState) {
-        // QByteArray bytes;
-        // QDataStream out(&bytes, QIODevice::WriteOnly);
-        // Login login {const_cast<char*>(QString("-%1-").arg(QHostInfo::localHostName()).toStdString().c_str()) };
-        // out << MessageIdentifier::LOGIN << login;
-        // tcpSocket->write(bytes);
+    qDebug() << "Activity: " << activity << ", date: " << QDateTime::currentDateTime() << ", data:" << data;
+    QString username = "toto";
+    ActivityData activityData { activity, username, QDateTime::currentDateTime(), data };
+
+    QByteArray bytes;
+    QDataStream out(&bytes, QIODevice::WriteOnly);
+    out << MessageIdentifier::ACTIVITY_DATA << activityData;
+    if(!sendMessage(bytes)) {
+        qDebug() << "need to store " << bytes << " and send it later";
     }
 }
 
-void ClientNetworkMessages::sendMessage(const QByteArray &message)
+bool ClientNetworkMessages::sendMessage(const QByteArray &message)
 {
     qDebug() << "Message:" << message;
+    int size = 0;
     if(tcpSocket->state() == QAbstractSocket::ConnectedState) {
-        tcpSocket->write(message);
+        size = tcpSocket->write(message);
     }
+    return size != 0;
 }
 
 void ClientNetworkMessages::readFromSocket()

@@ -1,9 +1,9 @@
 /* GCompris - main.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *   Johnny Jazeix <jazeix@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,10 +20,20 @@
  */
 #include <QtDebug>
 #include <QApplication>
+#include <QQuickWindow>
+#include <QQmlApplicationEngine>
 #include <QStandardPaths>
-#include <QSettings>
 #include "Server.h"
 #include "MessageHandler.h"
+
+#include "ApplicationInfo.h"
+#include "ApplicationSettings.h"
+#include "ActivityInfoTree.h"
+#include "File.h"
+#include "DownloadManager.h"
+
+#include <QResource>
+#include <config.h>
 
 #define GCOMPRIS_SERVER_APPLICATION_NAME "gcompris-server"
 
@@ -46,15 +56,34 @@ int main(int argc, char *argv[])
     QGuiApplication::setLibraryPaths(QStringList(dir.absolutePath()));
 #endif
 
-    Server server;
-    server.show();
+    ActivityInfoTree::init();
+    ApplicationInfo::init();
+    ApplicationSettings::init();
+    File::init();
+    DownloadManager::init();
+    Server::init();
+    MessageHandler::init();
     
-    MessageHandler listener(server);
-    
-    // Local scope for config
-    QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-                     "/gcompris/" + GCOMPRIS_SERVER_APPLICATION_NAME + ".conf",
-                     QSettings::IniFormat);
+    if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
+        qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
+    if(!QResource::registerResource(ApplicationInfo::getFilePath("server.rcc")))
+        qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("server.rcc");
 
+    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/server/main.qml"));
+    // add import path for shipped qml modules:
+    engine.addImportPath(QStringLiteral("%1/../lib/qml")
+                         .arg(QCoreApplication::applicationDirPath()));
+
+    QObject *topLevel = engine.rootObjects().value(0);
+
+    QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
+    if (!window) {
+        qWarning("Error: Your root item has to be a Window.");
+        return -1;
+    }
+
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
+
+    window->show();
     return app.exec();
 }

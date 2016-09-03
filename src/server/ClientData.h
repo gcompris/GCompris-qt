@@ -1,9 +1,8 @@
-/* GCompris - Messages.h
+/* GCompris - ClientData.h
  *
- * Copyright (C) 2016 Emmanuel Charruau <echarruau@gmail.com>, Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   Emmanuel Charruau <echarruau@gmail.com>
  *   Johnny Jazeix <jazeix@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -19,39 +18,32 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef MESSAGES_H
-#define MESSAGES_H
+#ifndef CLIENTDATA_H
+#define CLIENTDATA_H
 
-#include <QString>
-#include <QStringList>
-#include <QDateTime>
-#include <QVariantMap>
+#include <QObject>
+class QTcpSocket;
 
-enum MessageIdentifier : int {
-    LOGIN = 0,
-    REQUEST_CONTROL,
-    REQUEST_USERNAME,
-    DISPLAYED_ACTIVITIES,
-    ACTIVITY_DATA
-};
+class ClientData : public QObject {
+    Q_OBJECT
 
-struct Identifier {
-    MessageIdentifier _id;
-};
+    Q_PROPERTY(QString login MEMBER m_login NOTIFY newLogin)
 
-struct Login {
-    QString _name;
-};
+public:
+    ClientData();
+    ClientData(const ClientData &clientData);
+    ~ClientData();
 
-struct DisplayedActivities {
-    QStringList activitiesToDisplay;
-};
+    const QTcpSocket *getSocket() const;
+    void setSocket(const QTcpSocket *socket);
+    void setLogin(const QString &newLogin);
 
-struct ActivityData {
-    QString activityName;
-    QString username;
-    QDateTime date;
-    QVariantMap data;
+private:
+    const QTcpSocket *m_socket;
+    QString m_login;
+
+signals:
+    void newLogin();
 };
 
 #endif
