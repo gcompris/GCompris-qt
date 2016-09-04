@@ -32,6 +32,8 @@ MessageHandler::MessageHandler()
     connect(&server, &Server::activityDataReceived, this, &MessageHandler::onActivityDataReceived);
     connect(&server, &Server::newClientReceived, this, &MessageHandler::onNewClientReceived);
     connect(&server, &Server::clientDisconnected, this, &MessageHandler::onClientDisconnected);
+
+    createGroup("default");    
 }
 
 MessageHandler* MessageHandler::getInstance()
@@ -55,6 +57,16 @@ void MessageHandler::init()
     qmlRegisterSingletonType<MessageHandler>("GCompris", 1, 0,
             "MessageHandler",
             systeminfoProvider);
+}
+
+void MessageHandler::createGroup(const QString &newGroup)
+{
+    qDebug() << "createGroup '" << newGroup << "'";
+    GroupData *c = new GroupData();
+    c->m_name = newGroup;
+    c->m_members << "log1" << "log2" << "log3";
+    m_groups.push_back((QObject*)c);
+    emit newGroups();
 }
 
 void MessageHandler::onLoginReceived(const Login &data)

@@ -19,6 +19,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
+import QtQuick.Controls 1.0
 
 import "../../core"
 
@@ -31,18 +33,70 @@ ActivityBase {
 
     pageComponent: Item {
         anchors.fill: parent
-        Grid {
+        GridView {
             id: clients
-            spacing: 10
-            columns: 2
-            Repeater {
-                model: 12
-                Rectangle {
-                    width: 50
-                    height: 50
-                    color: "red"
+            width: activity.width
+            height: activity.height
+            cellWidth: 210
+            cellHeight: cellWidth
+            model: MessageHandler.groups
+            highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
+            delegate: Rectangle {
+                id: itemDelegate
+                width: 200
+                height: 200
+                color: "red"
+                property string name: modelData.name
+                GCText {
+                    text: modelData.name
+                }
+
+                MouseArea {
+                    id: mouse
+                    anchors.fill: parent
+                    onClicked: { clients.currentIndex = index ; print(modelData.name) } // todo what do we do? display list of action? (update user list, send configuration?)
                 }
             }
+        }
+
+        Grid {
+            rows: 1
+            anchors.bottom: bar.top
+            Button {
+                id: createGroupButton
+                text: qsTr("Create a Group")
+                style: GCButtonStyle {}
+                onClicked: { createGroupName.visible = true; createGroupName.start(); }
+            }
+
+            Button {
+                id: updateGroupButton
+                text: qsTr("Update a Group")
+                style: GCButtonStyle {}
+                onClicked: { print("update group: " + clients.currentItem.name) }
+                enabled: clients.currentIndex != -1
+            }
+
+            Button {
+                id: sendConfiguration
+                text: qsTr("Send configuration")
+                style: GCButtonStyle {}
+                onClicked: { print("select config and send config to: " + clients.currentItem.name) }
+                enabled: clients.currentIndex != -1
+            }
+        }
+        GCInputDialog {
+            id: createGroupName
+            visible: false
+            anchors.fill: parent
+            z: 100
+            message: qsTr("Name of the new group")
+            onClose: createGroupName.visible = false;
+            //defaultText: ""
+            button1Text: qsTr("OK")
+            button2Text: qsTr("Cancel")
+            onButton1Hit: MessageHandler.createGroup(createGroupName.inputtedText)
+            focus: true
         }
 
         Bar {

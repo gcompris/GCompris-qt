@@ -23,6 +23,7 @@
 
 #include "Messages.h"
 #include "ClientData.h"
+#include "GroupData.h"
 #include <QObject>
 #include <QtQml>
 
@@ -31,6 +32,7 @@ class MessageHandler: public QObject
     Q_OBJECT
 
     Q_PROPERTY(QList<QObject*> clients MEMBER m_clients NOTIFY newClients)
+    Q_PROPERTY(QList<QObject*> groups MEMBER m_groups NOTIFY newGroups)
 
 private:
     MessageHandler();  // prohibit external creation, we are a singleton!
@@ -45,6 +47,8 @@ public:
             QJSEngine *scriptEngine);
     static MessageHandler* getInstance();
 
+    Q_INVOKABLE void createGroup(const QString &groupName);
+
 public slots:
     void onLoginReceived(const Login &data);
     void onActivityDataReceived(const ActivityData &act);
@@ -53,10 +57,14 @@ public slots:
 
 signals:
     void newClients();
+    void newGroups();
 
 private:
     ClientData *getClientData(const ClientData &cd);
+    // ClientData*
     QList<QObject*> m_clients;
+    // GroupData*
+    QList<QObject*> m_groups;
 };
 
 #endif

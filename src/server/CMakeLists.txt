@@ -9,6 +9,8 @@ set(server_SRCS
   MessageHandler.h
   ClientData.cpp
   ClientData.h
+  GroupData.cpp
+  GroupData.h
   Server.cpp
   Server.h
 )
