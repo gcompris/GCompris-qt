@@ -107,8 +107,11 @@ ActivityBase {
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
-                    visible: index == pointImageRepeater.count - 1 &&
-                             items.pointIndexToClick == 0 ? false : true
+                    // only hide last point for clickanddraw and drawnumbers
+                    // as the last point is also the first point
+                    visible: (mode=="clickanddraw" || mode=="drawnumbers") &&
+                              index == pointImageRepeater.count - 1 &&
+                              items.pointIndexToClick == 0 ? false : true
 
                     function drawSegment() {
                         Activity.drawSegment(index)

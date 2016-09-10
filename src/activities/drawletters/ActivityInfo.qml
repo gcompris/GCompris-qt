@@ -24,11 +24,11 @@ ActivityInfo {
       author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
       demo: true
       title: qsTr("Draw Letters")
-      description: qsTr("Connect the dots to draw some alphabets")
+      description: qsTr("Connect the dots to draw letters")
       //  intro: "Click on the selected points and draw the letter"
-      goal: qsTr("Children will learn about different letters & alphabets in a fun way.")
+      goal: qsTr("Children will learn how to draw different letters in a fun way.")
       prerequisite: ""
-      manual: qsTr("Draw the figure by connecting the dots in the correct order")
+      manual: qsTr("Draw the letter by connecting the dots in the correct order")
       credit: ""
       section: "reading"
       createdInVersion: 7000
