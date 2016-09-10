@@ -59,6 +59,7 @@ ActivityBase {
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
             property alias imageBack: imageBack
+            property alias imageBack2: imageBack2
             property int pointIndexToClick
         }
 
@@ -71,6 +72,14 @@ ActivityBase {
             width: background.width
             height: background.height
         }
+
+        Image {
+            id: imageBack2
+            anchors.top: imageBack.top
+            width: background.width
+            height: background.height
+        }
+
 
         Repeater {
             id: segmentsRepeater
@@ -101,14 +110,17 @@ ActivityBase {
                 Image {
                     id: pointImage
                     source: Activity.url + (highlight ?
-                            (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
+                    (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
                     "greenpoint.svg")
-                    sourceSize.height: background.height / 20  //to change the size of dots
+                    sourceSize.height: background.height / 25  //to change the size of dots
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
-                    visible: index == pointImageRepeater.count - 1 &&
-                             items.pointIndexToClick == 0 ? false : true
+
+                    visible: (mode=="clickanddraw" || mode=="drawnumbers") &&
+                    index == pointImageRepeater.count - 1 &&
+                    items.pointIndexToClick == 0 ? false : true
+
 
                     function drawSegment() {
                         Activity.drawSegment(index)
@@ -201,12 +213,13 @@ ActivityBase {
                         }
                     }
                 }
+
             }
 
             onPressed: {
                 checkPoints(touchPoints)
                 items.audioEffects.play('qrc:/gcompris/src/activities/drawnletters/resource/buttonclick.wav')
-            }
+                }
             onTouchUpdated: {
                 checkPoints(touchPoints)
             }

@@ -30,6 +30,7 @@ var mode
 var dataset
 var numberOfLevel
 var pointPositions = []
+var pointPositions2 = []
 var linePropertiesArray = []
 var url
 
@@ -51,14 +52,14 @@ function initLevel() {
     items.pointIndexToClick = 0
     loadCoordinates()
     loadBackgroundImage()
-    if(mode == "drawletters") {
+    if(mode=="drawletters") {
         //function to play letter sound at start
         playLetterSound(dataset[currentLevel].sound)
     }
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel) {
+    if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0
     }
     initLevel();
@@ -80,20 +81,27 @@ function playLetterSound(sound) {
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick) {
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
-        if (mode == "clickanddraw" || mode == "drawletters") {
+        if (mode=="clickanddraw" || mode=="drawletters") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
             }
         }
         // Draw the line from pointIndex - 1 to pointIndex
-        if (pointIndex > 0) {
-            items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
+        if(pointPositions2 && pointPositions2[pointIndex] != pointPositions2[pointIndex-1]){
+            //do nothing
         }
+        else {
+            if (pointIndex > 0) {
+                items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
+            }
+        }
+
         if (pointIndex == items.pointImageRepeater.count-1) {
             for (var i = 1; i < dataset[currentLevel].coordinates.length; i++) {
                 items.segmentsRepeater.itemAt(i-1).opacity = 0
             }
-            items.imageBack.source = url + dataset[currentLevel].imageName2
+            items.imageBack2.source = url + dataset[currentLevel].imageName2
+            //items.imageBack.source = url + dataset[currentLevel].imageName2
             won()
         }
         items.pointIndexToClick++
@@ -103,17 +111,17 @@ function drawSegment(pointIndex) {
 function loadCoordinates() {
     // prepare points data
     pointPositions = dataset[currentLevel].coordinates
+    pointPositions2 = dataset[currentLevel].coordinates2
     items.pointImageRepeater.model = pointPositions
-    if (mode == "clickanddraw" || mode == "drawletters")
-        items.pointImageRepeater.itemAt(0).highlight = true
+    items.pointImageRepeater.itemAt(0).highlight = true
     // prepare segments data
     linePropertiesArray = []
     for (var i = 0; i < (pointPositions.length)-1; i++) {
-        var lineProperties = []                    // properties are x1,y1,x2,y,angle rotation
-        lineProperties[0] = pointPositions[i][0]   // x
-        lineProperties[1] = pointPositions[i][1]   // y
-        lineProperties[2] = pointPositions[i+1][0] // x2
-        lineProperties[3] = pointPositions[i+1][1] // y2
+        var lineProperties = []                   // properties are x1,y1,x2,y,angle rotation
+        lineProperties[0] = pointPositions[i][0]                                    // x
+        lineProperties[1] = pointPositions[i][1]                                    // y
+        lineProperties[2] = pointPositions[i+1][0]                                  // x2
+        lineProperties[3] = pointPositions[i+1][1]                                  // y2
         linePropertiesArray[i] = lineProperties
     }
     items.segmentsRepeater.model = linePropertiesArray
@@ -121,6 +129,7 @@ function loadCoordinates() {
 
 function loadBackgroundImage() {
     items.imageBack.source = url + dataset[currentLevel].imageName1
+    items.imageBack2.source = url + dataset[currentLevel].imageName1
 }
 
 function won() {
@@ -129,3 +138,4 @@ function won() {
     }
     items.bonus.good("flower")
 }
+

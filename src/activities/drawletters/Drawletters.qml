@@ -23,7 +23,8 @@ import "../drawnumber"
 import "../../core" as Core
 import "drawletters_dataset.js" as Dataset
 
-Drawnumber {
+Drawnumber
+{
     mode: "drawletters"
     dataset: Dataset
     pointImageOpacity: 0
