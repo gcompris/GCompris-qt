@@ -45,6 +45,11 @@ ActivityBase {
                     GCText {
                         text: modelData.login
                     }
+                    MouseArea {
+                        id: mouse
+                        anchors.fill: parent
+                        onClicked: { Server.sendConfiguration(modelData) } // todo what do we do? display configuration
+                    }
                 }
             }
         }

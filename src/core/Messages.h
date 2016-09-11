@@ -22,6 +22,7 @@
 #ifndef MESSAGES_H
 #define MESSAGES_H
 
+#include <QList>
 #include <QString>
 #include <QStringList>
 #include <QDateTime>
@@ -32,7 +33,8 @@ enum MessageIdentifier : int {
     REQUEST_CONTROL,
     REQUEST_USERNAME,
     DISPLAYED_ACTIVITIES,
-    ACTIVITY_DATA
+    ACTIVITY_DATA,
+    ACTIVITY_CONFIGURATION
 };
 
 struct Identifier {
@@ -52,6 +54,15 @@ struct ActivityData {
     QString username;
     QDateTime date;
     QVariantMap data;
+};
+
+struct ActivityConfiguration {
+    QString activityName;
+    QVariantMap data;
+};
+
+struct ConfigurationData {
+    QList<ActivityConfiguration*> activities;
 };
 
 #endif

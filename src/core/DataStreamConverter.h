@@ -74,4 +74,17 @@ QDataStream& operator>>(QDataStream &dataStream, ActivityData &act)
     return dataStream;
 };
 
+QDataStream& operator<<(QDataStream &dataStream, const ActivityConfiguration &act)
+{
+    dataStream << act.activityName << act.data;
+    return dataStream;
+};
+
+QDataStream& operator>>(QDataStream &dataStream, ActivityConfiguration &act)
+{
+    dataStream >> act.activityName >> act.data;
+    return dataStream;
+};
+
+
 #endif

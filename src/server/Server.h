@@ -21,7 +21,6 @@
 #ifndef SERVER_H
 #define SERVER_H
 
-class QPushButton;
 class QTcpServer;
 class QTcpSocket;
 class QNetworkSession;
@@ -54,7 +53,8 @@ public:
     static Server* getInstance();
     
     Q_INVOKABLE void broadcastDatagram();
-    
+    Q_INVOKABLE void sendConfiguration(QObject *client/*, const ConfigurationData &config*/);
+
 private slots:
     void sessionOpened();
     void newTcpConnection();

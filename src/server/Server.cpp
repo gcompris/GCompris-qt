@@ -61,39 +61,6 @@ Server::Server(QWidget *parent)
     else {
         sessionOpened();
     }
-
-    QPushButton *quitButton = new QPushButton(tr("Quit"));
-    quitButton->setAutoDefault(false);
-    connect(quitButton, &QAbstractButton::clicked, this, &QWidget::close);
-    QPushButton *sendButton = new QPushButton(tr("Send All"));
-    sendButton->setAutoDefault(false);
-    connect(sendButton, &QAbstractButton::clicked, this, &Server::sendAll);
-
-    QPushButton *sendActivitiesButton = new QPushButton(tr("Send activities"));
-    sendActivitiesButton->setAutoDefault(false);
-    connect(sendActivitiesButton, &QAbstractButton::clicked, this, &Server::sendActivities);
-
-    QHBoxLayout *buttonLayout = new QHBoxLayout;
-    buttonLayout->addStretch(1);
-    buttonLayout->addWidget(sendButton);
-    buttonLayout->addWidget(sendActivitiesButton);
-    buttonLayout->addWidget(quitButton);
-    buttonLayout->addStretch(1);
-
-    QPushButton *broadcasting = new QPushButton("Broadcasting");
-    connect(broadcasting, &QAbstractButton::clicked, this, &Server::broadcastDatagram);
-
-    QHBoxLayout *buttonLayout2 = new QHBoxLayout;
-    buttonLayout2->addStretch(1);
-    buttonLayout2->addWidget(broadcasting);
-    buttonLayout2->addStretch(1);
-
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-
-    mainLayout->addLayout(buttonLayout);
-    mainLayout->addLayout(buttonLayout2);
-
-    setWindowTitle(QGuiApplication::applicationDisplayName());
 }
 
 Server* Server::getInstance()
@@ -220,7 +187,7 @@ void Server::slotReadyRead()
         }
     default:
         qDebug() << messageId._id << " received but not handled";
-    };
+    }
 }
 
 void Server::disconnected()
@@ -268,4 +235,23 @@ void Server::sendAll()
         qDebug() << "Sending " << block << " to " << sock;
         sock->write(block);
     }
+}
+
+
+void Server::sendConfiguration(QObject *c/*, const ConfigurationData &config*/)
+{
+    ClientData *client = (ClientData*)c;
+    QByteArray block;
+    QDataStream out(&block, QIODevice::WriteOnly);
+    out.setVersion(QDataStream::Qt_4_0);
+
+    ActivityConfiguration act;
+    act.activityName = "reversecount";
+    QVariantMap data;
+    data["dataset"] = "{}";
+    
+    out << ACTIVITY_CONFIGURATION << act;
+
+    qDebug() << "Sending " << block << " to " << client->getSocket();
+    ((QTcpSocket*)client->getSocket())->write(block);
 }
