@@ -22,53 +22,53 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Continents")
-   property variant levels: [
-      {
-         "pixmapfile": "continents/back.png",
-         "type": "SHAPE_BACKGROUND_IMAGE"
-      },
-      {
-         "pixmapfile": "continents/oceania.png",
-         "sound": "voices-$CA/$LOCALE/geography/oceania.$CA",
-         "toolTipText": qsTr("Oceania"),
-         "x": "0.892",
-         "y": "0.822"
-      },
-      {
-         "pixmapfile": "continents/europa.png",
-         "sound": "voices-$CA/$LOCALE/geography/europe.$CA",
-         "toolTipText": qsTr("Europe"),
-         "x": "0.507",
-         "y": "0.257"
-      },
-      {
-         "pixmapfile": "continents/asia.png",
-         "sound": "voices-$CA/$LOCALE/geography/asia.$CA",
-         "toolTipText": qsTr("Asia"),
-         "x": "0.747",
-         "y": "0.386"
-      },
-      {
-         "pixmapfile": "continents/antarctica.png",
-         "sound": "voices-$CA/$LOCALE/geography/antarctica.$CA",
-         "toolTipText": qsTr("Antarctica"),
-         "x": "0.42",
-         "y": "0.979"
-      },
-      {
-         "pixmapfile": "continents/america.png",
-         "sound": "voices-$CA/$LOCALE/geography/america.$CA",
-         "toolTipText": qsTr("America"),
-         "x": "0.22",
-         "y": "0.479"
-      },
-      {
-         "pixmapfile": "continents/africa.png",
-         "sound": "voices-$CA/$LOCALE/geography/africa.$CA",
-         "toolTipText": qsTr("Africa"),
-         "x": "0.512",
-         "y": "0.636"
-      }
-   ]
+    property string instruction: qsTr("Continents")
+    property variant levels: [
+    {
+        "pixmapfile": "continents/back.png",
+        "type": "SHAPE_BACKGROUND_IMAGE"
+    },
+    {
+        "pixmapfile": "continents/oceania.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/oceania.$CA",
+        "toolTipText": qsTr("Oceania"),
+        "x": "0.892",
+        "y": "0.822"
+    },
+    {
+        "pixmapfile": "continents/europa.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/europe.$CA",
+        "toolTipText": qsTr("Europe"),
+        "x": "0.507",
+        "y": "0.257"
+    },
+    {
+        "pixmapfile": "continents/asia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/asia.$CA",
+        "toolTipText": qsTr("Asia"),
+        "x": "0.747",
+        "y": "0.386"
+    },
+    {
+        "pixmapfile": "continents/antarctica.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/antarctica.$CA",
+        "toolTipText": qsTr("Antarctica"),
+        "x": "0.42",
+        "y": "0.979"
+    },
+    {
+        "pixmapfile": "continents/america.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/america.$CA",
+        "toolTipText": qsTr("America"),
+        "x": "0.22",
+        "y": "0.479"
+    },
+    {
+        "pixmapfile": "continents/africa.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/africa.$CA",
+        "toolTipText": qsTr("Africa"),
+        "x": "0.512",
+        "y": "0.636"
+    }
+    ]
 }
