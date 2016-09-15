@@ -147,6 +147,7 @@ void ActivityInfoTree::filterByTag(const QString &tag, bool emitChanged)
             m_menuTree.push_back(activity);
         }
     }
+    m_currentTag = tag;
     sortByDifficulty();
     if (emitChanged)
         Q_EMIT menuTreeChanged();
@@ -276,9 +277,14 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     }
     file.close();
 
+    connect(ApplicationSettings::getInstance(), &ApplicationSettings::activitiesToDisplayChanged,
+            menuTree, &ActivityInfoTree::onActivitiesToDisplayChanged);
+
     menuTree->filterByTag("favorite");
     menuTree->filterLockedActivities();
     menuTree->filterEnabledActivities();
+    menuTree->filterByConfiguration();
+
     return menuTree;
 }
 
@@ -299,6 +305,28 @@ void ActivityInfoTree::init()
 
     qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
     qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
+}
+
+void ActivityInfoTree::filterByConfiguration()
+{
+    if(!ApplicationSettings::getInstance()->activitiesToDisplay().empty()) {
+        const QStringList &visibleActivities = ApplicationSettings::getInstance()->activitiesToDisplay();
+        auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
+                                 [visibleActivities](const ActivityInfo* activity) {
+            return visibleActivities.indexOf(activity->name()) == -1;
+        });
+        m_menuTree.erase(it, m_menuTree.end());
+        emit menuTreeChanged();
+    }
+}
+
+void ActivityInfoTree::onActivitiesToDisplayChanged()
+{
+    // restore all the activities for the current tag
+    filterByTag(m_currentTag);
+    filterLockedActivities();
+    filterEnabledActivities();
+    filterByConfiguration();
 }
 
 void ActivityInfoTree::filterBySearch(const QString& text)

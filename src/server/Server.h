@@ -54,12 +54,12 @@ public:
     
     Q_INVOKABLE void broadcastDatagram();
     Q_INVOKABLE void sendConfiguration(QObject *client/*, const ConfigurationData &config*/);
+    Q_INVOKABLE void sendActivities();
 
 private slots:
     void sessionOpened();
     void newTcpConnection();
     void slotReadyRead();
-    void sendActivities();
     void sendAll();
     void disconnected();
 

@@ -62,6 +62,9 @@ static const QString IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
 static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
 static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
+static const QString CURRENT_SERVER = "currentServer";
+static const QString ACTIVITIES_DISPLAYED = "activitiesToDisplay";
+
 
 static const QString EXE_COUNT_KEY = "exeCount";
 static const QString LAST_GC_VERSION_RAN = "lastGCVersionRan";
@@ -152,6 +155,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "http://gcompris.net").toString();
+    m_currentServer = m_config.value(CURRENT_SERVER, "").toString();
+    m_activitiesToDisplay = m_config.value(ACTIVITIES_DISPLAYED, QStringList()).toStringList();
     m_config.endGroup();
 
     // internal group
@@ -182,6 +187,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
     connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
     connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
+    connect(this, &ApplicationSettings::currentServerChanged, this, &ApplicationSettings::notifyCurrentServerChanged);
+    connect(this, &ApplicationSettings::activitiesToDisplayChanged, this, &ApplicationSettings::notifyActivitiesToDisplayChanged);
     connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
 }
 
@@ -217,6 +224,8 @@ ApplicationSettings::~ApplicationSettings()
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
+    m_config.setValue(CURRENT_SERVER, m_currentServer);
+    m_config.setValue(ACTIVITIES_DISPLAYED, m_activitiesToDisplay);
     m_config.endGroup();
 
     // internal group
@@ -374,6 +383,22 @@ void ApplicationSettings::notifyDownloadServerUrlChanged()
 {
     updateValueInConfig(ADMIN_GROUP_KEY, DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
     qDebug() << "downloadServerUrl set to: " << m_downloadServerUrl;
+}
+
+void ApplicationSettings::notifyCurrentServerChanged()
+{
+    updateValueInConfig(ADMIN_GROUP_KEY, CURRENT_SERVER, m_currentServer);
+    qDebug() << "currentServer set to: " << m_currentServer;
+    if(m_currentServer.isEmpty()) {
+        m_activitiesToDisplay.clear();
+        notifyActivitiesToDisplayChanged();
+    }
+}
+
+void ApplicationSettings::notifyActivitiesToDisplayChanged()
+{
+    updateValueInConfig(ADMIN_GROUP_KEY, ACTIVITIES_DISPLAYED, m_activitiesToDisplay);
+    qDebug() << "activitiesToDisplay set to: " << m_activitiesToDisplay;
 }
 
 void ApplicationSettings::notifyExeCountChanged()

@@ -27,6 +27,7 @@
 #include <QUdpSocket>
 #include "Messages.h"
 #include "DataStreamConverter.h"
+#include "ApplicationSettings.h"
 #include "ClientNetworkMessages.h"
 
 ClientNetworkMessages* ClientNetworkMessages::_instance = 0;
@@ -118,10 +119,13 @@ void ClientNetworkMessages::connectToServer(const QString& serverName) {
     if(tcpSocket->state() != QAbstractSocket::ConnectedState) {
         tcpSocket->connectToHost(ip, port);
     }
+
+    ApplicationSettings::getInstance()->setCurrentServer(serverName);
 }
 
 void ClientNetworkMessages::disconnectFromServer() {
     tcpSocket->disconnectFromHost();
+    ApplicationSettings::getInstance()->setCurrentServer("");
 }
 
 void ClientNetworkMessages::connected() {
@@ -134,7 +138,7 @@ void ClientNetworkMessages::connected() {
     // Send Login message
     QByteArray bytes;
     QDataStream out(&bytes, QIODevice::WriteOnly);
-    Login login {QString("-%1-").arg(QHostInfo::localHostName()) };
+    Login login { QString("-%1-").arg(QHostInfo::localHostName()) };
     out << MessageIdentifier::LOGIN << login;
     sendMessage(bytes);
 }
@@ -184,7 +188,7 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
                                              const QVariantMap &data)
 {
     qDebug() << "Activity: " << activity << ", date: " << QDateTime::currentDateTime() << ", data:" << data;
-    QString username = "toto";
+    QString username = QString("-%1-").arg(QHostInfo::localHostName());
     ActivityData activityData { activity, username, QDateTime::currentDateTime(), data };
 
     QByteArray bytes;
@@ -220,6 +224,15 @@ void ClientNetworkMessages::readFromSocket()
             DisplayedActivities activities;
             in >> activities;
             qDebug() << "--" << activities.activitiesToDisplay;
+            ApplicationSettings::getInstance()->setActivitiesToDisplay(activities.activitiesToDisplay);
+            break;
+        }
+    case MessageIdentifier::ACTIVITY_CONFIGURATION:
+        {
+            ActivityConfiguration config;
+            in >> config;
+            qDebug() << "Configuration received for: " << config.activityName <<
+                        ", data: " << config.data;
             break;
         }
     default:

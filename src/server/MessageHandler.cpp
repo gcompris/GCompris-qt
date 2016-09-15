@@ -104,6 +104,6 @@ ClientData *MessageHandler::getClientData(const ClientData &cd)
         ClientData *c = (ClientData *) oc;
         if (c->getSocket() == socket) {
             return c;
-        }        
-    }    
+        }
+    }
 }

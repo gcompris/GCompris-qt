@@ -262,12 +262,14 @@ ActivityBase {
                         activity.currentTag = modelData.tag
                         particles.burst(10)
                         if(modelData.tag === "search") {
-                            ActivityInfoTree.filterBySearch(searchTextField.text);
+                            ActivityInfoTree.filterBySearch(searchTextField.text)
+                            ActivityInfoTree.filterByConfiguration()
                         }
                         else {
                             ActivityInfoTree.filterByTag(modelData.tag)
                             ActivityInfoTree.filterLockedActivities()
                             ActivityInfoTree.filterEnabledActivities()
+                            ActivityInfoTree.filterByConfiguration()
                         }
                     }
                 }

@@ -73,7 +73,7 @@ ActivityBase {
                 id: updateGroupButton
                 text: qsTr("Update a Group")
                 style: GCButtonStyle {}
-                onClicked: { print("update group: " + clients.currentItem.name) }
+                onClicked: { print("update group: " + clients.currentItem.name); }
                 enabled: clients.currentIndex != -1
             }
 
@@ -81,7 +81,10 @@ ActivityBase {
                 id: sendConfiguration
                 text: qsTr("Send configuration")
                 style: GCButtonStyle {}
-                onClicked: { print("select config and send config to: " + clients.currentItem.name) }
+                onClicked: {
+                    print("select config and send config to: " + clients.currentItem.name);
+                    Server.sendActivities();
+                }
                 enabled: clients.currentIndex != -1
             }
         }

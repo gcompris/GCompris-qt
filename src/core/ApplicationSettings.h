@@ -234,6 +234,16 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
 
+    /**
+     * address of the current server.
+     * Will be stored until the client explicitely disconnects (or server sends a disconnect message?).
+     * This means that if the server disconnects, the activity data will be stored
+     * and sent to the server at next connection.
+     *
+     * @sa ClientNetworkMessages
+     */
+    Q_PROPERTY(QString currentServer READ currentServer WRITE setCurrentServer NOTIFY currentServerChanged)
+
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
@@ -454,6 +464,19 @@ public:
      */
     Q_INVOKABLE bool useExternalWordset();
 
+    /** admin information **/
+    QString currentServer() const { return m_currentServer; }
+    void setCurrentServer(const QString newServer) {
+        m_currentServer = newServer;
+        emit currentServerChanged();
+    }
+
+    QStringList activitiesToDisplay() const { return m_activitiesToDisplay; }
+    void setActivitiesToDisplay(const QStringList newActivities) {
+        m_activitiesToDisplay = newActivities;
+        emit activitiesToDisplayChanged();
+    }
+
 protected slots:
 
     Q_INVOKABLE void notifyShowLockedActivitiesChanged();
@@ -484,6 +507,9 @@ protected slots:
     Q_INVOKABLE void notifyLastGCVersionRanChanged();
 
     Q_INVOKABLE void notifyBarHiddenChanged();
+
+    Q_INVOKABLE void notifyCurrentServerChanged();
+    Q_INVOKABLE void notifyActivitiesToDisplayChanged();
 
 public slots:
     Q_INVOKABLE bool isFavorite(const QString &activity);
@@ -553,6 +579,9 @@ signals:
     void lastGCVersionRanChanged();
     void barHiddenChanged();
 
+    void currentServerChanged();
+    void activitiesToDisplayChanged();
+
 private:
 
     // Update in configuration the couple {key, value} in the group.
@@ -593,6 +622,9 @@ private:
     QString m_downloadServerUrl;
 
     quint32 m_exeCount;
+
+    QString m_currentServer;
+    QStringList m_activitiesToDisplay;
 
     int m_lastGCVersionRan;
 

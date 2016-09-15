@@ -59,6 +59,9 @@ protected Q_SLOTS:
     Q_INVOKABLE void filterBySearch(const QString& text);
     Q_INVOKABLE void filterByDifficulty(int levelMin, int levelMax);
 
+    Q_INVOKABLE void filterByConfiguration();
+    void onActivitiesToDisplayChanged();
+
 signals:
     void menuTreeChanged();
     void currentActivityChanged();
@@ -71,6 +74,7 @@ private:
     QList<ActivityInfo *> m_menuTree;
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
+    QString m_currentTag;
     QVariantList m_keyboardCharacters;
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);

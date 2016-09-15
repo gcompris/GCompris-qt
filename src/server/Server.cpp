@@ -206,7 +206,7 @@ void Server::disconnected()
 void Server::sendActivities()
 {
     DisplayedActivities activities;
-    activities.activitiesToDisplay << "align4" << "erase" << "geography";
+    activities.activitiesToDisplay << "geography/Geography.qml" << "erase/Erase.qml" << "reversecount/ReverseCount.qml";
     
     QByteArray block;
     QDataStream out(&block, QIODevice::WriteOnly);
@@ -223,7 +223,7 @@ void Server::sendActivities()
 void Server::sendAll()
 {
     DisplayedActivities activities;
-    activities.activitiesToDisplay << "align4" << "erase" << "geography";
+    activities.activitiesToDisplay << "geography/Geography.qml" << "erase/Erase.qml" << "reversecount/Reversecount.qml";
     
     QByteArray block;
     QDataStream out(&block, QIODevice::WriteOnly);
@@ -246,10 +246,10 @@ void Server::sendConfiguration(QObject *c/*, const ConfigurationData &config*/)
     out.setVersion(QDataStream::Qt_4_0);
 
     ActivityConfiguration act;
-    act.activityName = "reversecount";
-    QVariantMap data;
-    data["dataset"] = "{}";
-    
+    act.activityName = "reversecount/Reversecount.qml";
+    act.data["dataset"] = "[{\"maxNumber\": 1, \"minNumber\": 1, \"numberOfFish\": 1},"
+                      " {\"maxNumber\": 2, \"minNumber\": 2, \"numberOfFish\": 4}]";
+
     out << ACTIVITY_CONFIGURATION << act;
 
     qDebug() << "Sending " << block << " to " << client->getSocket();
