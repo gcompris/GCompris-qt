@@ -63,6 +63,7 @@ int main(int argc, char *argv[])
     DownloadManager::init();
     Server::init();
     MessageHandler::init();
+    MessageHandler::getInstance();
     
     if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
