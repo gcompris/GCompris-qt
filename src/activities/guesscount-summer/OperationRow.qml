@@ -25,33 +25,33 @@ import "../../core"
 import "guesscount-summer.js" as Activity
 
 Row {
-    id: operation_row
+    id: operandRow
     spacing: 40
-    property alias end_result: end_result
-    property int row_result
-    property int no_of_rows
-    property int row_no
+    property alias endResult: endResult
+    property int rowResult
+    property int noOfRows
+    property int rowNo
     property int guesscount
-    property var prev_result
+    property var prevResult
     property bool complete: false
-    property bool prev_complete
+    property bool prevComplete
     property bool reparent
     Component {
         id: component1
         DropTile {
             id: operand1
             type : "operands"
-            width: operation_row.width*0.1
-            height: operation_row.height
-            dropped_item: operand1.children[count]
+            width: operandRow.width*0.1
+            height: operandRow.height
+            droppedItem: operand1.children[count]
             property int count: 0
             onChildrenChanged: {
-                Activity.children_change(operand1,operation_row)
+                Activity.childrenChange(operand1,operandRow)
                 if(operand1.count==1 && operator.count==1 && operand2.count==1)
                 {
-                    Activity.calculate(operand1.dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
-                    operation_row.complete=true
-                    if(operation_row.row_no==operation_row.no_of_rows-1 && operation_row.row_result==operation_row.guesscount)
+                    Activity.calculate(operand1.droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
+                    operandRow.complete=true
+                    if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
                     {
                         Activity.check_answer()
                     }
@@ -63,20 +63,20 @@ Row {
     Component {
         id:component2
         Rectangle {
-            id: prev_result
-            width: operation_row.width*0.1
-            height: operation_row.height
+            id: prevResult
+            width: operandRow.width*0.1
+            height: operandRow.height
             color: "white"
             border.color: "black"
-            property alias dropped_item: tile
-            property int count: operation_row.prev_complete ? 1 : 0
+            property alias droppedItem: tile
+            property int count: operandRow.prevComplete ? 1 : 0
             GCText {
                 id: tile
                 property int datavalue: Number(tile.text)
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fontSize: mediumSize
-                text: operation_row.prev_result == 0 ? "" : operation_row.prev_result
+                text: operandRow.prevResult == 0 ? "" : operandRow.prevResult
             }
             radius: 20.0
         }
@@ -84,23 +84,23 @@ Row {
 
     Loader {
         id: loader
-        sourceComponent: row_no ? component2 : component1
+        sourceComponent: rowNo ? component2 : component1
     }
 
     DropTile {
         id: operator
         type : "operators"
-        width: operation_row.width*0.1
-        height: operation_row.height
+        width: operandRow.width*0.1
+        height: operandRow.height
         property int count: 0
-        dropped_item: operator.children[count]
+        droppedItem: operator.children[count]
         onChildrenChanged: {
-            Activity.children_change(operator,operation_row)
+            Activity.childrenChange(operator,operandRow)
             if(loader.children[0].count==1 && operator.count==1 && operand2.count==1)
             {
-                Activity.calculate(loader.children[0].dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
-                operation_row.complete=true
-                if(operation_row.row_no==operation_row.no_of_rows-1 && operation_row.row_result==operation_row.guesscount)
+                Activity.calculate(loader.children[0].droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
+                operandRow.complete=true
+                if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
                 {
                     Activity.check_answer()
                 }
@@ -110,27 +110,27 @@ Row {
     DropTile {
         id: operand2
         type : "operands"
-        width: operation_row.width*0.1
-        height: operation_row.height
+        width: operandRow.width*0.1
+        height: operandRow.height
         property int count: 0
-        dropped_item: operand2.children[count]
+        droppedItem: operand2.children[count]
         onChildrenChanged: {
-            Activity.children_change(operand2,operation_row)
+            Activity.childrenChange(operand2,operandRow)
             if(loader.children[0].count==1 && operator.count==1 && operand2.count==1)
             {
-                Activity.calculate(loader.children[0].dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
-                operation_row.complete=true
-                if(operation_row.row_no==operation_row.no_of_rows-1 && operation_row.row_result==operation_row.guesscount)
+                Activity.calculate(loader.children[0].droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
+                operandRow.complete=true
+                if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
                 {
-                    Activity.check_answer(operation_row)
+                    Activity.check_answer(operandRow)
                 }
             }
         }
     }
 
     Rectangle {
-        width: operation_row.width*0.1
-        height: operation_row.height
+        width: operandRow.width*0.1
+        height: operandRow.height
         color: "transparent"
         Image {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -140,11 +140,11 @@ Row {
         radius: 20.0
     }
     Rectangle {
-        width: operation_row.width*0.1
-        height: operation_row.height
+        width: operandRow.width*0.1
+        height: operandRow.height
         border.color: "black"
         GCText{
-            id: end_result
+            id: endResult
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: mediumSize
@@ -152,36 +152,36 @@ Row {
         }
         radius: 20.0
     }
-    onPrev_completeChanged: {
-        if(!prev_complete)
+    onPrevResultChanged: {
+        if(!prevComplete)
         {
-            end_result.text=""
-            operation_row.complete=false
-            operation_row.row_result=0
+            endResult.text=""
+            operandRow.complete=false
+            operandRow.rowResult=0
         }
         else
         {
             if( operator.count==1 && operand2.count==1)
             {
-                Activity.calculate(loader.children[0].dropped_item.datavalue,operator.dropped_item.datavalue,operand2.dropped_item.datavalue,operation_row)
-                operation_row.complete=true
+                Activity.calculate(loader.children[0].droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
+                operandRow.complete=true
             }
         }
     }
     onReparentChanged: {
         console.log('reparent   1')
-        if(operation_row.reparent)
+        if(operandRow.reparent)
         {
             if(loader.children[0]){
-                if(loader.children[0].count!=0 && row_no==0){
-                    loader.children[0].dropped_item.parent=loader.children[0].dropped_item.reparent
+                if(loader.children[0].count!=0 && rowNo==0){
+                    loader.children[0].droppedItem.parent=loader.children[0].droppedItem.reparent
                 }
             }
             if(operator.count!=0){
-                operator.dropped_item.parent=operator.dropped_item.reparent
+                operator.droppedItem.parent=operator.droppedItem.reparent
             }
             if(operand2.count!=0){
-                operand2.dropped_item.parent=operand2.dropped_item.reparent
+                operand2.droppedItem.parent=operand2.droppedItem.reparent
             }
         }
     }

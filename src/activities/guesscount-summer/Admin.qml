@@ -29,7 +29,7 @@ Row {
     id: admin
     spacing: 30
     property int level
-    property var level_operators
+    property var levelOperators
     Rectangle {
         id: operator
         width: parent.width*0.328
@@ -41,7 +41,7 @@ Row {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: mediumSize
-            text: qsTr("Level "+(level+1).toString())
+            text: qsTr("Level %1").arg(level+1)
         }
     }
     Repeater {
@@ -52,11 +52,11 @@ Row {
             height: parent.height
             radius: 20
             opacity: 0.7
-            state: Activity.check(modelData,level_operators[level]) ? "selected" : "notselected"
+            state: Activity.check(modelData,levelOperators[level]) ? "selected" : "notselected"
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                text: qsTr(modelData)
+                text: modelData
                 fontSize: mediumSize
             }
             MouseArea {
@@ -64,13 +64,13 @@ Row {
                 onClicked: {
                     if(tile.state=="selected"){
                         tile.state="notselected"
-                        level_operators[level].splice(level_operators[level].indexOf(modelData),1)
-                        Activity.sync(level_operators,level)
+                        levelOperators[level].splice(levelOperators[level].indexOf(modelData),1)
+                        Activity.sync(levelOperators,level)
                     }
                     else{
                         tile.state="selected"
-                        level_operators[level].push(modelData)
-                        Activity.sync(level_operators,level)
+                        levelOperators[level].push(modelData)
+                        Activity.sync(levelOperators,level)
                     }
                 }
             }

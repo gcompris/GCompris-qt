@@ -51,7 +51,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int sublevel: 0
-            property alias operand_row : operand_row
+            property alias operandRow : operandRow
             property  var data
             property int result: data[sublevel-1][1]
             property alias timer: timer
@@ -60,9 +60,9 @@ ActivityBase {
             property bool solved
             property bool levelchanged : false
             property alias parser: parser
-            property var level_arr
+            property var levelArr
             property alias load: dialogActivityConfig
-            property alias operators: items.level_arr
+            property alias operators: items.levelArr
             property string mode
             property int currentlevel
         }
@@ -89,7 +89,7 @@ ActivityBase {
 
                 Repeater{
                     id:levels
-                    model: 6
+                    model: Activity.numberOfLevel
                     Admin{
                         id:level
                         level: modelData+1
@@ -110,7 +110,7 @@ ActivityBase {
             }
             color: "transparent"
             Rectangle {
-                id: question_no
+                id: questionNo
                 width: parent.width*0.328;
                 height: parent.height;
                 radius: 20.0;
@@ -140,7 +140,7 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     fontSize: mediumSize
-                    text: qsTr("Guesscount : %1").arg(items.result)
+                    text: qsTr("Guesscount: %1").arg(items.result)
                 }
             }
         }
@@ -151,31 +151,31 @@ ActivityBase {
             anchors.topMargin: 10
             width: parent.width
             height: parent.height
-            Operator_row {
+            OperatorRow {
                 width: parent.width
                 height: parent.height/10
                 mode: items.mode
                 operators: items.operators
                 level: items.currentlevel
             }
-            Operand_row {
-                id: operand_row
+            OperandRow {
+                id: operandRow
                 width: parent.width
                 height: parent.height/10
             }
             Repeater {
                 id: repeat
-                model: items.operand_row.repeater.model.length-1
-                delegate: Operation_row{
-                    id: operation_row
+                model: items.operandRow.repeater.model.length-1
+                delegate: OperationRow{
+                    id: operationRow
                     width: background.width
                     height: background.height/10
-                    property alias operation_row: operation_row
-                    no_of_rows: items.operand_row.repeater.model.length-1
-                    row_no: modelData
+                    property alias operationRow: operationRow
+                    noOfRows: items.operandRow.repeater.model.length-1
+                    rowNo: modelData
                     guesscount: items.result
-                    prev_result: modelData ? repeat.itemAt(modelData-1).row_result : -1
-                    prev_complete: modelData ? repeat.itemAt(modelData-1).complete : false
+                    prevResult: modelData ? repeat.itemAt(modelData-1).rowResult : -1
+                    prevComplete: modelData ? repeat.itemAt(modelData-1).complete : false
                     reparent: items.solved || items.levelchanged
                 }
             }
@@ -223,7 +223,7 @@ ActivityBase {
                                     }
                                     GCText{
                                         fontSize: mediumSize
-                                        text: modelData==0 ? qsTr("  NotSelected  ") : qsTr("  Selected  ")
+                                        text: modelData==0 ? qsTr("NotSelected") : qsTr("Selected")
                                     }
                                 }
                             }
@@ -241,7 +241,7 @@ ActivityBase {
                                 delegate: Admin {
                                     id: level
                                     level: modelData
-                                    level_operators: items.level_arr
+                                    levelOperators: items.levelArr
                                     width: background.width
                                     height: background.height/10
                                 }
@@ -254,20 +254,20 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["mode"] ) {
                     items.mode = dataToSave["mode"]
-                    if(dataToSave["level_arr"]==undefined)
-                        dataToSave["level_arr"]=[]
-                    console.log("loaded data :"+ dataToSave['level_arr'])
-                    if(dataToSave["level_arr"].length!=Activity.dataset.length)
-                        items.level_arr=Activity.add_empty_array(dataToSave["level_arr"],Activity.dataset.length)
+                    if(dataToSave["levelArr"]==undefined)
+                        dataToSave["levelArr"]=[]
+                    console.log("loaded data :"+ dataToSave['levelArr'])
+                    if(dataToSave["levelArr"].length!=Activity.dataset.length)
+                        items.levelArr=Activity.add_empty_array(dataToSave["levelArr"],Activity.dataset.length)
                     else
-                        items.level_arr = dataToSave["level_arr"]
+                        items.levelArr = dataToSave["levelArr"]
                 }
             }
 
             onSaveData: {
                 items.mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                console.log("saving data:  "+items.level_arr)
-                dataToSave = {"mode": items.mode,"level_arr":items.level_arr}
+                console.log("saving data:  "+items.levelArr)
+                dataToSave = {"mode": items.mode,"levelArr":items.levelArr}
                 activity.needRestart=true
             }
 
