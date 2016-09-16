@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,11 +23,11 @@ ActivityInfo {
   icon: "guesscount-summer/guesscount-summer.svg"
   author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
   demo: true
-  title: qsTr("Guessing the algebraic expression for the answer")
+  title: qsTr("Guessscount")
   description:qsTr("guess the algebraic expression and click on the buttons to add them.")
   //intro: "guesscount activity"
   goal: qsTr("To teach algebra")
-  prerequisite: qsTr("knowledge of arithematic oprations")
+  prerequisite: qsTr("knowledge of arithmetic oprations")
   manual: ""
   credit: ""
   section: "math"

@@ -30,7 +30,7 @@ var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
             "/",
             "*",
         ]*/
-var default_operators
+var defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = [
@@ -78,17 +78,17 @@ function stop() {
 }
 
 function initLevel() {
-    default_operators = items.parser.parseFromUrl(builtinFile)
+    defaultOperators = items.parser.parseFromUrl(builtinFile)
     items.bar.level = currentLevel + 1
     items.currentlevel = currentLevel
     items.sublevel = 1
-    items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
+    items.operandRow.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.data=dataset[currentLevel]
     items.levelchanged=false
 }
 function next_sublevel() {
     items.sublevel += 1
-    items.operand_row.repeater.model = dataset[currentLevel][items.sublevel-1][0]
+    items.operandRow.repeater.model = dataset[currentLevel][items.sublevel-1][0]
     items.data=dataset[currentLevel]
     items.solved=false
 }
@@ -107,7 +107,7 @@ function previousLevel() {
     initLevel();
 }
 
-function calculate(operand1,operator,operand2,operation_row)
+function calculate(operand1,operator,operand2,operationRow)
 {
     var result
     switch (operator) {
@@ -129,8 +129,8 @@ function calculate(operand1,operator,operand2,operation_row)
     }
     if(Math.round(result)-result==0)
     {
-        operation_row.row_result=result
-        operation_row.end_result.text=operation_row.row_result.toString()
+        operationRow.rowResult=result
+        operationRow.endResult.text=operationRow.rowResult.toString()
     }
     else
     {
@@ -139,7 +139,7 @@ function calculate(operand1,operator,operand2,operation_row)
 
 }
 
-function children_change(item,operation_row)
+function children_change(item,operationRow)
 {
     if(item.children.length==2 && item.count==0)
     {
@@ -149,16 +149,16 @@ function children_change(item,operation_row)
     }
     else if(item.children.length==3)
     {
-        item.dropped_item.parent=item.dropped_item.reparent
+        item.droppedItem.parent=item.droppedItem.reparent
         console.log(" second item is replaced "+item.count)
     }
     else if(item.children.length==1)
     {
         item.count-=1
         console.log(" first item left "+item.count)
-        operation_row.end_result.text=""
-        operation_row.row_result=0
-        operation_row.complete=false
+        operationRow.endResult.text=""
+        operationRow.rowResult=0
+        operationRow.complete=false
     }
 }
 
@@ -176,7 +176,7 @@ function check_answer(row){
 }
 
 function sync(array,level){
-    items.level_arr=array
+    items.levelArr=array
     console.log("level "+level+"  "+array[level])
 }
 function check(operator,array){

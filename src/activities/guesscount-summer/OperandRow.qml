@@ -20,37 +20,36 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-
 import QtQuick 2.1
 import "../../core"
 import "guesscount-summer.js" as Activity
 
 Row {
-    id: operator_row
+    id: operandRow
+    property alias repeater: repeater
+    property int rowSum
     spacing: 40
-    property string mode
-    property var operators
-    property int level
     Rectangle {
-        id: operator
-        width: parent.width*0.328
+        id: operands
+        width: parent.width*0.328;
         height: parent.height
         radius: 20.0;
-        color: "red"
+        color: "green"
         GCText {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: mediumSize
-            text: qsTr("Operators")
+            text: qsTr("Numbers")
         }
     }
+
     Repeater {
-        model:  mode=="builtin" ? Activity.default_operators[level] : operators[level]
+        id: repeater
         delegate: DragTile{
             id: root
-            type: "operators"
-            width: operator_row.width*0.1
-            height: operator_row.height
+            type: "operands"
+            width: operandRow.width*0.1
+            height: operandRow.height
         }
     }
 }
