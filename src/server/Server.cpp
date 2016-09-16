@@ -206,7 +206,7 @@ void Server::disconnected()
 void Server::sendActivities()
 {
     DisplayedActivities activities;
-    activities.activitiesToDisplay << "geography/Geography.qml" << "erase/Erase.qml" << "reversecount/ReverseCount.qml";
+    activities.activitiesToDisplay << "geography/Geography.qml" << "erase/Erase.qml" << "reversecount/Reversecount.qml";
     
     QByteArray block;
     QDataStream out(&block, QIODevice::WriteOnly);
