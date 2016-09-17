@@ -1,4 +1,4 @@
-/* GCompris - guesscount-summer.qml
+/* GCompris - Admin.qml
  *
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
@@ -25,6 +25,7 @@ import QtQuick 2.1
 import "../../core"
 import "guesscount-summer.js" as Activity
 
+
 Row {
     id: admin
     spacing: 30
@@ -45,7 +46,7 @@ Row {
         }
     }
     Repeater {
-        model: Activity.default_operators[level]
+        model: Activity.operators
         delegate: Rectangle {
             id: tile
             width: 100

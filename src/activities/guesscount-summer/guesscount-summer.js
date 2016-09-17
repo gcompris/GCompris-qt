@@ -24,12 +24,12 @@
 .import GCompris 1.0 as GCompris
 
 var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
-/*var operators = [
+var operators = [
             "+",
             "-",
             "/",
             "*",
-        ]*/
+        ]
 var defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
 var builtinFile = baseUrl + "/levels-default.json";
@@ -63,6 +63,12 @@ var dataset = [
                 [[20,5,3],12],
                 [[4,2,2,3],9]
             ],
+            [
+                [[4,2,3],18],
+                [[6,4,2],1],
+                [[20,5,3],12],
+                [[4,2,2,3],9]
+            ]
         ]
 var currentLevel = 0
 var numberOfLevel = dataset.length
@@ -78,7 +84,6 @@ function stop() {
 }
 
 function initLevel() {
-    defaultOperators = items.parser.parseFromUrl(builtinFile)
     items.bar.level = currentLevel + 1
     items.currentlevel = currentLevel
     items.sublevel = 1
@@ -139,7 +144,7 @@ function calculate(operand1,operator,operand2,operationRow)
 
 }
 
-function children_change(item,operationRow)
+function childrenChange(item,operationRow)
 {
     if(item.children.length==2 && item.count==0)
     {
@@ -162,7 +167,7 @@ function children_change(item,operationRow)
     }
 }
 
-function check_answer(row){
+function checkAnswer(row){
     if(items.sublevel<dataset[currentLevel].length)
     {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
@@ -187,10 +192,11 @@ function check(operator,array){
     }
     return false
 }
-function add_empty_array(array,length){
+function addLevelOperators(array,length){
     for(var i=array.length;i<length;i++)
-        array.push([])
+        array.push(defaultOperators[i])
     return array
 }
+
 
 
