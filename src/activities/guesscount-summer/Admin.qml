@@ -31,6 +31,7 @@ Row {
     spacing: 30
     property int level
     property var levelOperators
+    property int minOperatorsNeeded: Activity.maxLength(Activity.dataset[level])
     Rectangle {
         id: operator
         width: parent.width*0.328
@@ -73,6 +74,12 @@ Row {
                         levelOperators[level].push(modelData)
                         Activity.sync(levelOperators,level)
                     }
+                    if(levelOperators[level].length<minOperatorsNeeded){
+                        warning.visible=true
+                    }
+                    else{
+                        warning.visible=false
+                    }
                 }
             }
             states: [
@@ -85,6 +92,20 @@ Row {
                     PropertyChanges { target: tile; color: "red"}
                 }
             ]
+        }
+    }
+    Rectangle {
+        id: warning
+        visible: levelOperators[level].length<minOperatorsNeeded ? true : false
+        width: parent.width*0.25
+        height: parent.height
+        radius: 20.0;
+        color: "gray"
+        GCText {
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            fontSize: smallSize
+            text: qsTr("%1 more operator needed").arg(minOperatorsNeeded-levelOperators[level].length)
         }
     }
 }

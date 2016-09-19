@@ -59,7 +59,6 @@ ActivityBase {
             property GCAudio audioEffects: activity.audioEffects
             property bool solved
             property bool levelchanged : false
-            property alias parser: parser
             property var levelArr
             property alias load: dialogActivityConfig
             property alias operators: items.levelArr
@@ -73,6 +72,7 @@ ActivityBase {
                   } else
                       Activity.initLevel();
         onStop: { Activity.stop() }
+
 
         JsonParser {
             id: parser
@@ -192,7 +192,6 @@ ActivityBase {
             content: Component {
                 Item {
                     property alias modeBox: modeBox
-
                     property var availableModes: [
                         { "text": qsTr("Admin"), "value": "admin" },
                         { "text": qsTr("BuiltIn"), "value": "builtin" }
@@ -211,19 +210,23 @@ ActivityBase {
                         Row{
                             id: labels
                             spacing: 20
+                            visible: modeBox.currentIndex==0
                             Repeater{
                                 model: 2
                                 Row {
                                     spacing: 10
                                     Rectangle {
-                                        id: box
-                                        width: 20
-                                        height: 20
-                                        color: modelData==0 ? "red" : "green"
-                                    }
-                                    GCText{
-                                        fontSize: mediumSize
-                                        text: modelData==0 ? qsTr("NotSelected") : qsTr("Selected")
+                                        id: label
+                                        width: background.width*0.25
+                                        height: background.height/15
+                                        radius: 20.0;
+                                        color: modelData ? "green" : "red"
+                                        GCText {
+                                            anchors.horizontalCenter: parent.horizontalCenter
+                                            anchors.verticalCenter: parent.verticalCenter
+                                            fontSize: smallSize
+                                            text: modelData ? qsTr("Selected") : qsTr("Not Selected")
+                                        }
                                     }
                                 }
                             }
@@ -250,15 +253,19 @@ ActivityBase {
                     }
                 }
             }
-            onClose: home()
+            onClose: {
+                if(Activity.configDone(items.levelArr))
+                    home()
+            }
             onLoadData: {
+                Activity.defaultOperators=parser.parseFromUrl(Activity.builtinFile)
                 if(dataToSave && dataToSave["mode"] ) {
                     items.mode = dataToSave["mode"]
                     if(dataToSave["levelArr"]==undefined)
-                        dataToSave["levelArr"]=[]
+                        dataToSave["levelArr"]=Activity.defaultOperators
                     console.log("loaded data :"+ dataToSave['levelArr'])
                     if(dataToSave["levelArr"].length!=Activity.dataset.length)
-                        items.levelArr=Activity.add_empty_array(dataToSave["levelArr"],Activity.dataset.length)
+                        items.levelArr=Activity.defaultOperators
                     else
                         items.levelArr = dataToSave["levelArr"]
                 }

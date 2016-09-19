@@ -192,11 +192,19 @@ function check(operator,array){
     }
     return false
 }
-function addLevelOperators(array,length){
-    for(var i=array.length;i<length;i++)
-        array.push(defaultOperators[i])
-    return array
+function maxLength(array){
+    var max=0;
+    for(var i in array){
+        if(array[i][0].length-1>max)
+            max=array[i][0].length-1
+    }
+    return max
 }
-
-
-
+function configDone(array){
+    for(var i in array){
+        if(array[i].length<maxLength(dataset[i])){
+            return false
+        }
+    }
+    return true
+}
