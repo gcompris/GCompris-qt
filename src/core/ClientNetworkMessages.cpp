@@ -189,7 +189,7 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
 {
     qDebug() << "Activity: " << activity << ", date: " << QDateTime::currentDateTime() << ", data:" << data;
     QString username = QString("-%1-").arg(QHostInfo::localHostName());
-    ActivityData activityData { activity, username, QDateTime::currentDateTime(), data };
+    ActivityRawData activityData { activity, username, QDateTime::currentDateTime(), data };
 
     QByteArray bytes;
     QDataStream out(&bytes, QIODevice::WriteOnly);
@@ -201,7 +201,6 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
 
 bool ClientNetworkMessages::sendMessage(const QByteArray &message)
 {
-    qDebug() << "Message:" << message;
     int size = 0;
     if(tcpSocket->state() == QAbstractSocket::ConnectedState) {
         size = tcpSocket->write(message);
@@ -217,7 +216,6 @@ void ClientNetworkMessages::readFromSocket()
 
     Identifier messageId;
     in >> messageId;
-    qDebug() << "Reading " << data << " from " << tcpSocket;
     switch(messageId._id) {
     case MessageIdentifier::DISPLAYED_ACTIVITIES:
         {

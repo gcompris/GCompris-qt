@@ -30,6 +30,31 @@ ActivityBase {
         property bool demo: false
     }
 
+    function loadActivity() {
+        activityLoader.item.loading = loading
+        activityLoader.item.menu = activity
+        pageView.push(activityLoader.item)
+    }
+
+    Loader {
+        id: activityLoader
+        asynchronous: true
+        onStatusChanged: {
+            if (status == Loader.Loading) {
+                loading.start();
+            } else if (status == Loader.Ready) {
+                loading.stop();
+                loadActivity();
+            } else if (status == Loader.Error)
+                loading.stop();
+        }
+    }
+
+    Loading {
+        id: loading
+    }
+
+
     pageComponent: Item {
         anchors.fill: parent
         Grid {
@@ -48,7 +73,16 @@ ActivityBase {
                     MouseArea {
                         id: mouse
                         anchors.fill: parent
-                        onClicked: { Server.sendConfiguration(modelData) } // todo what do we do? display configuration
+                        onClicked: {
+                            //Server.sendConfiguration(modelData)
+                            var activity = "reversecount/Reversecount.qml";
+                            var tmp = modelData.getActivityData(activity);
+                            print(modelData + " " + tmp)
+                            activityLoader.setSource("qrc:/gcompris/src/server/views/activities/" + activity,
+                                                     {
+                                                         'model': tmp
+                                                     })
+                        } // todo what do we do? display configuration
                     }
                 }
             }

@@ -62,13 +62,13 @@ QDataStream& operator>>(QDataStream &dataStream, DisplayedActivities &act)
     return dataStream;
 };
 
-QDataStream& operator<<(QDataStream &dataStream, const ActivityData &act)
+QDataStream& operator<<(QDataStream &dataStream, const ActivityRawData &act)
 {
     dataStream << act.activityName << act.username << act.date << act.data;
     return dataStream;
 };
 
-QDataStream& operator>>(QDataStream &dataStream, ActivityData &act)
+QDataStream& operator>>(QDataStream &dataStream, ActivityRawData &act)
 {
     dataStream >> act.activityName >> act.username >> act.date >> act.data;
     return dataStream;

@@ -18,7 +18,6 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-#include <QtWidgets>
 #include <QtNetwork>
 
 #include "Messages.h"
@@ -30,8 +29,8 @@
 
 Server* Server::_instance = 0;
 
-Server::Server(QWidget *parent)
-    : QDialog(parent)
+Server::Server(QObject *parent)
+    : QObject(parent)
     , tcpServer(Q_NULLPTR)
     , networkSession(0)
 {
@@ -108,10 +107,8 @@ void Server::sessionOpened()
     connect(tcpServer, &QTcpServer::newConnection, this, &Server::newTcpConnection);
 
     if (!tcpServer->listen(QHostAddress::Any, 5678)) {
-        QMessageBox::critical(this, tr("GCompris Server"),
-                              tr("Unable to start the server: %1.")
-                              .arg(tcpServer->errorString()));
-        close();
+        qDebug() << tr("Unable to start the server: %1.")
+                              .arg(tcpServer->errorString());
         return;
     }
     QString ipAddress;
@@ -152,7 +149,6 @@ void Server::newTcpConnection()
 
 void Server::broadcastDatagram()
 {
-    qDebug()<< "is anyone out there";
     qDebug()<< QHostInfo::localHostName();
     QByteArray datagram;
     datagram.setNum(static_cast<qint32>(MessageIdentifier::REQUEST_CONTROL));
@@ -169,20 +165,23 @@ void Server::slotReadyRead()
 
     Identifier messageId;
     in >> messageId;
-    qDebug() << "Reading " << data << " from " << clientConnection;
+
+    ClientData client;
+    client.setSocket(clientConnection);
+
     switch(messageId._id) {
     case MessageIdentifier::LOGIN:
         {
             Login log;
             in >> log;
-            emit loginReceived(log);
+            emit loginReceived(client, log);
             break;
         }
     case MessageIdentifier::ACTIVITY_DATA:
         {
-            ActivityData act;
+            ActivityRawData act;
             in >> act;
-            emit activityDataReceived(act);
+            emit activityDataReceived(client, act);
             break;
         }
     default:
@@ -219,24 +218,6 @@ void Server::sendActivities()
         sock->write(block);
     }
 }
-
-void Server::sendAll()
-{
-    DisplayedActivities activities;
-    activities.activitiesToDisplay << "geography/Geography.qml" << "erase/Erase.qml" << "reversecount/Reversecount.qml";
-    
-    QByteArray block;
-    QDataStream out(&block, QIODevice::WriteOnly);
-    out.setVersion(QDataStream::Qt_4_0);
-    out << DISPLAYED_ACTIVITIES << activities;
-
-    for(auto sock: list)
-    {
-        qDebug() << "Sending " << block << " to " << sock;
-        sock->write(block);
-    }
-}
-
 
 void Server::sendConfiguration(QObject *c/*, const ConfigurationData &config*/)
 {

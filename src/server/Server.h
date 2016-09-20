@@ -27,19 +27,18 @@ class QNetworkSession;
 class QUdpSocket;
 
 struct Login;
-struct ActivityData;
+struct ActivityRawData;
 struct ClientData;
 
 #include <QQmlEngine>
 #include <QJSEngine>
-#include <QDialog>
 
-class Server : public QDialog
+class Server : public QObject
 {
     Q_OBJECT
 
 private:
-    explicit Server(QWidget *parent = Q_NULLPTR);
+    explicit Server(QObject *parent = Q_NULLPTR);
     static Server* _instance;  // singleton instance
 
 public:
@@ -60,7 +59,6 @@ private slots:
     void sessionOpened();
     void newTcpConnection();
     void slotReadyRead();
-    void sendAll();
     void disconnected();
 
 private:
@@ -73,8 +71,8 @@ private:
 signals:
     void newClientReceived(const ClientData &client);
     void clientDisconnected(const ClientData &client);
-    void loginReceived(const Login &log);
-    void activityDataReceived(const ActivityData &data);
+    void loginReceived(const ClientData &who, const Login &log);
+    void activityDataReceived(const ClientData &who, const ActivityRawData &data);
 };
 
 #endif

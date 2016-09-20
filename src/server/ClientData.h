@@ -22,6 +22,8 @@
 #define CLIENTDATA_H
 
 #include <QObject>
+#include "ActivityData.h"
+
 class QTcpSocket;
 
 class ClientData : public QObject {
@@ -38,9 +40,15 @@ public:
     void setSocket(const QTcpSocket *socket);
     void setLogin(const QString &newLogin);
 
+    void addData(const ActivityRawData &rawData);
+
+    Q_INVOKABLE const QList<QObject*> getActivityData(const QString &activity);
+
 private:
     const QTcpSocket *m_socket;
     QString m_login;
+
+    QMap<QString /*activity*/, ActivityData> m_activityData;
 
 signals:
     void newLogin();

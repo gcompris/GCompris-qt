@@ -21,6 +21,7 @@
 
 #include <QString>
 #include <QTcpSocket>
+#include "Messages.h"
 #include "ClientData.h"
 
 ClientData::ClientData() : m_socket(0)
@@ -49,4 +50,15 @@ void ClientData::setSocket(const QTcpSocket *newSocket)
 void ClientData::setLogin(const QString &newLogin)
 {
     m_login = newLogin;
+}
+
+void ClientData::addData(const ActivityRawData &rawData)
+{
+    ActivityData &act = m_activityData[rawData.activityName];
+    act.push_back(rawData);
+}
+
+const QList<QObject*> ClientData::getActivityData(const QString &activity)
+{
+    return m_activityData[activity].m_qmlData;
 }

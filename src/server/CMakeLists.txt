@@ -7,6 +7,8 @@ set(GCOMPRIS_SERVER_EXECUTABLE_NAME gcompris-server)
 set(server_SRCS
   MessageHandler.cpp
   MessageHandler.h
+  ActivityData.cpp
+  ActivityData.h
   ClientData.cpp
   ClientData.h
   GroupData.cpp
@@ -44,7 +46,7 @@ endif()
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 
-GCOMPRIS_ADD_RCC(server main.qml views/*.qml)
+GCOMPRIS_ADD_RCC(server main.qml views/*.qml views/*/*/*.qml)
 
 # Installation
 # ============

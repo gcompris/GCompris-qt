@@ -49,7 +49,7 @@ struct DisplayedActivities {
     QStringList activitiesToDisplay;
 };
 
-struct ActivityData {
+struct ActivityRawData {
     QString activityName;
     QString username;
     QDateTime date;

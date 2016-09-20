@@ -69,16 +69,19 @@ void MessageHandler::createGroup(const QString &newGroup)
     emit newGroups();
 }
 
-void MessageHandler::onLoginReceived(const Login &data)
+void MessageHandler::onLoginReceived(const ClientData &who, const Login &data)
 {
     qDebug() << "Login received '" << data._name << "'";
+    ClientData *c = getClientData(who);
+    c->setLogin(data._name);
 }
 
-void MessageHandler::onActivityDataReceived(const ActivityData &act)
+void MessageHandler::onActivityDataReceived(const ClientData &who, const ActivityRawData &act)
 {
     qDebug() << "Activity: " << act.activityName << ", date: " << act.date << ", data:" << act.data;
+    ClientData *c = getClientData(who);
+    c->addData(act);
 }
-
 void MessageHandler::onNewClientReceived(const ClientData &client)
 {
     qDebug() << "New client";

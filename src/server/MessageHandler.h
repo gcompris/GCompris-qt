@@ -50,8 +50,8 @@ public:
     Q_INVOKABLE void createGroup(const QString &groupName);
 
 public slots:
-    void onLoginReceived(const Login &data);
-    void onActivityDataReceived(const ActivityData &act);
+    void onLoginReceived(const ClientData &who, const Login &data);
+    void onActivityDataReceived(const ClientData &who, const ActivityRawData &act);
     void onNewClientReceived(const ClientData &client);
     void onClientDisconnected(const ClientData &client);
 
