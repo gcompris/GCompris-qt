@@ -56,6 +56,12 @@ void ClientData::addData(const ActivityRawData &rawData)
 {
     ActivityData &act = m_activityData[rawData.activityName];
     act.push_back(rawData);
+
+    ActivityData *act2 = m_variantData[rawData.activityName].value<ActivityData*>();
+    if(!act2) act2 = new ActivityData;
+    act2->push_back(rawData);
+    m_variantData[rawData.activityName] = QVariant::fromValue(act2);
+    emit newActivityData();
 }
 
 const QList<QObject*> ClientData::getActivityData(const QString &activity)

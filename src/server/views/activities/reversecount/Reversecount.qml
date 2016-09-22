@@ -30,7 +30,10 @@ ActivityBase {
         property bool demo: false
     }
 
-    property var model
+    property QtObject client
+    property string act
+
+    property var model: client && client.activityData[act] ? client.activityData[act].data : undefined
 
     pageComponent: Item {
         anchors.fill: parent

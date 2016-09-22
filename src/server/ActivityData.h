@@ -56,6 +56,7 @@ signals:
 
 class ActivityData : public QObject {
     Q_OBJECT
+    Q_PROPERTY(QList<QObject *> data MEMBER m_qmlData NOTIFY newData)
 
 public:
     ActivityData();
@@ -69,6 +70,11 @@ public:
     QList<QObject *> m_qmlData;
 private:
     QList<ActivityData_d> m_data;
+
+signals:
+    void newData();
 };
+
+Q_DECLARE_METATYPE(ActivityData)
 
 #endif

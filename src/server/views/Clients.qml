@@ -76,11 +76,10 @@ ActivityBase {
                         onClicked: {
                             //Server.sendConfiguration(modelData)
                             var activity = "reversecount/Reversecount.qml";
-                            var tmp = modelData.getActivityData(activity);
-                            print(modelData + " " + tmp)
                             activityLoader.setSource("qrc:/gcompris/src/server/views/activities/" + activity,
                                                      {
-                                                         'model': tmp
+                                                         'client': modelData,
+                                                         'act': activity
                                                      })
                         } // todo what do we do? display configuration
                     }

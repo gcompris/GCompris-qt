@@ -30,6 +30,7 @@ class ClientData : public QObject {
     Q_OBJECT
 
     Q_PROPERTY(QString login MEMBER m_login NOTIFY newLogin)
+    Q_PROPERTY(QVariantMap activityData MEMBER m_variantData NOTIFY newActivityData)
 
 public:
     ClientData();
@@ -49,9 +50,11 @@ private:
     QString m_login;
 
     QMap<QString /*activity*/, ActivityData> m_activityData;
+    QVariantMap m_variantData;
 
 signals:
     void newLogin();
+    void newActivityData();
 };
 
 #endif

@@ -46,6 +46,7 @@ void ActivityData::push_back(const ActivityRawData &rawData)
     data->setData(rawData.data);
     m_data.push_back(*data);
     m_qmlData.push_back(data);
+    emit newData();
 }
 
 ActivityData_d::ActivityData_d()
