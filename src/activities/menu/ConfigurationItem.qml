@@ -211,6 +211,15 @@ Item {
                 isAudioEffectsEnabled = checked;
             }
         }
+        
+	GCDialogCheckBox {
+           id: enableBackgroundMusicBox
+            text: qsTr("Enable background music")
+            checked: isBackgroundMusicEnabled
+            onCheckedChanged: {
+                isBackgroundMusicEnabled = checked;
+            }
+        }
 
         GCDialogCheckBox {
             id: enableFullscreenBox
@@ -404,6 +413,58 @@ Item {
                 }
             }
         }
+        
+        Flow {
+            id: backgroundMusicRow
+            width: parent.width
+            spacing: 5 * ApplicationInfo.ratio
+            
+            property bool haveBackgroundMusicResource: false
+
+            function backgroundMusichanged() {
+                print("HO")
+                backgroundMusicRow.haveBackgroundMusicResource = DownloadManager.isDataRegistered(
+                            "backgroundMusic-" + ApplicationInfo.CompressedAudio + ".rcc" )
+                         }
+
+
+            Connections {
+                target: DownloadManager
+                onDownloadFinished: backgroundMusicRow.backgroundMusichanged()
+            }
+            
+            
+            GCText {
+                id: backgroundMusicText
+                text: qsTr("Background music")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+            
+            Image {
+                id: backgroundMusicImage
+                sourceSize.height: 30 * ApplicationInfo.ratio
+                source: backgroundMusicRow.haveBackgroundMusicResource ? "qrc:/gcompris/src/core/resource/apply.svg" :
+                "qrc:/gcompris/src/core/resource/cancel.svg"
+            }
+            
+            Button {
+                id: backgroundMusicButton
+                height: 30 * ApplicationInfo.ratio
+                visible: ApplicationInfo.isDownloadAllowed
+                text: backgroundMusicRow ? qsTr("Check for updates") :
+                qsTr("Download")
+                style: GCButtonStyle {}
+                onClicked: {
+                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())){
+                    print(DownloadManager.getBackgroundMusicResources())
+                    var downloadDialog = Core.showDownloadDialog(dialogConfig.parent.rootItem, {});
+                    backgroundMusicRow.haveBackgroundMusicResource = true;
+                    }
+                }
+            }
+        }
+
 
         Flow {
             width: parent.width
@@ -525,6 +586,7 @@ Item {
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
+    property bool isBackgroundMusicEnabled: ApplicationSettings.isBackgroundMusicEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
@@ -542,6 +604,10 @@ Item {
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
+        
+        isBackgroundMusicEnabled = ApplicationSettings.isBackgroundMusicEnabled
+        enableBackgroundMusicBox.checked = isBackgroundMusicEnabled
+
 
         isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
@@ -589,6 +655,7 @@ Item {
         ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
+        ApplicationSettings.isBackgroundMusicEnabled = isBackgroundMusicEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
@@ -687,6 +754,7 @@ Item {
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
+        (ApplicationSettings.isBackgroundMusicEnabled != isBackgroundMusicEnabled) ||
         (ApplicationSettings.isFullscreen != isFullscreen) ||
         (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
         (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||

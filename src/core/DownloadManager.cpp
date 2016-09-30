@@ -153,6 +153,11 @@ QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
             .arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
 }
 
+QString DownloadManager::getBackgroundMusicResources() const
+{
+    return QString("data2/backgroundMusic-" COMPRESSED_AUDIO ".rcc");
+}
+
 inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
 {
     foreach (const QString &base, getSystemResourcePaths()) {

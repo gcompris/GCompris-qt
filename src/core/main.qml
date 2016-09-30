@@ -47,92 +47,125 @@ Window {
     width: ApplicationSettings.previousWidth
     height: ApplicationSettings.previousHeight
     minimumWidth: 400 * ApplicationInfo.ratio
-    minimumHeight: 400 * ApplicationInfo.ratio
+    minimumHeight: 400 * ApplicationInfo.ratio 
     title: "GCompris"
-
+    
+    
     /// @cond INTERNAL_DOCS
-
+    
     property var applicationState: Qt.application.state
 
+    property var selectedMusicIndex 
+    property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc();
+    property alias backgroundMusic: backgroundMusic
+    property bool isBackgroundMusicAllowed: ApplicationSettings.isBackgroundMusicEnabled
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
             audioVoices.stop();
             audioEffects.stop();
         }
     }
-
+    
     onClosing: Core.quit(main)
+   
+    onIsBackgroundMusicAllowedChanged: {
+        if(isBackgroundMusicAllowed) {
+            selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+            backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
+        }
+        else {
+            backgroundMusic.stop()
+        }
+    }
 
     GCAudio {
         id: audioVoices
         muted: !ApplicationSettings.isAudioVoicesEnabled
-
+        
         Timer {
             id: delayedWelcomeTimer
             interval: 10000 /* Make sure, that playing welcome.ogg if delayed
                              * because of not yet registered voices, will only
                              * happen max 10sec after startup */
             repeat: false
-
+            
             onTriggered: {
                 DownloadManager.voicesRegistered.disconnect(playWelcome);
             }
-
+            
             function playWelcome() {
                 audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
             }
         }
-
+        
         Component.onCompleted: {
-            if(ApplicationSettings.isAudioEffectsEnabled)
-                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+            if(!ApplicationSettings.isAudioEffectsEnabled && isBackgroundMusicAllowed) {
+                 Math.floor(Math.random()*rccBackgroundMusic.length);
+                backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
 
-            if (DownloadManager.areVoicesRegistered())
-                delayedWelcomeTimer.playWelcome();
-            else {
-                DownloadManager.voicesRegistered.connect(
-                        delayedWelcomeTimer.playWelcome);
-                delayedWelcomeTimer.start();
+            }
+
+           else  if(ApplicationSettings.isAudioEffectsEnabled)
+            {
+                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+                if (DownloadManager.areVoicesRegistered()){
+                    delayedWelcomeTimer.playWelcome();
+                    delayedbackgroundMusic.start();
+                }
+                else {
+                    DownloadManager.voicesRegistered.connect(
+                                delayedWelcomeTimer.playWelcome);
+                    delayedWelcomeTimer.start();
+                    delayedbackgroundMusic.start();
+                }
             }
         }
     }
-
+    
+    Timer {
+        id: delayedbackgroundMusic
+        interval: 20000
+        repeat: false
+        
+        onTriggered: {
+            print(rccBackgroundMusic)
+            selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+            backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/"+rccBackgroundMusic[selectedMusicIndex]));
+        }
+    }
+    
     GCAudio {
         id: audioEffects
         muted: !ApplicationSettings.isAudioEffectsEnabled
+    }
+    
+    GCAudio {
+        id: backgroundMusic
+        muted: !ApplicationSettings.isBackgroundMusicEnabled
+        
+        onDone: {
+            selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+            backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
+        }
     }
 
     function playIntroVoice(name) {
         name = name.split("/")[0]
         audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
     }
-
+    
     function checkWordset() {
-        var wordset = ApplicationSettings.wordset
-        if(wordset == '')
-            // Maybe the wordset has been bundled or copied manually
-            // we have to register it if we find it.
-            wordset = 'data2/words/words.rcc'
-
+        if(ApplicationSettings.wordset == '')
+            return
+        
         // check for words.rcc:
         if (DownloadManager.isDataRegistered("words")) {
             // words.rcc is already registered -> nothing to do
-        } else if(DownloadManager.haveLocalResource(wordset)) {
+        } else if(DownloadManager.haveLocalResource(ApplicationSettings.wordset)) {
             // words.rcc is there -> register old file first
             // then try to update in the background
-            if(DownloadManager.updateResource(wordset)) {
-                DownloadManager.resourceRegistered.connect(function() {
-                    // not sure if needed, we check if the resource registered is the one we updated here?
-                    if(wordset === arguments[0]) {
-                        DownloadManager.resourceRegistered.disconnect(arguments.callee);
-                        // force configuration to use the local wordset
-                        ApplicationSettings.wordset = wordset
-                    }
-                })
-            }
-
-
-        } else if(ApplicationSettings.wordset) { // Only if wordset specified
+            DownloadManager.updateResource(ApplicationSettings.wordset);
+        } else {
             // words.rcc has not been downloaded yet -> ask for download
             Core.showMessageDialog(
                         main,
@@ -140,18 +173,18 @@ Window {
                         + qsTr("Do you want to download them now?"),
                         qsTr("Yes"),
                         function() {
-                            if (DownloadManager.downloadResource(wordset))
+                            if (DownloadManager.downloadResource(ApplicationSettings.wordset))
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
                         qsTr("No"), null,
                         function() { pageView.currentItem.focus = true }
-            );
+                        );
         }
     }
     ChangeLog {
-       id: changelog
+        id: changelog
     }
-
+    
     Component.onCompleted: {
         console.log("enter main.qml (run #" + ApplicationSettings.exeCount
                     + ", ratio=" + ApplicationInfo.ratio
@@ -159,9 +192,7 @@ Window {
                     + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
                     + ", sharedWritablePath=" + ApplicationInfo.getSharedWritablePath()
                     + ")");
-        if (ApplicationSettings.exeCount === 1 &&
-                !ApplicationSettings.isKioskMode &&
-                ApplicationInfo.isDownloadAllowed) {
+        if (ApplicationSettings.exeCount === 1 && !ApplicationSettings.isKioskMode) {
             // first run
             var dialog;
             dialog = Core.showMessageDialog(
@@ -173,8 +204,8 @@ Window {
                         + qsTr("Have Fun!")
                         + "\n"
                         + qsTr("Your current language is %1 (%2).")
-                          .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
-                          .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale))
+                        .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
+                        .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale))
                         + "\n"
                         + qsTr("Do you want to download the corresponding sound files now?"),
                         qsTr("Yes"),
@@ -188,7 +219,7 @@ Window {
                             pageView.currentItem.focus = true
                             checkWordset()
                         }
-            );
+                        );
         }
         else {
             // Register voices-resources for current locale, updates/downloads only if
@@ -196,6 +227,10 @@ Window {
             if (!DownloadManager.areVoicesRegistered()) {
                 if (DownloadManager.updateResource(
                             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))) {
+                    DownloadManager.downloadFinished.connect(function() {
+                        checkWordset();
+                        DownloadManager.downloadFinished.disconnect(arguments.callee);
+                    });
                     DownloadManager.resourceRegistered.connect(function() {
                         // not sure if needed, we check if the resource registered is the one we updated here?
                         if(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale) === arguments[0]) {
@@ -211,41 +246,41 @@ Window {
             else {
                 checkWordset()
             }
-
+            
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 var dialog;
                 dialog = Core.showMessageDialog(
-                main,
-                qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
-                "", null,
-                "", null,
-                function() { pageView.currentItem.focus = true }
-                );
+                            main,
+                            qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
+                            "", null,
+                            "", null,
+                            function() { pageView.currentItem.focus = true }
+                            );
                 // Store new version
                 ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
             }
         }
     }
-
+    
     Loading {
         id: loading
     }
-
+    
     StackView {
         id: pageView
         anchors.fill: parent
         initialItem: {
             "item": "qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name,
-            "properties": {
+                    "properties": {
                 'audioVoices': audioVoices,
                 'audioEffects': audioEffects,
                 'loading': loading
             }
         }
-
+        
         focus: ApplicationInfo.QTVersion >= "5.4.0"
-
+        
         delegate: StackViewDelegate {
             id: root
             function getTransition(properties)
@@ -254,11 +289,11 @@ Window {
                 if(!properties.exitItem.isDialog &&        // if coming from menu and
                         !properties.enterItem.isDialog)    // going into an activity then
                     playIntroVoice(properties.enterItem.activityInfo.name);    // play intro
-
+                
                 if (!properties.exitItem.isDialog ||       // if coming from menu or
                         properties.enterItem.alwaysStart)  // start signal enforced (for special case like transition from config-dialog to editor)
                     properties.enterItem.start();
-
+                
                 if(properties.name === "pushTransition") {
                     if(properties.enterItem.isDialog) {
                         return pushVTransition
@@ -271,10 +306,10 @@ Window {
                     } else {
                         return popHTransition
                     }
-
+                    
                 }
             }
-
+            
             function transitionFinished(properties)
             {
                 properties.exitItem.opacity = 1
@@ -282,7 +317,7 @@ Window {
                     properties.exitItem.stop()
                 }
             }
-
+            
             property Component pushHTransition: StackViewTransition {
                 PropertyAnimation {
                     target: enterItem
@@ -301,7 +336,7 @@ Window {
                     easing.type: Easing.OutSine
                 }
             }
-
+            
             property Component popHTransition: StackViewTransition {
                 PropertyAnimation {
                     target: enterItem
@@ -320,7 +355,7 @@ Window {
                     easing.type: Easing.OutSine
                 }
             }
-
+            
             property Component pushVTransition: StackViewTransition {
                 PropertyAnimation {
                     target: enterItem
@@ -339,7 +374,7 @@ Window {
                     easing.type: Easing.OutSine
                 }
             }
-
+            
             property Component popVTransition: StackViewTransition {
                 PropertyAnimation {
                     target: enterItem
@@ -358,10 +393,10 @@ Window {
                     easing.type: Easing.OutSine
                 }
             }
-
+            
             property Component replaceTransition: pushHTransition
         }
     }
-
+    
     /// @endcond
 }

@@ -1,0 +1,10 @@
+diff a/src/activities/menu/ConfigurationItem.qml b/src/activities/menu/ConfigurationItem.qml	(rejected hunks)
+@@ -252,7 +252,7 @@ Item {
+         
+       GCDialogCheckBox {
+             id: enableAutomaticBackgroundMusicDownloadsBox
+-            checked: isAutomaticBackgroundMusicDownloadsEnabled
++            checked: true
+             text: qsTr("Enable automatic downloads/updates of background music")
+             visible: true
+             onCheckedChanged: {
