@@ -156,7 +156,6 @@ void ClientNetworkMessages::serverDisconnected() {
     emit hostChanged();
 }
 
-
 void ClientNetworkMessages::udpRead() {
     // someone is out there whom I can connect with.Let's get it's address and store it in the list;
     qDebug() << "Receiving data";
@@ -170,14 +169,29 @@ void ClientNetworkMessages::udpRead() {
     // since our server keeps on sending the broadcast message udpread() will be called everytime it receives the broadcast message
     // add the server's address to list only if it was not added before;
 
-    // todo use the real server name and a real message with QDataStream
-    if(!_connected)
-        emit requestConnection(datagram.data());
+    QDataStream in(&datagram, QIODevice::ReadOnly);
+    in.setVersion(QDataStream::Qt_4_0);
+    Identifier messageId;
+    in >> messageId;
+    switch(messageId._id) {
+    case MessageIdentifier::REQUEST_CONTROL:
+        {
+            QString serverName;
+            in >> serverName;
+            qDebug() << "control requested by " << serverName;
+            // todo use the real server name and a real message with QDataStream
+            if(!_connected)
+                emit requestConnection(serverName);
 
-    if(!serversAvailable.contains(datagram.data())) {
-        serversAvailable.append(datagram.data());
-        serverMap.insert(datagram.data(),address);
-        emit newServers();
+            if(!serversAvailable.contains(serverName)) {
+                serversAvailable.append(serverName);
+                serverMap.insert(serverName, address);
+                emit newServers();
+            }
+        }
+        break;
+    default:
+        qDebug() << messageId._id << " received but not handled";
     }
 }
 
@@ -239,6 +253,7 @@ void ClientNetworkMessages::readFromSocket()
             in >> config;
             qDebug() << "Configuration received for: " << config.activityName <<
                         ", data: " << config.data;
+            ApplicationSettings::getInstance()->storeActivityConfiguration(config.activityName, config.data);
             break;
         }
     case MessageIdentifier::LOGINS_LIST:

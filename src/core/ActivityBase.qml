@@ -123,6 +123,14 @@ Item {
     property Loading loading
 
     /**
+     * type:var
+     *
+     * Specific configuration (dataset) for the activity
+     * @sa ClientNetworkMessages
+     */
+    property var activityConfiguration: activityInfo ? ApplicationSettings.getActivityConfiguration(activityInfo.name) : ""
+
+    /**
      * Emitted when the user wants to return to the Home/Menu screen.
      */
     signal home

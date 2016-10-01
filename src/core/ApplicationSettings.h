@@ -477,6 +477,8 @@ public:
         emit activitiesToDisplayChanged();
     }
 
+    void storeActivityConfiguration(const QString &activityName, const QVariantMap &data);
+
 protected slots:
 
     Q_INVOKABLE void notifyShowLockedActivitiesChanged();
@@ -510,6 +512,8 @@ protected slots:
 
     Q_INVOKABLE void notifyCurrentServerChanged();
     Q_INVOKABLE void notifyActivitiesToDisplayChanged();
+
+    Q_INVOKABLE QVariant getActivityConfiguration(const QString &activityName);
 
 public slots:
     Q_INVOKABLE bool isFavorite(const QString &activity);
@@ -631,6 +635,7 @@ private:
     bool m_isBarHidden;
 
     QSettings m_config;
+    QSettings m_adminConfig;
 };
 
 #endif // APPLICATIONSETTINGS_H

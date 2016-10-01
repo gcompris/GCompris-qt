@@ -62,7 +62,7 @@ var fishes = [
         ]
 
 
-var levels = [
+var defaultLevels = [
             {
                 "maxNumber": 1, /* Max number on each domino side */
                 "minNumber": 1,
@@ -111,11 +111,13 @@ var levels = [
 
         ]
 
+var levels;
 var numberOfFish
 var fishIndex = -1
 
+var numberOfLevel
+
 var currentLevel = 0
-var numberOfLevel = levels.length
 var items
 
 var url = "qrc:/gcompris/src/activities/reversecount/resource/"
@@ -123,6 +125,14 @@ var url = "qrc:/gcompris/src/activities/reversecount/resource/"
 function start(items_) {
     items = items_
     currentLevel = 0
+
+    if(items.activityData)
+        levels = JSON.parse(items.activityData)
+    else
+        levels = defaultLevels
+
+    numberOfLevel = levels.length
+
     initLevel()
 }
 

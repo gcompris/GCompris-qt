@@ -105,7 +105,7 @@ ActivityBase {
         },
         {
             view:"ActivityConfiguration",
-            text:qsTr("Send DataSet")
+            text:qsTr("Send Dataset")
         }
 
     ]
@@ -186,12 +186,11 @@ ActivityBase {
                     }
                     text: modelData.text
                     function selectCurrentItem() {
-                        if(modelData.view == "Broadcast") {
+                        if(modelData.view === "Broadcast") {
                             print("sending broadcast to find clients")
                             Server.broadcastDatagram()
                         }
-                        else if(modelData.view == "ActivityConfiguration") {
-
+                        else if(modelData.view === "ActivityConfiguration") {
                             Server.sendConfiguration()
                         }
 

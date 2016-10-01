@@ -58,6 +58,7 @@ ActivityBase {
             property alias chooseDiceBar: chooseDiceBar
             property alias tux: tux
             property alias fishToReach: fishToReach
+            property var activityData: activity.activityConfiguration
             property int clockPosition: 4
         }
 

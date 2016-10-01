@@ -150,8 +150,9 @@ void Server::broadcastDatagram()
 {
     qDebug()<< QHostInfo::localHostName();
     QByteArray datagram;
-    datagram.setNum(static_cast<qint32>(MessageIdentifier::REQUEST_CONTROL));
-    datagram.append(QHostInfo::localHostName().toLatin1());
+    // todo use a real message structure in Messages.h
+    QDataStream out(&datagram, QIODevice::WriteOnly);
+    out << MessageIdentifier::REQUEST_CONTROL << QHostInfo::localHostName();
     qint64 data = udpSocket->writeDatagram(datagram.data(),datagram.size(),QHostAddress::Broadcast, 5678);
     qDebug()<< " size of data :" << data;
 }
@@ -162,29 +163,31 @@ void Server::slotReadyRead()
     QByteArray data = clientConnection->readAll();
     QDataStream in(&data, QIODevice::ReadOnly);
 
-    Identifier messageId;
-    in >> messageId;
-
     ClientData client;
     client.setSocket(clientConnection);
 
-    switch(messageId._id) {
-    case MessageIdentifier::LOGIN:
+    while(!in.atEnd()) {
+        Identifier messageId;
+        in >> messageId;
+
+        switch(messageId._id) {
+        case MessageIdentifier::LOGIN:
         {
             Login log;
             in >> log;
             emit loginReceived(client, log);
             break;
         }
-    case MessageIdentifier::ACTIVITY_DATA:
+        case MessageIdentifier::ACTIVITY_DATA:
         {
             ActivityRawData act;
             in >> act;
             emit activityDataReceived(client, act);
             break;
         }
-    default:
-        qDebug() << messageId._id << " received but not handled";
+        default:
+            qDebug() << messageId._id << " received but not handled";
+        }
     }
 }
 

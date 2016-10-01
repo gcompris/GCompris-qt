@@ -92,7 +92,10 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_baseFontSizeMin(-7), m_baseFontSizeMax(7),
      m_fontLetterSpacingMin(0.0), m_fontLetterSpacingMax(8.0),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-              "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QSettings::IniFormat)
+              "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QSettings::IniFormat),
+     m_adminConfig(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
+                   "/gcompris/" + "gcompris-qt-admin" + ".conf", QSettings::IniFormat)
+
 {
     const QRect &screenSize = QApplication::desktop()->screenGeometry();
 
@@ -392,6 +395,8 @@ void ApplicationSettings::notifyCurrentServerChanged()
     if(m_currentServer.isEmpty()) {
         m_activitiesToDisplay.clear();
         notifyActivitiesToDisplayChanged();
+        // Remove specific datasets
+        m_adminConfig.clear();
     }
 }
 
@@ -483,10 +488,27 @@ void ApplicationSettings::saveActivityProgress(const QString &activity, int prog
     updateValueInConfig(activity, PROGRESS_KEY, progress);
 }
 
-
 bool ApplicationSettings::useExternalWordset()
 {
     return !m_wordset.isEmpty() && DownloadManager::getInstance()->isDataRegistered("words");
+}
+
+void ApplicationSettings::storeActivityConfiguration(const QString &activityName, const QVariantMap &data)
+{
+    m_adminConfig.beginGroup("dataset");
+    m_adminConfig.setValue(activityName, QVariant::fromValue(data));
+    m_adminConfig.endGroup();
+}
+
+QVariant ApplicationSettings::getActivityConfiguration(const QString& activityName)
+{
+    m_adminConfig.beginGroup("dataset");
+    QVariant data;
+    if(m_adminConfig.contains(activityName))
+        data = m_adminConfig.value(activityName, false).toMap()["dataset"];
+
+    m_adminConfig.endGroup();
+    return data;
 }
 
 QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
