@@ -1,4 +1,4 @@
-/* GCompris - ClientData.h
+/* GCompris - UserData.h
  *
  * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -18,36 +18,45 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef CLIENTDATA_H
-#define CLIENTDATA_H
+#ifndef USERDATA_H
+#define USERDATA_H
 
 #include <QObject>
+#include <QStringList>
 #include "ActivityData.h"
-#include "UserData.h"
 
-class QTcpSocket;
-
-class ClientData : public QObject {
+class UserData : public QObject {
     Q_OBJECT
 
-    Q_PROPERTY(UserData* user MEMBER m_user NOTIFY newUser)
+    Q_PROPERTY(QString avatar MEMBER m_avatar NOTIFY newAvatar)
+    Q_PROPERTY(QString name MEMBER m_name NOTIFY newName)
+
+    Q_PROPERTY(QVariantMap activityData MEMBER m_variantData NOTIFY newActivityData)
 
 public:
-    ClientData();
-    ClientData(const ClientData &clientData);
-    ~ClientData();
+    UserData();
+    ~UserData();
 
-    const QTcpSocket *getSocket() const;
-    void setSocket(const QTcpSocket *socket);
-    void setUser(UserData *newUser);
-    UserData *getUserData() const;
+    void setName(const QString &name);
+    void setAvatar(const QString &avatar);
+
+    const QString &getName() const;
+
+    void addData(const ActivityRawData &rawData);
+
+    Q_INVOKABLE const QList<QObject*> getActivityData(const QString &activity);
 
 private:
-    const QTcpSocket *m_socket;
-    UserData *m_user;
+    QString m_avatar;
+    QString m_name;
+
+    QMap<QString /*activity*/, ActivityData> m_activityData;
+    QVariantMap m_variantData;
 
 signals:
-    void newUser();
+    void newAvatar();
+    void newName();
+    void newActivityData();
 };
 
 #endif

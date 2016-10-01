@@ -24,13 +24,13 @@
 #include "Messages.h"
 #include "ClientData.h"
 
-ClientData::ClientData() : m_socket(0)
+ClientData::ClientData() : m_socket(nullptr), m_user(nullptr)
 {
 }
 ClientData::ClientData(const ClientData &client)
 {
     m_socket = client.m_socket;
-    m_login = client.m_login;
+    m_user = client.m_user;
 }
 
 ClientData::~ClientData()
@@ -47,24 +47,14 @@ void ClientData::setSocket(const QTcpSocket *newSocket)
     m_socket = newSocket;
 }
 
-void ClientData::setLogin(const QString &newLogin)
+void ClientData::setUser(UserData *aUser)
 {
-    m_login = newLogin;
+    m_user = aUser;
+    emit newUser();
 }
 
-void ClientData::addData(const ActivityRawData &rawData)
+UserData *ClientData::getUserData() const
 {
-    ActivityData &act = m_activityData[rawData.activityName];
-    act.push_back(rawData);
-
-    ActivityData *act2 = m_variantData[rawData.activityName].value<ActivityData*>();
-    if(!act2) act2 = new ActivityData;
-    act2->push_back(rawData);
-    m_variantData[rawData.activityName] = QVariant::fromValue(act2);
-    emit newActivityData();
+    return m_user;
 }
 
-const QList<QObject*> ClientData::getActivityData(const QString &activity)
-{
-    return m_activityData[activity].m_qmlData;
-}

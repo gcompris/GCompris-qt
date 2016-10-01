@@ -340,5 +340,73 @@ Window {
             property Component replaceTransition: pushHTransition
         }
     }
+
+    Connections {
+        id: connection
+        target: ClientNetworkMessages
+
+        property string serverName
+
+        onRequestConnection: {
+            connection.serverName = serverName
+            Core.showMessageDialog(main,
+                    qsTr("Do you want to connect to server %1?").arg(connection.serverName),
+                    qsTr("Yes"), function() { ClientNetworkMessages.connectToServer(connection.serverName); },
+                    qsTr("No"), null,
+                    null);
+        }
+
+        onLoginListReceived: {
+            chooseLogin.model = logins;
+            chooseLogin.visible = true
+            chooseLogin.start()
+        }
+    }
+
+    GCInputDialog {
+        id: chooseLogin
+        visible: false
+        active: visible
+        anchors.fill: parent
+
+        message: qsTr("Select your login")
+        onClose: chooseLogin.visible = false;
+
+        button1Text: qsTr("OK")
+        button2Text: qsTr("Cancel")
+        onButton1Hit: ClientNetworkMessages.sendLoginMessage(chosenLogin)
+        focus: true
+
+        property string chosenLogin
+        property var model
+
+        content: ListView {
+            id: view
+            width: chooseLogin.width
+            height: 100 * ApplicationInfo.ratio
+            contentHeight: 60 * ApplicationInfo.ratio * model.count
+            interactive: true
+            clip: true
+            model: chooseLogin.model
+            delegate: GCDialogCheckBox {
+                id: userBox
+                text: modelData
+                checked: false
+                exclusiveGroup: exclusiveGroupItem
+                Component.onCompleted: {
+                    if (exclusiveGroup)
+                        exclusiveGroup.bindCheckable(userBox)
+                }
+                Component.onDestruction: {
+                    if (exclusiveGroup)
+                        exclusiveGroup.unbindCheckable(userBox)
+                }
+            }
+        }
+        ExclusiveGroup {
+            id: exclusiveGroupItem
+            onCurrentChanged: { if(current) chooseLogin.chosenLogin = current.text; }
+        }
+    }
     /// @endcond
 }

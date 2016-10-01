@@ -1,4 +1,4 @@
-/* GCompris - Groups.qml
+/* GCompris - Users.qml
  *
  * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -34,12 +34,12 @@ ActivityBase {
     pageComponent: Item {
         anchors.fill: parent
         GridView {
-            id: clients
+            id: users
             width: activity.width
             height: activity.height
             cellWidth: 210
             cellHeight: cellWidth
-            model: MessageHandler.groups
+            model: MessageHandler.users
             highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
             delegate: Rectangle {
                 id: itemDelegate
@@ -54,7 +54,7 @@ ActivityBase {
                 MouseArea {
                     id: mouse
                     anchors.fill: parent
-                    onClicked: { clients.currentIndex = index ; print(modelData.name) } // todo what do we do? display list of action? (update user list, send configuration?)
+                    onClicked: { users.currentIndex = index ; print(modelData.name) } // todo what do we do? display list of action? (update user list, send configuration?)
                 }
             }
         }
@@ -63,42 +63,70 @@ ActivityBase {
             rows: 1
             anchors.bottom: bar.top
             Button {
-                id: createGroupButton
-                text: qsTr("Create a Group")
+                id: createUserButton
+                text: qsTr("Create an user")
                 style: GCButtonStyle {}
-                onClicked: { createGroupName.visible = true; createGroupName.start(); }
+                onClicked: {
+                    createUserName.mode = "create";
+                    createUserName.visible = true;
+                    createUserName.defaultText = "";
+                    createUserName.start();
+                }
             }
 
             Button {
-                id: updateGroupButton
-                text: qsTr("Update a Group")
+                id: updateUserButton
+                text: qsTr("Update selected user")
                 style: GCButtonStyle {}
-                onClicked: { print("update group: " + clients.currentItem.name); }
-                enabled: clients.currentIndex != -1
+                onClicked: {
+                    if(users.currentItem) {
+                        createUserName.mode = "update";
+                        createUserName.visible = true;
+                        createUserName.defaultText = users.currentItem.name;
+                        createUserName.start();
+                    }
+                }
+                enabled: users.currentItem && users.currentIndex != -1
             }
 
             Button {
                 id: sendConfiguration
-                text: qsTr("Send user list")
+                text: qsTr("Delete selected user")
                 style: GCButtonStyle {}
                 onClicked: {
-                    print("select config and send config to: " + clients.currentItem.name);
-                    Server.sendLoginList(MessageHandler.groups[clients.currentIndex]);
+                    // Ask confirmation first
+                    if(users.currentItem)
+                        MessageHandler.deleteUser(users.currentItem.name);
                 }
-                enabled: clients.currentIndex != -1
+                enabled: users.currentItem && users.currentIndex != -1
+            }
+
+            Button {
+                id: showResults
+                text: qsTr("Display data")
+                style: GCButtonStyle {}
+                onClicked: {
+                    // Ask confirmation first
+                }
+                enabled: users.currentItem && users.currentIndex != -1
             }
         }
         GCInputDialog {
-            id: createGroupName
+            id: createUserName
             visible: false
             active: visible
             anchors.fill: parent
             z: 100
-            message: qsTr("Name of the new group")
-            onClose: createGroupName.visible = false;
+            property string mode: "create"
+
+            message: mode == "create" ? qsTr("Name of the new user") : qsTr("Update user %1").arg(users.currentItem.name)
+            onClose: createUserName.visible = false;
+
             button1Text: qsTr("OK")
             button2Text: qsTr("Cancel")
-            onButton1Hit: MessageHandler.createGroup(createGroupName.inputtedText)
+            onButton1Hit: mode == "create" ?
+                              MessageHandler.createUser(createUserName.inputtedText) :
+                              MessageHandler.updateUser(users.currentItem.name, createUserName.inputtedText)
             focus: true
             onStart: { inputItem.text = defaultText; inputItem.forceActiveFocus() }
             onStop: activity.forceActiveFocus()
@@ -116,12 +144,11 @@ ActivityBase {
             property string inputtedText: inputItem ? inputItem.text : ""
 
             content: TextInput {
-                id: inputItem
+                id: textInput
                 height: 60 * ApplicationInfo.ratio
-                //width: createGroupName.width
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
-                text: createGroupName.defaultText
+                text: createUserName.defaultText
                 font.pointSize: 14
                 font.weight: Font.DemiBold
             }

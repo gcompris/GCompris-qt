@@ -103,7 +103,8 @@ void ClientNetworkMessages::init()
             systeminfoProvider);
 }
 
-void ClientNetworkMessages::connectToServer(const QString& serverName) {
+void ClientNetworkMessages::connectToServer(const QString& serverName)
+{
     QString ip = _host;
     int port = _port;
 
@@ -123,22 +124,27 @@ void ClientNetworkMessages::connectToServer(const QString& serverName) {
     ApplicationSettings::getInstance()->setCurrentServer(serverName);
 }
 
-void ClientNetworkMessages::disconnectFromServer() {
+void ClientNetworkMessages::disconnectFromServer()
+{
     tcpSocket->disconnectFromHost();
     ApplicationSettings::getInstance()->setCurrentServer("");
 }
 
-void ClientNetworkMessages::connected() {
+void ClientNetworkMessages::connected()
+{
     QTcpSocket* socket = qobject_cast<QTcpSocket*>(sender());
     _host = serverMap.key(socket->peerAddress());
     _connected = true;
     emit connectionStatus();
     emit hostChanged();
+}
 
+void ClientNetworkMessages::sendLoginMessage(const QString &newLogin)
+{
     // Send Login message
     QByteArray bytes;
     QDataStream out(&bytes, QIODevice::WriteOnly);
-    Login login { QString("-%1-").arg(QHostInfo::localHostName()) };
+    Login login { newLogin };
     out << MessageIdentifier::LOGIN << login;
     sendMessage(bytes);
 }
@@ -160,11 +166,13 @@ void ClientNetworkMessages::udpRead() {
     QHostAddress address;
     quint16 port;
     datagram.resize(udpSocket->pendingDatagramSize());
-    udpSocket->readDatagram(datagram.data(), datagram.size(), &address, &port)
-;
+    udpSocket->readDatagram(datagram.data(), datagram.size(), &address, &port);
     // since our server keeps on sending the broadcast message udpread() will be called everytime it receives the broadcast message
     // add the server's address to list only if it was not added before;
-//    qDebug()<< datagram.data();
+
+    // todo use the real server name and a real message with QDataStream
+    if(!_connected)
+        emit requestConnection(datagram.data());
 
     if(!serversAvailable.contains(datagram.data())) {
         serversAvailable.append(datagram.data());
@@ -231,6 +239,15 @@ void ClientNetworkMessages::readFromSocket()
             in >> config;
             qDebug() << "Configuration received for: " << config.activityName <<
                         ", data: " << config.data;
+            break;
+        }
+    case MessageIdentifier::LOGINS_LIST:
+        {
+            AvailableLogins logins;
+            in >> logins;
+            qDebug() << "logins received: " << logins._logins;
+            // todo
+            emit loginListReceived(logins._logins);
             break;
         }
     default:

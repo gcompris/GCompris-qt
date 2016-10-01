@@ -24,6 +24,7 @@
 #include "Messages.h"
 #include "ClientData.h"
 #include "GroupData.h"
+#include "UserData.h"
 #include <QObject>
 #include <QtQml>
 
@@ -33,6 +34,7 @@ class MessageHandler: public QObject
 
     Q_PROPERTY(QList<QObject*> clients MEMBER m_clients NOTIFY newClients)
     Q_PROPERTY(QList<QObject*> groups MEMBER m_groups NOTIFY newGroups)
+    Q_PROPERTY(QList<QObject*> users MEMBER m_users NOTIFY newUsers)
 
 private:
     MessageHandler();  // prohibit external creation, we are a singleton!
@@ -47,7 +49,10 @@ public:
             QJSEngine *scriptEngine);
     static MessageHandler* getInstance();
 
-    Q_INVOKABLE void createGroup(const QString &groupName);
+    Q_INVOKABLE void createGroup(const QString &groupName, const QStringList &users = QStringList());
+    Q_INVOKABLE void createUser(const QString &userName, const QString &avatar = QString(), const QStringList &groups = QStringList());
+    Q_INVOKABLE void updateUser(const QString &oldUser, const QString &newUser, const QString &avatar = QString(), const QStringList &groups = QStringList());
+    Q_INVOKABLE void deleteUser(const QString &userName);
 
 public slots:
     void onLoginReceived(const ClientData &who, const Login &data);
@@ -58,6 +63,7 @@ public slots:
 signals:
     void newClients();
     void newGroups();
+    void newUsers();
 
 private:
     ClientData *getClientData(const ClientData &cd);
@@ -65,6 +71,10 @@ private:
     QList<QObject*> m_clients;
     // GroupData*
     QList<QObject*> m_groups;
+    // UserData*
+    QList<QObject*> m_users;
+
+    void removeUserFromAllGroups(const UserData *user);
 };
 
 #endif

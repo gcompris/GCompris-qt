@@ -13,6 +13,8 @@ set(server_SRCS
   ClientData.h
   GroupData.cpp
   GroupData.h
+  UserData.cpp
+  UserData.h
   Server.cpp
   Server.h
 )

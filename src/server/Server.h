@@ -28,6 +28,7 @@ class QUdpSocket;
 
 struct Login;
 struct ActivityRawData;
+struct GroupData;
 struct ClientData;
 
 #include <QQmlEngine>
@@ -52,8 +53,9 @@ public:
     static Server* getInstance();
     
     Q_INVOKABLE void broadcastDatagram();
-    Q_INVOKABLE void sendConfiguration(QObject *client/*, const ConfigurationData &config*/);
+    Q_INVOKABLE void sendConfiguration();
     Q_INVOKABLE void sendActivities();
+    Q_INVOKABLE void sendLoginList(QObject *g);
 
 private slots:
     void sessionOpened();

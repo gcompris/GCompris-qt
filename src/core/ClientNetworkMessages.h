@@ -44,7 +44,10 @@ signals:
     void hostChanged();
     void portChanged();
     void connectionStatus();
- 
+
+    void loginListReceived(const QStringList& logins);
+    void requestConnection(const QString& serverName);
+
 private:
     ClientNetworkMessages();  // prohibit external creation, we are a singleton!
     static ClientNetworkMessages* _instance;  // singleton instance
@@ -68,6 +71,7 @@ public:
     virtual ~ClientNetworkMessages();
     Q_INVOKABLE void connectToServer(const QString& serverName);
     Q_INVOKABLE void disconnectFromServer();
+    Q_INVOKABLE void sendLoginMessage(const QString &newLogin);
     QStringList serversAvailable;
 
     QString host() const{

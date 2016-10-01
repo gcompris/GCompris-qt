@@ -31,9 +31,6 @@ Item {
     id: dialogConfig
 
     property var languages: allLangs.languages
-    property string serverName:""
-    property bool connected: ClientNetworkMessages.connected
-    property string host: ClientNetworkMessages.host
     height: column.height
 
     LanguageList {
@@ -525,63 +522,51 @@ Item {
             }
         }
 
-        Button {
-            id: connectToServer
-            style: GCButtonStyle {}
-            text: qsTr("Connect to server")
-            onClicked: {
-                ClientNetworkMessages.connectToServer(ClientNetworkMessages.host)
-            }
-        }
-
-        Rectangle {
-            id: rect
-            color: 'white'
-            width: parent.width
-            height: 50
-            TextInput {
-                id: serverHost
-                anchors.fill: parent
-                focus: true
-                font.weight: Font.DemiBold
-                font.pointSize: ApplicationSettings.baseFontSize
-                + 14 * ApplicationInfo.fontRatio
-                horizontalAlignment: Text.AlignHCenter
-                onTextChanged: {
-                    ClientNetworkMessages.host = serverHost.text;
-                }
-            }
-        }
-
-        Rectangle {
-            height: 50
-            color: 'yellow'
-            width: parent.width
-            TextInput {
-                id: serverPort
-                anchors.fill: parent
-                focus: true
-                font.weight: Font.DemiBold
-                font.pointSize: ApplicationSettings.baseFontSize
-                + 14 * ApplicationInfo.fontRatio
-                horizontalAlignment: Text.AlignHCenter
-                onTextChanged: {
-                    ClientNetworkMessages.port = text;
-                }
-            }
-        }
-
         Flow {
             layoutDirection: Qt.LeftToRight
-            spacing: 30
+            width: parent.width
+            spacing: 5 * ApplicationInfo.ratio
+            visible: ApplicationSettings.currentServer != ""
+            Rectangle {
+                id: networkStatus
+                // color: yellow means session with a server but not connected
+                // green means connected to the server
+                height: networkLabel.height
+                width: height
+                radius: height
+                color: ClientNetworkMessages.connected ? "green" : "yellow"
+            }
+
             GCText {
-                text: qsTr("Available Servers")
+                id: networkLabel
+                text: ClientNetworkMessages.connected ? qsTr("You are connected to %1").arg(ApplicationSettings.currentServer) :
+                                                        qsTr("You are in session with %1 but not connected").arg(ApplicationSettings.currentServer)
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
             }
+
+            Button {
+                id: disconnect
+                height: networkLabel.height
+                width: disconnectLabel.width + 4
+                style: GCButtonStyle {}
+                GCText {
+                    id: disconnectLabel
+                    text: ClientNetworkMessages.connected ? qsTr("Disconnect") : qsTr("Leave session")
+                    anchors.centerIn: parent
+                    wrapMode: Text.WordWrap
+                    fontSize: mediumSize
+                }
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        ClientNetworkMessages.disconnectFromServer()
+                    }
+                }
+            }
         }
 
-        Flow {
+        /*Flow {
             layoutDirection: Qt.LeftToRight
             spacing: 20
             Column {
@@ -696,7 +681,7 @@ Item {
                     }
                 }
             }
-        }
+        }*/
     }
 
     property bool showLockedActivities: ApplicationSettings.showLockedActivities

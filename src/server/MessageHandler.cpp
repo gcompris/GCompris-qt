@@ -33,7 +33,9 @@ MessageHandler::MessageHandler()
     connect(&server, &Server::newClientReceived, this, &MessageHandler::onNewClientReceived);
     connect(&server, &Server::clientDisconnected, this, &MessageHandler::onClientDisconnected);
 
-    createGroup("default");    
+    createGroup("default", {"a", "b"});
+    createUser("a", "", {"default"});
+    createUser("b", "", {"default"});
 }
 
 MessageHandler* MessageHandler::getInstance()
@@ -59,29 +61,87 @@ void MessageHandler::init()
             systeminfoProvider);
 }
 
-void MessageHandler::createGroup(const QString &newGroup)
+void MessageHandler::createGroup(const QString &newGroup, const QStringList &users)
 {
     qDebug() << "createGroup '" << newGroup << "'";
     GroupData *c = new GroupData();
     c->m_name = newGroup;
-    c->m_members << "log1" << "log2" << "log3";
+    for(const QString &user: users)
+        c->m_members << user;
     m_groups.push_back((QObject*)c);
     emit newGroups();
+}
+
+void MessageHandler::createUser(const QString &newUser, const QString &avatar, const QStringList &groups)
+{
+    qDebug() << "createUser '" << newUser << "'";
+    UserData *u = new UserData();
+    u->setName(newUser);
+    u->setAvatar(avatar);
+//    for(const QString &group: groups)
+//  todo find group + add user       u->m_members << user;
+    m_users.push_back((QObject*)u);
+    emit newUsers();
+}
+
+void MessageHandler::updateUser(const QString &oldUser, const QString &newUser, const QString &avatar, const QStringList &groups)
+{
+    for (QObject *oUser: m_users) {
+        UserData *user = (UserData *) oUser;
+        if (user->getName() == oldUser) {
+            user->setName(newUser);
+            emit newUsers();
+            break;
+        }
+    }
+}
+
+void MessageHandler::removeUserFromAllGroups(const UserData *user)
+{
+   for (QObject *oGroup: m_groups) {
+        GroupData *group = (GroupData *) oGroup;
+        group->m_members.removeAll(user->getName());
+   }
+}
+
+void MessageHandler::deleteUser(const QString &userName)
+{
+    for (QObject *oUser: m_users) {
+        UserData *user = (UserData *) oUser;
+        if (user->getName() == userName) {
+            m_users.removeAll(user);
+            removeUserFromAllGroups(user);
+            delete user;
+            emit newUsers();
+        }
+    }
 }
 
 void MessageHandler::onLoginReceived(const ClientData &who, const Login &data)
 {
     qDebug() << "Login received '" << data._name << "'";
     ClientData *c = getClientData(who);
-    c->setLogin(data._name);
+    for(QObject *oUser: m_users) {
+        UserData *user = (UserData*)oUser;
+        // todo Check that we don't find a client with the same login! else it will probably means a child didn't choose the good login
+
+        qDebug() << user->getName() << data._name;
+        if(user->getName() == data._name) {
+            c->setUser(user);
+            return;
+        }
+    }
+    // Should not happen when login will be done properly... todo display an error message
+    qDebug() << "Error: login " << data._name << " received, but no user found";
 }
 
 void MessageHandler::onActivityDataReceived(const ClientData &who, const ActivityRawData &act)
 {
     qDebug() << "Activity: " << act.activityName << ", date: " << act.date << ", data:" << act.data;
     ClientData *c = getClientData(who);
-    c->addData(act);
+    c->getUserData()->addData(act);
 }
+
 void MessageHandler::onNewClientReceived(const ClientData &client)
 {
     qDebug() << "New client";
@@ -95,6 +155,7 @@ void MessageHandler::onClientDisconnected(const ClientData &client)
 {
     qDebug() << "client disconnected";
     ClientData *c = getClientData(client);
+    c->setUser(nullptr);
     m_clients.removeAll(c);
     delete c;
     emit newClients();

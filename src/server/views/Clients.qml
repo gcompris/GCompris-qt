@@ -68,7 +68,7 @@ ActivityBase {
                     height: 200
                     color: "red"
                     GCText {
-                        text: modelData.login
+                        text: modelData.user ? modelData.user.name : qsTr("unnamed")
                     }
                     MouseArea {
                         id: mouse
@@ -78,7 +78,7 @@ ActivityBase {
                             var activity = "reversecount/Reversecount.qml";
                             activityLoader.setSource("qrc:/gcompris/src/server/views/activities/" + activity,
                                                      {
-                                                         'client': modelData,
+                                                         'user': modelData.user,
                                                          'act': activity
                                                      })
                         } // todo what do we do? display configuration

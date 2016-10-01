@@ -98,7 +98,16 @@ ActivityBase {
         {
             view: "Groups",
             text: qsTr("Groups")
+        },
+        {
+            view: "Users",
+            text: qsTr("Users")
+        },
+        {
+            view:"ActivityConfiguration",
+            text:qsTr("Send DataSet")
         }
+
     ]
 
     pageComponent: Image {
@@ -181,6 +190,11 @@ ActivityBase {
                             print("sending broadcast to find clients")
                             Server.broadcastDatagram()
                         }
+                        else if(modelData.view == "ActivityConfiguration") {
+
+                            Server.sendConfiguration()
+                        }
+
                         else {
                             activityLoader.setSource("qrc:/gcompris/src/server/views/" + modelData.view + ".qml", {})
                             print("select: " + text + " - load " + activityLoader.source)

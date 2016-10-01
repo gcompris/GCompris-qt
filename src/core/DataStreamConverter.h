@@ -50,6 +50,18 @@ QDataStream& operator>>(QDataStream &dataStream, Login &login)
     return dataStream;
 };
 
+QDataStream& operator<<(QDataStream &dataStream, const AvailableLogins &logins)
+{
+    dataStream << logins._logins;
+    return dataStream;
+};
+
+QDataStream& operator>>(QDataStream &dataStream, AvailableLogins &logins)
+{
+    dataStream >> logins._logins;
+    return dataStream;
+};
+
 QDataStream& operator<<(QDataStream &dataStream, const DisplayedActivities &act)
 {
     dataStream << act.activitiesToDisplay;

@@ -31,6 +31,7 @@
 enum MessageIdentifier : int {
     LOGIN = 0,
     REQUEST_CONTROL,
+    LOGINS_LIST,
     REQUEST_USERNAME,
     DISPLAYED_ACTIVITIES,
     ACTIVITY_DATA,
@@ -43,6 +44,10 @@ struct Identifier {
 
 struct Login {
     QString _name;
+};
+
+struct AvailableLogins {
+    QStringList _logins;
 };
 
 struct DisplayedActivities {

@@ -22,7 +22,7 @@
 #include <QStringList>
 #include "GroupData.h"
 
-GroupData::GroupData() : m_name("test")
+GroupData::GroupData()
 {
 }
 

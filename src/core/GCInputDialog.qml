@@ -52,16 +52,17 @@ Item {
     property alias message: instructionTxt.textIn
 
     /**
-     * type:string
-     * inputted text in the TextInput.
+     * type:object
+     * The content object as loaded dynamically.
      */
-    property alias inputtedText: textInput.text
+    property alias inputItem: loader.item
 
     /**
-     * type:string
-     * inputted default text in the TextInput.
+     * type:Component
+     * Content component which holds the visual presentation of the
+     * config settings in the QML scene.
      */
-    property string defaultText
+    property Component content
 
     /**
      * type:string
@@ -104,6 +105,8 @@ Item {
      */
     signal button2Hit
 
+    property alias active: loader.active
+    property alias loader: loader
     focus: true
     opacity: 0
 
@@ -111,8 +114,8 @@ Item {
         fill: parent
     }
 
-    onStart: { opacity = 1; textInput.text = defaultText; textInput.forceActiveFocus() }
-    onStop: { opacity = 0; textInput.focus = false }
+    onStart: { opacity = 1; }
+    onStop: { opacity = 0;}
     //onClose: destroy()
 
     Behavior on opacity { NumberAnimation { duration: 200 } }
@@ -146,7 +149,7 @@ Item {
             anchors.top: instruction.top
             z: 1
             width: parent.width
-            height: gcdialog.height - button1.height * 5
+            height: Math.min(instructionTxt.height + flick.anchors.margins*2, gcdialog.height - button1.height * 5)
             opacity: 0.9
             radius: 10
             border.width: 2
@@ -183,7 +186,7 @@ Item {
                 }
             }
         }
-        
+
         Rectangle {
             id: textInputBg
             anchors {
@@ -193,7 +196,7 @@ Item {
             }
             z: 1
             width: parent.width
-            height: textInput.height
+            height: gcdialog.inputItem ? gcdialog.inputItem.height : 100
             opacity: 0.9
             radius: 10
             border.width: 2
@@ -204,15 +207,11 @@ Item {
                 GradientStop { position: 1.0; color: "#ddd" }
             }
 
-            TextInput {
-                id: textInput
-                height: 60 * ApplicationInfo.ratio
-                width: parent.width
-                horizontalAlignment: TextInput.AlignHCenter
-                verticalAlignment: TextInput.AlignVCenter
-                text: defaultText
-                font.pointSize: 14
-                font.weight: Font.DemiBold
+            Loader {
+                id: loader
+                active: false
+                sourceComponent: gcdialog.content
+                property alias rootItem: gcdialog
             }
         }
 

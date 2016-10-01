@@ -23,6 +23,7 @@
 #include "Messages.h"
 #include "DataStreamConverter.h"
 #include "ClientData.h"
+#include "GroupData.h"
 #include "Server.h"
 
 #include <QtQml>
@@ -141,8 +142,6 @@ void Server::newTcpConnection()
     qDebug() << clientConnection->peerAddress().toString();
     ClientData newClient;
     newClient.setSocket(clientConnection);
-    // temporary...
-    newClient.setLogin(clientConnection->peerAddress().toString());
     qDebug("New tcp connection");
     emit newClientReceived(newClient);
 }
@@ -196,17 +195,17 @@ void Server::disconnected()
         return;
     qDebug() << "Removing " << clientConnection;
     list.removeAll(clientConnection);
-    clientConnection->deleteLater();
     ClientData newClient;
     newClient.setSocket(clientConnection);
     emit clientDisconnected(newClient);
+    clientConnection->deleteLater();
 }
 
 void Server::sendActivities()
 {
     DisplayedActivities activities;
     activities.activitiesToDisplay << "geography/Geography.qml" << "erase/Erase.qml" << "reversecount/Reversecount.qml";
-    
+
     QByteArray block;
     QDataStream out(&block, QIODevice::WriteOnly);
     out.setVersion(QDataStream::Qt_4_0);
@@ -219,9 +218,35 @@ void Server::sendActivities()
     }
 }
 
-void Server::sendConfiguration(QObject *c/*, const ConfigurationData &config*/)
+void Server::sendLoginList(QObject *g)
 {
-    ClientData *client = (ClientData*)c;
+    GroupData *group = (GroupData *) g;
+    // Get all the clients from MessageHandler
+    // For each client, if it does not have a name yet, send the message
+    QByteArray block;
+    QDataStream out(&block, QIODevice::WriteOnly);
+    out.setVersion(QDataStream::Qt_4_0);
+
+    AvailableLogins act;
+    act._logins = group->m_members;
+
+    // todo remove already used logins
+
+    out << LOGINS_LIST << act;
+
+    for(auto sock: list)
+    {
+        qDebug() << "Sending " << block << " to " << sock;
+        sock->write(block);
+    }
+
+    //qDebug() << "Sending " << block << " to " << client->getSocket();
+    //((QTcpSocket*)client->getSocket())->write(block);
+}
+
+void Server::sendConfiguration(/*QObject *c*//*, const ConfigurationData &config*/)
+{
+    //ClientData *client = (ClientData*)c;
     QByteArray block;
     QDataStream out(&block, QIODevice::WriteOnly);
     out.setVersion(QDataStream::Qt_4_0);
@@ -233,6 +258,12 @@ void Server::sendConfiguration(QObject *c/*, const ConfigurationData &config*/)
 
     out << ACTIVITY_CONFIGURATION << act;
 
-    qDebug() << "Sending " << block << " to " << client->getSocket();
-    ((QTcpSocket*)client->getSocket())->write(block);
+    for(auto sock: list)
+    {
+        qDebug() << "Sending " << block << " to " << sock;
+        sock->write(block);
+    }
+
+    //qDebug() << "Sending " << block << " to " << client->getSocket();
+    //((QTcpSocket*)client->getSocket())->write(block);
 }
