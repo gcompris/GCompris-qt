@@ -101,6 +101,8 @@ private slots:
     void serverDisconnected();
     
 private:
+    bool sendStoredData();
+
     QTcpSocket *tcpSocket;
     QUdpSocket* udpSocket;
     QNetworkSession *networkSession;

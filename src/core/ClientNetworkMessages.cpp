@@ -137,6 +137,8 @@ void ClientNetworkMessages::connected()
     _connected = true;
     emit connectionStatus();
     emit hostChanged();
+    // if we have saved data for this server, we send it
+    sendStoredData();
 }
 
 void ClientNetworkMessages::sendLoginMessage(const QString &newLogin)
@@ -215,9 +217,48 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
 
     QByteArray bytes;
     QDataStream out(&bytes, QIODevice::WriteOnly);
+    out.setVersion(QDataStream::Qt_4_0);
     out << MessageIdentifier::ACTIVITY_DATA << activityData;
-    if(!sendMessage(bytes)) {
-        qDebug() << "need to store " << bytes << " and send it later";
+
+    if(!sendMessage(bytes) && !ApplicationSettings::getInstance()->currentServer().isEmpty()) {
+        // store only if the user did not explicitly disconnect from the server
+        QFile file(QStandardPaths::writableLocation(QStandardPaths::CacheLocation) +
+                   ApplicationSettings::getInstance()->currentServer() + ".dat");
+        file.open(QIODevice::WriteOnly | QIODevice::Append);
+
+        QDataStream outFile(&file);
+        outFile.setVersion(QDataStream::Qt_4_0);
+        outFile << MessageIdentifier::ACTIVITY_DATA << activityData;
+
+        file.close();
+    }
+}
+
+bool ClientNetworkMessages::sendStoredData()
+{
+    QFile file(QStandardPaths::writableLocation(QStandardPaths::CacheLocation) +
+               ApplicationSettings::getInstance()->currentServer() + ".dat");
+    if(file.exists()) {
+        file.open(QIODevice::ReadOnly);
+        QDataStream in(&file);
+        in.setVersion(QDataStream::Qt_4_0);
+        QByteArray bytes;
+        QDataStream out(&bytes, QIODevice::WriteOnly);
+        out.setVersion(QDataStream::Qt_4_0);
+
+        while(!in.atEnd()) {
+            Identifier messageId;
+            ActivityRawData act;
+            in >> messageId >> act;
+            out << messageId << act;
+        }
+
+        if(tcpSocket->state() == QAbstractSocket::ConnectedState) {
+            int size = tcpSocket->write(bytes);
+            qDebug() << "size sent: " << size << "/" << bytes.size() << endl;
+        }
+        file.close();
+        file.remove();
     }
 }
 
