@@ -162,6 +162,7 @@ void Server::slotReadyRead()
     QTcpSocket* clientConnection = qobject_cast<QTcpSocket*>(sender());
     QByteArray data = clientConnection->readAll();
     QDataStream in(&data, QIODevice::ReadOnly);
+    in.setVersion(QDataStream::Qt_4_0);
 
     ClientData client;
     client.setSocket(clientConnection);

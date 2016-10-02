@@ -223,7 +223,7 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
     if(!sendMessage(bytes) && !ApplicationSettings::getInstance()->currentServer().isEmpty()) {
         // store only if the user did not explicitly disconnect from the server
         QFile file(QStandardPaths::writableLocation(QStandardPaths::CacheLocation) +
-                   ApplicationSettings::getInstance()->currentServer() + ".dat");
+                    + "/" + ApplicationSettings::getInstance()->currentServer() + ".dat");
         file.open(QIODevice::WriteOnly | QIODevice::Append);
 
         QDataStream outFile(&file);
@@ -237,7 +237,7 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
 bool ClientNetworkMessages::sendStoredData()
 {
     QFile file(QStandardPaths::writableLocation(QStandardPaths::CacheLocation) +
-               ApplicationSettings::getInstance()->currentServer() + ".dat");
+               + "/" + ApplicationSettings::getInstance()->currentServer() + ".dat");
     if(file.exists()) {
         file.open(QIODevice::ReadOnly);
         QDataStream in(&file);

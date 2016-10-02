@@ -139,7 +139,8 @@ void MessageHandler::onActivityDataReceived(const ClientData &who, const Activit
 {
     qDebug() << "Activity: " << act.activityName << ", date: " << act.date << ", data:" << act.data;
     ClientData *c = getClientData(who);
-    c->getUserData()->addData(act);
+    if(c && c->getUserData())
+        c->getUserData()->addData(act);
 }
 
 void MessageHandler::onNewClientReceived(const ClientData &client)
