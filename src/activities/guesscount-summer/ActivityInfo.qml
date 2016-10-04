@@ -2,6 +2,10 @@
  *
  * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
  *
+ * Authors:
+ *   <Pascal Georges> (GTK+ version)
+ *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
+ *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 3 of the License, or

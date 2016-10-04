@@ -1,10 +1,10 @@
 /* GCompris - guesscount-summer.js
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   <Pascal Georges> (GTK+ version)
+ *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
