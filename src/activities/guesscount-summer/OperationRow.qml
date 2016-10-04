@@ -53,7 +53,7 @@ Row {
                     operandRow.complete=true
                     if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
                     {
-                        Activity.check_answer()
+                        Activity.checkAnswer()
                     }
                 }
 
@@ -102,7 +102,7 @@ Row {
                 operandRow.complete=true
                 if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
                 {
-                    Activity.check_answer()
+                    Activity.checkAnswer()
                 }
             }
         }
@@ -122,7 +122,7 @@ Row {
                 operandRow.complete=true
                 if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
                 {
-                    Activity.check_answer(operandRow)
+                    Activity.checkAnswer(operandRow)
                 }
             }
         }

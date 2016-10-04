@@ -22,6 +22,9 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
+.import "dataset.js" as Data
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 
 var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
 var operators = [
@@ -33,50 +36,18 @@ var operators = [
 var defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
 var builtinFile = baseUrl + "/levels-default.json";
-var dataset = [
-            [
-                [[1,2],3],
-                [[3,1],4],
+var dataset=[]
 
-            ],
-            [
-                [[1,2],2],
-                [[8,2],16],
-            ],
-            [
-                [[9,6],3],
-                [[6,4],2]
-            ],
-            [
-                [[9,3],3],
-                [[8,4],2]
-            ],
-            [
-                [[4,2],8],
-                [[6,6],1],
-                [[20,5],4],
-                [[4,1],4]
-            ],
-            [
-                [[4,2,3],18],
-                [[6,4,2],1],
-                [[20,5,3],12],
-                [[4,2,2,3],9]
-            ],
-            [
-                [[4,2,3],18],
-                [[6,4,2],1],
-                [[20,5,3],12],
-                [[4,2,2,3],9]
-            ]
-        ]
-var currentLevel = 0
-var numberOfLevel = dataset.length
+
+var currentLevel
+var numberOfLevel=Data.levelSchema.length
 var items
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    console.log('dksahdksajdlaskj')
+    //buidDataset(Data.dataset,Data.levelSchema,items.levelArr)
     initLevel()
 }
 
@@ -85,16 +56,17 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    console.log(currentLevel)
     items.currentlevel = currentLevel
     items.sublevel = 1
-    items.operandRow.repeater.model = dataset[currentLevel][items.sublevel-1][0]
-    items.data=dataset[currentLevel]
+    items.data=buidDataset(Data.dataset,Data.levelSchema,items.levelArr)
+    items.operandRow.repeater.model = items.data[items.sublevel-1][0]
+    console.log("dataset :"+items.data  )
     items.levelchanged=false
 }
 function next_sublevel() {
     items.sublevel += 1
-    items.operandRow.repeater.model = dataset[currentLevel][items.sublevel-1][0]
-    items.data=dataset[currentLevel]
+    items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.solved=false
 }
 
@@ -102,6 +74,7 @@ function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0
     }
+    console.log(currentLevel)
     initLevel();
 }
 
@@ -168,12 +141,12 @@ function childrenChange(item,operationRow)
 }
 
 function checkAnswer(row){
-    if(items.sublevel<dataset[currentLevel].length)
+    if(items.sublevel<items.data.length)
     {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
         items.timer.start()
     }
-    else if(items.sublevel==dataset[currentLevel].length)
+    else if(items.sublevel==items.data.length)
     {
         items.timer.start()
         items.bonus.good("smiley")
@@ -184,6 +157,7 @@ function sync(array,level){
     items.levelArr=array
     console.log("level "+level+"  "+array[level])
 }
+
 function check(operator,array){
     for (var i in array){
         if(array[i]==operator ){
@@ -202,9 +176,39 @@ function maxLength(array){
 }
 function configDone(array){
     for(var i in array){
-        if(array[i].length<maxLength(dataset[i])){
+        if(array[i].length<maxLength(items.data)){
             return false
         }
     }
     return true
+}
+
+function equal(levelOperators,array){
+    for(var i in levelOperators){
+        var found=0
+        for(var j in array){
+            if(levelOperators[i]==array[j])
+                found=1
+        }
+        if(!found)
+            return false
+    }
+    return true
+}
+
+function buidDataset(data,levelSchema,levelArr){
+    var level=[]
+    var noOfOperators=levelArr[currentLevel].length
+    var questions
+    for(var j in data[noOfOperators-1]){
+        if(equal(levelArr[currentLevel],data[noOfOperators-1][j][0])){
+            questions=data[noOfOperators-1][j][1]
+            break
+        }
+    }
+    var questions=Core.shuffle(questions)
+    for(var m=0;m<levelSchema[currentLevel];m++){
+        level.push(questions[m])
+    }
+    return level
 }

@@ -31,6 +31,7 @@ Row {
     spacing: 30
     property int level
     property var levelOperators
+    property var data
     property int minOperatorsNeeded: Activity.maxLength(Activity.dataset[level])
     Rectangle {
         id: operator

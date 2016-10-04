@@ -95,6 +95,7 @@ ActivityBase {
                         level: modelData+1
                         width: parent.width
                         height: parent.height
+                        data: items.data
                     }
                 }
             }
@@ -239,7 +240,7 @@ ActivityBase {
                                 anchors.fill: parent
                                 visible: modeBox.currentIndex==0
                                 spacing: 10
-                                model: Activity.dataset.length
+                                model: Activity.numberOfLevel
                                 clip: true
                                 delegate: Admin {
                                     id: level
@@ -263,17 +264,18 @@ ActivityBase {
                     items.mode = dataToSave["mode"]
                     if(dataToSave["levelArr"]==undefined)
                         dataToSave["levelArr"]=Activity.defaultOperators
-                    console.log("loaded data :"+ dataToSave['levelArr'])
-                    if(dataToSave["levelArr"].length!=Activity.dataset.length)
+                    //console.log("loaded data :"+ dataToSave['levelArr'])
+                    if(dataToSave["levelArr"].length!=Activity.numberOfLevel)
                         items.levelArr=Activity.defaultOperators
                     else
                         items.levelArr = dataToSave["levelArr"]
                 }
+
             }
 
             onSaveData: {
                 items.mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                console.log("saving data:  "+items.levelArr)
+                //console.log("saving data:  "+items.levelArr)
                 dataToSave = {"mode": items.mode,"levelArr":items.levelArr}
                 activity.needRestart=true
             }
