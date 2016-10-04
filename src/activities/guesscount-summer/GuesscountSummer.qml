@@ -255,28 +255,27 @@ ActivityBase {
                 }
             }
             onClose: {
-                if(Activity.configDone(items.levelArr))
+                if(Activity.configDone(items.levelArr)){
+                    Activity.initLevel()
                     home()
+                }
             }
             onLoadData: {
-                Activity.defaultOperators=parser.parseFromUrl(Activity.builtinFile)
                 if(dataToSave && dataToSave["mode"] ) {
                     items.mode = dataToSave["mode"]
                     if(dataToSave["levelArr"]==undefined)
                         dataToSave["levelArr"]=Activity.defaultOperators
-                    //console.log("loaded data :"+ dataToSave['levelArr'])
                     if(dataToSave["levelArr"].length!=Activity.numberOfLevel)
                         items.levelArr=Activity.defaultOperators
                     else
                         items.levelArr = dataToSave["levelArr"]
                 }
-
             }
 
             onSaveData: {
-                items.mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                //console.log("saving data:  "+items.levelArr)
+                items.mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value
                 dataToSave = {"mode": items.mode,"levelArr":items.levelArr}
+                console.log(items.levelArr)
                 activity.needRestart=true
             }
 

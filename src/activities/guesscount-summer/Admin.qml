@@ -31,8 +31,7 @@ Row {
     spacing: 30
     property int level
     property var levelOperators
-    property var data
-    property int minOperatorsNeeded: Activity.maxLength(Activity.dataset[level])
+    //property int minOperatorsNeeded: Activity.maxLength(Activity.dataset[level])
     Rectangle {
         id: operator
         width: parent.width*0.328
@@ -75,7 +74,7 @@ Row {
                         levelOperators[level].push(modelData)
                         Activity.sync(levelOperators,level)
                     }
-                    if(levelOperators[level].length<minOperatorsNeeded){
+                    if(levelOperators[level].length==0){
                         warning.visible=true
                     }
                     else{
@@ -97,7 +96,7 @@ Row {
     }
     Rectangle {
         id: warning
-        visible: levelOperators[level].length<minOperatorsNeeded ? true : false
+        visible: levelOperators[level]==0 ? true : false
         width: parent.width*0.25
         height: parent.height
         radius: 20.0;
@@ -106,7 +105,7 @@ Row {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: smallSize
-            text: qsTr("%1 more operator needed").arg(minOperatorsNeeded-levelOperators[level].length)
+            text: qsTr("Operator field is empty")
         }
     }
 }

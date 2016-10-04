@@ -33,7 +33,7 @@ var operators = [
             "/",
             "*",
         ]
-var defaultOperators
+var defaultOperators=Data.defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset=[]
@@ -46,8 +46,6 @@ var items
 function start(items_) {
     items = items_
     currentLevel = 0
-    console.log('dksahdksajdlaskj')
-    //buidDataset(Data.dataset,Data.levelSchema,items.levelArr)
     initLevel()
 }
 
@@ -56,10 +54,10 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    console.log(currentLevel)
+    //console.log(currentLevel)
     items.currentlevel = currentLevel
     items.sublevel = 1
-    items.data=buidDataset(Data.dataset,Data.levelSchema,items.levelArr)
+    items.data=buidDataset(Data.dataset,Data.levelSchema)
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     console.log("dataset :"+items.data  )
     items.levelchanged=false
@@ -166,22 +164,16 @@ function check(operator,array){
     }
     return false
 }
-function maxLength(array){
-    var max=0;
-    for(var i in array){
-        if(array[i][0].length-1>max)
-            max=array[i][0].length-1
-    }
-    return max
-}
+
 function configDone(array){
     for(var i in array){
-        if(array[i].length<maxLength(items.data)){
+        if(array[i].length==0){
             return false
         }
     }
     return true
 }
+
 
 function equal(levelOperators,array){
     for(var i in levelOperators){
@@ -196,8 +188,9 @@ function equal(levelOperators,array){
     return true
 }
 
-function buidDataset(data,levelSchema,levelArr){
+function buidDataset(data,levelSchema){
     var level=[]
+    var levelArr=items.mode=='builtin' ? defaultOperators : items.levelArr
     var noOfOperators=levelArr[currentLevel].length
     var questions
     for(var j in data[noOfOperators-1]){
@@ -207,8 +200,10 @@ function buidDataset(data,levelSchema,levelArr){
         }
     }
     var questions=Core.shuffle(questions)
+
     for(var m=0;m<levelSchema[currentLevel];m++){
         level.push(questions[m])
     }
     return level
 }
+
