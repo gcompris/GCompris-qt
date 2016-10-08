@@ -1,7 +1,8 @@
 #!/bin/bash
 #
 # generate_backgroundMusic_rcc.sh
-#
+
+# Copyright (C) 2014 Holger Kaelberer
 # Copyright (C) 2016 Divyam Madaan
 #
 # Generates Qt binary resource files (.rcc) for background music.

@@ -94,9 +94,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 #endif
     // Get fonts from rcc
     const QStringList fontFilters = {"*.otf", "*.ttf"};
-    const QStringList backgroundMusicFilters = {QString("*.%1").arg(COMPRESSED_AUDIO) };
     m_fontsFromRcc = QDir(":/gcompris/src/core/resource/fonts").entryList(fontFilters);
-    m_backgroundMusicFromRcc = QDir(":/gcompris/data/backgroundMusic").entryList(backgroundMusicFilters);
 
 }
 
@@ -187,7 +185,13 @@ QStringList ApplicationInfo::getFontsFromRcc()
 
 QStringList ApplicationInfo::getBackgroundMusicFromRcc()
 {
-    return m_backgroundMusicFromRcc;
+    const QStringList backgroundMusicFilters = {QString("*.%1").arg(COMPRESSED_AUDIO) };
+    return QDir(":/gcompris/data/backgroundMusic").entryList(backgroundMusicFilters);
+}
+
+QString ApplicationInfo::getBackgroundMusicPath()
+{
+    return QString("data2/backgroundMusic-%1.rcc").arg(COMPRESSED_AUDIO);
 }
 
 void ApplicationInfo::notifyPortraitMode()

@@ -189,6 +189,7 @@ bool DownloadManager::updateResource(const QString& path)
     else {
         QString absPath = getAbsoluteResourcePath(path);
         // automatic download prohibited -> register if available
+        qDebug()<<absPath;
         if (!absPath.isEmpty())
             return registerResourceAbsolute(absPath);
         else {
@@ -503,6 +504,7 @@ inline bool DownloadManager::isRegistered(const QString& filename) const
  */
 bool DownloadManager::registerResourceAbsolute(const QString& filename)
 {
+    qDebug()<<"IN register"<<filename;
     QMutexLocker locker(&rcMutex);
     if (isRegistered(filename))
         unregisterResource_locked(filename);
@@ -539,7 +541,6 @@ bool DownloadManager::registerResource(const QString& filename)
 bool DownloadManager::isDataRegistered(const QString& data) const
 {
     QString res = QString(":/gcompris/data/%1").arg(data);
-
     return !QDir(res).entryList().empty();
 }
 
@@ -547,7 +548,6 @@ bool DownloadManager::areVoicesRegistered() const
 {
     QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").
             arg(ApplicationInfo::getInstance()->getVoicesLocale(ApplicationSettings::getInstance()->locale()));
-
     return isDataRegistered(resource);
 }
 

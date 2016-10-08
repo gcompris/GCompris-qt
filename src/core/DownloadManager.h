@@ -270,6 +270,12 @@ public:
      */
     Q_INVOKABLE bool areVoicesRegistered() const;
 
+    /**
+     * Whether background music registered.
+     *
+     * @sa isDataRegistered
+     */
+
     /*
      * Registers a rcc resource file given by a relative resource path
      *

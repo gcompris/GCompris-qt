@@ -421,8 +421,7 @@ Item {
             
             property bool haveBackgroundMusicResource: false
 
-            function backgroundMusichanged() {
-                print("HO")
+            function backgroundMusicChanged() {
                 backgroundMusicRow.haveBackgroundMusicResource = DownloadManager.isDataRegistered(
                             "backgroundMusic-" + ApplicationInfo.CompressedAudio + ".rcc" )
                          }
@@ -430,7 +429,7 @@ Item {
 
             Connections {
                 target: DownloadManager
-                onDownloadFinished: backgroundMusicRow.backgroundMusichanged()
+                onDownloadFinished: backgroundMusicRow.backgroundMusicChanged()
             }
             
             
@@ -456,8 +455,7 @@ Item {
                 qsTr("Download")
                 style: GCButtonStyle {}
                 onClicked: {
-                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())){
-                    print(DownloadManager.getBackgroundMusicResources())
+                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
                     var downloadDialog = Core.showDownloadDialog(dialogConfig.parent.rootItem, {});
                     backgroundMusicRow.haveBackgroundMusicResource = true;
                     }

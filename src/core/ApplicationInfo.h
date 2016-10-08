@@ -401,6 +401,10 @@ protected slots:
      */
     Q_INVOKABLE QStringList getBackgroundMusicFromRcc();
     /**
+     * @returns Path to background music rcc
+     */
+    Q_INVOKABLE QString getBackgroundMusicPath();
+    /**
      * Stores a screenshot in the passed @p file.
      *
      * @param file Absolute destination filename.
