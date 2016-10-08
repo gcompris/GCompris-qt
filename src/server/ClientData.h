@@ -50,4 +50,6 @@ signals:
     void newUser();
 };
 
+Q_DECLARE_METATYPE(ClientData)
+
 #endif

@@ -49,10 +49,16 @@ public:
             QJSEngine *scriptEngine);
     static MessageHandler* getInstance();
 
-    Q_INVOKABLE void createGroup(const QString &groupName, const QStringList &users = QStringList());
-    Q_INVOKABLE void createUser(const QString &userName, const QString &avatar = QString(), const QStringList &groups = QStringList());
-    Q_INVOKABLE void updateUser(const QString &oldUser, const QString &newUser, const QString &avatar = QString(), const QStringList &groups = QStringList());
+    Q_INVOKABLE GroupData *createGroup(const QString &groupName, const QStringList &users = QStringList());
+    Q_INVOKABLE GroupData *updateGroup(const QString &oldGroupName, const QString &newGroupName, const QStringList &users = QStringList());
+    Q_INVOKABLE void deleteGroup(const QString &groupName);
+
+    Q_INVOKABLE UserData *createUser(const QString &userName, const QString &avatar = QString(), const QStringList &groups = QStringList());
+    Q_INVOKABLE UserData *updateUser(const QString &oldUser, const QString &newUser, const QString &avatar = QString(), const QStringList &groups = QStringList());
     Q_INVOKABLE void deleteUser(const QString &userName);
+
+    UserData *getUser(const QString &userName);
+    GroupData *getGroup(const QString &groupName);
 
 public slots:
     void onLoginReceived(const ClientData &who, const Login &data);
@@ -67,6 +73,9 @@ signals:
 
 private:
     ClientData *getClientData(const ClientData &cd);
+
+    void removeUserFromAllGroups(UserData *user);
+
     // ClientData*
     QList<QObject*> m_clients;
     // GroupData*
@@ -74,7 +83,6 @@ private:
     // UserData*
     QList<QObject*> m_users;
 
-    void removeUserFromAllGroups(const UserData *user);
 };
 
 #endif

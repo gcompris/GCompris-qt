@@ -232,7 +232,9 @@ void Server::sendLoginList(QObject *g)
     out.setVersion(QDataStream::Qt_4_0);
 
     AvailableLogins act;
-    act._logins = group->m_members;
+    for(const QObject *oC: group->getUsers()) {
+        act._logins << ((const UserData*)oC)->getName();
+    }
 
     // todo remove already used logins
 

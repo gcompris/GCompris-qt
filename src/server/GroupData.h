@@ -24,23 +24,38 @@
 #include <QObject>
 #include <QStringList>
 
+class UserData;
+
 class GroupData : public QObject {
     Q_OBJECT
 
-    Q_PROPERTY(QStringList members MEMBER m_members NOTIFY newMembers)
+    Q_PROPERTY(QList<QObject *> users MEMBER m_users NOTIFY newUsers)
     Q_PROPERTY(QString name MEMBER m_name NOTIFY newName)
 
 public:
     GroupData();
+    GroupData(const GroupData &group);
     ~GroupData();
 
-    //private:
-    QStringList m_members;
+    const QList<QObject *> &getUsers() const;
+    void addUser(UserData *user);
+    void removeUser(UserData *user);
+    void removeAllUsers();
+    Q_INVOKABLE bool hasUser(const QString &user);
+
+    const QString &getName() const;
+    void setName(const QString &newName);
+
+ private:
+    // UserData*
+    QList<QObject *> m_users;
     QString m_name;
 
 signals:
-    void newMembers();
+    void newUsers();
     void newName();
 };
+
+Q_DECLARE_METATYPE(GroupData)
 
 #endif

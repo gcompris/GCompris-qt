@@ -33,9 +33,10 @@ MessageHandler::MessageHandler()
     connect(&server, &Server::newClientReceived, this, &MessageHandler::onNewClientReceived);
     connect(&server, &Server::clientDisconnected, this, &MessageHandler::onClientDisconnected);
 
-    createGroup("default", {"a", "b"});
-    createUser("a", "", {"default"});
-    createUser("b", "", {"default"});
+    GroupData *group = createGroup("default");
+    UserData *user1 = createUser("a", "", { "default" });
+    UserData *user2 = createUser("b", "");
+    group->addUser(user2); // same as putting directly the group
 }
 
 MessageHandler* MessageHandler::getInstance()
@@ -56,51 +57,109 @@ QObject *MessageHandler::systeminfoProvider(QQmlEngine *engine,
 
 void MessageHandler::init()
 {
+    qmlRegisterType<UserData>();
+    qmlRegisterType<GroupData>();
+
     qmlRegisterSingletonType<MessageHandler>("GCompris", 1, 0,
             "MessageHandler",
             systeminfoProvider);
 }
 
-void MessageHandler::createGroup(const QString &newGroup, const QStringList &users)
+GroupData *MessageHandler::createGroup(const QString &newGroup, const QStringList &users)
 {
     qDebug() << "createGroup '" << newGroup << "'";
     GroupData *c = new GroupData();
-    c->m_name = newGroup;
-    for(const QString &user: users)
-        c->m_members << user;
+    c->setName(newGroup);
+    for(const QString &username: users)
+        c->addUser(getUser(username));
     m_groups.push_back((QObject*)c);
+    emit newGroups();
+    return c;
+}
+
+GroupData *MessageHandler::updateGroup(const QString &oldGroupName, const QString &newGroupName, const QStringList &users)
+{
+    qDebug() << "updateGroup '" << newGroupName << "'";
+    GroupData *c = getGroup(oldGroupName);
+    c->setName(newGroupName);
+
+    c->removeAllUsers();
+    for(const QString &aUser: users) {
+        UserData *user = getUser(aUser);
+        c->addUser(user);
+    }
+    emit newGroups();
+    return c;
+}
+
+void MessageHandler::deleteGroup(const QString &groupName)
+{
+    qDebug() << "deleteGroup '" << groupName << "'";
+    GroupData *c = getGroup(groupName);
+    qDebug() << c;
+    m_groups.removeAll(c);
+    delete c;
     emit newGroups();
 }
 
-void MessageHandler::createUser(const QString &newUser, const QString &avatar, const QStringList &groups)
+UserData *MessageHandler::createUser(const QString &newUser, const QString &avatar, const QStringList &groups)
 {
-    qDebug() << "createUser '" << newUser << "'";
+    qDebug() << "createUser '" << newUser << "' in groups " << groups;
     UserData *u = new UserData();
     u->setName(newUser);
     u->setAvatar(avatar);
-//    for(const QString &group: groups)
-//  todo find group + add user       u->m_members << user;
+    for(const QString &aGroup: groups) {
+        GroupData *group = getGroup(aGroup);
+        group->addUser(u);
+    }
     m_users.push_back((QObject*)u);
     emit newUsers();
+    return u;
 }
 
-void MessageHandler::updateUser(const QString &oldUser, const QString &newUser, const QString &avatar, const QStringList &groups)
+UserData *MessageHandler::updateUser(const QString &oldUser, const QString &newUser, const QString &avatar, const QStringList &groups)
+{
+    UserData *user = getUser(oldUser);
+    if (user) {
+        user->setName(newUser);
+        // for each group, remove the user if not in the new groups and add it in the new ones
+        removeUserFromAllGroups(user);
+        for(const QString &aGroup: groups) {
+            GroupData *group = getGroup(aGroup);
+            group->addUser(user);
+        }
+        emit newUsers();
+    }
+    return user;
+}
+
+UserData *MessageHandler::getUser(const QString &userName)
 {
     for (QObject *oUser: m_users) {
         UserData *user = (UserData *) oUser;
-        if (user->getName() == oldUser) {
-            user->setName(newUser);
-            emit newUsers();
-            break;
+        if (user->getName() == userName) {
+            return user;
         }
     }
+    return nullptr;
 }
 
-void MessageHandler::removeUserFromAllGroups(const UserData *user)
+GroupData *MessageHandler::getGroup(const QString &groupName)
+{
+    for (QObject *oGroup: m_groups) {
+        GroupData *group = (GroupData *) oGroup;
+        if (group->getName() == groupName) {
+            return group;
+        }
+    }
+    return nullptr;
+}
+
+void MessageHandler::removeUserFromAllGroups(UserData *user)
 {
    for (QObject *oGroup: m_groups) {
         GroupData *group = (GroupData *) oGroup;
-        group->m_members.removeAll(user->getName());
+        group->removeUser(user);
    }
 }
 

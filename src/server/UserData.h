@@ -35,6 +35,7 @@ class UserData : public QObject {
 
 public:
     UserData();
+    UserData(const UserData &user);
     ~UserData();
 
     void setName(const QString &name);
@@ -58,5 +59,7 @@ signals:
     void newName();
     void newActivityData();
 };
+
+Q_DECLARE_METATYPE(UserData)
 
 #endif

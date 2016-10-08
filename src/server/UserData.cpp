@@ -27,6 +27,12 @@ UserData::UserData() : m_name(""), m_avatar("")
 {
 }
 
+UserData::UserData(const UserData &user)
+{
+    m_name = user.m_name;
+    m_avatar = user.m_avatar;
+}
+
 UserData::~UserData()
 {
 }

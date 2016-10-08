@@ -20,12 +20,60 @@
  */
 
 #include <QStringList>
+#include <QDebug>
+#include "UserData.h"
 #include "GroupData.h"
+#include "MessageHandler.h" // not good having it here?
 
 GroupData::GroupData()
 {
 }
 
+GroupData::GroupData(const GroupData &group)
+{
+        m_users = group.m_users;
+        m_name = group.m_name;
+}
+
 GroupData::~GroupData()
 {
+}
+
+const QList<QObject *> &GroupData::getUsers() const
+{
+    return m_users;
+}
+void GroupData::addUser(UserData *user)
+{
+    m_users << user;
+    emit newUsers();
+}
+
+void GroupData::removeUser(UserData *user)
+{
+    m_users.removeAll(user);
+    emit newUsers();
+}
+
+void GroupData::removeAllUsers()
+{
+    m_users.clear();
+    emit newUsers();
+}
+
+bool GroupData::hasUser(const QString &userName)
+{
+    UserData *user = MessageHandler::getInstance()->getUser(userName);
+    return m_users.contains(user);
+}
+
+const QString &GroupData::getName() const
+{
+    return m_name;
+}
+
+void GroupData::setName(const QString &name)
+{
+    m_name = name;
+    emit newName();
 }

@@ -66,15 +66,39 @@ ActivityBase {
                 id: createGroupButton
                 text: qsTr("Create a Group")
                 style: GCButtonStyle {}
-                onClicked: { createGroupName.visible = true; createGroupName.start(); }
+                onClicked: {
+                    createGroupName.mode = "create";
+                    createGroupName.visible = true;
+                    createGroupName.defaultText = "";
+                    createGroupName.start();
+                }
             }
 
             Button {
                 id: updateGroupButton
                 text: qsTr("Update a Group")
                 style: GCButtonStyle {}
-                onClicked: { print("update group: " + clients.currentItem.name); }
-                enabled: clients.currentIndex != -1
+                onClicked: {
+                    if(clients.currentItem) {
+                        createGroupName.mode = "update";
+                        createGroupName.visible = true;
+                        createGroupName.defaultText = clients.currentItem.name;
+                        createGroupName.start();
+                    }
+                }
+                enabled: clients.currentItem && clients.currentIndex != -1
+            }
+
+            Button {
+                id: deleteGroupButton
+                text: qsTr("Delete selected group")
+                style: GCButtonStyle {}
+                onClicked: {
+                    if(clients.currentItem) {
+                        MessageHandler.deleteGroup(clients.currentItem.name);
+                    }
+                }
+                enabled: clients.currentItem && clients.currentIndex != -1
             }
 
             Button {
@@ -94,13 +118,33 @@ ActivityBase {
             active: visible
             anchors.fill: parent
             z: 100
-            message: qsTr("Name of the new group")
+            property string mode: "create"
+            message: mode == "create" ? qsTr("Name of the new group") : qsTr("Update group %1").arg(clients.currentItem.name)
             onClose: createGroupName.visible = false;
             button1Text: qsTr("OK")
             button2Text: qsTr("Cancel")
-            onButton1Hit: MessageHandler.createGroup(createGroupName.inputtedText)
+            onButton1Hit: {
+                if(MessageHandler.users.length !== 0) {
+                    chooseLogin.visible = true;
+                    chooseLogin.groupname = createGroupName.inputtedText
+                    chooseLogin.start();
+                }
+                else {
+                    // no users, create the group directly
+                    if(mode == "create") {
+                        MessageHandler.createGroup(createGroupName.inputtedText)
+                    }
+                    else {
+                        MessageHandler.updateGroup(clients.currentItem.name, createGroupName.inputtedText)
+                    }
+                }
+            }
+
             focus: true
-            onStart: { inputItem.text = defaultText; inputItem.forceActiveFocus() }
+            onStart: {
+                inputItem.text = defaultText;
+                inputItem.forceActiveFocus();
+            }
             onStop: activity.forceActiveFocus()
 
             /**
@@ -118,12 +162,63 @@ ActivityBase {
             content: TextInput {
                 id: inputItem
                 height: 60 * ApplicationInfo.ratio
-                //width: createGroupName.width
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 text: createGroupName.defaultText
                 font.pointSize: 14
                 font.weight: Font.DemiBold
+            }
+        }
+
+        GCInputDialog {
+            id: chooseLogin
+            visible: false
+            active: visible
+            anchors.fill: parent
+
+            message: qsTr("Add users to group")
+            onClose: chooseLogin.visible = false;
+
+            property string groupname
+
+            button1Text: qsTr("OK")
+            onButton1Hit: {
+                createGroupName.mode == "create" ?
+                    MessageHandler.createGroup(groupname, selectedUsers) :
+                    MessageHandler.updateGroup(clients.currentItem.name, groupname, selectedUsers)
+                chooseLogin.selectedUsers = [];
+            }
+
+            focus: true
+
+            property string chosenLogin
+            property var model: MessageHandler.users
+
+            property var selectedUsers: []
+            content: ListView {
+                id: view
+                width: chooseLogin.width
+                height: 100 * ApplicationInfo.ratio
+                contentHeight: 60 * ApplicationInfo.ratio * model.count
+                interactive: true
+                clip: true
+                model: chooseLogin.model
+                delegate: GCDialogCheckBox {
+                    id: userBox
+                    text: modelData.name
+                    // if you create a user, it's not in any group
+                    // (need to handle case of existing name)
+                    checked: createGroupName.mode == "create" ? false :
+                                       clients.model[clients.currentIndex].hasUser(modelData.name)
+                    onCheckedChanged: {
+                        if(checked) {
+                            chooseLogin.selectedUsers.push(modelData.name)
+                        }
+                        else {
+                            chooseLogin.selectedUsers.splice(chooseLogin.selectedUsers.indexOf(modelData.name), 1)
+                        }
+                    }
+                }
             }
         }
 

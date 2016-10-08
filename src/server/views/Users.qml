@@ -60,7 +60,7 @@ ActivityBase {
         }
 
         Grid {
-            rows: 1
+            rows: 2
             anchors.bottom: bar.top
             Button {
                 id: createUserButton
@@ -111,6 +111,7 @@ ActivityBase {
                 enabled: users.currentItem && users.currentIndex != -1
             }
         }
+
         GCInputDialog {
             id: createUserName
             visible: false
@@ -124,9 +125,23 @@ ActivityBase {
 
             button1Text: qsTr("OK")
             button2Text: qsTr("Cancel")
-            onButton1Hit: mode == "create" ?
-                              MessageHandler.createUser(createUserName.inputtedText) :
-                              MessageHandler.updateUser(users.currentItem.name, createUserName.inputtedText)
+            onButton1Hit: {
+                if(MessageHandler.groups.length !== 0) {
+                    chooseLogin.visible = true;
+                    chooseLogin.username = createUserName.inputtedText
+                    chooseLogin.start();
+                }
+                else {
+                    // no users, create the group directly
+                    if(mode == "create") {
+                        MessageHandler.createUser(createUserName.inputtedText, "")
+                    }
+                    else {
+                        MessageHandler.updateUser(users.currentItem.name, createUserName.inputtedText, "")
+                    }
+                }
+            }
+
             focus: true
             onStart: { inputItem.text = defaultText; inputItem.forceActiveFocus() }
             onStop: activity.forceActiveFocus()
@@ -151,6 +166,61 @@ ActivityBase {
                 text: createUserName.defaultText
                 font.pointSize: 14
                 font.weight: Font.DemiBold
+            }
+        }
+
+        GCInputDialog {
+            id: chooseLogin
+            visible: false
+            active: visible
+            anchors.fill: parent
+
+            message: qsTr("Add user to existing group")
+            onClose: chooseLogin.visible = false;
+
+            property string username
+
+            button1Text: qsTr("OK")
+            onButton1Hit: {
+                createUserName.mode == "create" ?
+                    MessageHandler.createUser(username, "", selectedGroups) :
+                    MessageHandler.updateUser(users.currentItem.name, username, "", selectedGroups)
+                chooseLogin.selectedGroups = [];
+            }
+
+            focus: true
+
+            property string chosenLogin
+            property var model: MessageHandler.groups
+
+            property var selectedGroups: []
+            content: ListView {
+                id: view
+                width: chooseLogin.width
+                height: 100 * ApplicationInfo.ratio
+                contentHeight: 60 * ApplicationInfo.ratio * model.count
+                interactive: true
+                clip: true
+                model: chooseLogin.model
+                delegate: GCDialogCheckBox {
+                    id: userBox
+                    text: modelData.name
+                    // if you create a user, it's not in any group
+                    // (need to handle case of existing name)
+                    checked: createUserName.mode == "create" ? false :
+                                       modelData.hasUser(users.currentItem.name)
+                    onCheckedChanged: {
+                        if(checked) {
+                            chooseLogin.selectedGroups.push(modelData.name)
+                            print("checked " + modelData.name)
+                            print("checked " + chooseLogin.selectedGroups)
+                        }
+                        else {
+                            chooseLogin.selectedGroups.splice(chooseLogin.selectedGroups.indexOf(modelData.name), 1)
+                            print("not checked" + modelData.name)
+                        }
+                    }
+                }
             }
         }
 
