@@ -258,7 +258,7 @@ ActivityBase {
                 scale: 1.0
                 width: items.ballSize
                 height: items.ballSize
-                z: 1
+                z: 3  // above other BalanceItems
                 categories: items.ballType
                 collidesWith: items.wallType | items.holeType | items.goalType 
                               | items.buttonType
@@ -306,7 +306,7 @@ ActivityBase {
                 id: debugDraw
                 world: physicsWorld
                 visible: Activity.debugDraw
-                z: 1
+                z: 100
             }            
             
         }
