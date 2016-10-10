@@ -197,8 +197,7 @@ Window {
     }
 
         function checkBackgroundMusic() {
-            if(DownloadManager.updateResource("data2/backgroundMusic-" + ApplicationInfo.CompressedAudio + ".rcc")) {
-                print("Nothing to do, registered")
+            if(DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources())) {
                 rccBackgroundMusic= ApplicationInfo.getBackgroundMusicFromRcc();
             }
                 else {
@@ -211,6 +210,8 @@ Window {
                            if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) { 
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                            }
+                           selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+                           backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
                         },
                         qsTr("No"), null,
                         function() { pageView.currentItem.focus = true }

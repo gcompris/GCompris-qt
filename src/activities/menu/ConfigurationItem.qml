@@ -413,56 +413,6 @@ Item {
                 }
             }
         }
-        
-        Flow {
-            id: backgroundMusicRow
-            width: parent.width
-            spacing: 5 * ApplicationInfo.ratio
-            
-            property bool haveBackgroundMusicResource: false
-
-            function backgroundMusicChanged() {
-                backgroundMusicRow.haveBackgroundMusicResource = DownloadManager.isDataRegistered(
-                            "backgroundMusic-" + ApplicationInfo.CompressedAudio + ".rcc" )
-                         }
-
-
-            Connections {
-                target: DownloadManager
-                onDownloadFinished: backgroundMusicRow.backgroundMusicChanged()
-            }
-            
-            
-            GCText {
-                id: backgroundMusicText
-                text: qsTr("Background music")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-            }
-            
-            Image {
-                id: backgroundMusicImage
-                sourceSize.height: 30 * ApplicationInfo.ratio
-                source: backgroundMusicRow.haveBackgroundMusicResource ? "qrc:/gcompris/src/core/resource/apply.svg" :
-                "qrc:/gcompris/src/core/resource/cancel.svg"
-            }
-            
-            Button {
-                id: backgroundMusicButton
-                height: 30 * ApplicationInfo.ratio
-                visible: ApplicationInfo.isDownloadAllowed
-                text: backgroundMusicRow ? qsTr("Check for updates") :
-                qsTr("Download")
-                style: GCButtonStyle {}
-                onClicked: {
-                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
-                    var downloadDialog = Core.showDownloadDialog(dialogConfig.parent.rootItem, {});
-                    backgroundMusicRow.haveBackgroundMusicResource = true;
-                    }
-                }
-            }
-        }
-
 
         Flow {
             width: parent.width

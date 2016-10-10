@@ -191,7 +191,7 @@ QStringList ApplicationInfo::getBackgroundMusicFromRcc()
 
 QString ApplicationInfo::getBackgroundMusicPath()
 {
-    return QString("data2/backgroundMusic-%1.rcc").arg(COMPRESSED_AUDIO);
+    return QString("data2/backgroundMusic/backgroundMusic-%1.rcc").arg(COMPRESSED_AUDIO);
 }
 
 void ApplicationInfo::notifyPortraitMode()

@@ -155,7 +155,7 @@ QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
 
 QString DownloadManager::getBackgroundMusicResources() const
 {
-    return QString("data2/backgroundMusic-" COMPRESSED_AUDIO ".rcc");
+    return QString("data2/backgroundMusic/backgroundMusic-" COMPRESSED_AUDIO ".rcc");
 }
 
 inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
@@ -189,7 +189,6 @@ bool DownloadManager::updateResource(const QString& path)
     else {
         QString absPath = getAbsoluteResourcePath(path);
         // automatic download prohibited -> register if available
-        qDebug()<<absPath;
         if (!absPath.isEmpty())
             return registerResourceAbsolute(absPath);
         else {
@@ -504,7 +503,6 @@ inline bool DownloadManager::isRegistered(const QString& filename) const
  */
 bool DownloadManager::registerResourceAbsolute(const QString& filename)
 {
-    qDebug()<<"IN register"<<filename;
     QMutexLocker locker(&rcMutex);
     if (isRegistered(filename))
         unregisterResource_locked(filename);
