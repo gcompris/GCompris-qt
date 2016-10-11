@@ -23,30 +23,25 @@
 .import GCompris 1.0 as GCompris
 .import QtQuick 2.0 as Quick
 
-var boardPaused = 0
 var numberBalls = [[1, 4], [2, 6], [3, 6]]
 var boardSize = [15, 19, 29]
-var sampleBallsNo = [4, 6, 6]
-var tuxPositionFactor = [1.05, 1.8, 1.05]
+var sampleBallsNumber = [4, 6, 6]
+var tuxPositionFactor = [1.05, 1.4, 1.05]
 var ballSizeFactor = [0, 4, 4]
 var elementSizeFactor = [0, 4, 7]
-var noOfLables = [2, 3, 5]
 var moveCount = -1
 var level = 1
 var maxlevel = 4
 var sublevel = 1
 var numberOfSublevel = 3
 var listWin = false
-var currentLevel = 0
 var items
-var noOfBalls = 1
-var tuxActive = true;
+var numberOfBalls = 1
 
 var url= "qrc:/gcompris/src/activities/bargame/resource/";
 
 function start(items_) {
     items = items_
-    currentLevel = 1
     initLevel()
 }
 
@@ -54,7 +49,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel
+    items.bar.level = level
 }
 
 function nextLevel() {
@@ -62,7 +57,7 @@ function nextLevel() {
     if (level > 4) {
         level = 1;
     }
-    currentLevel = level
+
     reSetup();
     initLevel();
 }
@@ -72,7 +67,6 @@ function previousLevel() {
     if (level < 1) {
         level = 4;
     }
-    currentLevel = level;
     sublevel = 1;
 
     reSetup();
@@ -80,6 +74,9 @@ function previousLevel() {
 }
 
 function calculateWinPlaces() {
+    /* Calculates all the possible winning moves in the
+    available board size. It generates a list all winning
+    moves for the computer */
     var winners = [];
     var winnersList = [];
     var min = numberBalls[sublevel - 1][0];
@@ -133,14 +130,14 @@ function machinePlay() {
         var value = randomNumber(numberBalls[sublevel - 1][0], numberBalls[sublevel - 1][1]);
     }
 
-    play(false, value);
+    play(2, value);
 }
 
-function play(human, value) {
+function play(player, value) {
     for (var x = 0; x < value ; x++) {
         moveCount++;
         if (moveCount <= (boardSize[sublevel - 1] - 1)) {
-            if (human == true) {
+            if (player == 1) {
                 items.answerBallsPlacement.children[moveCount].opacity = 1.0;
                 items.answerBallsPlacement.children[moveCount].source = url + "green_ball.svg";
             } else {
@@ -158,9 +155,8 @@ function play(human, value) {
                     level = maxlevel;
                     sublevel = 1;
                 }
-                currentLevel = level;
             }
-            if (human == false) {
+            if (player == 2) {
                 items.bonus.good("flower");
             } else {
                 items.bonus.bad("flower");
@@ -168,31 +164,32 @@ function play(human, value) {
             return;
         }
     }
-    if (human == true) {
+    if (player == 1) {
         machinePlay();
     }
 }
 
 // Refreshes the scene
 function reSetup() {
+    calculateWinPlaces();
     items.tuxArea.enabled = true;
     items.tuxArea.hoverEnabled = true;
     moveCount = -1;
-    items.numberOfBalls.text = "1";
-    noOfBalls = 1;
+    items.numberLabel.text = "1";
+    numberOfBalls = 1;
 
     initLevel();
 
     // Tux refresh
     items.tux.source = url + "tux" + level + ".svg";
-    items.tuxRect.y = items.rootWindow.height - items.rootWindow.height / 1.8;
-    items.tuxRect.x = items.rootWindow.width - items.rootWindow.width / tuxPositionFactor[sublevel - 1];
+    items.tux.y = items.rootWindow.height - items.rootWindow.height / 1.8;
+    items.tux.x = items.rootWindow.width - items.rootWindow.width / tuxPositionFactor[sublevel - 1];
 
     // Blue sample balls refresh
-    items.blueBalls.columns = sampleBallsNo[sublevel - 1];
+    items.blueBalls.columns = sampleBallsNumber[sublevel - 1];
 
     // Green sample balls refresh
-    items.greenBalls.columns = sampleBallsNo[sublevel - 1];
+    items.greenBalls.columns = sampleBallsNumber[sublevel - 1];
 
     // Box setup refresh
     items.boxes.columns = boardSize[sublevel-1];
@@ -207,6 +204,6 @@ function reSetup() {
     items.answerBallsPlacement.columns = boardSize[sublevel-1]
 
     // Resetting ball plate
-    items.backgroundImage.source = url + "school_bg" + level + ".svg"
+    items.rootWindow.source = url + "school_bg" + level + ".svg"
 }
 

@@ -31,19 +31,14 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Item {
+    pageComponent: Image {
         id: rootWindow
+        source: Activity.url + "school_bg" + Activity.level + ".svg"
+        sourceSize.height: parent.height
+        sourceSize.width: parent.width
+        anchors.fill: parent
         signal start
         signal stop
-        anchors.fill: parent
-
-        Image {
-            id: backgroundImage
-            source: Activity.url + "school_bg" + Activity.level + ".svg"
-            sourceSize.height: rootWindow.height
-            sourceSize.width: rootWindow.width
-            anchors.fill: rootWindow
-        }
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -56,15 +51,13 @@ ActivityBase {
             property Item main: activity.main
             property Item boxModel: boxModel
             property Item rootWindow: rootWindow
-            property alias tuxRect: tuxRect
             property alias tux: tux
             property alias blueBalls: blueBalls
             property alias greenBalls: greenBalls
             property alias tuxArea: tuxArea
             property alias boxes: boxes
             property alias masks: masks
-            property alias numberOfBalls: numberOfBalls
-            property alias backgroundImage: backgroundImage
+            property alias numberLabel: numberLabel
             property alias answerBallsPlacement: answerBallsPlacement
             property alias answerBalls: answerBalls
             property alias bar: bar
@@ -78,44 +71,41 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         // Tux image
-        Rectangle {
-            id: tuxRect
-            color: 'transparent'
+        Image {
+            id: tux
+            source: Activity.url + "tux" + Activity.level + ".svg"
             height: rootWindow.height / 3.8
             width: rootWindow.width / 8
             y: rootWindow.height - rootWindow.height / 1.8
-            x: rootWindow.width - rootWindow.width / 1.05
-            radius: 10
-
-            Image {
-                id: tux
-                source: Activity.url + "tux" + Activity.level + ".svg"
-                height: parent.height
-                width: parent.width
-                anchors.centerIn: tuxRect.Center
-                MouseArea {
-                    id: tuxArea
-                    hoverEnabled: true
-                    enabled: true
-                    anchors.fill: parent
-                    onClicked: {
-                        tuxArea.hoverEnabled = false;
-                        tuxArea.enabled = false;
-                        tuxRect.color = 'white';
-                        Activity.machinePlay();
-                    }
-                    onEntered: tuxRect.color = '#80FF0000';
-                    onExited: tuxRect.color = 'transparent';
+            x: rootWindow.width - rootWindow.width / Activity.tuxPositionFactor[sublevel - 1];
+            MouseArea {
+                id: tuxArea
+                hoverEnabled: true
+                enabled: true
+                anchors.fill: parent
+                onClicked: {
+                    tuxArea.hoverEnabled = false;
+                    tuxArea.enabled = false;
+                    Activity.machinePlay();
+                }
+            }
+            states: State {
+                name: "tuxHover"
+                when: tuxArea.containsMouse
+                PropertyChanges {
+                    target: tux
+                    scale: 1.1
                 }
             }
         }
+
 
         // Upper blue balls sample
         Grid {
             id: blueBalls
             columns: 4
             rows: 1
-            x: rootWindow.width / 5
+            x: rootWindow.width / 2.2
             y: rootWindow.height / 1.7
             Repeater {
                 model: blueBalls.columns
@@ -131,7 +121,7 @@ ActivityBase {
         // Lower green balls sample
         Grid {
             id: greenBalls
-            x: rootWindow.width / 5
+            x: rootWindow.width / 2.2
             y: rootWindow.height / 1.2
             rows: 1
             columns: 4
@@ -186,14 +176,13 @@ ActivityBase {
                 // All green balls placement
                 Grid {
                     id: answerBallsPlacement
-                    x: rootWindow.width / 2000
-                    y: rootWindow.height / 1.4
+                    x: boxes.x
+                    y: boxes.y
                     columns: 15
                     rows: 1
                     Repeater {
                         model: answerBallsPlacement.columns
                         Image {
-                            id: greenBall
                             source: Activity.url + "green_ball.svg"
                             height: rootWindow.height / (9 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
                             width: rootWindow.width / (15 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
@@ -206,8 +195,8 @@ ActivityBase {
             // Masks
             Grid {
                 id: masks
-                x: rootWindow.width / 2000
-                y: rootWindow.height / 1.4
+                x: boxes.x
+                y: boxes.y
                 rows: 1
                 columns: 15
                 Repeater {
@@ -238,9 +227,9 @@ ActivityBase {
                 onClicked: {
                     tuxArea.hoverEnabled = false;
                     tuxArea.enabled = false;
-                    var value = numberOfBalls.text
-                    numberOfBalls.text = Activity.numberBalls[Activity.sublevel - 1][0];
-                    Activity.play(true, value);
+                    var value = Activity.numberOfBalls
+                    numberLabel.text = Activity.numberOfBalls = Activity.numberBalls[Activity.sublevel - 1][0];
+                    Activity.play(1, value);
                 }
             }
             states: State {
@@ -251,7 +240,6 @@ ActivityBase {
                     scale: 1.2
                 }
             }
-
             GCText {
                 text: qsTr("OK")
                 fontSizeMode: smallSize
@@ -263,7 +251,7 @@ ActivityBase {
         // Number of balls to be placed
         Image {
             id: ballNumberPlate
-            x: rootWindow.width / 1.3
+            x: rootWindow.width / 1.2
             y: rootWindow.height / 1.2
             source: Activity.url + "enumerate_answer.svg"
             width: rootWindow.width / 7
@@ -274,11 +262,11 @@ ActivityBase {
                 hoverEnabled: true
                 onClicked: {
                     parent.source = Activity.url + "enumerate_answer_focus.svg";
-                    Activity.noOfBalls ++;
-                    if (Activity.noOfBalls > Activity.numberBalls[Activity.sublevel - 1 ][1]) {
-                        Activity.noOfBalls = Activity.numberBalls[Activity.sublevel - 1 ][0];
+                    Activity.numberOfBalls ++;
+                    if (Activity.numberOfBalls > Activity.numberBalls[Activity.sublevel - 1 ][1]) {
+                        Activity.numberOfBalls = Activity.numberBalls[Activity.sublevel - 1 ][0];
                     }
-                    numberOfBalls.text = Activity.noOfBalls;
+                    numberLabel.text = Activity.numberOfBalls;
                 }
             }
             states: State {
@@ -303,7 +291,7 @@ ActivityBase {
             }
             // Number label
             GCText {
-                id: numberOfBalls
+                id: numberLabel
                 text: "1"
                 color: 'Red'
                 font.bold: true
