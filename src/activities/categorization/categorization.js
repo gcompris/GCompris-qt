@@ -51,9 +51,9 @@ function start() {
     items.categoryReview.stop()
     var categoriesfilename;
     for(var i = 1; i <= categoriesCount; i++) {
-    categoriesfilename = boardsUrl + "board" + "/" + "category" + i + "_" + currentSubLevel + ".qml"
-    items.categoryReview.categorydataset.source = categoriesfilename
-    categoriesData.push(items.categoryReview.categorydataset.item);
+        categoriesfilename = boardsUrl + "board" + "/" + "category" + i + "_" + currentSubLevel + ".qml"
+        items.categoryReview.categorydataset.source = categoriesfilename
+        categoriesData.push(items.categoryReview.categorydataset.item);
     }
     lessons = getAllLessons(categoriesData);
     categories = getCategoryModel(categoriesData)
@@ -177,15 +177,15 @@ function inCategory() {
     var randomGood = 0; var randomBad = 0;
     var selectedCategory = Math.floor(Math.random() * lessons.length)
   
-    if(!items.expertMode) {
-    items.details=lessons[index].map(function(ele) {
+    if(!(items.mode == "expert")) {
+    items.details = lessons[index].map(function(ele) {
         return { "tags": ele.tags , "instructions": ele.instructions,  "image": ele.image,
             "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad, "categoryImages": ele.levelImages ,"prefix": ele.prefix }
     }); 
   } 
   
   // If expert mode is selected, select a random level (selectedLevel) from a random category (selectedCategory) 
-  else if(items.expertMode) { 
+  else if(items.mode == "expert") { 
      var selectedLevel = []
       selectedLevel[0] = lessons[selectedCategory][Math.floor(Math.random() * lessons[selectedCategory].length)]
       items.details = selectedLevel.map(function(ele){
@@ -223,8 +223,8 @@ function inCategory() {
     var tableBad = resultBad.map(function(obj) {
         return {"src": obj, "isRight": false}
     });
-    var badvalidimages=resultBad.length;
-    var numberofBad= Math.min(badvalidimages,items.details[items.bar.level-1].numberofBad);
+    var badvalidimages = resultBad.length;
+    var numberofBad = Math.min(badvalidimages,items.details[items.bar.level-1].numberofBad);
     tableBad =tableBad.splice(0,numberofBad);
     
     table = table.concat(tableBad);

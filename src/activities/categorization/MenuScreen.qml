@@ -58,7 +58,7 @@ Image {
     Keys.onEscapePressed: {
         home()
     }
-    Keys.enabled : items.expertMode ? false : true
+    Keys.enabled : (items.mode == "expert") ? false : true
     Keys.onPressed: {
         if(event.key === Qt.Key_Space) {
             menuGrid.currentItem.selectCurrentItem()
@@ -125,9 +125,8 @@ Image {
         ReadyButton {
         id: iAmReady
         focus: true
-        opacity: items.expertMode ? 1 : 0 
+        visible: items.iAmReadyChecked 
         onClicked: {
-            print(iAmReady.enabled)
             Activity.startCategory()
             }
         }
@@ -137,7 +136,7 @@ Image {
             width: levelCellWidth - menuGrid.spacing
             height: levelCellHeight - menuGrid.spacing
             property string sectionName: name
-            opacity: items.expertMode ? 0.25 : 1
+            opacity: (items.mode == "expert") ? 0.25 : 1
             
             Rectangle {
                 id: activityBackground
@@ -169,7 +168,7 @@ Image {
                     maximumLineCount: 2
                     wrapMode: Text.WordWrap
                     text: name
-                    opacity: items.expertMode ? 0 : 1
+                    opacity: (items.mode == "expert") ? 0 : 1
                 }
             }
             
@@ -179,7 +178,7 @@ Image {
             }
             MouseArea {
                 anchors.fill: activityBackground
-                enabled: items.expertMode ? false: true
+                enabled: (items.mode == "expert") ? false: true
                 onClicked: selectCurrentItem()
                 
             }
@@ -220,7 +219,7 @@ Image {
             color:  "#AA41AAC4"
             border.width: 3
             border.color: "black"
-            visible: items.expertMode ? false : true
+            visible: (items.mode == "expert") ? false : true
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }

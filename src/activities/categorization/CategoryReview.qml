@@ -244,12 +244,10 @@ Item {
     }
     
     Keys.onEscapePressed:{ Activity.launchMenuScreen();
-        if(items.expertMode){
-        items.menuScreen.iAmReady.visible = true
-        print(items.menuScreen.iAmReady.visible)
-    }
     }
     function stop() {
+        if(items.mode == "expert")
+            items.menuScreen.iAmReady.visible = true
         focus = false
         rootItem.visible = 0
     }
