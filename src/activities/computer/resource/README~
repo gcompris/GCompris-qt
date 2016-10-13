@@ -1,0 +1,8 @@
+This is a README file.
+The images used in the project are taken from "https://openclipart.org/".
+
+Computer
+	resource : contains all the images that are used in the project
+	Peripherals : contains the .qml file of components that are used again and again in the project.	
+	Others are qml files of different levels.
+	
