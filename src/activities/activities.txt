@@ -33,6 +33,7 @@ crane
 details
 drawletters
 drawnumber
+droftware_activity
 enumerate
 erase
 erase_2clic
