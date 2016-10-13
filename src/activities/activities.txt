@@ -46,6 +46,7 @@ followline
 football
 geo-country
 geography
+GianaBhateja
 gletters
 gnumch-equality
 gnumch-factors
