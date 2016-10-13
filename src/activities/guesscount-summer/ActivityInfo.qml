@@ -22,18 +22,18 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "guesscount-summer/GuesscountSummer.qml"
-  difficulty: 1
-  icon: "guesscount-summer/guesscount-summer.svg"
-  author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
-  demo: true
-  title: qsTr("Guessscount")
-  description:qsTr("guess the algebraic expression and click on the buttons to add them.")
-  //intro: "guesscount activity"
-  goal: qsTr("To teach algebra")
-  prerequisite: qsTr("knowledge of arithmetic oprations")
-  manual: ""
-  credit: ""
-  section: "math"
-  createdInVersion:6000
+    name: "guesscount-summer/GuesscountSummer.qml"
+    difficulty: 1
+    icon: "guesscount-summer/guesscount-summer.svg"
+    author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
+    demo: true
+    title: qsTr("Guesscount")
+    description:qsTr("Guess the algebraic expression and click on the buttons to add them.")
+    //intro: "guesscount activity"
+    goal: qsTr("To teach algebra")
+    prerequisite: qsTr("knowledge of arithmetic operations")
+    manual: ""
+    credit: ""
+    section: "math"
+    createdInVersion:7000
 }

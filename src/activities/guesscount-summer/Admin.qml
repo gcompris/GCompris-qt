@@ -28,29 +28,28 @@ import "guesscount-summer.js" as Activity
 
 Row {
     id: admin
-    spacing: 30
+    spacing: 20
     property int level
     property var levelOperators
-    //property int minOperatorsNeeded: Activity.maxLength(Activity.dataset[level])
     Rectangle {
         id: operator
-        width: parent.width*0.328
+        width: parent.width*0.23
         height: parent.height
-        radius: 20.0;
+        radius: 10.0;
         color: "red"
         state: "selected"
         GCText {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            fontSize: mediumSize
+            fontSize: smallSize
             text: qsTr("Level %1").arg(level+1)
         }
     }
     Repeater {
-        model: Activity.operators
+        model: ['+','-','*','/']
         delegate: Rectangle {
             id: tile
-            width: 100
+            width: parent.width*0.1
             height: parent.height
             radius: 20
             opacity: 0.7
@@ -59,26 +58,26 @@ Row {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 text: modelData
-                fontSize: mediumSize
+                fontSize: smallSize
             }
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    if(tile.state=="selected"){
-                        tile.state="notselected"
+                    if(tile.state == "selected"){
+                        tile.state = "notselected"
                         levelOperators[level].splice(levelOperators[level].indexOf(modelData),1)
                         Activity.sync(levelOperators,level)
                     }
                     else{
-                        tile.state="selected"
+                        tile.state = "selected"
                         levelOperators[level].push(modelData)
                         Activity.sync(levelOperators,level)
                     }
-                    if(levelOperators[level].length==0){
-                        warning.visible=true
+                    if(levelOperators[level].length == 0){
+                        warning.visible = true
                     }
                     else{
-                        warning.visible=false
+                        warning.visible = false
                     }
                 }
             }
@@ -96,8 +95,8 @@ Row {
     }
     Rectangle {
         id: warning
-        visible: levelOperators[level]==0 ? true : false
-        width: parent.width*0.25
+        visible: levelOperators[level] == 0 ? true : false
+        width: parent.width*0.15
         height: parent.height
         radius: 20.0;
         color: "gray"
@@ -105,7 +104,7 @@ Row {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             fontSize: smallSize
-            text: qsTr("Operator field is empty")
+            text: qsTr("empty")
         }
     }
 }

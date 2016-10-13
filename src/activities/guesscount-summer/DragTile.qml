@@ -22,50 +22,36 @@
 import QtQuick 2.1
 
 import "../../core"
-import "guesscount-summer.js" as Activity
 
 Item {
     id: root
     property string type
-    MouseArea {
-        id: mouseArea
-        property alias tile: tile
-        property alias datavalue: tile.datavalue
-        property alias reparent: root
-        width: root.width
-        height: root.height
-        anchors.centerIn: parent
-        drag.target: tile
-        onReleased: {
-            parent = tile.Drag.target !== null ? tile.Drag.target : root
-            tile.Drag.drop()
-        }
-        Rectangle {
+    property int length: root.children.length
+
+    function createDynamicObject(){
+        var component = Qt.createComponent('Tile.qml')
+        component.createObject(root)
+
+    }
+    Loader {
+        active: type == "operands" ? true : false
+        sourceComponent: Tile{
             id: tile
-            width: parent.width; height: parent.height
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
-            property var datavalue: modelData
-            radius: 20
-            opacity: 0.7
-            color: root.type == "operators" ? "red" : "green"
-            Drag.keys: [ type ]
-            Drag.active: mouseArea.drag.active
-            Drag.hotSpot.x: parent.width/2
-            Drag.hotSpot.y: parent.height/2
-            GCText {
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                text: modelData
-                fontSize: mediumSize
-            }
-            states: [
-                State {
-                    when: mouseArea.drag.active
-                    ParentChange { target: tile; parent: root }
-                    AnchorChanges { target: tile; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
-                }
-            ]
         }
     }
+
+    Component.onCompleted: {
+        if(type == "operators")
+            createDynamicObject()
+    }
+    onChildrenChanged: {
+        if(type == "operators"){
+            if(root.children.length == 0)
+                createDynamicObject()
+            else if(root.children.length == 3)
+                root.children[0].destroy()
+        }
+
+    }
+
 }

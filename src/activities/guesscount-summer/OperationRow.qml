@@ -26,7 +26,7 @@ import "guesscount-summer.js" as Activity
 
 Row {
     id: operandRow
-    spacing: 40
+    spacing: 20
     property alias endResult: endResult
     property int rowResult
     property int noOfRows
@@ -46,12 +46,12 @@ Row {
             droppedItem: operand1.children[count]
             property int count: 0
             onChildrenChanged: {
-                Activity.childrenChange(operand1,operandRow)
-                if(operand1.count==1 && operator.count==1 && operand2.count==1)
+                Activity.childrenChange(operand1, operandRow)
+                if(operand1.count == 1 && operator.count == 1 && operand2.count == 1)
                 {
-                    Activity.calculate(operand1.droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
-                    operandRow.complete=true
-                    if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
+                    Activity.calculate(operand1.droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+                    operandRow.complete = true
+                    if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                     {
                         Activity.checkAnswer()
                     }
@@ -95,12 +95,12 @@ Row {
         property int count: 0
         droppedItem: operator.children[count]
         onChildrenChanged: {
-            Activity.childrenChange(operator,operandRow)
-            if(loader.children[0].count==1 && operator.count==1 && operand2.count==1)
+            Activity.childrenChange(operator, operandRow)
+            if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1)
             {
-                Activity.calculate(loader.children[0].droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
-                operandRow.complete=true
-                if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
+                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+                operandRow.complete = true
+                if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                 {
                     Activity.checkAnswer()
                 }
@@ -109,18 +109,18 @@ Row {
     }
     DropTile {
         id: operand2
-        type : "operands"
+        type: "operands"
         width: operandRow.width*0.1
         height: operandRow.height
         property int count: 0
         droppedItem: operand2.children[count]
         onChildrenChanged: {
-            Activity.childrenChange(operand2,operandRow)
-            if(loader.children[0].count==1 && operator.count==1 && operand2.count==1)
+            Activity.childrenChange(operand2, operandRow)
+            if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1)
             {
-                Activity.calculate(loader.children[0].droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
-                operandRow.complete=true
-                if(operandRow.rowNo==operandRow.noOfRows-1 && operandRow.rowResult==operandRow.guesscount)
+                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+                operandRow.complete = true
+                if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                 {
                     Activity.checkAnswer(operandRow)
                 }
@@ -143,7 +143,7 @@ Row {
         width: operandRow.width*0.1
         height: operandRow.height
         border.color: "black"
-        GCText{
+        GCText {
             id: endResult
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
@@ -152,19 +152,19 @@ Row {
         }
         radius: 20.0
     }
-    onPrevResultChanged: {
+    onPrevCompleteChanged: {
         if(!prevComplete)
         {
-            endResult.text=""
-            operandRow.complete=false
-            operandRow.rowResult=0
+            endResult.text = ""
+            operandRow.complete = false
+            operandRow.rowResult = 0
         }
         else
         {
-            if( operator.count==1 && operand2.count==1)
+            if( operator.count == 1 && operand2.count == 1)
             {
-                Activity.calculate(loader.children[0].droppedItem.datavalue,operator.droppedItem.datavalue,operand2.droppedItem.datavalue,operandRow)
-                operandRow.complete=true
+                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+                operandRow.complete = true
             }
         }
     }
@@ -173,15 +173,15 @@ Row {
         if(operandRow.reparent)
         {
             if(loader.children[0]){
-                if(loader.children[0].count!=0 && rowNo==0){
-                    loader.children[0].droppedItem.parent=loader.children[0].droppedItem.reparent
+                if(loader.children[0].count!=0 && rowNo == 0){
+                    loader.children[0].droppedItem.parent = loader.children[0].droppedItem.reparent
                 }
             }
             if(operator.count!=0){
-                operator.droppedItem.parent=operator.droppedItem.reparent
+                operator.droppedItem.parent = operator.droppedItem.reparent
             }
             if(operand2.count!=0){
-                operand2.droppedItem.parent=operand2.droppedItem.reparent
+                operand2.droppedItem.parent = operand2.droppedItem.reparent
             }
         }
     }

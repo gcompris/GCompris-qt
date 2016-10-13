@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-
 import "../../core"
 import "guesscount-summer.js" as Activity
 
@@ -51,16 +50,15 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int sublevel: 0
-            property alias operandRow : operandRow
+            property alias operandRow: operandRow
             property  var data
             property int result: data[sublevel-1][1]
             property alias timer: timer
             property alias dialog: dialog
             property GCAudio audioEffects: activity.audioEffects
             property bool solved
-            property bool levelchanged : false
+            property bool levelchanged: false
             property var levelArr
-            property alias load: dialogActivityConfig
             property alias operators: items.levelArr
             property string mode
             property int currentlevel
@@ -87,10 +85,10 @@ ActivityBase {
                 width: parent.width
                 height: parent.height
 
-                Repeater{
+                Repeater {
                     id:levels
                     model: Activity.numberOfLevel
-                    Admin{
+                    Admin {
                         id:level
                         level: modelData+1
                         width: parent.width
@@ -105,7 +103,7 @@ ActivityBase {
             id: row1
             width: parent.width
             height: parent.height/10
-            anchors{
+            anchors {
                 top: parent.top
                 topMargin: (parent.height/80)*3
             }
@@ -116,31 +114,31 @@ ActivityBase {
                 height: parent.height;
                 radius: 20.0;
                 color: "steelblue"
-                anchors{
+                anchors {
                     left: parent.left
                     leftMargin: parent.width*0.028
                 }
-                GCText{
+                GCText {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     fontSize: mediumSize
                     text: qsTr("%1/%2").arg(items.sublevel).arg(items.data.length)
                 }
             }
-            Rectangle{
+            Rectangle {
                 width: parent.width*0.35;
                 height: parent.height;
                 radius: 20
                 color: "orange"
-                anchors{
+                anchors {
                     right: parent.right
                     rightMargin: parent.width*0.028
                 }
-                GCText{
+                GCText {
                     id: guess
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
-                    fontSize: mediumSize
+                    fontSize: smallSize
                     text: qsTr("Guesscount: %1").arg(items.result)
                 }
             }
@@ -150,9 +148,12 @@ ActivityBase {
             spacing: 10
             anchors.top:row1.bottom
             anchors.topMargin: 10
+            anchors.left: parent.left
+            anchors.leftMargin: 5
             width: parent.width
             height: parent.height
             OperatorRow {
+                id: operatorRow
                 width: parent.width
                 height: parent.height/10
                 mode: items.mode
@@ -166,13 +167,13 @@ ActivityBase {
             }
             Repeater {
                 id: repeat
-                model: items.operandRow.repeater.model.length-1
-                delegate: OperationRow{
+                model: items.operators[items.currentlevel].length
+                delegate: OperationRow {
                     id: operationRow
                     width: background.width
                     height: background.height/10
                     property alias operationRow: operationRow
-                    noOfRows: items.operandRow.repeater.model.length-1
+                    noOfRows: items.operators[items.currentlevel].length
                     rowNo: modelData
                     guesscount: items.result
                     prevResult: modelData ? repeat.itemAt(modelData-1).rowResult : -1
@@ -208,17 +209,17 @@ ActivityBase {
                             background: dialogActivityConfig
                             label: qsTr("Select your mode")
                         }
-                        Row{
+                        Row {
                             id: labels
                             spacing: 20
-                            visible: modeBox.currentIndex==0
-                            Repeater{
+                            visible: modeBox.currentIndex == 0
+                            Repeater {
                                 model: 2
                                 Row {
                                     spacing: 10
                                     Rectangle {
                                         id: label
-                                        width: background.width*0.25
+                                        width: background.width*0.3
                                         height: background.height/15
                                         radius: 20.0;
                                         color: modelData ? "green" : "red"
@@ -232,13 +233,13 @@ ActivityBase {
                                 }
                             }
                         }
-                        Rectangle{
+                        Rectangle {
                             width: parent.width
                             color: "transparent"
                             height: background.height/1.5
                             ListView {
                                 anchors.fill: parent
-                                visible: modeBox.currentIndex==0
+                                visible: modeBox.currentIndex == 0
                                 spacing: 10
                                 model: Activity.numberOfLevel
                                 clip: true
@@ -263,10 +264,10 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["mode"] ) {
                     items.mode = dataToSave["mode"]
-                    if(dataToSave["levelArr"]==undefined)
-                        dataToSave["levelArr"]=Activity.defaultOperators
-                    if(dataToSave["levelArr"].length!=Activity.numberOfLevel)
-                        items.levelArr=Activity.defaultOperators
+                    if(dataToSave["levelArr"] == undefined)
+                        dataToSave["levelArr"] = Activity.defaultOperators
+                    if(dataToSave["levelArr"].length != Activity.numberOfLevel)
+                        items.levelArr = Activity.defaultOperators
                     else
                         items.levelArr = dataToSave["levelArr"]
                 }
@@ -274,9 +275,9 @@ ActivityBase {
 
             onSaveData: {
                 items.mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value
-                dataToSave = {"mode": items.mode,"levelArr":items.levelArr}
+                dataToSave = {"mode": items.mode, "levelArr":items.levelArr}
                 console.log(items.levelArr)
-                activity.needRestart=true
+                activity.needRestart = true
             }
 
 
@@ -302,11 +303,11 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: {
-                items.levelchanged=true
+                items.levelchanged = true
                 Activity.previousLevel()
             }
             onNextLevelClicked: {
-                items.levelchanged=true
+                items.levelchanged = true
                 Activity.nextLevel()
             }
             onHomeClicked: activity.home()
@@ -322,10 +323,10 @@ ActivityBase {
             interval: 1500
             repeat: false
             onTriggered: {
-                items.solved=true
+                items.solved = true
                 if(items.sublevel<items.data.length)
                 {
-                    Activity.next_sublevel()
+                    Activity.nextSublevel()
                 }
             }
         }
@@ -337,14 +338,14 @@ ActivityBase {
             color: "steelblue"
             radius: 30
             anchors.centerIn: parent
-            GCText{
+            GCText {
                 anchors.centerIn: parent
                 fontSize: mediumSize
                 text: qsTr("result is not an integer")
             }
-            onVisibleChanged:SequentialAnimation{
-                PropertyAnimation { target: dialog; property: "opacity";from : 1 ; to: 0 ;duration: 3000 }
-                PropertyAnimation { target: dialog; property: "visible";to: false }
+            onVisibleChanged:SequentialAnimation {
+                PropertyAnimation {target: dialog; property: "opacity"; from : 1 ; to: 0 ; duration: 3000 }
+                PropertyAnimation {target: dialog; property: "visible"; to: false }
             }
         }
     }

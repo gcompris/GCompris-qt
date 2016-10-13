@@ -27,20 +27,13 @@
 
 
 var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
-var operators = [
-            "+",
-            "-",
-            "/",
-            "*",
-        ]
-var defaultOperators=Data.defaultOperators
+var defaultOperators = Data.defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
 var builtinFile = baseUrl + "/levels-default.json";
-var dataset=[]
-
+var dataset = []
 
 var currentLevel
-var numberOfLevel=Data.levelSchema.length
+var numberOfLevel = Data.levelSchema.length
 var items
 
 function start(items_) {
@@ -54,15 +47,14 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    //console.log(currentLevel)
     items.currentlevel = currentLevel
     items.sublevel = 1
-    items.data=buidDataset(Data.dataset,Data.levelSchema)
+    items.data = buidDataset(Data.dataset,Data.levelSchema)
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     console.log("dataset :"+items.data  )
-    items.levelchanged=false
+    items.levelchanged = false
 }
-function next_sublevel() {
+function nextSublevel() {
     items.sublevel += 1
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.solved=false
@@ -103,38 +95,38 @@ function calculate(operand1,operator,operand2,operationRow)
         result = operand1*operand2
         console.log(result)
     }
-    if(Math.round(result)-result==0)
+    if(Math.round(result)-result == 0)
     {
-        operationRow.rowResult=result
-        operationRow.endResult.text=operationRow.rowResult.toString()
+        operationRow.rowResult = result
+        operationRow.endResult.text = operationRow.rowResult.toString()
     }
     else
     {
-        items.dialog.visible=true
+        items.dialog.visible = true
     }
 
 }
 
 function childrenChange(item,operationRow)
 {
-    if(item.children.length==2 && item.count==0)
+    if(item.children.length == 2 && item.count == 0)
     {
         item.count+=1
         console.log(" first item is dropped "+item.count)
 
     }
-    else if(item.children.length==3)
+    else if(item.children.length == 3)
     {
-        item.droppedItem.parent=item.droppedItem.reparent
+        item.droppedItem.parent = item.droppedItem.reparent
         console.log(" second item is replaced "+item.count)
     }
-    else if(item.children.length==1)
+    else if(item.children.length == 1)
     {
         item.count-=1
         console.log(" first item left "+item.count)
-        operationRow.endResult.text=""
-        operationRow.rowResult=0
-        operationRow.complete=false
+        operationRow.endResult.text = ""
+        operationRow.rowResult = 0
+        operationRow.complete = false
     }
 }
 
@@ -144,7 +136,7 @@ function checkAnswer(row){
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
         items.timer.start()
     }
-    else if(items.sublevel==items.data.length)
+    else if(items.sublevel == items.data.length)
     {
         items.timer.start()
         items.bonus.good("smiley")
@@ -152,13 +144,13 @@ function checkAnswer(row){
 }
 
 function sync(array,level){
-    items.levelArr=array
+    items.levelArr = array
     console.log("level "+level+"  "+array[level])
 }
 
 function check(operator,array){
     for (var i in array){
-        if(array[i]==operator ){
+        if(array[i]== operator ){
             return true
         }
     }
@@ -167,7 +159,7 @@ function check(operator,array){
 
 function configDone(array){
     for(var i in array){
-        if(array[i].length==0){
+        if(array[i].length == 0){
             return false
         }
     }
@@ -175,12 +167,12 @@ function configDone(array){
 }
 
 
-function equal(levelOperators,array){
-    for(var i in levelOperators){
-        var found=0
-        for(var j in array){
-            if(levelOperators[i]==array[j])
-                found=1
+function equal(levelOperators,array) {
+    for(var i in levelOperators) {
+        var found = false
+        for(var j in array) {
+            if(levelOperators[i] == array[j])
+                found = true
         }
         if(!found)
             return false
@@ -188,20 +180,20 @@ function equal(levelOperators,array){
     return true
 }
 
-function buidDataset(data,levelSchema){
-    var level=[]
-    var levelArr=items.mode=='builtin' ? defaultOperators : items.levelArr
-    var noOfOperators=levelArr[currentLevel].length
+function buidDataset(data,levelSchema) {
+    var level = []
+    var levelArr = items.mode == 'builtin' ? defaultOperators : items.levelArr
+    var noOfOperators = levelArr[currentLevel].length
     var questions
-    for(var j in data[noOfOperators-1]){
-        if(equal(levelArr[currentLevel],data[noOfOperators-1][j][0])){
-            questions=data[noOfOperators-1][j][1]
+    for(var j in data[noOfOperators-1]) {
+        if(equal(levelArr[currentLevel],data[noOfOperators-1][j][0])) {
+            questions = data[noOfOperators-1][j][1]
             break
         }
     }
-    var questions=Core.shuffle(questions)
+    var questions = Core.shuffle(questions)
 
-    for(var m=0;m<levelSchema[currentLevel];m++){
+    for(var m = 0;m<levelSchema[currentLevel];m++) {
         level.push(questions[m])
     }
     return level

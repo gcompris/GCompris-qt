@@ -27,7 +27,7 @@ import "guesscount-summer.js" as Activity
 
 Row {
     id: operatorRow
-    spacing: 40
+    spacing: 30
     property string mode
     property var operators
     property int level
@@ -45,7 +45,7 @@ Row {
         }
     }
     Repeater {
-        model:  mode=="builtin" ? Activity.defaultOperators[level] : operators[level]
+        model:  mode == "builtin" ? Activity.defaultOperators[level] : operators[level]
         delegate: DragTile{
             id: root
             type: "operators"

@@ -22,13 +22,12 @@
 
 import QtQuick 2.1
 import "../../core"
-import "guesscount-summer.js" as Activity
 
 Row {
     id: operandRow
     property alias repeater: repeater
     property int rowSum
-    spacing: 40
+    spacing: 20
     Rectangle {
         id: operands
         width: parent.width*0.328;
@@ -45,7 +44,7 @@ Row {
 
     Repeater {
         id: repeater
-        delegate: DragTile{
+        delegate: DragTile {
             id: root
             type: "operands"
             width: operandRow.width*0.1
