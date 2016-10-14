@@ -20,6 +20,7 @@
 */
 
 import QtQuick 2.1
+import QtQuick.Controls 1.4
 import GCompris 1.0
 
 import "../../core"
@@ -88,6 +89,10 @@ ActivityBase {
             id: categoryReview
         }
         
+        ExclusiveGroup {
+            id: configOptions
+        }
+        
         DialogActivityConfig {
             id: dialogActivityConfig
             content:Component{
@@ -98,18 +103,17 @@ ActivityBase {
                     property alias easyModeBox: easyModeBox
                     property alias mediumModeBox: mediumModeBox
                     property alias expertModeBox: expertModeBox
-                    
+
                     GCDialogCheckBox {
                         id: easyModeBox
                         width: 250 * ApplicationInfo.ratio
                         text: qsTr("Easy mode")
                         checked: (items.mode == "easy") ? true : false
+                        exclusiveGroup: configOptions
                         onCheckedChanged: {
                                 if(easyModeBox.checked){
                                 items.mode = "easy"
                                 print("Mode: ",items.mode)
-                                mediumModeBox.checked = false
-                                expertModeBox.checked = false
                                 menuScreen.iAmReady.visible = false
                                 }
                         }
@@ -120,12 +124,11 @@ ActivityBase {
                         width: 250 * ApplicationInfo.ratio
                         text: qsTr("Medium mode")
                         checked: (items.mode == "medium") ? true : false
+                        exclusiveGroup: configOptions
                         onCheckedChanged: {
                             if(mediumModeBox.checked){
                                 items.mode = "medium"
                                 print("Mode: ",items.mode)
-                                easyModeBox.checked = false;
-                                expertModeBox.checked = false
                                 menuScreen.iAmReady.visible = false
                         }
                     }
@@ -136,12 +139,11 @@ ActivityBase {
                         width: 250 * ApplicationInfo.ratio
                         text: qsTr("Expert mode")
                         checked: (items.mode == "expert") ? true : false
+                        exclusiveGroup: configOptions
                         onCheckedChanged: {
                             if(expertModeBox.checked){
                                 items.mode = "expert"
                                 print("Mode: ",items.mode)
-                                easyModeBox.checked = false
-                                mediumModeBox.checked = false
                                 menuScreen.iAmReady.visible = true
                         }
                         }

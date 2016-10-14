@@ -132,7 +132,7 @@ function storeCategoriesLevels(index_) {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.categoryReview.score.currentSubLevel = 0;
-    inCategory(index);
+    getCategoryLevels(index);
     numberOfLevel = items.details.length;
     items.categoryReview.start();
     items.menuScreen.stop()
@@ -144,7 +144,7 @@ function nextLevel() {
     }
     items.categoryReview.score.currentSubLevel = 0
     initLevel(index);
-    inCategory();
+    getCategoryLevels();
 }
 
 function previousLevel() {
@@ -152,7 +152,7 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel(index);
-    inCategory();
+    getCategoryLevels();
 }
 
 // Checks if all the items are dragged and dropped in the correct or incorrect area.
@@ -173,10 +173,11 @@ function allPlaced() {
 }
 
 // Save properties to lessons
-function inCategory() {
+function getCategoryLevels() {
     var randomGood = 0; var randomBad = 0;
     var selectedCategory = Math.floor(Math.random() * lessons.length)
   
+    /* If easy or medium mode is selected, store the details of levels of category of that respective index in items.details. */
     if(!(items.mode == "expert")) {
     items.details = lessons[index].map(function(ele) {
         return { "tags": ele.tags , "instructions": ele.instructions,  "image": ele.image,
@@ -193,19 +194,23 @@ function inCategory() {
               "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad, "categoryImages": ele.levelImages ,"prefix": ele.prefix }
     }); 
   }
-  
+ 
+ // imagesPrefix stores the prefix of images in categoryx_0.qml
   var imagesPrefix = items.details[items.bar.level - 1].prefix
   var imagesDetails = {}
+  // Adds prefix to the image paths stored in items.details
   Object.keys(items.details[items.bar.level - 1].categoryImages[0]).map(function (k) 
   { 
       imagesDetails[imagesPrefix + k] = items.details[items.bar.level - 1].categoryImages[0][k]; 
   });
   
+    
+    // keys contains all the image paths. The good images are then filtered on the basis of the categoryTag 
     var keys = Object.keys(imagesDetails);
-    var b = items.details[items.bar.level - 1].tags;
+    var categoryTag = items.details[items.bar.level - 1].tags;
     var result = keys.filter(function(element) {
         var bool = imagesDetails[element].every( function (ele) {
-            return b.indexOf(ele) < 0;
+            return categoryTag.indexOf(ele) < 0;
         });
         return !bool;
     });
@@ -218,7 +223,7 @@ function inCategory() {
     });
     table = table.splice(0,numberOfGood);
     
-    // bad set of images
+    // remaining bad set of images filtered and stored
     var resultBad = keys.filter(function(i) {return result.indexOf(i) < 0;});
     var tableBad = resultBad.map(function(obj) {
         return {"src": obj, "isRight": false}
@@ -226,14 +231,15 @@ function inCategory() {
     var badvalidimages = resultBad.length;
     var numberofBad = Math.min(badvalidimages,items.details[items.bar.level-1].numberofBad);
     tableBad =tableBad.splice(0,numberofBad);
-    
+   
+    // Concat both the good and bad images, shuffles them and stores them in the repeater model
     table = table.concat(tableBad);
     Core.shuffle(table);
     items.categoryReview.repeater.model = table
     items.categoryReview.score.numberOfSubLevels = items.categoryReview.repeater.count
 }
 
-// get categories details from the complete dataset
+    // get categories details from the complete dataset
 function getCategoryModel(dataset) {
     var categories = []
     for (var c = 0; c < dataset.length; c++) {
