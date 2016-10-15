@@ -269,6 +269,7 @@ ActivityBase {
                           items.currentH) + ":" + Activity.get2CharValue(
                           items.currentM) + ":" + Activity.get2CharValue(
                           items.currentS)
+                font.pointSize: NaN
                 font.pixelSize: Math.max(clock.radius / 30, 1)
                 anchors {
                     verticalCenter: clock.verticalCenter
@@ -414,7 +415,6 @@ ActivityBase {
 
                 onReleased: {
                     Activity.selectedArrow = null
-
                     if (items.currentH === items.targetH
                             && items.currentM === items.targetM
                             && items.currentS === items.targetS) {
