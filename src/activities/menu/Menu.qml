@@ -181,10 +181,12 @@ ActivityBase {
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
         Keys.onPressed: {
-            if (event.modifiers === Qt.ControlModifier &&
-                    event.key === Qt.Key_S) {
-                // Ctrl+S toggle show / hide section
-                ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
+            // Ctrl-modifiers should never be handled by the search-field
+            if (event.modifiers === Qt.ControlModifier) {
+                if (event.key === Qt.Key_S) {
+                    // Ctrl+S toggle show / hide section
+                    ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
+                }
             } else if(currentTag === "search") {
                 // forward to the virtual keyboard the pressed keys
                 if(event.key == Qt.Key_Backspace)
@@ -542,6 +544,16 @@ ActivityBase {
                 }
             }
 
+            Connections {
+                target: activity
+                onCurrentTagChanged: {
+                    if (activity.currentTag === 'search') {
+                        searchTextField.focus = true;
+                    } else
+                        activity.focus = true;
+                }
+            }
+
             TextField {
                 id: searchTextField
                 width: parent.width
@@ -559,19 +571,24 @@ ActivityBase {
                 // an input-cursor:
                 activeFocusOnPress: true //ApplicationInfo.isMobile ? !ApplicationSettings.isVirtualKeyboard : true
 
-                Keys.onReturnPressed: if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
-                                          Qt.inputMethod.hide();
+                Keys.onReturnPressed: {
+                    if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
+                        Qt.inputMethod.hide();
+                    activity.focus = true;
+                }
 
-                onEditingFinished: if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
-                                       Qt.inputMethod.hide();
+                onEditingFinished: {
+                    if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
+                        Qt.inputMethod.hide();
+                    activity.focus = true;
+                }
 
                 style: TextFieldStyle {
                     placeholderTextColor: "black"
                 }
 
                 placeholderText: qsTr("Search specific activities")
-                onTextChanged:
-                    ActivityInfoTree.filterBySearch(searchTextField.text);
+                onTextChanged: ActivityInfoTree.filterBySearch(searchTextField.text);
             }
         }
 
