@@ -258,11 +258,11 @@ ActivityBase {
                     function selectCurrentItem() {
                         section.currentIndex = index
                         activity.currentTag = modelData.tag
+                        particles.burst(10)
                         if(modelData.tag === "search") {
                             ActivityInfoTree.filterBySearch(searchTextField.text);
                         }
                         else {
-                            particles.burst(10)
                             ActivityInfoTree.filterByTag(modelData.tag)
                             ActivityInfoTree.filterLockedActivities()
                             ActivityInfoTree.filterEnabledActivities()
@@ -526,6 +526,22 @@ ActivityBase {
                 GradientStop { position: 1.0; color: "#AAA" }
             }
 
+            Connections {
+                // On mobile with GCompris' virtual keyboard activated:
+                // Force invisibility of Androids virtual keyboard:
+                target: (ApplicationInfo.isMobile && activity.currentTag === "search"
+                         && ApplicationSettings.isVirtualKeyboard) ? Qt.inputMethod : null
+                onVisibleChanged: {
+                    if (ApplicationSettings.isVirtualKeyboard && visible)
+                        Qt.inputMethod.hide();
+                }
+                onAnimatingChanged: {
+                    // note: seems to be never fired!
+                    if (ApplicationSettings.isVirtualKeyboard && Qt.inputMethod.visible)
+                        Qt.inputMethod.hide();
+                }
+            }
+
             TextField {
                 id: searchTextField
                 width: parent.width
@@ -536,19 +552,26 @@ ActivityBase {
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 font.family: GCSingletonFontLoader.fontLoader.name
-                // Don't let the android keyboard interfere with the virtual keyboard.
-                // Both of them should not be allowed to work simultaneously
-                activeFocusOnPress: ApplicationInfo.isMobile ? !ApplicationSettings.isVirtualKeyboard : true
+                inputMethodHints: Qt.ImhNoPredictiveText
+                // Note: we give focus to the textfield also in case
+                // isMobile && !ApplicationSettings.isVirtualKeyboard
+                // in conjunction with auto-hiding the inputMethod to always get
+                // an input-cursor:
+                activeFocusOnPress: true //ApplicationInfo.isMobile ? !ApplicationSettings.isVirtualKeyboard : true
+
+                Keys.onReturnPressed: if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
+                                          Qt.inputMethod.hide();
+
+                onEditingFinished: if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
+                                       Qt.inputMethod.hide();
 
                 style: TextFieldStyle {
                     placeholderTextColor: "black"
                 }
 
                 placeholderText: qsTr("Search specific activities")
-                onTextChanged: {
-                    activity.inputText = searchTextField.text
+                onTextChanged:
                     ActivityInfoTree.filterBySearch(searchTextField.text);
-                }
             }
         }
 
@@ -660,8 +683,7 @@ ActivityBase {
                 ActivityInfoTree.filterByTag(activity.currentTag)
                 ActivityInfoTree.filterLockedActivities()
                 ActivityInfoTree.filterEnabledActivities()
-            }
-            else
+            } else
                 ActivityInfoTree.filterBySearch(activity.inputText);
             home()
         }
