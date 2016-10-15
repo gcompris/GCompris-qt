@@ -324,7 +324,7 @@ Item {
             spacing: keyboard.rowSpacing
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom
-            interactive: true
+            interactive: false
 
             model: rowListModel
 
