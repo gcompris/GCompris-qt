@@ -31,6 +31,7 @@ Row {
     property string mode
     property var operators
     property int level
+    property alias repeater: repeater
     Rectangle {
         id: operator
         width: parent.width*0.328
@@ -45,6 +46,7 @@ Row {
         }
     }
     Repeater {
+        id: repeater
         model:  mode == "builtin" ? Activity.defaultOperators[level] : operators[level]
         delegate: DragTile{
             id: root

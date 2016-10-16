@@ -1,4 +1,4 @@
-/* GCompris - guesscount-summer.qml
+ /* GCompris - guesscount-summer.qml
  *
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
@@ -59,7 +59,6 @@ ActivityBase {
             property bool solved
             property bool levelchanged: false
             property var levelArr
-            property alias operators: items.levelArr
             property string mode
             property int currentlevel
         }
@@ -157,7 +156,7 @@ ActivityBase {
                 width: parent.width
                 height: parent.height/10
                 mode: items.mode
-                operators: items.operators
+                operators: items.levelArr
                 level: items.currentlevel
             }
             OperandRow {
@@ -167,19 +166,24 @@ ActivityBase {
             }
             Repeater {
                 id: repeat
-                model: items.operators[items.currentlevel].length
+                model: operandRow.repeater.model.length-1
                 delegate: OperationRow {
                     id: operationRow
                     width: background.width
                     height: background.height/10
                     property alias operationRow: operationRow
-                    noOfRows: items.operators[items.currentlevel].length
+                    noOfRows: operatorRow.repeater.model.length-1
                     rowNo: modelData
                     guesscount: items.result
                     prevResult: modelData ? repeat.itemAt(modelData-1).rowResult : -1
                     prevComplete: modelData ? repeat.itemAt(modelData-1).complete : false
                     reparent: items.solved || items.levelchanged
+                    Component.onCompleted: {
+                        repeat.model= Qt.binding(function(){ return operatorRow.repeater.model.length })
+                        operationRow.noOfRows=Qt.binding(function(){ return operatorRow.repeater.model.length })
+                    }
                 }
+
             }
         }
 
@@ -199,12 +203,17 @@ ActivityBase {
                         { "text": qsTr("BuiltIn"), "value": "builtin" }
                     ]
 
-                    Flow {
+                    Rectangle {
                         id: flow
-                        spacing: 5
                         width: dialogActivityConfig.width
+                        height: background.height
                         GCComboBox {
                             id: modeBox
+                            anchors {
+                                top: parent.top
+                                topMargin: 5
+                            }
+
                             model: availableModes
                             background: dialogActivityConfig
                             label: qsTr("Select your mode")
@@ -212,6 +221,10 @@ ActivityBase {
                         Row {
                             id: labels
                             spacing: 20
+                            anchors {
+                                top: modeBox.bottom
+                                topMargin: 5
+                            }
                             visible: modeBox.currentIndex == 0
                             Repeater {
                                 model: 2
@@ -236,11 +249,15 @@ ActivityBase {
                         Rectangle {
                             width: parent.width
                             color: "transparent"
-                            height: background.height/1.5
+                            height: parent.height/1.25-labels.height-modeBox.height
+                            anchors {
+                                top: labels.bottom
+                                topMargin: 5
+                            }
                             ListView {
                                 anchors.fill: parent
                                 visible: modeBox.currentIndex == 0
-                                spacing: 10
+                                spacing: 5
                                 model: Activity.numberOfLevel
                                 clip: true
                                 delegate: Admin {

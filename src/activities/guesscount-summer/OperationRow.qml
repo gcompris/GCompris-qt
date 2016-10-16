@@ -33,7 +33,7 @@ Row {
     property int rowNo
     property int guesscount
     property var prevResult
-    property bool complete: false
+    property bool complete
     property bool prevComplete
     property bool reparent
     Component {
@@ -53,7 +53,7 @@ Row {
                     operandRow.complete = true
                     if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                     {
-                        Activity.checkAnswer()
+                        Activity.checkAnswer(operandRow)
                     }
                 }
 
@@ -102,7 +102,7 @@ Row {
                 operandRow.complete = true
                 if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                 {
-                    Activity.checkAnswer()
+                    Activity.checkAnswer(operandRow)
                 }
             }
         }
@@ -165,6 +165,10 @@ Row {
             {
                 Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
                 operandRow.complete = true
+                if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
+                {
+                    Activity.checkAnswer(operandRow)
+                }
             }
         }
     }
