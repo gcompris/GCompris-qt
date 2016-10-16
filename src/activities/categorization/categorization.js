@@ -130,6 +130,8 @@ function storeCategoriesLevels(index_) {
 }
 
 function initLevel() {
+    if(items.mode == "easy")
+        items.instructionsChecked = true
     items.bar.level = currentLevel + 1
     items.categoryReview.score.currentSubLevel = 0;
     getCategoryLevels(index);
@@ -175,8 +177,7 @@ function allPlaced() {
 // Save properties to lessons
 function getCategoryLevels() {
     var randomGood = 0; var randomBad = 0;
-    var selectedCategory = Math.floor(Math.random() * lessons.length)
-  
+    
     /* If easy or medium mode is selected, store the details of levels of category of that respective index in items.details. */
     if(!(items.mode == "expert")) {
     items.details = lessons[index].map(function(ele) {
@@ -187,6 +188,7 @@ function getCategoryLevels() {
   
   // If expert mode is selected, select a random level (selectedLevel) from a random category (selectedCategory) 
   else if(items.mode == "expert") { 
+    var selectedCategory = Math.floor(Math.random() * lessons.length)
      var selectedLevel = []
       selectedLevel[0] = lessons[selectedCategory][Math.floor(Math.random() * lessons[selectedCategory].length)]
       items.details = selectedLevel.map(function(ele){

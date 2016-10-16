@@ -96,7 +96,7 @@ ActivityBase {
         DialogActivityConfig {
             id: dialogActivityConfig
             content:Component{
-                Flow {
+                Column {
                     spacing: 5
                     width: dialogActivityConfig.width
                     height: dialogActivityConfig.height

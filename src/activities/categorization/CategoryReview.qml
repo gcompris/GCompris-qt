@@ -32,6 +32,7 @@ Item {
     property alias score: score
     property alias imagesdataset: imagesdataset
     property alias categorydataset: categorydataset
+    property alias instructionBox: instructionBox
     property bool isDropped : true
     property bool leftAreaContainsDrag: false
     property bool rightAreaContainsDrag: false
@@ -46,12 +47,12 @@ Item {
         asynchronous: false
     }
     
-    Loader{
+    Loader {
         id: categorydataset
         asynchronous: false
     }
     
-    Image{
+    Image {
         id: categorybackground
         source: "qrc:/gcompris/src/activities/categorization/resource/background.svg"
         anchors.fill: parent
@@ -77,11 +78,6 @@ Item {
             opacity: 0.47
         }
         
-        Text {
-            id: text1deb
-            
-        }
-        
         Rectangle {
             id: middlescreen
             anchors.left: leftscreen.right
@@ -91,6 +87,26 @@ Item {
             height: parent.width  
         }
         
+        Rectangle {
+            id: instructionBox
+            anchors.left: score.right
+            anchors.right: categoryimage.left
+            anchors.leftMargin: 0.1 * parent.width
+            anchors.rightMargin: 0.03 * parent.width
+            color: "black"
+            opacity: items.instructionsChecked ? 0.85 : 0
+            z: 3
+            radius: 10
+            border.width: 2
+            width: horizontalLayout ? parent.width/5 : parent.width/3
+            height: horizontalLayout ? parent.height/6 : parent.height/5.6
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
+        }
+
         Flow {
             id: options
             y: instructions.height
@@ -98,7 +114,8 @@ Item {
             anchors{
                 left: leftscreen.right
                 right: rightscreen.left
-                top: instructions.bottom
+                top: parent.top
+                topMargin: 0.05 * parent.height
                 bottom: categorybackground.bottom
                 leftMargin: horizontalLayout ? 0.015 * middlescreen.width : 0.18 * middlescreen.width
             }
@@ -130,6 +147,7 @@ Item {
                         property real lastY 
                         
                         onPressed: {
+                            items.instructionsChecked = false
                             positionX = point1.x
                             positionY = point1.y
                         }
@@ -173,13 +191,13 @@ Item {
         GCText {
             id: instructions
             text: items.details ? items.details[bar.level - 1].instructions : ""
-            wrapMode: Text.Wrap
-            font.pixelSize: horizontalLayout ? middlescreen.width*0.05 : middlescreen.width * 0.068
             visible: items.instructionsChecked
-            anchors {
-                left: leftscreen.right
-                right:rightscreen.left
-            }
+            anchors.fill: instructionBox
+            fontSize: horizontalLayout ? regularSize : smallSize
+            wrapMode: Text.Wrap
+            z: 3
+            color: "white"
+            horizontalAlignment: Text.AlignHCenter
         }
         
         Image {
@@ -231,12 +249,14 @@ Item {
         
         Score {
             id: score
-            fontSize: 0.011 * parent.width
+            fontSize: horizontalLayout ? 0.013 * parent.width : 0.017 * parent.width
             visible: items.scoreChecked
+            height: horizontalLayout ? 0.1 * parent.height : 0.07 * parent.height
+            width: horizontalLayout ? 0.015 * parent.width : parent.width
             anchors {
                 top: parent.top
                 right: middlescreen.left
-                rightMargin: 0.7*leftscreen.width
+                rightMargin: horizontalLayout ? 0.2 * parent.width : 0.15 * parent.width
                 left: parent.left
                 bottom: undefined
             }    
@@ -245,6 +265,14 @@ Item {
     
     Keys.onEscapePressed:{ Activity.launchMenuScreen();
     }
+
+    Keys.onReleased: {
+        if (event.key === Qt.Key_Back) {
+            event.accepted = true
+            Activity.launchMenuScreen()
+        }
+    }
+
     function stop() {
         if(items.mode == "expert")
             items.menuScreen.iAmReady.visible = true

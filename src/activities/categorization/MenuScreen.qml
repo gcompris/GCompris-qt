@@ -178,9 +178,8 @@ Image {
             }
             MouseArea {
                 anchors.fill: activityBackground
-                enabled: (items.mode == "expert") ? false: true
+                enabled: menuScreen.started
                 onClicked: selectCurrentItem()
-                
             }
             
             function selectCurrentItem() {
