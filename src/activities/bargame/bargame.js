@@ -24,16 +24,15 @@
 .import QtQuick 2.0 as Quick
 
 var numberBalls = [[1, 4], [2, 6], [3, 6]]
-var boardSize = [15, 19, 29]
 var sampleBallsNumber = [4, 6, 6]
 var tuxPositionFactor = [1.05, 1.4, 1.05]
 var ballSizeFactor = [0, 4, 4]
 var elementSizeFactor = [0, 4, 7]
+var boardSize = [15, 19, 29]
 var moveCount = -1
 var level = 1
 var maxlevel = 4
-var sublevel = 1
-var numberOfSublevel = 3
+var numberOfsublevel = 3
 var listWin = false
 var items
 var numberOfBalls = 1
@@ -49,7 +48,19 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = level
+    calculateWinPlaces();
+    items.tuxArea.enabled = true;
+    items.tuxArea.hoverEnabled = true;
+    moveCount = -1;
+    items.numberLabel.text = "1";
+    numberOfBalls = 1;
+
+    items.bar.level = level;
+
+    // Hiding all visible balls
+    for (var x = 0; x < items.answerBallsPlacement.columns; x++) {
+        items.answerBallsPlacement.children[x].opacity = 0.0;
+    }
 }
 
 function nextLevel() {
@@ -57,8 +68,6 @@ function nextLevel() {
     if (level > 4) {
         level = 1;
     }
-
-    reSetup();
     initLevel();
 }
 
@@ -67,9 +76,6 @@ function previousLevel() {
     if (level < 1) {
         level = 4;
     }
-    sublevel = 1;
-
-    reSetup();
     initLevel();
 }
 
@@ -79,15 +85,15 @@ function calculateWinPlaces() {
     moves for the computer */
     var winners = [];
     var winnersList = [];
-    var min = numberBalls[sublevel - 1][0];
-    var max = numberBalls[sublevel - 1][1];
+    var min = numberBalls[items.mode - 1][0];
+    var max = numberBalls[items.mode - 1][1];
     var period = (min + max);
 
     for (var x = 0; x < min; x++) {
-        winnersList.push((boardSize[sublevel - 1] - 1 - x) % period);
+        winnersList.push((boardSize[items.mode - 1] - 1 - x) % period);
     }
 
-    for (var x = 0; x < (boardSize[sublevel - 1]); x++ ) {
+    for (var x = 0; x < (boardSize[items.mode - 1]); x++ ) {
         if (winnersList.indexOf((x + 1) % period) >= 0) {
             winners.push(x);
         }
@@ -119,7 +125,7 @@ function machinePlay() {
 
     var playable = [];
 
-    for (var x = numberBalls[sublevel - 1][0]; x < numberBalls[sublevel - 1][1] + 1; x++) {
+    for (var x = numberBalls[items.mode - 1][0]; x < numberBalls[items.mode - 1][1] + 1; x++) {
         if (accessible(x)) {
             playable.push(x);
         }
@@ -127,7 +133,7 @@ function machinePlay() {
     if (playable.length != 0) {
         var value = playable[Math.floor(Math.random()*playable.length)];
     } else {
-        var value = randomNumber(numberBalls[sublevel - 1][0], numberBalls[sublevel - 1][1]);
+        var value = randomNumber(numberBalls[items.mode - 1][0], numberBalls[items.mode - 1][1]);
     }
 
     play(2, value);
@@ -136,7 +142,7 @@ function machinePlay() {
 function play(player, value) {
     for (var x = 0; x < value ; x++) {
         moveCount++;
-        if (moveCount <= (boardSize[sublevel - 1] - 1)) {
+        if (moveCount <= (boardSize[items.mode - 1] - 1)) {
             if (player == 1) {
                 items.answerBallsPlacement.children[moveCount].opacity = 1.0;
                 items.answerBallsPlacement.children[moveCount].source = url + "green_ball.svg";
@@ -145,21 +151,13 @@ function play(player, value) {
                 items.answerBallsPlacement.children[moveCount].source = url + "blue_ball.svg";
             }
         }
-        if (moveCount == (boardSize[sublevel - 1] - 1)) {
-            // Sublevel increment
-            sublevel++;
-            if (sublevel > numberOfSublevel) {
-                sublevel = 1;
-                level++;
-                if (level > maxlevel) {
-                    level = maxlevel;
-                    sublevel = 1;
-                }
-            }
+        if (moveCount == (boardSize[items.mode - 1] - 1)) {
             if (player == 2) {
                 items.bonus.good("flower");
+                items.score++;
             } else {
                 items.bonus.bad("flower");
+                items.score--;
             }
             return;
         }
@@ -168,42 +166,3 @@ function play(player, value) {
         machinePlay();
     }
 }
-
-// Refreshes the scene
-function reSetup() {
-    calculateWinPlaces();
-    items.tuxArea.enabled = true;
-    items.tuxArea.hoverEnabled = true;
-    moveCount = -1;
-    items.numberLabel.text = "1";
-    numberOfBalls = 1;
-
-    initLevel();
-
-    // Tux refresh
-    items.tux.source = url + "tux" + level + ".svg";
-    items.tux.y = items.rootWindow.height - items.rootWindow.height / 1.8;
-    items.tux.x = items.rootWindow.width - items.rootWindow.width / tuxPositionFactor[sublevel - 1];
-
-    // Blue sample balls refresh
-    items.blueBalls.columns = sampleBallsNumber[sublevel - 1];
-
-    // Green sample balls refresh
-    items.greenBalls.columns = sampleBallsNumber[sublevel - 1];
-
-    // Box setup refresh
-    items.boxes.columns = boardSize[sublevel-1];
-
-    // Mask setup refresh
-    items.masks.columns = boardSize[sublevel-1];
-
-    // Hiding all visible balls
-    for (var x = 0; x < items.answerBallsPlacement.columns; x++) {
-        items.answerBallsPlacement.children[x].opacity = 0.0;
-    }
-    items.answerBallsPlacement.columns = boardSize[sublevel-1]
-
-    // Resetting ball plate
-    items.rootWindow.source = url + "school_bg" + level + ".svg"
-}
-

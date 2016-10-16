@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: rootWindow
-        source: Activity.url + "school_bg" + Activity.level + ".svg"
+        source: Activity.url + "school_bg" + bar.level + ".svg"
         sourceSize.height: parent.height
         sourceSize.width: parent.width
         anchors.fill: parent
@@ -41,6 +41,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -62,6 +63,8 @@ ActivityBase {
             property alias answerBalls: answerBalls
             property alias bar: bar
             property alias bonus: bonus
+            property int mode: 1
+            property int score: 0
         }
 
         onStart: {
@@ -73,11 +76,11 @@ ActivityBase {
         // Tux image
         Image {
             id: tux
-            source: Activity.url + "tux" + Activity.level + ".svg"
+            source: Activity.url + "tux" + bar.level + ".svg"
             height: rootWindow.height / 3.8
             width: rootWindow.width / 8
             y: rootWindow.height - rootWindow.height / 1.8
-            x: rootWindow.width - rootWindow.width / Activity.tuxPositionFactor[sublevel - 1];
+            x: rootWindow.width - rootWindow.width / Activity.tuxPositionFactor[items.mode - 1];
             MouseArea {
                 id: tuxArea
                 hoverEnabled: true
@@ -99,39 +102,40 @@ ActivityBase {
             }
         }
 
-
-        // Upper blue balls sample
-        Grid {
-            id: blueBalls
-            columns: 4
-            rows: 1
-            x: rootWindow.width / 2.2
-            y: rootWindow.height / 1.7
-            Repeater {
-                model: blueBalls.columns
-                Image {
-                    id: blueBall
-                    source: Activity.url + "blue_ball.svg"
-                    height: rootWindow.height / (8 + Activity.ballSizeFactor[Activity.sublevel - 1])
-                    width: rootWindow.width / (15 + Activity.ballSizeFactor[Activity.sublevel - 1])
+        Item {
+            // Upper blue balls sample
+            Grid {
+                id: blueBalls
+                columns: Activity.sampleBallsNumber[items.mode - 1]
+                rows: 1
+                x: rootWindow.width / 2.2
+                y: rootWindow.height / 1.7
+                Repeater {
+                    model: blueBalls.columns
+                    Image {
+                        id: blueBall
+                        source: Activity.url + "blue_ball.svg"
+                        height: rootWindow.height / (8 + Activity.ballSizeFactor[items.mode - 1])
+                        width: rootWindow.width / (15 + Activity.ballSizeFactor[items.mode - 1])
+                    }
                 }
             }
-        }
 
-        // Lower green balls sample
-        Grid {
-            id: greenBalls
-            x: rootWindow.width / 2.2
-            y: rootWindow.height / 1.2
-            rows: 1
-            columns: 4
-            Repeater {
-                model: greenBalls.columns
-                Image {
-                    id: greenBall
-                    source: Activity.url + "green_ball.svg"
-                    height: rootWindow.height / (8 + Activity.ballSizeFactor[Activity.sublevel - 1])
-                    width: rootWindow.width / (15 + Activity.ballSizeFactor[Activity.sublevel - 1])
+            // Lower green balls sample
+            Grid {
+                id: greenBalls
+                x: rootWindow.width / 2.2
+                y: rootWindow.height / 1.2
+                rows: 1
+                columns: Activity.sampleBallsNumber[items.mode - 1]
+                Repeater {
+                    model: greenBalls.columns
+                    Image {
+                        id: greenBall
+                        source: Activity.url + "green_ball.svg"
+                        height: rootWindow.height / (8 + Activity.ballSizeFactor[items.mode - 1])
+                        width: rootWindow.width / (15 + Activity.ballSizeFactor[items.mode - 1])
+                    }
                 }
             }
         }
@@ -143,7 +147,7 @@ ActivityBase {
             Grid {
                 id: boxes
                 rows: 1
-                columns: 15
+                columns: Activity.boardSize[items.mode - 1]
                 x: 0
                 y: rootWindow.height / 1.4
                 Repeater {
@@ -152,8 +156,8 @@ ActivityBase {
                     Image {
                         id: greenCase
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
-                        height: rootWindow.height / (9 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
-                        width: rootWindow.width / (15 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
+                        height: rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
                         visible: true
                         // Numbering label
                         GCText {
@@ -178,14 +182,14 @@ ActivityBase {
                     id: answerBallsPlacement
                     x: boxes.x
                     y: boxes.y
-                    columns: 15
+                    columns: Activity.boardSize[items.mode - 1]
                     rows: 1
                     Repeater {
                         model: answerBallsPlacement.columns
                         Image {
                             source: Activity.url + "green_ball.svg"
-                            height: rootWindow.height / (9 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
-                            width: rootWindow.width / (15 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
+                            height: rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                            width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
                             opacity: 0.0
                         }
                     }
@@ -198,15 +202,15 @@ ActivityBase {
                 x: boxes.x
                 y: boxes.y
                 rows: 1
-                columns: 15
+                columns: Activity.boardSize[items.mode-1]
                 Repeater {
                     id: startMask
                     model: masks.columns
                     Image {
                         id: greenMask
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
-                        height: rootWindow.height / (9 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
-                        width: rootWindow.width / (15 + (Activity.sublevel - 1) * Activity.elementSizeFactor[Activity.sublevel - 1])
+                        height: rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
                     }
                 }
             }
@@ -219,7 +223,7 @@ ActivityBase {
             y: rootWindow.height / 2.4
             width: rootWindow.width / 20
             height: width
-            source: Activity.url + "ok.svg"
+            source: Activity.url + "bar_ok.svg"
             MouseArea {
                 id: okArea
                 anchors.fill: parent
@@ -228,7 +232,7 @@ ActivityBase {
                     tuxArea.hoverEnabled = false;
                     tuxArea.enabled = false;
                     var value = Activity.numberOfBalls
-                    numberLabel.text = Activity.numberOfBalls = Activity.numberBalls[Activity.sublevel - 1][0];
+                    numberLabel.text = Activity.numberOfBalls = Activity.numberBalls[items.mode - 1][0];
                     Activity.play(1, value);
                 }
             }
@@ -239,12 +243,6 @@ ActivityBase {
                     target: playLabel
                     scale: 1.2
                 }
-            }
-            GCText {
-                text: qsTr("OK")
-                fontSizeMode: smallSize
-                color: 'white'
-                anchors.centerIn: playLabel
             }
         }
 
@@ -263,8 +261,8 @@ ActivityBase {
                 onClicked: {
                     parent.source = Activity.url + "enumerate_answer_focus.svg";
                     Activity.numberOfBalls ++;
-                    if (Activity.numberOfBalls > Activity.numberBalls[Activity.sublevel - 1 ][1]) {
-                        Activity.numberOfBalls = Activity.numberBalls[Activity.sublevel - 1 ][0];
+                    if (Activity.numberOfBalls > Activity.numberBalls[items.mode - 1 ][1]) {
+                        Activity.numberOfBalls = Activity.numberBalls[items.mode - 1 ][0];
                     }
                     numberLabel.text = Activity.numberOfBalls;
                 }
@@ -307,23 +305,91 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+
+                    property var availableModes: [
+                        { "text": qsTr("Easy"), "value": 1 },
+                        { "text": qsTr("Medium"), "value": 2 },
+                        { "text": qsTr("Difficult"), "value": 3 }
+                    ]
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: modeBox
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select your mode")
+                        }
+                    }
+                }
+            }
+            onClose: {
+                Activity.initLevel();
+                home();
+            }
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    items.mode = dataToSave["mode"];
+                    Activity.initLevel();
+                }
+            }
+            onSaveData: {
+                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                if (newMode !== items.mode) {
+                    items.mode = newMode;
+                    dataToSave = {"mode": items.mode};
+                }
+            }
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                // Set default values
+                dialogActivityConfig.setDefaultValues();
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
             id: bonus
             Component.onCompleted: {
-                win.connect(Activity.reSetup)
-                loose.connect(Activity.reSetup)
+                win.connect(Activity.initLevel)
+                loose.connect(Activity.initLevel)
             }
+        }
+
+        Score {
+            id: score
+            message: "Score: " + items.score
+            anchors.top: parent.top
+            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: undefined
         }
     }
 }
