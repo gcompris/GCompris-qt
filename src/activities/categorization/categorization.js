@@ -132,6 +132,8 @@ function storeCategoriesLevels(index_) {
 function initLevel() {
     if(items.mode == "easy")
         items.instructionsChecked = true
+    else
+        items.instructionsChecked = false
     items.bar.level = currentLevel + 1
     items.categoryReview.score.currentSubLevel = 0;
     getCategoryLevels(index);

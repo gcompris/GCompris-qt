@@ -60,7 +60,7 @@ Item {
         
         Rectangle {
             id: leftscreen
-            width: horizontalLayout ? parent.width/3 : parent.width/3.5
+            width: parent.width/3
             height: parent.height
             anchors.left: parent.left
             color: leftAreaContainsDrag ? "#9933FF" : "red"
@@ -69,7 +69,7 @@ Item {
         
         Rectangle {
             id: rightscreen      
-            width: horizontalLayout ? parent.width/3.2 : parent.width/3.5
+            width: parent.width/3.2
             height: parent.width
             anchors.right: parent.right
             anchors.bottom: categorybackground.bottom
@@ -99,7 +99,7 @@ Item {
             radius: 10
             border.width: 2
             width: horizontalLayout ? parent.width/5 : parent.width/3
-            height: horizontalLayout ? parent.height/6 : parent.height/5.6
+            height: horizontalLayout ? parent.height/6 : parent.height * 0.09
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#000" }
                 GradientStop { position: 0.9; color: "#666" }
@@ -110,14 +110,14 @@ Item {
         Flow {
             id: options
             y: instructions.height
-            spacing: horizontalLayout ? 0.012 * middlescreen.width : 0.05 * middlescreen.width
+            spacing: 0.012 * middlescreen.width
             anchors{
                 left: leftscreen.right
                 right: rightscreen.left
                 top: parent.top
                 topMargin: 0.05 * parent.height
                 bottom: categorybackground.bottom
-                leftMargin: horizontalLayout ? 0.015 * middlescreen.width : 0.18 * middlescreen.width
+                leftMargin: 0.015 * middlescreen.width
             }
             
             Repeater {
@@ -126,7 +126,7 @@ Item {
                 Item {
                     id: item
                     width: middlescreen.width*0.32
-                    height: horizontalLayout ? categorybackground.height * 0.2 : categorybackground.height * 0.12
+                    height: categorybackground.height * 0.2
                     opacity: 1
                     
                     Image {
@@ -193,7 +193,8 @@ Item {
             text: items.details ? items.details[bar.level - 1].instructions : ""
             visible: items.instructionsChecked
             anchors.fill: instructionBox
-            fontSize: horizontalLayout ? regularSize : smallSize
+            anchors.bottom: instructionBox.bottom
+            font.pixelSize: horizontalLayout ? 0.039 * parent.height : 0.016 * parent.height
             wrapMode: Text.Wrap
             z: 3
             color: "white"
@@ -249,9 +250,9 @@ Item {
         
         Score {
             id: score
-            fontSize: horizontalLayout ? 0.013 * parent.width : 0.017 * parent.width
+            fontSize: horizontalLayout ? 0.013 * parent.width : 0.02 * parent.width
             visible: items.scoreChecked
-            height: horizontalLayout ? 0.1 * parent.height : 0.07 * parent.height
+            height: horizontalLayout ? 0.1 * parent.height : 0.06 * parent.height
             width: horizontalLayout ? 0.015 * parent.width : parent.width
             anchors {
                 top: parent.top
