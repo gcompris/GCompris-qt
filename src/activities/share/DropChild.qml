@@ -154,7 +154,6 @@ Rectangle {
                             candyArea.lastY = candyArea.y
                             //move this rectangle/grid on top of everything
                             dropChild.z++
-                            grid.z++
                         }
 
                         function childContainsCandy(currentChild, candy) {
@@ -169,7 +168,6 @@ Rectangle {
                         onReleased: {
                             //move this rectangle/grid to its previous state
                             dropChild.z--
-                            grid.z--
 
                             var candyCoordinate = candyArea.parent.mapToItem(background, candyArea.x, candyArea.y)
 
