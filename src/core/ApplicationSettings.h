@@ -79,8 +79,12 @@ class ApplicationSettings : public QObject
     /**
      * Whether audio effects should be enabled.
      */
-	Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
+    Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
 
+    /** Whether background music should be enabled.
+     */
+    Q_PROPERTY(bool isBackgroundMusicEnabled READ isBackgroundMusicEnabled WRITE setIsBackgroundMusicEnabled NOTIFY backgroundMusicEnabledChanged)
+    
 	/**
 	 * Whether GCompris should run in fullscreen mode.
 	 */
@@ -198,6 +202,11 @@ class ApplicationSettings : public QObject
      * The name of the default wordset to use. If empty then the internal sample wordset is used.
      */
     Q_PROPERTY(QString wordset READ wordset WRITE setWordset NOTIFY wordsetChanged)
+    
+    /**
+     * The name of background music to use. If empty then no music is played.
+     */
+    Q_PROPERTY(QString backgroundMusic READ backgroundMusic WRITE setBackgroundMusic NOTIFY backgroundMusicChanged)
 
     /**
      * Current base font-size used for font scaling.
@@ -276,6 +285,12 @@ public:
 	void setIsAudioEffectsEnabled(const bool newMode) {
 		m_isAudioEffectsEnabled = newMode;
 		emit audioEffectsEnabledChanged();
+    }
+   
+    bool isBackgroundMusicEnabled() const { return m_isBackgroundMusicEnabled; }
+    void setIsBackgroundMusicEnabled(const bool newMode) {
+      m_isBackgroundMusicEnabled = newMode;
+      emit backgroundMusicEnabledChanged();
     }
 
     bool isFullscreen() const { return m_isFullscreen; }
@@ -413,6 +428,12 @@ public:
         m_wordset = newWordset;
         emit wordsetChanged();
     }
+    
+    QString backgroundMusic() const { return m_backgroundMusic; }
+    void setBackgroundMusic(const QString newBackgroundMusic) {
+        m_backgroundMusic = newBackgroundMusic;
+        emit backgroundMusicChanged();
+    }
 
     QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString newDownloadServerUrl) {
@@ -452,6 +473,7 @@ protected slots:
     Q_INVOKABLE void notifyShowLockedActivitiesChanged();
     Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
     Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
+    Q_INVOKABLE void notifyBackgroundMusicEnabledChanged();
     Q_INVOKABLE void notifyFullscreenChanged();
     Q_INVOKABLE void notifyPreviousHeightChanged();
     Q_INVOKABLE void notifyPreviousWidthChanged();
@@ -469,6 +491,7 @@ protected slots:
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
     Q_INVOKABLE void notifyWordsetChanged();
+    Q_INVOKABLE void notifyBackgroundMusicChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
@@ -520,6 +543,7 @@ signals:
     void showLockedActivitiesChanged();
     void audioVoicesEnabledChanged();
     void audioEffectsEnabledChanged();
+    void backgroundMusicEnabledChanged();
     void fullscreenChanged();
     void previousHeightChanged();
     void previousWidthChanged();
@@ -537,6 +561,7 @@ signals:
     void kioskModeChanged();
     void sectionVisibleChanged();
     void wordsetChanged();
+    void backgroundMusicChanged();
     void baseFontSizeChanged();
 
     void downloadServerUrlChanged();
@@ -557,6 +582,7 @@ private:
     bool m_showLockedActivities;
     bool m_isAudioVoicesEnabled;
     bool m_isAudioEffectsEnabled;
+    bool m_isBackgroundMusicEnabled;
     bool m_isFullscreen;
     quint32 m_previousHeight;
     quint32 m_previousWidth;
@@ -577,6 +603,7 @@ private:
     bool m_isKioskMode;
     bool m_sectionVisible;
     QString m_wordset;
+    QString m_backgroundMusic;
     int m_baseFontSize;
     const int m_baseFontSizeMin;
     const int m_baseFontSizeMax;

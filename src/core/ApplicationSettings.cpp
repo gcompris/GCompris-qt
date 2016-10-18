@@ -55,6 +55,7 @@ static const QString PREVIOUS_WIDTH_KEY = "previousWidth";
 static const QString SHOW_LOCKED_ACTIVITIES_KEY = "showLockedActivities";
 static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
 static const QString ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
+static const QString ENABLE_BACKGROUND_MUSIC_KEY = "enableBackgroundMusic";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
 static const QString FONT_KEY = "font";
@@ -80,6 +81,7 @@ static const QString CODE_KEY = "key";
 static const QString KIOSK_KEY = "kiosk";
 static const QString SECTION_VISIBLE = "sectionVisible";
 static const QString WORDSET = "wordset";
+static const QString BACKGROUND_MUSIC = "backgroundMusic";
 
 static const QString PROGRESS_KEY = "progress";
 
@@ -98,6 +100,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_isAudioEffectsEnabled = m_config.value(ENABLE_AUDIO_EFFECTS_KEY, true).toBool();
+    m_isBackgroundMusicEnabled = m_config.value(ENABLE_BACKGROUND_MUSIC_KEY, true).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
     m_previousHeight = m_config.value(PREVIOUS_HEIGHT_KEY, screenSize.height()).toUInt();
     m_previousWidth = m_config.value(PREVIOUS_WIDTH_KEY, screenSize.width()).toUInt();
@@ -138,6 +141,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_showLockedActivities = m_config.value(SHOW_LOCKED_ACTIVITIES_KEY, m_isDemoMode).toBool();
     m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
     m_wordset = m_config.value(WORDSET, "").toString();
+    m_backgroundMusic = m_config.value(BACKGROUND_MUSIC, "").toString();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed()).toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
@@ -166,6 +170,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
 	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
 	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
+	 connect(this, &ApplicationSettings::backgroundMusicEnabledChanged, this, &ApplicationSettings::notifyBackgroundMusicEnabledChanged);
 	connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
     connect(this, &ApplicationSettings::previousHeightChanged, this, &ApplicationSettings::notifyPreviousHeightChanged);
     connect(this, &ApplicationSettings::previousWidthChanged, this, &ApplicationSettings::notifyPreviousWidthChanged);
@@ -177,6 +182,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::filterLevelMaxChanged, this, &ApplicationSettings::notifyFilterLevelMaxChanged);
     connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
     connect(this, &ApplicationSettings::wordsetChanged, this, &ApplicationSettings::notifyWordsetChanged);
+    connect(this, &ApplicationSettings::backgroundMusicChanged, this, &ApplicationSettings::notifyBackgroundMusicChanged);
     connect(this, &ApplicationSettings::demoModeChanged, this, &ApplicationSettings::notifyDemoModeChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
@@ -192,6 +198,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_config.setValue(SHOW_LOCKED_ACTIVITIES_KEY, m_showLockedActivities);
     m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
+    m_config.setValue(ENABLE_BACKGROUND_MUSIC_KEY, m_isBackgroundMusicEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
     m_config.setValue(FONT_KEY, m_font);
     m_config.setValue(IS_CURRENT_FONT_EMBEDDED, m_isEmbeddedFont);
@@ -207,6 +214,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
     m_config.setValue(WORDSET, m_wordset);
+    m_config.setValue(BACKGROUND_MUSIC, m_backgroundMusic);
     m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
     m_config.setValue(NO_CURSOR, m_noCursor);
     m_config.setValue(BASE_FONT_SIZE_KEY, m_baseFontSize);
@@ -246,6 +254,26 @@ void ApplicationSettings::notifyAudioEffectsEnabledChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUDIO_EFFECTS_KEY, m_isAudioEffectsEnabled);
 	qDebug() << "notifyAudioEffects: " << m_isAudioEffectsEnabled;
+}
+
+void ApplicationSettings::notifyBackgroundMusicEnabledChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_BACKGROUND_MUSIC_KEY, m_isBackgroundMusicEnabled);
+    qDebug() << "notifyBackgroundMusic: " << m_isBackgroundMusicEnabled;
+ }
+ 
+void ApplicationSettings::notifyBackgroundMusicChanged()
+{
+    if(!m_backgroundMusic.isEmpty() &&
+       DownloadManager::getInstance()->haveLocalResource(m_backgroundMusic) &&
+       !DownloadManager::getInstance()->isDataRegistered(QString("backgroundMusic-%1").arg(COMPRESSED_AUDIO))) {
+        // words.rcc is there -> register old file first
+        // then try to update in the background
+        DownloadManager::getInstance()->updateResource(m_backgroundMusic);
+    }
+
+    updateValueInConfig(GENERAL_GROUP_KEY, BACKGROUND_MUSIC, m_backgroundMusic);
+    qDebug() << "notifyBackgroundMusic: " << m_backgroundMusic;
 }
 
 void ApplicationSettings::notifyLocaleChanged()
@@ -311,7 +339,6 @@ void ApplicationSettings::setIsAutomaticDownloadsEnabled(const bool newIsAutomat
         emit automaticDownloadsEnabledChanged();
     }
 }
-
 void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);

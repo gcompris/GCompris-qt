@@ -396,7 +396,14 @@ protected slots:
      * @returns A list of fonts contained in the fonts resources.
      */
     Q_INVOKABLE QStringList getFontsFromRcc();
-
+    /**
+     * @returns A list of background music contained in the background music resources.
+     */
+    Q_INVOKABLE QStringList getBackgroundMusicFromRcc();
+    /**
+     * @returns Path to background music rcc
+     */
+    Q_INVOKABLE QString getBackgroundMusicPath();
     /**
      * Stores a screenshot in the passed @p file.
      *
@@ -431,6 +438,7 @@ private:
     // Symbols fonts that user can't see
     QStringList m_excludedFonts;
     QStringList m_fontsFromRcc;
+    QStringList m_backgroundMusicFromRcc;
 
     static QQuickWindow *m_window;
 };

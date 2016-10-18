@@ -211,6 +211,15 @@ Item {
                 isAudioEffectsEnabled = checked;
             }
         }
+        
+	GCDialogCheckBox {
+           id: enableBackgroundMusicBox
+            text: qsTr("Enable background music")
+            checked: isBackgroundMusicEnabled
+            onCheckedChanged: {
+                isBackgroundMusicEnabled = checked;
+            }
+        }
 
         GCDialogCheckBox {
             id: enableFullscreenBox
@@ -525,6 +534,7 @@ Item {
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
+    property bool isBackgroundMusicEnabled: ApplicationSettings.isBackgroundMusicEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
@@ -542,6 +552,10 @@ Item {
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
+        
+        isBackgroundMusicEnabled = ApplicationSettings.isBackgroundMusicEnabled
+        enableBackgroundMusicBox.checked = isBackgroundMusicEnabled
+
 
         isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
@@ -589,6 +603,7 @@ Item {
         ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
+        ApplicationSettings.isBackgroundMusicEnabled = isBackgroundMusicEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
@@ -687,6 +702,7 @@ Item {
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
+        (ApplicationSettings.isBackgroundMusicEnabled != isBackgroundMusicEnabled) ||
         (ApplicationSettings.isFullscreen != isFullscreen) ||
         (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
         (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||

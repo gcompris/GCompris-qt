@@ -47,12 +47,16 @@ Window {
     width: ApplicationSettings.previousWidth
     height: ApplicationSettings.previousHeight
     minimumWidth: 400 * ApplicationInfo.ratio
-    minimumHeight: 400 * ApplicationInfo.ratio
+    minimumHeight: 400 * ApplicationInfo.ratio 
     title: "GCompris"
-
+        
     /// @cond INTERNAL_DOCS
-
+    
     property var applicationState: Qt.application.state
+    property var selectedMusicIndex 
+    property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc();
+    property alias backgroundMusic: backgroundMusic
+    property bool isBackgroundMusicAllowed: ApplicationSettings.isBackgroundMusicEnabled
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
@@ -62,6 +66,16 @@ Window {
     }
 
     onClosing: Core.quit(main)
+   
+    onIsBackgroundMusicAllowedChanged: {
+        if(isBackgroundMusicAllowed) {
+            selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+            backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
+        }
+        else {
+            backgroundMusic.stop()
+        }
+    }
 
     GCAudio {
         id: audioVoices
@@ -84,29 +98,62 @@ Window {
         }
 
         Component.onCompleted: {
-            if(ApplicationSettings.isAudioEffectsEnabled)
-                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+            if(!ApplicationSettings.isAudioEffectsEnabled && isBackgroundMusicAllowed) {
+                 selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+                 backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
 
-            if (DownloadManager.areVoicesRegistered())
-                delayedWelcomeTimer.playWelcome();
-            else {
-                DownloadManager.voicesRegistered.connect(
-                        delayedWelcomeTimer.playWelcome);
-                delayedWelcomeTimer.start();
+            }
+
+           else if(ApplicationSettings.isAudioEffectsEnabled) {
+                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+                if (DownloadManager.areVoicesRegistered()) {
+                    delayedWelcomeTimer.playWelcome();
+                    delayedbackgroundMusic.start();
+                }
+                else {
+                    DownloadManager.voicesRegistered.connect(
+                    delayedWelcomeTimer.playWelcome);
+                    delayedWelcomeTimer.start();
+                    delayedbackgroundMusic.start();
+                }
             }
         }
     }
-
+    
+    Timer {
+        id: delayedbackgroundMusic
+        interval: 20000
+        repeat: false
+        
+        onTriggered: {
+            if(isBackgroundMusicAllowed && !DownloadManager.isDataRegistered(ApplicationInfo.getBackgroundMusicPath())){
+            checkBackgroundMusic()
+            }
+            selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+            backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/"+rccBackgroundMusic[selectedMusicIndex]));
+        }
+    }
+    
     GCAudio {
         id: audioEffects
         muted: !ApplicationSettings.isAudioEffectsEnabled
+    }
+    
+    GCAudio {
+        id: backgroundMusic
+        muted: !ApplicationSettings.isBackgroundMusicEnabled
+        
+        onDone: {
+            selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
+            backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
+        }
     }
 
     function playIntroVoice(name) {
         name = name.split("/")[0]
         audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
     }
-
+    
     function checkWordset() {
         var wordset = ApplicationSettings.wordset
         if(wordset == '')
@@ -145,11 +192,46 @@ Window {
                         },
                         qsTr("No"), null,
                         function() { pageView.currentItem.focus = true }
-            );
+           );
         }
     }
+
+    function checkBackgroundMusic() {
+        var music = ApplicationSettings.backgroundMusic
+        if(music == '') {
+            music = "data2/backgroundMusic/backgroundMusic-" + ApplicationInfo.CompressedAudio + ".rcc" 
+        }
+        // We have local music but it is not yet registered
+        else if(!DownloadManager.isDataRegistered("backgroundMusic") && DownloadManager.haveLocalResource(music)) {
+        // We have music and automatic download is enabled. Download the music and register it
+         if(DownloadManager.haveLocalResource(music) && (DownloadManager.updateResource(music)) && DownloadManager.downloadIsRunning()) {
+             ApplicationSettings.backgroundMusic = music
+             DownloadManager.registerResource(music)     
+             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+          }
+          else {                               
+            rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+            }
+        }
+        
+                else if(ApplicationSettings.backgroundMusic) {
+            Core.showMessageDialog(
+                        main,
+                        qsTr("The background music is not yet downloaded. ")
+                        + qsTr("Do you want to download them now?"),
+                        qsTr("Yes"),
+                        function() {
+                           if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) { 
+                                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                           }
+                        },
+                        qsTr("No"), null,
+                        function() { pageView.currentItem.focus = true }
+           );
+                }
+        }
     ChangeLog {
-       id: changelog
+      id: changelog
     }
 
     Component.onCompleted: {
@@ -173,8 +255,8 @@ Window {
                         + qsTr("Have Fun!")
                         + "\n"
                         + qsTr("Your current language is %1 (%2).")
-                          .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
-                          .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale))
+                        .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
+                        .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale))
                         + "\n"
                         + qsTr("Do you want to download the corresponding sound files now?"),
                         qsTr("Yes"),
@@ -211,7 +293,7 @@ Window {
             else {
                 checkWordset()
             }
-
+            
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 var dialog;
@@ -237,7 +319,7 @@ Window {
         anchors.fill: parent
         initialItem: {
             "item": "qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name,
-            "properties": {
+                    "properties": {
                 'audioVoices': audioVoices,
                 'audioEffects': audioEffects,
                 'loading': loading
@@ -362,6 +444,6 @@ Window {
             property Component replaceTransition: pushHTransition
         }
     }
-
+    
     /// @endcond
 }
