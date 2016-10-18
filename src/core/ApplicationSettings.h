@@ -202,6 +202,11 @@ class ApplicationSettings : public QObject
      * The name of the default wordset to use. If empty then the internal sample wordset is used.
      */
     Q_PROPERTY(QString wordset READ wordset WRITE setWordset NOTIFY wordsetChanged)
+    
+    /**
+     * The name of background music to use. If empty then no music is played.
+     */
+    Q_PROPERTY(QString backgroundMusic READ backgroundMusic WRITE setBackgroundMusic NOTIFY backgroundMusicChanged)
 
     /**
      * Current base font-size used for font scaling.
@@ -423,6 +428,12 @@ public:
         m_wordset = newWordset;
         emit wordsetChanged();
     }
+    
+    QString backgroundMusic() const { return m_backgroundMusic; }
+    void setBackgroundMusic(const QString newBackgroundMusic) {
+        m_backgroundMusic = newBackgroundMusic;
+        emit backgroundMusicChanged();
+    }
 
     QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString newDownloadServerUrl) {
@@ -480,6 +491,7 @@ protected slots:
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
     Q_INVOKABLE void notifyWordsetChanged();
+    Q_INVOKABLE void notifyBackgroundMusicChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
@@ -549,6 +561,7 @@ signals:
     void kioskModeChanged();
     void sectionVisibleChanged();
     void wordsetChanged();
+    void backgroundMusicChanged();
     void baseFontSizeChanged();
 
     void downloadServerUrlChanged();
@@ -590,6 +603,7 @@ private:
     bool m_isKioskMode;
     bool m_sectionVisible;
     QString m_wordset;
+    QString m_backgroundMusic;
     int m_baseFontSize;
     const int m_baseFontSizeMin;
     const int m_baseFontSizeMax;

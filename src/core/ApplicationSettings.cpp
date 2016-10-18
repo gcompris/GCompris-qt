@@ -81,6 +81,7 @@ static const QString CODE_KEY = "key";
 static const QString KIOSK_KEY = "kiosk";
 static const QString SECTION_VISIBLE = "sectionVisible";
 static const QString WORDSET = "wordset";
+static const QString BACKGROUND_MUSIC = "backgroundMusic";
 
 static const QString PROGRESS_KEY = "progress";
 
@@ -140,6 +141,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_showLockedActivities = m_config.value(SHOW_LOCKED_ACTIVITIES_KEY, m_isDemoMode).toBool();
     m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
     m_wordset = m_config.value(WORDSET, "").toString();
+    m_backgroundMusic = m_config.value(BACKGROUND_MUSIC, "").toString();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed()).toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
@@ -180,6 +182,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::filterLevelMaxChanged, this, &ApplicationSettings::notifyFilterLevelMaxChanged);
     connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
     connect(this, &ApplicationSettings::wordsetChanged, this, &ApplicationSettings::notifyWordsetChanged);
+    connect(this, &ApplicationSettings::backgroundMusicChanged, this, &ApplicationSettings::notifyBackgroundMusicChanged);
     connect(this, &ApplicationSettings::demoModeChanged, this, &ApplicationSettings::notifyDemoModeChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
@@ -211,6 +214,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
     m_config.setValue(WORDSET, m_wordset);
+    m_config.setValue(BACKGROUND_MUSIC, m_backgroundMusic);
     m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
     m_config.setValue(NO_CURSOR, m_noCursor);
     m_config.setValue(BASE_FONT_SIZE_KEY, m_baseFontSize);
@@ -257,6 +261,21 @@ void ApplicationSettings::notifyBackgroundMusicEnabledChanged()
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_BACKGROUND_MUSIC_KEY, m_isBackgroundMusicEnabled);
     qDebug() << "notifyBackgroundMusic: " << m_isBackgroundMusicEnabled;
  }
+ 
+void ApplicationSettings::notifyBackgroundMusicChanged()
+{
+    if(!m_backgroundMusic.isEmpty() &&
+       DownloadManager::getInstance()->haveLocalResource(m_backgroundMusic) &&
+       !DownloadManager::getInstance()->isDataRegistered(QString("backgroundMusic-%1").arg(COMPRESSED_AUDIO))) {
+        // words.rcc is there -> register old file first
+        // then try to update in the background
+        DownloadManager::getInstance()->updateResource(m_backgroundMusic);
+    }
+
+    updateValueInConfig(GENERAL_GROUP_KEY, BACKGROUND_MUSIC, m_backgroundMusic);
+    qDebug() << "notifyBackgroundMusic: " << m_backgroundMusic;
+}
+
 void ApplicationSettings::notifyLocaleChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, LOCALE_KEY, m_locale);

@@ -100,7 +100,7 @@ Window {
         Component.onCompleted: {
             if(!ApplicationSettings.isAudioEffectsEnabled && isBackgroundMusicAllowed) {
                  selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
-                backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
+                 backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
 
             }
 
@@ -196,11 +196,25 @@ Window {
         }
     }
 
-        function checkBackgroundMusic() {
-            if(DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources())) {
-                rccBackgroundMusic= ApplicationInfo.getBackgroundMusicFromRcc();
+    function checkBackgroundMusic() {
+        var music = ApplicationSettings.backgroundMusic
+        if(music == '') {
+            music = "data2/backgroundMusic/backgroundMusic-" + ApplicationInfo.CompressedAudio + ".rcc" 
+        }
+        // We have local music but it is not yet registered
+        else if(!DownloadManager.isDataRegistered("backgroundMusic") && DownloadManager.haveLocalResource(music)) {
+        // We have music and automatic download is enabled. Download the music and register it
+         if(DownloadManager.haveLocalResource(music) && (DownloadManager.updateResource(music)) && DownloadManager.downloadIsRunning()) {
+             ApplicationSettings.backgroundMusic = music
+             DownloadManager.registerResource(music)     
+             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+          }
+          else {                               
+            rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
             }
-                else {
+        }
+        
+                else if(ApplicationSettings.backgroundMusic) {
             Core.showMessageDialog(
                         main,
                         qsTr("The background music is not yet downloaded. ")
@@ -210,8 +224,6 @@ Window {
                            if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) { 
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                            }
-                           selectedMusicIndex = Math.floor(Math.random()*rccBackgroundMusic.length);
-                           backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[selectedMusicIndex]));
                         },
                         qsTr("No"), null,
                         function() { pageView.currentItem.focus = true }
@@ -310,7 +322,6 @@ Window {
                     "properties": {
                 'audioVoices': audioVoices,
                 'audioEffects': audioEffects,
-                'backgroundMusic':backgroundMusic,
                 'loading': loading
             }
         }
