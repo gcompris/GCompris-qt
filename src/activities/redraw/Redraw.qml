@@ -22,6 +22,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
+import QtQuick.Window 2.0
 
 import "../../core"
 import "redraw.js" as Activity
@@ -99,120 +100,127 @@ ActivityBase {
             spacing: 20
 
             // The color selector
-            Column {
-                id: colorSelector
-                Repeater {
-                    model: items.numberOfColor
-                    Item {
-                        width: 70 * ApplicationInfo.ratio
-                        height: width
-                        Image {
-                            id: img
-                            source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
-                            sourceSize.width: parent.width
-                            z: iAmSelected ? 10 : 1
+            Flickable{
+                interactive: true
+                width: 70 * ApplicationInfo.ratio
+                height: background.height
+                boundsBehavior: Flickable.StopAtBounds
+                contentHeight: items.numberOfColor * width
+                bottomMargin: bar.height
+                Column {
+                    id: colorSelector
+                    Repeater {
+                        model: items.numberOfColor
+                        Item {
+                            width: 70 * ApplicationInfo.ratio
+                            height: width
+                            Image {
+                                id: img
+                                source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
+                                sourceSize.width: parent.width
+                                z: iAmSelected ? 10 : 1
 
-                            property bool iAmSelected: modelData == items.colorSelector
+                                property bool iAmSelected: modelData == items.colorSelector
 
-                            states: [
-                                State {
-                                    name: "notclicked"
-                                    when: !img.iAmSelected && !mouseArea.containsMouse
-                                    PropertyChanges {
-                                        target: img
-                                        scale: 0.8
+                                states: [
+                                    State {
+                                        name: "notclicked"
+                                        when: !img.iAmSelected && !mouseArea.containsMouse
+                                        PropertyChanges {
+                                            target: img
+                                            scale: 0.8
+                                        }
+                                    },
+                                    State {
+                                        name: "clicked"
+                                        when: mouseArea.pressed
+                                        PropertyChanges {
+                                            target: img
+                                            scale: 0.7
+                                        }
+                                    },
+                                    State {
+                                        name: "hover"
+                                        when: mouseArea.containsMouse
+                                        PropertyChanges {
+                                            target: img
+                                            scale: 1.1
+                                        }
+                                    },
+                                    State {
+                                        name: "selected"
+                                        when: img.iAmSelected
+                                        PropertyChanges {
+                                            target: img
+                                            scale: 1
+                                        }
                                     }
-                                },
-                                State {
-                                    name: "clicked"
-                                    when: mouseArea.pressed
-                                    PropertyChanges {
+                                ]
+
+                                SequentialAnimation {
+                                    id: anim
+                                    running: img.iAmSelected
+                                    loops: Animation.Infinite
+                                    alwaysRunToEnd: true
+                                    NumberAnimation {
                                         target: img
-                                        scale: 0.7
+                                        property: "rotation"
+                                        from: 0; to: 10
+                                        duration: 200
+                                        easing.type: Easing.OutQuad
                                     }
-                                },
-                                State {
-                                    name: "hover"
-                                    when: mouseArea.containsMouse
-                                    PropertyChanges {
+                                    NumberAnimation {
                                         target: img
-                                        scale: 1.1
+                                        property: "rotation"
+                                        from: 10; to: -10
+                                        duration: 400
+                                        easing.type: Easing.InOutQuad
                                     }
-                                },
-                                State {
-                                    name: "selected"
-                                    when: img.iAmSelected
-                                    PropertyChanges {
+                                    NumberAnimation {
                                         target: img
-                                        scale: 1
+                                        property: "rotation"
+                                        from: -10; to: 0
+                                        duration: 200
+                                        easing.type: Easing.InQuad
                                     }
                                 }
-                            ]
 
-                            SequentialAnimation {
-                                id: anim
-                                running: img.iAmSelected
-                                loops: Animation.Infinite
-                                alwaysRunToEnd: true
-                                NumberAnimation {
-                                    target: img
-                                    property: "rotation"
-                                    from: 0; to: 10
-                                    duration: 200
-                                    easing.type: Easing.OutQuad
-                                }
-                                NumberAnimation {
-                                    target: img
-                                    property: "rotation"
-                                    from: 10; to: -10
-                                    duration: 400
-                                    easing.type: Easing.InOutQuad
-                                }
-                                NumberAnimation {
-                                    target: img
-                                    property: "rotation"
-                                    from: -10; to: 0
-                                    duration: 200
-                                    easing.type: Easing.InQuad
+                                Behavior on scale { NumberAnimation { duration: 70 } }
+                                MouseArea {
+                                    id: mouseArea
+                                    anchors.fill: parent
+                                    hoverEnabled: true
+                                    onClicked: {
+                                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                                        items.colorSelector = modelData
+                                    }
                                 }
                             }
-
-                            Behavior on scale { NumberAnimation { duration: 70 } }
-                            MouseArea {
-                                id: mouseArea
+                            GCText {
+                                id: text1
                                 anchors.fill: parent
-                                hoverEnabled: true
-                                onClicked: {
-                                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
-                                    items.colorSelector = modelData
-                                }
+                                text: modelData
+                                fontSize: regularSize
+                                z: modelData == items.colorSelector ? 12 : 2
+                                font.bold: true
+                                style: Text.Outline
+                                styleColor: "black"
+                                color: "white"
                             }
-                        }
-                        GCText {
-                            id: text1
-                            anchors.fill: parent
-                            text: modelData
-                            fontSize: regularSize
-                            z: modelData == items.colorSelector ? 12 : 2
-                            font.bold: true
-                            style: Text.Outline
-                            styleColor: "black"
-                            color: "white"
-                        }
-                        DropShadow {
-                            anchors.fill: text1
-                            cached: false
-                            horizontalOffset: 1
-                            verticalOffset: 1
-                            radius: 8.0
-                            samples: 16
-                            color: "#80000000"
-                            source: text1
+                            DropShadow {
+                                anchors.fill: text1
+                                cached: false
+                                horizontalOffset: 1
+                                verticalOffset: 1
+                                radius: 8.0
+                                samples: 16
+                                color: "#80000000"
+                                source: text1
+                            }
                         }
                     }
                 }
             }
-
             Grid {
                 id: drawAndExampleArea
                 columns: background.landscape ? 2 : 1
