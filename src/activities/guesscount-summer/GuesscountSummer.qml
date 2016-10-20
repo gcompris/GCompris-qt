@@ -288,6 +288,11 @@ ActivityBase {
                     else
                         items.levelArr = dataToSave["levelArr"]
                 }
+                else{
+                    items.mode='builtin'
+                    items.levelArr = Activity.defaultOperators
+                }
+
             }
 
             onSaveData: {
