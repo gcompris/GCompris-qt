@@ -71,10 +71,10 @@ function setUp() {
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
         items.basketWidget.element.opacity = (subLevelData.forceShowBasket === true ||
                                               items.background.rest !== 0) ? 1 : 0
-
-    // create random (guided) levels
+        items.background.wrongMove.visible = false
     }
     else {
+        // create random (guided) levels
         // get a random number between 1 and max for boys, girls and candies
         var maxBoys = levelData.levels[0].maxBoys
         var maxGirls = levelData.levels[0].maxGirls
@@ -89,7 +89,6 @@ function setUp() {
         // stay within the max margin
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
-
 
         //~ singular Place %1 boy
         //~ plural Place %1 boys
@@ -125,6 +124,8 @@ function setUp() {
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
 
         items.basketWidget.element.opacity = 1
+
+        items.background.wrongMove.visible = false;
 
         saveVariables()
     }

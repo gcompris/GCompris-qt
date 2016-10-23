@@ -64,8 +64,9 @@ ActivityBase {
             property int totalCandies
             property int totalChildren: totalBoys + totalGirls
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
+            property int cellSize: Math.min(background.width / 11, background.height / (9 + barHeightAddon))
             property alias repeaterDropAreas: repeaterDropAreas
+            property int maxNumberOfCandiesPerWidget: 8
         }
 
         Loader {
@@ -84,12 +85,12 @@ ActivityBase {
         property int placedInGirls
         property int placedInBoys
         property bool showCount: true
-        property bool easyMode: false
+        property bool easyMode: true
         property alias wrongMove: wrongMove
         property bool finished: false
 
         //returns true if the x and y is in the "dest" area
-        function contains(x,y,dest) {
+        function contains(x, y, dest) {
             return (x > dest.x && x < dest.x + dest.width &&
                     y > dest.y && y < dest.y + dest.height)
         }
@@ -164,7 +165,9 @@ ActivityBase {
             //shows/hides the Instruction
             MouseArea {
                 anchors.fill: parent
-                onClicked: (instruction.opacity === 0) ?
+                // first hide the wrong move if visible, then show/hide instruction
+                onClicked: wrongMove.visible ? wrongMove.visible = false :
+                           (instruction.opacity === 0) ?
                                instruction.show() : instruction.hide()
             }
 
@@ -306,6 +309,7 @@ ActivityBase {
                     id: candyWidget
                     total: background.easyMode ? items.totalCandies : 8 * items.totalChildren + 1
                     current: background.currentCandies
+                    element.opacity: background.easyMode ? 1 : 0
                 }
 
                 BasketWidget {
@@ -317,33 +321,30 @@ ActivityBase {
         // show message warning for placing too many candies in one area
         Rectangle {
             id: wrongMove
-            anchors.fill: wrongMoveText
             z: 5
-            color: "#FFFF42"
+            color: "orange"
             radius: width / height * 10
-            opacity: 0
+            visible: false
 
-            property alias fadeInOut: fadeInOut
+            width: grid.width
+            height: grid.height / 3
+            anchors.centerIn: grid
 
-            SequentialAnimation {
-                id: fadeInOut
-                PropertyAction { target: wrongMove; property: "z"; value: 5 }
-                NumberAnimation { target: wrongMove; property: "opacity"; to: 1; duration: 300 }
-                NumberAnimation { target: wrongMove; property: "opacity"; to: 1; duration: 1000 }
-                NumberAnimation { target: wrongMove; property: "opacity"; to: 0; duration: 200 }
-                PropertyAction { target: wrongMove; property: "z"; value: -5 }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: parent.visible = false
             }
-        }
-
-        GCText {
-            id: wrongMoveText
-            anchors.horizontalCenter: grid.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            fontSize: background.vert ? hugeSize : largeSize
-            opacity: wrongMove.opacity
-            z: wrongMove.z
-            color: "#404040"
-            text: qsTr("Too many candies!")
+            GCText {
+                id: wrongMoveText
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                width: parent.width - 2 // -2 for margin
+                height: parent.height
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+                color: "#404040"
+                text: qsTr("You can't put more than %1 candies in the same widget").arg(items.maxNumberOfCandiesPerWidget)
+            }
         }
 
         DialogActivityConfig {
@@ -365,10 +366,7 @@ ActivityBase {
                             checked: background.easyMode
                             onCheckedChanged: {
                                 background.easyMode = checked
-                                if (checked == false)
-                                    candyWidget.element.opacity = 1
-                                else
-                                    Activity.reloadRandom()
+                                Activity.reloadRandom()
                             }
                         }
                     }
@@ -377,12 +375,12 @@ ActivityBase {
 
             onLoadData: {
                 if(dataToSave && dataToSave["mode"]) {
-                    background.easyMode = dataToSave["mode"];
+                    background.easyMode = (dataToSave["mode"] === "true");
                 }
             }
 
             onSaveData: {
-                dataToSave = {"mode": background.easyMode}
+                dataToSave = { "mode": "" + background.easyMode }
             }
 
             onClose: home()

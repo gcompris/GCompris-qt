@@ -40,7 +40,7 @@ WidgetOption {
                     var currentChild = repeaterDropAreas.itemAt(i)
                     var childCoordinate = dropAreas.mapToItem(background, currentChild.x, currentChild.y)
                     //coordinates of "boy/girl rectangle" in background coordinates
-                    if ((listModel.get(i).countS + 1) > 8) {
+                    if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
                         continue
                     }
 
@@ -66,9 +66,9 @@ WidgetOption {
                 background.resetCandy()
                 element.opacity = 0.6
             }
-            // Hard mode
         }
         else {
+            // Hard mode
             if (background.currentCandies < widget.total) {
                 items.acceptCandy = true
 
@@ -82,8 +82,8 @@ WidgetOption {
                     currentElement.y > childCoordinate.y + currentChild.childImage.height &&
                     currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
 
-                        if ((listModel.get(i).countS + 1) > 8) {
-                            background.wrongMove.fadeInOut.start()
+                        if ((listModel.get(i).countS + 1) > items.maxNumberOfCandiesPerWidget) {
+                            background.wrongMove.visible = true
                             continue
                         }
 
@@ -92,7 +92,8 @@ WidgetOption {
                         background.currentCandies ++
                     }
                 }
-                // if all the "dropAreas" are full with 8 candies, then stop the "swing" effect of the candy in leftWidget
+                // if all the "dropAreas" are full with items.maxNumberOfCandiesPerWidget candies,
+                // then stop the "swing" effect of the candy in leftWidget
                 if (background.currentCandies + 1 == widget.total)
                     background.resetCandy()
             }

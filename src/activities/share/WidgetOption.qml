@@ -73,7 +73,7 @@ Rectangle {
                 widget.lastY = element.y
             }
 
-            onReleased:  {
+            onReleased: {
                 widget.releaseElement()
                 //set the widget to its initial coordinates
                 element.x = widget.lastX

@@ -81,7 +81,7 @@ Rectangle {
                     // Easy mode
                     if (background.easyMode) {
                         if (background.currentCandies < items.candyWidget.total) {
-                            if (listModel.get(index).countS + 1 <= 8) {
+                            if (listModel.get(index).countS + 1 <= items.maxNumberOfCandiesPerWidget) {
                                 //add candies in the first rectangle
                                 repeaterDropAreas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
                                 listModel.setProperty(index, "countS", listModel.get(index).countS + 1)
@@ -102,7 +102,7 @@ Rectangle {
                     // Hard mode
                     else {
                         if (background.currentCandies < items.candyWidget.total) {
-                            if (listModel.get(index).countS + 1 <= 8) {
+                            if (listModel.get(index).countS + 1 <= items.maxNumberOfCandiesPerWidget) {
                                 //add candies in the first rectangle
                                 repeaterDropAreas.itemAt(index).candyCount.text = listModel.get(index).countS + 1
                                 listModel.setProperty(index, "countS", listModel.get(index).countS + 1)
@@ -114,7 +114,7 @@ Rectangle {
                                 }
                             }
                             else {
-                                background.wrongMove.fadeInOut.start()
+                                background.wrongMove.visible = true
                             }
                         }
                     }
@@ -134,8 +134,8 @@ Rectangle {
 
                 Image {
                     id: candyArea
-                    sourceSize.width: items.cellSize * 0.7
-                    sourceSize.height: items.cellSize * 1.5
+                    sourceSize.width: items.cellSize * 0.6
+                    sourceSize.height: items.cellSize * 1.2
                     source: "resource/images/candy.svg"
 
                     property int lastX
@@ -144,7 +144,7 @@ Rectangle {
                     MouseArea {
                         anchors.fill: parent
 
-                        //enables dragging the candie after placed
+                        //enables dragging the candy after placed
                         drag.target: parent
 
                         onPressed: {
@@ -178,6 +178,12 @@ Rectangle {
                                 if (currentChild !== dropChild) {
                                     //check if the user wants to put a candy to another rectangle
                                     if (childContainsCandy(currentChild, candyCoordinate)) {
+                                        // don't drop more than the maximum of allowed candies per widget
+                                        if(listModel.get(currentChild.indexS).countS >= items.maxNumberOfCandiesPerWidget) {
+                                            background.wrongMove.visible = true
+                                            break;
+                                        }
+
                                         //add the candy to the i-th rectangle
                                         repeaterDropAreas.itemAt(i).candyCount.text = listModel.get(i).countS + 1
                                         listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
