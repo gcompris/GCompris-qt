@@ -99,7 +99,7 @@ ActivityBase {
         }
 
         Rectangle {
-            id: row1
+            id: top
             width: parent.width
             height: parent.height/10
             anchors {
@@ -145,16 +145,16 @@ ActivityBase {
 
         Column {
             spacing: 10
-            anchors.top:row1.bottom
+            anchors.top: top.bottom
             anchors.topMargin: 10
             anchors.left: parent.left
             anchors.leftMargin: 5
             width: parent.width
-            height: parent.height
+            height: parent.height-top.height-background.height/5
             OperatorRow {
                 id: operatorRow
                 width: parent.width
-                height: parent.height/10
+                height: parent.height/7
                 mode: items.mode
                 operators: items.levelArr
                 level: items.currentlevel
@@ -162,15 +162,15 @@ ActivityBase {
             OperandRow {
                 id: operandRow
                 width: parent.width
-                height: parent.height/10
+                height: parent.height/7
             }
             Repeater {
                 id: repeat
                 model: operandRow.repeater.model.length-1
                 delegate: OperationRow {
                     id: operationRow
-                    width: background.width
-                    height: background.height/10
+                    width: parent.width
+                    height: parent.height/7
                     property alias operationRow: operationRow
                     noOfRows: operatorRow.repeater.model.length-1
                     rowNo: modelData
