@@ -322,7 +322,7 @@ ActivityBase {
                     font.weight: Font.DemiBold
                     color: 'white'
                     text: qsTr("Put your favorite activities here by selecting the " +
-                               "sun on each activity top right.")
+                               "sun at the top right of that activity.")
                 }
                 Rectangle {
                     anchors.fill: instructionTxt
