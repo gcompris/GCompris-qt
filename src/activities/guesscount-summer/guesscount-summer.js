@@ -102,6 +102,9 @@ function calculate(operand1,operator,operand2,operationRow)
     }
     else
     {
+        operationRow.endResult.text = ""
+        operationRow.complete = false
+        operationRow.rowResult = 0
         items.dialog.visible = true
     }
 
@@ -118,15 +121,17 @@ function childrenChange(item,operationRow)
     else if(item.children.length == 3)
     {
         item.droppedItem.parent = item.droppedItem.reparent
+        operationRow.complete=false
         console.log(" second item is replaced "+item.count)
     }
     else if(item.children.length == 1)
     {
         item.count-=1
         console.log(" first item left "+item.count)
+        operationRow.complete = false
         operationRow.endResult.text = ""
         operationRow.rowResult = 0
-        operationRow.complete = false
+
     }
 }
 

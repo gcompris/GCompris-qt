@@ -98,7 +98,8 @@ Row {
             Activity.childrenChange(operator, operandRow)
             if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1)
             {
-                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+                if(!operandRow.complete)
+                    Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
                 operandRow.complete = true
                 if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                 {
@@ -153,6 +154,7 @@ Row {
         radius: 20.0
     }
     onPrevCompleteChanged: {
+
         if(!prevComplete)
         {
             endResult.text = ""
@@ -161,7 +163,13 @@ Row {
         }
         else
         {
-            if( operator.count == 1 && operand2.count == 1)
+            if(prevResult==0){
+                endResult.text = ""
+                operandRow.complete = false
+                operandRow.rowResult = 0
+            }
+
+            else if( operator.count == 1 && operand2.count == 1)
             {
                 Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
                 operandRow.complete = true
