@@ -22,9 +22,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-    name: "guesscount-summer/GuesscountSummer.qml"
+    name: "guesscount/Guesscount.qml"
     difficulty: 1
-    icon: "guesscount-summer/guesscount-summer.svg"
+    icon: "guesscount/guesscount.svg"
     author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
     demo: true
     title: qsTr("Guesscount")

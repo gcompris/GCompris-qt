@@ -26,9 +26,9 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 
-var url = "qrc:/gcompris/src/activities/guesscount-summer/resource/"
+var url = "qrc:/gcompris/src/activities/guesscount/resource/"
 var defaultOperators = Data.defaultOperators
-var baseUrl = "qrc:/gcompris/src/activities/guesscount-summer/resource";
+var baseUrl = "qrc:/gcompris/src/activities/guesscount/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = []
 

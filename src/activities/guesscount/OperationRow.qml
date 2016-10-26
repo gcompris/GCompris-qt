@@ -22,7 +22,7 @@
 
 import QtQuick 2.1
 import "../../core"
-import "guesscount-summer.js" as Activity
+import "guesscount.js" as Activity
 
 Row {
     id: operandRow

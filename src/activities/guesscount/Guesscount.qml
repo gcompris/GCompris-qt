@@ -21,7 +21,7 @@
  */
 import QtQuick 2.1
 import "../../core"
-import "guesscount-summer.js" as Activity
+import "guesscount.js" as Activity
 
 ActivityBase {
     id: activity
@@ -144,6 +144,7 @@ ActivityBase {
         }
 
         Column {
+            id: col
             spacing: 10
             anchors.top: top.bottom
             anchors.topMargin: 10
@@ -166,22 +167,18 @@ ActivityBase {
             }
             Repeater {
                 id: repeat
-                model: operandRow.repeater.model.length-1
+                model: operatorRow.repeater.model.length
                 delegate: OperationRow {
                     id: operationRow
-                    width: parent.width
-                    height: parent.height/7
+                    width: col.width
+                    height: col.height/7
                     property alias operationRow: operationRow
-                    noOfRows: operatorRow.repeater.model.length-1
+                    noOfRows: operatorRow.repeater.model.length
                     rowNo: modelData
                     guesscount: items.result
                     prevResult: modelData ? repeat.itemAt(modelData-1).rowResult : -1
                     prevComplete: modelData ? repeat.itemAt(modelData-1).complete : false
                     reparent: items.solved || items.levelchanged
-                    Component.onCompleted: {
-                        repeat.model= Qt.binding(function(){ return operatorRow.repeater.model.length })
-                        operationRow.noOfRows=Qt.binding(function(){ return operatorRow.repeater.model.length })
-                    }
                 }
 
             }

@@ -1,9 +1,9 @@
-/* GCompris - DropTile.qml
+/* GCompris - OperatorRow.qml
  *
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <PASCAL GEORGES> (V13.11)
+ *   <Pascal Georges> (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -19,33 +19,40 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+
+
 import QtQuick 2.1
-
 import "../../core"
-import "guesscount-summer.js" as Activity
+import "guesscount.js" as Activity
 
-DropArea {
-    id: dragTarget
-    property string type
-    property var droppedItem
-    keys: [ type ]
+Row {
+    id: operatorRow
+    spacing: 30
+    property string mode
+    property var operators
+    property int level
+    property alias repeater: repeater
     Rectangle {
-        id: dropRectangle
-        width: parent.width
+        id: operator
+        width: parent.width*0.328
         height: parent.height
-        anchors.fill: parent
-        color: "transparent"
-        border.width: 5
-        border.color: type == "operators" ? "red" : "green"
-        radius: 20
-        states: [
-            State {
-                when: dragTarget.containsDrag
-                PropertyChanges {
-                    target: dropRectangle
-                    border.color: "white"
-                }
-            }
-        ]
+        radius: 20.0;
+        color: "red"
+        GCText {
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            fontSize: mediumSize
+            text: qsTr("Operators")
+        }
+    }
+    Repeater {
+        id: repeater
+        model:  mode == "builtin" ? Activity.defaultOperators[level] : operators[level]
+        delegate: DragTile{
+            id: root
+            type: "operators"
+            width: operatorRow.width*0.1
+            height: operatorRow.height
+        }
     }
 }

@@ -53,7 +53,7 @@ gnumch-inequality
 gnumch-multiples
 gnumch-primes
 graph-coloring
-guesscount-summer
+guesscount
 guessnumber
 hangman
 hanoi
