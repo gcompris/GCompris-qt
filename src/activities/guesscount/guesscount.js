@@ -95,7 +95,7 @@ function calculate(operand1,operator,operand2,operationRow)
         result = operand1*operand2
         console.log(result)
     }
-    if(Math.round(result)-result == 0)
+    if(Math.round(result)-result == 0 && result>=0)
     {
         operationRow.rowResult = result
         operationRow.endResult.text = operationRow.rowResult.toString()
@@ -105,6 +105,11 @@ function calculate(operand1,operator,operand2,operationRow)
         operationRow.endResult.text = ""
         operationRow.complete = false
         operationRow.rowResult = 0
+        if(result<0)
+            items.dialog.dialogText.text = qsTr("result is not positive integer")
+        else
+            items.dialog.dialogText.text = qsTr("result is not an integer")
+
         items.dialog.visible = true
     }
 

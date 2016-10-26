@@ -356,11 +356,12 @@ ActivityBase {
             visible: false
             color: "steelblue"
             radius: 30
+            property alias dialogText: dialogText
             anchors.centerIn: parent
             GCText {
+                id: dialogText
                 anchors.centerIn: parent
                 fontSize: mediumSize
-                text: qsTr("result is not an integer")
             }
             onVisibleChanged:SequentialAnimation {
                 PropertyAnimation {target: dialog; property: "opacity"; from : 1 ; to: 0 ; duration: 3000 }
