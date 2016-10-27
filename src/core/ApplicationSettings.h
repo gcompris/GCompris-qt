@@ -447,6 +447,13 @@ public:
         emit lastGCVersionRanChanged();
     }
 
+    /**
+     * Check if we use the external wordset for activity based on lang_api
+     * @returns  true if wordset is loaded
+     *           false if wordset is not loaded
+     */
+    Q_INVOKABLE bool useExternalWordset();
+
 protected slots:
 
     Q_INVOKABLE void notifyShowLockedActivitiesChanged();

@@ -242,14 +242,15 @@ Item {
         }
 
         /* Technically wordset config is a string that holds the wordset name or '' for the
-         * internal wordset. But as we support only internal and words its best to show the
-         * user a boolean choice.
-         */
+        * internal wordset. But as we support only internal and words its best to show the
+        * user a boolean choice.
+        */
         GCDialogCheckBox {
             id: wordsetBox
-            checked: wordset
+            checked: DownloadManager.isDataRegistered("words")
             text: qsTr("Use external large word image set")
             visible: ApplicationInfo.isDownloadAllowed
+            enabled: !DownloadManager.isDataRegistered("words")
             onCheckedChanged: {
                 wordset = checked ? 'data2/words/words.rcc' : '';
             }
@@ -556,7 +557,8 @@ Item {
         sectionVisibleBox.checked = sectionVisible
 
         wordset = ApplicationSettings.wordset
-        wordsetBox.checked = (wordset != '')
+        wordsetBox.checked = DownloadManager.isDataRegistered("words") || ApplicationSettings.wordset == 'data2/words/words.rcc'
+        wordsetBox.enabled = !DownloadManager.isDataRegistered("words")
 
         baseFontSize = ApplicationSettings.baseFontSize;
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing;
@@ -627,6 +629,39 @@ Item {
                             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
             }
         }
+        // download words.rcc if needed
+        if(ApplicationSettings.wordset != "") {
+            // we want to use the external dataset, it is either in
+            // words/words.rcc or full-${CA}.rcc
+            if(DownloadManager.isDataRegistered("words")) {
+                // we either have it, we try to update in the background
+                // or we are downloading it
+                if(DownloadManager.haveLocalResource(wordset))
+                    DownloadManager.updateResource(wordset)
+            }
+            else {
+                // download automatically if automatic download else ask for download
+                if(isAutomaticDownloadsEnabled) {
+                    var prevAutomaticDownload = ApplicationSettings.isAutomaticDownloadsEnabled
+                    ApplicationSettings.isAutomaticDownloadsEnabled = true;
+                    DownloadManager.updateResource(wordset);
+                    ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
+                }
+                else {
+                    Core.showMessageDialog(main,
+                    qsTr("The images for several activities are not yet installed. ")
+                    + qsTr("Do you want to download them now?"),
+                    qsTr("Yes"),
+                    function() {
+                        if (DownloadManager.downloadResource(wordset))
+                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                    },
+                    qsTr("No"), function() { ApplicationSettings.wordset = '' },
+                    null
+                    );
+                }
+            }
+        }
     }
 
     ListModel {
@@ -694,7 +729,6 @@ Item {
         (ApplicationSettings.showLockedActivities != showLockedActivities)
         );
     }
-
 }
 
     

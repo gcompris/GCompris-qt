@@ -42,7 +42,6 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: Math.max(parent.width, parent.height)
 
-        readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
 
         signal start
@@ -114,8 +113,7 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: {
-                // if we don't have the images, we leave the activity on home()
-                if(DownloadManager.haveLocalResource(wordsResource) && !items.menuScreen.started && !items.imageReview.started)
+                if(!items.menuScreen.started && !items.imageReview.started)
                     // We're in a mini game, start imageReview
                     items.imageReview.start()
                 else if(items.imageReview.started)
