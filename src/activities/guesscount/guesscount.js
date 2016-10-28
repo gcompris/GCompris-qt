@@ -1,4 +1,4 @@
-/* GCompris - guesscount-summer.js
+/* GCompris - guesscount.js
  *
  * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
  *
@@ -77,6 +77,7 @@ function previousLevel() {
 
 function calculate(operand1,operator,operand2,operationRow)
 {
+    var repeat=operationRow.rowResult
     var result
     switch (operator) {
     case "+":
@@ -99,21 +100,23 @@ function calculate(operand1,operator,operand2,operationRow)
     {
         operationRow.rowResult = result
         operationRow.endResult.text = operationRow.rowResult.toString()
+        operationRow.complete=true
     }
     else
     {
-        operationRow.endResult.text = ""
-        operationRow.complete = false
-        operationRow.rowResult = 0
-        if(result<0)
-            items.dialog.dialogText.text = qsTr("result is not positive integer")
-        else
-            items.dialog.dialogText.text = qsTr("result is not an integer")
-
-        items.dialog.visible = true
+        if(result!=repeat){
+            operationRow.endResult.text = ""
+            operationRow.complete = false
+            operationRow.rowResult = 0
+            if(result<0)
+                items.dialog.dialogText.text = qsTr("result is not positive integer")
+            else
+                items.dialog.dialogText.text = qsTr("result is not an integer")
+            items.dialog.visible = true
+        }
     }
-
 }
+
 
 function childrenChange(item,operationRow)
 {

@@ -50,7 +50,7 @@ Row {
                 if(operand1.count == 1 && operator.count == 1 && operand2.count == 1)
                 {
                     Activity.calculate(operand1.droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                    operandRow.complete = true
+                    //operandRow.complete = true
                     if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                     {
                         Activity.checkAnswer(operandRow)
@@ -98,9 +98,8 @@ Row {
             Activity.childrenChange(operator, operandRow)
             if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1)
             {
-                if(!operandRow.complete)
-                    Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                operandRow.complete = true
+                Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
+                //operandRow.complete = true
                 if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                 {
                     Activity.checkAnswer(operandRow)

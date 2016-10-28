@@ -1,4 +1,4 @@
- /* GCompris - guesscount-summer.qml
+ /* GCompris - guesscount.qml
  *
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
