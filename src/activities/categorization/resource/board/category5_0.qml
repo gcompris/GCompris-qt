@@ -43,10 +43,10 @@ QtObject {
                             "lang/resource/words_sample/eight.png": ["numbers"],
                             "lang/resource/words_sample/ten.png": ["numbers"],
                             "lang/resource/words_sample/four.png": ["numbers"],
-                            "categorization/resource/images/alphabets/A.svg": ["alphabets"],
-                            "categorization/resource/images/alphabets/M.svg": ["alphabets"],
-                            "categorization/resource/images/alphabets/b.svg": ["alphabets"],
-                            "categorization/resource/images/alphabets/s.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/upperA.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/upperM.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/lowerB.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/upperS.svg": ["alphabets"],
                             "lang/resource/words_sample/fish.png":  ["fishes"],
                             "lang/resource/words_sample/color.png": ["color"]
                         }
@@ -66,8 +66,8 @@ QtObject {
                             "lang/resource/words_sample/nine.png": ["numbers"],
                             "lang/resource/words_sample/three.png": ["numbers"],
                             "lang/resource/words_sample/seven.png": ["numbers"],
-                            "categorization/resource/images/alphabets/Z.svg": ["alphabets"],
-                            "categorization/resource/images/alphabets/h.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/upperZ.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/lowerH.svg": ["alphabets"],
                             "lang/resource/words_sample/mosquito.png": ["insects"],
                             "lang/resource/words_sample/fruit.png": ["fruits"]
                         }
@@ -85,8 +85,8 @@ QtObject {
                             "lang/resource/words_sample/one.png": ["numbers"],
                             "lang/resource/words_sample/six.png": ["numbers"],
                             "lang/resource/words_sample/sixteen.png": ["numbers"],
-                            "categorization/resource/images/alphabets/R.svg": ["alphabets"],
-                            "categorization/resource/images/alphabets/q.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/upperR.svg": ["alphabets"],
+                            "categorization/resource/images/alphabets/lowerQ.svg": ["alphabets"],
                             "lang/resource/words_sample/strawberry.png": ["fruits"]
                         }
                     ]
