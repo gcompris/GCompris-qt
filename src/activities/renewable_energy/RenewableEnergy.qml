@@ -30,6 +30,7 @@ ActivityBase {
     onStop: {}
 
     property string url: "qrc:/gcompris/src/activities/renewable_energy/resource/"
+    property variant barAtStart
 
     property int oldWidth: width
     onWidthChanged: {
@@ -70,8 +71,12 @@ ActivityBase {
             property bool hasWon: false
         }
 
-        onStart: { }
+        onStart: {
+            barAtStart = ApplicationSettings.isBarHidden;
+            ApplicationSettings.isBarHidden = true;
+        }
         onStop: {
+            ApplicationSettings.isBarHidden = barAtStart;
             initLevel()
         }
 

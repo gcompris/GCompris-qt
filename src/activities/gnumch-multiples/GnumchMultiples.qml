@@ -3,8 +3,8 @@
  * Copyright (C) 2014 Manuel Tondeur <manueltondeur@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Joe Neeman <spuzzzzzzz@gmail.com> (GTK+ version)
+ *   Manuel Tondeur <manueltondeur@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

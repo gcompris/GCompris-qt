@@ -40,7 +40,7 @@ ActivityBase {
         id: background
         source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
 
         readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
@@ -239,7 +239,8 @@ ActivityBase {
         }
     }
 
-    property variant categoriesTranslations: {"other": qsTr("other"),
+    property variant categoriesTranslations: {"otherChapter": qsTr("other"),
+        "otherLesson": qsTr("other"),
         "action": qsTr("action"), "adjective": qsTr("adjective"),
         "color": qsTr("color"), "number": qsTr("number"),
         "people": qsTr("people"), "bodyparts": qsTr("bodyparts"),

@@ -36,16 +36,44 @@
 const QString DownloadManager::contentsFilename = QString("Contents");
 DownloadManager* DownloadManager::_instance = 0;
 
+void copyPath(QString src, QString dst)
+{
+    QDir dir(src);
+    if (!dir.exists())
+        return;
+
+    Q_FOREACH(const QString &d, dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
+        QString dst_path = dst + QDir::separator() + d;
+        dir.mkpath(dst_path);
+        copyPath(src+ QDir::separator() + d, dst_path);
+    }
+
+    Q_FOREACH(const QString &f, dir.entryList(QDir::Files)) {
+        qDebug() << "Copying " << src + QDir::separator() + f << " to " << dst + QDir::separator() + f;
+        QFile::copy(src + QDir::separator() + f, dst + QDir::separator() + f);
+    }
+}
+
 /* Public interface: */
 
 DownloadManager::DownloadManager()
   : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
     // Cleanup of previous data directory no more used
-    QDir previousDataLocation = QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data";
-    if(previousDataLocation.exists()) {
-        qDebug() << "Remove previous directory data: " << previousDataLocation;
-        previousDataLocation.removeRecursively();
+    QList<QDir> previousDataLocations = QList<QDir>() <<
+        QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data" <<
+        QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data2";
+
+    for(auto it = previousDataLocations.begin(); it != previousDataLocations.end() ; ++ it) {
+        QDir &prevDir = *it;
+        if(prevDir.exists()) {
+            if(prevDir.dirName() == "data2") {
+                qDebug() << "Data changed place, move from previous folder to the new one";
+                copyPath(prevDir.absolutePath(), getSystemDownloadPath() + "/data2");
+            }
+            qDebug() << "Remove previous directory data: " << prevDir.absolutePath();
+            prevDir.removeRecursively();
+        }
     }
 }
 
@@ -168,14 +196,19 @@ bool DownloadManager::updateResource(const QString& path)
 
 bool DownloadManager::downloadResource(const QString& path)
 {
-    qDebug() << "Downloading resource file" << path;
-    DownloadJob* job = new DownloadJob(QUrl(serverUrl.toString() + '/' + path));
-
+    DownloadJob* job = nullptr;
     {
         QMutexLocker locker(&jobsMutex);
+        QUrl url(serverUrl.toString() + '/' + path);
+        if (getJobByUrl_locked(url)) {
+            qDebug() << "Download of" << url << "is already running, skipping second attempt.";
+            return false;
+        }
+        job = new DownloadJob(url);
         activeJobs.append(job);
     }
 
+    qDebug() << "Downloading resource file" << path;
     if (!download(job)) {
         QMutexLocker locker(&jobsMutex);
         activeJobs.removeOne(job);
@@ -189,7 +222,7 @@ bool DownloadManager::downloadResource(const QString& path)
 void DownloadManager::registerLocalResources()
 {
     QStringList filenames = getLocalResources();
-    if (filenames == QStringList()) {
+    if (filenames.empty()) {
         qDebug() << "No local resources found";
         return;
     }
@@ -202,7 +235,7 @@ void DownloadManager::registerLocalResources()
 bool DownloadManager::checkForUpdates()
 {
     QStringList filenames = getLocalResources();
-    if (filenames == QStringList()) {
+    if (filenames.empty()) {
         qDebug() << "No local resources found";
         return true;
     }
@@ -305,13 +338,21 @@ bool DownloadManager::download(DownloadJob* job)
     return true;
 }
 
+inline DownloadManager::DownloadJob* DownloadManager::getJobByUrl_locked(const QUrl& url) const
+{
+    for (int i = 0; i < activeJobs.size(); i++)
+        if (activeJobs[i]->url == url || activeJobs[i]->queue.indexOf(url) != -1)
+            return activeJobs[i];
+    return nullptr;
+}
+
 inline DownloadManager::DownloadJob* DownloadManager::getJobByReply(QNetworkReply *r)
 {
     QMutexLocker locker(&jobsMutex);
     for (int i = 0; i < activeJobs.size(); i++)
         if (activeJobs[i]->reply == r)
             return activeJobs[i];
-    return NULL;  // should never happen!
+    return nullptr;  // should never happen!
 }
 
 void DownloadManager::downloadReadyRead()
@@ -334,13 +375,14 @@ inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
 
 inline QString  DownloadManager::getSystemDownloadPath() const
 {
-    return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+    return QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
 }
 
 inline QStringList DownloadManager::getSystemResourcePaths() const
 {
 
     QStringList results({
+        QCoreApplication::applicationDirPath() + '/' + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
         getSystemDownloadPath(),
 #if defined(Q_OS_ANDROID)
         "assets:",
@@ -349,7 +391,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
             '/' + GCOMPRIS_APPLICATION_NAME
     });
 
- #if QT_VERSION >= 0x050400
+#if QT_VERSION >= 0x050400
     // Append standard application directories (like /usr/share/KDE/gcompris-qt)
     results += QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
 #endif

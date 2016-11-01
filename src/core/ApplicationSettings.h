@@ -87,6 +87,16 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
 
     /**
+     * Window Height on Application's Startup
+     */
+    Q_PROPERTY(quint32 previousHeight READ previousHeight WRITE setPreviousHeight NOTIFY previousHeightChanged)
+
+    /**
+     * Window Width on Application's Startup
+     */
+    Q_PROPERTY(quint32 previousWidth READ previousWidth WRITE setPreviousWidth NOTIFY previousWidthChanged)
+
+    /**
      * Whether on-screen keyboard should be enabled per default in activities
      * that use it.
      */
@@ -276,6 +286,22 @@ public:
         }
     }
 
+    qint32 previousHeight() const { return m_previousHeight; }
+    void setPreviousHeight(qint32 height) {
+        if(m_previousHeight != height) {
+            m_previousHeight = height;
+            emit previousHeightChanged();
+        }
+    }
+
+    qint32 previousWidth() const { return m_previousWidth; }
+    void setPreviousWidth(qint32 width) {
+        if(m_previousWidth != width) {
+            m_previousWidth = width;
+            emit previousWidthChanged();
+        }
+    }
+
     bool isVirtualKeyboard() const { return m_isVirtualKeyboard; }
     void setVirtualKeyboard(const bool newMode) {
         m_isVirtualKeyboard = newMode;
@@ -427,6 +453,8 @@ protected slots:
     Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
     Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
     Q_INVOKABLE void notifyFullscreenChanged();
+    Q_INVOKABLE void notifyPreviousHeightChanged();
+    Q_INVOKABLE void notifyPreviousWidthChanged();
     Q_INVOKABLE void notifyVirtualKeyboardChanged();
     Q_INVOKABLE void notifyLocaleChanged();
     Q_INVOKABLE void notifyFontChanged();
@@ -493,6 +521,8 @@ signals:
     void audioVoicesEnabledChanged();
     void audioEffectsEnabledChanged();
     void fullscreenChanged();
+    void previousHeightChanged();
+    void previousWidthChanged();
     void virtualKeyboardChanged();
     void localeChanged();
     void fontChanged();
@@ -528,6 +558,8 @@ private:
     bool m_isAudioVoicesEnabled;
     bool m_isAudioEffectsEnabled;
     bool m_isFullscreen;
+    quint32 m_previousHeight;
+    quint32 m_previousWidth;
     bool m_isVirtualKeyboard;
     bool m_isAutomaticDownloadsEnabled;
     bool m_isEmbeddedFont;

@@ -22,284 +22,390 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Africa")
-   property variant levels: [
-      {
-         "pixmapfile": "africa/africa.png",
-         "type": "SHAPE_BACKGROUND_IMAGE"
-      },
-      {
-         "pixmapfile": "africa/zimbabwe.png",
-         "sound": "voices-$CA/$LOCALE/geography/zimbabwe.$CA",
-         "toolTipText": qsTr("Zimbabwe"),
-         "x": "0.676",
-         "y": "0.783"
-      },
-      {
-         "pixmapfile": "africa/zambia.png",
-         "sound": "voices-$CA/$LOCALE/geography/zambia.$CA",
-         "toolTipText": qsTr("Zambia"),
-         "x": "0.662",
-         "y": "0.704"
-      },
-      {
-         "pixmapfile": "africa/tunisia.png",
-         "sound": "voices-$CA/$LOCALE/geography/tunisia.$CA",
-         "toolTipText": qsTr("Tunisia"),
-         "x": "0.39",
-         "y": "0.051"
-      },
-      {
-         "pixmapfile": "africa/togo.png",
-         "sound": "voices-$CA/$LOCALE/geography/togo.$CA",
-         "toolTipText": qsTr("Togo"),
-         "x": "0.268",
-         "y": "0.403"
-      },
-      {
-         "pixmapfile": "africa/chad.png",
-         "sound": "voices-$CA/$LOCALE/geography/chad.$CA",
-         "toolTipText": qsTr("Chad"),
-         "x": "0.528",
-         "y": "0.306"
-      },
-      {
-         "pixmapfile": "africa/tanzania.png",
-         "sound": "voices-$CA/$LOCALE/geography/tanzania.$CA",
-         "toolTipText": qsTr("Tanzania"),
-         "x": "0.763",
-         "y": "0.609"
-      },
-      {
-         "pixmapfile": "africa/soudan.png",
-         "sound": "voices-$CA/$LOCALE/geography/soudan.$CA",
-         "toolTipText": qsTr("Sudan"),
-         "x": "0.69",
-         "y": "0.34"
-      },
-      {
-         "pixmapfile": "africa/somalia.png",
-         "sound": "voices-$CA/$LOCALE/geography/somalia.$CA",
-         "toolTipText": qsTr("Somalia"),
-         "x": "0.925",
-         "y": "0.449"
-      },
-      {
-         "pixmapfile": "africa/senegal.png",
-         "sound": "voices-$CA/$LOCALE/geography/senegal.$CA",
-         "toolTipText": qsTr("Senegal"),
-         "x": "0.049",
-         "y": "0.32"
-      },
-      {
-         "pixmapfile": "africa/rep_congo.png",
-         "sound": "voices-$CA/$LOCALE/geography/democratic_republic_of_congo.$CA",
-         "toolTipText": qsTr("Democratic Republic of Congo"),
-         "x": "0.57",
-         "y": "0.577"
-      },
-      {
-         "pixmapfile": "africa/rep_centrafrique.png",
-         "sound": "voices-$CA/$LOCALE/geography/rep_centrafrique.$CA",
-         "toolTipText": qsTr("Central African Republic"),
-         "x": "0.563",
-         "y": "0.425"
-      },
-      {
-         "pixmapfile": "africa/uganda.png",
-         "sound": "voices-$CA/$LOCALE/geography/uganda.$CA",
-         "toolTipText": qsTr("Uganda"),
-         "x": "0.725",
-         "y": "0.5"
-      },
-      {
-         "pixmapfile": "africa/nigeria.png",
-         "sound": "voices-$CA/$LOCALE/geography/nigeria.$CA",
-         "toolTipText": qsTr("Nigeria"),
-         "x": "0.385",
-         "y": "0.395"
-      },
-      {
-         "pixmapfile": "africa/niger.png",
-         "sound": "voices-$CA/$LOCALE/geography/niger.$CA",
-         "toolTipText": qsTr("Niger"),
-         "x": "0.373",
-         "y": "0.277"
-      },
-      {
-         "pixmapfile": "africa/namibia.png",
-         "sound": "voices-$CA/$LOCALE/geography/namibia.$CA",
-         "toolTipText": qsTr("Namibia"),
-         "x": "0.516",
-         "y": "0.84"
-      },
-      {
-         "pixmapfile": "africa/mozambique.png",
-         "sound": "voices-$CA/$LOCALE/geography/mozambique.$CA",
-         "toolTipText": qsTr("Mozambique"),
-         "x": "0.768",
-         "y": "0.783"
-      },
-      {
-         "pixmapfile": "africa/mauritania.png",
-         "sound": "voices-$CA/$LOCALE/geography/mauritania.$CA",
-         "toolTipText": qsTr("Mauritania"),
-         "x": "0.099",
-         "y": "0.231"
-      },
-      {
-         "pixmapfile": "africa/moroco.png",
-         "sound": "voices-$CA/$LOCALE/geography/moroco.$CA",
-         "toolTipText": qsTr("Morocco"),
-         "x": "0.127",
-         "y": "0.123"
-      },
-      {
-         "pixmapfile": "africa/mali.png",
-         "sound": "voices-$CA/$LOCALE/geography/mali.$CA",
-         "toolTipText": qsTr("Mali"),
-         "x": "0.2",
-         "y": "0.273"
-      },
-      {
-         "pixmapfile": "africa/malawi.png",
-         "sound": "voices-$CA/$LOCALE/geography/malawi.$CA",
-         "toolTipText": qsTr("Malawi"),
-         "x": "0.751",
-         "y": "0.702"
-      },
-      {
-         "pixmapfile": "africa/madagascar.png",
-         "sound": "voices-$CA/$LOCALE/geography/madagascar.$CA",
-         "toolTipText": qsTr("Madagascar"),
-         "x": "0.927",
-         "y": "0.781"
-      },
-      {
-         "pixmapfile": "africa/libya.png",
-         "sound": "voices-$CA/$LOCALE/geography/libya.$CA",
-         "toolTipText": qsTr("Libya"),
-         "x": "0.502",
-         "y": "0.154"
-      },
-      {
-         "pixmapfile": "africa/liberia.png",
-         "sound": "voices-$CA/$LOCALE/geography/liberia.$CA",
-         "toolTipText": qsTr("Liberia"),
-         "x": "0.117",
-         "y": "0.433"
-      },
-      {
-         "pixmapfile": "africa/kenya.png",
-         "sound": "voices-$CA/$LOCALE/geography/kenya.$CA",
-         "toolTipText": qsTr("Kenya"),
-         "x": "0.81",
-         "y": "0.52"
-      },
-      {
-         "pixmapfile": "africa/guinea.png",
-         "sound": "voices-$CA/$LOCALE/geography/guinea.$CA",
-         "toolTipText": qsTr("Guinea"),
-         "x": "0.094",
-         "y": "0.381"
-      },
-      {
-         "pixmapfile": "africa/ghana.png",
-         "sound": "voices-$CA/$LOCALE/geography/ghana.$CA",
-         "toolTipText": qsTr("Ghana"),
-         "x": "0.237",
-         "y": "0.411"
-      },
-      {
-         "pixmapfile": "africa/gabon.png",
-         "sound": "voices-$CA/$LOCALE/geography/gabon.$CA",
-         "toolTipText": qsTr("Gabon"),
-         "x": "0.427",
-         "y": "0.538"
-      },
-      {
-         "pixmapfile": "africa/ethiopia.png",
-         "sound": "voices-$CA/$LOCALE/geography/ethiopia.$CA",
-         "toolTipText": qsTr("Ethiopia"),
-         "x": "0.845",
-         "y": "0.395"
-      },
-      {
-         "pixmapfile": "africa/eritrea.png",
-         "sound": "voices-$CA/$LOCALE/geography/eritrea.$CA",
-         "toolTipText": qsTr("Eritrea"),
-         "x": "0.831",
-         "y": "0.31"
-      },
-      {
-         "pixmapfile": "africa/egypt.png",
-         "sound": "voices-$CA/$LOCALE/geography/egypt.$CA",
-         "toolTipText": qsTr("Egypt"),
-         "x": "0.683",
-         "y": "0.152"
-      },
-      {
-         "pixmapfile": "africa/ivory_coast.png",
-         "sound": "voices-$CA/$LOCALE/geography/ivory_coast.$CA",
-         "toolTipText": qsTr("Ivory Coast"),
-         "x": "0.178",
-         "y": "0.417"
-      },
-      {
-         "pixmapfile": "africa/congo.png",
-         "sound": "voices-$CA/$LOCALE/geography/congo.$CA",
-         "toolTipText": qsTr("Republic of Congo"),
-         "x": "0.477",
-         "y": "0.528"
-      },
-      {
-         "pixmapfile": "africa/cameroon.png",
-         "sound": "voices-$CA/$LOCALE/geography/cameroon.$CA",
-         "toolTipText": qsTr("Cameroon"),
-         "x": "0.441",
-         "y": "0.427"
-      },
-      {
-         "pixmapfile": "africa/burkina_faso.png",
-         "sound": "voices-$CA/$LOCALE/geography/burkina_faso.$CA",
-         "toolTipText": qsTr("Burkina Faso"),
-         "x": "0.232",
-         "y": "0.35"
-      },
-      {
-         "pixmapfile": "africa/botswana.png",
-         "sound": "voices-$CA/$LOCALE/geography/botswana.$CA",
-         "toolTipText": qsTr("Botswana"),
-         "x": "0.608",
-         "y": "0.832"
-      },
-      {
-         "pixmapfile": "africa/benin.png",
-         "sound": "voices-$CA/$LOCALE/geography/benin.$CA",
-         "toolTipText": qsTr("Benin"),
-         "x": "0.291",
-         "y": "0.393"
-      },
-      {
-         "pixmapfile": "africa/angola.png",
-         "sound": "voices-$CA/$LOCALE/geography/angola.$CA",
-         "toolTipText": qsTr("Angola"),
-         "x": "0.514",
-         "y": "0.686"
-      },
-      {
-         "pixmapfile": "africa/algeria.png",
-         "sound": "voices-$CA/$LOCALE/geography/algeria.$CA",
-         "toolTipText": qsTr("Algeria"),
-         "x": "0.279",
-         "y": "0.128"
-      },
-      {
-         "pixmapfile": "africa/south_africa.png",
-         "sound": "voices-$CA/$LOCALE/geography/south_africa.$CA",
-         "toolTipText": qsTr("South Africa"),
-         "x": "0.606",
-         "y": "0.913"
-      }
-   ]
+    property string instruction: qsTr("Asia")
+    property variant levels: [
+    {
+        "pixmapfile": "asia/background.png",
+        "type": "SHAPE_BACKGROUND_IMAGE"
+    },
+    {
+        "pixmapfile": "asia/russia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/russia.$CA",
+        "toolTipText": qsTr("Russia"),
+        "x": "0.497",
+        "y": "0.215"
+    },
+    {
+        "pixmapfile": "asia/mongolia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/mongolia.$CA",
+        "toolTipText": qsTr("Mongolia"),
+        "x": "0.562",
+        "y": "0.341"
+    },
+    {
+        "pixmapfile": "asia/japan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/japan.$CA",
+        "toolTipText": qsTr("Japan"),
+        "x": "0.855",
+        "y": "0.437"
+    },
+    {
+        "pixmapfile": "asia/north_korea.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/north_korea.$CA",
+        "toolTipText": qsTr("North Korea"),
+        "x": "0.768",
+        "y": "0.415"
+    },
+    {
+        "pixmapfile": "asia/south_korea.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/south_korea.$CA",
+        "toolTipText": qsTr("South Korea"),
+        "x": "0.79",
+        "y": "0.459"
+    },
+    {
+        "pixmapfile": "asia/kazakhstan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/kazakhstan.$CA",
+        "toolTipText": qsTr("Kazakhstan"),
+        "x": "0.293",
+        "y": "0.328"
+    },
+    {
+        "pixmapfile": "asia/uzbekistan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/uzbekistan.$CA",
+        "toolTipText": qsTr("Uzbekistan"),
+        "x": "0.289",
+        "y": "0.403"
+    },
+    {
+        "pixmapfile": "asia/taiwan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/taiwan.$CA",
+        "toolTipText": qsTr("Taiwan"),
+        "x": "0.772",
+        "y": "0.603"
+    },
+    {
+        "pixmapfile": "asia/vietnam.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/vietnam.$CA",
+        "toolTipText": qsTr("Vietnam"),
+        "x": "0.661",
+        "y": "0.691"
+    },
+    {
+        "pixmapfile": "asia/cambodia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/cambodia.$CA",
+        "toolTipText": qsTr("Cambodia"),
+        "x": "0.658",
+        "y": "0.732"
+    },
+    {
+        "pixmapfile": "asia/laos.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/laos.$CA",
+        "toolTipText": qsTr("Laos"),
+        "x": "0.644",
+        "y": "0.664"
+    },
+    {
+        "pixmapfile": "asia/thailand.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/thailand.$CA",
+        "toolTipText": qsTr("Thailand"),
+        "x": "0.627",
+        "y": "0.723"
+    },
+    {
+        "pixmapfile": "asia/sri_lanka.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/sri_lanka.$CA",
+        "toolTipText": qsTr("Sri Lanka"),
+        "x": "0.465",
+        "y": "0.785"
+    },
+    {
+        "pixmapfile": "asia/china.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/china.$CA",
+        "toolTipText": qsTr("China"),
+        "x": "0.577",
+        "y": "0.466"
+    },
+    {
+        "pixmapfile": "asia/india.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/india.$CA",
+        "toolTipText": qsTr("India"),
+        "x": "0.465",
+        "y": "0.624"
+    },
+    {
+        "pixmapfile": "asia/bangladesh.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/bangladesh.$CA",
+        "toolTipText": qsTr("Bangladesh"),
+        "x": "0.532",
+        "y": "0.602"
+    },
+    {
+        "pixmapfile": "asia/bhutan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/bhutan.$CA",
+        "toolTipText": qsTr("Bhutan"),
+        "x": "0.523",
+        "y": "0.561"
+    },
+    {
+        "pixmapfile": "asia/nepal.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/nepal.$CA",
+        "toolTipText": qsTr("Nepal"),
+        "x": "0.472",
+        "y": "0.55"
+    },
+    {
+        "pixmapfile": "asia/pakistan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/pakistan.$CA",
+        "toolTipText": qsTr("Pakistan"),
+        "x": "0.344",
+        "y": "0.527"
+    },
+    {
+        "pixmapfile": "asia/myanmar.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/myanmar.$CA",
+        "toolTipText": qsTr("Myanmar"),
+        "x": "0.579",
+        "y": "0.65"
+    },
+    {
+        "pixmapfile": "asia/philippines.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/philippines.$CA",
+        "toolTipText": qsTr("Philippines"),
+        "x": "0.8",
+        "y": "0.736"
+    },
+    {
+        "pixmapfile": "asia/indonesia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/indonesia.$CA",
+        "toolTipText": qsTr("Indonesia"),
+        "x": "0.727",
+        "y": "0.9"
+    },
+    {
+        "pixmapfile": "asia/malaysia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/malaysia.$CA",
+        "toolTipText": qsTr("Malaysia"),
+        "x": "0.699",
+        "y": "0.831"
+    },
+    {
+        "pixmapfile": "asia/afghanistan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/afghanistan.$CA",
+        "toolTipText": qsTr("Afghanistan"),
+        "x": "0.328",
+        "y": "0.487"
+    },
+    {
+        "pixmapfile": "asia/tajikistan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/tajikistan.$CA",
+        "toolTipText": qsTr("Tajikistan"),
+        "x": "0.35",
+        "y": "0.429"
+    },
+    {
+        "pixmapfile": "asia/kyrgyzstan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/kyrgyzstan.$CA",
+        "toolTipText": qsTr("Kyrgyzstan"),
+        "x": "0.371",
+        "y": "0.404"
+    },
+    {
+        "pixmapfile": "asia/turkmenistan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/turkmenistan.$CA",
+        "toolTipText": qsTr("Turkmenistan"),
+        "x": "0.26",
+        "y": "0.428"
+    },
+    {
+        "pixmapfile": "asia/iran.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/iran.$CA",
+        "toolTipText": qsTr("Iran"),
+        "x": "0.224",
+        "y": "0.505"
+    },
+    {
+        "pixmapfile": "asia/azerbaijan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/azerbaijan.$CA",
+        "toolTipText": qsTr("Azerbaijan"),
+        "x": "0.163",
+        "y": "0.414"
+    },
+    {
+        "pixmapfile": "asia/georgia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/georgia.$CA",
+        //: Translators: Strip Asia| and translate only Georgia
+        "toolTipText": qsTr("Asia|Georgia"),
+        "x": "0.133",
+        "y": "0.389"
+    },
+    {
+        "pixmapfile": "asia/turkey.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/turkey.$CA",
+        "toolTipText": qsTr("Turkey"),
+        "x": "0.077",
+        "y": "0.428"
+    },
+    {
+        "pixmapfile": "asia/syria.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/syria.$CA",
+        "toolTipText": qsTr("Syria"),
+        "x": "0.108",
+        "y": "0.478"
+    },
+    {
+        "pixmapfile": "asia/iraq.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/iraq.$CA",
+        "toolTipText": qsTr("Iraq"),
+        "x": "0.15",
+        "y": "0.492"
+    },
+    {
+        "pixmapfile": "asia/jordan.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/jordan.$CA",
+        "toolTipText": qsTr("Jordan"),
+        "x": "0.1",
+        "y": "0.517"
+    },
+    {
+        "pixmapfile": "asia/saudi_arabia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/saudi_arabia.$CA",
+        "toolTipText": qsTr("Saudi Arabia"),
+        "x": "0.167",
+        "y": "0.592"
+    },
+    {
+        "pixmapfile": "asia/yemen.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/yemen.$CA",
+        "toolTipText": qsTr("Yemen"),
+        "x": "0.192",
+        "y": "0.692"
+    },
+    {
+        "pixmapfile": "asia/united_arab_emirates.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/united_arab_emirates.$CA",
+        "toolTipText": qsTr("United Arab Emirates"),
+        "x": "0.236",
+        "y": "0.598"
+    },
+    {
+        "pixmapfile": "asia/oman.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/oman.$CA",
+        "toolTipText": qsTr("Oman"),
+        "x": "0.255",
+        "y": "0.628"
+    },
+    {
+        "pixmapfile": "asia/armenia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/armenia.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.15",
+        "y": "0.415"
+    },
+    {
+        "pixmapfile": "asia/kuwait.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/kuwait.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.18",
+        "y": "0.538"
+    },
+    {
+        "pixmapfile": "asia/cyprus.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/cyprus.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.065",
+        "y": "0.472"
+    },
+    {
+        "pixmapfile": "asia/lebanon.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/lebanon.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.086",
+        "y": "0.487"
+    },
+    {
+        "pixmapfile": "asia/bahrain.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/bahrain.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.208",
+        "y": "0.575"
+    },
+    {
+        "pixmapfile": "asia/qatar.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/qatar.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.214",
+        "y": "0.586"
+    },
+    {
+        "pixmapfile": "asia/brunei.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/brunei.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.744",
+        "y": "0.821"
+    },
+    {
+        "pixmapfile": "asia/israel.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/israel.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.08",
+        "y": "0.517"
+    },
+    {
+        "pixmapfile": "asia/palestine.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/palestine.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.081",
+        "y": "0.516"
+    },
+    {
+        "pixmapfile": "asia/red_sea.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/red_sea.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.128",
+        "y": "0.662"
+    },
+    {
+        "pixmapfile": "asia/africa2.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/africa2.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.176",
+        "y": "0.808"
+    },
+    {
+        "pixmapfile": "asia/africa.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/africa.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.054",
+        "y": "0.769"
+    },
+    {
+        "pixmapfile": "asia/persian_gulf.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/persian_gulf.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.223",
+        "y": "0.563"
+    },
+    {
+        "pixmapfile": "asia/mediteranean_sea.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/mediteranean_sea.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.042",
+        "y": "0.485"
+    },
+    {
+        "pixmapfile": "asia/black_sea.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/black_sea.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.059",
+        "y": "0.344"
+    },
+    {
+        "pixmapfile": "asia/caspian_sea.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/caspian_sea.$CA",
+        "type": "SHAPE_BACKGROUND",
+        "x": "0.189",
+        "y": "0.398"
+    }
+    ]
 }

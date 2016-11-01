@@ -40,13 +40,75 @@ ButtonStyle {
      */
     property real fixedFontSize: -1
 
+    /**
+     * type:string
+     * theme of the button. For now, three themes are accepted: "light" and "dark" and "highContrast"
+     *
+     * Default is dark.
+    */
+    property string theme: "dark"
+
+    /**
+     * type:variant
+     * existing themes for the button.
+     * A theme is composed of:
+     *   the colors of the button when selected: selectedColorGradient0 and selectedColorGradient1.
+     *   the colors of the button when not selected: backgroundColorGradient0 and backgroundColorGradient1.
+     *   the button's border color
+     *   the text color
+    */
+    property variant themes: {
+        "dark": {
+            backgroundColorGradient0: "#23373737",
+            selectedColorGradient0: "#C03ACAFF",
+            backgroundColorGradient1: "#13373737",
+            selectedColorGradient1: "#803ACAFF",
+            borderColor: "#FF373737",
+            textColor: "#FF373737"
+        },
+        "light": {
+            backgroundColorGradient0: "#42FFFFFF",
+            selectedColorGradient0: "#C03ACAFF",
+            backgroundColorGradient1: "#23FFFFFF",
+            selectedColorGradient1: "#803ACAFF",
+            borderColor: "white",
+            textColor: "white"
+        },
+        "highContrast": {
+            backgroundColorGradient0: "#EEFFFFFF",
+            selectedColorGradient0: "#C03ACAFF",
+            backgroundColorGradient1: "#AAFFFFFF",
+            selectedColorGradient1: "#803ACAFF",
+            borderColor: "white",
+            textColor: "373737"
+            
+        }
+    }
+
+    property string textSize: "regular"
+    
+    property variant textSizes: {
+        "regular": {
+            fontSize: 14,
+            fontBold: false
+        },
+        "subtitle": {
+            fontSize: 16,
+            fontBold: true
+        },
+        "title": {
+            fontSize: 24,
+            fontBold: true
+        }
+    }
+    
     background: Rectangle {
         border.width: control.activeFocus ? 4 : 2
-        border.color: "black"
+        border.color: themes[theme].borderColor
         radius: 10
         gradient: Gradient {
-            GradientStop { position: 0 ; color: control.pressed ? "#87ff5c" : "#ffe85c" }
-            GradientStop { position: 1 ; color: control.pressed ? "#44ff00" : "#f8d600" }
+            GradientStop { position: 0 ; color: control.pressed ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
+            GradientStop { position: 1 ; color: control.pressed ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
         }
     }
     label: Item {
@@ -57,8 +119,10 @@ ButtonStyle {
 
         GCText {
             id: labelText
+            color: themes[theme].textColor
             text: control.text
-            fontSize: regularSize
+            fontSize: textSizes[textSize].fontSize
+            font.bold: textSizes[textSize].fontBold
             anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
             wrapMode: Text.WordWrap

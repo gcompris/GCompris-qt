@@ -195,3 +195,7 @@ function playWord(word) {
     return items.audioVoices.append(
                 GCompris.ApplicationInfo.getAudioFilePathForLocale(word, locale))
 }
+
+function clearVoiceQueue() {
+    items.audioVoices.clearQueue()
+}

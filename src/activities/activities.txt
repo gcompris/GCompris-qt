@@ -29,7 +29,9 @@ clockgame
 color_mix
 color_mix_light
 colors
+crane
 details
+drawletters
 drawnumber
 enumerate
 erase
@@ -51,6 +53,7 @@ gnumch-inequality
 gnumch-multiples
 gnumch-primes
 graph-coloring
+guesscount
 guessnumber
 hangman
 hanoi
@@ -59,8 +62,10 @@ hexagon
 imagename
 instruments
 intro_gravity
+land_safe
 lang
 leftright
+letter-in-word
 lightsoff
 louis-braille
 magic-hat-minus
@@ -96,9 +101,12 @@ money_back
 money_back_cents
 money_cents
 mosaic
+nine_men_morris
+nine_men_morris_2players
 numbers-odd-even
 paintings
 penalty
+photo_hunter
 planegame
 readingh
 readingv
@@ -106,6 +114,7 @@ redraw
 redraw_symmetrical
 renewable_energy
 reversecount
+roman_numerals
 scalesboard
 scalesboard_weight
 scalesboard_weight_avoirdupois

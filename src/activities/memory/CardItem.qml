@@ -66,15 +66,16 @@ Flipable {
 
     back: Image {
         source: card.pairData.emptyCard
-        width: parent.width
-        height: parent.height
+        sourceSize.width: parent.width
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
+        anchors.fill: parent
         Image {
             source: card.pairData.image
             sourceSize.width: parent.width
-            sourceSize.height: parent.height
+            anchors.fill: parent
             anchors.centerIn: parent
+            anchors.margins: 6 * ApplicationInfo.ratio
             fillMode: Image.PreserveAspectFit
         }
         GCText {
@@ -93,11 +94,11 @@ Flipable {
     // Warning front and back property are reversed. Could not find
     // a way to display back at start time without this trick
     front: Image {
-        width: parent.width
-        height: parent.height
         fillMode: Image.PreserveAspectFit
         source: card.pairData.back
+        sourceSize.width: parent.width
         anchors.centerIn: parent
+        anchors.fill: parent
     }
 
     transform: Rotation {

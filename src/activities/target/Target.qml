@@ -75,7 +75,10 @@ ActivityBase {
             }
         }
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            keyboard.populate();
+            Activity.start(items)
+        }
         onStop: { Activity.stop() }
 
         TargetItem {
@@ -184,7 +187,9 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             hide: items.currentArrow == items.nbArrow ? false : true
 
-            layout: [ [
+            function populate() {
+                layout = [
+                [
                     { label: "0" },
                     { label: "1" },
                     { label: "2" },
@@ -197,6 +202,7 @@ ActivityBase {
                     { label: "9" },
                     { label: keyboard.backspace }
                 ] ]
+            }
             onKeypress: background.appendText(text)
 
             onError: console.log("VirtualKeyboard error: " + msg);

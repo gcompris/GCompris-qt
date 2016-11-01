@@ -40,6 +40,9 @@ ActivityBase {
         signal start
         signal stop
 
+        onWidthChanged: helico.init()
+        onHeightChanged: helico.init()
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -58,6 +61,10 @@ ActivityBase {
             property alias answerArea: answerArea
             property alias numpad: numpad
             property int currentMax: 0
+            property int maxSize: 120
+            property int minSize: 80
+            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
+            property int size: Math.min(background.width / 9, background.height / (8 + barHeightAddon))
         }
 
         onStart: { Activity.start(items) }
@@ -65,6 +72,12 @@ ActivityBase {
 
         Helico {
             id: helico
+            fillMode: "PreserveAspectFit"
+            sourceSize.height: items.maxSize * ApplicationInfo.ratio
+            height: (items.size>items.minSize) ?
+                                   (items.size<items.maxSize) ? items.size * ApplicationInfo.ratio :
+                                                                items.maxSize * ApplicationInfo.ratio :
+                                   items.minSize * ApplicationInfo.ratio
         }
 
         GCText {
@@ -79,13 +92,15 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
             color: "white"
             font.bold: true
-            fontSize: 20
+            fontSize: mediumSize
         }
 
         AnswerArea {
             id: answerArea
             anchors.right: parent.right
-            anchors.rightMargin: numpad.columnWidth + 10
+            anchors.rightMargin: numpad.visible ?
+                                     numpad.columnWidth + 10 * ApplicationInfo.ratio :
+                                     10 * ApplicationInfo.ratio
             anchors.top: parent.top
             anchors.topMargin: 10
         }
@@ -94,10 +109,10 @@ ActivityBase {
             id: userInfo
             anchors.top: textArea.top
             anchors.topMargin: 15 + textArea.contentHeight
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenter: textArea.horizontalCenter
             color: "white"
             font.bold: true
-            fontSize: mediumSize
+            fontSize: regularSize
         }
 
         NumPad {

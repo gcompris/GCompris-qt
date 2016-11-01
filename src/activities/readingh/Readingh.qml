@@ -206,6 +206,7 @@ ActivityBase {
                 property int idToHideBecauseOverflow: 0
                 delegate: GCText {
                     text: modelData
+                    color: "#373737"
                     opacity: iAmReady.visible ? false : (index == items.currentIndex ? 1 : 0)
 
                     onOpacityChanged: {
@@ -230,8 +231,8 @@ ActivityBase {
             id: wordToFindBox
             x: 430/800*parent.width
             y: 90/600*parent.height
-            text: qsTr("Check if the word<br/><b><font color=\"blue\">%1</font></b><br/>is displayed").arg(items.textToFind)
-            color: "black"
+            text: qsTr("<font color=\"#373737\">Check if the word<br/><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed").arg(items.textToFind)
+            color: "#373737"
             horizontalAlignment: Text.AlignHCenter
             width: background.width/3
             height: background.height/5
@@ -242,9 +243,10 @@ ActivityBase {
             id: iAmReady
             onClicked: Activity.run()
             x: background.width / 2
-            y: background.height / 2
+            y: background.height / 2.2
             anchors.verticalCenter: undefined
             anchors.horizontalCenter: undefined
+            theme: "light"
         }
         Flow {
             id: answerButtonsFlow
@@ -254,7 +256,7 @@ ActivityBase {
             AnswerButton {
                 id : answerButtonFound
                 width: Math.min(250 * ApplicationInfo.ratio, background.width/2-10)
-                height: 80 * ApplicationInfo.ratio
+                height: 60 * ApplicationInfo.ratio
                 textLabel: qsTr("Yes, I saw it!")
                 isCorrectAnswer: Activity.words ? Activity.words.indexOf(items.textToFind) != -1 : false
                 onCorrectlyPressed: if(isClickInProgress && !isClickInProgress2) { bonus.good("flower"); isClickInProgress2 = true }
@@ -269,7 +271,7 @@ ActivityBase {
             AnswerButton {
                 id : answerButtonNotFound
                 width: Math.min(250 * ApplicationInfo.ratio, background.width/2-10)
-                height: 80 * ApplicationInfo.ratio
+                height: 60 * ApplicationInfo.ratio
                 textLabel: qsTr("No, it was not there!")
                 isCorrectAnswer: !answerButtonFound.isCorrectAnswer
                 onCorrectlyPressed: if(isClickInProgress && !isClickInProgress2) { bonus.good("flower"); isClickInProgress2 = true }

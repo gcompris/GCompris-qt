@@ -26,6 +26,8 @@ import "../../core"
 
 Item {
     id: item
+
+    z: 10
     
     property alias world: itemBody.world
 

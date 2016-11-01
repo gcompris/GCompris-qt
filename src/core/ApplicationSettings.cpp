@@ -22,12 +22,17 @@
 #include "ApplicationSettings.h"
 #include "ApplicationInfo.h"
 
+#include "DownloadManager.h"
+
 #include <qmath.h>
 #include <QUrl>
 #include <QUrlQuery>
 #include <QGuiApplication>
 #include <QScreen>
 #include <QLocale>
+#include <QApplication>
+#include <QRect>
+#include <QDesktopWidget>
 
 #include <QSettings>
 #include <QStandardPaths>
@@ -45,6 +50,8 @@ static const QString INTERNAL_GROUP_KEY = "Internal";
 static const QString FAVORITE_GROUP_KEY = "Favorite";
 
 static const QString FULLSCREEN_KEY = "fullscreen";
+static const QString PREVIOUS_HEIGHT_KEY = "previousHeight";
+static const QString PREVIOUS_WIDTH_KEY = "previousWidth";
 static const QString SHOW_LOCKED_ACTIVITIES_KEY = "showLockedActivities";
 static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
 static const QString ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
@@ -84,13 +91,17 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
               "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QSettings::IniFormat)
 {
+    const QRect &screenSize = QApplication::desktop()->screenGeometry();
+
     // initialize from settings file or default
 
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_isAudioEffectsEnabled = m_config.value(ENABLE_AUDIO_EFFECTS_KEY, true).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
-	m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
+    m_previousHeight = m_config.value(PREVIOUS_HEIGHT_KEY, screenSize.height()).toUInt();
+    m_previousWidth = m_config.value(PREVIOUS_WIDTH_KEY, screenSize.width()).toUInt();
+    m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
             ApplicationInfo::getInstance()->isMobile()).toBool();
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
@@ -156,6 +167,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
 	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
 	connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
+    connect(this, &ApplicationSettings::previousHeightChanged, this, &ApplicationSettings::notifyPreviousHeightChanged);
+    connect(this, &ApplicationSettings::previousWidthChanged, this, &ApplicationSettings::notifyPreviousWidthChanged);
     connect(this, &ApplicationSettings::localeChanged, this, &ApplicationSettings::notifyLocaleChanged);
     connect(this, &ApplicationSettings::fontChanged, this, &ApplicationSettings::notifyFontChanged);
     connect(this, &ApplicationSettings::virtualKeyboardChanged, this, &ApplicationSettings::notifyVirtualKeyboardChanged);
@@ -183,6 +196,8 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(FONT_KEY, m_font);
     m_config.setValue(IS_CURRENT_FONT_EMBEDDED, m_isEmbeddedFont);
     m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
+    m_config.setValue(PREVIOUS_HEIGHT_KEY, m_previousHeight);
+    m_config.setValue(PREVIOUS_WIDTH_KEY, m_previousWidth);
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
@@ -269,6 +284,18 @@ void ApplicationSettings::notifyFullscreenChanged()
     qDebug() << "fullscreen set to: " << m_isFullscreen;
 }
 
+void ApplicationSettings::notifyPreviousHeightChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, PREVIOUS_HEIGHT_KEY, m_previousHeight);
+    qDebug() << "previous height set to: " << m_previousHeight;
+}
+
+void ApplicationSettings::notifyPreviousWidthChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, PREVIOUS_WIDTH_KEY, m_previousWidth);
+    qDebug() << "previous width set to: " << m_previousWidth;
+}
+
 void ApplicationSettings::notifyVirtualKeyboardChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
@@ -331,6 +358,14 @@ void ApplicationSettings::notifySectionVisibleChanged()
 
 void ApplicationSettings::notifyWordsetChanged()
 {
+    if(!m_wordset.isEmpty() &&
+       DownloadManager::getInstance()->haveLocalResource(m_wordset) &&
+       !DownloadManager::getInstance()->isDataRegistered("words")) {
+        // words.rcc is there -> register old file first
+        // then try to update in the background
+        DownloadManager::getInstance()->updateResource(m_wordset);
+    }
+
     updateValueInConfig(GENERAL_GROUP_KEY, WORDSET, m_wordset);
     qDebug() << "notifyWordset: " << m_wordset;
 }

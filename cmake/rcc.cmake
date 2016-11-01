@@ -45,11 +45,9 @@ function(GCOMPRIS_ADD_RCC resource_path)
                      WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
 
   if(CMAKE_HOST_APPLE)
-    install(FILES ${CREATED_RCC} DESTINATION gcompris-qt.app/Contents/MacOS/rcc)
-  elseif(SAILFISHOS)
-    install(FILES ${CREATED_RCC} DESTINATION share/harbour-gcompris-qt/rcc)
+    install(FILES ${CREATED_RCC} DESTINATION ${GCOMPRIS_EXECUTABLE_NAME}.app/Contents/MacOS/rcc)
   else()
-    install(FILES ${CREATED_RCC} DESTINATION share/gcompris-qt/rcc)
+    install(FILES ${CREATED_RCC} DESTINATION share/${GCOMPRIS_EXECUTABLE_NAME}/rcc)
   endif()
 
   add_custom_target(

@@ -1,6 +1,6 @@
 /* GCompris - clickgame.js
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -222,8 +222,11 @@ var background
 var bar
 var bonus
 
+var isActivityStopped = false
+
 // The array of created fishes object
 var createdFishes
+var component = Qt.createComponent("qrc:/gcompris/src/activities/clickgame/Fish.qml");
 
 function start(activity_, background_, bar_, bonus_, items_) {
     activity = activity_
@@ -232,28 +235,34 @@ function start(activity_, background_, bar_, bonus_, items_) {
     bonus = bonus_
     items = items_
     currentLevel = 0
+    isActivityStopped = false
     initLevel()
     items.killedFishes = 0
 }
 
 function stop() {
+    isActivityStopped = true
     destroyFishes();
 }
 
 function initLevel() {
+    if(isActivityStopped)
+        return;
+
     destroyFishes();
     bar.level = currentLevel + 1
     background.source = "qrc:/gcompris/src/activities/clickgame/resource/sea" +
             bar.level + ".jpg"
-    createdFishes = new Array()
-    for(var i = 0;  i < levelProperty[currentLevel].nbFish; ++i) {
+    var nbFish = levelProperty[currentLevel].nbFish
+    createdFishes = new Array(nbFish)
+    for(var i = 0;  i < nbFish; ++i) {
          createdFishes[i] = createFish(levelProperty[currentLevel].minDuration)
     }
-    items.score.numberOfSubLevels = createdFishes.length
+    items.score.numberOfSubLevels = nbFish
 }
 
 function nextLevel() {
-    if(levelProperty.length <= ++currentLevel ) {
+    if(levelProperty.length <= ++currentLevel) {
         currentLevel = 0
     }
     
@@ -269,7 +278,6 @@ function previousLevel() {
 }
 
 function createFish(minDuration) {
-    var component = Qt.createComponent("qrc:/gcompris/src/activities/clickgame/Fish.qml");
     var fishSource = fishes[Math.floor(Math.random() * fishes.length)]
     var fish = component.createObject(
                 background,

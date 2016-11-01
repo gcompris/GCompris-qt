@@ -93,7 +93,7 @@ Item {
       * type: real
       * Width of all the buttons
       */
-    property real totalWidth: openBar.width
+    property real totalWidth: 66
 
     readonly property int fullButton: 66
     readonly property int halfButton: 30
@@ -182,7 +182,7 @@ Item {
         {
             'bid': exit,
             'contentId': content.exit,
-            'allowed': true
+            'allowed': !ApplicationSettings.isKioskMode
         },
         {
             'bid': about,
@@ -284,7 +284,7 @@ Item {
     function updateContent() {
         var newButtonModel = new Array()
         numberOfButtons = 0
-        totalWidth = openBar.width;
+        totalWidth = 66;
         for(var def in buttonList) {
             if((content.value & buttonList[def].contentId) &&
                buttonList[def].allowed) {

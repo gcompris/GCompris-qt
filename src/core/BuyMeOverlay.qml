@@ -1,4 +1,4 @@
-/* GCompris - BuyMeOverlayInapp.qml
+/* GCompris - BuyMeOverlay.qml
  *
  * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
@@ -44,13 +44,14 @@ Item {
             topMargin: 40
         }
         width: parent.width - cancelButton.width * 2
-        height: instructionTxt.height
+        height: parent.height/2
         radius: 10
         border.width: 2
         border.color: "black"
         color: 'white'
 
         Row {
+            id: row
             anchors {
                 fill: parent
                 margins: 10
@@ -64,12 +65,13 @@ Item {
 
             GCText {
                 id: instructionTxt
-                fontSize: mediumSize
+                fontSizeMode: Text.Fit
                 color: "black"
                 style: Text.Outline
                 styleColor: "white"
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width - lock.width
+                height: instruction.height - row.anchors.margins/2
                 wrapMode: TextEdit.WordWrap
                 z: 2
                 text: qsTr("This activity is only available in the full version of GCompris." + "<br/>" +

@@ -105,6 +105,8 @@ Item {
     Behavior on opacity { NumberAnimation { duration: 200 } }
     onOpacityChanged: opacity === 0 ? close() : null
 
+    z: 1500
+
     Rectangle {
         anchors.fill: parent
         opacity: 0.8
@@ -163,13 +165,8 @@ Item {
                     textFormat: TextEdit.RichText
                     z: 2
                     text: style + "<body>" + textIn + "</body>"
-                    Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
-                                               linkActivated.connect(Qt.openUrlExternally) : null
-
                     property string textIn
-                    property string style: ApplicationInfo.isDownloadAllowed ?
-                                               "<HEAD><STYLE type='text/css'>A {color: blue;}</STYLE></HEAD>" :
-                                               "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
+                    property string style: "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
                 }
             }
         }
@@ -184,6 +181,7 @@ Item {
                 topMargin: 10
             }
             style: GCButtonStyle {
+                theme: "highContrast"
             }
             visible: text != ""
             onClicked: {
@@ -202,6 +200,7 @@ Item {
                 topMargin: 10
             }
             style: GCButtonStyle {
+                theme: "highContrast"
             }
             visible: text != ""
             onClicked: {

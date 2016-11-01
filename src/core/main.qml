@@ -44,8 +44,8 @@ import "qrc:/gcompris/src/core/core.js" as Core
 Window {
     id: main
     // Start in window mode at full screen size
-    width: Screen.width
-    height: Screen.height
+    width: ApplicationSettings.previousWidth
+    height: ApplicationSettings.previousHeight
     minimumWidth: 400 * ApplicationInfo.ratio
     minimumHeight: 400 * ApplicationInfo.ratio
     title: "GCompris"
@@ -108,17 +108,31 @@ Window {
     }
 
     function checkWordset() {
-        if(ApplicationSettings.wordset == '')
-            return
+        var wordset = ApplicationSettings.wordset
+        if(wordset == '')
+            // Maybe the wordset has been bundled or copied manually
+            // we have to register it if we find it.
+            wordset = 'data2/words/words.rcc'
 
         // check for words.rcc:
         if (DownloadManager.isDataRegistered("words")) {
             // words.rcc is already registered -> nothing to do
-        } else if(DownloadManager.haveLocalResource(ApplicationSettings.wordset)) {
+        } else if(DownloadManager.haveLocalResource(wordset)) {
             // words.rcc is there -> register old file first
             // then try to update in the background
-            DownloadManager.updateResource(ApplicationSettings.wordset);
-        } else {
+            if(DownloadManager.updateResource(wordset)) {
+                DownloadManager.resourceRegistered.connect(function() {
+                    // not sure if needed, we check if the resource registered is the one we updated here?
+                    if(wordset === arguments[0]) {
+                        DownloadManager.resourceRegistered.disconnect(arguments.callee);
+                        // force configuration to use the local wordset
+                        ApplicationSettings.wordset = wordset
+                    }
+                })
+            }
+
+
+        } else if(ApplicationSettings.wordset) { // Only if wordset specified
             // words.rcc has not been downloaded yet -> ask for download
             Core.showMessageDialog(
                         main,
@@ -126,7 +140,7 @@ Window {
                         + qsTr("Do you want to download them now?"),
                         qsTr("Yes"),
                         function() {
-                            if (DownloadManager.downloadResource(ApplicationSettings.wordset))
+                            if (DownloadManager.downloadResource(wordset))
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
                         qsTr("No"), null,
@@ -145,7 +159,9 @@ Window {
                     + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
                     + ", sharedWritablePath=" + ApplicationInfo.getSharedWritablePath()
                     + ")");
-        if (ApplicationSettings.exeCount == 1 && !ApplicationSettings.isKioskMode) {
+        if (ApplicationSettings.exeCount === 1 &&
+                !ApplicationSettings.isKioskMode &&
+                ApplicationInfo.isDownloadAllowed) {
             // first run
             var dialog;
             dialog = Core.showMessageDialog(
@@ -175,7 +191,26 @@ Window {
             );
         }
         else {
-            checkWordset()
+            // Register voices-resources for current locale, updates/downloads only if
+            // not prohibited by the settings
+            if (!DownloadManager.areVoicesRegistered()) {
+                if (DownloadManager.updateResource(
+                            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))) {
+                    DownloadManager.resourceRegistered.connect(function() {
+                        // not sure if needed, we check if the resource registered is the one we updated here?
+                        if(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale) === arguments[0]) {
+                            DownloadManager.resourceRegistered.disconnect(arguments.callee);
+                            checkWordset();
+                        }
+                    });
+                }
+                else {
+                    checkWordset()
+                }
+            }
+            else {
+                checkWordset()
+            }
 
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode

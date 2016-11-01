@@ -170,7 +170,7 @@ Item {
                     }
 
                     if(imgSound)
-                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound))
+                        activity.audioEffects.play(ApplicationInfo.getAudioFilePath(imgSound))
                     tileImage.pressedOnce = true
                 }
 

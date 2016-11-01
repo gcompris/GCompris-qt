@@ -77,13 +77,11 @@ AnimatedSprite {
             y = Activity.currentLevel > 0
                     ? bar.height + Math.random() * (background.height - bar.height - fish.height)
                     : y
-            bubbleEffect.restart()
         } else if(x == 0 && rotate.angle == 180) {
             rotateRightAnimation.start()
             targetX = background.width - fish.width
             x = targetX
-            bubbleEffect.restart()
-        }
+       }
     }
     Behavior on x { PropertyAnimation { duration: fish.duration } }
     Behavior on y { PropertyAnimation { duration: fish.duration } }
@@ -104,10 +102,6 @@ AnimatedSprite {
         id: bubbleEffect
         anchors.fill: parent
         active: ApplicationInfo.hasShader
-        function restart() {
-            if(active)
-                item.restart()
-        }
         sourceComponent: ParticleSystem {
             anchors.fill: parent
             Emitter {

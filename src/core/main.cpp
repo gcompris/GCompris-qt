@@ -19,7 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 #include <QtDebug>
-#include <QGuiApplication>
+#include <QApplication>
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
     // Disable it because we already support HDPI display natively
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
@@ -158,12 +158,12 @@ int main(int argc, char *argv[])
     QCommandLineOption clMute(QStringList() << "m" << "mute",
                                        QObject::tr("Run GCompris without sound."));
     parser.addOption(clMute);
-    QCommandLineOption clWithoutConfig(QStringList() << "disable-config",
-                                       QObject::tr("Disable the configuration button."));
-    parser.addOption(clWithoutConfig);
-    QCommandLineOption clWithConfig(QStringList() << "enable-config",
-                                       QObject::tr("Enable the configuration button (default)."));
-    parser.addOption(clWithConfig);
+    QCommandLineOption clWithoutKioskMode(QStringList() << "disable-kioskmode",
+                                       QObject::tr("Disable the kiosk mode (default)."));
+    parser.addOption(clWithoutKioskMode);
+    QCommandLineOption clWithKioskMode(QStringList() << "enable-kioskmode",
+                                       QObject::tr("Enable the kiosk mode."));
+    parser.addOption(clWithKioskMode);
     parser.process(app);
 
 
@@ -210,12 +210,6 @@ int main(int argc, char *argv[])
     // Update execution counter
     ApplicationSettings::getInstance()->setExeCount(ApplicationSettings::getInstance()->exeCount() + 1);
 
-    // Register voices-resources for current locale, updates/downloads only if
-    // not prohibited by the settings
-    if(!DownloadManager::getInstance()->areVoicesRegistered())
-        DownloadManager::getInstance()->updateResource(DownloadManager::getInstance()
-            ->getVoicesResourceForLocale(locale));
-
     if(parser.isSet(clFullscreen)) {
         isFullscreen = true;
     }
@@ -230,10 +224,10 @@ int main(int argc, char *argv[])
         ApplicationSettings::getInstance()->setIsAudioEffectsEnabled(true);
         ApplicationSettings::getInstance()->setIsAudioVoicesEnabled(true);
     }
-    if(parser.isSet(clWithConfig)) {
+    if(parser.isSet(clWithoutKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(false);
     }
-    if(parser.isSet(clWithoutConfig)) {
+    if(parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
     }
 

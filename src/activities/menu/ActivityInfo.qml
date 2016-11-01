@@ -43,7 +43,8 @@ Shortcuts:
     Ctrl+B Show or Hide the control bar
     Ctrl+F Toggle full screen
     Ctrl+M Toggle mute for the background music
-    Ctrl+S Toggle the activity section bar" )
+    Ctrl+S Toggle the activity section bar
+    " )
   credit: ""
   section: "/"
 }

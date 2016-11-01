@@ -35,7 +35,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/traffic/resource/traffic_bg.svg"
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
 
         signal start

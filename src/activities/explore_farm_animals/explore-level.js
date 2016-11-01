@@ -41,7 +41,7 @@ function start(items_,url_,levelCount_) {
 }
 
 function stop() {
-    items.audioEffects.stop()
+    items.audioVoices.stop()
 }
 
 function initLevel() {
@@ -59,7 +59,7 @@ function initLevel() {
     items.progressbar.value = 0
     items.descriptionPanel.visible = false
     // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
-    items.audioEffects.stop()
+    items.audioVoices.stop()
     items.instruction.visible = true
 
     reload();
@@ -96,7 +96,7 @@ function previousLevel() {
     initLevel();
 
     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
-        items.audioEffects.play(getCurrentQuestion().audio);
+        items.audioVoices.play(getCurrentQuestion().audio);
     }
 }
 
@@ -113,7 +113,7 @@ function initSubSubLevel() {
         items.bonus.good("smiley");
     }
      if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
-        items.audioEffects.play(getCurrentQuestion().audio);
+        items.audioVoices.play(getCurrentQuestion().audio);
     }
 }
 
@@ -128,7 +128,7 @@ function reload() {
 }
 
 function repeat() {
-    items.audioEffects.play(getCurrentQuestion().audio);
+    items.audioVoices.play(getCurrentQuestion().audio);
 }
 
 function getCurrentQuestion() {

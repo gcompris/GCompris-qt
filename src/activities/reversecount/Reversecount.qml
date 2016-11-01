@@ -179,11 +179,12 @@ ActivityBase {
                 margins: 10
             }
             sourceSize.width: 66 * bar.barZoom
-            property int remainingife: items.clockPosition
-            onRemainingifeChanged: clockAnim.start()
+            property int remainingLife: items.clockPosition
+            onRemainingLifeChanged: if(remainingLife >= 0) clockAnim.restart()
 
             SequentialAnimation {
                 id: clockAnim
+                alwaysRunToEnd: true
                 ParallelAnimation {
                     NumberAnimation {
                         target: clock; properties: "opacity";
@@ -211,7 +212,6 @@ ActivityBase {
                 }
             }
         }
-
 
         ChooseDiceBar {
             id: chooseDiceBar

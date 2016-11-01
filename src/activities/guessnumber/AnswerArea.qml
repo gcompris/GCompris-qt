@@ -26,7 +26,7 @@ import "guessnumber.js" as Activity
 
 Rectangle {
     id: answerBackground
-    width: 130 * ApplicationInfo.ratio
+    width: hiddentext.width * 1.2
     height: 60 * ApplicationInfo.ratio
     color: activeFocus ? "#ff07fff2" : "#cccccccc"
     radius: 10
@@ -56,9 +56,16 @@ Rectangle {
         verticalAlignment: Text.AlignVCenter
         text: answerBackground.userEntry
         color: "black"
-        fontSize: 28
+        fontSize: largeSize
         style: Text.Outline
         styleColor: "white"
+    }
+
+    GCText {
+        id: hiddentext
+        opacity: 0
+        fontSize: userEntryText.fontSize
+        text: items.currentMax
     }
 
     onUserEntryChanged: {

@@ -44,13 +44,14 @@ Item {
             topMargin: 40
         }
         width: parent.width - cancelButton.width * 2
-        height: instructionTxt.height
+        height: Math.max(instructionTxt.height, lock.height) + 2*row.anchors.margins
         radius: 10
         border.width: 2
         border.color: "black"
         color: 'white'
 
         Row {
+            id: row
             anchors {
                 fill: parent
                 margins: 10
@@ -86,7 +87,8 @@ Item {
             }
             text: qsTr("Buy the full version").toUpperCase()
             style: GCButtonStyle {
-            }
+                 theme: "highContrast"
+           }
 
             onClicked: {
                 if(ApplicationSettings.isDemoMode)

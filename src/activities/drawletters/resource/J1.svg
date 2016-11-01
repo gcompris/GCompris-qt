@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="520"
+   id="svg3806"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 19">
+  <defs
+     id="defs3808" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="375"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3811">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-532.36218)">
+    <path
+       style="fill:#00ffff;fill-rule:evenodd"
+       inkscape:connector-curvature="0"
+       d="m 344.21421,600.53568 0,226.20932 c 0,18.81345 -1.73779,32.52536 -5.21341,41.13574 -3.47562,8.56061 -9.81863,15.35437 -19.02902,20.38126 -9.21039,4.97708 -20.1586,7.46564 -32.84461,7.46564 -17.20431,0 -30.67233,-4.6287 -40.40408,-13.88611 -9.73172,-9.25742 -15.20584,-26.42841 -16.4223,-51.513 l -45.61749,5.37524 c -0.69513,32.69959 7.8491,57.33624 25.63269,73.91 17.84152,16.57373 43.53213,24.86063 77.07187,24.86063 22.59152,0 42.25772,-3.95682 58.99862,-11.87039 16.79883,-7.91361 29.05039,-19.41071 36.75467,-34.49134 7.76221,-15.08062 11.64334,-36.35772 11.64334,-63.83133 l 0,-223.74567 z"
+       id="path3776" />
+  </g>
+</svg>

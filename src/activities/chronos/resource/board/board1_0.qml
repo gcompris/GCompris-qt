@@ -32,25 +32,25 @@ QtObject {
           "pixmapfile": "images/4.png",
           "x": "0.7",
           "y": "0.7",
-          "soundFile": "sound/2.ogg"
+          "soundFile": "sound/2.$CA"
       },
       {
           "pixmapfile": "images/3.png",
           "x": "0.3",
           "y": "0.7",
-          "soundFile": "sound/3.ogg"
+          "soundFile": "sound/3.$CA"
       },
       {
           "pixmapfile": "images/2.png",
           "x": "0.7",
           "y": "0.25",
-          "soundFile": "sound/2.ogg"
+          "soundFile": "sound/2.$CA"
       },
       {
           "pixmapfile": "images/1.png",
           "x": "0.3",
           "y": "0.25",
-          "soundFile": "sound/1.ogg"
+          "soundFile": "sound/1.$CA"
       },
       {
 		  "text": qsTr("1"),

@@ -89,7 +89,7 @@ ActivityBase {
             property alias modelListModel: modelList.model
             property alias userList: userList
             property alias userListModel: userList.model
-            property Item selectedITem
+            property Item selectedItem
             property var currentTans: Dataset.dataset[bar.level - 1]
             property int numberOfLevel: Dataset.dataset.length
             property bool editionMode: false
@@ -157,17 +157,14 @@ ActivityBase {
         Repeater {
             id: userList
             model: items.currentTans.pieces
-            Image {
-                id: tans
-                x: background.playX + background.playWidth * xRatio - width / 2
-                y: background.playY + background.playHeight * yRatio - height / 2
-                mirror: !items.editionMode ? modelData.initFlipping : modelData.flipping
-                rotation: !items.editionMode ? modelData.initRotation : modelData.rotation
-                source: Activity.url + modelData.img
-                sourceSize.width: modelData.width * background.playWidth
-                sourceSize.height: modelData.height * background.playWidth
-                z: 100 + index
+            Item {
+                id: tansItem
+                x: background.playX + background.playWidth * xRatio - tans.width / 2
+                y: background.playY + background.playHeight * yRatio - tans.height / 2
+                width: tans.width
+                height: tans.height
 
+                z: 100 + index
                 property real xRatio: !items.editionMode ? modelData.initX : modelData.x
                 property real yRatio: !items.editionMode ? modelData.initY : modelData.y
                 property bool selected: false
@@ -175,30 +172,47 @@ ActivityBase {
                 property bool flippable: modelData.flippable
                 property bool rotable: modelData.moduloRotation != 0
 
-                // After a drag the [x, y] positions are adressed directly breaking our
+                property alias tans: tans
+                rotation: !items.editionMode ? modelData.initRotation : modelData.rotation
+                property alias mirror: tans.mirror
+                function restoreZindex() {
+                    z = 100 + index
+                }
+
+                onSelectedChanged: {
+                    if(!selected)
+                        restoreZindex()
+                }
+
+                function positionToTans() {
+                    return [
+                    (x + width / 2 - background.playX) / background.playWidth,
+                    (y + height / 2 - background.playY) / background.playHeight
+                    ]
+                }
+
+                // After a drag the [x, y] positions are addressed directly breaking our
                 // binding. Call me to reset the binding.
                 function restoreBindings() {
                     x = Qt.binding(function() { return background.playX + background.playWidth * xRatio - width / 2})
                     y = Qt.binding(function() { return background.playY + background.playHeight * yRatio - height / 2 })
                 }
 
-                function restoreZindex() {
-                    z = 100 + index
+                Image {
+                    id: tans
+                    mirror: !items.editionMode ? modelData.initFlipping : modelData.flipping
+                    source: Activity.url + modelData.img
+                    sourceSize.width: modelData.width * background.playWidth
+                    sourceSize.height: modelData.height * background.playWidth
+                    // without this, the colorOverlay is not well displayed when flipping image (https://bugreports.qt.io/browse/QTBUG-33482)
+                    layer.enabled: true
                 }
-
-                function positionToTans() {
-                    return [
-                                (x + width / 2 - background.playX) / background.playWidth,
-                                (y + height / 2 - background.playY) / background.playHeight
-                            ]
-                }
-
                 // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
                     // moduloRotation == 0 to disable rotation, assume 360 in this case
                     var mod = modelData.moduloRotation ? modelData.moduloRotation : 360
                     if(modelData.flipable || modelData.flipping || !mirror)
-                        return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
+                         return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
                     else
                         // It flipping but model is not flipping sensitive we have to rotate accordingly
                         return rotation >= 0 ? (rotation - (mod - 90)) % mod : (360 + rotation - (mod - 90)) % mod
@@ -225,21 +239,16 @@ ActivityBase {
                 Drag.hotSpot.x : width / 2
                 Drag.hotSpot.y : height / 2
 
-                onSelectedChanged: {
-                    if(!selected)
-                        tans.restoreZindex()
-                }
-
                 MouseArea {
                     id: dragArea
                     anchors.fill: parent
                     drag.target: parent
                     onPressed: {
-                        parent.z = 200
-                        if(items.selectedITem && items.selectedITem != tans)
-                            items.selectedITem.selected = false
-                        items.selectedITem = tans
-                        parent.selected = true
+                        tansItem.z = 200
+                        if(items.selectedItem && items.selectedItem != tansItem)
+                        items.selectedItem.selected = false
+                        items.selectedItem = tansItem
+                        tansItem.selected = true
                         background.checkWin()
                     }
                     onDoubleClicked: {
@@ -250,37 +259,14 @@ ActivityBase {
                         var posTans = positionToTans()
                         var closest = Activity.getClosest(posTans)
                         if(closest && !items.editionMode) {
-                            tans.xRatio = closest[0]
-                            tans.yRatio = closest[1]
+                            tansItem.xRatio = closest[0]
+                            tansItem.yRatio = closest[1]
                         } else {
-                            tans.xRatio = posTans[0]
-                            tans.yRatio = posTans[1]
+                            tansItem.xRatio = posTans[0]
+                            tansItem.yRatio = posTans[1]
                         }
-                        tans.restoreBindings()
+                        tansItem.restoreBindings()
                         background.checkWin()
-                    }
-                }
-
-                Colorize {
-                    id: color
-                    anchors.fill: parent
-                    source: parent
-                    hue: 0.6
-                    lightness: -0.2
-                    saturation: 0.5
-                    opacity: parent.selected ? 1 : 0
-                }
-
-                Behavior on x {
-                    PropertyAnimation  {
-                        duration: tans.animDuration
-                        easing.type: Easing.InOutQuad
-                    }
-                }
-                Behavior on y {
-                    PropertyAnimation  {
-                        duration: tans.animDuration
-                        easing.type: Easing.InOutQuad
                     }
                 }
 
@@ -289,9 +275,9 @@ ActivityBase {
                     source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
                     x: - width
                     y: parent.height / 2 - height / 2
-                    visible: parent.selected && parent.rotable
+                    visible: tansItem.selected && tansItem.rotable
                     sourceSize.width: 40 * ApplicationInfo.ratio
-                    z: parent.z + 1
+                    z: tansItem.z + 1
 
                     RotateMouseArea {}
                 }
@@ -301,18 +287,39 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/tangram/resource/tangram/flip.svg"
                     x: parent.width / 2 - width / 2
                     y: parent.height - height / 2
-                    visible: parent.selected && parent.flippable
+                    visible: tansItem.selected && tansItem.flippable
                     sourceSize.width: 40 * ApplicationInfo.ratio
-                    z: parent.z + 1
+                    z: tansItem.z + 1
 
                     MouseArea {
                         anchors.fill: parent
-                        onClicked: tans.flipMe()
+                        onClicked: tansItem.flipMe()
                     }
                 }
 
-            }
+                Colorize {
+                    id: color
+                    anchors.fill: tans
+                    source: tans
+                    hue: 0.6
+                    lightness: -0.2
+                    saturation: 0.5
+                    opacity: tansItem.selected ? 1 : 0
+                }
 
+                Behavior on x {
+                    PropertyAnimation  {
+                        duration: animDuration
+                        easing.type: Easing.InOutQuad
+                    }
+                }
+                Behavior on y {
+                    PropertyAnimation  {
+                        duration: animDuration
+                        easing.type: Easing.InOutQuad
+                    }
+                }
+            }
             // Return the tans model of all the user tans
             function asTans() {
                 var tans = []

@@ -212,7 +212,8 @@ function quit(parent)
     if (aboutToQuit)  // don't execute concurrently
         return;
     aboutToQuit = true;
-
+    GCompris.ApplicationSettings.previousHeight = parent.height;
+    GCompris.ApplicationSettings.previousWidth = parent.width;
     GCompris.ApplicationInfo.abandonAudioFocus()
 
     if (GCompris.DownloadManager.downloadIsRunning()) {

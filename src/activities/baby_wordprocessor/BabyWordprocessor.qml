@@ -3,8 +3,8 @@
  * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -41,11 +41,14 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
         }
-        onStart: edit.forceActiveFocus();
+        onStart: {
+            keyboard.populate();
+            edit.forceActiveFocus();
+        }
 
         Column {
             id: controls
-            width: 200 * ApplicationInfo.ratio
+            width: 120 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
                 top: parent.top
@@ -55,22 +58,19 @@ ActivityBase {
             spacing: 10
 
             Button {
-                style: GCButtonStyle {}
-                height: 30 * ApplicationInfo.ratio
-                width: parent.width
+                style: GCButtonStyle { textSize: "title"}
                 text: qsTr("Title")
+                width: parent.width
                 onClicked: edit.formatLineWith('h2')
             }
             Button {
-                style: GCButtonStyle {}
-                height: 30 * ApplicationInfo.ratio
-                width: parent.width
+                style: GCButtonStyle { textSize: "subtitle"}
                 text: qsTr("Subtitle")
+                width: parent.width
                 onClicked: edit.formatLineWith('h3')
             }
             Button {
-                style: GCButtonStyle {}
-                height: 30 * ApplicationInfo.ratio
+                style: GCButtonStyle { textSize: "regular"}
                 width: parent.width
                 text: qsTr("Paragraph")
                 onClicked: edit.formatLineWith('p')
@@ -112,6 +112,7 @@ ActivityBase {
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 textFormat: TextEdit.RichText
+                color: "#373737"
                 font {
                     pointSize: (18 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
@@ -126,7 +127,7 @@ ActivityBase {
                     // height should be set automatically as mention in cursorRectangle property
                     // documentation but it does not work
                     height: parent.cursorRectangle.height
-                    color: 'red'
+                    color: '#DF543D'
                     SequentialAnimation on opacity {
                         running: true
                         loops: Animation.Infinite
@@ -191,6 +192,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
+            visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
             onKeypress: {
                 if(text == backspace)
                     edit.backspace()
@@ -198,7 +200,9 @@ ActivityBase {
                     edit.insertText(text)
             }
             onError: console.log("VirtualKeyboard error: " + msg);
-            layout: [
+
+            function populate() {
+                layout = [
                 [
                     { label: "0" },
                     { label: "1" },
@@ -246,6 +250,8 @@ ActivityBase {
                     { label: backspace }
                 ]
             ]
+            }
+
         }
 
     }

@@ -50,7 +50,7 @@
  *
  * will be downloaded to a local path
  *
- * <tt>/\<QStandardPaths::writableLocation(QStandardPaths::DataLocation)\>/\<path/to/my/resource.rcc\></tt>
+ * <tt>/\<QStandardPaths::writableLocation(QStandardPaths::CacheLocation)\>/\<path/to/my/resource.rcc\></tt>
  *
  * and registered with a resource root path
  *
@@ -115,10 +115,10 @@ private:
     /**
      * Get the platform-specific path storing downloaded resources.
      *
-     * Uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
+     * Uses QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
      * which returns
-     *   - on desktop $HOME/.local/share/KDE/gcompris-qt/
-     *   - on android /data/data/net.gcompris/files
+     *   - on desktop linux $HOME/.cache/KDE/gcompris-qt/
+     *   - on other platforms check <http://doc.qt.io/qt-5/qstandardpaths.html>
      *
      * @return An absolute path.
      */
@@ -130,12 +130,13 @@ private:
      * @returns A list of absolute paths used for storing local resources.
      *          The caller should keep the returned list order when looking for
      *          resources, for now the lists contains:
-     *          1. getSystemDownloadPath()
-     *          2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/gcompris-qt
+     *          1. data folder in the application path
+     *          2. getSystemDownloadPath()
+     *          3. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/gcompris-qt
      *             which is
      *             - $HOME/.local/share/gcompris-qt (on linux desktop)
      *             - /storage/sdcard0/GCompris (on android)
-     *          3. [QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation)]/gcompris-qt
+     *          4. [QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation)]/gcompris-qt
      *             which is on GNU/Linux
      *             - $HOME/.local/share/KDE/gcompris-qt
      *             - $HOME/.local/share/gcompris-qt
@@ -169,6 +170,7 @@ private:
 
     bool checkDownloadRestriction() const;
     DownloadJob* getJobByReply(QNetworkReply *r);
+    DownloadJob* getJobByUrl_locked(const QUrl& url) const;
 
     /** Start a new download specified by the passed DownloadJob */
     bool download(DownloadJob* job);

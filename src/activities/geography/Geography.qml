@@ -29,7 +29,8 @@ Babymatch {
     onStart: focus = true
     onStop: {}
 
+    soundsUrl: ""
     boardsUrl: "qrc:/gcompris/src/activities/geography/resource/"
-    levelCount: 11
+    levelCount: 10
     answerGlow: false
 }

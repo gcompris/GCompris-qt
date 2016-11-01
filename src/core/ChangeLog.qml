@@ -68,7 +68,7 @@ QtObject {
             // display the activity titles
             for(var i in activities) {
                 var activity = activities[i];
-                if(activity.createdInVersion == obj['versionCode']) {
+                if(activity.createdInVersion == obj['versionCode'] && activity.enabled) {
                     output += "<li>" + activity.title + "</li>";
                 }
             }

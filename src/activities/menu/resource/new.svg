@@ -1,184 +1,93 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    xmlns:ns1="http://sozi.baierouge.fr"
-    id="svg2"
-    viewBox="0 0 381.97 381.94"
-    version="1.1"
-  >
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="66"
+   height="66"
+   id="svg4211"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="new.svg">
   <defs
-      id="defs4"
-    >
-    <radialGradient
-        id="radialGradient3849"
-        gradientUnits="userSpaceOnUse"
-        cy="549.69"
-        cx="367.14"
-        r="176.95"
-      >
-      <stop
-          id="stop3814"
-          stop-color="#fff"
-          offset="0"
-      />
-      <stop
-          id="stop3816"
-          stop-color="#fff"
-          stop-opacity="0"
-          offset="1"
-      />
-    </radialGradient
-    >
-  </defs
-  >
-  <g
-      id="layer1"
-      transform="translate(-13.299 -14.25)"
-    >
-    <path
-        id="path2985"
-        stroke-linejoin="round"
-        style="color:#000000"
-        d="m545.71 645.22c0 98.622-79.949 178.57-178.57 178.57-98.622 0-178.57-79.949-178.57-178.57 0-98.622 79.949-178.57 178.57-178.57 98.622 0 178.57 79.949 178.57 178.57z"
-        transform="translate(-162.86 -440)"
-        stroke="#008000"
-        stroke-linecap="round"
-        stroke-width="24.8"
-        fill="#0f0"
-    />
-    <path
-        id="path3755"
-        style="color:#000000"
-        fill="#00b500"
-        d="m370.49 205.22c0 93.043-75.427 168.47-168.47 168.47-88.043 0-163.92-75.427-163.92-168.47 76.772 66.561 141.58 64.875 163.92 64.875 26.373 0 93.719 1.6854 168.47-64.875z"
-    />
-    <path
-        id="path3758"
-        style="color:#000000"
-        fill="#006300"
-        d="m350.53 290.07c1.0102 5.1601-53.203 83.617-146.25 83.617-93.043 0-143.22-74.416-143.22-79.576 76.772 66.561 120.88 66.896 143.22 66.896 26.373 0 71.495-4.3755 146.25-70.936z"
-    />
-    <path
-        id="path3760"
-        opacity=".94186"
-        style="color:#000000"
-        d="m544.09 645.22c0 97.726-79.222 176.95-176.95 176.95-97.726 0-176.95-79.222-176.95-176.95 0-97.726 79.222-176.95 176.95-176.95 97.726 0 176.95 79.222 176.95 176.95z"
-        transform="matrix(.93481 0 0 .93481 -139.7 -397.94)"
-        fill="url(#radialGradient3849)"
-    />
-    <g
-        id="text3820"
-        stroke-linejoin="round"
-        transform="translate(2.9506 .44398)"
-        stroke="#808080"
-        stroke-width="16.6"
-        fill="#fff"
-      >
-      <path
-          id="path3825"
-          stroke-linejoin="round"
-          d="m179.49 329.28v-103.31h-102.54v-43.174h102.54v-102.54h43.688v102.54h102.54v43.174h-102.54v103.31z"
-          stroke="#808080"
-          stroke-width="16.6"
-          fill="#fff"
-      />
-    </g
-    >
-  </g
-  >
+     id="defs4213" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#959595"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="4.6990407"
+     inkscape:cy="28.267429"
+     inkscape:document-units="px"
+     inkscape:current-layer="OK"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1880"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4137" />
+  </sodipodi:namedview>
   <metadata
-    >
-    <rdf:RDF
-      >
+     id="metadata4216">
+    <rdf:RDF>
       <cc:Work
-        >
-        <dc:format
-          >image/svg+xml</dc:format
-        >
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-        />
-        <cc:license
-            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
-        />
-        <dc:publisher
-          >
-          <cc:Agent
-              rdf:about="http://openclipart.org/"
-            >
-            <dc:title
-              >Openclipart</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:publisher
-        >
-        <dc:title
-          >Green plus</dc:title
-        >
-        <dc:date
-          >2013-11-08T13:22:54</dc:date
-        >
-        <dc:description
-          >White cross in a green circle</dc:description
-        >
-        <dc:source
-          >https://openclipart.org/detail/188492/green-plus-by-pleiades-188492</dc:source
-        >
-        <dc:creator
-          >
-          <cc:Agent
-            >
-            <dc:title
-              >pleiades</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:creator
-        >
-        <dc:subject
-          >
-          <rdf:Bag
-            >
-            <rdf:li
-              >circle</rdf:li
-            >
-            <rdf:li
-              >green</rdf:li
-            >
-            <rdf:li
-              >plus</rdf:li
-            >
-          </rdf:Bag
-          >
-        </dc:subject
-        >
-      </cc:Work
-      >
-      <cc:License
-          rdf:about="http://creativecommons.org/licenses/publicdomain/"
-        >
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Reproduction"
-        />
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Distribution"
-        />
-        <cc:permits
-            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
-        />
-      </cc:License
-      >
-    </rdf:RDF
-    >
-  </metadata
-  >
-</svg
->
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-585.82345,-426.92149)">
+    <g
+       style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;display:inline;stroke:#ffffff;stroke-opacity:1;fill:#62ba62;fill-opacity:1"
+       id="OK"
+       transform="translate(-22.551553,76.140243)">
+      <path
+         id="path5882"
+         d="m 641.38665,351.78625 c -17.664,0 -32,14.33602 -32,32 0,17.66398 14.336,32 32,32 17.664,0 31.9999,-14.33602 32,-32 0,-17.66398 -14.336,-32 -32,-32 z"
+         style="fill:#46d246;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sssss" />
+    </g>
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4139"
+       width="8"
+       height="40"
+       x="614.82343"
+       y="439.92148"
+       ry="4" />
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect4139-3"
+       width="8"
+       height="40"
+       x="-463.92148"
+       y="598.82343"
+       ry="4"
+       transform="matrix(0,-1,1,0,0,0)" />
+  </g>
+</svg>

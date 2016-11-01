@@ -1,44 +1,44 @@
 /* GCompris - drawnumber.qml
- *
- * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
- *
- * Authors:
- *   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
- *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
+*
+* Authors:
+*   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
+*   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 import QtQuick 2.1
-
-import "../../core"
-import "drawnumber.js" as Activity
 import GCompris 1.0
+import "../../core"
+import "."
+import "drawnumber.js" as Activity
+import "drawnumber_dataset.js" as Dataset
 
 
 ActivityBase {
     id: activity
-
-    property bool clickanddrawflag: false
+    property string mode: "drawnumber"
+    property var dataset: Dataset
     property real pointImageOpacity: 1.0
-
+    property string url: "qrc:/gcompris/src/activities/drawnumber/resource/"
     onStart: focus = true
     onStop: {}
 
     pageComponent: Item {
         id: background
         anchors.fill: parent
-
         signal start
         signal stop
 
@@ -55,32 +55,36 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property GCAudio audioEffects: activity.audioEffects
-
+            property GCAudio audioVoices: activity.audioVoices
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
             property alias imageBack: imageBack
+            property alias imageBack2: imageBack2
             property int pointIndexToClick
         }
 
-
-        onStart: { Activity.start(items, clickanddrawflag) }
+        onStart: { Activity.start(items,mode,dataset,url) }
         onStop: { Activity.stop() }
 
         Image {
             id: imageBack
-
             anchors.top: parent.top
             width: background.width
             height: background.height
         }
 
+        Image {
+            id: imageBack2
+            anchors.top: imageBack.top
+            width: background.width
+            height: background.height
+        }
 
         Repeater {
             id: segmentsRepeater
 
             Rectangle {
                 id: line
-
                 opacity: 0
                 color: "black"
                 transformOrigin: Item.TopLeft
@@ -104,16 +108,19 @@ ActivityBase {
 
                 Image {
                     id: pointImage
-
                     source: Activity.url + (highlight ?
-                                                (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
-                                                "greenpoint.svg")
-                    sourceSize.height: background.height / 15
+                            (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
+                    "greenpoint.svg")
+                    sourceSize.height: background.height / 25  //to change the size of dots
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
-                    visible: index == pointImageRepeater.count - 1 &&
-                             items.pointIndexToClick == 0 ? false : true
+
+                    // only hide last point for clickanddraw and drawnumbers
+                    // as the last point is also the first point
+                    visible: (mode=="clickanddraw" || mode=="drawnumbers") &&
+                              index == pointImageRepeater.count - 1 &&
+                              items.pointIndexToClick == 0 ? false : true
 
                     function drawSegment() {
                         Activity.drawSegment(index)
@@ -122,12 +129,11 @@ ActivityBase {
 
                     GCText {
                         id: pointNumberText
-
                         opacity: pointImageOpacity
                         text: index + 1
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
-                        fontSize: 18
+                        fontSize: 11
                         font.weight: Font.DemiBold
                         style: Text.Outline
                         styleColor: "black"
@@ -202,16 +208,16 @@ ActivityBase {
                         var part = pointImageRepeater.itemAt(p)
                         // Could not make it work with the item.contains() api
                         if(touch.x > part.x && touch.x < part.x + part.width &&
-                           touch.y > part.y && touch.y < part.y + part.height) {
+                        touch.y > part.y && touch.y < part.y + part.height) {
                             part.drawSegment()
                         }
                     }
                 }
-
             }
 
             onPressed: {
                 checkPoints(touchPoints)
+                items.audioEffects.play('qrc:/gcompris/src/activities/drawnletters/resource/buttonclick.wav')
             }
             onTouchUpdated: {
                 checkPoints(touchPoints)
@@ -222,7 +228,6 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-
 
         Bar {
             id: bar
@@ -239,7 +244,5 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-
     }
-
 }

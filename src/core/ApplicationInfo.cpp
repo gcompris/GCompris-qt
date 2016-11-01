@@ -86,10 +86,12 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     if (m_isMobile)
         connect(qApp->primaryScreen(), &QScreen::physicalSizeChanged, this, &ApplicationInfo::notifyPortraitMode);
 
+// @FIXME this does not work on iOS: https://bugreports.qt.io/browse/QTBUG-50624
+#if not defined(Q_OS_IOS)
     // Get all symbol fonts to remove them
     QFontDatabase database;
     m_excludedFonts = database.families(QFontDatabase::Symbol);
-
+#endif
     // Get fonts from rcc
     const QStringList fontFilters = {"*.otf", "*.ttf"};
     m_fontsFromRcc = QDir(":/gcompris/src/core/resource/fonts").entryList(fontFilters);
@@ -128,8 +130,10 @@ QString ApplicationInfo::getFilePath(const QString &file)
 {
 #if defined(Q_OS_ANDROID)
     return QString("assets:/%1").arg(file);
-#elif defined(Q_OS_MAC)
+#elif defined(Q_OS_MACX)
     return QString("%1/../Resources/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
+#elif defined(Q_OS_IOS)
+    return QString("%1/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
 #else
     return QString("%1/%2/rcc/%3").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER, file);
 #endif

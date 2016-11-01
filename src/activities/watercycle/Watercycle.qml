@@ -33,6 +33,7 @@ ActivityBase {
     onStop: {}
 
     property string url: "qrc:/gcompris/src/activities/watercycle/resource/"
+    property variant barAtStart
 
     pageComponent: Item {
         id: background
@@ -47,8 +48,14 @@ ActivityBase {
         }
 
         onStart: {
+            barAtStart = ApplicationSettings.isBarHidden;
+            ApplicationSettings.isBarHidden = true;
             shower.hide()
             river.level = 0
+        }
+
+        onStop: {
+            ApplicationSettings.isBarHidden = barAtStart;
         }
 
         QtObject {

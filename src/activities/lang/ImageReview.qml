@@ -145,210 +145,209 @@ Item {
         anchors.fill: parent
         opacity: 0
         Behavior on opacity { PropertyAnimation { duration: 200 } }
-    }
 
-    Rectangle {
-        id: categoryTextbg
-        parent: rootItem
-        x: categoryText.x - 4
-        y: categoryText.y - 4
-        width: imageFrame.width + 8
-        height: categoryText.height + 8
-        color: "#5090ff"
-        border.color: "#000000"
-        border.width: 2
-        radius: 16
-        anchors {
-            horizontalCenter: parent.horizontalCenter
-            top: rootItem.top
-            topMargin: 4 * ApplicationInfo.ratio
-        }
-
-        GCText {
-            id: categoryText
-            fontSize: mediumSize
-            font.weight: Font.DemiBold
-            width: parent.width - 8
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            color: "white"
-            wrapMode: Text.WordWrap
-        }
-    }
-
-    Image {
-        id: imageFrame
-        parent: rootItem
-        source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-        sourceSize.width: Math.min((parent.width - previousWordButton.width * 2) * 0.8,
-                                   (parent.height - categoryTextbg.height
-                                    - wordTextbg.height - bar.height) * 1.1)
-        anchors {
-            horizontalCenter: parent.horizontalCenter
-            top: categoryTextbg.bottom
-            margins: 10 * ApplicationInfo.ratio
-        }
-        z: 11
-
-        Image {
-            id: wordImage
-            // Images are not svg
-            width: Math.min(parent.width, parent.height) * 0.9
-            height: width
-            anchors.centerIn: parent
-
-            property string nextSource
-            function changeSource(nextSource_) {
-                nextSource = nextSource_
-                animImage.start()
-            }
-
-            SequentialAnimation {
-                id: animImage
-                PropertyAnimation {
-                    target: wordImage
-                    property: "opacity"
-                    to: 0
-                    duration: 100
-                }
-                PropertyAction {
-                    target: wordImage
-                    property: "source"
-                    value: wordImage.nextSource
-                }
-                PropertyAnimation {
-                    target: wordImage
-                    property: "opacity"
-                    to: 1
-                    duration: 100
-                }
-            }
-            MouseArea {
-                anchors.fill: parent
-                enabled: rootItem.opacity == 1
-                onClicked: Activity.playWord(word.voice)
-            }
-        }
-
-        Image {
-            id: previousWordButton
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-            sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
-            visible: score.currentSubLevel > 1 ? true : false
+        Rectangle {
+            id: categoryTextbg
+            parent: rootItem
+            x: categoryText.x - 4
+            y: categoryText.y - 4
+            width: imageFrame.width + 8
+            height: categoryText.height + 8
+            color: "#5090ff"
+            border.color: "#000000"
+            border.width: 2
+            radius: 16
             anchors {
-                right: parent.left
-                rightMargin: 30
-                top: parent.top
-                topMargin: parent.height/2 - previousWordButton.height/2
+                horizontalCenter: parent.horizontalCenter
+                top: rootItem.top
+                topMargin: 4 * ApplicationInfo.ratio
             }
-            MouseArea {
-                id: previousWordButtonArea
-                anchors.fill: parent
-                onClicked: imageReview.prevWord()
+
+            GCText {
+                id: categoryText
+                fontSize: mediumSize
+                font.weight: Font.DemiBold
+                width: parent.width - 8
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "white"
+                wrapMode: Text.WordWrap
             }
         }
 
         Image {
-            id: nextWordButton
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg";
-            sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
+            id: imageFrame
+            parent: rootItem
+            source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
+            sourceSize.width: Math.min((parent.width - previousWordButton.width * 2) * 0.8,
+            (parent.height - categoryTextbg.height
+            - wordTextbg.height - bar.height) * 1.1)
             anchors {
-                left: parent.right
-                leftMargin: 30
+                horizontalCenter: parent.horizontalCenter
+                top: categoryTextbg.bottom
+                margins: 10 * ApplicationInfo.ratio
+            }
+            z: 11
+
+            Image {
+                id: wordImage
+                // Images are not svg
+                width: Math.min(parent.width, parent.height) * 0.9
+                height: width
+                anchors.centerIn: parent
+
+                property string nextSource
+                function changeSource(nextSource_) {
+                    nextSource = nextSource_
+                    animImage.start()
+                }
+
+                SequentialAnimation {
+                    id: animImage
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 0
+                        duration: 100
+                    }
+                    PropertyAction {
+                        target: wordImage
+                        property: "source"
+                        value: wordImage.nextSource
+                    }
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
+                MouseArea {
+                    anchors.fill: parent
+                    enabled: rootItem.opacity == 1
+                    onClicked: Activity.playWord(word.voice)
+                }
+            }
+
+            Image {
+                id: previousWordButton
+                source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
+                sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
+                visible: score.currentSubLevel > 1 ? true : false
+                anchors {
+                    right: parent.left
+                    rightMargin: 30
+                    top: parent.top
+                    topMargin: parent.height/2 - previousWordButton.height/2
+                }
+                MouseArea {
+                    id: previousWordButtonArea
+                    anchors.fill: parent
+                    onClicked: imageReview.prevWord()
+                }
+            }
+
+            Image {
+                id: nextWordButton
+                source: "qrc:/gcompris/src/core/resource/bar_next.svg";
+                sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
+                anchors {
+                    left: parent.right
+                    leftMargin: 30
+                    top: parent.top
+                    topMargin: parent.height/2 - previousWordButton.height/2
+                }
+                MouseArea {
+                    id: nextWordButtonArea
+                    anchors.fill: parent
+                    onClicked: imageReview.nextWord();
+                }
+            }
+        }
+
+        Rectangle {
+            id: wordTextbg
+            parent: rootItem
+            x: wordText.x - 4
+            y: wordText.y - 4
+            width: imageFrame.width
+            height: wordText.height + 4
+            color: "#5090ff"
+            border.color: "#000000"
+            border.width: 2
+            radius: 16
+            anchors {
+                top: imageFrame.bottom
+                left: imageFrame.left
+                margins: 10 * ApplicationInfo.ratio
+            }
+
+            GCText {
+                id: wordText
+                text: ""
+                fontSize: largeSize
+                font.weight: Font.DemiBold
+                width: parent.width
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "white"
+                wrapMode: Text.WordWrap
+
+                property string nextWord
+                function changeText(nextWord_) {
+                    nextWord = nextWord_
+                    animWord.start()
+                }
+
+                SequentialAnimation {
+                    id: animWord
+                    PropertyAnimation {
+                        target: wordText
+                        property: "opacity"
+                        to: 0
+                        duration: 100
+                    }
+                    PropertyAction {
+                        target: wordText
+                        property: "text"
+                        value: wordText.nextWord
+                    }
+                    PropertyAnimation {
+                        target: wordText
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
+            }
+        }
+
+        BarButton {
+            id: repeatItem
+            parent: rootItem
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            sourceSize.width: 80 * ApplicationInfo.ratio
+
+            z: 12
+            anchors {
                 top: parent.top
-                topMargin: parent.height/2 - previousWordButton.height/2
+                left: parent.left
+                margins: 10 * ApplicationInfo.ratio
             }
-            MouseArea {
-                id: nextWordButtonArea
-                anchors.fill: parent
-                onClicked: imageReview.nextWord();
-            }
-        }
-    }
-
-    Rectangle {
-        id: wordTextbg
-        parent: rootItem
-        x: wordText.x - 4
-        y: wordText.y - 4
-        width: imageFrame.width
-        height: wordText.height + 4
-        color: "#5090ff"
-        border.color: "#000000"
-        border.width: 2
-        radius: 16
-        anchors {
-            top: imageFrame.bottom
-            left: imageFrame.left
-            margins: 10 * ApplicationInfo.ratio
+            onClicked: Activity.playWord(imageReview.word.voice)
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
         }
 
-        GCText {
-            id: wordText
-            text: ""
-            fontSize: largeSize
-            font.weight: Font.DemiBold
-            width: parent.width
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            color: "white"
-            wrapMode: Text.WordWrap
-
-            property string nextWord
-            function changeText(nextWord_) {
-                nextWord = nextWord_
-                animWord.start()
-            }
-
-            SequentialAnimation {
-                id: animWord
-                PropertyAnimation {
-                    target: wordText
-                    property: "opacity"
-                    to: 0
-                    duration: 100
-                }
-                PropertyAction {
-                    target: wordText
-                    property: "text"
-                    value: wordText.nextWord
-                }
-                PropertyAnimation {
-                    target: wordText
-                    property: "opacity"
-                    to: 1
-                    duration: 100
-                }
-            }
+        Score {
+            id: score
+            parent: rootItem
+            anchors.bottom: undefined
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.top: parent.top
         }
     }
-
-    BarButton {
-        id: repeatItem
-        parent: rootItem
-        source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-        sourceSize.width: 80 * ApplicationInfo.ratio
-
-        z: 12
-        anchors {
-            top: parent.top
-            left: parent.left
-            margins: 10 * ApplicationInfo.ratio
-        }
-        onClicked: Activity.playWord(imageReview.word.voice)
-        Behavior on opacity { PropertyAnimation { duration: 200 } }
-    }
-
-    Score {
-        id: score
-        parent: rootItem
-        anchors.bottom: undefined
-        anchors.bottomMargin: 10 * ApplicationInfo.ratio
-        anchors.right: parent.right
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
-        anchors.top: parent.top
-    }
-
     Loader {
         id: miniGameLoader
         width: parent.width
@@ -379,6 +378,9 @@ Item {
         currentMiniGame = miniGameIndex
         var mode = miniGames[miniGameIndex][1];
         var itemToLoad = miniGames[miniGameIndex][2];
+
+        // Starting a minigame we don't wan't pending voices to play
+        Activity.clearVoiceQueue()
 
         // preparing the wordList
         var wordList = Core.shuffle(items.wordList[wordListIndex]).slice()

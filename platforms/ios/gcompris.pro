@@ -4,6 +4,15 @@ TEMPLATE = app
 TARGET = gcompris
 INCLUDEPATH += .
 QT += qml quick gui multimedia network xmlpatterns svg xml core
+APPCERT = "3rd Party Mac Developer Application: Bruno Coudoin"
+INSTALLERCERT = "3rd Party Mac Developer Installer: Bruno Coudoin"
+BUNDLEID = net.gcompris
+ENTITLEMENTS = platform/macosx/gcompris.entitlements
+
+QMAKE_CFLAGS_RELEASE = $$QMAKE_CFLAGS_RELEASE_WITH_DEBUGINFO
+QMAKE_CXXFLAGS_RELEASE = $$QMAKE_CXXFLAGS_RELEASE_WITH_DEBUGINFO
+QMAKE_OBJECTIVE_CFLAGS_RELEASE =  $$QMAKE_OBJECTIVE_CFLAGS_RELEASE_WITH_DEBUGINFO
+QMAKE_LFLAGS_RELEASE = $$QMAKE_LFLAGS_RELEASE_WITH_DEBUGINFO
 
 # Input
 HEADERS += src/core/ActivityInfo.h \
@@ -39,12 +48,6 @@ ios {
     QMAKE_BUNDLE_DATA += assets_catalogs
 }
 
-
-
-#ios {
-#    assets_catalogs.files = $$files($$PWD/*.xcassets)
-#    QMAKE_BUNDLE_DATA += assets_catalogs
-#}
 
 
 #target.path = $$[QT_INSTALL_EXAMPLES]/quick/animation

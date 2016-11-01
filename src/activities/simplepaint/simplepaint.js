@@ -86,7 +86,7 @@ var colorsAdvanced = [
             '#FFe9afdd',
             '#FFff2a7f',
             '#FFff80b2',
-            '#FFd35f8d',
+            '#FFd35f8d'
 ]
 
 var backgrounds = [

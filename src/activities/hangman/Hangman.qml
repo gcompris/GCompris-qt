@@ -49,8 +49,8 @@ ActivityBase {
         source: activity.dataSetUrl+"background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
-        sourceSize.width: parent.width
-        
+        sourceSize.width: Math.max(parent.width, parent.height)
+
         // system locale by default
         property string locale: "system"
                 
@@ -82,7 +82,7 @@ ActivityBase {
             property alias parser: parser
             property alias locale: background.locale
             property alias ok: ok
-            property int   remainingLife
+            property int remainingLife
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
@@ -115,7 +115,7 @@ ActivityBase {
         GCText {
             id: hidden
             fontSize: largeSize
-            color: "black"
+            color: "#4d4d4d"
             font.letterSpacing: 0.5
             width: parent.width * 0.9
             wrapMode: Text.WordWrap
@@ -335,15 +335,15 @@ ActivityBase {
             anchors {
                 left: parent.left
                 top: parent.top
-                margins:10
-
+                margins: 10
             }
             sourceSize.width: 66 * bar.barZoom
-            property int remainingife: items.remainingLife
-            onRemainingifeChanged: clockAnim.start()
+            property int remainingLife: items.remainingLife
+            onRemainingLifeChanged: if(remainingLife >= 0) clockAnim.restart()
 
             SequentialAnimation {
                 id: clockAnim
+                alwaysRunToEnd: true
                 ParallelAnimation {
                     NumberAnimation {
                         target: clock; properties: "opacity";

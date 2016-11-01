@@ -40,13 +40,13 @@ ActivityBase {
         signal stop
         fillMode: Image.PreserveAspectCrop
         source: Activity.url + "background.svg"
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items); keyboard.populate(); }
         onStop: { Activity.stop() }
 
         Keys.onDownPressed: {
@@ -138,7 +138,8 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
 
-            layout: [ [
+            function populate() {
+                layout = [ [
                     { label: "0" },
                     { label: "1" },
                     { label: "2" },
@@ -151,6 +152,8 @@ ActivityBase {
                     { label: "9" },
                     { label: keyboard.backspace }
                 ] ]
+            }
+
             onKeypress: Activity.currentAnswerItem.appendText(text)
 
             onError: console.log("VirtualKeyboard error: " + msg);

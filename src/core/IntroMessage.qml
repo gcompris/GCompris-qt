@@ -25,13 +25,17 @@ import GCompris 1.0
 
 /**
  * A QML component for multi activity introduction in GCompris.
- * The signal emitted named as introDone helps in the occurrence
- * of events to be followed in the start of the activity.
+ *
+ * Use IntroMessage when you want to present an introductory message to the
+ * user, that provides background information or gameplay hints.
+ *
+ * Contains the following basic layout elements: Introduction text (intro), a
+ * skip and an @c Next button to leave the introduction or navigate through it.
+ * The introDone signal is emitted when the introduction has finished and can
+ * be used to prepare the start of the activity.
+ *
  * @ingroup components
- *
- * Contains the following basic layout elements: Introduction (intro_text), a skip
- * button (skipButton) and Iterate (or Go) button (button).
- *
+ * @inherit QtQuick.Item
  */
 
 Item {
@@ -46,12 +50,15 @@ Item {
     signal introDone
 
     /**
-     * The index of the intro array, set to -1 to hide the IntroMessage item.
+     * The index of the intro array.
+     *
+     * Set to -1 to hide the IntroMessage item.
      */
     property int index: 0
 
     /**
-     * intro is the texts array used as introduction .
+     * The texts array used as introduction.
+     *
      * It has to be filled by the user when defining an IntroMessage item.
      */
     property variant intro;
