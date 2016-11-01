@@ -108,7 +108,6 @@ function calculate(operand1,operator,operand2,operationRow)
         if(result!=repeat){
             operationRow.endResult.text = ""
             operationRow.complete = false
-            //operationRow.rowResult = 0
             if(result<0)
                 items.dialog.dialogText.text = qsTr("result is not positive integer")
             else
@@ -140,8 +139,6 @@ function childrenChange(item,operationRow)
         console.log(" first item left "+item.count)
         operationRow.complete = false
         operationRow.endResult.text = ""
-        //operationRow.rowResult = 0
-
     }
     else
         console.log(items.children.length)

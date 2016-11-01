@@ -176,7 +176,7 @@ ActivityBase {
                     noOfRows: operatorRow.repeater.model.length
                     rowNo: modelData
                     guesscount: items.result
-                    prevText: repeat.itemAt(modelData-1).text
+                    prevText: modelData ? repeat.itemAt(modelData-1).text : ''
                     prevComplete: modelData ? repeat.itemAt(modelData-1).complete : false
                     reparent: items.solved || items.levelchanged
                 }
