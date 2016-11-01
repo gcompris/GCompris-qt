@@ -15,12 +15,12 @@ Source code from GitHub
 -----------------------
 Checkout the source code by cloning it from GitHub
 
-    git clone git://github.com/bdoin/gcompris-qt.git
+    git clone git://github.com/gcompris/GCompris-qt.git
 
 If you want to have a personal fork, in order to commit occasional patches,
 fork it on GitHub then clone your fork
 
-    git clone git@github.com:<username>/gcompris-qt.git
+    git clone git@github.com:<username>/GCompris-qt.git
 
 When asking for a pull request, create a new topic branch and commit your
 changes there then open a pull request to gcompris-qt repository on GitHub.
@@ -64,7 +64,7 @@ Installing dependencies on a Debian based systems can be done like this:
                           qml-module-qtquick2 qml-module-qtquick-particles2 \
                           libqt5sensors5-dev libqt5sensors5
 
-To build for Android, Qt 5 AndroidExtra also needs to be installed.
+To build for Android, Qt 5 AndroidExtras also needs to be installed.
 
 
 Build
