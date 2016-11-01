@@ -32,10 +32,11 @@ Row {
     property int noOfRows
     property int rowNo
     property int guesscount
-    property var prevResult
     property bool complete
     property bool prevComplete
     property bool reparent
+    property var prevText
+    property string text: endResult.text
     Component {
         id: component1
         DropTile {
@@ -50,7 +51,6 @@ Row {
                 if(operand1.count == 1 && operator.count == 1 && operand2.count == 1)
                 {
                     Activity.calculate(operand1.droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                    //operandRow.complete = true
                     if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                     {
                         Activity.checkAnswer(operandRow)
@@ -76,7 +76,7 @@ Row {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fontSize: mediumSize
-                text: operandRow.prevResult == 0 ? "" : operandRow.prevResult
+                text: prevText
             }
             radius: 20.0
         }
@@ -99,7 +99,6 @@ Row {
             if(loader.children[0].count == 1 && operator.count == 1 && operand2.count == 1)
             {
                 Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
-                //operandRow.complete = true
                 if(operandRow.rowNo == operandRow.noOfRows-1 && operandRow.rowResult == operandRow.guesscount)
                 {
                     Activity.checkAnswer(operandRow)
@@ -158,17 +157,10 @@ Row {
         {
             endResult.text = ""
             operandRow.complete = false
-            operandRow.rowResult = 0
         }
         else
         {
-            if(prevResult==0){
-                endResult.text = ""
-                operandRow.complete = false
-                operandRow.rowResult = 0
-            }
-
-            else if( operator.count == 1 && operand2.count == 1)
+            if( operator.count == 1 && operand2.count == 1)
             {
                 Activity.calculate(loader.children[0].droppedItem.datavalue, operator.droppedItem.datavalue, operand2.droppedItem.datavalue, operandRow)
                 operandRow.complete = true

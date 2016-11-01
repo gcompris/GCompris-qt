@@ -28,7 +28,7 @@ ActivityInfo {
     author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
     demo: true
     title: qsTr("Guesscount")
-    description:qsTr("Guess the algebraic expression and click on the buttons to add them.")
+    description:qsTr("Guess the algebraic expression and drag the tiles to get a result equal to the Guesscount.")
     //intro: "guesscount activity"
     goal: qsTr("To teach algebra")
     prerequisite: qsTr("knowledge of arithmetic operations")

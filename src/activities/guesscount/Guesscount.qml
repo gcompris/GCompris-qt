@@ -1,4 +1,4 @@
- /* GCompris - guesscount.qml
+﻿/* GCompris - guesscount.qml
  *
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
@@ -176,7 +176,7 @@ ActivityBase {
                     noOfRows: operatorRow.repeater.model.length
                     rowNo: modelData
                     guesscount: items.result
-                    prevResult: modelData ? repeat.itemAt(modelData-1).rowResult : -1
+                    prevText: repeat.itemAt(modelData-1).text
                     prevComplete: modelData ? repeat.itemAt(modelData-1).complete : false
                     reparent: items.solved || items.levelchanged
                 }

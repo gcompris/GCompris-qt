@@ -53,6 +53,7 @@ function initLevel() {
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     console.log("dataset :"+items.data  )
     items.levelchanged = false
+    items.solved=false
 }
 function nextSublevel() {
     items.sublevel += 1
@@ -107,7 +108,7 @@ function calculate(operand1,operator,operand2,operationRow)
         if(result!=repeat){
             operationRow.endResult.text = ""
             operationRow.complete = false
-            operationRow.rowResult = 0
+            //operationRow.rowResult = 0
             if(result<0)
                 items.dialog.dialogText.text = qsTr("result is not positive integer")
             else
@@ -120,6 +121,7 @@ function calculate(operand1,operator,operand2,operationRow)
 
 function childrenChange(item,operationRow)
 {
+    console.log('kashdjkashdkajshd')
     if(item.children.length == 2 && item.count == 0)
     {
         item.count+=1
@@ -138,9 +140,11 @@ function childrenChange(item,operationRow)
         console.log(" first item left "+item.count)
         operationRow.complete = false
         operationRow.endResult.text = ""
-        operationRow.rowResult = 0
+        //operationRow.rowResult = 0
 
     }
+    else
+        console.log(items.children.length)
 }
 
 function checkAnswer(row){
