@@ -1,6 +1,10 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Akshat Tandon <akshat.tandon@research.iiit.ac.in>
+ * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
+ *
+ * Authors:
+ *   <Pascal Georges> (GTK+ version)
+ *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,18 +22,18 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "letter-in-word/LetterInWord.qml"
-  difficulty: 2
-  icon: "letter-in-word/letter-in-word.svg"
-  author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.ins&gt;"
-  demo: true
-  title: qsTr("Letter in which word")
-  description: qsTr("A letter is written and/or spoken. Some words are displayed, the children must find the word or the words in which this letter appears.")
-  //intro: "put here in comment the text for the intro voice"
-  goal: qsTr("Select all the words which contain the spoken letter.")
-  prerequisite: qsTr("spellings, letter recognition")
-  manual: ""
-  credit: ""
-  section: "reading"
-  createdInVersion: 7000
+    name: "guesscount/Guesscount.qml"
+    difficulty: 1
+    icon: "guesscount/guesscount.svg"
+    author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
+    demo: true
+    title: qsTr("Guesscount")
+    description:qsTr("Guess the algebraic expression and drag the tiles to get a result equal to the Guesscount.")
+    //intro: "guesscount activity"
+    goal: qsTr("To teach algebra")
+    prerequisite: qsTr("knowledge of arithmetic operations")
+    manual: ""
+    credit: ""
+    section: "math"
+    createdInVersion:7000
 }
