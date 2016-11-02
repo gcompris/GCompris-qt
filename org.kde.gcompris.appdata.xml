@@ -19,6 +19,7 @@
   <id type="desktop" xml:lang="uk">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="x-test">xxorg.kde.gcompris.desktopxx</id>
   <id type="desktop" xml:lang="zh-CN">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="zh-TW">org.kde.gcompris.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <metadata_license xml:lang="ast">CC0-1.0</metadata_license>
   <metadata_license xml:lang="ca">CC0-1.0</metadata_license>
