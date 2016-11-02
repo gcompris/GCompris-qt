@@ -349,10 +349,11 @@ ActivityBase {
                 }
             }
         }
+
         Rectangle {
             id: dialog
             width: parent.width*0.49
-            height: parent.height/8
+            height: parent.height/6
             visible: false
             color: "steelblue"
             radius: 30
@@ -361,7 +362,18 @@ ActivityBase {
             GCText {
                 id: dialogText
                 anchors.centerIn: parent
-                fontSize: mediumSize
+                anchors {
+                    centerIn: dialog
+                }
+                opacity: dialog.opacity
+                z: dialog.z
+                fontSize: background.vert ? regularSize : smallSize
+                color: "white"
+                style: Text.Outline
+                styleColor: "black"
+                horizontalAlignment: Text.AlignHCenter
+                width: parent.width
+                wrapMode: TextEdit.WordWrap
             }
             onVisibleChanged:SequentialAnimation {
                 PropertyAnimation {target: dialog; property: "opacity"; from : 1 ; to: 0 ; duration: 3000 }
