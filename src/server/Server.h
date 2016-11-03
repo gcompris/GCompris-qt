@@ -34,6 +34,23 @@ struct ClientData;
 #include <QQmlEngine>
 #include <QJSEngine>
 
+/**
+ * @class Server
+ * @short Receive and send messages to the gcompris client instances
+ *
+ * Contains the tcp socket that sends and receives the different messages to
+ * the clients.
+ * Sends the following messages:
+ * * LoginList: list of all the logins the client can choose
+ * * DisplayedActivities: activities to display on the target client
+ * * ActivityConfiguration: for one activity, send a specific configuration (dataset)
+ *
+ * Receives the following ones:
+ * * Login: allows to identify a client with a name
+ * * ActivityData: contains the data for one result activity send by a client
+ *
+ * @sa MessageHandler
+ */
 class Server : public QObject
 {
     Q_OBJECT

@@ -28,6 +28,17 @@
 #include <QObject>
 #include <QtQml>
 
+/**
+ * @class MessageHandler
+ * @short Handles all the messages received by the socket
+ *
+ * This class contains all the users/groups/clients and handles all the
+ * messages received by the server.
+ *
+ * @sa UserData
+ * @sa GroupData
+ * @sa ClientData
+ */
 class MessageHandler: public QObject
 {
     Q_OBJECT
@@ -82,7 +93,6 @@ private:
     QList<QObject*> m_groups;
     // UserData*
     QList<QObject*> m_users;
-
 };
 
 #endif

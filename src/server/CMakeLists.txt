@@ -11,6 +11,8 @@ set(server_SRCS
   ActivityData.h
   ClientData.cpp
   ClientData.h
+  Database.cpp
+  Database.h
   GroupData.cpp
   GroupData.h
   UserData.cpp
@@ -32,19 +34,20 @@ include_directories(
   "${CMAKE_CURRENT_BINARY_DIR}/../core"   # to find config.h
 )
 
+set(used_qt_modules Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors Sql)
+
 if(ANDROID)
   add_library(${GCOMPRIS_SERVER_EXECUTABLE_NAME} SHARED ${server_SRCS} ${server_MOC})
-  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
+  set(used_qt_modules ${used_qt_modules} AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} MACOSX_BUNDLE ${server_SRCS} ${server_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 elseif(CMAKE_HOST_WIN32)
   add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} WIN32 ${server_SRCS} ${server_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 else()
   add_executable(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${server_SRCS} ${server_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 endif()
+
+qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${used_qt_modules})
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 

@@ -25,6 +25,13 @@
 #include <QStringList>
 #include "ActivityData.h"
 
+/**
+ * @class UserData
+ * @short Contains all the data relative to a user
+ *
+ * A user has a name and a map of all its results per activity
+ *
+ */
 class UserData : public QObject {
     Q_OBJECT
 

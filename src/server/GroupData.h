@@ -26,6 +26,14 @@
 
 class UserData;
 
+/**
+ * @class GroupData
+ * @short Contains all the data relative to a group
+ *
+ * A group is composed of a list of users and has a name identifier.
+ *
+ * @sa UserData
+ */
 class GroupData : public QObject {
     Q_OBJECT
 

@@ -24,6 +24,7 @@
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
 #include "Server.h"
+#include "Database.h"
 #include "MessageHandler.h"
 
 #include "ApplicationInfo.h"
@@ -62,9 +63,9 @@ int main(int argc, char *argv[])
     File::init();
     DownloadManager::init();
     Server::init();
+    Database::init();
     MessageHandler::init();
-    MessageHandler::getInstance();
-    
+
     if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
     if(!QResource::registerResource(ApplicationInfo::getFilePath("server.rcc")))

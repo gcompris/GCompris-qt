@@ -86,7 +86,6 @@ void Server::init()
                                      systeminfoProvider);
 }
 
-
 void Server::sessionOpened()
 {
     // Save the used configuration

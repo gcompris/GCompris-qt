@@ -21,6 +21,7 @@
 
 #include <QDebug>
 #include "Server.h"
+#include "Database.h"
 #include "MessageHandler.h"
 
 MessageHandler* MessageHandler::_instance = 0;
@@ -32,7 +33,17 @@ MessageHandler::MessageHandler()
     connect(&server, &Server::activityDataReceived, this, &MessageHandler::onActivityDataReceived);
     connect(&server, &Server::newClientReceived, this, &MessageHandler::onNewClientReceived);
     connect(&server, &Server::clientDisconnected, this, &MessageHandler::onClientDisconnected);
+    
+    // todo synchronize with database
+    // Synchronize user list
+    QList<UserData *> allUsers;
+    Database::getInstance()->retrieveAllExistingUsers(allUsers);
+    for(UserData *u: allUsers) {
+        m_users.push_back((QObject*)u);
+    }
+    emit newUsers();
 
+    // For test purposes, to be removed later
     GroupData *group = createGroup("default");
     UserData *user1 = createUser("a", "", { "default" });
     UserData *user2 = createUser("b", "");
@@ -104,17 +115,23 @@ void MessageHandler::deleteGroup(const QString &groupName)
 
 UserData *MessageHandler::createUser(const QString &newUser, const QString &avatar, const QStringList &groups)
 {
-    qDebug() << "createUser '" << newUser << "' in groups " << groups;
-    UserData *u = new UserData();
-    u->setName(newUser);
-    u->setAvatar(avatar);
-    for(const QString &aGroup: groups) {
-        GroupData *group = getGroup(aGroup);
-        group->addUser(u);
+    if(Database::getInstance()->addUser(newUser, avatar)) {
+        qDebug() << "createUser '" << newUser << "' in groups " << groups;
+        UserData *u = new UserData();
+        u->setName(newUser);
+        u->setAvatar(avatar);
+        for(const QString &aGroup: groups) {
+            GroupData *group = getGroup(aGroup);
+            group->addUser(u);
+        }
+        m_users.push_back((QObject*)u);
+        emit newUsers();
+        return u;
     }
-    m_users.push_back((QObject*)u);
-    emit newUsers();
-    return u;
+    else {
+        qDebug() << "Error while creating user " << newUser;
+    }
+    return nullptr;
 }
 
 UserData *MessageHandler::updateUser(const QString &oldUser, const QString &newUser, const QString &avatar, const QStringList &groups)

@@ -27,6 +27,15 @@
 
 class QTcpSocket;
 
+/**
+ * @class ClientData
+ * @short Contains all the data relative to a client (tcp)
+ *
+ * A client is identified by its socket and its user data.
+ * The user data is set once a login message has been received for the socket.
+ *
+ * @sa UserData
+ */
 class ClientData : public QObject {
     Q_OBJECT
 
