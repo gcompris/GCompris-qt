@@ -25,11 +25,11 @@ ActivityInfo {
   demo: true
   title: qsTr("Categorization")
   description: qsTr("Categorize the elements into correct and incorrect groups")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Categorize the elements into the correct group"
   goal: qsTr("Build conceptual thinking and enrich knowledge")
   prerequisite: qsTr("Can drag elements using mouse")
   manual: qsTr("Review the instructions and then drag and drop the elements as specified")
   credit: ""
   section: "fun"
-  createdInVersion: 6000
+  createdInVersion: 7000
 }

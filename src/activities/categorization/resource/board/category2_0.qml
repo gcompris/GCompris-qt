@@ -30,7 +30,7 @@ QtObject {
             "content": [
                 {
                     "tags": ["tools"],
-                    "instructions": qsTr("Place the TOOLS  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "wrench.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -96,7 +96,7 @@ QtObject {
                             "monuments/parthenon.jpg": ["monuments"],
                             "fishes/fish12.jpg": ["fishes"],
                             "fishes/fish16.jpg": ["fishes"],
-                            "others/plate.jpg": ["others"],
+                            "others/plate.jpg": ["others"]
                         }
                     ]
                 }, 
@@ -184,7 +184,7 @@ QtObject {
                             "others/chair.jpg": ["others"],
                             "monuments/operaHouse.jpg": ["monuments"],
                             "renewable/windmill12.jpg": ["renewable"],
-                            "monuments/IndiaGate.jpg": ["monuments"],
+                            "monuments/IndiaGate.jpg": ["monuments"]
                         }
                     ]
                 },
@@ -220,7 +220,7 @@ QtObject {
                             "tools/nailCutter.jpg": ["tools"],
                             "fishes/fish10.jpg": ["fishes"],
                             "others/pan.jpg": ["others"],
-                            "others/igloo.jpg": ["others"],
+                            "others/igloo.jpg": ["others"]
                         }
                     ]
                 },
@@ -238,7 +238,7 @@ QtObject {
                             "tools/multimeter1.jpg": ["tools"],
                             "renewable/dam2.jpg": ["renewable"],
                             "monuments/leaningTowerOfPisa.jpg": ["monuments"],
-                            "others/pillow.jpg": ["others"],
+                            "others/pillow.jpg": ["others"]
                         }
                     ]
                 }

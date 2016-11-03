@@ -18,7 +18,6 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
@@ -49,19 +48,19 @@ function init(items_,boardsUrl_) {
 function start() {
     categoriesData = []
     items.categoryReview.stop()
-    var categoriesfilename;
+    var categoriesFilename;
     for(var i = 1; i <= categoriesCount; i++) {
-        categoriesfilename = boardsUrl + "board" + "/" + "category" + i + "_" + currentSubLevel + ".qml"
-        items.categoryReview.categorydataset.source = categoriesfilename
-        categoriesData.push(items.categoryReview.categorydataset.item);
+        categoriesFilename = boardsUrl + "board" + "/" + "category" + i + "_" + currentSubLevel + ".qml"
+        items.categoryReview.categoryDataset.source = categoriesFilename
+        categoriesData.push(items.categoryReview.categoryDataset.item)
     }
-    lessons = getAllLessons(categoriesData);
+    lessons = getAllLessons(categoriesData)
     categories = getCategoryModel(categoriesData)
     addPropertiesToCategories(categories)
     items.menuModel.append(categories)
     savedPropertiesToCategories(items.dialogActivityConfig.dataToSave)
     sortByFavorites()
-    items.menuScreen.start();   
+    items.menuScreen.start()
 }
 
 // Inserts specific properties to the categories
@@ -103,7 +102,7 @@ function savedPropertiesToCategories(dataToSave) {
 
 function sortByFavorites() {
     for(var i = 0; i < items.menuModel.count; i++) {
-        if(items.menuModel.get(i)['favorite']){
+        if(items.menuModel.get(i)['favorite']) {
             items.menuModel.move(i, 0, 1);
         }
     }
@@ -178,47 +177,45 @@ function allPlaced() {
 
 // Save properties to lessons
 function getCategoryLevels() {
-    var randomGood = 0; var randomBad = 0;
-    
+    var randomGood = 0;
+    var randomBad = 0;
+
     /* If easy or medium mode is selected, store the details of levels of category of that respective index in items.details. */
-    if(!(items.mode == "expert")) {
-    items.details = lessons[index].map(function(ele) {
-        return { "tags": ele.tags , "instructions": ele.instructions,  "image": ele.image,
-            "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad, "categoryImages": ele.levelImages ,"prefix": ele.prefix }
-    }); 
-  } 
-  
-  // If expert mode is selected, select a random level (selectedLevel) from a random category (selectedCategory) 
-  else if(items.mode == "expert") { 
-    var selectedCategory = Math.floor(Math.random() * lessons.length)
-     var selectedLevel = []
-      selectedLevel[0] = lessons[selectedCategory][Math.floor(Math.random() * lessons[selectedCategory].length)]
-      items.details = selectedLevel.map(function(ele){
-          return { "tags": ele.tags , "instructions": ele.instructions,  "image": ele.image,
-              "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad, "categoryImages": ele.levelImages ,"prefix": ele.prefix }
-    }); 
-  }
- 
- // imagesPrefix stores the prefix of images in categoryx_0.qml
-  var imagesPrefix = items.details[items.bar.level - 1].prefix
-  var imagesDetails = {}
-  // Adds prefix to the image paths stored in items.details
-  Object.keys(items.details[items.bar.level - 1].categoryImages[0]).map(function (k) 
-  { 
-      imagesDetails[imagesPrefix + k] = items.details[items.bar.level - 1].categoryImages[0][k]; 
-  });
-  
-    
+    if(items.mode !== "expert") {
+        items.details = lessons[index].map(function(ele) {
+            return { "tags": ele.tags , "instructions": ele.instructions,  "image": ele.image,
+                     "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad, "categoryImages": ele.levelImages ,"prefix": ele.prefix }
+        });
+    }
+    // If expert mode is selected, select a random level (selectedLevel) from a random category (selectedCategory)
+    else if(items.mode === "expert") {
+        var selectedCategory = Math.floor(Math.random() * lessons.length)
+        var selectedLevel = []
+        selectedLevel[0] = lessons[selectedCategory][Math.floor(Math.random() * lessons[selectedCategory].length)]
+        items.details = selectedLevel.map(function(ele) {
+            return { "tags": ele.tags , "instructions": ele.instructions,  "image": ele.image,
+             "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad, "categoryImages": ele.levelImages ,"prefix": ele.prefix }
+        });
+    }
+
+    // imagesPrefix stores the prefix of images in categoryx_0.qml
+    var imagesPrefix = items.details[items.bar.level - 1].prefix
+    var imagesDetails = {}
+    // Adds prefix to the image paths stored in items.details
+    Object.keys(items.details[items.bar.level - 1].categoryImages[0]).map(function (k) {
+        imagesDetails[imagesPrefix + k] = items.details[items.bar.level - 1].categoryImages[0][k];
+      });
+
     // keys contains all the image paths. The good images are then filtered on the basis of the categoryTag 
     var keys = Object.keys(imagesDetails);
     var categoryTag = items.details[items.bar.level - 1].tags;
     var result = keys.filter(function(element) {
-        var bool = imagesDetails[element].every( function (ele) {
+        var bool = imagesDetails[element].every(function (ele) {
             return categoryTag.indexOf(ele) < 0;
         });
         return !bool;
     });
-    
+
     // good set of images
     var goodvalidimages = result.length;
     var numberOfGood = Math.min(goodvalidimages,items.details[items.bar.level-1].numberOfGood);
@@ -226,7 +223,7 @@ function getCategoryLevels() {
         return {"src": obj, "isRight": true}
     });
     table = table.splice(0,numberOfGood);
-    
+
     // remaining bad set of images filtered and stored
     var resultBad = keys.filter(function(i) {return result.indexOf(i) < 0;});
     var tableBad = resultBad.map(function(obj) {
@@ -235,7 +232,7 @@ function getCategoryLevels() {
     var badvalidimages = resultBad.length;
     var numberofBad = Math.min(badvalidimages,items.details[items.bar.level-1].numberofBad);
     tableBad =tableBad.splice(0,numberofBad);
-   
+
     // Concat both the good and bad images, shuffles them and stores them in the repeater model
     table = table.concat(tableBad);
     Core.shuffle(table);
@@ -243,14 +240,14 @@ function getCategoryLevels() {
     items.categoryReview.score.numberOfSubLevels = items.categoryReview.repeater.count
 }
 
-    // get categories details from the complete dataset
+// get categories details from the complete dataset
 function getCategoryModel(dataset) {
     var categories = []
     for (var c = 0; c < dataset.length; c++) {
         categories.push({
                        'name': dataset[c].levels[0].name,
                         'image': dataset[c].levels[0].image,
-                        'index': c,
+                        'index': c
         })
     }
     return categories
@@ -259,9 +256,8 @@ function getCategoryModel(dataset) {
 // get all the content (levels) from the category in dataset
 function getAllLessons(dataset){
     var lessons = []
-    for(var c = 0; c < dataset.length; c++){
+    for(var c = 0; c < dataset.length; c++) {
         lessons.push(dataset[c].levels[0].content)
     }
     return lessons
 }
-

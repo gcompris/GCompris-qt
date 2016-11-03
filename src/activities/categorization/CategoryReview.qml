@@ -1,4 +1,3 @@
-
 /* GCompris - CategoryReview.qml
  *
  * Copyright (C) 2016 Divyam Madaan <divyam3897@gmail.com>
@@ -27,66 +26,58 @@ import "categorization.js" as Activity
 
 Item {
     id: rootItem
-    property alias categorybackground: categorybackground
     property alias repeater: repeater
     property alias score: score
-    property alias imagesdataset: imagesdataset
-    property alias categorydataset: categorydataset
+    property alias categoryDataset: categoryDataset
     property alias instructionBox: instructionBox
-    property bool isDropped : true
+    property bool isDropped: true
     property bool leftAreaContainsDrag: false
     property bool rightAreaContainsDrag: false
     property bool started: rootItem.opacity == 1
-    property bool horizontalLayout: categorybackground.width > categorybackground.height
-    
+    property bool horizontalLayout: categoryBackground.width > categoryBackground.height
+
     anchors.fill: parent
-    signal pressed
-    
+
     Loader {
-        id: imagesdataset
+        id: categoryDataset
         asynchronous: false
     }
-    
-    Loader {
-        id: categorydataset
-        asynchronous: false
-    }
-    
+
     Image {
-        id: categorybackground
+        id: categoryBackground
         source: "qrc:/gcompris/src/activities/categorization/resource/background.svg"
         anchors.fill: parent
         sourceSize.width:parent.width
-        
+
         Rectangle {
-            id: leftscreen
+            id: leftScreen
             width: parent.width/3
             height: parent.height
             anchors.left: parent.left
             color: leftAreaContainsDrag ? "#9933FF" : "red"
             opacity: 0.52
         }
-        
+
         Rectangle {
-            id: rightscreen      
+            id: rightScreen
             width: parent.width/3.2
-            height: parent.width
+            height: parent.height
             anchors.right: parent.right
-            anchors.bottom: categorybackground.bottom
-            anchors.top: categorybackground.top
+            anchors.bottom: categoryBackground.bottom
+            anchors.top: categoryBackground.top
             color: rightAreaContainsDrag ? "#FFCC00" : "green"
             opacity: 0.47
         }
-        
+
         Rectangle {
-            id: middlescreen
-            anchors.left: leftscreen.right
-            anchors.right: rightscreen.left
-            color: Qt.rgba(1,1,1,0)
+            id: middleScreen
+            anchors.left: leftScreen.right
+            anchors.right: rightScreen.left
+            color: "#00FFFFFF"
             width: parent.width/3
-            height: parent.width  
+            height: parent.height
         }
-        
+
         Rectangle {
             id: instructionBox
             anchors.left: score.right
@@ -110,25 +101,25 @@ Item {
         Flow {
             id: options
             y: instructions.height
-            spacing: 0.012 * middlescreen.width
-            anchors{
-                left: leftscreen.right
-                right: rightscreen.left
+            spacing: 0.012 * middleScreen.width
+            anchors {
+                left: leftScreen.right
+                right: rightScreen.left
                 top: parent.top
                 topMargin: 0.05 * parent.height
-                bottom: categorybackground.bottom
-                leftMargin: 0.015 * middlescreen.width
+                bottom: categoryBackground.bottom
+                leftMargin: 0.015 * middleScreen.width
             }
-            
+
             Repeater {
-                id:repeater
-                
+                id: repeater
+
                 Item {
                     id: item
-                    width: middlescreen.width*0.32
-                    height: categorybackground.height * 0.2
+                    width: middleScreen.width*0.32
+                    height: categoryBackground.height * 0.2
                     opacity: 1
-                    
+
                     Image {
                         id: image
                         source: modelData.src
@@ -136,7 +127,7 @@ Item {
                     }
                     property string droppedPosition: "middle"
                     property bool isRight: modelData.isRight
-                    
+
                     MultiPointTouchArea {
                         id: dragArea
                         anchors.fill: parent
@@ -145,86 +136,86 @@ Item {
                         property real positionY
                         property real lastX
                         property real lastY 
-                        
+
                         onPressed: {
                             items.instructionsChecked = false
                             positionX = point1.x
                             positionY = point1.y
                         }
-                        
+
                         onUpdated: {
                             var moveX = point1.x - positionX
                             var moveY = point1.y - positionY
                             parent.x = parent.x + moveX
                             parent.y = parent.y + moveY
-                            leftAreaContainsDrag = isDragInLeftArea(0,parent.x+parent.width)
-                            rightAreaContainsDrag = isDragInRightArea(rootItem.width/3,parent.x)
+                            leftAreaContainsDrag = isDragInLeftArea(0, parent.x+parent.width)
+                            rightAreaContainsDrag = isDragInRightArea(rootItem.width/3, parent.x)
                             lastX = 0, lastY = 0
                         }
-                        
+
                         onReleased: {
                             if(lastX == point1.x && lastY == point1.y)
-                                return ;
+                                return;
                             //Drag.drop();
                             if(leftAreaContainsDrag) {
-                                item.droppedPosition = "left";
+                                item.droppedPosition = "left"
                                 activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")    
                             }
-                            
                             else if(rightAreaContainsDrag) {
-                                item.droppedPosition = "right";
+                                item.droppedPosition = "right"
                                 activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
                             }
-                            
                             else {
-                                item.droppedPosition = "middle";
+                                item.droppedPosition = "middle"
                             }
-                            leftAreaContainsDrag = false;
-                            rightAreaContainsDrag = false;
-                            lastX = point1.x, lastY = point1.y
+                            leftAreaContainsDrag = false
+                            rightAreaContainsDrag = false
+                            lastX = point1.x
+                            lastY = point1.y
                         }
                     }
                 }
             }
         }
-        
+
         GCText {
             id: instructions
             text: items.details ? items.details[bar.level - 1].instructions : ""
             visible: items.instructionsChecked
             anchors.fill: instructionBox
             anchors.bottom: instructionBox.bottom
-            font.pixelSize: horizontalLayout ? 0.039 * parent.height : 0.016 * parent.height
+            fontSizeMode: Text.Fit
             wrapMode: Text.Wrap
             z: 3
             color: "white"
+            verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
-        
+
         Image {
             id:categoryimage
             source: items.details ? items.details[bar.level-1].image : ""
-            width: horizontalLayout ? rightscreen.width * 0.35 : rightscreen.width * 0.35
-            height: horizontalLayout ? rightscreen.height * 0.18 : rightscreen.height * 0.15
+            width: horizontalLayout ? rightScreen.width * 0.35 : rightScreen.width * 0.35
+            height: horizontalLayout ? rightScreen.height * 0.18 : rightScreen.height * 0.15
             y: 0.015*parent.height
             visible: items.categoryImageChecked
             anchors {
-                left: middlescreen.right
-                leftMargin: 0.35 * rightscreen.width
+                left: middleScreen.right
+                leftMargin: 0.35 * rightScreen.width
             }
         }
-        
+
         BarButton {
             id: validate
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: horizontalLayout ? rightscreen.width * 0.20 : rightscreen.width * 0.35
-            height: horizontalLayout ? rightscreen.width * 0.20 : rightscreen.width * 0.35
+            width: horizontalLayout ? rightScreen.width * 0.20 : rightScreen.width * 0.35
+            height: horizontalLayout ? rightScreen.width * 0.20 : rightScreen.width * 0.35
             y: parent.height*0.8
             anchors{
                 rightMargin: 14 * ApplicationInfo.ratio
                 right: parent.right
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -232,22 +223,22 @@ Item {
                 }                
             }
         }
-        
+
         DropArea {
             id: rightArea
-            anchors.fill: rightscreen
+            anchors.fill: rightScreen
         }
-        
+
         DropArea {
             id: leftArea
-            anchors.fill: leftscreen
+            anchors.fill: leftScreen
         }
-        
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
-        
+
         Score {
             id: score
             fontSize: horizontalLayout ? 0.013 * parent.width : 0.02 * parent.width
@@ -256,16 +247,15 @@ Item {
             width: horizontalLayout ? 0.015 * parent.width : parent.width
             anchors {
                 top: parent.top
-                right: middlescreen.left
+                right: middleScreen.left
                 rightMargin: horizontalLayout ? 0.2 * parent.width : 0.15 * parent.width
                 left: parent.left
                 bottom: undefined
             }    
         }
     }
-    
-    Keys.onEscapePressed:{ Activity.launchMenuScreen();
-    }
+
+    Keys.onEscapePressed: { Activity.launchMenuScreen(); }
 
     Keys.onReleased: {
         if (event.key === Qt.Key_Back) {
@@ -278,22 +268,22 @@ Item {
         if(items.mode == "expert")
             items.menuScreen.iAmReady.visible = true
         focus = false
-        rootItem.visible = 0
+        rootItem.visible = false
     }
-    
-    function start(){
+
+    function start() {
         focus = true
-        rootItem.visible = 1
+        rootItem.visible = true
     }
-    
-    function isDragInLeftArea(leftAreaRightBorderPos,elementRightPos) {
+
+    function isDragInLeftArea(leftAreaRightBorderPos, elementRightPos) {
         if(elementRightPos <= leftAreaRightBorderPos)
             return true;
         else
             return false;      
     }
     
-    function isDragInRightArea(rightAreaLeftBorderPos,elementLeftPos) {
+    function isDragInRightArea(rightAreaLeftBorderPos, elementLeftPos) {
         if(elementLeftPos >= rightAreaLeftBorderPos)
             return true;
         else

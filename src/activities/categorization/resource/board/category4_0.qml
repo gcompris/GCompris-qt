@@ -30,10 +30,10 @@ QtObject{
             "content": [
                 {
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "windmill12.jpg",
                     "maxNumberOfGood": 6,
-		    "maxNumberOfBad": 6,
+		            "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
                     "levelImages": [
                         { 
@@ -54,7 +54,7 @@ QtObject{
                 },
                 {
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "solar8.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -78,7 +78,7 @@ QtObject{
                 },
                 {
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "dam2.jpg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -99,7 +99,7 @@ QtObject{
                 },
                 {
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "dam5.jpg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -120,7 +120,7 @@ QtObject{
                 },
                 {
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "geothermal.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -141,7 +141,7 @@ QtObject{
                 },               
 		{
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "dam3.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -159,7 +159,7 @@ QtObject{
                 },
 		{
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "solar2.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -177,7 +177,7 @@ QtObject{
                 },
 		{
                     "tags": ["renewable"],
-                    "instructions": qsTr("Place the RENEWABLE energy sources  to the right and other objects to the left"),
+                    "instructions": qsTr("Place the RENEWABLE energy sources to the right and other objects to the left"),
                     "image": imagesPrefix + "solar4.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,

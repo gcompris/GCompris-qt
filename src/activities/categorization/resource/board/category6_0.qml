@@ -114,7 +114,7 @@ QtObject {
                             "others/plate.jpg": ["birds"],
                             "monuments/operaHouse.jpg":["monuments"],
                             "monuments/zimniPalace.jpg":["monuments"],
-                            "renewable/geothermal.jpg":["renewable"],
+                            "renewable/geothermal.jpg":["renewable"]
                         }
                     ]
                 },
@@ -132,7 +132,7 @@ QtObject {
                             "fishes/fish25.jpg": ["fish"],
                             "monuments/monument3.jpg": ["monuments"],
                             "others/pan.jpg": ["others"],
-                            "others/pencil.jpg": ["others"],
+                            "others/pencil.jpg": ["others"]
                         }
                     ]
                 },

@@ -20,7 +20,7 @@
 */
 
 import QtQuick 2.1
-import QtQuick.Controls 1.4
+import QtQuick.Controls 1.3
 import GCompris 1.0
 
 import "../../core"
@@ -30,27 +30,26 @@ import "."
 
 ActivityBase {
     id: activity
-    
+
     onStart: focus = true
     onStop: {}
-    
+
     property string boardsUrl: "qrc:/gcompris/src/activities/categorization/resource/"
-    property string imagesUrl: "qrc:/gcompris/src/activities/categorization/resource/images"
     property bool vert: background.width < background.height
-    
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
         anchors.fill: parent
-        sourceSize.width:parent.width
+        sourceSize.width: parent.width
         signal start
         signal stop
-        
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        
+
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -66,36 +65,36 @@ ActivityBase {
             property bool instructionsChecked: (mode === "easy")
             property bool categoryNameChecked: (mode === "easy")
             property bool categoryImageChecked: (mode === "easy")
-            property bool scoreChecked: mode === "easy" || mode === "medium"
+            property bool scoreChecked: (mode === "easy" || mode === "medium")
             property bool iAmReadyChecked: (mode === "expert")
             property var details
         }
-        
+
         onStart: { 
-            Activity.init(items,boardsUrl)
+            Activity.init(items, boardsUrl)
             dialogActivityConfig.getInitialConfiguration()
             Activity.start()
         }
-        
+
         onStop: {
             dialogActivityConfig.saveDatainConfiguration() 
         }
-        
+
         MenuScreen {
             id: menuScreen
         }
-        
+
         CategoryReview {
             id: categoryReview
         }
-        
+
         ExclusiveGroup {
             id: configOptions
         }
-        
+
         DialogActivityConfig {
             id: dialogActivityConfig
-            content:Component{
+            content: Component {
                 Column {
                     spacing: 5
                     width: dialogActivityConfig.width
@@ -111,14 +110,13 @@ ActivityBase {
                         checked: (items.mode == "easy") ? true : false
                         exclusiveGroup: configOptions
                         onCheckedChanged: {
-                                if(easyModeBox.checked){
+                            if(easyModeBox.checked) {
                                 items.mode = "easy"
-                                print("Mode: ",items.mode)
                                 menuScreen.iAmReady.visible = false
-                                }
+                            }
                         }
                     }
-                    
+
                     GCDialogCheckBox {
                         id: mediumModeBox
                         width: 250 * ApplicationInfo.ratio
@@ -128,12 +126,11 @@ ActivityBase {
                         onCheckedChanged: {
                             if(mediumModeBox.checked){
                                 items.mode = "medium"
-                                print("Mode: ",items.mode)
                                 menuScreen.iAmReady.visible = false
+                            }
                         }
                     }
-                }
-                    
+
                     GCDialogCheckBox {
                         id: expertModeBox
                         width: 250 * ApplicationInfo.ratio
@@ -141,31 +138,30 @@ ActivityBase {
                         checked: (items.mode == "expert") ? true : false
                         exclusiveGroup: configOptions
                         onCheckedChanged: {
-                            if(expertModeBox.checked){
+                            if(expertModeBox.checked) {
                                 items.mode = "expert"
-                                print("Mode: ",items.mode)
                                 menuScreen.iAmReady.visible = true
-                        }
+                            }
                         }
                     }
                 }
-            }  
+            }
             onLoadData: {
                 items.mode = dataToSave["mode"]
             }
-            
+
             onSaveData: {
                 dataToSave["data"] = Activity.categoriesToSavedProperties(dataToSave)
-                dataToSave["mode"] = "" + items.mode
+                dataToSave["mode"] = items.mode
             }
             onClose: home()
         }
-        
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
-        
+
         Bar {
             id: bar
             content: menuScreen.started ? withConfig : withoutConfig
@@ -187,11 +183,10 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
-        
+
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }
-

@@ -20,7 +20,8 @@
 *
 *   You should have received a copy of the GNU General Public License
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
-*/import QtQuick 2.1
+*/
+import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.2
@@ -35,29 +36,30 @@ Image {
     source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
     sourceSize.width: Math.max(parent.width, parent.height)
     opacity: 0
-    
+
     property alias menuModel: menuModel
     property alias iAmReady: iAmReady
     property bool keyboardMode: false
     property bool started: opacity == 1
-    
+
     Behavior on opacity { PropertyAnimation { duration: 200 } }
-    
+
     function start() {
         focus = true
         forceActiveFocus()
         menuGrid.currentIndex = 0
         opacity = 1
     }
-    
+
     function stop() {
         focus = false
         opacity = 0
     }
-    
+
     Keys.onEscapePressed: {
         home()
     }
+
     Keys.enabled : (items.mode == "expert") ? false : true
     Keys.onPressed: {
         if(event.key === Qt.Key_Space) {
@@ -73,7 +75,6 @@ Image {
             event.accepted = true
         }
         if(event.key === Qt.Key_Left) {
-            
             menuGrid.moveCurrentIndexLeft()
             event.accepted = true
         }
@@ -90,24 +91,23 @@ Image {
             event.accepted = true
         }
     }
-    
+
     Keys.onReleased: {
         keyboardMode = true
         event.accepted = false
     }
-    
-    // Activities
+
+    // sections
     property int iconWidth: 180 * ApplicationInfo.ratio
     property int iconHeight: 180 * ApplicationInfo.ratio
-    
+
     property int levelCellWidth: background.width / Math.floor(background.width / iconWidth )
     property int levelCellHeight: iconHeight * 1.4
-    
 
-   ListModel {
+    ListModel {
         id: menuModel
     }
-    
+
     GridView {
         id: menuGrid
         layer.enabled: true
@@ -121,13 +121,13 @@ Image {
         model: menuModel
         keyNavigationWraps: true
         property int spacing: 10
-        
+
         ReadyButton {
-        id: iAmReady
-        focus: true
-        visible: items.iAmReadyChecked 
-        onClicked: {
-            Activity.startCategory()
+            id: iAmReady
+            focus: true
+            visible: items.iAmReadyChecked
+            onClicked: {
+                Activity.startCategory()
             }
         }
 
@@ -137,7 +137,7 @@ Image {
             height: levelCellHeight - menuGrid.spacing
             property string sectionName: name
             opacity: (items.mode == "expert") ? 0.25 : 1
-            
+
             Rectangle {
                 id: activityBackground
                 width: levelCellWidth - menuGrid.spacing
@@ -148,22 +148,20 @@ Image {
             }
             Image {
                 id: containerImage
-                source: image;
+                source: image
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: iconWidth
                 height: iconHeight
                 anchors.margins: 5
-                
+
                 GCText {
-                    id: title
+                    id: categoryName
                     anchors.top: parent.bottom
                     anchors.horizontalCenter: parent.horizontalCenter
                     horizontalAlignment: Text.AlignHCenter
                     width: activityBackground.width
                     fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: regularSize
                     elide: Text.ElideRight
                     maximumLineCount: 2
                     wrapMode: Text.WordWrap
@@ -171,22 +169,22 @@ Image {
                     opacity: (items.mode == "expert") ? 0 : 1
                 }
             }
-            
+
             ParticleSystemStarLoader {
                 id: particles
                 anchors.fill: activityBackground
             }
             MouseArea {
                 anchors.fill: activityBackground
-                enabled: menuScreen.started
+                enabled: menuScreen.started && items.mode !== "expert"
                 onClicked: selectCurrentItem()
             }
-            
+
             function selectCurrentItem() {
                 particles.burst(50)
                 Activity.storeCategoriesLevels(index)
             }
-            
+
             Image {
                 source: "qrc:/gcompris/src/activities/menu/resource/" +
                         ( favorite ? "all.svg" : "all_disabled.svg" );
@@ -197,15 +195,14 @@ Image {
                 }
                 sourceSize.width: iconWidth * 0.25
                 visible: ApplicationSettings.sectionVisible
-                
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-		   for(var i = 0; i < items.menuModel.count; i++) {
-              var category = items.menuModel.get(i)
+		                for(var i = 0; i < items.menuModel.count; i++) {
+                            var category = items.menuModel.get(i)
                             var categoryIndex = category.index
                             if(index == categoryIndex)
-                                menuModel.get(i)['favorite'] = !menuModel.get(i)['favorite']
+                            menuModel.get(i)['favorite'] = !menuModel.get(i)['favorite']
                         }
                     }
                 }
@@ -222,18 +219,18 @@ Image {
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
-        
-        Rectangle{
+
+        Rectangle {
             id: menusMask
             visible: false
             anchors.fill: menuGrid
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#FFFFFFFF" }
                 GradientStop { position: 0.92; color: "#FFFFFFFF" }
-                GradientStop { position: 0.96; color: "#00FFFFFF"}
+                GradientStop { position: 0.96; color: "#00FFFFFF" }
             }
         }
-        
+
         layer.effect: OpacityMask {
             id: activitiesOpacity
             source: menuGrid
