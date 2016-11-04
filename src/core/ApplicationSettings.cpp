@@ -63,6 +63,7 @@ static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
 static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
 static const QString CURRENT_SERVER = "currentServer";
+static const QString CURRENT_USERNAME = "currentUserName";
 static const QString ACTIVITIES_DISPLAYED = "activitiesToDisplay";
 
 
@@ -159,6 +160,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "http://gcompris.net").toString();
     m_currentServer = m_config.value(CURRENT_SERVER, "").toString();
+    m_userName = m_config.value(CURRENT_USERNAME, "").toString();
     m_activitiesToDisplay = m_config.value(ACTIVITIES_DISPLAYED, QStringList()).toStringList();
     m_config.endGroup();
 
@@ -193,6 +195,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::currentServerChanged, this, &ApplicationSettings::notifyCurrentServerChanged);
     connect(this, &ApplicationSettings::activitiesToDisplayChanged, this, &ApplicationSettings::notifyActivitiesToDisplayChanged);
     connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
+    connect(this, &ApplicationSettings::userNameChanged, this, &ApplicationSettings::notifyUserNameChanged);
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -228,6 +231,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
     m_config.setValue(CURRENT_SERVER, m_currentServer);
+    m_config.setValue(CURRENT_USERNAME, m_userName);
     m_config.setValue(ACTIVITIES_DISPLAYED, m_activitiesToDisplay);
     m_config.endGroup();
 
@@ -246,6 +250,11 @@ void ApplicationSettings::notifyShowLockedActivitiesChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, SHOW_LOCKED_ACTIVITIES_KEY, m_showLockedActivities);
     qDebug() << "notifyShowLockedActivitiesChanged: " << m_showLockedActivities;
+}
+
+void ApplicationSettings::notifyUserNameChanged()
+{
+    updateValueInConfig(ADMIN_GROUP_KEY, CURRENT_USERNAME, m_userName);
 }
 
 void ApplicationSettings::notifyAudioVoicesEnabledChanged()

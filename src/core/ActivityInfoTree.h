@@ -60,6 +60,7 @@ protected Q_SLOTS:
     Q_INVOKABLE void filterByDifficulty(int levelMin, int levelMax);
 
     Q_INVOKABLE void filterByConfiguration();
+    Q_INVOKABLE void fullTree(bool emitChanged = true);
     void onActivitiesToDisplayChanged();
 
 signals:

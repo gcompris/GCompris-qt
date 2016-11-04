@@ -143,6 +143,9 @@ void ClientNetworkMessages::connected()
 
 void ClientNetworkMessages::sendLoginMessage(const QString &newLogin)
 {
+    // store the username in config
+    ApplicationSettings::getInstance()->setUserName(newLogin);
+
     // Send Login message
     QByteArray bytes;
     QDataStream out(&bytes, QIODevice::WriteOnly);
@@ -212,7 +215,7 @@ void ClientNetworkMessages::sendActivityData(const QString &activity,
                                              const QVariantMap &data)
 {
     qDebug() << "Activity: " << activity << ", date: " << QDateTime::currentDateTime() << ", data:" << data;
-    QString username = QString("-%1-").arg(QHostInfo::localHostName());
+    const QString &username = ApplicationSettings::getInstance()->userName();
     ActivityRawData activityData { activity, username, QDateTime::currentDateTime(), data };
 
     QByteArray bytes;

@@ -244,6 +244,14 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(QString currentServer READ currentServer WRITE setCurrentServer NOTIFY currentServerChanged)
 
+    /**
+     * name of the current user when using gcompris with a server.
+     * It is used on server side to know which user sends the data
+     *
+     * @sa ClientNetworkMessages
+     */
+    Q_PROPERTY(QString userName READ userName WRITE setUserName NOTIFY userNameChanged)
+
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
@@ -477,6 +485,12 @@ public:
         emit activitiesToDisplayChanged();
     }
 
+    QString userName() const { return m_userName; }
+    void setUserName(const QString& name) {
+        m_userName = name;
+        emit userNameChanged();
+    }
+
     void storeActivityConfiguration(const QString &activityName, const QVariantMap &data);
 
 protected slots:
@@ -511,6 +525,7 @@ protected slots:
     Q_INVOKABLE void notifyBarHiddenChanged();
 
     Q_INVOKABLE void notifyCurrentServerChanged();
+    Q_INVOKABLE void notifyUserNameChanged();
     Q_INVOKABLE void notifyActivitiesToDisplayChanged();
 
     Q_INVOKABLE QVariant getActivityConfiguration(const QString &activityName);
@@ -584,6 +599,7 @@ signals:
     void barHiddenChanged();
 
     void currentServerChanged();
+    void userNameChanged();
     void activitiesToDisplayChanged();
 
 private:
@@ -628,6 +644,7 @@ private:
     quint32 m_exeCount;
 
     QString m_currentServer;
+    QString m_userName;
     QStringList m_activitiesToDisplay;
 
     int m_lastGCVersionRan;

@@ -539,8 +539,28 @@ Item {
 
             GCText {
                 id: networkLabel
-                text: ClientNetworkMessages.connected ? qsTr("You are connected to %1").arg(ApplicationSettings.currentServer) :
-                                                        qsTr("You are in session with %1 but not connected").arg(ApplicationSettings.currentServer)
+                text: {
+                    if(ClientNetworkMessages.connected) {
+                        if(ApplicationSettings.userName !== "") {
+                            qsTr("You are connected as %1 to %2").
+                                 arg(ApplicationSettings.userName).
+                                 arg(ApplicationSettings.currentServer)
+                        }
+                        else {
+                            qsTr("You are connected to %1").arg(ApplicationSettings.currentServer)
+                        }
+                    }
+                    else {
+                        if(ApplicationSettings.userName !== "") {
+                            qsTr("You are in session as %1 with %2 but not connected").
+                                 arg(ApplicationSettings.userName).
+                                 arg(ApplicationSettings.currentServer)
+                        }
+                        else {
+                            qsTr("You are in session with %1 but not connected").arg(ApplicationSettings.currentServer)
+                        }
+                    }
+                }
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
             }

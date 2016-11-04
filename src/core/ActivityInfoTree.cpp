@@ -199,6 +199,16 @@ void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion,
         Q_EMIT menuTreeChanged();
 }
 
+void ActivityInfoTree::fullTree(bool emitChanged)
+{
+    // display all the activities on server side
+    m_menuTree = m_menuTreeFull;
+    filterEnabledActivities();
+    filterLockedActivities();
+    if (emitChanged)
+        Q_EMIT menuTreeChanged();
+}
+
 void ActivityInfoTree::exportAsSQL()
 {
     QTextStream cout(stdout);
