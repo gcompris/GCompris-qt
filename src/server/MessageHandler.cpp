@@ -213,10 +213,9 @@ void MessageHandler::onLoginReceived(const ClientData &who, const Login &data)
 
 void MessageHandler::onActivityDataReceived(const ClientData &who, const ActivityRawData &act)
 {
-    qDebug() << "Activity: " << act.activityName << ", date: " << act.date << ", data:" << act.data;
-    ClientData *c = getClientData(who);
-    if(c && c->getUserData())
-        c->getUserData()->addData(act);
+    qDebug() << "Activity: " << act.activityName << ", date: " << act.date << ", data:" << act.data << ", user: " << act.username;
+    UserData *u = getUser(act.username);
+    u->addData(act);
 }
 
 void MessageHandler::onNewClientReceived(const ClientData &client)

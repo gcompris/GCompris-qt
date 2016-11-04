@@ -65,6 +65,7 @@ int main(int argc, char *argv[])
     Server::init();
     Database::init();
     MessageHandler::init();
+    MessageHandler::getInstance(); // the instance seems to be created only when we enter a qml items that have a loader using a MessageHandler attribute as model
 
     if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
