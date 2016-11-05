@@ -356,6 +356,11 @@ ActivityBase {
             height: parent.height/6
             visible: false
             color: "steelblue"
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
             radius: 30
             property alias dialogText: dialogText
             anchors.centerIn: parent
@@ -376,7 +381,7 @@ ActivityBase {
                 wrapMode: TextEdit.WordWrap
             }
             onVisibleChanged:SequentialAnimation {
-                PropertyAnimation {target: dialog; property: "opacity"; from : 1 ; to: 0 ; duration: 3000 }
+                PropertyAnimation {target: dialog; property: "opacity"; from : 1 ; to: 0 ; duration: 3500 }
                 PropertyAnimation {target: dialog; property: "visible"; to: false }
             }
         }

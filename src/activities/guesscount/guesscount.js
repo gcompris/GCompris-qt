@@ -139,8 +139,6 @@ function childrenChange(item,operationRow)
         operationRow.complete = false
         operationRow.endResult.text = ""
     }
-    else
-        console.log(items.children.length)
 }
 
 function checkAnswer(row){
