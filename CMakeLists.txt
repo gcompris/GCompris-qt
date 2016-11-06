@@ -6,6 +6,9 @@ endif()
 
 project(gcompris-qt C CXX)
 
+# get all the redist dll needed for windows when compiling with vc
+include(InstallRequiredSystemLibraries)
+
 # Set c++11 support
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
@@ -257,19 +260,6 @@ add_custom_target(DlAndInstallBundledTranslations
   COMMENT "Download the bundled translation and install them in the build dir"
   )
 
-add_custom_command(
-    OUTPUT doDlAndInstallVCRedistDll
-    COMMAND curl -fsS -o vcredist.7z
-                 http://gcompris.net/private/microsoft/vcredist32/vcredist.7z
-    COMMAND 7z x -y -o${CMAKE_BINARY_DIR} vcredist.7z
-    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-    )
-# Download and install windows dll
-add_custom_target(DlAndInstallVCRedistDll
-  DEPENDS doDlAndInstallVCRedistDll
-  COMMENT "Download the vcredist dll and install them in the build dir (https://bugreports.qt.io/browse/QTBUG-55216)"
-  )
-
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
 else()
@@ -450,10 +440,16 @@ else()
       execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init)
     endif()
 
+    # for visual studio, we need to create a vcxproj
+    if(WIN32 AND NOT MINGW)
+      set(_qmake_options -spec win32-msvc2015 -tp vc)
+    else()
+      set(_qmake_options "")
+    endif()
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
       SOURCE_DIR ${_box2d_source_dir}
-      CONFIGURE_COMMAND ${_qmake_program} ${_box2d_source_dir}/box2d.pro
+      CONFIGURE_COMMAND ${_qmake_program} ${_qmake_options} ${_box2d_source_dir}/box2d.pro
       BUILD_COMMAND ${CMAKE_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
       INSTALL_COMMAND cp ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
