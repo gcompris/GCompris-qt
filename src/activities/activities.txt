@@ -33,6 +33,7 @@ crane
 details
 drawletters
 drawnumber
+drawnumbers
 enumerate
 erase
 erase_2clic
