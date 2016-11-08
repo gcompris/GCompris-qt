@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
+ * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,17 +18,17 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "drawnumber/Drawnumber.qml"
+  name: "number_sequence/Number_sequence.qml"
   difficulty: 1
-  icon: "drawnumber/drawnumber.svg"
-  author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
+  icon: "number_sequence/numbersequence.svg"
+  author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
   demo: true
-  title: qsTr("Draw Numbers")
-  description: qsTr("Connect the dots to draw numbers from 0 to 9")
-  goal: qsTr("Children will learn how to draw different numbers in a fun way.")
+  title: qsTr("Number sequence")
+  description: qsTr("Touch the numbers in the right sequence.")
+//  intro: "Draw the picture by touching each number in the right sequence."
+  goal: qsTr("Can count from 1 to 50.")
   prerequisite: ""
-  manual: qsTr("Draw the numbers by connecting the dots in the correct order")
+  manual: qsTr("Draw the picture by touching each number in the right sequence, or sliding your finger or dragging the mouse through the numbers in the correct sequence.")
   credit: ""
   section: "math numeration"
-  createdInVersion: 7000
 }
