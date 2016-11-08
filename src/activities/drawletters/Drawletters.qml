@@ -19,11 +19,11 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import "../drawnumber"
+import "../number_sequence"
 import "../../core" as Core
 import "drawletters_dataset.js" as Dataset
 
-Drawnumber {
+Number_sequence {
     mode: "drawletters"
     dataset: Dataset
     pointImageOpacity: 0
