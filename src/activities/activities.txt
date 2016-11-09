@@ -32,6 +32,7 @@ colors
 crane
 details
 drawletters
+drawnumbers
 enumerate
 erase
 erase_2clic

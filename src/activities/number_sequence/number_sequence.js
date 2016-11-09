@@ -52,7 +52,7 @@ function initLevel() {
     items.pointIndexToClick = 0
     loadCoordinates()
     loadBackgroundImage()
-    if(mode == "drawletters") {
+    if(mode == "drawletters" || mode == "drawnumbers") {
         //function to play letter sound at start
         playLetterSound(dataset[currentLevel].sound)
     }
@@ -81,7 +81,7 @@ function playLetterSound(sound) {
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick) {
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
-        if (mode == "clickanddraw" || mode == "drawletters") {
+        if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
             }
@@ -112,7 +112,7 @@ function loadCoordinates() {
     pointPositions = dataset[currentLevel].coordinates
     pointPositions2 = dataset[currentLevel].coordinates2
     items.pointImageRepeater.model = pointPositions
-    if (mode == "clickanddraw" || mode == "drawletters")
+    if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers")
         items.pointImageRepeater.itemAt(0).highlight = true
     // prepare segments data
     linePropertiesArray = []
@@ -133,7 +133,7 @@ function loadBackgroundImage() {
 }
 
 function won() {
-    if(mode == "drawletters") {
+    if(mode == "drawletters" || mode == "drawnumbers") {
         playLetterSound(dataset[currentLevel].sound)
     }
     items.bonus.good("flower")
