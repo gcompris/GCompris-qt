@@ -20,13 +20,13 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import "../drawnumber"
+import "../number_sequence"
 import "../../core" as Core
 import "clickanddraw_dataset.js" as Dataset
 
-Drawnumber {
+NumberSequence {
     mode: "clickanddraw"
     pointImageOpacity: 0
     dataset: Dataset
-    url: "qrc:/gcompris/src/activities/drawnumber/resource/"
+    url: "qrc:/gcompris/src/activities/number_sequence/resource/"
 }

@@ -32,7 +32,6 @@ colors
 crane
 details
 drawletters
-drawnumber
 enumerate
 erase
 erase_2clic
@@ -102,6 +101,7 @@ money_cents
 mosaic
 nine_men_morris
 nine_men_morris_2players
+number_sequence
 numbers-odd-even
 paintings
 penalty

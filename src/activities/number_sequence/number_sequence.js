@@ -1,4 +1,4 @@
-/* GCompris - drawnumber.js
+/* GCompris - number_sequence.js
 *
 * Copyright (C) 2014 Emmanuel Charruau
 *
