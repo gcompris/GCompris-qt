@@ -17,6 +17,7 @@ ballcatch
 braille_alphabets
 braille_fun
 canal_lock
+categorization
 chess
 chess_2players
 chess_partyend
