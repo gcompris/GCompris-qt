@@ -154,10 +154,10 @@ function play(player, value) {
         if (moveCount == (boardSize[items.mode - 1] - 1)) {
             if (player == 2) {
                 items.bonus.good("flower");
-                items.score++;
+                items.player1Score++;
             } else {
                 items.bonus.bad("flower");
-                items.score--;
+                items.player2Score++;
             }
             return;
         }

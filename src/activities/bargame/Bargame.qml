@@ -64,7 +64,11 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int mode: 1
-            property int score: 0
+            property int player1Score: 0
+            property int player2Score: 0
+            property string player1: "Human"
+            property string player2: "CPU"
+            property int gameMode: 1
         }
 
         onStart: {
@@ -259,7 +263,6 @@ ActivityBase {
                 anchors.fill: parent
                 hoverEnabled: true
                 onClicked: {
-                    parent.source = Activity.url + "enumerate_answer_focus.svg";
                     Activity.numberOfBalls ++;
                     if (Activity.numberOfBalls > Activity.numberBalls[items.mode - 1 ][1]) {
                         Activity.numberOfBalls = Activity.numberBalls[items.mode - 1 ][0];
@@ -311,11 +314,17 @@ ActivityBase {
             content: Component {
                 Item {
                     property alias modeBox: modeBox
+                    property alias gameModeBox: gameModeBox
 
                     property var availableModes: [
                         { "text": qsTr("Easy"), "value": 1 },
                         { "text": qsTr("Medium"), "value": 2 },
                         { "text": qsTr("Difficult"), "value": 3 }
+                    ]
+
+                    property var availableGameModes: [
+                        { "text": qsTr("1 Player"), "value": 1 },
+                        { "text": qsTr("2 Player"), "value": 2 }
                     ]
                     Flow {
                         id: flow
@@ -325,32 +334,51 @@ ActivityBase {
                             id: modeBox
                             model: availableModes
                             background: dialogActivityConfig
-                            label: qsTr("Select your mode")
+                            label: qsTr("Select your difficulty")
+                        }
+                        GCComboBox {
+                            id: gameModeBox
+                            model: availableGameModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select your gameplay mode")
                         }
                     }
                 }
             }
+
             onClose: {
                 Activity.initLevel();
                 home();
             }
             onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
+                if(dataToSave && dataToSave["mode"] && dataToSave["gameMode"]) {
                     items.mode = dataToSave["mode"];
+                    items.gameMode = dataToSave["gameMode"];
                     Activity.initLevel();
                 }
             }
             onSaveData: {
                 var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                var newGameMode = dialogActivityConfig.configItem.availableGameModes[dialogActivityConfig.configItem.gameModeBox.currentIndex].value;
                 if (newMode !== items.mode) {
                     items.mode = newMode;
                     dataToSave = {"mode": items.mode};
+                }
+                if (newGameMode !== items.gameMode) {
+                    items.gameMode = newGameMode;
+                    dataToSave = {"gameMode": items.gameMode};
                 }
             }
             function setDefaultValues() {
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
                     if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
                         dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+                for(var j = 0 ; j < dialogActivityConfig.configItem.availableGameModes.length ; j++) {
+                    if(dialogActivityConfig.configItem.availableGameModes[j].value === items.gameMode) {
+                        dialogActivityConfig.configItem.gameModeBox.currentIndex = j;
                         break;
                     }
                 }
@@ -384,7 +412,7 @@ ActivityBase {
 
         Score {
             id: score
-            message: "Score: " + items.score
+            message: ((items.gameMode == 1) ? "Human" : "Player1") + ": " + items.player1Score + " - " + ((items.gameMode == 1) ? "CPU" : "Player2") + ": " + items.player2Score
             anchors.top: parent.top
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
