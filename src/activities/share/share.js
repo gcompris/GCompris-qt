@@ -90,15 +90,17 @@ function setUp() {
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
 
-        //~ singular Place %1 boy
-        //~ plural Place %1 boys
-        items.instruction.text = qsTr("Place %1 boy(s) ", "First part of Place %1 boy(s) and %2 girl(s) in the center.").arg(items.totalBoys) +
-            //~ singular and %2 girl in the center.
-            //~ plural and %2 girls in the center.
-            qsTr("and %1 girl(s) in the center. ", "Second part of Place %1 boy(s) and %2 girl(s) in the center.").arg(items.totalGirls) +
-            //~ singular Then equally split %1 candy between them.
-            //~ plural Then equally split %1 candies between them.
-            qsTr("Then equally split %1 candies between them.", "Third part of Place %1 boy(s) and %2 girl(s) in the center.").arg(items.totalCandies)
+        //~ singular Place %n boy
+        //~ plural Place %n boys
+        items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n candies between them.").arg(items.totalBoys);
+
+        //~ singular and %n girl in the center.
+        //~ plural and %n girls in the center.
+        items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n candies between them.").arg(items.totalGirls);
+        
+        //~ singular Then equally split %n candy between them.
+        //~ plural Then equally split %n candies between them.
+        items.instruction.text += qsTr("Then equally split %n candies between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n candies between them.").arg(items.totalCandies)
 
         items.background.showCount = false
         items.nbSubLevel = 5

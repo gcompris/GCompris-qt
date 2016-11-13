@@ -31,11 +31,11 @@ Item {
     z: 10
 
     property bool vert
-    property alias model: mymodel;
-    property alias view: view;
-    property alias showOk : showOk
-    property alias hideOk : hideOk
-    property alias repeater : repeater
+    property alias model: mymodel
+    property alias view: view
+    property alias showOk: showOk
+    property alias hideOk: hideOk
+    property alias repeater: repeater
 
     ListModel {
         id: mymodel
@@ -52,7 +52,6 @@ Item {
             view.okShowed = true
             instruction.show()
         }
-
     }
     PropertyAnimation {
         id: hideOk
@@ -178,7 +177,7 @@ Item {
                 }
             }
         }
-        
+
         function refreshLeftWidget() {
             availablePieces.view.currentDisplayedGroup = availablePieces.view.setCurrentDisplayedGroup
             availablePieces.view.setNextNavigation()
@@ -229,7 +228,7 @@ Item {
 
                 onPressed: repeater.currentIndex = index
             }
-            
+
             clip: true
             model: mymodel
 
@@ -238,7 +237,7 @@ Item {
 
         Row {
             spacing: view.iconSize * 0.20
-            
+
             Image {
                 id: previous
                 opacity: (model.count > view.nbItemsByGroup &&
@@ -247,7 +246,7 @@ Item {
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
-                    anchors.fill: parent                    
+                    anchors.fill: parent
                     onClicked: {
                         repeater.currentIndex = -1
                         if(previous.opacity == 1) {
@@ -257,7 +256,7 @@ Item {
                     }
                 }
             }
-            
+
             Image {
                 id: next
                 visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < 

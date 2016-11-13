@@ -169,7 +169,6 @@ ActivityBase {
                 styleColor: "black"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: TextEdit.WordWrap
-                text: "coucou"
             }
         }
         

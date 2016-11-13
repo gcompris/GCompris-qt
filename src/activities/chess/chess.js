@@ -277,7 +277,6 @@ function randomMove() {
     // This avoid having the computer playing bad against a user
     // with too few pieces making the game last too long
     var score = getScore()
-    console.log(score[0] / score[1])
     if(score[0] / score[1] < 0.7) {
         computerMove()
         return

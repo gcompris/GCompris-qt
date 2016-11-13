@@ -311,13 +311,13 @@ public:
     QString locale() const {
         return m_locale;
     }
-    void setLocale(const QString newLocale) {
+    void setLocale(const QString &newLocale) {
         m_locale = newLocale;
         emit localeChanged();
     }
 
     QString font() const { return m_font; }
-    void setFont(const QString newFont) {
+    void setFont(const QString &newFont) {
         m_font = newFont;
         emit fontChanged();
     }
@@ -362,7 +362,7 @@ public:
     void setDemoMode(const bool newMode);
 
     QString codeKey() const { return m_codeKey; }
-    void setCodeKey(const QString newCodeKey) {
+    void setCodeKey(const QString &newCodeKey) {
         m_codeKey = newCodeKey;
         emit notifyCodeKeyChanged();
     }
@@ -386,7 +386,7 @@ public:
      *           1 if the code is valid but out of date
      *           2 if the code is valid and under 2 years
      */
-    Q_INVOKABLE uint checkActivationCode(const QString code);
+    Q_INVOKABLE uint checkActivationCode(const QString &code);
 
     /**
      * Check Payment API
@@ -409,13 +409,13 @@ public:
 	}
 
     QString wordset() const { return m_wordset; }
-    void setWordset(const QString newWordset) {
+    void setWordset(const QString &newWordset) {
         m_wordset = newWordset;
         emit wordsetChanged();
     }
 
     QString downloadServerUrl() const { return m_downloadServerUrl; }
-    void setDownloadServerUrl(const QString newDownloadServerUrl) {
+    void setDownloadServerUrl(const QString &newDownloadServerUrl) {
         m_downloadServerUrl = newDownloadServerUrl;
         emit downloadServerUrlChanged();
     }
