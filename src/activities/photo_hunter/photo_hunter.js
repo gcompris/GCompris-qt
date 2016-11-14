@@ -121,9 +121,6 @@ function setUp() {
 
     items.img1.source = url + "photo" + (currentLevel+1) + ".svg"
     items.img2.source = url + "photo" + (currentLevel+1) + ".svg"
-
-    items.helpPressed = 0
-    items.helpButton.opacity = 1
 }
 
 function loadCoordinate() {
@@ -140,7 +137,7 @@ function loadCoordinate() {
 }
 
 
-function photoClicked(item,index) {
+function photoClicked(item, index) {
     //only if the difference is not yet spotted
     if (items.img2.repeater.itemAt(index).opacity === 0) {
 
@@ -172,7 +169,7 @@ function hideProblem() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();

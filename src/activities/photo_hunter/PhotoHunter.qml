@@ -21,8 +21,8 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
-import QtQuick.Controls 1.4
-import QtQuick.Controls.Styles 1.4
+import QtQuick.Controls 1.2
+import QtQuick.Controls.Styles 1.2
 
 import "../../core"
 import "photo_hunter.js" as Activity
@@ -56,23 +56,17 @@ ActivityBase {
             property bool notShowed: true
             property alias img1: img1
             property alias img2: img2
-            property alias helpButton: helpButton
             property int total
             property int totalFound: img1.good + img2.good
             property alias problem: problem
             property alias frame: frame
-            property int helpPressed: 0
-
-            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / 11 ,
-                                            background.height / (9 + barHeightAddon))
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         property bool vert: background.width < background.height
-        property double barHeight: (items.barHeightAddon == 1) ? 0 : bar.height
+        property double barHeight: ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
         property bool startedHelp: false
 
         function checkAnswer() {
@@ -209,71 +203,6 @@ ActivityBase {
             }
         }
 
-        //help button
-        Image {
-            id: helpButton
-            source: Activity.url + "help.svg"
-            sourceSize.height: background.vert ? bar.height * 0.77 : bar.height * 1
-            height: background.vert ? bar.height * 0.7 : bar.height * 0.9
-            fillMode: Image.PreserveAspectFit
-            anchors {
-                bottom: background.vert ? bar.top : bar.bottom
-                bottomMargin: 10
-                left: background.vert ? parent.left : bar.right
-                leftMargin: background.vert || ApplicationSettings.isBarHidden ? 10 : bar.width * 3.55
-            }
-
-            property bool notPressed: true
-
-            Behavior on opacity {
-                NumberAnimation {
-                    duration: 200
-                    easing.type: Easing.InOutQuad
-                }
-            }
-
-            states: State {
-                name: "scaled"; when: mouseArea.containsMouse
-                PropertyChanges {
-                    target: helpButton
-                    scale: 1.1
-                }
-            }
-
-            MouseArea {
-                id: mouseArea
-                anchors.fill: parent
-                enabled: items.helpPressed < 2 ? true : false
-                hoverEnabled: ApplicationInfo.isMobile ? false : true
-
-                onClicked: {
-                    background.startedHelp = !background.startedHelp
-
-                    if (!background.startedHelp)
-                        items.helpPressed ++
-
-                    if (items.helpPressed < 2)
-                        if (!background.startedHelp)
-                            helpButton.opacity = 1
-                        else
-                            helpButton.opacity = 0.8
-                    else helpButton.opacity = 0.5
-
-                    if (helpButton.notPressed) {
-                        items.frame.anchors.top = items.problem.bottom
-                        items.problem.z = 5
-                        frame.problemTextHeight = problemText.height
-                        helpButton.notPressed = false
-                    } else if (!items.notShowed) {
-                        Activity.hideProblem()
-                        frame.problemTextHeight = 0
-                    }
-
-                    slider.value = 0
-                }
-            }
-        }
-
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -281,13 +210,17 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onHintClicked: {
+                background.startedHelp = !background.startedHelp
+                slider.value = 0
+            }
         }
 
         Bonus {
@@ -307,7 +240,5 @@ ActivityBase {
             numberOfSubLevels: items.total
             currentSubLevel: items.totalFound
         }
-
     }
-
 }
