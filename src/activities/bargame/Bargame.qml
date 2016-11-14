@@ -63,12 +63,28 @@ ActivityBase {
             property alias answerBalls: answerBalls
             property alias bar: bar
             property alias bonus: bonus
+            property alias okArea: okArea
+
+            property alias player1: player1
+            property alias player1turn: player1turn
+            property alias player1shrink: player1shrink
+            property alias player1image: player1image
+            property alias changeScalePlayer1: changeScalePlayer1
+            property alias rotateKonqi: rotateKonqi
+
+            property alias player2: player2
+            property alias player2turn: player2turn
+            property alias player2shrink: player2shrink
+            property alias player2image: player2image
+            property alias changeScalePlayer2: changeScalePlayer2
+            property alias rotateTux: rotateTux
+
             property int mode: 1
             property int player1Score: 0
             property int player2Score: 0
-            property string player1: "Human"
-            property string player2: "CPU"
             property int gameMode: 1
+            property bool isPlayer1Beginning: true
+            property bool isPlayer1Turn: true
         }
 
         onStart: {
@@ -232,12 +248,17 @@ ActivityBase {
                 id: okArea
                 anchors.fill: parent
                 hoverEnabled: true
+                enabled: true
                 onClicked: {
                     tuxArea.hoverEnabled = false;
                     tuxArea.enabled = false;
                     var value = Activity.numberOfBalls
                     numberLabel.text = Activity.numberOfBalls = Activity.numberBalls[items.mode - 1][0];
+                    if (items.gameMode == 1) {
                     Activity.play(1, value);
+                    } else {
+                        Activity.play(((items.isPlayer1Turn) ? 1 : 2), value);
+                    }
                 }
             }
             states: State {
@@ -300,6 +321,281 @@ ActivityBase {
                 anchors {
                     centerIn: ballNumberPlate
                 }
+            }
+        }
+
+        PropertyAnimation {
+            id: player1turn
+            target: changeScalePlayer1
+            properties: "scale"
+            from: 1.0
+            to: 1.4
+            duration: 500
+            onStarted:{
+                player1.state = "first"
+                player2.state = "second"
+                rotateTux.stop()
+                player2image.rotation = 0
+                rotateKonqi.start()
+                player2shrink.start()
+            }
+        }
+
+        PropertyAnimation {
+            id: player1shrink
+            target: changeScalePlayer1
+            properties: "scale"
+            from: 1.4
+            to: 1.0
+            duration: 500
+        }
+
+        PropertyAnimation {
+            id: player2turn
+            target: changeScalePlayer2
+            properties: "scale"
+            from: 1.0
+            to: 1.4
+            duration: 500
+            onStarted:{
+                player1.state = "second"
+                player2.state = "first"
+                rotateKonqi.stop()
+                player1image.rotation = 0
+                rotateTux.start()
+                player1shrink.start()
+            }
+        }
+
+        PropertyAnimation {
+            id: player2shrink
+            target: changeScalePlayer2
+            properties: "scale"
+            from: 1.4
+            to: 1.0
+            duration: 500
+        }
+
+        SequentialAnimation {
+            id: rotateKonqi
+            loops: Animation.Infinite
+            NumberAnimation {
+                target: player1image
+                property: "rotation"
+                from: -30; to: 30
+                duration: 750
+                easing.type: Easing.InOutQuad
+            }
+            NumberAnimation {
+                target: player1image
+                property: "rotation"
+                from: 30; to: -30
+                duration: 750
+                easing.type: Easing.InOutQuad
+            }
+        }
+
+        SequentialAnimation {
+            id: rotateTux
+            loops: Animation.Infinite
+            NumberAnimation {
+                target: player2image
+                property: "rotation"
+                from: -30; to: 30
+                duration: 750
+                easing.type: Easing.InOutQuad
+            }
+            NumberAnimation {
+                target: player2image
+                property: "rotation"
+                from: 30; to: -30
+                duration: 750
+                easing.type: Easing.InOutQuad
+            }
+        }
+
+        Rectangle {
+            id: player2
+            height: Math.min(rootWindow.height/7,Math.min(rootWindow.width/7,bar.height * 1.05))
+            width: height*11/8
+            anchors {
+                top: rootWindow.top
+                topMargin: 5
+                right: rootWindow.right
+                rightMargin: 5
+            }
+            radius: 5
+            state: "second"
+
+            GCText {
+                anchors {
+                    top: player2.bottom;
+                    horizontalCenter: player2.horizontalCenter
+                }
+                color: "#2a2a2a"
+                fontSize: smallSize
+                text: qsTr((items.gameMode == 2) ? "Player2" : "Tux")
+            }
+
+            Image {
+                id: player2background
+                source: Activity.url + "score_2.svg"
+                sourceSize.height: parent.height*0.93
+                anchors.centerIn: parent
+
+                Image {
+                    id: player2image
+                    source: Activity.url + "TuxCircle.svg"
+                    sourceSize.height: parent.height*0.8
+                    x: parent.width*0.06
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
+                GCText {
+                    id: player2_score
+                    anchors.verticalCenter: parent.verticalCenter
+                    x: parent.width*0.65
+                    color: "#2a2a2a"
+                    fontSize: largeSize
+                    text: items.player2Score
+                }
+            }
+
+            states: [
+                State {
+                    name: "first"
+                    PropertyChanges {
+                        target: player2image
+                        source: Activity.url + "TuxCircle.svg"
+                    }
+                    PropertyChanges {
+                        target: player2
+                        color: "#49bbf0"
+                    }
+                },
+                State {
+                    name: "second"
+                    PropertyChanges {
+                        target: player2
+                        color: "transparent"
+                    }
+                    PropertyChanges {
+                        target: player2image
+                        source: Activity.url + "TuxCircle.svg"
+                    }
+                },
+                State {
+                    name: "win"
+                    PropertyChanges {
+                        target: player2image
+                        source: Activity.url + "win.svg"
+                    }
+                    PropertyChanges {
+                        target: player2
+                        color: "#f7ec5d"
+                    }
+                }
+            ]
+
+            transform: Scale {
+                id: changeScalePlayer2
+                property real scale: 1
+                origin.x: player2.width
+                origin.y: 0
+                xScale: scale
+                yScale: scale
+            }
+        }
+
+        Rectangle {
+            id: player1
+            height: Math.min(rootWindow.height/7,Math.min(rootWindow.width/7,bar.height * 1.05))
+            width: height*11/8
+            anchors {
+                top: rootWindow.top
+                topMargin: 5
+                left: rootWindow.left
+                leftMargin: 5
+            }
+            radius: 5
+            state: "second"
+
+            GCText {
+                anchors {
+                    top: player1.bottom;
+                    horizontalCenter: player1.horizontalCenter
+                }
+                color: "#2a2a2a"
+                fontSize: smallSize
+                text: qsTr((items.gameMode == 2) ? "Player1" : "Human")
+            }
+
+            Image {
+                id: player1background
+                source: Activity.url + "score_1.svg"
+                sourceSize.height: parent.height*0.93
+                anchors.centerIn: parent
+                anchors.horizontalCenterOffset: 0.5
+
+                Image {
+                    id: player1image
+                    source: Activity.url + "KonqiCross.svg"
+                    sourceSize.height: parent.height*0.8
+                    x: parent.width*0.06
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
+                GCText {
+                    id: player1_score
+                    anchors.verticalCenter: parent.verticalCenter
+                    color: "#2a2a2a"
+                    x: parent.width*0.65
+                    fontSize: largeSize
+                    text: items.player1Score
+                }
+            }
+
+            states: [
+                State {
+                    name: "first"
+                    PropertyChanges {
+                        target: player1image
+                        source: Activity.url + "KonqiCross.svg"
+                    }
+                    PropertyChanges {
+                        target: player1
+                        color: "#f07c49"
+                    }
+                },
+                State {
+                    name: "second"
+                    PropertyChanges {
+                        target: player1
+                        color: "transparent"
+                    }
+                    PropertyChanges {
+                        target: player1image
+                        source: Activity.url + "KonqiCross.svg"
+                    }
+                },
+                State {
+                    name: "win"
+                    PropertyChanges {
+                        target: player1image
+                        source: Activity.url + "win.svg"
+                    }
+                    PropertyChanges {
+                        target: player1
+                        color: "#f7ec5d"
+                    }
+                }
+            ]
+
+            transform: Scale {
+                id: changeScalePlayer1
+                property real scale: 1
+                xScale: scale
+                yScale: scale
             }
         }
 
@@ -368,6 +664,7 @@ ActivityBase {
                     items.gameMode = newGameMode;
                     dataToSave = {"gameMode": items.gameMode};
                 }
+                items.player1Score = items.player2Score = 0;
             }
             function setDefaultValues() {
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
@@ -408,16 +705,6 @@ ActivityBase {
                 win.connect(Activity.initLevel)
                 loose.connect(Activity.initLevel)
             }
-        }
-
-        Score {
-            id: score
-            message: ((items.gameMode == 1) ? "Human" : "Player1") + ": " + items.player1Score + " - " + ((items.gameMode == 1) ? "CPU" : "Player2") + ": " + items.player2Score
-            anchors.top: parent.top
-            anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: undefined
         }
     }
 }

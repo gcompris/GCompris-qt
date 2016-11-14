@@ -48,6 +48,15 @@ function stop() {
 }
 
 function initLevel() {
+    items.okArea.enabled = true;
+    if (items.isPlayer1Beginning === true) {
+        initiatePlayer1();
+        items.isPlayer1Turn = true;
+    } else {
+        initiatePlayer2();
+        items.isPlayer1Turn = false;
+    }
+
     calculateWinPlaces();
     items.tuxArea.enabled = true;
     items.tuxArea.hoverEnabled = true;
@@ -152,17 +161,50 @@ function play(player, value) {
             }
         }
         if (moveCount == (boardSize[items.mode - 1] - 1)) {
+            items.okArea.enabled = false;
+            if (items.gameMode == 2) {
+                items.isPlayer1Beginning = !items.isPlayer1Beginning;
+            }
             if (player == 2) {
+                items.player1.state = "win"
                 items.bonus.good("flower");
                 items.player1Score++;
             } else {
+                items.player2.state = "win"
                 items.bonus.bad("flower");
                 items.player2Score++;
             }
             return;
         }
     }
-    if (player == 1) {
+    if (player == 1 && items.gameMode == 1) {
         machinePlay();
+    } else if (items.gameMode == 2) {
+        items.isPlayer1Turn = !items.isPlayer1Turn;
+        if (player == 1){
+            items.player2turn.start();
+        } else {
+            items.player1turn.start()
+        }
     }
+}
+
+//Initial values at the start of game when its player 1 turn
+function initiatePlayer1() {
+
+    items.changeScalePlayer1.scale = 1.4
+    items.changeScalePlayer2.scale = 1.0
+    items.player1.state = "first"
+    items.player2.state = "second"
+    items.rotateKonqi.start()
+}
+
+//Initial values at the start of game when its player 1 turn
+function initiatePlayer2() {
+
+    items.changeScalePlayer1.scale = 1.0
+    items.changeScalePlayer2.scale = 1.4
+    items.player1.state = "second"
+    items.player2.state = "first"
+    items.rotateTux.start()
 }
