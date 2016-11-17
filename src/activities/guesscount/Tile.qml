@@ -20,7 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-
+import "guesscount.js" as Activity
 import "../../core"
 
 MouseArea {
@@ -36,7 +36,12 @@ MouseArea {
         parent = tile.Drag.target != null ? tile.Drag.target : root
         tile.Drag.drop()
     }
-
+    onPressed: {
+        Activity.changeDialogVisibility()
+    }
+    onClicked: {
+        Activity.changeDialogVisibility()
+    }
     Rectangle {
         id: tile
         width: parent.width;
@@ -62,6 +67,13 @@ MouseArea {
                 when: mouseArea.drag.active
                 ParentChange { target: tile; parent: root }
                 AnchorChanges { target: tile; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
+            },
+            State {
+                when: dialogVisible
+                PropertyChanges {
+                    target: mouseArea
+                    enabled: false
+                }
             }
         ]
     }

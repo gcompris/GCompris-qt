@@ -41,6 +41,13 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+        MouseArea{
+            anchors.fill: parent
+            onClicked: {
+                if(dialog.visible)
+                    dialog.visible=false
+            }
+        }
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -199,7 +206,6 @@ ActivityBase {
                         { "text": qsTr("Admin"), "value": "admin" },
                         { "text": qsTr("BuiltIn"), "value": "builtin" }
                     ]
-
                     Rectangle {
                         id: flow
                         width: dialogActivityConfig.width
@@ -276,6 +282,7 @@ ActivityBase {
                 }
             }
             onLoadData: {
+                console.log("onload data")
                 if(dataToSave && dataToSave["mode"] ) {
                     items.mode = dataToSave["mode"]
                     if(dataToSave["levelArr"] == undefined)
@@ -289,7 +296,6 @@ ActivityBase {
                     items.mode='builtin'
                     items.levelArr = Activity.defaultOperators
                 }
-
             }
 
             onSaveData: {
@@ -380,10 +386,30 @@ ActivityBase {
                 width: parent.width
                 wrapMode: TextEdit.WordWrap
             }
-            onVisibleChanged:SequentialAnimation {
-                PropertyAnimation {target: dialog; property: "opacity"; from : 1 ; to: 0 ; duration: 3500 }
-                PropertyAnimation {target: dialog; property: "visible"; to: false }
-            }
+            states: [
+                State {
+                    when: dialog.visible
+                    PropertyChanges {
+                        target: top
+                        opacity: 0.5
+                    }
+                    PropertyChanges {
+                        target: col
+                        opacity: 0.5
+                    }
+                },
+                State {
+                    when: !dialog.visible
+                    PropertyChanges {
+                        target: top
+                        opacity: 1
+                    }
+                    PropertyChanges {
+                        target: col
+                        opacity: 1
+                    }
+                }
+            ]
         }
     }
 }

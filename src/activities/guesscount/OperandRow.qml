@@ -41,7 +41,6 @@ Row {
             text: qsTr("Numbers")
         }
     }
-
     Repeater {
         id: repeater
         delegate: DragTile {

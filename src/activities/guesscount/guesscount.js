@@ -54,6 +54,8 @@ function initLevel() {
     console.log("dataset :"+items.data  )
     items.levelchanged = false
     items.solved=false
+    if(items.dialog.visible)
+        items.dialog.visible=false
 }
 function nextSublevel() {
     items.sublevel += 1
@@ -131,6 +133,8 @@ function childrenChange(item,operationRow)
         item.droppedItem.parent = item.droppedItem.reparent
         operationRow.complete=false
         console.log(" second item is replaced "+item.count)
+        if(items.dialog.visible)
+            items.dialog.visible=false
     }
     else if(item.children.length == 1)
     {
@@ -209,4 +213,9 @@ function buidDataset(data,levelSchema) {
     }
     return level
 }
+
+function changeDialogVisibility(){
+    items.dialog.visible=false;
+}
+
 

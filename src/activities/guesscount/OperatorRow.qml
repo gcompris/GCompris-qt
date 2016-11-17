@@ -47,7 +47,7 @@ Row {
     }
     Repeater {
         id: repeater
-        model:  mode == "builtin" ? Activity.defaultOperators[level] : operators[level]
+        model: mode == "builtin" ? Activity.defaultOperators[level] : operators[level]
         delegate: DragTile{
             id: root
             type: "operators"

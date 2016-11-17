@@ -27,11 +27,9 @@ Item {
     id: root
     property string type
     property int length: root.children.length
-
     function createDynamicObject(){
         var component = Qt.createComponent('Tile.qml')
         component.createObject(root)
-
     }
     Loader {
         active: type == "operands" ? true : false
@@ -39,7 +37,6 @@ Item {
             id: tile
         }
     }
-
     Component.onCompleted: {
         if(type == "operators")
             createDynamicObject()
@@ -51,7 +48,5 @@ Item {
             else if(root.children.length == 3)
                 root.children[0].destroy()
         }
-
     }
-
 }
