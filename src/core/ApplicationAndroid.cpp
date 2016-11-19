@@ -44,7 +44,7 @@ void ApplicationSettings::checkPayment() {
 #endif
 }
 
-uint ApplicationSettings::checkActivationCode(const QString code) {
+uint ApplicationSettings::checkActivationCode(const QString &code) {
     // Not used in inapp mode.
     return 0;
 }
