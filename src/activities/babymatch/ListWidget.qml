@@ -91,7 +91,7 @@ Item {
                 parent.height / iconSize - 2 :
                 parent.width / iconSize - 2
 
-        property int nbDisplayedGroup: Math.ceil(model.count / nbItemsByGroup)
+        property int nbDisplayedGroup: nbItemsByGroup > 0 ? Math.ceil(model.count / nbItemsByGroup) : 0
         property int iconSize: 80 * ApplicationInfo.ratio
         property int previousNavigation: 1
         property int nextNavigation: 1
@@ -113,6 +113,7 @@ Item {
 
         // For correcting values of Displayed Groups when height or width is changed
         function correctDisplayedGroup() {
+            print("correctDisplayedGroup " + nbDisplayedGroup + " - " + model.count + " - " + nbItemsByGroup)
             if (nbDisplayedGroup > 0) {
                 for(var i = 0 ; i < nbDisplayedGroup ; i++) {
                     var groupEmpty = true
@@ -156,6 +157,7 @@ Item {
         function checkDisplayedGroup() {
             var i = currentDisplayedGroup * nbItemsByGroup 
             var groupEmpty = true
+            print("checkDisplayedGroup " + i + " - " + model.count + " - " + currentDisplayedGroup + " - " + nbItemsByGroup);
             while(i < model.count && i < (currentDisplayedGroup + 1) * nbItemsByGroup) {
                 if (repeater.itemAt(i).dropStatus < 0) {
                     groupEmpty = false
@@ -170,6 +172,7 @@ Item {
                 nextNavigation = 0
                 for(var i = 0 ; i < nbDisplayedGroup ; ++i) {
                     if(displayedGroup[i]) {
+                        print("displayedGroup[i] " + displayedGroup[i] + " - " + i)
                         view.setCurrentDisplayedGroup = i
                         view.refreshLeftWidget()
                         break
@@ -207,6 +210,7 @@ Item {
             id: repeater
             property int currentIndex
             onCurrentIndexChanged: {
+                print("currentIndexChanged: " + currentIndex)
                 for(var i = 0; i < mymodel.count; i++) {
                     if(currentIndex != i)
                         repeater.itemAt(i).selected = false
