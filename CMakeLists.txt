@@ -6,6 +6,10 @@ endif()
 
 project(gcompris-qt C CXX)
 
+# get all the redist dll needed for windows when compiling with vc
+set(CMAKE_INSTALL_UCRT_LIBRARIES 1)
+include(InstallRequiredSystemLibraries)
+
 # Set c++11 support
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
@@ -139,10 +143,10 @@ set(ACTIVATION_MODE "no" CACHE STRING "Policy for activation [no|inapp|internal]
 option(WITH_DEMO_ONLY "Include only demo activities" OFF)
 
 option(WITH_DOWNLOAD "Internal download" ON)
-if(WITH_DOWNLOAD)
-  set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
-  set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
-endif(WITH_DOWNLOAD)
+# @FIXME These permissions should be removed if download is disable
+#        but it makes the application crash on exit (tested on Android 6)
+set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
+set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
 
 # Set output directory
 if(CMAKE_HOST_APPLE)
@@ -443,10 +447,16 @@ else()
       execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init)
     endif()
 
+    # for visual studio, we need to create a vcxproj
+    if(WIN32 AND NOT MINGW)
+      set(_qmake_options -spec win32-msvc2015 -tp vc)
+    else()
+      set(_qmake_options "")
+    endif()
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
       SOURCE_DIR ${_box2d_source_dir}
-      CONFIGURE_COMMAND ${_qmake_program} ${_box2d_source_dir}/box2d.pro
+      CONFIGURE_COMMAND ${_qmake_program} ${_qmake_options} ${_box2d_source_dir}/box2d.pro
       BUILD_COMMAND ${CMAKE_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
       INSTALL_COMMAND cp ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
