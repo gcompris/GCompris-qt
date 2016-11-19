@@ -227,11 +227,13 @@ if(WIN32)
     install(FILES ${Qt5_DIR}/../../../bin/icuuc54.dll DESTINATION bin)
     install(FILES ${Qt5_DIR}/../../../bin/libEGL.dll DESTINATION bin)
     install(FILES ${Qt5_DIR}/../../../bin/libGLESv2.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../../../Tools/QtCreator/bin/d3dcompiler_47.dll DESTINATION bin)
+    install(FILES ${Qt5_DIR}/../../../bin/d3dcompiler_47.dll DESTINATION bin)
     if(NOT MINGW)
+        target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libEGL.lib)
+        target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libGLESv2.lib)
+        install(FILES ${Qt5_DIR}/../../../bin/opengl32sw.dll DESTINATION bin)
         # CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS contains visual c++ libraries
         install(FILES ${CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS} DESTINATION bin)
-        install(FILES ${VCREDIST_DIR}/libgcc_s_dw2-1.dll DESTINATION bin)
     endif()
 endif()
 
@@ -268,26 +270,6 @@ if(APPLE)
   set(CPACK_DMG_BACKGROUND_IMAGE "${GCOMPRIS_RESOURCES}/dmg_background.png")
 elseif(WIN32)
   set(CPACK_GENERATOR "NSIS")
-  if(NOT MINGW)
-    if(CMAKE_CL_64)
-      set(CMAKE_MSVC_ARCH x64)
-    else(CMAKE_CL_64)
-      set(CMAKE_MSVC_ARCH x86)
-    endif(CMAKE_CL_64)
-    # Try and find the vcredist_XX.exe, normally this is in the WindowsSDK folder.
-    find_program(MSVC_REDIST NAMES VC/vcredist_${CMAKE_MSVC_ARCH}.exe
-      PATHS
-      "[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Microsoft SDKs\\Windows\\v7.1;InstallationFolder]/Redist/")
-    get_filename_component(vcredist_name "${MSVC_REDIST}" NAME)
-    # If we found a vcredist-package, we add it simply to the
-    # installation-folder and run it with NSis.
-    if(vcredist_name)
-      message(STATUS "Adding " ${vcredist_name} " to Install")
-      install(PROGRAMS ${MSVC_REDIST} DESTINATION bin)
-      # Add /q to make the vcredist install silent
-      set(CPACK_NSIS_EXTRA_INSTALL_COMMANDS "ExecWait '\\\"$INSTDIR\\\\bin\\\\${vcredist_name}\\\" /q'")
-    endif(vcredist_name)
-  endif(NOT MINGW)
 elseif(SAILFISHOS)
   configure_file(${PROJECT_SOURCE_DIR}/platforms/sailfishOS/harbour-gcompris-qt.spec.cmake ${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec @ONLY)
 

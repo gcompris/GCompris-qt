@@ -28,8 +28,6 @@ install:
 
     cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
 
-    curl -fsS -o build/libgcc_s_dw2-1.dll http://gcompris.net/private/microsoft/vcredist32/libgcc_s_dw2-1.dll
-
     cmake --build build --config RelWithDebInfo
 
     cmake --build build --config RelWithDebInfo --target DlAndInstallBundledTranslations

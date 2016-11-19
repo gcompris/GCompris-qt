@@ -7,6 +7,7 @@ endif()
 project(gcompris-qt C CXX)
 
 # get all the redist dll needed for windows when compiling with vc
+set(CMAKE_INSTALL_UCRT_LIBRARIES 1)
 include(InstallRequiredSystemLibraries)
 
 # Set c++11 support
