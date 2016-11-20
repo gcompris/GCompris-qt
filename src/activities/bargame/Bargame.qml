@@ -27,7 +27,7 @@ import "bargame.js" as Activity
 
 ActivityBase {
     id: activity
-
+    property int gameMode: 1
     onStart: focus = true
     onStop: {}
 
@@ -82,13 +82,12 @@ ActivityBase {
             property int mode: 1
             property int player1Score: 0
             property int player2Score: 0
-            property int gameMode: 1
             property bool isPlayer1Beginning: true
             property bool isPlayer1Turn: true
         }
 
         onStart: {
-            Activity.start(items)
+            Activity.start(items, gameMode)
             Activity.calculateWinPlaces();
         }
         onStop: { Activity.stop() }
@@ -254,7 +253,7 @@ ActivityBase {
                     tuxArea.enabled = false;
                     var value = Activity.numberOfBalls
                     numberLabel.text = Activity.numberOfBalls = Activity.numberBalls[items.mode - 1][0];
-                    if (items.gameMode == 1) {
+                    if (gameMode == 1) {
                     Activity.play(1, value);
                     } else {
                         Activity.play(((items.isPlayer1Turn) ? 1 : 2), value);
@@ -434,7 +433,7 @@ ActivityBase {
                 }
                 color: "#2a2a2a"
                 fontSize: smallSize
-                text: qsTr((items.gameMode == 2) ? "Player2" : "Tux")
+                text: qsTr((gameMode == 2) ? "Player2" : "Tux")
             }
 
             Image {
@@ -527,7 +526,7 @@ ActivityBase {
                 }
                 color: "#2a2a2a"
                 fontSize: smallSize
-                text: qsTr((items.gameMode == 2) ? "Player1" : "Human")
+                text: qsTr((gameMode == 2) ? "Player1" : "Human")
             }
 
             Image {
@@ -610,7 +609,6 @@ ActivityBase {
             content: Component {
                 Item {
                     property alias modeBox: modeBox
-                    property alias gameModeBox: gameModeBox
 
                     property var availableModes: [
                         { "text": qsTr("Easy"), "value": 1 },
@@ -618,10 +616,6 @@ ActivityBase {
                         { "text": qsTr("Difficult"), "value": 3 }
                     ]
 
-                    property var availableGameModes: [
-                        { "text": qsTr("1 Player"), "value": 1 },
-                        { "text": qsTr("2 Player"), "value": 2 }
-                    ]
                     Flow {
                         id: flow
                         spacing: 5
@@ -632,12 +626,6 @@ ActivityBase {
                             background: dialogActivityConfig
                             label: qsTr("Select your difficulty")
                         }
-                        GCComboBox {
-                            id: gameModeBox
-                            model: availableGameModes
-                            background: dialogActivityConfig
-                            label: qsTr("Select your gameplay mode")
-                        }
                     }
                 }
             }
@@ -647,22 +635,16 @@ ActivityBase {
                 home();
             }
             onLoadData: {
-                if(dataToSave && dataToSave["mode"] && dataToSave["gameMode"]) {
+                if(dataToSave && dataToSave["mode"]) {
                     items.mode = dataToSave["mode"];
-                    items.gameMode = dataToSave["gameMode"];
                     Activity.initLevel();
                 }
             }
             onSaveData: {
                 var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                var newGameMode = dialogActivityConfig.configItem.availableGameModes[dialogActivityConfig.configItem.gameModeBox.currentIndex].value;
                 if (newMode !== items.mode) {
                     items.mode = newMode;
                     dataToSave = {"mode": items.mode};
-                }
-                if (newGameMode !== items.gameMode) {
-                    items.gameMode = newGameMode;
-                    dataToSave = {"gameMode": items.gameMode};
                 }
                 items.player1Score = items.player2Score = 0;
             }
@@ -670,12 +652,6 @@ ActivityBase {
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
                     if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
                         dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                        break;
-                    }
-                }
-                for(var j = 0 ; j < dialogActivityConfig.configItem.availableGameModes.length ; j++) {
-                    if(dialogActivityConfig.configItem.availableGameModes[j].value === items.gameMode) {
-                        dialogActivityConfig.configItem.gameModeBox.currentIndex = j;
                         break;
                     }
                 }

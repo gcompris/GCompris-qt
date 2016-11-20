@@ -35,12 +35,14 @@ var maxlevel = 4
 var numberOfsublevel = 3
 var listWin = false
 var items
+var gameMode
 var numberOfBalls = 1
 
 var url= "qrc:/gcompris/src/activities/bargame/resource/";
 
-function start(items_) {
+function start(items_, gameMode_) {
     items = items_
+    gameMode = gameMode_
     initLevel()
 }
 
@@ -162,7 +164,7 @@ function play(player, value) {
         }
         if (moveCount == (boardSize[items.mode - 1] - 1)) {
             items.okArea.enabled = false;
-            if (items.gameMode == 2) {
+            if (gameMode == 2) {
                 items.isPlayer1Beginning = !items.isPlayer1Beginning;
             }
             if (player == 2) {
@@ -177,9 +179,9 @@ function play(player, value) {
             return;
         }
     }
-    if (player == 1 && items.gameMode == 1) {
+    if (player == 1 && gameMode == 1) {
         machinePlay();
-    } else if (items.gameMode == 2) {
+    } else if (gameMode == 2) {
         items.isPlayer1Turn = !items.isPlayer1Turn;
         if (player == 1){
             items.player2turn.start();
