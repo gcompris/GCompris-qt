@@ -23,7 +23,7 @@ ActivityInfo {
   icon: "bargame/bargame.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   demo: true
-  title: qsTr("Bargame")
+  title: qsTr("Bargame (against Tux)")
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: qsTr("Don't use the last ball")
