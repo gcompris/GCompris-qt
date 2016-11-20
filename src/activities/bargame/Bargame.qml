@@ -426,16 +426,6 @@ ActivityBase {
             radius: 5
             state: "second"
 
-            GCText {
-                anchors {
-                    top: player2.bottom;
-                    horizontalCenter: player2.horizontalCenter
-                }
-                color: "#2a2a2a"
-                fontSize: smallSize
-                text: qsTr((gameMode == 2) ? "Player2" : "Tux")
-            }
-
             Image {
                 id: player2background
                 source: Activity.url + "score_2.svg"
@@ -518,16 +508,6 @@ ActivityBase {
             }
             radius: 5
             state: "second"
-
-            GCText {
-                anchors {
-                    top: player1.bottom;
-                    horizontalCenter: player1.horizontalCenter
-                }
-                color: "#2a2a2a"
-                fontSize: smallSize
-                text: qsTr((gameMode == 2) ? "Player1" : "Human")
-            }
 
             Image {
                 id: player1background
