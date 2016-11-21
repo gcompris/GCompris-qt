@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Share the candies")
   description: qsTr("Try to split the candies to a given number of children")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "First, drag the given number of boys/girls to the middle, then drag candies to each child's rectangle"
   goal: qsTr("Learn the division of numbers")
   prerequisite: qsTr("Know how to count")
   manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the middle, then drag candies to each child's rectangle.")

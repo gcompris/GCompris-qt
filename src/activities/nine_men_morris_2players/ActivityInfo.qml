@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Nine men's morris (with a friend)")
   description: qsTr("Reduce the opponent to two pieces, or by leaving him without a legal move.")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Click on the dot where you wish to place your piece and try to take all your friend pieces."
   goal: qsTr("Form mills (line of 3 pieces) to remove pieces of opponent until opponent has only two pieces, or doesn't have a legal move")
   prerequisite: ""
   manual: qsTr("Play with a friend. First take turns to place nine pieces, and then take turns to move pieces")
