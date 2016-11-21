@@ -119,13 +119,6 @@ if(KF5_FOUND)
     endif()
 endif()
 
-FIND_PROGRAM(LCONVERT_EXECUTABLE lconvert-qt5 lconvert
-  PATHS
-  ${Qt5_DIR}/../../../bin/
-  /usr/local/bin
-  /usr/bin/
-  NO_DEFAULT_PATH
-)
 FIND_PROGRAM(LRELEASE_EXECUTABLE lrelease-qt5 lrelease
   PATHS
   ${Qt5_DIR}/../../../bin/
@@ -227,9 +220,9 @@ foreach(PoSource ${TRANSLATIONS_FILES})
     # Remove the obsolete translations and set po in the ts output file
     COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
     # Convert the po into ts
-    COMMAND ${LCONVERT_EXECUTABLE} -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+    COMMAND Qt5::lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
     # Convert the ts in qm removing non finished translations
-    COMMAND ${LRELEASE_EXECUTABLE} -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+    COMMAND Qt5::lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
     )
   list(APPEND QM_FILES ${QmOutput})
 endforeach()
