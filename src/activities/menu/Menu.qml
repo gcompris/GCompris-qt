@@ -279,7 +279,7 @@ ActivityBase {
 
                 Rectangle {
                     anchors.fill: parent
-                    color:  "#99FFFFFF"
+                    color:  "#5AFFFFFF"
                 }
                 Image {
                     source: "qrc:/gcompris/src/core/resource/button.svg"
