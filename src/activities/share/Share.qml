@@ -361,8 +361,8 @@ ActivityBase {
 
                         GCDialogCheckBox {
                             id: easyModeBox
-                            width: 250 * ApplicationInfo.ratio
-                            text: qsTr("Easy mode")
+                            width: parent.width
+                            text: qsTr("Display candy counter")
                             checked: background.easyMode
                             onCheckedChanged: {
                                 background.easyMode = checked
