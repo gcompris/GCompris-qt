@@ -84,6 +84,7 @@ ActivityBase {
             property int remainingLife
             property variant goodWord
             property int goodWordIndex
+            property bool easyMode: false
             property alias englishFallbackDialog: englishFallbackDialog
 
             function playWord() {
@@ -153,6 +154,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             y: 5 * ApplicationInfo.ratio
             z: 10
+            opacity: items.easyMode ? 1 : 0
             Image {
 		        id: wordImage
 		        smooth: true
@@ -233,6 +235,16 @@ ActivityBase {
                                 background: dialogActivityConfig
                                 label: qsTr("Select your locale")
                             }
+
+                            GCDialogCheckBox {
+                                id: easyModeBox
+                                width: parent.width
+                                text: qsTr("Display image to find as hint")
+                                checked: items.easyMode
+                                onCheckedChanged: {
+                                    items.easyMode = checked
+                                }
+                            }
                         }
                     }
                 }
@@ -243,6 +255,9 @@ ActivityBase {
                 if(dataToSave && dataToSave["locale"]) {
                     background.locale = dataToSave["locale"];
                 }
+                if(dataToSave && dataToSave["easyMode"]) {
+                    items.easyMode = (dataToSave["easyMode"] === "true");
+                }
             }
             onSaveData: {
                 var oldLocale = background.locale;
@@ -252,7 +267,8 @@ ActivityBase {
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
-                dataToSave = {"locale": newLocale }
+                dataToSave = {"locale": newLocale,
+                              "easyMode": "" + items.easyMode }
 
                 background.locale = newLocale;
 
