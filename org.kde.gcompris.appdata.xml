@@ -1,197 +1,796 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application>
   <id type="desktop">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="ca-valencia">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="fr">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="nl">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="sv">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="uk">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="x-test">xxorg.kde.gcompris.desktopxx</id>
   <metadata_license>CC0-1.0</metadata_license>
+  <metadata_license xml:lang="ca">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="ca-valencia">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="cs">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="de">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="en-GB">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="es">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="et">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="fi">CC0-1.0</metadata_license>
   <metadata_license xml:lang="fr">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="gl">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="it">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="ko">CC0-1.0</metadata_license>
   <metadata_license xml:lang="nl">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="nn">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="pl">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="pt">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="pt-BR">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="ro">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="ru">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="sk">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="sl">CC0-1.0</metadata_license>
   <metadata_license xml:lang="sv">CC0-1.0</metadata_license>
   <metadata_license xml:lang="uk">CC0-1.0</metadata_license>
   <metadata_license xml:lang="x-test">xxCC0-1.0xx</metadata_license>
+  <metadata_license xml:lang="zh-CN">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="zh-TW">CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
+  <project_license xml:lang="ca">GPL-3.0+</project_license>
+  <project_license xml:lang="ca-valencia">GPL-3.0+</project_license>
+  <project_license xml:lang="cs">GPL-3.0+</project_license>
+  <project_license xml:lang="de">GPL-3.0+</project_license>
+  <project_license xml:lang="en-GB">GPL-3.0+</project_license>
+  <project_license xml:lang="es">GPL-3.0+</project_license>
+  <project_license xml:lang="et">GPL-3.0+</project_license>
+  <project_license xml:lang="fi">GPL-3.0+</project_license>
   <project_license xml:lang="fr">GPL-3.0+</project_license>
+  <project_license xml:lang="gl">GPL-3.0+</project_license>
+  <project_license xml:lang="it">GPL-3.0+</project_license>
+  <project_license xml:lang="ko">GPL-3.0+</project_license>
   <project_license xml:lang="nl">GPL-3.0+</project_license>
+  <project_license xml:lang="nn">GPL-3.0+</project_license>
+  <project_license xml:lang="pl">GPL-3.0+</project_license>
+  <project_license xml:lang="pt">GPL-3.0+</project_license>
+  <project_license xml:lang="pt-BR">GPL-3.0+</project_license>
+  <project_license xml:lang="ro">GPL-3.0+</project_license>
+  <project_license xml:lang="ru">GPL-3.0+</project_license>
+  <project_license xml:lang="sk">GPL-3.0+</project_license>
+  <project_license xml:lang="sl">GPL-3.0+</project_license>
   <project_license xml:lang="sv">GPL-3.0+</project_license>
   <project_license xml:lang="uk">GPL-3.0+</project_license>
   <project_license xml:lang="x-test">xxGPL-3.0+xx</project_license>
+  <project_license xml:lang="zh-CN">GPL-3.0+</project_license>
+  <project_license xml:lang="zh-TW">GPL-3.0+</project_license>
   <name>GCompris Educational Game</name>
+  <name xml:lang="ca">Joc educatiu GCompris</name>
+  <name xml:lang="ca-valencia">Joc educatiu GCompris</name>
+  <name xml:lang="de">GCompris-Lernspiel</name>
+  <name xml:lang="en-GB">GCompris Educational Game</name>
+  <name xml:lang="es">Juego educativo GCompris</name>
+  <name xml:lang="et">Hariv mäng GCompris</name>
+  <name xml:lang="fi">GCompris, opettavainen peli</name>
   <name xml:lang="fr">Jeu éducatif GCompris</name>
+  <name xml:lang="gl">Xogo educativo GCompris</name>
+  <name xml:lang="it">Gioco didattico GCompris</name>
+  <name xml:lang="ko">GCompris 교육용 게임</name>
   <name xml:lang="nl">Educatief spel GCompris</name>
+  <name xml:lang="nn">GCompris leik-og-lær-spel</name>
+  <name xml:lang="pl">Gra edukacyjna GCompris</name>
+  <name xml:lang="pt">Jogo Educativo GCompris</name>
+  <name xml:lang="pt-BR">Jogo educacional GCompris</name>
+  <name xml:lang="ro">Joc educațional GCompris</name>
+  <name xml:lang="ru">Набор обучающих игр GCompris</name>
+  <name xml:lang="sk">Výuková hra GCompris</name>
+  <name xml:lang="sl">Izobraževalna igra GCompris</name>
   <name xml:lang="sv">GCompris pedagogiskt spel</name>
   <name xml:lang="uk">Освітня гра GCompris</name>
   <name xml:lang="x-test">xxGCompris Educational Gamexx</name>
+  <name xml:lang="zh-CN">GCompris 教育游戏</name>
+  <name xml:lang="zh-TW">GCompris 教育遊戲</name>
   <summary>Multi-Activity Educational game for children 2 to 10</summary>
+  <summary xml:lang="ca">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
+  <summary xml:lang="ca-valencia">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
+  <summary xml:lang="de">Lernspiel mit vielen Aktivitäten für Kinder von 2 bis 10 Jahren</summary>
+  <summary xml:lang="en-GB">Multi-Activity Educational game for children 2 to 10</summary>
+  <summary xml:lang="es">Juego educativo multiactividad para niños de 2 a 10 años</summary>
+  <summary xml:lang="et">Rohkete tegevustega hariv mäng lastele vanuses 2-10</summary>
+  <summary xml:lang="fi">Useampitoimintoinen opettavainen peli 2–10-vuotiaille lapsille</summary>
   <summary xml:lang="fr">Jeu éducatif multi-activités pour les enfants de 2 à 10 ans</summary>
+  <summary xml:lang="gl">Xogo educativo con varias actividades para nenos de entre 2 e 10 anos</summary>
+  <summary xml:lang="it">Gioco didattico multi-attività per bambini da 2 a 10 anni</summary>
+  <summary xml:lang="ko">2-10세 어린이를 위한 다양한 활동이 있는 교육용 게임</summary>
   <summary xml:lang="nl">Educatief spel met meerdere activiteiten voor kinderen van 2 tot 10</summary>
+  <summary xml:lang="nn">Leik-og-lærspel med mange aktivitetar – for barn frå 2 til 10 år</summary>
+  <summary xml:lang="pl">Gra edukacyjna z wieloma aktywnościami dla dzieci w wieku od 2 do 10 lat</summary>
+  <summary xml:lang="pt">Jogo Educativo Multi-Actividades para crianças dos 2 aos 10 anos</summary>
+  <summary xml:lang="pt-BR">Jogo educacional com várias atividades para crianças de 2 a 10 anos</summary>
+  <summary xml:lang="ro">Joc educațional cu activități multiple pentru copii între 2 și 10 ani</summary>
+  <summary xml:lang="ru">Интерактивные обучающие игры для детей от 2 до 10 лет</summary>
+  <summary xml:lang="sk">Viac-aktivitová výuková hra pre deti od 2 do 10 rokov</summary>
+  <summary xml:lang="sl">Izobraževalna igra z več dejavnostmi za otroke med drugim in desetim letom starosti</summary>
   <summary xml:lang="sv">Pedagogiskt multiaktivitetsspel för barn från 2 till 10 år</summary>
   <summary xml:lang="uk">Набір освітніх ігор для дітей від 2 до 10 років</summary>
   <summary xml:lang="x-test">xxMulti-Activity Educational game for children 2 to 10xx</summary>
+  <summary xml:lang="zh-CN">为 2 到 10 岁儿童准备的多功能教育游戏</summary>
+  <summary xml:lang="zh-TW">為 2-10 歲孩子設計的教育遊戲</summary>
   <description>
     <p>GCompris is an educational software suite comprising of
     numerous activities for children aged 2 to 10.</p>
+    <p xml:lang="ca">El GCompris és una suite de programari educatiu que consisteix de nombroses activitats per a nens i nenes entre els 2 i els 10 anys.</p>
+    <p xml:lang="ca-valencia">El GCompris és una suite de programari educatiu que consisteix de nombroses activitats per a nens i nenes entre els 2 i els 10 anys.</p>
+    <p xml:lang="de">GCompris ist eine Lernsoftware, die verschiedene Aktivitäten für Kinder im Alter von 2 bis 10 Jahren anbietet.</p>
+    <p xml:lang="en-GB">GCompris is an educational software suite comprising of numerous activities for children aged 2 to 10.</p>
+    <p xml:lang="es">GCompris es una suite de software educativo que consta de numerosas actividades para niños de 2 a 10 años.</p>
+    <p xml:lang="et">GCompris on õpirakenduse komplekt, mis koosneb paljudest tegevustest lastele vanuses 2-10,</p>
+    <p xml:lang="fi">GCompris on useista toiminnoista koostuva opetusohjelmisto 2–10-vuotiaille lapsille.</p>
     <p xml:lang="fr">GCompris est une suite éducative comprenant de nombreuses activités pour les enfants de 2 à 10 ans.</p>
+    <p xml:lang="gl">GCompris é unha colección de programas educativos (“actividades”) para nenos de entre 2 e 10 anos.</p>
+    <p xml:lang="it">GCompris è una raccolta di programmi didattici che comprende numerose attività per bambini da 2 a 10 anni.</p>
+    <p xml:lang="ko">GCompris는 2-10세 어린이를 위한 활동을 모아 놓은 교육용 소프트웨어 모음입니다.</p>
     <p xml:lang="nl">GCompris is suite met educatieve software die bestaat uit vele activiteiten voor kinderen vanaf twee tot tien jaar.</p>
+    <p xml:lang="nn">GCompris er eit leik-og-lær spel med mange ulike aktivitetar, laga for ungar frå 2 til 10 år.</p>
+    <p xml:lang="pl">GCompris to pakiet oprogramowania edukacyjnego z licznymi aktywnościami dla dzieci w wieku od 2 do 10 lat.</p>
+    <p xml:lang="pt">O GCompris é um pacote de aplicações educativas que é composto por diversas actividades para as crianças dos 2 aos 10 anos de idade.</p>
+    <p xml:lang="pt-BR">GCompris é uma suíte de software educacional que apresenta uma série de atividades para crianças com idade entre 2 e 10 anos.</p>
+    <p xml:lang="ro">GCompris este un pachet de software educațional compus din numeroase activități pentru copii între 2 și 10 ani.</p>
+    <p xml:lang="ru">GCompris — это набор обучающих игр, рассчитанных на детей в возрасте от 2 до 10 лет.</p>
+    <p xml:lang="sk">GCompris je balík výukového softvéru zložený z rôznych aktivít pre deti od 2 do 10 rokov.</p>
+    <p xml:lang="sl">Program GCompris je visokokakovostna zbirka izobraževalnih dejavnosti, namenjenih otrokom med drugim in desetim letom starosti.</p>
     <p xml:lang="sv">GCompris är en pedagogisk programsvit som består av en mängd olika aktiviteter för barn från 2 till 10 år gamla.</p>
     <p xml:lang="uk">GCompris — комплекс навчального програмного забезпечення, що складається з багатьох вправ для дітей від 2 до 10 років.</p>
     <p xml:lang="x-test">xxGCompris is an educational software suite comprising of numerous activities for children aged 2 to 10.xx</p>
+    <p xml:lang="zh-CN">GCompris 是一款教育套件，由针对 2 到 10 岁孩子的许多活动组成。</p>
+    <p xml:lang="zh-TW">GCompris 是一套教育軟體的集合，它提供適合兩歲到十歲兒童各種不同的活動。</p>
     <p>Some of the activities are game orientated, but nonetheless
     still educational.</p>
+    <p xml:lang="ca">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
+    <p xml:lang="ca-valencia">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
+    <p xml:lang="cs">Některé aktivity jsou v podobě her, ale přesto jsou poučné.</p>
+    <p xml:lang="de">Einige Aktivitäten sind eher spielerisch, aber immer lehrreich.</p>
+    <p xml:lang="en-GB">Some of the activities are game orientated, but nonetheless still educational.</p>
+    <p xml:lang="es">Algunas de las actividades son juegos, aunque siguen siendo educativas.</p>
+    <p xml:lang="et">Mõned tegevused on mängulisemad, aga siiski õppeotstarbega.</p>
+    <p xml:lang="fi">Jotkin toiminnoista ovat pelimäisiä mutta silti opettavaisia.</p>
     <p xml:lang="fr">Certaines activités sont ludiques mais ont toujours un intérêt pédagogique.</p>
+    <p xml:lang="gl">Algunhas das actividades están orientadas a xogar pero son tamén educativas.</p>
+    <p xml:lang="it">Alcune delle attività sono orientate al gioco, ma comunque didattiche.</p>
+    <p xml:lang="ko">일부 활동은 기능성 게임을 지향합니다.</p>
     <p xml:lang="nl">Sommige activiteiten zijn spelletjes, maar toch leerzaam.</p>
+    <p xml:lang="nn">Nokre av aktivitetane er mest som spel, men er likevel lærerike.</p>
+    <p xml:lang="pl">Niektóre z aktywności są bardziej grą, lecz nadal bardzo pouczającą.</p>
+    <p xml:lang="pt">Algumas das actividades são apresentadas como jogos, mas são educativas à mesma.</p>
+    <p xml:lang="pt-BR">Algumas das atividades são de orientação lúdica, mas mesmo assim ainda educacional.</p>
+    <p xml:lang="ro">Unele activități sunt orientate pe joacă, dar totuși educative.</p>
+    <p xml:lang="ru">Некоторые из заданий представлены в игровой форме, но и они являются обучающими.</p>
+    <p xml:lang="sk">Niektoré z aktivít sú herne orientované, ale stále výukové.</p>
+    <p xml:lang="sl">Nekatere dejavnosti so bolj podobne igram, vendar še vedno poučne.</p>
     <p xml:lang="sv">Vissa av aktiviteterna är spelorienterade, men trots det ändå pedagogiska.</p>
     <p xml:lang="uk">Деякі із вправ є суто ігровими, але містять і елементи навчання.</p>
     <p xml:lang="x-test">xxSome of the activities are game orientated, but nonetheless still educational.xx</p>
+    <p xml:lang="zh-CN">一些活动是游戏导向的，不过尽管如此仍是教育性的。</p>
+    <p xml:lang="zh-TW">有些活動是遊戲性質，但還是有很棒的教育意義。</p>
     <p>Below you can find a list of categories with some of the
     activities available in that category.</p>
+    <p xml:lang="ca">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
+    <p xml:lang="ca-valencia">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
+    <p xml:lang="de">Sie können Aktivitäten aus folgenden Bereichen in GCompris finden:</p>
+    <p xml:lang="en-GB">Below you can find a list of categories with some of the activities available in that category.</p>
+    <p xml:lang="es">A continuación puede encontrar una lista de categorías con algunas de las actividades disponibles en cada una de ellas.</p>
+    <p xml:lang="et">Allpool leiab kategooriate loetelu koos mõningate neile omaste tegevustega.</p>
+    <p xml:lang="fi">Alta löydät luettelot luokista sekä maininnan joistakin kuhunkin luokkaan kuuluvista toiminnoista.</p>
     <p xml:lang="fr">Vous pouvez trouver ci-dessous une liste des catégories avec certaines de leurs activités.</p>
+    <p xml:lang="gl">A continuación pode atopar unha lista de categorías con algunhas das actividades que hai dispoñíbeis en cada categoría.</p>
+    <p xml:lang="it">Di seguito puoi trovare un elenco di categorie con alcune delle attività disponibili per categoria.</p>
+    <p xml:lang="ko">아래에서 분류 목록과 해당 분류의 활동을 찾을 수 있습니다.</p>
     <p xml:lang="nl">Hieronder vindt u een lijst met categorieën met enige van de activiteiten beschikbaar in die categorie.</p>
+    <p xml:lang="nn">Nedanfor finn du ei oversikt over kategoriar, saman med nokre av aktivitetane i kvar kategori.</p>
+    <p xml:lang="pl">Poniżej znajdziesz wykaz kategorii z niektórymi aktywnościami dostępnymi w tej kategorii.</p>
+    <p xml:lang="pt">Em baixo, poderá encontrar uma lista de categorias, com algumas das actividades disponíveis para essa categoria.</p>
+    <p xml:lang="pt-BR">Abaixo está relacionada uma lista de categorias com algumas das atividades disponíveis em cada uma delas.</p>
+    <p xml:lang="ro">Dedesubt puteți găsi o listă de categorii cu unele din activitățile disponibile în acea categorie.</p>
+    <p xml:lang="ru">Ниже представлен список категорий с доступными в этих категориях заданиями.</p>
+    <p xml:lang="sk">Tu môžete nájsť zoznam kategórií s niektorými aktivitami dostupnými v kategórii.</p>
+    <p xml:lang="sl">Spodaj lahko najdete seznam kategorij in nekaj dejavnosti, ki so na voljo v tisti kategoriji.</p>
     <p xml:lang="sv">Nedan finns en lista över kategorier med några av aktiviteterna tillgängliga i varje kategori.</p>
     <p xml:lang="uk">Нижче наведено список категорій із деякими вправами у цих категоріях.</p>
     <p xml:lang="x-test">xxBelow you can find a list of categories with some of the activities available in that category.xx</p>
+    <p xml:lang="zh-CN">下面列出了一些分类和对应分类中的活动。</p>
+    <p xml:lang="zh-TW">下方您可以看到該類別的活動清單。</p>
     <ul>
       <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
+      <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
+      <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
+      <li xml:lang="de">Entdeckung des Computers: Tastatur, Maus, verschiedene Mausgesten ...</li>
+      <li xml:lang="en-GB">computer discovery: keyboard, mouse, different mouse gestures, ...</li>
+      <li xml:lang="es">descubrimiento del ordenador: teclado, ratón, distintos gestos con el ratón...</li>
+      <li xml:lang="et">arvuti tundmaõppimine: klaviatuur, hiir, erinevad hiireliigutused ...</li>
+      <li xml:lang="fi">tietokoneen oppiminen: näppäimistö, hiiri, eri hiirieleet…</li>
       <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
+      <li xml:lang="gl">Descubrindo o computador: o teclado, o rato, os xestos do rato…</li>
+      <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ...</li>
+      <li xml:lang="ko">컴퓨터와 친해지기: 키보드, 마우스, 마우스 제스처, ...</li>
       <li xml:lang="nl">ontdekken van de computer: toetsenbord, muis, verschillende muisbewegingen, ...</li>
+      <li xml:lang="nn">datamaskin: tastatur, mus, ulike muserørsler, …</li>
+      <li xml:lang="pl">odkrywanie komputera: klawiatura, mysz, różne ruchy myszą, ...</li>
+      <li xml:lang="pt">descoberta do computador: teclado, rato, os diferentes gestos com o rato, ...</li>
+      <li xml:lang="pt-BR">conhecendo o computador: teclado, mouse, diferentes movimentações com o mouse, ...</li>
+      <li xml:lang="ro">descoperirea calculatorului: tastatura, mausul, diferite gesturi cu mausul, ...</li>
+      <li xml:lang="ru">знакомство с компьютером: клавиатура, мышь, различные жесты мышью, ...</li>
+      <li xml:lang="sk">objavovanie počítača: klávesnica, myš, rôzne gestá myši...</li>
+      <li xml:lang="sl">delo z računalnikom: tipkovnica, miška, kretnje miške, ...</li>
       <li xml:lang="sv">upptäcka datorn: tangentbord, mus, olika musgester, ...</li>
       <li xml:lang="uk">Знайомство з комп’ютером: клавіатура, миша, керування мишею…</li>
       <li xml:lang="x-test">xxcomputer discovery: keyboard, mouse, different mouse gestures, ...xx</li>
+      <li xml:lang="zh-CN">探索电脑：键盘、鼠标、不同的鼠标手势……</li>
+      <li xml:lang="zh-TW">電腦探索：鍵盤、滑鼠、不同的滑鼠手勢等</li>
       <li>arithmetic: table memory, enumeration, mirror image, balance
     the scale, change giving, ...</li>
+      <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
+      <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
+      <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
+      <li xml:lang="en-GB">arithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...</li>
+      <li xml:lang="es">aritmética: memorización de tablas, enumeración, imagen especular, equilibrar la balanza, devolver cambios...</li>
+      <li xml:lang="et">aritmeetika: nähtu mäletamine, loendamine, peegelpildid, kaalu tasakaalustamine, raha tagasiandmine...</li>
+      <li xml:lang="fi">aritmetiikka: kertotaulujen opettelu, laskutehtävät, peilikuvan piirtäminen, vaa’an tasapainottaminen, vaihtorahan antaminen, …</li>
       <li xml:lang="fr">arithmétique : apprentissage des tables d'opérations mathématiques, l'énumération, de symétrie d'image, équilibrage de la balance, rendre la monnaie…</li>
+      <li xml:lang="gl">Aritmética: táboas de memoria, enumeracóns, imaxes espello, equilibrar a balanza, dar o cambio…</li>
+      <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ...</li>
+      <li xml:lang="ko">산술 연산: 표 기억하기, 배열하기, 그림 뒤집기, 저울 맞추기, 거스름돈 계산하기, ...</li>
       <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wijziging gegeven, ...</li>
+      <li xml:lang="nn">rekning: gongetabellen¸teljing, spegelbilete, måling av vekt, vekslepengar, …</li>
+      <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, ...</li>
+      <li xml:lang="pt">aritmética: memória da tabuada, enumeração, imagem-espelho, equilíbrio de balanças, trocos, ...</li>
+      <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, ...</li>
+      <li xml:lang="ro">aritmetică: tabla înmulțirii, enumerări, imagini în oglindă, echilibrează balanța, darea restului, ...</li>
+      <li xml:lang="ru">арифметика: игра «память» с подсчётом, счёт, отражение рисунка, уравновешивание весов, подсчёт сдачи, ...</li>
+      <li xml:lang="sk">aritmetické: tabuľková pamäť, výpočet, zrkalový obrázok, vyváženie mierky, zmena dávky...</li>
+      <li xml:lang="sl">računstvo: spomin z računi, štetje, uravnoteži tehtnico, vračanje drobiža, ...</li>
       <li xml:lang="sv">aritmetik: tabellminne, uppräkning, spegelbild, balansera vågen, ge växel, ...</li>
       <li xml:lang="uk">Арифметика: запам’ятовування таблиць, нумерація, віддзеркалення, балансування масштабу, обчислення решти…</li>
       <li xml:lang="x-test">xxarithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...xx</li>
+      <li xml:lang="zh-CN">算数：表格记忆、枚举、镜像、天平、找零……</li>
+      <li xml:lang="zh-TW">數學運算：表格記憶、列舉、影像映射、平衡、找零計算等</li>
       <li>science: the canal lock, color mixing, gravity concept, ...</li>
+      <li xml:lang="ca">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
+      <li xml:lang="ca-valencia">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
+      <li xml:lang="de">Wissenschaft: Kanalschleuse, Farbmischung, Gravitation,...</li>
+      <li xml:lang="en-GB">science: the canal lock, colour mixing, gravity concept, ...</li>
+      <li xml:lang="es">ciencia: la esclusa de un canal, mezcla de colores, concepto de gravedad...</li>
+      <li xml:lang="et">loodusteadused: kanali lüüs, värvide segamine, gravitatsiooni mõistmine...</li>
+      <li xml:lang="fi">tiede: kanavasulku, värien sekoitus, painovoiman käsite…</li>
       <li xml:lang="fr">science : fonctionnement d'une écluse, mélange des couleurs, concept de la gravité…</li>
+      <li xml:lang="gl">Ciencia: o bloqueo da canle, mesturar cores, o concepto da gravitación, etc.</li>
+      <li xml:lang="it">scienza: la chiusa del canale, miscelazione dei colori, il concetto di gravità, ...</li>
+      <li xml:lang="ko">과학: 운하 갑문, 색 섞기, 중력, ...</li>
       <li xml:lang="nl">natuurkunde: de sluis, mengen van kleuren, concept van zwaartekracht, ...</li>
+      <li xml:lang="nn">vitskap: kanalsluse, blanding av fargar, tyngdekraft, …</li>
+      <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, ...</li>
+      <li xml:lang="pt">ciência: bloqueio de canais, misturas de cores, conceito de gravidade, ...</li>
+      <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, ...</li>
+      <li xml:lang="ro">științe: podul mobil, combinarea culorilor, gravitația, ...</li>
+      <li xml:lang="ru">наука: работа судоходного шлюза, смешивание цветов, представление о гравитации, ...</li>
+      <li xml:lang="sk">veda: zamknutý kanál, miešanie farieb, koncept grvitácie...</li>
+      <li xml:lang="sl">znanost: zapornica kanala, mešanje barv, koncept težnosti ...</li>
       <li xml:lang="sv">vetenskap: kanalslussen, färgblandning, gravitationskonceptet, ...</li>
       <li xml:lang="uk">Наука: шлюзування, змішування кольорів, поняття тяжіння…</li>
       <li xml:lang="x-test">xxscience: the canal lock, color mixing, gravity concept, ...xx</li>
+      <li xml:lang="zh-CN">科学：运河闸门、颜料色彩混合、重力的概念……</li>
+      <li xml:lang="zh-TW">科學：顏色混合、重力觀念、運河鎖等等</li>
       <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
+      <li xml:lang="ca">jocs: memòria, connectar 4, tres en ratlla, sudoku, torre de Hanoi...</li>
+      <li xml:lang="ca-valencia">jocs: memòria, connectar 4, tres en ratlla, sudoku, torre de Hanoi...</li>
+      <li xml:lang="de">Spiele: Memory, Vier gewinnt, Tic-Tac-Toe, Sudoku, Türme von Hanoi,...</li>
+      <li xml:lang="en-GB">games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
+      <li xml:lang="es">juegos: memoria, conectar 4, tres en raya, sudoku, torres de hanoi...</li>
+      <li xml:lang="et">mängud: mälu, nelja ühendamine, trips-traps-trull, sudoku, Hanoi tornid...</li>
+      <li xml:lang="fi">pelit: muisti, neljän suora, ristinolla, sudoku, Hanoin tornit…</li>
       <li xml:lang="fr">jeux: trouve les paires, puissance 4, morpion, sudoku, la tour d'hanoï…</li>
+      <li xml:lang="gl">Xogos: memoria, catro en liña, pai nai fillo, sudoku, a torre de Hanoi, etc.</li>
+      <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ...</li>
+      <li xml:lang="ko">게임: 메모리 게임, 4개 연결하기, 삼목, 수도쿠, 하노이 탑, ...</li>
       <li xml:lang="nl">spellen: geheugenspel, vier verbinden, tic-tac-toe, sudoku, torens van hanoi, ...</li>
+      <li xml:lang="nn">spel: hugsespel, fire på rad, bondesjakk, sudoku, tårnet i Hanoi, …</li>
+      <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, ...</li>
+      <li xml:lang="pt">jogos: memória, 4 em linha, jogo do galo, sudoku, torres de Hanói, ...</li>
+      <li xml:lang="pt-BR">jogos: memória, ligue 4, jogo da velha, sudoku, torre de Hanoi, ...</li>
+      <li xml:lang="ro">jocuri: memorie, leagă 4, X și 0, sudoku, turnul hanoi, ...</li>
+      <li xml:lang="ru">игры: память, соедини 4, крестики-нолики, судоку, Ханойская башня, ...</li>
+      <li xml:lang="sk">hry: pamäť, spojenie 4, tic tac toe, sudoku, hanojská veža...</li>
+      <li xml:lang="sl">igre: spomin, štiri v vrsto, križci in krožci, sudoku, Hanojski stolpi, ...</li>
       <li xml:lang="sv">spel: memory, koppla 4, tre-i-rad, sudoku, tornen i Hanoi, ...</li>
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
       <li xml:lang="x-test">xxgames: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...xx</li>
+      <li xml:lang="zh-CN">游戏：记忆、四子棋、井子棋、数独、汉诺塔……</li>
+      <li xml:lang="zh-TW">遊戲：記憶遊戲、四子棋、井字遊戲、數獨、河內塔等等</li>
       <li>reading: reading practice, ...</li>
+      <li xml:lang="ca">lectura: practicar la lectura...</li>
+      <li xml:lang="ca-valencia">lectura: practicar la lectura...</li>
+      <li xml:lang="de">Lesen: Leseübungen ...</li>
+      <li xml:lang="en-GB">reading: reading practice, ...</li>
+      <li xml:lang="es">lectura: prácticas de lectura...</li>
+      <li xml:lang="et">lugemine</li>
+      <li xml:lang="fi">lukeminen: lukemisen harjoittelu…</li>
       <li xml:lang="fr">lecture : entraînement à la lecture…</li>
+      <li xml:lang="gl">Lectura: práctica de lectura…</li>
+      <li xml:lang="it">lettura: esercitare la lettura, ...</li>
+      <li xml:lang="ko">읽기: 읽기 연습, ...</li>
       <li xml:lang="nl">lezen: lezen oefenen, ...</li>
+      <li xml:lang="nn">lesing: leseøvingar, …</li>
+      <li xml:lang="pl">czytanie: nauka czytania, ...</li>
+      <li xml:lang="pt">leitura: exercícios de leitura, ...</li>
+      <li xml:lang="pt-BR">leitura: prática de leitura, ...</li>
+      <li xml:lang="ro">citire: exerciții de citire, ...</li>
+      <li xml:lang="ru">чтение: упражнение в чтении, ...</li>
+      <li xml:lang="sk">čítanie: precvičovanie čítania...</li>
+      <li xml:lang="sl">branje: bralna vaja, ...</li>
       <li xml:lang="sv">läsning: läsningsövning, ...</li>
       <li xml:lang="uk">Читання: вправи із читання…</li>
       <li xml:lang="x-test">xxreading: reading practice, ...xx</li>
+      <li xml:lang="zh-CN">阅读：阅读练习……</li>
+      <li xml:lang="zh-TW">閱讀：閱讀練習等等</li>
       <li>other: learn to tell time, the braille system, maze, music
     instruments, ...</li>
+      <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
+      <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
+      <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
+      <li xml:lang="en-GB">other: learn to tell time, the braille system, maze, music instruments, ...</li>
+      <li xml:lang="es">otras: aprender a decir la hora, el sistema braille, laberintos, instrumentos musicales...</li>
+      <li xml:lang="et">muu: kellaaja väljendamine, Braille'i kiri, labürint, muusikariistad...</li>
+      <li xml:lang="fi">muuta: kellonajan kertominen, Braille-järjestelmä, sokkelo, soittimet…</li>
       <li xml:lang="fr">autre : apprendre à dire l'heure, le système braille, le labyrinthe, les instruments de musique…</li>
+      <li xml:lang="gl">Outros: aprender a dicir as horas, o sistema Braille, labirintos, instrumentos musicais, etc.</li>
+      <li xml:lang="it">altro: impara a leggere l'ora, il sistema braille, labirinto, strumenti musicali, ...</li>
+      <li xml:lang="ko">기타: 시간 읽기, 점자, 미로, 악기, ...</li>
       <li xml:lang="nl">overig: leren klokkijken, het braille-systeem, doolhof, muziekinstrumenten, ...</li>
+      <li xml:lang="nn">anna: lær klokka, lær blindeskrift, labyrint, musikkinstrument, …</li>
+      <li xml:lang="pl">inne: naucz się godzin na zegarze, systemu brajla, labiryntów, instrumentów muzycznych, ...</li>
+      <li xml:lang="pt">outros: aprender a dizer as horas, o sistema Braille, labirintos, instrumentos musicais, ...</li>
+      <li xml:lang="pt-BR">outros: aprendendo a ver as horas, o sistema Braille, labirintos, instrumentos musicais, ...</li>
+      <li xml:lang="ro">altele: învață să citești ceasul, sistemul braille, labirint, instrumente muzicale, ...</li>
+      <li xml:lang="ru">другое: определение времени по часам, шрифт Брайля, лабиринт, музыкальные инструменты, ...</li>
+      <li xml:lang="sk">iné: ako povedať čas, braillov systém, bludisko, hudobná nástroje...</li>
+      <li xml:lang="sl">ostalo: prepoznavanje časa, brajica, blodnjak, glasbila, ...</li>
       <li xml:lang="sv">annat: lära sig klockan, punktskrift, labyrint, musikinstrument, ...</li>
       <li xml:lang="uk">Інше: навчання позначенням часу, система Брайля, лабіринти, музичні інструменти…</li>
       <li xml:lang="x-test">xxother: learn to tell time, the braille system, maze, music instruments, ...xx</li>
+      <li xml:lang="zh-CN">其他：学认钟表、盲文系统、迷宫、乐器……</li>
+      <li xml:lang="zh-TW">其他：看時間、點字系統、迷宮、認識樂器等等</li>
     </ul>
     <p>Currently GCompris offers in excess of 100 activities and more
     are being developed. GCompris is free software, that means that
     you can adapt it to your own needs, improve it and, most
     importantly, share it with children everywhere.</p>
+    <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
+    <p xml:lang="ca-valencia">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
+    <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
+    <p xml:lang="en-GB">Currently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.</p>
+    <p xml:lang="es">En la actualidad, GCompris ofrece más de 100 actividades y hay muchas más en desarrollo. GCompris es software libre, lo que significa que puede adaptarlo a sus necesidades, mejorarlo y, lo que es más importante, compartirlo con los niños de todo el mundo.</p>
+    <p xml:lang="et">Praegu pakub GCompris üle 100 tegevuse ja neid tuleb aina juurde. GCompris on vaba tarkvara, mis tähendab, et seda saab kohandada oma vajadustele, täiustada, ja mis peamine, jagada oma täiustusi lastega kogu maailmas.</p>
+    <p xml:lang="fi">GComprisissa on nykyisellään yli sata toimintoa, ja lisää kehitetään. GCompris on vapaata ohjelmistoa, mikä tarkoittaa, että voit muokata sitä tarpeisiisi, parannella sitä ja mikä tärkeintä jakaa sitä lapsille kaikkialla.</p>
     <p xml:lang="fr">Actuellement, GCompris contient plus de 100 activités et d'autres sont en cours de développement. GCompris est un logiciel libre, ce qui veut dire que vous pouvez l'adapter à vos propres besoins, le modifier et, le plus important, le partager avec des enfants où que ce soit.</p>
+    <p xml:lang="gl">Actualmente, GCompris ofrece máis de 100 actividades e hai máis en camiño. GCompris é software libre, o que significa que calquera pode adaptalo ás súas propias necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.</p>
+    <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
+    <p xml:lang="ko">GCompris는 100개 이상의 활동을 포함하고 있으며 더 많은 활동을 개발하고 있습니다. GCompris는 자유 소프트웨어이며, 필요에 따라서 활동을 개선할 수 있으며 전 세계의 사람들과 공유할 수 있습니다.</p>
     <p xml:lang="nl">Op dit moment biedt GCompris meer dan 100 activiteiten en meer zijn er in ontwikkeling. GCompris is vrije software, dat betekent dat u het kunt aanpassen aan uw eigen behoeften, het verbeteren en, meest belangrijk, het met kinderen overal kun delen.</p>
+    <p xml:lang="nn">GCompris har over 100 aktivitetar, og fleire vert utvikla. GCompris er fri programvare. Det vil seia at du kan tilpassa spelet slik du ønskjer, forbetra det og dela det med andre ungar i heile verda.</p>
+    <p xml:lang="pl">Obecnie GCompris zapewnia ponad 100 aktywności, a jeszcze więcej jest opracowywanych. GCompris jest darmowym oprogramowaniem, co oznacza, że możesz je dopasować do własnych potrzeb, ulepszać je i co najważniejsze udostępniać je dzieciom.</p>
+    <p xml:lang="pt">De momento, o GCompris oferece mais de 100 actividades, estando ainda mais em desenvolvimento. O GCompris é uma aplicação de 'software' livre, o que significa que o poderá adaptar às suas próprias necessidades, melhorá-lo e, o mais importante, partilhá-lo com as crianças em todo o lado.</p>
+    <p xml:lang="pt-BR">Atualmente o GCompris oferece mais de 100 atividades e outras mais estão sendo desenvolvidas. O GCompris é um software livre, o que significa que você pode adaptá-lo para as suas próprias necessidades, melhorá-lo e, mais importante, compartilhar com as crianças de todo o mundo.</p>
+    <p xml:lang="ro">Momentan GCompris oferă peste 100 de activități și multe altele sunt în lucru. GCompris este software liber, ceea ce înseamnă că poate fi adaptat nevoilor dumneavoastră, îmbunătățit, dar mai ales, partajat cu copii de pretutindeni.</p>
+    <p xml:lang="ru">В настоящее время GCompris содержит более 100 упражнений, и новые находятся в  разработке. GCompris — свободное ПО, и это значит, что вы можете приспособить его для своих нужд, улучшить, а самое главное — поделиться им с детьми во всём мире.</p>
+    <p xml:lang="sk">Aktuálne GCompris ponúka vyše 100 aktivít a ďalšie sa vyvíjajú. GCompris je slobodný softvér, čo znamená, že si ho môžete prispôsobiť na vlastné potreby, zlepšiť, a hlavne zdieľať s deťmi všade.</p>
+    <p xml:lang="sl">GCompris trenutno ponuja več kot 100 dejavnosti, še več pa jih je v razvoju. GCompris je prosta programska oprema, kar pomeni, da jo lahko prilagodite po svoje, še pomembneje pa je, da jo lahko delite z otroki širom sveta.</p>
     <p xml:lang="sv">För närvarande erbjuder GCompris över 100 aktiviteter och ännu fler håller på att utvecklas. GCompris är fri programvara, vilket betyder att man kan anpassa det till sina egna behov, och viktigast av allt, dela det med barn överallt.</p>
     <p xml:lang="uk">У поточній версії GCompris понад 100 вправ. Розробники постійно працюють над новими вправами. GCompris є вільним програмним забезпеченням, це означає, що ви можете адаптувати програму до власних потреб, покращувати її і, що найважливіше, ділитися вашими творіннями із усіма дітьми.</p>
     <p xml:lang="x-test">xxCurrently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.xx</p>
+    <p xml:lang="zh-CN">当前 GCompris 提供超过100个活动，还有更多的正在开发中。GCompris 是自由软件，这意味着你可以根据你的需要进行调整、改进，以及最重要的一点，和世界各地的孩子们分享。</p>
+    <p xml:lang="zh-TW">目前 GCompris 提供超過 100 個活動，還有更多正在開發中。GCompris 是一套自由軟體，表示您可以根據您自己的需求來改進，並分享給所有的孩子們。</p>
   </description>
   <screenshots>
     <screenshot width="1080" height="720" type="default">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="de">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="es">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="et">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
     <screenshot width="1080" height="720" type="default" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="it">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
     <screenshot width="1080" height="720" type="default" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
     <screenshot width="1080" height="720" type="default" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
     <screenshot width="1080" height="720" type="default" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
     <screenshot width="1080" height="720" type="default" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/canal_lock.pngxx</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720" type="default" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/xx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/click_on_letter_up.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/clockgame-nn.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/clockgame.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/color_mix-nn.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/color_mix.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/colors-nn.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/colors.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/enumerate.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/fifteen.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/hexagon.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/redraw_symmetrical.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/scalesboard.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
     <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ca-valencia">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="cs">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="de">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="en-GB">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="es">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="et">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="fi">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="fr">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="gl">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="it">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ko">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="nl">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="nn">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pl">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="pt-BR">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ro">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="ru">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sk">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="sl">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="sv">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="uk">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
     <screenshot width="1080" height="720" xml:lang="x-test">xxhttp://gcompris.net/screenshots-qt/middle/traffic.pngxx</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-CN">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+    <screenshot width="1080" height="720" xml:lang="zh-TW">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
   </screenshots>
   <url type="homepage">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="ca">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="ca-valencia">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="cs">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="de">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="en-GB">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="es">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="et">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="fi">http://gcompris.net/</url>
   <url type="homepage" xml:lang="fr">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="gl">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="it">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="ko">http://gcompris.net/</url>
   <url type="homepage" xml:lang="nl">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="nn">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="pl">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="pt">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="pt-BR">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="ro">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="ru">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="sk">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="sl">http://gcompris.net/</url>
   <url type="homepage" xml:lang="sv">http://gcompris.net/</url>
   <url type="homepage" xml:lang="uk">http://gcompris.net/</url>
   <url type="homepage" xml:lang="x-test">xxhttp://gcompris.net/xx</url>
+  <url type="homepage" xml:lang="zh-CN">http://gcompris.net/</url>
+  <url type="homepage" xml:lang="zh-TW">http://gcompris.net/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="ca">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="ca-valencia">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="cs">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="de">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="en-GB">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="es">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="et">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="fi">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="bugtracker" xml:lang="fr">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="gl">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="it">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="ko">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="bugtracker" xml:lang="nl">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="nn">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="pl">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="pt">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="pt-BR">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="ro">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="ru">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="sk">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="sl">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="bugtracker" xml:lang="sv">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="bugtracker" xml:lang="uk">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="bugtracker" xml:lang="x-test">xxhttps://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcomprisxx</url>
+  <url type="bugtracker" xml:lang="zh-CN">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <url type="bugtracker" xml:lang="zh-TW">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <updatecontact>bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="ca">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="ca-valencia">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="cs">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="de">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="en-GB">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="es">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="et">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="fi">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="fr">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="gl">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="it">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="ko">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="nl">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="nn">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="pl">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="pt">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="pt-BR">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="ro">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="ru">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="sk">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="sl">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="sv">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="uk">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="x-test">xxbruno.coudoin@gcompris.netxx</updatecontact>
+  <updatecontact xml:lang="zh-CN">bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact xml:lang="zh-TW">bruno.coudoin@gcompris.net</updatecontact>
 </application>
