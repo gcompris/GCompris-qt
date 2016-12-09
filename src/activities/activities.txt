@@ -122,6 +122,7 @@ share
 simplepaint
 smallnumbers
 smallnumbers2
+stefan.toncu
 sudoku
 superbrain
 tangram
