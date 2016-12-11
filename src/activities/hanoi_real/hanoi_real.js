@@ -105,6 +105,8 @@ function initSpecificInfoForSimplified() {
 function initLevel() {
     items.bar.level = currentLevel + 1
 
+    items.hasWon = false
+
     if(activityMode == "real") {
         items.numberOfDisc = currentLevel + 3
         items.discRepeater.model = items.numberOfDisc
@@ -355,8 +357,10 @@ function getNumberOfDiscOnTower(towerImage) {
 
 function checkSolved() {
     if(activityMode == "real") {
-        if(getNumberOfDiscOnTower(items.towerModel.itemAt(items.towerModel.model-1)) === items.numberOfDisc)
+        if(getNumberOfDiscOnTower(items.towerModel.itemAt(items.towerModel.model-1)) === items.numberOfDisc) {
+            items.hasWon = true
             items.bonus.good("flower")
+        }
     }
     else {
         // Recreate both last towers text
@@ -378,6 +382,7 @@ function checkSolved() {
             if (expectedTower[i] !== actualTower[i]) hasWon = false
         }
         if(hasWon) {
+            items.hasWon = true
             items.bonus.good("flower")
         }
     }
