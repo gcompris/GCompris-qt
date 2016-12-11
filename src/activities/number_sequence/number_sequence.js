@@ -74,7 +74,10 @@ function previousLevel() {
 
 //function to play the sound of chararcter at start & end
 function playLetterSound(sound) {
-    items.audioVoices.play(sound)
+    // first we clear the queue in case other voices are there, then we append the new number
+    // if we play directly, we don't have the bonus sound (or it is truncated)
+    items.audioVoices.clearQueue()
+    items.audioVoices.append(sound)
 }
 
 
@@ -133,8 +136,5 @@ function loadBackgroundImage() {
 }
 
 function won() {
-    if(mode == "drawletters" || mode == "drawnumbers") {
-        playLetterSound(dataset[currentLevel].sound)
-    }
     items.bonus.good("flower")
 }
