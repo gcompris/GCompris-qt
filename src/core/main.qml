@@ -230,6 +230,8 @@ Window {
             function getTransition(properties)
             {
                 audioVoices.clearQueue()
+                audioVoices.stop()
+
                 if(!properties.exitItem.isDialog &&        // if coming from menu and
                         !properties.enterItem.isDialog)    // going into an activity then
                     playIntroVoice(properties.enterItem.activityInfo.name);    // play intro
