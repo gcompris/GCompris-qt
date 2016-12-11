@@ -57,6 +57,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias discRepeater: discRepeater
             property alias towerModel: towerModel
+            property bool hasWon: false
             property int numberOfDisc
         }
 
@@ -145,7 +146,7 @@ ActivityBase {
 
                 MouseArea {
                     id: discMouseArea
-                    enabled: disc.mouseEnabled
+                    enabled: disc.mouseEnabled && !items.hasWon
                     anchors.centerIn: parent
                     width: Activity.getDiscWidth(0)
                     height: background.height
