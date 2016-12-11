@@ -3,6 +3,7 @@
   <id type="desktop">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="ca">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="ca-valencia">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="en-GB">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="es">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="fr">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="nl">org.kde.gcompris.desktop</id>
