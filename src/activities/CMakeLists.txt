@@ -8,6 +8,8 @@ string(REGEX REPLACE ";" "\\\\;" ACTIVITIES "${ACTIVITIES}")
 string(REGEX REPLACE "\n" ";" ACTIVITIES "${ACTIVITIES}")
 file(REMOVE "activities_out.txt")
 
+add_custom_target(all_activities)
+
 foreach(ACTIVITY ${ACTIVITIES})
   # For each line found, we remove comments
   string(FIND "${ACTIVITY}" "#" match)
@@ -24,6 +26,7 @@ foreach(ACTIVITY ${ACTIVITIES})
       # Add the directory for compilation
       add_subdirectory(${ACTIVITY})
       file(APPEND "activities_out.txt" "${ACTIVITY}\n")
+      add_dependencies(all_activities "rcc_${ACTIVITY}")
     endif()
   endif(${match})
 endforeach(ACTIVITY ${ACTIVITIES})
