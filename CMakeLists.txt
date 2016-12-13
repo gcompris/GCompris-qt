@@ -228,10 +228,17 @@ foreach(PoSource ${TRANSLATIONS_FILES})
 endforeach()
 
 # Install translations
-add_custom_target(BuildTranslations
-  DEPENDS ${QM_FILES}
-  COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
-  )
+if (WIN32)
+    add_custom_target(BuildTranslations
+        DEPENDS ${QM_FILES}
+        COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
+    )
+else()
+    add_custom_target(BuildTranslations ALL
+        DEPENDS ${QM_FILES}
+        COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
+    )
+endif()
 
 add_custom_command(
     OUTPUT doBundleTranslations
@@ -467,3 +474,6 @@ else()
 endif()
 
 add_subdirectory(src)
+
+add_custom_target(binaries)
+add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)
