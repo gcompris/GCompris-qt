@@ -148,7 +148,7 @@ ActivityBase {
                             font.weight: Font.DemiBold
                             color: "#2a2a2a"
                             font.pointSize: NaN  // need to clear font.pointSize explicitly
-                            font.pixelSize: Math.max(parent.width * 0.5, 24)
+                            font.pixelSize: rect1.width * 0.5
                             anchors {
                                 top: rect1.bottom
                                 topMargin: 4 * ApplicationInfo.ratio
