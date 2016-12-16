@@ -21,6 +21,7 @@
  */
 
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 
 import "../../core"
 import "crane.js" as Activity
@@ -28,13 +29,20 @@ import "crane.js" as Activity
 ActivityBase {
     id: activity
 
+    // Overload this in your activity to change it
+    // Put you default-<locale>.json files in it
+    property string dataSetUrl: "qrc:/gcompris/src/activities/crane/resource/"
+    
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: activity.dataSetUrl+"background.svg"
+        fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
-        color: "#ffeecc"
+        sourceSize.width: Math.max(parent.width, parent.height)
+
 
         signal start
         signal stop
@@ -73,19 +81,34 @@ ActivityBase {
         property bool inLine: true
 
         Keys.onPressed: {
-            if (event.key === Qt.Key_Left)
+            if (event.key === Qt.Key_Left){ 
                 Activity.move("left")
-            else if (event.key === Qt.Key_Right)
+                left.opacity = 0.6
+            }
+            else if (event.key === Qt.Key_Right){
                 Activity.move("right")
-            else if (event.key === Qt.Key_Up)
+                right.opacity = 0.6
+            }
+            else if (event.key === Qt.Key_Up){
                 Activity.move("up")
-            else if (event.key === Qt.Key_Down)
+                up.opacity = 0.6
+            }
+            else if (event.key === Qt.Key_Down){
                 Activity.move("down")
+                down.opacity = 0.6
+            }
             else if (event.key === Qt.Key_Space ||
                      event.key === Qt.Key_Tab ||
                      event.key === Qt.Key_Enter ||
                      event.key === Qt.Key_Return)
                 Activity.move("next")
+        }
+        
+        Keys.onReleased: {
+            up.opacity = 1
+            down.opacity = 1
+            left.opacity = 1
+            right.opacity = 1            
         }
 
         //implementation of Swipe effect
@@ -103,9 +126,12 @@ ActivityBase {
 
         Rectangle {
             id: board
-            color: "lightblue"
-            radius: width * 0.02
+            color: "#b9e2f0"
+            radius: width * 0.03
+            border.color: "#77c0d9"
+            border.width: width * 0.02
             z: 1
+            clip: true
 
             anchors {
                 verticalCenter: crane_vertical.verticalCenter
@@ -125,6 +151,11 @@ ActivityBase {
             rows: items.rows
             z: 1
             anchors.fill: board
+            layer.enabled: true
+            layer.effect: OpacityMask {
+                maskSource: board
+            }
+            
             Repeater {
                 id: gridRepeater
 
@@ -133,22 +164,11 @@ ActivityBase {
                     height: board.height/items.rows
                     color: "transparent"
                     border.width: 2
-                    border.color: "grey"
+                    border.color: "#77c0d9"
                 }
             }
         }
 
-        Rectangle {
-            id: coverEgdes1
-            color: "transparent"
-            width: board.width
-            height: board.height
-            border.color: board.color
-            border.width: 10
-            opacity: showGrid1.opacity
-            anchors.centerIn: board
-            z: 3
-        }
 
         Grid {
             id: grid
@@ -219,7 +239,7 @@ ActivityBase {
 
         Image {
             id: selected
-            source: "resource/selected.png"
+            source: activity.dataSetUrl+"selected.svg"
             sourceSize.width: board.width/items.columns
             sourceSize.height: board.height/items.rows
             width: board.width/items.columns
@@ -240,8 +260,10 @@ ActivityBase {
 
         Rectangle {
             id: modelBoard
-            color: "pink"
-            radius: width * 0.02
+            color: "#f0b9d2"
+            radius: width * 0.03
+            border.color: "#e294b7"
+            border.width: width * 0.02
             z: 1
 
             anchors {
@@ -283,6 +305,10 @@ ActivityBase {
             z: 1
             opacity: showGrid1.opacity
             anchors.fill: modelBoard
+            layer.enabled: true
+            layer.effect: OpacityMask {
+                maskSource: modelBoard
+            }
             Repeater {
                 id: gridRepeater2
                 model: gridRepeater.model
@@ -292,30 +318,18 @@ ActivityBase {
                     height: modelBoard.height/items.rows
                     color: "transparent"
                     border.width: 2
-                    border.color: showGrid1.opacity == 1 ? "grey" : "transparent"
+                    border.color: showGrid1.opacity == 1 ? "#e294b7" : "transparent"
                 }
             }
         }
 
-        Rectangle {
-            id: coverEgdes2
-            color: "transparent"
-            width: modelBoard.width
-            height: modelBoard.height
-            border.color: showGrid1.opacity == 1 ? modelBoard.color : "transparent"
-            border.width: 10
-            anchors.centerIn: modelBoard
-            opacity: showGrid1.opacity
-            z: 3
-        }
 
         Image {
             id: crane_top
-            source: "resource/crane_up.svg"
+            source: activity.dataSetUrl+"crane_up.svg"
             sourceSize.width: background.portrait ? background.width * 0.8 : background.width * 0.5
-            sourceSize.height: background.portrait ? background.height * 0.03 : background.height * 0.06
             width: background.portrait ? background.width * 0.8 : background.width * 0.5
-            height: background.portrait ? background.height * 0.03 : background.height * 0.06
+            fillMode: Image.PreserveAspectFit
             z: 4
             anchors {
                 top: parent.top
@@ -327,11 +341,10 @@ ActivityBase {
 
         Image {
             id: crane_vertical
-            source: "resource/crane_vertical.svg"
-            sourceSize.width: background.width * 0.04
+            source: activity.dataSetUrl+"crane_vertical.svg"
             sourceSize.height: background.portrait ? background.height * 0.5 : background.height * 0.73
-            width: background.width * 0.05
             height: background.portrait ? background.height * 0.5 : background.height * 0.73
+            fillMode: Image.PreserveAspectFit
             anchors {
                 top: crane_top.top
                 right: background.portrait ? parent.right : parent.horizontalCenter
@@ -342,7 +355,7 @@ ActivityBase {
 
         Image {
             id: crane_body
-            source: "resource/crane_only.svg"
+            source: activity.dataSetUrl+"crane_only.svg"
             z: 2
             sourceSize.width: parent.width / 5
             sourceSize.height: parent.height/ 3.6
@@ -358,7 +371,7 @@ ActivityBase {
 
         Image {
             id: crane_wire
-            source: "resource/crane-wire.svg"
+            source: activity.dataSetUrl+"crane-wire.svg"
             z: 1
             sourceSize.width: parent.width / 22
             sourceSize.height: parent.width / 17
@@ -372,14 +385,12 @@ ActivityBase {
 
         Image {
             id: crane_command
-            source: "resource/command.svg"
+            source: activity.dataSetUrl+"command.svg"
             sourceSize.width: background.portrait ? parent.width / 2.7 : parent.width / 3.5
             sourceSize.height: background.portrait ? parent.height / 3.5 :  parent.height / 4
 
             width: background.portrait ? parent.width / 2.7 : parent.width / 3.5
             height: background.portrait ? parent.height / 3.5 :  parent.height / 4
-
-            mirror: true
 
             anchors {
                 top: crane_body.top
@@ -392,17 +403,17 @@ ActivityBase {
 
             Controls {
                 id: up
-                source: "resource/arrow_up.svg"
+                source: activity.dataSetUrl+"arrow_up.svg"
                 anchors {
                     left: parent.left
-                    leftMargin: parent.width / 13
+                    leftMargin: parent.width / 11
                 }
                 command: "up"
             }
 
             Controls {
                 id: down
-                source: "resource/arrow_down.svg"
+                source: activity.dataSetUrl+"arrow_down.svg"
                 anchors {
                     left: up.right
                     leftMargin: parent.width / 30
@@ -412,7 +423,7 @@ ActivityBase {
 
             Controls {
                 id: left
-                source: "resource/arrow_left.svg"
+                source: activity.dataSetUrl+"arrow_left.svg"
                 anchors {
                     right: right.left
                     rightMargin: parent.width / 30
@@ -422,10 +433,10 @@ ActivityBase {
 
             Controls {
                 id: right
-                source: "resource/arrow_right.svg"
+                source: activity.dataSetUrl+"arrow_right.svg"
                 anchors {
                     right: parent.right
-                    rightMargin: parent.width / 10
+                    rightMargin: parent.width / 11
                 }
                 command: "right"
             }
@@ -433,7 +444,7 @@ ActivityBase {
 
         Rectangle {
             id: cable
-            color: "black"
+            color: "#373737"
             width: 5
             height: convert.y - crane_top.y
             x: convert.x + board.width / items.columns / 2
