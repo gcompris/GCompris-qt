@@ -1,98 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   height="25"
-   width="25"
-   version="1.0"
-   viewBox="0 0 25.000001 25"
-   id="svg3245">
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="48.365387mm"
+   height="48.365387mm"
+   viewBox="0 0 171.37342 171.37342"
+   id="svg4873"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="arrow_key.svg">
   <defs
-     id="defs3247">
-    <filter
-       id="filter3241">
-      <feGaussianBlur
-         id="feGaussianBlur3243"
-         stdDeviation="2.7632695" />
-    </filter>
-  </defs>
-  <g
-     transform="translate(-196.59,-497.91001)"
-     id="layer1">
-    <g
-       id="layer1-5"
-       transform="matrix(0.13944093,0,0,0.19788561,196.12628,422.86303)">
-      <g
-         id="g3312"
-         transform="translate(-35.714,2.8571)">
-        <path
-           id="path3310"
-           d="m 66.533,473.6 c 39.347,6.02 74.607,7.15 108.31,0 l -6.36,26.16 c 22.96,-14.12 54.77,-29.9 59.27,-51.62 -4.25,-21.88 -38.45,-34.81 -61.16,-47.46 l 7.77,24.13 c -34.78,-10.81 -70.93,-7.96 -107.58,0 l -0.247,48.79 z"
-           style="fill:#4569ff;fill-rule:evenodd;stroke:#565eff;stroke-width:5.80000019;filter:url(#filter3241)"
-           transform="matrix(-1,0,0,1,279.29,-7.1429)" />
-        <g
-           id="g3302"
-           transform="matrix(0,1,1,0,-305.22,29.862)">
-          <path
-             id="path3304"
-             style="fill:#4569ff;fill-rule:evenodd"
-             d="m 357.58,406.47 22.09,-7.12 c -9.89,31.85 -7.29,74.14 0,107.71 l 22.21,0.11 c -0.03,-6.98 -0.06,-25.95 -0.06,-58.17 l 0,-31.08 c 0,-32.16 0.03,-51.01 0.06,-58.06 -0.28,-0.06 -0.3,-9.42 -0.83,-8.72 -20.04,3.89 -31.88,34.53 -43.47,55.33 z" />
-          <path
-             id="path3306"
-             style="fill:#0029d0;fill-rule:evenodd"
-             d="m 401.05,350.8 c 0.02,8.81 0.05,33.49 0.05,63.7 l 0,45.7 c 0,26.02 -0.01,35.58 -0.03,46.95 l 24.67,0.12 c 7.66,-41.04 10.12,-71.09 0,-107.67 l 23.98,5.84 c -12.68,-23.03 -18.59,-30.77 -31.62,-45.62 -10.17,-7.95 -16.59,-9.15 -17.05,-9.02 z" />
-          <path
-             id="path3308"
-             style="fill:none;stroke:#000000;stroke-width:5.80000019"
-             d="m 427.67,509.4 c 8.16,-39.35 10.72,-74.6 0,-108.31 l 26.16,6.37 c -14.12,-22.97 -29.9,-54.78 -51.62,-59.28 -21.89,4.26 -36.95,40.6 -49.61,63.31 l 26.28,-9.92 c -10.81,34.78 -7.97,70.93 0,107.59 l 48.79,0.24 z" />
-        </g>
-      </g>
-    </g>
-  </g>
+     id="defs4875" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#8b8b8b"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-550.74187"
+     inkscape:cy="252.82955"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1880"
+     inkscape:window-height="1060"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata14">
+     id="metadata4878">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-        <dc:publisher>
-          <cc:Agent
-             rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
-          </cc:Agent>
-        </dc:publisher>
         <dc:title></dc:title>
-        <dc:date>2008-02-25T14:59:24</dc:date>
-        <dc:description>One more arrow set... well what can i say... it´s fun to do arrows set.. ;-)</dc:description>
-        <dc:source>https://openclipart.org/detail/14871/arrow-set-(bulb)-by-mystica-14871</dc:source>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>mystica</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>arrow</rdf:li>
-            <rdf:li>arrows</rdf:li>
-            <rdf:li>sign</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
       </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-320.02759,-612.38977)">
+    <rect
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:0.15625;stroke:#ffffff;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78571424;marker:none;enable-background:accumulate"
+       id="rect4690-1"
+       width="161.37341"
+       height="161.37341"
+       x="-486.401"
+       y="617.38977"
+       ry="37.838772"
+       transform="scale(-1,1)" />
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:0.78423246;stroke:none"
+       d="m 430.71428,647.38978 0,100 -70,-50 z"
+       id="path4712-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
 </svg>

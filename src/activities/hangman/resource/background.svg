@@ -24,12 +24,12 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0111627"
-     inkscape:cx="460.28432"
+     inkscape:cx="270.89838"
      inkscape:cy="197.13844"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1880"
+     inkscape:window-width="1884"
      inkscape:window-height="1051"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -44,7 +44,7 @@
        id="linearGradient4109"
        xlink:href="#skyG"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.35274105,0,0,0.3163348,259.64528,546.65812)" />
+       gradientTransform="matrix(0.38191228,0,0,0.3163348,214.72159,546.65812)" />
     <linearGradient
        y2="440.09"
        x2="484.17999"
@@ -278,9 +278,9 @@
      inkscape:label="Calque 1"
      style="display:inline">
     <rect
-       width="801.22601"
+       width="867.48639"
        height="324.46909"
-       x="1.6403998"
+       x="-64.619957"
        y="531.58862"
        id="rect2160"
        style="fill:url(#linearGradient4109);fill-opacity:1;stroke:none" />
