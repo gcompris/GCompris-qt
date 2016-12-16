@@ -182,7 +182,7 @@ ActivityBase {
                     topMargin: 20 * ApplicationInfo.ratio
                 }
                 width: Math.min(background.width * 0.18, background.height * 0.2)
-                isLetter: items.isLetter
+                isLetter: true
                 onBrailleCharChanged: {
                     if(brailleChar === Activity.getCurrentLetter()) {
                         particles.burst(40)
