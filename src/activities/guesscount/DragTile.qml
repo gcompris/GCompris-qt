@@ -3,7 +3,7 @@
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <PASCAL GEORGES> (V13.11)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -43,10 +43,8 @@ Item {
     }
     onChildrenChanged: {
         if(type == "operators"){
-            if(root.children.length == 0)
+            if(root.children.length-1 == 0)
                 createDynamicObject()
-            else if(root.children.length == 3)
-                root.children[0].destroy()
         }
     }
 }

@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <Pascal Georges> (GTK+ version)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -22,10 +22,20 @@
 
 // questions according to operators
 
+/*
+format of the dataset
+outermost array contains four arrays according to number of operator used in the Questions array.
+
+Question array  = [[operators used],[Questions]]
+
+Question  = [[operands],result]
+
+*/
+
 var dataset = [
             [
                 [['+'],[  [[1,2,4],3] , [[3,4,5],7] ,[[6,2,7],8] ,[[5,2,4],7] ,[[9,2,4],11] ,[[4,6,2],6],[[1,6],7] ,[[3,2],5] ,[[13,1],14] ,[[5,8],13]  ]],
-                [['-'],[  [[2,1,3],1] , [[3,1,0],2] ,[[7,2,3],5] ,[[6,2,2],4] ,[[9,2,4],7] ,[[8,5,5],3],[[9,5,3],4],[[18,9,1],3],[[5,1,2],4],[[6,3,7],3],[[5,4,1],1] ]  ],
+                [['-'],[  [[2,1,3],1] , [[3,1,0],2] ,[[7,2,3],5] ,[[6,2,2],4] ,[[9,2,4],7] ,[[8,5,5],3],[[9,5,3],4],[[18,9,8],9],[[5,1,2],4],[[6,3,7],3],[[5,4,1],1] ]  ],
                 [['*'],[  [[2,1,3],2] , [[3,1,4],3] ,[[7,2,5],14] ,[[6,2,1],12] ,[[9,2,3],18] ,[[8,5,5],40],[[9,5,6],45],[[1,9,2],9],[[5,1,4],5] ]],
                 [['/'],[  [[2,1,4],2] , [[3,1,2],3] ,[[8,2,1],4] ,[[6,2,7],3] ,[[9,3,2],3] ,[[8,4,2 ],2],[[9,3,4],3],[[18,9,3],2]    ]]
             ],
@@ -56,6 +66,6 @@ var dataset = [
 
 var levelSchema = [4,4,4,4,3,3,4,5]
 
-// default operators at each level
+// default operators at each level ( in case Built-in mode is activated )
 
 var defaultOperators = [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]

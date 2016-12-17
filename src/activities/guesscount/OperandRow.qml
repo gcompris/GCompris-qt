@@ -3,7 +3,7 @@
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <Pascal Georges> (GTK+ version)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify

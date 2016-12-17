@@ -3,7 +3,7 @@
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <Pascal Georges> (GTK+ version)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -44,8 +44,8 @@ ActivityBase {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                if(dialog.visible)
-                    dialog.visible=false
+                if(warningDialog.visible)
+                    warningDialog.visible=false
             }
         }
 
@@ -61,7 +61,7 @@ ActivityBase {
             property  var data
             property int result: data[sublevel-1][1]
             property alias timer: timer
-            property alias dialog: dialog
+            property alias warningDialog: warningDialog
             property GCAudio audioEffects: activity.audioEffects
             property bool solved
             property bool levelchanged: false
@@ -357,7 +357,7 @@ ActivityBase {
         }
 
         Rectangle {
-            id: dialog
+            id: warningDialog
             width: parent.width*0.49
             height: parent.height/6
             visible: false
@@ -374,10 +374,10 @@ ActivityBase {
                 id: dialogText
                 anchors.centerIn: parent
                 anchors {
-                    centerIn: dialog
+                    centerIn: warningDialog
                 }
-                opacity: dialog.opacity
-                z: dialog.z
+                opacity: warningDialog.opacity
+                z: warningDialog.z
                 fontSize: background.vert ? regularSize : smallSize
                 color: "white"
                 style: Text.Outline
@@ -388,7 +388,7 @@ ActivityBase {
             }
             states: [
                 State {
-                    when: dialog.visible
+                    when: warningDialog.visible
                     PropertyChanges {
                         target: top
                         opacity: 0.5
@@ -399,7 +399,7 @@ ActivityBase {
                     }
                 },
                 State {
-                    when: !dialog.visible
+                    when: !warningDialog.visible
                     PropertyChanges {
                         target: top
                         opacity: 1

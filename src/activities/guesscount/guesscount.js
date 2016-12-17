@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <Pascal Georges> (GTK+ version)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -54,8 +54,8 @@ function initLevel() {
     console.log("dataset :"+items.data  )
     items.levelchanged = false
     items.solved=false
-    if(items.dialog.visible)
-        items.dialog.visible=false
+    if(items.warningDialog.visible)
+        items.warningDialog.visible=false
 }
 function nextSublevel() {
     items.sublevel += 1
@@ -111,10 +111,10 @@ function calculate(operand1,operator,operand2,operationRow)
             operationRow.endResult.text = ""
             operationRow.complete = false
             if(result<0)
-                items.dialog.dialogText.text = qsTr("result is not positive integer")
+                items.warningDialog.dialogText.text = qsTr("result is not positive integer")
             else
-                items.dialog.dialogText.text = qsTr("result is not an integer")
-            items.dialog.visible = true
+                items.warningDialog.dialogText.text = qsTr("result is not an integer")
+            items.warningDialog.visible = true
         }
     }
 }
@@ -133,8 +133,8 @@ function childrenChange(item,operationRow)
         item.droppedItem.parent = item.droppedItem.reparent
         operationRow.complete=false
         console.log(" second item is replaced "+item.count)
-        if(items.dialog.visible)
-            items.dialog.visible=false
+        if(items.warningDialog.visible)
+            items.warningDialog.visible=false
     }
     else if(item.children.length == 1)
     {
@@ -213,9 +213,3 @@ function buidDataset(data,levelSchema) {
     }
     return level
 }
-
-function changeDialogVisibility(){
-    items.dialog.visible=false;
-}
-
-

@@ -3,7 +3,7 @@
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <PASCAL GEORGES> (V13.11)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -34,13 +34,14 @@ MouseArea {
     drag.target: tile
     onReleased: {
         parent = tile.Drag.target != null ? tile.Drag.target : root
-        tile.Drag.drop()
-    }
-    onPressed: {
-        Activity.changeDialogVisibility()
+        if(parent==root)
+            mouseArea.destroy()
+        else
+            tile.Drag.drop()
     }
     onClicked: {
-        Activity.changeDialogVisibility()
+        if(Activity.items.warningDialog.visible)
+        Activity.items.warningDialog.visible=false
     }
     Rectangle {
         id: tile
@@ -69,7 +70,7 @@ MouseArea {
                 AnchorChanges { target: tile; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
             },
             State {
-                when: dialogVisible
+                when: Activity.items.warningDialog.visible
                 PropertyChanges {
                     target: mouseArea
                     enabled: false

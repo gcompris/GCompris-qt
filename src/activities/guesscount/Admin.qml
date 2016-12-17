@@ -3,7 +3,7 @@
  * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <Pascal Georges> (GTK+ version)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -73,12 +73,6 @@ Row {
                         levelOperators[level].push(modelData)
                         Activity.sync(levelOperators,level)
                     }
-                    if(levelOperators[level].length == 0){
-                        warning.visible = true
-                    }
-                    else{
-                        warning.visible = false
-                    }
                 }
             }
             states: [
@@ -95,7 +89,7 @@ Row {
     }
     Rectangle {
         id: warning
-        visible: levelOperators[level] == 0 ? true : false
+        visible: levelOperators[level].length == 0 ? true : false
         width: parent.width*0.15
         height: parent.height
         radius: 20.0;

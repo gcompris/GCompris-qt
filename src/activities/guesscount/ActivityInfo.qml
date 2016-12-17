@@ -3,7 +3,7 @@
  * Copyright (C) 2016 Rahul Yadav <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <Pascal Georges> (GTK+ version)
+ *   Pascal Georges pascal.georges1@free.fr (GTK+ version)
  *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  * This program is free software; you can redistribute it and/or modify
@@ -23,7 +23,7 @@ import GCompris 1.0
 
 ActivityInfo {
     name: "guesscount/Guesscount.qml"
-    difficulty: 1
+    difficulty: 3
     icon: "guesscount/guesscount.svg"
     author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
     demo: true
