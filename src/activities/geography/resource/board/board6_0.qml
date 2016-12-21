@@ -151,8 +151,8 @@ QtObject {
         "y": "0.334"
     },
     {
-        "pixmapfile": "europe/czech.png",
-        "soundFile": "voices-$CA/$LOCALE/geography/czech.$CA",
+        "pixmapfile": "europe/czechia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/czechia.$CA",
         "toolTipText": qsTr("Czech Republic"),
         "x": "0.525",
         "y": "0.561"
