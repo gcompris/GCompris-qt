@@ -20,7 +20,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "color_mix_light/ColorMixLight.qml"
   difficulty: 4
-  icon: "color_mix_light/colormixlight.svg"
+  icon: "color_mix_light/color_mix_light.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Mixing colors of light")

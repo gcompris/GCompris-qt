@@ -20,7 +20,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "redraw_symmetrical/RedrawSymmetrical.qml"
   difficulty: 4
-  icon: "redraw_symmetrical/redraw_symmetry.svg"
+  icon: "redraw_symmetrical/redraw_symmetrical.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Mirror the given image")
