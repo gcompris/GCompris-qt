@@ -34,7 +34,7 @@ MouseArea {
     drag.target: tile
     onReleased: {
         parent = tile.Drag.target != null ? tile.Drag.target : root
-        if(parent==root)
+        if(parent==root && parent.children.length>2 && root.type=="operators")
             mouseArea.destroy()
         else
             tile.Drag.drop()
