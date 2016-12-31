@@ -71,11 +71,28 @@ function start(items_) {
 function stop() {
 }
 
+function initGuessText() {
+
+    items.guessedText.text="";
+    var c=0;
+    for(var i=65;i<=90;i++) {
+        c++;
+        items.guessedText.text=items.guessedText.text.concat(String.fromCharCode(i).toUpperCase());
+        if(c==8) {
+            c=0;
+            items.guessedText.text=items.guessedText.text.concat('\n');
+        } else {
+            items.guessedText.text=items.guessedText.text.concat('\t');
+        }
+    }
+}
+
 function initLevel() {
     items.bar.level = currentLevel + 1;
     var currentLesson = lessons[currentLevel];
     wordList = Lang.getLessonWords(dataset, currentLesson);
     Core.shuffle(wordList);
+    initGuessText();
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
@@ -135,6 +152,9 @@ function processKeyPress(text) {
     }
     // Add the character to the already typed characters
     alreadyTypedLetters.push(text);
+
+    // Remove the letter from the guessed Text
+    items.guessedText.text=items.guessedText.text.replace(text.toLocaleUpperCase(), " ");
 
     // Get all the indices of this letter in the word
     var indices = [];
@@ -200,6 +220,7 @@ function initSubLevel() {
     alreadyTypedLetters = new Array();
     currentWord = items.goodWord.translatedTxt;
     items.hidden.text = ""
+    initGuessText();
     for(var i = 0; i < currentWord.length ; ++ i) {
         if(currentWord[i] == " ") {
             items.hidden.text = items.hidden.text + " " + " "
