@@ -1,5 +1,5 @@
 
-/* GCompris - drawnumber_dataset.js
+/* GCompris - multiplicationtables_dataset.js
 * Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
 
 * This program is free software; you can redistribute it and/or modify
@@ -18,7 +18,8 @@
 
 function get() {
     return [
-    {
+
+                {
         "TableName": "2",
         "questions": ["2 X 1","2 X 2","2 X 3","2 X 4","2 X 5","2 X 6","2 X 7","2 X 8","2 X 9","2 X 10"],
         "answers": ["2","4","6","8","10","12","14","16","18","20"]
@@ -62,4 +63,6 @@ function get() {
                 }
     ]
 }
+
+
 
