@@ -18,9 +18,7 @@ import QtQuick 2.1
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
 import QtQuick.Layouts 1.1
-
 import "multiplication_tables.js" as Activity
-
 import QtGraphicalEffects 1.0
 import "../../core"
 import GCompris 1.0
@@ -33,9 +31,8 @@ Row {
    id: row1
 
    property string url: "qrc:/gcompris/src/activities/multiplication_tables/resource/"
-
-   property alias questionText: tabletext_1.text
-   property alias answerText: ans_1.text
+   property alias questionText: questionText.text
+   property alias answerText: answerText.text
    property alias questionImage: question_image.source
    property alias questionImage_visible: question_image.opacity
 
@@ -44,7 +41,7 @@ Row {
 
     // 10 questions
     GCText {
-      id: tabletext_1
+      id: questionText
       text:"Question"
       font.pointSize: 20
       font.bold: true
@@ -56,13 +53,13 @@ Row {
 
   TextField {
 
-      id: ans_1
+      id: answerText
       height: 35
       font.pixelSize: 20
 
 
       style: TextFieldStyle {
-        textColor: "red"
+        textColor: "#006060"
         background: Rectangle {
           radius: 5
           color: "orange"
@@ -82,8 +79,6 @@ Row {
        source: "qrc:/gcompris/src/activities/multiplication_tables/resource/wrong.svg"
        opacity: 0
      }
-
-
 
 }
 
