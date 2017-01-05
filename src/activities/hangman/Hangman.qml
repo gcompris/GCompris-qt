@@ -134,10 +134,25 @@ ActivityBase {
         GCText {
             id: guessedText
             fontSize: smallSize
-            color: "#4d4d4d"
-            width: parent.width * 0.9
+            color: "#FFFFFF"
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+            }
+            z: 12
+        }
+
+        Rectangle {
+            width: guessedText.width
+            height: guessedText.height
+            radius: 10
+            border.width: 1
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
             anchors {
                 horizontalCenter: parent.horizontalCenter
             }

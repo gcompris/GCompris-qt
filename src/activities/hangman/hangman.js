@@ -137,7 +137,7 @@ function processKeyPress(text) {
     alreadyTypedLetters.push(text);
 
     // add
-    items.guessedText.text=items.guessedText.text.concat(text, ", ");
+    items.guessedText.text=form()
 
     // Get all the indices of this letter in the word
     var indices = [];
@@ -212,6 +212,15 @@ function initSubLevel() {
             items.hidden.text = items.hidden.text + sp;
         }
     }
+}
+
+function form() {
+    alreadyTypedLetters.sort()
+    var str="Attempted: "
+    for(var i=0;i<alreadyTypedLetters.length;i++) {
+        str=str.concat(alreadyTypedLetters[i], ", ");
+    }
+    return qsTr(str)
 }
 
 function nextSubLevel() {
