@@ -76,7 +76,6 @@ function initLevel() {
     var currentLesson = lessons[currentLevel];
     wordList = Lang.getLessonWords(dataset, currentLesson);
     Core.shuffle(wordList);
-    items.guessedText.text=qsTr("Attempted: ");
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;

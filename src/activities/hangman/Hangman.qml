@@ -140,8 +140,6 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                right: parent.right
-                left: parent.left
             }
             z: 11
         }
