@@ -190,7 +190,11 @@ ActivityBase {
 		        id: wordImage
 		        smooth: true
                 visible: false
-                anchors.fill: parent
+                anchors {
+                    top: guessedText.bottom
+                    horizontalCenter: parent.horizontalCenter
+                    verticalCenter: parent.verticalCenter
+                }
                 property string nextSource
                 function changeSource(nextSource_) {
                     nextSource = nextSource_
