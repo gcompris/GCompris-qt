@@ -51,7 +51,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
 
-        source: Activity.baseUrl + "/background4.jpg";
+        source: Activity.baseUrl + "/background.svg";
         anchors.centerIn: parent
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
@@ -186,6 +186,7 @@ ActivityBase {
             property alias leftEngine: leftEngine
             property alias rightEngine: rightEngine
             property alias explosion: explosion
+            property alias rocketImage: rocketImage
             //property float rotate
 
             rotation: 0
@@ -237,43 +238,110 @@ ActivityBase {
                 id: rocketImage
 
                 sourceSize.width: 1024
-                source: Activity.baseUrl + "/rocket.svg";
+                source: Activity.baseUrl + "/rocket.svg"
                 anchors.centerIn: parent
                 anchors.fill: parent
                 z: 4
                 mipmap: true
+                
+                function show() {
+                    opacity = 100;
+                }
+                function hide() {
+                    opacity = 0;
+                }
+                
+                Behavior on opacity {
+                    NumberAnimation {
+                        duration: 500
+                        easing.type: Easing.InExpo
+                    }
+                }
+
             }
-
-            Image {
+            
+            ParticleSystem {
                 id: explosion
+                anchors.centerIn: rocketImage
+                width: rocket.width
+                z: 5
 
-//                width: parent.height
-//                height: width/785*621
-                width: height/621 * 785
-                height: 2*parent.height
-                sourceSize.width: 1024
-                source: Activity.baseUrl + "/explosion.svg";
-                anchors.bottom: parent.bottom
-                anchors.horizontalCenter: parent.horizontalCenter
-                scale: 0
-                z: 4
+                ImageParticle {
+                    groups: ["flame"]
+                    source: "qrc:///particleresources/glowdot.png"
+                    color: "#11ff400f"
+                    colorVariation: 0.1
+                }
+                Emitter {
+                    anchors.centerIn: parent
+                    group: "flame"
 
+                    emitRate: 75 // 75-150
+                    lifeSpan: 300 // 500 - 1000
+                    size: rocket.width * 3 // width*-0.5 - width
+                    endSize: 0
+                    sizeVariation: 5
+                    acceleration: PointDirection { x: 0 }
+                    velocity: PointDirection { x: 0 }
+                }
+
+                Timer {
+                    id: timer0
+                    interval: 600; running: false; repeat: false
+                    onTriggered: explosion.opacity = 0
+                }
+                
                 function show() {
                     visible = true;
+                    opacity = 100
                     scale = 1;
+                    timer0.running = true
                 }
                 function hide() {
                     visible = false;
                     scale = 0;
+                    timer0.running = false
                 }
-
-                Behavior on scale {
+                
+                Behavior on opacity {
                     NumberAnimation {
-                        duration: 150
+                        duration: 300
                         easing.type: Easing.InExpo
                     }
                 }
+                
             }
+
+//             Image {
+//                 id: explosion
+// 
+// //                width: parent.height
+// //                height: width/785*621
+//                 width: height/621 * 785
+//                 height: 2*parent.height
+//                 sourceSize.width: 1024
+//                 source: "qrc:///particleresources/glowdot.png"
+//                 anchors.bottom: parent.bottom
+//                 anchors.horizontalCenter: parent.horizontalCenter
+//                 scale: 0
+//                 z: 4
+// 
+//                 function show() {
+//                     visible = true;
+//                     scale = 1;
+//                 }
+//                 function hide() {
+//                     visible = false;
+//                     scale = 0;
+//                 }
+// 
+//                 Behavior on scale {
+//                     NumberAnimation {
+//                         duration: 150
+//                         easing.type: Easing.InExpo
+//                     }
+//                 }
+//             }
 
             Body {
                 id: rocketBody
@@ -400,7 +468,7 @@ ActivityBase {
             z: 1
             width: parent.width
 //            height: parent.height
-            source: Activity.baseUrl + "/land4.png";
+            source: Activity.baseUrl + "/ground.svg"
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
@@ -438,11 +506,11 @@ ActivityBase {
             id: landing
 
             readonly property string collisionName: "landing"
-            property int surfaceOffset: landing.height - 1
+            property int surfaceOffset: landing.height * 0.8
             property alias overlayColor: overlay.color
 
             z: 2
-            source: Activity.baseUrl + "/landing.png";
+            source: Activity.baseUrl + "/landing.svg";
             anchors.left: ground.left
             anchors.leftMargin: 270
             anchors.top: ground.top

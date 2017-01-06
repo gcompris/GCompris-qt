@@ -155,6 +155,7 @@ function initLevel() {
 
     // reset everything:
     items.rocket.explosion.hide();
+    items.rocket.rocketImage.show();
     // place rocket randomly:
     var max = items.background.width - items.accelerometer.width - items.landing.width - items.rocket.width;
     var min = 20;
@@ -302,6 +303,7 @@ function finishLevel(success)
         items.bonus.good("lion");
     else {
         items.rocket.explosion.show();
+        items.rocket.rocketImage.hide();
         items.bonus.bad("lion");
     }
 }
