@@ -63,10 +63,10 @@ function initLevel() {
     items.tuxArea.enabled = true;
     items.tuxArea.hoverEnabled = true;
     moveCount = -1;
-    items.numberLabel.text = "1";
+    items.numberLabel.text = numberBalls[items.mode - 1][0];
     numberOfBalls = 1;
 
-    items.bar.level = level;
+    items.bar.level = level - 1;
 
     // Hiding all visible balls
     for (var x = 0; x < items.answerBallsPlacement.columns; x++) {
@@ -180,7 +180,12 @@ function play(player, value) {
         }
     }
     if (player == 1 && gameMode == 1) {
-        machinePlay();
+        items.player2turn.start();
+        items.okArea.enabled = false;
+        items.trigTuxMove.start();
+    } else if (player == 2 && gameMode == 1) {
+        items.okArea.enabled = true;
+        items.player1turn.start();
     } else if (gameMode == 2) {
         items.isPlayer1Turn = !items.isPlayer1Turn;
         if (player == 1){
@@ -191,9 +196,16 @@ function play(player, value) {
     }
 }
 
+function delay(delayTime) {
+    /* Add delay to Tux moves */
+    timer = new Quick.Timer();
+    timer.interval = delayTime;
+    timer.repeat = false;
+    timer.start();
+}
+
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer1() {
-
     items.changeScalePlayer1.scale = 1.4
     items.changeScalePlayer2.scale = 1.0
     items.player1.state = "first"
@@ -203,7 +215,6 @@ function initiatePlayer1() {
 
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer2() {
-
     items.changeScalePlayer1.scale = 1.0
     items.changeScalePlayer2.scale = 1.4
     items.player1.state = "second"

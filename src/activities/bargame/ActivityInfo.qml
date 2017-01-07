@@ -24,10 +24,9 @@ ActivityInfo {
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   demo: true
   title: qsTr("Bargame (against Tux)")
-  description: ""
-  //intro: "put here in comment the text for the intro voice"
+  description: "Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole."
   goal: qsTr("Don't use the last ball")
-  prerequisite: qsTr("Brain")
+  prerequisite: qsTr("Ability to count")
   manual: qsTr("Place balls in the holes. You win if the computer has to place the last ball. If you want Tux to begin, just click on him")
   credit: ""
   section: "strategy"

@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: rootWindow
-        source: Activity.url + "school_bg" + bar.level + ".svg"
+        source: Activity.url + "school_bg" + (bar.level + 1) + ".svg"
         sourceSize.height: parent.height
         sourceSize.width: parent.width
         anchors.fill: parent
@@ -78,6 +78,7 @@ ActivityBase {
             property alias player2image: player2image
             property alias changeScalePlayer2: changeScalePlayer2
             property alias rotateTux: rotateTux
+            property alias trigTuxMove: trigTuxMove
 
             property int mode: 1
             property int player1Score: 0
@@ -92,10 +93,18 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
+        // Tux move delay
+        Timer {
+            id: trigTuxMove
+            repeat: false
+            interval: 1500
+            onTriggered: Activity.machinePlay()
+        }
+
         // Tux image
         Image {
             id: tux
-            source: Activity.url + "tux" + bar.level + ".svg"
+            source: Activity.url + "tux" + (bar.level + 1) + ".svg"
             height: rootWindow.height / 3.8
             width: rootWindow.width / 8
             y: rootWindow.height - rootWindow.height / 1.8
@@ -127,7 +136,7 @@ ActivityBase {
                 id: blueBalls
                 columns: Activity.sampleBallsNumber[items.mode - 1]
                 rows: 1
-                x: rootWindow.width / 2.2
+                x: rootWindow.width / 1.9
                 y: rootWindow.height / 1.7
                 Repeater {
                     model: blueBalls.columns
@@ -143,7 +152,7 @@ ActivityBase {
             // Lower green balls sample
             Grid {
                 id: greenBalls
-                x: rootWindow.width / 2.2
+                x: rootWindow.width / 1.9
                 y: rootWindow.height / 1.2
                 rows: 1
                 columns: Activity.sampleBallsNumber[items.mode - 1]
@@ -240,7 +249,7 @@ ActivityBase {
             id: playLabel
             x: rootWindow.width / 1.2
             y: rootWindow.height / 2.4
-            width: rootWindow.width / 20
+            width: rootWindow.width / 15
             height: width
             source: Activity.url + "bar_ok.svg"
             MouseArea {
@@ -254,7 +263,7 @@ ActivityBase {
                     var value = Activity.numberOfBalls
                     numberLabel.text = Activity.numberOfBalls = Activity.numberBalls[items.mode - 1][0];
                     if (gameMode == 1) {
-                    Activity.play(1, value);
+                        Activity.play(1, value);
                     } else {
                         Activity.play(((items.isPlayer1Turn) ? 1 : 2), value);
                     }
@@ -273,11 +282,19 @@ ActivityBase {
         // Number of balls to be placed
         Image {
             id: ballNumberPlate
-            x: rootWindow.width / 1.2
+            x: rootWindow.width / 1.15
             y: rootWindow.height / 1.2
             source: Activity.url + "enumerate_answer.svg"
-            width: rootWindow.width / 7
-            height: rootWindow.height / 8
+            width: rootWindow.width / 8
+            height: rootWindow.height / 9
+
+            anchors {
+                bottom: parent.width > parent.height ? bar.bottom : bar.top
+                bottomMargin: 10
+                right: rootWindow.right
+                rightMargin: 2 * ApplicationInfo.ratio
+            }
+
             MouseArea {
                 id: numberPlateArea
                 anchors.fill: parent
