@@ -23,24 +23,17 @@ import QtQuick 2.1
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
 import QtQuick.Layouts 1.1
-
 import "../../core"
-import "multiplication_tables.js"
-as Activity
-import "multiplicationtables_dataset.js"
-as Dataset
-
+import "multiplication_tables.js" as Activity
+import "multiplicationtables_dataset.js" as Dataset
 
 ActivityBase {
     id: activity
-
     property string url: "qrc:/gcompris/src/activities/multiplication_tables/resource/"
     property double startTime: 0
-    property int flag: 0
-    property
-    var dataset: Dataset
+    property bool startButtonClicked: false
+    property var dataset: Dataset
     property string mode: "multiplicationtables"
-
     onStart: focus = true
     onStop: {}
 
@@ -58,7 +51,6 @@ ActivityBase {
 
         // Add here the QML items you need to access in javascript
         QtObject {
-
             id: items
             property Item main: activity.main
             property alias background: background
@@ -70,34 +62,28 @@ ActivityBase {
             property alias score: score
             property alias questionGrid: questionGrid
             property alias repeater: repeater
-
         }
 
         onStart: {
             Activity.start(items, mode, dataset, url)
-
         }
         onStop: {
             Activity.stop()
         }
 
         Flow {
-
             id: questionGrid
             anchors.fill: parent
             anchors.bottom: bar.top
-            spacing: 50
-
+            spacing: bar.height * 0.4
             anchors {
                 left: background.left
                 right: background.rigth
-                margins: 60
+                margins: bar.height * 0.6
             }
-
             Repeater {
                 id: repeater
                 model: 10
-
                 Question {
                 }
             }
@@ -120,14 +106,14 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.right: parent.right
             anchors {
-                bottomMargin: 50
-                rightMargin: 120
+                bottomMargin: bar.height * 0.4
+                rightMargin: bar.height * 1.5
             }
 
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 40
+                    implicitWidth: bar.height * 0.9
+                    implicitHeight: bar.height * 0.3
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 4
@@ -143,18 +129,18 @@ ActivityBase {
             }
 
             onClicked: {
-                if (flag == 1) {
+                if (startButtonClicked == true) {
                     score.visible = true
                     var str1 = new Date().getTime() - startTime
-                    time.text = qsTr("Your time: %1 ms").arg(str1)
+                    var str2 = str1/1000
+                    time.text = qsTr("Your time: %1 seconds").arg(str2)
                     startTime = 0
-                    flag = 0
+                    startButtonClicked = false
                     start_button.text = qsTr("START AGAIN")
                     Activity.verifyAnswer()
                 }
             }
         }
-
 
         Button {
             id: start_button
@@ -162,14 +148,13 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.right: stop_button.left
             anchors {
-                bottomMargin: 50
-                rightMargin: 30
+                bottomMargin: bar.height * 0.4
+                rightMargin: bar.height * 0.4
             }
-
             style: ButtonStyle {
                 background: Rectangle {
-                    implicitWidth: 100
-                    implicitHeight: 40
+                    implicitWidth: bar.height * 0.9
+                    implicitHeight: bar.height * 0.3
                     border.width: control.activeFocus ? 2 : 1
                     border.color: "blue"
                     radius: 4
@@ -183,20 +168,16 @@ ActivityBase {
                     }
                 }
             }
-
-
             onClicked: {
-
-                if (startTime == 0 && flag == 0) {
+                if (startTime == 0 && startButtonClicked == false) {
                     Activity.resetvalue()
                     start_button.text = qsTr(" START ")
-                    time.text = qsTr(" Your timer started...")
+                    time.text = qsTr(" Your Timer Started...")
                     startTime = new Date().getTime()
-                    flag = 1
+                    startButtonClicked = true
                 }
             }
         }
-
 
         GCText {
             id: score
@@ -205,10 +186,9 @@ ActivityBase {
             font.bold: true
             anchors.bottom: time.top
             anchors.right: parent.right
-
             anchors {
-                bottomMargin: 15
-                rightMargin: 150
+                bottomMargin: bar.height * 0.09
+                rightMargin: bar.height * 1.6
             }
             Layout.alignment: Qt.AlignCenter
         }
@@ -221,7 +201,7 @@ ActivityBase {
             anchors.bottom: start_button.top
             anchors.right: parent.right
             anchors {
-                bottomMargin: 30
+                bottomMargin: bar.height * 0.3
                 rightMargin: 130
             }
             text: qsTr("--")
@@ -234,7 +214,6 @@ ActivityBase {
             content: Component {
                 Item {
                     height: column.height
-
                     Column {
                         id: column
                         spacing: 10
@@ -259,17 +238,13 @@ ActivityBase {
                     background.easyMode = (dataToSave["mode"] === "true");
                 }
             }
-
             onSaveData: {
                 dataToSave = {
                     "mode": "" + background.easyMode
                 }
             }
-
             onClose: home()
         }
-
-
 
         DialogHelp {
             id: dialogHelp
@@ -299,5 +274,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
 }

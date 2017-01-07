@@ -23,65 +23,45 @@ import QtGraphicalEffects 1.0
 import "../../core"
 import GCompris 1.0
 
-
-
-
-Row {
-
-   id: row1
-
+Flow {
+   id: questionItem
    property string url: "qrc:/gcompris/src/activities/multiplication_tables/resource/"
    property alias questionText: questionText.text
    property alias answerText: answerText.text
    property alias questionImage: question_image.source
    property alias questionImage_visible: question_image.opacity
 
-
-
-
-    // 10 questions
     GCText {
       id: questionText
-      text:"Question"
+      text:qsTr("Question")
       font.pointSize: 20
       font.bold: true
       color: "black"
-
     }
 
-
-
   TextField {
-
       id: answerText
       height: 35
       font.pixelSize: 20
-
-
       style: TextFieldStyle {
-        textColor: "#006060"
-        background: Rectangle {
-          radius: 5
-          color: "orange"
-          implicitWidth: 100
-          implicitHeight: 24
-          border.color: "#333"
-          border.width: 1
-        }
+      textColor: "#006060"
+      background: Rectangle {
+      radius: 5
+      color: "orange"
+      implicitWidth: bar.height * 0.9
+      implicitHeight: bar.height * 0.3
+      border.color: "#333"
+      border.width: 1
       }
-
+     }
     }
 
   Image {
        id: question_image
-       width: 70;height: 50
+       width: bar.height * 0.3
+       height: bar.height * 0.3
        fillMode: Image.PreserveAspectFit
        source: "qrc:/gcompris/src/activities/multiplication_tables/resource/wrong.svg"
        opacity: 0
      }
-
 }
-
-
-
-    

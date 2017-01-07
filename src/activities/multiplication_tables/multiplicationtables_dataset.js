@@ -16,7 +16,6 @@
 */
 function get() {
     return [
-
         {
             "TableName": "2",
             "questions": ["2 X 1", "2 X 2", "2 X 3", "2 X 4", "2 X 5", "2 X 6", "2 X 7", "2 X 8", "2 X 9", "2 X 10"],

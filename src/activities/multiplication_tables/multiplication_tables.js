@@ -24,7 +24,6 @@
     .import GCompris 1.0 as GCompris //for ApplicationInfo
     .import "qrc:/gcompris/src/core/core.js" as Core
 
-
 var currentLevel = 0
 var items
 var mode
@@ -36,9 +35,7 @@ var question = []
 var answer = []
 var score_cnt = 0
 
-
 function start(_items, _mode, _dataset, _url) {
-
     items = _items
     mode = _mode
     dataset = _dataset.get()
@@ -46,94 +43,55 @@ function start(_items, _mode, _dataset, _url) {
     numberOfLevel = dataset.length
     currentLevel = 0
     initLevel()
-
 }
-
 
 function stop() {}
 
 function initLevel() {
-
     items.bar.level = currentLevel + 1
     loadQuestions()
-
 }
 
-
 function loadQuestions() {
-
     var i
-
     question = dataset[currentLevel].questions
     answer = dataset[currentLevel].answers
     table = dataset[currentLevel].TableName
 
-
     for (i = 0; i < question.length; i++) {
-
         items.repeater.itemAt(i).questionText = qsTr("%1 = ").arg(question[i])
-
     }
-
 }
 
-
 function verifyAnswer() {
-
     var j
-
     for (j = 0; j < question.length; j++) {
-
         if (items.repeater.itemAt(j).answerText.toString() == answer[j]) {
-
             score_cnt = score_cnt + 1
             items.repeater.itemAt(j).questionImage = url + "right.svg"
             items.repeater.itemAt(j).questionImage_visible = 1
-
-
-        } else {
-
+        }
+        else {
             items.repeater.itemAt(j).questionImage_visible = 1
             items.repeater.itemAt(j).questionImage = url + "wrong.svg"
-
         }
-
     }
-
-
     items.score.text = qsTr("Your Score :-  %1").arg(score_cnt.toString())
-
 }
-
-
 
 function resetvalue() {
-
     var k
-
     for (k = 0; k < question.length; k++) {
-
-
-        items.repeater.itemAt(k).answerText = ""
+        items.repeater.itemAt(k).answerText = qsTr("")
         items.repeater.itemAt(k).questionImage_visible = 0
-
-
         score_cnt = 0
         items.score.visible = false
-
     }
-
     score_cnt = 0
     items.score.visible = false
-
 }
 
-
-
-
 function nextLevel() {
-
-
     if (numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
