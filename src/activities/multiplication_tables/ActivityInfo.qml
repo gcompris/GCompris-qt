@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,16 +19,14 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "multiplication_tables/Multiplication_tables.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "multiplication_tables/multiplication_tables.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
   demo: true
-  title: "Multiplication_tables activity"
-  description: ""
-  //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
-  manual: ""
+  title: qsTr("Multiplication_tables activity")
+  description: qsTr("Write the answer of the questions in the space provided,click start to begin & finish to end")
+  goal: qsTr("Help children to learn & memorise multiplication tables")
+  prerequisite: qsTr("basic mathematical concepts")
   credit: ""
   section: "fun"
   createdInVersion: 7000
