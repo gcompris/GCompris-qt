@@ -82,17 +82,20 @@ ActivityBase {
             id: containerModel
         }
 
+
         Grid {
             id: grid
             spacing: 5 * ApplicationInfo.ratio
             columns: items.columns
             rows: items.rows
+
             anchors {
                 left: background.left
                 right: background.rigth
                 top: background.top
                 margins: 10 * ApplicationInfo.ratio
             }
+
 
             Repeater {
                 id: cardRepeater

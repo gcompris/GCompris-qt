@@ -25,7 +25,7 @@ import QtQuick 2.0
 QtObject {
     property variant levels : [
         {
-            "instruction": qsTr("Alice wants to equally share 3 candies between her friends. They are 3: one girl and two boys. Can you help her? Place first the children in the center, then drag the candies to each of them."),
+            "instruction": qsTr("Alice wants to equally share 3 candies between 3 of her friends: one girl and two boys. Can you help her? First, place the children in the center, then drag the candies to each of them."),
             "totalBoys": 2,
             "totalGirls": 1,
             "totalCandies": 3,

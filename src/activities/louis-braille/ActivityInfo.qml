@@ -20,7 +20,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "louis-braille/LouisBraille.qml"
   difficulty: 4
-  icon: "louis-braille/resource/louis.png"
+  icon: "louis-braille/louis-braille.svg"
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
   demo: true
   title: qsTr("The History of Louis Braille")

@@ -1,0 +1,13 @@
+[
+    { "level": 1, "questions": "аеіоуы", "answers": "аеіоуы" },
+    { "level": 2, "questions": "аеіоуы", "answers": "аеіоуыцс" },
+    { "level": 3, "questions": "аеіоуы", "answers": "аеіоуыцкывхз" },
+    { "level": 4, "questions": "цкпсвхўз", "answers": "цкпсвхўз" },
+    { "level": 5, "questions": "bfglmnqt", "answers": "bfglmnqt" },
+    { "level": 6, "questions": "бдгчпнму", "answers": "бдгчпнму" },
+    { "level": 7, "questions": "ілтгўвае", "answers": "ілтгўвае" },
+    { "level": 8, "questions": "абвгдеёж", "answers": "абвгдеёж" },
+    { "level": 9, "questions": "зійклмно", "answers": "зійклмно" },
+    { "level": 10, "questions": "прстуўфхцч", "answers": "прстуўфхцч" },
+    { "level": 11, "questions": "шьэюязйўофжіыабвгдеё", "answers": "шьэюязйўофжіыабвгдеё" }
+]

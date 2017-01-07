@@ -24,7 +24,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "geo-country/GeoCountry.qml"
   difficulty: 2
-  icon: "geo-country/france_region.svg"
+  icon: "geo-country/geo-country.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
   title: qsTr("Locate the region")

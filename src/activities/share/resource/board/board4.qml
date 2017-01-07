@@ -25,7 +25,7 @@ import QtQuick 2.0
 QtObject {
     property variant levels : [
         {
-            "instruction": qsTr("Charles wants to share his 8 candies to one boy and two girls. Can he split the candies equally?"),
+            "instruction": qsTr("Charles wants to share his 8 candies with 3 of his friends: one boy and two girls. Can he split the candies equally?"),
             "totalBoys": 1,
             "totalGirls": 2,
             "totalCandies": 8,
@@ -35,7 +35,7 @@ QtObject {
             "placedInBoys": 0
         },
         {
-            "instruction": qsTr("For her birthday, Elizabeth has 12 candies to share with her friends. They are two girls and two boys. How should she split the candies to her friends?"),
+            "instruction": qsTr("For her birthday, Elizabeth has 12 candies to share with 4 of her friends: two girls and two boys. How should she split the candies to her friends?"),
             "totalBoys": 2,
             "totalGirls": 2,
             "totalCandies": 12,

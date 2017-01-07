@@ -20,7 +20,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "scalesboard_weight_avoirdupois/ScalesboardWeight.qml"
   difficulty: 4
-  icon: "scalesboard_weight_avoirdupois/scalesboard_weight.svg"
+  icon: "scalesboard_weight_avoirdupois/scalesboard_weight_avoirdupois.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Balance the scales properly")

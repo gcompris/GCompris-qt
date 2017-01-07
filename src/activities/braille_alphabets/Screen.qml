@@ -148,7 +148,7 @@ ActivityBase {
                             font.weight: Font.DemiBold
                             color: "#2a2a2a"
                             font.pointSize: NaN  // need to clear font.pointSize explicitly
-                            font.pixelSize: Math.max(parent.width * 0.5, 24)
+                            font.pixelSize: rect1.width * 0.5
                             anchors {
                                 top: rect1.bottom
                                 topMargin: 4 * ApplicationInfo.ratio
@@ -182,7 +182,7 @@ ActivityBase {
                     topMargin: 20 * ApplicationInfo.ratio
                 }
                 width: Math.min(background.width * 0.18, background.height * 0.2)
-                isLetter: items.isLetter
+                isLetter: true
                 onBrailleCharChanged: {
                     if(brailleChar === Activity.getCurrentLetter()) {
                         particles.burst(40)
