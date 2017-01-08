@@ -2,6 +2,7 @@ version: 1.0.{build}
 branches:
   only:
   - KDE/0.70
+  - 0.71
 skip_tags: true
 image: Visual Studio 2015
 configuration: Release
