@@ -683,6 +683,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            z: 21
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 Activity.initLevel();
