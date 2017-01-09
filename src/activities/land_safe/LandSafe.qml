@@ -100,6 +100,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias rocket: rocket
+            property alias explosion: explosion
             property alias world: physicsWorld
             property alias landing: landing
             property alias ground: ground
@@ -185,8 +186,21 @@ ActivityBase {
             property alias body: rocketBody
             property alias leftEngine: leftEngine
             property alias rightEngine: rightEngine
-            property alias explosion: explosion
-            property alias rocketImage: rocketImage
+            
+            function show() {
+                opacity = 100;
+            }
+            function hide() {
+                opacity = 0;
+            }
+            
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 500
+                    easing.type: Easing.InExpo
+                }
+            }
+            
             //property float rotate
 
             rotation: 0
@@ -243,105 +257,7 @@ ActivityBase {
                 anchors.fill: parent
                 z: 4
                 mipmap: true
-                
-                function show() {
-                    opacity = 100;
-                }
-                function hide() {
-                    opacity = 0;
-                }
-                
-                Behavior on opacity {
-                    NumberAnimation {
-                        duration: 500
-                        easing.type: Easing.InExpo
-                    }
-                }
-
             }
-            
-            ParticleSystem {
-                id: explosion
-                anchors.centerIn: rocketImage
-                width: rocket.width
-                z: 5
-
-                ImageParticle {
-                    groups: ["flame"]
-                    source: "qrc:///particleresources/glowdot.png"
-                    color: "#11ff400f"
-                    colorVariation: 0.1
-                }
-                Emitter {
-                    anchors.centerIn: parent
-                    group: "flame"
-
-                    emitRate: 75 // 75-150
-                    lifeSpan: 300 // 500 - 1000
-                    size: rocket.width * 3 // width*-0.5 - width
-                    endSize: 0
-                    sizeVariation: 5
-                    acceleration: PointDirection { x: 0 }
-                    velocity: PointDirection { x: 0 }
-                }
-
-                Timer {
-                    id: timer0
-                    interval: 600; running: false; repeat: false
-                    onTriggered: explosion.opacity = 0
-                }
-                
-                function show() {
-                    visible = true;
-                    opacity = 100
-                    scale = 1;
-                    timer0.running = true
-                }
-                function hide() {
-                    visible = false;
-                    scale = 0;
-                    timer0.running = false
-                }
-                
-                Behavior on opacity {
-                    NumberAnimation {
-                        duration: 300
-                        easing.type: Easing.InExpo
-                    }
-                }
-                
-            }
-
-//             Image {
-//                 id: explosion
-// 
-// //                width: parent.height
-// //                height: width/785*621
-//                 width: height/621 * 785
-//                 height: 2*parent.height
-//                 sourceSize.width: 1024
-//                 source: "qrc:///particleresources/glowdot.png"
-//                 anchors.bottom: parent.bottom
-//                 anchors.horizontalCenter: parent.horizontalCenter
-//                 scale: 0
-//                 z: 4
-// 
-//                 function show() {
-//                     visible = true;
-//                     scale = 1;
-//                 }
-//                 function hide() {
-//                     visible = false;
-//                     scale = 0;
-//                 }
-// 
-//                 Behavior on scale {
-//                     NumberAnimation {
-//                         duration: 150
-//                         easing.type: Easing.InExpo
-//                     }
-//                 }
-//             }
 
             Body {
                 id: rocketBody
@@ -460,6 +376,57 @@ ActivityBase {
                 }
             }
 
+        }
+        
+        ParticleSystem {
+            id: explosion
+            anchors.centerIn: rocket
+            width: rocket.width
+            z: 5
+
+            ImageParticle {
+                groups: ["flame"]
+                source: "qrc:///particleresources/glowdot.png"
+                color: "#11ff400f"
+                colorVariation: 0.1
+            }
+            Emitter {
+                anchors.centerIn: parent
+                group: "flame"
+                emitRate: 75 // 75-150
+                lifeSpan: 300 // 500 - 1000
+                size: rocket.width * 3 // width*-0.5 - width
+                endSize: 0
+                sizeVariation: 5
+                acceleration: PointDirection { x: 0 }
+                velocity: PointDirection { x: 0 }
+            }
+
+            Timer {
+                id: timer0
+                interval: 600; running: false; repeat: false
+                onTriggered: explosion.opacity = 0
+            }
+                
+            function show() {
+                visible = true;
+                opacity = 100
+                scale = 1;
+                timer0.running = true
+            }
+            function hide() {
+                visible = false;
+                scale = 0;
+                timer0.running = false
+            }
+                
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 300
+                    easing.type: Easing.InExpo
+                }
+            }
+                
         }
 
         Image {

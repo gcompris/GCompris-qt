@@ -154,8 +154,8 @@ function initLevel() {
     currentFuel = (maxFuel == -1 ? 1 : maxFuel); // -1 means unlimited fuel
 
     // reset everything:
-    items.rocket.explosion.hide();
-    items.rocket.rocketImage.show();
+    items.explosion.hide();
+    items.rocket.show();
     // place rocket randomly:
     var max = items.background.width - items.accelerometer.width - items.landing.width - items.rocket.width;
     var min = 20;
@@ -302,8 +302,8 @@ function finishLevel(success)
     if (success)
         items.bonus.good("lion");
     else {
-        items.rocket.explosion.show();
-        items.rocket.rocketImage.hide();
+        items.explosion.show();
+        items.rocket.hide();
         items.bonus.bad("lion");
     }
 }
