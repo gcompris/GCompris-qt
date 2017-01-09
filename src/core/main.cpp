@@ -179,17 +179,18 @@ int main(int argc, char *argv[])
 
 #if defined(Q_OS_WIN)
     if(parser.isSet(clWithD11)) {
-        qsetenv("QT_ANGLE_PLATFORM", "d3d11");
+        qputenv("QT_ANGLE_PLATFORM", "d3d11");
         qDebug() << "trying to use d3d11";
     }
     else if(parser.isSet(clWithD9)) {
-        qsetenv("QT_ANGLE_PLATFORM", "d3d9");
+        qputenv("QT_ANGLE_PLATFORM", "d3d9");
         qDebug() << "trying to use d3d9";
     }
     else if(parser.isSet(clWithWarp)) {
-        qsetenv("QT_ANGLE_PLATFORM", "warp");
+        qputenv("QT_ANGLE_PLATFORM", "warp");
         qDebug() << "trying to use warp";
     }
+    qputenv("QT_LOGGING_RULES", "qt.qpa.gl=true");
 #endif
 
     ApplicationInfo::init();
