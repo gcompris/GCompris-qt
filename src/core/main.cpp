@@ -164,8 +164,33 @@ int main(int argc, char *argv[])
     QCommandLineOption clWithKioskMode(QStringList() << "enable-kioskmode",
                                        QObject::tr("Enable the kiosk mode."));
     parser.addOption(clWithKioskMode);
+#if defined(Q_OS_WIN)
+    QCommandLineOption clWithD11(QStringList() << "enable-d3d11",
+                                       QObject::tr("Enable the d3d11."));
+    parser.addOption(clWithD11);
+    QCommandLineOption clWithD9(QStringList() << "enable-d3d9",
+                                       QObject::tr("Enable the d3d9."));
+    parser.addOption(clWithD9);
+    QCommandLineOption clWithWarp(QStringList() << "enable-warp",
+                                       QObject::tr("Enable the warp."));
+    parser.addOption(clWithWarp);
+#endif
     parser.process(app);
 
+#if defined(Q_OS_WIN)
+    if(parser.isSet(clWithD11)) {
+        qsetenv("QT_ANGLE_PLATFORM", "d3d11");
+        qDebug() << "trying to use d3d11";
+    }
+    else if(parser.isSet(clWithD9)) {
+        qsetenv("QT_ANGLE_PLATFORM", "d3d9");
+        qDebug() << "trying to use d3d9";
+    }
+    else if(parser.isSet(clWithWarp)) {
+        qsetenv("QT_ANGLE_PLATFORM", "warp");
+        qDebug() << "trying to use warp";
+    }
+#endif
 
     ApplicationInfo::init();
 	ActivityInfoTree::init();
