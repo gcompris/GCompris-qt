@@ -482,9 +482,8 @@ ActivityBase {
             anchors.leftMargin: 270
             anchors.top: ground.top
             anchors.topMargin: ground.surfaceOffset - height
-            sourceSize.width: 1024
             width: 66 * items.scale * items.zoom
-            height: width / 116 * 34
+            height: width / 7 * 2
 
             Body {
                 id: landingBody
