@@ -110,7 +110,6 @@ int main(int argc, char *argv[])
 
 #if defined(Q_OS_WIN)
     qputenv("QT_LOGGING_RULES", "qt.qpa.gl=true");
-    QCoreApplication::setAttribute(Qt::AA_UseOpenGLES);
 #endif
 
     QApplication app(argc, argv);
