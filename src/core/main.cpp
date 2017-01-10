@@ -109,6 +109,7 @@ int main(int argc, char *argv[])
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
 #if defined(Q_OS_WIN)
+    QApplication::setAttribute(Qt::AA_UseSoftwareOpenGL);
     qputenv("QT_LOGGING_RULES", "qt.qpa.gl=true");
 #endif
 
