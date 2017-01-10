@@ -14,13 +14,6 @@ environment:
   CMAKE_GENERATOR: Visual Studio 12
   QT5: C:\Qt\5.5\msvc2013
 
-
-before_build:
-  # Workaround for CMake not wanting sh.exe on PATH for MinGW
-  - set PATH=%PATH:C:\Program Files (x86)\Git\usr\bin;=%
-  - set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
-  - set PATH=C:\MinGW\bin;%QT5%\bin;%PATH%
-
 install:
 
 - cmd: >-
@@ -32,7 +25,11 @@ install:
 
     if "%platform%"=="x64" set QT5=C:\Qt\5.5\msvc2013_64
 
-    cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
+    set PATH=%PATH:C:\Program Files (x86)\Git\usr\bin;=%
+    set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
+    set PATH=C:\MinGW\bin;%QT5%\bin;%PATH%
+
+  cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
 
     cmake --build build --config RelWithDebInfo --target DlAndInstallBundledConvertedOggs
 
