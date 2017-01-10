@@ -16,9 +16,9 @@ environment:
 install:
 
 - cmd: >-
-    if "%platform%"=="x32" set CMAKE_GENERATOR=MinGW Makefiles
+    if "%platform%"=="x86" set CMAKE_GENERATOR=MinGW Makefiles
 
-    if "%platform%"=="x32" set QT5=C:\Qt\5.5\mingw492_32
+    if "%platform%"=="x86" set QT5=C:\Qt\5.5\mingw492_32
 
     if "%platform%"=="x64" set CMAKE_GENERATOR=Visual Studio 12 2013 Win64
 
