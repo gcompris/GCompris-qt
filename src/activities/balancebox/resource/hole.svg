@@ -14,7 +14,7 @@
    height="101.18114"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="hole.svg">
   <defs
      id="defs4">
@@ -28,17 +28,6 @@
          style="stop-color:#444444;stop-opacity:1;"
          offset="1"
          id="stop4483" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient3755">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop3757" />
-      <stop
-         style="stop-color:#222222;stop-opacity:1;"
-         offset="1"
-         id="stop3759" />
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
@@ -96,7 +85,7 @@
        sodipodi:cy="188.79076"
        sodipodi:rx="72.85714"
        sodipodi:ry="42.142857"
-       d="m 337.14285,188.79076 c 0,23.27485 -32.61926,42.14285 -72.85714,42.14285 -40.23789,0 -72.85714,-18.868 -72.85714,-42.14285 0,-23.27486 32.61925,-42.14286 72.85714,-42.14286 40.23788,0 72.85714,18.868 72.85714,42.14286 z"
+       d="m 337.14285,188.79076 a 72.85714,42.142857 0 0 1 -72.85714,42.14285 72.85714,42.142857 0 0 1 -72.85714,-42.14285 72.85714,42.142857 0 0 1 72.85714,-42.14286 72.85714,42.142857 0 0 1 72.85714,42.14286 z"
        transform="matrix(1,0,0,1.1864407,0,-27.341134)" />
   </g>
 </svg>

@@ -41,17 +41,6 @@
        y2="124.34656"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-9.287072,0)" />
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath4800-5">
-      <ellipse
-         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-         id="ellipse4802-3"
-         cx="218.0182"
-         cy="115.93236"
-         rx="17.333061"
-         ry="13.197669" />
-    </clipPath>
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4805"
@@ -71,16 +60,6 @@
          id="path5071"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="cscc" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath5223-1">
-      <path
-         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 134.7095,309.64754 c 9.32394,-1.45503 -8.08547,-136.30905 -11.9285,-136.38235 -44.180446,-0.84264 -22.50935,-3.60349 -0.82637,-5.5776 6.16788,-0.56155 -3.21765,-5.61974 -12.28251,-5.02056 -8.42183,0.55668 -19.276996,3.93754 -17.146267,9.4361 2.062875,5.32346 3.118683,2.20598 5.731157,6.065 3.11061,4.59486 18.12077,144.79354 36.45249,131.47941 z"
-         id="path5225-2"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="csssssc" />
     </clipPath>
   </defs>
   <sodipodi:namedview
@@ -110,7 +89,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

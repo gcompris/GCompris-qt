@@ -93,7 +93,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2008-05-26T11:40:39</dc:date>
         <dc:description />
         <dc:source>https://openclipart.org/detail/16982/cross-by-jean_victor_balin</dc:source>

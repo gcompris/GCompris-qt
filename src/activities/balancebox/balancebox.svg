@@ -16,20 +16,9 @@
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
    version="1.0"
-   sodipodi:docname="ballcatch.svg">
+   sodipodi:docname="balancebox.svg">
   <defs
      id="defs31202">
-    <linearGradient
-       id="linearGradient34913">
-      <stop
-         style="stop-color:black;stop-opacity:1;"
-         offset="0"
-         id="stop34915" />
-      <stop
-         style="stop-color:black;stop-opacity:0;"
-         offset="1"
-         id="stop34917" />
-    </linearGradient>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="168.98915 : 49.257431 : 1"

@@ -71,23 +71,6 @@
        id="linearGradient4503-2"
        xlink:href="#linearGradient4497"
        inkscape:collect="always" />
-    <linearGradient
-       y2="440.09"
-       x2="484.17999"
-       gradientTransform="matrix(1,0,0,1.1495,0,-225.41)"
-       y1="222.09"
-       gradientUnits="userSpaceOnUse"
-       x1="480"
-       id="skyG">
-      <stop
-         offset="0"
-         id="stop4428"
-         style="stop-color:#3cc1f1;stop-opacity:1" />
-      <stop
-         offset="1"
-         id="stop4430"
-         style="stop-color:#85d8f6;stop-opacity:1" />
-    </linearGradient>
   </defs>
   <metadata
      id="metadata7">
@@ -97,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

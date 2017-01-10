@@ -13,8 +13,8 @@
    height="87.38266"
    id="svg5022"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 11">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="reservoir2.svg">
   <defs
      id="defs5024" />
   <sodipodi:namedview
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

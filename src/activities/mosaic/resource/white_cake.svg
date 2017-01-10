@@ -11,7 +11,7 @@
    id="svg1"
    viewBox="0 0 100 100"
    version="1.0"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
    sodipodi:docname="white_cake.svg">
@@ -48,33 +48,6 @@
          stop-color="#f5ffff"
          offset="1" />
     </linearGradient>
-    <linearGradient
-       id="linearGradient5562"
-       x1="57.030998"
-       xlink:href="#linearGradient5556"
-       gradientUnits="userSpaceOnUse"
-       y1="30.208"
-       gradientTransform="matrix(0.81587,0,0,0.81587,0.55359,-29.4691)"
-       x2="57.812"
-       y2="53.527" />
-    <linearGradient
-       id="linearGradient5564"
-       x1="57.458"
-       xlink:href="#linearGradient5556"
-       gradientUnits="userSpaceOnUse"
-       y1="35.799"
-       gradientTransform="matrix(0.81587,0,0,0.81587,0.55359,-29.4691)"
-       x2="83.554001"
-       y2="49.080002" />
-    <linearGradient
-       id="linearGradient5566"
-       x1="86.349998"
-       xlink:href="#linearGradient5556"
-       gradientUnits="userSpaceOnUse"
-       y1="69.851997"
-       gradientTransform="matrix(0.81587,0,0,0.81587,0.55359,-29.4691)"
-       x2="131.7"
-       y2="39.904999" />
     <linearGradient
        id="linearGradient5574"
        x1="26.042"

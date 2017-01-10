@@ -16,7 +16,7 @@
    id="svg7313"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="pink_diamond.svg">
+   sodipodi:docname="magenta_diamond.svg">
   <defs
      id="defs7315">
     <radialGradient
@@ -88,7 +88,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

@@ -5,13 +5,12 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg4341"
    viewBox="0 0 18.137782 18.435295"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
    sodipodi:docname="greenpoint.svg">
@@ -41,35 +40,7 @@
      inkscape:current-layer="layer1-6"
      borderlayer="true" />
   <defs
-     id="defs4343">
-    <radialGradient
-       id="radialGradient4481-8"
-       gradientUnits="userSpaceOnUse"
-       cy="2.3350999"
-       cx="12.5"
-       gradientTransform="matrix(0.99167,0.0041626,-0.0041976,0.99999,0.11387,-0.052012)"
-       r="9.9624996">
-      <stop
-         id="stop3773-2-1"
-         stop-color="#fff"
-         offset="0"
-         style="stop-color:#ffffff;stop-opacity:1;" />
-      <stop
-         id="stop3775-4-5"
-         stop-color="#009200"
-         offset="1"
-         style="stop-color:#00ff00;stop-opacity:1;" />
-    </radialGradient>
-    <radialGradient
-       r="9.9624996"
-       cy="2.3350999"
-       cx="12.5"
-       gradientTransform="matrix(0.84375364,0.69785186,-0.70370683,0.85083259,10.759969,1008.7592)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient3004"
-       xlink:href="#radialGradient4481-8"
-       inkscape:collect="always" />
-  </defs>
+     id="defs4343" />
   <g
      id="layer1"
      transform="translate(-126.09479,-661.46043)">
@@ -91,7 +62,7 @@
          sodipodi:cy="8.7607336"
          sodipodi:rx="8.6342859"
          sodipodi:ry="8.6342859"
-         d="m 17.337924,8.7607336 c 0,4.7685844 -3.865701,8.6342864 -8.6342859,8.6342864 -4.7685845,0 -8.63428595,-3.865702 -8.63428595,-8.6342864 0,-4.7685844 3.86570145,-8.63428592 8.63428595,-8.63428592 4.7685849,0 8.6342859,3.86570152 8.6342859,8.63428592 z"
+         d="M 17.337924,8.7607336 A 8.6342859,8.6342859 0 0 1 8.7036381,17.39502 8.6342859,8.6342859 0 0 1 0.06935215,8.7607336 8.6342859,8.6342859 0 0 1 8.7036381,0.12644768 8.6342859,8.6342859 0 0 1 17.337924,8.7607336 Z"
          transform="matrix(-1.161834,0.03613142,0.03539102,1.138026,23.470545,1016.9995)" />
     </g>
   </g>

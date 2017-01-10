@@ -19,28 +19,6 @@
   <defs
      id="defs5122">
     <linearGradient
-       id="linearGradient6230-2-4">
-      <stop
-         style="stop-color:#a99d9d;stop-opacity:1;"
-         offset="0"
-         id="stop6232-9-3" />
-      <stop
-         style="stop-color:#fdf7f7;stop-opacity:1;"
-         offset="1"
-         id="stop6234-6-4" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient5068">
-      <stop
-         style="stop-color:#a99d9d;stop-opacity:1;"
-         offset="0"
-         id="stop5070" />
-      <stop
-         style="stop-color:#fdf7f7;stop-opacity:1;"
-         offset="1"
-         id="stop5072" />
-    </linearGradient>
-    <linearGradient
        id="linearGradient6230-0-2-1">
       <stop
          style="stop-color:#a99d9d;stop-opacity:1;"
@@ -62,39 +40,6 @@
        fx="739.44031"
        fy="117.14813"
        r="2.7335591" />
-    <linearGradient
-       id="linearGradient5079">
-      <stop
-         style="stop-color:#a99d9d;stop-opacity:1;"
-         offset="0"
-         id="stop5081" />
-      <stop
-         style="stop-color:#fdf7f7;stop-opacity:1;"
-         offset="1"
-         id="stop5083" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient6230-8-4-6">
-      <stop
-         style="stop-color:#a99d9d;stop-opacity:1;"
-         offset="0"
-         id="stop6232-2-8-0" />
-      <stop
-         style="stop-color:#fdf7f7;stop-opacity:1;"
-         offset="1"
-         id="stop6234-06-3-9" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient5090">
-      <stop
-         style="stop-color:#a99d9d;stop-opacity:1;"
-         offset="0"
-         id="stop5092" />
-      <stop
-         style="stop-color:#fdf7f7;stop-opacity:1;"
-         offset="1"
-         id="stop5094" />
-    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -147,7 +92,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

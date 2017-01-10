@@ -12,7 +12,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg3039"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="800"
    height="519"
    sodipodi:docname="cave.svg">
@@ -54,26 +54,6 @@
          id="stop3292" />
     </linearGradient>
     <linearGradient
-       id="linearGradient3049">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop3051" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop3053" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3049"
-       id="linearGradient3055"
-       x1="0"
-       y1="259.5"
-       x2="800"
-       y2="259.5"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3288"
        id="linearGradient3294"
@@ -82,55 +62,6 @@
        x2="857.11078"
        y2="269.64331"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3738"
-       id="linearGradient3744"
-       x1="691.43646"
-       y1="268.79803"
-       x2="850.34851"
-       y2="267.95276"
-       gradientUnits="userSpaceOnUse" />
-    <filter
-       id="filter4909"
-       inkscape:label="Invert"
-       x="0"
-       y="0"
-       width="1"
-       height="1"
-       inkscape:menu="Color"
-       inkscape:menu-tooltip="Invert colors"
-       color-interpolation-filters="sRGB">
-      <feColorMatrix
-         id="feColorMatrix4911"
-         type="saturate"
-         values="1"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         id="feColorMatrix4913"
-         in="fbSourceGraphic"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
-    </filter>
-    <filter
-       id="filter3004"
-       inkscape:label="Invert"
-       x="0"
-       y="0"
-       width="1"
-       height="1"
-       inkscape:menu="Color"
-       inkscape:menu-tooltip="Invert colors"
-       color-interpolation-filters="sRGB">
-      <feColorMatrix
-         id="feColorMatrix3006"
-         type="saturate"
-         values="1"
-         result="fbSourceGraphic" />
-      <feColorMatrix
-         id="feColorMatrix3008"
-         in="fbSourceGraphic"
-         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 " />
-    </filter>
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3738"

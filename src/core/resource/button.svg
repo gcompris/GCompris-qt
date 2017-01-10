@@ -32,27 +32,6 @@
     </linearGradient>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient2806"
-       id="linearGradient3179"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.122817,0,0,0.122817,678.77995,189.36269)"
-       x1="274.81769"
-       y1="284.70993"
-       x2="324.22366"
-       y2="480.46399" />
-    <linearGradient
-       id="linearGradient2806">
-      <stop
-         style="stop-color:white;stop-opacity:1;"
-         offset="0"
-         id="stop2808" />
-      <stop
-         style="stop-color:white;stop-opacity:0;"
-         offset="1"
-         id="stop2810" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
        xlink:href="#linearGradient4139"
        id="linearGradient4145"
        x1="689.05939"
@@ -91,7 +70,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

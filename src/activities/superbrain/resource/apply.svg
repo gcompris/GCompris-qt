@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="37.03347"
@@ -17,60 +16,7 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="apply.svg">
   <defs
-     id="defs4193">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2806"
-       id="linearGradient3179"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.122817,0,0,0.122817,678.77995,189.36269)"
-       x1="274.81769"
-       y1="284.70993"
-       x2="324.22366"
-       y2="480.46399" />
-    <linearGradient
-       id="linearGradient2806">
-      <stop
-         style="stop-color:white;stop-opacity:1;"
-         offset="0"
-         id="stop2808" />
-      <stop
-         style="stop-color:white;stop-opacity:0;"
-         offset="1"
-         id="stop2810" />
-    </linearGradient>
-    <linearGradient
-       y2="480.46399"
-       x2="324.22366"
-       y1="284.70993"
-       x1="274.81769"
-       gradientTransform="matrix(0.122817,0,0,0.122817,678.77995,189.36269)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient4189"
-       xlink:href="#linearGradient2806"
-       inkscape:collect="always" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient2806-3"
-       id="linearGradient2490"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.122805,0,0,0.122805,678.81385,294.86499)"
-       x1="274.81769"
-       y1="284.70993"
-       x2="324.22366"
-       y2="480.46399" />
-    <linearGradient
-       id="linearGradient2806-3">
-      <stop
-         style="stop-color:white;stop-opacity:1;"
-         offset="0"
-         id="stop2808-2" />
-      <stop
-         style="stop-color:white;stop-opacity:0;"
-         offset="1"
-         id="stop2810-1" />
-    </linearGradient>
-  </defs>
+     id="defs4193" />
   <sodipodi:namedview
      id="base"
      pagecolor="#1d1d1d"
@@ -101,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

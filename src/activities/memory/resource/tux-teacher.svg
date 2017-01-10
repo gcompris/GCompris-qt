@@ -10,8 +10,8 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="tux_teacher.svg"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="tux-teacher.svg"
    height="791.97363"
    width="659.45868"
    sodipodi:version="0.32"
@@ -20,126 +20,6 @@
    version="1.1">
   <defs
      id="defs674">
-    <linearGradient
-       y2="674.99536"
-       x2="423.75494"
-       y1="650.30011"
-       x1="422.50491"
-       gradientTransform="scale(1.375811,0.726844)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient16883"
-       xlink:href="#linearGradient830"
-       inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient830">
-      <stop
-         id="stop831"
-         offset="0.0000000"
-         style="stop-color:#ffffff;stop-opacity:1.0000000;" />
-      <stop
-         id="stop832"
-         offset="1.0000000"
-         style="stop-color:#ffffff;stop-opacity:0.0000000;" />
-    </linearGradient>
-    <linearGradient
-       y2="674.99536"
-       x2="423.75494"
-       y1="650.30011"
-       x1="422.50491"
-       gradientTransform="matrix(1.585775,0,0,0.405145,-715.0217,-148.662)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient16881"
-       xlink:href="#linearGradient830"
-       inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient2250">
-      <stop
-         id="stop2251"
-         offset="0.0000000"
-         style="stop-color:#62cb00;stop-opacity:1.0000000;" />
-      <stop
-         id="stop2252"
-         offset="1"
-         style="stop-color:#fff;stop-opacity:1;" />
-    </linearGradient>
-    <linearGradient
-       spreadMethod="repeat"
-       gradientUnits="objectBoundingBox"
-       y2="0.4609375"
-       x2="1.1666682"
-       y1="0.4609375"
-       x1="1.2222271"
-       id="linearGradient654"
-       xlink:href="#linearGradient650" />
-    <linearGradient
-       spreadMethod="repeat"
-       gradientUnits="objectBoundingBox"
-       y2="0.5390625"
-       x2="1.166669"
-       y1="0.53125"
-       x1="1.0000055"
-       id="linearGradient653"
-       xlink:href="#linearGradient650" />
-    <linearGradient
-       id="linearGradient650">
-      <stop
-         id="stop651"
-         offset="0"
-         style="stop-color:#000;stop-opacity:1;" />
-      <stop
-         id="stop652"
-         offset="1"
-         style="stop-color:#fff;stop-opacity:1;" />
-    </linearGradient>
-    <linearGradient
-       spreadMethod="repeat"
-       gradientUnits="objectBoundingBox"
-       y2="0.4609375"
-       x2="1.1666682"
-       y1="0.4609375"
-       x1="1.2222271"
-       id="linearGradient3007"
-       xlink:href="#linearGradient650" />
-    <linearGradient
-       spreadMethod="repeat"
-       gradientUnits="objectBoundingBox"
-       y2="0.5390625"
-       x2="1.166669"
-       y1="0.53125"
-       x1="1.0000055"
-       id="linearGradient3006"
-       xlink:href="#linearGradient650" />
-    <linearGradient
-       id="linearGradient3003">
-      <stop
-         id="stop3004"
-         offset="0"
-         style="stop-color:#000;stop-opacity:1;" />
-      <stop
-         id="stop3005"
-         offset="1"
-         style="stop-color:#fff;stop-opacity:1;" />
-    </linearGradient>
-    <linearGradient
-       y2="674.99536"
-       x2="423.75494"
-       y1="650.30011"
-       x1="422.50491"
-       gradientTransform="matrix(1.585775,0,0,0.405145,-715.0217,-148.662)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient17137"
-       xlink:href="#linearGradient830"
-       inkscape:collect="always" />
-    <linearGradient
-       y2="674.99536"
-       x2="423.75494"
-       y1="650.30011"
-       x1="422.50491"
-       gradientTransform="scale(1.375811,0.726844)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient17139"
-       xlink:href="#linearGradient830"
-       inkscape:collect="always" />
     <linearGradient
        gradientUnits="userSpaceOnUse"
        gradientTransform="scale(0.936995,1.067241)"

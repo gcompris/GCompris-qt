@@ -5,16 +5,15 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg6431"
    viewBox="0 0 34.416832 24.71629"
    version="1.0"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
-   sodipodi:docname="brush.svgz">
+   sodipodi:docname="brush.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -41,131 +40,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0" />
   <defs
-     id="defs3">
-    <linearGradient
-       id="linearGradient12398">
-      <stop
-         id="stop12400"
-         stop-color="#f0f0f0"
-         offset="0" />
-      <stop
-         id="stop12402"
-         stop-color="#c8c8c8"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient8414">
-      <stop
-         id="stop8416"
-         stop-color="#fff"
-         offset="0" />
-      <stop
-         id="stop8418"
-         stop-color="#fff"
-         stop-opacity="0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4190"
-       y2="38.905998"
-       xlink:href="#linearGradient12398"
-       gradientUnits="userSpaceOnUse"
-       x2="143.64999"
-       y1="73.655998"
-       x1="141.60001" />
-    <linearGradient
-       id="linearGradient4205"
-       y2="356.22"
-       gradientUnits="userSpaceOnUse"
-       x2="142.08"
-       gradientTransform="translate(133.53,-137.52)"
-       y1="378.75"
-       x1="130.14">
-      <stop
-         id="stop8446"
-         stop-color="#e5e5e5"
-         stop-opacity="0"
-         offset="0" />
-      <stop
-         id="stop8448"
-         stop-color="#4a4a4a"
-         stop-opacity=".56842"
-         offset=".5" />
-      <stop
-         id="stop8450"
-         stop-color="#b8b8b8"
-         stop-opacity="0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4208"
-       y2="39.810001"
-       xlink:href="#linearGradient8414"
-       gradientUnits="userSpaceOnUse"
-       x2="-106.25"
-       gradientTransform="matrix(0.82457,0,0,0.95225,-18.827,169.57)"
-       y1="38.985001"
-       x1="-96.900002" />
-    <linearGradient
-       id="linearGradient4211"
-       y2="284.64001"
-       xlink:href="#linearGradient12398"
-       spreadMethod="repeat"
-       gradientUnits="userSpaceOnUse"
-       x2="353.17001"
-       gradientTransform="matrix(0.80037,0,0,0.82926,3.1209,-4.34)"
-       y1="287.54999"
-       x1="353.17001" />
-    <linearGradient
-       id="linearGradient4214"
-       y2="371.23001"
-       xlink:href="#linearGradient12398"
-       gradientUnits="userSpaceOnUse"
-       x2="99.469002"
-       gradientTransform="matrix(1.7486,0,0,1.1547,-282.46,-195.94)"
-       y1="370.92999"
-       x1="104.03" />
-    <linearGradient
-       id="linearGradient4217"
-       y2="92.377998"
-       xlink:href="#linearGradient8414"
-       gradientUnits="userSpaceOnUse"
-       x2="149.10001"
-       gradientTransform="matrix(0.99685,0,0,1,0.31499,167.58)"
-       y1="39.280998"
-       x1="150.81" />
-    <linearGradient
-       id="linearGradient4220"
-       y2="393.82001"
-       gradientUnits="userSpaceOnUse"
-       x2="147"
-       gradientTransform="translate(133.53,-137.52)"
-       y1="375.92999"
-       x1="138.39999">
-      <stop
-         id="stop3406"
-         stop-color="#e5e5e5"
-         offset="0" />
-      <stop
-         id="stop8432"
-         stop-color="#4a4a4a"
-         offset=".5" />
-      <stop
-         id="stop3408"
-         stop-color="#b8b8b8"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4224"
-       y2="323.45001"
-       xlink:href="#linearGradient12398"
-       spreadMethod="reflect"
-       gradientUnits="userSpaceOnUse"
-       x2="126.66"
-       gradientTransform="matrix(0.67577,0,0,1.0025,38.717,-56.067)"
-       y1="294.98999"
-       x1="125.67" />
-  </defs>
+     id="defs3" />
   <metadata
      id="metadata34">
     <rdf:RDF>

@@ -14,21 +14,10 @@
    height="534.28461"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="house2.svg">
   <defs
      id="defs4">
-    <linearGradient
-       id="linearGradient3928">
-      <stop
-         id="stop3930"
-         offset="0"
-         style="stop-color:#009737;stop-opacity:1;" />
-      <stop
-         id="stop3932"
-         offset="1"
-         style="stop-color:#08451a;stop-opacity:0" />
-    </linearGradient>
     <linearGradient
        id="linearGradient3908">
       <stop
@@ -251,7 +240,7 @@
        sodipodi:cy="447.18091"
        sodipodi:rx="8.0246916"
        sodipodi:ry="5.5555553"
-       d="m 414.81482,447.18091 c 0,3.06825 -3.59277,5.55555 -8.02469,5.55555 -4.43191,0 -8.02469,-2.4873 -8.02469,-5.55555 0,-3.06825 3.59278,-5.55556 8.02469,-5.55556 4.43192,0 8.02469,2.48731 8.02469,5.55556 z"
+       d="m 414.81482,447.18091 a 8.0246916,5.5555553 0 0 1 -8.02469,5.55555 8.0246916,5.5555553 0 0 1 -8.02469,-5.55555 8.0246916,5.5555553 0 0 1 8.02469,-5.55556 8.0246916,5.5555553 0 0 1 8.02469,5.55556 z"
        transform="translate(2,4)" />
   </g>
 </svg>

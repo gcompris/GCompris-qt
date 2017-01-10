@@ -22,45 +22,7 @@
    inkscape:export-ydpi="90"
    style="display:inline">
   <defs
-     id="defs4">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 260 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="800 : 260 : 1"
-       inkscape:persp3d-origin="400 : 173.33333 : 1"
-       id="perspective215" />
-    <linearGradient
-       id="linearGradient8693">
-      <stop
-         style="stop-color:#003fff;stop-opacity:1;"
-         offset="0"
-         id="stop8695" />
-      <stop
-         id="stop8703"
-         offset="0.29999998"
-         style="stop-color:#4c85ff;stop-opacity:1;" />
-      <stop
-         style="stop-color:#99ccff;stop-opacity:1;"
-         offset="1"
-         id="stop8697" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient8683">
-      <stop
-         style="stop-color:#000069;stop-opacity:1;"
-         offset="0"
-         id="stop8685" />
-      <stop
-         id="stop8691"
-         offset="0.29787233"
-         style="stop-color:#00007f;stop-opacity:1;" />
-      <stop
-         style="stop-color:#0000ff;stop-opacity:1;"
-         offset="1"
-         id="stop8687" />
-    </linearGradient>
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"

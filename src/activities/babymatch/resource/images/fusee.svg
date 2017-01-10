@@ -19,15 +19,7 @@
   <svg:metadata
      id="metadata16" />
   <svg:defs
-     id="defs550">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 250 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="500 : 250 : 1"
-       inkscape:persp3d-origin="250 : 166.66667 : 1"
-       id="perspective20" />
-  </svg:defs>
+     id="defs550" />
   <sodipodi:namedview
      id="base"
      showgrid="true"
@@ -143,7 +135,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </svg:metadata>

@@ -13,7 +13,7 @@
    width="75.147919"
    height="88.927628"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="off.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -40,80 +40,7 @@
   <title
      id="title2868">Ampoule</title>
   <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient7335">
-      <stop
-         offset="0"
-         stop-color="#f4ff00"
-         id="stop7337"
-         style="stop-color:#000871;stop-opacity:1;" />
-      <stop
-         offset="1"
-         stop-color="#fff"
-         id="stop7339" />
-      <stop
-         offset="1"
-         stop-opacity="0"
-         stop-color="#f0f603"
-         id="stop7341"
-         style="stop-color:#000871;stop-opacity:1;" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient6454">
-      <stop
-         offset="0"
-         stop-color="#f4ff00"
-         id="stop6456"
-         style="stop-color:#f5ff00;stop-opacity:1" />
-      <stop
-         offset="1"
-         stop-color="#fff"
-         id="stop6458" />
-      <stop
-         offset="1"
-         stop-opacity="0"
-         stop-color="#f0f603"
-         id="stop6460"
-         style="stop-color:#f0f603;stop-opacity:0;" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient6413">
-      <stop
-         style="stop-color:#f7b733;stop-opacity:1;"
-         id="stop6415"
-         stop-color="#f4ff00"
-         offset="0" />
-      <stop
-         id="stop6417"
-         stop-color="#fff"
-         offset="1" />
-      <stop
-         style="stop-color:#f7b733;stop-opacity:1;"
-         id="stop6419"
-         stop-color="#f0f603"
-         stop-opacity="0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient6367">
-      <stop
-         offset="0"
-         stop-color="#f4ff00"
-         id="stop6369"
-         style="stop-color:#f4ff00;stop-opacity:1;" />
-      <stop
-         offset="1"
-         stop-color="#fff"
-         id="stop6371" />
-      <stop
-         offset="1"
-         stop-opacity="0"
-         stop-color="#008cff"
-         id="stop6373"
-         style="stop-color:#f0f603;stop-opacity:0;" />
-    </linearGradient>
-  </defs>
+     id="defs4" />
   <metadata
      id="metadata7">
     <rdf:RDF>

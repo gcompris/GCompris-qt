@@ -17,19 +17,7 @@
    version="1.0"
    sodipodi:docname="ballcatch.svg">
   <defs
-     id="defs31202">
-    <linearGradient
-       id="linearGradient34913">
-      <stop
-         style="stop-color:black;stop-opacity:1;"
-         offset="0"
-         id="stop34915" />
-      <stop
-         style="stop-color:black;stop-opacity:0;"
-         offset="1"
-         id="stop34917" />
-    </linearGradient>
-  </defs>
+     id="defs31202" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -58,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

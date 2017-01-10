@@ -41,26 +41,6 @@
        y2="157.80945"
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.1705552,0,0,1.1705552,-54.712956,-54.564651)" />
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath4916-0">
-      <path
-         style="fill:#000000;fill-opacity:1;stroke:none"
-         d="m 864.25542,977.42216 c 86.21906,-70.59349 193.89528,-2.95971 190.41128,84.46884 -6.391,72.7203 -102.01241,82.6189 -99.24309,68.6302 57.74529,-35.6338 67.70869,-177.01115 10.33782,-204.01485 -36.08411,-21.29081 -108.72892,27.02812 -101.50601,50.91581 z"
-         id="path4918-9"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-    </clipPath>
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath4930-3">
-      <path
-         style="fill:#000000;fill-opacity:1;stroke:none"
-         d="m 1039.769,974.28794 c -59.86791,-47.54374 -175.57184,43.13586 -160.31831,122.08326 -27.11911,6.0061 -51.13184,-56.6113 -15.13015,-118.94904 86.21906,-70.59348 193.89526,-2.95971 190.41126,84.46884 25.2566,-0.52 53.0276,-28.2485 -14.9628,-87.60306 z"
-         id="path4932-6"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="ccccc" />
-    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"

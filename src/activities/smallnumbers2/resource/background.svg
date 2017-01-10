@@ -14,7 +14,7 @@
    height="520"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    version="1.0"
    sodipodi:docname="background.svg"
    inkscape:export-filename="/home/bruno/Projets/gcompris/gcompris-ressources/herve_chanal/fondssphinx2.png"
@@ -33,32 +33,6 @@
          offset="1"
          id="stop6445" />
     </linearGradient>
-    <filter
-       x="-.10388"
-       height="1.6131"
-       width="1.2078"
-       y="-.30656"
-       id="filter3679">
-      <feGaussianBlur
-         stdDeviation="10.474138"
-         id="feGaussianBlur3681" />
-    </filter>
-    <radialGradient
-       r="357.85"
-       gradientTransform="matrix(0.27115,0.4687,-0.49749,0.28665,426.55,310.49)"
-       cx="263"
-       cy="378.94"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient3659">
-      <stop
-         offset="0"
-         stop-color="#c0ff9a"
-         id="stop3652" />
-      <stop
-         offset="1"
-         stop-color="#40ae00"
-         id="stop3654" />
-    </radialGradient>
     <filter
        color-interpolation-filters="sRGB"
        id="filter8441"
@@ -1346,7 +1320,7 @@
            sodipodi:cy="40.523052"
            sodipodi:rx="51.42857"
            sodipodi:ry="49.285713"
-           d="m -881.42855,40.523052 c 0,27.219748 -23.02535,49.285713 -51.42857,49.285713 -28.40321,0 -51.42857,-22.065965 -51.42857,-49.285713 0,-27.219748 23.02536,-49.285713 51.42857,-49.285713 28.40322,0 51.42857,22.065965 51.42857,49.285713 z"
+           d="m -881.42855,40.523052 a 51.42857,49.285713 0 0 1 -51.42857,49.285713 51.42857,49.285713 0 0 1 -51.42857,-49.285713 51.42857,49.285713 0 0 1 51.42857,-49.285713 51.42857,49.285713 0 0 1 51.42857,49.285713 z"
            transform="matrix(0.949352,0,0,0.872965,1002.7747,78.365809)"
            inkscape:export-filename="/home/bruno/Projets/gcompris/gcompris/boards/images/scenery_background.png"
            inkscape:export-xdpi="84.799667"

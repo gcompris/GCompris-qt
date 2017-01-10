@@ -11,7 +11,7 @@
    id="svg10106"
    viewBox="0 0 95.272 95.272"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
    sodipodi:docname="digital_die7.svg">
@@ -93,48 +93,6 @@
          id="feGaussianBlur9520"
          stdDeviation="0.71376063" />
     </filter>
-    <radialGradient
-       id="radialGradient3182"
-       gradientUnits="userSpaceOnUse"
-       cy="94.288002"
-       cx="103.59"
-       gradientTransform="matrix(1,0,0,0.84932,0,14.208)"
-       r="25.809">
-      <stop
-         id="stop3184"
-         stop-color="#fff"
-         offset="0" />
-      <stop
-         id="stop3186"
-         stop-color="#fff"
-         stop-opacity="0"
-         offset="1" />
-    </radialGradient>
-    <filter
-       id="filter3188"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur3190"
-         stdDeviation="0.71376063" />
-    </filter>
-    <radialGradient
-       r="25.809"
-       cy="94.288002"
-       cx="103.59"
-       gradientTransform="matrix(1,0,0,0.84932,0,14.208)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient3196"
-       xlink:href="#radialGradient6391"
-       inkscape:collect="always" />
-    <radialGradient
-       r="25.809"
-       cy="94.288002"
-       cx="103.59"
-       gradientTransform="matrix(1,0,0,0.84932,0,14.208)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient3198"
-       xlink:href="#radialGradient6391"
-       inkscape:collect="always" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6387"

@@ -16,7 +16,7 @@
    height="570.51898"
    xml:space="preserve"
    sodipodi:docname="carot.svg"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    version="1.1"><metadata
      id="metadata24"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -114,7 +114,7 @@
        sodipodi:type="arc"
        style="fill:#ac5a35;fill-opacity:1;fill-rule:evenodd;stroke:none"
        id="path612"
-       d="m 254.55885,247.80594 c 0,4.02729 -9.00283,7.29206 -20.10838,7.29206 -11.10555,0 -20.10838,-3.26477 -20.10838,-7.29206 0,-4.0273 9.00283,-7.29206 20.10838,-7.29206 11.10555,0 20.10838,3.26476 20.10838,7.29206 z"
+       d="m 254.55885,247.80594 a 20.108376,7.2920609 0 0 1 -20.10838,7.29206 20.108376,7.2920609 0 0 1 -20.10838,-7.29206 20.108376,7.2920609 0 0 1 20.10838,-7.29206 20.108376,7.2920609 0 0 1 20.10838,7.29206 z"
        sodipodi:cx="234.45047"
        sodipodi:cy="247.80594"
        sodipodi:rx="20.108376"

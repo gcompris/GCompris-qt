@@ -13,7 +13,7 @@
    height="120"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="circle_node.svg">
   <defs
      id="defs4" />
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,7 +64,7 @@
        sodipodi:cy="63.961788"
        sodipodi:rx="55.331104"
        sodipodi:ry="56.038212"
-       d="m 116.67262,63.961788 a 55.331104,56.038212 0 1 1 -110.6622097,0 55.331104,56.038212 0 1 1 110.6622097,0 z"
+       d="M 116.67262,63.961788 A 55.331104,56.038212 0 0 1 61.341515,120 55.331104,56.038212 0 0 1 6.0104103,63.961788 55.331104,56.038212 0 0 1 61.341515,7.9235764 55.331104,56.038212 0 0 1 116.67262,63.961788 Z"
        transform="matrix(1.0306444,0,0,1.0271031,51.348867,815.13061)" />
   </g>
 </svg>

@@ -13,28 +13,10 @@
    height="49.999992"
    id="svg3043"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="green.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="black.svg">
   <defs
      id="defs3045">
-    <linearGradient
-       id="linearGradient5072"
-       y2="225.45"
-       gradientUnits="userSpaceOnUse"
-       x2="261.44"
-       gradientTransform="matrix(1.2379366,0,0,1.2701318,-103.71037,329.29048)"
-       y1="244.83"
-       x1="274.06"
-       inkscape:collect="always">
-      <stop
-         id="stop5068"
-         style="stop-color:#8ae234"
-         offset="0" />
-      <stop
-         id="stop5070"
-         style="stop-color:#8ae234;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
     <linearGradient
        id="linearGradient5080"
        y2="193.89999"
@@ -85,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

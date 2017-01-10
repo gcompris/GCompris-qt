@@ -14,7 +14,7 @@
    height="521"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="fish2.svg">
   <defs
      id="defs4">
@@ -29,28 +29,6 @@
          offset="1"
          id="stop3985" />
     </linearGradient>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3981"
-       id="radialGradient3987"
-       cx="183.03549"
-       cy="144.03793"
-       fx="183.03549"
-       fy="144.03793"
-       r="15.925532"
-       gradientTransform="matrix(1,0,0,1.0334001,0,-4.9904335)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3981-0"
-       id="radialGradient3987-0"
-       cx="183.03549"
-       cy="144.03793"
-       fx="183.03549"
-       fy="144.03793"
-       r="15.925532"
-       gradientTransform="matrix(1,0,0,1.0334001,0,-4.9904335)"
-       gradientUnits="userSpaceOnUse" />
     <linearGradient
        id="linearGradient3981-0">
       <stop
@@ -72,17 +50,6 @@
        gradientUnits="userSpaceOnUse"
        id="radialGradient4004"
        xlink:href="#linearGradient3981-0"
-       inkscape:collect="always" />
-    <radialGradient
-       r="15.925532"
-       fy="144.03793"
-       fx="183.03549"
-       cy="144.03793"
-       cx="183.03549"
-       gradientTransform="matrix(1,0,0,1.0334001,0,-4.9904335)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient4004-0"
-       xlink:href="#linearGradient3981-0-3"
        inkscape:collect="always" />
     <linearGradient
        id="linearGradient3981-0-3">
@@ -115,17 +82,6 @@
        x2="767.01984"
        y2="423.12061"
        gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       r="15.925532"
-       fy="144.03793"
-       fx="183.03549"
-       cy="144.03793"
-       cx="183.03549"
-       gradientTransform="matrix(1,0,0,1.0334001,0,-4.9904335)"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient4004-8"
-       xlink:href="#linearGradient3981-0-1"
-       inkscape:collect="always" />
     <linearGradient
        id="linearGradient3981-0-1">
       <stop
@@ -148,15 +104,6 @@
        id="radialGradient4080"
        xlink:href="#linearGradient3981-0-1"
        inkscape:collect="always" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3981-2"
-       id="linearGradient4063-4"
-       x1="773.26971"
-       y1="612.4823"
-       x2="767.01984"
-       y2="423.12061"
-       gradientUnits="userSpaceOnUse" />
     <linearGradient
        id="linearGradient3981-2">
       <stop
@@ -249,7 +196,7 @@
        sodipodi:cy="149.41364"
        sodipodi:rx="15.425532"
        sodipodi:ry="15.957447"
-       d="m 192.55319,149.41364 c 0,8.81305 -6.90625,15.95744 -15.42553,15.95744 -8.51929,0 -15.42554,-7.14439 -15.42554,-15.95744 0,-8.81306 6.90625,-15.95745 15.42554,-15.95745 8.51928,0 15.42553,7.14439 15.42553,15.95745 z"
+       d="m 192.55319,149.41364 a 15.425532,15.957447 0 0 1 -15.42553,15.95744 15.425532,15.957447 0 0 1 -15.42554,-15.95744 15.425532,15.957447 0 0 1 15.42554,-15.95745 15.425532,15.957447 0 0 1 15.42553,15.95745 z"
        transform="matrix(0.84753271,0,0,0.85720403,12.11256,407.79485)"
        inkscape:transform-center-x="5.0070889"
        inkscape:transform-center-y="7.1429694" />
@@ -261,7 +208,7 @@
        sodipodi:cy="149.41364"
        sodipodi:rx="15.425532"
        sodipodi:ry="15.957447"
-       d="m 192.55319,149.41364 c 0,8.81305 -6.90625,15.95744 -15.42553,15.95744 -8.51929,0 -15.42554,-7.14439 -15.42554,-15.95744 0,-8.81306 6.90625,-15.95745 15.42554,-15.95745 8.51928,0 15.42553,7.14439 15.42553,15.95745 z"
+       d="m 192.55319,149.41364 a 15.425532,15.957447 0 0 1 -15.42553,15.95744 15.425532,15.957447 0 0 1 -15.42554,-15.95744 15.425532,15.957447 0 0 1 15.42554,-15.95745 15.425532,15.957447 0 0 1 15.42553,15.95745 z"
        transform="matrix(0.7143874,0,0,0.69516357,35.164364,512.85697)"
        inkscape:transform-center-x="4.2204885"
        inkscape:transform-center-y="5.7927087" />
@@ -273,7 +220,7 @@
        sodipodi:cy="149.41364"
        sodipodi:rx="15.425532"
        sodipodi:ry="15.957447"
-       d="m 192.55319,149.41364 c 0,8.81305 -6.90625,15.95744 -15.42553,15.95744 -8.51929,0 -15.42554,-7.14439 -15.42554,-15.95744 0,-8.81306 6.90625,-15.95745 15.42554,-15.95745 8.51928,0 15.42553,7.14439 15.42553,15.95745 z"
+       d="m 192.55319,149.41364 a 15.425532,15.957447 0 0 1 -15.42553,15.95744 15.425532,15.957447 0 0 1 -15.42554,-15.95744 15.425532,15.957447 0 0 1 15.42554,-15.95745 15.425532,15.957447 0 0 1 15.42553,15.95745 z"
        transform="matrix(1.0475194,0,0,1.0838577,-19.587194,292.0148)"
        inkscape:transform-center-x="6.1885637"
        inkscape:transform-center-y="9.0316384" />
@@ -488,7 +435,7 @@
        sodipodi:cy="149.41364"
        sodipodi:rx="15.425532"
        sodipodi:ry="15.957447"
-       d="m 192.55319,149.41364 c 0,8.81305 -6.90625,15.95744 -15.42553,15.95744 -8.51929,0 -15.42554,-7.14439 -15.42554,-15.95744 0,-8.81306 6.90625,-15.95745 15.42554,-15.95745 8.51928,0 15.42553,7.14439 15.42553,15.95745 z"
+       d="m 192.55319,149.41364 a 15.425532,15.957447 0 0 1 -15.42553,15.95744 15.425532,15.957447 0 0 1 -15.42554,-15.95744 15.425532,15.957447 0 0 1 15.42554,-15.95745 15.425532,15.957447 0 0 1 15.42553,15.95745 z"
        transform="matrix(1.2173705,0,0,1.935663,54.20839,65.51833)" />
     <path
        sodipodi:type="arc"
@@ -498,7 +445,7 @@
        sodipodi:cy="149.41364"
        sodipodi:rx="15.425532"
        sodipodi:ry="15.957447"
-       d="m 192.55319,149.41364 c 0,8.81305 -6.90625,15.95744 -15.42553,15.95744 -8.51929,0 -15.42554,-7.14439 -15.42554,-15.95744 0,-8.81306 6.90625,-15.95745 15.42554,-15.95745 8.51928,0 15.42553,7.14439 15.42553,15.95745 z"
+       d="m 192.55319,149.41364 a 15.425532,15.957447 0 0 1 -15.42553,15.95744 15.425532,15.957447 0 0 1 -15.42554,-15.95744 15.425532,15.957447 0 0 1 15.42554,-15.95745 15.425532,15.957447 0 0 1 15.42553,15.95745 z"
        transform="matrix(0.84130025,0,0,1.149,115.42805,180.92886)" />
   </g>
 </svg>
