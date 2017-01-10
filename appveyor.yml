@@ -28,9 +28,13 @@ install:
 
     setlocal EnableDelayedExpansion
     echo %PATH%
+    
     set PATH=%PATH:C:\Program Files (x86)\Git\usr\bin;=%
+    
     set PATH=%PATH:C:\Program Files\Git\usr\bin;=%
+    
     set PATH=C:\MinGW\bin;%QT5%\bin;%PATH%
+    
     echo %PATH%
     
     cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
