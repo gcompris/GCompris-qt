@@ -12,7 +12,7 @@ platform:
 init:
 - cmd: 
 environment:
-  CMAKE_GENERATOR: Visual Studio 12
+  CMAKE_GENERATOR: Visual Studio 12 2013
   QT5: C:\Qt\5.5\msvc2013
 install:
 
