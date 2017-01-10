@@ -13,28 +13,10 @@
    height="49.999992"
    id="svg3043"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="red.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="orange.svg">
   <defs
      id="defs3045">
-    <linearGradient
-       id="linearGradient5048"
-       y2="234.03"
-       gradientUnits="userSpaceOnUse"
-       x2="187.08"
-       gradientTransform="matrix(1.2281387,0,0,1.2693367,2.9445534,328.981)"
-       y1="238.06"
-       x1="205.11"
-       inkscape:collect="always">
-      <stop
-         id="stop5044"
-         style="stop-color:#729fcf"
-         offset="0" />
-      <stop
-         id="stop5046"
-         style="stop-color:#729fcf;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
     <linearGradient
        id="linearGradient5024"
        y2="189.48"
@@ -102,7 +84,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -117,7 +99,7 @@
        sodipodi:ry="6.7368422"
        style="color:#000000;fill:#ce5c00;fill-rule:evenodd"
        sodipodi:type="arc"
-       d="m 277.17293,114.01632 a 13.473684,6.7368422 0 1 1 -26.94737,0 13.473684,6.7368422 0 1 1 26.94737,0 z"
+       d="m 277.17293,114.01632 a 13.473684,6.7368422 0 0 1 -13.47368,6.73684 13.473684,6.7368422 0 0 1 -13.47369,-6.73684 13.473684,6.7368422 0 0 1 13.47369,-6.73684 13.473684,6.7368422 0 0 1 13.47368,6.73684 z"
        transform="matrix(0.84700834,-1.5428286,2.0497008,1.0986672,-223.48619,904.22414)"
        sodipodi:cy="114.01632"
        sodipodi:cx="263.69925" />

@@ -20,7 +20,7 @@
    inkscape:version="0.91 r13725"><metadata
      id="metadata5191"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs604"><linearGradient
        id="linearGradient2320"><stop
          style="stop-color:#ff0000;stop-opacity:1;"
@@ -456,9 +456,7 @@
        x2="238.26631"
        y2="289.37704"
        gradientTransform="scale(1.5147609,0.66017018)"
-       gradientUnits="userSpaceOnUse" /><linearGradient
-       xlink:href="#linearGradient2320"
-       id="linearGradient2946" /><radialGradient
+       gradientUnits="userSpaceOnUse" /><radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient615"
        id="radialGradient6686"

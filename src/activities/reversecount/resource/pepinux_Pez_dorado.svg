@@ -11,7 +11,7 @@
    id="svg3142"
    viewBox="0 0 360.37512 211.33553"
    version="1.0"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
    sodipodi:docname="pepinux_Pez_dorado.svg">
@@ -79,13 +79,6 @@
          stop-color="#ff6582"
          offset="1" />
     </linearGradient>
-    <filter
-       id="filter4475"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur4477"
-         stdDeviation="0.86939242" />
-    </filter>
     <radialGradient
        id="radialGradient3939"
        xlink:href="#linearGradient3970"
@@ -246,7 +239,8 @@
         </dc:publisher>
         <dc:title>Pez dorado (gold fish)</dc:title>
         <dc:date>2007-11-18T19:12:47</dc:date>
-        <dc:description>Pez dorado al estilo web 2.0. Gold fish with web 2.0 style.\nEncuentra mis videotutoriales en: http://www.depinux.blogspot.com</dc:description>
+        <dc:description>Pez dorado al estilo web 2.0. Gold fish with web 2.0 style.
+\nEncuentra mis videotutoriales en: http://www.depinux.blogspot.com</dc:description>
         <dc:source>http://openclipart.org/detail/10779/pez-dorado-(gold-fish)-by-pepinux-10779</dc:source>
         <dc:creator>
           <cc:Agent>

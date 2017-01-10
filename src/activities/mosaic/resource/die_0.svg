@@ -10,10 +10,10 @@
    id="svg6450"
    viewBox="0 0 319.17 313.18"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
-   sodipodi:docname="dado_0.svg">
+   sodipodi:docname="die_0.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -112,22 +112,6 @@
          id="feGaussianBlur9520"
          stdDeviation="0.71376063" />
     </filter>
-    <linearGradient
-       id="linearGradient6395"
-       y2="36.658"
-       gradientUnits="userSpaceOnUse"
-       y1="20.395"
-       x2="72.832"
-       x1="72.832">
-      <stop
-         id="stop9464"
-         stop-color="#a40000"
-         offset="0" />
-      <stop
-         id="stop9466"
-         stop-color="#ef2929"
-         offset="1" />
-    </linearGradient>
   </defs>
   <g
      id="layer1"

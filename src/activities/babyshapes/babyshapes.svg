@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="100"
@@ -18,29 +17,7 @@
    version="1.0"
    sodipodi:docname="babyshapes.svg">
   <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient583">
-      <stop
-         id="stop584"
-         offset="0.00000000"
-         style="stop-color:#ffffff;stop-opacity:0.466667;" />
-      <stop
-         id="stop585"
-         offset="1.00000000"
-         style="stop-color:#ffffff;stop-opacity:0.108333;" />
-    </linearGradient>
-    <radialGradient
-       cx="201.95493"
-       cy="183.44996"
-       fx="201.95493"
-       fy="183.44996"
-       id="radialGradient579"
-       r="123.08747"
-       xlink:href="#linearGradient583"
-       gradientTransform="scale(1.003256,0.996755)"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"

@@ -14,9 +14,9 @@
    height="34.66111"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.91 r13725"
    version="1.0"
-   sodipodi:docname="hand.svg">
+   sodipodi:docname="error.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -98,7 +98,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -116,7 +116,7 @@
          id="g2100">
         <path
            transform="matrix(0.306862,0,0,0.306862,127.6178,428.9959)"
-           d="m 634.28571,559.50507 c 0,138.07118 -111.92882,250 -250,250 -138.07119,0 -250,-111.92882 -250,-250 0,-138.07119 111.92881,-250 250,-250 138.07118,0 250,111.92881 250,250 z"
+           d="m 634.28571,559.50507 a 250,250 0 0 1 -250,250 250,250 0 0 1 -250,-250 250,250 0 0 1 250,-250 250,250 0 0 1 250,250 z"
            sodipodi:ry="250"
            sodipodi:rx="250"
            sodipodi:cy="559.50507"

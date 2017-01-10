@@ -16,7 +16,7 @@
    id="svg4238"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="red_heart.svg">
+   sodipodi:docname="heart.svg">
   <defs
      id="defs4240">
     <linearGradient
@@ -71,7 +71,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

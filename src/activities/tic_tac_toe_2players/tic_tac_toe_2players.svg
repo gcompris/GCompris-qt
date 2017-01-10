@@ -408,7 +408,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2009-01-17T12:20:59</dc:date>
         <dc:description />
         <dc:source>https://openclipart.org/detail/21190/glossy-rectangle-black-by-steren</dc:source>

@@ -14,8 +14,8 @@
    height="722.45685"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="dessin_hivers.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="background.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -9908,7 +9908,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -13138,7 +13138,7 @@
        sodipodi:cy="118.07647"
        sodipodi:rx="55"
        sodipodi:ry="55"
-       d="m 2032.8572,118.07647 c 0,30.37566 -24.6244,55 -55,55 -30.3757,0 -55,-24.62434 -55,-55 0,-30.375662 24.6243,-55.000001 55,-55.000001 30.3756,0 55,24.624339 55,55.000001 z"
+       d="m 2032.8572,118.07647 a 55,55 0 0 1 -55,55 55,55 0 0 1 -55,-55 55,55 0 0 1 55,-55.000001 55,55 0 0 1 55,55.000001 z"
        transform="translate(-1216.7476,318.58164)" />
     <path
        style="fill:#ececec;fill-opacity:1;stroke:none;filter:url(#filter7024)"

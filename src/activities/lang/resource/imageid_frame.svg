@@ -14,42 +14,10 @@
    height="356.08444"
    id="svg3796"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="imageid_frame.svg">
   <defs
      id="defs3798">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient694"
-       id="linearGradient2409"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.1616636,0,0,0.8608344,100.56215,-292.50333)"
-       x1="645.30786"
-       y1="52.162842"
-       x2="201.4899"
-       y2="572.83191" />
-    <linearGradient
-       id="linearGradient694">
-      <stop
-         style="stop-color:#c7f0ff;stop-opacity:1;"
-         offset="0"
-         id="stop695" />
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="1"
-         id="stop696" />
-    </linearGradient>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient705"
-       id="radialGradient2411"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="scale(1.1544482,0.8662147)"
-       cx="459.01657"
-       cy="291.24692"
-       fx="459.01657"
-       fy="291.24692"
-       r="358.83459" />
     <linearGradient
        id="linearGradient705">
       <stop

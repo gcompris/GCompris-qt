@@ -15,7 +15,7 @@
    id="svg5498"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="train.svg">
+   sodipodi:docname="loco.svg">
   <defs
      id="defs5500" />
   <sodipodi:namedview
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

@@ -14,7 +14,7 @@
    viewBox="0 0 799.96717 400.01639"
    sodipodi:version="0.32"
    version="1.0"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="car14.svg"
    width="100%"
    height="100%">
@@ -31,52 +31,6 @@
          style="stop-color:#b79700"
          offset="1" />
     </linearGradient>
-    <radialGradient
-       id="radialGradient2095"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="319.37"
-       cx="657.76001"
-       gradientTransform="scale(0.65803,1.5197)"
-       r="1269.3"
-       inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient2097"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="153.64999"
-       cx="897.23999"
-       gradientTransform="scale(0.30015,3.3317)"
-       r="15.849"
-       inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient2101"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="598.63"
-       cx="294.42999"
-       gradientTransform="scale(1.464,0.68308)"
-       r="91.234001"
-       inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient2103"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="819.90002"
-       cx="378.79001"
-       gradientTransform="scale(1.1167,0.89553)"
-       r="115.39"
-       inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient2105"
-       y2="2114.3999"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       x2="166.88"
-       gradientTransform="scale(2.2804,0.43853)"
-       y1="1956.6"
-       x1="165.02"
-       inkscape:collect="always" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient239"
@@ -511,7 +465,7 @@
          style="fill:#000000;fill-rule:evenodd;stroke-width:1pt"
          id="rect427" />
       <path
-         d="m 339.01089,49.275504 c -0.58121,9.418337 -8.06415,16.540363 -16.71362,15.90749 -8.64947,-0.632874 -15.19008,-8.78099 -14.60888,-18.199327 0.58121,-9.418338 8.06415,-16.540363 16.71362,-15.90749 3.70443,0.27105 7.2007,1.963167 9.86772,4.775756 l -10.92009,12.277652 z"
+         d="m 339.01089,49.275504 a 15.696564,17.091866 0 0 1 -13.31513,15.753948 15.696564,17.091866 0 0 1 -16.99655,-10.764559 15.696564,17.091866 0 0 1 5.99224,-20.391806 15.696564,17.091866 0 0 1 19.57828,1.978846 l -10.92009,12.277652 z"
          sodipodi:end="5.481782"
          sodipodi:cx="323.34964"
          sodipodi:cy="48.129585"

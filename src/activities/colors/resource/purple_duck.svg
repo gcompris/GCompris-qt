@@ -13,8 +13,8 @@
    height="101.53598"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
-   sodipodi:docname="orange_duck.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="purple_duck.svg">
   <defs
      id="defs4">
     <filter
@@ -204,7 +204,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

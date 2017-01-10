@@ -15,7 +15,7 @@
    width="103.38251"
    height="99.990395"
    sodipodi:docname="land_safe.svg"
-   inkscape:version="0.92.0 r15299"
+   inkscape:version="0.91 r13725"
    version="1.1">
   <sodipodi:namedview
      id="base"
@@ -37,28 +37,6 @@
      id="metadata3090" />
   <defs
      id="defs550">
-    <linearGradient
-       id="linearGradient885"
-       inkscape:collect="always">
-      <stop
-         id="stop881"
-         offset="0"
-         style="stop-color:#ffce76;stop-opacity:1" />
-      <stop
-         id="stop883"
-         offset="1"
-         style="stop-color:#ffa80b;stop-opacity:0;" />
-    </linearGradient>
-    <linearGradient
-       y2="98.541985"
-       x2="45.90625"
-       y1="71.979485"
-       x1="45.90625"
-       gradientTransform="rotate(-45,49.035996,54.236522)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient950"
-       xlink:href="#linearGradient885"
-       inkscape:collect="always" />
     <linearGradient
        y2="98.541985"
        x2="45.90625"

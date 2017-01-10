@@ -34,17 +34,6 @@
          id="stop690" />
     </linearGradient>
     <linearGradient
-       id="linearGradient691">
-      <stop
-         style="stop-color:#a0a0a0;stop-opacity:1.0000000;"
-         offset="0.0000000"
-         id="stop692" />
-      <stop
-         style="stop-color:#000000;stop-opacity:1.0000000;"
-         offset="1.0000000"
-         id="stop693" />
-    </linearGradient>
-    <linearGradient
        id="linearGradient621">
       <stop
          style="stop-color:#000;stop-opacity:1;"
@@ -508,14 +497,6 @@
        gradientTransform="scale(1.4498557,0.68972383)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
-       xlink:href="#linearGradient691"
-       id="radialGradient857"
-       cx="0.8426007"
-       cy="0.85945326"
-       r="0.78203529"
-       fx="0.8426007"
-       fy="0.85945326" />
-    <radialGradient
        xlink:href="#linearGradient715"
        id="radialGradient820"
        cx="234.51907"
@@ -554,77 +535,6 @@
        y2="516.909"
        gradientTransform="scale(1.2676214,0.78887908)"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient799"
-       x1="1.2272614"
-       y1="0.9374882"
-       x2="-0.18181789"
-       y2="0.093750007" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient797"
-       x1="0.18963867"
-       y1="0.859492"
-       x2="0.59482718"
-       y2="-0.37499955" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient796"
-       x1="-0.1000054"
-       y1="0.92187512"
-       x2="2.6333332"
-       y2="-0.73437506" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient792"
-       x1="-0.066689685"
-       y1="0.9531703"
-       x2="0.9666667"
-       y2="-0.3203122" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient789"
-       x1="2.0525825e-07"
-       y1="1.1772886e-07"
-       x2="1.0000002"
-       y2="1.1772886e-07" />
-    <linearGradient
-       xlink:href="#linearGradient793"
-       id="linearGradient787"
-       x1="0.30645233"
-       y1="0.61718911"
-       x2="1.3870969"
-       y2="0.63281256"
-       spreadMethod="pad" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient783"
-       x1="-0.035703767"
-       y1="7.2521771e-06"
-       x2="1.6785717"
-       y2="0.55468756" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient782"
-       x1="0.9787668"
-       y1="0.0078139175"
-       x2="-4.8510633"
-       y2="1.3281252" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient780"
-       x1="-6.7927317e-07"
-       y1="0.54687494"
-       x2="-0.13333391"
-       y2="0.53906232" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient776"
-       x1="-1.3181822"
-       y1="0.41406241"
-       x2="5.9545474"
-       y2="0.7031247" />
     <radialGradient
        xlink:href="#linearGradient715"
        id="radialGradient720"
@@ -739,28 +649,6 @@
        gradientTransform="scale(1.4920506,0.67021856)"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       id="linearGradient659">
-      <stop
-         style="stop-color:#a1a0a0;stop-opacity:1;"
-         offset="0"
-         id="stop660" />
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="1"
-         id="stop661" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient694">
-      <stop
-         style="stop-color:#a1a0a0;stop-opacity:1;"
-         offset="0"
-         id="stop695" />
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="1"
-         id="stop696" />
-    </linearGradient>
-    <linearGradient
        id="linearGradient715">
       <stop
          style="stop-color:#ffffff;stop-opacity:1;"
@@ -819,13 +707,6 @@
        fy="415.4234"
        gradientTransform="scale(0.77329682,1.2931645)"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       xlink:href="#linearGradient716"
-       id="linearGradient858"
-       x1="-0.70322967"
-       y1="0.1953125"
-       x2="0.015624821"
-       y2="1.015625" />
     <radialGradient
        xlink:href="#linearGradient635"
        id="radialGradient856"
@@ -856,45 +737,6 @@
        fy="740.13055"
        gradientTransform="scale(1.867385,0.53550822)"
        gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       xlink:href="#linearGradient716"
-       id="linearGradient852"
-       x1="0.91062617"
-       y1="0.070315048"
-       x2="0.66071373"
-       y2="0.5" />
-    <linearGradient
-       xlink:href="#linearGradient716"
-       id="linearGradient851"
-       x1="0.46980006"
-       y1="-0.17842805"
-       x2="0.44630876"
-       y2="0.73214781"
-       gradientTransform="translate(2.988028e-8,1.287356e-6)" />
-    <linearGradient
-       xlink:href="#linearGradient621"
-       id="linearGradient839"
-       x1="0.2053477"
-       y1="0.59407485"
-       x2="1.6655757"
-       y2="0.55364496" />
-    <radialGradient
-       xlink:href="#linearGradient716"
-       id="radialGradient817"
-       cx="0.48727369"
-       cy="0.47593319"
-       r="0.71674091"
-       fx="0.48727369"
-       fy="0.47593319"
-       gradientTransform="translate(-7.996448e-8,-1.684752e-6)"
-       spreadMethod="reflect" />
-    <linearGradient
-       xlink:href="#linearGradient716"
-       id="linearGradient816"
-       x1="0.62363487"
-       y1="0.46874478"
-       x2="0.61797768"
-       y2="0.88281232" />
     <radialGradient
        xlink:href="#linearGradient716"
        id="radialGradient715"
@@ -905,121 +747,6 @@
        fy="448.45496"
        gradientUnits="userSpaceOnUse" />
     <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient693"
-       x1="0.0042525777"
-       y1="0.96091604"
-       x2="0.71120477"
-       y2="-0.039063033" />
-    <linearGradient
-       xlink:href="#linearGradient738"
-       id="linearGradient737"
-       x1="0.47649938"
-       y1="0.81473005"
-       x2="0.5805366"
-       y2="0.79629445"
-       spreadMethod="reflect" />
-    <radialGradient
-       xlink:href="#linearGradient635"
-       id="radialGradient703"
-       cx="0.04363846"
-       cy="0.50796008"
-       r="1.1210434"
-       fx="0.04363846"
-       fy="0.50796008" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient664"
-       x1="1.2969635"
-       y1="0.070344955"
-       x2="-0.17187244"
-       y2="0.6640628" />
-    <linearGradient
-       xlink:href="#linearGradient688"
-       id="linearGradient10829"
-       x1="0.79970354"
-       y1="0.015626904"
-       x2="0.099991366"
-       y2="0.984375"
-       gradientTransform="translate(-1.354258e-6,2.60932e-8)" />
-    <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient10828"
-       x1="0.49999797"
-       y1="4.2856517"
-       x2="0.51006711"
-       y2="-0.57142854" />
-    <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient645"
-       x1="0.49328572"
-       y1="0.68763548"
-       x2="0.50335562"
-       y2="-0.2083268"
-       gradientTransform="translate(-1.736693e-8,1.12503e-6)" />
-    <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient640"
-       x1="0.026315417"
-       y1="0.96872169"
-       x2="1.2017543"
-       y2="-0.046875328" />
-    <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient639"
-       x1="0.013438066"
-       y1="1.0434941"
-       x2="0.60067159"
-       y2="-0.2173906" />
-    <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient638"
-       x1="0.20220785"
-       y1="0.5078156"
-       x2="1.2169119"
-       y2="0.49218762" />
-    <radialGradient
-       xlink:href="#linearGradient635"
-       id="radialGradient634"
-       cx="0.40272298"
-       cy="0.53182161"
-       r="1.4208493"
-       fx="0.40272298"
-       fy="0.53182161" />
-    <radialGradient
-       xlink:href="#linearGradient635"
-       id="radialGradient633"
-       cx="2.7225094e-06"
-       cy="0.50006461"
-       r="0.87587297"
-       fx="2.7225094e-06"
-       fy="0.50006461"
-       gradientTransform="translate(3.571768e-8,1.016935e-6)" />
-    <radialGradient
-       xlink:href="#linearGradient635"
-       id="radialGradient629"
-       cx="0.043638851"
-       cy="0.50796098"
-       r="1.1210434"
-       fx="0.043638851"
-       fy="0.50796098"
-       gradientTransform="translate(6.098844e-7,1.225341e-6)" />
-    <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient628"
-       x1="0.61744964"
-       y1="1.0929911"
-       x2="0.19798657"
-       y2="-0.48837268" />
-    <linearGradient
-       xlink:href="#linearGradient635"
-       id="linearGradient624"
-       x1="0.39273584"
-       y1="0.99219495"
-       x2="0.39285502"
-       y2="0.37499994"
-       spreadMethod="reflect" />
-    <linearGradient
        id="linearGradient635">
       <stop
          style="stop-color:#ffed00;stop-opacity:1;"
@@ -1029,28 +756,6 @@
          style="stop-color:#ca6d00;stop-opacity:1;"
          offset="1"
          id="stop637" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient10810">
-      <stop
-         style="stop-color:#ab7200;stop-opacity:1;"
-         offset="0"
-         id="stop10811" />
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="1"
-         id="stop10812" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient738">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0"
-         id="stop739" />
-      <stop
-         style="stop-color:#aadae5;stop-opacity:1;"
-         offset="1"
-         id="stop740" />
     </linearGradient>
     <linearGradient
        id="linearGradient716">
@@ -1697,7 +1402,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

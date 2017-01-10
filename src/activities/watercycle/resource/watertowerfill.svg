@@ -13,7 +13,7 @@
    height="11.183255"
    id="svg3037"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="watertowerfill.svg">
   <defs
      id="defs3039" />
@@ -58,7 +58,7 @@
      transform="translate(-319.50352,-478.77404)">
     <path
        transform="matrix(-0.21034134,0,0,0.13437461,412.3112,382.64409)"
-       d="m 437,757 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+       d="m 437,757 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
        sodipodi:ry="35"
        sodipodi:rx="35"
        sodipodi:cy="757"

@@ -13,25 +13,11 @@
    sodipodi:docname="bubble.svg"
    viewBox="0 0 190.04445 79.141804"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%">
   <defs
-     id="defs3886">
-    <filter
-       id="filter3925"
-       width="1.2182"
-       y="-0.13332"
-       x="-0.1091"
-       height="1.2666"
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3927"
-         stdDeviation="1.4546875"
-         inkscape:collect="always" />
-    </filter>
-  </defs>
+     id="defs3886" />
   <sodipodi:namedview
      id="base"
      bordercolor="#666666"

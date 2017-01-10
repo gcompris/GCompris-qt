@@ -14,7 +14,7 @@
    sodipodi:docname="scale.svg"
    viewBox="0 0 383.42 187.7"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%">
   <defs
@@ -33,84 +33,12 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3771"
-       id="linearGradient3793"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3801"
-       x1="452.80276"
-       y1="543.47131"
-       x2="446.8075"
-       y2="458.87073"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3839"
-       gradientUnits="userSpaceOnUse"
-       x1="452.80276"
-       y1="543.47131"
-       x2="446.8075"
-       y2="458.87073" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3845"
-       gradientUnits="userSpaceOnUse"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3866"
-       gradientUnits="userSpaceOnUse"
-       x1="452.80276"
-       y1="543.47131"
-       x2="446.8075"
-       y2="458.87073" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3868"
-       gradientUnits="userSpaceOnUse"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
        id="linearGradient3894"
        gradientUnits="userSpaceOnUse"
        x1="269.61255"
        y1="623.40887"
        x2="254.2912"
        y2="480.85355" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3907"
-       gradientUnits="userSpaceOnUse"
-       x1="452.80276"
-       y1="543.47131"
-       x2="446.8075"
-       y2="458.87073" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3913"
-       gradientUnits="userSpaceOnUse"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381" />
   </defs>
   <title
      id="title4744">Balance</title>
@@ -166,7 +94,7 @@
        sodipodi:ry="10.991413"
        style="fill:#dedec3;fill-opacity:1;stroke:#000000;stroke-width:3.87740946;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        sodipodi:type="arc"
-       d="m 361.7174,557.08246 c 0,6.07039 -5.07015,10.99141 -11.32449,10.99141 -6.25434,0 -11.32448,-4.92102 -11.32448,-10.99141 0,-6.07039 5.07014,-10.99141 11.32448,-10.99141 6.25434,0 11.32449,4.92102 11.32449,10.99141 z"
+       d="m 361.7174,557.08246 a 11.324486,10.991413 0 0 1 -11.32449,10.99141 11.324486,10.991413 0 0 1 -11.32448,-10.99141 11.324486,10.991413 0 0 1 11.32448,-10.99141 11.324486,10.991413 0 0 1 11.32449,10.99141 z"
        transform="matrix(0.25837994,0,0,0.25742926,258.57174,419.58581)"
        sodipodi:cy="557.08246"
        sodipodi:cx="350.39291" />

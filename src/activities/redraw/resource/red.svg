@@ -13,45 +13,10 @@
    height="49.999992"
    id="svg3043"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="orange.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="red.svg">
   <defs
      id="defs3045">
-    <linearGradient
-       id="linearGradient5024"
-       y2="189.48"
-       gradientUnits="userSpaceOnUse"
-       x2="187.22"
-       gradientTransform="matrix(1.5762751,0,0,1.3675556,-68.812557,366.29931)"
-       y1="195.7"
-       x1="196.10001"
-       inkscape:collect="always">
-      <stop
-         id="stop5020"
-         style="stop-color:#fcaf3e"
-         offset="0" />
-      <stop
-         id="stop5022"
-         style="stop-color:#fcaf3e;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient2845"
-       y2="149.16"
-       gradientUnits="userSpaceOnUse"
-       x2="72.171997"
-       y1="156.55"
-       x1="86.422997"
-       inkscape:collect="always">
-      <stop
-         id="stop2841"
-         style="stop-color:#f57900"
-         offset="0" />
-      <stop
-         id="stop2843"
-         style="stop-color:#f57900;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
     <linearGradient
        id="linearGradient5032"
        y2="147.48"
@@ -102,7 +67,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
