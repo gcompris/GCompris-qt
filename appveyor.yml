@@ -46,7 +46,7 @@ install:
 
     echo %PATH%
 
-cmake --build build --config RelWithDebInfo --target DlAndInstallBundledConvertedOggs
+    cmake --build build --config RelWithDebInfo --target DlAndInstallBundledConvertedOggs
 
     set PATH=%PATH:C:\Program Files (x86)\Git\usr\bin;=%
     
