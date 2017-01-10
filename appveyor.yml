@@ -16,7 +16,7 @@ environment:
 install:
 
 - cmd: >-
-    if "%platform%"=="x86" set CMAKE_GENERATOR=MinGW Makefiles
+    if "%platform%"=="x86" set CMAKE_GENERATOR=MSYS Makefiles
 
     if "%platform%"=="x86" set QT5=C:\Qt\5.5\mingw492_32
 
