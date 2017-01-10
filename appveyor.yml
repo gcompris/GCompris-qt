@@ -16,7 +16,7 @@ environment:
 install:
 
 - cmd: >-
-    if "%platform%"=="x86" set CMAKE_GENERATOR=MSYS Makefiles
+    if "%platform%"=="x86" set CMAKE_GENERATOR=MinGW Makefiles
 
     if "%platform%"=="x86" set QT5=C:\Qt\5.5\mingw492_32
 
@@ -24,7 +24,7 @@ install:
 
     if "%platform%"=="x64" set QT5=C:\Qt\5.5\msvc2013_64
 
-    set Path=%QT5%\bin;%Path%
+    set Path=%QT5%\bin;%Path%;C:\Program Files (x86)\Git\bin;=%
 
     cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
 
