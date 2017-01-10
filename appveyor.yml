@@ -16,7 +16,7 @@ environment:
 install:
 
 - cmd: >-
-    if "%platform%"=="x32" set CMAKE_GENERATOR=Visual Studio 12 2013 Win32
+    if "%platform%"=="x32" set CMAKE_GENERATOR=Visual Studio 12
 
     if "%platform%"=="x32" set QT5=C:\Qt\5.5\msvc2013
 
