@@ -95,6 +95,7 @@ memory-sound-tux
 memory-tux
 memory-wordnumber
 mining
+mirrorgame
 missing-letter
 money
 money_back
