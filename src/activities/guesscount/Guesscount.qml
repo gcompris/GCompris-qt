@@ -30,10 +30,10 @@ ActivityBase {
     onStop: {}
     property bool needRestart: true
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        source: Activity.baseUrl + "/backgroundW01.svg"
         signal start
         signal stop
         Component.onCompleted: {
@@ -111,20 +111,21 @@ ActivityBase {
             height: parent.height/10
             anchors {
                 top: parent.top
-                topMargin: (parent.height/80)*3
+                topMargin: 20
             }
             color: "transparent"
             Rectangle {
                 id: questionNo
-                width: parent.width*0.328
+                width: parent.width*0.2
                 height: parent.height
-                radius: 20.0
+                radius: 20
                 color: "steelblue"
                 anchors {
-                    left: parent.left
-                    leftMargin: parent.width*0.028
+                    right: guessLabel.left
+                    rightMargin: 20
                 }
                 GCText {
+                    color: "#E8E8E8"
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     fontSize: mediumSize
@@ -132,13 +133,23 @@ ActivityBase {
                 }
             }
             Rectangle {
-                width: parent.width*0.35
+                id: guessLabel
+                width: parent.width*0.4
                 height: parent.height
                 radius: 20
                 color: "orange"
                 anchors {
-                    right: parent.right
-                    rightMargin: parent.width*0.028
+                    horizontalCenter: parent.horizontalCenter
+                }
+                Rectangle {
+                    id: insideFill
+                    width: parent.width - anchors.margins
+                    height: parent.height - anchors.margins
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.margins: parent.height/4
+                    radius: 10
+                    color: "#E8E8E8"
                 }
                 GCText {
                     id: guess
@@ -154,7 +165,7 @@ ActivityBase {
             id: col
             spacing: 10
             anchors.top: top.bottom
-            anchors.topMargin: 10
+            anchors.topMargin: 20
             anchors.left: parent.left
             anchors.leftMargin: 5
             width: parent.width

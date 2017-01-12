@@ -64,8 +64,17 @@ Row {
             id: prevResult
             width: operandRow.width*0.1
             height: operandRow.height
-            color: "white"
-            border.color: "black"
+            color: "orange"   //orange
+            radius: 10
+            Rectangle {
+                width: parent.width - anchors.margins
+                height: parent.height - anchors.margins
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.margins: parent.height/4
+                radius: 10
+                color: "#E8E8E8" //paper white
+            }
             property alias droppedItem: tile
             property int count: operandRow.prevComplete ? 1 : 0
             GCText {
@@ -76,7 +85,6 @@ Row {
                 fontSize: mediumSize
                 text: prevText
             }
-            radius: 20.0
         }
     }
 
@@ -127,17 +135,46 @@ Row {
         width: operandRow.width*0.1
         height: operandRow.height
         color: "transparent"
-        Image {
+        radius: 10
+        Rectangle {
+        width: parent.width * 0.8
+        height: parent.height * 0.8
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.horizontalCenter: parent.horizontalCenter
+        radius: 10
+        color: "#1B8BD2"  //blue
+            Rectangle {
+                width: parent.width - anchors.margins
+                height: parent.height - anchors.margins
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.margins: parent.height/4
+                radius: 10
+                color: "#E8E8E8" //paper white
+            }
+        }
+        GCText {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            source: Activity.url+"equal.svg"
+            text: "="
+            fontSize: mediumSize
         }
-        radius: 20.0
     }
+
     Rectangle {
         width: operandRow.width*0.1
         height: operandRow.height
-        border.color: "black"
+        color: "orange"   //orange
+        radius: 10
+        Rectangle {
+            width: parent.width - anchors.margins
+            height: parent.height - anchors.margins
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.margins: parent.height/4
+            radius: 10
+            color: "#E8E8E8" //paper white
+        }
         GCText {
             id: endResult
             anchors.horizontalCenter: parent.horizontalCenter
@@ -145,7 +182,6 @@ Row {
             fontSize: mediumSize
             text: ""
         }
-        radius: 20.0
     }
 
     onPrevCompleteChanged: {

@@ -30,10 +30,20 @@ Row {
     spacing: 20
     Rectangle {
         id: operands
-        width: parent.width*0.328;
+        width: parent.width*0.328
         height: parent.height
-        radius: 20.0;
-        color: "green"
+        radius: 10
+        color: "#75D21B"  //green
+        Rectangle {
+            id: insideFill
+            width: parent.width - anchors.margins
+            height: parent.height - anchors.margins
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.margins: parent.height/4
+            radius: 10
+            color: "#E8E8E8" //paper white
+        }
         GCText {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter

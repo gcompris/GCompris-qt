@@ -34,16 +34,17 @@ DropArea {
         width: parent.width
         height: parent.height
         anchors.fill: parent
-        color: "transparent"
+        color: type == "operators" ? "#80F16F6F" : "#8075D21B" // red or green
         border.width: 5
-        border.color: type == "operators" ? "red" : "green"
-        radius: 20
+        border.color: type == "operators" ? "#FFF16F6F" : "#FF75D21B" // red or green
+        radius: 10
         states: [
             State {
                 when: dragTarget.containsDrag
                 PropertyChanges {
                     target: dropRectangle
-                    border.color: "white"
+                    color: "transparent"
+                    border.color: "#80FFFFFF"
                 }
             }
         ]
