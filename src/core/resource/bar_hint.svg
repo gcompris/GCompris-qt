@@ -14,7 +14,7 @@
    id="svg4211"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="hint.svg">
+   sodipodi:docname="bar_hint.svg">
   <defs
      id="defs4213" />
   <sodipodi:namedview
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

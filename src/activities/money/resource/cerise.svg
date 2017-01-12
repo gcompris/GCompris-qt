@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg848"
    sodipodi:version="0.32"
    width="265.35000px"
    height="343.61000px"
    xml:space="preserve"
-   sodipodi:docbase="/mnt/Documents/Dessins/Vectoriels/Food"
    sodipodi:docname="cerise.svg"
-   inkscape:version="0.42"><metadata
+   inkscape:version="0.91 r13725"
+   version="1.1"><metadata
      id="metadata16"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
@@ -28,18 +29,6 @@
          style="stop-color:#ff1f00;stop-opacity:1;"
          offset="1"
          id="stop858" /></linearGradient><linearGradient
-       xlink:href="#linearGradient856"
-       id="linearGradient859"
-       x1="-0.55303025"
-       y1="0.93749905"
-       x2="1.02272737"
-       y2="-3.12500633e-2" /><linearGradient
-       xlink:href="#linearGradient856"
-       id="linearGradient862"
-       x1="-0.33335674"
-       y1="0.71873975"
-       x2="1.3636359"
-       y2="0.63281238" /><linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient856"
        id="linearGradient1322"

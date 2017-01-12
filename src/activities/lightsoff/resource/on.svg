@@ -13,7 +13,7 @@
    width="75.147919"
    height="88.927628"
    id="svg2"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="on.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -40,26 +40,7 @@
   <title
      id="title2868">Ampoule</title>
   <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient6367">
-      <stop
-         offset="0"
-         stop-color="#ffe778"
-         id="stop6369"
-         style="stop-color:#fff778;stop-opacity:1;" />
-      <stop
-         offset="1"
-         stop-color="#fff"
-         id="stop6371" />
-      <stop
-         offset="1"
-         stop-opacity="0"
-         stop-color="#008cff"
-         id="stop6373"
-         style="stop-color:#f0f603;stop-opacity:0;" />
-    </linearGradient>
-  </defs>
+     id="defs4" />
   <metadata
      id="metadata7">
     <rdf:RDF>

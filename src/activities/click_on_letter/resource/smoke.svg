@@ -15,6 +15,8 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    sodipodi:docname="smoke.svg">
+  <defs
+     id="defs9" />
   <sodipodi:namedview
      id="base"
      pagecolor="#979797"
@@ -45,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

@@ -18,19 +18,7 @@
    sodipodi:docname="cloud.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape">
   <defs
-     id="defs2874">
-    <linearGradient
-       id="linearGradient5148">
-      <stop
-         style="stop-color:#ffffff;stop-opacity:1;"
-         offset="0"
-         id="stop5150" />
-      <stop
-         style="stop-color:#ff1e18;stop-opacity:0;"
-         offset="1"
-         id="stop5152" />
-    </linearGradient>
-  </defs>
+     id="defs2874" />
   <sodipodi:namedview
      id="base"
      pagecolor="#878787"

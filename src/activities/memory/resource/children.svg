@@ -13,7 +13,7 @@
    height="160.00021"
    id="svg3661"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="children.svg">
   <defs
      id="defs3663" />
@@ -52,7 +52,7 @@
        sodipodi:cy="429.36218"
        sodipodi:rx="136"
        sodipodi:ry="119"
-       d="m -1064,429.36218 a 136,119 0 1 1 -272,0 136,119 0 1 1 272,0 z"
+       d="m -1064,429.36218 a 136,119 0 0 1 -136,119 136,119 0 0 1 -136,-119 136,119 0 0 1 136,-119 136,119 0 0 1 136,119 z"
        transform="matrix(0.04216377,0.01948683,-0.03114741,0.0464975,281.0738,586.82787)" />
     <rect
        style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.89217997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -125,7 +125,7 @@
        transform="matrix(-1.1902603,0.49790502,-0.47272914,-1.2536495,156.84304,1128.9035)">
       <path
          transform="matrix(-0.02331542,0.03145183,0.04162333,0.0194419,-186.45979,472.19617)"
-         d="m -1064,429.36218 c 0,65.72189 -60.8893,119 -136,119 -75.1107,0 -136,-53.27811 -136,-119 0,-65.72188 60.8893,-119 136,-119 75.1107,0 136,53.27812 136,119 z"
+         d="m -1064,429.36218 a 136,119 0 0 1 -136,119 136,119 0 0 1 -136,-119 136,119 0 0 1 136,-119 136,119 0 0 1 136,119 z"
          sodipodi:ry="119"
          sodipodi:rx="136"
          sodipodi:cy="429.36218"

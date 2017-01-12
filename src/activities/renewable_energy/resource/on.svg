@@ -13,8 +13,8 @@
    height="19.194752"
    id="svg5846"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 12">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="on.svg">
   <defs
      id="defs5848" />
   <sodipodi:namedview
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -94,7 +94,7 @@
          sodipodi:type="star" />
       <path
          transform="matrix(2.5911387,0,0,1.190319,-2715.5198,-103.76209)"
-         d="m 1708.375,525.36218 c 0,0.89747 -0.7275,1.625 -1.625,1.625 -0.8975,0 -1.625,-0.72753 -1.625,-1.625 0,-0.89746 0.7275,-1.625 1.625,-1.625 0.8975,0 1.625,0.72754 1.625,1.625 z"
+         d="m 1708.375,525.36218 a 1.625,1.625 0 0 1 -1.625,1.625 1.625,1.625 0 0 1 -1.625,-1.625 1.625,1.625 0 0 1 1.625,-1.625 1.625,1.625 0 0 1 1.625,1.625 z"
          sodipodi:ry="1.625"
          sodipodi:rx="1.625"
          sodipodi:cy="525.36218"

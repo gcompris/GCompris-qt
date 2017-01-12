@@ -15,7 +15,7 @@
    width="120"
    height="120"
    id="svg2"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="organ.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -44,16 +44,7 @@
   <title
      id="title4244">Keyboard</title>
   <defs
-     id="defs4">
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect3820"
-       is_visible="true" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect3810"
-       is_visible="true" />
-  </defs>
+     id="defs4" />
   <g
      transform="matrix(0.14545456,0,0,0.14545456,-16.534924,-41.320271)"
      id="layer1">

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -14,9 +15,8 @@
    width="427.49359"
    height="199.14137"
    xml:space="preserve"
-   sodipodi:docbase="/home/franck/Dessins/Vectoriels/Objets_divers"
-   sodipodi:docname="icebloc1.svg"
-   inkscape:version="0.45"
+   sodipodi:docname="iceblock.svg"
+   inkscape:version="0.91 r13725"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    sodipodi:modified="true"><metadata
@@ -54,13 +54,7 @@
        y1="1004.0671"
        x2="312.4985"
        y2="1004.0671"
-       gradientUnits="userSpaceOnUse" /><linearGradient
-       xlink:href="#linearGradient618"
-       id="linearGradient629"
-       x1="0.083892383"
-       y1="0.10833476"
-       x2="0.5704698"
-       y2="0.50833338" /><radialGradient
+       gradientUnits="userSpaceOnUse" /><radialGradient
        xlink:href="#linearGradient618"
        id="radialGradient656"
        cx="126.15959"
@@ -70,8 +64,6 @@
        fy="1157.882"
        gradientTransform="scale(2.5512675,0.391962)"
        gradientUnits="userSpaceOnUse" /><radialGradient
-       xlink:href="#linearGradient618"
-       id="radialGradient657" /><radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient618"
        id="radialGradient2175"

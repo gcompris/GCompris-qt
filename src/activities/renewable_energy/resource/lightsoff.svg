@@ -14,7 +14,7 @@
    height="100.87499"
    id="svg5445"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="lightsoff.svg">
   <defs
      id="defs5447">
@@ -76,21 +76,6 @@
        id="linearGradient6291-4-2"
        xlink:href="#linearGradient7506-4-3"
        inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient5387">
-      <stop
-         offset="0"
-         style="stop-color:#6c5d53;stop-opacity:1"
-         id="stop5389" />
-      <stop
-         offset="0.5"
-         style="stop-color:#ac9d93;stop-opacity:1"
-         id="stop5391" />
-      <stop
-         offset="1"
-         style="stop-color:#6c5d53;stop-opacity:1"
-         id="stop5393" />
-    </linearGradient>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -122,7 +107,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

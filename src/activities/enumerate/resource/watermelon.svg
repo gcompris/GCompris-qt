@@ -18,7 +18,7 @@
    sodipodi:version="0.32"
    inkscape:export-xdpi="90"
    version="1.0"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    inkscape:label="Pozadí"
    width="100%"
    height="100%">
@@ -121,7 +121,7 @@
          sodipodi:ry="165.71428"
          style="stroke:#080305;stroke-opacity:.99338;fill:url(#linearGradient1893)"
          sodipodi:type="arc"
-         d="m665.71 446.65a285.71 165.71 0 1 1 -571.42 0 285.71 165.71 0 1 1 571.42 0z"
+         d="M 665.71429,446.64789 A 285.71429,165.71428 0 0 1 380,612.36217 285.71429,165.71428 0 0 1 94.285706,446.64789 285.71429,165.71428 0 0 1 380,280.93361 285.71429,165.71428 0 0 1 665.71429,446.64789 Z"
          transform="matrix(.68142 0 0 .88014 79.529 263.98)"
          sodipodi:cy="446.64789"
          sodipodi:cx="380" />

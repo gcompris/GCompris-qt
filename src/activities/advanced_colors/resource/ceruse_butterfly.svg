@@ -13,39 +13,10 @@
    height="77.923302"
    id="svg10560"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="fawn_butterfly.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="ceruse_butterfly.svg">
   <defs
-     id="defs10562">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
-       id="perspective11478" />
-    <inkscape:perspective
-       id="perspective10705"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       sodipodi:type="inkscape:persp3d" />
-    <inkscape:path-effect
-       fuse_tolerance="0"
-       vertical_pattern="false"
-       prop_units="false"
-       tang_offset="0"
-       normal_offset="0"
-       spacing="0"
-       scale_y_rel="false"
-       prop_scale="1"
-       copytype="single_stretched"
-       pattern="m 185.52914,340.54624 c 0,64.30172 -78.26605,55 -159.999977,37.14286 -80.54822,-17.59809 -168.571433,-59.26971 -168.571433,-123.57143 0,-64.30173 88.875593,-98.20987 169.285713,-116.42858 44.136,-10 120.902377,-22.54697 148.231727,4.61889 19.90137,19.78232 11.05397,171.14376 11.05397,198.23826 z"
-       is_visible="true"
-       id="path-effect11375"
-       effect="skeletal" />
-  </defs>
+     id="defs10562" />
   <sodipodi:namedview
      id="base"
      pagecolor="#82e44f"
@@ -76,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -113,7 +84,7 @@
              inkscape:connector-curvature="0" />
           <path
              transform="matrix(1.3435804,-1.058113,1.058113,1.3435804,-587.61887,110.94261)"
-             d="m 497.14287,556.64789 a 147.14287,41.428574 0 1 1 -294.28574,0 147.14287,41.428574 0 1 1 294.28574,0 z"
+             d="M 497.14287,556.64789 A 147.14287,41.428574 0 0 1 350,598.07646 147.14287,41.428574 0 0 1 202.85713,556.64789 147.14287,41.428574 0 0 1 350,515.21931 147.14287,41.428574 0 0 1 497.14287,556.64789 Z"
              sodipodi:ry="41.428574"
              sodipodi:rx="147.14287"
              sodipodi:cy="556.64789"

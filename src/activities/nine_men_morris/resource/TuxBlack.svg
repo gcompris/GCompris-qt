@@ -15,7 +15,7 @@
    inkscape:version="0.91 r13725"
    width="100"
    height="100"
-   sodipodi:docname="TuxCircle.svg">
+   sodipodi:docname="TuxBlack.svg">
   <metadata
      id="metadata2993">
     <rdf:RDF>
@@ -62,17 +62,6 @@
        id="linearGradient4503-2"
        xlink:href="#linearGradient4497"
        inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient4166">
-      <stop
-         id="stop4168"
-         offset="0.0000000"
-         style="stop-color:#0e9adb;stop-opacity:1" />
-      <stop
-         id="stop4170"
-         offset="1.0000000"
-         style="stop-color:#075376;stop-opacity:1" />
-    </linearGradient>
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4200"
