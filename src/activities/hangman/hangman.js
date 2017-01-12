@@ -136,8 +136,8 @@ function processKeyPress(text) {
     // Add the character to the already typed characters
     alreadyTypedLetters.push(text);
 
-    // add
-    items.guessedText.text=form()
+    // add the typed character in the "Attempted characters" text field
+    createAttemptedText()
 
     // Get all the indices of this letter in the word
     var indices = [];
@@ -203,7 +203,7 @@ function initSubLevel() {
     alreadyTypedLetters = new Array();
     currentWord = items.goodWord.translatedTxt;
     items.hidden.text = ""
-    items.guessedText.text=qsTr("Attempted: ");
+    createAttemptedText()
 
     for(var i = 0; i < currentWord.length ; ++ i) {
         if(currentWord[i] == " ") {
@@ -214,13 +214,9 @@ function initSubLevel() {
     }
 }
 
-function form() {
+function createAttemptedText() {
     alreadyTypedLetters.sort()
-    var str="Attempted: "
-    for(var i=0;i<alreadyTypedLetters.length;i++) {
-        str=str.concat(alreadyTypedLetters[i], ", ");
-    }
-    return qsTr(str)
+    items.guessedText.text = qsTr("Attempted: %1").arg(alreadyTypedLetters.join(", "))
 }
 
 function nextSubLevel() {

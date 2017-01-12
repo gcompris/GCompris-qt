@@ -137,6 +137,7 @@ ActivityBase {
             color: "#FFFFFF"
             wrapMode: Text.WordWrap
             horizontalAlignment: Text.AlignHCenter
+            width: parent.width - 2*clock.width
             anchors {
                 horizontalCenter: parent.horizontalCenter
             }
@@ -180,9 +181,10 @@ ActivityBase {
   		    id: imageframe
             width: Math.min(300 * ApplicationInfo.ratio,
                             background.width * 0.8,
-                            hidden.y)
+                            hidden.y) - guessedText.height
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: guessedText.bottom
             y: 5 * ApplicationInfo.ratio
             z: 10
             opacity: items.easyMode ? 1 : 0
@@ -190,11 +192,8 @@ ActivityBase {
 		        id: wordImage
 		        smooth: true
                 visible: false
-                anchors {
-                    top: guessedText.bottom
-                    horizontalCenter: parent.horizontalCenter
-                    verticalCenter: parent.verticalCenter
-                }
+
+                anchors.fill: parent
                 property string nextSource
                 function changeSource(nextSource_) {
                     nextSource = nextSource_
