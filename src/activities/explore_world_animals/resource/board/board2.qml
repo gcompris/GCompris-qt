@@ -72,7 +72,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
             "title": qsTr("Moose"),
-            "text": qsTr("Being the largest of all the deers, moose eats as much as 25 kg a day. However, it's not easy: sometimes moose stands on its hind legs to reach branches up to 4 meters!"),
+            "text": qsTr("Being the largest of all the deers, moose eats as much as 25 kg a day. However, it's not easy, so sometimes moose has to stand on its hind legs to reach branches up to 4 meters!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/moose.jpg",
             "text2": qsTr("Moose"),
             "x": 0.25,
