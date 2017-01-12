@@ -39,7 +39,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
             "title": qsTr("Polar bear"),
-            "text": qsTr("Polar bear is one of the world's largest predatory mammals. It weights up to a ton and can be as long as 3 metres!"),
+            "text": qsTr("Polar bear is one of the world's largest predatory mammals. It weights up to a ton and can be as long as 3 meters!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/polar_bear.jpg",
             "text2": qsTr("Polar bear"),
             "x": 0.75,
@@ -72,7 +72,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
             "title": qsTr("Moose"),
-            "text": qsTr("Being the largest of all the deers, moose eats as much as 25 kg a day. However, it's not easy: sometimes moose stands on its hind legs to reach branches up to 4 metres!"),
+            "text": qsTr("Being the largest of all the deers, moose eats as much as 25 kg a day. However, it's not easy: sometimes moose stands on its hind legs to reach branches up to 4 meters!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/moose.jpg",
             "text2": qsTr("Moose"),
             "x": 0.25,
