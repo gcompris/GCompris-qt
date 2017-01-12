@@ -75,6 +75,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias keyboard: keyboard
             property alias hidden: hidden
+            property alias guessedText: guessedText
             property alias textinput: textinput
             property alias wordImage: wordImage
             property alias score: score
@@ -124,6 +125,39 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 bottom: bar.top
                 bottomMargin: 5 * ApplicationInfo.ratio
+            }
+            z: 11
+        }
+
+        GCText {
+            id: gTextHeader
+            fontSize: smallSize
+            color: "#4d4d4d"
+            text: "Letters not yet tried: "
+            font.letterSpacing: 0.5
+            width: parent.width * 0.9
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+            anchors {
+                //verticalCenter: parent.verticalCenter
+                right: parent.right
+                top: parent.top
+            }
+            z: 11
+        }
+
+        GCText {
+            id: guessedText
+            fontSize: smallSize
+            color: "#4d4d4d"
+            font.letterSpacing: 0.5
+            width: parent.width * 0.9
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+            anchors {
+                verticalCenter: parent.verticalCenter
+                right: parent.right
+                top: gTextHeader.bottom
             }
             z: 11
         }
