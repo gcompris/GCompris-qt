@@ -101,6 +101,7 @@ money_back
 money_back_cents
 money_cents
 mosaic
+multiplication_tables
 nine_men_morris
 nine_men_morris_2players
 number_sequence
