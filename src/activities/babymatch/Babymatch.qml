@@ -40,10 +40,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg" 
 
         signal start
         signal stop
@@ -110,21 +110,24 @@ ActivityBase {
             name: ""
         }
 
-        Rectangle {
+        Image {
             id: leftWidget
+            source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
             width: background.vert ?
                        90 * ApplicationInfo.ratio :
                        background.width
             height: background.vert ?
                         background.height :
                         90 * ApplicationInfo.ratio
-            color: "#FFFF42"
-            border.color: "#FFD85F"
-            border.width: 4
             anchors.left: parent.left
             ListWidget {
                 id: availablePieces
                 vert: background.vert
+            }
+            MouseArea {
+                anchors.fill: parent
+                onPressed: (instruction.opacity == 0 ?
+                                instruction.show() : instruction.hide())
             }
         }
 
@@ -141,13 +144,7 @@ ActivityBase {
             opacity: 1
             radius: 10
             z: 100
-            border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            color: "#E8E8E8"
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
@@ -159,14 +156,32 @@ ActivityBase {
                     opacity = 0
                 }
             }
-
+            
+            Rectangle {
+                width: parent.width - anchors.margins
+                height: parent.height - anchors.margins
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.margins: parent.height/8
+                radius: 10
+                color: "#87A6DD"  //light blue
+            }
+        
+            Rectangle {
+                width: parent.width - anchors.margins
+                height: parent.height - anchors.margins
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.margins: parent.height/4
+                radius: 10
+                color: "#E8E8E8" //paper white
+            }
+            
             GCText {
                 id: toolTipTxt
                 anchors.centerIn: parent
                 fontSize: regularSize
-                color: "white"
-                style: Text.Outline
-                styleColor: "black"
+                color: "#373737"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: TextEdit.WordWrap
             }
@@ -237,25 +252,22 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: (instruction.opacity === 0 ?
+                    onPressed: (instruction.opacity == 0 ?
                                     instruction.show() : instruction.hide())
                 }
             }
         }
-
+        
         Rectangle {
             id: instruction
-            anchors.fill: instructionTxt
+            anchors.horizontalCenter: instructionTxt.horizontalCenter
+            anchors.verticalCenter: instructionTxt.verticalCenter
+            width: instructionTxt.width + 40
+            height: instructionTxt.height + 40
             opacity: 0.8
             radius: 10
             z: 3
-            border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            color: "#87A6DD"  //light blue
             property alias text: instructionTxt.text
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -266,6 +278,17 @@ ActivityBase {
             }
             function hide() {
                 opacity = 0
+            }
+            
+            Rectangle {
+                id: insideFill
+                width: parent.width - anchors.margins
+                height: parent.height - anchors.margins
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.margins: parent.height/8
+                radius: 10
+                color: "#E8E8E8" //paper white
             }
         }
 
@@ -279,9 +302,7 @@ ActivityBase {
             opacity: instruction.opacity
             z: instruction.z
             fontSize: regularSize
-            color: "white"
-            style: Text.Outline
-            styleColor: "black"
+            color: "#373737"
             horizontalAlignment: Text.AlignHCenter
             width: Math.max(Math.min(parent.width * 0.9, text.length * 11), parent.width * 0.3)
             wrapMode: TextEdit.WordWrap

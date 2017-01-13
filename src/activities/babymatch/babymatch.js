@@ -186,6 +186,10 @@ function initLevel() {
         items.availablePieces.view.displayedGroup[i] = true
 }
 
+function hideInstructions() {
+        items.instruction.opacity = 0
+}
+
 function nextSubLevel() {
 	if(numberOfSubLevel < ++currentSubLevel) {
         currentSubLevel = 0
