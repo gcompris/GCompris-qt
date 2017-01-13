@@ -15,7 +15,11 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
+<<<<<<< HEAD
    sodipodi:docname="explore_world_music.svg"
+=======
+   sodipodi:docname="explore-music.svg"
+>>>>>>> bd6efef8e8b81950959c2783b1ca479111099a39
    inkscape:export-filename="/home/ilya/explore_music/explore-music.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -39,7 +43,106 @@
      inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <defs
+<<<<<<< HEAD
      id="defs4" />
+=======
+     id="defs4">
+    <inkscape:perspective
+       id="perspective4717"
+       inkscape:persp3d-origin="-25.104075 : -60.712814 : 1"
+       inkscape:vp_z="28.895925 : -93.439004 : 1"
+       inkscape:vp_y="-6.9812603 : 999.97563 : 0"
+       inkscape:vp_x="-105.71121 : -68.117577 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <linearGradient
+       id="linearGradient3399-8">
+      <stop
+         id="stop3401-7-6"
+         style="stop-color:#fcffff"
+         offset="0" />
+      <stop
+         id="stop3403-4-8"
+         style="stop-color:#656666;stop-opacity:.99320"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3243-2">
+      <stop
+         id="stop3245-0"
+         style="stop-color:#f4f7f7;stop-opacity:0"
+         offset="0" />
+      <stop
+         id="stop3247-6"
+         style="stop-color:#464e3b;stop-opacity:.55782"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3259-6">
+      <stop
+         id="stop3261-3"
+         style="stop-color:#fcffff;stop-opacity:0"
+         offset="0" />
+      <stop
+         id="stop3263-2"
+         style="stop-color:#ececec;stop-opacity:.99608"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3276-9">
+      <stop
+         id="stop3278-7"
+         style="stop-color:#cbcce4"
+         offset="0" />
+      <stop
+         id="stop3280-1"
+         style="stop-color:#575f66"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3421-6">
+      <stop
+         id="stop3423-3"
+         style="stop-color:#08100a"
+         offset="0" />
+      <stop
+         id="stop3453-7"
+         style="stop-color:#595b5a"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3260-9">
+      <stop
+         id="stop3262-3"
+         style="stop-color:#a3aebc"
+         offset="0" />
+      <stop
+         id="stop3264-0"
+         style="stop-color:#5a5f66"
+         offset="1" />
+    </linearGradient>
+    <inkscape:perspective
+       id="perspective4717-7"
+       inkscape:persp3d-origin="103.3398 : -1240.5729 : 1"
+       inkscape:vp_z="157.3398 : -1273.2991 : 1"
+       inkscape:vp_y="-6.9812603 : 999.97563 : 0"
+       inkscape:vp_x="22.732676 : -1247.9776 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4717-7-7"
+       inkscape:persp3d-origin="176.89417 : -2993.2007 : 1"
+       inkscape:vp_z="248.8672 : -3037.4818 : 1"
+       inkscape:vp_y="-9.3048594 : 1353.0447 : 0"
+       inkscape:vp_x="69.458271 : -3003.2199 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective4717-7-7-9"
+       inkscape:persp3d-origin="135.89417 : -3947.5629 : 1"
+       inkscape:vp_z="207.8672 : -3991.844 : 1"
+       inkscape:vp_y="-9.3048594 : 1353.0447 : 0"
+       inkscape:vp_x="28.458272 : -3957.5821 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+>>>>>>> bd6efef8e8b81950959c2783b1ca479111099a39
   <metadata
      id="metadata7">
     <rdf:RDF>

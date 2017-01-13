@@ -965,7 +965,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2009-05-28T22:36:41</dc:date>
         <dc:description>The board setout of Nine Men's Morris.</dc:description>
         <dc:source>https://openclipart.org/detail/26344/nine-mens-morris-by-chovynz</dc:source>

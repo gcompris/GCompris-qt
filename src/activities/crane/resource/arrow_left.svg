@@ -15,7 +15,11 @@
    id="svg4873"
    version="1.1"
    inkscape:version="0.91 r13725"
+<<<<<<< HEAD
    sodipodi:docname="arrow_left.svg">
+=======
+   sodipodi:docname="arrow_key.svg">
+>>>>>>> bd6efef8e8b81950959c2783b1ca479111099a39
   <defs
      id="defs4875" />
   <sodipodi:namedview
@@ -48,7 +52,11 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+<<<<<<< HEAD
         <dc:title />
+=======
+        <dc:title></dc:title>
+>>>>>>> bd6efef8e8b81950959c2783b1ca479111099a39
       </cc:Work>
     </rdf:RDF>
   </metadata>
