@@ -28,11 +28,6 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 # enable qml debugging for DEBUG builds:
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DQT_QML_DEBUG")
 
-if(WIN32)
-  add_definitions(-D_ATL_XP_TARGETING)
-  add_definitions(-D_USING_V110_SDK71_)
-endif(WIN32)
-
 set(GCOMPRIS_MAJOR_VERSION 0)
 set(GCOMPRIS_MINOR_VERSION 71)
 set(GCOMPRIS_PATCH_VERSION 0)

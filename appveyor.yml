@@ -27,13 +27,6 @@ install:
 
     set Path=%QT5%\bin;%Path%
 
-    set INCLUDE=%ProgramFiles(x86)%\Microsoft SDKs\Windows\7.1A\Include;%INCLUDE%
-    set PATH=%ProgramFiles(x86)%\Microsoft SDKs\Windows\7.1A\Bin;%PATH%
-    
-    set LIB=%ProgramFiles(x86)%\Microsoft SDKs\Windows\7.1A\Lib;%LIB%
-    
-    set CL=/D_USING_V110_SDK71_;%CL%
-
     cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build"
 
     cmake --build build --config RelWithDebInfo --target DlAndInstallBundledConvertedOggs
