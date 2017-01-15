@@ -50,7 +50,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
             "title": qsTr("Kangaroo"),
-            "text": qsTr("Kangaroo lives in Australia and is well-known for pounch on its belly used to cradle baby kangaroos."),
+            "text": qsTr("Kangaroo lives in Australia and is well-known for pouch on its belly used to cradle baby kangaroos."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/kangaroo.jpg",
             "text2": qsTr("Kangaroo"),
             "x": 0.87,
