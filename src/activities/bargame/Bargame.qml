@@ -106,9 +106,9 @@ ActivityBase {
             id: tux
             source: Activity.url + "tux" + (bar.level + 1) + ".svg"
             height: rootWindow.height / 3.8
-            width: rootWindow.width / 8
+            width: rootWindow.width > rootWindow.height ? rootWindow.width / 8 : rootWindow.width / 5
             y: rootWindow.height - rootWindow.height / 1.8
-            x: rootWindow.width - rootWindow.width / Activity.tuxPositionFactor[items.mode - 1];
+            x: rootWindow.width - rootWindow.width / 1.05
             MouseArea {
                 id: tuxArea
                 hoverEnabled: true
@@ -136,15 +136,15 @@ ActivityBase {
                 id: blueBalls
                 columns: Activity.sampleBallsNumber[items.mode - 1]
                 rows: 1
-                x: rootWindow.width / 1.9
+                x: rootWindow.width - columns * (rootWindow.height / 15)
                 y: rootWindow.height / 1.7
                 Repeater {
                     model: blueBalls.columns
                     Image {
                         id: blueBall
                         source: Activity.url + "blue_ball.svg"
-                        height: rootWindow.height / (8 + Activity.ballSizeFactor[items.mode - 1])
-                        width: rootWindow.width / (15 + Activity.ballSizeFactor[items.mode - 1])
+                        height: width
+                        width: rootWindow.height / 15
                     }
                 }
             }
@@ -152,8 +152,8 @@ ActivityBase {
             // Lower green balls sample
             Grid {
                 id: greenBalls
-                x: rootWindow.width / 1.9
-                y: rootWindow.height / 1.2
+                x: rootWindow.width - columns * (rootWindow.height / 15)
+                y: boxes.y + rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1]) + 2
                 rows: 1
                 columns: Activity.sampleBallsNumber[items.mode - 1]
                 Repeater {
@@ -161,8 +161,8 @@ ActivityBase {
                     Image {
                         id: greenBall
                         source: Activity.url + "green_ball.svg"
-                        height: rootWindow.height / (8 + Activity.ballSizeFactor[items.mode - 1])
-                        width: rootWindow.width / (15 + Activity.ballSizeFactor[items.mode - 1])
+                        height: width
+                        width: rootWindow.height / 15
                     }
                 }
             }
@@ -247,9 +247,9 @@ ActivityBase {
         // OK BUTTON
         Image {
             id: playLabel
-            x: rootWindow.width / 1.2
-            y: rootWindow.height / 2.4
-            width: rootWindow.width / 15
+            x: ballNumberPlate.x - width - 2
+            y: rootWindow.height / 3.0
+            width: rootWindow.height / 13
             height: width
             source: Activity.url + "bar_ok.svg"
             MouseArea {
@@ -282,15 +282,12 @@ ActivityBase {
         // Number of balls to be placed
         Image {
             id: ballNumberPlate
-            x: rootWindow.width / 1.15
-            y: rootWindow.height / 1.2
+            y: rootWindow.height / 3.1
             source: Activity.url + "enumerate_answer.svg"
-            width: rootWindow.width / 8
+            width: rootWindow.height / 8
             height: rootWindow.height / 9
 
             anchors {
-                bottom: parent.width > parent.height ? bar.bottom : bar.top
-                bottomMargin: 10
                 right: rootWindow.right
                 rightMargin: 2 * ApplicationInfo.ratio
             }
@@ -320,7 +317,7 @@ ActivityBase {
             Image {
                 id: ballIcon
                 source: Activity.url + "green_ball.svg"
-                width: rootWindow.width / 16
+                width: rootWindow.height / 16
                 height: rootWindow.height / 10
                 anchors {
                     verticalCenter: ballNumberPlate.verticalCenter

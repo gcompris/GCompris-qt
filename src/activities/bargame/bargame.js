@@ -25,8 +25,6 @@
 
 var numberBalls = [[1, 4], [2, 6], [3, 6]]
 var sampleBallsNumber = [4, 6, 6]
-var tuxPositionFactor = [1.05, 1.4, 1.05]
-var ballSizeFactor = [0, 4, 4]
 var elementSizeFactor = [0, 4, 7]
 var boardSize = [15, 19, 29]
 var moveCount = -1
