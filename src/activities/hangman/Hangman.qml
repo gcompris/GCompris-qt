@@ -75,6 +75,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias keyboard: keyboard
             property alias hidden: hidden
+            property alias guessedText: guessedText
             property alias textinput: textinput
             property alias wordImage: wordImage
             property alias score: score
@@ -124,6 +125,37 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 bottom: bar.top
                 bottomMargin: 5 * ApplicationInfo.ratio
+
+            }
+            z: 11
+        }
+
+
+        GCText {
+            id: guessedText
+            fontSize: smallSize
+            color: "#FFFFFF"
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+            width: parent.width - 2*clock.width
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+            }
+            z: 12
+        }
+
+        Rectangle {
+            width: guessedText.width
+            height: guessedText.height
+            radius: 10
+            border.width: 1
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
+            anchors {
+                horizontalCenter: parent.horizontalCenter
             }
             z: 11
         }
@@ -149,9 +181,10 @@ ActivityBase {
   		    id: imageframe
             width: Math.min(300 * ApplicationInfo.ratio,
                             background.width * 0.8,
-                            hidden.y)
+                            hidden.y) - guessedText.height
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: guessedText.bottom
             y: 5 * ApplicationInfo.ratio
             z: 10
             opacity: items.easyMode ? 1 : 0
@@ -159,6 +192,7 @@ ActivityBase {
 		        id: wordImage
 		        smooth: true
                 visible: false
+
                 anchors.fill: parent
                 property string nextSource
                 function changeSource(nextSource_) {

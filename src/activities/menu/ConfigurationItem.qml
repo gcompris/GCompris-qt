@@ -248,7 +248,7 @@ Item {
         GCDialogCheckBox {
             id: wordsetBox
             checked: DownloadManager.isDataRegistered("words")
-            text: qsTr("Use external large word image set")
+            text: enabled ? qsTr("Use full word image set") : qsTr("Download full word image set")
             visible: ApplicationInfo.isDownloadAllowed
             enabled: !DownloadManager.isDataRegistered("words")
             onCheckedChanged: {
