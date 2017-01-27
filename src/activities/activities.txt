@@ -107,6 +107,7 @@ nine_men_morris_2players
 number_sequence
 numbers-odd-even
 paintings
+parachute
 penalty
 photo_hunter
 planegame
