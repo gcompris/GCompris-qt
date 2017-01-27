@@ -83,7 +83,23 @@ function playLetterSound(sound) {
 
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick) {
-        items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+        // add an indicator to the last visited node for "drawletter" and "drawnumbers" activity
+        if (mode == "drawletters" || mode == "drawnumbers") {
+            items.pointImageRepeater.itemAt(pointIndex).highlight = false
+            if(pointIndex<items.pointImageRepeater.count-1) {
+                items.pointImageRepeater.itemAt(pointIndex).lastVisitedNode = true
+                items.pointImageRepeater.itemAt(pointIndex).scale = 0.5
+            } else {
+                items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+            }
+            if(pointIndex>0) {
+                items.pointImageRepeater.itemAt(pointIndex-1).opacity = 0
+                items.pointImageRepeater.itemAt(pointIndex-1).lastVisitedNode = false
+            }
+        } else {
+            items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+        }
+
         if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
