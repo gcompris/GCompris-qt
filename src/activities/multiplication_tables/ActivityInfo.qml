@@ -28,6 +28,6 @@ ActivityInfo {
   goal: qsTr("Help children to learn & memorise multiplication tables")
   prerequisite: qsTr("basic mathematical concepts")
   credit: ""
-  section: "fun"
-  createdInVersion: 7000
+  section: "math"
+  createdInVersion: 8000
 }

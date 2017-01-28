@@ -53,8 +53,8 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
-            property alias bar: bar
+            property alias background: background           
+            property alias bar: bar           
             property alias bonus: bonus
             property alias start_button: start_button
             property alias stop_button: stop_button
@@ -78,7 +78,7 @@ ActivityBase {
             spacing: bar.height * 0.4
             anchors {
                 left: background.left
-                right: background.rigth
+                right: background.right
                 margins: bar.height * 0.6
             }
             Repeater {
@@ -102,7 +102,7 @@ ActivityBase {
 
         Button {
             id: stop_button
-            text: qsTr(" FINISH ")
+            text: qsTr("FINISH")
             anchors.bottom: parent.bottom
             anchors.right: parent.right
             anchors {
@@ -131,20 +131,20 @@ ActivityBase {
             onClicked: {
                 if (startButtonClicked == true) {
                     score.visible = true
-                    var str1 = new Date().getTime() - startTime
-                    var str2 = str1/1000
-                    time.text = qsTr("Your time: %1 seconds").arg(str2)
+                    var str1 = (new Date().getTime() - startTime)/1000
+                    time.text = qsTr("Your time: %1 seconds").arg(str1)
                     startTime = 0
                     startButtonClicked = false
-                    start_button.text = qsTr("START AGAIN")
+                    start_button.text = qsTr("START AGAIN")                    
                     Activity.verifyAnswer()
+                    Activity.cannotAnswer()
                 }
             }
         }
 
         Button {
             id: start_button
-            text: qsTr(" START ")
+            text: qsTr("START")
             anchors.bottom: parent.bottom
             anchors.right: stop_button.left
             anchors {
@@ -171,7 +171,8 @@ ActivityBase {
             onClicked: {
                 if (startTime == 0 && startButtonClicked == false) {
                     Activity.resetvalue()
-                    start_button.text = qsTr(" START ")
+                    Activity.canAnswer()
+                    start_button.text = qsTr("START")
                     time.text = qsTr(" Your Timer Started...")
                     startTime = new Date().getTime()
                     startButtonClicked = true

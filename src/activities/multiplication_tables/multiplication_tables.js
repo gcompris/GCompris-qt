@@ -33,7 +33,7 @@ var url
 var table
 var question = []
 var answer = []
-var score_cnt = 0
+var scoreCounter = 0
 
 function start(_items, _mode, _dataset, _url) {
     items = _items
@@ -48,18 +48,22 @@ function start(_items, _mode, _dataset, _url) {
 function stop() {}
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
+    items.bar.level = currentLevel + 1    
+    resetvalue();
+    items.start_button.text = qsTr("START")
+    items.score.visible = false
+    items.time.text = "--"
     loadQuestions()
+    cannotAnswer()
 }
 
 function loadQuestions() {
     var i
     question = dataset[currentLevel].questions
     answer = dataset[currentLevel].answers
-    table = dataset[currentLevel].TableName
-
+    table = dataset[currentLevel].tableName
     for (i = 0; i < question.length; i++) {
-        items.repeater.itemAt(i).questionText = qsTr("%1 = ").arg(question[i])
+        items.repeater.itemAt(i).questionText = qsTr(question[i]) + " = "
     }
 }
 
@@ -67,27 +71,41 @@ function verifyAnswer() {
     var j
     for (j = 0; j < question.length; j++) {
         if (items.repeater.itemAt(j).answerText.toString() == answer[j]) {
-            score_cnt = score_cnt + 1
+            scoreCounter = scoreCounter + 1
             items.repeater.itemAt(j).questionImage = url + "right.svg"
-            items.repeater.itemAt(j).questionImage_visible = 1
+            items.repeater.itemAt(j).questionImageOpacity = 1
         }
-        else {
-            items.repeater.itemAt(j).questionImage_visible = 1
+        else if(items.repeater.itemAt(j).answerText.toString() != answer[j] && items.repeater.itemAt(j).answerText.toString() != ""){
+            items.repeater.itemAt(j).questionImageOpacity = 1
             items.repeater.itemAt(j).questionImage = url + "wrong.svg"
         }
     }
-    items.score.text = qsTr("Your Score :-  %1").arg(score_cnt.toString())
+    items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
+}
+
+function canAnswer() {
+    var q
+    for (q = 0; q < question.length; q++) {
+            items.repeater.itemAt(q).answerTextReadonly = false
+    }
+}
+
+function cannotAnswer() {
+    var r
+    for (r = 0; r < question.length; r++) {
+            items.repeater.itemAt(r).answerTextReadonly = true
+    }
 }
 
 function resetvalue() {
     var k
     for (k = 0; k < question.length; k++) {
-        items.repeater.itemAt(k).answerText = qsTr("")
-        items.repeater.itemAt(k).questionImage_visible = 0
-        score_cnt = 0
+        items.repeater.itemAt(k).answerText = ""
+        items.repeater.itemAt(k).questionImageOpacity = 0
+        scoreCounter = 0
         items.score.visible = false
     }
-    score_cnt = 0
+    scoreCounter = 0
     items.score.visible = false
 }
 
@@ -95,19 +113,12 @@ function nextLevel() {
     if (numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
-    initLevel();
-    resetvalue();
-    items.start_button.text = qsTr("START")
-    items.score.visible = false
-    items.time.text = qsTr("--")
+    initLevel();    
 }
 
 function previousLevel() {
     if (--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
-    initLevel();
-    resetvalue();
-    items.score.visible = false
-    items.time.text = qsTr("--")
+    initLevel();    
 }

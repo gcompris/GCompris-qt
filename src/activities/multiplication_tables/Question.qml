@@ -19,7 +19,8 @@ import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
 import QtQuick.Layouts 1.1
 import "multiplication_tables.js" as Activity
-import QtGraphicalEffects 1.0
+import "multiplicationtables_dataset.js" as Dataset
+
 import "../../core"
 import GCompris 1.0
 
@@ -28,8 +29,9 @@ Flow {
    property string url: "qrc:/gcompris/src/activities/multiplication_tables/resource/"
    property alias questionText: questionText.text
    property alias answerText: answerText.text
+   property alias answerTextReadonly: answerText.readOnly
    property alias questionImage: question_image.source
-   property alias questionImage_visible: question_image.opacity
+   property alias questionImageOpacity: question_image.opacity
 
     GCText {
       id: questionText
@@ -42,17 +44,21 @@ Flow {
   TextField {
       id: answerText
       height: 35
+      validator: IntValidator{bottom: 1; top: 200;}
+      activeFocusOnPress: true
+      readOnly: true
       font.pixelSize: 20
       style: TextFieldStyle {
       textColor: "#006060"
       background: Rectangle {
-      radius: 5
+      radius: 5      
       color: "orange"
       implicitWidth: bar.height * 0.9
       implicitHeight: bar.height * 0.3
       border.color: "#333"
       border.width: 1
       }
+
      }
     }
 
