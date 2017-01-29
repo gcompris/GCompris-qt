@@ -1,30 +1,31 @@
 /* GCompris - multiplication_tables.js
- *
- * Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
- *
- * Authors:
- *
- *   "Nitish Chauhan" <nitish.nc18@gmail.com> (Qt Quick port)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
+*
+* Authors:
+*
+*   "Nitish Chauhan" <nitish.nc18@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 .pragma library
-    .import QtQuick 2.2 as Quick
-    .import GCompris 1.0 as GCompris //for ApplicationInfo
-    .import "qrc:/gcompris/src/core/core.js" as Core
+.import QtQuick 2.2 as Quick
+.import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
+var schoolMode
 var items
 var mode
 var dataset
@@ -48,7 +49,7 @@ function start(_items, _mode, _dataset, _url) {
 function stop() {}
 
 function initLevel() {
-    items.bar.level = currentLevel + 1    
+    items.bar.level = currentLevel + 1
     resetvalue();
     items.start_button.text = qsTr("START")
     items.score.visible = false
@@ -86,14 +87,14 @@ function verifyAnswer() {
 function canAnswer() {
     var q
     for (q = 0; q < question.length; q++) {
-            items.repeater.itemAt(q).answerTextReadonly = false
+        items.repeater.itemAt(q).answerTextReadonly = false
     }
 }
 
 function cannotAnswer() {
     var r
     for (r = 0; r < question.length; r++) {
-            items.repeater.itemAt(r).answerTextReadonly = true
+        items.repeater.itemAt(r).answerTextReadonly = true
     }
 }
 
@@ -113,12 +114,12 @@ function nextLevel() {
     if (numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
-    initLevel();    
+    initLevel();
 }
 
 function previousLevel() {
     if (--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
-    initLevel();    
+    initLevel();
 }
