@@ -28,12 +28,13 @@ import "bargame.js" as Activity
 ActivityBase {
     id: activity
     property int gameMode: 1
+
     onStart: focus = true
     onStop: {}
 
     pageComponent: Image {
         id: rootWindow
-        source: Activity.url + "school_bg" + (bar.level + 1) + ".svg"
+        source: Activity.url + "school_bg" + bar.level + ".svg"
         sourceSize.height: parent.height
         sourceSize.width: parent.width
         anchors.fill: parent
@@ -88,7 +89,7 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.start(items, gameMode)
+            Activity.start(items, gameMode);
             Activity.calculateWinPlaces();
         }
         onStop: { Activity.stop() }
@@ -104,7 +105,7 @@ ActivityBase {
         // Tux image
         Image {
             id: tux
-            source: Activity.url + "tux" + (bar.level + 1) + ".svg"
+            source: Activity.url + "tux" + bar.level + ".svg"
             height: rootWindow.height / 3.8
             width: rootWindow.width > rootWindow.height ? rootWindow.width / 8 : rootWindow.width / 5
             y: rootWindow.height - rootWindow.height / 1.8
@@ -122,7 +123,7 @@ ActivityBase {
             }
             states: State {
                 name: "tuxHover"
-                when: tuxArea.containsMouse
+                when: tuxArea.containsPress
                 PropertyChanges {
                     target: tux
                     scale: 1.1
@@ -153,7 +154,7 @@ ActivityBase {
             Grid {
                 id: greenBalls
                 x: rootWindow.width - columns * (rootWindow.height / 15)
-                y: boxes.y + rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1]) + 2
+                y: boxes.y + rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1]) + 2
                 rows: 1
                 columns: Activity.sampleBallsNumber[items.mode - 1]
                 Repeater {
@@ -184,7 +185,7 @@ ActivityBase {
                     Image {
                         id: greenCase
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
-                        height: rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        height: width
                         width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
                         visible: true
                         // Numbering label
@@ -216,7 +217,7 @@ ActivityBase {
                         model: answerBallsPlacement.columns
                         Image {
                             source: Activity.url + "green_ball.svg"
-                            height: rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                            height: width
                             width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
                             opacity: 0.0
                         }
@@ -237,7 +238,7 @@ ActivityBase {
                     Image {
                         id: greenMask
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
-                        height: rootWindow.height / (9 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        height: width
                         width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
                     }
                 }
@@ -247,11 +248,15 @@ ActivityBase {
         // OK BUTTON
         Image {
             id: playLabel
-            x: ballNumberPlate.x - width - 2
-            y: rootWindow.height / 3.0
             width: rootWindow.height / 13
             height: width
             source: Activity.url + "bar_ok.svg"
+            anchors {
+                right: ballNumberPlate.left
+                verticalCenter: ballNumberPlate.verticalCenter
+                rightMargin: width / 4
+            }
+
             MouseArea {
                 id: okArea
                 anchors.fill: parent
@@ -271,7 +276,7 @@ ActivityBase {
             }
             states: State {
                 name: "mouseHover"
-                when: okArea.containsMouse
+                when: okArea.containsPress
                 PropertyChanges {
                     target: playLabel
                     scale: 1.2
@@ -306,7 +311,7 @@ ActivityBase {
             }
             states: State {
                 name: "numberHover"
-                when: numberPlateArea.containsMouse
+                when: numberPlateArea.containsPress
                 PropertyChanges {
                     target: ballNumberPlate
                     scale: 1.1
@@ -332,7 +337,8 @@ ActivityBase {
                 font.bold: true
                 fontSize: smallSize
                 anchors {
-                    centerIn: ballNumberPlate
+                    left: ballIcon.right
+                    verticalCenter: ballIcon.verticalCenter
                 }
             }
         }
@@ -654,7 +660,8 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config }
+            level: 1
+            content: BarEnumContent { value: help | home | level | reload | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -667,6 +674,7 @@ ActivityBase {
                 dialogActivityConfig.setDefaultValues();
                 displayDialog(dialogActivityConfig)
             }
+            onReloadClicked: Activity.restartLevel()
         }
 
         Bonus {

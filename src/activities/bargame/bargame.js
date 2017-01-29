@@ -28,7 +28,6 @@ var sampleBallsNumber = [4, 6, 6]
 var elementSizeFactor = [0, 4, 7]
 var boardSize = [15, 19, 29]
 var moveCount = -1
-var level = 1
 var maxlevel = 4
 var numberOfsublevel = 3
 var listWin = false
@@ -39,16 +38,15 @@ var numberOfBalls = 1
 var url= "qrc:/gcompris/src/activities/bargame/resource/";
 
 function start(items_, gameMode_) {
-    items = items_
-    gameMode = gameMode_
-    initLevel()
+    items = items_;
+    gameMode = gameMode_;
+    initLevel();
 }
 
 function stop() {
 }
 
 function initLevel() {
-    items.okArea.enabled = true;
     if (items.isPlayer1Beginning === true) {
         initiatePlayer1();
         items.isPlayer1Turn = true;
@@ -58,13 +56,11 @@ function initLevel() {
     }
 
     calculateWinPlaces();
+    items.okArea.enabled = true;
     items.tuxArea.enabled = true;
     items.tuxArea.hoverEnabled = true;
     moveCount = -1;
-    items.numberLabel.text = numberBalls[items.mode - 1][0];
-    numberOfBalls = 1;
-
-    items.bar.level = level - 1;
+    items.numberLabel.text = numberOfBalls = numberBalls[items.mode - 1][0];
 
     // Hiding all visible balls
     for (var x = 0; x < items.answerBallsPlacement.columns; x++) {
@@ -73,18 +69,24 @@ function initLevel() {
 }
 
 function nextLevel() {
-    level++;
-    if (level > 4) {
-        level = 1;
+    if (items.bar.level === 4) {
+        items.bar.level = 1;
+    } else {
+        items.bar.level++;
     }
     initLevel();
 }
 
 function previousLevel() {
-    level--;
-    if (level < 1) {
-        level = 4;
+    if (items.bar.level === 1) {
+        items.bar.level = 4;
+    } else {
+        items.bar.level--;
     }
+    initLevel();
+}
+
+function restartLevel() {
     initLevel();
 }
 
@@ -108,7 +110,7 @@ function calculateWinPlaces() {
         }
     }
 
-    var level_win = (level - 1) * min;
+    var level_win = (items.bar.level - 1) * min;
 
     if (level_win == 0) {
         winners = [];
