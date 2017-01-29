@@ -105,4 +105,12 @@ QtObject {
      * Shown automatically during running download.
      */
     readonly property int download: 256
+
+    /**
+     * type:int
+     * Representation of the hint button.
+     *
+     * Used for displaying a hint to the children to help.
+     */
+    readonly property int hint: 512
 }

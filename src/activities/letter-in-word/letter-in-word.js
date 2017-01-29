@@ -61,33 +61,9 @@ function start(_items) {
 
 function loadDataset() {
     var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
-    dataset = Lang.load(items.parser, resourceUrl,
-                        GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                                                               "content-"+ locale +".json")
-    // If dataset is empty, we try to load from short locale
-    // and if not present again, we switch to default one
-    var localeUnderscoreIndex = locale.indexOf('_')
-    if(!dataset) {
-        var localeShort;
-        // We will first look again for locale xx (without _XX if exist)
-        if(localeUnderscoreIndex > 0) {
-            localeShort = locale.substring(0, localeUnderscoreIndex)
-        }
-        else {
-            localeShort = locale;
-        }
-        dataset = Lang.load(items.parser, resourceUrl,
-                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                                                                   "content-"+localeShort+ ".json")
-    }
-
-    if(!dataset) {
-        // English fallback
-        dataset = Lang.load(items.parser, resourceUrl,
-                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                                                                   "content-en.json")
-    }
-
+    var data = Lang.loadDataset(items.parser, resourceUrl, locale);
+    dataset = data["dataset"];
+    items.background.englishFallback = data["englishFallback"];
 }
 
 function stop() {

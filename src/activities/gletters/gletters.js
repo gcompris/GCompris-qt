@@ -22,7 +22,6 @@
 
 /* ToDo / open issues:
  * - adjust wordlist filenames once we have an ApplicationInfo.dataPath() or so
- * - make uppercaseOnly be taken from (activity-) settings
  */
 
 .pragma library

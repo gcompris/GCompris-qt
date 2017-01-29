@@ -451,12 +451,17 @@ int ApplicationSettings::loadActivityProgress(const QString &activity)
     m_config.endGroup();
     qDebug() << "loaded progress for activity" << activity << ":" << progress;
     return progress;
-
 }
 
 void ApplicationSettings::saveActivityProgress(const QString &activity, int progress)
 {
     updateValueInConfig(activity, PROGRESS_KEY, progress);
+}
+
+
+bool ApplicationSettings::useExternalWordset()
+{
+    return !m_wordset.isEmpty() && DownloadManager::getInstance()->isDataRegistered("words");
 }
 
 QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,

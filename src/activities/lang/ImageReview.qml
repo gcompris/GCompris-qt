@@ -140,6 +140,13 @@ Item {
         event.accepted = true
     }
 
+    Keys.onReleased: {
+        if (event.key === Qt.Key_Back) {
+            event.accepted = true
+            Activity.launchMenuScreen()
+        }
+    }
+
     Item {
         id: rootItem
         anchors.fill: parent

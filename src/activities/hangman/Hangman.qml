@@ -29,11 +29,11 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
-    
+
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
-    
+
     onStart: focus = true
     onStop:  { }
     // When going on configuration, it steals the focus and re set it to the activity.
@@ -53,13 +53,12 @@ ActivityBase {
 
         // system locale by default
         property string locale: "system"
-                
-        readonly property string wordsResource: "data2/words/words.rcc"
+
         property bool englishFallback: false
-        
+
         signal start
         signal stop
-        
+
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
@@ -127,7 +126,7 @@ ActivityBase {
             }
             z: 11
         }
-        
+
         TextInput {
             // Helper element to capture composed key events like french ô which
             // are not available via Keys.onPressed() on linux. Must be
@@ -144,7 +143,7 @@ ActivityBase {
             }
             onAccepted: if(items.remainingLife === 0) Activity.nextSubLevel()
         }
-        
+
         Item {
   		    id: imageframe
             width: Math.min(300 * ApplicationInfo.ratio,
@@ -235,7 +234,6 @@ ActivityBase {
                                 label: qsTr("Select your locale")
                             }
                         }
-                        
                     }
                 }
             }
@@ -265,7 +263,6 @@ ActivityBase {
                 }
             }
 
-
             function setDefaultValues() {
                 var localeUtf8 = background.locale;
                 if(background.locale != "system") {
@@ -280,7 +277,7 @@ ActivityBase {
                 }
             }
         }
-        
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -302,7 +299,7 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
-        
+
         Score {
             id: score
             anchors.top: undefined
@@ -311,7 +308,7 @@ ActivityBase {
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: keyboard.top
         }
-        
+
         BarButton {
 		  id: ok
 		  source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
@@ -371,8 +368,7 @@ ActivityBase {
                 }
             }
         }
-        
-        
+
         VirtualKeyboard {
             id: keyboard
             anchors.bottom: parent.bottom
@@ -381,7 +377,7 @@ ActivityBase {
             onKeypress: Activity.processKeyPress(text);
             onError: console.log("VirtualKeyboard error: " + msg);
         }
-        
+
         Bonus {
             id: bonus
             interval: 2000
@@ -405,5 +401,4 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
-
 }

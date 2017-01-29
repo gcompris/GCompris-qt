@@ -45,6 +45,8 @@ ActivityBase {
         // system locale by default
         property string locale: "system"
 
+        property bool englishFallback: false
+
         property bool keyboardMode: false
 
         signal start
@@ -61,6 +63,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias bar: bar
+            property alias background: background
             property alias wordsModel: wordsModel
             property GCAudio audioVoices: activity.audioVoices
             property alias parser: parser
@@ -69,6 +72,7 @@ ActivityBase {
             property alias score: score
             property alias bonus: bonus
             property alias locale: background.locale
+            property alias englishFallbackDialog: englishFallbackDialog
             property string question
         }
 
@@ -327,5 +331,20 @@ ActivityBase {
             onError: console.error("Click_on_letter: Error parsing JSON: " + msg);
         }
 
+        Loader {
+            id: englishFallbackDialog
+            sourceComponent: GCDialog {
+                parent: activity.main
+                message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
+                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
+                         "<br /> <br />" +
+                         qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
+                onClose: background.englishFallback = false
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.englishFallback
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
     }
 }

@@ -1,4 +1,4 @@
-/* GCompris - drawnumber.qml
+/* GCompris - NumberSequence.qml
 *
 * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
 *
@@ -23,16 +23,16 @@ import QtQuick 2.1
 import GCompris 1.0
 import "../../core"
 import "."
-import "drawnumber.js" as Activity
-import "drawnumber_dataset.js" as Dataset
+import "number_sequence.js" as Activity
+import "number_sequence_dataset.js" as Dataset
 
 
 ActivityBase {
     id: activity
-    property string mode: "drawnumber"
+    property string mode: "number_sequence"
     property var dataset: Dataset
     property real pointImageOpacity: 1.0
-    property string url: "qrc:/gcompris/src/activities/drawnumber/resource/"
+    property string url: "qrc:/gcompris/src/activities/number_sequence/resource/"
     onStart: focus = true
     onStop: {}
 
@@ -116,9 +116,9 @@ ActivityBase {
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
 
-                    // only hide last point for clickanddraw and drawnumbers
+                    // only hide last point for clickanddraw and number_sequence
                     // as the last point is also the first point
-                    visible: (mode=="clickanddraw" || mode=="drawnumbers") &&
+                    visible: (mode=="clickanddraw" || mode=="number_sequence") &&
                               index == pointImageRepeater.count - 1 &&
                               items.pointIndexToClick == 0 ? false : true
 

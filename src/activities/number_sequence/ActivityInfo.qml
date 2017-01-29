@@ -18,9 +18,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "drawnumber/Drawnumber.qml"
+  name: "number_sequence/NumberSequence.qml"
   difficulty: 2
-  icon: "drawnumber/drawnumber.svg"
+  icon: "number_sequence/number_sequence.svg"
   author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
   demo: true
   title: qsTr("Number sequence")

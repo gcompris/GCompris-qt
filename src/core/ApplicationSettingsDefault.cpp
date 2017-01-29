@@ -32,18 +32,18 @@ void ApplicationSettings::checkPayment() {
         setDemoMode(checkActivationCode(m_codeKey) < 2);
 }
 
-uint ApplicationSettings::checkActivationCode(const QString code) {
+uint ApplicationSettings::checkActivationCode(const QString &code) {
     if(code.length() != 12) {
         return 0;
     }
     bool ok;
-    uint year = code.mid(4, 3).toUInt(&ok, 16);
-    uint month = code.mid(7, 1).toUInt(&ok, 16);
-    uint crc = code.mid(8, 4).toUInt(&ok, 16);
+    uint year = code.midRef(4, 3).toUInt(&ok, 16);
+    uint month = code.midRef(7, 1).toUInt(&ok, 16);
+    uint crc = code.midRef(8, 4).toUInt(&ok, 16);
 
     uint expectedCrc =
-            code.mid(0, 4).toUInt(&ok, 16) ^
-            code.mid(4, 4).toUInt(&ok, 16) ^
+            code.midRef(0, 4).toUInt(&ok, 16) ^
+            code.midRef(4, 4).toUInt(&ok, 16) ^
             0xCECA;
 
     ok = (expectedCrc == crc && year < 2100 && month <= 12);

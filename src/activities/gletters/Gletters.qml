@@ -35,7 +35,8 @@ ActivityBase {
     /* no need to display the configuration button for smallnumbers */
     property bool configurationButtonVisible: true
 
-    property bool uppercaseOnly: false;  // FIXME: this should go in activity settings
+    property bool uppercaseOnly: false
+
     /* mode of the activity, "letter" (gletters) or "word" (wordsgame):*/
     property string mode: "letter"
 
@@ -125,6 +126,7 @@ ActivityBase {
             content: Component {
                 Item {
                     property alias localeBox: localeBox
+                    property alias uppercaseBox: uppercaseBox
                     height: column.height
 
                     property alias availableLangs: langs.languages
@@ -147,17 +149,12 @@ ActivityBase {
                                 label: qsTr("Select your locale")
                             }
                         }
-/* TODO handle this:
                         GCDialogCheckBox {
                             id: uppercaseBox
-                            width: 250 * ApplicationInfo.ratio
+                            width: dialogActivityConfig.width
                             text: qsTr("Uppercase only mode")
-                            checked: true
-                            onCheckedChanged: {
-                                print("uppercase changed")
-                            }
+                            checked: activity.uppercaseOnly
                         }
-*/
                     }
                 }
             }
@@ -166,6 +163,7 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["locale"]) {
                     background.locale = dataToSave["locale"];
+                    activity.uppercaseOnly = dataToSave["uppercaseMode"] === "true" ? true : false;
                 }
             }
             onSaveData: {
@@ -175,12 +173,14 @@ ActivityBase {
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
-                dataToSave = {"locale": newLocale}
+
+                var oldUppercaseMode = activity.uppercaseOnly
+                activity.uppercaseOnly = dialogActivityConfig.configItem.uppercaseBox.checked
+                dataToSave = {"locale": newLocale, "uppercaseMode": ""+activity.uppercaseOnly}
 
                 background.locale = newLocale;
-
                 // Restart the activity with new information
-                if(oldLocale !== newLocale) {
+                if(oldLocale !== newLocale || oldUppercaseMode !== activity.uppercaseOnly) {
                     background.stop();
                     background.start();
                 }

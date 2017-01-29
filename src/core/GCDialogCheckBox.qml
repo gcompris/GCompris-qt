@@ -38,9 +38,10 @@ CheckBox {
 
         indicator: Image {
             sourceSize.height: 50 * ApplicationInfo.ratio
+            property string suffix: control.enabled ? ".svg" : "_disabled.svg"
             source:
-                control.checked ? "qrc:/gcompris/src/core/resource/apply.svg" :
-                                  "qrc:/gcompris/src/core/resource/cancel.svg"
+                control.checked ? "qrc:/gcompris/src/core/resource/apply" + suffix :
+                                  "qrc:/gcompris/src/core/resource/cancel" + suffix
         }
         label: GCText {
             fontSize: mediumSize

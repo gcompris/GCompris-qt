@@ -1,4 +1,4 @@
-/* GCompris - DropAnswerItem.qml
+/* GCompris - TextItem.qml
  *
  * Copyright (C) 2015 Pulkit Gupta <pulkitgenius@gmail.com>
  *
@@ -21,19 +21,18 @@
 import QtQuick 2.1
 import GCompris 1.0
 import "../../core"
-import "babymatch.js" as Activity
 
 Item {
     id: displayText
-    
+
     property double posX
     property double posY
     property double textWidth
     property string showText
-    
+
     x: posX * parent.width
     y: posY * parent.height
-    
+
     GCText {
         id: displayTxt
         anchors {

@@ -21,8 +21,8 @@
  */
 
 .pragma library
-.import QtQuick 2.0 as Quick 
-.import GCompris 1.0 as GCompris 
+.import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
@@ -51,7 +51,7 @@ function start(items_) {
     currentLevel = 0;
     currentSubLevel = 0;
     items.remainingLife = 6;
-    
+
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
 
     var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
@@ -59,46 +59,16 @@ function start(items_) {
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))
-    
-    dataset = Lang.load(items.parser, resourceUrl,
-                        GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                        "content-"+ locale +".json")
 
-    // If dataset is empty, we try to load from short locale
-    // and if not present again, we switch to default one
-    var localeUnderscoreIndex = locale.indexOf('_')
-    if(!dataset) {
-        var localeShort;
-        // We will first look again for locale xx (without _XX if exist)
-        if(localeUnderscoreIndex > 0) {
-            localeShort = locale.substring(0, localeUnderscoreIndex)
-        } else {
-            localeShort = locale;
-        }
-        dataset = Lang.load(items.parser, resourceUrl,
-                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                            "content-"+localeShort+ ".json")
-    }
-
-    // If still dataset is empty then fallback to english
-    if(!dataset) {
-        // English fallback
-        items.background.englishFallback = true
-        dataset = Lang.load(items.parser, resourceUrl,
-                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                            "content-en.json")
-    } else {
-        items.background.englishFallback = false
-    }
-
+    var data = Lang.loadDataset(items.parser, resourceUrl, locale);
+    dataset = data["dataset"];
+    items.background.englishFallback = data["englishFallback"];
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
     initLevel();
-    
 }
 
 function stop() {
-
 }
 
 function initLevel() {

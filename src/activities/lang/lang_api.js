@@ -126,3 +126,37 @@ function applyImgPrefix(dataset) {
         }
     }
 }
+
+/**
+ * Helper to load a dataset
+ */
+function loadDataset(parser, resourceUrl, locale) {
+    var wordset = GCompris.ApplicationSettings.useExternalWordset() ? "words.json" : "words_sample.json";
+
+    var dataset = load(parser, resourceUrl, wordset,
+                        "content-"+ locale +".json")
+    var englishFallback = false
+
+    // If dataset is empty, we try to load from short locale
+    // and if not present again, we switch to default one
+    var localeUnderscoreIndex = locale.indexOf('_')
+    if(!dataset) {
+        var localeShort;
+        // We will first look again for locale xx (without _XX if exist)
+        if(localeUnderscoreIndex > 0) {
+            localeShort = locale.substring(0, localeUnderscoreIndex)
+        } else {
+            localeShort = locale;
+        }
+        dataset = load(parser, resourceUrl, wordset,
+                            "content-"+localeShort+ ".json")
+    }
+
+    // If still dataset is empty then fallback to english
+    if(!dataset) {
+        // English fallback
+        englishFallback = true
+        dataset = load(parser, resourceUrl, wordset, "content-en.json")
+    }
+    return {"dataset": dataset, "englishFallback": englishFallback};
+}

@@ -117,23 +117,25 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
     }
 }
 
-void ActivityInfoTree::sortByDifficulty()
+void ActivityInfoTree::sortByDifficulty(bool emitChanged)
 {
     std::sort(m_menuTree.begin(), m_menuTree.end(), SortByDifficulty());
-    emit menuTreeChanged();
+    if (emitChanged)
+        Q_EMIT menuTreeChanged();
 }
 
-void ActivityInfoTree::sortByName()
+void ActivityInfoTree::sortByName(bool emitChanged)
 {
     std::sort(m_menuTree.begin(), m_menuTree.end(), SortByName());
-    emit menuTreeChanged();
+    if (emitChanged)
+        Q_EMIT menuTreeChanged();
 }
 
 // Filter the current activity list by the given tag
 // the tag 'all' means no filter
 // the tag 'favorite' means only marked as favorite
 // The level is also filtered based on the global property
-void ActivityInfoTree::filterByTag(const QString &tag)
+void ActivityInfoTree::filterByTag(const QString &tag, bool emitChanged)
 {
     m_menuTree.clear();
     for(const auto &activity: m_menuTreeFull) {
@@ -146,7 +148,8 @@ void ActivityInfoTree::filterByTag(const QString &tag)
         }
     }
     sortByDifficulty();
-    emit menuTreeChanged();
+    if (emitChanged)
+        Q_EMIT menuTreeChanged();
 }
 
 void ActivityInfoTree::filterByDifficulty(int levelMin, int levelMax)
@@ -158,7 +161,7 @@ void ActivityInfoTree::filterByDifficulty(int levelMin, int levelMax)
     m_menuTree.erase(it, m_menuTree.end());
 }
 
-void ActivityInfoTree::filterLockedActivities()
+void ActivityInfoTree::filterLockedActivities(bool emitChanged)
 {
     // If we have the full version or if we show all the activities, we don't need to do anything
     if(!ApplicationSettings::getInstance()->isDemoMode() || ApplicationSettings::getInstance()->showLockedActivities())
@@ -168,18 +171,22 @@ void ActivityInfoTree::filterLockedActivities()
     auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
                              [](const ActivityInfo* activity) { return !activity->demo(); });
     m_menuTree.erase(it, m_menuTree.end());
-    emit menuTreeChanged();
+    if (emitChanged)
+        Q_EMIT menuTreeChanged();
 }
 
-void ActivityInfoTree::filterEnabledActivities()
+void ActivityInfoTree::filterEnabledActivities(bool emitChanged)
 {
     auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
                              [](const ActivityInfo* activity) { return !activity->enabled(); });
     m_menuTree.erase(it, m_menuTree.end());
-    emit menuTreeChanged();
+    if (emitChanged)
+        Q_EMIT menuTreeChanged();
 }
 
-void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion, int lastVersion)
+void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion,
+                                                   int lastVersion,
+                                                   bool emitChanged)
 {
     m_menuTree.clear();
     for(const auto &activity: m_menuTreeFull) {
@@ -187,8 +194,8 @@ void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion, int lastVer
             m_menuTree.push_back(activity);
         }
     }
-
-    emit menuTreeChanged();
+    if (emitChanged)
+        Q_EMIT menuTreeChanged();
 }
 
 void ActivityInfoTree::exportAsSQL()
@@ -295,6 +302,7 @@ void ActivityInfoTree::init()
 
 
 }
+
 void ActivityInfoTree::filterBySearch(const QString& text)
 {
     m_menuTree.clear();
@@ -318,11 +326,11 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     else
         m_menuTree = m_menuTreeFull;
 
-    filterEnabledActivities();
-    filterLockedActivities();
+    filterEnabledActivities(false);
+    filterLockedActivities(false);
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(), ApplicationSettings::getInstance()->filterLevelMax());
-    sortByDifficulty();
-    emit menuTreeChanged();
+    sortByDifficulty(false);
+    Q_EMIT menuTreeChanged();
 }
 
 QVariantList ActivityInfoTree::allCharacters() {
