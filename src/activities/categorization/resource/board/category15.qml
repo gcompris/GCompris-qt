@@ -21,84 +21,93 @@
 import QtQuick 2.0
 
 QtObject{
-    property string imagesPrefix: "qrc:/gcompris/data/words/nature/"
+    property string imagesPrefix: "qrc:/gcompris/data/words/birds/"
     property variant levels: [
         {
             "type": "lesson",
-            "name": qsTr("Nature"),
-            "image": imagesPrefix + "nature7.jpg",
+            "name": qsTr("Birds"),
+            "image": imagesPrefix + "bird.jpg",
             "content": [
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature25.jpg",
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature1.jpg","nature/nature2.jpg","nature/nature3.jpg","nature/nature4.jpg","nature/nature5.jpg","nature/nature6.jpg"],
-                    "bad": ["transport/train3.jpg","others/spoon.jpg","transport/bus.jpg","others/clock.jpg","food/hamburger.jpg","food/macroni.jpg"]
+                    "good": ["birds/parrot.jpg","birds/bird34.jpg","birds/bird23.jpg","birds/peacock.jpg","birds/rooster.jpg","birds/bird1.jpg"],
+                    "bad": ["animals/baboon.jpg","animals/bosmutus.jpg","animals/camel.jpg","animals/cow.jpg","others/sharpnerandpencil.jpg","transport/cycle.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature28.jpg",
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature7.jpg","nature/nature8.jpg","nature/nature9.jpg","nature/nature10.jpg", "nature/nature11.jpg","nature/nature12.jpg"],
-                    "bad": ["fruits/mango.jpg","vegetables/onion.jpg","transport/cycle.jpg","others/fork.jpg","food/riceBeans.jpg","others/pepsi.jpg"]
+                    "good": ["birds/bird2.jpg","birds/bird3.jpg","birds/bird4.jpg","birds/bird5.jpg","birds/bird6.jpg","birds/bird7.jpg"],
+                    "bad": ["animals/dog.jpg","animals/dolphin.jpg","animals/donkey.jpg","animals/elephant.jpg","others/mobile.jpg","transport/helicopter1.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature22.jpg",
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 7,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["birds/bird8.jpg","birds/bird9.jpg","birds/bird10.jpg","birds/bird11.jpg","birds/bird12.jpg"],
+                    "bad": ["plants/tree1.jpg","transport/train2.jpg","animals/giraffe.jpg","vegetables/spinaches.jpg","fruits/kiwi.jpg","insects/insect12.jpg","food/cereal.jpg"]
+                },
+                {
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature13.jpg","nature/nature14.jpg","nature/nature15.jpg","nature/nature16.jpg","nature/nature17.jpg"],
-                    "bad": ["transport/autorickshaw.jpg","transport/bulletTrain.jpg","householdGoods/chest.jpg","others/broom1.jpg"]
+                    "good": ["birds/bird13.jpg","birds/bird14.jpg","birds/bird15.jpg","birds/bird16.jpg","birds/bird17.jpg"],
+                    "bad": ["animals/hare.jpg","animals/hedgehog.jpg","food/cheese.jpg","food/pizza.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature2.jpg",
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature18.jpg","nature/nature19.jpg","nature/nature20.jpg","nature/nature21.jpg","nature/nature22.jpg"],
-                    "bad": ["transport/train5.jpg","transport/tram1.jpg","others/mobile.jpg","others/electricfan.jpg"]
+                    "good": ["birds/bird18.jpg","birds/bird19.jpg","birds/bird20.jpg","birds/bird21.jpg","birds/bird22.jpg"],
+                    "bad": ["animals/horse.jpg","animals/koala.jpg","food/milk.jpg","insects/insect5.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature2.jpg",
-                    "maxNumberOfGood": 5,
-                    "maxNumberOfBad": 4,
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
+                    "maxNumberOfGood": 4,
+                    "maxNumberOfBad": 5,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature29.jpg","nature/nature30.jpg","nature/nature31.jpg","nature/nature32.jpg","nature/nature33.jpg"],
-                    "bad": ["fruits/pineapple.jpg","food/pitaBread.jpg","householdGoods/bed.jpg","others/house.jpg"]
+                    "good": ["birds/bird23.jpg","birds/bird24.jpg","birds/bird25.jpg","birds/bird26.jpg"],
+                    "bad": ["animals/marsupialis.jpg","animals/mouse.jpg","others/pepsi.jpg","insects/insect16.jpg","food/milk.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature6.jpg",
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature23.jpg","nature/nature24.jpg","nature/nature25.jpg"],
-                    "bad": ["vegetables/zucchini.jpg","others/street.jpg","householdGoods/couch.jpg"]
+                    "good": ["birds/bird27.jpg","birds/bird28.jpg","birds/bird29.jpg"],
+                    "bad": ["animals/kodiak-bear.jpg","animals/krotiki.jpg","others/clock.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature14.jpg",
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature26.jpg","nature/nature27.jpg","nature/nature28.jpg"],
-                    "bad": ["food/MaozVegetariano.jpg","transport/rickshaw2.jpg","others/electricfan.jpg"]
+                    "good": ["birds/bird30.jpg","birds/bird31.jpg","birds/bird32.jpg"],
+                    "bad": ["animals/mouse1.jpg","animals/pig.jpg","nature/nature5.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature14.jpg",
+                    "instructions": qsTr("Place the BIRDS to the right and other objects to the left"),
+                    "image": imagesPrefix + "bird.png",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature34.jpg","nature/nature35.jpg"],
-                    "bad": ["householdGoods/chair2.jpg","food/milk.jpg","others/weighingmachine.jpg","others/pencil.jpg"]
+                    "good": ["birds/bird33.jpg","birds/bird34.jpg"],
+                    "bad": ["animals/lion.jpg","plants/tree3.jpg","transport/balloon.jpg","householdGoods/refrigerator.jpg"]
                 }
             ]
         }

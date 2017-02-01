@@ -45,7 +45,7 @@ function init(items_,boardsUrl_) {
     items = items_
     items.menuModel.clear()
     currentSubLevel = 0
-    items.categoriesCount = items.file.exists(fileName) ? 18 : 6
+    items.categoriesCount = items.file.exists(fileName) ? 19 : 7
 }
 
 function start() {

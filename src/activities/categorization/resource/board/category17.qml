@@ -21,66 +21,96 @@
 import QtQuick 2.0
 
 QtObject{
-    property string imagesPrefix: "qrc:/gcompris/data/words/vegetables/"
+    property string imagesPrefix: "qrc:/gcompris/data/words/"
     property variant levels: [
         {
             "type": "lesson",
-            "name": qsTr("Vegetables"),
-            "image": imagesPrefix + "vegetablesmix.jpg",
+            "name": qsTr("Colors"),
+            "image": imagesPrefix + "others/color2.png",
             "content": [
                 {
-                    "instructions": qsTr("Place the VEGETABLES to the right and other objects to the left"),
-                    "image": imagesPrefix + "vegetablesmix.jpg",
+                    "instructions": "Place the objects matching GREEN color to right and others to the left",
+                    "image": imagesPrefix + "green.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["artichoke.png","cabbage.png","cucumber.png","cactus.png","clover.png"],
+                    "bad": ["left.png","lobster.png","mail.png","post.png"]
+                },
+                {
+                    "instructions": "Place the objects matching WHITE color to right and others to the left",
+                    "image": imagesPrefix + "white.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["vegetables/batatadoce.jpg","vegetables/bittergourd.jpg","vegetables/blackchillies.jpg", "vegetables/aubergine.jpg","vegetables/peas.JPG","vegetables/carrots.jpg"],
-                    "bad": ["fruits/cranberries.jpg","fruits/feiji.jpg","fruits/strwaberry.jpg","fruits/pear.jpg","food/applepie.jpg","food/biryani.jpg","transport/bus.jpg","transport/truck.jpg"]
+                    "good": ["milk.png","paper.png","dove.png","mail.png","egg.png", "bead.png"],
+                    "bad": ["flash.png","plum.png","potato.png","pumpkin.png","rabbit.png","kiwi.png"]
                 },
                 {
-                    "instructions": qsTr("Place the VEGETABLES to the right and other objects to the left"),
-                    "image": imagesPrefix + "vegetablesmix.jpg",
+                    "instructions": "Place the objects matching PINK color to right and others to the left",
+                    "image": imagesPrefix + "pink.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["hair_dryer.png","flamingo.png","raspberry.png","pencil.png","flash.png"],
+                    "bad": ["ink.png","kiwi.png","ladybug.png","phone.png"]
+                },
+                {
+                    "tags": ["red"],
+                    "instructions": "Place the objects matching RED color to right and others to the left",
+                    "image": imagesPrefix + "red.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["shapes/dice.svg","lobster.png","pair.png","ladybug.png","post.png"],
+                    "bad": ["shapes/halforange.svg","radio.png","ramp.png","wheat.png"]
+                },
+                {
+                    "instructions": "Place the objects matching BROWN color to right and others to the left",
+                    "image": imagesPrefix + "brown.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["vegetables/cauliflower.jpg","vegetables/chillies.jpg","vegetables/chineseradish.jpg","vegetables/cucumber.jpg","vegetables/dahuisi.jpg","vegetables/garlic.jpg"],
-                    "bad": ["fruits/apple.jpg","fruits/apricot.jpg","fruits/banana.jpg","fruits/berries.jpg","transport/boat.jpg","plants/plant2.jpg","nature/nature6.jpg","householdGoods/quilt.jpg"]
+                    "good": ["shapes/cookie.svg","date_fruit.png","chocolate.png","board.png","potato.png","kiwi.png"],
+                    "bad": ["cheese.png","bright.png","shapes/conehat.svg","dolphin.png","shapes/cd.svg","drip.png"]
                 },
                 {
-                    "instructions": qsTr("Place the VEGETABLES to the right and other objects to the left"),
-                    "image": imagesPrefix + "vegetablesmix.jpg",
-                    "maxNumberOfGood": 4,
-                    "maxNumberOfBad": 5,
+                    "instructions": "Place the objects matching PURPLE color to right and others to the left",
+                    "categorise": "PURPLE",
+                    "image": imagesPrefix + "others/purple.png",
+                    "maxNumberOfGood": 6,
+                    "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["vegetables/potato.jpg","vegetables/radish.jpg","vegetables/redchillies.jpg","vegetables/spinach.jpg"],
-                    "bad": ["fruits/billberries.jpg","fruits/cherries.jpg","food/cheese.jpg","birds/bird7.jpg","insects/insect2.jpg"]
+                    "good": ["grape.png","eggplant.png","shapes/conehat.svg","phone.png","plum.png","ink.png"],
+                    "bad": ["bulb.png","bell.png","blackbird.png","umbrella.png","pumpkin.png","shapes/halfmoon.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the VEGETABLES to the right and other objects to the left"),
-                    "image": imagesPrefix + "vegetablesmix.jpg",
-                    "maxNumberOfGood": 4,
-                    "maxNumberOfBad": 5,
+                    "instructions": "Place the objects matching GREY color to right and others to the left",
+                    "image": imagesPrefix + "gray.png",
+                    "maxNumberOfGood": 6,
+                    "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["vegetables/spinaches.jpg","vegetables/taroroot.jpg","vegetables/cauliflower.jpg","vegetables/batatadoce.jpg"],
-                    "bad": ["fruits/kiwi.jpg","householdGoods/vacuumCleaner.jpg","householdGoods/utensils.jpg","food/pizza.jpg","transport/tanker.jpg"]
+                    "good": ["chain.png","rabbit.png","ramp.png","dolphin.png","faucet.png","shapes/halfmoon.svg"],
+                    "bad": ["shapes/backcard.svg","radio.png","clover.png","left.png","flash.png","ink.png"]
                 },
                 {
-                    "instructions": qsTr("Place the VEGETABLES to the right and other objects to the left"),
-                    "image": imagesPrefix + "vegetablesmix.jpg",
+                    "instructions": "Place the objects matching ORANGE color to right and others to the left",
+                    "image": imagesPrefix + "orange-color.png",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["vegetables/mushroom.jpg","vegetables/pumpkin.jpg","vegetables/sweetpotato.jpg"],
-                    "bad": ["fruits/mango.jpg","plants/plant6.jpg","others/electricfan.jpg"]
+                    "good": ["pumpkin.png","shapes/halforange.svg","orange.png"],
+                    "bad": ["plum.png","potato.png","post.png"]
                 },
                 {
-                    "instructions": qsTr("Place the VEGETABLES to the right and other objects to the left"),
-                    "image": imagesPrefix + "vegetablesmix.jpg",
-                    "maxNumberOfGood": 2,
-                    "maxNumberOfBad": 4,
+                    "instructions": "Place the objects matching YELLOW color to right and others to the left",
+                    "categorise":"YELLOW",
+                    "image": imagesPrefix + "yellow.png",
+                    "maxNumberOfGood": 6,
+                    "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["vegetables/zucchini.jpg","vegetables/vegetablesmix.jpg"],
-                    "bad": ["fruits/papaya.jpg","food/sweetBread.jpg","others/clock.jpg","others/pepsi.jpg"]
+                    "good": ["anchor.png","cheese.png","bright.png","shapes/rectangle_led.svg","bulb.png","bell.png"],
+                    "bad": ["blackbird.png","pair.png","plum.png","potato.png","drip.png","ladybug.png"]
                 }
             ]
         }
