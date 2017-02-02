@@ -54,14 +54,11 @@ ActivityBase {
             property Item boxModel: boxModel
             property Item rootWindow: rootWindow
             property alias tux: tux
-            property alias blueBalls: blueBalls
-            property alias greenBalls: greenBalls
             property alias tuxArea: tuxArea
             property alias boxes: boxes
             property alias masks: masks
             property alias numberLabel: numberLabel
             property alias answerBallsPlacement: answerBallsPlacement
-            property alias answerBalls: answerBalls
             property alias bar: bar
             property alias bonus: bonus
             property alias okArea: okArea
@@ -109,7 +106,10 @@ ActivityBase {
             height: rootWindow.height / 3.8
             width: rootWindow.width > rootWindow.height ? rootWindow.width / 8 : rootWindow.width / 5
             y: rootWindow.height - rootWindow.height / 1.8
-            x: rootWindow.width - rootWindow.width / 1.05
+            anchors {
+                left: (rootWindow.width > rootWindow.height) ? rootWindow.left : undefined
+                right: (rootWindow.width > rootWindow.height) ? undefined : rootWindow.right
+            }
             MouseArea {
                 id: tuxArea
                 hoverEnabled: true
@@ -131,14 +131,107 @@ ActivityBase {
             }
         }
 
+        // Box row
         Item {
+            id: boxModel
+            x: 0
+            anchors.top: tux.bottom
+
+            transform: Rotation { origin.x: 0;
+                origin.y: 0;
+                angle: (rootWindow.width > rootWindow.height) ? 0 :90
+                onAngleChanged:{
+                    if (angle === 90) {
+                        boxModel.anchors.top = undefined;
+                        boxModel.y = 0;
+                        boxModel.anchors.horizontalCenter = rootWindow.horizontalCenter;
+                    } else {
+                        boxModel.anchors.horizontalCenter = undefined;
+                        boxModel.x = 0;
+                        boxModel.anchors.top = tux.bottom;
+                    }
+                }
+            }
+
+            // The empty boxes grid
+            Grid {
+                id: boxes
+                rows: 1
+                columns: Activity.boardSize[items.mode - 1]
+                anchors.centerIn: boxModel.Center
+                Repeater {
+                    id: startCase
+                    model: boxes.columns
+                    Image {
+                        id: greenCase
+                        source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
+                        height: width
+                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        visible: true
+                    }
+                }
+            }
+
+            // Hidden Answer Balls
+            Grid {
+                // All green balls placement
+                id: answerBallsPlacement
+                anchors.centerIn: boxModel.Center
+                columns: Activity.boardSize[items.mode - 1]
+                rows: 1
+                Repeater {
+                    model: answerBallsPlacement.columns
+                    Image {
+                        source: Activity.url + "green_ball.svg"
+                        height: width
+                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        opacity: 0.0
+                    }
+                }
+            }
+
+            // Masks
+            Grid {
+                id: masks
+                anchors.centerIn: boxModel.Center
+                rows: 1
+                columns: Activity.boardSize[items.mode-1]
+                Repeater {
+                    id: startMask
+                    model: masks.columns
+                    Image {
+                        id: greenMask
+                        source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
+                        height: width
+                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        // Numbering label
+                        GCText {
+                            id: numberText
+                            text: index + 1
+                            fontSize: smallSize
+                            font.bold: true
+                            visible: ((index + 1) % 5 == 0 && index > 0) ? true : false
+                            anchors {
+                                horizontalCenter: parent.horizontalCenter
+                                bottom: parent.top
+                            }
+                            transform: Rotation {
+                                origin.x: numberText.fontSize * 1.7;
+                                origin.y: numberText.fontSize * 1.7;
+                                angle: (rootWindow.width > rootWindow.height) ? 0 : -90
+                            }
+                        }
+                    }
+                }
+            }
+
             // Upper blue balls sample
             Grid {
                 id: blueBalls
                 columns: Activity.sampleBallsNumber[items.mode - 1]
                 rows: 1
-                x: rootWindow.width - columns * (rootWindow.height / 15)
-                y: rootWindow.height / 1.7
+                x: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) - columns * (rootWindow.height / 15)
+                y: boxes.y - (ApplicationSettings.baseFontSize + 30) * ApplicationInfo.fontRatio
                 Repeater {
                     model: blueBalls.columns
                     Image {
@@ -153,7 +246,7 @@ ActivityBase {
             // Lower green balls sample
             Grid {
                 id: greenBalls
-                x: rootWindow.width - columns * (rootWindow.height / 15)
+                x: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) - columns * (rootWindow.height / 15)
                 y: boxes.y + rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1]) + 2
                 rows: 1
                 columns: Activity.sampleBallsNumber[items.mode - 1]
@@ -164,82 +257,6 @@ ActivityBase {
                         source: Activity.url + "green_ball.svg"
                         height: width
                         width: rootWindow.height / 15
-                    }
-                }
-            }
-        }
-
-        // Box row
-        Item {
-            id: boxModel
-            // The empty boxes grid
-            Grid {
-                id: boxes
-                rows: 1
-                columns: Activity.boardSize[items.mode - 1]
-                x: 0
-                y: rootWindow.height / 1.4
-                Repeater {
-                    id: startCase
-                    model: boxes.columns
-                    Image {
-                        id: greenCase
-                        source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
-                        height: width
-                        width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
-                        visible: true
-                        // Numbering label
-                        GCText {
-                            text: index + 1
-                            fontSize: smallSize
-                            font.bold: true
-                            visible: ((index + 1) % 5 == 0 && index > 0) ? true : false
-                            anchors {
-                                horizontalCenter: parent.horizontalCenter
-                                bottom: parent.top
-                            }
-                        }
-                    }
-                }
-            }
-
-            // Hidden Answer Balls
-            Item {
-                id: answerBalls
-                // All green balls placement
-                Grid {
-                    id: answerBallsPlacement
-                    x: boxes.x
-                    y: boxes.y
-                    columns: Activity.boardSize[items.mode - 1]
-                    rows: 1
-                    Repeater {
-                        model: answerBallsPlacement.columns
-                        Image {
-                            source: Activity.url + "green_ball.svg"
-                            height: width
-                            width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
-                            opacity: 0.0
-                        }
-                    }
-                }
-            }
-
-            // Masks
-            Grid {
-                id: masks
-                x: boxes.x
-                y: boxes.y
-                rows: 1
-                columns: Activity.boardSize[items.mode-1]
-                Repeater {
-                    id: startMask
-                    model: masks.columns
-                    Image {
-                        id: greenMask
-                        source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
-                        height: width
-                        width: rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
                     }
                 }
             }
