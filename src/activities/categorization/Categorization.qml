@@ -36,6 +36,7 @@ ActivityBase {
 
     property string boardsUrl: "qrc:/gcompris/src/activities/categorization/resource/"
     property bool vert: background.width < background.height
+    property string datasetURL: "../../GCompris-qt/src/activities/categorization/resource/board/"
 
     pageComponent: Image {
         id: background
@@ -72,6 +73,7 @@ ActivityBase {
             property var details
             property alias file: file
             property var categoriesCount
+            property var categories: files.getFiles(datasetURL)
         }
 
         onStart: {
@@ -79,6 +81,7 @@ ActivityBase {
             dialogActivityConfig.getInitialConfiguration()
             Activity.start()
         }
+
 
         onStop: {
             dialogActivityConfig.saveDatainConfiguration()

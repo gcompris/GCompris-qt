@@ -51,11 +51,19 @@ function init(items_,boardsUrl_) {
 function start() {
     categoriesData = []
     items.categoryReview.stop()
+
+    var s = items.categories.split(" ")
+    var flag = items.file.exists(fileName) ? 1 : 0
+
+
     var categoriesFilename;
-    for(var i = 1; i <= items.categoriesCount; i++) {
-        categoriesFilename = boardsUrl + "board" + "/" + "category" + i + ".qml"
+    for(var i = 0; i < s.length-1; i++) {
+        categoriesFilename = boardsUrl + "board" + "/" + s[i]
         items.categoryReview.categoryDataset.source = categoriesFilename
-        categoriesData.push(items.categoryReview.categoryDataset.item)
+
+        if(flag===1 || (items.categoryReview.categoryDataset.item).isEmbedded ) {
+            categoriesData.push(items.categoryReview.categoryDataset.item)
+        }
     }
     lessons = getAllLessons(categoriesData)
     categories = getCategoryModel(categoriesData)

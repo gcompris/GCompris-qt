@@ -21,84 +21,97 @@
 import QtQuick 2.0
 
 QtObject{
-    property string imagesPrefix: "qrc:/gcompris/data/words/nature/"
+    property bool isEmbedded: false
+    property string imagesPrefix: "qrc:/gcompris/data/words/"
     property variant levels: [
         {
             "type": "lesson",
-            "name": qsTr("Nature"),
-            "image": imagesPrefix + "nature7.jpg",
+            "name": qsTr("Colors"),
+            "image": imagesPrefix + "others/color2.png",
             "content": [
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature25.jpg",
+                    "instructions": "Place the objects matching GREEN color to right and others to the left",
+                    "image": imagesPrefix + "green.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["artichoke.png","cabbage.png","cucumber.png","cactus.png","clover.png"],
+                    "bad": ["left.png","lobster.png","mail.png","post.png"]
+                },
+                {
+                    "instructions": "Place the objects matching WHITE color to right and others to the left",
+                    "image": imagesPrefix + "white.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature1.jpg","nature/nature2.jpg","nature/nature3.jpg","nature/nature4.jpg","nature/nature5.jpg","nature/nature6.jpg"],
-                    "bad": ["transport/train3.jpg","others/spoon.jpg","transport/bus.jpg","others/clock.jpg","food/hamburger.jpg","food/macroni.jpg"]
+                    "good": ["milk.png","paper.png","dove.png","mail.png","egg.png", "bead.png"],
+                    "bad": ["flash.png","plum.png","potato.png","pumpkin.png","rabbit.png","kiwi.png"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature28.jpg",
+                    "instructions": "Place the objects matching PINK color to right and others to the left",
+                    "image": imagesPrefix + "pink.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["hair_dryer.png","flamingo.png","raspberry.png","pencil.png","flash.png"],
+                    "bad": ["ink.png","kiwi.png","ladybug.png","phone.png"]
+                },
+                {
+                    "tags": ["red"],
+                    "instructions": "Place the objects matching RED color to right and others to the left",
+                    "image": imagesPrefix + "red.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["shapes/dice.svg","lobster.png","pair.png","ladybug.png","post.png"],
+                    "bad": ["shapes/halforange.svg","radio.png","ramp.png","wheat.png"]
+                },
+                {
+                    "instructions": "Place the objects matching BROWN color to right and others to the left",
+                    "image": imagesPrefix + "brown.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature7.jpg","nature/nature8.jpg","nature/nature9.jpg","nature/nature10.jpg", "nature/nature11.jpg","nature/nature12.jpg"],
-                    "bad": ["fruits/mango.jpg","vegetables/onion.jpg","transport/cycle.jpg","others/fork.jpg","food/riceBeans.jpg","others/pepsi.jpg"]
+                    "good": ["shapes/cookie.svg","date_fruit.png","chocolate.png","board.png","potato.png","kiwi.png"],
+                    "bad": ["cheese.png","bright.png","shapes/conehat.svg","dolphin.png","shapes/cd.svg","drip.png"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature22.jpg",
-                    "maxNumberOfGood": 5,
-                    "maxNumberOfBad": 4,
+                    "instructions": "Place the objects matching PURPLE color to right and others to the left",
+                    "categorise": "PURPLE",
+                    "image": imagesPrefix + "others/purple.png",
+                    "maxNumberOfGood": 6,
+                    "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature13.jpg","nature/nature14.jpg","nature/nature15.jpg","nature/nature16.jpg","nature/nature17.jpg"],
-                    "bad": ["transport/autorickshaw.jpg","transport/bulletTrain.jpg","householdGoods/chest.jpg","others/broom1.jpg"]
+                    "good": ["grape.png","eggplant.png","shapes/conehat.svg","phone.png","plum.png","ink.png"],
+                    "bad": ["bulb.png","bell.png","blackbird.png","umbrella.png","pumpkin.png","shapes/halfmoon.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature2.jpg",
-                    "maxNumberOfGood": 5,
-                    "maxNumberOfBad": 4,
+                    "instructions": "Place the objects matching GREY color to right and others to the left",
+                    "image": imagesPrefix + "gray.png",
+                    "maxNumberOfGood": 6,
+                    "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature18.jpg","nature/nature19.jpg","nature/nature20.jpg","nature/nature21.jpg","nature/nature22.jpg"],
-                    "bad": ["transport/train5.jpg","transport/tram1.jpg","others/mobile.jpg","others/electricfan.jpg"]
+                    "good": ["chain.png","rabbit.png","ramp.png","dolphin.png","faucet.png","shapes/halfmoon.svg"],
+                    "bad": ["shapes/backcard.svg","radio.png","clover.png","left.png","flash.png","ink.png"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature2.jpg",
-                    "maxNumberOfGood": 5,
-                    "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature29.jpg","nature/nature30.jpg","nature/nature31.jpg","nature/nature32.jpg","nature/nature33.jpg"],
-                    "bad": ["fruits/pineapple.jpg","food/pitaBread.jpg","householdGoods/bed.jpg","others/house.jpg"]
-                },
-                {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature6.jpg",
+                    "instructions": "Place the objects matching ORANGE color to right and others to the left",
+                    "image": imagesPrefix + "orange-color.png",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature23.jpg","nature/nature24.jpg","nature/nature25.jpg"],
-                    "bad": ["vegetables/zucchini.jpg","others/street.jpg","householdGoods/couch.jpg"]
+                    "good": ["pumpkin.png","shapes/halforange.svg","orange.png"],
+                    "bad": ["plum.png","potato.png","post.png"]
                 },
                 {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature14.jpg",
-                    "maxNumberOfGood": 3,
-                    "maxNumberOfBad": 3,
+                    "instructions": "Place the objects matching YELLOW color to right and others to the left",
+                    "categorise":"YELLOW",
+                    "image": imagesPrefix + "yellow.png",
+                    "maxNumberOfGood": 6,
+                    "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature26.jpg","nature/nature27.jpg","nature/nature28.jpg"],
-                    "bad": ["food/MaozVegetariano.jpg","transport/rickshaw2.jpg","others/electricfan.jpg"]
-                },
-                {
-                    "instructions": qsTr("Place the NATURE images to the right and other objects to the left"),
-                    "image": imagesPrefix + "nature14.jpg",
-                    "maxNumberOfGood": 2,
-                    "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["nature/nature34.jpg","nature/nature35.jpg"],
-                    "bad": ["householdGoods/chair2.jpg","food/milk.jpg","others/weighingmachine.jpg","others/pencil.jpg"]
+                    "good": ["anchor.png","cheese.png","bright.png","shapes/rectangle_led.svg","bulb.png","bell.png"],
+                    "bad": ["blackbird.png","pair.png","plum.png","potato.png","drip.png","ladybug.png"]
                 }
             ]
         }

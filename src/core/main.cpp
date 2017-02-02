@@ -29,11 +29,15 @@
 #include <QCursor>
 #include <QPixmap>
 #include <QSettings>
+#include <QQmlContext>
 
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "File.h"
 #include "DownloadManager.h"
+
+#include "FileNames.h"
+
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
@@ -267,6 +271,9 @@ int main(int argc, char *argv[])
     else {
         window->show();
     }
+
+    QScopedPointer<FileNames> files(new FileNames);
+    engine.rootContext()->setContextProperty("files", files.data());
 
 	return app.exec();
 

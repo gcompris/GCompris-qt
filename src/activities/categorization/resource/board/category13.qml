@@ -21,93 +21,67 @@
 import QtQuick 2.0
 
 QtObject{
-    property string imagesPrefix: "qrc:/gcompris/data/words/animals/"
-    property variant levels:[
+    property bool isEmbedded: false
+    property string imagesPrefix: "qrc:/gcompris/data/words/insects/"
+    property variant levels: [
         {
             "type": "lesson",
-            "name": qsTr("Animals"),
-            "image": imagesPrefix + "animalsherd.jpg",
+            "name": qsTr("Insects"),
+            "image": imagesPrefix + "insect6.jpg",
             "content": [
                 {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "tiger.jpg",
+                    "instructions": qsTr("Place the INSECTS to the right and other objects to the left"),
+                    "image": imagesPrefix + "insect15.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/baboon.jpg","animals/bosmutus.jpg","animals/camel.jpg","animals/cow.jpg","animals/dog.jpg","animals/sealion.jpg"],
-                    "bad": ["birds/bird10.jpg","birds/bird12.jpg","birds/bird13.jpg","others/electricfan.jpg","others/clock.jpg","nature/nature10.jpg"]
+                    "good": ["insects/insect1.jpg","insects/insect2.jpg","insects/insect3.jpg","insects/insect4.jpg","insects/insect5.jpg","insects/insect6.jpg"],
+                    "bad": ["nature/nature4.jpg","plants/tree2.jpg","birds/bird8.jpg","birds/bird5.jpg","animals/giraffe.jpg","animals/horse.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "tiger.jpg",
+                    "instructions": qsTr("Place the INSECTS to the right and other objects to the left"),
+                    "image": imagesPrefix + "insect25.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/lion.jpg","animals/marsupialis.jpg","animals/mouse.jpg","animals/mouse1.jpg","animals/opossum.jpg","animals/pig.jpg"],
-                    "bad": ["birds/bird6.jpg","birds/bird7.jpg","birds/bird8.jpg","birds/bird9.jpg","transport/rickshaw.jpg","transport/bus.jpg"]
+                    "good": ["insects/insect7.jpg","insects/insect8.jpg","insects/insect9.jpg","insects/insect10.jpg","insects/insect11.jpg","insects/insect12.jpg"],
+                    "bad": ["food/eggs.jpg","birds/bird2.jpg","birds/bird3.jpg","animals/lion.jpg","animals/mouse.jpg","animals/elephant.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "opossum.jpg",
-                    "maxNumberOfGood": 6,
-                    "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/snowcat.jpg","animals/spidermonkey.jpg","animals/squirrel.jpg","animals/squirrel1.jpg","animals/tasmaniandevil.jpg","animals/pelonquintana.jpg"],
-                    "bad": ["birds/bird22.jpg","birds/bird23.jpg","others/house.jpg","transport/plane2.jpg","plants/plant4.jpg","nature/nature5.jpg"]
-                },
-                {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "tortoise.jpg",
+                    "instructions": qsTr("Place the INSECTS to the right and other objects to the left"),
+                    "image": imagesPrefix + "insect6.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/redeyedfrog.jpg","animals/scorpian.jpg","animals/sealion.jpg","animals/sheep.jpg","animals/snake.jpg"],
-                    "bad": ["birds/bird18.jpg","birds/bird19.jpg","food/fish.jpg","food/icecream.jpg"]
+                    "good": ["insects/insect13.jpg","insects/insect14.jpg","insects/insect15.jpg","insects/insect16.jpg","insects/insect17.jpg"],
+                    "bad": ["transport/helicopter.jpg","householdGoods/oven.jpg","birds/bird8.jpg","birds/bird9.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "koala.jpg",
+                    "instructions": qsTr("Place the INSECTS to the right and other objects to the left"),
+                    "image": imagesPrefix + "insect8.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/donkey.jpg","animals/elephant.jpg","animals/hare.jpg","animals/tiger.jpg","animals/zebra.jpg"],
-                    "bad": ["birds/parrot.jpg","insects/insect20.jpg","transport/cycle.jpg","plants/tree3.jpg"]
+                    "good": ["insects/insect18.jpg","insects/insect19.jpg","insects/insect20.jpg","insects/insect21.jpg","insects/insect22.jpg"],
+                    "bad": ["householdGoods/bed.jpg","others/mobile.jpg","birds/bird17.jpg","animals/hare.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "hedgehog.jpg",
-                    "maxNumberOfGood": 4,
-                    "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/giraffe.jpg","animals/hare.jpg","animals/hedgehog.jpg","animals/horse.jpg"],
-                    "bad": ["birds/bird21.jpg","birds/bird25.jpg","food/cheese.jpg","others/mobile.jpg","insects/insect7.jpg"]
-                },
-                {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "lion.jpg",
-                    "maxNumberOfGood": 3 ,
-                    "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/koala.jpg","animals/kodiak-bear.jpg","animals/krotiki.jpg"],
-                    "bad": ["birds/bird26.jpg","birds/bird27.jpg","food/eggs.jpg","food/hamburger.jpg"]
-                },
-                {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "pig.jpg",
+                    "instructions": qsTr("Place the INSECTS to the right and other objects to the left"),
+                    "image": imagesPrefix + "insect19.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/tiger.jpg","animals/tortoise.jpg","animals/tortoise1.jpg"],
-                    "bad": ["birds/bird28.jpg","birds/bird29.jpg","fruits/papaya.jpg","food/hotdog.jpg"]
+                    "good": ["insects/insect23.jpg","insects/insect24.jpg","insects/insect25.jpg"],
+                    "bad": ["plants/tree3.jpg","birds/bird29.jpg","animals/pig.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the ANIMALS to the right and other objects to the left"),
-                    "image": imagesPrefix + "snowcat.jpg",
-                    "maxNumberOfGood": 2,
-                    "maxNumberOfBad": 4,
+                    "instructions": qsTr("Place the INSECTS to the right and other objects to the left"),
+                    "image": imagesPrefix + "insect12.jpg",
+                    "maxNumberOfGood": 3,
+                    "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["animals/porcupine.jpg","animals/cow.jpg"],
-                    "bad": ["birds/bird32.jpg","birds/bird33.jpg","food/macroni.jpg","others/house.jpg"]
+                    "good": ["insects/insect26.jpg","insects/insect27.jpg","insects/insect12.jpg"],
+                    "bad": ["householdGoods/iron.jpg","birds/bird33.jpg","animals/sheep.jpg"]
                 }
             ]
         }
