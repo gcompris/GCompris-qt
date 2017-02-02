@@ -33,15 +33,15 @@ FileNames::FileNames()
 
 QString FileNames::getFiles(QString location)
 {
-    const char *s=location.toUtf8().constData();
-    DIR *dpdf=opendir(s);
+    const char *s = location.toUtf8().constData();
+    DIR *dpdf = opendir(s);
     struct dirent *epdf;
 
     QString files;
 
-    if(dpdf!=NULL) {
+    if(dpdf != NULL) {
         while(epdf = readdir(dpdf)) {
-            if(strcmp(epdf->d_name, ".")!=0 && strcmp(epdf->d_name,"..")) {
+            if(strcmp(epdf->d_name, ".") != 0 && strcmp(epdf->d_name,"..")) {
                 // next file name = epdf->d_name
                 files.append(QString::fromLocal8Bit((epdf->d_name)));
                 files.append(" ");

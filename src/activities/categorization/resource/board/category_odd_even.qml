@@ -23,38 +23,38 @@ import QtQuick 2.0
 
 QtObject {
     property bool isEmbedded: true
-    property string imagesPrefix: "qrc:/gcompris/src/activities/categorization/resource/images/odd_even/"
+    property string imagesPrefix: "qrc:/gcompris/src/activities/lang/resource/words_sample/"
     property variant levels: [
         {
             "type": "lesson",
             "name": qsTr("odd even numbers"),
-            "image": imagesPrefix + "numbers.jpg",
+            "image": imagesPrefix + "eleven.png",
             "content": [
                 {
                     "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
-                    "image": imagesPrefix + "even2.jpg",
-                    "maxNumberOfGood": 4,
+                    "image": imagesPrefix + "sixteen.png",
+                    "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/odd_even/",
-                    "good": ["even2.svg","even4.svg","even6.svg","even8.svg"],
-                    "bad": ["odd1.svg","odd3.svg","odd5.svg","odd7.svg"]
+                    "prefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+                    "good": ["two.png","four.png","six.png","eight.png", "ten.png"],
+                    "bad": ["one.png","three.png","five.png","seven.png"]
                 },
                 {
                     "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
-                    "image": imagesPrefix + "even2.jpg",
+                    "image": imagesPrefix + "two.png",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/odd_even/",
-                    "good": ["even72.svg","even22.svg","even96.svg","even2.svg","even4.svg","even10.svg"],
-                    "bad": ["odd47.svg","odd15.svg","odd35.svg","odd3.svg","odd9.svg","odd7.svg"]
+                    "good": ["even72.svg","even22.svg","even96.svg","even92.svg","even88.svg","even192.svg"],
+                    "bad": ["odd47.svg","odd15.svg","odd35.svg","odd23.svg","odd39.svg","odd111.svg"]
                 },
                 {
                     "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
-                    "image": imagesPrefix + "even2.jpg",
-                    "maxNumberOfGood": 5,
+                    "image": imagesPrefix + "two.png",
+                    "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/odd_even/",
-                    "good": ["even786.svg","even276.svg","even192.svg","even92.svg","even88.svg"],
+                    "good": ["even786.svg","even276.svg","even192.svg","even92.svg"],
                     "bad": ["odd111.svg","odd145.svg","odd39.svg","odd353.svg","odd23.svg"]
                 }
             ]

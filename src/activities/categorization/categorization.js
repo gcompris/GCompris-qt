@@ -60,7 +60,7 @@ function start() {
         categoriesFilename = boardsUrl + "board" + "/" + s[i]
         items.categoryReview.categoryDataset.source = categoriesFilename
 
-        if(flag===1 || (items.categoryReview.categoryDataset.item).isEmbedded ) {
+        if(flag === 1 || (items.categoryReview.categoryDataset.item).isEmbedded ) {
             categoriesData.push(items.categoryReview.categoryDataset.item)
         }
     }
