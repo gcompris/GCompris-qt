@@ -82,7 +82,6 @@ ActivityBase {
             Activity.start()
         }
 
-
         onStop: {
             dialogActivityConfig.saveDatainConfiguration()
         }

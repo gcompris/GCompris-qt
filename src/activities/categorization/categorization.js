@@ -45,7 +45,7 @@ function init(items_,boardsUrl_) {
     items = items_
     items.menuModel.clear()
     currentSubLevel = 0
-    items.categoriesCount = items.file.exists(fileName) ? 19 : 7
+    items.categoriesCount = items.file.exists(fileName) ? 18 : 6
 }
 
 function start() {
@@ -54,7 +54,6 @@ function start() {
 
     var s = items.categories.split(" ")
     var flag = items.file.exists(fileName) ? 1 : 0
-
 
     var categoriesFilename;
     for(var i = 0; i < s.length-1; i++) {
