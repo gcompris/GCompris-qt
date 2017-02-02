@@ -34,7 +34,7 @@ Flow {
 
     GCText {
         id: questionText
-        text:qsTr("Question")
+        text:qsTr("Question")        
         font.pointSize: 20
         font.bold: true
         color: "black"
@@ -42,18 +42,20 @@ Flow {
 
     TextField {
         id: answerText
-        height: 35
+        height: 130/800*parent.width
+        width: bar.height * 0.9
         validator: IntValidator{bottom: 1; top: 200;}
         activeFocusOnPress: true
         readOnly: true
-        font.pixelSize: 20
+        horizontalAlignment: TextInput.AlignHCenter
+        font.pixelSize: 24
         style: TextFieldStyle {
             textColor: "#006060"
             background: Rectangle {
                 radius: 5
                 color: "orange"
                 implicitWidth: bar.height * 0.9
-                implicitHeight: bar.height * 0.3
+                implicitHeight: 130/800*parent.width
                 border.color: "#333"
                 border.width: 2
             }
@@ -62,8 +64,8 @@ Flow {
 
     Image {
         id: question_image
-        width: bar.height * 0.3
-        height: bar.height * 0.3
+        width: 130/800*parent.width
+        height: 130/800*parent.width
         fillMode: Image.PreserveAspectFit
         source: "qrc:/gcompris/src/activities/multiplication_tables/resource/wrong.svg"
         opacity: 0

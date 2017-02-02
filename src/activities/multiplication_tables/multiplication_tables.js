@@ -51,7 +51,7 @@ function stop() {}
 function initLevel() {
     items.bar.level = currentLevel + 1
     resetvalue();
-    items.start_button.text = qsTr("START")
+    items.startButton.text = qsTr("START")
     items.score.visible = false
     items.time.text = "--"
     loadQuestions()

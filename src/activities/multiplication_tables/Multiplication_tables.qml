@@ -57,9 +57,9 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property string mode2: "normalMode"
-            property alias start_button: start_button
-            property alias stop_button: stop_button
+            property string modeType: "normalMode"
+            property alias startButton: startButton
+            property alias stopButton: stopButton
             property alias time: time
             property alias score: score
             property alias questionGrid: questionGrid
@@ -75,13 +75,13 @@ ActivityBase {
 
         Flow {
             id: questionGrid
-            anchors.fill: parent
-            anchors.bottom: bar.top
-            spacing: bar.height * 0.4
+            anchors.top: parent.top
+            anchors.bottom: startStopButton.top
+            spacing: 30/800*parent.width
             anchors {
                 left: background.left
                 right: background.right
-                margins: bar.height * 0.6
+                margins: 50/800*parent.width
             }
             Repeater {
                 id: repeater
@@ -97,58 +97,61 @@ ActivityBase {
             anchors {
                 bottom: bar.bottom
                 right: parent.right
+                rightMargin: 150/800*parent.width
             }
-            width: height * 0.83
-            height: bar.height * 1.2
-        }
-
-        GCText {
-            id: score
-            font.pointSize: 20
-            color: "#4B6319"
-            font.bold: true
-            anchors.bottom: time.top
-            anchors.right: parent.right
-            anchors {
-                bottomMargin: bar.height * 0.09
-                rightMargin: bar.height * 1.8
-            }
-            Layout.alignment: Qt.AlignCenter
+            width: 80/800*parent.width
+            height: 70/800*parent.width
         }
 
         GCText {
             id: time
-            font.pixelSize: 23
+            font.pointSize: 17
             font.bold: true
             color: '#4B6319'
-            anchors.bottom: start_stop_buttons.top
+            anchors.bottom: startStopButton.top
             anchors.right: parent.right
             anchors {
-                bottomMargin: bar.height * 0.3
-                rightMargin: bar.height * 1.3
+                bottomMargin: 15/800*parent.width
+                rightMargin: 75/800*parent.width
             }
             text: "--"
             Layout.alignment: Qt.AlignCenter
         }
 
-        Flow{
-            id: start_stop_buttons
-            anchors.bottom: parent.bottom
-            anchors.right: parent.right
+        GCText {
+            id: score
+            font.pointSize: 17
+            anchors.bottom: startStopButton.top
+            anchors.right: time.left
             anchors {
-                bottomMargin: bar.height * 0.4
-                rightMargin: bar.height * 1.5
+                bottomMargin: 15/800*parent.width
+                rightMargin: 15/800*parent.width
             }
+            color: "#2c3a0f"
+            font.bold: true
+            Layout.alignment: Qt.AlignCenter
+        }
 
+        Flow{
+            id: startStopButton
+            anchors.right: parent.right
+            anchors.bottom: bar.top
+            anchors {
+                bottomMargin: 30/800*parent.width
+                rightMargin: 100/800*parent.width
+            }
+            spacing: 25/800*parent.width
             Button {
-                id: start_button
+                id: startButton
                 text: qsTr("START")
+                width: bar.height * 0.8
+                height: bar.height * 0.3
                 style: ButtonStyle {
                     background: Rectangle {
-                        implicitWidth: bar.height * 0.9
+                        implicitWidth: bar.height * 0.8
                         implicitHeight: bar.height * 0.3
                         border.width: control.activeFocus ? 2 : 1
-                        border.color: "blue"
+                        border.color: "blue"                        
                         radius: 4
                         gradient: Gradient {
                             GradientStop {
@@ -164,20 +167,21 @@ ActivityBase {
                     if (startTime == 0 && startButtonClicked == false) {
                         Activity.resetvalue()
                         Activity.canAnswer()
-                        start_button.text = qsTr("START")
+                        startButton.text = qsTr("START")
                         time.text = qsTr(" Your Timer Started...")
                         startTime = new Date().getTime()
                         startButtonClicked = true
                     }
                 }
             }
-
             Button {
-                id: stop_button
+                id: stopButton
+                width: bar.height * 0.8
+                height: bar.height * 0.3
                 text: qsTr("FINISH")
                 style: ButtonStyle {
                     background: Rectangle {
-                        implicitWidth: bar.height * 0.9
+                        implicitWidth: bar.height * 0.8
                         implicitHeight: bar.height * 0.3
                         border.width: control.activeFocus ? 2 : 1
                         border.color: "blue"
@@ -199,7 +203,7 @@ ActivityBase {
                         time.text = qsTr("Your time:- %1 seconds").arg(str1)
                         startTime = 0
                         startButtonClicked = false
-                        start_button.text = qsTr("START AGAIN")
+                        startButton.text = qsTr("START AGAIN")
                         Activity.verifyAnswer()
                         Activity.cannotAnswer()
                     }
@@ -222,15 +226,14 @@ ActivityBase {
                     height: dialogActivityConfig.height
                     property alias normalMode: normalMode
                     property alias schoolMode: schoolMode
-
                     GCDialogCheckBox {
                         id: normalMode
                         width: column.width - 50
                         text: qsTr("Normal mode")
-                        checked: (items.mode2 == "normalMode") ? true : false
+                        checked: (items.modeType == "normalMode") ? true : false
                         onCheckedChanged: {
                             if(normalMode.checked) {
-                                items.mode2 = "normalMode"
+                                items.modeType = "normalMode"
                             }
                         }
                     }
@@ -238,24 +241,14 @@ ActivityBase {
                         id: schoolMode
                         width: normalMode.width
                         text: qsTr("School mode")
-                        checked: (items.mode2 == "schoolMode") ? true : false
+                        checked: (items.modeType == "schoolMode") ? true : false
                         onCheckedChanged: {
                             if(schoolMode.checked) {
-                                items.mode2 = "schoolMode"
+                                items.modeType = "schoolMode"
                             }
                         }
                     }
                 }
-            }
-            onLoadData: {
-                if(dataToSave && dataToSave["mode2"])
-                items.mode = dataToSave["mode2"]
-                if(dataToSave && dataToSave["displayUpdateDialogAtStart"])
-                items.displayUpdateDialogAtStart = (dataToSave["displayUpdateDialogAtStart"] == "true") ? true : false
-            }
-            onSaveData: {
-                dataToSave["mode2"] = items.mode2
-                dataToSave["displayUpdateDialogAtStart"] = items.displayUpdateDialogAtStart ? "true" : "false"
             }
             onClose: home()
         }
