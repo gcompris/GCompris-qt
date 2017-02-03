@@ -48,5 +48,5 @@ QStringList Directory::getFiles(const QString& location)
 
 void Directory::init()
 {
-    qmlRegisterType<Directory>("GCompris", 1, 0, "files");
+    qmlRegisterType<Directory>("GCompris", 1, 0, "directories");
 }
