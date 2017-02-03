@@ -36,7 +36,7 @@ ActivityBase {
 
     property string boardsUrl: "qrc:/gcompris/src/activities/categorization/resource/"
     property bool vert: background.width < background.height
-    property string datasetURL: "../../GCompris-qt/src/activities/categorization/resource/board/"
+    property string datasetURL: ":/gcompris/src/activities/categorization/resource/board/"
 
     pageComponent: Image {
         id: background

@@ -1,4 +1,4 @@
-/* GCompris - FileNames.cpp
+/* GCompris - Directory.cpp
  *
  * Copyright (C) 2017 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
@@ -19,34 +19,34 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "FileNames.h"
+#include "Directory.h"
 
-#include <dirent.h>
 #include <QString>
-#include <string.h>
+#include <QStringList>
 #include <QObject>
+#include <QDir>
+#include <QQmlComponent>
 
-
-FileNames::FileNames()
+Directory::Directory()
 {
 }
 
-QString FileNames::getFiles(QString location)
+QStringList Directory::getFiles(const QString& location)
 {
-    const char *s = location.toUtf8().constData();
-    DIR *dpdf = opendir(s);
-    struct dirent *epdf;
-
-    QString files;
-
-    if(dpdf != NULL) {
-        while(epdf = readdir(dpdf)) {
-            if(strcmp(epdf->d_name, ".") != 0 && strcmp(epdf->d_name,"..")) {
-                // next file name = epdf->d_name
-                files.append(QString::fromLocal8Bit((epdf->d_name)));
-                files.append(" ");
-            }
+    QStringList fileNames;
+    QDir dir(location);
+    QFileInfoList files=dir.entryInfoList();
+    foreach (QFileInfo file, files){
+        if (file.isDir()){
+        } else{
+            // if it is a file
+            fileNames.append(file.fileName());
         }
     }
-    return files;
+    return fileNames;
+}
+
+void Directory::init()
+{
+    qmlRegisterType<Directory>("GCompris", 1, 0, "files");
 }

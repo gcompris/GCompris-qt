@@ -33,11 +33,11 @@ QtObject {
                 {
                     "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
                     "image": imagesPrefix + "sixteen.png",
-                    "maxNumberOfGood": 5,
-                    "maxNumberOfBad": 4,
+                    "maxNumberOfGood": 6,
+                    "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
-                    "good": ["two.png","four.png","six.png","eight.png", "ten.png"],
-                    "bad": ["one.png","three.png","five.png","seven.png"]
+                    "good": ["two.png","four.png","six.png","eight.png", "ten.png","twelve.png"],
+                    "bad": ["one.png","three.png","five.png","seven.png","nine.png","eleven.png"]
                 },
                 {
                     "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
@@ -56,6 +56,33 @@ QtObject {
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/odd_even/",
                     "good": ["even786.svg","even276.svg","even192.svg","even92.svg"],
                     "bad": ["odd111.svg","odd145.svg","odd39.svg","odd353.svg","odd23.svg"]
+                },
+                {
+                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "image": imagesPrefix + "two.png",
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/odd_even/",
+                    "good": ["even22.svg","even88.svg","even192.svg","even786.svg","even72.svg"],
+                    "bad": ["odd47.svg","odd353.svg","odd35.svg","odd15.svg"]
+                },
+                {
+                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "image": imagesPrefix + "two.png",
+                    "maxNumberOfGood": 3,
+                    "maxNumberOfBad": 3,
+                    "prefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+                    "good": ["sixteen.png","ten.png","twelve.png"],
+                    "bad": ["one.png","seven.png","five.png"]
+                },
+                {
+                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "image": imagesPrefix + "sixteen.png",
+                    "maxNumberOfGood": 3,
+                    "maxNumberOfBad": 3,
+                    "prefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+                    "good": ["two.png","eight.png","four.png"],
+                    "bad": ["nine.png","three.png","eleven.png"]
                 }
             ]
         }

@@ -35,8 +35,7 @@
 #include "ActivityInfoTree.h"
 #include "File.h"
 #include "DownloadManager.h"
-
-#include "FileNames.h"
+#include "Directory.h"
 
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
@@ -176,6 +175,7 @@ int main(int argc, char *argv[])
     ApplicationSettings::init();
 	File::init();
 	DownloadManager::init();
+    Directory::init();
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
@@ -272,8 +272,7 @@ int main(int argc, char *argv[])
         window->show();
     }
 
-    QScopedPointer<FileNames> files(new FileNames);
-    engine.rootContext()->setContextProperty("files", files.data());
+    engine.rootContext()->setContextProperty("files", new Directory);
 
 	return app.exec();
 

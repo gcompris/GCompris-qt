@@ -1,4 +1,4 @@
-/* GCompris - FileNames.h
+/* GCompris - Directory.h
  *
  * Copyright (C) 2017 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
@@ -19,19 +19,41 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef FILENAMES_H
-#define FILENAMES_H
+#ifndef DIRECTORY_H
+#define DIRECTORY_H
 
-#include <dirent.h>
 #include <QString>
+#include <QStringList>
 #include <QObject>
 
-class FileNames : public QObject
+/**
+ * @class Directory
+ * @short A helper component to get the names of files
+ *        present in a given location
+ * Use - call files.getFiles(":input/path/")
+ */
+
+class Directory : public QObject
 {
     Q_OBJECT
+
 public:
-    FileNames();
-    Q_INVOKABLE QString getFiles(QString location);
+    /**
+     * Constructor
+    */
+    Directory();
+
+    /**
+      * Returns the names of all the files in a given path
+      *
+      * @param location : The path of the directory
+      *
+      * @returns Names of all the files present in the
+      *          given location, separated by a space
+      */
+    Q_INVOKABLE QStringList getFiles(const QString& location);
+    static void init();
+
 };
 
 #endif

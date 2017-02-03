@@ -52,15 +52,16 @@ function start() {
     categoriesData = []
     items.categoryReview.stop()
 
-    var s = items.categories.split(" ")
-    var flag = items.file.exists(fileName) ? 1 : 0
+    var categoryLists = []
+    categoryLists = items.categories
+    var allFilesExist = items.file.exists(fileName) ? true : false
 
     var categoriesFilename;
-    for(var i = 0; i < s.length-1; i++) {
-        categoriesFilename = boardsUrl + "board" + "/" + s[i]
+    for(var i = 0; i < categoryLists.length; i++) {
+        categoriesFilename = boardsUrl + "board" + "/" + categoryLists[i]
         items.categoryReview.categoryDataset.source = categoriesFilename
 
-        if(flag === 1 || (items.categoryReview.categoryDataset.item).isEmbedded ) {
+        if(allFilesExist || (items.categoryReview.categoryDataset.item).isEmbedded ) {
             categoriesData.push(items.categoryReview.categoryDataset.item)
         }
     }
