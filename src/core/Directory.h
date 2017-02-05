@@ -30,7 +30,7 @@
  * @class Directory
  * @short A helper component to get the names of files
  *        present in a given location
- * Use - call files.getFiles(":input/path/")
+ * Use - call getFiles(":input/path/")
  */
 
 class Directory : public QObject

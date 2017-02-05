@@ -29,7 +29,6 @@
 #include <QCursor>
 #include <QPixmap>
 #include <QSettings>
-#include <QQmlContext>
 
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
@@ -271,8 +270,6 @@ int main(int argc, char *argv[])
     else {
         window->show();
     }
-
-    engine.rootContext()->setContextProperty("files", new Directory);
 
 	return app.exec();
 

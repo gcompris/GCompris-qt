@@ -54,14 +54,14 @@ function start() {
 
     var categoryLists = []
     categoryLists = items.categories
-    var allFilesExist = items.file.exists(fileName) ? true : false
+    var isEmbeddedMode = items.file.exists(fileName) ? true : false
 
     var categoriesFilename;
     for(var i = 0; i < categoryLists.length; i++) {
         categoriesFilename = boardsUrl + "board" + "/" + categoryLists[i]
         items.categoryReview.categoryDataset.source = categoriesFilename
 
-        if(allFilesExist || (items.categoryReview.categoryDataset.item).isEmbedded ) {
+        if(isEmbeddedMode || (items.categoryReview.categoryDataset.item).isEmbedded ) {
             categoriesData.push(items.categoryReview.categoryDataset.item)
         }
     }

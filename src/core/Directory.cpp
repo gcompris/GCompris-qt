@@ -35,18 +35,14 @@ QStringList Directory::getFiles(const QString& location)
 {
     QStringList fileNames;
     QDir dir(location);
-    QFileInfoList files=dir.entryInfoList();
-    foreach (QFileInfo file, files){
-        if (file.isDir()){
-        } else{
-            // if it is a file
-            fileNames.append(file.fileName());
-        }
+    QStringList files=dir.entryList();
+    foreach (QString file, files){
+        fileNames.append(file);
     }
     return fileNames;
 }
 
 void Directory::init()
 {
-    qmlRegisterType<Directory>("GCompris", 1, 0, "directories");
+    qmlRegisterType<Directory>("GCompris", 1, 0, "Directory");
 }

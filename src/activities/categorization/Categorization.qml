@@ -73,7 +73,7 @@ ActivityBase {
             property var details
             property alias file: file
             property var categoriesCount
-            property var categories: files.getFiles(datasetURL)
+            property var categories: directory.getFiles(datasetURL)
         }
 
         onStart: {
@@ -93,6 +93,10 @@ ActivityBase {
             id: file
             onError: console.error("File error: " + msg);
         }
+        }
+
+        Directory {
+            id: directory
         }
 
         CategoryReview {
