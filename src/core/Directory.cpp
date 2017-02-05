@@ -35,11 +35,8 @@ QStringList Directory::getFiles(const QString& location)
 {
     QStringList fileNames;
     QDir dir(location);
-    QStringList files=dir.entryList();
-    foreach (QString file, files){
-        fileNames.append(file);
-    }
-    return fileNames;
+
+    return dir.entryList();
 }
 
 void Directory::init()
