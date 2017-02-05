@@ -21,6 +21,7 @@
 import QtQuick 2.0
 
 QtObject{
+    property bool isEmbedded: false
     property string imagesPrefix: "qrc:/gcompris/data/words/nature/"
     property variant levels: [
         {

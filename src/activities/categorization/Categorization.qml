@@ -36,6 +36,7 @@ ActivityBase {
 
     property string boardsUrl: "qrc:/gcompris/src/activities/categorization/resource/"
     property bool vert: background.width < background.height
+    property string datasetURL: ":/gcompris/src/activities/categorization/resource/board/"
 
     pageComponent: Image {
         id: background
@@ -72,6 +73,7 @@ ActivityBase {
             property var details
             property alias file: file
             property var categoriesCount
+            property var categories: directory.getFiles(datasetURL)
         }
 
         onStart: {
@@ -91,6 +93,10 @@ ActivityBase {
             id: file
             onError: console.error("File error: " + msg);
         }
+        }
+
+        Directory {
+            id: directory
         }
 
         CategoryReview {
