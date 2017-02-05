@@ -34,7 +34,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property string boardsUrl: "qrc:/gcompris/src/activities/categorization/resource/"
+    property string boardsUrl: ":/gcompris/src/activities/categorization/resource/board/"
     property bool vert: background.width < background.height
 
     pageComponent: Image {
@@ -44,8 +44,6 @@ ActivityBase {
         sourceSize.width: parent.width
         signal start
         signal stop
-
-        property bool categoriesFallback: (items.categoriesCount == 6) ? true : false
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -70,8 +68,9 @@ ActivityBase {
             property bool iAmReadyChecked: (mode === "expert")
             property bool displayUpdateDialogAtStart: true
             property var details
+            property bool categoriesFallback
             property alias file: file
-            property var categoriesCount
+            property var categories: directory.getFiles(boardsUrl)
         }
 
         onStart: {
@@ -91,6 +90,10 @@ ActivityBase {
             id: file
             onError: console.error("File error: " + msg);
         }
+        }
+
+        Directory {
+            id: directory
         }
 
         CategoryReview {
@@ -212,13 +215,13 @@ ActivityBase {
                               "Press the Cross to play with demo version or 'Never show this dialog later' if you want to never see again this dialog.")
                 button1Text: qsTr("Update the image set")
                 button2Text: qsTr("Never show this dialog later")
-                onClose: background.categoriesFallback = false
+                onClose: items.categoriesFallback = false
                 onButton1Hit: DownloadManager.downloadResource('data2/words/words.rcc')
                 onButton2Hit: { items.displayUpdateDialogAtStart = false; dialogActivityConfig.saveDatainConfiguration() }
             }
             anchors.fill: parent
             focus: true
-            active: background.categoriesFallback && items.displayUpdateDialogAtStart
+            active: items.categoriesFallback && items.displayUpdateDialogAtStart
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

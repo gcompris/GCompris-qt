@@ -1,4 +1,3 @@
-
 /* GCompris
  *
  * Copyright (C) 2016 Divyam Madaan <divyam3897@gmail.com>
@@ -22,6 +21,7 @@
 import QtQuick 2.0
 
 QtObject {
+    property bool isEmbedded: true
     property string imagesPrefix: "qrc:/gcompris/src/activities/categorization/resource/images/monuments/"
     property variant levels: [
         {

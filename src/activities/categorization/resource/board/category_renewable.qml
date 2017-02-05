@@ -20,7 +20,8 @@
  */
 import QtQuick 2.0
 
-QtObject{
+QtObject {
+    property bool isEmbedded: true
     property string imagesPrefix: "qrc:/gcompris/src/activities/categorization/resource/images/renewable/"
     property variant levels: [
         {
