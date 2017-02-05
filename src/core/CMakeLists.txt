@@ -23,6 +23,8 @@ set(gcompris_SRCS
    ApplicationSettings.h
    File.cpp
    File.h
+   Directory.cpp
+   Directory.h
    DownloadManager.cpp
    DownloadManager.h
 )

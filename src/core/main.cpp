@@ -33,6 +33,7 @@
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "File.h"
+#include "Directory.h"
 #include "DownloadManager.h"
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
@@ -168,10 +169,11 @@ int main(int argc, char *argv[])
 
 
     ApplicationInfo::init();
-	ActivityInfoTree::init();
+    ActivityInfoTree::init();
     ApplicationSettings::init();
-	File::init();
-	DownloadManager::init();
+    File::init();
+    Directory::init();
+    DownloadManager::init();
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
