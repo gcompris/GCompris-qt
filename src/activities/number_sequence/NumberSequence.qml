@@ -110,7 +110,7 @@ ActivityBase {
                     id: pointImage
                     source: Activity.url + (highlight ?
                             (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
-                    lastVisitedNode ? "redpoint.svg" : "greenpoint.svg")
+                    markedAsPoint ? "blackpoint.svg" : "greenpoint.svg")
                     sourceSize.height: background.height / 25  //to change the size of dots
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
@@ -126,7 +126,7 @@ ActivityBase {
                         Activity.drawSegment(index)
                     }
                     property bool highlight: false
-                    property bool lastVisitedNode: false
+                    property bool markedAsPoint: false
 
                     GCText {
                         id: pointNumberText
