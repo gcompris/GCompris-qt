@@ -1,10 +1,10 @@
 /* GCompris - Bargame_2players.qml
  *
- * Copyright (C) 2016 UTKARSH TIWARI <iamutkarshtiwari@kde.org>
+ * Copyright (C) 2017 UTKARSH TIWARI <iamutkarshtiwari@kde.org>
  *
  * Authors:
  *   Yves Combe (GTK+ version)
- *   UTKARSH TIWARI <iamutkarshtiwari@kde.org > (Qt Quick port)
+ *   UTKARSH TIWARI <iamutkarshtiwari@kde.org> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,9 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import GCompris 1.0
-
-import "../../core"
 import "../bargame"
 
 Bargame {

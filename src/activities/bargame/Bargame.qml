@@ -4,7 +4,7 @@
  *
  * Authors:
  *   Yves Combe (GTK+ version)
- *   UTKARSH TIWARI <iamutkarshtiwari@kde.org > (Qt Quick port)
+ *   UTKARSH TIWARI <iamutkarshtiwari@kde.org> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -51,13 +51,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property Item boxModel: boxModel
-            property Item rootWindow: rootWindow
-            property alias tux: tux
-            property alias tuxArea: tuxArea
-            property alias boxes: boxes
-            property alias masks: masks
-            property alias numberLabel: numberLabel
+            property int numberOfBalls: 1
             property alias answerBallsPlacement: answerBallsPlacement
             property alias bar: bar
             property alias bonus: bonus
@@ -112,8 +106,8 @@ ActivityBase {
             }
             MouseArea {
                 id: tuxArea
-                hoverEnabled: true
-                enabled: true
+                hoverEnabled: enabled
+                enabled: gameMode == 1 && !answerBallsPlacement.children[0].visible
                 anchors.fill: parent
                 onClicked: {
                     tuxArea.hoverEnabled = false;
@@ -123,7 +117,7 @@ ActivityBase {
             }
             states: State {
                 name: "tuxHover"
-                when: tuxArea.containsPress
+                when: tuxArea.containsMouse
                 PropertyChanges {
                     target: tux
                     scale: 1.1
@@ -157,7 +151,7 @@ ActivityBase {
             Grid {
                 id: boxes
                 rows: 1
-                columns: Activity.boardSize[items.mode - 1]
+                columns: Activity.levelsProperties[items.mode - 1].boardSize
                 anchors.centerIn: boxModel.Center
                 Repeater {
                     id: startCase
@@ -166,7 +160,7 @@ ActivityBase {
                         id: greenCase
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
                         height: width
-                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         visible: true
                     }
                 }
@@ -177,15 +171,15 @@ ActivityBase {
                 // All green balls placement
                 id: answerBallsPlacement
                 anchors.centerIn: boxModel.Center
-                columns: Activity.boardSize[items.mode - 1]
+                columns: Activity.levelsProperties[items.mode - 1].boardSize
                 rows: 1
                 Repeater {
                     model: answerBallsPlacement.columns
                     Image {
                         source: Activity.url + "green_ball.svg"
                         height: width
-                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
-                        opacity: 0.0
+                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        visible: false
                     }
                 }
             }
@@ -195,7 +189,7 @@ ActivityBase {
                 id: masks
                 anchors.centerIn: boxModel.Center
                 rows: 1
-                columns: Activity.boardSize[items.mode-1]
+                columns: Activity.levelsProperties[items.mode - 1].boardSize
                 Repeater {
                     id: startMask
                     model: masks.columns
@@ -203,7 +197,7 @@ ActivityBase {
                         id: greenMask
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
                         height: width
-                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1])
+                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         // Numbering label
                         GCText {
                             id: numberText
@@ -228,7 +222,7 @@ ActivityBase {
             // Upper blue balls sample
             Grid {
                 id: blueBalls
-                columns: Activity.sampleBallsNumber[items.mode - 1]
+                columns: Activity.levelsProperties[items.mode - 1].sampleBallsNumber
                 rows: 1
                 x: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) - columns * (rootWindow.height / 15)
                 y: boxes.y - (ApplicationSettings.baseFontSize + 30) * ApplicationInfo.fontRatio
@@ -247,9 +241,9 @@ ActivityBase {
             Grid {
                 id: greenBalls
                 x: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) - columns * (rootWindow.height / 15)
-                y: boxes.y + rootWindow.width / (15 + (items.mode - 1) * Activity.elementSizeFactor[items.mode - 1]) + 2
+                y: boxes.y + rootWindow.width / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor) + 2
                 rows: 1
-                columns: Activity.sampleBallsNumber[items.mode - 1]
+                columns: Activity.levelsProperties[items.mode - 1].sampleBallsNumber
                 Repeater {
                     model: greenBalls.columns
                     Image {
@@ -280,20 +274,19 @@ ActivityBase {
                 hoverEnabled: true
                 enabled: true
                 onClicked: {
-                    tuxArea.hoverEnabled = false;
-                    tuxArea.enabled = false;
-                    var value = Activity.numberOfBalls
-                    numberLabel.text = Activity.numberOfBalls = Activity.numberBalls[items.mode - 1][0];
-                    if (gameMode == 1) {
+                    var value = items.numberOfBalls
+                    if (gameMode == 1 || items.isPlayer1Turn) {
                         Activity.play(1, value);
                     } else {
-                        Activity.play(((items.isPlayer1Turn) ? 1 : 2), value);
+                        Activity.play(2, value);
                     }
+                    // reset next action
+                    items.numberOfBalls = Activity.levelsProperties[items.mode - 1].minNumberOfBalls
                 }
             }
             states: State {
                 name: "mouseHover"
-                when: okArea.containsPress
+                when: okArea.containsMouse
                 PropertyChanges {
                     target: playLabel
                     scale: 1.2
@@ -319,16 +312,16 @@ ActivityBase {
                 anchors.fill: parent
                 hoverEnabled: true
                 onClicked: {
-                    Activity.numberOfBalls ++;
-                    if (Activity.numberOfBalls > Activity.numberBalls[items.mode - 1 ][1]) {
-                        Activity.numberOfBalls = Activity.numberBalls[items.mode - 1 ][0];
+                    items.numberOfBalls ++;
+                    var max = Activity.levelsProperties[items.mode - 1].maxNumberOfBalls
+                    if (items.numberOfBalls > max) {
+                        items.numberOfBalls = Activity.levelsProperties[items.mode - 1].minNumberOfBalls;
                     }
-                    numberLabel.text = Activity.numberOfBalls;
                 }
             }
             states: State {
                 name: "numberHover"
-                when: numberPlateArea.containsPress
+                when: numberPlateArea.containsMouse
                 PropertyChanges {
                     target: ballNumberPlate
                     scale: 1.1
@@ -349,8 +342,8 @@ ActivityBase {
             // Number label
             GCText {
                 id: numberLabel
-                text: "1"
-                color: 'Red'
+                text: items.numberOfBalls
+                color: "red"
                 font.bold: true
                 fontSize: smallSize
                 anchors {
@@ -647,14 +640,11 @@ ActivityBase {
                 }
             }
 
-            onClose: {
-                Activity.initLevel();
-                home();
-            }
+            onClose: home()
+
             onLoadData: {
                 if(dataToSave && dataToSave["mode"]) {
                     items.mode = dataToSave["mode"];
-                    Activity.initLevel();
                 }
             }
             onSaveData: {
@@ -663,7 +653,7 @@ ActivityBase {
                     items.mode = newMode;
                     dataToSave = {"mode": items.mode};
                 }
-                items.player1Score = items.player2Score = 0;
+                Activity.initLevel();
             }
             function setDefaultValues() {
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {

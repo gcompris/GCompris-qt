@@ -23,23 +23,43 @@
 .import GCompris 1.0 as GCompris
 .import QtQuick 2.0 as Quick
 
-var numberBalls = [[1, 4], [2, 6], [3, 6]]
-var sampleBallsNumber = [4, 6, 6]
-var elementSizeFactor = [0, 4, 7]
-var boardSize = [15, 19, 29]
+var levelsProperties = [
+    {
+        "minNumberOfBalls": 1,
+        "maxNumberOfBalls": 4,
+        "sampleBallsNumber": 4,
+        "elementSizeFactor": 0,
+        "boardSize": 15
+    },
+    {
+        "minNumberOfBalls": 2,
+        "maxNumberOfBalls": 6,
+        "sampleBallsNumber": 6,
+        "elementSizeFactor": 4,
+        "boardSize": 19
+    },
+    {
+        "minNumberOfBalls": 3,
+        "maxNumberOfBalls": 6,
+        "sampleBallsNumber": 6,
+        "elementSizeFactor": 7,
+        "boardSize": 29
+    }
+];
+
 var moveCount = -1
-var maxlevel = 4
-var numberOfsublevel = 3
-var listWin = false
+var currentLevel = 1
+var maxLevel = 4
+var listWin = []
 var items
 var gameMode
-var numberOfBalls = 1
 
 var url= "qrc:/gcompris/src/activities/bargame/resource/";
 
 function start(items_, gameMode_) {
     items = items_;
     gameMode = gameMode_;
+    currentLevel = 1;
     initLevel();
 }
 
@@ -55,33 +75,31 @@ function initLevel() {
         items.isPlayer1Turn = false;
     }
 
-    calculateWinPlaces();
+
     items.okArea.enabled = true;
-    items.tuxArea.enabled = true;
-    items.tuxArea.hoverEnabled = true;
+    calculateWinPlaces();
     moveCount = -1;
-    items.numberLabel.text = numberOfBalls = numberBalls[items.mode - 1][0];
+    items.numberOfBalls = levelsProperties[items.mode - 1].minNumberOfBalls
+    items.bar.level = currentLevel;
 
     // Hiding all visible balls
     for (var x = 0; x < items.answerBallsPlacement.columns; x++) {
-        items.answerBallsPlacement.children[x].opacity = 0.0;
+        items.answerBallsPlacement.children[x].visible = false;
     }
 }
 
 function nextLevel() {
-    if (items.bar.level === 4) {
-        items.bar.level = 1;
-    } else {
-        items.bar.level++;
+    currentLevel ++;
+    if (currentLevel > maxLevel) {
+        currentLevel = 1;
     }
     initLevel();
 }
 
 function previousLevel() {
-    if (items.bar.level === 1) {
-        items.bar.level = 4;
-    } else {
-        items.bar.level--;
+    currentLevel--;
+    if (currentLevel < 1) {
+        currentLevel = maxLevel;
     }
     initLevel();
 }
@@ -96,29 +114,30 @@ function calculateWinPlaces() {
     moves for the computer */
     var winners = [];
     var winnersList = [];
-    var min = numberBalls[items.mode - 1][0];
-    var max = numberBalls[items.mode - 1][1];
+    var min = levelsProperties[items.mode - 1].minNumberOfBalls;
+    var max = levelsProperties[items.mode - 1].maxNumberOfBalls;
+    var boardSize = levelsProperties[items.mode - 1].boardSize;
     var period = (min + max);
 
     for (var x = 0; x < min; x++) {
-        winnersList.push((boardSize[items.mode - 1] - 1 - x) % period);
+        winnersList.push((boardSize - 1 - x) % period);
     }
 
-    for (var x = 0; x < (boardSize[items.mode - 1]); x++ ) {
+    for (var x = 0; x < boardSize; x++ ) {
         if (winnersList.indexOf((x + 1) % period) >= 0) {
             winners.push(x);
         }
     }
 
-    var level_win = (items.bar.level - 1) * min;
+    var levelWin = (currentLevel - 1) * min;
 
-    if (level_win == 0) {
+    if (levelWin == 0) {
         winners = [];
     } else {
-        winners = winners.slice(-level_win);
+        winners = winners.slice(-levelWin);
     }
 
-    listWin =  winners;
+    listWin = winners;
 }
 
 function machinePlay() {
@@ -136,15 +155,18 @@ function machinePlay() {
 
     var playable = [];
 
-    for (var x = numberBalls[items.mode - 1][0]; x < numberBalls[items.mode - 1][1] + 1; x++) {
+    var min = levelsProperties[items.mode - 1].minNumberOfBalls;
+    var max = levelsProperties[items.mode - 1].maxNumberOfBalls + 1;
+    for (var x = min; x < max; x++) {
         if (accessible(x)) {
-            playable.push(x);
-        }
+                playable.push(x);
+            }
     }
+    var value;
     if (playable.length != 0) {
-        var value = playable[Math.floor(Math.random()*playable.length)];
+        value = playable[Math.floor(Math.random()*playable.length)];
     } else {
-        var value = randomNumber(numberBalls[items.mode - 1][0], numberBalls[items.mode - 1][1]);
+        value = randomNumber(min, max);
     }
 
     play(2, value);
@@ -153,16 +175,17 @@ function machinePlay() {
 function play(player, value) {
     for (var x = 0; x < value ; x++) {
         moveCount++;
-        if (moveCount <= (boardSize[items.mode - 1] - 1)) {
+        var boardSize = levelsProperties[items.mode - 1].boardSize;
+        if (moveCount <= (boardSize - 1)) {
+            items.answerBallsPlacement.children[moveCount].visible = true;
             if (player == 1) {
-                items.answerBallsPlacement.children[moveCount].opacity = 1.0;
                 items.answerBallsPlacement.children[moveCount].source = url + "green_ball.svg";
             } else {
-                items.answerBallsPlacement.children[moveCount].opacity = 1.0;
                 items.answerBallsPlacement.children[moveCount].source = url + "blue_ball.svg";
             }
         }
-        if (moveCount == (boardSize[items.mode - 1] - 1)) {
+        // one of the players has win
+        if (moveCount == (boardSize - 1)) {
             items.okArea.enabled = false;
             if (gameMode == 2) {
                 items.isPlayer1Beginning = !items.isPlayer1Beginning;
@@ -188,20 +211,12 @@ function play(player, value) {
         items.player1turn.start();
     } else if (gameMode == 2) {
         items.isPlayer1Turn = !items.isPlayer1Turn;
-        if (player == 1){
+        if (player == 1) {
             items.player2turn.start();
         } else {
-            items.player1turn.start()
+            items.player1turn.start();
         }
     }
-}
-
-function delay(delayTime) {
-    /* Add delay to Tux moves */
-    timer = new Quick.Timer();
-    timer.interval = delayTime;
-    timer.repeat = false;
-    timer.start();
 }
 
 //Initial values at the start of game when its player 1 turn
@@ -213,7 +228,7 @@ function initiatePlayer1() {
     items.rotateKonqi.start()
 }
 
-//Initial values at the start of game when its player 1 turn
+//Initial values at the start of game when its player 2 turn
 function initiatePlayer2() {
     items.changeScalePlayer1.scale = 1.0
     items.changeScalePlayer2.scale = 1.4
