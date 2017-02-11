@@ -234,6 +234,13 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
 
+    /**
+     * Path where resources are downloaded and stored.
+     *
+     * @sa DownloadManager
+     */
+    Q_PROPERTY(QString cachePath READ cachePath WRITE setCachePath NOTIFY cachePathChanged)
+
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
@@ -420,6 +427,12 @@ public:
         emit downloadServerUrlChanged();
     }
 
+    QString cachePath() const { return m_cachePath; }
+    void setCachePath(const QString &newCachePath) {
+        m_cachePath = newCachePath;
+        emit cachePathChanged();
+    }
+
     quint32 exeCount() const { return m_exeCount; }
     void setExeCount(const quint32 newExeCount) {
         m_exeCount = newExeCount;
@@ -478,6 +491,7 @@ protected slots:
     Q_INVOKABLE void notifyWordsetChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
+    Q_INVOKABLE void notifyCachePathChanged();
 
     Q_INVOKABLE void notifyExeCountChanged();
 
@@ -547,6 +561,7 @@ signals:
     void baseFontSizeChanged();
 
     void downloadServerUrlChanged();
+    void cachePathChanged();
 
     void exeCountChanged();
 
@@ -591,6 +606,7 @@ private:
     const qreal m_fontLetterSpacingMax;
 
     QString m_downloadServerUrl;
+    QString m_cachePath;
 
     quint32 m_exeCount;
 
