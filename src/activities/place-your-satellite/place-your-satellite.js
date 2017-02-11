@@ -127,14 +127,14 @@ function calcparameters() {
     } else {
         items.isEllipse=true
 
-    //   Semi Major Axis "a" : Em = -k/2a with ellipse thus a = -k/2Em
-         a = -massObjectMass*G/2/Em_mass
+        //   Semi Major Axis "a" : Em = -k/2a with ellipse thus a = -k/2Em
+        a = -massObjectMass*G/2/Em_mass
 
-    //   Period with 3rd Kepler's Law  T²=4pi²/MG*a³
+        //   Period with 3rd Kepler's Law  T²=4pi²/MG*a³
         t = 2*Math.PI*Math.sqrt((Math.pow(a,3)/massObjectMass/G))
         items.period =t
 
-    //nb of point to calcul. 2000 seems good. 100 is not enough
+        //nb of point to calcul. 2000 seems good. 100 is not enough
         dt = t/2000
 
         items.instructions.text = "Great !! Satellite is turning over Planet !!"
@@ -151,7 +151,7 @@ function calcparameters() {
 //Out : 6-uplet speed and acceleration : vx,vy,vz, ax, ay, az
 
 function derivs(x,t){
-   var  g = gravField(x.slice(0,3),[0,0,0],massObjectMass)
+    var  g = gravField(x.slice(0,3),[0,0,0],massObjectMass)
 
     //console.log('g', g,x,t)
     return [x[3],                // speed x
@@ -191,19 +191,19 @@ function rk4(y0, t){
 
         for (var j=0; j<6; j++){
 
-           k1add[j]  = y0[j] + dt2*k1[j]
+            k1add[j]  = y0[j] + dt2*k1[j]
         }
         var k2 = derivs(k1add, thist+dt2)
 
 
         for (var j=0; j<6; j++){
-           k2add[j]  = y0[j] + dt2*k2[j]
+            k2add[j]  = y0[j] + dt2*k2[j]
         }
         var  k3 = derivs(k2add, thist+dt2)
 
 
         for (var j=0; j<6; j++){
-           k3add[j]  = y0[j] + dt2*k3[j]
+            k3add[j]  = y0[j] + dt2*k3[j]
         }
 
         var  k4 = derivs(k3add, thist+dt)

@@ -31,9 +31,7 @@ ActivityBase {
     id: activity
 
     onStart: focus = true
-    onStop: {
-
-    }
+    onStop: {}
 
     pageComponent: Rectangle {
         id: background
@@ -63,21 +61,21 @@ ActivityBase {
                     sat.x = centralItem.width/2 + distanceSatInPix-sat.width/2
                     sat.y = centralItem.height/2-sat.height/2
 
-                        } else {
+                } else {
 
                     satArrowleft.visible=false
                     sat.x = centralItem.width/2 + Activity.listPointsPix[tick][0]-sat.width/2
                     sat.y = centralItem.height/2+Activity.listPointsPix[tick][1]-sat.height/2
                     tick++}
 
-        }
+            }
         }
 
 
         onMassNbChanged: {
             Activity.massChanged(massNb)
             massInfo.text = Activity.massObjectName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
-            massImage.source = Activity.url + "resource/" + Activity.massObjectName + ".png"
+            massImage.source = Activity.url + "resource/" + Activity.massObjectName + ".svg"
             diameterInfo.text = items.massObjectDiameter + " km"
             slidDistance.value = 2*items.massObjectDiameter
 
@@ -93,7 +91,7 @@ ActivityBase {
         onSatNbChanged: {
             Activity.satChanged(satNb)
             satInfo.text = Activity.satObjectName + '\n' + Activity.satObjectMass + " kg"
-            satImage.source = Activity.url + "resource/" + Activity.satObjectName + ".png"
+            satImage.source = Activity.url + "resource/" + Activity.satObjectName + ".svg"
         }
 
         Component.onCompleted: {
@@ -160,15 +158,6 @@ ActivityBase {
             font.pointSize: mediumSize
             color: "#777"
             wrapMode: Text.WordWrap
-
-            PropertyAnimation on opacity {
-                id: instructionBlink
-                easing.type: Easing.InOutBack
-                loops: Animation.Infinite
-                from: 0
-                to: 1.0
-                duration: 2000
-            }
         }
 
         // ---- Central widget ----
@@ -176,9 +165,8 @@ ActivityBase {
             id:centralItem
             scale: scaleGlob
             anchors.top :parent.top
-            anchors.topMargin: 0.1*parent.height
-            width:0.6*parent.width
-            height:0.8*parent.height
+            width: parent.width * 0.6
+            height: parent.height * 0.95
             anchors.horizontalCenter: parent.horizontalCenter
             focus:true
             color:'transparent'
@@ -205,9 +193,12 @@ ActivityBase {
                 }
 
                 Image {
+                    // Selected satellite image
                     id: satImage
                     anchors.horizontalCenter: parent.horizontalCenter
-                    source: Activity.url + "resource/" + Activity.satObjectName + ".png"
+                    width: background.width * 0.09
+                    height: background.width * 0.07
+                    source: Activity.url + "resource/" + Activity.satObjectName + ".svg"
                 }
 
                 Rectangle {
@@ -235,12 +226,25 @@ ActivityBase {
                     id: satArrowleft
                     x: parent.width / 2
                     y: parent.height / 2
-                    source: Activity.url + "resource/arrowSimple.png"
+                    source: Activity.url + "resource/arrowSimple.svg"
+                    width: background.width * 0.09
+                    height: background.width * 0.07
+
                     transform: Rotation {
                         id:rotation
                         origin.x: 0
-                        origin.y: 18
+                        origin.y: 0
                         angle: arrowSatAngle
+                    }
+                    Rectangle {
+                        x: satArrowleft.x
+                        y: satArrowleft.y
+                        width: 2
+                        height: 2
+                        color: "white"
+                        border.color: "white"
+                        border.width: 1
+                        radius: width*0.5
                     }
                 }
             }
@@ -264,7 +268,8 @@ ActivityBase {
                     anchors.topMargin: 50
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: massImage.width
-                    source: Activity.url + "resource/arrow.png"
+                    height: massImage.height * 1 / 3
+                    source: Activity.url + "resource/arrow.svg"
                 }
 
                 Rectangle {
@@ -293,11 +298,11 @@ ActivityBase {
                     id: massImage
                     anchors.centerIn: parent
                     anchors.horizontalCenter: parent.horizontalCenter
-                    source: Activity.url + "resource/" + Activity.massObjectName + ".png"
+                    source: Activity.url + "resource/" + Activity.massObjectName + ".svg"
+                    width: background.width * 0.1
+                    height: width
                 }
             }
-
-
 
             Canvas {
                 id: trajecCanvas
@@ -306,8 +311,8 @@ ActivityBase {
                 anchors.top:parent.top
                 anchors.left:parent.left
                 Component.onCompleted: {
-                       loadImage(Activity.url + "resource/crash.png")
-                    }
+                    loadImage(Activity.url + "resource/crash.svg")
+                }
 
                 onPaint: {
                     tick=0
@@ -333,39 +338,39 @@ ActivityBase {
                         .arg((items.period/3600).toFixed(0))
                         .arg(60*((items.period/3600) - Math.floor(items.period/3600)).toFixed(0))
                     }
-                        for (var j = 0; j < Activity.listPointsPix.length; j++) {
-                            ctx.save() //save with translation and styles 2
-                            var xs = Activity.listPointsPix[j][0]
-                            var ys = Activity.listPointsPix[j][1]
-                            ctx.translate(xs, ys)
+                    for (var j = 0; j < Activity.listPointsPix.length; j++) {
+                        ctx.save() //save with translation and styles 2
+                        var xs = Activity.listPointsPix[j][0]
+                        var ys = Activity.listPointsPix[j][1]
+                        ctx.translate(xs, ys)
 
-                            if ((xs*xs+ys*ys) /
-                                    (items.pixPerMeter*items.pixPerMeter) <
-                                    (items.massObjectDiameter*items.massObjectDiameter/4)) {
-                                // fall on ground
-                                var xx = Activity.listPointsPix[j-1][0]
-                                var yy = Activity.listPointsPix[j-1][1]
-                                ctx.drawImage(Activity.url + "resource/crash.png",xx+20, yy+20);
+                        if ((xs*xs+ys*ys) /
+                                (items.pixPerMeter*items.pixPerMeter) <
+                                (items.massObjectDiameter*items.massObjectDiameter/4)) {
+                            // fall on ground
+                            var xx = Activity.listPointsPix[j-1][0]
+                            var yy = Activity.listPointsPix[j-1][1]
+                            ctx.drawImage(Activity.url + "resource/crash.svg",xx+20, yy+20);
 
-                                ctx.restore() // restore with translation and styles 2
-                                items.instructions.text =
-                                        qsTr("Great !! Satellite is turning over Planet !!" +
-                                             " But it crashes on its surface :(")
-                                tick=0
-                                crash=true
-                                satTimer.stop()
-                                break
-                            }
-
-                            ctx.beginPath()
-
-                            //draw a cross
-                            ctx.moveTo(0, 3)
-                            ctx.lineTo(0, -3)
-                            ctx.moveTo(-3, 0)
-                            ctx.lineTo(3, 0)
-                            ctx.stroke()
                             ctx.restore() // restore with translation and styles 2
+                            items.instructions.text =
+                                    qsTr("Great !! Satellite is turning over Planet !!" +
+                                         " But it crashes on its surface :(")
+                            tick=0
+                            crash=true
+                            satTimer.stop()
+                            break
+                        }
+
+                        ctx.beginPath()
+
+                        //draw a cross
+                        ctx.moveTo(0, 3)
+                        ctx.lineTo(0, -3)
+                        ctx.moveTo(-3, 0)
+                        ctx.lineTo(3, 0)
+                        ctx.stroke()
+                        ctx.restore() // restore with translation and styles 2
                     }
 
                     satTimer.repeat = true
@@ -441,22 +446,43 @@ ActivityBase {
             id: satList
         }
 
+        Button {
+            id: leftArea
+            anchors.left: parent.left
+            width: parent.width * 0.1
+            height: parent.height * 0.1
+            visible: true
+            onClicked: satMenu.visible = !satMenu.visible
+
+            GCText {
+                id: leftAreaText
+                anchors.centerIn: parent
+                width: parent.width
+                fontSize: tinySize
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignHCenter
+                text: (satMenu.visible == true) ? qsTr("Hide satellites") : qsTr("Show satellites")
+                color: "black"
+            }
+        }
+
+        // Selection area on the left side
         Rectangle {
             id: satMenu
-            anchors.top: parent.top
+            anchors.top: leftArea.bottom
             anchors.left: parent.left
-            anchors.topMargin: 0.1 * parent.height
             anchors.leftMargin: 0
             color: '#111111'
             width: parent.width * 0.2
-            height: parent.height * 0.8
+            height: parent.height * 0.7
             radius: 10
             border.width: 10
             border.color: 'yellow'
+            visible: true
 
             GridView {
                 id: satGrid
-                cellHeight: 150
+                cellHeight: satMenu.height * 1 / 4
                 cellWidth: satMenu.width
                 width: satMenu.width
                 height: satMenu.height
@@ -471,25 +497,31 @@ ActivityBase {
                         Rectangle {
                             id: satWrapper
                             anchors.horizontalCenter: parent.horizontalCenter
-                            //border.width: 10
-                            //border.color: "grey"
                             color: "transparent"
 
                             height: 150 * ApplicationInfo.ratio
                             width: satMenu.width
 
                             Image {
+                                // Satellite list on the left side
                                 id: satPicture
                                 anchors.horizontalCenter: parent.horizontalCenter
                                 anchors.verticalCenter: parent.verticalCenter
-                                source: Activity.url + "resource/" + name + ".png"
+                                source: Activity.url + "resource/" + name + ".svg"
+                                width: background.width * 0.09
+                                height: background.width * 0.07
+
+                                GCText {
+                                    text: name
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    anchors.bottom: satPicture.top
+                                    font.pointSize: mediumSize
+                                    wrapMode: Text.Wrap
+                                    horizontalAlignment: Text.AlignHCenter
+                                    color: satWrapper.GridView.isCurrentItem ? "red" : "white"
+                                }
                             }
-                            GCText {
-                                text: name
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                font.pointSize: mediumSize
-                                color: satWrapper.GridView.isCurrentItem ? "red" : "white"
-                            }
+
                             MouseArea {
                                 hoverEnabled: true
                                 anchors.fill: satWrapper
@@ -507,72 +539,108 @@ ActivityBase {
             }
         }
 
+        Button {
+            id: rightArea
+            anchors.right: parent.right
+            width: parent.width * 0.1
+            height: parent.height * 0.1
+            visible: true
+            onClicked: massMenu.visible = !massMenu.visible
+
+            GCText {
+                id: rightAreaText
+                anchors.centerIn: parent
+                width: parent.width
+                fontSize: tinySize
+                wrapMode: Text.Wrap
+                horizontalAlignment: Text.AlignHCenter
+                text: (massMenu.visible == true) ? qsTr("Hide planets") : qsTr("Show planets")
+                color: "black"
+            }
+        }
+
+        // Selection area on the right side
         Rectangle {
             id: massMenu
-            anchors.top: parent.top
+            anchors.top: rightArea.bottom
             anchors.right: parent.right
-            anchors.topMargin: 0.1 * parent.height
             anchors.rightMargin: 0
             color: '#111111'
             width: parent.width * 0.2
-            height: parent.height * 0.8
+            height: parent.height * 0.7
             radius: 10
             border.width: 10
             border.color: 'yellow'
+            visible: true
 
-            GridView {
+            Flickable {
                 id: massGrid
-                cellHeight: 150 * ApplicationInfo.ratio
-                cellWidth: massMenu.width
-
+                clip: true
                 width: massMenu.width
                 height: massMenu.height
-                anchors.top: massMenu.top
-                anchors.topMargin: 50 * ApplicationInfo.ratio
 
-                Repeater {
-                    id: massRepeater
+                contentHeight: massFlow.height
+                contentWidth: massMenu.width
+                flickableDirection: Flickable.VerticalFlick
+                Column {
+                    id: massFlow
+                    width: parent.width
+                    height: childrenRect.height
+                    anchors.top: massMenu.top
+                    spacing: 10 * ApplicationInfo.ratio
+                    anchors.topMargin: 50 * ApplicationInfo.ratio
 
-                    Component {
-                        id: massDelegate
-                        Rectangle {
+                    Repeater {
+                        id: massRepeater
+                        model: massList
+
+                        delegate: Rectangle {
                             id: wrapper
                             anchors.horizontalCenter: parent.horizontalCenter
                             color: "transparent"
                             height: 150 * ApplicationInfo.ratio
                             width: massMenu.width
 
+
                             Image {
                                 id: planetPicture
                                 anchors.horizontalCenter: parent.horizontalCenter
                                 anchors.verticalCenter: parent.verticalCenter
-                                source: Activity.url + "resource/" + name + ".png"
+                                width: parent.width * 0.5
+                                height: width
+                                source: Activity.url + "resource/" + name + ".svg"
+                                GCText {
+                                    text: name
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    anchors.bottom: parent.top
+                                    font.pointSize: mediumSize
+                                    color: wrapper.GridView.isCurrentItem ? "red" : "white"
+                                }
                             }
-                            GCText {
-                                text: name
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                font.pointSize: mediumSize
 
-                                color: wrapper.GridView.isCurrentItem ? "red" : "white"
-                            }
                             MouseArea {
+                                id: massArea
                                 anchors.fill: wrapper
                                 hoverEnabled: true
                                 onClicked: {
                                     massNb = index
                                     massGrid.currentIndex = index
                                 }
-                                onEntered: planetPicture.source = Activity.url
-                                           + "resource/" + name + "_scaled.png"
-                                onExited: planetPicture.source = Activity.url
-                                          + "resource/" + name + ".png"
+
+                            }
+                            states: State {
+                                name: "massHover"
+                                when: massArea.containsMouse
+                                PropertyChanges {
+                                    target: planetPicture
+                                    scale: 1.1
+                                }
                             }
                         }
+
                     }
                 }
 
-                model: massList
-                delegate: massDelegate
             }
         }
 
@@ -605,6 +673,7 @@ ActivityBase {
                 value = 1.0
             }
         }
+
 
         Slider {
             id: slidDistance
