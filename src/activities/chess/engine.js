@@ -581,11 +581,14 @@ function p4_check_check(state, colour){
     /*find the king.  The pieces list updates from the end,
      * so the last-most king is correctly placed.*/
     var pieces = state.pieces[colour];
-    var p;
     var i = pieces.length;
-    do {
-        p = pieces[--i];
-    } while (p[0] != (P4_KING | colour));
+    var king = P4_KING | colour
+    // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+    var val = king-1
+    while (val !== king) {
+        var p = pieces[--i];
+        val = p[0]
+    };
     var s = p[1];
     var other_colour = 1 - colour;
     var dir = 10 - 20 * colour;
@@ -614,19 +617,26 @@ function p4_check_check(state, colour){
         var m = diagonal_moves[i];
         var e = s;
         var E;
-        do {
+        // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+        e += m;
+        E = board[e];
+        while (!E) {
             e += m;
             E = board[e];
-        } while (!E);
+        }
         if((E & diag_mask) == diag_slider)
             return true;
 
         m = grid_moves[i];
         e = s;
-        do {
+        // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+        e += m;
+        E = board[e];
+        while (!E) {
             e += m;
             E = board[e];
-        } while (!E);
+        }
+        
         if((E & grid_mask) == grid_slider)
             return true;
     }
@@ -984,7 +994,6 @@ function p4_move(state, s, e, promotion){
 
     /*Try the move, and see what the response is.*/
     var changes = p4_make_move(state, s, e, promotion);
-
     /*is it check? */
     if (p4_check_check(state, colour)){
         p4_unmake_move(state, changes);
@@ -997,7 +1006,6 @@ function p4_move(state, s, e, promotion){
 
     state.enpassant = changes.ep;
     state.history.push([s, e, promotion]);
-
     /*draw timeout: 50 moves without pawn move or capture is a draw */
     if (changes.E || changes.ep_position){
         state.draw_timeout = 0;
