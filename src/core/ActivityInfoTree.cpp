@@ -308,7 +308,7 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     m_menuTree.clear();
     if(!text.trimmed().isEmpty()) {
         // perform search on each word entered in the searchField
-        QStringList wordsList = text.split(" ", QString::SkipEmptyParts);
+        QStringList wordsList = text.split(' ', QString::SkipEmptyParts);
         Q_FOREACH(const QString &searchTerm, wordsList) {
             const QString trimmedText = searchTerm.trimmed();
             for(const auto &activity: m_menuTreeFull) {
