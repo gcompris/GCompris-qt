@@ -83,12 +83,39 @@ function playLetterSound(sound) {
 
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick) {
-        items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+
+        // if we need to draw only a point instead of a line
+        if(mode == "drawletters" || mode == "drawnumbers") {
+            items.pointImageRepeater.itemAt(pointIndex).highlight = false
+            if(pointIndex>0) {
+                items.pointImageRepeater.itemAt(pointIndex-1).opacity = 0
+                items.pointImageRepeater.itemAt(pointIndex-1).markedAsPoint = false
+            }
+            /* draw a point in case of -
+                1) First node
+                2) No line is to be drawn between the current node and last node
+            */
+            var isPointMarked = false
+            if(pointIndex == 0 || (pointPositions2 && pointPositions2[pointIndex] != pointPositions2[pointIndex-1])) {
+                if(pointIndex<items.pointImageRepeater.count-1) {
+                    items.pointImageRepeater.itemAt(pointIndex).markedAsPoint = true
+                    items.pointImageRepeater.itemAt(pointIndex).scale = 0.2
+                    isPointMarked = true
+                }
+            }
+            if(!isPointMarked) {
+                items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+            }
+        } else {
+            items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+        }
+
         if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
             }
         }
+
         // Draw the line from pointIndex - 1 to pointIndex
         if(pointPositions2 && pointPositions2[pointIndex] != pointPositions2[pointIndex-1]) {
             //do nothing
