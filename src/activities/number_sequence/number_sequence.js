@@ -83,20 +83,27 @@ function playLetterSound(sound) {
 
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick) {
-        items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+        var currentPoint = items.pointImageRepeater.itemAt(pointIndex)
+        // if we need to draw only a point instead of a line
+        if(mode == "drawletters" || mode == "drawnumbers") {
+            currentPoint.highlight = false
+            if(pointIndex == 0 || (pointPositions2 && pointPositions2[pointIndex] != pointPositions2[pointIndex-1])) {
+                currentPoint.markedAsPoint = true
+            }
+        }
+
         if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
             }
         }
+
         // Draw the line from pointIndex - 1 to pointIndex
-        if(pointPositions2 && pointPositions2[pointIndex] != pointPositions2[pointIndex-1]) {
+        if(pointIndex == 0 || (pointPositions2 && pointPositions2[pointIndex] != pointPositions2[pointIndex-1])) {
             //do nothing
         }
         else {
-            if (pointIndex > 0) {
-                items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
-            }
+            items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
         }
 
         if (pointIndex == items.pointImageRepeater.count-1) {

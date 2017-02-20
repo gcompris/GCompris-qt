@@ -110,7 +110,7 @@ ActivityBase {
                     id: pointImage
                     source: Activity.url + (highlight ?
                             (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
-                    "greenpoint.svg")
+                            markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
                     sourceSize.height: background.height / 25  //to change the size of dots
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
@@ -126,6 +126,14 @@ ActivityBase {
                         Activity.drawSegment(index)
                     }
                     property bool highlight: false
+                    // draw a point instead of hiding the clicked node if it is
+                    // the first point of the current line to draw
+                    // (helpful to know where the line starts)
+                    property bool markedAsPointInternal: markedAsPoint && items.pointIndexToClick == index+1
+                    property bool markedAsPoint: false
+
+                    scale: markedAsPointInternal ? 0.2 : 1
+                    opacity: index >= items.pointIndexToClick || markedAsPointInternal ? 1 : 0
 
                     GCText {
                         id: pointNumberText
