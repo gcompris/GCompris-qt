@@ -350,7 +350,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-
+            Component.onCompleted: win.connect(Activity.nextSublevel)
         }
         Timer {
             id: timer
@@ -358,9 +358,6 @@ ActivityBase {
             repeat: false
             onTriggered: {
                 items.solved = true
-                if(items.sublevel<items.data.length) {
-                    Activity.nextSublevel()
-                }
             }
         }
 

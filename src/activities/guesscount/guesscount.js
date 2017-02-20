@@ -31,7 +31,6 @@ var defaultOperators = Data.defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = []
-var bonusCharacters = ["flower","gnu","lion","note","tux"]
 
 var currentLevel
 var numberOfLevel = Data.levelSchema.length
@@ -54,15 +53,23 @@ function initLevel() {
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.levelchanged = false
     items.solved = false
-    Core.shuffle(bonusCharacters)
     if(items.warningDialog.visible)
         items.warningDialog.visible = false
 }
 
-function nextSublevel() {
+function initSublevel(){
     items.sublevel += 1
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.solved = false
+}
+
+function nextSublevel() {
+    if(items.sublevel < items.data.length) {
+        initSublevel()
+    }
+    else {
+        nextLevel()
+    }
 }
 
 function nextLevel() {
@@ -137,13 +144,12 @@ function childrenChange(item, operationRow)
 
 function checkAnswer(row) {
     if(items.sublevel < items.data.length) {
-        items.bonus.good(bonusCharacters[(items.sublevel-1)%5])
+        items.bonus.good("flower")
         items.timer.start()
     }
-    else if(items.sublevel == items.data.length) {
+    else {
         items.timer.start()
         items.bonus.good("smiley")
-        items.bonus.win.connect(nextLevel)
     }
 }
 
