@@ -42,7 +42,7 @@ Flow {
 
     TextField {
         id: answerText
-        height: 130/800*parent.width
+        height: bar.height * 0.3
         width: bar.height * 0.9
         validator: IntValidator{bottom: 1; top: 200;}
         activeFocusOnPress: true

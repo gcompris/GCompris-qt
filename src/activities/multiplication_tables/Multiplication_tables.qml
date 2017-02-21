@@ -28,8 +28,10 @@ import "."
 import "multiplication_tables.js" as Activity
 import "multiplicationtables_dataset.js" as Dataset
 
+
 ActivityBase {
     id: activity
+
     property string url: "qrc:/gcompris/src/activities/multiplication_tables/resource/"
     property double startTime: 0
     property bool startButtonClicked: false
@@ -40,7 +42,7 @@ ActivityBase {
 
     pageComponent: Rectangle {
         id: background
-        anchors.fill: parent        
+        anchors.fill: parent
         color: "#ABCDEF"
         signal start
         signal stop
@@ -64,6 +66,8 @@ ActivityBase {
             property alias score: score
             property alias questionGrid: questionGrid
             property alias repeater: repeater
+            property var data: Dataset
+
         }
 
         onStart: {
@@ -74,6 +78,7 @@ ActivityBase {
         }
 
         Flow {
+
             id: questionGrid
             anchors.top: parent.top
             anchors.bottom: startStopButton.top
@@ -97,7 +102,7 @@ ActivityBase {
             anchors {
                 bottom: bar.bottom
                 right: parent.right
-                rightMargin: 150/800*parent.width
+                rightMargin: 120/800*parent.width
             }
             width: 80/800*parent.width
             height: 70/800*parent.width
@@ -112,7 +117,7 @@ ActivityBase {
             anchors.right: parent.right
             anchors {
                 bottomMargin: 15/800*parent.width
-                rightMargin: 75/800*parent.width
+                rightMargin: 60/800*parent.width
             }
             text: "--"
             Layout.alignment: Qt.AlignCenter
@@ -138,7 +143,7 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors {
                 bottomMargin: 30/800*parent.width
-                rightMargin: 100/800*parent.width
+                rightMargin: 60/800*parent.width
             }
             spacing: 25/800*parent.width
             Button {
@@ -151,7 +156,7 @@ ActivityBase {
                         implicitWidth: bar.height * 0.8
                         implicitHeight: bar.height * 0.3
                         border.width: control.activeFocus ? 2 : 1
-                        border.color: "blue"                        
+                        border.color: "blue"
                         radius: 4
                         gradient: Gradient {
                             GradientStop {
@@ -196,6 +201,7 @@ ActivityBase {
                         }
                     }
                 }
+
                 onClicked: {
                     if (startButtonClicked == true) {
                         score.visible = true
@@ -217,41 +223,79 @@ ActivityBase {
         }
 
         DialogActivityConfig {
-            id: dialogActivityConfig
-            content: Component {
-                Column {
-                    id: column
-                    spacing: 5
-                    width: dialogActivityConfig.width
-                    height: dialogActivityConfig.height
-                    property alias normalMode: normalMode
-                    property alias schoolMode: schoolMode
-                    GCDialogCheckBox {
-                        id: normalMode
-                        width: column.width - 50
-                        text: qsTr("Normal mode")
-                        checked: (items.modeType == "normalMode") ? true : false
-                        onCheckedChanged: {
-                            if(normalMode.checked) {
-                                items.modeType = "normalMode"
+                    id: dialogActivityConfig
+                    currentActivity: activity
+                    content: Component {
+                        Item {
+                            property alias modeBox: modeBox
+                            property var availableModes: [
+                                { "text": qsTr("School mode"), "value": "admin" },
+                                { "text": qsTr("Normal mode"), "value": "builtin" }
+                            ]
+                            Rectangle {
+                                id: flow
+                                width: dialogActivityConfig.width
+                                height: background.height
+                                GCComboBox {
+                                    id: modeBox
+                                    anchors {
+                                        top: parent.top
+                                        topMargin: 5
+                                    }
+                                    model: availableModes
+                                    background: dialogActivityConfig
+                                    label: qsTr("Select your mode")
+                                }
+                                Row {
+                                    id: labels
+                                    spacing: 20
+                                    anchors {
+                                        top: modeBox.bottom
+                                        topMargin: 5
+                                    }
+                                    visible: modeBox.currentIndex == 0
+                                }
+
+                                Rectangle {
+                                    id : adminquestion
+                                    width: parent.width
+                                    color: "transparent"
+                                    height: parent.height/1.25-labels.height-modeBox.height
+                                    anchors {
+                                        top: labels.bottom
+                                        topMargin: 5
+                                    }
+                                            Admin {
+                                              visible: modeBox.currentIndex == 0
+                                              width: parent.width
+                                              height: parent.height
+                                            }
+                                    }
+                                }
                             }
                         }
+
+                    onClose: {
+                            Activity.initLevel()
+                            home()
                     }
-                    GCDialogCheckBox {
-                        id: schoolMode
-                        width: normalMode.width
-                        text: qsTr("School mode")
-                        checked: (items.modeType == "schoolMode") ? true : false
-                        onCheckedChanged: {
-                            if(schoolMode.checked) {
-                                items.modeType = "schoolMode"
+                    onLoadData: {
+                              }
+
+                    onSaveData: {
+//                      dataToSave["data"] = Activity.saveCheckedBoxes()
+                        dataToSave["mode"] = modeBox.currentIndex
+                    }
+
+                    function setDefaultValues() {
+                        for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
+                            if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
+                                dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                                break;
                             }
                         }
                     }
                 }
-            }
-            onClose: home()
-        }
 
         Bar {
             id: bar

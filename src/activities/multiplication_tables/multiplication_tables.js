@@ -34,6 +34,8 @@ var url
 var table
 var question = []
 var answer = []
+var allQuestions = []
+var questionOfLevel = []
 var scoreCounter = 0
 
 function start(_items, _mode, _dataset, _url) {
@@ -44,6 +46,7 @@ function start(_items, _mode, _dataset, _url) {
     numberOfLevel = dataset.length
     currentLevel = 0
     initLevel()
+    loadQuestions2()
 }
 
 function stop() {}
@@ -56,15 +59,38 @@ function initLevel() {
     items.time.text = "--"
     loadQuestions()
     cannotAnswer()
+   // saveCheckedBoxes()
 }
 
 function loadQuestions() {
     var i
+    var j
     question = dataset[currentLevel].questions
     answer = dataset[currentLevel].answers
     table = dataset[currentLevel].tableName
+
     for (i = 0; i < question.length; i++) {
         items.repeater.itemAt(i).questionText = qsTr(question[i]) + " = "
+    }
+}
+
+////to be implemented
+//function saveCheckedBoxes(){
+//    for (var i = 0; i < allQuestions.length; i++) {
+//    }
+//}
+
+
+function loadQuestions2() {
+    var i
+    var j
+    var t = 0
+    for (i = 0; i < numberOfLevel; i++) {
+          questionOfLevel = dataset[i].questions
+          for(j = 0; j < questionOfLevel.length;j++){
+                allQuestions[t] = questionOfLevel[j]
+                t = t + 1
+          }
     }
 }
 
