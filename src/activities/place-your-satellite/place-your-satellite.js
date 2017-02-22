@@ -287,3 +287,7 @@ function previousLevel() {
     }
     initLevel()
 }
+
+function restartLevel() {
+    initLevel();
+}

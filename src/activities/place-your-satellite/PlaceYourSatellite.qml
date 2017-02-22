@@ -204,17 +204,14 @@ ActivityBase {
                 Rectangle {
                     radius: 10
                     color: 'transparent'
-                    border.width: 10
+                    border.width: 5
                     border.color: 'yellow'
-                    width: satInfo.paintedWidth + 30
-                    height: satInfo.paintedHeight + 30
+                    width: childrenRect.width
+                    height: childrenRect.height
                     anchors.top: satImage.bottom
                     GCText {
                         id: satInfo
                         text: Activity.satObjectName + '\n' + Activity.satObjectMass.replace("e+","10^") + " kg"
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-
                         horizontalAlignment: Text.AlignHCenter
                         wrapMode: Text.WordWrap
                         font.pointSize: mediumSize
@@ -224,30 +221,22 @@ ActivityBase {
 
                 Image {
                     id: satArrowleft
-                    x: parent.width / 2
-                    y: parent.height / 2
+                    x: satImage.x + (satImage.width / 2)
+                    y: satImage.y + (height / 2)
                     source: Activity.url + "resource/arrowSimple.svg"
-                    width: background.width * 0.09
-                    height: background.width * 0.07
+                    width: background.width * 0.045
+                    height: background.width * 0.035
 
                     transform: Rotation {
                         id:rotation
                         origin.x: 0
-                        origin.y: 0
+                        origin.y: satArrowleft.height / 2
                         angle: arrowSatAngle
                     }
-                    Rectangle {
-                        x: satArrowleft.x
-                        y: satArrowleft.y
-                        width: 2
-                        height: 2
-                        color: "white"
-                        border.color: "white"
-                        border.width: 1
-                        radius: width*0.5
-                    }
                 }
+
             }
+
 
 
             //########################################
@@ -389,7 +378,6 @@ ActivityBase {
                 anchors.fill:parent
 
                 onPositionChanged: {
-
 
                     var deltaX = mouseX - sat.x - sat.width / 2
                     var deltaY = mouseY - sat.y - sat.height / 2 - 18 * ApplicationInfo.ratio
@@ -578,7 +566,7 @@ ActivityBase {
                 clip: true
                 width: massMenu.width
                 height: massMenu.height
-
+                anchors.top: massMenu.top
                 contentHeight: massFlow.height
                 contentWidth: massMenu.width
                 flickableDirection: Flickable.VerticalFlick
@@ -586,7 +574,7 @@ ActivityBase {
                     id: massFlow
                     width: parent.width
                     height: childrenRect.height
-                    anchors.top: massMenu.top
+
                     spacing: 10 * ApplicationInfo.ratio
                     anchors.topMargin: 50 * ApplicationInfo.ratio
 
@@ -685,7 +673,7 @@ ActivityBase {
 
             maximumValue: 10 * items.massObjectDiameter //10 times diameter is enough i think
             minimumValue: 1.2 * items.massObjectDiameter
-            value: 42000000
+            value: 28000
 
             activeFocusOnPress: true
             updateValueWhileDragging: true
@@ -751,7 +739,7 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent {
-                value: help | home | level
+                value: help | home | level | reload
             }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -759,6 +747,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked: Activity.restartLevel()
         }
 
         Bonus {
