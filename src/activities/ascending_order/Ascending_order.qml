@@ -21,7 +21,6 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
-import QtQuick.Window 2.0
 
 import "../../core"
 import "ascending_order.js" as Activity
@@ -58,7 +57,6 @@ ActivityBase {
             property alias ansText: ansText
             property alias flow: flow
             property alias container: container
-//            property alias ok: ok
         }
 
         onStart: { Activity.start(items) }
@@ -72,43 +70,6 @@ ActivityBase {
             text: ""
             font.pixelSize: 40
         }
-
-
-        /*
-        Grid {
-            id: grids
-            spacing: 12
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.verticalCenter
-            }
-            Repeater {
-                id: boxes
-                model: 4
-                property int scale_factor: Screen.pixelDensity/default_pix_density
-                Rectangle {
-                    property int imageX: 0
-                    width: 360/4 * ApplicationInfo.ratio
-                    height: 360/4 * ApplicationInfo.ratio
-                    radius: 20
-                    property int clicked:0
-
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked :{
-                            Activity.check(numText.text)
-                        }
-                    }
-
-                    GCText {
-                        id: numText
-                        anchors.centerIn: parent
-                        text: imageX.toString()
-                    }
-                }
-            }
-        }
-        */
 
         GCText {
             id: instruction
@@ -139,6 +100,7 @@ ActivityBase {
             id: container
             color: "transparent"
 //            width: parent.width
+            width: Math.min(parent.width, ((boxes.itemAt(0)).width*boxes.model)+(boxes.model-1)*flow.spacing)
             height: parent.height/2
 
             anchors {
@@ -179,19 +141,24 @@ ActivityBase {
                         property bool animateHor: false
                         property real currentPos
                         property point beginDrag
-//                        width: 360/7 * parent.width/parent.height//ApplicationInfo.ratio
-//                        height: 360/7 * parent.width/parent.height//ApplicationInfo.ratio
+                        property real screen_ratio : Math.min(Math.max(background.width, background.height)/800 , Math.min(background.width, background.height)/520)
+                        /*
                         width: 88 * ApplicationInfo.ratio
                         height: 88 * ApplicationInfo.ratio
+                        */
+                        width: 65 * screen_ratio
+                        height: 65 * screen_ratio//88
                         radius: 10
                         border{
                             color: "black"
-                            width: 5 * ApplicationInfo.ratio
+//                            width: 5 * ApplicationInfo.ratio
+                            width: 3 * screen_ratio
                         }
                         GCText {
                             id: numText
                             anchors.centerIn: parent
                             text: imageX.toString()
+                            font.pointSize: 20 * screen_ratio
                         }
                         MouseArea {
                             id: mouseArea
@@ -203,14 +170,7 @@ ActivityBase {
                             onPressAndHold: {
                             }
                             onReleased: {
-                                /*
-                                box.x=box.beginDrag.x
-                                box.y=box.beginDrag.y
-                                */
                                 Activity.placeBlock(box, box.beginDrag);
-                            }
-                            onClicked :{
-//                                Activity.selectBox(box);
                             }
                         }
                         Behavior on color {
@@ -224,7 +184,6 @@ ActivityBase {
                                 PropertyAnimation {
                                     duration: 500
                                     easing.type: Easing.InOutBack
-//                                    easing.type: Easing.OutCirc
                                 }
                             }
                         }
@@ -233,43 +192,6 @@ ActivityBase {
                                 PropertyAnimation {
                                     duration: 500
                                     easing.type: Easing.InOutBack
-//                                    easing.type: Easing.OutCirc
-                                }
-                            }
-                        }
-                        Behavior on animateVert {
-                            SequentialAnimation {
-                                PropertyAnimation {
-                                    target: box
-                                    property: "y"
-                                    from: currentPos
-                                    to: currentPos + (box.pos == 1 ? 20 : -20)
-                                    duration: 250
-                                }
-                                PropertyAnimation {
-                                    target: box
-                                    property: "y"
-                                    from: currentPos + (box.pos == 1 ? 20 : -20)
-                                    to: currentPos
-                                    duration: 250
-                                }
-                            }
-                        }
-                        Behavior on animateHor {
-                            SequentialAnimation {
-                                PropertyAnimation {
-                                    target: box
-                                    property: "x"
-                                    from: currentPos
-                                    to: currentPos + (box.pos == 1 ? 20 : -20)
-                                    duration: 250
-                                }
-                                PropertyAnimation {
-                                    target: box
-                                    property: "x"
-                                    from: currentPos + (box.pos == 1 ? 20 : -20)
-                                    to: currentPos//-box.pos == 1 ? 20 : -20//0
-                                    duration: 250
                                 }
                             }
                         }

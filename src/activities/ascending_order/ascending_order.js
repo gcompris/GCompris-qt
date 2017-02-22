@@ -3,7 +3,6 @@
  * Copyright (C) 2016 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -28,16 +27,15 @@ var items
 
 // num[] will contain the random numbers
 var num=[]
+
 var hash=[] // hash[i]=1 => ith grid is already pressed. =0 => it is not yet pressed
 var entered=[] // the numbers entered by the user
 
-var initColor = "#FFFFFF"
-var visitedColor="#7CFC00"
 
 var numEntered // the number of numbers entered by the user
 
-
-var thresholdDistance = 8000
+//var thresholdDistance = 8000 // multiply by screen_ratio
+var thresholdDistance
 /*
 var isSelected = false
 var alreadySelectedBox
@@ -76,7 +74,7 @@ function initGrids() {
 //        items.boxes.itemAt(i).color=initColor
         hash[i]=0
     }
-    alignFlow()
+//    alignFlow()
 }
 
 function generateRandomNumbers() {
@@ -93,6 +91,7 @@ function generateRandomNumbers() {
     }
 }
 
+/*
 function alignFlow() {
     // count no of elements present in the first row
     var noOfElements = 0
@@ -105,8 +104,9 @@ function alignFlow() {
     }
     // calculate width of the flow
     var width = (items.boxes.itemAt(0).width * noOfElements) + (noOfElements-1)*items.flow.spacing
-    items.container.width = width
+//    items.container.width = Math.min(width, items.background.width)
 }
+*/
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
@@ -122,92 +122,7 @@ function previousLevel() {
     initLevel();
 }
 
-/*
-function check(currentNum) {
-    for(var i=0;i<items.boxes.model;i++) {
-        if(items.boxes.itemAt(i).imageX ==currentNum) {
-            if(hash[i]===1) {
-                continue
-            } else {
-
-                items.boxes.itemAt(i).color=visitedColor
-                hash[i]=1
-                entered[numEntered++]=currentNum
-                if(numEntered===num.length) {
-                    items.ansText.text=items.ansText.text.concat(currentNum.toString(), " .")
-                    result()
-                } else {
-                    items.ansText.text=items.ansText.text.concat(currentNum.toString(), ", ")
-                }
-            }
-        }
-    }
-}
-*/
-
-/*
-function selectBox(box) {
-    if(!isSelected) {
-        alreadySelectedBox = box
-        isSelected = true
-        box.selected = true
-    } else {
-        if(box != alreadySelectedBox) {
-            var x = alreadySelectedBox.x
-            var y = alreadySelectedBox.y
-            alreadySelectedBox.x = box.x
-            alreadySelectedBox.y = box.y
-            box.x = x
-            box.y = y
-
-
-
-            if(box.x === alreadySelectedBox.x) {
-                box.pos = 1
-                alreadySelectedBox.pos = 2
-
-                box.currentPos = box.x
-                alreadySelectedBox.currentPos = box.x
-
-                box.animateHor = !box.animateHor
-                alreadySelectedBox.animateHor = !alreadySelectedBox.animateHor
-            } else if(box.y === alreadySelectedBox.y) {
-                console.log(box.x+","+box.y)
-                console.log(alreadySelectedBox.x+","+alreadySelectedBox.y)
-
-                box.pos = 1
-                alreadySelectedBox.pos = 2
-
-                box.currentPos = box.y
-                alreadySelectedBox.currentPos = box.y
-
-                box.animateVert = !box.animateVert
-                alreadySelectedBox.animateVert = !alreadySelectedBox.animateVert
-
-                console.log(box.currentPos+","+alreadySelectedBox.currentPos)
-            }
-
-
-
-            var item1Pos = num.indexOf(box.imageX)
-            var item2Pos = num.indexOf(alreadySelectedBox.imageX)
-            var intermidiateValue = num[item1Pos]
-            num[item1Pos] = num[item2Pos]
-            num[item2Pos] = intermidiateValue
-
-            alreadySelectedBox.selected = false
-
-            isSelected = false
-        }
-    }
-}
-*/
-
 function checkOrder() {
-    /*
-    for(var i=0;i<items.boxes.count;i++) {console.log(num[i])}
-    console.log("-----------")
-    */
     for(var i=0;i<items.boxes.count-1;i++) {
         if(num[i] > num[i+1]) {
             items.bonus.bad("lion")
@@ -218,15 +133,10 @@ function checkOrder() {
 }
 
 function placeBlock(box, initialPosition) {
-    /*
-    for(var i=0;i<items.boxes.model;i++) {
-        xPos[i]=items.boxes.itemAt(i).x
-        yPos[i]=items.boxes.itemAt(i).y
-    }
-    */
     // find shortest distance from box to other nodes
     // if distance <= threshold distance then put box
     // in that block and that block in "initialPosition"
+    thresholdDistance = 4000 * items.boxes.itemAt(0).screen_ratio
     var minDistance = Number.POSITIVE_INFINITY
     var closestBlock
     for(var i=0;i<items.boxes.model;i++) {
@@ -241,6 +151,7 @@ function placeBlock(box, initialPosition) {
             }
         }
     }
+    console.log("min distance: "+minDistance+" threshold distance: "+thresholdDistance)
     /*
     console.log("closest block:"+closestBlock.imageX)
     console.log("min distance: "+minDistance)
@@ -361,48 +272,3 @@ function findBlockWithLabel(label) {
 function distance(box, currentBlock) {
     return Math.pow((box.x-currentBlock.x),2) + Math.pow((box.y-currentBlock.y),2)
 }
-
-/*
-function result() {
-    for(var i=0;i<entered.length-1;i++) {
-        if(Number(entered[i])>Number(entered[i+1])) {
-            //WRONG answer
-            items.ok.visible=true
-            items.ansText.text=items.ansText.text.concat("\n")
-            printSorted()
-            items.bonus.bad("lion")
-            return
-        }
-    }
-    // CORRECT answer
-    items.bonus.good("lion")
-}
-*/
-
-/*
-function printSorted() {
-    for(var i=0;i<entered.length-1;i++) {
-        for(var j=0;j<entered.length-i-1;j++) {
-            if(Number(entered[j]>Number(entered[j+1]))) {
-                var temp=entered[j+1];
-                entered[j+1]=entered[j]
-                entered[j]=temp
-            }
-        }
-    }
-    for(i=0;i<entered.length;i++) {
-        if(i!=entered.length-1) {
-            items.ansText.text=items.ansText.text.concat(entered[i], ", ");
-        } else {
-            items.ansText.text=items.ansText.text.concat(entered[i], " .");
-        }
-    }
-}
-*/
-
-/*
-function retry() {
-    items.ok.visible=false
-    initLevel()
-}
-*/

@@ -27,8 +27,9 @@ ActivityInfo {
   description: qsTr("Arrange the given numbers in ascending order")
   //intro: "click on the numbers in ascending order"
   goal: qsTr("arranging numbers in ascending order")
-  prerequisite: qsTr("Move a mouse and click on the correct place")
-  manual: qsTr("You are provided with few numbers. Click on the smallest number first, second smallest number second, and the largest number in the last")
+  prerequisite: qsTr("Move, drag and drop using mouse")
+  manual: qsTr("You are provided with few numbers. Drag and Reorder the numbers in ascending order")
   credit: "openclipart.org"
-  section: qsTr("math")
+  section: "math"
+  createdInVersion: 4000
 }
