@@ -1,11 +1,9 @@
 /* GCompris - Admin.qml
  *
- * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
+ * Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
  *
  * Authors:
- *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
- *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
- *
+ *   Nitish Chauhan <nitish.nc18@gmail.com>
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
  *   the Free Software Foundation; either version 3 of the License, or
@@ -36,7 +34,6 @@ Grid {
     property alias checkBoxesRepeater: repeaterCheckBox
 
     Repeater {
-
          id : repeaterCheckBox
          model:Activity.allQuestions
 

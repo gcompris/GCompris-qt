@@ -37,6 +37,7 @@ var answer = []
 var allQuestions = []
 var questionOfLevel = []
 var scoreCounter = 0
+var uppercaseOnly;
 
 function start(_items, _mode, _dataset, _url) {
     items = _items
@@ -59,7 +60,6 @@ function initLevel() {
     items.time.text = "--"
     loadQuestions()
     cannotAnswer()
-   // saveCheckedBoxes()
 }
 
 function loadQuestions() {
@@ -68,18 +68,10 @@ function loadQuestions() {
     question = dataset[currentLevel].questions
     answer = dataset[currentLevel].answers
     table = dataset[currentLevel].tableName
-
     for (i = 0; i < question.length; i++) {
         items.repeater.itemAt(i).questionText = qsTr(question[i]) + " = "
     }
 }
-
-////to be implemented
-//function saveCheckedBoxes(){
-//    for (var i = 0; i < allQuestions.length; i++) {
-//    }
-//}
-
 
 function loadQuestions2() {
     var i
@@ -109,6 +101,43 @@ function verifyAnswer() {
     }
     items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
 }
+
+function processKeyPress(text) {
+    var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
+
+    if (currentWord !== null) {
+        // check against a currently typed word
+        if (!currentWord.checkMatch(typedText)) {
+            currentWord = null;
+            audioCrashPlay()
+        } else {
+            playLetter(text)
+        }
+    } else {
+        // no current word, check against all available words
+        var found = false
+        for (var i = 0; i< droppedWords.length; i++) {
+            if (droppedWords[i].checkMatch(typedText)) {
+                // typed correctly
+                currentWord = droppedWords[i];
+                playLetter(text)
+                found = true
+                break;
+            }
+        }
+        if(!found) {
+            audioCrashPlay()
+        }
+    }
+    if (currentWord !== null && currentWord.isCompleted()) {
+        // win!
+        currentWord.won();  // note: deleteWord() is triggered after fadeout
+        successRate += 0.1
+        currentWord = null
+        nextSubLevel();
+    }
+}
+
 
 function canAnswer() {
     var q

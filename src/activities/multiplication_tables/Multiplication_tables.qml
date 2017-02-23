@@ -67,6 +67,7 @@ ActivityBase {
             property alias questionGrid: questionGrid
             property alias repeater: repeater
             property var data: Dataset
+            property alias keyboard: keyboard
 
         }
 
@@ -78,7 +79,6 @@ ActivityBase {
         }
 
         Flow {
-
             id: questionGrid
             anchors.top: parent.top
             anchors.bottom: startStopButton.top
@@ -276,15 +276,8 @@ ActivityBase {
                         }
 
                     onClose: {
-                            Activity.initLevel()
-                            home()
-                    }
-                    onLoadData: {
-                              }
-
-                    onSaveData: {
-//                      dataToSave["data"] = Activity.saveCheckedBoxes()
-                        dataToSave["mode"] = modeBox.currentIndex
+                        Activity.initLevel()
+                        home()
                     }
 
                     function setDefaultValues() {
@@ -314,6 +307,15 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
+
+        VirtualKeyboard {
+                  id: keyboard
+                  anchors.bottom: parent.bottom
+                  anchors.horizontalCenter: parent.horizontalCenter
+                  width: parent.width
+                  onKeypress: Activity.processKeyPress(text)
+                  onError: console.log("VirtualKeyboard error: " + msg);
+              }
 
         Bonus {
             id: bonus
