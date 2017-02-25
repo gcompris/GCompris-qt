@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/geo-country *.qml *.svg *.svgz *.js resource/*/*)
+GCOMPRIS_ADD_RCC(activities/geo-country *.qml *.svg *.js resource/*/*)

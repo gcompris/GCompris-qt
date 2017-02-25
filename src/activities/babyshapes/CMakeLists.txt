@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/babyshapes *.qml *.svg *.svgz *.js resource/*/*)
+GCOMPRIS_ADD_RCC(activities/babyshapes *.qml *.svg *.js resource/*/*)
