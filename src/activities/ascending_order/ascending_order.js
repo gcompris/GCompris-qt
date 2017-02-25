@@ -23,10 +23,13 @@
 
 var currentLevel = 0
 var numberOfLevel = 4
+var currentSubLevel = 0
+var numberOfSubLevel = 3
 var items
 
 // num[] will contain the random numbers
-var num=[]
+var num = []
+var originalArrangement = []
 
 var hash=[] // hash[i]=1 => ith grid is already pressed. =0 => it is not yet pressed
 var entered=[] // the numbers entered by the user
@@ -46,9 +49,14 @@ var xPos=[]
 var yPos=[]
 */
 
+var noOfTilesInPreviousLevel
+
 function start(items_) {
     items = items_
     currentLevel = 0
+
+    noOfTilesInPreviousLevel = -1
+
     initLevel()
 }
 
@@ -56,31 +64,45 @@ function stop() {
 }
 
 function initLevel() {
+//    restoreGrids()
+
     items.bar.level = currentLevel + 1
     numEntered=0
-    items.ansText.text=""
     initGrids()
+
+
 }
 
 function initGrids() {
     items.boxes.model = 2*(items.bar.level)+1
 
+    if(noOfTilesInPreviousLevel != items.boxes.model) {
+        /*
+         * When the tiles don't automatically rearrange themself
+         * manually check the marker off
+         */
+        items.flow.animationCheck = 0
+        console.log("from script: "+items.flow.animationCheck)
+
+        noOfTilesInPreviousLevel = items.boxes.model
+    } else {
+        restoreGrids()
+    }
+
     generateRandomNumbers()
 
-    hash=[]
+//    hash=[]
     entered=[]
     for(var i=0;i<items.boxes.model;i++) {
         items.boxes.itemAt(i).imageX=num[i]
-//        items.boxes.itemAt(i).color=initColor
-        hash[i]=0
+//        hash[i]=0
     }
-//    alignFlow()
 }
 
 function generateRandomNumbers() {
-    var n=items.boxes.model
+    var n = items.boxes.model
     // generate n random numbers and store it in num[]
-    num=[]
+    num = []
     var upperBound = (items.bar.level)*100
     while(num.length < n) {
         var randomNumber=Math.ceil(Math.random()*upperBound)
@@ -89,35 +111,47 @@ function generateRandomNumbers() {
         }
         num[num.length]=randomNumber
     }
+    for(var i=0;i<num.length;i++) {
+        originalArrangement[i] = num[i]
+    }
 }
 
-/*
-function alignFlow() {
-    // count no of elements present in the first row
-    var noOfElements = 0
+function restoreGrids() {
+    /* Restore the grid positions */
+    /*
+     * To make sure that the flow is properly indexed
+     * before moving on to the next sub level.
+     * This is required since if the previous level and
+     * current level has the same number of tiles, the
+     * indices are not automatically rearranged
+     */
     for(var i=0;i<items.boxes.model;i++) {
-        if(items.boxes.itemAt(i).y === 0) {
-            noOfElements++
-        } else {
-            break
+        if(num[i] === originalArrangement[i]) {
+            continue
         }
+        var currentBlock = findBlockWithLabel(originalArrangement[i])
+        var finalPosition = findBlockWithLabel(num[i])
+        currentBlock.x = finalPosition.x
+        currentBlock.y = finalPosition.y
     }
-    // calculate width of the flow
-    var width = (items.boxes.itemAt(0).width * noOfElements) + (noOfElements-1)*items.flow.spacing
-//    items.container.width = Math.min(width, items.background.width)
 }
-*/
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
+    if(numberOfSubLevel <= ++currentSubLevel) {
+        if(numberOfLevel <= ++currentLevel) {
+            currentLevel = 0
+        }
+        currentSubLevel = 0
     }
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
+    if(--currentSubLevel <0) {
+        currentSubLevel = numberOfSubLevel-1
+        if(--currentLevel <0) {
+            currentLevel = numberOfLevel - 1
+        }
     }
     initLevel();
 }
@@ -151,55 +185,12 @@ function placeBlock(box, initialPosition) {
             }
         }
     }
-    console.log("min distance: "+minDistance+" threshold distance: "+thresholdDistance)
-    /*
-    console.log("closest block:"+closestBlock.imageX)
-    console.log("min distance: "+minDistance)
-    */
 
     if(minDistance<thresholdDistance) {
-        /*
-        box.x=closestBlock.x
-        box.y=closestBlock.y
-
-        closestBlock.x=initialPosition.x
-        closestBlock.y=initialPosition.y
-        */
 
         var item1Pos = num.indexOf(box.imageX)
         var item2Pos = num.indexOf(closestBlock.imageX)
-//        console.log(item1Pos+","+item2Pos)
-        /*
-        var intermidiateValue = num[item1Pos]
-        num[item1Pos] = num[item2Pos]
-        num[item2Pos] = intermidiateValue
-        */
         if(item1Pos>item2Pos) {
-            /*
-            // dragged box is present *after* the new position
-            box.x=closestBlock.x
-            box.y=closestBlock.y
-            for(var i=item2Pos;i<item1Pos-1;i++) {
-                items.boxes.itemAt(i).x=items.boxes.itemAt(i+1).x
-                items.boxes.itemAt(i).y=items.boxes.itemAt(i+1).y
-            }
-            items.boxes.itemAt(item1Pos-1).x = initialPosition.x
-            items.boxes.itemAt(item1Pos-1).y = initialPosition.y
-            // updating num[]
-            var currentBoxValue=num[item1Pos]
-            for(var i=item2Pos;i<item1Pos;i++) {
-                num[i+1]=num[i]
-            }
-            num[item2Pos]=currentBoxValue
-            // updating the index
-            for(var i=0;i<items.boxes.model;i++) {
-                items.boxes.itemAt(i).index = num.indexOf(items.boxes.itemAt(i).imageX)
-            }
-            */
-            /*
-            var oldPositions = num
-            var newPositions = num
-            */
             var oldPositions = []
             var newPositions = []
             for(var i=0;i<num.length;i++) {
@@ -207,19 +198,11 @@ function placeBlock(box, initialPosition) {
                 newPositions[i]=num[i]
             }
             // update new position
-//            console.log(newPositions)
             var currentBoxValue = newPositions[item1Pos]
             for(var i=item1Pos;i>item2Pos;i--) {
                 newPositions[i]=newPositions[i-1]
             }
             newPositions[item2Pos]=currentBoxValue
-//            console.log(newPositions)
-            /*
-            rearrange(oldPositions, newPositions, box, initialPosition)
-            for(var i=0;i<num.length;i++) {
-                num[i]=newPositions[i]
-            }
-            */
         } else {
             var oldPositions = []
             var newPositions = []

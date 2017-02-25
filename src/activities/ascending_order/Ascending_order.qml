@@ -54,14 +54,16 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias boxes: boxes
-            property alias ansText: ansText
+//            property alias ansText: ansText
             property alias flow: flow
             property alias container: container
+//            property bool isMoving: false
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        /*
         GCText {
             id: ansText
             anchors {
@@ -70,6 +72,7 @@ ActivityBase {
             text: ""
             font.pixelSize: 40
         }
+        */
 
         GCText {
             id: instruction
@@ -119,6 +122,7 @@ ActivityBase {
                 property int rowWidth: rowCount * boxes.itemAt(0).width + (rowCount-1)*spacing
                 property int margin: (parent.width - rowWidth)/2
                 */
+                property int animationCheck: 0
                 anchors {
 //                    horizontalCenter: parent.horizontalCenter
 //                    verticalCenter: parent.verticalCenter
@@ -132,9 +136,10 @@ ActivityBase {
                     model: 6
                     Rectangle {
                         id: box
-                        color: selected ? "lightblue" : "white"
+//                        color: selected ? "lightblue" : "white"
+                        color: "white"
                         z: mouseArea.drag.active ||  mouseArea.pressed ? 2 : 1
-                        property bool selected: false
+//                        property bool selected: false
                         property int imageX: 0
                         property int pos
                         property bool animateVert: false
@@ -165,35 +170,75 @@ ActivityBase {
                             anchors.fill: parent
                             drag.target: parent
                             onPressed: {
-                                box.beginDrag = Qt.point(box.x, box.y)
+//                                box.beginDrag = Qt.point(box.x, box.y)
+//                                box.beginDrag = items.isMoving ? box.beginDrag : Qt.point(box.x, box.y)
+                                box.beginDrag = flow.animationCheck == 0 ? Qt.point(box.x, box.y) : box.beginDrag
                             }
                             onPressAndHold: {
                             }
                             onReleased: {
-                                Activity.placeBlock(box, box.beginDrag);
+                                if(flow.animationCheck == 0) {
+                                    Activity.placeBlock(box, box.beginDrag);
+                                }
                             }
                         }
+                        /*
                         Behavior on color {
                             PropertyAnimation {
                                 duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         }
+                        */
                         Behavior on x {
+                            PropertyAnimation {
+                                id: animationX
+                                duration: 500
+                                easing.type: Easing.InOutBack
+                                onRunningChanged: {
+                                    if(animationX.running) {
+                                        console.log("Running")
+                                        flow.animationCheck++
+                                    } else {
+                                        console.log("Stopped")
+                                        flow.animationCheck--
+                                    }
+                                    console.log("From x: "+flow.animationCheck)
+                                }
+                            }
+                            /*
                             ParallelAnimation {
                                 PropertyAnimation {
+                                    id: animationX
                                     duration: 500
                                     easing.type: Easing.InOutBack
                                 }
                             }
+                            */
                         }
                         Behavior on y {
+                            PropertyAnimation {
+                                id: animationY
+                                duration: 500
+                                easing.type: Easing.InOutBack
+                                onRunningChanged: {
+                                    if(animationY.running) {
+                                        flow.animationCheck++
+                                    } else {
+                                        flow.animationCheck--
+                                    }
+                                    console.log("From y: "+flow.animationCheck)
+                                }
+                            }
+                            /*
                             ParallelAnimation {
                                 PropertyAnimation {
+                                    id: animationY
                                     duration: 500
                                     easing.type: Easing.InOutBack
                                 }
                             }
+                            */
                         }
                     }
                 }
