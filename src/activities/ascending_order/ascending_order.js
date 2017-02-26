@@ -31,32 +31,15 @@ var items
 var num = []
 var originalArrangement = []
 
-var hash=[] // hash[i]=1 => ith grid is already pressed. =0 => it is not yet pressed
-var entered=[] // the numbers entered by the user
-
-
-var numEntered // the number of numbers entered by the user
-
-//var thresholdDistance = 8000 // multiply by screen_ratio
 var thresholdDistance
-/*
-var isSelected = false
-var alreadySelectedBox
-*/
-
-/*
-var xPos=[]
-var yPos=[]
-*/
-
 var noOfTilesInPreviousLevel
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    items.validMousePress = false
 
     noOfTilesInPreviousLevel = -1
-
     initLevel()
 }
 
@@ -64,13 +47,8 @@ function stop() {
 }
 
 function initLevel() {
-//    restoreGrids()
-
     items.bar.level = currentLevel + 1
-    numEntered=0
     initGrids()
-
-
 }
 
 function initGrids() {
@@ -82,8 +60,6 @@ function initGrids() {
          * manually check the marker off
          */
         items.flow.animationCheck = 0
-        console.log("from script: "+items.flow.animationCheck)
-
         noOfTilesInPreviousLevel = items.boxes.model
     } else {
         restoreGrids()
@@ -91,11 +67,8 @@ function initGrids() {
 
     generateRandomNumbers()
 
-//    hash=[]
-    entered=[]
     for(var i=0;i<items.boxes.model;i++) {
         items.boxes.itemAt(i).imageX=num[i]
-//        hash[i]=0
     }
 }
 
@@ -167,9 +140,11 @@ function checkOrder() {
 }
 
 function placeBlock(box, initialPosition) {
-    // find shortest distance from box to other nodes
-    // if distance <= threshold distance then put box
-    // in that block and that block in "initialPosition"
+    /*
+     * find shortest distance from box to other nodes
+     * if distance <= threshold distance then put box
+     * in that block and that block in "initialPosition"
+     */
     thresholdDistance = 4000 * items.boxes.itemAt(0).screen_ratio
     var minDistance = Number.POSITIVE_INFINITY
     var closestBlock
@@ -190,13 +165,16 @@ function placeBlock(box, initialPosition) {
 
         var item1Pos = num.indexOf(box.imageX)
         var item2Pos = num.indexOf(closestBlock.imageX)
+
+        var oldPositions = []
+        var newPositions = []
+
+        for(var i=0;i<num.length;i++) {
+            oldPositions[i]=num[i]
+            newPositions[i]=num[i]
+        }
+
         if(item1Pos>item2Pos) {
-            var oldPositions = []
-            var newPositions = []
-            for(var i=0;i<num.length;i++) {
-                oldPositions[i]=num[i]
-                newPositions[i]=num[i]
-            }
             // update new position
             var currentBoxValue = newPositions[item1Pos]
             for(var i=item1Pos;i>item2Pos;i--) {
@@ -204,12 +182,6 @@ function placeBlock(box, initialPosition) {
             }
             newPositions[item2Pos]=currentBoxValue
         } else {
-            var oldPositions = []
-            var newPositions = []
-            for(var i=0;i<num.length;i++) {
-                oldPositions[i]=num[i]
-                newPositions[i]=num[i]
-            }
             // update new position
             var currentBoxValue = newPositions[item1Pos]
             for(var i=item1Pos;i<item2Pos;i++) {

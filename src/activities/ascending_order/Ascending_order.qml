@@ -3,7 +3,6 @@
  * Copyright (C) 2017 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -32,6 +31,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    property bool validMousePress: false
 
     pageComponent: Image {
         id: background
@@ -50,37 +50,26 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property bool validMousePress: activity.validMousePress
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
             property alias boxes: boxes
-//            property alias ansText: ansText
             property alias flow: flow
             property alias container: container
-//            property bool isMoving: false
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        /*
-        GCText {
-            id: ansText
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-            }
-            text: ""
-            font.pixelSize: 40
-        }
-        */
-
         GCText {
             id: instruction
             wrapMode: TextEdit.WordWrap
             fontSize: tinySize
+            horizontalAlignment: Text.Center
             anchors.horizontalCenter: parent.horizontalCenter
-//            width: parent.width * 0.9
-            text: "Arrange the given numbers in ascending order"
+            width: parent.width * 0.9
+            text: qsTr("Drag and drop the numbers in correct position in Ascending order")
             color: 'white'
             Rectangle {
                 z: -1
@@ -102,7 +91,6 @@ ActivityBase {
         Rectangle {
             id: container
             color: "transparent"
-//            width: parent.width
             width: Math.min(parent.width, ((boxes.itemAt(0)).width*boxes.model)+(boxes.model-1)*flow.spacing)
             height: parent.height/2
 
@@ -112,34 +100,20 @@ ActivityBase {
             }
 
             Flow {
-//                anchors.fill: parent
-//                anchors.margins: 4
                 id: flow
                 spacing: 10
 
-                /*
-                property int rowCount : parent.width / (boxes .itemAt(0).width + spacing )
-                property int rowWidth: rowCount * boxes.itemAt(0).width + (rowCount-1)*spacing
-                property int margin: (parent.width - rowWidth)/2
-                */
                 property int animationCheck: 0
                 anchors {
-//                    horizontalCenter: parent.horizontalCenter
-//                    verticalCenter: parent.verticalCenter
                     fill: parent
-//                    margins: margin
-//                    leftMargin: margin
-//                    rightMargin: margin
                 }
                 Repeater {
                     id: boxes
                     model: 6
                     Rectangle {
                         id: box
-//                        color: selected ? "lightblue" : "white"
                         color: "white"
                         z: mouseArea.drag.active ||  mouseArea.pressed ? 2 : 1
-//                        property bool selected: false
                         property int imageX: 0
                         property int pos
                         property bool animateVert: false
@@ -151,45 +125,35 @@ ActivityBase {
                         width: 88 * ApplicationInfo.ratio
                         height: 88 * ApplicationInfo.ratio
                         */
-                        width: 65 * screen_ratio
-                        height: 65 * screen_ratio//88
+                        width: 65 * ApplicationInfo.ratio//* screen_ratio
+                        height: 65 * ApplicationInfo.ratio//* screen_ratio
                         radius: 10
                         border{
                             color: "black"
-//                            width: 5 * ApplicationInfo.ratio
                             width: 3 * screen_ratio
                         }
                         GCText {
                             id: numText
                             anchors.centerIn: parent
                             text: imageX.toString()
-                            font.pointSize: 20 * screen_ratio
+                            font.pointSize: 20 * ApplicationInfo.ratio//* screen_ratio
                         }
                         MouseArea {
                             id: mouseArea
                             anchors.fill: parent
                             drag.target: parent
                             onPressed: {
-//                                box.beginDrag = Qt.point(box.x, box.y)
-//                                box.beginDrag = items.isMoving ? box.beginDrag : Qt.point(box.x, box.y)
                                 box.beginDrag = flow.animationCheck == 0 ? Qt.point(box.x, box.y) : box.beginDrag
+                                activity.validMousePress = flow.animationCheck == 0 ? true : false
                             }
                             onPressAndHold: {
                             }
                             onReleased: {
-                                if(flow.animationCheck == 0) {
+                                if(flow.animationCheck == 0 && activity.validMousePress) {
                                     Activity.placeBlock(box, box.beginDrag);
                                 }
                             }
                         }
-                        /*
-                        Behavior on color {
-                            PropertyAnimation {
-                                duration: 300
-                                easing.type: Easing.InOutBack
-                            }
-                        }
-                        */
                         Behavior on x {
                             PropertyAnimation {
                                 id: animationX
@@ -197,24 +161,12 @@ ActivityBase {
                                 easing.type: Easing.InOutBack
                                 onRunningChanged: {
                                     if(animationX.running) {
-                                        console.log("Running")
                                         flow.animationCheck++
                                     } else {
-                                        console.log("Stopped")
                                         flow.animationCheck--
                                     }
-                                    console.log("From x: "+flow.animationCheck)
                                 }
                             }
-                            /*
-                            ParallelAnimation {
-                                PropertyAnimation {
-                                    id: animationX
-                                    duration: 500
-                                    easing.type: Easing.InOutBack
-                                }
-                            }
-                            */
                         }
                         Behavior on y {
                             PropertyAnimation {
@@ -227,18 +179,8 @@ ActivityBase {
                                     } else {
                                         flow.animationCheck--
                                     }
-                                    console.log("From y: "+flow.animationCheck)
                                 }
                             }
-                            /*
-                            ParallelAnimation {
-                                PropertyAnimation {
-                                    id: animationY
-                                    duration: 500
-                                    easing.type: Easing.InOutBack
-                                }
-                            }
-                            */
                         }
                     }
                 }
