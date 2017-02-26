@@ -27,11 +27,10 @@
 #include <QDebug>
 #include "UserData.h"
 #include "Database.h"
+#include "GroupData.h"
 
-#define CREATE_TABLE_USERS						\
-  "CREATE TABLE users (user_id INT UNIQUE, login TEXT, avatar TEXT); "
-#define CREATE_TABLE_GROUPS						\
-  "CREATE TABLE groups (group_id INT UNIQUE, name TEXT, description TEXT, userId INT); "
+#define CREATE_TABLE_GROUPS \
+    "CREATE TABLE groups (group_name TEXT PRIMARY KEY NOT NULL, description TEXT); "
 
 Database* Database::_instance = 0;
 
@@ -50,30 +49,71 @@ Database* Database::getInstance()
     return _instance;
 }
 
-bool Database::addUser(const QString &name, const QString &avatar)
+bool Database::addGroup(const QString &groupName, const QString& description,
+                        const QStringList& users)
+{
+
+    bool groupAdded = false;
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+    // add group to db only if it has not been added before
+    query.prepare("SELECT group_name FROM groups WHERE group_name=:groupName");
+    query.bindValue(":groupName", groupName);
+    query.exec();
+    if(query.next()){
+        qDebug()<< "group "<< groupName << " already exists";
+        return false;
+    }
+    // since the group does not exist ,create the new group and add description and users to it
+    query.prepare("INSERT INTO groups (group_name, description) VALUES (:groupName,:description)");
+    query.bindValue(":groupName", groupName);
+    query.bindValue(":description",description);
+    groupAdded = query.exec();
+    if(groupAdded){
+        //add users to the group
+    }
+    else{
+
+        qDebug()<<"group could not be added " <<  query.lastError();
+    }
+    return groupAdded;
+}
+bool Database::deleteGroup(const QString &groupName)
+{
+    bool groupDeleted = false;
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+    query.prepare("DELETE FROM groups WHERE group_name=:gname");
+    query.bindValue(":gname",groupName);
+    if(query.exec()){
+        groupDeleted = true;   
+        // query.prepare("DELETE FROM group_users WHERE group_name=:gname");
+        // query.bindValue(":gname",groupName);
+        // if(query.exec())
+        //     groupDeleted = true;
+    }
+    return groupDeleted;
+
+}
+
+void Database::retrieveAllExistingGroups(QList<GroupData *> &allGroups)
 {
     QSqlDatabase dbConnection = QSqlDatabase::database();
 
     // Don't add twice the same login
-    QSqlQuery alreadyExistingUser(dbConnection);
-    alreadyExistingUser.prepare("SELECT * FROM users WHERE login=:name");
-    alreadyExistingUser.bindValue(":name", name);
-    alreadyExistingUser.exec();
-    if(alreadyExistingUser.next()) {
-        qDebug() << "User " << name << " already exists";
-        return false;
-    }
-
-    // Add the user in the database
     QSqlQuery query(dbConnection);
-    query.prepare("INSERT INTO users (login, avatar) VALUES (:name, :avatar)");
-    query.bindValue(":name", name);
-    query.bindValue(":avatar", avatar);
-    bool returnValue = query.exec();
-    if(!returnValue)
-        qDebug() << query.lastError();
-    return returnValue;
+    query.prepare("SELECT * FROM groups");
+    query.exec();
+    const int nameIndex = query.record().indexOf("group_name");
+    const int descriptionIndex = query.record().indexOf("description");
+    while(query.next()) {
+        GroupData *g = new GroupData();
+        g->setName(query.value(nameIndex).toString());
+        g->setDescription(query.value(descriptionIndex).toString());
+        allGroups.push_back(g);
+    }
 }
+
 
 void Database::retrieveAllExistingUsers(QList <UserData *> &allUsers)
 {
@@ -98,8 +138,12 @@ void createDatabase(const QString &path)
     QSqlDatabase dbConnection = QSqlDatabase::database();
 
     QSqlQuery query(dbConnection);
-    query.exec(CREATE_TABLE_USERS);
-    query.exec(CREATE_TABLE_GROUPS);
+    if(query.exec(CREATE_TABLE_GROUPS))
+        qDebug()<< "created table groups";
+    else{
+        qDebug() <<"failed";
+        qDebug() << query.lastError();
+    }
 }
 
 void Database::init()

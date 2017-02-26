@@ -45,7 +45,8 @@ const QList<QObject *> &GroupData::getUsers() const
 }
 void GroupData::addUser(UserData *user)
 {
-    m_users << user;
+    if(!m_users.contains(user))
+        m_users << user;
     emit newUsers();
 }
 
@@ -70,6 +71,11 @@ bool GroupData::hasUser(const QString &userName)
 const QString &GroupData::getName() const
 {
     return m_name;
+}
+
+void GroupData::setDescription(const QString &description)
+{
+    m_description = description;
 }
 
 void GroupData::setName(const QString &name)

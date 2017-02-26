@@ -25,6 +25,7 @@
 #include <QJSEngine>
 
 class UserData;
+class GroupData;
 class QSqlError;
 
 class Database : public QObject {
@@ -45,8 +46,12 @@ public:
 
     ~Database();
 
-    bool addUser(const QString &name, const QString &avatar = "");
+    bool addGroup(const QString &groupName, const QString& description = QString(),
+                  const QStringList& users=QStringList());
+    bool deleteGroup(const QString& groupName);
     void retrieveAllExistingUsers(QList <UserData *> &allUsers);
+    void retrieveAllExistingGroups(QList<GroupData* > &allGroups);
+
 };
 
 #endif

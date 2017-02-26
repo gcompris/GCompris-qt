@@ -75,7 +75,6 @@ public:
     Q_INVOKABLE void sendLoginList(QObject *g);
 
 private slots:
-    void sessionOpened();
     void newTcpConnection();
     void slotReadyRead();
     void disconnected();
@@ -89,9 +88,9 @@ private:
     
 signals:
     void newClientReceived(const ClientData &client);
-    void clientDisconnected(const ClientData &client);
-    void loginReceived(const ClientData &who, const Login &log);
     void activityDataReceived(const ClientData &who, const ActivityRawData &data);
+    void clientDisconnected(QTcpSocket* socket);
+    void loginReceived(QTcpSocket* socket, const Login &log);
 };
 
 #endif

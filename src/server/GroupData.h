@@ -53,11 +53,12 @@ public:
 
     const QString &getName() const;
     void setName(const QString &newName);
-
- private:
+    void setDescription(const QString &description);
+private:
     // UserData*
     QList<QObject *> m_users;
     QString m_name;
+    QString m_description;
 
 signals:
     void newUsers();

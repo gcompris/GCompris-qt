@@ -34,20 +34,14 @@ MessageHandler::MessageHandler()
     connect(&server, &Server::newClientReceived, this, &MessageHandler::onNewClientReceived);
     connect(&server, &Server::clientDisconnected, this, &MessageHandler::onClientDisconnected);
     
-    // todo synchronize with database
-    // Synchronize user list
-    QList<UserData *> allUsers;
-    Database::getInstance()->retrieveAllExistingUsers(allUsers);
-    for(UserData *u: allUsers) {
-        m_users.push_back((QObject*)u);
+    // retrieve all the existing users and groups
+    QList<GroupData* > groups;
+    Database::getInstance()->retrieveAllExistingGroups(groups);
+    for(auto it=groups.begin(); it!= groups.end(); it++){
+        m_groups.push_back((QObject*)(*it));
     }
     emit newUsers();
 
-    // For test purposes, to be removed later
-    GroupData *group = createGroup("default");
-    UserData *user1 = createUser("a", "", { "default" });
-    UserData *user2 = createUser("b", "");
-    group->addUser(user2); // same as putting directly the group
 }
 
 MessageHandler* MessageHandler::getInstance()
@@ -68,6 +62,7 @@ QObject *MessageHandler::systeminfoProvider(QQmlEngine *engine,
 
 void MessageHandler::init()
 {
+    getInstance();
     qmlRegisterType<UserData>();
     qmlRegisterType<GroupData>();
 
@@ -76,53 +71,58 @@ void MessageHandler::init()
             systeminfoProvider);
 }
 
-GroupData *MessageHandler::createGroup(const QString &newGroup, const QStringList &users)
+GroupData *MessageHandler::createGroup(const QString &newGroup,const QString &description,
+                                       const QStringList& users)
 {
-    qDebug() << "createGroup '" << newGroup << "'";
-    GroupData *c = new GroupData();
-    c->setName(newGroup);
-    for(const QString &username: users)
-        c->addUser(getUser(username));
-    m_groups.push_back((QObject*)c);
-    emit newGroups();
-    return c;
-}
-
-GroupData *MessageHandler::updateGroup(const QString &oldGroupName, const QString &newGroupName, const QStringList &users)
-{
-    qDebug() << "updateGroup '" << newGroupName << "'";
-    GroupData *c = getGroup(oldGroupName);
-    c->setName(newGroupName);
-
-    c->removeAllUsers();
-    for(const QString &aUser: users) {
-        UserData *user = getUser(aUser);
-        c->addUser(user);
+    //1. add group to database
+    //2. make a new a group and add it to m_groups;
+    if(Database::getInstance()->addGroup(newGroup, description,users)){
+        GroupData *c = new GroupData();
+        c->setName(newGroup);
+        c->setDescription(description);
+        m_groups.push_back((QObject*)c);
+        qDebug() << "size of the list after adding the new group is " << m_groups.length();
+        emit newGroups();
+        return c;
     }
-    emit newGroups();
-    return c;
+
+    return nullptr;
+
 }
 
 void MessageHandler::deleteGroup(const QString &groupName)
 {
-    qDebug() << "deleteGroup '" << groupName << "'";
-    GroupData *c = getGroup(groupName);
-    qDebug() << c;
-    m_groups.removeAll(c);
-    delete c;
-    emit newGroups();
+    //delete from database
+    if(Database::getInstance()->deleteGroup(groupName)){
+        GroupData *c = getGroup(groupName);
+        qDebug() << c;
+        m_groups.removeAll(c);
+        delete c;
+        emit newGroups();
+
+    }
+    else{
+        qDebug() << "could not delete the group from database";
+    }
+
+
 }
 
 UserData *MessageHandler::createUser(const QString &newUser, const QString &avatar, const QStringList &groups)
 {
-    if(Database::getInstance()->addUser(newUser, avatar)) {
+
+//    Add the user in the database
+/*    if(Database::getInstance()->addUser(newUser, avatar, groups)){
         qDebug() << "createUser '" << newUser << "' in groups " << groups;
         UserData *u = new UserData();
         u->setName(newUser);
         u->setAvatar(avatar);
         for(const QString &aGroup: groups) {
             GroupData *group = getGroup(aGroup);
-            group->addUser(u);
+            if(group){
+                group->addUser(u);
+                u->addGroup(group);
+            }
         }
         m_users.push_back((QObject*)u);
         emit newUsers();
@@ -131,7 +131,7 @@ UserData *MessageHandler::createUser(const QString &newUser, const QString &avat
     else {
         qDebug() << "Error while creating user " << newUser;
     }
-    return nullptr;
+    return nullptr;*/
 }
 
 UserData *MessageHandler::updateUser(const QString &oldUser, const QString &newUser, const QString &avatar, const QStringList &groups)
@@ -193,15 +193,24 @@ void MessageHandler::deleteUser(const QString &userName)
     }
 }
 
-void MessageHandler::onLoginReceived(const ClientData &who, const Login &data)
+void MessageHandler::onLoginReceived(QTcpSocket *socket, const Login &data)
 {
     qDebug() << "Login received '" << data._name << "'";
-    ClientData *c = getClientData(who);
+    ClientData *c = getClientData(socket);
+
+    for(QObject *oClient: m_clients ) {
+        ClientData *c = (ClientData*)oClient;
+        if(c->getUserData() && c->getUserData()->getName() == data._name) {
+            // found a client with the same user name.(i.e someone chose the wrong login)
+            qDebug() << "a client with the same user name already exists";
+            return;
+            //todo:
+            // return an error message to client and inform that you have chosen the wrong login
+        }
+    }
     for(QObject *oUser: m_users) {
         UserData *user = (UserData*)oUser;
-        // todo Check that we don't find a client with the same login! else it will probably means a child didn't choose the good login
-
-        qDebug() << user->getName() << data._name;
+        qDebug() << "recieved login " << data._name << " " << c->getSocket();
         if(user->getName() == data._name) {
             c->setUser(user);
             return;
@@ -227,19 +236,18 @@ void MessageHandler::onNewClientReceived(const ClientData &client)
     emit newClients();
 }
 
-void MessageHandler::onClientDisconnected(const ClientData &client)
+void MessageHandler::onClientDisconnected(QTcpSocket* socket)
 {
     qDebug() << "client disconnected";
-    ClientData *c = getClientData(client);
+    ClientData *c = getClientData(socket);
     c->setUser(nullptr);
     m_clients.removeAll(c);
     delete c;
     emit newClients();
 }
 
-ClientData *MessageHandler::getClientData(const ClientData &cd)
+ClientData *MessageHandler::getClientData(QTcpSocket* socket)
 {
-    const QTcpSocket *socket = cd.getSocket();
     for (QObject *oc: m_clients) {
         ClientData *c = (ClientData *) oc;
         if (c->getSocket() == socket) {

@@ -32,8 +32,13 @@
  * @class MessageHandler
  * @short Handles all the messages received by the socket
  *
- * This class contains all the users/groups/clients and handles all the
- * messages received by the server.
+ * JOB:
+ * -Handle messages received by the socket
+ * -Create,delete, Update information about:
+ *  --users
+ *  --groups
+ * -Linking Users,Clients and groups with each other
+ *
  *
  * @sa UserData
  * @sa GroupData
@@ -60,8 +65,8 @@ public:
             QJSEngine *scriptEngine);
     static MessageHandler* getInstance();
 
-    Q_INVOKABLE GroupData *createGroup(const QString &groupName, const QStringList &users = QStringList());
-    Q_INVOKABLE GroupData *updateGroup(const QString &oldGroupName, const QString &newGroupName, const QStringList &users = QStringList());
+    Q_INVOKABLE GroupData *createGroup(const QString &groupName,const QString &description=QString(),
+                                       const QStringList& users=QStringList());
     Q_INVOKABLE void deleteGroup(const QString &groupName);
 
     Q_INVOKABLE UserData *createUser(const QString &userName, const QString &avatar = QString(), const QStringList &groups = QStringList());
@@ -71,11 +76,24 @@ public:
     UserData *getUser(const QString &userName);
     GroupData *getGroup(const QString &groupName);
 
+
+
+    Q_INVOKABLE QList<QObject*> returnGroupUsers(const QString& group){
+
+            GroupData* g = getGroup(group);
+            if(g){
+                return g->getUsers();
+            }
+    }
+
+
+
+
 public slots:
-    void onLoginReceived(const ClientData &who, const Login &data);
     void onActivityDataReceived(const ClientData &who, const ActivityRawData &act);
+    void onLoginReceived(QTcpSocket* socket, const Login &data);
     void onNewClientReceived(const ClientData &client);
-    void onClientDisconnected(const ClientData &client);
+    void onClientDisconnected(QTcpSocket* socket);
 
 signals:
     void newClients();
@@ -83,7 +101,7 @@ signals:
     void newUsers();
 
 private:
-    ClientData *getClientData(const ClientData &cd);
+    ClientData *getClientData(QTcpSocket* socket);
 
     void removeUserFromAllGroups(UserData *user);
 
