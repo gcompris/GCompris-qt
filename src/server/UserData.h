@@ -23,9 +23,13 @@
 
 #include <QObject>
 #include <QStringList>
-#include "ActivityData.h"
+#include <QMap>
+#include <QVariantMap>
+
 class GroupData;
 struct ActivityRawData;
+class ActivityData;
+
 
 /**
  * @class UserData
@@ -40,8 +44,6 @@ class UserData : public QObject {
     Q_PROPERTY(QString avatar MEMBER m_avatar NOTIFY newAvatar)
     Q_PROPERTY(QString name MEMBER m_name NOTIFY newName)
 
-    Q_PROPERTY(QVariantMap activityData MEMBER m_variantData NOTIFY newActivityData)
-
 public:
     UserData();
     UserData(const UserData &user);
@@ -54,15 +56,16 @@ public:
     void addData(const ActivityRawData &rawData);
     QList<QObject*> getGroups();
     const QString &getName() const;
+    Q_INVOKABLE const QVariantMap getActivityData(const QString &activity);
 
-    Q_INVOKABLE const QList<QObject*> getActivityData(const QString &activity);
+
 
 private:
     QList<QObject*> m_groups;
     QString m_avatar;
     QString m_name;
 
-    QMap<QString /*activity*/, ActivityData> m_activityData;
+    QMap<QString, ActivityData*> m_activityData;
     QVariantMap m_variantData;
 
 signals:

@@ -83,10 +83,8 @@ void Server::newTcpConnection()
 
     list.push_back(clientConnection);
     qDebug() << clientConnection->peerAddress().toString();
-    ClientData newClient;
-    newClient.setSocket(clientConnection);
     qDebug("New tcp connection");
-    emit newClientReceived(newClient);
+    emit newClientReceived(clientConnection);
 }
 
 void Server::broadcastDatagram()
@@ -107,9 +105,6 @@ void Server::slotReadyRead()
     QDataStream in(&data, QIODevice::ReadOnly);
     in.setVersion(QDataStream::Qt_4_0);
 
-    ClientData client;
-    client.setSocket(clientConnection);
-
     while(!in.atEnd()) {
         Identifier messageId;
         in >> messageId;
@@ -126,7 +121,7 @@ void Server::slotReadyRead()
         {
             ActivityRawData act;
             in >> act;
-            emit activityDataReceived(client, act);
+            emit activityDataReceived(clientConnection, act);
             break;
         }
         default:
@@ -163,32 +158,36 @@ void Server::sendActivities()
     }
 }
 
-void Server::sendLoginList(QObject *g)
+void Server::sendLoginList()
 {
-    GroupData *group = (GroupData *) g;
     // Get all the clients from MessageHandler
     // For each client, if it does not have a name yet, send the message
     QByteArray block;
     QDataStream out(&block, QIODevice::WriteOnly);
     out.setVersion(QDataStream::Qt_4_0);
 
+    // remove the sockets not the names
+//    QStringList usedLogins;
+//    for(const QObject* oClient: MessageHandler::getInstance()->returnClients()) {
+//        ClientData* c = (ClientData*)(oClient);
+//        if(c->getUserData()){
+//            usedLogins << c->getUserData()->getName();
+//        }
+//    }
+
     AvailableLogins act;
-    for(const QObject *oC: group->getUsers()) {
-        act._logins << ((const UserData*)oC)->getName();
+    for(const QObject *oC: MessageHandler::getInstance()->returnUsers()) {
+            act._logins << ((const UserData*)oC)->getName();
     }
 
-    // todo remove already used logins
 
     out << LOGINS_LIST << act;
-
     for(auto sock: list)
     {
         qDebug() << "Sending " << block << " to " << sock;
         sock->write(block);
     }
 
-    //qDebug() << "Sending " << block << " to " << client->getSocket();
-    //((QTcpSocket*)client->getSocket())->write(block);
 }
 
 void Server::sendConfiguration(/*QObject *c*//*, const ConfigurationData &config*/)

@@ -84,13 +84,13 @@ ActivityBase {
             }
 
         }
-        Item{
+        Item {
             id: groupConfig
             visible: false
             width: parent.width/2.5
             height: parent.height/1.75
             anchors.centerIn: parent
-            Rectangle{
+            Rectangle {
                 id: baseRect
                 anchors.fill: parent
                 color: "grey"
@@ -98,7 +98,7 @@ ActivityBase {
             }
 
 
-            ListView{
+            ListView {
                 id: configView
                 anchors.fill: parent
                 visible: true
@@ -132,7 +132,7 @@ ActivityBase {
                 ]
                 model:list
                 spacing: 3
-                delegate: Button{
+                delegate: Button {
                     id: actions
                     Text {
                         text: modelData.text
@@ -142,9 +142,9 @@ ActivityBase {
                     }
                     width: parent.width
                     height: 70
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                     //                        anchors.horizontalCenter: parent.horizontalCenter
-                    MouseArea{
+                    MouseArea {
                         anchors.fill: parent
                         onClicked: {
                             cancelButton.visible = false
@@ -157,14 +157,14 @@ ActivityBase {
                                 goBackButton.visible = true
 
                             }
-                            else if(modelData.shortName === "showUsers"){
+                            else if(modelData.shortName === "showUsers") {
                                 usersView.model = MessageHandler.returnGroupUsers(clients.currentGroup)
                                 addNewUsersButton.visible = false
                                 goBackButton.visible = true
                                 usersView.visible = true
 
                             }
-                            else if(modelData.shortName === "deleteGroup"){
+                            else if(modelData.shortName === "deleteGroup") {
                                 groupConfig.visible = false
                                 confirmationBox.visible = true
                                 mainItem.mode = "deleteGroup"
@@ -179,7 +179,7 @@ ActivityBase {
             }
 
 
-            ListView{
+            ListView {
                 id: usersView
                 anchors.fill: parent
                 visible: false
@@ -188,15 +188,15 @@ ActivityBase {
                 delegate: checkBoxDelegate
 
             }
-            Button{
+            Button {
                 id: addNewUsersButton
                 width:parent.width/2
                 visible: false
                 height: parent.height/6
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 anchors.bottom: parent.bottom
                 text: qsTr("Add")
-                MouseArea{
+                MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         mainItem.mode = "addUsers";
@@ -211,19 +211,19 @@ ActivityBase {
                     }
                 }
             }
-            Button{
+            Button {
                 id: goBackButton
                 width:addNewUsersButton.visible ? parent.width/2: parent.width
                 visible: false
                 height: parent.height/6
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
 //                anchors.left: addNewUsersButton.visible? addNewUsersButton.right : undefined
                 text: qsTr("Back")
-                MouseArea{
+                MouseArea {
                     anchors.fill: parent
-                    onClicked:{
+                    onClicked: {
                         addNewUsersButton.visible = false
                         goBackButton.visible = false
                         usersView.visible = false
@@ -237,7 +237,7 @@ ActivityBase {
 
 
         }
-        GCButtonCancel{
+        GCButtonCancel {
             id: cancelButton
             visible: false
             anchors.right: undefined
@@ -245,24 +245,24 @@ ActivityBase {
             anchors.bottom: groupConfig.top
             anchors.left: groupConfig.right
             anchors.margins: 0
-            onClose:{
+            onClose: {
                 cancelButton.visible = false
                 groupConfig.visible = false
             }
         }
 
-        Item{
+        Item {
             id: createGroupItem
             visible: false
             width:parent.width/1.75
             height: parent.height/1.5
             anchors.centerIn:  parent
-            Rectangle{
+            Rectangle {
                 id: createGroupRect
                 anchors.fill: parent
                 color: "grey"
                 opacity: 0.6
-                Button{
+                Button {
                     id: groupName
                     anchors.left: parent.left
                     height: parent.height/8
@@ -270,9 +270,9 @@ ActivityBase {
 
                     text: qsTr("Group Name")
 
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                 }
-                TextField{
+                TextField {
                     id: groupText
                     anchors.left: groupName.right
                     anchors.leftMargin: 30
@@ -282,7 +282,7 @@ ActivityBase {
                     placeholderText: qsTr("Enter the group Name")
                 }
 
-                Button{
+                Button {
                     id: description
                     anchors.left: parent.left
                     anchors.top: groupName.bottom
@@ -291,9 +291,9 @@ ActivityBase {
                     //                    anchors.verticalCenter: parent.verticalCenter
                     width: parent.width/4
                     text: qsTr("Description")
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                 }
-                TextField{
+                TextField {
                     id: descriptionText
                     anchors.left: description.right
                     anchors.leftMargin: 30
@@ -304,7 +304,7 @@ ActivityBase {
                     text: ""
                     placeholderText: qsTr("Add description about the group")
                 }
-                Button{
+                Button {
                     id: addUsers
                     height: parent.height/8
                     anchors.left: parent.left
@@ -313,10 +313,10 @@ ActivityBase {
                     anchors.top: description.bottom
                     width: parent.width/4
                     text: qsTr("Add Users")
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                 }
 
-                ListView{
+                ListView {
                     id: chooseUsers
                     anchors.left: addUsers.right
                     anchors.right: parent.right
@@ -326,19 +326,19 @@ ActivityBase {
                     height: parent.height/4
                     model: MessageHandler.users
                     spacing: 50
-                    Component{
+                    Component {
                         id: checkBoxDelegate
-                        GCDialogCheckBox{
+                        GCDialogCheckBox {
                             id: checkbox
                             width: parent.width
                             text:modelData.name
-                            onCheckedChanged:{
-                                if(checkbox.checked){
+                            onCheckedChanged: {
+                                if(checkbox.checked) {
                                     console.log("checked ",modelData.name)
                                     mainItem.users.push(modelData.name)
                                 }
 
-                                else{
+                                else {
                                     mainItem.users.pop(modelData.name)
                                     console.log("unchecked ", modelData.name)
                                 }
@@ -373,16 +373,16 @@ ActivityBase {
 
 
 
-            Button{
+            Button {
                 id: createButton
                 anchors.bottom: parent.bottom
                 height: parent.height/6
                 width: parent.width/2
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 text: qsTr("Create")
-                MouseArea{
+                MouseArea {
                     anchors.fill: parent
-                    onClicked:{
+                    onClicked: {
                         //show the confirmation box
                         mainItem.mode = "create"
                         createGroupItem.visible = false
@@ -390,17 +390,17 @@ ActivityBase {
                     }
                 }
             }
-            Button{
+            Button {
                 id: cancel
                 anchors.bottom: parent.bottom
                 height: parent.height/6
                 anchors.left: createButton.right
                 width: parent.width/2
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 text: qsTr("Cancel")
-                MouseArea{
+                MouseArea {
                     anchors.fill: parent
-                    onClicked:{
+                    onClicked: {
                         createGroupItem.visible = false
 
                     }
@@ -412,7 +412,7 @@ ActivityBase {
 
         }
 
-        Rectangle{
+        Rectangle {
             id: confirmationBox
             width: parent.width/2
             height: parent.height/4.5
@@ -420,7 +420,7 @@ ActivityBase {
             color: "grey"
             opacity: 0.6
             visible: false
-            GCText{
+            GCText {
                 text: {
                     if (mainItem.mode === "create")
                         return "Are you sure you want to create this group?"
@@ -438,14 +438,14 @@ ActivityBase {
 
             }
 
-            Button{
+            Button {
                 id: yes
                 anchors.bottom: parent.bottom
                 height: parent.height/6
                 width: parent.width/2
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 text: qsTr("YES")
-                MouseArea{
+                MouseArea {
                     anchors.fill: parent
                     onClicked: {
 
@@ -462,7 +462,7 @@ ActivityBase {
                             MessageHandler.addUserToGroup(clients.currentGroup,mainItem.users)
 
                         }
-                        if(mainItem.mode === "deleteGroup"){
+                        if(mainItem.mode === "deleteGroup") {
                             console.log("deleting group ",clients.currentGroup)
                             MessageHandler.deleteGroup(clients.currentGroup)
                         }
@@ -475,17 +475,17 @@ ActivityBase {
                     }
                 }
             }
-            Button{
+            Button {
                 id: no
                 anchors.bottom: parent.bottom
                 height: parent.height/6
                 anchors.left: yes.right
                 width: parent.width/2
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 text: qsTr("NO")
-                MouseArea{
+                MouseArea {
                     anchors.fill: parent
-                    onClicked:{
+                    onClicked: {
                         // set all the values to ""
                         groupText.text = ""
                         descriptionText.text = ""

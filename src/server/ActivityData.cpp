@@ -21,10 +21,10 @@
 
 #include "Messages.h"
 #include "ActivityData.h"
-#include <QQmlComponent>
-
+#include <QDebug>
 ActivityData::ActivityData()
 {
+
 }
 ActivityData::ActivityData(const ActivityData &act)
 {
@@ -34,49 +34,37 @@ ActivityData::~ActivityData()
 {
 }
 
-void ActivityData::operator=(const ActivityData &act)
+const QList<ActivityData_d*> ActivityData::returnData()
 {
-    m_data = act.m_data;
+    return m_dataList;
 }
 
-void ActivityData::push_back(const ActivityRawData &rawData)
+void ActivityData::push_back(const ActivityRawData& rawData)
 {
-    ActivityData_d *data = new ActivityData_d;
-    data->setDate(rawData.date);
-    data->setData(rawData.data);
-    m_data.push_back(*data);
-    m_qmlData.push_back(data);
-    emit newData();
+    // create a new activity_d object
+    ActivityData_d* actData_d = new ActivityData_d(rawData.date, rawData.data);
+    this->m_dataList.push_back(actData_d);
+
 }
 
-ActivityData_d::ActivityData_d()
+ActivityData_d::ActivityData_d(const QDateTime &date, const QVariantMap &data):
+    m_date(date),
+    m_data(data)
 {
-}
 
-ActivityData_d::ActivityData_d(const ActivityData_d &d)
-{
-    setDate(d.m_date);
-    setData(d.m_data);
 }
-
 ActivityData_d::~ActivityData_d()
 {
+
+}
+QDateTime ActivityData_d::getDate()
+{
+    qDebug() << m_date;
+    return m_date;
+}
+QVariantMap ActivityData_d::getData()
+{
+    qDebug() << m_data;
+    return m_data;
 }
 
-void ActivityData_d::operator=(const ActivityData_d &d)
-{
-    setDate(d.m_date);
-    setData(d.m_data);
-}
-
-void ActivityData_d::setDate(const QDateTime &date)
-{
-    m_date = date;
-    emit newDate();
-}
-
-void ActivityData_d::setData(const QVariantMap &data)
-{
-    m_data = data;
-    emit newData();
-}

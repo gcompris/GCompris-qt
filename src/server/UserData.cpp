@@ -20,9 +20,14 @@
  */
 
 #include <QStringList>
+#include <QVariant>
+#include <QDebug>
+
 #include "Messages.h"
 #include "UserData.h"
 #include "GroupData.h"
+#include "ActivityData.h"
+
 
 UserData::UserData() : m_name(""), m_avatar("")
 {
@@ -66,17 +71,32 @@ const QString &UserData::getName() const
 
 void UserData::addData(const ActivityRawData &rawData)
 {
-    ActivityData &act = m_activityData[rawData.activityName];
-    act.push_back(rawData);
-
-    ActivityData *act2 = m_variantData[rawData.activityName].value<ActivityData*>();
-    if(!act2) act2 = new ActivityData;
-    act2->push_back(rawData);
-    m_variantData[rawData.activityName] = QVariant::fromValue(act2);
-    emit newActivityData();
+    ActivityData* act = m_activityData.value(rawData.activityName , NULL);
+    if(!act){
+        act = new ActivityData();
+        m_activityData.insert(rawData.activityName, act);
+        qDebug() << act;
+    }
+    act->push_back(rawData);
 }
 
-const QList<QObject*> UserData::getActivityData(const QString &activity)
+const QVariantMap UserData::getActivityData(const QString &activity)
 {
-    return m_activityData[activity].m_qmlData;
+    qDebug() << activity << " "<< this->m_name;
+    QMap<QString, QVariant> result;
+    QList<QVariant> dataList;
+    QVariant var;
+    ActivityData*  act = m_activityData.value(activity);
+    if(act){
+        const QList<ActivityData_d*> &data = act->returnData();
+        for(auto it = data.begin(); it!= data.end(); it++) {
+            var = result.value((*it)->getDate().toString("dd/MM/yyyy"),QVariant());
+            dataList = var.value<QList<QVariant>>();
+            dataList.push_back((*it)->getData());
+            var.setValue(dataList);
+            result.insert((*it)->getDate().toString("dd/MM/yyyy"),var);
+        }
+    }
+
+    return result;
 }

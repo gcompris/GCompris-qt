@@ -80,7 +80,7 @@ ActivityBase {
             Button {
                 id: createUserButton
                 text: qsTr("Create a  new user")
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 onClicked: {
                     createUserItem.visible = true
                 }
@@ -140,7 +140,7 @@ ActivityBase {
                     }
                     width: parent.width
                     height: 70
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
@@ -184,7 +184,7 @@ ActivityBase {
                 width: parent.width/2
                 visible: false
                 height: parent.height/6
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 anchors.bottom: parent.bottom
                 text: qsTr("Add")
                 MouseArea {
@@ -207,7 +207,7 @@ ActivityBase {
                 width: addNewGroupsButton.visible ? parent.width/2: parent.width
                 visible: false
                 height: parent.height/6
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 anchors.bottom: parent.bottom
                 anchors.right: parent.right
                 text: qsTr("Back")
@@ -245,7 +245,7 @@ ActivityBase {
 
                     text: qsTr("User Name")
 
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                 }
                 TextField {
                     id: userText
@@ -265,7 +265,7 @@ ActivityBase {
                     height: parent.height/8
                     width: parent.width/4
                     text: qsTr("Avatar")
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                 }
                 TextField {
                     id: avatarText
@@ -286,7 +286,7 @@ ActivityBase {
                     anchors.top: avatar.bottom
                     width: parent.width/4
                     text: qsTr("Add Groups")
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                 }
 
                 ListView {
@@ -347,7 +347,7 @@ ActivityBase {
                     width: parent.width/2
                     anchors.bottom: parent.bottom
                     height: parent.height/6
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                     text: qsTr("Create")
                     MouseArea {
                         anchors.fill: parent
@@ -367,7 +367,7 @@ ActivityBase {
                     anchors.right: parent.right
                     anchors.bottom: parent.bottom
                     height: parent.height/6
-                    style: GCButtonStyle{}
+                    style: GCButtonStyle {}
                     text: qsTr("Cancel")
                     MouseArea {
                         anchors.fill: parent
@@ -410,7 +410,7 @@ ActivityBase {
                 anchors.bottom: parent.bottom
                 height: parent.height/6
                 width: parent.width/2
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 text: qsTr("YES")
                 MouseArea {
                     anchors.fill: parent
@@ -443,7 +443,7 @@ ActivityBase {
                 height: parent.height/6
                 anchors.left: yes.right
                 width: parent.width/2
-                style: GCButtonStyle{}
+                style: GCButtonStyle {}
                 text: qsTr("NO")
                 MouseArea {
                     anchors.fill: parent

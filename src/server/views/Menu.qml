@@ -105,7 +105,16 @@ ActivityBase {
         },
         {
             view:"ActivityConfiguration",
-            text:qsTr("Send Dataset")
+            text: qsTr("Send Dataset")
+        },
+        {
+            view: "LoginList",
+            text: qsTr("Send Login List")
+
+        },
+        {
+            view: "Results",
+            text: qsTr("Activity Results")
         }
 
     ]
@@ -193,6 +202,10 @@ ActivityBase {
                         else if(modelData.view === "ActivityConfiguration") {
                             Server.sendConfiguration()
                         }
+                        else if(modelData.view === "LoginList") {
+                            login.visible = true
+
+                        }
 
                         else {
                             activityLoader.setSource("qrc:/gcompris/src/server/views/" + modelData.view + ".qml", {})
@@ -254,4 +267,132 @@ ActivityBase {
         onClose: home()
         activityInfo: ActivityInfoTree.rootMenu
     }
+    Item {
+        id: login
+        visible: false
+        width: parent.width/3
+        height: parent.height/2
+        anchors.centerIn:  parent
+        property string mode: ""
+        Rectangle {
+            id: loginRect
+            anchors.fill: parent
+            color: "black"
+            opacity: 0.4
+            Button {
+                id: chooseGroups
+                width: parent.width/1.5
+                style: GCButtonStyle {
+                    theme: "highContrast"
+                }
+                text: qsTr("Choose Groups")
+                height: parent.height/4
+                anchors.top: parent.top
+                anchors.topMargin: height
+                anchors.horizontalCenter:  parent.horizontalCenter
+
+            }
+            Button {
+                id: sendToAll
+                width: parent.width/1.5
+                height: parent.height/4
+                anchors.horizontalCenter:  parent.horizontalCenter
+                text: qsTr("Send to all")
+                anchors.top: chooseGroups.bottom
+                anchors.topMargin: height/2
+                style: GCButtonStyle {
+                    theme: "highContrast"
+                }
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked:{
+                        // show the confirmation box
+                        confirmationBox.visible = true
+                        login.visible = false
+                        login.mode = "sendtoall"
+                    }
+                }
+            }
+        }
+        GCButtonCancel {
+            id: cancel
+            anchors.left: login.right
+            anchors.right: undefined
+            anchors.top: undefined
+            visible: login.visible
+            anchors.bottom: login.top
+            onClose: {
+                login.visible = false
+            }
+        }
+
+    }
+    Rectangle {
+        id: confirmationBox
+        width: parent.width/2
+        height: parent.height/4
+        anchors.centerIn: parent
+        color: "black"
+        opacity: 0.4
+        visible: false
+        GCText {
+            text: {
+                if (login.mode === "sendtoall")
+                    return "Are you sure you want to send  login list to all the clients ?"
+
+                else
+                    return ""
+            }
+            color: "black"
+            font.bold: true
+            width: parent.width
+            font.weight: Font.ExtraBold
+            wrapMode: Text.Wrap
+            font.pixelSize: 25
+            anchors.centerIn: parent
+        }
+
+        Button {
+            id: yes
+            anchors.bottom: parent.bottom
+            height: parent.height/5
+            width: parent.width/2
+            style: GCButtonStyle {
+                theme: "highContrast"
+            }
+            text: qsTr("YES")
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+
+                        if (login.mode === "sendtoall")
+                        {
+                            Server.sendLoginList()
+                        }
+                        confirmationBox.visible = false
+
+                    }
+                }
+        }
+        Button {
+            id: no
+            anchors.bottom: parent.bottom
+            height: parent.height/5
+            anchors.left: yes.right
+            width: parent.width/2
+            style: GCButtonStyle {
+                theme: "highContrast"
+            }
+
+            text: qsTr("NO")
+            MouseArea {
+                anchors.fill: parent
+                onClicked:{
+                    login.visible = true
+                    confirmationBox.visible = false
+                }
+            }
+        }
+    }
+
 }

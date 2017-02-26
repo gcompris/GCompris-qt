@@ -170,6 +170,9 @@ Item {
      */
     signal homeClicked
 
+
+    signal previousViewClicked
+
     /// @cond INTERNAL_DOCS
 
     /*
@@ -232,6 +235,11 @@ Item {
         {
             'bid': downloadImage,
             'contentId': content.download,
+            'allowed': true
+        },
+        {
+            'bid': previousView,
+            'contentId': content.previousView,
             'allowed': true
         }
     ]
@@ -373,6 +381,14 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
             sourceSize.width: fullButton * barZoom
             onClicked: Core.quit(bar.parent.parent);
+        }
+    }
+    Component {
+        id: previousView
+        BarButton {
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
+            sourceSize.width: halfButton * barZoom
+            onClicked: bar.previousViewClicked()
         }
     }
     Component {

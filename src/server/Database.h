@@ -29,6 +29,7 @@
 class UserData;
 class GroupData;
 class QSqlError;
+struct ActivityRawData;
 
 class Database : public QObject {
     Q_OBJECT
@@ -58,6 +59,8 @@ public:
     bool addUserToGroup(const QString& group, const QString& user);
 
     QMultiMap<QString,QString> retrieveGroupUsers();
+    bool addDataToDatabase(const ActivityRawData &rawData);
+    void retrieveActivityData(UserData* user);
 
 };
 

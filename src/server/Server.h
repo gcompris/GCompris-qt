@@ -72,7 +72,7 @@ public:
     Q_INVOKABLE void broadcastDatagram();
     Q_INVOKABLE void sendConfiguration();
     Q_INVOKABLE void sendActivities();
-    Q_INVOKABLE void sendLoginList(QObject *g);
+    Q_INVOKABLE void sendLoginList();
 
 private slots:
     void newTcpConnection();
@@ -87,10 +87,10 @@ private:
     int messageNo;
     
 signals:
-    void newClientReceived(const ClientData &client);
-    void activityDataReceived(const ClientData &who, const ActivityRawData &data);
+    void newClientReceived(QTcpSocket* socket);
     void clientDisconnected(QTcpSocket* socket);
     void loginReceived(QTcpSocket* socket, const Login &log);
+    void activityDataReceived(QTcpSocket* socket, const ActivityRawData &data);
 };
 
 #endif

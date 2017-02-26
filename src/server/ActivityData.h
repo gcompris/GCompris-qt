@@ -22,59 +22,46 @@
 #define ACTIVITYDATA_H
 
 #include <QObject>
-#include <QList>
-#include <QVariantMap>
 #include <QDateTime>
+#include <QVariantMap>
 
-class QTcpSocket;
 struct ActivityRawData;
+/**
+ * @class ActivityData_d
+ * @short contains specific data of an activity
+ */
 
-class ActivityData_d : public QObject {
-    Q_OBJECT
-
-    Q_PROPERTY(QDateTime date MEMBER m_date NOTIFY newDate)
-    Q_PROPERTY(QVariantMap data MEMBER m_data NOTIFY newData)
-
+class ActivityData_d:public QObject
+{
 public:
-    ActivityData_d();
-    ActivityData_d(const ActivityData_d &d);
+    ActivityData_d(const QDateTime& date, const QVariantMap& data);
     ~ActivityData_d();
-    void operator=(const ActivityData_d &d);
-
-    void setDate(const QDateTime &date);
-    void setData(const QVariantMap &data);
-
+    QDateTime getDate();
+    QVariantMap getData();
 private:
     QDateTime m_date;
     QVariantMap m_data;
 
-signals:
-    void newDate();
-    void newData();
-
 };
 
+
+/**
+ * @class ActivityData
+ * @short maintains list of ActivityData_d class
+ */
 class ActivityData : public QObject {
     Q_OBJECT
-    Q_PROPERTY(QList<QObject *> data MEMBER m_qmlData NOTIFY newData)
-
 public:
     ActivityData();
-    ActivityData(const ActivityData &activityData);
+    ActivityData(const ActivityData& act);
     ~ActivityData();
 
-    void operator=(const ActivityData &);
+    void push_back(const ActivityRawData& rawData);
 
-    void push_back(const ActivityRawData &rawData);
-
-    QList<QObject *> m_qmlData;
+    const QList<ActivityData_d*> returnData();
 private:
-    QList<ActivityData_d> m_data;
-
-signals:
-    void newData();
+    QList<ActivityData_d*> m_dataList;
 };
 
 Q_DECLARE_METATYPE(ActivityData)
-
 #endif

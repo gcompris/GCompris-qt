@@ -105,4 +105,6 @@ QtObject {
      * Shown automatically during running download.
      */
     readonly property int download: 256
+
+    readonly property int previousView: 512
 }

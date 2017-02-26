@@ -57,34 +57,25 @@ ActivityBase {
 
     pageComponent: Item {
         anchors.fill: parent
-        Grid {
+        GridView {
             id: clients
-            spacing: 10
-            columns: 2
-            Repeater {
-                model: MessageHandler.clients
-                Rectangle {
-                    width: 200
-                    height: 200
-                    color: "red"
-                    GCText {
-                        text: modelData.user ? modelData.user.name : qsTr("unnamed")
-                    }
-                    MouseArea {
-                        id: mouse
-                        anchors.fill: parent
-                        onClicked: {
-                            //Server.sendConfiguration(modelData)
-                            var activity = "reversecount/Reversecount.qml";
-                            activityLoader.setSource("qrc:/gcompris/src/server/views/activities/" + activity,
-                                                     {
-                                                         'user': modelData.user,
-                                                         'act': activity
-                                                     })
-                        } // todo what do we do? display configuration
-                    }
+            width: parent.width
+            height: parent.height - (bar.height * 2)
+            cellWidth: parent.width/10
+            cellHeight: cellWidth
+            property string currentClient: ""
+            model: MessageHandler.clients
+            delegate: Rectangle {
+                id: delegate
+                width: clients.cellWidth/1.25
+                height: width
+                color: "red"
+                GCText {
+                    text: modelData.user ? modelData.user.name : "unnamed"
                 }
+
             }
+
         }
 
         Bar {

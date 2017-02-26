@@ -93,20 +93,28 @@ public:
                 return g->getUsers();
             }
     }
+    QList<QObject*> returnUsers() {
+        return m_users;
+    }
 
+    /*QList<QObject*> returnClients(){
+
+        return m_clients;
+    }*/
 
 
 
 public slots:
-    void onActivityDataReceived(const ClientData &who, const ActivityRawData &act);
     void onLoginReceived(QTcpSocket* socket, const Login &data);
-    void onNewClientReceived(const ClientData &client);
+    void onActivityDataReceived(QTcpSocket* socket, const ActivityRawData &act);
+    void onNewClientReceived(QTcpSocket* socket);
     void onClientDisconnected(QTcpSocket* socket);
 
 signals:
     void newClients();
     void newGroups();
     void newUsers();
+    void newActivityData();
 
 private:
     ClientData *getClientData(QTcpSocket* socket);

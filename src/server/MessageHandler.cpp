@@ -124,7 +124,7 @@ GroupData *MessageHandler::createGroup(const QString &newGroup,const QString &de
 void MessageHandler::deleteGroup(const QString &groupName)
 {
     //delete from database
-    if(Database::getInstance()->deleteGroup(groupName)){
+    if(Database::getInstance()->deleteGroup(groupName)) {
         GroupData *c = getGroup(groupName);
         qDebug() << c;
         m_groups.removeAll(c);
@@ -132,7 +132,7 @@ void MessageHandler::deleteGroup(const QString &groupName)
         emit newGroups();
 
     }
-    else{
+    else {
         qDebug() << "could not delete the group from database";
     }
 
@@ -142,7 +142,7 @@ void MessageHandler::deleteGroup(const QString &groupName)
 UserData *MessageHandler::createUser(const QString &newUser, const QString &avatar, const QStringList &groups)
 {
 
-//    Add the user in the database
+    //    Add the user in the database
     if(Database::getInstance()->addUser(newUser, avatar, groups)) {
         qDebug() << "createUser '" << newUser << "' in groups " << groups;
         UserData *u = new UserData();
@@ -275,18 +275,30 @@ void MessageHandler::onLoginReceived(QTcpSocket *socket, const Login &data)
     qDebug() << "Error: login " << data._name << " received, but no user found";
 }
 
-void MessageHandler::onActivityDataReceived(const ClientData &who, const ActivityRawData &act)
+void MessageHandler::onActivityDataReceived(QTcpSocket* socket, const ActivityRawData &act)
 {
+
+
     qDebug() << "Activity: " << act.activityName << ", date: " << act.date << ", data:" << act.data << ", user: " << act.username;
-    UserData *u = getUser(act.username);
-    u->addData(act);
+
+    if(Database::getInstance()) {
+        Database::getInstance()->addDataToDatabase(act);
+    }
+
+    ClientData* client = getClientData(socket);
+    if(client) {
+        if(client->getUserData()) {
+            client->getUserData()->addData(act);
+        }
+    }
+    emit newActivityData();
 }
 
-void MessageHandler::onNewClientReceived(const ClientData &client)
+void MessageHandler::onNewClientReceived(QTcpSocket* socket)
 {
     qDebug() << "New client";
-    ClientData *c = new ClientData(client);
-
+    ClientData *c = new ClientData;
+    c->setSocket(socket);
     m_clients.push_back((QObject*)c);
     emit newClients();
 }

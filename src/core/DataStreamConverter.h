@@ -24,13 +24,13 @@
 #include "Messages.h"
 #include <QDataStream>
 
-QDataStream& operator<<(QDataStream &dataStream, const Identifier &id)
+inline QDataStream& operator<<(QDataStream &dataStream, const Identifier &id)
 {
     dataStream << int(id._id);
     return dataStream;
 };
 
-QDataStream& operator>>(QDataStream &dataStream, Identifier &id)
+inline QDataStream& operator>>(QDataStream &dataStream, Identifier &id)
 {
     int identifier;
     dataStream >> identifier;
@@ -38,61 +38,61 @@ QDataStream& operator>>(QDataStream &dataStream, Identifier &id)
     return dataStream;
 };
 
-QDataStream& operator<<(QDataStream &dataStream, const Login &login)
+inline QDataStream& operator<<(QDataStream &dataStream, const Login &login)
 {
     dataStream << login._name;
     return dataStream;
 };
 
-QDataStream& operator>>(QDataStream &dataStream, Login &login)
+inline QDataStream& operator>>(QDataStream &dataStream, Login &login)
 {
     dataStream >> login._name;
     return dataStream;
 };
 
-QDataStream& operator<<(QDataStream &dataStream, const AvailableLogins &logins)
+inline QDataStream& operator<<(QDataStream &dataStream, const AvailableLogins &logins)
 {
     dataStream << logins._logins;
     return dataStream;
 };
 
-QDataStream& operator>>(QDataStream &dataStream, AvailableLogins &logins)
+inline QDataStream& operator>>(QDataStream &dataStream, AvailableLogins &logins)
 {
     dataStream >> logins._logins;
     return dataStream;
 };
 
-QDataStream& operator<<(QDataStream &dataStream, const DisplayedActivities &act)
+inline QDataStream& operator<<(QDataStream &dataStream, const DisplayedActivities &act)
 {
     dataStream << act.activitiesToDisplay;
     return dataStream;
 };
 
-QDataStream& operator>>(QDataStream &dataStream, DisplayedActivities &act)
+inline QDataStream& operator>>(QDataStream &dataStream, DisplayedActivities &act)
 {
     dataStream >> act.activitiesToDisplay;
     return dataStream;
 };
 
-QDataStream& operator<<(QDataStream &dataStream, const ActivityRawData &act)
+inline QDataStream& operator<<(QDataStream &dataStream, const ActivityRawData &act)
 {
     dataStream << act.activityName << act.username << act.date << act.data;
     return dataStream;
 };
 
-QDataStream& operator>>(QDataStream &dataStream, ActivityRawData &act)
+inline QDataStream& operator>>(QDataStream &dataStream, ActivityRawData &act)
 {
     dataStream >> act.activityName >> act.username >> act.date >> act.data;
     return dataStream;
 };
 
-QDataStream& operator<<(QDataStream &dataStream, const ActivityConfiguration &act)
+inline QDataStream& operator<<(QDataStream &dataStream, const ActivityConfiguration &act)
 {
     dataStream << act.activityName << act.data;
     return dataStream;
 };
 
-QDataStream& operator>>(QDataStream &dataStream, ActivityConfiguration &act)
+inline QDataStream& operator>>(QDataStream &dataStream, ActivityConfiguration &act)
 {
     dataStream >> act.activityName >> act.data;
     return dataStream;

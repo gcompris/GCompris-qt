@@ -25,9 +25,16 @@
 #include <QDir>
 #include <QFileInfo>
 #include <QDebug>
+#include <QMap>
+#include <QDataStream>
+#include <QByteArray>
+#include <QTextCodec>
+
 #include "UserData.h"
 #include "Database.h"
 #include "GroupData.h"
+#include "Messages.h"
+#include "DataStreamConverter.h"
 
 
 #define CREATE_TABLE_USERS \
@@ -36,6 +43,11 @@
     "CREATE TABLE groups (group_name TEXT PRIMARY KEY NOT NULL, description TEXT); "
 #define CREATE_TABLE_USERGROUP \
     "CREATE TABLE group_users(user_name TEXT NOT NULL, group_name TEXT NOT NULL)"
+
+#define CREATE_TABLE_ACTIVITY_DATA \
+    "CREATE TABLE activity_data(user_name TEXT NOT NULL, activity_name TEXT NOT NULL, " \
+    "date TEXT NOT NULL,data TEXT NOT NULL,PRIMARY KEY(user_name,activity_name,date))"
+
 
 Database* Database::_instance = 0;
 
@@ -129,6 +141,63 @@ bool Database::addUserToGroup(const QString& group, const QString& user)
 
 }
 
+bool Database::addDataToDatabase(const ActivityRawData &rawData)
+{
+
+
+    bool dataAdded = false;
+    QByteArray data;
+    QDataStream out(&data, QIODevice::WriteOnly);
+    out << ACTIVITY_DATA << rawData.data;
+
+    QString activityData = QTextCodec::codecForMib(106)->toUnicode(data);
+
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+
+    // get the data from database and then prepend/append new data
+    query.prepare("SELECT * FROM activity_data where user_name=:userName and activity_name=:activityName and date=:date");
+    query.bindValue(":userName",rawData.username);
+    query.bindValue(":activityName",rawData.activityName);
+    query.bindValue(":date", rawData.date.toString("dd/MM/yyyy"));
+    query.exec();
+    if(query.next()) {
+        // update the data
+        QString oldData;
+        const int dataIndex = query.record().indexOf("data");
+        oldData = query.value(dataIndex).toString();
+        oldData.prepend(activityData);
+
+        query.prepare("UPDATE activity_data SET data = :oldData where user_name=:userName and activity_name=:activityName "
+                      "and date=:date");
+        query.bindValue(":oldData",oldData);
+        query.bindValue(":userName",rawData.username);
+        query.bindValue(":activityName",rawData.activityName);
+        query.bindValue(":date",rawData.date.toString("dd/MM/yyyy"));
+        if(!query.exec()) {
+            qDebug() << "could not update the data " << query.lastError();
+        }
+        else
+            dataAdded = true;
+    }
+    else {
+        //insert the data
+        query.prepare("INSERT INTO activity_data (user_name, activity_name, date, data) "
+                      "VALUES(:userName, :activityName, :date, :data)");
+
+        query.bindValue(":userName", rawData.username);
+        query.bindValue(":activityName", rawData.activityName);
+        query.bindValue(":date",rawData.date.toString("dd/MM/yyyy"));
+        query.bindValue(":data", activityData);
+        if(!query.exec())
+            qDebug() << "could not insert the data " << query.lastError();
+        else
+            dataAdded = true;
+    }
+
+    return dataAdded;
+}
+
 
 bool Database::addUser(const QString& name, const QString &avatar, const QStringList& groups)
 {
@@ -156,6 +225,42 @@ bool Database::addUser(const QString& name, const QString &avatar, const QString
         qDebug()<< query.lastError();
 
     return userAdded;
+}
+
+void  Database::retrieveActivityData(UserData* user)
+{
+
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+
+    query.prepare("SELECT * FROM activity_data WHERE user_name=:userName");
+    query.bindValue(":userName",user->getName());
+    query.exec();
+    const int dataIndex = query.record().indexOf("data");
+    const int dateIndex = query.record().indexOf("date");
+    const int userIndex = query.record().indexOf("user_name");
+    const int activityIndex = query.record().indexOf("activity_name");
+    while(query.next()) {
+
+        QString activityData = query.value(dataIndex).toString();
+        QByteArray data = activityData.toUtf8();
+        QDataStream in(&data, QIODevice::ReadOnly);
+
+        while(!in.atEnd()) {
+            ActivityRawData rawData;
+            Identifier id;
+            QVariantMap mapData;
+            in >> id;
+            in >> mapData;
+
+            rawData.activityName = query.value(activityIndex).toString();
+            rawData.username = query.value(userIndex).toString();
+            rawData.date = QDateTime::fromString(query.value(dateIndex).toString(), "dd/MM/yyyy");
+            rawData.data = mapData;
+            user->addData(rawData);
+        }
+    }
+
 }
 
 
@@ -205,6 +310,7 @@ void Database::retrieveAllExistingUsers(QList <UserData *> &allUsers)
         UserData *u = new UserData();
         u->setName(query.value(nameIndex).toString());
         u->setAvatar(query.value(avatarIndex).toString());
+        retrieveActivityData(u);
         allUsers.push_back(u);
     }
 }
@@ -231,6 +337,10 @@ void createDatabase(const QString &path)
         qDebug() << query.lastError();
 
 
+    if(query.exec(CREATE_TABLE_ACTIVITY_DATA))
+        qDebug() << "created table activity_data";
+    else
+        qDebug() << query.lastError();
 }
 
 void Database::init()
