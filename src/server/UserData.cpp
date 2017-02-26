@@ -22,9 +22,11 @@
 #include <QStringList>
 #include "Messages.h"
 #include "UserData.h"
+#include "GroupData.h"
 
 UserData::UserData() : m_name(""), m_avatar("")
 {
+
 }
 
 UserData::UserData(const UserData &user)
@@ -42,13 +44,21 @@ void UserData::setName(const QString &name)
     m_name = name;
     emit newName();
 }
+QList<QObject*> UserData::getGroups()
+{
+    return m_groups;
+}
 
 void UserData::setAvatar(const QString &avatar)
 {
     m_avatar = avatar;
     emit newAvatar();
 }
-
+void UserData::addGroup(GroupData *group)
+{
+    if(!m_groups.contains((QObject*)group))
+        m_groups << (QObject*)group;
+}
 const QString &UserData::getName() const
 {
     return m_name;

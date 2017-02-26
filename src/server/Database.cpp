@@ -29,8 +29,13 @@
 #include "Database.h"
 #include "GroupData.h"
 
+
+#define CREATE_TABLE_USERS \
+    "CREATE TABLE users (user_name TEXT PRIMARY KEY NOT NULL, avatar TEXT); "
 #define CREATE_TABLE_GROUPS \
     "CREATE TABLE groups (group_name TEXT PRIMARY KEY NOT NULL, description TEXT); "
+#define CREATE_TABLE_USERGROUP \
+    "CREATE TABLE group_users(user_name TEXT NOT NULL, group_name TEXT NOT NULL)"
 
 Database* Database::_instance = 0;
 
@@ -60,7 +65,7 @@ bool Database::addGroup(const QString &groupName, const QString& description,
     query.prepare("SELECT group_name FROM groups WHERE group_name=:groupName");
     query.bindValue(":groupName", groupName);
     query.exec();
-    if(query.next()){
+    if(query.next()) {
         qDebug()<< "group "<< groupName << " already exists";
         return false;
     }
@@ -69,15 +74,18 @@ bool Database::addGroup(const QString &groupName, const QString& description,
     query.bindValue(":groupName", groupName);
     query.bindValue(":description",description);
     groupAdded = query.exec();
-    if(groupAdded){
+    if(groupAdded) {
         //add users to the group
+        for(const auto &user: users) {
+            addUserToGroup(groupName, user);
+        }
     }
-    else{
-
+    else
         qDebug()<<"group could not be added " <<  query.lastError();
-    }
+
     return groupAdded;
 }
+
 bool Database::deleteGroup(const QString &groupName)
 {
     bool groupDeleted = false;
@@ -85,16 +93,71 @@ bool Database::deleteGroup(const QString &groupName)
     QSqlQuery query(dbConnection);
     query.prepare("DELETE FROM groups WHERE group_name=:gname");
     query.bindValue(":gname",groupName);
-    if(query.exec()){
-        groupDeleted = true;   
-        // query.prepare("DELETE FROM group_users WHERE group_name=:gname");
-        // query.bindValue(":gname",groupName);
-        // if(query.exec())
-        //     groupDeleted = true;
+    if(query.exec()) {
+        query.prepare("DELETE FROM group_users WHERE group_name=:gname");
+        query.bindValue(":gname",groupName);
+        if(query.exec())
+            groupDeleted = true;
     }
     return groupDeleted;
 
 }
+
+bool Database::addUserToGroup(const QString& group, const QString& user)
+{
+    // insert in table group_users
+    // add (user, group) to db only if they don't exist
+    bool userAdded = false;
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+    query.prepare("SELECT * FROM group_users WHERE user_name=:user and group_name=:group");
+    query.bindValue(":user",user);
+    query.bindValue(":group",group);
+    query.exec();
+    if(query.next()) {
+        qDebug() << "user " << user << "already exists in group " << group;
+        return false;
+    }
+    query.prepare("INSERT INTO group_users (user_name, group_name) values(:user,:group)");
+    query.bindValue(":user",user);
+    query.bindValue(":group",group);
+    userAdded = query.exec();
+    if(!userAdded) {
+        qDebug() << "user could not be added "<< query.lastError();
+    }
+    return userAdded;
+
+}
+
+
+bool Database::addUser(const QString& name, const QString &avatar, const QStringList& groups)
+{
+    // check whether user already exists before adding to database
+    bool userAdded = false;
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+    query.prepare("SELECT user_name FROM users WHERE user_name=:name");
+    query.bindValue(":name", name);
+    query.exec();
+    if(query.next()) {
+        qDebug() << "user " << name << "already exists";
+        return false;
+    }
+    query.prepare("INSERT INTO users (user_name, avatar) VALUES(:name,:avatar)");
+    query.bindValue(":name", name);
+    query.bindValue(":avatar", avatar);
+    userAdded = query.exec();
+    if(userAdded) {
+        for (const auto &group:groups) {
+            addUserToGroup(group, name);
+        }
+    }
+    else
+        qDebug()<< query.lastError();
+
+    return userAdded;
+}
+
 
 void Database::retrieveAllExistingGroups(QList<GroupData *> &allGroups)
 {
@@ -114,16 +177,29 @@ void Database::retrieveAllExistingGroups(QList<GroupData *> &allGroups)
     }
 }
 
+QMultiMap<QString,QString> Database::retrieveGroupUsers()
+{
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+    query.prepare("SELECT * FROM group_users");
+    query.exec();
+    int userIndex = query.record().indexOf("user_name");
+    int groupIndex = query.record().indexOf("group_name");
+    QMultiMap<QString,QString> groupUsers;
+    while(query.next()) {
+        groupUsers.insert(query.value(groupIndex).toString(),query.value(userIndex).toString());
+    }
+    return groupUsers;
+
+}
 
 void Database::retrieveAllExistingUsers(QList <UserData *> &allUsers)
 {
     QSqlDatabase dbConnection = QSqlDatabase::database();
-
-    // Don't add twice the same login
     QSqlQuery query(dbConnection);
     query.prepare("SELECT * FROM users");
     query.exec();
-    const int nameIndex = query.record().indexOf("login");
+    const int nameIndex = query.record().indexOf("user_name");
     const int avatarIndex = query.record().indexOf("avatar");
     while(query.next()) {
         UserData *u = new UserData();
@@ -136,14 +212,25 @@ void Database::retrieveAllExistingUsers(QList <UserData *> &allUsers)
 void createDatabase(const QString &path)
 {
     QSqlDatabase dbConnection = QSqlDatabase::database();
-
     QSqlQuery query(dbConnection);
+
+    if(query.exec(CREATE_TABLE_USERS))
+        qDebug()<< "created table users";
+    else
+        qDebug() << query.lastError();
+
+
     if(query.exec(CREATE_TABLE_GROUPS))
         qDebug()<< "created table groups";
-    else{
-        qDebug() <<"failed";
+    else
         qDebug() << query.lastError();
-    }
+
+    if(query.exec(CREATE_TABLE_USERGROUP))
+        qDebug()<< "created table group_users";
+    else
+        qDebug() << query.lastError();
+
+
 }
 
 void Database::init()

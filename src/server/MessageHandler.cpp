@@ -23,6 +23,8 @@
 #include "Server.h"
 #include "Database.h"
 #include "MessageHandler.h"
+#include <QMultiMap>
+#include <QMapIterator>
 
 MessageHandler* MessageHandler::_instance = 0;
 
@@ -35,13 +37,35 @@ MessageHandler::MessageHandler()
     connect(&server, &Server::clientDisconnected, this, &MessageHandler::onClientDisconnected);
     
     // retrieve all the existing users and groups
+
+    QList<UserData*> users;
+    Database::getInstance()->retrieveAllExistingUsers(users);
+    for(auto it=users.begin(); it!= users.end(); it++) {
+        m_users.push_back((QObject*)(*it));
+    }
+
     QList<GroupData* > groups;
     Database::getInstance()->retrieveAllExistingGroups(groups);
-    for(auto it=groups.begin(); it!= groups.end(); it++){
+    for(auto it=groups.begin(); it!= groups.end(); it++) {
         m_groups.push_back((QObject*)(*it));
     }
-    emit newUsers();
 
+    // add users to their respective groups
+    QMultiMap<QString,QString> groupUsers = Database::getInstance()->retrieveGroupUsers();
+    QMapIterator<QString,QString> itr(groupUsers);
+    while(itr.hasNext()) {
+        itr.next();
+        GroupData* grp = getGroup(itr.key());
+        QList<QString> values = groupUsers.values(itr.key());
+        for(const auto &user: values) {
+            UserData* usr = getUser(user);
+            if(grp && usr) {
+
+                grp->addUser(usr);
+                usr->addGroup(grp);
+            }
+        }
+    }
 }
 
 MessageHandler* MessageHandler::getInstance()
@@ -76,11 +100,18 @@ GroupData *MessageHandler::createGroup(const QString &newGroup,const QString &de
 {
     //1. add group to database
     //2. make a new a group and add it to m_groups;
-    if(Database::getInstance()->addGroup(newGroup, description,users)){
+    if(Database::getInstance()->addGroup(newGroup, description,users)) {
         GroupData *c = new GroupData();
         c->setName(newGroup);
         c->setDescription(description);
         m_groups.push_back((QObject*)c);
+        for(const auto &user: users) {
+                UserData* usr = getUser(user);
+                if(usr) {
+                    c->addUser(usr);
+                    usr->addGroup(c);
+                }
+        }
         qDebug() << "size of the list after adding the new group is " << m_groups.length();
         emit newGroups();
         return c;
@@ -112,14 +143,14 @@ UserData *MessageHandler::createUser(const QString &newUser, const QString &avat
 {
 
 //    Add the user in the database
-/*    if(Database::getInstance()->addUser(newUser, avatar, groups)){
+    if(Database::getInstance()->addUser(newUser, avatar, groups)) {
         qDebug() << "createUser '" << newUser << "' in groups " << groups;
         UserData *u = new UserData();
         u->setName(newUser);
         u->setAvatar(avatar);
         for(const QString &aGroup: groups) {
             GroupData *group = getGroup(aGroup);
-            if(group){
+            if(group) {
                 group->addUser(u);
                 u->addGroup(group);
             }
@@ -131,8 +162,32 @@ UserData *MessageHandler::createUser(const QString &newUser, const QString &avat
     else {
         qDebug() << "Error while creating user " << newUser;
     }
-    return nullptr;*/
+    return nullptr;
 }
+
+void MessageHandler::addUserToGroup(const QStringList &groups, const QStringList &users)
+{
+    // 1. add user to group -In database;
+    // 2. associate users with groups;
+    for(const auto &user: users) {
+
+        UserData* usr = getUser(user);
+        for (const auto &group: groups) {
+
+            if(Database::getInstance()->addUserToGroup(group,user)) {
+
+                GroupData* grp = getGroup(group);
+
+                if(grp && usr) {
+                   grp->addUser(usr);
+                   usr->addGroup(grp);
+                }
+            }
+        }
+    }
+
+}
+
 
 UserData *MessageHandler::updateUser(const QString &oldUser, const QString &newUser, const QString &avatar, const QStringList &groups)
 {

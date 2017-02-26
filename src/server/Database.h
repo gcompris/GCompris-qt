@@ -23,6 +23,8 @@
 
 #include <QQmlEngine>
 #include <QJSEngine>
+#include <QMultiMap>
+#include <QByteArray>
 
 class UserData;
 class GroupData;
@@ -51,6 +53,11 @@ public:
     bool deleteGroup(const QString& groupName);
     void retrieveAllExistingUsers(QList <UserData *> &allUsers);
     void retrieveAllExistingGroups(QList<GroupData* > &allGroups);
+
+    bool addUser(const QString &name, const QString &avatar = "", const QStringList& groups=QStringList());
+    bool addUserToGroup(const QString& group, const QString& user);
+
+    QMultiMap<QString,QString> retrieveGroupUsers();
 
 };
 

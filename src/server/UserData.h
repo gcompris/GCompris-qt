@@ -24,6 +24,8 @@
 #include <QObject>
 #include <QStringList>
 #include "ActivityData.h"
+class GroupData;
+struct ActivityRawData;
 
 /**
  * @class UserData
@@ -48,13 +50,15 @@ public:
     void setName(const QString &name);
     void setAvatar(const QString &avatar);
 
-    const QString &getName() const;
-
+    void addGroup(GroupData* group);
     void addData(const ActivityRawData &rawData);
+    QList<QObject*> getGroups();
+    const QString &getName() const;
 
     Q_INVOKABLE const QList<QObject*> getActivityData(const QString &activity);
 
 private:
+    QList<QObject*> m_groups;
     QString m_avatar;
     QString m_name;
 

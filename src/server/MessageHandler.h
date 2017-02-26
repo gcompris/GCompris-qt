@@ -73,10 +73,18 @@ public:
     Q_INVOKABLE UserData *updateUser(const QString &oldUser, const QString &newUser, const QString &avatar = QString(), const QStringList &groups = QStringList());
     Q_INVOKABLE void deleteUser(const QString &userName);
 
+    Q_INVOKABLE void addUserToGroup(const QStringList& groups, const QStringList& users);
+
     UserData *getUser(const QString &userName);
     GroupData *getGroup(const QString &groupName);
 
+    Q_INVOKABLE QList<QObject*> returnUserGroups(const QString& user) {
 
+            UserData* usr = getUser(user);
+            if(usr) {
+                return usr->getGroups();
+            }
+    }
 
     Q_INVOKABLE QList<QObject*> returnGroupUsers(const QString& group){
 
