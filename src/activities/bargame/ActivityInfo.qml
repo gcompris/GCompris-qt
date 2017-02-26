@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2017 UTKARSH TIWARI <iamutkarshtiwari@kde.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,13 +21,15 @@ ActivityInfo {
   name: "bargame/Bargame.qml"
   difficulty: 2
   icon: "bargame/bargame.svg"
-  author: "Yves Combe"
+  author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   demo: true
-  title: qsTr("bar game")
-  description: qsTr("Don't use the last ball")
-  goal: qsTr("Logic-training activity")
-  prerequisite: qsTr("Brain")
-  manual: qsTr("Place balls in the holes. You win if the computer has to place the last ball. If you want Tux to begin, just click on him.")
+  title: qsTr("Bargame (against Tux)")
+  description: qsTr("Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole.")
+  // intro: "Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole."
+  goal: qsTr("Don't use the last ball")
+  prerequisite: qsTr("Ability to count")
+  manual: qsTr("Place balls in the holes. You win if the computer has to place the last ball. If you want Tux to begin, just click on him")
   credit: ""
-  section: "/strategy"
+  section: "strategy"
+  createdInVersion: 8000
 }
