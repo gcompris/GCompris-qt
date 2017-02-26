@@ -27,21 +27,18 @@ var levelsProperties = [
     {
         "minNumberOfBalls": 1,
         "maxNumberOfBalls": 4,
-        "sampleBallsNumber": 4,
         "elementSizeFactor": 0,
         "boardSize": 15
     },
     {
         "minNumberOfBalls": 2,
         "maxNumberOfBalls": 6,
-        "sampleBallsNumber": 6,
         "elementSizeFactor": 4,
         "boardSize": 19
     },
     {
         "minNumberOfBalls": 3,
         "maxNumberOfBalls": 6,
-        "sampleBallsNumber": 6,
         "elementSizeFactor": 7,
         "boardSize": 29
     }
@@ -74,7 +71,6 @@ function initLevel() {
         initiatePlayer2();
         items.isPlayer1Turn = false;
     }
-
 
     items.okArea.enabled = true;
     calculateWinPlaces();
@@ -123,7 +119,7 @@ function calculateWinPlaces() {
         winnersList.push((boardSize - 1 - x) % period);
     }
 
-    for (var x = 0; x < boardSize; x++ ) {
+    for (var x = 0; x < boardSize; x++) {
         if (winnersList.indexOf((x + 1) % period) >= 0) {
             winners.push(x);
         }
@@ -149,18 +145,18 @@ function machinePlay() {
         }
     }
 
-    function randomNumber(minimum, maximum){
-        return Math.round( Math.random() * (maximum - minimum) + minimum);
+    function randomNumber(minimum, maximum) {
+        return Math.round(Math.random() * (maximum - minimum) + minimum);
     }
 
     var playable = [];
 
     var min = levelsProperties[items.mode - 1].minNumberOfBalls;
-    var max = levelsProperties[items.mode - 1].maxNumberOfBalls + 1;
+    var max = levelsProperties[items.mode - 1].maxNumberOfBalls;
     for (var x = min; x < max; x++) {
         if (accessible(x)) {
-                playable.push(x);
-            }
+            playable.push(x);
+        }
     }
     var value;
     if (playable.length != 0) {
@@ -179,60 +175,65 @@ function play(player, value) {
         if (moveCount <= (boardSize - 1)) {
             items.answerBallsPlacement.children[moveCount].visible = true;
             if (player == 1) {
-                items.answerBallsPlacement.children[moveCount].source = url + "green_ball.svg";
+                items.answerBallsPlacement.children[moveCount].source = url + "ball_1.svg";
             } else {
-                items.answerBallsPlacement.children[moveCount].source = url + "blue_ball.svg";
+                items.answerBallsPlacement.children[moveCount].source = url + "ball_2.svg";
             }
         }
-        // one of the players has win
+        // one of the players has won
         if (moveCount == (boardSize - 1)) {
             items.okArea.enabled = false;
             if (gameMode == 2) {
                 items.isPlayer1Beginning = !items.isPlayer1Beginning;
             }
             if (player == 2) {
-                items.player1.state = "win"
+                items.player1score.win();
+                items.player2score.endTurn();
                 items.bonus.good("flower");
-                items.player1Score++;
             } else {
-                items.player2.state = "win"
-                items.bonus.bad("flower");
-                items.player2Score++;
+                items.player1score.endTurn();
+                items.player2score.win();
+                if (gameMode == 1) {
+                    items.bonus.bad("flower");
+                }
+                else {
+                    items.bonus.good("flower");
+                }
             }
             return;
         }
     }
+
+    items.isPlayer1Turn = !items.isPlayer1Turn;
+
     if (player == 1 && gameMode == 1) {
-        items.player2turn.start();
+        items.player1score.endTurn();
+        items.player2score.beginTurn();
         items.okArea.enabled = false;
         items.trigTuxMove.start();
     } else if (player == 2 && gameMode == 1) {
+        items.player2score.endTurn();
+        items.player1score.beginTurn();
         items.okArea.enabled = true;
-        items.player1turn.start();
     } else if (gameMode == 2) {
-        items.isPlayer1Turn = !items.isPlayer1Turn;
         if (player == 1) {
-            items.player2turn.start();
+            items.player1score.endTurn();
+            items.player2score.beginTurn();
         } else {
-            items.player1turn.start();
+            items.player2score.endTurn();
+            items.player1score.beginTurn();
         }
     }
 }
 
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer1() {
-    items.changeScalePlayer1.scale = 1.4
-    items.changeScalePlayer2.scale = 1.0
-    items.player1.state = "first"
-    items.player2.state = "second"
-    items.rotateKonqi.start()
+    items.player2score.endTurn();
+    items.player1score.beginTurn();
 }
 
 //Initial values at the start of game when its player 2 turn
 function initiatePlayer2() {
-    items.changeScalePlayer1.scale = 1.0
-    items.changeScalePlayer2.scale = 1.4
-    items.player1.state = "second"
-    items.player2.state = "first"
-    items.rotateTux.start()
+    items.player1score.endTurn();
+    items.player2score.beginTurn();
 }

@@ -57,24 +57,12 @@ ActivityBase {
             property alias bonus: bonus
             property alias okArea: okArea
 
-            property alias player1: player1
-            property alias player1turn: player1turn
-            property alias player1shrink: player1shrink
-            property alias player1image: player1image
-            property alias changeScalePlayer1: changeScalePlayer1
-            property alias rotateKonqi: rotateKonqi
-
-            property alias player2: player2
-            property alias player2turn: player2turn
-            property alias player2shrink: player2shrink
-            property alias player2image: player2image
-            property alias changeScalePlayer2: changeScalePlayer2
-            property alias rotateTux: rotateTux
             property alias trigTuxMove: trigTuxMove
 
+            property alias player1score: player1score
+            property alias player2score: player2score
+
             property int mode: 1
-            property int player1Score: 0
-            property int player2Score: 0
             property bool isPlayer1Beginning: true
             property bool isPlayer1Turn: true
         }
@@ -110,8 +98,6 @@ ActivityBase {
                 enabled: gameMode == 1 && !answerBallsPlacement.children[0].visible
                 anchors.fill: parent
                 onClicked: {
-                    tuxArea.hoverEnabled = false;
-                    tuxArea.enabled = false;
                     Activity.machinePlay();
                 }
             }
@@ -131,10 +117,11 @@ ActivityBase {
             x: 0
             anchors.top: tux.bottom
 
-            transform: Rotation { origin.x: 0;
+            transform: Rotation {
+                origin.x: 0;
                 origin.y: 0;
-                angle: (rootWindow.width > rootWindow.height) ? 0 :90
-                onAngleChanged:{
+                angle: (rootWindow.width > rootWindow.height) ? 0 : 90
+                onAngleChanged: {
                     if (angle === 90) {
                         boxModel.anchors.top = undefined;
                         boxModel.y = 0;
@@ -176,7 +163,7 @@ ActivityBase {
                 Repeater {
                     model: answerBallsPlacement.columns
                     Image {
-                        source: Activity.url + "green_ball.svg"
+                        source: Activity.url + "ball_1.svg"
                         height: width
                         width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         visible: false
@@ -218,45 +205,9 @@ ActivityBase {
                     }
                 }
             }
-
-            // Upper blue balls sample
-            Grid {
-                id: blueBalls
-                columns: Activity.levelsProperties[items.mode - 1].sampleBallsNumber
-                rows: 1
-                x: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) - columns * (rootWindow.height / 15)
-                y: boxes.y - (ApplicationSettings.baseFontSize + 30) * ApplicationInfo.fontRatio
-                Repeater {
-                    model: blueBalls.columns
-                    Image {
-                        id: blueBall
-                        source: Activity.url + "blue_ball.svg"
-                        height: width
-                        width: rootWindow.height / 15
-                    }
-                }
-            }
-
-            // Lower green balls sample
-            Grid {
-                id: greenBalls
-                x: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) - columns * (rootWindow.height / 15)
-                y: boxes.y + rootWindow.width / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor) + 2
-                rows: 1
-                columns: Activity.levelsProperties[items.mode - 1].sampleBallsNumber
-                Repeater {
-                    model: greenBalls.columns
-                    Image {
-                        id: greenBall
-                        source: Activity.url + "green_ball.svg"
-                        height: width
-                        width: rootWindow.height / 15
-                    }
-                }
-            }
         }
 
-        // OK BUTTON
+        // ok button
         Image {
             id: playLabel
             width: rootWindow.height / 13
@@ -271,7 +222,7 @@ ActivityBase {
             MouseArea {
                 id: okArea
                 anchors.fill: parent
-                hoverEnabled: true
+                hoverEnabled: enabled
                 enabled: true
                 onClicked: {
                     var value = items.numberOfBalls
@@ -331,7 +282,8 @@ ActivityBase {
             // Ball Icon
             Image {
                 id: ballIcon
-                source: Activity.url + "green_ball.svg"
+                source: items.isPlayer1Turn ? Activity.url + "ball_1.svg" :
+                                              Activity.url + "ball_2.svg"
                 width: rootWindow.height / 16
                 height: rootWindow.height / 10
                 anchors {
@@ -353,182 +305,10 @@ ActivityBase {
             }
         }
 
-        PropertyAnimation {
-            id: player1turn
-            target: changeScalePlayer1
-            properties: "scale"
-            from: 1.0
-            to: 1.4
-            duration: 500
-            onStarted:{
-                player1.state = "first"
-                player2.state = "second"
-                rotateTux.stop()
-                player2image.rotation = 0
-                rotateKonqi.start()
-                player2shrink.start()
-            }
-        }
-
-        PropertyAnimation {
-            id: player1shrink
-            target: changeScalePlayer1
-            properties: "scale"
-            from: 1.4
-            to: 1.0
-            duration: 500
-        }
-
-        PropertyAnimation {
-            id: player2turn
-            target: changeScalePlayer2
-            properties: "scale"
-            from: 1.0
-            to: 1.4
-            duration: 500
-            onStarted:{
-                player1.state = "second"
-                player2.state = "first"
-                rotateKonqi.stop()
-                player1image.rotation = 0
-                rotateTux.start()
-                player1shrink.start()
-            }
-        }
-
-        PropertyAnimation {
-            id: player2shrink
-            target: changeScalePlayer2
-            properties: "scale"
-            from: 1.4
-            to: 1.0
-            duration: 500
-        }
-
-        SequentialAnimation {
-            id: rotateKonqi
-            loops: Animation.Infinite
-            NumberAnimation {
-                target: player1image
-                property: "rotation"
-                from: -30; to: 30
-                duration: 750
-                easing.type: Easing.InOutQuad
-            }
-            NumberAnimation {
-                target: player1image
-                property: "rotation"
-                from: 30; to: -30
-                duration: 750
-                easing.type: Easing.InOutQuad
-            }
-        }
-
-        SequentialAnimation {
-            id: rotateTux
-            loops: Animation.Infinite
-            NumberAnimation {
-                target: player2image
-                property: "rotation"
-                from: -30; to: 30
-                duration: 750
-                easing.type: Easing.InOutQuad
-            }
-            NumberAnimation {
-                target: player2image
-                property: "rotation"
-                from: 30; to: -30
-                duration: 750
-                easing.type: Easing.InOutQuad
-            }
-        }
-
-        Rectangle {
-            id: player2
-            height: Math.min(rootWindow.height/7,Math.min(rootWindow.width/7,bar.height * 1.05))
-            width: height*11/8
-            anchors {
-                top: rootWindow.top
-                topMargin: 5
-                right: rootWindow.right
-                rightMargin: 5
-            }
-            radius: 5
-            state: "second"
-
-            Image {
-                id: player2background
-                source: Activity.url + "score_2.svg"
-                sourceSize.height: parent.height*0.93
-                anchors.centerIn: parent
-
-                Image {
-                    id: player2image
-                    source: Activity.url + "TuxCircle.svg"
-                    sourceSize.height: parent.height*0.8
-                    x: parent.width*0.06
-                    anchors.verticalCenter: parent.verticalCenter
-                }
-
-                GCText {
-                    id: player2_score
-                    anchors.verticalCenter: parent.verticalCenter
-                    x: parent.width*0.65
-                    color: "#2a2a2a"
-                    fontSize: largeSize
-                    text: items.player2Score
-                }
-            }
-
-            states: [
-                State {
-                    name: "first"
-                    PropertyChanges {
-                        target: player2image
-                        source: Activity.url + "TuxCircle.svg"
-                    }
-                    PropertyChanges {
-                        target: player2
-                        color: "#49bbf0"
-                    }
-                },
-                State {
-                    name: "second"
-                    PropertyChanges {
-                        target: player2
-                        color: "transparent"
-                    }
-                    PropertyChanges {
-                        target: player2image
-                        source: Activity.url + "TuxCircle.svg"
-                    }
-                },
-                State {
-                    name: "win"
-                    PropertyChanges {
-                        target: player2image
-                        source: Activity.url + "win.svg"
-                    }
-                    PropertyChanges {
-                        target: player2
-                        color: "#f7ec5d"
-                    }
-                }
-            ]
-
-            transform: Scale {
-                id: changeScalePlayer2
-                property real scale: 1
-                origin.x: player2.width
-                origin.y: 0
-                xScale: scale
-                yScale: scale
-            }
-        }
-
-        Rectangle {
-            id: player1
-            height: Math.min(rootWindow.height/7,Math.min(rootWindow.width/7,bar.height * 1.05))
+        ScoreItem {
+            id: player1score
+            player: 1
+            height: Math.min(rootWindow.height/7, Math.min(rootWindow.width/7, bar.height * 1.05))
             width: height*11/8
             anchors {
                 top: rootWindow.top
@@ -536,76 +316,24 @@ ActivityBase {
                 left: rootWindow.left
                 leftMargin: 5
             }
-            radius: 5
-            state: "second"
+            playerImageSource: Activity.url + "player_1.svg"
+            backgroundImageSource: Activity.url + "score_1.svg"
+        }
 
-            Image {
-                id: player1background
-                source: Activity.url + "score_1.svg"
-                sourceSize.height: parent.height*0.93
-                anchors.centerIn: parent
-                anchors.horizontalCenterOffset: 0.5
-
-                Image {
-                    id: player1image
-                    source: Activity.url + "KonqiCross.svg"
-                    sourceSize.height: parent.height*0.8
-                    x: parent.width*0.06
-                    anchors.verticalCenter: parent.verticalCenter
-                }
-
-                GCText {
-                    id: player1_score
-                    anchors.verticalCenter: parent.verticalCenter
-                    color: "#2a2a2a"
-                    x: parent.width*0.65
-                    fontSize: largeSize
-                    text: items.player1Score
-                }
+        ScoreItem {
+            id: player2score
+            player: 2
+            height: Math.min(rootWindow.height/7, Math.min(rootWindow.width/7, bar.height * 1.05))
+            width: height*11/8
+            anchors {
+                top: rootWindow.top
+                topMargin: 5
+                right: rootWindow.right
+                rightMargin: 5
             }
-
-            states: [
-                State {
-                    name: "first"
-                    PropertyChanges {
-                        target: player1image
-                        source: Activity.url + "KonqiCross.svg"
-                    }
-                    PropertyChanges {
-                        target: player1
-                        color: "#f07c49"
-                    }
-                },
-                State {
-                    name: "second"
-                    PropertyChanges {
-                        target: player1
-                        color: "transparent"
-                    }
-                    PropertyChanges {
-                        target: player1image
-                        source: Activity.url + "KonqiCross.svg"
-                    }
-                },
-                State {
-                    name: "win"
-                    PropertyChanges {
-                        target: player1image
-                        source: Activity.url + "win.svg"
-                    }
-                    PropertyChanges {
-                        target: player1
-                        color: "#f7ec5d"
-                    }
-                }
-            ]
-
-            transform: Scale {
-                id: changeScalePlayer1
-                property real scale: 1
-                xScale: scale
-                yScale: scale
-            }
+            playerImageSource: Activity.url + "player_2.svg"
+            backgroundImageSource: Activity.url + "score_2.svg"
+            playerScaleOriginX: player2score.width
         }
 
         DialogHelp {

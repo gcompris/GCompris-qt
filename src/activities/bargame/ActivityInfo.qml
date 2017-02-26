@@ -19,7 +19,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "bargame/Bargame.qml"
-  difficulty: 2
+  difficulty: 1
   icon: "bargame/bargame.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   demo: true
