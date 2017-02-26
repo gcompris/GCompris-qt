@@ -22,7 +22,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 5
+var numberOfLevel = 6
 var items
 
 var url = "qrc:/gcompris/src/activities/tic_tac_toe/resource/"
@@ -37,16 +37,12 @@ var vy      //y co-ordinate needed for creating first image when playSecond is e
 var stopper     //For stopping game when doing reset
 
 function start(items_, twoPlayer_) {
-    
     items = items_
     currentLevel = 1
     currentPlayer = 1
-    items.player1_score = 0
-    items.player2_score = 0
     twoPlayer = twoPlayer_
-    numberOfLevel = 6
     items.playSecond = 0
-    
+
     initLevel()
 }
 
@@ -54,7 +50,6 @@ function stop() {
 }
 
 function initLevel() {
-    
     items.bar.level = currentLevel
     items.counter = 0
     items.gameDone = false
@@ -69,13 +64,13 @@ function initLevel() {
         initiatePlayer2()
     else 
         initiatePlayer1()
-    stopper = 0
+    stopper = false
     if (items.playSecond)
         changePlayToSecond()
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 1
     }
     reset();
@@ -89,13 +84,10 @@ function previousLevel() {
 }
 
 function reset() {
-    
-    stopper = 1
+    stopper = true
     hx = items.repeater.itemAt(1).x     
     vy = items.repeater.itemAt(3).y
     stopAnimations()
-    items.player1image.rotation = 0
-    items.player2image.rotation = 0
     items.pieces.clear() // Clear the board
     if (items.playSecond)
         items.playSecond = 0
@@ -105,50 +97,41 @@ function reset() {
 }
 
 function stopAnimations() {
-    
     items.magnify.stop()
-    items.player1turn.stop()
-    items.player2turn.stop()
-    items.player1shrink.stop()
-    items.player2shrink.stop()
-    items.rotateKonqi.stop()
-    items.rotateTux.stop()
+    items.player1score.endTurn();
+    items.player2score.endTurn();
 }
 
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer1() {
-    
-    items.changeScalePlayer1.scale = 1.4
-    items.changeScalePlayer2.scale = 1.0
-    items.player1.state = "first"
-    items.player2.state = "second"
-    items.rotateKonqi.start()
+    items.player2score.endTurn();
+    items.player1score.beginTurn();
 }
 
-//Initial values at the start of game when its player 1 turn
+//Initial values at the start of game when its player 2 turn
 function initiatePlayer2() {
-    
-    items.changeScalePlayer1.scale = 1.0
-    items.changeScalePlayer2.scale = 1.4
-    items.player1.state = "second"
-    items.player2.state = "first"
-    items.rotateTux.start()
+    items.player1score.endTurn();
+    items.player2score.beginTurn();
 }
 
 //Change scale of score boxes according to turns
 function changeScale() {
-    
-   if (items.playSecond) {
-        if (items.counter%2 == 0)
-            items.player2turn.start()
+    if (items.playSecond) {
+        if (items.counter%2 == 0) {
+            initiatePlayer2()
+            shouldComputerPlay()
+        }
         else
-            items.player1turn.start()
+            initiatePlayer1()
     }
     else {
-        if (items.counter%2 == 0)
-            items.player1turn.start()
-        else
-            items.player2turn.start()
+        if (items.counter%2 == 0) {
+            initiatePlayer1()
+        }
+        else {
+            initiatePlayer2()
+            shouldComputerPlay()
+        }
     }
 }
 
@@ -165,8 +148,8 @@ function changePlayToSecond() {
         var x = parseInt(rand%3) * hx
         items.repeater.itemAt(rand).state = "DONE"
         currentPiece = rand
-        items.createPiece.x=x
-        items.createPiece.y=y
+        items.createPiece.x = x
+        items.createPiece.y = y
         items.demagnify.start()
         items.createPiece.opacity = 1
         items.magnify.start()
@@ -181,7 +164,6 @@ function changePlayToFirst() {
 
 //Get row of the corresponding square box (square boxes are defined in repeater)
 function getrowno(parentY) {
-    
     for(var i = 0; i < items.rows - 1; i++) {
         if(parentY == items.repeater.itemAt(i*3).y) {
             return i
@@ -192,7 +174,6 @@ function getrowno(parentY) {
 
 //Get column of the corresponding square box (square boxes are defined in repeater)
 function getcolno(parentX) {
-    
     for(var i = 0; i < items.columns - 1; i++) {
         if(parentX == items.repeater.itemAt(i).x) {
             return i
@@ -203,7 +184,6 @@ function getcolno(parentX) {
 
 //Create the piece (cross or circle) at given position
 function handleCreate(parent) {
-    
     parent.state = "DONE"
     var rowno = getrowno(parent.y)
     var colno = getcolno(parent.x)
@@ -238,7 +218,6 @@ function getPieceState(col, row) {
  * setmove() returns the position where computer has to play its turn
 */
 function setmove() {
-
     //Assigning States -> Which state "1" or "2" is used for identifying player and computer  
     var playerState = items.playSecond ? "2" : "1"
     var computerState = items.playSecond ? "1" : "2"
@@ -248,19 +227,19 @@ function setmove() {
         if (value != -1){
             return value}
     }
-    
+
     if (currentLevel > 2) {
         var value = evaluateBoard(playerState)
         if (value != -1){
             return value}
     }
-    
+
     if (currentLevel > 4) {
         var value = applyLogic(playerState)
         if (value != -1)
             return value
     }
-    
+
     var found = false
     while (!found) {
         var randno = Math.floor((Math.random() * 9));
@@ -271,8 +250,7 @@ function setmove() {
 }
 
 //Returns the position after analyzing such that no double trick is possible
-function applyLogic( player ) {
-    
+function applyLogic(player) {
     if (items.pieces.get(4).stateTemp == "invisible")
         return 4
     if (!items.playSecond) {    
@@ -321,11 +299,10 @@ function applyLogic( player ) {
  * Returns -1 if no immediate empty position is found
 */
 function giveNearest() {
-    
     var currentRow = parseInt(currentPiece / items.columns)
     var currentCol = parseInt(currentPiece % items.columns)
     var temp = []
-    
+
     if ( currentRow + 1 < 3 ) {
         if(getPieceState(currentCol, currentRow + 1) == "invisible")
             temp.push((currentRow + 1) * items.columns + currentCol)
@@ -346,7 +323,7 @@ function giveNearest() {
         var randno = Math.floor((Math.random() * temp.length));
         return temp[randno]
     }
-    
+
     return -1
 }
 
@@ -360,7 +337,6 @@ function doMove() {
  * such a place, then return that place, else return -1
 */
 function evaluateBoard(player) {
-    
     var countp, counti, invisibleX, invisibleY
     //Horizontal
     for(var i = 0; i < 3; i++) {
@@ -435,9 +411,8 @@ function evaluateBoard(player) {
 
 //Checks the condition if game is won or not
 function checkGameWon(currentPieceRow, currentPieceColumn) {
-
     currentPlayer = getPieceState(currentPieceColumn, currentPieceRow)
-    
+
     // Horizontal
     var sameColor = 0
     for(var col = 0; col < items.columns; col++) {
@@ -503,10 +478,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 //Checks if its Computer's turn or not, if its Computer's turn, then call doMove()
 function shouldComputerPlay() {
     if(!twoPlayer) {
-        if(items.counter % 2 && items.playSecond == false && stopper == 0) {
+        if(items.counter % 2 && items.playSecond == false && stopper == false) {
             doMove()
         }
-        else if((items.counter % 2 == 0) && items.playSecond == true && stopper == 0) {
+        else if((items.counter % 2 == 0) && items.playSecond == true && stopper == false) {
             doMove()
         }
     }
@@ -514,7 +489,6 @@ function shouldComputerPlay() {
 
 //This function is called after every turn to proceed the game
 function continueGame() {
-    
     items.createPiece.opacity = 0
     if (!items.playSecond)
         items.pieces.set(currentPiece, {"stateTemp": items.counter++ % 2 ? "2": "1"})
@@ -531,25 +505,17 @@ function continueGame() {
                         parseInt(currentPiece % items.columns))) {
             items.gameDone = true
             if(currentPlayer === "1") {
-                items.player1.state = "win"
-                items.player1_score++
+                items.player1score.win()
             } 
             else {
-                items.player2.state = "win"
-                items.player2_score++
+                items.player2score.win()
             }
             items.bonus.good("flower")
             items.bonus.isWin = false
         }
         else if(items.counter == 9) {
-            items.rotateKonqi.stop()
-            items.rotateTux.stop()
-            items.player2image.rotation = 0
-            items.player1image.rotation = 0
-            items.changeScalePlayer1.scale = 1.0
-            items.changeScalePlayer2.scale = 1.0
-            items.player1.state = "second"
-            items.player2.state = "second"
+            items.player1score.endTurn();
+            items.player2score.endTurn();
             items.bonus.bad("tux")
         }
         else
@@ -560,25 +526,17 @@ function continueGame() {
                         parseInt(currentPiece % items.columns))) {
             items.gameDone = true
             if(currentPlayer == "1") {
-                items.player1_score++
-                items.player1.state = "win"
+                items.player1score.win()
                 items.bonus.good("flower")
             } 
             else {
-                items.player2_score++
-                items.player2.state = "win"
+                items.player2score.win()
                 items.bonus.bad("tux")
             }
         }
         else if(items.counter == 9) {
-            items.rotateKonqi.stop()
-            items.rotateTux.stop()
-            items.player2image.rotation = 0
-            items.player1image.rotation = 0
-            items.changeScalePlayer1.scale = 1.0
-            items.changeScalePlayer2.scale = 1.0
-            items.player1.state = "second"
-            items.player2.state = "second"
+            items.player1score.endTurn();
+            items.player2score.endTurn();
             items.bonus.bad("tux")
         }
         else 
