@@ -38,6 +38,7 @@ function start(items_) {
     items = items_
     currentLevel = 0
     items.validMousePress = false
+    thresholdDistance = 4000 * items.ratio
 
     noOfTilesInPreviousLevel = -1
     initLevel()
@@ -52,14 +53,14 @@ function initLevel() {
 }
 
 function initGrids() {
-    items.boxes.model = 2*(items.bar.level)+1
+    items.boxes.model = 2 * (items.bar.level)+1
 
     if(noOfTilesInPreviousLevel != items.boxes.model) {
         /*
          * When the tiles don't automatically rearrange themself
          * manually check the marker off
          */
-        items.flow.animationCheck = 0
+        items.flow.onGoingAnimationCount = 0
         noOfTilesInPreviousLevel = items.boxes.model
     } else {
         restoreGrids()
@@ -68,7 +69,7 @@ function initGrids() {
     generateRandomNumbers()
 
     for(var i=0;i<items.boxes.model;i++) {
-        items.boxes.itemAt(i).imageX=num[i]
+        items.boxes.itemAt(i).boxValue = num[i]
     }
 }
 
@@ -78,13 +79,13 @@ function generateRandomNumbers() {
     num = []
     var upperBound = (items.bar.level)*100
     while(num.length < n) {
-        var randomNumber=Math.ceil(Math.random()*upperBound)
+        var randomNumber = Math.ceil(Math.random() * upperBound)
         if(num.indexOf(randomNumber) > -1) {
             continue;
         }
         num[num.length]=randomNumber
     }
-    for(var i=0;i<num.length;i++) {
+    for(var i = 0;i < num.length;i++) {
         originalArrangement[i] = num[i]
     }
 }
@@ -98,7 +99,7 @@ function restoreGrids() {
      * current level has the same number of tiles, the
      * indices are not automatically rearranged
      */
-    for(var i=0;i<items.boxes.model;i++) {
+    for(var i = 0;i < items.boxes.model;i++) {
         if(num[i] === originalArrangement[i]) {
             continue
         }
@@ -120,9 +121,9 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    if(--currentSubLevel <0) {
+    if(--currentSubLevel < 0) {
         currentSubLevel = numberOfSubLevel-1
-        if(--currentLevel <0) {
+        if(--currentLevel < 0) {
             currentLevel = numberOfLevel - 1
         }
     }
@@ -130,7 +131,7 @@ function previousLevel() {
 }
 
 function checkOrder() {
-    for(var i=0;i<items.boxes.count-1;i++) {
+    for(var i = 0;i < items.boxes.count-1;i++) {
         if(num[i] > num[i+1]) {
             items.bonus.bad("lion")
             return
@@ -145,12 +146,11 @@ function placeBlock(box, initialPosition) {
      * if distance <= threshold distance then put box
      * in that block and that block in "initialPosition"
      */
-    thresholdDistance = 4000 * items.boxes.itemAt(0).screen_ratio
     var minDistance = Number.POSITIVE_INFINITY
     var closestBlock
-    for(var i=0;i<items.boxes.model;i++) {
-        var currentBlock=items.boxes.itemAt(i)
-        if(currentBlock.imageX === box.imageX) {
+    for(var i = 0;i < items.boxes.model;i++) {
+        var currentBlock = items.boxes.itemAt(i)
+        if(currentBlock.boxValue === box.boxValue) {
             continue
         } else {
             var blockDistance = distance(box, currentBlock)
@@ -161,54 +161,54 @@ function placeBlock(box, initialPosition) {
         }
     }
 
-    if(minDistance<thresholdDistance) {
+    if(minDistance < thresholdDistance) {
 
-        var item1Pos = num.indexOf(box.imageX)
-        var item2Pos = num.indexOf(closestBlock.imageX)
+        var item1Pos = num.indexOf(box.boxValue)
+        var item2Pos = num.indexOf(closestBlock.boxValue)
 
         var oldPositions = []
         var newPositions = []
 
-        for(var i=0;i<num.length;i++) {
-            oldPositions[i]=num[i]
-            newPositions[i]=num[i]
+        for(var i = 0;i < num.length;i++) {
+            oldPositions[i] = num[i]
+            newPositions[i] = num[i]
         }
 
-        if(item1Pos>item2Pos) {
+        if(item1Pos > item2Pos) {
             // update new position
             var currentBoxValue = newPositions[item1Pos]
-            for(var i=item1Pos;i>item2Pos;i--) {
-                newPositions[i]=newPositions[i-1]
+            for(var i = item1Pos;i > item2Pos;i--) {
+                newPositions[i] = newPositions[i-1]
             }
-            newPositions[item2Pos]=currentBoxValue
+            newPositions[item2Pos] = currentBoxValue
         } else {
             // update new position
             var currentBoxValue = newPositions[item1Pos]
-            for(var i=item1Pos;i<item2Pos;i++) {
-                newPositions[i]=newPositions[i+1];
+            for(var i = item1Pos;i < item2Pos;i++) {
+                newPositions[i] = newPositions[i+1];
             }
-            newPositions[item2Pos]=currentBoxValue
+            newPositions[item2Pos] = currentBoxValue
         }
         rearrange(oldPositions, newPositions, box, initialPosition)
-        for(var i=0;i<num.length;i++) {
-            num[i]=newPositions[i]
+        for(var i = 0;i < num.length;i++) {
+            num[i] = newPositions[i]
         }
     } else {
-        box.x=initialPosition.x
-        box.y=initialPosition.y
+        box.x = initialPosition.x
+        box.y = initialPosition.y
     }
 }
 
 function rearrange(oldPositions, newPositions, movingBlock, initialPosition) {
-    for(var i=0;i<newPositions.length;i++) {
+    for(var i = 0;i < newPositions.length;i++) {
         if(oldPositions[i] === newPositions[i]) {
             continue
         }
         var currentBlock = findBlockWithLabel(newPositions[i])
         var finalPosition = findBlockWithLabel(oldPositions[i])
-        if(finalPosition.imageX == movingBlock.imageX) {
-            currentBlock.x=initialPosition.x
-            currentBlock.y=initialPosition.y
+        if(finalPosition.boxValue == movingBlock.boxValue) {
+            currentBlock.x = initialPosition.x
+            currentBlock.y = initialPosition.y
         } else {
             currentBlock.x = finalPosition.x
             currentBlock.y = finalPosition.y
@@ -217,8 +217,8 @@ function rearrange(oldPositions, newPositions, movingBlock, initialPosition) {
 }
 
 function findBlockWithLabel(label) {
-    for(var i=0;i<items.boxes.model;i++) {
-        if(items.boxes.itemAt(i).imageX == label) {
+    for(var i = 0;i < items.boxes.model;i++) {
+        if(items.boxes.itemAt(i).boxValue == label) {
             return items.boxes.itemAt(i)
         }
     }

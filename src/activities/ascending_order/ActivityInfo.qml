@@ -31,5 +31,5 @@ ActivityInfo {
   manual: qsTr("You are provided with few numbers. Drag and Reorder the numbers in ascending order")
   credit: "openclipart.org"
   section: "math"
-  createdInVersion: 4000
+  createdInVersion: 8000
 }

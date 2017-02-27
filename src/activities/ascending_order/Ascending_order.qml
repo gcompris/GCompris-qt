@@ -57,6 +57,7 @@ ActivityBase {
             property alias boxes: boxes
             property alias flow: flow
             property alias container: container
+            property real ratio: ApplicationInfo.ratio
         }
 
         onStart: { Activity.start(items) }
@@ -103,7 +104,12 @@ ActivityBase {
                 id: flow
                 spacing: 10
 
-                property int animationCheck: 0
+                /*
+                 * Count number of active animations in the activity
+                 * at this current time
+                 * (No input will be taken at this time)
+                 */
+                property int onGoingAnimationCount: 0
                 anchors {
                     fill: parent
                 }
@@ -114,43 +120,33 @@ ActivityBase {
                         id: box
                         color: "white"
                         z: mouseArea.drag.active ||  mouseArea.pressed ? 2 : 1
-                        property int imageX: 0
-                        property int pos
-                        property bool animateVert: false
-                        property bool animateHor: false
-                        property real currentPos
-                        property point beginDrag
-                        property real screen_ratio : Math.min(Math.max(background.width, background.height)/800 , Math.min(background.width, background.height)/520)
-                        /*
-                        width: 88 * ApplicationInfo.ratio
-                        height: 88 * ApplicationInfo.ratio
-                        */
-                        width: 65 * ApplicationInfo.ratio//* screen_ratio
-                        height: 65 * ApplicationInfo.ratio//* screen_ratio
+                        property int boxValue: 0
+                        property point beginDragPosition
+
+                        width: 65 * ApplicationInfo.ratio
+                        height: 65 * ApplicationInfo.ratio
                         radius: 10
                         border{
                             color: "black"
-                            width: 3 * screen_ratio
+                            width: 3 * ApplicationInfo.ratio
                         }
                         GCText {
                             id: numText
                             anchors.centerIn: parent
-                            text: imageX.toString()
-                            font.pointSize: 20 * ApplicationInfo.ratio//* screen_ratio
+                            text: boxValue.toString()
+                            font.pointSize: 20 * ApplicationInfo.ratio
                         }
                         MouseArea {
                             id: mouseArea
                             anchors.fill: parent
                             drag.target: parent
                             onPressed: {
-                                box.beginDrag = flow.animationCheck == 0 ? Qt.point(box.x, box.y) : box.beginDrag
-                                activity.validMousePress = flow.animationCheck == 0 ? true : false
-                            }
-                            onPressAndHold: {
+                                box.beginDragPosition = flow.onGoingAnimationCount == 0 ? Qt.point(box.x, box.y) : box.beginDragPosition
+                                activity.validMousePress = flow.onGoingAnimationCount == 0 ? true : false
                             }
                             onReleased: {
-                                if(flow.animationCheck == 0 && activity.validMousePress) {
-                                    Activity.placeBlock(box, box.beginDrag);
+                                if(flow.onGoingAnimationCount == 0 && activity.validMousePress) {
+                                    Activity.placeBlock(box, box.beginDragPosition);
                                 }
                             }
                         }
@@ -161,9 +157,9 @@ ActivityBase {
                                 easing.type: Easing.InOutBack
                                 onRunningChanged: {
                                     if(animationX.running) {
-                                        flow.animationCheck++
+                                        flow.onGoingAnimationCount++
                                     } else {
-                                        flow.animationCheck--
+                                        flow.onGoingAnimationCount--
                                     }
                                 }
                             }
@@ -175,9 +171,9 @@ ActivityBase {
                                 easing.type: Easing.InOutBack
                                 onRunningChanged: {
                                     if(animationY.running) {
-                                        flow.animationCheck++
+                                        flow.onGoingAnimationCount++
                                     } else {
-                                        flow.animationCheck--
+                                        flow.onGoingAnimationCount--
                                     }
                                 }
                             }
