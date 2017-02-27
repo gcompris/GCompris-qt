@@ -98,6 +98,7 @@ ActivityBase {
                 enabled: gameMode == 1 && !answerBallsPlacement.children[0].visible
                 anchors.fill: parent
                 onClicked: {
+                    items.isPlayer1Turn = false;
                     Activity.machinePlay();
                 }
             }
