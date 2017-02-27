@@ -37,7 +37,7 @@ var noOfTilesInPreviousLevel
 function start(items_) {
     items = items_
     currentLevel = 0
-    items.validMousePress = false
+    items.flow.validMousePress = false
     thresholdDistance = 4000 * items.ratio
 
     noOfTilesInPreviousLevel = -1
@@ -48,6 +48,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.flow.validMousePress = true
     items.bar.level = currentLevel + 1
     initGrids()
 }
@@ -131,9 +132,11 @@ function previousLevel() {
 }
 
 function checkOrder() {
+    items.flow.validMousePress = false
     for(var i = 0;i < items.boxes.count-1;i++) {
         if(num[i] > num[i+1]) {
             items.bonus.bad("lion")
+            items.flow.validMousePress = true
             return
         }
     }

@@ -31,8 +31,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property bool validMousePress: false
-
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -50,7 +48,6 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property bool validMousePress: activity.validMousePress
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -110,6 +107,7 @@ ActivityBase {
                  * (No input will be taken at this time)
                  */
                 property int onGoingAnimationCount: 0
+                property bool validMousePress
                 anchors {
                     fill: parent
                 }
@@ -140,14 +138,12 @@ ActivityBase {
                             id: mouseArea
                             anchors.fill: parent
                             drag.target: parent
+                            enabled: (flow.onGoingAnimationCount == 0 && flow.validMousePress == true) ? true : false
                             onPressed: {
-                                box.beginDragPosition = flow.onGoingAnimationCount == 0 ? Qt.point(box.x, box.y) : box.beginDragPosition
-                                activity.validMousePress = flow.onGoingAnimationCount == 0 ? true : false
+                                box.beginDragPosition = Qt.point(box.x, box.y)
                             }
                             onReleased: {
-                                if(flow.onGoingAnimationCount == 0 && activity.validMousePress) {
-                                    Activity.placeBlock(box, box.beginDragPosition);
-                                }
+                                Activity.placeBlock(box, box.beginDragPosition);
                             }
                         }
                         Behavior on x {
