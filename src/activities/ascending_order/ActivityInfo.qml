@@ -22,14 +22,13 @@ ActivityInfo {
   difficulty: 2
   icon: "ascending_order/ascending_order.svg"
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
-  demo: false
+  demo: true
   title: qsTr("Ascending Order")
   description: qsTr("Arrange the given numbers in ascending order")
-  //intro: "click on the numbers in ascending order"
+//  intro: "arrange the numbers in ascending order by placing a number in it's correct position"
   goal: qsTr("arranging numbers in ascending order")
   prerequisite: qsTr("Move, drag and drop using mouse")
   manual: qsTr("You are provided with few numbers. Drag and Drop the numbers in it's correct position to reorder the numbers in ascending order")
-  credit: "openclipart.org"
   section: "math"
   createdInVersion: 8000
 }

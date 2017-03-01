@@ -49,6 +49,7 @@ function stop() {
 
 function initLevel() {
     items.flow.validMousePress = true
+    items.score.message = currentSubLevel + "/" + numberOfSubLevel
     items.bar.level = currentLevel + 1
     initGrids()
 }
@@ -111,7 +112,7 @@ function restoreGrids() {
     }
 }
 
-function nextLevel() {
+function nextSubLevel() {
     if(numberOfSubLevel <= ++currentSubLevel) {
         if(numberOfLevel <= ++currentLevel) {
             currentLevel = 0
@@ -121,14 +122,20 @@ function nextLevel() {
     initLevel();
 }
 
-function previousLevel() {
-    if(--currentSubLevel < 0) {
-        currentSubLevel = numberOfSubLevel-1
-        if(--currentLevel < 0) {
-            currentLevel = numberOfLevel - 1
-        }
+function nextLevel() {
+    if(numberOfLevel <= ++currentLevel) {
+        currentLevel = 0
     }
-    initLevel();
+    currentSubLevel = 0
+    initLevel()
+}
+
+function previousLevel() {
+    if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
+    }
+    currentSubLevel = 0
+    initLevel()
 }
 
 function checkOrder() {

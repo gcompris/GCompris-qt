@@ -23,7 +23,6 @@ import GCompris 1.0
 
 import "../../core"
 import "ascending_order.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -55,6 +54,7 @@ ActivityBase {
             property alias flow: flow
             property alias container: container
             property real ratio: ApplicationInfo.ratio
+            property Score score: score
         }
 
         onStart: { Activity.start(items) }
@@ -191,11 +191,15 @@ ActivityBase {
           visible: true
           anchors {
               right: parent.right
-              bottom: parent.bottom
+              bottom: bar.top
               bottomMargin: 10 * ApplicationInfo.ratio
               rightMargin: 10 * ApplicationInfo.ratio
           }
           onClicked: Activity.checkOrder()
+        }
+
+        Score {
+            id: score
         }
 
         Bar {
@@ -211,7 +215,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
     }
 
