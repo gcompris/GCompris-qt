@@ -200,6 +200,11 @@ ActivityBase {
 
         Score {
             id: score
+            anchors {
+                right: parent.right
+                top: instruction.bottom
+                bottom: undefined
+            }
         }
 
         Bar {
