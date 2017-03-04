@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "practice.js" as Activity
@@ -48,7 +49,9 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property ListModel currentmodel: theModel
+            property alias calculationResult: result.text
+            property var problemData
+            property int sublevel
             property GCAudio audioEffects: activity.audioEffects
         }
 
@@ -65,10 +68,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home }
+            content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
+            onHintClicked: {
+                calculator.visible = !calculator.visible
+            }
+
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
@@ -76,224 +83,351 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(Activity.nextSublevel)
         }
-        Row {
-            anchors.fill: parent
-            spacing: 0
+
+        Rectangle {
+            id: workspace
+            color: "transparent"
+            height: parent.height
+            width: parent.width*0.65
+
+            // questions
             Rectangle {
-                id:row1
-                color: "transparent"
-                width: background.width*0.65
-                height: background.height
-                Grid {
-                    id:grid
-                    anchors.top:parent.top
-                    anchors.topMargin: row1.height/3.2
-                    anchors.horizontalCenter:  parent.horizontalCenter
-                    rows:1
-                    spacing: 5
-                    Rectangle{
-                        height: row1.height/4
-                        width: row1.width*0.1875
+                id: questionWrapper
+                width: parent.width
+                height: question.height
+                color: "#d8ffffff"
+                border.color: "#2a2a2a"
+                border.width: 2
+                radius: 8
+                anchors {
+                    top: parent.top
+                    topMargin: 10
+                    left: parent.left
+                    leftMargin: 10
+                    right: parent.right
+                    rightMargin: 10
+                }
+                GCText {
+                    id: question
+                    fontSize: largeSize
+                    font.weight: Font.DemiBold
+                    horizontalAlignment: Text.AlignHCenter
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    text: qsTr(items.problemData[0])
+                }
+
+            }
+
+            Column {
+                id: problems
+                spacing: 10
+                anchors {
+                    top: questionWrapper.bottom
+                    topMargin: 20
+                }
+                width: parent.width
+                Repeater {
+                    id: problemReapeater
+                    model: items.problemData[1]
+                    Rectangle {
+                        id: problemWrapper
+                        width: parent.width
+                        height: problemText.height > answerWrapper.height ? problemText.height : answerWrapper.height
                         color: "transparent"
-                        Rectangle{
-                            id:number1
-                            height: parent.height/4
-                            width: parent.width
-                            color:"transparent"
-                            GCText{
-                                anchors.centerIn: parent
-                                font.pointSize: smallSize
-                                font.bold: true
-                                text:qsTr("number 1")
+                        radius: 8
+                        anchors {
+                            left: parent.left
+                            leftMargin: 10
+                            right: parent.right
+                            rightMargin: 10
+                        }
+                        property alias correct: answer.correct
+                        Rectangle {
+                            id: problem
+                            width: parent.width*0.75
+                            height: problemText.height
+                            color: "#d8ffffff"
+                            border.color: "#2a2a2a"
+                            border.width: 2
+                            radius: 8
+                            anchors {
+                                verticalCenter: parent.verticalCenter
+                            }
+
+                            GCText {
+                                id: problemText
+                                width: parent.width
+                                fontSize: regularSize
+                                font.weight: Font.DemiBold
+                                horizontalAlignment: Text.AlignHCenter
+                                wrapMode: Text.WordWrap
+                                text: qsTr(modelData[0])
                             }
                         }
                         Rectangle {
-                            anchors.top:number1.bottom
+                            id: answerWrapper
                             color: "white"
-                            width: parent.width
-                            height: parent.width
+                            width: 80
+                            height: 80
+                            anchors {
+                                verticalCenter: parent.verticalCenter
+                            }
                             border.color: "black"
-                            border.width: parent.height/40
+                            border.width: 5
+                            anchors.right: image.left
+                            anchors.rightMargin: 20
                             TextInput {
-                                id:firstop
+                                id: answer
                                 width: parent.width
                                 height: parent.height
+                                property bool correct: false
                                 verticalAlignment: TextInput.AlignVCenter
                                 horizontalAlignment: TextInput.AlignHCenter
                                 cursorPosition: 0
                                 color: "black"
                                 text: ""
                                 focus: true
-                                font.pixelSize: parent.parent.height/6
+                                font.pixelSize: 30
                                 font.bold: true
                                 maximumLength:2
                                 validator: IntValidator{bottom: -1; top: 100;}
-                                KeyNavigation.right: operator
-                                //KeyNavigation.down: evaluate
+                                onTextChanged: {
+                                    answer.correct = Number(text) == modelData[1] ? true : false
+                                    if(Activity.check(problemReapeater)){
+                                        timer.start()
+                                        if(items.sublevel+1 < Activity.problemDataset[Activity.currentLevel].length) {
+                                            bonus.good("flower")
+                                        }
+                                        else {
+                                            bonus.good("smiley")
+                                        }
+                                    }
+
+                                }
                             }
+                        }
+                        Image {
+                            id: image
+                            width: 50
+                            height: 50
+                            visible: answer.text == "" ? false : true
+                            anchors {
+                                right: parent.right
+                                rightMargin: 10
+                                verticalCenter: parent.verticalCenter
+                            }
+                            source: answer.correct ? Activity.url + 'right.svg' : Activity.url + 'wrong.svg'
                         }
                     }
+                }
+            }
+
+
+            //calculator
+            Row {
+                id: calculator
+                visible: false
+                anchors {
+                    top: problems.bottom
+                    topMargin: 20
+                    horizontalCenter: parent.horizontalCenter
+                }
+                spacing: 10
+                Rectangle {
+                    width: 100
+                    height: 200
+                    color: "transparent"
                     Rectangle{
-                        height: row1.height/4
-                        width: row1.width*0.1875
-                        color: "transparent"
-                        Rectangle{
-                            id:operator_
-                            height: parent.height/4
-                            width: parent.width
-                            color:"transparent"
-                            GCText{
-                                anchors.centerIn: parent
-                                fontSize: smallSize
-                                font.bold: true
-                                text:qsTr("operator")
-                            }
-                        }
-                        Rectangle {
-                            anchors.top:operator_.bottom
-                            color: "white"
-                            width: parent.width
-                            height: parent.width
-                            border.color: "red"
-                            border.width: parent.height/40
-                            TextInput {
-                                id:operator
-                                width: parent.width
-                                height: parent.height
-                                verticalAlignment: TextInput.AlignVCenter
-                                horizontalAlignment: TextInput.AlignHCenter
-                                cursorPosition: 0
-                                color: "black"
-                                text: ""
-                                focus: true
-                                font.pixelSize: parent.parent.height/6
-                                font.bold: true
-                                validator: RegExpValidator { regExp: /[+-*/]/ }
-                                maximumLength:1
-                                KeyNavigation.right: secondop
-                                KeyNavigation.left: firstop
-                                //KeyNavigation.down: evaluate
-                            }
-                        }
-                    }
-                    Rectangle{
-                        height: row1.height/4
-                        width: row1.width*0.1875
-                        color: "transparent"
-                        Rectangle{
-                            id:number2
-                            height: parent.height/4
-                            width: parent.width
-                            color:"transparent"
-                            GCText{
-                                anchors.centerIn: parent
-                                font.pointSize: smallSize
-                                font.bold: true
-                                text:qsTr("number 2")
-                            }
-                        }
-                        Rectangle {
-                            anchors.top:number2.bottom
-                            color: "white"
-                            width: parent.width
-                            height: parent.width
-                            border.color: "black"
-                            border.width: parent.height/40
-                            TextInput {
-                                id:secondop
-                                width: parent.width
-                                height: parent.height
-                                verticalAlignment: TextInput.AlignVCenter
-                                horizontalAlignment: TextInput.AlignHCenter
-                                cursorPosition: 0
-                                color: "black"
-                                text: ""
-                                focus: true
-                                font.pixelSize: parent.parent.height/6
-                                font.bold: true
-                                maximumLength:2
-                                validator: IntValidator{bottom: -1; top: 100;}
-                                KeyNavigation.right: result
-                                KeyNavigation.left: operator
-                                //KeyNavigation.down: evaluate
-                            }
+                        id:number1
+                        height: parent.height/4
+                        width: parent.width
+                        color:"transparent"
+                        GCText{
+                            anchors.centerIn: parent
+                            font.pointSize: smallSize
+                            font.bold: true
+                            text:qsTr("number 1")
                         }
                     }
                     Rectangle {
-                        id:equalto
-                        color: "transparent"
-                        height: row1.height/4
-                        width: row1.width*0.1875
-                        Image {
-                            anchors.centerIn: parent
+                        anchors.top:number1.bottom
+                        color: "white"
+                        width: parent.width
+                        height: parent.width
+                        border.color: "black"
+                        border.width: parent.height/40
+                        TextInput {
+                            id:firstop
                             width: parent.width
-                            source: Activity.url+"equal.svg"
+                            height: parent.height
+                            verticalAlignment: TextInput.AlignVCenter
+                            horizontalAlignment: TextInput.AlignHCenter
+                            cursorPosition: 0
+                            color: "black"
+                            text: ""
+                            focus: true
+                            font.pixelSize: parent.parent.height/6
+                            font.bold: true
+                            maximumLength:2
+                            validator: IntValidator{bottom: -1; top: 100;}
+                            KeyNavigation.right: operator
+                            onTextChanged: Activity.calculate_result(firstop.text,operator.text,secondop.text)
+                            //KeyNavigation.down: evaluate
                         }
                     }
+                }
+                Rectangle{
+                    width: 100
+                    height: 200
+                    color: "transparent"
                     Rectangle{
-                        height: row1.height/4
-                        width: row1.width*0.1875
-                        color: "transparent"
-                        Rectangle{
-                            id:expected_result
-                            height: parent.height/4
-                            width: parent.width
-                            color:"transparent"
-                            GCText{
-                                anchors.centerIn: parent
-                                font.pointSize: smallSize
-                                font.bold: true
-                                text:qsTr("calculation")
-                            }
+                        id:operator_
+                        height: parent.height/4
+                        width: parent.width
+                        color:"transparent"
+                        GCText{
+                            anchors.centerIn: parent
+                            font.pointSize: smallSize
+                            font.bold: true
+                            text:qsTr("operator")
                         }
-                        Rectangle {
-                            anchors.top: expected_result.bottom
-                            color: "white"
+                    }
+                    Rectangle {
+                        anchors.top:operator_.bottom
+                        color: "white"
+                        width: parent.width
+                        height: parent.width
+                        border.color: "black"
+                        border.width: parent.height/40
+                        TextInput {
+                            id:operator
                             width: parent.width
-                            height: parent.width
-                            border.color: "black"
-                            border.width: 5
-                            TextInput {
-                                id:result
-                                width: parent.width
-                                height: parent.height
-                                verticalAlignment: TextInput.AlignVCenter
-                                horizontalAlignment: TextInput.AlignHCenter
-                                cursorPosition: 0
-                                color: "black"
-                                text: ""
-                                focus: true
-                                font.pixelSize: parent.parent.height/6
-                                font.bold: true
-                                maximumLength:3
-                                validator: IntValidator{bottom: -1; top: 200;}
-                                KeyNavigation.left: secondop
-                                //KeyNavigation.down: evaluate
-                            }
+                            height: parent.height
+                            verticalAlignment: TextInput.AlignVCenter
+                            horizontalAlignment: TextInput.AlignHCenter
+                            cursorPosition: 0
+                            color: "black"
+                            text: ""
+                            focus: true
+                            font.pixelSize: parent.parent.height/6
+                            font.bold: true
+                            validator: RegExpValidator { regExp: /[+-*/]/ }
+                            maximumLength:1
+                            KeyNavigation.right: secondop
+                            KeyNavigation.left: firstop
+                            onTextChanged: Activity.calculate_result(firstop.text,operator.text,secondop.text)
+                            //KeyNavigation.down: evaluate
+                        }
+                    }
+                }
+                Rectangle{
+                    width: 100
+                    height: 200
+                    color: "transparent"
+                    Rectangle{
+                        id:number2
+                        height: parent.height/4
+                        width: parent.width
+                        color:"transparent"
+                        GCText {
+                            anchors.centerIn: parent
+                            font.pointSize: smallSize
+                            font.bold: true
+                            text:qsTr("number 2")
+                        }
+                    }
+                    Rectangle {
+                        anchors.top:number2.bottom
+                        color: "white"
+                        width: parent.width
+                        height: parent.width
+                        border.color: "black"
+                        border.width: parent.height/40
+                        TextInput {
+                            id:secondop
+                            width: parent.width
+                            height: parent.height
+                            verticalAlignment: TextInput.AlignVCenter
+                            horizontalAlignment: TextInput.AlignHCenter
+                            cursorPosition: 0
+                            color: "black"
+                            text: ""
+                            focus: true
+                            font.pixelSize: parent.parent.height/6
+                            font.bold: true
+                            maximumLength:2
+                            validator: IntValidator{bottom: -1; top: 100;}
+                            KeyNavigation.left: operator
+                            onTextChanged: Activity.calculate_result(firstop.text,operator.text,secondop.text)
+                            //KeyNavigation.down: evaluate
+                        }
+                    }
+                }
+                Rectangle {
+                    id:equalto
+                    color: "transparent"
+                    width: 100
+                    height: 200
+                    Image {
+                        anchors.centerIn: parent
+                        width: parent.width
+                        source: Activity.url+"equal.svg"
+                    }
+                }
+
+                Rectangle {
+                    width: 100
+                    height: 200
+                    color: "transparent"
+                    Rectangle{
+                        id:expected_result
+                        height: parent.height/4
+                        width: parent.width
+                        color:"transparent"
+                        GCText{
+                            anchors.centerIn: parent
+                            font.pointSize: smallSize
+                            font.bold: true
+                            text:qsTr("calculation")
+                        }
+                    }
+                    Rectangle {
+                        anchors.top: expected_result.bottom
+                        color: "white"
+                        width: parent.width
+                        height: parent.width
+                        border.color: "black"
+                        border.width: 5
+                        GCText{
+                            id: result
+                            anchors.centerIn: parent
+                            font.pixelSize: parent.parent.height/6
+                            font.bold: true
+                            text: ""
                         }
                     }
                 }
                 Rectangle {
                     id:evaluate
-                    anchors.top: grid.bottom
-                    anchors.right: parent.right
-                    anchors.topMargin: row1.height/16
-                    anchors.rightMargin: row1.height/16
-                    width:row1.width/4
-                    height: row1.height/20
+                    width: 150
+                    height: 50
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                    }
                     signal clicked
                     onClicked: NumberAnimation { target: evaluate; property: "opacity"; from: 0; to: 1; duration: 200 }
-                    //onActiveFocusChanged: {evaluate.scale= activeFocus ? 1.05 : 1 }
-                    //Keys.onEnterPressed: { evaluate.children[1].clicked()}
+                    onActiveFocusChanged: {evaluate.scale= activeFocus ? 1.05 : 1 }
+                    //                    Keys.onEnterPressed: { evaluate.children[1].clicked()}
                     color: "#53d769"
                     border.color: Qt.lighter(color, 1.1)
                     GCText {
                         anchors.centerIn: parent
                         fontSize: smallSize
                         font.bold: true
-                        text: qsTr("Evaluate")
+                        text: qsTr("Save")
                     }
                     MouseArea {
                         anchors.fill: parent
@@ -309,418 +443,227 @@ ActivityBase {
                         }
                         onClicked: {
                             evaluate.clicked()
-                            if(firstop.text!="" && operator.text!="" && secondop.text!="" && result.text!="")
-                            {
-                                var input={"firstop":Number(firstop.text),"secondop":Number(secondop.text),"operator":operator.text,"expected_result":Number(result.text),"saved_calculation":false}
-                                firstop.undo()
-                                operator.undo()
-                                secondop.undo()
-                                result.undo()
-                                if(Activity.calculate_result(input)[0])
-                                {
-                                    input["correct"]=Activity.calculate_result(input)[0]
-                                    input["calculated_value"]=Activity.calculate_result(input)[1]
-                                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
-                                    theModel.insert(0,input)
-                                    correctquestions.insert(0,input)
-                                }
-                                else
-                                {
-                                    input["correct"]=Activity.calculate_result(input)[0]
-                                    input["calculated_value"]=Activity.calculate_result(input)[1]
-                                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
-                                    theModel.insert(0,input)
-                                    wrongquestions.insert(0,input)
-                                }
-                            }
-                            else
-                                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            var input={"firstop":Number(firstop.text),"secondop":Number(secondop.text),"operator":operator.text,"result":Number(result.text)}
+                            //                            firstop.undo()
+                            //                            operator.undo()
+                            //                            secondop.undo()
+                            //                            result.undo()
+                            theModel.insert(0,input)
                         }
-                    }
-                }
-                Rectangle {
-                    id:correctanswers
-                    anchors.top: evaluate.bottom
-                    anchors.right: parent.right
-                    anchors.topMargin: row1.height/16
-                    anchors.rightMargin: row1.height/16
-                    width:(row1.width/16)*7
-                    height: row1.height/16
-                    signal clicked
-                    onClicked: NumberAnimation { target: correctanswers; property: "opacity"; from: 0; to: 1; duration: 200 }
-                    color: "#53d769"
-                    border.color: Qt.lighter(color, 1.1)
-                    GCText {
-                        anchors.centerIn: parent
-                        fontSize: smallSize
-                        font.bold: true
-                        text: qsTr("Correct Answers")
-                    }
-                    MouseArea {
-                        anchors.fill: parent
-                        hoverEnabled: true
-                        onHoveredChanged: {
-                            if(containsMouse)
-                            {
-                                correctanswers.scale=1.05
-                            }
-                            else
-                            {
-                                correctanswers.scale=1
-                            }
-                        }
-                        onClicked: {
-                            correctanswers.clicked()
-                            items.currentmodel=correctquestions
-                        }
-                    }
-                }
-                Rectangle {
-                    id:wronganswers
-                    anchors.top: evaluate.bottom
-                    anchors.right:correctanswers.left
-                    anchors.rightMargin: 5
-                    anchors.left:parent.left
-                    anchors.topMargin: row1.height/16
-                    anchors.leftMargin: row1.width/20
-                    width:(row1.width/16)*7
-                    height: row1.height/16
-                    signal clicked
-                    onClicked: NumberAnimation { target: wronganswers; property: "opacity"; from: 0; to: 1; duration: 200 }
-                    color: "red"
-                    border.color: Qt.lighter(color, 1.1)
-                    GCText {
-                        anchors.centerIn: parent
-                        fontSize: smallSize
-                        font.bold: true
-                        text: qsTr("Wrong Answers")
-                    }
-                    MouseArea {
-                        anchors.fill: parent
-                        hoverEnabled: true
-                        onHoveredChanged: {
-                            if(containsMouse)
-                            {
-                                wronganswers.scale=1.05
-                            }
-                            else
-                            {
-                                wronganswers.scale=1
-                            }
-                        }
-                        onClicked: {
-                            wronganswers.clicked()
-                            items.currentmodel=wrongquestions
-                        }
+
                     }
                 }
             }
-            Rectangle {
-                id:row2
-                width: parent.width*0.35
-                height:parent.height
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "gray" }
-                    GradientStop { position: 1.0; color: "white" }
-                }
-                ListModel {
-                    id: theModel
-                }
-                ListModel{
-                    id:saveitems
-                }
-                ListModel{
-                    id:correctquestions
-                }
-                ListModel{
-                    id:wrongquestions
-                }
-                Rectangle{
-                    id:header
-                    height: (parent.height/40)*3
-                    width: parent.width
-                    color: "gray"
-                    GCText {
-                        id:headertext
-                        anchors.centerIn: parent
-                        font.bold: true
-                        fontSize: 13
-                        text: switch (items.currentmodel) {
-                              case theModel:
-                                  return qsTr("Current Calculations")
-                              case saveitems:
-                                  return qsTr("Saved Calculations")
-                              case correctquestions:
-                                  return qsTr("Correct Answers")
-                              default:
-                                  return qsTr("Wrong Answers")
-                              }
-                        onTextChanged: NumberAnimation { target: headertext; property: "opacity"; from: 0; to: 1; duration: 450}
-                    }
-                }
-                ListView {
-                    id:list
-                    width: parent.width
-                    height: parent.height-header.height-footer.height
-                    anchors.top:header.bottom
-                    model: items.currentmodel
+        }
 
-                    delegate: numberDelegate
-                    spacing: parent.height/160
-                    populate: Transition {
-                        NumberAnimation { property: "scale"; from: 0; to: 1; duration: 250; easing.type: Easing.InOutQuad }
-                    }
+        Rectangle {
+            id:row2
+            width: parent.width*0.35
+            height:parent.height
+            anchors.right: parent.right
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "gray" }
+                GradientStop { position: 1.0; color: "transparent" }
+            }
+            ListModel {
+                id: theModel
+            }
+            //            ListModel{
+            //                id:saveitems
+            //            }
+            //            ListModel{
+            //                id:correctquestions
+            //            }
+            //            ListModel{
+            //                id:wrongquestions
+            //            }
+            Rectangle{
+                id:header
+                height: (parent.height/40)*3
+                width: parent.width
+                color: "gray"
+                GCText {
+                    id:headertext
+                    anchors.centerIn: parent
+                    font.bold: true
+                    fontSize: 13
+                    text: qsTr("Saved Calculations")
+                    onTextChanged: NumberAnimation { target: headertext; property: "opacity"; from: 0; to: 1; duration: 450}
                 }
-                Component {
-                    id: numberDelegate
-                    Rectangle {
-                        id: wrapper
+            }
+            ListView {
+                id:list
+                width: parent.width
+                height: parent.height-header.height-footer.height
+                anchors.top:header.bottom
+                model: theModel
+                delegate: numberDelegate
+                spacing: parent.height/160
+                populate: Transition {
+                    NumberAnimation { property: "scale"; from: 0; to: 1; duration: 250; easing.type: Easing.InOutQuad }
+                }
+            }
+            Component {
+                id: numberDelegate
+                Rectangle {
+                    id: wrapper
+                    width: parent.width
+                    height: (row2.height/20)*3
+                    color: "white"
+                    Flipable{
+                        id:flipable
                         width: parent.width
-                        height: (row2.height/20)*3
-                        color: correct ? "green":"red"
-                        Flipable{
-                            id:flipable
-                            width: parent.width
-                            height: (parent.height/16)*7
-                            property bool flipped: false
-                            front: Rectangle{
-                                id:component_text
-                                width:parent.width
-                                height:parent.height
-                                color: "transparent"
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                GCText {
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                    anchors.margins: parent.height/7
-                                    font.bold: true
-                                    fontSize: mediumSize
-                                    text: "  "+firstop+operator+secondop+"="+expected_result
-                                }
-                            }
-                            back:Rectangle{
-                                id:component_text2
-                                width:parent.width
-                                height:(parent.height/16)*7
-                                color: "transparent"
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                GCText {
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                    anchors.margins: parent.height/7
-                                    fontSize: smallSize
-                                    font.bold: true
-                                    text: calculated_value
-                                }
-                            }
-                            transform: Rotation {
-                                id: rotation
-                                origin.x: flipable.width/2
-                                origin.y: flipable.height/2
-                                axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
-                                angle: 0    // the default angle
-                            }
-                            states: State {
-                                name: "back"
-                                PropertyChanges { target: rotation; angle: 180 }
-                                when: flipable.flipped
-                            }
-                            transitions: Transition {
-                                NumberAnimation { target: rotation; property: "angle"; duration: 500 }
-                            }
-                        }
-                        Grid {
-                            anchors.top:flipable.bottom
+                        height: (parent.height/16)*7
+                        property bool flipped: false
+                        front: Rectangle {
+                            id:component_text
+                            width:parent.width
+                            height:parent.height
+                            color: "transparent"
                             anchors.horizontalCenter: parent.horizontalCenter
-                            anchors.verticalCenter:parent.verticalCenter
-                            rows:1
-                            spacing: 5
-                            Rectangle{
-                                id:check_answer
-                                width:row2.width*0.467
-                                height: (row2.height/80)*3
-                                visible:!correct
-                                color: "lightblue"
-                                GCText {
-                                    anchors.centerIn: parent
-                                    font.pointSize: smallSize
-                                    font.bold: true
-                                    text: flipable.flipped ? qsTr("back") : qsTr("check answer")
-                                }
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: {
-                                        flipable.flipped = !flipable.flipped
-                                    }
-                                }
+                            GCText {
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                anchors.margins: parent.height/7
+                                font.bold: true
+                                fontSize: mediumSize
+                                text: "  " + firstop + operator + secondop
                             }
-                            Rectangle{
-                                id:save
-                                width: row2.width*0.187
-                                height: (row2.height/80)*3
-                                visible:!saved_calculation && items.currentmodel==theModel
-                                color: "yellow"
-                                GCText {
-                                    anchors.centerIn: parent
-                                    font.pointSize: smallSize
-                                    font.bold: true
-                                    text: qsTr("save")
-                                }
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: {
-                                        var input={"firstop":firstop,"secondop":secondop,"operator":operator,"expected_result":expected_result,"saved_calculation":true,"correct":correct,"calculated_value":calculated_value}
-                                        saveitems.insert(0,input);
-                                        theModel.setProperty(index, "saved_calculation", true)
-                                    }
-                                }
+                        }
+                        back:Rectangle{
+                            id:component_text2
+                            width:parent.width
+                            height:(parent.height/16)*7
+                            color: "transparent"
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            GCText {
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                anchors.margins: parent.height/7
+                                fontSize: mediumSize
+                                font.bold: true
+                                text: result
                             }
-                            Rectangle{
-                                id:remove
-                                width: row2.width*0.25
-                                height: (row2.height/80)*3
-                                visible: !(items.currentmodel==correctquestions || items.currentmodel==wrongquestions)
-                                color: "orange"
-                                GCText {
-                                    anchors.centerIn: parent
-                                    font.pointSize: smallSize
-                                    font.bold: true
-                                    text: qsTr("remove")
-                                }
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: {
-                                        items.currentmodel.remove(index);
-                                    }
+                        }
+                        transform: Rotation {
+                            id: rotation
+                            origin.x: flipable.width/2
+                            origin.y: flipable.height/2
+                            axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
+                            angle: 0    // the default angle
+                        }
+                        states: State {
+                            name: "back"
+                            PropertyChanges { target: rotation; angle: 180 }
+                            when: flipable.flipped
+                        }
+                        transitions: Transition {
+                            NumberAnimation { target: rotation; property: "angle"; duration: 500 }
+                        }
+                    }
+                    Grid {
+                        anchors.top:flipable.bottom
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter:parent.verticalCenter
+                        rows:1
+                        spacing: 5
+                        Rectangle{
+                            id:check_answer
+                            width:row2.width*0.467
+                            height: (row2.height/80)*3
+                            visible: true
+                            color: "lightblue"
+                            GCText {
+                                anchors.centerIn: parent
+                                font.pointSize: smallSize
+                                font.bold: true
+                                text: flipable.flipped ? qsTr("back") : qsTr("check answer")
+                            }
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    flipable.flipped = !flipable.flipped
                                 }
                             }
                         }
-                        ListView.onRemove: SequentialAnimation {
-                            PropertyAction { target: wrapper; property: "ListView.delayRemove"; value: true }
-                            NumberAnimation { target: wrapper; property: "scale"; to: 0; duration: 250; easing.type: Easing.InOutQuad }
-                            PropertyAction { target: wrapper; property: "ListView.delayRemove"; value: false }
+
+                        Rectangle{
+                            id:remove
+                            width: row2.width*0.25
+                            height: (row2.height/80)*3
+                            color: "orange"
+                            GCText {
+                                anchors.centerIn: parent
+                                font.pointSize: smallSize
+                                font.bold: true
+                                text: qsTr("remove")
+                            }
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    items.theModel.remove(index);
+                                }
+                            }
                         }
-                        ListView.onAdd: SequentialAnimation {
-                            NumberAnimation { target: wrapper; property: "scale"; from: 0; to: 1; duration: 250; easing.type: Easing.InOutQuad }
-                        }
+                    }
+                    ListView.onRemove: SequentialAnimation {
+                        PropertyAction { target: wrapper; property: "ListView.delayRemove"; value: true }
+                        NumberAnimation { target: wrapper; property: "scale"; to: 0; duration: 250; easing.type: Easing.InOutQuad }
+                        PropertyAction { target: wrapper; property: "ListView.delayRemove"; value: false }
+                    }
+                    ListView.onAdd: SequentialAnimation {
+                        NumberAnimation { target: wrapper; property: "scale"; from: 0; to: 1; duration: 250; easing.type: Easing.InOutQuad }
                     }
                 }
+            }
+            Rectangle{
+                id:footer
+                anchors.bottom: parent.bottom
+                height: (row2.height/40)*3
+                width: parent.width
+                color: "gray"
                 Rectangle{
-                    id:footer
-                    anchors.bottom: parent.bottom
-                    height: (row2.height/40)*3
-                    width: parent.width
-                    color: "gray"
-                    Rectangle{
-                        id:clear_all
-                        width: parent.width/2.85
-                        height: parent.height/1.25
-                        color: "orange"
-                        border.color: "transparent"
-                        border.width: 3
-                        anchors{
-                            left: parent.left
-                            right:saved_list.left
-                            rightMargin: 7
-                            leftMargin: (row2.height/80)*1.5
-                            verticalCenter: parent.verticalCenter
-                        }
-                        signal clicked
-                        onClicked: NumberAnimation { target: clear_all; property: "opacity"; from: 0; to: 1; duration: 200 }
-                        GCText {
-                            anchors.centerIn: parent
-                            fontSize: smallSize
-                            font.bold: true
-                            text: qsTr("clear all")
-                        }
-                        MouseArea {
-                            anchors.fill: parent
-                            hoverEnabled: true
-                            onHoveredChanged: {
-                                if(containsMouse)
-                                    clear_all.border.color="lightblue"
-                                else
-                                    clear_all.border.color="transparent"
+                    id:clear_all
+                    width: parent.width/2.85
+                    height: parent.height/1.25
+                    color: "orange"
+                    border.color: "transparent"
+                    border.width: 3
+                    anchors{
+                        centerIn: parent
+                    }
+                    signal clicked
+                    onClicked: NumberAnimation { target: clear_all; property: "opacity"; from: 0; to: 1; duration: 200 }
+                    GCText {
+                        anchors.centerIn: parent
+                        fontSize: smallSize
+                        font.bold: true
+                        text: qsTr("clear all")
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        onHoveredChanged: {
+                            if(containsMouse)
+                                clear_all.border.color="lightblue"
+                            else
+                                clear_all.border.color="transparent"
 
-                            }
-                            onClicked: {
-                                clear_all.clicked()
-                                items.currentmodel.clear()
-                            }
                         }
-                    }
-                    Rectangle{
-                        id:saved_list
-                        visible: true
-                        width: parent.width/2
-                        height: parent.height/1.25
-                        color: "orange"
-                        border.width:3
-                        border.color: "transparent"
-                        anchors{
-                            right: parent.right
-                            rightMargin: (row2.height/80)*1.5
-                            verticalCenter: parent.verticalCenter
-                        }
-                        onVisibleChanged: NumberAnimation { target: saved_list; property: "scale"; from: 0; to: 1; duration: 450; easing.type: Easing.InOutQuad }
-                        GCText {
-                            anchors.centerIn: parent
-                            fontSize: smallSize
-                            font.bold: true
-                            text: qsTr("saved list")
-                        }
-                        MouseArea {
-                            anchors.fill: parent
-                            hoverEnabled: true
-                            onHoveredChanged: {
-                                if(containsMouse)
-                                { saved_list.border.color="lightblue";}
-                                else
-                                    saved_list.border.color="transparent"
-                            }
-                            onClicked: {
-                                items.currentmodel=saveitems
-                                current_list.visible=true
-                                parent.visible=false
-                            }
-                        }
-                    }
-                    Rectangle{
-                        id:current_list
-                        visible: false
-                        width: parent.width/2
-                        height: parent.height/1.25
-                        color: "orange"
-                        border.width:3
-                        border.color: "transparent"
-                        anchors{
-                            right: parent.right
-                            rightMargin: row2.height/40
-                            verticalCenter: parent.verticalCenter
-                        }
-                        onVisibleChanged: NumberAnimation { target: current_list; property: "scale"; from: 0; to: 1; duration: 450; easing.type: Easing.InOutQuad }
-                        GCText {
-                            anchors.centerIn: parent
-                            fontSize: smallSize
-                            font.bold: true
-                            text: qsTr("current list")
-                        }
-                        MouseArea {
-                            anchors.fill: parent
-                            hoverEnabled: true
-                            onHoveredChanged: {
-                                if(containsMouse)
-                                { current_list.border.color="lightblue";}
-                                else
-                                    current_list.border.color="transparent"
-                            }
-                            onClicked: {
-                                items.currentmodel=theModel
-                                saved_list.visible=true
-                                parent.visible=false
-                            }
+                        onClicked: {
+                            clear_all.clicked()
+                            theModel.clear()
                         }
                     }
                 }
             }
         }
+        Timer {
+            id: timer
+            interval: 1500
+            repeat: false
+//            onTriggered: {
+//                items.solved = true
+//            }
+        }
     }
 }
+

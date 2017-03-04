@@ -22,8 +22,23 @@
 .import QtQuick 2.0 as Quick
 var url = "qrc:/gcompris/src/activities/practice/resource/"
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 2
 var items
+
+var problemDataset = [
+            [
+                ['Anne ate 6 cookies.Samantha ate 4 more cookies than Anne.',[['How many cookies did Samantha eat?',10]]],
+                ['Donna made 5 posters.Elizabeth made twice as many posters as Donna.They hung up 7 posters.',[['How many posters did Elizabeth make ?',10],['How many posters do they have left?',3]]],
+            ],
+            [
+                ['Anne ate 6 cookies.Samantha ate 4 more cookies than Anne.',[['How many cookies did Samantha eat?',10]]],
+                ['Donna made 5 posters.Elizabeth made twice as many posters as Donna.They hung up 7 posters.',[['How many posters did Elizabeth make ?',10],['How many posters do they have left?',3]]],
+            ],
+        ]
+
+
+
+
 function start(items_) {
     items = items_
     currentLevel = 0
@@ -35,6 +50,26 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.sublevel = 0
+    items.problemData = problemDataset[currentLevel][items.sublevel]
+//    items.currentlevel = currentLevel
+//    items.sublevel = 1
+//    items.solved = false
+//    if(items.warningDialog.visible)
+//        items.warningDialog.visible = false
+}
+
+function initSublevel(){
+    items.problemData = problemDataset[currentLevel][items.sublevel]
+}
+
+function nextSublevel() {
+    if(++items.sublevel < problemDataset[currentLevel].length) {
+        initSublevel()
+    }
+    else {
+        nextLevel()
+    }
 }
 
 function nextLevel() {
@@ -50,28 +85,35 @@ function previousLevel() {
     }
     initLevel();
 }
-function calculate_result(input,choice){
-    var calculated_value;
-    switch (input["operator"]) {
-    case "+":
-        //console.log(input["firstop"]+input["secondop"]);
-        calculated_value=input["firstop"]+input["secondop"]
-        break;
-    case "-":
-        //console.log(input["firstop"]-input["secondop"]);
-        calculated_value=input["firstop"]-input["secondop"]
-        break;
-    case "/":
-        //console.log(input["firstop"]/input["secondop"]);
-        calculated_value=input["firstop"]/input["secondop"]
-        break;
-    default:
-        //console.log(input["firstop"]*input["secondop"]);
-        calculated_value=input["firstop"]*input["secondop"]
-    }
-     if(input["expected_result"]==calculated_value)
-         return [true,calculated_value]
-     return [false,calculated_value]
 
+function calculate_result(operand1,operator,operand2){
+    if(operand1!="" && operator!="" && operand2!=""){
+        var calculated_value;
+        switch (operator) {
+        case "+":
+            calculated_value = Number(operand1) + Number(operand2)
+            break;
+        case "-":
+            calculated_value = Number(operand1) - Number(operand2)
+            break;
+        case "/":
+            calculated_value = Number(operand1) / Number(operand2)
+            break;
+        default:
+            calculated_value = Number(operand1) * Number(operand2)
+        }
+        items.calculationResult = calculated_value
+    }
+    else
+        items.calculationResult = ""
 }
 
+function check(problemRepeater){
+    for( var i=0;i<problemRepeater.count;i++ ){
+        if(problemRepeater.itemAt(i).correct)
+            continue;
+        else
+            return false;
+    }
+    return true;
+}
