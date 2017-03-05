@@ -28,11 +28,11 @@ var items
 var problemDataset = [
             [
                 ['Anne ate 6 cookies.Samantha ate 4 more cookies than Anne.',[['How many cookies did Samantha eat?',10]]],
-                ['Donna made 5 posters.Elizabeth made twice as many posters as Donna.They hung up 7 posters.',[['How many posters did Elizabeth make ?',10],['How many posters do they have left?',3]]],
+                ['Donna made 5 posters.Elizabeth made twice as many posters as Donna.They hung up 7 posters.',[['How many posters did Elizabeth make ?',10],['How many posters do they have left?',8]]],
             ],
             [
                 ['Anne ate 6 cookies.Samantha ate 4 more cookies than Anne.',[['How many cookies did Samantha eat?',10]]],
-                ['Donna made 5 posters.Elizabeth made twice as many posters as Donna.They hung up 7 posters.',[['How many posters did Elizabeth make ?',10],['How many posters do they have left?',3]]],
+                ['Donna made 5 posters.Elizabeth made twice as many posters as Donna.They hung up 7 posters.',[['How many posters did Elizabeth make ?',10],['How many posters do they have left?',8]]],
             ],
         ]
 

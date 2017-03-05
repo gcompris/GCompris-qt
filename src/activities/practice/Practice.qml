@@ -444,10 +444,6 @@ ActivityBase {
                         onClicked: {
                             evaluate.clicked()
                             var input={"firstop":Number(firstop.text),"secondop":Number(secondop.text),"operator":operator.text,"result":Number(result.text)}
-                            //                            firstop.undo()
-                            //                            operator.undo()
-                            //                            secondop.undo()
-                            //                            result.undo()
                             theModel.insert(0,input)
                         }
 
@@ -468,15 +464,6 @@ ActivityBase {
             ListModel {
                 id: theModel
             }
-            //            ListModel{
-            //                id:saveitems
-            //            }
-            //            ListModel{
-            //                id:correctquestions
-            //            }
-            //            ListModel{
-            //                id:wrongquestions
-            //            }
             Rectangle{
                 id:header
                 height: (parent.height/40)*3
@@ -599,7 +586,7 @@ ActivityBase {
                             MouseArea {
                                 anchors.fill: parent
                                 onClicked: {
-                                    items.theModel.remove(index);
+                                    theModel.remove(index);
                                 }
                             }
                         }
