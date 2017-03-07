@@ -35,6 +35,7 @@ var numberOfLevel
 var index
 var imagesData = []
 var categoriesData = []
+var expertCategories = []
 var boardsUrl
 var answerTable = {}
 var totalImages
@@ -212,6 +213,9 @@ function getCategoryLevels() {
     // If expert mode is selected, select a random level (selectedLevel) from a random category (selectedCategory)
     else if(items.mode === "expert") {
         var selectedCategory = Math.floor(Math.random() * lessons.length)
+        while( expertCategories.indexOf(selectedCategory) == -1 ) {
+            selectedCategory = Math.floor(Math.random() * lessons.length)
+        }
         var selectedLevel = []
         selectedLevel[0] = lessons[selectedCategory][Math.floor(Math.random() * lessons[selectedCategory].length)]
         items.details = selectedLevel.map(function(ele) {
@@ -270,6 +274,9 @@ function getAllLessons(dataset) {
     var lessons = []
     for(var c = 0; c < dataset.length; c++) {
         lessons.push(dataset[c].levels[0].content)
+        if(dataset[c].allowExpertMode) {
+            expertCategories.push(c)
+        }
     }
     return lessons
 }
