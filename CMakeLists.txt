@@ -6,6 +6,10 @@ endif()
 
 project(gcompris-qt C CXX)
 
+# get all the redist dll needed for windows when compiling with vc
+set(CMAKE_INSTALL_UCRT_LIBRARIES 1)
+include(InstallRequiredSystemLibraries)
+
 # Set c++11 support
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
@@ -25,7 +29,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DQT_QML_DEBUG")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 70)
+set(GCOMPRIS_MINOR_VERSION 80)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 # Set the BUILD_DATE
@@ -115,13 +119,6 @@ if(KF5_FOUND)
     endif()
 endif()
 
-FIND_PROGRAM(LCONVERT_EXECUTABLE lconvert-qt5 lconvert
-  PATHS
-  ${Qt5_DIR}/../../../bin/
-  /usr/local/bin
-  /usr/bin/
-  NO_DEFAULT_PATH
-)
 FIND_PROGRAM(LRELEASE_EXECUTABLE lrelease-qt5 lrelease
   PATHS
   ${Qt5_DIR}/../../../bin/
@@ -139,10 +136,10 @@ set(ACTIVATION_MODE "no" CACHE STRING "Policy for activation [no|inapp|internal]
 option(WITH_DEMO_ONLY "Include only demo activities" OFF)
 
 option(WITH_DOWNLOAD "Internal download" ON)
-if(WITH_DOWNLOAD)
-  set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
-  set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
-endif(WITH_DOWNLOAD)
+# @FIXME These permissions should be removed if download is disable
+#        but it makes the application crash on exit (tested on Android 6)
+set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
+set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
 
 # Set output directory
 if(CMAKE_HOST_APPLE)
@@ -223,18 +220,25 @@ foreach(PoSource ${TRANSLATIONS_FILES})
     # Remove the obsolete translations and set po in the ts output file
     COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
     # Convert the po into ts
-    COMMAND ${LCONVERT_EXECUTABLE} -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+    COMMAND Qt5::lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
     # Convert the ts in qm removing non finished translations
-    COMMAND ${LRELEASE_EXECUTABLE} -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+    COMMAND Qt5::lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
     )
   list(APPEND QM_FILES ${QmOutput})
 endforeach()
 
 # Install translations
-add_custom_target(BuildTranslations
-  DEPENDS ${QM_FILES}
-  COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
-  )
+if (WIN32)
+    add_custom_target(BuildTranslations
+        DEPENDS ${QM_FILES}
+        COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
+    )
+else()
+    add_custom_target(BuildTranslations ALL
+        DEPENDS ${QM_FILES}
+        COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
+    )
+endif()
 
 add_custom_command(
     OUTPUT doBundleTranslations
@@ -443,10 +447,16 @@ else()
       execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init)
     endif()
 
+    # for visual studio, we need to create a vcxproj
+    if(WIN32 AND NOT MINGW)
+      set(_qmake_options -spec win32-msvc2015 -tp vc)
+    else()
+      set(_qmake_options "")
+    endif()
     ExternalProject_Add(qml_box2d
       DOWNLOAD_COMMAND ""
       SOURCE_DIR ${_box2d_source_dir}
-      CONFIGURE_COMMAND ${_qmake_program} ${_box2d_source_dir}/box2d.pro
+      CONFIGURE_COMMAND ${_qmake_program} ${_qmake_options} ${_box2d_source_dir}/box2d.pro
       BUILD_COMMAND ${CMAKE_MAKE_PROGRAM}
       INSTALL_DIR ${_box2d_install_dir}
       INSTALL_COMMAND cp ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
@@ -464,3 +474,6 @@ else()
 endif()
 
 add_subdirectory(src)
+
+add_custom_target(binaries)
+add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)

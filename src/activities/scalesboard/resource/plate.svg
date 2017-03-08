@@ -14,19 +14,10 @@
    height="119.52509"
    id="svg4052"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="plate.svg">
   <defs
      id="defs4054">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3913"
-       gradientUnits="userSpaceOnUse"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381" />
     <linearGradient
        id="linearGradient3771">
       <stop
@@ -41,56 +32,7 @@
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3771"
-       id="linearGradient3909"
-       gradientUnits="userSpaceOnUse"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381" />
-    <linearGradient
-       id="linearGradient4032">
-      <stop
-         style="stop-color:#c26226;stop-opacity:1;"
-         offset="0"
-         id="stop4034" />
-      <stop
-         style="stop-color:#fff5ee;stop-opacity:1;"
-         offset="1"
-         id="stop4036" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient3911"
-       gradientUnits="userSpaceOnUse"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381" />
-    <linearGradient
-       id="linearGradient4039">
-      <stop
-         style="stop-color:#c26226;stop-opacity:1;"
-         offset="0"
-         id="stop4041" />
-      <stop
-         style="stop-color:#fff5ee;stop-opacity:1;"
-         offset="1"
-         id="stop4043" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
        id="linearGradient4736"
-       gradientUnits="userSpaceOnUse"
-       x1="212.99014"
-       y1="531.12665"
-       x2="209.3701"
-       y2="473.8381" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3771"
-       id="linearGradient4738"
        gradientUnits="userSpaceOnUse"
        x1="212.99014"
        y1="531.12665"
@@ -191,7 +133,7 @@
        sodipodi:ry="10.991413"
        style="fill:#dedec3;fill-opacity:1;stroke:#000000;stroke-width:3.34201694;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        sodipodi:type="arc"
-       d="m 361.7174,557.08246 c 0,6.07039 -5.07015,10.99141 -11.32449,10.99141 -6.25434,0 -11.32448,-4.92102 -11.32448,-10.99141 0,-6.07039 5.07014,-10.99141 11.32448,-10.99141 6.25434,0 11.32449,4.92102 11.32449,10.99141 z"
+       d="m 361.7174,557.08246 a 11.324486,10.991413 0 0 1 -11.32449,10.99141 11.324486,10.991413 0 0 1 -11.32448,-10.99141 11.324486,10.991413 0 0 1 11.32448,-10.99141 11.324486,10.991413 0 0 1 11.32449,10.99141 z"
        transform="matrix(0.29929249,0,0,0.29914852,100.84432,542.64542)"
        sodipodi:cy="557.08246"
        sodipodi:cx="350.39291" />

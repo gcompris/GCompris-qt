@@ -17,24 +17,7 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="plus.svg">
   <defs
-     id="defs4">
-    <radialGradient
-       r="105.16"
-       gradientTransform="matrix(0.96594,0,0,0.96594,106.15716,55.534461)"
-       cx="52.408001"
-       cy="36.195"
-       gradientUnits="userSpaceOnUse"
-       id="radialGradient3016">
-      <stop
-         offset="0"
-         stop-color="#d1f593"
-         id="stop8" />
-      <stop
-         offset="1"
-         stop-color="#81ce09"
-         id="stop10" />
-    </radialGradient>
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"

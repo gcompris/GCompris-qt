@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,8 +13,7 @@
    height="200"
    id="svg4390"
    sodipodi:version="0.32"
-   inkscape:version="0.44.1"
-   sodipodi:docbase="/home/mat/Travaux/Inkscape/Gcompris/misc"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="13_monkey.svg"
    version="1.0">
   <defs

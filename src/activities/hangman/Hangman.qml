@@ -29,11 +29,11 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
-    
+
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
-    
+
     onStart: focus = true
     onStop:  { }
     // When going on configuration, it steals the focus and re set it to the activity.
@@ -53,13 +53,12 @@ ActivityBase {
 
         // system locale by default
         property string locale: "system"
-                
-        readonly property string wordsResource: "data2/words/words.rcc"
+
         property bool englishFallback: false
-        
+
         signal start
         signal stop
-        
+
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
@@ -76,6 +75,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias keyboard: keyboard
             property alias hidden: hidden
+            property alias guessedText: guessedText
             property alias textinput: textinput
             property alias wordImage: wordImage
             property alias score: score
@@ -85,6 +85,7 @@ ActivityBase {
             property int remainingLife
             property variant goodWord
             property int goodWordIndex
+            property bool easyMode: false
             property alias englishFallbackDialog: englishFallbackDialog
 
             function playWord() {
@@ -124,10 +125,41 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 bottom: bar.top
                 bottomMargin: 5 * ApplicationInfo.ratio
+
             }
             z: 11
         }
-        
+
+
+        GCText {
+            id: guessedText
+            fontSize: smallSize
+            color: "#FFFFFF"
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
+            width: parent.width - 2*clock.width
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+            }
+            z: 12
+        }
+
+        Rectangle {
+            width: guessedText.width
+            height: guessedText.height
+            radius: 10
+            border.width: 1
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+            }
+            z: 11
+        }
+
         TextInput {
             // Helper element to capture composed key events like french ô which
             // are not available via Keys.onPressed() on linux. Must be
@@ -144,20 +176,23 @@ ActivityBase {
             }
             onAccepted: if(items.remainingLife === 0) Activity.nextSubLevel()
         }
-        
+
         Item {
   		    id: imageframe
             width: Math.min(300 * ApplicationInfo.ratio,
                             background.width * 0.8,
-                            hidden.y)
+                            hidden.y) - guessedText.height
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: guessedText.bottom
             y: 5 * ApplicationInfo.ratio
             z: 10
+            opacity: items.easyMode ? 1 : 0
             Image {
 		        id: wordImage
 		        smooth: true
                 visible: false
+
                 anchors.fill: parent
                 property string nextSource
                 function changeSource(nextSource_) {
@@ -234,8 +269,17 @@ ActivityBase {
                                 background: dialogActivityConfig
                                 label: qsTr("Select your locale")
                             }
+
+                            GCDialogCheckBox {
+                                id: easyModeBox
+                                width: parent.width
+                                text: qsTr("Display image to find as hint")
+                                checked: items.easyMode
+                                onCheckedChanged: {
+                                    items.easyMode = checked
+                                }
+                            }
                         }
-                        
                     }
                 }
             }
@@ -244,6 +288,9 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["locale"]) {
                     background.locale = dataToSave["locale"];
+                }
+                if(dataToSave && dataToSave["easyMode"]) {
+                    items.easyMode = (dataToSave["easyMode"] === "true");
                 }
             }
             onSaveData: {
@@ -254,7 +301,8 @@ ActivityBase {
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
-                dataToSave = {"locale": newLocale }
+                dataToSave = {"locale": newLocale,
+                              "easyMode": "" + items.easyMode }
 
                 background.locale = newLocale;
 
@@ -264,7 +312,6 @@ ActivityBase {
                     background.start();
                 }
             }
-
 
             function setDefaultValues() {
                 var localeUtf8 = background.locale;
@@ -280,7 +327,7 @@ ActivityBase {
                 }
             }
         }
-        
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -302,7 +349,7 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
-        
+
         Score {
             id: score
             anchors.top: undefined
@@ -311,7 +358,7 @@ ActivityBase {
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: keyboard.top
         }
-        
+
         BarButton {
 		  id: ok
 		  source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
@@ -371,8 +418,7 @@ ActivityBase {
                 }
             }
         }
-        
-        
+
         VirtualKeyboard {
             id: keyboard
             anchors.bottom: parent.bottom
@@ -381,7 +427,7 @@ ActivityBase {
             onKeypress: Activity.processKeyPress(text);
             onError: console.log("VirtualKeyboard error: " + msg);
         }
-        
+
         Bonus {
             id: bonus
             interval: 2000
@@ -405,5 +451,4 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
-
 }

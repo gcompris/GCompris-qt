@@ -234,6 +234,13 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
 
+    /**
+     * Path where resources are downloaded and stored.
+     *
+     * @sa DownloadManager
+     */
+    Q_PROPERTY(QString cachePath READ cachePath WRITE setCachePath NOTIFY cachePathChanged)
+
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
@@ -311,13 +318,13 @@ public:
     QString locale() const {
         return m_locale;
     }
-    void setLocale(const QString newLocale) {
+    void setLocale(const QString &newLocale) {
         m_locale = newLocale;
         emit localeChanged();
     }
 
     QString font() const { return m_font; }
-    void setFont(const QString newFont) {
+    void setFont(const QString &newFont) {
         m_font = newFont;
         emit fontChanged();
     }
@@ -362,7 +369,7 @@ public:
     void setDemoMode(const bool newMode);
 
     QString codeKey() const { return m_codeKey; }
-    void setCodeKey(const QString newCodeKey) {
+    void setCodeKey(const QString &newCodeKey) {
         m_codeKey = newCodeKey;
         emit notifyCodeKeyChanged();
     }
@@ -386,7 +393,7 @@ public:
      *           1 if the code is valid but out of date
      *           2 if the code is valid and under 2 years
      */
-    Q_INVOKABLE uint checkActivationCode(const QString code);
+    Q_INVOKABLE uint checkActivationCode(const QString &code);
 
     /**
      * Check Payment API
@@ -409,15 +416,21 @@ public:
 	}
 
     QString wordset() const { return m_wordset; }
-    void setWordset(const QString newWordset) {
+    void setWordset(const QString &newWordset) {
         m_wordset = newWordset;
         emit wordsetChanged();
     }
 
     QString downloadServerUrl() const { return m_downloadServerUrl; }
-    void setDownloadServerUrl(const QString newDownloadServerUrl) {
+    void setDownloadServerUrl(const QString &newDownloadServerUrl) {
         m_downloadServerUrl = newDownloadServerUrl;
         emit downloadServerUrlChanged();
+    }
+
+    QString cachePath() const { return m_cachePath; }
+    void setCachePath(const QString &newCachePath) {
+        m_cachePath = newCachePath;
+        emit cachePathChanged();
     }
 
     quint32 exeCount() const { return m_exeCount; }
@@ -447,6 +460,13 @@ public:
         emit lastGCVersionRanChanged();
     }
 
+    /**
+     * Check if we use the external wordset for activity based on lang_api
+     * @returns  true if wordset is loaded
+     *           false if wordset is not loaded
+     */
+    Q_INVOKABLE bool useExternalWordset();
+
 protected slots:
 
     Q_INVOKABLE void notifyShowLockedActivitiesChanged();
@@ -471,6 +491,7 @@ protected slots:
     Q_INVOKABLE void notifyWordsetChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
+    Q_INVOKABLE void notifyCachePathChanged();
 
     Q_INVOKABLE void notifyExeCountChanged();
 
@@ -540,6 +561,7 @@ signals:
     void baseFontSizeChanged();
 
     void downloadServerUrlChanged();
+    void cachePathChanged();
 
     void exeCountChanged();
 
@@ -584,6 +606,7 @@ private:
     const qreal m_fontLetterSpacingMax;
 
     QString m_downloadServerUrl;
+    QString m_cachePath;
 
     quint32 m_exeCount;
 

@@ -30,6 +30,6 @@ Babymatch {
     onStop: {}
 
     boardsUrl: "qrc:/gcompris/src/activities/geo-country/resource/"
-    levelCount: 15
+    levelCount: 16
     answerGlow: false
 }

@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/tangram *.qml *.svg *.js resource/*/*)
+GCOMPRIS_ADD_RCC(activities/tangram *.qml *.svg dataset.js tangram.js resource/*/*)

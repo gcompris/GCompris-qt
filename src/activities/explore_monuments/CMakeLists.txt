@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/explore_monuments *.qml *.png resource/*.txt resource/*/*)
+GCOMPRIS_ADD_RCC(activities/explore_monuments *.qml *.svg resource/*.txt resource/*/*)

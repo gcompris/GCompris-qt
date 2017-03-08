@@ -30,7 +30,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Build the same model")
   description: qsTr("Drive the crane and copy the model")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: " Click on each item in turn in the left frame and move them to mirror their position in the right frame."
   goal: qsTr("Motor-coordination")
   prerequisite: qsTr("Mouse/keyboard manipulation")
   manual: qsTr("Move the items in the left frame to copy their position in the right model. Next to the crane itself, you will find four arrows that let you move the items. To select the item to move, just click on it. If you prefer, you can use the arrow keys and the space or tab key instead. On a mobile version, you can also swipe up/down/left/right to move the items in the left frame.")

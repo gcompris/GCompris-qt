@@ -24,11 +24,8 @@ import QtQuick 2.1
 import "../../core"
 import "../algebra_by"
 
-
-Algebra{
-
-    onStart:{
-        operand.text ="x"
+Algebra {
+    onStart: {
+        operand.text = "x"
     }
-
 }

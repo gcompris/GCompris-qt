@@ -14,7 +14,8 @@
    version="1.1"
    inkscape:version="0.91 r13725"
    width="109.60852"
-   height="172.24196">
+   height="172.24196"
+   sodipodi:docname="tux_top.svg">
   <metadata
      id="metadata4167">
     <rdf:RDF>
@@ -59,18 +60,6 @@
        id="linearGradient4610-9"
        xlink:href="#linearGradient4604"
        inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient4174"
-       inkscape:collect="always">
-      <stop
-         id="stop4176"
-         offset="0"
-         style="stop-color:#275eb1;stop-opacity:1" />
-      <stop
-         id="stop4178"
-         offset="1"
-         style="stop-color:#e6ecf9;stop-opacity:1" />
-    </linearGradient>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"

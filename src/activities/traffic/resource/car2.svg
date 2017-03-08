@@ -14,8 +14,8 @@
    viewBox="0 0 799.92469 399.99757"
    sodipodi:version="0.32"
    version="1.0"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="car1.svg"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="car2.svg"
    width="100%"
    height="100%">
   <defs
@@ -31,51 +31,6 @@
          style="stop-color:#b79700"
          offset="1" />
     </linearGradient>
-    <radialGradient
-       id="radialGradient3189"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="819.90002"
-       cx="378.79001"
-       gradientTransform="matrix(1.1693,0,0,0.93776,-273.1,-147.55)"
-       r="115.39"
-       inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient3193"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="598.63"
-       cx="294.42999"
-       gradientTransform="matrix(1.5041,0,0,0.74199,-264.04,-146.71)"
-       r="91.234001"
-       inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient3197"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="153.64999"
-       cx="897.23999"
-       gradientTransform="matrix(-0.39086,0,0,3.6334,703.38,-167.47)"
-       r="15.849"
-       inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient3200"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="153.64999"
-       cx="897.23999"
-       gradientTransform="matrix(0.39086,0,0,3.6334,-343,-162.47)"
-       r="15.849"
-       inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient3205"
-       xlink:href="#linearGradient239"
-       gradientUnits="userSpaceOnUse"
-       cy="319.37"
-       cx="657.76001"
-       gradientTransform="matrix(0.65803,0,0,1.5197,-252.14,-111.82)"
-       r="1269.3"
-       inkscape:collect="always" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient239"

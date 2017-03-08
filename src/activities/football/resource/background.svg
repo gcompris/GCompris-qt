@@ -21,15 +21,7 @@
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0">
   <defs
-     id="defs3">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 325 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="1000 : 325 : 1"
-       inkscape:persp3d-origin="500 : 216.66667 : 1"
-       id="perspective27" />
-  </defs>
+     id="defs3" />
   <sodipodi:namedview
      showgrid="false"
      guidetolerance="0.32000000pt"

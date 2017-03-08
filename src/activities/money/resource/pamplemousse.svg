@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg638"
    sodipodi:version="0.32"
    width="355.28000pt"
    height="263.89000pt"
    xml:space="preserve"
-   sodipodi:docbase="/mnt/Documents/Dessins/Vectoriels/Food"
    sodipodi:docname="pamplemousse.svg"
-   inkscape:version="0.42"><metadata
+   inkscape:version="0.91 r13725"
+   version="1.1"><metadata
      id="metadata25"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
@@ -27,27 +28,7 @@
          id="stop646" /><stop
          style="stop-color:#ffffff;stop-opacity:0;"
          offset="1"
-         id="stop647" /></linearGradient><linearGradient
-       xlink:href="#linearGradient645"
-       id="linearGradient648"
-       x1="6.04377463e-2"
-       y1="0.2343702"
-       x2="0.65934062"
-       y2="-0.15625003" /><radialGradient
-       xlink:href="#linearGradient645"
-       id="radialGradient649"
-       cx="1.15384603"
-       cy="0.28906041"
-       r="1.59239042"
-       fx="1.15384603"
-       fy="0.28906041" /><radialGradient
-       xlink:href="#linearGradient645"
-       id="radialGradient651"
-       cx="1.64833181e-2"
-       cy="0.97661078"
-       r="1.33250308"
-       fx="1.64833181e-2"
-       fy="0.97661078" /><radialGradient
+         id="stop647" /></linearGradient><radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient645"
        id="radialGradient1339"

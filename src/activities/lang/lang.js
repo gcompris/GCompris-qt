@@ -20,7 +20,8 @@
 *
 *   You should have received a copy of the GNU General Public License
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
-*/.pragma library
+*/
+.pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
@@ -50,36 +51,9 @@ function start() {
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
 
-    dataset = Lang.load(items.parser, baseUrl,
-                        GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                        "content-"+ locale +".json")
-
-    // If dataset is empty, we try to load from short locale
-    // and if not present again, we switch to default one
-    var localeUnderscoreIndex = locale.indexOf('_')
-    if(!dataset) {
-        var localeShort;
-        // We will first look again for locale xx (without _XX if exist)
-        if(localeUnderscoreIndex > 0) {
-            localeShort = locale.substring(0, localeUnderscoreIndex)
-        } else {
-            localeShort = locale;
-        }
-        dataset = Lang.load(items.parser, baseUrl,
-                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                            "content-"+localeShort+ ".json")
-    }
-
-    // If still dataset is empty then fallback to english
-    if(!dataset) {
-        // English fallback
-        items.background.englishFallback = true
-        dataset = Lang.load(items.parser, baseUrl,
-                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                            "content-en.json")
-    } else {
-        items.background.englishFallback = false
-    }
+    var data = Lang.loadDataset(items.parser, baseUrl, locale);
+    dataset = data["dataset"];
+    items.background.englishFallback = data["englishFallback"];
 
     // We have to keep it because we can't access content from the model
     lessons = Lang.getAllLessons(dataset)

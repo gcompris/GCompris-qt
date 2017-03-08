@@ -15,7 +15,7 @@
    height="610.55719"
    xml:space="preserve"
    sodipodi:docname="banane.svg"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    sodipodi:modified="true"><metadata
@@ -52,7 +52,7 @@
        sodipodi:rx="15.792297"
        sodipodi:cy="720.72424"
        sodipodi:cx="391.01697"
-       d="m 406.80927,720.72424 c 0,5.23311 -7.07046,9.47538 -15.7923,9.47538 -8.72185,0 -15.7923,-4.24227 -15.7923,-9.47538 0,-5.2331 7.07045,-9.47537 15.7923,-9.47537 8.72184,0 15.7923,4.24227 15.7923,9.47537 z"
+       d="m 406.80927,720.72424 a 15.792297,9.4753723 0 0 1 -15.7923,9.47538 15.792297,9.4753723 0 0 1 -15.7923,-9.47538 15.792297,9.4753723 0 0 1 15.7923,-9.47537 15.792297,9.4753723 0 0 1 15.7923,9.47537 z"
        id="path627"
        style="fill:#5d2b1a;fill-opacity:1;fill-rule:evenodd;stroke:none"
        sodipodi:type="arc" /><path

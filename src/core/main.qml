@@ -121,23 +121,14 @@ Window {
             // words.rcc is there -> register old file first
             // then try to update in the background
             if(DownloadManager.updateResource(wordset)) {
-                DownloadManager.resourceRegistered.connect(function() {
-                    // not sure if needed, we check if the resource registered is the one we updated here?
-                    if(wordset === arguments[0]) {
-                        DownloadManager.resourceRegistered.disconnect(arguments.callee);
-                        // force configuration to use the local wordset
-                        ApplicationSettings.wordset = wordset
-                    }
-                })
+                ApplicationSettings.wordset = wordset
             }
-
-
         } else if(ApplicationSettings.wordset) { // Only if wordset specified
             // words.rcc has not been downloaded yet -> ask for download
             Core.showMessageDialog(
                         main,
-                        qsTr("The images for several activities are not yet installed.")
-                        + qsTr("Do you want to download them now?"),
+                        qsTr("The images for several activities are not yet installed. " +
+                        "Do you want to download them now?"),
                         qsTr("Yes"),
                         function() {
                             if (DownloadManager.downloadResource(wordset))
@@ -188,29 +179,17 @@ Window {
                             pageView.currentItem.focus = true
                             checkWordset()
                         }
-            );
+             );
         }
         else {
             // Register voices-resources for current locale, updates/downloads only if
             // not prohibited by the settings
             if (!DownloadManager.areVoicesRegistered()) {
-                if (DownloadManager.updateResource(
-                            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))) {
-                    DownloadManager.resourceRegistered.connect(function() {
-                        // not sure if needed, we check if the resource registered is the one we updated here?
-                        if(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale) === arguments[0]) {
-                            DownloadManager.resourceRegistered.disconnect(arguments.callee);
-                            checkWordset();
-                        }
-                    });
-                }
-                else {
-                    checkWordset()
-                }
+                DownloadManager.updateResource(
+                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
             }
-            else {
-                checkWordset()
-            }
+
+            checkWordset()
 
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
@@ -251,6 +230,8 @@ Window {
             function getTransition(properties)
             {
                 audioVoices.clearQueue()
+                audioVoices.stop()
+
                 if(!properties.exitItem.isDialog &&        // if coming from menu and
                         !properties.enterItem.isDialog)    // going into an activity then
                     playIntroVoice(properties.enterItem.activityInfo.name);    // play intro

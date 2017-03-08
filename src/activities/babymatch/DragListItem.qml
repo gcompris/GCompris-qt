@@ -150,6 +150,7 @@ Item {
                 anchors.fill: parent
 
                 onPressed: {
+                    Activity.hideInstructions()
                     item.pressed()
                     tileImage.toSmall()
                     tileImage.anchors.centerIn = undefined

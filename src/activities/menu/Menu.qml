@@ -181,10 +181,12 @@ ActivityBase {
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
         Keys.onPressed: {
-            if (event.modifiers === Qt.ControlModifier &&
-                    event.key === Qt.Key_S) {
-                // Ctrl+S toggle show / hide section
-                ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
+            // Ctrl-modifiers should never be handled by the search-field
+            if (event.modifiers === Qt.ControlModifier) {
+                if (event.key === Qt.Key_S) {
+                    // Ctrl+S toggle show / hide section
+                    ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
+                }
             } else if(currentTag === "search") {
                 // forward to the virtual keyboard the pressed keys
                 if(event.key == Qt.Key_Backspace)
@@ -258,11 +260,11 @@ ActivityBase {
                     function selectCurrentItem() {
                         section.currentIndex = index
                         activity.currentTag = modelData.tag
+                        particles.burst(10)
                         if(modelData.tag === "search") {
                             ActivityInfoTree.filterBySearch(searchTextField.text);
                         }
                         else {
-                            particles.burst(10)
                             ActivityInfoTree.filterByTag(modelData.tag)
                             ActivityInfoTree.filterLockedActivities()
                             ActivityInfoTree.filterEnabledActivities()
@@ -277,7 +279,7 @@ ActivityBase {
 
                 Rectangle {
                     anchors.fill: parent
-                    color:  "#99FFFFFF"
+                    color:  "#5AFFFFFF"
                 }
                 Image {
                     source: "qrc:/gcompris/src/core/resource/button.svg"
@@ -320,7 +322,7 @@ ActivityBase {
                     font.weight: Font.DemiBold
                     color: 'white'
                     text: qsTr("Put your favorite activities here by selecting the " +
-                               "sun on each activity top right.")
+                               "sun at the top right of that activity.")
                 }
                 Rectangle {
                     anchors.fill: instructionTxt
@@ -526,6 +528,32 @@ ActivityBase {
                 GradientStop { position: 1.0; color: "#AAA" }
             }
 
+            Connections {
+                // On mobile with GCompris' virtual keyboard activated:
+                // Force invisibility of Androids virtual keyboard:
+                target: (ApplicationInfo.isMobile && activity.currentTag === "search"
+                         && ApplicationSettings.isVirtualKeyboard) ? Qt.inputMethod : null
+                onVisibleChanged: {
+                    if (ApplicationSettings.isVirtualKeyboard && visible)
+                        Qt.inputMethod.hide();
+                }
+                onAnimatingChanged: {
+                    // note: seems to be never fired!
+                    if (ApplicationSettings.isVirtualKeyboard && Qt.inputMethod.visible)
+                        Qt.inputMethod.hide();
+                }
+            }
+
+            Connections {
+                target: activity
+                onCurrentTagChanged: {
+                    if (activity.currentTag === 'search') {
+                        searchTextField.focus = true;
+                    } else
+                        activity.focus = true;
+                }
+            }
+
             TextField {
                 id: searchTextField
                 width: parent.width
@@ -536,19 +564,31 @@ ActivityBase {
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 font.family: GCSingletonFontLoader.fontLoader.name
-                // Don't let the android keyboard interfere with the virtual keyboard.
-                // Both of them should not be allowed to work simultaneously
-                activeFocusOnPress: ApplicationInfo.isMobile ? !ApplicationSettings.isVirtualKeyboard : true
+                inputMethodHints: Qt.ImhNoPredictiveText
+                // Note: we give focus to the textfield also in case
+                // isMobile && !ApplicationSettings.isVirtualKeyboard
+                // in conjunction with auto-hiding the inputMethod to always get
+                // an input-cursor:
+                activeFocusOnPress: true //ApplicationInfo.isMobile ? !ApplicationSettings.isVirtualKeyboard : true
+
+                Keys.onReturnPressed: {
+                    if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
+                        Qt.inputMethod.hide();
+                    activity.focus = true;
+                }
+
+                onEditingFinished: {
+                    if (ApplicationInfo.isMobile && !ApplicationSettings.isVirtualKeyboard)
+                        Qt.inputMethod.hide();
+                    activity.focus = true;
+                }
 
                 style: TextFieldStyle {
                     placeholderTextColor: "black"
                 }
 
                 placeholderText: qsTr("Search specific activities")
-                onTextChanged: {
-                    activity.inputText = searchTextField.text
-                    ActivityInfoTree.filterBySearch(searchTextField.text);
-                }
+                onTextChanged: ActivityInfoTree.filterBySearch(searchTextField.text);
             }
         }
 
@@ -660,8 +700,7 @@ ActivityBase {
                 ActivityInfoTree.filterByTag(activity.currentTag)
                 ActivityInfoTree.filterLockedActivities()
                 ActivityInfoTree.filterEnabledActivities()
-            }
-            else
+            } else
                 ActivityInfoTree.filterBySearch(activity.inputText);
             home()
         }

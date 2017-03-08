@@ -55,7 +55,7 @@ Item {
             id: textItem
             z: 11
             // textFound is the rich text with letter found, spelling is the text in the dataset
-            text:"<font color=\"white\">" + (selected ? textFound : spelling) + "</font>"
+            text:"<font color=\"#2a2a2a\">" + (selected ? textFound : spelling) + "</font>"
             property string textFound: spelling
             textFormat: Text.RichText
             font.pointSize: NaN  // need to clear font.pointSize explicitly
@@ -67,7 +67,7 @@ Item {
             wrapMode: spelling.indexOf(' ') === -1 ? Text.WrapAnywhere : Text.WordWrap
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            styleColor: "#2a2a2a"
+            styleColor: "white"
         }
 
         ParticleSystemStarLoader {

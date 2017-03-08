@@ -26,7 +26,7 @@
 .import QtQml 2.2 as Qml
 
 /* The format and the dataset for the traffic game in gcompris
- * is taken from from
+ * is taken from
  * http://www.javascript-games.org/puzzle/rushhour/
  *
  * [LevelX]

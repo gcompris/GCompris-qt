@@ -13,60 +13,10 @@
    height="520"
    id="svg6117"
    version="1.1"
-   inkscape:version="0.48.0 r9654"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="background.svg">
   <defs
-     id="defs6119">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective3495" />
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2442" />
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2429" />
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2416" />
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2403" />
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2390" />
-    <inkscape:perspective
-       id="perspective10"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       sodipodi:type="inkscape:persp3d" />
-  </defs>
+     id="defs6119" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -94,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -144,7 +94,7 @@
          transform="translate(-965.28539,35.30369)"
          style="fill:#4b8a31;fill-opacity:1;stroke:#4c7144;stroke-opacity:1">
         <path
-           d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+           d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
            sodipodi:ry="35"
            sodipodi:rx="35"
            sodipodi:cy="875"
@@ -167,7 +117,7 @@
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          inkscape:export-filename="/home/qubodup/bush.png"
-         d="m 1010,875 a 35,35 0 1 1 -70,0 35,35 0 1 1 70,0 z"
+         d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
          sodipodi:ry="35"
          sodipodi:rx="35"
          sodipodi:cy="875"
@@ -188,12 +138,12 @@
          sodipodi:cy="875"
          sodipodi:rx="35"
          sodipodi:ry="35"
-         d="m 1010,875 a 35,35 0 1 1 -70,0 35,35 0 1 1 70,0 z" />
+         d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z" />
       <path
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          inkscape:export-filename="/home/qubodup/bush.png"
-         d="m 1010,875 a 35,35 0 1 1 -70,0 35,35 0 1 1 70,0 z"
+         d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
          sodipodi:ry="35"
          sodipodi:rx="35"
          sodipodi:cy="875"
@@ -216,7 +166,7 @@
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
-         d="m 860,800 a 40,80 0 1 1 -80,0 40,80 0 1 1 80,0 z"
+         d="m 860,800 a 40,80 0 0 1 -40,80 40,80 0 0 1 -40,-80 40,80 0 0 1 40,-80 40,80 0 0 1 40,80 z"
          sodipodi:ry="80"
          sodipodi:rx="40"
          sodipodi:cy="800"
@@ -240,7 +190,7 @@
            inkscape:export-ydpi="90"
            inkscape:export-xdpi="90"
            inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
-           d="m 860,800 c 0,44.18278 -17.90861,80 -40,80 -22.09139,0 -40,-35.81722 -40,-80 0,-44.18278 17.90861,-80 40,-80 22.09139,0 40,35.81722 40,80 z"
+           d="m 860,800 a 40,80 0 0 1 -40,80 40,80 0 0 1 -40,-80 40,80 0 0 1 40,-80 40,80 0 0 1 40,80 z"
            sodipodi:ry="80"
            sodipodi:rx="40"
            sodipodi:cy="800"
@@ -265,7 +215,7 @@
            inkscape:export-ydpi="90"
            inkscape:export-xdpi="90"
            inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
-           d="m 860,800 c 0,44.18278 -17.90861,80 -40,80 -22.09139,0 -40,-35.81722 -40,-80 0,-44.18278 17.90861,-80 40,-80 22.09139,0 40,35.81722 40,80 z"
+           d="m 860,800 a 40,80 0 0 1 -40,80 40,80 0 0 1 -40,-80 40,80 0 0 1 40,-80 40,80 0 0 1 40,80 z"
            sodipodi:ry="80"
            sodipodi:rx="40"
            sodipodi:cy="800"
@@ -290,7 +240,7 @@
            inkscape:export-ydpi="90"
            inkscape:export-xdpi="90"
            inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
-           d="m 860,800 c 0,44.18278 -17.90861,80 -40,80 -22.09139,0 -40,-35.81722 -40,-80 0,-44.18278 17.90861,-80 40,-80 22.09139,0 40,35.81722 40,80 z"
+           d="m 860,800 a 40,80 0 0 1 -40,80 40,80 0 0 1 -40,-80 40,80 0 0 1 40,-80 40,80 0 0 1 40,80 z"
            sodipodi:ry="80"
            sodipodi:rx="40"
            sodipodi:cy="800"
@@ -306,7 +256,7 @@
            inkscape:export-ydpi="90"
            inkscape:export-xdpi="90"
            inkscape:export-filename="/home/qubodup/bush.png"
-           d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+           d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
            sodipodi:ry="35"
            sodipodi:rx="35"
            sodipodi:cy="875"
@@ -324,7 +274,7 @@
            sodipodi:cy="875"
            sodipodi:rx="35"
            sodipodi:ry="35"
-           d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+           d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
            inkscape:export-filename="/home/qubodup/bush.png"
            inkscape:export-xdpi="90"
            inkscape:export-ydpi="90" />
@@ -340,13 +290,13 @@
            sodipodi:cy="875"
            sodipodi:rx="35"
            sodipodi:ry="35"
-           d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z" />
+           d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z" />
         <path
            transform="translate(33,17)"
            inkscape:export-ydpi="90"
            inkscape:export-xdpi="90"
            inkscape:export-filename="/home/qubodup/bush.png"
-           d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+           d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
            sodipodi:ry="35"
            sodipodi:rx="35"
            sodipodi:cy="875"
@@ -431,7 +381,7 @@
          sodipodi:cy="875"
          sodipodi:rx="35"
          sodipodi:ry="35"
-         d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+         d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
          inkscape:export-filename="/home/qubodup/bush.png"
          inkscape:export-xdpi="90"
          inkscape:export-ydpi="90" />
@@ -507,7 +457,7 @@
              inkscape:connector-curvature="0" />
           <path
              transform="translate(-48,20)"
-             d="m 474,1393 c 0,20.4345 -29.54921,37 -66,37 -36.45079,0 -66,-16.5655 -66,-37 0,-20.4345 29.54921,-37 66,-37 36.45079,0 66,16.5655 66,37 z"
+             d="m 474,1393 a 66,37 0 0 1 -66,37 66,37 0 0 1 -66,-37 66,37 0 0 1 66,-37 66,37 0 0 1 66,37 z"
              sodipodi:ry="37"
              sodipodi:rx="66"
              sodipodi:cy="1393"
@@ -590,7 +540,7 @@
            sodipodi:cy="242"
            sodipodi:rx="85"
            sodipodi:ry="85"
-           d="m 481,242 c 0,46.9442 -38.0558,85 -85,85 -46.9442,0 -85,-38.0558 -85,-85 0,-46.9442 38.0558,-85 85,-85 46.9442,0 85,38.0558 85,85 z"
+           d="m 481,242 a 85,85 0 0 1 -85,85 85,85 0 0 1 -85,-85 85,85 0 0 1 85,-85 85,85 0 0 1 85,85 z"
            transform="matrix(0.2117647,0,0,0.2117647,422.64118,256.75294)" />
         <path
            inkscape:export-ydpi="90"
@@ -603,7 +553,7 @@
            inkscape:connector-curvature="0" />
         <path
            transform="matrix(0.2941176,0,0,0.2941176,265.02941,207.82353)"
-           d="m 481,242 c 0,46.9442 -38.0558,85 -85,85 -46.9442,0 -85,-38.0558 -85,-85 0,-46.9442 38.0558,-85 85,-85 46.9442,0 85,38.0558 85,85 z"
+           d="m 481,242 a 85,85 0 0 1 -85,85 85,85 0 0 1 -85,-85 85,85 0 0 1 85,-85 85,85 0 0 1 85,85 z"
            sodipodi:ry="85"
            sodipodi:rx="85"
            sodipodi:cy="242"
@@ -619,11 +569,11 @@
            sodipodi:cy="242"
            sodipodi:rx="85"
            sodipodi:ry="85"
-           d="m 481,242 c 0,46.9442 -38.0558,85 -85,85 -46.9442,0 -85,-38.0558 -85,-85 0,-46.9442 38.0558,-85 85,-85 46.9442,0 85,38.0558 85,85 z"
+           d="m 481,242 a 85,85 0 0 1 -85,85 85,85 0 0 1 -85,-85 85,85 0 0 1 85,-85 85,85 0 0 1 85,85 z"
            transform="matrix(0.4352941,0,0,0.4352941,240.87352,155.40882)" />
         <path
            transform="matrix(0.4588235,0,0,0.4588235,286.55587,167.2147)"
-           d="m 481,242 c 0,46.9442 -38.0558,85 -85,85 -46.9442,0 -85,-38.0558 -85,-85 0,-46.9442 38.0558,-85 85,-85 46.9442,0 85,38.0558 85,85 z"
+           d="m 481,242 a 85,85 0 0 1 -85,85 85,85 0 0 1 -85,-85 85,85 0 0 1 85,-85 85,85 0 0 1 85,85 z"
            sodipodi:ry="85"
            sodipodi:rx="85"
            sodipodi:cy="242"
@@ -644,7 +594,7 @@
            inkscape:connector-curvature="0" />
         <path
            transform="matrix(0.2117647,0,0,0.2117647,393.64118,270.25294)"
-           d="m 481,242 c 0,46.9442 -38.0558,85 -85,85 -46.9442,0 -85,-38.0558 -85,-85 0,-46.9442 38.0558,-85 85,-85 46.9442,0 85,38.0558 85,85 z"
+           d="m 481,242 a 85,85 0 0 1 -85,85 85,85 0 0 1 -85,-85 85,85 0 0 1 85,-85 85,85 0 0 1 85,85 z"
            sodipodi:ry="85"
            sodipodi:rx="85"
            sodipodi:cy="242"
@@ -660,7 +610,7 @@
            sodipodi:cy="242"
            sodipodi:rx="85"
            sodipodi:ry="85"
-           d="m 481,242 c 0,46.9442 -38.0558,85 -85,85 -46.9442,0 -85,-38.0558 -85,-85 0,-46.9442 38.0558,-85 85,-85 46.9442,0 85,38.0558 85,85 z"
+           d="m 481,242 a 85,85 0 0 1 -85,85 85,85 0 0 1 -85,-85 85,85 0 0 1 85,-85 85,85 0 0 1 85,85 z"
            transform="matrix(0.2941176,0,0,0.2941176,334.52941,263.82353)" />
         <path
            style="fill:#6f4a15;fill-opacity:1;stroke:#4f2c09;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -670,7 +620,7 @@
            inkscape:connector-curvature="0" />
         <path
            transform="matrix(0.3764706,0,0,0.3764706,301.66764,133.64411)"
-           d="m 481,242 c 0,46.9442 -38.0558,85 -85,85 -46.9442,0 -85,-38.0558 -85,-85 0,-46.9442 38.0558,-85 85,-85 46.9442,0 85,38.0558 85,85 z"
+           d="m 481,242 a 85,85 0 0 1 -85,85 85,85 0 0 1 -85,-85 85,85 0 0 1 85,-85 85,85 0 0 1 85,85 z"
            sodipodi:ry="85"
            sodipodi:rx="85"
            sodipodi:cy="242"
@@ -965,7 +915,7 @@
            inkscape:export-ydpi="90"
            inkscape:export-xdpi="90"
            inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
-           d="m 860,800 c 0,35.89851 -17.90861,65 -40,65 -22.09139,0 -40,-29.10149 -40,-65 0,-35.89851 17.90861,-65 40,-65 22.09139,0 40,29.10149 40,65 z"
+           d="m 860,800 a 40,65 0 0 1 -40,65 40,65 0 0 1 -40,-65 40,65 0 0 1 40,-65 40,65 0 0 1 40,65 z"
            sodipodi:ry="65"
            sodipodi:rx="40"
            sodipodi:cy="800"
@@ -981,7 +931,7 @@
            sodipodi:cy="800"
            sodipodi:rx="40"
            sodipodi:ry="65"
-           d="m 860,800 c 0,35.89851 -17.90861,65 -40,65 -22.09139,0 -40,-29.10149 -40,-65 0,-35.89851 17.90861,-65 40,-65 22.09139,0 40,29.10149 40,65 z"
+           d="m 860,800 a 40,65 0 0 1 -40,65 40,65 0 0 1 -40,-65 40,65 0 0 1 40,-65 40,65 0 0 1 40,65 z"
            inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
            inkscape:export-xdpi="90"
            inkscape:export-ydpi="90"
@@ -1171,7 +1121,7 @@
            inkscape:export-ydpi="90"
            inkscape:export-xdpi="90"
            inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
-           d="m 860,800 c 0,35.89851 -17.90861,65 -40,65 -22.09139,0 -40,-29.10149 -40,-65 0,-35.89851 17.90861,-65 40,-65 22.09139,0 40,29.10149 40,65 z"
+           d="m 860,800 a 40,65 0 0 1 -40,65 40,65 0 0 1 -40,-65 40,65 0 0 1 40,-65 40,65 0 0 1 40,65 z"
            sodipodi:ry="65"
            sodipodi:rx="40"
            sodipodi:cy="800"
@@ -1187,7 +1137,7 @@
            sodipodi:cy="800"
            sodipodi:rx="40"
            sodipodi:ry="65"
-           d="m 860,800 c 0,35.89851 -17.90861,65 -40,65 -22.09139,0 -40,-29.10149 -40,-65 0,-35.89851 17.90861,-65 40,-65 22.09139,0 40,29.10149 40,65 z"
+           d="m 860,800 a 40,65 0 0 1 -40,65 40,65 0 0 1 -40,-65 40,65 0 0 1 40,-65 40,65 0 0 1 40,65 z"
            inkscape:export-filename="/home/qubodup/playground-wars/playground-wars/data/units/tree-01.png"
            inkscape:export-xdpi="90"
            inkscape:export-ydpi="90"
@@ -1197,7 +1147,7 @@
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
          inkscape:export-filename="/home/qubodup/bush.png"
-         d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+         d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
          sodipodi:ry="35"
          sodipodi:rx="35"
          sodipodi:cy="875"
@@ -1215,7 +1165,7 @@
          sodipodi:cy="875"
          sodipodi:rx="35"
          sodipodi:ry="35"
-         d="m 1010,875 c 0,19.32997 -15.67003,35 -35,35 -19.32997,0 -35,-15.67003 -35,-35 0,-19.32997 15.67003,-35 35,-35 19.32997,0 35,15.67003 35,35 z"
+         d="m 1010,875 a 35,35 0 0 1 -35,35 35,35 0 0 1 -35,-35 35,35 0 0 1 35,-35 35,35 0 0 1 35,35 z"
          inkscape:export-filename="/home/qubodup/bush.png"
          inkscape:export-xdpi="90"
          inkscape:export-ydpi="90" />
@@ -1230,7 +1180,7 @@
            sodipodi:cy="1071"
            sodipodi:rx="83.5"
            sodipodi:ry="42"
-           d="m 2314,1071 c 0,23.196 -37.3842,42 -83.5,42 -46.1158,0 -83.5,-18.804 -83.5,-42 0,-23.196 37.3842,-42 83.5,-42 46.1158,0 83.5,18.804 83.5,42 z"
+           d="m 2314,1071 a 83.5,42 0 0 1 -83.5,42 83.5,42 0 0 1 -83.5,-42 83.5,42 0 0 1 83.5,-42 83.5,42 0 0 1 83.5,42 z"
            transform="matrix(1,0,0,0.8690476,0,145.75)" />
         <path
            style="fill:none;stroke:#7a7a7a;stroke-width:5.18788671;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"

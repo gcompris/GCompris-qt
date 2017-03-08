@@ -47,7 +47,6 @@ ActivityBase {
         // system locale by default
         property string locale: "system"
 
-        readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
         property bool downloadWordsNeeded: false
 

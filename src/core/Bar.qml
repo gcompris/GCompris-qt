@@ -151,7 +151,7 @@ Item {
     /**
      * Emitted when the repeat button was clicked.
      *
-     * Implement if your acitivity needs to repeat audio voices.
+     * Implement if your activity needs to repeat audio voices.
      */
     signal repeatClicked
 
@@ -161,6 +161,13 @@ Item {
      * Implement if you want to support repeating a level from the beginning.
      */
     signal reloadClicked
+
+    /**
+     * Emitted when the hint button was clicked.
+     *
+     * Implement if your activity needs a hint to help children.
+     */
+    signal hintClicked
 
     /**
      * Emitted when the home button was clicked.
@@ -228,6 +235,11 @@ Item {
             'bid': config,
             'contentId': content.config,
             'allowed': !ApplicationSettings.isKioskMode
+        },
+        {
+            'bid': hint,
+            'contentId': content.hint,
+            'allowed': true
         },
         {
             'bid': downloadImage,
@@ -431,6 +443,14 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
             sourceSize.width: fullButton * barZoom
             onClicked: bar.repeatClicked()
+        }
+    }
+    Component {
+        id: hint
+        BarButton {
+            source: "qrc:/gcompris/src/core/resource/bar_hint.svg";
+            sourceSize.width: fullButton * barZoom
+            onClicked: bar.hintClicked()
         }
     }
     Component {

@@ -20,7 +20,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "explore_monuments/Explore_monuments.qml"
   difficulty: 3
-  icon: "explore_monuments/explore_monuments.png"
+  icon: "explore_monuments/explore_monuments.svg"
   author: "Ayush Agrawal &lt;ayushagrawal288@gmail.com&gt;"
   demo: true
   title: qsTr("Explore Monuments")

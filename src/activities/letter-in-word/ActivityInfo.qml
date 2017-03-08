@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Letter in which word")
   description: qsTr("A letter is written and/or spoken. Some words are displayed, the children must find the word or the words in which this letter appears.")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Click on all the words containing the wanted letter."
   goal: qsTr("Select all the words which contain the spoken letter.")
   prerequisite: qsTr("spellings, letter recognition")
   manual: ""

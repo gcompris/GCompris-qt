@@ -161,7 +161,7 @@ function showDownloadDialog(parent, properties) {
             }
         }
         properties.dynamic = true;
-        dialog = downloadDialogComponent.createObject( parent, properties);
+        dialog = downloadDialogComponent.createObject(parent, properties);
         dialog.main = parent
         dialog.start();
     } catch (e) {

@@ -420,7 +420,17 @@ function p4_parse(state, colour, ep, score) {
                 for(i=0;i<mlen;){     //goeth thru list of moves
                     var m = moves[i++];
                     e=s;
-                    do {
+                    // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+                    e+=m;
+                    E=board[e];
+                    if(!E){
+                        movelist.push([weight + values[E] + weight_lut[e], s, e]);
+                    }
+                    else if((E&17)==other_colour){
+                        captures.push([weight + values[E] + weight_lut[e] + all_weights[E][e], s, e]);
+                    }
+
+                    while(!E) {
                         e+=m;
                         E=board[e];
                         if(!E){
@@ -429,7 +439,7 @@ function p4_parse(state, colour, ep, score) {
                         else if((E&17)==other_colour){
                             captures.push([weight + values[E] + weight_lut[e] + all_weights[E][e], s, e]);
                         }
-                    }while(!E);
+                    }
                 }
             }
         }
@@ -527,26 +537,35 @@ function p4_check_castling(board, s, colour, dir, side){
     for(p = s; p < s + 3; p++){
         //bishops, rooks, queens
         e = p;
-        do{
+        // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+        e += dir;
+        E=board[e];
+        while (! E) {
             e += dir;
             E=board[e];
-        } while (! E);
+        }
         if((E & grid_mask) == grid_slider)
             return 0;
         e = p;
         var delta = dir - 1;
-        do{
+        // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+        e += delta;
+        E=board[e];
+        while (!E) {
             e += delta;
             E=board[e];
-        } while (! E);
+        } 
         if((E & diag_mask) == diag_slider)
             return 0;
         e = p;
         delta += 2;
-        do{
+        // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+        e += delta;
+        E=board[e];
+        while(! E) {
             e += delta;
             E=board[e];
-        } while (! E);
+        }
         if((E & diag_mask) == diag_slider)
             return 0;
         /*knights on row 7. (row 6 is handled below)*/
@@ -566,10 +585,13 @@ function p4_check_castling(board, s, colour, dir, side){
      * Same side check is impossible, because the castling rook is there
      */
     e = (side < 0) ? s + 2 : s;
-    do {
+    // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+    e -= side;
+    E=board[e];
+    while (! E) {
         e -= side;
         E=board[e];
-    } while (! E);
+    }
     if((E & grid_mask) == grid_slider)
         return 0;
 
@@ -581,11 +603,14 @@ function p4_check_check(state, colour){
     /*find the king.  The pieces list updates from the end,
      * so the last-most king is correctly placed.*/
     var pieces = state.pieces[colour];
-    var p;
     var i = pieces.length;
-    do {
-        p = pieces[--i];
-    } while (p[0] != (P4_KING | colour));
+    var king = P4_KING | colour
+    // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+    var val = king-1
+    while (val !== king) {
+        var p = pieces[--i];
+        val = p[0]
+    };
     var s = p[1];
     var other_colour = 1 - colour;
     var dir = 10 - 20 * colour;
@@ -614,19 +639,26 @@ function p4_check_check(state, colour){
         var m = diagonal_moves[i];
         var e = s;
         var E;
-        do {
+        // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+        e += m;
+        E = board[e];
+        while (!E) {
             e += m;
             E = board[e];
-        } while (!E);
+        }
         if((E & diag_mask) == diag_slider)
             return true;
 
         m = grid_moves[i];
         e = s;
-        do {
+        // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+        e += m;
+        E = board[e];
+        while (!E) {
             e += m;
             E = board[e];
-        } while (!E);
+        }
+        
         if((E & grid_mask) == grid_slider)
             return true;
     }
@@ -984,7 +1016,6 @@ function p4_move(state, s, e, promotion){
 
     /*Try the move, and see what the response is.*/
     var changes = p4_make_move(state, s, e, promotion);
-
     /*is it check? */
     if (p4_check_check(state, colour)){
         p4_unmake_move(state, changes);
@@ -997,7 +1028,6 @@ function p4_move(state, s, e, promotion){
 
     state.enpassant = changes.ep;
     state.history.push([s, e, promotion]);
-
     /*draw timeout: 50 moves without pawn move or capture is a draw */
     if (changes.E || changes.ep_position){
         state.draw_timeout = 0;
@@ -1564,9 +1594,10 @@ function p4_random_int(state, top){
     mask |= mask >>> 4;
     mask |= mask >>> 8;
     mask |= mask >>> 16;
-    var r;
-    do{
+    // can't do-while loop: https://bugreports.qt.io/browse/QTBUG-59012
+    var r = top + 1;
+    while(r >= top)
         r = p4_random31(state) & mask;
-    } while (r >= top);
+    
     return r;
 }

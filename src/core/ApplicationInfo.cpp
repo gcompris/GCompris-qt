@@ -1,4 +1,4 @@
-/* GCompris - ApplicationSettingsDefault.cpp
+/* GCompris - ApplicationInfo.cpp
  *
  * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
@@ -239,8 +239,6 @@ QString ApplicationInfo::getVoicesLocale(const QString &locale)
 QVariantList ApplicationInfo::localeSort(QVariantList list,
                                          const QString& locale) const
 {
-    QElapsedTimer timer;
-    timer.start();
     std::sort(list.begin(), list.end(),
               [&locale,this](const QVariant& a, const QVariant& b) {
         return (localeCompare(a.toString(), b.toString(), locale) < 0);

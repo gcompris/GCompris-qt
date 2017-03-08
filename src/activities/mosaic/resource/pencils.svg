@@ -13,236 +13,183 @@
    overflow="visible"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%"
    sodipodi:docname="pencils.svg"
    style="overflow:visible"><defs
-   id="defs85" /><sodipodi:namedview
-   pagecolor="#ffffff"
-   bordercolor="#666666"
-   borderopacity="1"
-   objecttolerance="10"
-   gridtolerance="10"
-   guidetolerance="10"
-   inkscape:pageopacity="0"
-   inkscape:pageshadow="2"
-   inkscape:window-width="1366"
-   inkscape:window-height="713"
-   id="namedview83"
-   showgrid="false"
-   inkscape:zoom="3.4917441"
-   inkscape:cx="31.902"
-   inkscape:cy="33.794"
-   inkscape:window-x="-2"
-   inkscape:window-y="-3"
-   inkscape:window-maximized="1"
-   inkscape:current-layer="图层_1_133_" />
-		<switch
-   id="switch4"
-   transform="translate(0,32.412001)">
-			<foreignObject
-   y="0"
-   x="0"
-   requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
-   width="1"
-   height="1"
-   id="foreignObject6">
-			</foreignObject>
-			<g
-   id="g8"
-   transform="matrix(1.5672952,0,0,1.5333828,1.590672e-4,-36.050244)">
-				<g
-   id="Page_1">
-					<g
-   id="图层_1_133_"
-   clip-rule="evenodd"
-   style="fill-rule:evenodd">
-							
-							
-								<linearGradient
-   id="XMLID_6_"
-   x1="-181.99001"
-   gradientUnits="userSpaceOnUse"
-   y1="460.75"
-   gradientTransform="matrix(0.39,0,0,0.39,106.92,-167.23)"
-   x2="-182.55"
-   y2="492.45001">
-								<stop
-   stop-color="#D15E00"
-   offset="0"
-   id="stop17" />
-								<stop
-   stop-color="#DD6F00"
-   offset=".25"
-   id="stop19" />
-								<stop
-   stop-color="#FDEC00"
-   offset=".84"
-   id="stop21" />
-								<stop
-   stop-color="#FFF200"
-   offset="1"
-   id="stop23" />
-							</linearGradient>
-								 
-							 
-							<path
-   d="m 0.662,52.249 c 11.754,3.662 22.337,3.823 31.507,0.161 -0.068,2.582 -0.544,4.683 -1.059,6.5 -1.281,4.518 -5.482,6.546 -12.905,6.927 C 13.357,66.085 8.592,65.11 4.54,63.002 0.847,61.081 0.848,55.695 0.662,52.249 z"
-   id="path29"
-   inkscape:connector-curvature="0"
-   style="fill:#1d8f00" />
-								<linearGradient
-   id="XMLID_7_"
-   x1="-198.24001"
-   gradientUnits="userSpaceOnUse"
-   y1="453.29999"
-   gradientTransform="translate(198.9,-429.67)"
-   x2="-167.22"
-   y2="453.29999">
-								<stop
-   stop-color="#FFF0AB"
-   offset="0"
-   id="stop32" />
-								<stop
-   stop-color="#FF9A1F"
-   offset="1"
-   id="stop34" />
-							</linearGradient>
-							<path
-   d="m 0.662,31.083 c 12.185,6.768 24.045,5.079 31.022,0.161 C 30.288,24.727 28.46,18.211 23.605,11.694 H 8.094 C 4.056,16.359 2.031,23.743 0.662,31.083 z"
-   id="path36"
-   inkscape:connector-curvature="0"
-   style="fill:url(#XMLID_7_)" />
-							<path
-   d="m 0.823,30.921 c 2.316,-0.054 3.608,-0.97 4.201,-2.747 L 4.863,53.541 0.5,52.249 C -0.308,45.139 -0.092,38.03 0.823,30.921 z"
-   id="path38"
-   inkscape:connector-curvature="0"
-   style="fill:#5ac700" />
-							<path
-   d="m 28.614,28.013 c 0.808,1.938 1.831,3.016 3.07,3.231 1.023,7.338 1.023,14.419 0.323,21.328 l -3.555,1.292 0.162,-25.851 z"
-   id="path40"
-   inkscape:connector-curvature="0"
-   style="fill:#20a100" />
-							<path
-   d="m 5.024,28.659 c 4.417,6.786 8.617,6.894 12.603,0.323 l 0.162,26.66 C 13.48,56.073 9.171,54.996 4.863,53.703 L 5.024,28.659 z"
-   id="path42"
-   inkscape:connector-curvature="0"
-   style="fill:#b8ff33" />
-							<path
-   d="m 17.627,29.306 c 3.716,4.922 7.432,8.06 11.148,-1.293 L 28.452,54.188 17.788,55.642 17.627,29.306 z"
-   id="path44"
-   inkscape:connector-curvature="0"
-   style="fill:#28c700" />
-								<linearGradient
-   id="XMLID_8_"
-   x1="-184.86"
-   gradientUnits="userSpaceOnUse"
-   y1="455.5"
-   gradientTransform="translate(207.14,-449.06)"
-   x2="-197.49001"
-   y2="460.85999">
-								<stop
-   stop-color="#43A800"
-   offset=".05"
-   id="stop47" />
-								<stop
-   stop-color="#54C900"
-   offset=".437"
-   id="stop49" />
-								<stop
-   stop-color="#FAFF75"
-   offset=".95"
-   id="stop51" />
-							</linearGradient>
-							<path
-   d="m 8.255,11.693 c 1.611,2.807 5.383,2.696 8.725,2.908 3.286,-0.431 5.602,-0.539 6.302,-3.555 C 22.571,8.307 18.102,1.07 14.274,2.998 11.765,4.262 9.693,7.641 8.255,11.693 z"
-   id="path53"
-   inkscape:connector-curvature="0"
-   style="fill:url(#XMLID_8_)" />
-							<path
-   d="m 35.694,57.571 c 10.379,2.692 19.723,2.811 27.821,0.119 -0.06,1.897 -0.48,3.441 -0.936,4.778 -1.131,3.32 -4.84,4.812 -11.395,5.092 -4.28,0.183 -8.488,-0.534 -12.066,-2.084 -3.26,-1.412 -3.26,-5.371 -3.424,-7.905 z"
-   id="path55"
-   inkscape:connector-curvature="0"
-   style="fill:#0076de" />
-								<linearGradient
-   id="XMLID_9_"
-   x1="-198.33"
-   gradientUnits="userSpaceOnUse"
-   y1="453.67999"
-   gradientTransform="matrix(0.883,0,0,0.7351,210.82,-296.97)"
-   x2="-167.31"
-   y2="453.67999">
-								<stop
-   stop-color="#FFF0AB"
-   offset="0"
-   id="stop58" />
-								<stop
-   stop-color="#FF9A1F"
-   offset="1"
-   id="stop60" />
-							</linearGradient>
-							<path
-   d="m 35.694,42.011 c 10.759,4.975 21.231,3.733 27.393,0.118 -1.232,-4.79 -2.847,-9.581 -7.133,-14.372 H 42.257 c -3.566,3.431 -5.354,8.859 -6.563,14.254 z"
-   id="path62"
-   inkscape:connector-curvature="0"
-   style="fill:url(#XMLID_9_)" />
-							<path
-   d="m 35.836,41.892 c 2.045,-0.039 3.187,-0.713 3.709,-2.019 L 39.402,58.521 35.55,57.571 C 34.838,52.345 35.028,47.119 35.836,41.892 z"
-   id="path64"
-   inkscape:connector-curvature="0"
-   style="fill:#05a3ff" />
-							<path
-   d="m 60.375,39.755 c 0.714,1.423 1.617,2.216 2.711,2.375 0.903,5.395 0.903,10.601 0.285,15.68 l -3.139,0.949 0.143,-19.004 z"
-   id="path66"
-   inkscape:connector-curvature="0"
-   style="fill:#0095ff" />
-							<path
-   d="m 39.546,40.229 c 3.9,4.989 7.609,5.068 11.128,0.238 l 0.143,19.598 c -3.805,0.316 -7.609,-0.476 -11.414,-1.426 l 0.143,-18.41 z"
-   id="path68"
-   inkscape:connector-curvature="0"
-   style="fill:#24edff" />
-							<path
-   d="m 50.674,40.705 c 3.281,3.618 6.563,5.924 9.844,-0.95 l -0.285,19.242 -9.416,1.069 -0.143,-19.361 z"
-   id="path70"
-   inkscape:connector-curvature="0"
-   style="fill:#0fbfff" />
-								<linearGradient
-   id="XMLID_10_"
-   x1="-184.94"
-   gradientUnits="userSpaceOnUse"
-   y1="455.88"
-   gradientTransform="matrix(0.883,0,0,0.7351,218.1,-311.22)"
-   x2="-197.58"
-   y2="461.23999">
-								<stop
-   stop-color="#0092ED"
-   offset=".04"
-   id="stop73" />
-								<stop
-   stop-color="#0af"
-   offset=".4356"
-   id="stop75" />
-								<stop
-   stop-color="#75FFFF"
-   offset=".96"
-   id="stop77" />
-							</linearGradient>
-							<path
-   d="m 42.399,27.758 c 1.423,2.063 4.753,1.982 7.705,2.138 2.901,-0.316 4.946,-0.396 5.564,-2.612 -0.628,-2.014 -4.573,-7.334 -7.954,-5.917 -2.216,0.928 -4.045,3.411 -5.315,6.391 z"
-   id="path79"
-   inkscape:connector-curvature="0"
-   style="fill:url(#XMLID_10_)" />
-					</g>
-				</g>
-			</g>
-		</switch>
-	<metadata
-   id="metadata81"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><cc:license
-         rdf:resource="http://creativecommons.org/licenses/publicdomain/" /><dc:publisher><cc:Agent
-           rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title>pencil</dc:title><dc:date>2012-06-06T22:34:07</dc:date><dc:description>A pencil clipart</dc:description><dc:source>http://openclipart.org/detail/170449/pencil-by-freevectorfinder-170449</dc:source><dc:creator><cc:Agent><dc:title>freevectorfinder</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>art</rdf:li><rdf:li>artistic</rdf:li><rdf:li>blue</rdf:li><rdf:li>clip art</rdf:li><rdf:li>clipart</rdf:li><rdf:li>collection</rdf:li><rdf:li>color</rdf:li><rdf:li>colorful</rdf:li><rdf:li>creative</rdf:li><rdf:li>design</rdf:li><rdf:li>draw</rdf:li><rdf:li>education</rdf:li><rdf:li>equipment</rdf:li><rdf:li>eraser</rdf:li><rdf:li>green</rdf:li><rdf:li>illustration</rdf:li><rdf:li>inscription</rdf:li><rdf:li>job</rdf:li><rdf:li>notice</rdf:li><rdf:li>object</rdf:li><rdf:li>office</rdf:li><rdf:li>pencil</rdf:li><rdf:li>scalable</rdf:li><rdf:li>school</rdf:li><rdf:li>set</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License
-       rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits
-         rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
-         rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
-         rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata></svg>
+     id="defs85" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     id="namedview83"
+     showgrid="false"
+     inkscape:zoom="3.4917441"
+     inkscape:cx="31.902"
+     inkscape:cy="33.794"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="图层_1_133_" /><switch
+     id="switch4"
+     transform="translate(0,32.412001)"><foreignObject
+       y="0"
+       x="0"
+       requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+       width="1"
+       height="1"
+       id="foreignObject6" /><g
+       id="g8"
+       transform="matrix(1.5672952,0,0,1.5333828,1.590672e-4,-36.050244)"><g
+         id="Page_1"><g
+           id="图层_1_133_"
+           clip-rule="evenodd"
+           style="fill-rule:evenodd"><linearGradient
+             id="XMLID_6_"
+             x1="-181.99001"
+             gradientUnits="userSpaceOnUse"
+             y1="460.75"
+             gradientTransform="matrix(0.39,0,0,0.39,106.92,-167.23)"
+             x2="-182.55"
+             y2="492.45001"><stop
+               stop-color="#D15E00"
+               offset="0"
+               id="stop17" /><stop
+               stop-color="#DD6F00"
+               offset=".25"
+               id="stop19" /><stop
+               stop-color="#FDEC00"
+               offset=".84"
+               id="stop21" /><stop
+               stop-color="#FFF200"
+               offset="1"
+               id="stop23" /></linearGradient><path
+             d="m 0.662,52.249 c 11.754,3.662 22.337,3.823 31.507,0.161 -0.068,2.582 -0.544,4.683 -1.059,6.5 -1.281,4.518 -5.482,6.546 -12.905,6.927 C 13.357,66.085 8.592,65.11 4.54,63.002 0.847,61.081 0.848,55.695 0.662,52.249 z"
+             id="path29"
+             inkscape:connector-curvature="0"
+             style="fill:#1d8f00" /><linearGradient
+             id="XMLID_7_"
+             x1="-198.24001"
+             gradientUnits="userSpaceOnUse"
+             y1="453.29999"
+             gradientTransform="translate(198.9,-429.67)"
+             x2="-167.22"
+             y2="453.29999"><stop
+               stop-color="#FFF0AB"
+               offset="0"
+               id="stop32" /><stop
+               stop-color="#FF9A1F"
+               offset="1"
+               id="stop34" /></linearGradient><path
+             d="m 0.662,31.083 c 12.185,6.768 24.045,5.079 31.022,0.161 C 30.288,24.727 28.46,18.211 23.605,11.694 H 8.094 C 4.056,16.359 2.031,23.743 0.662,31.083 z"
+             id="path36"
+             inkscape:connector-curvature="0"
+             style="fill:url(#XMLID_7_)" /><path
+             d="m 0.823,30.921 c 2.316,-0.054 3.608,-0.97 4.201,-2.747 L 4.863,53.541 0.5,52.249 C -0.308,45.139 -0.092,38.03 0.823,30.921 z"
+             id="path38"
+             inkscape:connector-curvature="0"
+             style="fill:#5ac700" /><path
+             d="m 28.614,28.013 c 0.808,1.938 1.831,3.016 3.07,3.231 1.023,7.338 1.023,14.419 0.323,21.328 l -3.555,1.292 0.162,-25.851 z"
+             id="path40"
+             inkscape:connector-curvature="0"
+             style="fill:#20a100" /><path
+             d="m 5.024,28.659 c 4.417,6.786 8.617,6.894 12.603,0.323 l 0.162,26.66 C 13.48,56.073 9.171,54.996 4.863,53.703 L 5.024,28.659 z"
+             id="path42"
+             inkscape:connector-curvature="0"
+             style="fill:#b8ff33" /><path
+             d="m 17.627,29.306 c 3.716,4.922 7.432,8.06 11.148,-1.293 L 28.452,54.188 17.788,55.642 17.627,29.306 z"
+             id="path44"
+             inkscape:connector-curvature="0"
+             style="fill:#28c700" /><linearGradient
+             id="XMLID_8_"
+             x1="-184.86"
+             gradientUnits="userSpaceOnUse"
+             y1="455.5"
+             gradientTransform="translate(207.14,-449.06)"
+             x2="-197.49001"
+             y2="460.85999"><stop
+               stop-color="#43A800"
+               offset=".05"
+               id="stop47" /><stop
+               stop-color="#54C900"
+               offset=".437"
+               id="stop49" /><stop
+               stop-color="#FAFF75"
+               offset=".95"
+               id="stop51" /></linearGradient><path
+             d="m 8.255,11.693 c 1.611,2.807 5.383,2.696 8.725,2.908 3.286,-0.431 5.602,-0.539 6.302,-3.555 C 22.571,8.307 18.102,1.07 14.274,2.998 11.765,4.262 9.693,7.641 8.255,11.693 z"
+             id="path53"
+             inkscape:connector-curvature="0"
+             style="fill:url(#XMLID_8_)" /><path
+             d="m 35.694,57.571 c 10.379,2.692 19.723,2.811 27.821,0.119 -0.06,1.897 -0.48,3.441 -0.936,4.778 -1.131,3.32 -4.84,4.812 -11.395,5.092 -4.28,0.183 -8.488,-0.534 -12.066,-2.084 -3.26,-1.412 -3.26,-5.371 -3.424,-7.905 z"
+             id="path55"
+             inkscape:connector-curvature="0"
+             style="fill:#0076de" /><linearGradient
+             id="XMLID_9_"
+             x1="-198.33"
+             gradientUnits="userSpaceOnUse"
+             y1="453.67999"
+             gradientTransform="matrix(0.883,0,0,0.7351,210.82,-296.97)"
+             x2="-167.31"
+             y2="453.67999"><stop
+               stop-color="#FFF0AB"
+               offset="0"
+               id="stop58" /><stop
+               stop-color="#FF9A1F"
+               offset="1"
+               id="stop60" /></linearGradient><path
+             d="m 35.694,42.011 c 10.759,4.975 21.231,3.733 27.393,0.118 -1.232,-4.79 -2.847,-9.581 -7.133,-14.372 H 42.257 c -3.566,3.431 -5.354,8.859 -6.563,14.254 z"
+             id="path62"
+             inkscape:connector-curvature="0"
+             style="fill:url(#XMLID_9_)" /><path
+             d="m 35.836,41.892 c 2.045,-0.039 3.187,-0.713 3.709,-2.019 L 39.402,58.521 35.55,57.571 C 34.838,52.345 35.028,47.119 35.836,41.892 z"
+             id="path64"
+             inkscape:connector-curvature="0"
+             style="fill:#05a3ff" /><path
+             d="m 60.375,39.755 c 0.714,1.423 1.617,2.216 2.711,2.375 0.903,5.395 0.903,10.601 0.285,15.68 l -3.139,0.949 0.143,-19.004 z"
+             id="path66"
+             inkscape:connector-curvature="0"
+             style="fill:#0095ff" /><path
+             d="m 39.546,40.229 c 3.9,4.989 7.609,5.068 11.128,0.238 l 0.143,19.598 c -3.805,0.316 -7.609,-0.476 -11.414,-1.426 l 0.143,-18.41 z"
+             id="path68"
+             inkscape:connector-curvature="0"
+             style="fill:#24edff" /><path
+             d="m 50.674,40.705 c 3.281,3.618 6.563,5.924 9.844,-0.95 l -0.285,19.242 -9.416,1.069 -0.143,-19.361 z"
+             id="path70"
+             inkscape:connector-curvature="0"
+             style="fill:#0fbfff" /><linearGradient
+             id="XMLID_10_"
+             x1="-184.94"
+             gradientUnits="userSpaceOnUse"
+             y1="455.88"
+             gradientTransform="matrix(0.883,0,0,0.7351,218.1,-311.22)"
+             x2="-197.58"
+             y2="461.23999"><stop
+               stop-color="#0092ED"
+               offset=".04"
+               id="stop73" /><stop
+               stop-color="#0af"
+               offset=".4356"
+               id="stop75" /><stop
+               stop-color="#75FFFF"
+               offset=".96"
+               id="stop77" /></linearGradient><path
+             d="m 42.399,27.758 c 1.423,2.063 4.753,1.982 7.705,2.138 2.901,-0.316 4.946,-0.396 5.564,-2.612 -0.628,-2.014 -4.573,-7.334 -7.954,-5.917 -2.216,0.928 -4.045,3.411 -5.315,6.391 z"
+             id="path79"
+             inkscape:connector-curvature="0"
+             style="fill:url(#XMLID_10_)" /></g></g></g></switch><metadata
+     id="metadata81"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" /><dc:publisher><cc:Agent
+             rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title>pencil</dc:title><dc:date>2012-06-06T22:34:07</dc:date><dc:description>A pencil clipart</dc:description><dc:source>http://openclipart.org/detail/170449/pencil-by-freevectorfinder-170449</dc:source><dc:creator><cc:Agent><dc:title>freevectorfinder</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>art</rdf:li><rdf:li>artistic</rdf:li><rdf:li>blue</rdf:li><rdf:li>clip art</rdf:li><rdf:li>clipart</rdf:li><rdf:li>collection</rdf:li><rdf:li>color</rdf:li><rdf:li>colorful</rdf:li><rdf:li>creative</rdf:li><rdf:li>design</rdf:li><rdf:li>draw</rdf:li><rdf:li>education</rdf:li><rdf:li>equipment</rdf:li><rdf:li>eraser</rdf:li><rdf:li>green</rdf:li><rdf:li>illustration</rdf:li><rdf:li>inscription</rdf:li><rdf:li>job</rdf:li><rdf:li>notice</rdf:li><rdf:li>object</rdf:li><rdf:li>office</rdf:li><rdf:li>pencil</rdf:li><rdf:li>scalable</rdf:li><rdf:li>school</rdf:li><rdf:li>set</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata></svg>

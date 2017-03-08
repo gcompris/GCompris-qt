@@ -25,10 +25,8 @@ import "../../core"
 import "../algebra_by/"
 
 
-Algebra{
-
+Algebra {
     onStart:{
         operand.text = "-"
     }
-
 }

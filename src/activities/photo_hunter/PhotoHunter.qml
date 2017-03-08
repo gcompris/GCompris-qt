@@ -21,6 +21,8 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
+import QtQuick.Controls 1.2
+import QtQuick.Controls.Styles 1.2
 
 import "../../core"
 import "photo_hunter.js" as Activity
@@ -58,26 +60,27 @@ ActivityBase {
             property int totalFound: img1.good + img2.good
             property alias problem: problem
             property alias frame: frame
-
-            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / 11 ,
-                                            background.height / (9 + barHeightAddon))
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         property bool vert: background.width < background.height
-        property double barHeight: (items.barHeightAddon == 1) ? 0 : bar.height
+        property double barHeight: ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
+        property bool startedHelp: false
 
         function checkAnswer() {
             if (items.totalFound === items.model.length) {
                 bonus.good("flower")
 
-                //remove the problem from the board after first level
-                if (problem.opacity != 0) {
-                    Activity.hideProblem()
+                // after completing a level, mark the problem as shown
+                if (items.notShowed) {
+                    items.notShowed = false
                 }
+
+                //remove the problem from the board after first level
+                if (problem.z > 0)
+                    Activity.hideProblem()
             }
         }
 
@@ -90,6 +93,7 @@ ActivityBase {
             border.width: 2
             border.color: "black"
             color: "red"
+            z: 5
 
             property alias problemText: problemText
 
@@ -100,8 +104,13 @@ ActivityBase {
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
-                text: qsTr("Click on the differences between the two images!")
+                text: background.startedHelp ? qsTr("Drag the slider to show the differences!") :
+                                          qsTr("Click on the differences between the two images!")
                 color: "white"
+                onHeightChanged: {
+                    if (items.problem.z > 0)
+                        frame.problemTextHeight = problemText.height
+                }
             }
 
             MouseArea {
@@ -120,34 +129,76 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.margins: 10
 
+            property real problemTextHeight: problemText.height
+
             //left/top image
             Observe {
                 id: img1
-                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemText.height) / 2
-                sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40 - problemText.height) /2 :
-                                       background.height - background.barHeight - 30
                 show: true
                 anchors {
-                    top: parent.top
                     horizontalCenter: parent.horizontalCenter
-                    horizontalCenterOffset: background.vert ? 0 : -img1.width/2-5
+                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : - img1.width / 2 - 5
+
+                    verticalCenter: parent.verticalCenter
+                    verticalCenterOffset: background.startedHelp ?  background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
+                                                                    background.vert ? - frame.problemTextHeight * 0.5 - img1.height * 0.5 - 5 : - frame.problemTextHeight * 0.5
                 }
             }
 
             //right/bottom image
             Observe {
                 id: img2
-                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemText.height) / 2
-                sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40 - problemText.height) /2 :
-                                       background.height - background.barHeight - 30
+                opacity: background.startedHelp ? 1 - slider.value : 1
                 show: false
                 anchors {
-                    top: background.vert ? img1.bottom : parent.top
-                    topMargin: background.vert ? 10 : 0
-                    left: background.vert ? img1.left : img1.right
-                    leftMargin: background.vert ? 0 : 10
+                    horizontalCenter: parent.horizontalCenter
+                    horizontalCenterOffset: background.startedHelp ? 0 : background.vert ? 0 : img1.width / 2 + 5
+
+                    verticalCenter: parent.verticalCenter
+                    verticalCenterOffset: background.startedHelp ? background.vert ? - frame.problemTextHeight * 0.8 : - frame.problemTextHeight * 1.01 :
+                                                                   background.vert ? - frame.problemTextHeight * 0.5 + img1.height * 0.5 + 5 : - frame.problemTextHeight * 0.5
+                }
+            }
+
+            Slider {
+                id: slider
+                value: 0
+                height: 50
+                width: img1.width * 0.9
+                z: background.startedHelp ? 5 : -5
+                opacity: background.startedHelp ? 1 : 0
+                enabled: background.startedHelp
+
+                style: SliderStyle {
+                        handle: Rectangle {
+                            height: background.vert ? 80 : 70
+                            width: height
+                            radius: width / 2
+                            color: "lightblue"
+                        }
+
+                        groove: Rectangle {
+                            implicitHeight: slider.height
+                            implicitWidth: background.vert ? slider.width * 0.85 : slider.width
+                            radius: height / 2
+                            border.color: "#6699ff"
+                            color: "#99bbff"
+
+                            Rectangle {
+                                height: parent.height
+                                width: styleData.handlePosition
+                                implicitHeight: 6
+                                implicitWidth: 100
+                                radius: height/2
+                                color: "#4d88ff"
+                            }
+                        }
+                    }
+
+                anchors {
+                    top: img1.bottom
+                    topMargin: 20
+                    horizontalCenter: img1.horizontalCenter
                 }
             }
         }
@@ -159,13 +210,17 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onHintClicked: {
+                background.startedHelp = !background.startedHelp
+                slider.value = 0
+            }
         }
 
         Bonus {
@@ -185,7 +240,5 @@ ActivityBase {
             numberOfSubLevels: items.total
             currentSubLevel: items.totalFound
         }
-
     }
-
 }

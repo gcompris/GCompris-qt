@@ -14,7 +14,7 @@
    height="120"
    id="svg32408"
    sodipodi:version="0.32"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="electric_guitar.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0">
@@ -53,47 +53,6 @@
          offset="1"
          id="stop35109" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient35105"
-       id="linearGradient35111"
-       x1="131.82999"
-       y1="527.58795"
-       x2="355.06354"
-       y2="527.58795"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.726012,0,0,0.695071,-20.88066,-207.4332)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient35121"
-       id="linearGradient35127"
-       x1="60.39645"
-       y1="520.96814"
-       x2="427.74591"
-       y2="520.96814"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.726012,0,0,0.695071,-20.88067,-207.4333)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient36005"
-       id="linearGradient36011"
-       x1="215.38579"
-       y1="493.50888"
-       x2="226.33798"
-       y2="491.21222"
-       gradientUnits="userSpaceOnUse"
-       spreadMethod="reflect"
-       gradientTransform="matrix(0.726012,0,0,0.695071,-20.88066,-207.4332)" />
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient35121"
-       id="linearGradient36894"
-       x1="666.28571"
-       y1="462.14789"
-       x2="736.57141"
-       y2="412.18359"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.726012,0,0,0.695071,-20.88066,-207.4332)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient35121"

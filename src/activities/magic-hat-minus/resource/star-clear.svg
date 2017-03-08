@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,8 +13,7 @@
    height="27.769751"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45.1"
-   sodipodi:docbase="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="star-clear.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0">
@@ -67,7 +67,7 @@
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="M 117.14286,115.21933 L 54.455112,95.377953 L 2.5716249,135.77024 L 2.0703121,70.01933 L -52.377917,33.157106 L 10.000002,12.36218 L 28.232633,-50.812217 L 67.285619,2.0867234 L 133.00223,-0.094976628 L 94.760389,53.393293 L 117.14286,115.21933 z "
+       d="M 117.14286,115.21933 54.455112,95.377953 2.5716249,135.77024 2.0703121,70.01933 -52.377917,33.157106 10.000002,12.36218 28.232633,-50.812217 67.285619,2.0867234 133.00223,-0.09497663 94.760389,53.393293 Z"
        transform="matrix(0.1476277,4.5684017e-2,-3.9001306e-2,0.1347461,154.66335,135.07301)"
        inkscape:export-filename="/home/bruno/Projets/gcomprixogoo/src/magic_hat_minus-activity/resources/magic_hat/star-clear.svg"
        inkscape:export-xdpi="90"

@@ -42,7 +42,6 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
-
         }
 
         Item {
@@ -167,7 +166,7 @@ ActivityBase {
         }
     }
     Keys.onPressed: {
-        numpad.updateAnswer(event.key,true);
+        numpad.updateAnswer(event.key, true);
     }
 
     Keys.onReleased: {

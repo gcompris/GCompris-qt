@@ -14,7 +14,7 @@
    width="120"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="cello.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0">
@@ -67,50 +67,6 @@
          offset="1"
          id="stop4836" />
     </linearGradient>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4832"
-       id="radialGradient4838"
-       cx="418.04129"
-       cy="458.69046"
-       fx="418.04129"
-       fy="458.69046"
-       r="139.23553"
-       gradientTransform="matrix(-0.7488988,1.9743698,-1.5524486,-0.5888573,1443.2053,-157.92886)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4844"
-       id="radialGradient4850"
-       cx="360.8132"
-       cy="340.25461"
-       fx="360.8132"
-       fy="340.25461"
-       r="20.943979"
-       gradientTransform="matrix(2.2177733,-7.151188,8.3067052,2.5761298,-3264.8369,2129.0843)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4852"
-       id="radialGradient4858"
-       cx="363.29956"
-       cy="73.423164"
-       fx="363.29956"
-       fy="73.423164"
-       r="8.5184288"
-       gradientTransform="matrix(1.8885017,1.4163762,-1.2172529,1.6230043,-233.41771,-562.68377)"
-       gradientUnits="userSpaceOnUse" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4860"
-       id="radialGradient4866"
-       cx="363.29956"
-       cy="121.2877"
-       fx="363.29956"
-       fy="121.2877"
-       r="9.0229092"
-       gradientTransform="matrix(1.8651138,2.4531969,-2.5853687,1.9656001,-0.7220734,-1013.0172)"
-       gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4832"

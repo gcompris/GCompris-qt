@@ -23,6 +23,8 @@ set(gcompris_SRCS
    ApplicationSettings.h
    File.cpp
    File.h
+   Directory.cpp
+   Directory.h
    DownloadManager.cpp
    DownloadManager.h
 )
@@ -233,7 +235,6 @@ if(BUILD_STANDALONE)
 endif()
 
 if(WIN32)
-    set(VCREDIST_DIR "" CACHE PATH "Path to vcredist dlls")
 # install libEGL.dll, libGLESv2.dll, d3dcompiler_47.dll from Qt installation. Not sure if there is a clean way to get them...
 # Qt5_Dir is like C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/cmake/Qt5
     install(FILES ${Qt5_DIR}/../../../bin/icudt54.dll DESTINATION bin)
@@ -241,11 +242,16 @@ if(WIN32)
     install(FILES ${Qt5_DIR}/../../../bin/icuuc54.dll DESTINATION bin)
     install(FILES ${Qt5_DIR}/../../../bin/libEGL.dll DESTINATION bin)
     install(FILES ${Qt5_DIR}/../../../bin/libGLESv2.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../../../Tools/QtCreator/bin/d3dcompiler_47.dll DESTINATION bin)
-    install(FILES ${VCREDIST_DIR}/msvcp140.dll DESTINATION bin)
-    install(FILES ${VCREDIST_DIR}/vcruntime140.dll DESTINATION bin)
-endif()
-
+    install(FILES ${Qt5_DIR}/../../../bin/d3dcompiler_47.dll DESTINATION bin)
+    if(NOT MINGW)
+        target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libEGL.lib)
+        target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libGLESv2.lib)
+        install(FILES ${Qt5_DIR}/../../../bin/opengl32sw.dll DESTINATION bin)
+        # CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS contains visual c++ libraries
+        install(FILES ${CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS} DESTINATION bin)
+    endif()
+  endif()
+  
 # Packaging
 # =========
 

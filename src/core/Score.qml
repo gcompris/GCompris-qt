@@ -62,7 +62,7 @@ Rectangle {
 
     /**
      * type:string
-     * Complete message string to to show.
+     * Complete message string to show.
      *
      * Mutually exclusive with currentSubLevel and numberOfSubLevels
      */

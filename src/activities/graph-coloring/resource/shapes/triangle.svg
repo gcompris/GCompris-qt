@@ -16,7 +16,7 @@
    id="svg5468"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="lightgreen_triangle.svg">
+   sodipodi:docname="triangle.svg">
   <defs
      id="defs5470">
     <linearGradient
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

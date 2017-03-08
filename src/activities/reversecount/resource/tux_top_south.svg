@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -14,9 +15,8 @@
    width="370.27991"
    height="274.00449"
    xml:space="preserve"
-   sodipodi:docbase="/home/bruno/Projets/gcomprixogoo/src/maze-activity"
-   sodipodi:docname="tux_up.svg"
-   inkscape:version="0.45.1"
+   sodipodi:docname="tux_top_south.svg"
+   inkscape:version="0.91 r13725"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"><metadata
      id="metadata30"><rdf:RDF><cc:Work
@@ -127,7 +127,7 @@
        sodipodi:type="arc"
        style="fill:url(#radialGradient656);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path650"
-       d="M 452.38567 427.52661 A 80.319138 74.41333 0 1 1  291.74739,427.52661 A 80.319138 74.41333 0 1 1  452.38567 427.52661 z"
+       d="m 452.38567,427.52661 a 80.319138,74.41333 0 0 1 -80.31914,74.41333 80.319138,74.41333 0 0 1 -80.31914,-74.41333 80.319138,74.41333 0 0 1 80.31914,-74.41333 80.319138,74.41333 0 0 1 80.31914,74.41333 z"
        sodipodi:cx="372.06653"
        sodipodi:cy="427.52661"
        sodipodi:rx="80.319138"
@@ -148,7 +148,7 @@
        sodipodi:type="arc"
        style="fill:#141414;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path665"
-       d="M 349.11731 467.92477 A 9.1872864 5.6376648 0 1 1  330.74274,467.92477 A 9.1872864 5.6376648 0 1 1  349.11731 467.92477 z"
+       d="m 349.11731,467.92477 a 9.1872864,5.6376648 0 0 1 -9.18729,5.63767 9.1872864,5.6376648 0 0 1 -9.18728,-5.63767 9.1872864,5.6376648 0 0 1 9.18728,-5.63766 9.1872864,5.6376648 0 0 1 9.18729,5.63766 z"
        sodipodi:cx="339.93002"
        sodipodi:cy="467.92477"
        sodipodi:rx="9.1872864"
@@ -156,7 +156,7 @@
        sodipodi:type="arc"
        style="fill:#141415;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="path666"
-       d="M 349.11731 467.92477 A 9.1872864 5.6376648 0 1 1  330.74274,467.92477 A 9.1872864 5.6376648 0 1 1  349.11731 467.92477 z"
+       d="m 349.11731,467.92477 a 9.1872864,5.6376648 0 0 1 -9.18729,5.63767 9.1872864,5.6376648 0 0 1 -9.18728,-5.63767 9.1872864,5.6376648 0 0 1 9.18728,-5.63766 9.1872864,5.6376648 0 0 1 9.18729,5.63766 z"
        sodipodi:cx="339.93002"
        sodipodi:cy="467.92477"
        sodipodi:rx="9.1872864"

@@ -27,8 +27,8 @@ import "../../core"
 Item {
     id: item
 
-    z: 10
-    
+    z: 2  // above most
+
     property alias world: itemBody.world
 
     property alias imageSource: itemImage.source

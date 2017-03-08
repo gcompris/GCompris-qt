@@ -39,7 +39,7 @@ QtObject {
         "pixmapfile": "europe/greece.png",
         "soundFile": "voices-$CA/$LOCALE/geography/greece.$CA",
         "toolTipText": qsTr("Greece"),
-        "x": "0.677",
+        "x": "0.692",
         "y": "0.878"
     },
     {
@@ -151,9 +151,9 @@ QtObject {
         "y": "0.334"
     },
     {
-        "pixmapfile": "europe/czech.png",
-        "soundFile": "voices-$CA/$LOCALE/geography/czech.$CA",
-        "toolTipText": qsTr("Czech Republic"),
+        "pixmapfile": "europe/czechia.png",
+        "soundFile": "voices-$CA/$LOCALE/geography/czechia.$CA",
+        "toolTipText": qsTr("Czechia"),
         "x": "0.525",
         "y": "0.561"
     },

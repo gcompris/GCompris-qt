@@ -238,6 +238,8 @@ function undo() {
         redo_stack.push(state.history[state.moveno - 1])
         state.jump_to_moveno(state.moveno - 1)
     }
+    // without it, you can't move again the same piece
+    Engine.p4_prepare(state)
     items.redo_stack = redo_stack
     refresh()
     items.positions = [] // Force a model reload
@@ -277,7 +279,6 @@ function randomMove() {
     // This avoid having the computer playing bad against a user
     // with too few pieces making the game last too long
     var score = getScore()
-    console.log(score[0] / score[1])
     if(score[0] / score[1] < 0.7) {
         computerMove()
         return
@@ -312,8 +313,9 @@ function clearAcceptMove() {
 function showPossibleMoves(from) {
     var result = Engine.p4_parse(state, state.to_play, 0, 0)
     clearAcceptMove()
+    var fromEngine = viewPosToEngine(from)
     for(var i=0; i < result.length; ++i) {
-        if(viewPosToEngine(from) == result[i][1]) {
+        if(fromEngine == result[i][1]) {
             var pos = engineToViewPos(result[i][2])
             items.squares.getSquareAt(pos)['acceptMove'] = true
         }
