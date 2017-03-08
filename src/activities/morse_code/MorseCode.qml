@@ -87,9 +87,11 @@ ActivityBase {
                 if(dataset[currentLevel].values[0] == '_random_') {
                     var randomIndex = Math.floor(Math.random() * dataset[currentLevel].values[1].length)
                     questionValue = dataset[currentLevel].values[1][randomIndex]
+                    questionValue = questionValue.replace(/\./g, '\u00B7');
                     dataset[currentLevel].values[1].splice(randomIndex,1)
                 } else {
                     questionValue = dataset[currentLevel].values[1][score.currentSubLevel - 1]
+                    questionValue = questionValue.replace(/\./g, '\u00B7');
                 }
             }
 
@@ -114,6 +116,7 @@ ActivityBase {
             }
 
             function nextSubLevel() {
+                textInput.text = ''
                 if(++score.currentSubLevel > score.numberOfSubLevels) {
                     nextLevel()
                 } else {
@@ -236,13 +239,14 @@ ActivityBase {
                                                        /[.- ]*/}
 
 
-                onTextChanged: if(!(first_screen.visible) && text) {
+                onTextChanged: if(!(first_screen.visible) && !(morse_map.visible) && text) {
+                                   text = text.replace(/\./g, '\u00B7');
                                    text = text.toUpperCase();
                                    if(items.toAlpha){
                                         morseConverter.alpha = text.replace( /\W/g , '')
                                    }
                                    else
-                                       morseConverter.morse = text
+                                       morseConverter.morse = text.replace(/\u00B7/g, '.');
 
                                }
 
@@ -309,8 +313,8 @@ ActivityBase {
                     height: parent.height
                 }
                 property string value: first_screen.visible ? '' : items.toAlpha ?
-                                           morseConverter.morse.trim() :
-                                           morseConverter.alpha ? morseConverter.alpha : ''
+                                           morseConverter.morse.replace(/\./g, '\u00B7').trim() :
+                                           morseConverter.alpha ? morseConverter.alpha.replace(/\./g, '\u00B7') : ''
             }
 
             Timer {
@@ -319,7 +323,6 @@ ActivityBase {
                 onTriggered: {
                     if( feedback.value == items.questionValue && !first_screen.visible) {
                         bonus.good('tux')
-                        textInput.text = ''
                     }
 
                 }
@@ -339,7 +342,7 @@ ActivityBase {
                 horizontalAlignment: Text.AlignHCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width * 0.5
-                text: items.instruction
+                text: items.instruction.replace(/\./g, '\u00B7')
                 height: Text.Fit
                 wrapMode: TextEdit.WordWrap
                 color: 'black'
@@ -354,7 +357,7 @@ ActivityBase {
             width: parent.width * 0.8
             height: parent.height * 0.7
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.bottom: bar.top
             visible: false
 
             Flickable {
@@ -395,7 +398,7 @@ ActivityBase {
 
                                 GCText {
                                     id: ins
-                                    text: morseConverter.table[modelData]
+                                    text: morseConverter.table[modelData].replace(/\./g, '\u00B7')
                                     style: Text.Outline
                                     styleColor: "white"
                                     color: "black"
@@ -418,54 +421,59 @@ ActivityBase {
                         }
                     }
                 }
-            }
-        }
 
-        Image {
-            id: cancel
-            visible: false
-            source: url+"wm-back.svg"
-            fillMode: Image.PreserveAspectFit
-            anchors.left: morse_map.right
-            anchors.bottom: morse_map.top
-            smooth: true
-            sourceSize.width: 60 * ApplicationInfo.ratio
-            anchors.margins: 10
+                Image {
+                    id: cancel
+                    source: url+"wm-back.svg"
+                    fillMode: Image.PreserveAspectFit
+                    anchors.right: parent.right
+                    anchors.bottom: parent.bottom
+                    smooth: true
+                    sourceSize.width: 60 * ApplicationInfo.ratio
+                    anchors.margins: 10
 
-            SequentialAnimation {
-                id: anim
-                running: true
-                loops: Animation.Infinite
-                NumberAnimation {
-                    target: cancel
-                    property: "rotation"
-                    from: -10; to: 10
-                    duration: 500
-                    easing.type: Easing.InOutQuad
-                }
-                NumberAnimation {
-                    target: cancel
-                    property: "rotation"
-                    from: 10; to: -10
-                    duration: 500
-                    easing.type: Easing.InOutQuad
-                }
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    morse_map.visible = false
-                    cancel.visible = false
+                    SequentialAnimation {
+                        id: anim
+                        running: true
+                        loops: Animation.Infinite
+                        NumberAnimation {
+                            target: cancel
+                            property: "rotation"
+                            from: -10; to: 10
+                            duration: 500
+                            easing.type: Easing.InOutQuad
+                        }
+                        NumberAnimation {
+                            target: cancel
+                            property: "rotation"
+                            from: 10; to: -10
+                            duration: 500
+                            easing.type: Easing.InOutQuad
+                        }
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            morse_map.visible = false
+                            if(ApplicationSettings.isVirtualKeyboard)
+                                keyboard.visible = true
+                            textInput.text=''
 
+                        }
+                    }
                 }
             }
         }
 
         Score {
             id: score
-            anchors.bottom: keyboard.top
-            currentSubLevel: 0
             visible: !(first_screen.visible)
+            anchors.top: parent.top
+            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.left: parent.left
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: undefined
+            anchors.right: undefined
         }
 
         DialogHelp {
@@ -527,15 +535,16 @@ ActivityBase {
 
             function populateMorse() {
                 layout = [ [
-                    { label: "." },
+                    { label: "\u00B7" },
                     { label: "-" },
                     { label: keyboard.backspace }
                 ] ]
             }
 
-            onKeypress: textInput.appendText(text)
-
-
+            onKeypress: {
+                if(!morse_map.visible)
+                    textInput.appendText(text)
+            }
             onError: console.log("VirtualKeyboard error: " + msg);
         }
 
@@ -546,38 +555,19 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: items.previousLevel()
             onNextLevelClicked: items.nextLevel()
             onHomeClicked: activity.home()
-            level: items.currentLevel + 1
-        }
+            onHintClicked: {
+                morse_map.visible = true
+                keyboard.visible = false
+            }
 
-        Image {
-            id: mapButton
-            source: url+"list.svg"
-            fillMode: Image.PreserveAspectFit
-            sourceSize.width: 66 * bar.barZoom
-            visible: !(first_screen.visible) && !(morse_map.visible)
-            anchors {
-                right: score.right
-                bottom: score.top
-            }
-            Behavior on scale { PropertyAnimation { duration: 100} }
-            MouseArea{
-                id: listClick
-                anchors.fill: parent
-                hoverEnabled: true
-                onClicked: {
-                    morse_map.visible  = true
-                    cancel.visible = true
-                }
-                onEntered: mapButton.scale = 1.1
-                onExited: mapButton.scale = 1
-            }
+            level: items.currentLevel + 1
         }
 
         Bonus {
