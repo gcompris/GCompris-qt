@@ -26,20 +26,19 @@ import "multiplicationtables_dataset.js" as Dataset
 import "../../core"
 import GCompris 1.0
 
-Grid {
+Flow {
 
-    id: admin_id
-    spacing : 30
-    columns: 10
-    property alias checkBoxesRepeater: repeaterCheckBox
-
-    Repeater {
-         id : repeaterCheckBox
-         model:Activity.allQuestions
+    id: questionItem2
+    property string url: "qrc:/gcompris/src/activities/multiplication_tables/resource/"
+    property bool checkNOT: false
+    property alias selectedQuestionText: checkBoxQuestion.text
+    property alias questionChecked: checkBoxQuestion.checked
 
     CheckBox {
         id:checkBoxQuestion
         text: modelData
+        checked: questionItem2.checkNOT
+
         style: CheckBoxStyle {
             indicator: Rectangle {
                     implicitWidth: 26
@@ -58,5 +57,4 @@ Grid {
             }
         }
     }
-}
 }

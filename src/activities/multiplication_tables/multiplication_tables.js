@@ -34,10 +34,16 @@ var url
 var table
 var question = []
 var answer = []
+var question2 = []
+var answer2 = []
 var allQuestions = []
+var allAnswers = []
 var questionOfLevel = []
+var answerOfLevel = []
 var scoreCounter = 0
 var uppercaseOnly;
+var selectedQuestions = []
+var selectedAnswers = []
 
 function start(_items, _mode, _dataset, _url) {
     items = _items
@@ -54,12 +60,27 @@ function stop() {}
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    if(items.isSchoolMode == "school"){
+        loadSchoolMode()
+        console.log("school mode")
+        resetvalue2();
+        items.startButton.text = qsTr("START")
+        items.score.visible = false
+        items.time.text = "--"
+        loadSelectedQuestions()
+        cannotAnswer2()
+    }
+
+    else{
+    console.log("normad mode")
     resetvalue();
     items.startButton.text = qsTr("START")
     items.score.visible = false
     items.time.text = "--"
     loadQuestions()
     cannotAnswer()
+}
+
 }
 
 function loadQuestions() {
@@ -71,17 +92,41 @@ function loadQuestions() {
     for (i = 0; i < question.length; i++) {
         items.repeater.itemAt(i).questionText = qsTr(question[i]) + " = "
     }
+
 }
+
+
+function loadSelectedQuestions() {
+    var i
+    var j
+    question2 = selectedQuestions
+    answer2 = selectedAnswers
+    for (i = 0; i < question2.length; i++) {
+        items.repeater.itemAt(i).questionText = qsTr(question2[i]) + " = "
+    }
+}
+
+
+function loadSchoolMode() {
+    items.repeaterModel = selectedQuestions
+}
+
 
 function loadQuestions2() {
     var i
     var j
-    var t = 0
+    var t1 = 0
+    var t2 = 0
     for (i = 0; i < numberOfLevel; i++) {
           questionOfLevel = dataset[i].questions
+          answerOfLevel = dataset[i].answers
           for(j = 0; j < questionOfLevel.length;j++){
-                allQuestions[t] = questionOfLevel[j]
-                t = t + 1
+                allQuestions[t1] = questionOfLevel[j]
+                t1 = t1 + 1
+          }
+          for(j = 0; j < answerOfLevel.length;j++){
+                allAnswers[t2] = answerOfLevel[j]
+                t2 = t2 + 1
           }
     }
 }
@@ -101,6 +146,23 @@ function verifyAnswer() {
     }
     items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
 }
+
+function verifyAnswer2() {
+    var j
+    for (j = 0; j < question2.length; j++) {
+        if (items.repeater.itemAt(j).answerText.toString() == answer2[j]) {
+            scoreCounter = scoreCounter + 1
+            items.repeater.itemAt(j).questionImage = url + "right.svg"
+            items.repeater.itemAt(j).questionImageOpacity = 1
+        }
+        else if(items.repeater.itemAt(j).answerText.toString() != answer2[j] && items.repeater.itemAt(j).answerText.toString() != ""){
+            items.repeater.itemAt(j).questionImageOpacity = 1
+            items.repeater.itemAt(j).questionImage = url + "wrong.svg"
+        }
+    }
+    items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
+}
+
 
 function processKeyPress(text) {
     var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
@@ -146,6 +208,13 @@ function canAnswer() {
     }
 }
 
+function canAnswer2() {
+    var q
+    for (q = 0; q < question2.length; q++) {
+        items.repeater.itemAt(q).answerTextReadonly = false
+    }
+}
+
 function cannotAnswer() {
     var r
     for (r = 0; r < question.length; r++) {
@@ -153,9 +222,28 @@ function cannotAnswer() {
     }
 }
 
+function cannotAnswer2() {
+    var r
+    for (r = 0; r < question2.length; r++) {
+        items.repeater.itemAt(r).answerTextReadonly = true
+    }
+}
+
 function resetvalue() {
     var k
     for (k = 0; k < question.length; k++) {
+        items.repeater.itemAt(k).answerText = ""
+        items.repeater.itemAt(k).questionImageOpacity = 0
+        scoreCounter = 0
+        items.score.visible = false
+    }
+    scoreCounter = 0
+    items.score.visible = false
+}
+
+function resetvalue2() {
+    var k
+    for (k = 0; k < question2.length; k++) {
         items.repeater.itemAt(k).answerText = ""
         items.repeater.itemAt(k).questionImageOpacity = 0
         scoreCounter = 0
