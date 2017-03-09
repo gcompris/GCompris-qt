@@ -38,7 +38,6 @@ ActivityBase {
     property var dataset: Dataset
     property string mode: "multiplicationtables"
 
-
     onStart: focus = true
     onStop: {}
 
@@ -61,20 +60,16 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property string modeType: "normalMode"
             property alias startButton: startButton
             property alias stopButton: stopButton
             property alias time: time
             property alias score: score
             property alias questionGrid: questionGrid
             property alias repeater: repeater
-
             property alias repeaterModel: repeater.model
-
-            property string isSchoolMode: isSchoolMode
+            property string modeType: modeType
             property var data: Dataset
             property alias keyboard: keyboard
-
         }
 
         onStart: {
@@ -86,7 +81,6 @@ ActivityBase {
 
         Flow {
             id: questionGrid
-            opacity: 1
             anchors.top: parent.top
             anchors.bottom: startStopButton.top
             spacing: 30/800*parent.width
@@ -176,21 +170,9 @@ ActivityBase {
                     }
                 }
                 onClicked: {
-                    if (startTime == 0 && startButtonClicked == false) {
-
-                        if(items.isSchoolMode == "school"){
-
-                            Activity.resetvalue2()
-                            Activity.canAnswer2()
-
-                        }
-                        else{
-
-                            Activity.resetvalue()
-                            Activity.canAnswer()
-
-                        }
-
+                    if (startTime == 0 && startButtonClicked == false) {                        
+                        Activity.canAnswer()
+                        Activity.resetvalue()
                         startButton.text = qsTr("START")
                         time.text = qsTr(" Your Timer Started...")
                         startTime = new Date().getTime()
@@ -220,7 +202,6 @@ ActivityBase {
                         }
                     }
                 }
-
                 onClicked: {
                     if (startButtonClicked == true) {
                         score.visible = true
@@ -229,37 +210,27 @@ ActivityBase {
                         startTime = 0
                         startButtonClicked = false
                         startButton.text = qsTr("START AGAIN")
-
-                        if(items.isSchoolMode == "school"){
-
+                        if(items.modeType == "school"){
                             Activity.verifyAnswer2()
-                            Activity.cannotAnswer2()
                         }
                         else{
-
                             Activity.verifyAnswer()
-                            Activity.cannotAnswer()
                         }
-
-
+                        Activity.cannotAnswer()
                     }
                 }
             }
         }
-
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
-
-
         DialogActivityConfig {
                     id: dialogActivityConfig
                     currentActivity: activity
                     content: Component {
 
                         Item {
-
                             property alias modeBox: modeBox
                             property alias repeater2: repeater2
                             property var availableModes: [
@@ -300,7 +271,6 @@ ActivityBase {
                                         top: labels.bottom
                                         topMargin: 5
                                     }
-
                                     Grid {
                                         spacing : 30
                                         columns: 10
@@ -316,30 +286,28 @@ ActivityBase {
                                 }
                             }
                         }
-
                     onClose: {
                         Activity.initLevel()
                         home()
                     }
-
-
                     onLoadData: {
                     }
-
                     onSaveData: {
-
+                        if(dialogActivityConfig.configItem.modeBox.currentIndex == 1){
+                            items.modeType = "normal"
+                        }
+                        else{
+                        Activity.flushQuestionsAnswers()
                         var j1 = 0
                         for (var i = 0; i < Activity.allQuestions.length; i++) {
                                 if(dialogActivityConfig.configItem.repeater2.itemAt(i).questionChecked === true){
                                    Activity.selectedQuestions[j1] = dialogActivityConfig.configItem.repeater2.itemAt(i).selectedQuestionText
                                    Activity.selectedAnswers[j1] = Activity.allAnswers[i]
                                    j1 = j1 + 1
-
                                 }
                             }
-
-                      Activity.loadSchoolMode()
-                      items.isSchoolMode = "school"
+                      items.modeType = "school"
+                      }
                     }
 
                     function setDefaultValues() {
@@ -351,7 +319,6 @@ ActivityBase {
                         }
                     }
                 }
-
 
         Bar {
             id: bar

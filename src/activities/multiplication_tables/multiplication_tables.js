@@ -1,28 +1,28 @@
 /* GCompris - multiplication_tables.js
-*
-* Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
-*
-* Authors:
-*
-*   "Nitish Chauhan" <nitish.nc18@gmail.com> (Qt Quick port)
-*
-*   This program is free software; you can redistribute it and/or modify
-*   it under the terms of the GNU General Public License as published by
-*   the Free Software Foundation; either version 3 of the License, or
-*   (at your option) any later version.
-*
-*   This program is distributed in the hope that it will be useful,
-*   but WITHOUT ANY WARRANTY; without even the implied warranty of
-*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*   GNU General Public License for more details.
-*
-*   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
-*/
+ *
+ * Copyright (C) 2016 Nitish Chauhan <nitish.nc18@gmail.com>
+ *
+ * Authors:
+ *
+ *   "Nitish Chauhan" <nitish.nc18@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 .pragma library
-.import QtQuick 2.2 as Quick
-.import GCompris 1.0 as GCompris //for ApplicationInfo
-.import "qrc:/gcompris/src/core/core.js" as Core
+    .import QtQuick 2.2 as Quick
+    .import GCompris 1.0 as GCompris //for ApplicationInfo
+    .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
 var schoolMode
@@ -53,34 +53,26 @@ function start(_items, _mode, _dataset, _url) {
     numberOfLevel = dataset.length
     currentLevel = 0
     initLevel()
-    loadQuestions2()
+    loadAllQuestionAnswer()
 }
 
 function stop() {}
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    if(items.isSchoolMode == "school"){
+    if (items.modeType == "school") {
         loadSchoolMode()
-        console.log("school mode")
-        resetvalue2();
-        items.startButton.text = qsTr("START")
-        items.score.visible = false
-        items.time.text = "--"
         loadSelectedQuestions()
-        cannotAnswer2()
+    } else {
+        loadAllQuestionAnswer()
+        items.repeaterModel = 10
+        loadQuestions()
     }
-
-    else{
-    console.log("normad mode")
-    resetvalue();
     items.startButton.text = qsTr("START")
     items.score.visible = false
     items.time.text = "--"
-    loadQuestions()
+    resetvalue()
     cannotAnswer()
-}
-
 }
 
 function loadQuestions() {
@@ -95,10 +87,8 @@ function loadQuestions() {
 
 }
 
-
 function loadSelectedQuestions() {
-    var i
-    var j
+    var i = 0
     question2 = selectedQuestions
     answer2 = selectedAnswers
     for (i = 0; i < question2.length; i++) {
@@ -106,28 +96,33 @@ function loadSelectedQuestions() {
     }
 }
 
-
 function loadSchoolMode() {
     items.repeaterModel = selectedQuestions
 }
 
+function flushQuestionsAnswers() {
+    selectedQuestions = []
+    selectedAnswers = []
+    question2 = []
+    answer2 = []
+}
 
-function loadQuestions2() {
+function loadAllQuestionAnswer() {
     var i
     var j
     var t1 = 0
     var t2 = 0
     for (i = 0; i < numberOfLevel; i++) {
-          questionOfLevel = dataset[i].questions
-          answerOfLevel = dataset[i].answers
-          for(j = 0; j < questionOfLevel.length;j++){
-                allQuestions[t1] = questionOfLevel[j]
-                t1 = t1 + 1
-          }
-          for(j = 0; j < answerOfLevel.length;j++){
-                allAnswers[t2] = answerOfLevel[j]
-                t2 = t2 + 1
-          }
+        questionOfLevel = dataset[i].questions
+        answerOfLevel = dataset[i].answers
+        for (j = 0; j < questionOfLevel.length; j++) {
+            allQuestions[t1] = questionOfLevel[j]
+            t1 = t1 + 1
+        }
+        for (j = 0; j < answerOfLevel.length; j++) {
+            allAnswers[t2] = answerOfLevel[j]
+            t2 = t2 + 1
+        }
     }
 }
 
@@ -138,8 +133,7 @@ function verifyAnswer() {
             scoreCounter = scoreCounter + 1
             items.repeater.itemAt(j).questionImage = url + "right.svg"
             items.repeater.itemAt(j).questionImageOpacity = 1
-        }
-        else if(items.repeater.itemAt(j).answerText.toString() != answer[j] && items.repeater.itemAt(j).answerText.toString() != ""){
+        } else if (items.repeater.itemAt(j).answerText.toString() != answer[j] && items.repeater.itemAt(j).answerText.toString() != "") {
             items.repeater.itemAt(j).questionImageOpacity = 1
             items.repeater.itemAt(j).questionImage = url + "wrong.svg"
         }
@@ -154,8 +148,7 @@ function verifyAnswer2() {
             scoreCounter = scoreCounter + 1
             items.repeater.itemAt(j).questionImage = url + "right.svg"
             items.repeater.itemAt(j).questionImageOpacity = 1
-        }
-        else if(items.repeater.itemAt(j).answerText.toString() != answer2[j] && items.repeater.itemAt(j).answerText.toString() != ""){
+        } else if (items.repeater.itemAt(j).answerText.toString() != answer2[j] && items.repeater.itemAt(j).answerText.toString() != "") {
             items.repeater.itemAt(j).questionImageOpacity = 1
             items.repeater.itemAt(j).questionImage = url + "wrong.svg"
         }
@@ -163,10 +156,8 @@ function verifyAnswer2() {
     items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
 }
 
-
 function processKeyPress(text) {
     var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
-
     if (currentWord !== null) {
         // check against a currently typed word
         if (!currentWord.checkMatch(typedText)) {
@@ -178,7 +169,7 @@ function processKeyPress(text) {
     } else {
         // no current word, check against all available words
         var found = false
-        for (var i = 0; i< droppedWords.length; i++) {
+        for (var i = 0; i < droppedWords.length; i++) {
             if (droppedWords[i].checkMatch(typedText)) {
                 // typed correctly
                 currentWord = droppedWords[i];
@@ -187,63 +178,54 @@ function processKeyPress(text) {
                 break;
             }
         }
-        if(!found) {
+        if (!found) {
             audioCrashPlay()
         }
     }
     if (currentWord !== null && currentWord.isCompleted()) {
         // win!
-        currentWord.won();  // note: deleteWord() is triggered after fadeout
+        currentWord.won(); // note: deleteWord() is triggered after fadeout
         successRate += 0.1
         currentWord = null
         nextSubLevel();
     }
 }
 
-
 function canAnswer() {
     var q
-    for (q = 0; q < question.length; q++) {
-        items.repeater.itemAt(q).answerTextReadonly = false
+    var questionList
+    if (items.modeType == "school") {
+        questionList = question2
+    } else {
+        questionList = question
     }
-}
-
-function canAnswer2() {
-    var q
-    for (q = 0; q < question2.length; q++) {
+    for (q = 0; q < questionList.length; q++) {
         items.repeater.itemAt(q).answerTextReadonly = false
     }
 }
 
 function cannotAnswer() {
     var r
-    for (r = 0; r < question.length; r++) {
-        items.repeater.itemAt(r).answerTextReadonly = true
+    var questionList
+    if (items.modeType == "school") {
+        questionList = question2
+    } else {
+        questionList = question
     }
-}
-
-function cannotAnswer2() {
-    var r
-    for (r = 0; r < question2.length; r++) {
+    for (r = 0; r < questionList.length; r++) {
         items.repeater.itemAt(r).answerTextReadonly = true
     }
 }
 
 function resetvalue() {
     var k
-    for (k = 0; k < question.length; k++) {
-        items.repeater.itemAt(k).answerText = ""
-        items.repeater.itemAt(k).questionImageOpacity = 0
-        scoreCounter = 0
-        items.score.visible = false
+    var questionList
+    if (items.modeType == "school") {
+        questionList = question2
+    } else {
+        questionList = question
     }
-    scoreCounter = 0
-    items.score.visible = false
-}
-
-function resetvalue2() {
-    var k
-    for (k = 0; k < question2.length; k++) {
+    for (k = 0; k < questionList.length; k++) {
         items.repeater.itemAt(k).answerText = ""
         items.repeater.itemAt(k).questionImageOpacity = 0
         scoreCounter = 0
