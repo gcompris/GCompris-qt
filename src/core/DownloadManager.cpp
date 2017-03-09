@@ -373,9 +373,9 @@ inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
     return QUrl(serverUrl.toString() + '/' + getRelativeResourcePath(filename));
 }
 
-inline QString  DownloadManager::getSystemDownloadPath() const
+inline QString DownloadManager::getSystemDownloadPath() const
 {
-    return QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
+    return ApplicationSettings::getInstance()->cachePath();
 }
 
 inline QStringList DownloadManager::getSystemResourcePaths() const
@@ -384,6 +384,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
     QStringList results({
         QCoreApplication::applicationDirPath() + '/' + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
         getSystemDownloadPath(),
+        QStandardPaths::writableLocation(QStandardPaths::CacheLocation),
 #if defined(Q_OS_ANDROID)
         "assets:",
 #endif

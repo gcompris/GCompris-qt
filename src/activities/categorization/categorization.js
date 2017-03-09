@@ -45,17 +45,25 @@ function init(items_,boardsUrl_) {
     items = items_
     items.menuModel.clear()
     currentSubLevel = 0
-    items.categoriesCount = items.file.exists(fileName) ? 18 : 6
 }
 
 function start() {
     categoriesData = []
     items.categoryReview.stop()
+
+    var isEmbeddedMode = items.file.exists(fileName) ? true : false
+    items.categoriesFallback = isEmbeddedMode
+
     var categoriesFilename;
-    for(var i = 1; i <= items.categoriesCount; i++) {
-        categoriesFilename = boardsUrl + "board" + "/" + "category" + i + ".qml"
-        items.categoryReview.categoryDataset.source = categoriesFilename
-        categoriesData.push(items.categoryReview.categoryDataset.item)
+    var categoryDataset = items.categoryReview.categoryDataset
+    var categoryLists = items.categories
+    for(var i = 0; i < categoryLists.length; i++) {
+        categoriesFilename = "qrc" + boardsUrl + categoryLists[i]
+        categoryDataset.source = categoriesFilename
+
+        if(isEmbeddedMode || categoryDataset.item.isEmbedded) {
+            categoriesData.push(categoryDataset.item)
+        }
     }
     lessons = getAllLessons(categoriesData)
     categories = getCategoryModel(categoriesData)

@@ -92,7 +92,7 @@ Item {
      * type:string
      * Symbol that can be used for the space key.
     */
-    readonly property string space : "\u2423"
+    readonly property string space: "\u2423"
 
     /**
      * type:string

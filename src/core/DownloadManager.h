@@ -50,7 +50,7 @@
  *
  * will be downloaded to a local path
  *
- * <tt>/\<QStandardPaths::writableLocation(QStandardPaths::CacheLocation)\>/\<path/to/my/resource.rcc\></tt>
+ * <tt>/\<ApplicationSettings::getInstance()->cachePath()\>/\<path/to/my/resource.rcc\></tt>
  *
  * and registered with a resource root path
  *
@@ -76,7 +76,8 @@
  * isDataRegistered.
  *
  * @sa DownloadDialog, ApplicationSettings.downloadServerUrl,
- *     ApplicationSettings.isAutomaticDownloadsEnabled
+ *     ApplicationSettings.isAutomaticDownloadsEnabled,
+ *     ApplicationSettings.cachePath
  */
 class DownloadManager : public QObject
 {

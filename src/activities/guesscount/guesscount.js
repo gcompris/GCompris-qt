@@ -57,10 +57,19 @@ function initLevel() {
         items.warningDialog.visible = false
 }
 
-function nextSublevel() {
+function initSublevel(){
     items.sublevel += 1
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.solved = false
+}
+
+function nextSublevel() {
+    if(items.sublevel < items.data.length) {
+        initSublevel()
+    }
+    else {
+        nextLevel()
+    }
 }
 
 function nextLevel() {
@@ -135,10 +144,10 @@ function childrenChange(item, operationRow)
 
 function checkAnswer(row) {
     if(items.sublevel < items.data.length) {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+        items.bonus.good("flower")
         items.timer.start()
     }
-    else if(items.sublevel == items.data.length) {
+    else {
         items.timer.start()
         items.bonus.good("smiley")
     }

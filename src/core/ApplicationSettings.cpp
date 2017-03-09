@@ -62,6 +62,7 @@ static const QString IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
 static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
 static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
+static const QString CACHE_PATH_KEY = "cachePath";
 
 static const QString EXE_COUNT_KEY = "exeCount";
 static const QString LAST_GC_VERSION_RAN = "lastGCVersionRan";
@@ -152,6 +153,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "http://gcompris.net").toString();
+    m_cachePath = m_config.value(CACHE_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::CacheLocation)).toString();
     m_config.endGroup();
 
     // internal group
@@ -180,6 +182,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::demoModeChanged, this, &ApplicationSettings::notifyDemoModeChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
+    connect(this, &ApplicationSettings::cachePathChanged, this, &ApplicationSettings::notifyCachePathChanged);
     connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
     connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
     connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
@@ -217,6 +220,7 @@ ApplicationSettings::~ApplicationSettings()
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
+    m_config.setValue(CACHE_PATH_KEY, m_cachePath);
     m_config.endGroup();
 
     // internal group
@@ -374,6 +378,12 @@ void ApplicationSettings::notifyDownloadServerUrlChanged()
 {
     updateValueInConfig(ADMIN_GROUP_KEY, DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
     qDebug() << "downloadServerUrl set to: " << m_downloadServerUrl;
+}
+
+void ApplicationSettings::notifyCachePathChanged()
+{
+    updateValueInConfig(ADMIN_GROUP_KEY, CACHE_PATH_KEY, m_cachePath);
+    qDebug() << "cachePath set to: " << m_cachePath;
 }
 
 void ApplicationSettings::notifyExeCountChanged()

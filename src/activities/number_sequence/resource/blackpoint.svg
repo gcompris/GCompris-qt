@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4341"
+   viewBox="0 0 18.228445 18.265361"
+   version="1.1"
+   inkscape:version="0.92.1 r"
+   width="100%"
+   height="100%"
+   sodipodi:docname="blackpoint2.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="840"
+     id="namedview13"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="28.118532"
+     inkscape:cx="6.1830149"
+     inkscape:cy="9.3606435"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1-6"
+     borderlayer="true" />
+  <defs
+     id="defs4343" />
+  <g
+     id="layer1"
+     transform="translate(-126.00413,-661.46043)">
+    <g
+       id="layer1-6"
+       transform="matrix(-0.84261,0.026204,0.026204,0.84261,119.57,-195.39)"
+       style="opacity:1">
+      <path
+         sodipodi:type="arc"
+         style="fill:#121212;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path5114"
+         sodipodi:cx="9.050396"
+         sodipodi:cy="9.0762625"
+         sodipodi:rx="8.7729893"
+         sodipodi:ry="8.8423414"
+         d="M 17.823385,9.0762625 A 8.7729893,8.8423414 0 0 1 9.050396,17.918604 8.7729893,8.8423414 0 0 1 0.27740669,9.0762625 8.7729893,8.8423414 0 0 1 9.050396,0.23392105 8.7729893,8.8423414 0 0 1 17.823385,9.0762625 Z"
+         transform="matrix(-1.185642,0.03687182,0.03687182,1.185642,23.967616,1016.2373)" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans"
+         d="m 12.395061,1016.5479 c -2.780358,0.2756 -5.6980155,1.3322 -7.4270326,3.8048 -3.4014187,4.8641 -2.8865997,10.8031 1.564853,15.2818 4.6448496,3.4613 11.6762976,3.6723 15.3543106,-1.5297 3.483557,-4.9269 3.316832,-10.7989 -1.339522,-14.6303 -2.328177,-1.9156 -5.372251,-3.2021 -8.152609,-2.9266 z m 0.143464,1.2866 c 2.524462,-0.2503 4.797791,0.1154 6.917705,1.8596 4.239829,3.4887 4.042873,10.5547 0.966327,14.4663 -3.396101,4.318 -9.889998,2.8092 -14.1298255,-0.6795 -3.1347873,-3.5642 -3.4734021,-7.7792 -0.4074883,-12.1654 1.7380321,-2.1266 4.1288208,-3.2308 6.6532818,-3.481 z"
+         id="path3769-2-9"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="sscsssscsccs" />
+    </g>
+  </g>
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title />
+        <dc:date>2012-03-23T13:52:34</dc:date>
+        <dc:description>Map, Marker, Pin, Pushpin, clip art, clipart, green, </dc:description>
+        <dc:source>http://openclipart.org/detail/169048/green-map-marker-by-mightyman</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>mightyman</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Map</rdf:li>
+            <rdf:li>Marker</rdf:li>
+            <rdf:li>Pin</rdf:li>
+            <rdf:li>Pushpin</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>green</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
