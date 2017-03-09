@@ -319,9 +319,9 @@ ActivityBase {
 
             Timer {
                 id: timer
-                interval: 500
+                interval: 5
                 onTriggered: {
-                    if( feedback.value == items.questionValue && !first_screen.visible) {
+                    if(!first_screen.visible && feedback.value == items.questionValue ) {
                         bonus.good('tux')
                     }
 
@@ -421,47 +421,6 @@ ActivityBase {
                         }
                     }
                 }
-
-                Image {
-                    id: cancel
-                    source: url+"wm-back.svg"
-                    fillMode: Image.PreserveAspectFit
-                    anchors.right: parent.right
-                    anchors.bottom: parent.bottom
-                    smooth: true
-                    sourceSize.width: 60 * ApplicationInfo.ratio
-                    anchors.margins: 10
-
-                    SequentialAnimation {
-                        id: anim
-                        running: true
-                        loops: Animation.Infinite
-                        NumberAnimation {
-                            target: cancel
-                            property: "rotation"
-                            from: -10; to: 10
-                            duration: 500
-                            easing.type: Easing.InOutQuad
-                        }
-                        NumberAnimation {
-                            target: cancel
-                            property: "rotation"
-                            from: 10; to: -10
-                            duration: 500
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            morse_map.visible = false
-                            if(ApplicationSettings.isVirtualKeyboard)
-                                keyboard.visible = true
-                            textInput.text=''
-
-                        }
-                    }
-                }
             }
         }
 
@@ -550,6 +509,7 @@ ActivityBase {
 
         FirstScreen {
             id: first_screen
+            visible: true
         }
 
         Bar {
@@ -563,8 +523,8 @@ ActivityBase {
             onNextLevelClicked: items.nextLevel()
             onHomeClicked: activity.home()
             onHintClicked: {
-                morse_map.visible = true
-                keyboard.visible = false
+                morse_map.visible = !morse_map.visible
+                keyboard.visible = !morse_map.visible & ApplicationSettings.isVirtualKeyboard
             }
 
             level: items.currentLevel + 1
