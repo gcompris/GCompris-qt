@@ -28,7 +28,7 @@ ActivityInfo {
 //  intro: "arrange the numbers in ascending order by placing a number in it's correct position"
   goal: qsTr("arranging numbers in ascending order")
   prerequisite: qsTr("Move, drag and drop using mouse")
-  manual: qsTr("You are provided with few numbers. Drag and Drop the numbers in it's correct position to reorder the numbers in ascending order")
+  manual: qsTr("You are provided with few numbers. Drag and Drop the numbers in its correct position to reorder the numbers in ascending order")
   section: "math"
   createdInVersion: 8000
 }

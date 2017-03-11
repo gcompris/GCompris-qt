@@ -23,8 +23,7 @@
 
 var currentLevel = 0
 var numberOfLevel = 4
-var currentSubLevel = 0
-var numberOfSubLevel = 3
+
 var items
 
 // num[] will contain the random numbers
@@ -39,6 +38,8 @@ function start(items_) {
     currentLevel = 0
     items.flow.validMousePress = false
     thresholdDistance = 4000 * items.ratio
+    items.score.currentSubLevel = 0
+    items.score.numberOfSubLevels = 3
 
     noOfTilesInPreviousLevel = -1
     initLevel()
@@ -49,7 +50,6 @@ function stop() {
 
 function initLevel() {
     items.flow.validMousePress = true
-    items.score.message = currentSubLevel + "/" + numberOfSubLevel
     items.bar.level = currentLevel + 1
     initGrids()
 }
@@ -113,11 +113,11 @@ function restoreGrids() {
 }
 
 function nextSubLevel() {
-    if(numberOfSubLevel <= ++currentSubLevel) {
+    if(items.score.numberOfSubLevels <= ++items.score.currentSubLevel) {
         if(numberOfLevel <= ++currentLevel) {
             currentLevel = 0
         }
-        currentSubLevel = 0
+        items.score.currentSubLevel = 0
     }
     initLevel();
 }
@@ -126,7 +126,7 @@ function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
-    currentSubLevel = 0
+    items.score.currentSubLevel = 0
     initLevel()
 }
 
@@ -134,7 +134,7 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
-    currentSubLevel = 0
+    items.score.currentSubLevel = 0
     initLevel()
 }
 

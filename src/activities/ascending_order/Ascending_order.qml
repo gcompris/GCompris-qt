@@ -54,7 +54,7 @@ ActivityBase {
             property alias flow: flow
             property alias container: container
             property real ratio: ApplicationInfo.ratio
-            property Score score: score
+            property alias score: score
         }
 
         onStart: { Activity.start(items) }
