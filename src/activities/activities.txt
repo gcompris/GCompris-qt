@@ -20,6 +20,8 @@ braille_alphabets
 braille_fun
 canal_lock
 categorization
+checkers
+checkers_2players
 chess
 chess_2players
 chess_partyend

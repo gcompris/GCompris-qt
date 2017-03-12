@@ -1,0 +1,312 @@
+/* GCompris - checkers.js
+ *
+ * Copyright (C) 2017 Johnny Jazeix <jazeix@gmail.com>
+ *
+ * Authors:
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+.pragma library
+.import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
+.import "engine.js" as Engine
+
+var url = "qrc:/gcompris/src/activities/checkers/resource/"
+
+var currentLevel
+var numberOfLevel = 1
+var items
+var state
+
+function start(items_) {
+    items = items_
+    currentLevel = 0
+    initLevel()
+}
+
+function stop() {
+}
+
+function initLevel() {
+    items.bar.level = currentLevel + 1
+    state = new Engine.Draughts('W:W31-50:B1-20')
+    state.reset()
+    items.from = -1
+    items.gameOver = false
+    items.redo_stack = []
+    refresh()
+    items.positions = 0 // Force a model reload
+    items.positions = simplifiedState(state.position())
+    clearAcceptMove()
+}
+
+function nextLevel() {
+    if(numberOfLevel <= ++currentLevel) {
+        currentLevel = 0
+    }
+    initLevel();
+}
+
+function previousLevel() {
+    if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
+    }
+    initLevel();
+}
+
+function simplifiedState(state) {
+    var newState = new Array()
+    for(var i = 0; i < state.length; ++i) {
+        var img = state[i] !== '0' && state[i] !== '?' ? state[i] : ''
+        newState.push(
+            {
+                'pos': engineToViewPos(i),
+                'img': img
+            })
+    }
+    return newState
+}
+
+function updateMessage() {
+    items.gameOver = false
+    items.message = items.blackTurn ? qsTr("Black's turn") : qsTr("White's turn")
+
+    if(state.gameOver()) {
+        items.message = items.blackTurn ? qsTr("White wins") : qsTr("Black wins")
+        items.gameOver = true
+        if(!items.twoPlayer)
+            if(items.blackTurn)
+                items.bonus.good('gnu')
+            else
+                items.bonus.good('tux')
+        else
+            items.bonus.good('flower')
+    }
+}
+
+function refresh() {
+    items.blackTurn = (state.turn() == 'b')
+    items.history = state.history()
+    updateMessage()
+    items.positions = 0 // Force a model reload
+    items.positions = simplifiedState(state.position())
+}
+
+// Convert view position (QML) to the chess engine coordinate
+//
+// engine view:
+// |  01  02  03  04  05|
+// |06  07  08  09  10  |
+// |  11  12  13  14  15|
+// |16  17  18  19  20  |
+// |  21  22  23  24  25|
+// |26  27  28  29  30  |
+// |  31  32  33  34  35|
+// |36  37  38  39  40  |
+// |  41  42  43  44  45|
+// |46  47  48  49  50  |
+//
+// QML view:
+// |  91  93  95  97  99|
+// |80  82  84  86  88  |
+// |  71  73  75  77  79|
+// |60  62  64  66  68  |
+// |  51  53  55  57  59|
+// |40  42  44  46  48  |
+// |  31  33  35  37  39|
+// |20  22  24  26  28  |
+// |  11  13  15  17  19|
+// |00  02  04  06  08  |
+//
+function viewPosToEngine(pos) {
+    var casesNumber = items.numberOfCases*items.numberOfCases
+    var a = 10 * Math.floor((casesNumber - pos) / 10 + 1);
+    var b = 20;
+    if(pos % 10 !== 0) {
+        b = (casesNumber - pos) % 10;
+    }
+    var newPos = (a - b + 1)
+    newPos = Math.floor(newPos / 2 + 0.5)
+    return newPos
+}
+
+// Convert chess engine coordinate to view position (QML)
+function engineToViewPos(pos) {
+    var newPos = 90-10*Math.floor((2*pos-1)/10)+2*((pos-1)%5)+1+((-1+Math.pow(-1, Math.floor((2*pos-1)/10)))/2)
+    return newPos
+}
+
+// move is the result from the engine move
+function visibleMove(move, from, to) {
+    var piece = items.pieces.getPieceAt(from);
+
+    items.pieces.moveTo(from, to, move)
+
+    // promotion
+    if (move.to <= 5 && piece.img === 'w')
+        piece.promotion()
+    else if (move.to >= 46 && piece.img === 'b')
+        piece.promotion()
+}
+
+function computerMove() {
+    // todo
+    var computer = state.findmove(3)
+    var move = state.move(computer[0], computer[1])
+    if(move) {
+        visibleMove(move, engineToViewPos(computer[0]), engineToViewPos(computer[1]))
+    }
+    return move
+}
+
+function moveTo(from, to) {
+    var move = state.move({"from": viewPosToEngine(from), "to": viewPosToEngine(to)})
+    if(move) {
+        visibleMove(move, from, to)
+        clearAcceptMove()
+        items.redo_stack = []
+        if(!items.twoPlayer && !state.gameOver())
+            items.trigComputerMove.start()
+        items.from = -1;
+    } else {
+        // Probably a check makes the move is invalid
+        updateMessage(move)
+    }
+    return move
+}
+
+function undo() {
+    var move = state.undo();
+    var redo_stack = items.redo_stack
+    redo_stack.push(move)
+    // In computer mode, the white always starts, take care
+    // of undo after a mate which requires us to revert on
+    // a white play
+    if(!items.twoPlayer && state.turn() == 'b') {
+        move = state.undo();
+        redo_stack.push(move)
+    }
+    items.redo_stack = redo_stack
+    refresh()
+}
+
+function moveByEngine(engineMove) {
+    if(!engineMove)
+        return
+    var move = state.move(engineMove)
+    visibleMove(move, engineToViewPos(engineMove.from), engineToViewPos(engineMove.to))
+}
+
+function redo() {
+    var redo_stack = items.redo_stack
+    var move = redo_stack.pop()
+    moveByEngine(move)
+   // In computer mode, the white always starts, take care
+    // of undo after a mate which requires us to revert on
+    // a white play
+    if(!items.twoPlayer && state.turn() == 'b') {
+        move = redo_stack.pop()
+        moveByEngine(move)
+    }
+
+    // Force refresh
+    items.redo_stack = []
+    items.redo_stack = redo_stack
+    clearAcceptMove()
+}
+
+// Random move depending on the level
+function randomMove() {
+    if(!items.difficultyByLevel) {
+        computerMove()
+        return
+    }
+    // Disable random move if the situation is too bad for the user
+    // This avoid having the computer playing bad against a user
+    // with too few pieces making the game last too long
+    var score = getScore()
+    if(score[0] / score[1] < 0.7) {
+        computerMove()
+        return
+    }
+
+    // At level 2 we let the computer play 20% of the time
+    // and 80% of the time we make a random move.
+    if(Math.random() < currentLevel / (numberOfLevel - 1)) {
+        computerMove()
+        return
+    }
+    // Get all possible moves
+    var moves = state.moves()
+    moves = Core.shuffle(moves)
+    var move = state.move(moves[0])
+    if(move) {
+        visibleMove(move, engineToViewPos(moves[0].from), engineToViewPos(moves[0].to))
+    } else {
+        // Bad move, should not happens
+        computerMove()
+    }
+}
+
+// Clear all accept move marker from the chessboard
+function clearAcceptMove() {
+    for(var i=0; i < 50; ++i) {
+        var square = items.squares.getSquareAt(engineToViewPos(i))
+        if(square) {
+            square['acceptMove'] = false
+            square['jumpable'] = false
+        }
+    }
+}
+
+// Highlight the possible moves for the piece at position 'from'
+function showPossibleMoves(from) {
+    var fromEngine = viewPosToEngine(from)
+    var result = state.moves();
+    clearAcceptMove()
+    for(var i=0; i < result.length; ++i) {
+        if(fromEngine === result[i].from && fromEngine !== result[i].to) {
+            var pos = engineToViewPos(result[i].to)
+            items.squares.getSquareAt(pos)['acceptMove'] = true
+            for(var v = 1; v < result[i].jumps.length; ++ v) {
+                items.squares.getSquareAt(engineToViewPos(result[i].jumps[v]))['jumpable'] = true
+            }
+        }
+    }
+}
+
+// Calculate the score for black and white
+// Count the number of pieces with each piece having a given weight
+// Piece pawn knight bishop rook queen
+// Value 1    3 	 3      5    9
+// @return [white, black]
+function getScore() {
+    var lut = {2: 1, 4: 5, 6: 3, 8: 3, 12: 9}
+    var white = 0
+    var black = 0
+    // TODO
+    return [1, 1]
+    // END TODO
+    for(var i=0; i < state['board'].length; ++i) {
+        var score = lut[state['board'][i] & 0xFE]
+        if(score)
+            if(state['board'][i] & 0x01)
+                black += score
+            else
+                white += score
+    }
+    return [white, black]
+}
+
