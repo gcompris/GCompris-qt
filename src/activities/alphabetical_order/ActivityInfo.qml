@@ -18,17 +18,17 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "ascending_order/Ascending_order.qml"
+  name: "alphabetical_order/Alphabetical_order.qml"
   difficulty: 2
-  icon: "ascending_order/ascending_order.svg"
+  icon: "alphabetical_order/alphabetical_order.svg"
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
   demo: true
-  title: qsTr("Ascending and Descending Order")
-  description: qsTr("Arrange the given numbers in ascending or descending order as instructed")
-//  intro: "arrange the numbers in the correct order by placing a number in it's correct position"
-  goal: qsTr("arranging numbers in ascending or descending order as instructed")
+  title: "Alphabetical Order"
+  description: qsTr("Arrange the given alphabets in ascending or descending order as instructed")
+  //intro: "arrange the alphabets in the correct order by placing an alphabet in it's correct position"
+  goal: qsTr("arranging alphabets in ascending or descending order as instructed")
   prerequisite: qsTr("Move, drag and drop using mouse")
-  manual: qsTr("You are provided with few numbers. Drag and Drop the numbers in its correct position to reorder the numbers in ascending or descending order as instructed")
+  manual: qsTr("You are provided with few alphabets. Drag and Drop the alphabets in its correct position to reorder the numbers in ascending or descending order as instructed")
   section: "math"
   createdInVersion: 8000
 }

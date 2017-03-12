@@ -8,6 +8,7 @@ algebra_plus
 algorithm
 align4
 align4-2players
+alphabetical_order
 alphabet-sequence
 ascending_order
 babymatch

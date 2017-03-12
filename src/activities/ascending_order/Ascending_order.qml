@@ -27,6 +27,8 @@ import "ascending_order.js" as Activity
 ActivityBase {
     id: activity
 
+    property string mode: "number"
+
     onStart: focus = true
     onStop: {}
 
@@ -53,11 +55,12 @@ ActivityBase {
             property alias boxes: boxes
             property alias flow: flow
             property alias container: container
+            property alias instruction: instruction
             property real ratio: ApplicationInfo.ratio
             property alias score: score
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
 
         GCText {
@@ -67,7 +70,6 @@ ActivityBase {
             horizontalAlignment: Text.Center
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width * 0.9
-            text: qsTr("Drag and drop the numbers in correct position in Ascending order")
             color: 'white'
             Rectangle {
                 z: -1
@@ -131,7 +133,7 @@ ActivityBase {
                         GCText {
                             id: numText
                             anchors.centerIn: parent
-                            text: boxValue.toString()
+                            text: mode == "alphabets" ? String.fromCharCode(boxValue) : boxValue.toString()
                             font.pointSize: 20 * ApplicationInfo.ratio
                         }
                         MouseArea {

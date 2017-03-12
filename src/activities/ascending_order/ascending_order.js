@@ -25,21 +25,24 @@ var currentLevel = 0
 var numberOfLevel = 4
 
 var items
+var mode
 
 // num[] will contain the random numbers
 var num = []
 var originalArrangement = []
 
+var ascendingOrder
 var thresholdDistance
 var noOfTilesInPreviousLevel
 
-function start(items_) {
+function start(items_, mode_) {
     items = items_
+    mode = mode_
     currentLevel = 0
     items.flow.validMousePress = false
     thresholdDistance = 4000 * items.ratio
     items.score.currentSubLevel = 0
-    items.score.numberOfSubLevels = 3
+    items.score.numberOfSubLevels = 4
 
     noOfTilesInPreviousLevel = -1
     initLevel()
@@ -49,6 +52,8 @@ function stop() {
 }
 
 function initLevel() {
+    ascendingOrder = items.score.currentSubLevel % 2 == 0 ? true : false
+    items.instruction.text = ascendingOrder ? qsTr("Drag and drop the items in correct position in Ascending order") : qsTr("Drag and drop the items in correct position in Descending order")
     items.flow.validMousePress = true
     items.bar.level = currentLevel + 1
     initGrids()
@@ -79,9 +84,17 @@ function generateRandomNumbers() {
     var n = items.boxes.model
     // generate n random numbers and store it in num[]
     num = []
-    var upperBound = (items.bar.level)*100
+    var upperBound
+    var lowerBound
+    if(mode == "number") {
+        upperBound = (items.bar.level)*100
+        lowerBound = 0
+    } else if(mode == "alphabets") {
+        upperBound = 90
+        lowerBound = 65
+    }
     while(num.length < n) {
-        var randomNumber = Math.ceil(Math.random() * upperBound)
+        var randomNumber = Math.ceil(Math.random() * (upperBound - lowerBound) + lowerBound)
         if(num.indexOf(randomNumber) > -1) {
             continue;
         }
@@ -141,7 +154,12 @@ function previousLevel() {
 function checkOrder() {
     items.flow.validMousePress = false
     for(var i = 0;i < items.boxes.count-1;i++) {
-        if(num[i] > num[i+1]) {
+        if( ascendingOrder && (num[i] > num[i+1])) {
+            items.bonus.bad("lion")
+            items.flow.validMousePress = true
+            return
+        }
+        if(!ascendingOrder && (num[i] < num[i+1])) {
             items.bonus.bad("lion")
             items.flow.validMousePress = true
             return
