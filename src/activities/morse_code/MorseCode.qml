@@ -60,6 +60,7 @@ ActivityBase {
             property string instruction: dataset[currentLevel].instruction
             property int currentLevel: 0
             property int numberOfLevel: dataset.length
+            readonly property string middle_dot: '\u00B7'
 
             onToAlphaChanged: {
                 textInput.text = ''
@@ -87,11 +88,11 @@ ActivityBase {
                 if(dataset[currentLevel].values[0] == '_random_') {
                     var randomIndex = Math.floor(Math.random() * dataset[currentLevel].values[1].length)
                     questionValue = dataset[currentLevel].values[1][randomIndex]
-                    questionValue = questionValue.replace(/\./g, '\u00B7');
+                    questionValue = questionValue.replace(/\./g, items.middle_dot);
                     dataset[currentLevel].values[1].splice(randomIndex,1)
                 } else {
                     questionValue = dataset[currentLevel].values[1][score.currentSubLevel - 1]
-                    questionValue = questionValue.replace(/\./g, '\u00B7');
+                    questionValue = questionValue.replace(/\./g, items.middle_dot);
                 }
             }
 
@@ -240,7 +241,7 @@ ActivityBase {
 
 
                 onTextChanged: if(!(first_screen.visible) && !(morse_map.visible) && text) {
-                                   text = text.replace(/\./g, '\u00B7');
+                                   text = text.replace(/\./g, items.middle_dot);
                                    text = text.toUpperCase();
                                    if(items.toAlpha){
                                         morseConverter.alpha = text.replace( /\W/g , '')
@@ -313,8 +314,8 @@ ActivityBase {
                     height: parent.height
                 }
                 property string value: first_screen.visible ? '' : items.toAlpha ?
-                                           morseConverter.morse.replace(/\./g, '\u00B7').trim() :
-                                           morseConverter.alpha ? morseConverter.alpha.replace(/\./g, '\u00B7') : ''
+                                           morseConverter.morse.replace(/\./g, items.middle_dot).trim() :
+                                           morseConverter.alpha ? morseConverter.alpha.replace(/\./g, items.middle_dot) : ''
             }
 
             Timer {
@@ -342,7 +343,7 @@ ActivityBase {
                 horizontalAlignment: Text.AlignHCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: parent.width * 0.5
-                text: items.instruction.replace(/\./g, '\u00B7')
+                text: items.instruction.replace(/\./g, items.middle_dot)
                 height: Text.Fit
                 wrapMode: TextEdit.WordWrap
                 color: 'black'
@@ -398,7 +399,7 @@ ActivityBase {
 
                                 GCText {
                                     id: ins
-                                    text: morseConverter.table[modelData].replace(/\./g, '\u00B7')
+                                    text: morseConverter.table[modelData].replace(/\./g, items.middle_dot)
                                     style: Text.Outline
                                     styleColor: "white"
                                     color: "black"
@@ -494,7 +495,7 @@ ActivityBase {
 
             function populateMorse() {
                 layout = [ [
-                    { label: "\u00B7" },
+                    { label: items.middle_dot },
                     { label: "-" },
                     { label: keyboard.backspace }
                 ] ]
@@ -515,7 +516,7 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level | hint }
+            content: BarEnumContent { value: (!first_screen.visible)?(help | home | level | hint):(help | home) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

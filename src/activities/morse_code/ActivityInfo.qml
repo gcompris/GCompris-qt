@@ -25,9 +25,9 @@ ActivityInfo {
   demo: true
   title: qsTr("Morse code activity")
   description: qsTr("Learn Morse code for alphabets and digits")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Click on Tux and then type morse code with the help of the instruction"
   goal: qsTr("You have to send and receive alphabets and digits from Tux in Morse code")
-  prerequisite: qsTr("Knowing alphabets and digits")
+  prerequisite: qsTr("Knowledge of alphabets and digits")
   manual: qsTr("When you are asked to send Tux a message in Morse, you have to look for the corresponding morse code for required alphabet or digit. When Tux sends a message in morse, you have to type the corresponding alphabet or digit")
   credit: ""
   section: "fun"
