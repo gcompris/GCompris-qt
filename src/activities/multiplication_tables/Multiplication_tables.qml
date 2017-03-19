@@ -28,10 +28,8 @@ import "."
 import "multiplication_tables.js" as Activity
 import "multiplicationtables_dataset.js" as Dataset
 
-
 ActivityBase {
     id: activity
-
     property string url: "qrc:/gcompris/src/activities/multiplication_tables/resource/"
     property double startTime: 0
     property bool startButtonClicked: false
@@ -49,6 +47,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -79,20 +78,28 @@ ActivityBase {
             Activity.stop()
         }
 
-        Flow {
-            id: questionGrid
-            anchors.top: parent.top
-            anchors.bottom: startStopButton.top
-            spacing: 30/800*parent.width
+        Flickable {
+            id: flick
             anchors {
-                left: background.left
-                right: background.right
-                margins: 50/800*parent.width
+                left: parent.left
+                right: parent.right
+                top: parent.top
+                bottom: startStopButton.top
+                margins: 30/800*parent.width
             }
-            Repeater {
-                id: repeater
-                model: 10
-                Question {
+            contentWidth: parent.width
+            contentHeight: (questionGrid.height) * 1.1
+            flickableDirection: Flickable.VerticalFlick
+            clip: true
+
+            Grid {
+                id: questionGrid
+                spacing: 30/800*parent.width
+                Repeater {
+                    id: repeater
+                    model: 10
+                    Question {
+                    }
                 }
             }
         }
@@ -114,8 +121,8 @@ ActivityBase {
             font.pointSize: 17
             font.bold: true
             color: '#4B6319'
-            anchors.bottom: startStopButton.top
-            anchors.right: parent.right
+            anchors.bottom: bar.top
+            anchors.right: startStopButton.left
             anchors {
                 bottomMargin: 15/800*parent.width
                 rightMargin: 60/800*parent.width
@@ -127,7 +134,7 @@ ActivityBase {
         GCText {
             id: score
             font.pointSize: 17
-            anchors.bottom: startStopButton.top
+            anchors.bottom: bar.top
             anchors.right: time.left
             anchors {
                 bottomMargin: 15/800*parent.width
@@ -143,7 +150,7 @@ ActivityBase {
             anchors.right: parent.right
             anchors.bottom: bar.top
             anchors {
-                bottomMargin: 30/800*parent.width
+                bottomMargin: 15/800*parent.width
                 rightMargin: 60/800*parent.width
             }
             spacing: 25/800*parent.width
@@ -170,7 +177,7 @@ ActivityBase {
                     }
                 }
                 onClicked: {
-                    if (startTime == 0 && startButtonClicked == false) {                        
+                    if (startTime == 0 && startButtonClicked == false) {
                         Activity.canAnswer()
                         Activity.resetvalue()
                         startButton.text = qsTr("START")
@@ -226,99 +233,98 @@ ActivityBase {
             onClose: home()
         }
         DialogActivityConfig {
-                    id: dialogActivityConfig
-                    currentActivity: activity
-                    content: Component {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+                    property alias repeater2: repeater2
+                    property var availableModes: [
+                    { "text": qsTr("Choose questions"), "value": "admin" },
+                    { "text": qsTr("Default questions"), "value": "builtin" }
+                    ]
 
-                        Item {
-                            property alias modeBox: modeBox
-                            property alias repeater2: repeater2
-                            property var availableModes: [
-                                { "text": qsTr("School mode"), "value": "admin" },
-                                { "text": qsTr("Normal mode"), "value": "builtin" }
-                            ]
-
-                            Rectangle {
-                                id: flow
-                                width: dialogActivityConfig.width
-                                height: background.height
-                                GCComboBox {
-                                    id: modeBox
-                                    anchors {
-                                        top: parent.top
-                                        topMargin: 5
-                                    }
-                                    model: availableModes
-                                    background: dialogActivityConfig
-                                    label: qsTr("Select your mode")
-                                }
-                                Row {
-                                    id: labels
-                                    spacing: 20
-                                    anchors {
-                                        top: modeBox.bottom
-                                        topMargin: 5
-                                    }
-                                    visible: modeBox.currentIndex == 0
-                                }
-
-                                Rectangle {
-                                    id : adminquestion
-                                    width: parent.width
-                                    color: "transparent"
-                                    height: parent.height/1.25-labels.height-modeBox.height
-                                    anchors {
-                                        top: labels.bottom
-                                        topMargin: 5
-                                    }
-                                    Grid {
-                                        spacing : 30
-                                        columns: 10
-                                        Repeater {
-                                            id: repeater2
-                                            model: Activity.allQuestions
-                                            Admin {
-                                                visible: modeBox.currentIndex == 0
-                                            }
-                                        }
-                                       }
-                                    }
-                                }
+                    Rectangle {
+                        id: flow
+                        width: dialogActivityConfig.width
+                        height: background.height
+                        GCComboBox {
+                            id: modeBox
+                            anchors {
+                                top: parent.top
+                                topMargin: 5
                             }
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select your mode")
                         }
-                    onClose: {
-                        Activity.initLevel()
-                        home()
-                    }
-                    onLoadData: {
-                    }
-                    onSaveData: {
-                        if(dialogActivityConfig.configItem.modeBox.currentIndex == 1){
-                            items.modeType = "normal"
-                        }
-                        else{
-                        Activity.flushQuestionsAnswers()
-                        var j1 = 0
-                        for (var i = 0; i < Activity.allQuestions.length; i++) {
-                                if(dialogActivityConfig.configItem.repeater2.itemAt(i).questionChecked === true){
-                                   Activity.selectedQuestions[j1] = dialogActivityConfig.configItem.repeater2.itemAt(i).selectedQuestionText
-                                   Activity.selectedAnswers[j1] = Activity.allAnswers[i]
-                                   j1 = j1 + 1
-                                }
+                        Row {
+                            id: labels
+                            spacing: 20
+                            anchors {
+                                top: modeBox.bottom
+                                topMargin: 5
                             }
-                      items.modeType = "school"
-                      }
-                    }
+                            visible: modeBox.currentIndex == 0
+                        }
 
-                    function setDefaultValues() {
-                        for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
-                            if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
-                                dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                                break;
+                        Rectangle {
+                            id : adminquestion
+                            width: parent.width
+                            color: "transparent"
+                            height: parent.height/1.25-labels.height-modeBox.height
+                            anchors {
+                                top: labels.bottom
+                                topMargin: 5
+                            }
+                            Grid {
+                                spacing : 30
+                                columns: 10
+                                Repeater {
+                                    id: repeater2
+                                    model: Activity.allQuestions
+                                    Admin {
+                                        visible: modeBox.currentIndex == 0
+                                    }
+                                }
                             }
                         }
                     }
                 }
+            }
+            onClose: {
+                Activity.initLevel()
+                home()
+            }
+            onLoadData: {
+            }
+            onSaveData: {
+                if(dialogActivityConfig.configItem.modeBox.currentIndex == 1){
+                    items.modeType = "normal"
+                }
+                else{
+                    Activity.flushQuestionsAnswers()
+                    var j1 = 0
+                    for (var i = 0; i < Activity.allQuestions.length; i++) {
+                        if(dialogActivityConfig.configItem.repeater2.itemAt(i).questionChecked === true){
+                            Activity.selectedQuestions[j1] = dialogActivityConfig.configItem.repeater2.itemAt(i).selectedQuestionText
+                            Activity.selectedAnswers[j1] = Activity.allAnswers[i]
+                            j1 = j1 + 1
+                        }
+                    }
+                    items.modeType = "school"
+                }
+            }
+
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
 
         Bar {
             id: bar
@@ -339,13 +345,13 @@ ActivityBase {
         }
 
         VirtualKeyboard {
-                  id: keyboard
-                  anchors.bottom: parent.bottom
-                  anchors.horizontalCenter: parent.horizontalCenter
-                  width: parent.width
-                  onKeypress: Activity.processKeyPress(text)
-                  onError: console.log("VirtualKeyboard error: " + msg);
-              }
+            id: keyboard
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+            onKeypress: Activity.processKeyPress(text)
+            onError: console.log("VirtualKeyboard error: " + msg);
+        }
 
         Bonus {
             id: bonus

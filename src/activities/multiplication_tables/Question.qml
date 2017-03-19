@@ -34,7 +34,7 @@ Flow {
 
     GCText {
         id: questionText
-        text:qsTr("Question")        
+        text:qsTr("Question")
         font.pointSize: 20
         font.bold: true
         color: "black"
