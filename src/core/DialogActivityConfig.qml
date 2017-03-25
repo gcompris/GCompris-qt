@@ -209,13 +209,14 @@ Rectangle {
                     }
                 } 
                 
+                // The scroll buttons
                 GCButtonScroll {
                     anchors.right: parent.right
                     anchors.rightMargin: 5 * ApplicationInfo.ratio
                     anchors.bottom: flick.bottom
                     anchors.bottomMargin: 30 * ApplicationInfo.ratio
-                    onUp: flick.flick(0,2000)
-                    onDown: flick.flick(0,-2000)
+                    onUp: flick.flick(0, 1400)
+                    onDown: flick.flick(0, -1400)
                     upVisible: flick.visibleArea.yPosition <= 0 ? false : true
                     downVisible: flick.visibleArea.yPosition >= 1 ? false : true
                 }
@@ -224,38 +225,6 @@ Rectangle {
             Item { width: 1; height: 10 }
         }
     }
-    
-    //The scroll buttons
-//    Rectangle {
-//         id: scrollButtons
-//         color: "#00000000" 
-//         anchors.left: parent.left
-//         anchors.top: parent.top
-//         height: parent.height
-//         width: 120 * ApplicationInfo.ratio
-//         anchors.margins: 10
-//     
-//         BarButton {
-//             id: scrollUp
-//             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-//             sourceSize.width: parent.width / 2
-//             sourceSize.height: parent.height
-//             anchors.left: parent.left
-//             onClicked: flick.flick(0,2000)
-//         }
-//     
-//         BarButton {
-//             id: scrollDown
-//             source: "qrc:/gcompris/src/core/resource/bar_next.svg";
-//             sourceSize.width: parent.width / 2
-//             sourceSize.height: parent.height
-//             anchors.right: parent.right
-//             onClicked: {
-//                 console.log("plop");
-//                 flick.flick(0,-2000);
-//             }
-//         }
-//     }
 
     // The cancel button
     GCButtonCancel {
