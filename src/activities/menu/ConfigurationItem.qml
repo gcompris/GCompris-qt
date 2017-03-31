@@ -212,6 +212,16 @@ Item {
             }
         }
 
+	GCDialogCheckBox {
+           id: enableBackgroundMusicBox
+            text: qsTr("Enable background music")
+            checked: DownloadManager.isDataRegistered("backgroundMusic")
+            enabled: !DownloadManager.isDataRegistered("backgroundMusic")
+            onCheckedChanged: {
+                isBackgroundMusicEnabled = checked;
+            }
+        }
+
         GCDialogCheckBox {
             id: enableFullscreenBox
             text: qsTr("Fullscreen")
@@ -526,6 +536,7 @@ Item {
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
+    property bool isBackgroundMusicEnabled: ApplicationSettings.isBackgroundMusicEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
@@ -543,6 +554,13 @@ Item {
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
+
+        isBackgroundMusicEnabled = ApplicationSettings.isBackgroundMusicEnabled
+        enableBackgroundMusicBox.checked = isBackgroundMusicEnabled
+
+        enableBackgroundMusicBox.checked = DownloadManager.isDataRegistered("backgroundMusic")
+        enableBackgroundMusicBox.enabled = !DownloadManager.isDataRegistered("backgroundMusic")
+
 
         isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
@@ -591,6 +609,7 @@ Item {
         ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
+        ApplicationSettings.isBackgroundMusicEnabled = isBackgroundMusicEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
@@ -662,7 +681,36 @@ Item {
                 }
             }
         }
-    }
+
+        // download backgroundMusic.rcc if needed
+        if(DownloadManager.isDataRegistered("backgroundMusic")) {
+        // we either have it, we try to update in the background
+        // or we are downloading it
+            if(DownloadManager.haveLocalResource(backgroundMusic))
+                DownloadManager.updateResource(backgroundMusic)
+            }
+        else {
+        // download automatically if automatic download else ask for download
+            if(isAutomaticDownloadsEnabled) {
+                var prevAutomaticDownload = ApplicationSettings.isAutomaticDownloadsEnabled
+                ApplicationSettings.isAutomaticDownloadsEnabled = true;
+                DownloadManager.updateResource(backgroundMusic);
+                ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
+            }
+            else {
+                Core.showMessageDialog(main,
+                qsTr("The background music is not yet installed. ")
+                + qsTr("Do you want to download it now?"),
+                qsTr("Yes"),
+                function() {
+                    if (DownloadManager.downloadResource(backgroundMusic))
+                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                },
+                qsTr("No"),null
+                );
+                }
+            }
+        }
 
     ListModel {
         id: fonts
@@ -722,6 +770,7 @@ Item {
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
+        (ApplicationSettings.isBackgroundMusicEnabled != isBackgroundMusicEnabled) ||
         (ApplicationSettings.isFullscreen != isFullscreen) ||
         (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
         (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||

@@ -114,6 +114,14 @@ Item {
     property GCAudio audioEffects
 
     /**
+    * type:GCAudio
+     * The global audio item for background music.
+     *
+     * @sa GCAudio backgroundMusic
+     */
+    property GCAudio backgroundMusic
+
+    /**
      * type:Loading
      * The global loading object.
      *
@@ -194,6 +202,7 @@ Item {
             // We mute / unmute both channels in sync
             ApplicationSettings.isAudioVoicesEnabled = !ApplicationSettings.isAudioVoicesEnabled
             ApplicationSettings.isAudioEffectsEnabled = ApplicationSettings.isAudioVoicesEnabled
+            ApplicationSettings.isBackgroundMusicEnabled = ApplicationSettings.isAudioVoicesEnabled
         } else if (event.modifiers === Qt.ControlModifier &&
                    event.key === Qt.Key_W) {
             // Ctrl+W exit the current activity
