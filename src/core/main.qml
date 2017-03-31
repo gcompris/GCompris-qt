@@ -53,7 +53,8 @@ Window {
     /// @cond INTERNAL_DOCS
 
     property var applicationState: Qt.application.state
-    property bool isMusicalActivityRunning: false
+    property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
+    property alias backgroundMusic: backgroundMusic
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
@@ -61,9 +62,9 @@ Window {
             audioEffects.stop();
         }
     }
-
+    
     onClosing: Core.quit(main)
-
+    
     GCAudio {
         id: audioVoices
         muted: !ApplicationSettings.isAudioVoicesEnabled
@@ -86,7 +87,7 @@ Window {
 
         Component.onCompleted: {
             if(ApplicationSettings.isAudioEffectsEnabled)
-                audioVoices.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
 
             if (DownloadManager.areVoicesRegistered())
                 delayedWelcomeTimer.playWelcome();
@@ -101,6 +102,39 @@ Window {
     GCSfx {
         id: audioEffects
         muted: !ApplicationSettings.isAudioEffectsEnabled && !main.isMusicalActivityRunning
+    }
+
+    GCAudio {
+        id: backgroundMusic
+        muted: !ApplicationSettings.isBackgroundMusicEnabled
+
+        Timer {
+            id: delayedbackgroundMusic
+            interval: (ApplicationSettings.isAudioVoicesEnabled && !ApplicationSettings.isAudioEffectsEnabled) ? 2000 : 20000
+            repeat: false
+
+            onTriggered: {
+                delayedbackgroundMusic.playBackgroundMusic();
+            }
+
+            function playBackgroundMusic() {
+                rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+                for(var i = 0; i < rccBackgroundMusic.length; i++)
+                    backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[i]))
+            }
+        }
+        Component.onCompleted: {
+            if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
+                delayedbackgroundMusic.playBackgroundMusic()
+            }
+            else if(ApplicationSettings.isBackgroundMusicEnabled && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+                delayedbackgroundMusic.start()
+            }
+            else {
+                DownloadManager.backgroundMusicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
+                delayedbackgroundMusic.start()
+            }
+        }
     }
 
     function playIntroVoice(name) {
@@ -140,6 +174,42 @@ Window {
             );
         }
     }
+
+    function checkBackgroundMusic() {
+        var music = DownloadManager.getBackgroundMusicResources()
+        if(rccBackgroundMusic == '') {
+            rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+        }
+        if(music == '') {
+            music = DownloadManager.getBackgroundMusicResources()
+        }
+    // We have local music but it is not yet registered
+        else if(!DownloadManager.isDataRegistered("backgroundMusic") && DownloadManager.haveLocalResource(music)) {
+    // We have music and automatic download is enabled. Download the music and register it
+         if(DownloadManager.updateResource(music) && DownloadManager.downloadIsRunning()) {
+             DownloadManager.registerResource(music)
+             rccBackgroundMusic = Core.shuffle(ApplicationInfo.getBackgroundMusicFromRcc())
+          }
+          else {
+              rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+            }
+        }
+        else if(!DownloadManager.haveLocalResource(music)) {
+            Core.showMessageDialog(
+                        main,
+                        qsTr("The background music is not yet downloaded. ")
+                        + qsTr("Do you want to download it now?"),
+                        qsTr("Yes"),
+                        function() {
+                           if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
+                                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                           }
+                        },
+                        qsTr("No"), null,
+                        function() { pageView.currentItem.focus = true }
+                    );
+                }
+        }
     ChangeLog {
        id: changelog
     }
@@ -179,6 +249,7 @@ Window {
                         function() {
                             pageView.currentItem.focus = true
                             checkWordset()
+                            checkBackgroundMusic()
                         }
              );
         }
@@ -189,9 +260,8 @@ Window {
                 DownloadManager.updateResource(
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
             }
-
             checkWordset()
-
+            checkBackgroundMusic()
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 Core.showMessageDialog(
@@ -234,7 +304,7 @@ Window {
 
                 if(!properties.exitItem.isDialog &&        // if coming from menu and
                         !properties.enterItem.isDialog)    // going into an activity then
-                    playIntroVoice(properties.enterItem.activityInfo.name);    // play intro
+                    playIntroVoice(properties.enterItem.activityInfo.name); // play intro
 
                 if (!properties.exitItem.isDialog ||       // if coming from menu or
                         properties.enterItem.alwaysStart)  // start signal enforced (for special case like transition from config-dialog to editor)

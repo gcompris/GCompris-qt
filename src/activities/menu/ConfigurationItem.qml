@@ -212,6 +212,15 @@ Item {
             }
         }
 
+	GCDialogCheckBox {
+           id: enableBackgroundMusicBox
+            text: qsTr("Enable background music")
+            checked: isBackgroundMusicEnabled
+            onCheckedChanged: {
+                isBackgroundMusicEnabled = checked;
+            }
+        }
+
         GCDialogCheckBox {
             id: enableFullscreenBox
             text: qsTr("Fullscreen")
@@ -520,6 +529,7 @@ Item {
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
+    property bool isBackgroundMusicEnabled: ApplicationSettings.isBackgroundMusicEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
@@ -537,6 +547,9 @@ Item {
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
+
+        isBackgroundMusicEnabled = ApplicationSettings.isBackgroundMusicEnabled
+        enableBackgroundMusicBox.checked = isBackgroundMusicEnabled
 
         isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
@@ -585,12 +598,12 @@ Item {
         ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
+        ApplicationSettings.isBackgroundMusicEnabled = isBackgroundMusicEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
         ApplicationSettings.wordset = wordset
-
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
@@ -656,7 +669,36 @@ Item {
                 }
             }
         }
-    }
+
+        // download backgroundMusic.rcc if needed
+        if(DownloadManager.isDataRegistered("backgroundMusic")) {
+        // we either have it, we try to update in the background
+        // or we are downloading it
+            if(DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources()))
+                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources())
+            }
+        else {
+        // download automatically if automatic download else ask for download
+            if(isAutomaticDownloadsEnabled) {
+                var prevAutomaticDownload = ApplicationSettings.isAutomaticDownloadsEnabled
+                ApplicationSettings.isAutomaticDownloadsEnabled = true;
+                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources());
+                ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
+            }
+            else {
+                Core.showMessageDialog(main,
+                qsTr("The background music is not yet installed. ")
+                + qsTr("Do you want to download it now?"),
+                qsTr("Yes"),
+                function() {
+                    if (DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources()))
+                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                },
+                qsTr("No"),null
+                );
+                }
+            }
+        }
 
     ListModel {
         id: fonts
@@ -719,6 +761,7 @@ Item {
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
+        (ApplicationSettings.isBackgroundMusicEnabled != isBackgroundMusicEnabled) ||
         (ApplicationSettings.isFullscreen != isFullscreen) ||
         (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
         (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||

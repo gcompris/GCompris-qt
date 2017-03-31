@@ -55,6 +55,10 @@ static const char *FONT_KEY = "font";
 static const char *IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
 static const char *ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
+static const char *FILTERED_BACKGROUND_MUSIC_KEY = "filteredBackgroundMusic";
+static const char *BACKGROUND_MUSIC_VOLUME_KEY = "backgroundMusicVolume";
+static const char *AUDIO_EFFECTS_VOLUME_KEY = "audioEffectsVolume";
+
 static const char *DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
 static const char *CACHE_PATH_KEY = "cachePath";
 static const char *USERDATA_PATH_KEY = "userDataPath";
@@ -95,6 +99,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_isAudioEffectsEnabled = m_config.value(ENABLE_AUDIO_EFFECTS_KEY, true).toBool();
+    m_isBackgroundMusicEnabled = m_config.value(ENABLE_BACKGROUND_MUSIC_KEY, true).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
     m_previousHeight = m_config.value(PREVIOUS_HEIGHT_KEY, screenSize.height()).toUInt();
     m_previousWidth = m_config.value(PREVIOUS_WIDTH_KEY, screenSize.width()).toUInt();
@@ -169,9 +174,10 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_isBarHidden = false;
 
     connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
-    connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
-    connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
-    connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
+	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
+	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
+	 connect(this, &ApplicationSettings::backgroundMusicEnabledChanged, this, &ApplicationSettings::notifyBackgroundMusicEnabledChanged);
+	connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
     connect(this, &ApplicationSettings::previousHeightChanged, this, &ApplicationSettings::notifyPreviousHeightChanged);
     connect(this, &ApplicationSettings::previousWidthChanged, this, &ApplicationSettings::notifyPreviousWidthChanged);
     connect(this, &ApplicationSettings::localeChanged, this, &ApplicationSettings::notifyLocaleChanged);
@@ -201,6 +207,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_config.setValue(SHOW_LOCKED_ACTIVITIES_KEY, m_showLockedActivities);
     m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
+    m_config.setValue(ENABLE_BACKGROUND_MUSIC_KEY, m_isBackgroundMusicEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
     m_config.setValue(FONT_KEY, m_font);
     m_config.setValue(IS_CURRENT_FONT_EMBEDDED, m_isEmbeddedFont);
@@ -258,6 +265,12 @@ void ApplicationSettings::notifyAudioEffectsEnabledChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUDIO_EFFECTS_KEY, m_isAudioEffectsEnabled);
 	qDebug() << "notifyAudioEffects: " << m_isAudioEffectsEnabled;
+}
+
+void ApplicationSettings::notifyBackgroundMusicEnabledChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_BACKGROUND_MUSIC_KEY, m_isBackgroundMusicEnabled);
+    qDebug() << "notifyBackgroundMusic: " << m_isBackgroundMusicEnabled;
 }
 
 void ApplicationSettings::notifyLocaleChanged()
@@ -323,7 +336,6 @@ void ApplicationSettings::setIsAutomaticDownloadsEnabled(const bool newIsAutomat
         emit automaticDownloadsEnabledChanged();
     }
 }
-
 void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);

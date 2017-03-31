@@ -112,6 +112,11 @@ QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
             .arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
 }
 
+QString DownloadManager::getBackgroundMusicResources() const
+{
+    return QString("data2/backgroundMusic/backgroundMusic-" COMPRESSED_AUDIO ".rcc");
+}
+
 inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
 {
     for (const QString &base : getSystemResourcePaths()) {
@@ -423,9 +428,13 @@ bool DownloadManager::registerResourceAbsolute(const QString& filename)
     emit resourceRegistered(getRelativeResourcePath(filename));
 
     QString v = getVoicesResourceForLocale(
-                     ApplicationSettings::getInstance()->locale());
+                ApplicationSettings::getInstance()->locale());
+    QString musicPath = getBackgroundMusicResources();
+
     if (v == getRelativeResourcePath(filename))
         emit voicesRegistered();
+    else if(musicPath == getRelativeResourcePath(filename))
+        emit backgroundMusicRegistered();
     return true;
 }
 
@@ -440,7 +449,6 @@ bool DownloadManager::registerResource(const QString& filename)
 bool DownloadManager::isDataRegistered(const QString& data) const
 {
     QString res = QString(":/gcompris/data/%1").arg(data);
-
     return !QDir(res).entryList().empty();
 }
 
@@ -448,7 +456,6 @@ bool DownloadManager::areVoicesRegistered() const
 {
     QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").
             arg(ApplicationInfo::getInstance()->getVoicesLocale(ApplicationSettings::getInstance()->locale()));
-
     return isDataRegistered(resource);
 }
 

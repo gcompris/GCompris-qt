@@ -182,6 +182,13 @@ QStringList ApplicationInfo::getFontsFromRcc()
     return m_fontsFromRcc;
 }
 
+QStringList ApplicationInfo::getBackgroundMusicFromRcc()
+{
+    const QStringList backgroundMusicFilters = { QString("*.%1").arg(COMPRESSED_AUDIO) };
+    m_backgroundMusicFromRcc = QDir(":/gcompris/data/backgroundMusic").entryList(backgroundMusicFilters);
+    return m_backgroundMusicFromRcc;
+}
+
 void ApplicationInfo::notifyPortraitMode()
 {
     int width = qApp->primaryScreen()->geometry().width();
