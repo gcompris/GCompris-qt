@@ -1,6 +1,6 @@
 /* GCompris - alphabetical_order.qml
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  * Authors:
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
