@@ -26,7 +26,7 @@
 var url = "qrc:/gcompris/src/activities/checkers/resource/"
 
 var currentLevel
-var numberOfLevel = 1
+var numberOfLevel = 5
 var items
 var state
 
@@ -66,10 +66,10 @@ function previousLevel() {
     initLevel();
 }
 
-function simplifiedState(state) {
+function simplifiedState(position) {
     var newState = new Array()
-    for(var i = 0; i < state.length; ++i) {
-        var img = state[i] !== '0' && state[i] !== '?' ? state[i] : ''
+    for(var i = 0; i < position.length; ++i) {
+        var img = position[i] !== '0' && position[i] !== '?' ? position[i] : ''
         newState.push(
             {
                 'pos': engineToViewPos(i),
@@ -151,7 +151,6 @@ function engineToViewPos(pos) {
 // move is the result from the engine move
 function visibleMove(move, from, to) {
     var piece = items.pieces.getPieceAt(from);
-
     items.pieces.moveTo(from, to, move)
 
     // promotion
@@ -161,12 +160,58 @@ function visibleMove(move, from, to) {
         piece.promotion()
 }
 
+function findBestMove(currentState, depth, sign) {
+    if(depth <= 0) {
+        return getScore(currentState);
+    }
+
+    var moves = currentState.moves()
+    if(moves.length == 0) {
+        return [100, 0];
+    }
+    var bestScore = -1000;
+    var bestScores;
+    for(var move in moves) {
+        currentState.move(moves[move]);
+        var newScore = findBestMove(currentState, depth-1, -1.0*sign)
+        currentState.undo()
+        var score = sign*(newScore[0] - newScore[1])
+        if(score > bestScore) {
+            bestScore = score;
+            bestScores = newScore;
+        }
+    }
+    return bestScores
+}
+
 function computerMove() {
-    // todo
-    var computer = state.findmove(3)
-    var move = state.move(computer[0], computer[1])
+    var moves = state.moves()
+    var bestScore = -1000
+    var bestMoves = []
+    var newState = new Engine.Draughts(state.fen())
+    // 0 is b, 1 is b -> w, 2 is b -> w -> b guesses
+    var depth = currentLevel == 5 ? 2 : 1;
+
+    for(var move in moves) {
+        newState.move(moves[move]);
+        var newScore = findBestMove(newState, depth, 1)
+        newState.undo()
+        var score = newScore[1] - newScore[0]
+        if(bestMoves.length == 0 || bestScore < score) {
+            bestScore = score
+            bestMoves = []
+            bestMoves.push(moves[move])
+        }
+        else if(bestScore == score) {
+            bestMoves.push(moves[move])
+        }
+    }
+    bestMoves = Core.shuffle(bestMoves)
+
+    var computer = bestMoves[0]
+    var move = state.move({"from": computer.from, "to": computer.to})
     if(move) {
-        visibleMove(move, engineToViewPos(computer[0]), engineToViewPos(computer[1]))
+        visibleMove(move, engineToViewPos(computer.from), engineToViewPos(computer.to))
     }
     return move
 }
@@ -236,7 +281,7 @@ function randomMove() {
     // Disable random move if the situation is too bad for the user
     // This avoid having the computer playing bad against a user
     // with too few pieces making the game last too long
-    var score = getScore()
+    var score = getScore(state)
     if(score[0] / score[1] < 0.7) {
         computerMove()
         return
@@ -255,7 +300,7 @@ function randomMove() {
     if(move) {
         visibleMove(move, engineToViewPos(moves[0].from), engineToViewPos(moves[0].to))
     } else {
-        // Bad move, should not happens
+        // Bad move, should not happen
         computerMove()
     }
 }
@@ -289,24 +334,31 @@ function showPossibleMoves(from) {
 
 // Calculate the score for black and white
 // Count the number of pieces with each piece having a given weight
-// Piece pawn knight bishop rook queen
-// Value 1    3 	 3      5    9
+// Piece pawn queen
+// Value 1    4
 // @return [white, black]
-function getScore() {
-    var lut = {2: 1, 4: 5, 6: 3, 8: 3, 12: 9}
+function getScore(board) {
     var white = 0
     var black = 0
-    // TODO
-    return [1, 1]
-    // END TODO
-    for(var i=0; i < state['board'].length; ++i) {
-        var score = lut[state['board'][i] & 0xFE]
-        if(score)
-            if(state['board'][i] & 0x01)
-                black += score
-            else
-                white += score
+    var queenScore = 4
+    var position = board.position()
+    
+    for(var i = 0; i < position.length; ++i) {
+        var img = position[i] !== '0' && position[i] !== '?' ? position[i] : ''
+        if(img == '')
+            continue;
+        else if(img == 'w') {
+            white ++;
+        }
+        else if(img == 'W') {
+            white += queenScore;
+        }
+        if(img == 'b') {
+            black ++;
+        }
+        else if(img == 'B') {
+            black += queenScore;
+        }
     }
     return [white, black]
 }
-
