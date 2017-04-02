@@ -22,6 +22,7 @@ import QtQuick 2.0
 
 QtObject {
     property bool isEmbedded: true
+    property bool allowExpertMode: true
     property string imagesPrefix: "qrc:/gcompris/src/activities/categorization/resource/images/alphabets/"
     property variant levels: [
         {

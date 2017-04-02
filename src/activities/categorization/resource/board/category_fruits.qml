@@ -22,6 +22,7 @@ import QtQuick 2.0
 
 QtObject{
     property bool isEmbedded: false
+    property bool allowExpertMode: true
     property string imagesPrefix: "qrc:/gcompris/src/activities/lang/resource/words_sample/"
     property variant levels: [
         {
