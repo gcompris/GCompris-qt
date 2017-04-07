@@ -184,7 +184,7 @@ ActivityBase {
                 width: items.cellSize * (items.numberOfCases + 0.2)
                 height: items.cellSize * (items.numberOfCases + 0.2)
                 z: 09
-                color: "#3A1F0A"
+                color: "#2E1B0C"
   
             // The chessboard
             GridView {
@@ -205,7 +205,7 @@ ActivityBase {
                     id: square
                     Image {
                         source: index % 2 + (Math.floor(index / items.numberOfCases) % 2) == 1 ?
-                                   Activity.url + 'chess-white.svg' : Activity.url + 'chess-black.svg';
+                                   Activity.url + 'checkers-white.svg' : Activity.url + 'checkers-black.svg';
                         width: items.cellSize
                         height: items.cellSize
                     }
@@ -247,7 +247,8 @@ ActivityBase {
                     anchors.fill: parent
                     color: parent.containsDrag ?  '#803ACAFF' : 'transparent'
                     border.width: parent.acceptMove || parent.jumpable ? 5 : 0
-                    border.color: parent.acceptMove ? '#FF808080' : '#FF202020' 
+                    border.color: parent.acceptMove ? '#FF808080' : '#C0808080'
+                    radius: parent.acceptMove ? width*0.5 : 0
                     z: 1
                 }
             }
