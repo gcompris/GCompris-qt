@@ -150,6 +150,9 @@ ActivityBase {
                         cut()
                     }
                 }
+                function newline() {
+                    insert(cursorPosition, "<br></br>")
+                }
                 function formatLineWith(tag) {
                     var text = getText(0, length)
                     var initialPosition = cursorPosition
@@ -196,10 +199,14 @@ ActivityBase {
             onKeypress: {
                 if(text == backspace)
                     edit.backspace()
+                else if(text == newline)
+                    edit.newline()
                 else
                     edit.insertText(text)
             }
+            shiftKey: true
             onError: console.log("VirtualKeyboard error: " + msg);
+            readonly property string newline: "\u21B2"
 
             function populate() {
                 layout = [
@@ -247,7 +254,8 @@ ActivityBase {
                     { label: "Y" },
                     { label: "Z" },
                     { label: " " },
-                    { label: backspace }
+                    { label: backspace },
+                    { label: newline }
                 ]
             ]
             }
