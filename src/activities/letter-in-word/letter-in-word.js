@@ -222,7 +222,7 @@ function checkWord(index) {
         return true;
     }
     else {
-        items.bonus.bad("flower");
+        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/check_answer.$CA"))
         return false;
     }
 }
@@ -230,7 +230,6 @@ function checkWord(index) {
 function incorrectSelection() {
     incorrectFlag = true;
     var quesLen = questions.length;
-    questions = questions.slice(0, currentSubLevel) + questions.slice(currentSubLevel+1, quesLen) + questions.charAt(currentSubLevel);
     currentSubLevel--;
     nextSubLevel();
 }
