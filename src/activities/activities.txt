@@ -105,6 +105,7 @@ money
 money_back
 money_back_cents
 money_cents
+morse_code
 mosaic
 nine_men_morris
 nine_men_morris_2players
