@@ -74,8 +74,9 @@ AnimatedSprite {
             rotateLeftAnimation.start()
             targetX = 0
             x = targetX
+            var barHeight = ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
             y = Activity.currentLevel > 0
-                    ? bar.height + Math.random() * (background.height - bar.height - fish.height)
+                    ? Math.random() * (background.height - barHeight - fish.height)
                     : y
         } else if(x == 0 && rotate.angle == 180) {
             rotateRightAnimation.start()

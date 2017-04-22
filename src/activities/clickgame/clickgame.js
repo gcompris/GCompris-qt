@@ -285,7 +285,6 @@ function createFish(minDuration) {
                     "activity": activity,
                     "background": background,
                     "bar": bar,
-                    "x": Math.random() * (background.width - fishSource.width),
                     "y": Math.random() * (background.height - bar.height - fishSource.height),
                     "width": fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio,
                     "height": fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio,
@@ -294,12 +293,13 @@ function createFish(minDuration) {
                     "frameCount": fishSource.nbFrame,
                     "duration": minDuration + Math.floor(Math.random() * 5000)
                 });
-    fish.restart()
 
     if (fish === null) {
         // Error Handling
         console.log("Error creating object");
     }
+    else
+        fish.restart()
     return fish;
 }
 
