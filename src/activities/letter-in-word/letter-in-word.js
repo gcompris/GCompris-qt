@@ -200,37 +200,31 @@ function nextSubLevel() {
 }
 
 function checkAnswer() {
-    var hasWordNotFound = false;
+    var allCorrectSelected = true
     var modelEntry;
+    var letterIndex;
     for(var i = 0; i < words.length; i++) {
         modelEntry = items.wordsModel.get(i);
-        if(modelEntry.spelling.indexOf(currentLetter) != -1 && modelEntry.selected == false) {
-            hasWordNotFound = true;
+        letterIndex = modelEntry.spelling.indexOf(currentLetter);
+        if(letterIndex != -1 && modelEntry.selected == false) {
+            allCorrectSelected = false;
+            break;
+        }
+        if(letterIndex == -1 && modelEntry.selected == true) {
+            allCorrectSelected = false;
             break;
         }
     }
-    if(hasWordNotFound == false) {
+    if(allCorrectSelected == true) {
         items.bonus.good("flower");
     }
+    else {
+        items.bonus.bad("flower");
+   }
 }
 
 function checkWord(index) {
     var modelEntry = items.wordsModel.get(index);
-    if(modelEntry.spelling.indexOf(currentLetter) != -1) {
-        items.wordsModel.setProperty(index, "selected", true);
-        checkAnswer();
-        return true;
-    }
-    else {
-        items.bonus.bad("flower");
-        return false;
-    }
-}
-
-function incorrectSelection() {
-    incorrectFlag = true;
-    var quesLen = questions.length;
-    questions = questions.slice(0, currentSubLevel) + questions.slice(currentSubLevel+1, quesLen) + questions.charAt(currentSubLevel);
-    currentSubLevel--;
-    nextSubLevel();
+    items.wordsModel.setProperty(index, "selected", !modelEntry.selected);
+    return modelEntry.selected;
 }

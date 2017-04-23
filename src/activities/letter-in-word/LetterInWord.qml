@@ -199,7 +199,6 @@ ActivityBase {
             interval: 100
             Component.onCompleted: {
                 win.connect(Activity.nextSubLevel);
-                loose.connect(Activity.incorrectSelection);
             }
         }
 
@@ -323,6 +322,24 @@ ActivityBase {
                 visible: background.keyboardMode
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+            }
+        }
+
+        BarButton {
+            id: ok
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            width: wordsView.cellWidth*0.8
+            height: wordsView.cellHeight*0.8
+            sourceSize.width: wordsView.cellWidth
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                bottom: wordsView.bottom
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    Activity.checkAnswer();
+                }
             }
         }
 

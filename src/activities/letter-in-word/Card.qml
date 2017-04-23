@@ -70,17 +70,12 @@ Item {
             styleColor: "white"
         }
 
-        ParticleSystemStarLoader {
-            id: particle
-            clip: false
-        }
-
         states:
             State {
-                name: "scaled"; when: mouseArea.containsMouse && mouseActive
+                name: "scaled"; when: selected && mouseActive
                 PropertyChanges {
                     target: cardItem
-                    scale: /*carriageImage.scale * */ 1.2
+                    scale: 1.5
                     z: 2
                 }
             }
@@ -115,14 +110,9 @@ Item {
         SequentialAnimation {
             id: failureAnimation
             NumberAnimation {
-                target: colorCardImage
+                target: cardImage
                 property: "opacity"
                 to: 1; duration: 400
-            }
-            NumberAnimation {
-                target: colorCardImage
-                property: "opacity"
-                to: 0; duration: 200
             }
         }
 
@@ -133,18 +123,9 @@ Item {
             property: "rotation"
             to: 0
             duration: 500
-            easing.type: Easing.InOutQuad
+            easing.type: Easing.Linear
         }
-    }
 
-    Colorize {
-        id: colorCardImage
-        z: 5
-        anchors.fill: cardImage
-        source: cardImage
-        hue: 0.0
-        saturation: 1
-        opacity: 0
     }
 
     MouseArea {
@@ -166,9 +147,8 @@ Item {
         if(mouseActive && !successAnimation.running) {
             if (Activity.checkWord(index)) {
                 successAnimation.restart();
-                particle.burst(30);
-                textItem.textFound = spelling.replace(RegExp(Activity.currentLetter, "g"), "<font color=\"#00FF00\">"+Activity.currentLetter+"</font>");
-                playWord();
+                if(selected)
+                    playWord();
             }
             else {
                 failureAnimation.restart()
