@@ -34,7 +34,6 @@ ActivityBase {
     property double startTime: 0
     property bool startButtonClicked: false
     property var dataset: Dataset
-    property string mode: "multiplicationtables"
 
     onStart: focus = true
     onStop: {}
@@ -67,12 +66,11 @@ ActivityBase {
             property alias repeater: repeater
             property alias repeaterModel: repeater.model
             property string modeType: modeType
-            property var data: Dataset
             property alias keyboard: keyboard
         }
 
         onStart: {
-            Activity.start(items, mode, dataset, url)
+            Activity.start(items, dataset, url)
         }
         onStop: {
             Activity.stop()
@@ -178,7 +176,7 @@ ActivityBase {
                 }
                 onClicked: {
                     if (startTime == 0 && startButtonClicked == false) {
-                        Activity.canAnswer()
+                        Activity.canAnswer(true)
                         Activity.resetvalue()
                         startButton.text = qsTr("START")
                         time.text = qsTr(" Your Timer Started...")
@@ -212,18 +210,18 @@ ActivityBase {
                 onClicked: {
                     if (startButtonClicked == true) {
                         score.visible = true
-                        var str1 = (new Date().getTime() - startTime)/1000
-                        time.text = qsTr("Your time:- %1 seconds").arg(str1)
+                        var time_taken = (new Date().getTime() - startTime)/1000
+                        time.text = qsTr("Your time:- %1 seconds").arg(time_taken)
                         startTime = 0
                         startButtonClicked = false
                         startButton.text = qsTr("START AGAIN")
                         if(items.modeType == "school"){
-                            Activity.verifyAnswer2()
+                            Activity.verifySelectedAnswer()
                         }
                         else{
                             Activity.verifyAnswer()
                         }
-                        Activity.cannotAnswer()
+                        Activity.canAnswer(false)
                     }
                 }
             }

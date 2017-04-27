@@ -25,9 +25,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
-var schoolMode
 var items
-var mode
 var dataset
 var numberOfLevel
 var url
@@ -41,13 +39,11 @@ var allAnswers = []
 var questionOfLevel = []
 var answerOfLevel = []
 var scoreCounter = 0
-var uppercaseOnly;
 var selectedQuestions = []
 var selectedAnswers = []
 
-function start(_items, _mode, _dataset, _url) {
+function start(_items, _dataset, _url) {
     items = _items
-    mode = _mode
     dataset = _dataset.get()
     url = _url
     numberOfLevel = dataset.length
@@ -72,7 +68,7 @@ function initLevel() {
     items.score.visible = false
     items.time.text = "--"
     resetvalue()
-    cannotAnswer()
+    canAnswer(false)
 }
 
 function loadQuestions() {
@@ -82,7 +78,7 @@ function loadQuestions() {
     answer = dataset[currentLevel].answers
     table = dataset[currentLevel].tableName
     for (i = 0; i < question.length; i++) {
-        items.repeater.itemAt(i).questionText = qsTr(question[i]) + " = "
+        items.repeater.itemAt(i).questionText = qsTr(question[i])
     }
 }
 
@@ -91,7 +87,7 @@ function loadSelectedQuestions() {
     question2 = selectedQuestions
     answer2 = selectedAnswers
     for (i = 0; i < question2.length; i++) {
-        items.repeater.itemAt(i).questionText = qsTr(question2[i]) + " = "
+        items.repeater.itemAt(i).questionText = qsTr(question2[i])
     }
 }
 
@@ -108,111 +104,60 @@ function flushQuestionsAnswers() {
 
 function loadAllQuestionAnswer() {
     var i
-    var j
-    var t1 = 0
-    var t2 = 0
     for (i = 0; i < numberOfLevel; i++) {
         questionOfLevel = dataset[i].questions
         answerOfLevel = dataset[i].answers
-        for (j = 0; j < questionOfLevel.length; j++) {
-            allQuestions[t1] = questionOfLevel[j]
-            t1 = t1 + 1
-        }
-        for (j = 0; j < answerOfLevel.length; j++) {
-            allAnswers[t2] = answerOfLevel[j]
-            t2 = t2 + 1
-        }
+        allQuestions = allQuestions.concat(questionOfLevel)
+        allAnswers = allAnswers.concat(answerOfLevel)
     }
 }
 
 function verifyAnswer() {
     var j
     for (j = 0; j < question.length; j++) {
-        if (items.repeater.itemAt(j).answerText.toString() == answer[j]) {
+        var repeater_item = items.repeater.itemAt(j)
+        if (repeater_item.answerText.toString() == answer[j]) {
             scoreCounter = scoreCounter + 1
-            items.repeater.itemAt(j).questionImage = url + "right.svg"
-            items.repeater.itemAt(j).questionImageOpacity = 1
-        } else if (items.repeater.itemAt(j).answerText.toString() != answer[j] && items.repeater.itemAt(j).answerText.toString() != "") {
-            items.repeater.itemAt(j).questionImageOpacity = 1
-            items.repeater.itemAt(j).questionImage = url + "wrong.svg"
+            repeater_item.questionImage = url + "right.svg"
+            repeater_item.questionImageOpacity = 1
+        } else if (repeater_item.answerText.toString() != "") {
+            repeater_item.questionImageOpacity = 1
+            repeater_item.questionImage = url + "wrong.svg"
         }
     }
     items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
 }
 
-function verifyAnswer2() {
+function verifySelectedAnswer() {
     var j
     for (j = 0; j < question2.length; j++) {
-        if (items.repeater.itemAt(j).answerText.toString() == answer2[j]) {
+        var repeater_item = items.repeater.itemAt(j)
+        if (repeater_item.answerText.toString() == answer2[j]) {
             scoreCounter = scoreCounter + 1
-            items.repeater.itemAt(j).questionImage = url + "right.svg"
-            items.repeater.itemAt(j).questionImageOpacity = 1
-        } else if (items.repeater.itemAt(j).answerText.toString() != answer2[j] && items.repeater.itemAt(j).answerText.toString() != "") {
-            items.repeater.itemAt(j).questionImageOpacity = 1
-            items.repeater.itemAt(j).questionImage = url + "wrong.svg"
+            repeater_item.questionImage = url + "right.svg"
+            repeater_item.questionImageOpacity = 1
+        } else if (repeater_item.answerText.toString() != "") {
+            repeater_item.questionImageOpacity = 1
+            repeater_item.questionImage = url + "wrong.svg"
         }
     }
     items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
 }
 
-function processKeyPress(text) {
-    var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
-    if (currentWord !== null) {
-        // check against a currently typed word
-        if (!currentWord.checkMatch(typedText)) {
-            currentWord = null;
-            audioCrashPlay()
-        } else {
-            playLetter(text)
-        }
-    } else {
-        // no current word, check against all available words
-        var found = false
-        for (var i = 0; i < droppedWords.length; i++) {
-            if (droppedWords[i].checkMatch(typedText)) {
-                // typed correctly
-                currentWord = droppedWords[i];
-                playLetter(text)
-                found = true
-                break;
-            }
-        }
-        if (!found) {
-            audioCrashPlay()
-        }
-    }
-    if (currentWord !== null && currentWord.isCompleted()) {
-        // win!
-        currentWord.won(); // note: deleteWord() is triggered after fadeout
-        successRate += 0.1
-        currentWord = null
-        nextSubLevel();
-    }
-}
-
-function canAnswer() {
+function canAnswer(answerOrNot) {
     var q
     var questionList
+    questionList = question
     if (items.modeType == "school") {
         questionList = question2
-    } else {
-        questionList = question
     }
     for (q = 0; q < questionList.length; q++) {
-        items.repeater.itemAt(q).answerTextReadonly = false
-    }
-}
-
-function cannotAnswer() {
-    var r
-    var questionList
-    if (items.modeType == "school") {
-        questionList = question2
-    } else {
-        questionList = question
-    }
-    for (r = 0; r < questionList.length; r++) {
-        items.repeater.itemAt(r).answerTextReadonly = true
+        if(answerOrNot){
+            items.repeater.itemAt(q).answerTextReadonly = false
+        }
+        else{
+        items.repeater.itemAt(q).answerTextReadonly = true
+        }
     }
 }
 
@@ -227,8 +172,6 @@ function resetvalue() {
     for (k = 0; k < questionList.length; k++) {
         items.repeater.itemAt(k).answerText = ""
         items.repeater.itemAt(k).questionImageOpacity = 0
-        scoreCounter = 0
-        items.score.visible = false
     }
     scoreCounter = 0
     items.score.visible = false
