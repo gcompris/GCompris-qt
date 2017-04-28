@@ -34,9 +34,9 @@ ActivityBase {
 
     pageComponent: Image {
         id: rootWindow
-        source: Activity.url + "school_bg" + bar.level + ".svg"
-        sourceSize.height: parent.height
-        sourceSize.width: parent.width
+        source: Activity.url + "background.svg"
+        height: parent.height
+        width: rootWindow.height * 1.75
         anchors.fill: parent
         signal start
         signal stop
@@ -84,13 +84,15 @@ ActivityBase {
         // Tux image
         Image {
             id: tux
-            source: Activity.url + "tux" + bar.level + ".svg"
-            height: rootWindow.height / 3.8
-            width: rootWindow.width > rootWindow.height ? rootWindow.width / 8 : rootWindow.width / 5
+            visible: gameMode == 1
+            source: Activity.url + "tux1.svg"
+            height: rootWindow.height / 4
+            width: tux.height
             y: rootWindow.height - rootWindow.height / 1.8
             anchors {
-                left: (rootWindow.width > rootWindow.height) ? rootWindow.left : undefined
-                right: (rootWindow.width > rootWindow.height) ? undefined : rootWindow.right
+                right: rootWindow.right
+                rightMargin: 16 * ApplicationInfo.ratio
+
             }
             MouseArea {
                 id: tuxArea
@@ -147,8 +149,8 @@ ActivityBase {
                     Image {
                         id: greenCase
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
-                        height: width
-                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        sourceSize.height: width
+                        sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         visible: true
                     }
                 }
@@ -165,8 +167,8 @@ ActivityBase {
                     model: answerBallsPlacement.columns
                     Image {
                         source: Activity.url + "ball_1.svg"
-                        height: width
-                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        sourceSize.height: width
+                        sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         visible: false
                     }
                 }
@@ -184,22 +186,34 @@ ActivityBase {
                     Image {
                         id: greenMask
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
-                        height: width
-                        width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        sourceSize.height: width
+                        sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         // Numbering label
-                        GCText {
-                            id: numberText
-                            text: index + 1
-                            fontSize: smallSize
-                            font.bold: true
+                        Rectangle {
+                            id: bgNbTxt
                             visible: ((index + 1) % 5 == 0 && index > 0) ? true : false
+                            color: "#42FFFFFF"
+                            height: numberText.height * 1.2
+                            width: height
+                            radius: height / 2
                             anchors {
                                 horizontalCenter: parent.horizontalCenter
                                 bottom: parent.top
+                                bottomMargin: ((rootWindow.width > rootWindow.height) ? 4 * ApplicationInfo.ratio : -16 * ApplicationInfo.ratio)
+                            }
+                            GCText {
+                                id: numberText
+                                text: index + 1
+                                color: "#373737"
+                                fontSize: smallSize
+                                font.bold: true
+                                visible: ((index + 1) % 5 == 0 && index > 0) ? true : false
+                                anchors {
+                                    horizontalCenter: bgNbTxt.horizontalCenter
+                                    verticalCenter: bgNbTxt.verticalCenter
+                                }
                             }
                             transform: Rotation {
-                                origin.x: numberText.fontSize * 1.7;
-                                origin.y: numberText.fontSize * 1.7;
                                 angle: (rootWindow.width > rootWindow.height) ? 0 : -90
                             }
                         }
@@ -215,9 +229,9 @@ ActivityBase {
             height: width
             source: Activity.url + "bar_ok.svg"
             anchors {
-                right: ballNumberPlate.left
+                left: ballNumberPlate.right
                 verticalCenter: ballNumberPlate.verticalCenter
-                rightMargin: width / 4
+                leftMargin: width / 4
             }
 
             MouseArea {
@@ -250,13 +264,14 @@ ActivityBase {
         Image {
             id: ballNumberPlate
             y: rootWindow.height / 3.1
-            source: Activity.url + "enumerate_answer.svg"
+            source: items.isPlayer1Turn ? Activity.url + "score_1.svg" :
+                                          Activity.url + "score_2.svg"
             width: rootWindow.height / 8
             height: rootWindow.height / 9
 
             anchors {
-                right: rootWindow.right
-                rightMargin: 2 * ApplicationInfo.ratio
+                left: rootWindow.left
+                leftMargin: 16 * ApplicationInfo.ratio
             }
 
             MouseArea {
@@ -285,8 +300,8 @@ ActivityBase {
                 id: ballIcon
                 source: items.isPlayer1Turn ? Activity.url + "ball_1.svg" :
                                               Activity.url + "ball_2.svg"
-                width: rootWindow.height / 16
-                height: rootWindow.height / 10
+                sourceSize.width: rootWindow.height / 12
+                sourceSize.height: width
                 anchors {
                     verticalCenter: ballNumberPlate.verticalCenter
                     left: ballNumberPlate.left
@@ -296,7 +311,7 @@ ActivityBase {
             GCText {
                 id: numberLabel
                 text: items.numberOfBalls
-                color: "red"
+                color: "#C04040"
                 font.bold: true
                 fontSize: smallSize
                 anchors {
