@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.0
+import QtQuick 2.6
 
 /*  
     Numbers of kids are not given anymore in the left widget which forces kids to understand this part.

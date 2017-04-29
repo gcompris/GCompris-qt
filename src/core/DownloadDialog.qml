@@ -18,10 +18,10 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.2
+import QtQuick 2.6
 import GCompris 1.0
-import QtQuick.Layouts 1.1
-import QtQuick.Controls 1.0
+import QtQuick.Layouts 1.3
+import QtQuick.Controls 1.5
 import "qrc:/gcompris/src/core/core.js" as Core
 
 /**

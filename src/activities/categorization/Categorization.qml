@@ -19,8 +19,8 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-import QtQuick 2.1
-import QtQuick.Controls 1.1
+import QtQuick 2.6
+import QtQuick.Controls 1.5
 import GCompris 1.0
 
 import "../../core"

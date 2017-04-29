@@ -19,7 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.2
+import QtQuick 2.6
 
 /**
  * Container object with a list of all available translations.

@@ -18,7 +18,7 @@
  along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-import QtQuick 2.0
+import QtQuick 2.6
 import "../planegame"
 
 Planegame {

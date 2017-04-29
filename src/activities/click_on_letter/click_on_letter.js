@@ -22,7 +22,7 @@
  */
 
 .pragma library
-.import QtQuick 2.0 as Quick
+.import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 

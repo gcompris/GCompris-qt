@@ -1,8 +1,4 @@
-if(SAILFISHOS)
-  cmake_minimum_required(VERSION 2.8.11)
-else(SAILfISHOS)
-  cmake_minimum_required(VERSION 2.8.12)
-endif()
+cmake_minimum_required(VERSION 2.8.12)
 
 project(gcompris-qt C CXX)
 
@@ -96,12 +92,7 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 
-# Sailfish does not provide a recent Qt version
-if(SAILFISHOS)
-  set(QT_REQUIRED_VERSION 5.2.2)
-else()
-  set(QT_REQUIRED_VERSION 5.3.0)
-endif()
+set(QT_REQUIRED_VERSION 5.6.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
             Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)

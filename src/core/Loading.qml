@@ -18,8 +18,8 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.2
-import QtQuick.Controls 1.0
+import QtQuick 2.6
+import QtQuick.Controls 1.5
 import GCompris 1.0
 
 /**

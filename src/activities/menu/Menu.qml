@@ -18,13 +18,13 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.2
+import QtQuick 2.6
 import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 1.2
-import QtQuick.Controls.Styles 1.2
+import QtQuick.Controls 1.5
+import QtQuick.Controls.Styles 1.4
 
 /**
  * GCompris' top level menu screen.
