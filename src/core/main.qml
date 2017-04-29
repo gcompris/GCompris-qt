@@ -55,23 +55,11 @@ Window {
     property var applicationState: Qt.application.state
     property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property alias backgroundMusic: backgroundMusic
-    property bool isBackgroundMusicAllowed: ApplicationSettings.isBackgroundMusicEnabled
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
             audioVoices.stop();
             audioEffects.stop();
-        }
-    }
-
-    onClosing: Core.quit(main)
-
-    onIsBackgroundMusicAllowedChanged: {
-        if(isBackgroundMusicAllowed) {
-            playBackgroundMusic();
-        }
-        else {
-            backgroundMusic.stop()
         }
     }
 
@@ -88,6 +76,7 @@ Window {
 
             onTriggered: {
                 DownloadManager.voicesRegistered.disconnect(playWelcome);
+                delayedbackgroundMusic.playBackgroundMusic()
             }
 
             function playWelcome() {
@@ -98,24 +87,16 @@ Window {
         Component.onCompleted: {
             if(ApplicationSettings.isAudioEffectsEnabled)
                 append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
-                delayedbackgroundMusic.start()
 
             if (DownloadManager.areVoicesRegistered()) {
                 delayedWelcomeTimer.playWelcome();
-                delayedbackgroundMusic.start();
             }
             else {
                 DownloadManager.voicesRegistered.connect(
                         delayedWelcomeTimer.playWelcome);
                 delayedWelcomeTimer.start();
-                delayedbackgroundMusic.start();
             }
         }
-    }
-
-    function playBackgroundMusic() {
-        for(var i = 0; i < rccBackgroundMusic.length; i++)
-            backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/"+rccBackgroundMusic[i]));
     }
 
     GCAudio {
@@ -125,19 +106,31 @@ Window {
 
     GCAudio {
         id: backgroundMusic
-        muted: !isBackgroundMusicAllowed
+        muted: !ApplicationSettings.isBackgroundMusicEnabled
 
-    Timer {
-        id: delayedbackgroundMusic
-        interval: ApplicationSettings.isAudioEffectsEnabled ? 20000 : 1500
-        repeat: false
+        Timer {
+            id: delayedbackgroundMusic
+            interval: 100
+            repeat: false
 
-        onTriggered: {
-            playBackgroundMusic();
+            onTriggered: {
+                delayedbackgroundMusic.playBackgroundMusic();
+            }
+
+            function playBackgroundMusic() {
+                for(var i = 0; i < rccBackgroundMusic.length; i++)
+                    backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/"+rccBackgroundMusic[i]));
+            }
         }
-    }
         Component.onCompleted: {
-            print("hello")
+            if(ApplicationSettings.isBackgroundMusicEnabled && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+                delayedbackgroundMusic.playBackgroundMusic()
+            }
+            else {
+                DownloadManager.registerResource(DownloadManager.getBackgroundMusicResources()).connect(
+                            delayedbackgroundMusic.playBackgroundMusic());
+                delayedbackgroundMusic.start();
+            }
         }
     }
 
@@ -183,7 +176,7 @@ Window {
         var music = DownloadManager.getBackgroundMusicResources()
         if(rccBackgroundMusic == '') {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-            playBackgroundMusic()
+            delayedbackgroundMusic.playBackgroundMusic()
         }
         if(music == '') {
             music = DownloadManager.getBackgroundMusicResources()
