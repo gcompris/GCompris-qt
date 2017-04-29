@@ -62,7 +62,9 @@ Window {
             audioEffects.stop();
         }
     }
-
+    
+    onClosing: Core.quit(main)
+    
     GCAudio {
         id: audioVoices
         muted: !ApplicationSettings.isAudioVoicesEnabled
