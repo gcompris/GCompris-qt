@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "advanced_colors/advanced_colors.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: activity title
   title: qsTr("Advanced colors")
+  //: activity description
   description: qsTr("Select the butterfly of the correct color")
   //intro: "find the dancing butterfly having the requested color"
+  //: activity goal
   goal: qsTr("Learn to recognize unusual colors.")
+  //: activity prerequisite
   prerequisite: qsTr("Can read")
+  //: activity manual
   manual: qsTr("You will see dancing butterflies of different colors and a question. You have to find the correct butterfly and touch it.")
   credit: ""
   section: "discovery colors"
