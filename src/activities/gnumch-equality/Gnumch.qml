@@ -375,7 +375,7 @@ ActivityBase {
 
         TopPanel {
             id: topPanel
-            goal: Activity.getGoal()
+            goal: Activity.getGoal() ? Activity.getGoal() : 0
         }
 
         WarnMonster {

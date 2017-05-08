@@ -54,7 +54,7 @@ function initLevel() {
     nbStarsToCount = new Array(0, 0, 0)
     animationCount = 0
     
-    if(currentLevel > 0) {
+    if(currentLevel > 0) {
         items.introductionText.visible = false
     } else {
         items.introductionText.visible = true

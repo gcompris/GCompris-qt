@@ -227,15 +227,15 @@ function fillAllGrid() {
         }
     } else if (_type == "primes") {
         for (var it = 0; it < 36; it++) {
-            _modelCells.append({"number1": genPrime(), "show": true});
+            _modelCells.append({"number1": genPrime(), "number2": -1, "show": true});
         }
     } else if (_type == "factors") {
         for (var it = 0; it < 36; it++) {
-            _modelCells.append({"number1": genFactor(), "show": true});
+            _modelCells.append({"number1": genFactor(), "number2": -1, "show": true});
         }
     } else if (_type == "multiples") {
         for (var it = 0; it < 36; it++) {
-            _modelCells.append({"number1": genMultiple(), "show": true});
+            _modelCells.append({"number1": genMultiple(), "number2": -1, "show": true});
         }
     }
 }
