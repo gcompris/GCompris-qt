@@ -66,37 +66,37 @@ ActivityBase {
             property var dataset: [
                 {
                     values: ['I', 'V', 'X', 'L', 'C', 'D', 'M'],
-                    instruction: qsTr("Roman numerals, are based on seven symbols: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000."),
+                    instruction: qsTr("Roman numerals, are based on seven symbols: \nI = 1, V = 5\nX = 10, L = 50\nC = 100, D = 500\nM = 1000"),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
                     values: [1, 5, 10, 50, 100, 500, 1000],
-                    instruction: qsTr("Roman numerals, are based on seven symbols: I = 1, V = 5, X = 10, L = 50, C = 100, D = 500, M = 1000."),
+                    instruction: qsTr("Roman numerals, are based on seven symbols: \nI = 1, V = 5\nX = 10, L = 50\nC = 100, D = 500\nM = 1000"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
                     values: ['II', 'III', 'VI', 'XX', 'XXII', 'XXX', 'LX', 'CC', 'CCL', 'MM', 'CLX', 'DCCLI', 'CCCLXVI'],
-                    instruction: qsTr("Several symbols create a larger number like II = 2, XX = 20, XI = 11."),
+                    instruction: qsTr("Several symbols create a larger number like:\nII = 2\nXX = 20\nXI = 11"),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
                     values: [2, 3, 6, 20, 22, 30, 60, 200, 250, 2000, 160, 651, 361],
-                    instruction: qsTr("Several symbols create a larger number like II = 2, XX = 20, XI = 11."),
+                    instruction: qsTr("Several symbols create a larger number like:\nII = 2\nXX = 20\nXI = 11"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
                     values: ['IV', 'IX', 'XL', 'XC', 'CD', 'CM'],
-                    instruction: qsTr("If a lower value symbol is before a higher value one, it is subtracted. Otherwise it is added. So 'IV' is '4', 'VI' is '6', 'IX' is 9."),
+                    instruction: qsTr("If a lower value symbol is before a higher value one, it is subtracted. Otherwise it is added. So:\n'IV' is '4'\n'VI' is '6'\n'IX' is '9'"),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
                     values: [4, 9, 40, 90, 400, 900],
-                    instruction: qsTr("If a lower value symbol is before a higher value one, it is subtracted. Otherwise it is added. So 'IV' is '4', 'VI' is '6', 'IX' is 9."),
+                    instruction: qsTr("If a lower value symbol is before a higher value one, it is subtracted. Otherwise it is added. So:\n'IV' is '4'\n'VI' is '6'\n'IX' is '9'"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
@@ -209,12 +209,31 @@ ActivityBase {
                     initSubLevel();
                 }
             }
+
+            property bool isChecking: false
+            function check() {
+                if(isChecking) {
+                    return
+                }
+                isChecking = true
+                if(feedback.value == items.questionValue) {
+                    bonus.good('tux')
+                } else {
+                    bonus.bad('tux')
+                }
+            }
         }
 
         onStart: {
             items.start()
         }
         onStop: { }
+
+        Keys.onPressed: {
+            if ((event.key === Qt.Key_Enter) || (event.key === Qt.Key_Return)) {
+                items.check()
+            }
+        }
 
         QtObject {
             id: romanConverter
@@ -260,8 +279,11 @@ ActivityBase {
             GCText {
                 id: questionLabel
                 anchors.horizontalCenter: parent.horizontalCenter
+                wrapMode: TextEdit.WordWrap
                 text: items.questionValue ? items.questionText.arg(items.questionValue) : ''
                 color: 'white'
+                width: parent.width * 0.9
+                horizontalAlignment: Text.AlignHCenter
                 Rectangle {
                     z: -1
                     border.color: 'black'
@@ -291,8 +313,9 @@ ActivityBase {
                 maximumLength: items.toArabic ?
                                    ('' + romanConverter.roman2Arabic(items.questionValue)).length + 1 :
                                    romanConverter.arabic2Roman(items.questionValue).length + 1
-                horizontalAlignment: TextInput.AlignLeft
+                horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
+                anchors.horizontalCenter: parent.horizontalCenter
                 font.pointSize: questionLabel.pointSize
                 font.weight: Font.DemiBold
                 font.family: GCSingletonFontLoader.fontLoader.name
@@ -321,7 +344,7 @@ ActivityBase {
                     radius: 10
                     border.color: 'black'
                     border.width: 1
-                    anchors.centerIn: parent
+                    anchors.horizontalCenter: parent.horizontalCenter
                     width: column.width * 0.7
                     height: parent.height
                 }
@@ -351,7 +374,6 @@ ActivityBase {
                 text: items.toArabic ?
                           qsTr("Roman value: %1").arg(value) :
                           qsTr('Arabic value: %1').arg(value)
-                onTextChanged: timer.start()
                 color: 'white'
                 Rectangle {
                     z: -1
@@ -372,50 +394,56 @@ ActivityBase {
                                            romanConverter.roman :
                                            romanConverter.arabic ? romanConverter.arabic : ''
             }
-            // We want the entry to be checked after a little timer to make sure we don't trig a
-            // transient children answer
-            Timer {
-                id: timer
-                interval: 500
-                onTriggered: {
-                    if( feedback.value == items.questionValue )
-                        bonus.good('tux')
-                }
-            }
             Item { // Just a margin
                 width: 1
-                height: 20 * ApplicationInfo.ratio
+                height: 5 * ApplicationInfo.ratio
             }
-            GCText {
-                id: instruction
-                visible: items.instruction != ''
-                wrapMode: TextEdit.WordWrap
-                fontSize: tinySize
-                anchors.horizontalCenter: parent.horizontalCenter
-                width: parent.width * 0.9
-                text: items.instruction
-                color: 'white'
-                Rectangle {
-                    z: -1
-                    opacity: 0.8
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#000" }
-                        GradientStop { position: 0.9; color: "#666" }
-                        GradientStop { position: 1.0; color: "#AAA" }
+            Rectangle {
+                color: "transparent"
+                width: parent.width
+                height: (background.height - (y + bar.height + okButton.height + keyboard.height) * 1.1 )
+                Flickable {
+                    width: parent.width
+                    height: parent.height
+                    contentWidth: parent.width
+                    contentHeight: instructionContainer.height
+                    anchors.fill: parent
+                    flickableDirection: Flickable.VerticalFlick
+                    clip: true
+                    GCText {
+                        id: instruction
+                        visible: items.instruction != ''
+                        wrapMode: TextEdit.WordWrap
+                        fontSize: tinySize
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        width: parent.width * 0.95
+                        text: items.instruction
+                        horizontalAlignment: Text.AlignHCenter
+                        color: 'white'
+                        Rectangle {
+                            id: instructionContainer
+                            z: -1
+                            opacity: 0.8
+                            gradient: Gradient {
+                                GradientStop { position: 0.0; color: "#000" }
+                                GradientStop { position: 0.9; color: "#666" }
+                                GradientStop { position: 1.0; color: "#AAA" }
+                            }
+                            radius: 10
+                            border.color: 'black'
+                            border.width: 1
+                            anchors.centerIn: parent
+                            width: parent.width
+                            height: parent.contentHeight
+                        }
                     }
-                    radius: 10
-                    border.color: 'black'
-                    border.width: 1
-                    anchors.centerIn: parent
-                    width: parent.width * 1.1
-                    height: parent.contentHeight
                 }
             }
         }
 
         Score {
             id: score
-            anchors.bottom: keyboard.top
+            anchors.bottom: bar.top
             currentSubLevel: 0
             numberOfSubLevels: 1
         }
@@ -467,7 +495,7 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -475,12 +503,27 @@ ActivityBase {
             onNextLevelClicked: items.nextLevel()
             onHomeClicked: activity.home()
             level: items.currentLevel + 1
-
+            onHintClicked: feedback.visible = !feedback.visible
+        }
+        BarButton {
+          id: okButton
+          source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+          sourceSize.width: 60 * ApplicationInfo.ratio
+          visible: true
+          anchors {
+              verticalCenter: score.verticalCenter
+              right: score.left
+              rightMargin: 10 * ApplicationInfo.ratio
+              bottomMargin: 10 * ApplicationInfo.ratio
+          }
+          onClicked: items.check()
         }
 
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(items.nextSubLevel)
+            onWin: items.isChecking = false
+            onLoose: items.isChecking = false
         }
 
     }
