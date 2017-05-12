@@ -322,7 +322,7 @@ function showPossibleMoves(from) {
     var result = state.moves();
     clearAcceptMove()
     for(var i=0; i < result.length; ++i) {
-        if(fromEngine === result[i].from && fromEngine !== result[i].to) {
+        if(fromEngine === result[i].from) {
             var pos = engineToViewPos(result[i].to)
             items.squares.getSquareAt(pos)['acceptMove'] = true
             for(var v = 1; v < result[i].jumps.length; ++ v) {

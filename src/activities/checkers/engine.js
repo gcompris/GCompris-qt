@@ -731,7 +731,7 @@ var Draughts = function (fen) {
 
           matchArray = str.match(/^[BW]0+/) // e.g. B000, W0
           if (matchArray !== null) {
-            for (var i = 0; i < matchArray[0].length; i++) {
+            for (var i = 1; i < matchArray[0].length; i++) {
               posTo = posFrom + (i * STEPS[dir])
               moveObject = {from: posFrom, to: posTo, takes: [], jumps: []}
               moves.push(moveObject)
