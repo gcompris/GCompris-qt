@@ -675,11 +675,18 @@ Item {
             excludedFonts.push("ding");
             excludedFonts.push("symbol");
 
+            // first display fonts from rcc
+            for(var i = 0 ; i < rccFonts.length ; ++ i) {
+                // Append fonts from resources
+                fonts.append({ "text": rccFonts[i], "isLocalResource": true });
+            }
+
             for(var i = 0 ; i < systemFonts.length ; ++ i) {
                 var isExcluded = false;
+                var systemFont = systemFonts[i].toLowerCase();
                 // Remove symbol fonts
                 for(var j = 0 ; j < excludedFonts.length ; ++ j) {
-                    if(systemFonts[i].toLowerCase().indexOf(excludedFonts[j].toLowerCase()) != -1) {
+                    if(systemFont.indexOf(excludedFonts[j].toLowerCase()) != -1) {
                         isExcluded = true;
                         break;
                     }
@@ -687,7 +694,7 @@ Item {
 
                 // Remove fonts from rcc (if you have a default font from rcc, Qt will add it to systemFonts)
                 for(var j = 0 ; j < rccFonts.length ; ++ j) {
-                    if(rccFonts[j].toLowerCase().indexOf(systemFonts[i].toLowerCase()) != -1) {
+                    if(rccFonts[j].toLowerCase().indexOf(systemFont) != -1) {
                         isExcluded = true;
                         break;
                     }
@@ -697,10 +704,6 @@ Item {
                 if(!isExcluded) {
                     fonts.append({ "text": systemFonts[i], "isLocalResource": false });
                 }
-            }
-            for(var i = 0 ; i < rccFonts.length ; ++ i) {
-                // Append fonts from resources
-                fonts.append({ "text": rccFonts[i], "isLocalResource": true });
             }
         }
     }
