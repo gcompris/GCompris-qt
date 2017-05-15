@@ -46,7 +46,9 @@ function start(items_, mode_) {
     items.score.numberOfSubLevels = 4
 
     if (mode == "alphabets") {
-        alphabets = [qsTr("a"), qsTr("b"), qsTr("c"), qsTr("d"), qsTr("e"), qsTr("f"), qsTr("g"), qsTr("h"), qsTr("i"), qsTr("j"), qsTr("k"), qsTr("l"), qsTr("m"), qsTr("n"), qsTr("o"), qsTr("p"), qsTr("q"), qsTr("r"), qsTr("s"), qsTr("t"), qsTr("u"), qsTr("v"), qsTr("w"), qsTr("x"), qsTr("y"), qsTr("z")]
+        //: list containing all the characters separated by a "/"
+        var letters = qsTr("a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z")
+        alphabets = letters.split("/")
     }
 
     noOfTilesInPreviousLevel = -1
@@ -99,7 +101,7 @@ function generateRandomNumbers() {
         upperBound = (items.bar.level)*100
         lowerBound = 0
     } else if(mode == "alphabets") {
-        upperBound = 25
+        upperBound = alphabets.length -1
         lowerBound = 0
     }
     while(num.length < n) {
@@ -167,12 +169,12 @@ function previousLevel() {
 function checkOrder() {
     items.flow.validMousePress = false
     for(var i = 0;i < items.boxes.count-1;i++) {
-        if( ascendingOrder && (num[i] > num[i+1])) {
+        if( ascendingOrder && ( ( mode == "number" && num[i] > num[i+1]) || (mode == "alphabets" && alphabets.indexOf(num[i]) > alphabets.indexOf(num[i+1]))) ) {
             items.bonus.bad("lion")
             items.flow.validMousePress = true
             return
         }
-        if(!ascendingOrder && (num[i] < num[i+1])) {
+        if( !ascendingOrder && ( (mode == "number" && num[i] < num[i+1]) || (mode == "alphabets" && alphabets.indexOf(num[i]) < alphabets.indexOf(num[i+1]))) ) {
             items.bonus.bad("lion")
             items.flow.validMousePress = true
             return
@@ -204,8 +206,23 @@ function placeBlock(box, initialPosition) {
 
     if(minDistance < thresholdDistance) {
 
-        var item1Pos = num.indexOf(box.boxValue)
+        var item1Pos = -1
         var item2Pos = num.indexOf(closestBlock.boxValue)
+        for (var i = 0;i < num.length; i++) {
+            /*
+             * var item1Pos = num.indexOf(box.boxValue)
+             * var item2Pos = num.indexOf(closestBlock.boxValue)
+             * was NOT used since the boxValue is of string type
+             * and it will return -1 when strictly compared with
+             * int
+             */
+            if (box.boxValue == num[i]) {
+                item1Pos = i
+            }
+            if (closestBlock.boxValue == num[i]) {
+                item2Pos = i
+            }
+        }
 
         var oldPositions = []
         var newPositions = []
