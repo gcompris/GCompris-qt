@@ -120,7 +120,7 @@ ActivityBase {
                         id: box
                         color: "white"
                         z: mouseArea.drag.active ||  mouseArea.pressed ? 2 : 1
-                        property int boxValue: 0
+                        property string boxValue
                         property point beginDragPosition
 
                         width: 65 * ApplicationInfo.ratio
@@ -133,7 +133,7 @@ ActivityBase {
                         GCText {
                             id: numText
                             anchors.centerIn: parent
-                            text: mode == "alphabets" ? String.fromCharCode(boxValue) : boxValue.toString()
+                            text: boxValue
                             font.pointSize: 20 * ApplicationInfo.ratio
                         }
                         MouseArea {

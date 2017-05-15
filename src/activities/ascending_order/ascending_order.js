@@ -30,6 +30,7 @@ var mode
 // num[] will contain the random numbers
 var num = []
 var originalArrangement = []
+var alphabets = []
 
 var ascendingOrder
 var thresholdDistance
@@ -43,6 +44,10 @@ function start(items_, mode_) {
     thresholdDistance = 4000 * items.ratio
     items.score.currentSubLevel = 0
     items.score.numberOfSubLevels = 4
+
+    if (mode == "alphabets") {
+        alphabets = [qsTr("a"), qsTr("b"), qsTr("c"), qsTr("d"), qsTr("e"), qsTr("f"), qsTr("g"), qsTr("h"), qsTr("i"), qsTr("j"), qsTr("k"), qsTr("l"), qsTr("m"), qsTr("n"), qsTr("o"), qsTr("p"), qsTr("q"), qsTr("r"), qsTr("s"), qsTr("t"), qsTr("u"), qsTr("v"), qsTr("w"), qsTr("x"), qsTr("y"), qsTr("z")]
+    }
 
     noOfTilesInPreviousLevel = -1
     initLevel()
@@ -75,8 +80,12 @@ function initGrids() {
 
     generateRandomNumbers()
 
-    for(var i=0;i<items.boxes.model;i++) {
-        items.boxes.itemAt(i).boxValue = num[i]
+    for(var i = 0;i < items.boxes.model;i++) {
+        if (mode == "number") {
+            items.boxes.itemAt(i).boxValue = num[i].toString()
+        } else if (mode == "alphabets") {
+            items.boxes.itemAt(i).boxValue = num[i]
+        }
     }
 }
 
@@ -90,15 +99,19 @@ function generateRandomNumbers() {
         upperBound = (items.bar.level)*100
         lowerBound = 0
     } else if(mode == "alphabets") {
-        upperBound = 90
-        lowerBound = 65
+        upperBound = 25
+        lowerBound = 0
     }
     while(num.length < n) {
         var randomNumber = Math.ceil(Math.random() * (upperBound - lowerBound) + lowerBound)
-        if(num.indexOf(randomNumber) > -1) {
+        if (( mode == "number" && num.indexOf(randomNumber) > -1) || ( mode == "alphabets" && num.indexOf(alphabets[randomNumber]) > -1)) {
             continue;
         }
-        num[num.length]=randomNumber
+        if (mode == "number") {
+            num[num.length] = randomNumber
+        } else if (mode == "alphabets") {
+            num[num.length] = alphabets[randomNumber]
+        }
     }
     for(var i = 0;i < num.length;i++) {
         originalArrangement[i] = num[i]
