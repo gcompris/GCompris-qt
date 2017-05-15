@@ -39,44 +39,40 @@ ActivityBase {
         color: "#111111"
         signal start
         signal stop
-        property int massNb: 0
+        property int massNb: bar.level-1
         property int satNb: 0
         property int tick: 0
         property real scaleGlob: 1.0
         property real arrowSatAngle
-        property real widthActivity: width
         property real speed
-        property bool crash : false
+        property bool crash: false
 
-        property real distanceSatInPix
-
+        property real distanceSatInPix: objectDiameter.width / items.massObjectDiameter * slidDistance.value
 
         Timer {
             id:satTimer
             interval: 10
             running: false
             repeat: true
-            onTriggered: {if ((tick>=Activity.listPointsPix.length)||crash){
-                    satArrowleft.visible=true
-                    sat.x = centralItem.width/2 + distanceSatInPix-sat.width/2
-                    sat.y = centralItem.height/2-sat.height/2
-
-                } else {
-
-                    satArrowleft.visible=false
+            onTriggered: {
+                if ((tick >= Activity.listPointsPix.length) || crash) {
+                    satArrowleft.visible = true
+                    sat.x = centralItem.width/2 + distanceSatInPix - sat.width/2
+                    sat.y = centralItem.height/2 - sat.height/2
+                }
+                else {
+                    satArrowleft.visible = false
                     sat.x = centralItem.width/2 + Activity.listPointsPix[tick][0]-sat.width/2
-                    sat.y = centralItem.height/2+Activity.listPointsPix[tick][1]-sat.height/2
-                    tick++}
-
+                    sat.y = centralItem.height/2 + Activity.listPointsPix[tick][1]-sat.height/2
+                    tick ++
+                }
             }
         }
 
 
         onMassNbChanged: {
-            Activity.massChanged(massNb)
-            massInfo.text = Activity.massObjectName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
-            massImage.source = Activity.url + "resource/" + Activity.massObjectName + ".svg"
-            diameterInfo.text = items.massObjectDiameter + " km"
+            Activity.massObjectMass = Activity.planetDataset[massNb].mass
+            massInfo.text = items.planetName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
             slidDistance.value = 2*items.massObjectDiameter
 
             //liberation speed -speed maximum to be satellized-
@@ -99,8 +95,6 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-
-
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -109,23 +103,24 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int massNb: massNb
-            property alias massList: massList
-            property alias massGrid: massGrid
             property alias satList: satList
             property alias satGrid: satGrid
             property alias trajecCanvas: trajecCanvas
-            property alias slidDistance : slidDistance
-            property alias slidSpeed : slidSpeed
-            property real arrowSatAngle : rotation.angle
-            property real pixPerMeter : objectDiameter.width / items.massObjectDiameter
-            property alias diameterInfoRect : diameterInfoRect
-            property alias objectDiameter : objectDiameter
-            property real distanceSatInPix : distanceSatInPix
-            property real massObjectDiameter : massObjectDiameter
-            property alias instructions : instructions
-            property real period : period
-            property bool isEllipse : isEllipse
-            property real liberationSpeed : liberationSpeed
+            property alias slidDistance: slidDistance
+            property alias slidSpeed: slidSpeed
+            property real arrowSatAngle: rotation.angle
+            property real pixPerMeter: objectDiameter.width / items.massObjectDiameter
+            property alias objectDiameter: objectDiameter
+            property real distanceSatInPix: distanceSatInPix
+            property real massObjectDiameter: Activity.planetDataset[bar.level-1].diameter
+
+            property string planetName: Activity.planetDataset[bar.level-1].name
+            property string planetImgName: Activity.planetDataset[bar.level-1].imgName
+
+            property alias instructions: instructions
+            property real period: period
+            property bool isEllipse: isEllipse
+            property real liberationSpeed: liberationSpeed
         }
 
         onStart: {
@@ -140,7 +135,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: 0.01*parent.height
-            text: "<p><b>Launch your satellite !</b></p><p> Find good distance,  speed value and direction</p><p> to make satellite turn around the object</p>"
+            text: qsTr("<p><b>Launch your satellite !</b></p><p> Find good distance,  speed value and direction</p><p> to make satellite turn around the object</p>")
             horizontalAlignment: Text.AlignHCenter
             font.pointSize: mediumSize
             color: "#777"
@@ -161,20 +156,19 @@ ActivityBase {
         }
 
         // ---- Central widget ----
-        Rectangle{
-            id:centralItem
+        Rectangle {
+            id: centralItem
             scale: scaleGlob
-            anchors.top :parent.top
+            anchors.top: parent.top
             width: parent.width * 0.6
             height: parent.height * 0.95
             anchors.horizontalCenter: parent.horizontalCenter
             focus:true
             color:'transparent'
 
-
             Item {
                 id: sat
-                x:  distanceSatInPix + parent.width/2-width/2
+                x: distanceSatInPix + parent.width/2-width/2
 
                 width: satInfo.paintedWidth
                 height: satInfo.paintedHeight
@@ -234,10 +228,7 @@ ActivityBase {
                         angle: arrowSatAngle
                     }
                 }
-
             }
-
-
 
             //########################################
             //Center Object relative Informations
@@ -246,8 +237,6 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.centerIn: parent
 
-
-                //border:0
                 width: massInfo.paintedWidth + 30
                 height: massInfo.paintedHeight + 30
 
@@ -257,7 +246,7 @@ ActivityBase {
                     anchors.topMargin: 50
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: massImage.width
-                    height: massImage.height * 1 / 3
+                    height: massImage.height / 3
                     source: Activity.url + "resource/arrow.svg"
                 }
 
@@ -275,7 +264,7 @@ ActivityBase {
                     scale: scaleGlob
                     GCText {
                         id: diameterInfo
-                        text: items.massObjectDiameter/1000 + " km"
+                        text: qsTr("%1 km").arg(items.massObjectDiameter/1000)
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.horizontalCenter: parent.horizontalCenter
                         font.pointSize: mediumSize
@@ -287,7 +276,7 @@ ActivityBase {
                     id: massImage
                     anchors.centerIn: parent
                     anchors.horizontalCenter: parent.horizontalCenter
-                    source: Activity.url + "resource/" + Activity.massObjectName + ".svg"
+                    source: Activity.url + "resource/" + items.planetImgName
                     width: background.width * 0.1
                     height: width
                 }
@@ -297,15 +286,15 @@ ActivityBase {
                 id: trajecCanvas
                 width: parent.width
                 height: parent.height
-                anchors.top:parent.top
-                anchors.left:parent.left
+                anchors.top: parent.top
+                anchors.left: parent.left
                 Component.onCompleted: {
                     loadImage(Activity.url + "resource/crash.svg")
                 }
 
                 onPaint: {
-                    tick=0
-                    crash=false
+                    tick = 0
+                    crash = false
                     var ctx = trajecCanvas.getContext('2d')
                     ctx.save()
                     ctx.setTransform(1, 0, 0, 1, 0, 0)
@@ -319,9 +308,9 @@ ActivityBase {
                     ctx.translate(width / 4, height / 4)
                     ctx.save() //save with translation and styles 1
 
-                    if (items.isEllipse){
+                    if (items.isEllipse) {
                         items.instructions.text =
-                                qsTr("Great !! Satellite is turning over Planet in %1" +
+                                qsTr("Great! Satellite is turning over Planet in %1" +
                                      " seconds or %2 hours and %3 minutes")
                         .arg(items.period.toFixed(0))
                         .arg((items.period/3600).toFixed(0))
@@ -332,21 +321,20 @@ ActivityBase {
                         var xs = Activity.listPointsPix[j][0]
                         var ys = Activity.listPointsPix[j][1]
                         ctx.translate(xs, ys)
-
                         if ((xs*xs+ys*ys) /
                                 (items.pixPerMeter*items.pixPerMeter) <
                                 (items.massObjectDiameter*items.massObjectDiameter/4)) {
                             // fall on ground
                             var xx = Activity.listPointsPix[j-1][0]
                             var yy = Activity.listPointsPix[j-1][1]
-                            ctx.drawImage(Activity.url + "resource/crash.svg",xx+20, yy+20);
+                            ctx.drawImage(Activity.url + "resource/crash.svg", xx+20, yy+20);
 
                             ctx.restore() // restore with translation and styles 2
                             items.instructions.text =
-                                    qsTr("Great !! Satellite is turning over Planet !!" +
+                                    qsTr("Great! Satellite is turning over Planet!" +
                                          " But it crashes on its surface :(")
-                            tick=0
-                            crash=true
+                            tick = 0
+                            crash = true
                             satTimer.stop()
                             break
                         }
@@ -374,11 +362,10 @@ ActivityBase {
             MouseArea {
                 id: mouseareaCentral
                 hoverEnabled: true
-                z:100
-                anchors.fill:parent
+                z: 100
+                anchors.fill: parent
 
                 onPositionChanged: {
-
                     var deltaX = mouseX - sat.x - sat.width / 2
                     var deltaY = mouseY - sat.y - sat.height / 2 - 18 * ApplicationInfo.ratio
                     if (deltaX > 0) {
@@ -391,7 +378,7 @@ ActivityBase {
                 }
                 onClicked: {
                     hoverEnabled = false
-                    instructions.text = qsTr("Now with the sliders choose a speed and a position. When ready launch it !!")
+                    instructions.text = qsTr("Now with the sliders choose a speed and a position. When ready launch it!")
                     buttonLaunch.visible = true
                 }
             }
@@ -410,7 +397,7 @@ ActivityBase {
             anchors.bottomMargin: parent.height * 0.3
             GCText {
                 id: massInfo
-                text: Activity.massObjectName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
+                text: items.planetName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Text.AlignHCenter
@@ -422,13 +409,6 @@ ActivityBase {
 
         //########################################
         //Satellite Object
-
-
-        // right menu with different center mass
-        ListModel {
-            id: massList
-        }
-
         // left menu with different satellites
         ListModel {
             id: satList
@@ -527,115 +507,8 @@ ActivityBase {
             }
         }
 
-        Button {
-            id: rightArea
-            anchors.right: parent.right
-            width: parent.width * 0.1
-            height: parent.height * 0.1
-            visible: true
-            onClicked: massMenu.visible = !massMenu.visible
-
-            GCText {
-                id: rightAreaText
-                anchors.centerIn: parent
-                width: parent.width
-                fontSize: tinySize
-                wrapMode: Text.Wrap
-                horizontalAlignment: Text.AlignHCenter
-                text: (massMenu.visible == true) ? qsTr("Hide planets") : qsTr("Show planets")
-                color: "black"
-            }
-        }
-
-        // Selection area on the right side
-        Rectangle {
-            id: massMenu
-            anchors.top: rightArea.bottom
-            anchors.right: parent.right
-            anchors.rightMargin: 0
-            color: '#111111'
-            width: parent.width * 0.2
-            height: parent.height * 0.7
-            radius: 10
-            border.width: 10
-            border.color: 'yellow'
-            visible: true
-
-            Flickable {
-                id: massGrid
-                clip: true
-                width: massMenu.width
-                height: massMenu.height
-                anchors.top: massMenu.top
-                contentHeight: massFlow.height
-                contentWidth: massMenu.width
-                flickableDirection: Flickable.VerticalFlick
-                Column {
-                    id: massFlow
-                    width: parent.width
-                    height: childrenRect.height
-
-                    spacing: 10 * ApplicationInfo.ratio
-                    anchors.topMargin: 50 * ApplicationInfo.ratio
-
-                    Repeater {
-                        id: massRepeater
-                        model: massList
-
-                        delegate: Rectangle {
-                            id: wrapper
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            color: "transparent"
-                            height: 150 * ApplicationInfo.ratio
-                            width: massMenu.width
-
-
-                            Image {
-                                id: planetPicture
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                anchors.verticalCenter: parent.verticalCenter
-                                width: parent.width * 0.5
-                                height: width
-                                source: Activity.url + "resource/" + name + ".svg"
-                                GCText {
-                                    text: name
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                    anchors.bottom: parent.top
-                                    font.pointSize: mediumSize
-                                    color: wrapper.GridView.isCurrentItem ? "red" : "white"
-                                }
-                            }
-
-                            MouseArea {
-                                id: massArea
-                                anchors.fill: wrapper
-                                hoverEnabled: true
-                                onClicked: {
-                                    massNb = index
-                                    massGrid.currentIndex = index
-                                }
-
-                            }
-                            states: State {
-                                name: "massHover"
-                                when: massArea.containsMouse
-                                PropertyChanges {
-                                    target: planetPicture
-                                    scale: 1.1
-                                }
-                            }
-                        }
-
-                    }
-                }
-
-            }
-        }
-
         //###############################################################
         //################CANVAS to draw trajectory######################
-
-
         Slider {
             id: slidScale
             anchors.left: parent.left
@@ -649,7 +522,7 @@ ActivityBase {
             updateValueWhileDragging: false
 
             GCText {
-                text: "ZOOM In or Out"
+                text: qsTr("Zoom In or Out")
                 anchors.bottom:parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
                 color:'white'
@@ -661,7 +534,6 @@ ActivityBase {
                 value = 1.0
             }
         }
-
 
         Slider {
             id: slidDistance
@@ -723,13 +595,10 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.bottomMargin: parent.height * 0.2
             width: parent.width * 0.1
-            visible:false
+            visible: false
             onClicked: Activity.calcparameters()
-            text : qsTr("LAUNCH IT NOW !!")
+            text: qsTr("Launch it now!")
         }
-
-
-
 
         DialogHelp {
             id: dialogHelp
@@ -738,6 +607,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            level: 1
             content: BarEnumContent {
                 value: help | home | level | reload
             }
