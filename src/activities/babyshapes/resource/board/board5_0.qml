@@ -22,7 +22,7 @@
 import QtQuick 2.6
 
 QtObject {
-   property string instruction: qsTr("Hello ! My name is Lock.")
+   property string instruction: qsTr("Hello! My name is Lock.")
    property variant levels: [
       {
           "pixmapfile" : "dog1/dog.png",
