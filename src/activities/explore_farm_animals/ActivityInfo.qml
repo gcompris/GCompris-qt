@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Explore Farm Animals")
   description: qsTr("Learn about farm animals, what sounds they make, and interesting facts.")
+  // intro: "Learn about farmyard animals and the noises that they make."
   goal: qsTr("Learn to associate animal sounds with the animal name and what the animal looks like.")
   prerequisite: ""
   manual: qsTr("There are three levels in this game.

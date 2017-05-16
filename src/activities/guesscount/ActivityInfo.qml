@@ -27,9 +27,10 @@ ActivityInfo {
     icon: "guesscount/guesscount.svg"
     author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
     demo: true
+    //: activity title
     title: qsTr("Guesscount")
     description:qsTr("Guess the algebraic expression and drag the tiles to get a result equal to the Guesscount.")
-    //intro: "guesscount activity"
+    //intro: "Use the numbers and operations suggested to find the results proposed above."
     goal: qsTr("To teach algebra")
     prerequisite: qsTr("knowledge of arithmetic operations")
     manual: ""

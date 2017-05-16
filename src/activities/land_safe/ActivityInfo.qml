@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Land Safe")
   description: qsTr("Understanding acceleration due to gravity.")
+  // intro: "Use the arrow keys to pilot your spaceship safely onto the landing pad."
   goal: qsTr("Pilot the spaceship towards the green landing area.")
   prerequisite: ""
   manual: qsTr("Acceleration due to gravity experienced by the spaceship is directly proportional to the mass of the planet and inversely proportional to the square of the distance from the center of the planet. Thus, with every planet the acceleration will differ and as the spaceship comes closer and closer to the planet the acceleration increases.

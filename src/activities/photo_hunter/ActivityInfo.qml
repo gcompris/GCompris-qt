@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Photo Hunter")
   description: qsTr("Find the differences between the two pictures!")
-  //intro: "look at the two pictures carefully and click where you see a difference")
+  //intro: "look at the two pictures carefully and click where you see a difference"
   goal: qsTr("Visual Discrimination")
   prerequisite: ""
   manual: qsTr("Observe the two pictures carefully. There are some slight differences. When you find a difference you must click on it.")

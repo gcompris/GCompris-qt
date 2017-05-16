@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Draw Numbers")
   description: qsTr("Connect the dots to draw numbers from 0 to 9")
+  // intro: "Draw the numbers by connecting the dots in the correct order."
   goal: qsTr("Children will learn how to draw different numbers in a fun way.")
   prerequisite: ""
   manual: qsTr("Draw the numbers by connecting the dots in the correct order")

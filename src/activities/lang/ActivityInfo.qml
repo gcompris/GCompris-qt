@@ -31,6 +31,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Enrich your vocabulary")
   description: qsTr("Complete language learning activities.")
+  // intro: "Select the language you want to learn then review the words before doing the exercises."
   goal: qsTr("Enrich your vocabulary in your native language or in a foreign one.")
   prerequisite: qsTr("Reading")
   manual: qsTr("Review a set of words. Each word is shown with a voice, a text and an image.<br/>"

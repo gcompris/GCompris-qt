@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Explore World Music")
   description: qsTr("Learn about the music of the world.")
+  // intro: "Click on the suitcases to learn about music from around the world."
   goal: qsTr("Develop a better understanding of the variety of music present in the world")
   prerequisite: ""
   manual: qsTr("There are three levels in this activity.

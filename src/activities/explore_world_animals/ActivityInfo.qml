@@ -29,6 +29,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Explore World Animals")
   description: qsTr("Learn about world animals, interesting facts and their location on a map.")
+  // intro: "Learn about world animals and locate them on a map."
   goal: ""
   prerequisite: ""
   manual: qsTr("There are two levels in this game.
