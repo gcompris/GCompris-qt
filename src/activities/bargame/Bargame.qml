@@ -149,9 +149,9 @@ ActivityBase {
                     Image {
                         id: greenCase
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
-                        sourceSize.height: width
                         sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         width: sourceSize.width
+                        height: sourceSize.width
                         visible: true
                     }
                 }
@@ -168,9 +168,9 @@ ActivityBase {
                     model: answerBallsPlacement.columns
                     Image {
                         source: Activity.url + "ball_1.svg"
-                        sourceSize.height: width
                         sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         width: sourceSize.width
+                        height: sourceSize.width
                         visible: false
                     }
                 }
@@ -188,9 +188,9 @@ ActivityBase {
                     Image {
                         id: greenMask
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
-                        sourceSize.height: width
                         sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
                         width: sourceSize.width
+                        height: sourceSize.width
                         // Numbering label
                         Rectangle {
                             id: bgNbTxt
@@ -304,8 +304,8 @@ ActivityBase {
                 source: items.isPlayer1Turn ? Activity.url + "ball_1.svg" :
                                               Activity.url + "ball_2.svg"
                 sourceSize.width: rootWindow.height / 12
-                sourceSize.height: width
                 width: sourceSize.width
+                height: sourceSize.width
                 anchors {
                     verticalCenter: ballNumberPlate.verticalCenter
                     left: ballNumberPlate.left
