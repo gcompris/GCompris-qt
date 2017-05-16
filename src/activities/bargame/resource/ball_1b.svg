@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="160"
+   height="160"
+   viewBox="0 0 160 160"
+   id="svg4"
+   sodipodi:docname="ball_1b.svg"
+   inkscape:version="0.92.1 r15371">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     id="namedview6"
+     showgrid="true"
+     inkscape:zoom="0.98333333"
+     inkscape:cx="-241.10169"
+     inkscape:cy="50"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid27"
+       empspacing="10"
+       originx="-40"
+       originy="-70" />
+  </sodipodi:namedview>
+  <circle
+     style="opacity:1;fill:#1eb37f;fill-opacity:0.9996287"
+     id="path839"
+     cx="80"
+     cy="80"
+     r="80" />
+  <circle
+     style="opacity:1;fill:#66cba8;fill-opacity:1;stroke-width:0.87923729"
+     id="path839-3"
+     cx="80"
+     cy="80"
+     r="70.338982" />
+  <ellipse
+     style="opacity:0.553;fill:#d7f1e8;fill-opacity:1;stroke-width:1.23850644"
+     id="path867"
+     cx="57.515343"
+     cy="-4.7100544"
+     rx="10"
+     ry="15.338983"
+     transform="rotate(45)" />
+</svg>

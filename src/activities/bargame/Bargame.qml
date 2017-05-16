@@ -269,7 +269,7 @@ ActivityBase {
             y: rootWindow.height / 3.1
             source: items.isPlayer1Turn ? Activity.url + "score_1.svg" :
                                           Activity.url + "score_2.svg"
-            width: rootWindow.height / 8
+            width: rootWindow.height / 7
             height: rootWindow.height / 9
 
             anchors {
@@ -301,14 +301,15 @@ ActivityBase {
             // Ball Icon
             Image {
                 id: ballIcon
-                source: items.isPlayer1Turn ? Activity.url + "ball_1.svg" :
-                                              Activity.url + "ball_2.svg"
+                source: items.isPlayer1Turn ? Activity.url + "ball_1b.svg" :
+                                              Activity.url + "ball_2b.svg"
                 sourceSize.width: rootWindow.height / 12
                 width: sourceSize.width
                 height: sourceSize.width
                 anchors {
                     verticalCenter: ballNumberPlate.verticalCenter
                     left: ballNumberPlate.left
+                    leftMargin: 10
                 }
             }
             // Number label
@@ -319,8 +320,9 @@ ActivityBase {
                 font.bold: true
                 fontSize: smallSize
                 anchors {
-                    left: ballIcon.right
-                    verticalCenter: ballIcon.verticalCenter
+                    right: ballNumberPlate.right
+                    rightMargin: 10
+                    verticalCenter: ballNumberPlate.verticalCenter
                 }
             }
         }
