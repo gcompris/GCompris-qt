@@ -151,6 +151,7 @@ ActivityBase {
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
                         sourceSize.height: width
                         sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        width: sourceSize.width
                         visible: true
                     }
                 }
@@ -169,6 +170,7 @@ ActivityBase {
                         source: Activity.url + "ball_1.svg"
                         sourceSize.height: width
                         sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        width: sourceSize.width
                         visible: false
                     }
                 }
@@ -188,6 +190,7 @@ ActivityBase {
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
                         sourceSize.height: width
                         sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        width: sourceSize.width
                         // Numbering label
                         Rectangle {
                             id: bgNbTxt
@@ -302,6 +305,7 @@ ActivityBase {
                                               Activity.url + "ball_2.svg"
                 sourceSize.width: rootWindow.height / 12
                 sourceSize.height: width
+                width: sourceSize.width
                 anchors {
                     verticalCenter: ballNumberPlate.verticalCenter
                     left: ballNumberPlate.left
