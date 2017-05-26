@@ -218,7 +218,7 @@ Rectangle {
                     onUp: flick.flick(0, 1400)
                     onDown: flick.flick(0, -1400)
                     upVisible: flick.visibleArea.yPosition <= 0 ? false : true
-                    downVisible: flick.visibleArea.yPosition >= 1 ? false : true
+                    downVisible: flick.visibleArea.yPosition >= 1.0 - flick.visibleArea.heightRatio ? false : true
                 }
             }
 
