@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Gnumch Equality")
   description: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen.")
-//  intro: "Guide the number eater to the required numbers and press on it to swallow them."
+//  intro: "Guide the number eater with the arrow keys to the required numbers and press the space bar to swallow them."
   goal: qsTr("Practice addition, multiplication, division and subtraction.")
   prerequisite: ""
   manual: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen.") +
