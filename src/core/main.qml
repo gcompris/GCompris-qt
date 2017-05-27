@@ -129,7 +129,7 @@ Window {
                 delayedbackgroundMusic.playBackgroundMusic()
             }
             else {
-                DownloadManager.musicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
+                DownloadManager.backgroundMusicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
                 delayedbackgroundMusic.start()
             }
         }

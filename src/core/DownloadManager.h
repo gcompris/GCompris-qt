@@ -379,7 +379,13 @@ signals:
      */
     void voicesRegistered();
 
-    void musicRegistered();
+    /** Emitted when background music has been registered.
+     *
+     * Convenience signal and special case of resourceRegistered.
+     *
+     * @sa resourceRegistered
+     */
+    void backgroundMusicRegistered();
 };
 
 #endif /* DOWNLOADMANAGER_H */

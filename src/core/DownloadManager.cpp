@@ -523,10 +523,12 @@ bool DownloadManager::registerResourceAbsolute(const QString& filename)
 
         QString v = getVoicesResourceForLocale(
                     ApplicationSettings::getInstance()->locale());
+        QString musicPath = getBackgroundMusicResources();
+
         if (v == getRelativeResourcePath(filename))
             emit voicesRegistered();
-        else
-            emit musicRegistered();
+        else if(musicPath == getRelativeResourcePath(filename))
+            emit backgroundMusicRegistered();
         return true;
     }
 }
