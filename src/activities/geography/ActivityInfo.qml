@@ -29,7 +29,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Locate the countries")
   description: qsTr("Drag and Drop the items to redraw the whole map")
-//  intro: "Slide the countries to redraw the whole map"
+//  intro: "Drag and drop the objects to complete the map."
   goal: ""
   prerequisite: ""
   manual: ""

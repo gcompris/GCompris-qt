@@ -25,7 +25,7 @@ ActivityInfo {
       demo: false
       title: qsTr("Division of numbers")
       description: qsTr("Practice the division operation")
-    //  intro: "Find the result of the division and type in your answer before the balloon landing"
+    //  intro: "Find the result of the division and type in your answer before the balloon lands in the water"
       goal: qsTr("Find the result of the division within a limited period of time")
       prerequisite: qsTr("Division of small numbers")
       manual: qsTr("Two numbers are displayed on the screen. Quickly find the result of the division and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!")

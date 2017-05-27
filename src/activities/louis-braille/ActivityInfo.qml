@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("The History of Louis Braille")
   description: qsTr("Review the major dates of the inventor of the Braille System")
-  //intro: "Discover the history behind Louis Braille."
+  //intro: "Discover the history of Louis Braille."
   goal: ""
   prerequisite: ""
   manual: qsTr("Read the history of Louis Braille, his biography, and the invention of the Braille system. Click on the previous and next buttons to move between the story pages. At the end, arrange the sequence in chronological order.")

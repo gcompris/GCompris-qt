@@ -25,7 +25,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Multiplication of numbers")
   description: qsTr("Practice the multiplication operation")
-//  intro: "Multiply the two numbers together and type in your answer before the balloon landing"
+//  intro: "Multiply the two numbers together and type in your answer before the balloon lands in the water"
   goal: qsTr("Learn to multiply numbers within a limited period of time")
   prerequisite: qsTr("Multiplication tables from 1 to 10")
   manual: qsTr("Two numbers are displayed on the screen. Quickly multiply them and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins in their balloon land!")

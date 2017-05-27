@@ -29,7 +29,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Complete the puzzle")
   description: qsTr("Drag and Drop the shapes on their respective targets")
-//  intro: "Slide the images on their respective targets"
+//  intro: "Drag and drop the objects matching the shapes."
   goal: ""
   prerequisite: ""
   manual: qsTr("Complete the puzzle by dragging each piece from the set of pieces on the left, to the matching space in the puzzle.")

@@ -28,7 +28,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Balance Box")
   description: qsTr("Navigate the ball to the door by tilting the box.")
-//  intro: "Click on the word matching the picture."
+//  intro: "Tilt the box to navigate the ball to the door."
   goal: qsTr("Practice fine motor skills and basic counting.")
   prerequisite: ""
   manual: qsTr("Navigate the ball to the door. Be careful not to make it fall into the holes. Numbered-contact buttons in the box need to be touched in the correct order to unlock the door. You can move the ball by tilting your mobile device. On desktop platforms use the arrow keys to simulate tilting.

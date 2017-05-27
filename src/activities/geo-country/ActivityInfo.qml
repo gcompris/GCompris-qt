@@ -29,7 +29,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Locate the region")
   description: qsTr("Drag and Drop the regions to redraw the whole country")
-//  intro: "Slide the regions to redraw the whole country"
+//  intro: "Drag and drop the regions to complete the country maps."
   goal: ""
   prerequisite: ""
   manual: ""

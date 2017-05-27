@@ -25,7 +25,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Addition of numbers")
   description: qsTr("Practice the addition of numbers")
-//  intro: "Add the two numbers together and type in your answer before the balloon landing"
+//  intro: "Add the two numbers together and type in your answer before the balloon lands in the water"
   goal: qsTr("Learn to find the sum of two numbers within a limited period of time")
   prerequisite: qsTr("Simple addition. Can recognize written numbers")
   manual: qsTr("Two numbers are displayed on the screen. Quickly find the sum of them and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins land in their balloon!")

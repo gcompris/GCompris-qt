@@ -14,7 +14,7 @@
    height="1248"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="background.svg"
    inkscape:export-filename="/home/timo/dessin/GCompriz/pics/GCompris-BallcatchB.png"
    inkscape:export-xdpi="90"
@@ -129,7 +129,7 @@
        xlink:href="#linearGradient5805-6"
        id="linearGradient3046"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(1.9999986,-4.863341e-8)"
+       gradientTransform="translate(2)"
        x1="980.01361"
        y1="413.97043"
        x2="980.01361"
@@ -143,16 +143,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.32862334"
-     inkscape:cx="812.99968"
-     inkscape:cy="268.84498"
+     inkscape:cx="307.86209"
+     inkscape:cy="445.33883"
      inkscape:document-units="px"
-     inkscape:current-layer="g3048"
+     inkscape:current-layer="g3041"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1880"
+     inkscape:window-width="1884"
      inkscape:window-height="1051"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -169,19 +169,23 @@
     <sodipodi:guide
        orientation="0,1"
        position="0,0"
-       id="guide3797" />
+       id="guide3797"
+       inkscape:locked="false" />
     <sodipodi:guide
        orientation="1,0"
        position="0,0"
-       id="guide3832" />
+       id="guide3832"
+       inkscape:locked="false" />
     <sodipodi:guide
        orientation="0,1"
        position="0,1248"
-       id="guide3834" />
+       id="guide3834"
+       inkscape:locked="false" />
     <sodipodi:guide
        orientation="1,0"
        position="1920,1248"
-       id="guide3836" />
+       id="guide3836"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -207,13 +211,6 @@
        height="1248"
        x="0"
        y="0" />
-    <rect
-       style="color:#000000;fill:#e5cd8b;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect4620"
-       width="1920"
-       height="330.46631"
-       x="0"
-       y="917.53369" />
     <g
        id="g3048"
        transform="translate(-857.87236,757.9757)">
@@ -328,14 +325,14 @@
          sodipodi:nodetypes="cczzzc"
          inkscape:connector-curvature="0"
          id="rect4622"
-         d="m -173.43248,412.77234 2236.07548,0 c 110.8222,18.007 148.8849,402.11377 -20,352.98215 -168.8849,-49.13162 -382.0782,-100 -678.0377,-100 -295.9595,0 -1382.605299,198.5401 -1558.03778,60 -175.43248,-138.5401 20,-312.98215 20,-312.98215 z"
-         style="color:#000000;fill:#4ba2d6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+         d="M -173.43248,412.77234 H 2062.643 c 110.8222,18.007 72.9288,465.6906 -95.9561,416.55898 -168.8849,-49.13162 -312.2081,-19.83792 -608.1676,-19.83792 -295.9595,0 -1376.519299,54.80119 -1551.95178,-83.73891 -175.43248,-138.5401 20,-312.98215 20,-312.98215 z"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#4ba2d6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate" />
       <path
          sodipodi:nodetypes="cczzzc"
          inkscape:connector-curvature="0"
          id="rect4622-0"
-         d="m -173.43248,410.77234 2236.07548,0 c 110.8222,18.007 148.8849,404.11377 -20,354.98215 -168.8849,-49.13162 -382.0782,-100 -678.0377,-100 -295.9595,0 -1382.605301,198.5401 -1558.03778,60 -175.43248,-138.5401 20,-314.98215 20,-314.98215 z"
-         style="opacity:0.51449274;color:#000000;fill:url(#linearGradient3046);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4643-7);enable-background:accumulate" />
+         d="M -173.43248,410.77234 H 2062.643 c 110.8222,18.007 139.7559,475.98322 -29.129,426.8516 -168.8849,-49.13162 -372.9492,-17.0737 -668.9087,-17.0737 -295.9595,0 -1382.6053,43.74435 -1558.03778,-94.79575 -175.43248,-138.5401 20,-314.98215 20,-314.98215 z"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.51449274;fill:url(#linearGradient3046);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;filter:url(#filter4643-7);enable-background:accumulate" />
     </g>
   </g>
   <g

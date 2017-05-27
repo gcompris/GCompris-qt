@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Horizontal reading practice")
   description: qsTr("Read a list of words and work out if a given word is in it.")
-//  intro: "Read a list of words and work out if a given word is in it."
+//  intro: "Read a list of words and say if a given word is in it."
   goal: qsTr("Reading training in a limited time")
   prerequisite: qsTr("Reading")
   manual: qsTr("A word is shown at the top right of the board. A list of words will appear and disappear on the left. Does the given word belong to the list?")

@@ -25,7 +25,7 @@ ActivityInfo {
   demo: false
   title: qsTr("End of chess game")
   description: qsTr("Play the end of the chess game against Tux")
-  //intro: "Play the end of the chess game against Tux"
+  //intro: "Click on a white chess piece and green boxes will appear to indicate all the movements that piece can make. Try and get the black king into checkmate."
   goal: ""
   prerequisite: ""
   manual: qsTr("In this activity you discover the chess game by playing only the end of a game. It displays the possible target position for any selected piece which helps the children understand how pieces moves.

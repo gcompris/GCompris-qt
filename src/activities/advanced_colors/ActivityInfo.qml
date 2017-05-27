@@ -27,7 +27,7 @@ ActivityInfo {
   title: qsTr("Advanced colors")
   //: activity description
   description: qsTr("Select the butterfly of the correct color")
-  //intro: "find the dancing butterfly having the requested color"
+  //intro: "click on the required color"
   //: activity goal
   goal: qsTr("Learn to recognize unusual colors.")
   //: activity prerequisite
