@@ -525,6 +525,8 @@ bool DownloadManager::registerResourceAbsolute(const QString& filename)
                     ApplicationSettings::getInstance()->locale());
         if (v == getRelativeResourcePath(filename))
             emit voicesRegistered();
+        else
+            emit musicRegistered();
         return true;
     }
 }

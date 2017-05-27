@@ -78,10 +78,10 @@ Window {
 
             onTriggered: {
                 DownloadManager.voicesRegistered.disconnect(playWelcome);
-                delayedbackgroundMusic.playBackgroundMusic()
             }
 
             function playWelcome() {
+                print("Playing")
                 audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
             }
         }
@@ -90,9 +90,8 @@ Window {
             if(ApplicationSettings.isAudioEffectsEnabled)
                 append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
 
-            if (DownloadManager.areVoicesRegistered()) {
+            if (DownloadManager.areVoicesRegistered())
                 delayedWelcomeTimer.playWelcome();
-            }
             else {
                 DownloadManager.voicesRegistered.connect(
                         delayedWelcomeTimer.playWelcome);
@@ -120,6 +119,7 @@ Window {
             }
 
             function playBackgroundMusic() {
+                rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
                 for(var i = 0; i < rccBackgroundMusic.length; i++)
                     backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/"+rccBackgroundMusic[i]));
             }
@@ -129,9 +129,8 @@ Window {
                 delayedbackgroundMusic.playBackgroundMusic()
             }
             else {
-                DownloadManager.registerResource(DownloadManager.getBackgroundMusicResources()).connect(
-                            delayedbackgroundMusic.playBackgroundMusic());
-                delayedbackgroundMusic.start();
+                DownloadManager.musicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
+                delayedbackgroundMusic.start()
             }
         }
     }
@@ -202,6 +201,7 @@ Window {
                         qsTr("Yes"),
                         function() {
                            if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
+
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                            }
                         },
@@ -306,8 +306,6 @@ Window {
                 if(!properties.exitItem.isDialog &&        // if coming from menu and
                         !properties.enterItem.isDialog)    // going into an activity then
                     playIntroVoice(properties.enterItem.activityInfo.name); // play intro
-                    if(!DownloadManager.downloadIsRunning())
-                        checkBackgroundMusic()
 
                 if (!properties.exitItem.isDialog ||       // if coming from menu or
                         properties.enterItem.alwaysStart)  // start signal enforced (for special case like transition from config-dialog to editor)

@@ -378,6 +378,8 @@ signals:
      * @sa resourceRegistered
      */
     void voicesRegistered();
+
+    void musicRegistered();
 };
 
 #endif /* DOWNLOADMANAGER_H */
