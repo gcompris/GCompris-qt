@@ -33,7 +33,7 @@ Image {
 
     GCText {
         id: heading
-        text: qsTr("Braille : Unlocking the Code")
+        text: qsTr("Braille: Unlocking the Code")
         fontSize: largeSize
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
@@ -110,7 +110,7 @@ Image {
             left: bottom_text.right
             leftMargin: 30 * ApplicationInfo.ratio
         }
-        Behavior on scale { PropertyAnimation { duration: 100} }
+        Behavior on scale { PropertyAnimation { duration: 100 } }
         
         MouseArea {
             id: tux_click

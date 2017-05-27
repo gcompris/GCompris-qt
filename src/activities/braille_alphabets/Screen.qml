@@ -189,7 +189,6 @@ ActivityBase {
                         Activity.nextQuestion()
                     }
                 }
-                audioEffects: activity.audioEffects
             }
 
             GCText {

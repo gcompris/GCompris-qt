@@ -131,10 +131,10 @@ function previousLevel() {
 }
 
 function nextQuestion() {
-    if(currentDataSet.length <= ++currentQuestion ) {
+    if(currentDataSet.length <= ++currentQuestion) {
         items.bonus.good("flower")
     } else {
-        // Let'not change the question immediately to let the
+        // Let's not change the question immediately to let the
         // children see his answer.
         // We just set the opacity to 0, the questionItem will then grab
         // the new question by itself

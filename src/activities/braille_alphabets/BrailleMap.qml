@@ -25,18 +25,14 @@ import "../../core"
 import "braille_alphabets.js" as Activity
 
 Rectangle {
-    id: dialogBackground
+    id: brailleMap
     color: "#808080"
     border.color: "black"
     border.width: 1
     z: 1000
     property bool isDialog: true
-    property string title
-    property string content
     signal close
     signal start
-    signal pause
-    signal play
     signal stop
 
     Flickable {
@@ -178,7 +174,8 @@ Rectangle {
                     property: "rotation"
                     from: 10; to: -10
                     duration: 500
-                    easing.type: Easing.InOutQuad }
+                    easing.type: Easing.InOutQuad
+                }
             }
             MouseArea {
                 anchors.fill: parent
