@@ -43,8 +43,6 @@ var randomMiss
 function start(items_, twoPlayer_) {
     items = items_
     currentLevel = 0
-    items.player1_score = 0
-    items.player2_score = 0
     twoPlayer = twoPlayer_
     initLevel()
 }
@@ -53,12 +51,14 @@ function stop() {
 }
 
 function initLevel() {
-
     numberOfLevel = twoPlayer ? 1 : weight.length
 
     items.bar.level = currentLevel + 1
 
     items.counter = 0
+
+    items.player2score.endTurn();
+    items.player1score.beginTurn();
 
     items.gameDone = false
     items.pieces.clear()
@@ -73,7 +73,6 @@ function initLevel() {
         depthMax = 2
     else
         depthMax = 4
-
 
     if(currentLevel < 2)
         randomMiss = 1
@@ -203,7 +202,6 @@ function getFreeStopFromBoard(column, board) {
 
 
 function alphabeta(depth, alpha, beta, player, board) {
-
     var value = evaluateBoard(player, player % 2 ? 2 : 1, board)
 
     if(depth === 0 || value === 100000 || value < -100000) {
@@ -211,7 +209,6 @@ function alphabeta(depth, alpha, beta, player, board) {
     }
 
     if(player === 2) {
-
         var scores = [];
 
         for(var c = 0; c < items.columns; c++) {
@@ -240,7 +237,6 @@ function alphabeta(depth, alpha, beta, player, board) {
         }
 
         return alpha;
-
     } else {
         for(var c = 0; c < items.columns; c++) {
 
@@ -261,7 +257,6 @@ function alphabeta(depth, alpha, beta, player, board) {
 }
 
 function doMove() {
-
     var board = getBoardFromModel()
 
     alphabeta(depthMax, -10000, 10000, 2, board)
@@ -464,7 +459,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 }
 
 function continueGame() {
-
     items.pieces.set(currentPiece, {"stateTemp": items.counter++ % 2 ? "2": "1"})
 
     /* Update score if game won */
@@ -473,33 +467,47 @@ function continueGame() {
                         parseInt(currentPiece % items.columns))) {
             items.gameDone = true
             if(currentPlayer === "1") {
-                items.player1_score++
+                items.player1score.win();
+                items.player2score.endTurn();
             } else {
-                items.player2_score++
+                items.player2score.win();
+                items.player1score.endTurn();
             }
             items.bonus.good("flower")
-            items.bonus.isWin = false
         }
-
+        else {
+            if(currentPlayer === "1") {
+                items.player1score.beginTurn();
+                items.player2score.endTurn();
+            } else {
+                items.player2score.beginTurn();
+                items.player1score.endTurn();
+            }
+        }
     } else {
         if(checkGameWon(parseInt(currentPiece / items.columns),
                         parseInt(currentPiece % items.columns))) {
             items.gameDone = true
             if(currentPlayer === "1") {
-                items.player1_score++
+                items.player1score.win()
+                items.player2score.endTurn()
                 items.bonus.good("flower")
-                items.bonus.isWin = false
                 items.counter--
             } else {
-                items.player2_score++
+                items.player2score.win()
+                items.player1score.endTurn()
                 items.bonus.bad("flower")
             }
         }
         if(items.counter % 2) {
-            doMove()
+            items.player1score.endTurn()
+            items.player2score.beginTurn()
+            items.trigTuxMove.start()
         }
     }
     if(items.counter === 42) {
+        items.player1score.endTurn()
+        items.player2score.endTurn()
         items.bonus.bad("flower")
     }
 }
