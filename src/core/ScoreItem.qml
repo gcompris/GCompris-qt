@@ -99,7 +99,7 @@ Item {
     Rectangle {
         id: backgroundRectangle
         anchors.fill: parent
-        radius: 5
+        radius: 15
         state: "second"
 
         Image {
@@ -131,6 +131,10 @@ Item {
         State {
             name: "first"
             PropertyChanges {
+                target: backgroundRectangle
+                color: "#80ffffff"
+            }
+            PropertyChanges {
                 target: playerImage
                 source: playerImageSource
             }
@@ -154,7 +158,7 @@ Item {
             }
             PropertyChanges {
                 target: backgroundRectangle
-                color: "#f7ec5d"
+                color: "#80ffffff"
             }
         }
         ]
