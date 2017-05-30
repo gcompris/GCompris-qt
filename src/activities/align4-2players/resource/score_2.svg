@@ -7,16 +7,17 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg2987"
+   id="svg2"
    version="1.1"
    inkscape:version="0.92.1 r15371"
    width="109.99999"
    height="80"
-   sodipodi:docname="score_2.svg">
+   sodipodi:docname="score_1.svg">
   <metadata
-     id="metadata2993">
+     id="metadata8">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -28,9 +29,30 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs2991" />
+     id="defs6">
+    <linearGradient
+       id="linearGradient4166">
+      <stop
+         style="stop-color:#0e9adb;stop-opacity:1"
+         offset="0.0000000"
+         id="stop4168" />
+      <stop
+         style="stop-color:#075376;stop-opacity:1"
+         offset="1.0000000"
+         id="stop4170" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4166"
+       id="linearGradient844"
+       x1="9.7457561"
+       y1="10.338984"
+       x2="9.7457561"
+       y2="70.254234"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#a6a6a6"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -40,21 +62,21 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1884"
      inkscape:window-height="1051"
-     id="namedview2989"
+     id="namedview4"
      showgrid="false"
-     inkscape:zoom="2.38396"
-     inkscape:cx="-19.517453"
-     inkscape:cy="28.843215"
+     inkscape:zoom="3.3714286"
+     inkscape:cx="-12.667715"
+     inkscape:cy="62.296896"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2987"
+     inkscape:current-layer="svg2"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0" />
   <rect
-     style="fill:#f8f8f8;fill-opacity:1;stroke:#37539a;stroke-width:1.94826376;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     style="fill:#49bbf0;fill-opacity:1;stroke:url(#linearGradient844);stroke-width:1.94826376;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
      id="rect4922"
      width="108.05173"
      height="78.051735"
