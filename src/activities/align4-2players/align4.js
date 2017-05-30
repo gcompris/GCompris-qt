@@ -476,7 +476,7 @@ function continueGame() {
             items.bonus.good("flower")
         }
         else {
-            if(currentPlayer === "1") {
+            if(currentPlayer === "2") {
                 items.player1score.beginTurn();
                 items.player2score.endTurn();
             } else {
