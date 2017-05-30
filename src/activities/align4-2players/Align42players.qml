@@ -124,6 +124,7 @@ ActivityBase {
                         Piece {
                             anchors.fill: parent
                             state: stateTemp
+                            sourceSize.width: items.cellSize
                         }
                     }
                 }
