@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="8"
-     inkscape:cx="71.06399"
+     inkscape:cx="42.56399"
      inkscape:cy="43.32293"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -36,7 +36,7 @@
      inkscape:window-height="1051"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     showgrid="true"
+     showgrid="false"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -118,7 +118,7 @@
        height="15"
        x="52"
        y="41"
-       ry="0" />
+       ry="3" />
     <g
        aria-label="BOW"
        style="font-style:normal;font-weight:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none"
@@ -178,7 +178,7 @@
        height="15"
        x="10"
        y="41"
-       ry="0" />
+       ry="3" />
     <rect
        style="opacity:1;fill:#7394cd;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect862-3"
@@ -186,7 +186,7 @@
        height="15"
        x="52"
        y="84"
-       ry="0" />
+       ry="3" />
     <rect
        style="opacity:1;fill:#7394cd;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect862-6"
@@ -194,7 +194,7 @@
        height="15"
        x="10"
        y="84"
-       ry="0" />
+       ry="3" />
     <g
        aria-label="EGG"
        style="font-style:normal;font-weight:normal;font-size:8px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none"
