@@ -72,8 +72,8 @@ QString loadTranslation(QSettings &config, QTranslator &translator)
     if(locale == GC_DEFAULT_LOCALE)
         locale = QString(QLocale::system().name() + ".UTF-8");
 
-    if(locale == "C.UTF-8")
-        locale = "en_US.UTF-8";
+    if(locale == "C.UTF-8" || locale == "en_US.UTF-8")
+        return "en_US";
 
     // Load translation
     // Remove .UTF8
