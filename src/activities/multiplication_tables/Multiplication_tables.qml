@@ -66,7 +66,6 @@ ActivityBase {
             property alias repeater: repeater
             property alias repeaterModel: repeater.model
             property string modeType: modeType
-            property alias keyboard: keyboard
         }
 
         onStart: {
@@ -116,7 +115,7 @@ ActivityBase {
 
         GCText {
             id: time
-            font.pointSize: 17
+            font.pointSize: bar.height * 0.2
             font.bold: true
             color: '#4B6319'
             anchors.bottom: bar.top
@@ -131,7 +130,7 @@ ActivityBase {
 
         GCText {
             id: score
-            font.pointSize: 17
+            font.pointSize: bar.height * 0.2
             anchors.bottom: bar.top
             anchors.right: time.left
             anchors {
@@ -340,15 +339,6 @@ ActivityBase {
                 dialogActivityConfig.active = true
                 displayDialog(dialogActivityConfig)
             }
-        }
-
-        VirtualKeyboard {
-            id: keyboard
-            anchors.bottom: parent.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width
-            onKeypress: Activity.processKeyPress(text)
-            onError: console.log("VirtualKeyboard error: " + msg);
         }
 
         Bonus {

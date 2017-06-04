@@ -32,8 +32,8 @@ var url
 var table
 var question = []
 var answer = []
-var question2 = []
-var answer2 = []
+var question_selected = []
+var answer_selected = []
 var allQuestions = []
 var allAnswers = []
 var questionOfLevel = []
@@ -61,7 +61,7 @@ function initLevel() {
         loadSelectedQuestions()
     } else {
         loadAllQuestionAnswer()
-        items.repeaterModel = 10
+        items.repeaterModel = dataset[0].questions.length
         loadQuestions()
     }
     items.startButton.text = qsTr("START")
@@ -73,7 +73,6 @@ function initLevel() {
 
 function loadQuestions() {
     var i
-    var j
     question = dataset[currentLevel].questions
     answer = dataset[currentLevel].answers
     table = dataset[currentLevel].tableName
@@ -84,10 +83,10 @@ function loadQuestions() {
 
 function loadSelectedQuestions() {
     var i = 0
-    question2 = selectedQuestions
-    answer2 = selectedAnswers
-    for (i = 0; i < question2.length; i++) {
-        items.repeater.itemAt(i).questionText = qsTr(question2[i])
+    question_selected = selectedQuestions
+    answer_selected = selectedAnswers
+    for (i = 0; i < question_selected.length; i++) {
+        items.repeater.itemAt(i).questionText = qsTr(question_selected[i])
     }
 }
 
@@ -98,8 +97,8 @@ function loadSchoolMode() {
 function flushQuestionsAnswers() {
     selectedQuestions = []
     selectedAnswers = []
-    question2 = []
-    answer2 = []
+    question_selected = []
+    answer_selected = []
 }
 
 function loadAllQuestionAnswer() {
@@ -113,32 +112,30 @@ function loadAllQuestionAnswer() {
 }
 
 function verifyAnswer() {
-    var j
-    for (j = 0; j < question.length; j++) {
-        var repeater_item = items.repeater.itemAt(j)
-        if (repeater_item.answerText.toString() == answer[j]) {
+    var answer_item
+    for (answer_item = 0; answer_item < question.length; answer_item++) {
+        var repeater_item = items.repeater.itemAt(answer_item)
+        repeater_item.questionImageOpacity = 1
+        repeater_item.questionImage = url + "wrong.svg"
+        if (repeater_item.answerText.toString() == answer[answer_item]) {
             scoreCounter = scoreCounter + 1
             repeater_item.questionImage = url + "right.svg"
             repeater_item.questionImageOpacity = 1
-        } else if (repeater_item.answerText.toString() != "") {
-            repeater_item.questionImageOpacity = 1
-            repeater_item.questionImage = url + "wrong.svg"
         }
     }
     items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
 }
 
 function verifySelectedAnswer() {
-    var j
-    for (j = 0; j < question2.length; j++) {
-        var repeater_item = items.repeater.itemAt(j)
-        if (repeater_item.answerText.toString() == answer2[j]) {
+    var answer_item
+    for (answer_item = 0; answer_item < question_selected.length; answer_item++) {
+        var repeater_item = items.repeater.itemAt(answer_item)
+        repeater_item.questionImageOpacity = 1
+        repeater_item.questionImage = url + "wrong.svg"
+        if (repeater_item.answerText.toString() == answer_selected[answer_item]) {
             scoreCounter = scoreCounter + 1
             repeater_item.questionImage = url + "right.svg"
             repeater_item.questionImageOpacity = 1
-        } else if (repeater_item.answerText.toString() != "") {
-            repeater_item.questionImageOpacity = 1
-            repeater_item.questionImage = url + "wrong.svg"
         }
     }
     items.score.text = qsTr("Your Score :-  %1").arg(scoreCounter.toString())
@@ -146,32 +143,31 @@ function verifySelectedAnswer() {
 
 function canAnswer(answerOrNot) {
     var q
-    var questionList
+    var questionList = []
     questionList = question
     if (items.modeType == "school") {
-        questionList = question2
+        questionList = question_selected
     }
     for (q = 0; q < questionList.length; q++) {
+        var repeater_item = items.repeater.itemAt(q)
+        repeater_item.answerTextReadonly = true
         if(answerOrNot){
-            items.repeater.itemAt(q).answerTextReadonly = false
-        }
-        else{
-        items.repeater.itemAt(q).answerTextReadonly = true
+            repeater_item.answerTextReadonly = false
         }
     }
 }
 
 function resetvalue() {
     var k
-    var questionList
+    var questionList = []
+    questionList = question
     if (items.modeType == "school") {
-        questionList = question2
-    } else {
-        questionList = question
+        questionList = question_selected
     }
     for (k = 0; k < questionList.length; k++) {
-        items.repeater.itemAt(k).answerText = ""
-        items.repeater.itemAt(k).questionImageOpacity = 0
+        var repeater_item = items.repeater.itemAt(k)
+        repeater_item.answerText = ""
+        repeater_item.questionImageOpacity = 0
     }
     scoreCounter = 0
     items.score.visible = false
