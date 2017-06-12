@@ -55,6 +55,7 @@ ActivityBase {
         anchors.centerIn: parent
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
+        sourceSize.height: height
 
         signal start
         signal stop
@@ -435,6 +436,8 @@ ActivityBase {
             z: 1
             width: parent.width
 //            height: parent.height
+            sourceSize.width: width
+            sourceSize.height: height
             source: Activity.baseUrl + "/ground.svg"
             anchors.left: parent.left
             anchors.right: parent.right
