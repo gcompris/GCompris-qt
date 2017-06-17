@@ -1,5 +1,7 @@
 MacOSX build instruction.
 
+Update config.h with the correct release version or pick it from a CMake build.
+
 copy the following files at the root dir
 cp config.h ../..
 cp gcompris.pro ../..

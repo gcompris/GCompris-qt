@@ -21,8 +21,10 @@
 #ifndef GCOMPRIS_CONFIG_H
 #define GCOMPRIS_CONFIG_H
 
-/* Version number of package */
-#define VERSION "0.60"
+/* Version number of package (string) */
+#define VERSION "0.80"
+/* Version number of package (integer) */
+#define VERSION_CODE 8000
 /* Folder where rccs and translations are installed */
 #define GCOMPRIS_DATA_FOLDER "../Resources"
 /* GCompris for android, gcompris-qt for others */
@@ -31,5 +33,9 @@
 #define COMPRESSED_AUDIO "aac"
 /* Download Allowed */
 #define DOWNLOAD_ALLOWED "ON"
+/* Date at which GCompris has been built */
+#define BUILD_DATE "201757"
+/* Type of activation system */
+#define ACTIVATION_MODE "no"
 
 #endif // GCOMPRIS_CONFIG_H
