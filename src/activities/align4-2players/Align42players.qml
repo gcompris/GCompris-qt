@@ -65,8 +65,7 @@ ActivityBase {
             property alias columns: grid.columns
             property alias rows: grid.rows
             property alias trigTuxMove: trigTuxMove
-            property int cellSize: Math.min(background.width / (columns + 1),
-                                            background.height / (rows + 3))
+            property int cellSize: background.width < background.height ? (background.width / (columns + 3)) : (background.height / (rows + 4))
             property bool gameDone
             property int counter
         }
@@ -97,10 +96,10 @@ ActivityBase {
 
         Grid {
             id: grid
+            z: 2
             anchors.horizontalCenter: parent.horizontalCenter
             anchors {
-                top: parent.top
-                topMargin: items.cellSize + 5 * ApplicationInfo.ratio
+                verticalCenter: parent.verticalCenter
                 horizontalCenter: parent.horizontalCenter
             }
 
@@ -119,6 +118,7 @@ ActivityBase {
                         color: "#DDAAAAAA";
                         width: items.cellSize
                         height: items.cellSize
+                        radius: width / 2
                         border.color: "#FFFFFFFF"
                         border.width: 0
                         Piece {
@@ -198,6 +198,7 @@ ActivityBase {
 
         ScoreItem {
             id: player1score
+            z: 1
             player: 1
             height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
             width: height*11/8
@@ -213,6 +214,7 @@ ActivityBase {
 
         ScoreItem {
             id: player2score
+            z: 1
             player: 2
             height: Math.min(background.height/7, Math.min(background.width/7, bar.height * 1.05))
             width: height*11/8
