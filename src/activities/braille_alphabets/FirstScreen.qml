@@ -35,78 +35,83 @@ Image {
         id: heading
         text: qsTr("Braille: Unlocking the Code")
         fontSize: largeSize
+        fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
         anchors.centerIn: parent.Center
         color: "#2a2a2a"
         width: parent.width
+        height: parent.height * 0.16
         wrapMode: Text.WordWrap
     }
     
     Image {
         id: introChar
         source: Activity.url + "intro_braille_char.svg"
-        sourceSize.width: parent.width * 0.25
+        sourceSize.height: parent.height * 0.25
         fillMode: Image.PreserveAspectFit
-        verticalAlignment: Image.AlignTop
         anchors {
             top: heading.bottom
             topMargin: 30 * ApplicationInfo.ratio
-            bottom: parent.bottom
-            bottomMargin: 60 * ApplicationInfo.ratio
             left: parent.left
-            leftMargin:  30 * ApplicationInfo.ratio
+            leftMargin: 30 * ApplicationInfo.ratio
         }
     }
     
     GCText {
         id: body_text1
-        text: qsTr('The Braille system is a method that is used by blind people to read and write.') + "\n" +
+        z: 1
+        text: qsTr('The Braille system is a method that is used by blind people to read and write.') + '\n    \n ' +
               qsTr('Each Braille character, or cell, is made up of six dot positions, arranged in ' +
                    'a rectangle containing two columns of three dots each. As seen on the left, each ' +
                    'dot is referenced by a number from 1 to 6.')
         fontSize: regularSize
+        fontSizeMode: Text.Fit
         font.weight: Font.DemiBold
         horizontalAlignment: Text.AlignJustify
         anchors {
             top: heading.bottom
-            topMargin: 30 * ApplicationInfo.ratio
+            topMargin: 15 * ApplicationInfo.ratio
             right: parent.right
-            rightMargin: 30 * ApplicationInfo.ratio
+            rightMargin: 15 * ApplicationInfo.ratio
             left: introChar.right
-            leftMargin: 30 * ApplicationInfo.ratio
+            leftMargin: 15 * ApplicationInfo.ratio
         }
         color: "#2a2a2a"
-        width: parent.width / 2
+        width: parent.width * 0.5
+        height: parent.height * 0.33
         wrapMode: Text.WordWrap
     }
     
     GCText {
         id: bottom_text
+        z: 2
         text: qsTr("When you are ready, click on me and try reproducing Braille characters.")
         fontSize: regularSize
+        fontSizeMode: Text.Fit
         font.weight: Font.Bold
-        width: parent.width * 0.3
+        horizontalAlignment: Text.AlignRight
         color: "#2a2a2a"
-        horizontalAlignment: Text.AlignJustify
         wrapMode:  Text.WordWrap
         anchors {
             top: body_text1.bottom
-            topMargin: 30 * ApplicationInfo.ratio
-            left: introChar.right
+            topMargin: 15 * ApplicationInfo.ratio
+            left: parent.left
             leftMargin: 30 * ApplicationInfo.ratio
         }
+        height: parent.height * 0.25
+        width: parent.width * 0.5
     }
     
     Image {
         id: introTux
+        z:3
         source: Activity.url + "tux_braille.svg"
         fillMode: Image.PreserveAspectFit
         sourceSize.width: parent.width * 0.2
         anchors {
-            top: bottom_text.top
-            right: parent.right
-            rightMargin: 30 * ApplicationInfo.ratio
+            top: body_text1.bottom
+            topMargin: 5 * ApplicationInfo.ratio
             left: bottom_text.right
             leftMargin: 30 * ApplicationInfo.ratio
         }
@@ -119,6 +124,19 @@ Image {
             onClicked: first_screen.visible  = false
             onEntered: introTux.scale = 1.1
             onExited: introTux.scale = 1
+        }
+    }
+    
+    Rectangle {
+        id: bgTux
+        z:0
+        color: "#94c1d2"
+        width: introTux.width * 1.5
+        height: introTux.height * 1.1
+        radius: bgTux.width * 0.5
+        anchors {
+            horizontalCenter: introTux.horizontalCenter
+            verticalCenter: introTux.verticalCenter
         }
     }
 }

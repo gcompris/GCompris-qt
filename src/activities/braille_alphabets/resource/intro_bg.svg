@@ -19,7 +19,7 @@
    height="520"
    xml:space="preserve"
    sodipodi:docname="intro_bg.svg"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"><sodipodi:namedview
      gridtolerance="1.0000000pt"
@@ -28,12 +28,12 @@
      showgrid="true"
      id="base"
      inkscape:zoom="1.1476887"
-     inkscape:cx="539.05715"
+     inkscape:cx="340.39701"
      inkscape:cy="298.65092"
-     inkscape:window-width="1880"
-     inkscape:window-height="1060"
-     inkscape:window-x="-3"
-     inkscape:window-y="-3"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:current-layer="svg602"
      borderlayer="true"
      inkscape:window-maximized="1"><inkscape:grid
@@ -114,7 +114,6 @@
        style="fill:#8686bf;fill-rule:evenodd;stroke:none"
        id="path2433"
        sodipodi:type="inkscape:box3dside" /></g><text
-     sodipodi:linespacing="125%"
      id="text3274"
      y="3240.5969"
      x="-991.62262"
@@ -125,7 +124,6 @@
        id="tspan3276"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3286"
      y="3148.5969"
      x="-737.62262"
@@ -141,7 +139,6 @@
        sodipodi:role="line" /></text>
 <text
      transform="scale(0.95004889,1.0525774)"
-     sodipodi:linespacing="125%"
      id="text3290"
      y="3046.187"
      x="-774.2998"
@@ -152,7 +149,6 @@
        x="-774.2998"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3304"
      y="3240.5969"
      x="-909.62262"
@@ -163,7 +159,6 @@
        x="-909.62262"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3316"
      y="3248.5969"
      x="-925.62262"
@@ -174,7 +169,6 @@
        id="tspan3318"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3320"
      y="3340.5969"
      x="-915.62262"
@@ -185,7 +179,6 @@
        id="tspan3324"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3366"
      y="3242.5969"
      x="-811.62262"
@@ -212,7 +205,6 @@
      id="path3446"
      style="opacity:0.96000001;fill:#f9f9f9;fill-opacity:0.99576272"
      sodipodi:type="arc" /><text
-     sodipodi:linespacing="125%"
      id="text3574"
      y="3240.5969"
      x="-965.62262"
@@ -223,7 +215,6 @@
        id="tspan3578"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3582"
      y="3248.5969"
      x="-983.62262"
@@ -234,7 +225,6 @@
        id="tspan3584"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3586"
      y="3138.5969"
      x="-761.62262"
@@ -245,7 +235,6 @@
        id="tspan3590"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3594"
      y="3164.5969"
      x="-749.62262"
@@ -256,7 +245,6 @@
        id="tspan3596"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3608"
      y="3244.5969"
      x="-751.62262"
@@ -267,7 +255,6 @@
        id="tspan3610"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3612"
      y="3344.5969"
      x="-741.62262"
@@ -278,7 +265,6 @@
        x="-741.62262"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3624"
      y="3338.5969"
      x="-761.62262"
@@ -293,7 +279,6 @@
        x="-761.62262"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3646"
      y="3246.5969"
      x="-755.62262"
@@ -308,7 +293,6 @@
        id="tspan3650"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3656"
      y="3152.5969"
      x="-755.62262"
@@ -323,7 +307,6 @@
        id="tspan3660"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3666"
      y="3258.5969"
      x="-973.62262"
@@ -334,7 +317,6 @@
        id="tspan3668"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3670"
      y="3260.5969"
      x="-979.62262"
@@ -345,7 +327,6 @@
        id="tspan3672"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3674"
      y="3258.5969"
      x="-981.62262"
@@ -356,7 +337,6 @@
        id="tspan3676"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3678"
      y="3266.5969"
      x="-981.62262"
@@ -367,7 +347,6 @@
        id="tspan3680"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3682"
      y="3260.5969"
      x="-981.62262"
@@ -378,7 +357,6 @@
        id="tspan3684"
        sodipodi:role="line" /></text>
 <text
-     sodipodi:linespacing="125%"
      id="text3694"
      y="3270.5969"
      x="-989.62262"
@@ -396,11 +374,7 @@
      height="519.20557"
      width="799.20551"
      id="rect2397-0"
-     style="opacity:1;fill:url(#linearGradient4819-261);fill-rule:evenodd;stroke:none;stroke-width:0.79446083px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" /><path
-     inkscape:connector-curvature="0"
-     id="rect2445-9"
-     d="m 520.2511,250.07141 136.3479,0 c 69.24217,0 124.98587,40.38032 124.98587,90.53884 0,50.15852 -55.7437,90.53884 -124.98587,90.53884 l -136.3479,0 c -69.24218,0 -124.98587,-40.38032 -124.98587,-90.53884 0,-50.15852 55.74369,-90.53884 124.98587,-90.53884 z"
-     style="opacity:1;fill:#94c1d2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.54645771px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><g
+     style="opacity:1;fill:url(#linearGradient4819-261);fill-rule:evenodd;stroke:none;stroke-width:0.79446083px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" /><g
      transform="matrix(0.35760532,0,0,0.35186626,865.85096,360.35069)"
      id="g780-3"
      style="opacity:0.96000001"><Board
@@ -612,7 +586,6 @@
          id="credit7996-2"
          xml:lang="en_CA">Laurent Lacheny. Images and Artificial Intelligence taken from project 4stattack by Jeroen Vloothuis. The original project can be found on http://forcedattack.sourceforge.net</credit></Board></g><text
      transform="scale(1.0193724,0.98099574)"
-     sodipodi:linespacing="125%"
      id="text3282-8"
      y="228.24924"
      x="330.9238"
@@ -624,7 +597,6 @@
        sodipodi:role="line" /></text>
 <text
      transform="scale(1.0193724,0.98099575)"
-     sodipodi:linespacing="125%"
      id="text3372-0"
      y="272.73904"
      x="63.335526"
@@ -644,7 +616,6 @@
        sodipodi:role="line" /></text>
 <text
      transform="scale(1.0193724,0.98099575)"
-     sodipodi:linespacing="125%"
      id="text3404-6"
      y="275.9169"
      x="76.046898"
@@ -656,7 +627,6 @@
        sodipodi:role="line" /></text>
 <text
      transform="scale(1.0193724,0.98099575)"
-     sodipodi:linespacing="125%"
      id="text3686-3"
      y="202.82649"
      x="61.746597"
@@ -668,7 +638,6 @@
        sodipodi:role="line" /></text>
 <text
      transform="scale(1.0193724,0.98099575)"
-     sodipodi:linespacing="125%"
      id="text3690-0"
      y="204.41542"
      x="55.390915"
