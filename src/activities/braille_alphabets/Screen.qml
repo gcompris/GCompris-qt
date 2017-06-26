@@ -208,7 +208,7 @@ ActivityBase {
 
         Rectangle {
             id: instructionsArea
-            height: questionItem.height * 1.2
+            height: parent.height * 0.3
             width: parent.width / 1.1
             anchors {
                 top: charList.bottom
@@ -226,12 +226,14 @@ ActivityBase {
                 id: questionItem
                 anchors.centerIn: parent
                 fontSize: largeSize
+                fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
                 style: Text.Outline
                 styleColor: "black"
                 color: "white"
                 width: parent.width * 0.94
+                height: parent.height * 0.94
                 wrapMode: Text.WordWrap
 
                 function initQuestion() {
@@ -258,8 +260,12 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.bottom: background.bottom
-            anchors.right: braille_map.left
+            anchors {
+                top: instructionsArea.bottom
+                left: instructionsArea.horizontalCenter
+                bottom: braille_map.top 
+                bottomMargin: 30 * ApplicationInfo.ratio
+            } 
             visible: !(dialogMap.visible || first_screen.visible)
         }
 
