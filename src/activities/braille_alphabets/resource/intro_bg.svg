@@ -54,7 +54,7 @@
        id="GridFromPre046Settings" /></sodipodi:namedview><metadata
      id="metadata2679"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
      id="defs604"><inkscape:perspective
        id="perspective2391"
        inkscape:persp3d-origin="1191.1966 : 147.61347 : 1"
@@ -69,7 +69,8 @@
        x1="301.91321"
        id="linearGradient4819-261"
        xlink:href="#linearGradient4813-183"
-       inkscape:collect="always" /><linearGradient
+       inkscape:collect="always"
+       gradientTransform="matrix(1.0009941,0,0,1.0015301,-0.39762531,-0.39783824)" /><linearGradient
        id="linearGradient4813-183"
        inkscape:collect="always"><stop
          id="stop7381"
@@ -367,14 +368,14 @@
        id="tspan3696"
        sodipodi:role="line" /></text>
 <rect
-     ry="0.21264331"
-     rx="6.1388283"
-     y="0.39723045"
-     x="0.39723042"
-     height="519.20557"
-     width="799.20551"
+     ry="0.21296868"
+     rx="6.1449308"
+     y="-2.6201263e-14"
+     x="0"
+     height="520"
+     width="800"
      id="rect2397-0"
-     style="opacity:1;fill:url(#linearGradient4819-261);fill-rule:evenodd;stroke:none;stroke-width:0.79446083px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1" /><g
+     style="opacity:1;fill:url(#linearGradient4819-261);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.79546344px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><g
      transform="matrix(0.35760532,0,0,0.35186626,865.85096,360.35069)"
      id="g780-3"
      style="opacity:0.96000001"><Board
