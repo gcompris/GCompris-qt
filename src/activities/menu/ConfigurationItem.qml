@@ -698,7 +698,7 @@ Item {
                 + qsTr("Do you want to download it now?"),
                 qsTr("Yes"),
                 function() {
-                    if (DownloadManager.downloadResource(backgroundMusic))
+                    if (DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources()))
                         var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                 },
                 qsTr("No"),null

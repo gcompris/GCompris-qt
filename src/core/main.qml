@@ -81,7 +81,6 @@ Window {
             }
 
             function playWelcome() {
-                print("Playing")
                 audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
             }
         }
@@ -111,7 +110,7 @@ Window {
 
         Timer {
             id: delayedbackgroundMusic
-            interval: 100
+            interval: (ApplicationSettings.isAudioVoicesEnabled && !ApplicationSettings.isAudioEffectsEnabled) ? 2000 : 20000
             repeat: false
 
             onTriggered: {
@@ -125,8 +124,11 @@ Window {
             }
         }
         Component.onCompleted: {
-            if(ApplicationSettings.isBackgroundMusicEnabled && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+            if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
                 delayedbackgroundMusic.playBackgroundMusic()
+            }
+            else if(ApplicationSettings.isBackgroundMusicEnabled && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+                delayedbackgroundMusic.start()
             }
             else {
                 DownloadManager.backgroundMusicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
@@ -177,7 +179,7 @@ Window {
         var music = DownloadManager.getBackgroundMusicResources()
         if(rccBackgroundMusic == '') {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-            delayedbackgroundMusic.playBackgroundMusic()
+//             delayedbackgroundMusic.playBackgroundMusic()
         }
         if(music == '') {
             music = DownloadManager.getBackgroundMusicResources()
@@ -185,7 +187,7 @@ Window {
     // We have local music but it is not yet registered
         else if(!DownloadManager.isDataRegistered("backgroundMusic") && DownloadManager.haveLocalResource(music)) {
     // We have music and automatic download is enabled. Download the music and register it
-         if(DownloadManager.haveLocalResource(music) && (DownloadManager.updateResource(music)) && DownloadManager.downloadIsRunning()) {
+         if(DownloadManager.updateResource(music) && DownloadManager.downloadIsRunning()) {
              DownloadManager.registerResource(music)
              rccBackgroundMusic = Core.shuffle(ApplicationInfo.getBackgroundMusicFromRcc())
           }
@@ -201,7 +203,6 @@ Window {
                         qsTr("Yes"),
                         function() {
                            if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
-
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                            }
                         },
