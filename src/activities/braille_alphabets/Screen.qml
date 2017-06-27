@@ -284,7 +284,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: first_screen.visible ? help | home : help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
