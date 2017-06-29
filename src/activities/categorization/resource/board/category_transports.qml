@@ -31,7 +31,7 @@ QtObject{
             "image": imagesPrefix + "balloon.jpg",
             "content": [
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "tucker.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -40,7 +40,7 @@ QtObject{
                     "bad": ["householdGoods/ac.jpg","householdGoods/heater.jpg","householdGoods/quilt.jpg","food/kathiRoll.jpg","food/icecream.jpg","vegetables/carrots.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "train1.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -49,7 +49,7 @@ QtObject{
                     "bad": ["householdGoods/coffeeMaker.jpg","householdGoods/curtains.jpg","nature/nature6.jpg","insects/insect10.jpg","householdGoods/lamp.jpg","others/fork.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "ship.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -58,7 +58,7 @@ QtObject{
                     "bad": ["nature/nature5.jpg","nature/nature8.jpg","food/biryani.jpg","food/skimmedMilk.jpg","fruits/grapes.jpg","fruits/apple.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "plane.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -68,7 +68,7 @@ QtObject{
                 },
                 {
                     "tags": ["transport"],
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "train2.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -77,7 +77,7 @@ QtObject{
                     "bad": ["insects/insect15.jpg","birds/bird18.jpg","animals/giraffe.jpg","others/street.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "roadTrain.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -86,7 +86,7 @@ QtObject{
                     "bad": ["food/hamburger.jpg","householdGoods/electricBlanket.jpg","householdGoods/bed.jpg","vegetables/spinach.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "car2.jpg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -95,7 +95,7 @@ QtObject{
                     "bad": ["food/pizza.jpg","householdGoods/toaster.jpg","animals/koala.jpg","birds/bird21.jpg","insects/insect12.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "ferry.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -104,7 +104,7 @@ QtObject{
                     "bad": ["householdGoods/almirah.jpg","plants/tree3.jpg","nature/nature17.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "rocket1.jpg",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
@@ -113,7 +113,7 @@ QtObject{
                     "bad": ["food/milk.jpg","householdGoods/vacuumCleaner.jpg","insects/insect9.jpg","birds/bird23.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the MODE OF TRANSPORTS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the MEANS OF TRANSPORTATION to the right and other objects to the left"),
                     "image":imagesPrefix + "cycle.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
