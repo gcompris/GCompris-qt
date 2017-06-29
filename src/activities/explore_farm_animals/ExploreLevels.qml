@@ -292,11 +292,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onStart: ApplicationSettings.isBackgroundMusicEnabled = false
-            onClose: {
-                ApplicationSettings.isBackgroundMusicEnabled = true
-                home()
-            }
+            onClose: home()
         }
 
         Bar {

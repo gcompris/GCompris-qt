@@ -31,4 +31,10 @@ ExploreLevels {
     numberOfLevels: 1
     url: "qrc:/gcompris/src/activities/explore_world_music/resource/"
     hasAudioQuestions: true
+    property bool backgroundMusicStatus
+    onStart: {
+         backgroundMusicStatus = ApplicationSettings.isBackgroundMusicEnabled
+         ApplicationSettings.isBackgroundMusicEnabled = false
+    }
+    onStop: ApplicationSettings.isBackgroundMusicEnabled = backgroundMusicStatus
 }

@@ -120,7 +120,7 @@ Window {
             function playBackgroundMusic() {
                 rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
                 for(var i = 0; i < rccBackgroundMusic.length; i++)
-                    backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/"+rccBackgroundMusic[i]));
+                    backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[i]))
             }
         }
         Component.onCompleted: {
@@ -179,7 +179,6 @@ Window {
         var music = DownloadManager.getBackgroundMusicResources()
         if(rccBackgroundMusic == '') {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-//             delayedbackgroundMusic.playBackgroundMusic()
         }
         if(music == '') {
             music = DownloadManager.getBackgroundMusicResources()

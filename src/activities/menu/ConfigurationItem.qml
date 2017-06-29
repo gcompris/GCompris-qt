@@ -610,7 +610,6 @@ Item {
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
         ApplicationSettings.wordset = wordset
-
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
@@ -681,15 +680,15 @@ Item {
         if(DownloadManager.isDataRegistered("backgroundMusic")) {
         // we either have it, we try to update in the background
         // or we are downloading it
-            if(DownloadManager.haveLocalResource(backgroundMusic))
-                DownloadManager.updateResource(backgroundMusic)
+            if(DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources()))
+                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources())
             }
         else {
         // download automatically if automatic download else ask for download
             if(isAutomaticDownloadsEnabled) {
                 var prevAutomaticDownload = ApplicationSettings.isAutomaticDownloadsEnabled
                 ApplicationSettings.isAutomaticDownloadsEnabled = true;
-                DownloadManager.updateResource(backgroundMusic);
+                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources());
                 ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
             }
             else {

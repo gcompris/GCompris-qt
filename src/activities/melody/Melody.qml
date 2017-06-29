@@ -54,9 +54,12 @@ ActivityBase {
             property var answer
             property alias questionInterval: questionPlayer.interval
             property int numberOfLevel: 10
+            property bool backgroundMusicStatus
         }
 
         onStart: {
+            items.backgroundMusicStatus = ApplicationSettings.isBackgroundMusicEnabled
+            ApplicationSettings.isBackgroundMusicEnabled = false
             bar.level = 1
             score.numberOfSubLevels = 5
             score.currentSubLevel = 1
@@ -65,6 +68,7 @@ ActivityBase {
 
         onStop: {
             questionPlayer.stop()
+            ApplicationSettings.isBackgroundMusicEnabled = items.backgroundMusicStatus
         }
 
         Image {
