@@ -40,8 +40,6 @@ function start(items_, twoPlayer_) {
 
     items = items_
     currentLevel = 1
-    items.player1_score = 0
-    items.player2_score = 0
     twoPlayer = twoPlayer_
     numberOfLevel = 6
     numberOfPieces = 9
@@ -343,8 +341,8 @@ function previousLevel() {
 function reset() {
     stopper = true
     stopAnimations()
-    items.player1image.rotation = 0
-    items.player2image.rotation = 0
+    items.player2score.endTurn();
+    items.player1score.beginTurn();
     items.playSecond = !items.playSecond
     initLevel()
 }
@@ -352,46 +350,39 @@ function reset() {
 function stopAnimations() {
     items.player1turn.stop()
     items.player2turn.stop()
-    items.player1shrink.stop()
-    items.player2shrink.stop()
-    items.rotateKonqi.stop()
-    items.rotateTux.stop()
 }
 
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer1() {
-    items.changeScalePlayer1.scale = 1.4
-    items.changeScalePlayer2.scale = 1.0
-    items.player1.state = "first"
-    items.player2.state = "second"
+    items.player2score.endTurn();
+    items.player1score.beginTurn();
+    items.player1score.state = "first"
+    items.player2score.state = "second"
 
     items.firstInitial.anchors.right = undefined
-    items.firstInitial.anchors.top = items.player1.bottom
-    items.firstInitial.anchors.left = items.player1.left
+    items.firstInitial.anchors.top = items.player1score.bottom
+    items.firstInitial.anchors.left = items.player1score.left
 
     items.secondInitial.anchors.left = undefined
-    items.secondInitial.anchors.right = items.player2.right
-    items.secondInitial.anchors.top = items.player2.bottom
-
-    items.rotateKonqi.start()
+    items.secondInitial.anchors.right = items.player2score.right
+    items.secondInitial.anchors.top = items.player2score.bottom
 }
 
 //Initial values at the start of game when its player 1 turn
 function initiatePlayer2() {
-    items.changeScalePlayer1.scale = 1.0
-    items.changeScalePlayer2.scale = 1.4
-    items.player1.state = "second"
-    items.player2.state = "first"
+
+    items.player1score.endTurn();
+    items.player2score.beginTurn();
+    items.player1score.state = "second"
+    items.player2score.state = "first"
 
     items.secondInitial.anchors.right = undefined
-    items.secondInitial.anchors.top = items.player1.bottom
-    items.secondInitial.anchors.left = items.player1.left
+    items.secondInitial.anchors.top = items.player1score.bottom
+    items.secondInitial.anchors.left = items.player1score.left
 
     items.firstInitial.anchors.left = undefined
-    items.firstInitial.anchors.right = items.player2.right
-    items.firstInitial.anchors.top = items.player2.bottom
-
-    items.rotateTux.start()
+    items.firstInitial.anchors.right = items.player2score.right
+    items.firstInitial.anchors.top = items.player2score.bottom
 }
 
 //Change scale of score boxes according to turns
@@ -490,10 +481,12 @@ function movePiece(index) {
 
 function shouldComputerPlay() {
     if(!twoPlayer) {
-        if(items.turn % 2 && items.playSecond == false && stopper == false)
-            doMove()
-        else if((items.turn % 2 == 0) && items.playSecond && stopper == false)
-            doMove()
+        if(items.turn % 2 && items.playSecond == false && stopper == false) {
+            items.trigTuxMove.start()
+        }
+        else if((items.turn % 2 == 0) && items.playSecond && stopper == false) {
+            items.trigTuxMove.start()
+        }
         else
             items.pieceBeingMoved = false
     }
@@ -1161,25 +1154,29 @@ function checkGameWon() {
     if(((numberOfSecondPieces < 3 && !items.playSecond) || (numberOfFirstPieces < 3 && items.playSecond)) ||
        (flag && ((currentPiece.state == "1" && !items.playSecond) || (currentPiece.state == "2" && items.playSecond)))) {
         items.gameDone = true
-        items.player1_score++
-        items.player1.state = "win"
+        //items.player1_score++
+        items.player1score.win();
+        items.player2score.endTurn();
+        //items.player1.state = "win"
         items.instructionTxt = qsTr("Congratulations")
         items.bonus.good("flower")
         if(twoPlayer) {
             items.instructionTxt = qsTr("Congratulations Player 1")
-            items.bonus.isWin = false
+            //items.bonus.isWin = false
         }
     }
     else if(((numberOfFirstPieces < 3 && !items.playSecond) || (numberOfSecondPieces < 3 && items.playSecond)) ||
             (flag && ((currentPiece.state == "2" && !items.playSecond) ||
             (currentPiece.state == "1" && items.playSecond)))) {
         items.gameDone = true
-        items.player2_score++
-        items.player2.state = "win"
+        //items.player2_score++
+        items.player2score.win();
+        items.player1score.endTurn();
+        //items.player2.state = "win"
         if(twoPlayer) {
             items.bonus.good("flower")
             items.instructionTxt = qsTr("Congratulations Player 2")
-            items.bonus.isWin = false
+            //items.bonus.isWin = false
         }
         else {
             items.instructionTxt = qsTr("Try again")
