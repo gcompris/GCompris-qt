@@ -340,16 +340,11 @@ function previousLevel() {
 
 function reset() {
     stopper = true
-    stopAnimations()
+    shouldComputerPlay();
     items.player2score.endTurn();
     items.player1score.beginTurn();
     items.playSecond = !items.playSecond
     initLevel()
-}
-
-function stopAnimations() {
-    items.player1turn.stop()
-    items.player2turn.stop()
 }
 
 //Initial values at the start of game when its player 1 turn
@@ -388,16 +383,24 @@ function initiatePlayer2() {
 //Change scale of score boxes according to turns
 function changeScale() {
    if(items.playSecond) {
-        if(items.turn % 2 == 0)
-            items.player2turn.start()
-        else
-            items.player1turn.start()
+        if(items.turn % 2 == 0){
+            items.player2score.beginTurn();
+            items.player1score.endTurn();
+        }
+        else {
+            items.player1score.beginTurn();
+            items.player2score.endTurn();
+        }
     }
     else {
-        if(items.turn % 2 == 0)
-            items.player1turn.start()
-        else
-            items.player2turn.start()
+        if(items.turn % 2 == 0) {
+            items.player1score.beginTurn();
+            items.player2score.endTurn();
+        }
+        else {
+            items.player2score.beginTurn();
+            items.player1score.endTurn();
+        }
     }
 }
 
@@ -901,6 +904,7 @@ function continueGame() {
         otherRepeater = items.secondPlayerPieces
     }
     changeScale()
+    shouldComputerPlay();
 }
 
 // position value is only used when checkMill is called by setSecondPhaseMove or getSecondPhaseRemoveIndex function
@@ -1154,29 +1158,23 @@ function checkGameWon() {
     if(((numberOfSecondPieces < 3 && !items.playSecond) || (numberOfFirstPieces < 3 && items.playSecond)) ||
        (flag && ((currentPiece.state == "1" && !items.playSecond) || (currentPiece.state == "2" && items.playSecond)))) {
         items.gameDone = true
-        //items.player1_score++
         items.player1score.win();
         items.player2score.endTurn();
-        //items.player1.state = "win"
         items.instructionTxt = qsTr("Congratulations")
         items.bonus.good("flower")
         if(twoPlayer) {
             items.instructionTxt = qsTr("Congratulations Player 1")
-            //items.bonus.isWin = false
         }
     }
     else if(((numberOfFirstPieces < 3 && !items.playSecond) || (numberOfSecondPieces < 3 && items.playSecond)) ||
             (flag && ((currentPiece.state == "2" && !items.playSecond) ||
             (currentPiece.state == "1" && items.playSecond)))) {
         items.gameDone = true
-        //items.player2_score++
         items.player2score.win();
         items.player1score.endTurn();
-        //items.player2.state = "win"
         if(twoPlayer) {
             items.bonus.good("flower")
             items.instructionTxt = qsTr("Congratulations Player 2")
-            //items.bonus.isWin = false
         }
         else {
             items.instructionTxt = qsTr("Try again")

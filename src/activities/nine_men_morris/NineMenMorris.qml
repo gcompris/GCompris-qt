@@ -62,14 +62,12 @@ ActivityBase {
             property alias firstPlayerPiecesModel: firstPlayerPiecesModel
             property alias firstPieceNumberCount: firstPieceNumber.count
             property alias player1score: player1score
-            property alias player1turn: player1turn
 
             property alias secondInitial: secondInitial
             property alias secondPlayerPieces: secondPlayerPieces
             property alias secondPlayerPiecesModel: secondPlayerPiecesModel
             property alias secondPieceNumberCount: secondPieceNumber.count
             property alias player2score: player2score
-            property alias player2turn: player2turn
 
             property alias trigTuxMove: trigTuxMove
 
@@ -307,7 +305,6 @@ ActivityBase {
                 right: background.right
                 rightMargin: 5
             }
-            state: "second"
             visible: !items.isTutorial
             playerImageSource: Activity.url + "TuxBlack.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
@@ -325,36 +322,11 @@ ActivityBase {
                 left: background.left
                 leftMargin: 5
             }
-            state: "second"
             visible: !items.isTutorial
             playerImageSource: Activity.url + "KonqiWhite.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
         }
         // Player scores section ends
-
-        // Animation section start
-        PropertyAnimation {
-            id: player1turn
-            onStarted:{
-                player1score.state = "first"
-                player2score.state = "second"
-                player1score.beginTurn();
-                player2score.endTurn();
-            }
-            onStopped: {Activity.shouldComputerPlay()}
-        }
-
-        PropertyAnimation {
-            id: player2turn
-            onStarted:{
-                player1score.state = "second"
-                player2score.state = "first"
-                player2score.beginTurn();
-                player1score.endTurn();
-            }
-            onStopped: {Activity.shouldComputerPlay()}
-        }
-        // Animation section ends
 
         // Tutorial section starts
         Image {
