@@ -47,6 +47,7 @@ explore_monuments
 explore_world_animals
 explore_world_music
 family
+family_find_relative
 fifteen
 followline
 football

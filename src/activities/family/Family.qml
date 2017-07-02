@@ -28,6 +28,8 @@ import "family.js" as Activity
 ActivityBase {
     id: activity
 
+    property string mode: "family"
+
     onStart: focus = true
     onStop: {}
 
@@ -48,6 +50,32 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        property real treeAreaWidth: background.horizontalLayout ? background.width * 0.65 : background.width
+        property real treeAreaHeight: background.horizontalLayout ? background.height : background.height * 0.65
+
+        property real nodeWidth: (0.8 * treeAreaWidth) / 5
+        property real nodeHeight: (0.8 * treeAreaWidth) / 5
+
+        property real nodeWidthRatio: nodeWidth / treeAreaWidth
+        property real nodeHeightRatio: nodeHeight / treeAreaHeight
+
+        onWidthChanged: loadDatasetDelay.start()
+        onHeightChanged: if (!loadDatasetDelay.running) {
+                            loadDatasetDelay.start()
+                         }
+
+        /*
+         * Adding a delay before reloading the datasets
+         * needed for fast width / height changes
+         */
+        Timer {
+            id: loadDatasetDelay
+            running: false
+            repeat: false
+            interval: 100
+            onTriggered: Activity.loadDatasets()
+        }
+
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -55,46 +83,117 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias nodeCreator: nodeCreator
+            property alias nodeRepeater: nodeRepeater
             property alias answersChoice: answersChoice
-            property alias edgeCreator: edgeCreator
-            property alias wringcreator: wringcreator
+            property alias edgeRepeater: edgeRepeater
+            property alias ringRepeator: ringRepeator
+            property alias dataset: dataset
+            property string mode: activity.mode
+            property alias questionTopic: question.questionTopic
+            property alias selectedPairs: selectedPairs
+            property point questionMarkPosition: questionMarkPosition
+            property point meLabelPosition: meLabelPosition
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Dataset {
+            id: dataset
+        }
+
+        // handling pair matching for family_find_relative
         Item {
-            id: partition
+            id: selectedPairs
+            property int numberOfNodesSelected: 0
+            property var firstNodePointer
+            property var secondNodePointer
+
+            function reset() {
+                numberOfNodesSelected = 0
+            }
+
+            function deactivatePairs() {
+                if (firstNodePointer && secondNodePointer) {
+                    firstNodePointer.changeState("deactive")
+                    secondNodePointer.changeState("deactive")
+                }
+            }
+
+            function checkResult() {
+                if (firstNodePointer.weight == (secondNodePointer.weight * -1) && firstNodePointer.weight != 0) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+
+            function selectNode(node_) {
+                if (numberOfNodesSelected >= 2)
+                    return
+
+                if(numberOfNodesSelected == 0) {
+                    firstNodePointer = node_
+                    firstNodePointer.changeState("activeTo")
+                } else {
+                    secondNodePointer = node_
+
+                    if (firstNodePointer == secondNodePointer) {
+                        deactivatePairs()
+                        reset()
+                        return
+                    }
+
+                    secondNodePointer.changeState("activeTo")
+
+                    // checking results
+                    if (checkResult()) {
+                        bonus.good("lion")
+                    } else {
+                        bonus.bad("lion")
+                        deactivatePairs()
+                        reset()
+                        return
+                    }
+                }
+                numberOfNodesSelected ++;
+            }
+        }
+
+        Item {
+            id: board
             width: background.width
             height: background.height
             Rectangle {
-                id: tree
+                id: treeArea
                 color: "transparent"
-                width: background.horizontalLayout ? background.width*0.65 : background.width
-                height: background.horizontalLayout ? background.height : background.height*0.65
-                border.color: "black"
+                width: background.treeAreaWidth
+                height: background.treeAreaHeight
+                anchors.horizontalCenter: activity.mode == "find_relative" ? board.horizontalCenter : undefined
+                anchors.verticalCenter: activity.mode == "find_relative" ? board.verticalCenter : undefined
+                border.color: activity.mode == "family" ? "black" : "transparent"
                 border.width: 5
                 Item {
                     id: treeItem
                     Repeater {
-                        id: nodeCreator
+                        id: nodeRepeater
                         model: ListModel{}
                         delegate:
-                            Tree {
+                            Node {
                             id: currentPointer
-                            x: xx*tree.width
-                            y: yy*tree.height
-                            width: tree.width/5
-                            height: tree.width/5
-                            recWidth: currentPointer.width
-                            recHeight: currentPointer.height
-                            nodeImageSource: Activity.url+nodee
+                            x: xPosition * treeArea.width
+                            y: yPosition * treeArea.height
+                            width: treeArea.width / 5
+                            height: treeArea.width / 5
+                            nodeWidth: currentPointer.width
+                            nodeHeight: currentPointer.height
+                            nodeImageSource: Activity.url + nodeValue
                             borderColor: "black"
-                            borderWidth: 4
+                            borderWidth: 8
                             color: "transparent"
-                            radius: recWidth/2
-                            state: currentstate
+                            radius: nodeWidth / 2
+                            state:  currentState
+                            weight: nodeWeight
 
                             states: [
                                State {
@@ -111,74 +210,57 @@ ActivityBase {
                                       }
                                },
                                State {
-                                    name: "activeto"
+                                    name: "activeTo"
                                     PropertyChanges {
                                         target: currentPointer
-                                        borderColor: "red"
+                                        borderColor: "yellow"
                                     }
                                }
                             ]
-
-                            SequentialAnimation {
-                                id: anim
-                                running: currentPointer.state === "active" || currentPointer.state === "activeto"
-                                loops: Animation.Infinite
-                                alwaysRunToEnd: true
-                                NumberAnimation {
-                                    target: currentPointer
-                                    property: "rotation"
-                                    from: 0; to: 10
-                                    duration: 200
-                                    easing.type: Easing.OutQuad
-                                }
-                                NumberAnimation {
-                                    target: currentPointer
-                                    property: "rotation"
-                                    from: 10; to: -10
-                                    duration: 400
-                                    easing.type: Easing.InOutQuad
-                                }
-                                NumberAnimation {
-                                    target: currentPointer
-                                    property: "rotation"
-                                    from: -10; to: 0
-                                    duration: 200
-                                    easing.type: Easing.InQuad
-                                }
-                            }
                         }
                     }
 
-                   GCText {
+                    Rectangle {
                         id: me
-                        text: qsTr("Me")
-                        visible: Activity.treeStructure[bar.level-1].captions[0] !== undefined
-                        x: Activity.treeStructure[bar.level-1].captions[0][0]*tree.width
-                        y: Activity.treeStructure[bar.level-1].captions[0][1]*tree.height
-                        width: tree.width/12
-                        height: tree.height/14
+                        visible: dataset.levelElements[bar.level-1].captions[0] !== undefined && activity.mode == "family"
+                        x: items.meLabelPosition.x * treeArea.width
+                        y: items.meLabelPosition.y * treeArea.height
+
+                        width: treeArea.width/12
+                        height: treeArea.height/14
+
+                        radius: 5
+                        border.color: "black"
+                        GCText {
+                            id: meLabel
+                            text: qsTr("Me")
+                            anchors {
+                                horizontalCenter: parent.horizontalCenter
+                                verticalCenter: parent.verticalCenter
+                            }
+                        }
                     }
 
                     Image {
                         id: questionmark
                         source: Activity.url + "questionmark.svg"
-                        visible: Activity.treeStructure[bar.level-1].captions[1] !== undefined
-                        x: Activity.treeStructure[bar.level-1].captions[1][0]*tree.width
-                        y: Activity.treeStructure[bar.level-1].captions[1][1]*tree.height
+                        visible: dataset.levelElements[bar.level-1].captions[1] !== undefined && activity.mode == "family"
+                        x: items.questionMarkPosition.x * treeArea.width
+                        y: items.questionMarkPosition.y * treeArea.height
                     }
 
                     Repeater {
-                        id: edgeCreator
+                        id: edgeRepeater
                         model: ListModel {}
                         delegate: Rectangle {
                             id: edge
                             opacity: 1
                             antialiasing: true
                             transformOrigin: Item.TopLeft
-                            x: x1*tree.width
-                            y: y1*tree.height
-                            property var x2: x22*tree.width
-                            property var y2: y22*tree.height
+                            x: _x1 * treeArea.width
+                            y: _y1 * treeArea.height
+                            property var x2: _x2 * treeArea.width
+                            property var y2: _y2 * treeArea.height
                             width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
                             height: 4 * ApplicationInfo.ratio
                             rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
@@ -200,15 +282,15 @@ ActivityBase {
                     }
 
                     Repeater {
-                        id: wringcreator
+                        id: ringRepeator
                         model: ListModel{}
                         delegate: Image {
-                            id: wring
+                            id: ring
                             source: Activity.url + "rings.svg"
-                            width: tree.width*0.04
-                            height: tree.width*0.04
-                            x:ringx*tree.width
-                            y:ringy*tree.height
+                            width: treeArea.width * 0.04
+                            height: treeArea.width * 0.04
+                            x: ringx * treeArea.width
+                            y: ringy * treeArea.height
                         }
                     }
                 }
@@ -219,9 +301,9 @@ ActivityBase {
                 color: "transparent"
                 width: background.horizontalLayout ? background.width*0.35 : background.width
                 height: background.horizontalLayout ? background.height : background.height*0.35
-                anchors.left: background.horizontalLayout ? tree.right : partition.left
-                anchors.top: background.horizontalLayout ? partition.top: tree.bottom
-                border.color: "black"
+                anchors.left: background.horizontalLayout ? treeArea.right : board.left
+                anchors.top: background.horizontalLayout ? board.top: treeArea.bottom
+                border.color: activity.mode == "family" ? "black" : "transparent"
                 border.width: 5
                 Rectangle {
                     width: parent.width * 0.99
@@ -229,7 +311,9 @@ ActivityBase {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
                     color: "transparent"
+
                     Grid {
+                        visible: activity.mode == "family" ? true : false
                         columns: 1
                         rowSpacing: 20
                         anchors.verticalCenter: parent.verticalCenter
@@ -250,6 +334,31 @@ ActivityBase {
                         }
                     }
                 }
+            }
+        }
+
+        GCText {
+            id: question
+            property string questionTopic
+            visible: activity.mode == "find_relative" ? true : false
+            width: background.width
+            anchors.horizontalCenter: background.horizontalCenter
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WordWrap
+            fontSize: smallSize
+            text: qsTr("Select one of the pairs denoting: %1").arg(questionTopic)
+
+            Rectangle {
+                width: parent.width
+                height: parent.height
+                anchors.horizontalCenter: parent.horizontalCenter
+
+                z: parent.z - 1
+                radius: 10
+                border.width: 1
+
+                color: "white"
+                opacity: 0.8
             }
         }
 
