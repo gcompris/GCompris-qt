@@ -101,6 +101,7 @@ function previousLevel() {
 }
 
 function restartLevel() {
+    items.trigTuxMove.stop();
     initLevel();
 }
 
@@ -237,3 +238,4 @@ function initiatePlayer2() {
     items.player1score.endTurn();
     items.player2score.beginTurn();
 }
+
