@@ -351,8 +351,6 @@ function reset() {
 function initiatePlayer1() {
     items.player2score.endTurn();
     items.player1score.beginTurn();
-    items.player1score.state = "first"
-    items.player2score.state = "second"
 
     items.firstInitial.anchors.right = undefined
     items.firstInitial.anchors.top = items.player1score.bottom
@@ -368,8 +366,6 @@ function initiatePlayer2() {
 
     items.player1score.endTurn();
     items.player2score.beginTurn();
-    items.player1score.state = "second"
-    items.player2score.state = "first"
 
     items.secondInitial.anchors.right = undefined
     items.secondInitial.anchors.top = items.player1score.bottom
@@ -1742,3 +1738,4 @@ function generateMove(board, state, index, firstPhase) {
     }
     return moves
 }
+
