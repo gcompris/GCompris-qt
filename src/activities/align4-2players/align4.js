@@ -99,6 +99,7 @@ function previousLevel() {
 }
 
 function reset() {
+    items.trigTuxMove.stop();
     items.drop.stop()    // stop animation
     items.pieces.clear() // Clear the board
     initLevel()
@@ -511,3 +512,4 @@ function continueGame() {
         items.bonus.bad("flower")
     }
 }
+
