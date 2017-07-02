@@ -339,7 +339,8 @@ function previousLevel() {
 }
 
 function reset() {
-    stopper = true
+    items.trigTuxMove.stop();
+    stopper = true;
     shouldComputerPlay();
     items.player2score.endTurn();
     items.player1score.beginTurn();
@@ -1738,4 +1739,5 @@ function generateMove(board, state, index, firstPhase) {
     }
     return moves
 }
+
 
