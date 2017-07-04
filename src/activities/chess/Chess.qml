@@ -188,16 +188,16 @@ ActivityBase {
                 }
             }
 
-            
+
             Rectangle {
                 id:boardBg
                 width: items.cellSize * 8.2
                 height: items.cellSize * 8.2
                 z: 09
                 color: "#3A1F0A"
-                
-            
-            
+
+
+
             // The chessboard
             GridView {
                 id: chessboard
@@ -235,7 +235,7 @@ ActivityBase {
                 }
             }
             }
-            
+
         }
 
         Repeater {
@@ -394,7 +394,10 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.initLevel()
+            onReloadClicked: {
+                trigComputerMove.stop()
+                Activity.initLevel()
+            }
         }
 
         Bonus {
