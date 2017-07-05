@@ -297,7 +297,7 @@ ActivityBase {
         ScoreItem {
             id: player2score
             player: 2
-            height: Math.min(background.height / 10, Math.min(background.width / 9, bar.height * 0.9))
+            height: Math.min(background.height / 7, Math.min(background.width / 7, bar.height * 1.5))
             width: height * 11 / 8
             anchors {
                 top: background.top
@@ -314,7 +314,7 @@ ActivityBase {
         ScoreItem {
             id: player1score
             player: 1
-            height: Math.min(background.height / 10, Math.min(background.width / 9, bar.height * 0.9))
+            height: Math.min(background.height / 7, Math.min(background.width / 7, bar.height * 1.5))
             width: height * 11 / 8
             anchors {
                 top: background.top
