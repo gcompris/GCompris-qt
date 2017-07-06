@@ -6,9 +6,9 @@
 
 Presentation
 ============
-`GCompris <http://gcompris.net>`_ is a high quality educational software suite
-comprising of numerous activities for children aged 2 to 10. Some of the
-activities are game orientated, but nonetheless still educational.
+`GCompris <http://gcompris.net>`_ is a high quality educational software suite, 
+including a large number of activities for children aged 2 to 10. 
+Some of the activities are game orientated, but nonetheless still educational.
 
 Currently GCompris offers in excess of 100 activities and more are being
 developed. GCompris is free software, that means that you can use it as you

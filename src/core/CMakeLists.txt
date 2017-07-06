@@ -255,7 +255,7 @@ if(WIN32)
 # Packaging
 # =========
 
-set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.")
 set(CPACK_PACKAGE_VERSION_MAJOR ${GCOMPRIS_MAJOR_VERSION})
 set(CPACK_PACKAGE_VERSION_MINOR ${GCOMPRIS_MINOR_VERSION})
 set(CPACK_PACKAGE_VERSION_PATCH ${GCOMPRIS_PATCH_VERSION})
