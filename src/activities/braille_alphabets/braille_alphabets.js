@@ -113,6 +113,7 @@ function initLevel() {
 
     items.playableChar.isLetter = currentDataSet[0].letter >= "A" && currentDataSet[0].letter <= "Z"
     // Trig the next question
+    items.questionItem.opacity = 0.1
     items.questionItem.opacity = 0
 }
 
@@ -138,6 +139,7 @@ function nextQuestion() {
         // children see his answer.
         // We just set the opacity to 0, the questionItem will then grab
         // the new question by itself
+        items.questionItem.opacity = 0.1
         items.questionItem.opacity = 0
         items.score.currentSubLevel ++
     }
