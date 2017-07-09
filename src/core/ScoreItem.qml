@@ -122,7 +122,7 @@ Item {
                 anchors.verticalCenter: parent.verticalCenter
                 color: "#2a2a2a"
                 x: parent.width*0.65
-                fontSize: largeSize
+                fontSizeMode: Text.Fit
                 text: playerScore
             }
         }
