@@ -54,7 +54,7 @@ QtObject {
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/",
                     "good": [ "categorization/resource/images/alphabets/upperF.svg","categorization/resource/images/alphabets/lowerK.svg","categorization/resource/images/alphabets/lowerR.svg","categorization/resource/images/alphabets/upperQ.svg","categorization/resource/images/alphabets/lowerB.svg"],
-                    bad: ["categorization/resource/images/numbers/07.svg","categorization/resource/images/numbers/0.svg","lang/resource/words_sample/turtle.png","lang/resource/words_sample/melon.png"]
+                    bad: ["categorization/resource/images/numbers/07.svg","categorization/resource/images/numbers/00.svg","lang/resource/words_sample/turtle.png","lang/resource/words_sample/melon.png"]
                 },
                 {
                     "instructions": qsTr("Place the ALPHABETS to the right and other objects to the left"),
