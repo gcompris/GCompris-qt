@@ -36,6 +36,7 @@ ActivityBase {
 
     property string boardsUrl: ":/gcompris/src/activities/categorization/resource/board/"
     property bool vert: background.width < background.height
+    property variant barAtStart
 
     pageComponent: Image {
         id: background
@@ -74,9 +75,10 @@ ActivityBase {
         }
 
         function hideBar() {
-            if(background.width > background.height)
+            barAtStart = ApplicationSettings.isBarHidden;
+            if(categoryReview.width > categoryReview.height)
                 ApplicationSettings.isBarHidden = false;
-            else
+            else 
                 ApplicationSettings.isBarHidden = true;
         }
         
@@ -89,14 +91,7 @@ ActivityBase {
 
         onStop: {
             dialogActivityConfig.saveDatainConfiguration()
-        }
-        
-        onWidthChanged: {
-            hideBar()
-        }
-
-        onHeightChanged: {
-            hideBar()
+            ApplicationSettings.isBarHidden = barAtStart;
         }
         
         MenuScreen {
