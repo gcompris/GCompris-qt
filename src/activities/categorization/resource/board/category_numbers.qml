@@ -23,38 +23,38 @@ import QtQuick 2.6
 QtObject {
     property bool isEmbedded: true
     property bool allowExpertMode: true
-    property string imagesPrefix: "qrc:/gcompris/src/activities/lang/resource/words_sample/"
+    property string imagesPrefix: "qrc:/gcompris/src/activities/categorization/resource/images/numbers/"
     property variant levels: [
         {
             "type": "lesson",
             "name": qsTr("Numbers"),
-            "image": "qrc:/gcompris/src/activities/categorization/resource/images/alphabets/numbers.jpg",
+            "image": "qrc:/gcompris/src/activities/categorization/resource/images/numbers/numbers.jpg",
             "content": [
                 {
                     "instructions": qsTr("Place the NUMBERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "zero.png",
+                    "image": imagesPrefix + "00.svg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["lang/resource/words_sample/twelve.png","lang/resource/words_sample/two.png","lang/resource/words_sample/zero.png","lang/resource/words_sample/eight.png","lang/resource/words_sample/ten.png","lang/resource/words_sample/four.png"],
+                    "good": ["categorization/resource/images/numbers/12.svg","categorization/resource/images/numbers/02.svg","categorization/resource/images/numbers/00.svg","categorization/resource/images/numbers/08.svg","categorization/resource/images/numbers/10.svg","categorization/resource/images/numbers/04.svg"],
                     "bad": ["categorization/resource/images/alphabets/upperA.svg","categorization/resource/images/alphabets/upperM.svg","categorization/resource/images/alphabets/lowerB.svg","categorization/resource/images/alphabets/upperS.svg","lang/resource/words_sample/fish.png","lang/resource/words_sample/color.png"]
                 },
                 {
                     "instructions": qsTr("Place the NUMBERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "zero.png",
+                    "image": imagesPrefix + "00.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["lang/resource/words_sample/five.png","lang/resource/words_sample/eleven.png","lang/resource/words_sample/nine.png","lang/resource/words_sample/three.png","lang/resource/words_sample/seven.png"],
+                    "good": ["categorization/resource/images/numbers/05.svg","categorization/resource/images/numbers/11.svg","categorization/resource/images/numbers/09.svg","categorization/resource/images/numbers/03.svg","categorization/resource/images/numbers/07.svg"],
                     "bad": ["categorization/resource/images/alphabets/upperZ.svg","categorization/resource/images/alphabets/lowerH.svg","lang/resource/words_sample/mosquito.png","lang/resource/words_sample/fruit.png"]
                 },
                 {
                     "instructions": qsTr("Place the NUMBERS to the right and other objects to the left"),
-                    "image": imagesPrefix + "zero.png",
+                    "image": imagesPrefix + "00.svg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["lang/resource/words_sample/one.png","lang/resource/words_sample/six.png","lang/resource/words_sample/sixteen.png"],
+                    "good": ["categorization/resource/images/numbers/01.svg","categorization/resource/images/numbers/06.svg","categorization/resource/images/numbers/16.svg"],
                     "bad": ["categorization/resource/images/alphabets/upperR.svg","categorization/resource/images/alphabets/lowerQ.svg", "lang/resource/words_sample/strawberry.png"]
                 }
             ]
