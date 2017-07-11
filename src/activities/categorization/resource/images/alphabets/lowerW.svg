@@ -15,7 +15,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="upperB.svg">
+   sodipodi:docname="lowerW.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,7 +25,7 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.25"
+     inkscape:zoom="0.35355339"
      inkscape:cx="7.8837292"
      inkscape:cy="62.039054"
      inkscape:document-units="mm"
@@ -67,9 +67,9 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ"
          id="text1005">
         <path
            inkscape:connector-curvature="0"
-           d="m 15.044043,294.94714 -8.3281711,-0.0496 v -20.39565 h 6.0957501 q 3.75791,0 5.86631,0.96118 2.08359,0.96738 2.31304,4.01836 0.0248,0.22323 0.0248,0.42788 0,1.22163 -0.5085,2.1084 -0.607709,1.0666 -1.22163,1.55028 -0.63252,0.5085 -0.96118,0.65734 0.0744,0.0558 0.91157,0.5395 0.81235,0.50229 1.55029,1.44486 0.71314,0.9674 0.81236,2.38746 0.0248,0.30385 0.0248,0.60772 0,1.62471 -0.68213,2.82153 -0.84336,1.42006 -2.38745,2.15801 -1.5751,0.76274 -3.50986,0.76274 z m -1.928561,-8.43359 h -1.296049 v 4.26641 h 1.50069 q 1.5751,0 2.28203,-0.55812 0.63872,-0.5085 0.63872,-1.46967 0,-0.0806 0,-0.15503 -0.0248,-1.14101 -0.78755,-1.6247 -0.78755,-0.45889 -2.337841,-0.45889 z m -0.0496,-8.07393 h -1.246441 v 4.11138 h 1.296051 q 1.0666,0 1.85415,-0.60771 0.66352,-0.5333 0.66352,-1.42627 0,-0.12403 0,-0.24805 -0.105419,-1.12241 -0.762739,-1.47588 -0.68833,-0.35347 -1.804541,-0.35347 z"
+           d="m 14.103239,286.12994 -4.06175,8.53281 -6.8833203,-15.87501 4.7997001,-0.5333 2.4370802,7.23678 3.80751,-7.94991 3.733121,7.69566 2.46806,-6.98253 4.7749,0.37827 -6.90811,16.17887 z"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.39999962px;line-height:1.25;font-family:Kabel;-inkscape-font-specification:Kabel;letter-spacing:0px;word-spacing:0px;fill:#e7bb36;fill-opacity:1;stroke:#b9931f;stroke-width:0.52916682;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="path1063" />
+           id="path1053" />
       </g>
     </g>
   </g>
