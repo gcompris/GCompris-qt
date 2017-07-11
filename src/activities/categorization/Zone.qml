@@ -40,13 +40,15 @@ Flow {
         model: zoneModel
         Item {
             id: item
-            width: middleScreen.width*0.32
-            height: categoryBackground.height * 0.2
+            width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.49
+            height: horizontalLayout ? categoryBackground.height * 0.2 : categoryBackground.height * 0.15
             opacity: 1
             Image {
                 id: image
-                width: middleScreen.width*0.28
-                height: categoryBackground.height * 0.15
+                fillMode: Image.PreserveAspectFit
+                sourceSize.width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.49
+                width: sourceSize.width
+                height: sourceSize.width
                 source: name
                 MultiPointTouchArea {
                     id: dragArea

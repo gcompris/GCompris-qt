@@ -145,9 +145,11 @@ Item {
 
         Image {
             id: categoryImage
+            fillMode: Image.PreserveAspectFit
             source: items.details && items.details[bar.level-1] && items.details[bar.level-1].image ? items.details[bar.level-1].image : ""
-            width: horizontalLayout ? rightZone.width * 0.35 : rightZone.width * 0.35
-            height: horizontalLayout ? rightZone.height * 0.18 : rightZone.height * 0.15
+            sourceSize.width: horizontalLayout ? rightZone.width * 0.35 : rightZone.width * 0.35
+            width: sourceSize.width
+            height: sourceSize.width
             y: 0.015*parent.height
             visible: items.categoryImageChecked
             anchors {
