@@ -73,16 +73,32 @@ ActivityBase {
             property var categories: directory.getFiles(boardsUrl)
         }
 
+        function hideBar() {
+            if(background.width > background.height)
+                ApplicationSettings.isBarHidden = false;
+            else
+                ApplicationSettings.isBarHidden = true;
+        }
+        
         onStart: {
             Activity.init(items, boardsUrl)
             dialogActivityConfig.getInitialConfiguration()
             Activity.start()
+            hideBar()
         }
 
         onStop: {
             dialogActivityConfig.saveDatainConfiguration()
         }
+        
+        onWidthChanged: {
+            hideBar()
+        }
 
+        onHeightChanged: {
+            hideBar()
+        }
+        
         MenuScreen {
             id: menuScreen
 
@@ -178,7 +194,7 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-
+        
         Bar {
             id: bar
             content: menuScreen.started ? withConfig : withoutConfig
