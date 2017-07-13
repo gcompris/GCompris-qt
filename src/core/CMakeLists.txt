@@ -107,7 +107,7 @@ if(BUILD_STANDALONE)
   elseif(WIN32)
     list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
   elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
-    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
+    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin)
   endif()
 
   list(APPEND _qt_plugins Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin)
@@ -142,14 +142,6 @@ if(BUILD_STANDALONE)
     list(APPEND _qml_plugins
       QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
-  endif()
-
-  if(NOT WIN32 AND NOT SAILFISHOS)
-    list(APPEND _qml_plugins
-      QtAudioEngine/${_lib_prefix}declarative_audioengine)
-    if (NOT "${QML_BOX2D_MODULE}" STREQUAL "submodule")
-      list(APPEND _qml_plugins Box2D.2.0/${_lib_prefix}Box2D)
-    endif()
   endif()
 
   set(GCOMPRIS_OTHER_LIBS)
