@@ -132,6 +132,11 @@
   <summary xml:lang="zh-TW">為 2-10 歲孩子設計的教育遊戲</summary>
   <description>
     <p>GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.</p>
+    <p xml:lang="ca">El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
+    <p xml:lang="nl">GCompris is een educatieve software suite van hoge kwaliteit die bestaat uit vele activiteiten voor kinderen vanaf twee tot tien jaar.</p>
+    <p xml:lang="sv">GCompris är en högkvalitativ pedagogisk programvarusvit som innehåller ett stort antal aktiviteter för barn mellan 2 och 10 år.</p>
+    <p xml:lang="uk">GCompris — високоякісний комплекс навчального програмного забезпечення, що складається з багатьох вправ для дітей від 2 до 10 років.</p>
+    <p xml:lang="x-test">xxGCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.xx</p>
     <p>Some of the activities are game orientated, but nonetheless
     still educational.</p>
     <p xml:lang="ca">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
