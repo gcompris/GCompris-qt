@@ -61,7 +61,7 @@ Rectangle {
         }
 
         GCText {
-            text: "YES"
+            text: qsTr("Yes")
             anchors.centerIn: parent
         }
 
@@ -100,7 +100,7 @@ Rectangle {
         }
 
         GCText {
-            text: "NO"
+            text: qsTr("No")
             anchors.centerIn: parent
         }
 
@@ -140,7 +140,7 @@ Rectangle {
         }
 
         GCText {
-            text: "Cancel"
+            text: qsTr("Cancel")
             anchors.centerIn: parent
         }
 

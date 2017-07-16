@@ -47,14 +47,14 @@ ActivityBase {
 
         property bool started: false
 
-        // When the width / height is changed, paint the last image on the canvas
+        // When the width/height is changed, paint the last image on the canvas
         onWidthChanged: {
             if (items.background.started) {
                 items.widthHeightChanged = true
                 Activity.initLevel()
             }
         }
-        onHeightChanged:  {
+        onHeightChanged: {
             if (items.background.started) {
                 items.widthHeightChanged = true
                 Activity.initLevel()
@@ -99,7 +99,7 @@ ActivityBase {
                     load.opacity = 0
                 activity.home()
             }
-            onNo:  {
+            onNo: {
                 if (main.x == 0)
                     load.opacity = 0
                 activity.home()
@@ -120,7 +120,7 @@ ActivityBase {
                 Activity.saveToFile(true)
                 Activity.initLevel()
             }
-            onNo:  {
+            onNo: {
                 cancel()
                 Activity.initLevel()
             }
@@ -140,7 +140,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias canvas: canvas
             property alias colorTools: colorTools
-            property alias rightPannel: rightPannel
+            property alias rightPanel: rightPanel
             property alias parser: parser
             property alias gridView2: gridView2
             property alias file: file
@@ -185,7 +185,7 @@ ActivityBase {
             }
             onHomeClicked: {
                 if (!items.nothingChanged) {
-                    saveToFilePrompt.text = "Do you want to save your painting?"
+                    saveToFilePrompt.text = qsTr("Do you want to save your painting?")
                     main.opacity = 0.5
                     saveToFilePrompt.opacity = 1
                     saveToFilePrompt.z = 200
@@ -197,7 +197,7 @@ ActivityBase {
             }
             onReloadClicked: {
                 if (!items.nothingChanged) {
-                    saveToFilePrompt2.text = "Do you want to save your painting before reseting the board?"
+                    saveToFilePrompt2.text = qsTr("Do you want to save your painting before reseting the board?")
                     main.opacity = 0.5
                     saveToFilePrompt2.opacity = 1
                     saveToFilePrompt2.z = 200
@@ -237,7 +237,6 @@ ActivityBase {
             height: parent.height
 
             color: background.color
-
 
             Behavior on x {
                 enabled: items.mainAnimationOnX
@@ -329,7 +328,6 @@ ActivityBase {
                     property real lastX
                     property real lastY
 
-
                     // for brush
                     property var lastPoint
                     property var currentPoint
@@ -337,11 +335,10 @@ ActivityBase {
                     property var ctx
                     property string url: ""
 
-                    Text {
+                    GCText {
                         id: onBoardText
                         text: ""
                         color: items.paintColor
-                        font.family: "sans-serif"
                         // font.pointSize: (ApplicationSettings.baseFontSize + 32) * ApplicationInfo.fontRatio
                         font.pointSize: items.sizeS * 10
                         z: -1
@@ -448,7 +445,7 @@ ActivityBase {
                         anchors.fill: parent
 
                         hoverEnabled: false
-                        property var mappedMouse: mapToItem(parent,mouseX,mouseY)
+                        property var mappedMouse: mapToItem(parent, mouseX, mouseY)
                         property var currentShape: items.toolSelected == "circle" ? circle : rectangle
                         property var originalX
                         property var originalY
@@ -475,14 +472,14 @@ ActivityBase {
                                 items.nothingChanged = false
 
                             background.hideExpandedTools()
-                            mappedMouse = mapToItem(parent,mouseX,mouseY)
+                            mappedMouse = mapToItem(parent, mouseX, mouseY)
 
                             print("tools: ",items.toolSelected)
 
                             if (items.toolSelected == "rectangle" || items.toolSelected == "circle" || items.toolSelected == "lineShift") {
                                 // set the origin coordinates for current shape
-                                currentShape.x = mapToItem(parent,mouseX,mouseY).x
-                                currentShape.y = mapToItem(parent,mouseX,mouseY).y
+                                currentShape.x = mapToItem(parent, mouseX, mouseY).x
+                                currentShape.y = mapToItem(parent, mouseX, mouseY).y
 
                                 originalX = currentShape.x
                                 originalY = currentShape.y
@@ -491,8 +488,8 @@ ActivityBase {
                                 currentShape.color = items.paintColor
                             } else if (items.toolSelected == "line") {
                                 // set the origin coordinates for current shape
-                                currentShape.x = mapToItem(parent,mouseX,mouseY).x
-                                currentShape.y = mapToItem(parent,mouseX,mouseY).y
+                                currentShape.x = mapToItem(parent, mouseX, mouseY).x
+                                currentShape.y = mapToItem(parent, mouseX, mouseY).y
 
                                 originalX = currentShape.x
                                 originalY = currentShape.y
@@ -509,26 +506,26 @@ ActivityBase {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
                                 Activity.points.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "spray" ) {
+                            } else if (items.toolSelected == "spray") {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
                             } else if (items.toolSelected == "eraser") {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
                                 canvas.ctx.strokeStyle = "#ffefff"
-                            } else if (items.toolSelected == "pencil"){
+                            } else if (items.toolSelected == "pencil") {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
-                            } else if (items.toolSelected == "brush3"){
+                            } else if (items.toolSelected == "brush3") {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
                                 canvas.lastPoint = { x: mouseX, y: mouseY }
-                            } else if (items.toolSelected == "brush4"){
+                            } else if (items.toolSelected == "brush4") {
                                 canvas.ctx.strokeStyle = "#ffefff"
                                 Activity.points.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "brush5"){
+                            } else if (items.toolSelected == "brush5") {
                                 Activity.connectedPoints.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "blur"){
+                            } else if (items.toolSelected == "blur") {
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
                             } else {
@@ -539,9 +536,8 @@ ActivityBase {
                         }
 
                         onReleased: {
-
                             // for line tool
-                            mappedMouse = mapToItem(parent,mouseX,mouseY)
+                            mappedMouse = mapToItem(parent, mouseX, mouseY)
                             area.endX = mappedMouse.x
                             area.endY = mappedMouse.y
 
@@ -557,7 +553,7 @@ ActivityBase {
                             // disable hover
                             area.hoverEnabled = false
 
-                            if (items.toolSelected == "line" ) {
+                            if (items.toolSelected == "line") {
                                 canvas.removeShadow()
                                 canvas.ctx.fillStyle = items.paintColor
                                 canvas.ctx.beginPath()
@@ -669,7 +665,7 @@ ActivityBase {
 
                                 canvas.requestPaint()
                             } else if (items.toolSelected == "rectangle") {
-                                mappedMouse = mapToItem(parent,mouseX,mouseY)
+                                mappedMouse = mapToItem(parent, mouseX, mouseY)
                                 var width = mappedMouse.x - area.originalX
                                 var height = mappedMouse.y - area.originalY
 
@@ -695,7 +691,7 @@ ActivityBase {
                                     currentShape.width = Math.abs(width)
                                 }
                             } else if (items.toolSelected == "circle") {
-                                mappedMouse = mapToItem(parent,mouseX,mouseY)
+                                mappedMouse = mapToItem(parent, mouseX, mouseY)
                                 var width = mappedMouse.x - area.originalX
                                 var height = mappedMouse.y - area.originalY
 
@@ -715,7 +711,7 @@ ActivityBase {
 
                                 currentShape.height = currentShape.width = Math.max(Math.abs(width), Math.abs(height))
                             } else if (items.toolSelected == "line") {
-                                mappedMouse = mapToItem(parent,mouseX,mouseY)
+                                mappedMouse = mapToItem(parent, mouseX, mouseY)
                                 var width = mappedMouse.x - area.originalX
                                 var height = mappedMouse.y - area.originalY
 
@@ -744,7 +740,7 @@ ActivityBase {
                                 currentShape.rotationn = 360 - angleDegrees
                                 currentShape.width = distance
                             } else if (items.toolSelected == "lineShift") {
-                                mappedMouse = mapToItem(parent,mouseX,mouseY)
+                                mappedMouse = mapToItem(parent, mouseX, mouseY)
                                 var width = mappedMouse.x - area.originalX
                                 var height = mappedMouse.y - area.originalY
 
@@ -792,7 +788,7 @@ ActivityBase {
                                 canvas.ctx.lineTo(p1.x, p1.y);
                                 canvas.ctx.stroke();
                                 canvas.requestPaint()
-                            } else if (items.toolSelected == "spray" ) {
+                            } else if (items.toolSelected == "spray") {
                                 canvas.removeShadow()
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
@@ -810,7 +806,7 @@ ActivityBase {
                                 }
 
                                 canvas.requestPaint()
-                            } else if (items.toolSelected == "brush3" ) {
+                            } else if (items.toolSelected == "brush3") {
                                 canvas.removeShadow()
                                 canvas.lastX = mouseX
                                 canvas.lastY = mouseY
@@ -843,7 +839,7 @@ ActivityBase {
                                 canvas.lastPoint = { x: canvas.lastX, y: canvas.lastY };
 
                                 canvas.requestPaint()
-                            } else if(items.toolSelected == "brush4" ) {
+                            } else if(items.toolSelected == "brush4") {
                                 canvas.removeShadow()
                                 Activity.points.push({x: mouseX, y: mouseY})
                                 canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
@@ -856,7 +852,7 @@ ActivityBase {
                                   canvas.ctx.stroke();
                                 }
                                 canvas.requestPaint()
-                            } else if(items.toolSelected == "brush5" ) {
+                            } else if(items.toolSelected == "brush5") {
                                 canvas.removeShadow()
                                 Activity.connectedPoints.push({x: mouseX, y: mouseY})
                                 canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
@@ -999,7 +995,7 @@ ActivityBase {
                             border.width: 3
 
                             MouseArea {
-                                anchors.fill :parent
+                                anchors.fill: parent
 
                                 // choose other color:
                                 onDoubleClicked: {
@@ -1039,9 +1035,9 @@ ActivityBase {
                 height: row.height * 1.1
                 width: row.width * 1.2
 
-                x: rightPannelFrame.x + rightPannelFrame.width
-                y: rightPannelFrame.y - height / 2 + sizeTool.height * 1.5 +
-                   rightPannel.spacing * 2 + rightPannel.anchors.topMargin
+                x: rightPanelFrame.x + rightPanelFrame.width
+                y: rightPanelFrame.y - height / 2 + sizeTool.height * 1.5 +
+                   rightPanel.spacing * 2 + rightPanel.anchors.topMargin
                 z: -10
 
                 radius: width * 0.05
@@ -1056,8 +1052,8 @@ ActivityBase {
                         property: "x"
                         duration: 500
                         easing.type: Easing.InOutQuad
-                        from: rightPannelFrame.x - selectSize.width
-                        to: rightPannelFrame.x + rightPannelFrame.width
+                        from: rightPanelFrame.x - selectSize.width
+                        to: rightPanelFrame.x + rightPanelFrame.width
                     }
                     PropertyAction { target: selectSize; property: "opacity"; value: 0 }
                     PropertyAction { target: selectSize; property: "z"; value: -10 }
@@ -1072,8 +1068,8 @@ ActivityBase {
                         property: "x"
                         duration: 500
                         easing.type: Easing.InOutQuad
-                        from: rightPannelFrame.x + rightPannelFrame.width
-                        to: rightPannelFrame.x - selectSize.width
+                        from: rightPanelFrame.x + rightPanelFrame.width
+                        to: rightPanelFrame.x - selectSize.width
                     }
                 }
 
@@ -1099,9 +1095,9 @@ ActivityBase {
                 height: row2.height * 1.15
                 width: row2.width * 1.05
 
-                x: rightPannelFrame.x + rightPannelFrame.width
-                y: rightPannelFrame.y - height / 2 + eraser.height * 3.5 +
-                   rightPannel.spacing * 3 + rightPannel.anchors.topMargin
+                x: rightPanelFrame.x + rightPanelFrame.width
+                y: rightPanelFrame.y - height / 2 + eraser.height * 3.5 +
+                   rightPanel.spacing * 3 + rightPanel.anchors.topMargin
 
                 radius: width * 0.02
                 opacity: 0
@@ -1117,8 +1113,8 @@ ActivityBase {
                         property: "x"
                         duration: 500
                         easing.type: Easing.InOutQuad
-                        from: rightPannelFrame.x - selectBrush.width
-                        to: rightPannelFrame.x + rightPannelFrame.width
+                        from: rightPanelFrame.x - selectBrush.width
+                        to: rightPanelFrame.x + rightPanelFrame.width
                     }
                     PropertyAction { target: selectBrush; property: "opacity"; value: 0 }
                     PropertyAction { target: selectBrush; property: "z"; value: -10 }
@@ -1133,8 +1129,8 @@ ActivityBase {
                         property: "x"
                         duration: 500
                         easing.type: Easing.InOutQuad
-                        from: rightPannelFrame.x + rightPannelFrame.width
-                        to: rightPannelFrame.x - selectBrush.width
+                        from: rightPanelFrame.x + rightPanelFrame.width
+                        to: rightPanelFrame.x - selectBrush.width
                     }
                 }
 
@@ -1210,8 +1206,8 @@ ActivityBase {
 
             // tools from the right panel
             Rectangle {
-                id: rightPannelFrame
-                width: rightPannel.width + rightPannel.anchors.margins * 2
+                id: rightPanelFrame
+                width: rightPanel.width + rightPanel.anchors.margins * 2
                 anchors {
                     right: parent.right
                     top: colorTools.bottom
@@ -1222,7 +1218,7 @@ ActivityBase {
                 color: background.color
 
                 Column {
-                    id: rightPannel
+                    id: rightPanel
                     anchors {
                         right: parent.right
                         top: parent.top
@@ -1237,7 +1233,7 @@ ActivityBase {
                     // eraser tool
                     Image {
                         id: eraser
-                        width: rightPannel.dime; height: rightPannel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         source: Activity.url + "eraser.svg"
                         opacity: items.toolSelected == "eraser" ? 1 : 0.6
 
@@ -1256,7 +1252,7 @@ ActivityBase {
                     // select size
                     Image {
                         id: sizeTool
-                        width: rightPannel.dime; height: rightPannel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         source: Activity.url + "size.PNG"
                         opacity: 0.6
 
@@ -1275,8 +1271,8 @@ ActivityBase {
 
                     Image {
                         id: button
-                        sourceSize.width: rightPannel.dime; sourceSize.height: rightPannel.dime
-                        width: rightPannel.dime; height: rightPannel.dime
+                        sourceSize.width: rightPanel.dime; sourceSize.height: rightPanel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         source: Activity.url + "fill.svg"
                         opacity: items.toolSelected == "fill" ? 1 : 0.6
 
@@ -1300,7 +1296,7 @@ ActivityBase {
 
                     Canvas {
                         id: brushSelectCanvas
-                        width: rightPannel.dime; height: rightPannel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         function c(x) {
                             return width * x / 510
                         }
@@ -1392,7 +1388,7 @@ ActivityBase {
                             }
 
                             brushContext.restore()
-                            brushContext.drawImage(Activity.url + "pen.svg", 0, 0,rightPannel.dime,rightPannel.dime)
+                            brushContext.drawImage(Activity.url + "pen.svg", 0, 0,rightPanel.dime,rightPanel.dime)
                            }
 
                         MouseArea {
@@ -1415,14 +1411,14 @@ ActivityBase {
                         Image {
                             x: 0; y: 0
                             source: Activity.url + "pen.svg"
-                            sourceSize.width: rightPannel.dime; sourceSize.height: rightPannel.dime
-                            width: rightPannel.dime; height: rightPannel.dime
+                            sourceSize.width: rightPanel.dime; sourceSize.height: rightPanel.dime
+                            width: rightPanel.dime; height: rightPanel.dime
                         }
                     }
 
                     // draw a circle
                     Rectangle { // border of the circle
-                        width: rightPannel.dime; height: rightPannel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         color: "transparent"
                         opacity: items.toolSelected == "circle" ? 1 : 0.6
 
@@ -1447,7 +1443,7 @@ ActivityBase {
 
                     // draw a rectangle
                     Rectangle { // border of the rectangle
-                        width: rightPannel.dime; height: rightPannel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         color: "transparent"
                         opacity: items.toolSelected == "rectangle" ? 1 : 0.6
 
@@ -1471,7 +1467,7 @@ ActivityBase {
 
                     // draw a line
                     Rectangle { // border of the line
-                        width: rightPannel.dime; height: rightPannel.dime * 0.7
+                        width: rightPanel.dime; height: rightPanel.dime * 0.7
                         color: "transparent"
                         opacity: items.toolSelected == "line" ? 1 : 0.6
 
@@ -1496,7 +1492,7 @@ ActivityBase {
 
                     // draw a line
                     Rectangle { // border of the line
-                        width: rightPannel.dime; height: rightPannel.dime * 0.7
+                        width: rightPanel.dime; height: rightPanel.dime * 0.7
                         color: "transparent"
                         opacity: items.toolSelected == "lineShift" ? 1 : 0.6
 
@@ -1520,7 +1516,7 @@ ActivityBase {
 
                     // write text
                     Rectangle { // background of text
-                        width: rightPannel.dime; height: rightPannel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         color: "transparent"
                         opacity: items.toolSelected == "text" ? 1 : 0.6
 
@@ -1554,9 +1550,9 @@ ActivityBase {
                     // undo button
                     Image {
                         id: undoButton
-                        sourceSize.width: rightPannel.dime
-                        sourceSize.height: rightPannel.dime
-                        width: rightPannel.dime; height: rightPannel.dime
+                        sourceSize.width: rightPanel.dime
+                        sourceSize.height: rightPanel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         source: Activity.url + "back.svg"
                         opacity: 0.6
 
@@ -1596,9 +1592,9 @@ ActivityBase {
                     // redo button
                     Image {
                         id: redoButton
-                        sourceSize.width: rightPannel.dime
-                        sourceSize.height: rightPannel.dime
-                        width: rightPannel.dime; height: rightPannel.dime
+                        sourceSize.width: rightPanel.dime
+                        sourceSize.height: rightPanel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         source: Activity.url + "forward.svg"
                         opacity: 0.6
 
@@ -1634,9 +1630,9 @@ ActivityBase {
                     // load button
                     Image {
                         id: loadButton
-                        sourceSize.width: rightPannel.dime
-                        sourceSize.height: rightPannel.dime
-                        width: rightPannel.dime; height: rightPannel.dime
+                        sourceSize.width: rightPanel.dime
+                        sourceSize.height: rightPanel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         source: Activity.url + "load.svg"
                         opacity: 0.6
 
@@ -1662,9 +1658,9 @@ ActivityBase {
                     // save button
                     Image {
                         id: saveButton
-                        sourceSize.width: rightPannel.dime
-                        sourceSize.height: rightPannel.dime
-                        width: rightPannel.dime; height: rightPannel.dime
+                        sourceSize.width: rightPanel.dime
+                        sourceSize.height: rightPanel.dime
+                        width: rightPanel.dime; height: rightPanel.dime
                         source: Activity.url + "save.svg"
                         opacity: 0.6
 
@@ -1733,7 +1729,6 @@ ActivityBase {
                     easing.type: Easing.InOutQuad
                 }
             }
-
 
             Behavior on y {
                 NumberAnimation {
@@ -1844,14 +1839,15 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.horizontalCenterOffset: - rightFrame.width / 2
                 fontSize: largeSize
-                text: "No paintings saved"
+                text: qsTr("No paintings saved")
                 opacity: gridView2.count == 0
             }
 
             GridView {
                 id: gridView2
                 anchors.fill: parent
-                cellWidth: (main.width - sizeOfImages.width) * slider.value; cellHeight: main.height * slider.value
+                cellWidth: (main.width - sizeOfImages.width) * slider.value
+                cellHeight: main.height * slider.value
                 flow: GridView.FlowTopToBottom
                 z: 1
 
@@ -1872,7 +1868,7 @@ ActivityBase {
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
-                                loadSavedPainting.anchors.left =  main.left
+                                loadSavedPainting.anchors.left = main.left
 
                                 canvas.url = loadImage2.source
                                 canvas.loadImage(loadImage2.source)
@@ -1888,7 +1884,7 @@ ActivityBase {
                             sourceSize.width: 40 * ApplicationInfo.ratio
 
                             onClose: {
-                                Activity.dataset.splice(index,1)
+                                Activity.dataset.splice(index, 1)
                                 gridView2.model = Activity.dataset
                                 Activity.saveToFile(false)
                             }
@@ -1983,7 +1979,7 @@ ActivityBase {
 
         ColorDialog {
             id: colorDialog
-            title: "Please choose a color"
+            title: qsTr("Please choose a color")
             visible: false
 
             onAccepted: {
