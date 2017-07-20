@@ -63,25 +63,26 @@ ActivityBase {
             property alias menuModel: menuScreen.menuModel
             property alias dialogActivityConfig: dialogActivityConfig
             property string mode: "easy"
-            property bool instructionsVisible: true
             property bool categoryImageChecked: (mode === "easy" || mode === "medium")
-            property bool scoreChecked: (mode === "easy")
-            property bool iAmReadyChecked: (mode === "expert")
+            property bool iAmReadyChecked: (mode === "expert" || mode === "noInstructionsScoreVisible")
             property bool displayUpdateDialogAtStart: true
             property var details
             property bool categoriesFallback
+            property bool scoreVisible: (mode === "easy" || mode === "noInstructionsScoreVisible")
+            property bool instructionsVisible: (mode === "easy" || mode === "medium")
             property alias file: file
             property var categories: directory.getFiles(boardsUrl)
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         function hideBar() {
             barAtStart = ApplicationSettings.isBarHidden;
             if(categoryReview.width > categoryReview.height)
                 ApplicationSettings.isBarHidden = false;
-            else 
+            else
                 ApplicationSettings.isBarHidden = true;
         }
-        
+
         onStart: {
             Activity.init(items, boardsUrl)
             dialogActivityConfig.getInitialConfiguration()
@@ -93,7 +94,7 @@ ActivityBase {
             dialogActivityConfig.saveDatainConfiguration()
             ApplicationSettings.isBarHidden = barAtStart;
         }
-        
+
         MenuScreen {
             id: menuScreen
 
@@ -111,10 +112,6 @@ ActivityBase {
             id: categoryReview
         }
 
-        ExclusiveGroup {
-            id: configOptions
-        }
-
         DialogActivityConfig {
             id: dialogActivityConfig
             content: Component {
@@ -123,51 +120,46 @@ ActivityBase {
                     spacing: 5
                     width: dialogActivityConfig.width
                     height: dialogActivityConfig.height
-                    property alias easyModeBox: easyModeBox
-                    property alias mediumModeBox: mediumModeBox
-                    property alias expertModeBox: expertModeBox
+                    property alias instructionsBox: instructionsBox
+                    property alias scoreBox: scoreBox
 
                     GCDialogCheckBox {
-                        id: easyModeBox
+                        id: instructionsBox
                         width: column.width - 50
-                        text: qsTr("Instructions and score visible")
-                        checked: (items.mode == "easy") ? true : false
-                        exclusiveGroup: configOptions
+                        text: qsTr("Instructions visible")
+                        checked: items.instructionsVisible
                         onCheckedChanged: {
-                            if(easyModeBox.checked) {
-                                items.mode = "easy"
-                                menuScreen.iAmReady.visible = false
+                            if(instructionsBox.checked) {
+                                items.instructionsVisible = true
+                                Activity.selectmode()
+                            }
+                            else if(!instructionsBox.checked) {
+                                items.instructionsVisible = false
+                                Activity.selectmode()
                             }
                         }
+
                     }
 
                     GCDialogCheckBox {
-                        id: mediumModeBox
-                        width: easyModeBox.width
-                        text: qsTr("Instructions visible and score invisible")
-                        checked: (items.mode == "medium") ? true : false
-                        exclusiveGroup: configOptions
+                        id: scoreBox
+                        width: instructionsBox.width
+                        text: qsTr("Score visible")
+                        checked: items.scoreVisible
                         onCheckedChanged: {
-                            if(mediumModeBox.checked) {
-                                items.mode = "medium"
-                                menuScreen.iAmReady.visible = false
+                            if(scoreBox.checked) {
+                                items.scoreVisible = true
+                                Activity.selectmode()
                             }
+                            else if(!scoreBox.checked) {
+                                items.scoreVisible = false
+                                Activity.selectmode()
+                            }
+
                         }
+
                     }
 
-                    GCDialogCheckBox {
-                        id: expertModeBox
-                        width: easyModeBox.width
-                        text: qsTr("Instructions and score invisible")
-                        checked: (items.mode == "expert") ? true : false
-                        exclusiveGroup: configOptions
-                        onCheckedChanged: {
-                            if(expertModeBox.checked) {
-                                items.mode = "expert"
-                                menuScreen.iAmReady.visible = true
-                            }
-                        }
-                    }
                 }
             }
             onLoadData: {
@@ -189,7 +181,7 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-        
+
         Bar {
             id: bar
             content: menuScreen.started ? withConfig : withoutConfig

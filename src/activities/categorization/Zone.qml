@@ -40,15 +40,13 @@ Flow {
         model: zoneModel
         Item {
             id: item
-            width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.49
-            height: horizontalLayout ? categoryBackground.height * 0.2 : categoryBackground.height * 0.15
+            width: middleScreen.width*0.32
+            height: categoryBackground.height * 0.2
             opacity: 1
             Image {
                 id: image
-                fillMode: Image.PreserveAspectFit
-                sourceSize.width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.49
-                width: sourceSize.width
-                height: sourceSize.width
+                width: middleScreen.width*0.28
+                height: categoryBackground.height * 0.15
                 source: name
                 MultiPointTouchArea {
                     id: dragArea
@@ -89,6 +87,7 @@ Flow {
                     }
 
                     onReleased: {
+                        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                         var droppedPosition = "middle";
                         if(lastX == point1.x && lastY == point1.y)
                             return;
