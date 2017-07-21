@@ -122,6 +122,7 @@ ActivityBase {
                     height: dialogActivityConfig.height
                     property alias instructionsBox: instructionsBox
                     property alias scoreBox: scoreBox
+                    property alias categoryImageBox: categoryImageBox
 
                     GCDialogCheckBox {
                         id: instructionsBox
@@ -129,16 +130,9 @@ ActivityBase {
                         text: qsTr("Instructions visible")
                         checked: items.instructionsVisible
                         onCheckedChanged: {
-                            if(instructionsBox.checked) {
-                                items.instructionsVisible = true
-                                Activity.selectmode()
-                            }
-                            else if(!instructionsBox.checked) {
-                                items.instructionsVisible = false
-                                Activity.selectmode()
-                            }
+                            items.instructionsVisible = instructionsBox.checked
+                            Activity.selectmode()
                         }
-
                     }
 
                     GCDialogCheckBox {
@@ -147,19 +141,20 @@ ActivityBase {
                         text: qsTr("Score visible")
                         checked: items.scoreVisible
                         onCheckedChanged: {
-                            if(scoreBox.checked) {
-                                items.scoreVisible = true
-                                Activity.selectmode()
-                            }
-                            else if(!scoreBox.checked) {
-                                items.scoreVisible = false
-                                Activity.selectmode()
-                            }
-
+                            items.scoreVisible = scoreBox.checked
+                            Activity.selectmode()
                         }
-
                     }
 
+                    GCDialogCheckBox {
+                        id: categoryImageBox
+                        width: instructionsBox.width
+                        text: qsTr("Category image visible")
+                        checked: items.categoryImageChecked
+                        onCheckedChanged: {
+                            items.categoryImageChecked = categoryImageBox.checked
+                        }
+                    }
                 }
             }
             onLoadData: {
