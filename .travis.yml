@@ -14,6 +14,8 @@ install:
   - wget -c "https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz"
   - tar xf kf5-gcc6-linux64-release.tar.xz
   - sudo cp -Rf root/kf5-release/* /opt/qt*/
+  - find /opt | grep "customization"
+  - find /opt | grep "kf5/kdoctools/customization"
 
 script:
   - mkdir build ; cd build/ # CMakeLists.txt:90 says that building in the source directory is not supported
