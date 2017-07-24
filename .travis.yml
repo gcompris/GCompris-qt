@@ -13,7 +13,7 @@ install:
   - # Precompiled KF5
   - wget -c "https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz"
   - tar xf kf5-gcc6-linux64-release.tar.xz
-- sudo cp -Rf root/kf5-release/* /opt/qt58/
+  - sudo cp -Rf root/kf5-release/* /opt/qt58/
 
 script:
   - cmake . -DCMAKE_INSTALL_PREFIX=/usr
