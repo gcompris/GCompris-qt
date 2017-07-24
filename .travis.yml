@@ -16,7 +16,8 @@ install:
   - sudo cp -Rf root/kf5-release/* /opt/qt*/
 
 script:
-  - cmake . -DCMAKE_INSTALL_PREFIX=/usr
+  - mkdir build ; cd build/ # CMakeLists.txt:90 says that building in the source directory is not supported
+  - cmake .. -DCMAKE_INSTALL_PREFIX=/usr
   - make -j$(nproc)
   - make DESTDIR=appdir install ; find appdir/
   - wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage" 
