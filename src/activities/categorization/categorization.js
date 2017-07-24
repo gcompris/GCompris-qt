@@ -73,8 +73,9 @@ function start() {
     items.menuModel.append(categories)
     savedPropertiesToCategories(items.dialogActivityConfig.dataToSave)
     sortByFavorites()
+    items.menuScreen.iAmReady.visible =((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
     items.menuScreen.start()
-    selectmode()
+    //selectmode()
 }
 
 // Inserts specific properties to the categories
@@ -146,7 +147,7 @@ function storeCategoriesLevels(index_) {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.categoryReview.score.currentSubLevel = 0
-    items.instructionsVisible = true
+    //items.instructionsVisible = true
     getCategoryLevels(index);
     numberOfLevel = items.details.length;
     items.categoryReview.leftZone.clear();
@@ -170,29 +171,6 @@ function previousLevel() {
     }
     initLevel(index);
     getCategoryLevels();
-}
-
-// Selects game mode based on combinations of instructions and score visibility
-function selectmode() {
-    if(items.scoreVisible && items.instructionsVisible) {
-        items.mode = "easy"
-        items.menuScreen.iAmReady.visible = false
-    }
-    else if(!items.scoreVisible && items.instructionsVisible) {
-        items.mode = "medium"
-        items.menuScreen.iAmReady.visible = false
-    }
-
-    else if(items.scoreVisible && !items.instructionsVisible) {
-        items.mode = "noInstructionsScoreVisible"
-        items.menuScreen.iAmReady.visible = true
-    }
-
-    else if(!items.scoreVisible && !items.instructionsVisible) {
-        items.mode = "expert"
-        items.menuScreen.iAmReady.visible = true
-    }
-
 }
 
 // Checks if all the items are dragged and dropped in the correct or incorrect area.
@@ -228,7 +206,7 @@ function getCategoryLevels() {
     var randomBad = 0;
     items.categoryReview.middleZone.clear()
     /* If easy or medium mode is selected, store the details of levels of category of that respective index in items.details. */
-     if(items.mode != "expert" && items.mode != "noInstructionsScoreVisible") {
+     if((items.scoreVisible && items.instructionsVisible) || items.instructionsVisible && !items.scoreVisible) {
         items.details = lessons[index].map(function(ele) {
             return { "instructions": ele.instructions, "image": ele.image,
                 "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad,
@@ -237,7 +215,7 @@ function getCategoryLevels() {
         });
     }
 
-     else if(items.mode === "noInstructionsScoreVisible") {
+     else if(!items.instructionsVisible && items.scoreVisible ) {
              items.details = lessons[noInstructionCategoryIndex].map(function(ele) {
                  return { "instructions": ele.instructions, "image": ele.image,
                      "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad,
@@ -246,7 +224,7 @@ function getCategoryLevels() {
         });
     }
     // If expert mode is selected, select a random level (selectedLevel) from a random category (selectedCategory)
-    else if(items.mode === "expert") {
+    else if(!items.instructionsVisible && !items.scoreVisible) {
         var selectedCategory = Math.floor(Math.random() * expertCategories.length)
         var selectedLevel = []
         selectedLevel[0] = expertCategories[selectedCategory][Math.floor(Math.random() * expertCategories[selectedCategory].length)]

@@ -75,7 +75,7 @@ Item {
             x: leftScreen.width + middleScreen.width + 0.01 * parent.width
             z: 2
             anchors.top: categoryBackground.top
-            anchors.topMargin: items.mode != "expert" ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
+            anchors.topMargin: !(!items.instructionsVisible && !items.scoreVisible) ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
         }
 
         Rectangle {
@@ -130,7 +130,7 @@ Item {
 
         GCText {
             id: instructions
-            text: (items.mode !== "expert" && items.mode != "noInstructionsScoreVisible" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions) ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
+            text: (items.instructionsVisible && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions) ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
             visible: items.instructionsVisible
             anchors.fill: instructionBox
             anchors.bottom: instructionBox.bottom
@@ -148,7 +148,7 @@ Item {
             width: horizontalLayout ? rightZone.width * 0.35 : rightZone.width * 0.35
             height: horizontalLayout ? rightZone.height * 0.18 : rightZone.height * 0.15
             y: 0.015*parent.height
-            visible: items.categoryImageChecked
+            visible: items.categoryImageVisible
             anchors {
                 left: middleScreen.right
                 leftMargin: 0.15 * rightZone.width
@@ -215,7 +215,7 @@ Item {
     }
 
     function stop() {
-        if(items.mode == "expert" || items.mode === "noInstructionsScoreVisible")
+        if((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible))
             items.menuScreen.iAmReady.visible = true
         focus = false
         rootItem.visible = false
