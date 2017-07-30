@@ -40,8 +40,8 @@ Flow {
         model: zoneModel
         Item {
             id: item
-            width: middleScreen.width*0.32
-            height: categoryBackground.height * 0.2
+            width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.49
+            height: horizontalLayout ? categoryBackground.height * 0.2 : categoryBackground.height * 0.15
             opacity: 1
             Image {
                 id: image

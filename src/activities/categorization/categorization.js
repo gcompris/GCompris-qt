@@ -75,7 +75,6 @@ function start() {
     sortByFavorites()
     items.menuScreen.iAmReady.visible =((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
     items.menuScreen.start()
-    //selectmode()
 }
 
 // Inserts specific properties to the categories
@@ -147,7 +146,6 @@ function storeCategoriesLevels(index_) {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.categoryReview.score.currentSubLevel = 0
-    //items.instructionsVisible = true
     getCategoryLevels(index);
     numberOfLevel = items.details.length;
     items.categoryReview.leftZone.clear();
@@ -206,7 +204,7 @@ function getCategoryLevels() {
     var randomBad = 0;
     items.categoryReview.middleZone.clear()
     /* If easy or medium mode is selected, store the details of levels of category of that respective index in items.details. */
-     if((items.scoreVisible && items.instructionsVisible) || items.instructionsVisible && !items.scoreVisible) {
+     if((items.scoreVisible && items.instructionsVisible) || (items.instructionsVisible && !items.scoreVisible)) {
         items.details = lessons[index].map(function(ele) {
             return { "instructions": ele.instructions, "image": ele.image,
                 "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad,

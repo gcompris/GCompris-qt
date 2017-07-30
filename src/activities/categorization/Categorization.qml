@@ -65,11 +65,10 @@ ActivityBase {
             property bool scoreVisible: true
             property bool instructionsVisible: true
             property bool categoryImageVisible: true
-            //property string mode: "easy"
-            property bool categoryImageChecked: categoryImageVisible //(mode === "easy" || mode === "medium")
-            property bool scoreChecked: scoreVisible //(mode === "easy" || mode === "noInstructionsScoreVisible")
-            property bool instructionsChecked: instructionsVisible //(mode === "easy" || mode === "medium")
-           // property bool iAmReadyChecked: ((!instructionsVisible && !scoreVisible) || (!instructionsVisible && scoreVisible))
+            property bool categoryImageChecked: categoryImageVisible
+            property bool scoreChecked: scoreVisible
+            property bool instructionsChecked: instructionsVisible
+            property bool iAmReadyChecked: ((!instructionsVisible && !scoreVisible) || (!instructionsVisible && scoreVisible))
             property bool displayUpdateDialogAtStart: true            
             property var details
             property bool categoriesFallback
@@ -131,12 +130,10 @@ ActivityBase {
                         id: instructionsBox
                         width: column.width - 50
                         text: qsTr("Instructions visible")
-                        checked: items.instructionsChecked
+                        checked: items.instructionsVisible
                         onCheckedChanged: {
                             items.instructionsVisible = instructionsBox.checked
-                            //menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
-
-                            //Activity.selectmode()
+                            menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
                         }
                     }
 
@@ -144,11 +141,10 @@ ActivityBase {
                         id: scoreBox
                         width: instructionsBox.width
                         text: qsTr("Score visible")
-                        checked: items.scoreChecked
+                        checked: items.scoreVisible
                         onCheckedChanged: {
                             items.scoreVisible = scoreBox.checked
-                            //menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
-                            //Activity.selectmode()
+                            menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
                         }
                     }
 
@@ -159,15 +155,14 @@ ActivityBase {
                         checked: items.categoryImageChecked
                         onCheckedChanged: {
                             items.categoryImageVisible = categoryImageBox.checked
-                            //menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
+                            menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
 
                         }
                     }
                 }
             }
             onLoadData: {
-                if(dataToSave) {//&& dataToSave["scoreVisible"] && dataToSave["instructionsVisible"] && dataToSave["categoryImageVisible"]) {
-                    //items.mode = dataToSave["mode"]
+                if(dataToSave) {
                     items.scoreVisible = dataToSave["scoreVisible"]
                     items.instructionsVisible = dataToSave["instructionsVisible"]
                     items.categoryImageVisible = dataToSave["categoryImageVisible"]
@@ -178,14 +173,12 @@ ActivityBase {
 
             onSaveData: {
                 dataToSave["data"] = Activity.categoriesToSavedProperties(dataToSave)
-                //dataToSave["mode"] = items.mode
                 dataToSave["displayUpdateDialogAtStart"] = items.displayUpdateDialogAtStart ? "true" : "false"
                 dataToSave["scoreVisible"] = items.scoreVisible
                 dataToSave["instructionsVisible"] = items.instructionsVisible
                 dataToSave["categoryImageVisible"] = items.categoryImageVisible
             }
             onClose: {
-                //Activity.selectmode()
                 menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
                 home()
             }

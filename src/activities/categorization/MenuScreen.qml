@@ -127,7 +127,7 @@ Image {
         ReadyButton {
             id: iAmReady
             focus: true
-            visible: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) // items.iAmReadyChecked
+            visible: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible))
             onClicked: {
                 Activity.startCategory()
             }

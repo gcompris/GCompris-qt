@@ -75,7 +75,7 @@ Item {
             x: leftScreen.width + middleScreen.width + 0.01 * parent.width
             z: 2
             anchors.top: categoryBackground.top
-            anchors.topMargin: !(!items.instructionsVisible && !items.scoreVisible) ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
+            anchors.topMargin: items.categoryImageVisible ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
         }
 
         Rectangle {
