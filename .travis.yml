@@ -17,6 +17,7 @@ install:
   - export XDG_DATA_HOME=/opt/qt59/share/:$XDG_DATA_HOME
 
 script:
+  - git submodule init && git submodule update
   - mkdir build ; cd build/ # CMakeLists.txt:90 says that building in the source directory is not supported
   - cmake .. -DCMAKE_INSTALL_PREFIX=/usr
   - make -j$(nproc)
