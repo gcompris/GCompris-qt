@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get update -qq
     
 install: 
-  - sudo apt-get -y install libxml2-utils qt59base qt59declarative qt59multimedia qt59svg qt59xmlpatterns qt59tools qt59translations qt59sensors
+  - sudo apt-get -y install libxml2-utils qt59base qt59declarative qt59quickcontrols qt59multimedia qt59svg qt59xmlpatterns qt59tools qt59translations qt59sensors
   - source /opt/qt*/bin/qt*-env.sh
   - # Precompiled KF5
   - # wget -c "https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz"
@@ -27,8 +27,8 @@ script:
   - wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage" 
   - chmod a+x linuxdeployqt*.AppImage
   - unset QTDIR; unset QT_PLUGIN_PATH ; unset LD_LIBRARY_PATH
-  - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -bundle-non-qt-libs
-  - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -appimage
+  - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -bundle-non-qt-libs -qmldir=../..
+  - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -appimage -qmldir=../..
 
 after_success:
   - find ./appdir -executable -type f -exec ldd {} \; | grep " => /usr" | cut -d " " -f 2-3 | sort | uniq
