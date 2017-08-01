@@ -11,10 +11,10 @@ install:
   - sudo apt-get -y install libxml2-utils qt59base qt59declarative qt59multimedia qt59svg qt59xmlpatterns qt59tools qt59translations qt59sensors
   - source /opt/qt*/bin/qt*-env.sh
   - # Precompiled KF5
-  - wget -c "https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz"
-  - tar xf kf5-gcc6-linux64-release.tar.xz
-  - sudo cp -Rf root/kf5-release/* /opt/qt*/
-  - export XDG_DATA_HOME=/opt/qt59/share/:$XDG_DATA_HOME
+  - # wget -c "https://github.com/chigraph/precompiled-kf5-linux/releases/download/precompiled/kf5-gcc6-linux64-release.tar.xz"
+  - # tar xf kf5-gcc6-linux64-release.tar.xz
+  - # sudo cp -Rf root/kf5-release/* /opt/qt*/
+  - # export XDG_DATA_HOME=/opt/qt59/share/:$XDG_DATA_HOME
 
 script:
   - git submodule init && git submodule update
