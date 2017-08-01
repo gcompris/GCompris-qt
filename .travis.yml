@@ -28,6 +28,7 @@ script:
   - chmod a+x linuxdeployqt*.AppImage
   - unset QTDIR; unset QT_PLUGIN_PATH ; unset LD_LIBRARY_PATH
   - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -bundle-non-qt-libs -qmldir=../..
+  - cp /opt/qt*/plugins/imageformats/libqsvg.so ./appdir/usr/plugins/imageformats/ # Workaround until https://github.com/probonopd/linuxdeployqt/issues/82 is implemented
   - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -appimage -qmldir=../..
 
 after_success:
