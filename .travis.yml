@@ -23,6 +23,7 @@ script:
   - make -j$(nproc)
   - make DESTDIR=appdir install ; find appdir/
   - mkdir -p appdir/usr/share/applications/ ; cp ../org.kde.gcompris.desktop appdir/usr/share/applications/ # FIXME: The step before should have done that
+  - mkdir -p appdir/usr/share/icons/hicolor/256x256/apps/ ; cp ../images/256-apps-gcompris-qt.png appdir/usr/share/icons/hicolor/256x256/apps/gcompris-qt.png # FIXME: This as well
   - wget -c "https://github.com/probonopd/linuxdeployqt/releases/download/continuous/linuxdeployqt-continuous-x86_64.AppImage" 
   - chmod a+x linuxdeployqt*.AppImage
   - unset QTDIR; unset QT_PLUGIN_PATH ; unset LD_LIBRARY_PATH
