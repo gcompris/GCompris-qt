@@ -440,7 +440,7 @@ else()
 
     # for visual studio, we need to create a vcxproj
     if(WIN32 AND NOT MINGW)
-      set(_qmake_options -spec win32-msvc2015 -tp vc)
+      set(_qmake_options -spec win32-msvc -tp vc)
     else()
       set(_qmake_options "")
     endif()
