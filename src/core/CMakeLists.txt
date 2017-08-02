@@ -98,7 +98,7 @@ if(BUILD_STANDALONE)
   elseif(WIN32)
     list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
   elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
-    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
+    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin)
   endif()
 
   list(APPEND _qt_plugins Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin)
@@ -133,14 +133,6 @@ if(BUILD_STANDALONE)
     list(APPEND _qml_plugins
       QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
       QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
-  endif()
-
-  if(NOT WIN32 AND NOT SAILFISHOS)
-    list(APPEND _qml_plugins
-      QtAudioEngine/${_lib_prefix}declarative_audioengine)
-    if (NOT "${QML_BOX2D_MODULE}" STREQUAL "submodule")
-      list(APPEND _qml_plugins Box2D.2.0/${_lib_prefix}Box2D)
-    endif()
   endif()
 
   set(GCOMPRIS_OTHER_LIBS)
@@ -237,9 +229,6 @@ endif()
 if(WIN32)
 # install libEGL.dll, libGLESv2.dll, d3dcompiler_47.dll from Qt installation. Not sure if there is a clean way to get them...
 # Qt5_Dir is like C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/cmake/Qt5
-    install(FILES ${Qt5_DIR}/../../../bin/icudt54.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../bin/icuin54.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../bin/icuuc54.dll DESTINATION bin)
     install(FILES ${Qt5_DIR}/../../../bin/libEGL.dll DESTINATION bin)
     install(FILES ${Qt5_DIR}/../../../bin/libGLESv2.dll DESTINATION bin)
     install(FILES ${Qt5_DIR}/../../../bin/d3dcompiler_47.dll DESTINATION bin)
