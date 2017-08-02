@@ -68,8 +68,7 @@ ActivityBase {
             property bool categoryImageChecked: categoryImageVisible
             property bool scoreChecked: scoreVisible
             property bool instructionsChecked: instructionsVisible
-            property bool iAmReadyChecked: ((!instructionsVisible && !scoreVisible) || (!instructionsVisible && scoreVisible))
-            property bool displayUpdateDialogAtStart: true            
+            property bool displayUpdateDialogAtStart: true
             property var details
             property bool categoriesFallback
             property alias file: file
@@ -100,10 +99,10 @@ ActivityBase {
         MenuScreen {
             id: menuScreen
 
-        File {
-            id: file
-            onError: console.error("File error: " + msg);
-        }
+            File {
+                id: file
+                onError: console.error("File error: " + msg);
+            }
         }
 
         Directory {
@@ -133,8 +132,8 @@ ActivityBase {
                         checked: items.instructionsVisible
                         onCheckedChanged: {
                             items.instructionsVisible = instructionsBox.checked
-                            menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
                         }
+
                     }
 
                     GCDialogCheckBox {
@@ -144,7 +143,6 @@ ActivityBase {
                         checked: items.scoreVisible
                         onCheckedChanged: {
                             items.scoreVisible = scoreBox.checked
-                            menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
                         }
                     }
 
@@ -155,14 +153,12 @@ ActivityBase {
                         checked: items.categoryImageChecked
                         onCheckedChanged: {
                             items.categoryImageVisible = categoryImageBox.checked
-                            menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
-
                         }
                     }
                 }
             }
             onLoadData: {
-                if(dataToSave) {
+                if(dataToSave && dataToSave["scoreVisible"]) {
                     items.scoreVisible = dataToSave["scoreVisible"]
                     items.instructionsVisible = dataToSave["instructionsVisible"]
                     items.categoryImageVisible = dataToSave["categoryImageVisible"]
@@ -179,7 +175,6 @@ ActivityBase {
                 dataToSave["categoryImageVisible"] = items.categoryImageVisible
             }
             onClose: {
-                menuScreen.iAmReady.visible = ((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
                 home()
             }
         }

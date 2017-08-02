@@ -73,7 +73,7 @@ function start() {
     items.menuModel.append(categories)
     savedPropertiesToCategories(items.dialogActivityConfig.dataToSave)
     sortByFavorites()
-    items.menuScreen.iAmReady.visible =((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
+    items.menuScreen.iAmReady.visible = !items.instructionsVisible
     items.menuScreen.start()
 }
 
@@ -213,7 +213,7 @@ function getCategoryLevels() {
         });
     }
 
-     else if(!items.instructionsVisible && items.scoreVisible ) {
+     else if(!items.instructionsVisible && items.scoreVisible) {
              items.details = lessons[noInstructionCategoryIndex].map(function(ele) {
                  return { "instructions": ele.instructions, "image": ele.image,
                      "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad,
