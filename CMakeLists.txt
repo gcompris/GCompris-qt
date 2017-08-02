@@ -77,14 +77,6 @@ set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
 # Increase it at each release
 math(EXPR GCOMPRIS_VERSION_CODE "${GCOMPRIS_MAJOR_VERSION}*10000 + ${GCOMPRIS_MINOR_VERSION}*100 + ${GCOMPRIS_PATCH_VERSION}")
 
-# KDE po to qm tools
-if(ECM_FOUND)
-  include(ECMPoQmTools)
-  if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
-    ecm_install_po_files_as_qm(po)
-  endif()
-endif(ECM_FOUND)
-
 # prevent build in source directory
 if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
     message(SEND_ERROR "Building in the source directory is not supported.")
@@ -100,23 +92,17 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
 find_package (KF5 QUIET COMPONENTS
     DocTools
 )
-if(KF5_FOUND)
+if(ECM_FOUND)
     include(KDEInstallDirs)
 
-    if (ECM_VERSION VERSION_GREATER "1.6.0")
+    if(ECM_VERSION VERSION_GREATER "1.6.0")
         add_subdirectory(images)
         install(FILES org.kde.gcompris.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
         install(FILES org.kde.gcompris.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+    else()
+        message(STATUS "ECM_VERSION is ${ECM_VERSION}, icons and desktop files won't be installed.")
     endif()
 endif()
-
-FIND_PROGRAM(LRELEASE_EXECUTABLE lrelease-qt5 lrelease
-  PATHS
-  ${Qt5_DIR}/../../../bin/
-  /usr/local/bin
-  /usr/bin/
-  NO_DEFAULT_PATH
-)
 
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})
