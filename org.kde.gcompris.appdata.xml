@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<application>
+<component type="desktop">
+  <id>org.kde.gcompris.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
   <id type="desktop">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="ca">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="ca-valencia">org.kde.gcompris.desktop</id>
@@ -793,7 +796,7 @@
   <url type="bugtracker" xml:lang="x-test">xxhttps://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcomprisxx</url>
   <url type="bugtracker" xml:lang="zh-CN">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="bugtracker" xml:lang="zh-TW">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
-  <updatecontact>bruno.coudoin@gcompris.net</updatecontact>
+  <updatecontact>gcompris-devel@kde.org</updatecontact>
   <updatecontact xml:lang="ca">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="ca-valencia">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="cs">bruno.coudoin@gcompris.net</updatecontact>
@@ -821,4 +824,8 @@
   <updatecontact xml:lang="x-test">xxbruno.coudoin@gcompris.netxx</updatecontact>
   <updatecontact xml:lang="zh-CN">bruno.coudoin@gcompris.net</updatecontact>
   <updatecontact xml:lang="zh-TW">bruno.coudoin@gcompris.net</updatecontact>
-</application>
+  <project_group>KDE</project_group>
+  <provides>
+    <binary>gcompris-qt</binary>
+  </provides>
+</component>
