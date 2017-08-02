@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 import GCompris 1.0
 
 ElectricalComponent {
@@ -72,7 +72,8 @@ ElectricalComponent {
 
     function updateOutput(wireVisited) {
         var terminal = outputTerminals.itemAt(0)
-        terminal.value = !(inputTerminals.itemAt(0).value | inputTerminals.itemAt(1).value)
+        /* Keep the output value == 0 if only one of the input terminals is connected */
+        terminal.value = (inputTerminals.itemAt(0).wires.length != 0 && inputTerminals.itemAt(1).wires.length != 0) ? !(inputTerminals.itemAt(0).value | inputTerminals.itemAt(1).value) : 0
         for(var i = 0 ; i < terminal.wires.length ; ++i)
             terminal.wires[i].to.value = terminal.value
 
@@ -80,11 +81,18 @@ ElectricalComponent {
         for(var i = 0 ; i < terminal.wires.length ; ++i) {
             var wire = terminal.wires[i]
             var component = wire.to.parent
+            /*
+            // NOTE: Removed because the output of a > 1 input gate may depend on > 1 conditions
+            // thus it may be needed to be revisited
             if(componentVisited[component] != true && wireVisited[wire] != true) {
                 componentVisited[component] = true
                 wireVisited[wire] = true
                 component.updateOutput(wireVisited)
             }
+            */
+            componentVisited[component] = true
+            wireVisited[wire] = true
+            component.updateOutput(wireVisited)
         }
     }
 }

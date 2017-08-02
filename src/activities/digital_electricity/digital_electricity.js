@@ -20,10 +20,10 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 .pragma library
-.import QtQuick 2.3 as Quick
+.import QtQuick 2.6 as Quick
 
 var currentLevel = 1
-var numberOfLevel = 4
+var numberOfLevel
 var items
 var url = "qrc:/gcompris/src/activities/digital_electricity/resource/"
 var toolDelete
@@ -34,16 +34,39 @@ var selectedTerminal
 var deletedIndex = []
 var components = []
 var connected = []
+var determiningComponents = []
+var processingAnswer
+
+var currentZoom
+var maxZoom = 1
+var minZoom = 0.5
+var defaultZoom = 1
+var zoomStep = 0.25
+
+var direction = {
+    LEFT: -1,
+    RIGHT: 1,
+    UP: -2,
+    DOWN: 2
+}
+
+var viewPort = {
+    leftExtreme: 0,
+    rightExtreme: 2,
+    topExtreme: 0,
+    bottomExtreme: 2.5,
+    leftEdge: 0,
+    topEdge: 0
+}
 
 function start(items_) {
-
     items = items_
     currentLevel = 1
+    numberOfLevel = items.tutorialDataset.tutorialLevels.length
     initLevel()
 }
 
 function stop() {
-
     for(var i = 0 ; i < components.length ; ++i) {
         var j
         for(j = 0 ; j < deletedIndex.length ; ++j) {
@@ -56,121 +79,8 @@ function stop() {
 }
 
 function initLevel() {
-
     items.bar.level = currentLevel
     var sizeMultiplier = 1 + (1 / (1.5 * currentLevel))
-
-    items.availablePieces.model.append( {
-        "imgName": "zero.svg",
-        "componentSrc": "Zero.qml",
-        "imgWidth": sizeMultiplier * 0.12,
-        "imgHeight": sizeMultiplier * 0.2,
-        "toolTipText": qsTr("Zero input")
-    })
-    items.availablePieces.model.append( {
-        "imgName": "one.svg",
-        "componentSrc": "One.qml",
-        "imgWidth": sizeMultiplier * 0.12,
-        "imgHeight": sizeMultiplier * 0.2,
-        "toolTipText": qsTr("One input")
-    })
-    items.availablePieces.model.append( {
-        "imgName": "DigitalLightOff.svg",
-        "componentSrc": "DigitalLight.qml",
-        "imgWidth": sizeMultiplier * 0.12,
-        "imgHeight": sizeMultiplier * 0.12,
-        "toolTipText": qsTr("Digital Light")
-    })
-    items.availablePieces.model.append( {
-        "imgName": "gateAnd.svg",
-        "componentSrc": "AndGate.qml",
-        "imgWidth": sizeMultiplier * 0.15,
-        "imgHeight": sizeMultiplier * 0.12,
-        "toolTipText": qsTr("AND gate")
-    })
-    if(currentLevel > 1) {
-        items.availablePieces.model.append( {
-            "imgName": "gateNand.svg",
-            "componentSrc": "NandGate.qml",
-            "imgWidth": sizeMultiplier * 0.15,
-            "imgHeight": sizeMultiplier * 0.12,
-            "toolTipText": qsTr("NAND gate")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "gateNor.svg",
-            "componentSrc": "NorGate.qml",
-            "imgWidth": sizeMultiplier * 0.15,
-            "imgHeight": sizeMultiplier * 0.12,
-            "toolTipText": qsTr("NOR gate")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "gateNot.svg",
-            "componentSrc": "NotGate.qml",
-            "imgWidth": sizeMultiplier * 0.15,
-            "imgHeight": sizeMultiplier * 0.12,
-            "toolTipText": qsTr("NOT gate")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "gateOr.svg",
-            "componentSrc": "OrGate.qml",
-            "imgWidth": sizeMultiplier * 0.15,
-            "imgHeight": sizeMultiplier * 0.12,
-            "toolTipText": qsTr("OR gate")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "gateXor.svg",
-            "componentSrc": "XorGate.qml",
-            "imgWidth": sizeMultiplier * 0.15,
-            "imgHeight": sizeMultiplier * 0.12,
-            "toolTipText": qsTr("XOR gate")
-        })
-    }
-    if(currentLevel > 2) {
-        items.availablePieces.model.append( {
-            "imgName": "comparator.svg",
-            "componentSrc": "Comparator.qml",
-            "imgWidth": sizeMultiplier * 0.3,
-            "imgHeight": sizeMultiplier * 0.25,
-            "toolTipText": qsTr("Comparator")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "BCDTo7Segment.svg",
-            "componentSrc": "BCDToSevenSegment.qml",
-            "imgWidth": sizeMultiplier * 0.3,
-            "imgHeight": sizeMultiplier * 0.4,
-            "toolTipText": qsTr("BCD To 7 Segment")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "sevenSegmentDisplay.svgz",
-            "componentSrc": "SevenSegment.qml",
-            "imgWidth": sizeMultiplier * 0.18,
-            "imgHeight": sizeMultiplier * 0.4,
-            "toolTipText": qsTr("7 Segment Display")
-        })
-    }
-    if(currentLevel > 3) {
-        items.availablePieces.model.append( {
-            "imgName": "switchOff.svg",
-            "componentSrc": "Switch.qml",
-            "imgWidth": sizeMultiplier * 0.18,
-            "imgHeight": sizeMultiplier * 0.15,
-            "toolTipText": qsTr("Switch")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "signalGenerator.svg",
-            "componentSrc": "SignalGenerator.qml",
-            "imgWidth": sizeMultiplier * 0.25,
-            "imgHeight": sizeMultiplier * 0.18,
-            "toolTipText": qsTr("Signal Generator")
-        })
-        items.availablePieces.model.append( {
-            "imgName": "bcdCounter.svg",
-            "componentSrc": "BcdCounter.qml",
-            "imgWidth": sizeMultiplier * 0.3,
-            "imgHeight": sizeMultiplier * 0.4,
-            "toolTipText": qsTr("BCD Counter")
-        })
-    }
 
     items.availablePieces.view.currentDisplayedGroup = 0
     items.availablePieces.view.previousNavigation = 1
@@ -178,23 +88,350 @@ function initLevel() {
     deletedIndex = []
     components = []
     connected = []
+    determiningComponents = []
     animationInProgress = false
     toolDelete = false
     toolDeleteSticky = false
     deselect()
     updateToolTip("")
+    items.availablePieces.hideToolbar()
+
+    currentZoom = defaultZoom
+    items.availablePieces.zoomInBtn.state = "cannotZoomIn"
+    items.availablePieces.zoomOutBtn.state = "canZoomOut"
+    viewPort.leftEdge = 0
+    viewPort.topEdge = 0
+
+    if (!items.isTutorialMode) {
+        items.tutorialInstruction.index = -1
+        loadFreeMode(sizeMultiplier)
+    } else {
+        // load tutorial levels from dataset
+        processingAnswer = false
+        var levelProperties = items.tutorialDataset.tutorialLevels[currentLevel - 1]
+
+        for (var i = 0; i < levelProperties.inputComponentList.length; i++) {
+            var currentInputComponent = levelProperties.inputComponentList[i]
+            items.availablePieces.model.append( {
+               "imgName": currentInputComponent.imageName,
+               "componentSrc": currentInputComponent.componentSource,
+               "imgWidth": currentInputComponent.width * sizeMultiplier,
+               "imgHeight": currentInputComponent.height * sizeMultiplier,
+               "toolTipText": currentInputComponent.toolTipText
+            })
+        }
+
+        for (var i = 0; i < levelProperties.playAreaComponentList.length; i++) {
+            var index = components.length
+            var currentPlayAreaComponent = levelProperties.playAreaComponentList[i]
+            var staticElectricalComponent = Qt.createComponent("qrc:/gcompris/src/activities/digital_electricity/components/" + currentPlayAreaComponent.componentSource)
+            components[index] = staticElectricalComponent.createObject(
+                        items.playArea, {
+                          "index": index,
+                          "posX": levelProperties.playAreaComponentPositionX[i] * currentZoom,
+                          "posY": levelProperties.playAreaComponentPositionY[i] * currentZoom,
+                          "imgSrc": currentPlayAreaComponent.imageName,
+                          "toolTipTxt": currentPlayAreaComponent.toolTipText,
+                          "imgWidth": currentPlayAreaComponent.width * currentZoom,
+                          "imgHeight": currentPlayAreaComponent.height * currentZoom,
+                          "destructible": false
+                        });
+        }
+
+        var _determiningComponentsIndex = levelProperties.determiningComponentsIndex
+        for (var i = 0; i < _determiningComponentsIndex.length; i++) {
+            determiningComponents[determiningComponents.length] = components[_determiningComponentsIndex[i]]
+        }
+
+        // creating wires
+        for (i = 0; i < levelProperties.wires.length; i++) {
+            var terminal_number = levelProperties.wires[i][1]
+            var outTerminal = components[levelProperties.wires[i][0]].outputTerminals.itemAt(terminal_number)
+
+            terminal_number = levelProperties.wires[i][3]
+            var inTerminal = components[levelProperties.wires[i][2]].inputTerminals.itemAt(terminal_number)
+
+            createWire(inTerminal, outTerminal, false)
+        }
+
+        if (levelProperties.introMessage.length != 0) {
+            items.tutorialInstruction.index = 0
+            items.tutorialInstruction.intro = levelProperties.introMessage
+        } else {
+            items.tutorialInstruction.index = -1
+        }
+    }
+}
+
+function loadFreeMode(sizeMultiplier) {
+    var componentList = items.tutorialDataset.componentList
+    for (var i = 0; i < componentList.length; i++) {
+        items.availablePieces.model.append( {
+            "imgName": componentList[i].imageName,
+            "componentSrc": componentList[i].componentSource,
+            "imgWidth": sizeMultiplier * componentList[i].width,
+            "imgHeight": sizeMultiplier * componentList[i].height,
+            "toolTipText": componentList[i].toolTipText
+        })
+    }
+}
+
+function checkAnswer() {
+    if (processingAnswer)
+        return
+
+    processingAnswer = true
+    var problemType = items.tutorialDataset.tutorialLevels[currentLevel - 1].type
+    var levelProperties = items.tutorialDataset.tutorialLevels[currentLevel - 1]
+
+    if (problemType == items.tutorialDataset.problemType.lightTheBulb) {
+        if (determiningComponents[0].inputTerminals.itemAt(0).value == 1) {
+            items.bonus.good('tux')
+        } else {
+            items.bonus.bad('tux')
+            processingAnswer = false
+        }
+    } else if (problemType == items.tutorialDataset.problemType.equation1Variable) {
+        var switch1 = determiningComponents[0]
+
+        var digitalLight = determiningComponents[1]
+
+        var switch1InitialState = switch1.imgSrc
+
+        for (var A = 0; A <= 1; A++) {
+            switch1.imgSrc = A == 1 ? "switchOn.svg" : "switchOff.svg"
+
+            updateComponent(switch1.index)
+
+            var operationResult = !A
+
+            if (operationResult != digitalLight.inputTerminals.itemAt(0).value) {
+                switch1.imgSrc = switch1InitialState
+                updateComponent(switch1.index)
+                items.bonus.bad('tux')
+                processingAnswer = false
+                return
+            }
+        }
+        items.bonus.good('tux')
+    } else if (problemType == items.tutorialDataset.problemType.equation2Variables) {
+        var digitalLight = determiningComponents[determiningComponents.length - 1]
+        var switch1 = determiningComponents[0]
+        var switch2 = determiningComponents[1]
+
+        var switch1InitialState = switch1.imgSrc
+        var switch2InitialState = switch2.imgSrc
+
+        for (var A = 0; A <= 1; A++) {
+            for (var B = 0; B <= 1; B++) {
+                switch1.imgSrc = A == 1 ? "switchOn.svg" : "switchOff.svg"
+                switch2.imgSrc = B == 1 ? "switchOn.svg" : "switchOff.svg"
+
+                updateComponent(switch1.index)
+                updateComponent(switch2.index)
+
+                var operationResult = levelProperties.result(A, B)
+
+                if (operationResult != digitalLight.inputTerminals.itemAt(0).value) {
+                    switch1.imgSrc = switch1InitialState
+                    switch2.imgSrc = switch2InitialState
+                    updateComponent(switch1.index)
+                    updateComponent(switch2.index)
+                    items.bonus.bad('tux')
+                    processingAnswer = false
+                    return
+                }
+            }
+        }
+        items.bonus.good('tux')
+    } else if (problemType == items.tutorialDataset.problemType.equation3Variables) {
+        var switch1 = determiningComponents[0]
+        var switch2 = determiningComponents[1]
+        var switch3 = determiningComponents[2]
+
+        var digitalLight = determiningComponents[3]
+
+        var switch1InitialState = switch1.imgSrc
+        var switch2InitialState = switch2.imgSrc
+        var switch3InitialState = switch3.imgSrc
+
+        for (var A = 0; A <= 1; A++) {
+            for (var B = 0; B <= 1; B++) {
+                for (var C = 0; C <= 1; C++) {
+                    switch1.imgSrc = A == 1 ? "switchOn.svg" : "switchOff.svg"
+                    switch2.imgSrc = B == 1 ? "switchOn.svg" : "switchOff.svg"
+                    switch3.imgSrc = C == 1 ? "switchOn.svg" : "switchOff.svg"
+
+                    updateComponent(switch1.index)
+                    updateComponent(switch2.index)
+                    updateComponent(switch3.index)
+
+                    var operationResult = levelProperties.result(A, B, C)
+
+                    if (operationResult != digitalLight.inputTerminals.itemAt(0).value) {
+                        switch1.imgSrc = switch1InitialState
+                        switch2.imgSrc = switch2InitialState
+                        switch3.imgSrc = switch3InitialState
+                        updateComponent(switch1.index)
+                        updateComponent(switch2.index)
+                        updateComponent(switch3.index)
+                        processingAnswer = false
+                        items.bonus.bad('tux')
+                        return
+                    }
+                }
+            }
+        }
+        items.bonus.good('tux')
+    } else if (problemType == items.tutorialDataset.problemType.others) {
+        if (currentLevel == 20) {
+            var bcdToSevenSegment = determiningComponents[0]
+
+            var decimalValue =
+                    bcdToSevenSegment.inputTerminals.itemAt(3).value +
+                    (bcdToSevenSegment.inputTerminals.itemAt(2).value * 2) +
+                    (bcdToSevenSegment.inputTerminals.itemAt(1).value * 4) +
+                    (bcdToSevenSegment.inputTerminals.itemAt(0).value * 8)
+
+            if (decimalValue == 6) {
+                items.bonus.good('tux')
+                return
+            }
+            items.bonus.bad('tux')
+            processingAnswer = false
+            return
+        } else if (currentLevel == 21) {
+            var bcdCounter = determiningComponents[0]
+
+            var bcdOutput =
+                    bcdCounter.outputTerminals.itemAt(3).value +
+                    bcdCounter.outputTerminals.itemAt(2).value * 2 +
+                    bcdCounter.outputTerminals.itemAt(1).value * 4 +
+                    bcdCounter.outputTerminals.itemAt(0).value * 8
+
+            var bcdToSevenSegment = determiningComponents[1]
+            var decimalValue =
+                    bcdToSevenSegment.inputTerminals.itemAt(3).value +
+                    (bcdToSevenSegment.inputTerminals.itemAt(2).value * 2) +
+                    (bcdToSevenSegment.inputTerminals.itemAt(1).value * 4) +
+                    (bcdToSevenSegment.inputTerminals.itemAt(0).value * 8)
+
+            if (bcdCounter.inputTerminals.itemAt(0).wires.length == 0 ||
+                    bcdCounter.outputTerminals.itemAt(0).wires.length == 0 ||
+                    bcdCounter.outputTerminals.itemAt(1).wires.length == 0 ||
+                    bcdCounter.outputTerminals.itemAt(2).wires.length == 0 ||
+                    bcdCounter.outputTerminals.itemAt(3).wires.length == 0) {
+                items.bonus.bad('tux')
+                processingAnswer = false
+                return
+            }
+            if ((bcdOutput == decimalValue) && (bcdCounter.inputTerminals.itemAt(0).wires.length != 0) ) {
+                items.bonus.good('tux')
+                return
+            }
+            items.bonus.bad('tux')
+            processingAnswer = false
+        }
+    }
+}
+
+function zoomIn() {
+    var previousZoom = currentZoom
+    currentZoom += zoomStep
+    if (currentZoom > maxZoom)
+        currentZoom = maxZoom
+    var zoomRatio = currentZoom / previousZoom
+    updateComponentDimension(zoomRatio)
+
+    if (currentZoom == maxZoom) {
+        items.availablePieces.zoomInBtn.state = "cannotZoomIn"
+    } else {
+        items.availablePieces.zoomInBtn.state = "canZoomIn"
+    }
+    items.availablePieces.zoomOutBtn.state = "canZoomOut"
+}
+
+function zoomOut() {
+    var previousZoom = currentZoom
+    currentZoom -= zoomStep
+    if (currentZoom < minZoom)
+        currentZoom = minZoom
+    var zoomRatio = currentZoom / previousZoom
+    updateComponentDimension(zoomRatio)
+
+    if (currentZoom == minZoom) {
+        items.availablePieces.zoomOutBtn.state = "cannotZoomOut"
+    } else {
+        items.availablePieces.zoomOutBtn.state = "canZoomOut"
+    }
+    items.availablePieces.zoomInBtn.state = "canZoomIn"
+}
+
+function updateComponentDimension(zoomRatio) {
+    for (var i = 0; i < components.length; i++) {
+        components[i].posX *= zoomRatio
+        components[i].posY *= zoomRatio
+        components[i].imgWidth *= zoomRatio
+        components[i].imgHeight *= zoomRatio
+    }
+}
+
+function move(_direction) {
+    var x = 0, y = 0
+    if (_direction == direction.RIGHT) {
+        x = 0.1
+    } else if (_direction == direction.LEFT) {
+        x = -0.1
+    } else if (_direction == direction.UP) {
+        y = -0.1
+    } else if (_direction == direction.DOWN) {
+        y = 0.1
+    }
+
+    if (x == 0.1) {
+        var viewPortRightEdge = Math.round(((viewPort.leftEdge + 0.1) + (1 / currentZoom)) * 100) / 100
+        if (viewPortRightEdge > viewPort.rightExtreme) {
+            return
+        } else {
+            viewPort.leftEdge = Math.round((viewPort.leftEdge + 0.1) * 100) / 100
+        }
+    } else if (x == -0.1) {
+        var viewportLeftEdge = Math.round(((viewPort.leftEdge - 0.1)) * 100) / 100
+        if (viewportLeftEdge < viewPort.leftExtreme) {
+            return
+        } else {
+            viewPort.leftEdge = Math.round((viewPort.leftEdge - 0.1) * 100) / 100
+        }
+    } else if (y == 0.1) {
+        var viewPortBottomEdge = Math.round(((viewPort.topEdge + 0.1) + (1 / currentZoom)) * 100) / 100
+        if (viewPortBottomEdge > viewPort.bottomExtreme) {
+            return
+        } else {
+            viewPort.topEdge = Math.round((viewPort.topEdge + 0.1) * 100) / 100
+        }
+    } else if (y == -0.1) {
+        var viewportTopEdge = Math.round((viewPort.topEdge - 0.1) * 100) / 100
+        if (viewportTopEdge < viewPort.topExtreme) {
+            return
+        } else {
+            viewPort.topEdge = Math.round((viewPort.topEdge - 0.1) * 100) / 100
+        }
+    }
+
+    for (var i = 0; i < components.length; i++) {
+        components[i].posX -= (x * currentZoom)
+        components[i].posY -= (y * currentZoom)
+    }
 }
 
 function nextLevel() {
-
-    if(numberOfLevel < ++currentLevel ) {
+    if(numberOfLevel < ++currentLevel) {
         currentLevel = 1
     }
     reset();
 }
 
 function previousLevel() {
-
     if(--currentLevel < 1) {
         currentLevel = numberOfLevel
     }
@@ -202,8 +439,6 @@ function previousLevel() {
 }
 
 function reset() {
-
-    deselect()
     stop()
     items.availablePieces.model.clear()
     initLevel()
@@ -211,9 +446,8 @@ function reset() {
 
 // Creates component from ListWidget to the drawing board area
 function createComponent(x, y, componentIndex) {
-
-    x = x / items.backgroundContainer.width
-    y = y / items.backgroundContainer.height
+    x = x / items.playArea.width
+    y = y / items.playArea.height
 
     var index
     if(deletedIndex.length > 0) {
@@ -229,14 +463,15 @@ function createComponent(x, y, componentIndex) {
 
     //console.log("Error loading component:", electricComponent.errorString())
     components[index] = electricComponent.createObject(
-                        items.backgroundContainer, {
+                        items.playArea, {
                             "index": index,
                             "posX": x,
                             "posY": y,
                             "imgSrc": component.imageName,
                             "toolTipTxt": component.toolTipTxt,
-                            "imgWidth": component.imageWidth,
-                            "imgHeight": component.imageHeight
+                            "imgWidth": component.imageWidth * currentZoom,
+                            "imgHeight": component.imageHeight * currentZoom,
+                            "destructible": true
                         });
 
     toolDeleteSticky = false
@@ -251,26 +486,13 @@ function createComponent(x, y, componentIndex) {
  * to make sure that an input is connected by only 1 wire.
 */
 function terminalPointSelected(terminal) {
-
     if(selectedTerminal == -1 || selectedTerminal == terminal)
         selectedTerminal = terminal
     else if((selectedTerminal.type != terminal.type) && (selectedTerminal.parent != terminal.parent)) {
         var inTerminal = terminal.type == "In" ? terminal : selectedTerminal
         var outTerminal = terminal.type == "Out" ? terminal : selectedTerminal
         if(connected[inTerminal] == undefined || connected[inTerminal] == -1) {
-            var wireComponent = Qt.createComponent("qrc:/gcompris/src/activities/digital_electricity/Wire.qml")
-            var wire = wireComponent.createObject(
-                       items.backgroundContainer, {
-                            "from": outTerminal,
-                            "to": inTerminal
-                        });
-            inTerminal.value = outTerminal.value
-            inTerminal.wires.push(wire)
-            outTerminal.wires.push(wire)
-            updateWires(inTerminal.parent.index)
-            updateWires(outTerminal.parent.index)
-            updateComponent(inTerminal.parent.index)
-            connected[inTerminal] = outTerminal
+            createWire(inTerminal, outTerminal, true)
         }
         deselect()
     }
@@ -279,6 +501,23 @@ function terminalPointSelected(terminal) {
         selectedTerminal = terminal
         terminal.selected = true
     }
+}
+
+function createWire(inTerminal, outTerminal, destructible) {
+    var wireComponent = Qt.createComponent("qrc:/gcompris/src/activities/digital_electricity/Wire.qml")
+    var wire = wireComponent.createObject(
+               items.playArea, {
+                    "from": outTerminal,
+                    "to": inTerminal,
+                    "destructible": destructible
+                });
+    inTerminal.value = outTerminal.value
+    inTerminal.wires.push(wire)
+    outTerminal.wires.push(wire)
+    updateWires(inTerminal.parent.index)
+    updateWires(outTerminal.parent.index)
+    updateComponent(inTerminal.parent.index)
+    connected[inTerminal] = outTerminal
 }
 
 /* Updates the output of the component. 'wireVisited' is used to update the value of
@@ -293,7 +532,6 @@ function updateComponent(index) {
  * an object is rotated.
 */
 function updateWires(index) {
-
     var component = components[index]
     if(component == undefined || component.noOfInputs == undefined || component.noOfOutputs == undefined)
         return
@@ -351,7 +589,6 @@ function updateWires(index) {
 }
 
 function deselect() {
-
     if(toolDeleteSticky == false) {
         toolDelete = false
         items.availablePieces.toolDelete.state = "notSelected"
@@ -372,7 +609,6 @@ function deselect() {
 }
 
 function removeComponent(index) {
-
     var component = components[index]
     for(var i = 0 ; i < component.noOfInputs ; ++i) {
         var terminal = component.inputTerminals.itemAt(i)
@@ -391,7 +627,6 @@ function removeComponent(index) {
 }
 
 function removeWire(wire) {
-
     var inTerminal = wire.to
     var outTerminal = wire.from
 
@@ -408,7 +643,6 @@ function removeWire(wire) {
 }
 
 function componentSelected(index) {
-
     selectedIndex = index
     items.availablePieces.rotateLeft.state = "canBeSelected"
     items.availablePieces.rotateRight.state = "canBeSelected"
@@ -416,19 +650,16 @@ function componentSelected(index) {
 }
 
 function rotateLeft() {
-
     components[selectedIndex].rotationAngle = -2
     components[selectedIndex].rotateComponent.start()
 }
 
 function rotateRight() {
-
     components[selectedIndex].rotationAngle = 2
     components[selectedIndex].rotateComponent.start()
 }
 
 function displayInfo() {
-
     var component = components[selectedIndex]
     var componentTruthTable = component.truthTable
     deselect()

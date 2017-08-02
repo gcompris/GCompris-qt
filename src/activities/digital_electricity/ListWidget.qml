@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 import GCompris 1.0
 import "../../core"
 import "digital_electricity.js" as Activity
@@ -39,6 +39,12 @@ Item {
     property alias rotateLeft: rotateLeft
     property alias rotateRight: rotateRight
     property alias info: info
+    property alias zoomInBtn: zoomInBtn
+    property alias zoomOutBtn: zoomOutBtn
+
+    signal hideToolbar
+
+    onHideToolbar: toolButton.showToolBar = false
 
     ListModel {
         id: mymodel
@@ -46,7 +52,7 @@ Item {
 
     Grid {
         id: view
-        width: listWidget.vert ? leftWidget.width : 2 * bar.height
+        width: listWidget.vert ? inputComponentsContainer.width : 2 * bar.height
         height: listWidget.vert ? background.height - 2 * bar.height : bar.height
         spacing: 5
         z: 20
@@ -66,7 +72,7 @@ Item {
 
         onNbDisplayedGroupChanged: {
             view.setCurrentDisplayedGroup = 0
-            refreshLeftWidget()
+            refreshInputComponentsContainer()
         }
 
         add: Transition {
@@ -91,152 +97,267 @@ Item {
                 previousNavigation = 1
         }
 
-        function refreshLeftWidget() {
+        function refreshInputComponentsContainer() {
             availablePieces.view.currentDisplayedGroup = availablePieces.view.setCurrentDisplayedGroup
             availablePieces.view.setNextNavigation()
             availablePieces.view.setPreviousNavigation()
         }
 
-        Column {
-            id: toolButtons
+        Rectangle {
+            id: toolButton
             width: listWidget.vert ? listWidget.width : listWidget.height
             height: listWidget.vert ? listWidget.width : listWidget.height
-            spacing: 10
+            color: "black"
+            radius: 100
 
-            Row {
-                spacing: view.iconSize * 0.20
+            property bool showToolBar: false
 
-                Image {
-                    id: toolDelete
-                    state: "notSelected"
-                    sourceSize.width: view.iconSize * 0.35
-                    fillMode: Image.PreserveAspectFit
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            toolDelete.state = toolDelete.state == "selected" ? "notSelected" : "selected"
-                            Activity.toolDelete = !Activity.toolDelete
-                            Activity.toolDeleteSticky = false
-                        }
-                        onDoubleClicked: {
-                            Activity.toolDeleteSticky = true
-                            Activity.toolDelete = true
-                            toolDelete.state = "selected"
-                        }
-                    }
-                    states: [
-                        State {
-                            name: "selected"
-                            PropertyChanges{
-                                target: toolDelete
-                                source: Activity.url + "deleteOn.svg"
-                            }
-                        },
-                        State {
-                            name: "notSelected"
-                            PropertyChanges {
-                                target: toolDelete
-                                source: Activity.url + "deleteOff.svg"
-                            }
-                        }
-                    ]
-                }
-
-                Image {
-                    id: info
-                    source: Activity.url + "Info.svg"
-                    sourceSize.width: view.iconSize * 0.35
-                    fillMode: Image.PreserveAspectFit
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if(!Activity.animationInProgress && parent.state == "canBeSelected") {
-                                Activity.displayInfo()
-                            }
-                        }
-                    }
-                    states: [
-                        State {
-                            name: "canBeSelected"
-                            PropertyChanges{
-                                target: info
-                                source: Activity.url + "Info.svg"
-                            }
-                        },
-                        State {
-                            name: "canNotBeSelected"
-                            PropertyChanges {
-                                target: info
-                                source: Activity.url + "InfoOff.svg"
-                            }
-                        }
-                    ]
-                }
+            GCText {
+                width: parent.width
+                fontSizeMode: Text.Fit
+                color: "white"
+                text: qsTr("Tools")
+                anchors.centerIn: parent
+                horizontalAlignment: Text.AlignHCenter
             }
 
-            Row {
-                spacing: view.iconSize * 0.20
+            MouseArea {
+                anchors.fill: parent
+                onClicked: toolButton.showToolBar = !toolButton.showToolBar
+            }
 
-                Image {
-                    id: rotateLeft
-                    sourceSize.width: view.iconSize * 0.35
-                    fillMode: Image.PreserveAspectFit
-                    state: "CanNotBeSelected"
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if(!Activity.animationInProgress && parent.state == "canBeSelected") {
-                                Activity.rotateLeft()
-                            }
-                        }
-                    }
-                    states: [
-                        State {
-                            name: "canBeSelected"
-                            PropertyChanges{
-                                target: rotateLeft
-                                source: Activity.url + "rotateLeft.svg"
-                            }
-                        },
-                        State {
-                            name: "canNotBeSelected"
-                            PropertyChanges {
-                                target: rotateLeft
-                                source: Activity.url + "rotateLeftOff.svg"
-                            }
-                        }
-                    ]
-                }
+            Rectangle {
+                id: toolsContainer
+                visible: toolButton.showToolBar
+                width: listWidget.vert ? (toolDelete.width + tools.spacing) * tools.children.length : parent.width
+                height: listWidget.vert ? parent.width : (toolDelete.height + tools.spacing) * tools.children.length
+                anchors.top: listWidget.vert ? parent.top : parent.bottom
+                anchors.left: listWidget.vert ? parent.right : parent.left
+                color: "gray"
+                radius: 50
 
-                Image {
-                    id: rotateRight
-                    sourceSize.width: view.iconSize * 0.35
-                    fillMode: Image.PreserveAspectFit
-                    state: "CanNotBeSelected"
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if(!Activity.animationInProgress && parent.state == "canBeSelected") {
-                                Activity.rotateRight()
-                            }
-                        }
+                Flow {
+                    id: tools
+                    width: parent.width
+                    height: parent.height
+
+                    property int topMarginAmt: (toolsContainer.height - toolDelete.height) / 2
+                    property int leftMarginAmt: (toolsContainer.width - toolDelete.width) / 2
+
+                    anchors {
+                        fill: parent
+                        leftMargin: listWidget.vert ? 5 : tools.leftMarginAmt
+                        topMargin: listWidget.vert ? tools.topMarginAmt : 5
                     }
-                    states: [
-                        State {
-                            name: "canBeSelected"
-                            PropertyChanges{
-                                target: rotateRight
-                                source: Activity.url + "rotateRight.svg"
+                    spacing: 10
+
+                    Image {
+                        id: toolDelete
+                        state: "notSelected"
+                        width: 100
+                        height: 100
+                        source: Activity.url + "deleteOn.svg"
+                        fillMode: Image.PreserveAspectFit
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                toolDelete.state = toolDelete.state == "selected" ? "notSelected" : "selected"
+                                Activity.toolDelete = !Activity.toolDelete
+                                Activity.toolDeleteSticky = false
                             }
-                        },
-                        State {
-                            name: "canNotBeSelected"
-                            PropertyChanges {
-                                target: rotateRight
-                                source: Activity.url + "rotateRightOff.svg"
+                            onDoubleClicked: {
+                                Activity.toolDeleteSticky = true
+                                Activity.toolDelete = true
+                                toolDelete.state = "selected"
                             }
                         }
-                    ]
+                        states: [
+                            State {
+                                name: "selected"
+                                PropertyChanges{
+                                    target: toolDelete
+                                    source: Activity.url + "deleteOn.svg"
+                                }
+                            },
+                            State {
+                                name: "notSelected"
+                                PropertyChanges {
+                                    target: toolDelete
+                                    source: Activity.url + "deleteOff.svg"
+                                }
+                            }
+                        ]
+                    }
+
+                    Image {
+                        id: info
+                        source: Activity.url + "Info.svg"
+                        width: 100
+                        height: 100
+                        fillMode: Image.PreserveAspectFit
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                if(!Activity.animationInProgress && parent.state == "canBeSelected") {
+                                    Activity.displayInfo()
+                                }
+                            }
+                        }
+                        states: [
+                            State {
+                                name: "canBeSelected"
+                                PropertyChanges {
+                                    target: info
+                                    source: Activity.url + "Info.svg"
+                                }
+                            },
+                            State {
+                                name: "canNotBeSelected"
+                                PropertyChanges {
+                                    target: info
+                                    source: Activity.url + "InfoOff.svg"
+                                }
+                            }
+                        ]
+                    }
+
+                    Image {
+                        id: rotateLeft
+                        width: 100
+                        height: 100
+                        source: Activity.url + "rotateLeft.svg"
+                        fillMode: Image.PreserveAspectFit
+                        state: "CanNotBeSelected"
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                if(!Activity.animationInProgress && parent.state == "canBeSelected") {
+                                    Activity.rotateLeft()
+                                }
+                            }
+                        }
+                        states: [
+                            State {
+                                name: "canBeSelected"
+                                PropertyChanges{
+                                    target: rotateLeft
+                                    source: Activity.url + "rotateLeft.svg"
+                                }
+                            },
+                            State {
+                                name: "canNotBeSelected"
+                                PropertyChanges {
+                                    target: rotateLeft
+                                    source: Activity.url + "rotateLeftOff.svg"
+                                }
+                            }
+                        ]
+                    }
+
+                    Image {
+                        id: rotateRight
+                        width: 100
+                        height: 100
+                        source: Activity.url + "rotateRight.svg"
+                        fillMode: Image.PreserveAspectFit
+                        state: "CanNotBeSelected"
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                if(!Activity.animationInProgress && parent.state == "canBeSelected") {
+                                    Activity.rotateRight()
+                                }
+                            }
+                        }
+                        states: [
+                            State {
+                                name: "canBeSelected"
+                                PropertyChanges{
+                                    target: rotateRight
+                                    source: Activity.url + "rotateRight.svg"
+                                }
+                            },
+                            State {
+                                name: "canNotBeSelected"
+                                PropertyChanges {
+                                    target: rotateRight
+                                    source: Activity.url + "rotateRightOff.svg"
+                                }
+                            }
+                        ]
+                    }
+
+                    Rectangle {
+                        id: zoomInBtn
+                        width: 100
+                        height: 100
+                        radius: 100
+
+                        color: "black"
+
+                        GCText {
+                            anchors.centerIn: parent
+                            text: qsTr("+")
+                            color: "white"
+                        }
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: Activity.zoomIn()
+                        }
+                        states: [
+                            State {
+                                name: "canZoomIn"
+                                PropertyChanges {
+                                    target: zoomInBtn
+                                    opacity: 1.0
+                                }
+                            },
+                            State {
+                                name: "cannotZoomIn"
+                                PropertyChanges {
+                                    target: zoomInBtn
+                                    opacity: 0.5
+                                }
+                            }
+                        ]
+                    }
+
+                    Rectangle {
+                        id: zoomOutBtn
+                        width: 100
+                        height: 100
+                        radius: 100
+
+                        color: "black"
+
+                        GCText {
+                            anchors.centerIn: parent
+                            text: qsTr("-")
+                            color: "white"
+                        }
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: Activity.zoomOut()
+                        }
+                        states: [
+                            State {
+                                name: "canZoomOut"
+                                PropertyChanges {
+                                    target: zoomOutBtn
+                                    opacity: 1.0
+                                }
+                            },
+                            State {
+                                name: "cannotZoomOut"
+                                PropertyChanges {
+                                    target: zoomOutBtn
+                                    opacity: 0.5
+                                }
+                            }
+                        ]
+                    }
                 }
             }
         }
@@ -279,7 +400,7 @@ Item {
                         repeater.currentIndex = -1
                         if(previous.opacity == 1) {
                             view.setCurrentDisplayedGroup = view.currentDisplayedGroup - view.previousNavigation
-                            view.refreshLeftWidget()
+                            view.refreshInputComponentsContainer()
                         }
                     }
                 }
@@ -297,7 +418,7 @@ Item {
                     onClicked: {
                         repeater.currentIndex = -1
                         view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation
-                        view.refreshLeftWidget()
+                        view.refreshInputComponentsContainer()
                     }
                 }
             }

@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 import "../digital_electricity.js" as Activity
 
 import GCompris 1.0
@@ -30,9 +30,9 @@ ElectricalComponent {
     noOfInputs: 7
     noOfOutputs: 0
     property variant inputTerminalPosY: [0.058,0.195,0.337,0.484,0.636,0.791,0.942]
-    property variant redBars: ["sevenSegmentDisplayA.svgz","sevenSegmentDisplayB.svgz","sevenSegmentDisplayC.svgz",
-                               "sevenSegmentDisplayD.svgz","sevenSegmentDisplayE.svgz","sevenSegmentDisplayF.svgz",
-                               "sevenSegmentDisplayG.svgz"]
+    property variant redBars: ["sevenSegmentDisplayA.svg","sevenSegmentDisplayB.svg","sevenSegmentDisplayC.svg",
+                               "sevenSegmentDisplayD.svg","sevenSegmentDisplayE.svg","sevenSegmentDisplayF.svg",
+                               "sevenSegmentDisplayG.svg"]
 
     information: qsTr("7 segment display takes 7 binary inputs in its input terminals. The display " +
                       "consists of 7 segments and each segment gets lighted according to the input. " +

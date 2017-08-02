@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="sevenSegmentDisplay3.svg"
+   viewBox="0 0 412.57487 426.36978"
+   sodipodi:version="0.32"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:version="0.91 r13725"
+   width="412.57486"
+   height="426.36978">
+  <defs
+     id="defs15" />
+  <sodipodi:namedview
+     id="base"
+     fit-margin-left="0"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="0.56557574"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="67.889681"
+     inkscape:cy="233.06642"
+     inkscape:window-maximized="1"
+     showgrid="false"
+     fit-margin-right="0"
+     inkscape:document-units="px"
+     bordercolor="#666666"
+     inkscape:window-x="-8"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:window-y="-8"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     pagecolor="#ffffff"
+     gridtolerance="10000"
+     inkscape:window-height="705"
+     showborder="false"
+     fit-margin-top="0" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(466.02639,153.48247)">
+    <g
+       id="g4200"
+       transform="matrix(1.0217142,0,0,1.0217142,-298.40183,-2.66457)">
+      <path
+         d="m 21.752499,217.04913 c 2.280263,-2.48113 9.608318,-10.24239 16.284558,-17.24773 l 12.13894,-12.7365 57.659113,0 57.6591,0 12.13895,12.7365 c 6.67624,7.00498 14.00429,14.76639 16.28456,17.24773 l 4.14596,4.51123 -90.22822,0 -90.228218,0 4.145966,-4.51123 z"
+         inkscape:connector-curvature="0"
+         style="opacity:0.3;fill:#999999;fill-opacity:1"
+         id="path2401" />
+      <path
+         d="m 13.45773,149.91789 0,-69.095888 8.324203,-7.899003 8.324204,-7.899003 2.75227,2.494495 c 1.51377,1.371988 5.82478,5.451 9.5803,9.064668 l 6.82803,6.570209 -0.0153,49.311142 -0.0152,49.31114 -11.61232,12.13895 c -6.38687,6.67624 -14.437299,15.05576 -17.889611,18.62085 l -6.277285,6.4819 0,-69.09588 z"
+         inkscape:connector-curvature="0"
+         style="opacity:0.3;fill:#999999;fill-opacity:1"
+         id="path2399" />
+      <path
+         d="m 184.18315,200.31065 -17.73711,-18.51588 -0.0177,-49.31115 -0.0177,-49.311138 6.82803,-6.570208 c 3.75552,-3.613668 8.06887,-7.694737 9.58491,-9.068924 l 2.75702,-2.498857 8.34939,8.003264 8.34938,8.003264 -0.18122,68.890199 -0.18121,68.8902 -17.73677,-18.51588 z"
+         inkscape:connector-curvature="0"
+         style="opacity:0.3;fill:#999999;fill-opacity:1"
+         id="path2397" />
+      <path
+         d="m 43.026687,70.871117 -9.57853,-9.253331 9.47143,-8.952251 9.47143,-8.95225 55.446223,0 55.44622,0 9.47142,8.95225 9.47143,8.952251 -9.57852,9.253331 -9.57853,9.25333 -55.2299,0 -55.229893,0 -9.57853,-9.25333 z"
+         inkscape:connector-curvature="0"
+         style="opacity:0.3;fill:#999999;fill-opacity:1"
+         id="path2395" />
+      <path
+         d="m 21.798601,50.745929 -8.347963,-7.974538 0.15437,-68.329888 0.154369,-68.32989 17.75308,16.96226 17.75307,16.96225 0,50.2509099 0,50.2509051 -9.55938,9.09162 -9.55937,9.09162 -8.347963,-7.974539 z"
+         inkscape:connector-curvature="0"
+         style="opacity:0.3;fill:#999999;fill-opacity:1"
+         id="path2393" />
+      <path
+         d="m 175.9203,49.547284 -9.56186,-9.174603 0.0213,-50.1445181 0.0213,-50.1445199 12.29037,-11.72403 c 6.75994,-6.44822 14.81675,-14.19437 17.90486,-17.21369 l 5.61413,-5.48965 -2.5e-4,68.57103 -2.1e-4,68.571039 -8.36463,7.960709 -8.36464,7.960708 -9.56185,-9.174603 z"
+         inkscape:connector-curvature="0"
+         style="opacity:0.3;fill:#999999;fill-opacity:1"
+         id="path2391" />
+      <path
+         d="m 34.494317,-80.253967 -18.030043,-17.14595 45.484693,-0.15558 c 25.01765,-0.0856 66.134743,-0.0856 91.370133,0 l 45.88542,0.15558 -18.03004,17.14595 -18.03004,17.14595 -55.31146,0 -55.311463,0 -18.03004,-17.14595 z"
+         inkscape:connector-curvature="0"
+         style="opacity:0.3;fill:#999999;fill-opacity:1"
+         id="path2470" />
+    </g>
+    <rect
+       id="rect2418-6"
+       style="fill:#b3b3b3;fill-opacity:0.62251659;fill-rule:evenodd;stroke:#000000;stroke-width:2.84599996;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-ydpi="90"
+       inkscape:export-filename="F:\Aviation\SVGs\EGT\LCDs.png"
+       ry="0"
+       height="402.49893"
+       width="266.64017"
+       inkscape:export-xdpi="90"
+       y="-140.59807"
+       x="-321.51471" />
+    <path
+       d="m -420.23034,250.08871 96.61196,0"
+       style="fill:none;stroke:#000000;stroke-width:6.67672396px"
+       id="path2906"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:5.58755302;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0.05298013"
+       id="path5637"
+       cx="441.35287"
+       cy="-248.2139"
+       r="21.879631"
+       transform="scale(-1,-1)" />
+    <path
+       d="m -420.23034,184.55353 96.61196,0"
+       style="fill:none;stroke:#000000;stroke-width:6.67672396px"
+       id="path2906-6"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:5.58755302;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0.05298013"
+       id="path5637-3"
+       cx="441.35287"
+       cy="-183.96336"
+       r="21.879631"
+       transform="scale(-1,-1)" />
+    <path
+       d="m -420.23034,53.03601 96.61196,0"
+       style="fill:none;stroke:#000000;stroke-width:6.67672396px"
+       id="path2906-8"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:5.58755302;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0.05298013"
+       id="path5637-31"
+       cx="441.35287"
+       cy="-52.7673"
+       r="21.879631"
+       transform="scale(-1,-1)" />
+    <path
+       d="m -421.11946,119.06728 97.50104,0"
+       style="fill:none;stroke:#000000;stroke-width:6.73816967px"
+       id="path2906-5-6"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:5.63897562;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0.05298013"
+       id="path5637-2-2"
+       cx="441.12592"
+       cy="-117.61473"
+       r="22.080988"
+       transform="scale(-1,-1)" />
+    <path
+       d="m -420.23034,-9.3679398 96.61196,0"
+       style="fill:none;stroke:#000000;stroke-width:6.67672396px;stroke-opacity:1"
+       id="path2906-6-3"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:5.58755302;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0"
+       id="path5637-3-8"
+       cx="441.35287"
+       cy="9.7138033"
+       r="21.879631"
+       transform="scale(-1,-1)" />
+    <path
+       d="m -420.23034,-68.42817 96.61196,0"
+       style="fill:none;stroke:#000000;stroke-width:6.67672396px"
+       id="path2906-8-4"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:5.58755302;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0.05298013"
+       id="path5637-31-2"
+       cx="441.35287"
+       cy="70.374207"
+       r="21.879631"
+       transform="scale(-1,-1)" />
+    <path
+       d="m -420.23034,-130.83203 96.61196,0"
+       style="fill:none;stroke:#000000;stroke-width:6.67672396px"
+       id="path2906-6-3-5"
+       inkscape:connector-curvature="0" />
+    <circle
+       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:5.58755302;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0.05298013"
+       id="path5637-3-8-9"
+       cx="441.35287"
+       cy="128.80907"
+       r="21.879631"
+       transform="scale(-1,-1)" />
+  </g>
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2012-03-15T11:54:43</dc:date>
+        <dc:description>A simple seven segment display</dc:description>
+        <dc:source>https://openclipart.org/detail/168838/seven-segment-display-gray-7-by-alex8664</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>alex8664</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>display</rdf:li>
+            <rdf:li>lcd</rdf:li>
+            <rdf:li>number</rdf:li>
+            <rdf:li>seven segment</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

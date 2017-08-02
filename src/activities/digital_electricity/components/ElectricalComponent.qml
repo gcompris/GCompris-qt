@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 import "../digital_electricity.js" as Activity
 
 import GCompris 1.0
@@ -41,6 +41,7 @@ Image {
     property int initialAngle: 0
     property int startingAngle: 0
     property double terminalSize
+    property bool destructible
 
     property alias rotateComponent: rotateComponent
 
@@ -116,7 +117,11 @@ Image {
         }
         onClicked: {
             if(Activity.toolDelete || Activity.toolDeleteSticky) {
-                Activity.removeComponent(index)
+                if (destructible) {
+                    Activity.removeComponent(index)
+                } else {
+                    Activity.deselect()
+                }
             }
             else {
                 if(imgSrc == "switchOff.svg") {

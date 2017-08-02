@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 import GCompris 1.0
 import "digital_electricity.js" as Activity
 
@@ -75,8 +75,8 @@ Item {
 
             property double smallWidth: widthInColumn
             property double smallHeight: heightInColumn
-            property double fullWidth: imgWidth * backgroundContainer.width
-            property double fullHeight: imgHeight * backgroundContainer.height
+            property double fullWidth: imgWidth * playArea.width
+            property double fullHeight: imgHeight * playArea.height
             property QtObject tileImageParent
             property bool small: true
 
@@ -87,8 +87,8 @@ Item {
             }
 
             function toFull() {
-                width = fullWidth
-                height = fullHeight
+                width = fullWidth * Activity.currentZoom
+                height = fullHeight * Activity.currentZoom
                 small = false
             }
 
@@ -122,8 +122,8 @@ Item {
                     if (pressedOnce) {
                         pressedOnce = false
                         item.selected = false
-                        var coord = backgroundContainer.mapFromItem(tileImage.parent, parent.x, parent.y)
-                        if(coord.x > 0 && (backgroundContainer.width - coord.x > tileImage.fullWidth))
+                        var coord = playArea.mapFromItem(tileImage.parent, parent.x, parent.y)
+                        if(coord.x > 0 && ((playArea.width/Activity.currentZoom) - coord.x > tileImage.fullWidth))
                             Activity.createComponent(coord.x, coord.y, index)
                         tileImage.anchors.centerIn = tile
                         tileImage.toSmall()

@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 
 QtObject {
     property variant components : [
@@ -146,7 +146,7 @@ QtObject {
                            ['1','0','0','1','1','1','1','1','0','1','1']]
         },
         {
-            "imgName": "sevenSegmentDisplay.svgz",
+            "imgName": "sevenSegmentDisplay.svg",
             "imgWidth": 0.18,
             "imgHeight": 0.4,
             "toolTipText": qsTr("7 Segment Display"),

@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 import "digital_electricity.js" as Activity
 
 import GCompris 1.0
@@ -29,14 +29,16 @@ Rectangle {
 
     property QtObject from
     property QtObject to
+    property bool destructible
 
     height: 5
-    color: from.value == 0 ? "Red" : "Green"
+    color: from.value == 0 ? "red" : "green"
     radius: height / 2
     transformOrigin: Item.Left
 
     MouseArea {
         id: mouseArea
+        enabled: destructible
         width: parent.width
         height: parent.height * 3
         anchors.centerIn: parent

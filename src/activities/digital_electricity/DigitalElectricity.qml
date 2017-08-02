@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
@@ -31,6 +31,9 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    property string mode: "tutorial"
+    property bool isTutorialMode: mode == "tutorial" ? true : false
+
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
@@ -41,15 +44,37 @@ ActivityBase {
         property bool vert: background.width > background.height
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
+        }
+
+        Keys.onPressed: {
+            if (event.key == Qt.Key_Plus) {
+                Activity.zoomIn()
+            }
+            if (event.key == Qt.Key_Minus) {
+                Activity.zoomOut()
+            }
+            if (event.key == Qt.Key_Right) {
+                Activity.move(Activity.direction.RIGHT)
+            }
+            if (event.key == Qt.Key_Left) {
+                Activity.move(Activity.direction.LEFT)
+            }
+            if (event.key == Qt.Key_Up) {
+                Activity.move(Activity.direction.UP)
+            }
+            if (event.key == Qt.Key_Down) {
+                Activity.move(Activity.direction.DOWN)
+            }
         }
 
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
             property Item main: activity.main
-            property alias backgroundContainer: backgroundContainer
+            property alias playArea: playArea
             property alias bar: bar
             property alias bonus: bonus
             property alias availablePieces: availablePieces
@@ -58,7 +83,10 @@ ActivityBase {
             property alias truthTablesModel: truthTablesModel
             property alias displayTruthTable: inputOutputTxt.displayTruthTable
             property alias dataset: dataset
+            property alias tutorialDataset: tutorialDataset
             property alias infoImage: infoImage
+            property bool isTutorialMode: activity.isTutorialMode
+            property alias tutorialInstruction: tutorialInstruction
         }
 
         Loader {
@@ -66,11 +94,29 @@ ActivityBase {
             asynchronous: false
         }
 
+        Dataset {
+            id: tutorialDataset
+        }
+
+        IntroMessage {
+            id: tutorialInstruction
+            intro: []
+            anchors {
+                top: background.vert ? parent.top : inputComponentsContainer.bottom
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: background.vert ? inputComponentsContainer.right : parent.left
+                leftMargin: 5
+            }
+            z: 5
+        }
+
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         Rectangle {
-            id: backgroundContainer
+            id: playArea
 
             color: "#ffffb3"
             x: background.vert ? 90 * ApplicationInfo.ratio : 0
@@ -256,7 +302,7 @@ ActivityBase {
         }
 
         Rectangle {
-            id: leftWidget
+            id: inputComponentsContainer
             width: background.vert ?
                        90 * ApplicationInfo.ratio :
                        background.width
@@ -271,6 +317,7 @@ ActivityBase {
                 id: availablePieces
                 vert: background.vert ? true : false
             }
+            z: 10
         }
 
         Rectangle {
@@ -278,7 +325,7 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 bottomMargin: 10
-                left: leftWidget.left
+                left: inputComponentsContainer.left
                 leftMargin: 5
             }
             width: toolTipTxt.width + 10
@@ -317,19 +364,92 @@ ActivityBase {
             }
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias modesComboBox: modesComboBox
+
+                    property var availableModes: [
+                        { "text": qsTr("Tutorial Mode"), "value": "tutorial" },
+                        { "text": qsTr("Free Mode"), "value": "free" },
+                    ]
+
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: modesComboBox
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select your Mode")
+                        }
+                    }
+                }
+            }
+
+            onClose: home();
+
+            onLoadData: {
+                if(dataToSave && dataToSave["modes"]) {
+                    activity.mode = dataToSave["modes"];
+                }
+            }
+
+            onSaveData: {
+                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modesComboBox.currentIndex].value;
+                if (newMode !== activity.mode) {
+                    activity.mode = newMode;
+                    dataToSave = {"modes": activity.mode};
+                    Activity.reset()
+                }
+            }
+
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length; i ++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === activity.mode) {
+                        dialogActivityConfig.configItem.modesComboBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
 
+        BarButton {
+            id: okButton
+            visible: activity.isTutorialMode
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: 10 * ApplicationInfo.ratio
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+
+            onClicked: Activity.checkAnswer()
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload}
+            content: BarEnumContent { value: help | home | ( activity.isTutorialMode ? level : 0) | reload | config}
             onHelpClicked: {displayDialog(dialogHelp)}
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.reset()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
