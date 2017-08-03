@@ -61,7 +61,7 @@ Flow {
                     property string imageSource: image.source.toString()
 
                     onPressed: {
-                        items.instructionsVisible = false
+                        items.instructionsBoxVisible = false
                         positionX = point1.x
                         positionY = point1.y
                         var imagePos = image.mapToItem(null,0,0)

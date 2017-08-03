@@ -62,7 +62,7 @@ Image {
         home()
     }
 
-    Keys.enabled : ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? false : true
+    Keys.enabled : (!items.instructionsVisible) ? false : true
     Keys.onPressed: {
         if(event.key === Qt.Key_Space) {
             menuGrid.currentItem.selectCurrentItem()
@@ -103,7 +103,7 @@ Image {
     property int iconWidth: 180 * ApplicationInfo.ratio
     property int iconHeight: 180 * ApplicationInfo.ratio
 
-    property int levelCellWidth: background.width / Math.floor(background.width / iconWidth )
+    property int levelCellWidth: background.width / Math.floor(background.width / iconWidth)
     property int levelCellHeight: iconHeight * 1.4
 
     ListModel {
@@ -138,7 +138,7 @@ Image {
             width: levelCellWidth - menuGrid.spacing
             height: levelCellHeight - menuGrid.spacing
             property string sectionName: name
-            opacity: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? 0.25 : 1
+            opacity: (!items.instructionsVisible) ? 0.25 : 1
 
             Rectangle {
                 id: activityBackground
@@ -168,7 +168,7 @@ Image {
                     maximumLineCount: 2
                     wrapMode: Text.WordWrap
                     text: name
-                    opacity: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? 0 : 1
+                    opacity: (!items.instructionsVisible) ? 0 : 1
                 }
             }
 
@@ -178,7 +178,7 @@ Image {
             }
             MouseArea {
                 anchors.fill: activityBackground
-                enabled: menuScreen.started && (!(!items.instructionsVisible && !items.scoreVisible) && !(!items.instructionsVisible && items.scoreVisible))
+                enabled: menuScreen.started && items.instructionsVisible
                 onClicked: selectCurrentItem()
             }
 
@@ -217,7 +217,7 @@ Image {
             color:  "#AA41AAC4"
             border.width: 3
             border.color: "black"
-            visible: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? false : true
+            visible: (!items.instructionsVisible) ? false : true
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }

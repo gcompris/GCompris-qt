@@ -64,6 +64,7 @@ ActivityBase {
             property alias dialogActivityConfig: dialogActivityConfig
             property bool scoreVisible: true
             property bool instructionsVisible: true
+            property bool instructionsBoxVisible: instructionsVisible
             property bool categoryImageVisible: true
             property bool categoryImageChecked: categoryImageVisible
             property bool scoreChecked: scoreVisible
@@ -99,10 +100,10 @@ ActivityBase {
         MenuScreen {
             id: menuScreen
 
-            File {
-                id: file
-                onError: console.error("File error: " + msg);
-            }
+        File {
+            id: file
+            onError: console.error("File error: " + msg);
+        }
         }
 
         Directory {
@@ -133,7 +134,6 @@ ActivityBase {
                         onCheckedChanged: {
                             items.instructionsVisible = instructionsBox.checked
                         }
-
                     }
 
                     GCDialogCheckBox {
@@ -158,10 +158,10 @@ ActivityBase {
                 }
             }
             onLoadData: {
-                if(dataToSave && dataToSave["scoreVisible"]) {
+                if(dataToSave && dataToSave["categoryImageVisible"]) {
                     items.scoreVisible = dataToSave["scoreVisible"]
                     items.instructionsVisible = dataToSave["instructionsVisible"]
-                    items.categoryImageVisible = dataToSave["categoryImageVisible"]
+                    items.categoryImageVisible = (dataToSave["categoryImageVisible"] == "true") ? true : false
                 }
                 if(dataToSave && dataToSave["displayUpdateDialogAtStart"])
                     items.displayUpdateDialogAtStart = (dataToSave["displayUpdateDialogAtStart"] == "true") ? true : false
@@ -172,9 +172,10 @@ ActivityBase {
                 dataToSave["displayUpdateDialogAtStart"] = items.displayUpdateDialogAtStart ? "true" : "false"
                 dataToSave["scoreVisible"] = items.scoreVisible
                 dataToSave["instructionsVisible"] = items.instructionsVisible
-                dataToSave["categoryImageVisible"] = items.categoryImageVisible
+                dataToSave["categoryImageVisible"] = items.categoryImageVisible ? "true" : "false"
             }
             onClose: {
+                menuScreen.iAmReady.visible = !items.instructionsVisible
                 home()
             }
         }

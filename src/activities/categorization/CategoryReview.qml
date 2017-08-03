@@ -102,7 +102,7 @@ Item {
             anchors.leftMargin: 0.32 * parent.width
             anchors.rightMargin: 0.03 * parent.width
             color: "black"
-            opacity: items.instructionsVisible ? 0.85 : 0
+            opacity: items.instructionsVisible && items.instructionsBoxVisible ? 0.85 : 0
             z: 3
             radius: 10
             border.width: 2
@@ -131,7 +131,7 @@ Item {
         GCText {
             id: instructions
             text: (items.instructionsVisible && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions) ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
-            visible: items.instructionsVisible
+            visible: items.instructionsVisible && items.instructionsBoxVisible
             anchors.fill: instructionBox
             anchors.bottom: instructionBox.bottom
             fontSizeMode: Text.Fit

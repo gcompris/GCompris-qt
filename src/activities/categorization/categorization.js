@@ -73,7 +73,7 @@ function start() {
     items.menuModel.append(categories)
     savedPropertiesToCategories(items.dialogActivityConfig.dataToSave)
     sortByFavorites()
-    items.menuScreen.iAmReady.visible = !items.instructionsVisible
+    items.menuScreen.iAmReady.visible =((!items.scoreVisible && !items.instructionsVisible) || (!items.instructionsVisible && items.scoreVisible))
     items.menuScreen.start()
 }
 
@@ -148,6 +148,7 @@ function initLevel() {
     items.categoryReview.score.currentSubLevel = 0
     getCategoryLevels(index);
     numberOfLevel = items.details.length;
+    items.instructionsBoxVisible = items.instructionsVisible
     items.categoryReview.leftZone.clear();
     items.categoryReview.rightZone.clear();
     items.categoryReview.start();
