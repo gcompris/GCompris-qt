@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop">
   <id>org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="ca">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="ca-valencia">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="de">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="en-GB">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="es">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="et">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="fr">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="it">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="nl">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="nn">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="pl">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="pt">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="pt-BR">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="ro">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="ru">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="sk">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="sv">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="tr">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="uk">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="x-test">xxorg.kde.gcompris.desktopxx</id>
+  <id xml:lang="ca">org.kde.gcompris.desktop</id>
+  <id xml:lang="ca-valencia">org.kde.gcompris.desktop</id>
+  <id xml:lang="de">org.kde.gcompris.desktop</id>
+  <id xml:lang="en-GB">org.kde.gcompris.desktop</id>
+  <id xml:lang="es">org.kde.gcompris.desktop</id>
+  <id xml:lang="et">org.kde.gcompris.desktop</id>
+  <id xml:lang="fr">org.kde.gcompris.desktop</id>
+  <id xml:lang="it">org.kde.gcompris.desktop</id>
+  <id xml:lang="nl">org.kde.gcompris.desktop</id>
+  <id xml:lang="nn">org.kde.gcompris.desktop</id>
+  <id xml:lang="pl">org.kde.gcompris.desktop</id>
+  <id xml:lang="pt">org.kde.gcompris.desktop</id>
+  <id xml:lang="pt-BR">org.kde.gcompris.desktop</id>
+  <id xml:lang="ro">org.kde.gcompris.desktop</id>
+  <id xml:lang="ru">org.kde.gcompris.desktop</id>
+  <id xml:lang="sk">org.kde.gcompris.desktop</id>
+  <id xml:lang="sv">org.kde.gcompris.desktop</id>
+  <id xml:lang="tr">org.kde.gcompris.desktop</id>
+  <id xml:lang="uk">org.kde.gcompris.desktop</id>
+  <id xml:lang="x-test">xxorg.kde.gcompris.desktopxx</id>
   <metadata_license>CC0-1.0</metadata_license>
   <metadata_license xml:lang="ca">CC0-1.0</metadata_license>
   <metadata_license xml:lang="ca-valencia">CC0-1.0</metadata_license>
@@ -794,33 +794,6 @@
   <url type="bugtracker" xml:lang="zh-CN">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="bugtracker" xml:lang="zh-TW">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <updatecontact>gcompris-devel@kde.org</updatecontact>
-  <updatecontact xml:lang="ca">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="ca-valencia">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="cs">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="de">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="en-GB">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="es">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="et">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="fi">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="fr">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="gl">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="it">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="ko">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="nl">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="nn">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="pl">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="pt">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="pt-BR">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="ro">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="ru">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="sk">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="sl">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="sv">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="tr">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="uk">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="x-test">xxbruno.coudoin@gcompris.netxx</updatecontact>
-  <updatecontact xml:lang="zh-CN">bruno.coudoin@gcompris.net</updatecontact>
-  <updatecontact xml:lang="zh-TW">bruno.coudoin@gcompris.net</updatecontact>
   <project_group>KDE</project_group>
   <provides>
     <binary>gcompris-qt</binary>
