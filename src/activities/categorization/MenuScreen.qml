@@ -62,7 +62,7 @@ Image {
         home()
     }
 
-    Keys.enabled : (items.mode == "expert") ? false : true
+    Keys.enabled : ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? false : true
     Keys.onPressed: {
         if(event.key === Qt.Key_Space) {
             menuGrid.currentItem.selectCurrentItem()
@@ -127,7 +127,7 @@ Image {
         ReadyButton {
             id: iAmReady
             focus: true
-            visible: items.iAmReadyChecked
+            visible: (!items.instructionsVisible)
             onClicked: {
                 Activity.startCategory()
             }
@@ -138,7 +138,7 @@ Image {
             width: levelCellWidth - menuGrid.spacing
             height: levelCellHeight - menuGrid.spacing
             property string sectionName: name
-            opacity: (items.mode == "expert") ? 0.25 : 1
+            opacity: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? 0.25 : 1
 
             Rectangle {
                 id: activityBackground
@@ -168,7 +168,7 @@ Image {
                     maximumLineCount: 2
                     wrapMode: Text.WordWrap
                     text: name
-                    opacity: (items.mode == "expert") ? 0 : 1
+                    opacity: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? 0 : 1
                 }
             }
 
@@ -178,7 +178,7 @@ Image {
             }
             MouseArea {
                 anchors.fill: activityBackground
-                enabled: menuScreen.started && items.mode !== "expert"
+                enabled: menuScreen.started && (!(!items.instructionsVisible && !items.scoreVisible) && !(!items.instructionsVisible && items.scoreVisible))
                 onClicked: selectCurrentItem()
             }
 
@@ -200,7 +200,7 @@ Image {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-		                for(var i = 0; i < items.menuModel.count; i++) {
+                        for(var i = 0; i < items.menuModel.count; i++) {
                             var category = items.menuModel.get(i)
                             var categoryIndex = category.index
                             if(index == categoryIndex)
@@ -217,7 +217,7 @@ Image {
             color:  "#AA41AAC4"
             border.width: 3
             border.color: "black"
-            visible: (items.mode == "expert") ? false : true
+            visible: ((!items.instructionsVisible && !items.scoreVisible) || (!items.instructionsVisible && items.scoreVisible)) ? false : true
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }

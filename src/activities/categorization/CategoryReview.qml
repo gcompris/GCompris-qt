@@ -59,7 +59,6 @@ Item {
             x: 0.015 * parent.width
             z: 2
             y: 0.05 * parent.height
-           // anchors.topMargin: 0.2 * categoryBackground.height
         }
 
         Rectangle {
@@ -76,7 +75,7 @@ Item {
             x: leftScreen.width + middleScreen.width + 0.01 * parent.width
             z: 2
             anchors.top: categoryBackground.top
-            anchors.topMargin: items.mode != "expert" ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
+            anchors.topMargin: (items.categoryImageVisible || items.scoreVisible) ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
         }
 
         Rectangle {
@@ -131,7 +130,7 @@ Item {
 
         GCText {
             id: instructions
-            text: items.mode !== "expert" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
+            text: (items.instructionsVisible && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions) ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
             visible: items.instructionsVisible
             anchors.fill: instructionBox
             anchors.bottom: instructionBox.bottom
@@ -145,13 +144,11 @@ Item {
 
         Image {
             id: categoryImage
-            fillMode: Image.PreserveAspectFit
             source: items.details && items.details[bar.level-1] && items.details[bar.level-1].image ? items.details[bar.level-1].image : ""
-            sourceSize.width: horizontalLayout ? rightZone.width * 0.35 : rightZone.width * 0.35
-            width: sourceSize.width
-            height: sourceSize.width
+            width: horizontalLayout ? rightZone.width * 0.35 : rightZone.width * 0.35
+            height: horizontalLayout ? rightZone.height * 0.18 : rightZone.height * 0.15
             y: 0.015*parent.height
-            visible: items.categoryImageChecked
+            visible: items.categoryImageVisible
             anchors {
                 left: middleScreen.right
                 leftMargin: 0.15 * rightZone.width
@@ -196,7 +193,7 @@ Item {
         Score {
             id: score
             fontSize: horizontalLayout ? 0.013 * parent.width : 0.02 * parent.width
-            visible: items.scoreChecked
+            visible: items.scoreVisible
             height: horizontalLayout ? 0.1 * parent.height : 0.06 * parent.height
             width: horizontalLayout ? 0.015 * parent.width : parent.width
             anchors {
@@ -218,7 +215,7 @@ Item {
     }
 
     function stop() {
-        if(items.mode == "expert")
+        if(!items.instructionsVisible)
             items.menuScreen.iAmReady.visible = true
         focus = false
         rootItem.visible = false

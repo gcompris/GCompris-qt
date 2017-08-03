@@ -62,26 +62,28 @@ ActivityBase {
             property alias menuScreen: menuScreen
             property alias menuModel: menuScreen.menuModel
             property alias dialogActivityConfig: dialogActivityConfig
-            property string mode: "easy"
+            property bool scoreVisible: true
             property bool instructionsVisible: true
-            property bool categoryImageChecked: (mode === "easy" || mode === "medium")
-            property bool scoreChecked: (mode === "easy")
-            property bool iAmReadyChecked: (mode === "expert")
+            property bool categoryImageVisible: true
+            property bool categoryImageChecked: categoryImageVisible
+            property bool scoreChecked: scoreVisible
+            property bool instructionsChecked: instructionsVisible
             property bool displayUpdateDialogAtStart: true
             property var details
             property bool categoriesFallback
             property alias file: file
             property var categories: directory.getFiles(boardsUrl)
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         function hideBar() {
             barAtStart = ApplicationSettings.isBarHidden;
             if(categoryReview.width > categoryReview.height)
                 ApplicationSettings.isBarHidden = false;
-            else 
+            else
                 ApplicationSettings.isBarHidden = true;
         }
-        
+
         onStart: {
             Activity.init(items, boardsUrl)
             dialogActivityConfig.getInitialConfiguration()
@@ -93,14 +95,14 @@ ActivityBase {
             dialogActivityConfig.saveDatainConfiguration()
             ApplicationSettings.isBarHidden = barAtStart;
         }
-        
+
         MenuScreen {
             id: menuScreen
 
-        File {
-            id: file
-            onError: console.error("File error: " + msg);
-        }
+            File {
+                id: file
+                onError: console.error("File error: " + msg);
+            }
         }
 
         Directory {
@@ -111,10 +113,6 @@ ActivityBase {
             id: categoryReview
         }
 
-        ExclusiveGroup {
-            id: configOptions
-        }
-
         DialogActivityConfig {
             id: dialogActivityConfig
             content: Component {
@@ -123,73 +121,69 @@ ActivityBase {
                     spacing: 5
                     width: dialogActivityConfig.width
                     height: dialogActivityConfig.height
-                    property alias easyModeBox: easyModeBox
-                    property alias mediumModeBox: mediumModeBox
-                    property alias expertModeBox: expertModeBox
+                    property alias instructionsBox: instructionsBox
+                    property alias scoreBox: scoreBox
+                    property alias categoryImageBox: categoryImageBox
 
                     GCDialogCheckBox {
-                        id: easyModeBox
+                        id: instructionsBox
                         width: column.width - 50
-                        text: qsTr("Instructions and score visible")
-                        checked: (items.mode == "easy") ? true : false
-                        exclusiveGroup: configOptions
+                        text: qsTr("Instructions visible")
+                        checked: items.instructionsVisible
                         onCheckedChanged: {
-                            if(easyModeBox.checked) {
-                                items.mode = "easy"
-                                menuScreen.iAmReady.visible = false
-                            }
+                            items.instructionsVisible = instructionsBox.checked
+                        }
+
+                    }
+
+                    GCDialogCheckBox {
+                        id: scoreBox
+                        width: instructionsBox.width
+                        text: qsTr("Score visible")
+                        checked: items.scoreVisible
+                        onCheckedChanged: {
+                            items.scoreVisible = scoreBox.checked
                         }
                     }
 
                     GCDialogCheckBox {
-                        id: mediumModeBox
-                        width: easyModeBox.width
-                        text: qsTr("Instructions visible and score invisible")
-                        checked: (items.mode == "medium") ? true : false
-                        exclusiveGroup: configOptions
+                        id: categoryImageBox
+                        width: instructionsBox.width
+                        text: qsTr("Category image visible")
+                        checked: items.categoryImageChecked
                         onCheckedChanged: {
-                            if(mediumModeBox.checked) {
-                                items.mode = "medium"
-                                menuScreen.iAmReady.visible = false
-                            }
-                        }
-                    }
-
-                    GCDialogCheckBox {
-                        id: expertModeBox
-                        width: easyModeBox.width
-                        text: qsTr("Instructions and score invisible")
-                        checked: (items.mode == "expert") ? true : false
-                        exclusiveGroup: configOptions
-                        onCheckedChanged: {
-                            if(expertModeBox.checked) {
-                                items.mode = "expert"
-                                menuScreen.iAmReady.visible = true
-                            }
+                            items.categoryImageVisible = categoryImageBox.checked
                         }
                     }
                 }
             }
             onLoadData: {
-                if(dataToSave && dataToSave["mode"])
-                    items.mode = dataToSave["mode"]
+                if(dataToSave && dataToSave["scoreVisible"]) {
+                    items.scoreVisible = dataToSave["scoreVisible"]
+                    items.instructionsVisible = dataToSave["instructionsVisible"]
+                    items.categoryImageVisible = dataToSave["categoryImageVisible"]
+                }
                 if(dataToSave && dataToSave["displayUpdateDialogAtStart"])
                     items.displayUpdateDialogAtStart = (dataToSave["displayUpdateDialogAtStart"] == "true") ? true : false
             }
 
             onSaveData: {
                 dataToSave["data"] = Activity.categoriesToSavedProperties(dataToSave)
-                dataToSave["mode"] = items.mode
                 dataToSave["displayUpdateDialogAtStart"] = items.displayUpdateDialogAtStart ? "true" : "false"
+                dataToSave["scoreVisible"] = items.scoreVisible
+                dataToSave["instructionsVisible"] = items.instructionsVisible
+                dataToSave["categoryImageVisible"] = items.categoryImageVisible
             }
-            onClose: home()
+            onClose: {
+                home()
+            }
         }
 
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
-        
+
         Bar {
             id: bar
             content: menuScreen.started ? withConfig : withoutConfig

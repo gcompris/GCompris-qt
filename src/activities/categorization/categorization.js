@@ -40,6 +40,7 @@ var boardsUrl
 var answerTable = {}
 var totalImages
 var fileName = ":/gcompris/data/words/animals/camel.jpg"
+var noInstructionCategoryIndex
 
 function init(items_,boardsUrl_) {
     boardsUrl = boardsUrl_
@@ -72,6 +73,7 @@ function start() {
     items.menuModel.append(categories)
     savedPropertiesToCategories(items.dialogActivityConfig.dataToSave)
     sortByFavorites()
+    items.menuScreen.iAmReady.visible = !items.instructionsVisible
     items.menuScreen.start()
 }
 
@@ -130,6 +132,7 @@ function startCategory() {
     items.menuScreen.stop()
     currentLevel = 0
     items.bar.level = 0
+    noInstructionCategoryIndex = Math.floor(Math.random() * expertCategories.length)
     initLevel()
 }
 
@@ -143,7 +146,6 @@ function storeCategoriesLevels(index_) {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.categoryReview.score.currentSubLevel = 0
-    items.instructionsVisible = true
     getCategoryLevels(index);
     numberOfLevel = items.details.length;
     items.categoryReview.leftZone.clear();
@@ -202,7 +204,7 @@ function getCategoryLevels() {
     var randomBad = 0;
     items.categoryReview.middleZone.clear()
     /* If easy or medium mode is selected, store the details of levels of category of that respective index in items.details. */
-    if(items.mode !== "expert") {
+     if((items.scoreVisible && items.instructionsVisible) || (items.instructionsVisible && !items.scoreVisible)) {
         items.details = lessons[index].map(function(ele) {
             return { "instructions": ele.instructions, "image": ele.image,
                 "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad,
@@ -210,8 +212,17 @@ function getCategoryLevels() {
                 "bad": ele.bad ,"prefix": ele.prefix }
         });
     }
+
+     else if(!items.instructionsVisible && items.scoreVisible) {
+             items.details = lessons[noInstructionCategoryIndex].map(function(ele) {
+                 return { "instructions": ele.instructions, "image": ele.image,
+                     "numberOfGood": ele.maxNumberOfGood, "numberofBad": ele.maxNumberOfBad,
+                     "categoryImages": ele.levelImages ,"good": ele.good,
+                     "bad": ele.bad ,"prefix": ele.prefix }
+        });
+    }
     // If expert mode is selected, select a random level (selectedLevel) from a random category (selectedCategory)
-    else if(items.mode === "expert") {
+    else if(!items.instructionsVisible && !items.scoreVisible) {
         var selectedCategory = Math.floor(Math.random() * expertCategories.length)
         var selectedLevel = []
         selectedLevel[0] = expertCategories[selectedCategory][Math.floor(Math.random() * expertCategories[selectedCategory].length)]
