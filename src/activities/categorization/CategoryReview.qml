@@ -56,10 +56,10 @@ Item {
 
         Zone {
             id:leftZone
-            x: 0.015 * parent.width
+            x: 0.012 * middleScreen.width
             z: 2
             y: 0.05 * parent.height
-           // anchors.topMargin: 0.2 * categoryBackground.height
+            spacing: x
         }
 
         Rectangle {
@@ -73,7 +73,8 @@ Item {
 
         Zone {
             id: rightZone
-            x: leftScreen.width + middleScreen.width + 0.01 * parent.width
+            spacing: leftZone.x
+            x: leftScreen.width + middleScreen.width + spacing 
             z: 2
             anchors.top: categoryBackground.top
             anchors.topMargin: items.mode != "expert" ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
