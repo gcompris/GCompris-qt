@@ -40,13 +40,13 @@ Flow {
         model: zoneModel
         Item {
             id: item
-            width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.49
+            width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.48
             height: horizontalLayout ? categoryBackground.height * 0.2 : categoryBackground.height * 0.15
             opacity: 1
             Image {
                 id: image
                 fillMode: Image.PreserveAspectFit
-                sourceSize.width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.49
+                sourceSize.width: horizontalLayout ? middleZone.width * 0.32 : middleZone.width * 0.48
                 width: sourceSize.width
                 height: sourceSize.width
                 source: name
