@@ -229,9 +229,9 @@ endif()
 if(WIN32)
 # install libEGL.dll, libGLESv2.dll, d3dcompiler_47.dll from Qt installation. Not sure if there is a clean way to get them...
 # Qt5_Dir is like C:/Qt/Qt5.5.1/5.5/mingw492_32/lib/cmake/Qt5
-    install(FILES ${Qt5_DIR}/../../../bin/libEGL.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../bin/libGLESv2.dll DESTINATION bin)
-    install(FILES ${Qt5_DIR}/../../../bin/d3dcompiler_47.dll DESTINATION bin)
+#    install(FILES ${Qt5_DIR}/../../../bin/libEGL.dll DESTINATION bin)
+#    install(FILES ${Qt5_DIR}/../../../bin/libGLESv2.dll DESTINATION bin)
+#    install(FILES ${Qt5_DIR}/../../../bin/d3dcompiler_47.dll DESTINATION bin)
     if(NOT MINGW)
         target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libEGL.lib)
         target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${Qt5_DIR}/../../libGLESv2.lib)
