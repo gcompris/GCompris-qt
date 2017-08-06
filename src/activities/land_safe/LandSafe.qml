@@ -435,7 +435,7 @@ ActivityBase {
 
             z: 1
             width: parent.width
-//            height: parent.height
+            height: parent.height/7
             sourceSize.width: width
             sourceSize.height: height
             source: Activity.baseUrl + "/ground.svg"
