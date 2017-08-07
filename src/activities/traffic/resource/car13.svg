@@ -12,11 +12,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
    sodipodi:docname="car13.svg"
-   viewBox="0 0 799.88032 399.94077"
+   viewBox="0 0 800 400"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%">
+   inkscape:version="0.92.1 r"
+   width="800"
+   height="400">
   <defs
      id="defs6">
     <linearGradient
@@ -130,7 +130,7 @@
     <filter
        id="filter5579"
        inkscape:collect="always"
-       color-interpolation-filters="sRGB">
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          id="feGaussianBlur5581"
          stdDeviation="1.4151248"
@@ -140,10 +140,10 @@
        id="filter5595"
        height="1.4858"
        width="1.0955"
-       color-interpolation-filters="sRGB"
        y="-0.24291"
        x="-0.047763001"
-       inkscape:collect="always">
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          id="feGaussianBlur5597"
          stdDeviation="1.1201443"
@@ -153,10 +153,10 @@
        id="filter5599"
        height="1.4858"
        width="1.0955"
-       color-interpolation-filters="sRGB"
        y="-0.24291"
        x="-0.047763001"
-       inkscape:collect="always">
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          id="feGaussianBlur5601"
          stdDeviation="1.1201443"
@@ -166,10 +166,10 @@
        id="filter5603"
        height="1.4858"
        width="1.0955"
-       color-interpolation-filters="sRGB"
        y="-0.24291"
        x="-0.047763001"
-       inkscape:collect="always">
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB">
       <feGaussianBlur
          id="feGaussianBlur5605"
          stdDeviation="1.1201443"
@@ -417,7 +417,7 @@
      inkscape:zoom="0.5871581"
      borderopacity="1"
      inkscape:current-layer="svg2"
-     inkscape:cx="372.31447"
+     inkscape:cx="34.245388"
      inkscape:guide-bbox="true"
      inkscape:window-maximized="1"
      showgrid="false"
@@ -426,30 +426,34 @@
      inkscape:window-x="0"
      guidetolerance="10"
      objecttolerance="10"
-     inkscape:window-y="35"
-     inkscape:window-width="1440"
+     inkscape:window-y="0"
+     inkscape:window-width="1888"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      pagecolor="#ffffff"
      gridtolerance="10"
      inkscape:cy="172.49013"
-     inkscape:window-height="807"
+     inkscape:window-height="1051"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0">
+     fit-margin-bottom="0"
+     units="px">
     <sodipodi:guide
        id="guide4902"
        position="1107.7003,427.9927"
-       orientation="1,0" />
+       orientation="1,0"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide4904"
        position="1118.6011,431.26294"
-       orientation="0,1" />
+       orientation="0,1"
+       inkscape:locked="false" />
     <sodipodi:guide
        id="guide4932"
        position="1313.9581,306.70518"
-       orientation="1,0" />
+       orientation="1,0"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <g
      id="g6957"
@@ -460,15 +464,15 @@
       <path
          inkscape:connector-curvature="0"
          style="fill:#808080;filter:url(#filter5595)"
-         d="m 373.58,158.86 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 h -12.615 -37.977 -3.3323 z"
+         d="m 373.58,158.86 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 h -12.615 -37.977 z"
          id="path5583" />
       <path
-         d="m 373.58,170.86 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 h -12.615 -37.977 -3.3323 z"
+         d="m 373.58,170.86 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 h -12.615 -37.977 z"
          inkscape:connector-curvature="0"
          style="fill:#808080;filter:url(#filter5599)"
          id="path5585" />
       <path
-         d="m 373.58,88.856 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 h -12.615 -37.977 -3.3323 z"
+         d="m 373.58,88.856 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 h -12.615 -37.977 z"
          inkscape:connector-curvature="0"
          style="fill:#808080;filter:url(#filter5603)"
          id="path5587" />
@@ -487,15 +491,15 @@
     <path
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient7008)"
-       d="m 3.7498,98.455 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 H 45.0591 7.0821 3.7498 z"
+       d="m 3.7498,98.455 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 H 45.0591 7.0821 Z"
        id="path5075" />
     <path
-       d="m 3.7498,110.46 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 H 45.0591 7.0821 3.7498 z"
+       d="m 3.7498,110.46 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 H 45.0591 7.0821 Z"
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient7010)"
        id="path5079" />
     <path
-       d="m 3.7498,28.455 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 H 45.0591 7.0821 3.7498 z"
+       d="m 3.7498,28.455 c -1.3814,3.5275 -1.4487,7.5477 0,11.067 h 3.3323 37.977 12.615 c 1.7739,-3.5195 1.6914,-7.5397 0,-11.067 H 45.0591 7.0821 Z"
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient7012)"
        id="rect4934" />
@@ -517,7 +521,7 @@
        sodipodi:nodetypes="ccc"
        id="path5455" />
     <path
-       d="m 12.81,10.919 c -4.5746,0 -8.25,2.9327 -8.25,6.5829 v 5.1865 h 1.0938 v -1.8203 c 0,-3.4973 3.5232,-6.3086 7.9062,-6.3086 h 34.219 c 4.383,0 7.9062,2.8112 7.9062,6.3086 v 1.8203 h 1.0938 v -5.1865 c 0,-3.6502 -3.6754,-6.5829 -8.25,-6.5829 H 12.81 z"
+       d="m 12.81,10.919 c -4.5746,0 -8.25,2.9327 -8.25,6.5829 v 5.1865 h 1.0938 v -1.8203 c 0,-3.4973 3.5232,-6.3086 7.9062,-6.3086 h 34.219 c 4.383,0 7.9062,2.8112 7.9062,6.3086 v 1.8203 h 1.0938 v -5.1865 c 0,-3.6502 -3.6754,-6.5829 -8.25,-6.5829 z"
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient7016)"
        id="rect5392" />
@@ -612,7 +616,7 @@
        sodipodi:nodetypes="ccccc"
        id="rect5199" />
     <path
-       d="m 3.5742,122.66 v 2.113 c 0,3.5079 3.817,6.3391 8.5625,6.3391 h 37.062 c 4.7455,0 8.5312,-2.8313 8.5312,-6.3391 v -2.113 h -1.9688 v 0.0233 c 0,1.7779 -1.0521,3.3599 -2.7188,4.4351 -0.26088,-0.30616 -0.75547,-0.51084 -1.2812,-0.51084 H 9.7921 c -0.5462,0 -0.99525,0.23102 -1.25,0.55728 -1.7161,-1.0756 -2.8125,-2.6734 -2.8125,-4.4815 v -0.0233 H 3.5734 z"
+       d="m 3.5742,122.66 v 2.113 c 0,3.5079 3.817,6.3391 8.5625,6.3391 h 37.062 c 4.7455,0 8.5312,-2.8313 8.5312,-6.3391 v -2.113 h -1.9688 v 0.0233 c 0,1.7779 -1.0521,3.3599 -2.7188,4.4351 -0.26088,-0.30616 -0.75547,-0.51084 -1.2812,-0.51084 H 9.7921 c -0.5462,0 -0.99525,0.23102 -1.25,0.55728 -1.7161,-1.0756 -2.8125,-2.6734 -2.8125,-4.4815 v -0.0233 H 3.5734 Z"
        inkscape:connector-curvature="0"
        style="fill:#ececec"
        id="path5313" />
@@ -682,12 +686,12 @@
        style="fill:url(#linearGradient7036)"
        id="path5434" />
     <path
-       d="m 52.89,87.224 c -1.0519,0 -1.8995,1.757 -1.8995,3.9375 v 12.5 c 0,2.1805 0.84763,3.9375 1.8995,3.9375 h 0.39197 V 87.224 H 52.89 z"
+       d="m 52.89,87.224 c -1.0519,0 -1.8995,1.757 -1.8995,3.9375 v 12.5 c 0,2.1805 0.84763,3.9375 1.8995,3.9375 h 0.39197 V 87.224 Z"
        inkscape:connector-curvature="0"
        style="fill:#ffffff"
        id="rect5469" />
     <path
-       d="m 53.637,87.287 v 20.375 h 0.6875 V 87.287 H 53.637 z"
+       d="m 53.637,87.287 v 20.375 h 0.6875 V 87.287 Z"
        inkscape:connector-curvature="0"
        style="fill:#ffffff"
        id="path5474" />
@@ -704,7 +708,7 @@
        d="m 54.196,52.604 c -3.4652,-0.36346 -4.823,10.343 0,10.894 0,-1.8273 -0.12371,-8.7202 0,-10.894 z"
        id="path5495" />
     <path
-       d="m 53.637,41.071 v 10.91 h 0.6875 V 41.071 H 53.637 z"
+       d="m 53.637,41.071 v 10.91 h 0.6875 v -10.91 z"
        inkscape:connector-curvature="0"
        style="fill:#ffffff"
        id="path5502" />
@@ -746,7 +750,7 @@
     <path
        inkscape:connector-curvature="0"
        style="fill:url(#linearGradient7052)"
-       d="m 52.89,87.224 c -1.0519,0 -1.8995,1.757 -1.8995,3.9375 v 12.5 c 0,2.1805 0.84763,3.9375 1.8995,3.9375 h 0.39197 V 87.224 H 52.89 z"
+       d="m 52.89,87.224 c -1.0519,0 -1.8995,1.757 -1.8995,3.9375 v 12.5 c 0,2.1805 0.84763,3.9375 1.8995,3.9375 h 0.39197 V 87.224 Z"
        id="path5535" />
     <path
        inkscape:connector-curvature="0"
@@ -763,14 +767,14 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2011-08-02T01:58:41</dc:date>
         <dc:description>A bus from the top</dc:description>
         <dc:source>https://openclipart.org/detail/153169/bus-by-cliparteles</dc:source>
@@ -788,7 +792,7 @@
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits

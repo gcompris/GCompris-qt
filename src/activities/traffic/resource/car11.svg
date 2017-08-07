@@ -11,24 +11,24 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
    sodipodi:docname="car11.svg"
-   viewBox="0 0 800.19403 400.00612"
+   viewBox="0 0 800 400"
    sodipodi:version="0.32"
    version="1.0"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%">
+   inkscape:version="0.92.1 r"
+   width="800"
+   height="400">
   <defs
      id="defs65" />
   <sodipodi:namedview
      id="base"
      bordercolor="#666666"
      inkscape:pageshadow="2"
-     inkscape:window-y="76"
+     inkscape:window-y="361"
      pagecolor="#ffffff"
      inkscape:window-height="709"
      inkscape:zoom="0.70710678"
-     inkscape:window-x="0"
+     inkscape:window-x="584"
      showgrid="false"
      borderopacity="1.0"
      inkscape:current-layer="g3094"
@@ -41,7 +41,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-maximized="0" />
+     inkscape:window-maximized="0"
+     units="px" />
   <g
      id="layer3"
      inkscape:label="Base"
@@ -62,7 +63,7 @@
        transform="matrix(2.375027,0,0,1.7837508,-6.8868157,-178.69272)">
       <g
          id="g4462"
-         transform="matrix(-1,0,0,-1,354.48127,261.8748)">
+         transform="rotate(180,177.24063,130.9374)">
         <rect
            id="rect3253"
            style="fill:#ffbd0f;stroke:#000000;stroke-width:2.25370669"
@@ -454,36 +455,30 @@
            width="5.2723675"
            y="156.77467"
            x="260.35226" />
-        <path
+        <ellipse
            id="path3367"
-           sodipodi:rx="8"
-           sodipodi:ry="7.75"
            style="fill:#ffbd0f;stroke:#000000"
-           sodipodi:type="arc"
-           d="m 267.5,332.11218 a 8,7.75 0 0 1 -8,7.75 8,7.75 0 0 1 -8,-7.75 8,7.75 0 0 1 8,-7.75 8,7.75 0 0 1 8,7.75 z"
            transform="matrix(0.61881299,0,0,0.84887239,109.59612,-172.83)"
-           sodipodi:cy="332.11218"
-           sodipodi:cx="259.5" />
-        <path
+           cx="259.5"
+           cy="332.11218"
+           rx="8"
+           ry="7.75" />
+        <ellipse
            id="path3369"
-           sodipodi:rx="8"
-           sodipodi:ry="7.75"
            style="fill:#ffbd0f;stroke:#000000"
-           sodipodi:type="arc"
-           d="m 267.5,332.11218 a 8,7.75 0 0 1 -8,7.75 8,7.75 0 0 1 -8,-7.75 8,7.75 0 0 1 8,-7.75 8,7.75 0 0 1 8,7.75 z"
            transform="matrix(0.61881299,0,0,0.84887239,109.11681,-149.43958)"
-           sodipodi:cy="332.11218"
-           sodipodi:cx="259.5" />
-        <path
+           cx="259.5"
+           cy="332.11218"
+           rx="8"
+           ry="7.75" />
+        <ellipse
            id="path3371"
-           sodipodi:rx="8"
-           sodipodi:ry="7.75"
            style="fill:#ffbd0f;stroke:#000000"
-           sodipodi:type="arc"
-           d="m 267.5,332.11218 a 8,7.75 0 0 1 -8,7.75 8,7.75 0 0 1 -8,-7.75 8,7.75 0 0 1 8,-7.75 8,7.75 0 0 1 8,7.75 z"
            transform="matrix(0.61881299,0,0,0.84887239,109.11681,-126.35898)"
-           sodipodi:cy="332.11218"
-           sodipodi:cx="259.5" />
+           cx="259.5"
+           cy="332.11218"
+           rx="8"
+           ry="7.75" />
         <rect
            id="rect3373"
            style="fill:#ffbd0f;stroke:#000000;stroke-width:1.07925808"
@@ -567,14 +562,14 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2010-04-28T11:09:26</dc:date>
         <dc:description>This is a simple yellow bulldozer (top view).</dc:description>
         <dc:source>https://openclipart.org/detail/57667/simple-yellow-bulldozer-by-system25</dc:source>
@@ -593,7 +588,7 @@
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
