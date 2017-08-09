@@ -71,6 +71,8 @@ ActivityBase {
             anchors.top: parent.top
             width: background.width
             height: background.height
+            sourceSize.width: background.witdh
+            sourceSize.height: background.height
         }
 
         Image {
@@ -78,6 +80,8 @@ ActivityBase {
             anchors.top: imageBack.top
             width: background.width
             height: background.height
+            sourceSize.width: background.witdh
+            sourceSize.height: background.height
         }
 
         Repeater {
