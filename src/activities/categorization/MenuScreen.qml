@@ -153,9 +153,9 @@ Image {
                 source: image
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: iconWidth
-                height: iconHeight
-                anchors.margins: 5
+                width: activityBackground.width - 6
+                height: width 
+                anchors.margins: 3
 
                 GCText {
                     id: categoryName
