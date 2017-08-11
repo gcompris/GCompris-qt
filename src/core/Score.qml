@@ -89,7 +89,7 @@ Rectangle {
         anchors.centerIn: parent
         fontSize: mediumSize
         font.bold: true
-        color: "black"
+        color: "#373737"
         text: message
     }
 }
