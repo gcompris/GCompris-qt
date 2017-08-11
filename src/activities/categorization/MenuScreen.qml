@@ -33,7 +33,7 @@ Image {
     id: menuScreen
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
-    source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
+    source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
     sourceSize.width: Math.max(parent.width, parent.height)
     opacity: 0
 
