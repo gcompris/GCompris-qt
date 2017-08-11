@@ -4,7 +4,7 @@
 # create the tarball
 #
 
-if [ ! -f gcompris.appdata.xml ]
+if [ ! -f org.kde.gcompris.appdata.xml ]
 then
     echo "ERROR: Run me from the top level GCompris source dir"
     exit 1
