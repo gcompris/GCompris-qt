@@ -69,7 +69,7 @@ Item {
             x: 0
             color: leftAreaContainsDrag ? "#F9F8B4" : "#F9B4B4"
             border.width: 5
-            border.color: rightAreaContainsDrag ? "#ECE913" : "#EC1313"
+            border.color: "#EC1313"
             opacity: 0.5
         }
 
@@ -89,7 +89,7 @@ Item {
             x: leftScreen.width + middleScreen.width
             color: rightAreaContainsDrag ? "#F9F8B4" : "#B4F9C5"
             border.width: 5
-            border.color: rightAreaContainsDrag ? "#ECE913" : "#13EC52"
+            border.color: "#13EC52"
             opacity: 0.5
         }
 
