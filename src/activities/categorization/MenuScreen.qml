@@ -153,8 +153,9 @@ Image {
                 source: image
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: activityBackground.width - 6
+                width: activityBackground.width*0.90 - 6
                 height: width 
+                sourceSize.width: width
                 anchors.margins: 3
 
                 GCText {

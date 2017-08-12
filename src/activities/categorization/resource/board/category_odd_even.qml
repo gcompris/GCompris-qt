@@ -36,7 +36,7 @@ QtObject {
                     "image": imagesPrefix + "16.svg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+                    "prefix": "qrc:/gcompris/data/words/numbers/",
                     "good": ["02.svg","04.svg","06.svg","08.svg", "10.svg","12.svg"],
                     "bad": ["01.svg","03.svg","05.svg","07.svg","09.svg","11.svg"]
                 },
@@ -72,7 +72,7 @@ QtObject {
                     "image": imagesPrefix + "02.svg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+                    "prefix": "qrc:/gcompris/data/words/numbers//",
                     "good": ["16.svg","10.svg","12.svg"],
                     "bad": ["01.svg","07.svg","05.svg"]
                 },
@@ -81,7 +81,7 @@ QtObject {
                     "image": imagesPrefix + "16.svg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+                    "prefix": "qrc:/gcompris/data/words/numbers/",
                     "good": ["02.svg","08.svg","04.svg"],
                     "bad": ["09.svg","03.svg","11.svg"]
                 }
