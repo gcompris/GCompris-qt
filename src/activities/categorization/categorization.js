@@ -53,7 +53,8 @@ function start() {
     items.categoryReview.stop()
 
     var isEmbeddedMode = items.file.exists(fileName) ? true : false
-    items.categoriesFallback = isEmbeddedMode
+
+    items.categoriesFallback = !isEmbeddedMode
 
     var categoriesFilename;
     var categoryDataset = items.categoryReview.categoryDataset
