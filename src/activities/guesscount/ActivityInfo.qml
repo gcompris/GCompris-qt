@@ -36,5 +36,5 @@ ActivityInfo {
     manual: ""
     credit: ""
     section: "math"
-    createdInVersion:7000
+    createdInVersion: 8000
 }
