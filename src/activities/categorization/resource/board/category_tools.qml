@@ -40,7 +40,7 @@ QtObject {
                     "bad": ["monuments/arcDeTriomphe.jpg","others/buffetset.jpg","monuments/cathedral.jpg","others/pillow.jpg","renewable/windmill1.jpg", "renewable/geothermal.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "sideCutter1.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -49,7 +49,7 @@ QtObject {
                     "bad": ["others/pan.jpg","others/blackslate.jpg","monuments/colosseum.jpg","fishes/fish10.jpg","renewable/dam1.jpg","monuments/monument3.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "scissors.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -58,7 +58,7 @@ QtObject {
                     "bad": ["others/buffetset.jpg","monuments/beandenburgGate.jpg","monuments/parthenon.jpg","fishes/fish12.jpg","fishes/fish16.jpg","others/plate.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "sprinkler.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -67,7 +67,7 @@ QtObject {
                     "bad": ["others/baseball.jpg","others/igloo.jpg","monuments/mountRushmore.jpg","renewable/dam3.jpg","monuments/greatWall.jpg","renewable/windmill7.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "plier.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -76,7 +76,7 @@ QtObject {
                     "bad": ["fishes/fish25.jpg","fishes/fish18.jpg","monuments/monument1.jpg","monuments/monument2.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "nosePlier2.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -85,7 +85,7 @@ QtObject {
                     "bad": ["renewable/solar5.jpg","others/bulb.jpg","renewable/dam3.jpg","monuments/leninMuseum.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "multimeter.jpg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -94,7 +94,7 @@ QtObject {
                     "bad": ["fishes/fish3.jpg","others/chair.jpg","monuments/operaHouse.jpg","renewable/windmill12.jpg","monuments/IndiaGate.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "nailCutter.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -103,7 +103,7 @@ QtObject {
                     "bad": ["fishes/fish6.jpg","monuments/tajMahal.jpg","renewable/solar3.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "screwDriver.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -112,7 +112,7 @@ QtObject {
                     "bad": ["fishes/fish10.jpg","others/pan.jpg","others/igloo.jpg"]
                 },
                 {
-                    "instructions": qsTr("Place the TOOLS to the right and others to the left"),
+                    "instructions": qsTr("Place the TOOLS to the right and other objects to the left"),
                     "image": imagesPrefix + "scissor.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
