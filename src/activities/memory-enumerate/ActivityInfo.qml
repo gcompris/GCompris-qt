@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "memory-enumerate/memory-enumerate.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Enumeration memory game")
+  //: Help title
   description: qsTr("Turn the cards over to match the number with the drawn picture.")
 //  intro: "Match a number card with a card displaying the same number of butterflies."
+  //: Help goal
   goal: qsTr("Numeration training, memory.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of pictures, or the written number.")
   credit: ""
   section: "math numeration"

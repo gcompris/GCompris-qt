@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "maze/maze.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Maze")
+  //: Help title
   description: qsTr("Help Tux get out of this maze")
 //  intro: "Use the arrows keys or swipe the touch screen to help Tux find his way out."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Use the arrow keys or swipe the touch screen to move Tux up to the door.") + "<br><br>" +
           qsTr("At the first levels, Tux walks comfortably, one step on each move request, through the maze.") + "<br><br>" +
           qsTr("For larger mazes, there is a special walking mode, called \"run-fast-mode\". If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.")  + "<br><br>" +

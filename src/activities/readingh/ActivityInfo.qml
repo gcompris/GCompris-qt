@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "readingh/readingh.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Horizontal reading practice")
+  //: Help title
   description: qsTr("Read a list of words and work out if a given word is in it.")
 //  intro: "Read a list of words and say if a given word is in it."
+  //: Help goal
   goal: qsTr("Reading training in a limited time")
+  //: Help prerequisite
   prerequisite: qsTr("Reading")
+  //: Help manual
   manual: qsTr("A word is shown at the top right of the board. A list of words will appear and disappear on the left. Does the given word belong to the list?")
   credit: ""
   section: "reading"

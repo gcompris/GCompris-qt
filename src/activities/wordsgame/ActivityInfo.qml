@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "wordsgame/wordsgame.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Falling Words")
+  //: Help title
   description: qsTr("Type the falling words before they reach the ground")
 //  intro: "Type the words on your keyboard before they reach the ground."
+  //: Help goal
   goal: qsTr("Keyboard training")
+  //: Help prerequisite
   prerequisite: qsTr("Keyboard manipulation")
+  //: Help manual
   manual: qsTr("Type the complete word as it falls, before it reaches the ground")
   credit: ""
   section: "computer keyboard reading"

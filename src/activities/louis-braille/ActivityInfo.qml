@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "louis-braille/louis-braille.svg"
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("The History of Louis Braille")
+  //: Help title
   description: qsTr("Review the major dates of the inventor of the Braille System")
   //intro: "Discover the history of Louis Braille."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Read the history of Louis Braille, his biography, and the invention of the Braille system. Click on the previous and next buttons to move between the story pages. At the end, arrange the sequence in chronological order.")
   credit: qsTr("Louis Braille Video: &lt;http:\/\/www.youtube.com/watch?v=9bdfC2j_4x4&gt;")
   section: "discovery braille"

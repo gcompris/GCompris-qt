@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "number_sequence/number_sequence.svg"
   author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Number sequence")
+  //: Help title
   description: qsTr("Touch the numbers in the right sequence.")
 //  intro: "Draw the picture by touching each number in the right sequence."
+  //: Help goal
   goal: qsTr("Can count from 1 to 50.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Draw the picture by touching each number in the right sequence, or sliding your finger or dragging the mouse through the numbers in the correct sequence.")
   credit: ""
   section: "math numeration"

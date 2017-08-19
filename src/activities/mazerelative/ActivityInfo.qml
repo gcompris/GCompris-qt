@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "mazerelative/mazerelative.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Relative Maze")
+  //: Help title
   description: qsTr("Help Tux get out of this maze (Move is relative)")
 //  intro: "Help Tux find his way out. Left and right are used to turn and up to go forward."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Use the arrow keys or swipe the touch screen to move Tux up to the door.") + "<br><br>" +
           qsTr("In this maze, the move is relative (first person). Left and right are used to turn and up to go forward.") + "<br><br>" +
           qsTr("At the first levels, Tux walks comfortably, one step on each move request, through the maze.") + "<br><br>" +

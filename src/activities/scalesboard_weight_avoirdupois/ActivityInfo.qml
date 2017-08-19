@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "scalesboard_weight_avoirdupois/scalesboard_weight_avoirdupois.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Balance the scales properly")
+  //: Help title
   description: qsTr("Drag and Drop masses to balance the scales and calculate the weight in the avoirdupois unit")
 //  intro: "Drag the weights up to balance the scales."
+  //: Help goal
   goal: qsTr("Mental calculation, arithmetic equality, unit conversion")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("To balance the scales, move the masses on the left or the right side. They can be arranged in any order. Take care of the weight and the unit of the masses, remember that a pound (lb) is 16 ounce (oz).")
   credit: ""
   section: "math"

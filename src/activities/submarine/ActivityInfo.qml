@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "submarine/submarine.svg"
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Pilot a Submarine")
+  //: Help title
   description: qsTr("Drive the submarine to the end point.")
   //intro: "Drive the submarine to the right end of the screen without colliding with any objects"
+  //: Help goal
   goal: qsTr("Learn how to control a submarine")
+  //: Help prerequisite
   prerequisite: qsTr("Move and click using the mouse, physics basics")
+  //: Help manual
   manual: qsTr("Control the various parts of the submarine (the engine, rudders and ballast tanks) to reach the end point.
  Controls:
 

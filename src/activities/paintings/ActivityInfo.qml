@@ -28,11 +28,16 @@ ActivityInfo {
   icon: "paintings/paintings.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Assemble the puzzle")
+  //: Help title
   description: qsTr("Drag and Drop the items to rebuild the original paintings")
   // intro: "Catch and drop each piece on the points."
+  //: Help goal
   goal: qsTr("Spatial representation")
+  //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation: movement, drag and drop")
+  //: Help manual
   manual: qsTr("Drag the image parts from the box on the left to create a painting on the main board.")
   section: "puzzle"
   createdInVersion: 5000

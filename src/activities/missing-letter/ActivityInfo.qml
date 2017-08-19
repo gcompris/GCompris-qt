@@ -24,11 +24,16 @@ ActivityInfo
   icon: "missing-letter/missing-letter.svg"
   author: "Amit Tomar &lt;a.tomar@outlook.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Missing Letter")
+  //: Help title
   description: ""
 //  intro: "Find the missing letter and complete the word by clicking on one of the letters proposed on the side."
+  //: Help goal
   goal: qsTr("Training reading skills")
+  //: Help prerequisite
   prerequisite: qsTr("Word reading")
+  //: Help manual
   manual: qsTr("An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.")
   credit: ""
   section: "reading"

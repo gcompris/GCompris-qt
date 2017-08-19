@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "chess_2players/chess_2players.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Play chess against your friend")
+  //: Help title
   description: ""
   //intro: "play chess against your friend"
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("In this activity you discover the chess game by playing against a friend. It displays the possible target position for any selected piece which helps the children understand how pieces moves.
 \nYou can achieve a mate sooner if follow these simple rules:
     Trying to drive opponent's King in the corner.

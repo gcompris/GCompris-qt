@@ -28,11 +28,16 @@ ActivityInfo {
     author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
     demo: true
     //: activity title
+    //: Activity title
     title: qsTr("Guesscount")
+    //: Help title
     description:qsTr("Guess the algebraic expression and drag the tiles to get a result equal to the Guesscount.")
     //intro: "Use the numbers and operations suggested to find the results proposed above."
+    //: Help goal
     goal: qsTr("To teach algebra")
+    //: Help prerequisite
     prerequisite: qsTr("knowledge of arithmetic operations")
+    //: Help manual
     manual: ""
     credit: ""
     section: "math"

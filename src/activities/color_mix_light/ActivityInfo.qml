@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "color_mix_light/color_mix_light.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Mixing colors of light")
+  //: Help title
   description: qsTr("Discover light color mixing.")
 //  intro: "Match the colour by moving the sliders on the torches"
+  //: Help goal
   goal: qsTr("Mix the primary colors to match to the given color.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("
 The activity deals with mixing primary colors of light (additive mixing).
 

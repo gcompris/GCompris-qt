@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "scalesboard/scalesboard.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Balance the scales properly")
+  //: Help title
   description: qsTr("Drag and Drop weights to balance the scales")
 //  intro: "Drag the weights up to balance the scales."
+  //: Help goal
   goal: qsTr("Mental calculation, arithmetic equality")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("To balance the scales, move the weights on the left or the right side. The weights can be arranged in any order.")
   credit:""
   section: "math"

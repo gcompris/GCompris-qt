@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "photo_hunter/photo_hunter.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Photo Hunter")
+  //: Help title
   description: qsTr("Find the differences between the two pictures!")
   //intro: "look at the two pictures carefully and click where you see a difference"
+  //: Help goal
   goal: qsTr("Visual Discrimination")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Observe the two pictures carefully. There are some slight differences. When you find a difference you must click on it.")
   credit: ""
   section: "puzzle"

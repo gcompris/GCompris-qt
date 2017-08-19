@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "explore_monuments/explore_monuments.svg"
   author: "Ayush Agrawal &lt;ayushagrawal288@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Explore Monuments")
+  //: Help title
   description: qsTr("Explore Monuments around the world.")
   //intro: "Explore Monuments around the world."
+  //: Help goal
   goal: qsTr("To learn about different monuments on the basis of their location.")
+  //: Help prerequisite
   prerequisite: qsTr("Knowledge of different monuments.")
+  //: Help manual
   manual: qsTr("Click on the given keys to learn more of the monuments and then identify where the monuments is on the map by its name.")
   credit: qsTr("Photos taken from Wikipedia.")
   section: "discovery"

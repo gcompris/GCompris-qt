@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "bargame_2players/bargame_2players.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Bargame (with a friend)")
+  //: Help title
   description: qsTr("Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole.")
   // intro: "Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole."
+  //: Help goal
   goal: qsTr("Don't use the last ball")
+  //: Help prerequisite
   prerequisite: qsTr("Ability to count")
+  //: Help manual
   manual: qsTr("Place balls in the holes. You win if your friend has to place the last ball.")
   credit: ""
   section: "strategy"

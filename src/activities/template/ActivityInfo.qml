@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "template/template.svg"
   author: "Your Name &lt;yy@zz.org&gt;"
   demo: true
+  //: Activity title
   title: "Template activity"
+  //: Help title
   description: ""
   //intro: "put here in comment the text for the intro voice"
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: ""
   credit: ""
   section: "fun"

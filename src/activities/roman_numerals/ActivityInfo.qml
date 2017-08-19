@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "roman_numerals/roman_numerals.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Roman numerals")
+  //: Help title
   description: ""
   //intro: "Learn and practice roman to arabic numerals conversion"
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("A Roman numeral is the name for a number when it is written in the way the Romans used to write numbers. Roman numerals are not used very often today in the west. They are used to write the names of kings and queens, or popes. For example: Queen Elizabeth II. They may be used to write the year a book or movie was made.")
   credit: ""
   section: "math"

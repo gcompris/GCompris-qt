@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "share/share.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Share the candies")
+  //: Help title
   description: qsTr("Try to split the candies to a given number of children")
   //intro: "Share the candies equally among the specified number of children and notice that there may be a rest left"
+  //: Help goal
   goal: qsTr("Learn the division of numbers")
+  //: Help prerequisite
   prerequisite: qsTr("Know how to count")
+  //: Help manual
   manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the middle, then drag candies to each child's rectangle.")
   credit: ""
   section: "math"

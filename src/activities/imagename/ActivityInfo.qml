@@ -26,11 +26,16 @@ ActivityInfo {
   icon: "imagename/imagename.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Image Name")
+  //: Help title
   description: qsTr("Drag and Drop each item above its name")
 //  intro: "Drag and drop each item above its name."
+  //: Help goal
   goal: qsTr("Vocabulary and reading")
+  //: Help prerequisite
   prerequisite: qsTr("Reading")
+  //: Help manual
   manual: qsTr("Drag each image from the (vertical) box on the left to its (corresponding) name on the right. Click the OK button to check your answer.")
   section: "reading"
   createdInVersion: 4000

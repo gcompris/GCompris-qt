@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "categorization/categorization.svg"
   author: "Divyam Madaan &lt;divyam3897@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Categorization")
+  //: Help title
   description: qsTr("Categorize the elements into correct and incorrect groups")
   //intro: "Categorize the elements into the correct group"
+  //: Help goal
   goal: qsTr("Build conceptual thinking and enrich knowledge")
+  //: Help prerequisite
   prerequisite: qsTr("Can drag elements using mouse")
+  //: Help manual
   manual: qsTr("Review the instructions and then drag and drop the elements as specified")
   credit: ""
   section: "fun"

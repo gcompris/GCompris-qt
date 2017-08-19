@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "explore_world_music/explore_world_music.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Explore World Music")
+  //: Help title
   description: qsTr("Learn about the music of the world.")
   // intro: "Click on the suitcases to learn about music from around the world."
+  //: Help goal
   goal: qsTr("Develop a better understanding of the variety of music present in the world")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("There are three levels in this activity.
 
 In the first level, enjoy exploring music from around the world. Click on each suitcase to learn about the music from that area, and listen to a short sample. Study well, because there will be two games related to this information next!

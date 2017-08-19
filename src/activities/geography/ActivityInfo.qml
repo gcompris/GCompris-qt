@@ -27,11 +27,16 @@ ActivityInfo {
   icon: "geography/geography.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Locate the countries")
+  //: Help title
   description: qsTr("Drag and Drop the items to redraw the whole map")
 //  intro: "Drag and drop the objects to complete the map."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: ""
   credit: ""
   section: "discovery"

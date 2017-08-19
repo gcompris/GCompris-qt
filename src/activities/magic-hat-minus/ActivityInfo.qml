@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "magic-hat-minus/magic-hat-minus.svg"
   author: "Thibaut ROMAIN &lt;thibrom@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("The magician hat")
+  //: Help title
   description: qsTr("Count how many items are under the magic hat after some have got away")
 //  intro: "Click on the hat. How many stars are still hiding under the hat."
+  //: Help goal
   goal: qsTr("Learn subtraction")
+  //: Help prerequisite
   prerequisite: qsTr("Subtraction")
+  //: Help manual
   manual: qsTr("Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom area to answer.")
   credit: ""
   section: "math numeration"

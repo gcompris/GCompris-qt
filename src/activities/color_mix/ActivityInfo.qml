@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "color_mix/color_mix.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Mixing color of paint")
+  //: Help title
   description: qsTr("Discover paint color mixing.")
 //  intro: "Match the colour by moving the sliders on the tubes of paint"
+  //: Help goal
   goal: qsTr("Mix the primary colors to match to the given color")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
