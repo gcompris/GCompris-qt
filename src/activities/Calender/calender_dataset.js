@@ -20,25 +20,40 @@ function get() {
     return [
                 [ // level 1
                  {
-                     "question": qstr("Select 2nd Day Before 15"),
+                     "question": qsTr("Select 2nd Day Before 15"),
                      "answer": 13
                  },
                  {
-                     "question": qstr("Select Fourth Sunday Of Given Month"),
+                     "question": qsTr("Select Fourth Sunday Of Given Month"),
                      "answer": 25
                  },
                  {
-                     "question": qstr("Select Date One Week After 13"),
+                     "question": qsTr("Select Date One Week After 13"),
                      "answer": 20
                  },
                  {
-                     "question": qstr("Select Fifth Thursday Of Given Month"),
+                     "question": qsTr("Select Fifth Thursday Of Given Month"),
                      "answer": 29
                  },
                  {
-                     "question": qstr("Select 4nd Day After 27"),
+                     "question": qsTr("Select 4nd Day After 27"),
                      "answer": 31
                  }
+                ],
+
+                [ // Level 2
+                    {
+                        "question": qsTr("Select Date One Week After 13"),
+                        "answer": 20
+                    },
+                    {
+                        "question": qsTr("Select Fifth Thursday Of Given Month"),
+                        "answer": 29
+                    },
+                    {
+                        "question": qsTr("Select 4nd Day After 27"),
+                        "answer": 31
+                    }
                 ]
 
             ]

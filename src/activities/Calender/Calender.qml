@@ -22,15 +22,13 @@
 import QtQuick 2.6
 import GCompris 1.0
 import QtQuick.Controls 1.4
-import QtQuick.Controls 1.2
-import QtQuick.Controls.Styles 1.1
-import QtQuick.Controls.Private 1.0
 import "../../core"
 import "Calender.js" as Activity
+import "calender_dataset.js" as Dataset
 
 ActivityBase {
     id: activity
-
+    property var dataset: Dataset
     onStart: focus = true
     onStop: {}
 
@@ -56,11 +54,14 @@ ActivityBase {
             property alias bonus: bonus
             property alias calender: calender
             property alias okButton: okButton
-            property alias instructions: instructions
+            property alias questionItemBackground: questionItemBackground
+            property alias questionItem: questionItem
+            property alias questionsModel: questionsModel
+            property alias score: score
 
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
         Rectangle{
@@ -79,53 +80,46 @@ ActivityBase {
             width: calenderBox.width * 0.85
             height: calenderBox.height * 0.85
             anchors.centerIn: calenderBox
-            //anchors.bottom: items.bar.top
             frameVisible: true
             focus: true
-            // weekNumbersVisible: true
-            navigationBarVisible : false
-
             onClicked:{
                 console.log(typeof selectedDate.getDate())
-            }//visibleYear: 2019
-            //locale: Qt.locale("en_AU")
-            visibleMonth: 02
-            visibleYear: 2018
-            minimumDate: "2018-03-01"
-            maximumDate: "2018-03-31"
+                Activity.dateSelected = selectedDate
+            }
         }
+
+        ListModel {
+            id: questionsModel
+        }
+
         Rectangle {
-            id: instructionBox
-            //anchors.left: categoryBackground.left
-            //anchors.right: categoryImage.left
-            //anchors.leftMargin: 0.32 * parent.width
-            //anchors.rightMargin: 0.03 * parent.width
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottom: calenderBox.top
-            anchors.bottomMargin: 10
-            color: "#87A6DD"
-            opacity: 0.85 //items.instructionsVisible ? 0.85 : 0
-            z: 3
-            radius: 10
+            id: questionItemBackground
+            color: "black"
             border.width: 2
+            radius: 10
+            opacity: 0.85
+            z: 10
+            anchors{
+                horizontalCenter: parent.horizontalCenter
+                bottomMargin: 10
+            }
             width: calenderBox.width * 2
             height: calenderBox.height * 0.125
-            /* gradient: Gradient {
+            gradient: Gradient {
                 GradientStop { position: 0.0; color: "#000" }
                 GradientStop { position: 0.9; color: "#666" }
                 GradientStop { position: 1.0; color: "#AAA" }
-            }*/
+            }
         }
 
         GCText {
-            id: instructions
+            id: questionItem
             text: "The date is: " + new Date().toLocaleDateString(Qt.locale("de_DE")) + " \n  " +new Date().toLocaleDateString(Qt.locale("en_US"))
-            //visible: items.instructionsVisible
-            anchors.fill: instructionBox
-            anchors.bottom: instructionBox.bottom
+            anchors.fill: questionItemBackground
+            anchors.bottom: questionItemBackground.bottom
             fontSizeMode: Text.Fit
             wrapMode: Text.Wrap
-            z: 3
+            z: 10
             color: "white"
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
@@ -139,7 +133,7 @@ ActivityBase {
             sourceSize.width: width
             sourceSize.height: height
             y: parent.height*0.8
-            z: 2
+            z: 10
             anchors {
                 rightMargin: 14 * ApplicationInfo.ratio
                 left: calenderBox.right
@@ -150,8 +144,9 @@ ActivityBase {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: {}
-                //Activity.allPlaced();
+                onClicked: {
+                    Activity.checkAnswer()
+                }
             }
         }
 
@@ -181,9 +176,6 @@ ActivityBase {
             z: 1003
             anchors.bottom: background.bottom
             anchors.right: background.right
-            //currentSubLevel = 1
-            currentSubLevel: 1
-            numberOfSubLevels: 5
         }
     }
 }
