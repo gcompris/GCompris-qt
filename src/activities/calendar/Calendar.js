@@ -1,10 +1,9 @@
-/* GCompris - Calender.js
+/* GCompris - Calendar.js
  *
- * Copyright (C) 2017 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2017 Amit Sagtani <asagtani06@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   "Amit Sagtani" <asagtani06@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -72,17 +71,17 @@ function previousLevel() {
 function levelConfigurations() {
     switch(items.bar.level) {
     case 1:
-        items.calender.navigationBarVisible = false
-        items.calender.visibleMonth = 2
-        items.calender.visibleYear = 2018
-        items.calender.minimumDate = "2018-03-01"
-        items.calender.maximumDate = "2018-03-31"
+        items.calendar.navigationBarVisible = false
+        items.calendar.visibleMonth = 2
+        items.calendar.visibleYear = 2018
+        items.calendar.minimumDate = "2018-03-01"
+        items.calendar.maximumDate = "2018-03-31"
         currentDataSet = dataset[0]
         break;
     case 2:
-        items.calender.navigationBarVisible = true
-        items.calender.visibleMonth = new Date().getMonth()
-        items.calender.visibleYear = new Date().getFullYear()
+        items.calendar.navigationBarVisible = true
+        items.calendar.visibleMonth = new Date().getMonth()
+        items.calendar.visibleYear = new Date().getFullYear()
         currentDataSet = dataset[1]
         break;
 

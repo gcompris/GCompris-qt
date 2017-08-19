@@ -18,12 +18,12 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "Calender/Calender.qml"
+  name: "calendar/Calendar.qml"
   difficulty: 1
-  icon: "Calender/Calender.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  icon: "calendar/Calendar.svg"
+  author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
   demo: true
-  title: "Calender activity"
+  title: qsTr("Calendar activity")
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: ""
@@ -31,5 +31,5 @@ ActivityInfo {
   manual: ""
   credit: ""
   section: "fun"
-  createdInVersion:8000
+  createdInVersion: 9000
 }

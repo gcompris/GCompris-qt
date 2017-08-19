@@ -1,10 +1,9 @@
-/* GCompris - Calender.qml
+/* GCompris - Calendar.qml
  *
- * Copyright (C) 2017 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2017 Amit Sagtani <asagtani06@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Amit Sagtani <asagtani06@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -23,8 +22,8 @@ import QtQuick 2.6
 import GCompris 1.0
 import QtQuick.Controls 1.4
 import "../../core"
-import "Calender.js" as Activity
-import "calender_dataset.js" as Dataset
+import "Calendar.js" as Activity
+import "calendar_dataset.js" as Dataset
 
 ActivityBase {
     id: activity
@@ -52,7 +51,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias calender: calender
+            property alias calendar: calendar
             property alias okButton: okButton
             property alias questionItemBackground: questionItemBackground
             property alias questionItem: questionItem
@@ -65,7 +64,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Rectangle{
-            id: calenderBox
+            id: calendarBox
             width: parent.width * 0.40
             height: parent.width * 0.40
             anchors.bottom: bar.top
@@ -75,11 +74,11 @@ ActivityBase {
 
         }
         Calendar {
-            id: calender
+            id: calendar
             weekNumbersVisible: false
-            width: calenderBox.width * 0.85
-            height: calenderBox.height * 0.85
-            anchors.centerIn: calenderBox
+            width: calendarBox.width * 0.85
+            height: calendarBox.height * 0.85
+            anchors.centerIn: calendarBox
             frameVisible: true
             focus: true
             onClicked:{
@@ -103,8 +102,8 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 bottomMargin: 10
             }
-            width: calenderBox.width * 2
-            height: calenderBox.height * 0.125
+            width: calendarBox.width * 2
+            height: calendarBox.height * 0.125
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#000" }
                 GradientStop { position: 0.9; color: "#666" }
@@ -128,7 +127,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: calenderBox.width * 0.16
+            width: calendarBox.width * 0.16
             height: width
             sourceSize.width: width
             sourceSize.height: height
@@ -136,9 +135,9 @@ ActivityBase {
             z: 10
             anchors {
                 rightMargin: 14 * ApplicationInfo.ratio
-                left: calenderBox.right
-                leftMargin: calenderBox.width * 0.1
-                bottom: calenderBox.bottom
+                left: calendarBox.right
+                leftMargin: calendarBox.width * 0.1
+                bottom: calendarBox.bottom
 
             }
 
