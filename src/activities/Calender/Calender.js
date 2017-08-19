@@ -93,11 +93,11 @@ function levelConfigurations() {
 }
 
 function initQuestion() {
-    if(currentDataSet.length === currentSubLevel) {
+    if(currentDataSet.length < currentSubLevel) {
         items.bonus.good("flower")
-        nextLevel()
     }
     else {
+        items.score.currentSubLevel = currentSubLevel
         items.questionItem.text = currentDataSet[currentSubLevel-1]["question"]
         correctAnswer = currentDataSet[currentSubLevel-1]["answer"]
     }

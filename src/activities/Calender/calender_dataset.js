@@ -36,7 +36,7 @@ function get() {
                      "answer": 29
                  },
                  {
-                     "question": qsTr("Select 4nd Day After 27"),
+                     "question": qsTr("Select 4th Day After 27"),
                      "answer": 31
                  }
                 ],
