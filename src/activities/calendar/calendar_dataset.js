@@ -18,7 +18,69 @@
 
 function get() {
     return [
-                [ // level 1
+                [ // Level 1
+                 {
+                     "question": qsTr("Select A Monday"),
+                     "answer": 1
+                 },
+                 {
+                     "question": qsTr("Select A Tuesday"),
+                     "answer": 2
+                 },
+                 {
+                     "question": qsTr("Select A Wednesday"),
+                     "answer": 3
+                 },
+                 {
+                     "question": qsTr("Select A Thursday"),
+                     "answer": 4
+                 },
+                 {
+                     "question": qsTr("Select A Friday"),
+                     "answer": 5
+                 },
+                 {
+                     "question": qsTr("Select A Saturday"),
+                     "answer": 6
+                 },
+                 {
+                     "question": qsTr("Select A Sunday"),
+                     "answer": 0
+                 }
+
+                ],
+
+                [ // Level 2
+
+                 {
+                     "question": qsTr("Select Date 23"),
+                     "answer": 23
+                 },
+                 {
+                     "question": qsTr("Select Date 1"),
+                     "answer": 1
+                 },
+                 {
+                     "question": qsTr("Select Date 16"),
+                     "answer": 16
+                 },
+                 {
+                     "question": qsTr("Select Date 28"),
+                     "answer": 28
+                 },
+                 {
+                     "question": qsTr("Select Date 11"),
+                     "answer": 11
+                 },
+                 {
+                     "question": qsTr("Select Date 20"),
+                     "answer": 20
+                 }
+
+                ],
+
+                [ // level 3
+
                  {
                      "question": qsTr("Select 2nd Day Before 15"),
                      "answer": 13
@@ -39,23 +101,25 @@ function get() {
                      "question": qsTr("Select 4th Day After 27"),
                      "answer": 31
                  }
+
                 ],
 
-                [ // Level 2
-                    {
-                        "question": qsTr("Select Date One Week After 13"),
-                        "answer": 20
-                    },
-                    {
-                        "question": qsTr("Select Fifth Thursday Of Given Month"),
-                        "answer": 29
-                    },
-                    {
-                        "question": qsTr("Select 4nd Day After 27"),
-                        "answer": 31
-                    }
-                ]
+                [ // Level 4
 
+                 {
+                     "question": qsTr("Select Date One Week After 13"),
+                     "answer": 20
+                 },
+                 {
+                     "question": qsTr("Select Fifth Thursday Of Given Month"),
+                     "answer": 29
+                 },
+                 {
+                     "question": qsTr("Select 4nd Day After 27"),
+                     "answer": 31
+                 }
+
+                ]
             ]
 
 }

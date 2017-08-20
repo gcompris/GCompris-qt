@@ -66,8 +66,11 @@ ActivityBase {
         Rectangle{
             id: calendarBox
             width: parent.width * 0.40
-            height: parent.width * 0.40
+            height: parent.height * 0.70
+            anchors.top: parent.top
+            anchors.topMargin: 100
             anchors.bottom: bar.top
+            anchors.bottomMargin: 50
             anchors.horizontalCenter: parent.horizontalCenter
             color: "black"
             opacity: 0.3
@@ -82,7 +85,7 @@ ActivityBase {
             frameVisible: true
             focus: true
             onClicked:{
-                console.log(typeof selectedDate.getDate())
+                console.log(selectedDate.getDay())
                 Activity.dateSelected = selectedDate
             }
         }
@@ -92,37 +95,38 @@ ActivityBase {
         }
 
         Rectangle {
-            id: questionItemBackground
-            color: "black"
-            border.width: 2
-            radius: 10
-            opacity: 0.85
-            z: 10
-            anchors{
-                horizontalCenter: parent.horizontalCenter
-                bottomMargin: 10
-            }
-            width: calendarBox.width * 2
-            height: calendarBox.height * 0.125
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
-        }
+                    id: questionItemBackground
+                    color: "black"
+                    border.width: 2
+                    radius: 10
+                    opacity: 0.85
+                    z: 10
+                    anchors{
+                        horizontalCenter: parent.horizontalCenter
+                        bottomMargin: 10
+                    }
+                    width: calendarBox.width * 2
+                    height: calendarBox.height * 0.125
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#000" }
+                        GradientStop { position: 0.9; color: "#666" }
+                        GradientStop { position: 1.0; color: "#AAA" }
+                    }
+                }
 
-        GCText {
-            id: questionItem
-            text: "The date is: " + new Date().toLocaleDateString(Qt.locale("de_DE")) + " \n  " +new Date().toLocaleDateString(Qt.locale("en_US"))
-            anchors.fill: questionItemBackground
-            anchors.bottom: questionItemBackground.bottom
-            fontSizeMode: Text.Fit
-            wrapMode: Text.Wrap
-            z: 10
-            color: "white"
-            verticalAlignment: Text.AlignVCenter
-            horizontalAlignment: Text.AlignHCenter
-        }
+                GCText {
+                    id: questionItem
+                    text: "The date is: " + new Date().toLocaleDateString(Qt.locale("de_DE")) + " \n  " +new Date().toLocaleDateString(Qt.locale("en_US"))
+                    anchors.fill: questionItemBackground
+                    anchors.bottom: questionItemBackground.bottom
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.Wrap
+                    z: 10
+                    color: "white"
+                    verticalAlignment: Text.AlignVCenter
+                    horizontalAlignment: Text.AlignHCenter
+                }
+
 
         BarButton {
             id: okButton

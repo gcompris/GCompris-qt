@@ -77,13 +77,34 @@ function levelConfigurations() {
         items.calendar.minimumDate = "2018-03-01"
         items.calendar.maximumDate = "2018-03-31"
         currentDataSet = dataset[0]
+        currentDataSet = Core.shuffle(currentDataSet)
         break;
     case 2:
+        items.calendar.navigationBarVisible = false
+        items.calendar.visibleMonth = 2
+        items.calendar.visibleYear = 2018
+        items.calendar.minimumDate = "2018-03-01"
+        items.calendar.maximumDate = "2018-03-31"
+        currentDataSet = dataset[1]
+        currentDataSet = Core.shuffle(currentDataSet)
+        break;
+    case 3:
+        items.calendar.navigationBarVisible = false
+        items.calendar.visibleMonth = 2
+        items.calendar.visibleYear = 2018
+        items.calendar.minimumDate = "2018-03-01"
+        items.calendar.maximumDate = "2018-03-31"
+        currentDataSet = dataset[2]
+        currentDataSet = Core.shuffle(currentDataSet)
+        break;
+    case 4:
         items.calendar.navigationBarVisible = true
         items.calendar.visibleMonth = new Date().getMonth()
         items.calendar.visibleYear = new Date().getFullYear()
-        currentDataSet = dataset[1]
+        currentDataSet = dataset[3]
+        currentDataSet = Core.shuffle(currentDataSet)
         break;
+
 
     }
     items.score.numberOfSubLevels = dataset[currentLevel].length
@@ -106,12 +127,25 @@ function initQuestion() {
 
 function checkAnswer() {
     switch(items.bar.level) {
-     case 1:
-         if(dateSelected.getDate() === correctAnswer) {
-             console.log("Right Answer")
-             currentSubLevel ++
-             initQuestion()
-         }
+    case 1:
+        if(dateSelected.getDay() === correctAnswer) {
+            currentSubLevel ++
+            initQuestion()
+        }
+        break;
+    case 2:
+        if(dateSelected.getDate() === correctAnswer) {
+            currentSubLevel ++
+            initQuestion()
+        }
+        break;
+    case 3:
+        if(dateSelected.getDate() === correctAnswer) {
+            console.log("Right Answer")
+            currentSubLevel ++
+            initQuestion()
+        }
+        break;
 
 
     }
