@@ -46,7 +46,33 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
+<<<<<<< HEAD
+=======
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet and Ilya Bizyaev</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+>>>>>>> 1fff88de... add licence for activity icons
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
@@ -58,6 +84,7 @@
        id="g7866"
        transform="translate(-7.8038715,-18)">
       <path
+<<<<<<< HEAD
          style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#c40606;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.09187365;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          d="m 40.5254,1016.5948 v 2.0429 h 34.715571 v -2.0429 z"
          id="path5274-1"
@@ -69,6 +96,19 @@
          inkscape:connector-curvature="0" />
       <g
          transform="matrix(0.26631066,0,0,0.26631066,103.32805,784.46521)"
+=======
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#c40606;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.1161375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="m 40.141434,1014.15 v 2.0882 h 35.487028 v -2.0882 z"
+         id="path5274-1"
+         inkscape:connector-curvature="0" />
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#5cc854;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.1161375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="m 39.152958,1054.4708 v 2.2832 h 45.43909 v -2.2832 z"
+         id="path5274"
+         inkscape:connector-curvature="0" />
+      <g
+         transform="matrix(0.27222868,0,0,0.27222868,104.3397,776.86195)"
+>>>>>>> 1fff88de... add licence for activity icons
          id="g7856">
         <g
            style="display:inline;fill:#d94444;fill-opacity:1;stroke:#ffffff;stroke-width:1.2500596;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -89,7 +129,11 @@
            sodipodi:nodetypes="sscsscccsccssccccs" />
       </g>
       <g
+<<<<<<< HEAD
          transform="matrix(0.26631066,0,0,0.26631066,10.724945,812.3082)"
+=======
+         transform="matrix(0.27222868,0,0,0.27222868,9.6787466,805.32367)"
+>>>>>>> 1fff88de... add licence for activity icons
          id="g7861">
         <path
            sodipodi:nodetypes="sssss"
@@ -110,11 +154,15 @@
         </g>
       </g>
       <g
-         transform="translate(-101.34094,151.78573)"
+         transform="matrix(0.27222868,0,0,0.27222868,-20.137966,832.77885)"
          id="g8676-1" />
       <g
          id="g4176"
+<<<<<<< HEAD
          transform="matrix(0.26631066,0,0,0.26631066,8.4744972,797.91593)">
+=======
+         transform="matrix(0.27222868,0,0,0.27222868,7.3782886,790.61158)">
+>>>>>>> 1fff88de... add licence for activity icons
         <rect
            transform="rotate(45)"
            y="490.13403"
@@ -133,7 +181,11 @@
            style="opacity:1;fill:#7ad643;fill-opacity:1;stroke:none;stroke-width:1.29999995;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </g>
       <g
+<<<<<<< HEAD
          transform="matrix(0.26631066,0,0,0.26631066,67.595463,797.91593)"
+=======
+         transform="matrix(0.27222868,0,0,0.27222868,67.813054,790.61157)"
+>>>>>>> 1fff88de... add licence for activity icons
          id="g4176-8">
         <rect
            transform="rotate(45)"
@@ -154,7 +206,11 @@
       </g>
       <g
          id="g4231"
+<<<<<<< HEAD
          transform="matrix(0.25881883,0,0,0.25881883,-18.187811,782.19731)">
+=======
+         transform="matrix(0.26457036,0,0,0.26457036,-19.876515,774.54365)">
+>>>>>>> 1fff88de... add licence for activity icons
         <circle
            style="opacity:1;fill:#2053a0;fill-opacity:1;stroke:none;stroke-width:1.29999995;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path4235"
@@ -170,7 +226,11 @@
       </g>
       <g
          id="g4254"
+<<<<<<< HEAD
          transform="matrix(0.24259502,0,0,0.24259502,38.112809,806.16244)">
+=======
+         transform="matrix(0.24798602,0,0,0.24798602,37.67523,799.04134)">
+>>>>>>> 1fff88de... add licence for activity icons
         <path
            sodipodi:nodetypes="cccc"
            inkscape:connector-curvature="0"
