@@ -1,8 +1,76 @@
-intro.ogg: The gcompris intro music has been created by Djilali Sebihi and is
-           released under the GPL
-	   In April 2005, on the same theme, Ludovic Grossard has remade it.
-	   Intro by Ludovic is still GPL.
+Copyright: Ludovic Grossard, 2005 - based on a theme by Djilali Sebihi
+License: GPL
+File: 
+intro.ogg
 
-win.svg: Taken from https://openclipart.org/detail/48937/Trophy
-	   This work is licensed under the Unlimited Commercial Use License.
-           Adapted by Timothée Giet
+Copyright: warszawianka, 2010
+License: Public Domain
+Files:
+arrows_move.svg
+
+Copyright: Tyson Tan, 2014
+License: CC-BY-SA
+Files:
+aboutkde.png
+
+Copyright: Holger Kaelberer, 2014
+License: GPL v3
+Files:
+arrow.png
+
+Copyright: Bruno Coudoin, 2014
+License: GPL
+Files:
+star.png
+
+Copyright: Timothée Giet, 2015
+License: CC-BY-SA 4.0
+Files:
+apply_disabled.svg
+apply.svg
+bar_about.svg
+bar_config.svg
+bar_exit.svg
+bar_help.svg
+bar_hint.svg
+bar_home.svg
+bar_next.svg
+bar_ok.svg
+bar_open.svg
+bar_previous.svg
+bar_reload.svg
+bar_repeat.svg
+button.svg
+cancel_disabled.svg
+cancel.svg
+cursor.svg
+difficulty1.svg
+difficulty2.svg
+difficulty3.svg
+difficulty4.svg
+difficulty5.svg
+difficulty6.svg
+loader.gif
+loading.svg
+
+Copyright: Timothée Giet, 2016 - based on http://openclipart.org/detail/32719/architetto
+License: CC-BY-SA 4.0
+File: 
+tuxballoon.svg
+
+Copyright: Timothée Giet, 2016 - based on https://openclipart.org/detail/48937/Trophy
+License: CC-BY-SA 4.0
+File: 
+win.svg
+
+Copyright: Timothée Giet, 2016
+License: GPL v3
+Files:
+gcompris-icon.png
+gcompris.png
+
+Copyright: Timothée Giet, 2017
+License: CC-BY-SA 4.0
+Files:
+scroll_down.svg
+scroll_up.svg
