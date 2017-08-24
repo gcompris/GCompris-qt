@@ -11,7 +11,7 @@
    id="svg2"
    viewBox="0 0 800 520"
    version="1.0"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92.1 r15371"
    width="1920"
    height="1248"
    sodipodi:docname="background.svg">
@@ -24,13 +24,13 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1888"
+     inkscape:window-width="1884"
      inkscape:window-height="1051"
      id="namedview175"
      showgrid="false"
      borderlayer="true"
      inkscape:zoom="0.43457605"
-     inkscape:cx="714.0025"
+     inkscape:cx="191.65434"
      inkscape:cy="496.26729"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -116,50 +116,40 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
+            <dc:title></dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title>Castle</dc:title>
-        <dc:date>2008-04-23T21:18:43</dc:date>
-        <dc:description>cartoon, cartoon, castle, castle, chateau, chateau, clip art, clipart, cloud, cloud, colour, colour, image, media, nature, nature, outline, outline, png, public domain, sun, sun, svg, </dc:description>
-        <dc:source>http://openclipart.org/detail/16504/castle-by-ibinbin</dc:source>
+        <dc:title></dc:title>
+        <dc:date>2015</dc:date>
+        <dc:description>based on http://openclipart.org/detail/16504/castle-by-ibinbin</dc:description>
+        <dc:source></dc:source>
         <dc:creator>
           <cc:Agent>
-            <dc:title>ibinbin</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
         <dc:subject>
-          <rdf:Bag>
-            <rdf:li>cartoon</rdf:li>
-            <rdf:li>castle</rdf:li>
-            <rdf:li>chateau</rdf:li>
-            <rdf:li>clip art</rdf:li>
-            <rdf:li>clipart</rdf:li>
-            <rdf:li>cloud</rdf:li>
-            <rdf:li>colour</rdf:li>
-            <rdf:li>image</rdf:li>
-            <rdf:li>media</rdf:li>
-            <rdf:li>nature</rdf:li>
-            <rdf:li>outline</rdf:li>
-            <rdf:li>png</rdf:li>
-            <rdf:li>public domain</rdf:li>
-            <rdf:li>sun</rdf:li>
-            <rdf:li>svg</rdf:li>
-          </rdf:Bag>
+          <rdf:Bag />
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>

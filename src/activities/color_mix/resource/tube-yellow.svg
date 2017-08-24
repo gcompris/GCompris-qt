@@ -10,7 +10,7 @@
    id="svg6431"
    viewBox="0 0 178.80735 64.476656"
    version="1.0"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92.1 r15371"
    width="179"
    height="65"
    sodipodi:docname="tube-yellow.svg">
@@ -23,12 +23,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1888"
+     inkscape:window-width="1884"
      inkscape:window-height="1051"
      id="namedview36"
      showgrid="false"
      inkscape:zoom="2.9577523"
-     inkscape:cx="101.00458"
+     inkscape:cx="24.257112"
      inkscape:cy="33.151068"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -75,43 +75,40 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
+            <dc:title></dc:title>
           </cc:Agent>
         </dc:publisher>
         <dc:title></dc:title>
-        <dc:date>2010-07-14T11:43:29</dc:date>
-        <dc:description>Colored tube of paint</dc:description>
-        <dc:source>http://openclipart.org/detail/72877/color-tube-white-by-trnsltlife</dc:source>
+        <dc:date>2017</dc:date>
+        <dc:description>based on http://openclipart.org/detail/72877/color-tube-white-by-trnsltlife</dc:description>
+        <dc:source></dc:source>
         <dc:creator>
           <cc:Agent>
-            <dc:title>TrnsltLife</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
         <dc:subject>
-          <rdf:Bag>
-            <rdf:li>Blanc</rdf:li>
-            <rdf:li>Colors of the spectrum</rdf:li>
-            <rdf:li>Couleurs du spectre</rdf:li>
-            <rdf:li>Quality</rdf:li>
-            <rdf:li>Qualité</rdf:li>
-            <rdf:li>White</rdf:li>
-            <rdf:li>clip art</rdf:li>
-            <rdf:li>clipart</rdf:li>
-          </rdf:Bag>
+          <rdf:Bag />
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
