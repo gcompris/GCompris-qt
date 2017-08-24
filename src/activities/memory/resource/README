@@ -1,5 +1,44 @@
-All images in this directory are copyright Mathieu Ignacio (mignacio at april point org).
-They are released under the GPL.
+Copyright: Mathieu Ignacio (mignacio at april point org).
+License: GPL
+Files:
+01_cat.svg
+02_pig.svg
+03_bear.svg
+04_hippopotamus.svg
+05_penguin.svg
+06_cow.svg
+07_sheep.svg
+08_turtle.svg
+09_panda.svg
+10_chicken.svg
+11_redbird.svg
+12_wolf.svg
+13_monkey.svg
+14_fox.svg
+15_bluebirds.svg
+16_elephant.svg
+17_lion.svg
+18_gnu.svg
+19_bluebaby.svg
+20_greenbaby.svg
+21_frog.svg
+
+Copyright: Timothée Giet, 2015
+License: CC-BY-SA 4.0
+Files:
+backcard.svg
+background.svg
+emptycard.svg
+
+Copyright: annares
+License: Public domain
+Files:
+children.svg
+
+Copyright: 2000, 2008 Bruno Coudoin and others
+License: GPLv3
+Files:
+tux-teacher.svg
 
 card_flip.wav: https://www.freesound.org/people/f4ngy/sounds/240776/
 	This work is licensed under the Attribution License.

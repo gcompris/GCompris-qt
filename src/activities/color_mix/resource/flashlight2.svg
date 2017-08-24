@@ -14,7 +14,7 @@
    viewBox="0 0 525 234"
    version="1.1"
    enable-background="new 0 0 428.039 424.828"
-   inkscape:version="0.92.1 r"
+   inkscape:version="0.92.1 r15371"
    width="525"
    height="234"
    sodipodi:docname="flashlight2.svg"
@@ -45,7 +45,7 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1888"
+     inkscape:window-width="1884"
      inkscape:window-height="1051"
      id="namedview327"
      showgrid="false"
@@ -55,7 +55,7 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="1.5712449"
-     inkscape:cx="349.05974"
+     inkscape:cx="204.58831"
      inkscape:cy="91.838043"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -71,9 +71,12 @@
      ry="94.056198" /><metadata
      id="metadata325"><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" /><dc:publisher><cc:Agent
-             rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher><dc:title /><dc:date>2006-11-25T21:51:47</dc:date><dc:description>a flashlight from a U.S. patent drawing</dc:description><dc:source>http://openclipart.org/detail/1638/flashlight-by-johnny_automatic</dc:source><dc:creator><cc:Agent><dc:title>johnny_automatic</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag><rdf:li>clip art</rdf:li><rdf:li>clipart</rdf:li><rdf:li>equipment</rdf:li><rdf:li>externalsource</rdf:li><rdf:li>flashlight</rdf:li><rdf:li>image</rdf:li><rdf:li>media</rdf:li><rdf:li>png</rdf:li><rdf:li>public domain</rdf:li><rdf:li>svg</rdf:li><rdf:li>torch</rdf:li><rdf:li>uspto</rdf:li></rdf:Bag></dc:subject></cc:Work><cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/"><cc:permits
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" /><dc:publisher><cc:Agent
+             rdf:about="http://openclipart.org/"><dc:title></dc:title></cc:Agent></dc:publisher><dc:title></dc:title><dc:date>2017</dc:date><dc:description></dc:description><dc:source></dc:source><dc:creator><cc:Agent><dc:title>Timothée Giet</dc:title></cc:Agent></dc:creator><dc:subject><rdf:Bag /></dc:subject></cc:Work><cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/"><cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" /><cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /></cc:License></rdf:RDF></metadata></svg>
+           rdf:resource="http://creativecommons.org/ns#Distribution" /><cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" /><cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" /><cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /><cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" /></cc:License></rdf:RDF></metadata></svg>

@@ -1321,44 +1321,35 @@
   <metadata
      id="metadata681">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:publisher>
-          <cc:Agent
-             rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-        <dc:title>Coastal Fishing Boat Scene</dc:title>
-        <dc:date>2014-05-30T15:14:19</dc:date>
-        <dc:description>I incorporated elements from other Openclipart artists in this scene. Can remember who but cheers anyway!</dc:description>
-        <dc:source>https://openclipart.org/detail/193893/coastal-fishing-boat-scene-by-bonzo-193893</dc:source>
+        <dc:title></dc:title>
+        <dc:date>2016</dc:date>
         <dc:creator>
           <cc:Agent>
-            <dc:title>Bonzo</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>Coastal</rdf:li>
-            <rdf:li>Fishing Boat</rdf:li>
-            <rdf:li>Sea</rdf:li>
-            <rdf:li>ocean</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
