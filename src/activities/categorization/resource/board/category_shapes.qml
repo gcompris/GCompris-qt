@@ -37,54 +37,54 @@ QtObject{
                     "image": imagesPrefix + "circle.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/cd.svg","shapes/clock.svg","shapes/coin.svg","ball.png","shapes/cookie.svg"],
-                    "bad": ["shapes/backcard.svg","shapes/can.svg","shapes/can1.svg","shapes/conehat.svg"]
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["cd.svg","clock.svg","coin.svg","globe.svg","smile.svg"],
+                    "bad": ["backcard.svg","can.svg","can1.svg","conehat.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching RECTANGLE to right and others to the left"),
                     "image": imagesPrefix + "rectangle.svg",
+                    "maxNumberOfGood": 4,
+                    "maxNumberOfBad": 5,
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["paper.svg","rectangle_led.svg","stickynote.svg","rainbowsquare.svg"],
+                    "bad": ["cylinder.svg","icecream.svg","trapezium.svg","trash.svg","pizza.svg"]
+                },
+                {
+                    "instructions": qsTr("Place the objects matching BALL to right and others to the left"),
+                    "image": imagesPrefix + "sun.svg",
+                    "maxNumberOfGood": 4,
+                    "maxNumberOfBad": 5,
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["shapes/football.svg","shapes/globe.svg","ball.png","shapes/watermelon.svg"],
+                    "bad": ["shapes/cone.svg","shapes/halforange.svg","shapes/sunrise.svg","shapes/juice2.svg","shapes/icecube.svg"]
+                },
+                {
+                    "instructions": qsTr("Place the objects matching TRAPEZOID to right and others to the left"),
+                    "image": imagesPrefix + "trapezium.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/paper.svg","shapes/rectangle_led.svg","shapes/backcard.svg","shapes/slate.svg","shapes/diceface.svg"],
-                    "bad": ["shapes/icecream.svg","shapes/icecube.svg","shapes/juice1.svg","strainer.png"]
-                },
-                {
-                    "instructions": qsTr("Place the objects matching HEMISPHERE to right and others to the left"),
-                    "image": imagesPrefix + "hemisphere.svg",
-                    "maxNumberOfGood": 4,
-                    "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/halforange.svg","shapes/bowl.svg","shapes/bowl1.svg","shapes/bowl2.svg"],
-                    "bad": ["shapes/football.svg","shapes/watermelon.svg","shapes/sunrise.svg","shapes/juice2.svg","shapes/icecube.svg"]
-                },
-                {
-                    "instructions": qsTr("Place the objects matching TRAPEZIUM to right and others to the left"),
-                    "image": imagesPrefix + "trapezium.svg",
-                    "maxNumberOfGood": 4,
-                    "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/trapezium2.svg","shapes/trapezium3.svg","shapes/trapezium1.svg","shapes/kite.svg"],
-                    "bad": ["shapes/rhombus1.svg","shapes/pgram2.svg","shapes/icecube.svg","shapes/juice1.svg","shapes/square.png"]
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["trapezium2.svg","trapezium4.svg","trapezium3.svg","rectangle.svg","rhombus1.svg"],
+                    "bad": ["cube.svg","dice.svg","rectbin.svg","yellowtriangle.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching TRIANGLE to right and others to the left"),
                     "image": imagesPrefix + "triangle.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/pizza.svg","shapes/trianglehat.svg","shapes/warning.svg","shapes/warning1.svg"],
-                    "bad": ["shapes/sun.svg","shapes/sunrays.svg","tape_measure.png","shapes/trapezium1.svg","shapes/rainbowsquare.svg"]
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["yellowtriangle.svg","trianglehat.svg","warning.svg","warning1.svg"],
+                    "bad": ["sun.svg","cookie.svg","rhombus2.svg","trapezium2.svg","semicircle.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching SEMICIRCLE to right and others to the left"),
                     "image": imagesPrefix + "semicircle.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/fan.svg","shapes/halfmoon.svg","shapes/sunrise.svg","shapes/rainbow.svg"],
-                    "bad": ["shapes/diceface.svg","shapes/tin.png","shapes/torch.png","shapes/trianglehat.svg","trap.png"]
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["fan.svg","halfmoon.svg","sunrise.svg","rainbow.svg"],
+                    "bad": ["diceface.svg","watermelon.svg","squareclock.svg","trianglehat.svg","circle.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching PENTAGON to right and others to the left"),
@@ -97,30 +97,30 @@ QtObject{
                 },
                 {
                     "instructions": qsTr("Place the objects matching SQUARE to right and others to the left"),
-                    "image": imagesPrefix + "rectangle.svg",
-                    "maxNumberOfGood": 5,
-                    "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/rsquare.svg","shapes/rainbowsquare.svg","shapes/square.png","shapes/squareclock.svg","shapes/stickynote.svg"],
-                    "bad": ["shapes/shapes.png","shapes/slate.svg","glass.png","shapes/globe.svg"]
+                    "image": imagesPrefix + "rhombus.svg",
+                    "maxNumberOfGood": 4,
+                    "maxNumberOfBad": 5,
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["rsquare.svg","rainbowsquare.svg","ledsquare.svg","stickynote.svg"],
+                    "bad": ["trapezium.svg","slate.svg","rhombus4.svg","globe.svg","parallelogram.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching CONE to right and others to the left"),
                     "image": imagesPrefix + "cone.svg",
-                    "maxNumberOfGood": 6,
-                    "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/icecone.svg","shapes/ice_cream.png","shapes/wcone.svg","shapes/torch.png","shapes/icecream.svg","shapes/conehat.svg"],
-                    "bad": ["flour.png","shapes/yellowtriangle.svg","shapes/glass.svg","shapes/sugar.png","book.png","shapes/dice.svg"]
+                    "maxNumberOfGood": 4,
+                    "maxNumberOfBad": 5,
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["ice_cream.png","icecone.svg","icecream.svg","conehat.svg"],
+                    "bad": ["semicircle.svg","glass.svg","bowl3.svg","halforange.svg","dice.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching PARELLELOGRAM to right and others to the left"),
                     "image": imagesPrefix + "parallelogram.svg",
-                    "maxNumberOfGood": 4,
-                    "maxNumberOfBad": 5,
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/data/words/shapes/",
-                    "good": ["pgram1.svg","pgram2.svg","pgram3.svg","pgram4.svg"],
-                    "bad": ["rsquare.svg","rainbowsquare.svg","paper.svg","rectangle_led.svg","rhombus4.svg"]
+                    "good": ["pgram1.svg","pgram2.svg","pgram3.svg","paper.svg","rectangle_led.svg",],
+                    "bad": ["globe.svg","heptagon.svg","pizza.svg","trapezium4.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching HEPTAGON to right and others to the left"),
@@ -134,20 +134,20 @@ QtObject{
                 {
                     "instructions": qsTr("Place the objects matching CUBE to right and others to the left"),
                     "image": imagesPrefix + "cube.svg",
-                    "maxNumberOfGood": 6,
-                    "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/icecube.svg","shapes/sugar.png","shapes/cube1.svg","shapes/dice.svg","shapes/rubikscube.svg","shapes/rubikscube1.svg"],
-                    "bad": ["shapes/juice2.svg","mattress.png","shapes/squareclock.svg","shapes/stickynote.svg","shapes/backcard.svg","shapes/diceface.svg"]
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["icecube.svg","cube1.svg","dice.svg","rubikscube.svg","rubikscube1.svg"],
+                    "bad": ["juice2.svg","cuboid1.svg","stickynote.svg","backcard.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching RHOMBUS to right and others to the left"),
-                    "image": imagesPrefix + "rhombus.svg",
+                    "image": imagesPrefix + "rhombus1.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
                     "prefix": "qrc:/gcompris/data/words/shapes/",
-                    "good": ["rhombus1.svg","rhombus2.svg","rhombus3.svg","rhombus4.svg"],
-                    "bad": ["squareclock.svg","stickynote.svg","backcard.svg","pgram1.svg","diceface.svg"]
+                    "good": ["rainbowsquare.svg","rhombus2.svg","ledsquare.svg","rhombus4.svg"],
+                    "bad": ["hexagon.svg","parallelogram.svg","pentagon4.svg","pgram1.svg","trapezium2.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching NONAGON to right and others to the left"),
@@ -161,11 +161,11 @@ QtObject{
                 {
                     "instructions": qsTr("Place the objects matching CUBOID to right and others to the left"),
                     "image": imagesPrefix + "cuboid.svg",
-                    "maxNumberOfGood": 6,
-                    "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/juice2.svg","mattress.png","radio.png","shapes/rectbin.svg","book.png","trap.png"],
-                    "bad": ["shapes/dice.svg","shapes/rubikscube.svg","shapes/rectangle_led.svg","shapes/slate.svg","shapes/rsquare.svg","shapes/rainbowsquare.svg"]
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["dice.svg","rubikscube.svg","cuboid1.svg","juice2.svg","cube1.svg"],
+                    "bad": ["backcard.svg","cone.svg","pizza.svg","trash.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching HEXAGON to right and others to the left"),
@@ -188,11 +188,11 @@ QtObject{
                 {
                     "instructions": qsTr("Place the objects matching CYLINDER to right and others to the left"),
                     "image": imagesPrefix + "cylinder.svg",
-                    "maxNumberOfGood": 7,
-                    "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/data/words/",
-                    "good": ["shapes/rolling_pin.png","spool.png","shapes/bin.png","bucket.png","shapes/can.svg","shapes/gascylinder.svg","shapes/glass.svg"],
-                    "bad": ["shapes/halforange.svg","radio.png","shapes/sugar.png","shapes/ice_cream.png","shapes/juice2.svg"]
+                    "maxNumberOfGood": 5,
+                    "maxNumberOfBad": 4,
+                    "prefix": "qrc:/gcompris/data/words/shapes/",
+                    "good": ["rolling_pin.png","tin.png","can1.svg","can.svg", "trash.svg"],
+                    "bad": ["halforange.svg","decagon3.svg","wcone.svg","juice2.svg"]
                 },
                 {
                     "instructions": qsTr("Place the objects matching DECAGON to right and others to the left"),
