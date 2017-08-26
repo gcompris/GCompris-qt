@@ -18,16 +18,19 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+
 import QtQuick 2.6
 import GCompris 1.0
 import QtQuick.Controls 1.4
 import "../../core"
 import "Calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
+import "levelConfigData.js" as LevelConfigurations
 
 ActivityBase {
     id: activity
     property var dataset: Dataset
+    property var levelConfigurations: LevelConfigurations
     onStart: focus = true
     onStop: {}
 
@@ -53,17 +56,28 @@ ActivityBase {
             property alias bonus: bonus
             property alias calendar: calendar
             property alias okButton: okButton
-            property alias questionItemBackground: questionItemBackground
             property alias questionItem: questionItem
-            property alias questionsModel: questionsModel
             property alias score: score
-
+            property alias answerChoices: answerChoices
+            property alias questionDelay: questionDelay
+            property alias okButtonParticles: okButtonParticles
         }
 
-        onStart: { Activity.start(items, dataset) }
+        onStart: { Activity.start(items, dataset, levelConfigurations) }
         onStop: { Activity.stop() }
 
-        Rectangle{
+        // Question time delay
+        Timer {
+            id: questionDelay
+            repeat: false
+            interval: 1600
+            onTriggered: {
+                Activity.currentSubLevel ++
+                Activity.initQuestion()
+            }
+        }
+
+        Rectangle {
             id: calendarBox
             width: parent.width * 0.40
             height: parent.height * 0.70
@@ -74,60 +88,81 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             color: "black"
             opacity: 0.3
-
         }
+
         Calendar {
             id: calendar
             weekNumbersVisible: false
             width: calendarBox.width * 0.85
             height: calendarBox.height * 0.85
             anchors.centerIn: calendarBox
+            visibleMonth: 2
+            visibleYear: 2018
             frameVisible: true
             focus: true
-            onClicked:{
-                console.log(selectedDate.getDay())
+            __locale: Qt.locale(ApplicationSettings.locale)
+            onVisibleMonthChanged: {
+                Activity.monthSelected = visibleMonth
+            }
+            onVisibleYearChanged: {
+                Activity.yearSelected = visibleYear
+            }
+            onClicked: {
                 Activity.dateSelected = selectedDate
             }
         }
 
-        ListModel {
-            id: questionsModel
+        // Creates a table consisting of days of weeks.
+        Column {
+            id: answerChoices
+            anchors.top: calendar.top
+            anchors.right: calendarBox.left
+            spacing: 2
+            Repeater{
+                model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
+                ChoiceTable{
+                    width: calendar.width * 0.33
+                    height: calendar.height / 7.3
+                    choices.text: modelData
+                }
+            }
         }
 
         Rectangle {
-                    id: questionItemBackground
-                    color: "black"
-                    border.width: 2
-                    radius: 10
-                    opacity: 0.85
-                    z: 10
-                    anchors{
-                        horizontalCenter: parent.horizontalCenter
-                        bottomMargin: 10
-                    }
-                    width: calendarBox.width * 2
-                    height: calendarBox.height * 0.125
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#000" }
-                        GradientStop { position: 0.9; color: "#666" }
-                        GradientStop { position: 1.0; color: "#AAA" }
-                    }
-                }
+            id: questionItemBackground
+            color: "black"
+            border.width: 2
+            radius: 10
+            opacity: 0.85
+            z: 10
+            anchors{
+                horizontalCenter: parent.horizontalCenter
+                bottomMargin: 10
+            }
+            width: calendarBox.width * 2
+            height: calendarBox.height * 0.125
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
+        }
 
-                GCText {
-                    id: questionItem
-                    text: "The date is: " + new Date().toLocaleDateString(Qt.locale("de_DE")) + " \n  " +new Date().toLocaleDateString(Qt.locale("en_US"))
-                    anchors.fill: questionItemBackground
-                    anchors.bottom: questionItemBackground.bottom
-                    fontSizeMode: Text.Fit
-                    wrapMode: Text.Wrap
-                    z: 10
-                    color: "white"
-                    verticalAlignment: Text.AlignVCenter
-                    horizontalAlignment: Text.AlignHCenter
-                }
+        // Displays the question.
+        GCText {
+            id: questionItem
+            text: ""
+            anchors.fill: questionItemBackground
+            anchors.bottom: questionItemBackground.bottom
+            fontSizeMode: Text.Fit
+            wrapMode: Text.Wrap
+            z: 10
+            color: "white"
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+        }
 
-
+        // Answer Submition button.
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -142,9 +177,11 @@ ActivityBase {
                 left: calendarBox.right
                 leftMargin: calendarBox.width * 0.1
                 bottom: calendarBox.bottom
-
             }
-
+            ParticleSystemStarLoader {
+                id: okButtonParticles
+                clip: false
+            }
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -152,7 +189,6 @@ ActivityBase {
                 }
             }
         }
-
 
         DialogHelp {
             id: dialogHelp
@@ -172,8 +208,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
         }
+
         Score {
             id: score
             z: 1003
