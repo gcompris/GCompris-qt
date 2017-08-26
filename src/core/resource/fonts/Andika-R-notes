@@ -1,0 +1,5 @@
+note:
+We had a bug when building on windows with mingw: the Andika-R.ttf font produced wrong result on Uppercase letters with accents, the accent was inside the letter, not above (like if it was on a lowercase letter...)
+
+I could workaround the issue by opening the Andika.ttf font in fontforge, changing the Em size to 1000 in Element/Font info/General (as the software advised to do it), then exporting to otf.
+

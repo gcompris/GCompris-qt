@@ -40,7 +40,7 @@
 
 #include <QtQml>
 
-#define GC_DEFAULT_FONT "Andika-R.ttf"
+#define GC_DEFAULT_FONT "Andika-R.otf"
 #define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
 #define GC_DEFAULT_FONT_LETTER_SPACING 0
 
