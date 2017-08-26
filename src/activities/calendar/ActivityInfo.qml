@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2017 Your Name <yy@zz.org>
+ * Copyright (C) 2017 Amit Sagtani <asagtani06@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,18 +18,18 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "calendar/Calendar.qml"
-  difficulty: 1
-  icon: "calendar/Calendar.svg"
-  author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
-  demo: true
-  title: qsTr("Calendar activity")
-  description: ""
-  //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
-  manual: ""
-  credit: ""
-  section: "fun"
-  createdInVersion: 9000
+    name: "calendar/Calendar.qml"
+    difficulty: 1
+    icon: "calendar/Calendar.svg"
+    author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
+    demo: true
+    title: qsTr("Calendar activity")
+    description: ""
+    //intro: "put here in comment the text for the intro voice"
+    goal: ""
+    prerequisite: ""
+    manual: ""
+    credit: ""
+    section: "fun"
+    createdInVersion: 9000
 }
