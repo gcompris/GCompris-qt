@@ -23,7 +23,7 @@ import QtQuick 2.6
 import GCompris 1.0
 import QtQuick.Controls 1.4
 import "../../core"
-import "Calendar.js" as Activity
+import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
 import "levelConfigData.js" as LevelConfigurations
 
@@ -118,7 +118,7 @@ ActivityBase {
             anchors.top: calendar.top
             anchors.right: calendarBox.left
             spacing: 2
-            Repeater{
+            Repeater {
                 model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
                 ChoiceTable{
                     width: calendar.width * 0.33
@@ -208,13 +208,16 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
             id: score
-            z: 1003
-            anchors.bottom: background.bottom
-            anchors.right: background.right
+            anchors.top: questionItemBackground.bottom
+            anchors.topMargin: 5
+            anchors.bottom: calendar.top
+            anchors.right: questionItemBackground.right
+            anchors.rightMargin: 0
         }
     }
 }
