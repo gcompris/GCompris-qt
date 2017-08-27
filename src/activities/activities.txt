@@ -9,9 +9,9 @@ algorithm
 align4
 align4-2players
 alphabet-sequence
-baby_wordprocessor
 babymatch
 babyshapes
+baby_wordprocessor
 balancebox
 ballcatch
 bargame
@@ -26,10 +26,10 @@ chess
 chess_2players
 chess_partyend
 chronos
-click_on_letter
-click_on_letter_up
 clickanddraw
 clickgame
+click_on_letter
+click_on_letter_up
 clockgame
 color_mix
 color_mix_light
@@ -128,6 +128,7 @@ share
 simplepaint
 smallnumbers
 smallnumbers2
+submarine
 sudoku
 superbrain
 tangram

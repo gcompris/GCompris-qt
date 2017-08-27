@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "algebra_by/algebra_by.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Multiplication of numbers")
+  //: Help title
   description: qsTr("Practice the multiplication operation")
 //  intro: "Multiply the two numbers together and type in your answer before the balloon lands in the water"
+  //: Help goal
   goal: qsTr("Learn to multiply numbers within a limited period of time")
+  //: Help prerequisite
   prerequisite: qsTr("Multiplication tables from 1 to 10")
+  //: Help manual
   manual: qsTr("Two numbers are displayed on the screen. Quickly multiply them and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins in their balloon land!")
   credit: ""
   section: "math multiplication"

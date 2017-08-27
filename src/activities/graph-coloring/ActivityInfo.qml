@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "graph-coloring/graph-coloring.svg"
   author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.in&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Graph Coloring")
+  //: Help title
   description: qsTr("Color the graph so that no two adjacent nodes have the same color.")
   //intro: "Color the graph so that no two adjacent nodes have the same color."
+  //: Help goal
   goal: qsTr("Learn to distinguish between different colors/shapes and learn about relative positions.")
+  //: Help prerequisite
   prerequisite: qsTr("Ability to distinguish different colors/shapes, sense of positions")
+  //: Help manual
   manual: ""
   credit: ""
   section: "math"

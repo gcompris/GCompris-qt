@@ -23,11 +23,16 @@ ActivityInfo {
     icon: "ballcatch/ballcatch.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
     demo: true
+    //: Activity title
     title: qsTr("Make the ball go to Tux")
+    //: Help title
     description: qsTr("Press the left and right arrow keys at the same time, to make the ball go in a straight line.")
 //    intro: "Press the left and right arrow key at the same time to send the ball straight on"
+    //: Help goal
     goal: ""
+    //: Help prerequisite
     prerequisite: ""
+    //: Help manual
     manual: qsTr("Press the left and right arrow at the same time, to make the ball go in a straight line. On a touch screen you have to hit the two hands at the same time.")
     credit: ""
     section: "computer keyboard"

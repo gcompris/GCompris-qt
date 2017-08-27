@@ -10,9 +10,9 @@
    id="svg6431"
    viewBox="0 0 178.80735 64.476656"
    version="1.0"
-   inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%"
+   inkscape:version="0.92.1 r15371"
+   width="179"
+   height="65"
    sodipodi:docname="tube-cyan.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -23,32 +23,34 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1880"
-     inkscape:window-height="1060"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
      id="namedview36"
      showgrid="false"
-     inkscape:zoom="8.3657868"
-     inkscape:cx="126.14905"
+     inkscape:zoom="5.9155046"
+     inkscape:cx="64.167256"
      inkscape:cy="29.617211"
-     inkscape:window-x="-3"
-     inkscape:window-y="-3"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg6431"
      borderlayer="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     height="65"
+     units="px" />
   <defs
      id="defs3" />
   <path
      id="path6381"
-     style="color:#000000;fill:#00ffed;fill-opacity:1;stroke:none;stroke-width:1.71254373;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="m 9.971793,2.2170039 133.276757,7.51676 V 55.617664 L 9.971793,63.126094 V 2.2170039 z"
+     style="color:#000000;fill:#00ffed;fill-opacity:1;stroke:none;stroke-width:1.71254373;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 9.971793,2.2170039 133.276757,7.51676 V 55.617664 L 9.971793,63.126094 Z"
      inkscape:connector-curvature="0" />
   <rect
      id="rect6383"
-     style="color:#000000;fill:#00ffed;stroke:none;stroke-width:1.71254373;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+     style="color:#000000;fill:#00ffed;fill-opacity:1;stroke:none;stroke-width:1.71254373;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      transform="scale(-1,1)"
      height="62.764114"
      width="9.9438477"
@@ -56,15 +58,15 @@
      x="-10.800113" />
   <rect
      id="rect6387"
-     style="color:#000000;fill:#00f3ff;stroke:none;stroke-width:1.4947722;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+     style="color:#000000;fill:#00f3ff;fill-opacity:1;stroke:none;stroke-width:1.4947722;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      height="16.079367"
      width="16.272078"
      y="24.5357"
      x="161.78789" />
   <path
      id="path8440"
-     style="color:#000000;fill:#00ffed;fill-opacity:1;stroke:none;stroke-width:1.71254373;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-     d="M 162.54296,24.783949 143.18668,9.7920967 143.31865,55.592663 162.54296,40.559145 V 24.783949 z"
+     style="color:#000000;fill:#00ffed;fill-opacity:1;stroke:none;stroke-width:1.71254373;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="M 162.54296,24.783949 143.18668,9.7920967 143.31865,55.592663 162.54296,40.559145 Z"
      inkscape:connector-curvature="0" />
   <metadata
      id="metadata34">
@@ -74,48 +76,46 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
+            <dc:title></dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title />
-        <dc:date>2010-07-14T11:43:29</dc:date>
-        <dc:description>Colored tube of paint</dc:description>
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:description>based on http://openclipart.org/detail/72877/color-tube-white-by-trnsltlife</dc:description>
         <dc:source>http://openclipart.org/detail/72877/color-tube-white-by-trnsltlife</dc:source>
         <dc:creator>
           <cc:Agent>
-            <dc:title>TrnsltLife</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
         <dc:subject>
-          <rdf:Bag>
-            <rdf:li>Blanc</rdf:li>
-            <rdf:li>Colors of the spectrum</rdf:li>
-            <rdf:li>Couleurs du spectre</rdf:li>
-            <rdf:li>Quality</rdf:li>
-            <rdf:li>Qualité</rdf:li>
-            <rdf:li>White</rdf:li>
-            <rdf:li>clip art</rdf:li>
-            <rdf:li>clipart</rdf:li>
-          </rdf:Bag>
+          <rdf:Bag />
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
   <path
-     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:0.57254902;fill-rule:nonzero;stroke:none;stroke-width:0.81737459px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-     d="M 0.85546875 0.85546875 L 0.85546875 63.621094 L 10.800781 63.621094 L 10.800781 63.080078 L 143.22266 55.603516 L 162.4707 40.615234 L 178.06055 40.615234 L 178.06055 24.535156 L 162.22266 24.535156 L 143.24805 9.7871094 L 10.800781 2.2636719 L 10.800781 0.85546875 L 0.85546875 0.85546875 z M 2.8808594 4.203125 L 9.1289062 4.203125 L 9.1289062 60.273438 L 2.8808594 60.273438 L 2.8808594 4.203125 z M 10.650391 5.5625 L 142.30859 12.083984 L 142.30859 53.173828 L 10.650391 59.689453 L 10.650391 5.5625 z M 144.05664 13.414062 L 161.60938 25.527344 L 161.60938 39.730469 L 144.05664 51.955078 L 144.05664 13.414062 z M 163.73633 26.201172 L 176.03516 26.201172 L 176.03516 38.876953 L 167.94141 38.876953 L 163.73633 26.201172 z M 163.04102 26.701172 L 167.07812 38.876953 L 163.04102 38.876953 L 163.04102 26.701172 z "
-     id="path3062" />
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;baseline-shift:baseline;text-anchor:start;white-space:normal;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:0.57254902;fill-rule:nonzero;stroke:none;stroke-width:0.81737459px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+     d="M 0.85546875,0.85546875 V 63.621094 H 10.800781 V 63.080078 L 143.22266,55.603516 162.4707,40.615234 h 15.58985 V 24.535156 H 162.22266 L 143.24805,9.7871094 10.800781,2.2636719 V 0.85546875 Z M 2.8808594,4.203125 H 9.1289062 V 60.273438 H 2.8808594 Z M 10.650391,5.5625 142.30859,12.083984 V 53.173828 L 10.650391,59.689453 Z m 133.406249,7.851562 17.55274,12.113282 v 14.203125 l -17.55274,12.224609 z m 19.67969,12.78711 h 12.29883 v 12.675781 h -8.09375 z m -0.69531,0.5 4.0371,12.175781 h -4.0371 z"
+     id="path3062"
+     inkscape:connector-curvature="0" />
 </svg>

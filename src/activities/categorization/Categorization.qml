@@ -40,7 +40,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
+        source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
         anchors.fill: parent
         sourceSize.width: parent.width
         signal start

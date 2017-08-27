@@ -11,11 +11,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="100%"
-   height="100%"
-   viewBox="0 0 799.96291 400.02536"
+   width="800"
+   height="400"
+   viewBox="0 0 800 400"
    id="svg2"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r"
    sodipodi:docname="car3.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -40,7 +40,8 @@
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     units="px" />
   <title
      id="title3968">Red Car - Top View</title>
   <defs
@@ -247,7 +248,7 @@
       <path
          d="m 989.02,827.5 -5.0937,0.59375 c -21.545,2.5127 -37.688,25.979 -39.281,54.531 l -0.37499,7.125 5.2499,-4.8438 c 15.889,-14.68 28.303,-32.507 37.406,-52.75 l 2.09,-4.65 z"
          id="path3707"
-         style="text-indent:0;text-transform:none;block-progression:tb;color:#000000;fill:#212121;stroke:#191919;stroke-width:5"
+         style="color:#000000;text-indent:0;text-transform:none;fill:#212121;stroke:#191919;stroke-width:5"
          inkscape:connector-curvature="0" />
       <path
          d="m 783.47,838.5 c 0,0 79.677,-22.596 105.38,-31.982 26.839,-9.8018 98.859,-39.146 98.859,-39.146 0,0 -8.7409,42.47 -30.483,57.918 -77.23,54.87 -232.69,53.85 -232.69,53.85"
@@ -302,7 +303,7 @@
       <path
          d="m 400.34,852.75 c -33.454,0 -65.492,1.7894 -95.093,5.0625 l -3.6562,0.40625 1.7187,3.25 c 6.6711,12.664 16.562,21.113 29.062,26.438 12.501,5.3241 27.572,7.6126 45.093,8.4375 35.042,1.6498 79.954,-2.6312 133.59,-2 49.659,0.58438 89.508,1.8787 121.53,2.375 l 1.125,-4.75 c -47.84,-23.68 -134.34,-39.22 -233.36,-39.22 z m 0,5 c 91.169,0 171.75,13.479 220.09,33.719 -29.952,-0.58241 -65.212,-1.606 -109.31,-2.125 -53.937,-0.63473 -98.976,3.6522 -133.4,2.0312 -17.214,-0.81046 -31.767,-3.1054 -43.406,-8.0625 -10.453,-4.4521 -18.485,-11.154 -24.5,-20.906 28.307,-2.9831 58.735,-4.6562 90.53,-4.6562 z"
          id="path4025"
-         style="text-indent:0;text-transform:none;block-progression:tb;opacity:0.9;color:#000000;fill:#191919"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.9;fill:#191919"
          inkscape:connector-curvature="0" />
       <path
          d="m 260.5,607.38 -77.749,12.469 c -27.15,4.3542 -48.947,48.773 -50.999,104.84 2.0523,56.071 23.849,100.49 50.999,104.84 l 77.749,12.469 c 13.296,0 24,-10.704 24,-24 v -186.62 c 0,-13.296 -10.704,-24 -24,-24 z"
@@ -327,7 +328,7 @@
       <path
          d="m 989.02,621.89 -5.0937,-0.59375 c -21.545,-2.5127 -37.688,-25.979 -39.281,-54.531 l -0.37499,-7.125 5.2499,4.8438 c 15.889,14.68 28.303,32.507 37.406,52.75 l 2.0937,4.6562 z"
          id="path4161"
-         style="text-indent:0;text-transform:none;block-progression:tb;color:#000000;fill:#212121;stroke:#191919;stroke-width:5"
+         style="color:#000000;text-indent:0;text-transform:none;fill:#212121;stroke:#191919;stroke-width:5"
          inkscape:connector-curvature="0" />
       <path
          d="m 783.47,610.89 c 0,0 79.677,22.596 105.38,31.982 26.839,9.8018 98.859,39.146 98.859,39.146 0,0 -8.7409,-42.47 -30.483,-57.918 -77.23,-54.87 -232.69,-53.86 -232.69,-53.86"
@@ -382,7 +383,7 @@
       <path
          d="m 400.34,596.64 c -33.454,0 -65.492,-1.7894 -95.093,-5.0625 l -3.6562,-0.40625 1.7187,-3.25 c 6.6711,-12.664 16.562,-21.113 29.062,-26.438 12.501,-5.3241 27.572,-7.6126 45.093,-8.4375 35.042,-1.6498 79.954,2.6312 133.59,2 49.659,-0.58438 89.508,-1.8787 121.53,-2.375 l 1.125,4.75 c -47.849,23.675 -134.36,39.219 -233.37,39.219 z m 0,-5 c 91.169,0 171.75,-13.479 220.09,-33.719 -29.952,0.58241 -65.212,1.606 -109.31,2.125 -53.937,0.63473 -98.976,-3.6522 -133.4,-2.0312 -17.214,0.81046 -31.767,3.1054 -43.406,8.0625 -10.453,4.4521 -18.485,11.154 -24.5,20.906 28.307,2.9831 58.735,4.6562 90.53,4.6562 z"
          id="path4183"
-         style="text-indent:0;text-transform:none;block-progression:tb;opacity:0.9;color:#000000;fill:#191919"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.9;fill:#191919"
          inkscape:connector-curvature="0" />
     </g>
   </g>
@@ -394,7 +395,7 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
@@ -432,7 +433,7 @@
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits

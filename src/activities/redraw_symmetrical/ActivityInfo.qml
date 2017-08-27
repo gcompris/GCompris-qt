@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "redraw_symmetrical/redraw_symmetrical.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Mirror the given image")
+  //: Help title
   description: qsTr("Draw the image on the empty grid as if you see it in a mirror.")
   //intro: "Use the drawing tools to reproduce the right-hand side symmetrical figure."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("First, select the proper color from the toolbar. Then drag to paint.") + " " +
           qsTr("At the first level a hint is provided to show that a symmetry is requested.")
   credit: ""

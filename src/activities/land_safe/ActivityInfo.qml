@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "land_safe/land_safe.svg"
   author: "Matilda Bernard &lt;serah4291@gmail.com&gt; (Gtk+), Holger Kaelberer &lt;holger.k@elberer.de&gt; (Qt Quick)"
   demo: true
+  //: Activity title
   title: qsTr("Land Safe")
+  //: Help title
   description: qsTr("Understanding acceleration due to gravity.")
   // intro: "Use the arrow keys to pilot your spaceship safely onto the landing pad."
+  //: Help goal
   goal: qsTr("Pilot the spaceship towards the green landing area.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Acceleration due to gravity experienced by the spaceship is directly proportional to the mass of the planet and inversely proportional to the square of the distance from the center of the planet. Thus, with every planet the acceleration will differ and as the spaceship comes closer and closer to the planet the acceleration increases.
 
 Use the up/down keys to control the thrust and the right/left keys to control direction. On touch screens you can control the rocket through the corresponding on-screen buttons.

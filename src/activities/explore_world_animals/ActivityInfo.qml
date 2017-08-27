@@ -27,11 +27,16 @@ ActivityInfo {
   icon: "explore_world_animals/explore_world_animals.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Explore World Animals")
+  //: Help title
   description: qsTr("Learn about world animals, interesting facts and their location on a map.")
   // intro: "Learn about world animals and locate them on a map."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("There are two levels in this game.
 
 In level one, players enjoy exploring each animal on the screen. Click on the question mark, and learn about the animal, what it's name is, and what it looks like. Study well this information, because you will be tested in level 2!

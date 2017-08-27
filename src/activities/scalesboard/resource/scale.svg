@@ -12,11 +12,11 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg5507"
    sodipodi:docname="scale.svg"
-   viewBox="0 0 383.42 187.7"
+   viewBox="0 0 384 187"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%">
+   inkscape:version="0.92.1 r"
+   width="384"
+   height="187">
   <defs
      id="defs26">
     <linearGradient
@@ -48,33 +48,35 @@
      inkscape:zoom="2"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="247.55369"
-     inkscape:cy="70.928432"
+     inkscape:cx="166.05369"
+     inkscape:cy="97.928432"
      inkscape:window-maximized="1"
      showgrid="false"
      fit-margin-right="0"
      inkscape:guide-bbox="true"
      showguides="true"
      bordercolor="#666666"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
+     inkscape:window-width="1888"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      pagecolor="#ffffff"
      inkscape:document-units="px"
-     inkscape:window-height="721"
-     fit-margin-top="0" />
+     inkscape:window-height="1051"
+     fit-margin-top="0"
+     width="384"
+     units="px" />
   <g
      id="layer1"
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     transform="translate(-157.7 -468.35)">
+     transform="translate(-157.7,-468.35)">
     <path
        inkscape:connector-curvature="0"
        style="fill:#d3d3d3;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
-       d="m 349.45851,469.43839 c -6.92867,-0.0646 -14.2316,6.00994 -15.25852,12.25536 l -7.125,113.6875 44.0625,2.125 -7.40426,-115.75807 c -0.8887,-6.49078 -7.68976,-12.24842 -14.27472,-12.30979 z m 0.14865,10.91161 c 3.89394,0.0535 9.0509,4.27694 9.71783,8.8125 l 2.1875,26.71875 -24.65625,0 2,-25.78125 c 0.74694,-4.89355 5.51642,-9.82192 10.75092,-9.75 z"
+       d="m 349.45851,469.43839 c -6.92867,-0.0646 -14.2316,6.00994 -15.25852,12.25536 l -7.125,113.6875 44.0625,2.125 -7.40426,-115.75807 c -0.8887,-6.49078 -7.68976,-12.24842 -14.27472,-12.30979 z m 0.14865,10.91161 c 3.89394,0.0535 9.0509,4.27694 9.71783,8.8125 l 2.1875,26.71875 h -24.65625 l 2,-25.78125 c 0.74694,-4.89355 5.51642,-9.82192 10.75092,-9.75 z"
        id="path5517"
        sodipodi:nodetypes="sccccssccccs" />
     <path
@@ -88,25 +90,23 @@
        style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        inkscape:connector-curvature="0"
        d="m 183.19,632.03 333.7225,0.66615" />
-    <path
+    <ellipse
        id="path4716"
-       sodipodi:rx="11.324486"
-       sodipodi:ry="10.991413"
        style="fill:#dedec3;fill-opacity:1;stroke:#000000;stroke-width:3.87740946;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-       sodipodi:type="arc"
-       d="m 361.7174,557.08246 a 11.324486,10.991413 0 0 1 -11.32449,10.99141 11.324486,10.991413 0 0 1 -11.32448,-10.99141 11.324486,10.991413 0 0 1 11.32448,-10.99141 11.324486,10.991413 0 0 1 11.32449,10.99141 z"
        transform="matrix(0.25837994,0,0,0.25742926,258.57174,419.58581)"
-       sodipodi:cy="557.08246"
-       sodipodi:cx="350.39291" />
+       cx="350.39291"
+       cy="557.08246"
+       rx="11.324486"
+       ry="10.991413" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.59091395;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 349.4846,510.7029 c 1.28982,2.56441 2.14508,4.85949 2.14508,4.85949 l -4.51154,0 z"
+       d="m 349.4846,510.7029 c 1.28982,2.56441 2.14508,4.85949 2.14508,4.85949 h -4.51154 z"
        id="rect3984"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
     <path
        style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.59091395;stroke-miterlimit:4;stroke-opacity:1"
-       d="m 349.4804,486.03408 c -1.28982,-2.56441 -2.14508,-4.85949 -2.14508,-4.85949 l 4.51154,0 z"
+       d="m 349.4804,486.03408 c -1.28982,-2.56441 -2.14508,-4.85949 -2.14508,-4.85949 h 4.51154 z"
        id="rect3984-5"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccc" />
@@ -119,7 +119,7 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
@@ -146,7 +146,7 @@
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits

@@ -36,7 +36,8 @@ DialogBackground {
                                  "translator-credits" ? "" : qsTr("translator-credits") + "<br/>"
     // Let's try to maitain here the contributor list sorted by number of commits
     // git shortlog -se | sort -nr | cut -c8- | sed 's/ <.*>/,/' | xargs
-    property string developers: "Bruno Coudoin, Johnny Jazeix, Holger Kaelberer, Timothée Giet, Rajdeep Kaur, Siddhesh Suthar, Aruna Sankaranarayanan, Stephane Mankowski, Thibaut Romain, Akshat Tandon, Yuri Chornoivan, Manuel Tondeur, Ayush Agrawal, Pulkit Gupta, Stefan Toncu, Bharath M S, Yuri Chornoivan, JB BUTET, Emmanuel Charruau, Arkit Vora, Luigi Toscano, Amit Tomar, Anu Mittal, Chaitanya KS, Imran Tatriev, Sergey Popov, Yask Srivastava, Shashwat Dixit, Sayan Biswas, Artur Puzio, Andrey Cygankov"
+    property string developers: "Bruno Coudoin, Johnny Jazeix, Holger Kaelberer, Timothée Giet, Rajdeep Kaur, Siddhesh Suthar, Aruna Sankaranarayanan, Stephane Mankowski, Thibaut Romain, Akshat Tandon, Yuri Chornoivan, Manuel Tondeur, Ayush Agrawal, Pulkit Gupta, Stefan Toncu, Ilya Bizyaev, Bharath M S, Yuri Chornoivan, JB BUTET, Emmanuel Charruau, Divyam Madaan, Rudra Nil Basu, Arkit Vora, Luigi Toscano, Amit Tomar, Anu Mittal, Chaitanya KS, Imran Tatriev, Nitish Chauhan, Sergey Popov, Yask Srivastava, Shashwat Dixit, Sayan Biswas, Artur Puzio, Utkarsh Tiwari, Andrey Cygankov, Horia PELLE, Harpreet S, rahul yadav, Aseem Arora, Amit Sagtani"
+
     property string gcVersion: ApplicationInfo.GCVersion
     property string qtVersion: ApplicationInfo.QTVersion
     property string gcVersionTxt: qsTr("GCompris %1").arg(gcVersion)
@@ -125,5 +126,5 @@ DialogBackground {
         qsTr("<b>A big thanks to the translation team:</b> %1")
         .arg(translators) +
 
-        "<br/><center><b>" + "Copyright 2000-2016 Bruno Coudoin and Others" + "</b></center>" + "<br/>"
+        "<br/><center><b>" + "Copyright 2000-2017 Bruno Coudoin and Others" + "</b></center>" + "<br/>"
 }

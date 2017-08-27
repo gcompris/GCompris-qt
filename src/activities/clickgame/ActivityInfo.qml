@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "clickgame/clickgame.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Click On Me")
+  //: Help title
   description: qsTr("Catch all the swimming fish before they leave the fish tank")
 //  intro: "Catch the fish before they leave the aquarium."
+  //: Help goal
   goal: qsTr("Motor coordination: moving the hand precisely.")
+  //: Help prerequisite
   prerequisite: qsTr("Can move mouse and click on the correct place")
+  //: Help manual
   manual: qsTr("Catch all the moving fish by simple clicking or touching them with your finger.")
   credit: qsTr("Fish are taken from the Unix utility xfishtank. All image credits belong to Guillaume Rousse.")
   section: "computer mouse"

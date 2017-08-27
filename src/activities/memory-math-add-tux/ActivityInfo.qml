@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "memory-math-add-tux/memory-math-add-tux.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Addition memory game against Tux")
+  //: Help title
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone. Tux do the same. You have to beat it !")
 //  intro: "Turn over two cards to match the calculation with its answer."
+  //: Help goal
   goal: qsTr("Practice adding up, until all the cards are gone.")
+  //: Help prerequisite
   prerequisite: qsTr("Addition")
+  //: Help manual
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you'll be very good at adding-up!

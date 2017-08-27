@@ -47,6 +47,10 @@ endfunction()
 
 function(installQtPlugin _plugin _dest_dir _lib)
   getQtPluginPaths(${_plugin} _absolute_path _plugin_subdir _plugin_file)
+  #needed to build with msys2
+  if(MINGW)
+    string(REGEX REPLACE "share/qt5/" "" _plugin_subdir ${_plugin_subdir})
+  endif()
   install(FILES ${_absolute_path} DESTINATION ${_dest_dir}/${_plugin_subdir})
   set(_lib "\${CMAKE_INSTALL_PREFIX}/${_dest_dir}/${_plugin_subdir}/${_plugin_file}" PARENT_SCOPE)
 endfunction()

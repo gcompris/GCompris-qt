@@ -39,6 +39,7 @@ Image {
         id: intensityScreen
         source: Activity.url + "flashlight2.svg"
         sourceSize.height: parent.sourceSize.height
+        sourceSize.width: parent.sourceSize.width
         z: 2
         visible: false
     }
@@ -50,6 +51,7 @@ Image {
         lightness: -(maxSteps - currentStep) / maxSteps
         saturation: 1
         visible: activity.modeRGB ? true : false
+        opacity: currentStep / maxSteps
     }
 
     Image {

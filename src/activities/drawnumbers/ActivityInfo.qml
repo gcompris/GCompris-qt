@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "drawnumbers/drawnumbers.svg"
   author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Draw Numbers")
+  //: Help title
   description: qsTr("Connect the dots to draw numbers from 0 to 9")
   // intro: "Draw the numbers by connecting the dots in the correct order."
+  //: Help goal
   goal: qsTr("Children will learn how to draw different numbers in a fun way.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Draw the numbers by connecting the dots in the correct order")
   credit: ""
   section: "math numeration"

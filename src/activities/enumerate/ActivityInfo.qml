@@ -23,11 +23,16 @@ ActivityInfo {
     icon: "enumerate/enumerate.svg"
     author: "Thib ROMAIN &lt;thibrom@gmail.com&gt;"
     demo: true
+    //: Activity title
     title: qsTr("Count the items")
+    //: Help title
     description: qsTr("Place the items in the best way to count them")
 //  intro: "Count the elements by organising them then type the answer on your keyboard."
+    //: Help goal
     goal: qsTr("Numeration training")
+    //: Help prerequisite
     prerequisite: qsTr("Basic enumeration")
+    //: Help manual
     manual: qsTr("First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard.")
     credit: ""
   section: "math numeration"

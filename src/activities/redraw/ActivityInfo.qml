@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "redraw/redraw.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Redraw the given image")
+  //: Help title
   description: qsTr("Draw perfectly the given image on the empty grid.")
   //intro: "Use the drawing tools to reproduce a symmetrical figure on the right hand side."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("First, select the proper color from the toolbar. Then drag to paint.") + " " +
           qsTr("At the first level a hint is provided to show that no symmetry is requested.")
   credit: ""

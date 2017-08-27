@@ -12,11 +12,11 @@
    viewBox="0 0 800 460"
    stroke-miterlimit="10"
    id="svg3047"
-   inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%"
+   inkscape:version="0.92.1 r15371"
+   width="800"
+   height="460"
    sodipodi:docname="background.svg"
-   style="fill:none;stroke:none">
+   style="fill:none;stroke:none;stroke-miterlimit:10">
   <metadata
      id="metadata3069">
     <rdf:RDF>
@@ -25,6 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,36 +40,37 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1301"
-     inkscape:window-height="744"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
      id="namedview3065"
      showgrid="false"
-     inkscape:zoom="0.32708333"
-     inkscape:cx="480"
-     inkscape:cy="-195.03078"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:zoom="0.92513136"
+     inkscape:cx="319.96548"
+     inkscape:cy="216.80263"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg3047" />
+     inkscape:current-layer="svg3047"
+     units="px" />
   <clipPath
      id="g18f2eb2557_0_62.0">
     <path
-       d="M 0,0 960,0 960,540 0,540 0,0 z"
-       clip-rule="nonzero"
+       d="M 0,0 H 960 V 540 H 0 Z"
        id="path3050"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       style="clip-rule:nonzero" />
   </clipPath>
   <g
      clip-path="url(#g18f2eb2557_0_62.0)"
      id="g3052"
-     transform="translate(-85.605091,-3.566878)">
+     transform="scale(0.83333333,0.85185185)">
     <path
-       d="m 0,0 960,0 0,540 -960,0 z"
+       d="M 0,0 H 960 V 540 H 0 Z"
        id="path3054"
        inkscape:connector-curvature="0"
        style="fill:#6fa8dc;fill-rule:nonzero" />
     <path
-       d="m 704.7507,310.43832 120.15747,0 0,120.15747 -120.15747,0 z"
+       d="M 704.7507,310.43832 H 824.90817 V 430.59579 H 704.7507 Z"
        id="path3056"
        inkscape:connector-curvature="0"
        style="fill:#000000;fill-opacity:0;fill-rule:nonzero" />
@@ -78,10 +80,10 @@
       <clipPath
          id="g18f2eb2557_0_62.1">
         <path
-           d="m 0,0 300,0 0,300 -300,0 z"
-           clip-rule="nonzero"
+           d="M 0,0 H 300 V 300 H 0 Z"
            id="path3061"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="clip-rule:nonzero" />
       </clipPath>
       <image
          clip-path="url(#g18f2eb2557_0_62.1)"

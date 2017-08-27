@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "instruments/instruments.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Music instruments")
+  //: Help title
   description: qsTr("Click on the correct musical instruments")
 //  intro: "Click on the correct musical instrument."
+  //: Help goal
   goal: qsTr("Learn to recognize musical instruments.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Click on the correct instrument.")
   credit: ""
   section: "discovery music"

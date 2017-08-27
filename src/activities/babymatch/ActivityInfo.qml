@@ -26,11 +26,16 @@ ActivityInfo {
   icon: "babymatch/babymatch.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Matching Items")
+  //: Help title
   description: qsTr("Drag and Drop the items to make them match")
 //  intro: "Drag and drop the objects matching the pictures"
+  //: Help goal
   goal: qsTr("Motor coordination. Conceptual matching.")
+  //: Help prerequisite
   prerequisite: qsTr("Cultural references.")
+  //: Help manual
   manual: qsTr("In the main board area, a set of objects is displayed. In the vertical box (at the left of the main board) another set of objects is shown, each object in the group on the left matching exactly one object in the main board area. This game challenges you to find the logical link between these objects. How do they fit together? Drag each object to the correct red space in the main area.")
   credit: ""
   section: "discovery"

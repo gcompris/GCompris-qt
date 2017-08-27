@@ -131,10 +131,12 @@ ActivityBase {
             // === The Store Area ===
             property int nbStoreColumns: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                          activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
+            //tempSpace is a workaround to replace instructionsArea.realHeight that is freezing with Qt-5.9.1
+            property int tempSpace: bar.level === 1 ? 140 + column.spacing : 0
             property int itemStoreWidth:
                 Math.min((column.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
                          (parent.height - answerArea.height -
-                          pocketArea.height - bar.height) * 0.8) - instructionsArea.realHeight
+                          pocketArea.height - bar.height) * 0.8) - tempSpace
             property int itemStoreHeight: itemStoreWidth
 
             Rectangle {

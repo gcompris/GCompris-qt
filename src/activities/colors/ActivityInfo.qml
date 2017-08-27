@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "colors/colors.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Colors")
+  //: Help title
   description: qsTr("Click on the right color")
 //  intro: "Click on the right color"
+  //: Help goal
   goal: qsTr("This activity teaches you to recognize different colors. When you hear the name of the color, touch the duck wearing it.")
+  //: Help prerequisite
   prerequisite: qsTr("Identifying colours")
+  //: Help manual
   manual: qsTr("Listen to the color and touch the matching duck.")
   credit: ""
   section: "discovery color"

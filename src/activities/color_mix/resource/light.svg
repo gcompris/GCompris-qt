@@ -9,11 +9,11 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg6132"
-   viewBox="0 0 67.992499 82.333524"
+   viewBox="0 0 68 83"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%"
+   inkscape:version="0.92.1 r15371"
+   width="68"
+   height="83"
    sodipodi:docname="light.svg">
   <defs
      id="defs22">
@@ -73,8 +73,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
      id="namedview20"
      showgrid="false"
      borderlayer="true"
@@ -83,12 +83,13 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="3.776"
-     inkscape:cx="67.530514"
+     inkscape:cx="7.4139886"
      inkscape:cy="28.658284"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g7390" />
+     inkscape:current-layer="g7390"
+     units="px" />
   <g
      id="layer1"
      transform="translate(-210.04507,-733.38603)">
@@ -116,42 +117,40 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
+            <dc:title></dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title>Detective Silhouette</dc:title>
-        <dc:date>2011-10-16T12:31:15</dc:date>
-        <dc:description>The silhouette of a detective searching with a flashlight</dc:description>
-        <dc:source>http://openclipart.org/detail/163837/detective-silhouette-by-centroacademico</dc:source>
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:description></dc:description>
+        <dc:source></dc:source>
         <dc:creator>
           <cc:Agent>
-            <dc:title>centroacademico</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
         <dc:subject>
-          <rdf:Bag>
-            <rdf:li>black</rdf:li>
-            <rdf:li>clip art</rdf:li>
-            <rdf:li>clipart</rdf:li>
-            <rdf:li>detective</rdf:li>
-            <rdf:li>flashlight</rdf:li>
-            <rdf:li>search</rdf:li>
-            <rdf:li>silhouette</rdf:li>
-          </rdf:Bag>
+          <rdf:Bag />
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>

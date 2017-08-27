@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "chess/chess.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Play chess against Tux")
+  //: Help title
   description: ""
   //intro: "play chess against Tux"
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target position for any selected piece which helps the children understand how pieces moves. At first level the computer is fully random to give the most chances to the children. As level increases, better the computer plays.
 \nYou can achieve a mate sooner if follow these simple rules:
     Trying to drive opponent's King in the corner.

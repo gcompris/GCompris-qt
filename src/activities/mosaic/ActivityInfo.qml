@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "mosaic/mosaic.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Rebuild the mosaic")
+  //: Help title
   description: qsTr("Put each item at the same place as in the given example.")
 //  intro: "Put each item at the same place as in the given example."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("First select the item you want to put then click on a spot on the empty area")
   credit: ""
   section: "discovery"

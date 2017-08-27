@@ -14,9 +14,9 @@
    viewBox="0 0 120 72.475369"
    sodipodi:version="0.32"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   width="100%"
-   height="100%">
+   inkscape:version="0.92.1 r"
+   width="120"
+   height="73">
   <defs
      id="defs8148">
     <radialGradient
@@ -150,43 +150,42 @@
      id="base"
      bordercolor="#666666"
      inkscape:pageshadow="2"
-     inkscape:window-y="-3"
+     inkscape:window-y="0"
      pagecolor="#ffffff"
      inkscape:window-maximized="1"
-     inkscape:window-width="1366"
+     inkscape:window-width="1888"
      inkscape:zoom="5.6568542"
-     inkscape:window-x="-2"
+     inkscape:window-x="0"
      showgrid="false"
      borderopacity="1.0"
      inkscape:current-layer="svg8145"
-     inkscape:cx="89.563546"
+     inkscape:cx="54.650148"
      inkscape:cy="35.761722"
-     inkscape:window-height="748"
+     inkscape:window-height="1051"
      showborder="true"
      inkscape:pageopacity="0.0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     units="px" />
   <g
      id="g2870"
      transform="matrix(0.17745405,0,0,0.17745405,-4.6978577,-18.000404)">
-    <path
+    <ellipse
        id="path2093"
-       sodipodi:rx="196.59508"
-       sodipodi:ry="172.42354"
        style="fill:#e7c278"
-       sodipodi:type="arc"
-       d="m 1416.9885,589.88031 a 196.59508,172.42354 0 0 1 -196.5951,172.42354 196.59508,172.42354 0 0 1 -196.595,-172.42354 196.59508,172.42354 0 0 1 196.595,-172.42354 196.59508,172.42354 0 0 1 196.5951,172.42354 z"
        transform="matrix(0.75728,0.43721,-0.45431,0.78689,-286.12,-691.88)"
-       sodipodi:cy="589.88031"
-       sodipodi:cx="1220.3934" />
+       cx="1220.3934"
+       cy="589.88031"
+       rx="196.59508"
+       ry="172.42354" />
     <path
        id="path20317"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
        style="fill:url(#radialGradient2867);fill-rule:evenodd"
-       d="M 202.72,299.45 C 208.39,422.54 348.4,503.87 459.4,447.27 365.21,418.42 272.86,365.77 202.72,299.45 z" />
+       d="M 202.72,299.45 C 208.39,422.54 348.4,503.87 459.4,447.27 365.21,418.42 272.86,365.77 202.72,299.45 Z" />
     <path
        id="rect9686"
        inkscape:connector-curvature="0"
@@ -198,7 +197,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccc"
        style="fill:url(#linearGradient2849);fill-rule:evenodd"
-       d="M 376.8,146.93 C 411.72,185.96 460.55,212.9 505.45,222 468.62,174.43 423.93,152.51 376.8,146.93 z" />
+       d="M 376.8,146.93 C 411.72,185.96 460.55,212.9 505.45,222 468.62,174.43 423.93,152.51 376.8,146.93 Z" />
     <path
        id="rect17282"
        inkscape:connector-curvature="0"
@@ -215,16 +214,14 @@
   <g
      id="g1346"
      transform="matrix(0.17745405,0,0,0.17745405,-4.6978577,-18.000404)">
-    <path
+    <ellipse
        id="path8162"
-       sodipodi:rx="196.59508"
-       sodipodi:ry="172.42354"
        style="fill:url(#radialGradient22276)"
-       sodipodi:type="arc"
-       d="m 1416.9885,589.88031 a 196.59508,172.42354 0 0 1 -196.5951,172.42354 196.59508,172.42354 0 0 1 -196.595,-172.42354 196.59508,172.42354 0 0 1 196.595,-172.42354 196.59508,172.42354 0 0 1 196.5951,172.42354 z"
        transform="matrix(0.75728,0.43721,-0.45431,0.78689,-286.12,-691.88)"
-       sodipodi:cy="589.88031"
-       sodipodi:cx="1220.3934" />
+       cx="1220.3934"
+       cy="589.88031"
+       rx="196.59508"
+       ry="172.42354" />
   </g>
   <g
      id="g16666"
@@ -253,27 +250,35 @@
   <metadata
      id="metadata43">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:publisher>
-          <cc:Agent
-             rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
+        <dc:title></dc:title>
+        <dc:date>2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
-        </dc:publisher>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>

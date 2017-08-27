@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "hexagon/hexagon.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Hexagon")
+  //: Help title
   description: qsTr("Find the strawberry by clicking on the blue fields")
 //  intro: "Click on the hexagons to find the hidden object, the red zone indicates that you're close to it!"
+  //: Help goal
   goal: qsTr("Logic-training activity")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Try to find the strawberry under the blue fields. The fields become redder as you get closer.")
   credit: ""
   section: "fun"

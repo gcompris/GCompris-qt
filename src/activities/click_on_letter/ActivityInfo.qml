@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "click_on_letter/click_on_letter.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Click on a lowercase letter")
+  //: Help title
   description: qsTr("Listen to a letter and click on the right one")
 //  intro: "Click on the required letter. You can listen to it again by clicking on the mouth."
+  //: Help goal
   goal: qsTr("Letter-name recognition")
+  //: Help prerequisite
   prerequisite: qsTr("Visual letter-recognition.")
+  //: Help manual
   manual: qsTr("A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon.")
   credit: ""
   section: "reading"

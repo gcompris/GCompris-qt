@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "memory-sound/memory-sound.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Audio memory game")
+  //: Help title
   description: qsTr("Click on cards and listen to find the matching sounds")
 //  intro: "Click on an audio card and find its double."
+  //: Help goal
   goal: qsTr("Train your audio memory and remove all the cards.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("A set of cards is shown. Each card has an associated sound, and each sound has a twin exactly the same. Click on a card to hear its hidden sound, and try to match the twins. You can only activate two cards at once, so you need to remember where a sound is, while you listen to its twin. When you turn over the twins, they both disappear.")
   credit: ""
   section: "discovery memory music"

@@ -697,57 +697,35 @@
   <metadata
      id="metadata5663">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:publisher>
-          <cc:Agent
-             rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-        <dc:title>Artic North Pole Scene and Action View</dc:title>
-        <dc:date>2013-11-29T15:44:32</dc:date>
-        <dc:description>This a scene full of action in the cartoon artic.It includes the coloring of drawings (tree, santa, reindeer, panda skaters) from one of the coloring books included in the coloring book competition.  Some figures were also added ...taken from Open Clipart's graphic base.  There it is a combination of coloring, placement, alteration and remix.</dc:description>
-        <dc:source>http://openclipart.org/detail/189221/artic-north-pole-scene-and-action-view-by-doodler-189221</dc:source>
+        <dc:title></dc:title>
+        <dc:date>2015</dc:date>
         <dc:creator>
           <cc:Agent>
-            <dc:title>doodler</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>ColoringContest2013</rdf:li>
-            <rdf:li>Artic</rdf:li>
-            <rdf:li>North Pole</rdf:li>
-            <rdf:li>Scene</rdf:li>
-            <rdf:li>santa</rdf:li>
-            <rdf:li>rudolph</rdf:li>
-            <rdf:li>snowman</rdf:li>
-            <rdf:li>panda</rdf:li>
-            <rdf:li>panda skater</rdf:li>
-            <rdf:li>ice</rdf:li>
-            <rdf:li>ice fishing</rdf:li>
-            <rdf:li>eskimo</rdf:li>
-            <rdf:li>skier</rdf:li>
-            <rdf:li>snow</rdf:li>
-            <rdf:li>ice fishing</rdf:li>
-            <rdf:li>igloo</rdf:li>
-            <rdf:li>snow scape</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>

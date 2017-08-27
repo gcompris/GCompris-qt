@@ -30,7 +30,7 @@ QtObject {
             "image": imagesPrefix + "alphabets.jpg",
             "content": [
                 {
-                    "instructions": qsTr("Place the ALPHABETS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the LETTERS to the right and other objects to the left"),
                     "image": imagesPrefix + "upperA.svg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -39,7 +39,7 @@ QtObject {
                     "bad": ["categorization/resource/images/numbers/01.svg","categorization/resource/images/numbers/06.svg","categorization/resource/images/numbers/12.svg","lang/resource/words_sample/coconut.png", "lang/resource/words_sample/dolphin.png","lang/resource/words_sample/kiwi.png"]
                 },
                 {
-                    "instructions": qsTr("Place the ALPHABETS to the right and others objects to the left"),
+                    "instructions": qsTr("Place the LETTERS to the right and other objects to the left"),
                     "image": imagesPrefix + "upperA.svg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -48,7 +48,7 @@ QtObject {
                     "bad": ["categorization/resource/images/numbers/06.svg","categorization/resource/images/numbers/16.svg","lang/resource/words_sample/mouse.png","lang/resource/words_sample/orange.png","lang/resource/words_sample/raspberry.png","lang/resource/words_sample/tongue.png"]
                 },
                 {
-                    "instructions": qsTr("Place the ALPHABETS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the LETTERS to the right and other objects to the left"),
                     "image": imagesPrefix + "upperA.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -57,7 +57,7 @@ QtObject {
                     bad: ["categorization/resource/images/numbers/07.svg","categorization/resource/images/numbers/00.svg","lang/resource/words_sample/turtle.png","lang/resource/words_sample/melon.png"]
                 },
                 {
-                    "instructions": qsTr("Place the ALPHABETS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the LETTERS to the right and other objects to the left"),
                     "image": imagesPrefix + "upperA.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -66,7 +66,7 @@ QtObject {
                     "bad": ["lang/resource/words_sample/pear.png","lang/resource/words_sample/butterfly.png","categorization/resource/images/numbers/08.svg", "categorization/resource/images/numbers/11.svg","categorization/resource/images/numbers/01.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the ALPHABETS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the LETTERS to the right and other objects to the left"),
                     "image": imagesPrefix + "upperA.svg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -75,7 +75,7 @@ QtObject {
                     "bad": ["categorization/resource/images/numbers/08.svg","categorization/resource/images/numbers/10.svg", "lang/resource/words_sample/dog.png"]
                 },
                 {
-                    "instructions": qsTr("Place the ALPHABETS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the LETTERS to the right and other objects to the left"),
                     "image": imagesPrefix + "upperA.svg",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,

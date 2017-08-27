@@ -1,10 +1,20 @@
-background.svg: Contains 2 types of trees whch are taken from
-	https://openclipart.org/detail/9471/RPG map symbols: tree
-		This work is licensed under the Unlimited Commercial Use License.
-	https://openclipart.org/detail/9469/RPG map symbols: tree
-		This work is licensed under the Unlimited Commercial Use License.
+Copyright: Timothée Giet, 2016
+License: CC-BY-SA 4.0
+Files:
+background.svg
+KonqiWhite.svg
+score_1.svg
+score_2.svg
+TuxBlack.svg
 
-win.svg: Taken from https://openclipart.org/detail/48937/Trophy
-		This work is licensed under the Unlimited Commercial Use License.
-
-
+Copyright: Pulkit Gupta, 2016
+Licence: CC-BY-SA 4.0
+Files:
+black_piece.svg
+board.svg
+tutorial1.svg
+tutorial2.svg
+tutorial3.svg
+tutorial4.svg
+tutorial5.svg
+white_piece.svg

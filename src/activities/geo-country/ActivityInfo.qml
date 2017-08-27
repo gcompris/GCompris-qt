@@ -27,11 +27,16 @@ ActivityInfo {
   icon: "geo-country/geo-country.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Locate the region")
+  //: Help title
   description: qsTr("Drag and Drop the regions to redraw the whole country")
 //  intro: "Drag and drop the regions to complete the country maps."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: ""
   credit: qsTr("The map of Germany comes from Wikipedia and is released under the GNU Free Documentation License. Olaf Ronneberger and his children Lina and Julia Ronneberger created the German level.")
   section: "discovery"

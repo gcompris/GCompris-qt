@@ -20,10 +20,15 @@ import GCompris 1.0
 ActivityInfo {
   name: "menu/Menu.qml"
   difficulty: 0
+  //: Activity title
   title: qsTr("GCompris Main Menu")
+  //: Help title
   description: qsTr("Select an activity to run it.")
+  //: Help goal
   goal: qsTr("GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.")
+  //: Help prerequisite
   prerequisite: qsTr("Some of the activities are game orientated, but nonetheless still educational.")
+  //: Help manual
   manual: qsTr("Select an icon to enter an activity or to display a list of activities in a category.
 At the bottom of the screen is the GCompris control bar. Notice that you can hide or show the bar by touching its anchor.
 The following icons are displayed:

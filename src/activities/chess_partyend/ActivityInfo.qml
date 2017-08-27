@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "chess_partyend/chess_partyend.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
+  //: Activity title
   title: qsTr("End of chess game")
+  //: Help title
   description: qsTr("Play the end of the chess game against Tux")
   //intro: "Click on a white chess piece and green boxes will appear to indicate all the movements that piece can make. Try and get the black king into checkmate."
+  //: Help goal
   goal: ""
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("In this activity you discover the chess game by playing only the end of a game. It displays the possible target position for any selected piece which helps the children understand how pieces moves.
 \nYou can achieve a mate sooner if follow these simple rules:
     Trying to drive opponent's King in the corner.

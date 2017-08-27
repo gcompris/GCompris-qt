@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "explore_farm_animals/explore_farm_animals.svg"
   author: "Djalil Mesli &lt;djalilmesli@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Explore Farm Animals")
+  //: Help title
   description: qsTr("Learn about farm animals, what sounds they make, and interesting facts.")
   // intro: "Learn about farmyard animals and the noises that they make."
+  //: Help goal
   goal: qsTr("Learn to associate animal sounds with the animal name and what the animal looks like.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("There are three levels in this game.
 
 In level one, players enjoy exploring each animal on the screen. Click on the question mark, and learn about the animal, what it's name is, what sound it makes, and what it looks like. Study well this information, because you will be tested in level 2 and 3!

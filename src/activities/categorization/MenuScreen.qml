@@ -33,7 +33,7 @@ Image {
     id: menuScreen
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
-    source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
+    source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
     sourceSize.width: Math.max(parent.width, parent.height)
     opacity: 0
 
@@ -153,9 +153,10 @@ Image {
                 source: image
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: iconWidth
-                height: iconHeight
-                anchors.margins: 5
+                width: activityBackground.width*0.90 - 6
+                height: width 
+                sourceSize.width: width
+                anchors.margins: 3
 
                 GCText {
                     id: categoryName
