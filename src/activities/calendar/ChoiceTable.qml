@@ -26,7 +26,7 @@ import QtQuick 2.6
 import GCompris 1.0
 import QtQuick.Controls 1.4
 import "../../core"
-import "Calendar.js" as Activity
+import "calendar.js" as Activity
 
 Rectangle {
     id: choiceBox
@@ -85,13 +85,23 @@ Rectangle {
             }
         }
         PauseAnimation { duration: 800 }
-        PropertyAnimation {
-            target: cross
-            property: "width"
-            duration: 300
-            from: choiceBox.size
-            to: 0
-            easing.type: Easing.InOutQuad
+        ParallelAnimation {
+            PropertyAnimation {
+                target: cross
+                property: "width"
+                duration: 300
+                from: choiceBox.width
+                to: 0
+                easing.type: Easing.InOutQuad
+            }
+            PropertyAnimation {
+                target: cross
+                property: "height"
+                duration: 300
+                from: choiceBox.height
+                to: 0
+                easing.type: Easing.InOutQuad
+            }
         }
         onRunningChanged: {
             if (running == false) {
