@@ -19,17 +19,17 @@ import GCompris 1.0
 
 ActivityInfo {
     name: "calendar/Calendar.qml"
-    difficulty: 1
-    icon: "calendar/Calendar.svg"
+    difficulty: 4
+    icon: "calendar/calendar.svg"
     author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
     demo: true
-    title: qsTr("Calendar activity")
-    description: ""
-    //intro: "put here in comment the text for the intro voice"
-    goal: ""
-    prerequisite: ""
-    manual: ""
+    title: qsTr("Calendar Activity")
+    description: qsTr("Read the task and select the correct date on calendar")
+    //intro: "Select the asked date on the calendar"
+    goal: qsTr("Learn to use a calendar efficiently")
+    prerequisite: qsTr("Concept of week, months and year")
+    manual: qsTr("Review the instructions and select the correct date on calendar.")
     credit: ""
-    section: "fun"
+    section: "discovery"
     createdInVersion: 9000
 }
