@@ -15,6 +15,9 @@ script:
   - git submodule init && git submodule update
   - mkdir build ; cd build/ # CMakeLists.txt:90 says that building in the source directory is not supported
   - cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+  - make getSvnTranslations
+  - cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+  - make BuildTranslations
   - make -j$(nproc)
   - make DESTDIR=appdir install ; find appdir/
   - mkdir -p appdir/usr/share/applications/ ; cp ../org.kde.gcompris.desktop appdir/usr/share/applications/ # FIXME: The step before should have done that
