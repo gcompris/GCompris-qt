@@ -1,4 +1,4 @@
-/* GCompris - Calendar.js
+/* GCompris - calendar.js
  *
  * Copyright (C) 2017 Amit Sagtani <asagtani06@gmail.com>
  *
@@ -30,7 +30,7 @@ var currentSubLevel = 1
 var currentDataSet
 var currentLevelConfig
 var dataset
-var AllLevelConfigurations
+var allLevelConfigurations
 var items
 var dateSelected = new Date(2018, 2, 1)
 var daySelected
@@ -41,7 +41,7 @@ var correctAnswer
 function start(items_, dataset_, levelConfigurations_) {
     items = items_
     dataset = dataset_.get()
-    AllLevelConfigurations = levelConfigurations_.getConfig()
+    allLevelConfigurations = levelConfigurations_.getConfig()
     numberOfLevel = dataset.length
     currentLevel = 0
     initLevel();
@@ -53,7 +53,7 @@ function stop() {
 function initLevel() {
     currentSubLevel = 1;
     items.bar.level = currentLevel + 1
-    currentLevelConfig = AllLevelConfigurations[currentLevel][0]
+    currentLevelConfig = allLevelConfigurations[currentLevel][0]
     setCalendarConfigurations()
     initQuestion();
 }
@@ -88,9 +88,8 @@ function setCalendarConfigurations() {
 }
 
 function initQuestion() {
-    if(currentDataSet.length < currentSubLevel) {
+    if(currentDataSet.length === currentSubLevel) {
         items.bonus.good("flower")
-        nextLevel()
     }
     else {
         items.score.currentSubLevel = currentSubLevel
@@ -103,57 +102,51 @@ function checkAnswer() {
     switch(items.bar.level) {
     case 1:
         if(dateSelected.getDay() === correctAnswer) {
-            if(currentDataSet.length > currentSubLevel)
-                items.bonus.good("lion")
             items.questionDelay.start()
+            items.okButtonParticles.burst(20)
         }
         else
-            items.okButtonParticles.burst(20)
+            items.bonus.bad("flower")
         break;
     case 2:
         if(dateSelected.getDate() === correctAnswer) {
-            if(currentDataSet.length > currentSubLevel)
-                items.bonus.good("lion")
             items.questionDelay.start()
+            items.okButtonParticles.burst(20)
         }
         else
-            items.okButtonParticles.burst(20)
+            items.bonus.bad("flower")
         break;
     case 3:
         if(monthSelected+yearSelected === correctAnswer) {
-            if(currentDataSet.length > currentSubLevel)
-                items.bonus.good("lion")
             items.questionDelay.start()
+            items.okButtonParticles.burst(20)
         }
         else
-            items.okButtonParticles.burst(20)
+            items.bonus.bad("flower")
         break;
     case 4:
         if(daySelected === correctAnswer) {
-            if(currentDataSet.length > currentSubLevel)
-                items.bonus.good("lion")
             items.questionDelay.start()
+            items.okButtonParticles.burst(20)
         }
         else
-            items.okButtonParticles.burst(20)
+            items.bonus.bad("flower")
         break;
     case 5:
         if(dateSelected.getDate() === correctAnswer) {
-            if(currentDataSet.length > currentSubLevel)
-                items.bonus.good("lion")
             items.questionDelay.start()
+            items.okButtonParticles.burst(20)
         }
         else
-            items.okButtonParticles.burst(20)
+            items.bonus.bad("flower")
         break;
     case 6:
         if(dateSelected.getDate()+dateSelected.getDay()+dateSelected.getFullYear() === correctAnswer) {
-            if(currentDataSet.length > currentSubLevel)
-                items.bonus.good("lion")
             items.questionDelay.start()
+            items.okButtonParticles.burst(20)
         }
         else
-            items.okButtonParticles.burst(20)
+            items.bonus.bad("flower")
         break;
     }
 }
