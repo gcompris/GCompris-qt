@@ -30,7 +30,7 @@ var currentSubLevel = 1
 var currentDataSet
 var currentLevelConfig
 var dataset
-var allLevelConfigurations
+//var allLevelConfigurations
 var items
 var dateSelected = new Date(2018, 2, 1)
 var daySelected
@@ -38,10 +38,10 @@ var monthSelected
 var yearSelected = 2018
 var correctAnswer
 
-function start(items_, dataset_, levelConfigurations_) {
+function start(items_, dataset_) {
     items = items_
     dataset = dataset_.get()
-    allLevelConfigurations = levelConfigurations_.getConfig()
+    //allLevelConfigurations = levelConfigurations_.getConfig()
     numberOfLevel = dataset.length
     currentLevel = 0
     initLevel();
@@ -53,7 +53,7 @@ function stop() {
 function initLevel() {
     currentSubLevel = 1;
     items.bar.level = currentLevel + 1
-    currentLevelConfig = allLevelConfigurations[currentLevel][0]
+    currentLevelConfig = dataset[currentLevel][0][0]
     setCalendarConfigurations()
     initQuestion();
 }
@@ -78,12 +78,14 @@ function setCalendarConfigurations() {
     items.calendar.minimumDate = currentLevelConfig["minimumDate"]
     items.calendar.maximumDate = currentLevelConfig["maximumDate"]
     items.calendar.visibleYear = currentLevelConfig["visibleYear"]
+    yearSelected = currentLevelConfig["visibleYear"]
     items.calendar.visibleMonth = currentLevelConfig["visibleMonth"]
+    monthSelected = currentLevelConfig["visibleMonth"]
     items.answerChoices.visible = currentLevelConfig["answerChoiceVisible"]
     items.okButton.visible = currentLevelConfig["okButtonVisible"]
-    currentDataSet = dataset[currentLevel]
+    currentDataSet = dataset[currentLevel][1]
     currentDataSet = Core.shuffle(currentDataSet)
-    items.score.numberOfSubLevels = dataset[currentLevel].length
+    items.score.numberOfSubLevels = currentDataSet.length
     items.score.currentSubLevel = currentSubLevel
 }
 
@@ -95,13 +97,14 @@ function initQuestion() {
         items.score.currentSubLevel = currentSubLevel
         items.questionItem.text = currentDataSet[currentSubLevel-1]["question"]
         correctAnswer = currentDataSet[currentSubLevel-1]["answer"]
+        //console.log(correctAnswer["value"])
     }
 }
 
 function checkAnswer() {
     switch(items.bar.level) {
     case 1:
-        if(dateSelected.getDay() === correctAnswer) {
+        if(dateSelected.getDate() === correctAnswer) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
         }
@@ -109,7 +112,7 @@ function checkAnswer() {
             items.bonus.bad("flower")
         break;
     case 2:
-        if(dateSelected.getDate() === correctAnswer) {
+        if(dateSelected.getDay() === correctAnswer) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
         }

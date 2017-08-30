@@ -25,12 +25,10 @@ import QtQuick.Controls 1.4
 import "../../core"
 import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
-import "levelConfigData.js" as LevelConfigurations
 
 ActivityBase {
     id: activity
     property var dataset: Dataset
-    property var levelConfigurations: LevelConfigurations
     onStart: focus = true
     onStop: {}
 
@@ -63,7 +61,7 @@ ActivityBase {
             property alias okButtonParticles: okButtonParticles
         }
 
-        onStart: { Activity.start(items, dataset, levelConfigurations) }
+        onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
         // Question time delay
@@ -109,6 +107,12 @@ ActivityBase {
             }
             onClicked: {
                 Activity.dateSelected = selectedDate
+                Activity.daySelected = selectedDate.getDay()
+                console.log(selectedDate)
+                console.log(selectedDate.getDate())
+                console.log(selectedDate.getMonth())
+                console.log(selectedDate.getFullYear())
+                console.log(selectedDate.getDay())
             }
         }
 
