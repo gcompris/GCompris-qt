@@ -30,18 +30,16 @@ var currentSubLevel = 1
 var currentDataSet
 var currentLevelConfig
 var dataset
-//var allLevelConfigurations
 var items
-var dateSelected = new Date(2018, 2, 1)
-var daySelected
-var monthSelected
+var daySelected = 1
+var monthSelected = 2
 var yearSelected = 2018
+var dayOfWeekSelected
 var correctAnswer
 
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_.get()
-    //allLevelConfigurations = levelConfigurations_.getConfig()
     numberOfLevel = dataset.length
     currentLevel = 0
     initLevel();
@@ -72,7 +70,7 @@ function previousLevel() {
     initLevel();
 }
 
-// Set properties of calendar here.
+// Configure calendar properties for every level.
 function setCalendarConfigurations() {
     items.calendar.navigationBarVisible = currentLevelConfig["navigationBarVisible"]
     items.calendar.minimumDate = currentLevelConfig["minimumDate"]
@@ -90,66 +88,32 @@ function setCalendarConfigurations() {
 }
 
 function initQuestion() {
-    if(currentDataSet.length === currentSubLevel) {
-        items.bonus.good("flower")
+    if(currentDataSet.length < currentSubLevel) {
+        items.bonus.good("lion")
     }
     else {
         items.score.currentSubLevel = currentSubLevel
         items.questionItem.text = currentDataSet[currentSubLevel-1]["question"]
         correctAnswer = currentDataSet[currentSubLevel-1]["answer"]
-        //console.log(correctAnswer["value"])
     }
 }
 
 function checkAnswer() {
-    switch(items.bar.level) {
-    case 1:
-        if(dateSelected.getDate() === correctAnswer) {
+    // For levels having days of week table visible.
+    if(items.answerChoices.visible) {
+        if(dayOfWeekSelected===correctAnswer["dayOfWeek"]) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
         }
-        else
-            items.bonus.bad("flower")
-        break;
-    case 2:
-        if(dateSelected.getDay() === correctAnswer) {
+    }
+    // For levels having days of week table not visible.
+    else if(!items.answerChoices.visible) {
+        if(monthSelected===correctAnswer["month"] && daySelected===correctAnswer["day"] && yearSelected===correctAnswer["year"]) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
         }
-        else
-            items.bonus.bad("flower")
-        break;
-    case 3:
-        if(monthSelected+yearSelected === correctAnswer) {
-            items.questionDelay.start()
-            items.okButtonParticles.burst(20)
+        else {
+            items.bonus.bad("lion")
         }
-        else
-            items.bonus.bad("flower")
-        break;
-    case 4:
-        if(daySelected === correctAnswer) {
-            items.questionDelay.start()
-            items.okButtonParticles.burst(20)
-        }
-        else
-            items.bonus.bad("flower")
-        break;
-    case 5:
-        if(dateSelected.getDate() === correctAnswer) {
-            items.questionDelay.start()
-            items.okButtonParticles.burst(20)
-        }
-        else
-            items.bonus.bad("flower")
-        break;
-    case 6:
-        if(dateSelected.getDate()+dateSelected.getDay()+dateSelected.getFullYear() === correctAnswer) {
-            items.questionDelay.start()
-            items.okButtonParticles.burst(20)
-        }
-        else
-            items.bonus.bad("flower")
-        break;
     }
 }

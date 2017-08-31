@@ -106,13 +106,7 @@ ActivityBase {
                 Activity.yearSelected = visibleYear
             }
             onClicked: {
-                Activity.dateSelected = selectedDate
-                Activity.daySelected = selectedDate.getDay()
-                console.log(selectedDate)
-                console.log(selectedDate.getDate())
-                console.log(selectedDate.getMonth())
-                console.log(selectedDate.getFullYear())
-                console.log(selectedDate.getDay())
+                Activity.daySelected = selectedDate.getDate()
             }
         }
 
