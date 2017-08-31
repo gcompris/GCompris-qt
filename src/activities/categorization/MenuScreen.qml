@@ -104,7 +104,7 @@ Image {
     property int iconHeight: 180 * ApplicationInfo.ratio
 
     property int levelCellWidth: background.width / Math.floor(background.width / iconWidth )
-    property int levelCellHeight: iconHeight * 1.4
+    property int levelCellHeight: iconHeight * 1.2
 
     ListModel {
         id: menuModel
@@ -148,29 +148,33 @@ Image {
                 color: "white"
                 opacity: 0.5
             }
+
             Image {
                 id: containerImage
                 source: image
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: activityBackground.width*0.90 - 6
-                height: width 
-                sourceSize.width: width
-                anchors.margins: 3
+                height: activityBackground.height*0.8 - 6
+                width: height
+                anchors.margins: 5
+                sourceSize.height: height
+                fillMode: Image.PreserveAspectCrop
+                clip: true
+            }
 
-                GCText {
-                    id: categoryName
-                    anchors.top: parent.bottom
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    width: activityBackground.width
-                    fontSizeMode: Text.Fit
-                    elide: Text.ElideRight
-                    maximumLineCount: 2
-                    wrapMode: Text.WordWrap
-                    text: name
-                    opacity: (items.mode == "expert") ? 0 : 1
-                }
+            GCText {
+                id: categoryName
+                anchors.top: containerImage.bottom
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                width: activityBackground.width
+                height: activityBackground.height*0.2 - 6
+                fontSizeMode: Text.Fit
+                elide: Text.ElideRight
+                maximumLineCount: 2
+                wrapMode: Text.WordWrap
+                text: name
+                opacity: (items.mode == "expert") ? 0 : 1
             }
 
             ParticleSystemStarLoader {
