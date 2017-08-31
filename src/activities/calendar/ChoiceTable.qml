@@ -43,7 +43,7 @@ Rectangle {
 
     function select() {
         mouseArea.enabled = false
-        if(Activity.daySelected === Activity.correctAnswer) {
+        if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
             particles.burst(40)
             animWin.start()
             Activity.checkAnswer()
@@ -131,9 +131,9 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            Activity.daySelected = index
+            Activity.dayOfWeekSelected = index
             select()
-
+            choiceBox.scale = 1
         }
         hoverEnabled: true
         onEntered: choiceBox.scale = 1.1
