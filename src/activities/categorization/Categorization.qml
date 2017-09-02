@@ -65,7 +65,7 @@ ActivityBase {
             property string mode: "easy"
             property bool instructionsVisible: true
             property bool categoryImageChecked: (mode === "easy" || mode === "medium")
-            property bool scoreChecked: (mode === "easy")
+            property bool scoreChecked: (mode === "easy" || mode === "expert")
             property bool iAmReadyChecked: (mode === "expert")
             property bool displayUpdateDialogAtStart: true
             property var details
@@ -158,7 +158,7 @@ ActivityBase {
                     GCDialogCheckBox {
                         id: expertModeBox
                         width: easyModeBox.width
-                        text: qsTr("Instructions and score invisible")
+                        text: qsTr("Instructions invisible and score visible")
                         checked: (items.mode == "expert") ? true : false
                         exclusiveGroup: configOptions
                         onCheckedChanged: {
