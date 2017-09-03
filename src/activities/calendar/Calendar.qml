@@ -108,6 +108,9 @@ ActivityBase {
             onClicked: {
                 Activity.daySelected = selectedDate.getDate()
             }
+            onReleased: {
+                Activity.daySelected = selectedDate.getDate()
+            }
         }
 
         // Creates a table consisting of days of weeks.
