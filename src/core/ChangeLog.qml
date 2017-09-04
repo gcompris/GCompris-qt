@@ -37,6 +37,7 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 8100, "content": qsTr("Fix some categories in categorization activity.") },
             { "versionCode": 8000, "content": qsTr("Lang activity now available in Polish, Swedish and Ukrainian.") },
             { "versionCode": 7000, "content": qsTr("Search feature.") },
             { "versionCode": 6000, "content": qsTr("A Changelog.") },
