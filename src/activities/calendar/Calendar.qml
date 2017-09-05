@@ -73,6 +73,7 @@ ActivityBase {
                 Activity.currentSubLevel ++
                 Activity.initQuestion()
             }
+            onRunningChanged: okButtonMouseArea.enabled = !okButtonMouseArea.enabled
         }
 
         Rectangle {
@@ -184,6 +185,7 @@ ActivityBase {
                 clip: false
             }
             MouseArea {
+                id: okButtonMouseArea
                 anchors.fill: parent
                 onClicked: {
                     Activity.checkAnswer()
