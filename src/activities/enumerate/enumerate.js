@@ -24,19 +24,20 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/enumerate/resource/"
+var url2 = "qrc:/gcompris/src/activities/algorithm/resource/"
 var items
 var currentLevel = 0
 var numberOfLevel = 9
 var itemIcons = [
-            url + "apple.svg",
-            url + "banana.svg",
-            url + "cabbage.svg",
-            url + "grapefruit.svg",
+            url2 + "apple.svg",
+            url2 + "banana.svg",
+            url2 + "cherries.svg",
             url + "grapes.svg",
-            url + "lemon.svg",
-            url + "orange.svg",
+            url2 + "lemon.svg",
+            url2 + "orange.svg",
             url + "peach.svg",
-            url + "red_pepper.svg",
+            url2 + "pear.svg",
+            url2 + "plum.svg",
             url + "strawberry.svg",
             url + "watermelon.svg",
         ]
