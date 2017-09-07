@@ -19,7 +19,7 @@
 // Contains the questions, answers and calendar configurations of every level.
 // Add more levels by inserting questions and answers below.
 // Days of weeks are indexed from 0 i.e (Sunday = 0, Monday = 1, Tuesday = 2, .... ..... .... , Saturday = 6)
-// Months oy year are indexed from 0 i.e (January = 0, February = 1, March = 2, .... ..... ...., December = 11)
+// Months of year are indexed from 0 i.e (January = 0, February = 1, March = 2, .... ..... ...., December = 11)
 
 function get() {
     return [
@@ -79,31 +79,31 @@ function get() {
                  ],
                  [ // Level 2  Questions
                   {
-                      "question": qsTr("What Day Of Week Is On Date 4 Of Given Month"),
+                      "question": qsTr("What day of week is on Date 4 Of given month"),
                       "answer": {"dayOfWeek": 0}
                   },
                   {
-                      "question": qsTr("What Day Of The Week Is On Date 12 Of Given Month"),
+                      "question": qsTr("What day of the week is on Date 12 of given month"),
                       "answer": {"dayOfWeek": 1}
                   },
                   {
-                      "question": qsTr("What Day Of The Week Is On Date 20 Of Given Month"),
+                      "question": qsTr("What day of the week is on Date 20 of given month"),
                       "answer": {"dayOfWeek": 2}
                   },
                   {
-                      "question": qsTr("What Day Of The Week Is On Date 28 Of Given Month"),
+                      "question": qsTr("What day of the week is on Date 28 of given month"),
                       "answer": {"dayOfWeek": 3}
                   },
                   {
-                      "question": qsTr("What Day Of The Week Is On Date 22 Of Given Month"),
+                      "question": qsTr("What day of the week is on Date 22 of given month"),
                       "answer": {"dayOfWeek": 4}
                   },
                   {
-                      "question": qsTr("What Day Of The Week Is On Date 16 Of Given Month"),
+                      "question": qsTr("What day of the week is on Date 16 of given month"),
                       "answer": {"dayOfWeek": 5}
                   },
                   {
-                      "question": qsTr("What Day Of The Week Is On Date 10 Of Given Month"),
+                      "question": qsTr("What day of the week is on Date 10 of given month"),
                       "answer": {"dayOfWeek": 6}
                   }
                  ]
@@ -124,31 +124,31 @@ function get() {
 
                  [ // Level 3 Questions
                   {
-                      "question": qsTr("Select A Date Having Monday Between Date 1 And 7 Of Given Month."),
+                      "question": qsTr("Select a Date having Monday between Date 1 and 7 of given month."),
                       "answer": {"year": 2018, "month": 2, "day": 5}
                   },
                   {
-                      "question": qsTr("Select A Date Having Tuesday Between Date 8 And 16 Of Given Month."),
+                      "question": qsTr("Select a Date having Tuesday between Date 8 and 16 of given month."),
                       "answer": {"year": 2018, "month": 2, "day": 13}
                   },
                   {
-                      "question": qsTr("Select A Date Having Wednesday Between Date 15 And 22 Of Given Month."),
+                      "question": qsTr("Select a Date having Wednesday between Date 15 and 22 of given month."),
                       "answer": {"year": 2018, "month": 2, "day": 21}
                   },
                   {
-                      "question": qsTr("Select A Date Having Thursday Between Date 26 And 31 Of Given Month."),
+                      "question": qsTr("Select a Date having Thursday between Date 26 and 31 of given month."),
                       "answer": {"year": 2018, "month": 2, "day": 29}
                   },
                   {
-                      "question": qsTr("Select A Date Having Friday Between Date 20 And 25 Of Given Month."),
+                      "question": qsTr("Select a Date having Friday between Date 20 and 25 of given month."),
                       "answer": {"year": 2018, "month": 2, "day": 23}
                   },
                   {
-                      "question": qsTr("Select A Date Having Saturday Between Date 13 And 23 Of Given Month."),
+                      "question": qsTr("Select a Date having Saturday between Date 13 and 23 of given month."),
                       "answer": {"year": 2018, "month": 2, "day": 17}
                   },
                   {
-                      "question": qsTr("Select A Date Having Sunday Between Date 5 And 17 Of Given Month."),
+                      "question": qsTr("Select a Date having Sunday between Date 5 and 17 of given month."),
                       "answer": {"year": 2018, "month": 2, "day": 11}
                   }
                  ]
@@ -168,23 +168,23 @@ function get() {
                  ],
                  [ // Level 4 Questions
                   {
-                      "question": qsTr("Select 2nd Day Before 15th Of Given Month"),
+                      "question": qsTr("Select 2nd Day before 15th Of given month"),
                       "answer": {"year": 2018, "month": 2, "day": 13}
                   },
                   {
-                      "question": qsTr("Select Fourth Sunday Of Given Month"),
+                      "question": qsTr("Select fourth Sunday of given month"),
                       "answer": {"year": 2018, "month": 2, "day": 25}
                   },
                   {
-                      "question": qsTr("Select Date One Week After 13th Of Given Month"),
+                      "question": qsTr("Select Date one Week after 13th of given month"),
                       "answer": {"year": 2018, "month": 2, "day": 20}
                   },
                   {
-                      "question": qsTr("Select Fifth Thursday Of Given Month"),
+                      "question": qsTr("Select fifth Thursday of given month"),
                       "answer": {"year": 2018, "month": 2, "day": 29}
                   },
                   {
-                      "question": qsTr("Select 4th Day After 27th Of Given Month"),
+                      "question": qsTr("Select 4th day after 27th of given month"),
                       "answer": {"year": 2018, "month": 2, "day": 31}
                   }
                  ]
@@ -205,39 +205,39 @@ function get() {
                  ],
                  [ // Level 5 Questions
                   {
-                      "question": qsTr("Find The First Monday Of January Month Of Year 2018"),
+                      "question": qsTr("Find the first Monday of January month of year 2018"),
                       "answer": {"year": 2018, "month": 0, "day": 1}
                   },
                   {
-                      "question": qsTr("Find The Second Wednesday Of April Month Of Year 2018"),
+                      "question": qsTr("Find the second Wednesday of April month of year 2018"),
                       "answer": {"year": 2018, "month": 3, "day": 11}
                   },
                   {
-                      "question": qsTr("Find The Third Friday Of May Month Of Year 2018"),
+                      "question": qsTr("Find the third Friday of May month of year 2018"),
                       "answer": {"year": 2018, "month": 4, "day": 18}
                   },
                   {
-                      "question": qsTr("Find The Fifth Saturday Of June Month Of Year 2018"),
+                      "question": qsTr("Find the fifth Saturday of June month of year 2018"),
                       "answer": {"year": 2018, "month": 5, "day": 30}
                   },
                   {
-                      "question": qsTr("Find The Fourth Tuesday Of July Month Of Year 2018"),
+                      "question": qsTr("Find the fourth Tuesday of July month of year 2018"),
                       "answer": {"year": 2018, "month": 6, "day": 24}
                   },
                   {
-                      "question": qsTr("Find The First Monday Of August Month Of Year 2018"),
+                      "question": qsTr("Find the first Monday of August month of year 2018"),
                       "answer": {"year": 2018, "month": 7, "day": 6}
                   },
                   {
-                      "question": qsTr("Find The Third Thursday Of September Month Of Year 2018"),
+                      "question": qsTr("Find the third Thursday of September month of year 2018"),
                       "answer": {"year": 2018, "month": 8, "day": 20}
                   },
                   {
-                      "question": qsTr("Find The Fifth Wednesday Of October Month Of Year 2018"),
+                      "question": qsTr("Find the fifth Wednesday of October month of year 2018"),
                       "answer": {"year": 2018, "month": 9, "day": 31}
                   },
                   {
-                      "question": qsTr("Find The Second Friday Of December Month Of Year 2018"),
+                      "question": qsTr("Find the second Friday of December month of year 2018"),
                       "answer": {"year": 2018, "month": 11, "day": 14}
                   }
                  ]
@@ -257,23 +257,23 @@ function get() {
                  ],
                  [ // Level 6 Questions
                   {
-                      "question": qsTr("Columbus Day Is Celebrated On The Second Monday Of October. Find The Date Of Columbus Day In 2018"),
+                      "question": qsTr("Columbus Day is celebrated on the second monday of October. Find the Date of Columbus Day in 2018"),
                       "answer": {"year": 2018, "month": 9, "day": 8}
                   },
                   {
-                      "question": qsTr("Braille Day Is Celebrated One Day Before January 5. Find The Date Of Braille Day in 2018"),
+                      "question": qsTr("Braille Day is celebrated one day before January 5. Find the Date of Braille Day in 2018"),
                       "answer": {"year": 2018, "month": 0, "day": 4}
                   },
                   {
-                      "question": qsTr("Mark's Birthday Is On March 4. His Party Is Exactly Two Weeks Later. Find The Date Of His Party in 2018"),
+                      "question": qsTr("Mark's birthday is on March 4. His party is Exactly two weeks later. Find the Date of his party in 2018"),
                       "answer": {"year": 2018, "month": 2, "day": 18}
                   },
                   {
-                      "question": qsTr("Mother's Day Falls On The Second Sunday In May. Find The Date Of Mother's Day In 2018"),
+                      "question": qsTr("Mother's Day falls on the second Sunday in May. Find the Date of Mother's Day in 2018"),
                       "answer": {"year": 2018, "month": 4, "day": 13}
                   },
                   {
-                      "question": qsTr("Sports Competition Will Be Held On Last Friday of September 2018. Select The Date Of Sports Competition On Calendar Given Below"),
+                      "question": qsTr("Sports competition will be held on last Friday of September 2018. Select the Date of Sports Competition on Calendar given below"),
                       "answer": {"year": 2018, "month": 8, "day": 28}
                   }
                  ]
