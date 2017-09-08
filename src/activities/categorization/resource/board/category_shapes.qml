@@ -33,7 +33,7 @@ QtObject{
             "image": imagesPrefix + "cube.JPG",
             "content": [
                 {
-                    "instructions": qsTr("Place the objects matching CIRCLE to the right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a CIRCLE to the right and others to the left"),
                     "image": imagesPrefix + "circle.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -42,7 +42,7 @@ QtObject{
                     "bad": ["backcard.svg","can.svg","can1.svg","conehat.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching RECTANGLE to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a RECTANGLE to right and others to the left"),
                     "image": imagesPrefix + "rectangle.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -51,7 +51,7 @@ QtObject{
                     "bad": ["cylinder.svg","icecream.svg","trapezium.svg","trash.svg","pizza.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching BALL to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a SPHERE to right and others to the left"),
                     "image": imagesPrefix + "sun.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -60,7 +60,7 @@ QtObject{
                     "bad": ["shapes/cone.svg","shapes/halforange.svg","shapes/sunrise.svg","shapes/juice2.svg","shapes/icecube.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching TRAPEZOID to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a TRAPEZOID to right and others to the left"),
                     "image": imagesPrefix + "trapezium.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -69,7 +69,7 @@ QtObject{
                     "bad": ["cube.svg","dice.svg","rectbin.svg","yellowtriangle.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching TRIANGLE to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a TRIANGLE to right and others to the left"),
                     "image": imagesPrefix + "triangle.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -78,7 +78,7 @@ QtObject{
                     "bad": ["sun.svg","cookie.svg","rhombus2.svg","trapezium2.svg","semicircle.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching SEMICIRCLE to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a SEMICIRCLE to right and others to the left"),
                     "image": imagesPrefix + "semicircle.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -87,7 +87,7 @@ QtObject{
                     "bad": ["diceface.svg","watermelon.svg","squareclock.svg","trianglehat.svg","circle.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching PENTAGON to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a PENTAGON to right and others to the left"),
                     "image": imagesPrefix + "pentagon.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -96,7 +96,7 @@ QtObject{
                     "bad": ["shapes/nonagon1.svg","shapes/trianglehat.svg","shapes/rainbowsquare.svg","shapes/paper.svg","shapes/hexagon1.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching SQUARE to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a SQUARE to right and others to the left"),
                     "image": imagesPrefix + "rhombus.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -105,7 +105,7 @@ QtObject{
                     "bad": ["trapezium.svg","slate.svg","rhombus4.svg","globe.svg","parallelogram.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching CONE to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a CONE to right and others to the left"),
                     "image": imagesPrefix + "cone.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -114,7 +114,7 @@ QtObject{
                     "bad": ["semicircle.svg","glass.svg","bowl3.svg","halforange.svg","dice.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching PARELLELOGRAM to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a PARELLELOGRAM to right and others to the left"),
                     "image": imagesPrefix + "parallelogram.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -123,7 +123,7 @@ QtObject{
                     "bad": ["globe.svg","heptagon.svg","pizza.svg","trapezium4.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching HEPTAGON to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a HEPTAGON to right and others to the left"),
                     "image": imagesPrefix + "heptagon.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -132,7 +132,7 @@ QtObject{
                     "bad": ["nonagon4.svg","octagon1.svg","decagon2.svg","pentagon1.svg","hexagon4.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching CUBE to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a CUBE to right and others to the left"),
                     "image": imagesPrefix + "cube.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -141,7 +141,7 @@ QtObject{
                     "bad": ["juice2.svg","cuboid1.svg","stickynote.svg","backcard.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching RHOMBUS to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a RHOMBUS to right and others to the left"),
                     "image": imagesPrefix + "rhombus1.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -150,7 +150,7 @@ QtObject{
                     "bad": ["hexagon.svg","parallelogram.svg","pentagon4.svg","pgram1.svg","trapezium2.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching NONAGON to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a NONAGON to right and others to the left"),
                     "image": imagesPrefix + "nonagon.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -159,7 +159,7 @@ QtObject{
                     "bad": ["pgram2.svg","diceface.svg","octagon2.svg","decagon1.svg","decagon2.svg"],
                 },
                 {
-                    "instructions": qsTr("Place the objects matching CUBOID to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a CUBOID to right and others to the left"),
                     "image": imagesPrefix + "cuboid.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -168,7 +168,7 @@ QtObject{
                     "bad": ["backcard.svg","cone.svg","pizza.svg","trash.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching HEXAGON to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a HEXAGON to right and others to the left"),
                     "image": imagesPrefix + "hexagon.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -177,7 +177,7 @@ QtObject{
                     "bad": ["rhombus1.svg","pgram2.svg","heptagon1.svg","pentagon3.svg","trapezium2.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching OCTAGON to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching an OCTAGON to right and others to the left"),
                     "image": imagesPrefix + "octagon.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -186,7 +186,7 @@ QtObject{
                     "bad": ["rectangle_led.svg","decagon2.svg","hexagon2.svg","heptagon1.svg","nonagon2.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching CYLINDER to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a CYLINDER to right and others to the left"),
                     "image": imagesPrefix + "cylinder.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -195,7 +195,7 @@ QtObject{
                     "bad": ["halforange.svg","decagon3.svg","wcone.svg","juice2.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching DECAGON to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a DECAGON to right and others to the left"),
                     "image": imagesPrefix + "decagon.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
