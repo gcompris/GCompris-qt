@@ -36,7 +36,7 @@ Rectangle {
     anchors.margins: 30
     border.color: "black"
     border.width: 3
-    QtObject{
+    QtObject {
         property alias animWin: animWin
         property alias crossAnim: crossAnim
     }
@@ -120,6 +120,7 @@ Rectangle {
         anchors.fill: parent
         fontSizeMode: Text.Fit
         wrapMode: Text.Wrap
+        font.family: ApplicationSettings.font
         font.bold: true
         color: "#373737"
         horizontalAlignment: Text.AlignHCenter
@@ -127,7 +128,7 @@ Rectangle {
         text: ""
     }
 
-    MouseArea{
+    MouseArea {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
