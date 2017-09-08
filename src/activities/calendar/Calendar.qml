@@ -22,6 +22,8 @@
 import QtQuick 2.6
 import GCompris 1.0
 import QtQuick.Controls 1.4
+import QtQuick.Controls.Private 1.0
+import QtQuick.Controls.Styles 1.1
 import "../../core"
 import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
@@ -100,6 +102,100 @@ ActivityBase {
             frameVisible: true
             focus: true
             __locale: Qt.locale(ApplicationSettings.locale)
+            style: CalendarStyle {
+                navigationBar: Rectangle {
+                    height: Math.round(TextSingleton.implicitHeight * 2.73)
+                    color: "lightBlue"
+                    Rectangle {
+                        color: Qt.rgba(1,1,1,0.6)
+                        height: 1
+                        width: parent.width
+                    }
+                    Rectangle {
+                        anchors.bottom: parent.bottom
+                        height: 1
+                        width: parent.width
+                        color: "#ddd"
+                    }
+                    BarButton {
+                        id: previousMonth
+                        height: parent.height
+                        width: height * 0.75
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.left: parent.left
+                        source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                        onClicked: control.showPreviousMonth()
+                    }
+                    Label {
+                        id: dateText
+                        text: styleData.title
+                        elide: Text.ElideRight
+                        horizontalAlignment: Text.AlignHCenter
+                        font.pixelSize: TextSingleton.implicitHeight * 1.25
+                        font.family: ApplicationSettings.font
+                        fontSizeMode: Text.Fit
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.left: previousMonth.right
+                        anchors.leftMargin: 2
+                        anchors.right: nextMonth.left
+                        anchors.rightMargin: 2
+                    }
+                    BarButton {
+                        id: nextMonth
+                        height: parent.height
+                        width: height * 0.75
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.right: parent.right
+                        source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                        onClicked: control.showNextMonth()
+                    }
+                }
+                dayDelegate: Rectangle {
+                    anchors.fill: parent
+                    anchors.leftMargin: (!addExtraMargin || control.weekNumbersVisible) && styleData.index % CalendarUtils.daysInAWeek === 0 ? 0 : -1
+                    anchors.rightMargin: !addExtraMargin && styleData.index % CalendarUtils.daysInAWeek === CalendarUtils.daysInAWeek - 1 ? 0 : -1
+                    anchors.bottomMargin: !addExtraMargin && styleData.index >= CalendarUtils.daysInAWeek * (CalendarUtils.weeksOnACalendarMonth - 1) ? 0 : -1
+                    anchors.topMargin: styleData.selected ? -1 : 0
+                    color: styleData.date !== undefined && styleData.selected ? selectedDateColor : "#F2F2F2"
+                    border.color: "#cec4c4"
+                    radius: 5
+                    property bool addExtraMargin: control.frameVisible && styleData.selected
+                    property color sameMonthDateTextColor: "#373737"
+                    property color selectedDateColor: "#3778d0"
+                    property color selectedDateTextColor: "white"
+                    property color differentMonthDateTextColor: "#bbb"
+                    property color invalidDateColor: "#dddddd"
+                    Label {
+                        id: dayDelegateText
+                        text: styleData.date.getDate()
+                        anchors.centerIn: parent
+                        horizontalAlignment: Text.AlignRight
+                        font.family: ApplicationSettings.font
+                        font.pixelSize: Math.min(parent.height/3, parent.width/3)
+                        color: {
+                            var theColor = invalidDateColor;
+                            if (styleData.valid) {
+                                // Date is within the valid range.
+                                theColor = styleData.visibleMonth ? sameMonthDateTextColor : differentMonthDateTextColor;
+                                if (styleData.selected)
+                                    theColor = selectedDateTextColor;
+                            }
+                            theColor;
+                        }
+                    }
+                }
+                dayOfWeekDelegate: Rectangle {
+                    color: gridVisible ? "#F2F2F2" : "transparent"
+                    implicitHeight: Math.round(TextSingleton.implicitHeight * 2.25)
+                    Label {
+                        text: control.__locale.dayName(styleData.dayOfWeek, control.dayOfWeekFormat)
+                        font.family: ApplicationSettings.font
+                        anchors.centerIn: parent
+                    }
+                }
+
+            }
+
             onVisibleMonthChanged: {
                 Activity.monthSelected = visibleMonth
             }
@@ -122,7 +218,7 @@ ActivityBase {
             spacing: 2
             Repeater {
                 model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
-                ChoiceTable{
+                ChoiceTable {
                     width: calendar.width * 0.33
                     height: calendar.height / 7.3
                     choices.text: modelData
@@ -164,7 +260,7 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
         }
 
-        // Answer Submition button.
+        // Answer Submission button.
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
