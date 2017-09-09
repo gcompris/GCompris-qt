@@ -22,7 +22,6 @@ import QtQuick 2.6
 import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
-import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.4
 
@@ -487,23 +486,6 @@ ActivityBase {
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
        
-            Rectangle{
-                id: activitiesMask
-                visible: false
-                anchors.fill: activitiesGrid
-                gradient: Gradient {
-                  GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.92; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.96; color: "#00FFFFFF"}
-                }
-            }
-       
-            layer.effect: OpacityMask {
-                id: activitiesOpacity
-                source: activitiesGrid
-                maskSource: activitiesMask
-                anchors.fill: activitiesGrid
-            }
         }
 
         Rectangle {
