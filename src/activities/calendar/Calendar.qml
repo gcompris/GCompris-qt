@@ -61,6 +61,7 @@ ActivityBase {
             property alias answerChoices: answerChoices
             property alias questionDelay: questionDelay
             property alias okButtonParticles: okButtonParticles
+            property bool horizontalLayout: background.width > background.height
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -72,7 +73,7 @@ ActivityBase {
             repeat: false
             interval: 1600
             onTriggered: {
-                Activity.currentSubLevel ++
+                Activity.currentSubLevel++
                 Activity.initQuestion()
             }
             onRunningChanged: okButtonMouseArea.enabled = !okButtonMouseArea.enabled
@@ -219,9 +220,10 @@ ActivityBase {
             Repeater {
                 model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
                 ChoiceTable {
-                    width: calendar.width * 0.33
+                    width: items.horizontalLayout ? calendar.width * 0.33 : calendar.width * 0.50
                     height: calendar.height / 7.3
                     choices.text: modelData
+                    anchors.rightMargin: 2
                 }
             }
         }
@@ -264,11 +266,11 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: calendarBox.width * 0.16
+            width: items.horizontalLayout ? calendarBox.width * 0.16 : calendarBox.width * 0.28
             height: width
             sourceSize.width: width
             sourceSize.height: height
-            y: parent.height*0.8
+            y: parent.height * 0.8
             z: 10
             anchors {
                 rightMargin: 14 * ApplicationInfo.ratio
