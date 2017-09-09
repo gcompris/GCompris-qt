@@ -109,10 +109,14 @@ int main(int argc, char *argv[])
     // Disable it because we already support HDPI display natively
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
-//#if defined(Q_OS_WIN)
-    QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-//#endif
-
+#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
+    QString renderer = QString(GRAPHICAL_RENDERER);
+    if(renderer == "software")
+       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
+    else if(renderer == "opengl")
+       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
+#endif
+    
     QApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
@@ -274,6 +278,5 @@ int main(int argc, char *argv[])
         window->show();
     }
 
-	return app.exec();
-
+    return app.exec();
 }
