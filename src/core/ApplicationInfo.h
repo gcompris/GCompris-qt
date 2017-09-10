@@ -292,7 +292,13 @@ public:
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
-    static bool useOpenGL() { return QString(GRAPHICAL_RENDERER) != "software"; }
+    static bool useOpenGL() { 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
+        return QString(GRAPHICAL_RENDERER) != "software"; 
+#else
+        return true;
+#endif
+    }
 
     /**
      * Returns the native screen orientation.
