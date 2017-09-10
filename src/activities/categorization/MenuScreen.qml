@@ -23,6 +23,7 @@
 */
 import QtQuick 2.6
 import GCompris 1.0
+import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.5
 
 import "../../core"
@@ -111,7 +112,6 @@ Image {
 
     GridView {
         id: menuGrid
-        layer.enabled: true
         anchors {
             fill: parent
             bottomMargin: bar.height
@@ -226,5 +226,23 @@ Image {
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
 
+        Rectangle {
+            id: menusMask
+            visible: false
+            anchors.fill: menuGrid
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#FFFFFFFF" }
+                GradientStop { position: 0.92; color: "#FFFFFFFF" }
+                GradientStop { position: 0.96; color: "#00FFFFFF" }
+            }
+        }
+        
+        layer.enabled: ApplicationInfo.useOpenGL
+        layer.effect: OpacityMask {
+            id: activitiesOpacity
+            source: menuGrid
+            maskSource: menusMask
+            anchors.fill: menuGrid
+        }
     } // grid view close
 }
