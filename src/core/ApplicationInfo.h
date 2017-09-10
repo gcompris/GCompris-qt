@@ -142,6 +142,13 @@ class ApplicationInfo : public QObject
      */
     Q_PROPERTY(bool isDownloadAllowed READ isDownloadAllowed CONSTANT)
 
+    /**
+     * Whether the application is currently using OpenGL or not.
+     *
+     * Use to deactivate some effects if OpenGL not used.
+     */
+	Q_PROPERTY(bool useOpenGL READ useOpenGL CONSTANT)
+        
 public:
 
 	/**
@@ -285,6 +292,7 @@ public:
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
+    static bool useOpenGL() { return QString(GRAPHICAL_RENDERER) != "software"; }
 
     /**
      * Returns the native screen orientation.
