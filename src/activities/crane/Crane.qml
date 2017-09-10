@@ -22,6 +22,7 @@
 
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
+import GCompris 1.0
 
 import "../../core"
 import "crane.js" as Activity
