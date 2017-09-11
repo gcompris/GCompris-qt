@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="200.43277mm"
+   height="52.105804mm"
+   viewBox="0 0 710.19485 184.62687"
+   id="svg5527"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="bumper.svg">
+  <defs
+     id="defs5529">
+    <linearGradient
+       id="linearGradient760">
+      <stop
+         id="stop761"
+         offset="0"
+         style="stop-color:#e6e6e6;stop-opacity:1;" />
+      <stop
+         id="stop762"
+         offset="1"
+         style="stop-color:#4f4f4d;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient822">
+      <stop
+         id="stop823"
+         offset="0"
+         style="stop-color:#c5efff;stop-opacity:1;" />
+      <stop
+         id="stop824"
+         offset="1"
+         style="stop-color:#ffffff;stop-opacity:1;" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient807">
+      <stop
+         id="stop808"
+         offset="0"
+         style="stop-color:#000;stop-opacity:1;" />
+      <stop
+         id="stop809"
+         offset="1"
+         style="stop-color:#fff;stop-opacity:1;" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="310.48862"
+     inkscape:cy="53.401396"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5532">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.8051308,-249.5051)">
+    <path
+       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:4.04721403;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+       d="M 57.111328 0.00390625 C 19.96681 0.18118375 0 6.0221807 0 24.257812 C -9.4739031e-15 48.571988 4.0845809 126.70333 68.466797 165.43164 C 132.84901 204.15999 624.60388 208.44381 691.83398 171.23438 C 759.06409 134.02494 757.53906 48.753629 757.53906 24.439453 C 757.53906 0.12527734 719.19494 2.2225303 651.96484 4.5039062 C 584.73474 6.7852396 650.86499 75.359879 375.83594 78.845703 C 133.5443 81.916626 164.26112 5.2650891 99.878906 1.4648438 C 83.783354 0.51478242 69.492834 -0.055186249 57.111328 0.00390625 z "
+       transform="matrix(0.93750001,0,0,0.93750001,9.8051308,249.5051)"
+       id="path16737" />
+  </g>
+</svg>

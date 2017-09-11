@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38.522617mm"
+   height="36.032337mm"
+   viewBox="0 0 136.49746 127.67363"
+   id="svg7733"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="headlights.svg">
+  <defs
+     id="defs7735" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="58.342689"
+     inkscape:cy="72.942444"
+     inkscape:document-units="px"
+     inkscape:current-layer="g8354"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     borderlayer="true" />
+  <metadata
+     id="metadata7738">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-168.51313,-378.56068)">
+    <g
+       id="g8354">
+      <path
+         style="opacity:1;fill:#999999;fill-opacity:1;stroke:none;stroke-width:2.13333344;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 118.3418 0.03515625 C 99.653487 -0.0029237507 71.463439 11.928636 62.636719 16.066406 C 51.492516 21.290492 34.323248 34.237925 20.712891 50.378906 C 7.102533 66.519877 -2.9951784 85.90481 0.75976562 104 A 1.0667734 1.0667734 0 0 0 0.7734375 104.06445 C 4.2839762 116.91191 9.0622454 126.35407 16.435547 131.58984 C 23.808838 136.82562 33.635155 137.63247 46.644531 133.58789 C 59.601438 129.55963 84.509166 119.14829 106.11719 106.64062 C 116.92119 100.38679 126.88979 93.617289 134.12695 86.8125 C 141.36412 80.0077 145.9909 73.132052 145.60938 66.478516 C 144.84888 53.215593 141.69525 23.071429 134.30078 7.3417969 C 133.04216 4.6644208 130.82589 2.7979769 128.06641 1.6542969 C 125.30692 0.51060619 121.99826 0.04261225 118.3418 0.03515625 z "
+         transform="matrix(0.93749998,0,0,0.93749998,168.51313,378.56068)"
+         id="path16789" />
+    </g>
+  </g>
+</svg>
