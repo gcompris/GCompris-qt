@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Amit Tomar <a.tomar@outlook.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (Graphics refactoring)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,7 +21,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtGraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -72,40 +72,43 @@ ActivityBase {
             width: parent.width
             height: description.height + 5 * ApplicationInfo.ratio
             color: "#FFF"
-            opacity: 0.7
+            opacity: 0.8
             anchors {
                 bottom: bar.top
                 bottomMargin: 15 * ApplicationInfo.ratio
             }
             visible: bar.level == 1
-
-            GCText {
-                id: description
-                text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
-                qsTr("Build the same tower in the empty area as the one you see on the right-hand side")
-                width: parent.width
-                fontSize: largeSize
-                color: "black"
-                wrapMode: Text.WordWrap
-                anchors.centerIn: parent
-                verticalAlignment: Text.AlignVCenter
-                horizontalAlignment: Text.AlignHCenter
-            }
         }
+        
+        GCText {
+            id: description
+            text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
+            qsTr("Build the same tower in the empty area as the one you see on the right-hand side")
+            width: instruction.width
+            fontSize: largeSize
+            color: "#373737"
+            wrapMode: Text.WordWrap
+            anchors.centerIn: instruction
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+            visible: bar.level == 1
+        }
+        
 
         Repeater {
             id: discRepeater
 
-            Item {
+            Rectangle {
                 id: disc
                 parent: towerModel.itemAt(0)
                 z: 4
-                width: discImage.width
-                height: discImage.height
+                width: Activity.getDiscWidth(index)
+                height: activityMode == "real"? towerModel.itemAt(0).height * 0.15: towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
+                
                 opacity: index < items.numberOfDisc ? 1 : 0
                 onHeightChanged: Activity.sceneSizeChanged()
-                property alias color: colorEffect.color
-                //radius: 10
+                property alias color: disc.color
+                radius: height * 0.5
                 property bool mouseEnabled : true
                 property alias discMouseArea: discMouseArea
                 property Item towerImage
@@ -113,36 +116,39 @@ ActivityBase {
 
                 property alias text: textSimplified.text
 
-                onXChanged: Activity.performTowersHighlight(disc, x)
-
                 anchors.horizontalCenter: if(parent) parent.horizontalCenter
-
-                Image {
-                    id: discImage
-                    source: Activity.url + "disc.svg"
-                    sourceSize.width: Activity.getDiscWidth(index)
-                    height: activityMode == "real"? towerModel.itemAt(0).height * 0.15:
-                    towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
-
-                    Behavior on y {
-                        NumberAnimation {
-                            id: bouncebehavior
-                            easing {
-                                type: Easing.OutElastic
-                                amplitude: 1.0
-                                period: 0.75
-                            }
+                
+                
+                Behavior on y {
+                    NumberAnimation {
+                        id: bouncebehavior
+                        easing {
+                            type: Easing.OutElastic
+                            amplitude: 1.0
+                            period: 0.75
                         }
                     }
-
+                }
+                
+                Rectangle {
+                    id: inDisc
+                    width: parent.width - 10 * ApplicationInfo.ratio
+                    height: parent.height - 6 * ApplicationInfo.ratio
+                    radius: width * 0.5
+                    color: "#2AFFFFFF"
+                    anchors.centerIn: parent
+                    
                     GCText {
                         id: textSimplified
                         visible: activityMode == "simplified"
+                        color: "#b4000000"
                         anchors.verticalCenter: parent.verticalCenter
-                        anchors.rightMargin: 4
+                        anchors.rightMargin: 10 * ApplicationInfo.ratio
                         anchors.right: parent.right
                     }
+                    
                 }
+                
 
                 MouseArea {
                     id: discMouseArea
@@ -169,13 +175,6 @@ ActivityBase {
                         disc.anchors.horizontalCenter = disc.parent.horizontalCenter
                     }
                 }
-
-                ColorOverlay {
-                    id: colorEffect
-                    anchors.fill: discImage
-                    source: discImage
-                }
-
             }
         }
 
@@ -197,39 +196,25 @@ ActivityBase {
                     width: image.width
                     height: image.height
                     onHeightChanged: Activity.sceneSizeChanged()
-                    property alias highlight: towerImageHighlight.highlight
                     Image {
                         id: image
-                        source: Activity.url + "disc_support.svg"
+                        source: 
+                        if(activityMode == "simplified" && (modelData == towerModel.model-2))
+                            //in simplified mode, the target tower
+                            Activity.url + "disc_support-green.svg"
+                        else if(activityMode == "simplified" && (modelData == towerModel.model-1))
+                            // in simplified mode, the reference tower
+                            Activity.url + "disc_support-red.svg"
+                        else if(activityMode == "real" && (modelData == towerModel.model-1))
+                            // in real mode, the target tower
+                            Activity.url + "disc_support-green.svg"
+                        else
+                            Activity.url + "disc_support.svg"
                         sourceSize.width: background.width / (towerModel.model + 2.5)
                         fillMode: Image.Stretch
                         height: background.height - instruction.height - 2 * bar.height
                     }
                     z: 3
-
-                    Highlight {
-                        id: towerImageHighlight
-                        source: image
-                    }
-                    Highlight {
-                        // last tower highlight
-                        id: towerImageHighlightGlow
-                        source: image
-                        hue: 1.0
-                        lightness: 0
-                        opacity: towerImageHighlight.opacity == 0 ? 0.5 : 0
-                        visible: modelData == towerModel.model-1
-                    }
-
-                    // in simplified mode only, the target tower
-                    Highlight {
-                        hue: 0.3
-                        source: image
-                        lightness: 0
-                        opacity: towerImageHighlight.opacity == 0 ? 0.5 : 0
-                        visible: activityMode == "simplified" && (modelData == towerModel.model-2)
-                    }
-
                 }
             }
         }
