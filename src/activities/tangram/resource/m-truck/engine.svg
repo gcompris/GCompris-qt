@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="65.786804mm"
+   height="30.984308mm"
+   viewBox="0 0 233.10285 109.78692"
+   id="svg8126"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="engine.svg">
+  <defs
+     id="defs8128" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="253.97871"
+     inkscape:cy="64.009466"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata8131">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-149.16286,-268.89732)">
+    <path
+       style="font-size:12px;fill:#999999;fill-opacity:1;fill-rule:evenodd;stroke-width:1.27213037"
+       d="M 9.0800781 0.0078125 C 4.9125748 0.17426625 1.22805 3.0460588 0 5.9179688 L 0.20507812 57.230469 C 0.60435279 60.878949 2.3994199 64.507812 7.3261719 64.507812 L 102.47266 64.712891 L 102.47266 88.589844 L 120.04492 88.589844 L 120.04492 64.75 L 166.41992 64.849609 C 191.72277 64.370911 212.08843 89.236621 212.23828 110.30078 C 212.05049 112.48408 214.08528 115.68175 217.23242 115.83398 L 222.73242 115.6875 C 224.34144 116.5885 226.1935 117.10547 228.17383 117.10547 L 237.48438 117.10547 C 243.66649 117.10547 248.64258 112.10915 248.64258 105.90234 L 248.64258 84.96875 C 248.64258 78.761948 243.66649 73.765625 237.48438 73.765625 L 234.64453 73.765625 C 234.74209 73.033347 234.81542 72.388318 234.85547 71.867188 C 237.7339 64.697908 243.75351 0.734375 223.57812 0.734375 L 9.9199219 0.01171875 C 9.6383859 -0.0020365833 9.3579117 -0.0032844166 9.0800781 0.0078125 z M 104.4707 64.716797 L 117.64844 64.744141 L 117.64844 73.630859 L 104.4707 73.630859 L 104.4707 64.716797 z M 104.4707 76.548828 L 117.64844 76.548828 L 117.64844 85.669922 L 104.4707 85.669922 L 104.4707 76.548828 z "
+       transform="matrix(0.93750001,0,0,0.93750001,149.16286,268.89732)"
+       id="path6359" />
+  </g>
+</svg>

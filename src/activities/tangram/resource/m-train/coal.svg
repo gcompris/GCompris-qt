@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="62.376419mm"
+   height="40.625351mm"
+   viewBox="0 0 221.01881 143.94809"
+   id="svg6207"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="M-coal.svg">
+  <defs
+     id="defs6209" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="115.89238"
+     inkscape:cy="93.613649"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-page="true" />
+  <metadata
+     id="metadata6212">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-215.20488,-431.81673)">
+    <path
+       style="fill:#999999;stroke-width:1.0666666;fill-opacity:1"
+       d="M 149.04492 0 L 126.92383 1.4628906 L 124.24609 6.1757812 L 116.98242 2.3671875 L 97.941406 10.859375 L 97.939453 10.910156 L 89.544922 10.355469 L 89.160156 10.824219 L 80.1875 1.8867188 L 52.240234 6.0625 L 46.517578 19.322266 L 40.347656 25.212891 L 26.765625 25.164062 C 24.4065 25.155487 21.455098 26.808324 22.507812 28.210938 L 68.978516 90.128906 C 65.636867 93.060806 62.845357 96.600551 60.771484 100.57812 L 27.630859 100.45508 C 26.514323 98.931289 24.720104 97.937333 22.677734 97.929688 L 6.21875 97.869141 C 2.7993794 97.856394 0.0362375 100.59819 0.0234375 104.01758 L 0 110.18945 C -0.012746667 113.60881 2.7290775 116.37197 6.1484375 116.38477 L 22.607422 116.44727 C 25.875087 116.45941 28.5378 113.95245 28.779297 110.74609 L 57.271484 110.85156 C 56.912582 112.86941 56.711016 114.94086 56.703125 117.06055 C 56.629056 136.94514 72.689643 153.12519 92.574219 153.19922 C 112.45882 153.27329 128.63886 137.2147 128.71289 117.33008 C 128.72079 115.21029 128.5353 113.13579 128.19141 111.11523 L 149.85352 111.19531 C 149.49461 113.21316 149.295 115.28656 149.28711 117.40625 C 149.21305 137.29085 165.27166 153.4709 185.15625 153.54492 C 205.0408 153.61899 221.2209 137.55841 221.29492 117.67383 C 221.30282 115.55376 221.11742 113.47979 220.77344 111.45898 L 232.64844 111.50391 C 236.76317 111.51922 236.80032 101.23411 232.68555 101.21875 L 217.35156 101.16211 C 214.40851 95.413044 209.96703 90.559716 204.53711 87.117188 L 203.45898 28.837891 C 203.4266 27.086584 201.55833 25.799549 199.19922 25.791016 L 198.75977 25.789062 L 196.50977 13.390625 L 176.12305 6.7089844 L 175.53516 5.5058594 L 151.28711 2.7363281 L 149.04492 0 z "
+       transform="matrix(0.93750001,0,0,0.93750001,215.20488,431.81673)"
+       id="rect3649-4" />
+  </g>
+</svg>
