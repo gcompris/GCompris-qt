@@ -5,6 +5,7 @@
  * Authors:
  *   Christof Petig and Ingo Konrad (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (add mode without OpenGL)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -63,7 +64,7 @@ Item {
       id: canvas
       anchors.fill: parent
       source: Activity.url + "hexagon.svg"
-      visible: ApplicationInfo.useOpenGL ? false : true
+      visible: false
     }
     
     Rectangle {
