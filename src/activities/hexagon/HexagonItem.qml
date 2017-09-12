@@ -29,7 +29,7 @@ Item {
     id: hexagon
     property GCAudio audioEffects
     property ParticleSystemStar particles
-    property alias color: colorOverlay.color
+    property alias color: softCanvas.color
     property bool hasStrawberry: false
     property double ix
     property double iy
@@ -63,7 +63,17 @@ Item {
       id: canvas
       anchors.fill: parent
       source: Activity.url + "hexagon.svg"
-      visible: false
+      visible: ApplicationInfo.useOpenGL ? false : true
+    }
+    
+    Rectangle {
+        id:softCanvas
+        width: parent.width * 0.8
+        height: width
+        radius: width * 0.5
+        anchors.centerIn: parent
+        opacity: strawberry.opacity == 0 ? 0.65 : 0
+        visible: ApplicationInfo.useOpenGL ? false : true
     }
 
     ColorOverlay {
@@ -71,6 +81,7 @@ Item {
         anchors.fill: canvas
         source: canvas
         onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
+        color: softCanvas.color
         opacity: 0.65
         Behavior on opacity { PropertyAnimation { duration: 500 } }
     }

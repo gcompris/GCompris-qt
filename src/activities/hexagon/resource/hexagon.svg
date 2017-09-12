@@ -13,9 +13,9 @@
    height="100"
    id="svg1902"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    version="1.0"
-   sodipodi:docname="hexagon.svg">
+   sodipodi:docname="0099FF.svg">
   <defs
      id="defs1904" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.1324561"
-     inkscape:cx="56.726581"
+     inkscape:cx="12.684976"
      inkscape:cy="55.190973"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -54,7 +54,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       style="fill:#0099ff;fill-opacity:1;fill-rule:evenodd;stroke:none"
        d="M 3.2306679,72.958474 4.2955529,50.640946 3.9405947,28.323423 28.787931,13.976442 50.795572,4.7306093 68.898635,14.29526 96.940627,23.859919 96.585666,54.785634 94.810858,75.509052 72.803217,84.754886 50.795572,94.000717 27.723041,82.841951 3.2306679,72.958474 z"
        id="path9657"
        sodipodi:nodetypes="ccccccccccccc"
