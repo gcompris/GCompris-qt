@@ -84,6 +84,17 @@ Item {
             source: text
         }
 
+        Image {
+            id:softFailure
+            z: 12
+            source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/cross.svg"
+            width: parent.width
+            height: width
+            anchors.centerIn: text
+            opacity:0
+            visible: ApplicationInfo.useOpenGL ? false : true
+        }
+        
         MouseArea {
             id: mouseArea
             anchors.fill: parent
@@ -140,25 +151,25 @@ Item {
         SequentialAnimation {
             id: failureAnimation
             NumberAnimation {
-                target: color
+                target: ApplicationInfo.useOpenGL ? color : softFailure
                 property: "opacity"
                 to: 1; duration: 400
             }
             NumberAnimation {
-                target: color
+                target: ApplicationInfo.useOpenGL ? color : softFailure
                 property: "opacity"
                 to: 0; duration: 200
             }
         }
     }
-
+    
     Colorize {
-            id: color
-            z: 5
-            anchors.fill: carriageImage
-            source: carriageImage
-            hue: 0.0
-            saturation: 1
-            opacity: 0
-        }
+        id: color
+        z: 5
+        anchors.fill: carriageImage
+        source: carriageImage
+        hue: 0.0
+        saturation: 1
+        opacity: 0
+    }
 }
