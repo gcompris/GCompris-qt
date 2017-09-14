@@ -45,6 +45,115 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        function changeBallState(saveBallState) {
+            instruction.text = ""
+
+            if(ball.state === "FAIL") {
+                Activity.resetLevel()
+                return
+            }
+
+            /* This is a shoot */
+            var progress = progressTop
+            if (saveBallState == "LEFT") {
+                progress = progressLeft
+            }
+            else if(saveBallState == "RIGHT") {
+                progress = progressRight
+            }
+
+            if(progress.ratio > 0) {
+                /* Second click, stop animation */
+                progress.anim.running = false;
+
+                /* Play sound */
+                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+
+                /* Success or not */
+                if(progress.ratio < 100) {
+                    /* Success */
+                    ball.state = saveBallState
+                } else {
+                    /* failure */
+                    ball.state = "FAIL"
+                }
+                timerBonus.start()
+            } else {
+                /* First click, start animation*/
+                progress.anim.running = true;
+
+                /* Play sound */
+                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+            }
+        }
+
+        // To enable tapping/clicking on left side of goal
+        Rectangle {
+            id: rectLeft
+            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.right: player.left
+            anchors.bottom: parent.bottom
+            anchors.leftMargin: parent.width * 0.08
+            anchors.topMargin: parent.height * 0.07
+            anchors.bottomMargin: parent.height * 0.45
+            color: "transparent"
+
+            MouseArea {
+                anchors.fill: parent
+                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
+                onClicked: {
+                    if(mouse.button) {
+                        changeBallState("LEFT")
+                    }
+                }
+            }
+        }
+
+        // To enable tapping/clicking on top of goal
+        Rectangle {
+            id: rectTop
+            anchors.top: parent.top
+            anchors.left: rectLeft.right
+            anchors.right: rectRight.left
+            anchors.bottom: player.top
+            anchors.topMargin: parent.height * 0.07
+            color: "transparent"
+
+            MouseArea {
+                anchors.fill: parent
+                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
+                onClicked: {
+                    if(mouse.button) {
+                        changeBallState("CENTER")
+                    }
+                }
+            }
+        }
+
+        // To enable tapping/clicking on right side of goal
+        Rectangle {
+            id: rectRight
+            anchors.left: player.right
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.bottom: parent.bottom
+            anchors.rightMargin: parent.width * 0.06
+            anchors.topMargin: parent.height * 0.07
+            anchors.bottomMargin: parent.height * 0.45
+            color: "transparent"
+
+            MouseArea {
+                anchors.fill: parent
+                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
+                onClicked: {
+                    if(mouse.button) {
+                        changeBallState("RIGHT")
+                    }
+                }
+            }
+        }
+
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -202,16 +311,14 @@ ActivityBase {
                         timerBonus.start()
                     }
                 }
-                PropertyAnimation
-                {
+                PropertyAnimation {
                     target: progressTop
                     property: "ratio"
                     from: 0
                     to: 100
                     duration: items.duration
                 }
-                PropertyAnimation
-                {
+                PropertyAnimation {
                     target: progressTop
                     property: "color"
                     from: "#00FF00"
@@ -275,24 +382,24 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: instruction
-                        text: qsTr("Double click or double tap on the ball to kick it.")
+                        text: qsTr("Double click or double tap on the side of the goal you want to put the ball in.")
                     }
                 },
                 State {
                     name: "RIGHT"
                     PropertyChanges {
-                        target: ball;
+                        target: ball
                         sourceSize.width: 75 * ApplicationInfo.ratio
-                        x: background.width * 0.8;
+                        x: background.width * 0.7
                         y: background.height * 0.3
                     }
                 },
                 State {
                     name: "LEFT"
                     PropertyChanges {
-                        target: ball;
+                        target: ball
                         sourceSize.width: 75 * ApplicationInfo.ratio
-                        x: background.width * 0.2;
+                        x: background.width * 0.2
                         y: background.height * 0.3
                     }
                 },
@@ -308,9 +415,9 @@ ActivityBase {
                 State {
                     name: "FAIL"
                     PropertyChanges {
-                        target: ball;
+                        target: ball
                         sourceSize.width: 75 * ApplicationInfo.ratio
-                        x: parent.width/2 - width/2;
+                        x: parent.width/2 - width/2
                         y: player.y + player.height / 2
                     }
                     PropertyChanges {
@@ -324,52 +431,10 @@ ActivityBase {
                 anchors.fill: parent
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
-                    instruction.text = ""
-
-                    if(ball.state === "FAIL") {
-                        Activity.resetLevel()
-                        return
-                    }
-
-                    /* This is a shoot */
-                    var progress = progressTop
-                    if (mouse.button == Qt.LeftButton) {
-                        progress = progressLeft
-                    } else if (mouse.button == Qt.RightButton) {
-                        progress = progressRight
-                    } else if (mouse.button == Qt.MidButton) {
-                        progress = progressTop
-                    }
-
-                    if(progress.ratio > 0) {
-                        /* Second click, stop animation */
-                        progress.anim.running = false;
-
-                        /* Play sound */
-                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
-
-                        /* Success or not */
-                        if(progress.ratio < 100) {
-                            /* Success */
-                            if(progress === progressLeft) {
-                                ball.state = "LEFT"
-                            } else if(progress === progressRight) {
-                                ball.state = "RIGHT"
-                            } else {
-                                ball.state = "CENTER"
-                            }
-                        } else {
-                            /* failure */
-                            ball.state = "FAIL"
-                        }
-                        timerBonus.start()
-                    } else {
-                        /* First click, start animation*/
-                        progress.anim.running = true;
-
-                        /* Play sound */
-                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
-                    }
+                    ball.state = "INITIAL"
+                    progressRight.ratio = 0
+                    progressLeft.ratio = 0
+                    progressTop.ratio = 0
                 }
             }
         }
