@@ -45,8 +45,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property var starColors : ["yellow", "red", "blue"]
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -136,7 +134,6 @@ ActivityBase {
                         barIndex: index
                         width: rightLayout.width
                         backgroundColor: "grey"
-                        starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
                         opacity: 0
@@ -156,7 +153,6 @@ ActivityBase {
                         barIndex: index
                         width: rightLayout.width
                         backgroundColor: "grey"
-                        starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
                         opacity: 0
@@ -188,7 +184,6 @@ ActivityBase {
                         barIndex: index
                         width: rightLayout.width
                         backgroundColor: "#53b9c9"
-                        starsColor: starColors[index]
                         authorizeClick: false
                         theHat: items.hat
                         starsSize: background.starSize

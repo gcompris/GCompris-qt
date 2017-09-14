@@ -31,7 +31,6 @@ Item {
     property bool authorizeClick: false
     property int starsSize
     property string backgroundColor
-    property string starsColor: "yellow"
     property Item theHat
     property alias repeaterStars: repeaterStars
 
@@ -53,7 +52,6 @@ Item {
                     barGroupIndex: item.barGroupIndex
                     barIndex: item.barIndex
                     backgroundColor: item.backgroundColor
-                    wantedColor: starsColor
                     selected: index < nbStarsOn ? true : false
                     width: item.starsSize
                     height: item.starsSize
@@ -64,7 +62,6 @@ Item {
                     id: starToMove
                     barGroupIndex: item.barGroupIndex
                     backgroundColor: item.backgroundColor
-                    wantedColor: starsColor
                     selected: index < nbStarsOn ? true : false
                     width: item.starsSize
                     height: item.starsSize
