@@ -23,7 +23,6 @@ import QtQuick 2.3
 import Box2D 2.0
 import QtQuick.Particles 2.0
 import GCompris 1.0
-import QtGraphicalEffects 1.0
 
 import "../../core"
 import "land_safe.js" as Activity
@@ -141,11 +140,13 @@ ActivityBase {
                 items.velocity = rocket.body.linearVelocity.y;
 
                 if (rocket.body.linearVelocity.y > Activity.maxLandingVelocity)
-                    landing.overlayColor = "#80ff0000"  // redish
+                    landing.overlayColor = "-r"  // redish
+                else if (explosion.visible == true)
+                    landing.overlayColor = "-r"
                 else if (rocket.body.linearVelocity.y > Activity.maxLandingVelocity - 2)
-                    landing.overlayColor = "#80ffff00"  // yellowish
+                    landing.overlayColor = "-y"  // yellowish
                 else
-                    landing.overlayColor = "#8000ff00"  // greenish
+                    landing.overlayColor = "-g"  // greenish
                 items.altitude = Math.max(0, Math.round(Activity.getAltitudeReal()));
 
                 if (Activity.maxFuel != -1) {
@@ -516,10 +517,10 @@ ActivityBase {
 
             readonly property string collisionName: "landing"
             property int surfaceOffset: landing.height * 0.8
-            property alias overlayColor: overlay.color
+            property string overlayColor: overlayColor
 
             z: 2
-            source: Activity.baseUrl + "/landing.svg";
+            source: Activity.baseUrl + "/landing" + overlayColor + ".svg";
             anchors.left: ground.left
             anchors.leftMargin: 270
             anchors.top: ground.top
@@ -549,12 +550,6 @@ ActivityBase {
                     y: landing.surfaceOffset
                 }
             }
-        }
-        ColorOverlay {
-            id: overlay
-            anchors.fill: landing
-            source: landing
-            z: 3
         }
 
         Item {
