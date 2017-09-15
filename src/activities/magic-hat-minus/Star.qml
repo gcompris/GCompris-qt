@@ -34,6 +34,7 @@ Item {
     property Item newTarget
     property int barGroupIndex
     property int barIndex
+    property string wantedColor: "1"
     state: "Init"
 
     width: 34
@@ -62,7 +63,7 @@ Item {
     Image {
         id: starImg
         source: mainItem.selected ? 
-                    Activity.url + "star-1.svg" : Activity.url + "star-2.svg"
+                    Activity.url + "star-" + wantedColor + ".svg" : Activity.url + "star-0.svg"
         sourceSize.width: contour.width - 4
         sourceSize.height: contour.height - 4
         anchors.centerIn: contour

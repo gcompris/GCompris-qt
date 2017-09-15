@@ -14,7 +14,7 @@
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="star-2.svg"
+   sodipodi:docname="star-3.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0">
   <defs
@@ -27,7 +27,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="6.8944088"
-     inkscape:cx="-61.901911"
+     inkscape:cx="-35.503708"
      inkscape:cy="23.57287"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -57,7 +57,7 @@
      id="layer1"
      transform="translate(-144.96981,-124.61786)">
     <path
-       style="opacity:1;fill:#f4b165;fill-opacity:1;stroke:#d67d17;stroke-width:1.01132727;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#aef465;fill-opacity:1;stroke:#6fc216;stroke-width:1.01132727;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 168.54807,153.98455 -8.57668,-5.6001 -9.33939,3.10726 2.51857,-8.98321 -6.67516,-7.53888 10.13325,0.0481 5.21391,-7.76655 3.74412,9.01297 9.89752,2.7389 -7.81923,5.52214 z"
        id="path4553"
        inkscape:connector-curvature="0" />
