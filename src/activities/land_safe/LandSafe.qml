@@ -185,8 +185,6 @@ ActivityBase {
             property double leftAccel: 0.0
             property double rightAccel: 0.0
             property alias body: rocketBody
-            property alias leftEngine: leftEngine
-            property alias rightEngine: rightEngine
             
             function show() {
                 opacity = 100;
@@ -294,6 +292,20 @@ ActivityBase {
                 }
             }
 
+            Image {
+                id: softLeftEngine
+                source: Activity.baseUrl + "/engine.svg"
+                rotation: 90
+                anchors.right: parent.left
+                anchors.verticalCenter: parent.verticalCenter
+                width:  rocket.leftAccel > 0 ?
+                            rocket.width * 0.2 + rocket.width * rocket.leftAccel : 0
+                height:  width * 2 + width * rocket.leftAccel
+                sourceSize.width: width
+                sourceSize.height: height
+                visible: ApplicationInfo.useOpenGL ? false : true
+            }
+            
             ParticleSystem {
                 id: leftEngine
 
@@ -322,6 +334,20 @@ ActivityBase {
                 }
             }
 
+            Image {
+                id: softRightEngine
+                source: Activity.baseUrl + "/engine.svg"
+                rotation: -90
+                anchors.left: parent.right
+                anchors.verticalCenter: parent.verticalCenter
+                width:  rocket.rightAccel > 0 ?
+                            rocket.width * 0.2 + rocket.width * rocket.rightAccel : 0
+                height:  width * 2 + width * rocket.rightAccel
+                sourceSize.width: width
+                sourceSize.height: height
+                visible: ApplicationInfo.useOpenGL ? false : true
+            }
+            
             ParticleSystem {
                 id: rightEngine
 
@@ -350,6 +376,19 @@ ActivityBase {
                 }
             }
 
+            Image {
+                id: softBottomEngine
+                source: Activity.baseUrl + "/engine.svg"
+                anchors.top: parent.bottom
+                anchors.topMargin: -5 * ApplicationInfo.ratio
+                anchors.horizontalCenter: parent.horizontalCenter
+                width:  rocket.width * 0.5 + rocket.width * rocket.accel
+                height: rocket.accel > 0 ? width * 2 : 0
+                sourceSize.width: width
+                sourceSize.height: height
+                visible: ApplicationInfo.useOpenGL ? false : true
+            }
+            
             ParticleSystem {
                 id: bottomEngine
                 anchors.top: parent.bottom
@@ -377,7 +416,7 @@ ActivityBase {
                 }
             }
 
-        }
+         }
         
         ParticleSystem {
             id: explosion
