@@ -171,7 +171,7 @@ function initLevel() {
     min = items.onScreenControls ? items.leftRightControl.width : items.bar.fullButton * items.bar.barZoom;
     max = items.onScreenControls ? items.background.width - items.upDownControl.width - items.landing.width : max;
     items.landing.anchors.leftMargin = Math.random() * (max- min) + min;
-    items.landing.overlayColor = "#8000ff00";
+    items.landing.overlayColor = "-g";
 
     // initialize world:
     items.world.pixelsPerMeter = pxYToAltitude(items.rocket.y) / startingAltitudeReal;
