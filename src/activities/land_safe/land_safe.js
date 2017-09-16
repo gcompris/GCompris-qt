@@ -123,6 +123,7 @@ var zoomStack = new Array;
 function start(items_) {
     items = items_;
     currentLevel = 0;
+    lastLevel = -1;
     numberOfLevel = levels.length;
     barAtStart = GCompris.ApplicationSettings.isBarHidden;
     GCompris.ApplicationSettings.isBarHidden = true;

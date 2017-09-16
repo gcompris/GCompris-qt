@@ -517,7 +517,7 @@ ActivityBase {
 
             readonly property string collisionName: "landing"
             property int surfaceOffset: landing.height * 0.8
-            property string overlayColor: overlayColor
+            property string overlayColor: "-g"
 
             z: 2
             source: Activity.baseUrl + "/landing" + overlayColor + ".svg";
