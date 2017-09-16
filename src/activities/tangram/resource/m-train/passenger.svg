@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="67.078468mm"
+   height="60.078178mm"
+   viewBox="0 0 237.67961 212.87543"
+   id="svg7627"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="M-passenger.svg">
+  <defs
+     id="defs7629" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="146.32961"
+     inkscape:cy="83.024223"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7632">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-246.87447,-405.92449)">
+    <path
+       style="fill:#999999;stroke-width:1.06666672;fill-opacity:1"
+       d="M 38.978516 0.26953125 C 37.303305 0.058971251 35.931641 1.6280116 35.931641 3.3164062 L 35.931641 13.443359 C 35.931641 15.131743 37.301065 16.298352 38.978516 16.490234 L 43.205078 16.974609 L 43.205078 175.48828 L 28.853516 175.46484 C 28.130655 173.04086 25.963224 171.22171 23.285156 171.07422 L 6.8515625 170.16797 C 3.4373545 169.97994 0.53764137 172.57796 0.34960938 175.99219 L 0.009765625 182.1543 C -0.17827704 185.56848 2.4197764 188.47017 5.8339844 188.6582 L 22.267578 189.5625 C 24.968658 189.71125 27.341369 188.11314 28.310547 185.75 L 57.970703 185.80078 C 57.697153 187.582 57.54594 189.40381 57.544922 191.26172 C 57.534042 211.14641 73.644582 227.27448 93.529297 227.28516 C 113.414 227.29604 129.54185 211.18547 129.55273 191.30078 C 129.55381 189.47206 129.40561 187.67877 129.14258 185.92383 L 150.53906 185.96094 C 150.27628 187.70776 150.12795 189.49244 150.12695 191.3125 C 150.11618 211.19719 166.22859 227.32527 186.11328 227.33594 C 205.998 227.34682 222.12595 211.23626 222.13672 191.35156 C 222.13777 189.5597 221.99321 187.80327 221.74023 186.08203 L 250.32227 186.13086 C 254.58009 186.13812 254.59966 175.85122 250.3418 175.84375 L 242.67969 175.83008 L 242.67969 39.527344 L 242.58984 39.513672 C 243.66023 39.095827 244.36822 37.886388 244.54688 36.609375 L 245.625 28.908203 C 245.85893 27.236096 244.25138 26.069935 242.57617 25.859375 L 38.978516 0.26953125 z "
+       transform="matrix(0.9375,0,0,0.9375,246.87447,405.92449)"
+       id="rect3649-4-0-6" />
+  </g>
+</svg>

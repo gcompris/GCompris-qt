@@ -112,7 +112,6 @@ Image {
 
     GridView {
         id: menuGrid
-        layer.enabled: true
         anchors {
             fill: parent
             bottomMargin: bar.height
@@ -237,7 +236,8 @@ Image {
                 GradientStop { position: 0.96; color: "#00FFFFFF" }
             }
         }
-
+        
+        layer.enabled: ApplicationInfo.useOpenGL
         layer.effect: OpacityMask {
             id: activitiesOpacity
             source: menuGrid

@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtGraphicalEffects 1.0
 import "magic-hat.js" as Activity
 
 
@@ -28,15 +27,14 @@ Item {
     id: mainItem
     property bool isClickable: false
     property bool displayBounds: true
-    property string wantedColor
     property bool selected: false
-    property string disabledColor: "grey"
     property string backgroundColor
     property Item initialParent
     property Item theHat
     property Item newTarget
     property int barGroupIndex
     property int barIndex
+    property string wantedColor: "1"
     state: "Init"
 
     width: 34
@@ -64,20 +62,14 @@ Item {
 
     Image {
         id: starImg
-        source: Activity.url + "star-clear.svg"
+        source: mainItem.selected ? 
+                    Activity.url + "star-" + wantedColor + ".svg" : Activity.url + "star-0.svg"
         sourceSize.width: contour.width - 4
         sourceSize.height: contour.height - 4
         anchors.centerIn: contour
         fillMode: Image.PreserveAspectFit
         opacity: 1
-        visible: false
-    }
-
-    ColorOverlay {
-        anchors.fill: starImg
-        source: starImg
-        color: mainItem.selected ?
-                   mainItem.wantedColor : mainItem.disabledColor
+        visible: true
     }
 
     states: [

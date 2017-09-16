@@ -22,6 +22,7 @@
 
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
+import GCompris 1.0
 
 import "../../core"
 import "crane.js" as Activity
@@ -151,11 +152,10 @@ ActivityBase {
             rows: items.rows
             z: 1
             anchors.fill: board
-            layer.enabled: true
+            layer.enabled: ApplicationInfo.useOpenGL
             layer.effect: OpacityMask {
                 maskSource: board
-            }
-            
+            }  
             Repeater {
                 id: gridRepeater
 
@@ -305,10 +305,10 @@ ActivityBase {
             z: 1
             opacity: showGrid1.opacity
             anchors.fill: modelBoard
-            layer.enabled: true
+            layer.enabled: ApplicationInfo.useOpenGL
             layer.effect: OpacityMask {
                 maskSource: modelBoard
-            }
+            } 
             Repeater {
                 id: gridRepeater2
                 model: gridRepeater.model

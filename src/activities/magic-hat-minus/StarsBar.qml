@@ -31,7 +31,7 @@ Item {
     property bool authorizeClick: false
     property int starsSize
     property string backgroundColor
-    property string starsColor: "yellow"
+    property string starsColor: "1"
     property Item theHat
     property alias repeaterStars: repeaterStars
 

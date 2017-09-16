@@ -45,8 +45,8 @@ ActivityBase {
         signal start
         signal stop
 
-        property var starColors : ["yellow", "red", "blue"]
-
+        property var starColors : ["1", "2", "3"]
+        
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)

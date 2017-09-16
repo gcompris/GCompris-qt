@@ -5,6 +5,7 @@
  * Authors:
  *   Christof Petig and Ingo Konrad (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (add mode without OpenGL)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -29,7 +30,7 @@ Item {
     id: hexagon
     property GCAudio audioEffects
     property ParticleSystemStar particles
-    property alias color: colorOverlay.color
+    property alias color: softCanvas.color
     property bool hasStrawberry: false
     property double ix
     property double iy
@@ -65,12 +66,23 @@ Item {
       source: Activity.url + "hexagon.svg"
       visible: false
     }
+    
+    Rectangle {
+        id:softCanvas
+        width: parent.width * 0.8
+        height: width
+        radius: width * 0.5
+        anchors.centerIn: parent
+        opacity: strawberry.opacity == 0 ? 0.65 : 0
+        visible: ApplicationInfo.useOpenGL ? false : true
+    }
 
     ColorOverlay {
         id: colorOverlay
         anchors.fill: canvas
         source: canvas
         onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
+        color: softCanvas.color
         opacity: 0.65
         Behavior on opacity { PropertyAnimation { duration: 500 } }
     }

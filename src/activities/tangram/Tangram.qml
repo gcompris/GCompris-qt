@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtGraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -129,27 +128,13 @@ ActivityBase {
                     id: tansModel
                     x: background.playX + background.playWidth * modelData.x - width / 2
                     y: background.playY + background.playHeight * modelData.y - height / 2
-                    source: Activity.url + modelData.img
+                    source: Activity.url + "m-" + modelData.img
                     sourceSize.width: modelData.width * background.playWidth
                     sourceSize.height: modelData.height * background.playWidth
                     z: index
-                    visible: false
-                }
-                Rectangle {
-                    id: mask
-                    anchors.fill: tansModel
-                    color: items.currentTans.colorMask
-                    visible: false
-                }
-                OpacityMask {
-                    anchors.fill: tansModel
-                    source: mask
-                    maskSource: tansModel
                     rotation: modelData.flipping ? 360 - modelData.rotation : modelData.rotation
-                    transform: Scale {
-                        origin.x: modelData.width * background.playWidth / 2
-                        xScale: modelData.flipping ? -1 : 1
-                    }
+                    mirror: modelData.flipping ? true : false
+                    visible: true
                 }
             }
         }
@@ -204,8 +189,6 @@ ActivityBase {
                     source: Activity.url + modelData.img
                     sourceSize.width: modelData.width * background.playWidth
                     sourceSize.height: modelData.height * background.playWidth
-                    // without this, the colorOverlay is not well displayed when flipping image (https://bugreports.qt.io/browse/QTBUG-33482)
-                    layer.enabled: true
                 }
                 // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
@@ -295,16 +278,6 @@ ActivityBase {
                         anchors.fill: parent
                         onClicked: tansItem.flipMe()
                     }
-                }
-
-                Colorize {
-                    id: color
-                    anchors.fill: tans
-                    source: tans
-                    hue: 0.6
-                    lightness: -0.2
-                    saturation: 0.5
-                    opacity: tansItem.selected ? 1 : 0
                 }
 
                 Behavior on x {

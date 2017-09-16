@@ -32,7 +32,7 @@ Item {
     property bool isCorrectAnswer: false
 
     property color normalStateColor: "#fff"
-    property color correctStateColor: "#ffa"
+    property color correctStateColor: "#09f"
     property color wrongStateColor: "#f66"
     property bool blockClicks: false
 

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="66.246666mm"
+   height="39.839043mm"
+   viewBox="0 0 234.73228 141.16196"
+   id="svg6890"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="M-wood.svg">
+  <defs
+     id="defs6892" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="10.160817"
+     inkscape:cy="77.669275"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata6895">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-431.20529,-607.49551)">
+    <path
+       style="fill:#999999;stroke-width:1.06666672;fill-opacity:1"
+       d="M 95.09375 0 C 92.359467 -0.0014826667 90.157317 2.1991191 90.15625 4.9335938 L 90.146484 21.355469 L 56.017578 21.316406 C 54.723893 21.314924 53.680189 23.513572 53.679688 26.248047 L 53.677734 36.951172 C 53.677224 38.934448 54.228915 40.625394 55.023438 41.412109 C 53.90417 42.075206 53.098147 43.889827 53.097656 46.060547 L 53.095703 56.763672 C 53.09485 59.497944 54.364212 61.700105 55.941406 61.701172 L 57.140625 61.703125 C 54.833264 62.118284 53.090792 64.122167 53.089844 66.552734 L 53.083984 77.255859 C 53.082513 79.988836 55.281007 82.190175 58.013672 82.193359 L 47.730469 82.1875 C 38.680421 82.182561 38.670218 98.641151 47.720703 98.646484 L 28.410156 98.636719 C 27.509311 96.156388 25.08048 94.45204 22.300781 94.591797 L 5.8613281 95.421875 C 2.4462668 95.593854 -0.1638995 98.481391 0.0078125 101.89648 L 0.31835938 108.06055 C 0.49033804 111.4756 3.3779074 114.08576 6.7929688 113.91406 L 23.232422 113.08594 C 25.836365 112.95481 27.968006 111.24264 28.759766 108.92383 L 65.570312 108.94336 C 65.288806 110.75417 65.139706 112.60849 65.138672 114.49805 C 65.127835 134.38276 81.238332 150.5106 101.12305 150.52148 C 121.00775 150.53232 137.1356 134.42182 137.14648 114.53711 C 137.14751 112.64755 137.00023 110.79354 136.7207 108.98242 L 158.15234 108.99414 C 157.87084 110.80495 157.72174 112.65927 157.7207 114.54883 C 157.70987 134.43354 173.82038 150.56139 193.70508 150.57227 C 213.58979 150.58309 229.7197 134.47257 229.73047 114.58789 C 229.7315 112.69833 229.58421 110.84432 229.30469 109.0332 L 238.23047 109.03711 C 242.34099 109.03936 242.34892 98.772042 238.24609 98.75 L 243.58984 98.753906 C 252.63988 98.758845 252.64814 82.300255 243.59766 82.294922 L 209.65039 82.275391 L 235.36914 82.289062 C 238.10342 82.290534 240.30557 80.091694 240.30664 77.357422 L 240.3125 66.654297 C 240.31398 63.920025 238.11339 61.717864 235.37891 61.716797 L 204.50781 61.699219 L 204.52734 40.515625 C 204.52886 38.88947 202.32822 37.578765 199.59375 37.578125 L 186.83398 37.574219 C 184.09971 37.573333 181.8956 38.881519 181.89453 40.507812 L 181.875 61.6875 L 158.85547 61.673828 C 160.13073 61.184428 161.08151 59.227721 161.08203 56.865234 L 161.08594 46.162109 C 161.08679 43.427827 159.81745 41.225676 158.24023 41.224609 L 141.19727 41.208984 C 141.84757 40.335277 142.28093 38.808826 142.28125 37.052734 L 142.2832 26.351562 C 142.28392 23.617291 141.24299 21.413176 139.94922 21.412109 L 112.77734 21.380859 L 112.78711 4.9453125 C 112.78858 2.2110192 110.588 0.0088791667 107.85352 0.0078125 L 95.09375 0 z M 117.06641 82.224609 L 177.83594 82.257812 C 177.83463 82.258457 177.83334 82.259121 177.83203 82.259766 L 117.06641 82.224609 z "
+       transform="matrix(0.9375,0,0,0.9375,431.20529,607.49551)"
+       id="rect6969-16" />
+  </g>
+</svg>
