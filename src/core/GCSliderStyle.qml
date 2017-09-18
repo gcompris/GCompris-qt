@@ -46,7 +46,6 @@ SliderStyle {
             }
         }
         Item {
-            clip: true
             width: styleData.handlePosition
             height: parent.height
             Rectangle {
