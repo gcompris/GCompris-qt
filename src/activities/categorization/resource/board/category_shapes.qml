@@ -114,7 +114,7 @@ QtObject{
                     "bad": ["semicircle.svg","glass.svg","bowl3.svg","halforange.svg","dice.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the objects matching a PARELLELOGRAM to right and others to the left"),
+                    "instructions": qsTr("Place the objects matching a PARALLELOGRAM to right and others to the left"),
                     "image": imagesPrefix + "parallelogram.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
