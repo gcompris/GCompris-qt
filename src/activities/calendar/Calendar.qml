@@ -108,7 +108,7 @@ ActivityBase {
                     height: Math.round(TextSingleton.implicitHeight * 2.73)
                     color: "lightBlue"
                     Rectangle {
-                        color: Qt.rgba(1,1,1,0.6)
+                        color: Qt.rgba(1, 1, 1, 0.6)
                         height: 1
                         width: parent.width
                     }
@@ -127,13 +127,10 @@ ActivityBase {
                         source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
                         onClicked: control.showPreviousMonth()
                     }
-                    Label {
+                    GCText {
                         id: dateText
                         text: styleData.title
-                        elide: Text.ElideRight
                         horizontalAlignment: Text.AlignHCenter
-                        font.pixelSize: TextSingleton.implicitHeight * 1.25
-                        font.family: ApplicationSettings.font
                         fontSizeMode: Text.Fit
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: previousMonth.right
@@ -161,17 +158,17 @@ ActivityBase {
                     border.color: "#cec4c4"
                     radius: 5
                     property bool addExtraMargin: control.frameVisible && styleData.selected
-                    property color sameMonthDateTextColor: "#373737"
-                    property color selectedDateColor: "#3778d0"
-                    property color selectedDateTextColor: "white"
-                    property color differentMonthDateTextColor: "#bbb"
-                    property color invalidDateColor: "#dddddd"
+                    readonly property color sameMonthDateTextColor: "#373737"
+                    readonly property color selectedDateColor: "#3778d0"
+                    readonly property color selectedDateTextColor: "white"
+                    readonly property color differentMonthDateTextColor: "#bbb"
+                    readonly property color invalidDateColor: "#dddddd"
                     Label {
                         id: dayDelegateText
                         text: styleData.date.getDate()
                         anchors.centerIn: parent
                         horizontalAlignment: Text.AlignRight
-                        font.family: ApplicationSettings.font
+                        font.family: GCSingletonFontLoader.fontLoader.name
                         font.pixelSize: Math.min(parent.height/3, parent.width/3)
                         color: {
                             var theColor = invalidDateColor;
@@ -190,11 +187,10 @@ ActivityBase {
                     implicitHeight: Math.round(TextSingleton.implicitHeight * 2.25)
                     Label {
                         text: control.__locale.dayName(styleData.dayOfWeek, control.dayOfWeekFormat)
-                        font.family: ApplicationSettings.font
+                        font.family: GCSingletonFontLoader.fontLoader.name
                         anchors.centerIn: parent
                     }
                 }
-
             }
 
             onVisibleMonthChanged: {
@@ -214,14 +210,16 @@ ActivityBase {
         // Creates a table consisting of days of weeks.
         Column {
             id: answerChoices
-            anchors.top: calendar.top
+            anchors.top: calendarBox.top
+            anchors.left: questionItem.left
             anchors.right: calendarBox.left
-            spacing: 2
+            spacing: 5
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
             Repeater {
                 model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
                 ChoiceTable {
-                    width: items.horizontalLayout ? calendar.width * 0.33 : calendar.width * 0.50
-                    height: calendar.height / 7.3
+                    width: calendar.width * 0.5
+                    height: calendar.height / 6.5
                     choices.text: modelData
                     anchors.rightMargin: 2
                 }
@@ -235,7 +233,7 @@ ActivityBase {
             radius: 10
             opacity: 0.85
             z: 10
-            anchors{
+            anchors {
                 horizontalCenter: parent.horizontalCenter
                 bottomMargin: 10
             }
@@ -251,7 +249,6 @@ ActivityBase {
         // Displays the question.
         GCText {
             id: questionItem
-            text: ""
             anchors.fill: questionItemBackground
             anchors.bottom: questionItemBackground.bottom
             fontSizeMode: Text.Fit
@@ -266,16 +263,14 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: items.horizontalLayout ? calendarBox.width * 0.16 : calendarBox.width * 0.28
+            width: 50 * ApplicationInfo.ratio
             height: width
             sourceSize.width: width
             sourceSize.height: height
             y: parent.height * 0.8
             z: 10
             anchors {
-                rightMargin: 14 * ApplicationInfo.ratio
-                left: calendarBox.right
-                leftMargin: calendarBox.width * 0.1
+                horizontalCenter: score.horizontalCenter
                 bottom: calendarBox.bottom
             }
             ParticleSystemStarLoader {
@@ -315,10 +310,9 @@ ActivityBase {
         Score {
             id: score
             anchors.top: questionItemBackground.bottom
-            anchors.topMargin: 5
-            anchors.bottom: calendar.top
-            anchors.right: questionItemBackground.right
-            anchors.rightMargin: 0
+            anchors.bottom: undefined
+            anchors.left: calendarBox.right
+            anchors.right: undefined
         }
     }
 }

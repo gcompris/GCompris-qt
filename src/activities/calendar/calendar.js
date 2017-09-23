@@ -57,7 +57,7 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
@@ -101,14 +101,14 @@ function initQuestion() {
 function checkAnswer() {
     // For levels having days of week table visible.
     if(items.answerChoices.visible) {
-        if(dayOfWeekSelected===correctAnswer["dayOfWeek"]) {
+        if(dayOfWeekSelected === correctAnswer["dayOfWeek"]) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
         }
     }
     // For levels having days of week table not visible.
-    else if(!items.answerChoices.visible) {
-        if(monthSelected===correctAnswer["month"] && daySelected===correctAnswer["day"] && yearSelected===correctAnswer["year"]) {
+    else {
+        if(monthSelected === correctAnswer["month"] && daySelected === correctAnswer["day"] && yearSelected === correctAnswer["year"]) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
         }

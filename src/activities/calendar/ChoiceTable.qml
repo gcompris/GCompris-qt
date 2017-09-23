@@ -35,14 +35,13 @@ Rectangle {
     radius: 10
     anchors.margins: 30
     border.color: "black"
-    border.width: 3
+    border.width: 2
     QtObject {
         property alias animWin: animWin
         property alias crossAnim: crossAnim
     }
 
     function select() {
-        mouseArea.enabled = false
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
             particles.burst(40)
             animWin.start()
@@ -55,7 +54,7 @@ Rectangle {
 
     Image {
         id: cross
-        source: "qrc:/gcompris/src/activities/colors/resource/" + "checkError.svg"
+        source: "qrc:/gcompris/src/activities/colors/resource/checkError.svg"
         sourceSize.width: 128 * ApplicationInfo.ratio
         anchors.centerIn: parent
         width: 0
@@ -103,11 +102,6 @@ Rectangle {
                 easing.type: Easing.InOutQuad
             }
         }
-        onRunningChanged: {
-            if (running == false) {
-                mouseArea.enabled = true
-            }
-        }
     }
 
     ParticleSystemStarLoader {
@@ -118,14 +112,13 @@ Rectangle {
     GCText {
         id: choices
         anchors.fill: parent
+        anchors.leftMargin: choiceBox.border.width
+        anchors.rightMargin: choiceBox.border.width
         fontSizeMode: Text.Fit
-        wrapMode: Text.Wrap
-        font.family: ApplicationSettings.font
         font.bold: true
         color: "#373737"
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: ""
     }
 
     MouseArea {
@@ -137,6 +130,7 @@ Rectangle {
             choiceBox.scale = 1
         }
         hoverEnabled: true
+        enabled: !crossAnim.running && !animWin.running
         onEntered: choiceBox.scale = 1.1
         onExited: choiceBox.scale = 1
     }
@@ -151,11 +145,6 @@ Rectangle {
             from: 0; to: 360
             duration: 600
             easing.type: Easing.InOutQuad
-        }
-        onRunningChanged: {
-            if (running == false) {
-                mouseArea.enabled = true
-            }
         }
     }
 }

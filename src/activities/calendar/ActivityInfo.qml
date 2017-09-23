@@ -27,7 +27,7 @@ ActivityInfo {
     description: qsTr("Read the task and select the correct date on calendar")
     //intro: "Select the asked date on the calendar"
     goal: qsTr("Learn to use a calendar efficiently")
-    prerequisite: qsTr("Concept of week, months and year")
+    prerequisite: qsTr("Concept of week, month and year")
     manual: qsTr("Review the instructions and select the correct date on calendar.")
     credit: ""
     section: "discovery"
