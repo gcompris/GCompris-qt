@@ -3,7 +3,7 @@
  * Copyright (C) 2017 RUDRA NIL BASU <rudra.nil.basu.1996@gmail.com>
  *
  * Authors:
- *   RUDRA NIL BASU <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ *   RUDRA NIL BASU <rudra.nil.basu.1996@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

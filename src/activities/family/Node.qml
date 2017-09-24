@@ -1,10 +1,11 @@
 /* GCompris - Node.qml
  *
- * Copyright (C) RAJDEEP KAUR <rajdeep.kaur@kde.org> (Qt Quick port)
+ * Copyright (C) 2016 Rajdeep Kaur <rajdeep.kaur@kde.org>
  *
  * Authors:
- *   Holger Kaelberer <holger.k@elberer.de>
- *   RAJDEEP KAUR <rajdeep.kaur@kde.org> (Qt Quick port)
+ *
+ *   Rajdeep Kaur <rajdeep.kaur@kde.org>
+ *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -56,6 +57,8 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             width: parent.width * 0.6
             height: parent.height * 0.6
+            sourceSize.width: parent.width
+            sourceSize.height: parent.height
 
             SequentialAnimation {
                 id: activeAnimation

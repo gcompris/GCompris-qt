@@ -1,10 +1,11 @@
 /* GCompris - family.qml
  *
- * Copyright (C) 2016 RAJDEEP KAUR <rajdeep.kaur@kde.org>
+ * Copyright (C) 2016 Rajdeep Kaur <rajdeep.kaur@kde.org>
  *
  * Authors:
  *
- *   RAJDEEP KAUR <rajdeep.kaur@kde.org>
+ *   Rajdeep Kaur <rajdeep.kaur@kde.org>
+ *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -91,6 +92,7 @@ ActivityBase {
             property string mode: activity.mode
             property alias questionTopic: question.questionTopic
             property alias selectedPairs: selectedPairs
+            property alias loadDatasetDelay: loadDatasetDelay
             property point questionMarkPosition: questionMarkPosition
             property point meLabelPosition: meLabelPosition
         }
@@ -105,18 +107,19 @@ ActivityBase {
         // handling pair matching for family_find_relative
         Item {
             id: selectedPairs
-            property int numberOfNodesSelected: 0
-            property var firstNodePointer
-            property var secondNodePointer
+            property var firstNodePointer: undefined
+            property var secondNodePointer: undefined
 
             function reset() {
-                numberOfNodesSelected = 0
+                firstNodePointer = undefined
+                secondNodePointer = undefined
             }
 
             function deactivatePairs() {
                 if (firstNodePointer && secondNodePointer) {
                     firstNodePointer.changeState("deactive")
                     secondNodePointer.changeState("deactive")
+                    reset()
                 }
             }
 
@@ -129,10 +132,10 @@ ActivityBase {
             }
 
             function selectNode(node_) {
-                if (numberOfNodesSelected >= 2)
+                if (firstNodePointer && secondNodePointer)
                     return
 
-                if(numberOfNodesSelected == 0) {
+                if(firstNodePointer == undefined) {
                     firstNodePointer = node_
                     firstNodePointer.changeState("activeTo")
                 } else {
@@ -140,7 +143,6 @@ ActivityBase {
 
                     if (firstNodePointer == secondNodePointer) {
                         deactivatePairs()
-                        reset()
                         return
                     }
 
@@ -152,11 +154,8 @@ ActivityBase {
                     } else {
                         bonus.bad("lion")
                         deactivatePairs()
-                        reset()
-                        return
                     }
                 }
-                numberOfNodesSelected ++;
             }
         }
 
@@ -177,7 +176,7 @@ ActivityBase {
                     id: treeItem
                     Repeater {
                         id: nodeRepeater
-                        model: ListModel{}
+                        model: ListModel {}
                         delegate:
                             Node {
                             id: currentPointer
@@ -226,8 +225,8 @@ ActivityBase {
                         x: items.meLabelPosition.x * treeArea.width
                         y: items.meLabelPosition.y * treeArea.height
 
-                        width: treeArea.width/12
-                        height: treeArea.height/14
+                        width: treeArea.width / 12
+                        height: treeArea.height / 14
 
                         radius: 5
                         border.color: "black"
@@ -283,7 +282,7 @@ ActivityBase {
 
                     Repeater {
                         id: ringRepeator
-                        model: ListModel{}
+                        model: ListModel {}
                         delegate: Image {
                             id: ring
                             source: Activity.url + "rings.svg"

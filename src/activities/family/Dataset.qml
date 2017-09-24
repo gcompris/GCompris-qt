@@ -1,10 +1,11 @@
 /* GCompris - Dataset.qml
  *
- * Copyright (C) RUDRA NIL BASU <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ * Copyright (C) 2017 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  * Authors:
- *   Holger Kaelberer <holger.k@elberer.de>
- *   RUDRA NIL BASU <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ *
+ *   Rajdeep Kaur <rajdeep.kaur@kde.org>
+ *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -25,14 +26,15 @@ QtObject {
     property real nodeWidth: background.nodeWidthRatio
     property real nodeHeight: background.nodeHeightRatio
 
+    property int numberOfGenerations: 3
     /*
      * Vertically, the screen is divided into three parts:
      * gen1: stands for Generation 1
      * gen2: stands for Generation 2
      * gen3: stands for Generation 3
      */
-    readonly property real gen1: 0.10
-    readonly property real gen2: 0.40
+    readonly property real gen1: numberOfGenerations == 3 ? 0.10 : 0.20
+    readonly property real gen2: numberOfGenerations == 3 ? 0.40 : 0.60
     readonly property real gen3: 0.70
 
     /*
@@ -63,33 +65,34 @@ QtObject {
     readonly property int pair2: 1
     readonly property int noPair: 0
 
+    /*
+    * Returns the x coordinate of the
+    * right edge of a node
+    */
     function rightXEdge(xPosition) {
-        /*
-         * Returns the x coordinate of the
-         * right edge of a node
-         */
         return xPosition + nodeWidth
     }
 
+    /*
+    * Returns the y coordinate of the
+    * midpoint of a node
+    */
     function nodeMidPointY(yPosition) {
-        /*
-         * Returns the y coordinate of the
-         * midpoint of a node
-         */
         return yPosition + nodeHeight / 2
     }
 
+    /*
+    * Returns the x coordinate of the
+    * midpoint of two nodes
+    */
     function nodeMidPointX(xLeftPosition, xRightPosition) {
-        /*
-         * Returns the x coordinate of the
-         * midpoint of two nodes
-         */
         return ((xLeftPosition + nodeWidth) + xRightPosition) / 2
     }
 
     property var levelElements: [
         // level 1
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [left + nodeWidth, gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
                 [((left + nodeWidth) + right) / 2, gen1 + nodeHeight / 2, ((left + nodeWidth) + right) / 2, gen2]
@@ -112,6 +115,7 @@ QtObject {
         },
         // level 2
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [left + nodeWidth, gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
                 [((left + nodeWidth) + right) / 2, gen1 + nodeHeight / 2, ((left + nodeWidth) + right) / 2, gen2]
@@ -134,6 +138,7 @@ QtObject {
         },
         // level 3
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [rightXEdge(left), nodeMidPointY(gen1), right, nodeMidPointY(gen1)],
                 [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), gen2 - nodeHeight / 4],
@@ -160,6 +165,7 @@ QtObject {
         },
         // level 4
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [rightXEdge(left), nodeMidPointY(gen1), right, nodeMidPointY(gen1)],
                 [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), gen2 - nodeHeight / 4],
@@ -188,6 +194,7 @@ QtObject {
         },
         // level 5
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
                 [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
@@ -220,6 +227,7 @@ QtObject {
         },
         // level 6
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
                 [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
@@ -252,6 +260,7 @@ QtObject {
         },
         // level 7
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
                 [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
@@ -284,6 +293,7 @@ QtObject {
         },
         // level 8
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [leftExt + nodeWidth, gen1 + nodeHeight / 2, rightInt, gen1 + nodeHeight / 2],
                 [((leftExt + nodeWidth) + rightInt) / 2, gen1 + nodeHeight / 2, ((leftExt + nodeWidth) + rightInt) / 2, gen2],
@@ -316,6 +326,7 @@ QtObject {
         },
         // level 9
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [center + nodeWidth / 2, gen1 + nodeHeight, center + nodeWidth / 2, gen2 + nodeHeight / 2],
                 [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
@@ -342,6 +353,7 @@ QtObject {
         },
         // level 10
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [center + nodeWidth / 2, gen1 + nodeHeight, center + nodeWidth / 2, gen2 + nodeHeight / 2],
                 [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
@@ -366,6 +378,7 @@ QtObject {
         },
         // level 11
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [center + nodeWidth / 2, gen1 + nodeHeight, center + nodeWidth / 2, gen2 + nodeHeight / 2],
                 [rightXEdge(left), nodeMidPointY(gen2), right, nodeMidPointY(gen2)],
@@ -390,6 +403,7 @@ QtObject {
         },
         // level 12
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [rightXEdge(left), gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
                 [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), nodeMidPointY(gen2)],
@@ -416,6 +430,7 @@ QtObject {
         },
         // level 13
         {
+            numberOfGenerations: 3,
             edgeList: [
                 [rightXEdge(left), gen1 + nodeHeight / 2, right, gen1 + nodeHeight / 2],
                 [nodeMidPointX(left, right), nodeMidPointY(gen1), nodeMidPointX(left, right), nodeMidPointY(gen2)],
@@ -442,6 +457,7 @@ QtObject {
         },
         // level 14
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
                 [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],
@@ -468,6 +484,7 @@ QtObject {
         },
         // level 15
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
                 [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],
@@ -494,6 +511,7 @@ QtObject {
         },
         // level 16
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
                 [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],
@@ -520,6 +538,7 @@ QtObject {
         },
         // level 17
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [rightXEdge(leftInt), nodeMidPointY(gen1), rightInt, nodeMidPointY(gen1)],
                 [nodeMidPointX(leftInt, rightInt), nodeMidPointY(gen1), nodeMidPointX(leftInt, rightInt), nodeMidPointY(gen2)],
@@ -548,6 +567,7 @@ QtObject {
         },
         // level 18
         {
+            numberOfGenerations: 2,
             edgeList: [
                 [rightXEdge(center), nodeMidPointY(gen1), rightExt, nodeMidPointY(gen1)],
                 [nodeMidPointX(center, rightExt), nodeMidPointY(gen1), nodeMidPointX(center, rightExt), nodeMidPointY(gen2)],

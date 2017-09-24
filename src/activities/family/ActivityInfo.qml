@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 RAJDEEP KAUR <rajdeep.kaur@kde.org>
+ * Copyright (C) 2016 Rajdeep Kaur <rajdeep.kaur@kde.org>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,9 +29,9 @@ ActivityInfo {
   goal: qsTr("To get an idea about relationships in the family")
   prerequisite: qsTr("Reading skills")
   manual: qsTr("To find the relation between two family members.\n" +
-     "For the married couple we have highlighted with the rings that is between two circles for the rest of relations we have only solid lines.\n" +
-  "Red circle will point to you and blue one to your relative. Now you have to think what you should call him.\n")
+     "For the married couple we have highlighted with the rings that is between two circles. For the rest of relations we have only solid lines.\n" +
+  "Red circle will point to you and blue one to your relative. Now you have to find what you should call this person.\n")
   credit: ""
-  section: "fun"
-  createdInVersion: 7000
+  section: "discovery"
+  createdInVersion: 9000
 }
