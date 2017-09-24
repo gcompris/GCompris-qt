@@ -75,7 +75,7 @@ var levels = [
                 "accelSteps": 3,            "alt": 100.0,       "mode": "rotation",
                 "fuel" : -1 },
             {   "planet": qsTr("Titan"),    "gravity": 1.352,   "maxAccel": 0.406,
-                "accelSteps": 3,            "alt": 100.0,       "mode": "simple",
+                "accelSteps": 3,            "alt": 100.0,       "mode": "rotation",
                 "fuel" : -1 },
             {   "planet": qsTr("Moon"),     "gravity":  1.62,   "maxAccel": 0.324,
                 "accelSteps": 4,            "alt": 150.0,       "mode": "rotation",
