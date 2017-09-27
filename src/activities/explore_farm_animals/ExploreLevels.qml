@@ -97,7 +97,7 @@ ActivityBase {
         }
 
         Loader{
-            id : dataset
+            id: dataset
             asynchronous: false
             onStatusChanged: {
                 if (status == Loader.Ready) {

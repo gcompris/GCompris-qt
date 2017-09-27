@@ -69,7 +69,100 @@ Rectangle {
             top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
             horizontalCenter: rectangleDesc.horizontalLayout ? undefined : parent.horizontalCenter
             left: rectangleDesc.horizontalLayout ? parent.left : undefined
-            leftMargin:  rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
+            leftMargin: rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: parent.switchImageWithTextOrAlone()
+        }
+
+        state: "zoomedOut"
+
+        // Relative width and height of the image is changed on zooming-in and zooming-out keeping original binding intact
+        states: [
+            State {
+                name: "zoomedIn"
+                PropertyChanges {
+                    target: animalImage
+                    width: rectangleDesc.width / 1.2
+                    height: rectangleDesc.height / 1.2
+                }
+
+                PropertyChanges {
+                    target: descriptionText
+                    visible: false
+                }
+
+                AnchorChanges {
+                    target: animalImage
+                    anchors.top: heading.bottom
+                }
+            },
+            State {
+                name: "zoomedOut"
+                PropertyChanges {
+                    target: animalImage
+                    width: rectangleDesc.horizontalLayout ? parent.width / 2 : parent.width * 0.9
+                    height: rectangleDesc.horizontalLayout ?
+                                       parent.height * 0.8 :
+                                       (parent.height - heading.height - descriptionText.height) * 0.9
+                }
+
+                PropertyChanges {
+                    target: descriptionText
+                    visible: true
+                }
+
+                AnchorChanges {
+                    target: animalImage
+                    anchors.top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
+                }
+            }
+        ]
+
+        // Transition to animate zoom-in and zoom-out
+        transitions: [
+            Transition {
+                from: "zoomedOut"
+                to: "zoomedIn"
+
+                NumberAnimation {
+                    target: animalImage
+                    properties: "width, height"
+                    easing.type: Easing.OutBack
+                    duration: 500
+                }
+
+                AnchorAnimation { duration: 250 }
+            },
+            Transition {
+                from: "zoomedIn"
+                to: "zoomedOut"
+
+                NumberAnimation {
+                    target: animalImage
+                    properties: "width, height"
+                    duration: 250
+                }
+
+                PropertyAnimation {
+                    target: descriptionText
+                    property: "visible"
+                }
+
+                AnchorAnimation { duration: 250 }
+            }
+        ]
+
+        // Changes the state of the image
+        function switchImageWithTextOrAlone() {
+           if(state === "zoomedOut") {
+              state = "zoomedIn";
+           }
+           else {
+              state = "zoomedOut";
+           }
         }
     }
 
@@ -98,11 +191,13 @@ Rectangle {
     }
 
     function close() {
+        if(animalImage.state === "zoomedIn") {
+            animalImage.state = "zoomedOut";
+        }
         rectangleDesc.visible = false;
         if (Activity.isComplete()) {
             Activity.items.bonus.good("flower");
             Activity.nextLevel();
         }
     }
-
 }
