@@ -392,7 +392,7 @@
   </screenshots>
   <url type="homepage">http://gcompris.net/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
-  <updatecontact>gcompris-devel@kde.org</updatecontact>
+  <update_contact>gcompris-devel@kde.org</update_contact>
   <project_group>KDE</project_group>
   <provides>
     <binary>gcompris-qt</binary>
