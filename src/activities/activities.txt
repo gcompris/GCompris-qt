@@ -80,6 +80,7 @@ mazeinvisible
 mazerelative
 melody
 memory
+memory-case-association
 memory-enumerate
 memory-math-add
 memory-math-add-minus
