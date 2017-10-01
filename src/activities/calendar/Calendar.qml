@@ -197,15 +197,65 @@ ActivityBase {
 
             onVisibleMonthChanged: {
                 Activity.monthSelected = visibleMonth
+                Activity.daySelected = selectedDate.getDate()
             }
             onVisibleYearChanged: {
                 Activity.yearSelected = visibleYear
+                Activity.daySelected = selectedDate.getDate()
             }
             onClicked: {
                 Activity.daySelected = selectedDate.getDate()
             }
-            onReleased: {
+            onSelectedDateChanged: {
                 Activity.daySelected = selectedDate.getDate()
+            }
+
+        }
+
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Space) {
+                Activity.checkAnswer()
+                event.accepted = true
+            }
+            if(event.key === Qt.Key_Enter) {
+                Activity.checkAnswer()
+                event.accepted = true
+            }
+            if(event.key === Qt.Key_Return) {
+                Activity.checkAnswer()
+                event.accepted = true
+            }
+            if(event.key === Qt.Key_Home) {
+                calendar.__selectFirstDayOfMonth();
+                event.accepted = true;
+            }
+            if(event.key === Qt.Key_End) {
+                calendar.__selectLastDayOfMonth();
+                event.accepted = true;
+            }
+            if(event.key === Qt.Key_PageUp) {
+                calendar.__selectPreviousMonth();
+                event.accepted = true;
+            }
+            if(event.key === Qt.Key_PageDown) {
+                calendar.__selectNextMonth();
+                event.accepted = true;
+            }
+            if(event.key === Qt.Key_Left) {
+                calendar.__selectPreviousDay();
+                event.accepted = true;
+            }
+            if(event.key === Qt.Key_Up) {
+                calendar.__selectPreviousWeek();
+                event.accepted = true;
+            }
+            if(event.key === Qt.Key_Down) {
+                calendar.__selectNextWeek();
+                event.accepted = true;
+            }
+            if(event.key === Qt.Key_Right) {
+                calendar.__selectNextDay();
+                event.accepted = true;
             }
         }
 
