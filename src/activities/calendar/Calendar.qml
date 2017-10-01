@@ -125,6 +125,7 @@ ActivityBase {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                        visible: (Activity.minYearVisible <= calendar.visibleYear) ? true : false
                         onClicked: control.showPreviousMonth()
                     }
                     GCText {
@@ -145,6 +146,7 @@ ActivityBase {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.right: parent.right
                         source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                        visible: (Activity.maxYearVisible >= calendar.visibleYear) ? true : false
                         onClicked: control.showNextMonth()
                     }
                 }

@@ -35,6 +35,8 @@ var daySelected = 1
 var monthSelected = 2
 var yearSelected = 2018
 var dayOfWeekSelected
+var maxYearVisible
+var minYearVisible
 var correctAnswer
 
 function start(items_, dataset_) {
@@ -79,6 +81,8 @@ function setCalendarConfigurations() {
     yearSelected = currentLevelConfig["visibleYear"]
     items.calendar.visibleMonth = currentLevelConfig["visibleMonth"]
     monthSelected = currentLevelConfig["visibleMonth"]
+    maxYearVisible = Number(currentLevelConfig["maximumDate"].slice(0,4))
+    minYearVisible = Number(currentLevelConfig["minimumDate"].slice(0,4))
     items.answerChoices.visible = currentLevelConfig["answerChoiceVisible"]
     items.okButton.visible = currentLevelConfig["okButtonVisible"]
     currentDataSet = dataset[currentLevel][1]
