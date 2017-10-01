@@ -45,7 +45,7 @@
   <summary xml:lang="et">Rohkete tegevustega hariv mäng lastele vanuses 2-10</summary>
   <summary xml:lang="fi">Useampitoimintoinen opettavainen peli 2–10-vuotiaille lapsille</summary>
   <summary xml:lang="fr">Jeu éducatif multi-activités pour les enfants de 2 à 10 ans</summary>
-  <summary xml:lang="gl">Xogo educativo con varias actividades para nenos de entre 2 e 10 anos.</summary>
+  <summary xml:lang="gl">Xogo educativo con varias actividades para nenos de entre 2 e 10 anos</summary>
   <summary xml:lang="hi">२ से १० वर्ष के बच्चों के लिओ विभिन्न क्रियाओं वाला शेक्षणिक खेल</summary>
   <summary xml:lang="id">Permainan Edukatif Multi Aktivitas untuk anak berusia 2 sampai 10 tahun</summary>
   <summary xml:lang="it">Gioco didattico multi-attività per bambini da 2 a 10 anni</summary>
@@ -378,17 +378,39 @@
     <p xml:lang="zh-TW">目前 GCompris 提供超過 100 個活動，還有更多正在開發中。GCompris 是一套自由軟體，表示您可以根據您自己的需求來改進，並分享給所有的孩子們。</p>
   </description>
   <screenshots>
-    <screenshot type="default"><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/canal_lock.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/clockgame.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/color_mix.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/colors.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/enumerate.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/fifteen.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/hexagon.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/scalesboard.png</image></screenshot>
-    <screenshot><image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/traffic.png</image></screenshot>
+    <screenshot type="default">
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/canal_lock.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/clockgame.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/color_mix.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/colors.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/enumerate.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/fifteen.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/hexagon.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
+    </screenshot>
+    <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/traffic.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">http://gcompris.net/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
