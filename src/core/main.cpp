@@ -139,7 +139,7 @@ int main(int argc, char *argv[])
 
     // Load translations
     QTranslator translator;
-    QString locale = loadTranslation(config, translator);
+    loadTranslation(config, translator);
     // Apply translation
     app.installTranslator(&translator);
 

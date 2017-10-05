@@ -21,6 +21,7 @@
 #ifndef GCOMPRIS_CONFIG_H
 #define GCOMPRIS_CONFIG_H
 
+#include <qglobal.h>
 /* Version number of package (string) */
 #define VERSION "@GCOMPRIS_VERSION@"
 /* Version number of package (integer) */

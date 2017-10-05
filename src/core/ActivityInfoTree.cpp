@@ -138,7 +138,9 @@ void ActivityInfoTree::sortByName(bool emitChanged)
 void ActivityInfoTree::filterByTag(const QString &tag, bool emitChanged)
 {
     m_menuTree.clear();
-    for(const auto &activity: m_menuTreeFull) {
+    // https://www.kdab.com/goodbye-q_foreach/, for loops on QList may cause detach
+    const auto constMenuTreeFull = m_menuTreeFull;
+    for(const auto &activity: constMenuTreeFull) {
         if((activity->section().indexOf(tag) != -1 ||
             tag == "all" ||
             (tag == "favorite" && activity->favorite())) &&
@@ -189,7 +191,8 @@ void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion,
                                                    bool emitChanged)
 {
     m_menuTree.clear();
-    for(const auto &activity: m_menuTreeFull) {
+    const auto constMenuTreeFull = m_menuTreeFull;
+    for(const auto &activity: constMenuTreeFull) {
         if(firstVersion < activity->createdInVersion() && activity->createdInVersion() <= lastVersion) {
             m_menuTree.push_back(activity);
         }
@@ -223,7 +226,8 @@ void ActivityInfoTree::exportAsSQL()
     cout << "DELETE FROM activities" << endl;
 
     int i(0);
-    for(const auto &activity: m_menuTree) {
+    const auto constMenuTree = m_menuTree;
+    for(const auto &activity: constMenuTree) {
         cout << "INSERT INTO activities VALUES(" <<
                 i++ << ", " <<
                 "'" << activity->name() << "', " <<
@@ -308,10 +312,11 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     m_menuTree.clear();
     if(!text.trimmed().isEmpty()) {
         // perform search on each word entered in the searchField
-        QStringList wordsList = text.split(' ', QString::SkipEmptyParts);
-        Q_FOREACH(const QString &searchTerm, wordsList) {
+        const QStringList wordsList = text.split(' ', QString::SkipEmptyParts);
+        for(const QString &searchTerm: wordsList) {
             const QString trimmedText = searchTerm.trimmed();
-            for(const auto &activity: m_menuTreeFull) {
+            const auto constMenuTreeFull = m_menuTreeFull;
+            for(const auto &activity: constMenuTreeFull) {
                 if(activity->title().contains(trimmedText, Qt::CaseInsensitive) ||
                     activity->name().contains(trimmedText, Qt::CaseInsensitive) ||
                     activity->description().contains(trimmedText, Qt::CaseInsensitive)) {
@@ -335,7 +340,8 @@ void ActivityInfoTree::filterBySearch(const QString& text)
 
 QVariantList ActivityInfoTree::allCharacters() {
     QSet<QChar> keyboardChars;
-    for(auto &tree: m_menuTreeFull) {
+    const auto constMenuTreeFull = m_menuTreeFull;
+    for(auto &tree: constMenuTreeFull) {
         const QString &title = tree->title();
         Q_FOREACH(const QChar &letter, title) {
             if(!letter.isSpace() && !letter.isPunct()) {

@@ -45,8 +45,6 @@ class ApplicationInfo : public QObject
 {
 	Q_OBJECT
 
-    Q_ENUMS(Platform)
-
     /**
      * Width of the application viewport.
      */
@@ -163,6 +161,8 @@ public:
         Blackberry, /**< Blackberry (not supported) */
         SailfishOS  /**< SailfishOS */
     };
+
+    Q_ENUM(Platform)
 
     /**
      * Registers singleton in the QML engine.

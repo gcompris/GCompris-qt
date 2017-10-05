@@ -371,7 +371,7 @@ public:
     QString codeKey() const { return m_codeKey; }
     void setCodeKey(const QString &newCodeKey) {
         m_codeKey = newCodeKey;
-        emit notifyCodeKeyChanged();
+        emit codeKeyChanged();
     }
 
     /**
