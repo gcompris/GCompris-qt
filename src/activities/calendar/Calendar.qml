@@ -211,7 +211,7 @@ ActivityBase {
             }
 
         }
-
+        Keys.enabled: !answerChoices.visible
         Keys.onPressed: {
             if(event.key === Qt.Key_Space) {
                 Activity.checkAnswer()
@@ -260,22 +260,64 @@ ActivityBase {
         }
 
         // Creates a table consisting of days of weeks.
-        Column {
+        GridView {
             id: answerChoices
+            model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
             anchors.top: calendarBox.top
             anchors.left: questionItem.left
             anchors.right: calendarBox.left
-            spacing: 5
+            width: calendar.width * 0.5
+            height: (calendar.height / 6.5) * 7
+            cellWidth: calendar.width * 0.5
+            cellHeight: calendar.height / 6.5
+            keyNavigationWraps: true
             anchors.rightMargin: 10 * ApplicationInfo.ratio
-            Repeater {
-                model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
-                ChoiceTable {
-                    width: calendar.width * 0.5
-                    height: calendar.height / 6.5
-                    choices.text: modelData
-                    anchors.rightMargin: 2
+            delegate: ChoiceTable {
+                width: calendar.width * 0.5
+                height: calendar.height / 6.5
+                choices.text: modelData
+                anchors.rightMargin: 2
+            }
+
+            property bool keyNavigation: false
+
+            Keys.onDownPressed: {
+                keyNavigation = true
+                answerChoices.incrementCurrentIndex()
+            }
+            Keys.onUpPressed: {
+                keyNavigation = true
+                answerChoices.decrementCurrentIndex()
+            }
+            Keys.onSpacePressed: {
+                keyNavigation = true
+                answerChoices.currentItem.children[1].pressed()
+            }
+            Keys.onEnterPressed: {
+                keyNavigation = true
+                answerChoices.currentItem.children[1].pressed()
+            }
+            Keys.onReturnPressed: {
+                keyNavigation = true
+                answerChoices.currentItem.children[1].pressed()
+            }
+
+            highlight:  Rectangle {
+                width: answerChoices.width
+                height: answerChoices.buttonHeight
+                color: "lightsteelblue"
+                radius: 5
+                visible: answerChoices.keyNavigation
+                y: answerChoices.currentItem.y
+                Behavior on y {
+                    SpringAnimation {
+                        spring: 3
+                        damping: 0.2
+                    }
                 }
             }
+            highlightFollowsCurrentItem: false
+            focus: true
         }
 
         Rectangle {

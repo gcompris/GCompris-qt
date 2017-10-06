@@ -39,6 +39,7 @@ Rectangle {
     QtObject {
         property alias animWin: animWin
         property alias crossAnim: crossAnim
+        property alias choiceBox: choiceBox
     }
 
     function select() {
@@ -51,6 +52,9 @@ Rectangle {
             crossAnim.start()
         }
     }
+
+
+
 
     Image {
         id: cross
