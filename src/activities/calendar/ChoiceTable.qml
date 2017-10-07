@@ -53,9 +53,6 @@ Rectangle {
         }
     }
 
-
-
-
     Image {
         id: cross
         source: "qrc:/gcompris/src/activities/colors/resource/checkError.svg"

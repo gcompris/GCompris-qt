@@ -101,7 +101,7 @@ ActivityBase {
             visibleMonth: 2
             visibleYear: 2018
             frameVisible: true
-            focus: true
+            focus: !answerChoices.visible
             __locale: Qt.locale(ApplicationSettings.locale)
             style: CalendarStyle {
                 navigationBar: Rectangle {
@@ -280,7 +280,7 @@ ActivityBase {
             }
 
             property bool keyNavigation: false
-
+            Keys.enabled: answerChoices.visible
             Keys.onDownPressed: {
                 keyNavigation = true
                 answerChoices.incrementCurrentIndex()
@@ -291,20 +291,20 @@ ActivityBase {
             }
             Keys.onSpacePressed: {
                 keyNavigation = true
-                answerChoices.currentItem.children[1].pressed()
+                answerChoices.currentItem.select()
             }
             Keys.onEnterPressed: {
                 keyNavigation = true
-                answerChoices.currentItem.children[1].pressed()
+                answerChoices.currentItem.select()
             }
             Keys.onReturnPressed: {
                 keyNavigation = true
-                answerChoices.currentItem.children[1].pressed()
+                answerChoices.currentItem.select()
             }
 
             highlight:  Rectangle {
                 width: answerChoices.width
-                height: answerChoices.buttonHeight
+                height: answerChoices.height
                 color: "lightsteelblue"
                 radius: 5
                 visible: answerChoices.keyNavigation
@@ -317,7 +317,7 @@ ActivityBase {
                 }
             }
             highlightFollowsCurrentItem: false
-            focus: true
+            focus: answerChoices.visible
         }
 
         Rectangle {
