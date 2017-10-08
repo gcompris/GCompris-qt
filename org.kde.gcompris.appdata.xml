@@ -379,7 +379,7 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/canal_lock.png</image>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/main_menu.png</image>
     </screenshot>
     <screenshot>
       <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
@@ -394,6 +394,9 @@
       <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/colors.png</image>
     </screenshot>
     <screenshot>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/crane.png</image>
+    </screenshot>
+    <screenshot>
       <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/enumerate.png</image>
     </screenshot>
     <screenshot>
@@ -403,10 +406,10 @@
       <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/hexagon.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</image>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
+      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
     </screenshot>
     <screenshot>
       <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/traffic.png</image>
