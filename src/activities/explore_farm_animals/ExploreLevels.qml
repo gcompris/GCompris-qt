@@ -201,27 +201,6 @@ ActivityBase {
                 spacing: 10 * ApplicationInfo.ratio
 
                 Rectangle {
-                    id: question
-                    width: row.width - rightCol.width - 10 * ApplicationInfo.ratio
-                    height: questionText.height
-                    color: '#CCCCCCCC'
-                    radius: 10
-                    border.width: 3
-                    border.color: "black"
-                    visible: items.score.currentSubLevel == 3 || (items.score.currentSubLevel == 2 && !items.hasAudioQuestions)
-                    GCText {
-                        id: questionText
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        anchors.centerIn: parent.Center
-                        color: "black"
-                        width: parent.width
-                        wrapMode: Text.Wrap
-                        text: items.currentQuestion ? items.currentQuestion.text2 : ""
-                    }
-                }
-
-                Rectangle {
                     id: instruction
                     width: row.width - rightCol.width - 10 * ApplicationInfo.ratio
                     height: instructionText.height
@@ -244,6 +223,27 @@ ActivityBase {
                         anchors.fill: parent
                         onClicked: instruction.visible = false
                         enabled: instruction.visible
+                    }
+                }
+
+                Rectangle {
+                    id: question
+                    width: row.width - rightCol.width - 10 * ApplicationInfo.ratio
+                    height: questionText.height
+                    color: '#CCCCCCCC'
+                    radius: 10
+                    border.width: 3
+                    border.color: "black"
+                    visible: items.score.currentSubLevel == 3 || (items.score.currentSubLevel == 2 && !items.hasAudioQuestions)
+                    GCText {
+                        id: questionText
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        anchors.centerIn: parent.Center
+                        color: "black"
+                        width: parent.width
+                        wrapMode: Text.Wrap
+                        text: items.currentQuestion ? items.currentQuestion.text2 : ""
                     }
                 }
             }
