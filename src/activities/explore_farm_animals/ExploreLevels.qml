@@ -111,7 +111,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Keys.onEscapePressed: {
-            descriptionPanel.visible ? descriptionPanel.visible = false : home()
+            descriptionPanel.visible ? descriptionPanel.closeDescriptionPanel() : home()
         }
 
         Repeater {
@@ -140,33 +140,14 @@ ActivityBase {
             descriptionPanel.description = animal.description
             descriptionPanel.imageSource = animal.imageSource
             descriptionPanel.visible = true
+            descriptionPanel.showDescriptionPanel()
         }
 
         AnimalDescriptionLevels {
             id: descriptionPanel
             width: parent.width
             height: parent.height
-            visible: false
             z: instruction.z + 1
-            onVisibleChanged: {
-                if(visible) {
-                    animDescription.start()
-                }
-                else {
-                    // stop if audio was playing
-                    items.audioVoices.stop()
-                }
-            }
-
-            NumberAnimation {
-                id: animDescription
-                target: descriptionPanel
-                property: horizontalLayout ? "x" : "y"
-                from: horizontalLayout ? -width : -height
-                to: 0
-                duration: 1200
-                easing.type: Easing.OutBack
-            }
         }
 
         Column {

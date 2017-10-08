@@ -38,7 +38,7 @@ Rectangle {
     height: parent.height
     MouseArea {
         anchors.fill: parent
-        onPressed: parent.close()
+        onPressed: parent.closeDescriptionPanel()
     }
 
     property alias title: heading.text
@@ -46,6 +46,30 @@ Rectangle {
     property alias imageSource: animalImage.source
 
     property bool horizontalLayout: background.width > background.height
+
+    signal showDescriptionPanel
+    signal closeDescriptionPanel
+
+    onShowDescriptionPanel: {
+        descriptionPanelCloseAnimation.stop()
+        descriptionPanelAppearAnimation.start()
+    }
+
+    onCloseDescriptionPanel: {
+        descriptionPanelAppearAnimation.stop()
+        close()
+    }
+
+    // animation for appearance of the description panel
+    NumberAnimation {
+        id: descriptionPanelAppearAnimation
+        target: descriptionPanel
+        property: horizontalLayout ? "x" : "y"
+        from: horizontalLayout ? -width : -height
+        to: 0
+        duration: 1200
+        easing.type: Easing.OutBack
+    }
 
     GCText {
         id: heading
@@ -184,20 +208,41 @@ Rectangle {
         wrapMode: Text.WordWrap
     }
 
-    // The cancel button
+    // The close panel button
     GCButtonCancel {
         id: cancelButton
-        onClose: parent.close()
+        onClose: parent.closeDescriptionPanel()
     }
 
     function close() {
         if(animalImage.state === "zoomedIn") {
             animalImage.state = "zoomedOut";
         }
-        rectangleDesc.visible = false;
+        descriptionPanelCloseAnimation.start();
         if (Activity.isComplete()) {
             Activity.items.bonus.good("flower");
             Activity.nextLevel();
         }
     }
+
+    SequentialAnimation {
+        id: descriptionPanelCloseAnimation
+
+        NumberAnimation {
+            id: slideBackDescriptionPanel
+            target: descriptionPanel
+            property: horizontalLayout ? "x" : "y"
+            to: horizontalLayout ? -width : -height
+            duration: 1200
+            easing.type: Easing.InSine
+        }
+
+        PropertyAnimation {
+            id: switchDescriptionPanelInvisible
+            target: descriptionPanel
+            property: "visible"
+            to: false
+        }
+   }
+
 }
