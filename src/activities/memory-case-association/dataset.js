@@ -135,26 +135,26 @@ var memory_cards = [
             { // Level 1
                 columns: 3,
                 rows: 2,
-                images: images.slice(0,6),
-                sounds: sounds.slice(0,6)
+                images: images.slice(0, 6),
+                sounds: sounds.slice(0, 6)
             },
             { // Level 2
                 columns: 4,
                 rows: 2,
-                images: images.slice(6,14),
-                sounds: sounds.slice(6,14)
+                images: images.slice(6, 14),
+                sounds: sounds.slice(6, 14)
             },
             { // Level 3
                 columns: 5,
                 rows: 2,
-                images: images.slice(14,24),
-                sounds: sounds.slice(14,24)
+                images: images.slice(14, 24),
+                sounds: sounds.slice(14, 24)
             },
             { // Level 4
                 columns: 4,
                 rows: 3,
-                images: images.slice(14,26),
-                sounds: sounds.slice(14,26)
+                images: images.slice(14, 26),
+                sounds: sounds.slice(14, 26)
             }
         ]
 
