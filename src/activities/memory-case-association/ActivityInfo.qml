@@ -22,9 +22,9 @@ ActivityInfo {
   difficulty: 2
   icon: "memory-case-association/memory-case-association.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: false
+  demo: true
   //: Activity title
-  title: "CaseAssociation memory game"
+  title: qsTr("CaseAssociation memory game")
   //: Help title
   description: qsTr("Turn the cards over to match the Alphabets with the lower/uppercase of the alphabet matching it.")
   //intro: "Match the alphabet with its upper/lower case alphabet."
@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding the lower/uppercase of an alphabet, and you have to associate all the upper case letters with its lower case and vice versa.")
   credit: ""
   section: "reading"
+  createdInVersion: 9000
 }
