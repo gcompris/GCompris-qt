@@ -66,6 +66,7 @@ ActivityBase {
 
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
+        Keys.onPressed: (answerChoices.visible) ? answerChoices.handleKeys(event) : handleKeys(event);
 
         // Question time delay
         Timer {
@@ -194,7 +195,6 @@ ActivityBase {
                     }
                 }
             }
-
             onVisibleMonthChanged: {
                 Activity.monthSelected = visibleMonth
                 Activity.daySelected = selectedDate.getDate()
@@ -211,8 +211,8 @@ ActivityBase {
             }
 
         }
-        Keys.enabled: !answerChoices.visible
-        Keys.onPressed: {
+
+        function handleKeys(event) {
             if(event.key === Qt.Key_Space) {
                 Activity.checkAnswer()
                 event.accepted = true
@@ -266,6 +266,10 @@ ActivityBase {
             anchors.top: calendarBox.top
             anchors.left: questionItem.left
             anchors.right: calendarBox.left
+            interactive: false
+
+            property bool keyNavigation: false
+
             width: calendar.width * 0.5
             height: (calendar.height / 6.5) * 7
             cellWidth: calendar.width * 0.5
@@ -278,34 +282,38 @@ ActivityBase {
                 choices.text: modelData
                 anchors.rightMargin: 2
             }
-
-            property bool keyNavigation: false
             Keys.enabled: answerChoices.visible
-            Keys.onDownPressed: {
-                keyNavigation = true
-                answerChoices.incrementCurrentIndex()
-            }
-            Keys.onUpPressed: {
-                keyNavigation = true
-                answerChoices.decrementCurrentIndex()
-            }
-            Keys.onSpacePressed: {
-                keyNavigation = true
-                answerChoices.currentItem.select()
-            }
-            Keys.onEnterPressed: {
-                keyNavigation = true
-                answerChoices.currentItem.select()
-            }
-            Keys.onReturnPressed: {
-                keyNavigation = true
-                answerChoices.currentItem.select()
+            function handleKeys(event) {
+                if(event.key === Qt.Key_Down) {
+                    keyNavigation = true
+                    answerChoices.moveCurrentIndexDown()
+                }
+                if(event.key === Qt.Key_Up) {
+                    keyNavigation = true
+                    answerChoices.moveCurrentIndexUp()
+                }
+                if(event.key === Qt.Key_Enter) {
+                    keyNavigation = true
+                    Activity.dayOfWeekSelected = currentIndex
+                    answerChoices.currentItem.select()
+                }
+                if(event.key === Qt.Key_Space) {
+                    keyNavigation = true
+                    Activity.dayOfWeekSelected = currentIndex
+                    answerChoices.currentItem.select()
+                }
+                if(event.key === Qt.Key_Return) {
+                    keyNavigation = true
+                    Activity.dayOfWeekSelected = currentIndex
+                    answerChoices.currentItem.select()
+                }
             }
 
-            highlight:  Rectangle {
-                width: answerChoices.width
-                height: answerChoices.height
-                color: "lightsteelblue"
+            highlight: Rectangle {
+                width: calendar.width * 0.5
+                height: calendar.height / 6.5
+                color: "black"
+                opacity: 0.8
                 radius: 5
                 visible: answerChoices.keyNavigation
                 y: answerChoices.currentItem.y
