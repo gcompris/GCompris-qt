@@ -40,6 +40,8 @@ ActivityBase {
         id: background
         source: url + "background.svg"
         anchors.fill: parent
+        sourceSize.height: parent.height
+        sourceSize.width: parent.width
 
         onWidthChanged: updateOnWidthReset.start()
         onHeightChanged: Activity.resetUpperGate()
@@ -362,7 +364,7 @@ ActivityBase {
                 property int totalWaterLevel: bar.level < 7 ? centralBallastTank.maxWaterLevel : leftBallastTank.maxWaterLevel + rightBallastTank.maxWaterLevel
 
                 width: background.width / 9
-                height: background.height / 9
+                fillMode: Image.PreserveAspectFit
 
                 function reset() {
                     x = submarine.initialPosition.x

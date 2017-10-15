@@ -27,10 +27,11 @@ import GCompris 1.0
 
 Image {
     id: whale
-    source: isHit ? url + "whale_hit.png" : url + "whale.png"
+    source: isHit ? url + "whale_hit.png" : url + "whale.svg"
 
-    width: submarineImage.width
-    height: width * 0.69
+    width: submarineImage.width * 1.2
+    sourceSize.width: width
+    fillMode: Image.PreserveAspectFit
 
     property bool isHit: false
 
@@ -133,8 +134,9 @@ Image {
         linearVelocity: isHit ? Qt.point(0,0) : Qt.point( (whale.movingLeft ? -1 : 1) , 0)
 
         fixtures: Box {
-            width: whale.width
-            height: whale.height
+            width: whale.width * 0.7
+            height: whale.height * 0.8
+            y: whale.height * 0.1
             categories: items.whaleCategory
             collidesWith: whale.visible ? items.submarineCategory : Fixture.None
             density: 1
