@@ -27,7 +27,7 @@ import GCompris 1.0
 
 Image {
     id: whale
-    source: isHit ? url + "whale_hit.png" : url + "whale.svg"
+    source: isHit ? url + "whale-hit.svg" : url + "whale.svg"
 
     width: submarineImage.width * 1.2
     sourceSize.width: width

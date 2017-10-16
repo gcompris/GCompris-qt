@@ -180,7 +180,7 @@ ActivityBase {
 
             z: 1
 
-            property point initialPosition: Qt.point(0,0)
+            property point initialPosition: Qt.point(0,waterLevel.y - submarineImage.height/2)
             property bool isHit: false
             property int terminalVelocityIndex: 75
             property int maxAbsoluteRotationAngle: 15
@@ -211,9 +211,6 @@ ActivityBase {
                 leftBallastTank.resetBallastTanks()
                 rightBallastTank.resetBallastTanks()
                 centralBallastTank.resetBallastTanks()
-
-                x = initialPosition.x
-                y = initialPosition.y
 
                 currentFinalVelocity = 0
                 velocity = Qt.point(0,0)
@@ -295,7 +292,12 @@ ActivityBase {
                         submarineRotation.angle = finalAngle
                     }
                 }
-                var depthToMove = yPosition - submarineImage.y
+                var depthToMove
+                if (submarineImage.y <= submarine.initialPosition.y && yPosition == 0){
+                    depthToMove = 0
+                }else {
+                    depthToMove = yPosition - submarineImage.y
+                }
                 submarine.velocity.y = ballastTankDiveSpeed * (depthToMove / background.width)
             }
 
@@ -358,12 +360,13 @@ ActivityBase {
 
             Image {
                 id: submarineImage
-                source: submarine.isHit ? url + "submarine-broken.png" : url + "submarine.png"
+                source: submarine.isHit ? url + "submarine-broken.svg" : url + "submarine.svg"
 
                 property int currentWaterLevel: bar.level < 7 ? centralBallastTank.waterLevel : leftBallastTank.waterLevel + rightBallastTank.waterLevel
                 property int totalWaterLevel: bar.level < 7 ? centralBallastTank.maxWaterLevel : leftBallastTank.maxWaterLevel + rightBallastTank.maxWaterLevel
 
                 width: background.width / 9
+                sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
 
                 function reset() {
@@ -436,9 +439,9 @@ ActivityBase {
                 fixtures: [
                     Box {
                         id: submarineFixer
-                        y: submarineImage.height * 0.25
+                        y: submarineImage.height * 0.50
                         width: submarineImage.width
-                        height: submarineImage.height * 0.75
+                        height: submarineImage.height * 0.50
                         categories: items.submarineCategory
                         collidesWith: Fixture.All
                         density: 1
@@ -459,9 +462,9 @@ ActivityBase {
                     },
                     Box {
                         id: submarinePeriscopeFixer
-                        x: submarineImage.width * 0.55
-                        width: submarineImage.width / 15
-                        height: submarineImage.height * 0.25
+                        x: submarineImage.width * 0.5
+                        width: submarineImage.width * 0.25
+                        height: submarineImage.height
                         categories: items.submarineCategory
                         collidesWith: Fixture.All
                         density: 1
@@ -684,10 +687,11 @@ ActivityBase {
             id: ship
 
             width: background.width / 9
-            height: width * 0.3
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
 
             visible: (bar.level > 3) ? true : false
-            source: url + "asw_frigate.png"
+            source: url + "boat.svg"
             x: initialXPosition
             z: 1
 
