@@ -117,8 +117,8 @@ ActivityBase {
 
             function deactivatePairs() {
                 if (firstNodePointer && secondNodePointer) {
-                    firstNodePointer.changeState("deactive")
-                    secondNodePointer.changeState("deactive")
+                    firstNodePointer.changeState("deactivate")
+                    secondNodePointer.changeState("deactivate")
                     reset()
                 }
             }
@@ -203,7 +203,7 @@ ActivityBase {
                                      }
                                },
                                State {
-                                      name: "deactive"
+                                      name: "deactivate"
                                       PropertyChanges {
                                           target: currentPointer
                                       }
