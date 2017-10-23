@@ -1,4 +1,4 @@
-/* GCompris - memory-case-association.js
+/* GCompris - dataset.js
  *
  * Copyright (C) 2017 Aman Kumar Gupta <gupta2140@gmail.com>
  *
