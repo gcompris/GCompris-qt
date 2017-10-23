@@ -1,4 +1,4 @@
-/* GCompris - memory-case-association.qml
+/* GCompris - MemoryCaseAssociation.qml
  *
  * Copyright (C) 2017 Aman Kumar Gupta <gupta2140@gmail.com>
  *
