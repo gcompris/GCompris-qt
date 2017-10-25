@@ -35,8 +35,8 @@ var daySelected = 1
 var monthSelected = 2
 var yearSelected = 2018
 var dayOfWeekSelected
-var maxYearVisible
-var minYearVisible
+var minRange //sum of min. visible month and year on calendar for navigation bar next/prev button visibility.
+var maxRange //sum of max. visible month and year on calendar for navigation bar next/prev button visibility.
 var correctAnswer
 
 function start(items_, dataset_) {
@@ -81,8 +81,8 @@ function setCalendarConfigurations() {
     yearSelected = currentLevelConfig["visibleYear"]
     items.calendar.visibleMonth = currentLevelConfig["visibleMonth"]
     monthSelected = currentLevelConfig["visibleMonth"]
-    maxYearVisible = Number(currentLevelConfig["maximumDate"].slice(0,4))
-    minYearVisible = Number(currentLevelConfig["minimumDate"].slice(0,4))
+    minRange = Number(currentLevelConfig["minimumDate"].slice(5,7)) + Number(currentLevelConfig["minimumDate"].slice(0,4)) - 1;
+    maxRange = Number(currentLevelConfig["maximumDate"].slice(5,7)) + Number(currentLevelConfig["maximumDate"].slice(0,4)) - 1;
     items.answerChoices.visible = currentLevelConfig["answerChoiceVisible"]
     items.okButton.visible = currentLevelConfig["okButtonVisible"]
     currentDataSet = dataset[currentLevel][1]

@@ -99,8 +99,6 @@ ActivityBase {
             width: calendarBox.width * 0.85
             height: calendarBox.height * 0.85
             anchors.centerIn: calendarBox
-            visibleMonth: 2
-            visibleYear: 2018
             frameVisible: true
             focus: !answerChoices.visible
             __locale: Qt.locale(ApplicationSettings.locale)
@@ -126,7 +124,7 @@ ActivityBase {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
                         source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-                        visible: (Activity.minYearVisible <= calendar.visibleYear) ? true : false
+                        visible: ((calendar.visibleYear + calendar.visibleMonth) > Activity.minRange) ? true : false
                         onClicked: control.showPreviousMonth()
                     }
                     GCText {
@@ -147,7 +145,7 @@ ActivityBase {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.right: parent.right
                         source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-                        visible: (Activity.maxYearVisible >= calendar.visibleYear) ? true : false
+                        visible: ((calendar.visibleYear + calendar.visibleMonth) < Activity.maxRange) ? true : false
                         onClicked: control.showNextMonth()
                     }
                 }
