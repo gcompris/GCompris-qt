@@ -168,7 +168,7 @@ function get() {
                  ],
                  [ // Level 4 Questions
                   {
-                      "question": qsTr("Select second day before the 15th Of given month"),
+                      "question": qsTr("Select second day before the 15th of given month"),
                       "answer": {"year": 2018, "month": 2, "day": 13}
                   },
                   {
@@ -176,7 +176,7 @@ function get() {
                       "answer": {"year": 2018, "month": 2, "day": 25}
                   },
                   {
-                      "question": qsTr("Select day one Week after 13th of given month"),
+                      "question": qsTr("Select day one week after 13th of given month"),
                       "answer": {"year": 2018, "month": 2, "day": 20}
                   },
                   {
