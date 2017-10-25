@@ -81,6 +81,7 @@ mazerelative
 melody
 memory
 memory-case-association
+memory-case-association-tux
 memory-enumerate
 memory-math-add
 memory-math-add-minus
