@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: qsTr("CaseAssociation memory game")
+  title: qsTr("Case association memory game")
   //: Help title
   description: qsTr("Turn the cards over to match the Alphabets with the lower/uppercase of the alphabet matching it.")
   //intro: "Match the alphabet with its upper/lower case alphabet."
