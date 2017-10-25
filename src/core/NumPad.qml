@@ -26,13 +26,13 @@ Item {
     id: containerPanel
     anchors.fill: parent
 
-    property variant colours: ["#ea7025", "#67c111", "#00bde3", "#bde300","#e3004c"]
-    property variant numbers: [0,1,2,3,4]
+    property var colours: ["#ea7025", "#67c111", "#00bde3", "#bde300","#e3004c"]
+    property var numbers: [0, 1, 2, 3, 4]
     property string answer: ""
     property bool answerFlag: false
     property var leftPanelComponent: leftPanel
     property var rightPanelComponent: rightPanel
-    property var backspaceButtonComponent:backspaceButton
+    property var backspaceButtonComponent: backspaceButton
     property int maxDigit: 2
     property int columnWidth: 80 * ApplicationInfo.ratio
 
@@ -47,14 +47,14 @@ Item {
         opacity: 0.8
 
         Repeater {
-            model:5
+            model: 5
 
             Rectangle{
                 width: parent.width
                 height: parent.height/5
                 color: colours[index]
                 border.color: Qt.darker(color)
-                border.width:2
+                border.width: 2
 
                 GCText {
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -62,11 +62,10 @@ Item {
                     text: numbers[index]
                     fontSize: 28
                     font.bold: true
-
                 }
 
                 MouseArea {
-                    // Create an bigger area than the top rectangle to suit fingers
+                    // Create a bigger area than the top rectangle to suit fingers
                     anchors {
                         left: parent.left
                         top: parent.top
@@ -76,7 +75,7 @@ Item {
                     enabled: ApplicationSettings.isVirtualKeyboard &&
                              containerPanel.opacity > 0
 
-                    onClicked :{
+                    onClicked: {
                         if(answer.length < maxDigit)
                             answer += numbers[index]
                     }
@@ -90,10 +89,8 @@ Item {
                     }
                 }
             }
-
         }
     }
-
 
     Column {
         id: rightPanel
@@ -118,10 +115,9 @@ Item {
                     text: numbers[index] + 5
                     fontSize: 28
                     font.bold: true
-
                 }
                 MouseArea {
-                    // Create an bigger area than the top rectangle to suit fingers
+                    // Create a bigger area than the top rectangle to suit fingers
                     anchors {
                         right: parent.right
                         top: parent.top
@@ -146,13 +142,14 @@ Item {
                 }
             }
         }
+
         Rectangle {
             id: backspaceButton
             width: parent.width
             height: containerPanel.height - rightPanel.height
             color: "white"
             border.color: "black"
-            border.width:2
+            border.width: 2
 
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -183,12 +180,11 @@ Item {
         }
     }
 
-    function resetText()
-    {
+    function resetText() {
         answer = ""
     }
 
-    function updateAnswer(key, isKeyPressed){
+    function updateAnswer(key, isKeyPressed) {
         var keyValue;
 
         switch(key)
@@ -231,7 +227,6 @@ Item {
         {
             if(keyValue < 5 && answer.length < maxDigit)
             {
-
                 answer += keyValue;
                 leftPanel.children[keyValue].color = Qt.lighter(colours[keyValue])
                 leftPanel.children[keyValue].border.width = 5
@@ -253,13 +248,13 @@ Item {
         {
             if(keyValue < 5)
             {
-                leftPanel.children[keyValue].color =  colours[keyValue]
+                leftPanel.children[keyValue].color = colours[keyValue]
                 leftPanel.children[keyValue].border.width = 2
             }
             else if(keyValue < 10)
             {
 
-                rightPanel.children[keyValue - 5].color =  colours[keyValue - 5]
+                rightPanel.children[keyValue - 5].color = colours[keyValue - 5]
                 rightPanel.children[keyValue - 5].border.width = 2
             }
             else if(keyValue === 10)
@@ -268,7 +263,6 @@ Item {
                 backspaceButton.border.width = 2
             }
         }
-
     }
 }
 

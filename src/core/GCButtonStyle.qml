@@ -49,7 +49,7 @@ ButtonStyle {
     property string theme: "dark"
 
     /**
-     * type:variant
+     * type:var
      * existing themes for the button.
      * A theme is composed of:
      *   the colors of the button when selected: selectedColorGradient0 and selectedColorGradient1.
@@ -57,7 +57,7 @@ ButtonStyle {
      *   the button's border color
      *   the text color
     */
-    property variant themes: {
+    property var themes: {
         "dark": {
             backgroundColorGradient0: "#23373737",
             selectedColorGradient0: "#C03ACAFF",
@@ -87,7 +87,7 @@ ButtonStyle {
 
     property string textSize: "regular"
     
-    property variant textSizes: {
+    property var textSizes: {
         "regular": {
             fontSize: 14,
             fontBold: false

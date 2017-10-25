@@ -27,13 +27,13 @@ Rectangle {
     property string theme: "dark"
 
     /**
-     * type:variant
+     * type:var
      * existing themes for the button.
      * A theme is composed of:
      *   the button's border color
      *   the text color
     */
-    property variant themes: {
+    property var themes: {
         "dark": {
             borderColor: "#FF373737",
             fillColor0: "#A8FFFFFF",

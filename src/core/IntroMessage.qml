@@ -61,7 +61,7 @@ Item {
      *
      * It has to be filled by the user when defining an IntroMessage item.
      */
-    property variant intro;
+    property var intro;
 
     Rectangle {
         id: intro_textbg

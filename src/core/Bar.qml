@@ -185,7 +185,7 @@ Item {
      * bid = Button ID. And references the Component object of the button
      * This way we can have any visual object in the bar.
      */
-    property variant buttonList: [
+    property var buttonList: [
         {
             'bid': exit,
             'contentId': content.exit,
