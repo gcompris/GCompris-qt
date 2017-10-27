@@ -184,11 +184,12 @@ ActivityBase {
                     }
                 }
                 dayOfWeekDelegate: Rectangle {
-                    color: gridVisible ? "#F2F2F2" : "transparent"
+                    color: "lightgray"
                     implicitHeight: Math.round(TextSingleton.implicitHeight * 2.25)
                     Label {
                         text: control.__locale.dayName(styleData.dayOfWeek, control.dayOfWeekFormat)
                         font.family: GCSingletonFontLoader.fontLoader.name
+                        color: "#373737"
                         anchors.centerIn: parent
                     }
                 }
