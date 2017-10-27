@@ -74,6 +74,8 @@ function previousLevel() {
 
 // Configure calendar properties for every level.
 function setCalendarConfigurations() {
+    minRange = Number(currentLevelConfig["minimumDate"].slice(5,7)) + Number(currentLevelConfig["minimumDate"].slice(0,4)) - 1;
+    maxRange = Number(currentLevelConfig["maximumDate"].slice(5,7)) + Number(currentLevelConfig["maximumDate"].slice(0,4)) - 1;
     items.calendar.navigationBarVisible = currentLevelConfig["navigationBarVisible"]
     items.calendar.minimumDate = currentLevelConfig["minimumDate"]
     items.calendar.maximumDate = currentLevelConfig["maximumDate"]
@@ -81,8 +83,6 @@ function setCalendarConfigurations() {
     yearSelected = currentLevelConfig["visibleYear"]
     items.calendar.visibleMonth = currentLevelConfig["visibleMonth"]
     monthSelected = currentLevelConfig["visibleMonth"]
-    minRange = Number(currentLevelConfig["minimumDate"].slice(5,7)) + Number(currentLevelConfig["minimumDate"].slice(0,4)) - 1;
-    maxRange = Number(currentLevelConfig["maximumDate"].slice(5,7)) + Number(currentLevelConfig["maximumDate"].slice(0,4)) - 1;
     items.answerChoices.visible = currentLevelConfig["answerChoiceVisible"]
     items.okButton.visible = currentLevelConfig["okButtonVisible"]
     currentDataSet = dataset[currentLevel][1]
