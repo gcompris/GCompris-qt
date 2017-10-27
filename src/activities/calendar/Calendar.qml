@@ -67,7 +67,6 @@ ActivityBase {
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
         Keys.onPressed: (answerChoices.visible) ? answerChoices.handleKeys(event) : handleKeys(event);
-
         // Question time delay
         Timer {
             id: questionDelay
@@ -82,8 +81,8 @@ ActivityBase {
 
         Rectangle {
             id: calendarBox
-            width: parent.width * 0.40
-            height: parent.height * 0.70
+            width: items.horizontalLayout ? parent.width * 0.40 : (answerChoices.visible ? parent.width * 0.50 : parent.width * 0.70)
+            height: items.horizontalLayout ? parent.height * 0.70 : (answerChoices.visible ? parent.width * 0.50: parent.height * 0.40)
             anchors.top: parent.top
             anchors.topMargin: 100
             anchors.bottom: bar.top
@@ -338,7 +337,7 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
                 bottomMargin: 10
             }
-            width: calendarBox.width * 2
+            width: items.horizontalLayout ? calendarBox.width * 2 : parent.width - 20
             height: calendarBox.height * 0.125
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#000" }
@@ -410,10 +409,12 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.top: questionItemBackground.bottom
+            fontSize: items.horizontalLayout ? 16 : (answerChoices.visible ? 12 : 8)
+            anchors.top: calendarBox.top
             anchors.bottom: undefined
             anchors.left: calendarBox.right
             anchors.right: undefined
+            anchors.margins: items.horizontalLayout ? 30 : 10
         }
     }
 }
