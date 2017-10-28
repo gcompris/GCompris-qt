@@ -38,6 +38,7 @@ var dayOfWeekSelected
 var minRange //sum of min. visible month and year on calendar for navigation bar next/prev button visibility.
 var maxRange //sum of max. visible month and year on calendar for navigation bar next/prev button visibility.
 var correctAnswer
+var findMonthOnly
 
 function start(items_, dataset_) {
     items = items_
@@ -85,6 +86,7 @@ function setCalendarConfigurations() {
     monthSelected = currentLevelConfig["visibleMonth"]
     items.answerChoices.visible = currentLevelConfig["answerChoiceVisible"]
     items.okButton.visible = currentLevelConfig["okButtonVisible"]
+    findMonthOnly = currentLevelConfig["findMonthOnly"]
     currentDataSet = dataset[currentLevel][1]
     currentDataSet = Core.shuffle(currentDataSet)
     items.score.numberOfSubLevels = currentDataSet.length
@@ -110,9 +112,22 @@ function checkAnswer() {
             items.okButtonParticles.burst(20)
             items.score.winAnimation.start()
         }
+        else {
+            items.bonus.bad("lion")
+        }
+    }
+    else if(findMonthOnly) {
+        if(correctAnswer["month"].indexOf(monthSelected) >= 0) {
+            items.questionDelay.start()
+            items.okButtonParticles.burst(20)
+            items.score.winAnimation.start()
+        }
+        else {
+            items.bonus.bad("lion")
+        }
     }
     // For levels having days of week table not visible.
-    else {
+    else if(!items.answerChoices.visible) {
         if(monthSelected === correctAnswer["month"] && daySelected === correctAnswer["day"] && yearSelected === correctAnswer["year"]) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
@@ -123,3 +138,4 @@ function checkAnswer() {
         }
     }
 }
+

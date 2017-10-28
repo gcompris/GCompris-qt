@@ -34,6 +34,7 @@ function get() {
                       "visibleYear": 2018,
                       "answerChoiceVisible": false,
                       "okButtonVisible": true,
+                      "findMonthOnly": false,
                   }
                  ],
                  [ // Level 1 Questions
@@ -75,6 +76,7 @@ function get() {
                       "visibleYear": 2018,
                       "answerChoiceVisible": true,
                       "okButtonVisible": false,
+                      "findMonthOnly": false,
                   }
                  ],
                  [ // Level 2  Questions
@@ -119,6 +121,7 @@ function get() {
                       "visibleYear": 2018,
                       "answerChoiceVisible": false,
                       "okButtonVisible": true,
+                      "findMonthOnly": false,
                   }
                  ],
 
@@ -164,6 +167,7 @@ function get() {
                       "visibleYear": 2018,
                       "answerChoiceVisible": false,
                       "okButtonVisible": true,
+                      "findMonthOnly": false,
                   }
                  ],
                  [ // Level 4 Questions
@@ -190,8 +194,45 @@ function get() {
                  ]
                 ],
 
-                [ // level 5
+                [ // Level 5
                  [ // Level 5 Configurations
+                  {
+                      "navigationBarVisible" : true,
+                      "minimumDate": "2018-01-01",
+                      "maximumDate": "2018-12-31",
+                      "visibleMonth": 1,
+                      "visibleYear": 2018,
+                      "answerChoiceVisible": false,
+                      "okButtonVisible": true,
+                      "findMonthOnly": true,
+                  }
+                 ],
+                 [ // Level 5 Questions
+                  {
+                      "question": qsTr("Find the month starting a Thursday and having 28 days."),
+                      "answer": {"month": [1]}
+                  },
+                  {
+                      "question": qsTr("Find a month starting a Monday and having 31 days."),
+                      "answer": {"month": [0, 9]}
+                  },
+                  {
+                      "question": qsTr("Find the month between June and August."),
+                      "answer": {"month": [6]}
+                  },
+                  {
+                      "question": qsTr("Find a month starting a Saturday."),
+                      "answer": {"month": [8, 11]}
+                  },
+                  {
+                      "question": qsTr("Find a month having 30 days."),
+                      "answer": {"month": [3, 5, 8, 10]}
+                  }
+                 ]
+                ],
+
+                [ // level 6
+                 [ // Level 6 Configurations
                   {
                       "navigationBarVisible" : true,
                       "minimumDate": "2017-01-01",
@@ -200,10 +241,11 @@ function get() {
                       "visibleYear": 2018,
                       "answerChoiceVisible": false,
                       "okButtonVisible": true,
+                      "findMonthOnly": false,
                   }
 
                  ],
-                 [ // Level 5 Questions
+                 [ // Level 6 Questions
                   {
                       "question": qsTr("Find the first Monday of January month of year 2019."),
                       "answer": {"year": 2019, "month": 0, "day": 7}
@@ -243,8 +285,8 @@ function get() {
                  ]
                 ],
 
-                [ // Level 6
-                 [ // Level 6 Configurations
+                [ // Level 7
+                 [ // Level 7 Configurations
                   {
                       "navigationBarVisible" : true,
                       "minimumDate": "2017-01-01",
@@ -253,9 +295,10 @@ function get() {
                       "visibleYear": 2018,
                       "answerChoiceVisible": false,
                       "okButtonVisible": true,
+                      "findMonthOnly": false,
                   }
                  ],
-                 [ // Level 6 Questions
+                 [ // Level 7 Questions
                   {
                       "question": qsTr("Columbus Day is celebrated on the second monday of October. Find the date of Columbus Day in 2018."),
                       "answer": {"year": 2018, "month": 9, "day": 8}
@@ -278,5 +321,5 @@ function get() {
                   }
                  ]
                 ]
-    ]
+            ]
 }
