@@ -67,6 +67,7 @@ ActivityBase {
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
         Keys.onPressed: (answerChoices.visible) ? answerChoices.handleKeys(event) : handleKeys(event);
+
         // Question time delay
         Timer {
             id: questionDelay
@@ -415,6 +416,42 @@ ActivityBase {
             anchors.left: calendarBox.right
             anchors.right: undefined
             anchors.margins: items.horizontalLayout ? 30 : 10
+            property alias winAnimation: winAnmations
+            SequentialAnimation {
+                id: winAnmations
+                ParallelAnimation {
+                    PropertyAnimation {
+                        target: score
+                        properties: "scale"
+                        from: 1.0
+                        to: 1.4
+                        duration: 500
+                    }
+                    NumberAnimation {
+                        target: score
+                        property: "rotation"
+                        from: -10; to: 10
+                        duration: 750
+                        easing.type: Easing.InOutQuad
+                    }
+                }
+                ParallelAnimation {
+                    PropertyAnimation {
+                        target: score
+                        properties: "scale"
+                        from: 1.4
+                        to: 1.0
+                        duration: 500
+                    }
+                    NumberAnimation {
+                        target: score
+                        property: "rotation"
+                        from: 10; to: 0
+                        duration: 750
+                        easing.type: Easing.InOutQuad
+                    }
+                }
+            }
         }
     }
 }

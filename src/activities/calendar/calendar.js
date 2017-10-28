@@ -108,6 +108,7 @@ function checkAnswer() {
         if(dayOfWeekSelected === correctAnswer["dayOfWeek"]) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
+            items.score.winAnimation.start()
         }
     }
     // For levels having days of week table not visible.
@@ -115,6 +116,7 @@ function checkAnswer() {
         if(monthSelected === correctAnswer["month"] && daySelected === correctAnswer["day"] && yearSelected === correctAnswer["year"]) {
             items.questionDelay.start()
             items.okButtonParticles.burst(20)
+            items.score.winAnimation.start()
         }
         else {
             items.bonus.bad("lion")
