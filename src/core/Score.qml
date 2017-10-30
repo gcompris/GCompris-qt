@@ -68,6 +68,13 @@ Rectangle {
      */
     property string message
 
+    /**
+     * Emitted when the win animation should be started.
+     *
+     * Triggers scale and rotaion animation.
+     */
+    signal winAnimation
+
     color: "#AAFFFFFF"
     width: subLevelText.width * 2
     height: subLevelText.height * 1.4
@@ -83,6 +90,7 @@ Rectangle {
 
     onCurrentSubLevelChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels
+    onWinAnimation: winAnmations.start()
 
     GCText {
         id: subLevelText
@@ -91,5 +99,41 @@ Rectangle {
         font.bold: true
         color: "#373737"
         text: message
+    }
+
+    SequentialAnimation {
+        id: winAnmations
+        ParallelAnimation {
+            PropertyAnimation {
+                target: score
+                properties: "scale"
+                from: 1.0
+                to: 1.4
+                duration: 500
+            }
+            NumberAnimation {
+                target: score
+                property: "rotation"
+                from: -10; to: 10
+                duration: 750
+                easing.type: Easing.InOutQuad
+            }
+        }
+        ParallelAnimation {
+            PropertyAnimation {
+                target: score
+                properties: "scale"
+                from: 1.4
+                to: 1.0
+                duration: 500
+            }
+            NumberAnimation {
+                target: score
+                property: "rotation"
+                from: 10; to: 0
+                duration: 750
+                easing.type: Easing.InOutQuad
+            }
+        }
     }
 }
