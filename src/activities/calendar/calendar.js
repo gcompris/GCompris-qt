@@ -39,6 +39,7 @@ var minRange //sum of min. visible month and year on calendar for navigation bar
 var maxRange //sum of max. visible month and year on calendar for navigation bar next/prev button visibility.
 var correctAnswer
 var findMonthOnly
+var isCorrectAnswer
 
 function start(items_, dataset_) {
     items = items_
@@ -104,38 +105,36 @@ function initQuestion() {
     }
 }
 
+function updateScore() {
+    if(isCorrectAnswer) {
+        items.questionDelay.start()
+        items.okButtonParticles.burst(20)
+        items.score.winAnimation.start()
+    }
+    else
+        items.bonus.bad("lion")
+    isCorrectAnswer = false
+}
+
 function checkAnswer() {
-    // For levels having days of week table visible.
+    // For levels having questions based on day of week only.
     if(items.answerChoices.visible) {
         if(dayOfWeekSelected === correctAnswer["dayOfWeek"]) {
-            items.questionDelay.start()
-            items.okButtonParticles.burst(20)
-            items.score.winAnimation.start()
-        }
-        else {
-            items.bonus.bad("lion")
+            isCorrectAnswer = true
         }
     }
+    // For levels having question based on month only.
     else if(findMonthOnly) {
         if(correctAnswer["month"].indexOf(monthSelected) >= 0) {
-            items.questionDelay.start()
-            items.okButtonParticles.burst(20)
-            items.score.winAnimation.start()
-        }
-        else {
-            items.bonus.bad("lion")
+            isCorrectAnswer = true
         }
     }
-    // For levels having days of week table not visible.
+    // For levels having questions based on dayOfWeek, month and year.
     else if(!items.answerChoices.visible) {
         if(monthSelected === correctAnswer["month"] && daySelected === correctAnswer["day"] && yearSelected === correctAnswer["year"]) {
-            items.questionDelay.start()
-            items.okButtonParticles.burst(20)
-            items.score.winAnimation.start()
-        }
-        else {
-            items.bonus.bad("lion")
+            isCorrectAnswer = true
         }
     }
+    updateScore()
 }
 
