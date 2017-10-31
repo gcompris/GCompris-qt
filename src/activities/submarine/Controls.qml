@@ -53,44 +53,54 @@ Item {
     property point divingPlanePosition
     property int divingPlaneWidth
     property int divingPlaneHeight
+    
+    property int buttonSize
+    property int buttonPlusY
+    property int buttonMinusY
+    
+    property string fillColor : "#0DA5CB"
 
-    Rectangle {
+    Image {
         id: controlBackground
+        source: url + "board.svg"
         width: background.width
         height: background.height * 0.35
-
-        color: "grey"
-
+        sourceSize.width: width
+        sourceSize.height: height
         y: background.height - height
     }
 
     Item {
         Rectangle {
             id: engine
-
             x: enginePosition.x
             y: enginePosition.y
-
             radius: 10
-
-            color: "black"
-
+            color: "#323232"
+            border.width: 4
+            border.color: "#AEC6DD"
             GCText {
                 id: engineValues
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     verticalCenter: parent.verticalCenter
                 }
-
-                color: "green"
+                color: "#D3E1EB"
             }
         }
         Image {
             id: incSpeed
-            source: url + "up.png"
+            source: url + "up.svg"
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
 
-            x: engine.x - width * 1.5
-            y: engine.y - engine.height * 0.1
+            anchors {
+                right: engine.left
+                leftMargin: width / 2
+            }
+            y: buttonPlusY
 
             MouseArea {
                 anchors.fill: parent
@@ -102,11 +112,18 @@ Item {
 
         Image {
             id: downSpeed
-            source: url + "down.png"
-
-            x: engine.x - width * 1.5
-            y: engine.y + engine.height * 0.9
-
+            source: url + "down.svg"
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
+            
+            anchors {
+                right: engine.left
+                leftMargin: width / 2
+            }
+            y: buttonMinusY
+            
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -125,19 +142,22 @@ Item {
             x: leftBallastTankPosition.x
             y: leftBallastTankPosition.y
 
-            radius: 10
+            radius: 2
 
-            color: "black"
+            color: "#323232"
+            border.width: 4
+            border.color: "#AEC6DD"
 
             Rectangle {
-                width: leftBallastTankWidth * 0.9
-                height: (leftBallastTank.waterLevel / leftBallastTank.maxWaterLevel) * leftBallastTankHeight
+                width: leftBallastTankWidth * 0.85
+                height: (leftBallastTank.waterLevel / leftBallastTank.maxWaterLevel) * (leftBallastTankHeight - 8)
                 anchors {
                     bottom: parent.bottom
                     horizontalCenter: parent.horizontalCenter
+                    margins: 4
                 }
 
-                color: "green"
+                color: fillColor
 
                 Behavior on height {
                     NumberAnimation {
@@ -150,13 +170,13 @@ Item {
                 id: leftBallastTankLabel
                 text: qsTr("Left Ballast Tank")
 
-                width: parent.width
+                width: parent.width - 8
                 wrapMode: Text.WordWrap
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
 
                 fontSize: 8
-                color: "white"
+                color: "#B8D3E1EB"
             }
         }
 
@@ -164,8 +184,12 @@ Item {
             id: leftBallastFill
             source: url + "vanne.svg"
 
-            x: leftBallastTankDisplay.x - width * 1.5
-            y: leftBallastTankDisplay.y - leftBallastTankDisplay.height * 0.1
+            x: leftBallastTankDisplay.x - width * 1.1
+            y: buttonPlusY
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
 
             transform: Rotation {
                 id: rotateLeftTank;
@@ -186,8 +210,12 @@ Item {
             id: leftBallastFlush
             source: url + "vanne.svg"
 
-            x: leftBallastTankDisplay.x - width * 1.5
-            y: leftBallastTankDisplay.y + leftBallastTankDisplay.height * 0.9
+            x: leftBallastTankDisplay.x - width * 1.1
+            y: buttonMinusY
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
 
             transform: Rotation {
                 id: rotateLeftTankFlush;
@@ -214,19 +242,22 @@ Item {
             x: centralBallastTankPosition.x
             y: centralBallastTankPosition.y
 
-            radius: 10
+            radius: 2
 
-            color: "black"
+            color: "#323232"
+            border.width: 4
+            border.color: "#AEC6DD"
 
             Rectangle {
-                width: centralBallastTankWidth * 0.9
-                height: (centralBallastTank.waterLevel / centralBallastTank.maxWaterLevel) * centralBallastTankHeight
+                width: centralBallastTankWidth * 0.85
+                height: (centralBallastTank.waterLevel / centralBallastTank.maxWaterLevel) * (centralBallastTankHeight - 8)
                 anchors {
                     bottom: parent.bottom
                     horizontalCenter: parent.horizontalCenter
+                    margins: 4
                 }
 
-                color: "green"
+                color: fillColor
 
                 Behavior on height {
                     NumberAnimation {
@@ -239,13 +270,13 @@ Item {
                 id: centralBallastTankLabel
                 text: qsTr("Central Ballast Tank")
 
-                width: parent.width
+                width: parent.width - 10
                 wrapMode: Text.WordWrap
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
 
                 fontSize: 8
-                color: "white"
+                color: "#B8D3E1EB"
             }
         }
 
@@ -253,8 +284,13 @@ Item {
             id: centralBallastFill
             source: url + "vanne.svg"
 
-            x: centralBallastTankDisplay.x - width * 1.5
-            y: centralBallastTankDisplay.y - centralBallastTankDisplay.height * 0.1
+            x: centralBallastTankDisplay.x - width * 1.1
+            y: buttonPlusY
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
+
 
             transform: Rotation {
                 id: rotateCentralTank;
@@ -275,8 +311,13 @@ Item {
             id: centralBallastFlush
             source: url + "vanne.svg"
 
-            x: centralBallastTankDisplay.x - width * 1.5
-            y: centralBallastTankDisplay.y + centralBallastTankDisplay.height * 0.9
+            x: centralBallastTankDisplay.x - width * 1.1
+            y: buttonMinusY
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
+
 
             transform: Rotation {
                 id: rotateCentralTankFlush;
@@ -302,19 +343,22 @@ Item {
             x: rightBallastTankPosition.x
             y: rightBallastTankPosition.y
 
-            radius: 10
+            radius: 2
 
-            color: "black"
+            color: "#323232"
+            border.width: 4
+            border.color: "#AEC6DD"
 
             Rectangle {
-                width: rightBallastTankWidth * 0.9
-                height: (rightBallastTank.waterLevel / rightBallastTank.maxWaterLevel) * rightBallastTankHeight
+                width: rightBallastTankWidth * 0.85
+                height: (rightBallastTank.waterLevel / rightBallastTank.maxWaterLevel) * (rightBallastTankHeight - 8)
                 anchors {
                     bottom: parent.bottom
                     horizontalCenter: parent.horizontalCenter
+                    margins: 4
                 }
 
-                color: "green"
+                color: fillColor
 
                 Behavior on height {
                     NumberAnimation {
@@ -327,13 +371,13 @@ Item {
                 id: rightBallastTankLabel
                 text: qsTr("Right Ballast Tank")
 
-                width: parent.width
+                width: parent.width - 8
                 wrapMode: Text.WordWrap
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
 
                 fontSize: 8
-                color: "white"
+                color: "#B8D3E1EB"
             }
         }
 
@@ -341,8 +385,13 @@ Item {
             id: rightBallastFill
             source: url + "vanne.svg"
 
-            x: rightBallastTankDisplay.x - width * 1.5
-            y: rightBallastTankDisplay.y - rightBallastTankDisplay.height * 0.1
+            x: rightBallastTankDisplay.x - width * 1.1
+            y: buttonPlusY
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
+
 
             transform: Rotation {
                 id: rotateRightTank;
@@ -363,8 +412,13 @@ Item {
             id: rightBallastFlush
             source: url + "vanne.svg"
 
-            x: rightBallastTankDisplay.x - width * 1.5
-            y: rightBallastTankDisplay.y + rightBallastTankDisplay.height * 0.9
+            x: rightBallastTankDisplay.x - width * 1.1
+            y: buttonMinusY
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
+
 
             transform: Rotation {
                 id: rotateRightTankFlush;
@@ -390,11 +444,12 @@ Item {
 
         Image {
             id: divingPlanesImage
-            source: url + "rudder.png"
-
+            source: url + "rudder.svg"
             width: divingPlaneWidth
             height: divingPlaneHeight
-
+            sourceSize.width: width
+            sourceSize.height: height
+            
             x: divingPlanePosition.x
             y: divingPlanePosition.y
 
@@ -408,12 +463,17 @@ Item {
 
         Image {
             id: divingPlanesRotateUp
-            source: url + "up.png"
+            source: url + "up.svg"
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
 
             anchors {
                 left: divingPlanesImage.right
-                bottom: divingPlanesImage.top
+//                 bottom: divingPlanesImage.top
             }
+            y: buttonPlusY
 
             MouseArea {
                 anchors.fill: parent
@@ -425,12 +485,17 @@ Item {
 
         Image {
             id: divingPlanesRotateDown
-            source: url + "down.png"
+            source: url + "down.svg"
+            width: buttonSize
+            height: buttonSize
+            sourceSize.width: width
+            sourceSize.height: height
 
             anchors {
                 left: divingPlanesImage.right
-                top: divingPlanesImage.bottom
+//                 top: divingPlanesImage.bottom
             }
+            y: buttonMinusY
 
             MouseArea {
                 anchors.fill: parent

@@ -119,7 +119,7 @@ ActivityBase {
             id: tutorial
             anchors {
                 top: parent.top
-                topMargin: 10
+                topMargin: background.height / 6
                 right: parent.right
                 rightMargin: 5
                 left: parent.left
@@ -541,13 +541,14 @@ ActivityBase {
             id: upperGate
             visible: (bar.level > 1) ? true : false
             width: background.width / 18
-            height: isGateOpen ? background.height * (5 / 36) : background.height * (5 / 12)
+            height: isGateOpen ? background.height * (5 / 36) : background.height * (5 / 12) + 4
             y: -2
-            z: 1
-            color: "#848484"
-            border.color: "black"
-            border.width: 3
+            z: 2
+            color: "#9E948A"
+            border.color: "#766C62"
+            border.width: 2
             anchors.right: background.right
+            anchors.rightMargin: -2
 
             property bool isGateOpen: false
 
@@ -585,10 +586,11 @@ ActivityBase {
             width: background.width / 18
             height: background.height * (5 / 12) - subSchemaImage.height / 1.4
             y: background.height * (5 / 12)
-            color: "#848484"
-            border.color: "black"
-            border.width: 3
+            color: "#9E948A"
+            border.color: "#766C62"
+            border.width: 2
             anchors.right:background.right
+            anchors.rightMargin: -2
 
             Body {
                 id: lowerGateBody
@@ -611,27 +613,24 @@ ActivityBase {
             }
         }
 
-        Item {
-            id: subSchemaItems
-
-            Image {
-                id: subSchemaImage
-                source: url + "sub_schema.svg"
-                width: background.width/1.3
-                height: background.height/4
-                x: background.width/9
-                y: background.height/1.5
-            }
+        Rectangle {
+            id: subSchemaImage
+            width: background.width/1.3
+            height: background.height/4
+            x: background.width/9
+            y: background.height/1.5
+            visible: false
         }
 
         Image {
             id: crown
 
             width: submarineImage.width * 0.85
-            height: width * 0.55
-
+            height: width * 0.5
+            sourceSize.width: width
+            sourceSize.height: height
             visible: ((bar.level > 2) && !isCaptured) ? true : false
-            source: url + "crown.png"
+            source: url + "crown.svg"
 
             property bool isCaptured: false
 
@@ -691,7 +690,7 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
 
             visible: (bar.level > 3) ? true : false
-            source: url + "boat.svg"
+            source: collided ? url + "boat-hit.svg" : url + "boat.svg"
             x: initialXPosition
             z: 1
 
@@ -781,6 +780,7 @@ ActivityBase {
             id: rock2
             width: background.width / 6
             height: width * 0.48
+            z: 5
 
             visible: (bar.level > 4) ? true : false
             anchors.bottom: crown.bottom
@@ -832,6 +832,7 @@ ActivityBase {
             id: rock1
             width: rock2.width
             height: width * 0.46
+            z: 5
             visible: (bar.level > 6) ? true : false
             anchors.bottom: crown.bottom
             anchors.right: space.left
@@ -869,6 +870,20 @@ ActivityBase {
             }
         }
 
+        Image {
+            id: rock3
+            width: background.width 
+            height: background.height * 0.25
+            sourceSize.width: width
+            sourceSize.height: height
+
+            visible: (bar.level > 2) ? true : false
+            anchors.top: crown.top
+            anchors.horizontalCenter: crown.left
+//             anchors.topMargin: height * 0.5
+            source: url + "rocks.svg"
+        }
+        
         Timer {
             /*
              * A delay is used since on setting fullscreen on/off
@@ -887,35 +902,39 @@ ActivityBase {
 
         Controls {
             id: controls
+            z: 10
             enginePosition.x: background.width * 0.2
-            enginePosition.y: background.height - bar.height - (engineHeight * 1.25)
+            enginePosition.y: background.height - bar.height - (engineHeight * 1.6)
             engineWidth: background.width / 8
             engineHeight: 100
             submarineHorizontalSpeed: submarine.currentFinalVelocity * 1000
 
             leftTankVisible: bar.level >= 7 ? true : false
             leftBallastTankPosition.x: background.width * 0.4
-            leftBallastTankPosition.y: background.height - bar.height - (engineHeight * 1.25)
+            leftBallastTankPosition.y: background.height - bar.height - (engineHeight * 1.6)
             leftBallastTankWidth: background.width / 8
-            leftBallastTankHeight: 100
+            leftBallastTankHeight: 120
 
             centralTankVisible:  bar.level < 7 ? true : false
             centralBallastTankPosition.x: background.width * 0.5
-            centralBallastTankPosition.y: background.height - bar.height - (engineHeight * 1.25)
+            centralBallastTankPosition.y: background.height - bar.height - (engineHeight * 1.6)
             centralBallastTankWidth: background.width / 8
-            centralBallastTankHeight: 100
+            centralBallastTankHeight: 120
 
             rightTankVisible:  bar.level >= 7 ? true : false
             rightBallastTankPosition.x: background.width * 0.6
-            rightBallastTankPosition.y: background.height - bar.height - (engineHeight * 1.25)
+            rightBallastTankPosition.y: background.height - bar.height - (engineHeight * 1.6)
             rightBallastTankWidth: background.width / 8
-            rightBallastTankHeight: 100
+            rightBallastTankHeight: 120
 
             divingPlaneVisible: true
             divingPlanePosition.x: background.width * 0.8
-            divingPlanePosition.y: background.height - bar.height - engineHeight
-            divingPlaneWidth: background.width / 8
-            divingPlaneHeight: divingPlaneWidth * 0.2
+            divingPlanePosition.y: enginePosition.y + (engineHeight * 0.5) - (divingPlaneHeight * 0.5)
+            divingPlaneWidth: background.width * 0.1
+            divingPlaneHeight: divingPlaneWidth * 0.33
+            buttonSize: subSchemaImage.height * 0.2
+            buttonPlusY: enginePosition.y - (buttonSize * 0.5)
+            buttonMinusY: enginePosition.y + engineHeight - (buttonSize * 0.5)
         }
 
         DialogHelp {
