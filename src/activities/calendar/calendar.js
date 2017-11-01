@@ -109,7 +109,7 @@ function updateScore() {
     if(isCorrectAnswer) {
         items.questionDelay.start()
         items.okButtonParticles.burst(20)
-        items.score.winAnimation.start()
+        items.score.playWinAnimation()
     }
     else
         items.bonus.bad("lion")
