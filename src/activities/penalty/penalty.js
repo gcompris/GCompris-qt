@@ -54,13 +54,14 @@ function initLevel() {
 
 function resetLevel() {
     items.ball.state = "INITIAL"
+    items.saveBallState = "INITIAL"
     items.progressRight.ratio = 0
     items.progressLeft.ratio = 0
     items.progressTop.ratio = 0
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
