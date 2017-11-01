@@ -74,7 +74,6 @@ ActivityBase {
             repeat: false
             interval: 1600
             onTriggered: {
-                Activity.currentSubLevel++
                 Activity.initQuestion()
             }
             onRunningChanged: okButtonMouseArea.enabled = !okButtonMouseArea.enabled

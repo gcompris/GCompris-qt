@@ -20,11 +20,17 @@
 // Add more levels by inserting questions and answers below.
 // Days of weeks are indexed from 0 i.e (Sunday = 0, Monday = 1, Tuesday = 2, .... ..... .... , Saturday = 6)
 // Months of year are indexed from 0 i.e (January = 0, February = 1, March = 2, .... ..... ...., December = 11)
+//[
+    //MODES
+      // findMonthOnly --> For questions based on finding month only.
+      // findYearMonthDay --> For questions based on finding year, month and day.
+      // findDayOfWeek --> For questions based on finding day of week only.
+      // findDay --> For questions based on finding day of a given month and year.
+// ]
 
 function get() {
     return [
                 [ // Level 1
-
                  [ // Level 1 Configurations
                   {
                       "navigationBarVisible" : false,
@@ -32,9 +38,7 @@ function get() {
                       "maximumDate": "2019-12-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "answerChoiceVisible": false,
-                      "okButtonVisible": true,
-                      "findMonthOnly": false,
+                      "mode": "findDay"
                   }
                  ],
                  [ // Level 1 Questions
@@ -74,9 +78,7 @@ function get() {
                       "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "answerChoiceVisible": true,
-                      "okButtonVisible": false,
-                      "findMonthOnly": false,
+                      "mode": "findDayOfWeek"
                   }
                  ],
                  [ // Level 2  Questions
@@ -119,9 +121,7 @@ function get() {
                       "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "answerChoiceVisible": false,
-                      "okButtonVisible": true,
-                      "findMonthOnly": false,
+                      "mode": "findDay"
                   }
                  ],
 
@@ -165,9 +165,7 @@ function get() {
                       "maximumDate": "2019-12-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "answerChoiceVisible": false,
-                      "okButtonVisible": true,
-                      "findMonthOnly": false,
+                      "mode": "findDay"
                   }
                  ],
                  [ // Level 4 Questions
@@ -202,9 +200,7 @@ function get() {
                       "maximumDate": "2018-12-31",
                       "visibleMonth": 1,
                       "visibleYear": 2018,
-                      "answerChoiceVisible": false,
-                      "okButtonVisible": true,
-                      "findMonthOnly": true,
+                      "mode": "findMonthOnly"
                   }
                  ],
                  [ // Level 5 Questions
@@ -239,9 +235,7 @@ function get() {
                       "maximumDate": "2019-12-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "answerChoiceVisible": false,
-                      "okButtonVisible": true,
-                      "findMonthOnly": false,
+                      "mode": "findYearMonthDay"
                   }
 
                  ],
@@ -293,9 +287,7 @@ function get() {
                       "maximumDate": "2019-12-31",
                       "visibleMonth": 1,
                       "visibleYear": 2018,
-                      "answerChoiceVisible": false,
-                      "okButtonVisible": true,
-                      "findMonthOnly": false,
+                      "mode": "findYearMonthDay"
                   }
                  ],
                  [ // Level 7 Questions

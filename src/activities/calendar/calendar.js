@@ -38,8 +38,8 @@ var dayOfWeekSelected
 var minRange //sum of min. visible month and year on calendar for navigation bar next/prev button visibility.
 var maxRange //sum of max. visible month and year on calendar for navigation bar next/prev button visibility.
 var correctAnswer
-var findMonthOnly
 var isCorrectAnswer
+var mode
 
 function start(items_, dataset_) {
     items = items_
@@ -78,6 +78,7 @@ function previousLevel() {
 function setCalendarConfigurations() {
     minRange = Number(currentLevelConfig["minimumDate"].slice(5,7)) + Number(currentLevelConfig["minimumDate"].slice(0,4)) - 1;
     maxRange = Number(currentLevelConfig["maximumDate"].slice(5,7)) + Number(currentLevelConfig["maximumDate"].slice(0,4)) - 1;
+    mode = currentLevelConfig["mode"]
     items.calendar.navigationBarVisible = currentLevelConfig["navigationBarVisible"]
     items.calendar.minimumDate = currentLevelConfig["minimumDate"]
     items.calendar.maximumDate = currentLevelConfig["maximumDate"]
@@ -85,9 +86,8 @@ function setCalendarConfigurations() {
     yearSelected = currentLevelConfig["visibleYear"]
     items.calendar.visibleMonth = currentLevelConfig["visibleMonth"]
     monthSelected = currentLevelConfig["visibleMonth"]
-    items.answerChoices.visible = currentLevelConfig["answerChoiceVisible"]
-    items.okButton.visible = currentLevelConfig["okButtonVisible"]
-    findMonthOnly = currentLevelConfig["findMonthOnly"]
+    items.answerChoices.visible = (mode === "findDayOfWeek") ? true : false
+    items.okButton.visible = !items.answerChoices.visible
     currentDataSet = dataset[currentLevel][1]
     currentDataSet = Core.shuffle(currentDataSet)
     items.score.numberOfSubLevels = currentDataSet.length
@@ -110,6 +110,7 @@ function updateScore() {
         items.questionDelay.start()
         items.okButtonParticles.burst(20)
         items.score.playWinAnimation()
+        currentSubLevel++;
     }
     else
         items.bonus.bad("lion")
@@ -118,19 +119,19 @@ function updateScore() {
 
 function checkAnswer() {
     // For levels having questions based on day of week only.
-    if(items.answerChoices.visible) {
+    if(mode === "findDayOfWeek") {
         if(dayOfWeekSelected === correctAnswer["dayOfWeek"]) {
             isCorrectAnswer = true
         }
     }
     // For levels having question based on month only.
-    else if(findMonthOnly) {
+    else if(mode === "findMonthOnly") {
         if(correctAnswer["month"].indexOf(monthSelected) >= 0) {
             isCorrectAnswer = true
         }
     }
     // For levels having questions based on dayOfWeek, month and year.
-    else if(!items.answerChoices.visible) {
+    else if(mode !== "findDayOfWeek") {
         if(monthSelected === correctAnswer["month"] && daySelected === correctAnswer["day"] && yearSelected === correctAnswer["year"]) {
             isCorrectAnswer = true
         }
