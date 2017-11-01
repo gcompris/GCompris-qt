@@ -3,7 +3,7 @@
  * Copyright (C) 2017 Amit Sagtani <asagtani06@gmail.com>
  *
  * Authors:
- *   "Amit Sagtani" <asagtani06@gmail.com>
+ *   Amit Sagtani <asagtani06@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -38,7 +38,6 @@ var dayOfWeekSelected
 var minRange //sum of min. visible month and year on calendar for navigation bar next/prev button visibility.
 var maxRange //sum of max. visible month and year on calendar for navigation bar next/prev button visibility.
 var correctAnswer
-var isCorrectAnswer
 var mode
 
 function start(items_, dataset_) {
@@ -105,7 +104,7 @@ function initQuestion() {
     }
 }
 
-function updateScore() {
+function updateScore(isCorrectAnswer) {
     if(isCorrectAnswer) {
         items.questionDelay.start()
         items.okButtonParticles.burst(20)
@@ -114,10 +113,10 @@ function updateScore() {
     }
     else
         items.bonus.bad("lion")
-    isCorrectAnswer = false
 }
 
 function checkAnswer() {
+    var isCorrectAnswer = false
     // For levels having questions based on day of week only.
     if(mode === "findDayOfWeek") {
         if(dayOfWeekSelected === correctAnswer["dayOfWeek"]) {
@@ -136,6 +135,6 @@ function checkAnswer() {
             isCorrectAnswer = true
         }
     }
-    updateScore()
+    updateScore(isCorrectAnswer)
 }
 

@@ -21,9 +21,9 @@
 
 import QtQuick 2.6
 import GCompris 1.0
-import QtQuick.Controls 1.4
+import QtQuick.Controls 1.5
 import QtQuick.Controls.Private 1.0
-import QtQuick.Controls.Styles 1.1
+import QtQuick.Controls.Styles 1.4
 import "../../core"
 import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
