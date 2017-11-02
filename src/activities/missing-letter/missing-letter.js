@@ -211,11 +211,11 @@ function nextLevel() {
 function nextSubLevel() {
     var question = getCurrentQuestion()
 
-    if(++items.score.currentSubLevel > questions[currentLevel].length) {
+    if(items.score.currentSubLevel >= questions[currentLevel].length) {
         items.bonus.good('flower')
-        nextLevel()
         return
     }
+    items.score.currentSubLevel ++;
     showQuestion()
 }
 
