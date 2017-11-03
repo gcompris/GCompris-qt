@@ -61,7 +61,7 @@ ActivityBase {
             property alias answerChoices: answerChoices
             property alias questionDelay: questionDelay
             property alias okButtonParticles: okButtonParticles
-            property bool horizontalLayout: background.width > background.height
+            property bool horizontalLayout: background.width > background.height * 1.5
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -81,7 +81,7 @@ ActivityBase {
 
         Rectangle {
             id: calendarBox
-            width: items.horizontalLayout ? parent.width * 0.40 : (answerChoices.visible ? parent.width * 0.50 : parent.width * 0.70)
+            width: items.horizontalLayout ? parent.width * 0.45 : (answerChoices.visible ? parent.width * 0.50 : parent.width * 0.70)
             height: items.horizontalLayout ? parent.height * 0.70 : (answerChoices.visible ? parent.width * 0.50: parent.height * 0.40)
             anchors.top: parent.top
             anchors.topMargin: 100

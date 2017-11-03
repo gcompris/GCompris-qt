@@ -99,7 +99,7 @@ function get() {
                       "answer": {"dayOfWeek": 3}
                   },
                   {
-                      "question": qsTr("What day of the week is the 22th of given month"),
+                      "question": qsTr("What day of the week is the 22nd of given month"),
                       "answer": {"dayOfWeek": 4}
                   },
                   {
