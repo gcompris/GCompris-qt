@@ -18,6 +18,7 @@ bargame
 bargame_2players
 braille_alphabets
 braille_fun
+calendar
 canal_lock
 categorization
 checkers
