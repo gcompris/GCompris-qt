@@ -1,10 +1,9 @@
 /* GCompris - find_the_day.qml
  *
- * Copyright (C) 2017 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2017 Amit Sagtani <asagtani06@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Amit Sagtani <asagtani06@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

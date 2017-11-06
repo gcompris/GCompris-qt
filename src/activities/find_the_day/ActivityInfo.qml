@@ -19,22 +19,22 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "find_the_day/FindTheDay.qml"
-  difficulty: 1
+  difficulty: 4
   icon: "find_the_day/find_the_day.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: "Find_the_day activity"
+  title: qsTr("Find_the_day activity")
   //: Help title
-  description: ""
-  //intro: "put here in comment the text for the intro voice"
+  description: qsTr("Read the task and find correct date by doing mathematical calculations.")
+  //intro: "Select the asked date on the calendar"
   //: Help goal
-  goal: ""
+  goal: qsTr("Learn to find date on the calendar by duration calculations.")
   //: Help prerequisite
-  prerequisite: ""
+  prerequisite: qsTr("Basics of calendar")
   //: Help manual
-  manual: ""
+  manual: qsTr("Review the instructions and select the correct date on calendar.")
   credit: ""
-  section: "fun"
+  section: "discovery"
   createdInVersion: 9000
 }
