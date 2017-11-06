@@ -23,11 +23,16 @@ ActivityInfo {
     icon: "calendar/calendar.svg"
     author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
     demo: true
+    //: Activity title
     title: qsTr("Calendar Activity")
+    //: Help title
     description: qsTr("Read the task and select the correct date on calendar")
     //intro: "Select the asked date on the calendar"
+    //: Help goal
     goal: qsTr("Learn to use a calendar efficiently")
+    //: Help prerequisite
     prerequisite: qsTr("Concept of week, month and year")
+    //: Help manual
     manual: qsTr("Review the instructions and select the correct date on calendar.")
     credit: ""
     section: "discovery"
