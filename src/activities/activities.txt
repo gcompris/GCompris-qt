@@ -50,6 +50,7 @@ explore_world_music
 family
 family_find_relative
 fifteen
+find_the_day
 followline
 football
 geo-country
