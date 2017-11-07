@@ -20,7 +20,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "find_the_day/FindTheDay.qml"
   difficulty: 4
-  icon: "find_the_day/find_the_day.svg"
+  icon: "calendar/calendar.svg"
   author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
   demo: true
   //: Activity title
