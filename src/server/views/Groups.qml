@@ -39,36 +39,73 @@ ActivityBase {
         property var users: []
         property string groupDescription: descriptionText.text
         property string mode:""
-        GridView {
+        
+        TableView {
             id: clients
-            width: activity.width
-            height: activity.height
-            cellWidth: 210
-            cellHeight: cellWidth
+            width: parent.width
+            height: parent.height - (bar.height * 2)
+
             model: MessageHandler.groups
             property string currentGroup: ""
-            highlight: Rectangle { color: "lightsteelblue"; radius: 5 }
-            delegate: Rectangle {
-                id: itemDelegate
-                width: 200
-                height: 200
-                color: "red"
-                property string name: modelData.name
-                GCText {
-                    text: modelData.name
-                }
 
-                MouseArea {
-                    id: mouse
-                    anchors.fill: parent
-                    onClicked: { clients.currentIndex = index;
-                        clients.currentGroup = name
-                        print(modelData.name)
-                        groupConfig.visible = true
-                        configView.visible = true
-                        cancelButton.visible = true
+            rowDelegate: Rectangle {
+                height: 50
+                width: childrenRect.width
+                SystemPalette {
+                    id: myPalette;
+                    colorGroup: SystemPalette.Active
+                }
+                color: {
+                    var baseColor = styleData.alternate ? myPalette.alternateBase : myPalette.base
+                    return styleData.selected ? myPalette.highlight : baseColor
+                }
+            }
+
+            TableViewColumn {
+                role: "name"
+                title: qsTr("Name")
+            }
+            TableViewColumn {
+                id: groupsColumn
+                role: "users"
+                title: qsTr("Users")
+                delegate: Text {
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    text: {
+                        modelData ? modelData.users.length : ""
                     }
                 }
+            }
+
+            TableViewColumn {
+                delegate: Row {
+                    spacing: 5
+                    Button {
+                        id: editGroup
+                        text: qsTr("Edit")
+                        //style: GCButtonStyle {}
+                        onClicked: {
+                            print("edit")
+                        }
+                    }
+                    Button {
+                        id: removeGroup
+                        text: qsTr("Remove")
+                        //style: GCButtonStyle {}
+                        onClicked: {
+                            print("Remove", modelData.name)
+                            MessageHandler.deleteGroup(modelData.name)
+                        }
+                    }
+                }
+            }
+
+            onClicked: {
+                clients.currentGroup = model[row].name
+                groupConfig.visible = true
+                configView.visible = true
+                cancelButton.visible = true
             }
         }
         Grid {
@@ -120,10 +157,6 @@ ActivityBase {
                         "text" : qsTr("delete users from the group %1").arg(clients.currentGroup)
                     },
                     {
-                        "shortName" : "deleteGroup",
-                        "text": qsTr("delete this group ")
-                    },
-                    {
                         "shortName" : "changeName",
                         "text" : qsTr("change name of this group ")
 
@@ -164,13 +197,6 @@ ActivityBase {
                                 usersView.visible = true
 
                             }
-                            else if(modelData.shortName === "deleteGroup") {
-                                groupConfig.visible = false
-                                confirmationBox.visible = true
-                                mainItem.mode = "deleteGroup"
-
-                            }
-
                         }
                     }
 
@@ -427,7 +453,7 @@ ActivityBase {
                     else if (mainItem.mode === "addUsers")
                         return "Are you sure you want to add these users to this group?"
                     else if(mainItem.mode === "deleteGroup")
-                        return "Are you sure you want to delete the group " + clients.currentGroup
+                        return qsTr("Are you sure you want to delete the group %1").arg(clients.currentGroup)
                     else
                         return ""
                 }
@@ -444,7 +470,7 @@ ActivityBase {
                 height: parent.height/6
                 width: parent.width/2
                 style: GCButtonStyle {}
-                text: qsTr("YES")
+                text: qsTr("Yes")
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -482,7 +508,7 @@ ActivityBase {
                 anchors.left: yes.right
                 width: parent.width/2
                 style: GCButtonStyle {}
-                text: qsTr("NO")
+                text: qsTr("No")
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {

@@ -24,6 +24,7 @@ import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -40,37 +41,128 @@ ActivityBase {
         property string avatar: avatarText.text
         property string mode: ""
 
-        GridView {
+        TableView {
             id: users
             width: parent.width
             height: parent.height - (bar.height * 2)
-            cellWidth: parent.width/10
-            cellHeight: cellWidth
+
             property string currentUser: ""
             model: MessageHandler.users
 
-
-            delegate: Rectangle {
-                id: delegate
-                width: users.cellWidth/1.25
-                height: width
-                color: "red"
-                GCText {
-                    text: modelData.name
+            //headerDelegate: Rectangle {
+            //    height: 50
+            //}
+            
+            rowDelegate: Rectangle {
+                height: 50
+                width: childrenRect.width
+                SystemPalette {
+                    id: myPalette;
+                    colorGroup: SystemPalette.Active
                 }
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        users.currentUser = modelData.name
-                        userConfig.visible = true
-                        configView.visible = true
-                        cancelButton.visible = true
-
+                color: {
+                    var baseColor = styleData.alternate ? myPalette.alternateBase : myPalette.base
+                    return styleData.selected ? myPalette.highlight : baseColor
+                }
+            }
+            TableViewColumn {
+                role: "name"
+                title: qsTr("Name")
+            }
+            /*TableViewColumn {
+                role: "age"
+                title: qsTr("Birth year")
+            }*/
+            TableViewColumn {
+                id: passwordColumn
+                role: "avatar"
+                title: qsTr("Password")
+                delegate: Item { // todo Put it in a separate file
+                    width: passwordColumn.height
+                    height: 50 // same as rowDelegate
+                    Button {
+                        id: passwordButton
+                        text: qsTr("Show password")
+                        //style: GCButtonStyle {}
+                        onClicked: {
+                            passwordButton.visible = false
+                        }
+                    }
+                    Item {
+                        id: passwordField
+                        anchors.fill: parent
+                        visible: !passwordButton.visible
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                passwordImage.visible = !passwordImage.visible
+                            }
+                        }
+                        Text {
+                            id: passwordText
+                            visible: !passwordImage.visible
+                            verticalAlignment: Text.AlignVCenter
+                            fontSizeMode: Text.Fit
+                            text: modelData ? modelData.avatar : ""
+                        }
+                        Image {
+                            id: passwordImage
+                            source: "qrc:/gcompris/src/activities/sudoku/sudoku.svg"
+                            sourceSize.height: 50
+                        }
                     }
                 }
-
             }
-
+            TableViewColumn {
+                id: groupsColumn
+                role: "groups"
+                title: qsTr("Groups")
+                delegate: Text {
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                    text: {
+                        modelData ? modelData.groups.map(function(elem) {
+                                        return elem.name;
+                                    }).join(", ") : ""
+                    }
+                }
+            }
+            TableViewColumn {
+                delegate: Row {
+                    spacing: 5
+                    Button {
+                        id: editUser
+                        text: qsTr("Edit")
+                        //style: GCButtonStyle {}
+                        onClicked: {
+                            print("edit")
+                        }
+                    }
+                    Button {
+                        id: removeUser
+                        text: qsTr("Remove")
+                        //style: GCButtonStyle {}
+                        onClicked: {
+                            Core.showMessageDialog(
+                            main,
+                            qsTr("Confirm the deletion of user %1").arg(modelData.name),
+                            qsTr("Yes"),
+                            function() {
+                                MessageHandler.deleteUser(modelData.name)
+                            },
+                            qsTr("No"), null,
+                            function() { }
+                            );
+                        }
+                    }
+                }
+            }
+            onClicked: {
+                users.currentUser = model[row].name
+                userConfig.visible = true
+                configView.visible = true
+                cancelButton.visible = true
+            }
         }
 
 
@@ -79,7 +171,7 @@ ActivityBase {
             anchors.bottom: bar.top
             Button {
                 id: createUserButton
-                text: qsTr("Create a  new user")
+                text: qsTr("Create a new user")
                 style: GCButtonStyle {}
                 onClicked: {
                     createUserItem.visible = true
@@ -100,7 +192,6 @@ ActivityBase {
                 opacity: 0.6
             }
 
-
             ListView {
                 id: configView
                 anchors.fill: parent
@@ -111,16 +202,8 @@ ActivityBase {
                         "text": qsTr("add %1 to groups").arg(users.currentUser)
                     },
                     {
-                        "shortName": "showGroups",
-                        "text": qsTr("show groups belonging to %1").arg(users.currentUser)
-                    },
-                    {
                         "shortName" : "deleteGroups",
                         "text" : qsTr("remove %1 from the groups").arg(users.currentUser)
-                    },
-                    {
-                        "shortName" : "deleteUser",
-                        "text": qsTr("delete this User ")
                     },
                     {
                         "shortName" : "activityData",
@@ -146,7 +229,7 @@ ActivityBase {
                         onClicked: {
                             cancelButton.visible = false
                             configView.visible = false
-                            if(modelData.shortName === "addGroups" )
+                            if(modelData.shortName === "addGroups")
                             {
                                 groupsView.visible = true
                                 groupsView.model = MessageHandler.groups
@@ -155,20 +238,11 @@ ActivityBase {
                                 mainItem.mode = "addGroups";
 
                             }
-                            if(modelData.shortName === "showGroups")
-                            {
-                                groupsView.model = MessageHandler.returnUserGroups(users.currentUser)
-                                groupsView.visible = true
-                                goBackButton.visible = true
-
-                            }
-
                         }
                     }
 
                 }
             }
-
 
             ListView {
                 id: groupsView
@@ -190,15 +264,11 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-
                         addNewGroupsButton.visible = false
                         goBackButton.visible = false
                         groupsView.visible = false
                         userConfig.visible = false
                         confirmationBox.visible = true
-
-
-
                     }
                 }
             }
@@ -222,21 +292,19 @@ ActivityBase {
                     }
                 }
             }
-
         }
-
-
+ 
         Item {
             id: createUserItem
             visible: false
-            width:parent.width/1.75
+            width: parent.width/1.75
             height: parent.height/1.5
-            anchors.centerIn:  parent
+            anchors.centerIn: parent
             Rectangle {
                 id: createUserRect
                 anchors.fill: parent
                 color: "grey"
-                opacity: 0.6
+                opacity: 0.8
                 Button {
                     id: userName
                     anchors.left: parent.left
@@ -344,19 +412,17 @@ ActivityBase {
                 }
                 Button {
                     id: create
-                    width: parent.width/2
                     anchors.bottom: parent.bottom
+                    width: parent.width/2
                     height: parent.height/6
                     style: GCButtonStyle {}
+                    enabled: avatarText.text !== "" && userText !== ""
                     text: qsTr("Create")
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            // display the confirmation box
-                            mainItem.mode = "create"
-                            confirmationBox.visible = true
                             createUserItem.visible = false
-
+                            MessageHandler.createUser(mainItem.userName, mainItem.avatar, mainItem.groups)
                         }
                     }
 
@@ -391,9 +457,7 @@ ActivityBase {
             visible: false
             GCText {
                 text: {
-                    if (mainItem.mode === "create")
-                        return "Are you sure you want to create this user?"
-                    else if(mainItem.mode === "addGroups")
+                    if(mainItem.mode === "addGroups")
                         return "Are you sure you want to add " + users.currentUser + " to the slected groups ?"
                     else
                         return ""
@@ -402,7 +466,6 @@ ActivityBase {
                 wrapMode: Text.Wrap
                 font.pixelSize: 25
                 anchors.centerIn: parent
-
             }
 
             Button {
@@ -415,14 +478,6 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-
-                        if (mainItem.mode === "create")
-                        {
-                            console.log(mainItem.userName," ",mainItem.avatar, " ",
-                                        mainItem.groups)
-                            MessageHandler.createUser(mainItem.userName, mainItem.avatar, mainItem.groups)
-
-                        }
                         if(mainItem.mode === "addGroups")
                         {
                             console.log(users.currentUser, mainItem.groups)
@@ -472,7 +527,6 @@ ActivityBase {
             }
         }
         Bar {
-
             id: bar
             content: BarEnumContent { value: home }
             onHomeClicked: activity.home()

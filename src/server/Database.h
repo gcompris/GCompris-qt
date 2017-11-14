@@ -57,7 +57,8 @@ public:
 
     bool addUser(const QString &name, const QString &avatar = "", const QStringList& groups=QStringList());
     bool addUserToGroup(const QString& group, const QString& user);
-
+    bool deleteUser(const QString& userName);
+    
     QMultiMap<QString,QString> retrieveGroupUsers();
     bool addDataToDatabase(const ActivityRawData &rawData);
     void retrieveActivityData(UserData* user);

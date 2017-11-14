@@ -43,6 +43,7 @@ class UserData : public QObject {
 
     Q_PROPERTY(QString avatar MEMBER m_avatar NOTIFY newAvatar)
     Q_PROPERTY(QString name MEMBER m_name NOTIFY newName)
+    Q_PROPERTY(QList<QObject *> groups MEMBER m_groups NOTIFY newGroups)
 
 public:
     UserData();
@@ -58,8 +59,6 @@ public:
     const QString &getName() const;
     Q_INVOKABLE const QVariantMap getActivityData(const QString &activity);
 
-
-
 private:
     QList<QObject*> m_groups;
     QString m_avatar;
@@ -72,6 +71,7 @@ signals:
     void newAvatar();
     void newName();
     void newActivityData();
+    void newGroups();
 };
 
 Q_DECLARE_METATYPE(UserData)

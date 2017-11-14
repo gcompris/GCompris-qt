@@ -183,7 +183,7 @@ ActivityBase {
             property int initialX: 4
             property int initialY: 4
 
-            cellWidth: width
+            cellWidth: width / 2
             cellHeight: 80
             Component {
                 id: actionDelegate
@@ -204,9 +204,7 @@ ActivityBase {
                         }
                         else if(modelData.view === "LoginList") {
                             login.visible = true
-
                         }
-
                         else {
                             activityLoader.setSource("qrc:/gcompris/src/server/views/" + modelData.view + ".qml", {})
                             print("select: " + text + " - load " + activityLoader.source)

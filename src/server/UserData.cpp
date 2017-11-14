@@ -31,7 +31,6 @@
 
 UserData::UserData() : m_name(""), m_avatar("")
 {
-
 }
 
 UserData::UserData(const UserData &user)
@@ -63,6 +62,7 @@ void UserData::addGroup(GroupData *group)
 {
     if(!m_groups.contains((QObject*)group))
         m_groups << (QObject*)group;
+    emit newGroups();
 }
 const QString &UserData::getName() const
 {

@@ -237,14 +237,19 @@ void MessageHandler::removeUserFromAllGroups(UserData *user)
 
 void MessageHandler::deleteUser(const QString &userName)
 {
-    for (QObject *oUser: m_users) {
-        UserData *user = (UserData *) oUser;
-        if (user->getName() == userName) {
-            m_users.removeAll(user);
-            removeUserFromAllGroups(user);
-            delete user;
-            emit newUsers();
+    if(Database::getInstance()->deleteUser(userName)) {
+        for (QObject *oUser: m_users) {
+            UserData *user = (UserData *) oUser;
+            if (user->getName() == userName) {
+                m_users.removeAll(user);
+                removeUserFromAllGroups(user);
+                delete user;
+                emit newUsers();
+            }
         }
+    }
+    else {
+        qDebug() << "Unable to delete" << userName;
     }
 }
 

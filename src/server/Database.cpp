@@ -69,7 +69,6 @@ Database* Database::getInstance()
 bool Database::addGroup(const QString &groupName, const QString& description,
                         const QStringList& users)
 {
-
     bool groupAdded = false;
     QSqlDatabase dbConnection = QSqlDatabase::database();
     QSqlQuery query(dbConnection);
@@ -104,10 +103,10 @@ bool Database::deleteGroup(const QString &groupName)
     QSqlDatabase dbConnection = QSqlDatabase::database();
     QSqlQuery query(dbConnection);
     query.prepare("DELETE FROM groups WHERE group_name=:gname");
-    query.bindValue(":gname",groupName);
+    query.bindValue(":gname", groupName);
     if(query.exec()) {
         query.prepare("DELETE FROM group_users WHERE group_name=:gname");
-        query.bindValue(":gname",groupName);
+        query.bindValue(":gname", groupName);
         if(query.exec())
             groupDeleted = true;
     }
@@ -143,8 +142,6 @@ bool Database::addUserToGroup(const QString& group, const QString& user)
 
 bool Database::addDataToDatabase(const ActivityRawData &rawData)
 {
-
-
     bool dataAdded = false;
     QByteArray data;
     QDataStream out(&data, QIODevice::WriteOnly);
@@ -198,7 +195,6 @@ bool Database::addDataToDatabase(const ActivityRawData &rawData)
     return dataAdded;
 }
 
-
 bool Database::addUser(const QString& name, const QString &avatar, const QStringList& groups)
 {
     // check whether user already exists before adding to database
@@ -227,9 +223,39 @@ bool Database::addUser(const QString& name, const QString &avatar, const QString
     return userAdded;
 }
 
+bool Database::deleteUser(const QString& name)
+{
+    bool userDeleted = false;
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+    query.prepare("DELETE FROM users WHERE user_name=:name");
+    query.bindValue(":name", name);
+    if(query.exec()) {
+        query.prepare("DELETE FROM group_users WHERE user_name=:name");
+        query.bindValue(":name",name);
+        if(query.exec()) {
+            
+            query.prepare("DELETE FROM activity_data WHERE user_name=:name");
+            query.bindValue(":name",name);
+            if(query.exec()) {
+                userDeleted = true;
+            }
+            else {
+                qDebug() << query.executedQuery() << " failed";
+            }
+        }
+        else {
+            qDebug() << query.executedQuery() << " failed";
+        }
+    }
+    else {
+        qDebug() << query.executedQuery() << " failed";
+    }
+    return userDeleted;
+}
+
 void  Database::retrieveActivityData(UserData* user)
 {
-
     QSqlDatabase dbConnection = QSqlDatabase::database();
     QSqlQuery query(dbConnection);
 
@@ -260,9 +286,7 @@ void  Database::retrieveActivityData(UserData* user)
             user->addData(rawData);
         }
     }
-
 }
-
 
 void Database::retrieveAllExistingGroups(QList<GroupData *> &allGroups)
 {

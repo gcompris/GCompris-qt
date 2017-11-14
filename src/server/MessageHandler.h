@@ -34,10 +34,10 @@
  *
  * JOB:
  * -Handle messages received by the socket
- * -Create,delete, Update information about:
+ * -Create, update, delete information about:
  *  --users
  *  --groups
- * -Linking Users,Clients and groups with each other
+ * -Linking users, clients and groups with each other
  *
  *
  * @sa UserData
@@ -78,21 +78,13 @@ public:
     UserData *getUser(const QString &userName);
     GroupData *getGroup(const QString &groupName);
 
-    Q_INVOKABLE QList<QObject*> returnUserGroups(const QString& user) {
-
-            UserData* usr = getUser(user);
-            if(usr) {
-                return usr->getGroups();
-            }
+    Q_INVOKABLE QList<QObject*> returnGroupUsers(const QString& group) {
+        GroupData* g = getGroup(group);
+        if(g) {
+            return g->getUsers();
+        }
     }
 
-    Q_INVOKABLE QList<QObject*> returnGroupUsers(const QString& group){
-
-            GroupData* g = getGroup(group);
-            if(g){
-                return g->getUsers();
-            }
-    }
     QList<QObject*> returnUsers() {
         return m_users;
     }
