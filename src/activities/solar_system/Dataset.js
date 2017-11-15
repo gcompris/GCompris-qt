@@ -20,6 +20,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/sun_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/sun_real.svg",
+            "bodyName": "Sun",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("The sun is the_____ largest object in our solar system"),
@@ -51,6 +52,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury_real.svg",
+            "bodyName": "Mercury",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Mercury is the ______ planet in the Solar System"),
@@ -82,6 +84,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_real.svg",
+            "bodyName": "Venus",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Venus is the ______ planet in the Solar System."),
@@ -113,6 +116,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/earth_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth_real.svg",
+            "bodyName": "Earth",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Earth is the ______ planet in the Solar System"),
@@ -144,6 +148,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_real.svg",
+            "bodyName": "Mars",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Mars is the ______ planet in the Solar System"),
@@ -175,6 +180,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_real.svg",
+            "bodyName": "Jupiter",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Jupiter is the ______ planet in the Solar System"),
@@ -206,6 +212,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.svg",
+            "bodyName": "Saturn",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Saturn is the ______ planet in the Solar System"),
@@ -237,6 +244,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_real.svg",
+            "bodyName": "Uranus",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Uranus is the ______ planet in the Solar System"),
@@ -268,6 +276,7 @@ function get() {
 		{
 			"clipImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_clip.svg",
 			"realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_real.svg",
+            "bodyName": "Neptune",
 			"levels": [
 				{ //sub-level 1
 					"question": qsTr("Neptune is the ______ planet in the Solar System"),
