@@ -24,7 +24,7 @@ Item {
     id: planetItem
     width: background.itemWidth
     height: width
-    property string realImgsrc
+    property string planetImgClipSrc
     property string name
 
     GCText{
@@ -45,7 +45,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         sourceSize.width: parent.width/1.5
         fillMode: Image.PreserveAspectCrop
-        source: realImgsrc
+        source: planetImgClipSrc
 
         states: [
             State {

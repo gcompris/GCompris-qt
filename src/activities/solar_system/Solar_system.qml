@@ -53,7 +53,10 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias containerModel: containerModel
-            property bool visible
+            property bool solarSystemVisible
+            property bool quizScreenVisible
+            property alias score: mainQuizScreen.score
+            property alias optionListModel: mainQuizScreen.optionListModel
         }
 
         onStart: { Activity.start(items) }
@@ -92,14 +95,19 @@ ActivityBase {
             height: horizontalLayout ? cellHeight : parent.height - bar.height
             clip: false
             interactive: false
-            visible: items.visible
+            visible: items.solarSystemVisible
             cellWidth: background.itemWidth
             cellHeight: cellWidth
             model: containerModel
             delegate: PlanetDetails {
-                realImgsrc: clipImg
+                planetImgClipSrc: clipImg
                 name: bodyName
             }
+        }
+
+        QuizScreen {
+            id: mainQuizScreen
+            visible: items.quizScreenVisible
         }
 
         DialogHelp {

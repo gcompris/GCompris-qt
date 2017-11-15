@@ -30,9 +30,12 @@ function start(items_) {
     currentLevel = 0
     dataset= Dataset.get()
     for(var i = 0;  i < dataset.length; ++i) {
-        items.containerModel.append(dataset[i])
+        items.containerModel.append({
+                "clipImg": dataset[i].clipImg,
+                "bodyName": dataset[i].bodyName
+        });
     }
-    items.visible = true
+    items.solarSystemVisible = true
     initLevel()
 }
 
@@ -41,9 +44,13 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.score.currentSubLevel = 1
+    items.score.numberOfSubLevels = 5
 }
 
 function showQuestionScreen(index) {
+    items.solarSystemVisible = false
+    items.quizScreenVisible = true
 }
 
 function nextLevel() {
