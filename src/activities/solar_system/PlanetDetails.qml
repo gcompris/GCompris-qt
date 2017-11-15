@@ -17,17 +17,32 @@
  */
 import QtQuick 2.6
 import GCompris 1.0
+import "../../core"
 import "solar_system.js" as Activity
 
 Item {
     id: planetItem
     width: background.itemWidth
     height: width
-    property var realImgsrc
+    property string realImgsrc
+    property string name
+
+    GCText{
+        id: planetName
+        horizontalAlignment: Text.AlignHCenter
+        width: parent.width
+        fontSizeMode: Text.Fit
+        font.pointSize: NaN  // need to clear font.pointSize explicitly
+        font.pixelSize: parent.width * 0.18
+        color: "white"
+        text: parent.name
+    }
 
     Image {
         id: planetImage
-        anchors.centerIn: parent
+        anchors.top: planetName.bottom
+        anchors.topMargin: parent.width * 0.05
+        anchors.horizontalCenter: parent.horizontalCenter
         sourceSize.width: parent.width/1.5
         fillMode: Image.PreserveAspectCrop
         source: realImgsrc
@@ -52,6 +67,7 @@ Item {
         ]
 
         Behavior on scale { NumberAnimation { duration: 70 } }
+
         MouseArea {
             id: mouseArea
             anchors.fill: planetImage
