@@ -28,6 +28,7 @@ Item {
     property alias score: score
     property alias optionListModel: optionListModel
     property string planetRealImage
+    property string question
 
     Rectangle {
         id: questionArea
@@ -49,7 +50,7 @@ Item {
             color: "black"
             width: parent.width
             wrapMode: Text.Wrap
-            text: "Test Text"
+            text: mainQuizScreen.question
         }
     }
 
@@ -67,83 +68,105 @@ Item {
         anchors.margins: 10 * ApplicationInfo.ratio
 
         Item {
-            width: background.horizontalLayout
+            width: items.bar.level === 3
+                   ? 0
+                   : background.horizontalLayout
                    ? background.width * 0.40
                    : background.width - gridId.anchors.margins * 2
-            height: background.horizontalLayout
+            height: items.bar.level === 3
+                    ? 0
+                    : background.horizontalLayout
                     ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.4
 
             Image {
                 id: planetImageMain
-                width: Math.min(parent.width, parent.height) * 0.9
-                height: width
+                sourceSize.width: Math.min(parent.width, parent.height) * 0.9
+                sourceSize.height: width
                 anchors.centerIn: parent
                 source: mainQuizScreen.planetRealImage
                 visible: items.bar.level != 3
             }
         }
 
-        ListView {
-            id: optionListView
-            width: background.horizontalLayout
+        Item {
+            width: items.bar.level === 3
+                   ? mainQuizScreen.width
+                   : background.horizontalLayout
                    ? background.width * 0.55
                    : background.width - gridId.anchors.margins * 2
             height: background.horizontalLayout
                     ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.60
-            spacing: 10 * ApplicationInfo.ratio
-            orientation: Qt.Vertical
-            verticalLayoutDirection: ListView.TopToBottom
-            interactive: false
-            model: optionListModel
 
-            highlightFollowsCurrentItem: false
-            focus: true
-            keyNavigationWraps: true
+            ListView {
+                id: optionListView
+                anchors.verticalCenter: background.horizontalLayout ? parent.verticalCenter : undefined
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: background.horizontalLayout
+                       ? background.width * 0.40
+                       : background.width - gridId.anchors.margins * 2
+                height: background.horizontalLayout
+                        ? background.height - bar.height - questionArea.height - 50 * ApplicationInfo.ratio
+                        : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.60
+                spacing: 10 * ApplicationInfo.ratio
+                orientation: Qt.Vertical
+                verticalLayoutDirection: ListView.TopToBottom
+                interactive: false
+                model: optionListModel
 
-            property int buttonHeight: height / 4 * 0.9
+                highlightFollowsCurrentItem: false
+                focus: true
+                keyNavigationWraps: true
 
-            delegate: Item {
-                id: optionListViewDelegate
-                width: optionListView.width
-                height: optionListView.buttonHeight
-                anchors.right: parent.right
-                anchors.left: parent.left
+                property int buttonHeight: height / 4 * 0.9
 
-                property string closenessValue: closeness[index]
-
-                Image {
-                    id: planetImageOption
-                    width: height
-                    height: wordListView.buttonHeight
-                    source: planetOptionImage[index]                                                   //source image to be set
-                    z: 7
-                    fillMode: Image.PreserveAspectFit
-                    anchors.leftMargin: 5 * ApplicationInfo.ratio
-                    visible:  (items.bar.level == 1) ? true : false  // hide images after first mini game
-                }
-
-                AnswerButton {
-                    id: wordRectangle
-                    width: parent.width * 0.6
-                    height: wordListView.buttonHeight
-                    textLabel: options[index]                                        //source text to be set
-
-                    anchors.left: planetImageOption.left
+                delegate: Item {
+                    id: optionListViewDelegate
+                    width: optionListView.width
+                    height: optionListView.buttonHeight
                     anchors.right: parent.right
+                    anchors.left: parent.left
 
-                    isCorrectAnswer: optionListViewDelegate.closenessValue === "100%"  //set the condition
-                    onIncorrectlyPressed: {
+                    property string closenessValue: closeness
 
+                    Image {
+                        id: planetImageOption
+                        width: height
+                        height: optionListView.buttonHeight
+                        source: planetOptionImage                                                   //source image to be set
+                        z: 7
+                        fillMode: Image.PreserveAspectFit
+                        anchors.leftMargin: 5 * ApplicationInfo.ratio
+                        visible:  (items.bar.level == 1) ? true : false  // hide images after first mini game
                     }
-                    onCorrectlyPressed: {
 
+                    AnswerButton {
+                        id: wordRectangle
+                        width: parent.width * 0.6
+                        height: optionListView.buttonHeight
+                        textLabel: optionValue                                       //source text to be set
+
+                        anchors.left: planetImageOption.left
+                        anchors.right: parent.right
+
+                        isCorrectAnswer: closenessValue === "100%"  //set the condition
+                        onIncorrectlyPressed: {
+                            //mainQuizScreen.closenessValueInMeter = closenessValue
+                            //clonessMeterAnim.start()
+                        }
+                        onCorrectlyPressed: {
+                            //mainQuizScreen.closenessValueInMeter = closenessValue
+                            //clonessMeterAnim.start()
+                            Activity.nextSubLevel()
+                        }
                     }
                 }
             }
         }
     }
+
+    property string closnessValueInMeter
 
     Score {
         id: score
