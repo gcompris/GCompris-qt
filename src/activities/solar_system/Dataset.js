@@ -161,7 +161,7 @@ function get() {
 					"question": qsTr("Earth has ____ seasons."),
                     "options": ["2","4","6","1"],
                     "closeness": ["34%","100%","34%","1%"],
-                    "hint": "10 - 8 + 4"
+                    "hint": "10 - 8 + 2"
 				}
 			]
 		},

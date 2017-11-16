@@ -30,6 +30,8 @@ Item {
     property string planetRealImage
     property string question
     property string closenessValueInMeter
+    property bool hintVisible
+    property string hint
 
     Rectangle {
         id: questionArea
@@ -144,20 +146,26 @@ Item {
 
                         isCorrectAnswer: closenessValue === "100%"  //set the condition
                         onIncorrectlyPressed: {
-                            if(correctAnswerAnim.running)
-                                correctAnswerAnim.stop()
-                            if(incorrectAnswerAnim.running)
-                                incorrectAnswerAnim.stop()
-                            incorrectAnswerAnim.start()
-                            mainQuizScreen.closenessValueInMeter = closenessValue
+                            if(items.bar.level === 1) {
+                                if(correctAnswerAnim.running)
+                                    correctAnswerAnim.stop()
+                                if(incorrectAnswerAnim.running)
+                                    incorrectAnswerAnim.stop()
+                                incorrectAnswerAnim.start()
+                                mainQuizScreen.closenessValueInMeter = closenessValue
+                            }
                         }
                         onCorrectlyPressed: {
-                            if(correctAnswerAnim.running)
-                                correctAnswerAnim.stop()
-                            if(incorrectAnswerAnim.running)
-                                incorrectAnswerAnim.stop()
-                            correctAnswerAnim.start()
-                            mainQuizScreen.closenessValueInMeter = closenessValue
+                            if(items.bar.level === 1) {
+                                if(correctAnswerAnim.running)
+                                    correctAnswerAnim.stop()
+                                if(incorrectAnswerAnim.running)
+                                    incorrectAnswerAnim.stop()
+                                correctAnswerAnim.start()
+                                mainQuizScreen.closenessValueInMeter = closenessValue
+                            }
+                            else
+                                Activity.nextSubLevel()
                         }
                     }
                 }
@@ -183,7 +191,7 @@ Item {
         radius: width * 0.06
         border.width: 2
         border.color: "black"
-        opacity: 0.75
+        opacity: 0.78
         visible: items.bar.level === 1
         GCText {
             id: closenessText
@@ -205,6 +213,27 @@ Item {
             NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
             NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
             ScriptAction { script: Activity.nextSubLevel() }
+        }
+    }
+
+    Rectangle {
+        id: hintBar
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.margins: 10 * ApplicationInfo.ratio
+        height: hintText.height * 1.23
+        width: hintText.width * 1.23
+        radius: width * 0.06
+        border.width: 2
+        border.color: "black"
+        opacity: 0.78
+        visible: hintVisible
+        GCText {
+            id: hintText
+            anchors.centerIn: parent
+            color: "black"
+            fontSize: background.horizontalLayout ? mediumSize : smallSize
+            text: "Hint: " + hint
         }
     }
 }
