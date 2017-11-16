@@ -132,7 +132,10 @@ ActivityBase {
                     Activity.showSolarModel()
             }
             onHintClicked: {
-
+                if(items.mainQuizScreen.hintVisible)
+                    items.mainQuizScreen.hintVisible = false
+                else
+                    items.mainQuizScreen.hintVisible = true
             }
         }
 
