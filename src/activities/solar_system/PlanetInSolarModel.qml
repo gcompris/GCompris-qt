@@ -1,4 +1,4 @@
-/* GCompris - PlanetDetails.qml
+/* GCompris - PlanetInSolarModel.qml
  *
  * Copyright (C) 2017 Aman Kumar Gupta <gupta2140@gmail.com>
  *
