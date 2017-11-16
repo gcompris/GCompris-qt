@@ -71,8 +71,9 @@ Item {
         MouseArea {
             id: mouseArea
             anchors.fill: planetImage
-            hoverEnabled: true
-            onClicked: Activity.showQuestionScreen(index)            //to show the related questions of this planet
+            enabled: !message.visible
+            hoverEnabled: ApplicationInfo.isMobile ? false : true
+            onClicked: Activity.showQuizScreen(index)            //to show the related questions of this planet
         }
     }
 }

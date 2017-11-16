@@ -24,13 +24,11 @@ var currentLevel = 0
 var numberOfLevel = 3
 var items
 var dataset
-var url
 var currentPlanetLevels
 var currentSubLevel
 
-function start(items_, url_) {
+function start(items_) {
     items = items_
-    url = url_
     currentLevel = 0
     dataset= Dataset.get()
     for(var i = 0;  i < dataset.length; ++i) {
@@ -52,7 +50,12 @@ function initLevel() {
     nextSubLevel();
 }
 
-function showQuestionScreen(index) {
+function showSolarModel() {
+    items.quizScreenVisible = false
+    items.solarSystemVisible = true
+}
+
+function showQuizScreen(index) {
     items.solarSystemVisible = false
     items.quizScreenVisible = true
     currentPlanetLevels = dataset[index].levels
@@ -61,15 +64,15 @@ function showQuestionScreen(index) {
 }
 
 function nextSubLevel() {
+    items.mainQuizScreen.closenessValueInMeter = "0%"
     if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)
-        nextLevel();
+        items.bonus.good("flower")
     else {
         var currentQuestion = currentPlanetLevels[currentSubLevel].question
         items.mainQuizScreen.question = currentQuestion
         items.mainQuizScreen.optionListModel.clear()
         for(var i=0; i<4; i++) {
             items.mainQuizScreen.optionListModel.append({
-                   //"planetOptionImage": currentPlanetLevels[currentSubLevel].optionImages[i],
                    "optionValue": currentPlanetLevels[currentSubLevel].options[i],
                    "closeness": currentPlanetLevels[currentSubLevel].closeness[i]
             });

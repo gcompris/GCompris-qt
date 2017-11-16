@@ -24,8 +24,6 @@ import "solar_system.js" as Activity
 ActivityBase {
     id: activity
 
-    property string url: "qrc:/gcompris/src/activities/intro_gravity/resource/"
-
     onStart: {
         focus = true;
     }
@@ -35,7 +33,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        source: url + "background.svg"
+        source: "qrc:/gcompris/src/activities/intro_gravity/resource/background.svg"
 
         property bool horizontalLayout: background.width > background.height
 
@@ -60,7 +58,7 @@ ActivityBase {
             property alias mainQuizScreen: mainQuizScreen
         }
 
-        onStart: { Activity.start(items, url) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         IntroMessage {
@@ -118,13 +116,24 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: items.solarSystemVisible ? withoutLevelWithoutHint : (level === 2) ? withLevelWithHint : withLevelWithoutHint
+            property BarEnumContent withoutLevelWithoutHint: BarEnumContent { value: help | home }
+            property BarEnumContent withLevelWithoutHint: BarEnumContent { value: help | home | level }
+            property BarEnumContent withLevelWithHint: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(items.solarSystemVisible)
+                    activity.home()
+                else
+                    Activity.showSolarModel()
+            }
+            onHintClicked: {
+
+            }
         }
 
         Bonus {

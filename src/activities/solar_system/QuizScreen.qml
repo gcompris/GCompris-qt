@@ -29,6 +29,7 @@ Item {
     property alias optionListModel: optionListModel
     property string planetRealImage
     property string question
+    property string closenessValueInMeter
 
     Rectangle {
         id: questionArea
@@ -68,12 +69,12 @@ Item {
         anchors.margins: 10 * ApplicationInfo.ratio
 
         Item {
-            width: items.bar.level === 3
+            width: (items.bar.level === 3)
                    ? 0
                    : background.horizontalLayout
                    ? background.width * 0.40
                    : background.width - gridId.anchors.margins * 2
-            height: items.bar.level === 3
+            height: (items.bar.level === 3)
                     ? 0
                     : background.horizontalLayout
                     ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
@@ -82,15 +83,15 @@ Item {
             Image {
                 id: planetImageMain
                 sourceSize.width: Math.min(parent.width, parent.height) * 0.9
-                sourceSize.height: width
                 anchors.centerIn: parent
                 source: mainQuizScreen.planetRealImage
                 visible: items.bar.level != 3
+                fillMode: Image.PreserveAspectCrop
             }
         }
 
         Item {
-            width: items.bar.level === 3
+            width: (items.bar.level === 3)
                    ? mainQuizScreen.width
                    : background.horizontalLayout
                    ? background.width * 0.55
@@ -101,7 +102,7 @@ Item {
 
             ListView {
                 id: optionListView
-                anchors.verticalCenter: background.horizontalLayout ? parent.verticalCenter : undefined
+                anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: background.horizontalLayout
                        ? background.width * 0.40
@@ -121,6 +122,10 @@ Item {
 
                 property int buttonHeight: height / 4 * 0.9
 
+                add: Transition {
+                    NumberAnimation { properties: "y"; from: parent.y; duration: 500 }
+                }
+
                 delegate: Item {
                     id: optionListViewDelegate
                     width: optionListView.width
@@ -130,35 +135,29 @@ Item {
 
                     property string closenessValue: closeness
 
-                    Image {
-                        id: planetImageOption
-                        width: height
-                        height: optionListView.buttonHeight
-                        source: planetOptionImage                                                   //source image to be set
-                        z: 7
-                        fillMode: Image.PreserveAspectFit
-                        anchors.leftMargin: 5 * ApplicationInfo.ratio
-                        visible:  (items.bar.level == 1) ? true : false  // hide images after first mini game
-                    }
-
                     AnswerButton {
                         id: wordRectangle
-                        width: parent.width * 0.6
+                        width: parent.width
                         height: optionListView.buttonHeight
                         textLabel: optionValue                                       //source text to be set
-
-                        anchors.left: planetImageOption.left
                         anchors.right: parent.right
 
                         isCorrectAnswer: closenessValue === "100%"  //set the condition
                         onIncorrectlyPressed: {
-                            //mainQuizScreen.closenessValueInMeter = closenessValue
-                            //clonessMeterAnim.start()
+                            if(correctAnswerAnim.running)
+                                correctAnswerAnim.stop()
+                            if(incorrectAnswerAnim.running)
+                                incorrectAnswerAnim.stop()
+                            incorrectAnswerAnim.start()
+                            mainQuizScreen.closenessValueInMeter = closenessValue
                         }
                         onCorrectlyPressed: {
-                            //mainQuizScreen.closenessValueInMeter = closenessValue
-                            //clonessMeterAnim.start()
-                            Activity.nextSubLevel()
+                            if(correctAnswerAnim.running)
+                                correctAnswerAnim.stop()
+                            if(incorrectAnswerAnim.running)
+                                incorrectAnswerAnim.stop()
+                            correctAnswerAnim.start()
+                            mainQuizScreen.closenessValueInMeter = closenessValue
                         }
                     }
                 }
@@ -166,13 +165,46 @@ Item {
         }
     }
 
-    property string closnessValueInMeter
-
     Score {
         id: score
         anchors.bottom: undefined
         anchors.right: parent.right
         anchors.rightMargin: 10 * ApplicationInfo.ratio
         anchors.top: parent.top
+    }
+
+    Rectangle {
+        id: closenessMeter
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.margins: 10 * ApplicationInfo.ratio
+        height: closenessText.height * 1.23
+        width: closenessText.width * 1.23
+        radius: width * 0.06
+        border.width: 2
+        border.color: "black"
+        opacity: 0.75
+        visible: items.bar.level === 1
+        GCText {
+            id: closenessText
+            anchors.centerIn: parent
+            color: "black"
+            fontSize: background.horizontalLayout ? mediumSize : smallSize
+            text: "Closeness: " + closenessValueInMeter
+        }
+        SequentialAnimation {
+            id: incorrectAnswerAnim
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
+        }
+
+        SequentialAnimation {
+            id: correctAnswerAnim
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
+            ScriptAction { script: Activity.nextSubLevel() }
+        }
     }
 }
