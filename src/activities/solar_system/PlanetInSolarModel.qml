@@ -32,7 +32,7 @@ Item {
         horizontalAlignment: Text.AlignHCenter
         width: parent.width
         fontSizeMode: Text.Fit
-        font.pointSize: NaN  // need to clear font.pointSize explicitly
+        font.pointSize: NaN                   // need to clear font.pointSize explicitly
         font.pixelSize: parent.width * 0.18
         color: "white"
         text: parent.name
@@ -73,7 +73,7 @@ Item {
             anchors.fill: planetImage
             enabled: !message.visible
             hoverEnabled: ApplicationInfo.isMobile ? false : true
-            onClicked: Activity.showQuizScreen(index)            //to show the related questions of this planet
+            onClicked: Activity.showQuizScreen(index)                   //to initialize the related questions of this planet
         }
     }
 }

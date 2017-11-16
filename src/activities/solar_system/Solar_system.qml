@@ -53,9 +53,9 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias containerModel: containerModel
+            property alias mainQuizScreen: mainQuizScreen
             property bool solarSystemVisible
             property bool quizScreenVisible
-            property alias mainQuizScreen: mainQuizScreen
         }
 
         onStart: { Activity.start(items) }
@@ -144,5 +144,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
 }
