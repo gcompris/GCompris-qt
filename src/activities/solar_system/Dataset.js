@@ -29,7 +29,7 @@ function get() {
 				},
 				{ //sub-level 2
 					"question": qsTr("The temperature of the sun is around _____degrees"),
-					"options": [1000,4500,5505,3638],
+                    "options": ["1000","4500","5505","3638"],
 					"closeness": ["1%","78%","100%","60%"]
 				},
 				{ //sub-level 3
@@ -66,7 +66,7 @@ function get() {
 				},
 				{ //sub-level 3
 					"question": qsTr("How many moons does Mercury has?"),
-					"options": [5,200,0,10],
+                    "options": ["5","200","0","10"],
 					"closeness": ["97.5%","1%","100%","95%"]
 				},
 				{ //sub-level 4
@@ -130,7 +130,7 @@ function get() {
 				},
 				{ //sub-level 3
 					"question": qsTr("How many moons does Earth has?"),
-					"options": [1,5,2,3],
+                    "options": ["1","5","2","3"],
 					"closeness": ["100%","15%","75.2%","50.5%"]
 				},
 				{ //sub-level 4
@@ -140,7 +140,7 @@ function get() {
 				},
 				{ //sub-level 5
 					"question": qsTr("Earth has ____ seasons."),
-					"options": [2,4,6,1],
+                    "options": ["2","4","6","1"],
 					"closeness": ["34%","100%","34%","1%"]
 				}
 			]
@@ -167,7 +167,7 @@ function get() {
 				},
 				{ //sub-level 4
 					"question": qsTr("How many moons does Mars has?"),
-					"options": [1,5,2,3],
+                    "options": ["1","5","2","3"],
 					"closeness": ["67%","1%","100%","50.5%"]
 				},
 				{ //sub-level 5
@@ -185,7 +185,7 @@ function get() {
 				{ //sub-level 1
 					"question": qsTr("Jupiter is the ______ planet in the Solar System"),
 					"options": [qsTr("Sixth"),qsTr("Fifth"),qsTr("First"),qsTr("Fourth")],
-					"closeness": ["75.2%","75.2%","1%","100%"]
+					"closeness": ["75.2%","100%","1%","75.2%"]
 				},
 				{ //sub-level 2
 					"question": qsTr("Jupiter is the ______  largest planet in the Solar System"),
@@ -194,12 +194,12 @@ function get() {
 				},
 				{ //sub-level 3
 					"question": qsTr("Jupiter is as big as"),
-					"options": [20,100,1000,3000],
+                    "options": ["20","100","1000","3000"],
 					"closeness": ["1%","7.2%","85.5%","100%"]
 				},
 				{ //sub-level 4
 					"question": qsTr("How many moons does Jupiter has?"),
-					"options": [1,20,25,16],
+                    "options": ["1","20","25","16"],
 					"closeness": ["70.1%","92.5%","1%","100%"]
 				},
 				{ //sub-level 5
@@ -226,7 +226,7 @@ function get() {
 				},
 				{ //sub-level 3
 					"question": qsTr("How many moons does Saturn has?"),
-					"options": [120,1,150,200],
+                    "options": ["120","1","150","200"],
 					"closeness": ["80%","1%","100%","60.8%"]
 				},
 				{ //sub-level 4
@@ -236,7 +236,7 @@ function get() {
 				},
 				{ //sub-level 5
 					"question": qsTr("Saturn is as big as ____ Earths"),
-					"options": [100,764,300,1300],
+                    "options": ["100","764","300","1300"],
 					"closeness": ["1%","100%","30.8%","20.1%"]
 				}
 			]
@@ -253,12 +253,12 @@ function get() {
 				},
 				{ //sub-level 2
 					"question": qsTr("How many years does it take Uranus to go once around the Sun?"),
-					"options": [1,24,68,84],
+                    "options": ["1","24","68","84"],
 					"closeness": ["1%","28.4%","80.9%","100%"]
 				},
 				{ //sub-level 3
 					"question": qsTr("How many moons does Uranus has?"),
-					"options": [120,87,27,50],
+                    "options": ["120","87","27","50"],
 					"closeness": ["1%","36.1%","100%","75.5%"]
 				},
 				{ //sub-level 4
@@ -290,7 +290,7 @@ function get() {
 				},
 				{ //sub-level 3
 					"question": qsTr("How many moons does Neptune has?"),
-					"options": [120,87,14,50],
+                    "options": ["120","87","14","50"],
 					"closeness": ["1%","31.8%","100%","66.3%"]
 				},
 				{ //sub-level 4

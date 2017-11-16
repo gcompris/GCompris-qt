@@ -24,6 +24,8 @@ import "solar_system.js" as Activity
 ActivityBase {
     id: activity
 
+    property string url: "qrc:/gcompris/src/activities/intro_gravity/resource/"
+
     onStart: {
         focus = true;
     }
@@ -33,7 +35,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/intro_gravity/resource/background.svg"
+        source: url + "background.svg"
 
         property bool horizontalLayout: background.width > background.height
 
@@ -55,11 +57,10 @@ ActivityBase {
             property alias containerModel: containerModel
             property bool solarSystemVisible
             property bool quizScreenVisible
-            property alias score: mainQuizScreen.score
-            property alias optionListModel: mainQuizScreen.optionListModel
+            property alias mainQuizScreen: mainQuizScreen
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, url) }
         onStop: { Activity.stop() }
 
         IntroMessage {
@@ -99,7 +100,7 @@ ActivityBase {
             cellWidth: background.itemWidth
             cellHeight: cellWidth
             model: containerModel
-            delegate: PlanetDetails {
+            delegate: PlanetInSolarModel {
                 planetImgClipSrc: clipImg
                 name: bodyName
             }

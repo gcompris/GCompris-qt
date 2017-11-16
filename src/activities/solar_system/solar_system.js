@@ -21,12 +21,16 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 3
 var items
 var dataset
+var url
+var currentPlanetLevels
+var currentSubLevel
 
-function start(items_) {
+function start(items_, url_) {
     items = items_
+    url = url_
     currentLevel = 0
     dataset= Dataset.get()
     for(var i = 0;  i < dataset.length; ++i) {
@@ -36,21 +40,43 @@ function start(items_) {
         });
     }
     items.solarSystemVisible = true
-    initLevel()
 }
 
 function stop() {
 }
 
 function initLevel() {
+    currentSubLevel = 0
     items.bar.level = currentLevel + 1
-    items.score.currentSubLevel = 1
-    items.score.numberOfSubLevels = 5
+    items.mainQuizScreen.score.numberOfSubLevels = currentPlanetLevels.length
+    nextSubLevel();
 }
 
 function showQuestionScreen(index) {
     items.solarSystemVisible = false
     items.quizScreenVisible = true
+    currentPlanetLevels = dataset[index].levels
+    items.mainQuizScreen.planetRealImage = dataset[index].realImg
+    initLevel();
+}
+
+function nextSubLevel() {
+    if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)
+        nextLevel();
+    else {
+        var currentQuestion = currentPlanetLevels[currentSubLevel].question
+        items.mainQuizScreen.question = currentQuestion
+        items.mainQuizScreen.optionListModel.clear()
+        for(var i=0; i<4; i++) {
+            items.mainQuizScreen.optionListModel.append({
+                   //"planetOptionImage": currentPlanetLevels[currentSubLevel].optionImages[i],
+                   "optionValue": currentPlanetLevels[currentSubLevel].options[i],
+                   "closeness": currentPlanetLevels[currentSubLevel].closeness[i]
+            });
+        }
+        currentSubLevel++;
+        items.mainQuizScreen.score.currentSubLevel = currentSubLevel
+    }
 }
 
 function nextLevel() {
