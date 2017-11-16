@@ -141,10 +141,10 @@ Item {
                         id: wordRectangle
                         width: parent.width
                         height: optionListView.buttonHeight
-                        textLabel: optionValue                                       //source text to be set
+                        textLabel: optionValue
                         anchors.right: parent.right
 
-                        isCorrectAnswer: closenessValue === "100%"  //set the condition
+                        isCorrectAnswer: closenessValue === "100%"
                         onIncorrectlyPressed: {
                             if(items.bar.level === 1) {
                                 if(correctAnswerAnim.running)
@@ -200,6 +200,7 @@ Item {
             fontSize: background.horizontalLayout ? mediumSize : smallSize
             text: "Closeness: " + closenessValueInMeter
         }
+
         SequentialAnimation {
             id: incorrectAnswerAnim
             NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
