@@ -17,6 +17,8 @@
  */
 import QtQuick 2.6
 import GCompris 1.0
+import QtGraphicalEffects 1.0
+
 import "../../core"
 import "solar_system.js" as Activity
 
@@ -24,6 +26,7 @@ Item {
     id: mainQuizScreen
     width: parent.width
     height: parent.height
+    focus: true
 
     property alias score: score
     property alias optionListModel: optionListModel
@@ -62,7 +65,7 @@ Item {
     }
 
     Grid {
-        id: gridId
+        id: imageAndOptionGrid
         columns: (background.horizontalLayout && items.bar.level!=3) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
         anchors.top: questionArea.bottom
@@ -71,15 +74,11 @@ Item {
         anchors.margins: 10 * ApplicationInfo.ratio
 
         Item {
-            width: (items.bar.level === 3)
-                   ? 0
-                   : background.horizontalLayout
-                   ? background.width * 0.40
-                   : background.width - gridId.anchors.margins * 2
-            height: (items.bar.level === 3)
-                    ? 0
-                    : background.horizontalLayout
-                    ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
+            width: (items.bar.level === 3) ? 0
+                   : background.horizontalLayout ? background.width * 0.40
+                   : background.width - imageAndOptionGrid.anchors.margins * 2
+            height: (items.bar.level === 3) ? 0
+                    : background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.4
 
             Image {
@@ -93,34 +92,25 @@ Item {
         }
 
         Item {
-            width: (items.bar.level === 3)
-                   ? mainQuizScreen.width
-                   : background.horizontalLayout
-                   ? background.width * 0.55
-                   : background.width - gridId.anchors.margins * 2
-            height: background.horizontalLayout
-                    ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
+            width: (items.bar.level === 3) ? mainQuizScreen.width
+                   : background.horizontalLayout ? background.width * 0.55
+                   : background.width - imageAndOptionGrid.anchors.margins * 2
+            height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.60
 
             ListView {
                 id: optionListView
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
-                width: background.horizontalLayout
-                       ? background.width * 0.40
-                       : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout
-                        ? background.height - bar.height - questionArea.height - 50 * ApplicationInfo.ratio
+                width: background.horizontalLayout ? background.width * 0.40
+                       : background.width - imageAndOptionGrid.anchors.margins * 2
+                height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 50 * ApplicationInfo.ratio
                         : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.60
                 spacing: 10 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
                 model: optionListModel
-
-                highlightFollowsCurrentItem: false
-                focus: true
-                keyNavigationWraps: true
 
                 property int buttonHeight: height / 4 * 0.9
 

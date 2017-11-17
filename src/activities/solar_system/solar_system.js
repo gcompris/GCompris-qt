@@ -47,6 +47,7 @@ function initLevel() {
     currentSubLevel = 0
     items.bar.level = currentLevel + 1
     items.mainQuizScreen.score.numberOfSubLevels = currentPlanetLevels.length
+    Core.shuffle(currentPlanetLevels)
     nextSubLevel();
 }
 
