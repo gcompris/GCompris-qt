@@ -99,8 +99,8 @@ ActivityBase {
             cellHeight: cellWidth
             model: containerModel
             delegate: PlanetInSolarModel {
-                planetImgClipSrc: clipImg
-                nameOFThePlanet: bodyName
+                planetImageSource: clipImg
+                nameOfPlanet: bodyName
             }
         }
 
@@ -132,10 +132,7 @@ ActivityBase {
                     Activity.showSolarModel()
             }
             onHintClicked: {
-                if(items.mainQuizScreen.hintVisible)
-                    items.mainQuizScreen.hintVisible = false
-                else
-                    items.mainQuizScreen.hintVisible = true
+                if(items.mainQuizScreen.hintVisible = !items.mainQuizScreen.hintVisible);
             }
         }
 

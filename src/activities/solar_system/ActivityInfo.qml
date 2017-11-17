@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: "Solar System"
+  title: qsTr("Solar System")
   //: Help title
   description: qsTr("Answer the questions presented and get a 100% correctness among the options.")
   //intro: "Answer the questions presented and get a 100% correctness among the options."
@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Click on a planet or the Sun to reveal questions. Each question contains 4 options. One of those is 100% correct. 				Try to answer the questions till you get a 100% closeness in the closeness meter.")
+  manual: qsTr("Click on a planet or the Sun to reveal questions. Each question contains 4 options. One of those is 100% correct. Try to answer the questions till you get a 100% closeness in the closeness meter.")
   credit: ""
   section: "fun"
   createdInVersion: 9000

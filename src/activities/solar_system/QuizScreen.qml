@@ -74,19 +74,17 @@ Item {
         anchors.margins: 10 * ApplicationInfo.ratio
 
         Item {
-            width: (items.bar.level === 3) ? 0
-                   : background.horizontalLayout ? background.width * 0.40
+            width: background.horizontalLayout ? background.width * 0.40
                    : background.width - imageAndOptionGrid.anchors.margins * 2
-            height: (items.bar.level === 3) ? 0
-                    : background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
+            height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.4
+            visible: !(items.bar.level === 3)
 
             Image {
                 id: planetImageMain
                 sourceSize.width: Math.min(parent.width, parent.height) * 0.9
                 anchors.centerIn: parent
                 source: mainQuizScreen.planetRealImage
-                visible: items.bar.level != 3
                 fillMode: Image.PreserveAspectCrop
             }
         }
@@ -188,7 +186,7 @@ Item {
             anchors.centerIn: parent
             color: "black"
             fontSize: background.horizontalLayout ? mediumSize : smallSize
-            text: "Closeness: " + closenessValueInMeter
+            text: qsTr("Closeness: ") + closenessValueInMeter
         }
 
         SequentialAnimation {
@@ -224,7 +222,7 @@ Item {
             anchors.centerIn: parent
             color: "black"
             fontSize: background.horizontalLayout ? mediumSize : smallSize
-            text: "Hint: " + hint
+            text: qsTr("Hint: ") + hint
         }
     }
 }
