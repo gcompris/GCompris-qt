@@ -25,10 +25,10 @@ Item {
     width: background.itemWidth
     height: width
 
-    property string planetImgClipSrc
-    property string nameOFThePlanet
+    property string planetImageSource
+    property string nameOfPlanet
 
-    GCText{
+    GCText {
         id: planetName
         horizontalAlignment: Text.AlignHCenter
         width: parent.width
@@ -36,7 +36,7 @@ Item {
         font.pointSize: NaN                   // need to clear font.pointSize explicitly
         font.pixelSize: parent.width * 0.18
         color: "white"
-        text: nameOFThePlanet
+        text: nameOfPlanet
     }
 
     Image {
@@ -46,7 +46,7 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         sourceSize.width: parent.width / 1.5
         fillMode: Image.PreserveAspectCrop
-        source: planetImgClipSrc
+        source: planetImageSource
 
         states: [
             State {
