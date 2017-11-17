@@ -52,6 +52,7 @@ function initLevel() {
 }
 
 function showSolarModel() {
+    currentLevel = 0
     items.quizScreenVisible = false
     items.solarSystemVisible = true
 }
