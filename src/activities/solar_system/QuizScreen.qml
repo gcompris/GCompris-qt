@@ -128,7 +128,7 @@ Item {
                     property string closenessValue: closeness
 
                     AnswerButton {
-                        id: wordRectangle
+                        id: optionRectangle
                         width: parent.width
                         height: optionListView.buttonHeight
                         textLabel: optionValue
