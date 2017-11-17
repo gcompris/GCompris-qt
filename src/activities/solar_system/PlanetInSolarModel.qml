@@ -24,6 +24,7 @@ Item {
     id: planetItem
     width: background.itemWidth
     height: width
+
     property string planetImgClipSrc
     property string nameOFThePlanet
 
