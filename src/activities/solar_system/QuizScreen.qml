@@ -33,8 +33,8 @@ Item {
     property string planetRealImage
     property string question
     property string closenessValueInMeter
-    property bool hintVisible
     property string hint
+    property bool hintVisible
 
     Rectangle {
         id: questionArea
