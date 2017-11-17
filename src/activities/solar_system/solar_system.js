@@ -71,8 +71,7 @@ function nextSubLevel() {
     if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)
         items.bonus.good("flower")
     else {
-        var currentQuestion = currentPlanetLevels[currentSubLevel].question
-        items.mainQuizScreen.question = currentQuestion
+        items.mainQuizScreen.question = currentPlanetLevels[currentSubLevel].question
         items.mainQuizScreen.optionListModel.clear()
         for(var i=0; i<4; i++) {
             items.mainQuizScreen.optionListModel.append({
