@@ -25,7 +25,7 @@ Item {
     width: background.itemWidth
     height: width
     property string planetImgClipSrc
-    property string name
+    property string nameOFThePlanet
 
     GCText{
         id: planetName
@@ -35,7 +35,7 @@ Item {
         font.pointSize: NaN                   // need to clear font.pointSize explicitly
         font.pixelSize: parent.width * 0.18
         color: "white"
-        text: parent.name
+        text: nameOFThePlanet
     }
 
     Image {
@@ -43,7 +43,7 @@ Item {
         anchors.top: planetName.bottom
         anchors.topMargin: parent.width * 0.05
         anchors.horizontalCenter: parent.horizontalCenter
-        sourceSize.width: parent.width/1.5
+        sourceSize.width: parent.width / 1.5
         fillMode: Image.PreserveAspectCrop
         source: planetImgClipSrc
 
@@ -73,7 +73,7 @@ Item {
             anchors.fill: planetImage
             enabled: !message.visible
             hoverEnabled: ApplicationInfo.isMobile ? false : true
-            onClicked: Activity.showQuizScreen(index)                   //to initialize the related questions of this planet
+            onClicked: Activity.showQuizScreen(index)
         }
     }
 }

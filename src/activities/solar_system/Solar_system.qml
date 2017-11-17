@@ -33,7 +33,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/intro_gravity/resource/background.svg"
+        source: "qrc:/gcompris/src/activities/solar_system/resource/background.jpg"
 
         property bool horizontalLayout: background.width > background.height
 
@@ -100,7 +100,7 @@ ActivityBase {
             model: containerModel
             delegate: PlanetInSolarModel {
                 planetImgClipSrc: clipImg
-                name: bodyName
+                nameOFThePlanet: bodyName
             }
         }
 
