@@ -220,9 +220,9 @@ function get() {
                             "hint": "10 - 8 - 1"
                         },
                         { 	//sub-level 3
-                            "question": qsTr("Jupiter is as big as"),
-                            "options": ["20","100","1000","3000"],
-                            "closeness": ["1%","7.2%","85.5%","100%"],
+                            "question": qsTr("Jupiter is as big as ____ Earths"),
+                            "options": ["100","764","300","1300"],
+                            "closeness": ["1%","63%","24.7%","100%"],
                             "hint": "3000 * 1"
                         },
                         { 	//sub-level 4
