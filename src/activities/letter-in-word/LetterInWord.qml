@@ -24,6 +24,7 @@
 
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
+import QtQuick.Controls 1.5
 import GCompris 1.0
 import "../../core"
 import "letter-in-word.js" as Activity
@@ -65,6 +66,9 @@ ActivityBase {
             property alias bar: bar
             property alias background: background
             property alias wordsModel: wordsModel
+            property int currentMode: normalModeWordCount
+            readonly property int easyModeWordCount: 5
+            readonly property int normalModeWordCount: 11
             property GCAudio audioVoices: activity.audioVoices
             property alias parser: parser
             property alias animateX: animateX
@@ -91,12 +95,18 @@ ActivityBase {
                 animateX.restart();
         }
 
+        ExclusiveGroup {
+            id: configOptions
+        }
+
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
             content: Component {
                 Item {
                     property alias localeBox: localeBox
+                    property alias easyModeConfig: easyModeConfig
+                    property alias normalModeConfig: normalModeConfig
                     height: column.height
 
                     property alias availableLangs: langs.languages
@@ -107,7 +117,24 @@ ActivityBase {
                     Column {
                         id: column
                         spacing: 10
-                        width: parent.width
+                        width: dialogActivityConfig.width
+                        height: dialogActivityConfig.height
+
+                        GCDialogCheckBox {
+                            id: normalModeConfig
+                            width: column.width - 50
+                            text: qsTr("All words")
+                            checked: (items.currentMode === items.normalModeWordCount) ? true : false
+                            exclusiveGroup: configOptions
+                        }
+
+                        GCDialogCheckBox {
+                            id: easyModeConfig
+                            width: column.width - 50
+                            text: qsTr("Only 5 words")
+                            checked: (items.currentMode === items.easyModeWordCount) ? true : false
+                            exclusiveGroup: configOptions
+                        }
 
                         Flow {
                             spacing: 5
@@ -125,6 +152,10 @@ ActivityBase {
 
             onClose: home()
             onLoadData: {
+                if(dataToSave && dataToSave["savedMode"]) {
+                    items.currentMode = dataToSave["savedMode"] === "5" ? items.easyModeWordCount : items.normalModeWordCount
+                }
+
                 if(dataToSave && dataToSave["locale"]) {
                     background.locale = dataToSave["locale"];
                 }
@@ -137,12 +168,16 @@ ActivityBase {
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
-                dataToSave = {"locale": newLocale }
+
+                var oldMode = items.currentMode
+                items.currentMode = dialogActivityConfig.loader.item.easyModeConfig.checked ? items.easyModeWordCount : items.normalModeWordCount
+
+                dataToSave = {"locale": newLocale, "savedMode": items.currentMode}
 
                 background.locale = newLocale;
 
                 // Restart the activity with new information
-                if(oldLocale !== newLocale) {
+                if(oldLocale !== newLocale || oldMode !== items.currentMode) {
                     background.stop();
                     background.start();
                 }
@@ -220,10 +255,12 @@ ActivityBase {
 
             GCText {
                 id: questionItem
-                anchors.right: planeText.right
-                anchors.rightMargin: 2 * plane.width / 3
-                anchors.verticalCenter: planeText.verticalCenter
-                anchors.bottomMargin: 10 * ApplicationInfo.ratio
+                anchors {
+                    right: planeText.right
+                    rightMargin: 2 * plane.width / 3
+                    verticalCenter: planeText.verticalCenter
+                    bottomMargin: 10 * ApplicationInfo.ratio
+                }
                 fontSize: hugeSize
                 font.weight: Font.DemiBold
                 color: "#2a2a2a"
