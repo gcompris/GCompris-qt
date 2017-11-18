@@ -217,7 +217,7 @@ function get() {
                             "question": qsTr("Jupiter is the ______  largest planet in the Solar System"),
                             "options": [qsTr("Third"),qsTr("First"),qsTr("Fifth"),qsTr("Second")],
                             "closeness": ["50.5%","100%","1%","75.2%"],
-                            "hint": "10 - 9 - 1"
+                            "hint": "10 - 8 - 1"
                         },
                         { 	//sub-level 3
                             "question": qsTr("Jupiter is as big as"),
@@ -254,7 +254,7 @@ function get() {
                             "question": qsTr("Saturn is the ______ largest  planet in the Solar System"),
                             "options": [qsTr("Third"),qsTr("First"),qsTr("Fifth"),qsTr("Second")],
                             "closeness": ["67%","67%","1%","100%"],
-                            "hint": "4 + 2 - 2"
+                            "hint": "4 + 1 - 3"
                         },
                         { 	//sub-level 3
                             "question": qsTr("How many moons does Saturn has?"),
