@@ -33,8 +33,6 @@ Item {
     property string planetRealImage
     property string question
     property string closenessValueInMeter
-    property string hint
-    property bool hintVisible
 
     Rectangle {
         id: questionArea
@@ -66,7 +64,7 @@ Item {
 
     Grid {
         id: imageAndOptionGrid
-        columns: (background.horizontalLayout && items.bar.level!=3) ? 2 : 1
+        columns: (background.horizontalLayout && !activity.assessmentMode) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
         anchors.top: questionArea.bottom
         anchors.left: parent.left
@@ -78,7 +76,7 @@ Item {
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.4
-            visible: !(items.bar.level === 3)
+            visible: !activity.assessmentMode
 
             Image {
                 id: planetImageMain
@@ -90,7 +88,7 @@ Item {
         }
 
         Item {
-            width: (items.bar.level === 3) ? mainQuizScreen.width
+            width: activity.assessmentMode ? mainQuizScreen.width
                    : background.horizontalLayout ? background.width * 0.55
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
@@ -134,26 +132,20 @@ Item {
 
                         isCorrectAnswer: closenessValue === "100%"
                         onIncorrectlyPressed: {
-                            if(items.bar.level === 1) {
                                 if(correctAnswerAnim.running)
                                     correctAnswerAnim.stop()
                                 if(incorrectAnswerAnim.running)
                                     incorrectAnswerAnim.stop()
                                 incorrectAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
-                            }
                         }
                         onCorrectlyPressed: {
-                            if(items.bar.level === 1) {
                                 if(correctAnswerAnim.running)
                                     correctAnswerAnim.stop()
                                 if(incorrectAnswerAnim.running)
                                     incorrectAnswerAnim.stop()
                                 correctAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
-                            }
-                            else
-                                Activity.nextSubLevel()
                         }
                     }
                 }
@@ -180,7 +172,7 @@ Item {
         border.width: 2
         border.color: "black"
         opacity: 0.78
-        visible: items.bar.level === 1
+        visible: !activity.assessmentMode
         GCText {
             id: closenessText
             anchors.centerIn: parent
@@ -202,27 +194,6 @@ Item {
             NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
             NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
             ScriptAction { script: Activity.nextSubLevel() }
-        }
-    }
-
-    Rectangle {
-        id: hintBar
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        anchors.margins: 10 * ApplicationInfo.ratio
-        height: hintText.height * 1.23
-        width: hintText.width * 1.23
-        radius: width * 0.06
-        border.width: 2
-        border.color: "black"
-        opacity: 0.78
-        visible: hintVisible
-        GCText {
-            id: hintText
-            anchors.centerIn: parent
-            color: "black"
-            fontSize: background.horizontalLayout ? mediumSize : smallSize
-            text: qsTr("Hint: ") + hint
         }
     }
 }

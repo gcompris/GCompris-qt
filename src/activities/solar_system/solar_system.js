@@ -21,7 +21,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
-var numberOfLevel = 3
+var numberOfLevel = 1
 var items
 var dataset
 var currentPlanetLevels
@@ -67,7 +67,6 @@ function showQuizScreen(index) {
 
 function nextSubLevel() {
     items.mainQuizScreen.closenessValueInMeter = "0%"
-    items.mainQuizScreen.hintVisible =  false
     if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)
         items.bonus.good("flower")
     else {
@@ -79,9 +78,6 @@ function nextSubLevel() {
                    "closeness": currentPlanetLevels[currentSubLevel].closeness[i]
             });
         }
-
-        if(currentLevel+1 === 2)
-            items.mainQuizScreen.hint = currentPlanetLevels[currentSubLevel].hint
         currentSubLevel++;
         items.mainQuizScreen.score.currentSubLevel = currentSubLevel
     }
