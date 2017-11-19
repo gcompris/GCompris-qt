@@ -132,20 +132,26 @@ Item {
 
                         isCorrectAnswer: closenessValue === "100%"
                         onIncorrectlyPressed: {
+                            if(!background.assessmentMode) {
                                 if(correctAnswerAnim.running)
                                     correctAnswerAnim.stop()
                                 if(incorrectAnswerAnim.running)
                                     incorrectAnswerAnim.stop()
                                 incorrectAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
+                            }
                         }
                         onCorrectlyPressed: {
+                            if(!background.assessmentMode) {
                                 if(correctAnswerAnim.running)
                                     correctAnswerAnim.stop()
                                 if(incorrectAnswerAnim.running)
                                     incorrectAnswerAnim.stop()
                                 correctAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
+                            }
+                            else
+                                Activity.nextSubLevel()
                         }
                     }
                 }
@@ -193,7 +199,7 @@ Item {
             NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
             NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
             NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
-            ScriptAction { script: background.nextSubLevel() }
+            ScriptAction { script: Activity.nextSubLevel() }
         }
     }
 }
