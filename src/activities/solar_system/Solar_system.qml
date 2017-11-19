@@ -29,6 +29,8 @@ ActivityBase {
     }
     onStop: {}
 
+    property bool assessmentMode: false
+
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -109,6 +111,40 @@ ActivityBase {
             visible: items.quizScreenVisible
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    width: dialogActivityConfig.width
+                    height: dialogActivityConfig.height
+
+                    property bool assessmentMode: activity.assessmentMode
+
+                    GCDialogCheckBox {
+                        id: assessmentModeBox
+                        width: dialogActivityConfig.width
+                        text: qsTr("No closeness meter and no hint")
+                        checked: activity.assessmentMode
+                        onCheckedChanged: {
+                            if(assessmentModeBox.checked)
+                                activity.assessmentMode = true
+                        }
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["assessmentMode"])
+                    activity.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false;
+            }
+
+            onSaveData: {
+                dataToSave = {"assessmentMode": "" + activity.assessmentMode}
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -116,10 +152,9 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: items.solarSystemVisible ? withoutLevelWithoutHint : (level === 2) ? withLevelWithHint : withLevelWithoutHint
-            property BarEnumContent withoutLevelWithoutHint: BarEnumContent { value: help | home }
-            property BarEnumContent withLevelWithoutHint: BarEnumContent { value: help | home | level }
-            property BarEnumContent withLevelWithHint: BarEnumContent { value: help | home | level | hint }
+            content: items.solarSystemVisible ? withConfig : withoutConfig
+            property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
+            property BarEnumContent withoutConfig: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -132,13 +167,16 @@ ActivityBase {
                     Activity.showSolarModel()
             }
             onHintClicked: {
-                items.mainQuizScreen.hintVisible = !items.mainQuizScreen.hintVisible
+
+            }
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                displayDialog(dialogActivityConfig)
             }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }
