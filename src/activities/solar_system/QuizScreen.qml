@@ -64,7 +64,7 @@ Item {
 
     Grid {
         id: imageAndOptionGrid
-        columns: (background.horizontalLayout && !activity.assessmentMode) ? 2 : 1
+        columns: (background.horizontalLayout && !background.assessmentMode) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
         anchors.top: questionArea.bottom
         anchors.left: parent.left
@@ -76,7 +76,7 @@ Item {
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.4
-            visible: !activity.assessmentMode
+            visible: !background.assessmentMode
 
             Image {
                 id: planetImageMain
@@ -88,7 +88,7 @@ Item {
         }
 
         Item {
-            width: activity.assessmentMode ? mainQuizScreen.width
+            width: background.assessmentMode ? mainQuizScreen.width
                    : background.horizontalLayout ? background.width * 0.55
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
@@ -172,7 +172,7 @@ Item {
         border.width: 2
         border.color: "black"
         opacity: 0.78
-        visible: !activity.assessmentMode
+        visible: !background.assessmentMode
         GCText {
             id: closenessText
             anchors.centerIn: parent
@@ -193,7 +193,7 @@ Item {
             NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
             NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
             NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
-            ScriptAction { script: Activity.nextSubLevel() }
+            ScriptAction { script: background.nextSubLevel() }
         }
     }
 }

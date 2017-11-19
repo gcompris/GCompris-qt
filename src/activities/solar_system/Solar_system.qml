@@ -29,8 +29,6 @@ ActivityBase {
     }
     onStop: {}
 
-    property bool assessmentMode: false
-
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -38,6 +36,7 @@ ActivityBase {
         source: "qrc:/gcompris/src/activities/solar_system/resource/background.jpg"
 
         property bool horizontalLayout: background.width > background.height
+        property bool assessmentMode: false
 
         signal start
         signal stop
@@ -119,30 +118,27 @@ ActivityBase {
                     width: dialogActivityConfig.width
                     height: dialogActivityConfig.height
 
-                    property bool assessmentMode: activity.assessmentMode
-
                     GCDialogCheckBox {
                         id: assessmentModeBox
                         width: dialogActivityConfig.width
                         text: qsTr("No closeness meter and no hint")
-                        checked: activity.assessmentMode
+                        checked: background.assessmentMode
                         onCheckedChanged: {
-                            if(assessmentModeBox.checked)
-                                activity.assessmentMode = true
+                                background.assessmentMode = checked
                         }
                     }
                 }
             }
 
-            onClose: home()
             onLoadData: {
                 if(dataToSave && dataToSave["assessmentMode"])
-                    activity.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false;
+                    background.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false;
             }
 
             onSaveData: {
-                dataToSave = {"assessmentMode": "" + activity.assessmentMode}
+                dataToSave["assessmentMode"] = background.assessmentMode ? "true" : "false"
             }
+            onClose: home()
         }
 
         DialogHelp {
