@@ -17,7 +17,6 @@
  */
 import QtQuick 2.6
 import GCompris 1.0
-
 import "../../core"
 import "solar_system.js" as Activity
 
@@ -57,10 +56,18 @@ ActivityBase {
             property alias mainQuizScreen: mainQuizScreen
             property bool solarSystemVisible
             property bool quizScreenVisible
+            property alias dialogActivityConfig: dialogActivityConfig
         }
 
-        onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStart: {
+            dialogActivityConfig.getInitialConfiguration()
+            Activity.start(items)
+        }
+
+        onStop: {
+            dialogActivityConfig.saveDatainConfiguration()
+            Activity.stop()
+        }
 
         IntroMessage {
             id: message
@@ -132,7 +139,7 @@ ActivityBase {
 
             onLoadData: {
                 if(dataToSave && dataToSave["assessmentMode"])
-                    background.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false;
+                    background.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false
             }
 
             onSaveData: {
