@@ -196,10 +196,12 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["assessmentMode"])
                     background.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false
+                Activity.numberOfLevel = background.assessmentMode ? 1 : 2
             }
 
             onSaveData: {
                 dataToSave["assessmentMode"] = background.assessmentMode ? "true" : "false"
+                Activity.numberOfLevel = background.assessmentMode ? 1 : 2
             }
             onClose: home()
         }

@@ -30,7 +30,6 @@ var currentSubLevel
 function start(items_) {
     items = items_
     currentLevel = 0
-    numberOfLevel = items.assessmentMode ? 1 : 2
     dataset= Dataset.get()
     for(var i = 0;  i < dataset.length; ++i) {
         items.containerModel.append({
