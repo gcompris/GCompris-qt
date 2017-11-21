@@ -57,6 +57,7 @@ ActivityBase {
             property bool solarSystemVisible
             property bool quizScreenVisible
             property alias dialogActivityConfig: dialogActivityConfig
+            property bool assessmentMode: assessmentMode
         }
 
         onStart: {
@@ -117,6 +118,61 @@ ActivityBase {
             visible: items.quizScreenVisible
         }
 
+        Rectangle {
+            id: hintBoard
+            radius: 30
+            border.width: 5
+            border.color: "black"
+            width: parent.width
+            height: parent.height
+            visible: false
+            z: 3
+
+            onVisibleChanged: hintAppearAnimation.start()
+
+            Image {
+                id: hintSolarModel
+                source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
+                sourceSize.width: parent.width - 6 * ApplicationInfo.ratio
+                fillMode: Image.PreserveAspectCrop
+                anchors.centerIn: parent
+            }
+
+            NumberAnimation {
+                id: hintAppearAnimation
+                target: hintBoard
+                property: horizontalLayout ? "x" : "y"
+                from: horizontalLayout ? -width : -height
+                to: 0
+                duration: 1200
+                easing.type: Easing.OutBack
+            }
+
+            GCButtonCancel {
+                id: cancelButton
+                onClose: hintCloseAnimation.start()
+            }
+
+            SequentialAnimation {
+                id: hintCloseAnimation
+
+                NumberAnimation {
+                    target: hintBoard
+                    property: horizontalLayout ? "x" : "y"
+                    to: horizontalLayout ? -width : -height
+                    duration: 1200
+                    easing.type: Easing.InSine
+                }
+
+                PropertyAnimation {
+                    id: switchDescriptionPanelInvisible
+                    target: hintBoard
+                    property: "visible"
+                    to: false
+                }
+           }
+        }
+
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
@@ -155,9 +211,11 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: items.solarSystemVisible ? withConfig : withoutConfig
+            z: 2
+            content: items.solarSystemVisible ? withConfig : background.assessmentMode ? withoutConfigWithoutHint : withoutConfigWithHint
             property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
-            property BarEnumContent withoutConfig: BarEnumContent { value: help | home | level | hint }
+            property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
+            property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -170,7 +228,7 @@ ActivityBase {
                     Activity.showSolarModel()
             }
             onHintClicked: {
-
+                hintBoard.visible = true
             }
             onConfigClicked: {
                 dialogActivityConfig.active = true
@@ -180,6 +238,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }

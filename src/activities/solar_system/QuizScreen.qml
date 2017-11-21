@@ -64,7 +64,7 @@ Item {
 
     Grid {
         id: imageAndOptionGrid
-        columns: (background.horizontalLayout && !background.assessmentMode) ? 2 : 1
+        columns: (background.horizontalLayout && !background.assessmentMode && items.bar.level != 2) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
         anchors.top: questionArea.bottom
         anchors.left: parent.left
@@ -76,7 +76,7 @@ Item {
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.4
-            visible: !background.assessmentMode
+            visible: !background.assessmentMode && items.bar.level != 2
 
             Image {
                 id: planetImageMain
@@ -88,7 +88,7 @@ Item {
         }
 
         Item {
-            width: background.assessmentMode ? mainQuizScreen.width
+            width: ( background.assessmentMode || items.bar.level == 2 ) ? mainQuizScreen.width
                    : background.horizontalLayout ? background.width * 0.55
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
