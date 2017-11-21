@@ -109,7 +109,7 @@ ActivityBase {
             model: containerModel
             delegate: PlanetInSolarModel {
                 planetImageSource: clipImg
-                nameOfPlanet: bodyName
+                planetName: bodyName
             }
         }
 

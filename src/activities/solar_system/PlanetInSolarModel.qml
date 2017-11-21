@@ -26,22 +26,22 @@ Item {
     height: width
 
     property string planetImageSource
-    property string nameOfPlanet
+    property string planetName
 
     GCText {
-        id: planetName
+        id: planetNameText
         horizontalAlignment: Text.AlignHCenter
         width: parent.width
         fontSizeMode: Text.Fit
         font.pointSize: NaN                   // need to clear font.pointSize explicitly
         font.pixelSize: parent.width * 0.18
         color: "white"
-        text: nameOfPlanet
+        text: planetName
     }
 
     Image {
         id: planetImage
-        anchors.top: planetName.bottom
+        anchors.top: planetNameText.bottom
         anchors.topMargin: parent.width * 0.05
         anchors.horizontalCenter: parent.horizontalCenter
         sourceSize.width: parent.width / 1.5
