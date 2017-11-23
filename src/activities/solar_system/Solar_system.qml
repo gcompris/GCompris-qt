@@ -115,7 +115,52 @@ ActivityBase {
 
         QuizScreen {
             id: mainQuizScreen
-            visible: items.quizScreenVisible
+            visible: false
+            opacity: items.quizScreenVisible
+            onOpacityChanged: {
+                if(items.quizScreenVisible)
+                    quizScreenAppearAnimation.start()
+                else
+                    quizScreenDisappearAnimation.start()
+            }
+
+            SequentialAnimation {
+                id: quizScreenAppearAnimation
+
+                PropertyAnimation {
+                    target: mainQuizScreen
+                    property: "visible"
+                    to: true
+                    duration: 0
+                }
+
+                NumberAnimation {
+                    target: mainQuizScreen
+                    property: "opacity"
+                    from: 0
+                    to: 1
+                    duration: 200
+                }
+            }
+
+            SequentialAnimation {
+                id: quizScreenDisappearAnimation
+
+                NumberAnimation {
+                    target: mainQuizScreen
+                    property: "opacity"
+                    from: 1
+                    to: 0
+                    duration: 200
+                }
+
+                PropertyAnimation {
+                    target: mainQuizScreen
+                    property: "visible"
+                    to: false
+                    duration: 0
+                }
+            }
         }
 
         Rectangle {
