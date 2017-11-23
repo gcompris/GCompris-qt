@@ -181,14 +181,13 @@ ActivityBase {
                     width: dialogActivityConfig.width
                     height: dialogActivityConfig.height
 
+                    property alias assessmentModeBox: assessmentModeBox
+
                     GCDialogCheckBox {
                         id: assessmentModeBox
                         width: dialogActivityConfig.width
                         text: qsTr("No closeness meter and no hint")
                         checked: background.assessmentMode
-                        onCheckedChanged: {
-                                background.assessmentMode = checked
-                        }
                     }
                 }
             }
@@ -200,8 +199,11 @@ ActivityBase {
             }
 
             onSaveData: {
-                dataToSave["assessmentMode"] = background.assessmentMode ? "true" : "false"
-                Activity.numberOfLevel = background.assessmentMode ? 1 : 2
+                if(dialogActivityConfig.configItem.assessmentModeBox.checked != background.assessmentMode) {
+                    background.assessmentMode = !background.assessmentMode
+                    dataToSave["assessmentMode"] = background.assessmentMode ? "true" : "false"
+                    Activity.numberOfLevel = background.assessmentMode ? 1 : 2
+                }
             }
             onClose: home()
         }
