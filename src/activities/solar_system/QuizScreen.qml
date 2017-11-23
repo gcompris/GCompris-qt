@@ -121,7 +121,7 @@ Item {
                     anchors.right: parent.right
                     anchors.left: parent.left
 
-                    property string closenessValue: closeness
+                    property int closenessValue: closeness
 
                     AnswerButton {
                         id: optionRectangle
@@ -130,7 +130,7 @@ Item {
                         textLabel: optionValue
                         anchors.right: parent.right
 
-                        isCorrectAnswer: closenessValue === "100%"
+                        isCorrectAnswer: closenessValue === 100
                         onIncorrectlyPressed: {
                             if(!background.assessmentMode) {
                                 if(correctAnswerAnim.running)
@@ -184,7 +184,7 @@ Item {
             anchors.centerIn: parent
             color: "black"
             fontSize: background.horizontalLayout ? mediumSize : smallSize
-            text: qsTr("Closeness: ") + closenessValueInMeter
+            text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
         }
 
         SequentialAnimation {

@@ -66,7 +66,7 @@ function showQuizScreen(index) {
 }
 
 function nextSubLevel() {
-    items.mainQuizScreen.closenessValueInMeter = "0%"
+    items.mainQuizScreen.closenessValueInMeter = 0
     if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)
         items.bonus.good("flower")
     else {
