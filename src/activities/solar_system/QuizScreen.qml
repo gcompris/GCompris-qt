@@ -147,6 +147,7 @@ Item {
                                     correctAnswerAnim.stop()
                                 if(incorrectAnswerAnim.running)
                                     incorrectAnswerAnim.stop()
+                                particles.burst(30)
                                 correctAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
                             }
@@ -189,17 +190,22 @@ Item {
 
         SequentialAnimation {
             id: incorrectAnswerAnim
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 450 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 450 }
         }
 
         SequentialAnimation {
             id: correctAnswerAnim
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 300 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 300 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 450 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 450 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 450 }
+            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 450 }
             ScriptAction { script: Activity.nextSubLevel() }
+        }
+
+        ParticleSystemStarLoader {
+            id: particles
+            clip: false
         }
     }
 }
