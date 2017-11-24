@@ -19,22 +19,89 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
+import QtQuick 2.6
 import GCompris 1.0
 
+/**
+ * A QML component to visualize number of wins.
+ * @ingroup components
+ *
+ * ScoreItem consists of player score (@ref playerScore)
+ * and player image (@ref playerImageSource).
+ * Mostly used in multi-player activities.
+ *
+ * @inherit QtQuick.Item
+ */
 Item {
     id: scoreItem
 
+    /**
+     * type:int
+     * Id of the player.
+     */
     property int player: 1
+
+    /**
+     * type:string
+     * Source of background image to display.
+     *
+     * @sa backgroundImage.source
+     */
     property string backgroundImageSource
+
+    /**
+     * type:string
+     * Source of player image to display.
+     *
+     * @sa playerImage.source
+     */
     property string playerImageSource
+
+    /**
+     * type:int
+     * Count of score(i.e. number of wins).
+     *
+     * @sa scoreLabel.text
+     */
     property int playerScore
 
+    /**
+     * type:int
+     * Holds the point from which the player image
+     * is scaled on x-axis.
+     *
+     * @sa scaleTransform.origin.x
+     */
     property int playerScaleOriginX
+
+    /**
+     * type:int
+     * Holds the point from which the player image
+     * is scaled on y-axis.
+     *
+     * @sa scaleTransform.origin.y
+     */
     property int playerScaleOriginY
 
+    /**
+     * Emitted when the win animation should be started.
+     *
+     * Triggers scale, rotation animation and increases playerScore count.
+     */
     signal win
+
+    /**
+     * Emitted when the player turn should be started.
+     *
+     * Triggers scale and rotation animation.
+     */
     signal beginTurn
+
+    /**
+     * Emitted when the player turn should be ended.
+     *
+     * Triggers shrink and rotation animation on player image.
+     */
     signal endTurn
 
     onBeginTurn: {
