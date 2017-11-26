@@ -236,7 +236,7 @@ function get() {
                 },
                 {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_clip.svg",
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.png",
                     "bodyName": qsTr("Saturn"),
                     "levels": [
                         { 	//sub-level 1
