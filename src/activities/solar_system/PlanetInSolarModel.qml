@@ -30,7 +30,12 @@ Item {
 
     GCText {
         id: planetNameText
-        horizontalAlignment: Text.AlignHCenter
+        anchors.horizontalCenter: background.horizontalLayout ? parent.horizontalCenter : undefined
+        anchors.leftMargin: background.horizontalLayout ? 0 : 10 * ApplicationInfo.ratio
+        anchors.left: !background.horizontalLayout ? planetImage.right : undefined
+        anchors.top: parent.top
+        anchors.topMargin: background.horizontalLayout ? 0 : 5 * ApplicationInfo.ratio
+        horizontalAlignment: background.horizontalLayout ? Text.AlignHCenter : undefined
         width: parent.width
         fontSizeMode: Text.Fit
         font.pointSize: NaN                   // need to clear font.pointSize explicitly
@@ -41,7 +46,7 @@ Item {
 
     Image {
         id: planetImage
-        anchors.top: planetNameText.bottom
+        anchors.top: background.horizontalLayout ? planetNameText.bottom : planetItem.top
         anchors.topMargin: parent.width * 0.05
         anchors.horizontalCenter: parent.horizontalCenter
         sourceSize.width: parent.width / 1.5
