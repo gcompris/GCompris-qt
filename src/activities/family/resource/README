@@ -1,25 +1,19 @@
-All the images are taken from OpenClipart.organd modified according to requirement.
-
-To add any new levels in the activities doesn't require any coding skills, we can just do it by adding the calculated coordinates
-to the following database
-{  edgeList: [
-               [],
-               []
-            ],
-   nodePositions: [
-           [],
-           [],
-           []
-   ],
-   rationn: [80, 80, 80],
-   captions: [ [],
-              []
-            ],
-   nodeleave: [],
-   currentstate: [],
-   edgeState:[],
-   answer: [],
-   optionss: []
-
-},
-rationn will be always constant, rest can be calculated with the trial and error.
+Copyright: Timothée Giet, 2017
+License: CC-BY-SA 4.0
+Files:
+babyBoy.svg
+babyGirl.svg
+boy1.svg
+boy2.svg
+girl1.svg
+girl2.svg
+man1.svg
+man2.svg
+man3.svg
+oldMan1.svg
+oldMan2.svg
+oldWoman1.svg
+oldWoman2.svg
+woman1.svg
+woman2.svg
+woman3.svg
