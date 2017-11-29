@@ -72,12 +72,20 @@ function nextSubLevel() {
     else {
         items.mainQuizScreen.question = currentPlanetLevels[currentSubLevel].question
         items.mainQuizScreen.optionListModel.clear()
+        var optionListShuffle = [];
         for(var i=0; i<4; i++) {
-            items.mainQuizScreen.optionListModel.append({
+            optionListShuffle.push({
                    "optionValue": currentPlanetLevels[currentSubLevel].options[i],
                    "closeness": currentPlanetLevels[currentSubLevel].closeness[i]
             });
         }
+
+        Core.shuffle(optionListShuffle)
+
+        for(var i=0; i<4; i++) {
+            items.mainQuizScreen.optionListModel.append(optionListShuffle[i])
+        }
+
         currentSubLevel++;
         items.mainQuizScreen.score.currentSubLevel = currentSubLevel
     }
