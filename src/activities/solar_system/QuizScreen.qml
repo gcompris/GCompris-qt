@@ -75,7 +75,7 @@ Item {
             width: background.horizontalLayout ? background.width * 0.40
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
-                    : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.4
+                    : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
             visible: !background.assessmentMode && items.bar.level != 2
 
             Image {
@@ -92,7 +92,10 @@ Item {
                    : background.horizontalLayout ? background.width * 0.55
                    : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
-                    : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.60
+                    : itemHeightVertical
+
+            property real itemHeightVertical: items.bar.level != 2 && !background.assessmentMode ? (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.39
+                                              : (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.8
 
             ListView {
                 id: optionListView
@@ -100,8 +103,8 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: background.horizontalLayout ? background.width * 0.40
                        : background.width - imageAndOptionGrid.anchors.margins * 2
-                height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 50 * ApplicationInfo.ratio
-                        : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.60
+                height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height - questionArea.height - 50 * ApplicationInfo.ratio
+                        : parent.itemHeightVertical
                 spacing: 10 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
@@ -171,7 +174,7 @@ Item {
     Rectangle {
         id: closenessMeter
         anchors.right: parent.right
-        anchors.bottom: parent.bottom
+        y: background.horizontalLayout ? (background.height - height  - 10 * ApplicationInfo.ratio) : (background.height - bar.height - height  - 10 * ApplicationInfo.ratio)
         anchors.margins: 10 * ApplicationInfo.ratio
         height: closenessText.height * 1.23
         width: closenessText.width * 1.23
@@ -184,7 +187,8 @@ Item {
             id: closenessText
             anchors.centerIn: parent
             color: "black"
-            fontSize: background.horizontalLayout ? mediumSize : smallSize
+            font.pointSize: NaN                   // need to clear font.pointSize explicitly
+            font.pixelSize: background.horizontalLayout ? background.width * 0.023 : 18 * ApplicationInfo.ratio
             text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
         }
 
