@@ -91,10 +91,10 @@ Item {
             width: ( background.assessmentMode || items.bar.level == 2 ) ? mainQuizScreen.width
                    : background.horizontalLayout ? background.width * 0.55
                    : background.width - imageAndOptionGrid.anchors.margins * 2
-            height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
+            height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
                     : itemHeightVertical
 
-            property real itemHeightVertical: items.bar.level != 2 && !background.assessmentMode ? (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.39
+            property real itemHeightVertical: items.bar.level != 2 && !background.assessmentMode ? (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.39
                                               : (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.8
 
             ListView {
