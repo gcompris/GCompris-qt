@@ -25,18 +25,18 @@
 
 #include "Messages.h"
 #include "UserData.h"
-#include "GroupData.h"
 #include "ActivityData.h"
 
 
-UserData::UserData() : m_name(""), m_avatar("")
+UserData::UserData(const QString &name, const QString &dateOfBirth, const QString &password) : m_name(name), m_dateOfBirth(dateOfBirth), m_password(password)
 {
 }
 
 UserData::UserData(const UserData &user)
 {
     m_name = user.m_name;
-    m_avatar = user.m_avatar;
+    m_dateOfBirth = user.m_dateOfBirth;
+    m_password = user.m_password;
 }
 
 UserData::~UserData()
@@ -48,25 +48,32 @@ void UserData::setName(const QString &name)
     m_name = name;
     emit newName();
 }
-QList<QObject*> UserData::getGroups()
+
+void UserData::setDateOfBirth(const QString &dateOfBirth)
 {
-    return m_groups;
+    m_dateOfBirth = dateOfBirth;
+    emit newDateOfBirth();
 }
 
-void UserData::setAvatar(const QString &avatar)
+void UserData::setPassword(const QString &password)
 {
-    m_avatar = avatar;
-    emit newAvatar();
+    m_password = password;
+    emit newPassword();
 }
-void UserData::addGroup(GroupData *group)
-{
-    if(!m_groups.contains((QObject*)group))
-        m_groups << (QObject*)group;
-    emit newGroups();
-}
+
 const QString &UserData::getName() const
 {
     return m_name;
+}
+
+const QString &UserData::getDateOfBirth() const
+{
+    return m_dateOfBirth;
+}
+
+const QString &UserData::getPassword() const
+{
+    return m_password;
 }
 
 void UserData::addData(const ActivityRawData &rawData)

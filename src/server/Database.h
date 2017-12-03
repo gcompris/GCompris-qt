@@ -55,7 +55,7 @@ public:
     void retrieveAllExistingUsers(QList <UserData *> &allUsers);
     void retrieveAllExistingGroups(QList<GroupData* > &allGroups);
 
-    bool addUser(const QString &name, const QString &avatar = "", const QStringList& groups=QStringList());
+    bool addUser(const UserData &user);
     bool addUserToGroup(const QString& group, const QString& user);
     bool deleteUser(const QString& userName);
     

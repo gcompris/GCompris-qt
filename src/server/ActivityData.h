@@ -31,7 +31,7 @@ struct ActivityRawData;
  * @short contains specific data of an activity
  */
 
-class ActivityData_d:public QObject
+class ActivityData_d : public QObject
 {
 public:
     ActivityData_d(const QDateTime& date, const QVariantMap& data);
@@ -41,7 +41,6 @@ public:
 private:
     QDateTime m_date;
     QVariantMap m_data;
-
 };
 
 

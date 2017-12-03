@@ -1,6 +1,6 @@
 /* GCompris - Menu.qml
  *
- * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2017 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
@@ -81,27 +81,23 @@ ActivityBase {
     property variant actions: [
         {
             view: "Broadcast",
-            text: qsTr("Broadcast")
+            text: qsTr("Discover Clients")
         },
         {
             view: "Clients",
-            text: qsTr("Connected clients")
+            text: qsTr("See Connected Clients")
         },
-        {
-            view: "Configurations",
-            text: qsTr("Configurations")
-        },
+//        {
+//            view: "CoursesManagement",
+//            text: qsTr("Courses Management")
+//        },
         {
             view: "ServerConfiguration",
             text: qsTr("Server Configuration")
         },
         {
-            view: "Groups",
-            text: qsTr("Groups")
-        },
-        {
-            view: "Users",
-            text: qsTr("Users")
+            view: "UsersManagement",
+            text: qsTr("Users Management")
         },
         {
             view:"ActivityConfiguration",

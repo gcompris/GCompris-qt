@@ -66,6 +66,7 @@ ActivityBase {
                         text: modelData.date
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: goodValue.right
+                        fontSizeMode: Text.Fit
                     }
                 }
             }

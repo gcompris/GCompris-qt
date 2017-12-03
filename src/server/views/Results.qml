@@ -1,3 +1,23 @@
+/* GCompris - Results.qml
+ *
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+ *
+ * Authors:
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 import QtQuick 2.1
 import GCompris 1.0
 import QtQuick.Controls 1.2
@@ -39,7 +59,7 @@ ActivityBase {
             visible: background.activitiesVisible
             property var menuTree: ActivityInfoTree.fullTree()
             property int spacing: 10
-            model:ActivityInfoTree.menuTree
+            model: ActivityInfoTree.menuTree
 
             delegate: Item {
                 id: activityDelegate
@@ -54,7 +74,7 @@ ActivityBase {
                     opacity: 0.5
                 }
                 Image {
-                    source: "qrc:/gcompris/src/activities/" + icon;
+                    source: "qrc:/gcompris/src/activities/" + icon
                     anchors.top: activityBackground.top
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
@@ -76,15 +96,13 @@ ActivityBase {
                 }
                 MouseArea {
                     anchors.fill: parent
-                    onClicked:{
+                    onClicked: {
                         background.activitiesVisible = false
                         background.usersVisible = true
                         background.currentActivity = modelData.name
                     }
                 }
-
             }
-
         }
         Item {
             id: users
@@ -106,12 +124,11 @@ ActivityBase {
                     GCText {
                         text: modelData.name
                         fontSize: mediumSize
-
                     }
                     MouseArea {
                         anchors.fill: parent
                         // get the activity data
-                        onClicked:{
+                        onClicked: {
                             userView.currentUser = modelData
                             background.result = modelData.getActivityData(background.currentActivity)
                             background.usersVisible = false
@@ -119,7 +136,6 @@ ActivityBase {
                             results.storeData()
                         }
                     }
-
                 }
 
                 Connections {
@@ -134,29 +150,26 @@ ActivityBase {
         }
         Item {
             id: results
-            anchors.fill:parent
+            anchors.fill: parent
             visible: background.resultsVisible
             property var datalist: []
-            function storeData(){
+            function storeData() {
                 results.datalist = new Array;
-                var m_date=""
-                var m_data=""
-                for(var date in background.result){
-                    m_date=date
+                var m_date = ""
+                var m_data = ""
+                for(var date in background.result) {
+                    m_date = date
                     var list = background.result[date]
-                    for(var i=0; i<list.length; i++){
+                    for(var i=0; i<list.length; i++) {
                         var x = list[i]
-                        for(var y in x){
-
+                        for(var y in x) {
                             m_data += y + "  " + x[y] + "  "
                         }
-                        results.datalist.push({"date":m_date,
-                                                  "data": m_data
-                                              })
-                        m_data=""
+                        results.datalist.push({"date": m_date, "data": m_data})
+                        m_data = ""
                     }
                 }
-                for(var j=0; j<results.datalist.length; j++){
+                for(var j = 0; j < results.datalist.length; j++) {
                     console.log(results.datalist[j].date, results.datalist[j].data)
                 }
                 resultView.model = results.datalist
@@ -187,7 +200,7 @@ ActivityBase {
                         GCText {
                             text: modelData.date
                             color: "black"
-                            fontSize:  largeSize
+                            fontSize: largeSize
                             anchors.centerIn: parent
                         }
                     }
@@ -213,7 +226,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: home | previousView}
+            content: BarEnumContent { value: home | previousView }
             onHomeClicked: activity.home()
             onPreviousViewClicked: {
                 console.log(background.activitiesVisible)
@@ -232,8 +245,6 @@ ActivityBase {
                     background.usersVisible = true
                 }
             }
-
         }
-
     }
 }

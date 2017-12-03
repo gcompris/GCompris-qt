@@ -65,18 +65,23 @@ public:
             QJSEngine *scriptEngine);
     static MessageHandler* getInstance();
 
-    Q_INVOKABLE GroupData *createGroup(const QString &groupName,const QString &description=QString(),
-                                       const QStringList& users=QStringList());
+    Q_INVOKABLE void createGroup(const QString &groupName,
+                                       const QString &description = QString(),
+                                       const QStringList &users = QStringList());
+    Q_INVOKABLE void updateGroup(const QString &oldGroup,
+                                       const QString &groupName,
+                                       const QString &description = QString(),
+                                       const QStringList& users = QStringList());
     Q_INVOKABLE void deleteGroup(const QString &groupName);
 
-    Q_INVOKABLE UserData *createUser(const QString &userName, const QString &avatar = QString(), const QStringList &groups = QStringList());
-    Q_INVOKABLE UserData *updateUser(const QString &oldUser, const QString &newUser, const QString &avatar = QString(), const QStringList &groups = QStringList());
+    Q_INVOKABLE void createUser(const QString &userName, const QString &age, const QString &avatar = QString(), const QStringList &groups = QStringList());
+    Q_INVOKABLE void updateUser(const QString &oldUser, const QString &newUser, const QString &avatar = QString(), const QStringList &groups = QStringList());
     Q_INVOKABLE void deleteUser(const QString &userName);
 
     Q_INVOKABLE void addUserToGroup(const QStringList& groups, const QStringList& users);
 
-    UserData *getUser(const QString &userName);
-    GroupData *getGroup(const QString &groupName);
+    Q_INVOKABLE UserData *getUser(const QString &userName);
+    Q_INVOKABLE GroupData *getGroup(const QString &groupName);
 
     Q_INVOKABLE QList<QObject*> returnGroupUsers(const QString& group) {
         GroupData* g = getGroup(group);
@@ -89,8 +94,7 @@ public:
         return m_users;
     }
 
-    /*QList<QObject*> returnClients(){
-
+    /*QList<QObject*> returnClients() {
         return m_clients;
     }*/
 

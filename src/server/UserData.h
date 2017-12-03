@@ -26,7 +26,6 @@
 #include <QMap>
 #include <QVariantMap>
 
-class GroupData;
 struct ActivityRawData;
 class ActivityData;
 
@@ -35,43 +34,44 @@ class ActivityData;
  * @class UserData
  * @short Contains all the data relative to a user
  *
- * A user has a name and a map of all its results per activity
+ * A user has a name, a date of birth, a password and a map of all its results per activity
  *
  */
 class UserData : public QObject {
     Q_OBJECT
 
-    Q_PROPERTY(QString avatar MEMBER m_avatar NOTIFY newAvatar)
+    Q_PROPERTY(QString password MEMBER m_password NOTIFY newPassword)
+    Q_PROPERTY(QString dateOfBirth MEMBER m_dateOfBirth NOTIFY newDateOfBirth)
     Q_PROPERTY(QString name MEMBER m_name NOTIFY newName)
-    Q_PROPERTY(QList<QObject *> groups MEMBER m_groups NOTIFY newGroups)
 
 public:
-    UserData();
+    UserData(const QString &name = QString(), const QString &dateOfBirth = QString(), const QString &password = QString());
     UserData(const UserData &user);
     ~UserData();
 
     void setName(const QString &name);
-    void setAvatar(const QString &avatar);
+    void setDateOfBirth(const QString &dateOfBirth);
+    void setPassword(const QString &password);
 
-    void addGroup(GroupData* group);
     void addData(const ActivityRawData &rawData);
-    QList<QObject*> getGroups();
     const QString &getName() const;
+    const QString &getDateOfBirth() const;
+    const QString &getPassword() const;
     Q_INVOKABLE const QVariantMap getActivityData(const QString &activity);
 
 private:
-    QList<QObject*> m_groups;
-    QString m_avatar;
+    QString m_password;
+    QString m_dateOfBirth;
     QString m_name;
 
     QMap<QString, ActivityData*> m_activityData;
     QVariantMap m_variantData;
 
 signals:
-    void newAvatar();
     void newName();
+    void newDateOfBirth();
+    void newPassword();
     void newActivityData();
-    void newGroups();
 };
 
 Q_DECLARE_METATYPE(UserData)

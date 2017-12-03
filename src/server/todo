@@ -1,0 +1,7 @@
+MessageHandler.cpp: keep description for groups?
+MessageHandler.cpp, Database.cpp, UsersManagement.qml: updateGroup, updateUser
+AddUpdateGroup.qml: force focus to text (update layout too)
+AddUpdateGroup.qml: ability to filter by name/date of birth
+UsersManagement.qml: display number of children in each group
+UsersManagement.qml: password handling (images/number password)
+ServerConfiguration.qml: store server name (and use it on send broadcast), store database filepath

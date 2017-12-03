@@ -38,7 +38,7 @@
 
 
 #define CREATE_TABLE_USERS \
-    "CREATE TABLE users (user_name TEXT PRIMARY KEY NOT NULL, avatar TEXT); "
+    "CREATE TABLE users (user_name TEXT PRIMARY KEY NOT NULL, dateOfBirth TEXT, password TEXT); "
 #define CREATE_TABLE_GROUPS \
     "CREATE TABLE groups (group_name TEXT PRIMARY KEY NOT NULL, description TEXT); "
 #define CREATE_TABLE_USERGROUP \
@@ -49,7 +49,7 @@
     "date TEXT NOT NULL,data TEXT NOT NULL,PRIMARY KEY(user_name,activity_name,date))"
 
 
-Database* Database::_instance = 0;
+Database* Database::_instance = nullptr;
 
 Database::Database()
 {
@@ -195,30 +195,27 @@ bool Database::addDataToDatabase(const ActivityRawData &rawData)
     return dataAdded;
 }
 
-bool Database::addUser(const QString& name, const QString &avatar, const QStringList& groups)
+bool Database::addUser(const UserData& user)
 {
     // check whether user already exists before adding to database
     bool userAdded = false;
     QSqlDatabase dbConnection = QSqlDatabase::database();
     QSqlQuery query(dbConnection);
     query.prepare("SELECT user_name FROM users WHERE user_name=:name");
-    query.bindValue(":name", name);
+    query.bindValue(":name", user.getName());
     query.exec();
     if(query.next()) {
-        qDebug() << "user " << name << "already exists";
+        qDebug() << "user " << user.getName() << "already exists";
         return false;
     }
-    query.prepare("INSERT INTO users (user_name, avatar) VALUES(:name,:avatar)");
-    query.bindValue(":name", name);
-    query.bindValue(":avatar", avatar);
+    query.prepare("INSERT INTO users (user_name, dateOfBirth, password) VALUES(:name, :dateOfBirth, :password)");
+    query.bindValue(":name", user.getName());
+    query.bindValue(":dateOfBirth", user.getDateOfBirth());
+    query.bindValue(":password", user.getPassword());
     userAdded = query.exec();
-    if(userAdded) {
-        for (const auto &group:groups) {
-            addUserToGroup(group, name);
-        }
-    }
-    else
+    if(!userAdded) {
         qDebug()<< query.lastError();
+    }
 
     return userAdded;
 }
@@ -267,7 +264,6 @@ void  Database::retrieveActivityData(UserData* user)
     const int userIndex = query.record().indexOf("user_name");
     const int activityIndex = query.record().indexOf("activity_name");
     while(query.next()) {
-
         QString activityData = query.value(dataIndex).toString();
         QByteArray data = activityData.toUtf8();
         QDataStream in(&data, QIODevice::ReadOnly);
@@ -329,11 +325,13 @@ void Database::retrieveAllExistingUsers(QList <UserData *> &allUsers)
     query.prepare("SELECT * FROM users");
     query.exec();
     const int nameIndex = query.record().indexOf("user_name");
-    const int avatarIndex = query.record().indexOf("avatar");
+    const int dateIndex = query.record().indexOf("dateOfBirth");
+    const int passwordIndex = query.record().indexOf("password");
     while(query.next()) {
         UserData *u = new UserData();
         u->setName(query.value(nameIndex).toString());
-        u->setAvatar(query.value(avatarIndex).toString());
+        u->setDateOfBirth(query.value(dateIndex).toString());
+        u->setPassword(query.value(passwordIndex).toString());
         retrieveActivityData(u);
         allUsers.push_back(u);
     }
@@ -370,7 +368,7 @@ void createDatabase(const QString &path)
 void Database::init()
 {
     QDir databasePath;
-    QString path = databasePath.currentPath()+"/gcompris-qt.db"; // todo set cache/data path instead of current folder
+    QString path = databasePath.currentPath()+"/gcompris-qt.db"; // todo set cache/data path instead of current folder (same with filename?)
 
     QSqlDatabase dbConnection = QSqlDatabase::addDatabase("QSQLITE");
     dbConnection.setDatabaseName(path);

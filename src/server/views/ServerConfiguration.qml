@@ -22,6 +22,7 @@ import QtQuick 2.1
 
 import "../../core"
 
+// contains server name, database path...
 ActivityBase {
     id: activity
 
@@ -31,19 +32,8 @@ ActivityBase {
 
     pageComponent: Item {
         anchors.fill: parent
-        Grid {
-            id: clients
-            spacing: 10
-            columns: 2
-            Repeater {
-                model: 12
-                Rectangle {
-                    width: 50
-                    height: 50
-                    color: "red"
-                }
-            }
-        }
+
+        // todo fill content
 
         Bar {
             id: bar
