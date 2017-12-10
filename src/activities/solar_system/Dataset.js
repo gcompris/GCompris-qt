@@ -38,7 +38,7 @@ function get() {
                             "closeness": [1,55,25,100]
                         },
                         { 	//sub-level 4
-                            "question": qsTr("How long does it take the Sun’s light to reach the earth"),
+                            "question": qsTr("How long does it take the Sun’s light to reach the earth?"),
                             "options": [qsTr("8 minutes"),qsTr("30 minutes"),qsTr("60 minutes"),qsTr("15 minutes")],
                             "closeness": [100,58,1,86.6]
                         },
@@ -107,7 +107,7 @@ function get() {
                             "closeness": [50.5,100,50.5,1]
                         },
                         { 	//sub-level 4
-                            "question": qsTr("How long is an year on Venus? "),
+                            "question": qsTr("How long is an year on Venus?"),
                             "options": [qsTr("225 days"),qsTr("365 days"),qsTr("116 days"),qsTr("100 days")],
                             "closeness": [100,1,23,11.6]
                         },
