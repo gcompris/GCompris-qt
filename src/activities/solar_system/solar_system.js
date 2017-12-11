@@ -64,8 +64,8 @@ function showQuizScreen(index) {
     items.quizScreenVisible = true
     currentPlanetLevels = dataset[index].levels
     items.mainQuizScreen.planetRealImage = dataset[index].realImg
-    items.hintDialog.hint1 = "1. The farther a planet from the Sun, the lower is it's maximum and minimum temperature. %1".arg(dataset[indexOfSelectedPlanet].temperatureHint)
-    items.hintDialog.hint2 = "2. Length of an year on a planet increases as we go away from the Sun. %1".arg(dataset[indexOfSelectedPlanet].lengthOfYearHint)
+    items.hintDialog.hint1 = "1. The <b>farther</b> a planet from the Sun, the <b>lower</b> is it's maximum and minimum temperature.<br><font color=\"#3bb0de\">%1</font>".arg(dataset[indexOfSelectedPlanet].temperatureHint)
+    items.hintDialog.hint2 = "2. Duration of an year on a planet <b>increases as we go away from the Sun</b>.<br><font color=\"#3bb0de\">%1</font>".arg(dataset[indexOfSelectedPlanet].lengthOfYearHint)
     initLevel();
 }
 
