@@ -92,7 +92,7 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_real.svg",
                     "bodyName": qsTr("Venus"),
-                    "temperatureHint": qsTr("The temperature on Venus is around 400 degrees and the maximum temperature of Earth is 58 degrees."),
+                    "temperatureHint": qsTr("The maximum temperature of Earth is 58 degrees."),
                     "lengthOfYearHint": qsTr("The length of an year on Earth is 365 days."),
                     "levels": [
                         { 	//sub-level 1
@@ -122,8 +122,8 @@ function get() {
                         },
                         { 	//sub-level 6
                             "question": qsTr("Maximum temperature on Venus is"),
-                            "options": [qsTr("100 Degrees"),qsTr("500 Degrees"),qsTr("467 Degrees"),qsTr("45 Degrees")],
-                            "closeness": [14,92,100,1]
+                            "options": [qsTr("100 Degrees"),qsTr("20 Degrees"),qsTr("467 Degrees"),qsTr("45 Degrees")],
+                            "closeness": [18.7,1,100,6.5]
                         }
                     ]
                 },
