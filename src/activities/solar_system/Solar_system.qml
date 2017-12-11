@@ -177,8 +177,8 @@ ActivityBase {
             Rectangle {
                 id: button
                 visible: true
-                x: 10 * ApplicationInfo.ratio
-                y: parent.height/2
+                anchors.horizontalCenter: parent.horizontalCenter
+                y: parent.height/1.5
                 implicitWidth: Math.max(200, parent.width/6)
                 implicitHeight: 50 * ApplicationInfo.ratio
                 border.width: 2
