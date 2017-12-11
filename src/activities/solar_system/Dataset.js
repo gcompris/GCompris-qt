@@ -53,6 +53,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury_real.svg",
                     "bodyName": qsTr("Mercury"),
+                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees."),
+                    "lengthOfYearHint": qsTr("The length of an year on Venus is 225 days."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Mercury is the ______ planet in the Solar System"),
@@ -71,8 +73,8 @@ function get() {
                         },
                         { 	//sub-level 4
                             "question": qsTr("The maximum temperature on Mercury is"),
-                            "options": [qsTr("145 Degrees"),qsTr("35 Degrees"),qsTr("427 Degrees"),qsTr("273 Degrees")],
-                            "closeness": [28.8,1,100,61]
+                            "options": [qsTr("50 Degrees"),qsTr("35 Degrees"),qsTr("427 Degrees"),qsTr("273 Degrees")],
+                            "closeness": [4.8,1,100,61]
                         },
                         { 	//sub-level 5
                             "question": qsTr("How many days makes an year on Mercury ?"),
@@ -90,6 +92,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_real.svg",
                     "bodyName": qsTr("Venus"),
+                    "temperatureHint": qsTr("The temperature on Venus is around 400 degrees and the maximum temperature of Earth is 58 degrees."),
+                    "lengthOfYearHint": qsTr("The length of an year on Earth is 365 days."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Venus is the ______ planet in the Solar System."),
@@ -127,6 +131,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/earth_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth_real.svg",
                     "bodyName": qsTr("Earth"),
+                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees."),
+                    "lengthOfYearHint": qsTr("The length of an year on Venus is 225 days."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Earth is the ______ planet in the Solar System"),
@@ -155,8 +161,8 @@ function get() {
                         },
                         { 	//sub-level 6
                             "question": qsTr("Maximum temperature on Earth is"),
-                            "options": [qsTr("100 Degrees"),qsTr("58 Degrees"),qsTr("0 Degrees"),qsTr("45 Degrees")],
-                            "closeness": [28.3,100,1,77.8]
+                            "options": [qsTr("100 Degrees"),qsTr("58 Degrees"),qsTr("30 Degrees"),qsTr("45 Degrees")],
+                            "closeness": [1,100,33,69.3]
                         }
                     ]
                 },
@@ -164,6 +170,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_real.svg",
                     "bodyName": qsTr("Mars"),
+                    "temperatureHint": qsTr("The maximum temperature of Earth is 58 degrees."),
+                    "lengthOfYearHint": qsTr("The length of an year on Earth is 365 days."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Mars is the ______ planet in the Solar System"),
@@ -172,8 +180,8 @@ function get() {
                         },
                         { 	//sub-level 2
                             "question": qsTr("The maximum temperature on Mars is"),
-                            "options": [qsTr("20 Degrees"),qsTr("35 Degrees"),qsTr("100 Degrees"),qsTr("0 Degrees")],
-                            "closeness": [100,81.4,1,75]
+                            "options": [qsTr("20 Degrees"),qsTr("35 Degrees"),qsTr("100 Degrees"),qsTr("60 Degrees")],
+                            "closeness": [100,81.4,1,51.5]
                         },
                         { 	//sub-level 3
                             "question": qsTr("Mars is about __________ the size of Earth"),
@@ -201,6 +209,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_real.svg",
                     "bodyName": qsTr("Jupiter"),
+                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees and on Saturn is -178 Degrees"),
+                    "lengthOfYearHint": qsTr("The length of an year on Saturn is 29.5 Earth years where, 1 Earth year is the time taken by Earth to complete 1 year."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Jupiter is the ______ planet in the Solar System"),
@@ -213,14 +223,14 @@ function get() {
                             "closeness": [50.5,100,1,75]
                         },
                         { 	//sub-level 3
-                            "question": qsTr("Jupiter is as big as ____ Earths"),
-                            "options": ["100","764","300","1300"],
-                            "closeness": [1,63,24.7,100]
+                            "question": qsTr("The minimum temperature on Jupiter is"),
+                            "options": ["-145 Degrees","100 Degrees","50 Degrees","-180 Degrees"],
+                            "closeness": [100,63,24.7,1]
                         },
                         { 	//sub-level 4
                             "question": qsTr("How many moons does Jupiter has?"),
-                            "options": ["1","20","25","16"],
-                            "closeness": [70,92.5,1,100]
+                            "options": ["1","20","25","53"],
+                            "closeness": [1,37,46.7,100]
                         },
                         { 	//sub-level 5
                             "question": qsTr("How long is one day on Jupiter?"),
@@ -229,8 +239,8 @@ function get() {
                         },
                         { 	//sub-level 6
                             "question": qsTr("How long does it take Jupiter to complete one year?"),
-                            "options": [qsTr("5 years"),qsTr("12 years"),qsTr("20 years"),qsTr("1 year")],
-                            "closeness": [37,100,28,1]
+                            "options": [qsTr("5 Earth years"),qsTr("12 Earth years"),qsTr("30 Earth years"),qsTr("1 Earth year")],
+                            "closeness": [61.5,100,1,39.5]
                         }
                     ]
                 },
@@ -238,6 +248,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.png",
                     "bodyName": qsTr("Saturn"),
+                    "temperatureHint": qsTr("The minimum Temperature on Jupiter is -145 Degrees."),
+                    "lengthOfYearHint": qsTr("The length of an year on Jupiter is 12 Earth Years."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Saturn is the ______ planet in the Solar System"),
@@ -260,14 +272,14 @@ function get() {
                             "closeness": [100,64.3,96,1]
                         },
                         { 	//sub-level 5
-                            "question": qsTr("Saturn is as big as ____ Earths"),
-                            "options": ["100","764","300","1300"],
-                            "closeness": [1,100,30.8,20]
+                            "question": qsTr("The minimum temperature on Saturn is"),
+                            "options": ["0 Degrees","100 Degrees","- 178 Degrees","-100 Degrees"],
+                            "closeness": [36.6,1,100,72]
                         },
                         { 	//sub-level 6
                             "question": qsTr("How long does it take Saturn to complete one year?"),
-                            "options": [qsTr("29.5 years"),qsTr("20 years"),qsTr("30.5 years"),qsTr("1 year")],
-                            "closeness": [100,67,96.5,1]
+                            "options": [qsTr("29.5 Earth years"),qsTr("20 Earth years"),qsTr("10 Earth years"),qsTr("1 Earth year")],
+                            "closeness": [100,67,32,1]
                         }
                     ]
                 },
@@ -275,6 +287,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_real.svg",
                     "bodyName": qsTr("Uranus"),
+                    "temperatureHint": qsTr("The maximum temperature on Saturn is -178 Degrees."),
+                    "lengthOfYearHint": qsTr("The length of an year on Saturn is 29.5 Earth Years."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Uranus is the ______ planet in the Solar System"),
@@ -283,7 +297,7 @@ function get() {
                         },
                         { 	//sub-level 2
                             "question": qsTr("How many years does it take Uranus to go once around the Sun?"),
-                            "options": ["1","24","68","84"],
+                            "options": ["1 years","24 years","68 years","84 years"],
                             "closeness": [1,28.4,81,100]
                         },
                         { 	//sub-level 3
@@ -304,7 +318,7 @@ function get() {
                         { 	//sub-level 6
                             "question": qsTr("The maximum temperature on Uranus is"),
                             "options": [qsTr("100 Degrees"),qsTr("-216 Degrees"),qsTr("0 Degrees"),qsTr("-100 Degrees")],
-                            "closeness": [54,1,100,54]
+                            "closeness": [1,100,32.3,63.6]
                         }
                     ]
                 },
@@ -312,6 +326,8 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_real.svg",
                     "bodyName": qsTr("Neptune"),
+                    "temperatureHint": qsTr("The maximum temperature on Saturn is -178 Degrees."),
+                    "lengthOfYearHint": qsTr("The length of an year on Uranus is 84 Years."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("Neptune is the ______ planet in the Solar System"),
@@ -335,7 +351,7 @@ function get() {
                         },
                         { 	//sub-level 5
                             "question": qsTr("The temperature on Neptune is"),
-                            "options": [qsTr("100 Degrees"),qsTr("30 Degrees"),qsTr("-214 Degrees"),qsTr("-100 Degrees")],
+                            "options": [qsTr("100 Degrees"),qsTr("30 Degrees"),qsTr("-210 Degrees"),qsTr("-100 Degrees")],
                             "closeness": [1,23,100,64]
                         },
                         { 	//sub-level 6

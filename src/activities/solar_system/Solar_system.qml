@@ -58,6 +58,7 @@ ActivityBase {
             property bool quizScreenVisible
             property alias dialogActivityConfig: dialogActivityConfig
             property bool assessmentMode: assessmentMode
+            property alias hintDialog: hintDialog
         }
 
         onStart: {
@@ -163,59 +164,100 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: hintBoard
-            radius: 30
-            border.width: 5
-            border.color: "black"
-            width: parent.width
-            height: parent.height
+        DialogBackground {
+            id: hintDialog
             visible: false
-            z: 3
 
-            onVisibleChanged: hintAppearAnimation.start()
+            property var hint1
+            property var hint2
 
-            Image {
-                id: hintSolarModel
-                source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
-                sourceSize.width: parent.width - 6 * ApplicationInfo.ratio
-                fillMode: Image.PreserveAspectCrop
-                anchors.centerIn: parent
+            title: "Hint"
+            content: hint1 + "<br>" + hint2
+            onClose: home()
+            Rectangle {
+                id: button
+                visible: true
+                x: 10 * ApplicationInfo.ratio
+                y: parent.height/2
+                implicitWidth: Math.max(200, parent.width/6)
+                implicitHeight: 50 * ApplicationInfo.ratio
+                border.width: 2
+                border.color: "#373737"
+                radius: 10
+                gradient: Gradient {
+                    GradientStop { position: 0 ; color: mouseArea.pressed ? "#C03ACAFF" : "#23373737" }
+                    GradientStop { position: 1 ; color: mouseArea.pressed ? "#803ACAFF" : "#13373737" }
+                }
+
+                MouseArea {
+                    id: mouseArea
+                    anchors.fill: parent
+                    onClicked: hintBoard.visible = true
+                }
+
+                GCText {
+                    anchors.fill: parent
+                    text: "Visit Solar System"
+                    fontSizeMode: Text.Fit
+                    fontSize: smallSize
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                }
             }
 
-            NumberAnimation {
-                id: hintAppearAnimation
-                target: hintBoard
-                property: horizontalLayout ? "x" : "y"
-                from: horizontalLayout ? -width : -height
-                to: 0
-                duration: 1200
-                easing.type: Easing.OutBack
-            }
+            Rectangle {
+                id: hintBoard
+                radius: 30
+                border.width: 5
+                border.color: "black"
+                width: parent.width
+                height: parent.height
+                visible: false
 
-            GCButtonCancel {
-                id: cancelButton
-                onClose: hintCloseAnimation.start()
-            }
+                onVisibleChanged: hintAppearAnimation.start()
 
-            SequentialAnimation {
-                id: hintCloseAnimation
+                Image {
+                    id: hintSolarModel
+                    source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
+                    sourceSize.width: parent.width - 6 * ApplicationInfo.ratio
+                    fillMode: Image.PreserveAspectCrop
+                    anchors.centerIn: parent
+                }
 
                 NumberAnimation {
+                    id: hintAppearAnimation
                     target: hintBoard
                     property: horizontalLayout ? "x" : "y"
-                    to: horizontalLayout ? -width : -height
+                    from: horizontalLayout ? -width : -height
+                    to: 0
                     duration: 1200
-                    easing.type: Easing.InSine
+                    easing.type: Easing.OutBack
                 }
 
-                PropertyAnimation {
-                    id: switchDescriptionPanelInvisible
-                    target: hintBoard
-                    property: "visible"
-                    to: false
+                GCButtonCancel {
+                    id: cancelButton
+                    onClose: hintCloseAnimation.start()
                 }
-           }
+
+                SequentialAnimation {
+                    id: hintCloseAnimation
+
+                    NumberAnimation {
+                        target: hintBoard
+                        property: horizontalLayout ? "x" : "y"
+                        to: horizontalLayout ? -width : -height
+                        duration: 1200
+                        easing.type: Easing.InSine
+                    }
+
+                    PropertyAnimation {
+                        id: switchDescriptionPanelInvisible
+                        target: hintBoard
+                        property: "visible"
+                        to: false
+                    }
+                }
+            }
         }
 
         DialogActivityConfig {
@@ -261,7 +303,7 @@ ActivityBase {
         Bar {
             id: bar
             z: 2
-            content: items.solarSystemVisible ? withConfig : background.assessmentMode ? withoutConfigWithoutHint : withoutConfigWithHint
+            content: items.solarSystemVisible ? withConfig : background.assessmentMode || Activity.indexOfSelectedPlanet ===0 ? withoutConfigWithoutHint : withoutConfigWithHint
             property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
             property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
@@ -277,7 +319,7 @@ ActivityBase {
                     Activity.showSolarModel()
             }
             onHintClicked: {
-                hintBoard.visible = true
+                displayDialog(hintDialog)
             }
             onConfigClicked: {
                 dialogActivityConfig.active = true

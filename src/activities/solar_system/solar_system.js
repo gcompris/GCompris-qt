@@ -26,6 +26,7 @@ var items
 var dataset
 var currentPlanetLevels
 var currentSubLevel
+var indexOfSelectedPlanet
 
 function start(items_) {
     items = items_
@@ -58,10 +59,13 @@ function showSolarModel() {
 }
 
 function showQuizScreen(index) {
+    indexOfSelectedPlanet = index
     items.solarSystemVisible = false
     items.quizScreenVisible = true
     currentPlanetLevels = dataset[index].levels
     items.mainQuizScreen.planetRealImage = dataset[index].realImg
+    items.hintDialog.hint1 = "1. The farther a planet from the Sun, the lower is it's maximum and minimum temperature. %1".arg(dataset[indexOfSelectedPlanet].temperatureHint)
+    items.hintDialog.hint2 = "2. Length of an year on a planet increases as we go away from the Sun. %1".arg(dataset[indexOfSelectedPlanet].lengthOfYearHint)
     initLevel();
 }
 
