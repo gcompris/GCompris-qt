@@ -97,6 +97,7 @@ ActivityBase {
 
         property int itemWidth: horizontalLayout ? background.width / 9 : (background.height - bar.height) / 9
 
+        //Arrangement of all the planets in the solar system
         GridView{
             id: planetView
             y: horizontalLayout ? (parent.height - bar.height) / 2 - cellHeight/2 : 0
@@ -167,6 +168,7 @@ ActivityBase {
             }
         }
 
+        //Hint dialog while playing the quiz
         DialogBackground {
             id: hintDialog
             visible: false

@@ -60,10 +60,12 @@ Item {
         }
     }
 
+    //model of options for a question
     ListModel {
         id: optionListModel
     }
 
+    //This grid has image of the planet in it's first column/row (row in case of vertical screen) and the options on the 2nd column/row
     Grid {
         id: imageAndOptionGrid
         columns: (background.horizontalLayout && !background.assessmentMode && items.bar.level != 2) ? 2 : 1
@@ -73,6 +75,7 @@ Item {
         anchors.right: parent.right
         anchors.margins: 10 * ApplicationInfo.ratio
 
+        //An item to hold image of the planet
         Item {
             width: background.horizontalLayout ? background.width * 0.40
                    : background.width - imageAndOptionGrid.anchors.margins * 2
@@ -89,6 +92,7 @@ Item {
             }
         }
 
+        //An item to hold the list view of options
         Item {
             width: ( background.assessmentMode || items.bar.level == 2 ) ? mainQuizScreen.width
                    : background.horizontalLayout ? background.width * 0.55
