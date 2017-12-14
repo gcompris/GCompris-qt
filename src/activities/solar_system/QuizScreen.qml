@@ -1,6 +1,8 @@
 /* GCompris - QuizScreen.qml
  *
  * Copyright (C) 2017 Aman Kumar Gupta <gupta2140@gmail.com>
+ * Authors:
+ *   Aman Kumar Gupta <gupta2140@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
