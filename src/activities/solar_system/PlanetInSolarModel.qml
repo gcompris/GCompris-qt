@@ -30,6 +30,7 @@ Item {
     property string planetImageSource
     property string planetName
 
+    //name of the planet which hovers over the top of each planet
     GCText {
         id: planetNameText
         anchors.horizontalCenter: background.horizontalLayout ? parent.horizontalCenter : undefined
