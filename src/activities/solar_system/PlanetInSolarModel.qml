@@ -96,7 +96,7 @@ Item {
             property: "y"
             from: -5
             to: 5
-            duration: 1100 + Math.floor(Math.random() * 1100)
+            duration: 1800 + Math.floor(Math.random() * 500)
             easing.type: Easing.InOutQuad
         }
         NumberAnimation {
@@ -104,7 +104,7 @@ Item {
             property: "y"
             from: 5
             to: -5
-            duration: 1100 + Math.floor(Math.random() * 1100)
+            duration: 1800 + Math.floor(Math.random() * 500)
             easing.type: Easing.InOutQuad
         }
     }
