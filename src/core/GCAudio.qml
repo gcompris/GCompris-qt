@@ -142,7 +142,7 @@ Item {
      *             audio is muted
      */
     function append(file) {
-        if(!fileId.exists(file) || muted)
+        if(!fileId.exists(file))
             return false
 
         // @FIXME There is a bug in gstreamer that makes wav files to freeze us on Linux.
