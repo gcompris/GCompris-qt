@@ -109,10 +109,10 @@ Window {
         muted: !ApplicationSettings.isBackgroundMusicEnabled
 
         muteChangeHandler: function() {
-            if(muted) { volume = 0; }
-            else { volume = 1; }
+            if(muted) { volume = 0 }
+            else { volume = 1 }
 
-            if(!hasAudio) { delayedbackgroundMusic.playBackgroundMusic(); }
+            if(!hasAudio) { delayedbackgroundMusic.playBackgroundMusic() }
         }
 
         Timer {
