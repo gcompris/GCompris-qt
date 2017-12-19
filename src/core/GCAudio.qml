@@ -58,6 +58,18 @@ Item {
     property alias source: audio.source
 
     /**
+     * type: positive real number less than 1
+     * Determines instensity of the audio.
+     */
+    property alias volume: audio.volume
+
+    /**
+     * type:bool
+     * Whether the audio element contains audio.
+     */
+    property alias hasAudio: audio.hasAudio
+
+    /**
      * type:string
      * Detailed error message in case of playback errors.
      */
@@ -88,11 +100,13 @@ Item {
      */
     signal done
 
+    property var muteChangeHandler: function () { muted ? volume = 0 : volume = 1 };
+
     /**
      *  When mute is changed we set the volume to 0 to mute a potential playing
      * sound.
      */
-    onMutedChanged: muted ? audio.volume = 0 : audio.volume = 1
+    onMutedChanged: muteChangeHandler()
 
     /**
      * Plays back the audio resource @p file.
@@ -142,7 +156,7 @@ Item {
      *             audio is muted
      */
     function append(file) {
-        if(!fileId.exists(file))
+        if(!fileId.exists(file) || muted)
             return false
 
         // @FIXME There is a bug in gstreamer that makes wav files to freeze us on Linux.

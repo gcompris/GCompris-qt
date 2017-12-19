@@ -108,6 +108,13 @@ Window {
         id: backgroundMusic
         muted: !ApplicationSettings.isBackgroundMusicEnabled
 
+        muteChangeHandler: function() {
+            if(muted) { volume = 0; }
+            else { volume = 1; }
+
+            if(!hasAudio) { delayedbackgroundMusic.playBackgroundMusic(); }
+        }
+
         Timer {
             id: delayedbackgroundMusic
             interval: (ApplicationSettings.isAudioVoicesEnabled && !ApplicationSettings.isAudioEffectsEnabled) ? 2000 : 20000
