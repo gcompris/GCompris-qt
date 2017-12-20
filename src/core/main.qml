@@ -112,8 +112,10 @@ Window {
             if(muted) { volume = 0 }
             else { volume = 1 }
 
-            if(!hasAudio) { delayedbackgroundMusic.playBackgroundMusic() }
+            if(!hasAudio && !delayedbackgroundMusic.running) { delayedbackgroundMusic.playBackgroundMusic() }
         }
+
+        onDone: delayedbackgroundMusic.playBackgroundMusic()
 
         Timer {
             id: delayedbackgroundMusic
