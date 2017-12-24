@@ -29,7 +29,7 @@ import "."
 ActivityBase {
     id: activity
 
-    property variant dataset
+    property var dataset
 
     onStart: focus = true
     onStop: {}
@@ -61,7 +61,7 @@ ActivityBase {
             property int numberOfSubLevels
             property int currentSubLevel
             property int giftWeight
-            property variant dataset: activity.dataset
+            property var dataset: activity.dataset
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
             property alias masseAreaRight: masseAreaRight

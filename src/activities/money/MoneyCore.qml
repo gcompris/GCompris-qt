@@ -30,7 +30,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property variant dataset
+    property var dataset
 
     pageComponent: Image {
         id: background

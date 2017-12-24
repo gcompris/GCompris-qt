@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Eilean Donan castle")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/EilanDonanCastle_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

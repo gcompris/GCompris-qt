@@ -66,7 +66,7 @@ ActivityBase {
             property int selectionCount
             property int tuxScore: tuxScore.text
             property int playerScore: playerScore.text
-            property variant dataset: activity.dataset
+            property var dataset: activity.dataset
             property alias containerModel: containerModel
             property alias cardRepeater: cardRepeater
             property alias grid: grid

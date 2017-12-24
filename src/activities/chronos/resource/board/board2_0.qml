@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("The 4 Seasons")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/autumn.svg",
           "x": 0.25,

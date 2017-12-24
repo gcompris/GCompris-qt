@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Katsushika Hokusa, Poppies - 1833-1834")
-   property variant levels : [
+   property var levels : [
       {
          "pixmapfile" : "image/bg.svg",
          "type" : "SHAPE_BACKGROUND_IMAGE",

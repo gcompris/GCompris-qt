@@ -24,7 +24,7 @@ QtObject{
     property bool isEmbedded: false
     property bool allowExpertMode: true
     property string imagesPrefix: "qrc:/gcompris/data/words/nature/"
-    property variant levels: [
+    property var levels: [
         {
             "type": "lesson",
             "name": qsTr("Nature"),

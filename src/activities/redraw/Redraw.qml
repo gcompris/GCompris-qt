@@ -64,7 +64,7 @@ ActivityBase {
             property int numberOfColor
             property int numberOfLine: targetModelData.length / numberOfColumn
             property alias targetModel: targetModel
-            property variant targetModelData
+            property var targetModelData
         }
 
         onStart: { Activity.start(items) }

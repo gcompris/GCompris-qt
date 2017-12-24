@@ -24,7 +24,7 @@ import QtQuick 2.6
 QtObject {
    property string instruction: qsTr("Drag and Drop the items to make them match")
 
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile" : "food/baby_bottle.png",
           "x" : "0.5",

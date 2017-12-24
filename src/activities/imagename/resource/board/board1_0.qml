@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Drag and Drop each item onto its name")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/postpoint.svg",
           "x": "0.2",

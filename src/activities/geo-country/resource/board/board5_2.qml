@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Districts of Turkey")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "turkey/turkey.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"

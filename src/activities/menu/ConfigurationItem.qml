@@ -708,7 +708,7 @@ Item {
         }
     }
 
-    property variant fontCapitalizationModel: [
+    property var fontCapitalizationModel: [
         { text: qsTr("Mixed case (default)"), value: Font.MixedCase },
         { text: qsTr("All uppercase"), value: Font.AllUppercase },
         { text: qsTr("All lowercase"), value: Font.AllLowercase }

@@ -24,7 +24,7 @@ import QtQuick 2.6
 QtObject {
    property string instruction: qsTr("Lock with colored shapes.")
    property bool glow: false
-   property variant levels: [
+   property var levels: [
 	  {
           "pixmapfile" : "dog3/dog.png",
           "type" : "SHAPE_BACKGROUND_IMAGE"

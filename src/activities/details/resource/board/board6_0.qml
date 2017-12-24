@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Vincent van Gogh, Cafe Terrace at Night - 1888")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/Gogh4_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

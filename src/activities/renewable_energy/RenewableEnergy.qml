@@ -30,7 +30,7 @@ ActivityBase {
     onStop: {}
 
     property string url: "qrc:/gcompris/src/activities/renewable_energy/resource/"
-    property variant barAtStart
+    property var barAtStart
 
     property int oldWidth: width
     onWidthChanged: {

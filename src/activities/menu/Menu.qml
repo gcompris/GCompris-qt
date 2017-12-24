@@ -79,7 +79,7 @@ ActivityBase {
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
     property string inputText: ""
-    property variant sections: [
+    property var sections: [
         {
             icon: activity.url + "all.svg",
             tag: "favorite"

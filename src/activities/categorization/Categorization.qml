@@ -36,7 +36,7 @@ ActivityBase {
 
     property string boardsUrl: ":/gcompris/src/activities/categorization/resource/board/"
     property bool vert: background.width < background.height
-    property variant barAtStart
+    property var barAtStart
 
     pageComponent: Image {
         id: background

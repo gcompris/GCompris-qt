@@ -69,7 +69,7 @@ ActivityBase {
             property alias englishFallbackDialog: englishFallbackDialog
             property string locale: 'system'
             property alias dialogActivityConfig: dialogActivityConfig
-            property variant categoriesTranslations: activity.categoriesTranslations
+            property var categoriesTranslations: activity.categoriesTranslations
         }
 
         onStart: {
@@ -237,7 +237,7 @@ ActivityBase {
         }
     }
 
-    property variant categoriesTranslations: {"otherChapter": qsTr("other"),
+    property var categoriesTranslations: {"otherChapter": qsTr("other"),
         "otherLesson": qsTr("other"),
         "action": qsTr("action"), "adjective": qsTr("adjective"),
         "color": qsTr("color"), "number": qsTr("number"),

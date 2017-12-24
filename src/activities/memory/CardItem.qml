@@ -28,7 +28,7 @@ import "memory.js" as Activity
 Flipable {
     id: card
 
-    property variant pairData
+    property var pairData
     property bool isBack: true
     property bool isShown: false
     property bool isFound: false

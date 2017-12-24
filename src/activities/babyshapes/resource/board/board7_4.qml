@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Ambrosius Bosschaert the Elder, Flower Still Life - 1614")
-   property variant levels: [
+   property var levels: [
 	  {
           "pixmapfile" : "image/Bosschaert_04_background.png",
           "type" : "SHAPE_BACKGROUND_IMAGE"
