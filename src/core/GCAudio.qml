@@ -59,7 +59,7 @@ Item {
 
     /**
      * type: positive real number less than 1
-     * Determines instensity of the audio.
+     * Determines intensity of the audio.
      */
     property alias volume: audio.volume
 
