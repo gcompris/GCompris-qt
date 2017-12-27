@@ -26,18 +26,18 @@ function get() {
                     "bodyName": qsTr("Sun"),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("The Sun is the_____ largest object in our solar system"),
-                            "options": [qsTr("Sixth"), qsTr("Third"), qsTr("First"), qsTr("Seventh")],
+                            "question": qsTr("How large is the Sun compared to other planets in our Solar System?"),
+                            "options": [qsTr("Sixth largest"), qsTr("Third largest"), qsTr("Largest"), qsTr("Seventh largest")],
                             "closeness": [17.5, 67, 100, 1]
                         },
                         { 	//sub-level 2
-                            "question": qsTr("The temperature of the Sun is around _____degrees"),
-                            "options": ["1000", "4500", "5505", "3638"],
+                            "question": qsTr("The temperature of the Sun is around"),
+                            "options": [qsTr("1000 degrees"), qsTr("4500 degrees"), qsTr("5505 degrees"), qsTr("3638 degrees")],
                             "closeness": [1, 78, 100, 60]
                         },
                         { 	//sub-level 3
-                            "question": qsTr("Sun is ___ years old"),
-                            "options": [qsTr("1.2 billion"), qsTr("3 billion"), qsTr("7 billion"), qsTr("4.5 billion")],
+                            "question": qsTr("How old is the Sun?"),
+                            "options": [qsTr("1.2 billion years"), qsTr("3 billion years"), qsTr("7 billion years"), qsTr("4.5 billion years")],
                             "closeness": [1, 55, 25, 100]
                         },
                         { 	//sub-level 4
@@ -46,8 +46,8 @@ function get() {
                             "closeness": [100, 58, 1, 86.6]
                         },
                         { 	//sub-level 5
-                            "question": qsTr("Sun is as big as ____ Earths"),
-                            "options": [qsTr("1 million"), qsTr("2.6 million"), qsTr("1.3 million"), qsTr("5 million")],
+                            "question": qsTr("The Sun is as big as"),
+                            "options": [qsTr("1 million Earths"), qsTr("2.6 million Earths"), qsTr("1.3 million Earths"), qsTr("5 million Earths")],
                             "closeness": [92, 65, 100, 1]
                         }
                     ]
@@ -60,7 +60,7 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Mercury is the ______ planet in the Solar System"),
+                            "question": qsTr("At which position is Mercury in the Solar System?"),
                             "options": [qsTr("Seventh"), qsTr("Sixth"), qsTr("First"), qsTr("Fourth")],
                             "closeness": [1, 17.5, 100, 50.5]
                         },
@@ -99,7 +99,7 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Venus is the ______ planet in the Solar System."),
+                            "question": qsTr("At which position is Venus in the Solar System?"),
                             "options": [qsTr("Seventh"), qsTr("Sixth"), qsTr("Second"), qsTr("Fourth")],
                             "closeness": [1, 20.8, 100, 60.4]
                         },
@@ -109,12 +109,12 @@ function get() {
                             "closeness": [94, 100, 71, 1]
                         },
                         { 	//sub-level 3
-                            "question": qsTr("Venus is the _____________ largest planet"),
-                            "options": [qsTr("Seventh"), qsTr("Sixth"), qsTr("Fifth"), qsTr("Fourth")],
+                            "question": qsTr("How large is Venus compared to other planets in our Solar System?"),
+                            "options": [qsTr("Seventh largest"), qsTr("Sixth largest"), qsTr("Fifth largest"), qsTr("Fourth largest")],
                             "closeness": [50.5, 100, 50.5, 1]
                         },
                         { 	//sub-level 4
-                            "question": qsTr("How long is an year on Venus?"),
+                            "question": qsTr("How long is a year on Venus?"),
                             "options": [qsTr("225 days"), qsTr("365 days"), qsTr("116 days"), qsTr("100 days")],
                             "closeness": [100, 1, 23, 11.6]
                         },
@@ -138,7 +138,7 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Earth is the ______ planet in the Solar System"),
+                            "question": qsTr("At which position is Earth in the Solar System?"),
                             "options": [qsTr("Sixth"), qsTr("Third"), qsTr("First"), qsTr("Fifth")],
                             "closeness": [1, 100, 35, 35]
                         },
@@ -158,7 +158,7 @@ function get() {
                             "closeness": [96.5, 100, 1, 93]
                         },
                         { 	//sub-level 5
-                            "question": qsTr("Earth has ____ seasons."),
+                            "question": qsTr("How many seasons does Earth has?"),
                             "options": ["2", "4", "6", "1"],
                             "closeness": [34, 100, 34, 1]
                         },
@@ -177,7 +177,7 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Mars is the ______ planet in the Solar System"),
+                            "question": qsTr("At which position is Mars in the Solar System?"),
                             "options": [qsTr("Sixth"), qsTr("Fourth"), qsTr("First"), qsTr("Fifth")],
                             "closeness": [34, 100, 1, 67]
                         },
@@ -187,7 +187,7 @@ function get() {
                             "closeness": [100, 81.4, 1, 51.5]
                         },
                         { 	//sub-level 3
-                            "question": qsTr("Mars is about __________ the size of Earth"),
+                            "question": qsTr("How big is the size of Mars compared to Earth?"),
                             "options": [qsTr("The same"), qsTr("Half"), qsTr("Two times"), qsTr("Three times")],
                             "closeness": [80, 100, 40.6, 1]
                         },
@@ -216,13 +216,13 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years where, 1 Earth year is the time taken by Earth to complete 1 year."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Jupiter is the ______ planet in the Solar System"),
+                            "question": qsTr("At which position is Jupiter in the Solar System?"),
                             "options": [qsTr("Sixth"), qsTr("Fifth"), qsTr("First"), qsTr("Fourth")],
                             "closeness": [75, 100, 1, 75]
                         },
                         { 	//sub-level 2
-                            "question": qsTr("Jupiter is the ______  largest planet in the Solar System"),
-                            "options": [qsTr("Third"), qsTr("First"), qsTr("Fifth"), qsTr("Second")],
+                            "question": qsTr("How large is Jupiter compared to other planets in the Solar System?"),
+                            "options": [qsTr("Third largest"), qsTr("Largest"), qsTr("Fifth largest"), qsTr("Second largest")],
                             "closeness": [50.5, 100, 1, 75]
                         },
                         { 	//sub-level 3
@@ -255,13 +255,13 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth Years."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Saturn is the ______ planet in the Solar System"),
+                            "question": qsTr("At which position is Saturn in the Solar System?"),
                             "options": [qsTr("Sixth"), qsTr("Fourth"), qsTr("First"), qsTr("Fifth")],
                             "closeness": [100, 60.4, 1, 80]
                         },
                         { 	//sub-level 2
-                            "question": qsTr("Saturn is the ______ largest planet in the Solar System"),
-                            "options": [qsTr("Third"), qsTr("First"), qsTr("Fifth"), qsTr("Second")],
+                            "question": qsTr("How large is Staurn compared to other planets in the Solar System?"),
+                            "options": [qsTr("Third largest"), qsTr("Largest"), qsTr("Fifth largest"), qsTr("Second largest")],
                             "closeness": [67, 67, 1, 100]
                         },
                         { 	//sub-level 3
@@ -294,7 +294,7 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth Years."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Uranus is the ______ planet in the Solar System"),
+                            "question": qsTr("At which position is Uranus in the Solar System?"),
                             "options": [qsTr("Seventh"), qsTr("Fourth"), qsTr("Eighth"), qsTr("Fifth")],
                             "closeness": [100, 1, 67, 34]
                         },
@@ -314,8 +314,8 @@ function get() {
                             "closeness": [77.6, 68, 100, 1]
                         },
                         { 	//sub-level 5
-                            "question": qsTr("Uranus is the ______ largest planet in the Solar System."),
-                            "options": [qsTr("Third"), qsTr("First"), qsTr("Seventh"), qsTr("Second")],
+                            "question": qsTr("How large is Uranus compared to other planets in the Solar System?"),
+                            "options": [qsTr("Third largest"), qsTr("Largest"), qsTr("Seventh largest"), qsTr("Second largest")],
                             "closeness": [100, 50.5, 1, 75]
                         },
                         { 	//sub-level 6
@@ -333,7 +333,7 @@ function get() {
                     "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 Years."),
                     "levels": [
                         { 	//sub-level 1
-                            "question": qsTr("Neptune is the ______ planet in the Solar System"),
+                            "question": qsTr("At which position is Neptune in the Solar System?"),
                             "options": [qsTr("Seventh"), qsTr("Fourth"), qsTr("Eighth"), qsTr("Fifth")],
                             "closeness": [75, 1, 100, 25.7]
                         },
@@ -358,7 +358,7 @@ function get() {
                             "closeness": [1, 23, 100, 64]
                         },
                         { 	//sub-level 6
-                            "question": qsTr("Neptune is as big as ____ Earths"),
+                            "question": qsTr("How many Earths can fit inside Neptune?"),
                             "options": ["100", "57", "5", "500"],
                             "closeness": [90.4, 100, 88.4, 1]
                         }
