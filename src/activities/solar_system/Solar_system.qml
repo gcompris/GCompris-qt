@@ -98,7 +98,7 @@ ActivityBase {
         property int itemWidth: horizontalLayout ? background.width / 9 : (background.height - bar.height) / 9
 
         //Arrangement of all the planets in the solar system
-        GridView{
+        GridView {
             id: planetView
             y: horizontalLayout ? (parent.height - bar.height) / 2 - cellHeight/2 : 0
             x: horizontalLayout ? 0 : parent.width / 2 - cellHeight / 2
@@ -176,8 +176,8 @@ ActivityBase {
             property var hint1
             property var hint2
 
-            title: "Hint"
-            content: hint1 + "<br>" + hint2
+            title: qsTr("Hint")
+            content: "%1<br>%2".arg(hint1).arg(hint2)
             onClose: home()
             Rectangle {
                 id: button
