@@ -30,7 +30,7 @@ QtObject {
             "image": imagesPrefix + "rose.jpg",
             "content": [
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -39,7 +39,7 @@ QtObject {
                     "bad": ["categorization/resource/images/alphabets/upperZ.svg","lang/resource/words_sample/fruit.png","lang/resource/words_sample/mosquito.png","lang/resource/words_sample/coconut.png", "lang/resource/words_sample/dolphin.png","lang/resource/words_sample/kiwi.png"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -48,7 +48,7 @@ QtObject {
                     "bad": ["monuments/beandenburgGate.jpg","monuments/burj.jpg","others/bulb.jpg","tools/cutingTool.jpg","others/knife.jpg","tools/multimeter.jpg"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -57,7 +57,7 @@ QtObject {
                     "bad": ["fishes/fish3.jpg","fishes/fish5.jpg","renewable/dam2.jpg","others/spoons.jpg","others/igloo.jpg","tools/measuringTape.jpg"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -66,7 +66,7 @@ QtObject {
                     "bad": ["categorization/resource/images/alphabets/upperZ.svg","categorization/resource/images/alphabets/lowerH.svg","lang/resource/words_sample/mosquito.png","lang/resource/words_sample/fruit.png"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -75,7 +75,7 @@ QtObject {
                     "bad": ["fishes/fish7.jpg","fishes/fish16.jpg","tools/hammer4.jpg","tools/sprinkler.jpg","renewable/solar5.jpg"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -84,7 +84,7 @@ QtObject {
                     "bad": ["lang/resource/words_sample/mosquito.png","lang/resource/words_sample/fruit.png","lang/resource/words_sample/color.png","lang/resource/words_sample/strawberry.png"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -93,7 +93,7 @@ QtObject {
                     "bad": ["others/plate.jpg","fishes/fish18.jpg","monuments/leMusee.jpg"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
@@ -102,7 +102,7 @@ QtObject {
                     "bad": ["fishes/fish6.jpg","fishes/fish3.jpg","others/pan.jpg","others/spoons.jpg"]
                 },
                 {
-                	"instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
+                    "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 2,
