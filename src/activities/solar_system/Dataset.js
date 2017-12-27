@@ -213,7 +213,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_real.svg",
                     "bodyName": qsTr("Jupiter"),
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees and on Saturn is -178 degrees"),
-                    "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years where, 1 Earth year is the time taken by Earth to complete 1 year."),
+                    "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("At which position is Jupiter in the Solar System?"),
@@ -252,7 +252,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.png",
                     "bodyName": qsTr("Saturn"),
                     "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 degrees."),
-                    "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth Years."),
+                    "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth years."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("At which position is Saturn in the Solar System?"),
@@ -291,7 +291,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_real.svg",
                     "bodyName": qsTr("Uranus"),
                     "temperatureHint": qsTr("The maximum temperature on Saturn is -178 degrees."),
-                    "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth Years."),
+                    "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("At which position is Uranus in the Solar System?"),
@@ -330,7 +330,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_real.svg",
                     "bodyName": qsTr("Neptune"),
                     "temperatureHint": qsTr("The maximum temperature on Saturn is -178 degrees."),
-                    "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 Years."),
+                    "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 years."),
                     "levels": [
                         { 	//sub-level 1
                             "question": qsTr("At which position is Neptune in the Solar System?"),

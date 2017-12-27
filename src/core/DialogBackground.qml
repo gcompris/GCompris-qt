@@ -45,6 +45,7 @@ Rectangle {
     property string title
     property alias titleIcon: titleIcon.source
     property string content
+    readonly property real textContentHeight: textContent.contentHeight
     signal close
     signal start
     signal pause
