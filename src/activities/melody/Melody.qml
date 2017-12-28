@@ -30,6 +30,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    isMusicalActivity: true
+
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -59,8 +61,6 @@ ActivityBase {
 
         onStart: {
             items.backgroundMusicStatus = ApplicationSettings.isBackgroundMusicEnabled
-            //ApplicationSettings.isBackgroundMusicEnabled = false
-            activity.isMusicalActivity = true
             bar.level = 1
             score.numberOfSubLevels = 5
             score.currentSubLevel = 1
@@ -69,7 +69,6 @@ ActivityBase {
 
         onStop: {
             questionPlayer.stop()
-            //ApplicationSettings.isBackgroundMusicEnabled = items.backgroundMusicStatus
         }
 
         Image {

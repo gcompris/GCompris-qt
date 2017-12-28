@@ -28,12 +28,6 @@ import "../memory-sound/memorysounddataset.js" as Dataset
 MemoryCommon {
     dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/memory-sound/resource/gcompris_band.svg"
-    property bool backgroundMusicStatus
-    onStart: {
-        backgroundMusicStatus = ApplicationSettings.isBackgroundMusicEnabled
-        ApplicationSettings.isBackgroundMusicEnabled = false
-    }
-    onStop: ApplicationSettings.isBackgroundMusicEnabled = backgroundMusicStatus
     withTux: true
-
+    isMusicalActivity: true
 }
