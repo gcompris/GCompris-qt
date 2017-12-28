@@ -109,7 +109,7 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: background.horizontalLayout ? background.width * 0.40
                        : background.width - imageAndOptionGrid.anchors.margins * 2
-                height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height - questionArea.height - 50 * ApplicationInfo.ratio
+                height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height * 1.5 - questionArea.height - 50 * ApplicationInfo.ratio
                         : parent.itemHeightVertical
                 spacing: 10 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
@@ -179,11 +179,10 @@ Item {
 
     Rectangle {
         id: closenessMeter
-        anchors.right: parent.right
-        y: background.horizontalLayout ? (background.height - height  - 10 * ApplicationInfo.ratio) : (background.height - bar.height - height  - 10 * ApplicationInfo.ratio)
-        anchors.margins: 10 * ApplicationInfo.ratio
-        height: closenessText.height * 1.23
-        width: closenessText.width * 1.23
+        x: ((background.width - items.bar.barZoom * items.bar.fullButton * 5.6) < (width + 10 * ApplicationInfo.ratio) && background.horizontalLayout) ? background.width - width - 42 * ApplicationInfo.ratio : background.width - width - 10 * ApplicationInfo.ratio
+        y: (background.width - items.bar.barZoom * items.bar.fullButton * 5.6) < (width + 10 * ApplicationInfo.ratio) ? background.height - bar.height - height - 10 * ApplicationInfo.ratio : background.height - height  - 10 * ApplicationInfo.ratio
+        height: 40 * ApplicationInfo.ratio
+        width: 130 * ApplicationInfo.ratio
         radius: width * 0.06
         border.width: 2
         border.color: "black"
@@ -193,8 +192,9 @@ Item {
             id: closenessText
             anchors.centerIn: parent
             color: "black"
-            font.pointSize: NaN                   // need to clear font.pointSize explicitly
-            font.pixelSize: background.horizontalLayout ? background.width * 0.023 : 18 * ApplicationInfo.ratio
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
         }
 
