@@ -30,13 +30,13 @@ ElectricalComponent {
     noOfInputs: 4
     noOfOutputs: 7
 
-    property variant inputTerminalPosY: [0.057,0.35,0.649,0.935]
-    property variant outputTerminalPosY: [0.048,0.198,0.353,0.509,0.664,0.812,0.952]
+    property var inputTerminalPosY: [0.057, 0.35, 0.649, 0.935]
+    property var outputTerminalPosY: [0.048, 0.198, 0.353, 0.509, 0.664, 0.812, 0.952]
 
-    property variant blackChar: ["BCDTo7SegmentA_black.svg","BCDTo7SegmentB_black.svg","BCDTo7SegmentC_black.svg",
+    property var blackChar: ["BCDTo7SegmentA_black.svg","BCDTo7SegmentB_black.svg","BCDTo7SegmentC_black.svg",
                                  "BCDTo7SegmentD_black.svg","BCDTo7SegmentE_black.svg","BCDTo7SegmentF_black.svg",
                                  "BCDTo7SegmentG_black.svg"]
-    property variant redChar: ["BCDTo7SegmentA_red.svg","BCDTo7SegmentB_red.svg","BCDTo7SegmentC_red.svg",
+    property var redChar: ["BCDTo7SegmentA_red.svg","BCDTo7SegmentB_red.svg","BCDTo7SegmentC_red.svg",
                                "BCDTo7SegmentD_red.svg","BCDTo7SegmentE_red.svg","BCDTo7SegmentF_red.svg",
                                "BCDTo7SegmentG_red.svg"]
 
@@ -90,7 +90,6 @@ ElectricalComponent {
     }
 
     function updateOutput(wireVisited) {
-
         var i
         for(i = 1 ; i < truthTable.length ; ++i) {
             var j

@@ -43,8 +43,9 @@ Item {
     property alias zoomOutBtn: zoomOutBtn
 
     signal hideToolbar
-
     onHideToolbar: toolButton.showToolBar = false
+
+    property int minIconWidth: listWidget.vert ? Math.min((background.width - 1.5*view.width) / 6, 100) : Math.min((background.height - 1.5*bar.height - view.height) / 6, 100)
 
     ListModel {
         id: mymodel
@@ -105,10 +106,10 @@ Item {
 
         Rectangle {
             id: toolButton
-            width: listWidget.vert ? listWidget.width : listWidget.height
-            height: listWidget.vert ? listWidget.width : listWidget.height
+            width: (listWidget.vert ? listWidget.width : listWidget.height) - listWidget.anchors.leftMargin
+            height: width
             color: "black"
-            radius: 100
+            radius: width
 
             property bool showToolBar: false
 
@@ -154,14 +155,14 @@ Item {
                     Image {
                         id: toolDelete
                         state: "notSelected"
-                        width: 100
-                        height: 100
+                        width: minIconWidth
+                        height: width
                         source: Activity.url + "deleteOn.svg"
                         fillMode: Image.PreserveAspectFit
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
-                                toolDelete.state = toolDelete.state == "selected" ? "notSelected" : "selected"
+                                toolDelete.state = (toolDelete.state == "selected") ? "notSelected" : "selected"
                                 Activity.toolDelete = !Activity.toolDelete
                                 Activity.toolDeleteSticky = false
                             }
@@ -174,7 +175,7 @@ Item {
                         states: [
                             State {
                                 name: "selected"
-                                PropertyChanges{
+                                PropertyChanges {
                                     target: toolDelete
                                     source: Activity.url + "deleteOn.svg"
                                 }
@@ -192,14 +193,15 @@ Item {
                     Image {
                         id: info
                         source: Activity.url + "Info.svg"
-                        width: 100
-                        height: 100
+                        width: minIconWidth
+                        height: width
                         fillMode: Image.PreserveAspectFit
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
                                 if(!Activity.animationInProgress && parent.state == "canBeSelected") {
                                     Activity.displayInfo()
+                                    hideToolbar()
                                 }
                             }
                         }
@@ -223,8 +225,8 @@ Item {
 
                     Image {
                         id: rotateLeft
-                        width: 100
-                        height: 100
+                        width: minIconWidth
+                        height: width
                         source: Activity.url + "rotateLeft.svg"
                         fillMode: Image.PreserveAspectFit
                         state: "CanNotBeSelected"
@@ -239,7 +241,7 @@ Item {
                         states: [
                             State {
                                 name: "canBeSelected"
-                                PropertyChanges{
+                                PropertyChanges {
                                     target: rotateLeft
                                     source: Activity.url + "rotateLeft.svg"
                                 }
@@ -256,8 +258,8 @@ Item {
 
                     Image {
                         id: rotateRight
-                        width: 100
-                        height: 100
+                        width: minIconWidth
+                        height: width
                         source: Activity.url + "rotateRight.svg"
                         fillMode: Image.PreserveAspectFit
                         state: "CanNotBeSelected"
@@ -289,9 +291,9 @@ Item {
 
                     Rectangle {
                         id: zoomInBtn
-                        width: 100
-                        height: 100
-                        radius: 100
+                        width: minIconWidth
+                        height: width
+                        radius: width
 
                         color: "black"
 
@@ -325,9 +327,9 @@ Item {
 
                     Rectangle {
                         id: zoomOutBtn
-                        width: 100
-                        height: 100
-                        radius: 100
+                        width: minIconWidth
+                        height: width
+                        radius: width
 
                         color: "black"
 

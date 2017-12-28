@@ -20,16 +20,16 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import "../digital_electricity.js" as Activity
-
 import GCompris 1.0
+
+import "../digital_electricity.js" as Activity
 
 ElectricalComponent {
     id: bcdTo7Segment
     terminalSize: 0.127
     noOfInputs: 1
     noOfOutputs: 4
-    property variant outputTerminalPosY: [0.064, 0.345, 0.645, 0.936]
+    property var outputTerminalPosY: [0.064, 0.345, 0.645, 0.936]
     property int count: 0
     property int previousInp: 0
 
@@ -37,7 +37,7 @@ ElectricalComponent {
                       "incrementing by the specified time period")
 
     truthTable: []
-    property variant outputTable: [['0','0','0','0'],
+    property var outputTable: [['0','0','0','0'],
                                    ['0','0','0','1'],
                                    ['0','0','1','0'],
                                    ['0','0','1','1'],
@@ -80,7 +80,6 @@ ElectricalComponent {
     }
 
     function updateOutput(wireVisited) {
-
         for(var i = 0 ; i < noOfOutputs ; ++i) {
             var terminal = outputTerminals.itemAt(i)
             terminal.value = outputTable[count][i]
@@ -89,7 +88,6 @@ ElectricalComponent {
         }
 
         if(previousInp != inputTerminals.itemAt(0).value) {
-
             previousInp = inputTerminals.itemAt(0).value
             count = (count + 1) % 10;
 

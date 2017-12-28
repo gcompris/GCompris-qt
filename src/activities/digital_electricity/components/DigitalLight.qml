@@ -51,7 +51,6 @@ ElectricalComponent {
     }
 
     function updateOutput(wireVisited) {
-
         if(inputTerminals.itemAt(0).value == 1)
             imgSrc = "DigitalLightOn.svg"
         else

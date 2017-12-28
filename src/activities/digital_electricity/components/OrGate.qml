@@ -27,7 +27,7 @@ ElectricalComponent {
     terminalSize: 0.251
     noOfInputs: 2
     noOfOutputs: 1
-    property variant inputTerminalPosY: [0.223, 0.786]
+    property var inputTerminalPosY: [0.223, 0.786]
 
     information: qsTr("OR gate takes 2 or more binary input in its input terminals and outputs a single " +
                       "value. The output is 1 if any of the input is 1, else it is 0. In this activity, a " +

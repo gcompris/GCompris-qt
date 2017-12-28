@@ -41,7 +41,7 @@ ElectricalComponent {
 
     property alias outputTerminals: outputTerminals
     property double period: 1
-    property variant periodFraction: ["1/4","1/2","1","2"]
+    property var periodFraction: ["1/4","1/2","1","2"]
     property int periodIndex: 2
 
     Repeater {
@@ -156,7 +156,7 @@ ElectricalComponent {
             verticalAlignment: Text.AlignVCenter
             height: parent.height - 10
             width: parent.width - 10
-            text: qsTr("%1s").arg(signalGenerator.periodFraction[periodIndex])
+            text: qsTr("%1 s").arg(signalGenerator.periodFraction[periodIndex])
         }
     }
 }

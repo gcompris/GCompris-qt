@@ -27,7 +27,7 @@ ElectricalComponent {
     terminalSize: 0.251
     noOfInputs: 2
     noOfOutputs: 1
-    property variant inputTerminalPosY: [0.205, 0.769]
+    property var inputTerminalPosY: [0.205, 0.769]
 
     information: qsTr("NOR gate takes 2 or more binary input in its input terminals and outputs a single " +
                       "value. It is the complement of OR gate. In this activity, a 2 input NOR gate is " +

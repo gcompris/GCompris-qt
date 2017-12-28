@@ -27,7 +27,7 @@ ElectricalComponent {
     terminalSize: 0.229
     noOfInputs: 2
     noOfOutputs: 1
-    property variant inputTerminalPosY: [0.248, 0.762]
+    property var inputTerminalPosY: [0.248, 0.762]
 
     information: qsTr("XOR gate takes 2 or more binary input in its input terminals and outputs a single " +
                       "value. The output is 1 if number of '1' in input is odd, and 0 if number of '1' in " +

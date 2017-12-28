@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitnsit@gmail.com> (Qt Quick port)
+ *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -80,7 +81,6 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel
-    var sizeMultiplier = 1 + (1 / (1.5 * currentLevel))
 
     items.availablePieces.view.currentDisplayedGroup = 0
     items.availablePieces.view.previousNavigation = 1
@@ -104,7 +104,7 @@ function initLevel() {
 
     if (!items.isTutorialMode) {
         items.tutorialInstruction.index = -1
-        loadFreeMode(sizeMultiplier)
+        loadFreeMode()
     } else {
         // load tutorial levels from dataset
         processingAnswer = false
@@ -115,8 +115,8 @@ function initLevel() {
             items.availablePieces.model.append( {
                "imgName": currentInputComponent.imageName,
                "componentSrc": currentInputComponent.componentSource,
-               "imgWidth": currentInputComponent.width * sizeMultiplier,
-               "imgHeight": currentInputComponent.height * sizeMultiplier,
+               "imgWidth": currentInputComponent.width,
+               "imgHeight": currentInputComponent.height,
                "toolTipText": currentInputComponent.toolTipText
             })
         }
@@ -163,14 +163,14 @@ function initLevel() {
     }
 }
 
-function loadFreeMode(sizeMultiplier) {
+function loadFreeMode() {
     var componentList = items.tutorialDataset.componentList
     for (var i = 0; i < componentList.length; i++) {
         items.availablePieces.model.append( {
             "imgName": componentList[i].imageName,
             "componentSrc": componentList[i].componentSource,
-            "imgWidth": sizeMultiplier * componentList[i].width,
-            "imgHeight": sizeMultiplier * componentList[i].height,
+            "imgWidth": componentList[i].width,
+            "imgHeight": componentList[i].height,
             "toolTipText": componentList[i].toolTipText
         })
     }
@@ -193,9 +193,7 @@ function checkAnswer() {
         }
     } else if (problemType == items.tutorialDataset.problemType.equation1Variable) {
         var switch1 = determiningComponents[0]
-
         var digitalLight = determiningComponents[1]
-
         var switch1InitialState = switch1.imgSrc
 
         for (var A = 0; A <= 1; A++) {
@@ -631,9 +629,9 @@ function removeWire(wire) {
     var outTerminal = wire.from
 
     var removeIndex = inTerminal.wires.indexOf(wire)
-    inTerminal.wires.splice(removeIndex,1)
+    inTerminal.wires.splice(removeIndex, 1)
     removeIndex = outTerminal.wires.indexOf(wire)
-    outTerminal.wires.splice(removeIndex,1)
+    outTerminal.wires.splice(removeIndex, 1)
     connected[wire.to] = -1
 
     inTerminal.value = 0

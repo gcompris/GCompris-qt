@@ -27,8 +27,8 @@ ElectricalComponent {
     terminalSize: 0.214
     noOfInputs: 2
     noOfOutputs: 3
-    property variant inputTerminalPosY: [0.211, 0.784]
-    property variant outputTerminalPosY: [0.128, 0.481, 0.88]
+    property var inputTerminalPosY: [0.211, 0.784]
+    property var outputTerminalPosY: [0.128, 0.481, 0.88]
 
     information: qsTr("Comparator takes 2 numbers as input, A and B. It compares them and outputs 3 " +
                       "values. First value is true if A < B, else it is false. Second value is true " +
@@ -70,7 +70,6 @@ ElectricalComponent {
     }
 
     function updateOutput(wireVisited) {
-
         outputTerminals.itemAt(0).value = (inputTerminals.itemAt(0).value < inputTerminals.itemAt(1).value)
         outputTerminals.itemAt(1).value = (inputTerminals.itemAt(0).value == inputTerminals.itemAt(1).value)
         outputTerminals.itemAt(2).value = (inputTerminals.itemAt(0).value > inputTerminals.itemAt(1).value)

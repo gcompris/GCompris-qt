@@ -27,7 +27,7 @@ ElectricalComponent {
     terminalSize: 0.273
     noOfInputs: 2
     noOfOutputs: 1
-    property variant inputTerminalPosY: [0.174, 0.786]
+    property var inputTerminalPosY: [0.174, 0.786]
 
     information: qsTr("NAND gate takes 2 or more binary input in its input terminals and outputs a single " +
                       "value. It is the complement of AND gate. In this activity, a 2 input NAND gate is " +

@@ -19,16 +19,21 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "digital_electricity/DigitalElectricity.qml"
-  difficulty: 1
+  difficulty: 6
   icon: "digital_electricity/digital_electricity.svg"
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Digital Electricity")
+  //: Help title
   description: qsTr("Create and simulate a digital electric schema")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Learn how the digital electricity works and create your own circuit"
+  //: Help goal
   goal: qsTr("Freely create a digital electric schema with a real time simulation of it.")
+  //: Help prerequisite
   prerequisite: qsTr("Requires some basic understanding of the concept of digital electronics.")
-  manual: qsTr("Drag electrical components from the selector and drop them in the working area.You can also move components by dragging them. To delete a component, select the deletion tool on top of the component selector, and select the component. You can click on the component and then on the rotate button to rotate it or info button to get information about it. You can click on the switch to open and close it. To connect two terminals, click on first terminal, then on second terminal. To deselect terminal or delete tool, click on any empty area. The simulation is updated in real time by any user action.")
+  //: Help manual
+  manual: qsTr("Drag electrical components from the selector and drop them in the working area. You can also move components by dragging them. To delete a component, select the deletion tool on top of the component selector, and select the component. You can click on the component and then on the rotate button to rotate it or info button to get information about it. You can click on the switch to open and close it. To connect two terminals, click on first terminal, then on second terminal. To deselect terminal or delete tool, click on any empty area. The simulation is updated in real time by any user action.")
   credit: ""
   section: "experimental"
   createdInVersion: 9000

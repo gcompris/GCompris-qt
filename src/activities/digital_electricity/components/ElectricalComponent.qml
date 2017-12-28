@@ -20,9 +20,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import "../digital_electricity.js" as Activity
-
 import GCompris 1.0
+
+import "../digital_electricity.js" as Activity
 
 Image {
     id: electricalComponent
@@ -33,7 +33,7 @@ Image {
     property string imgSrc
     property string information
     property string toolTipTxt
-    property variant truthTable: []
+    property var truthTable: []
     property int index
     property int noOfInputs
     property int noOfOutputs
@@ -67,7 +67,7 @@ Image {
         property: "rotation"
         from: initialAngle; to: initialAngle + rotationAngle
         duration: 1
-        onStarted:{Activity.animationInProgress = true}
+        onStarted:{ Activity.animationInProgress = true }
         onStopped: {
             initialAngle = initialAngle + rotationAngle
             Activity.updateWires(index)
@@ -78,7 +78,8 @@ Image {
                 Activity.animationInProgress = false
                 updateDragConstraints()
             }
-            else rotateComponent.start()
+            else
+                rotateComponent.start()
         }
         easing.type: Easing.InOutQuad
     }
@@ -137,9 +138,12 @@ Image {
         onReleased: {
             parent.posX = parent.x / parent.parent.width
             parent.posY = parent.y / parent.parent.height
-            parent.x = Qt.binding(function() { return parent.posX * parent.parent.width })
-            parent.y = Qt.binding(function() { return parent.posY * parent.parent.height })
             Activity.updateToolTip("")
+        }
+
+        onPositionChanged: {
+            updateDragConstraints()
+            Activity.updateWires(index)
         }
     }
 }

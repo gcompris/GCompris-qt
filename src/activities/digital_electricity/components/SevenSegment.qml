@@ -29,8 +29,8 @@ ElectricalComponent {
     terminalSize: 0.116
     noOfInputs: 7
     noOfOutputs: 0
-    property variant inputTerminalPosY: [0.058,0.195,0.337,0.484,0.636,0.791,0.942]
-    property variant redBars: ["sevenSegmentDisplayA.svg","sevenSegmentDisplayB.svg","sevenSegmentDisplayC.svg",
+    property var inputTerminalPosY: [0.058,0.195,0.337,0.484,0.636,0.791,0.942]
+    property var redBars: ["sevenSegmentDisplayA.svg","sevenSegmentDisplayB.svg","sevenSegmentDisplayC.svg",
                                "sevenSegmentDisplayD.svg","sevenSegmentDisplayE.svg","sevenSegmentDisplayF.svg",
                                "sevenSegmentDisplayG.svg"]
 

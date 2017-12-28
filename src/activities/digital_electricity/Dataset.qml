@@ -3,7 +3,7 @@
  * Copyright (C) 2017 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Gtk+ version)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -41,7 +41,7 @@ QtObject {
         'componentSource': 'DigitalLight.qml',
         'width': 0.12,
         'height': 0.12,
-        'toolTipText': qsTr("Digital Light")
+        'toolTipText': qsTr("Digital light")
     }
     property var andGate: {
         'imageName': 'gateAnd.svg',
@@ -104,31 +104,34 @@ QtObject {
         'componentSource': 'BCDToSevenSegment.qml',
         'width': 0.3,
         'height': 0.4,
-        'toolTipText': qsTr("BCD To 7 Segment")
+        'toolTipText': qsTr("BCD to 7 segment")
     }
     property var sevenSegmentDisplay: {
         'imageName': 'sevenSegmentDisplay.svg',
         'componentSource': 'SevenSegment.qml',
         'width': 0.18,
         'height': 0.4,
-        'toolTipText': qsTr("7 Segment Display")
+        'toolTipText': qsTr("7 segment display")
     }
     property var signalGenerator: {
         'imageName': 'signalGenerator.svg',
         'componentSource': 'SignalGenerator.qml',
         'width': 0.25,
         'height': 0.18,
-        'toolTipText': qsTr("Signal Generator")
+        'toolTipText': qsTr("Signal generator")
     }
     property var bcdCounter: {
         'imageName': 'bcdCounter.svg',
         'componentSource': 'BcdCounter.qml',
         'width': 0.3,
         'height': 0.4,
-        'toolTipText': qsTr("BCD Counter")
+        'toolTipText': qsTr("BCD counter")
     }
     // List of all components
-    property var componentList: [zero, one, digitalLight, andGate, orGate, notGate, xorGate, nandGate, norGate, switchKey, comparator, bcdToSevenSegment, sevenSegmentDisplay, signalGenerator, bcdCounter]
+    property var componentList: [zero, one, digitalLight, andGate, orGate, 
+                                 notGate, xorGate, nandGate, norGate, switchKey,
+                                 comparator, bcdToSevenSegment,
+                                 sevenSegmentDisplay, signalGenerator, bcdCounter]
 
     property var problemType: {
         'lightTheBulb': 1,
@@ -149,8 +152,8 @@ QtObject {
             playAreaComponentPositionY: [0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The Digital light will glow when its terminal is connected with an input of 1"),
-                qsTr("Turn the Digital light on using the inputs provided")
+                qsTr("The digital light will glow when its terminal is connected with an input of 1."),
+                qsTr("Turn the digital light on using the inputs provided.")
             ]
         },
         // level 2
@@ -163,8 +166,8 @@ QtObject {
             playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The AND Gate produces an output of one when both of its input terminals are of value 1"),
-                qsTr("Turn the Digital light on using an AND gate and the inputs provided")
+                qsTr("The AND gate produces an output of one when both of its input terminals are of value 1."),
+                qsTr("Turn the digital light on using an AND gate and the inputs provided.")
             ]
         },
         // level 3
@@ -177,8 +180,8 @@ QtObject {
             playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The OR Gate produces an output of 1 when at least one of the input terminal is of value 1"),
-                qsTr("Turn the Digital light on using an OR gate and the inputs provided")
+                qsTr("The OR gate produces an output of 1 when at least one of its input terminals is of value 1."),
+                qsTr("Turn the digital light on using an OR gate and the inputs provided.")
             ]
         },
         // level 4
@@ -191,20 +194,20 @@ QtObject {
             playAreaComponentPositionY: [0.1, 0.4, 0.3, 0.3, 0.4],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("NOTE: You can draw multiple wires from the output terminal of a component.")
+                qsTr("Note: You can draw multiple wires from the output terminal of a component.")
             ]
         },
         // level 5
         {
             inputComponentList: [zero],
-            playAreaComponentList: [notGate, notGate,  orGate, orGate, andGate, digitalLight],
+            playAreaComponentList: [notGate, notGate, orGate, orGate, andGate, digitalLight],
             determiningComponentsIndex: [5],
             wires: [ [4, 0, 5, 0], [2, 0, 4, 0], [3, 0, 4, 1]],
             playAreaComponentPositionX: [0.2, 0.2, 0.5, 0.5, 0.6, 0.8],
             playAreaComponentPositionY: [0.1, 0.4, 0.2, 0.6, 0.4, 0.4],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The NOT gate takes a single binary input and flips the value in the output")
+                qsTr("The NOT gate takes a single binary input and flips the value in the output.")
             ]
         },
         // level 6
@@ -217,7 +220,7 @@ QtObject {
             playAreaComponentPositionY: [0.4, 0.4],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The NAND Gate takes two binary inputs and produces one binary output"),
+                qsTr("The NAND gate takes two binary inputs and produces one binary output."),
                 qsTr("The output of the NAND gate will be zero if the both the inputs are \"0\". Else, the output will be one."),
                 qsTr("For a more detailed description about the gate, select it and click on the info button."),
                 qsTr("Light the bulb using the NAND gate provided.")
@@ -228,7 +231,7 @@ QtObject {
             inputComponentList: [zero, one, andGate, orGate, nandGate],
             playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [0, 1, 2, 3],
-            wires: [  ],
+            wires: [],
             playAreaComponentPositionX: [0.2, 0.2, 0.2, 0.8],
             playAreaComponentPositionY: [0.2, 0.5, 0.8, 0.5],
             type: [problemType.equation3Variables],
@@ -251,7 +254,7 @@ QtObject {
             playAreaComponentPositionY: [0.4, 0.4],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The XOR Gate takes two binary inputs and produces one binary output"),
+                qsTr("The XOR Gate takes two binary inputs and produces one binary output."),
                 qsTr("The output of the XOR gate will be one if the number of \"1\" in the input is odd. Else, the output will be zero."),
                 qsTr("Light the bulb using the XOR gate provided.")
             ]
@@ -261,7 +264,7 @@ QtObject {
             inputComponentList: [zero, one, xorGate],
             playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [0, 1, 2, 3],
-            wires: [  ],
+            wires: [],
             playAreaComponentPositionX: [0.2, 0.2, 0.2, 0.8],
             playAreaComponentPositionY: [0.2, 0.4, 0.6, 0.4],
             type: [problemType.equation3Variables],
@@ -269,7 +272,7 @@ QtObject {
                 return A ^ B ^ C
             },
             introMessage: [
-                qsTr("Light the bulb using the three switches such that the bulb glows when odd number of the switches are turned on")
+                qsTr("Light the bulb using the three switches such that the bulb glows when odd number of the switches are turned on.")
             ]
         },
         // level 10
@@ -436,7 +439,7 @@ QtObject {
             playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.others],
             introMessage: [
-                qsTr("The component in the middle is the BCD to seven segment converter."),
+                qsTr("The component in the middle is a BCD to seven segment converter."),
                 qsTr("It takes 4 bits as input represented in the binary coded decimal (BCD) format and converts the BCD number into a seven segment code."),
                 qsTr("The output of the converter is connected to the seven segment display, to view the value of the input provided."),
                 qsTr("Display the number \"6\" in the seven segment display.")
@@ -452,7 +455,7 @@ QtObject {
             playAreaComponentPositionY: [0.2, 0.6, 0.2, 0.2],
             type: [problemType.others],
             introMessage: [
-                qsTr("The signal generator on the left is used to generate alternating signals between 0 and 1 in a given time period taken as input. The time period by default is 1 second, but it can be changed between 0.25 and 2s"),
+                qsTr("The signal generator on the left is used to generate alternating signals between 0 and 1 in a given time period taken as input. The time period by default is 1 second, but it can be changed between 0.25 and 2s."),
                 qsTr("The BCD counter placed under it is a special type of counter which can count from 0 to 9 and back to 0 on application of a clock signal."),
                 qsTr("Connect the components to make sure that the count of 0 to 9 is visible in the seven segment dispay provided.")
             ]

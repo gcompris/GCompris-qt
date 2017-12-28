@@ -20,9 +20,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import "digital_electricity.js" as Activity
-
 import GCompris 1.0
+
+import "digital_electricity.js" as Activity
 
 Rectangle {
     id: wire

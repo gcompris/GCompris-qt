@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitnsit@gmail.com> (Qt Quick port)
+ *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -280,8 +281,15 @@ ActivityBase {
                             height: inputOutputTxt.cellSize
                             border.color: "black"
                             border.width: 1
-                            color: ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ?
-                                   "#c7ecfb" : "#47ffc2"
+                            color: {
+                                if(truthTablesModel.inputs == 1) {
+                                    return index%2 == 0 ? "#c7ecfb" : "#47ffc2"
+                                }
+                                else {
+                                    return ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ? "#c7ecfb" : "#47ffc2"
+                                }
+                            }
+                                   
                             GCText {
                                 id: truthTableValue
                                 anchors.centerIn: parent

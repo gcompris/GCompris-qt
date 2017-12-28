@@ -20,9 +20,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import "../digital_electricity.js" as Activity
-
 import GCompris 1.0
+
+import "../digital_electricity.js" as Activity
 
 Rectangle {
     id: terminalPoint
@@ -33,12 +33,12 @@ Rectangle {
     property bool selected: false
     property string type
     property int value: 0
-    property variant wires: []
+    property var wires: []
 
     width: size * parent.paintedHeight
     height: size * parent.paintedHeight
     radius: width / 2
-    color: "Black"
+    color: "black"
 
     x: (parent.width - parent.paintedWidth) / 2 + posX * parent.paintedWidth - width / 2
     y: (parent.height - parent.paintedHeight) / 2 + posY * parent.paintedHeight - height / 2
