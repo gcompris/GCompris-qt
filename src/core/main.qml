@@ -55,6 +55,7 @@ Window {
     property var applicationState: Qt.application.state
     property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property alias backgroundMusic: backgroundMusic
+    property bool isBackgroundMusicEnabledInActivity: true
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
@@ -136,6 +137,8 @@ Window {
                 rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
                 for(var i = 0; i < rccBackgroundMusic.length; i++)
                     backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[i]))
+                if(!main.isBackgroundMusicEnabledInActivity)
+                    backgroundMusic.pause()
             }
         }
         Component.onCompleted: {
@@ -330,12 +333,18 @@ Window {
                     if(properties.enterItem.isDialog) {
                         return pushVTransition
                     } else {
+                        if(properties.enterItem.isMusicalActivity) {
+                            isBackgroundMusicEnabledInActivity = false
+                            backgroundMusic.pause()
+                        }
                         return pushHTransition
                     }
                 } else {
                     if(properties.exitItem.isDialog) {
                         return popVTransition
                     } else {
+                        main.isBackgroundMusicEnabledInActivity = true
+                        backgroundMusic.resume()
                         return popHTransition
                     }
 

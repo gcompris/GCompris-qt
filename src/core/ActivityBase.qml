@@ -121,6 +121,8 @@ Item {
      */
     property GCAudio backgroundMusic
 
+    property bool isMusicalActivity: false
+
     /**
      * type:Loading
      * The global loading object.

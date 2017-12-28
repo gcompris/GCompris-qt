@@ -67,7 +67,7 @@ Item {
      * type:bool
      * Whether the audio element contains audio.
      */
-    property alias hasAudio: audio.hasAudio
+    property bool hasAudio: audio.hasAudio
 
     /**
      * type:string
@@ -107,6 +107,18 @@ Item {
      * sound.
      */
     onMutedChanged: muteChangeHandler()
+
+    //Pauses the currently playing audio
+    function pause() {
+        if(playbackState === Audio.PlayingState)
+            audio.pause()
+    }
+
+    //Resumes the current audio if it had been paused
+    function resume() {
+        if(playbackState === Audio.PausedState)
+            audio.play()
+    }
 
     /**
      * Plays back the audio resource @p file.
