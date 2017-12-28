@@ -185,7 +185,7 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 y: Math.max(parent.height / 1.5, hintDialog.textContentHeight * 1.4)
                 implicitWidth: Math.max(200, parent.width/6)
-                implicitHeight: Math.min(50 * ApplicationInfo.ratio, parent.height  - hintDialog.textContentHeight * 1.3)
+                implicitHeight: Math.min(50 * ApplicationInfo.ratio, parent.height - hintDialog.textContentHeight * 1.3)
                 border.width: 2
                 border.color: "#373737"
                 radius: 10
