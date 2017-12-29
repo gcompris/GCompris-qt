@@ -30,6 +30,7 @@ ExploreLevels {
         numberOfLevels: 6
         url : "qrc:/gcompris/src/activities/explore_monuments/resource/"
         hasAudioQuestions: false
+        isMusicalActivity: false
 }
 
 

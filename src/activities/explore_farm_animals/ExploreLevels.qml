@@ -36,6 +36,8 @@ ActivityBase {
     property string url
     property bool hasAudioQuestions
 
+    isMusicalActivity: true
+
     onStart: focus = true
     onStop: {}
 
