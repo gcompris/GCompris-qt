@@ -47,6 +47,9 @@ ActivityBase {
     id: activity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
+    // set to true when returned to home from a dialog.
+    property bool returnFromDialog: false
+
     onBack: {
         pageView.pop(to);
         // Restore focus that has been taken by the loaded activity
@@ -58,17 +61,33 @@ ActivityBase {
         if(pageView.depth === 1 && !ApplicationSettings.isKioskMode) {
             Core.quit(main);
         }
-        else {
+        // When a dialog box is closed.
+        else if(returnFromDialog) {
+            returnFromDialog = false;
             pageView.pop();
             // Restore focus that has been taken by the loaded activity
             if(pageView.currentItem == activity)
                 focus = true;
         }
+        // A confirmation dialog to quit the current activity is popped.
+        else {
+            Core.showMessageDialog(parent,
+                                   qsTr("Do you really want to quit?"),
+                                   qsTr("Yes"), function() { pageView.pop();
+                                       // Restore focus that has been taken by the loaded activity
+                                       if(pageView.currentItem == activity)
+                                           focus = true; },
+                                   qsTr("No"), null,
+                                   null );
+        }
     }
 
-    onDisplayDialog: pageView.push(dialog)
-
+    onDisplayDialog: {
+        returnFromDialog = true;
+        pageView.push(dialog)
+    }
     onDisplayDialogs: {
+        returnFromDialog = true;
         var toPush = new Array();
         for (var i = 0; i < dialogs.length; i++) {
             toPush.push({item: dialogs[i]});
@@ -215,12 +234,12 @@ ActivityBase {
             model: sections
             width: horizontal ? main.width : sectionCellWidth
             height: {
-               if(horizontal)
-                   return sectionCellHeight
-               else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
-                   return sectionCellHeight * (sections.length+1)
-               else
-                   return main.height - bar.height
+                if(horizontal)
+                    return sectionCellHeight
+                else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
+                    return sectionCellHeight * (sections.length+1)
+                else
+                    return main.height - bar.height
             }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
@@ -491,9 +510,9 @@ ActivityBase {
                 visible: false
                 anchors.fill: activitiesGrid
                 gradient: Gradient {
-                  GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.92; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.96; color: "#00FFFFFF"}
+                    GradientStop { position: 0.0; color: "#FFFFFFFF" }
+                    GradientStop { position: 0.92; color: "#FFFFFFFF" }
+                    GradientStop { position: 0.96; color: "#00FFFFFF"}
                 }
             }
             layer.enabled: ApplicationInfo.useOpenGL
@@ -610,37 +629,37 @@ ActivityBase {
                 }
             }
             function populate() {
-               var tmplayout = [];
-               var row = 0;
-               var offset = 0;
-               var cols;
-               while(offset < letter.length-1) {
-                   if(letter.length <= 100) {
-                       cols = Math.ceil((letter.length-offset) / (3 - row));
-                   }
-                   else {
-                       cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
-                                                       :(Math.ceil((letter.length-offset) / (22 - row)))
-                       if(row == 0) {
-                           tmplayout[row] = new Array();
-                           tmplayout[row].push({ label: keyboard.backspace });
-                           tmplayout[row].push({ label: keyboard.space });
-                           row ++;
-                       }
-                   }
+                var tmplayout = [];
+                var row = 0;
+                var offset = 0;
+                var cols;
+                while(offset < letter.length-1) {
+                    if(letter.length <= 100) {
+                        cols = Math.ceil((letter.length-offset) / (3 - row));
+                    }
+                    else {
+                        cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
+                                                     :(Math.ceil((letter.length-offset) / (22 - row)))
+                        if(row == 0) {
+                            tmplayout[row] = new Array();
+                            tmplayout[row].push({ label: keyboard.backspace });
+                            tmplayout[row].push({ label: keyboard.space });
+                            row ++;
+                        }
+                    }
 
-                   tmplayout[row] = new Array();
-                   for (var j = 0; j < cols; j++)
-                       tmplayout[row][j] = { label: letter[j+offset] };
-                   offset += j;
-                   row ++;
-               }
-               if(letter.length <= 100) {
-                   tmplayout[0].push({ label: keyboard.space });
-                   tmplayout[row-1].push({ label: keyboard.backspace });
-               }
-               keyboard.layout = tmplayout
-           }
+                    tmplayout[row] = new Array();
+                    for (var j = 0; j < cols; j++)
+                        tmplayout[row][j] = { label: letter[j+offset] };
+                    offset += j;
+                    row ++;
+                }
+                if(letter.length <= 100) {
+                    tmplayout[0].push({ label: keyboard.space });
+                    tmplayout[row-1].push({ label: keyboard.backspace });
+                }
+                keyboard.layout = tmplayout
+            }
         }
 
         Bar {
@@ -674,6 +693,7 @@ ActivityBase {
         id: dialogAbout
         onClose: home()
     }
+
     DialogHelp {
         id: dialogHelp
         onClose: home()

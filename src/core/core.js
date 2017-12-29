@@ -202,7 +202,7 @@ var aboutToQuit = false;
  * Central function for quitting GCompris.
  *
  * Should be used everywhere instead of Qt.quit(), warning in case of running
- * downloadloads and showing a confirmation dialog on mobile devices.
+ * downloadloads and showing a confirmation dialog on closing GCompris.
  * Call Qt.quit() itself upon confirmation.
  *
  * @param parent QML parent object used for the dynamic dialog.
@@ -227,17 +227,14 @@ function quit(parent)
             backgroundButtonVisible: false
         });
         dialog.finished.connect(function() {Qt.quit();});
-    } else if (GCompris.ApplicationInfo.isMobile) {
+    } else {
         // prevent the user from quitting accidentially by clicking back too often:
         showMessageDialog(parent,
-                qsTr("Quit?") +
-                '\n' +
                 qsTr("Do you really want to quit GCompris?"),
                 qsTr("Yes"), function() { Qt.quit(); },
                 qsTr("No"), function() { aboutToQuit = false; },
                 function() { aboutToQuit = false; } );
-    } else
-        Qt.quit();
+    }
 }
 
 function isLeftToRightLocale(locale) {
