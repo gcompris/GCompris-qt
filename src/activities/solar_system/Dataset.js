@@ -227,7 +227,7 @@ function get() {
                         },
                         { 	//sub-level 3
                             "question": qsTr("The minimum temperature on Jupiter is"),
-                            "options": ["-145 degrees", "100 degrees", "50 degrees", "-180 degrees"],
+                            "options": [qsTr("-145 degrees"), qsTr("100 degrees"), qsTr("50 degrees"), qsTr("-180 degrees")],
                             "closeness": [100, 63, 24.7, 1]
                         },
                         { 	//sub-level 4
@@ -300,7 +300,7 @@ function get() {
                         },
                         { 	//sub-level 2
                             "question": qsTr("How many years does it take Uranus to go once around the Sun?"),
-                            "options": ["1 year", "24 years", "68 years", "84 years"],
+                            "options": [qsTr("1 year"), qsTr("24 years"), qsTr("68 years"), qsTr("84 years")],
                             "closeness": [1, 28.4, 81, 100]
                         },
                         { 	//sub-level 3
