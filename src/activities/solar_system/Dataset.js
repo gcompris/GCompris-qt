@@ -260,7 +260,7 @@ function get() {
                             "closeness": [100, 60.4, 1, 80]
                         },
                         { 	//sub-level 2
-                            "question": qsTr("How large is Staurn compared to other planets in the Solar System?"),
+                            "question": qsTr("How large is Saturn compared to other planets in the Solar System?"),
                             "options": [qsTr("Third largest"), qsTr("Largest"), qsTr("Fifth largest"), qsTr("Second largest")],
                             "closeness": [67, 67, 1, 100]
                         },
