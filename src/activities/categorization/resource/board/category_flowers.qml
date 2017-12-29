@@ -35,8 +35,8 @@ QtObject {
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["categorization/resource/images/flowers/allamanda.jpg","categorization/resource/images/flowers/angiosperms.jpg","categorization/resource/images/flowers/angiosperms2.jpg", "categorization/resource/images/flowers/aster.jpg","categorization/resource/images/flowers/aster2.jpg", "categorization/resource/images/flowers/bauhiniaAcuminata.jpg"],
-                    "bad": ["categorization/resource/images/alphabets/upperZ.svg","lang/resource/words_sample/fruit.png","lang/resource/words_sample/mosquito.png","lang/resource/words_sample/coconut.png", "lang/resource/words_sample/dolphin.png","lang/resource/words_sample/kiwi.png"]
+                    "good": ["categorization/resource/images/flowers/allamanda.jpg", "categorization/resource/images/flowers/angiosperms.jpg", "categorization/resource/images/flowers/angiosperms2.jpg", "categorization/resource/images/flowers/aster.jpg", "categorization/resource/images/flowers/aster2.jpg", "categorization/resource/images/flowers/bauhiniaAcuminata.jpg"],
+                    "bad": ["categorization/resource/images/alphabets/upperZ.svg", "lang/resource/words_sample/fruit.png", "lang/resource/words_sample/mosquito.png", "lang/resource/words_sample/coconut.png", "lang/resource/words_sample/dolphin.png", "lang/resource/words_sample/kiwi.png"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -44,8 +44,8 @@ QtObject {
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["flowers/bossier.jpg","flowers/bunchOfFlowers.jpg","flowers/calendulaSuffruticosa.jpg", "flowers/camellia.jpg","flowers/capullo.jpg", "flowers/crocus.jpg"],
-                    "bad": ["monuments/beandenburgGate.jpg","monuments/burj.jpg","others/bulb.jpg","tools/cutingTool.jpg","others/knife.jpg","tools/multimeter.jpg"]
+                    "good": ["flowers/bossier.jpg", "flowers/bunchOfFlowers.jpg", "flowers/calendulaSuffruticosa.jpg", "flowers/camellia.jpg", "flowers/capullo.jpg", "flowers/crocus.jpg"],
+                    "bad": ["monuments/beandenburgGate.jpg", "monuments/burj.jpg", "others/bulb.jpg", "tools/cutingTool.jpg", "others/knife.jpg", "tools/multimeter.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -53,8 +53,8 @@ QtObject {
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["flowers/dahlia.jpg","flowers/daisy.jpg","flowers/floora.jpg", "flowers/floreInsectos.jpg","flowers/galanthusNivalis.jpg", "flowers/hibiscus.jpg"],
-                    "bad": ["fishes/fish3.jpg","fishes/fish5.jpg","renewable/dam2.jpg","others/spoons.jpg","others/igloo.jpg","tools/measuringTape.jpg"]
+                    "good": ["flowers/dahlia.jpg", "flowers/daisy.jpg", "flowers/floora.jpg", "flowers/floreInsectos.jpg", "flowers/galanthusNivalis.jpg", "flowers/hibiscus.jpg"],
+                    "bad": ["fishes/fish3.jpg", "fishes/fish5.jpg", "renewable/dam2.jpg", "others/spoons.jpg", "others/igloo.jpg", "tools/measuringTape.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -62,8 +62,8 @@ QtObject {
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["categorization/resource/images/flowers/lily.jpg","categorization/resource/images/flowers/marigold.jpg","categorization/resource/images/flowers/orchid.jpg","categorization/resource/images/flowers/pollen.jpg","categorization/resource/images/flowers/rose.jpg"],
-                    "bad": ["categorization/resource/images/alphabets/upperZ.svg","categorization/resource/images/alphabets/lowerH.svg","lang/resource/words_sample/mosquito.png","lang/resource/words_sample/fruit.png"]
+                    "good": ["categorization/resource/images/flowers/lily.jpg", "categorization/resource/images/flowers/marigold.jpg", "categorization/resource/images/flowers/orchid.jpg", "categorization/resource/images/flowers/pollen.jpg", "categorization/resource/images/flowers/rose.jpg"],
+                    "bad": ["categorization/resource/images/alphabets/upperZ.svg", "categorization/resource/images/alphabets/lowerH.svg", "lang/resource/words_sample/mosquito.png", "lang/resource/words_sample/fruit.png"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -71,8 +71,8 @@ QtObject {
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["flowers/sunflower.jpg","flowers/tulip.jpg", "flowers/victoriaAmazonica.jpg","flowers/wildPetunia.jpg"],
-                    "bad": ["fishes/fish7.jpg","fishes/fish16.jpg","tools/hammer4.jpg","tools/sprinkler.jpg","renewable/solar5.jpg"]
+                    "good": ["flowers/sunflower.jpg", "flowers/tulip.jpg", "flowers/victoriaAmazonica.jpg", "flowers/wildPetunia.jpg"],
+                    "bad": ["fishes/fish7.jpg", "fishes/fish16.jpg", "tools/hammer4.jpg", "tools/sprinkler.jpg", "renewable/solar5.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -80,8 +80,8 @@ QtObject {
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["categorization/resource/images/flowers/lily.jpg","categorization/resource/images/flowers/marigold.jpg","categorization/resource/images/flowers/orchid.jpg","categorization/resource/images/flowers/pollen.jpg","categorization/resource/images/flowers/rose.jpg"],
-                    "bad": ["lang/resource/words_sample/mosquito.png","lang/resource/words_sample/fruit.png","lang/resource/words_sample/color.png","lang/resource/words_sample/strawberry.png"]
+                    "good": ["categorization/resource/images/flowers/lily.jpg", "categorization/resource/images/flowers/marigold.jpg", "categorization/resource/images/flowers/orchid.jpg", "categorization/resource/images/flowers/pollen.jpg", "categorization/resource/images/flowers/rose.jpg"],
+                    "bad": ["lang/resource/words_sample/mosquito.png", "lang/resource/words_sample/fruit.png", "lang/resource/words_sample/color.png", "lang/resource/words_sample/strawberry.png"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -89,8 +89,8 @@ QtObject {
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["flowers/lotus.jpg","flowers/jasmine.jpg","flowers/rhododendron.jpg"],
-                    "bad": ["others/plate.jpg","fishes/fish18.jpg","monuments/leMusee.jpg"]
+                    "good": ["flowers/lotus.jpg", "flowers/jasmine.jpg", "flowers/rhododendron.jpg"],
+                    "bad": ["others/plate.jpg", "fishes/fish18.jpg", "monuments/leMusee.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -98,8 +98,8 @@ QtObject {
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["flowers/ashoka.jpg","flowers/acidanthera.jpg"],
-                    "bad": ["fishes/fish6.jpg","fishes/fish3.jpg","others/pan.jpg","others/spoons.jpg"]
+                    "good": ["flowers/ashoka.jpg", "flowers/acidanthera.jpg"],
+                    "bad": ["fishes/fish6.jpg", "fishes/fish3.jpg", "others/pan.jpg", "others/spoons.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -107,8 +107,8 @@ QtObject {
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 2,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
-                    "good": ["flowers/allamanda.jpg","flowers/camellia.jpg","flowers/jasmine.jpg", "flowers/marigold.jpg"],
-                    "bad": ["others/baseball.jpg","monuments/arcDeTriomphe.jpg"]
+                    "good": ["flowers/allamanda.jpg", "flowers/camellia.jpg", "flowers/jasmine.jpg", "flowers/marigold.jpg"],
+                    "bad": ["others/baseball.jpg", "monuments/arcDeTriomphe.jpg"]
                 }
             ]
         }
