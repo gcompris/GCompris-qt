@@ -116,7 +116,7 @@ Item {
 
     //Resumes the current audio if it had been paused
     function resume() {
-        if(playbackState === Audio.PausedState)
+        if(playbackState === Audio.PausedState || playbackState === Audio.StoppedState)
             audio.play()
     }
 
