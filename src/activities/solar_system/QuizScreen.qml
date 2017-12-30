@@ -182,7 +182,7 @@ Item {
         x: ((background.width - items.bar.barZoom * items.bar.fullButton * 5.6) < (width + 10 * ApplicationInfo.ratio) && background.horizontalLayout) ? background.width - width - 42 * ApplicationInfo.ratio : background.width - width - 10 * ApplicationInfo.ratio
         y: (background.width - items.bar.barZoom * items.bar.fullButton * 5.6) < (width + 10 * ApplicationInfo.ratio) ? background.height - bar.height - height - 10 * ApplicationInfo.ratio : background.height - height  - 10 * ApplicationInfo.ratio
         height: 40 * ApplicationInfo.ratio
-        width: 130 * ApplicationInfo.ratio
+        width: 150 * ApplicationInfo.ratio
         radius: width * 0.06
         border.width: 2
         border.color: "black"
@@ -190,9 +190,9 @@ Item {
         visible: !background.assessmentMode
         GCText {
             id: closenessText
-            anchors.centerIn: parent
             color: "black"
             anchors.fill: parent
+            fontSize: smallSize * 1.07
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
