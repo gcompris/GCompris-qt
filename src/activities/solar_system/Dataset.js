@@ -271,7 +271,7 @@ function get() {
                         },
                         { 	//sub-level 4
                             "question": qsTr("How long is one day on Saturn?"),
-                            "options": [qsTr("10.5 Hours"), qsTr("24 Hours"), qsTr("12 Hours"), qsTr("48 Hours")],
+                            "options": [qsTr("10.5 hours"), qsTr("24 hours"), qsTr("12 hours"), qsTr("48 hours")],
                             "closeness": [100, 64.3, 96, 1]
                         },
                         { 	//sub-level 5
