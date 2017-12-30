@@ -111,13 +111,13 @@ Item {
                        : background.width - imageAndOptionGrid.anchors.margins * 2
                 height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height * 1.5 - questionArea.height - 50 * ApplicationInfo.ratio
                         : parent.itemHeightVertical
-                spacing: 10 * ApplicationInfo.ratio
+                spacing: background.horizontalLayout ? 10 * ApplicationInfo.ratio : 7.5 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
                 model: optionListModel
 
-                property int buttonHeight: height / 4 * 0.9
+                property int buttonHeight: (height - 3 * spacing) / 4
 
                 add: Transition {
                     NumberAnimation { properties: "y"; from: parent.y; duration: 500 }
@@ -192,7 +192,6 @@ Item {
             id: closenessText
             color: "black"
             anchors.fill: parent
-            fontSize: smallSize * 1.07
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
@@ -200,16 +199,16 @@ Item {
 
         SequentialAnimation {
             id: incorrectAnswerAnim
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 450 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 450 }
+            NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
+            NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
         }
 
         SequentialAnimation {
             id: correctAnswerAnim
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 450 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 450 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.2; duration: 450 }
-            NumberAnimation { target: closenessText; property: "scale"; to: 1.0; duration: 450 }
+            NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
+            NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
+            NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
+            NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
             ScriptAction { script: Activity.nextSubLevel() }
         }
 
