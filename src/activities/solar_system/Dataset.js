@@ -276,7 +276,7 @@ function get() {
                         },
                         { 	//sub-level 5
                             "question": qsTr("The minimum temperature on Saturn is"),
-                            "options": [qsTr("0 degrees"), qsTr("100 degrees"), qsTr("-178 degrees"), qsTr("-100 degrees")],
+                            "options": [qsTr("0 degree"), qsTr("100 degrees"), qsTr("-178 degrees"), qsTr("-100 degrees")],
                             "closeness": [36.6, 1, 100, 72]
                         },
                         { 	//sub-level 6
@@ -320,7 +320,7 @@ function get() {
                         },
                         { 	//sub-level 6
                             "question": qsTr("The maximum temperature on Uranus is"),
-                            "options": [qsTr("100 degrees"), qsTr("-216 degrees"), qsTr("0 degrees"), qsTr("-100 degrees")],
+                            "options": [qsTr("100 degrees"), qsTr("-216 degrees"), qsTr("0 degree"), qsTr("-100 degrees")],
                             "closeness": [1, 100, 32.3, 63.6]
                         }
                     ]
