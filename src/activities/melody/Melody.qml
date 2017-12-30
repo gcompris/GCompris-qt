@@ -60,7 +60,6 @@ ActivityBase {
         }
 
         onStart: {
-            items.backgroundMusicStatus = ApplicationSettings.isBackgroundMusicEnabled
             bar.level = 1
             score.numberOfSubLevels = 5
             score.currentSubLevel = 1

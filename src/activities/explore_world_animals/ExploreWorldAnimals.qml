@@ -31,5 +31,4 @@ ExploreLevels {
     numberOfLevels: 3
     url: "qrc:/gcompris/src/activities/explore_world_animals/resource/"
     hasAudioQuestions: false
-    isMusicalActivity: false
 }

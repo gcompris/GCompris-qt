@@ -121,6 +121,10 @@ Item {
      */
     property GCAudio backgroundMusic
 
+    /**
+    * type: bool
+     * It tells whether the activity is a musical activity or not. Set it as true if the activity is musical.
+     */
     property bool isMusicalActivity: false
 
     /**
