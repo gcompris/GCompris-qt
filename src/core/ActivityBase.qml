@@ -114,7 +114,7 @@ Item {
     property GCAudio audioEffects
 
     /**
-    * type:GCAudio
+     * type:GCAudio
      * The global audio item for background music.
      *
      * @sa GCAudio backgroundMusic
@@ -122,7 +122,7 @@ Item {
     property GCAudio backgroundMusic
 
     /**
-    * type: bool
+     * type: bool
      * It tells whether the activity is a musical activity or not. Set it as true if the activity is musical.
      */
     property bool isMusicalActivity: false
