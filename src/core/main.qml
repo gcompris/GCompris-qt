@@ -55,6 +55,13 @@ Window {
     property var applicationState: Qt.application.state
     property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property alias backgroundMusic: backgroundMusic
+
+    /**
+     * type: bool
+     * It tells whether the background music is enabled for an activity.
+     *
+     * It changes to false if the started activity is a musical activity and back to true when the activity is closed.
+     */
     property bool isBackgroundMusicEnabledInActivity: true
 
     /**
