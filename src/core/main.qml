@@ -57,6 +57,20 @@ Window {
     property alias backgroundMusic: backgroundMusic
     property bool isBackgroundMusicEnabledInActivity: true
 
+    /**
+     * When a musical activity is started, isBackgroundMusicEnabledInActivity changes to false and the backgroundMusic pauses.
+     *
+     * When returning back from the musical activity to menu, isBackgroundMusicEnabledInActivity changes to true and backgroundMusic resumes.
+     */
+    onIsBackgroundMusicEnabledInActivityChanged: {
+        if(!isBackgroundMusicEnabledInActivity) {
+            backgroundMusic.pause()
+        }
+        else {
+            backgroundMusic.resume()
+        }
+    }
+
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
             audioVoices.stop();
@@ -335,7 +349,6 @@ Window {
                     } else {
                         if(properties.enterItem.isMusicalActivity) {
                             isBackgroundMusicEnabledInActivity = false
-                            backgroundMusic.pause()
                         }
                         return pushHTransition
                     }
@@ -344,7 +357,6 @@ Window {
                         return popVTransition
                     } else {
                         main.isBackgroundMusicEnabledInActivity = true
-                        backgroundMusic.resume()
                         return popHTransition
                     }
 
