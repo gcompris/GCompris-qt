@@ -12,7 +12,7 @@
  *
  *   This program is distributed in the hope that it will be useful,
  *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
@@ -65,9 +65,9 @@ function get() {
                             "closeness": [1, 17.5, 100, 50.5]
                         },
                         { 	//sub-level 2
-                            "question": qsTr("On Mercury, we can survive only for"),
-                            "options": [qsTr("2 minutes"), qsTr("4 minutes"), qsTr("1 minute"), qsTr("60 minutes")],
-                            "closeness": [100, 96.6, 98, 1]
+                            "question": qsTr("How small is Mercury compared to other planets in our Solar System?"),
+                            "options": [qsTr("Smallest"), qsTr("Second smallest"), qsTr("Third smallest"), qsTr("Fifth smallest")],
+                            "closeness": [100, 75.3, 50.5, 1]
                         },
                         { 	//sub-level 3
                             "question": qsTr("How many moons does Mercury has?"),
@@ -95,7 +95,7 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_real.svg",
                     "bodyName": qsTr("Venus"),
-                    "temperatureHint": qsTr("The maximum temperature of Earth is 58 degrees."),
+                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
                         { 	//sub-level 1
@@ -127,6 +127,11 @@ function get() {
                             "question": qsTr("Maximum temperature on Venus is"),
                             "options": [qsTr("100 degrees"), qsTr("20 degrees"), qsTr("467 degrees"), qsTr("45 degrees")],
                             "closeness": [18.7, 1, 100, 6.5]
+                        },
+                        {   //sub-level 7
+                            "question": qsTr("How many moons does Venus has?"),
+                            "options": ["5", "10", "2", "0"],
+                            "closeness": [63, 1, 100, 75.3]
                         }
                     ]
                 },
@@ -166,6 +171,11 @@ function get() {
                             "question": qsTr("Maximum temperature on Earth is"),
                             "options": [qsTr("100 degrees"), qsTr("58 degrees"), qsTr("30 degrees"), qsTr("45 degrees")],
                             "closeness": [1, 100, 33, 69.3]
+                        },
+                        {   //sub-level 7
+                            "question": qsTr("How large is the Earth compared to other planets in our Solar System?"),
+                            "options": [qsTr("Seventh largest"), qsTr("Sixth largest"), qsTr("Fifth largest"), qsTr("Fourth largest")],
+                            "closeness": [1, 50.5, 100, 50.5]
                         }
                     ]
                 },
@@ -173,7 +183,7 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_real.svg",
                     "bodyName": qsTr("Mars"),
-                    "temperatureHint": qsTr("The maximum temperature of Earth is 58 degrees."),
+                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
                         { 	//sub-level 1
@@ -205,6 +215,11 @@ function get() {
                             "question": qsTr("How long does it take Mars to complete one year?"),
                             "options": [qsTr("687 days"), qsTr("30 days"), qsTr("7 days"), qsTr("365 days")],
                             "closeness": [100, 4.3, 1, 53]
+                        },
+                        {   //sub-level 7
+                            "question": qsTr("How small is Mars compared to other planets in our Solar System?"),
+                            "options": [qsTr("Smallest"), qsTr("Second smallest"), qsTr("Third smallest"), qsTr("Fifth smallest")],
+                            "closeness": [67, 100, 67, 1]
                         }
                     ]
                 },
@@ -358,9 +373,9 @@ function get() {
                             "closeness": [1, 23, 100, 64]
                         },
                         { 	//sub-level 6
-                            "question": qsTr("How many Earths can fit inside Neptune?"),
-                            "options": ["100", "57", "5", "500"],
-                            "closeness": [90.4, 100, 88.4, 1]
+                            "question": qsTr("How large is Neptune compared to other planets in the Solar System?"),
+                            "options": [qsTr("Fourth largest"), qsTr("Largest"), qsTr("Third largest"), qsTr("Second largest")],
+                            "closeness": [100, 1, 67, 34]
                         }
                     ]
                 }
