@@ -94,16 +94,16 @@ Item {
         NumberAnimation {
             target: planetNameText
             property: "y"
-            from: -5
-            to: 5
+            from: -planetItem.height / 35.62
+            to: planetItem.height / 35.62
             duration: 1800 + Math.floor(Math.random() * 500)
             easing.type: Easing.InOutQuad
         }
         NumberAnimation {
             target: planetNameText
             property: "y"
-            from: 5
-            to: -5
+            from: planetItem.height / 35.62
+            to: -planetItem.height / 35.62
             duration: 1800 + Math.floor(Math.random() * 500)
             easing.type: Easing.InOutQuad
         }
