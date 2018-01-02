@@ -79,7 +79,7 @@ Item {
         horizontalAlignment: Text.AlignHLeft
         width: Math.min(implicitWidth, 0.8 * parent.width)
         height: Math.min(implicitHeight, 0.25 * parent.height)
-        wrapMode: TextEdit.WordWrap
+        wrapMode: Text.WordWrap
         z: 2
     }
 
@@ -103,7 +103,7 @@ Item {
     // previousButton: It emits skipPressed and navigates to previous tutorial when clicked
     Rectangle {
         id: previousButton
-        width: 180
+        width: parent.width / 4
         height: 90
         color: "#d8ffffff"
         border.color: "#2a2a2a"
@@ -118,9 +118,13 @@ Item {
 
         GCText {
             id: previousButtonText
-            anchors.centerIn: parent
+            width: parent.width
+            height: parent.height
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             text: qsTr("Previous")
             wrapMode: Text.WordWrap
+            fontSizeMode: Text.Fit
         }
 
         MouseArea {
@@ -162,7 +166,7 @@ Item {
     // nextButton: It emits nextPressed which navigates to next tutorial when clicked
     Rectangle {
         id: nextButton
-        width: 150
+        width: parent.width / 4
         height: 90
         color: "#d8ffffff"
         border.color: "#2a2a2a"
@@ -177,9 +181,13 @@ Item {
 
         GCText {
             id: nextButtonText
-            anchors.centerIn: parent
+            width: parent.width
+            height: parent.height
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             text: qsTr("Next")
             wrapMode: Text.WordWrap
+            fontSizeMode: Text.Fit
         }
 
         MouseArea {
@@ -221,7 +229,7 @@ Item {
     // skipButton: It emits the skipPressed signal which calls the initLevel to close the tutorial when clicked.
     Rectangle {
         id: skipButton
-        width: 150
+        width: parent.width / 4
         height: 90
         color: "#d8ffffff"
         border.color: "#2a2a2a"
@@ -235,9 +243,13 @@ Item {
 
         GCText {
             id: skipButtonText
-            anchors.centerIn: parent
+            width: parent.width
+            height: parent.height
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             text: qsTr("Skip")
             wrapMode: Text.WordWrap
+            fontSizeMode: Text.Fit
         }
 
         MouseArea {
