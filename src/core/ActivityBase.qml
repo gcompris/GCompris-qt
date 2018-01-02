@@ -123,7 +123,11 @@ Item {
 
     /**
      * type: bool
-     * It tells whether the activity is a musical activity or not. Set it as true if the activity is musical.
+     * It tells whether the activity is a musical activity or not(if the activity contains it's own audio effects).
+     *
+     * If the activity is a musical activity, on starting it the background music pauses and when the activity is quit, background music resumes.
+     *
+     * Set it as true if the activity is musical.
      */
     property bool isMusicalActivity: false
 
