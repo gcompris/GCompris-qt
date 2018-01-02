@@ -21,9 +21,9 @@
 import QtQuick 2.6
 
 QtObject {
-    property bool isEmbedded: true
+    property bool isEmbedded: false
     property bool allowExpertMode: true
-    property string imagesPrefix: "qrc:/gcompris/src/activities/categorization/resource/images/flowers/"
+    property string imagesPrefix: "qrc:/gcompris/data/words/flowers/"
     property var levels: [
         {
             "name": qsTr("Flowers"),
@@ -34,72 +34,72 @@ QtObject {
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["categorization/resource/images/flowers/allamanda.jpg", "categorization/resource/images/flowers/angiosperms.jpg", "categorization/resource/images/flowers/angiosperms2.jpg", "categorization/resource/images/flowers/aster.jpg", "categorization/resource/images/flowers/aster2.jpg", "categorization/resource/images/flowers/bauhiniaAcuminata.jpg"],
-                    "bad": ["categorization/resource/images/alphabets/upperZ.svg", "lang/resource/words_sample/fruit.png", "lang/resource/words_sample/mosquito.png", "lang/resource/words_sample/coconut.png", "lang/resource/words_sample/dolphin.png", "lang/resource/words_sample/kiwi.png"]
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["flowers/allamanda.jpg", "flowers/angiosperms.jpg", "flowers/angiosperms2.jpg", "flowers/aster.jpg", "flowers/aster2.jpg", "flowers/bauhiniaAcuminata.jpg"],
+                    "bad": ["plants/plant2.jpg", "birds/bird1.jpg", "insects/insect10.jpg", "transport/cycle.jpg", "animals/camel.jpg", "householdGoods/iron2.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
+                    "prefix": "qrc:/gcompris/data/words/",
                     "good": ["flowers/bossier.jpg", "flowers/bunchOfFlowers.jpg", "flowers/calendulaSuffruticosa.jpg", "flowers/camellia.jpg", "flowers/capullo.jpg", "flowers/crocus.jpg"],
-                    "bad": ["monuments/beandenburgGate.jpg", "monuments/burj.jpg", "others/bulb.jpg", "tools/cutingTool.jpg", "others/knife.jpg", "tools/multimeter.jpg"]
+                    "bad": ["nature/nature5.jpg", "food/biryani.jpg", "food/milk.jpg", "fruits/apple.jpg", "others/house.jpg", "vegetables/carrots.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
-                    "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
+                    "prefix": "qrc:/gcompris/data/words/",
                     "good": ["flowers/dahlia.jpg", "flowers/daisy.jpg", "flowers/floora.jpg", "flowers/floreInsectos.jpg", "flowers/galanthusNivalis.jpg", "flowers/hibiscus.jpg"],
-                    "bad": ["fishes/fish3.jpg", "fishes/fish5.jpg", "renewable/dam2.jpg", "others/spoons.jpg", "others/igloo.jpg", "tools/measuringTape.jpg"]
+                    "bad": ["animals/cow.jpg", "transport/helicopter1.jpg", "food/cereal.jpg", "animals/elephant.jpg", "others/pepsi.jpg", "plants/tree3.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["categorization/resource/images/flowers/lily.jpg", "categorization/resource/images/flowers/marigold.jpg", "categorization/resource/images/flowers/orchid.jpg", "categorization/resource/images/flowers/pollen.jpg", "categorization/resource/images/flowers/rose.jpg"],
-                    "bad": ["categorization/resource/images/alphabets/upperZ.svg", "categorization/resource/images/alphabets/lowerH.svg", "lang/resource/words_sample/mosquito.png", "lang/resource/words_sample/fruit.png"]
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["flowers/lily.jpg", "flowers/marigold.jpg", "flowers/orchid.jpg", "flowers/pollen.jpg", "flowers/rose.jpg"],
+                    "bad": ["lobster.png", "potato.png", "pumpkin.png", "radio.png"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
-                    "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
+                    "prefix": "qrc:/gcompris/data/words/",
                     "good": ["flowers/sunflower.jpg", "flowers/tulip.jpg", "flowers/victoriaAmazonica.jpg", "flowers/wildPetunia.jpg"],
-                    "bad": ["fishes/fish7.jpg", "fishes/fish16.jpg", "tools/hammer4.jpg", "tools/sprinkler.jpg", "renewable/solar5.jpg"]
+                    "bad": ["food/hotdog.jpg", "vegetables/onion.jpg", "food/cheese.jpg", "food/water.jpg", "others/street.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/src/activities/",
-                    "good": ["categorization/resource/images/flowers/lily.jpg", "categorization/resource/images/flowers/marigold.jpg", "categorization/resource/images/flowers/orchid.jpg", "categorization/resource/images/flowers/pollen.jpg", "categorization/resource/images/flowers/rose.jpg"],
-                    "bad": ["lang/resource/words_sample/mosquito.png", "lang/resource/words_sample/fruit.png", "lang/resource/words_sample/color.png", "lang/resource/words_sample/strawberry.png"]
+                    "prefix": "qrc:/gcompris/data/words/",
+                    "good": ["flowers/lily.jpg", "flowers/marigold.jpg", "flowers/orchid.jpg", "flowers/pollen.jpg", "flowers/rose.jpg"],
+                    "bad": ["food/eggs.jpg", "animals/lion.jpg", "birds/bird17.jpg", "householdGoods/iron.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
-                    "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
+                    "prefix": "qrc:/gcompris/data/words/",
                     "good": ["flowers/lotus.jpg", "flowers/jasmine.jpg", "flowers/rhododendron.jpg"],
-                    "bad": ["others/plate.jpg", "fishes/fish18.jpg", "monuments/leMusee.jpg"]
+                    "bad": ["food/grilledSandwich.jpg", "transport/metro.jpg", "food/frenchFries.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
                     "image": imagesPrefix + "bunchOfFlowers.jpg",
                     "maxNumberOfGood": 2,
                     "maxNumberOfBad": 4,
-                    "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
+                    "prefix": "qrc:/gcompris/data/words/",
                     "good": ["flowers/ashoka.jpg", "flowers/acidanthera.jpg"],
-                    "bad": ["fishes/fish6.jpg", "fishes/fish3.jpg", "others/pan.jpg", "others/spoons.jpg"]
+                    "bad": ["others/fork.jpg", "fruits/apple.jpg", "food/skimmedMilk.jpg", "fruits/grapes.jpg"]
                 },
                 {
                     "instructions": qsTr("Place the FLOWERS to the right and other objects to the left"),
@@ -108,7 +108,7 @@ QtObject {
                     "maxNumberOfBad": 2,
                     "prefix": "qrc:/gcompris/src/activities/categorization/resource/images/",
                     "good": ["flowers/allamanda.jpg", "flowers/camellia.jpg", "flowers/jasmine.jpg", "flowers/marigold.jpg"],
-                    "bad": ["others/baseball.jpg", "monuments/arcDeTriomphe.jpg"]
+                    "bad": ["plants/plant6.jpg", "fruits/papaya.jpg"]
                 }
             ]
         }
