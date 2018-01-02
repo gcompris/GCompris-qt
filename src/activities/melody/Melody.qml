@@ -56,7 +56,6 @@ ActivityBase {
             property var answer
             property alias questionInterval: questionPlayer.interval
             property int numberOfLevel: 10
-            property bool backgroundMusicStatus
         }
 
         onStart: {
