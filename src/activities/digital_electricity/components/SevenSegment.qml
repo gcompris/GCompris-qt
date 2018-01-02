@@ -20,9 +20,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import "../digital_electricity.js" as Activity
-
 import GCompris 1.0
+
+import "../digital_electricity.js" as Activity
 
 ElectricalComponent {
     id: sevenSegmentDisplay
@@ -37,7 +37,7 @@ ElectricalComponent {
     information: qsTr("7 segment display takes 7 binary inputs in its input terminals. The display " +
                       "consists of 7 segments and each segment gets lighted according to the input. " +
                       "By generating different combination of binary inputs, the display can be used to " +
-                      "display various different symbols. The diagram is:")
+                      "display numbers from 0 to 9 and a few letters. The diagram is:")
 
     property string infoImageSrc: "7SegmentDisplay.svg"
 

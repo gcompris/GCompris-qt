@@ -29,11 +29,9 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.248, 0.762]
 
-    information: qsTr("XOR gate takes 2 or more binary input in its input terminals and outputs a single " +
-                      "value. The output is 1 if number of '1' in input is odd, and 0 if number of '1' in " +
-                      "input is even. In this activity, a 2 input XOR gate is shown. Truth table for " +
-                      "2 input XOR gate is:")
-    truthTable: [['A','B',"A^B"],
+    information: qsTr("XOR gate outputs 1 if the number of '1' in input is odd, and 0 if number of '1' in " +
+                      "input is even. In this activity, a 2 input XOR gate is shown. Output for 2 input XOR gate is:")
+    truthTable: [['A','B',qsTr("A XOR B")],
                  ['0','0','0'],
                  ['0','1','1'],
                  ['1','0','1'],
@@ -80,11 +78,9 @@ ElectricalComponent {
         for(var i = 0 ; i < terminal.wires.length ; ++i) {
             var wire = terminal.wires[i]
             var component = wire.to.parent
-            if(componentVisited[component] != true && wireVisited[wire] != true) {
-                componentVisited[component] = true
-                wireVisited[wire] = true
-                component.updateOutput(wireVisited)
-            }
+            componentVisited[component] = true
+            wireVisited[wire] = true
+            component.updateOutput(wireVisited)
         }
     }
 }

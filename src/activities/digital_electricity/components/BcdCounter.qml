@@ -31,10 +31,10 @@ ElectricalComponent {
     noOfOutputs: 4
     property var outputTerminalPosY: [0.064, 0.345, 0.645, 0.936]
     property int count: 0
-    property int previousInp: 0
+    property int previousInput: 0
 
-    information: qsTr("BCD counter takes time period as input, and outputs the bcd number which keeps on " +
-                      "incrementing by the specified time period")
+    information: qsTr("BCD counter usually takes a signal generator as input. " +
+                      "The output is a BCD number starting from 0 which is increased by one at each tick.")
 
     truthTable: []
     property var outputTable: [['0','0','0','0'],
@@ -87,8 +87,8 @@ ElectricalComponent {
                 terminal.wires[j].to.value = terminal.value
         }
 
-        if(previousInp != inputTerminals.itemAt(0).value) {
-            previousInp = inputTerminals.itemAt(0).value
+        if(previousInput != inputTerminals.itemAt(0).value) {
+            previousInput = inputTerminals.itemAt(0).value
             count = (count + 1) % 10;
 
             var componentVisited = []

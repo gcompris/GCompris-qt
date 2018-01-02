@@ -30,10 +30,9 @@ ElectricalComponent {
     noOfInputs: 1
     noOfOutputs: 1
 
-    information: qsTr("Switch is used to maintain easy connection between two terminals. If the switch is " +
-                      "turned on, then the two terminals are connected and current can flow through the " +
-                      "switch. If the switch is turned off, then the connection between terminal is broken, " +
-                      "and current can not flow through it.")
+    information: qsTr("Switch is used to connect or disconnect two terminals. " +
+                      "If the switch is turned on, current can flow through the switch. " +
+                      "If the switch is turned off, then the connection between terminal is broken and current can not flow through it.")
 
     truthTable: []
 

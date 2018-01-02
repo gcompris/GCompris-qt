@@ -29,11 +29,10 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.205, 0.769]
 
-    information: qsTr("NOR gate takes 2 or more binary input in its input terminals and outputs a single " +
-                      "value. It is the complement of OR gate. In this activity, a 2 input NOR gate is " +
-                      "shown. Truth table for 2 input NOR gate is:")
+    information: qsTr("NOR gate outputs the opposite of OR gate. As soon as there is a 1 in input the output is equal to 0. " +
+                      "To obtain a 1 all the inputs must be equal to 0:")
 
-    truthTable: [['A','B',"~(A+B)"],
+    truthTable: [['A','B',qsTr("NOT (A OR B)")],
                  ['0','0','1'],
                  ['0','1','0'],
                  ['1','0','0'],
@@ -81,15 +80,6 @@ ElectricalComponent {
         for(var i = 0 ; i < terminal.wires.length ; ++i) {
             var wire = terminal.wires[i]
             var component = wire.to.parent
-            /*
-            // NOTE: Removed because the output of a > 1 input gate may depend on > 1 conditions
-            // thus it may be needed to be revisited
-            if(componentVisited[component] != true && wireVisited[wire] != true) {
-                componentVisited[component] = true
-                wireVisited[wire] = true
-                component.updateOutput(wireVisited)
-            }
-            */
             componentVisited[component] = true
             wireVisited[wire] = true
             component.updateOutput(wireVisited)

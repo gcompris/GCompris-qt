@@ -29,11 +29,10 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.219, 0.773]
 
-    information: qsTr("AND gate takes 2 or more binary input in its input terminals and outputs a single " +
-                      "value. The output is 0 if any of the input is 0, else it is 1. In this activity, " +
-                      "a 2 input AND gate is shown. Truth table for 2 input AND gate is:")
+    information: qsTr("AND gate outputs 1 only if all its inputs are equal to 1. " +
+                      "As soon as one input is equal to 0 the result is 0. Output for 2 input AND gate is:")
 
-    truthTable: [['A','B',"A.B"],
+    truthTable: [['A','B',qsTr("A AND B")],
                  ['0','0','0'],
                  ['0','1','0'],
                  ['1','0','0'],
@@ -81,15 +80,6 @@ ElectricalComponent {
         for(var i = 0 ; i < terminal.wires.length ; ++i) {
             var wire = terminal.wires[i]
             var component = wire.to.parent
-            /*
-            // NOTE: Removed because the output of a > 1 input gate may depend on > 1 conditions
-            // thus it may be needed to be revisited
-            if(componentVisited[component] != true && wireVisited[wire] != true) {
-                componentVisited[component] = true
-                wireVisited[wire] = true
-                component.updateOutput(wireVisited)
-            }
-            */
             componentVisited[component] = true
             wireVisited[wire] = true
             component.updateOutput(wireVisited)

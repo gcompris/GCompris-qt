@@ -28,11 +28,10 @@ ElectricalComponent {
     noOfInputs: 1
     noOfOutputs: 1
 
-    information: qsTr("Not gate (also known as inverter) takes a binary input in its input terminal and " +
-                      "outputs a single value. The output is the complement of the input value, that is, it " +
-                      "is 0 if input is 1, and 1 if input is 0. Truth table for NOT gate is:")
+    information: qsTr("Not gate (also known as inverter) outputs the opposite of the input. " +
+                      "Input 0 gives an output 1. Input 1 gives an output 0:")
 
-    truthTable: [['A',"~A"],
+    truthTable: [['A',qsTr("NOT A")],
                  ['0','1'],
                  ['1','0']]
 

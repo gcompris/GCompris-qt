@@ -29,11 +29,10 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.174, 0.786]
 
-    information: qsTr("NAND gate takes 2 or more binary input in its input terminals and outputs a single " +
-                      "value. It is the complement of AND gate. In this activity, a 2 input NAND gate is " +
-                      "shown. Truth table for 2 input NAND gate is:")
+    information: qsTr("NAND gate outputs the opposite of AND gate. " +
+                      "If all inputs are 1, output is equal to 0 and as soon as one input is equal to 0 it gives a 1:")
 
-    truthTable: [['A','B',"~(A.B)"],
+    truthTable: [['A','B',qsTr("NOT (A AND B)")],
                  ['0','0','1'],
                  ['0','1','1'],
                  ['1','0','1'],
@@ -81,15 +80,6 @@ ElectricalComponent {
         for(var i = 0 ; i < terminal.wires.length ; ++i) {
             var wire = terminal.wires[i]
             var component = wire.to.parent
-            /*
-            // NOTE: Removed because the output of a > 1 input gate may depend on > 1 conditions
-            // thus it may be needed to be revisited
-            if(componentVisited[component] != true && wireVisited[wire] != true) {
-                componentVisited[component] = true
-                wireVisited[wire] = true
-                component.updateOutput(wireVisited)
-            }
-            */
             componentVisited[component] = true
             wireVisited[wire] = true
             component.updateOutput(wireVisited)

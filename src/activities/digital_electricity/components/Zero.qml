@@ -28,15 +28,7 @@ ElectricalComponent {
     noOfInputs: 0
     noOfOutputs: 1
 
-    information: qsTr("Digital electronics is a branch of electronics that handle digital signals " +
-                      "(i.e discrete signals instead of continous signals). Therefore all values within " +
-                      "a range or band represent the same numeric value. In most cases, the number of " +
-                      "these states is two and they are represented by two voltage bands: one near a " +
-                      "reference value (typically termed as 'ground' or zero volts), and other value near " +
-                      "the supply voltage. These correspond to the 'false' ('0') and 'true' ('1') values " +
-                      "of the Boolean domain respectively (named after its inventor, George Boole). " +
-                      "In this activity, you can give '0' and '1' as input to other logical devices, " +
-                      "and see their output through an output device.")
+    information: qsTr("Digital electronics works with only two states: 0 and 1. This allows to operate mathematical operations such as additions, subtractions.. It is the basics of computer technics. In reality, 0 is often the representation of a voltage nearly equal to ground voltage and 1 is the representation of the supply voltage of a circuit.")
 
     property alias outputTerminals: outputTerminals
 

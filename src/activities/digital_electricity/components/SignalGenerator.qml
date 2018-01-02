@@ -31,13 +31,7 @@ ElectricalComponent {
     noOfOutputs: 1
 
     information: qsTr("Signal Generator is used to generate alternating signals of 0 and 1. " +
-                      "It takes period as input, and generate outputs accordingly. Period " +
-                      "refers to the number of seconds after which the output will. So 1s " +
-                      "means that the output will change after every 1 second, 0.5s means that " +
-                      "the output will change after every 0.5 seconds, and so on. For the demonstration " +
-                      "purpose, the minimum period of signal generator in this activity is " +
-                      "0.25s, and maximum period is 2s. The period can be changed by clicking " +
-                      "on the arrows on the signal generator")
+    "The time between two changes can be modified by pressing the arrows on the generator.")
 
     property alias outputTerminals: outputTerminals
     property double period: 1

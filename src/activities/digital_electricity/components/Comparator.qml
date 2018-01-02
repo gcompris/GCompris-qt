@@ -31,10 +31,8 @@ ElectricalComponent {
     property var outputTerminalPosY: [0.128, 0.481, 0.88]
 
     information: qsTr("Comparator takes 2 numbers as input, A and B. It compares them and outputs 3 " +
-                      "values. First value is true if A < B, else it is false. Second value is true " +
-                      "if A = B, else it is false. Third value is true if A > B, else it is false. " +
-                      "In digital electronics, true value is represented as 1, and false value is " +
-                      "represented as 0")
+                      "values. First output is 1 if A < B, 0 otherwise. Second  is 1 " +
+                      "if A = B, 0 otherwise. Third is 1 if A > B, 0 otherwise. ")
 
     truthTable: []
 
