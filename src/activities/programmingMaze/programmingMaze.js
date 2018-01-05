@@ -195,7 +195,7 @@ function initLevel() {
     // Initially all the cells are assigned 0 as for the first time they will be visited by Tux during forward movement.
     for(var i = 0; i <= maxX; i++) {
         for(var j = 0; j <= maxY; j++) {
-            isCoordinateVisited[i][j] = 0
+            isCoordinateVisited[i][j] = false
         }
     }
 
@@ -318,8 +318,7 @@ function executeNextInstruction() {
                     }
                 }
                 if(nextTileExists) {
-                    if(isCoordinateVisited[currentX + 1][currentY] === 1) {
-                        isCoordinateVisited[currentX][currentY] = 0
+                    if(isCoordinateVisited[currentX + 1][currentY]) {
                         isBackwardMovement = true
                     }
                 }
@@ -332,8 +331,7 @@ function executeNextInstruction() {
                     }
                 }
                 if(nextTileExists) {
-                    if(isCoordinateVisited[currentX -1][currentY] === 1) {
-                        isCoordinateVisited[currentX][currentY] = 0
+                    if(isCoordinateVisited[currentX -1][currentY]) {
                         isBackwardMovement = true
                     }
                 }
@@ -346,8 +344,7 @@ function executeNextInstruction() {
                     }
                 }
                 if(nextTileExists) {
-                    if(isCoordinateVisited[currentX][currentY - 1] === 1) {
-                        isCoordinateVisited[currentX][currentY] = 0
+                    if(isCoordinateVisited[currentX][currentY - 1]) {
                         isBackwardMovement = true
                     }
                 }
@@ -360,8 +357,7 @@ function executeNextInstruction() {
                     }
                 }
                 if(nextTileExists) {
-                    if(isCoordinateVisited[currentX][currentY + 1] === 1) {
-                        isCoordinateVisited[currentX][currentY] = 0
+                    if(isCoordinateVisited[currentX][currentY + 1]) {
                         isBackwardMovement = true
                     }
                 }
@@ -403,10 +399,11 @@ function executeNextInstruction() {
             // If the current tile wasn't visited as a result of backward movement, mark it as 1 to indicate next time it is visited, it will because of backward movement
             if(!isBackwardMovement) {
                 ++tuxIceBlockNumber;
-                isCoordinateVisited[currentX][currentY] = 1
+                isCoordinateVisited[currentX][currentY] = true
             }
             else {
                 --tuxIceBlockNumber;
+                isCoordinateVisited[currentX][currentY] = false
             }
 
             items.player.x = changedX
