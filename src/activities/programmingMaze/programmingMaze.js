@@ -122,9 +122,6 @@ var runningProcedure
 // Duration of movement of highlight in the execution area.
 var moveAnimDuration
 
-// Stores the co-ordinates of the tile blocks in the current level.
-var currentLevelBlocksCoordinates
-
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
 var okImage = "qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -169,7 +166,10 @@ function initLevel() {
         return;
 
     items.bar.level = currentLevel + 1
-    currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+
+    // Stores the co-ordinates of the tile blocks in the current level
+    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+
     items.mazeModel.model = currentLevelBlocksCoordinates
 
     // The maximum value of x and y co-ordinates in the level
@@ -296,6 +296,8 @@ function executeNextInstruction() {
         var currentBlock = tuxIceBlockNumber
         var nextBlock
         var isBackwardMovement = false
+
+        var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
 
         var currentX = currentLevelBlocksCoordinates[currentBlock][0]
         var currentY = currentLevelBlocksCoordinates[currentBlock][1]
@@ -457,6 +459,8 @@ function deadEnd() {
 }
 
 function checkSuccess() {
+    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+
     var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0];
     var fishY = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1];
     var tuxX = currentLevelBlocksCoordinates[tuxIceBlockNumber][0]
