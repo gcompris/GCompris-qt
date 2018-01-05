@@ -360,11 +360,12 @@ function executeNextInstruction() {
                     }
                 }
             }
-        }
 
-        // Since now the direction of movement is detected (forward or backward), Tux can now make his movement.
-        if(currentInstruction === MOVE_FORWARD) {
-            // If isBackwardMovement is true, then the next tile Tux will visit is the previous one, else Tux will visit the forward tile
+            /**
+             * Since now the direction of movement is detected (forward or backward), Tux can now make his movement.
+             *
+             * If isBackwardMovement is true, then the next tile Tux will visit is the previous one, else Tux will visit the forward tile
+             */
             if(isBackwardMovement)
                 nextBlock = tuxIceBlockNumber - 1
             else
