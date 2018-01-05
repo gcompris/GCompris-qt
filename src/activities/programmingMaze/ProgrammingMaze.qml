@@ -24,7 +24,6 @@ import "../../core"
 
 import "programmingMaze.js" as Activity
 
-
 ActivityBase {
     id: activity
 
@@ -75,7 +74,8 @@ ActivityBase {
             property alias procedureModel: procedureModel
             property alias procedure: procedure
             property alias player: player
-            property alias runCodeImage: runCode.source
+            property bool isOkButtonEnabled: true
+            property bool isTuxMouseAreaEnabled: false
         }
 
         onStart: {
@@ -198,6 +198,16 @@ ActivityBase {
                 }
             }
 
+            MouseArea {
+                id: tuxMouseArea
+                anchors.fill: parent
+                enabled: items.isTuxMouseAreaEnabled
+                onClicked: {
+                    answerSheet.highlightFollowsCurrentItem = false
+                    Activity.resetTux = true
+                    Activity.initLevel()
+                }
+            }
         }
 
         property int buttonWidth: background.width / 10
@@ -263,7 +273,6 @@ ActivityBase {
                         height: sourceSize.height
                         anchors.horizontalCenter: parent.horizontalCenter
                     }
-
 
                     Image {
                         source: "qrc:/gcompris/src/core/resource/button.svg"
@@ -343,25 +352,29 @@ ActivityBase {
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
             fillMode: Image.PreserveAspectFit
 
-
             MouseArea {
                 id: runCodeMouseArea
                 anchors.fill: parent
-                hoverEnabled: true
+                hoverEnabled: ApplicationInfo.isMobile || !items.isOkButtonEnabled ? false : true
+                enabled: items.isOkButtonEnabled
                 onEntered: runCode.scale = 1.1
                 onClicked: {
-                    // todo add a condition to disable it if code is running
-                    // either the execution hasn't started or stopped because of deadEndPoint
-                    if(Activity.codeIterator == 0 || Activity.deadEndPoint) {
-                        console.log(Activity.codeIterator +" value of codeIterator")
+                    if(enabled) {
+                        runCodeClickAnimation.start()
+                    }
+                    if(Activity.codeIterator == 0 && answerModel.count != 0) {
                         Activity.runCode()
                     }
                 }
                 onExited: runCode.scale = 1
             }
+
+            SequentialAnimation {
+                id: runCodeClickAnimation
+                NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100}
+                NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100}
+            }
         }
-
-
 
         Component {
             id: instructionHeaderComponent

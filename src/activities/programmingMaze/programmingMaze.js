@@ -111,12 +111,20 @@ var deadEndPoint = false
 
 // Stores the index of playerCode[] which is going to be processed
 var codeIterator = 0
-var reset = false
+
+/**
+ * Stores if the reset is done only when Tux is clicked.
+ *
+ * If resetTux is true, initLevel() is called and the instruction areas are not cleared.
+ *
+ * Else, it means that initLevel() is called to reset the entire level and the instruction areas are cleared as well.
+ */
+var resetTux = false
 
 // Number of instructions in procedure model
 var procedureBlocks
 
-// Tells if procedure area instructions are running or not
+// Tells if procedure area instructions are running or not.
 var runningProcedure
 
 // Duration of movement of highlight in the execution area.
@@ -124,8 +132,6 @@ var moveAnimDuration
 
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
-var okImage = "qrc:/gcompris/src/core/resource/bar_ok.svg"
-var reloadImage = "qrc:/gcompris/src/core/resource/bar_reload.svg"
 var currentLevel = 0
 var numberOfLevel
 var items
@@ -154,7 +160,7 @@ function start(items_) {
     items = items_
     currentLevel = 0
     numberOfLevel = mazeBlocks.length
-    reset = false
+    resetTux = false
     initLevel()
 }
 
@@ -166,6 +172,7 @@ function initLevel() {
         return;
 
     items.bar.level = currentLevel + 1
+    playerCode = []
 
     // Stores the co-ordinates of the tile blocks in the current level
     var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
@@ -199,7 +206,7 @@ function initLevel() {
         }
     }
 
-    if(!reset && !deadEndPoint) {
+    if(!resetTux) {
         items.answerModel.clear()
         items.procedureModel.clear()
     }
@@ -229,10 +236,11 @@ function initLevel() {
     items.procedure.currentIndex = -1
     items.answerSheet.highlightMoveDuration = moveAnimDuration
     items.procedure.highlightMoveDuration = moveAnimDuration
-    items.runCodeImage = okImage
     items.player.tuxIsBusy = false
+    items.isOkButtonEnabled = true
+    items.isTuxMouseAreaEnabled = false
+    resetTux = false
     codeIterator = 0
-    playerCode = []
 
     items.player.init()
 }
@@ -242,34 +250,28 @@ function getPlayerRotation() {
 }
 
 function runCode() {
-    if(items.runCodeImage == reloadImage) {
-        playerCode = []
-        items.answerSheet.highlightFollowsCurrentItem = false
-        initLevel()
+    items.answerSheet.highlightFollowsCurrentItem = true
+    //initialize code
+    playerCode = []
+    items.player.tuxIsBusy = false
+    procedureBlocks = items.procedureModel.count
+    for(var i = 0; i < items.answerModel.count; i++) {
+        if(items.answerModel.get([i]).name === CALL_PROCEDURE) {
+            playerCode.push(START_PROCEDURE)
+            for(var j = 0; j < items.procedureModel.count; j++) {
+                if(items.procedureModel.get([j]).name != END_PROCEDURE)
+                    playerCode.push(items.procedureModel.get([j]).name)
+            }
+            playerCode.push(END_PROCEDURE)
+        }
+        else {
+            playerCode.push(items.answerModel.get([i]).name)
+        }
     }
-    else {
-        items.answerSheet.highlightFollowsCurrentItem = true
-        //initialize code
-        playerCode = []
-        items.player.tuxIsBusy = false
-        procedureBlocks = items.procedureModel.count
-        for(var i = 0; i < items.answerModel.count; i++) {
-            if(items.answerModel.get([i]).name === CALL_PROCEDURE) {
-                playerCode.push(START_PROCEDURE)
-                for(var j = 0; j < items.procedureModel.count; j++) {
-                    if(items.procedureModel.get([j]).name != END_PROCEDURE)
-                        playerCode.push(items.procedureModel.get([j]).name)
-                }
-                playerCode.push(END_PROCEDURE)
-            }
-            else {
-                playerCode.push(items.answerModel.get([i]).name)
-            }
-        }
 
-        if(!items.player.tuxIsBusy) {
-            executeNextInstruction()
-        }
+    if(!items.player.tuxIsBusy) {
+        items.isOkButtonEnabled = false
+        executeNextInstruction()
     }
 }
 
@@ -447,8 +449,8 @@ function executeNextInstruction() {
 
 function deadEnd() {
     deadEndPoint = true
+    items.isTuxMouseAreaEnabled = true
     items.bonus.bad("tux")
-    items.runCodeImage = reloadImage
 }
 
 function checkSuccess() {
@@ -460,7 +462,6 @@ function checkSuccess() {
     var tuxY = currentLevelBlocksCoordinates[tuxIceBlockNumber][1]
 
     if(tuxX === fishX && tuxY === fishY) {
-        playerCode = []
         codeIterator = 0
         items.player.tuxIsBusy = false
         items.bonus.good("tux")
@@ -471,7 +472,7 @@ function checkSuccess() {
 }
 
 function nextLevel() {
-    reset = false
+    resetTux = false
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
@@ -479,7 +480,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    reset = false
+    resetTux = false
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
@@ -487,20 +488,17 @@ function previousLevel() {
 }
 
 function repositionObjectsOnWidthChanged(factor) {
-    reset = true
+    resetTux = true
     if(items)
         initLevel()
 }
 
 function repositionObjectsOnHeightChanged(factor) {
-    reset = true
+    resetTux = true
     if(items)
         initLevel()
 }
 
 function reloadLevel() {
-    if(deadEndPoint) {
-        playerCode = []
-    }
     initLevel()
 }
