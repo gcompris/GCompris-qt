@@ -122,6 +122,9 @@ var runningProcedure
 // Duration of movement of highlight in the execution area.
 var moveAnimDuration
 
+// Stores the co-ordinates of the tile blocks in the current level.
+var currentLevelBlocksCoordinates
+
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
 var okImage = "qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -166,17 +169,18 @@ function initLevel() {
         return;
 
     items.bar.level = currentLevel + 1
-    items.mazeModel.model = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+    currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+    items.mazeModel.model = currentLevelBlocksCoordinates
 
     // The maximum value of x and y co-ordinates in the level
     var maxX = 0
     var maxY = 0
 
-    for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
-        if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] > maxX)
-            maxX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0]
-        if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] > maxY)
-            maxY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1]
+    for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
+        if(currentLevelBlocksCoordinates[i][0] > maxX)
+            maxX = currentLevelBlocksCoordinates[i][0]
+        if(currentLevelBlocksCoordinates[i][1] > maxY)
+            maxY = currentLevelBlocksCoordinates[i][1]
     }
 
     isCoordinateVisited = []
@@ -210,8 +214,8 @@ function initLevel() {
     }
 
     // Center Tux in its first case
-    items.player.x = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][0] * stepX + (stepX - items.player.width) / 2
-    items.player.y = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][1] * stepY + (stepY - items.player.height) / 2
+    items.player.x = currentLevelBlocksCoordinates[0][0] * stepX + (stepX - items.player.width) / 2
+    items.player.y = currentLevelBlocksCoordinates[0][1] * stepY + (stepY - items.player.height) / 2
 
     tuxIceBlockNumber = 0
     changedRotation = EAST
@@ -293,8 +297,8 @@ function executeNextInstruction() {
         var nextBlock
         var isBackwardMovement = false
 
-        var currentX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][currentBlock][0]
-        var currentY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][currentBlock][1]
+        var currentX = currentLevelBlocksCoordinates[currentBlock][0]
+        var currentY = currentLevelBlocksCoordinates[currentBlock][1]
 
         // Checks if the tile at the next position exists.
         var nextTileExists = false
@@ -306,8 +310,8 @@ function executeNextInstruction() {
          */
         if(currentInstruction === MOVE_FORWARD) {
             if(currentRotation === EAST) {
-                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
-                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX + 1 && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY) {
+                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
+                    if(currentLevelBlocksCoordinates[i][0] === currentX + 1 && currentLevelBlocksCoordinates[i][1] === currentY) {
                         nextTileExists = true
                     }
                 }
@@ -320,8 +324,8 @@ function executeNextInstruction() {
             }
 
             else if(currentRotation === WEST) {
-                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
-                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX - 1 && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY) {
+                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
+                    if(currentLevelBlocksCoordinates[i][0] === currentX - 1 && currentLevelBlocksCoordinates[i][1] === currentY) {
                         nextTileExists = true
                     }
                 }
@@ -334,8 +338,8 @@ function executeNextInstruction() {
             }
 
             else if(currentRotation === SOUTH) {
-                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
-                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY - 1) {
+                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
+                    if(currentLevelBlocksCoordinates[i][0] === currentX && currentLevelBlocksCoordinates[i][1] === currentY - 1) {
                         nextTileExists = true
                     }
                 }
@@ -348,8 +352,8 @@ function executeNextInstruction() {
             }
 
             else if(currentRotation === NORTH) {
-                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
-                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY + 1) {
+                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
+                    if(currentLevelBlocksCoordinates[i][0] === currentX && currentLevelBlocksCoordinates[i][1] === currentY + 1) {
                         nextTileExists = true
                     }
                 }
@@ -371,8 +375,8 @@ function executeNextInstruction() {
             else
                 nextBlock = tuxIceBlockNumber + 1
 
-            var nextX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][0]
-            var nextY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][1]
+            var nextX = currentLevelBlocksCoordinates[nextBlock][0]
+            var nextY = currentLevelBlocksCoordinates[nextBlock][1]
 
             items.answerSheet.highlightMoveDuration = moveAnimDuration
             items.procedure.highlightMoveDuration = moveAnimDuration
@@ -455,8 +459,8 @@ function deadEnd() {
 function checkSuccess() {
     var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0];
     var fishY = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1];
-    var tuxX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][tuxIceBlockNumber][0]
-    var tuxY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][tuxIceBlockNumber][1]
+    var tuxX = currentLevelBlocksCoordinates[tuxIceBlockNumber][0]
+    var tuxY = currentLevelBlocksCoordinates[tuxIceBlockNumber][1]
 
     if(tuxX === fishX && tuxY === fishY) {
         playerCode = []
