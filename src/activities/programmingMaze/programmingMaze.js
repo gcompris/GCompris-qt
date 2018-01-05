@@ -275,12 +275,7 @@ function runCode() {
 
 function playerRunningChanged() {
     if(!items.player.tuxIsBusy) {
-        if(deadEndPoint) {
-            console.log("it was a dead end")
-        }
-        else{
-            executeNextInstruction()
-        }
+        executeNextInstruction()
     }
 }
 
@@ -452,6 +447,7 @@ function executeNextInstruction() {
 
 function deadEnd() {
     deadEndPoint = true
+    items.bonus.bad("tux")
     items.runCodeImage = reloadImage
 }
 
@@ -467,7 +463,10 @@ function checkSuccess() {
         playerCode = []
         codeIterator = 0
         items.player.tuxIsBusy = false
-        items.bonus.good("smiley")
+        items.bonus.good("tux")
+    }
+    else if(codeIterator === playerCode.length) {
+        deadEnd()
     }
 }
 
