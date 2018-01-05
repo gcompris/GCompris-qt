@@ -85,19 +85,43 @@ var mazeBlocks = [
             ]
         ]
 
+// Length of 1 step along x-axis
 var stepX
+
+// Length of 1 step along y-axis
 var stepY
+
+// List of commands to be executed
 var playerCode = []
+
+// The index of tile, Tux currently is on
 var tuxIceBlockNumber
+
+// New x position of Tux after a forward / backward movement
 var changedX
+
+// New y position of Tux after a forward / backward movement
 var changedY
+
+// New rotation of Tux on turning.
 var changedRotation
+
+// Indicates if there is a dead-end
 var deadEndPoint = false
+
+// Stores the index of playerCode[] which is going to be processed
 var codeIterator = 0
 var reset = false
+
+// Number of instructions in procedure model
 var procedureBlocks
+
+// Tells if procedure area instructions are running or not
 var runningProcedure
+
+// Duration of movement of highlight in the execution area.
 var moveAnimDuration
+
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
 var okImage = "qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -105,6 +129,17 @@ var reloadImage = "qrc:/gcompris/src/core/resource/bar_reload.svg"
 var currentLevel = 0
 var numberOfLevel
 var items
+
+/**
+ * A 2-dimensional array whose each cell stores:
+ *  1. 0 if the tile at position x,y is visited by Tux during forward movement.
+ *  2. 1 if the tile at position x,y is visited by Tux during backward movement on his path.
+ *
+ * According to this value, the number of covered tiles in the path is calculated:
+ *  1. If the value at cell x,y is 0 (a forward movement), the number of tiles covered in the path increases by 1.
+ *  2. If the value at cell x,y is 1 (a backward movement), the number of tiles covered in the path decreases by 1.
+ */
+var isCoordinateVisited
 
 var NORTH = 0
 var WEST = 90
@@ -133,6 +168,33 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.mazeModel.model = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
 
+    // The maximum value of x and y co-ordinates in the level
+    var maxX = 0
+    var maxY = 0
+
+    for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
+        if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] > maxX)
+            maxX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0]
+        if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] > maxY)
+            maxY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1]
+    }
+
+    isCoordinateVisited = []
+
+    // A 2-D adjacency matrix of size maxX * maxY is formed to store the values (0 or 1) for each tile at that co-ordinate, marking it as visited during forward / backward movement.
+    isCoordinateVisited = new Array(maxX + 1);
+
+    for(var i = 0; i <= maxX; i++) {
+        isCoordinateVisited[i] = new Array(maxY + 1);
+    }
+
+    // Initially all the cells are assigned 0 as for the first time they will be visited by Tux during forward movement.
+    for(var i = 0; i <= maxX; i++) {
+        for(var j = 0; j <= maxY; j++) {
+            isCoordinateVisited[i][j] = 0
+        }
+    }
+
     if(!reset && !deadEndPoint) {
         items.answerModel.clear()
         items.procedureModel.clear()
@@ -143,13 +205,13 @@ function initLevel() {
 
     items.instructionModel.clear()
     var levelInstructions = mazeBlocks[currentLevel][BLOCKS_INSTRUCTION_INDEX]
-    for (var i = 0; i < levelInstructions.length ; i++) {
+    for (var i = 0; i < levelInstructions.length; i++) {
         items.instructionModel.append({"name":levelInstructions[i]});
     }
 
     // Center Tux in its first case
-    items.player.x = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][0] * stepX + (stepX-items.player.width)/2
-    items.player.y = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][1] * stepY + (stepY-items.player.height)/2
+    items.player.x = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][0] * stepX + (stepX - items.player.width) / 2
+    items.player.y = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][1] * stepY + (stepY - items.player.height) / 2
 
     tuxIceBlockNumber = 0
     changedRotation = EAST
@@ -187,8 +249,8 @@ function runCode() {
         playerCode = []
         items.player.tuxIsBusy = false
         procedureBlocks = items.procedureModel.count
-        for(var i = 0; i < items.answerModel.count; i ++) {
-            if(items.answerModel.get([i]).name == CALL_PROCEDURE) {
+        for(var i = 0; i < items.answerModel.count; i++) {
+            if(items.answerModel.get([i]).name === CALL_PROCEDURE) {
                 playerCode.push(START_PROCEDURE)
                 for(var j = 0; j < items.procedureModel.count; j++) {
                     if(items.procedureModel.get([j]).name != END_PROCEDURE)
@@ -207,14 +269,13 @@ function runCode() {
     }
 }
 
-
 function playerRunningChanged() {
     if(!items.player.tuxIsBusy) {
         if(deadEndPoint) {
             console.log("it was a dead end")
         }
         else{
-           executeNextInstruction()
+            executeNextInstruction()
         }
     }
 }
@@ -229,45 +290,128 @@ function executeNextInstruction() {
         var currentRotation = getPlayerRotation()
 
         var currentBlock = tuxIceBlockNumber
-        var nextBlock = tuxIceBlockNumber + 1
+        var nextBlock
+        var isBackwardMovement = false
 
         var currentX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][currentBlock][0]
         var currentY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][currentBlock][1]
-        var nextX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][0]
-        var nextY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][1]
 
-        if(currentInstruction == MOVE_FORWARD) {
-            ++tuxIceBlockNumber;
+        // Checks if the tile at the next position exists.
+        var nextTileExists = false
+
+        /**
+         * This If condition determines whether a tile exists in the direction of movement of Tux and if the tile is visited during forward / backward movement.
+         *
+         * If a tile at position x,y is marked as 1, it signifies that it is being visited during a backward movement and then marked as 0 (as when it is visited next time, it will be due to forward movement).
+         */
+        if(currentInstruction === MOVE_FORWARD) {
+            if(currentRotation === EAST) {
+                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
+                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX + 1 && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY) {
+                        nextTileExists = true
+                    }
+                }
+                if(nextTileExists) {
+                    if(isCoordinateVisited[currentX + 1][currentY] === 1) {
+                        isCoordinateVisited[currentX][currentY] = 0
+                        isBackwardMovement = true
+                    }
+                }
+            }
+
+            else if(currentRotation === WEST) {
+                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
+                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX - 1 && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY) {
+                        nextTileExists = true
+                    }
+                }
+                if(nextTileExists) {
+                    if(isCoordinateVisited[currentX -1][currentY] === 1) {
+                        isCoordinateVisited[currentX][currentY] = 0
+                        isBackwardMovement = true
+                    }
+                }
+            }
+
+            else if(currentRotation === SOUTH) {
+                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
+                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY - 1) {
+                        nextTileExists = true
+                    }
+                }
+                if(nextTileExists) {
+                    if(isCoordinateVisited[currentX][currentY - 1] === 1) {
+                        isCoordinateVisited[currentX][currentY] = 0
+                        isBackwardMovement = true
+                    }
+                }
+            }
+
+            else if(currentRotation === NORTH) {
+                for(var i = 0; i < mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length; i++) {
+                    if(mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][0] === currentX && mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][i][1] === currentY + 1) {
+                        nextTileExists = true
+                    }
+                }
+                if(nextTileExists) {
+                    if(isCoordinateVisited[currentX][currentY + 1] === 1) {
+                        isCoordinateVisited[currentX][currentY] = 0
+                        isBackwardMovement = true
+                    }
+                }
+            }
+        }
+
+        // Since now the direction of movement is detected (forward or backward), Tux can now make his movement.
+        if(currentInstruction === MOVE_FORWARD) {
+            // If isBackwardMovement is true, then the next tile Tux will visit is the previous one, else Tux will visit the forward tile
+            if(isBackwardMovement)
+                nextBlock = tuxIceBlockNumber - 1
+            else
+                nextBlock = tuxIceBlockNumber + 1
+
+            var nextX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][0]
+            var nextY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][1]
+
             items.answerSheet.highlightMoveDuration = moveAnimDuration
             items.procedure.highlightMoveDuration = moveAnimDuration
-            if (nextX - currentX > 0 && currentRotation == EAST) {
+            if (nextX - currentX > 0 && currentRotation === EAST) {
                 changedX += stepX
             }
-            else if(nextX - currentX < 0 && currentRotation == WEST) {
+            else if(nextX - currentX < 0 && currentRotation === WEST) {
                 changedX -= stepX
             }
-            else if(nextY - currentY < 0 && currentRotation == SOUTH) {
+            else if(nextY - currentY < 0 && currentRotation === SOUTH) {
                 changedY -= stepY
             }
-            else if(nextY - currentY > 0 && currentRotation == NORTH) {
+            else if(nextY - currentY > 0 && currentRotation === NORTH) {
                 changedY += stepY
             }
             else {
-                // add an animation to indicate that its not possible
-                deadEndPoint = true
                 items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
                 deadEnd()
+                return
             }
+
+            // If the current tile wasn't visited as a result of backward movement, mark it as 1 to indicate next time it is visited, it will because of backward movement
+            if(!isBackwardMovement) {
+                ++tuxIceBlockNumber;
+                isCoordinateVisited[currentX][currentY] = 1
+            }
+            else {
+                --tuxIceBlockNumber;
+            }
+
             items.player.x = changedX
             items.player.y = changedY
         }
-        else if(currentInstruction == TURN_LEFT) {
+        else if(currentInstruction === TURN_LEFT) {
             changedRotation = (currentRotation - 90) % 360
             items.player.rotation = changedRotation
             items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
             items.procedure.highlightMoveDuration = moveAnimDuration / 2
         }
-        else if(currentInstruction == TURN_RIGHT) {
+        else if(currentInstruction === TURN_RIGHT) {
             changedRotation = (currentRotation + 90) % 360
             items.player.rotation = changedRotation
             items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
@@ -287,17 +431,17 @@ function executeNextInstruction() {
         }
         checkSuccess()
     }
-    else if(currentInstruction == START_PROCEDURE) {
+    else if(currentInstruction === START_PROCEDURE) {
         runningProcedure = true
         items.answerSheet.currentIndex += 1
         items.procedure.currentIndex = -1
-        codeIterator ++
+        codeIterator++
         executeNextInstruction()
     }
-    else if(currentInstruction == END_PROCEDURE) {
+    else if(currentInstruction === END_PROCEDURE) {
         runningProcedure = false
         procedureBlocks = items.procedureModel.count
-        codeIterator ++
+        codeIterator++
         executeNextInstruction()
     }
 }
