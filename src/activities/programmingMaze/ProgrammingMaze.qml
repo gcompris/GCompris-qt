@@ -284,6 +284,7 @@ ActivityBase {
                     MouseArea {
                         id: mouseAreaInstruction
                         anchors.fill: parent
+                        enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
                         signal clicked
                         onClicked: {
                             insertIntoModel()
@@ -423,6 +424,7 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
+                    enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
                     onClicked: {
                         background.insertIntoMain = true
                         background.insertIntoProcedure = false
@@ -469,6 +471,7 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
+                    enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
                     onClicked: {
                         background.insertIntoMain = false
                         background.insertIntoProcedure = true
