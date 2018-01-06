@@ -117,14 +117,7 @@ ActivityBase {
 
         IntroMessage {
             id: tutorial
-            anchors {
-                top: parent.top
-                topMargin: background.height / 6
-                right: parent.right
-                rightMargin: 5
-                left: parent.left
-                leftMargin: 5
-            }
+            textContainerHeight: 0.5 * parent.height
             z: 100
             onIntroDone: {
                 tutorial.visible = false

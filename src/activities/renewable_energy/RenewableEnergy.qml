@@ -146,6 +146,7 @@ ActivityBase {
         IntroMessage {
             id: message
             opacity: items.currentLevel == 0 ? 1 : start()
+            z: 100
             anchors {
                 top: parent.top
                 topMargin: 10

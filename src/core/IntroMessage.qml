@@ -65,6 +65,9 @@ Item {
      */
     property var intro;
 
+    property int textContainerWidth: 0.9 * parent.width
+    property int textContainerHeight: 0.75 * parent.height - nextButton.height
+
     // to avoid clicking on the activity
     MouseArea {
         anchors.fill: parent
@@ -90,8 +93,8 @@ Item {
             top: parent.top
             topMargin: 10
         }
-        width: 0.9 * parent.width
-        height: 0.75 * parent.height - nextButton.height
+        width: textContainerWidth
+        height: textContainerHeight
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         color: "black"
