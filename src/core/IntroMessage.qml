@@ -1,4 +1,5 @@
-/*GCompris-Qt IntroMessage.qml
+/*GCompris - IntroMessage.qml
+*
 *   Copyright (C) 2015 Siddhesh suthar <siddhesh.it@gmail.com>
 *
 * Authors:
@@ -41,6 +42,7 @@ import GCompris 1.0
 Item {
     id: message
 
+    anchors.fill: parent
     visible: index == -1 ? false : true
 
     /**
@@ -63,158 +65,89 @@ Item {
      */
     property var intro;
 
+    // to avoid clicking on the activity
+    MouseArea {
+        anchors.fill: parent
+    }
+
     Rectangle {
-        id: intro_textbg
-        x: intro_text.x - 4
-        y: intro_text.y - 4
-        width: intro_text.width + 4
-        height: intro_text.height + 4
-        color: "#d8ffffff"
-        border.color: "#2a2a2a"
-        border.width: 2
-        radius: 8
+        id: introTextContainer
+        width: introText.width + 20
+        height: introText.height + 2
+        anchors.top: introText.top
+        anchors.horizontalCenter: introText.horizontalCenter
+        opacity: 0.9
+        color: "white"
+        border.color: "#87A6DD"
+        border.width: 6
+        radius: 10
     }
 
     GCText {
-        id: intro_text
-        fontSize: regularSize
-        font.weight: Font.DemiBold
-        horizontalAlignment: Text.AlignHCenter
+        id: introText
         anchors {
+            horizontalCenter: parent.horizontalCenter
             top: parent.top
-            topMargin: 10 * ApplicationInfo.ratio
-            right: parent.right
-            rightMargin: 5 * ApplicationInfo.ratio
-            left: parent.left
-            leftMargin: 5 * ApplicationInfo.ratio
+            topMargin: 10
         }
-        width: parent.width
+        width: 0.9 * parent.width
+        height: 0.75 * parent.height - nextButton.height
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        color: "black"
+        minimumPixelSize: 10
         wrapMode: Text.WordWrap
+        fontSizeMode: Text.Fit
         text: parent.index == -1 ? "" : parent.intro[parent.index]
     }
 
-    /* Inlined Button User Interface for Next (or Let's go). */
-
-    Rectangle {
-        id: button
-        width: Math.max(skipText.width, nextText.width) * 1.2
-        height: Math.max(skipText.height, nextText.height) * 1.4
-        x: intro_textbg.x + (intro_textbg.width/2) + 20
-        y: intro_textbg.y + intro_textbg.height - button.height - 5
-        color: "#d8ffffff"
-        border.color: "#2a2a2a"
-        border.width: 3
-        radius: 8
+    IntroButton {
+        id: previousButton
+        width: parent.width / 4
+        height: 90
         z: 5
+        anchors.right: nextButton.left
+        anchors.topMargin: 15
+        anchors.rightMargin: 15
+	    anchors.top: introTextContainer.bottom
+        visible: index != 0
 
-        anchors.top : intro_textbg.bottom
-        anchors.topMargin: 10
+        text: qsTr("Previous")
 
-        GCText {
-            id: nextText
-            anchors.centerIn: parent
-            text: index != (intro.length - 1) ? qsTr("Next") : qsTr("Let's go")
-        }
-
-        MouseArea {
-            id: button_area
-            anchors.fill: button
-            onClicked: {
-                if(index <= (intro.length - 2))
-                {
-                    index++
-                }
-                else {
-                    index = -1
-                    message.introDone()
-                }
-            }
-        }
-        states: [
-        State {
-            name: "notclicked"
-            PropertyChanges {
-                target: button
-                scale: 1.0
-            }
-        },
-        State {
-            name: "clicked"
-            when: button_area.pressed
-            PropertyChanges {
-                target: button
-                scale: 0.9
-            }
-        },
-        State {
-            name: "hover"
-            when: button_area.containsMouse
-            PropertyChanges {
-                target: button
-                scale: 1.1
-            }
-        }
-        ]
-        Behavior on scale { NumberAnimation { duration: 70 } }
-
+        onClicked: --index
     }
 
-    /* Inlined Button User Interface for Skip . */
-
-    Rectangle {
-        id: skipButton
-        width: button.width
-        height: button.height
-        x: intro_textbg.x + (intro_textbg.width/2) - 20 - skipButton.width
-        y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
-        color: "#d8ffffff"
-        border.color: "#2a2a2a"
-        border.width: 3
-        radius: 8
+    IntroButton {
+        id: nextButton
+        width: parent.width / 4
+        height: 90
         z: 5
+        anchors.right: skipButton.left
+        anchors.topMargin: 15
+        anchors.rightMargin: 15
+	    anchors.top: introTextContainer.bottom
+        visible: index != (intro.length - 1)
 
-        anchors.top : intro_textbg.bottom
-        anchors.topMargin: 10
-        GCText {
-            id: skipText
-            anchors.centerIn: parent
-            text: qsTr("Skip Instruction")
-        }
+        text: qsTr("Next")
 
-        MouseArea {
-            id: skipButton_area
-            anchors.fill: parent
-            onClicked: {
-                index = -1
-                message.introDone()
-            }
-        }
+        onClicked: index++
+    }
 
-        states: [
-        State {
-            name: "notclicked"
-            PropertyChanges {
-                target: skipButton
-                scale: 1.0
-            }
-        },
-        State {
-            name: "clicked"
-            when: skipButton_area.pressed
-            PropertyChanges {
-                target: skipButton
-                scale: 0.9
-            }
-        },
-        State {
-            name: "hover"
-            when: skipButton_area.containsMouse
-            PropertyChanges {
-                target: skipButton
-                scale: 1.1
-            }
-        }
-        ]
-        Behavior on scale { NumberAnimation { duration: 70 } }
+    IntroButton {
+        id: skipButton
+        width: parent.width / 4
+        height: 90
+        z: 5
+        anchors.right: parent.right
+        anchors.rightMargin: 15
+        anchors.topMargin: 15
+	    anchors.top: introTextContainer.bottom
+
+        text: qsTr("Skip")
+
+        onClicked: {
+            index = -1
+            message.introDone()
+	    }
     }
 }
