@@ -410,7 +410,7 @@ ActivityBase {
         Score {
             id: score
             fontSize: items.horizontalLayout ? 16 : (answerChoices.visible ? 12 : 8)
-            anchors.top: calendarBox.top
+            anchors.top: questionItemBackground.bottom
             anchors.bottom: undefined
             anchors.left: calendarBox.right
             anchors.right: undefined
