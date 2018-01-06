@@ -4,6 +4,7 @@
  *
  * Authors:
  *   "Siddhesh Suthar" <siddhesh.it@gmail.com> (Qt Quick port)
+ *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -18,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.2
+import QtQuick 2.6
 import GCompris 1.0
 
 import "programmingMaze.js" as Activity
@@ -81,9 +82,9 @@ GridView {
                 PropertyChanges {
                     target: dropPosIndicator
                     visible: true
-                    x: Math.floor(answerSheet.xCoordinateInPossibleDrop/answerSheet.cellWidth) *
+                    x: Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
                        answerSheet.cellWidth - 5 * ApplicationInfo.ratio
-                    y: Math.floor(answerSheet.yCoordinateInPossibleDrop/answerSheet.cellHeight) *
+                    y: Math.floor(answerSheet.yCoordinateInPossibleDrop / answerSheet.cellHeight) *
                        answerSheet.cellHeight - 2 * ApplicationInfo.ratio
                 }
             }
@@ -112,9 +113,9 @@ GridView {
                 PropertyChanges {
                     target: dropPosRemoveIndicator
                     visible: true
-                    x: Math.floor(answerSheet.xCoordinateInPossibleDrop/answerSheet.cellWidth) *
+                    x: Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
                        answerSheet.cellWidth - 5 * ApplicationInfo.ratio
-                    y: Math.floor(answerSheet.yCoordinateInPossibleDrop/answerSheet.cellHeight) *
+                    y: Math.floor(answerSheet.yCoordinateInPossibleDrop / answerSheet.cellHeight) *
                        answerSheet.cellHeight - 2 * ApplicationInfo.ratio
                 }
             }
@@ -131,18 +132,26 @@ GridView {
         enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
         onPressed: {
             answerSheet.draggedItemIndex = answerSheet.indexAt(mouseX,mouseY)
+            if(answerSheet.draggedItemIndex === -1) {
+                if(constraintInstruction.opacity)
+                    constraintInstruction.hide()
+                else
+                    constraintInstruction.show()
+            }
         }
         onReleased: {
             if(answerSheet.draggedItemIndex != -1) {
                 var draggedIndex = answerSheet.draggedItemIndex
                 var dropIndex = answerSheet.indexAt(mouseX,mouseY)
                 answerSheet.draggedItemIndex = -1
-                var calculatedX =  Math.floor(answerSheet.xCoordinateInPossibleDrop/answerSheet.cellWidth) *
+                var calculatedX =  Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
                         answerSheet.cellWidth
                 var diff = Math.floor(mouseX - calculatedX)
                 var insertEnd = answerSheet.cellWidth / 2
-                if(answerSheet.indexAt(mouseX,mouseY) == -1)
+                if(answerSheet.indexAt(mouseX,mouseY) == -1) {
                     currentModel.remove(draggedIndex)
+                    items.instructionsAdded--
+                }
                 else {
                     if(diff <= insertEnd) {
                         if(dropIndex <= draggedIndex) {
@@ -151,12 +160,13 @@ GridView {
                         }
                         else {
                             //moving box from left to right
-                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY)-1, 1)
+                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY) - 1, 1)
                         }
                     }
                     else {
                         currentModel.set(dropIndex, currentModel.get(draggedIndex), 1)
                         currentModel.remove(draggedIndex)
+                        items.instructionsAdded--
                     }
                 }
                 answerSheet.possibleDropRemoveIndex = -1
@@ -167,7 +177,7 @@ GridView {
             var newPos = answerSheet.indexAt(mouseX, mouseY)
             answerSheet.xCoordinateInPossibleDrop = mouseX
             answerSheet.yCoordinateInPossibleDrop = mouseY
-            var calculatedX =  Math.floor(answerSheet.xCoordinateInPossibleDrop/answerSheet.cellWidth) *
+            var calculatedX =  Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
                     answerSheet.cellWidth
             var diffX = Math.floor(mouseX - calculatedX)
             var insertEndX = answerSheet.cellWidth / 2
@@ -181,7 +191,6 @@ GridView {
             }
         }
     }
-
 
     delegate: Column {
         Item {
@@ -209,7 +218,6 @@ GridView {
                 Behavior on width { NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
                 Behavior on height { NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
                 Behavior on opacity {NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
-
 
                 states: [
                     State {
@@ -269,7 +277,7 @@ GridView {
                 Image {
                     id: answer
                     source: Activity.url + name + ".svg"
-                    sourceSize { width: parent.width; height: parent.height  }
+                    sourceSize { width: parent.width; height: parent.height }
                     width: sourceSize.width
                     height: sourceSize.height
                     anchors.centerIn: parent

@@ -4,6 +4,7 @@
  *
  * Authors:
  *   "Siddhesh Suthar" <siddhesh.it@gmail.com> (Qt Quick port)
+ *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -19,7 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 .pragma library
-.import QtQuick 2.0 as Quick
+.import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
 // possible instructions
@@ -34,54 +35,64 @@ var mazeBlocks = [
             //level one
             [
                 //maze blocks
-                [[1,2],[2,2],[3,2]],
+                [[1,2], [2,2], [3,2]],
                 //fish index
                 [[3,2]],
                 //instruction set
                 [MOVE_FORWARD,
                  TURN_LEFT,
-                 TURN_RIGHT]
+                 TURN_RIGHT],
+                //constraint - maximum number of instructions allowed
+                2
             ],
             //level two
             [
-                [[1,3],[2,3],[2,2],[2,1],[3,1]],
+                [[1,3], [2,3], [2,2], [2,1], [3,1]],
                 //fish index
                 [[3,1]],
                 //instruction set
                 [MOVE_FORWARD,
                  TURN_LEFT,
-                 TURN_RIGHT]
+                 TURN_RIGHT],
+                //constraint - maximum number of instructions allowed
+                6
             ],
             //level three
             [
-                [[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]],
+                [[1,1], [2,1], [3,1], [3,2], [3,3], [2,3], [1,3]],
                 [[1,3]],
                 //instruction set
                 [MOVE_FORWARD,
                  TURN_LEFT,
                  TURN_RIGHT,
-                 CALL_PROCEDURE]
+                 CALL_PROCEDURE],
+                //constraint - maximum number of instructions allowed
+                6
             ],
             //level four
             [
-                [[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]],
+                [[0,3], [1,3], [1,2], [2,2], [2,1], [3,1]],
                 [[3,1]],
                 //instruction set
                 [MOVE_FORWARD,
                  TURN_LEFT,
                  TURN_RIGHT,
-                 CALL_PROCEDURE]
+                 CALL_PROCEDURE],
+                //constraint - maximum number of instructions allowed
+                7
             ],
             //level five
             [
-                [[0,3],[0,2],[0,1],[0,0],[1,0],[2,0],[2,1],
-                 [2,2],[2,3],[3,3],[4,3],[4,2],[4,1],[4,0]],
+                [[0,3], [0,2], [0,1], [0,0], [1,0], [2,0], [2,1],
+                 [2,2], [2,3], [3,3], [4,3], [4,2], [4,1], [4,0]],
                 [[4,0]],
                 //instruction set
                 [MOVE_FORWARD,
                  TURN_LEFT,
                  TURN_RIGHT,
-                 CALL_PROCEDURE]
+                 CALL_PROCEDURE],
+                //constraint - maximum number of instructions allowed
+                15
             ]
         ]
 
@@ -130,6 +141,8 @@ var runningProcedure
 // Duration of movement of highlight in the execution area.
 var moveAnimDuration
 
+var isNewLevel
+
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
 var currentLevel = 0
@@ -155,6 +168,7 @@ var EAST = 270
 var BLOCKS_DATA_INDEX = 0
 var BLOCKS_FISH_INDEX = 1
 var BLOCKS_INSTRUCTION_INDEX = 2
+var levelConstraint = 3
 
 function start(items_) {
     items = items_
@@ -170,6 +184,8 @@ function stop() {
 function initLevel() {
     if(!items || !items.bar)
         return;
+
+    isNewLevel = true
 
     items.bar.level = currentLevel + 1
     playerCode = []
@@ -209,6 +225,7 @@ function initLevel() {
     if(!resetTux) {
         items.answerModel.clear()
         items.procedureModel.clear()
+        items.instructionsAdded = 0
     }
 
     stepX = items.mazeModel.itemAt(0).width
@@ -239,6 +256,9 @@ function initLevel() {
     items.player.tuxIsBusy = false
     items.isOkButtonEnabled = true
     items.isTuxMouseAreaEnabled = false
+    items.maxInstructionsAllowed = mazeBlocks[currentLevel][levelConstraint]
+    items.constraintInstruction.text = qsTr("Code %1 instructions to reach the fish").arg(items.maxInstructionsAllowed)
+    items.constraintInstruction.show()
     resetTux = false
     codeIterator = 0
 
@@ -254,6 +274,7 @@ function runCode() {
     //initialize code
     playerCode = []
     items.player.tuxIsBusy = false
+    isNewLevel = false
     procedureBlocks = items.procedureModel.count
     for(var i = 0; i < items.answerModel.count; i++) {
         if(items.answerModel.get([i]).name === CALL_PROCEDURE) {
@@ -283,9 +304,10 @@ function playerRunningChanged() {
 
 function executeNextInstruction() {
     var currentInstruction = playerCode[codeIterator]
+    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
 
     if(!items.player.tuxIsBusy && codeIterator < playerCode.length && !deadEndPoint
-            && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
+            && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE && tuxIceBlockNumber < currentLevelBlocksCoordinates.length - 1) {
         changedX = items.player.x
         changedY = items.player.y
         var currentRotation = getPlayerRotation()
@@ -293,8 +315,6 @@ function executeNextInstruction() {
         var currentBlock = tuxIceBlockNumber
         var nextBlock
         var isBackwardMovement = false
-
-        var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
 
         var currentX = currentLevelBlocksCoordinates[currentBlock][0]
         var currentY = currentLevelBlocksCoordinates[currentBlock][1]
@@ -375,7 +395,8 @@ function executeNextInstruction() {
 
             items.answerSheet.highlightMoveDuration = moveAnimDuration
             items.procedure.highlightMoveDuration = moveAnimDuration
-            if (nextX - currentX > 0 && currentRotation === EAST) {
+
+            if(nextX - currentX > 0 && currentRotation === EAST) {
                 changedX += stepX
             }
             else if(nextX - currentX < 0 && currentRotation === WEST) {
@@ -419,7 +440,7 @@ function executeNextInstruction() {
             items.procedure.highlightMoveDuration = moveAnimDuration / 2
         }
 
-        codeIterator ++
+        codeIterator++
         items.player.tuxIsBusy = true
         if(runningProcedure && procedureBlocks > 0
                 && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
@@ -430,7 +451,6 @@ function executeNextInstruction() {
                 && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
             items.answerSheet.moveCurrentIndexRight()
         }
-        checkSuccess()
     }
     else if(currentInstruction === START_PROCEDURE) {
         runningProcedure = true
@@ -445,6 +465,8 @@ function executeNextInstruction() {
         codeIterator++
         executeNextInstruction()
     }
+    if(!isNewLevel)
+    	checkSuccess()
 }
 
 function deadEnd() {

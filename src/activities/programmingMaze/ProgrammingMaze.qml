@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Siddhesh Suthar <siddhesh.it@gmail.com> (Qt Quick port)
+ *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -18,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.2
+import QtQuick 2.6
 import GCompris 1.0
 import "../../core"
 
@@ -74,8 +75,11 @@ ActivityBase {
             property alias procedureModel: procedureModel
             property alias procedure: procedure
             property alias player: player
+            property alias constraintInstruction: constraintInstruction
             property bool isOkButtonEnabled: true
             property bool isTuxMouseAreaEnabled: false
+            property int maxInstructionsAllowed
+            property int instructionsAdded
         }
 
         onStart: {
@@ -84,32 +88,31 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-
         Keys.onRightPressed: {
             keyNavigation = true
             instruction.moveCurrentIndexRight()
         }
-        Keys.onLeftPressed:  {
+        Keys.onLeftPressed: {
             keyNavigation = true
             instruction.moveCurrentIndexLeft()
         }
-        Keys.onDownPressed:  {
+        Keys.onDownPressed: {
             keyNavigation = true
             instruction.moveCurrentIndexDown()
         }
-        Keys.onUpPressed:  {
+        Keys.onUpPressed: {
             keyNavigation = true
             instruction.moveCurrentIndexUp()
         }
-        Keys.onSpacePressed:  {
+        Keys.onSpacePressed: {
             keyNavigation = true
             instruction.currentItem.mouseAreaInstruction.clicked()
         }
-        Keys.onEnterPressed:  {
+        Keys.onEnterPressed: {
             keyNavigation = true
             instruction.currentItem.mouseAreaInstruction.clicked()
         }
-        Keys.onReturnPressed:  {
+        Keys.onReturnPressed: {
             keyNavigation = true
             instruction.currentItem.mouseAreaInstruction.clicked()
         }
@@ -126,6 +129,58 @@ ActivityBase {
             id: procedureModel
         }
 
+        Rectangle {
+            id: constraintInstruction
+            anchors.left: parent.left
+            anchors.bottom: runCode.top
+            width: 250 * ApplicationInfo.ratio
+            height: 50 * ApplicationInfo.ratio
+            radius: 10
+            z: 3
+            color: "#87A6DD"  //light blue
+
+            property alias text: instructionText.text
+
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            function show() {
+                if(text)
+                    opacity = 0.8
+            }
+            function hide() {
+                opacity = 0
+            }
+
+            Rectangle {
+                id: insideFill
+                width: parent.width - anchors.margins
+                height: parent.height - anchors.margins
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.margins: parent.height / 8
+                radius: 10
+                color: "#E8E8E8" //paper white
+
+                GCText {
+                    id: instructionText
+                    anchors.fill: parent
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    fontSizeMode: Text.Fit
+                }
+            }
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                if(constraintInstruction.opacity)
+                    constraintInstruction.hide()
+                else
+                    constraintInstruction.show()
+            }
+        }
+
         Repeater {
             id: mazeModel
             model: Activity.mazeBlocks[0]
@@ -137,7 +192,7 @@ ActivityBase {
                 x: modelData[0] * width
                 y: modelData[1] * height
                 width: background.width / 10
-                height: (background.height - background.height/10) / 10
+                height: (background.height - background.height / 10) / 10
                 source: Activity.reverseCountUrl + "iceblock.svg"
 
                 Image {
@@ -276,7 +331,7 @@ ActivityBase {
 
                     Image {
                         source: "qrc:/gcompris/src/core/resource/button.svg"
-                        sourceSize {  height: parent.height; width: parent.width }
+                        sourceSize { height: parent.height; width: parent.width }
                         width: sourceSize.width
                         height: sourceSize.height
                     }
@@ -284,13 +339,21 @@ ActivityBase {
                     MouseArea {
                         id: mouseAreaInstruction
                         anchors.fill: parent
-                        enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
+                        enabled: (items.isTuxMouseAreaEnabled || items.isOkButtonEnabled) && (items.instructionsAdded < items.maxInstructionsAllowed)
+
                         signal clicked
+
                         onClicked: {
                             insertIntoModel()
+                            if(items.constraintInstruction.opacity)
+                                items.constraintInstruction.hide()
+                            items.instructionsAdded++
                         }
                         onPressed: {
                             insertIntoModel()
+                            if(items.constraintInstruction.opacity)
+                                items.constraintInstruction.hide()
+                            items.instructionsAdded++
                         }
                         function insertIntoModel() {
                             clickedAnim.start()
@@ -302,6 +365,7 @@ ActivityBase {
                             }
                         }
                     }
+
                     SequentialAnimation {
                         id: clickedAnim
                         PropertyAnimation {
@@ -356,13 +420,15 @@ ActivityBase {
             MouseArea {
                 id: runCodeMouseArea
                 anchors.fill: parent
-                hoverEnabled: ApplicationInfo.isMobile || !items.isOkButtonEnabled ? false : true
+                hoverEnabled: (ApplicationInfo.isMobile || !items.isOkButtonEnabled) ? false : true
                 enabled: items.isOkButtonEnabled
                 onEntered: runCode.scale = 1.1
                 onClicked: {
-                    if(enabled) {
-                        runCodeClickAnimation.start()
-                    }
+                    runCodeClickAnimation.start()
+
+                    if(constraintInstruction.opacity)
+                        constraintInstruction.hide()
+
                     if(Activity.codeIterator == 0 && answerModel.count != 0) {
                         Activity.runCode()
                     }
@@ -433,7 +499,7 @@ ActivityBase {
 
                 Image {
                     source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
+                    sourceSize { height: parent.height; width: parent.width }
                     width: sourceSize.width
                     height: sourceSize.height
                 }
@@ -456,7 +522,7 @@ ActivityBase {
             }
         }
 
-        Item{
+        Item {
             id: procedureHeaderComponent
             width: procedure.width
             height: 50 * ApplicationInfo.ratio
@@ -480,7 +546,7 @@ ActivityBase {
 
                 Image {
                     source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
+                    sourceSize { height: parent.height; width: parent.width }
                     width: sourceSize.width
                     height: sourceSize.height
                 }
@@ -525,5 +591,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
 }
