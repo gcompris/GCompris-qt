@@ -1,10 +1,6 @@
-/* GCompris - programmingMaze.qml
+/* GCompris - ProgrammingMaze.qml
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
- *
- * Authors:
- *   Siddhesh Suthar <siddhesh.it@gmail.com> (Qt Quick port)
- *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -78,8 +74,8 @@ ActivityBase {
             property alias constraintInstruction: constraintInstruction
             property bool isOkButtonEnabled: true
             property bool isTuxMouseAreaEnabled: false
-            property int maxInstructionsAllowed
-            property int instructionsAdded
+            property int maxNumberOfInstructionsAllowed
+            property int numberOfInstructionsAdded
         }
 
         onStart: {
@@ -133,41 +129,32 @@ ActivityBase {
             id: constraintInstruction
             anchors.left: parent.left
             anchors.bottom: runCode.top
-            width: 250 * ApplicationInfo.ratio
-            height: 50 * ApplicationInfo.ratio
+            width: parent.width / 2.3
+            height: parent.height / 8.6
             radius: 10
             z: 3
-            color: "#87A6DD"  //light blue
-
-            property alias text: instructionText.text
+            color: "#E8E8E8" //paper white
+            border.width: 3 * ApplicationInfo.ratio
+            border.color: "#87A6DD"  //light blue
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
 
             function show() {
-                if(text)
+                if(instructionText.text)
                     opacity = 0.8
             }
             function hide() {
                 opacity = 0
             }
 
-            Rectangle {
-                id: insideFill
-                width: parent.width - anchors.margins
-                height: parent.height - anchors.margins
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.margins: parent.height / 8
-                radius: 10
-                color: "#E8E8E8" //paper white
-
-                GCText {
-                    id: instructionText
-                    anchors.fill: parent
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    fontSizeMode: Text.Fit
-                }
+            GCText {
+                id: instructionText
+                anchors.fill: parent
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+                text: qsTr("Code %1 instructions to reach the fish").arg(items.maxNumberOfInstructionsAllowed)
             }
         }
 
@@ -339,7 +326,7 @@ ActivityBase {
                     MouseArea {
                         id: mouseAreaInstruction
                         anchors.fill: parent
-                        enabled: (items.isTuxMouseAreaEnabled || items.isOkButtonEnabled) && (items.instructionsAdded < items.maxInstructionsAllowed)
+                        enabled: (items.isTuxMouseAreaEnabled || items.isOkButtonEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed)
 
                         signal clicked
 
@@ -347,13 +334,13 @@ ActivityBase {
                             insertIntoModel()
                             if(items.constraintInstruction.opacity)
                                 items.constraintInstruction.hide()
-                            items.instructionsAdded++
+                            items.numberOfInstructionsAdded++
                         }
                         onPressed: {
                             insertIntoModel()
                             if(items.constraintInstruction.opacity)
                                 items.constraintInstruction.hide()
-                            items.instructionsAdded++
+                            items.numberOfInstructionsAdded++
                         }
                         function insertIntoModel() {
                             clickedAnim.start()

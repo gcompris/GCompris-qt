@@ -1,10 +1,6 @@
-/* GCompris - programmingMaze.js
+/* GCompris - AnswerSheet.qml
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
- *
- * Authors:
- *   "Siddhesh Suthar" <siddhesh.it@gmail.com> (Qt Quick port)
- *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -144,13 +140,13 @@ GridView {
                 var draggedIndex = answerSheet.draggedItemIndex
                 var dropIndex = answerSheet.indexAt(mouseX,mouseY)
                 answerSheet.draggedItemIndex = -1
-                var calculatedX =  Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
+                var calculatedX = Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
                         answerSheet.cellWidth
                 var diff = Math.floor(mouseX - calculatedX)
                 var insertEnd = answerSheet.cellWidth / 2
                 if(answerSheet.indexAt(mouseX,mouseY) == -1) {
                     currentModel.remove(draggedIndex)
-                    items.instructionsAdded--
+                    items.numberOfInstructionsAdded--
                 }
                 else {
                     if(diff <= insertEnd) {
@@ -166,7 +162,7 @@ GridView {
                     else {
                         currentModel.set(dropIndex, currentModel.get(draggedIndex), 1)
                         currentModel.remove(draggedIndex)
-                        items.instructionsAdded--
+                        items.numberOfInstructionsAdded--
                     }
                 }
                 answerSheet.possibleDropRemoveIndex = -1
@@ -177,7 +173,7 @@ GridView {
             var newPos = answerSheet.indexAt(mouseX, mouseY)
             answerSheet.xCoordinateInPossibleDrop = mouseX
             answerSheet.yCoordinateInPossibleDrop = mouseY
-            var calculatedX =  Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
+            var calculatedX = Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
                     answerSheet.cellWidth
             var diffX = Math.floor(mouseX - calculatedX)
             var insertEndX = answerSheet.cellWidth / 2
@@ -269,7 +265,7 @@ GridView {
 
                 Image {
                     source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
+                    sourceSize { height: parent.height; width: parent.width }
                     width: sourceSize.width
                     height: sourceSize.height
                 }

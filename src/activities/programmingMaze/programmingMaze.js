@@ -2,10 +2,6 @@
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
  *
- * Authors:
- *   "Siddhesh Suthar" <siddhesh.it@gmail.com> (Qt Quick port)
- *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick)
- *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
  *   the Free Software Foundation; either version 3 of the License, or
@@ -168,6 +164,7 @@ var EAST = 270
 var BLOCKS_DATA_INDEX = 0
 var BLOCKS_FISH_INDEX = 1
 var BLOCKS_INSTRUCTION_INDEX = 2
+var MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX = 3
 
 function start(items_) {
     items = items_
@@ -224,7 +221,7 @@ function initLevel() {
     if(!resetTux) {
         items.answerModel.clear()
         items.procedureModel.clear()
-        items.instructionsAdded = 0
+        items.numberOfInstructionsAdded = 0
     }
 
     stepX = items.mazeModel.itemAt(0).width
@@ -255,8 +252,7 @@ function initLevel() {
     items.player.tuxIsBusy = false
     items.isOkButtonEnabled = true
     items.isTuxMouseAreaEnabled = false
-    items.maxInstructionsAllowed = mazeBlocks[currentLevel][3]
-    items.constraintInstruction.text = qsTr("Code %1 instructions to reach the fish").arg(items.maxInstructionsAllowed)
+    items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel][MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX]
     items.constraintInstruction.show()
     resetTux = false
     codeIterator = 0
