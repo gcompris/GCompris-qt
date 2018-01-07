@@ -168,7 +168,6 @@ var EAST = 270
 var BLOCKS_DATA_INDEX = 0
 var BLOCKS_FISH_INDEX = 1
 var BLOCKS_INSTRUCTION_INDEX = 2
-var levelConstraint = 3
 
 function start(items_) {
     items = items_
@@ -256,7 +255,7 @@ function initLevel() {
     items.player.tuxIsBusy = false
     items.isOkButtonEnabled = true
     items.isTuxMouseAreaEnabled = false
-    items.maxInstructionsAllowed = mazeBlocks[currentLevel][levelConstraint]
+    items.maxInstructionsAllowed = mazeBlocks[currentLevel][3]
     items.constraintInstruction.text = qsTr("Code %1 instructions to reach the fish").arg(items.maxInstructionsAllowed)
     items.constraintInstruction.show()
     resetTux = false
@@ -466,7 +465,7 @@ function executeNextInstruction() {
         executeNextInstruction()
     }
     if(!isNewLevel)
-    	checkSuccess()
+        checkSuccess()
 }
 
 function deadEnd() {
