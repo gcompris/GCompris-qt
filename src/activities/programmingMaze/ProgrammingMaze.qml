@@ -70,10 +70,10 @@ ActivityBase {
             property GCAudio audioEffects: activity.audioEffects
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
-            property alias answerModel: answerModel
-            property alias answerSheet: answerSheet
+            property alias mainFunctionModel: mainFunctionModel
+            property alias mainFunctionCodeArea: mainFunctionCodeArea
             property alias procedureModel: procedureModel
-            property alias procedure: procedure
+            property alias procedureCodeArea: procedureCodeArea
             property alias player: player
             property alias constraintInstruction: constraintInstruction
             property bool isOkButtonEnabled: true
@@ -122,7 +122,7 @@ ActivityBase {
         }
 
         ListModel {
-            id: answerModel
+            id: mainFunctionModel
         }
 
         ListModel {
@@ -142,6 +142,13 @@ ActivityBase {
             border.color: "#87A6DD"  //light blue
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            function changeConstraintInstructionOpacity() {
+                if(opacity)
+                    constraintInstruction.hide()
+                else
+                    constraintInstruction.show()
+            }
 
             function show() {
                 if(instructionText.text)
@@ -164,12 +171,7 @@ ActivityBase {
 
         MouseArea {
             anchors.fill: parent
-            onClicked: {
-                if(constraintInstruction.opacity)
-                    constraintInstruction.hide()
-                else
-                    constraintInstruction.show()
-            }
+            onClicked: constraintInstruction.changeConstraintInstructionOpacity()
         }
 
         Repeater {
@@ -249,7 +251,7 @@ ActivityBase {
                 anchors.fill: parent
                 enabled: items.isTuxMouseAreaEnabled
                 onClicked: {
-                    answerSheet.highlightFollowsCurrentItem = false
+                    mainFunctionCodeArea.highlightFollowsCurrentItem = false
                     Activity.resetTux = true
                     Activity.initLevel()
                 }
@@ -314,7 +316,7 @@ ActivityBase {
                     Image {
                         id: icon
                         source: Activity.url + name + ".svg"
-                        sourceSize {width: parent.width; height: parent.height}
+                        sourceSize { width: parent.width; height: parent.height }
                         width: sourceSize.width
                         height: sourceSize.height
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -330,7 +332,7 @@ ActivityBase {
                     MouseArea {
                         id: mouseAreaInstruction
                         anchors.fill: parent
-                        enabled: (items.isTuxMouseAreaEnabled || items.isOkButtonEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed)
+                        enabled: (items.isTuxMouseAreaEnabled || items.isOkButtonEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
 
                         signal clicked
 
@@ -338,21 +340,46 @@ ActivityBase {
                             insertIntoModel()
                             if(items.constraintInstruction.opacity)
                                 items.constraintInstruction.hide()
-                            items.numberOfInstructionsAdded++
                         }
                         onPressed: {
                             insertIntoModel()
                             if(items.constraintInstruction.opacity)
                                 items.constraintInstruction.hide()
-                            items.numberOfInstructionsAdded++
                         }
                         function insertIntoModel() {
-                            clickedAnim.start()
                             if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE) {
-                                procedureModel.append({"name": name})
+                                if(!procedureCodeArea.isEditingInstruction) {
+                                    if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed) {
+                                        constraintInstruction.changeConstraintInstructionOpacity()
+                                    }
+                                    else {
+                                        clickedAnim.start()
+                                        procedureModel.append({"name": name})
+                                        items.numberOfInstructionsAdded++
+                                    }
+                                }
+                                else {
+                                    clickedAnim.start()
+                                    procedureModel.set(procedureCodeArea.initialEditItemIndex, {"name": name}, 1)
+                                    procedureCodeArea.isEditingInstruction = false
+                                }
                             }
                             if(background.insertIntoMain) {
-                                answerModel.append({"name": name})
+                                if(!mainFunctionCodeArea.isEditingInstruction) {
+                                    if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed) {
+                                        constraintInstruction.changeConstraintInstructionOpacity()
+                                    }
+                                    else {
+                                        clickedAnim.start()
+                                        mainFunctionModel.append({"name": name})
+                                        items.numberOfInstructionsAdded++
+                                    }
+                                }
+                                else {
+                                    clickedAnim.start()
+                                    mainFunctionModel.set(mainFunctionCodeArea.initialEditItemIndex, {"name": name}, 1)
+                                    mainFunctionCodeArea.isEditingInstruction = false
+                                }
                             }
                         }
                     }
@@ -381,15 +408,15 @@ ActivityBase {
         // and then process it to run the code
 
         AnswerSheet {
-            id: answerSheet
+            id: mainFunctionCodeArea
             background: background
-            currentModel: answerModel
+            currentModel: mainFunctionModel
             anchors.right: parent.right
-            anchors.top: answerHeaderComponent.bottom
+            anchors.top: mainFunctionHeaderComponent.bottom
         }
 
         AnswerSheet {
-            id: procedure
+            id: procedureCodeArea
             background: background
             currentModel: procedureModel
             anchors.right: parent.right
@@ -420,7 +447,7 @@ ActivityBase {
                     if(constraintInstruction.opacity)
                         constraintInstruction.hide()
 
-                    if(Activity.codeIterator == 0 && answerModel.count != 0) {
+                    if(Activity.codeIterator == 0 && mainFunctionModel.count != 0) {
                         Activity.runCode()
                     }
                 }
@@ -467,14 +494,14 @@ ActivityBase {
         }
 
         Item {
-            id: answerHeaderComponent
-            width: answerSheet.width
+            id: mainFunctionHeaderComponent
+            width: mainFunctionCodeArea.width
             height: 50 * ApplicationInfo.ratio
-            anchors.left: answerSheet.left
+            anchors.left: mainFunctionCodeArea.left
             anchors.top: parent.top
 
             Rectangle {
-                id: answerHeaderRect
+                id: mainFunctionHeaderRect
                 anchors.fill: parent
                 color: "#005B9A"
                 opacity: background.insertIntoMain ? 1 : 0.5
@@ -496,7 +523,7 @@ ActivityBase {
                 }
 
                 GCText {
-                    id: answerHeaderText
+                    id: mainFunctionHeaderText
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     horizontalAlignment: Text.AlignHCenter
@@ -515,11 +542,11 @@ ActivityBase {
 
         Item {
             id: procedureHeaderComponent
-            width: procedure.width
+            width: procedureCodeArea.width
             height: 50 * ApplicationInfo.ratio
-            anchors.left: procedure.left
-            anchors.bottom: procedure.top
-            visible: procedure.visible
+            anchors.left: procedureCodeArea.left
+            anchors.bottom: procedureCodeArea.top
+            visible: procedureCodeArea.visible
             Rectangle {
                 id: procedureHeaderRect
                 anchors.fill: parent

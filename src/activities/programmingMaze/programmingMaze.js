@@ -223,7 +223,7 @@ function initLevel() {
     }
 
     if(!resetTux) {
-        items.answerModel.clear()
+        items.mainFunctionModel.clear()
         items.procedureModel.clear()
         items.numberOfInstructionsAdded = 0
     }
@@ -249,15 +249,17 @@ function initLevel() {
     moveAnimDuration = 1000
     items.background.insertIntoMain = true
     items.background.insertIntoProcedure = false
-    items.answerSheet.currentIndex = -1
-    items.procedure.currentIndex = -1
-    items.answerSheet.highlightMoveDuration = moveAnimDuration
-    items.procedure.highlightMoveDuration = moveAnimDuration
+    items.mainFunctionCodeArea.currentIndex = -1
+    items.procedureCodeArea.currentIndex = -1
+    items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration
+    items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
     items.player.tuxIsBusy = false
     items.isOkButtonEnabled = true
     items.isTuxMouseAreaEnabled = false
     items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel][MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX]
     items.constraintInstruction.show()
+    items.mainFunctionCodeArea.resetEditingValues()
+    items.procedureCodeArea.resetEditingValues()
     resetTux = false
     codeIterator = 0
 
@@ -269,14 +271,17 @@ function getPlayerRotation() {
 }
 
 function runCode() {
-    items.answerSheet.highlightFollowsCurrentItem = true
+    items.mainFunctionCodeArea.highlightFollowsCurrentItem = true
+    items.mainFunctionCodeArea.resetEditingValues()
+    items.procedureCodeArea.resetEditingValues()
+
     //initialize code
     playerCode = []
     items.player.tuxIsBusy = false
     isNewLevel = false
     procedureBlocks = items.procedureModel.count
-    for(var i = 0; i < items.answerModel.count; i++) {
-        if(items.answerModel.get([i]).name === CALL_PROCEDURE) {
+    for(var i = 0; i < items.mainFunctionModel.count; i++) {
+        if(items.mainFunctionModel.get([i]).name === CALL_PROCEDURE) {
             playerCode.push(START_PROCEDURE)
             for(var j = 0; j < items.procedureModel.count; j++) {
                 if(items.procedureModel.get([j]).name != END_PROCEDURE)
@@ -285,7 +290,7 @@ function runCode() {
             playerCode.push(END_PROCEDURE)
         }
         else {
-            playerCode.push(items.answerModel.get([i]).name)
+            playerCode.push(items.mainFunctionModel.get([i]).name)
         }
     }
 
@@ -392,8 +397,8 @@ function executeNextInstruction() {
             var nextX = currentLevelBlocksCoordinates[nextBlock][0]
             var nextY = currentLevelBlocksCoordinates[nextBlock][1]
 
-            items.answerSheet.highlightMoveDuration = moveAnimDuration
-            items.procedure.highlightMoveDuration = moveAnimDuration
+            items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration
+            items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
 
             if(nextX - currentX > 0 && currentRotation === EAST) {
                 changedX += stepX
@@ -429,14 +434,14 @@ function executeNextInstruction() {
         else if(currentInstruction === TURN_LEFT) {
             changedRotation = (currentRotation - 90) % 360
             items.player.rotation = changedRotation
-            items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
-            items.procedure.highlightMoveDuration = moveAnimDuration / 2
+            items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
+            items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
         }
         else if(currentInstruction === TURN_RIGHT) {
             changedRotation = (currentRotation + 90) % 360
             items.player.rotation = changedRotation
-            items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
-            items.procedure.highlightMoveDuration = moveAnimDuration / 2
+            items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
+            items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
         }
 
         codeIterator++
@@ -444,17 +449,17 @@ function executeNextInstruction() {
         if(runningProcedure && procedureBlocks > 0
                 && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
             procedureBlocks--
-            items.procedure.moveCurrentIndexRight()
+            items.procedureCodeArea.moveCurrentIndexRight()
         }
         if(!runningProcedure
                 && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
-            items.answerSheet.moveCurrentIndexRight()
+            items.mainFunctionCodeArea.moveCurrentIndexRight()
         }
     }
     else if(currentInstruction === START_PROCEDURE) {
         runningProcedure = true
-        items.answerSheet.currentIndex += 1
-        items.procedure.currentIndex = -1
+        items.mainFunctionCodeArea.currentIndex += 1
+        items.procedureCodeArea.currentIndex = -1
         codeIterator++
         executeNextInstruction()
     }

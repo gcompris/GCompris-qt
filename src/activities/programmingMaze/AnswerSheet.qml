@@ -61,6 +61,23 @@ GridView {
     property int xCoordinateInPossibleDrop: -1
     property int yCoordinateInPossibleDrop: -1
 
+    /**
+     * Stores the index of the item which is clicked to edit.
+     *
+     * If the index of the item on 2nd click is same as initialEditItemIndex , then the indicator will become invisible, as it means that initially wanted to edit that instruction, but now we want to deselect it.
+     *
+     * If the index of the item on 2nd click is different from initialEditItemIndex, the edit indicator moves to the new item as we now want to edit that one.
+     */
+    property int initialEditItemIndex: -1
+
+    //Tells if any instruction is selected for editing.
+    property bool isEditingInstruction: false
+
+    function resetEditingValues() {
+    	initialEditItemIndex = -1
+    	isEditingInstruction = false
+    }
+
     Item {
         id: dropPosIndicator
         visible: false
@@ -90,37 +107,16 @@ GridView {
             }
         ]
     }
-    Item {
-        id: dropPosRemoveIndicator
-        visible: false
-        width: background.buttonWidth
-        height: background.buttonHeight
 
-        Rectangle {
-            visible: parent.visible
-            anchors.fill: parent
-            radius: 5 * ApplicationInfo.ratio
-            color: "transparent"
-            border.width: 5 * ApplicationInfo.ratio
-            border.color: "lightsteelblue"
-            opacity: 1
-        }
-
-        states: [
-            State {
-                name: "shown"
-                when: answerSheet.possibleDropRemoveIndex != -1
-                PropertyChanges {
-                    target: dropPosRemoveIndicator
-                    visible: true
-                    x: Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
-                       answerSheet.cellWidth - 5 * ApplicationInfo.ratio
-                    y: Math.floor(answerSheet.yCoordinateInPossibleDrop / answerSheet.cellHeight) *
-                       answerSheet.cellHeight - 2 * ApplicationInfo.ratio
-                }
-            }
-        ]
+    Rectangle {
+        id: editInstructionIndicator
+        visible: answerSheet.isEditingInstruction && answerSheet.count != 0
+        height: answerSheet.cellHeight - 5 * ApplicationInfo.ratio
+        width: answerSheet.cellWidth - 5 * ApplicationInfo.ratio
+        color: "red"
+        opacity: 0.2
     }
+
     Item {
         id: dndContainer
         anchors.fill: parent
@@ -133,62 +129,64 @@ GridView {
         onPressed: {
             answerSheet.draggedItemIndex = answerSheet.indexAt(mouseX,mouseY)
             if(answerSheet.draggedItemIndex === -1) {
-                if(constraintInstruction.opacity)
-                    constraintInstruction.hide()
-                else
-                    constraintInstruction.show()
+                constraintInstruction.changeConstraintInstructionOpacity()
+                answerSheet.isEditingInstruction = false
             }
+            else if(!answerSheet.isEditingInstruction)
+                answerSheet.initialEditItemIndex = answerSheet.draggedItemIndex
         }
         onReleased: {
             if(answerSheet.draggedItemIndex != -1) {
                 var draggedIndex = answerSheet.draggedItemIndex
                 var dropIndex = answerSheet.indexAt(mouseX,mouseY)
+                var calculatedX = Math.floor(mouseX / answerSheet.cellWidth) * answerSheet.cellWidth
+                var calculatedY = Math.floor(mouseY / answerSheet.cellHeight) * answerSheet.cellHeight
                 answerSheet.draggedItemIndex = -1
-                var calculatedX = Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
-                        answerSheet.cellWidth
-                var diff = Math.floor(mouseX - calculatedX)
-                var insertEnd = answerSheet.cellWidth / 2
-                if(answerSheet.indexAt(mouseX,mouseY) == -1) {
-                    currentModel.remove(draggedIndex)
-                    items.numberOfInstructionsAdded--
-                }
-                else {
-                    if(diff <= insertEnd) {
-                        if(dropIndex <= draggedIndex) {
-                            //moving box from right to left
-                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY), 1)
-                        }
-                        else {
-                            //moving box from left to right
-                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY) - 1, 1)
-                        }
-                    }
-                    else {
-                        currentModel.set(dropIndex, currentModel.get(draggedIndex), 1)
+                if(dropIndex == -1) {
+                    var previousIndexCalculatedPosition = answerSheet.indexAt(calculatedX - 1, mouseY)
+                    if(previousIndexCalculatedPosition == -1) {
                         currentModel.remove(draggedIndex)
                         items.numberOfInstructionsAdded--
                     }
+                    else {
+                        currentModel.append(currentModel.get(draggedIndex))
+                        currentModel.remove(draggedIndex)
+                    }
                 }
-                answerSheet.possibleDropRemoveIndex = -1
+                else if(draggedIndex != dropIndex) {
+                    if(dropIndex <= draggedIndex) {
+                        //moving box from right to left
+                        currentModel.move(draggedIndex, dropIndex, 1)
+                    }
+                    else {
+                        //moving box from left to right
+                        currentModel.move(draggedIndex, dropIndex - 1, 1)
+                    }
+                }
+                else {
+                    if(answerSheet.initialEditItemIndex == dropIndex)
+                        answerSheet.isEditingInstruction = !answerSheet.isEditingInstruction
+                    else
+                        answerSheet.initialEditItemIndex = draggedIndex
+
+                    editInstructionIndicator.x = calculatedX
+                    editInstructionIndicator.y = calculatedY
+                }
                 answerSheet.possibleDropIndex = -1
             }
         }
         onPositionChanged: {
             var newPos = answerSheet.indexAt(mouseX, mouseY)
+            var calculatedX = Math.floor(mouseX / answerSheet.cellWidth) * answerSheet.cellWidth
+            var previousIndexCalculatedPosition = answerSheet.indexAt(calculatedX - 1, mouseY)
+
+            //If the user want to move an item to the end, then the new position will be after the last instruction.
+            if(newPos == -1 && previousIndexCalculatedPosition != -1)
+                newPos = previousIndexCalculatedPosition + 1
+            answerSheet.isEditingInstruction = false
             answerSheet.xCoordinateInPossibleDrop = mouseX
             answerSheet.yCoordinateInPossibleDrop = mouseY
-            var calculatedX = Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
-                    answerSheet.cellWidth
-            var diffX = Math.floor(mouseX - calculatedX)
-            var insertEndX = answerSheet.cellWidth / 2
-            if(diffX <= insertEndX) {
-                answerSheet.possibleDropIndex = newPos
-                answerSheet.possibleDropRemoveIndex = -1
-            }
-            else {
-                answerSheet.possibleDropRemoveIndex = newPos
-                answerSheet.possibleDropIndex = -1
-            }
+            answerSheet.possibleDropIndex = newPos
         }
     }
 
@@ -234,7 +232,7 @@ GridView {
                     },
                     State {
                         name: "greyedOut"
-                        when: (answerSheet.draggedItemIndex != -1) &&(answerSheet.draggedItemIndex != index)
+                        when: (answerSheet.draggedItemIndex != -1) && (answerSheet.draggedItemIndex != index)
                         PropertyChanges { target: item; opacity: 0.7 }
                     },
                     State {
@@ -251,7 +249,6 @@ GridView {
                         PropertyAnimation {
                             target: item
                             properties: "scale, opacity"
-                            easing.overshoot: 1.5
                             easing.type: "OutBack"
                             from: 0.0
                             to: 1.0
