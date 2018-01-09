@@ -221,7 +221,7 @@ GridView {
                     State {
                         name: "inDrag"
                         when: index == answerSheet.draggedItemIndex
-                        PropertyChanges { target: circlePlaceholder; opacity: 1}
+                        PropertyChanges { target: circlePlaceholder; opacity: 1 }
                         PropertyChanges { target: imageBorder; opacity: 1 }
                         PropertyChanges { target: item; parent: dndContainer }
                         PropertyChanges { target: item; width: background.buttonWidth * 0.80 }

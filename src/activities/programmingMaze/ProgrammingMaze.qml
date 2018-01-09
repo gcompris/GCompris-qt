@@ -354,7 +354,7 @@ ActivityBase {
                                     }
                                     else {
                                         clickedAnim.start()
-                                        procedureModel.append({"name": name})
+                                        procedureModel.append({ "name": name })
                                         items.numberOfInstructionsAdded++
                                     }
                                 }
@@ -371,7 +371,7 @@ ActivityBase {
                                     }
                                     else {
                                         clickedAnim.start()
-                                        mainFunctionModel.append({"name": name})
+                                        mainFunctionModel.append({ "name": name })
                                         items.numberOfInstructionsAdded++
                                     }
                                 }
@@ -456,8 +456,8 @@ ActivityBase {
 
             SequentialAnimation {
                 id: runCodeClickAnimation
-                NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100}
-                NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100}
+                NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100 }
+                NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100 }
             }
         }
 
