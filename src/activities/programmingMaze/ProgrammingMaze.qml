@@ -54,6 +54,7 @@ ActivityBase {
         property bool keyNavigation: false
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
+        property int runCodeEnableDuration
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -76,10 +77,16 @@ ActivityBase {
             property alias procedureCodeArea: procedureCodeArea
             property alias player: player
             property alias constraintInstruction: constraintInstruction
-            property bool isOkButtonEnabled: true
+            property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
             property int maxNumberOfInstructionsAllowed
             property int numberOfInstructionsAdded
+        }
+
+        onRunCodeEnableDurationChanged: {
+            if(background.runCodeEnableDuration != 1) {
+                enableRuncode.start()
+            }
         }
 
         onStart: {
@@ -332,7 +339,7 @@ ActivityBase {
                     MouseArea {
                         id: mouseAreaInstruction
                         anchors.fill: parent
-                        enabled: (items.isTuxMouseAreaEnabled || items.isOkButtonEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
+                        enabled: (items.isTuxMouseAreaEnabled || items.isRunCodeEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
 
                         signal clicked
 
@@ -438,8 +445,8 @@ ActivityBase {
             MouseArea {
                 id: runCodeMouseArea
                 anchors.fill: parent
-                hoverEnabled: (ApplicationInfo.isMobile || !items.isOkButtonEnabled) ? false : true
-                enabled: items.isOkButtonEnabled
+                hoverEnabled: ApplicationInfo.isMobile ? false : (!items.isRunCodeEnabled ? false : true)
+                enabled: items.isRunCodeEnabled
                 onEntered: runCode.scale = 1.1
                 onClicked: {
                     runCodeClickAnimation.start()
@@ -458,6 +465,14 @@ ActivityBase {
                 id: runCodeClickAnimation
                 NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100 }
                 NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100 }
+            }
+
+            Timer {
+                id: enableRuncode
+                interval: background.runCodeEnableDuration
+                onTriggered: {
+                    items.isRunCodeEnabled = true
+                }
             }
         }
 
@@ -508,7 +523,7 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
+                    enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
                     onClicked: {
                         background.insertIntoMain = true
                         background.insertIntoProcedure = false
@@ -555,7 +570,7 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
+                    enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
                     onClicked: {
                         background.insertIntoMain = false
                         background.insertIntoProcedure = true

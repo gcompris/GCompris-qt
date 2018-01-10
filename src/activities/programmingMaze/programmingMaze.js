@@ -143,6 +143,21 @@ var moveAnimDuration
 
 var isNewLevel
 
+/**
+ * Tells the type of movement made by Tux which has longest change duration.
+ *
+ * Stores any of the three values - "linear", "rotation", "none"
+ *
+ * The time taken by Tux to move linearly, along x-axis or y-axis is 1000ms.
+ *
+ * Hence when resetting Tux, if it has moved linearly, the OK button has to be enabled after minimum 1000ms.
+ *
+ * Else if it had rotated, time taken to rotate to initial rotation will take 500ms.
+ *
+ * Else there is no need to disable OK button.
+ */
+var longestDurationMovementType = "none"
+
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
 var currentLevel = 0
@@ -237,6 +252,11 @@ function initLevel() {
         items.instructionModel.append({"name":levelInstructions[i]});
     }
 
+    //Have to change the duration to 1 and then to the desired value to trigger the onrunCodeEnableDurationChanged signal in ProgrammingMaze.qml and in turn trigger the enableRunCode timer.
+    items.background.runCodeEnableDuration = 1
+    items.background.runCodeEnableDuration = longestDurationMovementType === "linear" ? 1000 : (longestDurationMovementType === "rotation" ? 500 : 0)
+    longestDurationMovementType = "none"
+
     // Center Tux in its first case
     items.player.x = currentLevelBlocksCoordinates[0][0] * stepX + (stepX - items.player.width) / 2
     items.player.y = currentLevelBlocksCoordinates[0][1] * stepY + (stepY - items.player.height) / 2
@@ -254,7 +274,6 @@ function initLevel() {
     items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration
     items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
     items.player.tuxIsBusy = false
-    items.isOkButtonEnabled = true
     items.isTuxMouseAreaEnabled = false
     items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel][MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX]
     items.constraintInstruction.show()
@@ -295,7 +314,7 @@ function runCode() {
     }
 
     if(!items.player.tuxIsBusy) {
-        items.isOkButtonEnabled = false
+        items.isRunCodeEnabled = false
         executeNextInstruction()
     }
 }
@@ -428,6 +447,7 @@ function executeNextInstruction() {
                 isCoordinateVisited[currentX][currentY] = false
             }
 
+            longestDurationMovementType = "linear"
             items.player.x = changedX
             items.player.y = changedY
         }
@@ -436,12 +456,16 @@ function executeNextInstruction() {
             items.player.rotation = changedRotation
             items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
             items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
+            if(longestDurationMovementType != "linear")
+                longestDurationMovementType = "rotation"
         }
         else if(currentInstruction === TURN_RIGHT) {
             changedRotation = (currentRotation + 90) % 360
             items.player.rotation = changedRotation
             items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
             items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
+            if(longestDurationMovementType != "linear")
+                longestDurationMovementType = "rotation"
         }
 
         codeIterator++

@@ -125,7 +125,7 @@ GridView {
     MouseArea {
         id: coords
         anchors.fill: parent
-        enabled: items.isTuxMouseAreaEnabled || items.isOkButtonEnabled
+        enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
         onPressed: {
             answerSheet.draggedItemIndex = answerSheet.indexAt(mouseX,mouseY)
             if(answerSheet.draggedItemIndex === -1) {
