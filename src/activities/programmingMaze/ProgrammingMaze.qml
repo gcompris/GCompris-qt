@@ -54,6 +54,8 @@ ActivityBase {
         property bool keyNavigation: false
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
+
+        //Stores the time after which clicking on runCode will be enabled while re-setting Tux.
         property int runCodeEnableDuration
 
         Component.onCompleted: {
