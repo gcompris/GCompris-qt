@@ -245,7 +245,7 @@ ActivityBase {
                     
                     Rectangle {
                         id: questionmark
-                        visible: dataset.levelElements[bar.level-1].captions[0] !== undefined && activity.mode == "family"
+                        visible: dataset.levelElements[bar.level-1].captions[1] !== undefined && activity.mode == "family"
                         x: items.questionMarkPosition.x * treeArea.width
                         y: items.questionMarkPosition.y * treeArea.height
 
