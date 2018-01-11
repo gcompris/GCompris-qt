@@ -579,7 +579,7 @@ QtObject {
             ],
             captions: [
                 [leftExt - nodeWidth / 2, gen2],
-                [rightInt + nodeWidth, gen2]
+                [rightInt + nodeWidth * 0.8, gen2 - nodeHeight / 4]
             ],
             nodeValue: ["oldMan1.svg", "oldWoman1.svg", "man3.svg", "woman2.svg", "woman1.svg", "man1.svg"],
             nodeWeights: [noPair, noPair, noPair, pair1, pair2, noPair],
