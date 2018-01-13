@@ -85,10 +85,14 @@ ActivityBase {
             property int numberOfInstructionsAdded
         }
 
-        onRunCodeEnableDurationChanged: {
-            if(background.runCodeEnableDuration != 1) {
-                enableRuncode.start()
-            }
+        //This function catches the signal emitted after completion of movement of Tux after executing each instruction.
+        function checkSuccess() {
+            Activity.checkSuccess()
+        }
+
+        //This function catches the signal emitted after finding a dead-end in any of the executing instruction.
+        function foundDeadEnd() {
+            Activity.deadEnd()
         }
 
         onStart: {
@@ -213,46 +217,12 @@ ActivityBase {
             sourceSize.width: background.width / 12
             x: 0; y: 0; z: 11
             property int duration: 1000
-            property bool tuxIsBusy: false
+            rotation: 0
 
             signal init
 
             onInit: {
                 player.rotation = Activity.EAST
-            }
-
-            onTuxIsBusyChanged: {
-                Activity.playerRunningChanged()
-            }
-
-            Behavior on x {
-                SmoothedAnimation {
-                    duration: player.duration
-                    reversingMode: SmoothedAnimation.Immediate
-                    onRunningChanged: {
-                        player.tuxIsBusy = !player.tuxIsBusy
-                    }
-                }
-            }
-
-            Behavior on y {
-                SmoothedAnimation {
-                    duration: player.duration
-                    reversingMode: SmoothedAnimation.Immediate
-                    onRunningChanged: {
-                        player.tuxIsBusy = !player.tuxIsBusy
-                    }
-                }
-            }
-
-            Behavior on rotation {
-                RotationAnimation {
-                    duration: player.duration / 2
-                    direction: RotationAnimation.Shortest
-                    onRunningChanged: {
-                        player.tuxIsBusy = !player.tuxIsBusy
-                    }
-                }
             }
 
             MouseArea {
@@ -467,14 +437,6 @@ ActivityBase {
                 id: runCodeClickAnimation
                 NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100 }
                 NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100 }
-            }
-
-            Timer {
-                id: enableRuncode
-                interval: background.runCodeEnableDuration
-                onTriggered: {
-                    items.isRunCodeEnabled = true
-                }
             }
         }
 

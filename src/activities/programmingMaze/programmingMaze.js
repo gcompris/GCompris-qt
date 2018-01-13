@@ -28,8 +28,6 @@ var MOVE_FORWARD = "move-forward"
 var TURN_LEFT = "turn-left"
 var TURN_RIGHT = "turn-right"
 var CALL_PROCEDURE = "call-procedure"
-var START_PROCEDURE = "start-procedure"
-var END_PROCEDURE = "end-procedure"
 
 var mazeBlocks = [
             //level one
@@ -132,9 +130,6 @@ var codeIterator = 0
  */
 var resetTux = false
 
-// Number of instructions in procedure model
-var procedureBlocks
-
 // Tells if procedure area instructions are running or not.
 var runningProcedure
 
@@ -143,20 +138,8 @@ var moveAnimDuration
 
 var isNewLevel
 
-/**
- * Tells the type of movement made by Tux which has longest change duration.
- *
- * Stores any of the three values - "linear", "rotation", "none"
- *
- * The time taken by Tux to move linearly, along x-axis or y-axis is 1000ms.
- *
- * Hence when resetting Tux, if it has moved linearly, the OK button has to be enabled after minimum 1000ms.
- *
- * Else if it had rotated, time taken to rotate to initial rotation will take 500ms.
- *
- * Else there is no need to disable OK button.
- */
-var longestDurationMovementType = "none"
+//Stores the currrent instruction which is going to be processed
+var currentInstruction
 
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
@@ -185,15 +168,33 @@ var BLOCKS_FISH_INDEX = 1
 var BLOCKS_INSTRUCTION_INDEX = 2
 var MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX = 3
 
+var instructionComponents = {
+    "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/move-forward.qml"),
+    "turn-left": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turn-left.qml"),
+    "turn-right": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turn-right.qml"),
+    "call-procedure": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/call-procedure.qml")
+}
+
+//A global look-up table to access the object of instructions which is being executed anywhere in the entire code.
+var instructionObjects = []
+
 function start(items_) {
     items = items_
     currentLevel = 0
     numberOfLevel = mazeBlocks.length
     resetTux = false
+    instructionObjects[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject()
+    instructionObjects[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject()
+    instructionObjects[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject()
+    instructionObjects[CALL_PROCEDURE] = instructionComponents[CALL_PROCEDURE].createObject()
     initLevel()
 }
 
 function stop() {
+    instructionObjects[MOVE_FORWARD].destroy()
+    instructionObjects[TURN_LEFT].destroy()
+    instructionObjects[TURN_RIGHT].destroy()
+    instructionObjects[CALL_PROCEDURE].destroy()
 }
 
 function initLevel() {
@@ -204,6 +205,7 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
     playerCode = []
+    instructionObjects[CALL_PROCEDURE].procedureModel.clear()
 
     // Stores the co-ordinates of the tile blocks in the current level
     var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
@@ -252,11 +254,6 @@ function initLevel() {
         items.instructionModel.append({"name":levelInstructions[i]});
     }
 
-    //Have to change the duration to 1 and then to the desired value to trigger the onrunCodeEnableDurationChanged signal in ProgrammingMaze.qml and in turn trigger the enableRunCode timer.
-    items.background.runCodeEnableDuration = 1
-    items.background.runCodeEnableDuration = longestDurationMovementType === "linear" ? 1000 : (longestDurationMovementType === "rotation" ? 500 : 0)
-    longestDurationMovementType = "none"
-
     // Center Tux in its first case
     items.player.x = currentLevelBlocksCoordinates[0][0] * stepX + (stepX - items.player.width) / 2
     items.player.y = currentLevelBlocksCoordinates[0][1] * stepY + (stepY - items.player.height) / 2
@@ -264,7 +261,6 @@ function initLevel() {
     tuxIceBlockNumber = 0
     changedRotation = EAST
     deadEndPoint = false
-    procedureBlocks = 0
     runningProcedure = false
     moveAnimDuration = 1000
     items.background.insertIntoMain = true
@@ -273,8 +269,8 @@ function initLevel() {
     items.procedureCodeArea.currentIndex = -1
     items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration
     items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
-    items.player.tuxIsBusy = false
     items.isTuxMouseAreaEnabled = false
+    items.isRunCodeEnabled = true
     items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel][MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX]
     items.constraintInstruction.show()
     items.mainFunctionCodeArea.resetEditingValues()
@@ -289,6 +285,7 @@ function getPlayerRotation() {
     return ((changedRotation % 360) + 360) % 360
 }
 
+//store all the instructions from main code area in playerCode and start executing.
 function runCode() {
     items.mainFunctionCodeArea.highlightFollowsCurrentItem = true
     items.mainFunctionCodeArea.resetEditingValues()
@@ -296,205 +293,48 @@ function runCode() {
 
     //initialize code
     playerCode = []
-    items.player.tuxIsBusy = false
     isNewLevel = false
-    procedureBlocks = items.procedureModel.count
-    for(var i = 0; i < items.mainFunctionModel.count; i++) {
-        if(items.mainFunctionModel.get([i]).name === CALL_PROCEDURE) {
-            playerCode.push(START_PROCEDURE)
-            for(var j = 0; j < items.procedureModel.count; j++) {
-                if(items.procedureModel.get([j]).name != END_PROCEDURE)
-                    playerCode.push(items.procedureModel.get([j]).name)
-            }
-            playerCode.push(END_PROCEDURE)
-        }
-        else {
-            playerCode.push(items.mainFunctionModel.get([i]).name)
-        }
-    }
 
-    if(!items.player.tuxIsBusy) {
-        items.isRunCodeEnabled = false
-        executeNextInstruction()
-    }
+    for(var i = 0; i < items.mainFunctionModel.count; i++)
+        playerCode.push(items.mainFunctionModel.get([i]).name)
+
+    items.isRunCodeEnabled = false
+    executeNextInstruction()
 }
 
-function playerRunningChanged() {
-    if(!items.player.tuxIsBusy) {
-        executeNextInstruction()
-    }
-}
-
+/**
+ * If the current instruction is not a function call, continue executing the instructions and call the object function from instructionObjects to make movement.
+ *
+ * Else, append all the procedure area instructions into the call-procedure object's model and start it's execution.
+ *
+ * Till the time runningProcedure is true, main code instructions will not execute. Successive executions for procedureModel is made until it is empty.
+ */
 function executeNextInstruction() {
-    var currentInstruction = playerCode[codeIterator]
+    currentInstruction = playerCode[codeIterator]
     var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
 
-    if(!items.player.tuxIsBusy && codeIterator < playerCode.length && !deadEndPoint
-            && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE && tuxIceBlockNumber < currentLevelBlocksCoordinates.length - 1) {
-        changedX = items.player.x
-        changedY = items.player.y
-        var currentRotation = getPlayerRotation()
-
-        var currentBlock = tuxIceBlockNumber
-        var nextBlock
-        var isBackwardMovement = false
-
-        var currentX = currentLevelBlocksCoordinates[currentBlock][0]
-        var currentY = currentLevelBlocksCoordinates[currentBlock][1]
-
-        // Checks if the tile at the next position exists.
-        var nextTileExists = false
-
-        /**
-         * This If condition determines whether a tile exists in the direction of movement of Tux and if the tile is visited during forward / backward movement.
-         *
-         * If a tile at position x,y is marked as 1, it signifies that it is being visited during a backward movement and then marked as 0 (as when it is visited next time, it will be due to forward movement).
-         */
-        if(currentInstruction === MOVE_FORWARD) {
-            if(currentRotation === EAST) {
-                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                    if(currentLevelBlocksCoordinates[i][0] === currentX + 1 && currentLevelBlocksCoordinates[i][1] === currentY) {
-                        nextTileExists = true
-                    }
-                }
-                if(nextTileExists) {
-                    if(isCoordinateVisited[currentX + 1][currentY]) {
-                        isBackwardMovement = true
-                    }
-                }
-            }
-
-            else if(currentRotation === WEST) {
-                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                    if(currentLevelBlocksCoordinates[i][0] === currentX - 1 && currentLevelBlocksCoordinates[i][1] === currentY) {
-                        nextTileExists = true
-                    }
-                }
-                if(nextTileExists) {
-                    if(isCoordinateVisited[currentX -1][currentY]) {
-                        isBackwardMovement = true
-                    }
-                }
-            }
-
-            else if(currentRotation === SOUTH) {
-                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                    if(currentLevelBlocksCoordinates[i][0] === currentX && currentLevelBlocksCoordinates[i][1] === currentY - 1) {
-                        nextTileExists = true
-                    }
-                }
-                if(nextTileExists) {
-                    if(isCoordinateVisited[currentX][currentY - 1]) {
-                        isBackwardMovement = true
-                    }
-                }
-            }
-
-            else if(currentRotation === NORTH) {
-                for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                    if(currentLevelBlocksCoordinates[i][0] === currentX && currentLevelBlocksCoordinates[i][1] === currentY + 1) {
-                        nextTileExists = true
-                    }
-                }
-                if(nextTileExists) {
-                    if(isCoordinateVisited[currentX][currentY + 1]) {
-                        isBackwardMovement = true
-                    }
-                }
-            }
-
-            /**
-             * Since now the direction of movement is detected (forward or backward), Tux can now make his movement.
-             *
-             * If isBackwardMovement is true, then the next tile Tux will visit is the previous one, else Tux will visit the forward tile
-             */
-            if(isBackwardMovement)
-                nextBlock = tuxIceBlockNumber - 1
-            else
-                nextBlock = tuxIceBlockNumber + 1
-
-            var nextX = currentLevelBlocksCoordinates[nextBlock][0]
-            var nextY = currentLevelBlocksCoordinates[nextBlock][1]
-
-            items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration
-            items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
-
-            if(nextX - currentX > 0 && currentRotation === EAST) {
-                changedX += stepX
-            }
-            else if(nextX - currentX < 0 && currentRotation === WEST) {
-                changedX -= stepX
-            }
-            else if(nextY - currentY < 0 && currentRotation === SOUTH) {
-                changedY -= stepY
-            }
-            else if(nextY - currentY > 0 && currentRotation === NORTH) {
-                changedY += stepY
+    if(codeIterator < playerCode.length && !deadEndPoint && tuxIceBlockNumber < currentLevelBlocksCoordinates.length - 1) {
+        if(!runningProcedure) {
+            if(currentInstruction != CALL_PROCEDURE) {
+                instructionObjects[currentInstruction].checkAndExecuteMovement()
             }
             else {
-                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
-                deadEnd()
-                return
-            }
+                var callProcedureComponentModel = instructionObjects[CALL_PROCEDURE].procedureModel
 
-            // If the current tile wasn't visited as a result of backward movement, mark it as 1 to indicate next time it is visited, it will because of backward movement
-            if(!isBackwardMovement) {
-                ++tuxIceBlockNumber;
-                isCoordinateVisited[currentX][currentY] = true
-            }
-            else {
-                --tuxIceBlockNumber;
-                isCoordinateVisited[currentX][currentY] = false
-            }
+                for(var j = 0; j < items.procedureModel.count; j++) {
+                    var name = items.procedureModel.get([j]).name
+                    callProcedureComponentModel.append({ "name": name })
+                }
 
-            longestDurationMovementType = "linear"
-            items.player.x = changedX
-            items.player.y = changedY
+                items.mainFunctionCodeArea.currentIndex += 1
+                items.procedureCodeArea.currentIndex = -1
+                instructionObjects[CALL_PROCEDURE].checkAndExecuteMovement()
+            }
         }
-        else if(currentInstruction === TURN_LEFT) {
-            changedRotation = (currentRotation - 90) % 360
-            items.player.rotation = changedRotation
-            items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
-            items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
-            if(longestDurationMovementType != "linear")
-                longestDurationMovementType = "rotation"
-        }
-        else if(currentInstruction === TURN_RIGHT) {
-            changedRotation = (currentRotation + 90) % 360
-            items.player.rotation = changedRotation
-            items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
-            items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
-            if(longestDurationMovementType != "linear")
-                longestDurationMovementType = "rotation"
-        }
-
-        codeIterator++
-        items.player.tuxIsBusy = true
-        if(runningProcedure && procedureBlocks > 0
-                && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
-            procedureBlocks--
-            items.procedureCodeArea.moveCurrentIndexRight()
-        }
-        if(!runningProcedure
-                && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
-            items.mainFunctionCodeArea.moveCurrentIndexRight()
+        else {
+            instructionObjects[CALL_PROCEDURE].checkAndExecuteMovement()
         }
     }
-    else if(currentInstruction === START_PROCEDURE) {
-        runningProcedure = true
-        items.mainFunctionCodeArea.currentIndex += 1
-        items.procedureCodeArea.currentIndex = -1
-        codeIterator++
-        executeNextInstruction()
-    }
-    else if(currentInstruction === END_PROCEDURE) {
-        runningProcedure = false
-        procedureBlocks = items.procedureModel.count
-        codeIterator++
-        executeNextInstruction()
-    }
-    if(!isNewLevel)
-        checkSuccess()
 }
 
 function deadEnd() {
@@ -513,11 +353,13 @@ function checkSuccess() {
 
     if(tuxX === fishX && tuxY === fishY) {
         codeIterator = 0
-        items.player.tuxIsBusy = false
         items.bonus.good("tux")
     }
-    else if(codeIterator === playerCode.length) {
+    else if(codeIterator === playerCode.length && instructionObjects[CALL_PROCEDURE].procedureModel.count == 0) {
         deadEnd()
+    }
+    else {
+        executeNextInstruction()
     }
 }
 
