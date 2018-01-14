@@ -409,7 +409,7 @@ ActivityBase {
 
         Score {
             id: score
-            fontSize: items.horizontalLayout ? 16 : (answerChoices.visible ? 12 : 8)
+            fontSize: items.horizontalLayout ? internalTextComponent.mediumSize : (answerChoices.visible ? internalTextComponent.smallSize : internalTextComponent.tinySize)
             anchors.top: questionItemBackground.bottom
             anchors.bottom: undefined
             anchors.left: calendarBox.right
