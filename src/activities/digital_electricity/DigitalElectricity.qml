@@ -102,7 +102,10 @@ ActivityBase {
         IntroMessage {
             id: tutorialInstruction
             intro: []
+            textContainerWidth: background.vert ? parent.width - inputComponentsContainer.width - 90 * ApplicationInfo.ratio : 0.9 * background.width
+            textContainerHeight: background.vert ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
             anchors {
+                fill: undefined
                 top: background.vert ? parent.top : inputComponentsContainer.bottom
                 topMargin: 10
                 right: parent.right
