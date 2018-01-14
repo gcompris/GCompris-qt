@@ -79,7 +79,7 @@ Rectangle {
                 GCText {
                     id: title
                     text: dialogBackground.title
-                    width: dialogBackground.width - 30
+                    width: dialogBackground.width - (30 + 60 * ApplicationInfo.ratio)
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "black"
