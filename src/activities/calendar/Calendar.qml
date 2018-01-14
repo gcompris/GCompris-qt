@@ -124,7 +124,7 @@ ActivityBase {
                         anchors.left: parent.left
                         source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
                         visible: ((calendar.visibleYear + calendar.visibleMonth) > Activity.minRange) ? true : false
-                        onClicked: control.showPreviousMonth()
+                        onClicked: control.__selectPreviousMonth()
                     }
                     GCText {
                         id: dateText
@@ -145,7 +145,7 @@ ActivityBase {
                         anchors.right: parent.right
                         source: "qrc:/gcompris/src/core/resource/bar_next.svg"
                         visible: ((calendar.visibleYear + calendar.visibleMonth) < Activity.maxRange) ? true : false
-                        onClicked: control.showNextMonth()
+                        onClicked: control.__selectNextMonth()
                     }
                 }
                 dayDelegate: Rectangle {
