@@ -44,6 +44,7 @@ Rectangle {
     property bool isDialog: true
     property string title
     property alias titleIcon: titleIcon.source
+    property alias textBody: textContent.text
     property string content
     signal close
     signal start

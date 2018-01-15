@@ -23,6 +23,7 @@ canal_lock
 categorization
 checkers
 checkers_2players
+categorization_words
 chess
 chess_2players
 chess_partyend

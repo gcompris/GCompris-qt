@@ -130,13 +130,14 @@ Item {
                 top: parent.top
                 topMargin: 0.05 * parent.height
                 bottom: categoryBackground.bottom
-                leftMargin: 0.015 * middleScreen.width
+                bottomMargin: 0.15 * parent.height
+                leftMargin: type == "words" ? 0.005 * middleScreen.width : 0.015 * middleScreen.width
             }
         }
 
         GCText {
             id: instructions
-            text: items.mode !== "expert" && items.details && items.details[bar.level-1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
+            text: items.mode !== "expert" && items.details && items.details[bar.level - 1] && items.details[bar.level - 1].instructions ? items.details[bar.level - 1].instructions : qsTr("Place the majority category images to the right and other images to the left")
             visible: items.instructionsVisible
             anchors.fill: instructionBox
             anchors.bottom: instructionBox.bottom
@@ -151,25 +152,56 @@ Item {
         Image {
             id: categoryImage
             fillMode: Image.PreserveAspectFit
-            source: items.details && items.details[bar.level-1] && items.details[bar.level-1].image ? items.details[bar.level-1].image : ""
-            sourceSize.width: horizontalLayout ? rightZone.width * 0.35 : rightZone.width * 0.35
-            width: sourceSize.width
-            height: sourceSize.width
-            y: 0.015*parent.height
-            visible: items.categoryImageChecked
+            width: horizontalLayout ? middleScreen.width * 0.35 : rightScreen.width * 0.35
+            height: horizontalLayout ? rightScreen.height * 0.18 : rightScreen.height * 0.15
+            source: items.details && items.details[bar.level-1] && items.details[bar.level-1].image && type == "images" ? items.details[bar.level-1].image : ""
+            y: 0.015 * parent.height
+            visible: items.categoryImageChecked && type == "images"
             anchors {
                 left: middleScreen.right
-                leftMargin: 0.15 * rightZone.width
+                leftMargin: 0.15 * rightScreen.width
+            }
+        }
+
+        Rectangle {
+            id: categoryTextBox
+            color: "black"
+            opacity: type == "words" ? 1 : 0
+            width: horizontalLayout ? rightScreen.width * 0.35 : rightScreen.width * 0.35
+            height: horizontalLayout ? rightScreen.height * 0.18 : rightScreen.height * 0.15
+            anchors {
+                left: middleScreen.right
+                leftMargin: 0.15 * rightScreen.width
+            }
+            z: 3
+            y: 0.015*parent.height
+            radius: 10
+            border.width: 2
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
+
+        GCText {
+            id: categoryText
+            text: items.details && items.details[bar.level-1] && items.details[bar.level-1].image && type == "words" ? items.details[bar.level-1].image : ""
+            anchors.fill: parent
+            anchors.bottom: parent.bottom
+            fontSizeMode: Text.Fit
+            wrapMode: Text.WordWrap
+            z: 3
+            color: "white"
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
             }
         }
 
         BarButton {
             id: validate
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: horizontalLayout ? rightZone.width * 0.20 : rightZone.width * 0.35
-            height: width
-            sourceSize.width: width
-            sourceSize.height: height
+            width: horizontalLayout ? rightScreen.width * 0.20 : rightScreen.width * 0.35
+            height: horizontalLayout ? rightScreen.width * 0.20 : rightScreen.width * 0.35
             y: parent.height*0.8
             z: 2
             anchors {

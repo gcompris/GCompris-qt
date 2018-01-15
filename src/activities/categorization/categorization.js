@@ -40,27 +40,39 @@ var boardsUrl
 var answerTable = {}
 var totalImages
 var fileName = ":/gcompris/data/words/animals/camel.jpg"
+var type
+var categoriesCount
+var categoryDataset
+var categoryLists
 
-function init(items_,boardsUrl_) {
+function init(items_,boardsUrl_,type_,categoriesCount_) {
     boardsUrl = boardsUrl_
     items = items_
+    type = type_
+    categoriesCount = categoriesCount_
     items.menuModel.clear()
     currentSubLevel = 0
+    categoriesCount = (items.file.exists(fileName) && type == "images") ? 18 : (type == "words" ? (items.categories.length) : 6)
 }
 
 function start() {
     categoriesData = []
     items.categoryReview.stop()
+    categoryDataset = items.categoryReview.categoryDataset
+    categoryLists = items.categories
+    items.background.englishFallback = categoryLists == "" ? true : false
+    getCategoriesList();
+}
 
-    var isEmbeddedMode = items.file.exists(fileName) ? true : false
-
-    items.categoriesFallback = !isEmbeddedMode
-
+function getCategoriesList() {
     var categoriesFilename;
-    var categoryDataset = items.categoryReview.categoryDataset
-    var categoryLists = items.categories
+    categoryDataset = items.categoryReview.categoryDataset
+    categoryLists = items.categories
+    var isEmbeddedMode = items.file.exists(fileName) ? true : false
+    items.categoriesFallback = isEmbeddedMode
     for(var i = 0; i < categoryLists.length; i++) {
-        categoriesFilename = "qrc" + boardsUrl + categoryLists[i]
+        categoriesFilename = (type == "words") ? "qrc" + boardsUrl + items.locale + "/" + categoryLists[i] : "qrc" +
+        boardsUrl + categoryLists[i]
         categoryDataset.source = categoriesFilename
 
         if(isEmbeddedMode || categoryDataset.item.isEmbedded) {
@@ -201,6 +213,10 @@ function allPlaced() {
 function getCategoryLevels() {
     var randomGood = 0;
     var randomBad = 0;
+
+    items.categoryTitle = items.menuModel.get(index).name
+    items.categoryLesson = items.menuModel.get(index).categoryLesson ? items.menuModel.get(index).categoryLesson : ''
+    items.hintDisplay = (items.categoryLesson == '') ? false : true
     items.categoryReview.middleZone.clear()
     /* If easy or medium mode is selected, store the details of levels of category of that respective index in items.details. */
     if(items.mode !== "expert") {
@@ -261,6 +277,7 @@ function getCategoryModel(dataset) {
         categories.push({
                             'name': dataset[c].levels[0].name,
                             'image': dataset[c].levels[0].image,
+                            'categoryLesson': dataset[c].levels[0].categoryLesson,
                             'index': c
                         })
     }
