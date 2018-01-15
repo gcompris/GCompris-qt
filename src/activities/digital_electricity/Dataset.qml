@@ -457,7 +457,7 @@ QtObject {
             introMessage: [
                 qsTr("The signal generator on the left is used to generate alternating signals between 0 and 1 in a given time period taken as input. The time period by default is 1 second, but it can be changed between 0.25 and 2s."),
                 qsTr("The BCD counter placed under it is a special type of counter which can count from 0 to 9 and back to 0 on application of a clock signal."),
-                qsTr("Connect the components to make sure that the count of 0 to 9 is visible in the seven segment dispay provided.")
+                qsTr("Connect the components to make sure that the count of 0 to 9 is visible in the seven segment display provided.")
             ]
         },
         // level 22

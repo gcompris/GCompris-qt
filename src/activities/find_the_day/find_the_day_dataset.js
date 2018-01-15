@@ -199,7 +199,7 @@ function get() {
                       "answer": {"year": 2018, "month": 11, "day": 8}
                   },
                   {
-                      "question": qsTr("Find the date  5 months, 3 weeks and 2 days after 20 March."),
+                      "question": qsTr("Find the date 5 months, 3 weeks and 2 days after 20 March."),
                       "answer": {"year": 2018, "month": 8, "day": 12}
                   },
                   {
