@@ -126,7 +126,7 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            Activity.dayOfWeekSelected = index
+            Activity.dayOfWeekSelected = dayIndex
             select()
             choiceBox.scale = 1
         }

@@ -62,6 +62,7 @@ ActivityBase {
             property alias questionDelay: questionDelay
             property alias okButtonParticles: okButtonParticles
             property bool horizontalLayout: background.width > background.height * 1.5
+            property alias daysOfTheWeekModel: daysOfTheWeekModel
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -257,10 +258,21 @@ ActivityBase {
             }
         }
 
+        ListModel {
+            id: daysOfTheWeekModel
+            ListElement { text: qsTr("Sunday"); dayIndex: 0 }
+            ListElement { text: qsTr("Monday"); dayIndex: 1 }
+            ListElement { text: qsTr("Tuesday"); dayIndex: 2 }
+            ListElement { text: qsTr("Wednesday"); dayIndex: 3 }
+            ListElement { text: qsTr("Thursday"); dayIndex: 4 }
+            ListElement { text: qsTr("Friday"); dayIndex: 5 }
+            ListElement { text: qsTr("Saturday"); dayIndex: 6 }
+
+        }
         // Creates a table consisting of days of weeks.
         GridView {
             id: answerChoices
-            model: [qsTr("Sunday"), qsTr("Monday"), qsTr("Tuesday"), qsTr("Wednesday"), qsTr("Thursday"), qsTr("Friday"), qsTr("Saturday")]
+            model: daysOfTheWeekModel
             anchors.top: calendarBox.top
             anchors.left: questionItem.left
             anchors.right: calendarBox.left
@@ -277,7 +289,7 @@ ActivityBase {
             delegate: ChoiceTable {
                 width: calendar.width * 0.5
                 height: calendar.height / 6.5
-                choices.text: modelData
+                choices.text: text
                 anchors.rightMargin: 2
             }
             Keys.enabled: answerChoices.visible
@@ -292,17 +304,17 @@ ActivityBase {
                 }
                 if(event.key === Qt.Key_Enter) {
                     keyNavigation = true
-                    Activity.dayOfWeekSelected = currentIndex
+                    Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
                 }
                 if(event.key === Qt.Key_Space) {
                     keyNavigation = true
-                    Activity.dayOfWeekSelected = currentIndex
+                    Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
                 }
                 if(event.key === Qt.Key_Return) {
                     keyNavigation = true
-                    Activity.dayOfWeekSelected = currentIndex
+                    Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
                 }
             }
