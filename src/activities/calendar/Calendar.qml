@@ -212,15 +212,15 @@ ActivityBase {
         }
 
         function handleKeys(event) {
-            if(event.key === Qt.Key_Space) {
+            if(event.key === Qt.Key_Space && okButtonMouseArea.enabled) {
                 Activity.checkAnswer()
                 event.accepted = true
             }
-            if(event.key === Qt.Key_Enter) {
+            if(event.key === Qt.Key_Enter && okButtonMouseArea.enabled) {
                 Activity.checkAnswer()
                 event.accepted = true
             }
-            if(event.key === Qt.Key_Return) {
+            if(event.key === Qt.Key_Return && okButtonMouseArea.enabled) {
                 Activity.checkAnswer()
                 event.accepted = true
             }
@@ -302,17 +302,17 @@ ActivityBase {
                     keyNavigation = true
                     answerChoices.moveCurrentIndexUp()
                 }
-                if(event.key === Qt.Key_Enter) {
+                if(event.key === Qt.Key_Enter && !questionDelay.running) {
                     keyNavigation = true
                     Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
                 }
-                if(event.key === Qt.Key_Space) {
+                if(event.key === Qt.Key_Space && !questionDelay.running) {
                     keyNavigation = true
                     Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()
                 }
-                if(event.key === Qt.Key_Return) {
+                if(event.key === Qt.Key_Return && !questionDelay.running) {
                     keyNavigation = true
                     Activity.dayOfWeekSelected = model.get(currentIndex).dayIndex
                     answerChoices.currentItem.select()

@@ -36,11 +36,6 @@ Rectangle {
     anchors.margins: 30
     border.color: "black"
     border.width: 2
-    QtObject {
-        property alias animWin: animWin
-        property alias crossAnim: crossAnim
-        property alias choiceBox: choiceBox
-    }
 
     function select() {
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
@@ -126,9 +121,11 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            Activity.dayOfWeekSelected = dayIndex
-            select()
-            choiceBox.scale = 1
+            if(!questionDelay.running) {
+                Activity.dayOfWeekSelected = dayIndex
+                select()
+                choiceBox.scale = 1
+            }
         }
         hoverEnabled: true
         enabled: !crossAnim.running && !animWin.running
