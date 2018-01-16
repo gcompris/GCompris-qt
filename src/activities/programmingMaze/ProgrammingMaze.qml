@@ -54,9 +54,7 @@ ActivityBase {
         property bool keyNavigation: false
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
-
-        //Stores the time after which clicking on runCode will be enabled while re-setting Tux.
-        property int runCodeEnableDuration
+        property alias items: items
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -86,12 +84,12 @@ ActivityBase {
         }
 
         //This function catches the signal emitted after completion of movement of Tux after executing each instruction.
-        function checkSuccess() {
-            Activity.checkSuccess()
+        function currentInstructionExecutionComplete() {
+            Activity.checkSuccessAndExecuteNextInstruction()
         }
 
         //This function catches the signal emitted after finding a dead-end in any of the executing instruction.
-        function foundDeadEnd() {
+        function deadEnd() {
             Activity.deadEnd()
         }
 
@@ -426,9 +424,7 @@ ActivityBase {
                     if(constraintInstruction.opacity)
                         constraintInstruction.hide()
 
-                    if(Activity.codeIterator == 0 && mainFunctionModel.count != 0) {
-                        Activity.runCode()
-                    }
+                    Activity.runCode()
                 }
                 onExited: runCode.scale = 1
             }
@@ -514,7 +510,7 @@ ActivityBase {
                     fontSize: mediumSize
                     wrapMode: Text.WordWrap
                     color: "white"
-                    text: qsTr("Your Code")
+                    text: qsTr("Main function")
                 }
             }
         }
@@ -561,7 +557,7 @@ ActivityBase {
                     fontSize: mediumSize
                     wrapMode: Text.WordWrap
                     color: "white"
-                    text: qsTr("Your procedure")
+                    text: qsTr("Procedure")
                 }
             }
         }

@@ -2,8 +2,7 @@
  *
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
- * Authors:
- *   Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Author:
  *   Aman Kumar Gupta <gupta2140@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -31,23 +30,17 @@ Item {
     property real movementAnimationDuration
 
     /**
-     * This signal is emitted after the movement animation of Tux is complete.
+     * This signal is emitted after the execution of current instruction is complete.
      *
-     * It will be caught by checkSuccess function in programmingMaze.qml.
-     *
-     * And it will check if Tux has reached the fish or will execute the next instruction.
+     * The signal will be caught by programmingMaze.qml/Procedure.qml depending on with whom the connection is made,
+     * and it will check if Tux has reached the fish(level is complete) or will execute the next instruction.
      */
     signal executionComplete
 
     /**
      * This signal is emitted if Tux cannot move according to the current executed instruction.
      *
-     * It will be caught by foundDeadEnd function in programmingMaze.qml.
+     * It will be caught by deadEnd() in it's parent file.
      */
     signal foundDeadEnd
-
-    Component.onCompleted: {
-        foundDeadEnd.connect(Activity.items.background.foundDeadEnd)
-        instruction.executionComplete.connect(Activity.items.background.checkSuccess)
-    }
 }

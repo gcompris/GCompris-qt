@@ -1,9 +1,8 @@
-﻿/* GCompris - move-forward.qml
+﻿/* GCompris - moveForward.qml
  *
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
- * Authors:
- *   Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Author:
  *   Aman Kumar Gupta <gupta2140@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -53,8 +52,8 @@ Instruction {
 
     //Function to check if the current movement is possible or not and then process the instruction accordingly
     function checkAndExecuteMovement() {
-        Activity.changedX = Activity.items.player.x
-        Activity.changedY = Activity.items.player.y
+        var changedX = Activity.items.player.x
+        var changedY = Activity.items.player.y
         var currentRotation = Activity.getPlayerRotation()
         var currentLevelBlocksCoordinates = Activity.mazeBlocks[Activity.currentLevel][Activity.BLOCKS_DATA_INDEX]
 
@@ -137,19 +136,18 @@ Instruction {
         Activity.items.procedureCodeArea.highlightMoveDuration = movementAnimationDuration
 
         if(nextX - currentX > 0 && currentRotation === Activity.EAST) {
-            Activity.changedX += Activity.stepX
+            changedX += Activity.stepX
         }
         else if(nextX - currentX < 0 && currentRotation === Activity.WEST) {
-            Activity.changedX -= Activity.stepX
+            changedX -= Activity.stepX
         }
         else if(nextY - currentY < 0 && currentRotation === Activity.SOUTH) {
-            Activity.changedY -= Activity.stepY
+            changedY -= Activity.stepY
         }
         else if(nextY - currentY > 0 && currentRotation === Activity.NORTH) {
-            Activity.changedY += Activity.stepY
+            changedY += Activity.stepY
         }
         else {
-            Activity.items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
             foundDeadEnd()
             return
         }
@@ -164,17 +162,8 @@ Instruction {
             Activity.isCoordinateVisited[currentX][currentY] = false
         }
 
-        //If the instruction is running in procedure area, we continue executing next instruction and do not increment the main area codeIterator.
-        if(Activity.runningProcedure) {
-            Activity.items.procedureCodeArea.moveCurrentIndexRight()
-        }
-        else {
-            Activity.codeIterator++
-            Activity.items.mainFunctionCodeArea.moveCurrentIndexRight()
-        }
-
-        xMovement = Activity.changedX
-        yMovement = Activity.changedY
+        xMovement = changedX
+        yMovement = changedY
         movementAnimation.start()
     }
 }

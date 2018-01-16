@@ -1,9 +1,8 @@
-/* GCompris - turn-left.qml
+/* GCompris - turnLeft.qml
  *
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
- * Authors:
- *   Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Author:
  *   Aman Kumar Gupta <gupta2140@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -44,15 +43,6 @@ Instruction {
         Activity.changedRotation = (currentRotation - 90) % 360
         Activity.items.mainFunctionCodeArea.highlightMoveDuration = turnLeft.movementAnimationDuration
         Activity.items.procedureCodeArea.highlightMoveDuration = turnLeft.movementAnimationDuration
-
-        //If the instruction is running in procedure area, we continue executing next instruction and do not increment the main area codeIterator.
-        if(Activity.runningProcedure) {
-            Activity.items.procedureCodeArea.moveCurrentIndexRight()
-        }
-        else {
-            Activity.codeIterator++
-            Activity.items.mainFunctionCodeArea.moveCurrentIndexRight()
-        }
 
         turnLeft.finalRotation = Activity.changedRotation
         movementAnimation.start()

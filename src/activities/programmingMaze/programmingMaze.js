@@ -101,16 +101,11 @@ var stepX
 var stepY
 
 // List of commands to be executed
-var playerCode = []
+var mainFunctionCode = []
+var procedureCode = []
 
 // The index of tile, Tux currently is on
 var tuxIceBlockNumber
-
-// New x position of Tux after a forward / backward movement
-var changedX
-
-// New y position of Tux after a forward / backward movement
-var changedY
 
 // New rotation of Tux on turning.
 var changedRotation
@@ -118,7 +113,7 @@ var changedRotation
 // Indicates if there is a dead-end
 var deadEndPoint = false
 
-// Stores the index of playerCode[] which is going to be processed
+// Stores the index of mainFunctionCode[] which is going to be processed
 var codeIterator = 0
 
 /**
@@ -130,13 +125,8 @@ var codeIterator = 0
  */
 var resetTux = false
 
-// Tells if procedure area instructions are running or not.
-var runningProcedure
-
 // Duration of movement of highlight in the execution area.
 var moveAnimDuration
-
-var isNewLevel
 
 //Stores the currrent instruction which is going to be processed
 var currentInstruction
@@ -168,44 +158,82 @@ var BLOCKS_FISH_INDEX = 1
 var BLOCKS_INSTRUCTION_INDEX = 2
 var MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX = 3
 
+/**
+ * Stores the qml file components of all the instructions used in the activity.
+ *
+ * To add a new instruction, add it's component here, create it's object in initLevel() along with the other instructions
+ * for procedure area, and call it's destroy function in destroyInstructionObjects().
+ */
 var instructionComponents = {
-    "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/move-forward.qml"),
-    "turn-left": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turn-left.qml"),
-    "turn-right": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turn-right.qml"),
-    "call-procedure": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/call-procedure.qml")
+    "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/moveForward.qml"),
+    "turn-left": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turnLeft.qml"),
+    "turn-right": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turnRight.qml"),
+    "call-procedure": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/Procedure.qml")
 }
 
-//A global look-up table to access the object of instructions which is being executed anywhere in the entire code.
-var instructionObjects = []
+/**
+ * The procedure function's object. This object is linked to all it's instructions with signal and slot
+ *
+ * Since the signals of instructions created in procedureCode need to be conected to the procedure file,
+ * hence only one object for procedure function is sufficienet and this same
+ * procedure object will be reused to push into the main code when the code is run.
+ */
+var procedureFunctionObject
 
 function start(items_) {
     items = items_
     currentLevel = 0
     numberOfLevel = mazeBlocks.length
     resetTux = false
-    instructionObjects[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject()
-    instructionObjects[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject()
-    instructionObjects[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject()
-    instructionObjects[CALL_PROCEDURE] = instructionComponents[CALL_PROCEDURE].createObject()
     initLevel()
 }
 
 function stop() {
-    instructionObjects[MOVE_FORWARD].destroy()
-    instructionObjects[TURN_LEFT].destroy()
-    instructionObjects[TURN_RIGHT].destroy()
-    instructionObjects[CALL_PROCEDURE].destroy()
+    destroyInstructionObjects()
+}
+
+function destroyInstructionObjects() {
+    for(var i = 0; i < mainFunctionCode.length; i++) {
+        if(mainFunctionCode[i] != CALL_PROCEDURE)
+            mainFunctionCode[i].destroy()
+    }
+    if(procedureFunctionObject && procedureCode[MOVE_FORWARD] && procedureCode[TURN_LEFT] && procedureCode[TURN_RIGHT]) {
+        procedureCode[MOVE_FORWARD].destroy()
+        procedureCode[TURN_LEFT].destroy()
+        procedureCode[TURN_RIGHT].destroy()
+        procedureFunctionObject.destroy()
+    }
+
+    mainFunctionCode = []
+    procedureCode = []
 }
 
 function initLevel() {
     if(!items || !items.bar)
         return;
 
-    isNewLevel = true
-
     items.bar.level = currentLevel + 1
-    playerCode = []
-    instructionObjects[CALL_PROCEDURE].procedureModel.clear()
+    destroyInstructionObjects()
+
+    //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureFunctionObject's slots.
+    if(currentLevel >= 2) {
+        procedureFunctionObject = instructionComponents[CALL_PROCEDURE].createObject(items.background)
+        procedureCode[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject(procedureFunctionObject)
+        procedureCode[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject(procedureFunctionObject)
+        procedureCode[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject(procedureFunctionObject)
+
+        procedureFunctionObject.foundDeadEnd.connect(items.background.deadEnd)
+        procedureFunctionObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)
+
+        procedureCode[MOVE_FORWARD].foundDeadEnd.connect(procedureFunctionObject.deadEnd)
+        procedureCode[MOVE_FORWARD].executionComplete.connect(procedureFunctionObject.checkSuccessAndExecuteNextInstruction)
+
+        procedureCode[TURN_LEFT].foundDeadEnd.connect(procedureFunctionObject.deadEnd)
+        procedureCode[TURN_LEFT].executionComplete.connect(procedureFunctionObject.checkSuccessAndExecuteNextInstruction)
+
+        procedureCode[TURN_RIGHT].foundDeadEnd.connect(procedureFunctionObject.deadEnd)
+        procedureCode[TURN_RIGHT].executionComplete.connect(procedureFunctionObject.checkSuccessAndExecuteNextInstruction)
+    }
 
     // Stores the co-ordinates of the tile blocks in the current level
     var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
@@ -261,7 +289,6 @@ function initLevel() {
     tuxIceBlockNumber = 0
     changedRotation = EAST
     deadEndPoint = false
-    runningProcedure = false
     moveAnimDuration = 1000
     items.background.insertIntoMain = true
     items.background.insertIntoProcedure = false
@@ -285,65 +312,68 @@ function getPlayerRotation() {
     return ((changedRotation % 360) + 360) % 360
 }
 
-//store all the instructions from main code area in playerCode and start executing.
+//store all the instructions from main and procedure areas in their respective instruction lists.
 function runCode() {
     items.mainFunctionCodeArea.highlightFollowsCurrentItem = true
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
 
     //initialize code
-    playerCode = []
-    isNewLevel = false
+    mainFunctionCode = []
 
-    for(var i = 0; i < items.mainFunctionModel.count; i++)
-        playerCode.push(items.mainFunctionModel.get([i]).name)
+    var instructionName
+    var instructionObject
 
-    items.isRunCodeEnabled = false
-    executeNextInstruction()
-}
+    /**
+     * Create and append objects of all the instructions in the main area code.
+     *
+     * If the instruction is call-procedure, append the procedureFunctionObject, and it will access the instructions created in procedureCode which are linked to this object.
+     */
+    for(var i = 0; i < items.mainFunctionModel.count; i++) {
+        instructionName = items.mainFunctionModel.get([i]).name
+        if(instructionName != CALL_PROCEDURE) {
+            instructionObject = instructionComponents[instructionName].createObject(items.background)
 
-/**
- * If the current instruction is not a function call, continue executing the instructions and call the object function from instructionObjects to make movement.
- *
- * Else, append all the procedure area instructions into the call-procedure object's model and start it's execution.
- *
- * Till the time runningProcedure is true, main code instructions will not execute. Successive executions for procedureModel is made until it is empty.
- */
-function executeNextInstruction() {
-    currentInstruction = playerCode[codeIterator]
-    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+            instructionObject.foundDeadEnd.connect(items.background.deadEnd)
+            instructionObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)
 
-    if(codeIterator < playerCode.length && !deadEndPoint && tuxIceBlockNumber < currentLevelBlocksCoordinates.length - 1) {
-        if(!runningProcedure) {
-            if(currentInstruction != CALL_PROCEDURE) {
-                instructionObjects[currentInstruction].checkAndExecuteMovement()
-            }
-            else {
-                var callProcedureComponentModel = instructionObjects[CALL_PROCEDURE].procedureModel
-
-                for(var j = 0; j < items.procedureModel.count; j++) {
-                    var name = items.procedureModel.get([j]).name
-                    callProcedureComponentModel.append({ "name": name })
-                }
-
-                items.mainFunctionCodeArea.currentIndex += 1
-                items.procedureCodeArea.currentIndex = -1
-                instructionObjects[CALL_PROCEDURE].checkAndExecuteMovement()
-            }
+            mainFunctionCode.push(instructionObject)
         }
         else {
-            instructionObjects[CALL_PROCEDURE].checkAndExecuteMovement()
+            mainFunctionCode.push(procedureFunctionObject)
         }
+    }
+
+    for(var j = 0; j < items.procedureModel.count; j++) {
+        instructionName = items.procedureModel.get([j]).name
+        procedureFunctionObject.procedureCode.append({ "name" : instructionName })
+    }
+
+    items.isRunCodeEnabled = false
+    if(mainFunctionCode.length > 0)
+        executeNextInstruction()
+    else
+        deadEnd()
+}
+
+function executeNextInstruction() {
+    currentInstruction = mainFunctionCode[codeIterator]
+    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+
+    if(codeIterator < mainFunctionCode.length && !deadEndPoint && tuxIceBlockNumber < currentLevelBlocksCoordinates.length - 1) {
+        items.mainFunctionCodeArea.currentIndex += 1
+        mainFunctionCode[codeIterator].checkAndExecuteMovement()
     }
 }
 
 function deadEnd() {
     deadEndPoint = true
     items.isTuxMouseAreaEnabled = true
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
     items.bonus.bad("tux")
 }
 
-function checkSuccess() {
+function checkSuccessAndExecuteNextInstruction() {
     var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
 
     var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0];
@@ -355,10 +385,11 @@ function checkSuccess() {
         codeIterator = 0
         items.bonus.good("tux")
     }
-    else if(codeIterator === playerCode.length && instructionObjects[CALL_PROCEDURE].procedureModel.count == 0) {
+    else if(codeIterator === mainFunctionCode.length - 1) {
         deadEnd()
     }
     else {
+        codeIterator++
         executeNextInstruction()
     }
 }
