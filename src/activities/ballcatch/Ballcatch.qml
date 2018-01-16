@@ -45,7 +45,7 @@ ActivityBase {
         source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
 
-        property bool vert: background.width < background.height    // To check if in Vertical mode
+        property bool isVertical: background.width < background.height    // To check if in Vertical mode
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -201,9 +201,9 @@ ActivityBase {
         Image {
             id: leftShift
             x: background.width / 4 - width
-            y: ((background.vert) ? rightHand.y - height : rightHand.y - height / 2)
+            y: background.isVertical ? rightHand.y - height : rightHand.y - height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
-            scale: ((background.vert) ? 0.75 : 1.0)
+            scale: background.isVertical ? 0.75 : 1.0
             smooth: true
             opacity: items.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
@@ -213,9 +213,9 @@ ActivityBase {
             id: rightShift
             mirror: true
             x: background.width - background.width / 4
-            y: ((background.vert) ? rightHand.y - height : rightHand.y - height / 2)
+            y: background.isVertical ? rightHand.y - height : rightHand.y - height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
-            scale: ((background.vert) ? 0.75 : 1.0)
+            scale: background.isVertical ? 0.75 : 1.0
             smooth: true
             opacity: items.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
@@ -224,14 +224,14 @@ ActivityBase {
         // Instructions
         BorderImage {
             id: bubble
-            x: ((background.vert) ? leftShift.x : 10.0)
-            y: ((background.vert) ? 10.0 : tux.y)
+            x: leftShift.x
+            y: 10.0
             border.left: 3 * ApplicationInfo.ratio
             border.top: 3 * ApplicationInfo.ratio
             border.right: 20 * ApplicationInfo.ratio
             border.bottom: 3 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/bubble.svg"
-            width: ((background.vert) ? rightShift.x + rightShift.width - leftShift.x : tux.x - 10)
+            width: rightShift.x + rightShift.width - leftShift.x
             height: instructions.height + 20 * ApplicationInfo.ratio
             // Remove the instructions when both keys has been pressed
             opacity: bar.level === 1 &&
@@ -255,7 +255,7 @@ ActivityBase {
                 wrapMode: TextEdit.WordWrap
                 horizontalAlignment: TextEdit.AlignHCenter
                 verticalAlignment: TextEdit.AlignVCenter
-                fontSize: background.vert ? tinySize : regularSize
+                fontSize: background.isVertical ? tinySize : smallSize
             }
         }
 

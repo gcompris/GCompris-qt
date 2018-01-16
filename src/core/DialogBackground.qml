@@ -67,25 +67,24 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
-                Image {
-                    id: titleIcon
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        margins: 4 * ApplicationInfo.ratio
+                Row {
+                    spacing: 2
+                    padding: 8
+                    Image {
+                        id: titleIcon
                     }
-                }
 
-                GCText {
-                    id: title
-                    text: dialogBackground.title
-                    width: dialogBackground.width - (30 + 60 * ApplicationInfo.ratio)
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "black"
-                    fontSize: 20
-                    font.weight: Font.DemiBold
-                    wrapMode: Text.WordWrap
+                    GCText {
+                        id: title
+                        text: dialogBackground.title
+                        width: dialogBackground.width - (30 + cancel.width)
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        color: "black"
+                        fontSize: 20
+                        font.weight: Font.DemiBold
+                        wrapMode: Text.WordWrap
+                    }
                 }
             }
             Rectangle {
@@ -124,6 +123,7 @@ Rectangle {
 
     // The cancel button
     GCButtonCancel {
+        id: cancel
         onClose: parent.close()
     }
 
