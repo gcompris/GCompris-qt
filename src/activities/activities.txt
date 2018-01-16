@@ -121,6 +121,7 @@ paintings
 penalty
 photo_hunter
 planegame
+programmingMaze
 readingh
 readingv
 redraw
