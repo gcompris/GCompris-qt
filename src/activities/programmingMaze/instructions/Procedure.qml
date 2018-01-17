@@ -27,7 +27,7 @@ Instruction {
     id: callProcedure
 
     property alias procedureCode: procedureCode
-    property int procedureCodeIterator: 0
+    property int procedureCodeIterator: parent.items.procedureCodeArea.currentIndex
 
     //Stores the list of instructions to be executed in procedure code area
     ListModel {
@@ -35,14 +35,12 @@ Instruction {
     }
 
     function checkAndExecuteMovement() {
-        if(!Activity.deadEndPoint && callProcedure.procedureCodeIterator < callProcedure.procedureCode.count) {
-            var currentInstruction = procedureCode.get(callProcedure.procedureCodeIterator).name
-            callProcedure.procedureCodeIterator++
+        if(!Activity.deadEndPoint && callProcedure.procedureCodeIterator < callProcedure.procedureCode.count - 1) {
             parent.items.procedureCodeArea.currentIndex += 1
+            var currentInstruction = procedureCode.get(callProcedure.procedureCodeIterator).name
             Activity.procedureCode[currentInstruction].checkAndExecuteMovement()
         }
         else {
-            callProcedure.procedureCodeIterator = 0
             parent.items.procedureCodeArea.currentIndex = -1
             executionComplete()
         }

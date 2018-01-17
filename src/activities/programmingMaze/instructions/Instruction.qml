@@ -32,7 +32,7 @@ Item {
     /**
      * This signal is emitted after the execution of current instruction is complete.
      *
-     * The signal will be caught by programmingMaze.qml/Procedure.qml depending on with whom the connection is made,
+     * The signal will be caught by ProgrammingMaze.qml/Procedure.qml depending on with whom the connection is made,
      * and it will check if Tux has reached the fish(level is complete) or will execute the next instruction.
      */
     signal executionComplete

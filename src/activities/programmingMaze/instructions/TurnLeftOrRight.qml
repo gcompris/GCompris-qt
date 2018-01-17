@@ -1,4 +1,4 @@
-/* GCompris - turnLeft.qml
+/* GCompris - TurnLeftOrRight.qml
  *
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
@@ -24,27 +24,33 @@ import GCompris 1.0
 import "../programmingMaze.js" as Activity
 
 Instruction {
-    id: turnLeft
+    id: turnLeftOrRight
     movementAnimationDuration: 500
 
     property real finalRotation: 0
+    property string turnDirection
 
     RotationAnimation {
         id: movementAnimation
         target: Activity.items.player
         to: finalRotation
-        duration: turnLeft.movementAnimationDuration
+        duration: turnLeftOrRight.movementAnimationDuration
         direction: RotationAnimation.Shortest
         onStopped: executionComplete()
     }
 
     function checkAndExecuteMovement() {
         var currentRotation = Activity.getPlayerRotation()
-        Activity.changedRotation = (currentRotation - 90) % 360
-        Activity.items.mainFunctionCodeArea.highlightMoveDuration = turnLeft.movementAnimationDuration
-        Activity.items.procedureCodeArea.highlightMoveDuration = turnLeft.movementAnimationDuration
 
-        turnLeft.finalRotation = Activity.changedRotation
+        if(turnLeftOrRight.turnDirection === "turn-left")
+            Activity.changedRotation = (currentRotation - 90) % 360
+        else
+            Activity.changedRotation = (currentRotation + 90) % 360
+
+        Activity.items.mainFunctionCodeArea.highlightMoveDuration = turnLeftOrRight.movementAnimationDuration
+        Activity.items.procedureCodeArea.highlightMoveDuration = turnLeftOrRight.movementAnimationDuration
+
+        turnLeftOrRight.finalRotation = Activity.changedRotation
         movementAnimation.start()
     }
 }

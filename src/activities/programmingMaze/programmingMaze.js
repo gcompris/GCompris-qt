@@ -151,17 +151,17 @@ var MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX = 3
  * for procedure area, and call it's destroy function in destroyInstructionObjects().
  */
 var instructionComponents = {
-    "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/moveForward.qml"),
-    "turn-left": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turnLeft.qml"),
-    "turn-right": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/turnRight.qml"),
+    "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/MoveForward.qml"),
+    "turn-left": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/TurnLeftOrRight.qml"),
+    "turn-right": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/TurnLeftOrRight.qml"),
     "call-procedure": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/Procedure.qml")
 }
 
 /**
- * The procedure function's object. This object is linked to all it's instructions with signal and slot
+ * The procedure function's object. This object is linked to all its instructions with signal and slot.
  *
- * Since the signals of instructions created in procedureCode need to be conected to the procedure file,
- * hence only one object for procedure function is sufficienet and this same
+ * Since the signals of instructions created in procedureCode need to be connected to the procedure file,
+ * hence only one object for procedure function is sufficient and this same
  * procedure object will be re-used to push into the main code when the code is run.
  */
 var procedureFunctionObject
@@ -200,12 +200,15 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     destroyInstructionObjects()
 
+    items.mainFunctionCodeArea.currentIndex = -1
+    items.procedureCodeArea.currentIndex = -1
+
     //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureFunctionObject's slots.
     if(currentLevel >= 2) {
         procedureFunctionObject = instructionComponents[CALL_PROCEDURE].createObject(items.background)
         procedureCode[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject(procedureFunctionObject)
-        procedureCode[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject(procedureFunctionObject)
-        procedureCode[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject(procedureFunctionObject)
+        procedureCode[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject(procedureFunctionObject, { "turnDirection": "turn-left" })
+        procedureCode[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject(procedureFunctionObject, { "turnDirection": "turn-right" })
 
         procedureFunctionObject.foundDeadEnd.connect(items.background.deadEnd)
         procedureFunctionObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)
@@ -249,8 +252,6 @@ function initLevel() {
     moveAnimDuration = 1000
     items.background.insertIntoMain = true
     items.background.insertIntoProcedure = false
-    items.mainFunctionCodeArea.currentIndex = -1
-    items.procedureCodeArea.currentIndex = -1
     items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration
     items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
     items.isTuxMouseAreaEnabled = false
@@ -289,7 +290,12 @@ function runCode() {
     for(var i = 0; i < items.mainFunctionModel.count; i++) {
         instructionName = items.mainFunctionModel.get([i]).name
         if(instructionName != CALL_PROCEDURE) {
-            instructionObject = instructionComponents[instructionName].createObject(items.background)
+            if(instructionName === TURN_LEFT)
+                instructionObject = instructionComponents[instructionName].createObject(items.background, { "turnDirection": "turn-left" })
+            else if(instructionName === TURN_RIGHT)
+                instructionObject = instructionComponents[instructionName].createObject(items.background, { "turnDirection": "turn-right" })
+            else
+                instructionObject = instructionComponents[instructionName].createObject(items.background)
 
             instructionObject.foundDeadEnd.connect(items.background.deadEnd)
             instructionObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)

@@ -1,4 +1,4 @@
-﻿/* GCompris - moveForward.qml
+﻿/* GCompris - MoveForward.qml
  *
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
