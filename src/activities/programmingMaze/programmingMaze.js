@@ -104,9 +104,6 @@ var stepY
 var mainFunctionCode = []
 var procedureCode = []
 
-// The index of tile, Tux currently is on
-var tuxIceBlockNumber
-
 // New rotation of Tux on turning.
 var changedRotation
 
@@ -137,17 +134,6 @@ var currentLevel = 0
 var numberOfLevel
 var items
 
-/**
- * A 2-dimensional array whose each cell stores:
- *  1. 0 if the tile at position x,y is visited by Tux during forward movement.
- *  2. 1 if the tile at position x,y is visited by Tux during backward movement on his path.
- *
- * According to this value, the number of covered tiles in the path is calculated:
- *  1. If the value at cell x,y is 0 (a forward movement), the number of tiles covered in the path increases by 1.
- *  2. If the value at cell x,y is 1 (a backward movement), the number of tiles covered in the path decreases by 1.
- */
-var isCoordinateVisited
-
 var NORTH = 0
 var WEST = 90
 var SOUTH = 180
@@ -176,7 +162,7 @@ var instructionComponents = {
  *
  * Since the signals of instructions created in procedureCode need to be conected to the procedure file,
  * hence only one object for procedure function is sufficienet and this same
- * procedure object will be reused to push into the main code when the code is run.
+ * procedure object will be re-used to push into the main code when the code is run.
  */
 var procedureFunctionObject
 
@@ -194,10 +180,9 @@ function stop() {
 
 function destroyInstructionObjects() {
     for(var i = 0; i < mainFunctionCode.length; i++) {
-        if(mainFunctionCode[i] != CALL_PROCEDURE)
-            mainFunctionCode[i].destroy()
+        mainFunctionCode[i].destroy()
     }
-    if(procedureFunctionObject && procedureCode[MOVE_FORWARD] && procedureCode[TURN_LEFT] && procedureCode[TURN_RIGHT]) {
+    if(procedureCode[MOVE_FORWARD] && procedureCode[TURN_LEFT] && procedureCode[TURN_RIGHT]) {
         procedureCode[MOVE_FORWARD].destroy()
         procedureCode[TURN_LEFT].destroy()
         procedureCode[TURN_RIGHT].destroy()
@@ -240,33 +225,6 @@ function initLevel() {
 
     items.mazeModel.model = currentLevelBlocksCoordinates
 
-    // The maximum value of x and y co-ordinates in the level
-    var maxX = 0
-    var maxY = 0
-
-    for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-        if(currentLevelBlocksCoordinates[i][0] > maxX)
-            maxX = currentLevelBlocksCoordinates[i][0]
-        if(currentLevelBlocksCoordinates[i][1] > maxY)
-            maxY = currentLevelBlocksCoordinates[i][1]
-    }
-
-    isCoordinateVisited = []
-
-    // A 2-D adjacency matrix of size maxX * maxY is formed to store the values (0 or 1) for each tile at that co-ordinate, marking it as visited during forward / backward movement.
-    isCoordinateVisited = new Array(maxX + 1);
-
-    for(var i = 0; i <= maxX; i++) {
-        isCoordinateVisited[i] = new Array(maxY + 1);
-    }
-
-    // Initially all the cells are assigned 0 as for the first time they will be visited by Tux during forward movement.
-    for(var i = 0; i <= maxX; i++) {
-        for(var j = 0; j <= maxY; j++) {
-            isCoordinateVisited[i][j] = false
-        }
-    }
-
     if(!resetTux) {
         items.mainFunctionModel.clear()
         items.procedureModel.clear()
@@ -286,7 +244,6 @@ function initLevel() {
     items.player.x = currentLevelBlocksCoordinates[0][0] * stepX + (stepX - items.player.width) / 2
     items.player.y = currentLevelBlocksCoordinates[0][1] * stepY + (stepY - items.player.height) / 2
 
-    tuxIceBlockNumber = 0
     changedRotation = EAST
     deadEndPoint = false
     moveAnimDuration = 1000
@@ -344,6 +301,7 @@ function runCode() {
         }
     }
 
+    //Append all the instructions from the procedure area.
     for(var j = 0; j < items.procedureModel.count; j++) {
         instructionName = items.procedureModel.get([j]).name
         procedureFunctionObject.procedureCode.append({ "name" : instructionName })
@@ -357,10 +315,7 @@ function runCode() {
 }
 
 function executeNextInstruction() {
-    currentInstruction = mainFunctionCode[codeIterator]
-    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
-
-    if(codeIterator < mainFunctionCode.length && !deadEndPoint && tuxIceBlockNumber < currentLevelBlocksCoordinates.length - 1) {
+    if(codeIterator < mainFunctionCode.length && !deadEndPoint) {
         items.mainFunctionCodeArea.currentIndex += 1
         mainFunctionCode[codeIterator].checkAndExecuteMovement()
     }
@@ -374,12 +329,10 @@ function deadEnd() {
 }
 
 function checkSuccessAndExecuteNextInstruction() {
-    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
-
-    var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0];
-    var fishY = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1];
-    var tuxX = currentLevelBlocksCoordinates[tuxIceBlockNumber][0]
-    var tuxY = currentLevelBlocksCoordinates[tuxIceBlockNumber][1]
+    var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0]
+    var fishY = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1]
+    var tuxX = Math.floor(items.player.x / stepX)
+    var tuxY = Math.floor(items.player.y / stepY)
 
     if(tuxX === fishX && tuxY === fishY) {
         codeIterator = 0

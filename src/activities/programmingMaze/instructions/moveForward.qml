@@ -50,120 +50,53 @@ Instruction {
         onStopped: executionComplete()
     }
 
+    function nextPositionExists(newX, newY) {
+        var newXPosition = Math.floor(newX / Activity.stepX)
+        var newYPosition = Math.floor(newY / Activity.stepY)
+        var currentLevelCoordinates = Activity.mazeBlocks[Activity.currentLevel][Activity.BLOCKS_DATA_INDEX]
+        for(var i = 0; i < currentLevelCoordinates.length; i++) {
+            if(currentLevelCoordinates[i][0] == newXPosition && currentLevelCoordinates[i][1] == newYPosition)
+                return true
+        }
+        return false
+    }
+
     //Function to check if the current movement is possible or not and then process the instruction accordingly
     function checkAndExecuteMovement() {
-        var changedX = Activity.items.player.x
-        var changedY = Activity.items.player.y
+        var currentX = Activity.items.player.x
+        var currentY = Activity.items.player.y
         var currentRotation = Activity.getPlayerRotation()
-        var currentLevelBlocksCoordinates = Activity.mazeBlocks[Activity.currentLevel][Activity.BLOCKS_DATA_INDEX]
-
-        var currentBlock = Activity.tuxIceBlockNumber
-        var isBackwardMovement = false
-        var nextBlock
-
-        var currentX = currentLevelBlocksCoordinates[currentBlock][0]
-        var currentY = currentLevelBlocksCoordinates[currentBlock][1]
-
-        // Checks if the tile at the next position exists.
+        var newX = currentX
+        var newY = currentY
         var nextTileExists = false
 
         if(currentRotation === Activity.EAST) {
-            for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                if(currentLevelBlocksCoordinates[i][0] === currentX + 1 && currentLevelBlocksCoordinates[i][1] === currentY) {
-                    nextTileExists = true
-                }
-            }
-            if(nextTileExists) {
-                if(Activity.isCoordinateVisited[currentX + 1][currentY]) {
-                    isBackwardMovement = true
-                }
-            }
+            newX = currentX + Activity.stepX
         }
 
         else if(currentRotation === Activity.WEST) {
-            for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                if(currentLevelBlocksCoordinates[i][0] === currentX - 1 && currentLevelBlocksCoordinates[i][1] === currentY) {
-                    nextTileExists = true
-                }
-            }
-            if(nextTileExists) {
-                if(Activity.isCoordinateVisited[currentX -1][currentY]) {
-                    isBackwardMovement = true
-                }
-            }
+            newX = currentX - Activity.stepX
         }
 
         else if(currentRotation === Activity.SOUTH) {
-            for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                if(currentLevelBlocksCoordinates[i][0] === currentX && currentLevelBlocksCoordinates[i][1] === currentY - 1) {
-                    nextTileExists = true
-                }
-            }
-            if(nextTileExists) {
-                if(Activity.isCoordinateVisited[currentX][currentY - 1]) {
-                    isBackwardMovement = true
-                }
-            }
+            newY = currentY - Activity.stepY
         }
 
         else if(currentRotation === Activity.NORTH) {
-            for(var i = 0; i < currentLevelBlocksCoordinates.length; i++) {
-                if(currentLevelBlocksCoordinates[i][0] === currentX && currentLevelBlocksCoordinates[i][1] === currentY + 1) {
-                    nextTileExists = true
-                }
-            }
-            if(nextTileExists) {
-                if(Activity.isCoordinateVisited[currentX][currentY + 1]) {
-                    isBackwardMovement = true
-                }
-            }
+            newY = currentY + Activity.stepY
         }
 
-        /**
-         * Since now the direction of movement is detected (forward or backward), Tux can now make his movement.
-         *
-         * If isBackwardMovement is true, then the next tile Tux will visit is the previous one, else Tux will visit the forward tile
-         */
-        if(isBackwardMovement)
-            nextBlock = Activity.tuxIceBlockNumber - 1
-        else
-            nextBlock = Activity.tuxIceBlockNumber + 1
-
-        var nextX = currentLevelBlocksCoordinates[nextBlock][0]
-        var nextY = currentLevelBlocksCoordinates[nextBlock][1]
+        nextTileExists = nextPositionExists(newX, newY)
 
         Activity.items.mainFunctionCodeArea.highlightMoveDuration = movementAnimationDuration
         Activity.items.procedureCodeArea.highlightMoveDuration = movementAnimationDuration
 
-        if(nextX - currentX > 0 && currentRotation === Activity.EAST) {
-            changedX += Activity.stepX
+        if(nextTileExists) {
+            xMovement = newX
+            yMovement = newY
+            movementAnimation.start()
         }
-        else if(nextX - currentX < 0 && currentRotation === Activity.WEST) {
-            changedX -= Activity.stepX
-        }
-        else if(nextY - currentY < 0 && currentRotation === Activity.SOUTH) {
-            changedY -= Activity.stepY
-        }
-        else if(nextY - currentY > 0 && currentRotation === Activity.NORTH) {
-            changedY += Activity.stepY
-        }
-        else {
+        else
             foundDeadEnd()
-            return
-        }
-
-        // If the current tile wasn't visited as a result of backward movement, mark it as true to indicate next time it is visited, it will because of backward movement
-        if(!isBackwardMovement) {
-            ++Activity.tuxIceBlockNumber;
-            Activity.isCoordinateVisited[currentX][currentY] = true
-        }
-        else {
-            --Activity.tuxIceBlockNumber;
-            Activity.isCoordinateVisited[currentX][currentY] = false
-        }
-
-        xMovement = changedX
-        yMovement = changedY
-        movementAnimation.start()
     }
 }
