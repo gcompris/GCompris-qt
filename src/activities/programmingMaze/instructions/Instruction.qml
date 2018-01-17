@@ -43,4 +43,9 @@ Item {
      * It will be caught by deadEnd() in it's parent file.
      */
     signal foundDeadEnd
+
+    function setCodeAreaHighlightMoveDuration() {
+        Activity.items.mainFunctionCodeArea.highlightMoveDuration = movementAnimationDuration
+        Activity.items.procedureCodeArea.highlightMoveDuration = movementAnimationDuration
+    }
 }

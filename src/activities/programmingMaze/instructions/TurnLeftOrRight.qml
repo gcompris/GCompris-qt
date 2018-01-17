@@ -47,8 +47,7 @@ Instruction {
         else
             Activity.changedRotation = (currentRotation + 90) % 360
 
-        Activity.items.mainFunctionCodeArea.highlightMoveDuration = turnLeftOrRight.movementAnimationDuration
-        Activity.items.procedureCodeArea.highlightMoveDuration = turnLeftOrRight.movementAnimationDuration
+        setCodeAreaHighlightMoveDuration()
 
         turnLeftOrRight.finalRotation = Activity.changedRotation
         movementAnimation.start()

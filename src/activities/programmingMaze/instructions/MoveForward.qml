@@ -88,8 +88,7 @@ Instruction {
 
         nextTileExists = nextPositionExists(newX, newY)
 
-        Activity.items.mainFunctionCodeArea.highlightMoveDuration = movementAnimationDuration
-        Activity.items.procedureCodeArea.highlightMoveDuration = movementAnimationDuration
+        setCodeAreaHighlightMoveDuration()
 
         if(nextTileExists) {
             xMovement = newX
