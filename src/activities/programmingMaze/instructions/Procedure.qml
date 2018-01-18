@@ -27,7 +27,7 @@ Instruction {
     id: callProcedure
 
     property alias procedureCode: procedureCode
-    property int procedureCodeIterator: parent.items.procedureCodeArea.currentIndex
+    property int procedureCodeIterator: -1
 
     //Stores the list of instructions to be executed in procedure code area
     ListModel {
@@ -36,12 +36,12 @@ Instruction {
 
     function checkAndExecuteMovement() {
         if(!Activity.deadEndPoint && callProcedure.procedureCodeIterator < callProcedure.procedureCode.count - 1) {
-            parent.items.procedureCodeArea.currentIndex += 1
+            callProcedure.procedureCodeIterator++
             var currentInstruction = procedureCode.get(callProcedure.procedureCodeIterator).name
             Activity.procedureCode[currentInstruction].checkAndExecuteMovement()
         }
         else {
-            parent.items.procedureCodeArea.currentIndex = -1
+            callProcedure.procedureCodeIterator = -1
             executionComplete()
         }
     }
@@ -66,5 +66,9 @@ Instruction {
         else {
             checkAndExecuteMovement()
         }
+    }
+
+    Component.onCompleted: {
+        parent.items.procedureCodeArea.currentIndex = Qt.binding(function() { return callProcedure.procedureCodeIterator })
     }
 }
