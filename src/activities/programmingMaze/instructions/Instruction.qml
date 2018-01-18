@@ -40,7 +40,7 @@ Item {
     /**
      * This signal is emitted if Tux cannot move according to the current executed instruction.
      *
-     * It will be caught by deadEnd() in it's parent file.
+     * It will be caught by deadEnd() in its parent file.
      */
     signal foundDeadEnd
 

@@ -147,8 +147,8 @@ var MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX = 3
 /**
  * Stores the qml file components of all the instructions used in the activity.
  *
- * To add a new instruction, add it's component here, create it's object in initLevel() along with the other instructions
- * for procedure area, and call it's destroy function in destroyInstructionObjects().
+ * To add a new instruction, add its component here, create its object in initLevel() along with the other instructions
+ * for procedure area, and call its destroy function in destroyInstructionObjects().
  */
 var instructionComponents = {
     "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/MoveForward.qml"),
