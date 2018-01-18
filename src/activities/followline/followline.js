@@ -63,9 +63,9 @@ function initLevel() {
         var newy = y + Math.sin(angle) * width * 0.5
         var newx = x + Math.cos(angle) * width * 0.5
         angle += direction
-        if(angle > Math.PI / 4)
+        if(angle > Math.PI / 6)
             direction = - directionStep
-        else if(angle < - Math.PI / 4)
+        else if(angle < - Math.PI / 5)
             direction = directionStep
         if(y > items.background.height * 0.6)
             direction = - directionStep
@@ -77,7 +77,7 @@ function initLevel() {
         x = newx
         y = newy
         index++
-    } while(x < items.background.width * 0.9)
+    } while(x < items.background.width * 0.85)
     items.lastLock = index - 1
 }
 

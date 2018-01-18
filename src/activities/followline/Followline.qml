@@ -65,7 +65,7 @@ ActivityBase {
         Image {
             id: fireman
             source: Activity.url + "fireman.svg"
-            sourceSize.width: 182 * ApplicationInfo.ratio
+            sourceSize.width: 150 * ApplicationInfo.ratio
             anchors {
                 left: parent.left
                 verticalCenter: parent.verticalCenter
