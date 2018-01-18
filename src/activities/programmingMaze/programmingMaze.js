@@ -201,7 +201,7 @@ function initLevel() {
     destroyInstructionObjects()
 
     items.mainFunctionCodeArea.currentIndex = -1
-    items.procedureCodeArea.currentIndex = -1
+    items.procedureCodeArea.procedureIterator = -1
 
     //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureFunctionObject's slots.
     if(currentLevel >= 2) {

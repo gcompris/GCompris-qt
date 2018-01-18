@@ -399,6 +399,7 @@ ActivityBase {
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             visible: bar.level > 2
+            property alias procedureIterator: procedureCodeArea.currentIndex
         }
 
         Image {
