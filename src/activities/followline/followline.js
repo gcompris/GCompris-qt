@@ -63,7 +63,7 @@ function initLevel() {
         var newy = y + Math.sin(angle) * width * 0.5
         var newx = x + Math.cos(angle) * width * 0.5
         angle += direction
-        if(angle > Math.PI / 6)
+        if(angle > Math.PI / 5)
             direction = - directionStep
         else if(angle < - Math.PI / 5)
             direction = directionStep
