@@ -18,17 +18,22 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "ascending_order/Ascending_order.qml"
-  difficulty: 2
-  icon: "ascending_order/ascending_order.svg"
-  author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
-  demo: true
-  title: qsTr("Ascending and Descending Order")
-  description: qsTr("Arrange the given numbers in ascending or descending order as instructed")
-//  intro: "arrange the numbers in the correct order by placing a number in it's correct position"
-  goal: qsTr("arranging numbers in ascending or descending order as instructed")
-  prerequisite: qsTr("Move, drag and drop using mouse")
-  manual: qsTr("You are provided with few numbers. Drag and Drop the numbers in its correct position to reorder the numbers in ascending or descending order as instructed")
-  section: "math"
-  createdInVersion: 8000
+    name: "ascending_order/AscendingOrder.qml"
+    difficulty: 2
+    icon: "ascending_order/ascending_order.svg"
+    author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
+    demo: true
+    //: Activity title
+    title: qsTr("Ascending and Descending Order")
+    //: Help title
+    description: qsTr("Arrange the given numbers in ascending or descending order as instructed")
+    //: intro: "Arrange the numbers in the correct order by placing a number in it's correct position"
+    //: Help goal
+    goal: qsTr("Arranging numbers in ascending or descending order as instructed")
+    //: Help prerequisite
+    prerequisite: qsTr("Move, drag and drop using mouse")
+    //: Help manual
+    manual: qsTr("You are provided with few numbers. Drag and Drop the numbers in its correct position to reorder the numbers in ascending or descending order as instructed")
+    section: "math"
+    createdInVersion: 8000
 }

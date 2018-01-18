@@ -1,4 +1,4 @@
-/* GCompris - alphabetical_order.qml
+/* GCompris - AlphabeticalOrder.qml
  *
  * Copyright (C) 2016 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
  *
@@ -19,12 +19,13 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.1
+import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 import "../ascending_order"
 
-Ascending_order {
+AscendingOrder {
     id: activity
     mode: "alphabets"
 }

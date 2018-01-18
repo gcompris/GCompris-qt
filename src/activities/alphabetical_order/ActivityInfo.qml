@@ -18,17 +18,22 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "alphabetical_order/Alphabetical_order.qml"
-  difficulty: 2
-  icon: "alphabetical_order/alphabetical_order.svg"
-  author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
-  demo: true
-  title: "Alphabetical Order"
-  description: qsTr("Arrange the given alphabets in ascending or descending order as instructed")
-  //intro: "arrange the alphabets in the correct order by placing an alphabet in it's correct position"
-  goal: qsTr("arranging alphabets in ascending or descending order as instructed")
-  prerequisite: qsTr("Move, drag and drop using mouse")
-  manual: qsTr("You are provided with few alphabets. Drag and Drop the alphabets in its correct position to reorder the numbers in ascending or descending order as instructed")
-  section: "math"
-  createdInVersion: 8000
+    name: "alphabetical_order/AlphabeticalOrder.qml"
+    difficulty: 2
+    icon: "alphabetical_order/alphabetical_order.svg"
+    author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
+    demo: true
+    //: Activity title
+    title: qsTr("Alphabetical Order")
+    //: Help title
+    description: qsTr("Arrange the given alphabets in ascending or descending order as instructed")
+    //intro: "Arrange the alphabets in the correct order by placing an alphabet in it's correct position"
+    //: Help goal
+    goal: qsTr("Arranging alphabets in ascending or descending order as instructed")
+    //: Help prerequisite
+    prerequisite: qsTr("Move, drag and drop using mouse")
+    //: Help manual
+    manual: qsTr("You are provided with few alphabets. Drag and Drop the alphabets in its correct position to reorder the numbers in ascending or descending order as instructed")
+    section: "reading"
+    createdInVersion: 8000
 }
