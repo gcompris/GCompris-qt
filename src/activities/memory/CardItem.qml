@@ -58,7 +58,7 @@ Flipable {
 
     Timer {
         id: animationTimer
-        interval: items.tuxTurn ? 1500 : 750
+        interval: 1500
         running: false
         repeat: false
         onTriggered: selectionReady()
