@@ -52,8 +52,9 @@ Instruction {
     function checkSuccessAndExecuteNextInstruction() {
         var fishX = Activity.mazeBlocks[Activity.currentLevel][Activity.BLOCKS_FISH_INDEX][0][0]
         var fishY = Activity.mazeBlocks[Activity.currentLevel][Activity.BLOCKS_FISH_INDEX][0][1]
-        var tuxX = Math.floor(parent.items.player.x / Activity.stepX)
-        var tuxY = Math.floor(parent.items.player.y / Activity.stepY)
+
+        var tuxX = Math.floor(Activity.items.player.playerCenterX / Activity.stepX)
+        var tuxY = Math.floor(Activity.items.player.playerCenterY / Activity.stepY)
 
         if(tuxX === fishX && tuxY === fishY) {
             Activity.codeIterator = 0

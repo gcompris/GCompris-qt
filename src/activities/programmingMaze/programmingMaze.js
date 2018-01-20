@@ -337,8 +337,9 @@ function deadEnd() {
 function checkSuccessAndExecuteNextInstruction() {
     var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0]
     var fishY = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1]
-    var tuxX = Math.floor(items.player.x / stepX)
-    var tuxY = Math.floor(items.player.y / stepY)
+
+    var tuxX = Math.floor(items.player.playerCenterX / stepX)
+    var tuxY = Math.floor(items.player.playerCenterY / stepY)
 
     if(tuxX === fishX && tuxY === fishY) {
         codeIterator = 0

@@ -215,6 +215,8 @@ ActivityBase {
             sourceSize.width: background.width / 12
             x: 0; y: 0; z: 11
             property int duration: 1000
+            property real playerCenterX: x + width / 2
+            property real playerCenterY: y + height / 2
             rotation: 0
 
             signal init
