@@ -163,7 +163,7 @@ Item {
     Image {
         id: tutorialImage
         width: parent.width * 0.8
-        height: (parent.height - nextButton.height) * 0.6
+        height: (parent.height - nextButton.height) * 0.48
         fillMode: Image.PreserveAspectFit
         source: tutorialDetails ? tutorialDetails[tutorialNumber].instructionImage : ""
         anchors {
