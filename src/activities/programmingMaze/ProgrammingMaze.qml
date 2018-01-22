@@ -77,6 +77,7 @@ ActivityBase {
             property alias procedureCodeArea: procedureCodeArea
             property alias player: player
             property alias constraintInstruction: constraintInstruction
+            property alias tutorialImage: tutorialImage
             property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
             property int maxNumberOfInstructionsAllowed
@@ -213,10 +214,10 @@ ActivityBase {
             id: player
             source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
             sourceSize.width: background.width / 12
-            x: 0; y: 0; z: 11
+            x: 0; y: 0
             property int duration: 1000
-            property real playerCenterX: x + width / 2
-            property real playerCenterY: y + height / 2
+            readonly property real playerCenterX: x + width / 2
+            readonly property real playerCenterY: y + height / 2
             rotation: 0
 
             signal init
@@ -317,21 +318,26 @@ ActivityBase {
 
                         onClicked: {
                             insertIntoModel()
-                            if(items.constraintInstruction.opacity)
-                                items.constraintInstruction.hide()
                         }
                         onPressed: {
                             insertIntoModel()
+                        }
+
+                        function isMaxNumberOfInstructions() {
+                            if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed) {
+                                constraintInstruction.changeConstraintInstructionOpacity()
+                                return true
+                            }
+                            return false
+                        }
+
+                        function insertIntoModel() {
                             if(items.constraintInstruction.opacity)
                                 items.constraintInstruction.hide()
-                        }
-                        function insertIntoModel() {
+
                             if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE) {
                                 if(!procedureCodeArea.isEditingInstruction) {
-                                    if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed) {
-                                        constraintInstruction.changeConstraintInstructionOpacity()
-                                    }
-                                    else {
+                                    if(!isMaxNumberOfInstructions()) {
                                         clickedAnim.start()
                                         procedureModel.append({ "name": name })
                                         items.numberOfInstructionsAdded++
@@ -345,10 +351,7 @@ ActivityBase {
                             }
                             if(background.insertIntoMain) {
                                 if(!mainFunctionCodeArea.isEditingInstruction) {
-                                    if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed) {
-                                        constraintInstruction.changeConstraintInstructionOpacity()
-                                    }
-                                    else {
+                                    if(!isMaxNumberOfInstructions()) {
                                         clickedAnim.start()
                                         mainFunctionModel.append({ "name": name })
                                         items.numberOfInstructionsAdded++
@@ -565,6 +568,30 @@ ActivityBase {
             }
         }
 
+        Image {
+            id: tutorialImage
+            source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+            anchors.fill: parent
+            z: 5
+            visible: true
+
+            property bool shownProcedureTutorialInstructions: false
+
+            Tutorial {
+                id:tutorialSection
+                tutorialDetails: bar.level <= 2 ? Activity.mainTutorialInstructions : Activity.procedureTutorialInstructions
+                onSkipPressed: {
+                    Activity.initLevel()
+                    tutorialImage.visible = false
+                    tutorialNumber = 0
+                }
+            }
+            onVisibleChanged: {
+                if(tutorialImage.visible && tutorialImage.shownProcedureTutorialInstructions)
+                    tutorialSection.visible = true
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -572,7 +599,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: tutorialImage.visible ? help | home : help | home | level | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

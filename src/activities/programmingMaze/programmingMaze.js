@@ -166,6 +166,51 @@ var instructionComponents = {
  */
 var procedureFunctionObject
 
+var mainTutorialInstructions = [
+            {
+                "instruction": qsTr("<b><h7>Instruction Area</b></h7>" +
+                                    "There are 4 commands in the order:" +
+                                    "<b><li>1. Move forward:</b> Moves Tux one step forward in the direction it is facing.</li>" +
+                                    "<b><li>2. Turn left:</b> Turns Tux in the left direction from where it is facing.</li>" +
+                                    "<b><li>3. Turn right:</b> Turns Tux in the right direction from where it is facing.</li>"),
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial1.png"
+            },
+            {
+                "instruction": qsTr("<b><h7>Main Function:</b></h7>" +
+                                    "<li>-The execution of code starts here on running.</li>" +
+                                    "<li>-Click on any instruction in the <b>instruction area</b> to add them to the <b>Main Function</b></li>" +
+                                    "<li>-The instructions will execute in order until there's none left, dead-end or Tux reaches the fish.</li>"),
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial2.png"
+            },
+            {
+                "instruction": qsTr("Below the instruction area, there is a <b>constraint which tells the number of instructions you can use in the code.</b>"),
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial3.png"
+            },
+            {
+                "instruction": qsTr("To <b>edit an instruction</b>, click on it and then select the instruction from the instruction area which you want to replace it with."),
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial4.png"
+            },
+            {
+                "instruction": qsTr("<li>-To <b>delete</b> an instruction, <b>drag it outside the code area and release the mouse.</b></li>" +
+                                    "<li>-To <b>move</b> an instruction to another position, <b>drag and drop it to the place intended.</b></li>"),
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial5.png"
+            },
+            {
+                "instruction": qsTr("<li>-If you fail to reach the fish, <b>click on Tux to reset it without clearing the code.</b></li>" +
+                                    "<li>-Click the <b>Reload</b> button to restart the level.</li>"),
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial6.png"
+            }
+        ]
+
+var procedureTutorialInstructions = [
+            {
+                "instruction": qsTr("<b><h7>Procedure:</b></h7>" +
+                                    "<li>-<b>Procedure</b> is a reusable set of instructions which can be <b>used in a code by calling it where needed.</b></li>" +
+                                    "<li>-To <b>switch</b> between the <b>Procedure area</b> and <b>Main Function area</b> to add your code, click on the label <b>Procedure</b> or <b>Main Function</b>.</li>"),
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial7.png"
+            },
+        ]
+
 function start(items_) {
     items = items_
     currentLevel = 0
@@ -205,6 +250,11 @@ function initLevel() {
 
     //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureFunctionObject's slots.
     if(currentLevel >= 2) {
+        if(!items.tutorialImage.shownProcedureTutorialInstructions) {
+            items.tutorialImage.shownProcedureTutorialInstructions = true
+            items.tutorialImage.visible = true
+        }
+
         procedureFunctionObject = instructionComponents[CALL_PROCEDURE].createObject(items.background)
         procedureCode[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject(procedureFunctionObject)
         procedureCode[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject(procedureFunctionObject, { "turnDirection": "turn-left" })
