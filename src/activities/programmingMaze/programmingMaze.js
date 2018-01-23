@@ -41,7 +41,7 @@ var mazeBlocks = [
                  TURN_LEFT,
                  TURN_RIGHT],
                 //constraint - maximum number of instructions allowed
-                2
+                4
             ],
             //level two
             [
@@ -53,9 +53,53 @@ var mazeBlocks = [
                  TURN_LEFT,
                  TURN_RIGHT],
                 //constraint - maximum number of instructions allowed
-                6
+                8
             ],
             //level three
+            [
+                [[0,3], [0,2], [0,1],
+                 [1,1], [2,1], [3,1],
+                 [3,2],
+                 [3,3], [2,3]],
+                //fish index
+                [[2,3]],
+                //instruction set
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT],
+                //constraint - maximum number of instructions allowed
+                14
+            ],
+            //level four
+            [
+                [[0,1], [1,1], [1,0], [2,0], [3,0], [4,0],
+                 [1,2], [1,3], [2,3], [3,3], [4,3], [4,2]],
+                //fish index
+                [[4,2]],
+                //instruction set
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT],
+                //constraint - maximum number of instructions allowed
+                14
+            ],
+            //level five
+            [
+                [[0,1], [0,0], [1,0], [2,0], [3,0], [4,0],
+                 [0,2], [0,3],
+                 [1,3], [2,3], [3,3], [4,3],
+                 [2,1], [2,2],
+                 [4,2]],
+                //fish index
+                [[4,2]],
+                //instruction set
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT],
+                //constraint - maximum number of instructions allowed
+                15
+            ],
+            //level six
             [
                 [[1,1], [2,1], [3,1], [3,2], [3,3], [2,3], [1,3]],
                 [[1,3]],
@@ -65,21 +109,21 @@ var mazeBlocks = [
                  TURN_RIGHT,
                  CALL_PROCEDURE],
                 //constraint - maximum number of instructions allowed
-                6
+                7
             ],
-            //level four
+            //level seven
             [
-                [[0,3], [1,3], [1,2], [2,2], [2,1], [3,1]],
-                [[3,1]],
+                [[0,3], [1,3], [1,2], [2,2], [2,1], [3,1], [3,0], [4,0]],
+                [[4,0]],
                 //instruction set
                 [MOVE_FORWARD,
                  TURN_LEFT,
                  TURN_RIGHT,
                  CALL_PROCEDURE],
                 //constraint - maximum number of instructions allowed
-                7
+                12
             ],
-            //level five
+            //level eight
             [
                 [[0,3], [0,2], [0,1], [0,0], [1,0], [2,0], [2,1],
                  [2,2], [2,3], [3,3], [4,3], [4,2], [4,1], [4,0]],
@@ -249,7 +293,7 @@ function initLevel() {
     items.procedureCodeArea.procedureIterator = -1
 
     //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureFunctionObject's slots.
-    if(currentLevel >= 2) {
+    if(currentLevel >= 5) {
         if(!items.tutorialImage.shownProcedureTutorialInstructions) {
             items.tutorialImage.shownProcedureTutorialInstructions = true
             items.tutorialImage.visible = true

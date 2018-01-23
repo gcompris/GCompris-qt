@@ -177,7 +177,7 @@ ActivityBase {
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
-                text: qsTr("Code %1 instructions to reach the fish").arg(items.maxNumberOfInstructionsAllowed)
+                text: qsTr("Code maximum %1 instructions to reach the fish").arg(items.maxNumberOfInstructionsAllowed)
             }
         }
 
@@ -403,7 +403,7 @@ ActivityBase {
             currentModel: procedureModel
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            visible: bar.level > 2
+            visible: bar.level >= 6
             property alias procedureIterator: procedureCodeArea.currentIndex
         }
 
