@@ -113,6 +113,21 @@ var mazeBlocks = [
             ],
             //level seven
             [
+                [[0,3], [1,3], [2,3],
+                 [2,2], [2,1],
+                 [3,1], [4,1],
+                 [4,2], [4,3]],
+                [[4,3]],
+                //instruction set
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT,
+                 CALL_PROCEDURE],
+                //constraint - maximum number of instructions allowed
+                10
+            ],
+            //level eight
+            [
                 [[0,3], [1,3], [1,2], [2,2], [2,1], [3,1], [3,0], [4,0]],
                 [[4,0]],
                 //instruction set
@@ -123,7 +138,21 @@ var mazeBlocks = [
                 //constraint - maximum number of instructions allowed
                 12
             ],
-            //level eight
+            //level nine
+            [
+                [[1,1], [0,0], [1,0], [2,0], [2,1], [3,0], [4,0],
+                 [4,1], [4,2], [4,3],
+                 [3,3], [2,3], [1,3], [0,3], [0,2]],
+                [[0,2]],
+                //instruction set
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT,
+                 CALL_PROCEDURE],
+                //constraint - maximum number of instructions allowed
+                14
+            ],
+            //level ten
             [
                 [[0,3], [0,2], [0,1], [0,0], [1,0], [2,0], [2,1],
                  [2,2], [2,3], [3,3], [4,3], [4,2], [4,1], [4,0]],
