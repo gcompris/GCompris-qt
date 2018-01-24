@@ -78,6 +78,7 @@ ActivityBase {
             property alias player: player
             property alias constraintInstruction: constraintInstruction
             property alias tutorialImage: tutorialImage
+            property alias fish: fish
             property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
             property int maxNumberOfInstructionsAllowed
@@ -199,21 +200,20 @@ ActivityBase {
                 width: background.width / 10
                 height: (background.height - background.height / 10) / 10
                 source: Activity.reverseCountUrl + "iceblock.svg"
-
-                Image {
-                    id: fish
-                    anchors.centerIn: parent
-                    sourceSize.width: background.width / 12
-                    source: (modelData[0] == Activity.mazeBlocks[Activity.currentLevel].fish[0] && modelData[1] == Activity.mazeBlocks[Activity.currentLevel].fish[1]) ? Activity.reverseCountUrl + "blue-fish.svg" : ""
-                    z: 5
-                }
             }
+        }
+
+        Image {
+            id: fish
+            sourceSize.width: background.width / 12
+            source: Activity.reverseCountUrl + "blue-fish.svg"
         }
 
         Image {
             id: player
             source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
             sourceSize.width: background.width / 12
+            z: 1
             property int duration: 1000
             readonly property real playerCenterX: x + width / 2
             readonly property real playerCenterY: y + height / 2

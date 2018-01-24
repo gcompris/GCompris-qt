@@ -339,6 +339,10 @@ function initLevel() {
     items.player.x = currentLevelBlocksCoordinates[0][0] * stepX + (stepX - items.player.width) / 2
     items.player.y = currentLevelBlocksCoordinates[0][1] * stepY + (stepY - items.player.height) / 2
 
+    //Center fish at it's co-ordinate
+    items.fish.x = mazeBlocks[currentLevel].fish[0] * stepX + (stepX - items.fish.width) / 2
+    items.fish.y = mazeBlocks[currentLevel].fish[1] * stepY + (stepY - items.fish.height) / 2
+
     changedRotation = EAST
     deadEndPoint = false
     moveAnimDuration = 1000
