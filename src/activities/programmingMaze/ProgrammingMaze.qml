@@ -177,7 +177,7 @@ ActivityBase {
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
-                text: qsTr("Code maximum %1 instructions to reach the fish").arg(items.maxNumberOfInstructionsAllowed)
+                text: qsTr("Reach the fish in less than %1 instructions.").arg(items.maxNumberOfInstructionsAllowed)
             }
         }
 
@@ -204,7 +204,7 @@ ActivityBase {
                     id: fish
                     anchors.centerIn: parent
                     sourceSize.width: background.width / 12
-                    source: (modelData[0] == Activity.mazeBlocks[Activity.currentLevel][1][0][0] && modelData[1] == Activity.mazeBlocks[Activity.currentLevel][1][0][1]) ? Activity.reverseCountUrl + "blue-fish.svg" : ""
+                    source: (modelData[0] == Activity.mazeBlocks[Activity.currentLevel].fish[0] && modelData[1] == Activity.mazeBlocks[Activity.currentLevel].fish[1]) ? Activity.reverseCountUrl + "blue-fish.svg" : ""
                     z: 5
                 }
             }
@@ -214,7 +214,6 @@ ActivityBase {
             id: player
             source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
             sourceSize.width: background.width / 12
-            x: 0; y: 0
             property int duration: 1000
             readonly property real playerCenterX: x + width / 2
             readonly property real playerCenterY: y + height / 2
@@ -317,51 +316,40 @@ ActivityBase {
                         signal clicked
 
                         onClicked: {
-                            insertIntoModel()
+                            checkModelAndInsert()
                         }
                         onPressed: {
-                            insertIntoModel()
+                            checkModelAndInsert()
                         }
 
-                        function isMaxNumberOfInstructions() {
-                            if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed) {
-                                constraintInstruction.changeConstraintInstructionOpacity()
-                                return true
-                            }
-                            return false
-                        }
-
-                        function insertIntoModel() {
+                        function checkModelAndInsert() {
                             if(items.constraintInstruction.opacity)
                                 items.constraintInstruction.hide()
 
-                            if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE) {
-                                if(!procedureCodeArea.isEditingInstruction) {
-                                    if(!isMaxNumberOfInstructions()) {
-                                        clickedAnim.start()
-                                        procedureModel.append({ "name": name })
-                                        items.numberOfInstructionsAdded++
-                                    }
-                                }
+                            if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE)
+                                insertIntoModel(procedureModel, procedureCodeArea)
+                            else if(background.insertIntoMain)
+                                insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
+                        }
+
+                        /**
+                         * If we are adding an instruction, append it to the model if number of instructions added is less than the maximum number of instructions allowed.
+                         * If editing, replace it with the selected instruction in the code area.
+                         */
+                        function insertIntoModel(model, area) {
+                            if(!area.isEditingInstruction) {
+                                if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
+                                    constraintInstruction.changeConstraintInstructionOpacity()
                                 else {
                                     clickedAnim.start()
-                                    procedureModel.set(procedureCodeArea.initialEditItemIndex, {"name": name}, 1)
-                                    procedureCodeArea.isEditingInstruction = false
+                                    model.append({ "name": name })
+                                    items.numberOfInstructionsAdded++
                                 }
                             }
-                            if(background.insertIntoMain) {
-                                if(!mainFunctionCodeArea.isEditingInstruction) {
-                                    if(!isMaxNumberOfInstructions()) {
-                                        clickedAnim.start()
-                                        mainFunctionModel.append({ "name": name })
-                                        items.numberOfInstructionsAdded++
-                                    }
-                                }
-                                else {
-                                    clickedAnim.start()
-                                    mainFunctionModel.set(mainFunctionCodeArea.initialEditItemIndex, {"name": name}, 1)
-                                    mainFunctionCodeArea.isEditingInstruction = false
-                                }
+                            else {
+                                clickedAnim.start()
+                                model.set(area.initialEditItemIndex, {"name": name}, 1)
+                                area.isEditingInstruction = false
                             }
                         }
                     }

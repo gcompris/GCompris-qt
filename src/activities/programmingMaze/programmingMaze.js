@@ -31,140 +31,114 @@ var CALL_PROCEDURE = "call-procedure"
 
 var mazeBlocks = [
             //level one
-            [
-                //maze blocks
-                [[1,2], [2,2], [3,2]],
-                //fish index
-                [[3,2]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT],
-                //constraint - maximum number of instructions allowed
-                4
-            ],
+            {
+                "map": [[1,2], [2,2], [3,2]],
+                "fish": [3,2],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT],
+                "maxNumberOfInstructions": 4
+            },
             //level two
-            [
-                [[1,3], [2,3], [2,2], [2,1], [3,1]],
-                //fish index
-                [[3,1]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT],
-                //constraint - maximum number of instructions allowed
-                8
-            ],
+            {
+                "map": [[1,3], [2,3], [2,2], [2,1], [3,1]],
+                "fish": [3,1],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT],
+                "maxNumberOfInstructions": 8
+            },
             //level three
-            [
-                [[0,3], [0,2], [0,1],
-                 [1,1], [2,1], [3,1],
-                 [3,2],
-                 [3,3], [2,3]],
-                //fish index
-                [[2,3]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT],
-                //constraint - maximum number of instructions allowed
-                14
-            ],
+            {
+                "map": [[0,3], [0,2], [0,1],
+                        [1,1], [2,1], [3,1],
+                        [3,2],
+                        [3,3], [2,3]],
+                "fish": [2,3],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT],
+                "maxNumberOfInstructions": 14
+            },
             //level four
-            [
-                [[0,1], [1,1], [1,0], [2,0], [3,0], [4,0],
-                 [1,2], [1,3], [2,3], [3,3], [4,3], [4,2]],
-                //fish index
-                [[4,2]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT],
-                //constraint - maximum number of instructions allowed
-                14
-            ],
+            {
+                "map": [[0,1], [1,1], [1,0], [2,0], [3,0], [4,0],
+                        [1,2], [1,3], [2,3], [3,3], [4,3], [4,2]],
+                "fish": [4,2],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT],
+                "maxNumberOfInstructions": 14
+            },
             //level five
-            [
-                [[0,1], [0,0], [1,0], [2,0], [3,0], [4,0],
-                 [0,2], [0,3],
-                 [1,3], [2,3], [3,3], [4,3],
-                 [2,1], [2,2],
-                 [4,2]],
-                //fish index
-                [[4,2]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT],
-                //constraint - maximum number of instructions allowed
-                15
-            ],
+            {
+                "map": [[0,1], [0,0], [1,0], [2,0], [3,0], [4,0],
+                        [0,2], [0,3],
+                        [1,3], [2,3], [3,3], [4,3],
+                        [2,1], [2,2],
+                        [4,2]],
+                "fish": [4,2],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT],
+                "maxNumberOfInstructions": 15
+            },
             //level six
-            [
-                [[1,1], [2,1], [3,1], [3,2], [3,3], [2,3], [1,3]],
-                [[1,3]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT,
-                 CALL_PROCEDURE],
-                //constraint - maximum number of instructions allowed
-                7
-            ],
+            {
+                "map": [[1,1], [2,1], [3,1], [3,2], [3,3], [2,3], [1,3]],
+                "fish": [1,3],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT,
+                                 CALL_PROCEDURE],
+                "maxNumberOfInstructions": 7
+            },
             //level seven
-            [
-                [[0,3], [1,3], [2,3],
-                 [2,2], [2,1],
-                 [3,1], [4,1],
-                 [4,2], [4,3]],
-                [[4,3]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT,
-                 CALL_PROCEDURE],
-                //constraint - maximum number of instructions allowed
-                10
-            ],
+            {
+                "map": [[0,3], [1,3], [2,3],
+                        [2,2], [2,1],
+                        [3,1], [4,1],
+                        [4,2], [4,3]],
+                "fish": [4,3],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT,
+                                 CALL_PROCEDURE],
+                "maxNumberOfInstructions": 10
+            },
             //level eight
-            [
-                [[0,3], [1,3], [1,2], [2,2], [2,1], [3,1], [3,0], [4,0]],
-                [[4,0]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT,
-                 CALL_PROCEDURE],
-                //constraint - maximum number of instructions allowed
-                12
-            ],
+            {
+                "map": [[0,3], [1,3], [1,2], [2,2], [2,1], [3,1], [3,0], [4,0]],
+                "fish": [4,0],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT,
+                                 CALL_PROCEDURE],
+                "maxNumberOfInstructions": 12
+            },
             //level nine
-            [
-                [[1,1], [0,0], [1,0], [2,0], [2,1], [3,0], [4,0],
-                 [4,1], [4,2], [4,3],
-                 [3,3], [2,3], [1,3], [0,3], [0,2]],
-                [[0,2]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT,
-                 CALL_PROCEDURE],
-                //constraint - maximum number of instructions allowed
-                14
-            ],
+            {
+                "map": [[1,1], [0,0], [1,0], [2,0], [2,1], [3,0], [4,0],
+                        [4,1], [4,2], [4,3],
+                        [3,3], [2,3], [1,3], [0,3], [0,2]],
+                "fish": [0,2],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT,
+                                 CALL_PROCEDURE],
+                "maxNumberOfInstructions": 14
+            },
             //level ten
-            [
-                [[0,3], [0,2], [0,1], [0,0], [1,0], [2,0], [2,1],
-                 [2,2], [2,3], [3,3], [4,3], [4,2], [4,1], [4,0]],
-                [[4,0]],
-                //instruction set
-                [MOVE_FORWARD,
-                 TURN_LEFT,
-                 TURN_RIGHT,
-                 CALL_PROCEDURE],
-                //constraint - maximum number of instructions allowed
-                15
-            ]
+            {
+                "map": [[0,3], [0,2], [0,1], [0,0], [1,0], [2,0], [2,1],
+                        [2,2], [2,3], [3,3], [4,3], [4,2], [4,1], [4,0]],
+                "fish": [4,0],
+                "instructions": [MOVE_FORWARD,
+                                 TURN_LEFT,
+                                 TURN_RIGHT,
+                                 CALL_PROCEDURE],
+                "maxNumberOfInstructions": 15
+            }
         ]
 
 // Length of 1 step along x-axis
@@ -212,11 +186,6 @@ var WEST = 90
 var SOUTH = 180
 var EAST = 270
 
-var BLOCKS_DATA_INDEX = 0
-var BLOCKS_FISH_INDEX = 1
-var BLOCKS_INSTRUCTION_INDEX = 2
-var MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX = 3
-
 /**
  * Stores the qml file components of all the instructions used in the activity.
  *
@@ -246,32 +215,32 @@ var mainTutorialInstructions = [
                                     "<b><li>1. Move forward:</b> Moves Tux one step forward in the direction it is facing.</li>" +
                                     "<b><li>2. Turn left:</b> Turns Tux in the left direction from where it is facing.</li>" +
                                     "<b><li>3. Turn right:</b> Turns Tux in the right direction from where it is facing.</li>"),
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial1.png"
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial1.png"
             },
             {
                 "instruction": qsTr("<b><h7>Main Function:</b></h7>" +
                                     "<li>-The execution of code starts here on running.</li>" +
                                     "<li>-Click on any instruction in the <b>instruction area</b> to add them to the <b>Main Function</b></li>" +
                                     "<li>-The instructions will execute in order until there's none left, dead-end or Tux reaches the fish.</li>"),
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial2.png"
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial2.png"
             },
             {
                 "instruction": qsTr("Below the instruction area, there is a <b>constraint which tells the number of instructions you can use in the code.</b>"),
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial3.png"
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial3.png"
             },
             {
                 "instruction": qsTr("To <b>edit an instruction</b>, click on it and then select the instruction from the instruction area which you want to replace it with."),
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial4.png"
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial4.png"
             },
             {
                 "instruction": qsTr("<li>-To <b>delete</b> an instruction, <b>drag it outside the code area and release the mouse.</b></li>" +
                                     "<li>-To <b>move</b> an instruction to another position, <b>drag and drop it to the place intended.</b></li>"),
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial5.png"
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial5.png"
             },
             {
                 "instruction": qsTr("<li>-If you fail to reach the fish, <b>click on Tux to reset it without clearing the code.</b></li>" +
                                     "<li>-Click the <b>Reload</b> button to restart the level.</li>"),
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial6.png"
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial6.png"
             }
         ]
 
@@ -280,7 +249,7 @@ var procedureTutorialInstructions = [
                 "instruction": qsTr("<b><h7>Procedure:</b></h7>" +
                                     "<li>-<b>Procedure</b> is a reusable set of instructions which can be <b>used in a code by calling it where needed.</b></li>" +
                                     "<li>-To <b>switch</b> between the <b>Procedure area</b> and <b>Main Function area</b> to add your code, click on the label <b>Procedure</b> or <b>Main Function</b>.</li>"),
-                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/Tutorial7.png"
+                "instructionImage": "qrc:/gcompris/src/activities/programmingMaze/resource/tutorial7.png"
             },
         ]
 
@@ -347,7 +316,7 @@ function initLevel() {
     }
 
     // Stores the co-ordinates of the tile blocks in the current level
-    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
+    var currentLevelBlocksCoordinates = mazeBlocks[currentLevel].map
 
     items.mazeModel.model = currentLevelBlocksCoordinates
 
@@ -361,7 +330,7 @@ function initLevel() {
     stepY = items.mazeModel.itemAt(0).height
 
     items.instructionModel.clear()
-    var levelInstructions = mazeBlocks[currentLevel][BLOCKS_INSTRUCTION_INDEX]
+    var levelInstructions = mazeBlocks[currentLevel].instructions
     for (var i = 0; i < levelInstructions.length; i++) {
         items.instructionModel.append({"name":levelInstructions[i]});
     }
@@ -379,7 +348,7 @@ function initLevel() {
     items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
     items.isTuxMouseAreaEnabled = false
     items.isRunCodeEnabled = true
-    items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel][MAX_NUMBER_OF_INSTRUCTIONS_ALLOWED_INDEX]
+    items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel].maxNumberOfInstructions
     items.constraintInstruction.show()
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
@@ -458,8 +427,8 @@ function deadEnd() {
 }
 
 function checkSuccessAndExecuteNextInstruction() {
-    var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0]
-    var fishY = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1]
+    var fishX = mazeBlocks[currentLevel].fish[0]
+    var fishY = mazeBlocks[currentLevel].fish[1]
 
     var tuxX = Math.floor(items.player.playerCenterX / stepX)
     var tuxY = Math.floor(items.player.playerCenterY / stepY)
