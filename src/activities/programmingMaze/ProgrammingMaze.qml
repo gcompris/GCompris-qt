@@ -43,10 +43,11 @@ ActivityBase {
         oldHeight = height
     }
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
-        anchors.fill: parent
-        color: "#8C8984"
+        source: "qrc:/gcompris/src/activities/programmingMaze/resource/background.svg"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: parent.width
 
         signal start
         signal stop
