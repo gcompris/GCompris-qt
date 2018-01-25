@@ -195,8 +195,8 @@ ActivityBase {
             anchors.top: parent.top
 
             Image {
-                x: modelData[0] * width
-                y: modelData[1] * height
+                x: modelData.x * width
+                y: modelData.y * height
                 width: background.width / 10
                 height: (background.height - background.height / 10) / 10
                 source: Activity.reverseCountUrl + "iceblock.svg"

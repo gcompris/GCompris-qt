@@ -55,7 +55,7 @@ Instruction {
         var playerNextPositionY = Math.floor(playerCenterY / Activity.stepY)
         var currentLevelCoordinates = Activity.mazeBlocks[Activity.currentLevel].map
         for(var i = 0; i < currentLevelCoordinates.length; i++) {
-            if(currentLevelCoordinates[i][0] == playerNextPositionX && currentLevelCoordinates[i][1] == playerNextPositionY)
+            if(currentLevelCoordinates[i].x == playerNextPositionX && currentLevelCoordinates[i].y == playerNextPositionY)
                 return true
         }
         return false

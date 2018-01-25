@@ -32,8 +32,10 @@ var CALL_PROCEDURE = "call-procedure"
 var mazeBlocks = [
             //level one
             {
-                "map": [[1,2], [2,2], [3,2]],
-                "fish": [3,2],
+                "map": [{'x': 1, 'y': 2},
+                        {'x': 2, 'y': 2},
+                        {'x': 3, 'y': 2}],
+                "fish": {'x': 3, 'y': 2},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT],
@@ -41,8 +43,12 @@ var mazeBlocks = [
             },
             //level two
             {
-                "map": [[1,3], [2,3], [2,2], [2,1], [3,1]],
-                "fish": [3,1],
+                "map": [{'x': 1, 'y': 3},
+                        {'x': 2, 'y': 3},
+                        {'x': 2, 'y': 2},
+                        {'x': 2, 'y': 1},
+                        {'x': 3, 'y': 1}],
+                "fish": {'x': 3, 'y': 1},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT],
@@ -50,11 +56,16 @@ var mazeBlocks = [
             },
             //level three
             {
-                "map": [[0,3], [0,2], [0,1],
-                        [1,1], [2,1], [3,1],
-                        [3,2],
-                        [3,3], [2,3]],
-                "fish": [2,3],
+                "map": [{'x': 0, 'y': 3},
+                        {'x': 0, 'y': 2},
+                        {'x': 0, 'y': 1},
+                        {'x': 1, 'y': 1},
+                        {'x': 2, 'y': 1},
+                        {'x': 3, 'y': 1},
+                        {'x': 3, 'y': 2},
+                        {'x': 3, 'y': 3},
+                        {'x': 2, 'y': 3}],
+                "fish": {'x': 2, 'y': 3},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT],
@@ -62,9 +73,19 @@ var mazeBlocks = [
             },
             //level four
             {
-                "map": [[0,1], [1,1], [1,0], [2,0], [3,0], [4,0],
-                        [1,2], [1,3], [2,3], [3,3], [4,3], [4,2]],
-                "fish": [4,2],
+                "map": [{'x': 0, 'y': 1},
+                        {'x': 1, 'y': 1},
+                        {'x': 1, 'y': 0},
+                        {'x': 2, 'y': 0},
+                        {'x': 3, 'y': 0},
+                        {'x': 4, 'y': 0},
+                        {'x': 1, 'y': 2},
+                        {'x': 1, 'y': 3},
+                        {'x': 2, 'y': 3},
+                        {'x': 3, 'y': 3},
+                        {'x': 4, 'y': 3},
+                        {'x': 4, 'y': 2}],
+                "fish": {'x': 4, 'y': 2},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT],
@@ -72,12 +93,22 @@ var mazeBlocks = [
             },
             //level five
             {
-                "map": [[0,1], [0,0], [1,0], [2,0], [3,0], [4,0],
-                        [0,2], [0,3],
-                        [1,3], [2,3], [3,3], [4,3],
-                        [2,1], [2,2],
-                        [4,2]],
-                "fish": [4,2],
+                "map": [{'x': 0, 'y': 1},
+                        {'x': 0, 'y': 0},
+                        {'x': 1, 'y': 0},
+                        {'x': 2, 'y': 0},
+                        {'x': 3, 'y': 0},
+                        {'x': 4, 'y': 0},
+                        {'x': 0, 'y': 2},
+                        {'x': 0, 'y': 3},
+                        {'x': 1, 'y': 3},
+                        {'x': 2, 'y': 3},
+                        {'x': 3, 'y': 3},
+                        {'x': 4, 'y': 3},
+                        {'x': 2, 'y': 1},
+                        {'x': 2, 'y': 2},
+                        {'x': 4, 'y': 2}],
+                "fish": {'x': 4, 'y': 2},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT],
@@ -85,8 +116,14 @@ var mazeBlocks = [
             },
             //level six
             {
-                "map": [[1,1], [2,1], [3,1], [3,2], [3,3], [2,3], [1,3]],
-                "fish": [1,3],
+                "map": [{'x': 1, 'y': 1},
+                        {'x': 2, 'y': 1},
+                        {'x': 3, 'y': 1},
+                        {'x': 3, 'y': 2},
+                        {'x': 3, 'y': 3},
+                        {'x': 2, 'y': 3},
+                        {'x': 1, 'y': 3}],
+                "fish": {'x': 1, 'y': 3},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT,
@@ -95,11 +132,16 @@ var mazeBlocks = [
             },
             //level seven
             {
-                "map": [[0,3], [1,3], [2,3],
-                        [2,2], [2,1],
-                        [3,1], [4,1],
-                        [4,2], [4,3]],
-                "fish": [4,3],
+                "map": [{'x': 0, 'y': 3},
+                        {'x': 1, 'y': 3},
+                        {'x': 2, 'y': 3},
+                        {'x': 2, 'y': 2},
+                        {'x': 2, 'y': 1},
+                        {'x': 3, 'y': 1},
+                        {'x': 4, 'y': 1},
+                        {'x': 4, 'y': 2},
+                        {'x': 4, 'y': 3}],
+                "fish": {'x': 4, 'y': 3},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT,
@@ -108,8 +150,15 @@ var mazeBlocks = [
             },
             //level eight
             {
-                "map": [[0,3], [1,3], [1,2], [2,2], [2,1], [3,1], [3,0], [4,0]],
-                "fish": [4,0],
+                "map": [{'x': 0, 'y': 3},
+                        {'x': 1, 'y': 3},
+                        {'x': 1, 'y': 2},
+                        {'x': 2, 'y': 2},
+                        {'x': 2, 'y': 1},
+                        {'x': 3, 'y': 1},
+                        {'x': 3, 'y': 0},
+                        {'x': 4, 'y': 0}],
+                "fish": {'x': 4, 'y': 0},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT,
@@ -118,10 +167,22 @@ var mazeBlocks = [
             },
             //level nine
             {
-                "map": [[1,1], [0,0], [1,0], [2,0], [2,1], [3,0], [4,0],
-                        [4,1], [4,2], [4,3],
-                        [3,3], [2,3], [1,3], [0,3], [0,2]],
-                "fish": [0,2],
+                "map": [{'x': 1, 'y': 1},
+                        {'x': 0, 'y': 0},
+                        {'x': 1, 'y': 0},
+                        {'x': 2, 'y': 0},
+                        {'x': 2, 'y': 1},
+                        {'x': 3, 'y': 0},
+                        {'x': 4, 'y': 0},
+                        {'x': 4, 'y': 1},
+                        {'x': 4, 'y': 2},
+                        {'x': 4, 'y': 3},
+                        {'x': 3, 'y': 3},
+                        {'x': 2, 'y': 3},
+                        {'x': 1, 'y': 3},
+                        {'x': 0, 'y': 3},
+                        {'x': 0, 'y': 2}],
+                "fish": {'x': 0, 'y': 2},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT,
@@ -130,9 +191,21 @@ var mazeBlocks = [
             },
             //level ten
             {
-                "map": [[0,3], [0,2], [0,1], [0,0], [1,0], [2,0], [2,1],
-                        [2,2], [2,3], [3,3], [4,3], [4,2], [4,1], [4,0]],
-                "fish": [4,0],
+                "map": [{'x': 0, 'y': 3},
+                        {'x': 0, 'y': 2},
+                        {'x': 0, 'y': 1},
+                        {'x': 0, 'y': 0},
+                        {'x': 1, 'y': 0},
+                        {'x': 2, 'y': 0},
+                        {'x': 2, 'y': 1},
+                        {'x': 2, 'y': 2},
+                        {'x': 2, 'y': 3},
+                        {'x': 3, 'y': 3},
+                        {'x': 4, 'y': 3},
+                        {'x': 4, 'y': 2},
+                        {'x': 4, 'y': 1},
+                        {'x': 4, 'y': 0}],
+                "fish": {'x': 4, 'y': 0},
                 "instructions": [MOVE_FORWARD,
                                  TURN_LEFT,
                                  TURN_RIGHT,
@@ -336,12 +409,12 @@ function initLevel() {
     }
 
     // Center Tux in its first case
-    items.player.x = currentLevelBlocksCoordinates[0][0] * stepX + (stepX - items.player.width) / 2
-    items.player.y = currentLevelBlocksCoordinates[0][1] * stepY + (stepY - items.player.height) / 2
+    items.player.x = currentLevelBlocksCoordinates[0].x * stepX + (stepX - items.player.width) / 2
+    items.player.y = currentLevelBlocksCoordinates[0].y * stepY + (stepY - items.player.height) / 2
 
     //Center fish at it's co-ordinate
-    items.fish.x = mazeBlocks[currentLevel].fish[0] * stepX + (stepX - items.fish.width) / 2
-    items.fish.y = mazeBlocks[currentLevel].fish[1] * stepY + (stepY - items.fish.height) / 2
+    items.fish.x = mazeBlocks[currentLevel].fish.x * stepX + (stepX - items.fish.width) / 2
+    items.fish.y = mazeBlocks[currentLevel].fish.y * stepY + (stepY - items.fish.height) / 2
 
     changedRotation = EAST
     deadEndPoint = false
@@ -431,8 +504,8 @@ function deadEnd() {
 }
 
 function checkSuccessAndExecuteNextInstruction() {
-    var fishX = mazeBlocks[currentLevel].fish[0]
-    var fishY = mazeBlocks[currentLevel].fish[1]
+    var fishX = mazeBlocks[currentLevel].fish.x
+    var fishY = mazeBlocks[currentLevel].fish.y
 
     var tuxX = Math.floor(items.player.playerCenterX / stepX)
     var tuxY = Math.floor(items.player.playerCenterY / stepY)
