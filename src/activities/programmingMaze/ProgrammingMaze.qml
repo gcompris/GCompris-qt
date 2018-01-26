@@ -281,18 +281,6 @@ ActivityBase {
                     width: background.buttonWidth
                     height: background.buttonHeight
 
-                    Rectangle {
-                        id: rect
-                        width: parent.width
-                        height: parent.height
-                        anchors.fill: parent
-                        gradient: Gradient {
-                            GradientStop { position: 0.0; color: "#0191C8" }
-                            GradientStop { position: 1.0; color: "#005B9A" }
-                        }
-                        opacity: 0.5
-                    }
-
                     Image {
                         id: icon
                         source: Activity.url + name + ".svg"
@@ -300,13 +288,6 @@ ActivityBase {
                         width: sourceSize.width
                         height: sourceSize.height
                         anchors.horizontalCenter: parent.horizontalCenter
-                    }
-
-                    Image {
-                        source: "qrc:/gcompris/src/core/resource/button.svg"
-                        sourceSize { height: parent.height; width: parent.width }
-                        width: sourceSize.width
-                        height: sourceSize.height
                     }
 
                     MouseArea {
@@ -342,33 +323,44 @@ ActivityBase {
                                 if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
                                     constraintInstruction.changeConstraintInstructionOpacity()
                                 else {
-                                    clickedAnim.start()
+                                    playClickedAnimation()
                                     model.append({ "name": name })
                                     items.numberOfInstructionsAdded++
                                 }
                             }
                             else {
-                                clickedAnim.start()
+                                playClickedAnimation()
                                 model.set(area.initialEditItemIndex, {"name": name}, 1)
                                 area.isEditingInstruction = false
                             }
+                        }
+
+                        /**
+                         * If two successive clicks on the same icon are made very fast, stop the ongoing animation and set the scale back to 1.
+                         * Then start the animation for next click.
+                         * This gives proper feedback of multiple clicks.
+                         */
+                        function playClickedAnimation() {
+                            clickedAnim.stop()
+                            icon.scale = 1
+                            clickedAnim.start()
                         }
                     }
 
                     SequentialAnimation {
                         id: clickedAnim
                         PropertyAnimation {
-                            target: rect
-                            property: "opacity"
-                            to: "1"
-                            duration: 300
+                            target: icon
+                            property: "scale"
+                            to: "0.8"
+                            duration: 150
                         }
 
                         PropertyAnimation {
-                            target: rect
-                            property: "opacity"
-                            to: "0.5"
-                            duration: 300
+                            target: icon
+                            property: "scale"
+                            to: "1"
+                            duration: 150
                         }
                     }
                 }
@@ -377,7 +369,6 @@ ActivityBase {
 
         // insert data upon clicking the list items into this answerData
         // and then process it to run the code
-
         AnswerSheet {
             id: mainFunctionCodeArea
             background: background
@@ -434,47 +425,57 @@ ActivityBase {
         Component {
             id: instructionHeaderComponent
             Rectangle {
-                id: headerRect
+                id: instructionHeaderRectangle
                 width: instruction.width
                 height: 25 * ApplicationInfo.ratio
-                color: "#005B9A"
+                border.width: 2 * ApplicationInfo.ratio
+                border.color: "black"
+                color: "transparent"
 
                 Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize { height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                }
+                    id: instructionHeaderImage
+                    width: parent.width - 2 * parent.border.width
+                    height: parent.height - 2 * parent.border.width
+                    source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
+                    x: parent.border.width
+                    y: x
 
-                GCText {
-                    id: headerText
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    width: parent.width
-                    height: parent.height
-                    fontSizeMode: Font.DemiBold
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: qsTr("Choose the instructions")
+                    GCText {
+                        id: instructionHeaderText
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter: parent.verticalCenter
+                        horizontalAlignment: Text.AlignHCenter
+                        width: parent.width
+                        height: parent.height
+                        fontSizeMode: Font.DemiBold
+                        minimumPointSize: 7
+                        fontSize: mediumSize
+                        wrapMode: Text.WordWrap
+                        color: "white"
+                        text: qsTr("Choose the instructions")
+                    }
                 }
             }
         }
 
-        Item {
+        Rectangle {
             id: mainFunctionHeaderComponent
             width: mainFunctionCodeArea.width
             height: 50 * ApplicationInfo.ratio
             anchors.left: mainFunctionCodeArea.left
             anchors.top: parent.top
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "black"
+            color: "transparent"
 
-            Rectangle {
-                id: mainFunctionHeaderRect
-                anchors.fill: parent
-                color: "#005B9A"
+            Image {
+                id: mainFunctionHeaderImage
+                width: parent.width - 2 * parent.border.width
+                height: parent.height - 2 * parent.border.width
                 opacity: background.insertIntoMain ? 1 : 0.5
+                x: parent.border.width
+                y: x
+                source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
 
                 MouseArea {
                     anchors.fill: parent
@@ -483,13 +484,6 @@ ActivityBase {
                         background.insertIntoMain = true
                         background.insertIntoProcedure = false
                     }
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize { height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
                 }
 
                 GCText {
@@ -510,18 +504,25 @@ ActivityBase {
             }
         }
 
-        Item {
+        Rectangle {
             id: procedureHeaderComponent
             width: procedureCodeArea.width
             height: 50 * ApplicationInfo.ratio
             anchors.left: procedureCodeArea.left
             anchors.bottom: procedureCodeArea.top
             visible: procedureCodeArea.visible
-            Rectangle {
-                id: procedureHeaderRect
-                anchors.fill: parent
-                color: "#005B9A"
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "black"
+            color: "transparent"
+
+            Image {
+                id: procedureHeaderImage
+                width: parent.width - 2 * parent.border.width
+                height: parent.height - 2 * parent.border.width
                 opacity: background.insertIntoProcedure ? 1 : 0.5
+                source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
+                x: parent.border.width
+                y: x
 
                 MouseArea {
                     anchors.fill: parent
@@ -530,13 +531,6 @@ ActivityBase {
                         background.insertIntoMain = false
                         background.insertIntoProcedure = true
                     }
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize { height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
                 }
 
                 GCText {

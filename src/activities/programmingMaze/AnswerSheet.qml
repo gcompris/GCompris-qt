@@ -30,6 +30,7 @@ GridView {
     property ListModel currentModel
     property int buttonWidth: background.width / 10
     property int buttonHeight: background.height / 10
+    z: 1
 
     width: background.width * 0.4
     height: background.height * 0.4 - 5 * ApplicationInfo.ratio
@@ -222,7 +223,6 @@ GridView {
                         name: "inDrag"
                         when: index == answerSheet.draggedItemIndex
                         PropertyChanges { target: circlePlaceholder; opacity: 1 }
-                        PropertyChanges { target: imageBorder; opacity: 1 }
                         PropertyChanges { target: item; parent: dndContainer }
                         PropertyChanges { target: item; width: background.buttonWidth * 0.80 }
                         PropertyChanges { target: item; height: background.buttonHeight * 0.80 }
@@ -249,27 +249,12 @@ GridView {
                         PropertyAnimation {
                             target: item
                             properties: "scale, opacity"
-                            easing.type: "OutBack"
-                            from: 0.0
+                            from: 0.7
                             to: 1.0
-                            duration: 500
+                            duration: 200
                         }
                     }
                 ]
-
-                Rectangle {
-                    id: answerRect
-                    anchors.fill: parent
-                    color: "#005B9A"
-                    opacity: 1
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize { height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                }
 
                 Image {
                     id: answer
@@ -279,18 +264,6 @@ GridView {
                     height: sourceSize.height
                     anchors.centerIn: parent
                     smooth: false
-
-                    Rectangle {
-                        id: imageBorder
-                        width: background.buttonWidth + 5 * ApplicationInfo.ratio
-                        height: background.buttonHeight + 5 * ApplicationInfo.ratio
-                        anchors.fill: parent
-                        radius: 5 * ApplicationInfo.ratio
-                        color: "transparent"
-                        border.width: 5 * ApplicationInfo.ratio
-                        border.color: "#ffffff"
-                        opacity: 0
-                    }
                 }
             }
         }
