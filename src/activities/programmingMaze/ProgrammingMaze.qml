@@ -433,7 +433,7 @@ ActivityBase {
             Rectangle {
                 id: instructionHeaderRectangle
                 width: instruction.width
-                height: 25 * ApplicationInfo.ratio
+                height: background.height / 11
                 border.width: 2 * ApplicationInfo.ratio
                 border.color: "black"
                 color: "transparent"
@@ -448,9 +448,8 @@ ActivityBase {
 
                     GCText {
                         id: instructionHeaderText
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
                         horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
                         width: parent.width
                         height: parent.height
                         fontSizeMode: Font.DemiBold
