@@ -150,7 +150,7 @@ ActivityBase {
             anchors.left: parent.left
             anchors.bottom: runCode.top
             width: parent.width / 2.3
-            height: parent.height / 8.6
+            height: parent.height / 8.9
             radius: 10
             z: 3
             color: "#E8E8E8" //paper white
@@ -276,7 +276,7 @@ ActivityBase {
 
             delegate: Item {
                 width: background.buttonWidth
-                height: background.buttonHeight
+                height: background.buttonHeight * 1.18
 
                 property alias mouseAreaInstruction: mouseAreaInstruction
 
