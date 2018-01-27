@@ -28,8 +28,6 @@ GridView {
     id: answerSheet
     property Item background
     property ListModel currentModel
-    property int buttonWidth: background.width / 10
-    property int buttonHeight: background.height / 10
     z: 1
 
     width: background.width * 0.4
@@ -45,10 +43,11 @@ GridView {
         width: buttonWidth
         height: buttonHeight
         color: "lightsteelblue"
-        border.width: 5 * ApplicationInfo.ratio
+        border.width: 2 * ApplicationInfo.ratio
         border.color: "purple"
         opacity: 0.5
         z: 11
+        radius: width / 12
         Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
     }
     highlightFollowsCurrentItem: true
@@ -82,15 +81,16 @@ GridView {
     Item {
         id: dropPosIndicator
         visible: false
-        height: answerSheet.cellHeight
-        width: 5 * ApplicationInfo.ratio
+        height: background.buttonHeight
+        width: 3 * ApplicationInfo.ratio
 
         Rectangle {
             visible: parent.visible
             anchors.centerIn: parent
-            width: 5 * ApplicationInfo.ratio
-            height: parent.height - 5 * ApplicationInfo.ratio
-            color: "lightsteelblue"
+            width: parent.width
+            height: parent.height - 3 * ApplicationInfo.ratio
+            color: "blue"
+            radius: width
         }
 
         states: [
@@ -101,9 +101,9 @@ GridView {
                     target: dropPosIndicator
                     visible: true
                     x: Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
-                       answerSheet.cellWidth - 5 * ApplicationInfo.ratio
+                       answerSheet.cellWidth - 1.5 * ApplicationInfo.ratio
                     y: Math.floor(answerSheet.yCoordinateInPossibleDrop / answerSheet.cellHeight) *
-                       answerSheet.cellHeight - 2 * ApplicationInfo.ratio
+                       answerSheet.cellHeight + 1.5 * ApplicationInfo.ratio
                 }
             }
         ]
@@ -112,10 +112,13 @@ GridView {
     Rectangle {
         id: editInstructionIndicator
         visible: answerSheet.isEditingInstruction && answerSheet.count != 0
-        height: answerSheet.cellHeight - 5 * ApplicationInfo.ratio
-        width: answerSheet.cellWidth - 5 * ApplicationInfo.ratio
+        width: background.buttonWidth - 3 * ApplicationInfo.ratio
+        height: background.buttonHeight - 3 * ApplicationInfo.ratio
         color: "red"
+        border.color: "black"
+        border.width: 1.5 * ApplicationInfo.ratio
         opacity: 0.2
+        radius: width / 12
     }
 
     Item {
@@ -170,8 +173,8 @@ GridView {
                     else
                         answerSheet.initialEditItemIndex = draggedIndex
 
-                    editInstructionIndicator.x = calculatedX
-                    editInstructionIndicator.y = calculatedY
+                    editInstructionIndicator.x = calculatedX + 1.5 * ApplicationInfo.ratio
+                    editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
                 }
                 answerSheet.possibleDropIndex = -1
             }
@@ -191,79 +194,83 @@ GridView {
         }
     }
 
-    delegate: Column {
+    delegate: Item {
+        id: itemParent
+        width: background.buttonWidth
+        height: background.buttonHeight
+
+        Rectangle {
+            id: circlePlaceholder
+            width: 30 * ApplicationInfo.ratio
+            height: width
+            radius: width
+            anchors.centerIn: parent
+            color: "#cecece"
+            opacity: 0
+        }
+
         Item {
-            id: itemParent
+            id: item
             width: background.buttonWidth
             height: background.buttonHeight
+            state: "inactive"
+            opacity: 1
+
+            Behavior on width { NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
+            Behavior on height { NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
+            Behavior on opacity {NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
+
+            states: [
+                State {
+                    name: "inDrag"
+                    when: index == answerSheet.draggedItemIndex
+                    PropertyChanges { target: circlePlaceholder; opacity: 1 }
+                    PropertyChanges { target: item; parent: dndContainer }
+                    PropertyChanges { target: item; width: background.buttonWidth * 0.80 }
+                    PropertyChanges { target: item; height: background.buttonHeight * 0.80 }
+                    PropertyChanges { target: item; anchors.centerIn: undefined }
+                    PropertyChanges { target: item; x: coords.mouseX - item.width / 2 }
+                    PropertyChanges { target: item; y: coords.mouseY - item.height / 2 }
+                },
+                State {
+                    name: "greyedOut"
+                    when: (answerSheet.draggedItemIndex != -1) && (answerSheet.draggedItemIndex != index)
+                    PropertyChanges { target: item; opacity: 0.7 }
+                },
+                State {
+                    name: "inactive"
+                    when: (answerSheet.draggedItemIndex == -1) || (answerSheet.draggedItemIndex == index)
+                    PropertyChanges { target: item; opacity: 1.0 }
+                }
+            ]
+
+            transitions: [
+                Transition {
+                    from: "inDrag"
+                    to: "*"
+                    PropertyAnimation {
+                        target: item
+                        properties: "scale, opacity"
+                        from: 0.7
+                        to: 1.0
+                        duration: 200
+                    }
+                }
+            ]
 
             Rectangle {
-                id: circlePlaceholder
-                width: 30 * ApplicationInfo.ratio
-                height: width
-                radius: width
+                width: parent.width - 3 * ApplicationInfo.ratio
+                height: parent.height - 3 * ApplicationInfo.ratio
+                border.width: 1.2 * ApplicationInfo.ratio
+                border.color: "black"
                 anchors.centerIn: parent
-                color: "#cecece"
-                opacity: 0
-            }
-
-            Item {
-                id: item
-                width: background.buttonWidth - 5 * ApplicationInfo.ratio
-                height: background.buttonHeight - 5 * ApplicationInfo.ratio
-                state: "inactive"
-                opacity: 1
-
-                Behavior on width { NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
-                Behavior on height { NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
-                Behavior on opacity {NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
-
-                states: [
-                    State {
-                        name: "inDrag"
-                        when: index == answerSheet.draggedItemIndex
-                        PropertyChanges { target: circlePlaceholder; opacity: 1 }
-                        PropertyChanges { target: item; parent: dndContainer }
-                        PropertyChanges { target: item; width: background.buttonWidth * 0.80 }
-                        PropertyChanges { target: item; height: background.buttonHeight * 0.80 }
-                        PropertyChanges { target: item; anchors.centerIn: undefined }
-                        PropertyChanges { target: item; x: coords.mouseX - item.width / 2 }
-                        PropertyChanges { target: item; y: coords.mouseY - item.height / 2 }
-                    },
-                    State {
-                        name: "greyedOut"
-                        when: (answerSheet.draggedItemIndex != -1) && (answerSheet.draggedItemIndex != index)
-                        PropertyChanges { target: item; opacity: 0.7 }
-                    },
-                    State {
-                        name: "inactive"
-                        when: (answerSheet.draggedItemIndex == -1) || (answerSheet.draggedItemIndex == index)
-                        PropertyChanges { target: item; opacity: 1.0 }
-                    }
-                ]
-
-                transitions: [
-                    Transition {
-                        from: "inDrag"
-                        to: "*"
-                        PropertyAnimation {
-                            target: item
-                            properties: "scale, opacity"
-                            from: 0.7
-                            to: 1.0
-                            duration: 200
-                        }
-                    }
-                ]
+                radius: width / 12
 
                 Image {
-                    id: answer
+                    id: codeAreaIcon
                     source: Activity.url + name + ".svg"
-                    sourceSize { width: parent.width; height: parent.height }
-                    width: sourceSize.width
-                    height: sourceSize.height
+                    sourceSize { width: parent.width / 1.2; height: parent.height / 1.2 }
                     anchors.centerIn: parent
-                    smooth: false
                 }
             }
         }

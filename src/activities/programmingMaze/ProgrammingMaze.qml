@@ -56,6 +56,8 @@ ActivityBase {
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
         property alias items: items
+        property int buttonWidth: background.width / 11
+        property int buttonHeight: background.height / 11
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -238,9 +240,6 @@ ActivityBase {
             }
         }
 
-        property int buttonWidth: background.width / 10
-        property int buttonHeight: background.height / 10
-
         GridView {
             id: instruction
             width: parent.width * 0.5
@@ -249,10 +248,8 @@ ActivityBase {
             cellHeight: background.buttonHeight
 
             anchors.left: parent.left
-            anchors.bottom: runCode.top
             anchors.top: mazeModel.bottom
-            anchors.topMargin: background.buttonHeight * 4
-            anchors.bottomMargin: runCode.height / 2
+            anchors.topMargin: background.buttonHeight * 4.4
 
             interactive: false
             model: instructionModel
@@ -260,108 +257,117 @@ ActivityBase {
             header: instructionHeaderComponent
 
             highlight: Rectangle {
-                width: buttonWidth
-                height: buttonHeight
+                width: buttonWidth - 3 * ApplicationInfo.ratio
+                height: buttonHeight - 3 * ApplicationInfo.ratio
                 color: "lightsteelblue"
-                border.width: 3
-                border.color: "black"
+                border.width: 1.5 * ApplicationInfo.ratio
+                border.color: "purple"
                 visible: background.keyNavigation
-                x: instruction.currentItem.x
+                x: instruction.currentItem.x + 1.5 * ApplicationInfo.ratio
+                y: 1.5 * ApplicationInfo.ratio
+                z: 2
+                radius: width / 12
+                opacity: 0.6
                 Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
             }
             highlightFollowsCurrentItem: false
             focus: true
             keyNavigationWraps: true
 
-            delegate: Column {
-                spacing: 10 * ApplicationInfo.ratio
+            delegate: Item {
+                width: background.buttonWidth
+                height: background.buttonHeight
+
                 property alias mouseAreaInstruction: mouseAreaInstruction
 
-                Item {
-                    width: background.buttonWidth
-                    height: background.buttonHeight
+                Rectangle {
+                    id: rect
+                    width: parent.width - 3 * ApplicationInfo.ratio
+                    height: parent.height - 3 * ApplicationInfo.ratio
+                    border.width: 1.2 * ApplicationInfo.ratio
+                    border.color: "black"
+                    anchors.centerIn: parent
+                    radius: width / 12
 
                     Image {
                         id: icon
                         source: Activity.url + name + ".svg"
-                        sourceSize { width: parent.width; height: parent.height }
-                        width: sourceSize.width
-                        height: sourceSize.height
-                        anchors.horizontalCenter: parent.horizontalCenter
+                        sourceSize { width: parent.width / 1.2; height: parent.height / 1.2 }
+                        anchors.centerIn: parent
+                    }
+                }
+
+                MouseArea {
+                    id: mouseAreaInstruction
+                    anchors.fill: parent
+                    enabled: (items.isTuxMouseAreaEnabled || items.isRunCodeEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
+
+                    signal clicked
+
+                    onClicked: {
+                        checkModelAndInsert()
+                    }
+                    onPressed: {
+                        checkModelAndInsert()
                     }
 
-                    MouseArea {
-                        id: mouseAreaInstruction
-                        anchors.fill: parent
-                        enabled: (items.isTuxMouseAreaEnabled || items.isRunCodeEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
+                    function checkModelAndInsert() {
+                        if(items.constraintInstruction.opacity)
+                            items.constraintInstruction.hide()
 
-                        signal clicked
+                        if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE)
+                            insertIntoModel(procedureModel, procedureCodeArea)
+                        else if(background.insertIntoMain)
+                            insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
+                    }
 
-                        onClicked: {
-                            checkModelAndInsert()
-                        }
-                        onPressed: {
-                            checkModelAndInsert()
-                        }
-
-                        function checkModelAndInsert() {
-                            if(items.constraintInstruction.opacity)
-                                items.constraintInstruction.hide()
-
-                            if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE)
-                                insertIntoModel(procedureModel, procedureCodeArea)
-                            else if(background.insertIntoMain)
-                                insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
-                        }
-
-                        /**
-                         * If we are adding an instruction, append it to the model if number of instructions added is less than the maximum number of instructions allowed.
-                         * If editing, replace it with the selected instruction in the code area.
-                         */
-                        function insertIntoModel(model, area) {
-                            if(!area.isEditingInstruction) {
-                                if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
-                                    constraintInstruction.changeConstraintInstructionOpacity()
-                                else {
-                                    playClickedAnimation()
-                                    model.append({ "name": name })
-                                    items.numberOfInstructionsAdded++
-                                }
-                            }
+                    /**
+                     * If we are adding an instruction, append it to the model if number of instructions added is less than the maximum number of instructions allowed.
+                     * If editing, replace it with the selected instruction in the code area.
+                     */
+                    function insertIntoModel(model, area) {
+                        if(!area.isEditingInstruction) {
+                            if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
+                                constraintInstruction.changeConstraintInstructionOpacity()
                             else {
                                 playClickedAnimation()
-                                model.set(area.initialEditItemIndex, {"name": name}, 1)
-                                area.isEditingInstruction = false
+                                model.append({ "name": name })
+                                items.numberOfInstructionsAdded++
                             }
                         }
-
-                        /**
-                         * If two successive clicks on the same icon are made very fast, stop the ongoing animation and set the scale back to 1.
-                         * Then start the animation for next click.
-                         * This gives proper feedback of multiple clicks.
-                         */
-                        function playClickedAnimation() {
-                            clickedAnim.stop()
-                            icon.scale = 1
-                            clickedAnim.start()
+                        else {
+                            playClickedAnimation()
+                            model.set(area.initialEditItemIndex, {"name": name}, 1)
+                            area.isEditingInstruction = false
                         }
                     }
 
-                    SequentialAnimation {
-                        id: clickedAnim
-                        PropertyAnimation {
-                            target: icon
-                            property: "scale"
-                            to: "0.8"
-                            duration: 150
-                        }
+                    /**
+                     * If two successive clicks on the same icon are made very fast, stop the ongoing animation and set the scale back to 1.
+                     * Then start the animation for next click.
+                     * This gives proper feedback of multiple clicks.
+                     */
+                    function playClickedAnimation() {
+                        clickedAnim.stop()
+                        icon.scale = 1
+                        clickedAnim.start()
+                    }
+                }
 
-                        PropertyAnimation {
-                            target: icon
-                            property: "scale"
-                            to: "1"
-                            duration: 150
-                        }
+                SequentialAnimation {
+                    id: clickedAnim
+                    PropertyAnimation {
+                        target: rect
+                        property: "scale"
+                        to: 0.8
+                        duration: 150
+                    }
+
+                    PropertyAnimation {
+                        target: rect
+                        property: "scale"
+                        to: 1
+                        duration: 150
                     }
                 }
             }
@@ -461,7 +467,7 @@ ActivityBase {
         Rectangle {
             id: mainFunctionHeaderComponent
             width: mainFunctionCodeArea.width
-            height: 50 * ApplicationInfo.ratio
+            height: parent.height / 10
             anchors.left: mainFunctionCodeArea.left
             anchors.top: parent.top
             border.width: 2 * ApplicationInfo.ratio
@@ -507,7 +513,7 @@ ActivityBase {
         Rectangle {
             id: procedureHeaderComponent
             width: procedureCodeArea.width
-            height: 50 * ApplicationInfo.ratio
+            height: parent.height / 10
             anchors.left: procedureCodeArea.left
             anchors.bottom: procedureCodeArea.top
             visible: procedureCodeArea.visible
