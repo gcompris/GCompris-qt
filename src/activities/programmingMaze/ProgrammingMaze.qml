@@ -56,8 +56,8 @@ ActivityBase {
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
         property alias items: items
-        property int buttonWidth: background.width / 11
-        property int buttonHeight: background.height / 11
+        property int buttonWidth: background.width / 10
+        property int buttonHeight: background.height / 15.3
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -249,7 +249,7 @@ ActivityBase {
 
             anchors.left: parent.left
             anchors.top: mazeModel.bottom
-            anchors.topMargin: background.buttonHeight * 4.4
+            anchors.topMargin: background.height * 0.4
 
             interactive: false
             model: instructionModel
@@ -266,7 +266,7 @@ ActivityBase {
                 x: instruction.currentItem.x + 1.5 * ApplicationInfo.ratio
                 y: 1.5 * ApplicationInfo.ratio
                 z: 2
-                radius: width / 12
+                radius: width / 18
                 opacity: 0.6
                 Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
             }
@@ -287,7 +287,7 @@ ActivityBase {
                     border.width: 1.2 * ApplicationInfo.ratio
                     border.color: "black"
                     anchors.centerIn: parent
-                    radius: width / 12
+                    radius: width / 18
 
                     Image {
                         id: icon
@@ -388,7 +388,7 @@ ActivityBase {
             background: background
             currentModel: procedureModel
             anchors.right: parent.right
-            anchors.bottom: parent.bottom
+            anchors.top: procedureHeaderComponent.bottom
             visible: bar.level >= 6
             property alias procedureIterator: procedureCodeArea.currentIndex
         }
@@ -515,7 +515,7 @@ ActivityBase {
             width: procedureCodeArea.width
             height: parent.height / 10
             anchors.left: procedureCodeArea.left
-            anchors.bottom: procedureCodeArea.top
+            anchors.top: mainFunctionCodeArea.bottom
             visible: procedureCodeArea.visible
             border.width: 2 * ApplicationInfo.ratio
             border.color: "black"

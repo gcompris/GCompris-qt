@@ -31,7 +31,7 @@ GridView {
     z: 1
 
     width: background.width * 0.4
-    height: background.height * 0.4 - 5 * ApplicationInfo.ratio
+    height: background.height * 0.32
     cellWidth: background.buttonWidth
     cellHeight: background.buttonHeight
 
@@ -47,7 +47,7 @@ GridView {
         border.color: "purple"
         opacity: 0.5
         z: 11
-        radius: width / 12
+        radius: width / 18
         Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
     }
     highlightFollowsCurrentItem: true
@@ -118,7 +118,7 @@ GridView {
         border.color: "black"
         border.width: 1.5 * ApplicationInfo.ratio
         opacity: 0.2
-        radius: width / 12
+        radius: width / 18
     }
 
     Item {
@@ -264,7 +264,7 @@ GridView {
                 border.width: 1.2 * ApplicationInfo.ratio
                 border.color: "black"
                 anchors.centerIn: parent
-                radius: width / 12
+                radius: width / 18
 
                 Image {
                     id: codeAreaIcon
