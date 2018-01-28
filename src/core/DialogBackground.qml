@@ -113,7 +113,7 @@ Rectangle {
                         visible: text != ""
                         onClicked: { dialogBackground.button0Hit() }
                         width: 150 * ApplicationInfo.ratio
-                        height: 40 * ApplicationInfo.ratio
+                        height: visible ? 40 * ApplicationInfo.ratio : 0
                         anchors {
                             horizontalCenter: parent.horizontalCenter
                             top: parent.top
