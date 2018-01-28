@@ -54,21 +54,6 @@ DialogBackground {
         }
         onClose: visible = false
     }
-    
-//     Button {
-//         id: showLicenseButton
-//         onClicked: { licenseContainer.visible = true }
-//         width: 150 * ApplicationInfo.ratio
-//         height: 40 * ApplicationInfo.ratio
-//         anchors {
-//                 top: parent.bottom
-//                 right: parent.right
-//             }
-//         style: GCButtonStyle {
-//             theme: "highContrast"
-//         }
-//         text: qsTr("License")
-//     }
 
     //: Replace this string with your names, one name per line.
     property string translators: qsTr("translator-credits") ===
