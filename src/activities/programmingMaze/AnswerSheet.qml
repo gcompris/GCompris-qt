@@ -43,7 +43,7 @@ GridView {
         width: buttonWidth
         height: buttonHeight
         color: "lightsteelblue"
-        border.width: 2 * ApplicationInfo.ratio
+        border.width: 3.5 * ApplicationInfo.ratio
         border.color: "purple"
         opacity: 0.5
         z: 11

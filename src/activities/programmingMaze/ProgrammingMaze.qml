@@ -258,9 +258,9 @@ ActivityBase {
 
             highlight: Rectangle {
                 width: buttonWidth - 3 * ApplicationInfo.ratio
-                height: buttonHeight - 3 * ApplicationInfo.ratio
+                height: buttonHeight * 1.18 - 3 * ApplicationInfo.ratio
                 color: "lightsteelblue"
-                border.width: 1.5 * ApplicationInfo.ratio
+                border.width: 3.5 * ApplicationInfo.ratio
                 border.color: "purple"
                 visible: background.keyNavigation
                 x: instruction.currentItem.x + 1.5 * ApplicationInfo.ratio
