@@ -24,7 +24,7 @@ import GCompris 1.0
 Image {
     id: ball
 
-    property bool isVertical: background.width < background.height    // To check if in Vertical mode
+    property bool isVertical: background.width <= background.height    // To check if in Vertical mode
 
     source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
     sourceSize.height: background.isVertical ? 175 * Application.ratio : 200 * ApplicationInfo.ratio

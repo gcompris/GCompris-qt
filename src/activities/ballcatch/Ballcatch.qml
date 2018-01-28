@@ -45,7 +45,7 @@ ActivityBase {
         source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
 
-        property bool isVertical: background.width < background.height    // To check if in Vertical mode
+        property bool isVertical: background.width <= background.height     // To check if in Vertical mode
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -222,41 +222,25 @@ ActivityBase {
         }
 
         // Instructions
-        BorderImage {
-            id: bubble
-            x: leftShift.x
-            y: 10.0
-            border.left: 3 * ApplicationInfo.ratio
-            border.top: 3 * ApplicationInfo.ratio
-            border.right: 20 * ApplicationInfo.ratio
-            border.bottom: 3 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/bubble.svg"
-            width: rightShift.x + rightShift.width - leftShift.x
-            height: instructions.height + 20 * ApplicationInfo.ratio
-            // Remove the instructions when both keys has been pressed
-            opacity: bar.level === 1 &&
-                     !(items.leftPressed && items.rightPressed) ? 1 : 0
-            Behavior on opacity { NumberAnimation { duration: 120 } }
-
-            GCText {
-                id: instructions
-                anchors {
-                    left: parent.left
-                    right: parent.right
-                    verticalCenter: parent.verticalCenter
-                    leftMargin: 10 * ApplicationInfo.ratio
-                    rightMargin: 20 * ApplicationInfo.ratio
-                }
-                text: ApplicationInfo.isMobile ?
-                          qsTr("Tap both hands at the same time, " +
-                               "to make the ball go in a straight line.") :
-                          qsTr("Press left and right arrow keys at the same time, " +
-                               "to make the ball go in a straight line.")
-                wrapMode: TextEdit.WordWrap
-                horizontalAlignment: TextEdit.AlignHCenter
-                verticalAlignment: TextEdit.AlignVCenter
-                fontSize: background.isVertical ? tinySize : smallSize
+        IntroMessage {
+            id: instructions
+            intro: ApplicationInfo.isMobile ?
+                       [qsTr("Tap both hands at the same time, " +
+                            "to make the ball go in a straight line.")] :
+                       [qsTr("Press left and right arrow keys at the same time, " +
+                            "to make the ball go in a straight line.")]
+            anchors {
+                top: parent.top
+                topMargin: 10
             }
+            z : 10
+
+            index: bar.level === 1 &&
+                     !(items.leftPressed && items.rightPressed) ? 0 : -1
+
+            opacity: items.leftPressed ^ items.rightPressed ? 0 : 1
+
+            Behavior on opacity { NumberAnimation { duration: 120 } }
         }
 
         function playSound(identifier) {
