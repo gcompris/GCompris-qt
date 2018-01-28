@@ -45,11 +45,13 @@ Rectangle {
     property string title
     property alias titleIcon: titleIcon.source
     property string content
+    property alias button0Text: button0.text
     signal close
     signal start
     signal pause
     signal play
     signal stop
+    signal button0Hit
 
     Row {
         spacing: 2
@@ -106,11 +108,28 @@ Rectangle {
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
+                    Button {
+                        id: button0
+                        visible: text != ""
+                        onClicked: { dialogBackground.button0Hit() }
+                        width: 150 * ApplicationInfo.ratio
+                        height: 40 * ApplicationInfo.ratio
+                        anchors {
+                            horizontalCenter: parent.horizontalCenter
+                            top: parent.top
+                            topMargin: 8
+                        }
+                        style: GCButtonStyle {
+                            theme: "highContrast"
+                        }
+                    }
+                    
                     GCText {
                         id: textContent
                         text: style + "<body>" + content + "</body>"
                         width: flick.width
-                        height: flick.height
+                        height: flick.height - button0.height
+                        anchors.top: button0.bottom
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
