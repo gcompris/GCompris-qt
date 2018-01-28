@@ -20,7 +20,7 @@
 # Uncomment if this is not already done
 # make getSvnTranslations
 
-Qt5_BaseDIR=~/Qt5.4.2/5.4
+Qt5_BaseDIR=~/Qt5.9.3/5.9.3
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 # The current version
@@ -61,6 +61,19 @@ f_cmake()
 	  -DCMAKE_BUILD_TYPE=release \
 	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
+	  -DQt5Qml_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Qml \
+	  -DQt5Network_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Network \
+	  -DQt5Core_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Core \
+	  -DQt5Quick_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Quick \
+	  -DQt5Gui_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Gui \
+	  -DQt5Multimedia_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Multimedia \
+	  -DQt5Svg_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Svg \
+	  -DQt5Widgets_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Widgets \
+	  -DQt5Xml_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Xml \
+	  -DQt5XmlPatterns_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5XmlPatterns \
+	  -DQt5LinguistTools_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5LinguistTools \
+	  -DQt5Sensors_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Sensors \
+	  -DQt5AndroidExtras_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5AndroidExtras \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DACTIVATION_MODE=$2 \
