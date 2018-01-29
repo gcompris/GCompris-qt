@@ -32,7 +32,7 @@ import GCompris 1.0
 DialogBackground {
     visible: false
     title: qsTr("About GCompris")
-    height: parent.height - showLicenseButton.height
+    height: parent.height
     button0Text: qsTr("License")
     onButton0Hit: { licenseContainer.visible = true }
 
