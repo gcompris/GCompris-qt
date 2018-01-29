@@ -75,7 +75,7 @@ Item {
                 name: "scaled"; when: selected && mouseActive
                 PropertyChanges {
                     target: cardItem
-                    scale: 1.5
+                    scale: 1.3
                     z: 2
                 }
             }
