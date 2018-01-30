@@ -499,6 +499,7 @@ function executeNextInstruction() {
 function deadEnd() {
     deadEndPoint = true
     items.isTuxMouseAreaEnabled = true
+    items.constraintInstruction.show()
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
     items.bonus.bad("tux")
 }
