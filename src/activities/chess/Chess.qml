@@ -69,9 +69,9 @@ ActivityBase {
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property bool isPortrait: (background.height > background.width)
             property int cellSize: items.isPortrait ?
-                                       Math.min(background.width / (8 + 2),
-                                                (background.height - controls.height) / (8 + barHeightAddon)) :
-                                       Math.min(background.width / (8 + 2), background.height / (8 + barHeightAddon))
+                                       Math.min((background.width - numbers.childrenRect.width) / (8 + 2),
+                                                (background.height - controls.height - letters.childrenRect.height) / (8 + barHeightAddon)) :
+                                       Math.min((background.width - numbers.childrenRect.width) / (8 + 2), (background.height - letters.childrenRect.height) / (8 + barHeightAddon))
             property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
@@ -196,46 +196,70 @@ ActivityBase {
                 z: 09
                 color: "#3A1F0A"
 
+                // The chessboard
+                GridView {
+                    id: chessboard
+                    cellWidth: items.cellSize
+                    cellHeight: items.cellSize
+                    width: items.cellSize * 8
+                    height: items.cellSize * 8
+                    interactive: false
+                    keyNavigationWraps: true
+                    model: 64
+                    layoutDirection: Qt.RightToLeft
+                    delegate: square
+                    rotation: 180
+                    z: 10
+                    anchors.centerIn: boardBg
 
+                    Component {
+                        id: square
+                        Image {
+                            source: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
+                                       Activity.url + 'chess-white.svg' : Activity.url + 'chess-black.svg';
+                            width: items.cellSize
+                            height: items.cellSize
+                        }
+                    }
 
-            // The chessboard
-            GridView {
-                id: chessboard
-                cellWidth: items.cellSize
-                cellHeight: items.cellSize
-                width: items.cellSize * 8
-                height: items.cellSize * 8
-                interactive: false
-                keyNavigationWraps: true
-                model: 64
-                layoutDirection: Qt.RightToLeft
-                delegate: square
-                rotation: 180
-                z: 10
-                anchors.centerIn: boardBg
+                    Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
 
-                Component {
-                    id: square
-                    Image {
-                        source: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
-                                   Activity.url + 'chess-white.svg' : Activity.url + 'chess-black.svg';
-                        width: items.cellSize
-                        height: items.cellSize
+                    function swap() {
+                        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
+                        if(chessboard.rotation == 180)
+                            chessboard.rotation = 0
+                        else
+                            chessboard.rotation = 180
                     }
                 }
 
-                Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
-
-                function swap() {
-                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
-                    if(chessboard.rotation == 180)
-                        chessboard.rotation = 0
-                    else
-                        chessboard.rotation = 180
+                Grid {
+                    id: letters
+                    anchors.left: chessboard.left
+                    anchors.top: chessboard.bottom
+                    Repeater {
+                        model: ["A", "B", "C", "D", "E", "F", "G", "H"]
+                        GCText {
+                            x: items.cellSize * (index % 8) + (items.cellSize/2-width/2)
+                            y: items.cellSize * Math.floor(index / 8)
+                            text: modelData
+                        }
+                    }
+                }
+                Grid {
+                    id: numbers
+                    anchors.left: chessboard.right
+                    anchors.top: chessboard.top
+                    Repeater {
+                        model: 8
+                        GCText {
+                            x: items.cellSize * Math.floor(index / 8) + width
+                            y: items.cellSize * (index % 8) + (items.cellSize/2-height/2)
+                            text: 8-modelData
+                        }
+                    }
                 }
             }
-            }
-
         }
 
         Repeater {
