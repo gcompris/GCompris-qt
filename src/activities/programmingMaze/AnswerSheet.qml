@@ -31,7 +31,7 @@ GridView {
     z: 1
 
     width: background.width * 0.4
-    height: background.height * 0.32
+    height: background.height * 0.29
     cellWidth: background.buttonWidth
     cellHeight: background.buttonHeight
 
@@ -48,11 +48,10 @@ GridView {
         opacity: 0.5
         z: 11
         radius: width / 18
-        Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
     }
     highlightFollowsCurrentItem: true
-    highlightMoveDuration: Activity.moveAnimDuration
-    keyNavigationWraps: false
+    highlightMoveDuration: 500
+    keyNavigationWraps: true
     focus: true
 
     property int draggedItemIndex: -1
@@ -73,9 +72,66 @@ GridView {
     //Tells if any instruction is selected for editing.
     property bool isEditingInstruction: false
 
+    Keys.onRightPressed: moveCurrentIndexRight()
+    Keys.onLeftPressed: moveCurrentIndexLeft()
+    Keys.onUpPressed: moveCurrentIndexUp()
+    Keys.onDownPressed: moveCurrentIndexDown()
+    Keys.onEnterPressed: background.runCodeOrResetTux()
+    Keys.onReturnPressed: background.runCodeOrResetTux()
+
+    /**
+     * There can be three possibilities here:
+     *
+     * 1. We want to insert an instruction at the currentIndex position.
+     * 2. We want to select an instruction to edit, or deselect it.
+     * 3. We want to append an instruction.
+     */
+    Keys.onSpacePressed: {
+        if(currentIndex != -1) {
+            if(instruction.instructionToInsert && items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) {
+                var isInstructionInserted = appendInstruction()
+                if(isInstructionInserted)
+                    currentModel.move(currentModel.count - 1, currentIndex, 1)
+            }
+            else {
+                if(initialEditItemIndex == currentIndex || initialEditItemIndex == -1 && currentIndex != -1) {
+                    answerSheet.isEditingInstruction = !answerSheet.isEditingInstruction
+                }
+
+                if(!answerSheet.isEditingInstruction)
+                    answerSheet.initialEditItemIndex = -1
+                else
+                    initialEditItemIndex = currentIndex
+                var calculatedX = (initialEditItemIndex % 4) * answerSheet.cellWidth
+                var calculatedY = Math.floor(initialEditItemIndex / 4) * answerSheet.cellHeight
+                editInstructionIndicator.x = calculatedX + 1.5 * ApplicationInfo.ratio
+                editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
+            }
+        }
+        else if(items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed && instruction.instructionToInsert)
+            appendInstruction()
+    }
+    Keys.onDeletePressed: {
+        if(currentIndex != -1) {
+            currentModel.remove(currentIndex)
+            items.numberOfInstructionsAdded--
+        }
+        resetEditingValues()
+    }
+
+    function appendInstruction() {
+        if(!(background.insertIntoProcedure && instruction.instructionToInsert === "call-procedure")) {
+            currentModel.append({ "name": instruction.instructionToInsert })
+            items.numberOfInstructionsAdded++
+            instruction.instructionToInsert = ""
+            return true
+        }
+        return false
+    }
+
     function resetEditingValues() {
-    	initialEditItemIndex = -1
-    	isEditingInstruction = false
+        initialEditItemIndex = -1
+        isEditingInstruction = false
     }
 
     Item {
@@ -156,6 +212,7 @@ GridView {
                         currentModel.append(currentModel.get(draggedIndex))
                         currentModel.remove(draggedIndex)
                     }
+                    answerSheet.initialEditItemIndex = -1
                 }
                 else if(draggedIndex != dropIndex) {
                     if(dropIndex <= draggedIndex) {
@@ -166,10 +223,14 @@ GridView {
                         //moving box from left to right
                         currentModel.move(draggedIndex, dropIndex - 1, 1)
                     }
+                    answerSheet.initialEditItemIndex = -1
                 }
                 else {
-                    if(answerSheet.initialEditItemIndex == dropIndex)
+                    if(answerSheet.initialEditItemIndex == dropIndex) {
                         answerSheet.isEditingInstruction = !answerSheet.isEditingInstruction
+                        if(!answerSheet.isEditingInstruction)
+                            answerSheet.initialEditItemIndex = -1
+                    }
                     else
                         answerSheet.initialEditItemIndex = draggedIndex
 

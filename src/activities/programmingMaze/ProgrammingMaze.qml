@@ -52,7 +52,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool keyNavigation: false
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
         property alias items: items
@@ -78,6 +77,7 @@ ActivityBase {
             property alias mainFunctionCodeArea: mainFunctionCodeArea
             property alias procedureModel: procedureModel
             property alias procedureCodeArea: procedureCodeArea
+            property alias instruction: instruction
             property alias player: player
             property alias constraintInstruction: constraintInstruction
             property alias tutorialImage: tutorialImage
@@ -100,37 +100,59 @@ ActivityBase {
 
         onStart: {
             Activity.start(items)
-            keyNavigation = false
         }
         onStop: { Activity.stop() }
 
         Keys.onRightPressed: {
-            keyNavigation = true
             instruction.moveCurrentIndexRight()
         }
         Keys.onLeftPressed: {
-            keyNavigation = true
             instruction.moveCurrentIndexLeft()
         }
         Keys.onDownPressed: {
-            keyNavigation = true
             instruction.moveCurrentIndexDown()
         }
         Keys.onUpPressed: {
-            keyNavigation = true
             instruction.moveCurrentIndexUp()
         }
         Keys.onSpacePressed: {
-            keyNavigation = true
-            instruction.currentItem.mouseAreaInstruction.clicked()
+            if(instruction.currentIndex != -1)
+                instruction.currentItem.mouseAreaInstruction.clicked()
         }
-        Keys.onEnterPressed: {
-            keyNavigation = true
-            instruction.currentItem.mouseAreaInstruction.clicked()
+        Keys.onEnterPressed: runCodeOrResetTux()
+        Keys.onReturnPressed: runCodeOrResetTux()
+        Keys.onTabPressed: changeFocus("main")
+
+        function changeFocus(currentCodeArea) {
+            if(currentCodeArea === "main") {
+                mainFunctionCodeArea.forceActiveFocus()
+                background.insertIntoMain = true
+                background.insertIntoProcedure = false
+                instruction.currentIndex = -1
+                activeCodeAreaIndicator.changeActiveCodeAreaIndicator(mainFunctionCodeArea)
+            }
+            else if(currentCodeArea === "procedure") {
+                procedureCodeArea.forceActiveFocus()
+                background.insertIntoMain = false
+                background.insertIntoProcedure = true
+                mainFunctionCodeArea.currentIndex = -1
+                activeCodeAreaIndicator.changeActiveCodeAreaIndicator(procedureCodeArea)
+            }
+            else if(currentCodeArea === "instruction") {
+                activity.forceActiveFocus()
+                background.insertIntoMain = true
+                background.insertIntoProcedure = false
+                Activity.resetCodeAreasIndices()
+                instruction.currentIndex = 0
+                activeCodeAreaIndicator.changeActiveCodeAreaIndicator(instruction)
+            }
         }
-        Keys.onReturnPressed: {
-            keyNavigation = true
-            instruction.currentItem.mouseAreaInstruction.clicked()
+
+        function runCodeOrResetTux() {
+            if(!Activity.deadEndPoint)
+                runCodeMouseArea.executeCode()
+            else
+                Activity.initLevel()
         }
 
         ListModel {
@@ -237,17 +259,25 @@ ActivityBase {
                 anchors.fill: parent
                 enabled: items.isTuxMouseAreaEnabled
                 onClicked: {
-                    mainFunctionCodeArea.highlightFollowsCurrentItem = false
-                    Activity.resetTux = true
                     Activity.initLevel()
                 }
+            }
+        }
+
+        Rectangle {
+            id: activeCodeAreaIndicator
+            opacity: 0.5
+
+            function changeActiveCodeAreaIndicator(activeArea) {
+                anchors.top = activeArea.top
+                anchors.fill = activeArea
             }
         }
 
         GridView {
             id: instruction
             width: parent.width * 0.5
-            height: parent.height * 0.3 + 25 * ApplicationInfo.ratio
+            height: parent.height * 0.17
             cellWidth: background.buttonWidth
             cellHeight: background.buttonHeight
 
@@ -260,22 +290,20 @@ ActivityBase {
 
             header: instructionHeaderComponent
 
+            property string instructionToInsert
+
             highlight: Rectangle {
                 width: buttonWidth - 3 * ApplicationInfo.ratio
                 height: buttonHeight * 1.18 - 3 * ApplicationInfo.ratio
                 color: "lightsteelblue"
                 border.width: 3.5 * ApplicationInfo.ratio
                 border.color: "purple"
-                visible: background.keyNavigation
-                x: instruction.currentItem.x + 1.5 * ApplicationInfo.ratio
                 y: 1.5 * ApplicationInfo.ratio
                 z: 2
                 radius: width / 18
                 opacity: 0.6
-                Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
             }
-            highlightFollowsCurrentItem: false
-            focus: true
+            highlightFollowsCurrentItem: true
             keyNavigationWraps: true
 
             delegate: Item {
@@ -309,10 +337,35 @@ ActivityBase {
                     signal clicked
 
                     onClicked: {
-                        checkModelAndInsert()
+                        if(!mainFunctionCodeArea.isEditingInstruction && !procedureCodeArea.isEditingInstruction) {
+                            instruction.instructionToInsert = name
+                            playClickedAnimation()
+                        }
+                        else {
+                            if(mainFunctionCodeArea.isEditingInstruction)
+                                replaceInstruction(mainFunctionModel, mainFunctionCodeArea)
+                            if(procedureCodeArea.isEditingInstruction && name != "call-procedure")
+                                replaceInstruction(procedureModel, procedureCodeArea)
+                        }
                     }
                     onPressed: {
                         checkModelAndInsert()
+                    }
+
+                    function appendInstruction(model, area) {
+                        if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
+                            constraintInstruction.changeConstraintInstructionOpacity()
+                        else {
+                            playClickedAnimation()
+                            model.append({ "name": name })
+                            items.numberOfInstructionsAdded++
+                        }
+                    }
+
+                    function replaceInstruction(model, area) {
+                        playClickedAnimation()
+                        model.set(area.initialEditItemIndex, {"name": name}, 1)
+                        area.resetEditingValues()
                     }
 
                     function checkModelAndInsert() {
@@ -330,20 +383,10 @@ ActivityBase {
                      * If editing, replace it with the selected instruction in the code area.
                      */
                     function insertIntoModel(model, area) {
-                        if(!area.isEditingInstruction) {
-                            if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
-                                constraintInstruction.changeConstraintInstructionOpacity()
-                            else {
-                                playClickedAnimation()
-                                model.append({ "name": name })
-                                items.numberOfInstructionsAdded++
-                            }
-                        }
-                        else {
-                            playClickedAnimation()
-                            model.set(area.initialEditItemIndex, {"name": name}, 1)
-                            area.isEditingInstruction = false
-                        }
+                        if(!area.isEditingInstruction)
+                            appendInstruction(model, area)
+                        else
+                            replaceInstruction(model, area)
                     }
 
                     /**
@@ -385,6 +428,13 @@ ActivityBase {
             currentModel: mainFunctionModel
             anchors.right: parent.right
             anchors.top: mainFunctionHeaderComponent.bottom
+
+            Keys.onTabPressed: {
+                if(bar.level < 6)
+                    background.changeFocus("instruction")
+                else
+                    background.changeFocus("procedure")
+            }
         }
 
         AnswerSheet {
@@ -395,6 +445,8 @@ ActivityBase {
             anchors.top: procedureHeaderComponent.bottom
             visible: bar.level >= 6
             property alias procedureIterator: procedureCodeArea.currentIndex
+
+            Keys.onTabPressed: background.changeFocus("instruction")
         }
 
         Image {
@@ -413,16 +465,23 @@ ActivityBase {
                 anchors.fill: parent
                 hoverEnabled: ApplicationInfo.isMobile ? false : (!items.isRunCodeEnabled ? false : true)
                 enabled: items.isRunCodeEnabled
+
+                signal executeCode
+
                 onEntered: runCode.scale = 1.1
-                onClicked: {
+                onExecuteCode: startCodeExecution()
+                onClicked: startCodeExecution()
+                onExited: runCode.scale = 1
+
+                function startCodeExecution() {
                     runCodeClickAnimation.start()
+                    Activity.resetCodeAreasIndices()
 
                     if(constraintInstruction.opacity)
                         constraintInstruction.hide()
 
                     Activity.runCode()
                 }
-                onExited: runCode.scale = 1
             }
 
             SequentialAnimation {
@@ -481,10 +540,10 @@ ActivityBase {
                 id: mainFunctionHeaderImage
                 width: parent.width - 2 * parent.border.width
                 height: parent.height - 2 * parent.border.width
-                opacity: background.insertIntoMain ? 1 : 0.5
                 x: parent.border.width
                 y: x
                 source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
+                opacity: background.insertIntoMain ? 1 : 0.5
 
                 MouseArea {
                     anchors.fill: parent
@@ -528,10 +587,10 @@ ActivityBase {
                 id: procedureHeaderImage
                 width: parent.width - 2 * parent.border.width
                 height: parent.height - 2 * parent.border.width
-                opacity: background.insertIntoProcedure ? 1 : 0.5
                 source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
                 x: parent.border.width
                 y: x
+                opacity: background.insertIntoProcedure ? 1 : 0.5
 
                 MouseArea {
                     anchors.fill: parent

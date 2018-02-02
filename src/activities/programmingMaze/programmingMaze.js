@@ -32,184 +32,224 @@ var CALL_PROCEDURE = "call-procedure"
 var mazeBlocks = [
             //level one
             {
-                "map": [{'x': 1, 'y': 2},
-                        {'x': 2, 'y': 2},
-                        {'x': 3, 'y': 2}],
+                "map": [
+                    {'x': 1, 'y': 2},
+                    {'x': 2, 'y': 2},
+                    {'x': 3, 'y': 2}
+                ],
                 "fish": {'x': 3, 'y': 2},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT
+                ],
                 "maxNumberOfInstructions": 4
             },
             //level two
             {
-                "map": [{'x': 1, 'y': 3},
-                        {'x': 2, 'y': 3},
-                        {'x': 2, 'y': 2},
-                        {'x': 2, 'y': 1},
-                        {'x': 3, 'y': 1}],
+                "map": [
+                    {'x': 1, 'y': 3},
+                    {'x': 2, 'y': 3},
+                    {'x': 2, 'y': 2},
+                    {'x': 2, 'y': 1},
+                    {'x': 3, 'y': 1}
+                ],
                 "fish": {'x': 3, 'y': 1},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT
+                ],
                 "maxNumberOfInstructions": 8
             },
             //level three
             {
-                "map": [{'x': 0, 'y': 3},
-                        {'x': 0, 'y': 2},
-                        {'x': 0, 'y': 1},
-                        {'x': 1, 'y': 1},
-                        {'x': 2, 'y': 1},
-                        {'x': 3, 'y': 1},
-                        {'x': 3, 'y': 2},
-                        {'x': 3, 'y': 3},
-                        {'x': 2, 'y': 3}],
+                "map": [
+                    {'x': 0, 'y': 3},
+                    {'x': 0, 'y': 2},
+                    {'x': 0, 'y': 1},
+                    {'x': 1, 'y': 1},
+                    {'x': 2, 'y': 1},
+                    {'x': 3, 'y': 1},
+                    {'x': 3, 'y': 2},
+                    {'x': 3, 'y': 3},
+                    {'x': 2, 'y': 3}
+                ],
                 "fish": {'x': 2, 'y': 3},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT
+                ],
                 "maxNumberOfInstructions": 14
             },
             //level four
             {
-                "map": [{'x': 0, 'y': 1},
-                        {'x': 1, 'y': 1},
-                        {'x': 1, 'y': 0},
-                        {'x': 2, 'y': 0},
-                        {'x': 3, 'y': 0},
-                        {'x': 4, 'y': 0},
-                        {'x': 1, 'y': 2},
-                        {'x': 1, 'y': 3},
-                        {'x': 2, 'y': 3},
-                        {'x': 3, 'y': 3},
-                        {'x': 4, 'y': 3},
-                        {'x': 4, 'y': 2}],
+                "map": [
+                    {'x': 0, 'y': 1},
+                    {'x': 1, 'y': 1},
+                    {'x': 1, 'y': 0},
+                    {'x': 2, 'y': 0},
+                    {'x': 3, 'y': 0},
+                    {'x': 4, 'y': 0},
+                    {'x': 1, 'y': 2},
+                    {'x': 1, 'y': 3},
+                    {'x': 2, 'y': 3},
+                    {'x': 3, 'y': 3},
+                    {'x': 4, 'y': 3},
+                    {'x': 4, 'y': 2}
+                ],
                 "fish": {'x': 4, 'y': 2},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT
+                ],
                 "maxNumberOfInstructions": 14
             },
             //level five
             {
-                "map": [{'x': 0, 'y': 1},
-                        {'x': 0, 'y': 0},
-                        {'x': 1, 'y': 0},
-                        {'x': 2, 'y': 0},
-                        {'x': 3, 'y': 0},
-                        {'x': 4, 'y': 0},
-                        {'x': 0, 'y': 2},
-                        {'x': 0, 'y': 3},
-                        {'x': 1, 'y': 3},
-                        {'x': 2, 'y': 3},
-                        {'x': 3, 'y': 3},
-                        {'x': 4, 'y': 3},
-                        {'x': 2, 'y': 1},
-                        {'x': 2, 'y': 2},
-                        {'x': 4, 'y': 2}],
+                "map": [
+                    {'x': 0, 'y': 1},
+                    {'x': 0, 'y': 0},
+                    {'x': 1, 'y': 0},
+                    {'x': 2, 'y': 0},
+                    {'x': 3, 'y': 0},
+                    {'x': 4, 'y': 0},
+                    {'x': 0, 'y': 2},
+                    {'x': 0, 'y': 3},
+                    {'x': 1, 'y': 3},
+                    {'x': 2, 'y': 3},
+                    {'x': 3, 'y': 3},
+                    {'x': 4, 'y': 3},
+                    {'x': 2, 'y': 1},
+                    {'x': 2, 'y': 2},
+                    {'x': 4, 'y': 2}
+                ],
                 "fish": {'x': 4, 'y': 2},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT
+                ],
                 "maxNumberOfInstructions": 15
             },
             //level six
             {
-                "map": [{'x': 1, 'y': 1},
-                        {'x': 2, 'y': 1},
-                        {'x': 3, 'y': 1},
-                        {'x': 3, 'y': 2},
-                        {'x': 3, 'y': 3},
-                        {'x': 2, 'y': 3},
-                        {'x': 1, 'y': 3}],
+                "map": [
+                    {'x': 1, 'y': 1},
+                    {'x': 2, 'y': 1},
+                    {'x': 3, 'y': 1},
+                    {'x': 3, 'y': 2},
+                    {'x': 3, 'y': 3},
+                    {'x': 2, 'y': 3},
+                    {'x': 1, 'y': 3}
+                ],
                 "fish": {'x': 1, 'y': 3},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT,
-                                 CALL_PROCEDURE],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT,
+                    CALL_PROCEDURE
+                ],
                 "maxNumberOfInstructions": 7
             },
             //level seven
             {
-                "map": [{'x': 0, 'y': 3},
-                        {'x': 1, 'y': 3},
-                        {'x': 2, 'y': 3},
-                        {'x': 2, 'y': 2},
-                        {'x': 2, 'y': 1},
-                        {'x': 3, 'y': 1},
-                        {'x': 4, 'y': 1},
-                        {'x': 4, 'y': 2},
-                        {'x': 4, 'y': 3}],
+                "map": [
+                    {'x': 0, 'y': 3},
+                    {'x': 1, 'y': 3},
+                    {'x': 2, 'y': 3},
+                    {'x': 2, 'y': 2},
+                    {'x': 2, 'y': 1},
+                    {'x': 3, 'y': 1},
+                    {'x': 4, 'y': 1},
+                    {'x': 4, 'y': 2},
+                    {'x': 4, 'y': 3}
+                ],
                 "fish": {'x': 4, 'y': 3},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT,
-                                 CALL_PROCEDURE],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT,
+                    CALL_PROCEDURE
+                ],
                 "maxNumberOfInstructions": 10
             },
             //level eight
             {
-                "map": [{'x': 0, 'y': 3},
-                        {'x': 1, 'y': 3},
-                        {'x': 1, 'y': 2},
-                        {'x': 2, 'y': 2},
-                        {'x': 2, 'y': 1},
-                        {'x': 3, 'y': 1},
-                        {'x': 3, 'y': 0},
-                        {'x': 4, 'y': 0}],
+                "map": [
+                    {'x': 0, 'y': 3},
+                    {'x': 1, 'y': 3},
+                    {'x': 1, 'y': 2},
+                    {'x': 2, 'y': 2},
+                    {'x': 2, 'y': 1},
+                    {'x': 3, 'y': 1},
+                    {'x': 3, 'y': 0},
+                    {'x': 4, 'y': 0}
+                ],
                 "fish": {'x': 4, 'y': 0},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT,
-                                 CALL_PROCEDURE],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT,
+                    CALL_PROCEDURE
+                ],
                 "maxNumberOfInstructions": 12
             },
             //level nine
             {
-                "map": [{'x': 1, 'y': 1},
-                        {'x': 0, 'y': 0},
-                        {'x': 1, 'y': 0},
-                        {'x': 2, 'y': 0},
-                        {'x': 2, 'y': 1},
-                        {'x': 3, 'y': 0},
-                        {'x': 4, 'y': 0},
-                        {'x': 4, 'y': 1},
-                        {'x': 4, 'y': 2},
-                        {'x': 4, 'y': 3},
-                        {'x': 3, 'y': 3},
-                        {'x': 2, 'y': 3},
-                        {'x': 1, 'y': 3},
-                        {'x': 0, 'y': 3},
-                        {'x': 0, 'y': 2}],
+                "map": [
+                    {'x': 1, 'y': 1},
+                    {'x': 0, 'y': 0},
+                    {'x': 1, 'y': 0},
+                    {'x': 2, 'y': 0},
+                    {'x': 2, 'y': 1},
+                    {'x': 3, 'y': 0},
+                    {'x': 4, 'y': 0},
+                    {'x': 4, 'y': 1},
+                    {'x': 4, 'y': 2},
+                    {'x': 4, 'y': 3},
+                    {'x': 3, 'y': 3},
+                    {'x': 2, 'y': 3},
+                    {'x': 1, 'y': 3},
+                    {'x': 0, 'y': 3},
+                    {'x': 0, 'y': 2}
+                ],
                 "fish": {'x': 0, 'y': 2},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT,
-                                 CALL_PROCEDURE],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT,
+                    CALL_PROCEDURE
+                ],
                 "maxNumberOfInstructions": 14
             },
             //level ten
             {
-                "map": [{'x': 0, 'y': 3},
-                        {'x': 0, 'y': 2},
-                        {'x': 0, 'y': 1},
-                        {'x': 0, 'y': 0},
-                        {'x': 1, 'y': 0},
-                        {'x': 2, 'y': 0},
-                        {'x': 2, 'y': 1},
-                        {'x': 2, 'y': 2},
-                        {'x': 2, 'y': 3},
-                        {'x': 3, 'y': 3},
-                        {'x': 4, 'y': 3},
-                        {'x': 4, 'y': 2},
-                        {'x': 4, 'y': 1},
-                        {'x': 4, 'y': 0}],
+                "map": [
+                    {'x': 0, 'y': 3},
+                    {'x': 0, 'y': 2},
+                    {'x': 0, 'y': 1},
+                    {'x': 0, 'y': 0},
+                    {'x': 1, 'y': 0},
+                    {'x': 2, 'y': 0},
+                    {'x': 2, 'y': 1},
+                    {'x': 2, 'y': 2},
+                    {'x': 2, 'y': 3},
+                    {'x': 3, 'y': 3},
+                    {'x': 4, 'y': 3},
+                    {'x': 4, 'y': 2},
+                    {'x': 4, 'y': 1},
+                    {'x': 4, 'y': 0}
+                ],
                 "fish": {'x': 4, 'y': 0},
-                "instructions": [MOVE_FORWARD,
-                                 TURN_LEFT,
-                                 TURN_RIGHT,
-                                 CALL_PROCEDURE],
+                "instructions": [
+                    MOVE_FORWARD,
+                    TURN_LEFT,
+                    TURN_RIGHT,
+                    CALL_PROCEDURE
+                ],
                 "maxNumberOfInstructions": 15
             }
         ]
@@ -421,18 +461,27 @@ function initLevel() {
     moveAnimDuration = 1000
     items.background.insertIntoMain = true
     items.background.insertIntoProcedure = false
-    items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration
-    items.procedureCodeArea.highlightMoveDuration = moveAnimDuration
+    items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
+    items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
     items.isTuxMouseAreaEnabled = false
     items.isRunCodeEnabled = true
     items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel].maxNumberOfInstructions
     items.constraintInstruction.show()
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
+    resetCodeAreasIndices()
+    items.background.changeFocus("instruction")
     resetTux = false
     codeIterator = 0
 
     items.player.init()
+}
+
+function resetCodeAreasIndices() {
+    items.instruction.currentIndex = -1
+    items.mainFunctionCodeArea.currentIndex = -1
+    items.procedureCodeArea.currentIndex = -1
+    items.instruction.instructionToInsert = ''
 }
 
 function getPlayerRotation() {
@@ -441,7 +490,6 @@ function getPlayerRotation() {
 
 //store all the instructions from main and procedure areas in their respective instruction lists.
 function runCode() {
-    items.mainFunctionCodeArea.highlightFollowsCurrentItem = true
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
 
@@ -498,6 +546,7 @@ function executeNextInstruction() {
 
 function deadEnd() {
     deadEndPoint = true
+    resetTux = true
     items.isTuxMouseAreaEnabled = true
     items.constraintInstruction.show()
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
@@ -553,5 +602,6 @@ function repositionObjectsOnHeightChanged(factor) {
 }
 
 function reloadLevel() {
+    resetTux = false
     initLevel()
 }
