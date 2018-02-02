@@ -84,6 +84,7 @@ ActivityBase {
             property alias fish: fish
             property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
+            property bool currentLevelContainsProcedure
             property int maxNumberOfInstructionsAllowed
             property int numberOfInstructionsAdded
         }
@@ -372,7 +373,7 @@ ActivityBase {
                         if(items.constraintInstruction.opacity)
                             items.constraintInstruction.hide()
 
-                        if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE)
+                        if(background.insertIntoProcedure && (name != Activity.CALL_PROCEDURE))
                             insertIntoModel(procedureModel, procedureCodeArea)
                         else if(background.insertIntoMain)
                             insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
@@ -430,7 +431,7 @@ ActivityBase {
             anchors.top: mainFunctionHeaderComponent.bottom
 
             Keys.onTabPressed: {
-                if(bar.level < 6)
+                if(!items.currentLevelContainsProcedure)
                     background.changeFocus("instruction")
                 else
                     background.changeFocus("procedure")
@@ -443,7 +444,7 @@ ActivityBase {
             currentModel: procedureModel
             anchors.right: parent.right
             anchors.top: procedureHeaderComponent.bottom
-            visible: bar.level >= 6
+            visible: items.currentLevelContainsProcedure
             property alias procedureIterator: procedureCodeArea.currentIndex
 
             Keys.onTabPressed: background.changeFocus("instruction")

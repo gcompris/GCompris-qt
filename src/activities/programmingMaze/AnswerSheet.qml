@@ -88,13 +88,13 @@ GridView {
      */
     Keys.onSpacePressed: {
         if(currentIndex != -1) {
-            if(instruction.instructionToInsert && items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) {
+            if(instruction.instructionToInsert && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed)) {
                 var isInstructionInserted = appendInstruction()
                 if(isInstructionInserted)
                     currentModel.move(currentModel.count - 1, currentIndex, 1)
             }
             else {
-                if(initialEditItemIndex == currentIndex || initialEditItemIndex == -1 && currentIndex != -1) {
+                if((initialEditItemIndex == currentIndex) || (initialEditItemIndex == -1 && currentIndex != -1)) {
                     answerSheet.isEditingInstruction = !answerSheet.isEditingInstruction
                 }
 
@@ -108,7 +108,7 @@ GridView {
                 editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
             }
         }
-        else if(items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed && instruction.instructionToInsert)
+        else if((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) && instruction.instructionToInsert)
             appendInstruction()
     }
     Keys.onDeletePressed: {
@@ -120,7 +120,7 @@ GridView {
     }
 
     function appendInstruction() {
-        if(!(background.insertIntoProcedure && instruction.instructionToInsert === "call-procedure")) {
+        if(!(background.insertIntoProcedure && (instruction.instructionToInsert === "call-procedure"))) {
             currentModel.append({ "name": instruction.instructionToInsert })
             items.numberOfInstructionsAdded++
             instruction.instructionToInsert = ""

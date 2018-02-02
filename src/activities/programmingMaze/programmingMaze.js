@@ -403,8 +403,15 @@ function initLevel() {
     items.mainFunctionCodeArea.currentIndex = -1
     items.procedureCodeArea.procedureIterator = -1
 
+    var levelInstructions = mazeBlocks[currentLevel].instructions
+
+    if(levelInstructions.indexOf(CALL_PROCEDURE) != -1)
+        items.currentLevelContainsProcedure = true
+    else
+        items.currentLevelContainsProcedure = false
+
     //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureFunctionObject's slots.
-    if(currentLevel >= 5) {
+    if(items.currentLevelContainsProcedure) {
         if(!items.tutorialImage.shownProcedureTutorialInstructions) {
             items.tutorialImage.shownProcedureTutorialInstructions = true
             items.tutorialImage.visible = true
@@ -443,7 +450,7 @@ function initLevel() {
     stepY = items.mazeModel.itemAt(0).height
 
     items.instructionModel.clear()
-    var levelInstructions = mazeBlocks[currentLevel].instructions
+
     for (var i = 0; i < levelInstructions.length; i++) {
         items.instructionModel.append({"name":levelInstructions[i]});
     }
