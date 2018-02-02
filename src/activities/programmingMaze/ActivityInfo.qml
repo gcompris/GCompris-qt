@@ -25,11 +25,18 @@ ActivityInfo {
   demo: false
   title: qsTr("Programming Maze")
   description: qsTr("This activity teaches the kid to program the Tux to its goal using
-simple instructions like move forward, turn left etc")
+                    simple instructions like move forward, turn left etc")
   goal: qsTr("Tux is hungry. Help him find fish by programming him to the correct ice spot.")
   prerequisite: qsTr("Can read instructions. Thinking of the path logically")
   manual: qsTr("Choose the instructions from given menu. Arrange the instruction in an
-order so that they can make the tux reach to its goal")
+                order so that they can make the tux reach to its goal<br><br>") +
+          qsTr("<b>Keyboard Controls:</b><br>") +
+          qsTr("1. <b>SPACE</b> to select an instruction.<br>") +
+          qsTr("2. <b>TAB</b> to switch to different code areas.<br>") +
+          qsTr("3. <b>SPACE</b> to add/edit the selected instruction from instruction area to the current code area (main/procedure)<br>") +
+          qsTr("4. <b>Arrow keys</b> to navigate instructions in the current code area having keyboard focus.<br>") +
+          qsTr("5. <b>DELETE</b> to delete the current navigated instruction in the code area.<br>") +
+          qsTr("6. <b>ENTER</b> or <b>RETURN</b> to run the code or reset Tux when it fails to reach the fish.")
   credit: ""
   section: "fun"
 }
