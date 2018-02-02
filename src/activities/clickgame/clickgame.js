@@ -317,5 +317,6 @@ function fishKilled() {
     if(++items.killedFishes === createdFishes.length) {
         bonus.good("flower")
     }
+    items.score.playWinAnimation();
 }
 
