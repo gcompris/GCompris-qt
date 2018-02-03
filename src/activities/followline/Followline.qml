@@ -69,7 +69,7 @@ ActivityBase {
             anchors {
                 left: parent.left
                 verticalCenter: parent.verticalCenter
-                verticalCenterOffset: height / 4
+                verticalCenterOffset: - height / 10
             }
         }
 
@@ -79,7 +79,8 @@ ActivityBase {
             sourceSize.width: 126 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
-                bottom: parent.bottom
+                verticalCenter: parent.verticalCenter
+                verticalCenterOffset: height / 2
             }
 
             Image {
