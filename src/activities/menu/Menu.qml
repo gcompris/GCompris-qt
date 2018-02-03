@@ -78,7 +78,6 @@ ActivityBase {
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
-    property string inputText: ""
     property var sections: [
         {
             icon: activity.url + "all.svg",
@@ -130,6 +129,7 @@ ActivityBase {
         sourceSize.width: Math.max(parent.width, parent.height)
         height: main.height
         fillMode: Image.PreserveAspectCrop
+
         Timer {
             // triggered once at startup to populate the keyboard
             id: keyboardFiller
@@ -556,7 +556,6 @@ ActivityBase {
             TextField {
                 id: searchTextField
                 width: parent.width
-                text: activity.inputText
                 textColor: "black"
                 font.pointSize: 16
                 font.bold: true
@@ -667,41 +666,40 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
-
-    }
-
-    DialogAbout {
-        id: dialogAbout
-        onClose: home()
-    }
-    DialogHelp {
-        id: dialogHelp
-        onClose: home()
-        activityInfo: ActivityInfoTree.rootMenu
-    }
-
-    DialogActivityConfig {
-        id: dialogActivityConfig
-        currentActivity: activity
-
-        content: Component {
-            ConfigurationItem {
-                id: configItem
-                width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
+                
+        DialogAbout {
+            id: dialogAbout
+            onClose: home()
             }
+        DialogHelp {
+            id: dialogHelp
+            onClose: home()
+            activityInfo: ActivityInfoTree.rootMenu
         }
 
-        onSaveData: {
-            dialogActivityConfig.configItem.save();
-        }
-        onClose: {
-            if(activity.currentTag != "search") {
-                ActivityInfoTree.filterByTag(activity.currentTag)
-                ActivityInfoTree.filterLockedActivities()
-                ActivityInfoTree.filterEnabledActivities()
-            } else
-                ActivityInfoTree.filterBySearch(activity.inputText);
-            home()
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+
+            content: Component {
+                ConfigurationItem {
+                    id: configItem
+                    width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
+                }
+            }
+
+            onSaveData: {
+                dialogActivityConfig.configItem.save();
+            }
+            onClose: {
+                if(activity.currentTag != "search") {
+                    ActivityInfoTree.filterByTag(activity.currentTag)
+                    ActivityInfoTree.filterLockedActivities()
+                    ActivityInfoTree.filterEnabledActivities()
+                } else
+                    ActivityInfoTree.filterBySearch(searchTextField.text);
+                home()
+            }
         }
     }
 }
