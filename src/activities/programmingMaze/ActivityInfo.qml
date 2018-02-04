@@ -48,4 +48,5 @@ ActivityInfo {
           qsTr("<ul><li><b>ENTER</b> or <b>RETURN</b>.</li></ul>")
   credit: ""
   section: "fun"
+  createdInVersion: 9000
 }
