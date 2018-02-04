@@ -205,7 +205,7 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
 
-                readonly property string resetTuxInstructionText: qsTr("Click on Tux to reset it or RELOAD button to reload the level.")
+                readonly property string resetTuxInstructionText: qsTr("Click on Tux or press Enter key to reset it or RELOAD button to reload the level.")
                 readonly property string constraintInstructionText: qsTr("Reach the fish in less than %1 instructions.").arg(items.maxNumberOfInstructionsAllowed)
 
                 text: items.isTuxMouseAreaEnabled ? resetTuxInstructionText : constraintInstructionText

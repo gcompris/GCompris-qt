@@ -29,14 +29,23 @@ ActivityInfo {
   goal: qsTr("Tux is hungry. Help him find fish by programming him to the correct ice spot.")
   prerequisite: qsTr("Can read instructions. Thinking of the path logically")
   manual: qsTr("Choose the instructions from given menu. Arrange the instruction in an
-                order so that they can make the tux reach to its goal<br><br>") +
-          qsTr("<b>Keyboard Controls:</b><br>") +
-          qsTr("1. <b>SPACE</b> to select an instruction.<br>") +
-          qsTr("2. <b>TAB</b> to switch to different code areas.<br>") +
-          qsTr("3. <b>SPACE</b> to add/edit the selected instruction from instruction area to the current code area (main/procedure)<br>") +
-          qsTr("4. <b>Arrow keys</b> to navigate instructions in the current code area having keyboard focus.<br>") +
-          qsTr("5. <b>DELETE</b> to delete the current navigated instruction in the code area.<br>") +
-          qsTr("6. <b>ENTER</b> or <b>RETURN</b> to run the code or reset Tux when it fails to reach the fish.")
+                order so that they can make the tux reach to its goal.<br><br>") +
+          qsTr("<b>Keyboard Controls:</b><br><br>") +
+          qsTr("1. <i><u>To navigate through instructions in the current code area having keyboard focus</i></u>:") +
+          qsTr("<ul><li><b>Arrow keys</b></li></ul><br>") +
+          qsTr("2. <i><u>To append an instruction from instruction area to the main/procedure code area</i></u>:") +
+          qsTr("<ul><li>Select an instruction from the instruction area by pressing <b>SPACE</b>.</li>") +
+          qsTr("<li>Navigate to the code areas by pressing <b>TAB</b>, then press <b>SPACE</b> to append the instruction.</li></ul><br>") +
+          qsTr("3. <i><u>To add an instruction at any particular position in the main/procedure code area</i></u>:") +
+          qsTr("<ul><li>Navigate to the instruction at that position and press <b>SPACE</b> to add the selected instruction from the instruction area.</li></ul><br>") +
+          qsTr("4. <i><u>To delete the current navigated instruction in the main/procedure code area</i></u>:") +
+          qsTr("<ul><li><b>DELETE</b>.</li></ul><br>") +
+          qsTr("5. <i><u>To edit an instruction in the main/procedure code area</i></u>:") +
+          qsTr("<ul><li>Navigate to the instruction to edit using <b>Arrow keys</b>.</li>") +
+          qsTr("<li>Press <b>SPACE</b> to select it.</li>") +
+          qsTr("<li>Then navigate to the instruction area using <b>TAB</b> and select the new instruction by pressing <b>SPACE</b>.</li></ul><br>") +
+          qsTr("6. <i><u>To run the code or reset Tux when it fails to reach the fish</i></u>:") +
+          qsTr("<ul><li><b>ENTER</b> or <b>RETURN</b>.</li></ul>")
   credit: ""
   section: "fun"
 }
