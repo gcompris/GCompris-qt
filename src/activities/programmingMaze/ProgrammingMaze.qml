@@ -43,6 +43,8 @@ ActivityBase {
         oldHeight = height
     }
 
+    property bool keyboardNavigationVisible: false
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/programmingMaze/resource/background.svg"
@@ -105,15 +107,19 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Keys.onRightPressed: {
+            activity.keyboardNavigationVisible = true
             instruction.moveCurrentIndexRight()
         }
         Keys.onLeftPressed: {
+            activity.keyboardNavigationVisible = true
             instruction.moveCurrentIndexLeft()
         }
         Keys.onDownPressed: {
+            activity.keyboardNavigationVisible = true
             instruction.moveCurrentIndexDown()
         }
         Keys.onUpPressed: {
+            activity.keyboardNavigationVisible = true
             instruction.moveCurrentIndexUp()
         }
         Keys.onSpacePressed: {
@@ -122,7 +128,10 @@ ActivityBase {
         }
         Keys.onEnterPressed: runCodeOrResetTux()
         Keys.onReturnPressed: runCodeOrResetTux()
-        Keys.onTabPressed: changeFocus("main")
+        Keys.onTabPressed:  {
+            activity.keyboardNavigationVisible = true
+            changeFocus("main")
+        }
 
         function changeFocus(currentCodeArea) {
             if(currentCodeArea === "main") {
@@ -303,6 +312,7 @@ ActivityBase {
                 z: 2
                 radius: width / 18
                 opacity: 0.6
+                visible: activity.keyboardNavigationVisible
             }
             highlightFollowsCurrentItem: true
             keyNavigationWraps: true
