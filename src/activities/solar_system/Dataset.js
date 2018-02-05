@@ -305,7 +305,7 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_real.svg",
                     "bodyName": qsTr("Uranus"),
-                    "temperatureHint": qsTr("The maximum temperature on Saturn is -178 degrees."),
+                    "temperatureHint": qsTr("The temperature on Saturn is -178 degrees."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
                         { 	//sub-level 1
