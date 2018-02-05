@@ -221,7 +221,7 @@ ActivityBase {
             running: false
             repeat: true
             onTriggered: {
-                Activity.movespaceship()
+                Activity.moveSpaceship()
                 Activity.handleCollisionWithAsteroid()
             }
         }

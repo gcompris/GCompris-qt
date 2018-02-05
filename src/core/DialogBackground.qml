@@ -45,12 +45,13 @@ Rectangle {
     property string title
     property alias titleIcon: titleIcon.source
     property string content
-    readonly property real textContentHeight: textContent.contentHeight
+    property alias button0Text: button0.text
     signal close
     signal start
     signal pause
     signal play
     signal stop
+    signal button0Hit
 
     Row {
         spacing: 2
@@ -68,25 +69,24 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
-                Image {
-                    id: titleIcon
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        margins: 4 * ApplicationInfo.ratio
+                Row {
+                    spacing: 2
+                    padding: 8
+                    Image {
+                        id: titleIcon
                     }
-                }
 
-                GCText {
-                    id: title
-                    text: dialogBackground.title
-                    width: dialogBackground.width - 30
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "black"
-                    fontSize: 20
-                    font.weight: Font.DemiBold
-                    wrapMode: Text.WordWrap
+                    GCText {
+                        id: title
+                        text: dialogBackground.title
+                        width: dialogBackground.width - (70 + cancel.width)
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        color: "black"
+                        fontSize: 20
+                        font.weight: Font.DemiBold
+                        wrapMode: Text.WordWrap
+                    }
                 }
             }
             Rectangle {
@@ -107,11 +107,28 @@ Rectangle {
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
+                    Button {
+                        id: button0
+                        visible: text != ""
+                        onClicked: { dialogBackground.button0Hit() }
+                        width: 150 * ApplicationInfo.ratio
+                        height: visible ? 40 * ApplicationInfo.ratio : 0
+                        anchors {
+                            horizontalCenter: parent.horizontalCenter
+                            top: parent.top
+                            topMargin: 8
+                        }
+                        style: GCButtonStyle {
+                            theme: "highContrast"
+                        }
+                    }
+                    
                     GCText {
                         id: textContent
                         text: style + "<body>" + content + "</body>"
                         width: flick.width
-                        height: flick.height
+                        height: flick.height - button0.height
+                        anchors.top: button0.bottom
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
@@ -125,6 +142,7 @@ Rectangle {
 
     // The cancel button
     GCButtonCancel {
+        id: cancel
         onClose: parent.close()
     }
 

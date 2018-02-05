@@ -23,11 +23,16 @@ ActivityInfo {
   icon: "family_find_relative/family_find_relative.svg"
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Family find relatives")
+  //: Help title
   description: ""
   //intro: "Click on a pair that defines the given relation"
+  //: Help goal
   goal: qsTr("To get an idea of family relations")
+  //: Help prerequisite
   prerequisite: qsTr("Reading, moving and clicking with the mouse")
+  //: Help manual
   manual: qsTr("You are provided with a relation and a family hierarchy. Click on a pair of family members which correctly identifies the given relation.")
   credit: ""
   section: "discovery"

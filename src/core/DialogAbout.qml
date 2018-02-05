@@ -19,6 +19,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
+import QtQuick 2.6
+import QtQuick.Controls 1.5
 import GCompris 1.0
 
 /**
@@ -30,6 +32,27 @@ import GCompris 1.0
 DialogBackground {
     visible: false
     title: qsTr("About GCompris")
+    button0Text: qsTr("License")
+    onButton0Hit: { licenseContainer.visible = true }
+
+    File {
+        id: licenseFile
+        name: "qrc:/gcompris/src/core/COPYING"
+        onError: print(msg)
+    }
+    
+    DialogBackground {
+        id: licenseContainer
+        visible: false
+        anchors.fill: parent
+        title: qsTr("License")
+        onVisibleChanged: {
+            if(!content) {
+                content = licenseFile.read()
+            }
+        }
+        onClose: visible = false
+    }
 
     //: Replace this string with your names, one name per line.
     property string translators: qsTr("translator-credits") ===

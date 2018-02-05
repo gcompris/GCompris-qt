@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Eiffel Tower, seen from the champ de Mars, Paris, France")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/TourEiffel_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

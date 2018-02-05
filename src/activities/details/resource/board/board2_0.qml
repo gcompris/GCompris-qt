@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella - 1888")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/VincentVanGoghBridge_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

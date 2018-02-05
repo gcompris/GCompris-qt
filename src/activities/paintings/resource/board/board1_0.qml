@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr(" Pierre-Auguste Renoir, Le Moulin de la Galette - 1876")
-   property variant levels : [
+   property var levels : [
       {
          "pixmapfile" : "image/bg.svg",
          "type" : "SHAPE_BACKGROUND_IMAGE",

@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Aviation")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/bell_X1.svg",
           "x": 0.2,

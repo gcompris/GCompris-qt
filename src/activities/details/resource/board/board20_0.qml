@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Castle Neuschwanstein at Schwangau, Bavaria, Germany")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/Neuschwanstein_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

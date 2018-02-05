@@ -35,7 +35,7 @@ ActivityBase {
     Keys.onPressed: Activity.processPressedKey(event)
     Keys.onReleased: Activity.processReleasedKey(event)
 
-    property variant dataset
+    property var dataset
 
     property int oldWidth: width
     onWidthChanged: {

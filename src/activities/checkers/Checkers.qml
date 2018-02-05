@@ -18,9 +18,9 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
-import QtQuick.Controls 1.0
-import QtQuick.Controls.Styles 1.0
+import QtQuick 2.6
+import QtQuick.Controls 1.5
+import QtQuick.Controls.Styles 1.4
 import GCompris 1.0
 
 import "../../core"
@@ -64,7 +64,7 @@ ActivityBase {
                                        Math.min(background.width / (items.numberOfCases + 2),
                                                 (background.height - controls.height) / (items.numberOfCases + barHeightAddon)) :
                                        Math.min(background.width / (items.numberOfCases + 2), background.height / (items.numberOfCases + barHeightAddon))
-            property variant fen: activity.fen
+            property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
             property var positions

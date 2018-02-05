@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Vincent van Gogh, The Harvest - 1888")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/VincentVanGogh0019_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

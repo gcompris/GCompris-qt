@@ -35,9 +35,30 @@ var numberOfSecondPieces
 var numberOfPieces
 var numberOfDragPoints
 var depthMax
+var tutorialInstructions = [
+            {
+               "instruction": qsTr("You and Tux start with 9 pieces each, and take turns to place your pieces on to the empty spots (by clicking on the spots) on the board."),
+               "instructionImage" : "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial1.svg"
+            },
+            {
+                "instruction": qsTr("If you form a mill (line of 3 pieces), then select a piece of Tux, and remove it. Pieces of formed mill can not be removed unless no other pieces are left on board."),
+                "instructionImage": "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial2.svg"
+            },
+            {
+	      "instruction": qsTr("After all the pieces are placed, you and Tux will take turns to move them. Click on one of your pieces, and then on the adjacent empty spot to move it there. Green color spot indicates where you can move."),
+              "instructionImage": "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial3.svg"
+	    },
+	    {
+	      "instruction":  qsTr("If you are left with 3 pieces, your pieces will gain the ability to 'fly' and can be moved to any vacant spot on the board."),
+	      "instructionImage": "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial4.svg"
+	    },
+	    {
+	      "instruction": qsTr("If you immobilize the computer or leave it with less than 3 pieces, then you win the game."),
+	      "instructionImage": "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial5.svg"
+	    }
+       ]
 
 function start(items_, twoPlayer_) {
-
     items = items_
     currentLevel = 1
     twoPlayer = twoPlayer_
@@ -230,17 +251,16 @@ function start(items_, twoPlayer_) {
     items.dragPoints.itemAt(23).lowerPoint = items.dragPoints.itemAt(14)
     // End assigning upper and lower piece
 
-    if(!twoPlayer)
-        tutorial()
-    else
+    if(twoPlayer) {
+	items.tutorialSection.visible = false
         initLevel()
+    }
 }
 
 function stop() {
 }
 
 function initLevel() {
-
     items.bar.level = currentLevel
     items.turn = 0
     items.gameDone = false
@@ -279,49 +299,6 @@ function initLevel() {
     }
     else
         initiatePlayer1()
-}
-
-function tutorial() {
-    items.isTutorial = true
-    setTutorial(1)
-}
-
-function setTutorial(tutNum) {
-
-    if(tutNum == 1) {
-        items.tutorialTxt = qsTr("You and Tux start with 9 pieces each, and take turns to place " +
-                                 "your pieces on to the empty spots (by clicking on the spots) on the board.")
-    }
-    else if(tutNum == 2) {
-        items.tutorialTxt = qsTr("If you form a mill (line of 3 pieces), then select a piece of Tux, and remove " +
-                                 "it. Pieces of formed mill can not be removed unless no other pieces are left on board.")
-    }
-    else if(tutNum == 3) {
-        items.tutorialTxt = qsTr("After all the pieces are placed, you and Tux will take turns to move them. " +
-                                 "Click on one of your pieces, and then on the adjacent empty spot to move " +
-                                 "it there. Green color spot indicates where you can move.")
-    }
-    else if(tutNum == 4) {
-        items.tutorialTxt = qsTr("If you are left with 3 pieces, your pieces will gain the ability to 'fly' " +
-                                 "and can be moved to any vacant spot on the board.")
-    }
-    else if(tutNum == 5) {
-        items.tutorialTxt = qsTr("If you immobilize the computer or leave it with less than 3 pieces, then " +
-                                 "you win the game.")
-    }
-}
-
-function tutorialNext() {
-    setTutorial(++items.tutNum)
-}
-
-function tutorialPrevious() {
-    setTutorial(--items.tutNum)
-}
-
-function tutorialSkip() {
-    items.isTutorial = false
-    initLevel()
 }
 
 function nextLevel() {

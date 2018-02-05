@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
     property string instruction: qsTr("South America")
-    property variant levels: [
+    property var levels: [
     {
         "pixmapfile": "southamerica/south_america.png",
         "type": "SHAPE_BACKGROUND_IMAGE"

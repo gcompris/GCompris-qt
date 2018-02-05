@@ -83,7 +83,7 @@ ActivityBase {
             property alias locale: background.locale
             property alias ok: ok
             property int remainingLife
-            property variant goodWord
+            property var goodWord
             property int goodWordIndex
             property bool easyMode: false
             property alias englishFallbackDialog: englishFallbackDialog

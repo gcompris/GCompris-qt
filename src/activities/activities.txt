@@ -37,6 +37,7 @@ color_mix_light
 colors
 crane
 details
+digital_electricity
 drawletters
 drawnumbers
 enumerate
@@ -50,6 +51,7 @@ explore_world_music
 family
 family_find_relative
 fifteen
+find_the_day
 followline
 football
 geo-country
@@ -83,6 +85,8 @@ mazeinvisible
 mazerelative
 melody
 memory
+memory-case-association
+memory-case-association-tux
 memory-enumerate
 memory-math-add
 memory-math-add-minus

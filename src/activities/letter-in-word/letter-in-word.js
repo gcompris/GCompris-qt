@@ -89,8 +89,8 @@ function initLevel() {
         var level = levels[currentLevel];
         words = Lang.getLessonWords(dataset, level);
         Core.shuffle(words);
-        var limit = Math.min(11, words.length)
-        words = words.slice(0, limit)
+        var limit = Math.min(items.currentMode, words.length);
+        words = words.slice(0, limit);
         frequency = calculateFrequency();
         var tempQuestions = generateQuestions();
         maxSubLevel = tempQuestions.length;

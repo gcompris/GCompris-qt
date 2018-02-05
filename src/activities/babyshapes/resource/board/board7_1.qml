@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Pieter Bruegel the Elder, The peasants wedding - 1568")
-   property variant levels: [
+   property var levels: [
 	  {
           "pixmapfile" : "image/Pieter_Bruegel_background.png",
           "type" : "SHAPE_BACKGROUND_IMAGE"

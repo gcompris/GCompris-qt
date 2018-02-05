@@ -49,7 +49,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias paintModel: paintModel
-            property variant colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
+            property var colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
             property string colorSelector: colors[0]
             property string backgroundImg: Activity.backgrounds[bar.level - 1]
         }
