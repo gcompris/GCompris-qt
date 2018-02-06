@@ -132,7 +132,10 @@ ActivityBase {
                        background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
             MouseArea {
                 anchors.fill: parent
-                onClicked: Activity.deselect()
+                onClicked: {
+                    Activity.deselect()
+                    availablePieces.hideToolbar()
+                }
             }
 
             GCText {
