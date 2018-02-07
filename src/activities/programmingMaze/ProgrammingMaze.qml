@@ -480,8 +480,11 @@ ActivityBase {
                 signal executeCode
 
                 onEntered: runCode.scale = 1.1
-                onExecuteCode: startCodeExecution()
-                onClicked: startCodeExecution()
+                onExecuteCode: {
+                    if(mainFunctionModel.count)
+                        startCodeExecution()
+                }
+                onClicked: executeCode()
                 onExited: runCode.scale = 1
 
                 function startCodeExecution() {
