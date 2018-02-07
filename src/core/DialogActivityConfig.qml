@@ -163,28 +163,32 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
-                Image {
-                    id: titleIcon
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        margins: 4 * ApplicationInfo.ratio
+                Row {
+                    spacing: 2
+                    padding: 8
+                    Image {
+                        id: titleIcon
+                        anchors {
+                            left: parent.left
+                            top: parent.top
+                            margins: 4 * ApplicationInfo.ratio
+                        }
+                    }
+
+                    GCText {
+                        id: title
+                        text: dialogActivityContent.title
+                        width: dialogActivityContent.width - (30 + cancel.width)
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        color: "black"
+                        fontSize: 20
+                        font.weight: Font.DemiBold
+                        wrapMode: Text.WordWrap
                     }
                 }
-
-                GCText {
-                    id: title
-                    text: dialogActivityContent.title
-                    width: dialogActivityContent.width - 30
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "black"
-                    fontSize: 20
-                    font.weight: Font.DemiBold
-                    wrapMode: Text.WordWrap
-                }
             }
-            
+
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
@@ -207,8 +211,8 @@ Rectangle {
                         sourceComponent: dialogActivityContent.content
                         property alias rootItem: dialogActivityContent
                     }
-                } 
-                
+                }
+
                 // The scroll buttons
                 GCButtonScroll {
                     anchors.right: parent.right
@@ -228,6 +232,7 @@ Rectangle {
 
     // The cancel button
     GCButtonCancel {
+        id: cancel
         onClose: {
             if (dialogActivityContent.dataValidationFunc && !
                     dialogActivityContent.dataValidationFunc()) {
