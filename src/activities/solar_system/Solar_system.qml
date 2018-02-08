@@ -178,13 +178,17 @@ ActivityBase {
 
             title: qsTr("Hint")
             content: "%1<br>%2".arg(hint1).arg(hint2)
-            onClose: home()
+            onClose: {
+            	solarSystemImageHint.visible = false
+            	home()
+            }
+
             Rectangle {
                 id: button
                 visible: true
                 anchors.horizontalCenter: parent.horizontalCenter
                 y: Math.max(parent.height / 1.5, hintDialog.textContentHeight * 1.4)
-                implicitWidth: Math.max(200, parent.width/6)
+                implicitWidth: Math.max(200 * ApplicationInfo.ratio, parent.width/6)
                 implicitHeight: Math.min(50 * ApplicationInfo.ratio, parent.height - hintDialog.textContentHeight * 1.3)
                 border.width: 2
                 border.color: "#373737"
@@ -197,7 +201,7 @@ ActivityBase {
                 MouseArea {
                     id: mouseArea
                     anchors.fill: parent
-                    onClicked: hintBoard.visible = true
+                    onClicked: solarSystemImageHint.visible = true
                 }
 
                 GCText {
@@ -211,7 +215,7 @@ ActivityBase {
             }
 
             Rectangle {
-                id: hintBoard
+                id: solarSystemImageHint
                 radius: 30
                 border.width: 5
                 border.color: "black"
@@ -219,10 +223,19 @@ ActivityBase {
                 height: parent.height
                 visible: false
 
-                onVisibleChanged: hintAppearAnimation.start()
+                onVisibleChanged: {
+                    if(visible) {
+                        hintCloseAnimation.stop()
+                        hintAppearAnimation.start()
+                    }
+                    else {
+                    	solarSystemImageHint.x = 0
+                        solarSystemImageHint.y = 0
+                    }
+                }
 
                 Image {
-                    id: hintSolarModel
+                    id: solarSystemImage
                     source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
                     sourceSize.width: parent.width - 6 * ApplicationInfo.ratio
                     fillMode: Image.PreserveAspectCrop
@@ -231,7 +244,7 @@ ActivityBase {
 
                 NumberAnimation {
                     id: hintAppearAnimation
-                    target: hintBoard
+                    target: solarSystemImageHint
                     property: horizontalLayout ? "x" : "y"
                     from: horizontalLayout ? -width : -height
                     to: 0
@@ -248,19 +261,14 @@ ActivityBase {
                     id: hintCloseAnimation
 
                     NumberAnimation {
-                        target: hintBoard
+                        target: solarSystemImageHint
                         property: horizontalLayout ? "x" : "y"
                         to: horizontalLayout ? -width : -height
                         duration: 1200
                         easing.type: Easing.InSine
                     }
 
-                    PropertyAnimation {
-                        id: switchDescriptionPanelInvisible
-                        target: hintBoard
-                        property: "visible"
-                        to: false
-                    }
+                    onStopped: solarSystemImageHint.visible = false
                 }
             }
         }

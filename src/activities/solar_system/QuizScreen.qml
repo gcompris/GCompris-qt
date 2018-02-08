@@ -188,13 +188,19 @@ Item {
         border.color: "black"
         opacity: 0.78
         visible: !background.assessmentMode
-        GCText {
-            id: closenessText
-            color: "black"
-            anchors.fill: parent
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
+        Item {
+            width: parent.width - 3 * ApplicationInfo.ratio
+            height: parent.height
+            anchors.centerIn: parent
+
+            GCText {
+                id: closenessText
+                color: "black"
+                anchors.fill: parent
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
+            }
         }
 
         SequentialAnimation {
