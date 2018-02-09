@@ -221,7 +221,7 @@ QtObject {
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("The NAND gate takes two binary inputs and produces one binary output."),
-                qsTr("The output of the NAND gate will be zero if the both the inputs are \"1\". Else, the output will be one."),
+                qsTr("The output of the NAND gate will be zero if both of its inputs are \"1\". Else, the output will be one."),
                 qsTr("For a more detailed description about the gate, select it and click on the info button."),
                 qsTr("Light the bulb using the NAND gate provided.")
             ]
