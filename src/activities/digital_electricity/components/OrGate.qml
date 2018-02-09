@@ -24,10 +24,10 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: orGate
-    terminalSize: 0.251
+    terminalSize: 0.5
     noOfInputs: 2
     noOfOutputs: 1
-    property var inputTerminalPosY: [0.223, 0.786]
+    property var inputTerminalPosY: [0.2, 0.8]
 
     information: qsTr("OR gate outputs 1 if any of the inputs is 1, 0 otherwise:")
     truthTable: [['A','B',qsTr("A OR B")],
@@ -46,7 +46,7 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.045
+                posX: 0.04
                 posY: inputTerminalPosY[index]
                 type: "In"
             }
@@ -60,8 +60,8 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.955
-                posY: 0.509
+                posX: 0.96
+                posY: 0.5
                 type: "Out"
             }
         }

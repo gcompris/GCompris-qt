@@ -24,10 +24,10 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: nandGate
-    terminalSize: 0.273
+    terminalSize: 0.5
     noOfInputs: 2
     noOfOutputs: 1
-    property var inputTerminalPosY: [0.174, 0.786]
+    property var inputTerminalPosY: [0.2, 0.8]
 
     information: qsTr("NAND gate outputs the opposite of AND gate. " +
                       "If all inputs are 1, output is equal to 0 and as soon as one input is equal to 0 it gives a 1:")
@@ -48,7 +48,7 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.045
+                posX: 0.04
                 posY: inputTerminalPosY[index]
                 type: "In"
             }
@@ -62,8 +62,8 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.955
-                posY: 0.484
+                posX: 0.96
+                posY: 0.5
                 type: "Out"
             }
         }

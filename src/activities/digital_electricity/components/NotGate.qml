@@ -24,7 +24,7 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: notGate
-    terminalSize: 0.261
+    terminalSize: 0.5
     noOfInputs: 1
     noOfOutputs: 1
 
@@ -45,8 +45,8 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.046
-                posY: 0.503
+                posX: 0.04
+                posY: 0.5
                 type: "In"
             }
         }
@@ -59,8 +59,8 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.954
-                posY: 0.492
+                posX: 0.96
+                posY: 0.5
                 type: "Out"
             }
         }

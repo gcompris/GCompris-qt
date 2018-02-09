@@ -24,10 +24,10 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: norGate
-    terminalSize: 0.251
+    terminalSize: 0.5
     noOfInputs: 2
     noOfOutputs: 1
-    property var inputTerminalPosY: [0.205, 0.769]
+    property var inputTerminalPosY: [0.2, 0.8]
 
     information: qsTr("NOR gate outputs the opposite of OR gate. As soon as there is a 1 in input the output is equal to 0. " +
                       "To obtain a 1 all the inputs must be equal to 0:")
@@ -48,7 +48,7 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.045
+                posX: 0.04
                 posY: inputTerminalPosY[index]
                 type: "In"
             }
@@ -62,8 +62,8 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.955
-                posY: 0.491
+                posX: 0.96
+                posY: 0.5
                 type: "Out"
             }
         }

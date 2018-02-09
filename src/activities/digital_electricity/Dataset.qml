@@ -47,42 +47,42 @@ QtObject {
         'imageName': 'gateAnd.svg',
         'componentSource': 'AndGate.qml',
         'width': 0.15,
-        'height': 0.12,
+        'height': 0.15,
         'toolTipText': qsTr("AND gate")
     }
     property var orGate: {
         'imageName': 'gateOr.svg',
         'componentSource': 'OrGate.qml',
         'width': 0.15,
-        'height': 0.12,
+        'height': 0.15,
         'toolTipText': qsTr("OR gate")
     }
     property var notGate: {
         'imageName': 'gateNot.svg',
         'componentSource': 'NotGate.qml',
         'width': 0.15,
-        'height': 0.12,
+        'height': 0.15,
         'toolTipText': qsTr("NOT gate")
     }
     property var xorGate: {
         'imageName': 'gateXor.svg',
         'componentSource': 'XorGate.qml',
         'width': 0.15,
-        'height': 0.12,
+        'height': 0.15,
         'toolTipText': qsTr("XOR gate")
     }
     property var nandGate: {
         'imageName': 'gateNand.svg',
         'componentSource': 'NandGate.qml',
         'width': 0.15,
-        'height': 0.12,
+        'height': 0.15,
         'toolTipText': qsTr("NAND gate")
     }
     property var norGate: {
         'imageName': 'gateNor.svg',
         'componentSource': 'NorGate.qml',
         'width': 0.15,
-        'height': 0.12,
+        'height': 0.15,
         'toolTipText': qsTr("NOR gate")
     }
     property var switchKey: {
@@ -190,8 +190,8 @@ QtObject {
             playAreaComponentList: [zero, one, orGate, andGate, digitalLight],
             determiningComponentsIndex: [4],
             wires: [ [0, 0, 2, 0], [2, 0, 3, 0], [3, 0, 4, 0]],
-            playAreaComponentPositionX: [0.2, 0.3, 0.4, 0.6, 0.8],
-            playAreaComponentPositionY: [0.1, 0.4, 0.3, 0.3, 0.4],
+            playAreaComponentPositionX: [0.2, 0.2, 0.4, 0.6, 0.8],
+            playAreaComponentPositionY: [0.1, 0.5, 0.3, 0.3, 0.4],
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("Note: You can draw multiple wires from the output terminal of a component.")

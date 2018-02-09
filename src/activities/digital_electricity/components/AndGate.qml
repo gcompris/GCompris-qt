@@ -24,10 +24,10 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: andGate
-    terminalSize: 0.246
+    terminalSize: 0.50
     noOfInputs: 2
     noOfOutputs: 1
-    property var inputTerminalPosY: [0.219, 0.773]
+    property var inputTerminalPosY: [0.2, 0.8]
 
     information: qsTr("AND gate outputs 1 only if all its inputs are equal to 1. " +
                       "As soon as one input is equal to 0 the result is 0. Output for 2 input AND gate is:")
@@ -48,7 +48,7 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.045
+                posX: 0.04
                 posY: inputTerminalPosY[index]
                 type: "In"
             }
@@ -62,7 +62,7 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.955
+                posX: 0.96
                 posY: 0.5
                 type: "Out"
             }

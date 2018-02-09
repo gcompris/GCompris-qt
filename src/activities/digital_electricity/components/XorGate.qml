@@ -24,10 +24,10 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: xorGate
-    terminalSize: 0.229
+    terminalSize: 0.5
     noOfInputs: 2
     noOfOutputs: 1
-    property var inputTerminalPosY: [0.248, 0.762]
+    property var inputTerminalPosY: [0.2, 0.8]
 
     information: qsTr("XOR gate outputs 1 if the number of '1' in input is odd, and 0 if number of '1' in " +
                       "input is even. In this activity, a 2 input XOR gate is shown. Output for 2 input XOR gate is:")
@@ -47,7 +47,7 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.045
+                posX: 0.04
                 posY: inputTerminalPosY[index]
                 type: "In"
             }
@@ -61,8 +61,8 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.955
-                posY: 0.509
+                posX: 0.96
+                posY: 0.5
                 type: "Out"
             }
         }
