@@ -38,7 +38,7 @@ Rectangle {
     width: size * parent.paintedHeight
     height: size * parent.paintedHeight
     radius: width / 2
-    color: "black"
+    color: "#373737"
 
     x: (parent.width - parent.paintedWidth) / 2 + posX * parent.paintedWidth - width / 2
     y: (parent.height - parent.paintedHeight) / 2 + posY * parent.paintedHeight - height / 2
@@ -47,15 +47,23 @@ Rectangle {
     property double yCenter: terminalPoint.parent.y + terminalPoint.y + height/2
     property double xCenterFromComponent: terminalPoint.x + width/2 - terminalPoint.parent.width / 2
     property double yCenterFromComponent: terminalPoint.y + height/2 - terminalPoint.parent.height / 2
+    
+    Rectangle {
+        anchors.centerIn: terminalPoint
+        width: terminalPoint.width * 0.8
+        height: width
+        radius: width / 2
+        color: "#535353"
+    }
 
     Rectangle {
         id: boundary
         anchors.centerIn: terminalPoint
-        width: terminalPoint.width * 1.4
+        width: terminalPoint.width * 2
         height: width
         visible: selected
         radius: width / 2
-        color: "green"
+        color: "#08D050"
         z: -1
     }
 
