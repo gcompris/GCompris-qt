@@ -26,7 +26,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Family")
   //: Help title
-  description: qsTr("This activity will give teach about who we are related to our relatives")
+  description: qsTr("This activity will teach you about who we are related to our relatives")
   //intro: "Let us understand what to call our relatives"
   //: Help goal
   goal: qsTr("To get an idea about relationships in the family")
