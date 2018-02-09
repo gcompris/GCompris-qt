@@ -103,40 +103,40 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
+            <dc:title></dc:title>
           </cc:Agent>
         </dc:publisher>
         <dc:title></dc:title>
-        <dc:date>2007-09-06T13:40:36</dc:date>
-        <dc:description>Voyant rouge de l'électricien et de l'automaticien insdustriel</dc:description>
-        <dc:source>https://openclipart.org/detail/5288/voyant-rouge-allume---red-light-on-by-fatboy178</dc:source>
+        <dc:date>2018</dc:date>
+        <dc:description></dc:description>
+        <dc:source></dc:source>
         <dc:creator>
           <cc:Agent>
-            <dc:title>fatboy178</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
         <dc:subject>
-          <rdf:Bag>
-            <rdf:li>automatisme</rdf:li>
-            <rdf:li>electrique</rdf:li>
-            <rdf:li>insdustrie</rdf:li>
-            <rdf:li>rouge</rdf:li>
-            <rdf:li>voyant</rdf:li>
-          </rdf:Bag>
+          <rdf:Bag />
         </dc:subject>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
