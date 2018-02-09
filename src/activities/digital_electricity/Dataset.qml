@@ -25,22 +25,22 @@ QtObject {
     property var zero: {
         'imageName': 'zero.svg',
         'componentSource': 'Zero.qml',
-        'width': 0.12,
+        'width': 0.2,
         'height': 0.2,
         'toolTipText': qsTr("Zero input")
     }
     property var one: {
         'imageName': 'one.svg',
         'componentSource': 'One.qml',
-        'width': 0.12,
+        'width': 0.2,
         'height': 0.2,
         'toolTipText': qsTr("One input")
     }
     property var digitalLight: {
         'imageName': 'DigitalLightOff.svg',
         'componentSource': 'DigitalLight.qml',
-        'width': 0.12,
-        'height': 0.12,
+        'width': 0.2,
+        'height': 0.2,
         'toolTipText': qsTr("Digital light")
     }
     property var andGate: {

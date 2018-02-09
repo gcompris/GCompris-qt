@@ -24,7 +24,7 @@ import GCompris 1.0
 
 import "../digital_electricity.js" as Activity
 
-Rectangle {
+Image {
     id: terminalPoint
 
     property double posX
@@ -36,9 +36,11 @@ Rectangle {
     property var wires: []
 
     width: size * parent.paintedHeight
-    height: size * parent.paintedHeight
-    radius: width / 2
-    color: "#373737"
+    height: width
+    source: Activity.url + "tPoint.svg"
+    sourceSize.width: width
+    sourceSize.height: width
+    antialiasing: true
 
     x: (parent.width - parent.paintedWidth) / 2 + posX * parent.paintedWidth - width / 2
     y: (parent.height - parent.paintedHeight) / 2 + posY * parent.paintedHeight - height / 2
@@ -47,14 +49,6 @@ Rectangle {
     property double yCenter: terminalPoint.parent.y + terminalPoint.y + height/2
     property double xCenterFromComponent: terminalPoint.x + width/2 - terminalPoint.parent.width / 2
     property double yCenterFromComponent: terminalPoint.y + height/2 - terminalPoint.parent.height / 2
-    
-    Rectangle {
-        anchors.centerIn: terminalPoint
-        width: terminalPoint.width * 0.8
-        height: width
-        radius: width / 2
-        color: "#535353"
-    }
 
     Rectangle {
         id: boundary

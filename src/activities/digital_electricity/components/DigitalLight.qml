@@ -25,7 +25,7 @@ import "../digital_electricity.js" as Activity
 
 ElectricalComponent {
     id: digitalLight
-    terminalSize: 0.33
+    terminalSize: 0.25
     noOfInputs: 1
     noOfOutputs: 0
 
