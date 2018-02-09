@@ -12,177 +12,115 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg16385"
    sodipodi:docname="DigitalLightOn.svg"
-   viewBox="0 0 221.74172 137.6456"
+   viewBox="0 0 320.00002 192"
    sodipodi:version="0.32"
    version="1.0"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:version="0.91 r13725"
-   width="221.74171"
-   height="137.6456">
+   inkscape:version="0.92.1 r15371"
+   width="320"
+   height="192">
   <defs
      id="defs16387">
     <linearGradient
        inkscape:collect="always"
-       id="linearGradient4202">
+       id="linearGradient927">
       <stop
-         id="stop4206"
+         style="stop-color:#e8faba;stop-opacity:1"
          offset="0"
-         style="stop-color:#008000;stop-opacity:0;" />
+         id="stop923" />
       <stop
-         id="stop4204"
+         style="stop-color:#22f231;stop-opacity:1"
          offset="1"
-         style="stop-color:#008000;stop-opacity:1;" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient4156">
-      <stop
-         style="stop-color:#ffff00;stop-opacity:1"
-         offset="0"
-         id="stop4158" />
-      <stop
-         style="stop-color:#008000;stop-opacity:0;"
-         offset="1"
-         id="stop4160" />
+         id="stop925" />
     </linearGradient>
     <radialGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient4156"
-       id="radialGradient4162"
-       cx="122.68963"
-       cy="86.49894"
-       fx="122.68963"
-       fy="86.49894"
-       r="68.824501"
+       xlink:href="#linearGradient927"
+       id="radialGradient929"
+       cx="191.43124"
+       cy="57.323326"
+       fx="191.43124"
+       fy="57.323326"
+       r="84"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.92735489,-0.0106776,0.01036594,0.90028726,-80.235033,-87.816056)" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4202"
-       id="radialGradient4208"
-       cx="122.2437"
-       cy="86.79232"
-       fx="122.2437"
-       fy="86.79232"
-       r="68.824501"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-123.94441,-98.044517)" />
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter4409"
-       x="-0.0288"
-       width="1.0576"
-       y="-0.0288"
-       height="1.0576">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.5169535"
-         id="feGaussianBlur4411" />
-    </filter>
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4202"
-       id="radialGradient4161"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-123.94441,-98.044517)"
-       cx="122.2437"
-       cy="86.79232"
-       fx="122.2437"
-       fy="86.79232"
-       r="68.824501" />
-    <radialGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4156"
-       id="radialGradient4163"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.92735489,-0.0106776,0.01036594,0.90028726,-80.235033,-87.816056)"
-       cx="122.68963"
-       cy="86.49894"
-       fx="122.68963"
-       fy="86.49894"
-       r="68.824501" />
+       gradientTransform="matrix(0.97959184,0,0,0.97959184,5.9067561,3.1698657)" />
   </defs>
   <sodipodi:namedview
      id="base"
      bordercolor="#666666"
      inkscape:pageshadow="2"
-     inkscape:window-y="-8"
+     inkscape:window-y="0"
      pagecolor="#ffffff"
-     inkscape:window-height="705"
+     inkscape:window-height="1051"
      width="107px"
      inkscape:zoom="1.9990919"
-     inkscape:window-x="-8"
+     inkscape:window-x="0"
      height="161px"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="47.927009"
-     inkscape:cy="89.09076"
-     inkscape:window-width="1366"
+     inkscape:cx="132.93413"
+     inkscape:cy="111.39696"
+     inkscape:window-width="1884"
      inkscape:pageopacity="0.0"
      inkscape:document-units="px"
-     showgrid="false"
+     showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-maximized="1"
-     showguides="false" />
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid861"
+       empspacing="4" />
+  </sodipodi:namedview>
   <g
      id="layer1"
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     transform="translate(30.22576,-17.969522)">
-    <g
-       id="g3343"
-       transform="matrix(1.0051153,0,0,0.99997523,33.145236,0.00214958)" />
+     transform="translate(30.568758,36.676672)">
     <path
-       d="m -2.3108042,86.145571 56.7470852,0"
-       style="fill:none;stroke:#000000;stroke-width:5.11698818px"
-       id="path2906"
+       style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:6.60950947px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="m 118.52291,55.323328 v 8 H 25.431243 v -8 z"
+       id="path2906-5"
        inkscape:connector-curvature="0" />
-    <ellipse
-       style="opacity:0.64899998;fill:#000000;fill-opacity:0.93377482;stroke:#000000;stroke-width:3.40048909;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:0.05298013"
-       id="path5637"
-       cx="15.175756"
-       cy="-86.138397"
-       transform="scale(-1,-1)"
-       rx="13.349759"
-       ry="13.281483" />
-    <g
-       id="g4414"
-       transform="matrix(1.0051153,0,0,0.99997523,87.724804,98.044238)">
-      <circle
-         transform="matrix(-1,0,0,1,32.737722,0)"
-         r="68.1604"
-         cy="-11.252197"
-         cx="-1.7007041"
-         style="fill:url(#radialGradient4161);fill-opacity:1;stroke:#000000;stroke-width:1.32820272"
-         id="path3749-0" />
-      <circle
-         r="63.206394"
-         cy="-11.252198"
-         cx="34.438423"
-         style="opacity:1;fill:url(#radialGradient4163);fill-opacity:1;stroke:#000000;stroke-width:2.43199992;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4409)"
-         id="path3749" />
-    </g>
-    <g
-       transform="matrix(1.0051153,0,0,0.99997523,87.724804,98.044238)"
-       id="g4430">
-      <circle
-         id="circle4432"
-         style="fill:url(#radialGradient4208);fill-opacity:1;stroke:#000000;stroke-width:1.32820272"
-         cx="-1.7007041"
-         cy="-11.252197"
-         r="68.1604"
-         transform="matrix(-1,0,0,1,32.737722,0)" />
-      <circle
-         id="circle4434"
-         style="opacity:1;fill:url(#radialGradient4162);fill-opacity:1;stroke:#000000;stroke-width:2.43199992;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4409)"
-         cx="34.438423"
-         cy="-11.252198"
-         r="63.206394" />
-    </g>
+    <circle
+       style="opacity:1;fill:#373737;fill-opacity:1;stroke:none;stroke-width:0.99999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path840"
+       cx="-1.431242"
+       cy="59.323326"
+       r="28"
+       transform="scale(-1,1)" />
+    <circle
+       style="opacity:0.98999999;fill:#535353;fill-opacity:1;stroke:none;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path840-6"
+       cx="-1.431242"
+       cy="59.323326"
+       r="22.4"
+       transform="scale(-1,1)" />
+    <circle
+       r="96"
+       cy="59.323326"
+       cx="193.43124"
+       style="fill:#373737;fill-opacity:1;stroke:none;stroke-width:1.87041152;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path3749-2" />
+    <circle
+       style="opacity:0.98999999;fill:url(#radialGradient929);fill-opacity:1;stroke:none;stroke-width:0.97959185;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path863"
+       cx="193.43124"
+       cy="59.323326"
+       r="82.285713" />
+    <circle
+       style="opacity:0.98999999;fill:#e4f9c2;fill-opacity:1;stroke:none;stroke-width:0.69374776;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path879"
+       cx="218.90063"
+       cy="20.139656"
+       r="16.649946" />
+    <path
+       style="opacity:0.98999999;fill:#1cd329;fill-opacity:0.43322479;stroke:none;stroke-width:0.88671494;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 267.88022,63.580646 a 82.347192,82.347192 0 0 1 -76.0811,50.919074 82.347192,82.347192 0 0 1 -70.73906,-40.375322 74.484053,74.484053 0 0 0 72.61623,58.331282 74.484053,74.484053 0 0 0 74.20393,-68.875034 z"
+       id="path863-9"
+       inkscape:connector-curvature="0" />
   </g>
   <metadata
      id="metadata20">
@@ -199,7 +137,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title>Voyant Rouge Allume - Red Light ON</dc:title>
+        <dc:title></dc:title>
         <dc:date>2007-09-06T13:40:36</dc:date>
         <dc:description>Voyant rouge de l'électricien et de l'automaticien insdustriel</dc:description>
         <dc:source>https://openclipart.org/detail/5288/voyant-rouge-allume---red-light-on-by-fatboy178</dc:source>

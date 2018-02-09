@@ -25,7 +25,7 @@ import "../digital_electricity.js" as Activity
 
 ElectricalComponent {
     id: digitalLight
-    terminalSize: 0.219
+    terminalSize: 0.33
     noOfInputs: 1
     noOfOutputs: 0
 
@@ -43,8 +43,8 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.068
-                posY: 0.495
+                posX: 0.1
+                posY: 0.5
                 type: "In"
             }
         }
