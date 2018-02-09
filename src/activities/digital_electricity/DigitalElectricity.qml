@@ -35,10 +35,11 @@ ActivityBase {
     property string mode: "tutorial"
     property bool isTutorialMode: mode == "tutorial" ? true : false
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ffffb3"
+        source: Activity.url + "texture01.png"
+        fillMode: Image.Tile
         signal start
         signal stop
 
@@ -122,7 +123,7 @@ ActivityBase {
         Rectangle {
             id: playArea
 
-            color: "#ffffb3"
+            color: "#00000000"
             x: background.vert ? 90 * ApplicationInfo.ratio : 0
             y: background.vert ? 0 : 90 * ApplicationInfo.ratio
             width: background.vert ?
@@ -323,13 +324,18 @@ ActivityBase {
             height: background.vert ?
                         background.height :
                         90 * ApplicationInfo.ratio
-            color: "#FFFF42"
-            border.color: "#FFD85F"
-            border.width: 4
+            color: "#4A3823"
             anchors.left: parent.left
-            ListWidget {
-                id: availablePieces
-                vert: background.vert ? true : false
+            Image {
+                anchors.fill: parent
+                anchors.rightMargin: background.vert ? 3 * ApplicationInfo.ratio : 0
+                anchors.bottomMargin: background.vert ? 0 : 3 * ApplicationInfo.ratio
+                source: Activity.url + "texture02.png"
+                fillMode: Image.Tile
+                ListWidget {
+                    id: availablePieces
+                    vert: background.vert ? true : false
+                }
             }
             z: 10
         }
