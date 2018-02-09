@@ -24,7 +24,7 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: zero
-    terminalSize: 0.205
+    terminalSize: 0.25
     noOfInputs: 0
     noOfOutputs: 1
 
@@ -39,7 +39,7 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.91
+                posX: 0.9
                 posY: 0.5
                 value: 0
                 type: "Out"
