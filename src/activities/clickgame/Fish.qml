@@ -69,6 +69,8 @@ AnimatedSprite {
     }
 
     onXChanged: {
+        var minY = Activity.items.score.y + Activity.items.score.height
+        var maxY = bar.y - fish.height
         if( (x > background.width - fish.width && rotate.angle == 0) ||
             (x == targetX && rotate.angle == 0) ) {
             rotateLeftAnimation.start()
@@ -76,7 +78,7 @@ AnimatedSprite {
             x = targetX
             var barHeight = ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
             y = Activity.currentLevel > 0
-                    ? Math.random() * (background.height - barHeight - fish.height)
+                    ? (Math.random() * (maxY - minY + 1)) + minY
                     : y
         } else if(x == 0 && rotate.angle == 180) {
             rotateRightAnimation.start()
@@ -129,12 +131,11 @@ AnimatedSprite {
                 sizeVariation: 8
             }
 
-        ImageParticle {
-            source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.png"
+            ImageParticle {
+                source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.png"
+            }
         }
     }
-}
-
 
     ParticleSystemStarLoader {
         id: particles

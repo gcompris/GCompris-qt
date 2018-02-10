@@ -279,13 +279,15 @@ function previousLevel() {
 
 function createFish(minDuration) {
     var fishSource = fishes[Math.floor(Math.random() * fishes.length)]
+    var minY = items.score.y + items.score.height
+    var maxY = bar.y - fishSource.height
     var fish = component.createObject(
                 background,
                 {
                     "activity": activity,
                     "background": background,
                     "bar": bar,
-                    "y": Math.random() * (background.height - bar.height - fishSource.height),
+                    "y": (Math.random() * (maxY - minY + 1)) + minY,
                     "width": fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio,
                     "height": fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio,
                     "source": "qrc:/gcompris/src/activities/clickgame/resource/" +
@@ -293,7 +295,6 @@ function createFish(minDuration) {
                     "frameCount": fishSource.nbFrame,
                     "duration": minDuration + Math.floor(Math.random() * 5000)
                 });
-
     if (fish === null) {
         // Error Handling
         console.log("Error creating object");
