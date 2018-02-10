@@ -84,7 +84,7 @@ ActivityBase {
                 left: parent.left
                 leftMargin: 5
             }
-            z: 100
+            z: 10
             intro: [
                 qsTr("Click on the Sun or any planet to reveal questions. Each question will have 4 options, out of which one is correct."),
                 qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter, or hint which indicates the correct answer.")
@@ -288,7 +288,6 @@ ActivityBase {
 
         Bar {
             id: bar
-            z: 2
             content: items.solarSystemVisible ? withConfig : background.assessmentMode || Activity.indexOfSelectedPlanet ===0 ? withoutConfigWithoutHint : withoutConfigWithHint
             property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
             property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
