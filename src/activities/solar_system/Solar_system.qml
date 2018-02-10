@@ -183,36 +183,9 @@ ActivityBase {
             	home()
             }
 
-            Rectangle {
-                id: button
-                visible: true
-                anchors.horizontalCenter: parent.horizontalCenter
-                y: Math.max(parent.height / 1.5, hintDialog.textContentHeight * 1.4)
-                implicitWidth: Math.max(200 * ApplicationInfo.ratio, parent.width/6)
-                implicitHeight: Math.min(50 * ApplicationInfo.ratio, parent.height - hintDialog.textContentHeight * 1.3)
-                border.width: 2
-                border.color: "#373737"
-                radius: 10
-                gradient: Gradient {
-                    GradientStop { position: 0 ; color: mouseArea.pressed ? "#C03ACAFF" : "#23373737" }
-                    GradientStop { position: 1 ; color: mouseArea.pressed ? "#803ACAFF" : "#13373737" }
-                }
+            button0Text: "View solar system"
 
-                MouseArea {
-                    id: mouseArea
-                    anchors.fill: parent
-                    onClicked: solarSystemImageHint.visible = true
-                }
-
-                GCText {
-                    anchors.fill: parent
-                    text: "Visit Solar System"
-                    fontSizeMode: Text.Fit
-                    fontSize: smallSize
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-            }
+            onButton0Hit: solarSystemImageHint.visible = true
 
             Rectangle {
                 id: solarSystemImageHint
