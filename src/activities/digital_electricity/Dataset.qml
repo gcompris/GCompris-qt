@@ -88,7 +88,7 @@ QtObject {
     property var switchKey: {
         'imageName': 'switchOff.svg',
         'componentSource': 'Switch.qml',
-        'width': 0.18,
+        'width': 0.15,
         'height': 0.15,
         'toolTipText': qsTr("Switch")
     }

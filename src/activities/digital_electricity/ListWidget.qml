@@ -104,23 +104,16 @@ Item {
             availablePieces.view.setPreviousNavigation()
         }
 
-        Rectangle {
+        Image {
             id: toolButton
             width: (listWidget.vert ? listWidget.width : listWidget.height) - listWidget.anchors.leftMargin
             height: width
-            color: "black"
-            radius: width
-
+            sourceSize.width: width
+            sourceSize.height: height
+            source: Activity.url + "tools.svg"
+            fillMode: Image.PreserveAspectFit
+            
             property bool showToolBar: false
-
-            GCText {
-                width: parent.width
-                fontSizeMode: Text.Fit
-                color: "white"
-                text: qsTr("Tools")
-                anchors.centerIn: parent
-                horizontalAlignment: Text.AlignHCenter
-            }
 
             MouseArea {
                 anchors.fill: parent
@@ -130,12 +123,12 @@ Item {
             Rectangle {
                 id: toolsContainer
                 visible: toolButton.showToolBar
-                width: listWidget.vert ? (toolDelete.width + tools.spacing) * tools.children.length : parent.width
-                height: listWidget.vert ? parent.width : (toolDelete.height + tools.spacing) * tools.children.length
+                width: listWidget.vert ? (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4 : parent.width
+                height: listWidget.vert ? parent.width : (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
                 anchors.top: listWidget.vert ? parent.top : parent.bottom
                 anchors.left: listWidget.vert ? parent.right : parent.left
-                color: "gray"
-                radius: 50
+                color: "#2a2a2a"
+                radius: 4 * ApplicationInfo.ratio
 
                 Flow {
                     id: tools
@@ -147,16 +140,18 @@ Item {
 
                     anchors {
                         fill: parent
-                        leftMargin: listWidget.vert ? 5 : tools.leftMarginAmt
-                        topMargin: listWidget.vert ? tools.topMarginAmt : 5
+                        leftMargin: listWidget.vert ? 8 * ApplicationInfo.ratio : tools.leftMarginAmt
+                        topMargin: listWidget.vert ? tools.topMarginAmt : 8 * ApplicationInfo.ratio
                     }
-                    spacing: 10
+                    spacing: 4 * ApplicationInfo.ratio
 
                     Image {
                         id: toolDelete
                         state: "notSelected"
                         width: minIconWidth
                         height: width
+                        sourceSize.width: width
+                        sourceSize.height: height
                         source: Activity.url + "deleteOn.svg"
                         fillMode: Image.PreserveAspectFit
                         MouseArea {
@@ -177,14 +172,14 @@ Item {
                                 name: "selected"
                                 PropertyChanges {
                                     target: toolDelete
-                                    source: Activity.url + "deleteOn.svg"
+                                    opacity: 1
                                 }
                             },
                             State {
                                 name: "notSelected"
                                 PropertyChanges {
                                     target: toolDelete
-                                    source: Activity.url + "deleteOff.svg"
+                                    opacity: 0.5
                                 }
                             }
                         ]
@@ -192,9 +187,11 @@ Item {
 
                     Image {
                         id: info
-                        source: Activity.url + "Info.svg"
+                        source: Activity.url + "info.svg"
                         width: minIconWidth
                         height: width
+                        sourceSize.width: width
+                        sourceSize.height: height
                         fillMode: Image.PreserveAspectFit
                         MouseArea {
                             anchors.fill: parent
@@ -210,14 +207,14 @@ Item {
                                 name: "canBeSelected"
                                 PropertyChanges {
                                     target: info
-                                    source: Activity.url + "Info.svg"
+                                    opacity: 1
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
                                     target: info
-                                    source: Activity.url + "InfoOff.svg"
+                                    opacity: 0.5
                                 }
                             }
                         ]
@@ -227,7 +224,9 @@ Item {
                         id: rotateLeft
                         width: minIconWidth
                         height: width
-                        source: Activity.url + "rotateLeft.svg"
+                        sourceSize.width: width
+                        sourceSize.height: height
+                        source: Activity.url + "rotate.svg"
                         fillMode: Image.PreserveAspectFit
                         state: "CanNotBeSelected"
                         MouseArea {
@@ -243,14 +242,14 @@ Item {
                                 name: "canBeSelected"
                                 PropertyChanges {
                                     target: rotateLeft
-                                    source: Activity.url + "rotateLeft.svg"
+                                    opacity: 1
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
                                     target: rotateLeft
-                                    source: Activity.url + "rotateLeftOff.svg"
+                                    opacity: 0.5
                                 }
                             }
                         ]
@@ -260,8 +259,11 @@ Item {
                         id: rotateRight
                         width: minIconWidth
                         height: width
-                        source: Activity.url + "rotateRight.svg"
+                        sourceSize.width: width
+                        sourceSize.height: height
+                        source: Activity.url + "rotate.svg"
                         fillMode: Image.PreserveAspectFit
+                        mirror: true
                         state: "CanNotBeSelected"
                         MouseArea {
                             anchors.fill: parent
@@ -276,33 +278,28 @@ Item {
                                 name: "canBeSelected"
                                 PropertyChanges{
                                     target: rotateRight
-                                    source: Activity.url + "rotateRight.svg"
+                                    opacity: 1
                                 }
                             },
                             State {
                                 name: "canNotBeSelected"
                                 PropertyChanges {
                                     target: rotateRight
-                                    source: Activity.url + "rotateRightOff.svg"
+                                    opacity: 0.5
                                 }
                             }
                         ]
                     }
 
-                    Rectangle {
+                    Image {
                         id: zoomInBtn
                         width: minIconWidth
                         height: width
-                        radius: width
-
-                        color: "black"
-
-                        GCText {
-                            anchors.centerIn: parent
-                            text: qsTr("+")
-                            color: "white"
-                        }
-
+                        sourceSize.width: width
+                        sourceSize.height: height
+                        source: Activity.url + "zoomIn.svg"
+                        fillMode: Image.PreserveAspectFit
+                        
                         MouseArea {
                             anchors.fill: parent
                             onClicked: Activity.zoomIn()
@@ -325,19 +322,14 @@ Item {
                         ]
                     }
 
-                    Rectangle {
+                    Image {
                         id: zoomOutBtn
                         width: minIconWidth
                         height: width
-                        radius: width
-
-                        color: "black"
-
-                        GCText {
-                            anchors.centerIn: parent
-                            text: qsTr("-")
-                            color: "white"
-                        }
+                        sourceSize.width: width
+                        sourceSize.height: height
+                        source: Activity.url + "zoomOut.svg"
+                        fillMode: Image.PreserveAspectFit
 
                         MouseArea {
                             anchors.fill: parent

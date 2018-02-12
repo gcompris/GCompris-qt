@@ -11,7 +11,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg4147"
-   sodipodi:docname="deleteOn.svg"
+   sodipodi:docname="zoomOut.svg"
    viewBox="0 0 256 255.99999"
    sodipodi:version="0.32"
    version="1.0"
@@ -33,6 +33,20 @@
          offset="1"
          id="stop4176" />
     </linearGradient>
+    <style
+       id="current-color-scheme"
+       type="text/css">
+      .ColorScheme-Text {
+        color:#f2f2f2
+      }
+      </style>
+    <style
+       id="current-color-scheme-3"
+       type="text/css">
+      .ColorScheme-Text {
+        color:#f2f2f2
+      }
+      </style>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -45,8 +59,8 @@
      inkscape:window-x="0"
      borderopacity="1.0"
      inkscape:current-layer="REPEAT"
-     inkscape:cx="39.213411"
-     inkscape:cy="118.99486"
+     inkscape:cx="17.242591"
+     inkscape:cy="89.19536"
      inkscape:window-width="1884"
      inkscape:pageopacity="0"
      inkscape:document-units="px"
@@ -76,9 +90,10 @@
          transform="matrix(0.26612943,0,0,0.26612943,527.56974,349.71208)"
          id="path837" />
       <path
-         style="display:inline;fill:#f2f2f2;fill-opacity:1;stroke:#e54d4d;stroke-width:1.06451774;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 550.13772,364.61533 -7.66473,7.66473 11.49658,11.49659 -11.49658,11.49658 7.66473,7.66474 11.49659,-11.49659 11.49658,11.49659 7.66473,-7.66474 -11.49658,-11.49658 11.49658,-11.49659 -7.66473,-7.66473 -11.49658,11.49658 z"
-         id="path864-9"
+         id="path6-6"
+         class="ColorScheme-Text"
+         d="m 544.60202,366.74437 v 14.90329 h 2.12904 v -12.77425 h 29.80649 V 398.6799 H 563.7633 v 2.12904 h 14.90329 v -2.12904 -29.80649 -2.12904 h -31.93553 z m 24.04313,8.51616 -7.01089,7.01089 v -4.88185 h -2.12904 v 8.51617 h 2.12904 6.38713 v -2.12904 h -4.88177 l 7.01081,-7.01089 z m -24.04313,12.77425 v 4.25808 h 2.12904 v -2.12904 h 2.12904 v -2.12904 z m 8.51616,0 v 2.12904 h 2.12904 v 2.12904 h 2.12896 v -4.25808 z m -8.51616,8.51608 v 4.25808 h 4.25808 v -2.12904 h -2.12904 v -2.12904 z m 10.6452,0 v 2.12904 h -2.12904 v 2.12904 h 4.258 v -4.25808 z"
+         style="color:#f2f2f2;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:4.2580719"
          inkscape:connector-curvature="0" />
     </g>
   </g>
@@ -97,7 +112,7 @@
             <dc:title />
           </cc:Agent>
         </dc:publisher>
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2018</dc:date>
         <dc:description />
         <dc:source />

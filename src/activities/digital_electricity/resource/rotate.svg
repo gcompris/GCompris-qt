@@ -11,7 +11,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg4147"
-   sodipodi:docname="deleteOn.svg"
+   sodipodi:docname="rotate.svg"
    viewBox="0 0 256 255.99999"
    sodipodi:version="0.32"
    version="1.0"
@@ -45,8 +45,8 @@
      inkscape:window-x="0"
      borderopacity="1.0"
      inkscape:current-layer="REPEAT"
-     inkscape:cx="39.213411"
-     inkscape:cy="118.99486"
+     inkscape:cx="102.60048"
+     inkscape:cy="89.19536"
      inkscape:window-width="1884"
      inkscape:pageopacity="0"
      inkscape:document-units="px"
@@ -76,10 +76,16 @@
          transform="matrix(0.26612943,0,0,0.26612943,527.56974,349.71208)"
          id="path837" />
       <path
-         style="display:inline;fill:#f2f2f2;fill-opacity:1;stroke:#e54d4d;stroke-width:1.06451774;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 550.13772,364.61533 -7.66473,7.66473 11.49658,11.49659 -11.49658,11.49658 7.66473,7.66474 11.49659,-11.49659 11.49658,11.49659 7.66473,-7.66474 -11.49658,-11.49658 11.49658,-11.49659 -7.66473,-7.66473 -11.49658,11.49658 z"
-         id="path864-9"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:1.06451774;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 561.63431,366.74436 v 4.25807 a 14.903247,14.903247 0 0 1 14.90325,14.90325 14.903247,14.903247 0 0 1 -14.90325,14.90325 14.903247,14.903247 0 0 1 -14.90325,-14.90325 h -4.25807 a 19.161319,19.161319 0 0 0 19.16132,19.16132 19.161319,19.161319 0 0 0 19.16132,-19.16132 19.161319,19.161319 0 0 0 -19.16132,-19.16132 z"
+         id="path1515"
          inkscape:connector-curvature="0" />
+      <path
+         style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.26612943px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 561.63431,360.35725 v 17.03229 l -10.64518,-8.51615 z"
+         id="path1536"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
     </g>
   </g>
   <metadata
@@ -97,7 +103,7 @@
             <dc:title />
           </cc:Agent>
         </dc:publisher>
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2018</dc:date>
         <dc:description />
         <dc:source />
