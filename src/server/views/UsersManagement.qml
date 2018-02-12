@@ -305,7 +305,9 @@ ActivityBase {
             onAddUsers: {
                 for(var i = model.count-1 ; i >= 0 ; -- i) {
                     var userToAdd = model.get(i)
-                    MessageHandler.createUser(userToAdd.name, userToAdd.dateOfBirth, userToAdd.password)
+                    if(userToAdd.name != "" && userToAdd.dateOfBirth != "" && userToAdd.password != "") {
+                        MessageHandler.createUser(userToAdd.name, userToAdd.dateOfBirth, userToAdd.password)
+                    }
                 }
             }
         }

@@ -41,6 +41,29 @@ Rectangle {
         id: users
         width: parent.width - 50
         height: parent.height - (bar.height * 2)
+        property var name: "";
+        property var dateOfBirth: ""
+        property var password: "";
+
+        function save(){
+
+            if(name != "" && dateOfBirth != "") {
+
+                console.log("name of the user: ", name, "date of birth of the user: ", dateOfBirth, "password : ", password)
+                console.log
+
+                userToUpdateModel.append({
+                    "name": name,
+                    "dateOfBirth": dateOfBirth,
+                    "password": password
+                })
+                name=""
+                dateOfBirth=""
+                password=""
+                console.log("total number of users: ", userToUpdateModel.count)
+            }
+
+        }
 
         model: userToUpdateModel
         selectionMode: SelectionMode.MultiSelection
@@ -60,21 +83,30 @@ Rectangle {
         TableViewColumn {
             role: "name"
             title: qsTr("Name")
+            width: 100
+
         }
         TableViewColumn {
             role: "dateOfBirth"
             title: qsTr("Birth year")
+            width: 100
         }
         TableViewColumn {
             id: passwordColumn
             role: "password"
+            width: 100
             title: qsTr("Password")
+
             delegate: Item {
-                width: passwordColumn.height
-                height: 50 // same as rowDelegate
+                id: pc
+                width: passwordColumn.width // same as rowDelegate
                 Item {
                     id: passwordField
                     anchors.fill: parent
+                    Component.onCompleted: {
+                        users.password =  passwordImage.source.toString()
+                    }
+
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
@@ -96,8 +128,55 @@ Rectangle {
                 }
             }
         }
+        TableViewColumn {
+                resizable: true
+                role: "saveDelete"
+                title: qsTr("Save or Delete")
+                width: users.width/3
+                delegate: Item{
+                    id: itemDel
+                    width: 100
+                    height: 40
+                    anchors.topMargin: 20
+                    Rectangle{
+                        id: save
+                        width: 100
+                        height: 40
+                        color: "black"
+                        anchors.rightMargin: 10
+                        Text{
+                            anchors.centerIn: parent
+                            color: "white"
+                            text: "Save"
+                        }
+                        MouseArea{
+                            id: saveMouseArea
+                            anchors.fill: parent
+                            onClicked: {
+                                users.save()
+                            }
+                        }
+
+                    }
+                    Rectangle{
+                        id: delete
+                        width: 100
+                        height: 40
+                        anchors.leftMargin: 10
+                        anchors.left: save.right
+                        color: "black"
+                        Text{
+                            anchors.centerIn: parent
+                            color: "white"
+                            text: "Delete"
+                        }
+                    }
+                }
+
+            }
 
         itemDelegate: Rectangle {
+            id: rect
             SystemPalette {
                 id: myPalette;
                 colorGroup: SystemPalette.Active
@@ -105,14 +184,6 @@ Rectangle {
             color: {
                 var baseColor = styleData.row % 2 == 1 ? myPalette.alternateBase : myPalette.base
                 return styleData.selected ? myPalette.highlight : baseColor
-            }
-            Text {
-                anchors {
-                    verticalCenter: parent.verticalCenter
-                    left: parent.left
-                }
-                color: "black"
-                text: styleData.value
             }
 
             MouseArea {
@@ -142,21 +213,25 @@ Rectangle {
                     id: input
                     TextField {
                         anchors.fill: parent
+                        visible: true
                         text: ""
                         onAccepted: {
                             loader.visible = false
                         }
 
-                        onActiveFocusChanged: {
-                            if (!activeFocus) {
-                                switch(styleData.column) {
-                                    case 0:
-                                    userToUpdateModel.get(styleData.row).name = text
+                        onEditingFinished:{
+                            console.log("finished editing")
+                            switch(styleData.column) {
+                                case 0: {
+                                    if(text != "")
+                                        users.name = text
                                     break;
-                                    case 1:
-                                    userToUpdateModel.get(styleData.row).age = text
                                 }
-                                loader.visible = false
+                                case 1: {
+                                    if(text != "")
+                                        users.dateOfBirth = text
+                                    break;
+                                }
                             }
                         }
                     }
@@ -194,7 +269,9 @@ Rectangle {
             width: parent.width
             style: GCButtonStyle {}
             onClicked: {
-                userToUpdateModel.append({"name": "", "dateOfBirth": "", "password": ""})
+                // add empty user at first index. The first user is always going to be empty
+                userToUpdateModel.insert(0, {"name": "", "dateOfBirth": "", "password": ""})
+//                 userToUpdateModel.append({"name": "", "dateOfBirth": "", "password": ""})
             }
         }
     }
@@ -208,6 +285,9 @@ Rectangle {
             text: qsTr("Create")
             style: GCButtonStyle {}
             onClicked: {
+                console.log("Creating user");
+                console.log(userToUpdateModel.get(0).name);
+                console.log(userToUpdateModel.get(0).dateOfBirth);
                 addUsers(userToUpdateModel)
                 addUpdateRectangle.visible = false
             }
