@@ -96,7 +96,7 @@ QtObject {
         'imageName': 'comparator.svg',
         'componentSource': 'Comparator.qml',
         'width': 0.3,
-        'height': 0.25,
+        'height': 0.2,
         'toolTipText': qsTr("Comparator")
     }
     property var bcdToSevenSegment: {
@@ -109,7 +109,7 @@ QtObject {
     property var sevenSegmentDisplay: {
         'imageName': 'sevenSegmentDisplay.svg',
         'componentSource': 'SevenSegment.qml',
-        'width': 0.18,
+        'width': 0.15,
         'height': 0.4,
         'toolTipText': qsTr("7 segment display")
     }

@@ -26,19 +26,16 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: bcdTo7Segment
-    terminalSize: 0.097
+    terminalSize: 0.125
     noOfInputs: 4
     noOfOutputs: 7
 
-    property var inputTerminalPosY: [0.057, 0.35, 0.649, 0.935]
-    property var outputTerminalPosY: [0.048, 0.198, 0.353, 0.509, 0.664, 0.812, 0.952]
+    property var inputTerminalPosY: [0.125, 0.375, 0.625, 0.875]
+    property var outputTerminalPosY: [0.066, 0.211, 0.355, 0.5, 0.645, 0.789, 0.934]
 
-    property var blackChar: ["BCDTo7SegmentA_black.svg","BCDTo7SegmentB_black.svg","BCDTo7SegmentC_black.svg",
-                                 "BCDTo7SegmentD_black.svg","BCDTo7SegmentE_black.svg","BCDTo7SegmentF_black.svg",
-                                 "BCDTo7SegmentG_black.svg"]
-    property var redChar: ["BCDTo7SegmentA_red.svg","BCDTo7SegmentB_red.svg","BCDTo7SegmentC_red.svg",
-                               "BCDTo7SegmentD_red.svg","BCDTo7SegmentE_red.svg","BCDTo7SegmentF_red.svg",
-                               "BCDTo7SegmentG_red.svg"]
+    property var redChar: ["BCDTo7SegmentA_on.svg","BCDTo7SegmentB_on.svg","BCDTo7SegmentC_on.svg",
+                               "BCDTo7SegmentD_on.svg","BCDTo7SegmentE_on.svg","BCDTo7SegmentF_on.svg",
+                               "BCDTo7SegmentG_on.svg"]
 
     information: qsTr("BCD to 7 segment converter takes 4 binary inputs in its input terminals " +
                       "and gives 7 binary outputs which allow to light BCD number segments (binary-coded decimal) " +
@@ -66,7 +63,7 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.031
+                posX: 0.05
                 posY: inputTerminalPosY[index]
                 type: "In"
             }
@@ -80,7 +77,7 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.969
+                posX: 0.95
                 posY: outputTerminalPosY[index]
                 type: "Out"
             }
@@ -101,14 +98,14 @@ ElectricalComponent {
         if(i == truthTable.length) {
             for(var j = 0 ; j < noOfOutputs ; ++j) {
                 outputTerminals.itemAt(j).value = 0
-                outputChar.itemAt(j).source = Activity.url + blackChar[j]
+                outputChar.itemAt(j).source = Activity.url + "empty.svg"
             }
         }
         else {
             for(var j = 0 ; j < noOfOutputs ; ++j) {
                 var terminal = outputTerminals.itemAt(j)
                 terminal.value = truthTable[i][j + noOfInputs]
-                outputChar.itemAt(j).source = Activity.url + (terminal.value == 0 ? blackChar[j] : redChar[j])
+                outputChar.itemAt(j).source = Activity.url + (terminal.value == 0 ? "empty.svg" : redChar[j])
             }
         }
 

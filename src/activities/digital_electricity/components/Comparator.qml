@@ -24,11 +24,11 @@ import GCompris 1.0
 
 ElectricalComponent {
     id: comparator
-    terminalSize: 0.214
+    terminalSize: 0.25
     noOfInputs: 2
     noOfOutputs: 3
-    property var inputTerminalPosY: [0.211, 0.784]
-    property var outputTerminalPosY: [0.128, 0.481, 0.88]
+    property var inputTerminalPosY: [0.25, 0.75]
+    property var outputTerminalPosY: [0.13, 0.5, 0.87]
 
     information: qsTr("Comparator takes 2 numbers as input, A and B. It compares them and outputs 3 " +
                       "values. First output is 1 if A < B, 0 otherwise. Second is 1 " +
@@ -46,7 +46,7 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.039
+                posX: 0.05
                 posY: inputTerminalPosY[index]
                 type: "In"
             }
@@ -60,7 +60,7 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.961
+                posX: 0.95
                 posY: outputTerminalPosY[index]
                 type: "Out"
             }
