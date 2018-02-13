@@ -109,21 +109,21 @@ QtObject {
     property var sevenSegmentDisplay: {
         'imageName': 'sevenSegmentDisplay.svg',
         'componentSource': 'SevenSegment.qml',
-        'width': 0.22,
+        'width': 0.225,
         'height': 0.4,
         'toolTipText': qsTr("7 segment display")
     }
     property var signalGenerator: {
         'imageName': 'signalGenerator.svg',
         'componentSource': 'SignalGenerator.qml',
-        'width': 0.25,
-        'height': 0.18,
+        'width': 0.3,
+        'height': 0.2,
         'toolTipText': qsTr("Signal generator")
     }
     property var bcdCounter: {
         'imageName': 'bcdCounter.svg',
         'componentSource': 'BcdCounter.qml',
-        'width': 0.3,
+        'width': 0.225,
         'height': 0.4,
         'toolTipText': qsTr("BCD counter")
     }

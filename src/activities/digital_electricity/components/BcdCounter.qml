@@ -26,10 +26,10 @@ import "../digital_electricity.js" as Activity
 
 ElectricalComponent {
     id: bcdTo7Segment
-    terminalSize: 0.127
+    terminalSize: 0.125
     noOfInputs: 1
     noOfOutputs: 4
-    property var outputTerminalPosY: [0.064, 0.345, 0.645, 0.936]
+    property var outputTerminalPosY: [0.125, 0.375, 0.625, 0.875]
     property int count: 0
     property int previousInput: 0
 
@@ -58,8 +58,8 @@ ElectricalComponent {
         Component {
             id: inputTerminal
             TerminalPoint {
-                posX: 0.039
-                posY: 0.502
+                posX: 0.07
+                posY: 0.5
                 type: "In"
             }
         }
@@ -72,7 +72,7 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.961
+                posX: 0.93
                 posY: outputTerminalPosY[index]
                 type: "Out"
             }
