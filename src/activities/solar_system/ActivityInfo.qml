@@ -23,7 +23,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "solar_system/Solar_system.qml"
   difficulty: 3
-  icon: "solar_system/solar_system.svg"
+  icon: "solar_system/resource/sun_clip.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: true
   //: Activity title
