@@ -9,97 +9,89 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg2"
-   sodipodi:docname="sevenSegmentDisplayE.svg"
-   viewBox="0 0 412.57487 426.36978"
-   sodipodi:version="0.32"
-   version="1.0"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:version="0.91 r13725"
-   width="412.57486"
-   height="426.36978">
+   width="480"
+   height="512"
+   viewBox="0 0 479.99999 512.00002"
+   id="svg4301"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="sevenSegmentDisplayE.svg">
   <defs
-     id="defs15" />
+     id="defs4303" />
   <sodipodi:namedview
      id="base"
-     fit-margin-left="0"
-     inkscape:showpageshadow="false"
-     inkscape:zoom="1.1311515"
-     borderopacity="1.0"
-     inkscape:current-layer="layer1"
-     inkscape:cx="66.916626"
-     inkscape:cy="239.20603"
-     inkscape:window-maximized="1"
-     showgrid="false"
-     fit-margin-right="0"
-     inkscape:document-units="px"
+     pagecolor="#ffffff"
      bordercolor="#666666"
-     inkscape:window-x="-8"
-     guidetolerance="10"
-     objecttolerance="10"
-     inkscape:window-y="-8"
-     fit-margin-bottom="0"
-     inkscape:window-width="1366"
+     borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     pagecolor="#ffffff"
-     gridtolerance="10000"
-     inkscape:window-height="705"
-     showborder="false"
-     fit-margin-top="0" />
-  <g
-     id="layer1"
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     transform="translate(466.02639,153.48247)">
-    <path
-       id="path2399"
-       style="opacity:1;fill:#ff0000;fill-opacity:1"
-       inkscape:connector-curvature="0"
-       d="m -284.65188,150.50867 0,-70.596253 8.50496,-8.070523 8.50496,-8.070524 2.81203,2.548661 c 1.54664,1.40178 5.95126,5.569364 9.78833,9.2615 l 6.97629,6.712876 -0.0156,50.381893 -0.0155,50.38189 -11.86447,12.40254 c -6.52556,6.82121 -14.75079,15.38268 -18.27807,19.02519 l -6.41359,6.62265 0,-70.59625 z" />
-  </g>
+     inkscape:zoom="0.7"
+     inkscape:cx="150.45018"
+     inkscape:cy="173.78961"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:lockguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid838"
+       empspacing="4" />
+  </sodipodi:namedview>
   <metadata
-     id="metadata13">
+     id="metadata4306">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-        <dc:publisher>
-          <cc:Agent
-             rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-        <dc:title />
-        <dc:date>2012-03-15T11:54:43</dc:date>
-        <dc:description>A simple seven segment display</dc:description>
-        <dc:source>https://openclipart.org/detail/168838/seven-segment-display-gray-7-by-alex8664</dc:source>
+        <dc:title></dc:title>
+        <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
-            <dc:title>alex8664</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>display</rdf:li>
-            <rdf:li>lcd</rdf:li>
-            <rdf:li>number</rdf:li>
-            <rdf:li>seven segment</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-245.47253,-175.55486)">
+    <path
+       style="fill:#3c5a6e;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 469.47253,455.55486 -16,-16 -16,16 v 160 l 32,-32 z"
+       id="path916"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+  </g>
 </svg>

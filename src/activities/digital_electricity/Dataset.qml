@@ -109,7 +109,7 @@ QtObject {
     property var sevenSegmentDisplay: {
         'imageName': 'sevenSegmentDisplay.svg',
         'componentSource': 'SevenSegment.qml',
-        'width': 0.15,
+        'width': 0.22,
         'height': 0.4,
         'toolTipText': qsTr("7 segment display")
     }

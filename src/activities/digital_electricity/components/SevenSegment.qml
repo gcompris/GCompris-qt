@@ -26,10 +26,10 @@ import "../digital_electricity.js" as Activity
 
 ElectricalComponent {
     id: sevenSegmentDisplay
-    terminalSize: 0.116
+    terminalSize: 0.125
     noOfInputs: 7
     noOfOutputs: 0
-    property var inputTerminalPosY: [0.058,0.195,0.337,0.484,0.636,0.791,0.942]
+    property var inputTerminalPosY: [0.066, 0.211, 0.355, 0.5, 0.645, 0.789, 0.934]
     property var redBars: ["sevenSegmentDisplayA.svg","sevenSegmentDisplayB.svg","sevenSegmentDisplayC.svg",
                                "sevenSegmentDisplayD.svg","sevenSegmentDisplayE.svg","sevenSegmentDisplayF.svg",
                                "sevenSegmentDisplayG.svg"]
