@@ -7,201 +7,93 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg2"
-   sodipodi:docname="arrowUp2.svg"
-   inkscape:export-filename="/datas/wiki/arrow_orange_up.png"
-   viewBox="0 0 36 38"
-   sodipodi:version="0.32"
-   inkscape:export-xdpi="90.000000"
-   version="1.0"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-ydpi="90.000000"
-   inkscape:version="0.91 r13725">
+   width="100"
+   height="112"
+   viewBox="0 0 26.458333 29.633334"
+   version="1.1"
+   id="svg842"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="arrowUp.svg">
   <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient1552">
-      <stop
-         id="stop1554"
-         style="stop-color:#f9cc84"
-         offset="0" />
-      <stop
-         id="stop1556"
-         style="stop-color:#fed27f"
-         offset="1" />
-    </linearGradient>
-    <radialGradient
-       id="radialGradient2506"
-       gradientUnits="userSpaceOnUse"
-       cy=".40530"
-       cx="-18.3"
-       gradientTransform="matrix(0.1316,-1.117,1.0576,0.12462,16.795918,11.338541)"
-       r="17.1"
-       inkscape:collect="always">
-      <stop
-         id="stop1427"
-         style="stop-color:#f0d81f"
-         offset="0" />
-      <stop
-         id="stop1429"
-         style="stop-color:#f07d0a"
-         offset="1" />
-    </radialGradient>
-    <linearGradient
-       id="linearGradient2508"
-       y2="47.922"
-       gradientUnits="userSpaceOnUse"
-       x2="27.857"
-       gradientTransform="matrix(-1,0,0,-1,50.152918,50.923541)"
-       y1="16.238"
-       x1="32"
-       inkscape:collect="always">
-      <stop
-         id="stop1520"
-         style="stop-color:#f3ac39;stop-opacity:.62876"
-         offset="0" />
-      <stop
-         id="stop1522"
-         style="stop-color:#fcba94;stop-opacity:.78261"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient2510"
-       y2="47.922"
-       xlink:href="#linearGradient1552"
-       gradientUnits="userSpaceOnUse"
-       x2="27.857"
-       gradientTransform="matrix(-1,0,0,-1,50.179918,50.923541)"
-       y1="16.238"
-       x1="32"
-       inkscape:collect="always" />
-    <linearGradient
-       id="linearGradient2512"
-       y2="16.238"
-       xlink:href="#linearGradient1552"
-       gradientUnits="userSpaceOnUse"
-       x2="30.302"
-       gradientTransform="matrix(-1,0,0,-1,50.144918,50.885541)"
-       y1="47.962"
-       x1="36.312"
-       inkscape:collect="always" />
-  </defs>
+     id="defs836" />
   <sodipodi:namedview
      id="base"
-     bordercolor="#666666"
-     inkscape:grid-points="true"
-     inkscape:pageshadow="2"
-     inkscape:window-y="44"
      pagecolor="#ffffff"
-     inkscape:window-height="693"
-     inkscape:grid-bbox="true"
-     inkscape:zoom="13.078947"
-     inkscape:window-x="44"
-     showgrid="false"
+     bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:current-layer="layer1"
-     inkscape:cx="16.979055"
-     inkscape:cy="18.70057"
-     showguides="false"
-     inkscape:window-width="1156"
      inkscape:pageopacity="0.0"
-     inkscape:document-units="px"
-     inkscape:window-maximized="0">
-    <inkscape:grid
-       id="GridFromPre046Settings"
-       opacity=".2"
-       visible="true"
-       color="#0000ff"
-       enabled="true"
-       originy="0px"
-       originx="0px"
-       empspacing="4"
-       spacingy="1px"
-       spacingx="1px"
-       empopacity="0.4"
-       type="xygrid"
-       empcolor="#0000ff" />
-  </sodipodi:namedview>
-  <g
-     id="layer1"
-     inkscape:label="Calque 1"
-     inkscape:groupmode="layer">
-    <g
-       id="g4207">
-      <path
-         inkscape:connector-curvature="0"
-         d="m 28.152918,36.923541 c 1,0 1,-1 1,-1 l 0,-17 c 1,-0.049 5,0 5,0 0.447,-0.009 0.846,-0.109 1.016,-0.523 0.17,-0.414 0.077,-0.889 -0.235,-1.209 l -16,-15.9999997 c -0.435,-0.42200004 -1.127,-0.42200004 -1.562,0 L 1.3719179,17.191541 c -0.312,0.32 -0.40500001,0.795 -0.235,1.209 0.17,0.414 0.569,0.514 1.016,0.523 l 5,0 0,17.049 c 0,0 0,1 1,1 6.0000001,0 14.0000001,-0.049 20.0000001,-0.049 z"
-         style="fill:#a54005"
-         sodipodi:nodetypes="ccccsccccsccccc"
-         id="path2125" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 8.3719179,35.767541 c 5.9030001,-0.002 13.6430001,-0.061 19.5620001,-0.063 l 0,-16.781 c -10e-4,-0.649 0.508,-1.186 1.157,-1.219 1.093,-0.053 4.057,-0.008 4.624,0 L 18.152918,2.1425413 2.6219179,17.704541 l 4.531,0 c 0.673,0 1.219,0.546 1.219,1.219 l 0,16.844 z"
-         style="fill:url(#radialGradient2506)"
-         id="path3636" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 9.1529179,33.923541 c 0.9060001,1.031 17.0000001,1 18.0000001,0 1,-1 -0.122,-14.11 -0.094,-15 0.094,-3 4.094,-1 3.094,-3 -2,-3 -11,-11.9999997 -12,-11.9999997 -1,0 -10.0000001,8.9999997 -12.0000001,11.9999997 -1,2 3,0 3.094,3 0.029,0.935 -1.188,14.031 -0.094,15 z"
-         style="fill:url(#linearGradient2508)"
-         sodipodi:nodetypes="ccscccsc"
-         id="path1511" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 30.179918,15.923541 c -2,-3 -11,-11.9999997 -12,-11.9999997 -1,0 -7.027,5.459 -9.0270001,8.5019997 0.9730001,0 4.0000001,-3.5019997 9.0000001,-3.5019997 4,0 9,8.9999997 12.027,6.9999997 z"
-         style="fill:url(#linearGradient2510)"
-         sodipodi:nodetypes="ccccc"
-         id="path1548" />
-      <path
-         inkscape:connector-curvature="0"
-         d="m 18.117918,34.647541 c 4.262,-0.004 8.531,-0.25 9.031,-0.75 0.699,-0.698 0.4,-6.176 0.157,-10.188 -0.153,-2.786 -0.153,-2.786 -1.153,0.214 -3.493,10.479 -16.082,8.316 -17.4100001,7.943 0.063,1.007 0.175,1.826 0.406,2.031 0.454,0.515 4.7070001,0.754 8.9690001,0.75 z"
-         style="fill:url(#linearGradient2512)"
-         sodipodi:nodetypes="cscsccc"
-         id="path1558" />
-    </g>
-  </g>
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="13.333368"
+     inkscape:cy="-6.1141613"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata25">
+     id="metadata839">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
-        <dc:publisher>
-          <cc:Agent
-             rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-        <dc:title>arrow_orange_up</dc:title>
-        <dc:date>2008-05-26T11:35:32</dc:date>
-        <dc:description />
-        <dc:source>https://openclipart.org/detail/16969/arrow_orange_up-by-jean_victor_balin</dc:source>
+        <dc:title></dc:title>
+        <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
-            <dc:title>jean_victor_balin</dc:title>
+            <dc:title>Timothée Giet</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>arrow</rdf:li>
-            <rdf:li>icon</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-124.35416,-81.099995)">
+    <rect
+       style="opacity:1;fill:#f5f5f5;fill-opacity:1;stroke:#66c8cb;stroke-width:1.05833328;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect820-3"
+       width="25.400002"
+       height="28.574999"
+       x="124.88332"
+       y="81.629166"
+       ry="4.2333307" />
+    <path
+       style="fill:#66c8cb;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 137.58332,84.804156 -8.46667,12.699998 h 4.23334 v 8.466666 h 8.46666 v -8.466666 h 4.23334 z"
+       id="path822-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccc" />
+  </g>
 </svg>

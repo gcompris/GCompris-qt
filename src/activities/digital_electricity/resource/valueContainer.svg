@@ -7,330 +7,68 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg47331"
-   sodipodi:docname="valueContainer.svg"
-   inkscape:export-filename="/home/cats/Desktop/computer.png"
-   viewBox="0 0 452.792 276.05601"
-   sodipodi:version="0.32"
-   inkscape:export-xdpi="150"
-   version="1.0"
-   inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-ydpi="150"
-   inkscape:version="0.91 r13725"
-   width="452.79199"
-   height="276.056">
-  <title
-     id="title3204">Function Generator</title>
+   width="192"
+   height="175.99997"
+   viewBox="0 0 50.799999 46.56666"
+   version="1.1"
+   id="svg1002"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="valueContainer.svg">
   <defs
-     id="defs47333">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="163.92147 : -145.6547 : 1"
-       inkscape:vp_y="0 : 975.24989 : 0"
-       inkscape:vp_z="413.792 : -145.6547 : 1"
-       inkscape:persp3d-origin="288.85674 : -200.52552 : 1"
-       id="perspective4571" />
-    <linearGradient
-       id="linearGradient2945"
-       y2="845.69"
-       gradientUnits="userSpaceOnUse"
-       x2="158.69"
-       gradientTransform="matrix(0.76083441,0,0,0.27385674,150.34055,13.867473)"
-       y1="502.32001"
-       x1="154.85001"
-       inkscape:collect="always">
-      <stop
-         id="stop48120"
-         style="stop-color:#ffffff"
-         offset="0" />
-      <stop
-         id="stop48122"
-         style="stop-color:#666666;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       id="filter3732-3"
-       height="1.2345999"
-       width="1.2345999"
-       y="-0.11729"
-       x="-0.11729">
-      <feGaussianBlur
-         id="feGaussianBlur3734-8"
-         stdDeviation="2.1425868" />
-    </filter>
-    <linearGradient
-       id="linearGradient6253"
-       x1="421.85999"
-       gradientUnits="userSpaceOnUse"
-       x2="424.26001"
-       y1="316.17999"
-       y2="361.64001">
-      <stop
-         id="stop5625"
-         stop-color="#e4e4e4"
-         offset="0" />
-      <stop
-         id="stop5627"
-         stop-color="#555753"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4529"
-       x1="426.92001"
-       gradientUnits="userSpaceOnUse"
-       x2="420.22"
-       y1="307.38"
-       y2="349.10001">
-      <stop
-         id="stop3832"
-         stop-color="#babdb6"
-         offset="0" />
-      <stop
-         id="stop3834"
-         stop-color="#eeeeec"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient6199">
-      <stop
-         id="stop6201"
-         stop-color="#fff"
-         offset="0" />
-      <stop
-         id="stop6203"
-         stop-color="#fff"
-         stop-opacity="0"
-         offset="1" />
-    </linearGradient>
-    <radialGradient
-       id="radialGradient6259"
-       gradientUnits="userSpaceOnUse"
-       cy="-212.3"
-       cx="426.88"
-       gradientTransform="matrix(1,0,0,0.29879,0,-148.87)"
-       r="27.625">
-      <stop
-         id="stop5731"
-         offset="0" />
-      <stop
-         id="stop5733"
-         stop-opacity="0"
-         offset="1" />
-    </radialGradient>
-    <linearGradient
-       id="linearGradient6261"
-       x1="417.54999"
-       gradientUnits="userSpaceOnUse"
-       x2="429.66"
-       y1="303.73001"
-       y2="351.62">
-      <stop
-         id="stop5753"
-         stop-color="#fff"
-         offset="0" />
-      <stop
-         id="stop5759"
-         stop-color="#d2d3d2"
-         offset=".82471" />
-      <stop
-         id="stop5755"
-         stop-color="#a9aaa8"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient6263"
-       x1="414.34"
-       gradientUnits="userSpaceOnUse"
-       x2="437.13"
-       y1="310.62"
-       y2="347.56">
-      <stop
-         id="stop5763"
-         stop-color="#7c7c7c"
-         offset="0" />
-      <stop
-         id="stop5765"
-         stop-color="#fff"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4531"
-       x1="417.89999"
-       gradientUnits="userSpaceOnUse"
-       x2="417.89999"
-       y1="296.47"
-       y2="286.17999">
-      <stop
-         id="stop3814"
-         stop-color="#6ec715"
-         offset="0" />
-      <stop
-         id="stop3816"
-         stop-color="#244207"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4533"
-       x1="417.89999"
-       gradientUnits="userSpaceOnUse"
-       x2="421.94"
-       y1="292.42999"
-       y2="300.5">
-      <stop
-         id="stop3822"
-         stop-color="#888a85"
-         offset="0" />
-      <stop
-         id="stop3824"
-         stop-color="#fff"
-         offset="1" />
-    </linearGradient>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       id="filter3732-3-2"
-       height="1.2345999"
-       width="1.2345999"
-       y="-0.11729"
-       x="-0.11729">
-      <feGaussianBlur
-         id="feGaussianBlur3734-8-1"
-         stdDeviation="2.1425868" />
-    </filter>
-    <radialGradient
-       id="radialGradient6259-6"
-       gradientUnits="userSpaceOnUse"
-       cy="-212.3"
-       cx="426.88"
-       gradientTransform="matrix(1,0,0,0.29879,0,-148.87)"
-       r="27.625">
-      <stop
-         id="stop5731-4"
-         offset="0" />
-      <stop
-         id="stop5733-9"
-         stop-opacity="0"
-         offset="1" />
-    </radialGradient>
-    <linearGradient
-       id="linearGradient1552">
-      <stop
-         id="stop1554"
-         style="stop-color:#f9cc84"
-         offset="0" />
-      <stop
-         id="stop1556"
-         style="stop-color:#fed27f"
-         offset="1" />
-    </linearGradient>
-    <linearGradient
-       id="linearGradient4442"
-       y2="16.238001"
-       xlink:href="#linearGradient1552"
-       gradientUnits="userSpaceOnUse"
-       x2="30.302"
-       gradientTransform="matrix(-1,0,0,-1,50.144918,50.885541)"
-       y1="47.962002"
-       x1="36.312"
-       inkscape:collect="always" />
-  </defs>
+     id="defs996" />
   <sodipodi:namedview
      id="base"
-     bordercolor="#666666"
-     inkscape:pageshadow="2"
-     inkscape:guide-bbox="true"
      pagecolor="#ffffff"
-     inkscape:window-height="705"
-     inkscape:window-maximized="1"
-     inkscape:zoom="0.7005778"
-     inkscape:window-x="-8"
-     showgrid="false"
+     bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:current-layer="layer1"
-     inkscape:cx="295.8801"
-     inkscape:cy="168.12339"
-     showguides="true"
-     inkscape:window-y="-8"
-     inkscape:snap-global="true"
-     inkscape:window-width="1366"
      inkscape:pageopacity="0.0"
-     inkscape:document-units="px"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-155.42857"
+     inkscape:cy="10.857166"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <g
-     id="layer1"
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     transform="translate(-98.235,-146.45646)">
-    <g
-       id="g4339"
-       transform="matrix(0.99842904,0,0,2.4017823,-94.975746,-208.51538)">
-      <rect
-         id="rect48116"
-         style="fill:#008080;stroke:#333333;stroke-width:6.48368311"
-         ry="5.0860443"
-         height="108.4543"
-         width="447.02075"
-         y="151.03702"
-         x="196.75659" />
-      <path
-         id="rect48114"
-         sodipodi:nodetypes="ccccc"
-         style="opacity:0.56499999;fill:url(#linearGradient2945)"
-         d="m 215.19335,155.44038 410.05,0 c -59.54008,65.38533 -294.54478,25.94097 -422.83468,93.51709 l 0,-88.91533 c 0,-2.54906 5.70123,-4.60098 12.78252,-4.60098 z"
-         inkscape:connector-curvature="0" />
-    </g>
-  </g>
+     fit-margin-bottom="0"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata67">
+     id="metadata999">
     <rdf:RDF>
-      <cc:Work>
+      <cc:Work
+         rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <cc:license
-           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
-        <dc:publisher>
-          <cc:Agent
-             rdf:about="http://openclipart.org/">
-            <dc:title>Openclipart</dc:title>
-          </cc:Agent>
-        </dc:publisher>
-        <dc:title>Function Generator</dc:title>
-        <dc:date>2009-11-02T21:36:40</dc:date>
-        <dc:description>A stylized depiction of a function generator.</dc:description>
-        <dc:source>https://openclipart.org/detail/28031/function-generator-by-mothinator</dc:source>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>mothinator</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>cartoon</rdf:li>
-            <rdf:li>electronic equipment</rdf:li>
-            <rdf:li>equipment</rdf:li>
-            <rdf:li>function generator</rdf:li>
-            <rdf:li>remix</rdf:li>
-            <rdf:li>science</rdf:li>
-            <rdf:li>scientific equipment</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
+        <dc:title></dc:title>
       </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-19.20119,-105.13929)">
+    <path
+       style="opacity:1;fill:#98c4c5;fill-opacity:1;stroke:none;stroke-width:0.65078139;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.20119,105.13929 h 50.8 v 46.56666 h -50.8 z"
+       id="rect4800-3-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="opacity:1;fill:#ecf8f8;fill-opacity:1;stroke:none;stroke-width:0.57077301;stroke-miterlimit:3.54999995;stroke-dasharray:none;stroke-opacity:1"
+       d="m 21.317857,107.25595 h 46.566666 v 42.33334 H 21.317857 Z"
+       id="rect4800-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
 </svg>

@@ -26,7 +26,7 @@ import "../../../core"
 
 ElectricalComponent {
     id: signalGenerator
-    terminalSize: 0.24
+    terminalSize: 0.25
     noOfInputs: 0
     noOfOutputs: 1
 
@@ -45,8 +45,8 @@ ElectricalComponent {
         Component {
             id: outputTerminal
             TerminalPoint {
-                posX: 0.95
-                posY: 0.504
+                posX: 0.94
+                posY: 0.5
                 value: 0
                 type: "Out"
             }
@@ -81,60 +81,72 @@ ElectricalComponent {
 
     Image {
         source: Activity.url + "arrowUp.svg"
-        height: 0.339 * parent.height
-        width: 0.123 * parent.width
-        property double posX: 0.688
-        property double posY: 0.284
+        height: 0.437 * parent.height
+        width: 0.208 * parent.width
+        sourceSize.height: height
+        sourceSize.width: width
+        property double posX: 0.6
+        property double posY: 0.28
         x: (parent.width - parent.paintedWidth) / 2 + posX * parent.paintedWidth - width / 2
         y: (parent.height - parent.paintedHeight) / 2 + posY * parent.paintedHeight - height / 2
         fillMode: Image.PreserveAspectFit
-        mipmap: true
         antialiasing: true
+        opacity: 0
         MouseArea {
             anchors.fill: parent
             anchors.centerIn: parent
             enabled: signalGenerator.period != 2
             onPressed: {
+                parent.opacity = 1
                 signalGenerator.period *= 2
                 periodIndex++
                 timer.restart()
                 outputTerminals.itemAt(0).value = 1
                 Activity.updateComponent(signalGenerator.index)
             }
+            onReleased: {
+                parent.opacity = 0
+            }
         }
     }
 
     Image {
         source: Activity.url + "arrowDown.svg"
-        height: 0.339 * parent.height
-        width: 0.133 * parent.width
-        property double posX: 0.688
-        property double posY: 0.713
+        height: 0.437 * parent.height
+        width: 0.208 * parent.width
+        sourceSize.height: height
+        sourceSize.width: width
+        property double posX: 0.6
+        property double posY: 0.72
         x: (parent.width - parent.paintedWidth) / 2 + posX * parent.paintedWidth - width / 2
         y: (parent.height - parent.paintedHeight) / 2 + posY * parent.paintedHeight - height / 2
         fillMode: Image.PreserveAspectFit
-        mipmap: true
         antialiasing: true
+        opacity: 0
         MouseArea {
             anchors.fill: parent
             anchors.centerIn: parent
             enabled: signalGenerator.period != 0.25
             onPressed: {
+                parent.opacity = 1
                 signalGenerator.period /= 2
                 periodIndex--
                 timer.restart()
                 outputTerminals.itemAt(0).value = 1
                 Activity.updateComponent(signalGenerator.index)
             }
+            onReleased: {
+                parent.opacity = 0
+            }
         }
     }
 
-    Image {
-        source: Activity.url + "valueContainer.svg"
-        sourceSize.height: 0.818 * parent.height
-        sourceSize.width: 0.557 * parent.width
-        property double posX: 0.333
-        property double posY: 0.503
+    Rectangle {
+        height: 0.625 * parent.height
+        width: 0.35 * parent.width
+        color: "#00000000"
+        property double posX: 0.25
+        property double posY: 0.5
         x: (parent.width - parent.paintedWidth) / 2 + posX * parent.paintedWidth - width / 2
         y: (parent.height - parent.paintedHeight) / 2 + posY * parent.paintedHeight - height / 2
         GCText {
@@ -142,11 +154,9 @@ ElectricalComponent {
             anchors.centerIn: parent
             fontSizeMode: Text.Fit
             minimumPointSize: 6
-            font.pointSize: 40
-            color: "white"
-            style: Text.Outline
-            styleColor: "black"
-            horizontalAlignment: Text.AlignRight
+            font.pointSize: 32
+            color: "#3f6f71"
+            horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             height: parent.height - 10
             width: parent.width - 10
