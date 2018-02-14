@@ -554,7 +554,7 @@ function updateWires(index) {
             var angle = (180/Math.PI)*Math.atan((y2-y1)/(x2-x1))
             if(x2 - x1 < 0) angle = angle - 180
             wire.x = x1
-            wire.y = y1
+            wire.y = y1 - wire.height / 2
             wire.width = width
             wire.rotation = angle
         }

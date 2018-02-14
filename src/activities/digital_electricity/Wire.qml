@@ -31,8 +31,8 @@ Rectangle {
     property QtObject to
     property bool destructible
 
-    height: 5
-    color: from.value == 0 ? "red" : "green"
+    height: 5 * ApplicationInfo.ratio
+    color: from.value == 0 ? "#d21818" : "#6ce76c"
     radius: height / 2
     transformOrigin: Item.Left
 
