@@ -329,7 +329,7 @@ ActivityBase {
             anchors.rightMargin: 15 * ApplicationInfo.ratio
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             cellWidth: itemWidth + 25*ApplicationInfo.ratio
-            cellHeight: itemHeight + 15*ApplicationInfo.ratio
+            cellHeight: itemHeight + 35*ApplicationInfo.ratio
             clip: false
             interactive: false
             //verticalLayoutDirection: GridView.BottomToTop
@@ -366,7 +366,7 @@ ActivityBase {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: wordsView.cellWidth*0.8
-            height: wordsView.cellHeight*0.8
+            height: wordsView.cellHeight*0.7
             sourceSize.width: wordsView.cellWidth
             anchors {
                 horizontalCenter: parent.horizontalCenter
