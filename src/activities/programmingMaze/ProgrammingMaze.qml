@@ -209,6 +209,7 @@ ActivityBase {
             GCText {
                 id: instructionText
                 anchors.fill: parent
+                anchors.margins: parent.border.width
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
