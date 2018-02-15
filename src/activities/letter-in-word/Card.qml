@@ -42,6 +42,17 @@ Item {
     }
 
     Image {
+        id: tick
+        source: "qrc:/gcompris/src/core/resource/apply.svg"
+        sourceSize.width: cardImage.width / 3
+        visible: false
+
+        anchors {
+            leftMargin: cardItem.right - 0.01
+            bottomMargin: parent.top - 10
+        }
+    }
+    Image {
         id: cardImage
         anchors.top: wordPic.bottom
         anchors.topMargin: -30 * ApplicationInfo.ratio
@@ -72,11 +83,10 @@ Item {
 
         states:
             State {
-                name: "scaled"; when: selected && mouseActive
+                name: "marked"; when: selected && mouseActive
                 PropertyChanges {
-                    target: cardItem
-                    scale: 1.5
-                    z: 2
+                    target: tick
+                    visible: true
                 }
             }
 
