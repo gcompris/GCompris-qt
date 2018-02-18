@@ -130,7 +130,7 @@ ActivityBase {
                     GCDialogCheckBox {
                         id: easyModeBox
                         width: column.width - 50
-                        text: qsTr("Instructions and score visible")
+                        text: qsTr("Put together all the elements from a category (with score)")
                         checked: (items.mode == "easy") ? true : false
                         exclusiveGroup: configOptions
                         onCheckedChanged: {
@@ -144,7 +144,7 @@ ActivityBase {
                     GCDialogCheckBox {
                         id: mediumModeBox
                         width: easyModeBox.width
-                        text: qsTr("Instructions visible and score invisible")
+                        text: qsTr("Put together all the elements from a category (without score)")
                         checked: (items.mode == "medium") ? true : false
                         exclusiveGroup: configOptions
                         onCheckedChanged: {
@@ -158,7 +158,7 @@ ActivityBase {
                     GCDialogCheckBox {
                         id: expertModeBox
                         width: easyModeBox.width
-                        text: qsTr("Instructions invisible and score visible")
+                        text: qsTr("Discover a category, grouping elements together")
                         checked: (items.mode == "expert") ? true : false
                         exclusiveGroup: configOptions
                         onCheckedChanged: {
