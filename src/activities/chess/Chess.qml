@@ -33,6 +33,7 @@ ActivityBase {
 
     property bool acceptClick: true
     property bool twoPlayers: false
+    property int coordsOpacity: 1
     // difficultyByLevel means that at level 1 computer is bad better at last level
     property bool difficultyByLevel: true
     property var fen: [
@@ -71,7 +72,7 @@ ActivityBase {
             property int cellSize: items.isPortrait ?
                                        Math.min((background.width - numbers.childrenRect.width) / (8 + 2),
                                                 (background.height - controls.height - letters.childrenRect.height) / (8 + barHeightAddon)) :
-                                       Math.min((background.width - numbers.childrenRect.width) / (8 + 2), (background.height - letters.childrenRect.height) / (8 + barHeightAddon))
+                                       Math.min((background.width - numbers.childrenRect.width) / (8 + 2), (background.height - letters.childrenRect.height) / (8.5 + barHeightAddon))
             property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
@@ -96,7 +97,7 @@ ActivityBase {
         Grid {
             anchors {
                 top: parent.top
-                topMargin: items.isPortrait ? 0 : items.cellSize / 2
+                topMargin: items.isPortrait ? 0 : items.cellSize
                 leftMargin: 10 * ApplicationInfo.ratio
                 rightMargin: 10 * ApplicationInfo.ratio
             }
@@ -114,6 +115,7 @@ ActivityBase {
                     leftMargin: 10
                     rightMargin: 10
                 }
+                z: 20
                 width: items.isPortrait ?
                            parent.width :
                            Math.max(undo.width * 1.2,
@@ -192,9 +194,9 @@ ActivityBase {
             Rectangle {
                 id:boardBg
                 width: items.cellSize * 8.2
-                height: items.cellSize * 8.2
-                z: 09
-                color: "#3A1F0A"
+                height: boardBg.width
+                z: 08
+                color: "#452501"
 
                 // The chessboard
                 GridView {
@@ -202,7 +204,7 @@ ActivityBase {
                     cellWidth: items.cellSize
                     cellHeight: items.cellSize
                     width: items.cellSize * 8
-                    height: items.cellSize * 8
+                    height: chessboard.width
                     interactive: false
                     keyNavigationWraps: true
                     model: 64
@@ -226,23 +228,37 @@ ActivityBase {
 
                     function swap() {
                         items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
+                        coordsOpacity = 0
+                        timerSwap.start()
                         if(chessboard.rotation == 180)
                             chessboard.rotation = 0
                         else
                             chessboard.rotation = 180
                     }
                 }
+                
+                Timer {
+                    id: timerSwap
+                    interval: 1500
+                    running: false
+                    repeat: false
+                    onTriggered: coordsOpacity = 1
+                }
 
                 Grid {
                     id: letters
                     anchors.left: chessboard.left
                     anchors.top: chessboard.bottom
+                    opacity: coordsOpacity
+                    Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
                     Repeater {
-                        model: ["A", "B", "C", "D", "E", "F", "G", "H"]
+                        id: lettersA
+                        model: chessboard.rotation == 0 ? ["F", "G", "F", "E", "D", "C", "B", "A"] : ["A", "B", "C", "D", "E", "F", "G", "H"]
                         GCText {
                             x: items.cellSize * (index % 8) + (items.cellSize/2-width/2)
                             y: items.cellSize * Math.floor(index / 8)
                             text: modelData
+                            color: "#CBAE7B"
                         }
                     }
                 }
@@ -250,14 +266,28 @@ ActivityBase {
                     id: numbers
                     anchors.left: chessboard.right
                     anchors.top: chessboard.top
+                    opacity: coordsOpacity
+                    Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
                     Repeater {
                         model: 8
                         GCText {
                             x: items.cellSize * Math.floor(index / 8) + width
                             y: items.cellSize * (index % 8) + (items.cellSize/2-height/2)
                             text: 8-modelData
+                            color: "#CBAE7B"
                         }
                     }
+                }
+                
+                Rectangle {
+                    id: boardBorder
+                    width: items.cellSize * 10
+                    height: boardBorder.width
+                    anchors.centerIn: boardBg
+                    z: -1
+                    color: "#542D0F"
+                    border.color: "#3A1F0A"
+                    border.width: items.cellSize * 0.1
                 }
             }
         }
@@ -273,7 +303,7 @@ ActivityBase {
                 x: items.cellSize * (7 - pos % 8) + spacing / 2
                 y: items.cellSize * Math.floor(pos / 8) + spacing / 2
                 width: items.cellSize - spacing
-                height: items.cellSize - spacing
+                height: square.width
                 z: 1
                 keys: acceptMove ? ['acceptMe'] : ['sorryNo']
                 property bool acceptMove : false
@@ -308,7 +338,7 @@ ActivityBase {
                 id: piece
                 sourceSize.width: items.cellSize
                 width: items.cellSize - spacing
-                height: items.cellSize - spacing
+                height: piece.width
                 source: img ? Activity.url + img + '.svg' : ''
                 img: modelData.img
                 x: items.cellSize * (7 - pos % 8) + spacing / 2
