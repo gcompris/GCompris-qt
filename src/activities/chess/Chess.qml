@@ -269,11 +269,11 @@ ActivityBase {
                     opacity: coordsOpacity
                     Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
                     Repeater {
-                        model: 8
+                        model: chessboard.rotation == 0 ? ["1", "2", "3", "4", "5", "6", "7", "8"] : ["8", "7", "6", "5", "4", "3", "2", "1"]
                         GCText {
                             x: items.cellSize * Math.floor(index / 8) + width
                             y: items.cellSize * (index % 8) + (items.cellSize/2-height/2)
-                            text: 8-modelData
+                            text: modelData
                             color: "#CBAE7B"
                         }
                     }
