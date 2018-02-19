@@ -285,7 +285,7 @@ QtObject {
             playAreaComponentPositionY: [0.5, 0.5],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("A NOR gate takes 2 binary input and outputs 1 if both of them are 0, otherwise produces an output of 1."),
+                qsTr("A NOR gate takes 2 binary input and outputs 1 if both of them are 0, otherwise produces an output of 0."),
                 qsTr("For a more detailed description about the gate, select it and click on the info button."),
                 qsTr("Light the bulb using the NOR gate provided.")
             ]
