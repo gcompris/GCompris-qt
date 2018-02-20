@@ -156,8 +156,7 @@ Window {
 
             function playBackgroundMusic() {
                 rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-                if(rccBackgroundMusic)
-                    Core.shuffle(rccBackgroundMusic)
+                Core.shuffle(rccBackgroundMusic)
                 for(var i = 0; i < rccBackgroundMusic.length; i++)
                     backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[i]))
                 if(!main.isBackgroundMusicEnabledInActivity)
