@@ -193,7 +193,7 @@ Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
                 width: dialogActivityContent.width - 30
-                height: dialogActivityContent.height - 100
+                height: dialogActivityContent.height - (30 + title.height * 1.2)
                 border.color: "black"
                 border.width: 2
                 anchors.margins: 100
@@ -218,7 +218,7 @@ Rectangle {
                     anchors.right: parent.right
                     anchors.rightMargin: 5 * ApplicationInfo.ratio
                     anchors.bottom: flick.bottom
-                    anchors.bottomMargin: 30 * ApplicationInfo.ratio
+                    anchors.bottomMargin: 5 * ApplicationInfo.ratio
                     onUp: flick.flick(0, 1400)
                     onDown: flick.flick(0, -1400)
                     upVisible: flick.visibleArea.yPosition <= 0 ? false : true
