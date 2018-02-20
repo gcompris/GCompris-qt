@@ -58,6 +58,18 @@ Item {
     property alias source: audio.source
 
     /**
+     * type: positive real number less than 1
+     * Determines intensity of the audio.
+     */
+    property alias volume: audio.volume
+
+    /**
+     * type:bool
+     * Whether the audio element contains audio.
+     */
+    property bool hasAudio: audio.hasAudio
+
+    /**
      * type:string
      * Detailed error message in case of playback errors.
      */
@@ -88,11 +100,25 @@ Item {
      */
     signal done
 
+    property var muteChangeHandler: function () { muted ? volume = 0 : volume = 1 }
+
     /**
      *  When mute is changed we set the volume to 0 to mute a potential playing
      * sound.
      */
-    onMutedChanged: muted ? audio.volume = 0 : audio.volume = 1
+    onMutedChanged: muteChangeHandler()
+
+    //Pauses the currently playing audio
+    function pause() {
+        if(playbackState === Audio.PlayingState)
+            audio.pause()
+    }
+
+    //Resumes the current audio if it had been paused
+    function resume() {
+        if(playbackState === Audio.PausedState || playbackState === Audio.StoppedState)
+            audio.play()
+    }
 
     /**
      * Plays back the audio resource @p file.

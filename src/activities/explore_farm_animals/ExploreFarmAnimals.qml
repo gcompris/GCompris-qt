@@ -29,4 +29,5 @@ ExploreLevels {
     numberOfLevels: 1
     url: "qrc:/gcompris/src/activities/explore_farm_animals/resource/"
     hasAudioQuestions: true
+    isMusicalActivity: true
 }

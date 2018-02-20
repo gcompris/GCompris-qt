@@ -56,6 +56,28 @@ Window {
     property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property alias backgroundMusic: backgroundMusic
 
+    /**
+     * type: bool
+     * It tells whether the background music is enabled for an activity.
+     *
+     * It changes to false if the started activity is a musical activity and back to true when the activity is closed.
+     */
+    property bool isBackgroundMusicEnabledInActivity: true
+
+    /**
+     * When a musical activity is started, isBackgroundMusicEnabledInActivity changes to false and the backgroundMusic pauses.
+     *
+     * When returning back from the musical activity to menu, isBackgroundMusicEnabledInActivity changes to true and backgroundMusic resumes.
+     */
+    onIsBackgroundMusicEnabledInActivityChanged: {
+        if(!isBackgroundMusicEnabledInActivity) {
+            backgroundMusic.pause()
+        }
+        else {
+            backgroundMusic.resume()
+        }
+    }
+
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
             audioVoices.stop();
@@ -108,6 +130,21 @@ Window {
         id: backgroundMusic
         muted: !ApplicationSettings.isBackgroundMusicEnabled
 
+        muteChangeHandler: function() {
+            if(muted) {
+                volume = 0
+            }
+            else {
+                volume = 1
+            }
+
+            if(!hasAudio && !delayedbackgroundMusic.running) {
+                delayedbackgroundMusic.playBackgroundMusic()
+            }
+        }
+
+        onDone: delayedbackgroundMusic.playBackgroundMusic()
+
         Timer {
             id: delayedbackgroundMusic
             interval: (ApplicationSettings.isAudioVoicesEnabled && !ApplicationSettings.isAudioEffectsEnabled) ? 2000 : 20000
@@ -119,20 +156,25 @@ Window {
 
             function playBackgroundMusic() {
                 rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+                Core.shuffle(rccBackgroundMusic)
                 for(var i = 0; i < rccBackgroundMusic.length; i++)
                     backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[i]))
+                if(!main.isBackgroundMusicEnabledInActivity)
+                    backgroundMusic.pause()
             }
         }
         Component.onCompleted: {
-            if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
-                delayedbackgroundMusic.playBackgroundMusic()
-            }
-            else if(ApplicationSettings.isBackgroundMusicEnabled && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
-                delayedbackgroundMusic.start()
+            if(ApplicationSettings.isBackgroundMusicEnabled
+               && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+               if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
+                  delayedbackgroundMusic.playBackgroundMusic()
+               }
+               else {
+                  delayedbackgroundMusic.start()
+               }
             }
             else {
                 DownloadManager.backgroundMusicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
-                delayedbackgroundMusic.start()
             }
         }
     }
@@ -315,12 +357,16 @@ Window {
                     if(properties.enterItem.isDialog) {
                         return pushVTransition
                     } else {
+                        if(properties.enterItem.isMusicalActivity) {
+                            isBackgroundMusicEnabledInActivity = false
+                        }
                         return pushHTransition
                     }
                 } else {
                     if(properties.exitItem.isDialog) {
                         return popVTransition
                     } else {
+                        main.isBackgroundMusicEnabledInActivity = true
                         return popHTransition
                     }
 
