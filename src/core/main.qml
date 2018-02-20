@@ -54,7 +54,30 @@ Window {
 
     property var applicationState: Qt.application.state
     property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
+    property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
     property alias backgroundMusic: backgroundMusic
+
+    /**
+     * type: bool
+     * It tells whether the background music is enabled for an activity.
+     *
+     * It changes to false if the started activity is a musical activity and back to true when the activity is closed.
+     */
+    property bool isBackgroundMusicEnabledInActivity: true
+
+    /**
+     * When a musical activity is started, isBackgroundMusicEnabledInActivity changes to false and the backgroundMusic pauses.
+     *
+     * When returning back from the musical activity to menu, isBackgroundMusicEnabledInActivity changes to true and backgroundMusic resumes.
+     */
+    onIsBackgroundMusicEnabledInActivityChanged: {
+        if(!isBackgroundMusicEnabledInActivity) {
+            backgroundMusic.pause()
+        }
+        else {
+            backgroundMusic.resume()
+        }
+    }
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
@@ -62,7 +85,7 @@ Window {
             audioEffects.stop();
         }
     }
-    
+
     onClosing: Core.quit(main)
     
     GCAudio {
@@ -102,11 +125,22 @@ Window {
     GCSfx {
         id: audioEffects
         muted: !ApplicationSettings.isAudioEffectsEnabled && !main.isMusicalActivityRunning
+        volume: ApplicationSettings.audioEffectsVolume
     }
 
     GCAudio {
         id: backgroundMusic
         muted: !ApplicationSettings.isBackgroundMusicEnabled
+
+        volume: ApplicationSettings.backgroundMusicVolume
+
+        onMutedChanged: {
+            if(!hasAudio && !delayedbackgroundMusic.running && !files.length) {
+                delayedbackgroundMusic.playBackgroundMusic()
+            }
+        }
+
+        onDone: delayedbackgroundMusic.playBackgroundMusic()
 
         Timer {
             id: delayedbackgroundMusic
@@ -119,20 +153,27 @@ Window {
 
             function playBackgroundMusic() {
                 rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-                for(var i = 0; i < rccBackgroundMusic.length; i++)
-                    backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[i]))
+
+                for(var i = 0; i < filteredBackgroundMusic.length; i++) {
+                    backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + filteredBackgroundMusic[i]))
+                }
+
+                if(main.isMusicalActivityRunning)
+                    backgroundMusic.pause()
             }
         }
         Component.onCompleted: {
-            if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
-                delayedbackgroundMusic.playBackgroundMusic()
-            }
-            else if(ApplicationSettings.isBackgroundMusicEnabled && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
-                delayedbackgroundMusic.start()
+            if(ApplicationSettings.isBackgroundMusicEnabled
+               && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+               if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
+                  delayedbackgroundMusic.playBackgroundMusic()
+               }
+               else {
+                  delayedbackgroundMusic.start()
+               }
             }
             else {
                 DownloadManager.backgroundMusicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
-                delayedbackgroundMusic.start()
             }
         }
     }
@@ -289,7 +330,8 @@ Window {
             "properties": {
                 'audioVoices': audioVoices,
                 'audioEffects': audioEffects,
-                'loading': loading
+                'loading': loading,
+                'backgroundMusic': backgroundMusic
             }
         }
 

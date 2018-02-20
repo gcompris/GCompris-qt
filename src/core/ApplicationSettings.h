@@ -218,6 +218,16 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(int baseFontSize READ baseFontSize WRITE setBaseFontSize NOTIFY baseFontSizeChanged)
 
     /**
+     * Stores the background music volume set by the user.
+     */
+    Q_PROPERTY(qreal backgroundMusicVolume READ backgroundMusicVolume WRITE setBackgroundMusicVolume NOTIFY backgroundMusicVolumeChanged)
+
+    /**
+     * Stores the audio effects volume set by the user.
+     */
+    Q_PROPERTY(qreal audioEffectsVolume READ audioEffectsVolume WRITE setAudioEffectsVolume NOTIFY audioEffectsVolumeChanged)
+
+    /**
      * Minimum allowed value for font-scaling.
      *
      * Constant value: -7
@@ -261,6 +271,11 @@ class ApplicationSettings : public QObject
       * Either openGL or software renderer (only for Qt >= 5.8)
       */
     Q_PROPERTY(QString renderer READ renderer WRITE setRenderer NOTIFY rendererChanged)
+    
+    /**
+     * Stores the filtered background music playlist by the user.
+     */
+    Q_PROPERTY(QStringList filteredBackgroundMusic READ filteredBackgroundMusic WRITE setFilteredBackgroundMusic NOTIFY filteredBackgroundMusicChanged)
 
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
@@ -486,6 +501,18 @@ public:
     int baseFontSizeMin() const { return m_baseFontSizeMin; }
     int baseFontSizeMax() const { return m_baseFontSizeMax; }
 
+    qreal backgroundMusicVolume() const { return m_backgroundMusicVolume; }
+    void setBackgroundMusicVolume(const qreal newBackgroundMusicVolume) {
+        m_backgroundMusicVolume = newBackgroundMusicVolume;
+        emit backgroundMusicVolumeChanged();
+    }
+
+    qreal audioEffectsVolume() const { return m_audioEffectsVolume; }
+    void setAudioEffectsVolume(const qreal newAudioEffectsVolume) {
+        m_audioEffectsVolume = newAudioEffectsVolume;
+        emit audioEffectsVolumeChanged();
+    }
+
     int lastGCVersionRan() const { return m_lastGCVersionRan; }
     void setLastGCVersionRan(const int newLastGCVersionRan) {
         m_lastGCVersionRan = newLastGCVersionRan;
@@ -496,6 +523,12 @@ public:
     void setRenderer(const QString &newRenderer) {
         m_renderer = newRenderer;
         emit rendererChanged();
+    }
+    
+    QStringList filteredBackgroundMusic() const { return m_filteredBackgroundMusic; }
+    void setFilteredBackgroundMusic(const QStringList &newFilteredBackgroundMusic) {
+        m_filteredBackgroundMusic = newFilteredBackgroundMusic;
+        emit filteredBackgroundMusicChanged();
     }
 
     /**
@@ -528,6 +561,9 @@ protected slots:
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
     Q_INVOKABLE void notifyWordsetChanged();
+    Q_INVOKABLE void notifyFilteredBackgroundMusicChanged();
+    Q_INVOKABLE void notifyBackgroundMusicVolumeChanged();
+    Q_INVOKABLE void notifyAudioEffectsVolumeChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
     Q_INVOKABLE void notifyCachePathChanged();
@@ -600,6 +636,9 @@ signals:
     void sectionVisibleChanged();
     void wordsetChanged();
     void baseFontSizeChanged();
+    void filteredBackgroundMusicChanged();
+    void backgroundMusicVolumeChanged();
+    void audioEffectsVolumeChanged();
 
     void downloadServerUrlChanged();
     void cachePathChanged();
@@ -643,6 +682,9 @@ private:
     bool m_isKioskMode;
     bool m_sectionVisible;
     QString m_wordset;
+    QStringList m_filteredBackgroundMusic;
+    qreal m_backgroundMusicVolume;
+    qreal m_audioEffectsVolume;
     int m_baseFontSize;
     const int m_baseFontSizeMin;
     const int m_baseFontSizeMax;

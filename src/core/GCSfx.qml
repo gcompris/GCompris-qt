@@ -40,7 +40,13 @@ Item {
      * type:bool
      * Whether sfx should be muted.
      */
-    property bool muted
+    property alias muted: sfx.muted
+
+    /**
+     * type:real
+     * Volume of the fx player.
+     */
+    property alias volume: sfx.volume
 
     /**
      * type:url
@@ -53,12 +59,6 @@ Item {
      * Status of the fx player.
      */
     property alias status: sfx.status
-    
-    /**
-     *  When mute is changed we set the volume to 0 to mute a potential playing
-     * sound.
-     */
-    onMutedChanged: muted ? sfx.volume = 0 : sfx.volume = 1
 
     /**
      * Plays back the sfx resource @p file.

@@ -29,10 +29,5 @@ FindIt {
     mode: "Instruments"
     dataset: Dataset
     backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svg"
-    property bool backgroundMusicStatus
-    onStart: {
-        backgroundMusicStatus = ApplicationSettings.isBackgroundMusicEnabled
-        ApplicationSettings.isBackgroundMusicEnabled = false
-    }
-    onStop: ApplicationSettings.isBackgroundMusicEnabled = backgroundMusicStatus
+    isMusicalActivity: true
 }
