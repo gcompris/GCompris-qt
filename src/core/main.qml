@@ -156,6 +156,8 @@ Window {
 
             function playBackgroundMusic() {
                 rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+                if(rccBackgroundMusic)
+                    Core.shuffle(rccBackgroundMusic)
                 for(var i = 0; i < rccBackgroundMusic.length; i++)
                     backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + rccBackgroundMusic[i]))
                 if(!main.isBackgroundMusicEnabledInActivity)
@@ -163,15 +165,17 @@ Window {
             }
         }
         Component.onCompleted: {
-            if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
-                delayedbackgroundMusic.playBackgroundMusic()
-            }
-            else if(ApplicationSettings.isBackgroundMusicEnabled && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
-                delayedbackgroundMusic.start()
+            if(ApplicationSettings.isBackgroundMusicEnabled
+               && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+               if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
+                  delayedbackgroundMusic.playBackgroundMusic()
+               }
+               else {
+                  delayedbackgroundMusic.start()
+               }
             }
             else {
                 DownloadManager.backgroundMusicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
-                delayedbackgroundMusic.start()
             }
         }
     }
