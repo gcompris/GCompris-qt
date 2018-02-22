@@ -504,7 +504,20 @@ ActivityBase {
                 anchors.fill: activitiesGrid
             }
         }
-
+        
+        // The scroll buttons
+        GCButtonScroll {
+            visible: !ApplicationInfo.useOpenGL
+            anchors.right: parent.right
+            anchors.rightMargin: 5 * ApplicationInfo.ratio
+            anchors.bottom: activitiesGrid.bottom
+            anchors.bottomMargin: 30 * ApplicationInfo.ratio
+            onUp: activitiesGrid.flick(0, 1127)
+            onDown: activitiesGrid.flick(0, -1127)
+            upVisible: activitiesGrid.visibleArea.yPosition <= 0 ? false : true
+            downVisible: activitiesGrid.visibleArea.yPosition >= 1 ? false : true
+        }
+        
         Rectangle {
             id: searchBar
             width: horizontal ?  parent.width/2 : parent.width - (section.width+10)
