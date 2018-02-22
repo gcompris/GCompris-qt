@@ -93,7 +93,7 @@ Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
                 width: dialogBackground.width - 30
-                height: dialogBackground.height - 100
+                height: dialogBackground.height - (30 + title.height * 1.2)
                 border.color: "black"
                 border.width: 2
                 anchors.margins: 100
