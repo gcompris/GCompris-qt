@@ -38,7 +38,6 @@ ActivityBase {
         source: "qrc:/gcompris/src/activities/solar_system/resource/background.jpg"
 
         property bool horizontalLayout: background.width > background.height
-        property bool assessmentMode: false
 
         signal start
         signal stop
@@ -57,10 +56,10 @@ ActivityBase {
             property alias bonus: bonus
             property alias containerModel: containerModel
             property alias mainQuizScreen: mainQuizScreen
-            property bool solarSystemVisible
-            property bool quizScreenVisible
             property alias dialogActivityConfig: dialogActivityConfig
-            property bool assessmentMode: assessmentMode
+            property bool assessmentMode: false
+            property bool solarSystemVisible: true
+            property bool quizScreenVisible: false
             property alias hintDialog: hintDialog
         }
 
@@ -120,52 +119,7 @@ ActivityBase {
 
         QuizScreen {
             id: mainQuizScreen
-            visible: false
-            opacity: items.quizScreenVisible
-            onOpacityChanged: {
-                if(items.quizScreenVisible)
-                    quizScreenAppearAnimation.start()
-                else
-                    quizScreenDisappearAnimation.start()
-            }
-
-            SequentialAnimation {
-                id: quizScreenAppearAnimation
-
-                PropertyAnimation {
-                    target: mainQuizScreen
-                    property: "visible"
-                    to: true
-                    duration: 0
-                }
-
-                NumberAnimation {
-                    target: mainQuizScreen
-                    property: "opacity"
-                    from: 0
-                    to: 1
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: quizScreenDisappearAnimation
-
-                NumberAnimation {
-                    target: mainQuizScreen
-                    property: "opacity"
-                    from: 1
-                    to: 0
-                    duration: 200
-                }
-
-                PropertyAnimation {
-                    target: mainQuizScreen
-                    property: "visible"
-                    to: false
-                    duration: 0
-                }
-            }
+            visible: items.quizScreenVisible
         }
 
         //Hint dialog while playing the quiz
@@ -179,8 +133,8 @@ ActivityBase {
             title: qsTr("Hint")
             content: "%1<br>%2".arg(hint1).arg(hint2)
             onClose: {
-            	solarSystemImageHint.visible = false
-            	home()
+                solarSystemImageHint.visible = false
+                home()
             }
 
             button0Text: "View solar system"
@@ -202,7 +156,7 @@ ActivityBase {
                         hintAppearAnimation.start()
                     }
                     else {
-                    	solarSystemImageHint.x = 0
+                        solarSystemImageHint.x = 0
                         solarSystemImageHint.y = 0
                     }
                 }
@@ -255,30 +209,43 @@ ActivityBase {
                     height: dialogActivityConfig.height
 
                     property alias assessmentModeBox: assessmentModeBox
+                    property bool initialCheckStatus
 
                     GCDialogCheckBox {
                         id: assessmentModeBox
                         width: dialogActivityConfig.width
                         text: qsTr("Assessment mode")
-                        checked: background.assessmentMode
+                        checked: items.assessmentMode
                     }
                 }
             }
 
             onLoadData: {
                 if(dataToSave && dataToSave["assessmentMode"])
-                    background.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false
-                Activity.numberOfLevel = background.assessmentMode ? 1 : 2
+                    items.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false
+                Activity.numberOfLevel = items.assessmentMode ? 1 : 2
+
             }
 
             onSaveData: {
-                if(dialogActivityConfig.configItem.assessmentModeBox.checked != background.assessmentMode) {
-                    background.assessmentMode = !background.assessmentMode
-                    dataToSave["assessmentMode"] = background.assessmentMode ? "true" : "false"
-                    Activity.numberOfLevel = background.assessmentMode ? 1 : 2
+                dialogActivityConfig.configItem.initialCheckStatus = items.assessmentMode
+                if(dialogActivityConfig.configItem.assessmentModeBox.checked != items.assessmentMode) {
+                    items.assessmentMode = !items.assessmentMode
+                    dataToSave["assessmentMode"] = items.assessmentMode ? "true" : "false"
+                    Activity.numberOfLevel = items.assessmentMode ? 1 : 2
                 }
             }
-            onClose: home()
+
+            onClose: {
+                if(items.assessmentMode != dialogActivityConfig.configItem.initialCheckStatus) {
+                    if(items.assessmentMode)
+                        Activity.startAssessmentMode()
+                    else {
+                        Activity.showSolarModel()
+                    }
+                }
+                home()
+            }
         }
 
         DialogHelp {
@@ -288,9 +255,9 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: items.solarSystemVisible ? withConfig : background.assessmentMode || Activity.indexOfSelectedPlanet ===0 ? withoutConfigWithoutHint : withoutConfigWithHint
+            content: (items.assessmentMode || items.solarSystemVisible) ? withConfig :
+                                                                          withoutConfigWithHint
             property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
-            property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -298,7 +265,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: {
-                if(items.solarSystemVisible)
+                if(items.solarSystemVisible || items.assessmentMode)
                     activity.home()
                 else
                     Activity.showSolarModel()

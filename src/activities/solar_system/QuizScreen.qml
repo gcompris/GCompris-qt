@@ -68,7 +68,7 @@ Item {
     //This grid has image of the planet in it's first column/row (row in case of vertical screen) and the options on the 2nd column/row
     Grid {
         id: imageAndOptionGrid
-        columns: (background.horizontalLayout && !background.assessmentMode && items.bar.level != 2) ? 2 : 1
+        columns: (background.horizontalLayout && !items.assessmentMode && items.bar.level != 2) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
         anchors.top: questionArea.bottom
         anchors.left: parent.left
@@ -78,10 +78,10 @@ Item {
         //An item to hold image of the planet
         Item {
             width: background.horizontalLayout ? background.width * 0.40
-                   : background.width - imageAndOptionGrid.anchors.margins * 2
+                                               : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
-                    : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
-            visible: !background.assessmentMode && items.bar.level != 2
+                                                : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
+            visible: !items.assessmentMode && items.bar.level != 2
 
             Image {
                 id: planetImageMain
@@ -94,23 +94,23 @@ Item {
 
         //An item to hold the list view of options
         Item {
-            width: ( background.assessmentMode || items.bar.level == 2 ) ? mainQuizScreen.width
-                   : background.horizontalLayout ? background.width * 0.55
-                   : background.width - imageAndOptionGrid.anchors.margins * 2
+            width: ( items.assessmentMode || items.bar.level == 2 ) ? mainQuizScreen.width
+                                                                    : background.horizontalLayout ? background.width * 0.55
+                                                                                                  : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
-                    : itemHeightVertical
+                                                : itemHeightVertical
 
-            property real itemHeightVertical: items.bar.level != 2 && !background.assessmentMode ? (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.39
-                                              : (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.8
+            property real itemHeightVertical: items.bar.level != 2 && !items.assessmentMode ? (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.39
+                                                                                            : (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.8
 
             ListView {
                 id: optionListView
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: background.horizontalLayout ? background.width * 0.40
-                       : background.width - imageAndOptionGrid.anchors.margins * 2
+                                                   : background.width - imageAndOptionGrid.anchors.margins * 2
                 height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height * 1.5 - questionArea.height - 50 * ApplicationInfo.ratio
-                        : parent.itemHeightVertical
+                                                    : parent.itemHeightVertical
                 spacing: background.horizontalLayout ? 10 * ApplicationInfo.ratio : 7.5 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
@@ -141,7 +141,7 @@ Item {
 
                         isCorrectAnswer: closenessValue === 100
                         onIncorrectlyPressed: {
-                            if(!background.assessmentMode) {
+                            if(!items.assessmentMode) {
                                 if(correctAnswerAnim.running)
                                     correctAnswerAnim.stop()
                                 if(incorrectAnswerAnim.running)
@@ -151,7 +151,7 @@ Item {
                             }
                         }
                         onCorrectlyPressed: {
-                            if(!background.assessmentMode) {
+                            if(!items.assessmentMode) {
                                 if(correctAnswerAnim.running)
                                     correctAnswerAnim.stop()
                                 if(incorrectAnswerAnim.running)
@@ -160,8 +160,10 @@ Item {
                                 correctAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
                             }
+                            else if(items.assessmentMode)
+                                Activity.nextSubLevel(true)
                             else
-                                Activity.nextSubLevel()
+                                Activity.nextSubLevel(false)
                         }
                     }
                 }
@@ -187,7 +189,7 @@ Item {
         border.width: 2
         border.color: "black"
         opacity: 0.78
-        visible: !background.assessmentMode
+        visible: !items.assessmentMode
         Item {
             width: parent.width - 3 * ApplicationInfo.ratio
             height: parent.height
