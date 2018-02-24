@@ -35,7 +35,7 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("To find the relation between two family members.\n" +
      "For the married couple we have highlighted with the rings that is between two circles. For the rest of relations we have only solid lines.\n" +
-  "Red circle will point to you and blue one to your relative. Now you have to find what you should call this person.\n")
+  "White circle will point to you and red one to your relative. Now you have to find what you should call this person.\n")
   credit: ""
   section: "discovery"
   createdInVersion: 9000
