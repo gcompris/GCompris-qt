@@ -88,6 +88,7 @@ ActivityBase {
                 qsTr("Click on the Sun or any planet to reveal questions. Each question will have 4 options, out of which one is correct."),
                 qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter, or hint which indicates the correct answer.")
             ]
+            index: items.assessmentMode ? -1 : 0
         }
 
         ListModel {
@@ -243,6 +244,7 @@ ActivityBase {
                     else {
                         Activity.showSolarModel()
                     }
+                    message.index = -1
                 }
                 home()
             }

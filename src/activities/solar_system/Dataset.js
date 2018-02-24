@@ -227,7 +227,7 @@ function get() {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_real.svg",
                     "bodyName": qsTr("Jupiter"),
-                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees and on Saturn is -178 degrees"),
+                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
                         { 	//sub-level 1
