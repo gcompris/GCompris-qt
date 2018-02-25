@@ -33,7 +33,7 @@ ActivityInfo {
       //: Help prerequisite
       prerequisite: qsTr("Division of small numbers")
       //: Help manual
-      manual: qsTr("Two numbers are displayed on the screen. Quickly find the result of the division and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!")
+      manual: qsTr("A division is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!")
       credit: ""
       section: "math division"
       createdInVersion: 4000

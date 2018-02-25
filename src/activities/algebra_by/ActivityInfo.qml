@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Multiplication tables from 1 to 10")
   //: Help manual
-  manual: qsTr("Two numbers are displayed on the screen. Quickly multiply them and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins in their balloon land!")
+  manual: qsTr("A multiplication is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins in their balloon land!")
   credit: ""
   section: "math multiplication"
 }
