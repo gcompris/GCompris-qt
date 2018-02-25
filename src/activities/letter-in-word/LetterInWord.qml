@@ -328,8 +328,8 @@ ActivityBase {
             anchors.leftMargin: 15 * ApplicationInfo.ratio
             anchors.rightMargin: 15 * ApplicationInfo.ratio
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            cellWidth: itemWidth + 25*ApplicationInfo.ratio
-            cellHeight: itemHeight + 15*ApplicationInfo.ratio
+            cellWidth: itemWidth + 25 * ApplicationInfo.ratio
+            cellHeight: itemHeight + 15 * ApplicationInfo.ratio
             clip: false
             interactive: false
             //verticalLayoutDirection: GridView.BottomToTop
@@ -366,10 +366,11 @@ ActivityBase {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: wordsView.cellWidth*0.8
-            height: wordsView.cellHeight*0.8
+            height: width
             sourceSize.width: wordsView.cellWidth
             anchors {
-                horizontalCenter: parent.horizontalCenter
+                right: parent.right
+                rightMargin: 3 * ApplicationInfo.ratio
                 bottom: wordsView.bottom
             }
             MouseArea {
