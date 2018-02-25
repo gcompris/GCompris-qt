@@ -1,0 +1,51 @@
+version: 1.0.{build}
+branches:
+  only:
+  - KDE/0.90
+skip_tags: true
+image: Visual Studio 2015
+configuration: Release
+platform:
+  - x64
+  - x86
+init:
+- cmd: 
+environment:
+  CMAKE_GENERATOR: Visual Studio 14
+  QT5: C:\Qt\5.9\msvc2015
+
+install:
+
+- cmd: >-
+    if "%platform%"=="x86" set CMAKE_GENERATOR=Visual Studio 14
+
+    if "%platform%"=="x86" set QT5=C:\Qt\5.9\msvc2015
+
+    if "%platform%"=="x64" set CMAKE_GENERATOR=Visual Studio 14 2015 Win64
+
+    if "%platform%"=="x64" set QT5=C:\Qt\5.9\msvc2015_64
+
+    set Path=%QT5%\bin;%Path%
+
+    cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build -DGRAPHICAL_RENDERER=software"
+
+    cmake --build build --config RelWithDebInfo --target DlAndInstallBundledConvertedOggs
+
+    cmake -H. -Bbuild -G "%CMAKE_GENERATOR%" -DCMAKE_SYSTEM_VERSION=10.0 "-DCMAKE_PREFIX_PATH=%QT5%" -DACTIVATION_MODE=internal -DVCREDIST_DIR="build -DGRAPHICAL_RENDERER=software"
+
+    cmake --build build --config RelWithDebInfo
+
+    cmake --build build --config RelWithDebInfo --target DlAndInstallBundledTranslations
+
+    cmake --build build --config RelWithDebInfo --target package
+build: off
+artifacts:
+- path: build/*.exe
+deploy:
+- provider: FTP
+  host: gcompris.net
+  protocol: sftp
+  username: releaser
+  password:
+    secure: kt7OLxDoaFlmFwDtcGfa/X3uVhQj0y1q2YVdBroxp9U=
+  folder: www
