@@ -203,7 +203,7 @@
       <li xml:lang="id">aritmatika: tabel ingatan, pencacahan, cerminan gambar, menyeimbangkan skala, ganti memberi, ..</li>
       <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ...</li>
       <li xml:lang="ko">산술 연산: 표 기억하기, 배열하기, 그림 뒤집기, 저울 맞추기, 거스름돈 계산하기, ...</li>
-      <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wijziging gegeven, ...</li>
+      <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, ...</li>
       <li xml:lang="nn">rekning: gongetabellen, teljing, spegelbilete, måling av vekt, vekslepengar, …</li>
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, ...</li>
       <li xml:lang="pt">aritmética: memória da tabuada, enumeração, imagem-espelho, equilíbrio de balanças, trocos, ...</li>
@@ -234,7 +234,7 @@
       <li xml:lang="id">ilmu pengetahuan: kunci kanal, pencampuran warna, konsep gravitasi, ...</li>
       <li xml:lang="it">scienza: la chiusa del canale, miscelazione dei colori, il concetto di gravità, ...</li>
       <li xml:lang="ko">과학: 운하 갑문, 색 섞기, 중력, ...</li>
-      <li xml:lang="nl">natuurkunde: de sluis, mengen van kleuren, concept van zwaartekracht, ...</li>
+      <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, ...</li>
       <li xml:lang="nn">vitskap: kanalsluse, blanding av fargar, tyngdekraft, …</li>
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, ...</li>
       <li xml:lang="pt">ciência: bloqueio de canais, misturas de cores, conceito de gravidade, ...</li>
@@ -265,7 +265,7 @@
       <li xml:lang="id">permainan: ingatan, menyambung 4, tic tac toe, sudoku, menara hanoi, ...</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ...</li>
       <li xml:lang="ko">게임: 메모리 게임, 4개 연결하기, 삼목, 수도쿠, 하노이 탑, ...</li>
-      <li xml:lang="nl">spellen: geheugenspel, vier verbinden, tic-tac-toe, sudoku, torens van hanoi, ...</li>
+      <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, ...</li>
       <li xml:lang="nn">spel: hugsespel, fire på rad, bondesjakk, sudoku, tårnet i Hanoi, …</li>
       <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, ...</li>
       <li xml:lang="pt">jogos: memória, 4 em linha, jogo do galo, sudoku, torres de Hanói, ...</li>
@@ -296,7 +296,7 @@
       <li xml:lang="id">membaca: latihan membaca, ...</li>
       <li xml:lang="it">lettura: esercitare la lettura, ...</li>
       <li xml:lang="ko">읽기: 읽기 연습, ...</li>
-      <li xml:lang="nl">lezen: lezen oefenen, ...</li>
+      <li xml:lang="nl">lezen: lees oefening, ...</li>
       <li xml:lang="nn">lesing: leseøvingar, …</li>
       <li xml:lang="pl">czytanie: nauka czytania, ...</li>
       <li xml:lang="pt">leitura: exercícios de leitura, ...</li>
