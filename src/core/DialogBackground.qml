@@ -104,7 +104,7 @@ Rectangle {
                     anchors.margins: 8
                     anchors.fill: parent
                     contentWidth: textContent.contentWidth
-                    contentHeight: textContent.contentHeight
+                    contentHeight: iconImage.height + textContent.contentHeight
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
@@ -127,8 +127,9 @@ Rectangle {
                     Image {
                         id: iconImage
                         source: contentIcon
+                        visible: contentIcon != ""
                         width: 100 * ApplicationInfo.ratio
-                        height: iconImage.width
+                        height: visible ? iconImage.width : 0
                         sourceSize.width: iconImage.width
                         sourceSize.height: iconImage.width
                         anchors.top: button0.bottom
@@ -146,6 +147,17 @@ Rectangle {
                         textFormat: TextEdit.RichText
                         property string style: "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
                     }
+                }
+                // The scroll buttons
+                GCButtonScroll {
+                    anchors.right: parent.right
+                    anchors.rightMargin: 5 * ApplicationInfo.ratio
+                    anchors.bottom: flick.bottom
+                    anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                    onUp: flick.flick(0, 1400)
+                    onDown: flick.flick(0, -1400)
+                    upVisible: flick.visibleArea.yPosition <= 0 ? false : true
+                    downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
                 }
             }
             Item { width: 1; height: 10 }
