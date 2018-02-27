@@ -22,7 +22,7 @@
 import QtQuick 2.6
 
 QtObject {
-   property string instruction: qsTr("Provinces of Romania")
+   property string instruction: qsTr("Historical provinces of Romania")
    property var levels: [
       {
          "pixmapfile" : "romania/background.png",
