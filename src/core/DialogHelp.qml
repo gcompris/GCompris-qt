@@ -43,12 +43,11 @@ DialogBackground {
 
     function getIcon() {
         if(activityInfo.icon) {
-            return "<img align='right' width='" + 100 * ApplicationInfo.ratio +
-        "' height='" + 100 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/activities/" + activityInfo.icon + "'/>"
+            return "qrc:/gcompris/src/activities/" + activityInfo.icon
         }
         return ""
     }
-
+    
     function reformat(string) {
         var text = string.replace(/^    (.*)\n/gm,'<ul><li>$1</li></ul>')
         text = text.replace(/\n/gm,'<br/>')
@@ -56,8 +55,7 @@ DialogBackground {
     }
 
     function getContent() {
-        var contentText = getIcon()
-        contentText += "<b>" + activityInfo.description + "</b>"
+        var contentText = "<b>" + activityInfo.description + "</b>"
         contentText += "<br/><br/>"
         if(activityInfo.author) {
             contentText += "<b>" + qsTr("Author:") + " </b>" + activityInfo.author
@@ -89,6 +87,7 @@ DialogBackground {
         return contentText
     }
 
+    contentIcon: getIcon()
     content: getContent()
 
 }
