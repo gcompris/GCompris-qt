@@ -150,7 +150,7 @@ QtObject {
 
     property var instructions : [
         {
-            "text": qsTr("Click on each farm animal to explore them.")
+            "text": qsTr("Click on each farm animal to discover them.")
         },
         {
             "text": qsTr("Click on the farm animal that makes the sound you hear.")
