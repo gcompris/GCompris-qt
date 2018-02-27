@@ -258,9 +258,11 @@ ActivityBase {
         Bar {
             id: bar
             content: (items.assessmentMode || items.solarSystemVisible) ? withConfig :
+                                                                          Activity.indexOfSelectedPlanet == 0 ? withoutConfigWithoutHint :
                                                                           withoutConfigWithHint
             property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
+            property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
