@@ -64,6 +64,7 @@ ActivityBase {
         }
 
         onStop: {
+            knock.stop()
             questionPlayer.stop()
         }
 
@@ -132,6 +133,15 @@ ActivityBase {
         }
 
         Timer {
+            id: knock
+            interval: 1000
+            repeat: false
+            onTriggered: {
+                questionPlayer.start()
+            }
+        }
+        
+        Timer {
             id: questionPlayer
             onTriggered: {
                 var partIndex = items.questionToPlay.shift()
@@ -175,7 +185,6 @@ ActivityBase {
                 parent.repeat()
             }
             onLoose: parent.repeat()
-            interval: 1000
         }
 
         Score {
@@ -199,7 +208,7 @@ ActivityBase {
             for(var i = 0; i < bar.level + 2; ++i) {
                 items.question.push(Math.floor(Math.random() * numberOfParts))
             }
-            items.questionInterval = 1000 - Math.min(500, 100 * bar.level)
+            items.questionInterval = 1200 - Math.min(500, 100 * bar.level)
             items.answer = []
         }
 
@@ -223,10 +232,11 @@ ActivityBase {
         }
 
         function repeat() {
-            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'xylofon_melody.$CA'))
+            questionPlayer.stop()
+            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'knock.ogg'))
             items.questionToPlay = items.question.slice()
             items.answer = []
-            questionPlayer.start()
+            knock.start()
         }
 
         function checkAnswer() {
