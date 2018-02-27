@@ -84,7 +84,6 @@ ActivityBase {
             model: 4
             Image {
                 id: part
-                parent: xylofon
                 source: items.url + 'xylofon_part' + (index + 1) + '.svg'
                 rotation: - 80
                 anchors.horizontalCenter: xylofon.horizontalCenter
@@ -128,7 +127,7 @@ ActivityBase {
         }
 
         function playNote(index) {
-            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url +
+            activity.audioEffects.append(ApplicationInfo.getAudioFilePath(items.url +
                                        'xylofon_son' + (index + 1) + '.$CA'))
         }
 
