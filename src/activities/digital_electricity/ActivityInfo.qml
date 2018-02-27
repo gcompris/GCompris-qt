@@ -27,7 +27,7 @@ ActivityInfo {
   title: qsTr("Digital Electricity")
   //: Help title
   description: qsTr("Create and simulate a digital electric schema")
-  //intro: "Learn how the digital electricity works and create your own circuit"
+  //intro: "Learn how digital electronics work and create your own circuit."
   //: Help goal
   goal: qsTr("Freely create a digital electric schema with a real time simulation of it.")
   //: Help prerequisite

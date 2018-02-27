@@ -27,7 +27,7 @@ ActivityInfo {
   title: qsTr("Number sequence")
   //: Help title
   description: qsTr("Touch the numbers in the right sequence.")
-//  intro: "Draw the picture by touching each number in the right sequence."
+  // intro: "Draw the picture by touching the numbers in ascending order."
   //: Help goal
   goal: qsTr("Can count from 1 to 50.")
   //: Help prerequisite

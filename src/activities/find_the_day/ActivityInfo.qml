@@ -27,7 +27,7 @@ ActivityInfo {
   title: qsTr("Find the day")
   //: Help title
   description: qsTr("Read the task and find the correct date by doing mathematical calculations.")
-  //intro: "Select the asked date on the calendar"
+  //intro: "Select the required day."
   //: Help goal
   goal: qsTr("Learn to find date on the calendar by duration calculations.")
   //: Help prerequisite
