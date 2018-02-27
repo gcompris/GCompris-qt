@@ -103,8 +103,19 @@ ActivityBase {
                     radius: width * 0.1
                     z: iAmSelected ? 10 : 1
                     color: modelData
-                    border.color: 'black'
-                    border.width: 1
+                    border.color: "#373737"
+                    border.width: modelData == "#00FFFFFF" ? 0 : 1
+                    
+                    Image {
+                        scale: 0.9
+                        width: rect.height
+                        height: rect.height
+                        sourceSize.width: rect.height
+                        sourceSize.height: rect.height
+                        source: Activity.url + "eraser.svg"
+                        visible: modelData == "#00FFFFFF" ? 1 : 0
+                        anchors.centerIn: parent
+                    }
 
                     property bool iAmSelected: modelData == items.colorSelector
 
