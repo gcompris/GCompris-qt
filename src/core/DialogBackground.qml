@@ -45,6 +45,7 @@ Rectangle {
     property string title
     property alias titleIcon: titleIcon.source
     property string content
+    property string contentIcon
     property alias button0Text: button0.text
     signal close
     signal start
@@ -123,12 +124,23 @@ Rectangle {
                         }
                     }
                     
+                    Image {
+                        id: iconImage
+                        source: contentIcon
+                        width: 100 * ApplicationInfo.ratio
+                        height: iconImage.width
+                        sourceSize.width: iconImage.width
+                        sourceSize.height: iconImage.width
+                        anchors.top: button0.bottom
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    
                     GCText {
                         id: textContent
                         text: style + "<body>" + content + "</body>"
                         width: flick.width
                         height: flick.height - button0.height
-                        anchors.top: button0.bottom
+                        anchors.top: iconImage.bottom
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
