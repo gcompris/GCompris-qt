@@ -1,4 +1,5 @@
 import QtQuick 2.6
+import "../../core"
 
 Image {
 	id: bulb
@@ -10,19 +11,28 @@ Image {
 
 	property string bit: ""
 
+	GCText {
+	    anchors.bottom: parent.top
+	    anchors.horizontalCenter: parent.horizontalCenter
+	    text: bulb.value
+	    color: "white"
+	}
+
 	MouseArea {
 		anchors.fill: parent
 		onClicked: {
 			if(bulb.state == "off") {
 				bulb.state = "on"
+				sum += bulb.value
 			}	
 			else {
 				bulb.state = "off"
+				sum -= bulb.value
 			}
 		}
 	}	
 
-	Text {
+	GCText {
 	    anchors.top: bulb.bottom
 	    anchors.horizontalCenter: parent.horizontalCenter
 	    text: bit

@@ -111,7 +111,7 @@ ActivityBase {
 	    property int sum: 0
 	    property int num: Math.floor(Math.random() * 255) + 1   
 
-	    function initialize_values()
+	    function initializeValues()
 	    {
 	    	sum = 0
 	    	num = Math.floor(Math.random() * 255) + 1
@@ -142,186 +142,42 @@ ActivityBase {
 
 	    	LightBulb {
 	    		id: b1
-	    		Text {
-	    			anchors.bottom: b1.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("128")
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b1.state == "on") {
-	    					b1.state = "off"
-	    					sum -= 128
-	    				}
-	    				else {
-	    					b1.state = "on"
-	    					sum += 128
-	    				}
-	    			}
-	    		}
+	    		property int value: 128
 	    	}
 
 	    	LightBulb {
 	    		id: b2
-	    		Text {
-	    			anchors.bottom: b2.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("64")
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b2.state == "on") {
-	    					b2.state = "off"
-	    					sum -= 64
-	    				}
-	    				else {
-	    					b2.state = "on"
-	    					sum += 64
-	    				}
-	    			}
-	    		}
+	    		property int value: 64
 	    	}
 
 	    	LightBulb {
 	    		id: b3
-	    		Text {
-	    			anchors.bottom: b3.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("32") 
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b3.state == "on") {
-	    					b3.state = "off"
-	    					sum -= 32
-	    				}
-	    				else {
-	    					b3.state = "on"
-	    					sum += 32
-	    				}
-	    			}
-	    		}			
+	    		property int value: 32
 	    	}
 
 	    	LightBulb {
-	    		id: b4
-	    		Text {
-	    			anchors.bottom: b4.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("16")
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b4.state == "on") {
-	    					b4.state = "off"
-	    					sum -= 16
-	    				}
-	    				else {
-	    					b4.state = "on"
-	    					sum += 16
-	    				}
-	    			}
-	    		}			
+	    		id: b4			
+	    		property int value: 16
 	    	}
 
 	    	LightBulb {
-	    		id: b5
-	    		Text {
-	    			anchors.bottom: b5.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("8")
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b5.state == "on") {
-	    					b5.state = "off"
-	    					sum -= 8
-	    				}
-	    				else {
-	    					b5.state = "on"
-	    					sum += 8
-	    				}
-	    			}
-	    		}			
+	    		id: b5		
+	    		property int value: 8
 	    	}
 
 	    	LightBulb {
-	    		id: b6
-	    		Text {
-	    			anchors.bottom: b6.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("4")
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b6.state == "on") {
-	    					b6.state = "off"
-	    					sum -= 4
-	    				}
-	    				else {
-	    					b6.state = "on"
-	    					sum += 4
-	    				}
-	    			}	
-	    		}		
+	    		id: b6		
+	    		property int value: 4
 	    	}
 
 	    	LightBulb {
-	    		id: b7
-	    		Text {
-	    			anchors.bottom: b7.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("2")
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b7.state == "on") {
-	    					b7.state = "off"
-	    					sum -= 2
-	    				}	
-	    				else {
-	    					b7.state = "on"
-	    					sum += 2
-	    				}
-	    			}
-	   			}			
+	    		id: b7			
+	    		property int value: 2
 	    	}
 
 	    	LightBulb {
-	    		id: b8
-	    		Text {
-	    			anchors.bottom: b8.top
-	    			anchors.horizontalCenter: parent.horizontalCenter
-	    			text: qsTr("1")
-	    			color: "white"
-	    		}
-	    		MouseArea {
-	    			anchors.fill: parent
-	    			onClicked: {
-	    				if(b8.state == "on") {
-	    					b8.state = "off"
-	    					sum -= 1
-	    				}
-	    				else {
-	    					b8.state = "on"
-	    					sum += 1	 
-	    				}
-	    			}
-	    		}			
+	    		id: b8			
+	    		property int value: 1
 	    	}
 	    }
 
@@ -333,8 +189,8 @@ ActivityBase {
 	    	anchors.left: row.left
 	    	anchors.leftMargin: 15
 	    	anchors.top: row.bottom
-	    	anchors.topMargin: 15
-	    	text: qsTr(String(sum))
+	    	anchors.topMargin: 25
+	    	text: String(sum)
 	    }
 
     	IntroButton {
@@ -343,7 +199,7 @@ ActivityBase {
         	height: 90
         	z: 5
         	anchors.right: row.right
-        	anchors.topMargin: 15
+        	anchors.topMargin: 25
         	anchors.rightMargin: 15
 	    	anchors.top: row.bottom
 
@@ -353,7 +209,7 @@ ActivityBase {
         	    if(sum == num) {
         			bonus.good("lion");
         			Activity.resetBulbs();
-        			initialize_values();
+        			initializeValues();
         		}          	
   				else {
   					bonus.bad("lion");
