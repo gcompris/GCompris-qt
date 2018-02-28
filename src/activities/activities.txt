@@ -16,6 +16,7 @@ balancebox
 ballcatch
 bargame
 bargame_2players
+binary_bulb
 braille_alphabets
 braille_fun
 calendar
