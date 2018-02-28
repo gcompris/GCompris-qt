@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Rajat Asthana &lt;rajatasthana4@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: "Binary_bulb activity"
+  title: qsTr("Binary_bulb activity")
   //: Help title
   description: qsTr("This activity helps you to learn the concept of conversion of decimal number system to binary number system.")
   //intro: "put here in comment the text for the intro voice"
