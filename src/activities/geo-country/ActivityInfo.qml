@@ -37,7 +37,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: ""
+  manual: qsTr("Drag and drop different regions of the country to correct locations to redraw the whole country.")
   credit: ""
   section: "discovery"
   createdInVersion: 4000
