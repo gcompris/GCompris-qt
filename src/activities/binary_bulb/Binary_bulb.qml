@@ -1,9 +1,8 @@
 /* GCompris - binary_bulb.qml
  *
- * Copyright (C) 2017 Rajat Asthana <rajatasthana4@gmail.com>
+ * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
  *   RAJAT ASTHANA <rajatasthana4@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -49,7 +48,6 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias row: row
             property alias b1: b1
             property alias b2: b2
             property alias b3: b3
@@ -89,7 +87,7 @@ ActivityBase {
         IntroMessage {
         	id: message
         	onIntroDone : {
-        		Activity.initLevel
+        		Activity.initLevel()
         	}
         	intro: [
         		qsTr("Computers use Binary number system, where there are two symbols, 0 and 1."),
@@ -97,7 +95,7 @@ ActivityBase {
         		qsTr("Binary represents numbers in the same pattern, but using powers of 2 instead of powers of 10 that decimal uses"),
         		qsTr("So, 1 in binary is represented by 001, 4 by 100, 7 by 111 and so on.."),
         		qsTr("Our computer has many many switches (called transistors) that can be turned on or off given electricity, and a switch that is on will represent a 1 and a switch that is off will represent a 0."),
-        		qsTr("In this activity, you are given a number, you have to find its binary representation by turning on the bubls. An on bulb representes 1 and an off bulb represents 0")
+        		qsTr("In this activity, you are given a number, you have to find its binary representation by turning on the bulbs. An on bulb representes 1 and an off bulb represents 0")
         	]
         	z: 20
             anchors {
@@ -110,8 +108,8 @@ ActivityBase {
             }        		
         }
 
-	    property var sum: 0
-	    property var num: Math.floor(Math.random() * 255) + 1   
+	    property int sum: 0
+	    property int num: Math.floor(Math.random() * 255) + 1   
 
 	    function initialize_values()
 	    {
@@ -132,7 +130,7 @@ ActivityBase {
             style: Text.Outline
             styleColor: "black"
             color: "white"
-            text: "What is the binary representation of " + num
+            text: qsTr("What is the binary representation of " + num)
             opacity: 1.0
         }
 
@@ -143,201 +141,200 @@ ActivityBase {
 	    	spacing: 20
 
 	    	LightBulb {
-	    			id: b1
-	    			Text {
-	    				anchors.bottom: b1.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "128"
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b1.state == "on") {
-	    						b1.state = "off"
-	    						sum -= 128
-	    					}
-	    					else {
-	    						b1.state = "on"
-	    						sum += 128
-	    					}
+	    		id: b1
+	    		Text {
+	    			anchors.bottom: b1.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("128")
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b1.state == "on") {
+	    					b1.state = "off"
+	    					sum -= 128
+	    				}
+	    				else {
+	    					b1.state = "on"
+	    					sum += 128
 	    				}
 	    			}
+	    		}
 	    	}
 
 	    	LightBulb {
-	    			id: b2
-	    			Text {
-	    				anchors.bottom: b2.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "64"
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b2.state == "on") {
-	    						b2.state = "off"
-	    						sum -= 64
-	    					}
-	    					else {
-	    						b2.state = "on"
-	    						sum += 64
-	    					}
+	    		id: b2
+	    		Text {
+	    			anchors.bottom: b2.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("64")
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b2.state == "on") {
+	    					b2.state = "off"
+	    					sum -= 64
+	    				}
+	    				else {
+	    					b2.state = "on"
+	    					sum += 64
 	    				}
 	    			}
+	    		}
 	    	}
 
 	    	LightBulb {
-	    			id: b3
-	    			Text {
-	    				anchors.bottom: b3.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "32" 
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b3.state == "on") {
-	    						b3.state = "off"
-	    						sum -= 32
-	    					}
-	    					else {
-	    						b3.state = "on"
-	    						sum += 32
-	    					}
+	    		id: b3
+	    		Text {
+	    			anchors.bottom: b3.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("32") 
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b3.state == "on") {
+	    					b3.state = "off"
+	    					sum -= 32
 	    				}
-	    			}			
+	    				else {
+	    					b3.state = "on"
+	    					sum += 32
+	    				}
+	    			}
+	    		}			
 	    	}
 
 	    	LightBulb {
-	    			id: b4
-	    			Text {
-	    				anchors.bottom: b4.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "16"
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b4.state == "on") {
-	    						b4.state = "off"
-	    						sum -= 16
-	    					}
-	    					else {
-	    						b4.state = "on"
-	    						sum += 16
-	    					}
+	    		id: b4
+	    		Text {
+	    			anchors.bottom: b4.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("16")
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b4.state == "on") {
+	    					b4.state = "off"
+	    					sum -= 16
 	    				}
-	    			}			
+	    				else {
+	    					b4.state = "on"
+	    					sum += 16
+	    				}
+	    			}
+	    		}			
 	    	}
 
 	    	LightBulb {
-	    			id: b5
-	    			Text {
-	    				anchors.bottom: b5.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "8"
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b5.state == "on") {
-	    						b5.state = "off"
-	    						sum -= 8
-	    					}
-	    					else {
-	    						b5.state = "on"
-	    						sum += 8
-	    					}
+	    		id: b5
+	    		Text {
+	    			anchors.bottom: b5.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("8")
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b5.state == "on") {
+	    					b5.state = "off"
+	    					sum -= 8
 	    				}
-	    			}			
+	    				else {
+	    					b5.state = "on"
+	    					sum += 8
+	    				}
+	    			}
+	    		}			
 	    	}
 
 	    	LightBulb {
-	    			id: b6
-	    			Text {
-	    				anchors.bottom: b6.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "4"
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b6.state == "on") {
-	    						b6.state = "off"
-	    						sum -= 4
-	    					}
-	    					else {
-	    						b6.state = "on"
-	    						sum += 4
-	    					}
+	    		id: b6
+	    		Text {
+	    			anchors.bottom: b6.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("4")
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b6.state == "on") {
+	    					b6.state = "off"
+	    					sum -= 4
+	    				}
+	    				else {
+	    					b6.state = "on"
+	    					sum += 4
+	    				}
+	    			}	
+	    		}		
+	    	}
+
+	    	LightBulb {
+	    		id: b7
+	    		Text {
+	    			anchors.bottom: b7.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("2")
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b7.state == "on") {
+	    					b7.state = "off"
+	    					sum -= 2
 	    				}	
-	    			}		
+	    				else {
+	    					b7.state = "on"
+	    					sum += 2
+	    				}
+	    			}
+	   			}			
 	    	}
 
 	    	LightBulb {
-	    			id: b7
-	    			Text {
-	    				anchors.bottom: b7.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "2"
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b7.state == "on") {
-	    						b7.state = "off"
-	    						sum -= 2
-	    					}	
-	    					else {
-	    						b7.state = "on"
-	    						sum += 2
-	    					}
+	    		id: b8
+	    		Text {
+	    			anchors.bottom: b8.top
+	    			anchors.horizontalCenter: parent.horizontalCenter
+	    			text: qsTr("1")
+	    			color: "white"
+	    		}
+	    		MouseArea {
+	    			anchors.fill: parent
+	    			onClicked: {
+	    				if(b8.state == "on") {
+	    					b8.state = "off"
+	    					sum -= 1
 	    				}
-	    			}			
-	    	}
-
-	    	LightBulb {
-	    			id: b8
-	    			Text {
-	    				anchors.bottom: b8.top
-	    				anchors.horizontalCenter: parent.horizontalCenter
-	    				text: "1"
-	    				color: "white"
-	    			}
-	    			MouseArea {
-	    				anchors.fill: parent
-	    				onClicked: {
-	    					if(b8.state == "on") {
-	    						b8.state = "off"
-	    						sum -= 1
-	    					}
-	    					else {
-	    						b8.state = "on"
-	    						sum += 1	 
-	    					}
+	    				else {
+	    					b8.state = "on"
+	    					sum += 1	 
 	    				}
-	    			}			
+	    			}
+	    		}			
 	    	}
 	    }
 
 	    IntroButton {
-	    		id: reachedSofar
-	    		width: parent.width / 8
-	    		height: 90
-	    		z: 5
-	    		anchors.left: row.left
-	    		anchors.leftMargin: 15
-	    		//anchors.right: row.horizontalCenter
-	    		anchors.top: row.bottom
-	    		anchors.topMargin: 15
-	    		text: qsTr(String(sum))
+	    	id: reachedSofar
+	    	width: parent.width / 8
+	    	height: 90
+	    	z: 5
+	    	anchors.left: row.left
+	    	anchors.leftMargin: 15
+	    	anchors.top: row.bottom
+	    	anchors.topMargin: 15
+	    	text: qsTr(String(sum))
 	    }
 
     	IntroButton {

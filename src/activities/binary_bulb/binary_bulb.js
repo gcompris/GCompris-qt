@@ -1,9 +1,8 @@
 /* GCompris - binary_bulb.js
  *
- * Copyright (C) 2017 Rajat Asthana <rajatasthana4@gmail.com>
+ * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
  *   "RAJAT ASTHANA" <rajatasthana4@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -50,9 +49,6 @@ function resetBulbs() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     resetBulbs();
-    //num = Math.floor(Math.random() * 255) + 1
-    //text1 = String(num)
-    //sum = 0
 }
 
 function nextLevel() {

@@ -8,7 +8,7 @@ Image {
 	source: "resource/bubl.svg"
 	state: "off"
 
-	property string t: ""
+	property string bit: ""
 
 	MouseArea {
 		anchors.fill: parent
@@ -25,7 +25,7 @@ Image {
 	Text {
 	    anchors.top: bulb.bottom
 	    anchors.horizontalCenter: parent.horizontalCenter
-	    text: t
+	    text: bit
 	    color: "white"
 	}
 
@@ -35,7 +35,7 @@ Image {
 			PropertyChanges {
 				target: bulb;
 				source: "resource/bubl.svg"
-				t: "0"
+				bit: "0"
 			}
 		},
 		State {
@@ -43,7 +43,7 @@ Image {
 			PropertyChanges {
 				target: bulb;
 				source: "resource/bulb_on.svg"
-				t: "1"
+				bit: "1"
 			}
 		}
 	]
