@@ -157,7 +157,6 @@ ActivityBase {
                 if(items.sum == items.num) {
                     bonus.good("lion");
                     Activity.resetBulbs();
-                    //Activity.initializeValues();
                 }           
                 else {
                     bonus.bad("lion");
