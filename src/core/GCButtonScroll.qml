@@ -43,8 +43,12 @@ Rectangle {
     
     BarButton {
         id: scrollUp
-        source: "qrc:/gcompris/src/core/resource/scroll_up.svg";
-        sourceSize.width: parent.width
+        width: parent.width
+        height: parent.width
+        source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
+        sourceSize.width: scrollup.width
+        sourceSize.height: scrollUp.width
+        rotation: 180
         anchors.top: parent.top
         onClicked: up()
         visible: upVisible
@@ -52,8 +56,11 @@ Rectangle {
     
     BarButton {
         id: scrollDown
+        width: parent.width
+        height: parent.width
         source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
-        sourceSize.width: parent.width
+        sourceSize.width: scrollDown.width
+        sourceSize.height: scrollDown.height
         anchors.bottom: parent.bottom
         onClicked: down()
         visible: downVisible
