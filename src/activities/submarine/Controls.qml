@@ -47,7 +47,7 @@ Item {
     property point rightBallastTankPosition
     property alias rightBallastTankWidth : rightBallastTankDisplay.width
     property alias rightBallastTankHeight : rightBallastTankDisplay.height
-
+    
     /* Diving Plane Controller properties */
     property bool divingPlaneVisible
     property point divingPlanePosition
@@ -64,10 +64,10 @@ Item {
         id: controlBackground
         source: url + "board.svg"
         width: background.width
-        height: background.height * 0.35
-        sourceSize.width: width
-        sourceSize.height: height
-        y: background.height - height
+        height: background.height * 0.40
+        sourceSize.width: controlBackground.width
+        sourceSize.height: controlBackground.height
+        y: background.height - controlBackground.height
     }
 
     Item {
@@ -93,12 +93,12 @@ Item {
             source: url + "up.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: incSpeed.width
+            sourceSize.height: incSpeed.height
 
             anchors {
                 right: engine.left
-                leftMargin: width / 2
+                leftMargin: incSpeed.width / 2
             }
             y: buttonPlusY
 
@@ -115,12 +115,12 @@ Item {
             source: url + "down.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: downSpeed.width
+            sourceSize.height: downSpeed.height
             
             anchors {
                 right: engine.left
-                leftMargin: width / 2
+                leftMargin: downSpeed.width / 2
             }
             y: buttonMinusY
             
@@ -184,12 +184,13 @@ Item {
             id: leftBallastFill
             source: url + "vanne.svg"
 
-            x: leftBallastTankDisplay.x - width * 1.1
+            x: leftBallastTankDisplay.x - buttonSize * 1.1
             y: buttonPlusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateLeftFill;
@@ -241,12 +242,13 @@ Item {
             id: leftBallastFlush
             source: url + "vanne.svg"
 
-            x: leftBallastTankDisplay.x - width * 1.1
+            x: leftBallastTankDisplay.x - buttonSize * 1.1
             y: buttonMinusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateLeftFlush;
@@ -346,14 +348,14 @@ Item {
             id: centralBallastFill
             source: url + "vanne.svg"
 
-            x: centralBallastTankDisplay.x - width * 1.1
+            x: centralBallastTankDisplay.x - buttonSize * 1.1
             y: buttonPlusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
+            
             transform: Rotation {
                 id: rotateCentralFill;
                 origin.x: centralBallastFill.width / 2;
@@ -404,13 +406,13 @@ Item {
             id: centralBallastFlush
             source: url + "vanne.svg"
 
-            x: centralBallastTankDisplay.x - width * 1.1
+            x: centralBallastTankDisplay.x - buttonSize * 1.1
             y: buttonMinusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateCentralFlush;
@@ -509,13 +511,13 @@ Item {
             id: rightBallastFill
             source: url + "vanne.svg"
 
-            x: rightBallastTankDisplay.x - width * 1.1
+            x: rightBallastTankDisplay.x - buttonSize * 1.1
             y: buttonPlusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateRightFill;
@@ -567,13 +569,13 @@ Item {
             id: rightBallastFlush
             source: url + "vanne.svg"
 
-            x: rightBallastTankDisplay.x - width * 1.1
+            x: rightBallastTankDisplay.x - buttonSize * 1.1
             y: buttonMinusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateRightFlush;
@@ -633,8 +635,8 @@ Item {
             source: url + "rudder.svg"
             width: divingPlaneWidth
             height: divingPlaneHeight
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: divingPlaneWidth
+            sourceSize.height: divingPlaneHeight
             
             x: divingPlanePosition.x
             y: divingPlanePosition.y
@@ -652,8 +654,8 @@ Item {
             source: url + "up.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
 
             anchors {
                 left: divingPlanesImage.right
@@ -674,8 +676,8 @@ Item {
             source: url + "down.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
 
             anchors {
                 left: divingPlanesImage.right
