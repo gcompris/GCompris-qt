@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2017 Rajat Asthana <rajatasthana4@gmail.com>
+ * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,20 +18,20 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "binary_bulb/Binary_bulb.qml"
+  name: "binary_bulb/BinaryBulb.qml"
   difficulty: 2
   icon: "binary_bulb/binary_bulb.svg"
   author: "Rajat Asthana &lt;rajatasthana4@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: qsTr("Binary_bulb activity")
+  title: qsTr("Turn on the right bulbs to represent binary notation of the given decimal number")
   //: Help title
   description: qsTr("This activity helps you to learn the concept of conversion of decimal number system to binary number system.")
   //intro: "put here in comment the text for the intro voice"
   //: Help goal
   goal: qsTr("To get familiar with binary number system")
   //: Help prerequisite
-  prerequisite: "Decimal number system"
+  prerequisite: qsTr("Decimal number system")
   //: Help manual
   manual: ""
   credit: ""

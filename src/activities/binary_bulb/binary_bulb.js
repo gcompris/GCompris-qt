@@ -29,25 +29,30 @@ var items
 function start(items_) {
     items = items_
     currentLevel = 0
-    initLevel()
 }
 
 function stop() {
 }
 
 function resetBulbs() {
-    items.b1.state = "off"
-    items.b2.state = "off"
-    items.b3.state = "off"
-    items.b4.state = "off"
-    items.b5.state = "off"
-    items.b6.state = "off"
-    items.b7.state = "off"
-    items.b8.state = "off"    
+    items.bulbs.itemAt(7).state = "off"
+    items.bulbs.itemAt(6).state = "off"
+    items.bulbs.itemAt(5).state = "off"
+    items.bulbs.itemAt(4).state = "off"
+    items.bulbs.itemAt(3).state = "off"
+    items.bulbs.itemAt(2).state = "off"
+    items.bulbs.itemAt(1).state = "off"
+    items.bulbs.itemAt(0).state = "off"    
+}
+
+function initializeValues() {
+    items.sum = 0
+    items.num = Math.floor(Math.random() * 255) + 1
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    initializeValues();
     resetBulbs();
 }
 
