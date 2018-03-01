@@ -46,7 +46,7 @@ Rectangle {
         width: parent.width
         height: parent.width
         source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
-        sourceSize.width: scrollup.width
+        sourceSize.width: scrollUp.width
         sourceSize.height: scrollUp.width
         rotation: 180
         anchors.top: parent.top
