@@ -59,6 +59,15 @@ Item {
     property int buttonMinusY
     
     property string fillColor : "#0DA5CB"
+    
+    function resetBallastButtons() {
+        rotateLeftFill.angle = 0
+        rotateLeftFlush.angle = 0
+        rotateCentralFill.angle = 0
+        rotateCentralFlush.angle = 0
+        rotateRightFill.angle = 0
+        rotateRightFlush.angle = 0
+    }
 
     Image {
         id: controlBackground
