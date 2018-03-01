@@ -163,7 +163,6 @@ public:
 
 signals:
 	void nameChanged();
-	void typeChanged();
 	void sectionChanged();
 	void difficultyChanged();
 	void iconChanged();
@@ -182,7 +181,6 @@ signals:
 	/// @endcond
 private:
 	QString m_name;
-	QString m_type;
 	QString m_section;
 	int m_difficulty;
 	QString m_icon;
