@@ -22,9 +22,8 @@
 .import QtQuick 2.6 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 10
 var items
-
 
 function start(items_) {
     items = items_
@@ -35,19 +34,15 @@ function stop() {
 }
 
 function resetBulbs() {
-    items.bulbs.itemAt(7).state = "off"
-    items.bulbs.itemAt(6).state = "off"
-    items.bulbs.itemAt(5).state = "off"
-    items.bulbs.itemAt(4).state = "off"
-    items.bulbs.itemAt(3).state = "off"
-    items.bulbs.itemAt(2).state = "off"
-    items.bulbs.itemAt(1).state = "off"
-    items.bulbs.itemAt(0).state = "off"    
+    for(var i = 0; i < items.numberOfBulbs; i++) {
+        items.bulbs.itemAt(i).state = "off"
+    }   
 }
 
 function initializeValues() {
-    items.sum = 0
-    items.num = Math.floor(Math.random() * 255) + 1
+    items.sum = 0    
+    items.numberOfBulbs = (currentLevel > 3) ? 8 : Math.pow(2,currentLevel)
+    items.num = Math.floor(Math.random() * (Math.pow(2,items.numberOfBulbs) - 1)) + 1
 }
 
 function initLevel() {

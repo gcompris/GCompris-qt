@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 import "binary_bulb.js" as Activity
@@ -51,6 +52,7 @@ ActivityBase {
             property alias bulbs: bulbs
             property int sum: 0
             property int num: 0
+            property int numberOfBulbs: 0
         }
 
         onStart: { Activity.start(items) }
@@ -63,10 +65,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home }
+            content: BarEnumContent { value: help | home | level}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
 
@@ -112,7 +116,7 @@ ActivityBase {
             style: Text.Outline
             styleColor: "black"
             color: "white"
-            text: qsTr("What is the binary representation of " + items.num)
+            text: qsTr("What is the binary representation of %1").arg(items.num)
             opacity: 1.0
         }
 
@@ -123,34 +127,32 @@ ActivityBase {
 
             Repeater {
                 id: bulbs
-                model: 8
+                model: items.numberOfBulbs
                 LightBulb {
                 }
             }
         }
 
-        IntroButton {
-            id: reachedSofar
-            width: parent.width / 8
-            height: 90
-            z: 5
-            anchors.left: row.left
-            anchors.leftMargin: 15
+        GCText {
+            id: reachedSoFar
+            anchors.horizontalCenter: row.horizontalCenter
             anchors.top: row.bottom
             anchors.topMargin: 25
-            text: String(items.sum)
+            color: "white"
+            fontSize: largeSize
+            text: items.sum
         }
 
-        IntroButton {
-            id: done
-            width: parent.width / 8
-            height: 90
-            z: 5
-            anchors.right: row.right
-            anchors.topMargin: 25
-            anchors.rightMargin: 15
-            anchors.top: row.bottom
-            text: qsTr("Done")
+        BarButton {
+            id: okButton
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: 10 * ApplicationInfo.ratio
+            }
+            source: "/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
             onClicked: {
                 if(items.sum == items.num) {
                     bonus.good("lion");
