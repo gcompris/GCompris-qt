@@ -71,11 +71,13 @@ Flipable {
         anchors.centerIn: parent
         anchors.fill: parent
         Image {
+            id: contentImage
             source: card.pairData.image
-            sourceSize.width: parent.width
-            anchors.fill: parent
+            width: parent.paintedWidth * 0.9
+            height: parent.paintedHeight * 0.9
+            sourceSize.width: contentImage.width
+            sourceSize.height: contentImage.height
             anchors.centerIn: parent
-            anchors.margins: 6 * ApplicationInfo.ratio
             fillMode: Image.PreserveAspectFit
         }
         GCText {
