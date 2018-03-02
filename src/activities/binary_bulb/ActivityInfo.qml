@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Rajat Asthana &lt;rajatasthana4@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: qsTr("Turn on the right bulbs to represent binary notation of the given decimal number")
+  title: qsTr("Binary bulbs")
   //: Help title
   description: qsTr("This activity helps you to learn the concept of conversion of decimal number system to binary number system.")
   //intro: "put here in comment the text for the intro voice"
@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Decimal number system")
   //: Help manual
-  manual: ""
+  manual: qsTr("Turn on the right bulbs to represent the binary of the given decimal number. When you have achieved it, press OK")
   credit: ""
   section: "experiment"
   createdInVersion: 9000

@@ -1,4 +1,4 @@
-/* GCompris - binary_bulb.qml
+/* GCompris - BinaryBulb.qml
  *
  * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
@@ -57,27 +57,6 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-
-        DialogHelp {
-            id: dialogHelp
-            onClose: home()
-        }
-
-        Bar {
-            id: bar
-            content: BarEnumContent { value: help | home | level}
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
-        }
-
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
-        }
 
         IntroMessage {
             id: message
@@ -164,6 +143,27 @@ ActivityBase {
                     items.sum = 0
                 }
             }
+        }
+
+        DialogHelp {
+            id: dialogHelp
+            onClose: home()
+        }
+
+        Bar {
+            id: bar
+            content: BarEnumContent { value: help | home | level}
+            onHelpClicked: {
+                displayDialog(dialogHelp)
+            }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
+            onHomeClicked: activity.home()
+        }
+
+        Bonus {
+            id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }

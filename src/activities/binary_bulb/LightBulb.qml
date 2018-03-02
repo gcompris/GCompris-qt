@@ -1,4 +1,4 @@
-/* GCompris - binary_bulb.qml
+/* GCompris - BinaryBulb.qml
  *
  * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
@@ -64,7 +64,7 @@ Image {
         State {
             name: "off"
             PropertyChanges {
-                target: bulb;
+                target: bulb
                 source: "resource/bulb_off.svg"
                 bit: "0"
             }
@@ -72,7 +72,7 @@ Image {
         State {
             name: "on"
             PropertyChanges {
-                target: bulb;
+                target: bulb
                 source: "resource/bulb_on.svg"
                 bit: "1"
             }
