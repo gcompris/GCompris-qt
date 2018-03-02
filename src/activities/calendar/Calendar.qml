@@ -61,7 +61,7 @@ ActivityBase {
             property alias answerChoices: answerChoices
             property alias questionDelay: questionDelay
             property alias okButtonParticles: okButtonParticles
-            property bool horizontalLayout: background.width > background.height * 1.2
+            property bool horizontalLayout: background.width > background.height * 1.5
             property alias daysOfTheWeekModel: daysOfTheWeekModel
         }
 
@@ -84,7 +84,7 @@ ActivityBase {
             id: calendarBox
             width: items.horizontalLayout ? (answerChoices.visible ? parent.width * 0.75 : parent.width * 0.80) :
                                             (answerChoices.visible ? parent.width * 0.65 : parent.width * 0.85)
-            height: items.horizontalLayout ? parent.height * 0.68 : parent.height * 0.64 
+            height: items.horizontalLayout ? parent.height * 0.68 : parent.height - bar.height - questionItemBackground.height - okButton.height * 1.5
             anchors.top: questionItem.bottom
             anchors.topMargin: 5
             anchors.rightMargin: answerChoices.visible ? 100 : undefined
