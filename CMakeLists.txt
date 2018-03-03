@@ -464,9 +464,11 @@ endif()
 
 add_subdirectory(src)
 
-enable_testing()
-
-add_subdirectory(tests)
+# only enable unit tests for linux
+if(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
+  enable_testing()
+  add_subdirectory(tests)
+endif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
 
 add_custom_target(binaries)
 add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)

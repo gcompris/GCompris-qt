@@ -49,32 +49,26 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
+set(used_qt_modules Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors)
+
 if(ANDROID)
-  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
+  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
+  set(used_qt_modules ${used_qt_modules} AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 elseif(CMAKE_HOST_WIN32)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 endif()
 
-add_library(gcompris_core SHARED ${gcompris_SRCS})
-target_link_libraries(gcompris_core
-    Qt5::Qml
-    Qt5::Quick
-    Qt5::Gui
-    Qt5::Multimedia
-    Qt5::Core
-    Qt5::Svg
-    Qt5::Xml
-    Qt5::XmlPatterns
-    Qt5::Sensors
-)
+# do not build shared library for android, it crashes
+if(NOT ANDROID)
+  add_library(gcompris_core SHARED ${gcompris_SRCS})
+  qt5_use_modules(gcompris_core ${used_qt_modules})
+endif()
+
+qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
 GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir COPYING)
 
