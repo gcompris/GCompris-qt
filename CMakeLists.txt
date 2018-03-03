@@ -104,6 +104,13 @@ if(ECM_FOUND)
     endif()
 endif()
 
+# Tell CMake to run moc when necessary:
+set(CMAKE_AUTOMOC ON)
+
+# As moc files are generated in the binary dir, tell CMake
+# to always look for includes there:
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})
 #    message("${_variableName}=${${_variableName}}")
@@ -456,6 +463,10 @@ else()
 endif()
 
 add_subdirectory(src)
+
+enable_testing()
+
+add_subdirectory(tests)
 
 add_custom_target(binaries)
 add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)

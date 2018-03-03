@@ -10,8 +10,6 @@ if(SAILFISHOS)
   add_definitions(-DSAILFISHOS)
 endif()
 
-# Note: put .cpp files before .h files in the following or cmake messes up
-# moc generation -- WTF! 
 set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfo.h
@@ -27,13 +25,6 @@ set(gcompris_SRCS
    Directory.h
    DownloadManager.cpp
    DownloadManager.h
-)
-
-qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS})
-
-# Add files that do no need to pass through the moc processor
-set(gcompris_SRCS
-   ${gcompris_SRCS}
    main.cpp
    config.h.in
 )
@@ -43,10 +34,6 @@ if(ANDROID)
 else()
   list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp ApplicationInfoDefault.cpp)
 endif()
-
-include_directories(
-  "${CMAKE_CURRENT_BINARY_DIR}"   # to find config.h
-)
 
 # Resources
 set(GCOMPRIS_RESOURCES "${PROJECT_SOURCE_DIR}/installer")
@@ -66,15 +53,28 @@ if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} ${gcompris_MOC})
   qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
   qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 elseif(CMAKE_HOST_WIN32)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_RES})
   qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 else()
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
   qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 endif()
+
+add_library(gcompris_core SHARED ${gcompris_SRCS})
+target_link_libraries(gcompris_core
+    Qt5::Qml
+    Qt5::Quick
+    Qt5::Gui
+    Qt5::Multimedia
+    Qt5::Core
+    Qt5::Svg
+    Qt5::Xml
+    Qt5::XmlPatterns
+    Qt5::Sensors
+)
 
 GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir COPYING)
 
