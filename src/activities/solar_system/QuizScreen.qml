@@ -20,6 +20,7 @@
 import QtQuick 2.6
 import GCompris 1.0
 import QtGraphicalEffects 1.0
+import QtQuick.Controls 1.5
 
 import "../../core"
 import "solar_system.js" as Activity
@@ -32,9 +33,13 @@ Item {
 
     property alias score: score
     property alias optionListModel: optionListModel
+    property alias progressBar: progressBar
     property string planetRealImage
     property string question
     property string closenessValueInMeter
+    property int numberOfCorrectAnswers: 0
+
+    onNumberOfCorrectAnswersChanged: progressBar.percentage = (numberOfCorrectAnswers * 100) / score.numberOfSubLevels
 
     Rectangle {
         id: questionArea
@@ -149,6 +154,11 @@ Item {
                                 incorrectAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
                             }
+                            else {
+                                Activity.appendAndAddQuestion()
+                                mainQuizScreen.numberOfCorrectAnswers++
+                                mainQuizScreen.numberOfCorrectAnswers--
+                            }
                         }
                         onCorrectlyPressed: {
                             if(!items.assessmentMode) {
@@ -160,10 +170,14 @@ Item {
                                 correctAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
                             }
-                            else if(items.assessmentMode)
+                            else if(items.assessmentMode){
+                                Activity.assessmentModeQuestions.shift()
                                 Activity.nextSubLevel(true)
-                            else
+                                mainQuizScreen.numberOfCorrectAnswers++
+                            }
+                            else {
                                 Activity.nextSubLevel(false)
+                            }
                         }
                     }
                 }
@@ -223,6 +237,28 @@ Item {
         ParticleSystemStarLoader {
             id: particles
             clip: false
+        }
+    }
+
+    ProgressBar {
+        id: progressBar
+        height: bar.height * 0.35
+        width: parent.width * 0.35
+        property string message: "%1%".arg(value)
+        property real percentage
+        value: Math.round( percentage * 10 ) / 10
+        maximumValue: 100
+        visible: items.assessmentMode
+        y: parent.height - bar.height - height - 10 * ApplicationInfo.ratio
+        x: parent.width - width
+
+        GCText {
+            id: progressbarText
+            anchors.centerIn: parent
+            fontSize: mediumSize
+            font.bold: true
+            color: "black"
+            text: progressBar.message
         }
     }
 }

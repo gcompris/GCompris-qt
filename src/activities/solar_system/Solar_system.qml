@@ -57,6 +57,7 @@ ActivityBase {
             property alias containerModel: containerModel
             property alias mainQuizScreen: mainQuizScreen
             property alias dialogActivityConfig: dialogActivityConfig
+            property alias restartAssessmentMessage: restartAssessmentMessage
             property bool assessmentMode: false
             property bool solarSystemVisible: true
             property bool quizScreenVisible: false
@@ -121,6 +122,42 @@ ActivityBase {
         QuizScreen {
             id: mainQuizScreen
             visible: items.quizScreenVisible
+        }
+
+        Rectangle {
+            id: restartAssessmentMessage
+            width: parent.width
+            anchors.top: parent.top
+            anchors.bottom: bar.top
+            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.horizontalCenter: parent.horizontalCenter
+            radius: 4 * ApplicationInfo.ratio
+            visible: false
+            GCText {
+                anchors.fill: parent
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                fontSizeMode: mediumSize
+                text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br>You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System.").arg(items.mainQuizScreen.progressBar.value)
+            }
+
+            //To prevent clicking on options under it
+            MouseArea {
+                anchors.fill: parent
+            }
+
+            onVisibleChanged: scaleAnimation.start()
+
+            NumberAnimation {
+                id: scaleAnimation
+                target: restartAssessmentMessage
+                properties: "scale, opacity"
+                from: 0
+                to: 1
+                duration: 1500
+                easing.type: Easing.OutBounce
+            }
         }
 
         //Hint dialog while playing the quiz
@@ -257,12 +294,15 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: (items.assessmentMode || items.solarSystemVisible) ? withConfig :
-                                                                          Activity.indexOfSelectedPlanet == 0 ? withoutConfigWithoutHint :
-                                                                          withoutConfigWithHint
+            content: restartAssessmentMessage.visible ? withConfigWithRestart :
+                     (items.assessmentMode|| items.solarSystemVisible) ? withConfig :
+                     Activity.indexOfSelectedPlanet == 0 ? withoutConfigWithoutHint :
+                     withoutConfigWithHint
+
             property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
             property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
+            property BarEnumContent withConfigWithRestart: BarEnumContent { value: help | home | config | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -281,6 +321,7 @@ ActivityBase {
                 dialogActivityConfig.active = true
                 displayDialog(dialogActivityConfig)
             }
+            onReloadClicked: Activity.startAssessmentMode()
         }
 
         Bonus {
