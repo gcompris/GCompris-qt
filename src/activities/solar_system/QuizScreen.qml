@@ -170,7 +170,7 @@ Item {
                                 correctAnswerAnim.start()
                                 mainQuizScreen.closenessValueInMeter = closenessValue
                             }
-                            else if(items.assessmentMode){
+                            else if(items.assessmentMode) {
                                 Activity.assessmentModeQuestions.shift()
                                 Activity.nextSubLevel(true)
                                 mainQuizScreen.numberOfCorrectAnswers++
