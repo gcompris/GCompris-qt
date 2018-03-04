@@ -29,6 +29,7 @@ var dataset
 var currentPlanetLevels
 var currentSubLevel
 var indexOfSelectedPlanet
+var assessmentModeQuestions = []
 var allQuestions = []
 
 function start(items_) {
@@ -60,20 +61,39 @@ function initLevel() {
 function showSolarModel() {
     items.quizScreenVisible = false
     items.solarSystemVisible = true
+    items.restartAssessmentMessage.visible = false
 }
 
 function startAssessmentMode() {
     items.solarSystemVisible = false
     items.quizScreenVisible = true
+    items.restartAssessmentMessage.visible = false
     currentSubLevel = 0
-    items.mainQuizScreen.score.numberOfSubLevels = 0
+    assessmentModeQuestions = []
     allQuestions = []
+
     for(var i = 0; i < dataset.length; i++) {
         for(var j = 0; j < dataset[i].levels.length; j++)
             allQuestions.push(dataset[i].levels[j])
-        items.mainQuizScreen.score.numberOfSubLevels += dataset[i].levels.length
     }
+
+    items.mainQuizScreen.score.numberOfSubLevels = 20
     Core.shuffle(allQuestions)
+    assessmentModeQuestions = allQuestions.slice(0, 20)
+    items.mainQuizScreen.numberOfCorrectAnswers = 0
+    nextSubLevel(true)
+}
+
+function appendAndAddQuestion() {
+    var incorrectAnsweredQuestion = assessmentModeQuestions.shift()
+    if(items.mainQuizScreen.score.numberOfSubLevels < 25) {
+        assessmentModeQuestions.push(allQuestions[items.mainQuizScreen.score.numberOfSubLevels])
+        items.mainQuizScreen.score.numberOfSubLevels++
+    }
+    else if(items.mainQuizScreen.numberOfCorrectAnswers)
+        items.mainQuizScreen.numberOfCorrectAnswers--
+    assessmentModeQuestions.push(incorrectAnsweredQuestion)
+    currentSubLevel--
     nextSubLevel(true)
 }
 
@@ -91,13 +111,18 @@ function showQuizScreen(index) {
 
 function nextSubLevel(isAssessmentMode) {
     items.mainQuizScreen.closenessValueInMeter = 0
-    if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)
-        items.bonus.good("flower")
+    if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels) {
+        if(!items.assessmentMode || items.mainQuizScreen.progressBar.value >= 90)
+            items.bonus.good("flower")
+        else {
+            items.restartAssessmentMessage.visible = true
+        }
+    }
     else {
         if(!isAssessmentMode)
             items.mainQuizScreen.question = currentPlanetLevels[currentSubLevel].question
         else {
-            items.mainQuizScreen.question = allQuestions[currentSubLevel].question
+            items.mainQuizScreen.question = assessmentModeQuestions[0].question
         }
 
         items.mainQuizScreen.optionListModel.clear()
@@ -113,8 +138,8 @@ function nextSubLevel(isAssessmentMode) {
         else {
             for(var i=0; i<4; i++) {
                 optionListShuffle.push({
-                       "optionValue": allQuestions[currentSubLevel].options[i],
-                       "closeness": allQuestions[currentSubLevel].closeness[i]
+                       "optionValue": assessmentModeQuestions[0].options[i],
+                       "closeness": assessmentModeQuestions[0].closeness[i]
                 });
             }
         }
@@ -125,7 +150,7 @@ function nextSubLevel(isAssessmentMode) {
             items.mainQuizScreen.optionListModel.append(optionListShuffle[i])
         }
 
-        currentSubLevel++;
+        currentSubLevel++
         items.mainQuizScreen.score.currentSubLevel = currentSubLevel
     }
 }
@@ -135,7 +160,7 @@ function nextLevel() {
         currentLevel = 0
     }
     if(!items.assessmentMode)
-        initLevel();
+        initLevel()
     else
         startAssessmentMode()
 }
