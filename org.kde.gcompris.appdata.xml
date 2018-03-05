@@ -373,46 +373,46 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/main_menu.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/main_menu.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/clockgame.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/clockgame.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/color_mix.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/color_mix.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/colors.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/colors.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/crane.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/crane.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/enumerate.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/enumerate.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/fifteen.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/fifteen.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/hexagon.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/hexagon.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
     </screenshot>
     <screenshot>
-      <image width="1080" height="720">http://gcompris.net/screenshots-qt/middle/traffic.png</image>
+      <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/traffic.png</image>
     </screenshot>
   </screenshots>
-  <url type="homepage">http://gcompris.net/</url>
+  <url type="homepage">https://gcompris.net/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="help">http://gcompris.net/wiki/Manual</url>
-  <url type="donation">http://gcompris.net/buy-en.html</url>
+  <url type="donation">https://gcompris.net/buy-en.html</url>
   <url type="translate">http://gcompris.net/wiki/Developer%27s_corner#Translation</url>
   <update_contact>gcompris-devel@kde.org</update_contact>
   <project_group>KDE</project_group>
