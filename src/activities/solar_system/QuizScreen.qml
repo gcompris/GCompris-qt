@@ -240,17 +240,25 @@ Item {
         }
     }
 
-    ProgressBar {
+    Rectangle {
         id: progressBar
         height: bar.height * 0.35
         width: parent.width * 0.35
+
         property string message: "%1%".arg(value)
         property real percentage
-        value: Math.round( percentage * 10 ) / 10
-        maximumValue: 100
+        property real value: Math.round( percentage * 10 ) / 10
+
         visible: items.assessmentMode
         y: parent.height - bar.height - height - 10 * ApplicationInfo.ratio
-        x: parent.width - width
+        x: parent.width - width * 1.1
+        color: "#DCDCDC"
+        Rectangle {
+            id: progressIndicator
+            height: parent.height
+            width: parent.width * progressBar.value / 100
+            color: "#3399FF"
+        }
 
         GCText {
             id: progressbarText
@@ -259,6 +267,7 @@ Item {
             font.bold: true
             color: "black"
             text: progressBar.message
+            z: 2
         }
     }
 }
