@@ -39,7 +39,7 @@ var determiningComponents = []
 var processingAnswer
 
 var currentZoom
-var maxZoom = 1
+var maxZoom = 2
 var minZoom = 0.5
 var defaultZoom = 1
 var zoomStep = 0.25
@@ -97,7 +97,7 @@ function initLevel() {
     items.availablePieces.hideToolbar()
 
     currentZoom = defaultZoom
-    items.availablePieces.zoomInBtn.state = "cannotZoomIn"
+    items.availablePieces.zoomInBtn.state = "canZoomIn"
     items.availablePieces.zoomOutBtn.state = "canZoomOut"
     viewPort.leftEdge = 0
     viewPort.topEdge = 0
