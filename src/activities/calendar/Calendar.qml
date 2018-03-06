@@ -376,7 +376,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: items.horizontalLayout ? 50 * ApplicationInfo.ratio : 35 * ApplicationInfo.ratio
+            height: bar.height * 0.6
             width: okButton.height
             sourceSize.width: okButton.width
             sourceSize.height: okButton.height
