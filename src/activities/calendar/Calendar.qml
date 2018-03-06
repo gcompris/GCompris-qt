@@ -190,7 +190,8 @@ ActivityBase {
                         text: control.__locale.dayName(styleData.dayOfWeek, control.dayOfWeekFormat)
                         font.family: GCSingletonFontLoader.fontLoader.name
                         fontSizeMode: Text.Fit
-                        font.pixelSize: parent.height * 0.8
+                        minimumPixelSize: 1
+                        font.pixelSize: items.horizontalLayout ? parent.height * 0.7 : parent.width * 0.2
                         color: "#373737"
                         anchors.centerIn: parent
                     }
