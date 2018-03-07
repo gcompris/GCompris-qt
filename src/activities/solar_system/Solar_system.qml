@@ -97,7 +97,7 @@ ActivityBase {
             readonly property var assessmentModeInstructions: [
                 commonInstruction,
                 qsTr("There are 20 questions initially with 4 options each. The progress bar at the bottom right of the screen shows your percentage score."),
-                qsTr("If your answer is correct, your score will increase.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>You can answer maximum 25 times after which no more question will be added."),
+                qsTr("If your answer is correct, your score will increase.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>Maximum 25 questions will be asked after which no more question will be added."),
                 qsTr("You should score above 90% to pass the assessment and become a Solar System expert!")
             ]
 
