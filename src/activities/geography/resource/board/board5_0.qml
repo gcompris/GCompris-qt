@@ -96,7 +96,7 @@ QtObject {
         "soundFile": "voices-$CA/$LOCALE/geography/ireland.$CA",
         "toolTipText": qsTr("Ireland"),
         "x": "0.14",
-        "y": "0.48"
+        "y": "0.47"
     },
     {
         "pixmapfile": "europe/iceland.png",
