@@ -86,13 +86,13 @@ function startAssessmentMode() {
 
 function appendAndAddQuestion() {
     var incorrectAnsweredQuestion = assessmentModeQuestions.shift()
+    assessmentModeQuestions.push(incorrectAnsweredQuestion)
     if(items.mainQuizScreen.score.numberOfSubLevels < 25) {
         assessmentModeQuestions.push(allQuestions[items.mainQuizScreen.score.numberOfSubLevels])
         items.mainQuizScreen.score.numberOfSubLevels++
     }
     else if(items.mainQuizScreen.numberOfCorrectAnswers)
         items.mainQuizScreen.numberOfCorrectAnswers--
-    assessmentModeQuestions.push(incorrectAnsweredQuestion)
     nextSubLevel(true)
 }
 
