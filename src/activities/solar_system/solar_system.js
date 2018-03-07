@@ -87,9 +87,11 @@ function startAssessmentMode() {
 function appendAndAddQuestion() {
     var incorrectAnsweredQuestion = assessmentModeQuestions.shift()
     assessmentModeQuestions.push(incorrectAnsweredQuestion)
-    if(items.mainQuizScreen.score.numberOfSubLevels < 25) {
-        assessmentModeQuestions.push(allQuestions[items.mainQuizScreen.score.numberOfSubLevels])
+    if(items.mainQuizScreen.score.numberOfSubLevels == 24)
         items.mainQuizScreen.score.numberOfSubLevels++
+    else if(items.mainQuizScreen.score.numberOfSubLevels < 24){
+        assessmentModeQuestions.push(allQuestions[items.mainQuizScreen.score.numberOfSubLevels])
+        items.mainQuizScreen.score.numberOfSubLevels += 2
     }
     else if(items.mainQuizScreen.numberOfCorrectAnswers)
         items.mainQuizScreen.numberOfCorrectAnswers--
