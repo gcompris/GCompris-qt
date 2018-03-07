@@ -118,6 +118,7 @@ ActivityBase {
             property alias infoImage: infoImage
             property bool isTutorialMode: activity.isTutorialMode
             property alias tutorialInstruction: tutorialInstruction
+            property int toolsMargin: 90 * ApplicationInfo.ratio
         }
 
         Loader {
@@ -132,8 +133,8 @@ ActivityBase {
         IntroMessage {
             id: tutorialInstruction
             intro: []
-            textContainerWidth: background.vert ? parent.width - inputComponentsContainer.width - 90 * ApplicationInfo.ratio : 0.9 * background.width
-            textContainerHeight: background.vert ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
+            textContainerWidth: background.vert ? parent.width - inputComponentsContainer.width - items.toolsMargin : 0.9 * background.width
+            textContainerHeight: background.vert ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 1.1) - items.toolsMargin
             anchors {
                 fill: undefined
                 top: background.vert ? parent.top : inputComponentsContainer.bottom
@@ -150,59 +151,37 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Rectangle {
-            id: playArea
-            color: "#10000000"
-            x: background.vert ? 90 * ApplicationInfo.ratio : 0
-            y: background.vert ? 0 : 90 * ApplicationInfo.ratio
-            width: background.vert ?
-                       background.width * 4 - 90 * ApplicationInfo.ratio : background.width * 4
-            height: background.vert ?
-                       background.height * 4 - (bar.height * 1.1) :
-                       background.height * 4 - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
-            
-            PinchArea {
-                id: pinchZoom
-                anchors.fill: parent
-                onPinchFinished: {
-                    if (pinch.scale < 1) {
-                        Activity.zoomOut()
-                    }
-                    if (pinch.scale > 1) {
-                        Activity.zoomIn()
-                    }
-                }
-                MouseArea {
-                    id: mousePan
-                    anchors.fill: parent
-                    scrollGestureEnabled: false //needed for pinchZoom
-                    drag.target: playArea
-                    drag.axis: Drag.XandYAxis
-                    drag.minimumX: 0 - playArea.width * 0.75
-                    drag.maximumX: background.vert ? 90 * ApplicationInfo.ratio : 0
-                    drag.minimumY: 0 - playArea.height * 0.75
-                    drag.maximumY: background.vert ? 0 : 90 * ApplicationInfo.ratio
-                    onClicked: {
-                        Activity.deselect()
-                        availablePieces.hideToolbar()
-                    }
-                }
+            id: visibleArea
+            color: "#00000000"
+            width: background.vert ? background.width - items.toolsMargin - 10 : background.width - 10
+            height: background.vert ? background.height - bar.height - items.toolsMargin - 10 : background.height - bar.height - 10
+            anchors {
+                fill: undefined
+                top: background.vert ? parent.top : inputComponentsContainer.bottom
+                topMargin: 5
+                right: parent.right
+                rightMargin: 5
+                left: background.vert ? inputComponentsContainer.right : parent.left
+                leftMargin: 5
+                bottom: bar.top
+                bottomMargin: 20
             }
-
+            z: 6
+            
             GCText {
                 id: infoTxt
                 anchors {
                     horizontalCenter: parent.horizontalCenter
-                    top: infoTxtContainer.top
+                    top: parent.top
                     topMargin: 2
                 }
                 fontSizeMode: Text.Fit
                 minimumPixelSize: 10
+                font.pixelSize: 150
                 color: "white"
-                style: Text.Outline
-                styleColor: "black"
                 horizontalAlignment: Text.AlignHLeft
                 width: Math.min(implicitWidth, 0.90 * parent.width)
-                height: inputOutputTxt.visible == false ? Math.min(implicitHeight, 0.9 * parent.height) :
+                height:  inputOutputTxt.visible == false ? Math.min(implicitHeight, 0.7 * parent.height) :
                         Math.min(implicitHeight, (inputOutputTxt.inputs > 2 ? 0.3 : 0.4) * parent.height)
                 wrapMode: TextEdit.WordWrap
                 visible: false
@@ -211,20 +190,13 @@ ActivityBase {
 
             Rectangle {
                 id: infoTxtContainer
-                anchors.centerIn: parent
-                width: infoTxt.width + 20
-                height: inputOutputTxt.visible == false ? infoTxt.height + infoImage.height + 6 :
-                        infoTxt.height + inputOutputTxt.height + truthTable.height + 8
-                opacity: 0.8
+                anchors.fill: parent
+                opacity: 1
                 radius: 10
+                color: "#373737"
                 border.width: 2
-                border.color: "black"
+                border.color: "#F2F2F2"
                 visible: infoTxt.visible
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
                 MouseArea {
                     anchors.fill: parent
                     onClicked: infoTxt.visible = false
@@ -234,20 +206,18 @@ ActivityBase {
 
             Image {
                 id: infoImage
-                property int heightNeed: parent.height - infoTxt.height
                 property bool imgVisible: false
-                height: source == "" ? 0 : parent.height - infoTxt.height - 10
+                height: source == "" ? 0 : parent.height * 0.3 - 10
                 width: source == "" ? 0 : parent.width - 10
                 fillMode: Image.PreserveAspectFit
                 visible: infoTxt.visible && imgVisible
                 anchors {
                     top: infoTxt.bottom
-                    horizontalCenter: parent.horizontalCenter
+                    horizontalCenter: infoTxtContainer.horizontalCenter
                 }
                 z: 5
             }
-
-
+            
             ListModel {
                 id: truthTablesModel
                 property int rows
@@ -263,7 +233,7 @@ ActivityBase {
                 visible: infoTxt.visible && displayTruthTable
                 property int inputs: truthTablesModel.inputs
                 property int outputs: truthTablesModel.outputs
-                property int cellSize: Math.min(parent.height - infoTxt.height - 10, (inputs > 2 ? 0.6 :
+                property int cellSize: Math.min(parent.height - infoTxt.height - 20, (inputs > 2 ? 0.6 :
                                        0.45) * parent.height) / truthTablesModel.rows
                 property int minSize: 2 * cellSize
                 height: cellSize
@@ -363,16 +333,58 @@ ActivityBase {
                     }
                 }
             }
+            
+        }
+        
+        
+        Rectangle {
+            id: playArea
+            color: "#10000000"
+            x: background.vert ? items.toolsMargin : 0
+            y: background.vert ? 0 : items.toolsMargin
+            width: background.vert ?
+                       background.width * 4 - items.toolsMargin : background.width * 4
+            height: background.vert ?
+                       background.height * 4 - (bar.height * 1.1) :
+                       background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+            
+            PinchArea {
+                id: pinchZoom
+                anchors.fill: parent
+                onPinchFinished: {
+                    if (pinch.scale < 1) {
+                        Activity.zoomOut()
+                    }
+                    if (pinch.scale > 1) {
+                        Activity.zoomIn()
+                    }
+                }
+                MouseArea {
+                    id: mousePan
+                    anchors.fill: parent
+                    scrollGestureEnabled: false //needed for pinchZoom
+                    drag.target: playArea
+                    drag.axis: Drag.XandYAxis
+                    drag.minimumX: 0 - playArea.width * 0.75
+                    drag.maximumX: background.vert ? items.toolsMargin : 0
+                    drag.minimumY: 0 - playArea.height * 0.75
+                    drag.maximumY: background.vert ? 0 : items.toolsMargin
+                    onClicked: {
+                        Activity.deselect()
+                        availablePieces.hideToolbar()
+                    }
+                }
+            }
         }
 
         Rectangle {
             id: inputComponentsContainer
             width: background.vert ?
-                       90 * ApplicationInfo.ratio :
+                       items.toolsMargin :
                        background.width
             height: background.vert ?
                         background.height :
-                        90 * ApplicationInfo.ratio
+                        items.toolsMargin
             color: "#4A3823"
             anchors.left: parent.left
             Image {
@@ -399,23 +411,19 @@ ActivityBase {
             }
             width: toolTipTxt.width + 10
             height: toolTipTxt.height + 5
+            color: "#373737"
             opacity: 1
             radius: 10
             z: 100
             border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            border.color: "#F2F2F2"
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
             function show(newText) {
                 if(newText) {
                     text = newText
-                    opacity = 0.8
+                    opacity = 1
                 } else {
                     opacity = 0
                 }
@@ -426,8 +434,6 @@ ActivityBase {
                 anchors.centerIn: parent
                 fontSize: regularSize
                 color: "white"
-                style: Text.Outline
-                styleColor: "black"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: TextEdit.WordWrap
             }
