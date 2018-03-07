@@ -139,6 +139,66 @@ ActivityBase {
         }
 
         Rectangle {
+            id: solarSystemImageHint
+            radius: 30
+            border.width: 5
+            border.color: "black"
+            width: parent.width
+            height: parent.height
+            visible: false
+            z: 2000
+            parent: items.assessmentMode ? background : hintDialog
+
+            onVisibleChanged: {
+                if(visible) {
+                    hintCloseAnimation.stop()
+                    hintAppearAnimation.start()
+                }
+                else {
+                    solarSystemImageHint.x = 0
+                    solarSystemImageHint.y = 0
+                }
+            }
+
+            Image {
+                id: solarSystemImage
+                source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
+                sourceSize.width: parent.width - 6 * ApplicationInfo.ratio
+                fillMode: Image.PreserveAspectCrop
+                anchors.centerIn: parent
+            }
+
+            NumberAnimation {
+                id: hintAppearAnimation
+                target: solarSystemImageHint
+                property: horizontalLayout ? "x" : "y"
+                from: horizontalLayout ? -width : -height
+                to: 0
+                duration: 1200
+                easing.type: Easing.OutBack
+            }
+
+            GCButtonCancel {
+                id: cancelButton
+                onClose: hintCloseAnimation.start()
+            }
+
+            SequentialAnimation {
+                id: hintCloseAnimation
+
+                NumberAnimation {
+                    target: solarSystemImageHint
+                    property: horizontalLayout ? "x" : "y"
+                    to: horizontalLayout ? -width : -height
+                    duration: 1200
+                    easing.type: Easing.InSine
+                }
+
+                onStopped: solarSystemImageHint.visible = false
+            }
+        }
+
+        Rectangle {
             id: restartAssessmentMessage
             width: parent.width
             anchors.top: parent.top
@@ -192,64 +252,6 @@ ActivityBase {
             button0Text: "View solar system"
 
             onButton0Hit: solarSystemImageHint.visible = true
-
-            Rectangle {
-                id: solarSystemImageHint
-                radius: 30
-                border.width: 5
-                border.color: "black"
-                width: parent.width
-                height: parent.height
-                visible: false
-
-                onVisibleChanged: {
-                    if(visible) {
-                        hintCloseAnimation.stop()
-                        hintAppearAnimation.start()
-                    }
-                    else {
-                        solarSystemImageHint.x = 0
-                        solarSystemImageHint.y = 0
-                    }
-                }
-
-                Image {
-                    id: solarSystemImage
-                    source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
-                    sourceSize.width: parent.width - 6 * ApplicationInfo.ratio
-                    fillMode: Image.PreserveAspectCrop
-                    anchors.centerIn: parent
-                }
-
-                NumberAnimation {
-                    id: hintAppearAnimation
-                    target: solarSystemImageHint
-                    property: horizontalLayout ? "x" : "y"
-                    from: horizontalLayout ? -width : -height
-                    to: 0
-                    duration: 1200
-                    easing.type: Easing.OutBack
-                }
-
-                GCButtonCancel {
-                    id: cancelButton
-                    onClose: hintCloseAnimation.start()
-                }
-
-                SequentialAnimation {
-                    id: hintCloseAnimation
-
-                    NumberAnimation {
-                        target: solarSystemImageHint
-                        property: horizontalLayout ? "x" : "y"
-                        to: horizontalLayout ? -width : -height
-                        duration: 1200
-                        easing.type: Easing.InSine
-                    }
-
-                    onStopped: solarSystemImageHint.visible = false
-                }
-            }
         }
 
         DialogActivityConfig {
@@ -308,7 +310,8 @@ ActivityBase {
         Bar {
             id: bar
             content: restartAssessmentMessage.visible ? withConfigWithRestart :
-                     (items.assessmentMode|| items.solarSystemVisible) ? withConfig :
+                     items.solarSystemVisible ? withConfig :
+                     items.assessmentMode ? withConfigWithHint :
                      Activity.indexOfSelectedPlanet == 0 ? withoutConfigWithoutHint :
                      withoutConfigWithHint
 
@@ -316,6 +319,8 @@ ActivityBase {
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
             property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
             property BarEnumContent withConfigWithRestart: BarEnumContent { value: help | home | config | reload }
+            property BarEnumContent withConfigWithHint: BarEnumContent { value: help | home | config | hint}
+
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -328,7 +333,10 @@ ActivityBase {
                     Activity.showSolarModel()
             }
             onHintClicked: {
-                displayDialog(hintDialog)
+                if(items.assessmentMode)
+                    solarSystemImageHint.visible = true
+                else
+                    displayDialog(hintDialog)
             }
             onConfigClicked: {
                 dialogActivityConfig.active = true
