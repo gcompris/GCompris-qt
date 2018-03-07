@@ -57,11 +57,11 @@ ActivityBase {
             property alias containerModel: containerModel
             property alias mainQuizScreen: mainQuizScreen
             property alias dialogActivityConfig: dialogActivityConfig
-            property alias restartAssessmentMessage: restartAssessmentMessage
             property bool assessmentMode: false
             property bool solarSystemVisible: true
             property bool quizScreenVisible: false
-            property alias hintDialog: hintDialog
+            property string temperatureHint
+            property string lengthOfYearHint
         }
 
         onStart: {
@@ -86,7 +86,7 @@ ActivityBase {
             }
             z: 10
 
-            readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Normal mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? "Assessment" : "Normal")
+            readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Normal mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? "Assessment" : "Normal")
 
             readonly property var normalModeInstructions: [
                 commonInstruction,
@@ -97,7 +97,7 @@ ActivityBase {
             readonly property var assessmentModeInstructions: [
                 commonInstruction,
                 qsTr("There are 20 questions initially with 4 options each. The progress bar at the bottom right of the screen shows your percentage score."),
-                qsTr("If your answer is correct, your score will increase.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>There can be a maximum of 25 questions after which no more question will be added."),
+                qsTr("If your answer is correct, your score will increase.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>You can answer maximum 25 times after which no more question will be added."),
                 qsTr("You should score above 90% to pass the assessment and become a Solar System expert!")
             ]
 
@@ -198,49 +198,13 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: restartAssessmentMessage
-            width: parent.width
-            anchors.top: parent.top
-            anchors.bottom: bar.top
-            anchors.margins: 10 * ApplicationInfo.ratio
-            anchors.horizontalCenter: parent.horizontalCenter
-            radius: 4 * ApplicationInfo.ratio
-            visible: false
-            GCText {
-                anchors.fill: parent
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                wrapMode: Text.WordWrap
-                fontSizeMode: mediumSize
-                text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br>You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System.").arg(items.mainQuizScreen.progressBar.value)
-            }
-
-            //To prevent clicking on options under it
-            MouseArea {
-                anchors.fill: parent
-            }
-
-            onVisibleChanged: scaleAnimation.start()
-
-            NumberAnimation {
-                id: scaleAnimation
-                target: restartAssessmentMessage
-                properties: "scale, opacity"
-                from: 0
-                to: 1
-                duration: 1500
-                easing.type: Easing.OutBounce
-            }
-        }
-
         //Hint dialog while playing the quiz
         DialogBackground {
             id: hintDialog
             visible: false
 
-            property var hint1
-            property var hint2
+            readonly property var hint1: qsTr("1. The <b>farther</b> a planet from the Sun, the <b>lower</b> is it's temperature.<br><font color=\"#3bb0de\">%1</font>").arg(items.temperatureHint)
+            readonly property var hint2: qsTr("2. Duration of an year on a planet <b>increases as we go away from the Sun</b>.<br><font color=\"#3bb0de\">%1</font>").arg(items.lengthOfYearHint)
 
             title: qsTr("Hint")
             content: "%1<br>%2".arg(hint1).arg(hint2)
@@ -309,7 +273,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: restartAssessmentMessage.visible ? withConfigWithRestart :
+            content: items.mainQuizScreen.restartAssessmentMessage.visible ? withConfigWithRestart :
                      items.solarSystemVisible ? withConfig :
                      items.assessmentMode ? withConfigWithHint :
                      Activity.indexOfSelectedPlanet == 0 ? withoutConfigWithoutHint :
