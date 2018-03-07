@@ -86,12 +86,16 @@ ActivityBase {
             }
             z: 10
 
-            property var normalModeInstructions: [
+            readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Normal mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? "Assessment" : "Normal")
+
+            readonly property var normalModeInstructions: [
+                commonInstruction,
                 qsTr("Click on the Sun or any planet to reveal questions. Each question will have 4 options, out of which one is correct."),
                 qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter, or hint which indicates the correct answer.")
             ]
 
-            property var assessmentModeInstructions: [
+            readonly property var assessmentModeInstructions: [
+                commonInstruction,
                 qsTr("There are 20 questions initially with 4 options each. The progress bar at the bottom right of the screen shows your percentage score."),
                 qsTr("If your answer is correct, your score will increase.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>There can be a maximum of 25 questions after which no more question will be added."),
                 qsTr("You should score above 90% to pass the assessment and become a Solar System expert!")
