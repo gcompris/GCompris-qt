@@ -178,9 +178,9 @@ ActivityBase {
                     drag.target: playArea
                     drag.axis: Drag.XandYAxis
                     drag.minimumX: 0 - playArea.width * 0.75
-                    drag.maximumX: background.vert ? 0 + 90 * ApplicationInfo.ratio : 0
+                    drag.maximumX: background.vert ? 90 * ApplicationInfo.ratio : 0
                     drag.minimumY: 0 - playArea.height * 0.75
-                    drag.maximumY: background.vert ? 0 : 0 + 90 * ApplicationInfo.ratio
+                    drag.maximumY: background.vert ? 0 : 90 * ApplicationInfo.ratio
                     onClicked: {
                         Activity.deselect()
                         availablePieces.hideToolbar()
