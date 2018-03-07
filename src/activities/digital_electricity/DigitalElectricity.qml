@@ -159,19 +159,32 @@ ActivityBase {
             height: background.vert ?
                        background.height * 4 - (bar.height * 1.1) :
                        background.height * 4 - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
-                       
-            MouseArea {
-                id: mousePan
+            
+            PinchArea {
+                id: pinchZoom
                 anchors.fill: parent
-                drag.target: playArea
-                drag.axis: Drag.XandYAxis
-                drag.minimumX: 0 - playArea.width * 0.75
-                drag.maximumX: background.vert ? 0 + 90 * ApplicationInfo.ratio : 0
-                drag.minimumY: 0 - playArea.height * 0.75
-                drag.maximumY: background.vert ? 0 : 0 + 90 * ApplicationInfo.ratio
-                onClicked: {
-                    Activity.deselect()
-                    availablePieces.hideToolbar()
+                onPinchFinished: {
+                    if (pinch.scale < 1) {
+                        Activity.zoomOut()
+                    }
+                    if (pinch.scale > 1) {
+                        Activity.zoomIn()
+                    }
+                }
+                MouseArea {
+                    id: mousePan
+                    anchors.fill: parent
+                    scrollGestureEnabled: false //needed for pinchZoom
+                    drag.target: playArea
+                    drag.axis: Drag.XandYAxis
+                    drag.minimumX: 0 - playArea.width * 0.75
+                    drag.maximumX: background.vert ? 0 + 90 * ApplicationInfo.ratio : 0
+                    drag.minimumY: 0 - playArea.height * 0.75
+                    drag.maximumY: background.vert ? 0 : 0 + 90 * ApplicationInfo.ratio
+                    onClicked: {
+                        Activity.deselect()
+                        availablePieces.hideToolbar()
+                    }
                 }
             }
 
