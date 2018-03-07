@@ -6,6 +6,7 @@
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitnsit@gmail.com> (Qt Quick port)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (mouse drag refactoring)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -44,6 +45,21 @@ ActivityBase {
         signal stop
 
         property bool vert: background.width > background.height
+        
+        onVertChanged: {
+            if (playArea.x >= mousePan.drag.maximumX) {
+                playArea.x = mousePan.drag.maximumX
+            }
+            if (playArea.y >= mousePan.drag.maximumY) {
+                playArea.y = mousePan.drag.maximumY
+            }
+            if (playArea.x <= mousePan.drag.minimumX) {
+                playArea.x = mousePan.drag.minimumX
+            }
+            if (playArea.y <= mousePan.drag.minimumY) {
+                playArea.y = mousePan.drag.minimumY
+            }
+        }
 
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -59,16 +75,28 @@ ActivityBase {
                 Activity.zoomOut()
             }
             if (event.key == Qt.Key_Right) {
-                Activity.move(Activity.direction.RIGHT)
+                playArea.x -= 200;
             }
             if (event.key == Qt.Key_Left) {
-                Activity.move(Activity.direction.LEFT)
+                playArea.x += 200
             }
             if (event.key == Qt.Key_Up) {
-                Activity.move(Activity.direction.UP)
+                playArea.y += 200
             }
             if (event.key == Qt.Key_Down) {
-                Activity.move(Activity.direction.DOWN)
+                playArea.y -= 200
+            }
+            if (playArea.x >= mousePan.drag.maximumX) {
+                playArea.x = mousePan.drag.maximumX
+            }
+            if (playArea.y >= mousePan.drag.maximumY) {
+                playArea.y = mousePan.drag.maximumY
+            }
+            if (playArea.x <= mousePan.drag.minimumX) {
+                playArea.x = mousePan.drag.minimumX
+            }
+            if (playArea.y <= mousePan.drag.minimumY) {
+                playArea.y = mousePan.drag.minimumY
             }
         }
 
@@ -77,6 +105,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias playArea: playArea
+            property alias mousePan: mousePan
             property alias bar: bar
             property alias bonus: bonus
             property alias availablePieces: availablePieces
@@ -122,17 +151,24 @@ ActivityBase {
 
         Rectangle {
             id: playArea
-
-            color: "#00000000"
+            color: "#10000000"
             x: background.vert ? 90 * ApplicationInfo.ratio : 0
             y: background.vert ? 0 : 90 * ApplicationInfo.ratio
             width: background.vert ?
-                       background.width - 90 * ApplicationInfo.ratio : background.width
+                       background.width * 4 - 90 * ApplicationInfo.ratio : background.width * 4
             height: background.vert ?
-                       background.height - (bar.height * 1.1) :
-                       background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
+                       background.height * 4 - (bar.height * 1.1) :
+                       background.height * 4 - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
+                       
             MouseArea {
+                id: mousePan
                 anchors.fill: parent
+                drag.target: playArea
+                drag.axis: Drag.XandYAxis
+                drag.minimumX: 0 - playArea.width * 0.75
+                drag.maximumX: background.vert ? 0 + 90 * ApplicationInfo.ratio : 0
+                drag.minimumY: 0 - playArea.height * 0.75
+                drag.maximumY: background.vert ? 0 : 0 + 90 * ApplicationInfo.ratio
                 onClicked: {
                     Activity.deselect()
                     availablePieces.hideToolbar()

@@ -6,6 +6,7 @@
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitnsit@gmail.com> (Qt Quick port)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (mouse drag refactoring)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -39,10 +40,10 @@ var determiningComponents = []
 var processingAnswer
 
 var currentZoom
-var maxZoom = 2
-var minZoom = 0.5
-var defaultZoom = 1
-var zoomStep = 0.25
+var maxZoom = 0.5
+var minZoom = 0.125
+var defaultZoom = 0.25
+var zoomStep = 0.0625
 
 var direction = {
     LEFT: -1,
@@ -53,9 +54,9 @@ var direction = {
 
 var viewPort = {
     leftExtreme: 0,
-    rightExtreme: 2,
+    rightExtreme: 4,
     topExtreme: 0,
-    bottomExtreme: 2.5,
+    bottomExtreme: 4,
     leftEdge: 0,
     topEdge: 0
 }
@@ -101,6 +102,8 @@ function initLevel() {
     items.availablePieces.zoomOutBtn.state = "canZoomOut"
     viewPort.leftEdge = 0
     viewPort.topEdge = 0
+    items.playArea.x = items.mousePan.drag.maximumX
+    items.playArea.y = items.mousePan.drag.maximumY
 
     if (!items.isTutorialMode) {
         items.tutorialInstruction.index = -1
@@ -371,54 +374,6 @@ function updateComponentDimension(zoomRatio) {
         components[i].posY *= zoomRatio
         components[i].imgWidth *= zoomRatio
         components[i].imgHeight *= zoomRatio
-    }
-}
-
-function move(_direction) {
-    var x = 0, y = 0
-    if (_direction == direction.RIGHT) {
-        x = 0.1
-    } else if (_direction == direction.LEFT) {
-        x = -0.1
-    } else if (_direction == direction.UP) {
-        y = -0.1
-    } else if (_direction == direction.DOWN) {
-        y = 0.1
-    }
-
-    if (x == 0.1) {
-        var viewPortRightEdge = Math.round(((viewPort.leftEdge + 0.1) + (1 / currentZoom)) * 100) / 100
-        if (viewPortRightEdge > viewPort.rightExtreme) {
-            return
-        } else {
-            viewPort.leftEdge = Math.round((viewPort.leftEdge + 0.1) * 100) / 100
-        }
-    } else if (x == -0.1) {
-        var viewportLeftEdge = Math.round(((viewPort.leftEdge - 0.1)) * 100) / 100
-        if (viewportLeftEdge < viewPort.leftExtreme) {
-            return
-        } else {
-            viewPort.leftEdge = Math.round((viewPort.leftEdge - 0.1) * 100) / 100
-        }
-    } else if (y == 0.1) {
-        var viewPortBottomEdge = Math.round(((viewPort.topEdge + 0.1) + (1 / currentZoom)) * 100) / 100
-        if (viewPortBottomEdge > viewPort.bottomExtreme) {
-            return
-        } else {
-            viewPort.topEdge = Math.round((viewPort.topEdge + 0.1) * 100) / 100
-        }
-    } else if (y == -0.1) {
-        var viewportTopEdge = Math.round((viewPort.topEdge - 0.1) * 100) / 100
-        if (viewportTopEdge < viewPort.topExtreme) {
-            return
-        } else {
-            viewPort.topEdge = Math.round((viewPort.topEdge - 0.1) * 100) / 100
-        }
-    }
-
-    for (var i = 0; i < components.length; i++) {
-        components[i].posX -= (x * currentZoom)
-        components[i].posY -= (y * currentZoom)
     }
 }
 
