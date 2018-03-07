@@ -61,13 +61,15 @@ function initLevel() {
 function showSolarModel() {
     items.quizScreenVisible = false
     items.solarSystemVisible = true
-    items.restartAssessmentMessage.visible = false
+    items.mainQuizScreen.restartAssessmentMessage.visible = false
 }
 
 function startAssessmentMode() {
     items.solarSystemVisible = false
     items.quizScreenVisible = true
-    items.restartAssessmentMessage.visible = false
+    items.mainQuizScreen.restartAssessmentMessage.visible = false
+    items.mainQuizScreen.numberOfCorrectAnswers = 0
+    items.mainQuizScreen.score.numberOfSubLevels = 20
     currentSubLevel = 0
     assessmentModeQuestions = []
     allQuestions = []
@@ -77,10 +79,8 @@ function startAssessmentMode() {
             allQuestions.push(dataset[i].levels[j])
     }
 
-    items.mainQuizScreen.score.numberOfSubLevels = 20
     Core.shuffle(allQuestions)
     assessmentModeQuestions = allQuestions.slice(0, 20)
-    items.mainQuizScreen.numberOfCorrectAnswers = 0
     nextSubLevel(true)
 }
 
@@ -93,7 +93,6 @@ function appendAndAddQuestion() {
     else if(items.mainQuizScreen.numberOfCorrectAnswers)
         items.mainQuizScreen.numberOfCorrectAnswers--
     assessmentModeQuestions.push(incorrectAnsweredQuestion)
-    currentSubLevel--
     nextSubLevel(true)
 }
 
@@ -104,19 +103,18 @@ function showQuizScreen(index) {
     items.quizScreenVisible = true
     currentPlanetLevels = dataset[index].levels
     items.mainQuizScreen.planetRealImage = dataset[index].realImg
-    items.hintDialog.hint1 = qsTr("1. The <b>farther</b> a planet from the Sun, the <b>lower</b> is it's temperature.<br><font color=\"#3bb0de\">%1</font>").arg(dataset[indexOfSelectedPlanet].temperatureHint)
-    items.hintDialog.hint2 = qsTr("2. Duration of an year on a planet <b>increases as we go away from the Sun</b>.<br><font color=\"#3bb0de\">%1</font>").arg(dataset[indexOfSelectedPlanet].lengthOfYearHint)
-    initLevel();
+    items.temperatureHint = dataset[indexOfSelectedPlanet].temperatureHint
+    items.lengthOfYearHint = dataset[indexOfSelectedPlanet].lengthOfYearHint
+    initLevel()
 }
 
 function nextSubLevel(isAssessmentMode) {
     items.mainQuizScreen.closenessValueInMeter = 0
-    if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels) {
-        if(!items.assessmentMode || items.mainQuizScreen.progressBar.value >= 90)
-            items.bonus.good("flower")
-        else {
-            items.restartAssessmentMessage.visible = true
-        }
+    if(items.assessmentMode && (items.mainQuizScreen.numberOfSubLevels >= 25 || currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)) {
+        items.mainQuizScreen.restartAssessmentMessage.visible = true
+    }
+    else if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels) {
+        items.bonus.good("flower")
     }
     else {
         if(!isAssessmentMode)

@@ -34,6 +34,7 @@ Item {
     property alias score: score
     property alias optionListModel: optionListModel
     property alias progressBar: progressBar
+    property alias restartAssessmentMessage: restartAssessmentMessage
     property string planetRealImage
     property string question
     property string closenessValueInMeter
@@ -172,8 +173,8 @@ Item {
                             }
                             else if(items.assessmentMode) {
                                 Activity.assessmentModeQuestions.shift()
-                                Activity.nextSubLevel(true)
                                 mainQuizScreen.numberOfCorrectAnswers++
+                                Activity.nextSubLevel(true)
                             }
                             else {
                                 Activity.nextSubLevel(false)
@@ -183,14 +184,6 @@ Item {
                 }
             }
         }
-    }
-
-    Score {
-        id: score
-        anchors.bottom: undefined
-        anchors.right: parent.right
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
-        anchors.top: parent.top
     }
 
     Rectangle {
@@ -269,5 +262,51 @@ Item {
             text: progressBar.message
             z: 2
         }
+    }
+
+    Rectangle {
+        id: restartAssessmentMessage
+        width: parent.width
+        height: parent.height - bar.height * 1.25
+        anchors.top: parent.top
+        anchors.margins: 10 * ApplicationInfo.ratio
+        anchors.horizontalCenter: parent.horizontalCenter
+        radius: 4 * ApplicationInfo.ratio
+        visible: false
+        z: 4
+        GCText {
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
+            fontSizeMode: mediumSize
+            text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2").arg(items.mainQuizScreen.progressBar.value).arg(progressBar.value <= 90 ? "You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System." : "Great! Restart again to test your knowledge on more questions.")
+        }
+
+        //To prevent clicking on options under it
+        MouseArea {
+            anchors.fill: parent
+        }
+
+        onVisibleChanged: scaleAnimation.start()
+
+        NumberAnimation {
+            id: scaleAnimation
+            target: restartAssessmentMessage
+            properties: "scale, opacity"
+            from: 0
+            to: 1
+            duration: 1500
+            easing.type: Easing.OutBounce
+        }
+    }
+
+    Score {
+        id: score
+        anchors.bottom: undefined
+        anchors.right: parent.right
+        anchors.rightMargin: 10 * ApplicationInfo.ratio
+        anchors.top: parent.top
+        z: 0
     }
 }
