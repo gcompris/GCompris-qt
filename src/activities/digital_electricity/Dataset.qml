@@ -239,9 +239,9 @@ QtObject {
                 return A | (B & C)
             },
             introMessage: [
-                qsTr("Light the bulb using the components provided such that the bulb will glow under the following two circumstances:"),
-                qsTr("1. The first switch is turned ON, or"),
-                qsTr("2. Both of the second and the third switches are turned on.")
+                qsTr("Light the bulb using the components provided such that the bulb will glow under the following two circumstances:\n" +
+                     "1. The first switch is turned ON, or\n" +
+                     "2. Both of the second and the third switches are turned on.")
             ]
         },
         // level 8
