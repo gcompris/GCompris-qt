@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef DOWNLOADMANAGER_H
@@ -119,7 +119,7 @@ private:
      * Uses QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
      * which returns
      *   - on desktop linux $HOME/.cache/KDE/gcompris-qt/
-     *   - on other platforms check <http://doc.qt.io/qt-5/qstandardpaths.html>
+     *   - on other platforms check <https://doc.qt.io/qt-5/qstandardpaths.html>
      *
      * @return An absolute path.
      */

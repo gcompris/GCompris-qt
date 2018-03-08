@@ -254,7 +254,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="activities/sudoku/ActivityInfo.qml" line="31"/>
-        <source>The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids (called &apos;regions&apos;), starting with various symbols or numerals given in some cells (the &apos;givens&apos;). Each row, column and region must contain only one instance of each symbol or numeral (Source &amp;lt;http://en.wikipedia.org/wiki/Sudoku&amp;gt;).</source>
+        <source>The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids (called &apos;regions&apos;), starting with various symbols or numerals given in some cells (the &apos;givens&apos;). Each row, column and region must contain only one instance of each symbol or numeral (Source &amp;lt;https://en.wikipedia.org/wiki/Sudoku&amp;gt;).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -546,7 +546,7 @@ In case of paints the inks absorb different colors of light falling on it, subtr
     </message>
     <message>
         <location filename="activities/lightsoff/ActivityInfo.qml" line="15"/>
-        <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
+        <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;https://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2490,7 +2490,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
     <message>
         <location filename="core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
+        <source>GCompris Home Page: https://gcompris.net</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

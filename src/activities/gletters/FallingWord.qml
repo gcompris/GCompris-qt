@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
@@ -60,7 +60,7 @@ Item {
         else if (wordText.text.length > 0 && wordText.text.length >= unmatchedIndex) {
             highlightedWordText.text = wordText.text.substring(0, unmatchedIndex);
             /* Need to add the ZERO WIDTH JOINER to force joined char in Arabic and
-             * Hangul: http://en.wikipedia.org/wiki/Zero-width_joiner
+             * Hangul: https://en.wikipedia.org/wiki/Zero-width_joiner
              *
              * FIXME: this works only on desktop systems, on android this
              * shifts the typed word a few pixels down. */

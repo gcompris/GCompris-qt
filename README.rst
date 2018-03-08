@@ -1,13 +1,13 @@
 *********************************
-`GCompris <http://gcompris.net>`_
+`GCompris <https://gcompris.net>`_
 *********************************
 
 .. image:: src/core/resource/gcompris.png
 
 Presentation
 ============
-`GCompris <http://gcompris.net>`_ is a high quality educational software suite, 
-including a large number of activities for children aged 2 to 10. 
+`GCompris <https://gcompris.net>`_ is a high quality educational software suite, 
+including a large number of activities for children aged 2 to 10.
 Some of the activities are game orientated, but nonetheless still educational.
 
 Currently GCompris offers in excess of 100 activities and more are being
@@ -59,4 +59,4 @@ Licence
 =======
 
 GCompris is free software released under the `GPL V3+
-<http://www.gnu.org/licenses/gpl-3.0.fr.html>`_.
+<https://www.gnu.org/licenses/gpl-3.0.fr.html>`_.

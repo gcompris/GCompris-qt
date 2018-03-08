@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -38,6 +38,6 @@ The activity deals with mixing primary colors of light (additive mixing).
 
 In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
         ")
-  credit: "http://openclipart.org"
+  credit: "https://openclipart.org"
   section: "experiment color"
 }

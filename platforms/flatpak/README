@@ -1,6 +1,6 @@
 # Documentation of a way to build a flatpak
 
-First install flatpak as documented on http://flatpak.org/
+First install flatpak as documented on https://flatpak.org/
 
 This approach is based on the ability of GCompris on linux to be build
 as a standalone.  It will thus package the libraries comming from the
@@ -48,8 +48,6 @@ flatpak --user remote-delete gcompris-repo
 rsync -az flatpak-repo gcompris.net:/var/www/
 
 # Test it from the remote
-flatpak --user remote-add --no-gpg-verify gcompris-repo http://gcompris.net/flatpak-repo
+flatpak --user remote-add --no-gpg-verify gcompris-repo https://gcompris.net/flatpak-repo
 flatpak --user install gcompris-repo net.gcompris.GCompris
 flatpak run net.gcompris.GCompris
-
-

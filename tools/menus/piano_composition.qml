@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -25,7 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Piano Composition")
   description: qsTr("An activity to learn how the piano keyboard works, how notes are written on a musical staff and explore music composition by loading and saving your work.")
-  goal: qsTr("Develop an understanding of music composition, and increase interest in making music with a piano keyboard. This activity covers many fundamental aspects of music, but there is much more to explore about music composition. If you enjoy this activity but want a more advanced tool, try downloading MuseScore (http://musescore.org/en/download), an open source music notation tool.")
+  goal: qsTr("Develop an understanding of music composition, and increase interest in making music with a piano keyboard. This activity covers many fundamental aspects of music, but there is much more to explore about music composition. If you enjoy this activity but want a more advanced tool, try downloading MuseScore (https://musescore.org/download), an open source music notation tool.")
   prerequisite: qsTr("Familiarity with note naming conventions, note-names activity useful to learn this notation.")
   manual: qsTr("This activity has several levels, each level adds a new functionality to the previous level.
 Level 1: basic piano keyboard (white keys only) and students can experiment with clicking the colored rectangle keys to write music

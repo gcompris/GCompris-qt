@@ -15,7 +15,7 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program; if not, see <http://www.gnu.org/licenses/>.
+#   along with this program; if not, see <https://www.gnu.org/licenses/>.
 
 import sys
 import json
@@ -73,9 +73,9 @@ for chapter in data:
             print "#. " + chapter['name'] + \
                 " / " + lesson['name'] + \
                 " / " + word['description'] + \
-                ": http://gcompris.net/incoming/lang/words.html#" + \
+                ": https://gcompris.net/incoming/lang/words.html#" + \
                 word['image'].split('/')[-1].split(".")[0]
-            print "#: " + "http://gcompris.net/incoming/lang/words.html#" + \
+            print "#: " + "https://gcompris.net/incoming/lang/words.html#" + \
                 word['image'].split('/')[-1].split(".")[0]
             print 'msgctxt "LangWords|"'
             print 'msgid "' + word['description'] + '"'

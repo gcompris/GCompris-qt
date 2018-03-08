@@ -15,12 +15,12 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program; if not, see <http://www.gnu.org/licenses/>.
+#   along with this program; if not, see <https://www.gnu.org/licenses/>.
 #import os
 import urllib2
 import sys
 
-# code from http://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
+# code from https://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
 def download_file(file, output_dir):
     u = urllib2.urlopen(file)
     file_name = output_dir + "/" + file.split('/')[-1]
@@ -52,7 +52,7 @@ if len(sys.argv) != 4:
 """Download the voices and words assets depending on the wanted audio format
 """
 
-DOWNLOAD_PATH = "http://gcompris.net/data2/"
+DOWNLOAD_PATH = "https://gcompris.net/data2/"
 AUDIO_FORMAT = sys.argv[2]
 OUTPUT_FOLDER = sys.argv[3]+"/data2/"
 

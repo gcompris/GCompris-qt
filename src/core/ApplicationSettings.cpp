@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include "ApplicationSettings.h"
@@ -154,7 +154,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
-    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "http://gcompris.net").toString();
+    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "https://gcompris.net").toString();
     m_cachePath = m_config.value(CACHE_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::CacheLocation)).toString();
     m_config.endGroup();
 

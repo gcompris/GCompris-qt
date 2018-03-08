@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -138,7 +138,7 @@ Item {
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width
                 wrapMode: TextEdit.WordWrap
-                text: qsTr("On <a href='http://gcompris.net'>http://gcompris.net</a> " +
+                text: qsTr("On <a href='https://gcompris.net'>https://gcompris.net</a> " +
                            "you will find the instructions to obtain an activation code.")
                 Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
                                            linkActivated.connect(Qt.openUrlExternally) : null
