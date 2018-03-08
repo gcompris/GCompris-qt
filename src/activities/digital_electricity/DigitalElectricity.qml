@@ -45,21 +45,6 @@ ActivityBase {
         signal stop
 
         property bool vert: background.width > background.height
-        
-        onVertChanged: {
-            if (playArea.x >= mousePan.drag.maximumX) {
-                playArea.x = mousePan.drag.maximumX
-            }
-            if (playArea.y >= mousePan.drag.maximumY) {
-                playArea.y = mousePan.drag.maximumY
-            }
-            if (playArea.x <= mousePan.drag.minimumX) {
-                playArea.x = mousePan.drag.minimumX
-            }
-            if (playArea.y <= mousePan.drag.minimumY) {
-                playArea.y = mousePan.drag.minimumY
-            }
-        }
 
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -99,6 +84,23 @@ ActivityBase {
                 playArea.y = mousePan.drag.minimumY
             }
         }
+        
+        onWidthChanged: {
+            if (playArea.x > mousePan.drag.maximumX) {
+                playArea.x = mousePan.drag.maximumX
+            }
+            if (playArea.x < mousePan.drag.minimumX) {
+                playArea.x = mousePan.drag.minimumX
+            }
+        }
+        onHeightChanged: {
+            if (playArea.y > mousePan.drag.maximumY) {
+                playArea.y = mousePan.drag.maximumY
+            }
+            if (playArea.y < mousePan.drag.minimumY) {
+                playArea.y = mousePan.drag.minimumY
+            }
+        }
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -118,7 +120,8 @@ ActivityBase {
             property alias infoImage: infoImage
             property bool isTutorialMode: activity.isTutorialMode
             property alias tutorialInstruction: tutorialInstruction
-            property int toolsMargin: 90 * ApplicationInfo.ratio
+            property var toolsMargin: 90 * ApplicationInfo.ratio
+            property var zoomLvl: 0.25
         }
 
         Loader {
@@ -365,9 +368,9 @@ ActivityBase {
                     scrollGestureEnabled: false //needed for pinchZoom
                     drag.target: playArea
                     drag.axis: Drag.XandYAxis
-                    drag.minimumX: 0 - playArea.width * 0.75
+                    drag.minimumX: 0 - playArea.width * items.zoomLvl
                     drag.maximumX: background.vert ? items.toolsMargin : 0
-                    drag.minimumY: 0 - playArea.height * 0.75
+                    drag.minimumY: 0 - playArea.height * items.zoomLvl
                     drag.maximumY: background.vert ? 0 : items.toolsMargin
                     onClicked: {
                         Activity.deselect()
