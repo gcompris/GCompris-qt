@@ -40,7 +40,7 @@ var determiningComponents = []
 var processingAnswer
 
 var currentZoom
-var maxZoom = 0.5
+var maxZoom = 0.375
 var minZoom = 0.125
 var defaultZoom = 0.25
 var zoomStep = 0.0625
@@ -54,9 +54,9 @@ var direction = {
 
 var viewPort = {
     leftExtreme: 0,
-    rightExtreme: 4,
+    rightExtreme: 1,
     topExtreme: 0,
-    bottomExtreme: 4,
+    bottomExtreme: 1,
     leftEdge: 0,
     topEdge: 0
 }
@@ -350,6 +350,10 @@ function zoomIn() {
         items.availablePieces.zoomInBtn.state = "canZoomIn"
     }
     items.availablePieces.zoomOutBtn.state = "canZoomOut"
+    
+    if (items.zoomLvl < 0.5) {
+        items.zoomLvl += 0.125
+    }
 }
 
 function zoomOut() {
@@ -366,6 +370,10 @@ function zoomOut() {
         items.availablePieces.zoomOutBtn.state = "canZoomOut"
     }
     items.availablePieces.zoomInBtn.state = "canZoomIn"
+
+    if (items.zoomLvl > 0) {
+        items.zoomLvl -= 0.125
+    }
 }
 
 function updateComponentDimension(zoomRatio) {
