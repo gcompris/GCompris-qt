@@ -203,7 +203,7 @@ ActivityBase {
                 }
             }
 
-            // Scroll Butons
+            // Scroll buttons
             GCButtonScroll {
                 id: colorSelectorButton
                 isHorizontal: true
