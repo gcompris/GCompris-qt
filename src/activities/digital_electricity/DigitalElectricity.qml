@@ -113,8 +113,8 @@ ActivityBase {
             property alias infoImage: infoImage
             property bool isTutorialMode: activity.isTutorialMode
             property alias tutorialInstruction: tutorialInstruction
-            property var toolsMargin: 90 * ApplicationInfo.ratio
-            property var zoomLvl: 0.25
+            property real toolsMargin: 90 * ApplicationInfo.ratio
+            property real zoomLvl: 0.25
         }
 
         Loader {
@@ -361,9 +361,9 @@ ActivityBase {
                     scrollGestureEnabled: false //needed for pinchZoom
                     drag.target: playArea
                     drag.axis: Drag.XandYAxis
-                    drag.minimumX: 0 - playArea.width * items.zoomLvl
+                    drag.minimumX: - playArea.width * items.zoomLvl
                     drag.maximumX: background.hori ? items.toolsMargin : 0
-                    drag.minimumY: 0 - playArea.height * items.zoomLvl
+                    drag.minimumY: - playArea.height * items.zoomLvl
                     drag.maximumY: background.hori ? 0 : items.toolsMargin
                     onClicked: {
                         Activity.deselect()
