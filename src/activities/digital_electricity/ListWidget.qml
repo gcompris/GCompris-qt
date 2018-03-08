@@ -31,7 +31,7 @@ Item {
     anchors.leftMargin: 5 * ApplicationInfo.ratio
     z: 10
 
-    property bool vert
+    property bool hori
     property alias model: mymodel
     property alias view: view
     property alias repeater: repeater
@@ -45,7 +45,7 @@ Item {
     signal hideToolbar
     onHideToolbar: toolButton.showToolBar = false
 
-    property int minIconWidth: listWidget.vert ? Math.min((background.width - 1.5*view.width) / 6, 100) : Math.min((background.height - 1.5*bar.height - view.height) / 6, 100)
+    property int minIconWidth: listWidget.hori ? Math.min((background.width - 1.5*view.width) / 6, 100) : Math.min((background.height - 1.5*bar.height - view.height) / 6, 100)
 
     ListModel {
         id: mymodel
@@ -53,16 +53,16 @@ Item {
 
     Grid {
         id: view
-        width: listWidget.vert ? inputComponentsContainer.width : 2 * bar.height
-        height: listWidget.vert ? background.height - 2 * bar.height : bar.height
+        width: listWidget.hori ? inputComponentsContainer.width : 2 * bar.height
+        height: listWidget.hori ? background.height - 2 * bar.height : bar.height
         spacing: 5
         z: 20
-        columns: listWidget.vert ? 1 : nbItemsByGroup + 2
+        columns: listWidget.hori ? 1 : nbItemsByGroup + 2
 
         property int currentDisplayedGroup: 0
         property int setCurrentDisplayedGroup: 0
         property int nbItemsByGroup:
-            listWidget.vert ?
+            listWidget.hori ?
                 parent.height / iconSize - 2 :
                 parent.width / iconSize - 2
 
@@ -106,7 +106,7 @@ Item {
 
         Image {
             id: toolButton
-            width: (listWidget.vert ? listWidget.width : listWidget.height) - listWidget.anchors.leftMargin
+            width: (listWidget.hori ? listWidget.width : listWidget.height) - listWidget.anchors.leftMargin
             height: width
             sourceSize.width: width
             sourceSize.height: height
@@ -123,10 +123,10 @@ Item {
             Rectangle {
                 id: toolsContainer
                 visible: toolButton.showToolBar
-                width: listWidget.vert ? (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4 : parent.width
-                height: listWidget.vert ? parent.width : (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
-                anchors.top: listWidget.vert ? parent.top : parent.bottom
-                anchors.left: listWidget.vert ? parent.right : parent.left
+                width: listWidget.hori ? (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4 : parent.width
+                height: listWidget.hori ? parent.width : (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
+                anchors.top: listWidget.hori ? parent.top : parent.bottom
+                anchors.left: listWidget.hori ? parent.right : parent.left
                 color: "#2a2a2a"
                 radius: 4 * ApplicationInfo.ratio
 
@@ -140,8 +140,8 @@ Item {
 
                     anchors {
                         fill: parent
-                        leftMargin: listWidget.vert ? 8 * ApplicationInfo.ratio : tools.leftMarginAmt
-                        topMargin: listWidget.vert ? tools.topMarginAmt : 8 * ApplicationInfo.ratio
+                        leftMargin: listWidget.hori ? 8 * ApplicationInfo.ratio : tools.leftMarginAmt
+                        topMargin: listWidget.hori ? tools.topMarginAmt : 8 * ApplicationInfo.ratio
                     }
                     spacing: 4 * ApplicationInfo.ratio
 
