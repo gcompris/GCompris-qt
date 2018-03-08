@@ -44,7 +44,7 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool vert: background.width > background.height
+        property bool hori: background.width > background.height
 
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -85,20 +85,13 @@ ActivityBase {
             }
         }
         
-        onWidthChanged: {
-            if (playArea.x > mousePan.drag.maximumX) {
-                playArea.x = mousePan.drag.maximumX
-            }
-            if (playArea.x < mousePan.drag.minimumX) {
-                playArea.x = mousePan.drag.minimumX
-            }
-        }
-        onHeightChanged: {
-            if (playArea.y > mousePan.drag.maximumY) {
-                playArea.y = mousePan.drag.maximumY
-            }
-            if (playArea.y < mousePan.drag.minimumY) {
-                playArea.y = mousePan.drag.minimumY
+        onHoriChanged: {
+            if (hori == true) {
+                playArea.x += items.toolsMargin
+                playArea.y -= items.toolsMargin
+            } else {
+                playArea.x -= items.toolsMargin
+                playArea.y += items.toolsMargin
             }
         }
 
@@ -136,15 +129,15 @@ ActivityBase {
         IntroMessage {
             id: tutorialInstruction
             intro: []
-            textContainerWidth: background.vert ? parent.width - inputComponentsContainer.width - items.toolsMargin : 0.9 * background.width
-            textContainerHeight: background.vert ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 1.1) - items.toolsMargin
+            textContainerWidth: background.hori ? parent.width - inputComponentsContainer.width - items.toolsMargin : 0.9 * background.width
+            textContainerHeight: background.hori ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 1.1) - items.toolsMargin
             anchors {
                 fill: undefined
-                top: background.vert ? parent.top : inputComponentsContainer.bottom
+                top: background.hori ? parent.top : inputComponentsContainer.bottom
                 topMargin: 10
                 right: parent.right
                 rightMargin: 5
-                left: background.vert ? inputComponentsContainer.right : parent.left
+                left: background.hori ? inputComponentsContainer.right : parent.left
                 leftMargin: 5
             }
             z: 5
@@ -156,15 +149,15 @@ ActivityBase {
         Rectangle {
             id: visibleArea
             color: "#00000000"
-            width: background.vert ? background.width - items.toolsMargin - 10 : background.width - 10
-            height: background.vert ? background.height - bar.height - items.toolsMargin - 10 : background.height - bar.height - 10
+            width: background.hori ? background.width - items.toolsMargin - 10 : background.width - 10
+            height: background.hori ? background.height - bar.height - items.toolsMargin - 10 : background.height - bar.height - 10
             anchors {
                 fill: undefined
-                top: background.vert ? parent.top : inputComponentsContainer.bottom
+                top: background.hori ? parent.top : inputComponentsContainer.bottom
                 topMargin: 5
                 right: parent.right
                 rightMargin: 5
-                left: background.vert ? inputComponentsContainer.right : parent.left
+                left: background.hori ? inputComponentsContainer.right : parent.left
                 leftMargin: 5
                 bottom: bar.top
                 bottomMargin: 20
@@ -343,11 +336,11 @@ ActivityBase {
         Rectangle {
             id: playArea
             color: "#10000000"
-            x: background.vert ? items.toolsMargin : 0
-            y: background.vert ? 0 : items.toolsMargin
-            width: background.vert ?
+            x: background.hori ? items.toolsMargin : 0
+            y: background.hori ? 0 : items.toolsMargin
+            width: background.hori ?
                        background.width * 4 - items.toolsMargin : background.width * 4
-            height: background.vert ?
+            height: background.hori ?
                        background.height * 4 - (bar.height * 1.1) :
                        background.height * 4 - (bar.height * 1.1) - items.toolsMargin
             
@@ -369,9 +362,9 @@ ActivityBase {
                     drag.target: playArea
                     drag.axis: Drag.XandYAxis
                     drag.minimumX: 0 - playArea.width * items.zoomLvl
-                    drag.maximumX: background.vert ? items.toolsMargin : 0
+                    drag.maximumX: background.hori ? items.toolsMargin : 0
                     drag.minimumY: 0 - playArea.height * items.zoomLvl
-                    drag.maximumY: background.vert ? 0 : items.toolsMargin
+                    drag.maximumY: background.hori ? 0 : items.toolsMargin
                     onClicked: {
                         Activity.deselect()
                         availablePieces.hideToolbar()
@@ -382,23 +375,23 @@ ActivityBase {
 
         Rectangle {
             id: inputComponentsContainer
-            width: background.vert ?
+            width: background.hori ?
                        items.toolsMargin :
                        background.width
-            height: background.vert ?
+            height: background.hori ?
                         background.height :
                         items.toolsMargin
             color: "#4A3823"
             anchors.left: parent.left
             Image {
                 anchors.fill: parent
-                anchors.rightMargin: background.vert ? 3 * ApplicationInfo.ratio : 0
-                anchors.bottomMargin: background.vert ? 0 : 3 * ApplicationInfo.ratio
+                anchors.rightMargin: background.hori ? 3 * ApplicationInfo.ratio : 0
+                anchors.bottomMargin: background.hori ? 0 : 3 * ApplicationInfo.ratio
                 source: Activity.url + "texture01.png"
                 fillMode: Image.Tile
                 ListWidget {
                     id: availablePieces
-                    vert: background.vert ? true : false
+                    hori: background.hori
                 }
             }
             z: 10
