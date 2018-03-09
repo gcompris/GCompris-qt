@@ -227,8 +227,10 @@ ActivityBase {
         // ok button
         Image {
             id: playLabel
-            width: rootWindow.height / 13
+            width: ballNumberPlate.height
             height: width
+            sourceSize.width: width
+            sourceSize.height: width
             source: Activity.url + "bar_ok.svg"
             anchors {
                 left: ballNumberPlate.right
@@ -265,11 +267,13 @@ ActivityBase {
         // Number of balls to be placed
         Image {
             id: ballNumberPlate
-            y: rootWindow.height / 3.1
+            y: rootWindow.height * 0.32
             source: items.isPlayer1Turn ? Activity.url + "score_1.svg" :
                                           Activity.url + "score_2.svg"
-            width: rootWindow.height / 7
-            height: rootWindow.height / 9
+            width: bar.height
+            height: bar.height * 0.7
+            sourceSize.width: width
+            sourceSize.height: height
 
             anchors {
                 left: rootWindow.left
@@ -302,7 +306,7 @@ ActivityBase {
                 id: ballIcon
                 source: items.isPlayer1Turn ? Activity.url + "ball_1b.svg" :
                                               Activity.url + "ball_2b.svg"
-                sourceSize.width: rootWindow.height / 12
+                sourceSize.width: parent.height * 0.8
                 width: sourceSize.width
                 height: sourceSize.width
                 anchors {
