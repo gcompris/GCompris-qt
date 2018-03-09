@@ -251,8 +251,8 @@ function planeMove() {
     if(items.plane.y < 0) {
         items.plane.y = 0;
     }
-    if(items.plane.y + items.plane.height > items.background.height) {
-        items.plane.y = items.background.height - items.plane.height;
+    if(items.plane.y + items.plane.height > items.background.height - items.bar.height) {
+        items.plane.y = items.background.height - (items.plane.height + items.bar.height);
     }
 
 }

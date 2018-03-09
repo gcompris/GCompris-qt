@@ -110,7 +110,10 @@ ActivityBase {
         Score {
             id: score
             visible: false
-            fontSize: 24
+            fontSize: background.width > background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
+            height: internalTextComponent.height + 10
+            anchors.bottom: bar.top
+            anchors.margins: 10
         }
 
         property int movePlaneTimerCounter: 0
