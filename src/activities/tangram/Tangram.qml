@@ -132,8 +132,8 @@ ActivityBase {
                     sourceSize.width: modelData.width * background.playWidth
                     sourceSize.height: modelData.height * background.playWidth
                     z: index
-                    rotation: modelData.flipping ? 360 - modelData.rotation : modelData.rotation
-                    mirror: modelData.flipping ? true : false
+                    rotation: modelData.rotation
+                    mirror: modelData.flipping ? true : false
                     visible: true
                 }
             }
@@ -303,7 +303,7 @@ ActivityBase {
             }
         }
 
-        // We use a timere here because we have to check only once the potential
+        // We use a timer here because we have to check only once the potential
         // animation are over
         Timer {
             id: checkWinTimer
