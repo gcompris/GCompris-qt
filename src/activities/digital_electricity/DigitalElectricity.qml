@@ -229,8 +229,8 @@ ActivityBase {
                 visible: infoTxt.visible && displayTruthTable
                 property int inputs: truthTablesModel.inputs
                 property int outputs: truthTablesModel.outputs
-                property int cellSize: Math.min(parent.height - infoTxt.height - 20, (inputs > 2 ? 0.6 :
-                                       0.45) * parent.height) / truthTablesModel.rows
+                property int cellSize: Math.min(parent.height - infoTxt.height - 20, (inputs > 2 ? 0.65 :
+                                       0.5) * parent.height) / (truthTablesModel.rows + 1)
                 property int minSize: 2 * cellSize
                 height: cellSize
                 anchors {
@@ -238,18 +238,16 @@ ActivityBase {
                     horizontalCenter: parent.horizontalCenter
                 }
                 Rectangle {
-                    color: "#c7ecfb"
+                    color: "#A7D9F9"
                     width: Math.max(inputOutputTxt.minSize, inputOutputTxt.cellSize * inputOutputTxt.inputs)
                     height: inputOutputTxt.cellSize
-                    border.color: "black"
+                    border.color: "#373737"
                     border.width: 1
                     GCText {
                         anchors.centerIn: parent
                         fontSizeMode: Text.Fit
                         minimumPixelSize: 10
-                        color: "white"
-                        style: Text.Outline
-                        styleColor: "black"
+                        color: "#353535"
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: parent.height
@@ -258,18 +256,16 @@ ActivityBase {
                     }
                 }
                 Rectangle {
-                    color: "#47ffc2"
+                    color: "#A7F9DD"
                     width: Math.max(inputOutputTxt.minSize, inputOutputTxt.cellSize * inputOutputTxt.outputs) * 1.5
                     height: inputOutputTxt.cellSize
-                    border.color: "black"
+                    border.color: "#373737"
                     border.width: 1
                     GCText {
                         anchors.centerIn: parent
                         fontSizeMode: Text.Fit
                         minimumPixelSize: 10
-                        color: "white"
-                        style: Text.Outline
-                        styleColor: "black"
+                        color: "#353535"
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: parent.height
@@ -301,14 +297,14 @@ ActivityBase {
                                    (inputOutputTxt.inputs > 1 ? inputOutputTxt.cellSize : inputOutputTxt.minSize) :
                                    (inputOutputTxt.outputs > 1 ? inputOutputTxt.cellSize : inputOutputTxt.minSize) * 1.5
                             height: inputOutputTxt.cellSize
-                            border.color: "black"
+                            border.color: "#373737"
                             border.width: 1
                             color: {
                                 if(truthTablesModel.inputs == 1) {
-                                    return index%2 == 0 ? "#c7ecfb" : "#47ffc2"
+                                    return index%2 == 0 ? "#A7D9F9" : "#A7F9DD"
                                 }
                                 else {
-                                    return ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ? "#c7ecfb" : "#47ffc2"
+                                    return ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ? "#A7D9F9" : "#A7F9DD"
                                 }
                             }
                                    
@@ -317,9 +313,7 @@ ActivityBase {
                                 anchors.centerIn: parent
                                 fontSizeMode: Text.Fit
                                 minimumPixelSize: 10
-                                color: "white"
-                                style: Text.Outline
-                                styleColor: "black"
+                                color: "#353535"
                                 horizontalAlignment: Text.AlignHCenter
                                 height: parent.height
                                 width: parent.width
