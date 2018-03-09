@@ -229,9 +229,9 @@ ActivityBase {
                 visible: infoTxt.visible && displayTruthTable
                 property int inputs: truthTablesModel.inputs
                 property int outputs: truthTablesModel.outputs
-                property int cellSize: Math.min(parent.height - infoTxt.height - 20, (inputs > 2 ? 0.65 :
-                                       0.5) * parent.height) / (truthTablesModel.rows + 1)
-                property int minSize: 2 * cellSize
+                property int cellSize: (inputs > 2 ? 0.65 : 0.5) * parent.height / (truthTablesModel.rows + 1)
+                property int maxWidth: Math.min(cellSize, parent.width * 0.95 / truthTablesModel.columns)
+                property int minSize: 2.5 * cellSize
                 height: cellSize
                 anchors {
                     top: infoTxt.bottom
@@ -239,7 +239,7 @@ ActivityBase {
                 }
                 Rectangle {
                     color: "#A7D9F9"
-                    width: Math.max(inputOutputTxt.minSize, inputOutputTxt.cellSize * inputOutputTxt.inputs)
+                    width: inputOutputTxt.inputs > 1 ? inputOutputTxt.maxWidth * inputOutputTxt.inputs : inputOutputTxt.minSize
                     height: inputOutputTxt.cellSize
                     border.color: "#373737"
                     border.width: 1
@@ -257,7 +257,7 @@ ActivityBase {
                 }
                 Rectangle {
                     color: "#A7F9DD"
-                    width: Math.max(inputOutputTxt.minSize, inputOutputTxt.cellSize * inputOutputTxt.outputs) * 1.5
+                    width: inputOutputTxt.outputs > 1 ? inputOutputTxt.maxWidth * inputOutputTxt.outputs : inputOutputTxt.minSize
                     height: inputOutputTxt.cellSize
                     border.color: "#373737"
                     border.width: 1
@@ -294,8 +294,8 @@ ActivityBase {
                         id: blueSquare
                         Rectangle {
                             width: ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ?
-                                   (inputOutputTxt.inputs > 1 ? inputOutputTxt.cellSize : inputOutputTxt.minSize) :
-                                   (inputOutputTxt.outputs > 1 ? inputOutputTxt.cellSize : inputOutputTxt.minSize) * 1.5
+                                   (inputOutputTxt.inputs > 1 ? inputOutputTxt.maxWidth : inputOutputTxt.minSize) :
+                                   (inputOutputTxt.outputs > 1 ? inputOutputTxt.maxWidth : inputOutputTxt.minSize)
                             height: inputOutputTxt.cellSize
                             border.color: "#373737"
                             border.width: 1
