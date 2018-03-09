@@ -105,8 +105,10 @@ function showQuizScreen(index) {
     items.quizScreenVisible = true
     currentPlanetLevels = dataset[index].levels
     items.mainQuizScreen.planetRealImage = dataset[index].realImg
-    items.temperatureHint = dataset[indexOfSelectedPlanet].temperatureHint
-    items.lengthOfYearHint = dataset[indexOfSelectedPlanet].lengthOfYearHint
+    if(indexOfSelectedPlanet != 0) {
+        items.temperatureHint = dataset[indexOfSelectedPlanet].temperatureHint
+        items.lengthOfYearHint = dataset[indexOfSelectedPlanet].lengthOfYearHint
+    }
     initLevel()
 }
 
