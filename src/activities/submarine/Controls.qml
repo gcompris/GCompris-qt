@@ -175,13 +175,13 @@ Item {
             GCText {
                 id: leftBallastTankLabel
                 text: qsTr("Left Ballast Tank")
-
-                width: parent.width - 8
                 wrapMode: Text.WordWrap
-                anchors.centerIn: parent
+                anchors.fill: leftBallastTankDisplay
+                anchors.margins: 4
                 horizontalAlignment: Text.AlignHCenter
-
-                fontSize: 8
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 8
+                font.pixelSize: 70
                 color: "#B8D3E1EB"
             }
         }
@@ -283,13 +283,13 @@ Item {
             GCText {
                 id: centralBallastTankLabel
                 text: qsTr("Central Ballast Tank")
-
-                width: parent.width - 10
                 wrapMode: Text.WordWrap
-                anchors.centerIn: parent
+                anchors.fill: centralBallastTankDisplay
+                anchors.margins: 4
                 horizontalAlignment: Text.AlignHCenter
-
-                fontSize: 8
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 8
+                font.pixelSize: 70
                 color: "#B8D3E1EB"
             }
         }
@@ -390,13 +390,13 @@ Item {
             GCText {
                 id: rightBallastTankLabel
                 text: qsTr("Right Ballast Tank")
-
-                width: parent.width - 8
                 wrapMode: Text.WordWrap
-                anchors.centerIn: parent
+                anchors.fill: rightBallastTankDisplay
+                anchors.margins: 4
                 horizontalAlignment: Text.AlignHCenter
-
-                fontSize: 8
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 8
+                font.pixelSize: 70
                 color: "#B8D3E1EB"
             }
         }
