@@ -45,6 +45,8 @@ ActivityBase {
 
         onWidthChanged: updateOnWidthReset.start()
         onHeightChanged: Activity.resetUpperGate()
+        
+        property bool hori: background.width > background.height
 
         signal start
         signal stop
@@ -904,37 +906,37 @@ ActivityBase {
             id: controls
             z: 10
             enginePosition.x: background.width * 0.1
-            enginePosition.y: background.height * 0.64
+            enginePosition.y: buttonPlusY + buttonSize * 0.2
             engineWidth: background.width / 8
-            engineHeight: 100
+            engineHeight: hori ? buttonSize * 1.8 : buttonSize * 2.5
             submarineHorizontalSpeed: submarine.currentFinalVelocity * 1000
 
             leftTankVisible: bar.level >= 7 ? true : false
             leftBallastTankPosition.x: background.width * 0.35
             leftBallastTankPosition.y: enginePosition.y
             leftBallastTankWidth: background.width / 8
-            leftBallastTankHeight: 120
+            leftBallastTankHeight: engineHeight
 
             centralTankVisible:  bar.level < 7 ? true : false
             centralBallastTankPosition.x: background.width * 0.45
             centralBallastTankPosition.y: enginePosition.y
             centralBallastTankWidth: background.width / 8
-            centralBallastTankHeight: 120
+            centralBallastTankHeight: engineHeight
 
             rightTankVisible:  bar.level >= 7 ? true : false
-            rightBallastTankPosition.x: background.width * 0.55
+            rightBallastTankPosition.x: background.width * 0.6
             rightBallastTankPosition.y: enginePosition.y
             rightBallastTankWidth: background.width / 8
-            rightBallastTankHeight: 120
+            rightBallastTankHeight: engineHeight
 
             divingPlaneVisible: true
             divingPlanePosition.x: background.width * 0.8
             divingPlanePosition.y: enginePosition.y + (engineHeight * 0.5) - (divingPlaneHeight * 0.5)
-            divingPlaneWidth: background.width * 0.1
+            divingPlaneWidth: hori ? background.width * 0.08 : background.width * 0.12
             divingPlaneHeight: divingPlaneWidth * 0.33
-            buttonSize: subSchemaImage.height * 0.2
-            buttonPlusY: enginePosition.y - (buttonSize * 0.5)
-            buttonMinusY: enginePosition.y + engineHeight - (buttonSize * 0.5)
+            buttonSize: hori ? subSchemaImage.height * 0.3 : subSchemaImage.height * 0.2
+            buttonPlusY: hori ? background.height * 0.61 : background.height * 0.63
+            buttonMinusY: enginePosition.y + engineHeight - buttonSize * 0.8
         }
 
         DialogHelp {
