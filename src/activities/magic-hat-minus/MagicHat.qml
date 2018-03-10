@@ -215,20 +215,17 @@ ActivityBase {
         }
 
         BarButton {
-          id: okButton
-          source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-          sourceSize.width: 66 * bar.barZoom
-          anchors {
-              right: parent.right
-              rightMargin: 10 * ApplicationInfo.ratio
-              bottom: parent.bottom
-              bottomMargin: parent.width > 420 * ApplicationInfo.ratio ? 10 : bar.height
-          }
-          width: 66 * ApplicationInfo.ratio
-          height: 66 * ApplicationInfo.ratio
-          onClicked: {
-            Activity.verifyAnswer()
-          }
+            id: okButton
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: 10 * ApplicationInfo.ratio
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+
+            onClicked: Activity.verifyAnswer()
         }
 
         Bonus {
