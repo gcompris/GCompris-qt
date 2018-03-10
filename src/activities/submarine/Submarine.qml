@@ -204,8 +204,7 @@ ActivityBase {
                 leftBallastTank.resetBallastTanks()
                 rightBallastTank.resetBallastTanks()
                 centralBallastTank.resetBallastTanks()
-                controls.resetBallastButtons()
-                
+
                 currentFinalVelocity = 0
                 velocity = Qt.point(0,0)
                 smoothHorizontalVelocity.stop()
