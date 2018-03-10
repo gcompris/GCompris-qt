@@ -129,13 +129,14 @@ Window {
     GCAudio {
         id: backgroundMusic
         muted: !ApplicationSettings.isBackgroundMusicEnabled
+        volume: 0.53
 
         muteChangeHandler: function() {
             if(muted) {
                 volume = 0
             }
             else {
-                volume = 1
+                volume = 0.53
             }
 
             if(!hasAudio && !delayedbackgroundMusic.running) {
