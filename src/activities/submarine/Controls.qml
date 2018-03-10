@@ -37,16 +37,22 @@ Item {
     property point leftBallastTankPosition
     property alias leftBallastTankWidth : leftBallastTankDisplay.width
     property alias leftBallastTankHeight : leftBallastTankDisplay.height
+    property alias rotateLeftFill: rotateLeftFill
+    property alias rotateLeftFlush: rotateLeftFlush
 
     property alias centralTankVisible : centralBallastTankController.visible
     property point centralBallastTankPosition
     property alias centralBallastTankWidth : centralBallastTankDisplay.width
     property alias centralBallastTankHeight : centralBallastTankDisplay.height
+    property alias rotateCentralFill: rotateCentralFill
+    property alias rotateCentralFlush: rotateCentralFlush
 
     property alias rightTankVisible : rightBallastTankController.visible
     property point rightBallastTankPosition
     property alias rightBallastTankWidth : rightBallastTankDisplay.width
     property alias rightBallastTankHeight : rightBallastTankDisplay.height
+    property alias rotateRightFill: rotateRightFill
+    property alias rotateRightFlush: rotateRightFlush
     
     /* Diving Plane Controller properties */
     property bool divingPlaneVisible
@@ -198,30 +204,6 @@ Item {
                 origin.y: leftBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-
-            SequentialAnimation {
-                id: leftFillAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFill
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: leftFillAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFill
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
-            }
             
             MouseArea {
                 anchors.fill: parent
@@ -229,11 +211,7 @@ Item {
 
                 onClicked: {
                     leftBallastTank.fillBallastTanks()
-                    if (leftBallastTank.waterFilling) {
-                        leftFillAnim1.start()
-                    } else {
-                        leftFillAnim2.start()
-                    }
+                    updateVannes(leftBallastTank.waterFilling, rotateLeftFill)
                 }
             }
         }
@@ -256,30 +234,6 @@ Item {
                 origin.y: leftBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-
-            SequentialAnimation {
-                id: leftFlushAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFlush
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: leftFlushAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFlush
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
-            }
             
             MouseArea {
                 anchors.fill: parent
@@ -287,11 +241,7 @@ Item {
 
                 onClicked: {
                     leftBallastTank.flushBallastTanks()
-                    if (leftBallastTank.waterFlushing) {
-                        leftFlushAnim1.start()
-                    } else {
-                        leftFlushAnim2.start()
-                    }
+                    updateVannes(leftBallastTank.waterFlushing, rotateLeftFlush)
                 }
             }
         }
@@ -362,30 +312,6 @@ Item {
                 origin.y: centralBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-
-            SequentialAnimation {
-                id: centralFillAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFill
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: centralFillAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFill
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
-            }
             
             MouseArea {
                 anchors.fill: parent
@@ -393,11 +319,7 @@ Item {
 
                 onClicked: {
                     centralBallastTank.fillBallastTanks()
-                    if (centralBallastTank.waterFilling) {
-                        centralFillAnim1.start()
-                    } else {
-                        centralFillAnim2.start()
-                    }
+                    updateVannes(centralBallastTank.waterFilling, rotateCentralFill)
                 }
             }
         }
@@ -420,30 +342,6 @@ Item {
                 origin.y: centralBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-
-            SequentialAnimation {
-                id: centralFlushAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFlush
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: centralFlushAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFlush
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
-            }
             
             MouseArea {
                 anchors.fill: parent
@@ -451,11 +349,7 @@ Item {
 
                 onClicked: {
                     centralBallastTank.flushBallastTanks()
-                    if (centralBallastTank.waterFlushing) {
-                        centralFlushAnim1.start()
-                    } else {
-                        centralFlushAnim2.start()
-                    }
+                    updateVannes(centralBallastTank.waterFlushing, rotateCentralFlush)
                 }
             }
         }
@@ -525,30 +419,6 @@ Item {
                 origin.y: rightBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-
-            SequentialAnimation {
-                id: rightFillAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFill
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: rightFillAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFill
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
-            }
             
             MouseArea {
                 anchors.fill: parent
@@ -556,11 +426,7 @@ Item {
 
                 onClicked: {
                     rightBallastTank.fillBallastTanks()
-                    if (rightBallastTank.waterFilling) {
-                        rightFillAnim1.start()
-                    } else {
-                        rightFillAnim2.start()
-                    }
+                    updateVannes(rightBallastTank.waterFilling, rotateRightFill)
                 }
             }
         }
@@ -583,30 +449,6 @@ Item {
                 origin.y: rightBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-
-            SequentialAnimation {
-                id: rightFlushAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFlush
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: rightFlushAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFlush
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
-            }
             
             MouseArea {
                 anchors.fill: parent
@@ -614,13 +456,50 @@ Item {
 
                 onClicked: {
                     rightBallastTank.flushBallastTanks()
-                    if (rightBallastTank.waterFlushing) {
-                        rightFlushAnim1.start()
-                    } else {
-                        rightFlushAnim2.start()
-                    }
+                    updateVannes(rightBallastTank.waterFlushing, rotateRightFlush)
                 }
             }
+        }
+    }
+
+    PropertyAnimation {
+        id: ballastTankOnAnim
+        properties: "angle"
+        from: 0
+        to: 90
+        duration: 200
+    }
+
+    PropertyAnimation {
+        id: ballastTankOffAnim
+        properties: "angle"
+        from: 90
+        to: 0
+        duration: 200
+    }
+
+    function updateVannes(vanneOnCondition, animationTarget) {
+        if (vanneOnCondition) {
+            ballastTankOnAnim.target = animationTarget
+            ballastTankOnAnim.start()
+        } else {
+            ballastTankOffAnim.target = animationTarget
+            ballastTankOffAnim.start()
+        }
+    }
+
+    function resetVannes() {
+        if (leftTankVisible) {
+            rotateLeftFill.angle = 0
+            rotateLeftFlush.angle = 0
+        }
+        if (centralTankVisible) {
+            rotateCentralFill.angle = 0
+            rotateCentralFlush.angle = 0
+        }
+        if (rightTankVisible) {
+            rotateRightFill.angle = 0
+            rotateRightFlush.angle = 0
         }
     }
 

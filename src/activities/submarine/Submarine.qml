@@ -64,9 +64,11 @@ ActivityBase {
             }
             if ((event.key == Qt.Key_W || event.key == Qt.Key_Up) && !tutorial.visible) {
                 centralBallastTank.fillBallastTanks()
+                controls.updateVannes(centralBallastTank.waterFilling, controls.rotateCentralFill)
             }
             if ((event.key == Qt.Key_S || event.key == Qt.Key_Down) && !tutorial.visible) {
                 centralBallastTank.flushBallastTanks()
+                controls.updateVannes(centralBallastTank.waterFlushing, controls.rotateCentralFlush)
             }
             if ((event.key == Qt.Key_Plus) && !tutorial.visible) {
                 submarine.increaseWingsAngle(1)
@@ -77,16 +79,20 @@ ActivityBase {
 
             if ((event.key == Qt.Key_R) && !tutorial.visible) {
                 leftBallastTank.fillBallastTanks()
+                controls.updateVannes(leftBallastTank.waterFilling, controls.rotateLeftFill)
             }
             if ((event.key == Qt.Key_F) && !tutorial.visible) {
                 leftBallastTank.flushBallastTanks()
+                controls.updateVannes(leftBallastTank.waterFlushing, controls.rotateLeftFlush)
             }
 
             if ((event.key == Qt.Key_T) && !tutorial.visible) {
                 rightBallastTank.fillBallastTanks()
+                controls.updateVannes(rightBallastTank.waterFilling, controls.rotateRightFill)
             }
             if ((event.key == Qt.Key_G) && !tutorial.visible) {
                 rightBallastTank.flushBallastTanks()
+                controls.updateVannes(rightBallastTank.waterFlushing, controls.rotateRightFlush)
             }
         }
 
@@ -111,6 +117,7 @@ ActivityBase {
             property alias tutorial: tutorial
             property alias upperGate: upperGate
             property alias ship: ship
+            property alias controls: controls
             property alias physicalWorld: physicalWorld
             property bool processingAnswer: false
         }
