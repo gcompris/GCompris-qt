@@ -130,7 +130,7 @@ ActivityBase {
             id: tutorialInstruction
             intro: []
             textContainerWidth: background.hori ? parent.width - inputComponentsContainer.width - items.toolsMargin : 0.9 * background.width
-            textContainerHeight: background.hori ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 1.1) - items.toolsMargin
+            textContainerHeight: background.hori ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 2) - items.toolsMargin
             anchors {
                 fill: undefined
                 top: background.hori ? parent.top : inputComponentsContainer.bottom
@@ -494,7 +494,7 @@ ActivityBase {
                 bottom: bar.top
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio
-                bottomMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: height * 0.5
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
