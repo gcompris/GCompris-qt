@@ -361,11 +361,6 @@ if(KF5_FOUND)
     add_subdirectory(docs/docbook)
 endif(KF5_FOUND)
 
-if(SAILFISHOS)
-  # Need to be done at the end, after src
-  add_subdirectory(platforms/sailfishOS)
-endif()
-
 #
 # qml-box2d
 #
@@ -456,6 +451,11 @@ else()
 endif()
 
 add_subdirectory(src)
+
+if(SAILFISHOS)
+  # Need to be done at the end, after src
+  add_subdirectory(platforms/sailfishOS)
+endif()
 
 add_custom_target(binaries)
 add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)
