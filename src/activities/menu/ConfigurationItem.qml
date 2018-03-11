@@ -1,3 +1,4 @@
+
 /* GCompris - ConfigurationItem.qml
  *
  * Copyright (C) 2014-2016 Johnny Jazeix <jazeix@gmail.com>
@@ -289,6 +290,16 @@ Item {
                 updateValueWhileDragging: true
                 value: baseFontSize
                 onValueChanged: ApplicationSettings.baseFontSize = value;
+                MouseArea { // Removes scrolling when hovering sliders
+                    anchors.fill: parent
+                    onWheel: {}
+                    onPressed: {
+                        mouse.accepted = false
+                    }
+                    onReleased: {
+                        mouse.accepted = false
+                    }
+                }
             }
             GCText {
                 id: baseFontSizeText
@@ -327,6 +338,16 @@ Item {
                 updateValueWhileDragging: true
                 value: fontLetterSpacing
                 onValueChanged: ApplicationSettings.fontLetterSpacing = value
+                MouseArea { // Removes scrolling when hovering sliders
+                    anchors.fill: parent
+                    onWheel: {}
+                    onPressed: {
+                        mouse.accepted = false
+                    }
+                    onReleased: {
+                        mouse.accepted = false
+                    }
+                }
             }
             GCText {
                 id: fontLetterSpacingText
