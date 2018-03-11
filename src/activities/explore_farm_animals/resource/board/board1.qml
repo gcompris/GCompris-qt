@@ -45,10 +45,10 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/chickens.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/chicken.jpg",
             "text2": qsTr("This animal lays eggs."),
-            "x": 0.58,
-            "y": 0.73,
+            "x": 0.66,
+            "y": 0.67,
             "width": 0.190,
-            "height": 0.121
+            "height": 0.119
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/cow.svg",
@@ -70,7 +70,7 @@ QtObject {
             "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/cat.jpg",
             "text2": qsTr("This pet likes chasing mice."),
             "x": 0.880,
-            "y": 0.775,
+            "y": 0.550,
             "width": 0.114,
             "height": 0.110
         },
@@ -81,10 +81,10 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/pig.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/pig.jpg",
             "text2": qsTr("This animal likes to lie in the mud."),
-            "x": 0.75,
-            "y": 0.90,
+            "x": 0.42,
+            "y": 0.75,
             "width": 0.185,
-            "height": 0.173
+            "height": 0.153
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/duck.svg",
@@ -94,9 +94,9 @@ QtObject {
             "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/duck.jpg",
             "text2": qsTr("This animal has webbed feet so it can swim in the water."),
             "x": 0.163,
-            "y": 0.80,
+            "y": 0.76,
             "width": 0.210,
-            "height": 0.136
+            "height": 0.134
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/owl.svg",
@@ -129,10 +129,10 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/rooster.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/rooster.jpg",
             "text2": qsTr("This animal wakes the farm up in the morning."),
-            "x": 0.52,
-            "y": 0.90,
+            "x": 0.66,
+            "y": 0.78,
             "width": 0.122,
-            "height": 0.137
+            "height": 0.127
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/sheep.svg",
@@ -142,9 +142,9 @@ QtObject {
             "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/animals/sheep.jpg",
             "text2": qsTr("This animal is a close relative to the goat."),
             "x": 0.66,
-            "y": 0.550,
+            "y": 0.548,
             "width": 0.20,
-            "height": 0.15
+            "height": 0.13
         }
     ]
 
