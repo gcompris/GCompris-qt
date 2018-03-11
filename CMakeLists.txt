@@ -42,6 +42,8 @@ if(ECM_FOUND)
   if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     ecm_install_po_files_as_qm(po)
   endif()
+
+  include(ECMCoverageOption)
 endif(ECM_FOUND)
 
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
