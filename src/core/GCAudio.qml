@@ -227,6 +227,7 @@ Item {
 
     Audio {
         id: audio
+        muted: gcaudio.muted
         onError: {
             // This file cannot be played, remove it from the source asap
             source = ""
