@@ -130,14 +130,11 @@ Window {
         id: backgroundMusic
         muted: !ApplicationSettings.isBackgroundMusicEnabled
 
-        muteChangeHandler: function() {
-            if(muted) {
-                volume = 0
-            }
-            else {
-                volume = 1
-            }
+        readonly property real backgroundMusicVolume: 0.5
 
+        volume: backgroundMusicVolume
+
+        onMutedChanged: {
             if(!hasAudio && !delayedbackgroundMusic.running) {
                 delayedbackgroundMusic.playBackgroundMusic()
             }

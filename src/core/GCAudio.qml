@@ -100,14 +100,6 @@ Item {
      */
     signal done
 
-    property var muteChangeHandler: function () { muted ? volume = 0 : volume = 1 }
-
-    /**
-     *  When mute is changed we set the volume to 0 to mute a potential playing
-     * sound.
-     */
-    onMutedChanged: muteChangeHandler()
-
     //Pauses the currently playing audio
     function pause() {
         if(playbackState === Audio.PlayingState)
@@ -227,6 +219,7 @@ Item {
 
     Audio {
         id: audio
+        muted: gcaudio.muted
         onError: {
             // This file cannot be played, remove it from the source asap
             source = ""
