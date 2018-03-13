@@ -134,7 +134,7 @@ Window {
 
         volume: backgroundMusicVolume
 
-        muteChangeHandler: function() {
+        onMutedChanged: {
             if(!hasAudio && !delayedbackgroundMusic.running) {
                 delayedbackgroundMusic.playBackgroundMusic()
             }
