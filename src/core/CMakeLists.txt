@@ -59,7 +59,7 @@ elseif(CMAKE_HOST_APPLE)
 elseif(CMAKE_HOST_WIN32)
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_RES})
 elseif(SAILFISHOS)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES}) ?
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
   set(used_qt_modules ${used_qt_modules} Widgets)
 else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
