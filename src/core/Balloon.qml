@@ -23,6 +23,17 @@
 import QtQuick 2.6
 import GCompris 1.0
 
+/**
+* A QML component to visualize countdown.
+*
+* Balloon usually consists of timeout duration (@ref duration)
+* and a boolean to check if animation are running at a moment (@ref disabled).
+*
+* A balloon falls from top to bottom in a given duration on
+* calling startMoving method and stops on calling stopMoving method.
+*
+* @inherit QtQuick.Image
+*/
 Image {
     id: balloon
     source: "qrc:/gcompris/src/core/resource/tuxballoon.svg";
@@ -30,15 +41,38 @@ Image {
     scale: 0.8
     x: parent.width / 2
     y: - balloon.height
+
+    /**
+     * type:int
+     * Height of activity window.
+     */
     property int parentHeight: parent.height
+
+    /**
+     * Emitted when balloon hits the ground i.e. on completion of time duration.
+     */
     signal timeout
+
+    /**
+     * Emitted when countdown is ready to start.
+     */
     signal ready
 
+    /**
+     * type:int
+     * Total duration of the countdown.
+     */
     property int duration
+
+    /**
+     * type:boolean
+     * To know if countdown is running at a moment.
+     */
     property bool disabled
 
     onParentHeightChanged: startMoving(duration)
 
+    // Starts the countdown and down animation starts.
     function startMoving(durationIncoming)
     {
         stopMoving()
@@ -47,6 +81,7 @@ Image {
         down.restart()
     }
 
+    // Stops the countdown and the down animation stops.
     function stopMoving()
     {
         disabled = true

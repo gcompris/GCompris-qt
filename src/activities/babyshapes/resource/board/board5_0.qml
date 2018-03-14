@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Hello! My name is Lock.")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile" : "dog1/dog.png",
           "type" : "SHAPE_BACKGROUND_IMAGE"

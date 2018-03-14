@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Tower Bridge in London")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/TowerBridgeLondon_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

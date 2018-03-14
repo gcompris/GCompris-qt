@@ -137,6 +137,7 @@ function getCurrentHandRotation() {
 
 function displayNextHand() {
     items.score.currentSubLevel ++
+    items.score.playWinAnimation();
     if(currentHands.length <= ++currentImageId ) {
         items.bonus.good("flower")
         nextLevel()

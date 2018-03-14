@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Leonardo da Vinci, Mona Lisa - 1503-19")
-   property variant levels : [
+   property var levels : [
       {
          "pixmapfile" : "image/bg.svg",
          "type" : "SHAPE_BACKGROUND_IMAGE",

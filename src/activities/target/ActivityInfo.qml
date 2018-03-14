@@ -27,7 +27,7 @@ ActivityInfo {
   title: qsTr("Practice addition with a target game")
   //: Help title
   description: qsTr("Hit the target and count your points")
-//  intro: "Click on the target to launch darts, then count your score!"
+  // intro: "Click on the target to launch darts, then count your final score!"
   //: Help goal
   goal: qsTr("Throw darts at a target and count your score.")
   //: Help prerequisite

@@ -39,6 +39,7 @@ ActivityBase {
         signal stop
 
         property bool gotIt: false
+        property bool horizontalLayout: background.width > background.height
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -340,10 +341,10 @@ ActivityBase {
         Image {
             id: carriage
             source: Activity.url + "gold_carriage.svg"
-            sourceSize.height: 120 * ApplicationInfo.ratio
+            sourceSize.height: background.horizontalLayout ? 120 * ApplicationInfo.ratio : 80 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
-                bottom: parent.bottom
+                bottom: background.horizontalLayout ? parent.bottom : bar.top
             }
 
             GCText {

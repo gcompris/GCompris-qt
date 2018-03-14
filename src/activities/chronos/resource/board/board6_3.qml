@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Cars")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/renault1899.svg",
           "x": 0.2,

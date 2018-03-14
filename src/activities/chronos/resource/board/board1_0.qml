@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Moonwalker")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/bg.jpg",
           "type": "SHAPE_BACKGROUND_IMAGE"

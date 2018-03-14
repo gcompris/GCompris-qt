@@ -32,7 +32,7 @@ ActivityInfo {
   title: qsTr("Build the same model")
   //: Help title
   description: qsTr("Drive the crane and copy the model")
-  //intro: " Click on each item in turn in the left frame and move them to mirror their position in the right frame."
+  //intro: " Click on each item in turn, in the left frame, and move them to reproduce the pattern from the right frame."
   //: Help goal
   goal: qsTr("Motor-coordination")
   //: Help prerequisite

@@ -25,7 +25,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DQT_QML_DEBUG")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 90)
+set(GCOMPRIS_MINOR_VERSION 95)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 # Set the BUILD_DATE
@@ -42,6 +42,8 @@ if(ECM_FOUND)
   if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     ecm_install_po_files_as_qm(po)
   endif()
+
+  include(ECMCoverageOption)
 endif(ECM_FOUND)
 
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
@@ -103,6 +105,13 @@ if(ECM_FOUND)
         message(STATUS "ECM_VERSION is ${ECM_VERSION}, icons and desktop files won't be installed.")
     endif()
 endif()
+
+# Tell CMake to run moc when necessary:
+set(CMAKE_AUTOMOC ON)
+
+# As moc files are generated in the binary dir, tell CMake
+# to always look for includes there:
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})
@@ -361,11 +370,6 @@ if(KF5_FOUND)
     add_subdirectory(docs/docbook)
 endif(KF5_FOUND)
 
-if(SAILFISHOS)
-  # Need to be done at the end, after src
-  add_subdirectory(platforms/sailfishOS)
-endif()
-
 #
 # qml-box2d
 #
@@ -415,6 +419,9 @@ else()
     if(WIN32)
       set (_box2d_library_dir "release/")
       set (_box2d_library_file "Box2D.dll")
+    elseif(CMAKE_HOST_APPLE)
+      set (_box2d_library_dir "")
+      set (_box2d_library_file "libBox2D.dylib")
     else()
       set (_box2d_library_dir "")
       set (_box2d_library_file "libBox2D.so")
@@ -428,7 +435,7 @@ else()
 
     # for visual studio, we need to create a vcxproj
     if(WIN32 AND NOT MINGW)
-      set(_qmake_options -spec win32-msvc2015 -tp vc)
+      set(_qmake_options -spec win32-msvc -tp vc)
     else()
       set(_qmake_options "")
     endif()
@@ -453,6 +460,17 @@ else()
 endif()
 
 add_subdirectory(src)
+
+if(SAILFISHOS)
+  # Need to be done at the end, after src
+  add_subdirectory(platforms/sailfishOS)
+endif()
+
+# only enable unit tests for linux
+if(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
+  enable_testing()
+  add_subdirectory(tests)
+endif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
 
 add_custom_target(binaries)
 add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)

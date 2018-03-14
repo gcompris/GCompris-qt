@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Egeskov Castle, Denmark")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/EgeskovSlotSpejling_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

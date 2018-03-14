@@ -35,7 +35,7 @@ ActivityBase {
     Keys.onPressed: Activity.processPressedKey(event)
     Keys.onReleased: Activity.processReleasedKey(event)
 
-    property variant dataset
+    property var dataset
 
     property int oldWidth: width
     onWidthChanged: {
@@ -110,7 +110,10 @@ ActivityBase {
         Score {
             id: score
             visible: false
-            fontSize: 24
+            fontSize: background.width > background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
+            height: internalTextComponent.height + 10
+            anchors.bottom: bar.top
+            anchors.margins: 10
         }
 
         property int movePlaneTimerCounter: 0

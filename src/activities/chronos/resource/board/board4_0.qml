@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Tux and the apple tree")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/chronos-tuxtree3.svg",
           "x": "0.25",

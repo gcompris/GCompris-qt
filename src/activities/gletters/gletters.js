@@ -399,6 +399,7 @@ function nextSubLevel() {
         currentSubLevel = 0
         items.bonus.good("lion")
     } else
+        items.score.playWinAnimation();
         initSubLevel();
 }
 

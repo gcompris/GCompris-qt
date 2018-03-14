@@ -66,6 +66,7 @@ ActivityBase {
             property alias bar: bar
             property alias background: background
             property alias wordsModel: wordsModel
+            property int currentLetterCase: ApplicationSettings.fontCapitalization
             property int currentMode: normalModeWordCount
             readonly property int easyModeWordCount: 5
             readonly property int normalModeWordCount: 11
@@ -76,6 +77,7 @@ ActivityBase {
             property alias score: score
             property alias bonus: bonus
             property alias locale: background.locale
+            property alias questionItem: questionItem
             property alias englishFallbackDialog: englishFallbackDialog
             property string question
         }
@@ -107,9 +109,11 @@ ActivityBase {
                     property alias localeBox: localeBox
                     property alias easyModeConfig: easyModeConfig
                     property alias normalModeConfig: normalModeConfig
+                    property alias letterCaseBox: letterCaseBox
                     height: column.height
 
                     property alias availableLangs: langs.languages
+
                     LanguageList {
                         id: langs
                     }
@@ -140,6 +144,23 @@ ActivityBase {
                             spacing: 5
                             width: dialogActivityConfig.width
                             GCComboBox {
+                                id: letterCaseBox
+                                label: qsTr("Select case for letter to be searched")
+                                background: dialogActivityConfig
+                                model: [
+                                    {"text": qsTr("Mixed Case"), "value": Font.MixedCase},
+                                    {"text": qsTr("Upper Case"), "value": Font.AllUppercase},
+                                    {"text": qsTr("Lower Case"), "value": Font.AllLowercase}
+                                ]
+                                currentText: model[items.currentLetterCase].text
+                                currentIndex: items.currentLetterCase
+                            }
+                        }
+
+                        Flow {
+                            spacing: 5
+                            width: dialogActivityConfig.width
+                            GCComboBox {
                                 id: localeBox
                                 model: langs.languages
                                 background: dialogActivityConfig
@@ -154,6 +175,10 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["savedMode"]) {
                     items.currentMode = dataToSave["savedMode"] === "5" ? items.easyModeWordCount : items.normalModeWordCount
+                }
+
+                if(dataToSave && dataToSave["savedLetterCase"]) {
+                    items.currentLetterCase = dataToSave["savedLetterCase"]
                 }
 
                 if(dataToSave && dataToSave["locale"]) {
@@ -172,12 +197,15 @@ ActivityBase {
                 var oldMode = items.currentMode
                 items.currentMode = dialogActivityConfig.loader.item.easyModeConfig.checked ? items.easyModeWordCount : items.normalModeWordCount
 
-                dataToSave = {"locale": newLocale, "savedMode": items.currentMode}
+                var oldLetterCase = items.currentLetterCase
+                items.currentLetterCase = dialogActivityConfig.loader.item.letterCaseBox.model[dialogActivityConfig.loader.item.letterCaseBox.currentIndex].value
+
+                dataToSave = {"locale": newLocale, "savedMode": items.currentMode, "savedLetterCase": items.currentLetterCase}
 
                 background.locale = newLocale;
 
                 // Restart the activity with new information
-                if(oldLocale !== newLocale || oldMode !== items.currentMode) {
+                if(oldLocale !== newLocale || oldMode !== items.currentMode || oldLetterCase !== items.currentLetterCase) {
                     background.stop();
                     background.start();
                 }
@@ -255,6 +283,7 @@ ActivityBase {
 
             GCText {
                 id: questionItem
+
                 anchors {
                     right: planeText.right
                     rightMargin: 2 * plane.width / 3
@@ -328,8 +357,8 @@ ActivityBase {
             anchors.leftMargin: 15 * ApplicationInfo.ratio
             anchors.rightMargin: 15 * ApplicationInfo.ratio
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            cellWidth: itemWidth + 25*ApplicationInfo.ratio
-            cellHeight: itemHeight + 15*ApplicationInfo.ratio
+            cellWidth: itemWidth + 25 * ApplicationInfo.ratio
+            cellHeight: itemHeight + 15 * ApplicationInfo.ratio
             clip: false
             interactive: false
             //verticalLayoutDirection: GridView.BottomToTop
@@ -366,10 +395,11 @@ ActivityBase {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: wordsView.cellWidth*0.8
-            height: wordsView.cellHeight*0.8
+            height: width
             sourceSize.width: wordsView.cellWidth
             anchors {
-                horizontalCenter: parent.horizontalCenter
+                right: parent.right
+                rightMargin: 3 * ApplicationInfo.ratio
                 bottom: wordsView.bottom
             }
             MouseArea {

@@ -28,7 +28,7 @@ import "memory.js" as Activity
 Flipable {
     id: card
 
-    property variant pairData
+    property var pairData
     property bool isBack: true
     property bool isShown: false
     property bool isFound: false
@@ -58,7 +58,7 @@ Flipable {
 
     Timer {
         id: animationTimer
-        interval: items.tuxTurn ? 1500 : 750
+        interval: 1500
         running: false
         repeat: false
         onTriggered: selectionReady()
@@ -71,11 +71,13 @@ Flipable {
         anchors.centerIn: parent
         anchors.fill: parent
         Image {
+            id: contentImage
             source: card.pairData.image
-            sourceSize.width: parent.width
-            anchors.fill: parent
+            width: parent.paintedWidth * 0.9
+            height: parent.paintedHeight * 0.9
+            sourceSize.width: contentImage.width
+            sourceSize.height: contentImage.height
             anchors.centerIn: parent
-            anchors.margins: 6 * ApplicationInfo.ratio
             fillMode: Image.PreserveAspectFit
         }
         GCText {

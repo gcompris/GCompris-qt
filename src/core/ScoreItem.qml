@@ -172,14 +172,18 @@ Item {
         Image {
             id: backgroundImage
             source: backgroundImageSource
-            sourceSize.height: parent.height*0.93
-            anchors.centerIn: parent
-            anchors.horizontalCenterOffset: 0.5
+            sourceSize.height: height
+            sourceSize.width: width
+            anchors.fill: parent
+            anchors.margins: parent.height * 0.04
 
             Image {
                 id: playerImage
                 source: playerImageSource
-                sourceSize.height: parent.height*0.8
+                fillMode: Image.PreserveAspectFit
+                height: parent.height*0.8
+                sourceSize.height: height
+                sourceSize.width: width
                 x: parent.width*0.06
                 anchors.verticalCenter: parent.verticalCenter
             }

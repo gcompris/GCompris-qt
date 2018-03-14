@@ -22,7 +22,7 @@
 import QtQuick 2.6
 
 QtObject {
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile" : "food/yahourt.png",
           "x" : "0.5",

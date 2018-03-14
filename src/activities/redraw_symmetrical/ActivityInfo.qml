@@ -27,14 +27,13 @@ ActivityInfo {
   title: qsTr("Mirror the given image")
   //: Help title
   description: qsTr("Draw the image on the empty grid as if you see it in a mirror.")
-  //intro: "Use the drawing tools to reproduce the right-hand side symmetrical figure."
+  //intro: "Use the drawing tools to reproduce symmetrically the pattern on the right."
   //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("First, select the proper color from the toolbar. Then drag to paint.") + " " +
-          qsTr("At the first level a hint is provided to show that a symmetry is requested.")
+  manual: qsTr("First, select the proper color from the toolbar. Then click on the grid and drag to paint, then release the click to stop painting.")
   credit: ""
   section: "math geometry symmetry puzzle"
 }

@@ -123,9 +123,11 @@ ButtonStyle {
             text: control.text
             fontSize: textSizes[textSize].fontSize
             font.bold: textSizes[textSize].fontBold
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
+            fontSizeMode: Text.Fit
 
             Component.onCompleted: {
                 if (fixedFontSize > 0) {

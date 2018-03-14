@@ -30,7 +30,7 @@ Image {
     source: isHit ? url + "whale-hit.svg" : url + "whale.svg"
 
     width: submarineImage.width * 1.2
-    sourceSize.width: width
+    sourceSize.width: whale.width
     fillMode: Image.PreserveAspectFit
 
     property bool isHit: false

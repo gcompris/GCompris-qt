@@ -34,7 +34,7 @@ Item {
     property alias circles: circles
     property bool clickable
     property bool isLetter: brailleChar >= 'A' && brailleChar <= 'Z'
-    property variant brailleCodesLetter: {
+    property var brailleCodesLetter: {
         // For ASCII each letter, this represent the active dots in Braille.
         "A": [1], "B": [1, 2], "C": [1, 4], "D": [1, 4, 5], "E": [1, 5],
         "F": [1, 2, 4], "G": [1, 2, 4, 5], "H": [1, 2, 5], "I": [2, 4],
@@ -44,14 +44,14 @@ Item {
         "V": [1, 2, 3, 6], "W": [2, 4, 5, 6], "X": [1, 3, 4, 6], "Y": [1, 3, 4, 5, 6],
         "Z": [1, 3, 5, 6]
     }
-    property variant brailleCodesNumber: {
+    property var brailleCodesNumber: {
         // For ASCII each letter, this represent the active dots in Braille.
         "+": [3, 4, 6], "-": [3, 6], "*": [1, 6], "/": [3, 4],
         "#": [3, 4, 5, 6], "1": [1], "2" :[1, 2], "3": [1, 4], "4": [1, 4, 5],
         "5": [1, 5], "6": [1, 2, 4], "7": [1, 2, 4, 5], "8": [1, 2, 5],
         "9": [2, 4], "0" :[3, 5, 6]
     }
-    property variant brailleCodes: isLetter ? brailleCodesLetter : brailleCodesNumber
+    property var brailleCodes: isLetter ? brailleCodesLetter : brailleCodesNumber
 
     function updateDotsFromBrailleChar() {
         var dots = []

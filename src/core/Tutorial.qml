@@ -79,7 +79,7 @@ Item {
         horizontalAlignment: Text.AlignHLeft
         width: Math.min(implicitWidth, 0.8 * parent.width)
         height: Math.min(implicitHeight, 0.25 * parent.height)
-        wrapMode: TextEdit.WordWrap
+        wrapMode: Text.WordWrap
         z: 2
     }
 
@@ -101,14 +101,10 @@ Item {
     }
 
     // previousButton: It emits skipPressed and navigates to previous tutorial when clicked
-    Rectangle {
+    IntroButton {
         id: previousButton
-        width: 180
+        width: parent.width / 4
         height: 90
-        color: "#d8ffffff"
-        border.color: "#2a2a2a"
-        border.width: 3
-        radius: 8
         z: 5
         anchors.right: nextButton.left
         anchors.topMargin: 15
@@ -116,58 +112,19 @@ Item {
 	    anchors.top: tutorialTextContainer.bottom
         visible: tutorialNumber != 0
 
-        GCText {
-            id: previousButtonText
-            anchors.centerIn: parent
-            text: qsTr("Previous")
-            wrapMode: Text.WordWrap
-        }
+        text: qsTr("Previous")
 
-        MouseArea {
-            id: previousButtonArea
-            anchors.fill: parent
-            onClicked: {
-                --tutorialNumber
-                previousPressed()
-            }
+        onClicked: {
+            --tutorialNumber
+            previousPressed()
         }
-        states: [
-        State {
-            name: "notclicked"
-            PropertyChanges {
-                target: previousButton
-                scale: 1.0
-            }
-        },
-        State {
-            name: "clicked"
-            when: previousButtonArea.pressed
-            PropertyChanges {
-                target: previousButton
-                scale: 0.9
-            }
-        },
-        State {
-            name: "hover"
-            when: previousButtonArea.containsMouse
-            PropertyChanges {
-                target: previousButton
-                scale: 1.1
-            }
-        }
-        ]
-        Behavior on scale { NumberAnimation { duration: 70 } }
     }
 
     // nextButton: It emits nextPressed which navigates to next tutorial when clicked
-    Rectangle {
+    IntroButton {
         id: nextButton
-        width: 150
+        width: parent.width / 4
         height: 90
-        color: "#d8ffffff"
-        border.color: "#2a2a2a"
-        border.width: 3
-        radius: 8
         z: 5
         anchors.right: skipButton.left
         anchors.topMargin: 15
@@ -175,112 +132,38 @@ Item {
 	    anchors.top: tutorialTextContainer.bottom
         visible: tutorialNumber != (tutorialDetails.length - 1)
 
-        GCText {
-            id: nextButtonText
-            anchors.centerIn: parent
-            text: qsTr("Next")
-            wrapMode: Text.WordWrap
-        }
+        text: qsTr("Next")
 
-        MouseArea {
-            id: nextButtonArea
-            anchors.fill: parent
-            onClicked: {
-	            ++tutorialNumber
-                nextPressed()
-            }
+        onClicked: {
+	        ++tutorialNumber
+            nextPressed()
         }
-        states: [
-        State {
-            name: "notclicked"
-            PropertyChanges {
-                target: nextButton
-                scale: 1.0
-            }
-        },
-        State {
-            name: "clicked"
-            when: button_area.pressed
-            PropertyChanges {
-                target: nextButton
-                scale: 0.9
-            }
-        },
-        State {
-            name: "hover"
-            when: nextButtonArea.containsMouse
-            PropertyChanges {
-                target: nextButton
-                scale: 1.1
-            }
-        }
-        ]
-        Behavior on scale { NumberAnimation { duration: 70 } }
     }
 
     // skipButton: It emits the skipPressed signal which calls the initLevel to close the tutorial when clicked.
-    Rectangle {
+    IntroButton {
         id: skipButton
-        width: 150
+        width: parent.width / 4
         height: 90
-        color: "#d8ffffff"
-        border.color: "#2a2a2a"
-        border.width: 3
-        radius: 8
         z: 5
         anchors.right: parent.right
         anchors.rightMargin: 15
         anchors.topMargin: 15
 	    anchors.top: tutorialTextContainer.bottom
 
-        GCText {
-            id: skipButtonText
-            anchors.centerIn: parent
-            text: qsTr("Skip")
-            wrapMode: Text.WordWrap
-        }
+        text: qsTr("Skip")
 
-        MouseArea {
-            id: skipButtonArea
-            anchors.fill: parent
-            onClicked: {
-                tutorialSection.visible = false
-	            skipPressed()
-	        }
-        }
-        states: [
-        State {
-            name: "notclicked"
-            PropertyChanges {
-                target: skipButton
-                scale: 1.0
-            }
-        },
-        State {
-            name: "clicked"
-            when: skipButtonArea.pressed
-            PropertyChanges {
-                target: skipButton
-                scale: 0.9
-            }
-        },
-        State {
-            name: "hover"
-            when: skipButtonArea.containsMouse
-            PropertyChanges {
-                target: skipButton
-                scale: 1.1
-            }
-        }
-        ]
-        Behavior on scale { NumberAnimation { duration: 70 } }
+        onClicked: {
+            tutorialSection.visible = false
+	        skipPressed()
+	    }
     }
 
     // Image component for tutorial instructions
     Image {
         id: tutorialImage
         width: parent.width * 0.8
-        height: (parent.height - nextButton.height) * 0.6
+        height: (parent.height - nextButton.height) * 0.48
         fillMode: Image.PreserveAspectFit
         source: tutorialDetails ? tutorialDetails[tutorialNumber].instructionImage : ""
         anchors {

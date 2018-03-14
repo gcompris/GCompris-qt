@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Transportation")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/celerifere.svg",
           "x": "0.2",

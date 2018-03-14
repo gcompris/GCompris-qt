@@ -44,7 +44,7 @@ Image {
     property string question
     property string audio
 
-    signal displayDescription(variant animal)
+    signal displayDescription(var animal)
 
     SequentialAnimation {
         id: anim

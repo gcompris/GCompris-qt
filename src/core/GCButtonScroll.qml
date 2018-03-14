@@ -32,29 +32,42 @@ import GCompris 1.0
 Rectangle {
     id: scrollButtons
     color: "#00000000"
-    width: 50 * ApplicationInfo.ratio
-    height: 110 * ApplicationInfo.ratio
+    width: (isHorizontal ? 110 : 50) * ApplicationInfo.ratio
+    height: (isHorizontal ? 50 : 110) * ApplicationInfo.ratio
     
     signal up
     signal down
     
     property bool upVisible: false
     property bool downVisible: false
+
+    property bool isHorizontal: false
+    property real heightRatio: isHorizontal ? (50 / 110) : (110 / 50)
+    property real widthRatio: 1 / heightRatio
     
     BarButton {
         id: scrollUp
-        source: "qrc:/gcompris/src/core/resource/scroll_up.svg";
-        sourceSize.width: parent.width
-        anchors.top: parent.top
+        width: isHorizontal ? parent.height : parent.width
+        height: width
+        source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
+        sourceSize.width: scrollUp.width
+        sourceSize.height: scrollUp.height
+        rotation: 180
+        anchors.top: isHorizontal ? undefined : parent.top
+        anchors.left: isHorizontal ? parent.left : undefined
         onClicked: up()
         visible: upVisible
     }
     
     BarButton {
         id: scrollDown
+        width: isHorizontal ? parent.height : parent.width
+        height: width
         source: "qrc:/gcompris/src/core/resource/scroll_down.svg";
-        sourceSize.width: parent.width
+        sourceSize.width: scrollDown.width
+        sourceSize.height: scrollDown.height
         anchors.bottom: parent.bottom
+        anchors.right: isHorizontal ? parent.right : undefined
         onClicked: down()
         visible: downVisible
     }

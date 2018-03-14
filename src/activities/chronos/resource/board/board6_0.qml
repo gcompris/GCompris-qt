@@ -24,7 +24,7 @@ import QtQuick 2.6
 QtObject {
    property int numberOfSubLevel: 3
    property string instruction: qsTr("Aviation")
-   property variant levels: [
+   property var levels: [
       {
           "pixmapfile": "images/Eole.svg",
           "x": "0.2",

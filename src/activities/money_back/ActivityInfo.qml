@@ -29,7 +29,7 @@ ActivityInfo {
   description: qsTr("Practice money usage by giving Tux his change")
 //  intro: "Click on the money at the bottom of the screen to give Tux his change."
   //: Help goal
-  goal: qsTr("Tux bought you different items and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.")
+  goal: qsTr("Tux bought different items from you and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.")
   //: Help prerequisite
   prerequisite: qsTr("Can count")
   //: Help manual

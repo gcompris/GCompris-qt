@@ -29,7 +29,7 @@ import "."
 ActivityBase {
     id: activity
 
-    property variant dataset
+    property var dataset
 
     onStart: focus = true
     onStop: {}
@@ -61,7 +61,7 @@ ActivityBase {
             property int numberOfSubLevels
             property int currentSubLevel
             property int giftWeight
-            property variant dataset: activity.dataset
+            property var dataset: activity.dataset
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
             property alias masseAreaRight: masseAreaRight
@@ -147,7 +147,6 @@ ActivityBase {
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
                 nbColumns: 3
-                dropEnabled: true
                 audioEffects: activity.audioEffects
 
                 Behavior on anchors.verticalCenterOffset {
@@ -194,7 +193,7 @@ ActivityBase {
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
                 nbColumns: 3
-                dropEnabled: items.dataset[bar.level - 1].rightDrop
+                dropEnabledForThisLevel: items.dataset[bar.level - 1].rightDrop
                 audioEffects: activity.audioEffects
 
                 Behavior on anchors.verticalCenterOffset {
@@ -217,7 +216,6 @@ ActivityBase {
             masseAreaLeft: masseAreaLeft
             masseAreaRight: masseAreaRight
             nbColumns: masseModel.count
-            dropEnabled: true
             audioEffects: activity.audioEffects
         }
 
@@ -283,11 +281,15 @@ ActivityBase {
         }
 
         Keys.onPressed: {
-            numpad.updateAnswer(event.key, true);
+            if(question.displayed) {
+                numpad.updateAnswer(event.key, true);
+            }
         }
 
         Keys.onReleased: {
-            numpad.updateAnswer(event.key, false);
+            if(question.displayed) {
+                numpad.updateAnswer(event.key, false);
+            }
         }
 
         Bonus {

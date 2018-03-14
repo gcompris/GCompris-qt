@@ -153,13 +153,13 @@ ActivityBase {
         Column {
             id: progress
             visible: items.score.currentSubLevel != 1
-            anchors.bottom: parent.bottom
+            anchors.bottom: bar.top
             anchors.right: parent.right
             anchors.margins: 10 * ApplicationInfo.ratio
             ProgressBar {
                 id: progressbar
-                height: questionText.height
-                width: background.width / 2.5
+                height: progressbarText.height
+                width: bar.width
                 property string message
                 onValueChanged: message = value + "/" + maximumValue
                 onMaximumValueChanged:  message = value + "/" + maximumValue
@@ -182,7 +182,7 @@ ActivityBase {
             sourceSize.width: questionText.height * 2
             fillMode: Image.PreserveAspectFit
             anchors.right: progress.left
-            anchors.bottom: parent.bottom
+            anchors.bottom: bar.top
             anchors.margins: 10 * ApplicationInfo.ratio
             MouseArea {
                 anchors.fill: parent

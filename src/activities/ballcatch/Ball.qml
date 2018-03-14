@@ -23,13 +23,16 @@ import GCompris 1.0
 
 Image {
     id: ball
+
+    property bool isVertical: background.width <= background.height    // To check if in Vertical mode
+
     source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
-    sourceSize.height: 200 * ApplicationInfo.ratio
+    sourceSize.height: background.isVertical ? 175 * Application.ratio : 200 * ApplicationInfo.ratio
     z: 3
 
     readonly property real initScale: 1.0
 
-    // If won, ball goes on tux, if loose, depends on the side clicked first
+    // If won, ball goes on tux, if lose, depends on the side clicked first
     property int finishX
 
     readonly property int finishY: tux.y + tux.height / 4
@@ -60,7 +63,7 @@ Image {
                 bonus.good("tux")
             }
             else {
-                // This is a loose
+                // This is a lose
                 bonus.bad("tux")
             }
         }

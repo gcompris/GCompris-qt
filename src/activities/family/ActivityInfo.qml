@@ -26,7 +26,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Family")
   //: Help title
-  description: qsTr("This activity will give teach about who we are related to our relatives")
+  description: qsTr("This activity will teach you about who we are related to our relatives")
   //intro: "Let us understand what to call our relatives"
   //: Help goal
   goal: qsTr("To get an idea about relationships in the family")
@@ -35,7 +35,7 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("To find the relation between two family members.\n" +
      "For the married couple we have highlighted with the rings that is between two circles. For the rest of relations we have only solid lines.\n" +
-  "Red circle will point to you and blue one to your relative. Now you have to find what you should call this person.\n")
+  "White circle will point to you and red one to your relative. Now you have to find what you should call this person.\n")
   credit: ""
   section: "discovery"
   createdInVersion: 9000

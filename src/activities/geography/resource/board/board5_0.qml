@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
     property string instruction: qsTr("Western Europe")
-    property variant levels: [
+    property var levels: [
     {
         "pixmapfile": "europe/europe.png",
         "type": "SHAPE_BACKGROUND_IMAGE"
@@ -96,7 +96,7 @@ QtObject {
         "soundFile": "voices-$CA/$LOCALE/geography/ireland.$CA",
         "toolTipText": qsTr("Ireland"),
         "x": "0.14",
-        "y": "0.48"
+        "y": "0.47"
     },
     {
         "pixmapfile": "europe/iceland.png",

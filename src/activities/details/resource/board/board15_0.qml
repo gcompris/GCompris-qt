@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Courtyard of the Museum of Louvre, and its pyramid")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/Louvre_2007_02_24_c_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

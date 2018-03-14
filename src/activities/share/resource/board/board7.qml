@@ -18,7 +18,7 @@
 import QtQuick 2.6
 
 QtObject {
-    property variant levels : [
+    property var levels : [
         {
             "maxBoys": 2,
             "maxGirls": 2,

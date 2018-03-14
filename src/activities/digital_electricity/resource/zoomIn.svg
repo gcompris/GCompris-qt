@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4147"
+   sodipodi:docname="zoomIn.svg"
+   viewBox="0 0 256 255.99999"
+   sodipodi:version="0.32"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:version="0.92.1 r15371"
+   width="256"
+   height="256">
+  <defs
+     id="defs17">
+    <linearGradient
+       id="linearGradient4172"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop4174" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop4176" />
+    </linearGradient>
+    <style
+       id="current-color-scheme"
+       type="text/css">
+      .ColorScheme-Text {
+        color:#f2f2f2
+      }
+      </style>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ababab"
+     inkscape:window-height="1051"
+     inkscape:zoom="1.979899"
+     inkscape:window-x="0"
+     borderopacity="1.0"
+     inkscape:current-layer="REPEAT"
+     inkscape:cx="17.242591"
+     inkscape:cy="89.19536"
+     inkscape:window-width="1884"
+     inkscape:pageopacity="0"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid833"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <g
+     id="layer1"
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     transform="translate(-630.05638,-628.89436)">
+    <g
+       style="display:inline;fill:#7696a6;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="REPEAT"
+       transform="matrix(3.7575701,0,0,3.7575701,-1352.3239,-685.17331)">
+      <path
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 128 8 A 120 120 0 0 0 8 128 A 120 120 0 0 0 128 248 A 120 120 0 0 0 248 128 A 120 120 0 0 0 128 8 z M 128 24 A 104 104 0 0 1 232 128 A 104 104 0 0 1 128 232 A 104 104 0 0 1 24 128 A 104 104 0 0 1 128 24 z "
+         transform="matrix(0.26612943,0,0,0.26612943,527.56974,349.71208)"
+         id="path837" />
+      <path
+         id="path6"
+         class="ColorScheme-Text"
+         d="m 544.60202,366.74437 v 4.25808 h 2.12904 v -2.12904 h 2.12904 v -2.12904 z m 10.6452,0 v 2.12904 h 4.258 v -2.12904 z m 8.51608,0 v 2.12904 h 4.25809 v -2.12904 z m 10.64521,0 v 2.12904 h 2.12904 v 2.12904 h 2.12904 v -4.25808 z m -12.77425,8.51616 v 2.12904 h 4.88185 l -7.01089,7.01089 1.50536,1.50528 7.01081,-7.01089 v 4.88185 h 2.12904 v -8.51617 h -2.12904 z m -17.03224,2.12904 v 4.25809 h 2.12904 v -4.25809 z m 31.93553,0 v 4.25809 h 2.12904 v -4.25809 z m 0,8.51617 v 4.25808 h 2.12904 v -4.25808 z m -31.93553,2.12904 v 12.77416 h 12.77416 v -12.77416 z m 2.12904,2.12904 h 8.51616 v 8.51608 h -8.51616 z m 29.80649,6.38704 v 2.12904 h -2.12904 v 2.12904 h 4.25808 v -4.25808 z"
+         style="color:#f2f2f2;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:4.25807238"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title />
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2018</dc:date>
+        <dc:description />
+        <dc:source />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -34,13 +34,8 @@ Rectangle {
     color: "#AAFFFFFF"
     radius: 10
     anchors.margins: 30
-    border.color: "black"
+    border.color: "#373737"
     border.width: 2
-    QtObject {
-        property alias animWin: animWin
-        property alias crossAnim: crossAnim
-        property alias choiceBox: choiceBox
-    }
 
     function select() {
         if(Activity.dayOfWeekSelected === Activity.correctAnswer["dayOfWeek"]) {
@@ -55,26 +50,20 @@ Rectangle {
 
     Image {
         id: cross
-        source: "qrc:/gcompris/src/activities/colors/resource/checkError.svg"
-        sourceSize.width: 128 * ApplicationInfo.ratio
+        z: 10
+        source: "qrc:/gcompris/src/core/resource/cancel.svg"
+        sourceSize.width: choiceBox.height
+        sourceSize.height: choiceBox.height
         anchors.centerIn: parent
-        width: 0
-        height: width
+        height: 0
+        width: cross.height
         opacity: 1
-        property int size: Math.min(parent.width, parent.height)
+        property int size: parent.height
     }
 
     SequentialAnimation {
         id: crossAnim
         ParallelAnimation {
-            PropertyAnimation {
-                target: cross
-                property: "width"
-                duration: 300
-                from: 0
-                to: choiceBox.width
-                easing.type: Easing.InOutQuad
-            }
             PropertyAnimation {
                 target: cross
                 property: "height"
@@ -86,14 +75,6 @@ Rectangle {
         }
         PauseAnimation { duration: 800 }
         ParallelAnimation {
-            PropertyAnimation {
-                target: cross
-                property: "width"
-                duration: 300
-                from: choiceBox.width
-                to: 0
-                easing.type: Easing.InOutQuad
-            }
             PropertyAnimation {
                 target: cross
                 property: "height"
@@ -126,9 +107,11 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: {
-            Activity.dayOfWeekSelected = index
-            select()
-            choiceBox.scale = 1
+            if(!questionDelay.running) {
+                Activity.dayOfWeekSelected = dayIndex
+                select()
+                choiceBox.scale = 1
+            }
         }
         hoverEnabled: true
         enabled: !crossAnim.running && !animWin.running

@@ -34,8 +34,8 @@ function get() {
                  [ // Level 1 Configurations
                   {
                       "navigationBarVisible" : false,
-                      "minimumDate": "2017-01-01",
-                      "maximumDate": "2019-12-31",
+                      "minimumDate": "2018-03-01",
+                      "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
                       "mode": "findDay"
@@ -161,8 +161,8 @@ function get() {
                  [ // Level 4 Configurations
                   {
                       "navigationBarVisible" : false,
-                      "minimumDate": "2017-01-01",
-                      "maximumDate": "2019-12-31",
+                      "minimumDate": "2018-03-01",
+                      "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
                       "mode": "findDay"

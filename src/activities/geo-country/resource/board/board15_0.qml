@@ -24,7 +24,7 @@ import QtQuick 2.6
 QtObject {
    property int numberOfSubLevel: 3
    property string instruction: qsTr("Northern Scotland")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "scotland/bg_north.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"

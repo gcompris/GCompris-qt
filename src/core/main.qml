@@ -223,7 +223,7 @@ Window {
             }
         }
 
-        focus: ApplicationInfo.QTVersion >= "5.4.0"
+        focus: true
 
         delegate: StackViewDelegate {
             id: root

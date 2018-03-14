@@ -41,7 +41,7 @@ Item {
     property alias wordListModel: wordListModel
     property alias wordListView: wordListView
     property alias parser: parser
-    property variant goodWord
+    property var goodWord
     property bool horizontalLayout: background.width > background.height
 
     function init(loadedItems_, wordList_, mode_) {

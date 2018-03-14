@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Reading")
   //: Help manual
-  manual: qsTr("A word is shown at the top right of the board. A list of words will appear and disappear on the left. Does the given word belong to the list?")
+  manual: qsTr("A word is shown on the board. A list of words, displayed vertically, will appear and disappear. Does the given word belong to the list?")
   credit: ""
   section: "reading"
   createdInVersion: 5000

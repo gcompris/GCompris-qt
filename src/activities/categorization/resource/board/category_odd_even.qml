@@ -25,7 +25,7 @@ QtObject {
     property bool isEmbedded: false
     property bool allowExpertMode: false
     property string imagesPrefix: "qrc:/gcompris/data/words/numbers/"
-    property variant levels: [
+    property var levels: [
         {
             "type": "lesson",
             "name": qsTr("odd even numbers"),

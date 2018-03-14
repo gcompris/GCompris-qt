@@ -37,8 +37,8 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + "back.svg"
-        sourceSize.width: parent.width
+        source: Activity.url + "background.svg"
+        width: parent.width
         height: parent.height
         fillMode: Image.PreserveAspectCrop
         property bool horizontalLayout: background.width > background.height
@@ -170,8 +170,7 @@ ActivityBase {
                 height: background.treeAreaHeight
                 anchors.horizontalCenter: activity.mode == "find_relative" ? board.horizontalCenter : undefined
                 anchors.verticalCenter: activity.mode == "find_relative" ? board.verticalCenter : undefined
-                border.color: activity.mode == "family" ? "black" : "transparent"
-                border.width: 5
+                border.width: 0
                 Item {
                     id: treeItem
                     Repeater {
@@ -182,12 +181,13 @@ ActivityBase {
                             id: currentPointer
                             x: xPosition * treeArea.width
                             y: yPosition * treeArea.height
+                            z: 30
                             width: treeArea.width / 5
                             height: treeArea.width / 5
                             nodeWidth: currentPointer.width
                             nodeHeight: currentPointer.height
                             nodeImageSource: Activity.url + nodeValue
-                            borderColor: "black"
+                            borderColor: "#373737"
                             borderWidth: 8
                             color: "transparent"
                             radius: nodeWidth / 2
@@ -199,7 +199,7 @@ ActivityBase {
                                      name: "active"
                                      PropertyChanges {
                                          target: currentPointer
-                                         borderColor: "blue"
+                                         borderColor: "#e1e1e1"
                                      }
                                },
                                State {
@@ -212,7 +212,8 @@ ActivityBase {
                                     name: "activeTo"
                                     PropertyChanges {
                                         target: currentPointer
-                                        borderColor: "yellow"
+                                        borderColor: "#e77936"
+                                        color: "#80f2f2f2"
                                     }
                                }
                             ]
@@ -229,10 +230,35 @@ ActivityBase {
                         height: treeArea.height / 14
 
                         radius: 5
-                        border.color: "black"
+                        color: "#f2f2f2"
+                        border.color: "#e1e1e1"
                         GCText {
                             id: meLabel
                             text: qsTr("Me")
+                            color: "#555555"
+                            anchors {
+                                horizontalCenter: parent.horizontalCenter
+                                verticalCenter: parent.verticalCenter
+                            }
+                        }
+                    }
+                    
+                    Rectangle {
+                        id: questionmark
+                        visible: dataset.levelElements[bar.level-1].captions[1] !== undefined && activity.mode == "family"
+                        x: items.questionMarkPosition.x * treeArea.width
+                        y: items.questionMarkPosition.y * treeArea.height
+
+                        width: treeArea.width / 14
+                        height: width
+
+                        radius: width/2
+                        color: "#f2f2f2"
+                        border.color: "#e77936"
+                        GCText {
+                            id: qLabel
+                            text: qsTr("?")
+                            color: "#555555"
                             anchors {
                                 horizontalCenter: parent.horizontalCenter
                                 verticalCenter: parent.verticalCenter
@@ -240,19 +266,12 @@ ActivityBase {
                         }
                     }
 
-                    Image {
-                        id: questionmark
-                        source: Activity.url + "questionmark.svg"
-                        visible: dataset.levelElements[bar.level-1].captions[1] !== undefined && activity.mode == "family"
-                        x: items.questionMarkPosition.x * treeArea.width
-                        y: items.questionMarkPosition.y * treeArea.height
-                    }
-
                     Repeater {
                         id: edgeRepeater
                         model: ListModel {}
                         delegate: Rectangle {
                             id: edge
+                            z: 20
                             opacity: 1
                             antialiasing: true
                             transformOrigin: Item.TopLeft
@@ -263,20 +282,7 @@ ActivityBase {
                             width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
                             height: 4 * ApplicationInfo.ratio
                             rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
-                            color: "black"
-                            Behavior on height {
-                                NumberAnimation {
-                                    duration: 2000
-                                    easing.type: Easing.OutExpo
-                                }
-                            }
-
-                            Behavior on width {
-                                NumberAnimation {
-                                    duration: 2000
-                                    easing.type: Easing.OutExpo
-                                }
-                            }
+                            color: "#373737"
                         }
                     }
 
@@ -286,10 +292,12 @@ ActivityBase {
                         delegate: Image {
                             id: ring
                             source: Activity.url + "rings.svg"
-                            width: treeArea.width * 0.04
-                            height: treeArea.width * 0.04
+                            width: treeArea.width * 0.05
+                            sourceSize.width: width
+                            fillMode: Image.PreserveAspectCrop
                             x: ringx * treeArea.width
                             y: ringy * treeArea.height
+                            z: 40
                         }
                     }
                 }
@@ -302,8 +310,7 @@ ActivityBase {
                 height: background.horizontalLayout ? background.height : background.height*0.35
                 anchors.left: background.horizontalLayout ? treeArea.right : board.left
                 anchors.top: background.horizontalLayout ? board.top: treeArea.bottom
-                border.color: activity.mode == "family" ? "black" : "transparent"
-                border.width: 5
+                border.width: 0
                 Rectangle {
                     width: parent.width * 0.99
                     height: parent.height * 0.99
@@ -312,11 +319,28 @@ ActivityBase {
                     color: "transparent"
 
                     Grid {
+                        id: answersGrid
                         visible: activity.mode == "family" ? true : false
                         columns: 1
-                        rowSpacing: 20
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.horizontalCenter: parent.horizontalCenter
+                        rowSpacing: 10*ApplicationInfo.ratio
+                        states: [
+                            State {
+                                name: "anchorCenter"; when: background.horizontalLayout
+                                AnchorChanges {
+                                    target: answersGrid
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    anchors.left: parent.left
+                                }
+                            },
+                            State {
+                                name: "anchorTop"; when: !background.horizontalLayout
+                                AnchorChanges {
+                                    target: answersGrid
+                                    anchors.top: parent.top
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                }
+                            }
+                        ]
                         Repeater {
                             id: answersChoice
                             model: ListModel {}

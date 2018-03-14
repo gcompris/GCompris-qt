@@ -10,8 +10,6 @@ if(SAILFISHOS)
   add_definitions(-DSAILFISHOS)
 endif()
 
-# Note: put .cpp files before .h files in the following or cmake messes up
-# moc generation -- WTF! 
 set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfo.h
@@ -27,13 +25,6 @@ set(gcompris_SRCS
    Directory.h
    DownloadManager.cpp
    DownloadManager.h
-)
-
-qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS})
-
-# Add files that do no need to pass through the moc processor
-set(gcompris_SRCS
-   ${gcompris_SRCS}
    main.cpp
    config.h.in
 )
@@ -43,10 +34,6 @@ if(ANDROID)
 else()
   list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp ApplicationInfoDefault.cpp)
 endif()
-
-include_directories(
-  "${CMAKE_CURRENT_BINARY_DIR}"   # to find config.h
-)
 
 # Resources
 set(GCOMPRIS_RESOURCES "${PROJECT_SOURCE_DIR}/installer")
@@ -62,21 +49,31 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
+set(used_qt_modules Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors)
+
 if(ANDROID)
-  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
+  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
+  set(used_qt_modules ${used_qt_modules} AndroidExtras)
 elseif(CMAKE_HOST_APPLE)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_RES})
 elseif(CMAKE_HOST_WIN32)
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} WIN32 ${gcompris_SRCS} ${gcompris_RES})
+elseif(SAILFISHOS)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
+  set(used_qt_modules ${used_qt_modules} Widgets)
 else()
-  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
 
-GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir)
+# do not build shared library for android, it crashes
+if(NOT ANDROID)
+  add_library(gcompris_core SHARED ${gcompris_SRCS})
+  qt5_use_modules(gcompris_core ${used_qt_modules})
+endif()
+
+qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
+
+GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir COPYING)
 
 # Installation
 # ============
@@ -284,6 +281,7 @@ elseif(SAILFISHOS)
   set(CPACK_RPM_PACKAGE_VERSION "${GCOMPRIS_VERSION}")
   set(CPACK_RPM_PACKAGE_LICENSED "GPLv3")
   set(CPACK_RPM_PACKAGE_URL "https://www.gcompris.org")
+  set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtquickcontrols")
   set(CPACK_RPM_PACKAGE_DESCRIPTION "GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")
   set(CPACK_RPM_USER_BINARY_SPECFILE "${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec")
   set(CMAKE_INSTALL_PREFIX "/usr")
