@@ -62,7 +62,7 @@ ActivityBase {
             Core.quit(main);
         }
         // When a dialog box is closed.
-        else if(returnFromDialog) {
+        else if(returnFromDialog || !ApplicationSettings.isExitDialogEnabled) {
             returnFromDialog = false;
             pageView.pop();
             // Restore focus that has been taken by the loaded activity
@@ -72,7 +72,7 @@ ActivityBase {
         // A confirmation dialog to quit the current activity is popped.
         else {
             Core.showMessageDialog(parent,
-                                   qsTr("Do you really want to quit?"),
+                                   qsTr("Do you want to leave current activity?"),
                                    qsTr("Yes"), function() { pageView.pop();
                                        // Restore focus that has been taken by the loaded activity
                                        if(pageView.currentItem == activity)

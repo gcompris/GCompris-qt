@@ -98,8 +98,14 @@ Item {
         fill: parent
     }
 
-    onStart: opacity = 1
-    onStop: opacity = 0
+    onStart: {
+        opacity = 1
+        forceActiveFocus();
+    }
+    onStop: {
+        opacity = 0
+        parent.currentItem.forceActiveFocus();
+    }
     onClose: destroy()
 
     Behavior on opacity { NumberAnimation { duration: 200 } }
@@ -158,7 +164,7 @@ Item {
                     fontSize: regularSize
                     color: "black"
                     // @FIXME This property breaks the wrapping
-//                    horizontalAlignment: Text.AlignHCenter
+                    //                    horizontalAlignment: Text.AlignHCenter
                     // need to remove the anchors (left and right) else sometimes text is hidden on the side
                     width: instruction.width - 2*flick.anchors.margins
                     wrapMode: TextEdit.WordWrap

@@ -95,12 +95,12 @@ function showMessageDialog(parent, informativeText,
                            closeCallback) {
     //console.debug("Core.showMessageDialog: parent=" + parent + " backtrace="); console.trace();
     var qmlStr =
-          'import QtQuick 2.6\n'
-        + 'GCDialog {\n'
-        + '    message: "' + informativeText + '"\n'
-        + '    button1Text: "' + button1Text + '"\n'
-        + '    button2Text: "' + button2Text + '"\n'
-        + ' }\n';
+            'import QtQuick 2.6\n'
+            + 'GCDialog {\n'
+            + '    message: "' + informativeText + '"\n'
+            + '    button1Text: "' + button1Text + '"\n'
+            + '    button2Text: "' + button2Text + '"\n'
+            + ' }\n';
 
     var dialog = null;
     try {
@@ -156,7 +156,7 @@ function showDownloadDialog(parent, properties) {
             downloadDialogComponent = Qt.createComponent("qrc:/gcompris/src/core/DownloadDialog.qml");
             if (downloadDialogComponent.status != Qml.Component.Ready) {
                 throw new Error("Error creating DownloadDialog component: "
-                        + downloadDialogComponent.errorString());
+                                + downloadDialogComponent.errorString());
                 downloadDialogComponent = null;
             }
         }
@@ -187,13 +187,13 @@ function checkForVoices(parent)
 {
     if (!GCompris.DownloadManager.areVoicesRegistered()) {
         showMessageDialog(parent,
-                qsTr("Missing sound files!") + '\n'
-                + qsTr("This activity uses language sound files, that are not yet installed on your system.")
-                + '\n'
-                + qsTr("For downloading the needed sound files go to the preferences dialog."),
-                "", null,
-                "", null,
-                null);
+                          qsTr("Missing sound files!") + '\n'
+                          + qsTr("This activity uses language sound files, that are not yet installed on your system.")
+                          + '\n'
+                          + qsTr("For downloading the needed sound files go to the preferences dialog."),
+                          "", null,
+                          "", null,
+                          null);
     }
 }
 
@@ -207,7 +207,7 @@ var aboutToQuit = false;
  *
  * @param parent QML parent object used for the dynamic dialog.
  */
-function quit(parent)
+function quit(parent, forcedQuit)
 {
     if (aboutToQuit)  // don't execute concurrently
         return;
@@ -218,22 +218,26 @@ function quit(parent)
 
     if (GCompris.DownloadManager.downloadIsRunning()) {
         var dialog = showDownloadDialog(parent, {
-            text: qsTr("Download in progress")
-                  + '\n'
-                  + qsTr("Download in progress.<br/>'Abort' it to quit immediately."),
-            autohide: true,
-            reportError: false,
-            reportSuccess: false,
-            backgroundButtonVisible: false
-        });
+                                            text: qsTr("Download in progress")
+                                                  + '\n'
+                                                  + qsTr("Download in progress.<br/>'Abort' it to quit immediately."),
+                                            autohide: true,
+                                            reportError: false,
+                                            reportSuccess: false,
+                                            backgroundButtonVisible: false
+                                        });
         dialog.finished.connect(function() {Qt.quit();});
-    } else {
+    }
+    else if(forcedQuit) {
+        Qt.quit();
+    }
+    else {
         // prevent the user from quitting accidentially by clicking back too often:
         showMessageDialog(parent,
-                qsTr("Do you really want to quit GCompris?"),
-                qsTr("Yes"), function() { Qt.quit(); },
-                qsTr("No"), function() { aboutToQuit = false; },
-                function() { aboutToQuit = false; } );
+                          qsTr("Do you really want to quit GCompris?"),
+                          qsTr("Yes"), function() { Qt.quit(); },
+                          qsTr("No"), function() { aboutToQuit = false; },
+                          function() { aboutToQuit = false; } );
     }
 }
 
