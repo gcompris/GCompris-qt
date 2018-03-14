@@ -55,6 +55,7 @@ static const QString PREVIOUS_WIDTH_KEY = "previousWidth";
 static const QString SHOW_LOCKED_ACTIVITIES_KEY = "showLockedActivities";
 static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
 static const QString ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
+static const QString ENABLE_EXIT_DIALOG_KEY = "enableExitDialog";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
 static const QString FONT_KEY = "font";
@@ -99,6 +100,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_isAudioEffectsEnabled = m_config.value(ENABLE_AUDIO_EFFECTS_KEY, true).toBool();
+    m_isExitDialogEnabled = m_config.value(ENABLE_EXIT_DIALOG_KEY, true).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
     m_previousHeight = m_config.value(PREVIOUS_HEIGHT_KEY, screenSize.height()).toUInt();
     m_previousWidth = m_config.value(PREVIOUS_WIDTH_KEY, screenSize.width()).toUInt();
@@ -170,7 +172,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
 	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
 	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
-	connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
+    connect(this, &ApplicationSettings::exitDialogEnabledChanged, this, &ApplicationSettings::notifyExitDialogEnabledChanged);
+    connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
     connect(this, &ApplicationSettings::previousHeightChanged, this, &ApplicationSettings::notifyPreviousHeightChanged);
     connect(this, &ApplicationSettings::previousWidthChanged, this, &ApplicationSettings::notifyPreviousWidthChanged);
     connect(this, &ApplicationSettings::localeChanged, this, &ApplicationSettings::notifyLocaleChanged);
@@ -253,6 +256,12 @@ void ApplicationSettings::notifyAudioEffectsEnabledChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUDIO_EFFECTS_KEY, m_isAudioEffectsEnabled);
 	qDebug() << "notifyAudioEffects: " << m_isAudioEffectsEnabled;
+}
+
+void ApplicationSettings::notifyExitDialogEnabledChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_EXIT_DIALOG_KEY, m_isExitDialogEnabled);
+    qDebug() << "exit dialog Visibilty set to : " << m_isExitDialogEnabled;
 }
 
 void ApplicationSettings::notifyLocaleChanged()

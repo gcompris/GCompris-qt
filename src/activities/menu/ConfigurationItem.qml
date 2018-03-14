@@ -213,6 +213,15 @@ Item {
         }
 
         GCDialogCheckBox {
+            id: enableExitDialogBox
+            text: qsTr("Enable activity Exit confirmation dialog")
+            checked: isExitDialogEnabled
+            onCheckedChanged: {
+                isExitDialogEnabled = checked;
+            }
+        }
+
+        GCDialogCheckBox {
             id: enableFullscreenBox
             text: qsTr("Fullscreen")
             checked: isFullscreen
@@ -526,6 +535,7 @@ Item {
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
+    property bool isExitDialogEnabled: ApplicationSettings.isExitDialogEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
@@ -543,6 +553,9 @@ Item {
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
+
+        isExitDialogEnabled = ApplicationSettings.isExitDialogEnabled
+        enableExitDialogBox.checked = isExitDialogEnabled
 
         isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
@@ -591,6 +604,7 @@ Item {
         ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
+        ApplicationSettings.isExitDialogEnabled = isExitDialogEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
