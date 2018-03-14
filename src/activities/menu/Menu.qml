@@ -697,6 +697,7 @@ ActivityBase {
                 dialogActivityConfig.loader.item.loadFromConfig()
                 displayDialog(dialogActivityConfig)
             }
+            onExitClicked: home()
         }
                 
         DialogAbout {
