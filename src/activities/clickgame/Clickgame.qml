@@ -71,9 +71,10 @@ ActivityBase {
             id: score
 
             anchors {
-                bottom: parent.bottom
+                top: parent.top
+                bottom: undefined
                 right: parent.right
-                margins: 20 * ApplicationInfo.ratio
+                margins: 10 * ApplicationInfo.ratio
             }
         }
 

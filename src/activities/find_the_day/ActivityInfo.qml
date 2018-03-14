@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,16 +18,23 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "submarine/Submarine.qml"
-  difficulty: 5
-  icon: "submarine/submarine.svg"
-  author: "Pascal Georges &lt;pascal.georges1@free.fr&gt;"
+  name: "find_the_day/FindTheDay.qml"
+  difficulty: 6
+  icon: "find_the_day/find_the_day.svg"
+  author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
   demo: true
-  title: qsTr("Pilot a submarine")
-  description: qsTr("Pilot a submarine using air tanks and dive rudders")
-  goal: qsTr("Learn how a submarine works")
-  prerequisite: qsTr("Physics basics")
-  manual: qsTr("Click on different active elements : engine, rudders and air tanks, in order to navigate to the required depth. There is a close gate on the right. After the first level, your have to catch the jewel to open it. Pass through it to reach the next level.")
+  //: Activity title
+  title: qsTr("Find the day")
+  //: Help title
+  description: qsTr("Read the task and find the correct date by doing mathematical calculations.")
+  //intro: "Select the required day."
+  //: Help goal
+  goal: qsTr("Learn to find date on the calendar by duration calculations.")
+  //: Help prerequisite
+  prerequisite: qsTr("Basics of calendar")
+  //: Help manual
+  manual: qsTr("Review the instructions and select the correct date on calendar.")
   credit: ""
-  section: "/experience"
+  section: "discovery"
+  createdInVersion: 9000
 }

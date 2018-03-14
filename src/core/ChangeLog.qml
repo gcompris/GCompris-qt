@@ -37,6 +37,7 @@ QtObject {
      *
      */
     property var changelog: [
+            { "versionCode": 9000, "content": qsTr("License page added in configuration. Multiple changes on layouts to improve the ergonomy.") },
             { "versionCode": 8000, "content": qsTr("Lang activity now available in Polish, Swedish and Ukrainian.") },
             { "versionCode": 7000, "content": qsTr("Search feature.") },
             { "versionCode": 6000, "content": qsTr("A Changelog.") },

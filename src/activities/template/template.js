@@ -1,6 +1,6 @@
 /* GCompris - template.js
  *
- * Copyright (C) 2017 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2018 YOUR NAME <xx@yy.org>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
@@ -40,7 +40,7 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();

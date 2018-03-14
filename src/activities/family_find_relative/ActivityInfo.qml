@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: qsTr("Family find relatives")
+  title: qsTr("Point the relatives")
   //: Help title
   description: ""
   //intro: "Click on a pair that defines the given relation"

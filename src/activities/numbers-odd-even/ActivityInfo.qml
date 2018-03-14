@@ -27,7 +27,7 @@ ActivityInfo {
     title: qsTr("Even and Odd Numbers")
     //: Help title
     description: qsTr("Move the helicopter to catch the clouds having even or odd numbers")
-//  intro: "Move the helicopter to catch the clouds having even or odd numbers"
+//  intro: "Move the helicopter to catch the clouds having even or odd numbers, in the shown order."
     //: Help goal
     goal: qsTr("Numeration training")
     //: Help prerequisite

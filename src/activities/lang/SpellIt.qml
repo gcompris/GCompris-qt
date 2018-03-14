@@ -46,7 +46,7 @@ Item {
     property alias bonus: bonus
     property alias keyboard: keyboard
     property alias score: score
-    property variant goodWord
+    property var goodWord
     property int goodWordIndex
     property int maximumLengthAnswer
 

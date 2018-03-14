@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Subtraction")
   //: Help manual
-  manual: qsTr("Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom area to answer.")
+  manual: qsTr("Click on the hat to open it. Stars go in and a few stars escape. You have to count how many are still under the hat. Click on the bottom area to input your answer and on the OK button to validate your answer.")
   credit: ""
   section: "math numeration"
 }

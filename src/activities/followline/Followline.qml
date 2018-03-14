@@ -51,6 +51,7 @@ ActivityBase {
             property alias background: background
             property GCAudio audioEffects: activity.audioEffects
             property alias fireman: fireman
+            property alias fire: fire
             property alias bar: bar
             property alias bonus: bonus
             property int currentLock: 0
@@ -69,23 +70,23 @@ ActivityBase {
             anchors {
                 left: parent.left
                 verticalCenter: parent.verticalCenter
-                verticalCenterOffset: height / 4
+                verticalCenterOffset: - height / 10
             }
         }
 
         Image {
             id: fire
             source: Activity.url + "fire.svg"
-            sourceSize.width: 126 * ApplicationInfo.ratio
+            sourceSize.width: 90 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
-                bottom: parent.bottom
+                bottom: bar.top
             }
 
             Image {
                 id: fireflame
                 source: Activity.url + "fire_flame.svg"
-                sourceSize.width: 126 * ApplicationInfo.ratio
+                sourceSize.width: 90 * ApplicationInfo.ratio
                 anchors {
                     fill: parent
                 }

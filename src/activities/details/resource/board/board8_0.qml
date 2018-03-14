@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Vincent van Gogh, Portrait of Pere Tanguy 1887-8")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/PortraitOfPereTanguy_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

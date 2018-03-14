@@ -37,17 +37,23 @@ Item {
     property point leftBallastTankPosition
     property alias leftBallastTankWidth : leftBallastTankDisplay.width
     property alias leftBallastTankHeight : leftBallastTankDisplay.height
+    property alias rotateLeftFill: rotateLeftFill
+    property alias rotateLeftFlush: rotateLeftFlush
 
     property alias centralTankVisible : centralBallastTankController.visible
     property point centralBallastTankPosition
     property alias centralBallastTankWidth : centralBallastTankDisplay.width
     property alias centralBallastTankHeight : centralBallastTankDisplay.height
+    property alias rotateCentralFill: rotateCentralFill
+    property alias rotateCentralFlush: rotateCentralFlush
 
     property alias rightTankVisible : rightBallastTankController.visible
     property point rightBallastTankPosition
     property alias rightBallastTankWidth : rightBallastTankDisplay.width
     property alias rightBallastTankHeight : rightBallastTankDisplay.height
-
+    property alias rotateRightFill: rotateRightFill
+    property alias rotateRightFlush: rotateRightFlush
+    
     /* Diving Plane Controller properties */
     property bool divingPlaneVisible
     property point divingPlanePosition
@@ -64,10 +70,10 @@ Item {
         id: controlBackground
         source: url + "board.svg"
         width: background.width
-        height: background.height * 0.35
-        sourceSize.width: width
-        sourceSize.height: height
-        y: background.height - height
+        height: background.height * 0.40
+        sourceSize.width: controlBackground.width
+        sourceSize.height: controlBackground.height
+        y: background.height - controlBackground.height
     }
 
     Item {
@@ -93,12 +99,12 @@ Item {
             source: url + "up.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: incSpeed.width
+            sourceSize.height: incSpeed.height
 
             anchors {
                 right: engine.left
-                leftMargin: width / 2
+                leftMargin: incSpeed.width / 2
             }
             y: buttonPlusY
 
@@ -115,12 +121,12 @@ Item {
             source: url + "down.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: downSpeed.width
+            sourceSize.height: downSpeed.height
             
             anchors {
                 right: engine.left
-                leftMargin: width / 2
+                leftMargin: downSpeed.width / 2
             }
             y: buttonMinusY
             
@@ -169,13 +175,13 @@ Item {
             GCText {
                 id: leftBallastTankLabel
                 text: qsTr("Left Ballast Tank")
-
-                width: parent.width - 8
                 wrapMode: Text.WordWrap
-                anchors.centerIn: parent
+                anchors.fill: leftBallastTankDisplay
+                anchors.margins: 4
                 horizontalAlignment: Text.AlignHCenter
-
-                fontSize: 8
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 8
+                font.pixelSize: 70
                 color: "#B8D3E1EB"
             }
         }
@@ -184,42 +190,19 @@ Item {
             id: leftBallastFill
             source: url + "vanne.svg"
 
-            x: leftBallastTankDisplay.x - width * 1.1
+            x: leftBallastTankDisplay.x - buttonSize * 1.1
             y: buttonPlusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateLeftFill;
                 origin.x: leftBallastFill.width / 2;
                 origin.y: leftBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
-            }
-
-            SequentialAnimation {
-                id: leftFillAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFill
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: leftFillAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFill
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
             }
             
             MouseArea {
@@ -228,11 +211,7 @@ Item {
 
                 onClicked: {
                     leftBallastTank.fillBallastTanks()
-                    if (leftBallastTank.waterFilling) {
-                        leftFillAnim1.start()
-                    } else {
-                        leftFillAnim2.start()
-                    }
+                    updateVannes(leftBallastTank.waterFilling, rotateLeftFill)
                 }
             }
         }
@@ -241,42 +220,19 @@ Item {
             id: leftBallastFlush
             source: url + "vanne.svg"
 
-            x: leftBallastTankDisplay.x - width * 1.1
+            x: leftBallastTankDisplay.x - buttonSize * 1.1
             y: buttonMinusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateLeftFlush;
                 origin.x: leftBallastFill.width / 2;
                 origin.y: leftBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
-            }
-
-            SequentialAnimation {
-                id: leftFlushAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFlush
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: leftFlushAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateLeftFlush
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
             }
             
             MouseArea {
@@ -285,11 +241,7 @@ Item {
 
                 onClicked: {
                     leftBallastTank.flushBallastTanks()
-                    if (leftBallastTank.waterFlushing) {
-                        leftFlushAnim1.start()
-                    } else {
-                        leftFlushAnim2.start()
-                    }
+                    updateVannes(leftBallastTank.waterFlushing, rotateLeftFlush)
                 }
             }
         }
@@ -331,13 +283,13 @@ Item {
             GCText {
                 id: centralBallastTankLabel
                 text: qsTr("Central Ballast Tank")
-
-                width: parent.width - 10
                 wrapMode: Text.WordWrap
-                anchors.centerIn: parent
+                anchors.fill: centralBallastTankDisplay
+                anchors.margins: 4
                 horizontalAlignment: Text.AlignHCenter
-
-                fontSize: 8
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 8
+                font.pixelSize: 70
                 color: "#B8D3E1EB"
             }
         }
@@ -346,43 +298,19 @@ Item {
             id: centralBallastFill
             source: url + "vanne.svg"
 
-            x: centralBallastTankDisplay.x - width * 1.1
+            x: centralBallastTankDisplay.x - buttonSize * 1.1
             y: buttonPlusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
+            
             transform: Rotation {
                 id: rotateCentralFill;
                 origin.x: centralBallastFill.width / 2;
                 origin.y: centralBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
-            }
-
-            SequentialAnimation {
-                id: centralFillAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFill
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: centralFillAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFill
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
             }
             
             MouseArea {
@@ -391,11 +319,7 @@ Item {
 
                 onClicked: {
                     centralBallastTank.fillBallastTanks()
-                    if (centralBallastTank.waterFilling) {
-                        centralFillAnim1.start()
-                    } else {
-                        centralFillAnim2.start()
-                    }
+                    updateVannes(centralBallastTank.waterFilling, rotateCentralFill)
                 }
             }
         }
@@ -404,43 +328,19 @@ Item {
             id: centralBallastFlush
             source: url + "vanne.svg"
 
-            x: centralBallastTankDisplay.x - width * 1.1
+            x: centralBallastTankDisplay.x - buttonSize * 1.1
             y: buttonMinusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateCentralFlush;
                 origin.x: centralBallastFill.width / 2;
                 origin.y: centralBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
-            }
-
-            SequentialAnimation {
-                id: centralFlushAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFlush
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: centralFlushAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateCentralFlush
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
             }
             
             MouseArea {
@@ -449,11 +349,7 @@ Item {
 
                 onClicked: {
                     centralBallastTank.flushBallastTanks()
-                    if (centralBallastTank.waterFlushing) {
-                        centralFlushAnim1.start()
-                    } else {
-                        centralFlushAnim2.start()
-                    }
+                    updateVannes(centralBallastTank.waterFlushing, rotateCentralFlush)
                 }
             }
         }
@@ -494,13 +390,13 @@ Item {
             GCText {
                 id: rightBallastTankLabel
                 text: qsTr("Right Ballast Tank")
-
-                width: parent.width - 8
                 wrapMode: Text.WordWrap
-                anchors.centerIn: parent
+                anchors.fill: rightBallastTankDisplay
+                anchors.margins: 4
                 horizontalAlignment: Text.AlignHCenter
-
-                fontSize: 8
+                fontSizeMode: Text.Fit
+                minimumPixelSize: 8
+                font.pixelSize: 70
                 color: "#B8D3E1EB"
             }
         }
@@ -509,43 +405,19 @@ Item {
             id: rightBallastFill
             source: url + "vanne.svg"
 
-            x: rightBallastTankDisplay.x - width * 1.1
+            x: rightBallastTankDisplay.x - buttonSize * 1.1
             y: buttonPlusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateRightFill;
                 origin.x: rightBallastFill.width / 2;
                 origin.y: rightBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
-            }
-
-            SequentialAnimation {
-                id: rightFillAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFill
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: rightFillAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFill
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
             }
             
             MouseArea {
@@ -554,11 +426,7 @@ Item {
 
                 onClicked: {
                     rightBallastTank.fillBallastTanks()
-                    if (rightBallastTank.waterFilling) {
-                        rightFillAnim1.start()
-                    } else {
-                        rightFillAnim2.start()
-                    }
+                    updateVannes(rightBallastTank.waterFilling, rotateRightFill)
                 }
             }
         }
@@ -567,43 +435,19 @@ Item {
             id: rightBallastFlush
             source: url + "vanne.svg"
 
-            x: rightBallastTankDisplay.x - width * 1.1
+            x: rightBallastTankDisplay.x - buttonSize * 1.1
             y: buttonMinusY
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
-
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
+            rotation: 0
 
             transform: Rotation {
                 id: rotateRightFlush;
                 origin.x: rightBallastFill.width / 2;
                 origin.y: rightBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
-            }
-
-            SequentialAnimation {
-                id: rightFlushAnim1
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFlush
-                    properties: "angle"
-                    from: 0
-                    to: 90
-                    duration: 200
-                }
-            }
-
-            SequentialAnimation {
-                id: rightFlushAnim2
-                loops: 1
-                PropertyAnimation {
-                    target: rotateRightFlush
-                    properties: "angle"
-                    from: 90
-                    to: 0
-                    duration: 200
-                }
             }
             
             MouseArea {
@@ -612,13 +456,50 @@ Item {
 
                 onClicked: {
                     rightBallastTank.flushBallastTanks()
-                    if (rightBallastTank.waterFlushing) {
-                        rightFlushAnim1.start()
-                    } else {
-                        rightFlushAnim2.start()
-                    }
+                    updateVannes(rightBallastTank.waterFlushing, rotateRightFlush)
                 }
             }
+        }
+    }
+
+    PropertyAnimation {
+        id: ballastTankOnAnim
+        properties: "angle"
+        from: 0
+        to: 90
+        duration: 200
+    }
+
+    PropertyAnimation {
+        id: ballastTankOffAnim
+        properties: "angle"
+        from: 90
+        to: 0
+        duration: 200
+    }
+
+    function updateVannes(vanneOnCondition, animationTarget) {
+        if (vanneOnCondition) {
+            ballastTankOnAnim.target = animationTarget
+            ballastTankOnAnim.start()
+        } else {
+            ballastTankOffAnim.target = animationTarget
+            ballastTankOffAnim.start()
+        }
+    }
+
+    function resetVannes() {
+        if (leftTankVisible) {
+            rotateLeftFill.angle = 0
+            rotateLeftFlush.angle = 0
+        }
+        if (centralTankVisible) {
+            rotateCentralFill.angle = 0
+            rotateCentralFlush.angle = 0
+        }
+        if (rightTankVisible) {
+            rotateRightFill.angle = 0
+            rotateRightFlush.angle = 0
         }
     }
 
@@ -633,8 +514,8 @@ Item {
             source: url + "rudder.svg"
             width: divingPlaneWidth
             height: divingPlaneHeight
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: divingPlaneWidth
+            sourceSize.height: divingPlaneHeight
             
             x: divingPlanePosition.x
             y: divingPlanePosition.y
@@ -652,8 +533,8 @@ Item {
             source: url + "up.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
 
             anchors {
                 left: divingPlanesImage.right
@@ -674,8 +555,8 @@ Item {
             source: url + "down.svg"
             width: buttonSize
             height: buttonSize
-            sourceSize.width: width
-            sourceSize.height: height
+            sourceSize.width: buttonSize
+            sourceSize.height: buttonSize
 
             anchors {
                 left: divingPlanesImage.right

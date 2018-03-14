@@ -27,20 +27,30 @@ import "letter-in-word.js" as Activity
 
 Item {
     id: cardItem
-    //width: cardImage.width
     height: wordPic.height + cardImage.height - 30 * ApplicationInfo.ratio
     property bool mouseActive: true
 
     Image {
         id: wordPic
-        sourceSize.width: cardItem.width -6
-        sourceSize.height: cardItem.width -5
+        sourceSize.width: cardItem.width - 6
+        sourceSize.height: cardItem.width - 5
         fillMode: Image.PreserveAspectFit
         source: imgurl
         z: -5
-        //visible: index % 2 != 0 ? false : true
     }
 
+    Image {
+        id: tick
+        source: "qrc:/gcompris/src/core/resource/apply.svg"
+        sourceSize.width: cardImage.width / 3
+        sourceSize.height: cardImage.width / 3
+        visible: false
+
+        anchors {
+            leftMargin: cardItem.right - 0.01
+            bottomMargin: parent.top - 10
+        }
+    }
     Image {
         id: cardImage
         anchors.top: wordPic.bottom
@@ -48,8 +58,7 @@ Item {
         sourceSize.width: cardItem.width - 10
         fillMode: Image.PreserveAspectFit
         source: Activity.resUrl2 + "cloud.svg"
-        z: (state == 'scaled') ? 1 : -1
-        //visible: index % 2 != 0 ? false : true
+        z: (state == 'marked') ? 1 : -1
 
         GCText {
             id: textItem
@@ -72,17 +81,12 @@ Item {
 
         states:
             State {
-                name: "scaled"; when: selected && mouseActive
+                name: "marked"; when: selected && mouseActive
                 PropertyChanges {
-                    target: cardItem
-                    scale: 1.5
-                    z: 2
+                    target: tick
+                    visible: true
                 }
             }
-
-        transitions: Transition {
-            NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
-        }
 
         SequentialAnimation {
             id: successAnimation

@@ -37,7 +37,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: ""
+  manual: qsTr("Drag and drop the map pieces to correct locations to redraw the whole map.")
   credit: ""
   section: "discovery"
   createdInVersion: 4000

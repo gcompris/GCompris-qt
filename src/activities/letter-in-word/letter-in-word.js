@@ -118,8 +118,15 @@ function initLevel() {
     }
 
     currentLetter = questions[currentSubLevel];
-    items.question = currentLetter
+    items.question = currentLetter;
     items.animateX.restart();
+
+    if(items.currentLetterCase == Quick.Font.MixedCase) {
+        items.questionItem.font.capitalization = (Math.floor(Math.random() * 2) < 1) ? Quick.Font.AllLowercase : Quick.Font.AllUppercase
+    }
+    else {
+        items.questionItem.font.capitalization = items.currentLetterCase
+    }
 
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(

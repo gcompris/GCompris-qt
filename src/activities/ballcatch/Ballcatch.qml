@@ -45,6 +45,8 @@ ActivityBase {
         source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
 
+        property bool isVertical: background.width <= background.height     // To check if in Vertical mode
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -198,9 +200,11 @@ ActivityBase {
 
         Image {
             id: leftShift
-            x: background.width / 4 - width 
-            y: rightHand.y - height / 2
+            x: background.width / 4 - width
+            y: background.isVertical ? rightHand.y - height : rightHand.y - height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
+            scale: background.isVertical ? 0.75 : 1.0
+            smooth: true
             opacity: items.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -209,48 +213,34 @@ ActivityBase {
             id: rightShift
             mirror: true
             x: background.width - background.width / 4
-            y: rightHand.y - height / 2
+            y: background.isVertical ? rightHand.y - height : rightHand.y - height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
+            scale: background.isVertical ? 0.75 : 1.0
+            smooth: true
             opacity: items.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
 
         // Instructions
-        BorderImage {
-            id: bubble
-            x: 10.0
-            y: tux.y
-            border.left: 3 * ApplicationInfo.ratio
-            border.top: 3 * ApplicationInfo.ratio
-            border.right: 20 * ApplicationInfo.ratio
-            border.bottom: 3 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/bubble.svg"
-            width: tux.x - 10
-            height: instructions.height + 20 * ApplicationInfo.ratio
-            // Remove the instructions when both keys has been pressed
-            opacity: bar.level === 1 &&
-                     !(items.leftPressed && items.rightPressed) ? 1 : 0
-            Behavior on opacity { NumberAnimation { duration: 120 } }
-
-            GCText {
-                id: instructions
-                anchors {
-                    left: parent.left
-                    right: parent.right
-                    verticalCenter: parent.verticalCenter
-                    leftMargin: 10 * ApplicationInfo.ratio
-                    rightMargin: 20 * ApplicationInfo.ratio
-                }
-                text: ApplicationInfo.isMobile ?
-                          qsTr("Tap both hands at the same time, " +
-                               "to make the ball go in a straight line.") :
-                          qsTr("Press left and right arrow keys at the same time, " +
-                               "to make the ball go in a straight line.")
-                wrapMode: TextEdit.WordWrap
-                horizontalAlignment: TextEdit.AlignHCenter
-                verticalAlignment: TextEdit.AlignVCenter
-                fontSize: regularSize
+        IntroMessage {
+            id: instructions
+            intro: ApplicationInfo.isMobile ?
+                       [qsTr("Tap both hands at the same time, " +
+                            "to make the ball go in a straight line.")] :
+                       [qsTr("Press left and right arrow keys at the same time, " +
+                            "to make the ball go in a straight line.")]
+            anchors {
+                top: parent.top
+                topMargin: 10
             }
+            z : 10
+
+            index: bar.level === 1 &&
+                     !(items.leftPressed && items.rightPressed) ? 0 : -1
+
+            opacity: items.leftPressed ^ items.rightPressed ? 0 : 1
+
+            Behavior on opacity { NumberAnimation { duration: 120 } }
         }
 
         function playSound(identifier) {

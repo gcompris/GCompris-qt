@@ -174,10 +174,10 @@ ActivityBase {
         Image {
             source: Activity.url + "click_icon.svg"
             sourceSize.width: 90 * ApplicationInfo.ratio
-            anchors.bottomMargin: 10
-            anchors.rightMargin: 10
+            anchors.bottom: bar.top
             anchors.right: parent.right
-            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
         }
 
         /* The spot under the ball */

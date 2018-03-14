@@ -24,7 +24,7 @@ QtObject{
     property bool isEmbedded: false
     property bool allowExpertMode: true
     property string imagesPrefix: "qrc:/gcompris/src/activities/lang/resource/words_sample/"
-    property variant levels: [
+    property var levels: [
         {
             "type": "lesson",
             "name": qsTr("Fruits"),

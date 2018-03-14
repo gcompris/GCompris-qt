@@ -202,7 +202,7 @@ ActivityBase {
             z: bar.z + 1
             visible: items.audioOk
             anchors {
-                bottom: parent.bottom
+                bottom: bar.top
                 right: parent.right
                 margins: 10 * ApplicationInfo.ratio
             }
@@ -212,10 +212,12 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.bottom: repeatItem.top
-            anchors.right: repeatItem.right
-            anchors.bottomMargin: 30
-            anchors.margins: 0
+            anchors.bottom: bar.top
+            anchors.right: bar.right
+            anchors.left: parent.left
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: 0
         }
 
         Bonus {

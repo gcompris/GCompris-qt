@@ -27,7 +27,7 @@ ActivityInfo {
   title: qsTr("Super Brain")
   //: Help title
   description: qsTr("Tux has hidden several items. Find them again in the correct order")
-  //intro: "Find out the right combination of colors. A black pin means you found the correct colour in the correct position, a white pin means it's the correct colour but in the wrong position."
+  //intro: "Find out the right combination of colors. A dot framed in a black square means that you found the correct colour in the correct position, while a dot framed in a white square means it's the correct colour, but in the wrong position."
   //: Help goal
   goal: qsTr("Tux has hidden several items. Find them again in the correct order")
   //: Help prerequisite

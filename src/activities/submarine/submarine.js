@@ -85,6 +85,7 @@ function setUpLevelElements() {
 
     items.crown.reset()
     items.whale.reset()
+    items.controls.resetVannes()
 
     items.processingAnswer = false
 

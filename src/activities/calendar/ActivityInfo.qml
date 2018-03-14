@@ -24,7 +24,7 @@ ActivityInfo {
     author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
     demo: true
     //: Activity title
-    title: qsTr("Calendar Activity")
+    title: qsTr("Calendar")
     //: Help title
     description: qsTr("Read the task and select the correct date on calendar")
     //intro: "Select the asked date on the calendar"

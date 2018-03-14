@@ -21,6 +21,7 @@
 
 .pragma library
 .import QtQuick 2.6 as Quick
+.import QtQml 2.2 as Qml
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
@@ -45,6 +46,10 @@ function start(items_, dataset_) {
     dataset = dataset_.get()
     numberOfLevel = dataset.length
     currentLevel = 0
+
+    if(Qt.locale(GCompris.ApplicationSettings.locale).firstDayOfWeek == Qml.Locale.Monday) {
+        items.daysOfTheWeekModel.move(0, items.daysOfTheWeekModel.count - 1, 1)
+    }
     initLevel();
 }
 

@@ -64,6 +64,7 @@ ActivityBase {
         }
 
         onStop: {
+            knock.stop()
             questionPlayer.stop()
         }
 
@@ -83,7 +84,6 @@ ActivityBase {
             model: 4
             Image {
                 id: part
-                parent: xylofon
                 source: items.url + 'xylofon_part' + (index + 1) + '.svg'
                 rotation: - 80
                 anchors.horizontalCenter: xylofon.horizontalCenter
@@ -127,10 +127,19 @@ ActivityBase {
         }
 
         function playNote(index) {
-            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url +
+            activity.audioEffects.append(ApplicationInfo.getAudioFilePath(items.url +
                                        'xylofon_son' + (index + 1) + '.$CA'))
         }
 
+        Timer {
+            id: knock
+            interval: 1000
+            repeat: false
+            onTriggered: {
+                questionPlayer.start()
+            }
+        }
+        
         Timer {
             id: questionPlayer
             onTriggered: {
@@ -175,7 +184,6 @@ ActivityBase {
                 parent.repeat()
             }
             onLoose: parent.repeat()
-            interval: 1000
         }
 
         Score {
@@ -199,7 +207,7 @@ ActivityBase {
             for(var i = 0; i < bar.level + 2; ++i) {
                 items.question.push(Math.floor(Math.random() * numberOfParts))
             }
-            items.questionInterval = 1000 - Math.min(500, 100 * bar.level)
+            items.questionInterval = 1200 - Math.min(500, 100 * bar.level)
             items.answer = []
         }
 
@@ -223,10 +231,11 @@ ActivityBase {
         }
 
         function repeat() {
-            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'xylofon_melody.$CA'))
+            questionPlayer.stop()
+            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'knock.ogg'))
             items.questionToPlay = items.question.slice()
             items.answer = []
-            questionPlayer.start()
+            knock.start()
         }
 
         function checkAnswer() {

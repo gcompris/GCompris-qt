@@ -45,11 +45,14 @@ Rectangle {
     property string title
     property alias titleIcon: titleIcon.source
     property string content
+    property string contentIcon
+    property alias button0Text: button0.text
     signal close
     signal start
     signal pause
     signal play
     signal stop
+    signal button0Hit
 
     Row {
         spacing: 2
@@ -67,32 +70,31 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
-                Image {
-                    id: titleIcon
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        margins: 4 * ApplicationInfo.ratio
+                Row {
+                    spacing: 2
+                    padding: 8
+                    Image {
+                        id: titleIcon
                     }
-                }
 
-                GCText {
-                    id: title
-                    text: dialogBackground.title
-                    width: dialogBackground.width - 30
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    color: "black"
-                    fontSize: 20
-                    font.weight: Font.DemiBold
-                    wrapMode: Text.WordWrap
+                    GCText {
+                        id: title
+                        text: dialogBackground.title
+                        width: dialogBackground.width - (70 + cancel.width)
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        color: "black"
+                        fontSize: 20
+                        font.weight: Font.DemiBold
+                        wrapMode: Text.WordWrap
+                    }
                 }
             }
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
                 width: dialogBackground.width - 30
-                height: dialogBackground.height - 100
+                height: dialogBackground.height - (30 + title.height * 1.2)
                 border.color: "black"
                 border.width: 2
                 anchors.margins: 100
@@ -102,20 +104,60 @@ Rectangle {
                     anchors.margins: 8
                     anchors.fill: parent
                     contentWidth: textContent.contentWidth
-                    contentHeight: textContent.contentHeight
+                    contentHeight: iconImage.height + textContent.contentHeight
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
+                    Button {
+                        id: button0
+                        visible: text != ""
+                        onClicked: { dialogBackground.button0Hit() }
+                        width: 150 * ApplicationInfo.ratio
+                        height: visible ? 40 * ApplicationInfo.ratio : 0
+                        anchors {
+                            horizontalCenter: parent.horizontalCenter
+                            top: parent.top
+                            topMargin: 8
+                        }
+                        style: GCButtonStyle {
+                            theme: "highContrast"
+                        }
+                    }
+                    
+                    Image {
+                        id: iconImage
+                        source: contentIcon
+                        visible: contentIcon != ""
+                        width: 100 * ApplicationInfo.ratio
+                        height: visible ? iconImage.width : 0
+                        sourceSize.width: iconImage.width
+                        sourceSize.height: iconImage.width
+                        anchors.top: button0.bottom
+                        anchors.horizontalCenter: parent.horizontalCenter
+                    }
+                    
                     GCText {
                         id: textContent
                         text: style + "<body>" + content + "</body>"
                         width: flick.width
-                        height: flick.height
+                        height: flick.height - button0.height
+                        anchors.top: iconImage.bottom
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
                         property string style: "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
                     }
+                }
+                // The scroll buttons
+                GCButtonScroll {
+                    anchors.right: parent.right
+                    anchors.rightMargin: 5 * ApplicationInfo.ratio
+                    anchors.bottom: flick.bottom
+                    anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                    onUp: flick.flick(0, 1400)
+                    onDown: flick.flick(0, -1400)
+                    upVisible: flick.visibleArea.yPosition <= 0 ? false : true
+                    downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
                 }
             }
             Item { width: 1; height: 10 }
@@ -124,6 +166,7 @@ Rectangle {
 
     // The cancel button
     GCButtonCancel {
+        id: cancel
         onClose: parent.close()
     }
 

@@ -30,7 +30,7 @@ ActivityBase {
     onStop: {}
 
     property string url: "qrc:/gcompris/src/activities/renewable_energy/resource/"
-    property variant barAtStart
+    property var barAtStart
 
     property int oldWidth: width
     onWidthChanged: {
@@ -93,14 +93,14 @@ ActivityBase {
         }
 
         function nextLevel() {
-            if(items.numberOfLevel <= ++items.currentLevel ) {
+            if(items.numberOfLevel <= ++items.currentLevel) {
                 // Stay on the last level
                 items.currentLevel = items.numberOfLevel - 1
             }
         }
 
         function previousLevel() {
-            if(--items.currentLevel < 0 ) {
+            if(--items.currentLevel < 0) {
                 items.currentLevel = items.numberOfLevel - 1
             }
         }
@@ -146,6 +146,7 @@ ActivityBase {
         IntroMessage {
             id: message
             opacity: items.currentLevel == 0 ? 1 : start()
+            z: 100
             anchors {
                 top: parent.top
                 topMargin: 10
@@ -310,7 +311,6 @@ ActivityBase {
                 leftMargin: parent.width * 0.05
             }
 
-
             Rectangle {
                 id: consumeMeter
                 width: stepdown_info.width * 1.1
@@ -370,6 +370,16 @@ ActivityBase {
                     checkForNextLevel()
                 }
             }
+        }
+
+
+        Image {
+            id: tuxHouseOn
+            source: activity.url + "tux_house_on.svg"
+            sourceSize.width: parent.width
+            sourceSize.height: parent.height
+            anchors.fill: parent
+            visible: tuxSwitch.on
         }
 
         Image {

@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829")
-   property variant levels : [
+   property var levels : [
       {
          "pixmapfile" : "image/bg.svg",
          "type" : "SHAPE_BACKGROUND_IMAGE",

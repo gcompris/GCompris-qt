@@ -31,7 +31,8 @@ Rectangle {
     border.width: 2
     border.color: dropArea.containsDrag ? "#33666666" : "#00000000"
 
-    property alias dropEnabled: dropArea.enabled
+    property bool dropEnabled: true
+    property bool dropEnabledForThisLevel: true
     property int nbColumns
     property int itemWidth: (width - masseFlow.spacing * nbColumns) / nbColumns
     property int itemHeight: itemWidth * 1.2
@@ -76,7 +77,11 @@ Rectangle {
         masseArea.weight += weight
     }
 
-
+    function setAllZonesDropEnabled(enabled) {
+        masseAreaCenter.dropEnabled = enabled
+        masseAreaLeft.dropEnabled = enabled
+        masseAreaRight.dropEnabled = enabled
+    }
 
     function showMasseInMasseArea(index) {
         masseAreaCenter.masseModel.get(index).opacity = 1.0
@@ -88,6 +93,15 @@ Rectangle {
 
     ListModel {
         id: masseModel
+
+        function contains(masseIndex) {
+            for(var i = 0; i < masseModel.count; i++) {
+                if(masseModel.get(i).masseIndex == masseIndex) {
+                    return masseModel.get(i).opacity == 1
+                }
+            }
+            return false;
+        }
     }
 
     DropArea {
@@ -98,6 +112,7 @@ Rectangle {
             verticalCenter: parent.verticalCenter
         }
         height: parent.height * 2
+        enabled: dropEnabledForThisLevel && dropEnabled
     }
     
     Flow {
@@ -108,7 +123,6 @@ Rectangle {
         spacing: 10
         flow: Flow.TopToBottom
 
-        
         add: Transition {
             NumberAnimation {
                 properties: "x"
@@ -116,14 +130,14 @@ Rectangle {
                 easing.type: Easing.InOutQuad
             }
         }
-        
+
         move: Transition {
             NumberAnimation {
                 properties: "x,y"
                 easing.type: Easing.InOutQuad
             }
         }
-        
+
         Repeater {
             id: answer
             model: masseModel
@@ -143,7 +157,7 @@ Rectangle {
                 property int originX
                 property int originY
                 property Item currentMasseArea: masseArea
-                
+
                 Drag.active: dragArea.drag.active
                 Drag.hotSpot.x: width / 2
                 Drag.hotSpot.y: height / 2
@@ -167,7 +181,7 @@ Rectangle {
                     x = masseOriginX
                     y = masseOriginY
                 }
-                
+
                 onOpacityChanged: opacity == 1.0 ? currentMasseArea = masseAreaCenter : null
 
                 MouseArea {
@@ -175,8 +189,14 @@ Rectangle {
                     anchors.fill: parent
                     drag.target: parent
                     enabled: model.dragEnabled
+
                     onPressed: {
-                        parent.initDrag()
+                        if(masseModel.contains(parent.masseIndex)) {
+                            parent.initDrag()
+                        }
+                        else {
+                            setAllZonesDropEnabled(false)
+                        }
                     }
 
                     function dropOnPlate(masseArea) {
@@ -199,6 +219,7 @@ Rectangle {
                     }
 
                     onReleased: {
+                        setAllZonesDropEnabled(true)
                         if(masseArea.audioEffects)
                             masseArea.audioEffects.play(Activity.url + 'metal_hit.wav')
                         if(masseAreaLeft.dropArea.containsDrag &&
@@ -208,7 +229,7 @@ Rectangle {
                                    parent.currentMasseArea != masseAreaRight) {
                             dropOnPlate(masseAreaRight)
                         } else if (masseAreaCenter.dropArea.containsDrag &&
-                                   parent.dropArea != masseAreaCenter){
+                                   parent.dropArea != masseAreaCenter) {
                             parent.Drag.cancel()
                             masseAreaCenter.showMasseInMasseArea(parent.masseIndex)
                             parent.replaceInMasse()

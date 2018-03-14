@@ -69,6 +69,11 @@ Rectangle {
     property string message
 
     /**
+     * Alias for external reference of subLevelText.
+     */
+    readonly property alias internalTextComponent: subLevelText
+
+    /**
      * Emitted when the win animation should be started.
      *
      * Triggers scale and rotation animation.

@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Vincent van Gogh, The Church at Auvers-sur-Oise - 1890")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/Eglise_dAuvers-sur-Oise_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

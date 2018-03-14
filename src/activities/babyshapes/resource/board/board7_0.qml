@@ -24,7 +24,7 @@ import QtQuick 2.6
 QtObject {
    property int numberOfSubLevel: 4
    property string instruction: qsTr("Paul Gauguin, Arearea - 1892")
-   property variant levels: [
+   property var levels: [
 	  {
           "pixmapfile" : "image/Paul_Gauguin_006_background.png",
           "type" : "SHAPE_BACKGROUND_IMAGE"

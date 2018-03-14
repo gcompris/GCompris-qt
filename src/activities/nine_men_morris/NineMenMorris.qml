@@ -98,7 +98,6 @@ ActivityBase {
             source: Activity.url + "board.svg"
             sourceSize.width: Math.min(background.height - 1.4 * player1score.height - 1.2 * bar.height,
                                        background.width - 2.2 * firstInitial.width)
-            visible: !items.isTutorial
             anchors {
                 verticalCenter: parent.verticalCenter
                 horizontalCenter: parent.horizontalCenter
@@ -136,7 +135,7 @@ ActivityBase {
             }
             width: player1score.width * 1.2
             height: player1score.height * 1.2
-            visible: !items.isTutorial && items.firstPhase
+            visible: items.firstPhase
             opacity: 0.8
             radius: 10
             border.width: 2
@@ -198,7 +197,7 @@ ActivityBase {
             }
             width: firstInitial.width
             height: firstInitial.height
-            visible: !items.isTutorial && items.firstPhase
+            visible: items.firstPhase
             opacity: 0.8
             radius: 10
             border.width: 2
@@ -266,7 +265,6 @@ ActivityBase {
             horizontalAlignment: Text.AlignHLeft
             width: implicitWidth
             height: implicitHeight
-            visible: !items.isTutorial
             z: 2
         }
 
@@ -280,7 +278,6 @@ ActivityBase {
             radius: 10
             border.width: 2
             border.color: "black"
-            visible: !items.isTutorial
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#000" }
                 GradientStop { position: 0.9; color: "#666" }
@@ -301,7 +298,6 @@ ActivityBase {
                 right: background.right
                 rightMargin: 5
             }
-            visible: !items.isTutorial
             playerImageSource: Activity.url + "TuxBlack.svg"
             backgroundImageSource: Activity.url + "score_2.svg"
             playerScaleOriginX: player2score.width
@@ -318,7 +314,6 @@ ActivityBase {
                 left: background.left
                 leftMargin: 5
             }
-            visible: !items.isTutorial
             playerImageSource: Activity.url + "KonqiWhite.svg"
             backgroundImageSource: Activity.url + "score_1.svg"
         }
@@ -349,8 +344,9 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: twoPlayer ? (help | home | reload) : items.isTutorial ?
-                                             (help | home) : (help | home | level | reload)}
+            content: BarEnumContent { value: twoPlayer ? (help | home | reload)
+                                                       : tutorialImage.visible ? (help | home)
+                                                       : (help | home | level | reload) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

@@ -1,3 +1,4 @@
+
 /* GCompris - ConfigurationItem.qml
  *
  * Copyright (C) 2014-2016 Johnny Jazeix <jazeix@gmail.com>
@@ -298,6 +299,16 @@ Item {
                 updateValueWhileDragging: true
                 value: baseFontSize
                 onValueChanged: ApplicationSettings.baseFontSize = value;
+                MouseArea { // Removes scrolling when hovering sliders
+                    anchors.fill: parent
+                    onWheel: {}
+                    onPressed: {
+                        mouse.accepted = false
+                    }
+                    onReleased: {
+                        mouse.accepted = false
+                    }
+                }
             }
             GCText {
                 id: baseFontSizeText
@@ -336,6 +347,16 @@ Item {
                 updateValueWhileDragging: true
                 value: fontLetterSpacing
                 onValueChanged: ApplicationSettings.fontLetterSpacing = value
+                MouseArea { // Removes scrolling when hovering sliders
+                    anchors.fill: parent
+                    onWheel: {}
+                    onPressed: {
+                        mouse.accepted = false
+                    }
+                    onReleased: {
+                        mouse.accepted = false
+                    }
+                }
             }
             GCText {
                 id: fontLetterSpacingText
@@ -722,7 +743,7 @@ Item {
         }
     }
 
-    property variant fontCapitalizationModel: [
+    property var fontCapitalizationModel: [
         { text: qsTr("Mixed case (default)"), value: Font.MixedCase },
         { text: qsTr("All uppercase"), value: Font.AllUppercase },
         { text: qsTr("All lowercase"), value: Font.AllLowercase }

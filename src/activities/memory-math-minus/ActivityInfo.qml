@@ -26,7 +26,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Subtraction memory game")
   //: Help title
-  description: qsTr("Turn the cards over to find two numbers which add or subtract the same, until all the cards are gone.")
+  description: qsTr("Turn the cards over to find two numbers which subtract the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
   goal: qsTr("Practice subtraction, until all the cards are gone.")

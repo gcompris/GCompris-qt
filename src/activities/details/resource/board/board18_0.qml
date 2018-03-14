@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Nagoya Castle, Aichi Prefecture, Japan.")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/Nagoya_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

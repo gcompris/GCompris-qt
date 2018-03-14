@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("The Lady and the Unicorn - XVe century")
-   property variant levels: [
+   property var levels: [
 	  {
           "pixmapfile" : "image/lady_unicorn_background.png",
           "type" : "SHAPE_BACKGROUND_IMAGE"

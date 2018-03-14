@@ -33,7 +33,7 @@ ActivityBase {
     onStop: {}
 
     property string url: "qrc:/gcompris/src/activities/watercycle/resource/"
-    property variant barAtStart
+    property var barAtStart
 
     pageComponent: Item {
         id: background

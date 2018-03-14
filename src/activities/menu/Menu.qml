@@ -97,8 +97,7 @@ ActivityBase {
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
-    property string inputText: ""
-    property variant sections: [
+    property var sections: [
         {
             icon: activity.url + "all.svg",
             tag: "favorite"
@@ -149,6 +148,7 @@ ActivityBase {
         sourceSize.width: Math.max(parent.width, parent.height)
         height: main.height
         fillMode: Image.PreserveAspectCrop
+
         Timer {
             // triggered once at startup to populate the keyboard
             id: keyboardFiller
@@ -523,7 +523,20 @@ ActivityBase {
                 anchors.fill: activitiesGrid
             }
         }
-
+        
+        // The scroll buttons
+        GCButtonScroll {
+            visible: !ApplicationInfo.useOpenGL
+            anchors.right: parent.right
+            anchors.rightMargin: 5 * ApplicationInfo.ratio
+            anchors.bottom: activitiesGrid.bottom
+            anchors.bottomMargin: 30 * ApplicationInfo.ratio
+            onUp: activitiesGrid.flick(0, 1127)
+            onDown: activitiesGrid.flick(0, -1127)
+            upVisible: activitiesGrid.visibleArea.yPosition <= 0 ? false : true
+            downVisible: activitiesGrid.visibleArea.yPosition >= 1 ? false : true
+        }
+        
         Rectangle {
             id: searchBar
             width: horizontal ?  parent.width/2 : parent.width - (section.width+10)
@@ -575,7 +588,6 @@ ActivityBase {
             TextField {
                 id: searchTextField
                 width: parent.width
-                text: activity.inputText
                 textColor: "black"
                 font.pointSize: 16
                 font.bold: true
@@ -686,42 +698,40 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
-
-    }
-
-    DialogAbout {
-        id: dialogAbout
-        onClose: home()
-    }
-
-    DialogHelp {
-        id: dialogHelp
-        onClose: home()
-        activityInfo: ActivityInfoTree.rootMenu
-    }
-
-    DialogActivityConfig {
-        id: dialogActivityConfig
-        currentActivity: activity
-
-        content: Component {
-            ConfigurationItem {
-                id: configItem
-                width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
+                
+        DialogAbout {
+            id: dialogAbout
+            onClose: home()
             }
+        DialogHelp {
+            id: dialogHelp
+            onClose: home()
+            activityInfo: ActivityInfoTree.rootMenu
         }
 
-        onSaveData: {
-            dialogActivityConfig.configItem.save();
-        }
-        onClose: {
-            if(activity.currentTag != "search") {
-                ActivityInfoTree.filterByTag(activity.currentTag)
-                ActivityInfoTree.filterLockedActivities()
-                ActivityInfoTree.filterEnabledActivities()
-            } else
-                ActivityInfoTree.filterBySearch(activity.inputText);
-            home()
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+
+            content: Component {
+                ConfigurationItem {
+                    id: configItem
+                    width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
+                }
+            }
+
+            onSaveData: {
+                dialogActivityConfig.configItem.save();
+            }
+            onClose: {
+                if(activity.currentTag != "search") {
+                    ActivityInfoTree.filterByTag(activity.currentTag)
+                    ActivityInfoTree.filterLockedActivities()
+                    ActivityInfoTree.filterEnabledActivities()
+                } else
+                    ActivityInfoTree.filterBySearch(searchTextField.text);
+                home()
+            }
         }
     }
 }

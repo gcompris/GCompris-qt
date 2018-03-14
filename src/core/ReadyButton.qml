@@ -22,17 +22,15 @@ import QtQuick 2.6
 import GCompris 1.0
 
 Rectangle {
-    
-    
-    property string theme: "dark"
+    id: iAmReady
 
     /**
-     * type:var
-     * existing themes for the button.
+     * type: var
+     * Existing themes for the button.
      * A theme is composed of:
-     *   the button's border color
-     *   the text color
-    */
+     *   The button's border color
+     *   The text color
+     */
     property var themes: {
         "dark": {
             borderColor: "#FF373737",
@@ -48,9 +46,19 @@ Rectangle {
         }
     }
 
-    
-    
-    id: iamReady
+    /**
+     * type: string
+     * Defines the theme of the ReadyButton - dark or light.
+     *
+     * Default theme is dark.
+     */
+    property string theme: "dark"
+
+    /**
+     * Emitted when the ReadyButton is clicked
+     */
+    signal clicked
+
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
     border.color: themes[theme].borderColor
@@ -58,23 +66,22 @@ Rectangle {
     radius: 10
     smooth: true
     border.width: 4
-    width: iamReadyText.width + 50 * ApplicationInfo.ratio
-    height: iamReadyText.height + 50 * ApplicationInfo.ratio
+    width: iAmReadyText.width + 50 * ApplicationInfo.ratio
+    height: iAmReadyText.height + 50 * ApplicationInfo.ratio
     gradient: Gradient {
             GradientStop { position: 0 ; color: themes[theme].fillColor0 }
             GradientStop { position: 1 ; color: themes[theme].fillColor1 }
         }
-    signal clicked
 
     GCText {
-        id: iamReadyText
+        id: iAmReadyText
         color: themes[theme].textColor
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         font.bold: true
         fontSize: mediumSize
         text: qsTr("I am Ready")
-        visible: iamReady.visible
+        visible: iAmReady.visible
     }
 
     MouseArea {
@@ -83,16 +90,16 @@ Rectangle {
         hoverEnabled: true
 
         onClicked: {
-            iamReady.visible = false
-            iamReady.clicked()
+            iAmReady.visible = false
+            iAmReady.clicked()
         }
     }
 
     states: [
         State {
-            name: "notclicked"
+            name: "notClicked"
             PropertyChanges {
-                target: iamReady
+                target: iAmReady
                 scale: 1.0
             }
         },
@@ -100,7 +107,7 @@ Rectangle {
             name: "clicked"
             when: mouseArea.pressed
             PropertyChanges {
-                target: iamReady
+                target: iAmReady
                 scale: 0.9
             }
         },
@@ -108,7 +115,7 @@ Rectangle {
             name: "hover"
             when: mouseArea.containsMouse
             PropertyChanges {
-                target: iamReady
+                target: iAmReady
                 scale: 1.1
             }
         }

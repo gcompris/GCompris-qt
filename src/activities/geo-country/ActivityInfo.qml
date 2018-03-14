@@ -37,8 +37,8 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: ""
-  credit: qsTr("The map of Germany comes from Wikipedia and is released under the GNU Free Documentation License. Olaf Ronneberger and his children Lina and Julia Ronneberger created the German level.")
+  manual: qsTr("Drag and drop different regions of the country to correct locations to redraw the whole country.")
+  credit: ""
   section: "discovery"
   createdInVersion: 4000
 }

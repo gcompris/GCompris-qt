@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Taj Mahal, Agra, India")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/TajMahal_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

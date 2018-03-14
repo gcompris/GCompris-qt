@@ -64,7 +64,7 @@ ActivityBase {
                                        Math.min(background.width / (items.numberOfCases + 2),
                                                 (background.height - controls.height) / (items.numberOfCases + barHeightAddon)) :
                                        Math.min(background.width / (items.numberOfCases + 2), background.height / (items.numberOfCases + barHeightAddon))
-            property variant fen: activity.fen
+            property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
             property var positions

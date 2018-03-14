@@ -75,7 +75,7 @@ function initLevel() {
                 items.background.width * 0.2 : items.background.width * 0.7
     items.shuttle.y = items.background.height + items.shuttle.height
 
-    if(items.bar.level != 1 ) {
+    if(items.bar.level != 1) {
         items.timer.start()
         items.asteroidCreation.start()
         items.shuttleMotion.restart()
@@ -121,7 +121,6 @@ function repositionObjectsOnHeightChanged(factor) {
 
 // functions to create and handle asteroids
 function createAsteroid() {
-
     var asteroidComponent = Qt.createComponent("qrc:/gcompris/src/activities/intro_gravity/Asteroid.qml");
     var ImageUrl = url + "asteroid" + Math.floor( Math.random() * 5  ) + ".png"
 
@@ -160,8 +159,8 @@ function destroyAsteroids(asteroids) {
 }
 
 
-function movespaceship(){
-    move += ( items.forceRight - items.forceLeft) / 10000 * items.bar.level
+function moveSpaceship() {
+    move += (items.forceRight - items.forceLeft) / 10000 * items.bar.level
     items.spaceshipX += move
 
     // Manage the crash case
@@ -183,9 +182,8 @@ function movespaceship(){
     }
 }
 
-function handleCollisionWithAsteroid()
-{
-    if(asteroids !== undefined){
+function handleCollisionWithAsteroid() {
+    if(asteroids !== undefined) {
         for(var i = asteroids.length -1 ; i >= 0 ; --i) {
             var asteroid = asteroids[i];
             var x = asteroid.x + asteroid.width / 2

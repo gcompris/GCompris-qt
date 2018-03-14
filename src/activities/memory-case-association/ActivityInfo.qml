@@ -27,7 +27,7 @@ ActivityInfo {
   title: qsTr("Case association memory game")
   //: Help title
   description: qsTr("Turn the cards over to match the alphabet with its lower/uppercase value.")
-  //intro: "Match the alphabet with its upper/lower case alphabet."
+  //intro: "Match the upper case card with its lower case pair."
   //: Help goal
   goal: qsTr("Learning lower and upper case alphabets, memory.")
   //: Help prerequisite

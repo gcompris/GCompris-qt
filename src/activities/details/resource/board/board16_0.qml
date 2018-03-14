@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property string instruction: qsTr("Panorama of Château de Chenonceau, Indre-et-Loire, France.")
-   property variant levels: [
+   property var levels: [
       {
          "pixmapfile" : "image/Chenonceau_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"

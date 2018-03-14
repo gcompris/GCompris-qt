@@ -73,12 +73,13 @@ ActivityBase {
 
         Score {
             anchors {
-                bottom: parent.bottom
+                bottom: bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
-                right: parent.right
+                right: bar.right
                 rightMargin: 10 * ApplicationInfo.ratio
+                left: parent.left
+                leftMargin: 10 * ApplicationInfo.ratio
                 top: undefined
-                left: undefined
             }
             numberOfSubLevels: items.numberOfTry
             currentSubLevel: items.currentTry + 1

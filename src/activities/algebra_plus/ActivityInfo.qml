@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Simple addition. Can recognize written numbers")
   //: Help manual
-  manual: qsTr("Two numbers are displayed on the screen. Quickly find the sum of them and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins land in their balloon!")
+  manual: qsTr("An addition is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins land in their balloon!")
   credit: ""
   section: "math addition"
 }

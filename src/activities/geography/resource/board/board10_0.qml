@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
     property string instruction: qsTr("Oceania")
-    property variant levels: [
+    property var levels: [
     {
         "pixmapfile": "oceania/bg_oceania.png",
         "type": "SHAPE_BACKGROUND_IMAGE"

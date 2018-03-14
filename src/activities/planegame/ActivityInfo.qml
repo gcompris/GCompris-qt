@@ -27,7 +27,7 @@ ActivityInfo {
     title: qsTr("Numbers in Order")
     //: Help title
     description: qsTr("Move the helicopter to catch the clouds in the correct order")
-//  intro: "Move the helicopter with the arrow keys and catch the number in the clouds in numerical order."
+//  intro: "Move the helicopter with the arrow keys and catch the numbers in the clouds, in ascending order."
     //: Help goal
     goal: qsTr("Numeration training")
     //: Help prerequisite
