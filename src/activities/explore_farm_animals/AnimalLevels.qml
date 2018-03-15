@@ -77,7 +77,7 @@ Image {
         width: Math.max(parent.width, 55 * ApplicationInfo.ratio)
         height: Math.max(parent.height, 55 * ApplicationInfo.ratio)
         touchPoints: [ TouchPoint { id: point1 } ]
-        mouseEnabled: progressbar.value != progressbar.maximumValue
+        mouseEnabled: progressbar.value != progressbar.maximumValue && !items.bonus.isPlaying
 
         onPressed: {
             if(items.progressbar.value >= progressbar.maximumValue) {

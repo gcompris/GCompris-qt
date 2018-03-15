@@ -101,6 +101,12 @@ Image {
     ]
     /// @endcond
 
+    /**
+     * type:bool
+     * True between the moment we have the win/lose signal emitted and the 
+     * bonus image is no more displayed
+     */
+    property bool isPlaying: animation.running || timer.running
     visible: true
     opacity: 0
     anchors.fill: parent
