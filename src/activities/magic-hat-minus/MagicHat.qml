@@ -101,7 +101,7 @@ ActivityBase {
 
             GCText {
                 //: The math operation
-                text: mode == "minus" ? qsTr("-") : qsTr("+")
+                text: mode == "minus" ? qsTr("−") : qsTr("+")
                 anchors.right: mainlayout.right
                 anchors.rightMargin: 10
                 y: secondRow.y
