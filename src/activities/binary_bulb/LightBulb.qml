@@ -52,7 +52,7 @@ Image {
                 items.sum -= value
             }
         }
-    }   
+    }
 
     GCText {
         anchors.top: bulb.bottom

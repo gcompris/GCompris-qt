@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
  * Authors:
- *   RAJAT ASTHANA <rajatasthana4@gmail.com> (Qt Quick port)
+ *   RAJAT ASTHANA <rajatasthana4@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -57,7 +57,7 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }       
+        onStop: { Activity.stop() }
 
         IntroMessage {
             id: message
@@ -80,8 +80,8 @@ ActivityBase {
                 rightMargin: 5
                 left: parent.left
                 leftMargin: 5
-            }               
-        }   
+            }
+        }
 
         Rectangle {
             id: questionItemBackground
@@ -107,7 +107,7 @@ ActivityBase {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             text: qsTr("What is the binary representation of %1").arg(items.num)
-        }        
+        }
 
         Row {
             id: row
@@ -148,18 +148,18 @@ ActivityBase {
                 if(items.sum == items.num) {
                     if(score.currentSubLevel < score.numberOfSubLevels) {
                         score.currentSubLevel++;
-                        score.playWinAnimation();
-                        Activity.resetBulbs();
-                        Activity.initializeValues();
+                        score.playWinAnimation()
+                        Activity.resetBulbs()
+                        Activity.initializeValues()
                     }
                     else {
-                        bonus.good("lion");
-                        Activity.resetBulbs();
+                        bonus.good("lion")
+                        Activity.resetBulbs()
                     }
                 }           
                 else {
-                    bonus.bad("lion");
-                    Activity.resetBulbs();
+                    bonus.bad("lion")
+                    Activity.resetBulbs()
                     items.sum = 0
                 }
             }
