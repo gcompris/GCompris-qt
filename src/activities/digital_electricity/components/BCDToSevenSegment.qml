@@ -98,14 +98,14 @@ ElectricalComponent {
         if(i == truthTable.length) {
             for(var j = 0 ; j < noOfOutputs ; ++j) {
                 outputTerminals.itemAt(j).value = 0
-                outputChar.itemAt(j).source = Activity.url + "empty.svg"
+                outputChar.itemAt(j).source = "qrc:/gcompris/src/core/resource/empty.svg"
             }
         }
         else {
             for(var j = 0 ; j < noOfOutputs ; ++j) {
                 var terminal = outputTerminals.itemAt(j)
                 terminal.value = truthTable[i][j + noOfInputs]
-                outputChar.itemAt(j).source = Activity.url + (terminal.value == 0 ? "empty.svg" : redChar[j])
+                outputChar.itemAt(j).source = (terminal.value == 0 ? "qrc:/gcompris/src/core/resource/empty.svg" : Activity.url + redChar[j])
             }
         }
 
