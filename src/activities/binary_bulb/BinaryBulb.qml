@@ -53,10 +53,11 @@ ActivityBase {
             property int sum: 0
             property int num: 0
             property int numberOfBulbs: 0
+            property alias score: score
         }
 
         onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStop: { Activity.stop() }       
 
         IntroMessage {
             id: message
@@ -82,32 +83,42 @@ ActivityBase {
             }               
         }   
 
-        GCText {
-            id: question
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            anchors.topMargin: 10
-            fontSize: largeSize
-            width: parent.width * 0.9
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: Text.WordWrap
-            font.weight: Font.DemiBold
-            style: Text.Outline
-            styleColor: "black"
-            color: "white"
-            text: qsTr("What is the binary representation of %1").arg(items.num)
-            opacity: 1.0
+        Rectangle {
+            id: questionItemBackground
+            opacity: 0.00
+            z: 10
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                bottomMargin: 10
+            }
+            width: parent.width - 20
+            height: parent.height * 0.30
         }
+
+        GCText {
+            id: questionItem
+            anchors.fill: questionItemBackground
+            anchors.bottom: questionItemBackground.bottom
+            fontSizeMode: Text.Fit
+            fontSize: largeSize
+            wrapMode: Text.Wrap
+            z: 10
+            color: "white"
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+            text: qsTr("What is the binary representation of %1").arg(items.num)
+        }        
 
         Row {
             id: row
             anchors.centerIn: parent
-            spacing: 20
-
+            spacing: 10 * ApplicationInfo.ratio
+            focus: true
             Repeater {
                 id: bulbs
                 model: items.numberOfBulbs
                 LightBulb {
+                    height: background.height / 4
                 }
             }
         }
@@ -120,6 +131,7 @@ ActivityBase {
             color: "white"
             fontSize: largeSize
             text: items.sum
+            visible: items.score.currentSubLevel <= 2 ? true : false
         }
 
         BarButton {
@@ -134,8 +146,16 @@ ActivityBase {
             sourceSize.width: 60 * ApplicationInfo.ratio
             onClicked: {
                 if(items.sum == items.num) {
-                    bonus.good("lion");
-                    Activity.resetBulbs();
+                    if(score.currentSubLevel < score.numberOfSubLevels) {
+                        score.currentSubLevel++;
+                        score.playWinAnimation();
+                        Activity.resetBulbs();
+                        Activity.initializeValues();
+                    }
+                    else {
+                        bonus.good("lion");
+                        Activity.resetBulbs();
+                    }
                 }           
                 else {
                     bonus.bad("lion");
@@ -160,6 +180,16 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
+
+        Score {
+            id: score
+            anchors.bottom: bar.top
+            anchors.right: bar.right
+            anchors.left: parent.left
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: 0
+        }        
 
         Bonus {
             id: bonus
