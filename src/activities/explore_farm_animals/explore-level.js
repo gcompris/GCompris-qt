@@ -58,8 +58,6 @@ function initLevel() {
     items.progressbar.value = 1
     items.progressbar.value = 0
     items.descriptionPanel.visible = false
-    // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
-    items.audioVoices.stop()
     items.instruction.visible = true
 
     reload();
@@ -76,6 +74,10 @@ function nextLevel() {
         items.score.currentSubLevel = 1
     }
     initLevel();
+
+    // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
+    items.audioVoices.stop()
+
     if (items.score.currentSubLevel == 2) {
         items.progressbar.value = 0;
         initSubSubLevel();
@@ -95,6 +97,9 @@ function previousLevel() {
     }
     initLevel();
 
+    // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
+    items.audioVoices.stop()
+
     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
         items.audioVoices.play(getCurrentQuestion().audio);
     }
@@ -112,7 +117,7 @@ function initSubSubLevel() {
     if(items.progressbar.value == items.dataModel.count) {
         items.bonus.good("smiley");
     }
-     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
+     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions && getCurrentQuestion()) {
         items.audioVoices.play(getCurrentQuestion().audio);
     }
 }
