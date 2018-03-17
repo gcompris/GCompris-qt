@@ -65,8 +65,8 @@ else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
 
-# do not build shared library for android, it crashes
-if(NOT ANDROID)
+# only build the lib for testing purpose
+if(BUILD_TESTING)
   add_library(gcompris_core SHARED ${gcompris_SRCS})
   qt5_use_modules(gcompris_core ${used_qt_modules})
 endif()

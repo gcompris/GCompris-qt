@@ -38,11 +38,13 @@ set(CMAKE_PREFIX_PATH "${Qt5_DIR}/lib/cmake/Qt5")
 
 # KDE po to qm tools
 if(ECM_FOUND)
+  include(ECMAddTests)
   include(ECMPoQmTools)
   if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     ecm_install_po_files_as_qm(po)
   endif()
 
+  option(BUILD_TESTING "Build and enable unit tests" OFF)
   include(ECMCoverageOption)
 endif(ECM_FOUND)
 
@@ -467,10 +469,10 @@ if(SAILFISHOS)
 endif()
 
 # only enable unit tests for linux
-if(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
+if(BUILD_TESTING)
   enable_testing()
   add_subdirectory(tests)
-endif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
+endif(BUILD_TESTING)
 
 add_custom_target(binaries)
 add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)
