@@ -206,6 +206,7 @@ Item {
                 id: closenessText
                 color: "black"
                 anchors.fill: parent
+                fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
