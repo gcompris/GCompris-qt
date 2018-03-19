@@ -21,7 +21,7 @@
 .pragma library
 .import QtQuick 2.6 as Quick
 
-var nums = [1, 2, 3, 1, 4, 9, 13, 15, 57, 152, 248, 239]
+var toBeConverted = [1, 2, 3, 1, 4, 9, 13, 15, 57, 152, 248, 239]
 
 var currentLevel = 0
 var numberOfLevel = 3
@@ -42,9 +42,9 @@ function resetBulbs() {
 }
 
 function initializeValues() {
-    items.sum = 0    
+    items.numberSoFar = 0    
     items.numberOfBulbs = (currentLevel > 3) ? 8 : Math.pow(2, currentLevel+1)
-    items.num = nums[items.score.currentSubLevel + (currentLevel * 4) - 1]
+    items.numberToConvert = toBeConverted[items.score.currentSubLevel + (currentLevel * 4) - 1]
 }
 
 function initLevel() {

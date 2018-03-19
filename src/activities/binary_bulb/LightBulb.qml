@@ -1,4 +1,4 @@
-/* GCompris - BinaryBulb.qml
+/* GCompris - LightBulb.qml
  *
  * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
@@ -45,11 +45,11 @@ Image {
         onClicked: {
             if(bulb.state == "off") {
                 bulb.state = "on"
-                items.sum += value
+                items.numberSoFar += value
             }   
             else {
                 bulb.state = "off"
-                items.sum -= value
+                items.numberSoFar -= value
             }
         }
     }

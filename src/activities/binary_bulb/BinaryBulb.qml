@@ -50,8 +50,8 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias bulbs: bulbs
-            property int sum: 0
-            property int num: 0
+            property int numberSoFar: 0
+            property int numberToConvert: 0
             property int numberOfBulbs: 0
             property alias score: score
         }
@@ -106,7 +106,7 @@ ActivityBase {
             color: "white"
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            text: qsTr("What is the binary representation of %1").arg(items.num)
+            text: qsTr("What is the binary representation of %1").arg(items.numberToConvert)
         }
 
         Row {
@@ -131,7 +131,7 @@ ActivityBase {
             anchors.topMargin: 25
             color: "white"
             fontSize: largeSize
-            text: items.sum
+            text: items.numberSoFar
             visible: items.score.currentSubLevel <= 2 ? true : false
         }
 
@@ -146,7 +146,7 @@ ActivityBase {
             source: "/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
             onClicked: {
-                if(items.sum == items.num) {
+                if(items.numberSoFar == items.numberToConvert) {
                     if(score.currentSubLevel < score.numberOfSubLevels) {
                         score.currentSubLevel++;
                         score.playWinAnimation()
@@ -161,7 +161,7 @@ ActivityBase {
                 else {
                     bonus.bad("lion")
                     Activity.resetBulbs()
-                    items.sum = 0
+                    items.numberSoFar = 0
                 }
             }
         }
