@@ -119,6 +119,7 @@ ActivityBase {
                 model: items.numberOfBulbs
                 LightBulb {
                     height: background.height / 4
+                    width: background.width / model
                 }
             }
         }

@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
  * Authors:
- *   RAJAT ASTHANA <rajatasthana4@gmail.com> (Qt Quick port)
+ *   RAJAT ASTHANA <rajatasthana4@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
