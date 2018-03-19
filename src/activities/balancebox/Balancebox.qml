@@ -55,8 +55,6 @@ ActivityBase {
     }
     onStop: inForeground = false;
 
-    property var barAtStart
-
     Keys.onPressed: Activity.processKeyPress(event.key)
     Keys.onReleased: Activity.processKeyRelease(event.key)
 
@@ -99,16 +97,11 @@ ActivityBase {
 
         }
 
-        onStart: {
-            barAtStart = ApplicationSettings.isBarHidden;
-            ApplicationSettings.isBarHidden = true;
-            if (activity.needRestart) {
-                Activity.start(items);
-                activity.needRestart = false;
-            } 
-            else
-                Activity.initLevel();
-        }
+        onStart: if (activity.needRestart) {
+                     Activity.start(items);
+                     activity.needRestart = false;
+                 } else
+                     Activity.initLevel();
                 
         onStop: {
             Activity.stop();
