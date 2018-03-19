@@ -178,14 +178,14 @@ Item {
     Keys.onPressed: {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {
-            // Ctrl+Q exit the application
-            Core.quit(main);
+            // Ctrl+Q exit the application without displaying confirmation dialog.
+            Core.quit(main, true);
         } else if (event.modifiers === Qt.ControlModifier &&
-                event.key === Qt.Key_B) {
+                   event.key === Qt.Key_B) {
             // Ctrl+B toggle the bar
             ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
         } else if (event.modifiers === Qt.ControlModifier &&
-                event.key === Qt.Key_F) {
+                   event.key === Qt.Key_F) {
             // Ctrl+F toggle fullscreen
             ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
         } else if (event.modifiers === Qt.ControlModifier &&

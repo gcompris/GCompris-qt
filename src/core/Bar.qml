@@ -177,6 +177,14 @@ Item {
      */
     signal homeClicked
 
+    /**
+     * Emitted when the exit button was clicked.
+     *
+     * Should always be connected to the ActivityBase.home signal and thus
+     * exits the GCompris after showing exit dialog.
+     */
+    signal exitClicked
+
     /// @cond INTERNAL_DOCS
 
     /*
@@ -384,7 +392,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
             sourceSize.width: fullButton * barZoom
-            onClicked: Core.quit(bar.parent.parent);
+            onClicked: bar.exitClicked()
         }
     }
     Component {

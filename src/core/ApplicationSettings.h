@@ -81,6 +81,11 @@ class ApplicationSettings : public QObject
      */
 	Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
 
+    /**
+     * Whether activity exit confirmation dialog should be displayed.
+     */
+    Q_PROPERTY(bool isExitDialogEnabled READ isExitDialogEnabled WRITE setIsExitDialogEnabled NOTIFY exitDialogEnabledChanged)
+
 	/**
 	 * Whether GCompris should run in fullscreen mode.
 	 */
@@ -285,6 +290,12 @@ public:
 		emit audioEffectsEnabledChanged();
     }
 
+    bool isExitDialogEnabled() const { return m_isExitDialogEnabled; }
+    void setIsExitDialogEnabled(const bool newMode) {
+        m_isExitDialogEnabled = newMode;
+        emit exitDialogEnabledChanged();
+    }
+
     bool isFullscreen() const { return m_isFullscreen; }
     void setFullscreen(const bool newMode) {
         if(m_isFullscreen != newMode) {
@@ -472,6 +483,7 @@ protected slots:
     Q_INVOKABLE void notifyShowLockedActivitiesChanged();
     Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
     Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
+    Q_INVOKABLE void notifyExitDialogEnabledChanged();
     Q_INVOKABLE void notifyFullscreenChanged();
     Q_INVOKABLE void notifyPreviousHeightChanged();
     Q_INVOKABLE void notifyPreviousWidthChanged();
@@ -541,6 +553,7 @@ signals:
     void showLockedActivitiesChanged();
     void audioVoicesEnabledChanged();
     void audioEffectsEnabledChanged();
+    void exitDialogEnabledChanged();
     void fullscreenChanged();
     void previousHeightChanged();
     void previousWidthChanged();
@@ -579,6 +592,7 @@ private:
     bool m_showLockedActivities;
     bool m_isAudioVoicesEnabled;
     bool m_isAudioEffectsEnabled;
+    bool m_isExitDialogEnabled;
     bool m_isFullscreen;
     quint32 m_previousHeight;
     quint32 m_previousWidth;
