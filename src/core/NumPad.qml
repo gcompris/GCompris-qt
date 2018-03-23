@@ -21,19 +21,88 @@
 import QtQuick 2.6
 import GCompris 1.0
 
+/**
+* A QML component providing an on screen numpad.
+*
+* Numpad displays integers from 0 to 9 that can be used
+* in applications that need numerical inputs from the user.
+* By default it shows integer 0 - 4 in a column on left and
+* integers 5 - 9 on right in a column.
+* It also contains the backspace button to remove the last input value.
+* It is also only displayed when the "virtual keyboard" is enabled in the options.
+*
+* @inherit QtQuick.Item
+*/
 Item {
 
     id: containerPanel
     anchors.fill: parent
 
+    /**
+     * type:list
+     *
+     * Default keys-rectangle color used unless the user provides another.
+     */
     property var colours: ["#ea7025", "#67c111", "#00bde3", "#bde300","#e3004c"]
+
+    /**
+     * type:list
+     *
+     * Default sequence of numbers displayed unless the user provides another.
+     */
     property var numbers: [0, 1, 2, 3, 4]
+
+    /**
+     * type:string
+     *
+     * String containing the numbers selected by user.
+     */
     property string answer: ""
+
+    /**
+     * type:bool
+     *
+     * Set to true when good answer is submitted and to
+     * avoid the inputs until required.
+     */
     property bool answerFlag: false
+
+    /**
+     * type:var
+     *
+     * Column containing containing first half integers i.e.
+     * 0 - 4, displayed at the left edge of the activity window.
+     */
     property var leftPanelComponent: leftPanel
+
+    /**
+     * type:var
+     *
+     * Column containing containing second half integers i.e.
+     * 5 - 9, displayed at the right edge of the activity window.
+     */
     property var rightPanelComponent: rightPanel
+
+    /**
+     * type:var
+     *
+     * Button for displaying backSpace key.
+     * Removes last input from answer on clicked or pressed.
+     */
     property var backspaceButtonComponent: backspaceButton
+
+    /**
+     * type:int
+     *
+     * Stores the maximum length of the correct answer.
+     */
     property int maxDigit: 2
+
+    /**
+     * type:int
+     *
+     * Stores the width of each key container.
+     */
     property int columnWidth: 80 * ApplicationInfo.ratio
 
     signal answer
