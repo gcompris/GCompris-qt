@@ -20,27 +20,105 @@
 import QtQuick 2.6
 import GCompris 1.0
 
+/**
+ * A QML component to display an answer button.
+ *
+ * AnswerButton consists of a text (@ref textLabel)
+ * and animations on pressed.
+ * Mostly used to present more than one option to select from
+ * consisting of both good and bad answers.
+ *
+ * @inherit QtQuick.Item
+ */
 Item {
     id: button
 
+    /**
+     * type:string
+     * Text to display on the button.
+     *
+     * @sa label.text
+     */
     property string textLabel
+
+    /**
+     * type:boolean
+     *
+     * Set to true when this element contains good answer.
+     */
     property bool isCorrectAnswer: false
 
+    /**
+     * type:color
+     *
+     * Color of the container in normal state.
+     */
     property color normalStateColor: "#fff"
+
+    /**
+     * type:color
+     *
+     * Color of the container on good answer selection.
+     */
     property color correctStateColor: "#09f"
+
+    /**
+     * type:color
+     *
+     * Color of the container on bad answer selection.
+     */
     property color wrongStateColor: "#f66"
+
+    /**
+     * type:bool
+     *
+     * Set to true when to avoid misclicks or when correct/wrong answer
+     * animation are running.
+     */
     property bool blockClicks: false
 
+    /**
+     * type:int
+     *
+     * Amplitude of the shake animation on wrong answer selection.
+     */
     property int wrongAnswerShakeAmplitudeCalc: width * 0.2
+
+    /**
+     * type:int
+     *
+     * Minimum amplitude of the shake animation on wrong answer selection.
+     */
     property int wrongAnswerShakeAmplitudeMin: 45
+
+    /**
+     * type:int
+     *
+     * Amplitude of the shake animation on wrong answer.
+     * Selects min. from wrongAnswerShakeAmplitudeMin && wrongAnswerShakeAmplitudeCalc.
+     */
     property int wrongAnswerShakeAmplitude: wrongAnswerShakeAmplitudeCalc < wrongAnswerShakeAmplitudeMin ? wrongAnswerShakeAmplitudeMin : wrongAnswerShakeAmplitudeCalc
 
     // If you want the sound effects just pass the audioEffects
     property GCAudio audioEffects
 
+    /**
+     * Emitted when button is pressed as a good answer.
+     *
+     * Triggers correctAnswerAnimation.
+     */
     signal correctlyPressed
+
+    /**
+     * Emitted when button is pressed as a bad answer.
+     *
+     * Triggers wrongAnswerAnimation.
+     */
     signal incorrectlyPressed
 
+    /**
+     * Emitted when answer button is clicked.
+     */
     signal pressed
     onPressed: {
         if (!blockClicks) {
