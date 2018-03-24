@@ -22,6 +22,7 @@
 #include <QtTest>
 #include <QObject>
 
+#include "ApplicationSettingsMock.h"
 #include "src/core/ActivityInfo.h"
 
 #define ACTIVITY_INFO_TEST_ATTRIBUTE(attributeName, accessorName, attributeType) \
@@ -60,14 +61,17 @@ void CoreActivityInfoTest::ActivityInfoTest_data()
     QTest::addColumn<bool>("enabled");
     QTest::addColumn<int>("createdInVersion");
 
-    QTest::newRow("ActivityInfo") << "Name" << "section" << (unsigned int)3 << "icon" << "author" << true << "title" << "description" << "goal" << "prerequisite" << "manual" << "credit" << false << false << 2 ;
-    QTest::newRow("UnknownInfo") << "Unknown" << "Unknown" << (unsigned int)5 << "Unknown" << "Unknown" << false << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << true << true << 10 ;
-    QTest::newRow("Empty") << "" << "" << (unsigned int)0 << "" << "" << false << "" << "" << "" << "" << "" << "" << true << true << 0 ;
+    QTest::newRow("ActivityInfo") << "Name" << "section" << (unsigned int)3 << "icon" << "author" << true << "title" << "description" << "goal" << "prerequisite" << "manual" << "credit" << false << false << 2;
+    QTest::newRow("UnknownInfo") << "Unknown" << "Unknown" << (unsigned int)5 << "Unknown" << "Unknown" << false << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << true << true << 10;
+    QTest::newRow("Empty") << "" << "" << (unsigned int)0 << "" << "" << false << "" << "" << "" << "" << "" << "" << true << true << 0;
 }
 
 void CoreActivityInfoTest::ActivityInfoTest()
 {
     ActivityInfo activityinfo;
+
+    // called here to set the static instance object to the mock one
+    ApplicationSettingsMock::getInstance();
 
     QCOMPARE(activityinfo.name(), QStringLiteral(""));
     QCOMPARE(activityinfo.section(), QStringLiteral(""));
@@ -99,6 +103,8 @@ void CoreActivityInfoTest::ActivityInfoTest()
     ACTIVITY_INFO_TEST_ATTRIBUTE(favorite, Favorite, bool);
     ACTIVITY_INFO_TEST_ATTRIBUTE(enabled, Enabled, bool);
     ACTIVITY_INFO_TEST_ATTRIBUTE(createdInVersion, CreatedInVersion, int);
+
+    delete ApplicationSettingsMock::getInstance();
 }
 
 QTEST_MAIN(CoreActivityInfoTest)
