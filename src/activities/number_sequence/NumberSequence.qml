@@ -119,7 +119,7 @@ ActivityBase {
                     source: Activity.url + (highlight ?
                             (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
                             markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
-                    sourceSize.height: imageBack.height / 25  //to change the size of dots
+                    sourceSize.height: bar.height / 4  //to change the size of dots
                     x: imageBack.x + modelData[0] * imageBack.width / 520 - sourceSize.height/2
                     y: modelData[1] * imageBack.height / 520 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
