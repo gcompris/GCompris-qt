@@ -1,5 +1,9 @@
 /* GCompris - number_sequence_dataset.js
 * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
+* 
+* Authors: Emmanuel Charruau <echarruau@gmail.com> (initial set)
+*          Timothée Giet <animtim@gmail.com> (update set ratio)
+* 
 * This program is free software; you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation; either version 3 of the License, or
