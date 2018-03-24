@@ -117,6 +117,7 @@ ActivityBase {
         function win() {
             fireflame.opacity = 0
             water.opacity = 1
+            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water_on_fire.wav")
         }
 
         MultiPointTouchArea {
