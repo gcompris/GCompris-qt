@@ -8,6 +8,4 @@ set(CORE_TEST_LIBRARIES
     Qt5::Test
 )
 
-add_executable(CoreActivityInfoTest ActivityInfoTest.cpp)
-target_link_libraries(CoreActivityInfoTest ${CORE_TEST_LIBRARIES})
-add_test(NAME CoreActivityInfoTest COMMAND $<TARGET_FILE:CoreActivityInfoTest>)
+ecm_add_test(ActivityInfoTest.cpp TEST_NAME CoreActivityInfoTest LINK_LIBRARIES ${CORE_TEST_LIBRARIES})

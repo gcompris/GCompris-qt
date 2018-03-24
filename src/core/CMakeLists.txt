@@ -65,8 +65,8 @@ else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} ${gcompris_SRCS} ${gcompris_RES})
 endif()
 
-# do not build shared library for android, it crashes
-if(NOT ANDROID)
+# only build the lib for testing purpose
+if(BUILD_TESTING)
   add_library(gcompris_core SHARED ${gcompris_SRCS})
   qt5_use_modules(gcompris_core ${used_qt_modules})
 endif()
@@ -281,6 +281,7 @@ elseif(SAILFISHOS)
   set(CPACK_RPM_PACKAGE_VERSION "${GCOMPRIS_VERSION}")
   set(CPACK_RPM_PACKAGE_LICENSED "GPLv3")
   set(CPACK_RPM_PACKAGE_URL "https://www.gcompris.org")
+  set(CPACK_RPM_PACKAGE_REQUIRES "qt5-qtquickcontrols")
   set(CPACK_RPM_PACKAGE_DESCRIPTION "GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")
   set(CPACK_RPM_USER_BINARY_SPECFILE "${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec")
   set(CMAKE_INSTALL_PREFIX "/usr")

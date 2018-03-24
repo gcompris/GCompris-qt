@@ -77,9 +77,12 @@ Image {
         width: Math.max(parent.width, 55 * ApplicationInfo.ratio)
         height: Math.max(parent.height, 55 * ApplicationInfo.ratio)
         touchPoints: [ TouchPoint { id: point1 } ]
-        mouseEnabled: true
+        mouseEnabled: progressbar.value != progressbar.maximumValue && !items.bonus.isPlaying
 
         onPressed: {
+            if(items.progressbar.value >= progressbar.maximumValue) {
+                return
+            }
             var questionTargetId = items.questionOrder[Activity.items.progressbar.value]
             Activity.items.instruction.visible = false
             if (Activity.items.score.currentSubLevel == 1) {

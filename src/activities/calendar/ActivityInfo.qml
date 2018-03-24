@@ -26,14 +26,14 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Calendar")
     //: Help title
-    description: qsTr("Read the task and select the correct date on calendar")
+    description: qsTr("Read the instructions and select the correct date on the calendar")
     //intro: "Select the asked date on the calendar"
     //: Help goal
-    goal: qsTr("Learn to use a calendar efficiently")
+    goal: qsTr("Learn how to use a calendar")
     //: Help prerequisite
     prerequisite: qsTr("Concept of week, month and year")
     //: Help manual
-    manual: qsTr("Review the instructions and select the correct date on calendar.")
+    manual: qsTr("Read the instructions and select the correct date on the calendar.")
     credit: ""
     section: "discovery"
     createdInVersion: 9000

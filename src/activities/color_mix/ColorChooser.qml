@@ -35,7 +35,7 @@ Image {
 
     Image {
         id: intensityScreen
-        source: Activity.url + "flashlight2" + brushHue + ".svg"
+        source: activity.modeRGB ? Activity.url + "flashlight2" + brushHue + ".svg" : "qrc:/gcompris/src/core/resource/empty.svg"
         sourceSize.height: parent.sourceSize.height
         sourceSize.width: parent.sourceSize.width
         z: 2
