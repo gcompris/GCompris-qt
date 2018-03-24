@@ -26,16 +26,16 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Family")
   //: Help title
-  description: qsTr("This activity will teach you about who we are related to our relatives")
+  description: qsTr("Select the name you should call this family member")
   //intro: "Let us understand what to call our relatives"
   //: Help goal
-  goal: qsTr("To get an idea about relationships in the family")
+  goal: qsTr("Learn the relationships in a family, according to the lineal system used in most Western societies")
   //: Help prerequisite
   prerequisite: qsTr("Reading skills")
   //: Help manual
-  manual: qsTr("To find the relation between two family members.\n" +
-     "For the married couple we have highlighted with the rings that is between two circles. For the rest of relations we have only solid lines.\n" +
-  "White circle will point to you and red one to your relative. Now you have to find what you should call this person.\n")
+  manual: qsTr("A family tree is shown.\n" +
+  "The circles are linked with lines to mark the relations. Married couples are marked with a ring on the link.\n" +
+  "You are the person in the white circle. Select the name you should call the person in the orange circle.\n")
   credit: ""
   section: "discovery"
   createdInVersion: 9000
