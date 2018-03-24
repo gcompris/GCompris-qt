@@ -373,39 +373,51 @@
   </description>
   <screenshots>
     <screenshot type="default">
+      <caption>GCompris main menu</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/main_menu.png</image>
     </screenshot>
     <screenshot>
+      <caption>click_on_letter_up activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
     </screenshot>
     <screenshot>
+      <caption>clockgame activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/clockgame.png</image>
     </screenshot>
     <screenshot>
+      <caption>color_mix activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/color_mix.png</image>
     </screenshot>
     <screenshot>
+      <caption>colors activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/colors.png</image>
     </screenshot>
     <screenshot>
+      <caption>crane activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/crane.png</image>
     </screenshot>
     <screenshot>
+      <caption>enumerate activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/enumerate.png</image>
     </screenshot>
     <screenshot>
+      <caption>fifteen activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/fifteen.png</image>
     </screenshot>
     <screenshot>
+      <caption>hexagon activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/hexagon.png</image>
     </screenshot>
     <screenshot>
+      <caption>scalesboard activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
     </screenshot>
     <screenshot>
+      <caption>chess_partyend activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
     </screenshot>
     <screenshot>
+      <caption>traffic activity</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/traffic.png</image>
     </screenshot>
   </screenshots>
