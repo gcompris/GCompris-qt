@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #include <QtDebug>
 #include <QApplication>
@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
     else if(renderer == "opengl")
        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
 #endif
-    
+
     QApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
 
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
-    // http://doc.qt.io/qt-5/osx-deployment.html
+    // https://doc.qt.io/qt-5/osx-deployment.html
     QDir dir(QGuiApplication::applicationDirPath());
     dir.cdUp();
     dir.cd("Plugins");

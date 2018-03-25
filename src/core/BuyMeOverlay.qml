@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import QtQuick.Controls 1.5
@@ -75,7 +75,7 @@ Item {
                 wrapMode: TextEdit.WordWrap
                 z: 2
                 text: qsTr("This activity is only available in the full version of GCompris." + "<br/>" +
-                           "On <a href='http://gcompris.net'>http://gcompris.net</a> " +
+                           "On <a href='https://gcompris.net'>https://gcompris.net</a> " +
                            "you will find the instructions to obtain an activation code." + " " +
                            "Then go to the main configuration dialog to enter the code.")
             }

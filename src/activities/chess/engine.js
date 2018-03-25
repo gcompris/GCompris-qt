@@ -554,7 +554,7 @@ function p4_check_castling(board, s, colour, dir, side){
         while (!E) {
             e += delta;
             E=board[e];
-        } 
+        }
         if((E & diag_mask) == diag_slider)
             return 0;
         e = p;
@@ -658,7 +658,7 @@ function p4_check_check(state, colour){
             e += m;
             E = board[e];
         }
-        
+
         if((E & grid_mask) == grid_slider)
             return true;
     }
@@ -1199,7 +1199,7 @@ function p4_jump_to_moveno(state, moveno){
 
 
 /* write a standard FEN notation
- * http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation
+ * https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation
  * */
 function p4_state2fen(state, reduced){
     var piece_lut = '  PpRrNnBbKkQq';
@@ -1270,7 +1270,7 @@ function p4_destringify_point(p){
 }
 
 /* read a standard FEN notation
- * http://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation
+ * https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation
  * */
 function p4_fen2state(fen, state){
     if (state === undefined)
@@ -1598,6 +1598,6 @@ function p4_random_int(state, top){
     var r = top + 1;
     while(r >= top)
         r = p4_random31(state) & mask;
-    
+
     return r;
 }

@@ -2761,7 +2761,7 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-           rdf:resource="http://www.gnu.org/licenses/gpl-3.0.en.html" />
+           rdf:resource="https://www.gnu.org/licenses/gpl-3.0.en.html" />
         <dc:publisher>
           <cc:Agent
              rdf:about="http://gcompris.net/">

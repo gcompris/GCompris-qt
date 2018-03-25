@@ -246,7 +246,7 @@ add_custom_target(BundleTranslations
 add_custom_command(
     OUTPUT doDlAndInstallBundledTranslations
     COMMAND curl -fsS -o translations-${GCOMPRIS_VERSION}.7z
-                 http://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
+                 https://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
     COMMAND 7z x -y -o${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME}
                translations-${GCOMPRIS_VERSION}.7z
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
@@ -351,7 +351,7 @@ add_custom_target(BundleConvertedOggs
 add_custom_command(
     OUTPUT doDlAndInstallBundledConvertedOggs
     COMMAND curl -fsS -o converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z
-            http://gcompris.net/download/converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z
+            https://gcompris.net/download/converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z
     COMMAND 7z x -y converted_ogg_to_${COMPRESSED_AUDIO}-${GCOMPRIS_VERSION}.7z
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
