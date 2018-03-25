@@ -41,6 +41,8 @@ class CoreActivityInfoTest : public QObject
 private slots:
     void ActivityInfoTest();
     void ActivityInfoTest_data();
+    void getSectionPathTest();
+    void setNameWithKioskMode();
 };
 
 void CoreActivityInfoTest::ActivityInfoTest_data()
@@ -103,6 +105,42 @@ void CoreActivityInfoTest::ActivityInfoTest()
     ACTIVITY_INFO_TEST_ATTRIBUTE(favorite, Favorite, bool);
     ACTIVITY_INFO_TEST_ATTRIBUTE(enabled, Enabled, bool);
     ACTIVITY_INFO_TEST_ATTRIBUTE(createdInVersion, CreatedInVersion, int);
+
+    delete ApplicationSettingsMock::getInstance();
+}
+
+void CoreActivityInfoTest::getSectionPathTest()
+{
+    ActivityInfo parent;
+    parent.setSection("parent");
+    ActivityInfo child(&parent);
+    child.setSection("child");
+    QStringList sectionPath = child.getSectionPath();
+
+    QCOMPARE(sectionPath.size(), 2);
+    QCOMPARE(sectionPath.join('/'), QStringLiteral("parent/child"));
+}
+
+void CoreActivityInfoTest::setNameWithKioskMode()
+{
+    const QString fakeActivity = QStringLiteral("fakeActivity");
+    ActivityInfo activityInfo;
+    activityInfo.setFavorite(true);
+    ApplicationSettingsMock::getInstance()->setKioskMode(true);
+    ApplicationSettingsMock::getInstance()->setFavorite(fakeActivity, false);
+    activityInfo.setName(fakeActivity);
+    // in kiosk mode, we don't retrieve the favorite to always have a clean start
+    QVERIFY(activityInfo.favorite());
+
+    ApplicationSettingsMock::getInstance()->setKioskMode(false);
+    activityInfo.setName(fakeActivity);
+    // the activity is not a favorite, we remove its flag when setting the name
+    QVERIFY(!activityInfo.favorite());
+
+    ApplicationSettingsMock::getInstance()->setFavorite(fakeActivity, true);
+    activityInfo.setName(fakeActivity);
+    // the activity is a favorite, we add its flag when setting the name
+    QVERIFY(activityInfo.favorite());
 
     delete ApplicationSettingsMock::getInstance();
 }
