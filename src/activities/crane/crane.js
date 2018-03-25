@@ -22,6 +22,8 @@
 .pragma library
 .import QtQuick 2.6 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import "wordset.js" as Wordset
+.import GCompris 1.0 as GCompris
 
 var levels = [{showGrid: 1, noOfItems: 2, inLine: true, columns: 4, rows: 3 },
               {showGrid: 1, noOfItems: 3, inLine: true, columns: 5, rows: 4 },
@@ -48,13 +50,11 @@ var allNames = ["bulb.svg","letter-a.svg","letter-b.svg",
                 "tux.svg","water_drop1.svg","water_drop2.svg",
                 "water_spot1.svg","water_spot2.svg"]
 
+var currentLocale
 
-var words3Letters = ["cat","dog","win","red","yes","big","box","air","arm",
-                     "car","bus","fun","day","eat","hat","leg","ice","old","egg"]
-var words4Letters = ["blue","best","good","area","bell","coat","easy","farm",
-                     "food","else","girl","give","hero","help","hour","sand","song"]
-var words5Letters = ["happy","child","white","apple","brown","truth","fresh",
-                     "green","horse","hotel","house","paper","shape","shirt","study"]
+var words3Letters = []
+var words4Letters = []
+var words5Letters = []
 
 var alreadyUsed3 = []
 var alreadyUsed4 = []
@@ -67,6 +67,12 @@ var good = []
 function start(items_) {
     items = items_
     currentLevel = 0
+    currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
+
+    words3Letters = getLocalizedDataForDataset("3letters")
+    words4Letters = getLocalizedDataForDataset("4letters")
+    words5Letters = getLocalizedDataForDataset("5letters")
+
     alreadyUsed3 = []
     alreadyUsed4 = []
     alreadyUsed5 = []
@@ -82,6 +88,15 @@ function initLevel() {
     Core.shuffle(words4Letters)
     Core.shuffle(words5Letters)
     init()
+}
+
+function getLocalizedDataForDataset(allWordsSet) {
+    var locale = currentLocale
+    if(!Wordset.dataset[locale]) {
+        // default to english if the language has no data
+        locale = "en"
+    }
+    return Wordset.dataset[locale][allWordsSet]
 }
 
 function init() {
@@ -314,7 +329,7 @@ function gesture(deltax, deltay) {
             move("up")
 }
 
-//depeding on the command, make a move to left/right/up/down or select next item
+//depending on the command, make a move to left/right/up/down or select next item
 function move(command) {
     if (items.ok && !items.gameFinished && !items.pieceIsMoving) {
         var item = items.repeater.itemAt(items.selected)
