@@ -4,19 +4,19 @@ Name:           @GCOMPRIS_EXECUTABLE_NAME@
 Version:        @GCOMPRIS_MAJOR_VERSION@.@GCOMPRIS_MINOR_VERSION@
 Release:        1
 License:        GPLv3
-Group:          unknown
+Group:          GCompris
 Url: https://www.gcompris.org
 
 
 Buildarch: @BUILD_ARCH@
 Prefix: /usr
 
+Requires: qt5-qtquickcontrols
+
 %define _rpmdir @CMAKE_BINARY_DIR@/_CPack_Packages/Linux/RPM
 %define _rpmfilename harbour-gcompris-qt-@GCOMPRIS_MAJOR_VERSION@.@GCOMPRIS_MINOR_VERSION@-1.@BUILD_ARCH@.rpm
 %define _unpackaged_files_terminate_build 0
 %define _topdir @CMAKE_BINARY_DIR@/_CPack_Packages/Linux/RPM
-
-
 
 
 %description
@@ -71,6 +71,8 @@ mv "@CMAKE_BINARY_DIR@/_CPack_Packages/Linux/RPM/tmpBBroot" $RPM_BUILD_ROOT
 
 
 %changelog
+* Tue Mar 27 2018 Alex Smirnov <smirnoff.al@gmail.com>
+Version 0.90
 * Sat May  9 2015 Alex Smirnov <smirnoff.al@gmail.com>
 Add translation files
 * Sun Apr 12 2015 Johnny Jazeix <gcompris-devel@kde.org>
