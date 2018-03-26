@@ -382,50 +382,122 @@
   <screenshots>
     <screenshot type="default">
       <caption>GCompris main menu</caption>
+      <caption xml:lang="ca">Menú principal del GCompris</caption>
+      <caption xml:lang="ca-valencia">Menú principal del GCompris</caption>
+      <caption xml:lang="nl">GCompris-hoofdmenu</caption>
+      <caption xml:lang="sv">GCompris-huvudmeny</caption>
+      <caption xml:lang="uk">Головне меню GCompris</caption>
+      <caption xml:lang="x-test">xxGCompris main menuxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/main_menu.png</image>
     </screenshot>
     <screenshot>
       <caption>click_on_letter_up activity</caption>
+      <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Fes clic en una lletra en majúscula»</caption>
+      <caption xml:lang="nl">activiteit klik_op_letter_omhoog</caption>
+      <caption xml:lang="sv">Aktiviteten klicka på bokstav upp</caption>
+      <caption xml:lang="uk">Вправа «Натисніть літеру»</caption>
+      <caption xml:lang="x-test">xxclick_on_letter_up activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
     </screenshot>
     <screenshot>
       <caption>clockgame activity</caption>
+      <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Rellotge d'aprenentatge»</caption>
+      <caption xml:lang="nl">activiteit klokspel</caption>
+      <caption xml:lang="sv">Aktiviteten klockspel</caption>
+      <caption xml:lang="uk">Вправа з годинником</caption>
+      <caption xml:lang="x-test">xxclockgame activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/clockgame.png</image>
     </screenshot>
     <screenshot>
       <caption>color_mix activity</caption>
+      <caption xml:lang="ca">Activitat «Barreja els colors de la pintura»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Barreja els colors de la pintura»</caption>
+      <caption xml:lang="nl">activiteit kleurmix</caption>
+      <caption xml:lang="sv">Aktiviteten färgblandning</caption>
+      <caption xml:lang="uk">Вправа зі змішування кольорів</caption>
+      <caption xml:lang="x-test">xxcolor_mix activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/color_mix.png</image>
     </screenshot>
     <screenshot>
       <caption>colors activity</caption>
+      <caption xml:lang="ca">Activitat «Colors»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Colors»</caption>
+      <caption xml:lang="nl">activiteit kleuren</caption>
+      <caption xml:lang="sv">Aktiviteten färger</caption>
+      <caption xml:lang="uk">Вправа з кольорами</caption>
+      <caption xml:lang="x-test">xxcolors activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/colors.png</image>
     </screenshot>
     <screenshot>
       <caption>crane activity</caption>
+      <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
+      <caption xml:lang="nl">activiteit kraan</caption>
+      <caption xml:lang="sv">Aktiviteten kran</caption>
+      <caption xml:lang="uk">Вправа з краном</caption>
+      <caption xml:lang="x-test">xxcrane activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/crane.png</image>
     </screenshot>
     <screenshot>
       <caption>enumerate activity</caption>
+      <caption xml:lang="ca">Activitat «Compta els elements»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Compta els elements»</caption>
+      <caption xml:lang="nl">activiteit opnoemen</caption>
+      <caption xml:lang="sv">Aktiviteten uppräkning</caption>
+      <caption xml:lang="uk">Вправа з лічби</caption>
+      <caption xml:lang="x-test">xxenumerate activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/enumerate.png</image>
     </screenshot>
     <screenshot>
       <caption>fifteen activity</caption>
+      <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
+      <caption xml:lang="ca-valencia">Activitat «El joc dels quinze»</caption>
+      <caption xml:lang="nl">activiteit vijftien</caption>
+      <caption xml:lang="sv">Aktiviteten femtonspel</caption>
+      <caption xml:lang="uk">Вправа «П'ятнадцять»</caption>
+      <caption xml:lang="x-test">xxfifteen activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/fifteen.png</image>
     </screenshot>
     <screenshot>
       <caption>hexagon activity</caption>
+      <caption xml:lang="ca">Activitat «Hexàgon»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Hexàgon»</caption>
+      <caption xml:lang="nl">activiteit hexagon</caption>
+      <caption xml:lang="sv">Aktiviteten hexagon</caption>
+      <caption xml:lang="uk">Вправа «Шестикутники»</caption>
+      <caption xml:lang="x-test">xxhexagon activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/hexagon.png</image>
     </screenshot>
     <screenshot>
       <caption>scalesboard activity</caption>
+      <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Equilibra correctament la balança»</caption>
+      <caption xml:lang="nl">activiteit bord_met_schalen</caption>
+      <caption xml:lang="sv">Aktiviteten vågbord</caption>
+      <caption xml:lang="uk">Вправа з визначення ваги</caption>
+      <caption xml:lang="x-test">xxscalesboard activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
     </screenshot>
     <screenshot>
       <caption>chess_partyend activity</caption>
+      <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Final de la partida d'escacs»</caption>
+      <caption xml:lang="nl">Activiteit schaakspel_party_einde</caption>
+      <caption xml:lang="sv">Aktiviteten schack festavslutning</caption>
+      <caption xml:lang="uk">Гра у шахи</caption>
+      <caption xml:lang="x-test">xxchess_partyend activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
     </screenshot>
     <screenshot>
       <caption>traffic activity</caption>
+      <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
+      <caption xml:lang="ca-valencia">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
+      <caption xml:lang="nl">activiteit verkeer</caption>
+      <caption xml:lang="sv">Aktiviteten trafik</caption>
+      <caption xml:lang="uk">Вправа з керування рухом</caption>
+      <caption xml:lang="x-test">xxtraffic activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/traffic.png</image>
     </screenshot>
   </screenshots>
