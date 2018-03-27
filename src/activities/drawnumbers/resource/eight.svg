@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="520"
+   height="520"
+   id="svg3908"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="eight.svg">
+  <defs
+     id="defs3910" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-243.57143"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3913">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2018</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-532.36218)">
+    <path
+       style="fill:#373737;fill-opacity:1;fill-rule:evenodd"
+       inkscape:connector-curvature="0"
+       d="m 311.39742,595.09223 c 21.56988,0 39.58002,6.03604 54.03043,18.10814 14.5209,12.01262 21.78137,26.84999 21.78137,44.5121 0,16.9485 -7.04901,31.28039 -21.14694,42.99566 -14.0275,11.65583 -32.03766,17.48372 -54.03046,17.48372 -22.62723,0 -41.02509,-5.88737 -55.19351,-17.66212 -14.16846,-11.77475 -21.25269,-26.9392 -21.25269,-45.49334 0,-16.41328 7.18994,-30.5073 21.56989,-42.28204 14.37991,-11.77475 32.46054,-17.66212 54.24191,-17.66212 z m -0.95163,162.43796 c 27.49103,0 50.36499,7.58223 68.62186,22.74669 18.32733,15.16443 27.49103,34.34299 27.49103,57.53568 0,22.83587 -8.88172,41.65762 -26.64517,56.46527 -17.76343,14.80762 -40.28492,22.21145 -67.56448,22.21145 -17.55197,0 -33.94083,-3.50866 -49.16663,-10.5259 -15.2258,-7.07679 -26.71567,-17.03772 -34.46954,-29.88291 -7.68338,-12.84515 -11.52509,-26.13635 -11.52509,-39.87356 0,-22.47907 8.81125,-41.21161 26.43369,-56.19763 17.69296,-14.98606 39.96774,-22.47908 66.82434,-22.47908 z m 0.3172,-202.04393 c -40.39066,0 -72.74548,9.72309 -97.06445,29.16926 -24.319,19.44617 -36.47848,43.44168 -36.47848,71.98653 0,18.91095 5.70968,35.14583 17.12902,48.70462 11.41935,13.5588 28.97132,23.99551 52.65589,31.31012 -28.33692,6.24418 -50.18875,17.98921 -65.55551,35.23503 -15.2963,17.18637 -22.94446,38.53555 -22.94446,64.04748 0,34.25382 14.06271,62.85809 42.18817,85.81293 28.12543,22.89533 65.13257,34.34302 111.02145,34.34302 45.88886,0 82.89603,-11.41794 111.02149,-34.25382 28.12542,-22.83587 42.18811,-51.02389 42.18811,-84.56409 0,-24.26312 -7.47193,-45.13653 -22.41577,-62.62024 -14.87336,-17.48371 -36.58417,-30.15048 -65.13257,-38.00032 23.05017,-7.3146 40.21441,-17.69183 51.49279,-31.13171 11.34888,-13.49931 17.02332,-29.34766 17.02332,-47.545 0,-28.54484 -12.37097,-52.74848 -37.11292,-72.61093 -24.74191,-19.92192 -57.41394,-29.88288 -98.01608,-29.88288 z"
+       id="path3836" />
+  </g>
+</svg>

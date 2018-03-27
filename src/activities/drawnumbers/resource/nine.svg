@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="520"
+   height="520"
+   id="svg4075"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="nine.svg">
+  <defs
+     id="defs4077" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-243.57143"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4080">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2018</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-532.36218)">
+    <path
+       style="fill:#373737;fill-rule:evenodd;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       d="m 300.8589,614.834 c 22.25485,0 41.28018,7.2622 57.07602,21.7866 15.85977,14.5244 23.78967,34.15626 23.78967,58.89563 0,24.73936 -7.73803,44.10522 -23.21411,58.09759 -15.41214,13.93917 -35.10895,20.90875 -59.09045,20.90875 -23.78968,0 -43.80625,-6.96958 -60.04975,-20.90875 -16.17953,-13.99237 -24.26928,-32.16116 -24.26928,-54.50639 0,-24.89897 8.53741,-45.16928 25.61224,-60.81094 C 257.7881,622.65483 277.83665,614.834 300.8589,614.834 Z m -6.33112,-35.67256 c -37.98672,0 -69.61035,10.85339 -94.87091,32.56019 -25.19656,21.7068 -37.79487,50.35657 -37.79487,85.94933 0,34.47549 12.08671,62.2474 36.26008,83.31576 24.17337,21.06836 53.7186,31.60254 88.63568,31.60254 20.9119,0 40.32093,-4.25626 58.22715,-12.76871 17.97012,-8.56567 32.13522,-19.7117 42.49527,-33.43803 0.19183,3.83061 0.28778,6.70357 0.28778,8.61888 0,17.87619 -2.59003,35.43314 -7.77005,52.6709 -5.18,17.23773 -11.60706,30.93747 -19.28113,41.09924 -7.6741,10.10855 -17.52252,18.19541 -29.54523,24.26053 -11.9588,6.06516 -25.90005,9.09772 -41.82379,9.09772 -18.60965,0 -33.86191,-4.38925 -45.75671,-13.16773 -11.89484,-8.7785 -19.95264,-22.90387 -24.1734,-42.37613 l -49.78563,3.8306 c 4.22075,27.61234 16.78706,49.0531 37.69896,64.32233 20.91189,15.21604 47.86712,22.82407 80.86569,22.82407 31.08005,0 58.16318,-6.943 81.24939,-20.82895 23.15014,-13.88596 40.57672,-34.10309 52.27972,-60.65134 11.70294,-26.60147 17.55445,-62.32721 17.55445,-107.17728 0,-43.09436 -5.91547,-76.00037 -17.74634,-98.71802 -11.76691,-22.77084 -29.03363,-40.3012 -51.80005,-52.59108 -22.70252,-12.28988 -47.77121,-18.43482 -75.20606,-18.43482 z"
+       id="path4054" />
+  </g>
+</svg>
