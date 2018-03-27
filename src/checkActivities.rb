@@ -1,6 +1,3 @@
-require 'colorize'
-require 'git'
-
 module ActivityCheck
 
     def self.initialize(activityDirName)
@@ -12,18 +9,16 @@ module ActivityCheck
         # create qml file name array
         @qmlFilesArray = Dir.glob("../src/activities/" + @activityDirName + "/*.qml")
 
-        # create git instance variable
-        @git = Git.open(Dir.pwd + "/../")
     end
 
     # to print error
     def self.print_error(err)
-        puts "\t#{" ERROR ".colorize(background: :red)}      #{err}"
+        puts "\t ERROR       #{err}"
     end
 
     # to print warning
     def self.print_warning(wrn)
-        puts "\t#{" WARNING ".colorize(background: :yellow)}    #{wrn}"
+        puts "\t WARNING     #{wrn}"
     end
 
     # checks credit updation
@@ -105,38 +100,16 @@ module ActivityCheck
             end
         end
     end
-
-    def self.is_name_correct?(name)
-        match = /^\b[\w\S]+\b \b[\w\S]+\b$/.match(name)
-        if match then match[0]
-        else nil
-        end
-    end
-
-    # check commit names
-    def self.check_commit_names(commitCount)
-        puts "\nCommit Name Errors"
-        @git.log(commitCount).each do |commitHash|
-            unless is_name_correct?(commitHash.author.name) then puts print_error "'Name: #{commitHash.author.name}' ##{commitHash} Format: FirstName SecondName" end
-        end
-    end
 end
 
 # if it is the main file being run
 if __FILE__ == $0
-    if ARGV[0] == nil or ARGV[1] == nil
-        fail "\nMissing input filename or commit count.\nUsage: ruby checkActivities.rb activity_directory_name commit_count\neg: ruby checkActivity reversecount 3"
-    end
-
-    commitCount = ARGV[1].to_i
-
-    if commitCount < 1
-        fail "\nLeast Commits to check: 1"
+    if ARGV[0] == nil
+        fail "\nMissing input filename.\nUsage: ruby checkActivities.rb activity_directory_name\neg: ruby checkActivity reversecount"
     end
 
     ActivityCheck.initialize(ARGV[0])
     ActivityCheck.empty_directory?
     ActivityCheck.check_js_files
     ActivityCheck.check_qml_files
-    ActivityCheck.check_commit_names(commitCount)
 end

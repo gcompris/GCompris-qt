@@ -33,15 +33,4 @@ class TestCheckActivity < Test::Unit::TestCase
         assert_equal(@expecOutputFileContents, @outputFileContents)
 
     end
-
-    def test_is_name_correct?
-
-        # check correct name
-        assert_equal("John Smith", ActivityCheck.is_name_correct?("John Smith"))
-
-        # check wrong name
-        assert_not_equal("John F. Kennedy", ActivityCheck.is_name_correct?("John F. Kennedy"))
-
-    end
-
 end
