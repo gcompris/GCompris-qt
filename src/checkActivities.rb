@@ -26,6 +26,17 @@ module ActivityCheck
         puts "\t#{" WARNING ".colorize(background: :yellow)}    #{wrn}"
     end
 
+    # checks credit updation
+    def self.check_credits_update(lineStr)
+        if lineStr.include?("THE GTK VERSION AUTHOR")
+            print_error "Replace original GTK VERSION AUTHOR label by your own name"
+        end
+
+        if lineStr.include?("THE GTK VERSION AUTHOR")
+            print_warning "Replace original QT Quick copyright label email by your own email address"
+        end
+    end
+
     # checks whether qsTr can be used in the lineStr
     def self.qsTr_use(lineStr)
         matchStr = /(?<qsTr>(qsTr)\()?"[\w'!?:;]+( .*)*[.,]? ?"/.match(lineStr)
@@ -63,13 +74,7 @@ module ActivityCheck
 
             File.foreach(jsFile) do |line|
 
-                if line.include?("THE GTK VERSION AUTHOR")
-                    print_error "Replace original GTK VERSION AUTHOR label by your own name"
-                end
-
-                if line.include?("THE GTK VERSION AUTHOR")
-                    print_warning "Replace original QT Quick copyright label email by your own email address"
-                end
+                check_credits_update line
 
             end
         end
@@ -93,13 +98,7 @@ module ActivityCheck
                     activityInfo_QmlFile line, @activityDirName
                 end
 
-                if line.include?("THE GTK VERSION AUTHOR")
-                    print_error "Replace original GTK VERSION AUTHOR label by your own name"
-                end
-
-                if line.include?("THE GTK VERSION AUTHOR")
-                    print_error "Replace original QT Quick copyright label email by your own email address"
-                end
+                check_credits_update line
 
                 qsTr_use line
 
