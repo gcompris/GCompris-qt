@@ -80,7 +80,7 @@ function nextLevel() {
 
     if (items.score.currentSubLevel == 2) {
         items.progressbar.value = 0;
-        initSubSubLevel();
+        initSubSubLevel(false);
     }
 }
 
@@ -101,7 +101,7 @@ function previousLevel() {
     items.audioVoices.stop()
 
     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
-        items.audioVoices.play(getCurrentQuestion().audio);
+       repeat();
     }
 }
 
@@ -113,17 +113,23 @@ function isComplete() {
     return true;
 }
 
-function initSubSubLevel() {
+function initSubSubLevel(IsNext) {
     if(items.progressbar.value == items.dataModel.count) {
         items.bonus.good("smiley");
     }
      if(items.score.currentSubLevel == 2 && items.hasAudioQuestions && getCurrentQuestion()) {
-        items.audioVoices.play(getCurrentQuestion().audio);
+        // After a good answer, play the audio effect and then play voice
+        if (IsNext == false) {
+            repeat();
+        }
+        else {
+            items.nextQuestion.start();
+        }
     }
 }
 
 function nextSubSubLevel() {
-    initSubSubLevel()
+    initSubSubLevel(true)
 }
 
 function reload() {
