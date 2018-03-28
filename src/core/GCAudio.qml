@@ -105,11 +105,11 @@ Item {
         if(!fileId.exists(file) || muted)
             return false
 
-        // @FIXME There is a bug in gstreamer that makes wav files to freeze us on Linux.
-        // For now we don't play wav files at all
+        // @FIXME There was a bug in gstreamer where wav files did freeze us on Linux.
+        // If you still hit this bug, uncomment this to disable wav files
         // https://bugreports.qt.io/browse/QTBUG-49689
-        if(/.wav$/.test(file) && ApplicationInfo.platform == ApplicationInfo.Linux)
-            return false
+        //if(/.wav$/.test(file) && ApplicationInfo.platform == ApplicationInfo.Linux)
+        //    return false
 
         if(file) {
             // Setting the source to "" on Linux fix a case where the sound is no more played if you play twice the same sound in a row
@@ -145,11 +145,11 @@ Item {
         if(!fileId.exists(file) || muted)
             return false
 
-        // @FIXME There is a bug in gstreamer that makes wav files to freeze us on Linux.
-        // For now we don't play wav files at all
+        // @FIXME There was a bug in gstreamer where wav files did freeze us on Linux.
+        // If you still hit this bug, uncomment this to disable wav files
         // https://bugreports.qt.io/browse/QTBUG-49689
-        if(/.wav$/.test(file) && ApplicationInfo.platform == ApplicationInfo.Linux)
-            return false
+        //if(/.wav$/.test(file) && ApplicationInfo.platform == ApplicationInfo.Linux)
+        //    return false
 
         if(audio.playbackState !== Audio.PlayingState
            || audio.status === Audio.EndOfMedia
