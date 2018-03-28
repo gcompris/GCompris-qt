@@ -98,8 +98,8 @@ ActivityBase {
                 transformOrigin: Item.TopLeft
                 x: imageBack.x + modelData[0] * imageBack.width / 520
                 y: modelData[1] * imageBack.height / 520
-                property var x2: imageBack.x + modelData[2] * imageBack.width / 520
-                property var y2: modelData[3] * imageBack.height / 520
+                property double x2: imageBack.x + modelData[2] * imageBack.width / 520
+                property double y2: modelData[3] * imageBack.height / 520
                 width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
                 height: 3 * ApplicationInfo.ratio
                 rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
