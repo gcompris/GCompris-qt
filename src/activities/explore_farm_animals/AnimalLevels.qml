@@ -43,6 +43,7 @@ Image {
     property string imageSource
     property string question
     property string audio
+    property string completeTask : "qrc:/gcompris/src/core/resource/sounds/completetask.wav"
 
     signal displayDescription(var animal)
 
@@ -93,6 +94,7 @@ Image {
                 if (questionId === questionTargetId) {
                     animWin.start();
                     items.progressbar.value ++;
+                    items.audioEffects.play(completeTask);
                     Activity.nextSubSubLevel();
                 } else {
                     items.bonus.bad("smiley")

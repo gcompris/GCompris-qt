@@ -78,6 +78,7 @@ ActivityBase {
             id: items
 
             property GCAudio audioVoices: activity.audioVoices
+            property GCAudio audioEffects: activity.audioEffects
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
@@ -90,10 +91,20 @@ ActivityBase {
             property alias instruction: instruction
             property alias instructionText: instructionText
             property alias descriptionPanel: descriptionPanel
+            property alias nextQuestion: nextQuestion
             property bool hasAudioQuestions: activity.hasAudioQuestions
             property string currentAudio
             property var questionOrder
             property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[progressbar.value]] : ""
+        }
+        
+        Timer {
+            id: nextQuestion
+            repeat: false
+            interval: 2000
+            onTriggered: {
+                Activity.repeat();
+            }
         }
 
         Loader{
