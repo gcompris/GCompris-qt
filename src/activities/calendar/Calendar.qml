@@ -102,7 +102,7 @@ ActivityBase {
             anchors.centerIn: calendarBox
             frameVisible: true
             focus: !answerChoices.visible
-            __locale: Qt.locale(ApplicationSettings.locale)
+            __locale: Qt.locale(ApplicationInfo.localeShort)
             style: CalendarStyle {
                 navigationBar: Rectangle {
                     height: calendar.height * 0.12
