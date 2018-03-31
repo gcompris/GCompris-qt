@@ -106,7 +106,7 @@ ActivityBase {
             color: "white"
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            text: qsTr("What is the binary representation of %1").arg(items.numberToConvert)
+            text: qsTr("What is the binary representation of %1 ?").arg(items.numberToConvert)
         }
 
         Row {
@@ -118,7 +118,7 @@ ActivityBase {
                 id: bulbs
                 model: items.numberOfBulbs
                 LightBulb {
-                    height: background.height / 4
+                    height: background.height / 5
                     width: (background.width > background.height) ? (background.width / 20) : ((background.width - (16 * row.spacing)) / 8)
                 }
             }
