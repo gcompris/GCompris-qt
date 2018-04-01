@@ -292,24 +292,24 @@ function get() {
                  ],
                  [ // Level 7 Questions
                   {
-                      "question": qsTr("Columbus Day is celebrated on the second monday of October. Find the date of Columbus Day in 2018"),
-                      "answer": {"year": 2018, "month": 9, "day": 8}
+                      "question": qsTr("Human Rights Day is celebrated five days after December 5.<br> Find the date of Human Rights Day in 2017."),
+                      "answer": {"year": 2017, "month": 11, "day": 10}
                   },
                   {
-                      "question": qsTr("Braille Day is celebrated one day before January 5. Find the date of Braille Day in 2018"),
+                      "question": qsTr("Braille Day is celebrated one day before January 5.<br> Find the date of Braille Day in 2018"),
                       "answer": {"year": 2018, "month": 0, "day": 4}
                   },
                   {
-                      "question": qsTr("Mark's birthday is on March 4. His party is exactly two weeks later. Find the date of his party in 2018"),
-                      "answer": {"year": 2018, "month": 2, "day": 18}
+                      "question": qsTr("Mark's birthday is on November 4. In 2017 his party was exactly two weeks later.<br> Find the date of his party in 2017"),
+                      "answer": {"year": 2017, "month": 10, "day": 18}
                   },
                   {
-                      "question": qsTr("Mother's Day falls on the second Sunday in May. Find the date of Mother's Day in 2018"),
-                      "answer": {"year": 2018, "month": 4, "day": 13}
+                      "question": qsTr("International Women's Day is celebrated two days before March 10.<br> Find the date of International Women's Day in 2018."),
+                      "answer": {"year": 2018, "month": 2, "day": 8}
                   },
                   {
-                      "question": qsTr("Sports competition will be held on last Friday of September 2018. Select the date of sports competition on the calendar"),
-                      "answer": {"year": 2018, "month": 8, "day": 28}
+                      "question": qsTr("Sports competition was held on last Friday of September 2017.<br> Select the date of sports competition on the calendar."),
+                      "answer": {"year": 2017, "month": 8, "day": 29}
                   }
                  ]
                 ]
