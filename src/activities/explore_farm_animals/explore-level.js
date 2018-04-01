@@ -80,7 +80,7 @@ function nextLevel() {
 
     if (items.score.currentSubLevel == 2) {
         items.progressbar.value = 0;
-        initSubSubLevel(false);
+        initSubSubLevel();
     }
 }
 
@@ -118,17 +118,12 @@ function initSubSubLevel(IsNext) {
         items.bonus.good("smiley");
     }
      if(items.score.currentSubLevel == 2 && items.hasAudioQuestions && getCurrentQuestion()) {
-        // After a good answer, play the audio effect and then play voice
-        if (IsNext == false) {
-            repeat();
-        }
-        else {
-            items.nextQuestion.start();
-        }
+         repeat();
     }
 }
 
 function nextSubSubLevel() {
+    items.audioVoices.silence(2000)
     initSubSubLevel(true)
 }
 
@@ -139,7 +134,9 @@ function reload() {
 }
 
 function repeat() {
-    items.audioVoices.play(getCurrentQuestion().audio);
+    items.audioVoices.stop()
+    items.audioVoices.clearQueue()
+    items.audioVoices.append(getCurrentQuestion().audio);
 }
 
 function getCurrentQuestion() {
