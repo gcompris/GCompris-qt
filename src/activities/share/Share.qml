@@ -343,7 +343,7 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
                 color: "#404040"
-                text: qsTr("You can't put more than %1 candies in the same widget").arg(items.maxNumberOfCandiesPerWidget)
+                text: qsTr("You can't put more than %1 pieces of candy in the same rectangle").arg(items.maxNumberOfCandiesPerWidget)
             }
         }
 
