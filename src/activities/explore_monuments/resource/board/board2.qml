@@ -27,7 +27,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Golden Temple"),
-            "text": qsTr("The Golden Temple Amritsar India (Sri Harimandir Sahib Amritsar) is not only a central religious place of the Sikhs, but also a symbol of human brotherhood and equality. Everybody, irrespective of cast, creed or race can seek spiritual solace and religious fulfillment without any hindrance. It also represents the distinct identity, glory and heritage of the Sikhs. To pen-down the philosophy, ideology, the inner and outer beauty, as well as the historical legacy of Sri Harimandir Sahib is a momentous task. It is a matter of experience rather than a of description."),
+            "text": qsTr("Sri Harimandir Sahib, known as the Golden Temple in Amritsar, is one of the most revered spiritual sites of Sikhism. The construction was intended to build a place of worship for men and women from all walks of life and all religions to worship God equally."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/goldenTemple.jpg",
             "text2" : qsTr("Golden Temple"),
             "x": "0.256",
@@ -82,7 +82,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Ajanta Caves"),
-            "text": qsTr("Ajanta is world's greatest historical monument recognized by UNESCO located just 55kms from Jalgaon city and 105kms from Aurangabad City of Maharashtra, India. There are 30 caves in Ajanta of which 9, 10, 19, 26 and 29 are chaitya-grihas and the rest are monasteries."),
+            "text": qsTr("The Ajanta Caves are about 29 rock-cut Buddhist cave monuments which date from the 2nd century BCE to about 480 CE in Aurangabad district of Maharashtra state of India. The caves include paintings and rock cut sculptures described as among the finest surviving examples of ancient Indian art, particularly expressive paintings that present emotion through gesture, pose and form. Since 1983, the caves have been a UNESCO World Heritage Site"),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/ajantaCave.jpg",
             "text2" : qsTr("Ajanta Caves"),
             "x": "0.304",
@@ -104,7 +104,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Mysore Palace"),
-            "text": qsTr("Mysore Palace or Mysore Maharaja Palace is one of the largest and most spectacular monuments in the country. Also known as Amba Vilas, it is located in the heart of the city of Mysore. The palace was initially built by the Wodeyar kings in the 14th century."),
+            "text": qsTr("Mysore Palace or Mysore Maharaja Palace is one of the largest and most spectacular monuments in India. Also known as Amba Vilas, it is located in the heart of the city of Mysore. The palace was initially built by the Wodeyar kings in the 14th century."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/mysorePalace.jpg",
             "text2" : qsTr("Mysore Palace"),
             "x": "0.295",
@@ -115,7 +115,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Charminar"),
-            "text": qsTr("The Charminar in Hyderabad was constructed in 1591 by Mohammed Quli Qutab Shah. He built the Charminar to mark the end of plague in the Hyderabad city. Since the construction of the Charminar, the Hyderabad city has almost become synonymous with the monument. The Charminar is a massive and impressive structure with four minarets. In the evening, with illumination, the great Charminar looks even greater."),
+            "text": qsTr("The Charminar in Hyderabad was constructed in 1591 by Mohammed Quli Qutab Shah. He built the Charminar to mark the end of plague in the Hyderabad city. Since the construction of the Charminar, the Hyderabad city has almost become synonymous with the monument. The Charminar is a massive and impressive structure with four minarets."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/charminar.jpg",
             "text2" : qsTr("Charminar"),
             "x": "0.360",
@@ -126,7 +126,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Victoria Memorial"),
-            "text": qsTr("The Victoria Memorial was built to commemorate the peak of the British Empire in India. The Victoria Memorial, conceived by Lord Curzon, represents the architectural climax of Kolkata city. Lord Curzon, the then Viceroy specified its classical style but the actual plan of Victoria Memorial was laid down by the well-known architect, Sir William Emerson. The Victoria Memorial blends the best of the British and Mughal architecture. The Victoria Memorial hall was built with white Makrana marbles."),
+            "text": qsTr("The Victoria Memorial was built to commemorate the peak of the British Empire in India. It represents the architectural climax of Kolkata city, and blends the best of the British and Mughal architecture. The Victoria Memorial hall was built with white Makrana marbles."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/victoriaMemorials.jpg",
             "text2" : qsTr("Victoria Memorial"),
             "x": "0.670",
@@ -148,7 +148,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Qutub Minar"),
-            "text": qsTr("Qutub Minar at 74 meters, is the tallest brick minaret in the world, and the second tallest minar in India after Fateh Burj at Mohali. Qutub Minar, along with the ancient and medieval monuments surrounding it, form the Qutb Complex, which is a UNESCO World Heritage Site. The tower is located in the Mehrauli area of Delhi, India. Made of red sandstone and marble."),
+            "text": qsTr("Qutub Minar at 74 meters, is the tallest brick minaret in the world, and the second tallest minar in India after Fateh Burj at Mohali. Along with the ancient and medieval monuments surrounding it, they form the Qutb Complex, which is a UNESCO World Heritage Site. The tower, located in the Mehrauli area of Delhi, is made of red sandstone and marble."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/qutubMinar.jpg",
             "text2" : qsTr("Qutub Minar"),
             "x": "0.328",
