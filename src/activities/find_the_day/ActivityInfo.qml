@@ -26,14 +26,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Find the day")
   //: Help title
-  description: qsTr("Read the task and find the correct date by doing mathematical calculations.")
-  //intro: "Select the asked date on the calendar"
+  description: qsTr("Find the correct date and select it on the calendar.")
+  //intro: "Select the required day."
   //: Help goal
-  goal: qsTr("Learn to find date on the calendar by duration calculations.")
+  goal: qsTr("Learn how to count days and find a date on a calendar.")
   //: Help prerequisite
   prerequisite: qsTr("Basics of calendar")
   //: Help manual
-  manual: qsTr("Review the instructions and select the correct date on calendar.")
+  manual: qsTr("Read the instructions and perform the requested calculation to find a date. Then select this date on the calendar.")
   credit: ""
   section: "discovery"
   createdInVersion: 9000
