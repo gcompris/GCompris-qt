@@ -116,14 +116,10 @@ function initLevel() {
         row++;
     }
     items.keyboard.layout = layout;
-
 }
 
-
-
 function processKeyPress(text) {
-
-    if(items.remainingLife === 0)
+    if(items.remainingLife === 0 || items.bonus.isPlaying)
         return
 
     text = text.toLocaleLowerCase()
