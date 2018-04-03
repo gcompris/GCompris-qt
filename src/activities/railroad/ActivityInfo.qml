@@ -31,11 +31,11 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("A train - a locomotive and carriage(s) - is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by dragging the appropriate carriages and locomotive. Deselect an item by dragging it down.<br><br>") +
           qsTr("<b>Keyboard Controls:</b><br><br>") +
-          qsTr("1. Use arrow keys to transverse the wagons and locomotives in the answer or sample zone.<br>") +
+          qsTr("1. Use arrow keys to move in the answer or sample zone.<br>") +
           qsTr("2. Use Enter or Return key to submit the answers.<br>") +
           qsTr("3. Use Space key to swap two wagons or locomotives in answer zone.<br>") +
           qsTr("4. Use Space key to add a wagon or locomotive from samples to answer list.<br>") +
-          qsTr("4. Use Delete key to remove a wagon or locomotive from answer zone.<br>")
+          qsTr("5. Use Delete key to remove a wagon or locomotive from answer zone.<br>")
   credit: ""
   section: "discovery memory"
   createdInVersion: 9500

@@ -1,10 +1,12 @@
 /* GCompris - Loco.qml
  *
  * Copyright (C) 2017 Utkarsh Tiwari <iamutkarshtiwari@kde.org>
+ * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
  *
  * Authors:
- *   Pascal Georges (GTK+ version)
+ *   <Pascal Georges> (GTK+ version)
  *   Utkarsh Tiwari <iamutkarshtiwari@kde.org> (Qt Quick port)
+ *   Amit Sagtani <asagtani06@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

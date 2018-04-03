@@ -50,8 +50,8 @@ var dataset = {
     "numberOfSubLevels": 3,
     "columnsInHorizontalMode": [3, 5, 3, 5, 3, 5, 3, 5, 3, 5],
     "columsInVerticalMode": [3, 4, 3, 4, 3, 4, 3, 4, 3, 4],
-    "noOfLocos": [4, 9, 4, 9, 4, 9, 4, 9, 4, 9],
-    "noOfWagons": [8, 11, 8, 11, 8, 11, 8, 11, 8, 11]
+    "noOfLocos": [8, 9, 4, 9, 4, 9, 4, 9, 4, 9],
+    "noOfWagons": [4, 11, 8, 11, 8, 11, 8, 11, 8, 11]
 }
 
 function start(items_) {
@@ -67,10 +67,9 @@ function stop() {
 
 function initLevel() {
     generateUniqueId();
-    var uniqueId;
     items.mouseEnabled = true;
     items.memoryMode = false;
-    items.timer.stop();
+    items.trainAnimationTimer.stop();
     items.animateFlow.stop(); // Stops any previous animations
     items.listModel.clear();
     items.answerZone.currentIndex = 0;
@@ -80,19 +79,21 @@ function initLevel() {
         // Initiates a new level
         backupListModel = [];
         solutionArray = [];
-        //Adds wagons to display in answerZone.
+        //Adds wagons to display in answerZone
+        var identifier;
+        // Adds a loco at the beginning
+        identifier = "loco" + Math.floor(Math.random() * dataset["noOfLocos"][currentLevel])
+        solutionArray.push(identifier);
+        addWagon(identifier, items.listModel.length);
+
         for(var i = 0; i < dataset["WagonsInCorrectAnswers"][currentLevel] - 1; i++) {
             do {
-                uniqueId = "wagon" + Math.floor(Math.random() * dataset["noOfWagons"][currentLevel])
-            } while (solutionArray.indexOf(uniqueId) != -1)
-            solutionArray.push(uniqueId);
-            addWagon(uniqueId, i);
+                identifier = "wagon" + Math.floor(Math.random() * dataset["noOfWagons"][currentLevel])
+            } while (solutionArray.indexOf(identifier) != -1)
+            solutionArray.push(identifier);
+            addWagon(identifier, i);
         }
 
-        // Adds a loco at the beginning.
-        uniqueId = "loco" + Math.floor(Math.random() * dataset["noOfLocos"][currentLevel])
-        solutionArray.push(uniqueId);
-        addWagon(uniqueId, items.listModel.length);
         solutionArray.reverse();
 
     } else {
@@ -102,10 +103,10 @@ function initLevel() {
         }
     }
     if(items.introMessage.visible === false && isNewLevel) {
-        items.timer.start()
+        items.trainAnimationTimer.start()
     }
     items.bar.level = currentLevel + 1;
-    items.timer.interval = dataset["memoryTime"][currentLevel] * 1000
+    items.trainAnimationTimer.interval = dataset["memoryTime"][currentLevel] * 1000
 }
 
 function nextLevel() {
@@ -140,13 +141,14 @@ function nextSubLevel() {
     items.score.currentSubLevel ++;
     if(items.score.currentSubLevel > dataset["numberOfSubLevels"]) {
         nextLevel();
-    } else {
+    }
+    else {
         isNewLevel = true;
         initLevel();
     }
 }
 
-function isAnswer() {
+function checkAnswer() {
     /* Checks if the top level setup equals the solutions */
     if(items.listModel.count === solutionArray.length) {
         var isSolution = true;
@@ -181,9 +183,11 @@ function getDropIndex(x) {
         var itemWidth = items.answerZone.cellWidth
         if(x < xVal && index == 0) {
             return 0;
-        } else if((xVal + itemWidth + items.background.width * 0.0025) <= x && index == (count - 1)) {
+        }
+        else if((xVal + itemWidth + items.background.width * 0.0025) <= x && index == (count - 1)) {
             return count;
-        } else if(xVal <= x && x < (xVal + itemWidth + items.background.width * 0.0025)) {
+        }
+        else if(xVal <= x && x < (xVal + itemWidth + items.background.width * 0.0025)) {
             return index + 1;
         }
     }

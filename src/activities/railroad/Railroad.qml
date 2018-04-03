@@ -1,10 +1,12 @@
 /* GCompris - railroad.qml
  *
  * Copyright (C) 2016 Utkarsh Tiwari <iamutkarshtiwari@kde.org>
+ * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
  *
  * Authors:
  *   Pascal Georges (GTK+ version)
  *   Utkarsh Tiwari <iamutkarshtiwari@kde.org> (Qt Quick port)
+ *   Amit Sagtani <asagtani06@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -53,7 +55,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
-            property alias timer: timer
+            property alias trainAnimationTimer: trainAnimationTimer
             property alias sampleList: sampleList
             property alias listModel: listModel
             property alias answerZone: answerZone
@@ -63,12 +65,13 @@ ActivityBase {
             property bool mouseEnabled: true
             property var currentKeyZone: sampleList
             property bool keyNavigationMode: false
-            property int sampleImageHeight: 0 //Stores height of sampleGrid images to set rail bar support position.
+            // stores height of sampleGrid images to set rail bar support position
+            property int sampleImageHeight: 0
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-        Keys.enabled: !timer.running && !animateFlow.running && !introMessage.visible
+        Keys.enabled: !trainAnimationTimer.running && !animateFlow.running && !introMessage.visible
         Keys.onPressed: {
             items.keyNavigationMode = true;
             items.currentKeyZone.handleKeys(event);
@@ -77,7 +80,7 @@ ActivityBase {
 
         // Countdown timer
         Timer {
-            id: timer
+            id: trainAnimationTimer
             repeat: false
             interval: 4000
             onTriggered: {
@@ -98,7 +101,7 @@ ActivityBase {
             }
             z: score.z + 1
             onIntroDone: {
-                timer.start()
+                trainAnimationTimer.start()
             }
             intro: [
                 qsTr("Observe and remember the train before the timer ends and then drag the items to set up a similar train."),
@@ -124,7 +127,6 @@ ActivityBase {
                 height: background.height / 8
                 cellWidth: levelCellWidth
                 cellHeight: levelCellHeight
-                x: parent.x
                 y: background.width > background.height ? sampleList.y - height * 1.55 : sampleList.y - height * 1.29
                 interactive: false
                 model: listModel
@@ -165,11 +167,11 @@ ActivityBase {
                     MouseArea {
                         id: displayWagonMouseArea
                         hoverEnabled: true
-                        enabled: (introMessage.visible ? false : true) && items.mouseEnabled
+                        enabled: !introMessage.visible && items.mouseEnabled
                         anchors.fill: parent
 
                         onPressed: {
-                            if(items.memoryMode == true) {
+                            if(items.memoryMode) {
                                 drag.target = parent.createNewItem();
                                 parent.opacity = 0
                                 listModel.move(index, listModel.count - 1, 1)
@@ -177,7 +179,7 @@ ActivityBase {
                             answerZone.selectedSwapIndex = -1;
                         }
                         onReleased: {
-                            if(items.memoryMode == true) {
+                            if(items.memoryMode) {
                                 var dragItem = drag.target
                                 parent.checkDrop(dragItem)
                                 dragItem.destroy();
@@ -186,7 +188,7 @@ ActivityBase {
                         }
 
                         onClicked: {
-                            // skips memorization time.
+                            // skips memorization time
                             if(!items.memoryMode) {
                                 bar.hintClicked()
                             }
@@ -211,9 +213,8 @@ ActivityBase {
 
                 onXChanged: {
                     if(answerZone.x >= background.width) {
-                        timer.stop()
+                        trainAnimationTimer.stop()
                         animateFlow.stop();
-                        answerZone.x = 2;
                         listModel.clear();
                         items.memoryMode = true;
                     }
@@ -265,9 +266,9 @@ ActivityBase {
                         }
                     }
                     // Checks answer.
-                    if(event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                    if((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && items.mouseEnabled) {
                         items.currentKeyZone = answerZone
-                        Activity.isAnswer();
+                        Activity.checkAnswer();
                     }
                     // Swaps two wagons with help of Space/Enter keys.
                     if(event.key === Qt.Key_Space) {
@@ -298,7 +299,7 @@ ActivityBase {
                     color: "blue"
                     opacity: 0.3
                     radius: 5
-                    visible: (items.currentKeyZone === answerZone) && (!timer.running && !animateFlow.running) && items.keyNavigationMode
+                    visible: (items.currentKeyZone === answerZone) && (!trainAnimationTimer.running && !animateFlow.running) && items.keyNavigationMode
                     x: visible ? answerZone.currentItem.x : 0
                     y: visible ? answerZone.currentItem.y : 0
                     Behavior on x {
@@ -317,7 +318,7 @@ ActivityBase {
                 highlightFollowsCurrentItem: false
             }
 
-            // Used to highlight a wagon selected for swaping via key navigations.
+            // Used to highlight a wagon selected for swaping via key navigations
             Rectangle {
                 id: swapHighlight
                 width: answerZone.cellWidth
@@ -349,7 +350,8 @@ ActivityBase {
 
             // No. of wagons in a row
             readonly property int columnCount: (background.width > background.height) ? Activity.dataset["columnsInHorizontalMode"][bar.level - 1] :
-                                                                                        Activity.dataset["columsInVerticalMode"][bar.level - 1]
+        Activity.dataset["columsInVerticalMode"][bar.level - 1]
+
             readonly property int rowCount: columnCount > 0 ? model / columnCount : 0
 
             delegate: Image {
@@ -358,7 +360,7 @@ ActivityBase {
                 property real originX
                 property real originY
                 source: Activity.resourceURL + uniqueID + ".svg"
-                width: ((background.width > background.height) ? background.width / 5.66 : background.width / 4.2)
+                width: (background.width > background.height) ? background.width / 5.66 : background.width / 4.2
                 sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
                 visible: true
@@ -378,7 +380,7 @@ ActivityBase {
                     // Checks the drop location of this wagon
                     var globalCoordinates = loco.mapToItem(answerZone, 0, 0)
                     // checks if the wagon is dropped in correct zone and no. of wagons in answer row are less than
-                    //    total no. of wagons in correct answer + 2, before dropping the wagon.
+                    // total no. of wagons in correct answer + 2, before dropping the wagon
                     if(globalCoordinates.y <= (background.height / 12.5) &&
                             listModel.count < Activity.dataset["WagonsInCorrectAnswers"][bar.level - 1] + 2) {
                         activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
@@ -392,7 +394,6 @@ ActivityBase {
                     hoverEnabled: true
                     anchors.fill: parent
                     drag.target: parent
-                    drag.axis: (parent.y >= 0 && parent.y <= background.height / 7.5) ? Drag.YAxis : Drag.XAndYAxis
                     enabled: items.mouseEnabled
                     onClicked: {
                         items.currentKeyZone = sampleList
@@ -462,9 +463,9 @@ ActivityBase {
                         Activity.addWagon(imageId, listModel.count);
                     }
                 }
-                if((event.key === Qt.Key_Enter || event.key === Qt.Key_Return) && listModel.count > 0) {
+                if((event.key === Qt.Key_Enter || event.key === Qt.Key_Return) && listModel.count > 0 && items.mouseEnabled) {
                     items.currentKeyZone = sampleList
-                    Activity.isAnswer();
+                    Activity.checkAnswer()
                 }
             }
 
@@ -513,7 +514,7 @@ ActivityBase {
             }
         }
 
-        // Answer Submission button.
+        // Answer Submission button
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -534,11 +535,8 @@ ActivityBase {
             MouseArea {
                 id: okButtonMouseArea
                 anchors.fill: parent
-                onClicked: {
-                    if((!timer.running && !animateFlow.running) && listModel.count > 0) {
-                        Activity.isAnswer()
-                    }
-                }
+                enabled: !trainAnimationTimer.running && !animateFlow.running && listModel.count > 0 && items.mouseEnabled
+                onClicked: Activity.checkAnswer()
             }
         }
 
@@ -564,13 +562,14 @@ ActivityBase {
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
+            z: introMessage.z
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onHintClicked: {
                 if(!introMessage.visible && items.mouseEnabled) {
                     if(items.memoryMode == false) {
-                        timer.stop()
+                        trainAnimationTimer.stop()
                         animateFlow.stop();
                         listModel.clear();
                         for(var index = 0; index < Activity.backupListModel.length; index++) {
