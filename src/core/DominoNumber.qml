@@ -76,7 +76,7 @@ Item {
      * type:GCAudio
      * To play sound and audio effects.
      */
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     function isVisible(index) {
         var value = item.value

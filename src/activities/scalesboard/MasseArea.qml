@@ -46,7 +46,7 @@ Rectangle {
 
     property int weight: 0
 
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     function init() {
         weight = 0

@@ -53,7 +53,7 @@ ActivityBase {
             property alias question: question
             property alias answer: answer
             property alias choice: choice
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus

@@ -58,7 +58,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias timer: timer
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
         }
 
         onStart: { Activity.start(items) }

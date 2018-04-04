@@ -62,7 +62,7 @@ ActivityBase {
             property int result: data[sublevel-1][1]
             property alias timer: timer
             property alias warningDialog: warningDialog
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property bool solved
             property bool levelchanged: false
             property var levelArr

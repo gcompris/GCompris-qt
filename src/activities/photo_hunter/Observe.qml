@@ -34,7 +34,7 @@ Image {
                                                 background.vert ? (background.height - background.barHeight - 40 - frame.problemTextHeight) / 2 :
                                                                   background.height - background.barHeight - 30 - frame.problemTextHeight
 
-    property GCAudio audioEffects: activity.audioEffects
+    property GCSfx audioEffects: activity.audioEffects
     property alias repeater: repeater
     property alias circleRepeater: circleRepeater
     property int good: 0

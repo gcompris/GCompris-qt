@@ -73,7 +73,7 @@ ActivityBase {
             }
 
             property bool cycleDone: false
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
         }
 
         IntroMessage {

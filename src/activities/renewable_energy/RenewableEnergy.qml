@@ -62,7 +62,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property int currentLevel
             property int numberOfLevel: 3
             property bool sunIsUp

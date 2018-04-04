@@ -36,7 +36,7 @@ Flipable {
     property bool tuxTurn
 
     property GCAudio audioVoices
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     onIsFoundChanged: {
         opacity = 0
