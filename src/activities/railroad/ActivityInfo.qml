@@ -25,7 +25,7 @@ ActivityInfo {
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   demo: true
   title: qsTr("Railroad activity")
-  description: qsTr("Rebuild the displayed locomotive at the top of the screen by dragging the appropriate carriages and locomotive. Deselect an item by dragging it down.")
+  description: qsTr("Rebuild the displayed train at the top of the screen by dragging the appropriate carriages and locomotive. Deselect an item by dragging it down.")
   //intro: "Observe the train and then click on the items to set up a similar train"
   goal: qsTr("Memory training")
   prerequisite: ""
