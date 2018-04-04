@@ -59,7 +59,7 @@ ActivityBase {
             id: items
             property alias bar: bar
             property alias bonus: bonus
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
             property bool tuxTurn: false
             property var playQueue

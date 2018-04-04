@@ -78,7 +78,7 @@ ActivityBase {
             id: items
 
             property GCAudio audioVoices: activity.audioVoices
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property Item main: activity.main
             property alias background: background
             property alias bar: bar

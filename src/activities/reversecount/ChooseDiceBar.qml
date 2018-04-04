@@ -33,7 +33,7 @@ Item {
     property alias value1: domino.value1
     property alias value2: domino.value2
     property alias valueMax: domino.valueMax
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     Row {
         id: barRow

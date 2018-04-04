@@ -111,7 +111,7 @@ Item {
      * Append to it to play your effects.
      * @sa GCAudio audioEffects
      */
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     /**
      * type:Loading

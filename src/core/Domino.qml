@@ -66,7 +66,7 @@ Flipable {
 
     // Set to false to prevent user inputs.
     property bool isClickable: true
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     front: Rectangle {
         anchors.fill: parent

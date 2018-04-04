@@ -97,7 +97,7 @@ Window {
         }
     }
 
-    GCAudio {
+    GCSfx {
         id: audioEffects
         muted: !ApplicationSettings.isAudioEffectsEnabled
     }

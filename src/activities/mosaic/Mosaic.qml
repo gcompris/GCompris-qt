@@ -48,7 +48,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias question: question
             property alias answer: answer
             property alias selector: selector

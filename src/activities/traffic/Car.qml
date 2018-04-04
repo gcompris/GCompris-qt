@@ -64,7 +64,7 @@ Item {
     property real effY: car.yPos * car.blockSize
     property real effWidth: (mode == "COLOR" || car.isHorizontal) ? car.width : car.height
     property real effHeight: (mode == "COLOR" || car.isHorizontal) ? car.height : car.width
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     width: (mode == "IMAGE" || isHorizontal) ? (size * blockSize) : blockSize
     height: (mode == "IMAGE" || isHorizontal) ? blockSize : (size * blockSize)

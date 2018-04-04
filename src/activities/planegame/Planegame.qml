@@ -71,7 +71,7 @@ ActivityBase {
             property alias score: score
             property alias plane: plane
             property GCAudio audioVoices: activity.audioVoices
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
         }

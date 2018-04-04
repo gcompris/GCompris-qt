@@ -154,6 +154,7 @@ Image {
                         winVoices[Math.floor(Math.random()*winVoices.length)])))
             if(winSound)
                 audioEffects.play(winSound)
+
         start()
         animation.start()
     }
@@ -162,7 +163,7 @@ Image {
      * Private: Triggers loose feedback after the timer completion.
      */
     function _bad(name) {
-        if(!audioEffects.play(
+        if(!audioVoices.play(
                     ApplicationInfo.getAudioFilePath(
                         looseVoices[Math.floor(Math.random()*looseVoices.length)])))
             if(looseSound)

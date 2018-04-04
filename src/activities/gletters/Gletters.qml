@@ -91,7 +91,7 @@ ActivityBase {
             property alias score: score
             property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias locale: background.locale
             property alias textinput: textinput
         }

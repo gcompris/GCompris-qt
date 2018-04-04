@@ -100,7 +100,7 @@ Item {
     property int wrongAnswerShakeAmplitude: wrongAnswerShakeAmplitudeCalc < wrongAnswerShakeAmplitudeMin ? wrongAnswerShakeAmplitudeMin : wrongAnswerShakeAmplitudeCalc
 
     // If you want the sound effects just pass the audioEffects
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     /**
      * Emitted when button is pressed as a good answer.
