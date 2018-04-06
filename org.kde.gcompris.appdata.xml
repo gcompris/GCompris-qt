@@ -386,6 +386,7 @@
       <caption xml:lang="ca-valencia">Menú principal del GCompris</caption>
       <caption xml:lang="en-GB">GCompris main menu</caption>
       <caption xml:lang="es">Menú principal de GCompris</caption>
+      <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="nl">GCompris-hoofdmenu</caption>
       <caption xml:lang="pt">Menu principal do GCompris</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
@@ -398,6 +399,7 @@
       <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="ca-valencia">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="en-GB">click_on_letter_up activity</caption>
+      <caption xml:lang="it">attività clic sulla lettera</caption>
       <caption xml:lang="nl">activiteit klik_op_letter_omhoog</caption>
       <caption xml:lang="pt">actividade carregar_na_letra_para_cima</caption>
       <caption xml:lang="sv">Aktiviteten klicka på bokstav upp</caption>
@@ -410,6 +412,7 @@
       <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="ca-valencia">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="en-GB">clockgame activity</caption>
+      <caption xml:lang="it">attività dell'orologio</caption>
       <caption xml:lang="nl">activiteit klokspel</caption>
       <caption xml:lang="pt">actividade do jogo do relógio</caption>
       <caption xml:lang="sv">Aktiviteten klockspel</caption>
@@ -422,6 +425,7 @@
       <caption xml:lang="ca">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="ca-valencia">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="en-GB">colour_mix activity</caption>
+      <caption xml:lang="it">attività miscela di colori</caption>
       <caption xml:lang="nl">activiteit kleurmix</caption>
       <caption xml:lang="pt">actividade mistura_cores</caption>
       <caption xml:lang="sv">Aktiviteten färgblandning</caption>
@@ -434,6 +438,7 @@
       <caption xml:lang="ca">Activitat «Colors»</caption>
       <caption xml:lang="ca-valencia">Activitat «Colors»</caption>
       <caption xml:lang="en-GB">colours activity</caption>
+      <caption xml:lang="it">attività dei colori</caption>
       <caption xml:lang="nl">activiteit kleuren</caption>
       <caption xml:lang="pt">actividade cores</caption>
       <caption xml:lang="sv">Aktiviteten färger</caption>
@@ -446,6 +451,7 @@
       <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="en-GB">crane activity</caption>
+      <caption xml:lang="it">attività della gru</caption>
       <caption xml:lang="nl">activiteit kraan</caption>
       <caption xml:lang="pt">actividade grua</caption>
       <caption xml:lang="sv">Aktiviteten kran</caption>
@@ -458,6 +464,7 @@
       <caption xml:lang="ca">Activitat «Compta els elements»</caption>
       <caption xml:lang="ca-valencia">Activitat «Compta els elements»</caption>
       <caption xml:lang="en-GB">enumerate activity</caption>
+      <caption xml:lang="it">attività di enumerazione</caption>
       <caption xml:lang="nl">activiteit opnoemen</caption>
       <caption xml:lang="pt">actividade numeração</caption>
       <caption xml:lang="sv">Aktiviteten uppräkning</caption>
@@ -470,6 +477,7 @@
       <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="ca-valencia">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="en-GB">fifteen activity</caption>
+      <caption xml:lang="it">attività del quindici</caption>
       <caption xml:lang="nl">activiteit vijftien</caption>
       <caption xml:lang="pt">actividade quinze</caption>
       <caption xml:lang="sv">Aktiviteten femtonspel</caption>
@@ -482,6 +490,7 @@
       <caption xml:lang="ca">Activitat «Hexàgon»</caption>
       <caption xml:lang="ca-valencia">Activitat «Hexàgon»</caption>
       <caption xml:lang="en-GB">hexagon activity</caption>
+      <caption xml:lang="it">attività dell'esagono</caption>
       <caption xml:lang="nl">activiteit hexagon</caption>
       <caption xml:lang="pt">actividade hexágono</caption>
       <caption xml:lang="sv">Aktiviteten hexagon</caption>
@@ -494,6 +503,7 @@
       <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="ca-valencia">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="en-GB">scalesboard activity</caption>
+      <caption xml:lang="it">attività della bilancia</caption>
       <caption xml:lang="nl">activiteit bord_met_schalen</caption>
       <caption xml:lang="pt">actividade pautas</caption>
       <caption xml:lang="sv">Aktiviteten vågbord</caption>
@@ -506,6 +516,7 @@
       <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="ca-valencia">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="en-GB">chess_partyend activity</caption>
+      <caption xml:lang="it">attività degli scacchi</caption>
       <caption xml:lang="nl">Activiteit schaakspel_party_einde</caption>
       <caption xml:lang="pt">actividade xadrez_fim_festa</caption>
       <caption xml:lang="sv">Aktiviteten schack festavslutning</caption>
@@ -518,6 +529,7 @@
       <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="ca-valencia">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="en-GB">traffic activity</caption>
+      <caption xml:lang="it">attività del traffico</caption>
       <caption xml:lang="nl">activiteit verkeer</caption>
       <caption xml:lang="pt">actividade trânsito</caption>
       <caption xml:lang="sv">Aktiviteten trafik</caption>
