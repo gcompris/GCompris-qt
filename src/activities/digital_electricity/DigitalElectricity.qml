@@ -53,6 +53,9 @@ ActivityBase {
         }
 
         Keys.onPressed: {
+            if ((event.key == Qt.Key_Return || event.key == Qt.Key_Enter) && okButton.enabled) {
+                Activity.checkAnswer()
+            }
             if (event.key == Qt.Key_Plus) {
                 Activity.zoomIn()
             }
@@ -498,7 +501,7 @@ ActivityBase {
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-
+            enabled: !tutorialInstruction.visible
             onClicked: Activity.checkAnswer()
         }
 
