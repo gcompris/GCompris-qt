@@ -190,8 +190,8 @@ QtObject {
             playAreaComponentList: [zero, one, orGate, andGate, digitalLight],
             determiningComponentsIndex: [4],
             wires: [ [0, 0, 2, 0], [2, 0, 3, 0], [3, 0, 4, 0]],
-            playAreaComponentPositionX: [0.2, 0.2, 0.4, 0.6, 0.8],
-            playAreaComponentPositionY: [0.1, 0.5, 0.3, 0.3, 0.4],
+            playAreaComponentPositionX: [0.0, 0.0, 0.2, 0.4, 0.6],
+            playAreaComponentPositionY: [0.0, 0.4, 0.2, 0.2, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("Note: You can draw multiple wires from the output terminal of a component.")
@@ -203,8 +203,8 @@ QtObject {
             playAreaComponentList: [notGate, notGate, orGate, orGate, andGate, digitalLight],
             determiningComponentsIndex: [5],
             wires: [ [4, 0, 5, 0], [2, 0, 4, 0], [3, 0, 4, 1]],
-            playAreaComponentPositionX: [0.2, 0.2, 0.5, 0.5, 0.6, 0.8],
-            playAreaComponentPositionY: [0.1, 0.4, 0.2, 0.6, 0.4, 0.4],
+            playAreaComponentPositionX: [0.05, 0.05, 0.3, 0.3, 0.35, 0.58],
+            playAreaComponentPositionY: [0.1, 0.4, 0.05, 0.45, 0.25, 0.25],
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("The NOT gate takes a single binary input and flips the value in the output.")
@@ -216,8 +216,8 @@ QtObject {
             playAreaComponentList: [nandGate, digitalLight],
             determiningComponentsIndex: [1],
             wires: [ [0, 0, 1, 0] ],
-            playAreaComponentPositionX: [0.4, 0.8],
-            playAreaComponentPositionY: [0.4, 0.4],
+            playAreaComponentPositionX: [0.25, 0.6],
+            playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("The NAND gate takes two binary inputs and produces one binary output."),
@@ -232,8 +232,8 @@ QtObject {
             playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [0, 1, 2, 3],
             wires: [],
-            playAreaComponentPositionX: [0.2, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.2, 0.5, 0.8, 0.5],
+            playAreaComponentPositionX: [0.1, 0.1, 0.1, 0.5],
+            playAreaComponentPositionY: [0.0, 0.25, 0.55, 0.25],
             type: [problemType.equation3Variables],
             result: function (A, B, C) {
                 return A | (B & C)
@@ -250,8 +250,8 @@ QtObject {
             playAreaComponentList: [xorGate, digitalLight],
             determiningComponentsIndex: [1],
             wires: [ [0, 0, 1, 0] ],
-            playAreaComponentPositionX: [0.4, 0.8],
-            playAreaComponentPositionY: [0.4, 0.4],
+            playAreaComponentPositionX: [0.25, 0.6],
+            playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("The XOR Gate takes two binary inputs and produces one binary output."),
@@ -265,8 +265,8 @@ QtObject {
             playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [0, 1, 2, 3],
             wires: [],
-            playAreaComponentPositionX: [0.2, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.2, 0.4, 0.6, 0.4],
+            playAreaComponentPositionX: [0.1, 0.1, 0.1, 0.5],
+            playAreaComponentPositionY: [0.0, 0.25, 0.55, 0.25],
             type: [problemType.equation3Variables],
             result: function (A, B, C) {
                 return A ^ B ^ C
@@ -281,8 +281,8 @@ QtObject {
             playAreaComponentList: [norGate, digitalLight],
             determiningComponentsIndex: [1],
             wires: [ [0, 0, 1, 0] ],
-            playAreaComponentPositionX: [0.6, 0.8],
-            playAreaComponentPositionY: [0.5, 0.5],
+            playAreaComponentPositionX: [0.25, 0.6],
+            playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("A NOR gate takes 2 binary input and outputs 1 if both of them are 0, otherwise produces an output of 0."),
@@ -296,8 +296,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2],
             wires: [ [0, 0, 1, 0] ],
-            playAreaComponentPositionX: [0.1, 0.3, 0.8],
-            playAreaComponentPositionY: [0.5, 0.5, 0.5],
+            playAreaComponentPositionX: [0.0, 0.3, 0.6],
+            playAreaComponentPositionY: [0.25, 0.25, 0.25],
             type: [problemType.equation1Variable],
             introMessage: [
                 qsTr("Use the gates such that the bulb will glow only when the switch is turned off and remain off when the switch is turned on.")
@@ -309,8 +309,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2, 3],
             wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
-            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.5, 0.4, 0.6, 0.5],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return A & B
@@ -325,8 +325,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2, 3],
             wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
-            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.5, 0.4, 0.6, 0.5],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return A | B
@@ -341,8 +341,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2, 3],
             wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
-            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.5, 0.4, 0.6, 0.5],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return !(A | B)
@@ -357,8 +357,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2],
             wires: [ [0, 0, 1, 0] ],
-            playAreaComponentPositionX: [0.1, 0.3, 0.8],
-            playAreaComponentPositionY: [0.5, 0.5, 0.5],
+            playAreaComponentPositionX: [0.0, 0.3, 0.6],
+            playAreaComponentPositionY: [0.25, 0.25, 0.25],
             type: [problemType.equation1Variable],
             introMessage: [
                 qsTr("Use the gates such that the bulb will glow only when the switch is turned off and remain off when the switch is turned on.")
@@ -370,8 +370,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2, 3],
             wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
-            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.5, 0.4, 0.6, 0.5],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return A & B
@@ -386,8 +386,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2, 3],
             wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
-            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.5, 0.4, 0.6, 0.5],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return A | B
@@ -402,8 +402,8 @@ QtObject {
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [1, 2, 3],
             wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
-            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.8],
-            playAreaComponentPositionY: [0.5, 0.4, 0.6, 0.5],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return !(A & B)
@@ -418,8 +418,8 @@ QtObject {
             playAreaComponentList: [switchKey, switchKey, comparator, digitalLight],
             determiningComponentsIndex: [0, 1, 3],
             wires: [  ],
-            playAreaComponentPositionX: [0.0, 0.0, 0.4, 0.9],
-            playAreaComponentPositionY: [0.2, 0.4, 0.5, 0.5],
+            playAreaComponentPositionX: [0.02, 0.02, 0.2, 0.6],
+            playAreaComponentPositionY: [0.05, 0.5, 0.25, 0.25],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return A <= B
@@ -435,8 +435,8 @@ QtObject {
             playAreaComponentList: [bcdToSevenSegment, sevenSegmentDisplay],
             determiningComponentsIndex: [0, 1],
             wires: [ [0, 0, 1, 0], [0, 1, 1, 1], [0, 2, 1, 2], [0, 3, 1, 3], [0, 4, 1, 4], [0, 5, 1, 5], [0, 6, 1, 6] ],
-            playAreaComponentPositionX: [0.4, 0.8],
-            playAreaComponentPositionY: [0.3, 0.3],
+            playAreaComponentPositionX: [0.2, 0.6],
+            playAreaComponentPositionY: [0.1, 0.1],
             type: [problemType.others],
             introMessage: [
                 qsTr("The component in the middle is a BCD to seven segment converter."),
@@ -451,8 +451,8 @@ QtObject {
             playAreaComponentList: [signalGenerator, bcdCounter, bcdToSevenSegment, sevenSegmentDisplay],
             determiningComponentsIndex: [1, 2],
             wires: [ [2, 0, 3, 0], [2, 1, 3, 1], [2, 2, 3, 2], [2, 3, 3, 3], [2, 4, 3, 4], [2, 5, 3, 5], [2, 6, 3, 6] ],
-            playAreaComponentPositionX: [0.0, 0.1, 0.4, 0.8],
-            playAreaComponentPositionY: [0.2, 0.6, 0.2, 0.2],
+            playAreaComponentPositionX: [0.0, 0.0, 0.27, 0.6],
+            playAreaComponentPositionY: [0.0, 0.3, 0.1, 0.1],
             type: [problemType.others],
             introMessage: [
                 qsTr("The signal generator on the left is used to generate alternating signals between 0 and 1 in a given time period taken as input. The time period by default is 1 second, but it can be changed between 0.25 and 2s."),
@@ -466,8 +466,8 @@ QtObject {
             playAreaComponentList: [one, one, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [2, 3, 4],
             wires: [ ],
-            playAreaComponentPositionX: [0.0, 0.0, 0.1, 0.1, 0.8],
-            playAreaComponentPositionY: [0.0, 0.8, 0.3, 0.6, 0.4],
+            playAreaComponentPositionX: [0.0, 0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.0, 0.5, 0.15, 0.4, 0.27],
             type: [problemType.equation2Variables],
             result: function (A, B) {
                 return A ^ B
