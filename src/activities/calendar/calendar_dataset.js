@@ -186,8 +186,8 @@ function get() {
                       "answer": {"year": 2018, "month": 2, "day": 29}
                   },
                   {
-                      "question": qsTr("Select fourth day after 27th of given month"),
-                      "answer": {"year": 2018, "month": 2, "day": 31}
+                      "question": qsTr("Select third day after 27th of given month"),
+                      "answer": {"year": 2018, "month": 2, "day": 30}
                   }
                  ]
                 ],
