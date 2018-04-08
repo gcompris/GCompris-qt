@@ -73,7 +73,7 @@ Item {
         id: imageAndOptionGrid
         columns: (background.horizontalLayout && !items.assessmentMode && items.bar.level != 2) ? 2 : 1
         spacing: 10 * ApplicationInfo.ratio
-        anchors.top: questionArea.bottom
+        anchors.top: (questionArea.y + questionArea.height) > (score.y + score.height) ? questionArea.bottom : score.bottom
         anchors.left: parent.left
         anchors.right: parent.right
         anchors.margins: 10 * ApplicationInfo.ratio
@@ -139,8 +139,8 @@ Item {
                     isCorrectAnswer: closeness === 100
                     onIncorrectlyPressed: {
                         if(!items.assessmentMode) {
-                            optionButton.stopAnimations()
-                            incorrectAnswerAnimation.start()
+                            closenessMeter.stopAnimations()
+                            closenessMeterIncorrectAnswerAnimation.start()
                             mainQuizScreen.closenessMeterValue = closeness
                         }
                         else {
@@ -149,9 +149,9 @@ Item {
                     }
                     onCorrectlyPressed: {
                         if(!items.assessmentMode) {
-                            optionButton.stopAnimations()
+                            closenessMeter.stopAnimations()
                             particles.burst(30)
-                            correctAnswerAnimation.start()
+                            closenessMeterCorrectAnswerAnimation.start()
                             mainQuizScreen.closenessMeterValue = closeness
                         }
                         else {
@@ -159,13 +159,6 @@ Item {
                             mainQuizScreen.numberOfCorrectAnswers++
                             Activity.nextSubLevel(true)
                         }
-                    }
-
-                    function stopAnimations() {
-                        if(correctAnswerAnimation.running)
-                            correctAnswerAnimation.stop()
-                        if(incorrectAnswerAnimation.running)
-                            incorrectAnswerAnimation.stop()
                     }
                 }
             }
@@ -200,13 +193,13 @@ Item {
         }
 
         SequentialAnimation {
-            id: incorrectAnswerAnimation
+            id: closenessMeterIncorrectAnswerAnimation
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
         }
 
         SequentialAnimation {
-            id: correctAnswerAnimation
+            id: closenessMeterCorrectAnswerAnimation
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
@@ -217,6 +210,13 @@ Item {
         ParticleSystemStarLoader {
             id: particles
             clip: false
+        }
+
+        function stopAnimations() {
+            if(closenessMeterCorrectAnswerAnimation.running)
+                closenessMeterCorrectAnswerAnimation.stop()
+            if(closenessMeterIncorrectAnswerAnimation.running)
+                closenessMeterIncorrectAnswerAnimation.stop()
         }
     }
 

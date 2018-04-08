@@ -60,7 +60,6 @@ function initLevel() {
 }
 
 function nextSubLevel(isAssessmentMode) {
-    items.mainQuizScreen.optionListModel.clear()
     items.mainQuizScreen.score.currentSubLevel = currentSubLevel + 1
     var optionListShuffle = []
 
@@ -89,12 +88,15 @@ function nextSubLevel(isAssessmentMode) {
         }
     }
 
-    Core.shuffle(optionListShuffle)
+    if((currentSubLevel + 1) <= items.mainQuizScreen.score.numberOfSubLevels) {
+        items.mainQuizScreen.optionListModel.clear()
+        Core.shuffle(optionListShuffle)
 
-    for(var i=0; i<optionListShuffle.length; i++)
-        items.mainQuizScreen.optionListModel.append(optionListShuffle[i])
+        for(var i=0; i<optionListShuffle.length; i++)
+            items.mainQuizScreen.optionListModel.append(optionListShuffle[i])
 
-    currentSubLevel++
+        currentSubLevel++
+    }
 }
 
 function showSolarModel() {

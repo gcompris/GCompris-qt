@@ -127,6 +127,7 @@ ActivityBase {
             cellWidth: background.itemWidth
             cellHeight: cellWidth
             model: planetsModel
+
             delegate: PlanetInSolarModel {
                 planetImageSource: clipImg
                 planetName: bodyName
