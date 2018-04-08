@@ -33,14 +33,11 @@ Item {
 
     property alias score: score
     property alias optionListModel: optionListModel
-    property alias progressBar: progressBar
     property alias restartAssessmentMessage: restartAssessmentMessage
     property string planetRealImage
     property string question
-    property string closenessValueInMeter
+    property string closenessMeterValue
     property int numberOfCorrectAnswers: 0
-
-    onNumberOfCorrectAnswersChanged: progressBar.percentage = (numberOfCorrectAnswers * 100) / score.numberOfSubLevels
 
     Rectangle {
         id: questionArea
@@ -66,12 +63,12 @@ Item {
         }
     }
 
-    //model of options for a question
+    // Model of options for a question
     ListModel {
         id: optionListModel
     }
 
-    //This grid has image of the planet in it's first column/row (row in case of vertical screen) and the options on the 2nd column/row
+    // This grid has image of the planet in it's first column/row (row in case of vertical screen) and the options on the 2nd column/row
     Grid {
         id: imageAndOptionGrid
         columns: (background.horizontalLayout && !items.assessmentMode && items.bar.level != 2) ? 2 : 1
@@ -81,13 +78,14 @@ Item {
         anchors.right: parent.right
         anchors.margins: 10 * ApplicationInfo.ratio
 
-        //An item to hold image of the planet
+        // An item to hold image of the planet
         Item {
             width: background.horizontalLayout ? background.width * 0.40
                                                : background.width - imageAndOptionGrid.anchors.margins * 2
             height: background.horizontalLayout ? background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio
                                                 : (background.height - bar.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.37
-            visible: !items.assessmentMode && items.bar.level != 2
+
+            visible: !items.assessmentMode && (items.bar.level != 2)
 
             Image {
                 id: planetImageMain
@@ -98,16 +96,17 @@ Item {
             }
         }
 
-        //An item to hold the list view of options
+        // An item to hold the list view of options
         Item {
             width: ( items.assessmentMode || items.bar.level == 2 ) ? mainQuizScreen.width
                                                                     : background.horizontalLayout ? background.width * 0.55
                                                                                                   : background.width - imageAndOptionGrid.anchors.margins * 2
-            height: background.horizontalLayout ? background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
+            height: background.horizontalLayout ? itemHeightHorizontal
                                                 : itemHeightVertical
 
-            property real itemHeightVertical: items.bar.level != 2 && !items.assessmentMode ? (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.39
-                                                                                            : (background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio) * 0.8
+            readonly property real itemHeightHorizontal: background.height - bar.height - closenessMeter.height - questionArea.height - 10 * ApplicationInfo.ratio
+            readonly property real itemHeightVertical: (items.bar.level != 2 && !items.assessmentMode) ? itemHeightHorizontal * 0.39
+                                                                                                       : itemHeightHorizontal * 0.8
 
             ListView {
                 id: optionListView
@@ -123,63 +122,50 @@ Item {
                 interactive: false
                 model: optionListModel
 
-                property int buttonHeight: (height - 3 * spacing) / 4
+                readonly property real buttonHeight: (height - 3 * spacing) / 4
 
                 add: Transition {
                     NumberAnimation { properties: "y"; from: parent.y; duration: 500 }
                 }
 
-                delegate: Item {
-                    id: optionListViewDelegate
-                    width: optionListView.width
+                delegate: AnswerButton {
+                    id: optionButton
+                    width: parent.width
                     height: optionListView.buttonHeight
+                    textLabel: optionValue
                     anchors.right: parent.right
                     anchors.left: parent.left
 
-                    property int closenessValue: closeness
-
-                    AnswerButton {
-                        id: optionRectangle
-                        width: parent.width
-                        height: optionListView.buttonHeight
-                        textLabel: optionValue
-                        anchors.right: parent.right
-
-                        isCorrectAnswer: closenessValue === 100
-                        onIncorrectlyPressed: {
-                            if(!items.assessmentMode) {
-                                if(correctAnswerAnim.running)
-                                    correctAnswerAnim.stop()
-                                if(incorrectAnswerAnim.running)
-                                    incorrectAnswerAnim.stop()
-                                incorrectAnswerAnim.start()
-                                mainQuizScreen.closenessValueInMeter = closenessValue
-                            }
-                            else {
-                                Activity.appendAndAddQuestion()
-                                mainQuizScreen.numberOfCorrectAnswers++
-                                mainQuizScreen.numberOfCorrectAnswers--
-                            }
+                    isCorrectAnswer: closeness === 100
+                    onIncorrectlyPressed: {
+                        if(!items.assessmentMode) {
+                            optionButton.stopAnimations()
+                            incorrectAnswerAnimation.start()
+                            mainQuizScreen.closenessMeterValue = closeness
                         }
-                        onCorrectlyPressed: {
-                            if(!items.assessmentMode) {
-                                if(correctAnswerAnim.running)
-                                    correctAnswerAnim.stop()
-                                if(incorrectAnswerAnim.running)
-                                    incorrectAnswerAnim.stop()
-                                particles.burst(30)
-                                correctAnswerAnim.start()
-                                mainQuizScreen.closenessValueInMeter = closenessValue
-                            }
-                            else if(items.assessmentMode) {
-                                Activity.assessmentModeQuestions.shift()
-                                mainQuizScreen.numberOfCorrectAnswers++
-                                Activity.nextSubLevel(true)
-                            }
-                            else {
-                                Activity.nextSubLevel(false)
-                            }
+                        else {
+                            Activity.appendAndAddQuestion()
                         }
+                    }
+                    onCorrectlyPressed: {
+                        if(!items.assessmentMode) {
+                            optionButton.stopAnimations()
+                            particles.burst(30)
+                            correctAnswerAnimation.start()
+                            mainQuizScreen.closenessMeterValue = closeness
+                        }
+                        else {
+                            Activity.assessmentModeQuestions.shift()
+                            mainQuizScreen.numberOfCorrectAnswers++
+                            Activity.nextSubLevel(true)
+                        }
+                    }
+
+                    function stopAnimations() {
+                        if(correctAnswerAnimation.running)
+                            correctAnswerAnimation.stop()
+                        if(incorrectAnswerAnimation.running)
+                            incorrectAnswerAnimation.stop()
                     }
                 }
             }
@@ -209,18 +195,18 @@ Item {
                 fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                text: qsTr("Closeness: %1%").arg(closenessValueInMeter)
+                text: qsTr("Closeness: %1%").arg(closenessMeterValue)
             }
         }
 
         SequentialAnimation {
-            id: incorrectAnswerAnim
+            id: incorrectAnswerAnimation
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
         }
 
         SequentialAnimation {
-            id: correctAnswerAnim
+            id: correctAnswerAnimation
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
@@ -234,25 +220,20 @@ Item {
         }
     }
 
-    Rectangle {
+    ProgressBar {
         id: progressBar
         height: bar.height * 0.35
         width: parent.width * 0.35
 
-        property string message: "%1%".arg(value)
-        property real percentage
-        property real value: Math.round( percentage * 10 ) / 10
+        readonly property real percentage: (mainQuizScreen.numberOfCorrectAnswers / score.numberOfSubLevels) * 100
+        readonly property string message: "%1%".arg(value)
+
+        value: Math.round( percentage * 10 ) / 10
+        maximumValue: 100
 
         visible: items.assessmentMode
         y: parent.height - bar.height - height - 10 * ApplicationInfo.ratio
         x: parent.width - width * 1.1
-        color: "#DCDCDC"
-        Rectangle {
-            id: progressIndicator
-            height: parent.height
-            width: parent.width * progressBar.value / 100
-            color: "#3399FF"
-        }
 
         GCText {
             id: progressbarText
@@ -260,7 +241,7 @@ Item {
             fontSize: mediumSize
             font.bold: true
             color: "black"
-            text: progressBar.message
+            text: parent.message
             z: 2
         }
     }
@@ -273,7 +254,7 @@ Item {
         anchors.margins: 10 * ApplicationInfo.ratio
         anchors.horizontalCenter: parent.horizontalCenter
         radius: 4 * ApplicationInfo.ratio
-        visible: false
+        visible: items.assessmentMode && (score.currentSubLevel > score.numberOfSubLevels)
         z: 4
         GCText {
             anchors.fill: parent
@@ -281,10 +262,10 @@ Item {
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
             fontSizeMode: mediumSize
-            text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2").arg(items.mainQuizScreen.progressBar.value).arg(progressBar.value <= 90 ? "You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System." : "Great! Restart again to test your knowledge on more questions.")
+            text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2").arg(progressBar.value).arg(progressBar.value <= 90 ? "You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System." : "Great! You can replay the assessment to test your knowledge on more questions.")
         }
 
-        //To prevent clicking on options under it
+        // To prevent clicking on options under it
         MouseArea {
             anchors.fill: parent
         }
@@ -294,7 +275,7 @@ Item {
         NumberAnimation {
             id: scaleAnimation
             target: restartAssessmentMessage
-            properties: "scale, opacity"
+            properties: "scale"
             from: 0
             to: 1
             duration: 1500

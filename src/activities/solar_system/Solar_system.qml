@@ -54,7 +54,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias containerModel: containerModel
+            property alias planetsModel: planetsModel
             property alias mainQuizScreen: mainQuizScreen
             property alias dialogActivityConfig: dialogActivityConfig
             property bool assessmentMode: false
@@ -107,12 +107,12 @@ ActivityBase {
         }
 
         ListModel {
-            id: containerModel
+            id: planetsModel
         }
 
-        property int itemWidth: horizontalLayout ? background.width / 9 : (background.height - bar.height) / 9
+        readonly property int itemWidth: horizontalLayout ? background.width / 9 : (background.height - bar.height) / 9
 
-        //Arrangement of all the planets in the solar system
+        // Arrangement of all the planets in the solar system
         GridView {
             id: planetView
             y: horizontalLayout ? (parent.height - bar.height) / 2 - cellHeight/2 : 0
@@ -126,7 +126,7 @@ ActivityBase {
             visible: items.solarSystemVisible
             cellWidth: background.itemWidth
             cellHeight: cellWidth
-            model: containerModel
+            model: planetsModel
             delegate: PlanetInSolarModel {
                 planetImageSource: clipImg
                 planetName: bodyName
@@ -198,7 +198,7 @@ ActivityBase {
             }
         }
 
-        //Hint dialog while playing the quiz
+        // Hint dialog while playing the quiz
         DialogBackground {
             id: hintDialog
             visible: false

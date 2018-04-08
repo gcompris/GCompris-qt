@@ -30,7 +30,7 @@ Item {
     property string planetImageSource
     property string planetName
 
-    //name of the planet which hovers over the top of each planet
+    // Name of the planet which hovers over the top of each planet
     GCText {
         id: planetNameText
         anchors.horizontalCenter: background.horizontalLayout ? parent.horizontalCenter : undefined
@@ -85,10 +85,10 @@ Item {
         }
     }
 
-    //this animation is not run on vertical screens because on verticals, the amplitude of oscillation of text is too much for the kid to be distracted and the planet's too small to be negligible.
-    //Further the planet image is bounded by its anchors which is not letting it to oscillate. So, it was better to keep the animation restricted to horizontal screens for now.
+    // This animation is not run on vertical screens because on verticals, the amplitude of oscillation of text is too much for the kid to be distracted and the planet's too small to be negligible.
+    // Further the planet image is bounded by its anchors which is not letting it to oscillate. So, it was better to keep the animation restricted to horizontal screens for now.
     SequentialAnimation {
-        id: floatingAnim
+        id: floatingAnimation
         loops: Animation.Infinite
         running: background.horizontalLayout ? true : false
         NumberAnimation {
