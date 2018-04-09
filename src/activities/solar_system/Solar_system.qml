@@ -1,6 +1,6 @@
 /* GCompris - Solar_system.qml
  *
- * Copyright (C) 2017 Aman Kumar Gupta <gupta2140@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
  *    Aman Kumar Gupta <gupta2140@gmail.com>
