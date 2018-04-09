@@ -54,6 +54,7 @@ ActivityBase {
             property var answer
             property alias questionInterval: questionPlayer.interval
             property int numberOfLevel: 10
+            property bool running: false
         }
 
         onStart: {
@@ -61,11 +62,13 @@ ActivityBase {
             score.numberOfSubLevels = 5
             score.currentSubLevel = 1
             initLevel()
+            items.running = true
         }
 
         onStop: {
             knock.stop()
             questionPlayer.stop()
+            items.running = false
         }
 
         Image {
@@ -127,8 +130,8 @@ ActivityBase {
         }
 
         function playNote(index) {
-            activity.audioEffects.append(ApplicationInfo.getAudioFilePath(items.url +
-                                       'xylofon_son' + (index + 1) + '.$CA'))
+            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url +
+                                       'xylofon_son' + (index + 1) + ".wav"))
         }
 
         Timer {
@@ -231,11 +234,13 @@ ActivityBase {
         }
 
         function repeat() {
-            questionPlayer.stop()
-            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'knock.ogg'))
-            items.questionToPlay = items.question.slice()
-            items.answer = []
-            knock.start()
+            if(items.running == true) {
+                questionPlayer.stop()
+                activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'knock.wav'))
+                items.questionToPlay = items.question.slice()
+                items.answer = []
+                knock.start()
+            }
         }
 
         function checkAnswer() {
