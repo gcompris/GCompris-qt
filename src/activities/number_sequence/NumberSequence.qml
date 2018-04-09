@@ -233,7 +233,6 @@ ActivityBase {
 
             onPressed: {
                 checkPoints(touchPoints)
-                items.audioEffects.play('qrc:/gcompris/src/activities/drawnletters/resource/buttonclick.wav')
             }
             onTouchUpdated: {
                 checkPoints(touchPoints)
