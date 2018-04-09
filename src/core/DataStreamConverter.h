@@ -53,12 +53,14 @@ inline QDataStream& operator>>(QDataStream &dataStream, Login &login)
 inline QDataStream& operator<<(QDataStream &dataStream, const AvailableLogins &logins)
 {
     dataStream << logins._logins;
+    dataStream << logins._passwords;
     return dataStream;
 };
 
 inline QDataStream& operator>>(QDataStream &dataStream, AvailableLogins &logins)
 {
     dataStream >> logins._logins;
+    dataStream >> logins._passwords;
     return dataStream;
 };
 

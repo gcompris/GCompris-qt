@@ -48,6 +48,7 @@ struct Login {
 
 struct AvailableLogins {
     QStringList _logins;
+    QStringList _passwords;
 };
 
 struct DisplayedActivities {

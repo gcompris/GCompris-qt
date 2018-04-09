@@ -45,7 +45,7 @@ signals:
     void portChanged();
     void connectionStatus();
 
-    void loginListReceived(const QStringList& logins);
+    void loginListReceived(const QStringList& logins, const QStringList& passwords);
     void requestConnection(const QString& serverName);
 
 private:

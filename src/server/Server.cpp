@@ -178,6 +178,7 @@ void Server::sendLoginList()
     AvailableLogins act;
     for(const QObject *oC: MessageHandler::getInstance()->returnUsers()) {
             act._logins << ((const UserData*)oC)->getName();
+            act._passwords << ((const UserData*)oC)->getPassword();
     }
 
 

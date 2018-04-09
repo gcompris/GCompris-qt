@@ -303,10 +303,12 @@ void ClientNetworkMessages::readFromSocket()
     case MessageIdentifier::LOGINS_LIST:
         {
             AvailableLogins logins;
-            in >> logins;
+            in >> logins._logins;
+            in >> logins._passwords;
             qDebug() << "logins received: " << logins._logins;
+            qDebug() << "passwords : " << logins._passwords;
             // todo
-            emit loginListReceived(logins._logins);
+            emit loginListReceived(logins._logins, logins._passwords);
             break;
         }
     default:
