@@ -133,7 +133,7 @@ ActivityBase {
                 onStateChanged: {
                     if( water.state == "undef")
                         return
-                    activity.audioEffects.append(activity.url + 'water_fill.wav')
+                    activity.audioEffects.play(activity.url + 'water_fill.wav')
                     if( water.state == 'up' && boat.state == 'middleDown')
                         boat.state = 'middleUp'
                     else if( water.state == 'down' && boat.state == 'middleUp')
