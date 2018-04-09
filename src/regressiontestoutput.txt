@@ -12,7 +12,7 @@ FilePath: ../src/activities/testactivity/ActivityInfo.qml
 	 WARNING     difficulty: 1 may not be updated.
 	 ERROR       author: "Your Name &lt;yy@zz.org&gt;" may not be updated.
 	 WARNING     "Your Name &lt;yy@zz.org&gt;" qsTr may not be used
-	 ERROR       demo: true may not be updated.
+	 ERROR       demo: false may not be updated.
 	 WARNING     "Testactivity activity" qsTr may not be used
 	 ERROR       description: "" may not be updated.
 	 WARNING     "put here in comment the text for the intro voice" qsTr may not be used

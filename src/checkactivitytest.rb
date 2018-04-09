@@ -7,9 +7,7 @@ class TestCheckActivity < Test::Unit::TestCase
     @@expecOutputFile = "regressiontestoutput.txt"
 
     def change_stdout(file)
-        if $stdout == STDOUT then $stdout = file
-        else $stdout = STDOUT
-        end
+        $stdout = file
     end
 
     def test_check_files
@@ -20,7 +18,7 @@ class TestCheckActivity < Test::Unit::TestCase
         change_stdout(@testFile)
         ActivityCheck.check_js_files
         ActivityCheck.check_qml_files
-        change_stdout(@testFile)
+        change_stdout(STDOUT)
         @testFile.close
 
         # generating corresponding arrays

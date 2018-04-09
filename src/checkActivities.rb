@@ -4,10 +4,10 @@ module ActivityCheck
         @activityDirName = activityDirName
 
         # create js file name array
-        @jsFilesArray = Dir.glob("../src/activities/" + @activityDirName + "/*.js")
+        @jsFilesArray = Dir.glob("../src/activities/" + @activityDirName + "/**/*.js")
 
         # create qml file name array
-        @qmlFilesArray = Dir.glob("../src/activities/" + @activityDirName + "/*.qml")
+        @qmlFilesArray = Dir.glob("../src/activities/" + @activityDirName + "/**/*.qml")
 
     end
 
@@ -43,7 +43,7 @@ module ActivityCheck
     # checks copyrights updated
     def self.activityInfo_QmlFile(lineStr, directoryName)
         valuesToTestArray = ["author: \"Your Name &lt;yy@zz.org&gt;\"", "name: \"test/Test.qml\"", "difficulty: 1", "icon: \"test/test.svg\"",
-                             "demo: true", "title: \"Test activity\"", "description: \"\"", "goal: \"\"", "prerequisite: \"\"",
+                             "demo: false", "title: \"Test activity\"", "description: \"\"", "goal: \"\"", "prerequisite: \"\"",
                              "manual: \"\"", "credit: \"\"", "section: \"\""]
 
         valuesToTestArray.each do |valueToTestStr|
