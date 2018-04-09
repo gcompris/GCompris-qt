@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2017 Aman Kumar Gupta <gupta2140@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
  *    Aman Kumar Gupta <gupta2140@gmail.com>
@@ -39,5 +39,5 @@ ActivityInfo {
   manual: qsTr("Click on a planet or the Sun to reveal questions. Each question contains 4 options. One of those is 100% correct. Try to answer the questions till you get a 100% closeness in the closeness meter.")
   credit: ""
   section: "fun"
-  createdInVersion: 9000
+  createdInVersion: 9500
 }
