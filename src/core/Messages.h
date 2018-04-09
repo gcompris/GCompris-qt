@@ -44,6 +44,7 @@ struct Identifier {
 
 struct Login {
     QString _name;
+    QString _password;
 };
 
 struct AvailableLogins {

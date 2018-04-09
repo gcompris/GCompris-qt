@@ -141,7 +141,7 @@ void ClientNetworkMessages::connected()
     sendStoredData();
 }
 
-void ClientNetworkMessages::sendLoginMessage(const QString &newLogin)
+void ClientNetworkMessages::sendLoginMessage(const QString &newLogin, const QString& password)
 {
     // store the username in config
     ApplicationSettings::getInstance()->setUserName(newLogin);
@@ -149,7 +149,7 @@ void ClientNetworkMessages::sendLoginMessage(const QString &newLogin)
     // Send Login message
     QByteArray bytes;
     QDataStream out(&bytes, QIODevice::WriteOnly);
-    Login login { newLogin };
+    Login login { newLogin, password };
     out << MessageIdentifier::LOGIN << login;
     sendMessage(bytes);
 }

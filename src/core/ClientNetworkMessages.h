@@ -71,7 +71,7 @@ public:
     virtual ~ClientNetworkMessages();
     Q_INVOKABLE void connectToServer(const QString& serverName);
     Q_INVOKABLE void disconnectFromServer();
-    Q_INVOKABLE void sendLoginMessage(const QString &newLogin);
+    Q_INVOKABLE void sendLoginMessage(const QString &newLogin, const QString& password);
     QStringList serversAvailable;
 
     QString host() const{

@@ -358,6 +358,7 @@ Window {
 
         onLoginListReceived: {
             chooseLogin.model = logins;
+            choosePassword.model = passwords;
             chooseLogin.visible = true
             chooseLogin.start()
         }
@@ -374,12 +375,16 @@ Window {
 
         button1Text: qsTr("OK")
         button2Text: qsTr("Cancel")
-        onButton1Hit: ClientNetworkMessages.sendLoginMessage(chosenLogin)
+        onButton1Hit: {
+
+            choosePassword.visible = true
+            choosePassword.start()
+//             ClientNetworkMessages.sendLoginMessage(chosenLogin)
+        }
         focus: true
 
         property string chosenLogin
         property var model
-
         content: ListView {
             id: view
             width: chooseLogin.width
@@ -406,6 +411,55 @@ Window {
         ExclusiveGroup {
             id: exclusiveGroupItem
             onCurrentChanged: { if(current) chooseLogin.chosenLogin = current.text; }
+        }
+    }
+    GCInputDialog {
+        id: choosePassword
+        visible: false
+        active: visible
+        anchors.fill: parent
+
+        message: qsTr("Select your password")
+        onClose: choosePassword.visible = false;
+
+
+        button1Text: qsTr("OK")
+        button2Text: qsTr("Cancel")
+        onButton1Hit: {
+            console.debug("selected password: ", chosenPassword)
+            console.debug("selected user name: ", chooseLogin.chosenLogin)
+            ClientNetworkMessages.sendLoginMessage(chooseLogin.chosenLogin, chosenPassword)
+        }
+        focus: true
+
+        property string chosenPassword
+        property var model
+        content: ListView {
+            id: view
+            width: choosePassword.width
+            height: 100 * ApplicationInfo.ratio
+            contentHeight: 60 * ApplicationInfo.ratio * model.count
+            interactive: true
+            clip: true
+            model: choosePassword.model
+            delegate: GCDialogCheckBox {
+                id: userBox
+                text: modelData
+                checked: false
+                exclusiveGroup: exclusiveGroupItem_2
+                Component.onCompleted: {
+                    if (exclusiveGroup)
+                        exclusiveGroup.bindCheckable(userBox)
+                }
+                Component.onDestruction: {
+                    if (exclusiveGroup)
+                        exclusiveGroup.unbindCheckable(userBox)
+                }
+            }
+        }
+        ExclusiveGroup {
+            id: exclusiveGroupItem_2
+            onCurrentChanged: { if(current) choosePassword.chosenPassword = current.text; }
         }
     }
     /// @endcond
