@@ -62,7 +62,7 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property Item  main: activity.main
+            property Item main: activity.main
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -76,6 +76,7 @@ ActivityBase {
             property alias locale: background.locale
             property string answer
             property alias textinput: textinput
+            property bool isGoodAnswer: false
         }
 
         onStart: {
@@ -106,7 +107,7 @@ ActivityBase {
                     else if(ApplicationSettings.fontCapitalization === Font.AllLowercase)
                         typedText = text.toLocaleLowerCase()
 
-                    if(typedText === answerText) {
+                    if(!items.isGoodAnswer && (typedText === answerText)) {
                         questionAnim.start()
                         Activity.showAnswer()
                     }
@@ -136,7 +137,11 @@ ActivityBase {
                     textLabel: modelData
                     isCorrectAnswer: modelData === items.answer
                     onCorrectlyPressed: questionAnim.start()
-                    onPressed: modelData == items.answer ? Activity.showAnswer() : ''
+                    onPressed: {
+                        if(!items.isGoodAnswer) {
+                            modelData == items.answer ? Activity.showAnswer() : ''
+                        }
+                    }
                 }
             }
         }
