@@ -95,7 +95,7 @@ function leftShiftPressed() {
 
     if(items.rightPressed) {
         items.leftHand.animate(timerinc)
-        items.background.playSound("brick")
+        items.background.playSound("smudge")
     }
 }
 
@@ -106,7 +106,7 @@ function rightShiftPressed() {
     }
     if(items.leftPressed) {
         items.rightHand.animate(timerinc)
-        items.background.playSound("brick")
+        items.background.playSound("smudge")
     }
 }
 
