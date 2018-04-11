@@ -85,7 +85,7 @@ Window {
 
         Component.onCompleted: {
             if(ApplicationSettings.isAudioEffectsEnabled)
-                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+                audioVoices.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
 
             if (DownloadManager.areVoicesRegistered())
                 delayedWelcomeTimer.playWelcome();
