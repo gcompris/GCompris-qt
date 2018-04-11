@@ -286,7 +286,7 @@ ActivityBase {
                         }
                     }
                 }
-                // variable for storing the index of wagons to be swaped via key navigations.
+                // variable for storing the index of wagons to be swapped via key navigations.
                 property int selectedSwapIndex: -1
 
                 Keys.enabled: true
