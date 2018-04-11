@@ -55,11 +55,15 @@ Image {
         NumberAnimation { target: ball; property: "rotation";
                           to: 360; duration: 1000
                           easing.type: Easing.InOutQuad }
+        onStarted: {
+            items.background.playSound("brick")
+        }
 
         onStopped: {
             // We are done with the ballon move
             if(Activity.gameWon) {
                 // This is a win
+                items.background.playSound("completetask")
                 bonus.good("tux")
             }
             else {
