@@ -121,6 +121,7 @@ paintings
 penalty
 photo_hunter
 planegame
+question_and_answer
 railroad
 readingh
 readingv
