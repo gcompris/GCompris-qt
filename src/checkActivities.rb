@@ -21,6 +21,21 @@ module ActivityCheck
         puts "\t WARNING     #{wrn}"
     end
 
+    # checks import version
+    def self.check_import_version(lineStr)
+        # add modules and versions in hash
+        moduleVersionHash = { "QtQuick" => "2.6", "GCompris" => "1.0" }
+
+        matchStr = /import (?<module>(\w+)) (?<ver>(\d+.\d+))/.match(lineStr)
+        if matchStr
+            moduleName = matchStr["module"]
+            correctModuleVersion = moduleVersionHash[moduleName]
+            if matchStr["ver"] != correctModuleVersion
+                print_error "#{moduleName} version must be #{correctModuleVersion}"
+            end
+        end
+    end
+
     # checks credit updation
     def self.check_credits_update(lineStr)
         if lineStr.include?("THE GTK VERSION AUTHOR")
@@ -71,6 +86,8 @@ module ActivityCheck
 
                 check_credits_update line
 
+                check_import_version line
+
             end
         end
     end
@@ -96,6 +113,8 @@ module ActivityCheck
                 check_credits_update line
 
                 qsTr_use line
+
+                check_import_version line
 
             end
         end
