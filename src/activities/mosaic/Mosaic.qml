@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 import "mosaic.js" as Activity
@@ -38,6 +39,9 @@ ActivityBase {
         anchors.fill: parent
         signal start
         signal stop
+
+        property bool keyboardMode: false
+        property var areaWithKeyboardFocus: selector
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -61,6 +65,48 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Keys.onLeftPressed: {
+            keyboardMode = true
+            areaWithKeyboardFocus.moveCurrentIndexLeft()
+        }
+
+        Keys.onRightPressed: {
+            keyboardMode = true
+            areaWithKeyboardFocus.moveCurrentIndexRight()
+        }
+
+        Keys.onUpPressed: {
+            keyboardMode = true
+            areaWithKeyboardFocus.moveCurrentIndexUp()
+        }
+
+        Keys.onDownPressed: {
+            keyboardMode = true
+            areaWithKeyboardFocus.moveCurrentIndexDown()
+        }
+
+        Keys.onEnterPressed: {
+            selectCell()
+        }
+
+        Keys.onSpacePressed: {
+            selectCell()
+        }
+
+        Keys.onReturnPressed: {
+            selectCell()
+        }
+
+        Keys.onTabPressed: {
+            keyboardMode = true
+            areaWithKeyboardFocus.changeAreaWithKeyboardFocus()
+        }
+
+        function selectCell() {
+            keyboardMode = true
+            areaWithKeyboardFocus.selectCurrentCell(areaWithKeyboardFocus.currentItem)
+        }
 
         Column {
             id: column
@@ -101,22 +147,23 @@ ActivityBase {
                     border.width: 2
                     radius: 5
 
-                    Grid {
-                        columns: column.nbColumns
-                        anchors.topMargin: 4
-                        anchors.bottomMargin: 4
-                        anchors.leftMargin: 10
-                        anchors.rightMargin: 10
-                        anchors.fill: parent
-                        spacing: 10
-                        Repeater {
-                            id: question
-                            Image {
-                                source: Activity.url + modelData
-                                sourceSize.height:  column.itemHeight
-                                width: column.itemWidth
-                                height: column.itemHeight
-                            }
+                    GridView {
+                        id: question
+                        width: (column.nbColumns * column.itemWidth) + (12.5 * (column.nbColumns - 1))
+                        height: parent.height
+                        x: 2 * ApplicationInfo.ratio
+                        y: 2 * ApplicationInfo.ratio
+                        cellHeight: cellWidth
+                        cellWidth: width / column.nbColumns
+                        interactive: false
+                        keyNavigationWraps: true
+                        delegate: Image {
+                            source: Activity.url + modelData
+                            fillMode: Image.PreserveAspectFit
+                            width: question.cellWidth - 5 * ApplicationInfo.ratio
+                            height: width
+                            sourceSize.width: width
+                            sourceSize.height: height
                         }
                     }
                 }
@@ -130,30 +177,57 @@ ActivityBase {
                     border.width: 2
                     radius: 5
 
-                    Grid {
-                        columns: column.nbColumns
-                        anchors.topMargin: 4
-                        anchors.bottomMargin: 4
-                        anchors.leftMargin: 10
-                        anchors.rightMargin: 10
-                        anchors.fill: parent
-                        spacing: 10
-                        Repeater {
-                            id: answer
+                    GridView {
+                        id: answer
+                        width: (column.nbColumns * column.itemWidth) + (12.5 * (column.nbColumns - 1))
+                        height: parent.height
+                        x: 2 * ApplicationInfo.ratio
+                        cellHeight: cellWidth
+                        cellWidth: width / column.nbColumns
+                        interactive: false
+                        keyNavigationWraps: true
+                        highlightFollowsCurrentItem: true
+                        highlight: Rectangle {
+                            color: "red"
+                            border.width: 3
+                            border.color: "black"
+                            opacity: 0.6
+                            visible: background.keyboardMode && (background.areaWithKeyboardFocus === answer)
+                            Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                            Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                        }
+
+                        // If the image was directly used as a delegate (without containing it in the item), the highlight element would have been be hard to notice as it would get completely hidden by the image due to the same sizes.
+                        delegate: Item {
+                            id: cellItem
+                            width: answer.cellWidth
+                            height: answer.cellHeight
+
+                            readonly property int cellIndex: index
+
                             Image {
                                 id: imageAnswerId
                                 source: Activity.url + modelData
-                                sourceSize.height:  column.itemHeight
-                                width: column.itemWidth
-                                height: column.itemHeight
+                                fillMode: Image.PreserveAspectFit
+                                width: answer.cellWidth - 5 * ApplicationInfo.ratio
+                                height: width
+                                sourceSize.width: width
+                                sourceSize.height: height
+                                anchors.centerIn: parent
 
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: {
-                                        Activity.answerSelected(index)
-                                    }
+                                    onClicked: answer.selectCurrentCell(cellItem)
                                 }
                             }
+                        }
+
+                        function selectCurrentCell(selectedCell) {
+                            Activity.answerSelected(selectedCell.cellIndex)
+                        }
+
+                        function changeAreaWithKeyboardFocus() {
+                            areaWithKeyboardFocus = selector
                         }
                     }
                 }
@@ -167,102 +241,118 @@ ActivityBase {
                 border.color: "black"
                 border.width: 2
                 radius: 5
+                GridView {
+                    id: selector
+                    width: (column.nbSelectorColumns * column.itemWidth) + (12.5 * (column.nbSelectorColumns - 1))
+                    height: parent.height
+                    x: 2 * ApplicationInfo.ratio
+                    y: 2 * ApplicationInfo.ratio
+                    cellHeight: cellWidth
+                    cellWidth: width / column.nbSelectorColumns
+                    interactive: false
+                    keyNavigationWraps: true
+                    highlightFollowsCurrentItem: true
+                    highlight: Rectangle {
+                        color: "red"
+                        border.width: 3
+                        border.color: "black"
+                        opacity: 0.6
+                        visible: background.keyboardMode && (background.areaWithKeyboardFocus === selector)
+                        Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                        Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                    }
+                    delegate: Image {
+                        id: imageId
+                        source: Activity.url + modelData
+                        fillMode: Image.PreserveAspectFit
+                        width: selector.cellWidth - 5 * ApplicationInfo.ratio
+                        height: width
+                        sourceSize.width: width
+                        sourceSize.height: height
+                        z: iAmSelected ? 10 : 1
 
-                Grid {
-                    columns: column.nbSelectorColumns
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
-                    anchors.fill: parent
-                    spacing: 10 + 20 / 12.0
-                    Repeater {
-                        id: selector
-                        Image {
-                            id: imageId
-                            source: Activity.url + modelData
-                            sourceSize.height:  column.itemHeight
-                            width: column.itemWidth
-                            height: column.itemHeight
-                            z: iAmSelected ? 10 : 1
+                        readonly property bool iAmSelected: items.selectedItem === modelData
+                        readonly property string imageName: modelData
 
-                            property bool iAmSelected: items.selectedItem === modelData
-                            property string basename: modelData
-
-                            states: [
-                                State {
-                                    name: "notclicked"
-                                    when: !imageId.iAmSelected && !mouseArea.containsMouse
-                                    PropertyChanges {
-                                        target: imageId
-                                        scale: 0.8
-                                    }
-                                },
-                                State {
-                                    name: "clicked"
-                                    when: mouseArea.pressed
-                                    PropertyChanges {
-                                        target: imageId
-                                        scale: 0.7
-                                    }
-                                },
-                                State {
-                                    name: "hover"
-                                    when: mouseArea.containsMouse
-                                    PropertyChanges {
-                                        target: imageId
-                                        scale: 1.1
-                                    }
-                                },
-                                State {
-                                    name: "selected"
-                                    when: imageId.iAmSelected
-                                    PropertyChanges {
-                                        target: imageId
-                                        scale: 1
-                                    }
-                                }
-                            ]
-
-                            SequentialAnimation {
-                                id: anim
-                                running: imageId.iAmSelected
-                                loops: Animation.Infinite
-                                alwaysRunToEnd: true
-                                NumberAnimation {
+                        states: [
+                            State {
+                                name: "notclicked"
+                                when: !imageId.iAmSelected && !mouseArea.containsMouse
+                                PropertyChanges {
                                     target: imageId
-                                    property: "rotation"
-                                    from: 0; to: 10
-                                    duration: 200
-                                    easing.type: Easing.OutQuad
+                                    scale: 0.8
                                 }
-                                NumberAnimation {
+                            },
+                            State {
+                                name: "clicked"
+                                when: mouseArea.pressed
+                                PropertyChanges {
                                     target: imageId
-                                    property: "rotation"
-                                    from: 10; to: -10
-                                    duration: 400
-                                    easing.type: Easing.InOutQuad
+                                    scale: 0.7
                                 }
-                                NumberAnimation {
+                            },
+                            State {
+                                name: "hover"
+                                when: mouseArea.containsMouse
+                                PropertyChanges {
                                     target: imageId
-                                    property: "rotation"
-                                    from: -10; to: 0
-                                    duration: 200
-                                    easing.type: Easing.InQuad
+                                    scale: 1.1
+                                }
+                            },
+                            State {
+                                name: "selected"
+                                when: imageId.iAmSelected
+                                PropertyChanges {
+                                    target: imageId
+                                    scale: 1
                                 }
                             }
+                        ]
 
-                            Behavior on scale { NumberAnimation { duration: 70 } }
-                            MouseArea {
-                                id: mouseArea
-                                anchors.fill: imageId
-                                hoverEnabled: true
-                                onClicked: {
-                                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
-                                    items.selectedItem = modelData
-                                }
+                        SequentialAnimation {
+                            id: anim
+                            running: imageId.iAmSelected
+                            loops: Animation.Infinite
+                            alwaysRunToEnd: true
+                            NumberAnimation {
+                                target: imageId
+                                property: "rotation"
+                                from: 0; to: 10
+                                duration: 200
+                                easing.type: Easing.OutQuad
+                            }
+                            NumberAnimation {
+                                target: imageId
+                                property: "rotation"
+                                from: 10; to: -10
+                                duration: 400
+                                easing.type: Easing.InOutQuad
+                            }
+                            NumberAnimation {
+                                target: imageId
+                                property: "rotation"
+                                from: -10; to: 0
+                                duration: 200
+                                easing.type: Easing.InQuad
                             }
                         }
+
+                        Behavior on scale { NumberAnimation { duration: 70 } }
+                        MouseArea {
+                            id: mouseArea
+                            anchors.fill: imageId
+                            hoverEnabled: true
+                            onClicked: selector.selectCurrentCell(parent)
+                        }
+                    }
+
+                    function selectCurrentCell(selectedCell) {
+                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                        items.selectedItem = selectedCell.imageName
+                    }
+
+                    function changeAreaWithKeyboardFocus() {
+                        areaWithKeyboardFocus = answer
                     }
                 }
             }
@@ -289,5 +379,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
 }
