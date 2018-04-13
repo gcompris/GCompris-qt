@@ -70,12 +70,18 @@ Item {
     property color wrongStateColor: "#f66"
 
     /**
+     * type: bool
+     *
+     * Set the external conditions to this variable during which the clicks on button are to be blocked.
+     */
+    property bool blockAllButtonClicks: false
+
+    /**
      * type:bool
      *
-     * Set to true when to avoid misclicks or when correct/wrong answer
-     * animation are running.
+     * This variable holds the overall events during which the clicks on button will be blocked.
      */
-    property bool blockClicks: false
+    readonly property bool blockClicks: correctAnswerAnimation.running || wrongAnswerAnimation.running || blockAllButtonClicks
 
     /**
      * type:int
@@ -121,16 +127,14 @@ Item {
      */
     signal pressed
     onPressed: {
-        if (!blockClicks) {
-            if (isCorrectAnswer) {
-                if(audioEffects)
-                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
-                correctAnswerAnimation.start();
-            } else {
-                if(audioEffects)
-                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
-                wrongAnswerAnimation.start();
-            }
+        if (isCorrectAnswer) {
+            if(audioEffects)
+                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+            correctAnswerAnimation.start();
+        } else {
+            if(audioEffects)
+                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+            wrongAnswerAnimation.start();
         }
     }
 
@@ -167,6 +171,7 @@ Item {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
+        enabled: !blockClicks
         onPressed: button.pressed()
     }
 
@@ -176,7 +181,6 @@ Item {
             script: {
                 if (typeof(feedback) === "object")
                     feedback.playCorrectSound();
-                blockClicks = true;
                 if (typeof(particles) === "object")
                     particles.burst(40);
             }
@@ -197,7 +201,6 @@ Item {
         }
         ScriptAction {
             script: {
-                blockClicks = false;
                 correctlyPressed();
             }
         }
