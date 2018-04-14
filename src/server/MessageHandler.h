@@ -28,6 +28,8 @@
 #include <QObject>
 #include <QtQml>
 
+class Authentication;
+
 /**
  * @class MessageHandler
  * @short Handles all the messages received by the socket
@@ -123,6 +125,8 @@ private:
     QList<QObject*> m_groups;
     // UserData*
     QList<QObject*> m_users;
+
+    Authentication* m_auth;
 };
 
 #endif

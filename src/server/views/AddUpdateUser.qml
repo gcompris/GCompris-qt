@@ -159,7 +159,7 @@ Rectangle {
 
                     }
                     Rectangle{
-                        id: delete
+                        id: deleteUser
                         width: 100
                         height: 40
                         anchors.leftMargin: 10

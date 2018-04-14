@@ -251,6 +251,35 @@ bool Database::deleteUser(const QString& name)
     return userDeleted;
 }
 
+bool Database::verifyUser(const QString& userName, const QString& password)
+{
+    QSqlDatabase dbConnection = QSqlDatabase::database();
+    QSqlQuery query(dbConnection);
+
+
+//     the following query does not work, not sure why
+//     TODO: make this query work
+//     query.prepare("SELECT user_name, password FROM users WHERE user_name=:userName and password=:password");
+//     query.bindValue(":name", userName);
+//     query.bindValue(":password", password);
+    query.prepare("SELECT user_name,password FROM users");
+
+    if(query.exec()) {
+        int nameIndex = query.record().indexOf("user_name");
+        int passIndex = query.record().indexOf("password");
+
+        while(query.next()) {
+            QString name = query.value(nameIndex).toString();
+            QString pass = query.value(passIndex).toString();
+            if( name == userName && pass == password)
+                return true;
+
+        }
+    }
+
+    return false;
+}
+
 void  Database::retrieveActivityData(UserData* user)
 {
     QSqlDatabase dbConnection = QSqlDatabase::database();

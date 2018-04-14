@@ -23,6 +23,7 @@
 #include "Server.h"
 #include "Database.h"
 #include "MessageHandler.h"
+#include "Authentication.h"
 #include <QMultiMap>
 #include <QMapIterator>
 
@@ -30,6 +31,7 @@ MessageHandler* MessageHandler::_instance = 0;
 
 MessageHandler::MessageHandler()
 {
+    m_auth = new Authentication;
     Server &server = *Server::getInstance();
     connect(&server, &Server::loginReceived, this, &MessageHandler::onLoginReceived);
     connect(&server, &Server::activityDataReceived, this, &MessageHandler::onActivityDataReceived);
@@ -255,29 +257,34 @@ void MessageHandler::deleteUser(const QString &userName)
 
 void MessageHandler::onLoginReceived(QTcpSocket *socket, const Login &data)
 {
-    qDebug() << "Login received '" << data._name << "'";
-    ClientData *c = getClientData(socket);
+    qDebug() << "user request: " << data._name << " : " << data._password;
+    if(m_auth && m_auth->loginAuth(data)) {
+        qDebug() << "user verified: " << data._name << " : " << data._password;
+        ClientData *c = getClientData(socket);
 
-    for(QObject *oClient: m_clients) {
-        ClientData *c = (ClientData*)oClient;
-        if(c->getUserData() && c->getUserData()->getName() == data._name) {
-            // found a client with the same user name.(i.e someone chose the wrong login)
-            qDebug() << "a client with the same user name already exists";
-            return;
-            //todo:
-            // return an error message to client and inform that you have chosen the wrong login
+        for(QObject *oClient: m_clients) {
+            ClientData *c = (ClientData*)oClient;
+            if(c->getUserData() && c->getUserData()->getName() == data._name) {
+                // found a client with the same user name.(i.e someone chose the wrong login)
+                qDebug() << "a client with the same user name already exists";
+                return;
+                //todo:
+                // return an error message to client and inform that you have chosen the wrong login
+            }
         }
-    }
-    for(QObject *oUser: m_users) {
-        UserData *user = (UserData*)oUser;
-        qDebug() << "received login " << data._name << " " << c->getSocket();
-        if(user->getName() == data._name) {
-            c->setUser(user);
-            return;
+        for(QObject *oUser: m_users) {
+            UserData *user = (UserData*)oUser;
+            qDebug() << "received login " << data._name << " " << c->getSocket();
+            if(user->getName() == data._name) {
+                c->setUser(user);
+                return;
+            }
         }
+        // Should not happen when login will be done properly... todo display an error message
+        qDebug() << "Error: login " << data._name << " received, but no user found";
     }
-    // Should not happen when login will be done properly... todo display an error message
-    qDebug() << "Error: login " << data._name << " received, but no user found";
+    else
+        qDebug() <<  "Authentication failed";
 }
 
 void MessageHandler::onActivityDataReceived(QTcpSocket* socket, const ActivityRawData &act)

@@ -58,6 +58,7 @@ public:
     bool addUser(const UserData &user);
     bool addUserToGroup(const QString& group, const QString& user);
     bool deleteUser(const QString& userName);
+    bool verifyUser(const QString& userName, const QString& password);
     
     QMultiMap<QString,QString> retrieveGroupUsers();
     bool addDataToDatabase(const ActivityRawData &rawData);

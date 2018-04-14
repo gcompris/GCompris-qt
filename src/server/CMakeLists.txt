@@ -19,6 +19,8 @@ set(server_SRCS
   UserData.h
   Server.cpp
   Server.h
+  Authentication.cpp
+  Authentication.h
 )
 
 qt5_wrap_cpp(server_MOC ${server_SRCS})
