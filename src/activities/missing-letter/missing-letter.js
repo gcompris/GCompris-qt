@@ -200,6 +200,7 @@ function showQuestion() {
     items.questionText.text = question.maskedQuestion
     items.questionImage.source = question.image
     items.isGoodAnswer = false
+    items.buttonsBlocked = false
 }
 
 function nextLevel() {

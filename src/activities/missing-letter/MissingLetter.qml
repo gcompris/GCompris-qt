@@ -77,6 +77,7 @@ ActivityBase {
             property string answer
             property alias textinput: textinput
             property bool isGoodAnswer: false
+            property bool buttonsBlocked: false
         }
 
         onStart: {
@@ -135,13 +136,16 @@ ActivityBase {
                     height: (holder.height
                              - buttonHolder.spacing * answers.model.length) / answers.model.length
                     textLabel: modelData
+                    blockAllButtonClicks: items.buttonsBlocked
                     isCorrectAnswer: modelData === items.answer
                     onCorrectlyPressed: questionAnim.start()
                     onPressed: {
+                        items.buttonsBlocked = true
                         if(!items.isGoodAnswer) {
                             modelData == items.answer ? Activity.showAnswer() : ''
                         }
                     }
+                    onReadyWrong: items.buttonsBlocked = false
                 }
             }
         }
@@ -341,6 +345,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            onStart: items.buttonsBlocked = true
+            onStop: items.buttonsBlocked = false
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
