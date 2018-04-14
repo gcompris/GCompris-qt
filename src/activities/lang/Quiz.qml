@@ -43,6 +43,7 @@ Item {
     property alias parser: parser
     property var goodWord
     property bool horizontalLayout: background.width > background.height
+    property bool buttonsBlocked: false
 
     function init(loadedItems_, wordList_, mode_) {
         opacity = 1
@@ -239,10 +240,10 @@ Item {
                         width: parent.width * 0.6
                         height: wordListView.buttonHeight
                         textLabel: translatedTxt
-
                         anchors.left: wordImageQuiz.left
                         anchors.right: parent.right
-
+                        blockAllButtonClicks: quiz.buttonsBlocked
+                        onPressed: quiz.buttonsBlocked = true
                         isCorrectAnswer: translatedTxt === quiz.goodWord.translatedTxt
                         onIncorrectlyPressed: {
                             // push the error to have it asked again
