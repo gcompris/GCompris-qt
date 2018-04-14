@@ -70,6 +70,7 @@ ActivityBase {
             property alias wordDisplayRepeater: wordDisplayRepeater
             property string textToFind
             property int currentIndex
+            property bool buttonsBlocked: false
         }
 
         onStart: { Activity.start(items, mode) }
@@ -180,13 +181,9 @@ ActivityBase {
                 loose.connect(resetClickInProgress)
             }
         }
-        // used to know if we already click on "Yes" or "No"
-        property bool isClickInProgress: false
-        // used to avoid multiple clicks between the begin and end of bonus play
-        property bool isClickInProgress2: false
+
         function resetClickInProgress() {
-            isClickInProgress = false;
-            isClickInProgress2 = false;
+            items.buttonsBlocked = false
             Activity.initLevel()
         }
 
@@ -259,12 +256,11 @@ ActivityBase {
                 height: 60 * ApplicationInfo.ratio
                 textLabel: qsTr("Yes, I saw it!")
                 isCorrectAnswer: Activity.words ? Activity.words.indexOf(items.textToFind) != -1 : false
-                onCorrectlyPressed: if(isClickInProgress && !isClickInProgress2) { bonus.good("flower"); isClickInProgress2 = true }
-                onIncorrectlyPressed: if(isClickInProgress && !isClickInProgress2) { bonus.bad("flower"); isClickInProgress2 = true }
+                onCorrectlyPressed: bonus.good("flower")
+                onIncorrectlyPressed: bonus.bad("flower")
+                blockAllButtonClicks: items.buttonsBlocked
                 onPressed: {
-                    if(!isClickInProgress) {
-                        isClickInProgress = true
-                    }
+                    items.buttonsBlocked = true
                 }
             }
 
@@ -274,13 +270,11 @@ ActivityBase {
                 height: 60 * ApplicationInfo.ratio
                 textLabel: qsTr("No, it was not there!")
                 isCorrectAnswer: !answerButtonFound.isCorrectAnswer
-                onCorrectlyPressed: if(isClickInProgress && !isClickInProgress2) { bonus.good("flower"); isClickInProgress2 = true }
-                onIncorrectlyPressed: if(isClickInProgress && !isClickInProgress2) { bonus.bad("flower"); isClickInProgress2 = true }
-
+                onCorrectlyPressed: bonus.good("flower")
+                onIncorrectlyPressed: bonus.bad("flower")
+                blockAllButtonClicks: items.buttonsBlocked
                 onPressed: {
-                     if(!isClickInProgress) {
-                        isClickInProgress = true
-                    }
+                    items.buttonsBlocked = true
                 }
             }
         }
