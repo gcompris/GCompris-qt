@@ -123,6 +123,16 @@ Item {
     signal incorrectlyPressed
 
     /**
+     * Emitted after animation of correct answer
+     */
+    signal readyCorrect
+    
+    /**
+     * Emitted after animation of incorrect answer
+     */
+    signal readyWrong
+    
+    /**
      * Emitted when answer button is clicked.
      */
     signal pressed
@@ -177,6 +187,7 @@ Item {
 
     SequentialAnimation {
         id: correctAnswerAnimation
+        onStopped: button.readyCorrect()
         ScriptAction {
             script: {
                 if (typeof(feedback) === "object")
@@ -208,6 +219,7 @@ Item {
 
     SequentialAnimation {
         id: wrongAnswerAnimation
+        onStopped: button.readyWrong()
         ParallelAnimation {
             SequentialAnimation {
                 PropertyAction {
