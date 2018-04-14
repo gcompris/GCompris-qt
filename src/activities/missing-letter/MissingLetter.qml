@@ -145,7 +145,7 @@ ActivityBase {
                             modelData == items.answer ? Activity.showAnswer() : ''
                         }
                     }
-                    onReadyWrong: items.buttonsBlocked = false
+                    onIncorrectlyPressed: items.buttonsBlocked = false
                 }
             }
         }

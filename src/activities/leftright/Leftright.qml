@@ -150,7 +150,7 @@ ActivityBase {
                 onPressed: items.buttonsBlocked = true
                 onCorrectlyPressed: Activity.leftClick()
                 blockAllButtonClicks: items.buttonsBlocked
-                onReadyWrong: items.buttonsBlocked = false
+                onIncorrectlyPressed: items.buttonsBlocked = false
             }
 
             AnswerButton {
@@ -165,7 +165,7 @@ ActivityBase {
                 onPressed: items.buttonsBlocked = true
                 onCorrectlyPressed: Activity.rightClick()
                 blockAllButtonClicks: items.buttonsBlocked
-                onReadyWrong: items.buttonsBlocked = false
+                onIncorrectlyPressed: items.buttonsBlocked = false
             }
         }
 
