@@ -109,28 +109,18 @@ Item {
     property GCSfx audioEffects
 
     /**
-     * Emitted when button is pressed as a good answer.
+     * Emitted after button is pressed as a good answer.
      *
-     * Triggers correctAnswerAnimation.
+     * Triggered at the end of correctAnswerAnimation.
      */
     signal correctlyPressed
 
     /**
-     * Emitted when button is pressed as a bad answer.
+     * Emitted after button is pressed as a bad answer.
      *
-     * Triggers wrongAnswerAnimation.
+     * Triggered at the end of wrongAnswerAnimation.
      */
     signal incorrectlyPressed
-
-    /**
-     * Emitted after animation of correct answer
-     */
-    signal readyCorrect
-    
-    /**
-     * Emitted after animation of incorrect answer
-     */
-    signal readyWrong
     
     /**
      * Emitted when answer button is clicked.
@@ -187,7 +177,7 @@ Item {
 
     SequentialAnimation {
         id: correctAnswerAnimation
-        onStopped: button.readyCorrect()
+        onStopped: correctlyPressed()
         ScriptAction {
             script: {
                 if (typeof(feedback) === "object")
@@ -210,16 +200,11 @@ Item {
         PauseAnimation {
             duration: 300 // Wait for particles to finish
         }
-        ScriptAction {
-            script: {
-                correctlyPressed();
-            }
-        }
     }
 
     SequentialAnimation {
         id: wrongAnswerAnimation
-        onStopped: button.readyWrong()
+        onStopped: incorrectlyPressed()
         ParallelAnimation {
             SequentialAnimation {
                 PropertyAction {
@@ -269,11 +254,6 @@ Item {
             property: "color"
             to: normalStateColor
             duration: 450
-        }
-        ScriptAction {
-            script: {
-                incorrectlyPressed();
-            }
         }
     }
 }
