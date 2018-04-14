@@ -88,6 +88,7 @@ function nextQuiz() {
     quizItems.wordListModel.append(selectedWords)
 
     quizItems.wordImage.changeSource(quizItems.goodWord.image)
+    quizItems.buttonsBlocked = false
 }
 
 function nextSubLevelQuiz() {
