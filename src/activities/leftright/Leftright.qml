@@ -50,6 +50,7 @@ ActivityBase {
             property alias leftButton: leftButton
             property alias rightButton: rightButton
             property alias score: score
+            property bool buttonsBlocked: false
         }
 
         Component.onCompleted: {
@@ -120,6 +121,7 @@ ActivityBase {
             }
             ParallelAnimation {
                 id: imageAnimOn
+                onStopped: bonus.isPlaying ? items.buttonsBlocked = true : items.buttonsBlocked = false
                 NumberAnimation {
                     target: handImage
                     property: "opacity"
@@ -145,7 +147,10 @@ ActivityBase {
                 anchors.margins: 10
                 textLabel: qsTr("Left hand")
                 audioEffects: activity.audioEffects
-                onCorrectlyPressed: Activity.leftClick();
+                onPressed: items.buttonsBlocked = true
+                onCorrectlyPressed: Activity.leftClick()
+                blockAllButtonClicks: items.buttonsBlocked
+                onReadyWrong: items.buttonsBlocked = false
             }
 
             AnswerButton {
@@ -157,7 +162,10 @@ ActivityBase {
                 anchors.margins: 10
                 audioEffects: activity.audioEffects
                 textLabel: qsTr("Right hand")
-                onCorrectlyPressed: Activity.rightClick();
+                onPressed: items.buttonsBlocked = true
+                onCorrectlyPressed: Activity.rightClick()
+                blockAllButtonClicks: items.buttonsBlocked
+                onReadyWrong: items.buttonsBlocked = false
             }
         }
 
@@ -179,6 +187,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            onStart: items.buttonsBlocked = true
+            onStop: items.buttonsBlocked = false
         }
 
         Score {
