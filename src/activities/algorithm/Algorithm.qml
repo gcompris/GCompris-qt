@@ -52,7 +52,6 @@ ActivityBase {
             property alias choiceTray: choiceTray
             property alias question: question
             property alias answer: answer
-            property alias choice: choice
             property GCSfx audioEffects: activity.audioEffects
             property alias background: background
             property alias bar: bar
@@ -64,39 +63,49 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        property bool keyNavigationVisible: false
+
+        Keys.onPressed: {
+            keyNavigationVisible = true
+            if(event.key === Qt.Key_Left)
+                choiceGridView.moveCurrentIndexLeft()
+            if(event.key === Qt.Key_Right)
+                choiceGridView.moveCurrentIndexRight()
+            if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+                choiceGridView.currentItem.clicked()
+        }
+
         Column {
             id: column
             spacing: 10
-            x: parent.width * 0.1
-            y: parent.height * 0.1
-            width: parent.width * 0.8
+            y: parent.height * 0.05
+            width: itemWidth * Activity.images.length
+            anchors.horizontalCenter: parent.horizontalCenter
 
-            property int itemWidth: width / Activity.images.length - 10
-            property int itemHeight: itemWidth
+            property int itemWidth: Math.min(background.width * 0.75 / Activity.images.length, background.height * 0.19)
 
             Rectangle {
                 id: questionTray
-                height: column.itemHeight + 10
-                width: parent.width + 10
+                height: column.itemWidth
+                width: parent.width
                 color: "#55333333"
-                border.color: "black"
-                border.width: 0
                 radius: 5
 
                 Row {
                     anchors.topMargin: 4
                     anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
+                    anchors.leftMargin: 5
                     anchors.fill: parent
-                    spacing: 10
+                    spacing: 5.7 * ApplicationInfo.ratio
                     Repeater {
                         id: question
                         Image {
                             source: Activity.url + modelData + '.svg'
-                            sourceSize.height: questionTray.height
-                            width: column.itemWidth
-                            height: column.itemHeight
+                            sourceSize.height: height
+                            sourceSize.width: width
+                            width: column.itemWidth - 6 * ApplicationInfo.ratio
+                            height: width
+                            fillMode: Image.PreserveAspectFit
                         }
                     }
                 }
@@ -104,27 +113,26 @@ ActivityBase {
 
             Rectangle {
                 id: answerTray
-                height: column.itemHeight + 10
-                width: parent.width + 10
+                height: column.itemWidth
+                width: parent.width
                 color: "#55333333"
-                border.color: "black"
-                border.width: 0
                 radius: 5
                 Row {
                     anchors.topMargin: 4
                     anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
+                    anchors.leftMargin: 5
                     anchors.fill: parent
-                    spacing: 10
+                    spacing: 5.7 * ApplicationInfo.ratio
                     Repeater {
                         id: answer
                         Image {
                             source: "qrc:/gcompris/src/activities/algorithm/resource/" +
                                     modelData + '.svg'
-                            sourceSize.height: answerTray.height
-                            width: column.itemWidth
-                            height: column.itemHeight
+                            sourceSize.height: height
+                            sourceSize.width: width
+                            width: column.itemWidth - 6 * ApplicationInfo.ratio
+                            height: width
+                            fillMode: Image.PreserveAspectFit
                         }
                     }
                 }
@@ -132,45 +140,65 @@ ActivityBase {
 
             // A spacer
             Item {
-                height: column.itemHeight / 2
+                height: column.itemWidth / 2
                 width: parent.width
             }
 
             Rectangle {
                 id: choiceTray
-                height: column.itemHeight + 10
-                width: parent.width + 10
+                height: column.itemWidth
+                width: parent.width
                 color: "#55333333"
-                border.color: "black"
-                border.width: 0
                 radius: 5
-                Row {
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
+
+                GridView {
+                    id: choiceGridView
                     anchors.fill: parent
-                    spacing: 10
-                    Repeater {
-                        id: choice
-                        model: Activity.images
+                    model: Activity.images
+                    cellWidth: column.itemWidth
+                    cellHeight: cellWidth
+                    interactive: false
+                    keyNavigationWraps: true
+                    highlightFollowsCurrentItem: true
+                    highlight: Rectangle {
+                        width: parent.cellWidth
+                        height: parent.cellHeight
+                        color:  "#AAFFFFFF"
+                        border.width: 2
+                        border.color: "white"
+                        visible: background.keyNavigationVisible
+                        Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                        Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                    }
+
+                    delegate: Item {
+                        id: cellItem
+                        width: choiceGridView.cellWidth
+                        height: width
+
+                        signal clicked
+                        onClicked: {
+                            if(Activity.clickHandler(modelData)) {
+                                particle.burst(20)
+                            }
+                        }
+
                         Image {
                             id: img
                             source: Activity.url + modelData + '.svg'
-                            sourceSize.height: parent.height
-                            width: column.itemWidth
-                            height: column.itemHeight
+                            width: column.itemWidth - 6 * ApplicationInfo.ratio
+                            height: width
+                            sourceSize.width: width
+                            sourceSize.height: height
+                            anchors.centerIn: parent
+                            fillMode: Image.PreserveAspectFit
                             state: "notclicked"
-                            signal clicked
+
                             MouseArea {
                                 id: mouseArea
                                 hoverEnabled: true
                                 anchors.fill: parent
-                                onClicked: {
-                                    if(Activity.clickHandler(modelData)) {
-                                        particle.burst(20)
-                                    }
-                                }
+                                onClicked: cellItem.clicked()
                             }
                             states: [
                                 State {
@@ -233,10 +261,10 @@ ActivityBase {
 
         Score {
             anchors {
-                bottom: parent.bottom
+                bottom: bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
+                rightMargin: 5 * ApplicationInfo.ratio
                 top: undefined
                 left: undefined
             }
