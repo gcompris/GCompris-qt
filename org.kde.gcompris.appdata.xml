@@ -23,7 +23,7 @@
   <name xml:lang="pl">Gra edukacyjna GCompris</name>
   <name xml:lang="pt">Jogo Educativo GCompris</name>
   <name xml:lang="pt-BR">Jogo educacional GCompris</name>
-  <name xml:lang="ro">Joc educațional GCompris</name>
+  <name xml:lang="ro">Jocul educațional GCompris</name>
   <name xml:lang="ru">Набор обучающих игр GCompris</name>
   <name xml:lang="sk">Výuková hra GCompris</name>
   <name xml:lang="sl">Izobraževalna igra GCompris</name>
@@ -205,7 +205,7 @@
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, ...</li>
       <li xml:lang="pt">aritmética: memória da tabuada, enumeração, imagem-espelho, equilíbrio de balanças, trocos, ...</li>
       <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, ...</li>
-      <li xml:lang="ro">aritmetică: tabla înmulțirii, enumerări, imagini în oglindă, echilibrează balanța, darea restului, ...</li>
+      <li xml:lang="ro">aritmetică: tabla înmulțirii, enumerări, imagini în oglindă, echilibrarea balanței, datul restului, ...</li>
       <li xml:lang="ru">арифметика: игра «память» с подсчётом, счёт, отражение рисунка, уравновешивание весов, подсчёт сдачи, ...</li>
       <li xml:lang="sk">aritmetické: tabuľková pamäť, výpočet, zrkalový obrázok, vyváženie mierky, zmena dávky...</li>
       <li xml:lang="sl">računstvo: spomin z računi, štetje, uravnoteži tehtnico, vračanje drobiža, ...</li>
@@ -235,7 +235,7 @@
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, ...</li>
       <li xml:lang="pt">ciência: bloqueio de canais, misturas de cores, conceito de gravidade, ...</li>
       <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, ...</li>
-      <li xml:lang="ro">științe: podul mobil, combinarea culorilor, gravitația, ...</li>
+      <li xml:lang="ro">științe: ecluza unui canal, amestecul culorilor, conceptul de gravitație, ...</li>
       <li xml:lang="ru">наука: работа судоходного шлюза, смешивание цветов, представление о гравитации, ...</li>
       <li xml:lang="sk">veda: zamknutý kanál, miešanie farieb, koncept grvitácie...</li>
       <li xml:lang="sl">znanost: zapornica kanala, mešanje barv, koncept težnosti ...</li>
@@ -382,6 +382,7 @@
       <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="nl">GCompris-hoofdmenu</caption>
       <caption xml:lang="pt">Menu principal do GCompris</caption>
+      <caption xml:lang="ro">Meniul principal GCompris</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="x-test">xxGCompris main menuxx</caption>
@@ -396,6 +397,7 @@
       <caption xml:lang="it">attività clic sulla lettera</caption>
       <caption xml:lang="nl">activiteit klik_op_letter_omhoog</caption>
       <caption xml:lang="pt">actividade carregar_na_letra_para_cima</caption>
+      <caption xml:lang="ro">activitatea click_on_letter_up</caption>
       <caption xml:lang="sv">Aktiviteten klicka på bokstav upp</caption>
       <caption xml:lang="uk">Вправа «Натисніть літеру»</caption>
       <caption xml:lang="x-test">xxclick_on_letter_up activityxx</caption>
@@ -410,6 +412,7 @@
       <caption xml:lang="it">attività dell'orologio</caption>
       <caption xml:lang="nl">activiteit klokspel</caption>
       <caption xml:lang="pt">actividade do jogo do relógio</caption>
+      <caption xml:lang="ro">activitatea clockgame</caption>
       <caption xml:lang="sv">Aktiviteten klockspel</caption>
       <caption xml:lang="uk">Вправа з годинником</caption>
       <caption xml:lang="x-test">xxclockgame activityxx</caption>
@@ -424,6 +427,7 @@
       <caption xml:lang="it">attività miscela di colori</caption>
       <caption xml:lang="nl">activiteit kleurmix</caption>
       <caption xml:lang="pt">actividade mistura_cores</caption>
+      <caption xml:lang="ro">activitatea color_mix</caption>
       <caption xml:lang="sv">Aktiviteten färgblandning</caption>
       <caption xml:lang="uk">Вправа зі змішування кольорів</caption>
       <caption xml:lang="x-test">xxcolor_mix activityxx</caption>
@@ -438,6 +442,7 @@
       <caption xml:lang="it">attività dei colori</caption>
       <caption xml:lang="nl">activiteit kleuren</caption>
       <caption xml:lang="pt">actividade cores</caption>
+      <caption xml:lang="ro">activitatea colors</caption>
       <caption xml:lang="sv">Aktiviteten färger</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
       <caption xml:lang="x-test">xxcolors activityxx</caption>
@@ -452,6 +457,7 @@
       <caption xml:lang="it">attività della gru</caption>
       <caption xml:lang="nl">activiteit kraan</caption>
       <caption xml:lang="pt">actividade grua</caption>
+      <caption xml:lang="ro">activitatea crane</caption>
       <caption xml:lang="sv">Aktiviteten kran</caption>
       <caption xml:lang="uk">Вправа з краном</caption>
       <caption xml:lang="x-test">xxcrane activityxx</caption>
@@ -466,6 +472,7 @@
       <caption xml:lang="it">attività di enumerazione</caption>
       <caption xml:lang="nl">activiteit opnoemen</caption>
       <caption xml:lang="pt">actividade numeração</caption>
+      <caption xml:lang="ro">activitatea enumerate</caption>
       <caption xml:lang="sv">Aktiviteten uppräkning</caption>
       <caption xml:lang="uk">Вправа з лічби</caption>
       <caption xml:lang="x-test">xxenumerate activityxx</caption>
@@ -480,6 +487,7 @@
       <caption xml:lang="it">attività del quindici</caption>
       <caption xml:lang="nl">activiteit vijftien</caption>
       <caption xml:lang="pt">actividade quinze</caption>
+      <caption xml:lang="ro">activitatea fifteen</caption>
       <caption xml:lang="sv">Aktiviteten femtonspel</caption>
       <caption xml:lang="uk">Вправа «П'ятнадцять»</caption>
       <caption xml:lang="x-test">xxfifteen activityxx</caption>
@@ -494,6 +502,7 @@
       <caption xml:lang="it">attività dell'esagono</caption>
       <caption xml:lang="nl">activiteit hexagon</caption>
       <caption xml:lang="pt">actividade hexágono</caption>
+      <caption xml:lang="ro">activitatea hexagon</caption>
       <caption xml:lang="sv">Aktiviteten hexagon</caption>
       <caption xml:lang="uk">Вправа «Шестикутники»</caption>
       <caption xml:lang="x-test">xxhexagon activityxx</caption>
@@ -508,6 +517,7 @@
       <caption xml:lang="it">attività della bilancia</caption>
       <caption xml:lang="nl">activiteit bord_met_schalen</caption>
       <caption xml:lang="pt">actividade pautas</caption>
+      <caption xml:lang="ro">activitatea scalesboard</caption>
       <caption xml:lang="sv">Aktiviteten vågbord</caption>
       <caption xml:lang="uk">Вправа з визначення ваги</caption>
       <caption xml:lang="x-test">xxscalesboard activityxx</caption>
@@ -522,6 +532,7 @@
       <caption xml:lang="it">attività degli scacchi</caption>
       <caption xml:lang="nl">Activiteit schaakspel_party_einde</caption>
       <caption xml:lang="pt">actividade xadrez_fim_festa</caption>
+      <caption xml:lang="ro">activitatea chess_partyend</caption>
       <caption xml:lang="sv">Aktiviteten schack festavslutning</caption>
       <caption xml:lang="uk">Гра у шахи</caption>
       <caption xml:lang="x-test">xxchess_partyend activityxx</caption>
@@ -536,6 +547,7 @@
       <caption xml:lang="it">attività del traffico</caption>
       <caption xml:lang="nl">activiteit verkeer</caption>
       <caption xml:lang="pt">actividade trânsito</caption>
+      <caption xml:lang="ro">activitatea traffic</caption>
       <caption xml:lang="sv">Aktiviteten trafik</caption>
       <caption xml:lang="uk">Вправа з керування рухом</caption>
       <caption xml:lang="x-test">xxtraffic activityxx</caption>
