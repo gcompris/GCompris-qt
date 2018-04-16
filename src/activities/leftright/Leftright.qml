@@ -29,9 +29,6 @@ ActivityBase {
 
     onStart: focus = true;
 
-    Keys.onLeftPressed: Activity.leftClickPressed()
-    Keys.onRightPressed: Activity.rightClickPressed()
-
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svg"
@@ -53,6 +50,10 @@ ActivityBase {
             property bool buttonsBlocked: false
         }
 
+        Keys.onLeftPressed: Activity.leftClickPressed()
+        Keys.onRightPressed: Activity.rightClickPressed()
+        Keys.enabled: !items.buttonsBlocked
+        
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
