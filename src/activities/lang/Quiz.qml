@@ -64,6 +64,8 @@ Item {
         anchors.fill: parent
 
         property bool keyNavigation: false
+        
+        Keys.enabled: !quiz.buttonsBlocked
 
         Keys.onEscapePressed: {
             imageReview.start()
