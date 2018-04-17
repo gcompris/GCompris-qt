@@ -58,6 +58,7 @@ ActivityBase {
             property alias bonus: bonus
             property int nbSubLevel: 3
             property int currentSubLevel: 0
+            property bool blockClicks: false
         }
 
         onStart: { Activity.start(items) }
@@ -65,6 +66,7 @@ ActivityBase {
 
         property bool keyNavigationVisible: false
 
+        Keys.enabled: !items.blockClicks
         Keys.onPressed: {
             keyNavigationVisible = true
             if(event.key === Qt.Key_Left)
@@ -146,7 +148,7 @@ ActivityBase {
 
             Rectangle {
                 id: choiceTray
-                height: column.itemWidth
+                height: column.itemWidth + 3 * ApplicationInfo.ratio
                 width: parent.width
                 color: "#55333333"
                 radius: 5
@@ -174,7 +176,7 @@ ActivityBase {
                     delegate: Item {
                         id: cellItem
                         width: choiceGridView.cellWidth
-                        height: width
+                        height: choiceTray.height
 
                         signal clicked
                         onClicked: {
@@ -196,7 +198,8 @@ ActivityBase {
 
                             MouseArea {
                                 id: mouseArea
-                                hoverEnabled: true
+                                hoverEnabled: enabled
+                                enabled: !items.blockClicks
                                 anchors.fill: parent
                                 onClicked: cellItem.clicked()
                             }
@@ -256,6 +259,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            onStop: items.blockClicks = false
             Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
 

@@ -83,9 +83,8 @@ function initLevel() {
     setUp()
 }
 
-// Add more cases to sample and differentiate arrange according to level of difficulty
-// Develop an algo to choose them accordingly for each level
-
+// Add more cases to sample and differentiate arrange according to level of difficulty.
+// Develop an algo to choose them accordingly for each level.
 var sample = [[[0,1,0,1,0,1,0,1],[0,1,1,0,0,1,1,0],[1,1,0,0,0,0,1,1],[1,0,0,1,0,1,1,0]],//level1
               [[0,1,2,0,1,2,0,1],[0,1,2,3,0,1,2,3],[0,1,2,3,3,2,1,0],[0,1,2,1,0,1,2,0]],//2
               [[0,1,2,3,1,0,0,1],[0,1,2,3,0,1,0,1],[0,1,2,3,1,2,1,2],[0,1,2,3,2,3,2,3]],//3
@@ -105,10 +104,7 @@ function setUp(){
     setAnswer(answerIndex)
 }
 
-
-
-// Returns a set of images that is used to set
-// either the Sample algorithm or the Answer tray
+// Returns a set of images that is used to set either the Sample algorithm or the Answer tray.
 function getImages(number, level) {
     var substitution = Core.shuffle(images)
     // Create results table based on sample and substitution
@@ -125,7 +121,7 @@ function setQuestion(indices){
     items.question.model = indices
 }
 
-// The first `matchesVisible` images of answerTray are set and the `matchesVisible+1`th is a question mark
+// The first `matchesVisible` images of answerTray are set and the `matchesVisible+1`th is a question mark.
 function setAnswer(indices){
 
     var tempIndex = []
@@ -136,25 +132,27 @@ function setAnswer(indices){
     items.answer.model = tempIndex
 }
 
-
-var choiceCount = matchesVisible //game is won when choiceCount = 8
+// Game is won when choiceCount == 8.
+var choiceCount = matchesVisible
 
 function clickHandler(id){
     var tempIndex = []
 
-    if(id === answerIndex[choiceCount]) { //correct answer
+    // Correct answer
+    if(id === answerIndex[choiceCount]) {
         tempIndex = items.answer.model
         choiceCount++;
         items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
 
-        if(choiceCount < max){
+        if(choiceCount < max) {
             tempIndex.push('question_mark')
         }
 
         tempIndex[choiceCount - 1] = answerIndex[choiceCount - 1]
         items.answer.model = tempIndex
 
-        if(choiceCount == max){
+        if(choiceCount == max) {
+            items.blockClicks = true
             if(items.currentSubLevel+1 === items.nbSubLevel)
                 items.bonus.good("tux")
             else
@@ -177,12 +175,12 @@ function nextLevel() {
 function nextSubLevel() {
     choiceCount = matchesVisible
     items.currentSubLevel++
-    if (items.currentSubLevel === items.nbSubLevel) {// increment level after 3 successful games
+    // Increment level after 3 successful games.
+    if (items.currentSubLevel === items.nbSubLevel) {
         nextLevel()
     }
     setUp()
 }
-
 
 function previousLevel() {
     if(--currentLevel < 0) {
