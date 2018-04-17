@@ -37,7 +37,6 @@ Image {
         anchors.horizontalCenter: parent.horizontalCenter
         text: value
         color: "white"
-        visible: items.score.currentSubLevel <= 2 ? true : false
     }
 
     MouseArea {
