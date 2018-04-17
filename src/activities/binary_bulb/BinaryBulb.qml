@@ -106,7 +106,7 @@ ActivityBase {
             color: "white"
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
-            text: qsTr("What is the binary representation of %1 ?").arg(items.numberToConvert)
+            text: qsTr("What is the binary representation of %1?").arg(items.numberToConvert)
         }
 
         Row {
@@ -145,25 +145,7 @@ ActivityBase {
             }
             source: "/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-            onClicked: {
-                if(items.numberSoFar == items.numberToConvert) {
-                    if(score.currentSubLevel < score.numberOfSubLevels) {
-                        score.currentSubLevel++;
-                        score.playWinAnimation()
-                        Activity.resetBulbs()
-                        Activity.initializeValues()
-                    }
-                    else {
-                        bonus.good("lion")
-                        Activity.resetBulbs()
-                    }
-                }           
-                else {
-                    bonus.bad("lion")
-                    Activity.resetBulbs()
-                    items.numberSoFar = 0
-                }
-            }
+            onClicked: Activity.equalityCheck()
         }
 
         DialogHelp {

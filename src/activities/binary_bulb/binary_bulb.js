@@ -47,6 +47,26 @@ function initializeValues() {
     items.numberToConvert = toBeConverted[items.score.currentSubLevel + (currentLevel * 4) - 1]
 }
 
+function equalityCheck() {
+    if(items.numberSoFar == items.numberToConvert) {
+        if(items.score.currentSubLevel < items.score.numberOfSubLevels) {
+            items.score.currentSubLevel++;
+            items.score.playWinAnimation()
+            resetBulbs()
+            initializeValues()
+        }
+        else {
+            items.bonus.good("lion")
+            resetBulbs()
+        }
+    }           
+    else {
+        items.bonus.bad("lion")
+        resetBulbs()
+        items.numberSoFar = 0
+    }    
+}
+
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.score.numberOfSubLevels = 4
