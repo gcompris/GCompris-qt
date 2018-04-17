@@ -418,15 +418,16 @@ ActivityBase {
 
         Score {
             anchors {
-                bottom: parent.bottom
-                bottomMargin: 10 * ApplicationInfo.ratio
-                right: parent.right
-                rightMargin: 10 * ApplicationInfo.ratio
-                top: undefined
                 left: undefined
+                right: leftWidget.right
+                bottom: background.vert ? bar.top : leftWidget.bottom
+                margins: 3 * ApplicationInfo.ratio
             }
+            width: basketWidget.width
+            height: background.vert ? (basketWidget.height * 0.8) : basketWidget.height
             numberOfSubLevels: items.nbSubLevel
             currentSubLevel: items.currentSubLevel + 1
         }
     }
+
 }
