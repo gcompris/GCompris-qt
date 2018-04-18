@@ -23,12 +23,15 @@ import GCompris 1.0
 
 import "../../core"
 import "binary_bulb.js" as Activity
+import "numbers.js" as Dataset
 
 ActivityBase {
     id: activity
 
     onStart: focus = true
     onStop: {}
+
+    property var dataset: Dataset
 
     pageComponent: Image {
         id: background
@@ -53,10 +56,11 @@ ActivityBase {
             property int numberSoFar: 0
             property int numberToConvert: 0
             property int numberOfBulbs: 0
+            property int currentLevel: 0
             property alias score: score
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
         IntroMessage {
@@ -132,7 +136,7 @@ ActivityBase {
             color: "white"
             fontSize: largeSize
             text: items.numberSoFar
-            visible: items.score.currentSubLevel <= 2 ? true : false
+            visible: (items.currentLevel % 2) == 0 ? true : false
         }
 
         BarButton {

@@ -3,7 +3,7 @@
  * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
  *
  * Authors:
- *   "RAJAT ASTHANA" <rajatasthana4@gmail.com> (Qt Quick port)
+ *   "RAJAT ASTHANA" <rajatasthana4@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,16 +20,18 @@
  */
 .pragma library
 .import QtQuick 2.6 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var toBeConverted = [1, 2, 3, 1, 4, 9, 13, 15, 57, 152, 248, 239]
-
-var currentLevel = 0
-var numberOfLevel = 3
+var currentLevel
+var numberOfLevel
 var items
+var dataset
 
-function start(items_) {
+function start(items_, dataset_) {
     items = items_
+    dataset = dataset_.get()
     currentLevel = 0
+    numberOfLevel = dataset.length
 }
 
 function stop() {
@@ -42,9 +44,9 @@ function resetBulbs() {
 }
 
 function initializeValues() {
-    items.numberSoFar = 0    
-    items.numberOfBulbs = (currentLevel > 3) ? 8 : Math.pow(2, currentLevel+1)
-    items.numberToConvert = toBeConverted[items.score.currentSubLevel + (currentLevel * 4) - 1]
+    items.numberSoFar = 0
+    items.numberOfBulbs = dataset[items.currentLevel][0]
+    items.numberToConvert = dataset[items.currentLevel][items.score.currentSubLevel]
 }
 
 function equalityCheck() {
@@ -68,24 +70,24 @@ function equalityCheck() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    items.score.numberOfSubLevels = 4
+    items.bar.level = items.currentLevel + 1
+    items.score.numberOfSubLevels = dataset[items.currentLevel].length - 1
     items.score.currentSubLevel = 1
-    initializeValues();
-    resetBulbs();
+    initializeValues()
+    resetBulbs()
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
+    if(numberOfLevel <= ++items.currentLevel ) {
+        items.currentLevel = 0
     }
     items.score.currentSubLevel = 1
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
+    if(--items.currentLevel < 0) {
+        items.currentLevel = numberOfLevel - 1
     }
     items.score.currentSubLevel = 1
     initLevel();
