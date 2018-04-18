@@ -22,7 +22,7 @@
 .import QtQuick 2.6 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel
+//var currentLevel
 var numberOfLevel
 var items
 var dataset
@@ -30,7 +30,7 @@ var dataset
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_.get()
-    currentLevel = 0
+    items.currentLevel = 0
     numberOfLevel = dataset.length
 }
 
@@ -45,8 +45,8 @@ function resetBulbs() {
 
 function initializeValues() {
     items.numberSoFar = 0
-    items.numberOfBulbs = dataset[items.currentLevel][0]
-    items.numberToConvert = dataset[items.currentLevel][items.score.currentSubLevel]
+    items.numberOfBulbs = dataset[items.currentLevel].bulbCount
+    items.numberToConvert = dataset[items.currentLevel].numbersToBeConverted[items.score.currentSubLevel - 1]
 }
 
 function equalityCheck() {
@@ -56,6 +56,7 @@ function equalityCheck() {
             items.score.playWinAnimation()
             resetBulbs()
             initializeValues()
+            //resetBulbs()
         }
         else {
             items.bonus.good("lion")
@@ -71,7 +72,7 @@ function equalityCheck() {
 
 function initLevel() {
     items.bar.level = items.currentLevel + 1
-    items.score.numberOfSubLevels = dataset[items.currentLevel].length - 1
+    items.score.numberOfSubLevels = dataset[items.currentLevel].numbersToBeConverted.length
     items.score.currentSubLevel = 1
     initializeValues()
     resetBulbs()
