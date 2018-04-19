@@ -2,25 +2,21 @@
 FilePath: ../src/activities/testactivity/testactivity.js
 	 ERROR       Replace original GTK VERSION AUTHOR label by your own name
 	 WARNING     Replace original QT Quick copyright label email by your own email address
-	 ERROR       QtQuick version must be 2.6
 
 FilePath: ../src/activities/testactivity/Testactivity.qml
 	 ERROR       Replace original GTK VERSION AUTHOR label by your own name
 	 WARNING     Replace original QT Quick copyright label email by your own email address
-	 ERROR       QtQuick version must be 2.6
-	 WARNING     "testactivity activity" qsTr may not be used
+	 WARNING     line:59 "testactivity activity" qsTr may not be used
 
 FilePath: ../src/activities/testactivity/ActivityInfo.qml
-	 ERROR       GCompris version must be 1.0
 	 WARNING     difficulty: 1 may not be updated.
 	 ERROR       author: "Your Name &lt;yy@zz.org&gt;" may not be updated.
-	 WARNING     "Your Name &lt;yy@zz.org&gt;" qsTr may not be used
-	 ERROR       demo: false may not be updated.
-	 WARNING     "Testactivity activity" qsTr may not be used
+	 WARNING     line:24 "Your Name &lt;yy@zz.org&gt;" qsTr may not be used
+	 WARNING     line:27 "Testactivity activity" qsTr may not be used
 	 ERROR       description: "" may not be updated.
-	 WARNING     "put here in comment the text for the intro voice" qsTr may not be used
+	 WARNING     line:30 "put here in comment the text for the intro voice" qsTr may not be used
 	 ERROR       goal: "" may not be updated.
 	 ERROR       prerequisite: "" may not be updated.
 	 ERROR       manual: "" may not be updated.
 	 ERROR       credit: "" may not be updated.
-	 WARNING     "fun" qsTr may not be used
+	 WARNING     line:38 "fun" qsTr may not be used

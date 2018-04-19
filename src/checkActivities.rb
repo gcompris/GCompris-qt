@@ -48,10 +48,10 @@ module ActivityCheck
     end
 
     # checks whether qsTr can be used in the lineStr
-    def self.qsTr_use(lineStr)
+    def self.qsTr_use(lineStr, lineNumber)
         matchStr = /(?<qsTr>(qsTr)\()?"[\w'!?:;]+( .*)*[.,]? ?"/.match(lineStr)
         if matchStr and not matchStr["qsTr"]
-            print_warning "#{matchStr} qsTr may not be used"
+            print_warning "line:#{lineNumber} #{matchStr} qsTr may not be used"
         end
     end
 
@@ -95,6 +95,7 @@ module ActivityCheck
     def self.check_qml_files
         @qmlFilesArray.each do |qmlFile|
 
+            lineNumber = 1
             puts "\nFilePath: " + qmlFile
 
             # Assuming ActivityInfo.qml won't be much bigger
@@ -112,10 +113,11 @@ module ActivityCheck
 
                 check_credits_update line
 
-                qsTr_use line
+                qsTr_use line, lineNumber
 
                 check_import_version line
 
+                lineNumber = lineNumber + 1
             end
         end
     end
