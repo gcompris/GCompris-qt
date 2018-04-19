@@ -1,6 +1,7 @@
 /* GCompris - AnswerSheet.qml
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
  *   Siddhesh Suthar <siddhesh.it@gmail.com>
@@ -25,11 +26,8 @@ import GCompris 1.0
 import "programmingMaze.js" as Activity
 
 GridView {
-    id: answerSheet
-    property Item background
-    property ListModel currentModel
+    id: codeArea
     z: 1
-
     width: background.width * 0.4
     height: background.height * 0.29
     cellWidth: background.buttonWidth
@@ -54,6 +52,7 @@ GridView {
     keyNavigationWraps: true
     focus: true
 
+    property ListModel currentModel
     property int draggedItemIndex: -1
     property int possibleDropIndex: -1
     property int possibleDropRemoveIndex: -1
@@ -69,15 +68,12 @@ GridView {
      */
     property int initialEditItemIndex: -1
 
-    //Tells if any instruction is selected for editing.
+    // Tells if any instruction is selected for editing.
     property bool isEditingInstruction: false
 
-    Keys.onRightPressed: moveCurrentIndexRight()
-    Keys.onLeftPressed: moveCurrentIndexLeft()
-    Keys.onUpPressed: moveCurrentIndexUp()
-    Keys.onDownPressed: moveCurrentIndexDown()
-    Keys.onEnterPressed: background.runCodeOrResetTux()
-    Keys.onReturnPressed: background.runCodeOrResetTux()
+    signal spaceKeyPressed
+    signal tabKeyPressed
+    signal deleteKeyPressed
 
     /**
      * There can be three possibilities here:
@@ -86,32 +82,34 @@ GridView {
      * 2. We want to select an instruction to edit, or deselect it.
      * 3. We want to append an instruction.
      */
-    Keys.onSpacePressed: {
+    onSpaceKeyPressed: {
         if(currentIndex != -1) {
-            if(instruction.instructionToInsert && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed)) {
+            if(instructionArea.instructionToInsert && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed)) {
                 var isInstructionInserted = appendInstruction()
                 if(isInstructionInserted)
                     currentModel.move(currentModel.count - 1, currentIndex, 1)
             }
             else {
                 if((initialEditItemIndex == currentIndex) || (initialEditItemIndex == -1 && currentIndex != -1)) {
-                    answerSheet.isEditingInstruction = !answerSheet.isEditingInstruction
+                    codeArea.isEditingInstruction = !codeArea.isEditingInstruction
                 }
 
-                if(!answerSheet.isEditingInstruction)
-                    answerSheet.initialEditItemIndex = -1
+                if(!codeArea.isEditingInstruction)
+                    codeArea.initialEditItemIndex = -1
                 else
                     initialEditItemIndex = currentIndex
-                var calculatedX = (initialEditItemIndex % 4) * answerSheet.cellWidth
-                var calculatedY = Math.floor(initialEditItemIndex / 4) * answerSheet.cellHeight
+
+                var calculatedX = (initialEditItemIndex % 4) * codeArea.cellWidth
+                var calculatedY = Math.floor(initialEditItemIndex / 4) * codeArea.cellHeight
                 editInstructionIndicator.x = calculatedX + 1.5 * ApplicationInfo.ratio
                 editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
             }
         }
-        else if((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) && instruction.instructionToInsert)
+        else if((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) && instructionArea.instructionToInsert)
             appendInstruction()
     }
-    Keys.onDeletePressed: {
+
+    onDeleteKeyPressed: {
         if(currentIndex != -1) {
             currentModel.remove(currentIndex)
             items.numberOfInstructionsAdded--
@@ -120,10 +118,10 @@ GridView {
     }
 
     function appendInstruction() {
-        if(!(background.insertIntoProcedure && (instruction.instructionToInsert === "call-procedure"))) {
-            currentModel.append({ "name": instruction.instructionToInsert })
+        if(background.insertIntoMain || (instructionArea.instructionToInsert != "call-procedure")) {
+            currentModel.append({ "name": instructionArea.instructionToInsert })
             items.numberOfInstructionsAdded++
-            instruction.instructionToInsert = ""
+            instructionArea.instructionToInsert = ""
             return true
         }
         return false
@@ -135,7 +133,7 @@ GridView {
     }
 
     Item {
-        id: dropPosIndicator
+        id: dropPositionIndicator
         visible: false
         height: background.buttonHeight
         width: 3 * ApplicationInfo.ratio
@@ -152,14 +150,14 @@ GridView {
         states: [
             State {
                 name: "shown"
-                when: answerSheet.possibleDropIndex != -1
+                when: codeArea.possibleDropIndex != -1
                 PropertyChanges {
-                    target: dropPosIndicator
+                    target: dropPositionIndicator
                     visible: true
-                    x: Math.floor(answerSheet.xCoordinateInPossibleDrop / answerSheet.cellWidth) *
-                       answerSheet.cellWidth - 1.5 * ApplicationInfo.ratio
-                    y: Math.floor(answerSheet.yCoordinateInPossibleDrop / answerSheet.cellHeight) *
-                       answerSheet.cellHeight + 1.5 * ApplicationInfo.ratio
+                    x: Math.floor(codeArea.xCoordinateInPossibleDrop / codeArea.cellWidth) *
+                       codeArea.cellWidth - 1.5 * ApplicationInfo.ratio
+                    y: Math.floor(codeArea.yCoordinateInPossibleDrop / codeArea.cellHeight) *
+                       codeArea.cellHeight + 1.5 * ApplicationInfo.ratio
                 }
             }
         ]
@@ -167,7 +165,7 @@ GridView {
 
     Rectangle {
         id: editInstructionIndicator
-        visible: answerSheet.isEditingInstruction && answerSheet.count != 0
+        visible: codeArea.isEditingInstruction && codeArea.count != 0
         width: background.buttonWidth - 3 * ApplicationInfo.ratio
         height: background.buttonHeight - 3 * ApplicationInfo.ratio
         color: "red"
@@ -177,34 +175,46 @@ GridView {
         radius: width / 18
     }
 
-    Item {
-        id: dndContainer
-        anchors.fill: parent
-    }
-
     MouseArea {
-        id: coords
+        id: codeAreaMouse
         anchors.fill: parent
         enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
         onPressed: {
-            answerSheet.draggedItemIndex = answerSheet.indexAt(mouseX,mouseY)
-            if(answerSheet.draggedItemIndex === -1) {
+            codeArea.draggedItemIndex = codeArea.indexAt(mouseX,mouseY)
+            if(codeArea.draggedItemIndex === -1) {
                 constraintInstruction.changeConstraintInstructionOpacity()
-                answerSheet.isEditingInstruction = false
+                codeArea.isEditingInstruction = false
             }
-            else if(!answerSheet.isEditingInstruction)
-                answerSheet.initialEditItemIndex = answerSheet.draggedItemIndex
+            else if(!codeArea.isEditingInstruction)
+                codeArea.initialEditItemIndex = codeArea.draggedItemIndex
         }
+
+        onPositionChanged: {
+            var newPos = codeArea.indexAt(mouseX, mouseY)
+            var calculatedX = Math.floor(mouseX / codeArea.cellWidth) * codeArea.cellWidth
+            var previousIndexPosition = codeArea.indexAt(calculatedX - 1, mouseY)
+
+            // If the user want to move an item to the end, then the new position will be after the last instruction.
+            if(newPos == -1 && previousIndexPosition != -1)
+                newPos = previousIndexPosition + 1
+
+            codeArea.isEditingInstruction = false
+            codeArea.xCoordinateInPossibleDrop = mouseX
+            codeArea.yCoordinateInPossibleDrop = mouseY
+            codeArea.possibleDropIndex = newPos
+        }
+
         onReleased: {
-            if(answerSheet.draggedItemIndex != -1) {
-                var draggedIndex = answerSheet.draggedItemIndex
-                var dropIndex = answerSheet.indexAt(mouseX,mouseY)
-                var calculatedX = Math.floor(mouseX / answerSheet.cellWidth) * answerSheet.cellWidth
-                var calculatedY = Math.floor(mouseY / answerSheet.cellHeight) * answerSheet.cellHeight
-                answerSheet.draggedItemIndex = -1
+            if(codeArea.draggedItemIndex != -1) {
+                var draggedIndex = codeArea.draggedItemIndex
+                var dropIndex = codeArea.indexAt(mouseX,mouseY)
+                var calculatedX = Math.floor(mouseX / codeArea.cellWidth) * codeArea.cellWidth
+                var calculatedY = Math.floor(mouseY / codeArea.cellHeight) * codeArea.cellHeight
+                codeArea.draggedItemIndex = -1
+
                 if(dropIndex == -1) {
-                    var previousIndexCalculatedPosition = answerSheet.indexAt(calculatedX - 1, mouseY)
-                    if(previousIndexCalculatedPosition == -1) {
+                    var previousIndexPosition = codeArea.indexAt(calculatedX - 1, mouseY)
+                    if(previousIndexPosition == -1) {
                         currentModel.remove(draggedIndex)
                         items.numberOfInstructionsAdded--
                     }
@@ -212,46 +222,37 @@ GridView {
                         currentModel.append(currentModel.get(draggedIndex))
                         currentModel.remove(draggedIndex)
                     }
-                    answerSheet.initialEditItemIndex = -1
+                    codeArea.initialEditItemIndex = -1
                 }
                 else if(draggedIndex != dropIndex) {
                     if(dropIndex <= draggedIndex) {
-                        //moving box from right to left
+                        // Moving instruction from right to left
                         currentModel.move(draggedIndex, dropIndex, 1)
                     }
                     else {
-                        //moving box from left to right
+                        // Moving instruction from left to right
                         currentModel.move(draggedIndex, dropIndex - 1, 1)
                     }
-                    answerSheet.initialEditItemIndex = -1
+                    codeArea.initialEditItemIndex = -1
                 }
                 else {
-                    if(answerSheet.initialEditItemIndex == dropIndex) {
-                        answerSheet.isEditingInstruction = !answerSheet.isEditingInstruction
-                        if(!answerSheet.isEditingInstruction)
-                            answerSheet.initialEditItemIndex = -1
+                    /**
+                     * If the index of the initially selected instruction (if any) is same as the currently selected instruction,
+                     * deselect it for editing, else make the current instruction as the initially editable item and move the edit indicator to that position.
+                     */
+                    if(codeArea.initialEditItemIndex == dropIndex) {
+                        codeArea.isEditingInstruction = !codeArea.isEditingInstruction
+                        if(!codeArea.isEditingInstruction)
+                            codeArea.initialEditItemIndex = -1
                     }
                     else
-                        answerSheet.initialEditItemIndex = draggedIndex
+                        codeArea.initialEditItemIndex = draggedIndex
 
                     editInstructionIndicator.x = calculatedX + 1.5 * ApplicationInfo.ratio
                     editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
                 }
-                answerSheet.possibleDropIndex = -1
+                codeArea.possibleDropIndex = -1
             }
-        }
-        onPositionChanged: {
-            var newPos = answerSheet.indexAt(mouseX, mouseY)
-            var calculatedX = Math.floor(mouseX / answerSheet.cellWidth) * answerSheet.cellWidth
-            var previousIndexCalculatedPosition = answerSheet.indexAt(calculatedX - 1, mouseY)
-
-            //If the user want to move an item to the end, then the new position will be after the last instruction.
-            if(newPos == -1 && previousIndexCalculatedPosition != -1)
-                newPos = previousIndexCalculatedPosition + 1
-            answerSheet.isEditingInstruction = false
-            answerSheet.xCoordinateInPossibleDrop = mouseX
-            answerSheet.yCoordinateInPossibleDrop = mouseY
-            answerSheet.possibleDropIndex = newPos
         }
     }
 
@@ -284,23 +285,26 @@ GridView {
             states: [
                 State {
                     name: "inDrag"
-                    when: index == answerSheet.draggedItemIndex
+                    when: index == codeArea.draggedItemIndex
+
                     PropertyChanges { target: circlePlaceholder; opacity: 1 }
-                    PropertyChanges { target: item; parent: dndContainer }
+                    PropertyChanges { target: item; parent: codeArea }
                     PropertyChanges { target: item; width: background.buttonWidth * 0.80 }
                     PropertyChanges { target: item; height: background.buttonHeight * 0.80 }
                     PropertyChanges { target: item; anchors.centerIn: undefined }
-                    PropertyChanges { target: item; x: coords.mouseX - item.width / 2 }
-                    PropertyChanges { target: item; y: coords.mouseY - item.height / 2 }
+                    PropertyChanges { target: item; x: codeAreaMouse.mouseX - item.width / 2 }
+                    PropertyChanges { target: item; y: codeAreaMouse.mouseY - item.height / 2 }
                 },
                 State {
                     name: "greyedOut"
-                    when: (answerSheet.draggedItemIndex != -1) && (answerSheet.draggedItemIndex != index)
+                    when: (codeArea.draggedItemIndex != -1) && (codeArea.draggedItemIndex != index)
+
                     PropertyChanges { target: item; opacity: 0.7 }
                 },
                 State {
                     name: "inactive"
-                    when: (answerSheet.draggedItemIndex == -1) || (answerSheet.draggedItemIndex == index)
+                    when: (codeArea.draggedItemIndex == -1) || (codeArea.draggedItemIndex == index)
+
                     PropertyChanges { target: item; opacity: 1.0 }
                 }
             ]

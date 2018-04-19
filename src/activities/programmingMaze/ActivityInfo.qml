@@ -1,6 +1,7 @@
 /* GCompris - ActivityInfo.qml
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -48,5 +49,5 @@ ActivityInfo {
           qsTr("<ul><li><b>ENTER</b> or <b>RETURN</b>.</li></ul>")
   credit: ""
   section: "fun"
-  createdInVersion: 9000
+  createdInVersion: 9500
 }

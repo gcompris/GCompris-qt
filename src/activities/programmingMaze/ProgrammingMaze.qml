@@ -1,6 +1,7 @@
 /* GCompris - ProgrammingMaze.qml
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
  *   Siddhesh Suthar <siddhesh.it@gmail.com>
@@ -55,7 +56,6 @@ ActivityBase {
         signal stop
 
         property bool insertIntoMain: true
-        property bool insertIntoProcedure: false
         property alias items: items
         property int buttonWidth: background.width / 10
         property int buttonHeight: background.height / 15.3
@@ -79,7 +79,7 @@ ActivityBase {
             property alias mainFunctionCodeArea: mainFunctionCodeArea
             property alias procedureModel: procedureModel
             property alias procedureCodeArea: procedureCodeArea
-            property alias instruction: instruction
+            property alias instructionArea: instructionArea
             property alias player: player
             property alias constraintInstruction: constraintInstruction
             property alias tutorialImage: tutorialImage
@@ -91,12 +91,12 @@ ActivityBase {
             property int numberOfInstructionsAdded
         }
 
-        //This function catches the signal emitted after completion of movement of Tux after executing each instruction.
+        // This function catches the signal emitted after completion of movement of Tux after executing each instruction.
         function currentInstructionExecutionComplete() {
             Activity.checkSuccessAndExecuteNextInstruction()
         }
 
-        //This function catches the signal emitted after finding a dead-end in any of the executing instruction.
+        // This function catches the signal emitted after finding a dead-end in any of the executing instruction.
         function deadEnd() {
             Activity.deadEnd()
         }
@@ -106,55 +106,29 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-        Keys.onRightPressed: {
-            activity.keyboardNavigationVisible = true
-            instruction.moveCurrentIndexRight()
-        }
-        Keys.onLeftPressed: {
-            activity.keyboardNavigationVisible = true
-            instruction.moveCurrentIndexLeft()
-        }
-        Keys.onDownPressed: {
-            activity.keyboardNavigationVisible = true
-            instruction.moveCurrentIndexDown()
-        }
-        Keys.onUpPressed: {
-            activity.keyboardNavigationVisible = true
-            instruction.moveCurrentIndexUp()
-        }
-        Keys.onSpacePressed: {
-            if(instruction.currentIndex != -1)
-                instruction.currentItem.mouseAreaInstruction.clicked()
-        }
-        Keys.onEnterPressed: runCodeOrResetTux()
-        Keys.onReturnPressed: runCodeOrResetTux()
-        Keys.onTabPressed:  {
-            activity.keyboardNavigationVisible = true
-            changeFocus("main")
-        }
+        property var areaWithKeyboardInput: instructionArea
 
-        function changeFocus(currentCodeArea) {
-            if(currentCodeArea === "main") {
-                mainFunctionCodeArea.forceActiveFocus()
-                background.insertIntoMain = true
-                background.insertIntoProcedure = false
-                instruction.currentIndex = -1
-                activeCodeAreaIndicator.changeActiveCodeAreaIndicator(mainFunctionCodeArea)
-            }
-            else if(currentCodeArea === "procedure") {
-                procedureCodeArea.forceActiveFocus()
-                background.insertIntoMain = false
-                background.insertIntoProcedure = true
-                mainFunctionCodeArea.currentIndex = -1
-                activeCodeAreaIndicator.changeActiveCodeAreaIndicator(procedureCodeArea)
-            }
-            else if(currentCodeArea === "instruction") {
-                activity.forceActiveFocus()
-                background.insertIntoMain = true
-                background.insertIntoProcedure = false
-                Activity.resetCodeAreasIndices()
-                instruction.currentIndex = 0
-                activeCodeAreaIndicator.changeActiveCodeAreaIndicator(instruction)
+        onAreaWithKeyboardInputChanged: activeCodeAreaIndicator.changeActiveCodeAreaIndicator(areaWithKeyboardInput)
+
+        Keys.enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
+        Keys.onPressed: {
+            activity.keyboardNavigationVisible = true
+            if(event.key === Qt.Key_Left)
+                areaWithKeyboardInput.moveCurrentIndexLeft()
+            if(event.key === Qt.Key_Right)
+                areaWithKeyboardInput.moveCurrentIndexRight()
+            if(event.key === Qt.Key_Up)
+                areaWithKeyboardInput.moveCurrentIndexUp()
+            if(event.key === Qt.Key_Down)
+                areaWithKeyboardInput.moveCurrentIndexDown()
+            if(event.key === Qt.Key_Space)
+                areaWithKeyboardInput.spaceKeyPressed()
+            if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+                runCodeOrResetTux()
+            if(event.key === Qt.Key_Tab)
+                areaWithKeyboardInput.tabKeyPressed()
+            if(event.key === Qt.Key_Delete && activeCodeAreaIndicator.top != instructionArea.top) {
+                areaWithKeyboardInput.deleteKeyPressed()
             }
         }
 
@@ -257,13 +231,6 @@ ActivityBase {
             property int duration: 1000
             readonly property real playerCenterX: x + width / 2
             readonly property real playerCenterY: y + height / 2
-            rotation: 0
-
-            signal init
-
-            onInit: {
-                player.rotation = Activity.EAST
-            }
 
             MouseArea {
                 id: tuxMouseArea
@@ -278,6 +245,7 @@ ActivityBase {
         Rectangle {
             id: activeCodeAreaIndicator
             opacity: 0.5
+            visible: activity.keyboardNavigationVisible
 
             function changeActiveCodeAreaIndicator(activeArea) {
                 anchors.top = activeArea.top
@@ -286,7 +254,7 @@ ActivityBase {
         }
 
         GridView {
-            id: instruction
+            id: instructionArea
             width: parent.width * 0.5
             height: parent.height * 0.17
             cellWidth: background.buttonWidth
@@ -302,6 +270,19 @@ ActivityBase {
             header: instructionHeaderComponent
 
             property string instructionToInsert
+
+            signal spaceKeyPressed
+            signal tabKeyPressed
+
+            onSpaceKeyPressed: {
+                if(instructionArea.currentIndex != -1)
+                    instructionArea.currentItem.selectCurrentInstruction()
+            }
+
+            onTabKeyPressed:  {
+                instructionArea.currentIndex = -1
+                background.areaWithKeyboardInput = mainFunctionCodeArea
+            }
 
             highlight: Rectangle {
                 width: buttonWidth - 3 * ApplicationInfo.ratio
@@ -319,13 +300,12 @@ ActivityBase {
             keyNavigationWraps: true
 
             delegate: Item {
+                id: instructionItem
                 width: background.buttonWidth
                 height: background.buttonHeight * 1.18
 
-                property alias mouseAreaInstruction: mouseAreaInstruction
-
                 Rectangle {
-                    id: rect
+                    id: imageHolder
                     width: parent.width - 3 * ApplicationInfo.ratio
                     height: parent.height - 3 * ApplicationInfo.ratio
                     border.width: 1.2 * ApplicationInfo.ratio
@@ -342,29 +322,38 @@ ActivityBase {
                 }
 
                 MouseArea {
-                    id: mouseAreaInstruction
+                    id: mouseArea
                     anchors.fill: parent
                     enabled: (items.isTuxMouseAreaEnabled || items.isRunCodeEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
 
-                    signal clicked
+                    onPressed: instructionItem.checkModelAndInsert()
+                }
 
-                    onClicked: {
-                        if(!mainFunctionCodeArea.isEditingInstruction && !procedureCodeArea.isEditingInstruction) {
-                            instruction.instructionToInsert = name
-                            playClickedAnimation()
-                        }
-                        else {
-                            if(mainFunctionCodeArea.isEditingInstruction)
-                                replaceInstruction(mainFunctionModel, mainFunctionCodeArea)
-                            if(procedureCodeArea.isEditingInstruction && name != "call-procedure")
-                                replaceInstruction(procedureModel, procedureCodeArea)
-                        }
+                function selectCurrentInstruction() {
+                    if(!mainFunctionCodeArea.isEditingInstruction && !procedureCodeArea.isEditingInstruction) {
+                        instructionArea.instructionToInsert = name
+                        playClickedAnimation()
                     }
-                    onPressed: {
+                    else
                         checkModelAndInsert()
-                    }
+                }
 
-                    function appendInstruction(model, area) {
+                function checkModelAndInsert() {
+                    if(items.constraintInstruction.opacity)
+                        items.constraintInstruction.hide()
+
+                    if(!background.insertIntoMain && (name != Activity.CALL_PROCEDURE))
+                        insertIntoModel(procedureModel, procedureCodeArea)
+                    else if(background.insertIntoMain)
+                        insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
+                }
+
+                /**
+                 * If we are adding an instruction, append it to the model if number of instructions added is less than the maximum number of instructions allowed.
+                 * If editing, replace it with the selected instruction in the code area.
+                 */
+                function insertIntoModel(model, area) {
+                    if(!area.isEditingInstruction) {
                         if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
                             constraintInstruction.changeConstraintInstructionOpacity()
                         else {
@@ -373,57 +362,35 @@ ActivityBase {
                             items.numberOfInstructionsAdded++
                         }
                     }
-
-                    function replaceInstruction(model, area) {
+                    else {
                         playClickedAnimation()
                         model.set(area.initialEditItemIndex, {"name": name}, 1)
                         area.resetEditingValues()
                     }
+                }
 
-                    function checkModelAndInsert() {
-                        if(items.constraintInstruction.opacity)
-                            items.constraintInstruction.hide()
-
-                        if(background.insertIntoProcedure && (name != Activity.CALL_PROCEDURE))
-                            insertIntoModel(procedureModel, procedureCodeArea)
-                        else if(background.insertIntoMain)
-                            insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
-                    }
-
-                    /**
-                     * If we are adding an instruction, append it to the model if number of instructions added is less than the maximum number of instructions allowed.
-                     * If editing, replace it with the selected instruction in the code area.
-                     */
-                    function insertIntoModel(model, area) {
-                        if(!area.isEditingInstruction)
-                            appendInstruction(model, area)
-                        else
-                            replaceInstruction(model, area)
-                    }
-
-                    /**
-                     * If two successive clicks on the same icon are made very fast, stop the ongoing animation and set the scale back to 1.
-                     * Then start the animation for next click.
-                     * This gives proper feedback of multiple clicks.
-                     */
-                    function playClickedAnimation() {
-                        clickedAnim.stop()
-                        icon.scale = 1
-                        clickedAnim.start()
-                    }
+                /**
+                 * If two successive clicks on the same icon are made very fast, stop the ongoing animation and set the scale back to 1.
+                 * Then start the animation for next click.
+                 * This gives proper feedback of multiple clicks.
+                 */
+                function playClickedAnimation() {
+                    clickedAnimation.stop()
+                    icon.scale = 1
+                    clickedAnimation.start()
                 }
 
                 SequentialAnimation {
-                    id: clickedAnim
+                    id: clickedAnimation
                     PropertyAnimation {
-                        target: rect
+                        target: imageHolder
                         property: "scale"
                         to: 0.8
                         duration: 150
                     }
 
                     PropertyAnimation {
-                        target: rect
+                        target: imageHolder
                         property: "scale"
                         to: 1
                         duration: 150
@@ -432,40 +399,47 @@ ActivityBase {
             }
         }
 
-        // insert data upon clicking the list items into this answerData
-        // and then process it to run the code
         AnswerSheet {
             id: mainFunctionCodeArea
-            background: background
             currentModel: mainFunctionModel
             anchors.right: parent.right
             anchors.top: mainFunctionHeaderComponent.bottom
 
-            Keys.onTabPressed: {
-                if(!items.currentLevelContainsProcedure)
-                    background.changeFocus("instruction")
-                else
-                    background.changeFocus("procedure")
+            onTabKeyPressed: {
+                mainFunctionCodeArea.currentIndex = -1
+                if(!items.currentLevelContainsProcedure) {
+                    background.areaWithKeyboardInput = instructionArea
+                    instructionArea.currentIndex = 0
+                }
+                else {
+                    background.areaWithKeyboardInput = procedureCodeArea
+                    background.insertIntoMain = false
+                }
             }
         }
 
         AnswerSheet {
             id: procedureCodeArea
-            background: background
             currentModel: procedureModel
             anchors.right: parent.right
             anchors.top: procedureHeaderComponent.bottom
             visible: items.currentLevelContainsProcedure
+
             property alias procedureIterator: procedureCodeArea.currentIndex
 
-            Keys.onTabPressed: background.changeFocus("instruction")
+            onTabKeyPressed: {
+                procedureCodeArea.currentIndex = -1
+                background.areaWithKeyboardInput = instructionArea
+                instructionArea.currentIndex = 0
+                background.insertIntoMain = true
+            }
         }
 
         Image {
             id: runCode
             width: background.width / 10
             height: background.height / 10
-            anchors.right: instruction.right
+            anchors.right: instructionArea.right
             anchors.bottom: bar.top
             anchors.margins: 10 * ApplicationInfo.ratio
 
@@ -510,7 +484,7 @@ ActivityBase {
             id: instructionHeaderComponent
             Rectangle {
                 id: instructionHeaderRectangle
-                width: instruction.width
+                width: instructionArea.width
                 height: background.height / 11
                 border.width: 2 * ApplicationInfo.ratio
                 border.color: "black"
@@ -563,10 +537,7 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
-                    onClicked: {
-                        background.insertIntoMain = true
-                        background.insertIntoProcedure = false
-                    }
+                    onClicked: background.insertIntoMain = true
                 }
 
                 GCText {
@@ -605,15 +576,12 @@ ActivityBase {
                 source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
                 x: parent.border.width
                 y: x
-                opacity: background.insertIntoProcedure ? 1 : 0.5
+                opacity: !background.insertIntoMain ? 1 : 0.5
 
                 MouseArea {
                     anchors.fill: parent
                     enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
-                    onClicked: {
-                        background.insertIntoMain = false
-                        background.insertIntoProcedure = true
-                    }
+                    onClicked: background.insertIntoMain = false
                 }
 
                 GCText {

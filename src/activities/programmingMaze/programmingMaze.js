@@ -1,6 +1,7 @@
 /* GCompris - programmingMaze.js
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
  *   Siddhesh Suthar <siddhesh.it@gmail.com>
@@ -313,13 +314,13 @@ var instructionComponents = {
 }
 
 /**
- * The procedure function's object. This object is linked to all its instructions with signal and slot.
+ * The procedure function's object. This is a centralised procedure object and will be linked to all its instructions with signal and slot.
  *
  * Since the signals of instructions created in procedureCode need to be connected to the procedure file,
  * hence only one object for procedure function is sufficient and this same
- * procedure object will be re-used to push into the main code when the code is run.
+ * procedure object will be re-used to push into the main code whenever the procedure call is made.
  */
-var procedureFunctionObject
+var procedureObject
 
 var mainTutorialInstructions = [
             {
@@ -360,6 +361,33 @@ function stop() {
     destroyInstructionObjects()
 }
 
+/**
+ * This function creates a single centralised and re-usable set of procedureObject and the procedure instructions.
+ * The procedure instructions are then connected to the procedureObject (object of the procedure file).
+ *
+ * These can be accessed wherever required to execute the procedure and saves the process of re-creating all the instruction objets,
+ * connecting them to the procedure's slot and destroying them everytime for each function call which will be very redundant
+ * and quite memory consuming on devices with less RAM, weak processing power and slow performance.
+ *
+ * Hence these centralised objects will be created and destroyed only once in each level (depending on the need) and can be accessed when needed.
+ */
+function createProcedureObjects() {
+    procedureObject = instructionComponents[CALL_PROCEDURE].createObject(items.background)
+    procedureCode[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject(procedureObject)
+    procedureCode[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject(procedureObject, { "turnDirection": "turn-left" })
+    procedureCode[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject(procedureObject, { "turnDirection": "turn-right" })
+
+    procedureObject.foundDeadEnd.connect(items.background.deadEnd)
+    procedureObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)
+
+    var procedureInstructions = Object.keys(procedureCode)
+
+    for(var i = 0; i < procedureInstructions.length; i++) {
+        procedureCode[procedureInstructions[i]].foundDeadEnd.connect(procedureObject.deadEnd)
+        procedureCode[procedureInstructions[i]].executionComplete.connect(procedureObject.checkSuccessAndExecuteNextInstruction)
+    }
+}
+
 function destroyInstructionObjects() {
     for(var i = 0; i < mainFunctionCode.length; i++) {
         mainFunctionCode[i].destroy()
@@ -368,7 +396,7 @@ function destroyInstructionObjects() {
         procedureCode[MOVE_FORWARD].destroy()
         procedureCode[TURN_LEFT].destroy()
         procedureCode[TURN_RIGHT].destroy()
-        procedureFunctionObject.destroy()
+        procedureObject.destroy()
     }
 
     mainFunctionCode = []
@@ -382,9 +410,6 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     destroyInstructionObjects()
 
-    items.mainFunctionCodeArea.currentIndex = -1
-    items.procedureCodeArea.procedureIterator = -1
-
     var levelInstructions = mazeBlocks[currentLevel].instructions
 
     if(levelInstructions.indexOf(CALL_PROCEDURE) != -1)
@@ -392,29 +417,13 @@ function initLevel() {
     else
         items.currentLevelContainsProcedure = false
 
-    //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureFunctionObject's slots.
+    //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureObject's slots.
     if(items.currentLevelContainsProcedure) {
         if(!items.tutorialImage.shownProcedureTutorialInstructions) {
             items.tutorialImage.shownProcedureTutorialInstructions = true
             items.tutorialImage.visible = true
         }
-
-        procedureFunctionObject = instructionComponents[CALL_PROCEDURE].createObject(items.background)
-        procedureCode[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject(procedureFunctionObject)
-        procedureCode[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject(procedureFunctionObject, { "turnDirection": "turn-left" })
-        procedureCode[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject(procedureFunctionObject, { "turnDirection": "turn-right" })
-
-        procedureFunctionObject.foundDeadEnd.connect(items.background.deadEnd)
-        procedureFunctionObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)
-
-        procedureCode[MOVE_FORWARD].foundDeadEnd.connect(procedureFunctionObject.deadEnd)
-        procedureCode[MOVE_FORWARD].executionComplete.connect(procedureFunctionObject.checkSuccessAndExecuteNextInstruction)
-
-        procedureCode[TURN_LEFT].foundDeadEnd.connect(procedureFunctionObject.deadEnd)
-        procedureCode[TURN_LEFT].executionComplete.connect(procedureFunctionObject.checkSuccessAndExecuteNextInstruction)
-
-        procedureCode[TURN_RIGHT].foundDeadEnd.connect(procedureFunctionObject.deadEnd)
-        procedureCode[TURN_RIGHT].executionComplete.connect(procedureFunctionObject.checkSuccessAndExecuteNextInstruction)
+        createProcedureObjects()
     }
 
     // Stores the co-ordinates of the tile blocks in the current level
@@ -440,8 +449,9 @@ function initLevel() {
     // Center Tux in its first case
     items.player.x = currentLevelBlocksCoordinates[0].x * stepX + (stepX - items.player.width) / 2
     items.player.y = currentLevelBlocksCoordinates[0].y * stepY + (stepY - items.player.height) / 2
+    items.player.rotation = EAST
 
-    //Center fish at it's co-ordinate
+    // Center fish at it's co-ordinate
     items.fish.x = mazeBlocks[currentLevel].fish.x * stepX + (stepX - items.fish.width) / 2
     items.fish.y = mazeBlocks[currentLevel].fish.y * stepY + (stepY - items.fish.height) / 2
 
@@ -449,7 +459,6 @@ function initLevel() {
     deadEndPoint = false
     moveAnimDuration = 1000
     items.background.insertIntoMain = true
-    items.background.insertIntoProcedure = false
     items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
     items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
     items.isTuxMouseAreaEnabled = false
@@ -458,31 +467,28 @@ function initLevel() {
     items.constraintInstruction.show()
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
+    items.background.areaWithKeyboardInput = items.instructionArea
     resetCodeAreasIndices()
-    items.background.changeFocus("instruction")
     resetTux = false
     codeIterator = 0
-
-    items.player.init()
 }
 
 function resetCodeAreasIndices() {
-    items.instruction.currentIndex = -1
+    items.instructionArea.currentIndex = -1
     items.mainFunctionCodeArea.currentIndex = -1
     items.procedureCodeArea.currentIndex = -1
-    items.instruction.instructionToInsert = ''
+    items.instructionArea.instructionToInsert = ''
 }
 
 function getPlayerRotation() {
     return ((changedRotation % 360) + 360) % 360
 }
 
-//store all the instructions from main and procedure areas in their respective instruction lists.
+// Store all the instructions from main and procedure areas in their respective instruction lists.
 function runCode() {
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
 
-    //initialize code
     mainFunctionCode = []
 
     var instructionName
@@ -491,7 +497,8 @@ function runCode() {
     /**
      * Create and append objects of all the instructions in the main area code.
      *
-     * If the instruction is call-procedure, append the procedureFunctionObject, and it will access the instructions created in procedureCode which are linked to this object.
+     * If the instruction is call-procedure, append the procedureObject, and it will in turn execute the centralised
+     * instructions created in procedureCode which are linked to this object.
      */
     for(var i = 0; i < items.mainFunctionModel.count; i++) {
         instructionName = items.mainFunctionModel.get([i]).name
@@ -509,14 +516,14 @@ function runCode() {
             mainFunctionCode.push(instructionObject)
         }
         else {
-            mainFunctionCode.push(procedureFunctionObject)
+            mainFunctionCode.push(procedureObject)
         }
     }
 
-    //Append all the instructions from the procedure area.
+    // Append all the instructions from the procedure area to the procedureObject.
     for(var j = 0; j < items.procedureModel.count; j++) {
         instructionName = items.procedureModel.get([j]).name
-        procedureFunctionObject.procedureCode.append({ "name" : instructionName })
+        procedureObject.procedureCode.append({ "name" : instructionName })
     }
 
     items.isRunCodeEnabled = false
