@@ -49,8 +49,8 @@ module ActivityCheck
 
     # checks whether qsTr can be used in the lineStr
     def self.qsTr_use(lineStr, lineNumber)
-        matchStr = /(?<qsTr>(qsTr)\()?"[\w'!?:;]+( .*)*[.,]? ?"/.match(lineStr)
-        if matchStr and not matchStr["qsTr"]
+        matchStr = /([^ ]+): "[^"]+"/.match(lineStr)
+        if matchStr
             print_warning "line:#{lineNumber} #{matchStr} qsTr may not be used"
         end
     end
