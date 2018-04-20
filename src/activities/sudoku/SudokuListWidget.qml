@@ -37,7 +37,7 @@ Item {
 
     property alias model: mymodel;
     property alias view: view;
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     ListModel {
         id: mymodel

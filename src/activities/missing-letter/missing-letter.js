@@ -199,6 +199,8 @@ function showQuestion() {
     items.answers.model = question.choices
     items.questionText.text = question.maskedQuestion
     items.questionImage.source = question.image
+    items.isGoodAnswer = false
+    items.buttonsBlocked = false
 }
 
 function nextLevel() {
@@ -229,6 +231,7 @@ function previousLevel() {
 function showAnswer() {
     var question = getCurrentQuestion()
     playLetter(question.answer)
+    items.isGoodAnswer = true
     items.questionText.text = question.clearQuestion
 }
 

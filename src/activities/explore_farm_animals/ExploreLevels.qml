@@ -78,6 +78,7 @@ ActivityBase {
             id: items
 
             property GCAudio audioVoices: activity.audioVoices
+            property GCSfx audioEffects: activity.audioEffects
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
@@ -90,10 +91,20 @@ ActivityBase {
             property alias instruction: instruction
             property alias instructionText: instructionText
             property alias descriptionPanel: descriptionPanel
+            property alias nextQuestion: nextQuestion
             property bool hasAudioQuestions: activity.hasAudioQuestions
             property string currentAudio
             property var questionOrder
             property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[progressbar.value]] : ""
+        }
+        
+        Timer {
+            id: nextQuestion
+            repeat: false
+            interval: 2000
+            onTriggered: {
+                Activity.repeat();
+            }
         }
 
         Loader{
@@ -153,13 +164,13 @@ ActivityBase {
         Column {
             id: progress
             visible: items.score.currentSubLevel != 1
-            anchors.bottom: parent.bottom
+            anchors.bottom: bar.top
             anchors.right: parent.right
             anchors.margins: 10 * ApplicationInfo.ratio
             ProgressBar {
                 id: progressbar
-                height: questionText.height
-                width: background.width / 2.5
+                height: progressbarText.height
+                width: bar.width
                 property string message
                 onValueChanged: message = value + "/" + maximumValue
                 onMaximumValueChanged:  message = value + "/" + maximumValue
@@ -182,7 +193,7 @@ ActivityBase {
             sourceSize.width: questionText.height * 2
             fillMode: Image.PreserveAspectFit
             anchors.right: progress.left
-            anchors.bottom: parent.bottom
+            anchors.bottom: bar.top
             anchors.margins: 10 * ApplicationInfo.ratio
             MouseArea {
                 anchors.fill: parent

@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="800"
+   width="520"
    height="520"
    id="svg3313"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="Z1.svg">
   <defs
      id="defs3315" />
@@ -25,22 +25,23 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="375"
+     inkscape:cx="-58"
      inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1301"
-     inkscape:window-height="744"
-     inkscape:window-x="65"
-     inkscape:window-y="24"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1">
     <sodipodi:guide
        orientation="0,1"
        position="-5.7142857,1382.8571"
-       id="guide3328" />
+       id="guide3328"
+       inkscape:locked="false" />
   </sodipodi:namedview>
   <metadata
      id="metadata3318">
@@ -50,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,9 +61,9 @@
      id="layer1"
      transform="translate(0,-532.36218)">
     <path
-       style="fill:#6fa8dc;fill-rule:evenodd"
+       style="fill:#373737;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0"
-       d="m 177.70697,621.91138 0,33.35098 233.7264,0 c -13.71499,9.5105 -28.19194,20.69176 -43.43081,33.54379 l -214.58258,181.02068 0,34.70045 331.16004,0 0,-33.35097 -267.44244,0 25.42989,-19.85638 235.15505,-196.05756 0,-33.35099 z"
+       d="m 177.70697,661.91128 v 33.35098 h 233.7264 c -13.71499,9.5105 -28.19194,20.69176 -43.43081,33.54379 L 153.41998,909.82673 v 34.70045 H 484.58002 V 911.17621 H 217.13758 l 25.42989,-19.85638 235.15505,-196.05756 v -33.35099 z"
        id="path3267" />
   </g>
 </svg>

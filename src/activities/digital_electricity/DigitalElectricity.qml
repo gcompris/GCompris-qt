@@ -6,6 +6,7 @@
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Pulkit Gupta <pulkitnsit@gmail.com> (Qt Quick port)
  *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (mouse drag refactoring)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -43,7 +44,7 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool vert: background.width > background.height
+        property bool hori: background.width > background.height
 
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -52,6 +53,9 @@ ActivityBase {
         }
 
         Keys.onPressed: {
+            if ((event.key == Qt.Key_Return || event.key == Qt.Key_Enter) && okButton.enabled) {
+                Activity.checkAnswer()
+            }
             if (event.key == Qt.Key_Plus) {
                 Activity.zoomIn()
             }
@@ -59,16 +63,38 @@ ActivityBase {
                 Activity.zoomOut()
             }
             if (event.key == Qt.Key_Right) {
-                Activity.move(Activity.direction.RIGHT)
+                playArea.x -= 200;
             }
             if (event.key == Qt.Key_Left) {
-                Activity.move(Activity.direction.LEFT)
+                playArea.x += 200
             }
             if (event.key == Qt.Key_Up) {
-                Activity.move(Activity.direction.UP)
+                playArea.y += 200
             }
             if (event.key == Qt.Key_Down) {
-                Activity.move(Activity.direction.DOWN)
+                playArea.y -= 200
+            }
+            if (playArea.x >= mousePan.drag.maximumX) {
+                playArea.x = mousePan.drag.maximumX
+            }
+            if (playArea.y >= mousePan.drag.maximumY) {
+                playArea.y = mousePan.drag.maximumY
+            }
+            if (playArea.x <= mousePan.drag.minimumX) {
+                playArea.x = mousePan.drag.minimumX
+            }
+            if (playArea.y <= mousePan.drag.minimumY) {
+                playArea.y = mousePan.drag.minimumY
+            }
+        }
+        
+        onHoriChanged: {
+            if (hori == true) {
+                playArea.x += items.toolsMargin
+                playArea.y -= items.toolsMargin
+            } else {
+                playArea.x -= items.toolsMargin
+                playArea.y += items.toolsMargin
             }
         }
 
@@ -77,6 +103,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias playArea: playArea
+            property alias mousePan: mousePan
             property alias bar: bar
             property alias bonus: bonus
             property alias availablePieces: availablePieces
@@ -89,6 +116,8 @@ ActivityBase {
             property alias infoImage: infoImage
             property bool isTutorialMode: activity.isTutorialMode
             property alias tutorialInstruction: tutorialInstruction
+            property real toolsMargin: 90 * ApplicationInfo.ratio
+            property real zoomLvl: 0.25
         }
 
         Loader {
@@ -103,15 +132,15 @@ ActivityBase {
         IntroMessage {
             id: tutorialInstruction
             intro: []
-            textContainerWidth: background.vert ? parent.width - inputComponentsContainer.width - 90 * ApplicationInfo.ratio : 0.9 * background.width
-            textContainerHeight: background.vert ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
+            textContainerWidth: background.hori ? parent.width - inputComponentsContainer.width - items.toolsMargin : 0.9 * background.width
+            textContainerHeight: background.hori ? 0.5 * parent.height : parent.height - inputComponentsContainer.height - (bar.height * 2) - items.toolsMargin
             anchors {
                 fill: undefined
-                top: background.vert ? parent.top : inputComponentsContainer.bottom
+                top: background.hori ? parent.top : inputComponentsContainer.bottom
                 topMargin: 10
                 right: parent.right
                 rightMargin: 5
-                left: background.vert ? inputComponentsContainer.right : parent.left
+                left: background.hori ? inputComponentsContainer.right : parent.left
                 leftMargin: 5
             }
             z: 5
@@ -121,39 +150,37 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Rectangle {
-            id: playArea
-
+            id: visibleArea
             color: "#00000000"
-            x: background.vert ? 90 * ApplicationInfo.ratio : 0
-            y: background.vert ? 0 : 90 * ApplicationInfo.ratio
-            width: background.vert ?
-                       background.width - 90 * ApplicationInfo.ratio : background.width
-            height: background.vert ?
-                       background.height - (bar.height * 1.1) :
-                       background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    Activity.deselect()
-                    availablePieces.hideToolbar()
-                }
+            width: background.hori ? background.width - items.toolsMargin - 10 : background.width - 10
+            height: background.hori ? background.height - bar.height - items.toolsMargin - 10 : background.height - bar.height - 10
+            anchors {
+                fill: undefined
+                top: background.hori ? parent.top : inputComponentsContainer.bottom
+                topMargin: 5
+                right: parent.right
+                rightMargin: 5
+                left: background.hori ? inputComponentsContainer.right : parent.left
+                leftMargin: 5
+                bottom: bar.top
+                bottomMargin: 20
             }
-
+            z: 6
+            
             GCText {
                 id: infoTxt
                 anchors {
                     horizontalCenter: parent.horizontalCenter
-                    top: infoTxtContainer.top
+                    top: parent.top
                     topMargin: 2
                 }
                 fontSizeMode: Text.Fit
                 minimumPixelSize: 10
+                font.pixelSize: 150
                 color: "white"
-                style: Text.Outline
-                styleColor: "black"
                 horizontalAlignment: Text.AlignHLeft
                 width: Math.min(implicitWidth, 0.90 * parent.width)
-                height: inputOutputTxt.visible == false ? Math.min(implicitHeight, 0.9 * parent.height) :
+                height:  inputOutputTxt.visible == false ? Math.min(implicitHeight, 0.7 * parent.height) :
                         Math.min(implicitHeight, (inputOutputTxt.inputs > 2 ? 0.3 : 0.4) * parent.height)
                 wrapMode: TextEdit.WordWrap
                 visible: false
@@ -162,20 +189,13 @@ ActivityBase {
 
             Rectangle {
                 id: infoTxtContainer
-                anchors.centerIn: parent
-                width: infoTxt.width + 20
-                height: inputOutputTxt.visible == false ? infoTxt.height + infoImage.height + 6 :
-                        infoTxt.height + inputOutputTxt.height + truthTable.height + 8
-                opacity: 0.8
+                anchors.fill: parent
+                opacity: 1
                 radius: 10
+                color: "#373737"
                 border.width: 2
-                border.color: "black"
+                border.color: "#F2F2F2"
                 visible: infoTxt.visible
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
                 MouseArea {
                     anchors.fill: parent
                     onClicked: infoTxt.visible = false
@@ -185,20 +205,18 @@ ActivityBase {
 
             Image {
                 id: infoImage
-                property int heightNeed: parent.height - infoTxt.height
                 property bool imgVisible: false
-                height: source == "" ? 0 : parent.height - infoTxt.height - 10
+                height: source == "" ? 0 : parent.height * 0.3 - 10
                 width: source == "" ? 0 : parent.width - 10
                 fillMode: Image.PreserveAspectFit
                 visible: infoTxt.visible && imgVisible
                 anchors {
                     top: infoTxt.bottom
-                    horizontalCenter: parent.horizontalCenter
+                    horizontalCenter: infoTxtContainer.horizontalCenter
                 }
                 z: 5
             }
-
-
+            
             ListModel {
                 id: truthTablesModel
                 property int rows
@@ -214,27 +232,25 @@ ActivityBase {
                 visible: infoTxt.visible && displayTruthTable
                 property int inputs: truthTablesModel.inputs
                 property int outputs: truthTablesModel.outputs
-                property int cellSize: Math.min(parent.height - infoTxt.height - 10, (inputs > 2 ? 0.6 :
-                                       0.45) * parent.height) / truthTablesModel.rows
-                property int minSize: 2 * cellSize
+                property int cellSize: (inputs > 2 ? 0.65 : 0.5) * parent.height / (truthTablesModel.rows + 1)
+                property int maxWidth: Math.min(cellSize, parent.width * 0.95 / truthTablesModel.columns)
+                property int minSize: 2.5 * cellSize
                 height: cellSize
                 anchors {
                     top: infoTxt.bottom
                     horizontalCenter: parent.horizontalCenter
                 }
                 Rectangle {
-                    color: "#c7ecfb"
-                    width: Math.max(inputOutputTxt.minSize, inputOutputTxt.cellSize * inputOutputTxt.inputs)
+                    color: "#A7D9F9"
+                    width: inputOutputTxt.inputs > 1 ? inputOutputTxt.maxWidth * inputOutputTxt.inputs : inputOutputTxt.minSize
                     height: inputOutputTxt.cellSize
-                    border.color: "black"
+                    border.color: "#373737"
                     border.width: 1
                     GCText {
                         anchors.centerIn: parent
                         fontSizeMode: Text.Fit
                         minimumPixelSize: 10
-                        color: "white"
-                        style: Text.Outline
-                        styleColor: "black"
+                        color: "#353535"
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: parent.height
@@ -243,18 +259,16 @@ ActivityBase {
                     }
                 }
                 Rectangle {
-                    color: "#47ffc2"
-                    width: Math.max(inputOutputTxt.minSize, inputOutputTxt.cellSize * inputOutputTxt.outputs) * 1.5
+                    color: "#A7F9DD"
+                    width: inputOutputTxt.outputs > 1 ? inputOutputTxt.maxWidth * inputOutputTxt.outputs : inputOutputTxt.minSize
                     height: inputOutputTxt.cellSize
-                    border.color: "black"
+                    border.color: "#373737"
                     border.width: 1
                     GCText {
                         anchors.centerIn: parent
                         fontSizeMode: Text.Fit
                         minimumPixelSize: 10
-                        color: "white"
-                        style: Text.Outline
-                        styleColor: "black"
+                        color: "#353535"
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         height: parent.height
@@ -283,17 +297,17 @@ ActivityBase {
                         id: blueSquare
                         Rectangle {
                             width: ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ?
-                                   (inputOutputTxt.inputs > 1 ? inputOutputTxt.cellSize : inputOutputTxt.minSize) :
-                                   (inputOutputTxt.outputs > 1 ? inputOutputTxt.cellSize : inputOutputTxt.minSize) * 1.5
+                                   (inputOutputTxt.inputs > 1 ? inputOutputTxt.maxWidth : inputOutputTxt.minSize) :
+                                   (inputOutputTxt.outputs > 1 ? inputOutputTxt.maxWidth : inputOutputTxt.minSize)
                             height: inputOutputTxt.cellSize
-                            border.color: "black"
+                            border.color: "#373737"
                             border.width: 1
                             color: {
                                 if(truthTablesModel.inputs == 1) {
-                                    return index%2 == 0 ? "#c7ecfb" : "#47ffc2"
+                                    return index%2 == 0 ? "#A7D9F9" : "#A7F9DD"
                                 }
                                 else {
-                                    return ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ? "#c7ecfb" : "#47ffc2"
+                                    return ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ? "#A7D9F9" : "#A7F9DD"
                                 }
                             }
                                    
@@ -302,9 +316,7 @@ ActivityBase {
                                 anchors.centerIn: parent
                                 fontSizeMode: Text.Fit
                                 minimumPixelSize: 10
-                                color: "white"
-                                style: Text.Outline
-                                styleColor: "black"
+                                color: "#353535"
                                 horizontalAlignment: Text.AlignHCenter
                                 height: parent.height
                                 width: parent.width
@@ -314,27 +326,69 @@ ActivityBase {
                     }
                 }
             }
+            
+        }
+        
+        
+        Rectangle {
+            id: playArea
+            color: "#10000000"
+            x: background.hori ? items.toolsMargin : 0
+            y: background.hori ? 0 : items.toolsMargin
+            width: background.hori ?
+                       background.width * 4 - items.toolsMargin : background.width * 4
+            height: background.hori ?
+                       background.height * 4 - (bar.height * 1.1) :
+                       background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+            
+            PinchArea {
+                id: pinchZoom
+                anchors.fill: parent
+                onPinchFinished: {
+                    if (pinch.scale < 1) {
+                        Activity.zoomOut()
+                    }
+                    if (pinch.scale > 1) {
+                        Activity.zoomIn()
+                    }
+                }
+                MouseArea {
+                    id: mousePan
+                    anchors.fill: parent
+                    scrollGestureEnabled: false //needed for pinchZoom
+                    drag.target: playArea
+                    drag.axis: Drag.XandYAxis
+                    drag.minimumX: - playArea.width * items.zoomLvl
+                    drag.maximumX: background.hori ? items.toolsMargin : 0
+                    drag.minimumY: - playArea.height * items.zoomLvl
+                    drag.maximumY: background.hori ? 0 : items.toolsMargin
+                    onClicked: {
+                        Activity.deselect()
+                        availablePieces.hideToolbar()
+                    }
+                }
+            }
         }
 
         Rectangle {
             id: inputComponentsContainer
-            width: background.vert ?
-                       90 * ApplicationInfo.ratio :
+            width: background.hori ?
+                       items.toolsMargin :
                        background.width
-            height: background.vert ?
+            height: background.hori ?
                         background.height :
-                        90 * ApplicationInfo.ratio
+                        items.toolsMargin
             color: "#4A3823"
             anchors.left: parent.left
             Image {
                 anchors.fill: parent
-                anchors.rightMargin: background.vert ? 3 * ApplicationInfo.ratio : 0
-                anchors.bottomMargin: background.vert ? 0 : 3 * ApplicationInfo.ratio
+                anchors.rightMargin: background.hori ? 3 * ApplicationInfo.ratio : 0
+                anchors.bottomMargin: background.hori ? 0 : 3 * ApplicationInfo.ratio
                 source: Activity.url + "texture01.png"
                 fillMode: Image.Tile
                 ListWidget {
                     id: availablePieces
-                    vert: background.vert ? true : false
+                    hori: background.hori
                 }
             }
             z: 10
@@ -350,23 +404,19 @@ ActivityBase {
             }
             width: toolTipTxt.width + 10
             height: toolTipTxt.height + 5
+            color: "#373737"
             opacity: 1
             radius: 10
             z: 100
             border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            border.color: "#F2F2F2"
             property alias text: toolTipTxt.text
             Behavior on opacity { NumberAnimation { duration: 120 } }
 
             function show(newText) {
                 if(newText) {
                     text = newText
-                    opacity = 0.8
+                    opacity = 1
                 } else {
                     opacity = 0
                 }
@@ -377,8 +427,6 @@ ActivityBase {
                 anchors.centerIn: parent
                 fontSize: regularSize
                 color: "white"
-                style: Text.Outline
-                styleColor: "black"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: TextEdit.WordWrap
             }
@@ -449,11 +497,11 @@ ActivityBase {
                 bottom: bar.top
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio
-                bottomMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: height * 0.5
             }
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-
+            enabled: !tutorialInstruction.visible
             onClicked: Activity.checkAnswer()
         }
 

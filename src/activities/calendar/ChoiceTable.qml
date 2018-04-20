@@ -34,7 +34,7 @@ Rectangle {
     color: "#AAFFFFFF"
     radius: 10
     anchors.margins: 30
-    border.color: "black"
+    border.color: "#373737"
     border.width: 2
 
     function select() {
@@ -50,26 +50,20 @@ Rectangle {
 
     Image {
         id: cross
-        source: "qrc:/gcompris/src/activities/colors/resource/checkError.svg"
-        sourceSize.width: 128 * ApplicationInfo.ratio
+        z: 10
+        source: "qrc:/gcompris/src/core/resource/cancel.svg"
+        sourceSize.width: choiceBox.height
+        sourceSize.height: choiceBox.height
         anchors.centerIn: parent
-        width: 0
-        height: width
+        height: 0
+        width: cross.height
         opacity: 1
-        property int size: Math.min(parent.width, parent.height)
+        property int size: parent.height
     }
 
     SequentialAnimation {
         id: crossAnim
         ParallelAnimation {
-            PropertyAnimation {
-                target: cross
-                property: "width"
-                duration: 300
-                from: 0
-                to: choiceBox.width
-                easing.type: Easing.InOutQuad
-            }
             PropertyAnimation {
                 target: cross
                 property: "height"
@@ -81,14 +75,6 @@ Rectangle {
         }
         PauseAnimation { duration: 800 }
         ParallelAnimation {
-            PropertyAnimation {
-                target: cross
-                property: "width"
-                duration: 300
-                from: choiceBox.width
-                to: 0
-                easing.type: Easing.InOutQuad
-            }
             PropertyAnimation {
                 target: cross
                 property: "height"

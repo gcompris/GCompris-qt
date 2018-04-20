@@ -7,38 +7,16 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="801"
-   height="521"
+   width="520"
+   height="520"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.1 r15371"
    sodipodi:docname="plane1.svg">
   <defs
-     id="defs4">
-    <linearGradient
-       id="linearGradient4209">
-      <stop
-         style="stop-color:#47a4f2;stop-opacity:1;"
-         offset="0"
-         id="stop4211" />
-      <stop
-         style="stop-color:#41eff5;stop-opacity:1;"
-         offset="1"
-         id="stop4213" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient4209"
-       id="linearGradient4215"
-       x1="573.63519"
-       y1="941.40509"
-       x2="585.74628"
-       y2="348.81247"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
+     id="defs4" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -46,17 +24,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.81"
-     inkscape:cx="385.78447"
-     inkscape:cy="207.86316"
+     inkscape:zoom="0.57275649"
+     inkscape:cx="274.52467"
+     inkscape:cy="257.24588"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="721"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
-     inkscape:window-maximized="1"
+     inkscape:window-width="1500"
+     inkscape:window-height="1047"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -69,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,18 +55,18 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-124.25247,-414.2384)">
+     transform="translate(-124.25247,-415.2384)">
     <rect
-       style="fill:url(#linearGradient4215);fill-opacity:1;stroke:#000000;stroke-opacity:1"
+       style="opacity:1;fill:#61d1f2;fill-opacity:1;stroke:none;stroke-width:0.80622584;stroke-opacity:1"
        id="rect3050"
-       width="800"
+       width="520"
        height="520"
-       x="124.75247"
-       y="414.7384"
+       x="124.25247"
+       y="415.2384"
        ry="0" />
     <g
        id="g4004"
-       transform="translate(0,-4)">
+       transform="matrix(0.75687834,0,0,0.65000003,26.87459,235.65934)">
       <path
          sodipodi:end="6.2622978"
          sodipodi:start="0"
@@ -152,7 +130,7 @@
     </g>
     <g
        id="g3929"
-       transform="translate(276.23762,246.53465)">
+       transform="matrix(1.3031453,0,0,1.3031453,-134.79375,256.89347)">
       <g
          transform="translate(-128.71287,-23.762376)"
          id="g3903">
@@ -244,7 +222,7 @@
     </g>
     <g
        id="g3929-7"
-       transform="translate(-256.43565,335.14852)">
+       transform="matrix(1.3625221,0,0,0.9825102,-520.40823,373.09827)">
       <g
          transform="translate(-128.71287,-23.762376)"
          id="g3903-3">
@@ -336,7 +314,7 @@
     </g>
     <g
        id="g3929-4"
-       transform="translate(128.71287,25.247524)">
+       transform="matrix(0.9171958,0,0,0.65000003,73.289291,194.67023)">
       <g
          transform="translate(-128.71287,-23.762376)"
          id="g3903-8">
@@ -431,5 +409,5 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Dessin"
-     transform="translate(-124.25247,-105.9707)" />
+     transform="translate(-124.25247,-106.9707)" />
 </svg>

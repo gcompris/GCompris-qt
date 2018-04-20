@@ -25,7 +25,7 @@ Item {
     id: part
     property QtObject items
     property int index
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter

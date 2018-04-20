@@ -21,11 +21,34 @@
 import QtQuick 2.6
 import GCompris 1.0
 
+/**
+ * A QML component to display a domino.
+ *
+ * Domino consists of Flipable sides(front and back)
+ * and uses DominoNumber to display numbers.
+ * It is divided into two regions containing DominoNumbers.
+ *
+ * @inherit QtQuick.Flipable
+ */
 Flipable {
     id: flipable
 
+    /**
+     * type:int
+     * Integer displayed in first region.
+     */
     property alias value1: number1.value
+
+    /**
+     * type:int
+     * Integer displayed in second region.
+     */
     property alias value2: number2.value
+
+    /**
+     * type:int
+     * Highest integer to display.
+     */
     property int valueMax: 9
 
     // Domino style
@@ -36,11 +59,14 @@ Flipable {
     property color backColor: "white"
     property color pointColor: "black"
 
+    // Set to true when to display on both sides.
     property bool flipEnabled: false
+
     property bool flipped: true
 
+    // Set to false to prevent user inputs.
     property bool isClickable: true
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     front: Rectangle {
         anchors.fill: parent

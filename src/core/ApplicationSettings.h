@@ -24,11 +24,13 @@
 
 #include <QObject>
 #include <QQmlEngine>
-#include <QUrl>
 #include <QtGlobal>
 #include <QDebug>
 
 #include <QSettings>
+#include <QStandardPaths>
+
+#include <config.h>
 
 #define GC_DEFAULT_LOCALE "system"
 
@@ -252,8 +254,9 @@ class ApplicationSettings : public QObject
 
 public:
 	/// @cond INTERNAL_DOCS
-    explicit ApplicationSettings(QObject *parent = 0);
-    ~ApplicationSettings();
+    explicit ApplicationSettings(const QString &path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
+         + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QObject *parent = 0);
+    virtual ~ApplicationSettings();
     static void init();
     // It is not recommended to create a singleton of Qml Singleton registered
     // object but we could not found a better way to let us access ApplicationInfo
@@ -568,13 +571,13 @@ signals:
     void lastGCVersionRanChanged();
     void barHiddenChanged();
 
+protected:
+    static ApplicationSettings *m_instance;
+    
 private:
-
     // Update in configuration the couple {key, value} in the group.
     template<class T> void updateValueInConfig(const QString& group,
                                          const QString& key, const T& value);
-
-    static ApplicationSettings *m_instance;
 
     bool m_showLockedActivities;
     bool m_isAudioVoicesEnabled;

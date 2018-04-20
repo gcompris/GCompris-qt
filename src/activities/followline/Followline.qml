@@ -49,7 +49,7 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias fireman: fireman
             property alias fire: fire
             property alias bar: bar

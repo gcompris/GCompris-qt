@@ -61,7 +61,7 @@ ActivityBase {
             property alias mazeRows: maze.rows
             property alias mazeColumns: maze.columns
             property alias mazeRepeater: mazeRepeater.model
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias message: message
             property int playerx: 0
             property int playery: 0

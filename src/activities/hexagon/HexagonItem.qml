@@ -28,7 +28,7 @@ import GCompris 1.0
 
 Item {
     id: hexagon
-    property GCAudio audioEffects
+    property GCSfx audioEffects
     property ParticleSystemStar particles
     property alias color: softCanvas.color
     property bool hasStrawberry: false

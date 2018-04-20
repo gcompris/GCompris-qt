@@ -95,6 +95,7 @@ function drawSegment(pointIndex) {
         if (mode == "clickanddraw" || mode == "drawletters" || mode == "drawnumbers") {
             if (pointIndex < items.pointImageRepeater.count-1) {
                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/audioclick.wav')
             }
         }
 

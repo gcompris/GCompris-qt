@@ -84,6 +84,8 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.background.areaWithKeyboardFocus = items.selector
+    items.selectedItem = ""
 
     if(currentLevel < 4) {
         items.nbItems = 8

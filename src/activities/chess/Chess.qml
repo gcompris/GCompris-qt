@@ -63,7 +63,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -253,7 +253,7 @@ ActivityBase {
                     Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
                     Repeater {
                         id: lettersA
-                        model: chessboard.rotation == 0 ? ["F", "G", "F", "E", "D", "C", "B", "A"] : ["A", "B", "C", "D", "E", "F", "G", "H"]
+                        model: chessboard.rotation == 0 ? ["F", "G", "F", "E", "D", "C", "B", "A"] : ["A", "B", "C", "D", "E", "F", "G", "H"]
                         GCText {
                             x: items.cellSize * (index % 8) + (items.cellSize/2-width/2)
                             y: items.cellSize * Math.floor(index / 8)
@@ -383,7 +383,6 @@ ActivityBase {
             }
 
             function moveTo(from, to) {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
                 if(toPiece.img != '')

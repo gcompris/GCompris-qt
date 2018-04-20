@@ -21,16 +21,62 @@
 import QtQuick 2.6
 import GCompris 1.0
 
+/**
+ * A QML component to display integers(0-9) on Domino.
+ * Numbers are displayed in the form of number of circles.
+ *
+ * @inherit QtQuick.Item
+ */
 Item {
     id: item
+
+    /**
+     * type:int
+     * Integer to display on the domino
+     */
     property int value
+
+    /**
+     * type:int
+     * Highest number visible on domino.
+     */
     property int valueMax
+
+    /**
+     * type:color
+     * color of the dots to display an integer.
+     */
     property color color
+
+    /**
+     * type:color
+     * Border color of the dots to display an integer.
+     */
     property color borderColor
+
+    /**
+     * type:int
+     * Border width of the dots to display an integer.
+     */
     property int borderWidth
+
+    /**
+     * type:int
+     * Radius of the dots to display an integer.
+     */
     property int radius
+
+    /**
+     * type:boolean
+     * Set false to disable mouse/touch inputs on domino.
+     */
     property bool isClickable: true // Default value
-    property GCAudio audioEffects
+
+    /**
+     * type:GCAudio
+     * To play sound and audio effects.
+     */
+    property GCSfx audioEffects
 
     function isVisible(index) {
         var value = item.value
@@ -92,6 +138,7 @@ Item {
         }
     }
 
+    // Increase the displayed integer value by one.
     function up() {
         audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
         if(item.value == item.valueMax)
@@ -100,6 +147,7 @@ Item {
             item.value++
     }
 
+    // Decrease the displayed integer by one.
     function down() {
         audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
         if(item.value == 0)
@@ -120,6 +168,10 @@ Item {
         }
     }
 
+    /**
+     * type:boolean
+     * To check on touch devices to increase or decrease the integer value.
+     */
     property bool goUp
     Timer {
         id: timer

@@ -60,7 +60,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias bar: bar
             property alias bonus: bonus
             property alias hat: theHat
@@ -101,7 +101,7 @@ ActivityBase {
 
             GCText {
                 //: The math operation
-                text: mode == "minus" ? qsTr("-") : qsTr("+")
+                text: mode == "minus" ? qsTr("−") : qsTr("+")
                 anchors.right: mainlayout.right
                 anchors.rightMargin: 10
                 y: secondRow.y
@@ -215,20 +215,17 @@ ActivityBase {
         }
 
         BarButton {
-          id: okButton
-          source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-          sourceSize.width: 66 * bar.barZoom
-          anchors {
-              right: parent.right
-              rightMargin: 10 * ApplicationInfo.ratio
-              bottom: parent.bottom
-              bottomMargin: parent.width > 420 * ApplicationInfo.ratio ? 10 : bar.height
-          }
-          width: 66 * ApplicationInfo.ratio
-          height: 66 * ApplicationInfo.ratio
-          onClicked: {
-            Activity.verifyAnswer()
-          }
+            id: okButton
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: 10 * ApplicationInfo.ratio
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+
+            onClicked: Activity.verifyAnswer()
         }
 
         Bonus {

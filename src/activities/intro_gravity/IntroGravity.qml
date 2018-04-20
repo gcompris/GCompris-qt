@@ -78,7 +78,7 @@ ActivityBase {
             property alias timer: timer
             property alias arrow: arrow
             property alias asteroidCreation: asteroidCreation
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property double distLeft: Math.abs(spaceshipX / ApplicationInfo.ratio)
             property double distRight: Math.abs((background.width - spaceshipX) / ApplicationInfo.ratio)
             property double forceLeft: (Math.pow(scaleLeft, 2) / Math.pow(distLeft, 2)) * Math.pow(10, 6)

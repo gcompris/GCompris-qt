@@ -34,10 +34,6 @@
 #include <QRect>
 #include <QDesktopWidget>
 
-#include <QSettings>
-#include <QStandardPaths>
-#include <QDebug>
-
 #include <QtQml>
 
 #define GC_DEFAULT_FONT "Andika-R.otf"
@@ -86,11 +82,10 @@ static const QString PROGRESS_KEY = "progress";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
-ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
+ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *parent): QObject(parent),
      m_baseFontSizeMin(-7), m_baseFontSizeMax(7),
      m_fontLetterSpacingMin(0.0), m_fontLetterSpacingMax(8.0),
-     m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-              "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QSettings::IniFormat)
+     m_config(configPath, QSettings::IniFormat)
 {
     const QRect &screenSize = QApplication::desktop()->screenGeometry();
 
@@ -168,9 +163,9 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_isBarHidden = false;
 
     connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
-	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
-	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
-	connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
+    connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
+    connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
+    connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
     connect(this, &ApplicationSettings::previousHeightChanged, this, &ApplicationSettings::notifyPreviousHeightChanged);
     connect(this, &ApplicationSettings::previousWidthChanged, this, &ApplicationSettings::notifyPreviousWidthChanged);
     connect(this, &ApplicationSettings::localeChanged, this, &ApplicationSettings::notifyLocaleChanged);

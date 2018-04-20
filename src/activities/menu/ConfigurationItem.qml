@@ -278,17 +278,14 @@ Item {
         Flow {
             spacing: 5
             width: parent.width
-            Slider {
+            GCSlider {
                 id: baseFontSizeSlider
                 width: 250 * ApplicationInfo.ratio
-                style: GCSliderStyle {}
                 maximumValue: ApplicationSettings.baseFontSizeMax
                 minimumValue: ApplicationSettings.baseFontSizeMin
-                stepSize: 1.0
-                tickmarksEnabled: true
-                updateValueWhileDragging: true
                 value: baseFontSize
                 onValueChanged: ApplicationSettings.baseFontSize = value;
+                scrollEnabled: false
             }
             GCText {
                 id: baseFontSizeText
@@ -316,17 +313,14 @@ Item {
         Flow {
             spacing: 5
             width: parent.width
-            Slider {
+            GCSlider {
                 id: fontLetterSpacingSlider
                 width: 250 * ApplicationInfo.ratio
-                style: GCSliderStyle {}
                 maximumValue: ApplicationSettings.fontLetterSpacingMax
                 minimumValue: ApplicationSettings.fontLetterSpacingMin
-                stepSize: 1.0
-                tickmarksEnabled: true
-                updateValueWhileDragging: true
                 value: fontLetterSpacing
-                onValueChanged: ApplicationSettings.fontLetterSpacing = value
+                onValueChanged: ApplicationSettings.fontLetterSpacing = value;
+                scrollEnabled: false
             }
             GCText {
                 id: fontLetterSpacingText

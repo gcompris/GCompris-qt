@@ -93,6 +93,7 @@ ActivityBase {
             property alias questionTopic: question.questionTopic
             property alias selectedPairs: selectedPairs
             property alias loadDatasetDelay: loadDatasetDelay
+            property bool buttonsBlocked: false
             property point questionMarkPosition: questionMarkPosition
             property point meLabelPosition: meLabelPosition
         }
@@ -353,6 +354,8 @@ ActivityBase {
                                     isCorrectAnswer: textLabel === answer
                                     onCorrectlyPressed: bonus.good("lion")
                                     onIncorrectlyPressed: bonus.bad("lion")
+                                    onPressed: items.buttonsBlocked = true
+                                    blockAllButtonClicks: items.buttonsBlocked
                             }
                         }
                     }
@@ -403,6 +406,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            onStop: items.buttonsBlocked = false
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

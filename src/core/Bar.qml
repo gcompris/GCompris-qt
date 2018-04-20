@@ -97,6 +97,9 @@ Item {
 
     readonly property int fullButton: 66
     readonly property int halfButton: 30
+    
+    readonly property int fullButtonScaled: fullButton * barZoom
+    readonly property int halfButtonScaled: halfButton * barZoom
 
     /**
      * type:BarEnumContent
@@ -274,7 +277,7 @@ Item {
         source: "qrc:/gcompris/src/core/resource/bar_open.svg";
         anchors.bottom: parent.bottom
         anchors.left: parent.left
-        sourceSize.width: fullButton * barZoom
+        sourceSize.width: fullButtonScaled
         MouseArea {
             anchors.fill: parent
 
@@ -383,7 +386,7 @@ Item {
         id: exit
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButtonScaled
             onClicked: Core.quit(bar.parent.parent);
         }
     }
@@ -391,7 +394,7 @@ Item {
         id: about
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButtonScaled
             onClicked: bar.aboutClicked()
         }
     }
@@ -399,7 +402,7 @@ Item {
         id: help
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButtonScaled
             onClicked: bar.helpClicked()
         }
     }
@@ -407,7 +410,7 @@ Item {
         id: previous
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
-            sourceSize.width: halfButton * barZoom
+            sourceSize.width: halfButtonScaled
             onClicked: bar.previousLevelClicked()
         }
     }
@@ -424,8 +427,8 @@ Item {
             visible: content.level & content.value
             onTextChanged: {
                 if (level>9)
-                    textLength = fullButton
-                else textLength = halfButton
+                    textLength = fullButtonScaled
+                else textLength = halfButtonScaled
             }
         }
     }
@@ -433,7 +436,7 @@ Item {
         id: next
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_next.svg";
-            sourceSize.width: halfButton * barZoom
+            sourceSize.width: halfButtonScaled
             onClicked: bar.nextLevelClicked()
         }
     }
@@ -441,7 +444,7 @@ Item {
         id: repeat
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButtonScaled
             onClicked: bar.repeatClicked()
         }
     }
@@ -449,7 +452,7 @@ Item {
         id: hint
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_hint.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButtonScaled
             onClicked: bar.hintClicked()
         }
     }
@@ -457,7 +460,7 @@ Item {
         id: reload
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_reload.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButton
             onClicked: bar.reloadClicked()
         }
     }
@@ -465,7 +468,7 @@ Item {
         id: config
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_config.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButtonScaled
             onClicked: bar.configClicked()
         }
     }
@@ -473,7 +476,7 @@ Item {
         id: home
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_home.svg";
-            sourceSize.width: fullButton * barZoom
+            sourceSize.width: fullButtonScaled
             onClicked: bar.homeClicked()
         }
     }

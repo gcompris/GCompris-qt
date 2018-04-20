@@ -43,7 +43,7 @@ Rectangle {
     // True when the value is entered correctly
     property bool valid: false
 
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     Component.onCompleted: Activity.registerAnswerItem(answerBackground)
 

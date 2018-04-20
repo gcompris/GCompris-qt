@@ -29,9 +29,6 @@ ActivityBase {
 
     onStart: focus = true;
 
-    Keys.onLeftPressed: Activity.leftClickPressed()
-    Keys.onRightPressed: Activity.rightClickPressed()
-
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svg"
@@ -45,13 +42,18 @@ ActivityBase {
             id: items
             property alias bar: bar
             property alias bonus: bonus
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias imageAnimOff: imageAnimOff
             property alias leftButton: leftButton
             property alias rightButton: rightButton
             property alias score: score
+            property bool buttonsBlocked: false
         }
 
+        Keys.onLeftPressed: Activity.leftClickPressed()
+        Keys.onRightPressed: Activity.rightClickPressed()
+        Keys.enabled: !items.buttonsBlocked
+        
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -120,6 +122,7 @@ ActivityBase {
             }
             ParallelAnimation {
                 id: imageAnimOn
+                onStopped: bonus.isPlaying ? items.buttonsBlocked = true : items.buttonsBlocked = false
                 NumberAnimation {
                     target: handImage
                     property: "opacity"
@@ -145,7 +148,10 @@ ActivityBase {
                 anchors.margins: 10
                 textLabel: qsTr("Left hand")
                 audioEffects: activity.audioEffects
-                onCorrectlyPressed: Activity.leftClick();
+                onPressed: items.buttonsBlocked = true
+                onCorrectlyPressed: Activity.leftClick()
+                blockAllButtonClicks: items.buttonsBlocked
+                onIncorrectlyPressed: items.buttonsBlocked = false
             }
 
             AnswerButton {
@@ -157,7 +163,10 @@ ActivityBase {
                 anchors.margins: 10
                 audioEffects: activity.audioEffects
                 textLabel: qsTr("Right hand")
-                onCorrectlyPressed: Activity.rightClick();
+                onPressed: items.buttonsBlocked = true
+                onCorrectlyPressed: Activity.rightClick()
+                blockAllButtonClicks: items.buttonsBlocked
+                onIncorrectlyPressed: items.buttonsBlocked = false
             }
         }
 
@@ -179,6 +188,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            onStart: items.buttonsBlocked = true
+            onStop: items.buttonsBlocked = false
         }
 
         Score {

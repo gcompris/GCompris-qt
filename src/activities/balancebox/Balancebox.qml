@@ -133,7 +133,7 @@ ActivityBase {
             property var buttonType: Fixture.Category5
             property alias parser: parser
             property double dpi
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property Loading loading: activity.loading
         }
 

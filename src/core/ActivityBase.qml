@@ -100,18 +100,18 @@ Item {
      *
      * Instead append to this global object to play your voices after the
      * intro music.
-     * @sa GCAudio audioEffects
+     * @sa GCAudio audioVoices
      */
     property GCAudio audioVoices
 
     /**
-     * type:GCAudio
+     * type:GCSfx
      * The global audio item for audio effects.
      *
-     * Append to it to play your effects.
-     * @sa GCAudio audioEffects
+     * Use it to play your effects.
+     * @sa GCSfx audioEffects
      */
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     /**
      * type:Loading
@@ -193,7 +193,7 @@ Item {
             // Ctrl+M toggle sound
             // We mute / unmute both channels in sync
             ApplicationSettings.isAudioVoicesEnabled = !ApplicationSettings.isAudioVoicesEnabled
-            ApplicationSettings.isAudioEffectsEnabled = ApplicationSettings.isAudioVoicesEnabled
+            ApplicationSettings.isAudioEffectsEnabled = !ApplicationSettings.isAudioEffectsEnabled
         } else if (event.modifiers === Qt.ControlModifier &&
                    event.key === Qt.Key_W) {
             // Ctrl+W exit the current activity

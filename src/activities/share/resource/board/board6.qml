@@ -20,13 +20,13 @@ import QtQuick 2.6
 /*
     Numbers of kids are not given anymore in the left widget.
     No rest (basket).
-    Boy or Girl rectangles already contain a given number of candies.
+    Boy or Girl rectangles already contain a given number of pieces of candies.
 */
 
 QtObject {
     property var levels : [
                 {
-            "instruction": qsTr("Help Jon split 9 candies between three boys and two girls. The rest will remain to Jon."),
+            "instruction": qsTr("Help Jon split 9 pieces of candies between three boys and two girls. The rest will remain to Jon."),
             "totalBoys": 3,
             "totalGirls": 2,
             "totalCandies": 9,
@@ -36,7 +36,7 @@ QtObject {
             "placedInBoys": 0
         },
         {
-            "instruction": qsTr("Jon wants to share the rest of his candies with his brother and his sister. Can you split them equally, knowing that his brother already has two candies?"),
+            "instruction": qsTr("Jon wants to share the rest of his pieces of candies with his brother and his sister. Can you split them equally, knowing that his brother already has two pieces of candies?"),
             "totalBoys": 1,
             "totalGirls": 1,
             "totalCandies": 6,
@@ -46,7 +46,7 @@ QtObject {
             "placedInBoys": 2
         },
         {
-            "instruction": qsTr("Help Tux split some candies to his friends: 9 candies to one boy and two girls."),
+            "instruction": qsTr("Help Tux split some pieces of candies to his friends: 9 pieces of candies to one boy and two girls."),
             "totalBoys": 1,
             "totalGirls": 2,
             "totalCandies": 13,

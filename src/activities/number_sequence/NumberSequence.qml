@@ -36,9 +36,12 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Item {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
+        source: "qrc:/gcompris/src/activities/checkers/resource/background-wood.svg"
+        sourceSize.width: parent.witdh
+        sourceSize.height: parent.height
         signal start
         signal stop
 
@@ -54,7 +57,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property GCAudio audioVoices: activity.audioVoices
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
@@ -69,19 +72,20 @@ ActivityBase {
         Image {
             id: imageBack
             anchors.top: parent.top
-            width: background.width
-            height: background.height
-            sourceSize.width: background.witdh
-            sourceSize.height: background.height
+            anchors.horizontalCenter: background.horizontalCenter
+            width: Math.min((background.height - bar.height * 1.5), background.width)
+            height: imageBack.width
+            sourceSize.width: imageBack.width
+            sourceSize.height: imageBack.height
         }
 
         Image {
             id: imageBack2
-            anchors.top: imageBack.top
-            width: background.width
-            height: background.height
-            sourceSize.width: background.witdh
-            sourceSize.height: background.height
+            anchors.centerIn: imageBack
+            width: imageBack.width
+            height: imageBack.height
+            sourceSize.width: imageBack2.width
+            sourceSize.height: imageBack2.height
         }
 
         Repeater {
@@ -90,12 +94,12 @@ ActivityBase {
             Rectangle {
                 id: line
                 opacity: 0
-                color: "black"
+                color: "#373737"
                 transformOrigin: Item.TopLeft
-                x: modelData[0] * background.width / 800
-                y: modelData[1] * background.height / 520
-                property var x2: modelData[2] * background.width / 800
-                property var y2: modelData[3] * background.height / 520
+                x: imageBack.x + modelData[0] * imageBack.width / 520
+                y: modelData[1] * imageBack.height / 520
+                property double x2: imageBack.x + modelData[2] * imageBack.width / 520
+                property double y2: modelData[3] * imageBack.height / 520
                 width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
                 height: 3 * ApplicationInfo.ratio
                 rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
@@ -115,9 +119,9 @@ ActivityBase {
                     source: Activity.url + (highlight ?
                             (pointImageOpacity ? "bluepoint.svg" : "bluepointHighlight.svg") :
                             markedAsPointInternal ? "blackpoint.svg" : "greenpoint.svg")
-                    sourceSize.height: background.height / 25  //to change the size of dots
-                    x: modelData[0] * background.width / 801 - sourceSize.height/2
-                    y: modelData[1] * background.height / 521 - sourceSize.height/2
+                    sourceSize.height: bar.height / 4  //to change the size of dots
+                    x: imageBack.x + modelData[0] * imageBack.width / 520 - sourceSize.height/2
+                    y: modelData[1] * imageBack.height / 520 - sourceSize.height/2
                     z: items.pointIndexToClick == index ? 1000 : index
 
                     // only hide last point for clickanddraw and number_sequence
@@ -229,7 +233,6 @@ ActivityBase {
 
             onPressed: {
                 checkPoints(touchPoints)
-                items.audioEffects.play('qrc:/gcompris/src/activities/drawnletters/resource/buttonclick.wav')
             }
             onTouchUpdated: {
                 checkPoints(touchPoints)

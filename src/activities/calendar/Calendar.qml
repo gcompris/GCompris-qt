@@ -84,11 +84,9 @@ ActivityBase {
             id: calendarBox
             width: items.horizontalLayout ? (answerChoices.visible ? parent.width * 0.75 : parent.width * 0.80) :
                                             (answerChoices.visible ? parent.width * 0.65 : parent.width * 0.85)
-            height: items.horizontalLayout ? parent.height * 0.75 : (answerChoices.visible ? parent.height * 0.17 : parent.height * 0.15)
+            height: items.horizontalLayout ? parent.height * 0.68 : parent.height - bar.height - questionItemBackground.height - okButton.height * 1.5
             anchors.top: questionItem.bottom
             anchors.topMargin: 5
-            anchors.bottom: bar.top
-            anchors.bottomMargin: items.horizontalLayout ? 50 : 70
             anchors.rightMargin: answerChoices.visible ? 100 : undefined
             anchors.horizontalCenterOffset: answerChoices.visible ? 80 : 0
             anchors.horizontalCenter: parent.horizontalCenter
@@ -99,40 +97,35 @@ ActivityBase {
         Calendar {
             id: calendar
             weekNumbersVisible: false
-            width: calendarBox.width * 0.90
-            height: calendarBox.height * 0.90
+            width: calendarBox.width * 0.96
+            height: calendarBox.height * 0.96
             anchors.centerIn: calendarBox
             frameVisible: true
             focus: !answerChoices.visible
-            __locale: Qt.locale(ApplicationSettings.locale)
+            __locale: Qt.locale(ApplicationInfo.localeShort)
             style: CalendarStyle {
                 navigationBar: Rectangle {
                     height: calendar.height * 0.12
-                    color: "lightBlue"
-                    Rectangle {
-                        color: Qt.rgba(1, 1, 1, 0.6)
-                        height: 1
-                        width: parent.width
-                    }
-                    Rectangle {
-                        anchors.bottom: parent.bottom
-                        height: 1
-                        width: parent.width
-                        color: "#ddd"
-                    }
+                    color: "#f2f2f2"
+                    
                     BarButton {
                         id: previousMonth
-                        height: parent.height
-                        width: height * 0.75
+                        height: parent.height * 0.8
+                        width: previousMonth.height
+                        sourceSize.height: previousMonth.height
+                        sourceSize.width: previousMonth.width
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.left: parent.left
-                        source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                        anchors.leftMargin: parent.height * 0.1
+                        source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
+                        rotation: 90
                         visible: ((calendar.visibleYear + calendar.visibleMonth) > Activity.minRange) ? true : false
-                        onClicked: control.__selectPreviousMonth()
+                        onClicked: calendar.showPreviousMonth()
                     }
                     GCText {
                         id: dateText
                         text: styleData.title
+                        color: "#373737"
                         horizontalAlignment: Text.AlignHCenter
                         fontSizeMode: Text.Fit
                         anchors.verticalCenter: parent.verticalCenter
@@ -143,13 +136,17 @@ ActivityBase {
                     }
                     BarButton {
                         id: nextMonth
-                        height: parent.height
-                        width: height * 0.75
+                        height: previousMonth.height
+                        width: nextMonth.height
+                        sourceSize.height: nextMonth.height
+                        sourceSize.width: nextMonth.width
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.right: parent.right
-                        source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                        anchors.rightMargin: previousMonth.anchors.leftMargin
+                        source: "qrc:/gcompris/src/core/resource/scroll_down.svg"
+                        rotation: 270
                         visible: ((calendar.visibleYear + calendar.visibleMonth) < Activity.maxRange) ? true : false
-                        onClicked: control.__selectNextMonth()
+                        onClicked: calendar.showNextMonth()
                     }
                 }
                 dayDelegate: Rectangle {
@@ -192,6 +189,9 @@ ActivityBase {
                     Label {
                         text: control.__locale.dayName(styleData.dayOfWeek, control.dayOfWeekFormat)
                         font.family: GCSingletonFontLoader.fontLoader.name
+                        fontSizeMode: Text.Fit
+                        minimumPixelSize: 1
+                        font.pixelSize: items.horizontalLayout ? parent.height * 0.7 : parent.width * 0.2
                         color: "#373737"
                         anchors.centerIn: parent
                     }
@@ -323,10 +323,12 @@ ActivityBase {
             }
 
             highlight: Rectangle {
-                width: calendar.width * 0.5
-                height: calendar.height / 6.5
-                color: "black"
-                opacity: 0.8
+                width: parent.width * 1.2
+                height: parent.height / 7
+                anchors.horizontalCenter: parent.horizontalCenter
+                color: "#e99e33"
+                border.width: 2
+                border.color: "#f2f2f2"
                 radius: 5
                 visible: answerChoices.keyNavigation
                 y: answerChoices.currentItem.y
@@ -343,8 +345,9 @@ ActivityBase {
 
         Rectangle {
             id: questionItemBackground
-            color: "black"
+            color: "#373737"
             border.width: 2
+            border.color: "#f2f2f2"
             radius: 10
             opacity: 0.85
             z: 10
@@ -353,12 +356,7 @@ ActivityBase {
                 bottomMargin: 10
             }
             width: parent.width - 20
-            height: parent.height * 0.10
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            height: parent.height * 0.1
         }
 
         // Displays the question.
@@ -378,10 +376,10 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: items.horizontalLayout ? 50 * ApplicationInfo.ratio : 35 * ApplicationInfo.ratio
-            width: height
-            sourceSize.width: width
-            sourceSize.height: height
+            height: bar.height * 0.6
+            width: okButton.height
+            sourceSize.width: okButton.width
+            sourceSize.height: okButton.height
             z: 10
             anchors.top: calendarBox.bottom
             anchors.right: calendarBox.right
@@ -422,6 +420,7 @@ ActivityBase {
 
         Score {
             id: score
+            height: okButton.height
             fontSize: items.horizontalLayout ? internalTextComponent.mediumSize : (answerChoices.visible ? internalTextComponent.smallSize : internalTextComponent.tinySize)
             anchors.top: calendarBox.bottom
             anchors.bottom: undefined

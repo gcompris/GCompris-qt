@@ -29,7 +29,7 @@ ActivityInfo {
       description: qsTr("Connect the dots to draw letters")
       //  intro: "Click on the selected points and draw the letter"
       //: Help goal
-      goal: qsTr("Children will learn how to draw different letters in a fun way.")
+      goal: qsTr("Learning how to draw the letters in a funny way.")
       //: Help prerequisite
       prerequisite: ""
       //: Help manual

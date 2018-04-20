@@ -64,7 +64,7 @@ Image {
 
     Component.onCompleted: {
         x = -cloud.width - 1
-        y = Activity.getRandomInt(0, background.height - cloud.height)
+        y = Activity.getRandomInt(0, background.height - (cloud.height + Activity.items.bar.height))
     }
 
     Behavior on x { PropertyAnimation { duration: 20000 } }

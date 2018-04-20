@@ -34,7 +34,7 @@ Item {
     property int frames
     property int frameW
     property real widthRatio
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     function moveTo(direction) {
         if (!movable)

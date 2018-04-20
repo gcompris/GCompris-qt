@@ -30,7 +30,7 @@ Item {
     property alias state: hatImg.state
     property alias target: offStar
     property int starsSize
-    property GCAudio audioEffects
+    property GCSfx audioEffects
 
     function getTarget() {
         return offStar
