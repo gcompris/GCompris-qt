@@ -22,7 +22,6 @@
 .import QtQuick 2.6 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-//var currentLevel
 var numberOfLevel
 var items
 var dataset
@@ -56,7 +55,6 @@ function equalityCheck() {
             items.score.playWinAnimation()
             resetBulbs()
             initializeValues()
-            //resetBulbs()
         }
         else {
             items.bonus.good("lion")
