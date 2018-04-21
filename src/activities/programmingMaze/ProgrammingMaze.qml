@@ -253,157 +253,24 @@ ActivityBase {
             }
         }
 
-        GridView {
+        InstructionArea {
             id: instructionArea
-            width: parent.width * 0.5
-            height: parent.height * 0.17
-            cellWidth: background.buttonWidth
-            cellHeight: background.buttonHeight
-
-            anchors.left: parent.left
-            anchors.top: mazeModel.bottom
-            anchors.topMargin: background.height * 0.4
-
-            interactive: false
-            model: instructionModel
-
-            header: instructionHeaderComponent
-
-            property string instructionToInsert
-
-            signal spaceKeyPressed
-            signal tabKeyPressed
-
-            onSpaceKeyPressed: {
-                if(instructionArea.currentIndex != -1)
-                    instructionArea.currentItem.selectCurrentInstruction()
-            }
-
-            onTabKeyPressed:  {
-                instructionArea.currentIndex = -1
-                background.areaWithKeyboardInput = mainFunctionCodeArea
-            }
-
-            highlight: Rectangle {
-                width: buttonWidth - 3 * ApplicationInfo.ratio
-                height: buttonHeight * 1.18 - 3 * ApplicationInfo.ratio
-                color: "lightsteelblue"
-                border.width: 3.5 * ApplicationInfo.ratio
-                border.color: "purple"
-                y: 1.5 * ApplicationInfo.ratio
-                z: 2
-                radius: width / 18
-                opacity: 0.6
-                visible: activity.keyboardNavigationVisible
-            }
-            highlightFollowsCurrentItem: true
-            keyNavigationWraps: true
-
-            delegate: Item {
-                id: instructionItem
-                width: background.buttonWidth
-                height: background.buttonHeight * 1.18
-
-                Rectangle {
-                    id: imageHolder
-                    width: parent.width - 3 * ApplicationInfo.ratio
-                    height: parent.height - 3 * ApplicationInfo.ratio
-                    border.width: 1.2 * ApplicationInfo.ratio
-                    border.color: "black"
-                    anchors.centerIn: parent
-                    radius: width / 18
-
-                    Image {
-                        id: icon
-                        source: Activity.url + name + ".svg"
-                        sourceSize { width: parent.width / 1.2; height: parent.height / 1.2 }
-                        anchors.centerIn: parent
-                    }
-                }
-
-                MouseArea {
-                    id: mouseArea
-                    anchors.fill: parent
-                    enabled: (items.isTuxMouseAreaEnabled || items.isRunCodeEnabled) && (items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed || procedureCodeArea.isEditingInstruction || mainFunctionCodeArea.isEditingInstruction)
-
-                    onPressed: instructionItem.checkModelAndInsert()
-                }
-
-                function selectCurrentInstruction() {
-                    if(!mainFunctionCodeArea.isEditingInstruction && !procedureCodeArea.isEditingInstruction) {
-                        instructionArea.instructionToInsert = name
-                        playClickedAnimation()
-                    }
-                    else
-                        checkModelAndInsert()
-                }
-
-                function checkModelAndInsert() {
-                    if(items.constraintInstruction.opacity)
-                        items.constraintInstruction.hide()
-
-                    if(!background.insertIntoMain && (name != Activity.CALL_PROCEDURE))
-                        insertIntoModel(procedureModel, procedureCodeArea)
-                    else if(background.insertIntoMain)
-                        insertIntoModel(mainFunctionModel, mainFunctionCodeArea)
-                }
-
-                /**
-                 * If we are adding an instruction, append it to the model if number of instructions added is less than the maximum number of instructions allowed.
-                 * If editing, replace it with the selected instruction in the code area.
-                 */
-                function insertIntoModel(model, area) {
-                    if(!area.isEditingInstruction) {
-                        if(items.numberOfInstructionsAdded >= items.maxNumberOfInstructionsAllowed)
-                            constraintInstruction.changeConstraintInstructionOpacity()
-                        else {
-                            playClickedAnimation()
-                            model.append({ "name": name })
-                            items.numberOfInstructionsAdded++
-                        }
-                    }
-                    else {
-                        playClickedAnimation()
-                        model.set(area.initialEditItemIndex, {"name": name}, 1)
-                        area.resetEditingValues()
-                    }
-                }
-
-                /**
-                 * If two successive clicks on the same icon are made very fast, stop the ongoing animation and set the scale back to 1.
-                 * Then start the animation for next click.
-                 * This gives proper feedback of multiple clicks.
-                 */
-                function playClickedAnimation() {
-                    clickedAnimation.stop()
-                    icon.scale = 1
-                    clickedAnimation.start()
-                }
-
-                SequentialAnimation {
-                    id: clickedAnimation
-                    PropertyAnimation {
-                        target: imageHolder
-                        property: "scale"
-                        to: 0.8
-                        duration: 150
-                    }
-
-                    PropertyAnimation {
-                        target: imageHolder
-                        property: "scale"
-                        to: 1
-                        duration: 150
-                    }
-                }
-            }
         }
 
-        AnswerSheet {
+        HeaderArea {
+            id: mainFunctionHeader
+            headerText: qsTr("Main")
+            headerOpacity: background.insertIntoMain ? 1 : 0.5
+            onClicked: background.insertIntoMain = true
+            anchors.top: parent.top
+            anchors.right: parent.right
+        }
+
+        CodeArea {
             id: mainFunctionCodeArea
             currentModel: mainFunctionModel
             anchors.right: parent.right
-            anchors.top: mainFunctionHeaderComponent.bottom
+            anchors.top: mainFunctionHeader.bottom
 
             onTabKeyPressed: {
                 mainFunctionCodeArea.currentIndex = -1
@@ -418,11 +285,21 @@ ActivityBase {
             }
         }
 
-        AnswerSheet {
+        HeaderArea {
+            id: procedureHeader
+            headerText: qsTr("Procedure")
+            headerOpacity: !background.insertIntoMain ? 1 : 0.5
+            visible: procedureCodeArea.visible
+            onClicked: background.insertIntoMain = false
+            anchors.top: mainFunctionCodeArea.bottom
+            anchors.right: parent.right
+        }
+
+        CodeArea {
             id: procedureCodeArea
             currentModel: procedureModel
             anchors.right: parent.right
-            anchors.top: procedureHeaderComponent.bottom
+            anchors.top: procedureHeader.bottom
             visible: items.currentLevelContainsProcedure
 
             property alias procedureIterator: procedureCodeArea.currentIndex
@@ -477,128 +354,6 @@ ActivityBase {
                 id: runCodeClickAnimation
                 NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100 }
                 NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100 }
-            }
-        }
-
-        Component {
-            id: instructionHeaderComponent
-            Rectangle {
-                id: instructionHeaderRectangle
-                width: instructionArea.width
-                height: background.height / 11
-                border.width: 2 * ApplicationInfo.ratio
-                border.color: "black"
-                color: "transparent"
-
-                Image {
-                    id: instructionHeaderImage
-                    width: parent.width - 2 * parent.border.width
-                    height: parent.height - 2 * parent.border.width
-                    source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
-                    x: parent.border.width
-                    y: x
-
-                    GCText {
-                        id: instructionHeaderText
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        width: parent.width
-                        height: parent.height
-                        fontSizeMode: Font.DemiBold
-                        minimumPointSize: 7
-                        fontSize: mediumSize
-                        wrapMode: Text.WordWrap
-                        color: "white"
-                        text: qsTr("Choose the instructions")
-                    }
-                }
-            }
-        }
-
-        Rectangle {
-            id: mainFunctionHeaderComponent
-            width: mainFunctionCodeArea.width
-            height: parent.height / 10
-            anchors.left: mainFunctionCodeArea.left
-            anchors.top: parent.top
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "black"
-            color: "transparent"
-
-            Image {
-                id: mainFunctionHeaderImage
-                width: parent.width - 2 * parent.border.width
-                height: parent.height - 2 * parent.border.width
-                x: parent.border.width
-                y: x
-                source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
-                opacity: background.insertIntoMain ? 1 : 0.5
-
-                MouseArea {
-                    anchors.fill: parent
-                    enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
-                    onClicked: background.insertIntoMain = true
-                }
-
-                GCText {
-                    id: mainFunctionHeaderText
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    width: parent.width
-                    height: parent.height
-                    fontSizeMode: Font.DemiBold
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: qsTr("Main function")
-                }
-            }
-        }
-
-        Rectangle {
-            id: procedureHeaderComponent
-            width: procedureCodeArea.width
-            height: parent.height / 10
-            anchors.left: procedureCodeArea.left
-            anchors.top: mainFunctionCodeArea.bottom
-            visible: procedureCodeArea.visible
-            border.width: 2 * ApplicationInfo.ratio
-            border.color: "black"
-            color: "transparent"
-
-            Image {
-                id: procedureHeaderImage
-                width: parent.width - 2 * parent.border.width
-                height: parent.height - 2 * parent.border.width
-                source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
-                x: parent.border.width
-                y: x
-                opacity: !background.insertIntoMain ? 1 : 0.5
-
-                MouseArea {
-                    anchors.fill: parent
-                    enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
-                    onClicked: background.insertIntoMain = false
-                }
-
-                GCText {
-                    id: procedureHeaderText
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    width: parent.width
-                    height: parent.height
-                    fontSizeMode: Font.DemiBold
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: qsTr("Procedure")
-                }
             }
         }
 

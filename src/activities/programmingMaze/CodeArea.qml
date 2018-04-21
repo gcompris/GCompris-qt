@@ -1,4 +1,4 @@
-/* GCompris - AnswerSheet.qml
+/* GCompris - CodeArea.qml
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
