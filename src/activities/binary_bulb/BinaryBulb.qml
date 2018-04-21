@@ -87,6 +87,12 @@ ActivityBase {
             }
         }
 
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+                Activity.equalityCheck()
+            }
+        }
+
         Rectangle {
             id: questionItemBackground
             opacity: 0.00
@@ -117,7 +123,6 @@ ActivityBase {
             id: row
             anchors.centerIn: parent
             spacing: 10 * ApplicationInfo.ratio
-            focus: true
             Repeater {
                 id: bulbs
                 model: items.numberOfBulbs

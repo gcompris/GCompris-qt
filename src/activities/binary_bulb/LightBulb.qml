@@ -21,6 +21,7 @@
 import QtQuick 2.6
 import "../../core"
 import GCompris 1.0
+import "binary_bulb.js" as Activity
 
 Image {
     id: bulb
@@ -28,6 +29,7 @@ Image {
     sourceSize.height: 60 * ApplicationInfo.ratio
     source: "resource/bulb_off.svg"
     state: "off"
+    focus: true
 
     property string bit: ""
     property int value: Math.pow(2,items.numberOfBulbs-index-1)
@@ -41,16 +43,7 @@ Image {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: {
-            if(bulb.state == "off") {
-                bulb.state = "on"
-                items.numberSoFar += value
-            }   
-            else {
-                bulb.state = "off"
-                items.numberSoFar -= value
-            }
-        }
+        onClicked: Activity.changeState(index, value)
     }
 
     GCText {

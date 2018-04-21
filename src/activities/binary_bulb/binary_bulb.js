@@ -68,6 +68,17 @@ function equalityCheck() {
     }    
 }
 
+function changeState(index,value) {
+    if(items.bulbs.itemAt(index).state == "off") {
+        items.bulbs.itemAt(index).state = "on"
+        items.numberSoFar += value
+    }   
+    else {
+        items.bulbs.itemAt(index).state = "off"
+        items.numberSoFar -= value
+    }
+}
+
 function initLevel() {
     items.bar.level = items.currentLevel + 1
     items.score.numberOfSubLevels = dataset[items.currentLevel].numbersToBeConverted.length
