@@ -42,6 +42,30 @@ Rectangle {
         width: parent.width - 50
         height: parent.height - (bar.height * 2)
 
+        property string name: "";
+        property string dateOfBirth: ""
+        property string password: "";
+
+        function save() {
+            console.log("saving user")
+
+            if(name != "" && dateOfBirth != "") {
+
+                console.log("name of the user: ", name, "date of birth of the user: ", dateOfBirth, "password : ", password)
+
+                userToUpdateModel.append({
+                    "name": name,
+                    "dateOfBirth": dateOfBirth,
+                    "password": password
+                })
+                name=""
+                dateOfBirth=""
+                password=""
+                console.log("total number of users: ", userToUpdateModel.count)
+            }
+
+        }
+
         model: userToUpdateModel
         selectionMode: SelectionMode.MultiSelection
 
@@ -60,28 +84,37 @@ Rectangle {
         TableViewColumn {
             role: "name"
             title: qsTr("Name")
+            width: 100
+
         }
         TableViewColumn {
             role: "dateOfBirth"
             title: qsTr("Birth year")
+            width: 100
         }
         TableViewColumn {
             id: passwordColumn
             role: "password"
+            width: 100
             title: qsTr("Password")
+
             delegate: Item {
-                width: passwordColumn.height
-                height: 50 // same as rowDelegate
+                id: passwordColumn
+                width: passwordColumn.width // same as rowDelegate
                 Item {
                     id: passwordField
                     anchors.fill: parent
+                    Component.onCompleted: {
+                        users.password =  passwordImage.source.toString()
+                    }
+
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
                             passwordImage.visible = !passwordImage.visible
                         }
                     }
-                    Text {
+                    GCText {
                         id: passwordText
                         visible: !passwordImage.visible
                         verticalAlignment: Text.AlignVCenter
@@ -96,8 +129,66 @@ Rectangle {
                 }
             }
         }
+        TableViewColumn {
+                id: saveDelete
+                resizable: true
+                title: qsTr("Save or Delete")
+                signal forceFocus()
+                width: users.width/3
+                delegate: Item {
+                    id: itemDel
+                    width: 100
+                    height: 40
+                    anchors.topMargin: 20
+                    Rectangle {
+                        id: save
+                        width: 100
+                        height: 40
+                        color: "black"
+                        anchors.rightMargin: 10
+                        GCText {
+                            anchors.centerIn: parent
+                            fontSize: tinySize
+                            color: "white"
+                            text: qsTr("Save")
+                        }
+                        MouseArea {
+                            id: saveMouseArea
+                            anchors.fill: parent
+                            onClicked: {
+                                saveDelete.forceFocus()
+                                users.save()
+                            }
+                        }
+
+                    }
+                    Rectangle {
+                        id: deleteUser
+                        width: 100
+                        height: 40
+                        anchors.leftMargin: 10
+                        anchors.left: save.right
+                        color: "black"
+                        GCText {
+                            anchors.centerIn: parent
+                            fontSize: tinySize
+                            color: "white"
+                            text: qsTr("Delete")
+                        }
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: {
+                                userToUpdateModel.remove(styleData.row)
+                                users.selection.clear();
+                            }
+                        }
+                    }
+                }
+
+            }
 
         itemDelegate: Rectangle {
+            id: rect
             SystemPalette {
                 id: myPalette;
                 colorGroup: SystemPalette.Active
@@ -105,14 +196,6 @@ Rectangle {
             color: {
                 var baseColor = styleData.row % 2 == 1 ? myPalette.alternateBase : myPalette.base
                 return styleData.selected ? myPalette.highlight : baseColor
-            }
-            Text {
-                anchors {
-                    verticalCenter: parent.verticalCenter
-                    left: parent.left
-                }
-                color: "black"
-                text: styleData.value
             }
 
             MouseArea {
@@ -135,28 +218,39 @@ Rectangle {
                 }
                 height: parent.height
                 width: parent.width
-                visible: false
+                visible: true
                 sourceComponent: visible ? input : undefined
+                Connections {
+                    target: saveDelete
+                    // forcing the focus triggers 'editingFinised' signal of TextField.
+                    onForceFocus: {
+                        loader.item.forceActiveFocus()
+                    }
+
+                }
 
                 Component {
                     id: input
                     TextField {
                         anchors.fill: parent
+                        visible: true
                         text: ""
                         onAccepted: {
                             loader.visible = false
                         }
 
-                        onActiveFocusChanged: {
-                            if (!activeFocus) {
-                                switch(styleData.column) {
-                                    case 0:
-                                    userToUpdateModel.get(styleData.row).name = text
+                        onEditingFinished: {
+                            switch(styleData.column) {
+                                case 0: {
+                                    if(text != "")
+                                        users.name = text
                                     break;
-                                    case 1:
-                                    userToUpdateModel.get(styleData.row).age = text
                                 }
-                                loader.visible = false
+                                case 1: {
+                                    if(text != "")
+                                        users.dateOfBirth = text
+                                    break;
+                                }
                             }
                         }
                     }
@@ -194,7 +288,8 @@ Rectangle {
             width: parent.width
             style: GCButtonStyle {}
             onClicked: {
-                userToUpdateModel.append({"name": "", "dateOfBirth": "", "password": ""})
+//                 add empty user at first index. The first user is always going to be empty
+                userToUpdateModel.insert(0, {"name": "", "dateOfBirth": "", "password": ""})
             }
         }
     }
