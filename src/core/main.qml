@@ -104,7 +104,7 @@ Window {
 
     function playIntroVoice(name) {
         name = name.split("/")[0]
-        audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
+        audioVoices.play(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
     }
 
     function checkWordset() {
