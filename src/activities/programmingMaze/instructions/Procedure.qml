@@ -37,7 +37,7 @@ Instruction {
         if(!Activity.deadEndPoint && parent.items.procedureCodeArea.procedureIterator < callProcedure.procedureCode.count - 1) {
             parent.items.procedureCodeArea.procedureIterator++
             var currentInstruction = procedureCode.get(parent.items.procedureCodeArea.procedureIterator).name
-            Activity.procedureCode[currentInstruction].checkAndExecuteMovement()
+            Activity.procedureInstructionObjects[currentInstruction].checkAndExecuteMovement()
         }
         else {
             parent.items.procedureCodeArea.procedureIterator = -1

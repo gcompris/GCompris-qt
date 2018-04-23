@@ -45,6 +45,8 @@ ActivityBase {
     }
 
     property bool keyboardNavigationVisible: false
+    property string mode: "basic"
+    property string datasetUrl: "qrc:/gcompris/src/activities/programmingMaze/Dataset.qml"
 
     pageComponent: Image {
         id: background
@@ -84,6 +86,7 @@ ActivityBase {
             property alias constraintInstruction: constraintInstruction
             property alias tutorialImage: tutorialImage
             property alias fish: fish
+            property alias dataset: dataset
             property bool isRunCodeEnabled: true
             property bool isTuxMouseAreaEnabled: false
             property bool currentLevelContainsProcedure
@@ -92,7 +95,7 @@ ActivityBase {
         }
 
         // This function catches the signal emitted after completion of movement of Tux after executing each instruction.
-        function currentInstructionExecutionComplete() {
+        function checkSuccessAndExecuteNextInstruction() {
             Activity.checkSuccessAndExecuteNextInstruction()
         }
 
@@ -101,9 +104,11 @@ ActivityBase {
             Activity.deadEnd()
         }
 
-        onStart: {
-            Activity.start(items)
+        Loader {
+            id: dataset
         }
+
+        onStart: { Activity.start(items, mode, datasetUrl) }
         onStop: { Activity.stop() }
 
         property var areaWithKeyboardInput: instructionArea
@@ -203,7 +208,6 @@ ActivityBase {
 
         Repeater {
             id: mazeModel
-            model: Activity.mazeBlocks[0]
 
             anchors.left: parent.left
             anchors.top: parent.top

@@ -30,230 +30,7 @@ var TURN_LEFT = "turn-left"
 var TURN_RIGHT = "turn-right"
 var CALL_PROCEDURE = "call-procedure"
 
-var mazeBlocks = [
-            //level one
-            {
-                "map": [
-                    {'x': 1, 'y': 2},
-                    {'x': 2, 'y': 2},
-                    {'x': 3, 'y': 2}
-                ],
-                "fish": {'x': 3, 'y': 2},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT
-                ],
-                "maxNumberOfInstructions": 4
-            },
-            //level two
-            {
-                "map": [
-                    {'x': 1, 'y': 3},
-                    {'x': 2, 'y': 3},
-                    {'x': 2, 'y': 2},
-                    {'x': 2, 'y': 1},
-                    {'x': 3, 'y': 1}
-                ],
-                "fish": {'x': 3, 'y': 1},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT
-                ],
-                "maxNumberOfInstructions": 8
-            },
-            //level three
-            {
-                "map": [
-                    {'x': 0, 'y': 3},
-                    {'x': 0, 'y': 2},
-                    {'x': 0, 'y': 1},
-                    {'x': 1, 'y': 1},
-                    {'x': 2, 'y': 1},
-                    {'x': 3, 'y': 1},
-                    {'x': 3, 'y': 2},
-                    {'x': 3, 'y': 3},
-                    {'x': 2, 'y': 3}
-                ],
-                "fish": {'x': 2, 'y': 3},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT
-                ],
-                "maxNumberOfInstructions": 14
-            },
-            //level four
-            {
-                "map": [
-                    {'x': 0, 'y': 1},
-                    {'x': 1, 'y': 1},
-                    {'x': 1, 'y': 0},
-                    {'x': 2, 'y': 0},
-                    {'x': 3, 'y': 0},
-                    {'x': 4, 'y': 0},
-                    {'x': 1, 'y': 2},
-                    {'x': 1, 'y': 3},
-                    {'x': 2, 'y': 3},
-                    {'x': 3, 'y': 3},
-                    {'x': 4, 'y': 3},
-                    {'x': 4, 'y': 2}
-                ],
-                "fish": {'x': 4, 'y': 2},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT
-                ],
-                "maxNumberOfInstructions": 14
-            },
-            //level five
-            {
-                "map": [
-                    {'x': 0, 'y': 1},
-                    {'x': 0, 'y': 0},
-                    {'x': 1, 'y': 0},
-                    {'x': 2, 'y': 0},
-                    {'x': 3, 'y': 0},
-                    {'x': 4, 'y': 0},
-                    {'x': 0, 'y': 2},
-                    {'x': 0, 'y': 3},
-                    {'x': 1, 'y': 3},
-                    {'x': 2, 'y': 3},
-                    {'x': 3, 'y': 3},
-                    {'x': 4, 'y': 3},
-                    {'x': 2, 'y': 1},
-                    {'x': 2, 'y': 2},
-                    {'x': 4, 'y': 2}
-                ],
-                "fish": {'x': 4, 'y': 2},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT
-                ],
-                "maxNumberOfInstructions": 15
-            },
-            //level six
-            {
-                "map": [
-                    {'x': 1, 'y': 1},
-                    {'x': 2, 'y': 1},
-                    {'x': 3, 'y': 1},
-                    {'x': 3, 'y': 2},
-                    {'x': 3, 'y': 3},
-                    {'x': 2, 'y': 3},
-                    {'x': 1, 'y': 3}
-                ],
-                "fish": {'x': 1, 'y': 3},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT,
-                    CALL_PROCEDURE
-                ],
-                "maxNumberOfInstructions": 7
-            },
-            //level seven
-            {
-                "map": [
-                    {'x': 0, 'y': 3},
-                    {'x': 1, 'y': 3},
-                    {'x': 2, 'y': 3},
-                    {'x': 2, 'y': 2},
-                    {'x': 2, 'y': 1},
-                    {'x': 3, 'y': 1},
-                    {'x': 4, 'y': 1},
-                    {'x': 4, 'y': 2},
-                    {'x': 4, 'y': 3}
-                ],
-                "fish": {'x': 4, 'y': 3},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT,
-                    CALL_PROCEDURE
-                ],
-                "maxNumberOfInstructions": 10
-            },
-            //level eight
-            {
-                "map": [
-                    {'x': 0, 'y': 3},
-                    {'x': 1, 'y': 3},
-                    {'x': 1, 'y': 2},
-                    {'x': 2, 'y': 2},
-                    {'x': 2, 'y': 1},
-                    {'x': 3, 'y': 1},
-                    {'x': 3, 'y': 0},
-                    {'x': 4, 'y': 0}
-                ],
-                "fish": {'x': 4, 'y': 0},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT,
-                    CALL_PROCEDURE
-                ],
-                "maxNumberOfInstructions": 12
-            },
-            //level nine
-            {
-                "map": [
-                    {'x': 1, 'y': 1},
-                    {'x': 0, 'y': 0},
-                    {'x': 1, 'y': 0},
-                    {'x': 2, 'y': 0},
-                    {'x': 2, 'y': 1},
-                    {'x': 3, 'y': 0},
-                    {'x': 4, 'y': 0},
-                    {'x': 4, 'y': 1},
-                    {'x': 4, 'y': 2},
-                    {'x': 4, 'y': 3},
-                    {'x': 3, 'y': 3},
-                    {'x': 2, 'y': 3},
-                    {'x': 1, 'y': 3},
-                    {'x': 0, 'y': 3},
-                    {'x': 0, 'y': 2}
-                ],
-                "fish": {'x': 0, 'y': 2},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT,
-                    CALL_PROCEDURE
-                ],
-                "maxNumberOfInstructions": 14
-            },
-            //level ten
-            {
-                "map": [
-                    {'x': 0, 'y': 3},
-                    {'x': 0, 'y': 2},
-                    {'x': 0, 'y': 1},
-                    {'x': 0, 'y': 0},
-                    {'x': 1, 'y': 0},
-                    {'x': 2, 'y': 0},
-                    {'x': 2, 'y': 1},
-                    {'x': 2, 'y': 2},
-                    {'x': 2, 'y': 3},
-                    {'x': 3, 'y': 3},
-                    {'x': 4, 'y': 3},
-                    {'x': 4, 'y': 2},
-                    {'x': 4, 'y': 1},
-                    {'x': 4, 'y': 0}
-                ],
-                "fish": {'x': 4, 'y': 0},
-                "instructions": [
-                    MOVE_FORWARD,
-                    TURN_LEFT,
-                    TURN_RIGHT,
-                    CALL_PROCEDURE
-                ],
-                "maxNumberOfInstructions": 15
-            }
-        ]
+var mazeBlocks
 
 // Length of 1 step along x-axis
 var stepX
@@ -261,9 +38,12 @@ var stepX
 // Length of 1 step along y-axis
 var stepY
 
-// List of commands to be executed
-var mainFunctionCode = []
-var procedureCode = []
+/**
+ * Lookup tables of instruction objects for main and procedure areas which will be stored here on creation and can be
+ * accessed when required to execute.
+ */
+var mainInstructionObjects = []
+var procedureInstructionObjects = []
 
 // New rotation of Tux on turning.
 var changedRotation
@@ -271,7 +51,7 @@ var changedRotation
 // Indicates if there is a dead-end
 var deadEndPoint = false
 
-// Stores the index of mainFunctionCode[] which is going to be processed
+// Stores the index of mainInstructionObjects[] which is going to be processed
 var codeIterator = 0
 
 /**
@@ -303,8 +83,7 @@ var EAST = 270
 /**
  * Stores the qml file components of all the instructions used in the activity.
  *
- * To add a new instruction, add its component here, create its object in initLevel() along with the other instructions
- * for procedure area, and call its destroy function in destroyInstructionObjects().
+ * To add a new instruction, add its component here and add the instruction name in "instructionList" inside createInstructionObjects() along with the other instructions.
  */
 var instructionComponents = {
     "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/MoveForward.qml"),
@@ -312,15 +91,6 @@ var instructionComponents = {
     "turn-right": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/TurnLeftOrRight.qml"),
     "call-procedure": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/Procedure.qml")
 }
-
-/**
- * The procedure function's object. This is a centralised procedure object and will be linked to all its instructions with signal and slot.
- *
- * Since the signals of instructions created in procedureCode need to be connected to the procedure file,
- * hence only one object for procedure function is sufficient and this same
- * procedure object will be re-used to push into the main code whenever the procedure call is made.
- */
-var procedureObject
 
 var mainTutorialInstructions = [
             {
@@ -349,9 +119,15 @@ var procedureTutorialInstructions = [
             },
         ]
 
-function start(items_) {
+// Mode of the activity: basic or loop
+var activityMode
+
+function start(items_, mode_, datasetUrl_) {
     items = items_
+    items.dataset.source = datasetUrl_
+    activityMode = mode_
     currentLevel = 0
+    mazeBlocks = items.dataset.item.levels
     numberOfLevel = mazeBlocks.length
     resetTux = false
     initLevel()
@@ -362,50 +138,52 @@ function stop() {
 }
 
 /**
- * This function creates a single centralised and re-usable set of procedureObject and the procedure instructions.
- * The procedure instructions are then connected to the procedureObject (object of the procedure file).
+ * This function creates and populate instruction objects for main as well as procedure area.
  *
- * These can be accessed wherever required to execute the procedure and saves the process of re-creating all the instruction objets,
- * connecting them to the procedure's slot and destroying them everytime for each function call which will be very redundant
- * and quite memory consuming on devices with less RAM, weak processing power and slow performance.
+ * These are stored in the lookup table, provided in the parameter as "instructionObjects".
+ * The instructions are then connected to the slots of their code area (main or procedure), provided as "instructionCodeArea" in the parameter.
  *
- * Hence these centralised objects will be created and destroyed only once in each level (depending on the need) and can be accessed when needed.
+ * The instructions can now be obtained from the look-up tables and executed when called.
+ *
+ * This saves the process of re-creating all the instruction objets, connecting them to their parent's slot and destroying
+ * them everytime for each instruction call which will be very redundant and quite memory consuming on devices with
+ * less RAM, weak processing power and slow performance specially for "loops" mode.
+ *
+ * Hence these look-up table objects will be created and destroyed only once in each level (depending on the need) and can be accessed when needed.
  */
-function createProcedureObjects() {
-    procedureObject = instructionComponents[CALL_PROCEDURE].createObject(items.background)
-    procedureCode[MOVE_FORWARD] = instructionComponents[MOVE_FORWARD].createObject(procedureObject)
-    procedureCode[TURN_LEFT] = instructionComponents[TURN_LEFT].createObject(procedureObject, { "turnDirection": "turn-left" })
-    procedureCode[TURN_RIGHT] = instructionComponents[TURN_RIGHT].createObject(procedureObject, { "turnDirection": "turn-right" })
-
-    procedureObject.foundDeadEnd.connect(items.background.deadEnd)
-    procedureObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)
-
-    var procedureInstructions = Object.keys(procedureCode)
-
-    for(var i = 0; i < procedureInstructions.length; i++) {
-        procedureCode[procedureInstructions[i]].foundDeadEnd.connect(procedureObject.deadEnd)
-        procedureCode[procedureInstructions[i]].executionComplete.connect(procedureObject.checkSuccessAndExecuteNextInstruction)
-    }
+function createInstructionObjects(instructionObjects, instructionCodeArea) {
+    var instructionList = [MOVE_FORWARD, TURN_LEFT, TURN_RIGHT]
+    for(var i = 0; i < instructionList.length; i++)
+        createInstruction(instructionObjects, instructionList[i], instructionCodeArea)
 }
 
-function destroyInstructionObjects() {
-    for(var i = 0; i < mainFunctionCode.length; i++) {
-        mainFunctionCode[i].destroy()
-    }
-    if(procedureCode[MOVE_FORWARD] && procedureCode[TURN_LEFT] && procedureCode[TURN_RIGHT]) {
-        procedureCode[MOVE_FORWARD].destroy()
-        procedureCode[TURN_LEFT].destroy()
-        procedureCode[TURN_RIGHT].destroy()
-        procedureObject.destroy()
-    }
+function createInstruction(instructionObjects, instructionName, instructionCodeArea) {
+	if(instructionName == TURN_LEFT || instructionName == TURN_RIGHT)
+	    instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea, { "turnDirection": instructionName })
+	else
+	    instructionObjects[instructionName] = instructionComponents[instructionName].createObject(instructionCodeArea)
 
-    mainFunctionCode = []
-    procedureCode = []
+	instructionObjects[instructionName].foundDeadEnd.connect(instructionCodeArea.deadEnd)
+	instructionObjects[instructionName].executionComplete.connect(instructionCodeArea.checkSuccessAndExecuteNextInstruction)
+}
+
+// Destroy instruction objects from the look-up tables
+function destroyInstructionObjects() {
+    var instructionList = Object.keys(mainInstructionObjects)
+    for(var i = 0; i < instructionList.length; i++)
+        mainInstructionObjects[instructionList[i]].destroy()
+
+    instructionList = Object.keys(procedureInstructionObjects)
+    for(var i = 0; i < instructionList.length; i++)
+        procedureInstructionObjects[instructionList[i]].destroy()
+
+    mainInstructionObjects = []
+    procedureInstructionObjects = []
 }
 
 function initLevel() {
     if(!items || !items.bar)
-        return;
+        return
 
     items.bar.level = currentLevel + 1
     destroyInstructionObjects()
@@ -417,13 +195,20 @@ function initLevel() {
     else
         items.currentLevelContainsProcedure = false
 
-    //In the levels where there are procedure code area, create instructions for it and connect the instructions' signals to procedureObject's slots.
+    // Create, populate and connect signals of instructions for main function code area and store them in mainInstructionObjects.
+    createInstructionObjects(mainInstructionObjects, items.background)
+
     if(items.currentLevelContainsProcedure) {
         if(!items.tutorialImage.shownProcedureTutorialInstructions) {
             items.tutorialImage.shownProcedureTutorialInstructions = true
             items.tutorialImage.visible = true
         }
-        createProcedureObjects()
+
+        // Create procedure object in the main look-up table ,if the level has procedure/loop, to execute it for procedure/loop calls from the main code area.
+        createInstruction(mainInstructionObjects, CALL_PROCEDURE, items.background)
+
+        // Create, populate and connect signals of instructions for procedure code area if the level has procedure/loop.
+        createInstructionObjects(procedureInstructionObjects, mainInstructionObjects[CALL_PROCEDURE])
     }
 
     // Stores the co-ordinates of the tile blocks in the current level
@@ -442,9 +227,8 @@ function initLevel() {
 
     items.instructionModel.clear()
 
-    for (var i = 0; i < levelInstructions.length; i++) {
-        items.instructionModel.append({"name":levelInstructions[i]});
-    }
+    for (var i = 0; i < levelInstructions.length; i++)
+        items.instructionModel.append({"name":levelInstructions[i]})
 
     // Center Tux in its first case
     items.player.x = currentLevelBlocksCoordinates[0].x * stepX + (stepX - items.player.width) / 2
@@ -484,59 +268,30 @@ function getPlayerRotation() {
     return ((changedRotation % 360) + 360) % 360
 }
 
-// Store all the instructions from main and procedure areas in their respective instruction lists.
 function runCode() {
     items.mainFunctionCodeArea.resetEditingValues()
     items.procedureCodeArea.resetEditingValues()
 
-    mainFunctionCode = []
-
     var instructionName
-    var instructionObject
 
-    /**
-     * Create and append objects of all the instructions in the main area code.
-     *
-     * If the instruction is call-procedure, append the procedureObject, and it will in turn execute the centralised
-     * instructions created in procedureCode which are linked to this object.
-     */
-    for(var i = 0; i < items.mainFunctionModel.count; i++) {
-        instructionName = items.mainFunctionModel.get([i]).name
-        if(instructionName != CALL_PROCEDURE) {
-            if(instructionName === TURN_LEFT)
-                instructionObject = instructionComponents[instructionName].createObject(items.background, { "turnDirection": "turn-left" })
-            else if(instructionName === TURN_RIGHT)
-                instructionObject = instructionComponents[instructionName].createObject(items.background, { "turnDirection": "turn-right" })
-            else
-                instructionObject = instructionComponents[instructionName].createObject(items.background)
-
-            instructionObject.foundDeadEnd.connect(items.background.deadEnd)
-            instructionObject.executionComplete.connect(items.background.currentInstructionExecutionComplete)
-
-            mainFunctionCode.push(instructionObject)
-        }
-        else {
-            mainFunctionCode.push(procedureObject)
-        }
-    }
-
-    // Append all the instructions from the procedure area to the procedureObject.
+    // Append all the procedure instructions to the procedure area object.
     for(var j = 0; j < items.procedureModel.count; j++) {
-        instructionName = items.procedureModel.get([j]).name
-        procedureObject.procedureCode.append({ "name" : instructionName })
+        instructionName = items.procedureModel.get(j).name
+        mainInstructionObjects[CALL_PROCEDURE].procedureCode.append({ "name" : instructionName })
     }
 
     items.isRunCodeEnabled = false
-    if(mainFunctionCode.length > 0)
+    if(items.mainFunctionModel.count > 0)
         executeNextInstruction()
     else
         deadEnd()
 }
 
 function executeNextInstruction() {
-    if(codeIterator < mainFunctionCode.length && !deadEndPoint) {
+    if((codeIterator < items.mainFunctionModel.count) && !deadEndPoint) {
         items.mainFunctionCodeArea.currentIndex += 1
-        mainFunctionCode[codeIterator].checkAndExecuteMovement()
+        var instructionToExecute = items.mainFunctionModel.get(codeIterator).name
+        mainInstructionObjects[instructionToExecute].checkAndExecuteMovement()
     }
 }
 
@@ -560,7 +315,7 @@ function checkSuccessAndExecuteNextInstruction() {
         codeIterator = 0
         items.bonus.good("tux")
     }
-    else if(codeIterator === mainFunctionCode.length - 1) {
+    else if(codeIterator === (items.mainFunctionModel.count - 1)) {
         deadEnd()
     }
     else {
