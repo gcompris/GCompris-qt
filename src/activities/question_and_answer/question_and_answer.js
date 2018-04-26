@@ -22,13 +22,35 @@
 .import QtQuick 2.6 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel
+var numberOfSubActivities
+var currentActivityIndex = 0
 var items
+var dataset
+var questions
 
-function start(items_) {
+function init(items_, dataset_) {
     items = items_
+    dataset = dataset_.get()
+    numberOfSubActivities = dataset.length
+    items.menuModel.clear();
+    initializeMenuScreen()
+    start()
+}
+
+function initializeMenuScreen() {
+    for(var i = 0; i < numberOfSubActivities; i++) {
+        var data = {
+            name: dataset[i]["category"],
+            image: dataset[i]["category_image_src"],
+        }
+        items.menuModel.append(data)
+    }
+}
+
+function start() {
     currentLevel = 0
-    initLevel()
+    launchMenuScreen()
 }
 
 function stop() {
@@ -36,12 +58,17 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.startFinishButton.visibility = true
+    items.showAnswerStatus = false
+    items.levelStarted = false
+    setQuestions()
 }
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
+    items.questionsGrid.visible = false
     initLevel();
 }
 
@@ -49,5 +76,32 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
+    items.questionsGrid.visible = false
     initLevel();
+}
+
+function setQuestions() {
+    //questions = []
+    if(items.currentMode === "freeMode") {
+        items.questions = dataset[currentActivityIndex]["questions"][currentLevel]
+        items.answers = dataset[currentActivityIndex]["answers"][currentLevel]
+    }
+    //items.questions = questions
+    items.questionsGrid.visible = true
+}
+
+function initializeSubActivity(index) {
+    currentActivityIndex = index
+    currentLevel = 0
+    numberOfLevel = dataset[currentActivityIndex]["questions"].length
+    items.noOfQuestions = numberOfLevel
+    initLevel()
+}
+
+function launchMenuScreen() {
+    items.menuScreen.start()
+}
+
+function checkAnswer() {
+
 }
