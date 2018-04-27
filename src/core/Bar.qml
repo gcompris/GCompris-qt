@@ -460,7 +460,7 @@ Item {
         id: reload
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_reload.svg";
-            sourceSize.width: fullButton
+            sourceSize.width: fullButtonScaled
             onClicked: bar.reloadClicked()
         }
     }
