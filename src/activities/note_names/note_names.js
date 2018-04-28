@@ -27,6 +27,8 @@ var currentLevel = 0
 var numberOfLevel = 20
 var items
 var notesToFind = []
+var noteToPlay
+var bottomNotes = []
 
 function start(items_) {
     items = items_
@@ -38,6 +40,7 @@ function stop() {
 }
 
 function initLevel() {
+    bottomNotes = []
     items.score.currentSubLevel = 1
     items.bar.level = currentLevel + 1
 
@@ -48,11 +51,14 @@ function initLevel() {
     items.gridRepeater.clear();
 
     if(items.bar.level === 1 || items.bar.level === 11) {
-        //items.staff.displayNoteLabel(true);
+        var notes = ["1", "2", "3", "4", "5", "6", "7","1"]
         for(var i = 0 ; i < 8 ; ++ i) {
-            items.staff.addNote(""+(i+1), 4, "", true);
+            bottomNotes.push({ "note":notes[i] });
+            items.staff.addNote("" + (i + 1), 4, "", true);
         }
+        items.bottomNotesRepeater.model = bottomNotes
     }
+
     else {
         //items.staff.displayNoteLabel(false);
         if([5, 6, 7, 8, 9, 10, 15, 16, 17, 18, 19, 20].indexOf(items.bar.level) !== -1) {
@@ -60,7 +66,7 @@ function initLevel() {
             for(var i = 0 ; i < notes.length ; ++ i) {
                 items.gridRepeater.append({"note": notes[i]});
             }
-            notesToFind = Core.shuffle(notes);
+            notesToFind = Core.shuffle(notes)
         }
         else {
             var notes = Core.shuffle(["1", "2", "3", "4", "5", "6", "7"]);
@@ -69,8 +75,11 @@ function initLevel() {
             }
             notesToFind = Core.shuffle(notes);
         }
-        items.staff.addNote(notesToFind[items.score.currentSubLevel-1], 4, "", true);
+        noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + items.clef + '_pitches/' + '1' + '/' + notesToFind[items.score.currentSubLevel - 1] + '.wav'
+        items.staff.addNote(notesToFind[items.score.currentSubLevel - 1], 4, "", true);
     }
+    if(items.bar.level != 1 && items.bar.level != 11)
+        items.staff.play()
     items.score.numberOfSubLevels = notesToFind.length
 }
 
@@ -88,8 +97,12 @@ function previousLevel() {
     initLevel();
 }
 
+function reloadLevel() {
+    items.staff.play()
+}
+
 function checkAnswer(answer) {
-    if(answer === notesToFind[items.score.currentSubLevel-1]) {
+    if(answer === notesToFind[items.score.currentSubLevel - 1]) {
         if(items.score.currentSubLevel >= notesToFind.length) {
             // Go to next level
             items.bonus.good("note");
@@ -97,7 +110,9 @@ function checkAnswer(answer) {
         else {
             items.score.currentSubLevel ++;
             items.staff.eraseAllNotes();
-            items.staff.addNote(notesToFind[items.score.currentSubLevel-1], 4, "", true);
+            noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + items.clef + '_pitches/' + '1' + '/' + notesToFind[items.score.currentSubLevel - 1] + '.wav'
+            items.staff.play()
+            items.staff.addNote(notesToFind[items.score.currentSubLevel - 1], 4, "", true);
         }
     }
     else {

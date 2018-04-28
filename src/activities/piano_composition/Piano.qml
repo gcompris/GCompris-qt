@@ -37,8 +37,8 @@ Item {
     property var blacks: [14.33, 41.67, 82.25, 108.25, 134.75] // / 8*23
     property int whiteWidth: width / numberOfWhite // 23
     property int whiteHeight: height // 120
-    property int blackWidth: (whiteWidth+1)/2 // 13
-    property int blackHeight: 2*height/3 // 80
+    property int blackWidth: (whiteWidth + 1) / 2 // 13
+    property int blackHeight: 2 * height / 3 // 80
 
     property var whiteNotes: ["C", "D", "E", "F", "G", "A", "B", "C"]
     property var blackNotesSharp: ["C#", "D#", "F#", "G#", "A#"]
@@ -91,7 +91,7 @@ Item {
             MultiPointTouchArea {
                 anchors.fill: parent
                 onPressed: {
-                    noteClicked(index+1);
+                    noteClicked(index + 1);
                 }
             }
         }
@@ -111,7 +111,7 @@ Item {
                 width: height
                 height: labelSquareSize
                 y: parent.height - height - 5
-                x: (blackWidth-labelSquareSize)/2
+                x: (blackWidth - labelSquareSize)/2
                 color: colorBlackNotes[index]
                 border.color: "black"
                 border.width: 2
@@ -128,7 +128,7 @@ Item {
             MultiPointTouchArea {
                 anchors.fill: parent
                 onPressed: {
-                    noteClicked(-index-1);
+                    noteClicked(-index - 1);
                 }
             }
         }

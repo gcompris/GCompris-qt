@@ -115,6 +115,30 @@ bool File::write(const QString& data, const QString& name)
     return true;
 }
 
+bool File::append(const QString& data, const QString& name)
+{
+    if (!name.isEmpty())
+        setName(name);
+
+    if (m_name.isEmpty()) {
+        emit error("source is empty");
+        return false;
+    }
+
+    QFile file(m_name);
+    if (!file.open(QFile::WriteOnly | QFile::Append)) {
+        emit error("could not open file " + m_name);
+        return false;
+    }
+
+    QTextStream out(&file);
+    out << data;
+
+    file.close();
+
+    return true;
+}
+
 void File::init()
 {
     qmlRegisterType<File>("GCompris", 1, 0, "File");

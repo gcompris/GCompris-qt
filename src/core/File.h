@@ -71,6 +71,16 @@ public:
     Q_INVOKABLE bool write(const QString& data, const QString& name = QString());
 
     /**
+     * Apends @p data to a file.
+     *
+     * @param data Text data to appends.
+     * @param name [optional] Filename to append to. If omitted writes to
+     *             the file specified by the member name.
+     * @returns success of the operation.
+     * @sa name
+     */
+    Q_INVOKABLE bool append(const QString& data, const QString& name = QString());
+    /**
      * Checks whether file @p path exists.
      *
      * @param path Filename to check.

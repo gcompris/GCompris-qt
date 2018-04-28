@@ -26,6 +26,9 @@ import "../../core"
 
 Item {
     id: staff
+
+    property Item main: activity.main
+
     property int verticalDistanceBetweenLines: height / nbLines // todo width/nbLines * smth
     
     property string clef
@@ -46,11 +49,12 @@ Item {
     property int defaultFirstNoteX: clefImage.width
     property int nbMaxNotesPerStaff
     property bool noteIsColored
+    property alias notesRepeater: notesRepeater
 
     Image {
         id: clefImage
-        source: clef ? "qrc:/gcompris/src/activities/playpiano/resource/"+clef+"Clef.svg" : ""
-        sourceSize.width: (nbLines-2)*verticalDistanceBetweenLines
+        source: clef ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clef + "Clef.svg" : ""
+        sourceSize.width: (nbLines - 2) * verticalDistanceBetweenLines
     }
 
     Repeater {
@@ -68,7 +72,7 @@ Item {
     Rectangle {
         width: 5
         border.width: 5
-        height: (nbLines-1) * verticalDistanceBetweenLines+5
+        height: (nbLines - 1) * verticalDistanceBetweenLines + 5
         color: "black"
         x: staff.width
         y: 0
@@ -77,10 +81,10 @@ Item {
     Rectangle {
         width: 5
         border.width: 5
-        height: (nbLines-1) * verticalDistanceBetweenLines+5
+        height: (nbLines - 1) * verticalDistanceBetweenLines + 5
         visible: lastPartition
         color: "black"
-        x: staff.width-10
+        x: staff.width - 10
         y: 0
     }
 
@@ -92,10 +96,10 @@ Item {
         id: metronome
         width: 5
         border.width: 10
-        height: (nbLines-1) * verticalDistanceBetweenLines+5
+        height: (nbLines - 1) * verticalDistanceBetweenLines + 5
         visible: isMetronomeDisplayed && showMetronome
         color: "red"
-        x: firstNoteX-width/2
+        x: firstNoteX - width/2
         y: 0
         Behavior on x {
             SmoothedAnimation {
@@ -119,8 +123,17 @@ Item {
     }
 
     function addNote(newValue_, newType_, newBlackType_, highlightWhenPlayed_) {
+        var duration
+        if(newType_ == 1)
+            duration = 2000/newType_
+        else if(newType_ == 2)
+            duration = 3000/newType_
+        else if(newType_ == 4)
+            duration = 4000/newType_
+        else
+            duration = 6500/newType_
         notes.append({"mValue": newValue_, "mType": newType_,
-                      "mBlackType": newBlackType_, "mDuration": 2000/newType_,
+                      "mBlackType": newBlackType_, "mDuration": duration,
                       "mHighlightWhenPlayed": highlightWhenPlayed_});
     }
 
@@ -133,11 +146,12 @@ Item {
         notes.clear();
     }
 
-    property int noteWidth: (staff.width-10-clefImage.width) / 10
+    property int noteWidth: (staff.width - 10 - clefImage.width) / 10
     Row {
         id: notesRow
-        x: firstNoteX-noteWidth/2
+        x: firstNoteX - noteWidth/2
         Repeater {
+            id: notesRepeater
             model: notes
             Note {
                 value: mValue
@@ -145,12 +159,21 @@ Item {
                 blackType: mBlackType
                 highlightWhenPlayed: mHighlightWhenPlayed
                 noteIsColored: staff.noteIsColored
-                width: noteWidth
+                width: (notes.count == 1 && items.staffLength === "long") ? Math.min(items.background.width,items.background.height) * 0.1 : noteWidth
                 height: staff.height
 
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        print(items.staffLength)
+                        print(items.background.width,items.background.height)
+                    }
+                }
+
                 function play() {
-                    if(highlightWhenPlayed)
+//                     if(highlightWhenPlayed) {
                         highlightTimer.start();
+//                     }
                 }
 
                 y: {
@@ -168,12 +191,12 @@ Item {
                     }
 
                     if(mValue > 0) {
-                        return (nbLines-3)*verticalDistanceBetweenLines - (parseInt(mValue)-1)*verticalDistanceBetweenLines/2 + shift
+                        return (nbLines - 2) * verticalDistanceBetweenLines - (parseInt(mValue) - 1) * verticalDistanceBetweenLines/2 + shift
                     }
                     else if(mValue >= -2)
-                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))-1)*verticalDistanceBetweenLines/2 + shift
+                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)) - 1) * verticalDistanceBetweenLines/2 + shift
                     else
-                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)))*verticalDistanceBetweenLines/2 + shift
+                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))) * verticalDistanceBetweenLines/2 + shift
                 }
             }
         }

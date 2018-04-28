@@ -121,9 +121,9 @@ numbers-odd-even
 paintings
 penalty
 photo_hunter
+piano_composition
 planegame
 railroad
-playpiano
 readingh
 readingv
 redraw

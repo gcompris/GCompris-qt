@@ -61,10 +61,11 @@ Item {
                                   "-5": qsTr("Bb")}
 
     property bool highlightWhenPlayed: false
+    property alias highlightTimer: highlightTimer
 
     Image {
         id: blackTypeImage
-        source: blackType !== "" ? "qrc:/gcompris/src/activities/playpiano/resource/black"+blackType+".svg" : ""
+        source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
         visible: value[0] === '-'
         sourceSize.width: noteImage.width/2.5
         anchors.right: noteImage.left
@@ -76,22 +77,33 @@ Item {
 
     Image {
         id: highlightImage
-        source: "qrc:/gcompris/src/activities/playpiano/resource/note-highlight.svg"
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/note_highlight.png"
         visible: false
         sourceSize.width: noteImage.width
         height: noteImage.height / 2
         anchors.bottom: noteImage.bottom
     }
 
+    Rectangle {
+        id: highlightRectangle
+        width: noteImage.width * 0.9
+        height: noteImage.height * 0.9
+        color: "red"
+        opacity: 0.6
+        border.color: "white"
+        radius: width / 6
+        visible: false
+    }
+
     Image {
         id: noteImage
-        source: "qrc:/gcompris/src/activities/playpiano/resource/"+noteType+"-note.svg"
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/" + noteType + "-note.svg"
         sourceSize.width: 200
         width: note.width
         height: note.height
     }
 
-    // If the result is not good enought maybe have a rectangle and use opacity mask with a note
+    // If the result is not good enough maybe have a rectangle and use opacity mask with a note
     ColorOverlay {
         anchors.fill: noteImage
         source: noteImage
@@ -102,6 +114,9 @@ Item {
     Timer {
         id: highlightTimer
         interval: noteDuration
-        onRunningChanged: highlightImage.visible = running
+        onRunningChanged: {
+            highlightRectangle.visible = running
+//             highlightImage.visible = running
+        }
     }
 }
