@@ -21,6 +21,7 @@
  */
 .pragma library
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import GCompris 1.0 as GCompris
 
 var url = "qrc:/gcompris/src/activities/money/resource/"
 
@@ -643,7 +644,7 @@ function initLevel() {
             price += cents
         }
 
-        var priceText = Number(price).toLocaleCurrencyString(Qt.locale())
+        var priceText = Number(price).toLocaleCurrencyString(Qt.locale(GCompris.ApplicationSettings.locale))
         if(!centsMode) {
             // Strip floating part
             priceText = priceText.replace((/.00/), "")
@@ -690,7 +691,7 @@ function initLevel() {
         for(var i=0; i < tuxMoney.length; i++)
             tuxTotal += tuxMoney[i].val
 
-        var priceText = Number(tuxTotal).toLocaleCurrencyString(Qt.locale())
+        var priceText = Number(tuxTotal).toLocaleCurrencyString(Qt.locale(GCompris.ApplicationSettings.locale))
         if(!centsMode) {
             // Strip floating part
             priceText = priceText.replace((/.00/), "")
