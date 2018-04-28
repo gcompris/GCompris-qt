@@ -644,7 +644,11 @@ function initLevel() {
             price += cents
         }
 
-        var priceText = Number(price).toLocaleCurrencyString(Qt.locale(GCompris.ApplicationSettings.locale))
+        var locale = GCompris.ApplicationSettings.locale
+        if(locale == "system") {
+            locale = Qt.locale().name == "C" ? "en_US" : Qt.locale().name
+        }
+        var priceText = Number(price).toLocaleCurrencyString(Qt.locale(locale))
         if(!centsMode) {
             // Strip floating part
             priceText = priceText.replace((/.00/), "")
@@ -691,7 +695,11 @@ function initLevel() {
         for(var i=0; i < tuxMoney.length; i++)
             tuxTotal += tuxMoney[i].val
 
-        var priceText = Number(tuxTotal).toLocaleCurrencyString(Qt.locale(GCompris.ApplicationSettings.locale))
+        var locale = GCompris.ApplicationSettings.locale
+        if(locale == "system") {
+            locale = Qt.locale().name == "C" ? "en_US" : Qt.locale().name
+        }
+        var priceText = Number(tuxTotal).toLocaleCurrencyString(Qt.locale(locale))
         if(!centsMode) {
             // Strip floating part
             priceText = priceText.replace((/.00/), "")
