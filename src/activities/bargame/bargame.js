@@ -21,7 +21,7 @@
  */
 .pragma library
 .import GCompris 1.0 as GCompris
-.import QtQuick 2.0 as Quick
+.import QtQuick 2.6 as Quick
 
 var levelsProperties = [
     {
