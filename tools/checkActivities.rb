@@ -24,7 +24,12 @@ module ActivityCheck
     # checks import version
     def self.check_import_version(lineStr)
         # add modules and versions in hash
-        moduleVersionHash = { "QtQuick" => "2.6", "GCompris" => "1.0" }
+        moduleVersionHash = { "QtQuick" => "2.6", "QtGraphicalEffects" => "1.0",
+                              "QtQuick.Controls" => "1.5", "QtQml" => "2.2",
+                              "QtQuick.Controls.Styles" => "1.4",
+                              "QtQuick.Particles" => "2.0", "QtSensors" => "5.0",
+                              "QtMultimedia" => "5.0",
+                              "GCompris" => "1.0", "Box2D" => "2.0" }
 
         matchStr = /import (?<module>(\w+)) (?<ver>(\d+.\d+))/.match(lineStr)
         if matchStr
