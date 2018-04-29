@@ -20,27 +20,33 @@ function get() {
     return [
                 { //level1
                     "bulbCount": 2,
-                    "numbersToBeConverted": [1, 2]
+                    "numbersToBeConverted": [3],
+                    "enableHelp": true
                 },
                 { //level 2
                     "bulbCount": 2,
-                    "numbersToBeConverted": [3]
+                    "numbersToBeConverted": [1, 2],
+                    "enableHelp": false
                 },
                 { //level3
                     "bulbCount": 4,
-                    "numbersToBeConverted": [4, 9, 13, 15]
+                    "numbersToBeConverted": [4, 9, 13, 15],
+                    "enableHelp": true
                 },
                 { //level4
                     "bulbCount": 4,
-                    "numbersToBeConverted": [5, 10, 14, 7]
+                    "numbersToBeConverted": [5, 10, 14, 7],
+                    "enableHelp": false
                 },
                 { //level5
                     "bulbCount": 8,
-                    "numbersToBeConverted": [57, 152, 248, 239]
+                    "numbersToBeConverted": [57, 152, 248, 239, 89, 101],
+                    "enableHelp": true
                 },
                 { //level6
                     "bulbCount": 8,
-                    "numbersToBeConverted": [58, 153, 240, 236]
+                    "numbersToBeConverted": [58, 153, 240, 236, 231, 255],
+                    "enableHelp": false
                 }
     ];
 }

@@ -141,7 +141,7 @@ ActivityBase {
             color: "white"
             fontSize: largeSize
             text: items.numberSoFar
-            visible: (items.currentLevel % 2) == 0 ? true : false
+            visible: Dataset.get()[items.currentLevel].enableHelp
         }
 
         BarButton {

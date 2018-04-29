@@ -32,7 +32,7 @@ Image {
     focus: true
 
     property string bit: ""
-    property int value: Math.pow(2,items.numberOfBulbs-index-1)
+    readonly property int value: Math.pow(2,items.numberOfBulbs-index-1)
 
     GCText {
         anchors.bottom: parent.top
