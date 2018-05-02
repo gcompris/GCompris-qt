@@ -382,6 +382,7 @@
       <caption xml:lang="gl">Menú principal de GCompris</caption>
       <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="nl">GCompris-hoofdmenu</caption>
+      <caption xml:lang="pl">Główne menu GCompris</caption>
       <caption xml:lang="pt">Menu principal do GCompris</caption>
       <caption xml:lang="ro">Meniul principal GCompris</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
@@ -399,6 +400,7 @@
       <caption xml:lang="gl">Actividade de premer sobre letras.</caption>
       <caption xml:lang="it">attività clic sulla lettera</caption>
       <caption xml:lang="nl">activiteit klik_op_letter_omhoog</caption>
+      <caption xml:lang="pl">aktywność w klikanie liter</caption>
       <caption xml:lang="pt">actividade carregar_na_letra_para_cima</caption>
       <caption xml:lang="ro">Clic pe o literă mare</caption>
       <caption xml:lang="sv">Aktiviteten klicka på bokstav upp</caption>
@@ -416,6 +418,7 @@
       <caption xml:lang="gl">Actividade de xogo de reloxo.</caption>
       <caption xml:lang="it">attività dell'orologio</caption>
       <caption xml:lang="nl">activiteit klokspel</caption>
+      <caption xml:lang="pl">aktywność z zegarem</caption>
       <caption xml:lang="pt">actividade do jogo do relógio</caption>
       <caption xml:lang="ro">Învățarea ceasului clasic</caption>
       <caption xml:lang="sv">Aktiviteten klockspel</caption>
@@ -433,6 +436,7 @@
       <caption xml:lang="gl">Actividade de mestura de cores.</caption>
       <caption xml:lang="it">attività miscela di colori</caption>
       <caption xml:lang="nl">activiteit kleurmix</caption>
+      <caption xml:lang="pl">aktywność mieszania barw</caption>
       <caption xml:lang="pt">actividade mistura_cores</caption>
       <caption xml:lang="ro">Amestecul culorilor de vopsea</caption>
       <caption xml:lang="sv">Aktiviteten färgblandning</caption>
@@ -450,6 +454,7 @@
       <caption xml:lang="gl">Actividade de cores.</caption>
       <caption xml:lang="it">attività dei colori</caption>
       <caption xml:lang="nl">activiteit kleuren</caption>
+      <caption xml:lang="pl">aktywność barw</caption>
       <caption xml:lang="pt">actividade cores</caption>
       <caption xml:lang="ro">Clic pe culoarea cerută</caption>
       <caption xml:lang="sv">Aktiviteten färger</caption>
@@ -467,6 +472,7 @@
       <caption xml:lang="gl">Actividade de grúa.</caption>
       <caption xml:lang="it">attività della gru</caption>
       <caption xml:lang="nl">activiteit kraan</caption>
+      <caption xml:lang="pl">aktywność dźwigu</caption>
       <caption xml:lang="pt">actividade grua</caption>
       <caption xml:lang="ro">Construiește după model</caption>
       <caption xml:lang="sv">Aktiviteten kran</caption>
@@ -484,6 +490,7 @@
       <caption xml:lang="gl">Actividade de enumerar.</caption>
       <caption xml:lang="it">attività di enumerazione</caption>
       <caption xml:lang="nl">activiteit opnoemen</caption>
+      <caption xml:lang="pl">aktywność wyliczania</caption>
       <caption xml:lang="pt">actividade numeração</caption>
       <caption xml:lang="ro">Numără elementele mulțimilor</caption>
       <caption xml:lang="sv">Aktiviteten uppräkning</caption>
@@ -501,6 +508,7 @@
       <caption xml:lang="gl">Actividade de quince.</caption>
       <caption xml:lang="it">attività del quindici</caption>
       <caption xml:lang="nl">activiteit vijftien</caption>
+      <caption xml:lang="pl">aktywność piętnaście</caption>
       <caption xml:lang="pt">actividade quinze</caption>
       <caption xml:lang="ro">Mișcă elementele pentru a recrea imaginea</caption>
       <caption xml:lang="sv">Aktiviteten femtonspel</caption>
@@ -518,6 +526,7 @@
       <caption xml:lang="gl">Actividade de hexágono.</caption>
       <caption xml:lang="it">attività dell'esagono</caption>
       <caption xml:lang="nl">activiteit hexagon</caption>
+      <caption xml:lang="pl">aktywność sześciokąta</caption>
       <caption xml:lang="pt">actividade hexágono</caption>
       <caption xml:lang="ro">Găsește căpșuna de sub hexagoane</caption>
       <caption xml:lang="sv">Aktiviteten hexagon</caption>
@@ -535,6 +544,7 @@
       <caption xml:lang="gl">Actividade de balanza.</caption>
       <caption xml:lang="it">attività della bilancia</caption>
       <caption xml:lang="nl">activiteit bord_met_schalen</caption>
+      <caption xml:lang="pl">aktywność pięciolinii</caption>
       <caption xml:lang="pt">actividade pautas</caption>
       <caption xml:lang="ro">Echilibrează talerele balanței</caption>
       <caption xml:lang="sv">Aktiviteten vågbord</caption>
@@ -552,6 +562,7 @@
       <caption xml:lang="gl">Actividade de xadrez.</caption>
       <caption xml:lang="it">attività degli scacchi</caption>
       <caption xml:lang="nl">Activiteit schaakspel_party_einde</caption>
+      <caption xml:lang="pl">aktywność szachowa</caption>
       <caption xml:lang="pt">actividade xadrez_fim_festa</caption>
       <caption xml:lang="ro">Învață să finalizezi cu succes partida de șah</caption>
       <caption xml:lang="sv">Aktiviteten schack festavslutning</caption>
@@ -569,6 +580,7 @@
       <caption xml:lang="gl">Actividade de tráfico.</caption>
       <caption xml:lang="it">attività del traffico</caption>
       <caption xml:lang="nl">activiteit verkeer</caption>
+      <caption xml:lang="pl">aktywność ruchu</caption>
       <caption xml:lang="pt">actividade trânsito</caption>
       <caption xml:lang="ro">Descurcă-te și scoate mașina din parcare</caption>
       <caption xml:lang="sv">Aktiviteten trafik</caption>
