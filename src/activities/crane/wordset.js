@@ -59,6 +59,14 @@ var dataset = {"ca": {
     "5letters": ["reine","douze","pomme","jaune","vache","bulle","wagon",
                  "carte","craie","ville","tissu","clown","forme","froid","chaud"]
                      },
+               "ga": {
+    "3letters": ["tar","dar","gur","cur","ort","ord","olc","cat","lab","jab",
+		 "fad","fud","rud","rug","gur","cad","sin","rua"],
+    "4letters": ["clog","frog","drud","club","pluc","fada","dara","dona",
+                 "bata","hata","lofa","roth","guth","cath","dath""mise","glan"],
+    "5letters": ["solas","turas","doras","focal","pobal","ansin","clann","crann",
+                 "ansin","inniu","pobal","peaca","racht","othar","solas","cumas","olcas"]
+                     },
                "ro": {
     "3letters": ["unu","doi","urs","pat","pod","bec","cub","vis","cot",
                  "joc","sol","cap","suc","lac","far","leu","mov","nas","bou"],
