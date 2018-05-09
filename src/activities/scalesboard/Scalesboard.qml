@@ -74,6 +74,8 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        property bool vert: background.width > background.height
+
         onScaleHeightChanged: Activity.initCompleted && scaleHeight == 0 && question.hasText == "" ?
                                   bonus.good("flower") :
                                   activity.audioEffects.play('qrc:/gcompris/src/activities/erase/resource/eraser2.wav')
@@ -266,6 +268,11 @@ ActivityBase {
 
         Score {
             id: score
+            anchors {
+                bottom: background.vert ? background.bottom : bar.top
+                right: parent.right
+                bottomMargin: 10 * ApplicationInfo.ratio
+            }
 
             numberOfSubLevels: items.numberOfSubLevels
             currentSubLevel: items.currentSubLevel
