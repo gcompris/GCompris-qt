@@ -186,39 +186,27 @@ ActivityBase {
                 BarButton {
                     anchors.fill: parent
                     fillMode: Image.PreserveAspectFit
-                    source: Activity.url + "on.svg"
-                    opacity: lighton === 1 ? 1 : 0
-                    z: lighton === 1 ? 11 : 10
-                    sourceSize.height: items.cellSize
-                    mouseArea.hoverEnabled: !items.blockClicks
-                    mouseArea.enabled: !items.blockClicks
-                    Behavior on opacity {
-                        PropertyAnimation {
-                            duration: 200
-                        }
-                    }
-                    onClicked: Activity.windowPressed(index)
-                    visible: true
-                }
-
-                BarButton {
-                    anchors.fill: parent
-                    fillMode: Image.PreserveAspectFit
                     source: Activity.url + "off.svg"
-                    opacity: lighton === 1 ? 0 : 1
-                    z: lighton === 1 ? 10 : 11
                     sourceSize.height: items.cellSize
                     mouseArea.hoverEnabled: !items.blockClicks
                     mouseArea.enabled: !items.blockClicks
-                    Behavior on opacity {
-                        PropertyAnimation {
-                            duration: 200
-                        }
-                    }
                     onClicked: Activity.windowPressed(index)
                     visible: true
+                    Image {
+                        anchors.fill: parent
+                        fillMode: Image.PreserveAspectFit
+                        source: Activity.url + "on.svg"
+                        opacity: lighton === 1 ? 1 : 0
+                        sourceSize.height: items.cellSize
+                        Behavior on opacity {
+                            PropertyAnimation {
+                                duration: 200
+                            }
+                        }
+                    }
                 }
             }
+            
             interactive: false
             keyNavigationWraps: true
             highlightFollowsCurrentItem: true
