@@ -33,6 +33,8 @@ Image {
     id: button
     state: "notclicked"
 
+    property alias mouseArea: mouseArea
+
     signal clicked
 
     MouseArea {

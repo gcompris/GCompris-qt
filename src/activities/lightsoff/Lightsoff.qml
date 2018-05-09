@@ -39,6 +39,8 @@ ActivityBase {
         signal start
         signal stop
 
+        property bool keyNavigationVisible: false
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -53,6 +55,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias skyColor: background.color
             property alias modelTable: modelTable
+            property bool blockClicks: false
             property int nbCell: 5
             property int cellSize: Math.min(
                                        (parent.height - 200) / items.nbCell,
@@ -65,6 +68,21 @@ ActivityBase {
         }
         onStop: {
             Activity.stop()
+        }
+
+        Keys.enabled: !items.blockClicks
+        Keys.onPressed: {
+            background.keyNavigationVisible = true
+            if (event.key === Qt.Key_Left)
+                grid.moveCurrentIndexLeft()
+            if (event.key === Qt.Key_Right)
+                grid.moveCurrentIndexRight()
+            if (event.key === Qt.Key_Down)
+                grid.moveCurrentIndexDown()
+            if (event.key === Qt.Key_Up)
+                grid.moveCurrentIndexUp()
+            if (event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+                Activity.windowPressed(grid.currentIndex)
         }
 
         /* The background picture */
@@ -138,70 +156,80 @@ ActivityBase {
             z: 4
         }
 
-        Grid {
+        GridView {
             id: grid
             anchors.top: parent.top
-            anchors.topMargin: (parent.height - height) / 2
+            anchors.topMargin: (parent.height - height) / 6
             anchors.horizontalCenter: parent.horizontalCenter
-            rows: items.nbCell
-            columns: items.nbCell
-            spacing: items.cellSize / 10
+            width: items.nbCell * items.cellSize
+            height: width
+            cellWidth: items.cellSize
+            cellHeight: items.cellSize
             z: 5
 
             ListModel {
                 id: modelTable
             }
 
-            Repeater {
-                model: modelTable
-                Rectangle {
-                    color: "transparent"
-                    height: items.cellSize
-                    width: items.cellSize
-                    border {
-                        color: soluce === 1 ? "red" : "transparent"
-                        width: items.cellSize / 40
-                    }
-                    radius: items.cellSize / 10
+            model: modelTable
 
-                    BarButton {
-                        anchors.fill: parent
-                        fillMode: Image.PreserveAspectFit
-                        source: Activity.url + "on.svg"
-                        opacity: lighton === 1 ? 1 : 0
-                        z: lighton === 1 ? 11 : 10
-                        sourceSize.height: items.cellSize
-                        onClicked: {
-                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
-                            Activity.switchLight(index)
-                        }
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                duration: 200
-                            }
-                        }
-                        visible: true
-                    }
-
-                    BarButton {
-                        anchors.fill: parent
-                        fillMode: Image.PreserveAspectFit
-                        source: Activity.url + "off.svg"
-                        opacity: lighton === 1 ? 0 : 1
-                        z: lighton === 1 ? 10 : 11
-                        sourceSize.height: items.cellSize
-                        onClicked: {
-                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
-                            Activity.switchLight(index)
-                        }
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                duration: 200
-                            }
-                        }
-                        visible: true
-                    }
+            delegate: Rectangle {
+                color: "transparent"
+                height: items.cellSize
+                width: items.cellSize
+                border {
+                    color: soluce === 1 ? "red" : "transparent"
+                    width: items.cellSize / 40
                 }
+                radius: items.cellSize / 10
+
+                BarButton {
+                    anchors.fill: parent
+                    fillMode: Image.PreserveAspectFit
+                    source: Activity.url + "on.svg"
+                    opacity: lighton === 1 ? 1 : 0
+                    z: lighton === 1 ? 11 : 10
+                    sourceSize.height: items.cellSize
+                    mouseArea.hoverEnabled: !items.blockClicks
+                    mouseArea.enabled: !items.blockClicks
+                    Behavior on opacity {
+                        PropertyAnimation {
+                            duration: 200
+                        }
+                    }
+                    onClicked: Activity.windowPressed(index)
+                    visible: true
+                }
+
+                BarButton {
+                    anchors.fill: parent
+                    fillMode: Image.PreserveAspectFit
+                    source: Activity.url + "off.svg"
+                    opacity: lighton === 1 ? 0 : 1
+                    z: lighton === 1 ? 10 : 11
+                    sourceSize.height: items.cellSize
+                    mouseArea.hoverEnabled: !items.blockClicks
+                    mouseArea.enabled: !items.blockClicks
+                    Behavior on opacity {
+                        PropertyAnimation {
+                            duration: 200
+                        }
+                    }
+                    onClicked: Activity.windowPressed(index)
+                    visible: true
+                }
+            }
+            interactive: false
+            keyNavigationWraps: true
+            highlightFollowsCurrentItem: true
+            highlight: Rectangle {
+                width: items.cellSize
+                height: items.cellSize
+                color: "#AAFFFFFF"
+                radius: items.cellSize / 10
+                visible: background.keyNavigationVisible
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
 
@@ -226,6 +254,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            onStop: items.blockClicks = false
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

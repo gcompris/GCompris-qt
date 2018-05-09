@@ -245,6 +245,7 @@ function checkResult() {
     })
 
     if (nb === 0) {
+        items.blockClicks  = true
         items.bonus.good("tux")
     }
 
@@ -259,4 +260,9 @@ function solve() {
 
     /* Refresh the lights */
     refreshModel()
+}
+
+function windowPressed(index) {
+    audioEffects.play("'qrc:/gcompris/src/core/resource/sounds/scroll.wav'")
+    switchLight(index)
 }
