@@ -204,8 +204,8 @@ ActivityBase {
             id: hintDialog
             visible: false
 
-            readonly property var hint1: qsTr("1. The <b>farther</b> a planet from the Sun, the <b>lower</b> is it's temperature.<br><font color=\"#3bb0de\">%1</font>").arg(items.temperatureHint)
-            readonly property var hint2: qsTr("2. Duration of an year on a planet <b>increases as we go away from the Sun</b>.<br><font color=\"#3bb0de\">%1</font>").arg(items.lengthOfYearHint)
+            readonly property string hint1: qsTr("1. The <b>farther</b> a planet from the Sun, the <b>lower</b> is its temperature.<br><font color=\"#3bb0de\">%1</font>").arg(items.temperatureHint)
+            readonly property string hint2: qsTr("2. The duration of a year on a planet <b>increases as we go away from the Sun</b>.<br><font color=\"#3bb0de\">%1</font>").arg(items.lengthOfYearHint)
 
             title: qsTr("Hint")
             content: "%1<br>%2".arg(hint1).arg(hint2)
@@ -214,7 +214,7 @@ ActivityBase {
                 home()
             }
 
-            button0Text: "View solar system"
+            button0Text: qsTr("View solar system")
 
             onButton0Hit: solarSystemImageHint.visible = true
         }
@@ -247,6 +247,9 @@ ActivityBase {
             }
 
             onSaveData: {
+                if(!dialogActivityConfig.configItem) {
+                    return
+                }
                 dialogActivityConfig.configItem.initialCheckStatus = items.assessmentMode
                 if(dialogActivityConfig.configItem.assessmentModeBox.checked != items.assessmentMode) {
                     items.assessmentMode = !items.assessmentMode
@@ -284,7 +287,7 @@ ActivityBase {
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
             property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
             property BarEnumContent withConfigWithRestart: BarEnumContent { value: help | home | config | reload }
-            property BarEnumContent withConfigWithHint: BarEnumContent { value: help | home | config | hint}
+            property BarEnumContent withConfigWithHint: BarEnumContent { value: help | home | config | hint }
 
             onHelpClicked: {
                 displayDialog(dialogHelp)

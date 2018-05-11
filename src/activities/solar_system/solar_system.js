@@ -40,8 +40,8 @@ function start(items_) {
 
     for(var i = 0;  i < dataset.length; ++i) {
         items.planetsModel.append({
-                "clipImg": dataset[i].clipImg,
-                 "bodyName": dataset[i].bodyName
+            "clipImg": dataset[i].clipImg,
+            "bodyName": dataset[i].bodyName
         });
     }
 
@@ -61,7 +61,7 @@ function initLevel() {
 }
 
 function nextSubLevel(isAssessmentMode) {
-    items.mainQuizScreen.score.currentSubLevel = currentSubLevel + 1
+    items.mainQuizScreen.score.currentSubLevel = currentSubLevel
     var optionListShuffle = []
 
     if(!isAssessmentMode) {
@@ -71,21 +71,21 @@ function nextSubLevel(isAssessmentMode) {
             items.bonus.good("flower")
         else {
             items.mainQuizScreen.question = currentPlanetLevels[currentSubLevel].question
-            for(var i=0; i<4; i++) {
+            for(var i = 0 ; i < 4 ; i ++) {
                 optionListShuffle.push({
-                                           "optionValue": currentPlanetLevels[currentSubLevel].options[i],
-                                           "closeness": currentPlanetLevels[currentSubLevel].closeness[i]
-                                       });
+                    "optionValue": currentPlanetLevels[currentSubLevel].options[i],
+                    "closeness": currentPlanetLevels[currentSubLevel].closeness[i]
+                });
             }
         }
     }
     else if(!items.mainQuizScreen.restartAssessmentMessage.visible) {
         items.mainQuizScreen.question = assessmentModeQuestions[0].question
-        for(var i=0; i<4; i++) {
+        for(var i = 0 ; i < 4 ; i ++) {
             optionListShuffle.push({
-                                       "optionValue": assessmentModeQuestions[0].options[i],
-                                       "closeness": assessmentModeQuestions[0].closeness[i]
-                                   });
+                "optionValue": assessmentModeQuestions[0].options[i],
+                "closeness": assessmentModeQuestions[0].closeness[i]
+            });
         }
     }
 
@@ -93,7 +93,7 @@ function nextSubLevel(isAssessmentMode) {
         items.mainQuizScreen.optionListModel.clear()
         Core.shuffle(optionListShuffle)
 
-        for(var i=0; i<optionListShuffle.length; i++)
+        for(var i = 0 ; i < optionListShuffle.length ; i ++)
             items.mainQuizScreen.optionListModel.append(optionListShuffle[i])
 
         currentSubLevel++
@@ -159,7 +159,7 @@ function showQuizScreen(index) {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     if(!items.assessmentMode)

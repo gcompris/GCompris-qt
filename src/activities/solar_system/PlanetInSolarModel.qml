@@ -41,7 +41,7 @@ Item {
         y: !background.horizontalLayout ? 5 * ApplicationInfo.ratio : 0
         width: parent.width
         fontSizeMode: Text.Fit
-        font.pointSize: NaN                   // need to clear font.pointSize explicitly
+        font.pointSize: NaN // need to clear font.pointSize explicitly
         font.pixelSize: parent.width * 0.18
         color: "white"
         text: planetName
