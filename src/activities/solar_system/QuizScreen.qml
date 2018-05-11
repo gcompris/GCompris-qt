@@ -69,7 +69,7 @@ Item {
         id: optionListModel
     }
 
-    // This grid has image of the planet in it's first column/row (row in case of vertical screen) and the options on the 2nd column/row
+    // This grid has image of the planet in its first column/row (row in case of vertical screen) and the options on the 2nd column/row
     Grid {
         id: imageAndOptionGrid
         columns: (background.horizontalLayout && !items.assessmentMode && items.bar.level != 2) ? 2 : 1
@@ -227,9 +227,9 @@ Item {
         width: parent.width * 0.35
 
         readonly property real percentage: (mainQuizScreen.numberOfCorrectAnswers / score.numberOfSubLevels) * 100
-        readonly property string message: "%1%".arg(value)
+        readonly property string message: qsTr("%1%").arg(value)
 
-        value: Math.round( percentage * 10 ) / 10
+        value: Math.round(percentage * 10) / 10
         maximumValue: 100
 
         visible: items.assessmentMode
@@ -255,7 +255,7 @@ Item {
         anchors.margins: 10 * ApplicationInfo.ratio
         anchors.horizontalCenter: parent.horizontalCenter
         radius: 4 * ApplicationInfo.ratio
-        visible: items.assessmentMode && (score.currentSubLevel > score.numberOfSubLevels)
+        visible: items.assessmentMode && (score.currentSubLevel >= score.numberOfSubLevels)
         z: 4
         GCText {
             anchors.fill: parent

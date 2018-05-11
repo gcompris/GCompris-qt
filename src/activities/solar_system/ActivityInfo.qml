@@ -36,7 +36,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Click on a planet or the Sun to reveal questions. Each question contains 4 options. One of those is 100% correct. Try to answer the questions till you get a 100% closeness in the closeness meter.")
+  manual: qsTr("Click on a planet or the Sun to reveal questions. Each question contains 4 options. One of those is 100% correct. Try to answer the questions until you get a 100% closeness in the closeness meter.")
   credit: ""
   section: "fun"
   createdInVersion: 9500
