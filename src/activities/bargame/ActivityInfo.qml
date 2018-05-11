@@ -29,7 +29,7 @@ ActivityInfo {
   description: qsTr("Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole.")
   // intro: "Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole."
   //: Help goal
-  goal: qsTr("Don't use the last ball")
+  goal: qsTr("Don't put the ball in the last hole")
   //: Help prerequisite
   prerequisite: qsTr("Ability to count")
   //: Help manual
