@@ -389,6 +389,7 @@
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="x-test">xxGCompris main menuxx</caption>
+      <caption xml:lang="zh-TW">GCompris 主畫面</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/main_menu.png</image>
     </screenshot>
     <screenshot>
