@@ -19,7 +19,7 @@
 *   You should have received a copy of the GNU General Public License
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
-import QtQuick 2.1
+import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
@@ -59,82 +59,34 @@ Item {
     property int labelSquareSize: whiteWidth - 5
 
     Repeater {
-        id: whiteRepeater
+        id: whiteKeyRepeater
         model: whiteNotes.length
-        Rectangle {
-            id: whiteKey
+        PianoKey {
             color: "white"
-            border.color: "black"
             width: whiteWidth
             height: whiteHeight
             x: index * whiteWidth
-            Rectangle {
-                width: labelSquareSize
-                height: width
-                anchors.bottom: whiteKey.bottom
-                anchors.horizontalCenter: whiteKey.horizontalCenter
-                color: colorWhiteNotes[index]
-                anchors.margins: 4
-                border.color: "black"
-                border.width: 2
-                radius: 5
-                visible: whiteLabelsVisible
-                GCText {
-                    anchors.fill: parent
-                    text: whiteNotes[index]
-                    fontSizeMode: Text.Fit
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-            }
-
-            MultiPointTouchArea {
-                anchors.fill: parent
-                onPressed: {
-                    noteClicked(index + 1)
-                    whiteKey.scale = 0.95
-                }
-                onReleased: whiteKey.scale = 1
-            }
+            labelSquareSize: piano.labelSquareSize
+            noteColor: colorWhiteNotes[index]
+            keyName: whiteNotes[index]
+            labelsVisible: whiteLabelsVisible
+            onKeyPressed: noteClicked(index + 1)
         }
     }
 
     Repeater {
-        id: blackNotesLabels
+        id: blackKeyRepeater
         model: blackNotes.length
-        Rectangle {
-            id: blackKey
+        PianoKey {
             color: "black"
-            border.color: "black"
             width: blackWidth
             height: blackHeight
             x: blacks[index] * piano.width / 184
-            Rectangle {
-                width: height
-                height: labelSquareSize
-                y: parent.height - height - 5
-                x: (blackWidth - labelSquareSize)/2
-                color: colorBlackNotes[index]
-                border.color: "black"
-                border.width: 2
-                radius: 5
-                visible: blackLabelsVisible
-                GCText {
-                    anchors.fill: parent
-                    text: blackNotes[index]
-                    fontSizeMode: Text.Fit
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-            }
-            MultiPointTouchArea {
-                anchors.fill: parent
-                onPressed: {
-                    noteClicked(-index - 1)
-                    blackKey.scale = 0.95
-                }
-                onReleased: blackKey.scale = 1
-            }
+            labelSquareSize: piano.labelSquareSize
+            noteColor: colorBlackNotes[index]
+            keyName: blackNotes[index]
+            labelsVisible: blackLabelsVisible
+            onKeyPressed: noteClicked(-index - 1)
         }
     }
 }
