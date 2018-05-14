@@ -177,9 +177,9 @@ Item {
                 }
 
                 y: {
-                    var shift = 0;
+                    var shift = 0
                     if(clef === "bass") {
-                        shift = -3 * verticalDistanceBetweenLines
+                        shift = -2.5 * verticalDistanceBetweenLines
                     }
                     if(blackType !== "") {
                         if(blackType === "flat") {
@@ -190,16 +190,12 @@ Item {
                         }
                     }
 
-                    if(mValue > 0) {
-                        return (nbLines - 2) * verticalDistanceBetweenLines - (parseInt(mValue) - 1) * verticalDistanceBetweenLines/2 + shift
-                    }
-                    else if(mValue >= -2)
-                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)) - 1) * verticalDistanceBetweenLines/2 + shift
+                    if(mValue >= -2)
+                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)) - 1) * verticalDistanceBetweenLines / 2 + shift
                     else
-                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))) * verticalDistanceBetweenLines/2 + shift
+                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))) * verticalDistanceBetweenLines / 2 + shift
                 }
             }
         }
-        spacing: 0
     }
 }

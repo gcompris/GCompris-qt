@@ -67,11 +67,11 @@ Item {
         id: blackTypeImage
         source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
         visible: value[0] === '-'
-        sourceSize.width: noteImage.width/2.5
+        sourceSize.width: noteImage.width / 2.5
         anchors.right: noteImage.left
-        anchors.rightMargin: -width/2
+        anchors.rightMargin: -width / 2
         anchors.bottom: noteImage.bottom
-        anchors.bottomMargin: -height/2
+        anchors.bottomMargin: height / 2
         fillMode: Image.PreserveAspectFit
     }
 
