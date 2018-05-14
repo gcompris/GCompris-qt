@@ -29,6 +29,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+    isMusicalActivity: true
 
     pageComponent: Image {
         id: background

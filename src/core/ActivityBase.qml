@@ -123,6 +123,14 @@ Item {
     property Loading loading
 
     /**
+     * type: bool
+     * This variable stores if the activity is a musical activity.
+     *
+     * If it is a musical activity and the audioEffects is disabled, we temporarily unmute the GCSfx audioEffects for that activity and mute again on exiting it in main.qml.
+     */
+    property bool isMusicalActivity: false
+
+    /**
      * Emitted when the user wants to return to the Home/Menu screen.
      */
     signal home

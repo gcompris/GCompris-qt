@@ -53,6 +53,7 @@ Window {
     /// @cond INTERNAL_DOCS
 
     property var applicationState: Qt.application.state
+    property bool isMusicalActivityRunning: false
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
@@ -99,7 +100,7 @@ Window {
 
     GCSfx {
         id: audioEffects
-        muted: !ApplicationSettings.isAudioEffectsEnabled
+        muted: !ApplicationSettings.isAudioEffectsEnabled && !main.isMusicalActivityRunning
     }
 
     function playIntroVoice(name) {
@@ -244,12 +245,15 @@ Window {
                     if(properties.enterItem.isDialog) {
                         return pushVTransition
                     } else {
+                        if(properties.enterItem.isMusicalActivity)
+                            main.isMusicalActivityRunning = true
                         return pushHTransition
                     }
                 } else {
                     if(properties.exitItem.isDialog) {
                         return popVTransition
                     } else {
+                        main.isMusicalActivityRunning = false
                         return popHTransition
                     }
 
