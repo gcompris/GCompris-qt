@@ -62,7 +62,7 @@ Item {
         id: whiteRepeater
         model: whiteNotes.length
         Rectangle {
-            id: note
+            id: whiteKey
             color: "white"
             border.color: "black"
             width: whiteWidth
@@ -71,8 +71,8 @@ Item {
             Rectangle {
                 width: labelSquareSize
                 height: width
-                anchors.bottom: note.bottom
-                anchors.horizontalCenter: note.horizontalCenter
+                anchors.bottom: whiteKey.bottom
+                anchors.horizontalCenter: whiteKey.horizontalCenter
                 color: colorWhiteNotes[index]
                 anchors.margins: 4
                 border.color: "black"
@@ -91,8 +91,10 @@ Item {
             MultiPointTouchArea {
                 anchors.fill: parent
                 onPressed: {
-                    noteClicked(index + 1);
+                    noteClicked(index + 1)
+                    whiteKey.scale = 0.95
                 }
+                onReleased: whiteKey.scale = 1
             }
         }
     }
@@ -101,7 +103,7 @@ Item {
         id: blackNotesLabels
         model: blackNotes.length
         Rectangle {
-            id: note
+            id: blackKey
             color: "black"
             border.color: "black"
             width: blackWidth
@@ -128,8 +130,10 @@ Item {
             MultiPointTouchArea {
                 anchors.fill: parent
                 onPressed: {
-                    noteClicked(-index - 1);
+                    noteClicked(-index - 1)
+                    blackKey.scale = 0.95
                 }
+                onReleased: blackKey.scale = 1
             }
         }
     }
