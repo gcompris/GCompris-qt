@@ -18,6 +18,7 @@
 
 import QtQuick 2.6
 import GCompris 1.0
+import QtQuick.Controls 1.5
 
 import "../../core"
 import "piano_composition.js" as Activity
@@ -31,9 +32,12 @@ Rectangle {
     z: 1000 
     anchors.fill: parent
     visible: false
+
     signal close
+
     property alias melodiesModel: melodiesModel
-    property bool horizontalLayout: dialogBackground.width > dialogBackground.height ? true : false
+    property bool horizontalLayout: dialogBackground.width > dialogBackground.height
+    property int selectedMelodyIndex: -1
 
     ListModel {
         id: melodiesModel
@@ -68,6 +72,7 @@ Rectangle {
                     wrapMode: Text.WordWrap
                 }
             }
+
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
@@ -79,16 +84,18 @@ Rectangle {
 
                 Flickable {
                     anchors.fill: parent
-                    contentWidth: melodiesGrid.width
+                    anchors.topMargin: 10
+                    anchors.leftMargin: 20
+                    contentWidth: parent.width
                     contentHeight: melodiesGrid.height
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
-                    Grid {
+                    Flow {
                         id: melodiesGrid
-                        rows: 10
-                        columns: horizontalLayout ? 4 : 3
+                        width: parent.width
                         spacing: 40
+                        anchors.horizontalCenter: parent.horizontalCenter
 
                         Repeater {
                             id: melodiesRepeater
@@ -96,36 +103,31 @@ Rectangle {
 
                             Item {
                                 id: melodiesItem
-                                width: dialogBackground.width > dialogBackground.height ? dialogBackground.width * 0.2 : dialogBackground.width * 0.25
-                                height: dialogBackground.height * 0.2
+                                width: dialogBackground.horizontalLayout ? dialogBackground.width / 5 : dialogBackground.width / 4
+                                height: dialogBackground.height / 5
 
-                                Rectangle {
-                                    anchors.fill: parent
-                                    color: "orange"
-                                    radius: 10
+                                Button {
+                                    text: title
+                                    onClicked: {
+                                        dialogBackground.selectedMelodyIndex = index
+                                        items.staff2.loadFromData(melody)
+                                    }
+                                    width: parent.width
+                                    height: parent.height * 0.8
+                                    style: GCButtonStyle {
+                                        theme: "dark"
+                                    }
 
-                                    Rectangle {
-                                        width: parent.width - anchors.margins
-                                        height: parent.height - anchors.margins
-                                        anchors.verticalCenter: parent.verticalCenter
-                                        anchors.horizontalCenter: parent.horizontalCenter
-                                        anchors.margins: parent.height/4
-                                        radius: 10
-                                        color: "#E8E8E8" //paper white
-
-                                        GCText {
-                                            anchors.fill: parent
-                                            text: title
-                                            fontSizeMode: Text.Fit
-                                            wrapMode: Text.WordWrap
-                                        }
-
-                                        MouseArea {
-                                            anchors.fill: parent
-                                            onClicked: {
-                                                items.staff2.loadFromData(melody)
-                                            }
-                                        }
+                                    Image {
+                                        source: "qrc:/gcompris/src/core/resource/apply.svg"
+                                        sourceSize.width: height
+                                        sourceSize.height: height
+                                        width: height
+                                        height: parent.height / 4
+                                        anchors.bottom: parent.bottom
+                                        anchors.right: parent.right
+                                        anchors.margins: 2
+                                        visible: dialogBackground.selectedMelodyIndex === index
                                     }
                                 }
                             }
@@ -136,7 +138,11 @@ Rectangle {
             Item { width: 1; height: 10 }
         }
     }
+
     GCButtonCancel {
-        onClose: parent.close()
+        onClose: {
+            dialogBackground.selectedMelodyIndex = -1
+            parent.close()
+        }
     }
 }
