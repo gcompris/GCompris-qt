@@ -60,7 +60,7 @@ function start(items_) {
 }
 
 function saveMelody() {
-    var notes = items.staff2.getAllNotes()
+    var notes = items.multipleStaff.getAllNotes()
     if (!items.file.exists(userDir)) {
         if (!items.file.mkpath(userDir))
             console.error("Could not create directory " + userDir);
@@ -89,7 +89,7 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.staff2.eraseAllNotes()
+    items.multipleStaff.eraseAllNotes()
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
@@ -97,7 +97,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    items.staff2.eraseAllNotes()
+    items.multipleStaff.eraseAllNotes()
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }

@@ -88,15 +88,15 @@ ActivityBase {
                 playNote('-5')
             }
             if(event.key === Qt.Key_Delete) {
-                staff2.eraseAllNotes()
+                multipleStaff.eraseAllNotes()
             }
             if(event.key === Qt.Key_Space) {
-                staff2.play()
+                multipleStaff.play()
             }
         }
 
         function playNote(note) {
-            staff2.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat", false)
+            multipleStaff.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat", false)
             var noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + 'bass' + '_pitches/' + currentType + '/' + note + '.wav';
             items.audioEffects.play(noteToPlay)
         }
@@ -108,7 +108,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property alias bar: bar
             property alias bonus: bonus
-            property alias staff2: staff2
+            property alias multipleStaff: multipleStaff
             property string staffLength: "short"
             property alias melodyList: melodyList
             property alias file: file
@@ -135,7 +135,7 @@ ActivityBase {
         }
 
         MultipleStaff {
-            id: staff2
+            id: multipleStaff
             width: horizontalLayout ? parent.width * 0.50 : parent.height * 0.8
             height: horizontalLayout ? parent.height * 0.5 : parent.height * 0.3
             nbStaves: 3
@@ -175,157 +175,144 @@ ActivityBase {
             }
         }
 
-            Piano {
-                id: piano
-                width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.8
-                height: horizontalLayout ? parent.height * 0.45 : parent.width * 0.3
-                anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
-                anchors.left: horizontalLayout ? parent.left : undefined
-                anchors.leftMargin: horizontalLayout ? parent.width * 0.06 : parent.height * 0.01
-                anchors.top: optionsRow.bottom
-                blackLabelsVisible: [4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
-                useSharpNotation: bar.level == 5 ? false : true
-                onNoteClicked: {
-                    onlyNote.value = note
-                    staff2.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat", false)
-                    var noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + clefType + '_pitches/' + currentType + '/' + note + '.wav';
-                    items.audioEffects.play(noteToPlay)
+        Piano {
+            id: piano
+            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.8
+            height: horizontalLayout ? parent.height * 0.45 : parent.width * 0.3
+            anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
+            anchors.left: horizontalLayout ? parent.left : undefined
+            anchors.leftMargin: horizontalLayout ? parent.width * 0.06 : parent.height * 0.01
+            anchors.top: optionsRow.bottom
+            blackLabelsVisible: [4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
+            useSharpNotation: bar.level == 5 ? false : true
+            onNoteClicked: {
+                multipleStaff.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat", false)
+                var noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + clefType + '_pitches/' + currentType + '/' + note + '.wav';
+                items.audioEffects.play(noteToPlay)
+            }
+        }
+
+        Row {
+            id: optionsRow
+            anchors.top: instructionBox.bottom
+            anchors.topMargin: 10
+            spacing: 15
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            readonly property var noteTypes: [1, 2, 4, 8]
+            readonly property var noteLengthName: ["whole-note", "half-note", "quarter-note", "eighth-note"]
+
+            Image {
+                id: noteTypeOption
+
+                property int currentIndex: 0
+
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.noteLengthName[currentIndex])
+                sourceSize.width: 50
+                anchors.top: parent.top
+                anchors.topMargin: -6
+                visible: (bar.level == 1 || bar.level == 2) ? false : true
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        parent.currentIndex = (parent.currentIndex + 1) % 4
+                        clickAnimation.start()
+                        currentType = optionsRow.noteTypes[parent.currentIndex]
+                    }
                 }
 
-                Note {
-                    id: onlyNote
-                    value: "1"
-                    type: currentType
-                    visible: false
+                SequentialAnimation {
+                    id: clickAnimation
+                    NumberAnimation {
+                        target: noteTypeOption
+                        property: "scale"
+                        to: 0.7
+                        duration: 150
+                    }
+                    NumberAnimation {
+                        target: noteTypeOption
+                        property: "scale"
+                        to: 1
+                        duration: 150
+                    }
                 }
             }
 
-            Row {
-                id: optionsRow
-                anchors.top: instructionBox.bottom
-                anchors.topMargin: 10
-                spacing: 15
-                anchors.horizontalCenter: parent.horizontalCenter
-
-                Image {
-                    id: wholeNote
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/whole-note.svg"
-                    sourceSize.width: 50
-                    visible: bar.level == 1 || bar.level == 2 ? false : true
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: currentType = onlyNote.wholeNote
-                    }
+            Image {
+                id: playButton
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
+                sourceSize.width: 50
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: multipleStaff.play()
                 }
+            }
 
-                Image {
-                    id: halfNote
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/half-note.svg"
-                    sourceSize.width: 50
-                    visible: wholeNote.visible
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: currentType = onlyNote.halfNote
-                    }
-                }
-
-                Image {
-                    id: quarterNote
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/quarter-note.svg"
-                    sourceSize.width: 50
-                    visible: wholeNote.visible
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: currentType = onlyNote.quarterNote
-                    }
-                }
-
-                Image {
-                    id: eighthNote
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/eighth-note.svg"
-                    sourceSize.width: 50
-                    visible: wholeNote.visible
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: currentType = onlyNote.eighthNote
-                    }
-                }
-
-                Image {
-                    id: playButton
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
-                    sourceSize.width: 50
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: staff2.play()
-                    }
-                }
-
-                Image {
-                    id: clefButton
-                    source: clefType == "bass" ? "qrc:/gcompris/src/activities/piano_composition/resource/bassClefButton.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/trebbleClefButton.svg"
-                    sourceSize.width: 50
-                    visible: bar.level > 2
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            staff2.eraseAllNotes()
-                            clefType = (clefType == "bass") ? "treble" : "bass"
-                        }
-                    }
-                }
-
-                Image {
-                    id: clearButton
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/edit-clear.svg"
-                    sourceSize.width: 50
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: staff2.eraseAllNotes()
-                    }
-                }
-
-                Image {
-                    id: openButton
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/open.svg"
-                    sourceSize.width: 50
-                    visible: bar.level == 6 || bar.level == 7
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            var dataset = Dataset.get()
-                            for(var i = 0; i < dataset.length; i++) {
-                                melodyList.melodiesModel.append(dataset[i])
-                            }
-                            piano.enabled = false
-                            bar.visible = false
-                            melodyList.visible = true
-                        }
-                    }
-                }
-
-                Image {
-                    id: saveButton
-                    source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
-                    sourceSize.width: 50
-                    visible: bar.level == 6 || bar.level == 7
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            Activity.saveMelody()
-                        }
-                    }
-                }
-                Image {
-                    id: changeAccidentalStyleButton
-                    source: piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/blackflat.svg"
-                    visible: bar.level >= 4
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: piano.useSharpNotation = !piano.useSharpNotation
+            Image {
+                id: clefButton
+                source: clefType == "bass" ? "qrc:/gcompris/src/activities/piano_composition/resource/bassClefButton.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/trebbleClefButton.svg"
+                sourceSize.width: 50
+                visible: bar.level > 2
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        multipleStaff.eraseAllNotes()
+                        clefType = (clefType == "bass") ? "treble" : "bass"
                     }
                 }
             }
+
+            Image {
+                id: clearButton
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/edit-clear.svg"
+                sourceSize.width: 50
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: multipleStaff.eraseAllNotes()
+                }
+            }
+
+            Image {
+                id: openButton
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/open.svg"
+                sourceSize.width: 50
+                visible: bar.level == 6 || bar.level == 7
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        var dataset = Dataset.get()
+                        for(var i = 0; i < dataset.length; i++) {
+                            melodyList.melodiesModel.append(dataset[i])
+                        }
+                        piano.enabled = false
+                        bar.visible = false
+                        melodyList.visible = true
+                    }
+                }
+            }
+
+            Image {
+                id: saveButton
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
+                sourceSize.width: 50
+                visible: bar.level == 6 || bar.level == 7
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Activity.saveMelody()
+                    }
+                }
+            }
+            Image {
+                id: changeAccidentalStyleButton
+                source: piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/blackflat.svg"
+                visible: bar.level >= 4
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: piano.useSharpNotation = !piano.useSharpNotation
+                }
+            }
+        }
 
         DialogHelp {
             id: dialogHelp
@@ -348,5 +335,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
 }

@@ -110,7 +110,7 @@ Rectangle {
                                     text: title
                                     onClicked: {
                                         dialogBackground.selectedMelodyIndex = index
-                                        items.staff2.loadFromData(melody)
+                                        items.multipleStaff.loadFromData(melody)
                                     }
                                     width: parent.width
                                     height: parent.height * 0.8
