@@ -1455,11 +1455,11 @@ ActivityBase {
             opacity: 0
         }
 
-        Foldable_panels {
+        FoldablePanels {
             visible: true
         }
 
-        Color_palette {
+        ColorPalette {
             id: colorPalette
             visible: false
         }
