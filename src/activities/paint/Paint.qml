@@ -139,14 +139,34 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias canvas: canvas
-            property alias colorTools: colorTools
+            //property alias colorTools: colorTools
             property alias rightPanel: rightPanel
+            property alias timer: timer
+            property alias area: area
+            property alias inputText: inputText
+            property alias inputTextFrame: inputTextFrame
             property alias parser: parser
-            property alias gridView2: gridView2
+            property alias gridView2: loadSavedPainting.gridView2
             property alias file: file
+            property alias load: load
+            property alias mainRegion: main
             property alias shape: shape
+            property alias colorPalette: colorPalette
             property alias brushSelectCanvas: brushSelectCanvas
-            property color paintColor
+            property int activeColorIndex: 1
+            property var colors: [
+                /*blue*/    "#33B5E5", "#1a53ff", "#0000ff", "#0000b3",
+                /*green*/   "#bfff00", "#99CC00", "#86b300", "#608000",
+                /*orange*/  "#FFBB33",
+                /*red*/     "#ff9999", "#FF4444", "#ff0000", "#cc0000",
+                /*pink*/    "#ff00ff",
+                /*yellow*/  "#ffff00",
+                /*white*/   "#ffffff",
+                /*black*/   "#000000",
+                /*free spots*/
+                "#c2c2d6"
+            ]
+            property color paintColor: Activity.colors[items.activeColorIndex]
             property var urlImage
             property bool next: false
             property bool next2: false
@@ -257,6 +277,7 @@ ActivityBase {
                 }
             }
 
+            // Text input box.
             Rectangle {
                 id: inputTextFrame
                 color: background.color
@@ -311,7 +332,7 @@ ActivityBase {
                     }
                 }
             }
-
+            // End text input box.
 
             Rectangle {
                 id: canvasBackground
@@ -387,7 +408,7 @@ ActivityBase {
                             items.mainAnimationOnX = true
                             canvas.url = ""
 
-                          // undo and redo
+                            // undo and redo
                         } else if (items.undoRedo) {
                             ctx.drawImage(items.urlImage,0,0)
                             requestPaint()
@@ -410,10 +431,10 @@ ActivityBase {
                     }
 
                     function midPointBtw(p1, p2) {
-                      return {
-                        x: p1.x + (p2.x - p1.x) / 2,
-                        y: p1.y + (p2.y - p1.y) / 2
-                      };
+                        return {
+                            x: p1.x + (p2.x - p1.x) / 2,
+                            y: p1.y + (p2.y - p1.y) / 2
+                        };
                     }
 
                     function distanceBetween(point1, point2) {
@@ -425,7 +446,7 @@ ActivityBase {
                     }
 
                     function getRandomInt(min, max) {
-                      return Math.floor(Math.random() * (max - min + 1)) + min;
+                        return Math.floor(Math.random() * (max - min + 1)) + min;
                     }
 
                     function removeShadow() {
@@ -614,7 +635,7 @@ ActivityBase {
 
                             // reset the "points" array
                             if (items.toolSelected == "pattern" ||
-                                  items.toolSelected == "brush4")
+                                    items.toolSelected == "brush4")
                                 Activity.points = []
 
                             if (items.toolSelected == "brush5")
@@ -645,9 +666,9 @@ ActivityBase {
                         onPositionChanged: {
                             canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? "#ffffff" :
-                                                     items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
-                                                     items.toolSelected == "brush4" ? "black" :
-                                                                                       items.paintColor
+                                                                                      items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
+                                                                                                                        items.toolSelected == "brush4" ? "black" :
+                                                                                                                                                         items.paintColor
 
                             if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
                                 canvas.removeShadow()
@@ -780,10 +801,10 @@ ActivityBase {
                                 canvas.ctx.moveTo(p1.x, p1.y)
 
                                 for (var i = 1, len = Activity.points.length; i < len; i++) {
-                                  var midPoint = canvas.midPointBtw(p1, p2);
-                                  canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
-                                  p1 = Activity.points[i];
-                                  p2 = Activity.points[i+1];
+                                    var midPoint = canvas.midPointBtw(p1, p2);
+                                    canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
+                                    p1 = Activity.points[i];
+                                    p2 = Activity.points[i+1];
                                 }
                                 canvas.ctx.lineTo(p1.x, p1.y);
                                 canvas.ctx.stroke();
@@ -846,10 +867,10 @@ ActivityBase {
                                 canvas.ctx.fillStyle = items.paintColor
                                 canvas.ctx.lineWidth = items.sizeS / 4
                                 for (var i = 0; i < Activity.points.length; i++) {
-                                  canvas.ctx.beginPath();
-                                  canvas.ctx.arc(Activity.points[i].x, Activity.points[i].y, 5 * items.sizeS, 0, Math.PI * 2, false);
-                                  canvas.ctx.fill();
-                                  canvas.ctx.stroke();
+                                    canvas.ctx.beginPath();
+                                    canvas.ctx.arc(Activity.points[i].x, Activity.points[i].y, 5 * items.sizeS, 0, Math.PI * 2, false);
+                                    canvas.ctx.fill();
+                                    canvas.ctx.stroke();
                                 }
                                 canvas.requestPaint()
                             } else if(items.toolSelected == "brush5") {
@@ -954,83 +975,6 @@ ActivityBase {
             }
 
             Rectangle {
-                id: colorTools
-                color: background.color
-                height: flow.height + flow.anchors.margins * 2
-                anchors {
-                    left: parent.left
-                    top: parent.top
-                    right: parent.right
-                    margins: 0
-                }
-                z: 2
-
-                Flow {
-                    id: flow
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        right: parent.right
-                        margins: 8
-                    }
-
-                    spacing: 5
-
-                    // colors in left panel
-                    Repeater {
-                        id: colorRepeater
-                        model: Activity.colors
-
-                        Rectangle {
-                            id: root
-                            radius: width / 2
-                            width: dim - 5 > 50 ?
-                                       dim - 5 < 70 ?
-                                           dim - 5 : 70 :  60
-                            height: width
-                            color: modelData
-                            property real dim: (background.width - 16) / Activity.colors.length
-                            property bool active: items.paintColor === color
-                            border.color: active? "#595959" : "#f2f2f2"
-                            border.width: 3
-
-                            MouseArea {
-                                anchors.fill: parent
-
-                                // choose other color:
-                                onDoubleClicked: {
-                                    items.index = index
-                                    colorDialog.visible = true
-                                }
-
-                                // set this color as current paint color
-                                onClicked: {
-                                    root.active = true
-                                    items.paintColor = root.color
-
-                                    for (var i = 0; i < colorRepeater.count; i++)
-                                        if (i != index)
-                                            colorRepeater.itemAt(i).active = false
-
-                                    background.hideExpandedTools()
-
-                                    // choose other color
-                                    if (color == "#c2c2d6") {
-                                        items.index = index
-                                        colorDialog.visible = true
-                                    } else {
-                                        items.paintColor = color
-                                    }
-
-                                    background.reloadSelectedPen()
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            Rectangle {
                 id: selectSize
                 height: row.height * 1.1
                 width: row.width * 1.2
@@ -1096,8 +1040,8 @@ ActivityBase {
                 width: row2.width * 1.05
 
                 x: rightPanelFrame.x + rightPanelFrame.width
-                y: rightPanelFrame.y - height / 2 + eraser.height * 3.5 +
-                   rightPanel.spacing * 3 + rightPanel.anchors.topMargin
+                y: rightPanelFrame.y - height / 2 + 20 //eraser.height * 3.5 +
+                   + rightPanel.spacing * 3 + rightPanel.anchors.topMargin
 
                 radius: width * 0.02
                 opacity: 0
@@ -1210,7 +1154,7 @@ ActivityBase {
                 width: rightPanel.width + rightPanel.anchors.margins * 2
                 anchors {
                     right: parent.right
-                    top: colorTools.bottom
+                    //top: colorTools.bottom
                     bottom: parent.bottom
                     margins: 0
                 }
@@ -1226,26 +1170,9 @@ ActivityBase {
                         margins: 8
                     }
 
-                    property real dime: (background.height - colorTools.height) / 14 - 10
+                    property real dime: (background.height) / 14 - 10 //(background.height - colorTools.height) / 14 - 10
 
                     spacing: 15
-
-                    // eraser tool
-                    Image {
-                        id: eraser
-                        width: rightPanel.dime; height: rightPanel.dime
-                        source: Activity.url + "eraser.svg"
-                        opacity: items.toolSelected == "eraser" ? 1 : 0.6
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                items.toolSelected = "eraser"
-                                background.hideExpandedTools()
-                                background.reloadSelectedPen()
-                            }
-                        }
-                    }
 
                     property alias sizeTool: sizeTool
 
@@ -1269,34 +1196,10 @@ ActivityBase {
                         }
                     }
 
-                    Image {
-                        id: button
-                        sourceSize.width: rightPanel.dime; sourceSize.height: rightPanel.dime
-                        width: rightPanel.dime; height: rightPanel.dime
-                        source: Activity.url + "fill.svg"
-                        opacity: items.toolSelected == "fill" ? 1 : 0.6
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                items.toolSelected = "fill"
-                                background.hideExpandedTools()
-
-                                // make the hover over the canvas false
-                                area.hoverEnabled = false
-
-                                // change the selectBrush tool
-                                timer.index = 0
-                                timer.start()
-
-                                background.reloadSelectedPen()
-                            }
-                        }
-                    }
-
                     Canvas {
                         id: brushSelectCanvas
-                        width: rightPanel.dime; height: rightPanel.dime
+                        width: rightPanel.dime
+                        height: rightPanel.dime
                         function c(x) {
                             return width * x / 510
                         }
@@ -1389,7 +1292,7 @@ ActivityBase {
 
                             brushContext.restore()
                             brushContext.drawImage(Activity.url + "pen.svg", 0, 0,rightPanel.dime,rightPanel.dime)
-                           }
+                        }
 
                         MouseArea {
                             anchors.fill: parent
@@ -1513,484 +1416,34 @@ ActivityBase {
                             }
                         }
                     }
-
-                    // write text
-                    Rectangle { // background of text
-                        width: rightPanel.dime; height: rightPanel.dime
-                        color: "transparent"
-                        opacity: items.toolSelected == "text" ? 1 : 0.6
-
-                        GCText { // text
-                            text: "A"
-                            color: items.toolSelected == "text" ? items.paintColor : "#ffffff"
-                            anchors.horizontalCenter: parent.horizontalCenter
-                            anchors.verticalCenter: parent.verticalCenter
-                        }
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                items.toolSelected = "text"
-                                background.hideExpandedTools()
-                                background.reloadSelectedPen()
-
-                                // enable the text to follow the cursor movement
-                                area.hoverEnabled = true
-
-                                // make visible the inputTextFrame
-                                inputTextFrame.opacity = 1
-                                inputTextFrame.z = 1000
-
-                                // restore input text to ""
-                                inputText.text = ""
-                            }
-                        }
-                    }
-
-                    // undo button
-                    Image {
-                        id: undoButton
-                        sourceSize.width: rightPanel.dime
-                        sourceSize.height: rightPanel.dime
-                        width: rightPanel.dime; height: rightPanel.dime
-                        source: Activity.url + "back.svg"
-                        opacity: 0.6
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onPressed: undoButton.opacity = 1
-                            onReleased: undoButton.opacity = 0.6
-                            onClicked: {
-                                background.hideExpandedTools()
-
-                                if (Activity.undo.length > 0 && items.next ||
-                                        Activity.undo.length > 1 && items.next == false) {
-                                    items.undoRedo = true
-
-                                    if (items.next) {
-                                        Activity.redo = Activity.redo.concat(Activity.undo.pop())
-                                    }
-
-                                    items.next = false
-                                    items.next2 = true
-
-                                    // pop the last image saved from "undo" array
-                                    items.urlImage = Activity.undo.pop()
-
-                                    // load the image in the canvas
-                                    canvas.loadImage(items.urlImage)
-
-                                    // save the image into the "redo" array
-                                    Activity.redo = Activity.redo.concat(items.urlImage)
-
-                                    // print("undo:   " + Activity.undo.length + "  redo:  " + Activity.redo.length + "     undo Pressed")
-                                }
-                            }
-                        }
-                    }
-
-                    // redo button
-                    Image {
-                        id: redoButton
-                        sourceSize.width: rightPanel.dime
-                        sourceSize.height: rightPanel.dime
-                        width: rightPanel.dime; height: rightPanel.dime
-                        source: Activity.url + "forward.svg"
-                        opacity: 0.6
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onPressed: redoButton.opacity = 1
-                            onReleased: redoButton.opacity = 0.6
-                            onClicked: {
-                                background.hideExpandedTools()
-
-                                if (Activity.redo.length > 0) {
-                                    items.undoRedo = true
-
-                                    if (items.next2) {
-                                        Activity.undo = Activity.undo.concat(Activity.redo.pop())
-                                    }
-
-
-                                    items.next = true
-                                    items.next2 = false
-
-                                    items.urlImage = Activity.redo.pop()
-
-                                    canvas.loadImage(items.urlImage)
-                                    Activity.undo = Activity.undo.concat(items.urlImage)
-
-                                    // print("undo:   " + Activity.undo.length + "  redo:  " + Activity.redo.length + "     redo Pressed")
-                                }
-                            }
-                        }
-                    }
-
-                    // load button
-                    Image {
-                        id: loadButton
-                        sourceSize.width: rightPanel.dime
-                        sourceSize.height: rightPanel.dime
-                        width: rightPanel.dime; height: rightPanel.dime
-                        source: Activity.url + "load.svg"
-                        opacity: 0.6
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onPressed: loadButton.opacity = 1
-                            onReleased: loadButton.opacity = 0.6
-                            onClicked: {
-                                if (load.opacity == 0)
-                                    load.opacity = 1
-
-                                background.hideExpandedTools()
-
-                                // mark the pencil as the default tool
-                                items.toolSelected = "pencil"
-
-                                // move the main screen to right
-                                main.x = background.width
-                            }
-                        }
-                    }
-
-                    // save button
-                    Image {
-                        id: saveButton
-                        sourceSize.width: rightPanel.dime
-                        sourceSize.height: rightPanel.dime
-                        width: rightPanel.dime; height: rightPanel.dime
-                        source: Activity.url + "save.svg"
-                        opacity: 0.6
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onPressed: saveButton.opacity = 1
-                            onReleased: saveButton.opacity = 0.6
-                            onClicked: Activity.saveToFile(true)
-                        }
-                    }
                 }
             }
         }
 
-        // load images screen
-        Rectangle {
+        LoadDrawings {
             id: load
-            color: background.color
-            width: background.width
-            height: background.height
-            opacity: 0
-            z: 5
-
-            anchors {
-                top: main.top
-                right: main.left
-            }
-
-            GridView {
-                id: gridView
-                anchors.fill: parent
-                cellWidth: (background.width - exitButton.width) / 2 * slider1.value; cellHeight: cellWidth
-                model: Activity.loadImagesSource
-
-                delegate: Item {
-                    width: gridView.cellWidth
-                    height: gridView.cellHeight
-                    property alias loadImage: loadImage
-                    Image {
-                        id: loadImage
-                        source: modelData
-                        anchors.centerIn: parent
-                        sourceSize.width: parent.width * 0.7
-                        sourceSize.height: parent.height * 0.7
-                        width: parent.width * 0.9
-                        height: parent.height * 0.9
-                        mirror: false
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                canvas.url = loadImage.source
-                                canvas.loadImage(loadImage.source)
-
-                                main.x = 0
-                            }
-                        }
-                    }
-                }
-            }
-
-            Behavior on x {
-                NumberAnimation {
-                    target: load
-                    property: "x"
-                    duration: 800
-                    easing.type: Easing.InOutQuad
-                }
-            }
-
-            Behavior on y {
-                NumberAnimation {
-                    target: load
-                    property: "y"
-                    duration: 800
-                    easing.type: Easing.InOutQuad
-                }
-            }
-
-            GCButtonCancel {
-                id: exitButton
-                onClose: {
-                    items.mainAnimationOnX = true
-                    main.x = 0
-                }
-            }
-
-            Image {
-                id: switchToSavedPaintings
-                source: "qrc:/gcompris/src/activities/paint/paint.svg"
-                anchors.right: parent.right
-                anchors.top: exitButton.bottom
-                smooth: true
-                sourceSize.width: 60 * ApplicationInfo.ratio
-                anchors.margins: 10
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        if (loadSavedPainting.opacity == 0)
-                            loadSavedPainting.opacity = 1
-
-                        items.mainAnimationOnX = false
-
-                        // move down the loadPaintings screen
-                        main.y = main.height
-
-                        loadSavedPainting.anchors.left =  load.left
-
-                        // change the images sources from "saved images" to "load images"
-                        items.loadSavedImage = true
-                    }
-                }
-            }
-
-
-            Slider {
-                id: slider1
-                minimumValue: 0.3
-                value: 0.65
-                height: parent.height * 0.5
-                width: 60
-
-                opacity: 1
-                enabled: true
-
-                anchors.right: parent.right
-                anchors.rightMargin: switchToSavedPaintings.width / 2 - 10
-                anchors.top: switchToSavedPaintings.bottom
-
-                orientation: Qt.Vertical
-
-                style: SliderStyle {
-                        handle: Rectangle {
-                            height: 80
-                            width: height
-                            radius: width / 2
-                            color: background.color
-                        }
-
-                        groove: Rectangle {
-                            implicitHeight: slider1.width
-                            implicitWidth: slider1.height
-                            radius: height / 2
-                            border.color: "#6699ff"
-                            color: "#99bbff"
-
-                            Rectangle {
-                                height: parent.height
-                                width: styleData.handlePosition
-                                implicitHeight: 100
-                                implicitWidth: 6
-                                radius: height/2
-                                color: "#4d88ff"
-                            }
-                        }
-                    }
-            }
         }
 
-        // load screen 2
-        Rectangle {
+        LoadSavedDrawings {
             id: loadSavedPainting
-            color: background.color
-            width: background.width
-            height: background.height
-            opacity: 0
-            z: 100
-
-            anchors {
-                bottom: main.top
-                left: load.left
-            }
-
-            GCText {
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.horizontalCenterOffset: - rightFrame.width / 2
-                fontSize: largeSize
-                text: qsTr("No paintings saved")
-                opacity: gridView2.count == 0
-            }
-
-            GridView {
-                id: gridView2
-                anchors.fill: parent
-                cellWidth: (main.width - sizeOfImages.width) * slider.value
-                cellHeight: main.height * slider.value
-                flow: GridView.FlowTopToBottom
-                z: 1
-
-                delegate: Rectangle {
-                    width: gridView2.cellWidth
-                    height: gridView2.cellHeight
-                    color: "transparent"
-
-                    Image {
-                        id: loadImage2
-                        source: modelData.url
-                        anchors.centerIn: parent
-                        sourceSize.width: parent.width
-                        sourceSize.height: parent.height
-                        width: parent.width * 0.9
-                        height: parent.height * 0.9
-
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                loadSavedPainting.anchors.left = main.left
-
-                                canvas.url = loadImage2.source
-                                canvas.loadImage(loadImage2.source)
-
-                                main.x = 0
-                                main.y = 0
-                            }
-                        }
-
-                        GCButtonCancel {
-                            anchors.right: undefined
-                            anchors.left: parent.left
-                            sourceSize.width: 40 * ApplicationInfo.ratio
-
-                            onClose: {
-                                Activity.dataset.splice(index, 1)
-                                gridView2.model = Activity.dataset
-                                Activity.saveToFile(false)
-                            }
-                        }
-                    }
-                }
-            }
-
-            Behavior on x { NumberAnimation { target: loadSavedPainting; property: "x"; duration: 800; easing.type: Easing.InOutQuad } }
-
-            Behavior on y { NumberAnimation { target: loadSavedPainting; property: "y"; duration: 800; easing.type: Easing.InOutQuad } }
-
-
-            Rectangle {
-                id: rightFrame
-                width: sizeOfImages.width + sizeOfImages.anchors.margins * 2
-                color: background.color
-                anchors {
-                    right: parent.right
-                    top: parent.top
-                    bottom: parent.bottom
-                }
-                z: 2
-
-                Image {
-                    id: sizeOfImages
-                    source: "qrc:/gcompris/src/activities/paint/paint.svg"
-                    anchors.right: parent.right
-                    anchors.top: parent.top
-                    smooth: true
-                    sourceSize.width: 60 * ApplicationInfo.ratio
-                    anchors.margins: 10
-
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            items.mainAnimationOnX = true
-
-                            // move down the loadPaintings screen
-                            main.y = 0
-
-                            // change the images sources from "saved images" to "load images"
-                            items.loadSavedImage = false
-                        }
-                    }
-                }
-
-                Slider {
-                    id: slider
-                    minimumValue: 0.3
-                    value: 0.65
-                    height: parent.height * 0.5
-                    width: 60
-
-                    opacity: 1
-                    enabled: true
-
-                    anchors.right: parent.right
-                    anchors.rightMargin: sizeOfImages.width / 2 - 10
-                    anchors.top: sizeOfImages.bottom
-
-                    orientation: Qt.Vertical
-
-                    style: SliderStyle {
-                        handle: Rectangle {
-                            height: 80
-                            width: height
-                            radius: width / 2
-                            color: background.color
-                        }
-
-                        groove: Rectangle {
-                            implicitHeight: slider.width
-                            implicitWidth: slider.height
-                            radius: height / 2
-                            border.color: "#6699ff"
-                            color: "#99bbff"
-
-                            Rectangle {
-                                height: parent.height
-                                width: styleData.handlePosition
-                                implicitHeight: 100
-                                implicitWidth: 6
-                                radius: height/2
-                                color: "#4d88ff"
-                            }
-                        }
-                    }
-                }
-            }
         }
 
         ColorDialog {
             id: colorDialog
             title: qsTr("Please choose a color")
+            currentColor: items.colors[items.activeColorIndex]
             visible: false
 
             onAccepted: {
-                colorRepeater.itemAt(items.index).color = colorDialog.color
+                items.colors[items.activeColorIndex] = colorDialog.color
                 items.paintColor = colorDialog.color
-
+                colorPalette.visible = false
                 //   if you want to save the custom colors for the next session;
                 //     update the array from js
                 // Activity.colors[items.index] = items.paintColor
                 //     then add it to the saved file containing the paintings
                 console.log("You chose: " + colorDialog.color)
+                console.log(items.colors)
             }
             onRejected: {
                 console.log("Canceled")
@@ -2000,6 +1453,15 @@ ActivityBase {
         Canvas {
             id: shape
             opacity: 0
+        }
+
+        Foldable_panels {
+            visible: true
+        }
+
+        Color_palette {
+            id: colorPalette
+            visible: false
         }
     }
 }

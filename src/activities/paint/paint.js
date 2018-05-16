@@ -36,8 +36,7 @@ var colors = [
             /*white*/   "#ffffff",
             /*black*/   "#000000",
             /*free spots*/
-                 "#c2c2d6", "#c2c2d6", "#c2c2d6", "#c2c2d6",
-                 "#c2c2d6", "#c2c2d6", "#c2c2d6", "#c2c2d6"
+            "#c2c2d6"
         ]
 var loadImagesSource = [
             "qrc:/gcompris/src/activities/photo_hunter/resource/photo1.svg",
@@ -249,4 +248,107 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel()
+}
+
+
+function selectTool(toolName) {
+    console.log("Clicked on " + toolName)
+    if(toolName === "Eraser") {
+        items.toolSelected = "eraser"
+        items.background.hideExpandedTools()
+        items.background.reloadSelectedPen()
+    }
+    else if(toolName === "Bucket fill") {
+        items.toolSelected = "fill"
+        items.background.hideExpandedTools()
+
+        // make the hover over the canvas false
+        items.area.hoverEnabled = false
+
+        // change the selectBrush tool
+        items.timer.index = 0
+        items.timer.start()
+
+        items.background.reloadSelectedPen()
+    }
+    else if(toolName === "Text") {
+        items.toolSelected = "text"
+        items.background.hideExpandedTools()
+        items.background.reloadSelectedPen()
+
+        // enable the text to follow the cursor movement
+        items.area.hoverEnabled = true
+
+        // make visible the inputTextFrame
+        items.inputTextFrame.opacity = 1
+        items.inputTextFrame.z = 1000
+
+        // restore input text to ""
+        items.inputText.text = ""
+    }
+    else if(toolName === "Undo") {
+        items.background.hideExpandedTools()
+        if (undo.length > 0 && items.next ||
+                undo.length > 1 && items.next == false) {
+            items.undoRedo = true
+
+            if (items.next) {
+                redo = redo.concat(undo.pop())
+            }
+
+            items.next = false
+            items.next2 = true
+
+            // pop the last image saved from "undo" array
+            items.urlImage = undo.pop()
+
+            // load the image in the canvas
+            items.canvas.loadImage(items.urlImage)
+
+            // save the image into the "redo" array
+            redo = redo.concat(items.urlImage)
+
+            // print("undo:   " + undo.length + "  redo:  " + redo.length + "     undo Pressed")
+        }
+    }
+    else if(toolName === "Redo") {
+        items.background.hideExpandedTools()
+        if (redo.length > 0) {
+            items.undoRedo = true
+
+            if (items.next2) {
+                undo = undo.concat(redo.pop())
+            }
+
+
+            items.next = true
+            items.next2 = false
+
+            items.urlImage = redo.pop()
+
+            items.canvas.loadImage(items.urlImage)
+            undo = undo.concat(items.urlImage)
+
+            // print("undo:   " + undo.length + "  redo:  " + redo.length + "     redo Pressed")
+        }
+    }
+    else if(toolName === "Load") {
+        if (items.load.opacity == 0)
+            items.load.opacity = 1
+
+        items.background.hideExpandedTools()
+
+        // mark the pencil as the default tool
+        items.toolSelected = "pencil"
+
+        // move the main screen to right
+        items.mainRegion.x = items.background.width
+    }
+    else if(toolName === "Save") {
+        saveToFile(true)
+    }
+    else if(toolName === "More Colors") {
+        items.colorPalette.visible = true
+    }
+
 }
