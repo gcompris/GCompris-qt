@@ -69,7 +69,8 @@ Rectangle {
 
                     onClicked: {
                         //code
-                        colorTools.z = 0
+                        //colorTools.z = 0 // Check this part!
+
                         tool.opac = 0
                         expand.sizeS = index + 1
                     }
