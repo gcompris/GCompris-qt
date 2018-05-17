@@ -1,4 +1,4 @@
-/* GCompris - Color_palette.qml
+/* GCompris - ColorPalette.qml
  *
  * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
  *

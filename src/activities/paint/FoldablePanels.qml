@@ -1,4 +1,4 @@
-/* GCompris - Foldable_panels.qml
+/* GCompris - FoldablePanels.qml
  *
  * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
  *
@@ -29,6 +29,7 @@ Rectangle {
     color: "#add8e6"
     anchors.top: background.top
     anchors.horizontalCenter: background.horizontalCenter
+    property bool collapsePanels: true
 
     ListView {
         id: tools
@@ -127,6 +128,7 @@ Rectangle {
                     // Toggle the 'collapsed' property
                     onClicked: {
                         nestedModel.setProperty(index, "collapsed", !collapsed)
+                        root.collapsePanels = !root.collapsePanels
                         console.log("Clicked on " + categoryName)
                     }
                 }
