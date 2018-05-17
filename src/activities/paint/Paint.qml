@@ -143,7 +143,7 @@ ActivityBase {
             property alias rightPanel: rightPanel
             property alias timer: timer
             property alias area: area
-            property alias inputText: inputText
+            property alias inputText: inputTextFrame.inputText
             property alias inputTextFrame: inputTextFrame
             property alias parser: parser
             property alias gridView2: loadSavedPainting.gridView2
@@ -232,13 +232,6 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
-        Keys.onPressed: {
-            if (event.key == Qt.Key_Escape) {
-                if (main.x == 0)
-                    load.opacity = 0
-            }
-        }
-
         function hideExpandedTools () {
             if (selectBrush.z > 0)
                 hideAnimation.start()
@@ -246,9 +239,9 @@ ActivityBase {
                 hideSelectSizeAnimation.start()
 
             // hide the inputTextFrame
-            inputTextFrame.opacity = 0
-            inputTextFrame.z = -1
-            inputText.text = ""
+            items.inputTextFrame.opacity = 0
+            items.inputTextFrame.z = -1
+            items.inputText.text = ""
         }
 
         Rectangle {
@@ -278,701 +271,649 @@ ActivityBase {
             }
 
             // Text input box.
-            Rectangle {
+            TextInputTool {
                 id: inputTextFrame
-                color: background.color
-                width: inputText.width + okButton.width + inputText.height + 10
-                height: inputText.height * 1.1
-                anchors.centerIn: parent
-                radius: height / 2
-                z: 1000
-                opacity: 0
+            }
 
-                TextField {
-                    id: inputText
-                    anchors.left: parent.left
-                    anchors.leftMargin: height / 1.9
-                    anchors.verticalCenter: parent.verticalCenter
-                    height: 50
-                    width: 300
-                    placeholderText: qsTr("Type here")
-                    font.pointSize: 32
+            //Rectangle {
+            //                id: canvasBackground
+            //                z: 1
+            //                anchors.fill: parent
+            //                anchors.margins: 8
+
+            //                color: "green"
+
+            Canvas {
+                id: canvas
+                anchors.fill: parent
+
+                property real lastX
+                property real lastY
+
+                // for brush
+                property var lastPoint
+                property var currentPoint
+
+                property var ctx
+                property string url: ""
+
+                GCText {
+                    id: onBoardText
+                    text: ""
+                    color: items.paintColor
+                    // font.pointSize: (ApplicationSettings.baseFontSize + 32) * ApplicationInfo.fontRatio
+                    font.pointSize: items.sizeS * 10
+                    z: -1
+                    opacity: 0
                 }
 
-                // ok button
-                Image {
-                    id: okButton
-                    source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-                    sourceSize.height: inputText.height
-                    fillMode: Image.PreserveAspectFit
-                    anchors.left: inputText.right
-                    anchors.leftMargin: 10
-                    anchors.verticalCenter: inputText.verticalCenter
 
-                    MouseArea {
-                        id: mouseArea
-                        anchors.fill: parent
-                        enabled: inputTextFrame.opacity == 1 ? true : false
-                        onClicked: {
-                            onBoardText.text = inputText.text
-                            // hide the inputTextFrame
-                            inputTextFrame.opacity = 0
-                            inputTextFrame.z = -1
+                function clearCanvas() {
+                    // clear all drawings from the board
+                    var ctx = getContext('2d')
+                    ctx.beginPath()
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-                            // show the text
-                            onBoardText.opacity = 1
-                            onBoardText.z = 100
+                    paintWhite()
+                    canvas.ctx.strokeStyle = "#ffffff"
+                }
 
-                            onBoardText.x = area.realMouseX
-                            onBoardText.y = area.realMouseY - onBoardText.height * 0.8
+                function paintWhite() {
+                    canvas.ctx = getContext("2d")
+                    canvas.ctx.fillStyle = "#ffffff"
+                    canvas.ctx.beginPath()
+                    canvas.ctx.moveTo(0, 0)
+                    canvas.ctx.lineTo(background.width, 0)
+                    canvas.ctx.lineTo(background.width, background.height)
+                    canvas.ctx.lineTo(0, background.height)
+                    canvas.ctx.closePath()
+                    canvas.ctx.fill()
+                }
 
-                            // start the movement
-                            moveOnBoardText.start()
+                onImageLoaded: {
+                    // load images from files
+                    if (canvas.url != "") {
+                        canvas.clearCanvas()
+
+                        if (items.loadSavedImage) {
+                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
+                        } else {
+                            canvas.ctx.drawImage(canvas.url, canvas.width / 2 - canvas.height / 2, 0, canvas.height, canvas.height)
                         }
+
+                        // mark the loadSavedImage as finished
+                        items.loadSavedImage = false
+                        requestPaint()
+                        items.lastUrl = canvas.url
+                        unloadImage(canvas.url)
+                        items.mainAnimationOnX = true
+                        canvas.url = ""
+
+                        // undo and redo
+                    } else if (items.undoRedo) {
+                        ctx.drawImage(items.urlImage,0,0)
+                        requestPaint()
+                        items.lastUrl = canvas.url
+                        unloadImage(items.urlImage)
+                        items.undoRedo = false
                     }
                 }
-            }
-            // End text input box.
 
-            Rectangle {
-                id: canvasBackground
-                z: 1
-                anchors.fill: parent
-                anchors.margins: 8
+                function resetShape () {
+                    area.currentShape.rotationn = 0
+                    area.currentShape.x = 0
+                    area.currentShape.y = 0
+                    area.currentShape.width = 0
+                    area.currentShape.height = 0
+                    area.endX = 0
+                    area.endY = 0
+                    canvas.lastX = 0
+                    canvas.lastY = 0
+                }
 
-                color: "green"
+                function midPointBtw(p1, p2) {
+                    return {
+                        x: p1.x + (p2.x - p1.x) / 2,
+                        y: p1.y + (p2.y - p1.y) / 2
+                    };
+                }
 
-                Canvas {
-                    id: canvas
+                function distanceBetween(point1, point2) {
+                    return Math.sqrt(Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2));
+                }
+
+                function angleBetween(point1, point2) {
+                    return Math.atan2( point2.x - point1.x, point2.y - point1.y );
+                }
+
+                function getRandomInt(min, max) {
+                    return Math.floor(Math.random() * (max - min + 1)) + min;
+                }
+
+                function removeShadow() {
+                    // remove the shadow effect
+                    canvas.ctx.shadowColor = 'rgba(0,0,0,0)'
+                    canvas.ctx.shadowBlur = 0
+                    canvas.ctx.shadowOffsetX = 0
+                    canvas.ctx.shadowOffsetY = 0
+                }
+
+                onPaint: {
+                    canvas.ctx = getContext('2d')
+                }
+
+                MouseArea {
+                    id: area
                     anchors.fill: parent
 
-                    property real lastX
-                    property real lastY
+                    hoverEnabled: false
+                    property var mappedMouse: mapToItem(parent, mouseX, mouseY)
+                    property var currentShape: items.toolSelected == "circle" ? circle : rectangle
+                    property var originalX
+                    property var originalY
+                    property real endX
+                    property real endY
 
-                    // for brush
-                    property var lastPoint
-                    property var currentPoint
-
-                    property var ctx
-                    property string url: ""
-
-                    GCText {
-                        id: onBoardText
-                        text: ""
-                        color: items.paintColor
-                        // font.pointSize: (ApplicationSettings.baseFontSize + 32) * ApplicationInfo.fontRatio
-                        font.pointSize: items.sizeS * 10
-                        z: -1
-                        opacity: 0
-                    }
-
-
-                    function clearCanvas() {
-                        // clear all drawings from the board
-                        var ctx = getContext('2d')
-                        ctx.beginPath()
-                        ctx.clearRect(0, 0, canvasBackground.width, canvasBackground.height);
-
-                        paintWhite()
-                        canvas.ctx.strokeStyle = "#ffffff"
-                    }
-
-                    function paintWhite() {
-                        canvas.ctx = getContext("2d")
-                        canvas.ctx.fillStyle = "#ffffff"
-                        canvas.ctx.beginPath()
-                        canvas.ctx.moveTo(0, 0)
-                        canvas.ctx.lineTo(background.width, 0)
-                        canvas.ctx.lineTo(background.width, background.height)
-                        canvas.ctx.lineTo(0, background.height)
-                        canvas.ctx.closePath()
-                        canvas.ctx.fill()
-                    }
-
-                    onImageLoaded: {
-                        // load images from files
-                        if (canvas.url != "") {
-                            canvas.clearCanvas()
-
-                            if (items.loadSavedImage) {
-                                canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
-                            } else {
-                                canvas.ctx.drawImage(canvas.url, canvas.width / 2 - canvas.height / 2, 0, canvas.height, canvas.height)
-                            }
-
-                            // mark the loadSavedImage as finished
-                            items.loadSavedImage = false
-                            requestPaint()
-                            items.lastUrl = canvas.url
-                            unloadImage(canvas.url)
-                            items.mainAnimationOnX = true
-                            canvas.url = ""
-
-                            // undo and redo
-                        } else if (items.undoRedo) {
-                            ctx.drawImage(items.urlImage,0,0)
-                            requestPaint()
-                            items.lastUrl = canvas.url
-                            unloadImage(items.urlImage)
-                            items.undoRedo = false
+                    Timer {
+                        id: moveOnBoardText
+                        interval: 1
+                        repeat: true
+                        running: false
+                        triggeredOnStart: {
+                            onBoardText.x = area.realMouseX
+                            onBoardText.y = area.realMouseY - onBoardText.height * 0.8
                         }
                     }
 
-                    function resetShape () {
-                        area.currentShape.rotationn = 0
-                        area.currentShape.x = 0
-                        area.currentShape.y = 0
-                        area.currentShape.width = 0
-                        area.currentShape.height = 0
-                        area.endX = 0
-                        area.endY = 0
-                        canvas.lastX = 0
-                        canvas.lastY = 0
+                    property real realMouseX: mouseX
+                    property real realMouseY: mouseY
+
+                    onPressed: {
+
+                        if (items.nothingChanged)
+                            items.nothingChanged = false
+
+                        background.hideExpandedTools()
+                        mappedMouse = mapToItem(parent, mouseX, mouseY)
+
+                        print("tools: ",items.toolSelected)
+
+                        if (items.toolSelected == "rectangle" || items.toolSelected == "circle" || items.toolSelected == "lineShift") {
+                            // set the origin coordinates for current shape
+                            currentShape.x = mapToItem(parent, mouseX, mouseY).x
+                            currentShape.y = mapToItem(parent, mouseX, mouseY).y
+
+                            originalX = currentShape.x
+                            originalY = currentShape.y
+
+                            // set the current color for the current shape
+                            currentShape.color = items.paintColor
+                        } else if (items.toolSelected == "line") {
+                            // set the origin coordinates for current shape
+                            currentShape.x = mapToItem(parent, mouseX, mouseY).x
+                            currentShape.y = mapToItem(parent, mouseX, mouseY).y
+
+                            originalX = currentShape.x
+                            originalY = currentShape.y
+
+                            currentShape.height = items.sizeS
+
+                            // set the current color for the current shape
+                            currentShape.color = items.paintColor
+                        } else if (items.toolSelected == "text") {
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                        } else if (items.toolSelected == "pattern") {
+                            canvas.ctx.strokeStyle = "#ffffff"  // very important!
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                            Activity.points.push({x: mouseX, y: mouseY})
+                        } else if (items.toolSelected == "spray") {
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                        } else if (items.toolSelected == "eraser") {
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                            canvas.ctx.strokeStyle = "#ffefff"
+                        } else if (items.toolSelected == "pencil") {
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                        } else if (items.toolSelected == "brush3") {
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                            canvas.lastPoint = { x: mouseX, y: mouseY }
+                        } else if (items.toolSelected == "brush4") {
+                            canvas.ctx.strokeStyle = "#ffefff"
+                            Activity.points.push({x: mouseX, y: mouseY})
+                        } else if (items.toolSelected == "brush5") {
+                            Activity.connectedPoints.push({x: mouseX, y: mouseY})
+                        } else if (items.toolSelected == "blur") {
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                        } else {
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                            print("ON Pressed - tool not known")
+                        }
                     }
 
-                    function midPointBtw(p1, p2) {
-                        return {
-                            x: p1.x + (p2.x - p1.x) / 2,
-                            y: p1.y + (p2.y - p1.y) / 2
-                        };
-                    }
+                    onReleased: {
+                        // for line tool
+                        mappedMouse = mapToItem(parent, mouseX, mouseY)
+                        area.endX = mappedMouse.x
+                        area.endY = mappedMouse.y
 
-                    function distanceBetween(point1, point2) {
-                        return Math.sqrt(Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2));
-                    }
+                        // Reset text elements:
+                        // hide the text
+                        onBoardText.opacity = 0
+                        onBoardText.z = -1
 
-                    function angleBetween(point1, point2) {
-                        return Math.atan2( point2.x - point1.x, point2.y - point1.y );
-                    }
+                        // stop the text following the cursor
+                        if (moveOnBoardText.running)
+                            moveOnBoardText.stop()
 
-                    function getRandomInt(min, max) {
-                        return Math.floor(Math.random() * (max - min + 1)) + min;
-                    }
+                        // disable hover
+                        area.hoverEnabled = false
 
-                    function removeShadow() {
-                        // remove the shadow effect
-                        canvas.ctx.shadowColor = 'rgba(0,0,0,0)'
-                        canvas.ctx.shadowBlur = 0
-                        canvas.ctx.shadowOffsetX = 0
-                        canvas.ctx.shadowOffsetY = 0
-                    }
+                        if (items.toolSelected == "line") {
+                            canvas.removeShadow()
+                            canvas.ctx.fillStyle = items.paintColor
+                            canvas.ctx.beginPath()
 
-                    onPaint: {
-                        canvas.ctx = getContext('2d')
-                    }
+                            var angleRad = (360 - area.currentShape.rotationn) * Math.PI / 180
+                            var auxX = items.sizeS * Math.sin(angleRad)
+                            var auxY = items.sizeS * Math.cos(angleRad)
 
-                    MouseArea {
-                        id: area
-                        anchors.fill: parent
+                            canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
+                            canvas.ctx.lineTo(area.endX,area.endY)
+                            canvas.ctx.lineTo(area.endX + auxX,area.endY + auxY)
+                            canvas.ctx.lineTo(area.currentShape.x + auxX,area.currentShape.y + auxY)
+                            canvas.ctx.closePath()
+                            canvas.ctx.fill()
 
-                        hoverEnabled: false
-                        property var mappedMouse: mapToItem(parent, mouseX, mouseY)
-                        property var currentShape: items.toolSelected == "circle" ? circle : rectangle
-                        property var originalX
-                        property var originalY
-                        property real endX
-                        property real endY
-
-                        Timer {
-                            id: moveOnBoardText
-                            interval: 1
-                            repeat: true
-                            running: false
-                            triggeredOnStart: {
-                                onBoardText.x = area.realMouseX
-                                onBoardText.y = area.realMouseY - onBoardText.height * 0.8
-                            }
+                            canvas.resetShape()
+                            canvas.requestPaint()
                         }
 
-                        property real realMouseX: mouseX
-                        property real realMouseY: mouseY
-
-                        onPressed: {
-
-                            if (items.nothingChanged)
-                                items.nothingChanged = false
-
-                            background.hideExpandedTools()
-                            mappedMouse = mapToItem(parent, mouseX, mouseY)
-
-                            print("tools: ",items.toolSelected)
-
-                            if (items.toolSelected == "rectangle" || items.toolSelected == "circle" || items.toolSelected == "lineShift") {
-                                // set the origin coordinates for current shape
-                                currentShape.x = mapToItem(parent, mouseX, mouseY).x
-                                currentShape.y = mapToItem(parent, mouseX, mouseY).y
-
-                                originalX = currentShape.x
-                                originalY = currentShape.y
-
-                                // set the current color for the current shape
-                                currentShape.color = items.paintColor
-                            } else if (items.toolSelected == "line") {
-                                // set the origin coordinates for current shape
-                                currentShape.x = mapToItem(parent, mouseX, mouseY).x
-                                currentShape.y = mapToItem(parent, mouseX, mouseY).y
-
-                                originalX = currentShape.x
-                                originalY = currentShape.y
-
-                                currentShape.height = items.sizeS
-
-                                // set the current color for the current shape
-                                currentShape.color = items.paintColor
-                            } else if (items.toolSelected == "text") {
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                            } else if (items.toolSelected == "pattern") {
-                                canvas.ctx.strokeStyle = "#ffffff"  // very important!
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                                Activity.points.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "spray") {
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                            } else if (items.toolSelected == "eraser") {
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                                canvas.ctx.strokeStyle = "#ffefff"
-                            } else if (items.toolSelected == "pencil") {
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                            } else if (items.toolSelected == "brush3") {
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                                canvas.lastPoint = { x: mouseX, y: mouseY }
-                            } else if (items.toolSelected == "brush4") {
-                                canvas.ctx.strokeStyle = "#ffefff"
-                                Activity.points.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "brush5") {
-                                Activity.connectedPoints.push({x: mouseX, y: mouseY})
-                            } else if (items.toolSelected == "blur") {
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                            } else {
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                                print("ON Pressed - tool not known")
-                            }
-                        }
-
-                        onReleased: {
-                            // for line tool
-                            mappedMouse = mapToItem(parent, mouseX, mouseY)
-                            area.endX = mappedMouse.x
-                            area.endY = mappedMouse.y
-
-                            // Reset text elements:
-                            // hide the text
-                            onBoardText.opacity = 0
-                            onBoardText.z = -1
-
-                            // stop the text following the cursor
-                            if (moveOnBoardText.running)
-                                moveOnBoardText.stop()
-
-                            // disable hover
-                            area.hoverEnabled = false
-
-                            if (items.toolSelected == "line") {
-                                canvas.removeShadow()
-                                canvas.ctx.fillStyle = items.paintColor
-                                canvas.ctx.beginPath()
-
-                                var angleRad = (360 - area.currentShape.rotationn) * Math.PI / 180
-                                var auxX = items.sizeS * Math.sin(angleRad)
-                                var auxY = items.sizeS * Math.cos(angleRad)
-
-                                canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
-                                canvas.ctx.lineTo(area.endX,area.endY)
-                                canvas.ctx.lineTo(area.endX + auxX,area.endY + auxY)
-                                canvas.ctx.lineTo(area.currentShape.x + auxX,area.currentShape.y + auxY)
-                                canvas.ctx.closePath()
-                                canvas.ctx.fill()
-
-                                canvas.resetShape()
-                                canvas.requestPaint()
-                            }
-
-                            if (items.toolSelected == "circle") {
-                                canvas.removeShadow()
-                                canvas.ctx = canvas.getContext('2d')
-                                canvas.ctx.beginPath();
-                                canvas.ctx.arc(area.currentShape.x + area.currentShape.width / 2,
-                                               area.currentShape.y + area.currentShape.width / 2,
-                                               area.currentShape.width / 2, 0, 2 * Math.PI, false);
-                                canvas.ctx.fillStyle = items.paintColor
-                                canvas.ctx.fill();
-                                canvas.resetShape()
-                                canvas.requestPaint()
-
-                            }
-
-                            if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
-                                canvas.removeShadow()
-                                canvas.ctx.fillStyle = items.paintColor
-                                canvas.ctx.beginPath()
-                                canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
-                                canvas.ctx.lineTo(area.currentShape.x + area.currentShape.width,area.currentShape.y)
-                                canvas.ctx.lineTo(area.currentShape.x + area.currentShape.width,area.currentShape.y + area.currentShape.height)
-                                canvas.ctx.lineTo(area.currentShape.x,area.currentShape.y + area.currentShape.height)
-                                canvas.ctx.closePath()
-                                canvas.ctx.fill()
-                                canvas.resetShape()
-                                canvas.requestPaint()
-                            }
-
-                            if (items.toolSelected == "text" && onBoardText.text != "") {
-                                canvas.removeShadow()
-                                canvas.ctx.fillStyle = items.paintColor
-                                // canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
-                                canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
-                                canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
-                                onBoardText.text = ""
-
-                                canvas.requestPaint()
-                            }
-
-                            // reset the "points" array
-                            if (items.toolSelected == "pattern" ||
-                                    items.toolSelected == "brush4")
-                                Activity.points = []
-
-                            if (items.toolSelected == "brush5")
-                                Activity.connectedPoints = []
-
-
-                            // push the state of the current board on UNDO stack
-                            items.urlImage = canvas.toDataURL()
-                            items.lastUrl = items.urlImage
-                            Activity.undo = Activity.undo.concat(items.urlImage)
-
-                            if (Activity.redo.length != 0) {
-                                print("resetting redo array!")
-                                Activity.redo = []
-                            }
-
-                            if (items.toolSelected != "circle" &&
-                                    items.toolSelected != "rectangle" &&
-                                    items.toolSelected != "line" &&
-                                    items.toolSelected != "lineShift")
-                                items.next = true
-                            else items.next = false
-
-                            // print("undo: " + Activity.undo.length + " redo: " + Activity.redo.length)
-                            area.hoverEnabled = false
-                        }
-
-                        onPositionChanged: {
+                        if (items.toolSelected == "circle") {
+                            canvas.removeShadow()
                             canvas.ctx = canvas.getContext('2d')
-                            canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? "#ffffff" :
-                                                                                      items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
-                                                                                                                        items.toolSelected == "brush4" ? "black" :
-                                                                                                                                                         items.paintColor
+                            canvas.ctx.beginPath();
+                            canvas.ctx.arc(area.currentShape.x + area.currentShape.width / 2,
+                                           area.currentShape.y + area.currentShape.width / 2,
+                                           area.currentShape.width / 2, 0, 2 * Math.PI, false);
+                            canvas.ctx.fillStyle = items.paintColor
+                            canvas.ctx.fill();
+                            canvas.resetShape()
+                            canvas.requestPaint()
 
-                            if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
-                                canvas.removeShadow()
-                                canvas.ctx = canvas.getContext('2d')
-                                canvas.ctx.lineWidth = items.toolSelected == "eraser" ?
-                                            items.sizeS * 4 : items.sizeS
-                                canvas.ctx.lineCap = 'round'
-                                canvas.ctx.lineJoin = 'round'
-                                canvas.ctx.beginPath()
-                                canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
-                                canvas.lastX = area.mouseX
-                                canvas.lastY = area.mouseY
-                                canvas.ctx.lineTo(canvas.lastX, canvas.lastY)
-                                canvas.ctx.stroke()
+                        }
 
-                                canvas.requestPaint()
-                            } else if (items.toolSelected == "rectangle") {
-                                mappedMouse = mapToItem(parent, mouseX, mouseY)
-                                var width = mappedMouse.x - area.originalX
-                                var height = mappedMouse.y - area.originalY
+                        if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
+                            canvas.removeShadow()
+                            canvas.ctx.fillStyle = items.paintColor
+                            canvas.ctx.beginPath()
+                            canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
+                            canvas.ctx.lineTo(area.currentShape.x + area.currentShape.width,area.currentShape.y)
+                            canvas.ctx.lineTo(area.currentShape.x + area.currentShape.width,area.currentShape.y + area.currentShape.height)
+                            canvas.ctx.lineTo(area.currentShape.x,area.currentShape.y + area.currentShape.height)
+                            canvas.ctx.closePath()
+                            canvas.ctx.fill()
+                            canvas.resetShape()
+                            canvas.requestPaint()
+                        }
 
-                                if (Math.abs(width) > Math.abs(height)) {
-                                    if (width < 0) {
-                                        currentShape.x = area.originalX + width
-                                        currentShape.y = area.originalY
-                                    }
-                                    if (height < 0)
-                                        currentShape.y = area.originalY + height
+                        if (items.toolSelected == "text" && onBoardText.text != "") {
+                            canvas.removeShadow()
+                            canvas.ctx.fillStyle = items.paintColor
+                            // canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
+                            canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
+                            canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
+                            onBoardText.text = ""
 
-                                    currentShape.width = Math.abs(width)
-                                    currentShape.height = Math.abs(height)
-                                } else {
-                                    if (height < 0) {
-                                        currentShape.x = area.originalX
-                                        currentShape.y = area.originalY + height
-                                    }
-                                    if (width < 0)
-                                        currentShape.x = area.originalX + width
+                            canvas.requestPaint()
+                        }
 
-                                    currentShape.height = Math.abs(height)
-                                    currentShape.width = Math.abs(width)
-                                }
-                            } else if (items.toolSelected == "circle") {
-                                mappedMouse = mapToItem(parent, mouseX, mouseY)
-                                var width = mappedMouse.x - area.originalX
-                                var height = mappedMouse.y - area.originalY
+                        // reset the "points" array
+                        if (items.toolSelected == "pattern" ||
+                                items.toolSelected == "brush4")
+                            Activity.points = []
 
-                                if (height < 0 && width < 0) {
-                                    currentShape.x = area.originalX - currentShape.width
-                                    currentShape.y = area.originalY - currentShape.height
-                                } else if (height < 0) {
-                                    currentShape.x = area.originalX
-                                    currentShape.y = area.originalY - currentShape.height
-                                } else if (width < 0) {
-                                    currentShape.x = area.originalX - currentShape.width
+                        if (items.toolSelected == "brush5")
+                            Activity.connectedPoints = []
+
+
+                        // push the state of the current board on UNDO stack
+                        items.urlImage = canvas.toDataURL()
+                        items.lastUrl = items.urlImage
+                        Activity.undo = Activity.undo.concat(items.urlImage)
+
+                        if (Activity.redo.length != 0) {
+                            print("resetting redo array!")
+                            Activity.redo = []
+                        }
+
+                        if (items.toolSelected != "circle" &&
+                                items.toolSelected != "rectangle" &&
+                                items.toolSelected != "line" &&
+                                items.toolSelected != "lineShift")
+                            items.next = true
+                        else items.next = false
+
+                        // print("undo: " + Activity.undo.length + " redo: " + Activity.redo.length)
+                        area.hoverEnabled = false
+                    }
+
+                    onPositionChanged: {
+                        canvas.ctx = canvas.getContext('2d')
+                        canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? "#ffffff" :
+                                                                                  items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
+                                                                                                                    items.toolSelected == "brush4" ? "black" :
+                                                                                                                                                     items.paintColor
+
+                        if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
+                            canvas.removeShadow()
+                            canvas.ctx = canvas.getContext('2d')
+                            canvas.ctx.lineWidth = items.toolSelected == "eraser" ?
+                                        items.sizeS * 4 : items.sizeS
+                            canvas.ctx.lineCap = 'round'
+                            canvas.ctx.lineJoin = 'round'
+                            canvas.ctx.beginPath()
+                            canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
+                            canvas.lastX = area.mouseX
+                            canvas.lastY = area.mouseY
+                            canvas.ctx.lineTo(canvas.lastX, canvas.lastY)
+                            canvas.ctx.stroke()
+
+                            canvas.requestPaint()
+                        } else if (items.toolSelected == "rectangle") {
+                            mappedMouse = mapToItem(parent, mouseX, mouseY)
+                            var width = mappedMouse.x - area.originalX
+                            var height = mappedMouse.y - area.originalY
+
+                            if (Math.abs(width) > Math.abs(height)) {
+                                if (width < 0) {
+                                    currentShape.x = area.originalX + width
                                     currentShape.y = area.originalY
-                                } else {
-                                    currentShape.x = area.originalX
-                                    currentShape.y = area.originalY
                                 }
-
-                                currentShape.height = currentShape.width = Math.max(Math.abs(width), Math.abs(height))
-                            } else if (items.toolSelected == "line") {
-                                mappedMouse = mapToItem(parent, mouseX, mouseY)
-                                var width = mappedMouse.x - area.originalX
-                                var height = mappedMouse.y - area.originalY
-
-                                var distance = Math.sqrt( Math.pow(width,2) + Math.pow(height,2) )
-
-                                var p1x = area.originalX
-                                var p1y = area.originalY
-
-                                var p2x = area.originalX + 200
-                                var p2y = area.originalY
-
-                                var p3x = mappedMouse.x
-                                var p3y = mappedMouse.y
-
-                                var p12 = Math.sqrt(Math.pow((p1x - p2x),2) + Math.pow((p1y - p2y),2))
-                                var p23 = Math.sqrt(Math.pow((p2x - p3x),2) + Math.pow((p2y - p3y),2))
-                                var p31 = Math.sqrt(Math.pow((p3x - p1x),2) + Math.pow((p3y - p1y),2))
-
-                                var angleRad = Math.acos((p12 * p12 + p31 * p31 - p23 * p23) / (2 * p12 * p31))
-                                var angleDegrees
-
                                 if (height < 0)
-                                    angleDegrees = angleRad * 180 / Math.PI
-                                else angleDegrees = 360 - angleRad * 180 / Math.PI
+                                    currentShape.y = area.originalY + height
 
-                                currentShape.rotationn = 360 - angleDegrees
-                                currentShape.width = distance
-                            } else if (items.toolSelected == "lineShift") {
-                                mappedMouse = mapToItem(parent, mouseX, mouseY)
-                                var width = mappedMouse.x - area.originalX
-                                var height = mappedMouse.y - area.originalY
-
-                                if (Math.abs(width) > Math.abs(height)) {
-                                    if (height < 0)
-                                        currentShape.y = area.originalY
-                                    if (width < 0) {
-                                        currentShape.x = area.originalX + width
-                                        currentShape.y = area.originalY
-                                    }
-                                    currentShape.width = Math.abs(width)
-                                    currentShape.height = items.sizeS
-                                } else {
-                                    if (width < 0)
-                                        currentShape.x = area.originalX
-                                    if (height < 0) {
-                                        currentShape.x = area.originalX
-                                        currentShape.y = area.originalY + height
-                                    }
-                                    currentShape.height = Math.abs(height)
-                                    currentShape.width = items.sizeS
+                                currentShape.width = Math.abs(width)
+                                currentShape.height = Math.abs(height)
+                            } else {
+                                if (height < 0) {
+                                    currentShape.x = area.originalX
+                                    currentShape.y = area.originalY + height
                                 }
-                            } else if (items.toolSelected == "pattern") {
-                                canvas.removeShadow()
-                                Activity.points.push({x: mouseX, y: mouseY})
-                                canvas.ctx = canvas.getContext('2d')
-                                canvas.ctx.lineWidth = items.sizeS * 5
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+                                if (width < 0)
+                                    currentShape.x = area.originalX + width
 
-                                var p1 = Activity.points[0]
-                                var p2 = Activity.points[1]
+                                currentShape.height = Math.abs(height)
+                                currentShape.width = Math.abs(width)
+                            }
+                        } else if (items.toolSelected == "circle") {
+                            mappedMouse = mapToItem(parent, mouseX, mouseY)
+                            var width = mappedMouse.x - area.originalX
+                            var height = mappedMouse.y - area.originalY
 
-                                if (!p1 || !p2)
-                                    return
+                            if (height < 0 && width < 0) {
+                                currentShape.x = area.originalX - currentShape.width
+                                currentShape.y = area.originalY - currentShape.height
+                            } else if (height < 0) {
+                                currentShape.x = area.originalX
+                                currentShape.y = area.originalY - currentShape.height
+                            } else if (width < 0) {
+                                currentShape.x = area.originalX - currentShape.width
+                                currentShape.y = area.originalY
+                            } else {
+                                currentShape.x = area.originalX
+                                currentShape.y = area.originalY
+                            }
 
-                                canvas.ctx.beginPath()
-                                canvas.ctx.moveTo(p1.x, p1.y)
+                            currentShape.height = currentShape.width = Math.max(Math.abs(width), Math.abs(height))
+                        } else if (items.toolSelected == "line") {
+                            mappedMouse = mapToItem(parent, mouseX, mouseY)
+                            var width = mappedMouse.x - area.originalX
+                            var height = mappedMouse.y - area.originalY
 
-                                for (var i = 1, len = Activity.points.length; i < len; i++) {
-                                    var midPoint = canvas.midPointBtw(p1, p2);
-                                    canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
-                                    p1 = Activity.points[i];
-                                    p2 = Activity.points[i+1];
+                            var distance = Math.sqrt( Math.pow(width,2) + Math.pow(height,2) )
+
+                            var p1x = area.originalX
+                            var p1y = area.originalY
+
+                            var p2x = area.originalX + 200
+                            var p2y = area.originalY
+
+                            var p3x = mappedMouse.x
+                            var p3y = mappedMouse.y
+
+                            var p12 = Math.sqrt(Math.pow((p1x - p2x),2) + Math.pow((p1y - p2y),2))
+                            var p23 = Math.sqrt(Math.pow((p2x - p3x),2) + Math.pow((p2y - p3y),2))
+                            var p31 = Math.sqrt(Math.pow((p3x - p1x),2) + Math.pow((p3y - p1y),2))
+
+                            var angleRad = Math.acos((p12 * p12 + p31 * p31 - p23 * p23) / (2 * p12 * p31))
+                            var angleDegrees
+
+                            if (height < 0)
+                                angleDegrees = angleRad * 180 / Math.PI
+                            else angleDegrees = 360 - angleRad * 180 / Math.PI
+
+                            currentShape.rotationn = 360 - angleDegrees
+                            currentShape.width = distance
+                        } else if (items.toolSelected == "lineShift") {
+                            mappedMouse = mapToItem(parent, mouseX, mouseY)
+                            var width = mappedMouse.x - area.originalX
+                            var height = mappedMouse.y - area.originalY
+
+                            if (Math.abs(width) > Math.abs(height)) {
+                                if (height < 0)
+                                    currentShape.y = area.originalY
+                                if (width < 0) {
+                                    currentShape.x = area.originalX + width
+                                    currentShape.y = area.originalY
                                 }
-                                canvas.ctx.lineTo(p1.x, p1.y);
-                                canvas.ctx.stroke();
-                                canvas.requestPaint()
-                            } else if (items.toolSelected == "spray") {
-                                canvas.removeShadow()
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                                canvas.ctx = canvas.getContext('2d')
-                                canvas.ctx.lineWidth = items.sizeS * 5
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
-                                canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
-                                canvas.ctx.fillStyle = items.paintColor
-
-                                for (var i = 50; i--; i >= 0) {
-                                    var radius = items.sizeS * 5;
-                                    var offsetX = canvas.getRandomInt(-radius, radius);
-                                    var offsetY = canvas.getRandomInt(-radius, radius);
-                                    canvas.ctx.fillRect(canvas.lastX + offsetX, canvas.lastY + offsetY, 1, 1);
+                                currentShape.width = Math.abs(width)
+                                currentShape.height = items.sizeS
+                            } else {
+                                if (width < 0)
+                                    currentShape.x = area.originalX
+                                if (height < 0) {
+                                    currentShape.x = area.originalX
+                                    currentShape.y = area.originalY + height
                                 }
+                                currentShape.height = Math.abs(height)
+                                currentShape.width = items.sizeS
+                            }
+                        } else if (items.toolSelected == "pattern") {
+                            canvas.removeShadow()
+                            Activity.points.push({x: mouseX, y: mouseY})
+                            canvas.ctx = canvas.getContext('2d')
+                            canvas.ctx.lineWidth = items.sizeS * 5
+                            canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
 
-                                canvas.requestPaint()
-                            } else if (items.toolSelected == "brush3") {
-                                canvas.removeShadow()
-                                canvas.lastX = mouseX
-                                canvas.lastY = mouseY
-                                canvas.ctx.lineWidth = items.sizeS * 1.2
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
+                            var p1 = Activity.points[0]
+                            var p2 = Activity.points[1]
 
+                            if (!p1 || !p2)
+                                return
+
+                            canvas.ctx.beginPath()
+                            canvas.ctx.moveTo(p1.x, p1.y)
+
+                            for (var i = 1, len = Activity.points.length; i < len; i++) {
+                                var midPoint = canvas.midPointBtw(p1, p2);
+                                canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y);
+                                p1 = Activity.points[i];
+                                p2 = Activity.points[i+1];
+                            }
+                            canvas.ctx.lineTo(p1.x, p1.y);
+                            canvas.ctx.stroke();
+                            canvas.requestPaint()
+                        } else if (items.toolSelected == "spray") {
+                            canvas.removeShadow()
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                            canvas.ctx = canvas.getContext('2d')
+                            canvas.ctx.lineWidth = items.sizeS * 5
+                            canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+                            canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
+                            canvas.ctx.fillStyle = items.paintColor
+
+                            for (var i = 50; i--; i >= 0) {
+                                var radius = items.sizeS * 5;
+                                var offsetX = canvas.getRandomInt(-radius, radius);
+                                var offsetY = canvas.getRandomInt(-radius, radius);
+                                canvas.ctx.fillRect(canvas.lastX + offsetX, canvas.lastY + offsetY, 1, 1);
+                            }
+
+                            canvas.requestPaint()
+                        } else if (items.toolSelected == "brush3") {
+                            canvas.removeShadow()
+                            canvas.lastX = mouseX
+                            canvas.lastY = mouseY
+                            canvas.ctx.lineWidth = items.sizeS * 1.2
+                            canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
+
+                            canvas.ctx.beginPath();
+
+                            canvas.ctx.globalAlpha = 1;
+                            canvas.ctx.moveTo(canvas.lastPoint.x, canvas.lastPoint.y);
+                            canvas.ctx.lineTo(canvas.lastX, canvas.lastY);
+                            canvas.ctx.stroke();
+
+                            canvas.ctx.moveTo(canvas.lastPoint.x - 3, canvas.lastPoint.y - 3);
+                            canvas.ctx.lineTo(canvas.lastX - 3, canvas.lastY - 3);
+                            canvas.ctx.stroke();
+
+                            canvas.ctx.moveTo(canvas.lastPoint.x - 2, canvas.lastPoint.y - 2);
+                            canvas.ctx.lineTo(canvas.lastX - 2, canvas.lastY - 2);
+                            canvas.ctx.stroke();
+
+                            canvas.ctx.moveTo(canvas.lastPoint.x + 2, canvas.lastPoint.y + 2);
+                            canvas.ctx.lineTo(canvas.lastX + 2, canvas.lastY + 2);
+                            canvas.ctx.stroke();
+
+                            canvas.ctx.moveTo(canvas.lastPoint.x + 3, canvas.lastPoint.y + 3);
+                            canvas.ctx.lineTo(canvas.lastX + 3, canvas.lastY + 3);
+                            canvas.ctx.stroke();
+
+                            canvas.lastPoint = { x: canvas.lastX, y: canvas.lastY };
+
+                            canvas.requestPaint()
+                        } else if(items.toolSelected == "brush4") {
+                            canvas.removeShadow()
+                            Activity.points.push({x: mouseX, y: mouseY})
+                            canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
+                            canvas.ctx.fillStyle = items.paintColor
+                            canvas.ctx.lineWidth = items.sizeS / 4
+                            for (var i = 0; i < Activity.points.length; i++) {
                                 canvas.ctx.beginPath();
-
-                                canvas.ctx.globalAlpha = 1;
-                                canvas.ctx.moveTo(canvas.lastPoint.x, canvas.lastPoint.y);
-                                canvas.ctx.lineTo(canvas.lastX, canvas.lastY);
+                                canvas.ctx.arc(Activity.points[i].x, Activity.points[i].y, 5 * items.sizeS, 0, Math.PI * 2, false);
+                                canvas.ctx.fill();
                                 canvas.ctx.stroke();
+                            }
+                            canvas.requestPaint()
+                        } else if(items.toolSelected == "brush5") {
+                            canvas.removeShadow()
+                            Activity.connectedPoints.push({x: mouseX, y: mouseY})
+                            canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
+                            canvas.ctx.lineWidth = 1
 
-                                canvas.ctx.moveTo(canvas.lastPoint.x - 3, canvas.lastPoint.y - 3);
-                                canvas.ctx.lineTo(canvas.lastX - 3, canvas.lastY - 3);
-                                canvas.ctx.stroke();
+                            var p1 = Activity.connectedPoints[0]
+                            var p2 = Activity.connectedPoints[1]
 
-                                canvas.ctx.moveTo(canvas.lastPoint.x - 2, canvas.lastPoint.y - 2);
-                                canvas.ctx.lineTo(canvas.lastX - 2, canvas.lastY - 2);
-                                canvas.ctx.stroke();
+                            if (!p1 || !p2)
+                                return
 
-                                canvas.ctx.moveTo(canvas.lastPoint.x + 2, canvas.lastPoint.y + 2);
-                                canvas.ctx.lineTo(canvas.lastX + 2, canvas.lastY + 2);
-                                canvas.ctx.stroke();
+                            canvas.ctx.beginPath()
+                            canvas.ctx.moveTo(p1.x, p1.y)
 
-                                canvas.ctx.moveTo(canvas.lastPoint.x + 3, canvas.lastPoint.y + 3);
-                                canvas.ctx.lineTo(canvas.lastX + 3, canvas.lastY + 3);
-                                canvas.ctx.stroke();
+                            for (var i = 1, len = Activity.connectedPoints.length; i < len; i++) {
+                                var midPoint = canvas.midPointBtw(p1, p2)
+                                canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y)
+                                p1 = Activity.connectedPoints[i]
+                                p2 = Activity.connectedPoints[i+1]
+                            }
+                            canvas.ctx.lineTo(p1.x, p1.y)
+                            canvas.ctx.stroke()
 
-                                canvas.lastPoint = { x: canvas.lastX, y: canvas.lastY };
+                            for (var i = 0; i < Activity.connectedPoints.length; i++) {
+                                var dx = Activity.connectedPoints[i].x - Activity.connectedPoints[Activity.connectedPoints.length-1].x;
+                                var dy = Activity.connectedPoints[i].y - Activity.connectedPoints[Activity.connectedPoints.length-1].y;
+                                var d = dx * dx + dy * dy;
 
-                                canvas.requestPaint()
-                            } else if(items.toolSelected == "brush4") {
-                                canvas.removeShadow()
-                                Activity.points.push({x: mouseX, y: mouseY})
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
-                                canvas.ctx.fillStyle = items.paintColor
-                                canvas.ctx.lineWidth = items.sizeS / 4
-                                for (var i = 0; i < Activity.points.length; i++) {
+                                if (d < 1000) {
                                     canvas.ctx.beginPath();
-                                    canvas.ctx.arc(Activity.points[i].x, Activity.points[i].y, 5 * items.sizeS, 0, Math.PI * 2, false);
-                                    canvas.ctx.fill();
+                                    canvas.ctx.strokeStyle = 'rgba(0,0,0,0.8)';
+                                    canvas.ctx.moveTo( Activity.connectedPoints[Activity.connectedPoints.length-1].x + (dx * 0.1),
+                                                      Activity.connectedPoints[Activity.connectedPoints.length-1].y + (dy * 0.1));
+                                    canvas.ctx.lineTo( Activity.connectedPoints[i].x - (dx * 0.1),
+                                                      Activity.connectedPoints[i].y - (dy * 0.1));
                                     canvas.ctx.stroke();
                                 }
-                                canvas.requestPaint()
-                            } else if(items.toolSelected == "brush5") {
-                                canvas.removeShadow()
-                                Activity.connectedPoints.push({x: mouseX, y: mouseY})
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
-                                canvas.ctx.lineWidth = 1
-
-                                var p1 = Activity.connectedPoints[0]
-                                var p2 = Activity.connectedPoints[1]
-
-                                if (!p1 || !p2)
-                                    return
-
-                                canvas.ctx.beginPath()
-                                canvas.ctx.moveTo(p1.x, p1.y)
-
-                                for (var i = 1, len = Activity.connectedPoints.length; i < len; i++) {
-                                    var midPoint = canvas.midPointBtw(p1, p2)
-                                    canvas.ctx.quadraticCurveTo(p1.x, p1.y, midPoint.x, midPoint.y)
-                                    p1 = Activity.connectedPoints[i]
-                                    p2 = Activity.connectedPoints[i+1]
-                                }
-                                canvas.ctx.lineTo(p1.x, p1.y)
-                                canvas.ctx.stroke()
-
-                                for (var i = 0; i < Activity.connectedPoints.length; i++) {
-                                    var dx = Activity.connectedPoints[i].x - Activity.connectedPoints[Activity.connectedPoints.length-1].x;
-                                    var dy = Activity.connectedPoints[i].y - Activity.connectedPoints[Activity.connectedPoints.length-1].y;
-                                    var d = dx * dx + dy * dy;
-
-                                    if (d < 1000) {
-                                        canvas.ctx.beginPath();
-                                        canvas.ctx.strokeStyle = 'rgba(0,0,0,0.8)';
-                                        canvas.ctx.moveTo( Activity.connectedPoints[Activity.connectedPoints.length-1].x + (dx * 0.1),
-                                                          Activity.connectedPoints[Activity.connectedPoints.length-1].y + (dy * 0.1));
-                                        canvas.ctx.lineTo( Activity.connectedPoints[i].x - (dx * 0.1),
-                                                          Activity.connectedPoints[i].y - (dy * 0.1));
-                                        canvas.ctx.stroke();
-                                    }
-                                }
-                                canvas.requestPaint()
-                            } else if (items.toolSelected == "blur") {
-                                canvas.ctx = canvas.getContext('2d')
-                                canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
-                                canvas.ctx.shadowBlur = 10
-                                canvas.ctx.shadowColor = items.paintColor
-                                canvas.ctx.lineWidth = items.sizeS
-                                canvas.ctx.strokeStyle = items.paintColor
-                                canvas.ctx.beginPath()
-                                canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
-                                canvas.lastX = area.mouseX
-                                canvas.lastY = area.mouseY
-                                canvas.ctx.lineTo(canvas.lastX, canvas.lastY)
-                                canvas.ctx.stroke()
-
-                                canvas.requestPaint()
                             }
-                        }
+                            canvas.requestPaint()
+                        } else if (items.toolSelected == "blur") {
+                            canvas.ctx = canvas.getContext('2d')
+                            canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
+                            canvas.ctx.shadowBlur = 10
+                            canvas.ctx.shadowColor = items.paintColor
+                            canvas.ctx.lineWidth = items.sizeS
+                            canvas.ctx.strokeStyle = items.paintColor
+                            canvas.ctx.beginPath()
+                            canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
+                            canvas.lastX = area.mouseX
+                            canvas.lastY = area.mouseY
+                            canvas.ctx.lineTo(canvas.lastX, canvas.lastY)
+                            canvas.ctx.stroke()
 
-                        onClicked: {
-                            if (items.toolSelected == "fill") {
-                                canvas.removeShadow()
-                                canvas.ctx.fillStyle = items.paintColor
-                                canvas.ctx.beginPath()
-                                canvas.ctx.moveTo(0, 0)
-                                canvas.ctx.lineTo(background.width, 0)
-                                canvas.ctx.lineTo(background.width, background.height)
-                                canvas.ctx.lineTo(0, background.height)
-                                canvas.ctx.closePath()
-                                canvas.ctx.fill()
-                                canvas.requestPaint()
-                            }
+                            canvas.requestPaint()
                         }
                     }
 
-                    Rectangle {
-                        id: rectangle
-                        color: items.paintColor
-                        enabled: items.toolSelected == "rectangle" || items.toolSelected == "line"|| items.toolSelected == "lineShift"
-                        opacity: items.toolSelected == "rectangle" || items.toolSelected == "line"|| items.toolSelected == "lineShift" ? 1 : 0
-
-                        property real rotationn: 0
-
-                        transform: Rotation {
-                            id: rotationRect
-                            origin.x: 0
-                            origin.y: 0
-                            angle: rectangle.rotationn
+                    onClicked: {
+                        if (items.toolSelected == "fill") {
+                            canvas.removeShadow()
+                            canvas.ctx.fillStyle = items.paintColor
+                            canvas.ctx.beginPath()
+                            canvas.ctx.moveTo(0, 0)
+                            canvas.ctx.lineTo(background.width, 0)
+                            canvas.ctx.lineTo(background.width, background.height)
+                            canvas.ctx.lineTo(0, background.height)
+                            canvas.ctx.closePath()
+                            canvas.ctx.fill()
+                            canvas.requestPaint()
                         }
-                    }
-
-                    Rectangle {
-                        id: circle
-                        radius: width / 2
-                        color: items.paintColor
-                        enabled: items.toolSelected == "circle"
-                        opacity: items.toolSelected == "circle" ? 1 : 0
-                        property real rotationn: 0
                     }
                 }
+
+                Rectangle {
+                    id: rectangle
+                    color: items.paintColor
+                    enabled: items.toolSelected == "rectangle" || items.toolSelected == "line"|| items.toolSelected == "lineShift"
+                    opacity: items.toolSelected == "rectangle" || items.toolSelected == "line"|| items.toolSelected == "lineShift" ? 1 : 0
+
+                    property real rotationn: 0
+
+                    transform: Rotation {
+                        id: rotationRect
+                        origin.x: 0
+                        origin.y: 0
+                        angle: rectangle.rotationn
+                    }
+                }
+
+                Rectangle {
+                    id: circle
+                    radius: width / 2
+                    color: items.paintColor
+                    enabled: items.toolSelected == "circle"
+                    opacity: items.toolSelected == "circle" ? 1 : 0
+                    property real rotationn: 0
+                }
             }
+            // }
 
             Rectangle {
                 id: selectSize
@@ -1456,6 +1397,7 @@ ActivityBase {
         }
 
         FoldablePanels {
+            id: foldablePanels
             visible: true
         }
 
