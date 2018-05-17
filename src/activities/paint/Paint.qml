@@ -176,7 +176,7 @@ ActivityBase {
             property bool widthHeightChanged: false
             property bool mainAnimationOnX: true
             property bool undoRedo: false
-            property int sizeS: 2
+            property int sizeS: 20
             property int index: 0
             property string toolSelected: "pencil"
             property string patternType: "dot"
@@ -563,12 +563,14 @@ ActivityBase {
                             canvas.requestPaint()
                         }
 
+                        // Todo: Remove use of onBoardText and use items.sizeS for font size!
                         if (items.toolSelected == "text" && onBoardText.text != "") {
                             canvas.removeShadow()
                             canvas.ctx.fillStyle = items.paintColor
-                            // canvas.ctx.font = "" + onBoardText.fontSize + "px " + GCSingletonFontLoader.fontLoader.name
-                            canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
-                            canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
+                            canvas.ctx.font = "15px" + ApplicationSettings.font
+                            console.log(ApplicationSettings.font)
+                            //canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
+                            canvas.ctx.strokeText(onBoardText.text,area.realMouseX,area.realMouseY)
                             onBoardText.text = ""
 
                             canvas.requestPaint()
