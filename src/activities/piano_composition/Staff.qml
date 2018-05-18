@@ -177,17 +177,13 @@ Item {
                 }
 
                 y: {
-                    var shift = 0
+                    var shift =  - verticalDistanceBetweenLines / 2
                     if(clef === "bass") {
-                        shift = -2.5 * verticalDistanceBetweenLines
+                        shift += -2.5 * verticalDistanceBetweenLines
                     }
-                    if(blackType !== "") {
-                        if(blackType === "flat") {
-                            shift += - verticalDistanceBetweenLines
-                        }
-                        else {
-                            shift += - verticalDistanceBetweenLines / 2
-                        }
+
+                    if(blackType === "flat") {
+                        shift += - verticalDistanceBetweenLines / 2
                     }
 
                     if(mValue >= -2)

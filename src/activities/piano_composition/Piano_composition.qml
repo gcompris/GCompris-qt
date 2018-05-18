@@ -33,7 +33,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property bool horizontalLayout: background.width > background.height ? true : false
+    property bool horizontalLayout: background.width > background.height
 
     pageComponent: Rectangle {
         id: background
@@ -96,9 +96,7 @@ ActivityBase {
         }
 
         function playNote(note) {
-            multipleStaff.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat", false)
-            var noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + 'bass' + '_pitches/' + currentType + '/' + note + '.wav';
-            items.audioEffects.play(noteToPlay)
+            piano.noteClicked(note)
         }
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -134,26 +132,11 @@ ActivityBase {
             }
         }
 
-        MultipleStaff {
-            id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.50 : parent.height * 0.8
-            height: horizontalLayout ? parent.height * 0.5 : parent.height * 0.3
-            nbStaves: 3
-            clef: clefType
-            nbMaxNotesPerStaff: 8
-            noteIsColored: true
-            isMetronomeDisplayed: true
-            anchors.right: parent.right
-            anchors.top: horizontalLayout ? instructionBox.bottom : piano.bottom
-            anchors.topMargin: horizontalLayout ? parent.height * 0.13 : parent.height * 0.05
-            anchors.rightMargin: 20
-        }
-
         Rectangle {
             id: instructionBox
             radius: 10
-            width: horizontalLayout ? background.width / 1.9 : background.width * 0.95
-            height: horizontalLayout ? background.height / 5 : background.height / 9
+            width: background.width * 0.98
+            height: background.height / 9
             anchors.horizontalCenter: parent.horizontalCenter
             opacity: 0.8
             border.width: 6
@@ -175,18 +158,50 @@ ActivityBase {
             }
         }
 
+        MultipleStaff {
+            id: multipleStaff
+            width: horizontalLayout ? parent.width * 0.50 : parent.width * 0.8
+            height: horizontalLayout ? parent.height * 0.58 : parent.height * 0.3
+            nbStaves: 3
+            clef: clefType
+            nbMaxNotesPerStaff: 8
+            noteIsColored: true
+            isMetronomeDisplayed: true
+            anchors.right: horizontalLayout ? parent.right: undefined
+            anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
+            anchors.top: instructionBox.bottom
+            anchors.topMargin: parent.height * 0.1
+            anchors.rightMargin: parent.width * 0.043
+        }
+
+        GCButtonScroll {
+            anchors.right: parent.right
+            anchors.rightMargin: 5 * ApplicationInfo.ratio
+            anchors.verticalCenter: multipleStaff.verticalCenter
+            width: horizontalLayout ? parent.width * 0.033 : parent.width * 0.06
+            height: width * heightRatio
+            onUp: multipleStaff.flickableStaves.flick(0, multipleStaff.height * 1.3)
+            onDown: multipleStaff.flickableStaves.flick(0, -multipleStaff.height * 1.3)
+            upVisible: multipleStaff.flickableStaves.visibleArea.yPosition > 0
+            downVisible: (multipleStaff.flickableStaves.visibleArea.yPosition + multipleStaff.flickableStaves.visibleArea.heightRatio) < 1
+        }
+
         Piano {
             id: piano
-            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.8
-            height: horizontalLayout ? parent.height * 0.45 : parent.width * 0.3
+            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.7
+            height: horizontalLayout ? parent.height * 0.45 : parent.width * 0.26
             anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
             anchors.left: horizontalLayout ? parent.left : undefined
-            anchors.leftMargin: horizontalLayout ? parent.width * 0.06 : parent.height * 0.01
-            anchors.top: optionsRow.bottom
+            anchors.leftMargin: parent.width * 0.03
+            anchors.top: horizontalLayout ? optionsRow.bottom : multipleStaff.bottom
+            anchors.topMargin: parent.height * 0.05
             blackLabelsVisible: [4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
             useSharpNotation: bar.level == 5 ? false : true
             onNoteClicked: {
-                multipleStaff.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat", false)
+                var blackType = ""
+                if(note < 0)
+                    blackType = piano.useSharpNotation ? "sharp" : "flat"
+                multipleStaff.addNote(note, currentType, blackType, false)
                 var noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + clefType + '_pitches/' + currentType + '/' + note + '.wav';
                 items.audioEffects.play(noteToPlay)
             }

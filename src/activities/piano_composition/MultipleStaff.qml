@@ -29,7 +29,7 @@ Item {
 
     property int nbStaves
     property string clef
-    property int distanceBetweenStaff: 20
+    property int distanceBetweenStaff: multipleStaff.height / 8
 
     property int currentStaff: 0
 
@@ -39,22 +39,34 @@ Item {
     property bool noteIsColored
     property bool isMetronomeDisplayed: false
 
-    Column {
-        spacing: parent.height * 0.05
-        Repeater {
-            id: staves
-            model: nbStaves
-            Staff {
-                id: staff
-                clef: multipleStaff.clef
-                height: (multipleStaff.height - distanceBetweenStaff * (nbStaves - 1)) / nbStaves
-                width: multipleStaff.width
-                y: index * (height + distanceBetweenStaff)
-                lastPartition: index == nbStaves - 1
-                nbMaxNotesPerStaff: multipleStaff.nbMaxNotesPerStaff
-                noteIsColored: multipleStaff.noteIsColored
-                isMetronomeDisplayed: multipleStaff.isMetronomeDisplayed
-                firstNoteX: multipleStaff.firstNoteX
+    property alias flickableStaves: flickableStaves
+
+    Flickable {
+        id: flickableStaves
+        flickableDirection: Flickable.VerticalFlick
+        contentWidth: staffColumn.width
+        contentHeight: staffColumn.height + multipleStaff.height / 7
+        anchors.fill: parent
+        clip: true
+        Column {
+            id: staffColumn
+            spacing: distanceBetweenStaff
+            anchors.top: parent.top
+            anchors.topMargin: multipleStaff.height / 14
+            Repeater {
+                id: staves
+                model: nbStaves
+                Staff {
+                    id: staff
+                    clef: multipleStaff.clef
+                    height: multipleStaff.height / 5
+                    width: multipleStaff.width - 5
+                    lastPartition: index == (nbStaves - 1)
+                    nbMaxNotesPerStaff: multipleStaff.nbMaxNotesPerStaff
+                    noteIsColored: multipleStaff.noteIsColored
+                    isMetronomeDisplayed: multipleStaff.isMetronomeDisplayed
+                    firstNoteX: multipleStaff.firstNoteX
+                }
             }
         }
     }
@@ -62,10 +74,13 @@ Item {
     function addNote(newValue_, newType_, newBlackType_, highlightWhenPlayed_) {
         if(staves.itemAt(currentStaff).notes.count > nbMaxNotesPerStaff) {
             if(currentStaff + 1 >= nbStaves) {
-                return
+                var melody = getAllNotes()
+                nbStaves++
+                flickableStaves.flick(0, - nbStaves * multipleStaff.height)
+                currentStaff = 0
+                loadFromData(melody)
             }
-            else
-                currentStaff++
+            currentStaff++
         }
 
         staves.itemAt(currentStaff).addNote(newValue_, newType_, newBlackType_, highlightWhenPlayed_);
@@ -89,23 +104,27 @@ Item {
         currentStaff = 0;
     }
 
+    readonly property var whiteNotes: ["C", "D", "E", "F", "G", "A", "B", "2C", "2D", "2E", "2F"]
+    readonly property var blackNotesSharp: ["C#", "D#", "F#", "G#", "A#", "2C#"]
+    readonly property var blackNotesFlat: ["DB", "EB", "GB", "AB", "BB"]
+
     function getAllNotes() {
-        var melody = []
+        var melody = "" + multipleStaff.clef
         for(var i = 0; i < nbStaves; i ++) {
             var staveNotes = staves.itemAt(i).notes
             for(var j = 0; j < staveNotes.count; j++) {
-            melody.push({
-                "type": staveNotes.get(j).type,
-                "note": staveNotes.get(j).mValue
-            })
-          }
+                var noteValue = staveNotes.get(j).mValue
+                if(noteValue > 0)
+                    melody = melody + " " + whiteNotes[noteValue - 1]
+                else if(staveNotes.get(j).mBlackType === "sharp")
+                    melody = melody + " " + blackNotesSharp[Math.abs(noteValue) - 1]
+                else
+                    melody = melody + " " + blackNotesFlat[Math.abs(noteValue) - 1]
+                melody = melody + staveNotes.get(j).mType
+            }
         }
         return melody
     }
-
-    property var whiteNotes: ["C", "D", "E", "F", "G", "A", "B", "2C", "2D", "2E", "2F"]
-    property var blackNotesSharp: ["C#", "D#", "F#", "G#", "A#", "2C#"]
-    property var blackNotesFlat: ["DB", "EB", "GB", "AB", "BB"]
 
     function loadFromData(data) {
         eraseAllNotes()
@@ -124,8 +143,6 @@ Item {
             else {
                 addNote("" + (-1 * blackNotesFlat.indexOf(noteStr) - 1), type, "flat", false);
             }
-
-            print(melody[i]);
         }
     }
 
