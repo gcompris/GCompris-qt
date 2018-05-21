@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   viewBox="0 0 744 1052"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="bassG4Whole.svg"
+   width="744"
+   height="1052">
+  <defs
+     id="defs9">
+    <linearGradient
+       id="linearGradient3019"
+       y2="333.89001"
+       gradientUnits="userSpaceOnUse"
+       x2="490.53"
+       gradientTransform="matrix(2.0779,0,0,2.0779,-518.08,-281.8)"
+       y1="489.14001"
+       x1="382.34">
+      <stop
+         id="stop3015"
+         style="stop-color:#000000;stop-opacity:.82639"
+         offset="0" />
+      <stop
+         id="stop3017"
+         style="stop-color:#000000"
+         offset="1" />
+    </linearGradient>
+    <inkscape:perspective
+       id="perspective3348"
+       inkscape:persp3d-origin="0.50006349 : 0.33344809 : 1"
+       inkscape:vp_z="1.000127 : 0.50017214 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_x="0 : 0.50017214 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.00047528517 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_z="0.001344086 : 0.00047528517 : 1"
+       inkscape:persp3d-origin="0.00067204301 : 0.00031685678 : 1"
+       id="perspective2844" />
+    <inkscape:perspective
+       id="perspective3348-6"
+       inkscape:persp3d-origin="0.50006349 : 0.33344809 : 1"
+       inkscape:vp_z="1.000127 : 0.50017214 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_x="0 : 0.50017214 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.00047528517 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_z="0.001344086 : 0.00047528517 : 1"
+       inkscape:persp3d-origin="0.00067204301 : 0.00031685678 : 1"
+       id="perspective2844-7" />
+    <inkscape:perspective
+       id="perspective3348-3"
+       inkscape:persp3d-origin="0.50006349 : 0.33344809 : 1"
+       inkscape:vp_z="1.000127 : 0.50017214 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_x="0 : 0.50017214 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.00047528517 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_z="0.001344086 : 0.00047528517 : 1"
+       inkscape:persp3d-origin="0.00067204301 : 0.00031685678 : 1"
+       id="perspective2844-6" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.50017214 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_z="1.000127 : 0.50017214 : 1"
+       inkscape:persp3d-origin="0.50006349 : 0.33344809 : 1"
+       id="perspective3348-35" />
+    <inkscape:perspective
+       id="perspective2844-62"
+       inkscape:persp3d-origin="0.00067204301 : 0.00031685678 : 1"
+       inkscape:vp_z="0.001344086 : 0.00047528517 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_x="0 : 0.00047528517 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.50017214 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_z="1.000127 : 0.50017214 : 1"
+       inkscape:persp3d-origin="0.50006349 : 0.33344809 : 1"
+       id="perspective3348-6-9" />
+    <inkscape:perspective
+       id="perspective2844-7-1"
+       inkscape:persp3d-origin="0.00067204301 : 0.00031685678 : 1"
+       inkscape:vp_z="0.001344086 : 0.00047528517 : 1"
+       inkscape:vp_y="0 : 0.95057034 : 0"
+       inkscape:vp_x="0 : 0.00047528517 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="0.43502872"
+     inkscape:cx="1006.4324"
+     inkscape:cy="691.72367"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     id="layer1"
+     transform="matrix(0.40259701,0,0,0.46650811,152.80238,414.36682)">
+    <path
+       id="path270"
+       style="fill:#000000"
+       d="m 339.03,493.9 c 166.28,1.498 323.57,64.413 335.55,203.73 8.98,101.9 -125.84,194.73 -292.11,194.73 C 214.69,890.86 58.9,829.45 45.42,690.18 36.433,586.73 172.66,493.9 339.03,493.9 Z m 40.352,364.01 c 71.903,0 118.34,-68.954 110.85,-124.33 C 473.754,624.23 436.304,535.8 337.442,535.8 c -71.903,0 -113.85,70.405 -104.86,125.83 16.571,109.4 48.029,196.28 146.8,196.28 z"
+       inkscape:connector-curvature="0" />
+  </g>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2011-05-27T21:51:50</dc:date>
+        <dc:description>There didn't seem to be a whole note on openclipart already. Here is a big one!</dc:description>
+        <dc:source>https://openclipart.org/detail/140893/whole-note-by-10binary</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>10binary</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>music</rdf:li>
+            <rdf:li>notation</rdf:li>
+            <rdf:li>note</rdf:li>
+            <rdf:li>whole</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="matrix(23.139938,0,0,25.712763,-7569.9593,-12142.402)"
+     id="layer1-5"
+     inkscape:label="Layer 1">
+    <g
+       style="fill:#000000"
+       transform="matrix(-1,0,0,-1,1577.9516,844.41268)"
+       id="g3336">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1234.5939,332.29995 -7.0407,-0.0203 0,-0.47599 0,-0.47599 6.2921,0 c 3.4607,0 8.1324,0.0237 10.3816,0.0527 l 4.0897,0.0527 0,0.45897 0,0.45898 -3.341,-0.0154 c -1.8376,-0.008 -6.5093,-0.0245 -10.3817,-0.0357 l 0,0 z"
+         id="path3287-6" />
+    </g>
+  </g>
+  <g
+     transform="matrix(23.139938,0,0,25.709452,-7566.9373,-12220.873)"
+     id="layer1-7"
+     inkscape:label="Layer 1">
+    <g
+       style="fill:#000000"
+       transform="matrix(-1,0,0,-1,1577.821,844.41268)"
+       id="g3336-5">
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1234.5939,333.46214 -7.0407,-0.0203 0,-0.47599 0,-0.47599 6.2921,0 c 3.4607,0 8.1324,0.0237 10.3816,0.0527 l 4.0897,0.0527 0,0.45897 0,0.45898 -3.341,-0.0154 c -1.8376,-0.008 -6.5093,-0.0245 -10.3817,-0.0357 l 0,0 z"
+         id="path3287-6-3" />
+    </g>
+  </g>
+  <g
+     id="g3435"
+     transform="matrix(1.3142935,0,0,0.99999857,71.418593,-1252.8671)">
+    <g
+       inkscape:label="Layer 1"
+       id="layer1-5-6"
+       transform="matrix(17.60637,0,0,25.7128,-5811.758,-11140.404)">
+      <g
+         id="g3336-0"
+         transform="matrix(-1,0,0,-1,1577.821,844.41268)"
+         style="fill:#000000">
+        <path
+           id="path3287-6-6"
+           d="m 1234.5939,333.46214 -7.0407,-0.0203 0,-0.47599 0,-0.47599 6.2921,0 c 3.4607,0 8.1324,0.0237 10.3816,0.0527 l 4.0897,0.0527 0,0.45897 0,0.45898 -3.341,-0.0154 c -1.8376,-0.008 -6.5093,-0.0245 -10.3817,-0.0357 l 0,0 z"
+           style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
+  </g>
+</svg>

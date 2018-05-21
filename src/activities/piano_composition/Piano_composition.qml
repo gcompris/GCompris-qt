@@ -49,43 +49,43 @@ ActivityBase {
 
         Keys.onPressed: {
             if(event.key === Qt.Key_1) {
-                playNote('1')
+                piano.whiteKeyRepeater.itemAt(0).keyPressed()
             }
             if(event.key === Qt.Key_2) {
-                playNote('2')
+                piano.whiteKeyRepeater.itemAt(1).keyPressed()
             }
             if(event.key === Qt.Key_3) {
-                playNote('3')
+                piano.whiteKeyRepeater.itemAt(2).keyPressed()
             }
             if(event.key === Qt.Key_4) {
-                playNote('4')
+                piano.whiteKeyRepeater.itemAt(3).keyPressed()
             }
             if(event.key === Qt.Key_5) {
-                playNote('5')
+                piano.whiteKeyRepeater.itemAt(4).keyPressed()
             }
             if(event.key === Qt.Key_6) {
-                playNote('6')
+                piano.whiteKeyRepeater.itemAt(5).keyPressed()
             }
             if(event.key === Qt.Key_7) {
-                playNote('7')
+                piano.whiteKeyRepeater.itemAt(6).keyPressed()
             }
             if(event.key === Qt.Key_8) {
-                playNote('8')
+                piano.whiteKeyRepeater.itemAt(7).keyPressed()
             }
             if(event.key === Qt.Key_F1 && bar.level >= 4) {
-                playNote('-1')
+                piano.blackKeyRepeater.itemAt(0).keyPressed()
             }
             if(event.key === Qt.Key_F2 && bar.level >= 4) {
-                playNote('-2')
+                piano.blackKeyRepeater.itemAt(1).keyPressed()
             }
             if(event.key === Qt.Key_F3 && bar.level >= 4) {
-                playNote('-3')
+                piano.blackKeyRepeater.itemAt(2).keyPressed()
             }
             if(event.key === Qt.Key_F4 && bar.level >= 4) {
-                playNote('-4')
+                piano.blackKeyRepeater.itemAt(3).keyPressed()
             }
             if(event.key === Qt.Key_F5 && bar.level >= 4) {
-                playNote('-5')
+                piano.blackKeyRepeater.itemAt(4).keyPressed()
             }
             if(event.key === Qt.Key_Delete) {
                 multipleStaff.eraseAllNotes()
@@ -95,9 +95,6 @@ ActivityBase {
             }
         }
 
-        function playNote(note) {
-            piano.noteClicked(note)
-        }
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -110,12 +107,13 @@ ActivityBase {
             property string staffLength: "short"
             property alias melodyList: melodyList
             property alias file: file
+            property alias piano: piano
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property int currentType: 1
+        property string currentType: "Whole"
         property string clefType: bar.level == 2 ? "bass" : "treble"
 
         File {
@@ -162,7 +160,7 @@ ActivityBase {
             id: multipleStaff
             width: horizontalLayout ? parent.width * 0.50 : parent.width * 0.8
             height: horizontalLayout ? parent.height * 0.58 : parent.height * 0.3
-            nbStaves: 3
+            nbStaves: 2
             clef: clefType
             nbMaxNotesPerStaff: 8
             noteIsColored: true
@@ -175,6 +173,7 @@ ActivityBase {
         }
 
         GCButtonScroll {
+            id: multipleStaffFlickButton
             anchors.right: parent.right
             anchors.rightMargin: 5 * ApplicationInfo.ratio
             anchors.verticalCenter: multipleStaff.verticalCenter
@@ -188,22 +187,52 @@ ActivityBase {
 
         Piano {
             id: piano
-            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.7
-            height: horizontalLayout ? parent.height * 0.45 : parent.width * 0.26
+            width: horizontalLayout ? parent.width * 0.34 : parent.width * 0.7
+            height: horizontalLayout ? parent.height * 0.40 : parent.width * 0.26
             anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
             anchors.left: horizontalLayout ? parent.left : undefined
-            anchors.leftMargin: parent.width * 0.03
-            anchors.top: horizontalLayout ? optionsRow.bottom : multipleStaff.bottom
-            anchors.topMargin: parent.height * 0.05
+            anchors.leftMargin: parent.width * 0.04
+            anchors.top: horizontalLayout ? multipleStaff.top : multipleStaff.bottom
+            anchors.topMargin: horizontalLayout ? parent.height * 0.08 : parent.height * 0.025
             blackLabelsVisible: [4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
             useSharpNotation: bar.level == 5 ? false : true
-            onNoteClicked: {
-                var blackType = ""
-                if(note < 0)
-                    blackType = piano.useSharpNotation ? "sharp" : "flat"
-                multipleStaff.addNote(note, currentType, blackType, false)
-                var noteToPlay = 'qrc:/gcompris/src/activities/piano_composition/resource/' + clefType + '_pitches/' + currentType + '/' + note + '.wav';
-                items.audioEffects.play(noteToPlay)
+            onNoteClicked: multipleStaff.addNote(note, currentType, false, true)
+        }
+
+        Image {
+            id: shiftKeyboardLeft
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            sourceSize.width: piano.width / 7
+            width: sourceSize.width
+            height: width
+            fillMode: Image.PreserveAspectFit
+            rotation: 180
+            visible: piano.currentOctaveNb > 0
+            anchors {
+                verticalCenter: piano.verticalCenter
+                right: piano.left
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: piano.currentOctaveNb--
+            }
+        }
+
+        Image {
+            id: shiftKeyboardRight
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            sourceSize.width: piano.width / 7
+            width: sourceSize.width
+            height: width
+            fillMode: Image.PreserveAspectFit
+            visible: piano.currentOctaveNb < piano.maxNbOctaves - 1
+            anchors {
+                verticalCenter: piano.verticalCenter
+                left: piano.right
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: piano.currentOctaveNb++
             }
         }
 
@@ -214,15 +243,14 @@ ActivityBase {
             spacing: 15
             anchors.horizontalCenter: parent.horizontalCenter
 
-            readonly property var noteTypes: [1, 2, 4, 8]
-            readonly property var noteLengthName: ["whole-note", "half-note", "quarter-note", "eighth-note"]
+            readonly property var noteLengthName: ["Whole", "Half", "Quarter", "Eighth"]
 
             Image {
                 id: noteTypeOption
 
                 property int currentIndex: 0
 
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.noteLengthName[currentIndex])
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex])
                 sourceSize.width: 50
                 anchors.top: parent.top
                 anchors.topMargin: -6
@@ -232,7 +260,7 @@ ActivityBase {
                     onClicked: {
                         parent.currentIndex = (parent.currentIndex + 1) % 4
                         clickAnimation.start()
-                        currentType = optionsRow.noteTypes[parent.currentIndex]
+                        currentType = optionsRow.noteLengthName[parent.currentIndex]
                     }
                 }
 
@@ -273,6 +301,7 @@ ActivityBase {
                     onClicked: {
                         multipleStaff.eraseAllNotes()
                         clefType = (clefType == "bass") ? "treble" : "bass"
+                        print(piano.currentOctaveNb)
                     }
                 }
             }

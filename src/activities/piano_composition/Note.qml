@@ -27,49 +27,45 @@ import "../../core"
 
 Item {
     id: note
-    property string value
+    property string noteName
     property bool noteIsColored: true
-    property int type: wholeNote
-    property string noteType: type == wholeNote ? "whole" :
-                              type == halfNote ? "half" :
-                              type == quarterNote ? "quarter" : 
-                              type == eighthNote ? "eighth" : ""
-    property string blackType: "" // empty, "flat" or "sharp"
+    property string noteType
+    property string blackType: noteName[1] === "#" ? "sharp"
+                               : noteName[1] === "b" ? "flat" : ""// empty, "flat" or "sharp"
 
-    //width: noteImage.width
-    //height: noteImage.height
+    readonly property string length: noteType == "Whole" ? 1 :
+                                     noteType == "Half"  ? 2 :
+                                     noteType == "Quarter" ? 4 :
+                                     noteType == 8
 
-    readonly property int wholeNote: 1
-    readonly property int halfNote: 2
-    readonly property int quarterNote: 4
-    readonly property int eighthNote: 8
+    readonly property int noteDuration: 2000 / length
 
-    readonly property int noteDuration: 2000 / type
-
-    property var noteColorMap: { "1": "#FF0000", "2": "#FF7F00", "3": "#FFFF00",
-        "4": "#32CD32", "5": "#6495ED", "6": "#D02090", "7": "#FF1493", "8": "#FF0000", "9": "#FF7F00", "10": "#FFFF00", "11": "#32CD32",
+    readonly property var noteColorMap: { "1": "#FF0000", "2": "#FF7F00", "3": "#FFFF00",
+        "4": "#32CD32", "5": "#6495ED", "6": "#D02090", "7": "#FF1493", "8": "#FF0000",
         "-1": "#FF6347", "-2": "#FFD700", "-3": "#20B2AA", "-4": "#8A2BE2",
         "-5": "#FF00FF" }
 
-    property var whiteNoteName: { "1": qsTr("C"), "2": qsTr("D"), "3": qsTr("E"),
-        "4": qsTr("F"), "5": qsTr("G"), "6": qsTr("A"), "7": qsTr("B"), "8": qsTr("C") }
-    property var blackNoteName: blackType == "flat" ? flatNoteName : sharpNoteName
+    readonly property var whiteNoteName: { "C": "1", "D": "2", "E": "3", "F": "4", "G": "5", "A": "6", "B": "7", "C": "8" }
 
-    property var sharpNoteName: { "-1": qsTr("C#"), "-2": qsTr("D#"), "-3": qsTr("F#"), "-4": qsTr("G#"),
-                                  "-5": qsTr("A#")}
-    property var flatNoteName: { "-1": qsTr("Db"), "-2": qsTr("Eb"), "-3": qsTr("Gb"), "-4": qsTr("Ab"),
-                                  "-5": qsTr("Bb")}
+    readonly property var sharpNoteName: { "C#": "-1", "D#": "-2", "F#": "-3", "G#": "-4", "A#": "-5" }
+    readonly property var flatNoteName: { "Db": "-1", "Eb": "-2", "Gb": "-3", "Ab": "-4", "Bb": "-5" }
+    readonly property var blackNoteName: blackType == "" ? blackType :
+                                blackType == "flat" ? flatNoteName : sharpNoteName
 
     property bool highlightWhenPlayed: false
     property alias highlightTimer: highlightTimer
 
+    property var noteDetails
+
     Image {
         id: blackTypeImage
         source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
-        visible: value[0] === '-'
         sourceSize.width: noteImage.width / 2.5
-        anchors.right: noteImage.left
+        anchors.right: parent.rotation === 180 ? undefined : noteImage.left
+        anchors.left: parent.rotation === 180 ? noteImage.right : undefined
+        rotation: parent.rotation === 180 ? 180 : 0
         anchors.rightMargin: -width / 2
+        anchors.leftMargin: -width
         anchors.bottom: noteImage.bottom
         anchors.bottomMargin: height / 2
         fillMode: Image.PreserveAspectFit
@@ -97,7 +93,7 @@ Item {
 
     Image {
         id: noteImage
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/" + noteType + "-note.svg"
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + noteType + ".svg"
         sourceSize.width: 200
         width: note.width
         height: note.height
@@ -107,7 +103,10 @@ Item {
     ColorOverlay {
         anchors.fill: noteImage
         source: noteImage
-        color: noteColorMap[value]  // make image like it lays under red glass 
+
+        readonly property int noteColorNumber: blackType == "" ? whiteNoteName[noteName[0]] : blackNoteName[noteName.substring(0,2)]
+
+        color: noteColorMap[noteColorNumber]  // make image like it lays under red glass
         visible: noteIsColored
     }
 

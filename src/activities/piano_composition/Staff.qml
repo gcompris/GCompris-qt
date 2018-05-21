@@ -23,6 +23,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
+import "piano_composition.js" as Activity
 
 Item {
     id: staff
@@ -36,7 +37,7 @@ Item {
     width: 400
     height: 100
     // Stave
-    property int nbLines: 5
+    readonly property int nbLines: 5
 
     property bool lastPartition: false
 
@@ -122,19 +123,19 @@ Item {
         print("total distance " + metronome.x)
     }
 
-    function addNote(newValue_, newType_, newBlackType_, highlightWhenPlayed_) {
+    function addNote(noteName, noteType, blackType, highlightWhenPlayed) {
         var duration
-        if(newType_ == 1)
-            duration = 2000/newType_
-        else if(newType_ == 2)
-            duration = 3000/newType_
-        else if(newType_ == 4)
-            duration = 4000/newType_
+        if(noteType == "Whole")
+            duration = 2000 / 1
+        else if(noteType == "Half")
+            duration = 3000 / 2
+        else if(noteType == "Quarter")
+            duration = 4000 / 4
         else
-            duration = 6500/newType_
-        notes.append({"mValue": newValue_, "mType": newType_,
-                      "mBlackType": newBlackType_, "mDuration": duration,
-                      "mHighlightWhenPlayed": highlightWhenPlayed_});
+            duration = 6500 / 8
+
+        notes.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
+                      "highlightWhenPlayed": highlightWhenPlayed});
     }
 
     function playNote(noteId) {
@@ -154,13 +155,22 @@ Item {
             id: notesRepeater
             model: notes
             Note {
-                value: mValue
-                type: mType
-                blackType: mBlackType
-                highlightWhenPlayed: mHighlightWhenPlayed
+                noteName: noteName_
+                noteType: noteType_
+                highlightWhenPlayed: highlightWhenPlayed
                 noteIsColored: staff.noteIsColored
                 width: (notes.count == 1 && items.staffLength === "long") ? Math.min(items.background.width,items.background.height) * 0.1 : noteWidth
                 height: staff.height
+
+                noteDetails: Activity.getNoteDetails(noteName)
+                rotation: {
+                    if(noteDetails.positonOnStaff < 0 && noteType === "Whole")
+                        return 0
+                    else if(noteDetails.positonOnStaff > 6 && noteType === "Whole")
+                        return 180
+                    else
+                        return noteDetails.rotation
+                }
 
                 MouseArea {
                     anchors.fill: parent
@@ -177,19 +187,15 @@ Item {
                 }
 
                 y: {
-                    var shift =  - verticalDistanceBetweenLines / 2
-                    if(clef === "bass") {
-                        shift += -2.5 * verticalDistanceBetweenLines
+                    var shift =  -verticalDistanceBetweenLines / 2
+                    var relativePosition = noteDetails.positonOnStaff
+                    var imageY = (nbLines - 3) * verticalDistanceBetweenLines
+
+                    if(rotation === 180) {
+                        return imageY - (4 - relativePosition) * verticalDistanceBetweenLines + shift
                     }
 
-                    if(blackType === "flat") {
-                        shift += - verticalDistanceBetweenLines / 2
-                    }
-
-                    if(mValue >= -2)
-                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)) - 1) * verticalDistanceBetweenLines / 2 + shift
-                    else
-                        return (nbLines - 3) * verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))) * verticalDistanceBetweenLines / 2 + shift
+                    return imageY - (6 - relativePosition) * verticalDistanceBetweenLines + shift
                 }
             }
         }

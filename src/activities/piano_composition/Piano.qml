@@ -26,31 +26,105 @@ import "../../core"
 
 Item {
     id: piano
-    //source: "qrc:/gcompris/src/activities/playpiano/resource/piano.svg"
-    //sourceSize.height: 200 * ApplicationInfo.ratio
     z: 3
 
     width: numberOfWhite * 23 // 23 is default width
     height: 120
-    property int numberOfWhite: 8
 
-    property var blacks: [14.33, 41.67, 82.25, 108.25, 134.75] // / 8*23
+    property alias whiteKeyRepeater: whiteKeyRepeater
+    property alias blackKeyRepeater: blackKeyRepeater
+
+    property int numberOfWhite: 8
+    property int currentOctaveNb: defaultOctaveNb
+    readonly property int defaultOctaveNb: background.clefType === "treble" ? 1 : 0
+    readonly property int maxNbOctaves: whiteNotes.length
+
+    onDefaultOctaveNbChanged: currentOctaveNb = defaultOctaveNb
+
     property int whiteWidth: width / numberOfWhite // 23
     property int whiteHeight: height // 120
     property int blackWidth: (whiteWidth + 1) / 2 // 13
     property int blackHeight: 2 * height / 3 // 80
 
-    property var whiteNotes: ["C", "D", "E", "F", "G", "A", "B", "C"]
-    property var blackNotesSharp: ["C#", "D#", "F#", "G#", "A#"]
-    property var blackNotesFlat: ["Db", "Eb", "Gb", "Ab", "Bb"]
-    // black note labels used, can be sharp or flat
-    property var blackNotes: useSharpNotation ? blackNotesSharp : blackNotesFlat
+    // White key notes are form C3 to G4 when the clef is bass
+    readonly property var whiteNotesBass: [
+        [["C3", qsTr("C%1").arg(3)], ["D3", qsTr("D%1").arg(3)], ["E3", qsTr("E%1").arg(3)], ["F3", qsTr("F%1").arg(3)], ["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)]],
+        [["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)]]
+    ]
+    // White key notes are form G3 to C6 when the clef is treble
+    readonly property var whiteNotesTreble: [
+        [["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)]],
+        [["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)], ["A4", qsTr("A%1").arg(4)], ["B4", qsTr("B%1").arg(4)], ["C5", qsTr("C%1").arg(5)]],
+        [["C5", qsTr("C%1").arg(5)], ["D5", qsTr("D%1").arg(5)], ["E5", qsTr("E%1").arg(5)], ["F5", qsTr("F%1").arg(5)], ["G5", qsTr("G%1").arg(5)], ["A5", qsTr("A%1").arg(5)], ["B5", qsTr("B%1").arg(5)], ["C6", qsTr("C%1").arg(6)]]
+    ]
+    readonly property var whiteNotes: background.clefType === "treble" ? whiteNotesTreble : whiteNotesBass
 
-    property var colorWhiteNotes: ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32",
-    "#6495ED", "#D02090", "#FF1493", "#FF0000",
-    "#FF7F00", "#FFFF00", "#32CD32"]
-    property var colorBlackNotes: ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2",
-    "#FF00FF", "#FF6347"]
+    // Sharp and flat black key notes when the clef is bass.
+    readonly property var blackNotesSharpBass: [
+        [["C#3", qsTr("C#%1").arg(3)], ["D#3", qsTr("D#%1").arg(3)], ["F#3", qsTr("F#%1").arg(3)], ["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)]],
+        [["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)]]
+    ]
+    readonly property var blackNotesFlatBass: [
+        [["Db3", qsTr("Db%1").arg(3)], ["Eb3", qsTr("Eb%1").arg(3)], ["Gb3", qsTr("Gb%1").arg(3)], ["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)]],
+        [["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)]]
+    ]
+    readonly property var blackNotesbass: useSharpNotation ? blackNotesSharpBass : blackNotesFlatBass
+
+    // Sharp and flat black key notes when the clef is treble
+    readonly property var blackNotesSharpTreble: [
+        [["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)]],
+        [["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)], ["G#4", qsTr("G#%1").arg(4)], ["A#4", qsTr("A#%1").arg(4)]],
+        [["C#5", qsTr("C#%1").arg(5)], ["D#5", qsTr("D#%1").arg(5)], ["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)]]
+    ]
+    readonly property var blackNotesFlatTreble: [
+        [["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)]],
+        [["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)], ["Ab4", qsTr("Ab%1").arg(4)], ["Bb4", qsTr("Bb%1").arg(4)]],
+        [["Db5", qsTr("Db%1").arg(5)], ["Eb5", qsTr("Eb%1").arg(5)], ["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)]]
+    ]
+    readonly property var blackNotesTreble: useSharpNotation ? blackNotesSharpTreble : blackNotesFlatTreble
+
+    // Black note labels used, can be sharp or flat
+    readonly property var blackNotes: background.clefType === "treble" ? blackNotesTreble : blackNotesbass
+
+    // Positions of black keys when the clef is treble
+    readonly property var blacksTreble: [
+        [14.33, 41.67, 82.25, 108.25, 154],
+        [14.33, 41.67, 82.25, 108.25, 134.75],
+        [14.33, 41.67, 82.25, 108.25, 134.75]
+    ]
+    // Positions of black keys when the clef is bass
+    readonly property var blacksBass: [
+        [14.33, 41.67, 82.25, 108.25, 134.75],
+        [14.33, 41.67, 82.25, 108.25, 154],
+    ]
+    readonly property var blacks: background.clefType === "treble" ? blacksTreble : blacksBass
+
+    // Color of white key labels when the clef is bass
+    readonly property var colorWhiteNotesBass: [
+        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
+        ["#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED"],
+    ]
+    // Color of white key labels when the clef is treble
+    readonly property var colorWhiteNotesTreble: [
+        ["#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED"],
+        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
+        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"]
+    ]
+    readonly property var colorWhiteNotes: background.clefType === "treble" ? colorWhiteNotesTreble : colorWhiteNotesBass
+
+    // Color of black key labels when the clef is bass
+    readonly property var colorBlackNotesBass: [
+        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
+        ["#8A2BE2", "#FF00FF", "#FF6347", "#FFD700", "#20B2AA"]
+    ]
+    // Color of black key labels when the clef is treble
+    readonly property var colorBlackNotesTreble: [
+        ["#8A2BE2", "#FF00FF", "#FF6347", "#FFD700", "#20B2AA"],
+        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
+        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"]
+    ]
+    readonly property var colorBlackNotes: background.clefType === "treble" ? colorBlackNotesTreble : colorBlackNotesBass
+
     signal noteClicked(string note)
 
     property bool blackLabelsVisible: true
@@ -60,33 +134,33 @@ Item {
 
     Repeater {
         id: whiteKeyRepeater
-        model: whiteNotes.length
+        model: whiteNotes[currentOctaveNb].length
         PianoKey {
             color: "white"
             width: whiteWidth
             height: whiteHeight
             x: index * whiteWidth
             labelSquareSize: piano.labelSquareSize
-            noteColor: colorWhiteNotes[index]
-            keyName: whiteNotes[index]
+            noteColor: colorWhiteNotes[currentOctaveNb][index]
+            keyName: whiteNotes[currentOctaveNb][index][1]
             labelsVisible: whiteLabelsVisible
-            onKeyPressed: noteClicked(index + 1)
+            onKeyPressed: noteClicked(whiteNotes[currentOctaveNb][index][0])
         }
     }
 
     Repeater {
         id: blackKeyRepeater
-        model: blackNotes.length
+        model: Object.keys(blackNotes[currentOctaveNb]).length
         PianoKey {
             color: "black"
             width: blackWidth
             height: blackHeight
-            x: blacks[index] * piano.width / 184
+            x: blacks[currentOctaveNb][index] * piano.width / 184
             labelSquareSize: piano.labelSquareSize
-            noteColor: colorBlackNotes[index]
-            keyName: blackNotes[index]
+            noteColor: colorBlackNotes[currentOctaveNb][index]
+            keyName: blackNotes[currentOctaveNb][index][1]
             labelsVisible: blackLabelsVisible
-            onKeyPressed: noteClicked(-index - 1)
+            onKeyPressed: noteClicked(blackNotes[currentOctaveNb][index][0])
         }
     }
 }

@@ -23,10 +23,12 @@
 .import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/activities/piano_composition/NoteNotations.js" as NoteNotations
 
 var currentLevel = 0
 var numberOfLevel = 7
 var items
+var notesDetails = NoteNotations.get()
 var userDir = "file://" + GCompris.ApplicationInfo.getSharedWritablePath() + "/" + "piano_composition"
 var userFile = userDir + "/melodies.json"
 var instructions = [{
@@ -86,6 +88,19 @@ function stop() {}
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.piano.currentOctaveNb = items.piano.defaultOctaveNb
+    items.multipleStaff.nbStaves = 2
+}
+
+function getNoteDetails(noteName) {
+    var clef = items.background.clefType === 'treble' ? "Treble" : "Bass"
+    var noteNotation = clef + noteName
+    console.log(noteNotation)
+    for(var i = 0; i < notesDetails.length; i++) {
+        if(noteNotation === notesDetails[i].noteName) {
+            return notesDetails[i]
+        }
+    }
 }
 
 function nextLevel() {
