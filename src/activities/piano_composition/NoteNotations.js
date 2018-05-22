@@ -1,6 +1,6 @@
 /* GCompris - NoteNotations.js
  *
- * Copyright (C) 2016 Aman Kumar Gupta <gupta2140@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
  *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)

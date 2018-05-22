@@ -103,10 +103,13 @@ Item {
                 pianoBlackKeysSharp = piano.blackNotesSharpBass
             }
 
-            for(var i = 0; i < pianoBlackKeysSharp.length; i++) {
+            var foundNote = false
+            for(var i = 0; (i < pianoBlackKeysSharp.length) && !foundNote; i++) {
                 for(var j = 0; j < pianoBlackKeysSharp[i].length; j++) {
                     if(pianoBlackKeysSharp[i][j][0] === noteName) {
                         noteName = pianoBlackKeysFlat[i][j][0]
+                        foundNote = true
+                        break
                     }
                 }
             }
