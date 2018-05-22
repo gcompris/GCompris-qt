@@ -296,16 +296,16 @@ public:
         }
     }
 
-    qint32 previousHeight() const { return m_previousHeight; }
-    void setPreviousHeight(qint32 height) {
+    quint32 previousHeight() const { return m_previousHeight; }
+    void setPreviousHeight(quint32 height) {
         if(m_previousHeight != height) {
             m_previousHeight = height;
             emit previousHeightChanged();
         }
     }
 
-    qint32 previousWidth() const { return m_previousWidth; }
-    void setPreviousWidth(qint32 width) {
+    quint32 previousWidth() const { return m_previousWidth; }
+    void setPreviousWidth(quint32 width) {
         if(m_previousWidth != width) {
             m_previousWidth = width;
             emit previousWidthChanged();

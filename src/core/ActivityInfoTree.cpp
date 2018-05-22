@@ -154,7 +154,7 @@ void ActivityInfoTree::filterByTag(const QString &tag, bool emitChanged)
         Q_EMIT menuTreeChanged();
 }
 
-void ActivityInfoTree::filterByDifficulty(int levelMin, int levelMax)
+void ActivityInfoTree::filterByDifficulty(quint32 levelMin, quint32 levelMax)
 {
     auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
                              [&](const ActivityInfo* activity) {

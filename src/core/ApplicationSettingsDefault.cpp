@@ -52,7 +52,7 @@ uint ApplicationSettings::checkActivationCode(const QString &code) {
         return 0;
 
     // Check date is under 2 years
-    ok = year * 100 + month + 200 >= atoi(BUILD_DATE);
+    ok = int(year * 100 + month + 200) >= atoi(BUILD_DATE);
     return(ok ? 2 : 1);
 }
 

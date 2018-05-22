@@ -57,7 +57,7 @@ protected Q_SLOTS:
     Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion,
                                                  bool emitChanged = true);
     Q_INVOKABLE void filterBySearch(const QString& text);
-    Q_INVOKABLE void filterByDifficulty(int levelMin, int levelMax);
+    Q_INVOKABLE void filterByDifficulty(quint32 levelMin, quint32 levelMax);
 
 signals:
     void menuTreeChanged();

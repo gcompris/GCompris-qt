@@ -64,7 +64,7 @@ quint32 ActivityInfo::difficulty() const
 {
     return m_difficulty;
 }
-void ActivityInfo::setDifficulty(const int &difficulty)
+void ActivityInfo::setDifficulty(const quint32 &difficulty)
 {
     m_difficulty = difficulty;
     emit difficultyChanged();

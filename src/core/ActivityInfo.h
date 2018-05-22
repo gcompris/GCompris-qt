@@ -63,7 +63,7 @@ class ActivityInfo : public QObject
      *
      * A difficulty level from 1 (easiest) to 6 (most difficult).
      */
-	Q_PROPERTY(int difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
+	Q_PROPERTY(quint32 difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
 
     /**
      * Relative path to the icon of the activity.
@@ -133,7 +133,7 @@ public:
 	QString section() const;
 	void setSection(const QString &);
         quint32 difficulty() const;
-	void setDifficulty(const int &);
+	void setDifficulty(const quint32 &);
 	QString icon() const;
 	void setIcon(const QString &);
 	QString author() const;
@@ -182,7 +182,7 @@ signals:
 private:
 	QString m_name;
 	QString m_section;
-	int m_difficulty;
+	quint32 m_difficulty;
 	QString m_icon;
 	QString m_author;
 	bool m_demo;
