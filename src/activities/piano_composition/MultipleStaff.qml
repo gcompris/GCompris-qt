@@ -41,6 +41,8 @@ Item {
 
     property alias flickableStaves: flickableStaves
 
+    signal noteClicked(string noteName, string noteLength)
+
     Flickable {
         id: flickableStaves
         flickableDirection: Flickable.VerticalFlick
@@ -194,7 +196,7 @@ Item {
                     staves.itemAt(currentPlayedStaff).initMetronome();
                 }
                 musicTimer.interval = staves.itemAt(currentPlayedStaff).notes.get(currentNote).mDuration
-                staves.itemAt(currentPlayedStaff).notesRepeater.itemAt(currentNote).play()
+                staves.itemAt(currentPlayedStaff).notesRepeater.itemAt(currentNote).highlightNote()
                 currentNote ++
                 if(currentNote > nbMaxNotesPerStaff) {
                     currentNote = 0

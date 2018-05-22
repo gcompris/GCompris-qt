@@ -170,6 +170,7 @@ ActivityBase {
             anchors.top: instructionBox.bottom
             anchors.topMargin: parent.height * 0.1
             anchors.rightMargin: parent.width * 0.043
+            onNoteClicked: playNoteAudio(noteName, noteLength)
         }
 
         GCButtonScroll {

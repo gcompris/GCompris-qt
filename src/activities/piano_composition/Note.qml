@@ -88,7 +88,7 @@ Item {
         opacity: 0.6
         border.color: "white"
         radius: width / 6
-        visible: false
+        visible: noteMouseArea.containsMouse || highlightTimer.running
     }
 
     Image {

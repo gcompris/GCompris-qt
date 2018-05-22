@@ -173,17 +173,14 @@ Item {
                 }
 
                 MouseArea {
+                    id: noteMouseArea
                     anchors.fill: parent
-                    onClicked: {
-                        print(items.staffLength)
-                        print(items.background.width,items.background.height)
-                    }
+                    hoverEnabled: true
+                    onClicked: multipleStaff.noteClicked(noteName, noteType)
                 }
 
-                function play() {
-//                     if(highlightWhenPlayed) {
-                        highlightTimer.start();
-//                     }
+                function highlightNote() {
+                    highlightTimer.start()
                 }
 
                 y: {
