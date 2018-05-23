@@ -166,7 +166,8 @@ ActivityBase {
                 /*free spots*/
                 "#c2c2d6"
             ]
-            property color paintColor: Activity.colors[items.activeColorIndex]
+            property alias toolsMode: toolsMode
+            property color paintColor: items.colors[items.activeColorIndex]
             property var urlImage
             property bool next: false
             property bool next2: false
@@ -176,7 +177,7 @@ ActivityBase {
             property bool widthHeightChanged: false
             property bool mainAnimationOnX: true
             property bool undoRedo: false
-            property int sizeS: 20
+            property int sizeS: 2
             property int index: 0
             property string toolSelected: "pencil"
             property string patternType: "dot"
@@ -979,8 +980,8 @@ ActivityBase {
 
             Rectangle {
                 id: selectBrush
-                height: row2.height * 1.15
-                width: row2.width * 1.05
+                height: 50 //row2.height * 1.15
+                width: 50 //row2.width * 1.05
 
                 x: rightPanelFrame.x + rightPanelFrame.width
                 y: rightPanelFrame.y - height / 2 + 20 //eraser.height * 3.5 +
@@ -1019,75 +1020,6 @@ ActivityBase {
                         from: rightPanelFrame.x + rightPanelFrame.width
                         to: rightPanelFrame.x - selectBrush.width
                     }
-                }
-
-                property alias showSelected: showSelected
-
-                Rectangle {
-                    id: showSelected
-                    width: 70; height: 70
-                    color: "#ffffb3"
-                    opacity: 0.7
-                    x: pencil.x + row2.spacing; y: pencil.y + row2.spacing / 2
-                    z: 3
-                    radius: width * 0.1
-                }
-
-
-                Row {
-                    id: row2
-                    height: pencil.height
-
-                    anchors.left: parent.left
-                    anchors.leftMargin: 10
-                    anchors.verticalCenter: parent.verticalCenter
-
-                    z: 5
-                    spacing: 10
-
-                    ToolItem { id: pencil; source: Activity.url + "pencil.png"; name: "pencil" }
-                    ToolItem {
-                        name: "dot"
-                        source: Activity.url + "pattern1.png"
-                        opacity: items.toolSelected == "pattern" && items.patternType == "dot"  ? 1 : 0.6
-                        onClick: {
-                            items.toolSelected = "pattern"
-                            items.patternType = "dot"
-                            items.lastToolSelected = "pattern"
-                            Activity.getPattern()
-                            background.reloadSelectedPen()
-                        }
-                    }
-                    ToolItem {
-                        name: "pattern2"
-                        source: Activity.url + "pattern2.png"
-                        opacity: items.toolSelected == "pattern" && items.patternType == "horizLine"  ? 1 : 0.6
-                        onClick: {
-                            items.toolSelected = "pattern"
-                            items.patternType = "horizLine"
-                            items.lastToolSelected = "pattern"
-                            Activity.getPattern2()
-                            background.reloadSelectedPen()
-                        }
-                    }
-                    ToolItem {
-                        name: "pattern3"
-                        source: Activity.url + "pattern3.png"
-                        opacity: items.toolSelected == "pattern" && items.patternType == "vertLine"  ? 1 : 0.6
-                        onClick: {
-                            items.toolSelected = "pattern"
-                            items.patternType = "vertLine"
-                            items.lastToolSelected = "pattern"
-                            Activity.getPattern3()
-                            background.reloadSelectedPen()
-                        }
-                    }
-
-                    ToolItem { name: "spray"; source: Activity.url + "spray.png"}
-                    ToolItem { name: "brush3";source: Activity.url + "brush3.png"}
-                    ToolItem { name: "brush4";source: Activity.url + "brush4.png"}
-                    ToolItem { name: "brush5";source: Activity.url + "brush5.png"}
-                    ToolItem { name: "blur";  source: Activity.url + "blur.png"}
                 }
             }
 
@@ -1401,6 +1333,11 @@ ActivityBase {
         FoldablePanels {
             id: foldablePanels
             visible: true
+        }
+
+        ToolsMode {
+            id: toolsMode
+            visible: false
         }
 
         ColorPalette {

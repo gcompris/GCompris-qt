@@ -26,18 +26,6 @@ var url = "qrc:/gcompris/src/activities/paint/resource/"
 var currentLevel = 0
 var numberOfLevel = 4
 var items
-var colors = [
-            /*blue*/    "#33B5E5", "#1a53ff", "#0000ff", "#0000b3",
-            /*green*/   "#bfff00", "#99CC00", "#86b300", "#608000",
-            /*orange*/  "#FFBB33",
-            /*red*/     "#ff9999", "#FF4444", "#ff0000", "#cc0000",
-            /*pink*/    "#ff00ff",
-            /*yellow*/  "#ffff00",
-            /*white*/   "#ffffff",
-            /*black*/   "#000000",
-            /*free spots*/
-            "#c2c2d6"
-        ]
 var loadImagesSource = [
             "qrc:/gcompris/src/activities/photo_hunter/resource/photo1.svg",
             "qrc:/gcompris/src/activities/photo_hunter/resource/photo2.svg",
@@ -50,6 +38,7 @@ var loadImagesSource = [
             "qrc:/gcompris/src/activities/photo_hunter/resource/photo9.svg",
             "qrc:/gcompris/src/activities/photo_hunter/resource/photo10.svg"
         ]
+
 var undo = []
 var redo = []
 
@@ -69,7 +58,7 @@ function start(items_) {
     items = items_
     currentLevel = 0
     items.toolSelected = "pencil"
-    items.paintColor = colors[0]
+    items.paintColor = items.colors[0]
     initLevel()
 }
 
@@ -350,5 +339,32 @@ function selectTool(toolName) {
     else if(toolName === "More Colors") {
         items.colorPalette.visible = true
     }
+    else if(toolName === "Modes") {
+        items.toolsMode.visible = true
+    }
 
+}
+
+function selectMode(modeName) {
+    if(modeName === "dot") {
+        items.toolSelected = "pattern"
+        items.patternType = "dot"
+        items.lastToolSelected = "pattern"
+        getPattern()
+        items.background.reloadSelectedPen()
+    }
+    else if(modeName === "pattern2") {
+        items.toolSelected = "pattern"
+        items.patternType = "horizLine"
+        items.lastToolSelected = "pattern"
+        getPattern2()
+        items.background.reloadSelectedPen()
+    }
+    else if(modeName === "pattern3") {
+        items.toolSelected = "pattern"
+        items.patternType = "vertLine"
+        items.lastToolSelected = "pattern"
+        getPattern3()
+        items.background.reloadSelectedPen()
+    }
 }
