@@ -21,10 +21,10 @@ import QtQuick 2.6
 Rectangle {
     id: frame
     color: items.sizeS == Math.floor(lineSize * 15) ? "#ffff66" : "#ffffb3"
-    width: 30
-    height: 80
-    radius: width * 0.35
-    border.color: "#cccc00"
+    width: lineSize * 15
+    height: lineSize * 40
+    radius: width * 0.25
+    border.color: "black"
     border.width: 2
     opacity: items.sizeS == Math.floor(lineSize * 15) ? 1 : 0.7
 
@@ -34,10 +34,9 @@ Rectangle {
 
     Rectangle {
         id: thickness
-        color: "blue"
-        radius: width * 0.35
-        width: parent.width * frame.lineSize
-        height: parent.height *  0.9
+        color: "#f8d600"
+        radius: width * 0.25
+        anchors.fill: parent
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
     }

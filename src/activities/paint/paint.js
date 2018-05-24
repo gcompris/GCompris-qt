@@ -342,6 +342,9 @@ function selectTool(toolName) {
     else if(toolName === "Modes") {
         items.toolsMode.visible = true
     }
+    else if(toolName === "Size") {
+        items.toolsSize.visible = true
+    }
 
 }
 

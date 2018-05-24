@@ -96,7 +96,7 @@ Rectangle {
             collapsed: true
             subItems: [
                 ListElement { itemName: "Modes" },
-                ListElement { itemName: "Border width"},
+                ListElement { itemName: "Size"},
                 ListElement { itemName: "More..." }
             ]
         }
