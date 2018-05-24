@@ -152,6 +152,7 @@ ActivityBase {
             property alias mainRegion: main
             property alias shape: shape
             property alias colorPalette: colorPalette
+            property alias toolsSize: toolsSize
             property alias brushSelectCanvas: brushSelectCanvas
             property int activeColorIndex: 1
             property var colors: [
@@ -234,11 +235,6 @@ ActivityBase {
         }
 
         function hideExpandedTools () {
-            if (selectBrush.z > 0)
-                hideAnimation.start()
-            if (selectSize.z > 0)
-                hideSelectSizeAnimation.start()
-
             // hide the inputTextFrame
             items.inputTextFrame.opacity = 0
             items.inputTextFrame.z = -1
@@ -918,111 +914,6 @@ ActivityBase {
             }
             // }
 
-            Rectangle {
-                id: selectSize
-                height: row.height * 1.1
-                width: row.width * 1.2
-
-                x: rightPanelFrame.x + rightPanelFrame.width
-                y: rightPanelFrame.y - height / 2 + sizeTool.height * 1.5 +
-                   rightPanel.spacing * 2 + rightPanel.anchors.topMargin
-                z: -10
-
-                radius: width * 0.05
-                opacity: 0
-                color: background.color
-
-                SequentialAnimation {
-                    id: hideSelectSizeAnimation
-                    PropertyAction { target: selectSize; property: "z"; value: 2 }
-                    NumberAnimation {
-                        target: selectSize
-                        property: "x"
-                        duration: 500
-                        easing.type: Easing.InOutQuad
-                        from: rightPanelFrame.x - selectSize.width
-                        to: rightPanelFrame.x + rightPanelFrame.width
-                    }
-                    PropertyAction { target: selectSize; property: "opacity"; value: 0 }
-                    PropertyAction { target: selectSize; property: "z"; value: -10 }
-                }
-
-                SequentialAnimation {
-                    id: showSelectSizeAnimation
-                    PropertyAction { target: selectSize; property: "opacity"; value: 0.9 }
-                    PropertyAction { target: selectSize; property: "z"; value: 2 }
-                    NumberAnimation {
-                        target: selectSize
-                        property: "x"
-                        duration: 500
-                        easing.type: Easing.InOutQuad
-                        from: rightPanelFrame.x + rightPanelFrame.width
-                        to: rightPanelFrame.x - selectSize.width
-                    }
-                }
-
-                Row {
-                    id: row
-                    height: 90
-
-                    anchors.left: parent.left
-                    anchors.leftMargin: 10
-                    anchors.verticalCenter: parent.verticalCenter
-
-                    spacing: 10
-
-                    Thickness { lineSize: 0.15 }
-                    Thickness { lineSize: 0.3 }
-                    Thickness { lineSize: 0.45 }
-                    Thickness { lineSize: 0.6 }
-                }
-            }
-
-            Rectangle {
-                id: selectBrush
-                height: 50 //row2.height * 1.15
-                width: 50 //row2.width * 1.05
-
-                x: rightPanelFrame.x + rightPanelFrame.width
-                y: rightPanelFrame.y - height / 2 + 20 //eraser.height * 3.5 +
-                   + rightPanel.spacing * 3 + rightPanel.anchors.topMargin
-
-                radius: width * 0.02
-                opacity: 0
-
-                z: -10
-                color: background.color
-
-                SequentialAnimation {
-                    id: hideAnimation
-                    PropertyAction { target: selectBrush; property: "z"; value: 2 }
-                    NumberAnimation {
-                        target: selectBrush
-                        property: "x"
-                        duration: 500
-                        easing.type: Easing.InOutQuad
-                        from: rightPanelFrame.x - selectBrush.width
-                        to: rightPanelFrame.x + rightPanelFrame.width
-                    }
-                    PropertyAction { target: selectBrush; property: "opacity"; value: 0 }
-                    PropertyAction { target: selectBrush; property: "z"; value: -10 }
-                }
-
-                SequentialAnimation {
-                    id: showAnimation
-                    PropertyAction { target: selectBrush; property: "opacity"; value: 0.9 }
-                    PropertyAction { target: selectBrush; property: "z"; value: 2 }
-                    NumberAnimation {
-                        target: selectBrush
-                        property: "x"
-                        duration: 500
-                        easing.type: Easing.InOutQuad
-                        from: rightPanelFrame.x + rightPanelFrame.width
-                        to: rightPanelFrame.x - selectBrush.width
-                    }
-                }
-            }
-
             // tools from the right panel
             Rectangle {
                 id: rightPanelFrame
@@ -1048,28 +939,6 @@ ActivityBase {
                     property real dime: (background.height) / 14 - 10 //(background.height - colorTools.height) / 14 - 10
 
                     spacing: 15
-
-                    property alias sizeTool: sizeTool
-
-                    // select size
-                    Image {
-                        id: sizeTool
-                        width: rightPanel.dime; height: rightPanel.dime
-                        source: Activity.url + "size.PNG"
-                        opacity: 0.6
-
-                        MouseArea {
-                            id: toolArea
-                            anchors.fill: parent
-                            onClicked: {
-                                if (selectSize.z > 0) {
-                                    hideSelectSizeAnimation.start()
-                                } else showSelectSizeAnimation.start()
-
-                                hideAnimation.start()
-                            }
-                        }
-                    }
 
                     Canvas {
                         id: brushSelectCanvas
@@ -1342,6 +1211,11 @@ ActivityBase {
 
         ColorPalette {
             id: colorPalette
+            visible: false
+        }
+
+        ToolsSize {
+            id: toolsSize
             visible: false
         }
     }
