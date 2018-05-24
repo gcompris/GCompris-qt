@@ -92,9 +92,13 @@ function initLevel() {
     items.multipleStaff.nbStaves = 2
 }
 
-function getNoteDetails(noteName) {
+function getNoteDetails(noteName, noteType) {
     var clef = items.background.clefType === 'treble' ? "Treble" : "Bass"
-    var noteNotation = clef + noteName
+    var noteNotation
+    if(noteType === "Rest")
+        noteNotation = noteName + noteType
+    else
+        noteNotation = clef + noteName
     console.log(noteNotation)
     for(var i = 0; i < notesDetails.length; i++) {
         if(noteNotation === notesDetails[i].noteName) {

@@ -60,7 +60,6 @@ Item {
 
     Repeater {
         model: nbLines
-        
         Rectangle {
             width: staff.width
             height: 5
@@ -70,6 +69,7 @@ Item {
             y: index * verticalDistanceBetweenLines
         }
     }
+
     Rectangle {
         width: 5
         border.width: 5
@@ -78,7 +78,8 @@ Item {
         x: staff.width
         y: 0
     }
-    // end of partition line
+
+    // End of partition line
     Rectangle {
         width: 5
         border.width: 5
@@ -123,16 +124,24 @@ Item {
         print("total distance " + metronome.x)
     }
 
+    function calculateTimerDuration(noteType) {
+        noteType = noteType.toLowerCase()
+        if(noteType === "whole")
+            return 2000
+        else if(noteType === "half")
+            return 1500
+        else if(noteType === "quarter")
+            return 1000
+        else
+            return 812.5
+    }
+
     function addNote(noteName, noteType, blackType, highlightWhenPlayed) {
         var duration
-        if(noteType == "Whole")
-            duration = 2000 / 1
-        else if(noteType == "Half")
-            duration = 3000 / 2
-        else if(noteType == "Quarter")
-            duration = 4000 / 4
+        if(noteType === "Rest")
+            duration = calculateTimerDuration(noteName)
         else
-            duration = 6500 / 8
+            duration = calculateTimerDuration(noteType)
 
         notes.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
                       "highlightWhenPlayed": highlightWhenPlayed});
@@ -144,7 +153,7 @@ Item {
     }
 
     function eraseAllNotes() {
-        notes.clear();
+        notes.clear()
     }
 
     property int noteWidth: (staff.width - 10 - clefImage.width) / 10
@@ -162,7 +171,7 @@ Item {
                 width: (notes.count == 1 && items.staffLength === "long") ? Math.min(items.background.width,items.background.height) * 0.1 : noteWidth
                 height: staff.height
 
-                noteDetails: Activity.getNoteDetails(noteName)
+                noteDetails: Activity.getNoteDetails(noteName, noteType)
                 rotation: {
                     if(noteDetails.positonOnStaff < 0 && noteType === "Whole")
                         return 0

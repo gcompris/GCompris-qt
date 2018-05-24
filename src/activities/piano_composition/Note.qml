@@ -28,15 +28,14 @@ import "../../core"
 Item {
     id: note
     property string noteName
-    property bool noteIsColored: true
     property string noteType
+    property bool noteIsColored: true
     property string blackType: noteName[1] === "#" ? "sharp"
                                : noteName[1] === "b" ? "flat" : ""// empty, "flat" or "sharp"
 
-    readonly property string length: noteType == "Whole" ? 1 :
-                                     noteType == "Half"  ? 2 :
-                                     noteType == "Quarter" ? 4 :
-                                     noteType == 8
+    readonly property string length: (noteType === "Whole" || noteName === "whole") ? 1 :
+                                     (noteType === "Half" || noteName === "half")  ? 2 :
+                                     (noteType === "Quarter" || noteName === "quarter") ? 4 : 8
 
     readonly property int noteDuration: 2000 / length
 
@@ -93,7 +92,8 @@ Item {
 
     Image {
         id: noteImage
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + noteType + ".svg"
+        source: noteType != "Rest" ? "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + noteType + ".svg"
+                                   : "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + ".svg"
         sourceSize.width: 200
         width: note.width
         height: note.height
@@ -104,18 +104,21 @@ Item {
         anchors.fill: noteImage
         source: noteImage
 
-        readonly property int noteColorNumber: blackType == "" ? whiteNoteName[noteName[0]] : blackNoteName[noteName.substring(0,2)]
+        readonly property int noteColorNumber: {
+            if(noteType === "Rest")
+                return 0
+            else if(blackType === "")
+                return whiteNoteName[noteName[0]]
+            else
+                return blackNoteName[noteName.substring(0,2)]
+        }
 
-        color: noteColorMap[noteColorNumber]  // make image like it lays under red glass
+        color: noteType != "Rest" ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
         visible: noteIsColored
     }
 
     Timer {
         id: highlightTimer
         interval: noteDuration
-        onRunningChanged: {
-            highlightRectangle.visible = running
-//             highlightImage.visible = running
-        }
     }
 }

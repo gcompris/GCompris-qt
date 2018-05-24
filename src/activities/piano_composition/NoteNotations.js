@@ -442,6 +442,30 @@ function get() {
                     "imageName": "bassG4",
                     "rotation": 180,
                     "positonOnStaff": -2
+                },
+                {
+                    "noteName": "wholeRest",
+                    "imageName": "wholeRest",
+                    "rotation": 0,
+                    "positonOnStaff": 3.4
+                },
+                {
+                    "noteName": "halfRest",
+                    "imageName": "wholeRest",
+                    "rotation": 180,
+                    "positonOnStaff": 1.6
+                },
+                {
+                    "noteName": "quarterRest",
+                    "imageName": "quarterRest",
+                    "rotation": 0,
+                    "positonOnStaff": 4.5
+                },
+                {
+                    "noteName": "eighthRest",
+                    "imageName": "eighthRest",
+                    "rotation": 0,
+                    "positonOnStaff": 4.6
                 }
     ]
 }

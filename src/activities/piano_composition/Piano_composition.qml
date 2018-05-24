@@ -114,6 +114,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         property string currentType: "Whole"
+        property string restType: "Whole"
         property string clefType: bar.level == 2 ? "bass" : "treble"
 
         File {
@@ -170,7 +171,7 @@ ActivityBase {
             anchors.top: instructionBox.bottom
             anchors.topMargin: parent.height * 0.1
             anchors.rightMargin: parent.width * 0.043
-            onNoteClicked: playNoteAudio(noteName, noteLength)
+            onNoteClicked: playNoteAudio(noteName, noteType)
         }
 
         GCButtonScroll {
@@ -246,40 +247,10 @@ ActivityBase {
 
             readonly property var noteLengthName: ["Whole", "Half", "Quarter", "Eighth"]
 
-            Image {
-                id: noteTypeOption
-
-                property int currentIndex: 0
-
+            SwitchableOptions {
+                id: noteOptions
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex])
-                sourceSize.width: 50
-                anchors.top: parent.top
-                anchors.topMargin: -6
-                visible: (bar.level == 1 || bar.level == 2) ? false : true
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        parent.currentIndex = (parent.currentIndex + 1) % 4
-                        clickAnimation.start()
-                        currentType = optionsRow.noteLengthName[parent.currentIndex]
-                    }
-                }
-
-                SequentialAnimation {
-                    id: clickAnimation
-                    NumberAnimation {
-                        target: noteTypeOption
-                        property: "scale"
-                        to: 0.7
-                        duration: 150
-                    }
-                    NumberAnimation {
-                        target: noteTypeOption
-                        property: "scale"
-                        to: 1
-                        duration: 150
-                    }
-                }
+                onClicked: currentType = optionsRow.noteLengthName[currentIndex]
             }
 
             Image {
@@ -348,6 +319,7 @@ ActivityBase {
                     }
                 }
             }
+
             Image {
                 id: changeAccidentalStyleButton
                 source: piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/blackflat.svg"
@@ -355,6 +327,35 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: piano.useSharpNotation = !piano.useSharpNotation
+                }
+            }
+
+            // Since the half rest image is just the rotated image of whole rest image, we check if the current rest type is half, we assign the source as whole rest and rotate it by 180 degrees.
+            SwitchableOptions {
+                id: restOptions
+
+                readonly property string restTypeImage: ((optionsRow.noteLengthName[currentIndex] === "Half") ? "Whole" : optionsRow.noteLengthName[currentIndex]).toLowerCase()
+
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
+                onClicked: restType = optionsRow.noteLengthName[currentIndex]
+                rotation: optionsRow.noteLengthName[currentIndex] === "Half" ? 180 : 0
+                sourceSize.width: 70
+            }
+
+            Image {
+                id: addRestButton
+                sourceSize.width: 48
+                source: "qrc:/gcompris/src/core/resource/apply.svg"
+                visible: restOptions.visible
+                anchors.top: parent.top
+                anchors.topMargin: 4
+                MouseArea {
+                    anchors.fill: parent
+                    onPressed: parent.scale = 0.8
+                    onReleased: {
+                        parent.scale = 1
+                        multipleStaff.addNote(restType.toLowerCase(), "Rest", false, false)
+                    }
                 }
             }
         }

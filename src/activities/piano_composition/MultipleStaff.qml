@@ -41,7 +41,7 @@ Item {
 
     property alias flickableStaves: flickableStaves
 
-    signal noteClicked(string noteName, string noteLength)
+    signal noteClicked(string noteName, string noteType)
 
     Flickable {
         id: flickableStaves
@@ -90,45 +90,47 @@ Item {
             playNoteAudio(noteName, noteType)
     }
 
-    function playNoteAudio(noteName, noteLength) {
-        var audioPitchType
-        // We should find a corresponding b type enharmonic notation for # type note to play the audio.
-        if(noteName[1] === "#") {
-            var pianoBlackKeysFlat
-            var pianoBlackKeysSharp
-            if(background.clefType === "treble") {
-                pianoBlackKeysFlat = piano.blackNotesFlatTreble
-                pianoBlackKeysSharp = piano.blackNotesSharpTreble
-            }
-            else {
-                pianoBlackKeysFlat = piano.blackNotesFlatBass
-                pianoBlackKeysSharp = piano.blackNotesSharpBass
-            }
+    function playNoteAudio(noteName, noteType) {
+        if(noteType != "Rest") {
+            var audioPitchType
+            // We should find a corresponding b type enharmonic notation for # type note to play the audio.
+            if(noteName[1] === "#") {
+                var pianoBlackKeysFlat
+                var pianoBlackKeysSharp
+                if(background.clefType === "treble") {
+                    pianoBlackKeysFlat = piano.blackNotesFlatTreble
+                    pianoBlackKeysSharp = piano.blackNotesSharpTreble
+                }
+                else {
+                    pianoBlackKeysFlat = piano.blackNotesFlatBass
+                    pianoBlackKeysSharp = piano.blackNotesSharpBass
+                }
 
-            var foundNote = false
-            for(var i = 0; (i < pianoBlackKeysSharp.length) && !foundNote; i++) {
-                for(var j = 0; j < pianoBlackKeysSharp[i].length; j++) {
-                    if(pianoBlackKeysSharp[i][j][0] === noteName) {
-                        noteName = pianoBlackKeysFlat[i][j][0]
-                        foundNote = true
-                        break
+                var foundNote = false
+                for(var i = 0; (i < pianoBlackKeysSharp.length) && !foundNote; i++) {
+                    for(var j = 0; j < pianoBlackKeysSharp[i].length; j++) {
+                        if(pianoBlackKeysSharp[i][j][0] === noteName) {
+                            noteName = pianoBlackKeysFlat[i][j][0]
+                            foundNote = true
+                            break
+                        }
                     }
                 }
+
+                audioPitchType = parseInt(noteName[2])
             }
+            else if(noteName[1] === "b")
+                audioPitchType = parseInt(noteName[2])
+            else
+                audioPitchType = parseInt(noteName[1])
 
-            audioPitchType = parseInt(noteName[2])
+            if(audioPitchType > 3)
+                audioPitchType = "treble"
+            else
+                audioPitchType = "bass"
+            var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + audioPitchType + "_pitches/" + noteName + ".wav"
+            items.audioEffects.play(noteToPlay)
         }
-        else if(noteName[1] === "b")
-            audioPitchType = parseInt(noteName[2])
-        else
-            audioPitchType = parseInt(noteName[1])
-
-        if(audioPitchType > 3)
-            audioPitchType = "treble"
-        else
-            audioPitchType = "bass"
-        var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + audioPitchType + "_pitches/" + noteName + ".wav"
-        items.audioEffects.play(noteToPlay)
     }
 
     function getAllNotes() {
@@ -144,13 +146,17 @@ Item {
 
     function loadFromData(data) {
         eraseAllNotes()
-        var melody = data.split(" ");
-        multipleStaff.clef = melody[0];
+        var melody = data.split(" ")
+        multipleStaff.clef = melody[0]
         for(var i = 1 ; i < melody.length ; ++ i) {
-            var noteLength = melody[i].length;
+            var noteLength = melody[i].length
             var noteName = melody[i][0]
             var noteType
-            if(melody[i][1] === "#" || melody[i][1] === "b") {
+            if(melody[i].substring(noteLength - 4, noteLength) === "Rest") {
+                noteName = melody[i].substring(0, noteLength - 4)
+                noteType = "Rest"
+            }
+            else if(melody[i][1] === "#" || melody[i][1] === "b") {
                 noteType = melody[i].substring(3, melody[i].length)
                 noteName += melody[i][1] + melody[i][2];
             }
@@ -165,8 +171,8 @@ Item {
 
     function eraseAllNotes() {
         for(var v = 0 ; v <= currentStaff ; ++ v)
-            staves.itemAt(v).eraseAllNotes();
-        currentStaff = 0;
+            staves.itemAt(v).eraseAllNotes()
+        currentStaff = 0
     }
 
     function play() {
