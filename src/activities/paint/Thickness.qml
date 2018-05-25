@@ -21,10 +21,10 @@ import QtQuick 2.6
 Rectangle {
     id: frame
     color: items.sizeS == Math.floor(lineSize * 15) ? "#ffff66" : "#ffffb3"
-    width: lineSize * 15
-    height: lineSize * 40
-    radius: width * 0.25
-    border.color: "black"
+    width: 40
+    height: 40
+    radius: 8
+    border.color: "#cccc00"
     border.width: 2
     opacity: items.sizeS == Math.floor(lineSize * 15) ? 1 : 0.7
 
@@ -34,13 +34,12 @@ Rectangle {
 
     Rectangle {
         id: thickness
-        color: "#f8d600"
-        radius: width * 0.25
-        anchors.fill: parent
-        anchors.horizontalCenter: parent.horizontalCenter
-        anchors.verticalCenter: parent.verticalCenter
+        color: items.paintColor
+        radius: 30
+        width: lineSize * 25
+        height: lineSize * 25
+        anchors.centerIn: parent
     }
-
 
     MouseArea {
         id: mouseArea
@@ -49,7 +48,7 @@ Rectangle {
 
         onClicked: {
             background.hideExpandedTools()
-            items.sizeS = parent.lineSize * 15
+            items.sizeS = parent.lineSize * 18
             print("frame.lineSize " + Math.floor(frame.lineSize * 15))
             print("items.sizeS: " + items.sizeS)
         }

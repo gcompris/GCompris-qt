@@ -66,7 +66,7 @@ Item {
         }
 
         Row {
-            spacing: slider.width / 3.6
+            spacing: slider.width / 4.6
             x: slider.x
             anchors.bottom: slider.top
 

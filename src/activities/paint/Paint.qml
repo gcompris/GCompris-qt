@@ -168,6 +168,8 @@ ActivityBase {
                 "#c2c2d6"
             ]
             property alias toolsMode: toolsMode
+            property alias saveToFilePrompt2: saveToFilePrompt2
+            property alias saveToFilePrompt: saveToFilePrompt
             property color paintColor: items.colors[items.activeColorIndex]
             property var urlImage
             property bool next: false

@@ -345,7 +345,15 @@ function selectTool(toolName) {
     else if(toolName === "Size") {
         items.toolsSize.visible = true
     }
-
+    else if(toolName === "Erase all") {
+        if (!items.nothingChanged) {
+            items.saveToFilePrompt2.text = qsTr("Do you want to save your painting before reseting the board?")
+            items.saveToFilePrompt2.opacity = 1
+            items.saveToFilePrompt2.z = 200
+        } else {
+            initLevel()
+        }
+    }
 }
 
 function selectMode(modeName) {
