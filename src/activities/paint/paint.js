@@ -309,7 +309,6 @@ function selectTool(toolName) {
                 undo = undo.concat(redo.pop())
             }
 
-
             items.next = true
             items.next2 = false
 
@@ -353,6 +352,20 @@ function selectTool(toolName) {
         } else {
             initLevel()
         }
+    }
+    else if(toolName === "Geometric") {
+        items.toolSelected = "rectangle"
+        items.lastToolSelected = "rectangle"
+        items.background.hideExpandedTools()
+        items.background.reloadSelectedPen()
+        items.toolsMode.modesModel = items.toolsMode.geometricModes
+    }
+    else if(toolName === "Pencil") {
+        items.toolSelected = "pencil"
+        items.lastToolSelected = "pencil"
+        items.background.hideExpandedTools()
+        items.background.reloadSelectedPen()
+        items.toolsMode.modesModel = items.toolsMode.pencilModes
     }
 }
 

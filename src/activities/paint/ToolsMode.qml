@@ -27,12 +27,13 @@ Item {
     height: background.height * 0.90
 
     anchors.centerIn: parent
-
+    property alias modesModel: modes.model
+    property alias pencilModes: pencilModes
+    property alias geometricModes: geometricModes
     ListModel {
         id: pencilModes
         ListElement { name: "pencil";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/pencil.png"
-        }
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/pencil.png" }
         ListElement { name: "dot";
             imgSource: "qrc:/gcompris/src/activities/paint/resource/pattern1.png" }
         ListElement { name: "pattern2";
@@ -49,6 +50,20 @@ Item {
             imgSource: "qrc:/gcompris/src/activities/paint/resource/brush5.png" }
         ListElement { name: "blur";
             imgSource: "qrc:/gcompris/src/activities/paint/resource/blur.png" }
+    }
+
+    ListModel {
+        id: geometricModes
+        ListElement { name: "rectangle";
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/rectangle.png" }
+        ListElement { name: "circle";
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/circle.png" }
+        ListElement { name: "lineShift";
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/line_straight.svg"
+        }
+        ListElement { name: "line"
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/line_free.png"
+        }
     }
 
     Rectangle {
@@ -91,8 +106,12 @@ Item {
             y: parent.y + buttonCancel.height + 10
             anchors.centerIn: parent
             model: pencilModes
-            delegate:
-                Rectangle {
+            delegate: pencilComponent
+        }
+
+        Component {
+            id: pencilComponent
+            Rectangle {
                 width: modes.cellWidth
                 height: modes.cellHeight
                 color: items.toolSelected == name ? "lightblue" : "transparent"
