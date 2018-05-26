@@ -90,6 +90,9 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
+    items.background.staffMode = "add"
+    items.multipleStaff.noteToReplace = [-1, -1]
+    items.staffModesOptions.currentIndex = 0
 }
 
 function getNoteDetails(noteName, noteType) {
@@ -112,7 +115,7 @@ function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
-    initLevel();
+    initLevel()
 }
 
 function previousLevel() {
@@ -120,5 +123,5 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
-    initLevel();
+    initLevel()
 }

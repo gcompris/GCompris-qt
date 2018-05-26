@@ -29,6 +29,7 @@ Image {
     id: switchableOptions
 
     property int currentIndex: 0
+    property int nbOptions: 1
 
     signal clicked
 
@@ -39,7 +40,7 @@ Image {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            parent.currentIndex = (parent.currentIndex + 1) % 4
+            parent.currentIndex = (parent.currentIndex + 1) % nbOptions
             clickAnimation.start()
             parent.clicked()
         }

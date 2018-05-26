@@ -36,12 +36,14 @@ Item {
     property int nbMaxNotesPerStaff: 6
 
     property int firstNoteX: width / 5
+    // Stores the note number and the staff number in which the replacable note is.
+    property var noteToReplace: [-1, -1]
     property bool noteIsColored
     property bool isMetronomeDisplayed: false
 
     property alias flickableStaves: flickableStaves
 
-    signal noteClicked(string noteName, string noteType)
+    signal noteClicked(string noteName, string noteType, int noteIndex, int staffIndex)
 
     Flickable {
         id: flickableStaves
@@ -85,9 +87,15 @@ Item {
             currentStaff++
         }
 
-        staves.itemAt(currentStaff).addNote(noteName, noteType, highlightWhenPlayed)
+        staves.itemAt(currentStaff).addNote(noteName, noteType, highlightWhenPlayed, false)
         if(playAudio)
             playNoteAudio(noteName, noteType)
+    }
+
+    function replaceNote(noteName, noteType) {
+        if(noteToReplace [0] != -1 && noteToReplace[1] != -1) {
+            staves.itemAt(noteToReplace[1]).replaceNote(noteName, noteType)
+        }
     }
 
     function playNoteAudio(noteName, noteType) {
@@ -167,6 +175,10 @@ Item {
 
             addNote(noteName, noteType, false, false)
         }
+    }
+
+    function eraseNote(noteIndex, staffIndex) {
+        staves.itemAt(staffIndex).eraseNote(noteIndex)
     }
 
     function eraseAllNotes() {

@@ -108,6 +108,7 @@ ActivityBase {
             property alias melodyList: melodyList
             property alias file: file
             property alias piano: piano
+            property alias staffModesOptions: staffModesOptions
         }
 
         onStart: { Activity.start(items) }
@@ -116,6 +117,7 @@ ActivityBase {
         property string currentType: "Whole"
         property string restType: "Whole"
         property string clefType: bar.level == 2 ? "bass" : "treble"
+        property string staffMode: "add"
 
         File {
             id: file
@@ -171,7 +173,14 @@ ActivityBase {
             anchors.top: instructionBox.bottom
             anchors.topMargin: parent.height * 0.1
             anchors.rightMargin: parent.width * 0.043
-            onNoteClicked: playNoteAudio(noteName, noteType)
+            onNoteClicked: {
+                if(background.staffMode === "add")
+                    playNoteAudio(noteName, noteType)
+                else if(background.staffMode === "replace")
+                    noteToReplace = [noteIndex, staffIndex]
+                else
+                    multipleStaff.eraseNote(noteIndex, staffIndex)
+            }
         }
 
         GCButtonScroll {
@@ -198,7 +207,12 @@ ActivityBase {
             anchors.topMargin: horizontalLayout ? parent.height * 0.08 : parent.height * 0.025
             blackLabelsVisible: [4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
             useSharpNotation: bar.level == 5 ? false : true
-            onNoteClicked: multipleStaff.addNote(note, currentType, false, true)
+            onNoteClicked: {
+                if(background.staffMode === "add")
+                    multipleStaff.addNote(note, currentType, false, true)
+                else if(background.staffMode === "replace")
+                    multipleStaff.replaceNote(note, currentType)
+            }
         }
 
         Image {
@@ -246,10 +260,12 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
 
             readonly property var noteLengthName: ["Whole", "Half", "Quarter", "Eighth"]
+            readonly property var staffModes: ["add", "replace", "erase"]
 
             SwitchableOptions {
                 id: noteOptions
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex])
+                nbOptions: optionsRow.noteLengthName.length
                 onClicked: currentType = optionsRow.noteLengthName[currentIndex]
             }
 
@@ -276,6 +292,16 @@ ActivityBase {
                         print(piano.currentOctaveNb)
                     }
                 }
+            }
+
+            SwitchableOptions {
+                id:staffModesOptions
+                nbOptions: optionsRow.staffModes.length
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.staffModes[currentIndex])
+                anchors.top: parent.top
+                anchors.topMargin: 4
+                onClicked: background.staffMode = optionsRow.staffModes[currentIndex]
+                visible: true
             }
 
             Image {
@@ -337,6 +363,7 @@ ActivityBase {
                 readonly property string restTypeImage: ((optionsRow.noteLengthName[currentIndex] === "Half") ? "Whole" : optionsRow.noteLengthName[currentIndex]).toLowerCase()
 
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
+                nbOptions: optionsRow.noteLengthName.length
                 onClicked: restType = optionsRow.noteLengthName[currentIndex]
                 rotation: optionsRow.noteLengthName[currentIndex] === "Half" ? 180 : 0
                 sourceSize.width: 70
@@ -354,7 +381,10 @@ ActivityBase {
                     onPressed: parent.scale = 0.8
                     onReleased: {
                         parent.scale = 1
-                        multipleStaff.addNote(restType.toLowerCase(), "Rest", false, false)
+                        if(background.staffMode === "add")
+                            multipleStaff.addNote(restType.toLowerCase(), "Rest", false, false)
+                        else
+                            multipleStaff.replaceNote(restType.toLowerCase(), "Rest")
                     }
                 }
             }

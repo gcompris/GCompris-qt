@@ -51,6 +51,7 @@ Item {
     property int nbMaxNotesPerStaff
     property bool noteIsColored
     property alias notesRepeater: notesRepeater
+    readonly property int staffNb: index
 
     Image {
         id: clefImage
@@ -136,15 +137,37 @@ Item {
             return 812.5
     }
 
-    function addNote(noteName, noteType, blackType, highlightWhenPlayed) {
+    function addNote(noteName, noteType, highlightWhenPlayed, isReplacing) {
         var duration
         if(noteType === "Rest")
             duration = calculateTimerDuration(noteName)
         else
             duration = calculateTimerDuration(noteType)
 
-        notes.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
-                      "highlightWhenPlayed": highlightWhenPlayed});
+        if(!isReplacing)
+            notes.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
+                          "highlightWhenPlayed": highlightWhenPlayed})
+        else
+            notes.set(multipleStaff.noteToReplace[0], { "noteName_": noteName, "noteType_": noteType, "mDuration": duration })
+    }
+
+    function replaceNote(newNoteName, newType) {
+        addNote(newNoteName, newType, false, true)
+    }
+
+    function eraseNote(noteIndex) {
+        var noteLength = notes.get(noteIndex).mDuration
+        var restName
+        if(noteLength === 2000)
+            restName = "whole"
+        else if(noteLength === 1500)
+            restName = "half"
+        else if(noteLength === 1000)
+            restName = "quarter"
+        else
+            restName = "eighth"
+
+         notes.set(noteIndex, { "noteName_": restName, "noteType_": "Rest" })
     }
 
     function playNote(noteId) {
@@ -172,20 +195,12 @@ Item {
                 height: staff.height
 
                 noteDetails: Activity.getNoteDetails(noteName, noteType)
-                rotation: {
-                    if(noteDetails.positonOnStaff < 0 && noteType === "Whole")
-                        return 0
-                    else if(noteDetails.positonOnStaff > 6 && noteType === "Whole")
-                        return 180
-                    else
-                        return noteDetails.rotation
-                }
 
                 MouseArea {
                     id: noteMouseArea
                     anchors.fill: parent
                     hoverEnabled: true
-                    onClicked: multipleStaff.noteClicked(noteName, noteType)
+                    onClicked: multipleStaff.noteClicked(noteName, noteType, index, staff.staffNb)
                 }
 
                 function highlightNote() {
@@ -193,6 +208,8 @@ Item {
                 }
 
                 y: {
+                    if(noteDetails === undefined)
+                        return 0
                     var shift =  -verticalDistanceBetweenLines / 2
                     var relativePosition = noteDetails.positonOnStaff
                     var imageY = (nbLines - 3) * verticalDistanceBetweenLines

@@ -56,6 +56,15 @@ Item {
 
     property var noteDetails
 
+    rotation: {
+        if((noteDetails === undefined) || ((noteDetails.positonOnStaff < 0) && (noteType === "Whole")))
+            return 0
+        else if(noteDetails.positonOnStaff > 6 && noteType === "Whole")
+            return 180
+        else
+            return noteDetails.rotation
+    }
+
     Image {
         id: blackTypeImage
         source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
@@ -63,10 +72,10 @@ Item {
         anchors.right: parent.rotation === 180 ? undefined : noteImage.left
         anchors.left: parent.rotation === 180 ? noteImage.right : undefined
         rotation: parent.rotation === 180 ? 180 : 0
-        anchors.rightMargin: -width / 2
-        anchors.leftMargin: -width
+        anchors.rightMargin: -12
+        anchors.leftMargin: -18
         anchors.bottom: noteImage.bottom
-        anchors.bottomMargin: height / 2
+        anchors.bottomMargin: parent.height / 6
         fillMode: Image.PreserveAspectFit
     }
 
@@ -92,8 +101,9 @@ Item {
 
     Image {
         id: noteImage
-        source: noteType != "Rest" ? "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + noteType + ".svg"
-                                   : "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + ".svg"
+        source: (noteDetails === undefined) ? ""
+                : noteType != "Rest" ? "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + noteType + ".svg"
+                : "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + ".svg"
         sourceSize.width: 200
         width: note.width
         height: note.height
@@ -105,15 +115,17 @@ Item {
         source: noteImage
 
         readonly property int noteColorNumber: {
-            if(noteType === "Rest")
-                return 0
-            else if(blackType === "")
+            if(noteDetails === undefined || noteType === "" || noteType === "Rest" || noteName === "")
+                return -6
+            else if((blackType === "") && (whiteNoteName[noteName[0]] != undefined))
                 return whiteNoteName[noteName[0]]
-            else
+            else if((noteName.length > 2) && (blackNoteName[noteName.substring(0,2)] != undefined))
                 return blackNoteName[noteName.substring(0,2)]
+            else
+                return -6
         }
 
-        color: noteType != "Rest" ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
+        color: (noteColorNumber > -6) ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
         visible: noteIsColored
     }
 
