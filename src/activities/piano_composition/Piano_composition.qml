@@ -176,10 +176,19 @@ ActivityBase {
             onNoteClicked: {
                 if(background.staffMode === "add")
                     playNoteAudio(noteName, noteType)
-                else if(background.staffMode === "replace")
-                    noteToReplace = [noteIndex, staffIndex]
+                else if(background.staffMode === "replace") {
+                    noteToReplace.noteNumber = noteIndex
+                    noteToReplace.staffNumber = staffIndex
+                }
                 else
                     multipleStaff.eraseNote(noteIndex, staffIndex)
+            }
+            onPushToUndoStack: {
+                // If we have undid the change, we won't push the undid change in the stack as the undoStack will enter in a loop.
+                if(Activity.undidChange)
+                    Activity.undidChange = false
+                else
+                    Activity.pushToStack(noteIndex, staffIndex, oldNoteName, oldNoteType)
             }
         }
 
@@ -300,7 +309,13 @@ ActivityBase {
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.staffModes[currentIndex])
                 anchors.top: parent.top
                 anchors.topMargin: 4
-                onClicked: background.staffMode = optionsRow.staffModes[currentIndex]
+                onClicked: {
+                    background.staffMode = optionsRow.staffModes[currentIndex]
+                    if(background.staffMode != "replace") {
+                        multipleStaff.noteToReplace.noteNumber = -1
+                        multipleStaff.noteToReplace.staffNumber = -1
+                    }
+                }
                 visible: true
             }
 
@@ -311,6 +326,16 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: multipleStaff.eraseAllNotes()
+                }
+            }
+
+            Image {
+                id: undoButton
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/undo.svg"
+                sourceSize.width: 50
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: Activity.undoChange()
                 }
             }
 

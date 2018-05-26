@@ -144,11 +144,16 @@ Item {
         else
             duration = calculateTimerDuration(noteType)
 
-        if(!isReplacing)
+        if(!isReplacing) {
+            multipleStaff.pushToUndoStack(notes.count, staffNb, "none", "none", noteName, noteType)
             notes.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
                           "highlightWhenPlayed": highlightWhenPlayed})
-        else
-            notes.set(multipleStaff.noteToReplace[0], { "noteName_": noteName, "noteType_": noteType, "mDuration": duration })
+        }
+        else {
+            var oldNoteDetails = notes.get(multipleStaff.noteToReplace.noteNumber)
+            multipleStaff.pushToUndoStack(multipleStaff.noteToReplace.noteNumber, staffNb, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
+            notes.set(multipleStaff.noteToReplace.noteNumber, { "noteName_": noteName, "noteType_": noteType, "mDuration": duration })
+        }
     }
 
     function replaceNote(newNoteName, newType) {
@@ -167,7 +172,9 @@ Item {
         else
             restName = "eighth"
 
-         notes.set(noteIndex, { "noteName_": restName, "noteType_": "Rest" })
+        var oldNoteDetails = notes.get(noteIndex)
+        multipleStaff.pushToUndoStack(noteIndex, staffNb, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
+        notes.set(noteIndex, { "noteName_": restName, "noteType_": "Rest" })
     }
 
     function playNote(noteId) {
@@ -211,7 +218,7 @@ Item {
                     if(noteDetails === undefined)
                         return 0
                     var shift =  -verticalDistanceBetweenLines / 2
-                    var relativePosition = noteDetails.positonOnStaff
+                    var relativePosition = noteDetails.positionOnStaff
                     var imageY = (nbLines - 3) * verticalDistanceBetweenLines
 
                     if(rotation === 180) {

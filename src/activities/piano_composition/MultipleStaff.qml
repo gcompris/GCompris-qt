@@ -37,13 +37,14 @@ Item {
 
     property int firstNoteX: width / 5
     // Stores the note number and the staff number in which the replacable note is.
-    property var noteToReplace: [-1, -1]
+    property var noteToReplace: {"noteNumber": -1, "staffNumber": -1}
     property bool noteIsColored
     property bool isMetronomeDisplayed: false
 
     property alias flickableStaves: flickableStaves
 
     signal noteClicked(string noteName, string noteType, int noteIndex, int staffIndex)
+    signal pushToUndoStack(int noteIndex, int staffIndex, string oldNoteName, string oldNoteType)
 
     Flickable {
         id: flickableStaves
@@ -93,9 +94,24 @@ Item {
     }
 
     function replaceNote(noteName, noteType) {
-        if(noteToReplace [0] != -1 && noteToReplace[1] != -1) {
-            staves.itemAt(noteToReplace[1]).replaceNote(noteName, noteType)
+        if(noteToReplace.noteNumber != -1 && noteToReplace.staffNumber != -1) {
+            staves.itemAt(noteToReplace.staffNumber).replaceNote(noteName, noteType)
         }
+    }
+
+    function undoChange(undoNoteDetails) {
+        if(undoNoteDetails.oldNoteName_ === "none") {
+            staves.itemAt(undoNoteDetails.staffIndex_).notes.remove(undoNoteDetails.noteIndex_)
+            if((staves.itemAt(undoNoteDetails.staffIndex_).notes.count <= 0) && (currentStaff != 0))
+                currentStaff--
+        }
+        else {
+            noteToReplace.noteNumber = undoNoteDetails.noteIndex_
+            noteToReplace.staffNumber = undoNoteDetails.staffIndex_
+            replaceNote(undoNoteDetails.oldNoteName_, undoNoteDetails.oldNoteType_)
+        }
+        noteToReplace.noteNumber = -1
+        noteToReplace.staffNumber = -1
     }
 
     function playNoteAudio(noteName, noteType) {

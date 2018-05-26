@@ -55,11 +55,12 @@ Item {
     property alias highlightTimer: highlightTimer
 
     property var noteDetails
+    readonly property int notesPositionBelowStaffWithBars: 6
 
     rotation: {
-        if((noteDetails === undefined) || ((noteDetails.positonOnStaff < 0) && (noteType === "Whole")))
+        if((noteDetails === undefined) || ((noteDetails.positionOnStaff < 0) && (noteType === "Whole")))
             return 0
-        else if(noteDetails.positonOnStaff > 6 && noteType === "Whole")
+        else if(noteDetails.positionOnStaff > notesPositionBelowStaffWithBars && noteType === "Whole")
             return 180
         else
             return noteDetails.rotation
@@ -114,18 +115,19 @@ Item {
         anchors.fill: noteImage
         source: noteImage
 
+        readonly property int invalidConditionNumber: -6
         readonly property int noteColorNumber: {
             if(noteDetails === undefined || noteType === "" || noteType === "Rest" || noteName === "")
-                return -6
+                return invalidConditionNumber
             else if((blackType === "") && (whiteNoteName[noteName[0]] != undefined))
                 return whiteNoteName[noteName[0]]
             else if((noteName.length > 2) && (blackNoteName[noteName.substring(0,2)] != undefined))
                 return blackNoteName[noteName.substring(0,2)]
             else
-                return -6
+                return invalidConditionNumber
         }
 
-        color: (noteColorNumber > -6) ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
+        color: (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
         visible: noteIsColored
     }
 

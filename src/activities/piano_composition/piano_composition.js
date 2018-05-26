@@ -31,6 +31,8 @@ var items
 var notesDetails = NoteNotations.get()
 var userDir = "file://" + GCompris.ApplicationInfo.getSharedWritablePath() + "/" + "piano_composition"
 var userFile = userDir + "/melodies.json"
+var undoStack = []
+var undidChange = false
 var instructions = [{
         "text": qsTr("This is the treble cleff staff for high pitched notes")
     },
@@ -91,8 +93,28 @@ function initLevel() {
     items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
     items.background.staffMode = "add"
-    items.multipleStaff.noteToReplace = [-1, -1]
+    items.multipleStaff.noteToReplace.noteNumber = -1
+    items.multipleStaff.noteToReplace.staffNumber = -1
     items.staffModesOptions.currentIndex = 0
+    undoStack = []
+}
+
+function pushToStack(noteIndex, staffIndex, oldNoteName, oldNoteType, newNoteName, newNoteType) {
+    undoStack.push({"noteIndex_": noteIndex, "staffIndex_": staffIndex,
+                    "oldNoteName_": oldNoteName, "oldNoteType_": oldNoteType})
+    // Maintain most recent 5 changes. Remove older ones (stack behaves as queue here).
+    if(undoStack.length > 5)
+        undoStack.shift()
+}
+
+function undoChange() {
+    if(undoStack.length > 0) {
+        var undoNoteDetails = undoStack[undoStack.length - 1]
+        undoStack.pop()
+        if(undoNoteDetails.noteName_ != "none")
+            undidChange = true
+        items.multipleStaff.undoChange(undoNoteDetails)
+    }
 }
 
 function getNoteDetails(noteName, noteType) {
