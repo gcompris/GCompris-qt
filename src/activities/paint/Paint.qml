@@ -79,8 +79,6 @@ ActivityBase {
 
                 if (index >= 10)
                     stop()
-
-                brushSelectCanvas.requestPaint()
             }
         }
 
@@ -139,8 +137,6 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias canvas: canvas
-            //property alias colorTools: colorTools
-            property alias rightPanel: rightPanel
             property alias timer: timer
             property alias area: area
             property alias inputText: inputTextFrame.inputText
@@ -153,7 +149,6 @@ ActivityBase {
             property alias shape: shape
             property alias colorPalette: colorPalette
             property alias toolsSize: toolsSize
-            property alias brushSelectCanvas: brushSelectCanvas
             property int activeColorIndex: 1
             property var colors: [
                 /*blue*/    "#33B5E5", "#1a53ff", "#0000ff", "#0000b3",
@@ -912,158 +907,6 @@ ActivityBase {
                     enabled: items.toolSelected == "circle"
                     opacity: items.toolSelected == "circle" ? 1 : 0
                     property real rotationn: 0
-                }
-            }
-            // }
-
-            // tools from the right panel
-            Rectangle {
-                id: rightPanelFrame
-                width: rightPanel.width + rightPanel.anchors.margins * 2
-                anchors {
-                    right: parent.right
-                    //top: colorTools.bottom
-                    bottom: parent.bottom
-                    margins: 0
-                }
-                z: 3
-                color: background.color
-
-                Column {
-                    id: rightPanel
-                    anchors {
-                        right: parent.right
-                        top: parent.top
-                        bottom: parent.bottom
-                        margins: 8
-                    }
-
-                    property real dime: (background.height) / 14 - 10 //(background.height - colorTools.height) / 14 - 10
-
-                    spacing: 15
-
-                    Canvas {
-                        id: brushSelectCanvas
-                        width: rightPanel.dime
-                        height: rightPanel.dime
-                        function c(x) {
-                            return width * x / 510
-                        }
-
-                        onPaint: {
-                            var brushContext = items.brushSelectCanvas.getContext("2d")
-                            brushContext.clearRect(0, 0, brushSelectCanvas.width, brushSelectCanvas.height)
-
-                            brushContext.save()
-
-                            brushContext.strokeStyle = 'transparent'
-
-                            if (items.toolSelected == "blur") {
-                                brushContext.shadowBlur = 10
-                                brushContext.shadowColor = items.paintColor
-                                brushContext.strokeStyle = items.paintColor
-                                brushContext.lineWidth = 8
-                            } else {
-                                brushContext.shadowColor = 'rgba(0,0,0,0)'
-                                brushContext.shadowBlur = 0
-                                brushContext.shadowOffsetX = 0
-                                brushContext.shadowOffsetY = 0
-                            }
-
-                            // create a triangle as clip region
-                            brushContext.beginPath()
-
-                            brushContext.moveTo( c(17), c(494))
-                            brushContext.lineTo( c(53), c(320))
-                            if (items.toolSelected != "pencil") {
-                                brushContext.lineTo(c(336),  c(40))
-                                brushContext.lineTo(c(390),  c(11))
-                                brushContext.lineTo(c(457),  c(41))
-                                brushContext.lineTo(c(497), c(107))
-                                brushContext.lineTo(c(475), c(155))
-                            }
-                            brushContext.lineTo(c(160), c(405))
-                            brushContext.lineTo( c(17), c(494))
-
-
-                            brushContext.closePath()
-                            brushContext.stroke()
-
-                            brushContext.clip()  // create clip from triangle path
-
-                            if (items.toolSelected == "pattern") {
-                                if (items.patternType == "dot")
-                                    Activity.getPattern()
-                                if (items.patternType == "horizLine")
-                                    Activity.getPattern2()
-                                if (items.patternType == "vertLine")
-                                    Activity.getPattern3()
-
-                                brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), 'repeat')
-                            } else if (items.toolSelected == "pencil") {
-                                brushContext.fillStyle = items.paintColor
-                            } else if (items.toolSelected == "spray") {
-                                Activity.getSprayPattern()
-                                brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), 'repeat')
-                            } else if (items.toolSelected == "brush3") {
-                                brushContext.fillStyle = items.paintColor
-                            } else if (items.toolSelected == "brush4") {
-                                Activity.getCirclePattern()
-                                brushContext.fillStyle = brushContext.createPattern(items.shape.toDataURL(), "repeat")
-                            } else if (items.toolSelected == "brush5") {
-                                brushContext.strokeStyle = items.paintColor
-                                brushContext.lineWidth = 2
-                                brushContext.beginPath()
-                                brushContext.moveTo(0,0)
-                                brushContext.lineTo(brushSelectCanvas.width,brushSelectCanvas.height)
-                                brushContext.lineTo(brushSelectCanvas.width/2,0)
-                                brushContext.lineTo(0, brushSelectCanvas.height)
-                                brushContext.lineTo(brushSelectCanvas.width, brushSelectCanvas.height * 0.1)
-                                brushContext.lineTo(0, brushSelectCanvas.height * 0.5)
-                                brushContext.lineTo(brushSelectCanvas.width,brushSelectCanvas.height * 0.5)
-                                brushContext.lineTo(brushSelectCanvas.width * 0.5, 0)
-                                brushContext.lineTo(brushSelectCanvas.width * 0.5, brushSelectCanvas.height)
-                                brushContext.closePath()
-                                brushContext.stroke()
-                            } else if (items.toolSelected == "blur") {
-                                brushContext.fillStyle = items.paintColor
-                            } else {
-                                // set the color of the tool to white
-                                brushContext.fillStyle = "#ffffff"
-                            }
-
-                            if (items.toolSelected != "brush5") {
-                                brushContext.fillRect(0, 0, 100,100)
-                            }
-
-                            brushContext.restore()
-                            brushContext.drawImage(Activity.url + "pen.svg", 0, 0,rightPanel.dime,rightPanel.dime)
-                        }
-
-                        MouseArea {
-                            anchors.fill: parent
-
-                            onPressAndHold: {
-                                showAnimation.start()
-
-                                selectSize.opacity = 0
-                                selectSize.z = -1
-                            }
-
-                            onClicked: {
-                                items.toolSelected = items.lastToolSelected
-                                background.hideExpandedTools()
-                                background.reloadSelectedPen()
-                            }
-                        }
-
-                        Image {
-                            x: 0; y: 0
-                            source: Activity.url + "pen.svg"
-                            sourceSize.width: rightPanel.dime; sourceSize.height: rightPanel.dime
-                            width: rightPanel.dime; height: rightPanel.dime
-                        }
-                    }
                 }
             }
         }

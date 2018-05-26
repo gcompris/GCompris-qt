@@ -53,13 +53,13 @@ Rectangle {
             // a list of elements. A list of ListElements can be used as a model
             // just like any other model type.
             subItems: [
-                ListElement { itemName: "Save" },
-                ListElement { itemName: "Load" },
-                ListElement { itemName: "Undo" },
-                ListElement { itemName: "Redo" },
-                ListElement { itemName: "Erase all" },
-                ListElement { itemName: "Background color" },
-                ListElement { itemName: "Export to PNG" }
+                ListElement { itemName: qsTr("Save") },
+                ListElement { itemName: qsTr("Load") },
+                ListElement { itemName: qsTr("Undo") },
+                ListElement { itemName: qsTr("Redo") },
+                ListElement { itemName: qsTr("Erase all") },
+                ListElement { itemName: qsTr("Background color") },
+                ListElement { itemName: qsTr("Export to PNG") }
             ]
         }
 
@@ -67,13 +67,13 @@ Rectangle {
             categoryName: "Tools"
             collapsed: true
             subItems: [
-                ListElement { itemName: "Pencil" },
-                ListElement { itemName: "Geometric" },
-                ListElement { itemName: "Text" },
-                ListElement { itemName: "Brush" },
-                ListElement { itemName: "Line" },
-                ListElement { itemName: "Eraser" },
-                ListElement { itemName: "Bucket fill" }
+                ListElement { itemName: qsTr("Pencil") },
+                ListElement { itemName: qsTr("Geometric") },
+                ListElement { itemName: qsTr("Text") },
+                ListElement { itemName: qsTr("Brush") },
+                ListElement { itemName: qsTr("Line") },
+                ListElement { itemName: qsTr("Eraser") },
+                ListElement { itemName: qsTr("Bucket fill") }
             ]
         }
 
@@ -81,13 +81,12 @@ Rectangle {
             categoryName: "Color"
             collapsed: true
             subItems: [
-                ListElement { itemName: "#F08080" },
-                ListElement { itemName: "#00FF00" },
-                ListElement { itemName: "#0000FF" },
-                ListElement { itemName: "#FF00FF" },
-                ListElement { itemName: "#800080" },
-                ListElement { itemName: "#C0C0C0" },
-                ListElement { itemName: "More Colors" }
+                ListElement { itemName: qsTr("Red") },
+                ListElement { itemName: qsTr("Green") },
+                ListElement { itemName: qsTr("Yellow") },
+                ListElement { itemName: qsTr("Orange") },
+                ListElement { itemName: qsTr("Blue") },
+                ListElement { itemName: qsTr("More Colors") }
             ]
         }
 
@@ -95,9 +94,9 @@ Rectangle {
             categoryName: "Tool Options"
             collapsed: true
             subItems: [
-                ListElement { itemName: "Modes" },
-                ListElement { itemName: "Size"},
-                ListElement { itemName: "More..." }
+                ListElement { itemName: qsTr("Modes") },
+                ListElement { itemName: qsTr("Size") },
+                ListElement { itemName: qsTr("More to be added") }
             ]
         }
     }
@@ -141,12 +140,11 @@ Rectangle {
                 // the Loader element retains the same height it had when sourceComponent was set. Setting visible
                 // to false makes the parent Column treat it as if it's height was 0.
                 visible: !collapsed
-                property variant subItemModel : subItems
+                property var subItemModel: subItems
                 sourceComponent: collapsed ? null : subItemColumnDelegate
                 onStatusChanged: if (status == Loader.Ready) item.model = subItemModel
             }
         }
-
     }
 
     Component {
