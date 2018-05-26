@@ -13,8 +13,12 @@ FilePath: ../src/activities/testactivity/Testactivity.qml
 	 ERROR       QtMultimedia version must be 5.0
 	 ERROR       GCompris version must be 1.0
 	 ERROR       Box2D version must be 2.0
-	 WARNING     line:45 color: "#ABCDEF" qsTr may not be used
-	 WARNING     line:68 text: "testactivity activity" qsTr may not be used
+	 WARNING     line:42 color: "#ABCDEF" qsTr may not be used
+	 WARNING     line:51 replace variant with var
+	 WARNING     line:52 aString: "Hello world!" qsTr may not be used
+	 WARNING     line:52 replace variant with var
+	 WARNING     line:53 replace variant with var
+	 WARNING     line:69 text: "testactivity activity" qsTr may not be used
 
 FilePath: ../src/activities/testactivity/ActivityInfo.qml
 	 WARNING     line:21 name: "testactivity/Testactivity.qml" qsTr may not be used

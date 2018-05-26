@@ -21,6 +21,13 @@ module ActivityCheck
         puts "\t WARNING     #{wrn}"
     end
 
+    # checks 'variant' used instead of 'var'
+    def self.check_var (lineStr, lineNumber)
+        if lineStr.include?("property variant")
+            print_warning "line:#{lineNumber} replace variant with var"
+        end
+    end
+
     # checks import version
     def self.check_import_version(lineStr)
         # add modules and versions in hash
@@ -119,6 +126,8 @@ module ActivityCheck
                 check_credits_update line
 
                 qsTr_use line, lineNumber
+
+                check_var line, lineNumber
 
                 check_import_version line
 
