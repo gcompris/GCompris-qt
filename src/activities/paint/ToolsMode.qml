@@ -30,6 +30,7 @@ Item {
     property alias modesModel: modes.model
     property alias pencilModes: pencilModes
     property alias geometricModes: geometricModes
+
     ListModel {
         id: pencilModes
         ListElement { name: "pencil";
@@ -106,11 +107,11 @@ Item {
             y: parent.y + buttonCancel.height + 10
             anchors.centerIn: parent
             model: pencilModes
-            delegate: pencilComponent
+            delegate: modesComponent
         }
 
         Component {
-            id: pencilComponent
+            id: modesComponent
             Rectangle {
                 width: modes.cellWidth
                 height: modes.cellHeight
