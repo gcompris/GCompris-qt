@@ -32,7 +32,6 @@ Rectangle {
     color: "white"
 
     signal addUsers(ListModel model)
-
     ListModel {
         id: userToUpdateModel
     }
@@ -42,6 +41,7 @@ Rectangle {
         width: parent.width - 50
         height: parent.height - (bar.height * 2)
 
+        property var _passwords: MessageHandler.passwords;
         property string name: "";
         property string dateOfBirth: ""
         property string password: "";
@@ -84,22 +84,24 @@ Rectangle {
         TableViewColumn {
             role: "name"
             title: qsTr("Name")
-            width: 100
+            width: users.width/4
 
         }
         TableViewColumn {
             role: "dateOfBirth"
             title: qsTr("Birth year")
-            width: 100
+            width: users.width/4
         }
         TableViewColumn {
             id: passwordColumn
             role: "password"
-            width: 100
+            width: users.width/4
+            signal randomPass();
+            property string imgSrc: '';
             title: qsTr("Password")
 
             delegate: Item {
-                id: passwordColumn
+                id: passwordColumn2
                 width: passwordColumn.width // same as rowDelegate
                 Item {
                     id: passwordField
@@ -117,13 +119,16 @@ Rectangle {
                     GCText {
                         id: passwordText
                         visible: !passwordImage.visible
-                        verticalAlignment: Text.AlignVCenter
+                        anchors.centerIn: parent
                         fontSizeMode: Text.Fit
-                        text: modelData ? modelData.password : ""
+                        text: "auto-generated"
+                        font.pointSize: regularSize
+                        color: "white"
                     }
                     Image {
                         id: passwordImage
-                        source: "qrc:/gcompris/src/activities/sudoku/sudoku.svg"
+                        anchors.centerIn: parent
+                        source: passwordColumn.imgSrc
                         sourceSize.height: 50
                     }
                 }
@@ -134,7 +139,7 @@ Rectangle {
                 resizable: true
                 title: qsTr("Save or Delete")
                 signal forceFocus()
-                width: users.width/3
+                width: users.width/4
                 delegate: Item {
                     id: itemDel
                     width: 100
@@ -287,8 +292,20 @@ Rectangle {
             text: qsTr("+")
             width: parent.width
             style: GCButtonStyle {}
+            Connections {
+                target: passwordColumn
+                onRandomPass: {
+                    console.log("generate random pass")
+                    console.log(users._passwords[0]);
+                    // use the first image for now
+                    passwordColumn.imgSrc = users._passwords[0];
+
+                    console.log(passwordColumn.imgSrc);
+                }
+            }
             onClicked: {
 //                 add empty user at first index. The first user is always going to be empty
+                passwordColumn.randomPass()
                 userToUpdateModel.insert(0, {"name": "", "dateOfBirth": "", "password": ""})
             }
         }

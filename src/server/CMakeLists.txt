@@ -35,7 +35,7 @@ include_directories(
 )
 
 set(used_qt_modules Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors Sql)
-
+# qt5_add_resources(EXTRAS resources.qrc)
 if(ANDROID)
   add_library(${GCOMPRIS_SERVER_EXECUTABLE_NAME} SHARED ${server_SRCS} ${server_MOC})
   set(used_qt_modules ${used_qt_modules} AndroidExtras)
@@ -51,7 +51,7 @@ qt5_use_modules(${GCOMPRIS_SERVER_EXECUTABLE_NAME} ${used_qt_modules})
 
 target_link_libraries(${GCOMPRIS_SERVER_EXECUTABLE_NAME} gcompris_core)
 
-GCOMPRIS_ADD_RCC(server main.qml views/*.qml views/*/*/*.qml)
+GCOMPRIS_ADD_RCC(server main.qml views/*.qml views/*/*/*.qml resources/password_images/*.png)
 
 # Installation
 # ============

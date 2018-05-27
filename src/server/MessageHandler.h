@@ -51,6 +51,8 @@ class MessageHandler: public QObject
     Q_PROPERTY(QList<QObject*> clients MEMBER m_clients NOTIFY newClients)
     Q_PROPERTY(QList<QObject*> groups MEMBER m_groups NOTIFY newGroups)
     Q_PROPERTY(QList<QObject*> users MEMBER m_users NOTIFY newUsers)
+    Q_PROPERTY(QList<QString> passwords READ getPasswords);
+
 
 private:
     MessageHandler();  // prohibit external creation, we are a singleton!
@@ -97,6 +99,9 @@ public:
     /*QList<QObject*> returnClients() {
         return m_clients;
     }*/
+    const QList<QString>& getPasswords() {
+        return m_passwords;
+    }
 
 
 
@@ -123,6 +128,8 @@ private:
     QList<QObject*> m_groups;
     // UserData*
     QList<QObject*> m_users;
+
+    QList<QString> m_passwords;
 };
 
 #endif

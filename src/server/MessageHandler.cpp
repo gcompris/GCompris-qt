@@ -24,6 +24,7 @@
 #include "Database.h"
 #include "MessageHandler.h"
 #include <QMultiMap>
+#include <QDir>
 #include <QMapIterator>
 
 MessageHandler* MessageHandler::_instance = 0;
@@ -63,6 +64,15 @@ MessageHandler::MessageHandler()
                 grp->addUser(usr);
             }
         }
+    }
+
+
+    QDir dir(":/gcompris/src/server");
+    qDebug() << "dir exists : " << dir.exists();
+    for(const QString& img: dir.entryList()) {
+
+        qDebug() << "img path : " << dir.absoluteFilePath(img);
+        m_passwords << dir.absoluteFilePath(img);
     }
 }
 
