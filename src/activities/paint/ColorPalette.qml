@@ -22,95 +22,117 @@ import "../../core"
 import "paint.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
-Rectangle {
+Item {
     id: colorPalette
-    width: parent.width
-    height: parent.height
-    radius: 20
-    border.width: 5
-    border.color: "black"
+    width: background.width * 0.9
+    height: background.height * 0.9
+    anchors.centerIn: parent
+    z: 1501
 
-    // The close panel button
-    GCButtonCancel {
-        id: cancelButton
-        onClose: parent.visible = false
+    property alias colorModel: colorModel
+
+    ListModel {
+        id: colorModel
+        ListElement {colorCode: "#ff0000"} ListElement {colorCode: "#00ff00"} ListElement {colorCode: "#0000ff"} ListElement {colorCode: "#8b008b"}
+        ListElement {colorCode: "#ffff00"} ListElement {colorCode: "#00ffff"} ListElement {colorCode: "#000000"} ListElement {colorCode: "#ff00ff"}
+        ListElement {colorCode: "#ffffff"} ListElement {colorCode: "#800000"} ListElement {colorCode: "#000080"} ListElement {colorCode: "#ff4500"}
+        ListElement {colorCode: "#ff00ff"} ListElement {colorCode: "#006400"} ListElement {colorCode: "#A0A0A0"} ListElement {colorCode: "#d2691e"}
     }
 
-    GridView {
-        id: colorRepeater
-        model: items.colors
-        //anchors.centerIn: parent
-        anchors.top: cancelButton.bottom
-        anchors.horizontalCenter: colorPalette.horizontalCenter
-        width: parent.width * 0.95
-        visible: colorPalette.visible
-        height: background.height - bar.height - 20
-        cellWidth: (parent.width * 0.95) / 5
-        cellHeight: (parent.height * 0.90) / 3.6
-        delegate: Rectangle {
-            id: root
-            radius: 5
-            width: colorRepeater.cellWidth
-            height: colorRepeater.cellHeight
-            color: modelData
-            //property real dim: (background.width - 16) / Activity.colors.length
-            property bool active: items.paintColor === color
-            border.color: active? "#595959" : "#f2f2f2"
-            border.width: 3
-            MouseArea {
-                anchors.fill: parent
+    Rectangle {
+        anchors.fill: parent
+        opacity: 0.8
+        visible: items.colorPalette.visible
+        radius: 10
+        color: "grey"
+    }
 
-                // choose other color:
-                onDoubleClicked: {
-                    items.activeColorIndex = index
-                    colorDialog.visible = true
-                }
+    Rectangle {
+        id: container
+        width: parent.width
+        height: parent.height
+        anchors.centerIn: parent
+        opacity: 0.9
+        radius: 10
+        border.width: 2
+        border.color: "white"
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#fff" }
+            GradientStop { position: 0.9; color: "#fff" }
+            GradientStop { position: 1.0; color: "#ddd" }
+        }
 
-                // set this color as current paint color
-                onClicked: {
-                    items.activeColorIndex = index
-                    root.active = (items.activeColorIndex === index) ? true : false
-                    items.paintColor = root.color
+        // The close panel button
+        GCButtonCancel {
+            id: cancelButton
+            onClose: colorPalette.visible = false
+        }
 
-                    //                    for (var i = 0; i < colorRepeater.; i++)
-                    //                        if (i != index)
-                    //                            colorRepeater.itemAt(i).active = false
+        GridView {
+            id: colorRepeater
+            model: colorModel
+            anchors.top: cancelButton.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: colorPalette.width * 0.9
+            height: colorPalette.height * 0.75
+            cellWidth: width / 4.2
+            cellHeight: height / 4.2
+            interactive: false
+            delegate: Rectangle {
+                id: root
+                radius: 8
+                width: colorRepeater.cellWidth * 0.80
+                height: colorRepeater.cellHeight * 0.90
+                color: modelData
 
-                    background.hideExpandedTools()
-
-                    // choose other color
-                    if (color == "#c2c2d6") {
-                        colorDialog.visible = true
-                    } else {
-                        items.paintColor = color
-                    }
-
-                    background.reloadSelectedPen()
-                    colorPalette.visible = false
-                }
-            }
-            Rectangle {
-                width: parent.width * 0.20
-                height: parent.height * 0.20
-                anchors.top: parent.top
-                anchors.right: parent.right
-                //color: "transparent"
-                Image {
-                    source: Activity.url + "color_picker.png"
-                    anchors.fill: parent
-                    fillMode: Image.PreserveAspectFit
-                }
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: {
+                    hoverEnabled: true
+
+                    onEntered: root.scale = 1.1
+                    onExited: root.scale = 1
+
+                    // choose other color:
+                    onDoubleClicked: {
                         items.activeColorIndex = index
                         colorDialog.visible = true
-                        console.log("Clicked on color picker!")
+                    }
+
+                    // set this color as current paint color
+                    onClicked: {
+                        items.activeColorIndex = index
+                        items.paintColor = root.color
+                        background.hideExpandedTools()
+                        items.paintColor = color
+                        background.reloadSelectedPen()
+                        colorPalette.visible = false
+                    }
+                }
+
+                Rectangle {
+                    width: parent.width * 0.30
+                    height: parent.height * 0.30
+                    anchors.top: parent.top
+                    anchors.right: parent.right
+                    color: "transparent"
+
+                    Image {
+                        source: Activity.url + "color_wheel.svg"
+                        anchors.fill: parent
+                        fillMode: Image.PreserveAspectFit
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            items.activeColorIndex = index
+                            colorDialog.visible = true
+                            console.log("Clicked on color picker!")
+                        }
                     }
                 }
             }
         }
     }
-
 }
 
