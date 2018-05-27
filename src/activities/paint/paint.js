@@ -58,7 +58,7 @@ function start(items_) {
     items = items_
     currentLevel = 0
     items.toolSelected = "pencil"
-    items.paintColor = items.colors[0]
+    items.paintColor = "#000000"
     initLevel()
 }
 
@@ -367,6 +367,11 @@ function selectTool(toolName) {
         items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.pencilModes
     }
+    else if(toolName === "Red") items.paintColor = "red"
+    else if(toolName === "Green") items.paintColor = "green"
+    else if(toolName === "Yellow") items.paintColor = "yellow"
+    else if (toolName === "Orange") items.paintColor = "orange"
+    else if(toolName === "Blue") items.paintColor = "blue"
 }
 
 function selectMode(modeName) {
