@@ -55,7 +55,7 @@ var instructions = [{
         "text": qsTr("Now you can load music.")
     },
     {
-        "text": qsTr("Now you can compose your own music.")
+        "text": qsTr("Now you can compose your own music and save them.")
     }
 ]
 

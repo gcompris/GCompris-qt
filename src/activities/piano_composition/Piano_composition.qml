@@ -346,7 +346,7 @@ ActivityBase {
                 id: openButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/open.svg"
                 sourceSize.width: 50
-                visible: bar.level == 6 || bar.level == 7
+                visible: bar.level > 6
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -366,7 +366,7 @@ ActivityBase {
                 id: saveButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
                 sourceSize.width: 50
-                visible: bar.level == 6 || bar.level == 7
+                visible: bar.level == 8
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
