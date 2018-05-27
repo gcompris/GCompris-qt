@@ -130,6 +130,8 @@ ActivityBase {
                 visible = false
                 piano.enabled = true
                 bar.visible = true
+                focus = false
+                activity.focus = true
             }
         }
 
@@ -149,8 +151,8 @@ ActivityBase {
                 color: "black"
                 z: 3
                 anchors.fill: parent
-                anchors.rightMargin: parent.width * 0.1
-                anchors.leftMargin: parent.width * 0.1
+                anchors.rightMargin: parent.width * 0.02
+                anchors.leftMargin: parent.width * 0.02
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
@@ -214,8 +216,8 @@ ActivityBase {
             anchors.leftMargin: parent.width * 0.04
             anchors.top: horizontalLayout ? multipleStaff.top : multipleStaff.bottom
             anchors.topMargin: horizontalLayout ? parent.height * 0.08 : parent.height * 0.025
-            blackLabelsVisible: [4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
-            useSharpNotation: bar.level == 5 ? false : true
+            blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
+            useSharpNotation: bar.level != 4
             onNoteClicked: {
                 if(background.staffMode === "add")
                     multipleStaff.addNote(note, currentType, false, true)
@@ -276,6 +278,7 @@ ActivityBase {
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex])
                 nbOptions: optionsRow.noteLengthName.length
                 onClicked: currentType = optionsRow.noteLengthName[currentIndex]
+                visible: bar.level > 4
             }
 
             Image {
@@ -354,6 +357,7 @@ ActivityBase {
                         piano.enabled = false
                         bar.visible = false
                         melodyList.visible = true
+                        melodyList.forceActiveFocus()
                     }
                 }
             }
@@ -392,6 +396,7 @@ ActivityBase {
                 onClicked: restType = optionsRow.noteLengthName[currentIndex]
                 rotation: optionsRow.noteLengthName[currentIndex] === "Half" ? 180 : 0
                 sourceSize.width: 70
+                visible: bar.level > 5
             }
 
             Image {

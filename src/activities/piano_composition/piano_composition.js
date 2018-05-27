@@ -26,7 +26,7 @@
 .import "qrc:/gcompris/src/activities/piano_composition/NoteNotations.js" as NoteNotations
 
 var currentLevel = 0
-var numberOfLevel = 7
+var numberOfLevel = 8
 var items
 var notesDetails = NoteNotations.get()
 var userDir = "file://" + GCompris.ApplicationInfo.getSharedWritablePath() + "/" + "piano_composition"
@@ -34,26 +34,28 @@ var userFile = userDir + "/melodies.json"
 var undoStack = []
 var undidChange = false
 var instructions = [{
-        "text": qsTr("This is the treble cleff staff for high pitched notes")
+        "text": qsTr("This is the treble cleff staff for high pitched notes.")
     },
     {
-        "text": qsTr("This is the bass cleff staff for low pitched notes")
-    },
-    {
-        "text": qsTr("Click on the note symbols to write different length notes such as quarter notes, half notes and whole notes")
+        "text": qsTr("This is the bass cleff staff for low pitched notes.")
     },
     {
         "text": qsTr("The black keys are sharp and flat keys, have a # sign.")
     },
     {
-        "text": qsTr("Each black key has two names: flat and sharp. Flat notes have b sign")
+        "text": qsTr("Each black key has two names: flat and sharp. Flat notes have b sign.")
     },
     {
-        "text": qsTr("Now you can load music")
-
+        "text": qsTr("Click on the note symbol to write different length notes such as whole notes, half notes, quarter notes and eighth notes.")
     },
     {
-        "text": qsTr("Now you can compose your own music")
+        "text": qsTr("Rests are equivalent to notes during which silence is maintained. Click on the rest symbol to select the rest length and then click on the tick button to enter it to the staff.")
+    },
+    {
+        "text": qsTr("Now you can load music.")
+    },
+    {
+        "text": qsTr("Now you can compose your own music.")
     }
 ]
 

@@ -166,7 +166,10 @@ Item {
             noteColor: colorBlackNotes[currentOctaveNb][index]
             keyName: blackNotes[currentOctaveNb][index][1]
             labelsVisible: blackLabelsVisible
-            onKeyPressed: noteClicked(blackNotes[currentOctaveNb][index][0])
+            onKeyPressed: {
+                if(blackLabelsVisible)
+                    noteClicked(blackNotes[currentOctaveNb][index][0])
+            }
         }
     }
 }

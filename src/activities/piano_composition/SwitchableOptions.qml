@@ -36,7 +36,6 @@ Image {
     sourceSize.width: 50
     anchors.top: parent.top
     anchors.topMargin: -6
-    visible: (bar.level == 1 || bar.level == 2) ? false : true
     MouseArea {
         anchors.fill: parent
         onClicked: {

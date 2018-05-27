@@ -32,6 +32,9 @@ Rectangle {
     z: 1000 
     anchors.fill: parent
     visible: false
+    focus: true
+
+    Keys.onEscapePressed: close()
 
     signal close
 
@@ -83,6 +86,7 @@ Rectangle {
                 anchors.margins: 100
 
                 Flickable {
+                    id: flickableList
                     anchors.fill: parent
                     anchors.topMargin: 10
                     anchors.leftMargin: 20
@@ -133,6 +137,19 @@ Rectangle {
                             }
                         }
                     }
+                }
+                // The scroll buttons
+                GCButtonScroll {
+                    anchors.right: parent.right
+                    anchors.rightMargin: 5 * ApplicationInfo.ratio
+                    anchors.bottom: flickableList.bottom
+                    anchors.bottomMargin: 30 * ApplicationInfo.ratio
+                    width: parent.width / 20
+                    height: width * heightRatio
+                    onUp: flickableList.flick(0, 1400)
+                    onDown: flickableList.flick(0, -1400)
+                    upVisible: (flickableList.visibleArea.yPosition <= 0) ? false : true
+                    downVisible: ((flickableList.visibleArea.yPosition + flickableList.visibleArea.heightRatio) >= 1) ? false : true
                 }
             }
             Item { width: 1; height: 10 }
