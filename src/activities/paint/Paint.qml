@@ -150,22 +150,10 @@ ActivityBase {
             property alias colorPalette: colorPalette
             property alias toolsSize: toolsSize
             property int activeColorIndex: 1
-            property var colors: [
-                /*blue*/    "#33B5E5", "#1a53ff", "#0000ff", "#0000b3",
-                /*green*/   "#bfff00", "#99CC00", "#86b300", "#608000",
-                /*orange*/  "#FFBB33",
-                /*red*/     "#ff9999", "#FF4444", "#ff0000", "#cc0000",
-                /*pink*/    "#ff00ff",
-                /*yellow*/  "#ffff00",
-                /*white*/   "#ffffff",
-                /*black*/   "#000000",
-                /*free spots*/
-                "#c2c2d6"
-            ]
             property alias toolsMode: toolsMode
             property alias saveToFilePrompt2: saveToFilePrompt2
             property alias saveToFilePrompt: saveToFilePrompt
-            property color paintColor: items.colors[items.activeColorIndex]
+            property color paintColor: "#000000"
             property var urlImage
             property bool next: false
             property bool next2: false
@@ -922,19 +910,15 @@ ActivityBase {
         ColorDialog {
             id: colorDialog
             title: qsTr("Please choose a color")
-            currentColor: items.colors[items.activeColorIndex]
+            currentColor: items.paintColor
             visible: false
 
             onAccepted: {
-                items.colors[items.activeColorIndex] = colorDialog.color
                 items.paintColor = colorDialog.color
+                items.colorPalette.colorModel.remove(items.activeColorIndex)
+                items.colorPalette.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
                 colorPalette.visible = false
-                //   if you want to save the custom colors for the next session;
-                //     update the array from js
-                // Activity.colors[items.index] = items.paintColor
-                //     then add it to the saved file containing the paintings
                 console.log("You chose: " + colorDialog.color)
-                console.log(items.colors)
             }
             onRejected: {
                 console.log("Canceled")
