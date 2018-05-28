@@ -84,13 +84,21 @@ Item {
                 width: colorRepeater.cellWidth * 0.80
                 height: colorRepeater.cellHeight * 0.90
                 color: modelData
+                border.width: 3
+                border.color: modelData
 
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
 
-                    onEntered: root.scale = 1.1
-                    onExited: root.scale = 1
+                    onEntered: {
+                        parent.border.color = "grey"
+                        root.scale = 1.1
+                    }
+                    onExited: {
+                        parent.border.color = modelData
+                        root.scale = 1
+                    }
 
                     // choose other color:
                     onDoubleClicked: {
