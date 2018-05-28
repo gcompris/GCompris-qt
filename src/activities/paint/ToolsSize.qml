@@ -23,7 +23,7 @@ import "paint.js" as Activity
 
 Item {
     id: toolsSize
-    width: background.width * 0.50
+    width: background.width > background.height ? background.width * 0.50 : background.width * 0.75
     height: background.height * 0.35
 
     anchors.centerIn: parent
@@ -58,6 +58,7 @@ Item {
         GCSlider {
             id: slider
             anchors.centerIn: parent
+            anchors.verticalCenterOffset: 30
             value: items.sizeS
             minimumValue: 2
             maximumValue: 24
@@ -79,6 +80,8 @@ Item {
 
     GCButtonCancel {
         id: buttonCancel
+        width: background.width > background.height ? 60 * ApplicationInfo.ratio : 50 * ApplicationInfo.ratio
+        height: width
         z: 1600
         onClose: {
             toolsSize.visible = false
