@@ -915,8 +915,10 @@ ActivityBase {
 
             onAccepted: {
                 items.paintColor = colorDialog.color
-                items.colorPalette.colorModel.remove(items.activeColorIndex)
-                items.colorPalette.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
+                //items.colorPalette.colorModel.remove(items.activeColorIndex)
+                //items.colorPalette.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
+                finalPanel.colorModel.remove(items.activeColorIndex)
+                finalPanel.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
                 colorPalette.visible = false
                 console.log("You chose: " + colorDialog.color)
             }
@@ -932,7 +934,11 @@ ActivityBase {
 
         FoldablePanels {
             id: foldablePanels
-            visible: true
+            visible: false
+        }
+
+        FinalPanel {
+            id: finalPanel
         }
 
         ToolsMode {
