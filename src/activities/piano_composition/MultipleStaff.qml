@@ -23,6 +23,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
+import "piano_composition.js" as Activity
 
 Item {
     id: multipleStaff
@@ -35,16 +36,20 @@ Item {
 
     property int nbMaxNotesPerStaff: 6
 
-    property int firstNoteX: width / 5
-    // Stores the note number and the staff number in which the replacable note is.
-    property var noteToReplace: {"noteNumber": -1, "staffNumber": -1}
+    // Stores the note number which is to be replaced.
+    property int noteToReplace: -1
     property bool noteIsColored
     property bool isMetronomeDisplayed: false
 
     property alias flickableStaves: flickableStaves
+    property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2
 
-    signal noteClicked(string noteName, string noteType, int noteIndex, int staffIndex)
-    signal pushToUndoStack(int noteIndex, int staffIndex, string oldNoteName, string oldNoteType)
+    signal noteClicked(string noteName, string noteType, int noteIndex)
+    signal pushToUndoStack(int noteIndex, string oldNoteName, string oldNoteType)
+
+    ListModel {
+        id: notesModel
+    }
 
     Flickable {
         id: flickableStaves
@@ -57,7 +62,7 @@ Item {
             id: staffColumn
             spacing: distanceBetweenStaff
             anchors.top: parent.top
-            anchors.topMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2
+            anchors.topMargin: flickableTopMargin
             Repeater {
                 id: staves
                 model: nbStaves
@@ -67,51 +72,138 @@ Item {
                     height: multipleStaff.height / 5
                     width: multipleStaff.width - 5
                     lastPartition: index == (nbStaves - 1)
-                    nbMaxNotesPerStaff: multipleStaff.nbMaxNotesPerStaff
-                    noteIsColored: multipleStaff.noteIsColored
                     isMetronomeDisplayed: multipleStaff.isMetronomeDisplayed
-                    firstNoteX: multipleStaff.firstNoteX
+                }
+            }
+        }
+
+        property real newNoteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 10
+        Repeater {
+            id: notesRepeater
+            model: notesModel
+            Note {
+                noteName: noteName_
+                noteType: noteType_
+                highlightWhenPlayed: highlightWhenPlayed
+                noteIsColored: multipleStaff.noteIsColored
+                width: flickableStaves.newNoteWidth
+                height: multipleStaff.height / 5
+
+                readonly property int currentStaffNb: index / nbMaxNotesPerStaff
+
+                x: staves.itemAt(0).clefImageWidth + ((index % nbMaxNotesPerStaff) * flickableStaves.newNoteWidth)
+
+                noteDetails: Activity.getNoteDetails(noteName, noteType)
+
+                MouseArea {
+                    id: noteMouseArea
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: multipleStaff.noteClicked(noteName, noteType, index)
+                }
+
+                function highlightNote() {
+                    highlightTimer.start()
+                }
+
+                y: {
+                    if(noteDetails === undefined || staves.itemAt(currentStaffNb) == undefined)
+                        return 0
+
+                    var verticalDistanceBetweenLines = staves.itemAt(0).verticalDistanceBetweenLines
+                    var shift =  -verticalDistanceBetweenLines / 2
+                    var relativePosition = noteDetails.positionOnStaff
+                    var imageY = flickableTopMargin + staves.itemAt(currentStaffNb).y + 2 * verticalDistanceBetweenLines
+
+                    if(rotation === 180) {
+                        return imageY - (4 - relativePosition) * verticalDistanceBetweenLines + shift
+                    }
+
+                    return imageY - (6 - relativePosition) * verticalDistanceBetweenLines + shift
                 }
             }
         }
     }
 
-    function addNote(noteName, noteType, highlightWhenPlayed, playAudio) {
-        if(staves.itemAt(currentStaff).notes.count > nbMaxNotesPerStaff) {
-            if(currentStaff + 1 >= nbStaves) {
-                var melody = getAllNotes()
-                nbStaves++
-                flickableStaves.flick(0, - nbStaves * multipleStaff.height)
-                currentStaff = 0
-                loadFromData(melody)
-            }
-            currentStaff++
+    function calculateTimerDuration(noteType) {
+        noteType = noteType.toLowerCase()
+        if(noteType === "whole")
+            return 2000
+        else if(noteType === "half")
+            return 1500
+        else if(noteType === "quarter")
+            return 1000
+        else
+            return 812.5
+    }
+
+    function addNote(noteName, noteType, highlightWhenPlayed, playAudio, isReplacing) {
+        var duration
+        if(noteType === "Rest")
+            duration = calculateTimerDuration(noteName)
+        else
+            duration = calculateTimerDuration(noteType)
+
+        if(!isReplacing) {
+            pushToUndoStack(notesModel.count, "none", "none", noteName, noteType)
+            notesModel.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
+                             "highlightWhenPlayed": highlightWhenPlayed})
+        }
+        else {
+            var oldNoteDetails = notesModel.get(noteToReplace)
+            pushToUndoStack(noteToReplace, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
+            notesModel.set(noteToReplace, { "noteName_": noteName, "noteType_": noteType, "mDuration": duration })
         }
 
-        staves.itemAt(currentStaff).addNote(noteName, noteType, highlightWhenPlayed, false)
+        if(notesModel.count > nbMaxNotesPerStaff * nbStaves) {
+            var melody = getAllNotes()
+            nbStaves++
+            flickableStaves.flick(0, - nbStaves * multipleStaff.height)
+            currentStaff = 0
+            loadFromData(melody)
+        }
+
         if(playAudio)
             playNoteAudio(noteName, noteType)
     }
 
     function replaceNote(noteName, noteType) {
-        if(noteToReplace.noteNumber != -1 && noteToReplace.staffNumber != -1) {
-            staves.itemAt(noteToReplace.staffNumber).replaceNote(noteName, noteType)
+        if(noteToReplace != -1) {
+            addNote(noteName, noteType, false, true, true)
         }
+        noteToReplace = -1
+    }
+
+    function eraseNote(noteIndex) {
+        var noteLength = notesModel.get(noteIndex).mDuration
+        var restName
+        if(noteLength === 2000)
+            restName = "whole"
+        else if(noteLength === 1500)
+            restName = "half"
+        else if(noteLength === 1000)
+            restName = "quarter"
+        else
+            restName = "eighth"
+
+        var oldNoteDetails = notesModel.get(noteIndex)
+        pushToUndoStack(noteIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
+        notesModel.set(noteIndex, { "noteName_": restName, "noteType_": "Rest" })
+    }
+
+    function eraseAllNotes() {
+        notesModel.clear()
+        noteToReplace = -1
     }
 
     function undoChange(undoNoteDetails) {
-        if(undoNoteDetails.oldNoteName_ === "none") {
-            staves.itemAt(undoNoteDetails.staffIndex_).notes.remove(undoNoteDetails.noteIndex_)
-            if((staves.itemAt(undoNoteDetails.staffIndex_).notes.count <= 0) && (currentStaff != 0))
-                currentStaff--
-        }
+        if(undoNoteDetails.oldNoteName_ === "none")
+            notesModel.remove(undoNoteDetails.noteIndex_)
         else {
-            noteToReplace.noteNumber = undoNoteDetails.noteIndex_
-            noteToReplace.staffNumber = undoNoteDetails.staffIndex_
+            noteToReplace = undoNoteDetails.noteIndex_
             replaceNote(undoNoteDetails.oldNoteName_, undoNoteDetails.oldNoteType_)
         }
-        noteToReplace.noteNumber = -1
-        noteToReplace.staffNumber = -1
+        noteToReplace = -1
     }
 
     function playNoteAudio(noteName, noteType) {
@@ -159,12 +251,8 @@ Item {
 
     function getAllNotes() {
         var melody = "" + multipleStaff.clef
-        for(var i = 0; i < nbStaves; i ++) {
-            var staveNotes = staves.itemAt(i).notes
-            for(var j = 0; j < staveNotes.count; j++) {
-                melody +=  " " + staveNotes.get(j).noteName_ + staveNotes.get(j).noteType_
-            }
-        }
+        for(var i = 0; i < notesModel.count; i ++)
+            melody +=  " " + notesModel.get(i).noteName_ + notesModel.get(i).noteType_
         return melody
     }
 
@@ -189,22 +277,11 @@ Item {
                 noteName += melody[i][1]
             }
 
-            addNote(noteName, noteType, false, false)
+            addNote(noteName, noteType, false, false, false)
         }
     }
 
-    function eraseNote(noteIndex, staffIndex) {
-        staves.itemAt(staffIndex).eraseNote(noteIndex)
-    }
-
-    function eraseAllNotes() {
-        for(var v = 0 ; v <= currentStaff ; ++ v)
-            staves.itemAt(v).eraseAllNotes()
-        currentStaff = 0
-    }
-
     function play() {
-        musicTimer.currentPlayedStaff = 0
         musicTimer.currentNote = 0
         musicTimer.interval = 500
         for(var v = 1 ; v < currentStaff ; ++ v)
@@ -217,31 +294,25 @@ Item {
 
     Timer {
         id: musicTimer
-        property int currentPlayedStaff: 0
         property int currentNote: 0
         onRunningChanged: {
-            if(!running && staves.itemAt(currentPlayedStaff) != undefined && staves.itemAt(currentPlayedStaff).notes.get(currentNote) !== undefined) {
-                var currentType = staves.itemAt(currentPlayedStaff).notes.get(currentNote).noteType_
-                var note = staves.itemAt(currentPlayedStaff).notes.get(currentNote).noteName_
+            if(!running && notesModel.get(currentNote) !== undefined) {
+                var currentType = notesModel.get(currentNote).noteType_
+                var note = notesModel.get(currentNote).noteName_
 
                 playNoteAudio(note, currentType)
 
-                if(currentNote == 0) {
-                    staves.itemAt(currentPlayedStaff).initMetronome();
-                }
-                musicTimer.interval = staves.itemAt(currentPlayedStaff).notes.get(currentNote).mDuration
-                staves.itemAt(currentPlayedStaff).notesRepeater.itemAt(currentNote).highlightNote()
+                musicTimer.interval = notesModel.get(currentNote).mDuration
+                notesRepeater.itemAt(currentNote).highlightNote()
                 currentNote ++
+                /*
                 if(currentNote > nbMaxNotesPerStaff) {
-                    currentNote = 0
-                    currentPlayedStaff ++
-                    if(currentPlayedStaff < nbStaves && currentNote < staves.itemAt(currentPlayedStaff).notes.count) {
+                    if(currentPlayedStaff < nbStaves && currentNote < notesModel.count) {
                         staves.itemAt(currentPlayedStaff).showMetronome = isMetronomeDisplayed
-                        if(currentPlayedStaff > 0)
-                            staves.itemAt(currentPlayedStaff - 1).showMetronome = false
                         staves.itemAt(currentPlayedStaff).playNote(currentNote)
                     }
                 }
+                **/
                 musicTimer.start()
             }
         }

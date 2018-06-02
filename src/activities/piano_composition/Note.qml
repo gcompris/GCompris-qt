@@ -91,13 +91,24 @@ Item {
 
     Rectangle {
         id: highlightRectangle
-        width: noteImage.width * 0.9
+        width: noteImage.width
         height: noteImage.height * 0.9
         color: "red"
         opacity: 0.6
         border.color: "white"
         radius: width / 6
         visible: noteMouseArea.containsMouse || highlightTimer.running
+    }
+
+    Rectangle {
+        id: replaceIndicator
+        width: noteImage.width
+        height: noteImage.height * 0.9
+        color: "blue"
+        opacity: 0.6
+        border.color: "white"
+        radius: width / 5
+        visible: noteToReplace === index
     }
 
     Image {

@@ -33,6 +33,7 @@ Item {
     property int verticalDistanceBetweenLines: height / nbLines // todo width/nbLines * smth
     
     property string clef
+    readonly property real clefImageWidth: clefImage.width
 
     width: 400
     height: 100
@@ -43,15 +44,6 @@ Item {
 
     property bool isMetronomeDisplayed: false
     property bool showMetronome: false
-
-    property alias notes: notes
-
-    property int firstNoteX: defaultFirstNoteX
-    property int defaultFirstNoteX: clefImage.width
-    property int nbMaxNotesPerStaff
-    property bool noteIsColored
-    property alias notesRepeater: notesRepeater
-    readonly property int staffNb: index
 
     Image {
         id: clefImage
@@ -91,10 +83,6 @@ Item {
         y: 0
     }
 
-    ListModel {
-        id: notes
-    }
-
     Rectangle {
         id: metronome
         width: 5
@@ -102,7 +90,6 @@ Item {
         height: (nbLines - 1) * verticalDistanceBetweenLines + 5
         visible: isMetronomeDisplayed && showMetronome
         color: "red"
-        x: firstNoteX - width/2
         y: 0
         Behavior on x {
             SmoothedAnimation {
@@ -112,6 +99,7 @@ Item {
         }
     }
 
+    //These functions can be adjusted when play_rhythm will be started.
     property var mDuration
     function initMetronome() {
         var staffDuration = 0;
@@ -125,109 +113,8 @@ Item {
         print("total distance " + metronome.x)
     }
 
-    function calculateTimerDuration(noteType) {
-        noteType = noteType.toLowerCase()
-        if(noteType === "whole")
-            return 2000
-        else if(noteType === "half")
-            return 1500
-        else if(noteType === "quarter")
-            return 1000
-        else
-            return 812.5
-    }
-
-    function addNote(noteName, noteType, highlightWhenPlayed, isReplacing) {
-        var duration
-        if(noteType === "Rest")
-            duration = calculateTimerDuration(noteName)
-        else
-            duration = calculateTimerDuration(noteType)
-
-        if(!isReplacing) {
-            multipleStaff.pushToUndoStack(notes.count, staffNb, "none", "none", noteName, noteType)
-            notes.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
-                          "highlightWhenPlayed": highlightWhenPlayed})
-        }
-        else {
-            var oldNoteDetails = notes.get(multipleStaff.noteToReplace.noteNumber)
-            multipleStaff.pushToUndoStack(multipleStaff.noteToReplace.noteNumber, staffNb, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
-            notes.set(multipleStaff.noteToReplace.noteNumber, { "noteName_": noteName, "noteType_": noteType, "mDuration": duration })
-        }
-    }
-
-    function replaceNote(newNoteName, newType) {
-        addNote(newNoteName, newType, false, true)
-    }
-
-    function eraseNote(noteIndex) {
-        var noteLength = notes.get(noteIndex).mDuration
-        var restName
-        if(noteLength === 2000)
-            restName = "whole"
-        else if(noteLength === 1500)
-            restName = "half"
-        else if(noteLength === 1000)
-            restName = "quarter"
-        else
-            restName = "eighth"
-
-        var oldNoteDetails = notes.get(noteIndex)
-        multipleStaff.pushToUndoStack(noteIndex, staffNb, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
-        notes.set(noteIndex, { "noteName_": restName, "noteType_": "Rest" })
-    }
-
     function playNote(noteId) {
         metronomeAnimation.velocity = staff.width * 1000 / (notes.get(noteId).mDuration * notes.count);
         print("velocity " + metronomeAnimation.velocity)
-    }
-
-    function eraseAllNotes() {
-        notes.clear()
-    }
-
-    property int noteWidth: (staff.width - 10 - clefImage.width) / 10
-    Row {
-        id: notesRow
-        x: firstNoteX - noteWidth/2
-        Repeater {
-            id: notesRepeater
-            model: notes
-            Note {
-                noteName: noteName_
-                noteType: noteType_
-                highlightWhenPlayed: highlightWhenPlayed
-                noteIsColored: staff.noteIsColored
-                width: (notes.count == 1 && items.staffLength === "long") ? Math.min(items.background.width,items.background.height) * 0.1 : noteWidth
-                height: staff.height
-
-                noteDetails: Activity.getNoteDetails(noteName, noteType)
-
-                MouseArea {
-                    id: noteMouseArea
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    onClicked: multipleStaff.noteClicked(noteName, noteType, index, staff.staffNb)
-                }
-
-                function highlightNote() {
-                    highlightTimer.start()
-                }
-
-                y: {
-                    if(noteDetails === undefined)
-                        return 0
-                    var shift =  -verticalDistanceBetweenLines / 2
-                    var relativePosition = noteDetails.positionOnStaff
-                    var imageY = (nbLines - 3) * verticalDistanceBetweenLines
-
-                    if(rotation === 180) {
-                        return imageY - (4 - relativePosition) * verticalDistanceBetweenLines + shift
-                    }
-
-                    return imageY - (6 - relativePosition) * verticalDistanceBetweenLines + shift
-                }
-            }
-        }
     }
 }

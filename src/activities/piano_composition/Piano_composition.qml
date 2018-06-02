@@ -118,6 +118,7 @@ ActivityBase {
         property string restType: "Whole"
         property string clefType: bar.level == 2 ? "bass" : "treble"
         property string staffMode: "add"
+        property bool undidChange: false
 
         File {
             id: file
@@ -167,7 +168,7 @@ ActivityBase {
             height: horizontalLayout ? parent.height * 0.58 : parent.height * 0.3
             nbStaves: 2
             clef: clefType
-            nbMaxNotesPerStaff: 8
+            nbMaxNotesPerStaff: 10
             noteIsColored: true
             isMetronomeDisplayed: true
             anchors.right: horizontalLayout ? parent.right: undefined
@@ -178,19 +179,15 @@ ActivityBase {
             onNoteClicked: {
                 if(background.staffMode === "add")
                     playNoteAudio(noteName, noteType)
-                else if(background.staffMode === "replace") {
-                    noteToReplace.noteNumber = noteIndex
-                    noteToReplace.staffNumber = staffIndex
-                }
+                else if(background.staffMode === "replace")
+                    noteToReplace = noteIndex
                 else
-                    multipleStaff.eraseNote(noteIndex, staffIndex)
+                    multipleStaff.eraseNote(noteIndex)
             }
             onPushToUndoStack: {
                 // If we have undid the change, we won't push the undid change in the stack as the undoStack will enter in a loop.
-                if(Activity.undidChange)
-                    Activity.undidChange = false
-                else
-                    Activity.pushToStack(noteIndex, staffIndex, oldNoteName, oldNoteType)
+                if(!background.undidChange)
+                    Activity.pushToStack(noteIndex, oldNoteName, oldNoteType)
             }
         }
 
@@ -328,7 +325,10 @@ ActivityBase {
                 sourceSize.width: 50
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: multipleStaff.eraseAllNotes()
+                    onClicked: {
+                        Activity.undoStack = []
+                        multipleStaff.eraseAllNotes()
+                    }
                 }
             }
 
@@ -338,7 +338,11 @@ ActivityBase {
                 sourceSize.width: 50
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: Activity.undoChange()
+                    onClicked: {
+                        background.undidChange = true
+                        Activity.undoChange()
+                        background.undidChange = false
+                    }
                 }
             }
 
@@ -350,6 +354,7 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        melodyList.melodiesModel.clear()
                         var dataset = Dataset.get()
                         for(var i = 0; i < dataset.length; i++) {
                             melodyList.melodiesModel.append(dataset[i])
