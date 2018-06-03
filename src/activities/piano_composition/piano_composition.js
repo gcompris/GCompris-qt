@@ -97,6 +97,7 @@ function initLevel() {
     items.multipleStaff.noteToReplace.noteNumber = -1
     items.multipleStaff.noteToReplace.staffNumber = -1
     items.staffModesOptions.currentIndex = 0
+    items.lyricsArea.resetLyricsArea()
     undoStack = []
 }
 

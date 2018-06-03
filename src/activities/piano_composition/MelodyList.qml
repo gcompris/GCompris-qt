@@ -115,6 +115,7 @@ Rectangle {
                                     onClicked: {
                                         dialogBackground.selectedMelodyIndex = index
                                         items.multipleStaff.loadFromData(melody)
+                                        lyricsArea.setLyrics(title, _origin, lyrics)
                                     }
                                     width: parent.width
                                     height: parent.height * 0.8

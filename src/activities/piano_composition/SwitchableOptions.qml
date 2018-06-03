@@ -33,7 +33,7 @@ Image {
 
     signal clicked
 
-    sourceSize.width: 50
+    sourceSize.width: optionsRow.iconsWidth
     anchors.top: parent.top
     anchors.topMargin: -6
     MouseArea {

@@ -109,6 +109,7 @@ ActivityBase {
             property alias file: file
             property alias piano: piano
             property alias staffModesOptions: staffModesOptions
+            property alias lyricsArea: lyricsArea
         }
 
         onStart: { Activity.start(items) }
@@ -119,6 +120,7 @@ ActivityBase {
         property string clefType: bar.level == 2 ? "bass" : "treble"
         property string staffMode: "add"
         property bool undidChange: false
+        property bool isLyricsMode: (lyricsOrPianoModeOption.currentIndex === 1) && lyricsOrPianoModeOption.visible
 
         File {
             id: file
@@ -221,6 +223,7 @@ ActivityBase {
                 else if(background.staffMode === "replace")
                     multipleStaff.replaceNote(note, currentType)
             }
+            visible: !background.isLyricsMode
         }
 
         Image {
@@ -231,7 +234,7 @@ ActivityBase {
             height: width
             fillMode: Image.PreserveAspectFit
             rotation: 180
-            visible: piano.currentOctaveNb > 0
+            visible: (piano.currentOctaveNb > 0) && piano.visible
             anchors {
                 verticalCenter: piano.verticalCenter
                 right: piano.left
@@ -249,7 +252,7 @@ ActivityBase {
             width: sourceSize.width
             height: width
             fillMode: Image.PreserveAspectFit
-            visible: piano.currentOctaveNb < piano.maxNbOctaves - 1
+            visible: (piano.currentOctaveNb < piano.maxNbOctaves - 1) && piano.visible
             anchors {
                 verticalCenter: piano.verticalCenter
                 left: piano.right
@@ -258,6 +261,10 @@ ActivityBase {
                 anchors.fill: parent
                 onClicked: piano.currentOctaveNb++
             }
+        }
+
+        LyricsArea {
+            id: lyricsArea
         }
 
         Row {
@@ -269,6 +276,8 @@ ActivityBase {
 
             readonly property var noteLengthName: ["Whole", "Half", "Quarter", "Eighth"]
             readonly property var staffModes: ["add", "replace", "erase"]
+            readonly property var lyricsOrPianoModes: ["piano", "lyrics"]
+            readonly property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing *12) / 14)
 
             SwitchableOptions {
                 id: noteOptions
@@ -281,7 +290,7 @@ ActivityBase {
             Image {
                 id: playButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
-                sourceSize.width: 50
+                sourceSize.width: optionsRow.iconsWidth
                 MouseArea {
                     anchors.fill: parent
                     onClicked: multipleStaff.play()
@@ -291,7 +300,7 @@ ActivityBase {
             Image {
                 id: clefButton
                 source: clefType == "bass" ? "qrc:/gcompris/src/activities/piano_composition/resource/bassClefButton.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/trebbleClefButton.svg"
-                sourceSize.width: 50
+                sourceSize.width: optionsRow.iconsWidth
                 visible: bar.level > 2
                 MouseArea {
                     anchors.fill: parent
@@ -322,10 +331,11 @@ ActivityBase {
             Image {
                 id: clearButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/edit-clear.svg"
-                sourceSize.width: 50
+                sourceSize.width: optionsRow.iconsWidth
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        lyricsArea.resetLyricsArea()
                         Activity.undoStack = []
                         multipleStaff.eraseAllNotes()
                     }
@@ -335,7 +345,7 @@ ActivityBase {
             Image {
                 id: undoButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/undo.svg"
-                sourceSize.width: 50
+                sourceSize.width: optionsRow.iconsWidth
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -349,7 +359,7 @@ ActivityBase {
             Image {
                 id: openButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/open.svg"
-                sourceSize.width: 50
+                sourceSize.width: optionsRow.iconsWidth
                 visible: bar.level > 6
                 MouseArea {
                     anchors.fill: parent
@@ -370,7 +380,7 @@ ActivityBase {
             Image {
                 id: saveButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
-                sourceSize.width: 50
+                sourceSize.width: optionsRow.iconsWidth
                 visible: bar.level == 8
                 MouseArea {
                     anchors.fill: parent
@@ -390,6 +400,15 @@ ActivityBase {
                 }
             }
 
+            SwitchableOptions {
+                id: lyricsOrPianoModeOption
+                nbOptions: optionsRow.lyricsOrPianoModes.length
+                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1-icon.svg".arg(optionsRow.lyricsOrPianoModes[currentIndex])
+                anchors.top: parent.top
+                anchors.topMargin: 4
+                visible: bar.level > 6
+            }
+
             // Since the half rest image is just the rotated image of whole rest image, we check if the current rest type is half, we assign the source as whole rest and rotate it by 180 degrees.
             SwitchableOptions {
                 id: restOptions
@@ -400,13 +419,12 @@ ActivityBase {
                 nbOptions: optionsRow.noteLengthName.length
                 onClicked: restType = optionsRow.noteLengthName[currentIndex]
                 rotation: optionsRow.noteLengthName[currentIndex] === "Half" ? 180 : 0
-                sourceSize.width: 70
                 visible: bar.level > 5
             }
 
             Image {
                 id: addRestButton
-                sourceSize.width: 48
+                sourceSize.width: optionsRow.iconsWidth
                 source: "qrc:/gcompris/src/core/resource/apply.svg"
                 visible: restOptions.visible
                 anchors.top: parent.top
