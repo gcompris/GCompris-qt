@@ -34,8 +34,7 @@ ActivityInfo {
   Level 4: Flat notation used for black keys.
   Level 5: Option to select note duration (whole, half, quarter, eighth notes).
   Level 6: Addition of rests (whole, half, quarter, eighth rests)
-  Level 7: Load children's melodies from around the world.
-  Level 8: All features available, with the additional feature to load and save your composition.
+  Level 7: Load children's melodies from around the world and also save your composition.
 
 The following keyboard bindings work in this game:
 - backspace: erase attempt

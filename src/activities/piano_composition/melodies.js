@@ -98,7 +98,7 @@ function get() {
                  "title": "À la claire fontaine",
                  "_origin": qsTr("France"),
                  "lyrics": "À la claire fontaine\nM'en allant promener\nJ'ai trouvé l'eau si belle\nQue je m'y suis baigné\nIl y a longtemps que je t'aime\nJamais je ne t'oublierai.",
-                 "melody": "treble G4Quarter G4Eighth B4Eighth B4Eighth A4Eighth B4Eighth B4Eighth G4Quarter G4Eighth B4Eighth B4Eighth A4Eighth B4Quarter B4Quarter B4Eighth A4Eighth G4Eighth B4Eighth D5Eighth B4Eighth D5Quarter D5Eighth B4Eighth G4Eighth B4Eighth A4Half G4Half G4Quarter B4Quarter B4Quarter A4Eighth G4Eighth B4Quarter G4Quarter B4QuarterHalf B4Quarter A4Eighth G4Eighth B4Quarter A4Quarter G4Whole"
+                 "melody": "treble G4Quarter G4Eighth B4Eighth B4Eighth A4Eighth B4Eighth B4Eighth G4Quarter G4Eighth B4Eighth B4Eighth A4Eighth B4Quarter B4Quarter B4Eighth A4Eighth G4Eighth B4Eighth D5Eighth B4Eighth D5Quarter D5Eighth B4Eighth G4Eighth B4Eighth A4Half G4Half G4Quarter B4Quarter B4Quarter A4Eighth G4Eighth B4Quarter G4Quarter B4Half B4Quarter A4Eighth G4Eighth B4Quarter A4Quarter G4Whole"
              },
              {
                  "title": "O Cravo e a Rosa",

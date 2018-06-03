@@ -51,36 +51,37 @@ Item {
         sourceSize.width: (nbLines - 2) * verticalDistanceBetweenLines
     }
 
+    readonly property int yShift: activity.horizontalLayout ? 0 : 1.5
+
     Repeater {
         model: nbLines
         Rectangle {
             width: staff.width
-            height: 5
-            border.width: 5
+            height: activity.horizontalLayout ? 5 : 3
+            border.width: height / 2
             color: "black"
-            x: 0
-            y: index * verticalDistanceBetweenLines
+            y: index * verticalDistanceBetweenLines + yShift
         }
     }
 
     Rectangle {
-        width: 5
-        border.width: 5
-        height: (nbLines - 1) * verticalDistanceBetweenLines + 5
+        width: activity.horizontalLayout ? 5 : 3
+        border.width: width / 2
+        height: (nbLines - 1) * verticalDistanceBetweenLines + width
         color: "black"
         x: staff.width
-        y: 0
+        y: yShift
     }
 
     // End of partition line
     Rectangle {
-        width: 5
-        border.width: 5
-        height: (nbLines - 1) * verticalDistanceBetweenLines + 5
+        width: activity.horizontalLayout ? 5 : 3
+        border.width: width / 2
+        height: (nbLines - 1) * verticalDistanceBetweenLines + width
         visible: lastPartition
         color: "black"
         x: staff.width - 10
-        y: 0
+        y: yShift
     }
 
     Rectangle {

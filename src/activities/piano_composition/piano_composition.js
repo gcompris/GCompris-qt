@@ -26,7 +26,7 @@
 .import "qrc:/gcompris/src/activities/piano_composition/NoteNotations.js" as NoteNotations
 
 var currentLevel = 0
-var numberOfLevel = 8
+var numberOfLevel = 7
 var items
 var notesDetails = NoteNotations.get()
 var userDir = "file://" + GCompris.ApplicationInfo.getSharedWritablePath() + "/" + "piano_composition"
@@ -51,10 +51,7 @@ var instructions = [{
         "text": qsTr("Rests are equivalent to notes during which silence is maintained. Click on the rest symbol to select the rest length and then click on the tick button to enter it to the staff.")
     },
     {
-        "text": qsTr("Now you can load music.")
-    },
-    {
-        "text": qsTr("Now you can compose your own music and save them.")
+        "text": qsTr("Now you can load music and also save your composed one.")
     }
 ]
 
@@ -93,10 +90,20 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+
+    if(items.bar.level === 2)
+        items.background.clefType = "bass"
+    else
+        items.background.clefType = "treble"
+
+    if(items.bar.level === 4)
+        items.piano.useSharpNotation = false
+    else
+        items.piano.useSharpNotation = true
+
     items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
     items.background.staffMode = "add"
-    items.multipleStaff.noteToReplace = -1
     items.multipleStaff.noteToReplace = -1
     items.staffModesOptions.currentIndex = 0
     items.lyricsArea.resetLyricsArea()

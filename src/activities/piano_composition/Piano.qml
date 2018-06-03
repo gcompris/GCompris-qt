@@ -139,6 +139,7 @@ Item {
 
     property bool blackLabelsVisible: true
     property bool whiteLabelsVisible: true
+    property bool blackKeysEnabled: true
     property bool useSharpNotation: true
     property int labelSquareSize: whiteWidth - 5
 
@@ -170,10 +171,8 @@ Item {
             noteColor: colorBlackNotes[currentOctaveNb][index]
             keyName: blackNotes[currentOctaveNb][index][1]
             labelsVisible: blackLabelsVisible
-            onKeyPressed: {
-                if(blackLabelsVisible)
-                    noteClicked(blackNotes[currentOctaveNb][index][0])
-            }
+            isKeyEnabled: piano.blackKeysEnabled
+            onKeyPressed: noteClicked(blackNotes[currentOctaveNb][index][0])
         }
     }
 

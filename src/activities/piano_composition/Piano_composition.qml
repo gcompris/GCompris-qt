@@ -218,6 +218,7 @@ ActivityBase {
             anchors.topMargin: horizontalLayout ? parent.height * 0.08 : parent.height * 0.025
             blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
             useSharpNotation: bar.level != 4
+            blackKeysEnabled: bar.level > 2
             onNoteClicked: {
                 if(background.staffMode === "add")
                     multipleStaff.addNote(note, currentType, false, true)
@@ -323,7 +324,6 @@ ActivityBase {
                     background.staffMode = optionsRow.staffModes[currentIndex]
                     if(background.staffMode != "replace") {
                         multipleStaff.noteToReplace = -1
-                        multipleStaff.noteToReplace = -1
                     }
                 }
                 visible: true
@@ -382,7 +382,7 @@ ActivityBase {
                 id: saveButton
                 source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
                 sourceSize.width: optionsRow.iconsWidth
-                visible: bar.level == 8
+                visible: bar.level == 7
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {

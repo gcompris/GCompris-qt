@@ -32,6 +32,7 @@ Rectangle {
     property string keyName
     property real labelSquareSize
     property bool labelsVisible
+    property bool isKeyEnabled: true
 
     signal keyPressed
     signal indicateKey
@@ -74,11 +75,13 @@ Rectangle {
         }
     }
 
-    MultiPointTouchArea {
+    MouseArea {
         anchors.fill: parent
         onPressed: {
-            keyPressed()
-            pianoKey.scale = 0.95
+            if(pianoKey.isKeyEnabled) {
+                keyPressed()
+                pianoKey.scale = 0.95
+            }
         }
         onReleased: pianoKey.scale = 1
     }
