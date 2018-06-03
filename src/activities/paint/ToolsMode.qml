@@ -23,8 +23,8 @@ import "paint.js" as Activity
 
 Item {
     id: toolsMode
-    width: background.width * 0.90
-    height: background.height * 0.90
+    width: parent.width
+    height: parent.height
 
     anchors.centerIn: parent
     property alias modesModel: modes.model
@@ -67,91 +67,59 @@ Item {
         }
     }
 
-    Rectangle {
-        anchors.fill: parent
-        opacity: 0.8
-        radius: 10
-        color: "grey"
+    GridView {
+        id: modes
+        width: parent.width * 0.50
+        height: parent.height * 0.85
+        cellWidth: width / 4.2
+        cellHeight: height / 3.2
+        //anchors.centerIn: parent
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.left: parent.left
+        anchors.leftMargin: 40
+        model: pencilModes
+        delegate: modesComponent
     }
 
-    MultiPointTouchArea {
-        anchors.fill: parent
-    }
+    Component {
+        id: modesComponent
+        Rectangle {
+            width: modes.cellWidth
+            height: modes.cellHeight
+            color: items.toolSelected == name ? "lightblue" : "transparent"
+            radius: 10
+            Image {
+                source: imgSource
+                width: parent.width * 0.80
+                height: parent.height * 0.80
+                anchors.centerIn: parent
+                fillMode: Image.PreserveAspectFit
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    items.toolSelected = name
+                    items.lastToolSelected = name
+                    background.hideExpandedTools()
+                    console.log("Click on " + name)
 
-    Rectangle {
-        id: container
-        z: 1501
-        width: parent.width
-        height: parent.height
-        anchors.centerIn: parent
-        opacity: 0.9
-        radius: 10
-        border.width: 2
-        border.color: "white"
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#fff" }
-            GradientStop { position: 0.9; color: "#fff" }
-            GradientStop { position: 1.0; color: "#ddd" }
-        }
-        MouseArea {
-            anchors.fill: parent
-            onClicked: console.log("Clicked on Grid")
-        }
+                    // make the hover over the canvas false
+                    area.hoverEnabled = false
+                    //toolsMode.visible = false
 
-        GridView {
-            id: modes
-            width: parent.width * 0.85
-            height: parent.height * 0.75
-            cellWidth: width / 4.2
-            cellHeight: height / 4
-            y: parent.y + buttonCancel.height + 10
-            anchors.centerIn: parent
-            model: pencilModes
-            delegate: modesComponent
-        }
-
-        Component {
-            id: modesComponent
-            Rectangle {
-                width: modes.cellWidth
-                height: modes.cellHeight
-                color: items.toolSelected == name ? "lightblue" : "transparent"
-                radius: 10
-                Image {
-                    source: imgSource
-                    width: parent.width * 0.80
-                    height: parent.height * 0.80
-                    anchors.centerIn: parent
-                    fillMode: Image.PreserveAspectFit
-                }
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        items.toolSelected = name
-                        items.lastToolSelected = name
-                        background.hideExpandedTools()
-                        console.log("Click on " + name)
-
-                        // make the hover over the canvas false
-                        area.hoverEnabled = false
-                        toolsMode.visible = false
-
-                        // change the selectBrush tool
-                        timer.index = 0
-                        timer.start()
-                        background.reloadSelectedPen()
-                        Activity.selectMode(name)
-                    }
+                    // change the selectBrush tool
+                    timer.index = 0
+                    timer.start()
+                    background.reloadSelectedPen()
+                    Activity.selectMode(name)
                 }
             }
         }
     }
 
-    GCButtonCancel {
-        id: buttonCancel
-        z: 1600
-        onClose: {
-            toolsMode.visible = false
-        }
+    ToolsSize {
+        anchors.left: modes.right
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.leftMargin: 30
     }
 }

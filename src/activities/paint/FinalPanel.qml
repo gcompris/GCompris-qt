@@ -9,6 +9,8 @@ Item {
     property int tabWidth: background.width * 0.15
     property int tabHeight: background.height * 0.06
     property alias colorModel: colorModel
+    property string activePanel: "menuPanel"
+    property alias toolsMode: toolsMode
 
     function hideAllTabs() {
         menuTitle.visible = false
@@ -82,8 +84,7 @@ Item {
         height: background.height / 2.4
         color: "#1A1A1A"
         y: -height
-        //border.color: "white"
-
+        border.color: "white"
         property bool panelUnFolded: y >= -5
         //property alias
 
@@ -94,6 +95,7 @@ Item {
             to: - menuPanel.height
             duration: 200
             easing.type: Easing.InOutQuad
+            onStarted: foldTitle.start()
         }
 
         NumberAnimation {
@@ -103,6 +105,7 @@ Item {
             to: 0
             duration: 200
             easing.type: Easing.InOutQuad
+            onStarted: unfoldTitle.start()
         }
 
         GridView {
@@ -110,7 +113,7 @@ Item {
             width: parent.width * 0.75
             height: parent.height * 0.80
             anchors.centerIn: parent
-            visible: false
+            visible: root.activePanel == "menuPanel"
             anchors.topMargin: 30
             cellWidth: width / 4
             cellHeight: height / 2.2
@@ -153,6 +156,7 @@ Item {
             cellWidth: width / 4.7
             cellHeight: height / 3.6
             model: colorModel
+            visible: root.activePanel == "colorPanel"
             z: 1800
             delegate: Rectangle {
                 id: root1
@@ -189,7 +193,7 @@ Item {
                         background.hideExpandedTools()
                         items.paintColor = color
                         background.reloadSelectedPen()
-                        colorPalette.visible = false
+                        //colorPalette.visible = false
                         foldAnimation.start()
                         root.showAllTabs()
                     }
@@ -220,170 +224,211 @@ Item {
             }
         }
 
-        Rectangle {
-            id: menuTitle
-            width: root.tabWidth
-            height: root.tabHeight
-            radius: 10
-            color: "#1A1A1A"
-            border.color: "white"
-            anchors.top: parent.bottom
-            anchors.topMargin: -8
-            z: parent.z - 1
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    colorGrid.visible = false
-                    menuGrid.visible = true
-                    if(menuPanel.panelUnFolded) {
-                        foldAnimation.start()
-                        root.showAllTabs()
-                    }
-                    else {
-                        root.hideAllTabs()
-                        menuGrid.model = menuModel
-                        menuTitle.visible = true
-                        menuGrid.visible = true
-                        unfoldAnimation.start()
-                    }
-                }
-            }
-
-            GCText {
-                text: "Menu"
-                fontSize: tinySize
-                anchors.fill: parent
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                color: "white"
-            }
-        }
-
-        Rectangle {
-            id: toolsTitle
-            width: root.tabWidth
-            height: root.tabHeight
-            radius: 10
-            color: "#1A1A1A"
-            border.color: "white"
-            anchors.top: parent.bottom
-            anchors.left: menuTitle.right
-            //x: width
-            anchors.leftMargin: 2
-            anchors.topMargin: -8
-            z: parent.z - 1
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    colorGrid.visible = false
-                    menuGrid.visible = true
-                    if(menuPanel.panelUnFolded) {
-                        foldAnimation.start()
-                        root.showAllTabs()
-                    }
-                    else {
-                        root.hideAllTabs()
-                        toolsTitle.visible = true
-                        menuGrid.model = toolsModel
-                        menuGrid.visible = true
-                        unfoldAnimation.start()
-                    }
-                }
-            }
-
-            GCText {
-                text: "Tools"
-                fontSize: tinySize
-                anchors.fill: parent
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                color: "white"
-            }
-        }
-
-        Rectangle {
-            id: toolsOptionTitle
-            width: root.tabWidth
-            height: root.tabHeight
-            radius: 10
-            color: "#1A1A1A"
-            border.color: "white"
-            anchors.top: parent.bottom
-            anchors.right: parent.right
-            anchors.rightMargin: 2
-            anchors.topMargin: -8
-            z: parent.z - 1
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    menuGrid.model = toolsModel
-                    if(menuPanel.panelUnFolded) {
-                        foldAnimation.start()
-                        root.showAllTabs()
-                    }
-                    else {
-                        root.hideAllTabs()
-                        toolsTitle.visible = true
-                        unfoldAnimation.start()
-                    }
-                }
-            }
-
-            GCText {
-                text: "Tools Option"
-                fontSize: tinySize
-                anchors.fill: parent
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                color: "white"
-            }
-        }
-
-        Rectangle {
-            id: colorsTitle
-            width: root.tabWidth
-            height: root.tabHeight
-            radius: 10
-            color: "#1A1A1A"
-            border.color: "white"
-            anchors.top: parent.bottom
-            anchors.right: toolsOptionTitle.left
-            anchors.rightMargin: 2
-            anchors.topMargin: -8
-            z: parent.z - 1
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    menuGrid.visible = false
-                    colorGrid.visible = true
-                    if(menuPanel.panelUnFolded) {
-                        foldAnimation.start()
-                        root.showAllTabs()
-                    }
-                    else {
-                        root.hideAllTabs()
-                        colorsTitle.visible = true
-                        unfoldAnimation.start()
-                    }
-                }
-            }
-
-            GCText {
-                text: "Color"
-                fontSize: tinySize
-                anchors.fill: parent
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
-                color: "white"
-            }
+        ToolsMode {
+            id: toolsMode
+            visible: root.activePanel == "toolOptions"
         }
     }
+
+    Rectangle {
+        id: menuTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: "#1A1A1A"
+        border.color: "white"
+        y: -7
+        z: menuPanel.z - 1
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                animTarget = menuTitle
+                colorGrid.visible = false
+                menuGrid.visible = true
+                root.activePanel = "menuPanel"
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
+                    //foldTitle.start()
+                    //root.showAllTabs()
+                }
+                else {
+                    //root.hideAllTabs()
+                    menuGrid.model = menuModel
+                    menuTitle.visible = true
+                    menuGrid.visible = true
+                    unfoldAnimation.start()
+                    //unfoldTitle.start()
+                }
+            }
+        }
+
+        GCText {
+            text: "Menu"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
+        }
+    }
+
+    Rectangle {
+        id: toolsTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: "#1A1A1A"
+        border.color: "white"
+        x: width + 2
+        y: -7
+        anchors.topMargin: -8
+        z: menuPanel.z - 1
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                animTarget = toolsTitle
+                colorGrid.visible = false
+                menuGrid.visible = true
+                root.activePanel = "menuPanel"
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
+                    //foldTitle.start()
+                    //root.showAllTabs()
+                }
+                else {
+                    //root.hideAllTabs()
+                    toolsTitle.visible = true
+                    menuGrid.model = toolsModel
+                    menuGrid.visible = true
+                    unfoldAnimation.start()
+                    //unfoldTitle.start()
+                }
+            }
+        }
+
+        GCText {
+            text: "Tools"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
+        }
+    }
+
+    Rectangle {
+        id: colorsTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: "#1A1A1A"
+        border.color: "white"
+        x: background.width - 2 * width - 2
+        y: -7
+        z: menuPanel.z - 1
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                animTarget = colorsTitle
+                menuGrid.visible = false
+                colorGrid.visible = true
+                root.activePanel = "colorPanel"
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
+                    //foldTitle.start()
+                    //root.showAllTabs()
+                }
+                else {
+                    //root.hideAllTabs()
+                    colorsTitle.visible = true
+                    unfoldAnimation.start()
+                    //unfoldTitle.start()
+                }
+            }
+        }
+
+        GCText {
+            text: "Color"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
+        }
+    }
+
+    Rectangle {
+        id: toolsOptionTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: "#1A1A1A"
+        border.color: "white"
+        x: background.width - width
+        y: -7
+        z: menuPanel.z - 1
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                animTarget = toolsOptionTitle
+                root.activePanel = "toolOptions"
+                menuGrid.visible = false
+                colorGrid.visible = false
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
+                    //foldTitle.start()
+                    //root.showAllTabs()
+                }
+                else {
+                    //root.hideAllTabs()
+                    toolsOptionTitle.visible = true
+                    unfoldAnimation.start()
+                    //unfoldTitle.start()
+                }
+            }
+        }
+
+        GCText {
+            text: "Tool Options"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
+        }
+    }
+
+    property var animTarget: menuTitle
+
+    NumberAnimation {
+        id: unfoldTitle
+        target: animTarget
+        property: "y"
+        to: menuPanel.height - 7
+        duration: 200
+        easing.type: Easing.InOutQuad
+    }
+    NumberAnimation {
+        id: foldTitle
+        target: animTarget
+        property: "y"
+        to: -7
+        duration: 200
+        easing.type: Easing.InOutQuad
+    }
+
+    Rectangle {
+        width: root.tabWidth
+        height: 8
+        x: animTarget.x
+        y: animTarget.y
+        color: "#1A1A1A"
+    }
+
 }
