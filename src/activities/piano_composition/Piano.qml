@@ -61,36 +61,40 @@ Item {
     ]
     readonly property var whiteNotes: background.clefType === "treble" ? whiteNotesTreble : whiteNotesBass
 
-    // Sharp and flat black key notes when the clef is bass.
+    // Sharp black key notes when the clef is bass.
     //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
     readonly property var blackNotesSharpBass: [
         [["C#3", qsTr("C#%1").arg(3)], ["D#3", qsTr("D#%1").arg(3)], ["F#3", qsTr("F#%1").arg(3)], ["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)]],
         [["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)]]
     ]
-    //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
-    readonly property var blackNotesFlatBass: [
-        [["Db3", qsTr("Db%1").arg(3)], ["Eb3", qsTr("Eb%1").arg(3)], ["Gb3", qsTr("Gb%1").arg(3)], ["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)]],
-        [["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)]]
-    ]
-    readonly property var blackNotesbass: useSharpNotation ? blackNotesSharpBass : blackNotesFlatBass
 
-    // Sharp and flat black key notes when the clef is treble
+    // Sharp black key notes when the clef is treble
     //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
     readonly property var blackNotesSharpTreble: [
         [["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)]],
         [["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)], ["G#4", qsTr("G#%1").arg(4)], ["A#4", qsTr("A#%1").arg(4)]],
         [["C#5", qsTr("C#%1").arg(5)], ["D#5", qsTr("D#%1").arg(5)], ["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)]]
     ]
+    readonly property var blackNotesSharp: background.clefType === "treble" ? blackNotesSharpTreble : blackNotesSharpBass
+
+    // Flat black key notes when the clef is bass.
+    //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
+    readonly property var blackNotesFlatBass: [
+        [["Db3", qsTr("Db%1").arg(3)], ["Eb3", qsTr("Eb%1").arg(3)], ["Gb3", qsTr("Gb%1").arg(3)], ["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)]],
+        [["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)]]
+    ]
+
+    // Flat black key notes when the clef is treble.
     //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
     readonly property var blackNotesFlatTreble: [
         [["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)]],
         [["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)], ["Ab4", qsTr("Ab%1").arg(4)], ["Bb4", qsTr("Bb%1").arg(4)]],
         [["Db5", qsTr("Db%1").arg(5)], ["Eb5", qsTr("Eb%1").arg(5)], ["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)]]
     ]
-    readonly property var blackNotesTreble: useSharpNotation ? blackNotesSharpTreble : blackNotesFlatTreble
+    readonly property var blackNotesFlat: background.clefType === "treble" ? blackNotesFlatTreble : blackNotesFlatBass
 
     // Black note labels used, can be sharp or flat
-    readonly property var blackNotes: background.clefType === "treble" ? blackNotesTreble : blackNotesbass
+    readonly property var blackNotes: useSharpNotation ? blackNotesSharp : blackNotesFlat
 
     // Positions of black keys when the clef is treble
     readonly property var blacksTreble: [
@@ -169,6 +173,48 @@ Item {
             onKeyPressed: {
                 if(blackLabelsVisible)
                     noteClicked(blackNotes[currentOctaveNb][index][0])
+            }
+        }
+    }
+
+    function indicateKey(noteName) {
+        var noteFound = false
+        if(noteName[1] === "#") {
+            for(var i = 0; i < blackNotesSharp.length && !noteFound; i++) {
+                for(var j = 0; j < blackNotesSharp[i].length; j++) {
+                    if(noteName === blackNotesSharp[i][j][0]) {
+                        noteFound = true
+                        useSharpNotation = true
+                        currentOctaveNb = i
+                        blackKeyRepeater.itemAt(j).indicateKey()
+                        break
+                    }
+                }
+            }
+        }
+        else if(noteName[1] === "b") {
+            for(var i = 0; i < blackNotesFlat.length && !noteFound; i++) {
+                for(var j = 0; j < blackNotesFlat[i].length; j++) {
+                    if(noteName === blackNotesFlat[i][j][0]) {
+                        noteFound = true
+                        useSharpNotation = false
+                        currentOctaveNb = i
+                        blackKeyRepeater.itemAt(j).indicateKey()
+                        break
+                    }
+                }
+            }
+        }
+        else {
+            for(var i = 0; i < whiteNotes.length && !noteFound; i++) {
+                for(var j = 0; j < whiteNotes[i].length; j++) {
+                    if(noteName === whiteNotes[i][j][0]) {
+                        noteFound = true
+                        currentOctaveNb = i
+                        whiteKeyRepeater.itemAt(j).indicateKey()
+                        break
+                    }
+                }
             }
         }
     }

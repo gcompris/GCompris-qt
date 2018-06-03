@@ -46,6 +46,7 @@ Item {
 
     signal noteClicked(string noteName, string noteType, int noteIndex)
     signal pushToUndoStack(int noteIndex, string oldNoteName, string oldNoteType)
+    signal notePlayed(string noteName)
 
     ListModel {
         id: notesModel
@@ -211,22 +212,16 @@ Item {
             var audioPitchType
             // We should find a corresponding b type enharmonic notation for # type note to play the audio.
             if(noteName[1] === "#") {
-                var pianoBlackKeysFlat
-                var pianoBlackKeysSharp
-                if(background.clefType === "treble") {
-                    pianoBlackKeysFlat = piano.blackNotesFlatTreble
-                    pianoBlackKeysSharp = piano.blackNotesSharpTreble
-                }
-                else {
-                    pianoBlackKeysFlat = piano.blackNotesFlatBass
-                    pianoBlackKeysSharp = piano.blackNotesSharpBass
-                }
+                var blackKeysFlat
+                var blackKeysSharp
+                blackKeysFlat = piano.blackNotesFlat
+                blackKeysSharp = piano.blackNotesSharp
 
                 var foundNote = false
-                for(var i = 0; (i < pianoBlackKeysSharp.length) && !foundNote; i++) {
-                    for(var j = 0; j < pianoBlackKeysSharp[i].length; j++) {
-                        if(pianoBlackKeysSharp[i][j][0] === noteName) {
-                            noteName = pianoBlackKeysFlat[i][j][0]
+                for(var i = 0; (i < blackKeysSharp.length) && !foundNote; i++) {
+                    for(var j = 0; j < blackKeysSharp[i].length; j++) {
+                        if(blackKeysSharp[i][j][0] === noteName) {
+                            noteName = blackKeysFlat[i][j][0]
                             foundNote = true
                             break
                         }
@@ -245,6 +240,7 @@ Item {
             else
                 audioPitchType = "bass"
             var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + audioPitchType + "_pitches/" + noteName + ".wav"
+            console.log(noteToPlay)
             items.audioEffects.play(noteToPlay)
         }
     }
@@ -259,7 +255,7 @@ Item {
     function loadFromData(data) {
         eraseAllNotes()
         var melody = data.split(" ")
-        multipleStaff.clef = melody[0]
+        background.clefType = melody[0]
         for(var i = 1 ; i < melody.length ; ++ i) {
             var noteLength = melody[i].length
             var noteName = melody[i][0]
@@ -301,6 +297,9 @@ Item {
                 var note = notesModel.get(currentNote).noteName_
 
                 playNoteAudio(note, currentType)
+
+                if(currentType != "Rest")
+                    multipleStaff.notePlayed(note)
 
                 musicTimer.interval = notesModel.get(currentNote).mDuration
                 notesRepeater.itemAt(currentNote).highlightNote()

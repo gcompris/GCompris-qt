@@ -34,6 +34,24 @@ Rectangle {
     property bool labelsVisible
 
     signal keyPressed
+    signal indicateKey
+    onIndicateKey: keyPressAnimation.start()
+
+    SequentialAnimation {
+        id: keyPressAnimation
+        NumberAnimation {
+            target: pianoKey
+            property: "scale"
+            duration: 250
+            to: 0.9
+        }
+        NumberAnimation {
+            target: pianoKey
+            property: "scale"
+            duration: 250
+            to: 1
+        }
+    }
 
     border.color: "black"
     Rectangle {

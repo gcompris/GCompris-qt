@@ -191,6 +191,7 @@ ActivityBase {
                 if(!background.undidChange)
                     Activity.pushToStack(noteIndex, oldNoteName, oldNoteType)
             }
+            onNotePlayed: piano.indicateKey(noteName)
         }
 
         GCButtonScroll {
@@ -307,7 +308,7 @@ ActivityBase {
                     onClicked: {
                         multipleStaff.eraseAllNotes()
                         clefType = (clefType == "bass") ? "treble" : "bass"
-                        print(piano.currentOctaveNb)
+                        lyricsArea.resetLyricsArea()
                     }
                 }
             }
