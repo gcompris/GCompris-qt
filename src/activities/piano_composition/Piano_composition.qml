@@ -322,8 +322,8 @@ ActivityBase {
                 onClicked: {
                     background.staffMode = optionsRow.staffModes[currentIndex]
                     if(background.staffMode != "replace") {
-                        multipleStaff.noteToReplace.noteNumber = -1
-                        multipleStaff.noteToReplace.staffNumber = -1
+                        multipleStaff.noteToReplace = -1
+                        multipleStaff.noteToReplace = -1
                     }
                 }
                 visible: true

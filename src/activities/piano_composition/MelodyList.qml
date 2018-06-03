@@ -114,6 +114,7 @@ Rectangle {
                                     text: title
                                     onClicked: {
                                         dialogBackground.selectedMelodyIndex = index
+                                        items.multipleStaff.stopAudios()
                                         items.multipleStaff.loadFromData(melody)
                                         lyricsArea.setLyrics(title, _origin, lyrics)
                                     }

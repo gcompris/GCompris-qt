@@ -288,6 +288,12 @@ Item {
         musicTimer.start()
     }
 
+    function stopAudios() {
+        notesModel.clear()
+        musicTimer.stop()
+        items.audioEffects.stop()
+    }
+
     Timer {
         id: musicTimer
         property int currentNote: 0

@@ -87,15 +87,17 @@ function saveMelody() {
     }
 }
 
-function stop() {}
+function stop() {
+    items.multipleStaff.stopAudios()
+}
 
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
     items.background.staffMode = "add"
-    items.multipleStaff.noteToReplace.noteNumber = -1
-    items.multipleStaff.noteToReplace.staffNumber = -1
+    items.multipleStaff.noteToReplace = -1
+    items.multipleStaff.noteToReplace = -1
     items.staffModesOptions.currentIndex = 0
     items.lyricsArea.resetLyricsArea()
     undoStack = []
