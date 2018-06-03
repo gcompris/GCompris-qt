@@ -147,10 +147,10 @@ ActivityBase {
             property alias load: load
             property alias mainRegion: main
             property alias shape: shape
-            property alias colorPalette: colorPalette
-            property alias toolsSize: toolsSize
+            //property alias colorPalette: colorPalette
+            //property alias toolsSize: toolsSize
             property int activeColorIndex: 1
-            property alias toolsMode: toolsMode
+            property alias toolsMode: finalPanel.toolsMode
             property alias saveToFilePrompt2: saveToFilePrompt2
             property alias saveToFilePrompt: saveToFilePrompt
             property color paintColor: "#000000"
@@ -932,28 +932,28 @@ ActivityBase {
             opacity: 0
         }
 
-        FoldablePanels {
-            id: foldablePanels
-            visible: false
-        }
+//        FoldablePanels {
+//            id: foldablePanels
+//            visible: false
+//        }
 
         FinalPanel {
             id: finalPanel
         }
 
-        ToolsMode {
-            id: toolsMode
-            visible: false
-        }
+//        ToolsMode {
+//            id: toolsMode
+//            visible: false
+//        }
 
-        ColorPalette {
-            id: colorPalette
-            visible: false
-        }
+//        ColorPalette {
+//            id: colorPalette
+//            visible: false
+//        }
 
-        ToolsSize {
-            id: toolsSize
-            visible: false
-        }
+//        ToolsSize {
+//            id: toolsSize
+//            visible: false
+//        }
     }
 }
