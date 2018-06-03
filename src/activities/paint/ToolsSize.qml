@@ -23,68 +23,28 @@ import "paint.js" as Activity
 
 Item {
     id: toolsSize
-    width: background.width > background.height ? background.width * 0.50 : background.width * 0.75
+    width: background.width > background.height ? background.width * 0.30 : background.width * 0.30
     height: background.height * 0.35
 
-    anchors.centerIn: parent
-
-    Rectangle {
-        anchors.fill: parent
-        opacity: 0.8
-        radius: 10
-        color: "grey"
-    }
-
-    Rectangle {
-        id: container
-        z: 1501
-        width: parent.width
-        height: parent.height
+    GCSlider {
+        id: slider
         anchors.centerIn: parent
-        opacity: 0.9
-        radius: 10
-        border.width: 2
-        border.color: "white"
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#fff" }
-            GradientStop { position: 0.9; color: "#fff" }
-            GradientStop { position: 1.0; color: "#ddd" }
-        }
-        MouseArea {
-            anchors.fill: parent
-            onClicked: console.log("Clicked on Grid")
-        }
-
-        GCSlider {
-            id: slider
-            anchors.centerIn: parent
-            anchors.verticalCenterOffset: 30
-            value: items.sizeS
-            minimumValue: 2
-            maximumValue: 24
-            onValueChanged: items.sizeS = value
-            stepSize: 2
-        }
-
-        Row {
-            spacing: slider.width / 4.6
-            x: slider.x
-            anchors.bottom: slider.top
-
-            Thickness { lineSize: 0.13 }
-            Thickness { lineSize: 0.66 }
-            Thickness { lineSize: 1.00 }
-            Thickness { lineSize: 1.60 }
-        }
+        //anchors.verticalCenterOffset: 30
+        value: items.sizeS
+        minimumValue: 2
+        maximumValue: 24
+        onValueChanged: items.sizeS = value
+        stepSize: 2
     }
 
-    GCButtonCancel {
-        id: buttonCancel
-        width: background.width > background.height ? 60 * ApplicationInfo.ratio : 50 * ApplicationInfo.ratio
-        height: width
-        z: 1600
-        onClose: {
-            toolsSize.visible = false
-        }
+    Row {
+        spacing: slider.width / 4.6
+        x: slider.x
+        anchors.bottom: slider.top
+
+        Thickness { lineSize: 0.13 }
+        Thickness { lineSize: 0.66 }
+        Thickness { lineSize: 1.00 }
+        Thickness { lineSize: 1.60 }
     }
 }
