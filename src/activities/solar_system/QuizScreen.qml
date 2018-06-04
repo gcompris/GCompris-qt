@@ -77,7 +77,6 @@ Item {
         anchors.top: (questionArea.y + questionArea.height) > (score.y + score.height) ? questionArea.bottom : score.bottom
         anchors.left: parent.left
         anchors.right: parent.right
-        anchors.margins: 10 * ApplicationInfo.ratio
 
         // An item to hold image of the planet
         Item {
@@ -129,6 +128,8 @@ Item {
                     NumberAnimation { properties: "y"; from: parent.y; duration: 500 }
                 }
 
+                property bool blockAnswerButtons: false
+
                 delegate: AnswerButton {
                     id: optionButton
                     width: parent.width
@@ -136,8 +137,11 @@ Item {
                     textLabel: optionValue
                     anchors.right: parent.right
                     anchors.left: parent.left
+                    blockAllButtonClicks: optionListView.blockAnswerButtons
 
                     isCorrectAnswer: closeness === 100
+
+                    onPressed: optionListView.blockAnswerButtons = true
                     onIncorrectlyPressed: {
                         if(!items.assessmentMode) {
                             closenessMeter.stopAnimations()
@@ -145,6 +149,7 @@ Item {
                             mainQuizScreen.closenessMeterValue = closeness
                         }
                         else {
+                            optionListView.blockAnswerButtons = false
                             Activity.appendAndAddQuestion()
                         }
                     }
@@ -156,6 +161,7 @@ Item {
                             mainQuizScreen.closenessMeterValue = closeness
                         }
                         else {
+                            optionListView.blockAnswerButtons = false
                             Activity.assessmentModeQuestions.shift()
                             mainQuizScreen.numberOfCorrectAnswers++
                             Activity.nextSubLevel(true)
@@ -197,6 +203,7 @@ Item {
             id: closenessMeterIncorrectAnswerAnimation
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
+            onStopped: optionListView.blockAnswerButtons = false
         }
 
         SequentialAnimation {
@@ -205,7 +212,12 @@ Item {
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
-            ScriptAction { script: Activity.nextSubLevel() }
+            ScriptAction {
+                script: {
+                    optionListView.blockAnswerButtons = false
+                    Activity.nextSubLevel()
+                }
+            }
         }
 
         ParticleSystemStarLoader {
@@ -263,7 +275,7 @@ Item {
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
             fontSizeMode: mediumSize
-            text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2").arg(progressBar.value).arg(progressBar.value <= 90 ? "You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System." : "Great! You can replay the assessment to test your knowledge on more questions.")
+            text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2").arg(progressBar.value).arg(progressBar.value <= 90 ? qsTr("You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System.") : qsTr("Great! You can replay the assessment to test your knowledge on more questions."))
         }
 
         // To prevent clicking on options under it

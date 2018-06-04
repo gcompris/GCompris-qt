@@ -1,4 +1,4 @@
-/* GCompris - Solar_system.qml
+/* GCompris - SolarSystem.qml
  *
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
@@ -69,10 +69,7 @@ ActivityBase {
             Activity.start(items)
         }
 
-        onStop: {
-            dialogActivityConfig.saveDatainConfiguration()
-            Activity.stop()
-        }
+        onStop: Activity.stop()
 
         IntroMessage {
             id: message
@@ -86,7 +83,7 @@ ActivityBase {
             }
             z: 10
 
-            readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Normal mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? "Assessment" : "Normal")
+            readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Normal mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? qsTr("Assessment") : qsTr("Normal"))
 
             readonly property var normalModeInstructions: [
                 commonInstruction,
