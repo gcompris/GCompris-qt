@@ -67,8 +67,10 @@ function nextSubLevel(isAssessmentMode) {
     if(!isAssessmentMode) {
         items.mainQuizScreen.closenessMeterValue = 0
 
-        if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels)
+        if(currentSubLevel+1 > items.mainQuizScreen.score.numberOfSubLevels) {
             items.bonus.good("flower")
+            return
+        }
         else {
             items.mainQuizScreen.question = currentPlanetLevels[currentSubLevel].question
             for(var i = 0 ; i < 4 ; i ++) {
@@ -88,6 +90,8 @@ function nextSubLevel(isAssessmentMode) {
             });
         }
     }
+
+    items.mainQuizScreen.closenessMeter.stopAnimations()
 
     if((currentSubLevel + 1) <= items.mainQuizScreen.score.numberOfSubLevels) {
         items.mainQuizScreen.optionListModel.clear()

@@ -292,6 +292,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: {
+                mainQuizScreen.closenessMeter.stopAnimations()
                 if(items.solarSystemVisible || items.assessmentMode)
                     activity.home()
                 else

@@ -35,6 +35,8 @@ Item {
     property alias score: score
     property alias optionListModel: optionListModel
     property alias restartAssessmentMessage: restartAssessmentMessage
+    property alias blockAnswerButtons: optionListView.blockAnswerButtons
+    property alias closenessMeter: closenessMeter
     property string planetRealImage
     property string question
     property string closenessMeterValue
@@ -161,7 +163,6 @@ Item {
                             mainQuizScreen.closenessMeterValue = closeness
                         }
                         else {
-                            optionListView.blockAnswerButtons = false
                             Activity.assessmentModeQuestions.shift()
                             mainQuizScreen.numberOfCorrectAnswers++
                             Activity.nextSubLevel(true)
@@ -201,6 +202,7 @@ Item {
 
         SequentialAnimation {
             id: closenessMeterIncorrectAnswerAnimation
+            onStarted: optionListView.blockAnswerButtons = true
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
             onStopped: optionListView.blockAnswerButtons = false
@@ -208,16 +210,12 @@ Item {
 
         SequentialAnimation {
             id: closenessMeterCorrectAnswerAnimation
+            onStarted: optionListView.blockAnswerButtons = true
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.1; duration: 450 }
             NumberAnimation { target: closenessMeter; property: "scale"; to: 1.0; duration: 450 }
-            ScriptAction {
-                script: {
-                    optionListView.blockAnswerButtons = false
-                    Activity.nextSubLevel()
-                }
-            }
+            ScriptAction { script: { Activity.nextSubLevel() } }
         }
 
         ParticleSystemStarLoader {
@@ -226,10 +224,9 @@ Item {
         }
 
         function stopAnimations() {
-            if(closenessMeterCorrectAnswerAnimation.running)
-                closenessMeterCorrectAnswerAnimation.stop()
-            if(closenessMeterIncorrectAnswerAnimation.running)
-                closenessMeterIncorrectAnswerAnimation.stop()
+            optionListView.blockAnswerButtons = false
+            closenessMeterCorrectAnswerAnimation.stop()
+            closenessMeterIncorrectAnswerAnimation.stop()
         }
     }
 
