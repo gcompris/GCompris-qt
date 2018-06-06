@@ -153,7 +153,7 @@ ActivityBase {
             property alias toolsMode: finalPanel.toolsMode
             property alias saveToFilePrompt2: saveToFilePrompt2
             property alias saveToFilePrompt: saveToFilePrompt
-            property color paintColor: "#000000"
+            property color paintColor: "#00ff00"
             property var urlImage
             property bool next: false
             property bool next2: false
@@ -939,6 +939,11 @@ ActivityBase {
 
         FinalPanel {
             id: finalPanel
+        }
+
+        ColorDialogue {
+            anchors.centerIn: parent
+            visible: false
         }
 
 //        ToolsMode {

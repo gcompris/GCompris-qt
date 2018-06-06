@@ -1,5 +1,7 @@
 import QtQuick 2.6
 import GCompris 1.0
+import QtQuick.Controls 1.5
+import QtQuick.Controls.Styles 1.4
 import "../../core"
 import "paint.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
@@ -64,7 +66,7 @@ Item {
 
     ListModel {
         id: colorModel
-        ListElement {colorCode: "#ff0000"} ListElement {colorCode: "#00ff00"} ListElement {colorCode: "#0000ff"}
+        ListElement {colorCode: "#ff0000"} ListElement {colorCode: "#000000"} ListElement {colorCode: "#0000ff"}
         ListElement {colorCode: "#ffff00"} ListElement {colorCode: "#00ffff"} ListElement {colorCode: "#ff00ff"}
         ListElement {colorCode: "#800000"} ListElement {colorCode: "#000080"} ListElement {colorCode: "#ff4500"}
         ListElement {colorCode: "#A0A0A0"} ListElement {colorCode: "#d2691e"} ListElement {colorCode: "#8b008b"}
@@ -110,7 +112,7 @@ Item {
 
         GridView {
             id: menuGrid
-            width: parent.width * 0.75
+            width: parent.width * 0.40
             height: parent.height * 0.80
             anchors.centerIn: parent
             visible: root.activePanel == "menuPanel"
@@ -151,7 +153,10 @@ Item {
             id: colorGrid
             width: parent.width * 0.75
             height: parent.height * 0.80
-            anchors.centerIn: parent
+            anchors.left: selectedColor.right
+            anchors.verticalCenter: menuPanel.verticalCenter
+            anchors.leftMargin: 30
+            anchors.rightMargin: 10
             anchors.topMargin: 10
             cellWidth: width / 4.7
             cellHeight: height / 3.6
@@ -164,27 +169,31 @@ Item {
                 width: colorGrid.cellWidth * 0.80
                 height: colorGrid.cellHeight * 0.90
                 color: modelData
+                scale: items.activeColorIndex === index ? 1.2 : 1
                 border.width: 3
                 border.color: modelData
-
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
 
                     onEntered: {
-                        parent.border.color = "grey"
-                        root1.scale = 1.1
+                        if(items.activeColorIndex != index) {
+                            parent.border.color = "grey"
+                            root1.scale = 1.1
+                        }
                     }
                     onExited: {
-                        parent.border.color = modelData
-                        root1.scale = 1
+                        if(items.activeColorIndex != index) {
+                            root1.scale = 1
+                            parent.border.color = modelData
+                        }
                     }
 
-                    // choose other color:
-                    onDoubleClicked: {
-                        items.activeColorIndex = index
-                        colorDialog.visible = true
-                    }
+                    //                    // choose other color:
+                    //                    onDoubleClicked: {
+                    //                        items.activeColorIndex = index
+                    //                        colorDialog.visible = true
+                    //                    }
 
                     // set this color as current paint color
                     onClicked: {
@@ -193,6 +202,9 @@ Item {
                         background.hideExpandedTools()
                         items.paintColor = color
                         background.reloadSelectedPen()
+                        colorPicker.updateColor((items.paintColor).toString())
+                        //if()
+
                         //colorPalette.visible = false
                         foldAnimation.start()
                         root.showAllTabs()
@@ -205,7 +217,6 @@ Item {
                     anchors.top: parent.top
                     anchors.right: parent.right
                     color: "transparent"
-
                     Image {
                         source: Activity.url + "color_wheel.svg"
                         anchors.fill: parent
@@ -221,6 +232,52 @@ Item {
                         }
                     }
                 }
+            }
+        }
+
+        ColorDialogue {
+            id: colorPicker
+            anchors.left: menuPanel.left
+            anchors.verticalCenter: menuPanel.verticalCenter
+            visible: colorGrid.visible
+            //anchors.topMargin: menuPanel.height * 0.10
+            anchors.leftMargin: 20
+            //onVisibleChanged: visible ?  colorPicker.updateColor((items.paintColor).toString()) : null
+        }
+
+        Rectangle {
+            id: selectedColor
+            width: menuPanel.width * 0.08
+            height: menuPanel.height * 0.30
+            visible: colorGrid.visible
+            radius: 8
+            border.width: 3
+            z: colorGrid.z
+            anchors.left: colorPicker.right
+            anchors.leftMargin: 10
+            anchors.bottom: colorGrid.bottom
+            anchors.bottomMargin: 30
+            color: colorPicker.currentColorCode
+//            MouseArea {
+//                anchors.fill: parent
+//                onClicked: {
+//                    colorPicker.updateColor((items.paintColor).toString())
+//                }
+//            }
+        }
+
+        Button {
+            style: GCButtonStyle { textSize: "title"}
+            text: qsTr("Save")
+            width: selectedColor.width
+            anchors.left: selectedColor.left
+            anchors.bottomMargin: 30
+            //anchors.verticalCenter: selectedColor.verticalCenter
+            anchors.bottom: selectedColor.top
+            onClicked: {
+                root.colorModel.remove(items.activeColorIndex)
+                root.colorModel.insert(items.activeColorIndex, {colorCode: (colorPicker.currentColor()).toString()})
+                items.paintColor = (colorPicker.currentColor()).toString()
             }
         }
 
