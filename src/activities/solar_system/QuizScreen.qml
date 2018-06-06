@@ -128,6 +128,12 @@ Item {
 
                 add: Transition {
                     NumberAnimation { properties: "y"; from: parent.y; duration: 500 }
+                    onRunningChanged: {
+                        if(running)
+                            optionListView.blockAnswerButtons = true
+                        if(!running)
+                            optionListView.blockAnswerButtons = false
+                    }
                 }
 
                 property bool blockAnswerButtons: false
