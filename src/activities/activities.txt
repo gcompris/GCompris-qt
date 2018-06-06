@@ -136,6 +136,7 @@ share
 simplepaint
 smallnumbers
 smallnumbers2
+solar_system
 submarine
 sudoku
 superbrain
