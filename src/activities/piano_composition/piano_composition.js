@@ -23,12 +23,10 @@
 .import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
-.import "qrc:/gcompris/src/activities/piano_composition/NoteNotations.js" as NoteNotations
 
 var currentLevel = 0
 var numberOfLevel = 7
 var items
-var notesDetails = NoteNotations.get()
 var userDir = "file://" + GCompris.ApplicationInfo.getSharedWritablePath() + "/" + "piano_composition"
 var userFile = userDir + "/melodies.json"
 var undoStack = []
@@ -92,9 +90,9 @@ function initLevel() {
     items.bar.level = currentLevel + 1
 
     if(items.bar.level === 2)
-        items.background.clefType = "bass"
+        items.background.clefType = "Bass"
     else
-        items.background.clefType = "treble"
+        items.background.clefType = "Treble"
 
     if(items.bar.level === 4)
         items.piano.useSharpNotation = false
@@ -105,7 +103,7 @@ function initLevel() {
     items.multipleStaff.nbStaves = 2
     items.background.staffMode = "add"
     items.multipleStaff.noteToReplace = -1
-    items.staffModesOptions.currentIndex = 0
+    items.optionsRow.staffModeIndex = 0
     items.lyricsArea.resetLyricsArea()
     undoStack = []
 }
@@ -122,21 +120,6 @@ function undoChange() {
         var undoNoteDetails = undoStack[undoStack.length - 1]
         undoStack.pop()
         items.multipleStaff.undoChange(undoNoteDetails)
-    }
-}
-
-function getNoteDetails(noteName, noteType) {
-    var clef = items.background.clefType === 'treble' ? "Treble" : "Bass"
-    var noteNotation
-    if(noteType === "Rest")
-        noteNotation = noteName + noteType
-    else
-        noteNotation = clef + noteName
-    console.log(noteNotation)
-    for(var i = 0; i < notesDetails.length; i++) {
-        if(noteNotation === notesDetails[i].noteName) {
-            return notesDetails[i]
-        }
     }
 }
 

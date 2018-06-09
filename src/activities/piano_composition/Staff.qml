@@ -23,7 +23,6 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
-import "piano_composition.js" as Activity
 
 Item {
     id: staff
@@ -47,7 +46,7 @@ Item {
 
     Image {
         id: clefImage
-        source: clef ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clef + "Clef.svg" : ""
+        source: clef ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clef.toLowerCase() + "Clef.svg" : ""
         sourceSize.width: (nbLines - 2) * verticalDistanceBetweenLines
     }
 

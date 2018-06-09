@@ -57,6 +57,9 @@ Item {
     property var noteDetails
     readonly property int notesPositionBelowStaffWithBars: 6
 
+    property bool noteAnswered: false
+    property bool isCorrectlyAnswered: false
+
     rotation: {
         if((noteDetails === undefined) || ((noteDetails.positionOnStaff < 0) && (noteType === "Whole")))
             return 0
@@ -69,12 +72,12 @@ Item {
     Image {
         id: blackTypeImage
         source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
-        sourceSize.width: noteImage.width / 2.5
+        sourceSize.width: noteImage.width / 2
         anchors.right: parent.rotation === 180 ? undefined : noteImage.left
         anchors.left: parent.rotation === 180 ? noteImage.right : undefined
         rotation: parent.rotation === 180 ? 180 : 0
-        anchors.rightMargin: -12
-        anchors.leftMargin: -18
+        anchors.rightMargin: -noteImage.width / 4
+        anchors.leftMargin: -noteImage.width / 2.5
         anchors.bottom: noteImage.bottom
         anchors.bottomMargin: parent.height / 6
         fillMode: Image.PreserveAspectFit
@@ -97,7 +100,7 @@ Item {
         opacity: 0.6
         border.color: "white"
         radius: width / 6
-        visible: noteMouseArea.containsMouse || highlightTimer.running
+        visible: (multipleStaff.noteHoverEnabled && noteMouseArea.containsMouse) || highlightTimer.running
     }
 
     Rectangle {
@@ -119,6 +122,22 @@ Item {
         sourceSize.width: 200
         width: note.width
         height: note.height
+    }
+
+    Image {
+        id: correctOrWrongAnswerIndicator
+        visible: noteAnswered
+        source: isCorrectlyAnswered ? "qrc:/gcompris/src/activities/piano_composition/resource/passed.svg"
+                                    : "qrc:/gcompris/src/activities/piano_composition/resource/failed.svg"
+        sourceSize.width: noteImage.width / 2.5
+        anchors.right: parent.rotation === 180 ? undefined : noteImage.right
+        anchors.left: parent.rotation === 180 ? noteImage.left : undefined
+        rotation: parent.rotation === 180 ? 180 : 0
+        anchors.rightMargin: 12
+        anchors.bottom: noteImage.bottom
+        anchors.bottomMargin: parent.height / 6
+        fillMode: Image.PreserveAspectFit
+        z: 3
     }
 
     // If the result is not good enough maybe have a rectangle and use opacity mask with a note

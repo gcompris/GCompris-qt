@@ -112,7 +112,7 @@ Rectangle {
         lyricsArea.title = ""
         lyricsArea.origin = ""
         lyricsArea.lyrics = ""
-        lyricsOrPianoModeOption.currentIndex = 0
+        optionsRow.lyricsOrPianoModeIndex = 0
     }
 
     function setLyrics(title, origin, lyrics) {
@@ -120,6 +120,6 @@ Rectangle {
         lyricsArea.title = title
         lyricsArea.origin = origin
         lyricsArea.lyrics = lyrics
-        lyricsOrPianoModeOption.currentIndex = 1
+        optionsRow.lyricsOrPianoModeIndex = 1
     }
 }

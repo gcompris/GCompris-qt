@@ -42,20 +42,8 @@ The following keyboard bindings work in this game:
 - enter/return: OK button
 - space bar: play
 - number keys:
-  - 1: C
-  - 2: D
-  - 3: E
-  - 4: F
-  - 5: G
-  - 6: A
-  - 7: B
-  - 8: C (higher octave)
-  - etc.
-  - F1: C# / Db
-  - F2: D# / Eb
-  - F3: F# / Gb
-  - F4: G# / Ab
-  - F5: A# / Bb
+  - 1 to 8: Corresponding white keys in the order on the displayed octave.
+  - F1 to F5: Corresponding black keys in the order on the displayed octave.
 ")
   credit: ""
   section: "discovery sound_group"

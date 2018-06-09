@@ -37,7 +37,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Knowledge of musical notation and musical staff. Play the activity named 'Piano Composition' first.")
   //: Help manual
-  manual: qsTr("The notes you see will be played to you. Click on the corresponding keys on the keyboard that match the notes you hear and see.<br>Each level has 5 sublevels. Levels 1-5 will offer treble clef to practice and levels 6-10 will offer bass clef.")
+  manual: qsTr("The notes you see will be played to you. Click on the corresponding keys on the keyboard that match the notes you hear and see.<br>Each level has 5 sublevels. Levels 1-6 will offer treble clef to practice and levels 7-11 will offer bass clef.")
   credit: ""
   section: "discovery sound_group"
   createdInVersion: 9500

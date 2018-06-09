@@ -23,7 +23,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
-import "piano_composition.js" as Activity
+import "qrc:/gcompris/src/activities/piano_composition/NoteNotations.js" as NoteNotations
 
 Item {
     id: multipleStaff
@@ -39,13 +39,32 @@ Item {
     // Stores the note number which is to be replaced.
     property int noteToReplace: -1
     property bool noteIsColored
+    property bool noteHoverEnabled: true
+    property bool centerNotesPosition: false
     property bool isMetronomeDisplayed: false
+    readonly property bool isMusicPlaying: musicTimer.running
 
     property alias flickableStaves: flickableStaves
     property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2
+    property bool isFlickable: true
 
+    /**
+     * Emitted when a note is clicked.
+     *
+     * It is used for selecting note to play, replace and edit it.
+     */
     signal noteClicked(string noteName, string noteType, int noteIndex)
+
+    /**
+     * Emitted when a change in any note is made to push it to the undo stack.
+     */
     signal pushToUndoStack(int noteIndex, string oldNoteName, string oldNoteType)
+
+    /**
+     * Emitted for the notes while a melody is playing.
+     *
+     * It is used to indicate the corresponding piano key.
+     */
     signal notePlayed(string noteName)
 
     ListModel {
@@ -54,6 +73,7 @@ Item {
 
     Flickable {
         id: flickableStaves
+        interactive: multipleStaff.isFlickable
         flickableDirection: Flickable.VerticalFlick
         contentWidth: staffColumn.width
         contentHeight: staffColumn.height + 1.5 * distanceBetweenStaff
@@ -78,7 +98,7 @@ Item {
             }
         }
 
-        property real newNoteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 10
+        property real noteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 10
         Repeater {
             id: notesRepeater
             model: notesModel
@@ -87,14 +107,16 @@ Item {
                 noteType: noteType_
                 highlightWhenPlayed: highlightWhenPlayed
                 noteIsColored: multipleStaff.noteIsColored
-                width: flickableStaves.newNoteWidth
+                width: flickableStaves.noteWidth
                 height: multipleStaff.height / 5
 
                 readonly property int currentStaffNb: index / nbMaxNotesPerStaff
+                readonly property real defaultX: staves.itemAt(0).clefImageWidth + ((index % nbMaxNotesPerStaff) * flickableStaves.noteWidth)
+                readonly property real centeredPosition: (multipleStaff.width / 2.5 - (flickableStaves.noteWidth * notesModel.count / 2) + defaultX)
 
-                x: staves.itemAt(0).clefImageWidth + ((index % nbMaxNotesPerStaff) * flickableStaves.newNoteWidth)
+                x: multipleStaff.centerNotesPosition ? centeredPosition : defaultX
 
-                noteDetails: Activity.getNoteDetails(noteName, noteType)
+                noteDetails: multipleStaff.getNoteDetails(noteName, noteType)
 
                 MouseArea {
                     id: noteMouseArea
@@ -126,6 +148,28 @@ Item {
         }
     }
 
+    /**
+     * Gets all the details of any note like note image, position on staff etc. from NoteNotations.
+     */
+    function getNoteDetails(noteName, noteType) {
+        var notesDetails = NoteNotations.get()
+        var clef = background.clefType
+        var noteNotation
+        if(noteType === "Rest")
+            noteNotation = noteName + noteType
+        else
+            noteNotation = clef + noteName
+
+        for(var i = 0; i < notesDetails.length; i++) {
+            if(noteNotation === notesDetails[i].noteName) {
+                return notesDetails[i]
+            }
+        }
+    }
+
+    /**
+     * Calculates and assign the timer interval for a note.
+     */
     function calculateTimerDuration(noteType) {
         noteType = noteType.toLowerCase()
         if(noteType === "whole")
@@ -138,6 +182,9 @@ Item {
             return 812.5
     }
 
+    /**
+     * Adds a note to the staff.
+     */
     function addNote(noteName, noteType, highlightWhenPlayed, playAudio, isReplacing) {
         var duration
         if(noteType === "Rest")
@@ -168,6 +215,12 @@ Item {
             playNoteAudio(noteName, noteType)
     }
 
+    /**
+     * Replaces the selected note with a new note.
+     *
+     * @param noteName: new note name.
+     * @param noteType: new note type.
+     */
     function replaceNote(noteName, noteType) {
         if(noteToReplace != -1) {
             addNote(noteName, noteType, false, true, true)
@@ -175,6 +228,11 @@ Item {
         noteToReplace = -1
     }
 
+    /**
+     * Erases the selected note.
+     *
+     * @param noteIndex: index of the note to be replaced
+     */
     function eraseNote(noteIndex) {
         var noteLength = notesModel.get(noteIndex).mDuration
         var restName
@@ -192,11 +250,17 @@ Item {
         notesModel.set(noteIndex, { "noteName_": restName, "noteType_": "Rest" })
     }
 
+    /**
+     * Erases all the notes.
+     */
     function eraseAllNotes() {
         notesModel.clear()
         noteToReplace = -1
     }
 
+    /**
+     * Undo the change made to the last note.
+     */
     function undoChange(undoNoteDetails) {
         if(undoNoteDetails.oldNoteName_ === "none")
             notesModel.remove(undoNoteDetails.noteIndex_)
@@ -207,6 +271,12 @@ Item {
         noteToReplace = -1
     }
 
+    /**
+     * Plays audio for a note.
+     *
+     * @param noteName: name of the note to be played.
+     * @param noteType: note type to be played.
+     */
     function playNoteAudio(noteName, noteType) {
         if(noteType != "Rest") {
             var audioPitchType
@@ -240,11 +310,13 @@ Item {
             else
                 audioPitchType = "bass"
             var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + audioPitchType + "_pitches/" + noteName + ".wav"
-            console.log(noteToPlay)
             items.audioEffects.play(noteToPlay)
         }
     }
 
+    /**
+     * Get all the notes from the notesModel and returns the melody.
+     */
     function getAllNotes() {
         var melody = "" + multipleStaff.clef
         for(var i = 0; i < notesModel.count; i ++)
@@ -252,6 +324,11 @@ Item {
         return melody
     }
 
+    /**
+     * Loads melody from the provided data, to the staffs.
+     *
+     * @rparam data: melody to be loaded
+     */
     function loadFromData(data) {
         eraseAllNotes()
         var melody = data.split(" ")
@@ -277,6 +354,25 @@ Item {
         }
     }
 
+    /**
+     * Used in the activity play_piano.
+     *
+     * Checks if the answered note is correct
+     */
+    function indicateAnsweredNote(isCorrectAnswer, noteIndexAnswered) {
+        notesRepeater.itemAt(noteIndexAnswered).noteAnswered = true
+        notesRepeater.itemAt(noteIndexAnswered).isCorrectlyAnswered = isCorrectAnswer
+    }
+
+    /**
+     * Used in the activity play_piano.
+     *
+     * Reverts the previous answer.
+     */
+    function revertAnswer(noteIndexReverting) {
+        notesRepeater.itemAt(noteIndexReverting).noteAnswered = false
+    }
+
     function play() {
         musicTimer.currentNote = 0
         musicTimer.interval = 500
@@ -288,6 +384,9 @@ Item {
         musicTimer.start()
     }
 
+    /**
+     * Stops the audios playing.
+     */
     function stopAudios() {
         notesModel.clear()
         musicTimer.stop()

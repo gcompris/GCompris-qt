@@ -36,7 +36,7 @@ Item {
 
     property int numberOfWhite: 8
     property int currentOctaveNb: defaultOctaveNb
-    readonly property int defaultOctaveNb: background.clefType === "treble" ? 1 : 0
+    readonly property int defaultOctaveNb: background.clefType === "Treble" ? 1 : 0
     readonly property int maxNbOctaves: whiteNotes.length
 
     onDefaultOctaveNbChanged: currentOctaveNb = defaultOctaveNb
@@ -59,7 +59,7 @@ Item {
         [["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)], ["A4", qsTr("A%1").arg(4)], ["B4", qsTr("B%1").arg(4)], ["C5", qsTr("C%1").arg(5)]],
         [["C5", qsTr("C%1").arg(5)], ["D5", qsTr("D%1").arg(5)], ["E5", qsTr("E%1").arg(5)], ["F5", qsTr("F%1").arg(5)], ["G5", qsTr("G%1").arg(5)], ["A5", qsTr("A%1").arg(5)], ["B5", qsTr("B%1").arg(5)], ["C6", qsTr("C%1").arg(6)]]
     ]
-    readonly property var whiteNotes: background.clefType === "treble" ? whiteNotesTreble : whiteNotesBass
+    readonly property var whiteNotes: background.clefType === "Treble" ? whiteNotesTreble : whiteNotesBass
 
     // Sharp black key notes when the clef is bass.
     //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
@@ -75,7 +75,7 @@ Item {
         [["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)], ["G#4", qsTr("G#%1").arg(4)], ["A#4", qsTr("A#%1").arg(4)]],
         [["C#5", qsTr("C#%1").arg(5)], ["D#5", qsTr("D#%1").arg(5)], ["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)]]
     ]
-    readonly property var blackNotesSharp: background.clefType === "treble" ? blackNotesSharpTreble : blackNotesSharpBass
+    readonly property var blackNotesSharp: background.clefType === "Treble" ? blackNotesSharpTreble : blackNotesSharpBass
 
     // Flat black key notes when the clef is bass.
     //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
@@ -91,7 +91,7 @@ Item {
         [["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)], ["Ab4", qsTr("Ab%1").arg(4)], ["Bb4", qsTr("Bb%1").arg(4)]],
         [["Db5", qsTr("Db%1").arg(5)], ["Eb5", qsTr("Eb%1").arg(5)], ["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)]]
     ]
-    readonly property var blackNotesFlat: background.clefType === "treble" ? blackNotesFlatTreble : blackNotesFlatBass
+    readonly property var blackNotesFlat: background.clefType === "Treble" ? blackNotesFlatTreble : blackNotesFlatBass
 
     // Black note labels used, can be sharp or flat
     readonly property var blackNotes: useSharpNotation ? blackNotesSharp : blackNotesFlat
@@ -107,7 +107,7 @@ Item {
         [14.33, 41.67, 82.25, 108.25, 134.75],
         [14.33, 41.67, 82.25, 108.25, 154],
     ]
-    readonly property var blacks: background.clefType === "treble" ? blacksTreble : blacksBass
+    readonly property var blacks: background.clefType === "Treble" ? blacksTreble : blacksBass
 
     // Color of white key labels when the clef is bass
     readonly property var colorWhiteNotesBass: [
@@ -120,7 +120,7 @@ Item {
         ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
         ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"]
     ]
-    readonly property var colorWhiteNotes: background.clefType === "treble" ? colorWhiteNotesTreble : colorWhiteNotesBass
+    readonly property var colorWhiteNotes: background.clefType === "Treble" ? colorWhiteNotesTreble : colorWhiteNotesBass
 
     // Color of black key labels when the clef is bass
     readonly property var colorBlackNotesBass: [
@@ -133,13 +133,14 @@ Item {
         ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
         ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"]
     ]
-    readonly property var colorBlackNotes: background.clefType === "treble" ? colorBlackNotesTreble : colorBlackNotesBass
+    readonly property var colorBlackNotes: background.clefType === "Treble" ? colorBlackNotesTreble : colorBlackNotesBass
 
     signal noteClicked(string note)
 
     property bool blackLabelsVisible: true
     property bool whiteLabelsVisible: true
     property bool blackKeysEnabled: true
+    property bool whiteKeysEnabled: true
     property bool useSharpNotation: true
     property int labelSquareSize: whiteWidth - 5
 
@@ -155,13 +156,14 @@ Item {
             noteColor: colorWhiteNotes[currentOctaveNb][index]
             keyName: whiteNotes[currentOctaveNb][index][1]
             labelsVisible: whiteLabelsVisible
+            isKeyEnabled: piano.whiteKeysEnabled
             onKeyPressed: noteClicked(whiteNotes[currentOctaveNb][index][0])
         }
     }
 
     Repeater {
         id: blackKeyRepeater
-        model: Object.keys(blackNotes[currentOctaveNb]).length
+        model: blackNotes[currentOctaveNb].length
         PianoKey {
             color: "black"
             width: blackWidth

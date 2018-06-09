@@ -72,19 +72,19 @@ ActivityBase {
             if(event.key === Qt.Key_8) {
                 piano.whiteKeyRepeater.itemAt(7).keyPressed()
             }
-            if(event.key === Qt.Key_F1 && bar.level >= 4) {
+            if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
                 piano.blackKeyRepeater.itemAt(0).keyPressed()
             }
-            if(event.key === Qt.Key_F2 && bar.level >= 4) {
+            if(event.key === Qt.Key_F2 && piano.blackKeysEnabled) {
                 piano.blackKeyRepeater.itemAt(1).keyPressed()
             }
-            if(event.key === Qt.Key_F3 && bar.level >= 4) {
+            if(event.key === Qt.Key_F3 && piano.blackKeysEnabled) {
                 piano.blackKeyRepeater.itemAt(2).keyPressed()
             }
-            if(event.key === Qt.Key_F4 && bar.level >= 4) {
+            if(event.key === Qt.Key_F4 && piano.blackKeysEnabled) {
                 piano.blackKeyRepeater.itemAt(3).keyPressed()
             }
-            if(event.key === Qt.Key_F5 && bar.level >= 4) {
+            if(event.key === Qt.Key_F5 && piano.blackKeysEnabled) {
                 piano.blackKeyRepeater.itemAt(4).keyPressed()
             }
             if(event.key === Qt.Key_Delete) {
@@ -108,7 +108,7 @@ ActivityBase {
             property alias melodyList: melodyList
             property alias file: file
             property alias piano: piano
-            property alias staffModesOptions: staffModesOptions
+            property alias optionsRow: optionsRow
             property alias lyricsArea: lyricsArea
         }
 
@@ -120,7 +120,7 @@ ActivityBase {
         property string clefType: bar.level == 2 ? "bass" : "treble"
         property string staffMode: "add"
         property bool undidChange: false
-        property bool isLyricsMode: (lyricsOrPianoModeOption.currentIndex === 1) && lyricsOrPianoModeOption.visible
+        property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
 
         File {
             id: file
@@ -269,179 +269,46 @@ ActivityBase {
             id: lyricsArea
         }
 
-        Row {
+        OptionsRow {
             id: optionsRow
             anchors.top: instructionBox.bottom
             anchors.topMargin: 10
-            spacing: 15
             anchors.horizontalCenter: parent.horizontalCenter
 
-            readonly property var noteLengthName: ["Whole", "Half", "Quarter", "Eighth"]
-            readonly property var staffModes: ["add", "replace", "erase"]
-            readonly property var lyricsOrPianoModes: ["piano", "lyrics"]
-            readonly property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing *12) / 14)
+            noteOptionsVisible: bar.level > 4
+            playButtonVisible: true
+            clefButtonVisible: bar.level > 2
+            staffModesOptionsVisible: true
+            clearButtonVisible: true
+            undoButtonVisible: true
+            openButtonVisible: bar.level > 6
+            saveButtonVisible: bar.level > 6
+            changeAccidentalStyleButtonVisible: bar.level >= 4
+            lyricsOrPianoModeOptionVisible: bar.level > 6
+            restOptionsVisible: bar.level > 5
 
-            SwitchableOptions {
-                id: noteOptions
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex])
-                nbOptions: optionsRow.noteLengthName.length
-                onClicked: currentType = optionsRow.noteLengthName[currentIndex]
-                visible: bar.level > 4
+            onUndoButtonClicked: {
+                background.undidChange = true
+                Activity.undoChange()
+                background.undidChange = false
             }
-
-            Image {
-                id: playButton
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
-                sourceSize.width: optionsRow.iconsWidth
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: multipleStaff.play()
+            onClearButtonClicked: {
+                lyricsArea.resetLyricsArea()
+                Activity.undoStack = []
+                multipleStaff.eraseAllNotes()
+            }
+            onOpenButtonClicked: {
+                melodyList.melodiesModel.clear()
+                var dataset = Dataset.get()
+                for(var i = 0; i < dataset.length; i++) {
+                    melodyList.melodiesModel.append(dataset[i])
                 }
+                piano.enabled = false
+                bar.visible = false
+                melodyList.visible = true
+                melodyList.forceActiveFocus()
             }
-
-            Image {
-                id: clefButton
-                source: clefType == "bass" ? "qrc:/gcompris/src/activities/piano_composition/resource/bassClefButton.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/trebbleClefButton.svg"
-                sourceSize.width: optionsRow.iconsWidth
-                visible: bar.level > 2
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        multipleStaff.eraseAllNotes()
-                        clefType = (clefType == "bass") ? "treble" : "bass"
-                        lyricsArea.resetLyricsArea()
-                    }
-                }
-            }
-
-            SwitchableOptions {
-                id:staffModesOptions
-                nbOptions: optionsRow.staffModes.length
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.staffModes[currentIndex])
-                anchors.top: parent.top
-                anchors.topMargin: 4
-                onClicked: {
-                    background.staffMode = optionsRow.staffModes[currentIndex]
-                    if(background.staffMode != "replace") {
-                        multipleStaff.noteToReplace = -1
-                    }
-                }
-                visible: true
-            }
-
-            Image {
-                id: clearButton
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/edit-clear.svg"
-                sourceSize.width: optionsRow.iconsWidth
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        lyricsArea.resetLyricsArea()
-                        Activity.undoStack = []
-                        multipleStaff.eraseAllNotes()
-                    }
-                }
-            }
-
-            Image {
-                id: undoButton
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/undo.svg"
-                sourceSize.width: optionsRow.iconsWidth
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        background.undidChange = true
-                        Activity.undoChange()
-                        background.undidChange = false
-                    }
-                }
-            }
-
-            Image {
-                id: openButton
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/open.svg"
-                sourceSize.width: optionsRow.iconsWidth
-                visible: bar.level > 6
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        melodyList.melodiesModel.clear()
-                        var dataset = Dataset.get()
-                        for(var i = 0; i < dataset.length; i++) {
-                            melodyList.melodiesModel.append(dataset[i])
-                        }
-                        piano.enabled = false
-                        bar.visible = false
-                        melodyList.visible = true
-                        melodyList.forceActiveFocus()
-                    }
-                }
-            }
-
-            Image {
-                id: saveButton
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
-                sourceSize.width: optionsRow.iconsWidth
-                visible: bar.level == 7
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        Activity.saveMelody()
-                    }
-                }
-            }
-
-            Image {
-                id: changeAccidentalStyleButton
-                source: piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/blackflat.svg"
-                visible: bar.level >= 4
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: piano.useSharpNotation = !piano.useSharpNotation
-                }
-            }
-
-            SwitchableOptions {
-                id: lyricsOrPianoModeOption
-                nbOptions: optionsRow.lyricsOrPianoModes.length
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1-icon.svg".arg(optionsRow.lyricsOrPianoModes[currentIndex])
-                anchors.top: parent.top
-                anchors.topMargin: 4
-                visible: bar.level > 6
-            }
-
-            // Since the half rest image is just the rotated image of whole rest image, we check if the current rest type is half, we assign the source as whole rest and rotate it by 180 degrees.
-            SwitchableOptions {
-                id: restOptions
-
-                readonly property string restTypeImage: ((optionsRow.noteLengthName[currentIndex] === "Half") ? "Whole" : optionsRow.noteLengthName[currentIndex]).toLowerCase()
-
-                source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
-                nbOptions: optionsRow.noteLengthName.length
-                onClicked: restType = optionsRow.noteLengthName[currentIndex]
-                rotation: optionsRow.noteLengthName[currentIndex] === "Half" ? 180 : 0
-                visible: bar.level > 5
-            }
-
-            Image {
-                id: addRestButton
-                sourceSize.width: optionsRow.iconsWidth
-                source: "qrc:/gcompris/src/core/resource/apply.svg"
-                visible: restOptions.visible
-                anchors.top: parent.top
-                anchors.topMargin: 4
-                MouseArea {
-                    anchors.fill: parent
-                    onPressed: parent.scale = 0.8
-                    onReleased: {
-                        parent.scale = 1
-                        if(background.staffMode === "add")
-                            multipleStaff.addNote(restType.toLowerCase(), "Rest", false, false)
-                        else
-                            multipleStaff.replaceNote(restType.toLowerCase(), "Rest")
-                    }
-                }
-            }
+            onSaveButtonClicked: Activity.saveMelody()
         }
 
         DialogHelp {
