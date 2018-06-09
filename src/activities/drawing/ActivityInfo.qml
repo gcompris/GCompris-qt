@@ -18,12 +18,12 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "paint/Paint.qml"
+  name: "drawing/Drawing.qml"
   difficulty: 1
-  icon: "paint/paint.svg"
+  icon: "drawing/drawing.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
-  title: "TuxPaint"
+  title: "Drawing"
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: ""

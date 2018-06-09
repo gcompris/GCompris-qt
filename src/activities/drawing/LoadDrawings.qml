@@ -98,7 +98,7 @@ Rectangle {
 
             Image {
                 id: switchToSavedPaintings
-                source: "qrc:/gcompris/src/activities/paint/paint.svg"
+                source: "qrc:/gcompris/src/activities/drawing/drawing.svg"
                 anchors.right: parent.right
                 anchors.top: exitButton.bottom
                 smooth: true
