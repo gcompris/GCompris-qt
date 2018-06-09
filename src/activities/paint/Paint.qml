@@ -150,7 +150,7 @@ ActivityBase {
             //property alias colorPalette: colorPalette
             //property alias toolsSize: toolsSize
             property int activeColorIndex: 1
-            property alias toolsMode: finalPanel.toolsMode
+            property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt2: saveToFilePrompt2
             property alias saveToFilePrompt: saveToFilePrompt
             property color paintColor: "#00ff00"
@@ -917,8 +917,8 @@ ActivityBase {
                 items.paintColor = colorDialog.color
                 //items.colorPalette.colorModel.remove(items.activeColorIndex)
                 //items.colorPalette.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
-                finalPanel.colorModel.remove(items.activeColorIndex)
-                finalPanel.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
+                foldablePanels.colorModel.remove(items.activeColorIndex)
+                foldablePanels.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
                 colorPalette.visible = false
                 console.log("You chose: " + colorDialog.color)
             }
@@ -932,13 +932,8 @@ ActivityBase {
             opacity: 0
         }
 
-//        FoldablePanels {
-//            id: foldablePanels
-//            visible: false
-//        }
-
-        FinalPanel {
-            id: finalPanel
+        FoldablePanels {
+            id: foldablePanels
         }
 
         ColorDialogue {
@@ -946,19 +941,5 @@ ActivityBase {
             visible: false
         }
 
-//        ToolsMode {
-//            id: toolsMode
-//            visible: false
-//        }
-
-//        ColorPalette {
-//            id: colorPalette
-//            visible: false
-//        }
-
-//        ToolsSize {
-//            id: toolsSize
-//            visible: false
-//        }
     }
 }

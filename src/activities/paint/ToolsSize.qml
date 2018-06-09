@@ -17,6 +17,8 @@
  */
 import QtQuick 2.6
 import QtQuick.Controls 1.5
+import QtQuick.Controls.Styles 1.4
+import QtQuick.Dialogs 1.0
 import GCompris 1.0
 import "../../core"
 import "paint.js" as Activity
@@ -38,6 +40,7 @@ Item {
     }
 
     Row {
+        id: thicknessRow
         spacing: slider.width / 4.6
         x: slider.x
         anchors.bottom: slider.top
