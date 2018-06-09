@@ -117,7 +117,7 @@ Rectangle {
 
         Image {
             id: sizeOfImages
-            source: "qrc:/gcompris/src/activities/paint/paint.svg"
+            source: "qrc:/gcompris/src/activities/drawing/drawing.svg"
             anchors.right: parent.right
             anchors.top: parent.top
             smooth: true

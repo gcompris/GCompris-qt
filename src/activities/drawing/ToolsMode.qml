@@ -34,36 +34,36 @@ Item {
     ListModel {
         id: pencilModes
         ListElement { name: "pencil";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/pencil.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pencil.png" }
         ListElement { name: "dot";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/pattern1.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern1.png" }
         ListElement { name: "pattern2";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/pattern3.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern3.png" }
         ListElement { name: "pattern3";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/pattern3.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern3.png" }
         ListElement { name: "spray";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/spray.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/spray.png" }
         ListElement { name: "brush3";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/brush3.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush3.png" }
         ListElement { name: "brush4";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/brush4.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush4.png" }
         ListElement { name: "brush5";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/brush5.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush5.png" }
         ListElement { name: "blur";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/blur.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/blur.png" }
     }
 
     ListModel {
         id: geometricModes
         ListElement { name: "rectangle";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/rectangle.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/rectangle.png" }
         ListElement { name: "circle";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/circle.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/circle.png" }
         ListElement { name: "lineShift";
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/line_straight.svg"
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/line_straight.svg"
         }
         ListElement { name: "line"
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/line_free.png"
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/line_free.png"
         }
     }
 
