@@ -87,7 +87,6 @@ function initLevel() {
     ctx.fill()
     items.canvas.requestPaint()
 
-
     items.next = false
     items.next2 = false
 

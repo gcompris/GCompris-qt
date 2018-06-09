@@ -18,164 +18,423 @@
 
 import QtQuick 2.6
 import GCompris 1.0
+import QtQuick.Controls 1.5
+import QtQuick.Controls.Styles 1.4
 import "../../core"
 import "paint.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
-Rectangle {
+Item {
     id: root
-    width: background.width
-    height: background.height * 0.08
-    color: "#add8e6"
-    anchors.top: background.top
-    anchors.horizontalCenter: background.horizontalCenter
-    property bool collapsePanels: true
+    property int tabWidth: background.width * 0.15
+    property int tabHeight: background.height * 0.06
+    property alias colorModel: colorModel
+    property string activePanel: "null"
+    property alias toolsMode: toolsMode
+    property color panelColor: "#1A1A1B"
 
-    ListView {
-        id: tools
-        width: root.width
-        interactive: false
-        anchors.top: root.top
-        model: nestedModel
-        anchors.right: root.right
-        orientation: ListView.Horizontal
-        //spacing: 10
-        delegate: categoryDelegate
+    ListModel {
+        id: menuModel
+        ListElement { itemName: qsTr("Save")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/filesaveas.svg" }
+        ListElement { itemName: qsTr("Load")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/fileopen.svg" }
+        ListElement { itemName: qsTr("Undo")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/undo.svg" }
+        ListElement { itemName: qsTr("Redo")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/redo.svg" }
+        ListElement { itemName: qsTr("Erase all")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
+        ListElement { itemName: qsTr("Background color")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/color_wheel.svg" }
+        ListElement { itemName: qsTr("Export to PNG")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
     }
 
     ListModel {
-        id: nestedModel
-        ListElement {
-            categoryName: "Menu"
-            collapsed: true
+        id: toolsModel
+        ListElement { itemName: qsTr("Pencil")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/pen.svg" }
+        ListElement { itemName: qsTr("Geometric")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
+        ListElement { itemName: qsTr("Text")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
+        ListElement { itemName: qsTr("Brush")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/brush_paint.png" }
+        ListElement { itemName: qsTr("Eraser")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/erase.svg" }
+        ListElement { itemName: qsTr("Bucket fill")
+            imgSource: "qrc:/gcompris/src/activities/paint/resource/fill.svg" }
+    }
 
-            // A ListElement can't contain child elements, but it can contain
-            // a list of elements. A list of ListElements can be used as a model
-            // just like any other model type.
-            subItems: [
-                ListElement { itemName: qsTr("Save") },
-                ListElement { itemName: qsTr("Load") },
-                ListElement { itemName: qsTr("Undo") },
-                ListElement { itemName: qsTr("Redo") },
-                ListElement { itemName: qsTr("Erase all") },
-                ListElement { itemName: qsTr("Background color") },
-                ListElement { itemName: qsTr("Export to PNG") }
-            ]
+    ListModel {
+        id: colorModel
+        ListElement {colorCode: "#ff0000"} ListElement {colorCode: "#000000"} ListElement {colorCode: "#0000ff"}
+        ListElement {colorCode: "#ffff00"} ListElement {colorCode: "#00ffff"} ListElement {colorCode: "#ff00ff"}
+        ListElement {colorCode: "#800000"} ListElement {colorCode: "#000080"} ListElement {colorCode: "#ff4500"}
+        ListElement {colorCode: "#A0A0A0"} ListElement {colorCode: "#d2691e"} ListElement {colorCode: "#8b008b"}
+    }
+
+    Rectangle {
+        id: menuTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: panelColor
+        border.color: "white"
+        y: -7
+        MouseArea {
+            anchors.fill: parent
+            enabled: (menuPanel.y < -5 && activePanel != "menuPanel") || (menuPanel.y > -5 && activePanel === "menuPanel")
+            onClicked: {
+                animTarget = menuTitle
+                colorGrid.visible = false
+                menuGrid.visible = true
+                root.activePanel = "menuPanel"
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
+                }
+                else {
+                    menuGrid.model = menuModel
+                    menuTitle.visible = true
+                    menuGrid.visible = true
+                    unfoldAnimation.start()
+                }
+            }
         }
 
-        ListElement {
-            categoryName: "Tools"
-            collapsed: true
-            subItems: [
-                ListElement { itemName: qsTr("Pencil") },
-                ListElement { itemName: qsTr("Geometric") },
-                ListElement { itemName: qsTr("Text") },
-                ListElement { itemName: qsTr("Brush") },
-                ListElement { itemName: qsTr("Line") },
-                ListElement { itemName: qsTr("Eraser") },
-                ListElement { itemName: qsTr("Bucket fill") }
-            ]
-        }
-
-        ListElement {
-            categoryName: "Color"
-            collapsed: true
-            subItems: [
-                ListElement { itemName: qsTr("Red") },
-                ListElement { itemName: qsTr("Green") },
-                ListElement { itemName: qsTr("Yellow") },
-                ListElement { itemName: qsTr("Orange") },
-                ListElement { itemName: qsTr("Blue") },
-                ListElement { itemName: qsTr("More Colors") }
-            ]
-        }
-
-        ListElement {
-            categoryName: "Tool Options"
-            collapsed: true
-            subItems: [
-                ListElement { itemName: qsTr("Modes") },
-                ListElement { itemName: qsTr("Size") },
-                ListElement { itemName: qsTr("More to be added") }
-            ]
+        GCText {
+            text: "Menu"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
         }
     }
 
-    Component {
-        id: categoryDelegate
-        Column {
-            width: root.width * 0.22
-            Rectangle {
-                id: categoryItem
-                border.color: "black"
-                border.width: 5
-                radius: 50
-                color: "white"
-                height: 50
-                width: root.width / 5
+    Rectangle {
+        id: toolsTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: panelColor
+        border.color: "white"
+        x: width + 2
+        y: -7
 
-                GCText {
-                    //anchors.verticalCenter: parent.verticalCenter
-                    anchors.centerIn: parent
-                    //x: 15
-                    font.pixelSize: 24
-                    text: categoryName
+        MouseArea {
+            anchors.fill: parent
+            enabled: (menuPanel.y < -5 && activePanel != "toolsPanel") || (menuPanel.y > -5 && activePanel === "toolsPanel")
+            onClicked: {
+                animTarget = toolsTitle
+                colorGrid.visible = false
+                menuGrid.visible = true
+                root.activePanel = "toolsPanel"
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
                 }
-                MouseArea {
-                    anchors.fill: parent
-
-                    // Toggle the 'collapsed' property
-                    onClicked: {
-                        nestedModel.setProperty(index, "collapsed", !collapsed)
-                        root.collapsePanels = !root.collapsePanels
-                        console.log("Clicked on " + categoryName)
-                    }
+                else {
+                    toolsTitle.visible = true
+                    menuGrid.model = toolsModel
+                    menuGrid.visible = true
+                    unfoldAnimation.start()
                 }
             }
+        }
 
-            Loader {
-                id: subItemLoader
-
-                // This is a workaround for a bug/feature in the Loader element. If sourceComponent is set to null
-                // the Loader element retains the same height it had when sourceComponent was set. Setting visible
-                // to false makes the parent Column treat it as if it's height was 0.
-                visible: !collapsed
-                property var subItemModel: subItems
-                sourceComponent: collapsed ? null : subItemColumnDelegate
-                onStatusChanged: if (status == Loader.Ready) item.model = subItemModel
-            }
+        GCText {
+            text: "Tools"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
         }
     }
 
-    Component {
-        id: subItemColumnDelegate
-        Column {
-            property alias model : subItemRepeater.model
-            width: 200
-            Repeater {
-                id: subItemRepeater
-                delegate: Rectangle {
-                    color: "#cccccc"
-                    height: 40
-                    width: 200
-                    border.color: "black"
-                    border.width: 2
+    Rectangle {
+        id: colorsTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: panelColor
+        border.color: "white"
+        x: background.width - 2 * width - 2
+        y: -7
+        z: menuPanel.z - 1
+        MouseArea {
+            anchors.fill: parent
+            enabled: (menuPanel.y < -5 && activePanel != "colorPanel") || (menuPanel.y > -5 && activePanel === "colorPanel")
+            onClicked: {
+                animTarget = colorsTitle
+                menuGrid.visible = false
+                colorGrid.visible = true
+                root.activePanel = "colorPanel"
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
+                    //foldTitle.start()
+                }
+                else {
+                    colorsTitle.visible = true
+                    unfoldAnimation.start()
+                    //unfoldTitle.start()
+                }
+            }
+        }
 
-                    Text {
-                        anchors.verticalCenter: parent.verticalCenter
-                        x: 30
-                        font.pixelSize: 18
-                        text: itemName
-                    }
+        GCText {
+            text: "Color"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
+        }
+    }
+
+    Rectangle {
+        id: toolsOptionTitle
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: panelColor
+        border.color: "white"
+        x: background.width - width
+        y: -7
+
+        MouseArea {
+            anchors.fill: parent
+            enabled: (menuPanel.y < -5 && activePanel != "toolOptions") || (menuPanel.y > -5 && activePanel === "toolOptions")
+            onClicked: {
+                animTarget = toolsOptionTitle
+                root.activePanel = "toolOptions"
+                menuGrid.visible = false
+                colorGrid.visible = false
+                if(menuPanel.panelUnFolded) {
+                    foldAnimation.start()
+                }
+                else {
+                    toolsOptionTitle.visible = true
+                    unfoldAnimation.start()
+                }
+            }
+        }
+
+        GCText {
+            text: "Tool Options"
+            fontSize: tinySize
+            anchors.fill: parent
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            fontSizeMode: Text.Fit
+            color: "white"
+        }
+    }
+
+    property var animTarget: menuTitle
+
+    NumberAnimation {
+        id: unfoldTitle
+        target: animTarget
+        property: "y"
+        to: menuPanel.height - 7
+        duration: 200
+        easing.type: Easing.InOutQuad
+    }
+
+    NumberAnimation {
+        id: foldTitle
+        target: animTarget
+        property: "y"
+        to: -7
+        duration: 200
+        easing.type: Easing.InOutQuad
+        onStopped: root.activePanel = "null"
+    }
+
+    Rectangle {
+        id: menuPanel
+        anchors.leftMargin: 5
+        width: background.width
+        height: background.height / 2.4
+        color: panelColor
+        y: -height
+        border.color: "white"
+        property bool panelUnFolded: y >= -5
+
+        NumberAnimation {
+            id: foldAnimation
+            target: menuPanel
+            property: "y"
+            to: - menuPanel.height
+            duration: 200
+            easing.type: Easing.InOutQuad
+            onStarted: foldTitle.start()
+        }
+
+        NumberAnimation {
+            id: unfoldAnimation
+            target: menuPanel
+            property: "y"
+            to: 0
+            duration: 200
+            easing.type: Easing.InOutQuad
+            onStarted: unfoldTitle.start()
+        }
+
+        GridView {
+            id: menuGrid
+            width: parent.width * 0.75
+            height: parent.height * 0.80
+            anchors.centerIn: parent
+            visible: root.activePanel == "menuPanel" || root.activePanel == "toolsPanel"
+            anchors.topMargin: 30
+            cellWidth: width / 4
+            cellHeight: height / 2.2
+            model: menuModel
+            delegate:Item {
+                Image {
+                    id: img
+                    source: imgSource
+                    sourceSize.width: menuGrid.cellWidth * 0.60
+                    sourceSize.height: menuGrid.cellHeight * 0.60
 
                     MouseArea {
                         anchors.fill: parent
+                        hoverEnabled: true
+                        onEntered: parent.scale = 1.1
+                        onExited: parent.scale = 1.0
                         onClicked: {
+                            console.log(itemName)
                             Activity.selectTool(itemName)
+                            foldAnimation.start()
                         }
+                    }
+                }
+                GCText {
+                    text: itemName
+                    anchors.horizontalCenter: img.horizontalCenter
+                    anchors.top: img.bottom
+                    fontSize: tinySize
+                    color: "white"
+                }
+            }
+        }
+
+        GridView {
+            id: colorGrid
+            width: parent.width * 0.75
+            height: parent.height * 0.80
+            anchors.left: selectedColor.right
+            anchors.verticalCenter: menuPanel.verticalCenter
+            anchors.leftMargin: 30
+            anchors.rightMargin: 10
+            anchors.topMargin: 10
+            cellWidth: width / 4.7
+            cellHeight: height / 3.6
+            model: colorModel
+            visible: root.activePanel == "colorPanel"
+            z: 1800
+            delegate: Rectangle {
+                id: root1
+                radius: 8
+                width: colorGrid.cellWidth * 0.80
+                height: colorGrid.cellHeight * 0.90
+                color: modelData
+                scale: items.activeColorIndex === index ? 1.2 : 1
+                border.width: 3
+                border.color: modelData
+                MouseArea {
+                    anchors.fill: parent
+                    hoverEnabled: true
+
+                    onEntered: {
+                        if(items.activeColorIndex != index) {
+                            parent.border.color = "grey"
+                            root1.scale = 1.1
+                        }
+                    }
+                    onExited: {
+                        if(items.activeColorIndex != index) {
+                            root1.scale = 1
+                            parent.border.color = modelData
+                        }
+                    }
+
+                    // set this color as current paint color
+                    onClicked: {
+                        items.activeColorIndex = index
+                        items.paintColor = root1.color
+                        background.hideExpandedTools()
+                        items.paintColor = color
+                        background.reloadSelectedPen()
+                        colorPicker.updateColor((items.paintColor).toString())
+                        foldAnimation.start()
                     }
                 }
             }
         }
+
+        ColorDialogue {
+            id: colorPicker
+            anchors.left: menuPanel.left
+            anchors.verticalCenter: menuPanel.verticalCenter
+            visible: colorGrid.visible
+            anchors.leftMargin: 20
+        }
+
+        Rectangle {
+            id: selectedColor
+            width: menuPanel.width * 0.08
+            height: menuPanel.height * 0.30
+            visible: colorGrid.visible
+            radius: 8
+            border.width: 3
+            z: colorGrid.z
+            anchors.left: colorPicker.right
+            anchors.leftMargin: 10
+            anchors.bottom: colorGrid.bottom
+            anchors.bottomMargin: 30
+            color: colorPicker.currentColorCode
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    items.paintColor = selectedColor.color
+                    animTarget = colorsTitle
+                    foldAnimation.start()
+                }
+            }
+        }
+
+        Button { style: GCButtonStyle { theme: "light" }
+            text: qsTr("Save")
+            width: selectedColor.width
+            anchors.left: selectedColor.left
+            anchors.bottomMargin: 30
+            visible: colorGrid.visible
+            anchors.bottom: selectedColor.top
+            onClicked: {
+                root.colorModel.remove(items.activeColorIndex)
+                root.colorModel.insert(items.activeColorIndex, {colorCode: (colorPicker.currentColor()).toString()})
+                items.paintColor = (colorPicker.currentColor()).toString()
+            }
+        }
+
+        ToolsMode {
+            id: toolsMode
+            visible: root.activePanel == "toolOptions"
+        }
+    }
+
+    Rectangle {
+        width: root.tabWidth
+        height: 8
+        x: animTarget.x
+        y: animTarget.y
+        color: panelColor
     }
 }
