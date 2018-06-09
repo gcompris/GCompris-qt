@@ -21,7 +21,7 @@ import GCompris 1.0
 import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.4
 import "../../core"
-import "drawing.js" as Activity
+import "paint.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
@@ -53,14 +53,14 @@ Item {
 
     ListModel {
         id: toolsModel
-//        ListElement { itemName: qsTr("Pencil")
-//            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
-        ListElement { itemName: qsTr("Brush")
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush_paint.png" }
+        ListElement { itemName: qsTr("Pencil")
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
         ListElement { itemName: qsTr("Geometric")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
         ListElement { itemName: qsTr("Text")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
+        ListElement { itemName: qsTr("Brush")
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush_paint.png" }
         ListElement { itemName: qsTr("Eraser")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/erase.svg" }
         ListElement { itemName: qsTr("Bucket fill")
@@ -104,12 +104,11 @@ Item {
         }
 
         GCText {
-            text: qsTr("Menu")
+            text: "Menu"
             fontSize: tinySize
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
             color: "white"
         }
@@ -146,12 +145,11 @@ Item {
         }
 
         GCText {
-            text: qsTr("Tools")
+            text: "Tools"
             fontSize: tinySize
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
             color: "white"
         }
@@ -177,21 +175,22 @@ Item {
                 root.activePanel = "colorPanel"
                 if(menuPanel.panelUnFolded) {
                     foldAnimation.start()
+                    //foldTitle.start()
                 }
                 else {
                     colorsTitle.visible = true
                     unfoldAnimation.start()
+                    //unfoldTitle.start()
                 }
             }
         }
 
         GCText {
-            text: qsTr("Color")
+            text: "Color"
             fontSize: tinySize
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
             color: "white"
         }
@@ -226,13 +225,12 @@ Item {
         }
 
         GCText {
-            text: qsTr("Tool Options")
+            text: "Tool Options"
             fontSize: tinySize
             anchors.fill: parent
-            fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
+            fontSizeMode: Text.Fit
             color: "white"
         }
     }
@@ -319,12 +317,8 @@ Item {
                 }
                 GCText {
                     text: itemName
-                    width: root.tabWidth
                     anchors.horizontalCenter: img.horizontalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
                     anchors.top: img.bottom
-                    wrapMode: Text.WordWrap
                     fontSize: tinySize
                     color: "white"
                 }
@@ -351,9 +345,9 @@ Item {
                 width: colorGrid.cellWidth * 0.80
                 height: colorGrid.cellHeight * 0.90
                 color: modelData
-                //scale: items.activeColorIndex === index ? 1.2 : 1
+                scale: items.activeColorIndex === index ? 1.2 : 1
                 border.width: 3
-                border.color: items.activeColorIndex === index ? "grey" : modelData
+                border.color: modelData
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
@@ -385,7 +379,7 @@ Item {
             }
         }
 
-        ColorDialog {
+        ColorDialogue {
             id: colorPicker
             anchors.left: menuPanel.left
             anchors.verticalCenter: menuPanel.verticalCenter
@@ -416,8 +410,7 @@ Item {
             }
         }
 
-        Button {
-            style: GCButtonStyle { theme: "light" }
+        Button { style: GCButtonStyle { theme: "light" }
             text: qsTr("Save")
             width: selectedColor.width
             anchors.left: selectedColor.left

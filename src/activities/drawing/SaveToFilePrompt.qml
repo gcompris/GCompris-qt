@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.6
-import "drawing.js" as Activity
+import "paint.js" as Activity
 import "../../core"
 
 Rectangle {
@@ -30,7 +30,10 @@ Rectangle {
     anchors.centerIn: parent
 
     property string text
-    property string buttonPressed: "home"
+
+    signal yes
+    signal no
+    signal cancel
 
     GCText {
         text: saveToFilePrompt.text
@@ -67,7 +70,7 @@ Rectangle {
             anchors.fill: parent
             hoverEnabled: true
             onClicked: {
-                saveToFilePrompt.yesPressed()
+                saveToFilePrompt.yes()
             }
 
             states: State {
@@ -106,7 +109,7 @@ Rectangle {
             anchors.fill: parent
             hoverEnabled: true
             onClicked: {
-                saveToFilePrompt.noPressed()
+                saveToFilePrompt.no()
             }
 
             states: State {
@@ -146,7 +149,7 @@ Rectangle {
             anchors.fill: parent
             hoverEnabled: true
             onClicked: {
-                saveToFilePrompt.cancelPressed()
+                saveToFilePrompt.cancel()
             }
 
             states: State {
@@ -168,44 +171,4 @@ Rectangle {
             print("pressed backspace")
         }
     }
-
-    function yesPressed() {
-        if(buttonPressed === "reload") {
-            cancelPressed()
-            Activity.saveToFile(true)
-            Activity.initLevel()
-        }
-        else if(buttonPressed === "home"){
-            Activity.saveToFile(true)
-            if (main.x == 0)
-                load.opacity = 0
-            activity.home()
-        }
-    }
-
-    function noPressed() {
-        if(buttonPressed === "reload") {
-            cancelPressed()
-            Activity.initLevel()
-        }
-        else if(buttonPressed === "home") {
-            if (main.x == 0)
-                load.opacity = 0
-            activity.home()
-        }
-    }
-
-    function cancelPressed() {
-        if(buttonPressed === "reload") {
-            items.saveToFilePrompt.z = -1
-            items.saveToFilePrompt.opacity = 0
-            main.opacity = 1
-        }
-        else if(buttonPressed === "home") {
-            items.saveToFilePrompt.z = -1
-            items.saveToFilePrompt.opacity = 0
-            main.opacity = 1
-        }
-    }
-
 }

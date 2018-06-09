@@ -21,17 +21,17 @@ import QtQuick.Controls.Styles 1.4
 import QtQuick.Dialogs 1.0
 import GCompris 1.0
 import "../../core"
-import "drawing.js" as Activity
+import "paint.js" as Activity
 
 Item {
     id: toolsSize
-    width: background.width * 0.30
+    width: background.width > background.height ? background.width * 0.30 : background.width * 0.30
     height: background.height * 0.35
 
     GCSlider {
         id: slider
-        width: parent.width
         anchors.centerIn: parent
+        //anchors.verticalCenterOffset: 30
         value: items.sizeS
         minimumValue: 2
         maximumValue: 24

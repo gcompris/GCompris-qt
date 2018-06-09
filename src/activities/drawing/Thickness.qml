@@ -1,7 +1,6 @@
 /* GCompris - Thickness.qml
  *
  * Copyright (C) 2016 Toncu Stefan <stefan.toncu29@gmail.com>
- *               2018 Amit Sagtani <asagtani06@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,13 +20,10 @@ import QtQuick 2.6
 
 Rectangle {
     id: frame
-
-    property bool horizontalScreen: background.width > background.height
-
     color: items.sizeS == Math.floor(lineSize * 15) ? "#ffff66" : "#ffffb3"
-    width: horizontalScreen ? 40 : 20
-    height: width
-    radius: horizontalScreen ? 8 : 4
+    width: 40
+    height: 40
+    radius: 8
     border.color: "#cccc00"
     border.width: 2
     opacity: items.sizeS == Math.floor(lineSize * 15) ? 1 : 0.7
@@ -39,9 +35,9 @@ Rectangle {
     Rectangle {
         id: thickness
         color: items.paintColor
-        radius: horizontalScreen ? 30 : 10
-        width: horizontalScreen ? lineSize * 25 : lineSize * 10
-        height: width
+        radius: 30
+        width: lineSize * 25
+        height: lineSize * 25
         anchors.centerIn: parent
     }
 

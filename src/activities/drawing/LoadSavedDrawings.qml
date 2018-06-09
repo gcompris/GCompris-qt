@@ -22,7 +22,7 @@ import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Dialogs 1.0
 import "../../core"
-import "drawing.js" as Activity
+import "paint.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
