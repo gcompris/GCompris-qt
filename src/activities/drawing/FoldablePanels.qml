@@ -36,35 +36,35 @@ Item {
     ListModel {
         id: menuModel
         ListElement { itemName: qsTr("Save")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/filesaveas.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/filesaveas.svg" }
         ListElement { itemName: qsTr("Load")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/fileopen.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/fileopen.svg" }
         ListElement { itemName: qsTr("Undo")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/undo.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/undo.svg" }
         ListElement { itemName: qsTr("Redo")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/redo.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/redo.svg" }
         ListElement { itemName: qsTr("Erase all")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
         ListElement { itemName: qsTr("Background color")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/color_wheel.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/color_wheel.svg" }
         ListElement { itemName: qsTr("Export to PNG")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
     }
 
     ListModel {
         id: toolsModel
         ListElement { itemName: qsTr("Pencil")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/pen.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
         ListElement { itemName: qsTr("Geometric")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
         ListElement { itemName: qsTr("Text")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/empty.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
         ListElement { itemName: qsTr("Brush")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/brush_paint.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush_paint.png" }
         ListElement { itemName: qsTr("Eraser")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/erase.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/erase.svg" }
         ListElement { itemName: qsTr("Bucket fill")
-            imgSource: "qrc:/gcompris/src/activities/paint/resource/fill.svg" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/fill.svg" }
     }
 
     ListModel {
