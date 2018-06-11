@@ -1,10 +1,31 @@
+/* GCompris - ColorDialogue.qml
+ *
+ * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
 import QtQuick 2.6
+import GCompris 1.0
+import "../../core"
+import "paint.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
     id: picker
     width: background.width * 0.20
     height: background.height * 0.33
-    //height: 500
     color: "transparent"
 
     property real hue
@@ -15,7 +36,6 @@ Rectangle {
     property int barWidth: width * 0.25
 
     property color currentColorCode: picker.currentColor()
-
 
     function currentColor() {
         return Qt.hsla(picker.hue, picker.saturation, picker.lightness, 1.0)
@@ -55,7 +75,7 @@ Rectangle {
 
         picker.hue = (1/6) * h
         console.log(picker.hue)
-        picker.saturation = (c / (1 - Math.abs(2 * ((max+min)/2) - 1)))
+        picker.saturation = (c / (1 - Math.abs(2 * ((max + min) / 2) - 1)))
         picker.lightness = (max + min)/2
         sMarker.y = saturation * barHeight
         hsMarker.y = hue * barHeight
@@ -64,24 +84,21 @@ Rectangle {
         return true;
     }
 
-    // Rectangle that displays the hue of the color
+    // Vertical bar that displays the hue of the color
     MouseArea {
         id: hueBar
         width: picker.barWidth
         height: picker.barHeight
-        //x: 50
-        //rotation: 270
         anchors.left: parent.left
         anchors.leftMargin: 10
 
         onPositionChanged: {
-            picker.hue = mouse.y/height
+            picker.hue = mouse.y / height
             hsMarker.y = mouse.y > hueBar.y+hueBar.height ? Math.min(hueBar.y + hueBar.height - 2 , mouse.y) :
                                                             Math.max(hueBar.y, mouse.y)
         }
         // Display the colors
         Rectangle {
-
             anchors.fill: parent
             gradient: Gradient {
                 GradientStop { position: 0.0/6.0; color: Qt.hsla(0.0/6.0, 1, picker.lightness, 1) }
@@ -100,11 +117,8 @@ Rectangle {
             width: picker.barWidth
             height: 10
             radius: 2
-            //y: rectangle.y //+ rectangle.height / 2
-            //x: rectangle.x - 10//picker.hue * rectangle.height - 2 - 75
-            y: hueBar.y + hueBar.height/2
+            y: hueBar.y + hueBar.height / 2
             anchors.horizontalCenter: hueBar.horizontalCenter
-
             color: "transparent"
             border {
                 color: "white"
@@ -129,7 +143,6 @@ Rectangle {
 
         Rectangle {
             anchors.fill: parent
-
             gradient: Gradient {
                 GradientStop { position: 0.0; color: Qt.hsla(picker.hue, 0, picker.lightness, 0) }
                 GradientStop { position: 1.0; color: Qt.hsla(picker.hue, 1, picker.lightness, 1) }
@@ -141,7 +154,6 @@ Rectangle {
             height: 10
             radius: 2
             y: saturationBar.height * (1 - picker.saturation)
-
             color: "transparent"
             border {
                 color: "white"
@@ -156,18 +168,15 @@ Rectangle {
         width: picker.barWidth
         height: picker.barHeight
         anchors.left: saturationBar.right
-        //anchors.top: rectangle.top
-        //y: 260
         anchors.leftMargin: 7
 
         onPositionChanged: {
-            picker.lightness = 1 - mouse.y/height
+            picker.lightness = 1 - mouse.y / height
             lsMarker.y = lightnessBar.height * (1 - picker.lightness)
         }
 
         Rectangle {
             anchors.fill: parent
-
             gradient: Gradient {
                 GradientStop { position: 0.0; color: Qt.hsla(picker.hue, picker.saturation, 1, 1) }
                 GradientStop { position: 0.5; color: Qt.hsla(picker.hue, picker.saturation, 0.5, 1) }
@@ -180,7 +189,6 @@ Rectangle {
             height: 10
             radius: 2
             y: lightnessBar.height * (1 - picker.lightness)
-
             color: "transparent"
             border {
                 color: "white"
@@ -188,19 +196,4 @@ Rectangle {
             }
         }
     }
-
-    // Preview of the color
-//    Rectangle {
-//        id: preview
-//        anchors.left: saturationBar.right
-//        anchors.verticalCenter: lightnessBar.verticalCenter
-//        anchors.leftMargin: 7
-//        width: 40
-//        height: 30
-//        color: picker.currentColorCode
-//        MouseArea {
-//            anchors.fill: parent
-//            onClicked: console.log(picker.currentColor())
-//        }
-//    }
 }

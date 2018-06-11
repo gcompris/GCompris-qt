@@ -60,11 +60,9 @@ Item {
         ListElement { name: "circle";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/circle.png" }
         ListElement { name: "lineShift";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/line_straight.svg"
-        }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/line_straight.svg" }
         ListElement { name: "line"
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/line_free.png"
-        }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/line_free.png" }
     }
 
     GridView {
@@ -73,7 +71,6 @@ Item {
         height: parent.height * 0.85
         cellWidth: width / 4.2
         cellHeight: height / 3.2
-        //anchors.centerIn: parent
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         anchors.leftMargin: 40
@@ -105,7 +102,6 @@ Item {
 
                     // make the hover over the canvas false
                     area.hoverEnabled = false
-                    //toolsMode.visible = false
 
                     // change the selectBrush tool
                     timer.index = 0
