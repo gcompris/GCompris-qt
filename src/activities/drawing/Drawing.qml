@@ -147,8 +147,6 @@ ActivityBase {
             property alias load: load
             property alias mainRegion: main
             property alias shape: shape
-            //property alias colorPalette: colorPalette
-            //property alias toolsSize: toolsSize
             property int activeColorIndex: 1
             property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt2: saveToFilePrompt2
@@ -905,26 +903,6 @@ ActivityBase {
 
         LoadSavedDrawings {
             id: loadSavedPainting
-        }
-
-        ColorDialog {
-            id: colorDialog
-            title: qsTr("Please choose a color")
-            currentColor: items.paintColor
-            visible: false
-
-            onAccepted: {
-                items.paintColor = colorDialog.color
-                //items.colorPalette.colorModel.remove(items.activeColorIndex)
-                //items.colorPalette.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
-                foldablePanels.colorModel.remove(items.activeColorIndex)
-                foldablePanels.colorModel.insert(items.activeColorIndex, {colorCode: (colorDialog.color).toString()})
-                colorPalette.visible = false
-                console.log("You chose: " + colorDialog.color)
-            }
-            onRejected: {
-                console.log("Canceled")
-            }
         }
 
         Canvas {
