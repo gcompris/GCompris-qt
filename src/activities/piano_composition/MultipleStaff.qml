@@ -98,7 +98,7 @@ Item {
             }
         }
 
-        property real noteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 10
+        property real noteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 11.3
         Repeater {
             id: notesRepeater
             model: notesModel
@@ -111,10 +111,14 @@ Item {
                 height: multipleStaff.height / 5
 
                 readonly property int currentStaffNb: index / nbMaxNotesPerStaff
-                readonly property real defaultX: staves.itemAt(0).clefImageWidth + ((index % nbMaxNotesPerStaff) * flickableStaves.noteWidth)
+                readonly property bool isFirstNoteOnStaff: (index % nbMaxNotesPerStaff) === 0
+                readonly property real defaultX: isFirstNoteOnStaff ? staves.itemAt(0).clefImageWidth
+                                                                    : (notesRepeater.itemAt(index - 1) == undefined) ? 0
+                                                                    : (notesRepeater.itemAt(index - 1).x + flickableStaves.noteWidth)
                 readonly property real centeredPosition: (multipleStaff.width / 2.5 - (flickableStaves.noteWidth * notesModel.count / 2) + defaultX)
+                readonly property real shiftDistance: blackType != "" ? width / 7 : 0
 
-                x: multipleStaff.centerNotesPosition ? centeredPosition : defaultX
+                x: shiftDistance + (multipleStaff.centerNotesPosition ? centeredPosition : defaultX)
 
                 noteDetails: multipleStaff.getNoteDetails(noteName, noteType)
 
