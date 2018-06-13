@@ -30,7 +30,7 @@ Item {
 
     property int nbStaves
     property string clef
-    property int distanceBetweenStaff: multipleStaff.height / 4
+    property int distanceBetweenStaff: multipleStaff.height / 3.3
 
     property int currentStaff: 0
 
@@ -45,7 +45,7 @@ Item {
     readonly property bool isMusicPlaying: musicTimer.running
 
     property alias flickableStaves: flickableStaves
-    property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2
+    property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 3.5
     property bool isFlickable: true
 
     /**
@@ -76,7 +76,7 @@ Item {
         interactive: multipleStaff.isFlickable
         flickableDirection: Flickable.VerticalFlick
         contentWidth: staffColumn.width
-        contentHeight: staffColumn.height + 1.5 * distanceBetweenStaff
+        contentHeight: staffColumn.height + distanceBetweenStaff
         anchors.fill: parent
         clip: true
         Column {

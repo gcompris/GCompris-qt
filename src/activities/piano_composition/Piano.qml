@@ -55,9 +55,10 @@ Item {
     // White key notes are from G3 to C6 when the clef is treble
     //: Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
     readonly property var whiteNotesTreble: [
-        [["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)]],
+        [["E3", qsTr("E%1").arg(3)], ["F3", qsTr("F%1").arg(3)], ["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)]],
         [["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)], ["A4", qsTr("A%1").arg(4)], ["B4", qsTr("B%1").arg(4)], ["C5", qsTr("C%1").arg(5)]],
-        [["C5", qsTr("C%1").arg(5)], ["D5", qsTr("D%1").arg(5)], ["E5", qsTr("E%1").arg(5)], ["F5", qsTr("F%1").arg(5)], ["G5", qsTr("G%1").arg(5)], ["A5", qsTr("A%1").arg(5)], ["B5", qsTr("B%1").arg(5)], ["C6", qsTr("C%1").arg(6)]]
+        [["C5", qsTr("C%1").arg(5)], ["D5", qsTr("D%1").arg(5)], ["E5", qsTr("E%1").arg(5)], ["F5", qsTr("F%1").arg(5)], ["G5", qsTr("G%1").arg(5)], ["A5", qsTr("A%1").arg(5)], ["B5", qsTr("B%1").arg(5)], ["C6", qsTr("C%1").arg(6)]],
+        [["F5", qsTr("F%1").arg(5)], ["G5", qsTr("G%1").arg(5)], ["A5", qsTr("A%1").arg(5)], ["B5", qsTr("B%1").arg(5)], ["C6", qsTr("C%1").arg(6)], ["D6", qsTr("D%1").arg(6)], ["E6", qsTr("E%1").arg(6)], ["F6", qsTr("F%1").arg(6)]]
     ]
     readonly property var whiteNotes: background.clefType === "Treble" ? whiteNotesTreble : whiteNotesBass
 
@@ -71,9 +72,10 @@ Item {
     // Sharp black key notes when the clef is treble
     //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
     readonly property var blackNotesSharpTreble: [
-        [["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)]],
+        [["F#3", qsTr("F#%1").arg(3)], ["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)]],
         [["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)], ["G#4", qsTr("G#%1").arg(4)], ["A#4", qsTr("A#%1").arg(4)]],
-        [["C#5", qsTr("C#%1").arg(5)], ["D#5", qsTr("D#%1").arg(5)], ["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)]]
+        [["C#5", qsTr("C#%1").arg(5)], ["D#5", qsTr("D#%1").arg(5)], ["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)]],
+        [["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)], ["C#6", qsTr("C#%1").arg(6)], ["D#6", qsTr("D#%1").arg(6)]]
     ]
     readonly property var blackNotesSharp: background.clefType === "Treble" ? blackNotesSharpTreble : blackNotesSharpBass
 
@@ -87,9 +89,10 @@ Item {
     // Flat black key notes when the clef is treble.
     //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
     readonly property var blackNotesFlatTreble: [
-        [["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)]],
+        [["Gb3", qsTr("Gb%1").arg(3)], ["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)]],
         [["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)], ["Ab4", qsTr("Ab%1").arg(4)], ["Bb4", qsTr("Bb%1").arg(4)]],
-        [["Db5", qsTr("Db%1").arg(5)], ["Eb5", qsTr("Eb%1").arg(5)], ["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)]]
+        [["Db5", qsTr("Db%1").arg(5)], ["Eb5", qsTr("Eb%1").arg(5)], ["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)]],
+        [["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)], ["Db6", qsTr("Db%1").arg(6)], ["Eb6", qsTr("Eb%1").arg(6)]]
     ]
     readonly property var blackNotesFlat: background.clefType === "Treble" ? blackNotesFlatTreble : blackNotesFlatBass
 
@@ -98,9 +101,10 @@ Item {
 
     // Positions of black keys when the clef is treble
     readonly property var blacksTreble: [
-        [14.33, 41.67, 82.25, 108.25, 154],
+        [38, 63.5, 88.25, 129.5, 156],
         [14.33, 41.67, 82.25, 108.25, 134.75],
-        [14.33, 41.67, 82.25, 108.25, 134.75]
+        [14.33, 41.67, 82.25, 108.25, 134.75],
+        [14.33, 39.67, 64.5, 108.25, 134.75]
     ]
     // Positions of black keys when the clef is bass
     readonly property var blacksBass: [
@@ -116,9 +120,10 @@ Item {
     ]
     // Color of white key labels when the clef is treble
     readonly property var colorWhiteNotesTreble: [
-        ["#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED"],
+        ["#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00"],
         ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
-        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"]
+        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
+        ["#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00", "#32CD32"]
     ]
     readonly property var colorWhiteNotes: background.clefType === "Treble" ? colorWhiteNotesTreble : colorWhiteNotesBass
 
@@ -129,9 +134,10 @@ Item {
     ]
     // Color of black key labels when the clef is treble
     readonly property var colorBlackNotesTreble: [
-        ["#8A2BE2", "#FF00FF", "#FF6347", "#FFD700", "#20B2AA"],
+        ["#20B2AA", "#8A2BE2", "#FF00FF", "#FF6347", "#FFD700"],
         ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
-        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"]
+        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
+        ["#20B2AA", "#8A2BE2", "#FF00FF", "#FF6347", "#FFD700"]
     ]
     readonly property var colorBlackNotes: background.clefType === "Treble" ? colorBlackNotesTreble : colorBlackNotesBass
 

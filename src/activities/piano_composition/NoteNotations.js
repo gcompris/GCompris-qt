@@ -24,6 +24,30 @@
 function get() {
     return [
                 {
+                    "noteName": "TrebleE3",
+                    "imageName": "trebleE3",
+                    "rotation": 0,
+                    "positionOnStaff": 8.5
+                },
+                {
+                    "noteName": "TrebleF#3",
+                    "imageName": "bassG4",
+                    "rotation": 0,
+                    "positionOnStaff": 8
+                },
+                {
+                    "noteName": "TrebleF3",
+                    "imageName": "bassG4",
+                    "rotation": 0,
+                    "positionOnStaff": 8
+                },
+                {
+                    "noteName": "TrebleGb3",
+                    "imageName": "bassF4",
+                    "rotation": 0,
+                    "positionOnStaff": 7.5
+                },
+                {
                     "noteName": "TrebleG3",
                     "imageName": "bassF4",
                     "rotation": 0,
@@ -274,6 +298,48 @@ function get() {
                     "imageName": "trebleA3",
                     "rotation": 180,
                     "positionOnStaff": -1
+                },
+                {
+                    "noteName": "TrebleC#6",
+                    "imageName": "trebleA3",
+                    "rotation": 180,
+                    "positionOnStaff": -1
+                },
+                {
+                    "noteName": "TrebleDb6",
+                    "imageName": "bassF4",
+                    "rotation": 180,
+                    "positionOnStaff": -1.5
+                },
+                {
+                    "noteName": "TrebleD6",
+                    "imageName": "bassF4",
+                    "rotation": 180,
+                    "positionOnStaff": -1.5
+                },
+                {
+                    "noteName": "TrebleD#6",
+                    "imageName": "bassF4",
+                    "rotation": 180,
+                    "positionOnStaff": -1.5
+                },
+                {
+                    "noteName": "TrebleEb6",
+                    "imageName": "bassG4",
+                    "rotation": 180,
+                    "positionOnStaff": -2
+                },
+                {
+                    "noteName": "TrebleE6",
+                    "imageName": "bassG4",
+                    "rotation": 180,
+                    "positionOnStaff": -2
+                },
+                {
+                    "noteName": "TrebleF6",
+                    "imageName": "trebleE3",
+                    "rotation": 180,
+                    "positionOnStaff": -2.5
                 },
                 {
                     "noteName": "BassC3",

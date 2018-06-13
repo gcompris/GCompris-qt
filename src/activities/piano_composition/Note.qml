@@ -55,15 +55,12 @@ Item {
     property alias highlightTimer: highlightTimer
 
     property var noteDetails
-    readonly property int notesPositionBelowStaffWithBars: 6
 
     property bool noteAnswered: false
     property bool isCorrectlyAnswered: false
 
     rotation: {
         if((noteDetails === undefined) || ((noteDetails.positionOnStaff < 0) && (noteType === "Whole")))
-            return 0
-        else if(noteDetails.positionOnStaff > notesPositionBelowStaffWithBars && noteType === "Whole")
             return 180
         else
             return noteDetails.rotation
