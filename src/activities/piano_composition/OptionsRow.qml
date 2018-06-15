@@ -29,9 +29,13 @@ Row {
     id: optionsRow
     spacing: 15
 
-    readonly property var noteLengthName: ["Whole", "Half", "Quarter", "Eighth"]
-    readonly property var staffModes: ["add", "replace", "erase"]
-    readonly property var lyricsOrPianoModes: ["piano", "lyrics"]
+    //: Whole note, Half note, Quarter note and Eighth note are the different length notes in the musical notation.
+    readonly property var noteLengthName: [[qsTr("Whole note"), "Whole"], [qsTr("Half note"), "Half"], [qsTr("Quarter note"), "Quarter"], [qsTr("Eighth note"), "Eighth"]]
+
+    //: Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
+    readonly property var translatedRestNames: [qsTr("Whole rest"), qsTr("Half rest"), qsTr("Quarter rest"), qsTr("Eighth rest")]
+    readonly property var staffModes: [[qsTr("Add"), "add"], [qsTr("Replace"), "replace"], [qsTr("Erase"), "erase"]]
+    readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 
     property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing * 12) / 14)
     property alias noteOptionsIndex: noteOptions.currentIndex
@@ -55,12 +59,16 @@ Row {
     signal clearButtonClicked
     signal openButtonClicked
     signal saveButtonClicked
+    signal emitOptionMessage(string message)
 
     SwitchableOptions {
         id: noteOptions
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex])
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex][1])
         nbOptions: optionsRow.noteLengthName.length
-        onClicked: background.currentType = optionsRow.noteLengthName[currentIndex]
+        onClicked: {
+            background.currentType = optionsRow.noteLengthName[currentIndex][1]
+            emitOptionMessage(optionsRow.noteLengthName[currentIndex][0])
+        }
         visible: noteOptionsVisible
     }
 
@@ -71,7 +79,10 @@ Row {
         visible: playButtonVisible
         MouseArea {
             anchors.fill: parent
-            onClicked: multipleStaff.play()
+            onClicked: {
+                emitOptionMessage(qsTr("Play melody"))
+                multipleStaff.play()
+            }
         }
     }
 
@@ -85,6 +96,8 @@ Row {
             onClicked: {
                 multipleStaff.eraseAllNotes()
                 background.clefType = (background.clefType == "Bass") ? "Treble" : "Bass"
+                //: Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
+                emitOptionMessage((background.clefType === "Treble") ? qsTr("Treble clef") : qsTr("Bass clef"))
                 lyricsArea.resetLyricsArea()
             }
         }
@@ -93,12 +106,13 @@ Row {
     SwitchableOptions {
         id:staffModesOptions
         nbOptions: optionsRow.staffModes.length
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.staffModes[currentIndex])
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.staffModes[currentIndex][1])
         anchors.top: parent.top
         anchors.topMargin: 4
         visible: staffModesOptionsVisible
         onClicked: {
-            background.staffMode = optionsRow.staffModes[currentIndex]
+            background.staffMode = optionsRow.staffModes[currentIndex][1]
+            emitOptionMessage(optionsRow.staffModes[currentIndex][0])
             if(background.staffMode != "replace") {
                 multipleStaff.noteToReplace = -1
             }
@@ -123,7 +137,10 @@ Row {
         visible: undoButtonVisible
         MouseArea {
             anchors.fill: parent
-            onClicked: undoButtonClicked()
+            onClicked: {
+                emitOptionMessage(qsTr("Undo"))
+                undoButtonClicked()
+            }
         }
     }
 
@@ -156,48 +173,77 @@ Row {
         visible: changeAccidentalStyleButtonVisible
         MouseArea {
             anchors.fill: parent
-            onClicked: piano.useSharpNotation = !piano.useSharpNotation
+            onClicked: {
+                piano.useSharpNotation = !piano.useSharpNotation
+                //: Sharp notes and Flat notes represents the accidental style of the notes in the music.
+                emitOptionMessage(piano.useSharpNotation ? qsTr("Sharp notes") : qsTr("Flat notes"))
+            }
         }
     }
 
     SwitchableOptions {
         id: lyricsOrPianoModeOption
         nbOptions: optionsRow.lyricsOrPianoModes.length
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1-icon.svg".arg(optionsRow.lyricsOrPianoModes[currentIndex])
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1-icon.svg".arg(optionsRow.lyricsOrPianoModes[currentIndex][1])
         anchors.top: parent.top
         anchors.topMargin: 4
         visible: lyricsOrPianoModeOptionVisible
+        onClicked: emitOptionMessage(optionsRow.lyricsOrPianoModes[currentIndex][0])
     }
 
-    // Since the half rest image is just the rotated image of whole rest image, we check if the current rest type is half, we assign the source as whole rest and rotate it by 180 degrees.
-    SwitchableOptions {
-        id: restOptions
-
-        readonly property string restTypeImage: ((optionsRow.noteLengthName[currentIndex] === "Half") ? "Whole" : optionsRow.noteLengthName[currentIndex]).toLowerCase()
-
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
-        nbOptions: optionsRow.noteLengthName.length
-        onClicked: background.restType = optionsRow.noteLengthName[currentIndex]
-        rotation: optionsRow.noteLengthName[currentIndex] === "Half" ? 180 : 0
+    Item {
+        width: 2.3 * optionsRow.iconsWidth
+        height: optionsRow.iconsWidth + 10
         visible: restOptionsVisible
-    }
-
-    Image {
-        id: addRestButton
-        sourceSize.width: optionsRow.iconsWidth
-        source: "qrc:/gcompris/src/core/resource/apply.svg"
-        visible: restOptions.visible
-        anchors.top: parent.top
-        anchors.topMargin: 4
-        MouseArea {
+        Rectangle {
+            color: "yellow"
+            opacity: 0.1
+            border.width: 2
+            border.color: "black"
             anchors.fill: parent
-            onPressed: parent.scale = 0.8
-            onReleased: {
-                parent.scale = 1
-                if(background.staffMode === "add")
-                    multipleStaff.addNote(restType.toLowerCase(), "Rest", false, false)
-                else
-                    multipleStaff.replaceNote(restType.toLowerCase(), "Rest")
+            radius: 10
+        }
+
+        // Since the half rest image is just the rotated image of whole rest image, we check if the current rest type is half, we assign the source as whole rest and rotate it by 180 degrees.
+        SwitchableOptions {
+            id: restOptions
+
+            readonly property string restTypeImage: ((optionsRow.noteLengthName[currentIndex][1] === "Half") ? "Whole" : optionsRow.noteLengthName[currentIndex][1]).toLowerCase()
+
+            source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
+            nbOptions: optionsRow.noteLengthName.length
+            onClicked: {
+                background.restType = optionsRow.noteLengthName[currentIndex][1]
+                emitOptionMessage(optionsRow.translatedRestNames[currentIndex])
+            }
+            rotation: optionsRow.noteLengthName[currentIndex][1] === "Half" ? 180 : 0
+            visible: restOptionsVisible
+            anchors.topMargin: -3
+            anchors.left: parent.left
+            anchors.leftMargin: 5
+        }
+
+        Image {
+            id: addRestButton
+            sourceSize.width: optionsRow.iconsWidth / 1.4
+            source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
+            anchors.left: restOptions.right
+            anchors.leftMargin: 8
+            visible: restOptions.visible
+            anchors.top: parent.top
+            anchors.topMargin: 10
+            MouseArea {
+                anchors.fill: parent
+                onPressed: parent.scale = 0.8
+                onReleased: {
+                    //: %1 is the name of the rest which is added and displayed from the variable translatedRestNames.
+                    emitOptionMessage(qsTr("Added %1").arg(optionsRow.translatedRestNames[restOptionIndex]))
+                    parent.scale = 1
+                    if(background.staffMode === "add")
+                        multipleStaff.addNote(restType.toLowerCase(), "Rest", false, false)
+                    else
+                        multipleStaff.replaceNote(restType.toLowerCase(), "Rest")
+                }
             }
         }
     }

@@ -24,6 +24,7 @@ import QtQuick.Controls 1.0
 import GCompris 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "piano_composition.js" as Activity
 import "melodies.js" as Dataset
 
@@ -125,6 +126,65 @@ ActivityBase {
         File {
             id: file
             onError: console.error("File error: " + msg)
+        }
+
+        Item {
+            id: clickedOptionMessage
+
+            signal show(string message)
+            onShow: {
+                messageText.text = message
+                messageAnimation.stop()
+                messageAnimation.start()
+            }
+
+            width: horizontalLayout ? parent.width / 12 : parent.width / 6
+            height: width * 0.4
+            visible: false
+            anchors.top: optionsRow.bottom
+            anchors.horizontalCenter: optionsRow.horizontalCenter
+            z: 5
+            Rectangle {
+                id: messageRectangle
+                width: messageText.contentWidth + 5
+                height: messageText.height + 5
+                anchors.centerIn: messageText
+                color: "black"
+                opacity: 0.5
+                border.width: 3
+                border.color: "black"
+                radius: 15
+            }
+
+            GCText {
+                id: messageText
+                anchors.fill: parent
+                anchors.rightMargin: parent.width * 0.02
+                anchors.leftMargin: parent.width * 0.02
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                color: "white"
+            }
+
+            SequentialAnimation {
+                id: messageAnimation
+                onStarted: clickedOptionMessage.visible = true
+                PauseAnimation {
+                    duration: 1000
+                }
+                NumberAnimation {
+                    targets: [messageRectangle, messageText]
+                    property: "opacity"
+                    to: 0
+                    duration: 200
+                }
+                onStopped: {
+                    clickedOptionMessage.visible = false
+                    messageRectangle.opacity = 0.5
+                    messageText.opacity = 1
+                }
+            }
         }
 
         MelodyList {
@@ -293,9 +353,16 @@ ActivityBase {
                 background.undidChange = false
             }
             onClearButtonClicked: {
-                lyricsArea.resetLyricsArea()
-                Activity.undoStack = []
-                multipleStaff.eraseAllNotes()
+                Core.showMessageDialog(main,
+                    qsTr("Do you want to erase all the notes?"),
+                    qsTr("Yes"), function() {
+                        Activity.undoStack = []
+                        lyricsArea.resetLyricsArea()
+                       multipleStaff.eraseAllNotes()
+                    },
+                    qsTr("No"), null,
+                    null
+                )
             }
             onOpenButtonClicked: {
                 melodyList.melodiesModel.clear()
@@ -309,6 +376,7 @@ ActivityBase {
                 melodyList.forceActiveFocus()
             }
             onSaveButtonClicked: Activity.saveMelody()
+            onEmitOptionMessage: clickedOptionMessage.show(message)
         }
 
         DialogHelp {
