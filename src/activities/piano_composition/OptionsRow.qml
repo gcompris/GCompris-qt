@@ -59,6 +59,7 @@ Row {
     signal clearButtonClicked
     signal openButtonClicked
     signal saveButtonClicked
+    signal restReplaced
     signal emitOptionMessage(string message)
 
     SwitchableOptions {
@@ -113,9 +114,8 @@ Row {
         onClicked: {
             background.staffMode = optionsRow.staffModes[currentIndex][1]
             emitOptionMessage(optionsRow.staffModes[currentIndex][0])
-            if(background.staffMode != "replace") {
-                multipleStaff.noteToReplace = -1
-            }
+            multipleStaff.selectedIndex = -1
+            multipleStaff.insertingIndex = multipleStaff.notesModel.count
         }
     }
 
@@ -239,10 +239,18 @@ Row {
                     //: %1 is the name of the rest which is added and displayed from the variable translatedRestNames.
                     emitOptionMessage(qsTr("Added %1").arg(optionsRow.translatedRestNames[restOptionIndex]))
                     parent.scale = 1
-                    if(background.staffMode === "add")
-                        multipleStaff.addNote(restType.toLowerCase(), "Rest", false, false)
-                    else
-                        multipleStaff.replaceNote(restType.toLowerCase(), "Rest")
+                    if(background.staffMode === "add") {
+                        if(multipleStaff.selectedIndex == 0)
+                            background.askInsertDirection(restType.toLowerCase(), "Rest")
+                        else
+                            background.addNoteAndPushToStack(restType.toLowerCase(), "Rest")
+                    }
+                    else {
+                        if(multipleStaff.selectedIndex != -1) {
+                            restReplaced()
+                            multipleStaff.replaceNote(restType.toLowerCase(), "Rest")
+                        }
+                    }
                 }
             }
         }

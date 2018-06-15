@@ -32,12 +32,10 @@ Item {
     property string clef
     property int distanceBetweenStaff: multipleStaff.height / 3.3
 
-    property int currentStaff: 0
-
-    property int nbMaxNotesPerStaff: 6
+    property int insertingIndex: 0
 
     // Stores the note number which is to be replaced.
-    property int noteToReplace: -1
+    property int selectedIndex: -1
     property bool noteIsColored
     property bool noteHoverEnabled: true
     property bool centerNotesPosition: false
@@ -45,8 +43,10 @@ Item {
     readonly property bool isMusicPlaying: musicTimer.running
 
     property alias flickableStaves: flickableStaves
+    property alias notesModel: notesModel
     property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 3.5
     property bool isFlickable: true
+    property int currentEnteringStaff: 0
 
     /**
      * Emitted when a note is clicked.
@@ -54,11 +54,6 @@ Item {
      * It is used for selecting note to play, replace and edit it.
      */
     signal noteClicked(string noteName, string noteType, int noteIndex)
-
-    /**
-     * Emitted when a change in any note is made to push it to the undo stack.
-     */
-    signal pushToUndoStack(int noteIndex, string oldNoteName, string oldNoteType)
 
     /**
      * Emitted for the notes while a melody is playing.
@@ -98,7 +93,7 @@ Item {
             }
         }
 
-        property real noteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 11.3
+        readonly property real noteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 10
         Repeater {
             id: notesRepeater
             model: notesModel
@@ -110,15 +105,8 @@ Item {
                 width: flickableStaves.noteWidth
                 height: multipleStaff.height / 5
 
-                readonly property int currentStaffNb: index / nbMaxNotesPerStaff
-                readonly property bool isFirstNoteOnStaff: (index % nbMaxNotesPerStaff) === 0
-                readonly property real defaultX: isFirstNoteOnStaff ? staves.itemAt(0).clefImageWidth
-                                                                    : (notesRepeater.itemAt(index - 1) == undefined) ? 0
-                                                                    : (notesRepeater.itemAt(index - 1).x + flickableStaves.noteWidth)
-                readonly property real centeredPosition: (multipleStaff.width / 2.5 - (flickableStaves.noteWidth * notesModel.count / 2) + defaultX)
-                readonly property real shiftDistance: blackType != "" ? width / 7 : 0
-
-                x: shiftDistance + (multipleStaff.centerNotesPosition ? centeredPosition : defaultX)
+                property int staffNb: staffNb_
+                readonly property real shiftDistance: blackType != "" ? flickableStaves.noteWidth / 6 : 0
 
                 noteDetails: multipleStaff.getNoteDetails(noteName, noteType)
 
@@ -133,14 +121,18 @@ Item {
                     highlightTimer.start()
                 }
 
+                x: shiftDistance + (isFirstNote_ ? (staves.itemAt(0).clefImageWidth + 5)
+                                                 : (notesRepeater.itemAt(index - 1) == undefined) ? 0
+                                                 : (notesRepeater.itemAt(index - 1).x + flickableStaves.noteWidth))
+
                 y: {
-                    if(noteDetails === undefined || staves.itemAt(currentStaffNb) == undefined)
+                    if(noteDetails === undefined || staves.itemAt(staffNb) == undefined)
                         return 0
 
                     var verticalDistanceBetweenLines = staves.itemAt(0).verticalDistanceBetweenLines
                     var shift =  -verticalDistanceBetweenLines / 2
                     var relativePosition = noteDetails.positionOnStaff
-                    var imageY = flickableTopMargin + staves.itemAt(currentStaffNb).y + 2 * verticalDistanceBetweenLines
+                    var imageY = flickableTopMargin + staves.itemAt(staffNb).y + 2 * verticalDistanceBetweenLines
 
                     if(rotation === 180) {
                         return imageY - (4 - relativePosition) * verticalDistanceBetweenLines + shift
@@ -189,34 +181,77 @@ Item {
     /**
      * Adds a note to the staff.
      */
-    function addNote(noteName, noteType, highlightWhenPlayed, playAudio, isReplacing) {
+    function addNote(noteName, noteType, highlightWhenPlayed, playAudio) {
         var duration
         if(noteType === "Rest")
             duration = calculateTimerDuration(noteName)
         else
             duration = calculateTimerDuration(noteType)
 
-        if(!isReplacing) {
-            pushToUndoStack(notesModel.count, "none", "none", noteName, noteType)
-            notesModel.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
-                             "highlightWhenPlayed": highlightWhenPlayed})
-        }
-        else {
-            var oldNoteDetails = notesModel.get(noteToReplace)
-            pushToUndoStack(noteToReplace, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
-            notesModel.set(noteToReplace, { "noteName_": noteName, "noteType_": noteType, "mDuration": duration })
+        var isNextStaff = notesModel.count && ((staves.itemAt(0).width - notesRepeater.itemAt(notesModel.count - 1).x) < 2 * flickableStaves.noteWidth)
+        var isFirstPosition = false
+        if((notesModel.count == 0) || isNextStaff) {
+            if(isNextStaff)
+                multipleStaff.currentEnteringStaff++
+
+            if(multipleStaff.currentEnteringStaff >= multipleStaff.nbStaves) {
+                var melody = getAllNotes()
+                multipleStaff.nbStaves++
+                flickableStaves.flick(0, - nbStaves * multipleStaff.height)
+                multipleStaff.currentEnteringStaff = 0
+                loadFromData(melody)
+                multipleStaff.currentEnteringStaff++
+            }
+
+            isFirstPosition = true
         }
 
-        if(notesModel.count > nbMaxNotesPerStaff * nbStaves) {
-            var melody = getAllNotes()
-            nbStaves++
-            flickableStaves.flick(0, - nbStaves * multipleStaff.height)
-            currentStaff = 0
-            loadFromData(melody)
+        if(multipleStaff.insertingIndex == notesModel.count)
+            notesModel.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
+                               "highlightWhenPlayed": highlightWhenPlayed, "staffNb_": multipleStaff.currentEnteringStaff,
+                               "isFirstNote_": isFirstPosition})
+        else {
+            var tempModel = createNotesBackup()
+            tempModel.splice(multipleStaff.insertingIndex, 0, { "noteName_": noteName, "noteType_": noteType })
+            redrawNotes(tempModel)
         }
+
+        multipleStaff.insertingIndex = notesModel.count
+        multipleStaff.selectedIndex = -1
 
         if(playAudio)
             playNoteAudio(noteName, noteType)
+    }
+
+    /**
+     * Creates a backup of the notesModel before erasing it.
+     *
+     * This backup data is used to redraw the notes.
+     */
+    function createNotesBackup() {
+        var tempModel = []
+        for(var i = 0; i < notesModel.count; i++)
+            tempModel.push(JSON.parse(JSON.stringify(notesModel.get(i))))
+
+        return tempModel
+    }
+
+    /**
+     * Redraws all the notes on the staves.
+     */
+    function redrawNotes(notes) {
+        eraseAllNotes()
+        for(var i = 0; i < notes.length; i++) {
+            addNote(notes[i]["noteName_"], notes[i]["noteType_"], false, false)
+        }
+
+        if((multipleStaff.currentEnteringStaff + 1 < multipleStaff.nbStaves) && (multipleStaff.nbStaves > 2)) {
+            var melody = getAllNotes()
+            multipleStaff.nbStaves = multipleStaff.currentEnteringStaff + 1
+            flickableStaves.flick(0, - nbStaves * multipleStaff.height)
+            multipleStaff.currentEnteringStaff = 0
+            loadFromData(melody)
+        }
     }
 
     /**
@@ -226,10 +261,12 @@ Item {
      * @param noteType: new note type.
      */
     function replaceNote(noteName, noteType) {
-        if(noteToReplace != -1) {
-            addNote(noteName, noteType, false, true, true)
+        if(selectedIndex != -1) {
+            var tempModel = createNotesBackup()
+            tempModel[selectedIndex]= { "noteName_": noteName, "noteType_": noteType }
+            redrawNotes(tempModel)
         }
-        noteToReplace = -1
+        selectedIndex = -1
     }
 
     /**
@@ -249,9 +286,9 @@ Item {
         else
             restName = "eighth"
 
-        var oldNoteDetails = notesModel.get(noteIndex)
-        pushToUndoStack(noteIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
         notesModel.set(noteIndex, { "noteName_": restName, "noteType_": "Rest" })
+        var tempModel = createNotesBackup()
+        redrawNotes(tempModel)
     }
 
     /**
@@ -259,20 +296,28 @@ Item {
      */
     function eraseAllNotes() {
         notesModel.clear()
-        noteToReplace = -1
+        selectedIndex = -1
+        multipleStaff.insertingIndex = 0
+        multipleStaff.currentEnteringStaff = 0
     }
 
     /**
      * Undo the change made to the last note.
      */
     function undoChange(undoNoteDetails) {
-        if(undoNoteDetails.oldNoteName_ === "none")
+        if(undoNoteDetails.oldNoteName_ === "none") {
+            if((undoNoteDetails.noteIndex_ === (notesModel.count - 1)) && notesModel.get(notesModel.count - 1).isFirstNote_ && (multipleStaff.currentEnteringStaff != 0))
+                multipleStaff.currentEnteringStaff--
             notesModel.remove(undoNoteDetails.noteIndex_)
+
+            var tempModel = createNotesBackup()
+            redrawNotes(tempModel)
+        }
         else {
-            noteToReplace = undoNoteDetails.noteIndex_
+            selectedIndex = undoNoteDetails.noteIndex_
             replaceNote(undoNoteDetails.oldNoteName_, undoNoteDetails.oldNoteType_)
         }
-        noteToReplace = -1
+        selectedIndex = -1
     }
 
     /**
@@ -354,7 +399,7 @@ Item {
                 noteName += melody[i][1]
             }
 
-            addNote(noteName, noteType, false, false, false)
+            addNote(noteName, noteType, false, false)
         }
     }
 
@@ -380,10 +425,12 @@ Item {
     function play() {
         musicTimer.currentNote = 0
         musicTimer.interval = 500
+        /*
         for(var v = 1 ; v < currentStaff ; ++ v)
             staves.itemAt(v).showMetronome = false
         // Only display metronome if we want to
         staves.itemAt(0).showMetronome = isMetronomeDisplayed
+        **/
 
         musicTimer.start()
     }

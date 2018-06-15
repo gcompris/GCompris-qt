@@ -120,7 +120,6 @@ ActivityBase {
         property string restType: "Whole"
         property string clefType: bar.level == 2 ? "bass" : "treble"
         property string staffMode: "add"
-        property bool undidChange: false
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
 
         File {
@@ -230,7 +229,6 @@ ActivityBase {
             height: horizontalLayout ? parent.height * 0.58 : parent.height * 0.3
             nbStaves: 2
             clef: clefType
-            nbMaxNotesPerStaff: 10
             noteIsColored: true
             isMetronomeDisplayed: true
             anchors.right: horizontalLayout ? parent.right: undefined
@@ -239,17 +237,18 @@ ActivityBase {
             anchors.topMargin: parent.height * 0.1
             anchors.rightMargin: parent.width * 0.043
             onNoteClicked: {
-                if(background.staffMode === "add")
+                if(background.staffMode === "add") {
+                    selectedIndex = noteIndex
+                    multipleStaff.insertingIndex = noteIndex + 1
                     playNoteAudio(noteName, noteType)
+                }
                 else if(background.staffMode === "replace")
-                    noteToReplace = noteIndex
-                else
+                    selectedIndex = noteIndex
+                else {
+                    var oldNoteDetails = notesModel.get(noteIndex)
+                    Activity.pushToStack(noteIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
                     multipleStaff.eraseNote(noteIndex)
-            }
-            onPushToUndoStack: {
-                // If we have undid the change, we won't push the undid change in the stack as the undoStack will enter in a loop.
-                if(!background.undidChange)
-                    Activity.pushToStack(noteIndex, oldNoteName, oldNoteType)
+                }
             }
             onNotePlayed: piano.indicateKey(noteName)
         }
@@ -279,13 +278,39 @@ ActivityBase {
             blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
             useSharpNotation: bar.level != 4
             blackKeysEnabled: bar.level > 2
-            onNoteClicked: {
-                if(background.staffMode === "add")
-                    multipleStaff.addNote(note, currentType, false, true)
-                else if(background.staffMode === "replace")
-                    multipleStaff.replaceNote(note, currentType)
-            }
             visible: !background.isLyricsMode
+            onNoteClicked: {
+                if(background.staffMode === "add") {
+                    if(multipleStaff.selectedIndex == 0)
+                        parent.askInsertDirection(note, currentType)
+                    else
+                        parent.addNoteAndPushToStack(note, currentType)
+                }
+                else if(background.staffMode === "replace") {
+                    var oldNoteDetails = multipleStaff.notesModel.get(multipleStaff.selectedIndex)
+                    Activity.pushToStack(multipleStaff.selectedIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
+                    multipleStaff.replaceNote(note, currentType)
+                }
+            }
+        }
+
+        function askInsertDirection(noteName, noteType) {
+            Core.showMessageDialog(main,
+                qsTr("Do you want to insert it to the left/right of the 1st note?"),
+                qsTr("Left"), function() {
+                    multipleStaff.insertingIndex--
+                    addNoteAndPushToStack(noteName, noteType)
+                },
+                qsTr("Right"), function() {
+                    addNoteAndPushToStack(noteName, noteType)
+                },
+                null
+            )
+        }
+
+        function addNoteAndPushToStack(noteName, noteType) {
+            Activity.pushToStack(multipleStaff.insertingIndex, "none", "none")
+            multipleStaff.addNote(noteName, noteType, false, true)
         }
 
         Image {
@@ -348,9 +373,7 @@ ActivityBase {
             restOptionsVisible: bar.level > 5
 
             onUndoButtonClicked: {
-                background.undidChange = true
                 Activity.undoChange()
-                background.undidChange = false
             }
             onClearButtonClicked: {
                 Core.showMessageDialog(main,
@@ -359,6 +382,7 @@ ActivityBase {
                         Activity.undoStack = []
                         lyricsArea.resetLyricsArea()
                        multipleStaff.eraseAllNotes()
+                       multipleStaff.nbStaves = 2
                     },
                     qsTr("No"), null,
                     null
@@ -377,6 +401,10 @@ ActivityBase {
             }
             onSaveButtonClicked: Activity.saveMelody()
             onEmitOptionMessage: clickedOptionMessage.show(message)
+            onRestReplaced: {
+                var oldNoteDetails = multipleStaff.notesModel.get(multipleStaff.selectedIndex)
+                Activity.pushToStack(multipleStaff.selectedIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
+            }
         }
 
         DialogHelp {

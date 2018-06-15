@@ -102,7 +102,6 @@ function initLevel() {
     items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
     items.background.staffMode = "add"
-    items.multipleStaff.noteToReplace = -1
     items.optionsRow.staffModeIndex = 0
     items.lyricsArea.resetLyricsArea()
     undoStack = []

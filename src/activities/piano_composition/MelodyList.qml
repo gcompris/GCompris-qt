@@ -115,6 +115,7 @@ Rectangle {
                                     onClicked: {
                                         dialogBackground.selectedMelodyIndex = index
                                         items.multipleStaff.stopAudios()
+                                        items.multipleStaff.nbStaves = 2
                                         items.multipleStaff.loadFromData(melody)
                                         lyricsArea.setLyrics(title, _origin, lyrics)
                                     }

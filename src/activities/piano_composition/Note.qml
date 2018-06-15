@@ -101,14 +101,14 @@ Item {
     }
 
     Rectangle {
-        id: replaceIndicator
+        id: selectedNoteIndicator
         width: noteImage.width
         height: noteImage.height * 0.9
         color: "blue"
         opacity: 0.6
         border.color: "white"
         radius: width / 5
-        visible: noteToReplace === index
+        visible: selectedIndex == index
     }
 
     Image {
