@@ -34,6 +34,7 @@ Row {
 
     //: Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
     readonly property var translatedRestNames: [qsTr("Whole rest"), qsTr("Half rest"), qsTr("Quarter rest"), qsTr("Eighth rest")]
+    readonly property var restAddedMessage: [qsTr("Added whole rest"), qsTr("Added half rest"), qsTr("Added quarter rest"), qsTr("Added eighth rest")]
     readonly property var staffModes: [[qsTr("Add"), "add"], [qsTr("Replace"), "replace"], [qsTr("Erase"), "erase"]]
     readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 
@@ -237,7 +238,7 @@ Row {
                 onPressed: parent.scale = 0.8
                 onReleased: {
                     //: %1 is the name of the rest which is added and displayed from the variable translatedRestNames.
-                    emitOptionMessage(qsTr("Added %1").arg(optionsRow.translatedRestNames[restOptionIndex]))
+                    emitOptionMessage(optionsRow.restAddedMessage[restOptionIndex])
                     parent.scale = 1
                     if(background.staffMode === "add") {
                         if(multipleStaff.selectedIndex == 0)
