@@ -1,4 +1,4 @@
-/* GCompris - paint.qml
+/* GCompris - Drawing.qml
  *
  * Copyright (C) 2016 Toncu Stefan <stefan.toncu29@gmail.com>
  *
@@ -21,7 +21,7 @@ import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Dialogs 1.0
 import "../../core"
-import "paint.js" as Activity
+import "drawing.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 // TODO1: undo/redo

@@ -21,7 +21,7 @@ import GCompris 1.0
 import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.4
 import "../../core"
-import "paint.js" as Activity
+import "drawing.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {

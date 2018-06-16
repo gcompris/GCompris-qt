@@ -1,4 +1,4 @@
-/* GCompris - paint.js
+/* GCompris - drawing.js
  *
  * Copyright (C) 2016 Toncu Stefan <stefan.toncu29@gmail.com>
  *
