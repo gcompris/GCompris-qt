@@ -34,7 +34,7 @@ Item {
 
     property int insertingIndex: 0
 
-    // Stores the note number which is to be replaced.
+    // Stores the note index which is selected.
     property int selectedIndex: -1
     property bool noteIsColored
     property bool noteHoverEnabled: true
@@ -51,7 +51,7 @@ Item {
     /**
      * Emitted when a note is clicked.
      *
-     * It is used for selecting note to play, replace and edit it.
+     * It is used for selecting note to play, erase and do other operations on it.
      */
     signal noteClicked(string noteName, string noteType, int noteIndex)
 
@@ -255,24 +255,9 @@ Item {
     }
 
     /**
-     * Replaces the selected note with a new note.
-     *
-     * @param noteName: new note name.
-     * @param noteType: new note type.
-     */
-    function replaceNote(noteName, noteType) {
-        if(selectedIndex != -1) {
-            var tempModel = createNotesBackup()
-            tempModel[selectedIndex]= { "noteName_": noteName, "noteType_": noteType }
-            redrawNotes(tempModel)
-        }
-        selectedIndex = -1
-    }
-
-    /**
      * Erases the selected note.
      *
-     * @param noteIndex: index of the note to be replaced
+     * @param noteIndex: index of the note to be erased
      */
     function eraseNote(noteIndex) {
         var noteLength = notesModel.get(noteIndex).mDuration
@@ -311,13 +296,14 @@ Item {
             notesModel.remove(undoNoteDetails.noteIndex_)
 
             var tempModel = createNotesBackup()
-            redrawNotes(tempModel)
         }
         else {
             selectedIndex = undoNoteDetails.noteIndex_
-            replaceNote(undoNoteDetails.oldNoteName_, undoNoteDetails.oldNoteType_)
+            var tempModel = createNotesBackup()
+            tempModel[selectedIndex]= { "noteName_": undoNoteDetails.oldNoteName_, "noteType_": undoNoteDetails.oldNoteType_ }
         }
         selectedIndex = -1
+        redrawNotes(tempModel)
     }
 
     /**

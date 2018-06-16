@@ -242,8 +242,6 @@ ActivityBase {
                     multipleStaff.insertingIndex = noteIndex + 1
                     playNoteAudio(noteName, noteType)
                 }
-                else if(background.staffMode === "replace")
-                    selectedIndex = noteIndex
                 else {
                     var oldNoteDetails = notesModel.get(noteIndex)
                     Activity.pushToStack(noteIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
@@ -285,11 +283,6 @@ ActivityBase {
                         parent.askInsertDirection(note, currentType)
                     else
                         parent.addNoteAndPushToStack(note, currentType)
-                }
-                else if(background.staffMode === "replace") {
-                    var oldNoteDetails = multipleStaff.notesModel.get(multipleStaff.selectedIndex)
-                    Activity.pushToStack(multipleStaff.selectedIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
-                    multipleStaff.replaceNote(note, currentType)
                 }
             }
         }
@@ -401,10 +394,6 @@ ActivityBase {
             }
             onSaveButtonClicked: Activity.saveMelody()
             onEmitOptionMessage: clickedOptionMessage.show(message)
-            onRestReplaced: {
-                var oldNoteDetails = multipleStaff.notesModel.get(multipleStaff.selectedIndex)
-                Activity.pushToStack(multipleStaff.selectedIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
-            }
         }
 
         DialogHelp {

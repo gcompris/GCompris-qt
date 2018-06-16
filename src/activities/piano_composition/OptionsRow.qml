@@ -35,7 +35,7 @@ Row {
     //: Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
     readonly property var translatedRestNames: [qsTr("Whole rest"), qsTr("Half rest"), qsTr("Quarter rest"), qsTr("Eighth rest")]
     readonly property var restAddedMessage: [qsTr("Added whole rest"), qsTr("Added half rest"), qsTr("Added quarter rest"), qsTr("Added eighth rest")]
-    readonly property var staffModes: [[qsTr("Add"), "add"], [qsTr("Replace"), "replace"], [qsTr("Erase"), "erase"]]
+    readonly property var staffModes: [[qsTr("Add"), "add"], [qsTr("Erase"), "erase"]]
     readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 
     property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing * 12) / 14)
@@ -60,7 +60,6 @@ Row {
     signal clearButtonClicked
     signal openButtonClicked
     signal saveButtonClicked
-    signal restReplaced
     signal emitOptionMessage(string message)
 
     SwitchableOptions {
@@ -245,12 +244,6 @@ Row {
                             background.askInsertDirection(restType.toLowerCase(), "Rest")
                         else
                             background.addNoteAndPushToStack(restType.toLowerCase(), "Rest")
-                    }
-                    else {
-                        if(multipleStaff.selectedIndex != -1) {
-                            restReplaced()
-                            multipleStaff.replaceNote(restType.toLowerCase(), "Rest")
-                        }
                     }
                 }
             }
