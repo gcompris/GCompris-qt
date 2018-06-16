@@ -21,7 +21,7 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/drawing/resource/"
+var url = "qrc:/gcompris/src/activities/paint/resource/"
 
 var currentLevel = 0
 var numberOfLevel = 4
@@ -41,6 +41,8 @@ var loadImagesSource = [
 
 var undo = []
 var redo = []
+
+var aux = ["1","2","3","4","5"]
 
 var userFile = "file://" + GCompris.ApplicationInfo.getSharedWritablePath()
         + "/paint/" + "levels-user.json"
@@ -225,33 +227,23 @@ function saveToFile(showMessage) {
 function exportToPng() {
     var path =  GCompris.ApplicationInfo.getSharedWritablePath() + "/drawing"
     if(!items.file.exists(path)) {
-        if(!items.file.mkpath(path)) {
-            Core.showMessageDialog(items.main,
-                                   qsTr("Error: could not create the directory %1").arg(path),
-                                   "", null, "", null, null)
+        if(!items.file.mkpath(path))
             console.error("Could not create directory " + path)
-            return;
-        }
         else
             console.debug("Created directory " + path)
     }
     var i = 0;
+    console.log(items.file.exists(path + "/drawing" + i.toString() + ".png"))
+    console.log((path + "/drawing" + i + ".png"))
     while(items.file.exists(path + "/drawing" + i.toString() + ".png")) {
         i += 1
     }
     items.canvas.grabToImage(function(result) {
-        if(result.saveToFile(path + "/drawing" + i.toString() + ".png")) {
-            console.log("File drawing" + i + ".png saved successfully.")
-            Core.showMessageDialog(items.main,
-                                   qsTr("Saved drawing to %1").arg(path + "/drawing" + i.toString() + ".png"),
-                                   "", null, "", null, null)
-
-        }
-        else {
-            Core.showMessageDialog(items.main,
-                                   qsTr("Error in saving the drawing."),
-                                   "", null, "", null, null)
-        }
+        result.saveToFile(path + "/drawing" + i.toString() + ".png");
+        console.log("File drawing" + i + ".png saved successfully.")
+        Core.showMessageDialog(items.main,
+                               qsTr("Saved drawing" + i + ".png path: " + path),
+                               "", null, "", null, null)
     })
 
 }
@@ -377,10 +369,9 @@ function selectTool(toolName) {
     }
     else if(toolName === "Erase all") {
         if (!items.nothingChanged) {
-            items.saveToFilePrompt.buttonPressed = "reload"
-            items.saveToFilePrompt.text = qsTr("Do you want to save your painting before reseting the board?")
-            items.saveToFilePrompt.opacity = 1
-            items.saveToFilePrompt.z = 200
+            items.saveToFilePrompt2.text = qsTr("Do you want to save your painting before reseting the board?")
+            items.saveToFilePrompt2.opacity = 1
+            items.saveToFilePrompt2.z = 200
         } else {
             initLevel()
         }
@@ -392,7 +383,7 @@ function selectTool(toolName) {
         items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.geometricModes
     }
-    else if(toolName === "Brush") {
+    else if(toolName === "Pencil") {
         items.toolSelected = "pencil"
         items.lastToolSelected = "pencil"
         items.background.hideExpandedTools()

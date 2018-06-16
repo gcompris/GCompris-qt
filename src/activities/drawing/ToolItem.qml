@@ -17,7 +17,7 @@
  */
 
 import QtQuick 2.6
-import "paint.js" as Activity
+import "drawing.js" as Activity
 
 Image {
     id: toolItem

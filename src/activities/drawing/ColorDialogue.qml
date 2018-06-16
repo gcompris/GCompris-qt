@@ -19,7 +19,7 @@
 import QtQuick 2.6
 import GCompris 1.0
 import "../../core"
-import "paint.js" as Activity
+import "drawing.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {

@@ -21,7 +21,7 @@ import QtQuick.Controls.Styles 1.4
 import QtQuick.Dialogs 1.0
 import GCompris 1.0
 import "../../core"
-import "paint.js" as Activity
+import "drawing.js" as Activity
 
 Item {
     id: toolsSize
