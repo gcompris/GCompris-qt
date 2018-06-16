@@ -223,6 +223,30 @@ function saveToFile(showMessage) {
     items.nothingChanged = true
 }
 
+// Exports the current drawing in png format.
+function exportToPng() {
+    var path =  GCompris.ApplicationInfo.getSharedWritablePath() + "/drawing"
+    if(!items.file.exists(path)) {
+        if(!items.file.mkpath(path))
+            console.error("Could not create directory " + path)
+        else
+            console.debug("Created directory " + path)
+    }
+    var i = 0;
+    console.log(items.file.exists(path + "/drawing" + i.toString() + ".png"))
+    console.log((path + "/drawing" + i + ".png"))
+    while(items.file.exists(path + "/drawing" + i.toString() + ".png")) {
+        i += 1
+    }
+    items.canvas.grabToImage(function(result) {
+        result.saveToFile(path + "/drawing" + i.toString() + ".png");
+        console.log("File drawing" + i + ".png saved successfully.")
+        Core.showMessageDialog(items.main,
+                               qsTr("Saved drawing" + i + ".png path: " + path),
+                               "", null, "", null, null)
+    })
+
+}
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
@@ -366,11 +390,9 @@ function selectTool(toolName) {
         items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.pencilModes
     }
-    else if(toolName === "Red") items.paintColor = "red"
-    else if(toolName === "Green") items.paintColor = "green"
-    else if(toolName === "Yellow") items.paintColor = "yellow"
-    else if (toolName === "Orange") items.paintColor = "orange"
-    else if(toolName === "Blue") items.paintColor = "blue"
+    else if(toolName === "Export to PNG") {
+        exportToPng()
+    }
 }
 
 function selectMode(modeName) {
