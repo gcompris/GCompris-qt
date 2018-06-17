@@ -104,7 +104,7 @@ Item {
         }
 
         GCText {
-            text: "Menu"
+            text: qsTr("Menu")
             fontSize: tinySize
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
@@ -145,7 +145,7 @@ Item {
         }
 
         GCText {
-            text: "Tools"
+            text: qsTr("Tools")
             fontSize: tinySize
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
@@ -175,18 +175,16 @@ Item {
                 root.activePanel = "colorPanel"
                 if(menuPanel.panelUnFolded) {
                     foldAnimation.start()
-                    //foldTitle.start()
                 }
                 else {
                     colorsTitle.visible = true
                     unfoldAnimation.start()
-                    //unfoldTitle.start()
                 }
             }
         }
 
         GCText {
-            text: "Color"
+            text: qsTr("Color")
             fontSize: tinySize
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
@@ -225,7 +223,7 @@ Item {
         }
 
         GCText {
-            text: "Tool Options"
+            text: qsTr("Tool Options")
             fontSize: tinySize
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
@@ -379,7 +377,7 @@ Item {
             }
         }
 
-        ColorDialogue {
+        ColorDialog {
             id: colorPicker
             anchors.left: menuPanel.left
             anchors.verticalCenter: menuPanel.verticalCenter
@@ -410,7 +408,8 @@ Item {
             }
         }
 
-        Button { style: GCButtonStyle { theme: "light" }
+        Button {
+            style: GCButtonStyle { theme: "light" }
             text: qsTr("Save")
             width: selectedColor.width
             anchors.left: selectedColor.left
