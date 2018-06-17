@@ -227,23 +227,33 @@ function saveToFile(showMessage) {
 function exportToPng() {
     var path =  GCompris.ApplicationInfo.getSharedWritablePath() + "/drawing"
     if(!items.file.exists(path)) {
-        if(!items.file.mkpath(path))
+        if(!items.file.mkpath(path)) {
+            Core.showMessageDialog(items.main,
+                                   qsTr("Error: could not create the directory %1").arg(path),
+                                   "", null, "", null, null)
             console.error("Could not create directory " + path)
+            return;
+        }
         else
             console.debug("Created directory " + path)
     }
     var i = 0;
-    console.log(items.file.exists(path + "/drawing" + i.toString() + ".png"))
-    console.log((path + "/drawing" + i + ".png"))
     while(items.file.exists(path + "/drawing" + i.toString() + ".png")) {
         i += 1
     }
     items.canvas.grabToImage(function(result) {
-        result.saveToFile(path + "/drawing" + i.toString() + ".png");
-        console.log("File drawing" + i + ".png saved successfully.")
-        Core.showMessageDialog(items.main,
-                               qsTr("Saved drawing" + i + ".png path: " + path),
-                               "", null, "", null, null)
+        if(result.saveToFile(path + "/drawing" + i.toString() + ".png")) {
+            console.log("File drawing" + i + ".png saved successfully.")
+            Core.showMessageDialog(items.main,
+                                   qsTr("Saved drawing to %1").arg(path + "/drawing" + i.toString() + ".png"),
+                                   "", null, "", null, null)
+
+        }
+        else {
+            Core.showMessageDialog(items.main,
+                                   qsTr("Error in saving the drawing."),
+                                   "", null, "", null, null)
+        }
     })
 
 }
