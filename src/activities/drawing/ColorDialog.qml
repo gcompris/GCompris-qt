@@ -32,8 +32,8 @@ Rectangle {
     property real saturation
     property real lightness
 
-    property real barHeight: height
-    property real barWidth: width * 0.25
+    property int barHeight: height
+    property int barWidth: width * 0.25
 
     property color currentColorCode: picker.currentColor()
 
@@ -73,12 +73,12 @@ Rectangle {
             h = ((r - g) / c) + 4
         }
 
-        picker.hue = (1 / 6) * h
+        picker.hue = (1/6) * h
         console.log(picker.hue)
         picker.saturation = (c / (1 - Math.abs(2 * ((max + min) / 2) - 1)))
-        picker.lightness = (max + min) / 2
+        picker.lightness = (max + min)/2
         sMarker.y = saturation * barHeight
-        hsMarker.y = picker.hue >= 0 ? hue * barHeight : (1 + hue) * barHeight
+        hsMarker.y = hue * barHeight
         lsMarker.y = (1 - lightness) * barHeight
 
         return true;
@@ -136,7 +136,7 @@ Rectangle {
         anchors.leftMargin: 10
 
         onPositionChanged: {
-            picker.saturation = mouse.y / height
+            picker.saturation = mouse.y/height
             sMarker.y = mouse.y > saturationBar.y+saturationBar.height ? Math.min(saturationBar.y + saturationBar.height - 2 , mouse.y) :
                                                                          Math.max(saturationBar.y, mouse.y)
         }
