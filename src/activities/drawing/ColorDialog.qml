@@ -1,4 +1,4 @@
-/* GCompris - ColorDialogue.qml
+/* GCompris - ColorDialog.qml
  *
  * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
  *
@@ -41,20 +41,20 @@ Rectangle {
         return Qt.hsla(picker.hue, picker.saturation, picker.lightness, 1.0)
     }
 
-    function updateColor(clr) {
+    function updateColor(color) {
         // QML does not expose any way of getting the components of a color
         // parsed by Qt, thus we have to to the parsing ourselves (this breaks
         // named colors)
-        if (clr[0] == '"') {
-            clr = clr.slice(1, 8);
+        if (color[0] == '"') {
+            color = color.slice(1, 8);
         }
-        if (clr[0] == '#') {
-            clr = clr.slice(1);
+        if (color[0] == '#') {
+            color = color.slice(1);
         }
 
-        var r = parseInt(clr.slice(0, 2), 16) / 255;
-        var g = parseInt(clr.slice(2, 4), 16) / 255;
-        var b = parseInt(clr.slice(4, 6), 16) / 255;
+        var r = parseInt(color.slice(0, 2), 16) / 255;
+        var g = parseInt(color.slice(2, 4), 16) / 255;
+        var b = parseInt(color.slice(4, 6), 16) / 255;
 
         // Formulae taken from ColorPicker.qml, Plasma Workspace,
         // Copyright 2013 Marco Martin <mart@kde.org>

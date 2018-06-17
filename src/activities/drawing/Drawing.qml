@@ -90,43 +90,6 @@ ActivityBase {
         SaveToFilePrompt {
             id: saveToFilePrompt
             z: -1
-
-            onYes: {
-                Activity.saveToFile(true)
-                if (main.x == 0)
-                    load.opacity = 0
-                activity.home()
-            }
-            onNo: {
-                if (main.x == 0)
-                    load.opacity = 0
-                activity.home()
-            }
-            onCancel: {
-                saveToFilePrompt.z = -1
-                saveToFilePrompt.opacity = 0
-                main.opacity = 1
-            }
-        }
-
-        SaveToFilePrompt {
-            id: saveToFilePrompt2
-            z: -1
-
-            onYes: {
-                cancel()
-                Activity.saveToFile(true)
-                Activity.initLevel()
-            }
-            onNo: {
-                cancel()
-                Activity.initLevel()
-            }
-            onCancel: {
-                saveToFilePrompt2.z = -1
-                saveToFilePrompt2.opacity = 0
-                main.opacity = 1
-            }
         }
 
         // Add here the QML items you need to access in javascript
@@ -149,10 +112,9 @@ ActivityBase {
             property alias shape: shape
             property int activeColorIndex: 1
             property alias toolsMode: foldablePanels.toolsMode
-            property alias saveToFilePrompt2: saveToFilePrompt2
             property alias saveToFilePrompt: saveToFilePrompt
             property color paintColor: "#00ff00"
-            property var urlImage
+            property string urlImage
             property bool next: false
             property bool next2: false
             property bool loadSavedImage: false
@@ -189,6 +151,7 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: {
+                saveToFilePrompt.buttonPressed = "home"
                 if (!items.nothingChanged) {
                     saveToFilePrompt.text = qsTr("Do you want to save your painting?")
                     main.opacity = 0.5
@@ -202,10 +165,11 @@ ActivityBase {
             }
             onReloadClicked: {
                 if (!items.nothingChanged) {
-                    saveToFilePrompt2.text = qsTr("Do you want to save your painting before reseting the board?")
+                    saveToFilePrompt.buttonPressed = "reload"
+                    saveToFilePrompt.text = qsTr("Do you want to save your painting before reseting the board?")
                     main.opacity = 0.5
-                    saveToFilePrompt2.opacity = 1
-                    saveToFilePrompt2.z = 200
+                    saveToFilePrompt.opacity = 1
+                    saveToFilePrompt.z = 200
                 } else {
                     Activity.initLevel()
                 }
@@ -389,8 +353,8 @@ ActivityBase {
                     hoverEnabled: false
                     property var mappedMouse: mapToItem(parent, mouseX, mouseY)
                     property var currentShape: items.toolSelected == "circle" ? circle : rectangle
-                    property var originalX
-                    property var originalY
+                    property real originalX
+                    property real originalY
                     property real endX
                     property real endY
 
@@ -874,7 +838,7 @@ ActivityBase {
                     id: rectangle
                     color: items.paintColor
                     enabled: items.toolSelected == "rectangle" || items.toolSelected == "line"|| items.toolSelected == "lineShift"
-                    opacity: items.toolSelected == "rectangle" || items.toolSelected == "line"|| items.toolSelected == "lineShift" ? 1 : 0
+                    opacity: enabled ? 1 : 0
 
                     property real rotationn: 0
 
@@ -891,7 +855,7 @@ ActivityBase {
                     radius: width / 2
                     color: items.paintColor
                     enabled: items.toolSelected == "circle"
-                    opacity: items.toolSelected == "circle" ? 1 : 0
+                    opacity: enabled ? 1 : 0
                     property real rotationn: 0
                 }
             }
@@ -913,11 +877,5 @@ ActivityBase {
         FoldablePanels {
             id: foldablePanels
         }
-
-        ColorDialogue {
-            anchors.centerIn: parent
-            visible: false
-        }
-
     }
 }

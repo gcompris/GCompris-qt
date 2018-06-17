@@ -1,4 +1,4 @@
-/* GCompris - TextInput.qml
+/* GCompris - TextInputTool.qml
  *
  * Copyright (C) 2016 Toncu Stefan <stefan.toncu29@gmail.com>
  *               2018 Amit Sagtani <asagtani06@gmail.com>
@@ -20,10 +20,7 @@
 import QtQuick 2.6
 import GCompris 1.0
 import QtQuick.Controls 1.5
-import QtQuick.Controls.Styles 1.4
-import QtQuick.Dialogs 1.0
 import "../../core"
-import "drawing.js" as Activity
 
 Rectangle {
     id: inputTextFrame

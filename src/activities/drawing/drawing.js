@@ -21,7 +21,7 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/paint/resource/"
+var url = "qrc:/gcompris/src/activities/drawing/resource/"
 
 var currentLevel = 0
 var numberOfLevel = 4
@@ -41,8 +41,6 @@ var loadImagesSource = [
 
 var undo = []
 var redo = []
-
-var aux = ["1","2","3","4","5"]
 
 var userFile = "file://" + GCompris.ApplicationInfo.getSharedWritablePath()
         + "/paint/" + "levels-user.json"
@@ -379,9 +377,10 @@ function selectTool(toolName) {
     }
     else if(toolName === "Erase all") {
         if (!items.nothingChanged) {
-            items.saveToFilePrompt2.text = qsTr("Do you want to save your painting before reseting the board?")
-            items.saveToFilePrompt2.opacity = 1
-            items.saveToFilePrompt2.z = 200
+            items.saveToFilePrompt.buttonPressed = "reload"
+            items.saveToFilePrompt.text = qsTr("Do you want to save your painting before reseting the board?")
+            items.saveToFilePrompt.opacity = 1
+            items.saveToFilePrompt.z = 200
         } else {
             initLevel()
         }
