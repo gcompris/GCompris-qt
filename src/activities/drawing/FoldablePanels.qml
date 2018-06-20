@@ -53,14 +53,14 @@ Item {
 
     ListModel {
         id: toolsModel
-        ListElement { itemName: qsTr("Pencil")
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
+//        ListElement { itemName: qsTr("Pencil")
+//            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
+        ListElement { itemName: qsTr("Brush")
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush_paint.png" }
         ListElement { itemName: qsTr("Geometric")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
         ListElement { itemName: qsTr("Text")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
-        ListElement { itemName: qsTr("Brush")
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush_paint.png" }
         ListElement { itemName: qsTr("Eraser")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/erase.svg" }
         ListElement { itemName: qsTr("Bucket fill")
@@ -109,6 +109,7 @@ Item {
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
             color: "white"
         }
@@ -150,6 +151,7 @@ Item {
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
             color: "white"
         }
@@ -189,6 +191,7 @@ Item {
             anchors.fill: parent
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
             fontSizeMode: Text.Fit
             color: "white"
         }
@@ -226,9 +229,10 @@ Item {
             text: qsTr("Tool Options")
             fontSize: tinySize
             anchors.fill: parent
+            fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
-            fontSizeMode: Text.Fit
+            wrapMode: Text.WordWrap
             color: "white"
         }
     }
@@ -315,8 +319,12 @@ Item {
                 }
                 GCText {
                     text: itemName
+                    width: root.tabWidth
                     anchors.horizontalCenter: img.horizontalCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
                     anchors.top: img.bottom
+                    wrapMode: Text.WordWrap
                     fontSize: tinySize
                     color: "white"
                 }
@@ -343,9 +351,9 @@ Item {
                 width: colorGrid.cellWidth * 0.80
                 height: colorGrid.cellHeight * 0.90
                 color: modelData
-                scale: items.activeColorIndex === index ? 1.2 : 1
+                //scale: items.activeColorIndex === index ? 1.2 : 1
                 border.width: 3
-                border.color: modelData
+                border.color: items.activeColorIndex === index ? "grey" : modelData
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
