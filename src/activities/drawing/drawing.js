@@ -392,7 +392,7 @@ function selectTool(toolName) {
         items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.geometricModes
     }
-    else if(toolName === "Pencil") {
+    else if(toolName === "Brush") {
         items.toolSelected = "pencil"
         items.lastToolSelected = "pencil"
         items.background.hideExpandedTools()

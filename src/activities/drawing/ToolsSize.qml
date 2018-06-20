@@ -25,13 +25,13 @@ import "drawing.js" as Activity
 
 Item {
     id: toolsSize
-    width: background.width > background.height ? background.width * 0.30 : background.width * 0.30
+    width: background.width * 0.30
     height: background.height * 0.35
 
     GCSlider {
         id: slider
+        width: parent.width
         anchors.centerIn: parent
-        //anchors.verticalCenterOffset: 30
         value: items.sizeS
         minimumValue: 2
         maximumValue: 24
