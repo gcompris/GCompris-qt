@@ -24,21 +24,30 @@ import "../../core"
 
 Rectangle {
     id: inputTextFrame
+    property bool horizontalMode: background.width > background.height
     color: background.color
-    width: inputText.width + okButton.width + inputText.height + 10
-    height: inputText.height * 1.1
+    width: horizontalMode ? background.width * 0.40 : background.width * 0.60
+    height: horizontalMode ? background.height * 0.40 : background.height * 0.30
     anchors.centerIn: parent
-    radius: height / 2
+    radius: 10
     z: 1000
     opacity: 0
+
     property alias inputText: inputText
+    property string fontSize: "8px "
+    property string isBold: boldText.checked ? "bold " : ""
+    property string isItalic: italicText.checked ? "italic " : ""
+    property string fontFamily: ApplicationSettings.font + ", serif"
+    property string font: isBold + isItalic + fontSize + fontFamily
+
     TextField {
         id: inputText
         anchors.left: parent.left
-        anchors.leftMargin: height / 1.9
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.leftMargin: 20
+        anchors.top: parent.top
+        anchors.topMargin: 20
         height: 50
-        width: 300
+        width: parent.width * 0.70
         placeholderText: qsTr("Type here")
         font.pointSize: 32
     }
@@ -47,7 +56,7 @@ Rectangle {
     Image {
         id: okButton
         source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-        sourceSize.height: inputText.height
+        sourceSize.height: inputText.height * 1.3
         fillMode: Image.PreserveAspectFit
         anchors.left: inputText.right
         anchors.leftMargin: 10
@@ -73,6 +82,79 @@ Rectangle {
                 // start the movement
                 moveOnBoardText.start()
             }
+        }
+    }
+
+    //bold text option
+    GCDialogCheckBox {
+        id: boldText
+        width: 20
+        //height: 20
+        anchors.top: inputText.bottom
+        anchors.left: inputText.left
+        anchors.topMargin: 10
+        onCheckedChanged: {
+            canvas.updateDemoText()
+            onBoardText.font.bold = checked
+        }
+        text: qsTr("Bold")
+    }
+
+    // Italic text option
+    GCDialogCheckBox {
+        id: italicText
+        width: 20
+        anchors.top: boldText.bottom
+        anchors.topMargin: 10
+        anchors.left: inputText.left
+        onCheckedChanged: {
+            canvas.updateDemoText()
+            onBoardText.font.italic = checked
+        }
+        text: qsTr("Italic")
+    }
+
+    // Font-size slider
+    GCSlider {
+        id: fontSizeSlider
+        width: parent.width * 0.60
+        anchors.top: italicText.bottom
+        anchors.topMargin: 10
+        anchors.left: inputText.left
+
+        //Initial font size
+        value: 16
+
+        //Minimum font size allowed
+        minimumValue: 8
+
+        //Maximum font size allowed
+        maximumValue: 60
+
+        onValueChanged: {
+            fontSize = value.toString() + "px "
+            canvas.updateDemoText()
+            onBoardText.font.pointSize = value
+        }
+        stepSize: 8
+    }
+
+    // Text settings visualization
+    Canvas {
+        id: canvas
+        width: parent.width * 0.20
+        height: parent.height * 0.30
+        anchors.horizontalCenter: okButton.horizontalCenter
+        anchors.verticalCenter: boldText.bottom
+        onPaint: updateDemoText()
+        function updateDemoText() {
+            var ctx = canvas.getContext("2d")
+            ctx.fillStyle = "white"
+            ctx.fillRect(0, 0, width, height)
+            ctx.font = inputTextFrame.font
+            ctx.fillStyle = "black"
+            ctx.fillText("Aa", width/2 - fontSizeSlider.value/2, height - fontSizeSlider.value/2)
+            canvas.requestPaint()
         }
     }
 }

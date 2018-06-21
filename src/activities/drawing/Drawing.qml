@@ -183,9 +183,9 @@ ActivityBase {
 
         function hideExpandedTools () {
             // hide the inputTextFrame
-            items.inputTextFrame.opacity = 0
-            items.inputTextFrame.z = -1
-            items.inputText.text = ""
+//            items.inputTextFrame.opacity = 0
+//            items.inputTextFrame.z = -1
+//            items.inputText.text = ""
         }
 
         Rectangle {
@@ -511,10 +511,9 @@ ActivityBase {
                         if (items.toolSelected == "text" && onBoardText.text != "") {
                             canvas.removeShadow()
                             canvas.ctx.fillStyle = items.paintColor
-                            canvas.ctx.font = "15px" + ApplicationSettings.font
-                            console.log(ApplicationSettings.font)
-                            //canvas.ctx.font = items.sizeS * 10 + "pt sans-serif"
-                            canvas.ctx.strokeText(onBoardText.text,area.realMouseX,area.realMouseY)
+                            canvas.ctx.font = inputTextFrame.font
+                            console.log(inputTextFrame.font)
+                            canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
                             onBoardText.text = ""
 
                             canvas.requestPaint()
