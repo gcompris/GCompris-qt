@@ -118,7 +118,7 @@ ActivityBase {
 
         property string currentType: "Whole"
         property string restType: "Whole"
-        property string clefType: bar.level == 2 ? "bass" : "treble"
+        property string clefType: bar.level == 2 ? "Bass" : "Treble"
         property string staffMode: "add"
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
 
@@ -240,11 +240,13 @@ ActivityBase {
                 if(background.staffMode === "add") {
                     selectedIndex = noteIndex
                     multipleStaff.insertingIndex = noteIndex + 1
-                    playNoteAudio(noteName, noteType)
+                    background.clefType = notesModel.get(selectedIndex).soundPitch_
+                    playNoteAudio(notesModel.get(selectedIndex).noteName_, notesModel.get(selectedIndex).noteType_, background.clefType)
                 }
                 else {
-                    var oldNoteDetails = notesModel.get(noteIndex)
-                    Activity.pushToStack(noteIndex, oldNoteDetails.noteName_, oldNoteDetails.noteType_)
+                    var oldNoteDetails = JSON.parse(JSON.stringify(multipleStaff.notesModel.get(noteIndex)))
+                    oldNoteDetails["noteIndex_"] = noteIndex
+                    Activity.pushToStack(oldNoteDetails)
                     multipleStaff.eraseNote(noteIndex)
                 }
             }
@@ -302,8 +304,10 @@ ActivityBase {
         }
 
         function addNoteAndPushToStack(noteName, noteType) {
-            Activity.pushToStack(multipleStaff.insertingIndex, "none", "none")
-            multipleStaff.addNote(noteName, noteType, false, true)
+            var noteDetails = {"noteIndex_": multipleStaff.insertingIndex, "noteName_": "none",
+                               "noteType_": "none", "clefType_": background.clefType, "soundPitch_": background.clefType}
+            Activity.pushToStack(noteDetails)
+            multipleStaff.addNote(noteName, noteType, false, true, background.clefType)
         }
 
         Image {
@@ -393,6 +397,21 @@ ActivityBase {
                 melodyList.forceActiveFocus()
             }
             onSaveButtonClicked: Activity.saveMelody()
+            onClefChanged: {
+                if(multipleStaff.selectedIndex === -1)
+                    multipleStaff.appendClef()
+                else {
+                    var originalNotes = []
+                    for(var i = multipleStaff.selectedIndex; i < multipleStaff.notesModel.count; i++) {
+                        var currentNote = JSON.parse(JSON.stringify(multipleStaff.notesModel.get(i)))
+                        currentNote["noteIndex_"] = i
+                        originalNotes.push(currentNote)
+                    }
+
+                    Activity.pushToStack(originalNotes)
+                    multipleStaff.changeNoteClefs()
+                }
+            }
             onEmitOptionMessage: clickedOptionMessage.show(message)
         }
 

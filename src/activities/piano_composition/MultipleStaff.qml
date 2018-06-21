@@ -53,7 +53,7 @@ Item {
      *
      * It is used for selecting note to play, erase and do other operations on it.
      */
-    signal noteClicked(string noteName, string noteType, int noteIndex)
+    signal noteClicked(int noteIndex)
 
     /**
      * Emitted for the notes while a melody is playing.
@@ -64,6 +64,10 @@ Item {
 
     ListModel {
         id: notesModel
+    }
+
+    ListModel {
+        id: clefs
     }
 
     Flickable {
@@ -84,7 +88,6 @@ Item {
                 model: nbStaves
                 Staff {
                     id: staff
-                    clef: multipleStaff.clef
                     height: multipleStaff.height / 5
                     width: multipleStaff.width - 5
                     lastPartition: index == (nbStaves - 1)
@@ -93,7 +96,22 @@ Item {
             }
         }
 
-        readonly property real noteWidth: (multipleStaff.width - 15 - staves.itemAt(0).clefImageWidth) / 10
+        Repeater {
+            id: clefRepeater
+            model: clefs
+
+            readonly property real clefImageWidth: 3 * multipleStaff.height / 25
+
+            Image {
+                id: clefImage
+                source: clef ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clef.toLowerCase() + "Clef.svg" : ""
+                sourceSize.width: clefRepeater.clefImageWidth
+                x: isDefaultClef ? 0 : notesRepeater.itemAt(noteIndex).x + flickableStaves.noteWidth
+                y: flickableTopMargin + staves.itemAt(staffNb).y
+            }
+        }
+
+        readonly property real noteWidth: (multipleStaff.width - 15 - clefRepeater.clefImageWidth) / 10
         Repeater {
             id: notesRepeater
             model: notesModel
@@ -104,26 +122,29 @@ Item {
                 noteIsColored: multipleStaff.noteIsColored
                 width: flickableStaves.noteWidth
                 height: multipleStaff.height / 5
+                soundPitch: soundPitch_
+                clefType: clefType_
 
                 property int staffNb: staffNb_
                 readonly property real shiftDistance: blackType != "" ? flickableStaves.noteWidth / 6 : 0
 
-                noteDetails: multipleStaff.getNoteDetails(noteName, noteType)
+                noteDetails: multipleStaff.getNoteDetails(noteName, noteType, clefType)
 
                 MouseArea {
                     id: noteMouseArea
                     anchors.fill: parent
                     hoverEnabled: true
-                    onClicked: multipleStaff.noteClicked(noteName, noteType, index)
+                    onClicked: multipleStaff.noteClicked(index)
                 }
 
                 function highlightNote() {
                     highlightTimer.start()
                 }
 
-                x: shiftDistance + (isFirstNote_ ? (staves.itemAt(0).clefImageWidth + 5)
+                x: shiftDistance + (isFirstNote_ ? (clefRepeater.clefImageWidth + 5)
                                                  : (notesRepeater.itemAt(index - 1) == undefined) ? 0
-                                                 : (notesRepeater.itemAt(index - 1).x + flickableStaves.noteWidth))
+                                                 : (notesRepeater.itemAt(index - 1).soundPitch == soundPitch) ? (notesRepeater.itemAt(index - 1).x + flickableStaves.noteWidth)
+                                                 : (clefRepeater.clefImageWidth + (notesRepeater.itemAt(index - 1).x + flickableStaves.noteWidth)))
 
                 y: {
                     if(noteDetails === undefined || staves.itemAt(staffNb) == undefined)
@@ -145,16 +166,63 @@ Item {
     }
 
     /**
+     * Initializes the default clefs on the staves.
+     *
+     * @param clefType: The clef type to be initialized.
+     */
+    function initClefs(clefType) {
+        clefs.clear()
+        for(var i = 0; i < nbStaves; i++) {
+            clefs.append({ "clef": clefType, "staffNb": i, "noteIndex": 0, "isDefaultClef": true})
+        }
+    }
+
+    /**
+     * This function appends a clef image at the end of the notes when the clef is changed or removes the one which was last added, on multiple clicks.
+     */
+    function appendClef() {
+        var lastNote = notesRepeater.itemAt(notesModel.count - 1)
+        var isMultipleStaffPresent = false
+        // If the current staff is not full, append the clef image or remove it, depending on multiple clicks.
+        if(notesModel.count && (staves.itemAt(0).width - notesRepeater.itemAt(notesModel.count - 1).x) > (2 * flickableStaves.noteWidth + clefRepeater.clefImageWidth)) {
+            // No need to append a clef image(remove the previously added one) on second click as the previous note is of same clef type, it means entering notes will just be a continuation of the current clef.
+            if(background.clefType === lastNote.soundPitch && !clefs.get(clefs.count - 1).isDefaultClef)
+                clefs.remove(clefs.count - 1)
+            else if(background.clefType != lastNote.soundPitch)
+                clefs.append({ "clef": background.clefType, "staffNb": lastNote.staffNb,
+                               "noteIndex": notesModel.count - 1, "isDefaultClef": false })
+        }
+
+        // Change the clefs of the next empty staffs.
+        for(var i = (lastNote == undefined ? 0 : lastNote.staffNb + 1); i < nbStaves; i++)
+            clefs.set(i, {"clef": background.clefType})
+    }
+
+    /**
+     * Changes the sound pitch of the notes when the clef type of the selected note is changed.
+     */
+    function changeNoteClefs() {
+        var i = selectedIndex
+        do {
+            var previousPitch = notesModel.get(i).soundPitch_
+            notesModel.set(i, { "soundPitch_": background.clefType })
+            i++;
+        } while((i < notesModel.count) && (notesModel.get(i).soundPitch_ === previousPitch))
+        selectedIndex = -1
+        var tempModel = createNotesBackup()
+        redrawNotes(tempModel)
+    }
+
+    /**
      * Gets all the details of any note like note image, position on staff etc. from NoteNotations.
      */
-    function getNoteDetails(noteName, noteType) {
+    function getNoteDetails(noteName, noteType, clefType) {
         var notesDetails = NoteNotations.get()
-        var clef = background.clefType
         var noteNotation
         if(noteType === "Rest")
             noteNotation = noteName + noteType
         else
-            noteNotation = clef + noteName
+            noteNotation = clefType + noteName
 
         for(var i = 0; i < notesDetails.length; i++) {
             if(noteNotation === notesDetails[i].noteName) {
@@ -181,7 +249,9 @@ Item {
     /**
      * Adds a note to the staff.
      */
-    function addNote(noteName, noteType, highlightWhenPlayed, playAudio) {
+    function addNote(noteName, noteType, highlightWhenPlayed, playAudio, clefType, soundPitch) {
+        if(soundPitch == undefined)
+            soundPitch = clefType
         var duration
         if(noteType === "Rest")
             duration = calculateTimerDuration(noteName)
@@ -189,30 +259,44 @@ Item {
             duration = calculateTimerDuration(noteType)
 
         var isNextStaff = notesModel.count && ((staves.itemAt(0).width - notesRepeater.itemAt(notesModel.count - 1).x) < 2 * flickableStaves.noteWidth)
+
+        // Append a new clef image if the sound pitch of the new note differs than the previous note, and then add the note.
+        if(notesModel.count && soundPitch != notesRepeater.itemAt(notesModel.count - 1).soundPitch) {
+            background.clefType = soundPitch
+            appendClef()
+            // If there isn't anymore space in the current staff to accommodate a clef image and a note, proceed to add in the next staff.
+            if((staves.itemAt(0).width - notesRepeater.itemAt(notesModel.count - 1).x) < (2 * flickableStaves.noteWidth + clefRepeater.clefImageWidth))
+                isNextStaff = true
+        }
+
         var isFirstPosition = false
         if((notesModel.count == 0) || isNextStaff) {
+            if(!notesModel.count)
+                initClefs(soundPitch)
+
             if(isNextStaff)
                 multipleStaff.currentEnteringStaff++
 
             if(multipleStaff.currentEnteringStaff >= multipleStaff.nbStaves) {
-                var melody = getAllNotes()
                 multipleStaff.nbStaves++
+                // When a new staff is added, initialise it with the current clef.
+                clefs.insert(nbStaves - 1, { "clef": background.clefType, "staffNb": nbStaves - 1,
+                                             "noteIndex": notesModel.count - 1, "isDefaultClef": true })
                 flickableStaves.flick(0, - nbStaves * multipleStaff.height)
-                multipleStaff.currentEnteringStaff = 0
-                loadFromData(melody)
-                multipleStaff.currentEnteringStaff++
             }
 
             isFirstPosition = true
         }
 
-        if(multipleStaff.insertingIndex == notesModel.count)
-            notesModel.append({"noteName_": noteName, "noteType_": noteType, "mDuration": duration,
+        if(multipleStaff.insertingIndex == notesModel.count) {
+            notesModel.append({"noteName_": noteName, "noteType_": noteType, "soundPitch_": soundPitch,
+                               "clefType_": clefType, "mDuration": duration,
                                "highlightWhenPlayed": highlightWhenPlayed, "staffNb_": multipleStaff.currentEnteringStaff,
                                "isFirstNote_": isFirstPosition})
+        }
         else {
             var tempModel = createNotesBackup()
-            tempModel.splice(multipleStaff.insertingIndex, 0, { "noteName_": noteName, "noteType_": noteType })
+            tempModel.splice(multipleStaff.insertingIndex, 0, { "noteName_": noteName, "noteType_": noteType, "soundPitch_": soundPitch, "clefType_": clefType })
             redrawNotes(tempModel)
         }
 
@@ -220,7 +304,7 @@ Item {
         multipleStaff.selectedIndex = -1
 
         if(playAudio)
-            playNoteAudio(noteName, noteType)
+            playNoteAudio(noteName, noteType, soundPitch)
     }
 
     /**
@@ -240,18 +324,22 @@ Item {
      * Redraws all the notes on the staves.
      */
     function redrawNotes(notes) {
-        eraseAllNotes()
-        for(var i = 0; i < notes.length; i++) {
-            addNote(notes[i]["noteName_"], notes[i]["noteType_"], false, false)
-        }
+        notesModel.clear()
+        clefs.clear()
+        initClefs(background.clefType)
+        insertingIndex = 0
+        currentEnteringStaff = 0
+        for(var i = 0; i < notes.length; i++)
+            addNote(notes[i]["noteName_"], notes[i]["noteType_"], false, false, notes[i]["clefType_"], notes[i]["soundPitch_"])
 
+        // Remove the remaining unused staffs.
         if((multipleStaff.currentEnteringStaff + 1 < multipleStaff.nbStaves) && (multipleStaff.nbStaves > 2)) {
-            var melody = getAllNotes()
-            multipleStaff.nbStaves = multipleStaff.currentEnteringStaff + 1
+            nbStaves = multipleStaff.currentEnteringStaff + 1
+            for(var j = nbStaves; j < clefs.count && clefs.get(j).isDefaultClef;)
+                clefs.remove(j)
             flickableStaves.flick(0, - nbStaves * multipleStaff.height)
-            multipleStaff.currentEnteringStaff = 0
-            loadFromData(melody)
         }
+        background.clefType = notesModel.get(notesModel.count - 1).soundPitch_
     }
 
     /**
@@ -281,26 +369,31 @@ Item {
      */
     function eraseAllNotes() {
         notesModel.clear()
+        clefs.clear()
         selectedIndex = -1
         multipleStaff.insertingIndex = 0
         multipleStaff.currentEnteringStaff = 0
+        nbStaves = 2
+        initClefs(background.clefType)
     }
 
     /**
      * Undo the change made to the last note.
      */
     function undoChange(undoNoteDetails) {
-        if(undoNoteDetails.oldNoteName_ === "none") {
+        var tempModel
+        if(undoNoteDetails.noteName_ === "none") {
             if((undoNoteDetails.noteIndex_ === (notesModel.count - 1)) && notesModel.get(notesModel.count - 1).isFirstNote_ && (multipleStaff.currentEnteringStaff != 0))
                 multipleStaff.currentEnteringStaff--
             notesModel.remove(undoNoteDetails.noteIndex_)
 
-            var tempModel = createNotesBackup()
+            tempModel = createNotesBackup()
         }
         else {
             selectedIndex = undoNoteDetails.noteIndex_
-            var tempModel = createNotesBackup()
-            tempModel[selectedIndex]= { "noteName_": undoNoteDetails.oldNoteName_, "noteType_": undoNoteDetails.oldNoteType_ }
+            tempModel = createNotesBackup()
+            tempModel[selectedIndex]= { "noteName_": undoNoteDetails.noteName_, "noteType_": undoNoteDetails.noteType_,
+                                        "clefType_": undoNoteDetails.clefType_, "soundPitch_": undoNoteDetails.soundPitch_}
         }
         selectedIndex = -1
         redrawNotes(tempModel)
@@ -312,9 +405,8 @@ Item {
      * @param noteName: name of the note to be played.
      * @param noteType: note type to be played.
      */
-    function playNoteAudio(noteName, noteType) {
+    function playNoteAudio(noteName, noteType, soundPitch) {
         if(noteType != "Rest") {
-            var audioPitchType
             // We should find a corresponding b type enharmonic notation for # type note to play the audio.
             if(noteName[1] === "#") {
                 var blackKeysFlat
@@ -332,19 +424,8 @@ Item {
                         }
                     }
                 }
-
-                audioPitchType = parseInt(noteName[2])
             }
-            else if(noteName[1] === "b")
-                audioPitchType = parseInt(noteName[2])
-            else
-                audioPitchType = parseInt(noteName[1])
-
-            if(audioPitchType > 3)
-                audioPitchType = "treble"
-            else
-                audioPitchType = "bass"
-            var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + audioPitchType + "_pitches/" + noteName + ".wav"
+            var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch + "_pitches/" + noteName + ".wav"
             items.audioEffects.play(noteToPlay)
         }
     }
@@ -353,22 +434,21 @@ Item {
      * Get all the notes from the notesModel and returns the melody.
      */
     function getAllNotes() {
-        var melody = "" + multipleStaff.clef
-        for(var i = 0; i < notesModel.count; i ++)
-            melody +=  " " + notesModel.get(i).noteName_ + notesModel.get(i).noteType_
-        return melody
+        var notes = createNotesBackup()
+        return notes
     }
 
     /**
      * Loads melody from the provided data, to the staffs.
      *
-     * @rparam data: melody to be loaded
+     * @param data: melody to be loaded
      */
     function loadFromData(data) {
         eraseAllNotes()
         var melody = data.split(" ")
         background.clefType = melody[0]
-        for(var i = 1 ; i < melody.length ; ++ i) {
+        initClefs(melody[0])
+        for(var i = 1 ; i < melody.length; ++i) {
             var noteLength = melody[i].length
             var noteName = melody[i][0]
             var noteType
@@ -384,9 +464,10 @@ Item {
                 noteType = melody[i].substring(2, melody[i].length)
                 noteName += melody[i][1]
             }
-
-            addNote(noteName, noteType, false, false)
+            addNote(noteName, noteType, false, false, melody[0])
         }
+        var tempModel = createNotesBackup()
+        redrawNotes(tempModel)
     }
 
     /**
@@ -410,6 +491,7 @@ Item {
 
     function play() {
         musicTimer.currentNote = 0
+        selectedIndex = -1
         musicTimer.interval = 500
         /*
         for(var v = 1 ; v < currentStaff ; ++ v)
@@ -437,8 +519,10 @@ Item {
             if(!running && notesModel.get(currentNote) !== undefined) {
                 var currentType = notesModel.get(currentNote).noteType_
                 var note = notesModel.get(currentNote).noteName_
+                var soundPitch = notesModel.get(currentNote).soundPitch_
+                background.clefType = notesModel.get(currentNote).clefType_
 
-                playNoteAudio(note, currentType)
+                playNoteAudio(note, currentType, soundPitch)
 
                 if(currentType != "Rest")
                     multipleStaff.notePlayed(note)

@@ -29,6 +29,8 @@ Item {
     id: note
     property string noteName
     property string noteType
+    property string soundPitch
+    property string clefType
     property bool noteIsColored: true
     property string blackType: noteName[1] === "#" ? "sharp"
                                : noteName[1] === "b" ? "flat" : ""// empty, "flat" or "sharp"

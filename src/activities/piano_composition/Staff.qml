@@ -29,10 +29,7 @@ Item {
 
     property Item main: activity.main
 
-    property int verticalDistanceBetweenLines: height / nbLines // todo width/nbLines * smth
-    
-    property string clef
-    readonly property real clefImageWidth: clefImage.width
+    property int verticalDistanceBetweenLines: height / nbLines
 
     width: 400
     height: 100
@@ -43,12 +40,6 @@ Item {
 
     property bool isMetronomeDisplayed: false
     property bool showMetronome: false
-
-    Image {
-        id: clefImage
-        source: clef ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clef.toLowerCase() + "Clef.svg" : ""
-        sourceSize.width: (nbLines - 2) * verticalDistanceBetweenLines
-    }
 
     readonly property int yShift: activity.horizontalLayout ? 0 : 1.5
 

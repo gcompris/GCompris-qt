@@ -60,6 +60,7 @@ Row {
     signal clearButtonClicked
     signal openButtonClicked
     signal saveButtonClicked
+    signal clefChanged
     signal emitOptionMessage(string message)
 
     SwitchableOptions {
@@ -95,11 +96,10 @@ Row {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                multipleStaff.eraseAllNotes()
                 background.clefType = (background.clefType == "Bass") ? "Treble" : "Bass"
                 //: Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
                 emitOptionMessage((background.clefType === "Treble") ? qsTr("Treble clef") : qsTr("Bass clef"))
-                lyricsArea.resetLyricsArea()
+                clefChanged()
             }
         }
     }

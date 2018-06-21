@@ -68,7 +68,8 @@ function saveMelody() {
             console.debug("Created directory " + userDir);
     }
 
-    var data = items.file.read(userFile)
+    if(items.file.exists(userFile))
+        var data = items.file.read(userFile)
     if (!items.file.append(JSON.stringify(notes), userFile)) {
         Core.showMessageDialog(items.background,
             qsTr("Error saving melody to your file (%1)")
@@ -94,6 +95,8 @@ function initLevel() {
     else
         items.background.clefType = "Treble"
 
+    items.multipleStaff.initClefs(items.background.clefType)
+
     if(items.bar.level === 4)
         items.piano.useSharpNotation = false
     else
@@ -107,8 +110,8 @@ function initLevel() {
     undoStack = []
 }
 
-function pushToStack(noteIndex, oldNoteName, oldNoteType, newNoteName, newNoteType) {
-    undoStack.push({"noteIndex_": noteIndex, "oldNoteName_": oldNoteName, "oldNoteType_": oldNoteType})
+function pushToStack(data) {
+    undoStack.push(data)
     // Maintain most recent 5 changes. Remove older ones (stack behaves as queue here).
     if(undoStack.length > 5)
         undoStack.shift()
@@ -118,7 +121,13 @@ function undoChange() {
     if(undoStack.length > 0) {
         var undoNoteDetails = undoStack[undoStack.length - 1]
         undoStack.pop()
-        items.multipleStaff.undoChange(undoNoteDetails)
+        if(undoNoteDetails.length == undefined) {
+            items.multipleStaff.undoChange(undoNoteDetails)
+            return
+        }
+
+        for(var i = 0; i < undoNoteDetails.length; i++)
+            items.multipleStaff.undoChange(undoNoteDetails[i])
     }
 }
 
