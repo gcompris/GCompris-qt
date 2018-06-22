@@ -31,13 +31,14 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+    property bool isHorizontal: background.width > background.height
 
     pageComponent: Image {
         id: background
         source: Activity.resourceURL + "railroad-bg.svg"
-        height: activity.height / 2
-        width: activity.width
-        anchors.fill: parent
+        sourceSize.height: background.height
+        fillMode: Image.PreserveAspectCrop
+        anchors.horizontalCenter: parent.horizontalCenter
 
         signal start
         signal stop
@@ -120,14 +121,14 @@ ActivityBase {
 
             GridView {
                 id: answerZone
-                readonly property int levelCellWidth: (background.width > background.height) ? background.width / (listModel.count > 5 ? 7.2 : 5.66) :
+                readonly property int levelCellWidth: isHorizontal ? background.width / (listModel.count > 5 ? 7.2 : 5.66) :
                                                                                                background.width / ((listModel.count > 5) ? 7.1 : 5)
-                readonly property int levelCellHeight: background.width > background.height ? topDisplayArea.height / 2 : topDisplayArea.height / 3
+                readonly property int levelCellHeight: isHorizontal ? topDisplayArea.height / 2 : topDisplayArea.height / 3
                 width: parent.width
                 height: background.height / 8
                 cellWidth: levelCellWidth
                 cellHeight: levelCellHeight
-                y: background.width > background.height ? sampleList.y - height * 1.55 : sampleList.y - height * 1.29
+                y: isHorizontal ? sampleList.y - height * 1.55 : sampleList.y - height * 1.29
                 interactive: false
                 model: listModel
                 delegate: Image {
@@ -344,12 +345,12 @@ ActivityBase {
             height: background.height - topDisplayArea.height
             anchors.margins: 20
             cellWidth: width / columnCount
-            cellHeight: (background.width > background.height) ? background.height / 7 : background.height / 7.5
+            cellHeight: isHorizontal ? background.height / 7 : background.height / 7.5
             model: Activity.dataset["noOfLocos"][bar.level - 1] + Activity.dataset["noOfWagons"][bar.level - 1]
             interactive: false
 
             // No. of wagons in a row
-            readonly property int columnCount: (background.width > background.height) ? Activity.dataset["columnsInHorizontalMode"][bar.level - 1] :
+            readonly property int columnCount: isHorizontal ? Activity.dataset["columnsInHorizontalMode"][bar.level - 1] :
         Activity.dataset["columsInVerticalMode"][bar.level - 1]
 
             readonly property int rowCount: columnCount > 0 ? model / columnCount : 0
@@ -360,7 +361,7 @@ ActivityBase {
                 property real originX
                 property real originY
                 source: Activity.resourceURL + uniqueID + ".svg"
-                width: (background.width > background.height) ? background.width / 5.66 : background.width / 4.2
+                width: isHorizontal ? background.width / 5.66 : background.width / 4.2
                 sourceSize.width: width
                 fillMode: Image.PreserveAspectFit
                 visible: true
@@ -474,8 +475,8 @@ ActivityBase {
             keyNavigationWraps: true
             highlightRangeMode: GridView.ApplyRange
             highlight: Rectangle {
-                width: (background.width > background.height) ? background.width / 5.66 : background.width / 4.2
-                height: background.width > background.height ? sampleList.cellHeight : sampleList.cellHeight / 1.65
+                width: isHorizontal ? background.width / 5.66 : background.width / 4.2
+                height: isHorizontal ? sampleList.cellHeight : sampleList.cellHeight / 1.65
                 color: "#AA41AAC4"
                 opacity: 0.8
                 radius: 5
@@ -507,7 +508,7 @@ ActivityBase {
                 y: sampleList.y + (sampleList.cellHeight * (index + 1)) - (sampleList.cellHeight - items.sampleImageHeight)
                 z: 1
                 width: background.width
-                height: (background.width > background.height) ? 6 : 3
+                height: isHorizontal ? 6 : 3
                 border.color: "#808180"
                 color: "transparent"
                 border.width: 4
@@ -547,7 +548,7 @@ ActivityBase {
 
         Score {
             id: score
-            fontSize: background.width > background.height ? internalTextComponent.smallSize : internalTextComponent.tinySize
+            fontSize: isHorizontal ? internalTextComponent.smallSize : internalTextComponent.tinySize
             anchors.top: parent.top
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
