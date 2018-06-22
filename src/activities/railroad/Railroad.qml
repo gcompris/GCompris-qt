@@ -114,8 +114,8 @@ ActivityBase {
         Rectangle {
             id: topDisplayArea
             width: background.width
-            height: background.height / 4.5
-            y: background.height / 12.7
+            height: background.height * 0.2
+            anchors.bottom: sampleList.top
             color: 'transparent'
             z: 1
 
@@ -123,20 +123,21 @@ ActivityBase {
                 id: answerZone
                 readonly property int levelCellWidth: isHorizontal ? background.width / (listModel.count > 5 ? 7.2 : 5.66) :
                                                                                                background.width / ((listModel.count > 5) ? 7.1 : 5)
-                readonly property int levelCellHeight: isHorizontal ? topDisplayArea.height / 2 : topDisplayArea.height / 3
+                readonly property int levelCellHeight: levelCellWidth * 0.42
                 width: parent.width
-                height: background.height / 8
+                height: levelCellHeight
                 cellWidth: levelCellWidth
                 cellHeight: levelCellHeight
-                y: isHorizontal ? sampleList.y - height * 1.55 : sampleList.y - height * 1.29
+                anchors.bottom: parent.bottom
                 interactive: false
                 model: listModel
+                y: sampleList.top
                 delegate: Image {
                     id: wagon
                     source: Activity.resourceURL + modelData + ".svg"
-                    height: answerZone.levelCellHeight
-                    width: answerZone.levelCellWidth
-                    sourceSize.width: width
+                    fillMode: Image.PreserveAspectFit
+                    width: answerZone.cellWidth
+                    sourceSize.width: wagon.width
                     function checkDrop(dragItem) {
                         // Checks the drop location of this wagon
                         var globalCoordinates = dragItem.mapToItem(answerZone, 0, 0)
@@ -339,10 +340,10 @@ ActivityBase {
         GridView {
             id: sampleList
             visible: items.memoryMode
-            y: background.height / 4.7
+            y: background.height * 0.2
             z: 5
             width: background.width
-            height: background.height - topDisplayArea.height
+            height: background.height * 0.8
             anchors.margins: 20
             cellWidth: width / columnCount
             cellHeight: isHorizontal ? background.height / 7 : background.height / 7.5

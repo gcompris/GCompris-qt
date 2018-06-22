@@ -22,7 +22,7 @@
    sodipodi:modified="true"><metadata
      id="metadata84"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs843"><linearGradient
        inkscape:collect="always"
        id="linearGradient1067"><stop
@@ -104,7 +104,7 @@
      inkscape:window-height="1051"
      inkscape:window-width="1884"
      inkscape:cy="306.10002"
-     inkscape:cx="605.0732"
+     inkscape:cx="269.36098"
      inkscape:zoom="0.64489758"
      id="base"
      width="800px"
@@ -375,12 +375,12 @@
            id="path3769-2-0-2"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="zzz" /></g></g></g><rect
-     y="105"
+     y="104"
      x="0"
-     height="415"
+     height="416"
      width="1600"
      id="rect845"
-     style="font-size:12px;fill:#c2c2b8;fill-opacity:1;fill-rule:evenodd;stroke-width:1.41026962" /><rect
+     style="font-size:12px;fill:#c2c2b8;fill-opacity:1;fill-rule:evenodd;stroke-width:1.41196775" /><rect
      ry="0.81737506"
      y="82.358742"
      x="1133.2075"
