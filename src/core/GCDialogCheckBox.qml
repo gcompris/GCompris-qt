@@ -34,29 +34,31 @@ CheckBox {
     width: parent.width
 
     /**
-     * Alias for external reference of label text.
+     * type:int
+     * Font size of the label text.
+     * By default it is set to 16 i.e. GCText.mediumSize
+     *
      */
-    property alias labelText: labelText
+    property int labelTextFontSize: 16
 
     /**
-     * Alias for external reference of indicator image.
+     * type:int
+     * Height of the indicator image.
      */
-    property alias indicatorImage: indicatorImage
+    property int indicatorImageHeight: 50 * ApplicationInfo.ratio
 
     style: CheckBoxStyle {
         spacing: 10
 
         indicator: Image {
-            id: indicatorImage
-            sourceSize.height: 50 * ApplicationInfo.ratio
+            sourceSize.height: indicatorImageHeight
             property string suffix: control.enabled ? ".svg" : "_disabled.svg"
             source:
                 control.checked ? "qrc:/gcompris/src/core/resource/apply" + suffix :
                                   "qrc:/gcompris/src/core/resource/cancel" + suffix
         }
         label: GCText {
-            id: labelText
-            fontSize: mediumSize
+            fontSize: labelTextFontSize
             text: control.text
             wrapMode: Text.WordWrap
             width: parent.parent.width - 50 * ApplicationInfo.ratio - 10 * 2
