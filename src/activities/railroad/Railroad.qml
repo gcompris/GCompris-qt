@@ -131,7 +131,6 @@ ActivityBase {
                 anchors.bottom: parent.bottom
                 interactive: false
                 model: listModel
-                y: sampleList.top
                 delegate: Image {
                     id: wagon
                     source: Activity.resourceURL + modelData + ".svg"
