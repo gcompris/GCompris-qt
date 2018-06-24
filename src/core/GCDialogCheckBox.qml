@@ -33,10 +33,21 @@ CheckBox {
     id: checkBox
     width: parent.width
 
+    /**
+     * Alias for external reference of label text.
+     */
+    property alias labelText: labelText
+
+    /**
+     * Alias for external reference of indicator image.
+     */
+    property alias indicatorImage: indicatorImage
+
     style: CheckBoxStyle {
         spacing: 10
 
         indicator: Image {
+            id: indicatorImage
             sourceSize.height: 50 * ApplicationInfo.ratio
             property string suffix: control.enabled ? ".svg" : "_disabled.svg"
             source:
@@ -44,6 +55,7 @@ CheckBox {
                                   "qrc:/gcompris/src/core/resource/cancel" + suffix
         }
         label: GCText {
+            id: labelText
             fontSize: mediumSize
             text: control.text
             wrapMode: Text.WordWrap
