@@ -88,11 +88,11 @@ Rectangle {
     //bold text option
     GCDialogCheckBox {
         id: boldText
-        width: 20
-        //height: 20
         anchors.top: inputText.bottom
         anchors.left: inputText.left
         anchors.topMargin: 10
+        labelTextFontSize: horizontalMode ? 16 : 10
+        indicatorImageHeight: horizontalMode ? 40 * ApplicationInfo.ratio : 20 * ApplicationInfo.ratio
         onCheckedChanged: {
             canvas.updateDemoText()
             onBoardText.font.bold = checked
@@ -103,10 +103,11 @@ Rectangle {
     // Italic text option
     GCDialogCheckBox {
         id: italicText
-        width: 20
         anchors.top: boldText.bottom
         anchors.topMargin: 10
         anchors.left: inputText.left
+        labelTextFontSize: boldText.labelTextFontSize
+        indicatorImageHeight: boldText.indicatorImageHeight
         onCheckedChanged: {
             canvas.updateDemoText()
             onBoardText.font.italic = checked
@@ -145,7 +146,8 @@ Rectangle {
         width: parent.width * 0.20
         height: parent.height * 0.30
         anchors.horizontalCenter: okButton.horizontalCenter
-        anchors.verticalCenter: boldText.bottom
+        anchors.top: okButton.bottom
+        anchors.topMargin: 20
         onPaint: updateDemoText()
         function updateDemoText() {
             var ctx = canvas.getContext("2d")
