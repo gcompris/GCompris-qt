@@ -36,7 +36,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "#add8e6"
+        color: "white"
         signal start
         signal stop
 
@@ -551,12 +551,17 @@ ActivityBase {
 
                     onPositionChanged: {
                         canvas.ctx = canvas.getContext('2d')
-                        canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? "#ffffff" :
+                        canvas.ctx.globalCompositeOperation = 'source-over'
+                        canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? Qt.rgba(0, 0, 0, 1) :
                                                                                   items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
                                                                                                                     items.toolSelected == "brush4" ? "black" :
                                                                                                                                                      items.paintColor
 
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
+                            if(items.toolSelected === "eraser") {
+                                canvas.ctx.globalCompositeOperation = 'destination-out'
+                            }
+
                             canvas.removeShadow()
                             canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.lineWidth = items.toolSelected == "eraser" ?
