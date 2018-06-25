@@ -342,6 +342,7 @@ Item {
             anchors.topMargin: 10
             cellWidth: width / 4.7
             cellHeight: height / 3.6
+            interactive: false
             model: colorModel
             visible: root.activePanel == "colorPanel"
             z: 1800
@@ -351,9 +352,8 @@ Item {
                 width: colorGrid.cellWidth * 0.80
                 height: colorGrid.cellHeight * 0.90
                 color: modelData
-                //scale: items.activeColorIndex === index ? 1.2 : 1
                 border.width: 3
-                border.color: items.activeColorIndex === index ? "grey" : modelData
+                border.color: items.activeColorIndex === index ? "grey" : "transparent"
                 MouseArea {
                     anchors.fill: parent
                     hoverEnabled: true
@@ -373,6 +373,10 @@ Item {
 
                     // set this color as current paint color
                     onClicked: {
+                        var lastActiveIndex = items.activeColorIndex
+                        var lastActiveColor = items.paintColor
+                        root.colorModel.remove(lastActiveIndex)
+                        root.colorModel.insert(lastActiveIndex, {colorCode: lastActiveColor.toString()})
                         items.activeColorIndex = index
                         items.paintColor = root1.color
                         background.hideExpandedTools()
@@ -428,6 +432,7 @@ Item {
                 root.colorModel.remove(items.activeColorIndex)
                 root.colorModel.insert(items.activeColorIndex, {colorCode: (colorPicker.currentColor()).toString()})
                 items.paintColor = (colorPicker.currentColor()).toString()
+                foldAnimation.start()
             }
         }
 
