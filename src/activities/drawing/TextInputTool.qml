@@ -93,6 +93,7 @@ Rectangle {
         anchors.topMargin: 10
         labelTextFontSize: horizontalMode ? 16 : 10
         indicatorImageHeight: horizontalMode ? 40 * ApplicationInfo.ratio : 20 * ApplicationInfo.ratio
+        width: indicatorImageHeight
         onCheckedChanged: {
             canvas.updateDemoText()
             onBoardText.font.bold = checked
@@ -108,6 +109,7 @@ Rectangle {
         anchors.left: inputText.left
         labelTextFontSize: boldText.labelTextFontSize
         indicatorImageHeight: boldText.indicatorImageHeight
+        width: indicatorImageHeight
         onCheckedChanged: {
             canvas.updateDemoText()
             onBoardText.font.italic = checked
