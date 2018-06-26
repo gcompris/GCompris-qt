@@ -241,11 +241,18 @@ ActivityBase {
                 property var ctx
                 property string url: ""
 
+                // For bucket-fill Tool
+                property int startX: -1
+                property int startY: -1
+                property int finishX: -1
+                property int finishY: -1
+                property color fillColor: items.paintColor
+                property bool isBucketDone: true
+
                 GCText {
                     id: onBoardText
                     text: ""
                     color: items.paintColor
-                    // font.pointSize: (ApplicationSettings.baseFontSize + 32) * ApplicationInfo.fontRatio
                     font.pointSize: items.sizeS * 10
                     z: -1
                     opacity: 0
@@ -824,16 +831,9 @@ ActivityBase {
 
                     onClicked: {
                         if (items.toolSelected == "fill") {
-                            canvas.removeShadow()
-                            canvas.ctx.fillStyle = items.paintColor
-                            canvas.ctx.beginPath()
-                            canvas.ctx.moveTo(0, 0)
-                            canvas.ctx.lineTo(background.width, 0)
-                            canvas.ctx.lineTo(background.width, background.height)
-                            canvas.ctx.lineTo(0, background.height)
-                            canvas.ctx.closePath()
-                            canvas.ctx.fill()
-                            canvas.requestPaint()
+                            canvas.startX = mouseX
+                            canvas.startY = mouseY
+                            Activity.paintBucket()
                         }
                     }
                 }

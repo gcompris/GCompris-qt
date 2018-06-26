@@ -25,7 +25,7 @@ import "../../core"
 Rectangle {
     id: inputTextFrame
     property bool horizontalMode: background.width > background.height
-    color: background.color
+    color: "#add8e6"
     width: horizontalMode ? background.width * 0.40 : background.width * 0.60
     height: horizontalMode ? background.height * 0.40 : background.height * 0.30
     anchors.centerIn: parent

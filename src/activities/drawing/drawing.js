@@ -427,3 +427,105 @@ function selectMode(modeName) {
         items.background.reloadSelectedPen()
     }
 }
+
+// Paint flood-fill algorithm(Stack based Implementation)
+function paintBucket() {
+    console.log( "Flood fill started at " + new Date().toLocaleTimeString() )
+    items.canvas.isBucketDone = false;
+    var reachLeft = false;
+    var reachRight = false;
+    var sX = parseInt(items.canvas.startX, 10)
+    var sY = parseInt(items.canvas.startY, 10)
+    var pixelStack = [[items.canvas.startX, items.canvas.startY]]
+    var ctx = items.canvas.getContext('2d')
+
+    var colorLayer = ctx.getImageData(0, 0,items.canvas.width, items.canvas.height)
+    var begPixel = sX * 4 + sY * 4 * colorLayer.width
+    var r1 = colorLayer.data[begPixel]
+    var g1 = colorLayer.data[begPixel + 1]
+    var b1 = colorLayer.data[begPixel + 2]
+
+    if(r1 === (items.canvas.fillColor.r * 255) && g1 === (items.canvas.fillColor.g * 255) && b1 === (items.canvas.fillColor.b * 255)) {
+        items.canvas.isBucketDone = true;
+        return;
+    }
+
+    var  r2, b2, g2, newIndex, oPixel
+
+    while(pixelStack.length) {
+        var pixelToCheck = pixelStack.pop()
+        sY = pixelToCheck[1]
+        sX = pixelToCheck[0]
+        begPixel = sX * 4 + sY * 4 * colorLayer.width
+
+        reachLeft = false;
+        reachRight = false;
+
+        while(sY - 1 >= 0) {
+            begPixel = sX * 4 + sY * 4 * colorLayer.width
+
+            if (!((colorLayer.data[begPixel] === r1) && (colorLayer.data[begPixel + 1] === g1) && (colorLayer.data[begPixel + 2] === b1))) {
+                break;
+            }
+            sY = sY - 1
+        }
+
+        sY = sY + 1;
+        ctx.fillRect(sX, sY, 1, 1)
+        begPixel = sX * 4 + sY * 4 * colorLayer.width
+        colorLayer.data[begPixel] = items.canvas.fillColor.r * 255
+        colorLayer.data[begPixel + 1] = items.canvas.fillColor.g * 255
+        colorLayer.data[begPixel + 2] = items.canvas.fillColor.b * 255
+        colorLayer.data[begPixel + 3] = 255
+
+        while(sY + 1 < colorLayer.height) {
+            sY = sY + 1
+            begPixel = sX * 4 + sY * 4 * colorLayer.width
+            if(((colorLayer.data[begPixel ] === r1) && (colorLayer.data[begPixel + 1] === g1) && (colorLayer.data[ begPixel + 2 ] === b1))) {
+                ctx.fillRect(sX, sY, 2, 2)
+                colorLayer.data[begPixel] = items.canvas.fillColor.r * 255
+                colorLayer.data[begPixel + 1] = items.canvas.fillColor.g * 255
+                colorLayer.data[begPixel + 2] = items.canvas.fillColor.b * 255
+                colorLayer.data[begPixel + 3] = 255
+
+                if(sX > 1) {
+                    oPixel = (sX - 1) * 4 + sY * 4 * colorLayer.width
+                    if((colorLayer.data[oPixel] === r1) && (colorLayer.data[oPixel + 1] === g1) && (colorLayer.data[oPixel + 2] === b1)) {
+                        if(!reachLeft) {
+                            pixelStack.push([sX -1, sY])
+                            reachLeft = true;
+                        }
+                    }
+                    else {
+                        reachLeft = false;
+                    }
+                }
+
+                if(sX < items.canvas.width) {
+                    oPixel = (sX + 1) * 4 + sY * 4 * colorLayer.width
+                    if((colorLayer.data[oPixel ] === r1) && (colorLayer.data[oPixel + 1] === g1) && (colorLayer.data[ oPixel + 2 ] === b1)) {
+                        if (!reachRight) {
+                            pixelStack.push([sX + 1, sY])
+                            reachRight = true;
+                        }
+                    }
+                    else {
+                        reachRight = false;
+                    }
+                }
+            }
+            else {
+                break;
+            }
+        }
+    }
+
+    ctx.drawImage(colorLayer, 0, 0)
+    items.canvas.requestPaint()
+    items.canvas.startX = -1
+    items.canvas.startY = -1
+    items.canvas.finishX = -1
+    items.canvas.finishY = -1
+
+    console.log( "Flood-fill completed at " + new Date().toLocaleTimeString() )
+}
