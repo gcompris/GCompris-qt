@@ -81,11 +81,10 @@ function initLevel() {
         solutionArray = [];
         //Adds wagons to display in answerZone
         var identifier;
+        var idLoco;
         // Adds a loco at the beginning
-        identifier = "loco" + Math.floor(Math.random() * dataset["noOfLocos"][currentLevel])
-        solutionArray.push(identifier);
-        addWagon(identifier, items.listModel.length);
-
+        idLoco = "loco" + Math.floor(Math.random() * dataset["noOfLocos"][currentLevel])
+        addWagon(idLoco, items.listModel.length);
         for(var i = 0; i < dataset["WagonsInCorrectAnswers"][currentLevel] - 1; i++) {
             do {
                 identifier = "wagon" + Math.floor(Math.random() * dataset["noOfWagons"][currentLevel])
@@ -93,8 +92,7 @@ function initLevel() {
             solutionArray.push(identifier);
             addWagon(identifier, i);
         }
-
-        solutionArray.reverse();
+        solutionArray.push(idLoco);
 
     } else {
         // Re-setup the same level
