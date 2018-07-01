@@ -29,6 +29,7 @@ Item {
     property int tabWidth: background.width * 0.15
     property int tabHeight: background.height * 0.06
     property alias colorModel: colorModel
+    property alias mainPanel: mainPanel
     property string activePanel: "null"
     property alias toolsMode: toolsMode
     property color panelColor: "#1A1A1B"
@@ -85,13 +86,13 @@ Item {
         y: -7
         MouseArea {
             anchors.fill: parent
-            enabled: (menuPanel.y < -5 && activePanel != "menuPanel") || (menuPanel.y > -5 && activePanel === "menuPanel")
+            enabled: (mainPanel.y < -5 && activePanel != "mainPanel") || (mainPanel.y > -5 && activePanel === "mainPanel")
             onClicked: {
                 animTarget = menuTitle
                 colorGrid.visible = false
                 menuGrid.visible = true
-                root.activePanel = "menuPanel"
-                if(menuPanel.panelUnFolded) {
+                root.activePanel = "mainPanel"
+                if(mainPanel.panelUnFolded) {
                     foldAnimation.start()
                 }
                 else {
@@ -127,13 +128,13 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            enabled: (menuPanel.y < -5 && activePanel != "toolsPanel") || (menuPanel.y > -5 && activePanel === "toolsPanel")
+            enabled: (mainPanel.y < -5 && activePanel != "toolsPanel") || (mainPanel.y > -5 && activePanel === "toolsPanel")
             onClicked: {
                 animTarget = toolsTitle
                 colorGrid.visible = false
                 menuGrid.visible = true
                 root.activePanel = "toolsPanel"
-                if(menuPanel.panelUnFolded) {
+                if(mainPanel.panelUnFolded) {
                     foldAnimation.start()
                 }
                 else {
@@ -166,16 +167,16 @@ Item {
         border.color: "white"
         x: background.width - 2 * width - 2
         y: -7
-        z: menuPanel.z - 1
+        z: mainPanel.z - 1
         MouseArea {
             anchors.fill: parent
-            enabled: (menuPanel.y < -5 && activePanel != "colorPanel") || (menuPanel.y > -5 && activePanel === "colorPanel")
+            enabled: (mainPanel.y < -5 && activePanel != "colorPanel") || (mainPanel.y > -5 && activePanel === "colorPanel")
             onClicked: {
                 animTarget = colorsTitle
                 menuGrid.visible = false
                 colorGrid.visible = true
                 root.activePanel = "colorPanel"
-                if(menuPanel.panelUnFolded) {
+                if(mainPanel.panelUnFolded) {
                     foldAnimation.start()
                 }
                 else {
@@ -209,13 +210,13 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            enabled: (menuPanel.y < -5 && activePanel != "toolOptions") || (menuPanel.y > -5 && activePanel === "toolOptions")
+            enabled: (mainPanel.y < -5 && activePanel != "toolOptions") || (mainPanel.y > -5 && activePanel === "toolOptions")
             onClicked: {
                 animTarget = toolsOptionTitle
                 root.activePanel = "toolOptions"
                 menuGrid.visible = false
                 colorGrid.visible = false
-                if(menuPanel.panelUnFolded) {
+                if(mainPanel.panelUnFolded) {
                     foldAnimation.start()
                 }
                 else {
@@ -243,7 +244,7 @@ Item {
         id: unfoldTitle
         target: animTarget
         property: "y"
-        to: menuPanel.height - 7
+        to: mainPanel.height - 7
         duration: 200
         easing.type: Easing.InOutQuad
     }
@@ -259,7 +260,7 @@ Item {
     }
 
     Rectangle {
-        id: menuPanel
+        id: mainPanel
         anchors.leftMargin: 5
         width: background.width
         height: background.height / 2.4
@@ -270,9 +271,9 @@ Item {
 
         NumberAnimation {
             id: foldAnimation
-            target: menuPanel
+            target: mainPanel
             property: "y"
-            to: - menuPanel.height
+            to: - mainPanel.height
             duration: 200
             easing.type: Easing.InOutQuad
             onStarted: foldTitle.start()
@@ -280,7 +281,7 @@ Item {
 
         NumberAnimation {
             id: unfoldAnimation
-            target: menuPanel
+            target: mainPanel
             property: "y"
             to: 0
             duration: 200
@@ -293,7 +294,7 @@ Item {
             width: parent.width * 0.75
             height: parent.height * 0.80
             anchors.centerIn: parent
-            visible: root.activePanel == "menuPanel" || root.activePanel == "toolsPanel"
+            visible: root.activePanel == "mainPanel" || root.activePanel == "toolsPanel"
             anchors.topMargin: 30
             cellWidth: width / 4
             cellHeight: height / 2.2
@@ -336,7 +337,7 @@ Item {
             width: parent.width * 0.75
             height: parent.height * 0.80
             anchors.left: selectedColor.right
-            anchors.verticalCenter: menuPanel.verticalCenter
+            anchors.verticalCenter: mainPanel.verticalCenter
             anchors.leftMargin: 30
             anchors.rightMargin: 10
             anchors.topMargin: 10
@@ -391,16 +392,16 @@ Item {
 
         ColorDialog {
             id: colorPicker
-            anchors.left: menuPanel.left
-            anchors.verticalCenter: menuPanel.verticalCenter
+            anchors.left: mainPanel.left
+            anchors.verticalCenter: mainPanel.verticalCenter
             visible: colorGrid.visible
             anchors.leftMargin: 20
         }
 
         Rectangle {
             id: selectedColor
-            width: menuPanel.width * 0.08
-            height: menuPanel.height * 0.30
+            width: mainPanel.width * 0.08
+            height: mainPanel.height * 0.30
             visible: colorGrid.visible
             radius: 8
             border.width: 3

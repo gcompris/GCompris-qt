@@ -25,8 +25,8 @@ import "drawing.js" as Activity
 
 Item {
     id: toolsSize
-    width: background.width * 0.30
-    height: background.height * 0.35
+    width: items.foldablePanels.mainPanel.width * 0.30
+    height: items.foldablePanels.mainPanel.height * 0.35
 
     GCSlider {
         id: slider

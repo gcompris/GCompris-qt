@@ -30,6 +30,7 @@ Item {
     property alias modesModel: modes.model
     property alias pencilModes: pencilModes
     property alias geometricModes: geometricModes
+    property alias opacitySliderValue: opacitySlider.value
 
     ListModel {
         id: pencilModes
@@ -114,8 +115,37 @@ Item {
     }
 
     ToolsSize {
+        id: toolsTipSize
         anchors.left: modes.right
-        anchors.verticalCenter: parent.verticalCenter
+        anchors.top: parent.top
+        anchors.topMargin: 30
         anchors.leftMargin: 30
+    }
+
+    GCSlider {
+        id: opacitySlider
+        width: toolsTipSize.width
+        anchors.top: toolsTipSize.bottom
+        anchors.horizontalCenter: toolsTipSize.horizontalCenter
+        anchors.topMargin: 30
+        value: 1.0
+        minimumValue: 0.0
+        maximumValue: 1.0
+        stepSize: 0.1
+        onValueChanged: {
+            items.globalOpacityValue = value
+            items.canvas.getContext('2d').globalAlpha = value
+        }
+    }
+
+    Button {
+        style: GCButtonStyle { theme: "light" }
+        text: qsTr("Opacity")
+
+        width: background.width > background.height ? opacitySlider.width / 3 : opacitySlider.width / 2.2
+        anchors.horizontalCenter: opacitySlider.horizontalCenter
+        anchors.top: opacitySlider.bottom
+        anchors.topMargin: 15
+        enabled: false
     }
 }

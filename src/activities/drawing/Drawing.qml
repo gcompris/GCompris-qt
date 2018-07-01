@@ -111,6 +111,7 @@ ActivityBase {
             property alias mainRegion: main
             property alias shape: shape
             property int activeColorIndex: 1
+            property alias foldablePanels: foldablePanels
             property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt: saveToFilePrompt
             property color paintColor: "#00ff00"
@@ -123,8 +124,10 @@ ActivityBase {
             property bool widthHeightChanged: false
             property bool mainAnimationOnX: true
             property bool undoRedo: false
+            property bool eraserMode: false
             property int sizeS: 2
             property int index: 0
+            property real globalOpacityValue: 1
             property string toolSelected: "pencil"
             property string patternType: "dot"
             property string lastUrl
@@ -183,9 +186,9 @@ ActivityBase {
 
         function hideExpandedTools () {
             // hide the inputTextFrame
-//            items.inputTextFrame.opacity = 0
-//            items.inputTextFrame.z = -1
-//            items.inputText.text = ""
+            //            items.inputTextFrame.opacity = 0
+            //            items.inputTextFrame.z = -1
+            //            items.inputText.text = ""
         }
 
         Rectangle {
@@ -559,11 +562,16 @@ ActivityBase {
                     onPositionChanged: {
                         canvas.ctx = canvas.getContext('2d')
                         canvas.ctx.globalCompositeOperation = 'source-over'
-                        canvas.ctx.strokeStyle = items.toolSelected == "eraser" ? Qt.rgba(0, 0, 0, 1) :
-                                                                                  items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
-                                                                                                                    items.toolSelected == "brush4" ? "black" :
-                                                                                                                                                     items.paintColor
 
+                        canvas.ctx.strokeStyle = items.eraserMode ? Qt.rgba(0, 0, 0, 1) :
+                                                                    items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
+                                                                                                      items.toolSelected == "brush4" ? "black" :
+                                                                                                                                       items.paintColor
+
+                        if(items.eraserMode) {
+                            canvas.ctx.globalCompositeOperation = 'destination-out'
+                            canvas.ctx.fillStyle = Qt.rgba(0, 0, 0, 1)
+                        }
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
                             if(items.toolSelected === "eraser") {
                                 canvas.ctx.globalCompositeOperation = 'destination-out'
