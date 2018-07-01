@@ -72,6 +72,7 @@ function initLevel() {
     redo = []
 
     ctx = items.canvas.getContext("2d")
+    items.globalOpacityValue = 1
     ctx.fillStyle = "#ffffff"
 
     ctx.beginPath()
@@ -83,6 +84,8 @@ function initLevel() {
     ctx.lineTo(0, items.background.height)
     ctx.closePath()
     ctx.fill()
+    ctx.globalAlpha = items.globalOpacityValue
+    items.foldablePanels.toolsMode.opacitySliderValue = items.globalOpacityValue
     items.canvas.requestPaint()
 
     items.next = false
@@ -273,7 +276,13 @@ function previousLevel() {
 
 function selectTool(toolName) {
     console.log("Clicked on " + toolName)
+    items.paintColor = "#000000"
+    items.eraserMode = false
     if(toolName === "Eraser") {
+        items.eraserMode = true
+        items.paintColor = Qt.rgba(0, 0, 0, 1)
+        items.globalOpacityValue = 1
+        items.foldablePanels.toolsMode.opacitySliderValue = items.globalOpacityValue
         items.toolSelected = "eraser"
         items.background.hideExpandedTools()
         items.background.reloadSelectedPen()
