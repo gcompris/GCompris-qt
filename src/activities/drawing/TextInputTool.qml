@@ -145,19 +145,23 @@ Rectangle {
     // Text settings visualization
     Canvas {
         id: canvas
-        width: parent.width * 0.20
+        width: horizontalMode ?  parent.width * 0.20 : parent.width * 0.30
         height: parent.height * 0.30
         anchors.horizontalCenter: okButton.horizontalCenter
         anchors.top: okButton.bottom
         anchors.topMargin: 20
+        anchors.right: parent.right
+        anchors.rightMargin: 10
         onPaint: updateDemoText()
         function updateDemoText() {
             var ctx = canvas.getContext("2d")
             ctx.fillStyle = "white"
             ctx.fillRect(0, 0, width, height)
             ctx.font = inputTextFrame.font
-            ctx.fillStyle = "black"
-            ctx.fillText("Aa", width/2 - fontSizeSlider.value/2, height - fontSizeSlider.value/2)
+            ctx.fillStyle = items.paintColor
+            var demoTextX = width/2 - fontSizeSlider.value/2
+            var demoTextY = horizontalMode ? height - fontSizeSlider.value/2 : height - fontSizeSlider.value/3
+            ctx.fillText("Aa", demoTextX, demoTextY)
             canvas.requestPaint()
         }
     }

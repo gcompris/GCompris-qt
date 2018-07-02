@@ -276,7 +276,7 @@ function previousLevel() {
 
 function selectTool(toolName) {
     console.log("Clicked on " + toolName)
-    items.paintColor = "#000000"
+    items.paintColor = items.lastActiveColor
     items.eraserMode = false
     if(toolName === "Eraser") {
         items.eraserMode = true

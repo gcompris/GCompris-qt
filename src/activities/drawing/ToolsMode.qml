@@ -138,14 +138,15 @@ Item {
         }
     }
 
-    Button {
-        style: GCButtonStyle { theme: "light" }
-        text: qsTr("Opacity")
-
-        width: background.width > background.height ? opacitySlider.width / 3 : opacitySlider.width / 2.2
+    GCText {
+        width: background.width > background.height ? opacitySlider.width / 3 : opacitySlider.width / 2
         anchors.horizontalCenter: opacitySlider.horizontalCenter
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         anchors.top: opacitySlider.bottom
-        anchors.topMargin: 15
-        enabled: false
+        anchors.topMargin: 10
+        fontSize: tinySize
+        color: "white"
+        text: "Opacity"
     }
 }
