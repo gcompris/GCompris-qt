@@ -114,7 +114,8 @@ ActivityBase {
             property alias foldablePanels: foldablePanels
             property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt: saveToFilePrompt
-            property color paintColor: "#00ff00"
+            property color paintColor: "#000000"
+            property color lastActiveColor: "#000000"
             property string urlImage
             property bool next: false
             property bool next2: false

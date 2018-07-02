@@ -279,6 +279,11 @@ Item {
             onStarted: foldTitle.start()
         }
 
+        // This mouseArea overrides the canvas region and avoid drawing through panel.
+        MouseArea {
+            anchors.fill: parent
+        }
+
         NumberAnimation {
             id: unfoldAnimation
             target: mainPanel
@@ -380,6 +385,7 @@ Item {
                         root.colorModel.insert(lastActiveIndex, {colorCode: lastActiveColor.toString()})
                         items.activeColorIndex = index
                         items.paintColor = root1.color
+                        items.lastActiveColor = items.paintColor
                         background.hideExpandedTools()
                         items.paintColor = color
                         background.reloadSelectedPen()
