@@ -33,6 +33,7 @@ Item {
     property string activePanel: "null"
     property alias toolsMode: toolsMode
     property color panelColor: "#1A1A1B"
+    property string activeToolIconSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg"
 
     ListModel {
         id: menuModel
@@ -238,6 +239,42 @@ Item {
         }
     }
 
+    Rectangle {
+        id: activeConfiguration
+        width: root.tabWidth
+        height: root.tabHeight
+        radius: 10
+        color: "grey"
+        border.color: "white"
+        x: (colorsTitle.x + toolsTitle.x) / 2
+        y: -7
+        z: mainPanel.z - 1
+
+        Rectangle {
+            id: activeColor
+            height: parent.height * 0.80
+            width: height
+            color: items.paintColor
+            radius: 10
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.horizontalCenterOffset: -width / 2
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 2
+            border.width: 2
+            border.color: "white"
+        }
+        Image {
+            id: activeTool
+            source: activeToolIconSource
+            height: parent.height * 0.75
+            width: height
+            fillMode: Image.PreserveAspectFit
+            anchors.left: activeColor.right
+            anchors.leftMargin: 10
+            anchors.verticalCenter: activeColor.verticalCenter
+        }
+    }
+
     property var animTarget: menuTitle
 
     NumberAnimation {
@@ -318,6 +355,7 @@ Item {
                         onExited: parent.scale = 1.0
                         onClicked: {
                             console.log(itemName)
+                            activeToolIconSource = img.source
                             Activity.selectTool(itemName)
                             foldAnimation.start()
                         }
