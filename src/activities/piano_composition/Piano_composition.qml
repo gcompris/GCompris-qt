@@ -88,8 +88,17 @@ ActivityBase {
             if(event.key === Qt.Key_F5 && piano.blackKeysEnabled) {
                 piano.blackKeyRepeater.itemAt(4).keyPressed()
             }
+            if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
+                piano.currentOctaveNb--
+            }
+            if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
+                piano.currentOctaveNb++
+            }
             if(event.key === Qt.Key_Delete) {
-                multipleStaff.eraseAllNotes()
+                optionsRow.clearButtonClicked()
+            }
+            if(event.key === Qt.Key_Backspace) {
+                optionsRow.undoButtonClicked()
             }
             if(event.key === Qt.Key_Space) {
                 multipleStaff.play()

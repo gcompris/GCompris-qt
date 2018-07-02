@@ -107,6 +107,12 @@ ActivityBase {
             if(event.key === Qt.Key_Backspace || event.key === Qt.Key_Delete) {
                 Activity.undoPreviousAnswer()
             }
+            if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
+                piano.currentOctaveNb--
+            }
+            if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
+                piano.currentOctaveNb++
+            }
         }
 
         // Add here the QML items you need to access in javascript
@@ -130,8 +136,8 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-        property string clefType: (items.bar.level <= 6) ? "Treble" : "Bass"
-        readonly property bool shiftButtonsVisible: [4, 5, 6, 9, 10, 11].indexOf(items.bar.level) != -1
+        property string clefType: (items.bar.level <= 7) ? "Treble" : "Bass"
+        readonly property bool shiftButtonsVisible: [5, 6, 7, 10, 11, 12].indexOf(items.bar.level) != -1
 
         Rectangle {
             anchors.fill: parent
@@ -192,14 +198,15 @@ ActivityBase {
             height: horizontalLayout ? parent.height * 0.7 : parent.height * 0.58
             nbStaves: 1
             clef: clefType
-            nbMaxNotesPerStaff: 10
             noteIsColored: items.mode === "coloredNotes"
             isMetronomeDisplayed: false
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: instruction.bottom
-            anchors.topMargin: horizontalLayout ? 0 : parent.height * 0.09
-            onNoteClicked: playNoteAudio(noteName, noteType)
+            anchors.topMargin: horizontalLayout ? parent.height * 0.02 : parent.height * 0.09
+            onNoteClicked: {
+                playNoteAudio(musicElementModel.get(noteIndex).noteName_, musicElementModel.get(noteIndex).noteType_,  musicElementModel.get(noteIndex).soundPitch_)
+            }
             noteHoverEnabled: false
             centerNotesPosition: true
         }
@@ -211,8 +218,8 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
-            blackLabelsVisible: ([4, 5, 6, 9, 10, 11].indexOf(items.bar.level) != -1)
-            useSharpNotation: (bar.level != 5) && (bar.level != 10)
+            blackLabelsVisible: ([5, 6, 7, 10, 11, 12].indexOf(items.bar.level) != -1)
+            useSharpNotation: (bar.level != 6) && (bar.level != 11)
             blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying
             whiteKeysEnabled: !multipleStaff.isMusicPlaying
             onNoteClicked: Activity.checkAnswer(note)
@@ -278,7 +285,7 @@ ActivityBase {
 
             playButtonVisible: true
             undoButtonVisible: true
-            changeAccidentalStyleButtonVisible: [6, 11].indexOf(items.bar.level) != -1
+            changeAccidentalStyleButtonVisible: [7, 12].indexOf(items.bar.level) != -1
 
             onUndoButtonClicked: Activity.undoPreviousAnswer()
         }

@@ -120,11 +120,20 @@ Item {
                 }
 
                 readonly property real defaultXPosition: musicElementRepeater.itemAt(index - 1) ? (musicElementRepeater.itemAt(index - 1).width + musicElementRepeater.itemAt(index - 1).x)
-                                                                                         : 0
+                                                                                                : 0
 
-                x: shiftDistance + ((isDefaultClef || !musicElementRepeater.itemAt(index - 1)) ? 0
-                                     : (musicElementRepeater.itemAt(index - 1).elementType === "clef") ? (defaultXPosition + 10)
-                                     : defaultXPosition)
+                x: {
+                    if(isDefaultClef || !musicElementRepeater.itemAt(index - 1))
+                        return 0
+                    else if(musicElementRepeater.itemAt(index - 1).elementType === "clef") {
+                        if(centerNotesPosition)
+                            return shiftDistance + defaultXPosition + multipleStaff.width / 3.5
+                        else
+                            return shiftDistance + defaultXPosition + 10
+                    }
+                    else
+                        return shiftDistance + defaultXPosition
+                }
 
                 y: {
                     if(elementType === "clef")
@@ -150,8 +159,9 @@ Item {
             id: secondStaffDefaultClef
             sourceSize.width: musicElementModel.count ? musicElementRepeater.itemAt(0).clefImageWidth : 0
             y: staves.count === 2 ? flickableTopMargin + staves.itemAt(1).y : 0
-            visible: currentEnteringStaff === 0
-            source: "qrc:/gcompris/src/activities/piano_composition/resource/" + background.clefType.toLowerCase() + "Clef.svg"
+            visible: (currentEnteringStaff === 0) && (nbStaves === 2)
+            source: background.clefType ? "qrc:/gcompris/src/activities/piano_composition/resource/" + background.clefType.toLowerCase() + "Clef.svg"
+                                        : ""
         }
     }
 
@@ -163,7 +173,7 @@ Item {
     function initClefs(clefType) {
         musicElementModel.clear()
         musicElementModel.append({ "elementType_": "clef", "clefType_": clefType, "staffNb_": 0, "isDefaultClef_": true,
-                                   "noteName_": "", "noteType_": "", "soundPitch_": "", "mDuration": 0,
+                                   "noteName_": "", "noteType_": "", "soundPitch_": clefType, "mDuration": 0,
                                    "highlightWhenPlayed_": false })
     }
 
@@ -331,7 +341,6 @@ Item {
         musicElementModel.clear()
         selectedIndex = -1
         multipleStaff.currentEnteringStaff = 0
-        nbStaves = 2
         initClefs(background.clefType)
     }
 
@@ -342,27 +351,29 @@ Item {
      * @param noteType: note type to be played.
      */
     function playNoteAudio(noteName, noteType, soundPitch) {
-        if(noteType != "Rest") {
-            // We should find a corresponding b type enharmonic notation for # type note to play the audio.
-            if(noteName[1] === "#") {
-                var blackKeysFlat
-                var blackKeysSharp
-                blackKeysFlat = piano.blackNotesFlat
-                blackKeysSharp = piano.blackNotesSharp
+        if(noteName) {
+            if(noteType != "Rest") {
+                // We should find a corresponding b type enharmonic notation for # type note to play the audio.
+                if(noteName[1] === "#") {
+                    var blackKeysFlat
+                    var blackKeysSharp
+                    blackKeysFlat = piano.blackNotesFlat
+                    blackKeysSharp = piano.blackNotesSharp
 
-                var foundNote = false
-                for(var i = 0; (i < blackKeysSharp.length) && !foundNote; i++) {
-                    for(var j = 0; j < blackKeysSharp[i].length; j++) {
-                        if(blackKeysSharp[i][j][0] === noteName) {
-                            noteName = blackKeysFlat[i][j][0]
-                            foundNote = true
-                            break
+                    var foundNote = false
+                    for(var i = 0; (i < blackKeysSharp.length) && !foundNote; i++) {
+                        for(var j = 0; j < blackKeysSharp[i].length; j++) {
+                            if(blackKeysSharp[i][j][0] === noteName) {
+                                noteName = blackKeysFlat[i][j][0]
+                                foundNote = true
+                                break
+                            }
                         }
                     }
                 }
+                var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch + "_pitches/" + noteName + ".wav"
+                items.audioEffects.play(noteToPlay)
             }
-            var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch + "_pitches/" + noteName + ".wav"
-            items.audioEffects.play(noteToPlay)
         }
     }
 

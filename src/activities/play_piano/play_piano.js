@@ -25,7 +25,7 @@
 
 var currentLevel = 0
 var currentSubLevel = 0
-var numberOfLevel = 11
+var numberOfLevel = 12
 var noteIndexAnswered
 var items
 var levels
@@ -43,7 +43,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    if([5, 10].indexOf(items.bar.level) === -1)
+    if([6, 11].indexOf(items.bar.level) === -1)
         items.piano.useSharpNotation = true
     else
         items.piano.useSharpNotation = false
@@ -57,12 +57,14 @@ function initSubLevel() {
     noteIndexAnswered = -1
     items.multipleStaff.loadFromData(currentSubLevelMelody)
 
-    if(items.bar.level === 1 || items.bar.level === 7)
+    if(items.bar.level === 1 || items.bar.level === 8)
         items.piano.currentOctaveNb = 0
-    else if(items.bar.level === 2 || items.bar.level === 8)
+    else if(items.bar.level === 2 || items.bar.level === 9)
         items.piano.currentOctaveNb = 1
     else if(items.bar.level === 3)
         items.piano.currentOctaveNb = 2
+    else if(items.bar.level === 4)
+        items.piano.currentOctaveNb = 3
     else
         items.piano.currentOctaveNb = items.piano.defaultOctaveNb
 
@@ -82,7 +84,7 @@ function nextSubLevel() {
 // Function will be written when activity logic will be implemented.
 function undoPreviousAnswer() {
     if(noteIndexAnswered >= 0) {
-        items.multipleStaff.revertAnswer(noteIndexAnswered)
+        items.multipleStaff.revertAnswer(noteIndexAnswered + 1)
         if(incorrectAnswers.indexOf(noteIndexAnswered) != -1)
             incorrectAnswers.pop()
 
@@ -96,10 +98,10 @@ function checkAnswer(noteName) {
         noteIndexAnswered++
         var currentNote = currentSubLevelNotes[noteIndexAnswered + 1]
         if((noteName + "Quarter") === currentNote)
-            items.multipleStaff.indicateAnsweredNote(true, noteIndexAnswered)
+            items.multipleStaff.indicateAnsweredNote(true, noteIndexAnswered + 1)
         else {
             incorrectAnswers.push(noteIndexAnswered)
-            items.multipleStaff.indicateAnsweredNote(false, noteIndexAnswered)
+            items.multipleStaff.indicateAnsweredNote(false, noteIndexAnswered + 1)
         }
 
         if(noteIndexAnswered === (currentSubLevelNotes.length - 2)) {
