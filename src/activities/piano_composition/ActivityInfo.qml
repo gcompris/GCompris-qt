@@ -37,10 +37,11 @@ ActivityInfo {
   Level 7: Load children's melodies from around the world and also save your composition.
 
 The following keyboard bindings work in this game:
-- backspace: erase attempt
+- backspace: undo
 - delete: erase attempt
 - enter/return: OK button
 - space bar: play
+- left/right arrow keys: switch keyboard octave
 - number keys:
   - 1 to 8: Corresponding white keys in the order on the displayed octave.
   - F1 to F5: Corresponding black keys in the order on the displayed octave.
