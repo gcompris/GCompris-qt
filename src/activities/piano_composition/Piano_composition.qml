@@ -119,7 +119,6 @@ ActivityBase {
         property string currentType: "Whole"
         property string restType: "Whole"
         property string clefType: bar.level == 2 ? "Bass" : "Treble"
-        property string staffMode: "add"
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
 
         File {
@@ -237,18 +236,9 @@ ActivityBase {
             anchors.topMargin: parent.height * 0.1
             anchors.rightMargin: parent.width * 0.043
             onNoteClicked: {
-                if(background.staffMode === "add") {
-                    selectedIndex = noteIndex
-                    multipleStaff.insertingIndex = noteIndex + 1
-                    background.clefType = notesModel.get(selectedIndex).soundPitch_
-                    playNoteAudio(notesModel.get(selectedIndex).noteName_, notesModel.get(selectedIndex).noteType_, background.clefType)
-                }
-                else {
-                    var oldNoteDetails = JSON.parse(JSON.stringify(multipleStaff.notesModel.get(noteIndex)))
-                    oldNoteDetails["noteIndex_"] = noteIndex
-                    Activity.pushToStack(oldNoteDetails)
-                    multipleStaff.eraseNote(noteIndex)
-                }
+                selectedIndex = noteIndex
+                background.clefType = musicElementModel.get(selectedIndex).soundPitch_
+                playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType)
             }
             onNotePlayed: piano.indicateKey(noteName)
         }
@@ -280,34 +270,19 @@ ActivityBase {
             blackKeysEnabled: bar.level > 2
             visible: !background.isLyricsMode
             onNoteClicked: {
-                if(background.staffMode === "add") {
-                    if(multipleStaff.selectedIndex == 0)
-                        parent.askInsertDirection(note, currentType)
-                    else
-                        parent.addNoteAndPushToStack(note, currentType)
-                }
+                parent.addMusicElementAndPushToStack(note, currentType)
             }
         }
 
-        function askInsertDirection(noteName, noteType) {
-            Core.showMessageDialog(main,
-                qsTr("Do you want to insert it to the left/right of the 1st note?"),
-                qsTr("Left"), function() {
-                    multipleStaff.insertingIndex--
-                    addNoteAndPushToStack(noteName, noteType)
-                },
-                qsTr("Right"), function() {
-                    addNoteAndPushToStack(noteName, noteType)
-                },
-                null
-            )
-        }
+        function addMusicElementAndPushToStack(noteName, noteType, elementType) {
+            if(noteType === "Rest")
+                elementType = "rest"
+            else if(elementType == undefined)
+                elementType = "note"
 
-        function addNoteAndPushToStack(noteName, noteType) {
-            var noteDetails = {"noteIndex_": multipleStaff.insertingIndex, "noteName_": "none",
-                               "noteType_": "none", "clefType_": background.clefType, "soundPitch_": background.clefType}
-            Activity.pushToStack(noteDetails)
-            multipleStaff.addNote(noteName, noteType, false, true, background.clefType)
+            var tempModel = multipleStaff.createNotesBackup()
+            Activity.pushToStack(tempModel)
+            multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, background.clefType)
         }
 
         Image {
@@ -360,7 +335,6 @@ ActivityBase {
             noteOptionsVisible: bar.level > 4
             playButtonVisible: true
             clefButtonVisible: bar.level > 2
-            staffModesOptionsVisible: true
             clearButtonVisible: true
             undoButtonVisible: true
             openButtonVisible: bar.level > 6
@@ -373,17 +347,25 @@ ActivityBase {
                 Activity.undoChange()
             }
             onClearButtonClicked: {
-                Core.showMessageDialog(main,
-                    qsTr("Do you want to erase all the notes?"),
-                    qsTr("Yes"), function() {
-                        Activity.undoStack = []
-                        lyricsArea.resetLyricsArea()
-                       multipleStaff.eraseAllNotes()
-                       multipleStaff.nbStaves = 2
-                    },
-                    qsTr("No"), null,
-                    null
-                )
+                if(multipleStaff.selectedIndex === -1) {
+                    Core.showMessageDialog(main,
+                        qsTr("You have not selected any note. Do you want to erase all the notes?"),
+                        qsTr("Yes"), function() {
+                            Activity.undoStack = []
+                            lyricsArea.resetLyricsArea()
+                           multipleStaff.eraseAllNotes()
+                           multipleStaff.nbStaves = 2
+                        },
+                        qsTr("No"), null,
+                        null
+                    )
+                }
+                else if(!multipleStaff.musicElementModel.get(multipleStaff.selectedIndex).isDefaultClef_) {
+                    var noteIndex = multipleStaff.selectedIndex
+                    var tempModel = multipleStaff.createNotesBackup()
+                    Activity.pushToStack(tempModel)
+                    multipleStaff.eraseNote(noteIndex)
+                }
             }
             onOpenButtonClicked: {
                 melodyList.melodiesModel.clear()
@@ -397,20 +379,11 @@ ActivityBase {
                 melodyList.forceActiveFocus()
             }
             onSaveButtonClicked: Activity.saveMelody()
-            onClefChanged: {
-                if(multipleStaff.selectedIndex === -1)
-                    multipleStaff.appendClef()
-                else {
-                    var originalNotes = []
-                    for(var i = multipleStaff.selectedIndex; i < multipleStaff.notesModel.count; i++) {
-                        var currentNote = JSON.parse(JSON.stringify(multipleStaff.notesModel.get(i)))
-                        currentNote["noteIndex_"] = i
-                        originalNotes.push(currentNote)
-                    }
-
-                    Activity.pushToStack(originalNotes)
-                    multipleStaff.changeNoteClefs()
-                }
+            onClefAdded: {
+                var insertingIndex = multipleStaff.selectedIndex === -1 ? multipleStaff.musicElementModel.count : multipleStaff.selectedIndex
+                var tempModel = multipleStaff.createNotesBackup()
+                Activity.pushToStack(tempModel)
+                multipleStaff.addMusicElement("clef", "", "", false, false, background.clefType)
             }
             onEmitOptionMessage: clickedOptionMessage.show(message)
         }

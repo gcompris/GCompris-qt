@@ -104,8 +104,6 @@ function initLevel() {
 
     items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
-    items.background.staffMode = "add"
-    items.optionsRow.staffModeIndex = 0
     items.lyricsArea.resetLyricsArea()
     undoStack = []
 }
@@ -119,15 +117,9 @@ function pushToStack(data) {
 
 function undoChange() {
     if(undoStack.length > 0) {
-        var undoNoteDetails = undoStack[undoStack.length - 1]
+        var undoState = undoStack[undoStack.length - 1]
         undoStack.pop()
-        if(undoNoteDetails.length == undefined) {
-            items.multipleStaff.undoChange(undoNoteDetails)
-            return
-        }
-
-        for(var i = 0; i < undoNoteDetails.length; i++)
-            items.multipleStaff.undoChange(undoNoteDetails[i])
+        items.multipleStaff.redraw(undoState)
     }
 }
 

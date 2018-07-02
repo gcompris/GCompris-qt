@@ -1,4 +1,4 @@
-/* GCompris - Note.qml
+/* GCompris - musicElement.qml
  *
  * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -26,20 +26,29 @@ import GCompris 1.0
 import "../../core"
 
 Item {
-    id: note
+    id: musicElement
+    width: noteImageWidth
+    height: multipleStaff.height / 5
     property string noteName
     property string noteType
     property string soundPitch
     property string clefType
+    property string elementType
     property bool noteIsColored: true
-    property string blackType: noteName[1] === "#" ? "sharp"
-                               : noteName[1] === "b" ? "flat" : ""// empty, "flat" or "sharp"
+    property bool isDefaultClef: false
+    property string blackType: noteName === "" ? ""
+                                               : noteName[1] === "#" ? "sharp"
+                                               : noteName[1] === "b" ? "flat" : ""// empty, "flat" or "sharp"
 
-    readonly property string length: (noteType === "Whole" || noteName === "whole") ? 1 :
-                                     (noteType === "Half" || noteName === "half")  ? 2 :
-                                     (noteType === "Quarter" || noteName === "quarter") ? 4 : 8
+    readonly property int length: (elementType === "clef") ? 2000
+                                                           : (noteType === "Whole" || noteName === "whole") ? 1
+                                                           : (noteType === "Half" || noteName === "half")  ? 2
+                                                           : (noteType === "Quarter" || noteName === "quarter") ? 4
+                                                           : 8
 
     readonly property int noteDuration: 2000 / length
+    readonly property real clefImageWidth: 3 * multipleStaff.height / 25
+    readonly property real noteImageWidth: (multipleStaff.width - 15 - clefImageWidth) / 10
 
     readonly property var noteColorMap: { "1": "#FF0000", "2": "#FF7F00", "3": "#FFFF00",
         "4": "#32CD32", "5": "#6495ED", "6": "#D02090", "7": "#FF1493", "8": "#FF0000",
@@ -50,8 +59,8 @@ Item {
 
     readonly property var sharpNoteName: { "C#": "-1", "D#": "-2", "F#": "-3", "G#": "-4", "A#": "-5" }
     readonly property var flatNoteName: { "Db": "-1", "Eb": "-2", "Gb": "-3", "Ab": "-4", "Bb": "-5" }
-    readonly property var blackNoteName: blackType == "" ? blackType :
-                                blackType == "flat" ? flatNoteName : sharpNoteName
+    readonly property var blackNoteName: blackType == "" ? blackType
+                                                         : blackType == "flat" ? flatNoteName : sharpNoteName
 
     property bool highlightWhenPlayed: false
     property alias highlightTimer: highlightTimer
@@ -62,7 +71,9 @@ Item {
     property bool isCorrectlyAnswered: false
 
     rotation: {
-        if((noteDetails === undefined) || ((noteDetails.positionOnStaff < 0) && (noteType === "Whole")))
+        if((noteDetails === undefined) || elementType === "clef")
+            return 0
+        else if((noteDetails.positionOnStaff < 0) && (noteType === "Whole"))
             return 180
         else
             return noteDetails.rotation
@@ -86,15 +97,15 @@ Item {
         id: highlightImage
         source: "qrc:/gcompris/src/activities/piano_composition/resource/note_highlight.png"
         visible: false
-        sourceSize.width: noteImage.width
-        height: noteImage.height / 2
+        sourceSize.width: musicElement.width
+        height: musicElement.height / 2
         anchors.bottom: noteImage.bottom
     }
 
     Rectangle {
         id: highlightRectangle
-        width: noteImage.width
-        height: noteImage.height * 0.9
+        width: musicElement.width
+        height: musicElement.height * 0.9
         color: "red"
         opacity: 0.6
         border.color: "white"
@@ -104,8 +115,8 @@ Item {
 
     Rectangle {
         id: selectedNoteIndicator
-        width: noteImage.width
-        height: noteImage.height * 0.9
+        width: musicElement.width
+        height: musicElement.height * 0.9
         color: "blue"
         opacity: 0.6
         border.color: "white"
@@ -119,8 +130,14 @@ Item {
                 : noteType != "Rest" ? "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + noteType + ".svg"
                 : "qrc:/gcompris/src/activities/piano_composition/resource/" + noteDetails.imageName + ".svg"
         sourceSize.width: 200
-        width: note.width
-        height: note.height
+        width: musicElement.width
+        height: musicElement.height
+    }
+
+    Image {
+        id: clefImage
+        source: (elementType === "clef") ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clefType.toLowerCase() + "Clef.svg" : ""
+        sourceSize.width: clefImageWidth
     }
 
     Image {
@@ -157,7 +174,7 @@ Item {
         }
 
         color: (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
-        visible: noteIsColored
+        visible: noteIsColored && (elementType != "clef")
     }
 
     Timer {

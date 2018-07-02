@@ -40,14 +40,13 @@ Row {
 
     property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing * 12) / 14)
     property alias noteOptionsIndex: noteOptions.currentIndex
-    property alias staffModeIndex: staffModesOptions.currentIndex
     property alias lyricsOrPianoModeIndex: lyricsOrPianoModeOption.currentIndex
     property alias restOptionIndex: restOptions.currentIndex
+    property alias clefButtonIndex: clefButton.currentIndex
 
     property bool noteOptionsVisible: false
     property bool playButtonVisible: false
     property bool clefButtonVisible: false
-    property bool staffModesOptionsVisible: false
     property bool clearButtonVisible: false
     property bool undoButtonVisible: false
     property bool openButtonVisible: false
@@ -60,7 +59,7 @@ Row {
     signal clearButtonClicked
     signal openButtonClicked
     signal saveButtonClicked
-    signal clefChanged
+    signal clefAdded
     signal emitOptionMessage(string message)
 
     SwitchableOptions {
@@ -88,34 +87,54 @@ Row {
         }
     }
 
-    Image {
-        id: clefButton
-        source: background.clefType == "Bass" ? "qrc:/gcompris/src/activities/piano_composition/resource/bassClefButton.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/trebbleClefButton.svg"
-        sourceSize.width: optionsRow.iconsWidth
+    Item {
+        width: 2.3 * optionsRow.iconsWidth
+        height: optionsRow.iconsWidth + 10
         visible: clefButtonVisible
-        MouseArea {
+        Rectangle {
+            color: "yellow"
+            opacity: 0.1
+            border.width: 2
+            border.color: "black"
             anchors.fill: parent
-            onClicked: {
-                background.clefType = (background.clefType == "Bass") ? "Treble" : "Bass"
-                //: Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
-                emitOptionMessage((background.clefType === "Treble") ? qsTr("Treble clef") : qsTr("Bass clef"))
-                clefChanged()
-            }
+            radius: 10
         }
-    }
 
-    SwitchableOptions {
-        id:staffModesOptions
-        nbOptions: optionsRow.staffModes.length
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.staffModes[currentIndex][1])
-        anchors.top: parent.top
-        anchors.topMargin: 4
-        visible: staffModesOptionsVisible
-        onClicked: {
-            background.staffMode = optionsRow.staffModes[currentIndex][1]
-            emitOptionMessage(optionsRow.staffModes[currentIndex][0])
-            multipleStaff.selectedIndex = -1
-            multipleStaff.insertingIndex = multipleStaff.notesModel.count
+        SwitchableOptions {
+            id: clefButton
+            nbOptions: 2
+            source: "qrc:/gcompris/src/activities/piano_composition/resource/" + (!currentIndex ? "trebbleClefButton.svg"
+                                                                                                : "bassClefButton.svg")
+            sourceSize.width: optionsRow.iconsWidth
+            visible: clefButtonVisible
+            onClicked: {
+                //: Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
+                emitOptionMessage(!currentIndex ? qsTr("Treble clef") : qsTr("Bass clef"))
+            }
+            anchors.topMargin: 3
+            anchors.left: parent.left
+            anchors.leftMargin: 5
+        }
+
+        Image {
+            id: addClefButton
+            sourceSize.width: optionsRow.iconsWidth / 1.4
+            source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
+            anchors.left: clefButton.right
+            anchors.leftMargin: 8
+            visible: clefButton.visible
+            anchors.top: parent.top
+            anchors.topMargin: 10
+            MouseArea {
+                anchors.fill: parent
+                onPressed: parent.scale = 0.8
+                onReleased: {
+                    background.clefType = !clefButton.currentIndex ? "Treble" : "Bass"
+                    emitOptionMessage(!clefButton.currentIndex ? qsTr("Added Treble clef") : qsTr("Added Bass clef"))
+                    parent.scale = 1
+                    clefAdded()
+                }
+            }
         }
     }
 
@@ -236,15 +255,9 @@ Row {
                 anchors.fill: parent
                 onPressed: parent.scale = 0.8
                 onReleased: {
-                    //: %1 is the name of the rest which is added and displayed from the variable translatedRestNames.
                     emitOptionMessage(optionsRow.restAddedMessage[restOptionIndex])
                     parent.scale = 1
-                    if(background.staffMode === "add") {
-                        if(multipleStaff.selectedIndex == 0)
-                            background.askInsertDirection(restType.toLowerCase(), "Rest")
-                        else
-                            background.addNoteAndPushToStack(restType.toLowerCase(), "Rest")
-                    }
+                    background.addMusicElementAndPushToStack(restType.toLowerCase(), "Rest")
                 }
             }
         }
