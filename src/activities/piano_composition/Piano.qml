@@ -183,46 +183,4 @@ Item {
             onKeyPressed: noteClicked(blackNotes[currentOctaveNb][index][0])
         }
     }
-
-    function indicateKey(noteName) {
-        var noteFound = false
-        if(noteName[1] === "#") {
-            for(var i = 0; i < blackNotesSharp.length && !noteFound; i++) {
-                for(var j = 0; j < blackNotesSharp[i].length; j++) {
-                    if(noteName === blackNotesSharp[i][j][0]) {
-                        noteFound = true
-                        useSharpNotation = true
-                        currentOctaveNb = i
-                        blackKeyRepeater.itemAt(j).indicateKey()
-                        break
-                    }
-                }
-            }
-        }
-        else if(noteName[1] === "b") {
-            for(var i = 0; i < blackNotesFlat.length && !noteFound; i++) {
-                for(var j = 0; j < blackNotesFlat[i].length; j++) {
-                    if(noteName === blackNotesFlat[i][j][0]) {
-                        noteFound = true
-                        useSharpNotation = false
-                        currentOctaveNb = i
-                        blackKeyRepeater.itemAt(j).indicateKey()
-                        break
-                    }
-                }
-            }
-        }
-        else {
-            for(var i = 0; i < whiteNotes.length && !noteFound; i++) {
-                for(var j = 0; j < whiteNotes[i].length; j++) {
-                    if(noteName === whiteNotes[i][j][0]) {
-                        noteFound = true
-                        currentOctaveNb = i
-                        whiteKeyRepeater.itemAt(j).indicateKey()
-                        break
-                    }
-                }
-            }
-        }
-    }
 }

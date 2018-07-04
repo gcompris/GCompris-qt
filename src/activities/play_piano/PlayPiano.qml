@@ -22,6 +22,7 @@
 import QtQuick 2.6
 import QtQuick.Controls 1.5
 import GCompris 1.0
+import QtMultimedia 5.0
 
 import "../../core"
 import "../piano_composition"
@@ -127,6 +128,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias iAmReady: iAmReady
+            property alias introductoryAudioTimer: introductoryAudioTimer
             property string mode: "coloredNotes"
         }
 
@@ -138,6 +140,19 @@ ActivityBase {
 
         property string clefType: (items.bar.level <= 7) ? "Treble" : "Bass"
         readonly property bool shiftButtonsVisible: [5, 6, 7, 10, 11, 12].indexOf(items.bar.level) != -1
+
+        Timer {
+            id: introductoryAudioTimer
+            interval: 4000
+            onRunningChanged: {
+                if(running)
+                    Activity.isIntroductoryAudioPlaying = true
+                else {
+                    Activity.isIntroductoryAudioPlaying = false
+                    Activity.initSubLevel()
+                }
+            }
+        }
 
         Rectangle {
             anchors.fill: parent

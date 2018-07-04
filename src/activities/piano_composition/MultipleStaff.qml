@@ -53,13 +53,6 @@ Item {
      */
     signal noteClicked(int noteIndex)
 
-    /**
-     * Emitted for the notes while a melody is playing.
-     *
-     * It is used to indicate the corresponding piano key.
-     */
-    signal notePlayed(string noteName)
-
     ListModel {
         id: musicElementModel
     }
@@ -72,6 +65,10 @@ Item {
         contentHeight: staffColumn.height + distanceBetweenStaff
         anchors.fill: parent
         clip: true
+        Behavior on contentY {
+            NumberAnimation { duration: 250 }
+        }
+
         Column {
             id: staffColumn
             spacing: distanceBetweenStaff
@@ -213,7 +210,7 @@ Item {
     /**
      * Adds a note to the staff.
      */
-    function addMusicElement(elementType, noteName, noteType, highlightWhenPlayed, playAudio, clefType, soundPitch) {
+    function addMusicElement(elementType, noteName, noteType, highlightWhenPlayed, playAudio, clefType, soundPitch, isUnflicked) {
         if(soundPitch == undefined || soundPitch === "")
             soundPitch = clefType
         var duration = 0
@@ -242,7 +239,8 @@ Item {
                                       "highlightWhenPlayed_": false, "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": true, "elementType_": "clef"})
 
-            flickableStaves.flick(0, - nbStaves * multipleStaff.height)
+            if(!isUnflicked)
+                flickableStaves.flick(0, - nbStaves * multipleStaff.height)
 
             if(elementType === "clef")
                 return 0
@@ -258,6 +256,7 @@ Item {
                                       "clefType_": clefType, "mDuration": duration,
                                       "highlightWhenPlayed_": highlightWhenPlayed, "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": isDefualtClef, "elementType_": elementType})
+
         }
         else {
             var tempModel = createNotesBackup()
@@ -302,8 +301,9 @@ Item {
     function redraw(notes) {
         musicElementModel.clear()
         currentEnteringStaff = 0
+        selectedIndex = -1
         for(var i = 0; i < notes.length; i++) {
-            addMusicElement(notes[i]["elementType_"], notes[i]["noteName_"], notes[i]["noteType_"], false, false, notes[i]["clefType_"], notes[i]["soundPitch_"])
+            addMusicElement(notes[i]["elementType_"], notes[i]["noteName_"], notes[i]["noteType_"], false, false, notes[i]["clefType_"], notes[i]["soundPitch_"], true)
         }
 
         // Remove the remaining unused staffs.
@@ -439,6 +439,8 @@ Item {
         musicTimer.currentNote = 0
         selectedIndex = -1
         musicTimer.interval = 500
+        if(isFlickable)
+            flickableStaves.flick(0, nbStaves * multipleStaff.height)
         /*
         for(var v = 1 ; v < currentStaff ; ++ v)
             staves.itemAt(v).showMetronome = false
@@ -466,12 +468,14 @@ Item {
                 var currentType = musicElementModel.get(currentNote).noteType_
                 var note = musicElementModel.get(currentNote).noteName_
                 var soundPitch = musicElementModel.get(currentNote).soundPitch_
+                var currentStaff = musicElementModel.get(currentNote).staffNb_
                 background.clefType = musicElementModel.get(currentNote).clefType_
 
-                playNoteAudio(note, currentType, soundPitch)
+                if(musicElementModel.get(currentNote).isDefaultClef_ && currentStaff > 1) {
+                    flickableStaves.contentY = staves.itemAt(currentStaff - 1).y
+                }
 
-                if(currentType != "Rest")
-                    multipleStaff.notePlayed(note)
+                playNoteAudio(note, currentType, soundPitch)
 
                 musicTimer.interval = musicElementModel.get(currentNote).mDuration
                 musicElementRepeater.itemAt(currentNote).highlightNote()

@@ -245,11 +245,14 @@ ActivityBase {
             anchors.topMargin: parent.height * 0.1
             anchors.rightMargin: parent.width * 0.043
             onNoteClicked: {
-                selectedIndex = noteIndex
-                background.clefType = musicElementModel.get(selectedIndex).soundPitch_
-                playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType)
+                if(selectedIndex === noteIndex)
+                    selectedIndex = -1
+                else {
+                    selectedIndex = noteIndex
+                    background.clefType = musicElementModel.get(selectedIndex).soundPitch_
+                    playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType)
+                }
             }
-            onNotePlayed: piano.indicateKey(noteName)
         }
 
         GCButtonScroll {
