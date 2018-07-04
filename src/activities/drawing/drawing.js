@@ -51,6 +51,7 @@ var ctx
 
 var points = []
 var connectedPoints = []
+var reloadCanvas = false
 
 function start(items_) {
     items = items_
@@ -73,17 +74,20 @@ function initLevel() {
 
     ctx = items.canvas.getContext("2d")
     items.globalOpacityValue = 1
-    ctx.fillStyle = "#ffffff"
-
-    ctx.beginPath()
-    ctx.clearRect(0, 0, items.background.width, items.background.height)
-
-    ctx.moveTo(0, 0)
-    ctx.lineTo(items.background.width, 0)
-    ctx.lineTo(items.background.width, items.background.height)
-    ctx.lineTo(0, items.background.height)
-    ctx.closePath()
-    ctx.fill()
+    ctx.fillStyle = items.backgroundColor
+    if(reloadCanvas) {
+        console.log("Clearing canvas!")
+        ctx.clearRect(0, 0, items.background.width, items.background.height)
+//        ctx.beginPath()
+//        ctx.clearRect(0, 0, items.background.width, items.background.height)
+//        ctx.moveTo(0, 0)
+//        ctx.lineTo(items.background.width, 0)
+//        ctx.lineTo(items.background.width, items.background.height)
+//        ctx.lineTo(0, items.background.height)
+//        ctx.closePath()
+//        ctx.fill()
+        reloadCanvas = false
+    }
     ctx.globalAlpha = items.globalOpacityValue
     items.foldablePanels.toolsMode.opacitySliderValue = items.globalOpacityValue
     items.canvas.requestPaint()
@@ -410,6 +414,9 @@ function selectTool(toolName) {
     }
     else if(toolName === "Export to PNG") {
         exportToPng()
+    }
+    else if(toolName === "Background color") {
+        items.backgroundColorPalette.visible = true
     }
 }
 

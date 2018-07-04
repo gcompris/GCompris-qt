@@ -36,7 +36,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "white"
+        color: items.backgroundColor
         signal start
         signal stop
 
@@ -110,12 +110,14 @@ ActivityBase {
             property alias load: load
             property alias mainRegion: main
             property alias shape: shape
+            property alias backgroundColorPalette: backgroundColorPalette
             property int activeColorIndex: 1
             property alias foldablePanels: foldablePanels
             property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt: saveToFilePrompt
             property color paintColor: "#000000"
             property color lastActiveColor: "#000000"
+            property color backgroundColor: "#ffffff"
             property string urlImage
             property bool next: false
             property bool next2: false
@@ -262,14 +264,13 @@ ActivityBase {
                     opacity: 0
                 }
 
-
                 function clearCanvas() {
                     // clear all drawings from the board
                     var ctx = getContext('2d')
                     ctx.beginPath()
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-                    paintWhite()
+                    //paintWhite()
                     canvas.ctx.strokeStyle = "#ffffff"
                 }
 
@@ -288,13 +289,13 @@ ActivityBase {
                 onImageLoaded: {
                     // load images from files
                     if (canvas.url != "") {
-                        canvas.clearCanvas()
-
-                        if (items.loadSavedImage) {
-                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
-                        } else {
-                            canvas.ctx.drawImage(canvas.url, canvas.width / 2 - canvas.height / 2, 0, canvas.height, canvas.height)
-                        }
+                        //canvas.clearCanvas()
+                        canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
+//                        if (items.loadSavedImage) {
+//                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
+//                        } else {
+//                            canvas.ctx.drawImage(canvas.url, canvas.width / 2 - canvas.height / 2, 0, canvas.height, canvas.height)
+//                        }
 
                         // mark the loadSavedImage as finished
                         items.loadSavedImage = false
@@ -889,6 +890,11 @@ ActivityBase {
 
         FoldablePanels {
             id: foldablePanels
+        }
+
+        BackgroundColorsPalette {
+            id: backgroundColorPalette
+            visible: false
         }
     }
 }
