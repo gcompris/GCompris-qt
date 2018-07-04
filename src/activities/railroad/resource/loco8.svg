@@ -50,7 +50,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="113.64035"
+     inkscape:cx="4.2913378"
      inkscape:cy="2.362052"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
@@ -70,7 +70,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -101,6 +101,12 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Calque 2">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;vector-effect:none;fill:#4a4a43;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 4.8756731,18.369421 v 2.173511 H 1.152901 V 21.20439 H 0 v -0.661458 -2.022099 -0.151412 z"
+       id="rect849-3"
+       sodipodi:nodetypes="ccccccccc" />
     <circle
        style="opacity:1;vector-effect:none;fill:#3e3e3e;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path942"
@@ -141,12 +147,6 @@
        style="opacity:1;vector-effect:none;fill:#3e3e3e;fill-opacity:1;stroke:none;stroke-width:0.15929246;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="m 15.818303,13.531546 h 17.667843 l 0.796297,1.171726 h -18.46414 z"
        id="rect817-3"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       style="opacity:1;vector-effect:none;fill:#3e3e3e;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 0,22.262798 h 2.8726193 v 1.927678 H 0 Z"
-       id="rect977"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <path

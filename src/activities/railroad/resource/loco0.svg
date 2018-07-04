@@ -58,7 +58,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="-52.109657"
+     inkscape:cx="-206.75251"
      inkscape:cy="22.699599"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
@@ -79,7 +79,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -110,6 +110,12 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Calque 2">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;vector-effect:none;fill:#4a4a43;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 4.8756731,18.369421 v 2.173511 H 1.152901 V 21.20439 H 0 v -0.661458 -2.022099 -0.151412 z"
+       id="rect849-3"
+       sodipodi:nodetypes="ccccccccc" />
     <rect
        style="opacity:1;vector-effect:none;fill:#4a4a43;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect948"

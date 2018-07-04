@@ -25,7 +25,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="82.326044"
+     inkscape:cx="27.651538"
      inkscape:cy="12.844002"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
@@ -155,6 +155,12 @@
      inkscape:label="Calque 2"
      id="layer2"
      inkscape:groupmode="layer">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;vector-effect:none;fill:#4a4a43;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 4.8756731,18.369421 v 2.173511 H 1.152901 V 21.20439 H 0 v -0.661458 -2.022099 -0.151412 z"
+       id="rect849-3"
+       sodipodi:nodetypes="ccccccccc" />
     <rect
        y="10.063616"
        x="41.341145"
@@ -204,12 +210,6 @@
        id="rect1194-9"
        d="M 25.806324,20.372917 H 57.206696 V 24.27552 H 25.806324 Z"
        style="opacity:1;vector-effect:none;fill:#8c8c8c;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    <path
-       sodipodi:nodetypes="ccccccc"
-       inkscape:connector-curvature="0"
-       id="rect857"
-       d="m 0,21.9875 -0.04702555,1.66938 H 1.2423014 v -0.667586 h 2.026233 V 21.9875 c -1.1091703,-0.0061 -2.164571,0 -3.2685344,0 z"
-       style="opacity:1;vector-effect:none;fill:#4e4e4e;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <path
        inkscape:connector-curvature="0"
        id="path855"

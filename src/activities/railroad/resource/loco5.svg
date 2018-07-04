@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="-190"
-     inkscape:cy="-51.428571"
+     inkscape:zoom="2.8"
+     inkscape:cx="47.5"
+     inkscape:cy="-12.857142"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -143,11 +143,11 @@
      id="layer2"
      inkscape:groupmode="layer">
     <path
-       sodipodi:nodetypes="ccccccc"
        inkscape:connector-curvature="0"
-       id="rect857"
-       d="M 0.10513228,15.731963 0,19.464102 h 2.8824759 v -1.492484 h 4.5299349 v -2.239655 c -2.4797094,-0.01364 -4.8392095,0 -7.30727852,0 z"
-       style="opacity:1;vector-effect:none;fill:#4e4e4e;fill-opacity:1;stroke:none;stroke-width:0.78036851;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="opacity:1;vector-effect:none;fill:#4a4a43;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 7.5215064,16.781921 v 3.761011 H 1.152901 V 21.20439 H 0 v -0.661458 -3.609599 -0.151412 z"
+       id="rect849-3"
+       sodipodi:nodetypes="ccccccccc" />
     <rect
        y="2.4707055"
        x="29.713905"

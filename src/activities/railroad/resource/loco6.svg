@@ -80,7 +80,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="-35.357147"
+     inkscape:cx="-144.70616"
      inkscape:cy="-51.428571"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -99,7 +99,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -131,6 +131,12 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-270.54165)">
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;vector-effect:none;fill:#4a4a43;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 10.16734,288.91107 v 2.17351 H 1.152901 v 0.66146 H 0 v -0.66146 -2.0221 -0.15141 z"
+       id="rect849-3-3"
+       sodipodi:nodetypes="ccccccccc" />
     <circle
        style="opacity:1;vector-effect:none;fill:#3b3b3b;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path945"
@@ -149,12 +155,6 @@
        cx="51.680046"
        cy="292.25595"
        r="4.7440343" />
-    <path
-       inkscape:connector-curvature="0"
-       style="opacity:1;vector-effect:none;fill:#4a4a43;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 6.4631731,285.73605 v 2.17351 H 1.152901 v 0.66146 H 0 v -0.66146 -2.0221 -0.15141 z"
-       id="rect849-3"
-       sodipodi:nodetypes="ccccccccc" />
     <path
        style="opacity:1;vector-effect:none;fill:#307027;fill-opacity:1;stroke:none;stroke-width:0.34905761;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 21.922693,271.44859 V 281.8433 H 4.1578858 v 5.85856 H 59.720384 v -16.25327 z"
