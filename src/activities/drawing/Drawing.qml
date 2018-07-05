@@ -57,6 +57,8 @@ ActivityBase {
         onHeightChanged: {
             if (items.background.started) {
                 items.widthHeightChanged = true
+                items.foldablePanels.animTarget.y = -7
+                items.foldablePanels.activePanel = "null"
                 Activity.initLevel()
             }
         }
