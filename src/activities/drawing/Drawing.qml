@@ -117,6 +117,8 @@ ActivityBase {
             property alias foldablePanels: foldablePanels
             property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt: saveToFilePrompt
+            property alias stampGhostImage: stampGhostImage
+            property alias onBoardText: onBoardText
             property color paintColor: "#000000"
             property color lastActiveColor: "#000000"
             property color backgroundColor: "#ffffff"
@@ -266,6 +268,17 @@ ActivityBase {
                     opacity: 0
                 }
 
+                Image {
+                    id: stampGhostImage
+                    source: items.toolsMode.activeStampImageSource
+                    //width: items.toolsMode.activeStampWidth
+                    //height: items.toolsMode.activeStampHeight
+                    fillMode: Image.PreserveAspectFit
+                    z: -1
+                    opacity: 0.5
+                    visible: items.toolSelected === "stamp"
+                }
+
                 function clearCanvas() {
                     // clear all drawings from the board
                     var ctx = getContext('2d')
@@ -293,11 +306,11 @@ ActivityBase {
                     if (canvas.url != "") {
                         //canvas.clearCanvas()
                         canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
-//                        if (items.loadSavedImage) {
-//                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
-//                        } else {
-//                            canvas.ctx.drawImage(canvas.url, canvas.width / 2 - canvas.height / 2, 0, canvas.height, canvas.height)
-//                        }
+                        //                        if (items.loadSavedImage) {
+                        //                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
+                        //                        } else {
+                        //                            canvas.ctx.drawImage(canvas.url, canvas.width / 2 - canvas.height / 2, 0, canvas.height, canvas.height)
+                        //                        }
 
                         // mark the loadSavedImage as finished
                         items.loadSavedImage = false
@@ -364,7 +377,7 @@ ActivityBase {
                     id: area
                     anchors.fill: parent
 
-                    hoverEnabled: false
+                    hoverEnabled: items.toolSelected === "text" || items.toolSelected === "stamp"
                     property var mappedMouse: mapToItem(parent, mouseX, mouseY)
                     property var currentShape: items.toolSelected == "circle" ? circle : rectangle
                     property real originalX
@@ -373,13 +386,16 @@ ActivityBase {
                     property real endY
 
                     Timer {
-                        id: moveOnBoardText
+                        id: moveOnBoard
+                        property var moveTarget: items.toolSelected === "text" ? items.onBoardText : items.stampGhostImage
+                        property real topMargin: moveTarget === items.onBoardText ? onBoardText.height * 0.8 : stampGhostImage.height / 2
+                        property real leftMargin: moveTarget === items.onBoardText ? 0 : stampGhostImage.width / 2
                         interval: 1
                         repeat: true
                         running: false
                         triggeredOnStart: {
-                            onBoardText.x = area.realMouseX
-                            onBoardText.y = area.realMouseY - onBoardText.height * 0.8
+                            moveTarget.x = area.realMouseX - leftMargin
+                            moveTarget.y = area.realMouseY - topMargin
                         }
                     }
 
@@ -467,11 +483,8 @@ ActivityBase {
                         onBoardText.z = -1
 
                         // stop the text following the cursor
-                        if (moveOnBoardText.running)
-                            moveOnBoardText.stop()
-
-                        // disable hover
-                        area.hoverEnabled = false
+                        if (moveOnBoard.running)
+                            moveOnBoard.stop()
 
                         if (items.toolSelected == "line") {
                             canvas.removeShadow()
@@ -521,7 +534,6 @@ ActivityBase {
                             canvas.requestPaint()
                         }
 
-                        // Todo: Remove use of onBoardText and use items.sizeS for font size!
                         if (items.toolSelected == "text" && onBoardText.text != "") {
                             canvas.removeShadow()
                             canvas.ctx.fillStyle = items.paintColor
@@ -560,7 +572,6 @@ ActivityBase {
                         else items.next = false
 
                         // print("undo: " + Activity.undo.length + " redo: " + Activity.redo.length)
-                        area.hoverEnabled = false
                     }
 
                     onPositionChanged: {
@@ -846,6 +857,13 @@ ActivityBase {
                             canvas.startX = mouseX
                             canvas.startY = mouseY
                             Activity.paintBucket()
+                        }
+
+                        if(items.toolSelected === "stamp") {
+                            canvas.requestPaint()
+                            canvas.ctx.drawImage(items.toolsMode.activeStampImageSource, stampGhostImage.x, stampGhostImage.y)
+
+                            stampGhostImage.z = -1
                         }
                     }
                 }

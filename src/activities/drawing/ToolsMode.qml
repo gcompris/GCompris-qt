@@ -30,7 +30,11 @@ Item {
     property alias modesModel: modes.model
     property alias pencilModes: pencilModes
     property alias geometricModes: geometricModes
+    property alias stampsModel: stampsModel
     property alias opacitySliderValue: opacitySlider.value
+    property string activeStampImageSource: "qrc:/gcompris/src/activities/solar_system/resource/sun_clip.svg"
+    property int activeStampWidth: 500
+    property int activeStampHeight: 500
 
     ListModel {
         id: pencilModes
@@ -66,6 +70,28 @@ Item {
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/line_free.png" }
     }
 
+    ListModel {
+        id: stampsModel
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/sun_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/sun_real.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/mercury_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/mercury_real.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/venus_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/venus_real.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/earth_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/earth_real.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/mars_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/mars_real.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/jupiter_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/jupiter_real.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/saturn_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.png" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/uranus_clip.svg"}
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/uranus_real.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/neptune_clip.svg" }
+        ListElement { imgSource: "qrc:/gcompris/src/activities/solar_system/resource/neptune_real.svg" }
+    }
+
     GridView {
         id: modes
         width: parent.width * 0.50
@@ -84,7 +110,7 @@ Item {
         Rectangle {
             width: modes.cellWidth
             height: modes.cellHeight
-            color: items.toolSelected == name ? "lightblue" : "transparent"
+            color: (modes.model !== stampsModel && items.toolSelected == name) ? "lightblue" : "transparent"
             radius: 10
             Image {
                 source: imgSource
@@ -96,19 +122,25 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    items.toolSelected = name
-                    items.lastToolSelected = name
-                    background.hideExpandedTools()
-                    console.log("Click on " + name)
+                    if(modes.model !== stampsModel) {
+                        items.toolSelected = name
+                        items.lastToolSelected = name
+                        background.hideExpandedTools()
+                        console.log("Click on " + name)
 
-                    // make the hover over the canvas false
-                    area.hoverEnabled = false
+                        // make the hover over the canvas false
+                        area.hoverEnabled = false
 
-                    // change the selectBrush tool
-                    timer.index = 0
-                    timer.start()
-                    background.reloadSelectedPen()
-                    Activity.selectMode(name)
+                        // change the selectBrush tool
+                        timer.index = 0
+                        timer.start()
+                        background.reloadSelectedPen()
+                        Activity.selectMode(name)
+                    }
+                    else if(modes.model === stampsModel) {
+                        activeStampImageSource = imgSource
+                        foldablePanels.foldAnimation.start()
+                    }
                 }
             }
         }

@@ -80,7 +80,7 @@ Rectangle {
                 onBoardText.y = area.realMouseY - onBoardText.height * 0.8
 
                 // start the movement
-                moveOnBoardText.start()
+                moveOnBoard.start()
             }
         }
     }
