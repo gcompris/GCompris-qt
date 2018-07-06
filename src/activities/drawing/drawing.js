@@ -78,14 +78,14 @@ function initLevel() {
     if(reloadCanvas) {
         console.log("Clearing canvas!")
         ctx.clearRect(0, 0, items.background.width, items.background.height)
-//        ctx.beginPath()
-//        ctx.clearRect(0, 0, items.background.width, items.background.height)
-//        ctx.moveTo(0, 0)
-//        ctx.lineTo(items.background.width, 0)
-//        ctx.lineTo(items.background.width, items.background.height)
-//        ctx.lineTo(0, items.background.height)
-//        ctx.closePath()
-//        ctx.fill()
+        //        ctx.beginPath()
+        //        ctx.clearRect(0, 0, items.background.width, items.background.height)
+        //        ctx.moveTo(0, 0)
+        //        ctx.lineTo(items.background.width, 0)
+        //        ctx.lineTo(items.background.width, items.background.height)
+        //        ctx.lineTo(0, items.background.height)
+        //        ctx.closePath()
+        //        ctx.fill()
         reloadCanvas = false
     }
     ctx.globalAlpha = items.globalOpacityValue
@@ -282,6 +282,7 @@ function selectTool(toolName) {
     console.log("Clicked on " + toolName)
     items.paintColor = items.lastActiveColor
     items.eraserMode = false
+    items.timer.stop()
     if(toolName === "Eraser") {
         items.eraserMode = true
         items.paintColor = Qt.rgba(0, 0, 0, 1)
@@ -295,9 +296,6 @@ function selectTool(toolName) {
         items.toolSelected = "fill"
         items.background.hideExpandedTools()
 
-        // make the hover over the canvas false
-        items.area.hoverEnabled = false
-
         // change the selectBrush tool
         items.timer.index = 0
         items.timer.start()
@@ -308,9 +306,6 @@ function selectTool(toolName) {
         items.toolSelected = "text"
         items.background.hideExpandedTools()
         items.background.reloadSelectedPen()
-
-        // enable the text to follow the cursor movement
-        items.area.hoverEnabled = true
 
         // make visible the inputTextFrame
         items.inputTextFrame.opacity = 1
@@ -405,6 +400,17 @@ function selectTool(toolName) {
         items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.geometricModes
     }
+    else if(toolName === "Stamp") {
+        items.toolSelected = "stamp"
+        items.lastToolSelected = "stamp"
+        items.toolsMode.modesModel = items.toolsMode.stampsModel
+        items.stampGhostImage.opacity = 0.5
+        items.stampGhostImage.z = 1500
+        items.stampGhostImage.x = items.area.realMouseX
+        items.stampGhostImage.y = items.area.realMouseY
+        // enable the image to follow the cursor movement
+    }
+
     else if(toolName === "Brush") {
         items.toolSelected = "pencil"
         items.lastToolSelected = "pencil"

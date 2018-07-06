@@ -30,6 +30,7 @@ Item {
     property int tabHeight: background.height * 0.06
     property alias colorModel: colorModel
     property alias mainPanel: mainPanel
+    property alias foldAnimation: foldAnimation
     property string activePanel: "null"
     property alias toolsMode: toolsMode
     property color panelColor: "#1A1A1B"
@@ -55,8 +56,8 @@ Item {
 
     ListModel {
         id: toolsModel
-//        ListElement { itemName: qsTr("Pencil")
-//            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
+        //        ListElement { itemName: qsTr("Pencil")
+        //            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
         ListElement { itemName: qsTr("Brush")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush_paint.png" }
         ListElement { itemName: qsTr("Geometric")
@@ -67,6 +68,8 @@ Item {
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/erase.svg" }
         ListElement { itemName: qsTr("Bucket fill")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/fill.svg" }
+        ListElement { itemName: qsTr("Stamp")
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
     }
 
     ListModel {
