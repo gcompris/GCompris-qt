@@ -33,8 +33,10 @@ Item {
     property alias stampsModel: stampsModel
     property alias opacitySliderValue: opacitySlider.value
     property string activeStampImageSource: "qrc:/gcompris/src/activities/solar_system/resource/sun_clip.svg"
-    property int activeStampWidth: 500
-    property int activeStampHeight: 500
+    property real activeStampDimensionRatio: 1.0
+    property real activeStampHeight: 180.0
+    property real activeStampWidth: activeStampHeight //* activeStampDimensionRatio
+
 
     ListModel {
         id: pencilModes
@@ -94,10 +96,10 @@ Item {
 
     GridView {
         id: modes
-        width: parent.width * 0.50
-        height: parent.height * 0.85
-        cellWidth: width / 4.2
-        cellHeight: height / 3.2
+        width: foldablePanels.mainPanel.width * 0.50
+        height: foldablePanels.mainPanel.height * 0.90
+        cellWidth: width / 4
+        cellHeight: height / 4
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         anchors.leftMargin: 40
@@ -127,9 +129,6 @@ Item {
                         items.lastToolSelected = name
                         background.hideExpandedTools()
                         console.log("Click on " + name)
-
-                        // make the hover over the canvas false
-                        area.hoverEnabled = false
 
                         // change the selectBrush tool
                         timer.index = 0
