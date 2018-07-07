@@ -29,6 +29,18 @@ Item {
     height: items.foldablePanels.mainPanel.height * 0.35
 
     GCSlider {
+        id: stampSizeslider
+        width: parent.width
+        anchors.centerIn: parent
+        value: 180 //items.toolsMode.activeStampHeight
+        minimumValue: 1
+        maximumValue: canvas.height
+        onValueChanged: items.toolsMode.activeStampHeight = value
+        stepSize: 80
+        visible: items.toolSelected === "stamp"
+    }
+
+    GCSlider {
         id: slider
         width: parent.width
         anchors.centerIn: parent
@@ -37,6 +49,20 @@ Item {
         maximumValue: 24
         onValueChanged: items.sizeS = value
         stepSize: 2
+        visible: items.toolSelected !== "stamp"
+    }
+
+    GCText {
+        width: background.width > background.height ? opacitySlider.width / 3 : opacitySlider.width / 2
+        anchors.horizontalCenter: slider.horizontalCenter
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        anchors.top: slider.bottom
+        anchors.topMargin: 10
+        fontSize: tinySize
+        color: "white"
+        text: "Size"
+        visible: items.toolSelected === "stamp"
     }
 
     Row {
@@ -44,6 +70,7 @@ Item {
         spacing: slider.width / 4.6
         x: slider.x
         anchors.bottom: slider.top
+        visible: items.toolSelected !== "stamp"
 
         Thickness { lineSize: 0.13 }
         Thickness { lineSize: 0.66 }

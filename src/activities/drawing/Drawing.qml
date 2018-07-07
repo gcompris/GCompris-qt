@@ -271,12 +271,13 @@ ActivityBase {
                 Image {
                     id: stampGhostImage
                     source: items.toolsMode.activeStampImageSource
-                    //width: items.toolsMode.activeStampWidth
-                    //height: items.toolsMode.activeStampHeight
+                    width: items.toolsMode.activeStampWidth
+                    height: items.toolsMode.activeStampHeight
                     fillMode: Image.PreserveAspectFit
                     z: -1
                     opacity: 0.5
                     visible: items.toolSelected === "stamp"
+                    onSourceChanged: items.toolsMode.activeStampDimensionRatio = sourceSize.width / sourceSize.height
                 }
 
                 function clearCanvas() {
@@ -861,7 +862,8 @@ ActivityBase {
 
                         if(items.toolSelected === "stamp") {
                             canvas.requestPaint()
-                            canvas.ctx.drawImage(items.toolsMode.activeStampImageSource, stampGhostImage.x, stampGhostImage.y)
+                            canvas.ctx.drawImage(items.toolsMode.activeStampImageSource, stampGhostImage.x, stampGhostImage.y,
+                                                 stampGhostImage.width, stampGhostImage.height)
 
                             stampGhostImage.z = -1
                         }
