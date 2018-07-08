@@ -244,37 +244,71 @@ Item {
 
     Rectangle {
         id: activeConfiguration
-        width: root.tabWidth
-        height: root.tabHeight
+        width: background.width > background.height ? root.tabWidth * 1.3 : root.tabWidth * 2
+        height: background.width > background.height ? root.tabHeight * 1.3 : root.tabHeight * 1.2
         radius: 10
         color: "grey"
         border.color: "white"
-        x: (colorsTitle.x + toolsTitle.x) / 2
+        x: toolsTitle.x + toolsTitle.width + (background.width > background.height ? width / 2 : width / 6)
         y: -7
         z: mainPanel.z - 1
 
+        Image {
+            id: undo
+            source: "qrc:/gcompris/src/activities/drawing/resource/undo.svg"
+            height: background.width > background.height ? parent.height * 0.75 : parent.height * 0.60
+            width: height
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: parent.left
+            anchors.leftMargin: parent.width * 0.10
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: undo.scale = 1.1
+                onExited: undo.scale = 1
+                onClicked: Activity.selectTool("Undo")
+            }
+        }
+
         Rectangle {
             id: activeColor
-            height: parent.height * 0.80
+            height: undo.height - 4
             width: height
             color: items.paintColor
             radius: 10
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.horizontalCenterOffset: -width / 2
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 2
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: undo.right
+            anchors.leftMargin: 10
             border.width: 2
             border.color: "white"
         }
+
         Image {
             id: activeTool
             source: activeToolIconSource
-            height: parent.height * 0.75
+            height: undo.height
             width: height
             fillMode: Image.PreserveAspectFit
             anchors.left: activeColor.right
             anchors.leftMargin: 10
-            anchors.verticalCenter: activeColor.verticalCenter
+            anchors.verticalCenter: parent.verticalCenter
+        }
+
+        Image {
+            id: redo
+            source: "qrc:/gcompris/src/activities/drawing/resource/redo.svg"
+            height: undo.height
+            width: height
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.left: activeTool.right
+            anchors.leftMargin: 10
+            MouseArea {
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: redo.scale = 1.1
+                onExited: redo.scale = 1
+                onClicked: Activity.selectTool("Redo")
+            }
         }
     }
 
