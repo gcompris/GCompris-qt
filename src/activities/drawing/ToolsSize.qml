@@ -28,11 +28,25 @@ Item {
     width: items.foldablePanels.mainPanel.width * 0.30
     height: items.foldablePanels.mainPanel.height * 0.35
 
+    Button {
+        style: GCButtonStyle { theme: "light" }
+        text: qsTr("Import an image")
+        width: parent.width
+        anchors.bottom: stampSizeslider.top
+        anchors.bottomMargin: background.width > background.height ? 50 : 30
+        visible: items.toolSelected === "stamp"
+        onClicked: {
+            items.fileDialog.open()
+            console.log("Opened file Dialog")
+        }
+    }
+
     GCSlider {
         id: stampSizeslider
         width: parent.width
         anchors.centerIn: parent
-        value: 180 //items.toolsMode.activeStampHeight
+        anchors.topMargin: 50
+        value: 180
         minimumValue: 1
         maximumValue: canvas.height
         onValueChanged: items.toolsMode.activeStampHeight = value

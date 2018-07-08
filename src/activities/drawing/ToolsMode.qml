@@ -149,7 +149,7 @@ Item {
         id: toolsTipSize
         anchors.left: modes.right
         anchors.top: parent.top
-        anchors.topMargin: 30
+        anchors.topMargin: items.toolSelected === "stamp" ? 100 : 30
         anchors.leftMargin: 30
     }
 
