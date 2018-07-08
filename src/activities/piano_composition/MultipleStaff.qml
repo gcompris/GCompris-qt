@@ -38,10 +38,12 @@ Item {
     property bool noteHoverEnabled: true
     property bool centerNotesPosition: false
     property bool isMetronomeDisplayed: false
+    property bool noteAnimationEnabled: false
     readonly property bool isMusicPlaying: musicTimer.running
 
     property alias flickableStaves: flickableStaves
     property alias musicElementModel: musicElementModel
+    property alias musicElementRepeater: musicElementRepeater
     property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 3.5
     property bool isFlickable: true
     property int currentEnteringStaff: 0
@@ -52,6 +54,13 @@ Item {
      * It is used for selecting note to play, erase and do other operations on it.
      */
     signal noteClicked(int noteIndex)
+
+    /**
+     * Emitted when the animation of the note from the right of the staff to the left is finished.
+     *
+     * It's used in note_names activity.
+     */
+    signal noteAnimationFinished
 
     ListModel {
         id: musicElementModel
@@ -91,6 +100,7 @@ Item {
             id: musicElementRepeater
             model: musicElementModel
             MusicElement {
+                id: musicElement
                 noteName: noteName_
                 noteType: noteType_
                 highlightWhenPlayed: highlightWhenPlayed_
@@ -132,6 +142,11 @@ Item {
                         return shiftDistance + defaultXPosition
                 }
 
+                onXChanged: {
+                    if(noteAnimationEnabled && elementType === "note")
+                        noteAnimation.start()
+                }
+
                 y: {
                     if(elementType === "clef")
                         return flickableTopMargin + staves.itemAt(staffNb).y
@@ -148,6 +163,18 @@ Item {
                     }
 
                     return imageY - (6 - relativePosition) * verticalDistanceBetweenLines + shift
+                }
+
+                NumberAnimation {
+                    id: noteAnimation
+                    target: musicElement
+                    properties: "x"
+                    duration: 7000
+                    from: multipleStaff.width - 10
+                    to: musicElement.clefImageWidth
+                    onStopped: {
+                        noteAnimationFinished()
+                    }
                 }
             }
         }
