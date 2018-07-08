@@ -119,6 +119,7 @@ ActivityBase {
             property alias saveToFilePrompt: saveToFilePrompt
             property alias stampGhostImage: stampGhostImage
             property alias onBoardText: onBoardText
+            property alias fileDialog: fileDialog
             property color paintColor: "#000000"
             property color lastActiveColor: "#000000"
             property color backgroundColor: "#ffffff"
@@ -917,6 +918,19 @@ ActivityBase {
         BackgroundColorsPalette {
             id: backgroundColorPalette
             visible: false
+        }
+
+        FileDialog {
+            id: fileDialog
+            title: "Choose an image"
+            selectMultiple: false
+            nameFilters: [ "Image files (*.jpg *.png *.svg)"]
+            //folder: shortcuts.home
+            onAccepted: {
+                console.log("You chose: " + fileDialog.fileUrls)
+                items.toolsMode.activeStampImageSource = fileDialog.fileUrl
+                console.log("You choose " + fileDialog.fileUrl)
+            }
         }
     }
 }
