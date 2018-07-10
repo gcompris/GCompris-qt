@@ -289,6 +289,7 @@ function selectTool(toolName) {
         items.globalOpacityValue = 1
         items.foldablePanels.toolsMode.opacitySliderValue = items.globalOpacityValue
         items.toolSelected = "eraser"
+        items.toolsMode.modesModel = items.toolsMode.pencilModes
         items.background.hideExpandedTools()
         items.background.reloadSelectedPen()
     }
