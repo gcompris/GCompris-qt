@@ -97,12 +97,13 @@ Item {
     GridView {
         id: modes
         width: foldablePanels.mainPanel.width * 0.50
-        height: foldablePanels.mainPanel.height * 0.90
+        height: background.height * 0.30
         cellWidth: width / 4
-        cellHeight: height / 4
-        anchors.verticalCenter: parent.verticalCenter
+        cellHeight: height / 3
+        anchors.top: parent.top
+        anchors.topMargin: 15
         anchors.left: parent.left
-        anchors.leftMargin: 40
+        anchors.leftMargin: 20
         model: pencilModes
         delegate: modesComponent
     }
