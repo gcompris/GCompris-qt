@@ -266,7 +266,10 @@ Item {
                 hoverEnabled: true
                 onEntered: undo.scale = 1.1
                 onExited: undo.scale = 1
-                onClicked: Activity.selectTool("Undo")
+                onClicked: {
+                    Activity.selectTool("Undo")
+                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                }
             }
         }
 
@@ -307,7 +310,10 @@ Item {
                 hoverEnabled: true
                 onEntered: redo.scale = 1.1
                 onExited: redo.scale = 1
-                onClicked: Activity.selectTool("Redo")
+                onClicked: {
+                    Activity.selectTool("Redo")
+                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                }
             }
         }
     }
@@ -350,7 +356,10 @@ Item {
             to: - mainPanel.height
             duration: 200
             easing.type: Easing.InOutQuad
-            onStarted: foldTitle.start()
+            onStarted: {
+                foldTitle.start()
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+            }
         }
 
         // This mouseArea overrides the canvas region and avoid drawing through panel.
@@ -365,7 +374,10 @@ Item {
             to: 0
             duration: 200
             easing.type: Easing.InOutQuad
-            onStarted: unfoldTitle.start()
+            onStarted: {
+                unfoldTitle.start()
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+            }
         }
 
         GridView {

@@ -865,6 +865,7 @@ ActivityBase {
                             canvas.requestPaint()
                             canvas.ctx.drawImage(items.toolsMode.activeStampImageSource, stampGhostImage.x, stampGhostImage.y,
                                                  stampGhostImage.width, stampGhostImage.height)
+                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
 
                             stampGhostImage.z = -1
                         }
