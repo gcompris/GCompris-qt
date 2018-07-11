@@ -22,7 +22,6 @@
 .pragma library
 .import QtQuick 2.6 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
-.import "wordset.js" as Wordset
 .import GCompris 1.0 as GCompris
 
 var levels = [{showGrid: 1, noOfItems: 2, inLine: true, columns: 4, rows: 3 },
@@ -69,9 +68,26 @@ function start(items_) {
     currentLevel = 0
     currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
 
-    words3Letters = getLocalizedDataForDataset("3letters")
-    words4Letters = getLocalizedDataForDataset("4letters")
-    words5Letters = getLocalizedDataForDataset("5letters")
+    /*: Translators: NOTE: Word list for crane activity.
+        Translate this into a list of 15–25 simple 3-letter
+        words separated by semi-colons. The words can only contain
+        lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
+    */
+    words3Letters = qsTr("cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg").split(';')
+    
+    /*: Translators: NOTE: Word list for crane activity.
+        Translate this into a list of 10–20 simple 4-letter
+        words separated by semi-colons. The words can only contain
+        lowercase ASCII letters (a–z). Example: blue;best;good;area
+    */
+    words4Letters = qsTr("blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;sand;song").split(';')
+
+    /*: Translators: NOTE: Word list for crane activity.
+      Translate this into a list of 10–20 simple 5-letter
+      words separated by semi-colons. The words can only contain
+      lowercase ASCII letters (a–z). Example: happy;child;white;apple
+    */
+    words5Letters = qsTr("happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;shape;shirt;study").split(';')
 
     alreadyUsed3 = []
     alreadyUsed4 = []
@@ -88,15 +104,6 @@ function initLevel() {
     Core.shuffle(words4Letters)
     Core.shuffle(words5Letters)
     init()
-}
-
-function getLocalizedDataForDataset(allWordsSet) {
-    var locale = currentLocale
-    if(!Wordset.dataset[locale]) {
-        // default to english if the language has no data
-        locale = "en"
-    }
-    return Wordset.dataset[locale][allWordsSet]
 }
 
 function init() {
@@ -397,3 +404,4 @@ function previousLevel() {
     }
     initLevel();
 }
+
