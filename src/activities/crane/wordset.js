@@ -67,6 +67,18 @@ var dataset = {"ca": {
     "5letters": ["solas","turas","doras","focal","pobal","ansin","clann","crann",
                  "ansin","inniu","pobal","peaca","racht","othar","solas","cumas","olcas"]
                      },
+               "nn": {
+    "3letters": ["abc","and","bil","dag","elv","far","gnu","gut","hai","hav","jul",
+                 "kai","kos","kul","kyr","lam","lyd","lyn","lys","mat","mor","mus",
+                 "omn","pus","rev","sag","tak","tau","ulv","vev"],
+    "4letters": ["best","borg","brev","bygd","dikt","eple","esel","film","folk","fugl",
+                 "gaid","geit","glad","gras","hage","hane","heim","hest","hund","katt",
+                 "lett","namn","rosa","song","ugle","vatn","vise"],
+    "5letters": ["agurk","bakar","bamse","banan","ekorn","farge","fjell","floge","frosk",
+                 "frukt","gaupe","hjelp","hjort","jente","kamel","kanin","kvalp","kveld",
+                 "lemen","lilla","mango","norsk","potet","radio","salat","tekst","tusen",
+                 "varme","video","yatzy"]
+                     },
                "ro": {
     "3letters": ["unu","doi","urs","pat","pod","bec","cub","vis","cot",
                  "joc","sol","cap","suc","lac","far","leu","mov","nas","bou"],
