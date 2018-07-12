@@ -4,6 +4,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>GCompris Educational Game</name>
+  <name xml:lang="ar">لعبة «فهمت» التّعليميّة</name>
   <name xml:lang="ca">Joc educatiu GCompris</name>
   <name xml:lang="ca-valencia">Joc educatiu GCompris</name>
   <name xml:lang="de">GCompris-Lernspiel</name>
@@ -23,7 +24,7 @@
   <name xml:lang="pl">Gra edukacyjna GCompris</name>
   <name xml:lang="pt">Jogo Educativo GCompris</name>
   <name xml:lang="pt-BR">Jogo educacional GCompris</name>
-  <name xml:lang="ro">Jocul educațional GCompris</name>
+  <name xml:lang="ro">Joc educațional GCompris</name>
   <name xml:lang="ru">Набор обучающих игр GCompris</name>
   <name xml:lang="sk">Výuková hra GCompris</name>
   <name xml:lang="sl">Izobraževalna igra GCompris</name>
@@ -34,6 +35,7 @@
   <name xml:lang="zh-CN">GCompris 教育游戏</name>
   <name xml:lang="zh-TW">GCompris 教育遊戲</name>
   <summary>Multi-Activity Educational game for children 2 to 10</summary>
+  <summary xml:lang="ar">لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات</summary>
   <summary xml:lang="ca">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
   <summary xml:lang="ca-valencia">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
   <summary xml:lang="de">Lernspiel mit vielen Aktivitäten für Kinder von 2 bis 10 Jahren</summary>
@@ -76,22 +78,21 @@
     <p xml:lang="hi">जीकॉम्परी एक शैक्षिक सॉफ्टवेयर सूट है जिसमें 2 से 10 वर्ष की आयु के बच्चों के लिए कई गतिविधियां शामिल हैं।</p>
     <p xml:lang="id">GCompris adalah kumpulan permainan mendidik yang berisi berbagai kegiatan untuk anak umur 2 sampai dengan 10 Tahun.</p>
     <p xml:lang="it">GCompris è una raccolta di alta qualità di programmi didattici che comprende numerose attività per bambini da 2 a 10 anni.</p>
-    <p xml:lang="nl">GCompris is een educatieve software suite van hoge kwaliteit die bestaat uit vele activiteiten voor kinderen vanaf twee tot tien jaar.</p>
+    <p xml:lang="nl">GCompris is een educatief softwarepakket van hoge kwaliteit, inclusief een groot aantal activiteiten voor kinderen van 2 tot 10 jaar.</p>
     <p xml:lang="nn">GCompris er eit leik og lær-spel med mange ulike aktivitetar for ungar frå 2 til 10 år.</p>
     <p xml:lang="pl">GCompris to wysokiej jakości pakiet oprogramowania edukacyjnego z licznymi aktywnościami dla dzieci w wieku od 2 do 10 lat.</p>
     <p xml:lang="pt">O GCompris é um pacote de aplicações educativas que é composto por diversas actividades para as crianças dos 2 aos 10 anos de idade.</p>
-    <p xml:lang="pt-BR">GCompris é uma suíte de software educacional de alta qualidade que inclui um grande número de atividades para crianças com idade entre 2 e 10 anos.</p>
+    <p xml:lang="pt-BR">O GCompris é uma suíte educacional de alta qualidade, que inclui uma grande quantidade de atividades para crianças com idade entre 2 e 10 anos.</p>
     <p xml:lang="ro">GCompris este un pachet de software educațional compus din numeroase activități pentru copii între 2 și 10 ani.</p>
     <p xml:lang="ru">GCompris — большая коллекция обучающих игр и упражнений для детей от 2 до 10 лет.</p>
-    <p xml:lang="sk">GCompris je balík výukového softvéru zložený z rôznych aktivít pre deti od 2 do 10 rokov.</p>
     <p xml:lang="sl">Program GCompris je visokokakovostna izobraževalna zbirka, sestavljena iz velikega števila dejavnosti, ki so namenjena otrokom med drugim in desetim letom starosti.</p>
     <p xml:lang="sv">GCompris är en högkvalitativ pedagogisk programvarusvit som innehåller ett stort antal aktiviteter för barn mellan 2 och 10 år.</p>
     <p xml:lang="tr">GCompris, 2 ile 10 yaş arasındaki çocuklar için çok sayıda etkinlik içeren bir eğitim yazılımı paketidir.</p>
     <p xml:lang="uk">GCompris — високоякісний комплекс навчального програмного забезпечення, що складається з багатьох вправ для дітей від 2 до 10 років.</p>
     <p xml:lang="x-test">xxGCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.xx</p>
-    <p xml:lang="zh-TW">GCompris 是一套教育軟體的集合，它提供適合兩歲到十歲兒童各種不同的活動。</p>
     <p>Some of the activities are game orientated, but nonetheless
     still educational.</p>
+    <p xml:lang="ar">بعض الأنشطة هدفها التّرفيه، ولكنّها لا تزال تعليميّة.</p>
     <p xml:lang="ca">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
     <p xml:lang="ca-valencia">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
     <p xml:lang="cs">Některé aktivity jsou v podobě her, ale přesto jsou poučné.</p>
@@ -102,7 +103,7 @@
     <p xml:lang="et">Mõned tegevused on mängulisemad, aga siiski õppeotstarbega.</p>
     <p xml:lang="fi">Jotkin toiminnoista ovat pelimäisiä mutta silti opettavaisia.</p>
     <p xml:lang="fr">Certaines activités sont ludiques mais ont toujours un intérêt pédagogique.</p>
-    <p xml:lang="gl">Algunhas das actividades están orientadas a xogar pero son tamén educativas.</p>
+    <p xml:lang="gl">Algunhas das actividades están orientadas ao xogo, pero son aínda así educativas.</p>
     <p xml:lang="hi">कुछ गतिविधियां खेल केंद्रित हैं, लेकिन फिर भी शैक्षिक हैं।</p>
     <p xml:lang="id">Beberapa aktivitas mengacu ke permainan, namun tetap saja mendidik.</p>
     <p xml:lang="it">Alcune delle attività sono orientate al gioco, ma comunque didattiche.</p>
@@ -124,6 +125,7 @@
     <p xml:lang="zh-TW">有些活動是遊戲性質，但還是有很棒的教育意義。</p>
     <p>Below you can find a list of categories with some of the
     activities available in that category.</p>
+    <p xml:lang="ar">يمكنك أن تجد أدناه قائمة بالفئات وبعض الأنشطة الموجودة في كلّ فئة.</p>
     <p xml:lang="ca">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="ca-valencia">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="de">Sie können Aktivitäten aus folgenden Bereichen in GCompris finden:</p>
@@ -133,7 +135,7 @@
     <p xml:lang="et">Allpool leiab kategooriate loetelu koos mõningate neile omaste tegevustega.</p>
     <p xml:lang="fi">Alta löydät luettelot luokista sekä maininnan joistakin kuhunkin luokkaan kuuluvista toiminnoista.</p>
     <p xml:lang="fr">Vous pouvez trouver ci-dessous une liste des catégories avec certaines de leurs activités.</p>
-    <p xml:lang="gl">A continuación pode atopar unha lista de categorías con algunhas das actividades que hai dispoñíbeis en cada categoría.</p>
+    <p xml:lang="gl">A continuación atopará unha lista de categorías e as actividades dispoñíbeis en cada unha desas categorías.</p>
     <p xml:lang="hi">नीचे आप उस श्रेणी में उपलब्ध कुछ गतिविधियों के साथ श्रेणियों की एक सूची पा सकते हैं।</p>
     <p xml:lang="id">Di bawah ini kamu dapat menemukan daftar kategori-kategori dengan beberapa aktivitas-aktivitas yang tersedia dalam kategori tersebut.</p>
     <p xml:lang="it">Di seguito puoi trovare un elenco di categorie con alcune delle attività disponibili per categoria.</p>
@@ -155,6 +157,7 @@
     <p xml:lang="zh-TW">下方您可以看到該類別的活動清單。</p>
     <ul>
       <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
+      <li xml:lang="ar">استكشاف الحاسوب: لوحة المفاتيح، والفأرة، ومختلف إيماءات الفأرة، ...</li>
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
       <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
       <li xml:lang="de">Entdeckung des Computers: Tastatur, Maus, verschiedene Mausgesten ...</li>
@@ -164,7 +167,7 @@
       <li xml:lang="et">arvuti tundmaõppimine: klaviatuur, hiir, erinevad hiireliigutused ...</li>
       <li xml:lang="fi">tietokoneen oppiminen: näppäimistö, hiiri, eri hiirieleet…</li>
       <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
-      <li xml:lang="gl">Descubrindo o computador: o teclado, o rato, os xestos do rato…</li>
+      <li xml:lang="gl">Descubrimento do computador: teclado, rato, xestos do rato, etc.</li>
       <li xml:lang="hi">कंप्यूटर की खोज: कीबोर्ड, माउस, अलग माउस इशारों, ...</li>
       <li xml:lang="id">penemuan komputer: keyboard, mos, perbedaan pergerakan mos, ..</li>
       <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ...</li>
@@ -205,7 +208,7 @@
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, ...</li>
       <li xml:lang="pt">aritmética: memória da tabuada, enumeração, imagem-espelho, equilíbrio de balanças, trocos, ...</li>
       <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, ...</li>
-      <li xml:lang="ro">aritmetică: tabla înmulțirii, enumerări, imagini în oglindă, echilibrarea balanței, datul restului, ...</li>
+      <li xml:lang="ro">aritmetică: tabla înmulțirii, enumerări, imagini în oglindă, echilibrează balanța, darea restului, ...</li>
       <li xml:lang="ru">арифметика: игра «память» с подсчётом, счёт, отражение рисунка, уравновешивание весов, подсчёт сдачи, ...</li>
       <li xml:lang="sk">aritmetické: tabuľková pamäť, výpočet, zrkalový obrázok, vyváženie mierky, zmena dávky...</li>
       <li xml:lang="sl">računstvo: spomin z računi, štetje, uravnoteži tehtnico, vračanje drobiža, ...</li>
@@ -216,6 +219,7 @@
       <li xml:lang="zh-CN">算数：表格记忆、枚举、镜像、天平、找零……</li>
       <li xml:lang="zh-TW">數學運算：表格記憶、列舉、影像映射、平衡、找零計算等</li>
       <li>science: the canal lock, color mixing, gravity concept, ...</li>
+      <li xml:lang="ar">العلوم: قفل القنوات، ومزج الألوان، ومفهوم الجاذبيّة، ...</li>
       <li xml:lang="ca">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
       <li xml:lang="ca-valencia">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
       <li xml:lang="de">Wissenschaft: Kanalschleuse, Farbmischung, Gravitation,...</li>
@@ -235,7 +239,7 @@
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, ...</li>
       <li xml:lang="pt">ciência: bloqueio de canais, misturas de cores, conceito de gravidade, ...</li>
       <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, ...</li>
-      <li xml:lang="ro">științe: ecluza unui canal, amestecul culorilor, conceptul de gravitație, ...</li>
+      <li xml:lang="ro">științe: podul mobil, combinarea culorilor, gravitația, ...</li>
       <li xml:lang="ru">наука: работа судоходного шлюза, смешивание цветов, представление о гравитации, ...</li>
       <li xml:lang="sk">veda: zamknutý kanál, miešanie farieb, koncept grvitácie...</li>
       <li xml:lang="sl">znanost: zapornica kanala, mešanje barv, koncept težnosti ...</li>
@@ -246,6 +250,7 @@
       <li xml:lang="zh-CN">科学：运河闸门、颜料色彩混合、重力的概念……</li>
       <li xml:lang="zh-TW">科學：顏色混合、重力觀念、運河鎖等等</li>
       <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
+      <li xml:lang="ar">الألعاب: الذّاكرة، و«وصّل ٤»، و"إكس-أُو"، و«سودوكو»، وبرج هانوي، ...</li>
       <li xml:lang="ca">jocs: memòria, connectar 4, tres en ratlla, sudoku, torre de Hanoi...</li>
       <li xml:lang="ca-valencia">jocs: memòria, connectar 4, tres en ratlla, sudoku, torre de Hanoi...</li>
       <li xml:lang="de">Spiele: Memory, Vier gewinnt, Tic-Tac-Toe, Sudoku, Türme von Hanoi,...</li>
@@ -276,6 +281,7 @@
       <li xml:lang="zh-CN">游戏：记忆、四子棋、井子棋、数独、汉诺塔……</li>
       <li xml:lang="zh-TW">遊戲：記憶遊戲、四子棋、井字遊戲、數獨、河內塔等等</li>
       <li>reading: reading practice, ...</li>
+      <li xml:lang="ar">القراءة: التّمرّن على القراءة، ...</li>
       <li xml:lang="ca">lectura: practicar la lectura...</li>
       <li xml:lang="ca-valencia">lectura: practicar la lectura...</li>
       <li xml:lang="de">Lesen: Leseübungen ...</li>
@@ -307,6 +313,7 @@
       <li xml:lang="zh-TW">閱讀：閱讀練習等等</li>
       <li>other: learn to tell time, the braille system, maze, music
     instruments, ...</li>
+      <li xml:lang="ar">أخرى: تعلّم الإخبار عن الوقت، ونظام «بريل»، ومتاهة، والآلات الموسيقيّة، ...</li>
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
@@ -341,6 +348,7 @@
     are being developed. GCompris is free software, that means that
     you can adapt it to your own needs, improve it and, most
     importantly, share it with children everywhere.</p>
+    <p xml:lang="ar">في «فهمت» حاليًّا أكثر من ١٠٠ نشاط وثمّة غيرها يجري تطويرها. «فهمت» برمجيّة حرّة، هذا يعني أنّك تستطيع تطويعها حسب احتياجك، وكذلك تطويرها، والأهم من ذلك هو مشاركتها مع الأطفال في كلّ مكان.</p>
     <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
     <p xml:lang="ca-valencia">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
     <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
@@ -350,7 +358,7 @@
     <p xml:lang="et">Praegu pakub GCompris üle 100 tegevuse ja neid tuleb aina juurde. GCompris on vaba tarkvara, mis tähendab, et seda saab kohandada oma vajadustele, täiustada, ja mis peamine, jagada oma täiustusi lastega kogu maailmas.</p>
     <p xml:lang="fi">GComprisissa on nykyisellään yli sata toimintoa, ja lisää kehitetään. GCompris on vapaata ohjelmistoa, mikä tarkoittaa, että voit muokata sitä tarpeisiisi, parannella sitä ja mikä tärkeintä jakaa sitä lapsille kaikkialla.</p>
     <p xml:lang="fr">Actuellement, GCompris contient plus de 100 activités et d'autres sont en cours de développement. GCompris est un logiciel libre, ce qui veut dire que vous pouvez l'adapter à vos propres besoins, le modifier et, le plus important, le partager avec des enfants où que ce soit.</p>
-    <p xml:lang="gl">Actualmente, GCompris ofrece máis de 100 actividades e hai máis en camiño. GCompris é software libre, o que significa que calquera pode adaptalo ás súas propias necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.</p>
+    <p xml:lang="gl">Actualmente GCompris ofrece máis de 100 actividades e hai máis en desenvolvemento. GCompris é software libre, o que significa que pode adaptalo para axustalo ás súas necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.</p>
     <p xml:lang="hi">वर्तमान में जी कॉम्पप्रस 100 गतिविधियों से अधिक प्रदान करता है और अधिक विकसित किए जा रहे हैं। जी कॉम्पप्रस मुफ्त सॉफ्टवेयर है, इसका मतलब है कि आप इसे अपनी आवश्यकताओं के अनुसार अनुकूलित कर सकते हैं, इसमें सुधार कर सकते हैं, और सबसे महत्वपूर्ण बात, इसे हर जगह बच्चों के साथ साझा कर सकते हैं।</p>
     <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu dapat menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
     <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
