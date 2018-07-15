@@ -923,10 +923,9 @@ ActivityBase {
 
         FileDialog {
             id: fileDialog
-            title: "Choose an image"
+            title: qsTr("Choose an image")
             selectMultiple: false
-            nameFilters: [ "Image files (*.jpg *.png *.svg)"]
-            //folder: shortcuts.home
+            nameFilters: [ qsTr("Image files (*.jpg *.png *.svg)")]
             onAccepted: {
                 console.log("You chose: " + fileDialog.fileUrls)
                 items.toolsMode.activeStampImageSource = fileDialog.fileUrl

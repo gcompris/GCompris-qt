@@ -179,6 +179,6 @@ Item {
         anchors.topMargin: 10
         fontSize: tinySize
         color: "white"
-        text: "Opacity"
+        text: qsTr("Opacity")
     }
 }
