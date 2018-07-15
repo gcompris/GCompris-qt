@@ -55,7 +55,7 @@ Item {
     }
 
     GCSlider {
-        id: slider
+        id: toolsTipSizeSlider
         width: parent.width
         anchors.centerIn: parent
         value: items.sizeS
@@ -68,22 +68,22 @@ Item {
 
     GCText {
         width: background.width > background.height ? opacitySlider.width / 3 : opacitySlider.width / 2
-        anchors.horizontalCenter: slider.horizontalCenter
+        anchors.horizontalCenter: toolsTipSizeSlider.horizontalCenter
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        anchors.top: slider.bottom
+        anchors.top: toolsTipSizeSlider.bottom
         anchors.topMargin: 10
         fontSize: tinySize
         color: "white"
-        text: "Size"
+        text: qsTr("Size")
         visible: items.toolSelected === "stamp"
     }
 
     Row {
         id: thicknessRow
-        spacing: slider.width / 4.6
-        x: slider.x
-        anchors.bottom: slider.top
+        spacing: toolsTipSizeSlider.width / 4.6
+        x: toolsTipSizeSlider.x
+        anchors.bottom: toolsTipSizeSlider.top
         visible: items.toolSelected !== "stamp"
 
         Thickness { lineSize: 0.13 }

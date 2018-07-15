@@ -409,7 +409,6 @@ function selectTool(toolName) {
         items.stampGhostImage.z = 1500
         items.stampGhostImage.x = items.area.realMouseX
         items.stampGhostImage.y = items.area.realMouseY
-        // enable the image to follow the cursor movement
     }
 
     else if(toolName === "Brush") {
