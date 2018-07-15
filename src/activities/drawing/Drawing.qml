@@ -24,7 +24,6 @@ import "../../core"
 import "drawing.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
-// TODO1: undo/redo
 // TODO: (optional): Shape creator: press on the canvas to draw lines; at the end, press on the starting point to create a shape
 
 ActivityBase {
@@ -124,8 +123,6 @@ ActivityBase {
             property color lastActiveColor: "#000000"
             property color backgroundColor: "#ffffff"
             property string urlImage
-            property bool next: false
-            property bool next2: false
             property bool loadSavedImage: false
             property bool initSave: false
             property bool nothingChanged: true
@@ -305,9 +302,10 @@ ActivityBase {
 
                 onImageLoaded: {
                     // load images from files
-                    if (canvas.url != "") {
+                    if (items.urlImage != "") {
                         //canvas.clearCanvas()
-                        canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
+                        canvas.ctx.clearRect(0, 0, items.background.width, items.background.height)
+                        canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
                         //                        if (items.loadSavedImage) {
                         //                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
                         //                        } else {
@@ -317,19 +315,19 @@ ActivityBase {
                         // mark the loadSavedImage as finished
                         items.loadSavedImage = false
                         requestPaint()
-                        items.lastUrl = canvas.url
-                        unloadImage(canvas.url)
+                        items.lastUrl = items.urlImage//canvas.url
+                        //unloadImage(items.urlImage)
                         items.mainAnimationOnX = true
-                        canvas.url = ""
+                        items.urlImage = ""
 
                         // undo and redo
-                    } else if (items.undoRedo) {
+                    } /*else if (items.undoRedo) {
                         ctx.drawImage(items.urlImage,0,0)
                         requestPaint()
                         items.lastUrl = canvas.url
-                        unloadImage(items.urlImage)
+                        //unloadImage(items.urlImage)
                         items.undoRedo = false
-                    }
+                    }*/
                 }
 
                 function resetShape () {
@@ -565,15 +563,7 @@ ActivityBase {
                             print("resetting redo array!")
                             Activity.redo = []
                         }
-
-                        if (items.toolSelected != "circle" &&
-                                items.toolSelected != "rectangle" &&
-                                items.toolSelected != "line" &&
-                                items.toolSelected != "lineShift")
-                            items.next = true
-                        else items.next = false
-
-                        // print("undo: " + Activity.undo.length + " redo: " + Activity.redo.length)
+                        Activity.redoMode = false
                     }
 
                     onPositionChanged: {
@@ -862,12 +852,10 @@ ActivityBase {
                         }
 
                         if(items.toolSelected === "stamp") {
-                            canvas.requestPaint()
                             canvas.ctx.drawImage(items.toolsMode.activeStampImageSource, stampGhostImage.x, stampGhostImage.y,
                                                  stampGhostImage.width, stampGhostImage.height)
+                            canvas.requestPaint()
                             activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
-
-                            stampGhostImage.z = -1
                         }
                     }
                 }
@@ -927,7 +915,6 @@ ActivityBase {
             selectMultiple: false
             nameFilters: [ qsTr("Image files (*.jpg *.png *.svg)")]
             onAccepted: {
-                console.log("You chose: " + fileDialog.fileUrls)
                 items.toolsMode.activeStampImageSource = fileDialog.fileUrl
                 console.log("You choose " + fileDialog.fileUrl)
             }
