@@ -418,29 +418,31 @@ Item {
      * @param data: melody to be loaded
      */
     function loadFromData(data) {
-        var melody = data.split(" ")
-        background.clefType = melody[0]
-        eraseAllNotes()
-        for(var i = 1 ; i < melody.length; ++i) {
-            var noteLength = melody[i].length
-            var noteName = melody[i][0]
-            var noteType
-            if(melody[i].substring(noteLength - 4, noteLength) === "Rest") {
-                noteName = melody[i].substring(0, noteLength - 4)
-                noteType = "Rest"
+        if(data != undefined) {
+            var melody = data.split(" ")
+            background.clefType = melody[0]
+            eraseAllNotes()
+            for(var i = 1 ; i < melody.length; ++i) {
+                var noteLength = melody[i].length
+                var noteName = melody[i][0]
+                var noteType
+                if(melody[i].substring(noteLength - 4, noteLength) === "Rest") {
+                    noteName = melody[i].substring(0, noteLength - 4)
+                    noteType = "Rest"
+                }
+                else if(melody[i][1] === "#" || melody[i][1] === "b") {
+                    noteType = melody[i].substring(3, melody[i].length)
+                    noteName += melody[i][1] + melody[i][2];
+                }
+                else {
+                    noteType = melody[i].substring(2, melody[i].length)
+                    noteName += melody[i][1]
+                }
+                addMusicElement("note", noteName, noteType, false, false, melody[0])
             }
-            else if(melody[i][1] === "#" || melody[i][1] === "b") {
-                noteType = melody[i].substring(3, melody[i].length)
-                noteName += melody[i][1] + melody[i][2];
-            }
-            else {
-                noteType = melody[i].substring(2, melody[i].length)
-                noteName += melody[i][1]
-            }
-            addMusicElement("note", noteName, noteType, false, false, melody[0])
+            var tempModel = createNotesBackup()
+            redraw(tempModel)
         }
-        var tempModel = createNotesBackup()
-        redraw(tempModel)
     }
 
     /**

@@ -218,7 +218,7 @@ ActivityBase {
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: instruction.bottom
-            anchors.topMargin: horizontalLayout ? parent.height * 0.02 : parent.height * 0.09
+            anchors.topMargin: horizontalLayout ? parent.height * 0.02 : parent.height * 0.15
             onNoteClicked: {
                 playNoteAudio(musicElementModel.get(noteIndex).noteName_, musicElementModel.get(noteIndex).noteType_,  musicElementModel.get(noteIndex).soundPitch_)
             }
@@ -354,10 +354,11 @@ ActivityBase {
             }
             onSaveData: dataToSave["mode"] = items.mode
             onClose: {
+                home()
+            }
+            onVisibleChanged: {
                 multipleStaff.eraseAllNotes()
                 iAmReady.visible = true
-                Activity.currentLevel = 0
-                home()
             }
         }
 

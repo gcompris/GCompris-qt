@@ -359,7 +359,7 @@ ActivityBase {
                 Activity.undoChange()
             }
             onClearButtonClicked: {
-                if(multipleStaff.selectedIndex === -1) {
+                if((multipleStaff.musicElementModel.count > 2) && multipleStaff.selectedIndex === -1) {
                     Core.showMessageDialog(main,
                         qsTr("You have not selected any note. Do you want to erase all the notes?"),
                         qsTr("Yes"), function() {
@@ -372,7 +372,7 @@ ActivityBase {
                         null
                     )
                 }
-                else if(!multipleStaff.musicElementModel.get(multipleStaff.selectedIndex).isDefaultClef_) {
+                else if((multipleStaff.musicElementModel.count > 2) &&!multipleStaff.musicElementModel.get(multipleStaff.selectedIndex).isDefaultClef_) {
                     var noteIndex = multipleStaff.selectedIndex
                     var tempModel = multipleStaff.createNotesBackup()
                     Activity.pushToStack(tempModel)

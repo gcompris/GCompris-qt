@@ -46,7 +46,7 @@ var instructions = [{
         "text": qsTr("Click on the note symbol to write different length notes such as whole notes, half notes, quarter notes and eighth notes.")
     },
     {
-        "text": qsTr("Rests are equivalent to notes during which silence is maintained. Click on the rest symbol to select the rest length and then click on the tick button to enter it to the staff.")
+        "text": qsTr("Rests are equivalent to notes during which silence is maintained. Click on the rest symbol to select the rest length and then click on the add button to enter it to the staff.")
     },
     {
         "text": qsTr("Now you can load music and also save your composed one.")
