@@ -49,7 +49,7 @@ elseif(CMAKE_HOST_APPLE)
   set_source_files_properties(${gcompris_RES} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
 endif()
 
-set(used_qt_modules Qt5::Qml Qt5::Quick Qt5::Gui Qt5::Multimedia Qt5::Core Qt5::Svg Qt5::Xml Qt5::XmlPatterns Qt5::Sensors)
+set(used_qt_modules Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors)
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS})
@@ -68,10 +68,10 @@ endif()
 # only build the lib for testing purpose
 if(BUILD_TESTING)
   add_library(gcompris_core SHARED ${gcompris_SRCS})
-  target_link_libraries(gcompris_core ${used_qt_modules})
+  qt5_use_modules(gcompris_core ${used_qt_modules})
 endif()
 
-target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
+qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} ${used_qt_modules})
 
 GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir COPYING)
 
