@@ -146,6 +146,7 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+        Keys.onPressed: Activity.handleKeyNavigations(event)
 
         DialogHelp {
             id: dialogHelp
