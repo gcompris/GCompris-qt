@@ -229,6 +229,25 @@ function saveToFile(showMessage) {
     items.nothingChanged = true
 }
 
+function handleKeyNavigations(event) {
+    if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_Z) {
+        selectTool("Undo")
+    }
+    else if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_Y) {
+        selectTool("Redo")
+    }
+    else if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_N) {
+        selectTool("Erase all")
+    }
+    else if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_S) {
+        selectTool("Save")
+    }
+    else if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_O) {
+        selectTool("Load")
+    }
+
+}
+
 // Exports the current drawing in png format.
 function exportToPng() {
     var path =  GCompris.ApplicationInfo.getSharedWritablePath() + "/drawing"
