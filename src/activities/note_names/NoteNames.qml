@@ -116,11 +116,41 @@ ActivityBase {
             properties: "opacity"
             from: 0
             to: 0.4
-            duration: 500
-            onStarted: colorLayer.color = "red"
+            duration: 2000
+            onStarted: {
+                multipleStaff.stopNoteAnimation()
+                noteNameLabel.visible = true
+                colorLayer.color = "red"
+            }
             onStopped: {
                 Activity.wrongAnswer()
+                noteNameLabel.visible = false
                 colorLayer.color = "black"
+            }
+        }
+
+        Rectangle {
+            id: noteNameLabel
+            width: multipleStaff.width / 5
+            height: width
+            border.width: 5
+            border.color: "black"
+            anchors.centerIn: multipleStaff
+            radius: 10
+            z: 11
+            visible: false
+            onVisibleChanged: text = Activity.currentSublevelData[0].substr(0, Activity.currentSublevelData[0].length - 7)
+
+            property string text
+
+            GCText {
+                anchors.fill: parent
+                anchors.rightMargin: parent.width * 0.02
+                anchors.leftMargin: parent.width * 0.02
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                text: parent.text
             }
         }
 

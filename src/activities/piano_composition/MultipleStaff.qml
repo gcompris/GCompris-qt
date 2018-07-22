@@ -111,6 +111,7 @@ Item {
                 isDefaultClef: isDefaultClef_
 
                 property int staffNb: staffNb_
+                property alias noteAnimation: noteAnimation
                 readonly property real shiftDistance: blackType != "" ? width / 6 : 0
 
                 noteDetails: multipleStaff.getNoteDetails(noteName, noteType, clefType)
@@ -199,6 +200,15 @@ Item {
         musicElementModel.append({ "elementType_": "clef", "clefType_": clefType, "staffNb_": 0, "isDefaultClef_": true,
                                    "noteName_": "", "noteType_": "", "soundPitch_": clefType, "mDuration": 0,
                                    "highlightWhenPlayed_": false })
+    }
+
+    /**
+     * Stops the sliding animation of the notes.
+     */
+    function stopNoteAnimation() {
+        for(var i = 0; i < musicElementModel.count; i++) {
+            musicElementRepeater.itemAt(i).noteAnimation.stop()
+        }
     }
 
     /**
