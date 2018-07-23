@@ -94,7 +94,6 @@ function nextSubLevel() {
         initSubLevel()
 }
 
-// Function will be written when activity logic will be implemented.
 function undoPreviousAnswer() {
     if(noteIndexAnswered >= 0) {
         items.multipleStaff.revertAnswer(noteIndexAnswered + 1)

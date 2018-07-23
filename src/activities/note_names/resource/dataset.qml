@@ -25,7 +25,8 @@ QtObject {
     property var levels: [
         [
             "E3Quarter G3Quarter B3Quarter E3Quarter G3Quarter B3Quarter E3Quarter G3Quarter B3Quarter",
-            "F3Quarter A3Quarter D4Quarter F3Quarter A3Quarter D4Quarter F3Quarter A3Quarter D4Quarter",                "C4Quarter E4Quarter B3Quarter C4Quarter E4Quarter B3Quarter C4Quarter E4Quarter B3Quarter"
+            "F3Quarter A3Quarter D4Quarter F3Quarter A3Quarter D4Quarter F3Quarter A3Quarter D4Quarter",
+            "C4Quarter E4Quarter B3Quarter C4Quarter E4Quarter B3Quarter C4Quarter E4Quarter B3Quarter"
         ],
         [
             "C4Quarter F4Quarter C5Quarter C4Quarter F4Quarter C5Quarter C4Quarter F4Quarter C5Quarter",
