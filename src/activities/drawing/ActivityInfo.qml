@@ -25,11 +25,17 @@ ActivityInfo {
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
   title: "Drawing"
-  description: ""
+  description: qsTr("Use the various drawing tools to create beautiful arts.")
   //intro: "put here in comment the text for the intro voice"
-  goal: ""
+  goal: qsTr("Learn about basic drawing tools.")
   prerequisite: ""
-  manual: ""
+  manual: qsTr("Select tools from the foldable panels to draw beautiful arts.<br><br>") +
+          qsTr("<b>Keyboard Controls:</b><br>") +
+          qsTr("1. Use Ctrl + Z to undo last changes.<br>") +
+          qsTr("2. Use Ctrl + Y to redo last changes.<br>") +
+          qsTr("3. Use Ctrl + N to erase the drawing.<br>") +
+          qsTr("4. Use Ctrl + S to save the drawing.<br>") +
+          qsTr("5. Use Ctrl + O to load the saved drawings.<br>")
   credit: ""
   section: "fun"
   createdInVersion: 9500
