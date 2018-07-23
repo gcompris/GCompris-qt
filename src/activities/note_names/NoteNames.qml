@@ -103,6 +103,13 @@ ActivityBase {
             property alias bonus: bonus
             property alias iAmReady: iAmReady
             property alias wrongAnswerAnimation: wrongAnswerAnimation
+            property alias dataset: dataset
+        }
+
+        Loader {
+            id: dataset
+            asynchronous: false
+            source: "qrc:/gcompris/src/activities/note_names/resource/dataset.qml"
         }
 
         onStart: { Activity.start(items) }

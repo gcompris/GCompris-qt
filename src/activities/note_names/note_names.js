@@ -21,7 +21,6 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
-.import "dataset.js" as Dataset
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
@@ -36,7 +35,7 @@ function start(items_) {
     items = items_
     currentLevel = 0
     items.piano.currentOctaveNb = 0
-    dataset = Dataset.getData()
+    dataset = items.dataset.item.levels
 }
 
 function stop() {
