@@ -250,7 +250,7 @@ ActivityBase {
                 else {
                     selectedIndex = noteIndex
                     background.clefType = musicElementModel.get(selectedIndex).soundPitch_
-                    playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType)
+                    playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType, musicElementRepeater.get(selectedIndex).duration)
                 }
             }
         }
@@ -354,6 +354,7 @@ ActivityBase {
             changeAccidentalStyleButtonVisible: bar.level >= 4
             lyricsOrPianoModeOptionVisible: bar.level > 6
             restOptionsVisible: bar.level > 5
+            bpmVisible: true
 
             onUndoButtonClicked: {
                 Activity.undoChange()

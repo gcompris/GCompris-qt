@@ -38,11 +38,12 @@ Row {
     readonly property var staffModes: [[qsTr("Add"), "add"], [qsTr("Erase"), "erase"]]
     readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 
-    property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing * 12) / 14)
+    property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing * 13) / 16)
     property alias noteOptionsIndex: noteOptions.currentIndex
     property alias lyricsOrPianoModeIndex: lyricsOrPianoModeOption.currentIndex
     property alias restOptionIndex: restOptions.currentIndex
     property alias clefButtonIndex: clefButton.currentIndex
+    property int bpm: 60
 
     property bool noteOptionsVisible: false
     property bool playButtonVisible: false
@@ -54,6 +55,7 @@ Row {
     property bool changeAccidentalStyleButtonVisible: false
     property bool lyricsOrPianoModeOptionVisible: false
     property bool restOptionsVisible: false
+    property bool bpmVisible: false
 
     signal undoButtonClicked
     signal clearButtonClicked
@@ -71,6 +73,106 @@ Row {
             emitOptionMessage(optionsRow.noteLengthName[currentIndex][0])
         }
         visible: noteOptionsVisible
+    }
+
+    Item {
+        width: 4 * optionsRow.iconsWidth
+        height: optionsRow.iconsWidth + 10
+        visible: bpmVisible
+        Rectangle {
+            color: "yellow"
+            opacity: 0.1
+            border.width: 2
+            border.color: "black"
+            anchors.fill: parent
+            radius: 10
+        }
+
+        Image {
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            sourceSize.width: parent.width / 4
+            width: sourceSize.width
+            height: width
+            fillMode: Image.PreserveAspectFit
+            rotation: 180
+            anchors.left: parent.left
+            anchors.leftMargin: -10
+            anchors.verticalCenter: parent.verticalCenter
+            Timer {
+                id: decreaseBpm
+                interval: 500
+                repeat: true
+                onTriggered: {
+                    if(bpm - 1 >= 1)
+                        bpm--
+                    interval = 1
+                }
+                onRunningChanged: {
+                    if(!running)
+                        interval = 500
+                }
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onPressed: {
+                    parent.scale = 0.85
+                    if(bpm - 1 >= 1)
+                        bpm--
+                    decreaseBpm.start()
+                }
+                onReleased: {
+                    decreaseBpm.stop()
+                    parent.scale = 1
+                }
+            }
+        }
+
+        GCText {
+            text: bpm + " BPM"
+            width: 0.6 * parent.width
+            height: width
+            verticalAlignment: Text.AlignVCenter
+            anchors.centerIn: parent
+            fontSizeMode: Text.Fit
+        }
+
+        Image {
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            sourceSize.width: parent.width / 4
+            width: sourceSize.width
+            height: width
+            fillMode: Image.PreserveAspectFit
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.right: parent.right
+            anchors.rightMargin: -10
+            Timer {
+                id: increaseBpm
+                interval: 500
+                repeat: true
+                onTriggered: {
+                    bpm++
+                    interval = 1
+                }
+                onRunningChanged: {
+                    if(!running)
+                        interval = 500
+                }
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onPressed: {
+                    parent.scale = 0.85
+                    bpm++
+                    increaseBpm.start()
+                }
+                onReleased: {
+                    increaseBpm.stop()
+                    parent.scale = 1
+                }
+            }
+        }
     }
 
     Image {

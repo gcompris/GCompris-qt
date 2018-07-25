@@ -198,7 +198,7 @@ Item {
     function initClefs(clefType) {
         musicElementModel.clear()
         musicElementModel.append({ "elementType_": "clef", "clefType_": clefType, "staffNb_": 0, "isDefaultClef_": true,
-                                   "noteName_": "", "noteType_": "", "soundPitch_": clefType, "mDuration": 0,
+                                   "noteName_": "", "noteType_": "", "soundPitch_": clefType,
                                    "highlightWhenPlayed_": false })
     }
 
@@ -230,33 +230,11 @@ Item {
     }
 
     /**
-     * Calculates and assign the timer interval for a note.
-     */
-    function calculateTimerDuration(noteType) {
-        noteType = noteType.toLowerCase()
-        if(noteType === "whole")
-            return 2000
-        else if(noteType === "half")
-            return 1500
-        else if(noteType === "quarter")
-            return 1000
-        else
-            return 812.5
-    }
-
-    /**
      * Adds a note to the staff.
      */
     function addMusicElement(elementType, noteName, noteType, highlightWhenPlayed, playAudio, clefType, soundPitch, isUnflicked) {
         if(soundPitch == undefined || soundPitch === "")
             soundPitch = clefType
-        var duration = 0
-        if(elementType != "clef") {
-            if(noteType === "Rest")
-                duration = calculateTimerDuration(noteName)
-            else
-                duration = calculateTimerDuration(noteType)
-        }
 
         var isNextStaff = (selectedIndex == -1) && musicElementModel.count && ((staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width) < musicElementRepeater.itemAt(0).clefImageWidth)
 
@@ -272,8 +250,8 @@ Item {
                 multipleStaff.nbStaves++
             // When a new staff is added, initialise it with a default clef.
             musicElementModel.append({"noteName_": "", "noteType_": "", "soundPitch_": soundPitch,
-                                      "clefType_": clefType, "mDuration": 0,
-                                      "highlightWhenPlayed_": false, "staffNb_": multipleStaff.currentEnteringStaff,
+                                      "clefType_": clefType, "highlightWhenPlayed_": false,
+                                      "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": true, "elementType_": "clef"})
 
             if(!isUnflicked)
@@ -290,8 +268,8 @@ Item {
             if(!musicElementModel.count)
                 isDefualtClef = true
             musicElementModel.append({"noteName_": noteName, "noteType_": noteType, "soundPitch_": soundPitch,
-                                      "clefType_": clefType, "mDuration": duration,
-                                      "highlightWhenPlayed_": highlightWhenPlayed, "staffNb_": multipleStaff.currentEnteringStaff,
+                                      "clefType_": clefType, "highlightWhenPlayed_": highlightWhenPlayed,
+                                      "staffNb_": multipleStaff.currentEnteringStaff,
                                       "isDefaultClef_": isDefualtClef, "elementType_": elementType})
 
         }
@@ -316,7 +294,7 @@ Item {
         background.clefType = musicElementModel.get(musicElementModel.count - 1).soundPitch_
 
         if(playAudio)
-            playNoteAudio(noteName, noteType, soundPitch)
+            playNoteAudio(noteName, noteType, soundPitch, musicElementRepeater.itemAt(musicElementModel.count - 1).duration)
     }
 
     /**
@@ -387,7 +365,7 @@ Item {
      * @param noteName: name of the note to be played.
      * @param noteType: note type to be played.
      */
-    function playNoteAudio(noteName, noteType, soundPitch) {
+    function playNoteAudio(noteName, noteType, soundPitch, duration) {
         if(noteName) {
             if(noteType != "Rest") {
                 // We should find a corresponding b type enharmonic notation for # type note to play the audio.
@@ -408,8 +386,37 @@ Item {
                         }
                     }
                 }
-                var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch + "_pitches/" + noteName + ".wav"
-                items.audioEffects.play(noteToPlay)
+                audioLooper.stop()
+                var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch.toLowerCase() + "_pitches/" + noteName + ".wav"
+                audioLooper.playMusic(noteToPlay, duration)
+            }
+        }
+    }
+
+    Timer {
+        id: audioLooper
+
+        signal playMusic(string noteToPlay, int duration)
+        property string audio
+        property int loopCounter
+
+        onPlayMusic: {
+            audio = noteToPlay
+            audioLooper.interval = Math.min(1000, duration)
+            loopCounter = Math.ceil(duration / 1000)
+            start()
+        }
+        repeat: true
+        triggeredOnStart: true
+        onTriggered: {
+            if(--loopCounter < 0)
+                stop()
+            else
+                items.audioEffects.play(audio)
+        }
+        onRunningChanged: {
+            if(!running) {
+                items.audioEffects.stop()
             }
         }
     }
@@ -514,9 +521,8 @@ Item {
                     flickableStaves.contentY = staves.itemAt(currentStaff - 1).y
                 }
 
-                playNoteAudio(note, currentType, soundPitch)
-
-                musicTimer.interval = musicElementModel.get(currentNote).mDuration
+                musicTimer.interval = musicElementRepeater.itemAt(currentNote).duration
+                playNoteAudio(note, currentType, soundPitch, musicTimer.interval)
                 musicElementRepeater.itemAt(currentNote).highlightNote()
                 currentNote ++
                 /*

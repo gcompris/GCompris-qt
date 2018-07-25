@@ -46,7 +46,30 @@ Item {
                                                            : (noteType === "Quarter" || noteName === "quarter") ? 4
                                                            : 8
 
-    readonly property int noteDuration: 2000 / length
+    /**
+     * Calculates and assign the timer interval for a note.
+     */
+    function calculateTimerDuration(noteType) {
+        noteType = noteType.toLowerCase()
+        if(noteType === "whole")
+            return 240000 / optionsRow.bpm
+        else if(noteType === "half")
+            return 120000 / optionsRow.bpm
+        else if(noteType === "quarter")
+            return 60000 / optionsRow.bpm
+        else
+            return 30000 / optionsRow.bpm
+    }
+
+    readonly property int duration: {
+        if(elementType != "clef") {
+            if(noteType === "Rest")
+                return calculateTimerDuration(noteName)
+            else
+                return calculateTimerDuration(noteType)
+        }
+        return 0
+    }
     readonly property real clefImageWidth: 3 * multipleStaff.height / 25
     readonly property real noteImageWidth: (multipleStaff.width - 15 - clefImageWidth) / 10
 
@@ -179,6 +202,6 @@ Item {
 
     Timer {
         id: highlightTimer
-        interval: noteDuration
+        interval: duration
     }
 }
