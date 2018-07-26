@@ -24,107 +24,85 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
-var numberOfLevel = 18
+var numberOfLevel
 var items
 var dataset
-var currentLevelData
-var currentSublevelData
 var correctAnswerCount = []
+var sequence
 
 function start(items_) {
     items = items_
     currentLevel = 0
-    items.piano.currentOctaveNb = 0
     dataset = items.dataset.item.levels
+    numberOfLevel = dataset.length
 }
 
 function stop() {
 }
 
 function initLevel() {
+    correctAnswerCount = []
     items.bar.level = currentLevel + 1
-    currentLevelData = dataset[currentLevel]
-    Core.shuffle(currentLevelData)
-    items.score.currentSubLevel = 1
     items.piano.currentOctaveNb = 0
-    if(currentLevel < 12) {
-        items.background.clefType = "Treble"
-        items.piano.currentOctaveNb = currentLevel % 4
-    }
-    else {
-        items.background.clefType = "Bass"
-        items.piano.currentOctaveNb = currentLevel % 2
+    items.background.clefType = dataset[currentLevel]["clef"]
+    if(dataset[currentLevel]["clef"] === "Treble") {
+        items.piano.currentOctaveNb = 1
+        items.piano2.currentOctaveNb = 2
     }
     items.multipleStaff.initClefs(items.background.clefType)
+    sequence = JSON.parse(JSON.stringify(dataset[currentLevel]["sequence"]))
+    for(var i = 0; i < 3; i++) {
+        for(var j = 0; j < dataset[currentLevel]["sequence"].length; j++)
+            sequence.push(dataset[currentLevel]["sequence"][j])
+    }
 
-    initSubLevel()
-}
-
-function initSubLevel() {
-    currentSublevelData = currentLevelData[items.score.currentSubLevel - 1].split(" ")
-    correctAnswerCount = []
-    displayNote(currentSublevelData[0])
-}
-
-function nextSubLevel () {
-    items.score.currentSubLevel++
-    if(items.score.currentSubLevel > items.score.numberOfSubLevels)
-        nextLevel()
-    else
-        initSubLevel()
+    Core.shuffle(sequence)
+    items.piano.currentOctaveNb = 1
+    items.piano2.currentOctaveNb = 1
+    displayNote(sequence[0])
 }
 
 function displayNote(currentNote) {
-    var noteName, noteType
-    if(currentNote[1] === '#' || currentNote[1] === 'b') {
-        noteName = currentNote.substr(0, 3)
-        noteType = currentNote.substr(3, currentNote.length)
-    }
-    else {
-        noteName = currentNote.substr(0, 2)
-        noteType = currentNote.substr(2, currentNote.length)
-    }
-
-    items.multipleStaff.addMusicElement("note", noteName, noteType, false, false, items.background.clefType)
+    items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.background.clefType)
 }
 
 function wrongAnswer() {
-    if(correctAnswerCount[currentSublevelData[0]]) {
-        for(var i = 0; i < correctAnswerCount[currentSublevelData[0]]; i++)
-            currentSublevelData.push(currentSublevelData[0])
+    if(correctAnswerCount[sequence[0]]) {
+        for(var i = 0; i < correctAnswerCount[sequence[0]]; i++)
+            sequence.push(sequence[0])
     }
 
-    correctAnswerCount[currentSublevelData[0]] = 0
+    correctAnswerCount[sequence[0]] = 0
 
-    if(currentSublevelData[currentSublevelData.length - 1] != currentSublevelData[0])
-        currentSublevelData.push(currentSublevelData.shift())
+    if(sequence[sequence.length - 1] != sequence[0])
+        sequence.push(sequence.shift())
     else {
-        currentSublevelData.push(currentSublevelData[1])
-        currentSublevelData.push(currentSublevelData.shift())
-        currentSublevelData.shift()
+        sequence.push(sequence[1])
+        sequence.push(sequence.shift())
+        sequence.shift()
     }
     items.multipleStaff.musicElementModel.remove(1)
     console.log("Wrong answer...New sequence:")
-    for(var i = 0; i < currentSublevelData.length; i++) {
-        console.log(currentSublevelData[i])
+    for(var i = 0; i < sequence.length; i++) {
+        console.log(sequence[i])
     }
 
-    displayNote(currentSublevelData[0])
+    displayNote(sequence[0])
 }
 
 function correctAnswer() {
-    if(correctAnswerCount[currentSublevelData[0]] == undefined)
-        correctAnswerCount[currentSublevelData[0]] = 0
+    if(correctAnswerCount[sequence[0]] == undefined)
+        correctAnswerCount[sequence[0]] = 0
 
-    correctAnswerCount[currentSublevelData[0]]++
+    correctAnswerCount[sequence[0]]++
     items.multipleStaff.musicElementModel.remove(1)
-    currentSublevelData.shift()
+    sequence.shift()
     console.log("Correct answer...New sequence:")
-    for(var i = 0; i < currentSublevelData.length; i++) {
-        console.log(currentSublevelData[i])
+    for(var i = 0; i < sequence.length; i++) {
+        console.log(sequence[i])
     }
-    if(currentSublevelData.length != 0)
-        displayNote(currentSublevelData[0])
+    if(sequence.length != 0)
+        displayNote(sequence[0])
     else
         items.bonus.good("flower")
 }

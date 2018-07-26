@@ -24,6 +24,12 @@
 function get() {
     return [
                 {
+                    "noteName": "TrebleD3",
+                    "imageName": "trebleD3",
+                    "rotation": 0,
+                    "positionOnStaff": 9
+                },
+                {
                     "noteName": "TrebleE3",
                     "imageName": "trebleE3",
                     "rotation": 0,
@@ -342,6 +348,72 @@ function get() {
                     "positionOnStaff": -2.5
                 },
                 {
+                    "noteName": "BassF1",
+                    "imageName": "trebleD3",
+                    "rotation": 0,
+                    "positionOnStaff": 9
+                },
+                {
+                    "noteName": "BassG1",
+                    "imageName": "trebleE3",
+                    "rotation": 0,
+                    "positionOnStaff": 8.5
+                },
+                {
+                    "noteName": "BassA1",
+                    "imageName": "bassG4",
+                    "rotation": 0,
+                    "positionOnStaff": 8
+                },
+                {
+                    "noteName": "BassB1",
+                    "imageName": "bassF4",
+                    "rotation": 0,
+                    "positionOnStaff": 7.5
+                },
+                {
+                    "noteName": "BassC2",
+                    "imageName": "trebleA3",
+                    "rotation": 0,
+                    "positionOnStaff": 7
+                },
+                {
+                    "noteName": "BassD2",
+                    "imageName": "trebleB3",
+                    "rotation": 0,
+                    "positionOnStaff": 6.5
+                },
+                {
+                    "noteName": "BassE2",
+                    "imageName": "trebleC4",
+                    "rotation": 0,
+                    "positionOnStaff": 6
+                },
+                {
+                    "noteName": "BassF2",
+                    "imageName": "genericNote",
+                    "rotation": 0,
+                    "positionOnStaff": 5.5
+                },
+                {
+                    "noteName": "BassG2",
+                    "imageName": "genericNote",
+                    "rotation": 0,
+                    "positionOnStaff": 5
+                },
+                {
+                    "noteName": "BassA2",
+                    "imageName": "genericNote",
+                    "rotation": 0,
+                    "positionOnStaff": 4.5
+                },
+                {
+                    "noteName": "BassB2",
+                    "imageName": "genericNote",
+                    "rotation": 0,
+                    "positionOnStaff": 4
+                },
+                {
                     "noteName": "BassC3",
                     "imageName": "genericNote",
                     "rotation": 180,
@@ -508,6 +580,18 @@ function get() {
                     "imageName": "bassG4",
                     "rotation": 180,
                     "positionOnStaff": -2
+                },
+                {
+                    "noteName": "BassA4",
+                    "imageName": "trebleE3",
+                    "rotation": 180,
+                    "positionOnStaff": -2.5
+                },
+                {
+                    "noteName": "BassB4",
+                    "imageName": "trebleD3",
+                    "rotation": 180,
+                    "positionOnStaff": -3
                 },
                 {
                     "noteName": "wholeRest",

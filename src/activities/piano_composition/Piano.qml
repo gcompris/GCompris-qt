@@ -46,53 +46,129 @@ Item {
     property int blackWidth: (whiteWidth + 1) / 2 // 13
     property int blackHeight: 2 * height / 3 // 80
 
-    // White key notes are from C3 to G4 when the clef is bass
     //: Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
-    readonly property var whiteNotesBass: [
-        [["C3", qsTr("C%1").arg(3)], ["D3", qsTr("D%1").arg(3)], ["E3", qsTr("E%1").arg(3)], ["F3", qsTr("F%1").arg(3)], ["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)]],
-        [["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)]]
+    readonly property var whiteKeyNotes: [
+        ["F1", qsTr("F%1").arg(1)],
+        ["G1", qsTr("G%1").arg(1)],
+        ["A1", qsTr("A%1").arg(1)],
+        ["B1", qsTr("B%1").arg(1)],
+        ["C2", qsTr("C%1").arg(2)],
+        ["D2", qsTr("D%1").arg(2)],
+        ["E2", qsTr("E%1").arg(2)],
+        ["F2", qsTr("F%1").arg(2)],
+        ["G2", qsTr("G%1").arg(2)],
+        ["A2", qsTr("A%1").arg(2)],
+        ["B2", qsTr("B%1").arg(2)],
+        ["C3", qsTr("C%1").arg(3)],
+        ["D3", qsTr("D%1").arg(3)],
+        ["E3", qsTr("E%1").arg(3)],
+        ["F3", qsTr("F%1").arg(3)],
+        ["G3", qsTr("G%1").arg(3)],
+        ["A3", qsTr("A%1").arg(3)],
+        ["B3", qsTr("B%1").arg(3)],
+        ["C4", qsTr("C%1").arg(4)],
+        ["D4", qsTr("D%1").arg(4)],
+        ["E4", qsTr("E%1").arg(4)],
+        ["F4", qsTr("F%1").arg(4)],
+        ["G4", qsTr("G%1").arg(4)],
+        ["A4", qsTr("A%1").arg(4)],
+        ["B4", qsTr("B%1").arg(4)],
+        ["C5", qsTr("C%1").arg(5)],
+        ["D5", qsTr("D%1").arg(5)],
+        ["E5", qsTr("E%1").arg(5)],
+        ["F5", qsTr("F%1").arg(5)],
+        ["G5", qsTr("G%1").arg(5)],
+        ["A5", qsTr("A%1").arg(5)],
+        ["B5", qsTr("B%1").arg(5)],
+        ["C6", qsTr("C%1").arg(6)],
+        ["D6", qsTr("D%1").arg(6)],
+        ["E6", qsTr("E%1").arg(6)],
+        ["F6", qsTr("F%1").arg(6)]
+    ]
+
+    //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
+    readonly property var blackKeySharpNotes: [
+        ["C#3", qsTr("C#%1").arg(3)],
+        ["D#3", qsTr("D#%1").arg(3)],
+        ["F#3", qsTr("F#%1").arg(3)],
+        ["G#3", qsTr("G#%1").arg(3)],
+        ["A#3", qsTr("A#%1").arg(3)],
+        ["C#4", qsTr("C#%1").arg(4)],
+        ["D#4", qsTr("D#%1").arg(4)],
+        ["F#4", qsTr("F#%1").arg(4)],
+        ["G#4", qsTr("G#%1").arg(4)],
+        ["A#4", qsTr("A#%1").arg(4)],
+        ["C#5", qsTr("C#%1").arg(5)],
+        ["D#5", qsTr("D#%1").arg(5)],
+        ["F#5", qsTr("F#%1").arg(5)],
+        ["G#5", qsTr("G#%1").arg(5)],
+        ["A#5", qsTr("A#%1").arg(5)],
+        ["C#6", qsTr("C#%1").arg(6)],
+        ["D#6", qsTr("D#%1").arg(6)]
+    ]
+
+    //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
+    readonly property var blackKeyFlatNotes: [
+        ["Db3", qsTr("Db%1").arg(3)],
+        ["Eb3", qsTr("Eb%1").arg(3)],
+        ["Gb3", qsTr("Gb%1").arg(3)],
+        ["Ab3", qsTr("Ab%1").arg(3)],
+        ["Bb3", qsTr("Bb%1").arg(3)],
+        ["Db4", qsTr("Db%1").arg(4)],
+        ["Eb4", qsTr("Eb%1").arg(4)],
+        ["Gb4", qsTr("Gb%1").arg(4)],
+        ["Ab4", qsTr("Ab%1").arg(4)],
+        ["Bb4", qsTr("Bb%1").arg(4)],
+        ["Db5", qsTr("Db%1").arg(5)],
+        ["Eb5", qsTr("Eb%1").arg(5)],
+        ["Gb5", qsTr("Gb%1").arg(5)],
+        ["Ab5", qsTr("Ab%1").arg(5)],
+        ["Bb5", qsTr("Bb%1").arg(5)],
+        ["Db6", qsTr("Db%1").arg(6)],
+        ["Eb6", qsTr("Eb%1").arg(6)]
+    ]
+
+    // White key notes are from C3 to G4 when the clef is bass
+    property var whiteNotesBass: [
+        whiteKeyNotes.slice(11, 19),
+        whiteKeyNotes.slice(15, 23)
     ]
     // White key notes are from G3 to C6 when the clef is treble
-    //: Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
-    readonly property var whiteNotesTreble: [
-        [["E3", qsTr("E%1").arg(3)], ["F3", qsTr("F%1").arg(3)], ["G3", qsTr("G%1").arg(3)], ["A3", qsTr("A%1").arg(3)], ["B3", qsTr("B%1").arg(3)], ["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)]],
-        [["C4", qsTr("C%1").arg(4)], ["D4", qsTr("D%1").arg(4)], ["E4", qsTr("E%1").arg(4)], ["F4", qsTr("F%1").arg(4)], ["G4", qsTr("G%1").arg(4)], ["A4", qsTr("A%1").arg(4)], ["B4", qsTr("B%1").arg(4)], ["C5", qsTr("C%1").arg(5)]],
-        [["C5", qsTr("C%1").arg(5)], ["D5", qsTr("D%1").arg(5)], ["E5", qsTr("E%1").arg(5)], ["F5", qsTr("F%1").arg(5)], ["G5", qsTr("G%1").arg(5)], ["A5", qsTr("A%1").arg(5)], ["B5", qsTr("B%1").arg(5)], ["C6", qsTr("C%1").arg(6)]],
-        [["F5", qsTr("F%1").arg(5)], ["G5", qsTr("G%1").arg(5)], ["A5", qsTr("A%1").arg(5)], ["B5", qsTr("B%1").arg(5)], ["C6", qsTr("C%1").arg(6)], ["D6", qsTr("D%1").arg(6)], ["E6", qsTr("E%1").arg(6)], ["F6", qsTr("F%1").arg(6)]]
+    property var whiteNotesTreble: [
+        whiteKeyNotes.slice(13, 21),
+        whiteKeyNotes.slice(18, 26),
+        whiteKeyNotes.slice(25, 33),
+        whiteKeyNotes.slice(28, 36)
     ]
     readonly property var whiteNotes: background.clefType === "Treble" ? whiteNotesTreble : whiteNotesBass
 
     // Sharp black key notes when the clef is bass.
-    //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
     readonly property var blackNotesSharpBass: [
-        [["C#3", qsTr("C#%1").arg(3)], ["D#3", qsTr("D#%1").arg(3)], ["F#3", qsTr("F#%1").arg(3)], ["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)]],
-        [["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)]]
+        blackKeySharpNotes.slice(0, 5),
+        blackKeySharpNotes.slice(3, 8)
     ]
 
     // Sharp black key notes when the clef is treble
-    //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
     readonly property var blackNotesSharpTreble: [
-        [["F#3", qsTr("F#%1").arg(3)], ["G#3", qsTr("G#%1").arg(3)], ["A#3", qsTr("A#%1").arg(3)], ["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)]],
-        [["C#4", qsTr("C#%1").arg(4)], ["D#4", qsTr("D#%1").arg(4)], ["F#4", qsTr("F#%1").arg(4)], ["G#4", qsTr("G#%1").arg(4)], ["A#4", qsTr("A#%1").arg(4)]],
-        [["C#5", qsTr("C#%1").arg(5)], ["D#5", qsTr("D#%1").arg(5)], ["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)]],
-        [["F#5", qsTr("F#%1").arg(5)], ["G#5", qsTr("G#%1").arg(5)], ["A#5", qsTr("A#%1").arg(5)], ["C#6", qsTr("C#%1").arg(6)], ["D#6", qsTr("D#%1").arg(6)]]
+        blackKeySharpNotes.slice(2, 7),
+        blackKeySharpNotes.slice(5, 10),
+        blackKeySharpNotes.slice(10, 15),
+        blackKeySharpNotes.slice(12, 17)
     ]
     readonly property var blackNotesSharp: background.clefType === "Treble" ? blackNotesSharpTreble : blackNotesSharpBass
 
     // Flat black key notes when the clef is bass.
-    //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
     readonly property var blackNotesFlatBass: [
-        [["Db3", qsTr("Db%1").arg(3)], ["Eb3", qsTr("Eb%1").arg(3)], ["Gb3", qsTr("Gb%1").arg(3)], ["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)]],
-        [["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)]]
+        blackKeyFlatNotes.slice(0, 5),
+        blackKeyFlatNotes.slice(3, 8)
     ]
 
     // Flat black key notes when the clef is treble.
-    //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
     readonly property var blackNotesFlatTreble: [
-        [["Gb3", qsTr("Gb%1").arg(3)], ["Ab3", qsTr("Ab%1").arg(3)], ["Bb3", qsTr("Bb%1").arg(3)], ["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)]],
-        [["Db4", qsTr("Db%1").arg(4)], ["Eb4", qsTr("Eb%1").arg(4)], ["Gb4", qsTr("Gb%1").arg(4)], ["Ab4", qsTr("Ab%1").arg(4)], ["Bb4", qsTr("Bb%1").arg(4)]],
-        [["Db5", qsTr("Db%1").arg(5)], ["Eb5", qsTr("Eb%1").arg(5)], ["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)]],
-        [["Gb5", qsTr("Gb%1").arg(5)], ["Ab5", qsTr("Ab%1").arg(5)], ["Bb5", qsTr("Bb%1").arg(5)], ["Db6", qsTr("Db%1").arg(6)], ["Eb6", qsTr("Eb%1").arg(6)]]
+        blackKeyFlatNotes.slice(2, 7),
+        blackKeyFlatNotes.slice(5, 10),
+        blackKeyFlatNotes.slice(10, 15),
+        blackKeyFlatNotes.slice(12, 17)
     ]
     readonly property var blackNotesFlat: background.clefType === "Treble" ? blackNotesFlatTreble : blackNotesFlatBass
 
@@ -152,15 +228,15 @@ Item {
 
     Repeater {
         id: whiteKeyRepeater
-        model: whiteNotes[currentOctaveNb].length
+        model: whiteNotes[currentOctaveNb % whiteNotes.length] == undefined ? 0 : whiteNotes[currentOctaveNb].length
         PianoKey {
             color: "white"
             width: whiteWidth
             height: whiteHeight
             x: index * whiteWidth
             labelSquareSize: piano.labelSquareSize
-            noteColor: colorWhiteNotes[currentOctaveNb][index]
-            keyName: whiteNotes[currentOctaveNb][index][1]
+            noteColor: colorWhiteNotes[currentOctaveNb % colorWhiteNotes.length][index]
+            keyName: whiteNotes[currentOctaveNb % whiteNotes.length][index][1]
             labelsVisible: whiteLabelsVisible
             isKeyEnabled: piano.whiteKeysEnabled
             onKeyPressed: noteClicked(whiteNotes[currentOctaveNb][index][0])
@@ -169,15 +245,15 @@ Item {
 
     Repeater {
         id: blackKeyRepeater
-        model: blackNotes[currentOctaveNb].length
+        model: blackNotes[currentOctaveNb % blackNotes.length] == undefined ? 0 : blackNotes[currentOctaveNb % blackNotes.length].length
         PianoKey {
             color: "black"
             width: blackWidth
             height: blackHeight
-            x: blacks[currentOctaveNb][index] * piano.width / 184
+            x: blacks[currentOctaveNb % blacks.length][index] * piano.width / 184
             labelSquareSize: piano.labelSquareSize
-            noteColor: colorBlackNotes[currentOctaveNb][index]
-            keyName: blackNotes[currentOctaveNb][index][1]
+            noteColor: colorBlackNotes[currentOctaveNb % colorBlackNotes.length][index]
+            keyName: blackNotes[currentOctaveNb % blackNotes.length][index][1]
             labelsVisible: blackLabelsVisible
             isKeyEnabled: piano.blackKeysEnabled
             onKeyPressed: noteClicked(blackNotes[currentOctaveNb][index][0])

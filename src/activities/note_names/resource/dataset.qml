@@ -22,96 +22,79 @@
 import QtQuick 2.6
 
 QtObject {
+    // These levels teach from notes F1 to D6.
     property var levels: [
-        [
-            "E3Quarter G3Quarter B3Quarter E3Quarter G3Quarter B3Quarter E3Quarter G3Quarter B3Quarter",
-            "F3Quarter A3Quarter D4Quarter F3Quarter A3Quarter D4Quarter F3Quarter A3Quarter D4Quarter",
-            "C4Quarter E4Quarter B3Quarter C4Quarter E4Quarter B3Quarter C4Quarter E4Quarter B3Quarter"
-        ],
-        [
-            "C4Quarter F4Quarter C5Quarter C4Quarter F4Quarter C5Quarter C4Quarter F4Quarter C5Quarter",
-            "D4Quarter G4Quarter B4Quarter D4Quarter G4Quarter B4Quarter D4Quarter G4Quarter B4Quarter",
-            "C4Quarter E4Quarter A4Quarter C4Quarter E4Quarter A4Quarter C4Quarter E4Quarter A4Quarter"
-        ],
-        [
-            "C5Quarter F5Quarter C6Quarter C5Quarter F5Quarter C6Quarter C5Quarter F5Quarter C6Quarter",
-            "D5Quarter G5Quarter B5Quarter D5Quarter G5Quarter B5Quarter D5Quarter G5Quarter B5Quarter",
-            "C5Quarter E5Quarter A5Quarter C5Quarter E5Quarter A5Quarter C5Quarter E5Quarter A5Quarter"
-        ],
-        [
-            "F5Quarter E6Quarter B5Quarter F5Quarter E6Quarter B5Quarter F5Quarter E6Quarter B5Quarter",
-            "C6Quarter D6Quarter F6Quarter C6Quarter D6Quarter F6Quarter C6Quarter D6Quarter F6Quarter",
-            "E6Quarter A5Quarter C6Quarter E6Quarter A5Quarter C6Quarter E6Quarter A5Quarter C6Quarter"
-        ],
-        [
-            "F#3Quarter G3Quarter C#4Quarter F#3Quarter G3Quarter C#4Quarter F#3Quarter G3Quarter C#4Quarter",
-            "F3Quarter G#3Quarter A#3Quarter F3Quarter G#3Quarter A#3Quarter F3Quarter G#3Quarter A#3Quarter",
-            "D#4Quarter F#3Quarter B3Quarter D#4Quarter F#3Quarter B3Quarter D#4Quarter F#3Quarter B3Quarter"
-        ],
-        [
-            "D#4Quarter F4Quarter G#4Quarter D#4Quarter F4Quarter G#4Quarter D#4Quarter F4Quarter G#4Quarter",
-            "F#4Quarter G4Quarter C#4Quarter F#4Quarter G4Quarter C#4Quarter F#4Quarter G4Quarter C#4Quarter",
-            "C5Quarter A#4Quarter D#4Quarter C5Quarter A#4Quarter D#4Quarter C5Quarter A#4Quarter D#4Quarter"
-        ],
-        [
-            "C5Quarter D#5Quarter A#5Quarter C5Quarter D#5Quarter A#5Quarter C5Quarter D#5Quarter A#5Quarter",
-            "F#5Quarter G5Quarter C#5Quarter F#5Quarter G5Quarter C#5Quarter F#5Quarter G5Quarter C#5Quarter",
-            "C6Quarter G#5Quarter D#5Quarter C6Quarter G#5Quarter D#5Quarter C6Quarter G#5Quarter D#5Quarter"
-        ],
-        [
-            "F5Quarter F#5Quarter G#5Quarter F5Quarter F#5Quarter G#5Quarter F5Quarter F#5Quarter G#5Quarter",
-            "A#5Quarter D#6Quarter F6Quarter A#5Quarter D#6Quarter F6Quarter A#5Quarter D#6Quarter F6Quarter",
-            "E6Quarter C#6Quarter C6Quarter E6Quarter C#6Quarter C6Quarter E6Quarter C#6Quarter C6Quarter"
-        ],
-        [
-            "Gb3Quarter G3Quarter Db4Quarter Gb3Quarter G3Quarter Db4Quarter Gb3Quarter G3Quarter Db4Quarter",
-            "F3Quarter Ab3Quarter Bb3Quarter F3Quarter Ab3Quarter Bb3Quarter F3Quarter Ab3Quarter Bb3Quarter",
-            "Eb4Quarter Gb3Quarter B3Quarter Eb4Quarter Gb3Quarter B3Quarter Eb4Quarter Gb3Quarter B3Quarter"
-        ],
-        [
-            "Eb4Quarter F4Quarter Ab4Quarter Eb4Quarter F4Quarter Ab4Quarter Eb4Quarter F4Quarter Ab4Quarter",
-            "Gb4Quarter G4Quarter Db4Quarter Gb4Quarter G4Quarter Db4Quarter Gb4Quarter G4Quarter Db4Quarter",
-            "C5Quarter Eb4Quarter Bb4Quarter C5Quarter Eb4Quarter Bb4Quarter C5Quarter Eb4Quarter Bb4Quarter"
-        ],
-        [
-            "C5Quarter Eb5Quarter Bb5Quarter C5Quarter Eb5Quarter Bb5Quarter C5Quarter Eb5Quarter Bb5Quarter",
-            "Gb5Quarter G5Quarter Db5Quarter Gb5Quarter G5Quarter Db5Quarter Gb5Quarter G5Quarter Db5Quarter",
-            "C6Quarter Eb5Quarter Ab5Quarter C6Quarter Eb5Quarter Ab5Quarter C6Quarter Eb5Quarter Ab5Quarter"
-        ],
-        [
-            "F5Quarter Gb5Quarter Ab5Quarter F5Quarter Gb5Quarter Ab5Quarter F5Quarter Gb5Quarter Ab5Quarter",
-            "Bb5Quarter Eb6Quarter F6Quarter Bb5Quarter Eb6Quarter F6Quarter Bb5Quarter Eb6Quarter F6Quarter",
-            "E6Quarter Db6Quarter C6Quarter E6Quarter Db6Quarter C6Quarter E6Quarter Db6Quarter C6Quarter"
-        ],
-        [
-            "C3Quarter F3Quarter C4Quarter C3Quarter F3Quarter C4Quarter C3Quarter F3Quarter C4Quarter",
-            "D3Quarter G3Quarter B3Quarter D3Quarter G3Quarter B3Quarter D3Quarter G3Quarter B3Quarter",
-            "C3Quarter E3Quarter A3Quarter C3Quarter E3Quarter A3Quarter C3Quarter E3Quarter A3Quarter"
-        ],
-        [
-            "G3Quarter F4Quarter C4Quarter G3Quarter F4Quarter C4Quarter G3Quarter F4Quarter C4Quarter",
-            "D4Quarter G4Quarter A3Quarter D4Quarter G4Quarter A3Quarter D4Quarter G4Quarter A3Quarter",
-            "G3Quarter E4Quarter B3Quarter G3Quarter E4Quarter B3Quarter G3Quarter E4Quarter B3Quarter"
-        ],
-        [
-            "D#3Quarter F3Quarter G#3Quarter D#3Quarter F3Quarter G#3Quarter D#3Quarter F3Quarter G#3Quarter",
-            "F#3Quarter G3Quarter C#3Quarter F#3Quarter G3Quarter C#3Quarter F#3Quarter G3Quarter C#3Quarter",
-            "C4Quarter A#3Quarter D#3Quarter C4Quarter A#3Quarter D#3Quarter C4Quarter A#3Quarter D#3Quarter"
-        ],
-        [
-            "G#3Quarter F4Quarter C#4Quarter G#3Quarter F4Quarter C#4Quarter G#3Quarter F4Quarter C#4Quarter",
-            "D4Quarter A#3Quarter F#4Quarter D4Quarter A#3Quarter F#4Quarter D4Quarter A#3Quarter F#4Quarter",
-            "D#4Quarter E4Quarter B3Quarter D#4Quarter E4Quarter B3Quarter D#4Quarter E4Quarter B3Quarter"
-        ],
-        [
-            "Eb3Quarter F3Quarter Ab3Quarter Eb3Quarter F3Quarter Ab3Quarter Eb3Quarter F3Quarter Ab3Quarter",
-            "Gb3Quarter G3Quarter Db3Quarter Gb3Quarter G3Quarter Db3Quarter Gb3Quarter G3Quarter Db3Quarter",
-            "C4Quarter Eb3Quarter Bb3Quarter C4Quarter Eb3Quarter Bb3Quarter C4Quarter Eb3Quarter Bb3Quarter"
-        ],
-        [
-            "Ab3Quarter F4Quarter Db4Quarter Ab3Quarter F4Quarter Db4Quarter Ab3Quarter F4Quarter Db4Quarter",
-            "D4Quarter Bb3Quarter Gb4Quarter D4Quarter Bb3Quarter Gb4Quarter D4Quarter Bb3Quarter Gb4Quarter",
-            "Eb4Quarter E4Quarter B3Quarter Eb4Quarter E4Quarter B3Quarter Eb4Quarter E4Quarter B3Quarter"
-        ]
+        {
+            "clef": "Treble",
+            "sequence": ["C4", "G4"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["C3", "F3"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["B3", "D4", "F4", "A4"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["B2", "D3","E3", "G3"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["C5", "G5"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["C2", "F2"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["B4", "D5", "F5", "A5"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["B1", "D2","E2", "G2"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["E4", "E5"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["B3", "D4"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["G3", "C6"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["A2", "A3", "C4", "E4"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["F3", "A3"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["G4", "A4"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["B5", "D5"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["B4"]
+        },
+        {
+            "clef": "Treble",
+            "sequence": ["D3", "E3"]
+        },
+        {
+            "clef": "Bass",
+            "sequence": ["F1", "G1", "A1"]
+        }
     ]
 }

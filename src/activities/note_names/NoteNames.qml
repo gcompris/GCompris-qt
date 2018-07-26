@@ -99,7 +99,7 @@ ActivityBase {
             property alias bar: bar
             property alias multipleStaff: multipleStaff
             property alias piano: piano
-            property alias score: score
+            property alias piano2: piano2
             property alias bonus: bonus
             property alias iAmReady: iAmReady
             property alias wrongAnswerAnimation: wrongAnswerAnimation
@@ -146,7 +146,7 @@ ActivityBase {
             radius: 10
             z: 11
             visible: false
-            onVisibleChanged: text = Activity.currentSublevelData[0].substr(0, Activity.currentSublevelData[0].length - 7)
+            onVisibleChanged: text = Activity.sequence[0]
 
             property string text
 
@@ -182,14 +182,6 @@ ActivityBase {
             }
         }
 
-        Score {
-            id: score
-            anchors.top: background.top
-            anchors.bottom: undefined
-            numberOfSubLevels: 3
-            width: horizontalLayout ? parent.width / 10 : (parent.width - multipleStaff.x - multipleStaff.width)
-        }
-
         MultipleStaff {
             id: multipleStaff
             width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.76
@@ -201,24 +193,112 @@ ActivityBase {
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: horizontalLayout ? parent.height * 0.03 : parent.height * 0.1
+            anchors.topMargin: horizontalLayout ? 0 : parent.height * 0.02
+            flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2.7
             noteHoverEnabled: false
             noteAnimationEnabled: true
             onNoteAnimationFinished: wrongAnswerAnimation.start()
         }
 
-        Piano {
-            id: piano
-            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.7
-            height: horizontalLayout ? parent.height * 0.3 : parent.width * 0.26
+        Item {
+            id: doubleOctave
+            width: horizontalLayout ? 2 * parent.width * 0.3 : parent.width * 0.72
+            height: horizontalLayout ? parent.height * 0.3 : 2 * parent.width * 0.232
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 30
-            blackLabelsVisible: ([5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18].indexOf(items.bar.level) != -1)
-            useSharpNotation: ([5, 6, 7, 8, 15, 16].indexOf(items.bar.level) != -1)
-            blackKeysEnabled: blackLabelsVisible
-            onNoteClicked: Activity.checkAnswer(note)
-            currentOctaveNb: 0
+            Piano {
+                id: piano
+                width: horizontalLayout ? parent.width / 2 : parent.width
+                height: horizontalLayout ? parent.height : parent.height / 2
+                blackLabelsVisible: false
+                blackKeysEnabled: blackLabelsVisible
+                onNoteClicked: Activity.checkAnswer(note)
+                currentOctaveNb: 1
+                anchors.bottom: parent.bottom
+                whiteNotesBass: [
+                    whiteKeyNotes.slice(0, 8),
+                    whiteKeyNotes.slice(4, 12),
+                    whiteKeyNotes.slice(10, 18)
+                ]
+                whiteNotesTreble: [
+                    whiteKeyNotes.slice(11, 19),
+                    whiteKeyNotes.slice(18, 26),
+                    whiteKeyNotes.slice(19, 27),
+                ]
+            }
+
+            Piano {
+                id: piano2
+                width: piano.width
+                height: piano.height
+                anchors.top: parent.top
+                anchors.left: horizontalLayout ? piano.right : parent.left
+                anchors.leftMargin: horizontalLayout ? -(whiteWidth + 8) : 0
+                blackLabelsVisible: false
+                blackKeysEnabled: blackLabelsVisible
+                onNoteClicked: Activity.checkAnswer(note)
+                currentOctaveNb: piano.currentOctaveNb
+                whiteNotesBass: [
+                    whiteKeyNotes.slice(8, 16),
+                    whiteKeyNotes.slice(11, 19),
+                    whiteKeyNotes.slice(17, 25)
+                ]
+                whiteNotesTreble: [
+                    whiteKeyNotes.slice(18, 26),
+                    whiteKeyNotes.slice(25, 33),
+                    whiteKeyNotes.slice(26, 34),
+                ]
+            }
+        }
+
+        Image {
+            id: shiftKeyboardLeft
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            sourceSize.width: piano.width / 7
+            width: sourceSize.width
+            height: width
+            fillMode: Image.PreserveAspectFit
+            rotation: 180
+            visible: (piano.currentOctaveNb > 0) && piano.visible
+            anchors {
+                verticalCenter: doubleOctave.verticalCenter
+                right: doubleOctave.left
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    piano.currentOctaveNb--
+                    piano2.currentOctaveNb--
+                }
+            }
+        }
+
+        Image {
+            id: shiftKeyboardRight
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            sourceSize.width: piano.width / 7
+            width: sourceSize.width
+            height: width
+            fillMode: Image.PreserveAspectFit
+            visible: (piano.currentOctaveNb < piano.maxNbOctaves - 1) && piano.visible
+            anchors {
+                verticalCenter: doubleOctave.verticalCenter
+                left: doubleOctave.right
+                leftMargin: horizontalLayout ? -(piano.whiteWidth + 8) : 0
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    piano.currentOctaveNb++
+                    piano2.currentOctaveNb++
+                }
+            }
+        }
+
+        OptionsRow {
+            id: optionsRow
+            visible: false
         }
 
         DialogHelp {
@@ -243,7 +323,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 }
