@@ -42,23 +42,39 @@ function stop() {
 
 function initLevel() {
     correctAnswerCount = []
+    sequence = []
     items.bar.level = currentLevel + 1
-    items.piano.currentOctaveNb = 0
     items.background.clefType = dataset[currentLevel]["clef"]
-    if(dataset[currentLevel]["clef"] === "Treble") {
-        items.piano.currentOctaveNb = 1
-        items.piano2.currentOctaveNb = 2
-    }
+    items.piano.currentOctaveNb = 1
+    items.piano2.currentOctaveNb = 1
+    items.multipleStaff.stopNoteAnimation()
+    items.wrongAnswerAnimation.stop()
     items.multipleStaff.initClefs(items.background.clefType)
     sequence = JSON.parse(JSON.stringify(dataset[currentLevel]["sequence"]))
-    for(var i = 0; i < 3; i++) {
+    items.isTutorialMode = true
+    showTutorial()
+}
+
+function showTutorial() {
+    items.noteNameLabel.visible = false
+    if(sequence.length) {
+        displayNote(sequence[0])
+        items.noteNameLabel.visible = true
+        sequence.shift()
+    }
+    else {
+        items.isTutorialMode = false
+        startGame()
+    }
+}
+
+function startGame() {
+    sequence = JSON.parse(JSON.stringify(dataset[currentLevel]["sequence"]))
+    for(var i = 0; i < 2; i++) {
         for(var j = 0; j < dataset[currentLevel]["sequence"].length; j++)
             sequence.push(dataset[currentLevel]["sequence"][j])
     }
-
     Core.shuffle(sequence)
-    items.piano.currentOctaveNb = 1
-    items.piano2.currentOctaveNb = 1
     displayNote(sequence[0])
 }
 
@@ -67,27 +83,29 @@ function displayNote(currentNote) {
 }
 
 function wrongAnswer() {
-    if(correctAnswerCount[sequence[0]]) {
-        for(var i = 0; i < correctAnswerCount[sequence[0]]; i++)
-            sequence.push(sequence[0])
-    }
+    if(sequence.length) {
+        if(correctAnswerCount[sequence[0]]) {
+            for(var i = 0; i < correctAnswerCount[sequence[0]]; i++)
+                sequence.push(sequence[0])
+        }
 
-    correctAnswerCount[sequence[0]] = 0
+        correctAnswerCount[sequence[0]] = 0
 
-    if(sequence[sequence.length - 1] != sequence[0])
-        sequence.push(sequence.shift())
-    else {
-        sequence.push(sequence[1])
-        sequence.push(sequence.shift())
-        sequence.shift()
-    }
-    items.multipleStaff.musicElementModel.remove(1)
-    console.log("Wrong answer...New sequence:")
-    for(var i = 0; i < sequence.length; i++) {
-        console.log(sequence[i])
-    }
+        if(sequence[sequence.length - 1] != sequence[0])
+            sequence.push(sequence.shift())
+        else {
+            sequence.push(sequence[1])
+            sequence.push(sequence.shift())
+            sequence.shift()
+        }
+        items.multipleStaff.musicElementModel.remove(1)
+        console.log("Wrong answer...New sequence:")
+        for(var i = 0; i < sequence.length; i++) {
+            console.log(sequence[i])
+        }
 
-    displayNote(sequence[0])
+        displayNote(sequence[0])
+    }
 }
 
 function correctAnswer() {

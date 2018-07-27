@@ -104,6 +104,8 @@ ActivityBase {
             property alias iAmReady: iAmReady
             property alias wrongAnswerAnimation: wrongAnswerAnimation
             property alias dataset: dataset
+            property alias noteNameLabel: noteNameLabel
+            property bool isTutorialMode: true
         }
 
         Loader {
@@ -138,26 +140,51 @@ ActivityBase {
 
         Rectangle {
             id: noteNameLabel
-            width: multipleStaff.width / 5
-            height: width
+            width: label.width + 20
+            height: label.height + 20
             border.width: 5
             border.color: "black"
             anchors.centerIn: multipleStaff
             radius: 10
             z: 11
             visible: false
-            onVisibleChanged: text = Activity.sequence[0]
+            onVisibleChanged: text = Activity.sequence[0] == undefined ? ""
+                                                                       : items.isTutorialMode ? qsTr("New note: %1").arg(Activity.sequence[0])
+                                                                       : Activity.sequence[0]
+            Behavior on visible {
+                SequentialAnimation {
+                    loops: Animation.Infinite
+                    NumberAnimation {
+                        target: noteNameLabel
+                        property: "scale"
+                        to: 0.85
+                        duration: 700
+                    }
+                    NumberAnimation {
+                        target: noteNameLabel
+                        property: "scale"
+                        to: 1
+                        duration: 700
+                    }
+                }
+            }
 
             property string text
 
             GCText {
-                anchors.fill: parent
-                anchors.rightMargin: parent.width * 0.02
-                anchors.leftMargin: parent.width * 0.02
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                fontSizeMode: Text.Fit
+                id: label
+                anchors.centerIn: parent
+                fontSize: mediumSize
                 text: parent.text
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                enabled: items.isTutorialMode
+                onClicked: {
+                    items.multipleStaff.musicElementModel.remove(1)
+                    Activity.showTutorial()
+                }
             }
         }
 
@@ -197,7 +224,10 @@ ActivityBase {
             flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2.7
             noteHoverEnabled: false
             noteAnimationEnabled: true
-            onNoteAnimationFinished: wrongAnswerAnimation.start()
+            onNoteAnimationFinished: {
+                if(!items.isTutorialMode)
+                    wrongAnswerAnimation.start()
+            }
         }
 
         Item {
@@ -213,6 +243,7 @@ ActivityBase {
                 height: horizontalLayout ? parent.height : parent.height / 2
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
+                whiteKeysEnabled: !noteNameLabel.visible
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: 1
                 anchors.bottom: parent.bottom
@@ -236,6 +267,7 @@ ActivityBase {
                 anchors.left: horizontalLayout ? piano.right : parent.left
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
+                whiteKeysEnabled: !noteNameLabel.visible
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: piano.currentOctaveNb
                 whiteNotesBass: [
@@ -264,6 +296,7 @@ ActivityBase {
                 right: doubleOctave.left
             }
             MouseArea {
+                enabled: !noteNameLabel.visible
                 anchors.fill: parent
                 onClicked: {
                     piano.currentOctaveNb--
@@ -285,6 +318,7 @@ ActivityBase {
                 left: doubleOctave.right
             }
             MouseArea {
+                enabled: !noteNameLabel.visible
                 anchors.fill: parent
                 onClicked: {
                     piano.currentOctaveNb++
