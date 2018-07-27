@@ -219,12 +219,11 @@ ActivityBase {
                 whiteNotesBass: [
                     whiteKeyNotes.slice(0, 8),
                     whiteKeyNotes.slice(4, 12),
-                    whiteKeyNotes.slice(10, 18)
+                    whiteKeyNotes.slice(9, 17)
                 ]
                 whiteNotesTreble: [
                     whiteKeyNotes.slice(11, 19),
                     whiteKeyNotes.slice(18, 26),
-                    whiteKeyNotes.slice(19, 27),
                 ]
             }
 
@@ -233,20 +232,19 @@ ActivityBase {
                 width: piano.width
                 height: piano.height
                 anchors.top: parent.top
+                anchors.topMargin: horizontalLayout ? 0 : -15
                 anchors.left: horizontalLayout ? piano.right : parent.left
-                anchors.leftMargin: horizontalLayout ? -(whiteWidth + 8) : 0
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: piano.currentOctaveNb
                 whiteNotesBass: [
                     whiteKeyNotes.slice(8, 16),
-                    whiteKeyNotes.slice(11, 19),
+                    whiteKeyNotes.slice(12, 20),
                     whiteKeyNotes.slice(17, 25)
                 ]
                 whiteNotesTreble: [
-                    whiteKeyNotes.slice(18, 26),
-                    whiteKeyNotes.slice(25, 33),
+                    whiteKeyNotes.slice(19, 27),
                     whiteKeyNotes.slice(26, 34),
                 ]
             }
@@ -285,7 +283,6 @@ ActivityBase {
             anchors {
                 verticalCenter: doubleOctave.verticalCenter
                 left: doubleOctave.right
-                leftMargin: horizontalLayout ? -(piano.whiteWidth + 8) : 0
             }
             MouseArea {
                 anchors.fill: parent

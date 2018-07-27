@@ -41,10 +41,10 @@ Item {
 
     onDefaultOctaveNbChanged: currentOctaveNb = defaultOctaveNb
 
-    property int whiteWidth: width / numberOfWhite // 23
-    property int whiteHeight: height // 120
-    property int blackWidth: (whiteWidth + 1) / 2 // 13
-    property int blackHeight: 2 * height / 3 // 80
+    property real whiteWidth: width / numberOfWhite // 23
+    property real whiteHeight: height // 120
+    property real blackWidth: (whiteWidth + 1) / 2 // 13
+    property real blackHeight: 2 * height / 3 // 80
 
     //: Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
     readonly property var whiteKeyNotes: [
@@ -128,6 +128,11 @@ Item {
         ["Eb6", qsTr("Eb%1").arg(6)]
     ]
 
+    readonly property var keyLabelColors: { "C": "#FF0000", "D": "#FF7F00", "E": "#FFFF00", "F": "#32CD32",
+                                            "G": "#6495ED", "A": "#D02090", "B": "#FF1493",
+                                            "C#": "#FF6347", "D#": "#FFD700", "F#": "#20B2AA", "G#": "#8A2BE2", "A#": "#FF00FF",
+                                            "Db": "#FF6347", "Eb": "#FFD700", "Gb": "#20B2AA", "Ab": "#8A2BE2", "Bb": "#FF00FF"}
+
     // White key notes are from C3 to G4 when the clef is bass
     property var whiteNotesBass: [
         whiteKeyNotes.slice(11, 19),
@@ -189,34 +194,6 @@ Item {
     ]
     readonly property var blacks: background.clefType === "Treble" ? blacksTreble : blacksBass
 
-    // Color of white key labels when the clef is bass
-    readonly property var colorWhiteNotesBass: [
-        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
-        ["#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED"],
-    ]
-    // Color of white key labels when the clef is treble
-    readonly property var colorWhiteNotesTreble: [
-        ["#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00"],
-        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
-        ["#FF0000", "#FF7F00", "#FFFF00", "#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000"],
-        ["#32CD32", "#6495ED", "#D02090", "#FF1493", "#FF0000", "#FF7F00", "#FFFF00", "#32CD32"]
-    ]
-    readonly property var colorWhiteNotes: background.clefType === "Treble" ? colorWhiteNotesTreble : colorWhiteNotesBass
-
-    // Color of black key labels when the clef is bass
-    readonly property var colorBlackNotesBass: [
-        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
-        ["#8A2BE2", "#FF00FF", "#FF6347", "#FFD700", "#20B2AA"]
-    ]
-    // Color of black key labels when the clef is treble
-    readonly property var colorBlackNotesTreble: [
-        ["#20B2AA", "#8A2BE2", "#FF00FF", "#FF6347", "#FFD700"],
-        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
-        ["#FF6347", "#FFD700", "#20B2AA", "#8A2BE2", "#FF00FF"],
-        ["#20B2AA", "#8A2BE2", "#FF00FF", "#FF6347", "#FFD700"]
-    ]
-    readonly property var colorBlackNotes: background.clefType === "Treble" ? colorBlackNotesTreble : colorBlackNotesBass
-
     signal noteClicked(string note)
 
     property bool blackLabelsVisible: true
@@ -228,14 +205,14 @@ Item {
 
     Repeater {
         id: whiteKeyRepeater
-        model: whiteNotes[currentOctaveNb % whiteNotes.length] == undefined ? 0 : whiteNotes[currentOctaveNb].length
+        model: whiteNotes.length ? whiteNotes[currentOctaveNb % whiteNotes.length].length : 0
         PianoKey {
             color: "white"
             width: whiteWidth
             height: whiteHeight
             x: index * whiteWidth
             labelSquareSize: piano.labelSquareSize
-            noteColor: colorWhiteNotes[currentOctaveNb % colorWhiteNotes.length][index]
+            noteColor: keyLabelColors[keyName[0]]
             keyName: whiteNotes[currentOctaveNb % whiteNotes.length][index][1]
             labelsVisible: whiteLabelsVisible
             isKeyEnabled: piano.whiteKeysEnabled
@@ -245,14 +222,14 @@ Item {
 
     Repeater {
         id: blackKeyRepeater
-        model: blackNotes[currentOctaveNb % blackNotes.length] == undefined ? 0 : blackNotes[currentOctaveNb % blackNotes.length].length
+        model: blackNotes.length ? blackNotes[currentOctaveNb % blackNotes.length].length : 0
         PianoKey {
             color: "black"
             width: blackWidth
             height: blackHeight
             x: blacks[currentOctaveNb % blacks.length][index] * piano.width / 184
             labelSquareSize: piano.labelSquareSize
-            noteColor: colorBlackNotes[currentOctaveNb % colorBlackNotes.length][index]
+            noteColor: keyLabelColors[keyName.substr(0, 2)]
             keyName: blackNotes[currentOctaveNb % blackNotes.length][index][1]
             labelsVisible: blackLabelsVisible
             isKeyEnabled: piano.blackKeysEnabled
