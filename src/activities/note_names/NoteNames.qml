@@ -48,48 +48,6 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        Keys.onPressed: {
-            if(event.key === Qt.Key_1) {
-                piano.whiteKeyRepeater.itemAt(0).keyPressed()
-            }
-            if(event.key === Qt.Key_2) {
-                piano.whiteKeyRepeater.itemAt(1).keyPressed()
-            }
-            if(event.key === Qt.Key_3) {
-                piano.whiteKeyRepeater.itemAt(2).keyPressed()
-            }
-            if(event.key === Qt.Key_4) {
-                piano.whiteKeyRepeater.itemAt(3).keyPressed()
-            }
-            if(event.key === Qt.Key_5) {
-                piano.whiteKeyRepeater.itemAt(4).keyPressed()
-            }
-            if(event.key === Qt.Key_6) {
-                piano.whiteKeyRepeater.itemAt(5).keyPressed()
-            }
-            if(event.key === Qt.Key_7) {
-                piano.whiteKeyRepeater.itemAt(6).keyPressed()
-            }
-            if(event.key === Qt.Key_8) {
-                piano.whiteKeyRepeater.itemAt(7).keyPressed()
-            }
-            if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(0).keyPressed()
-            }
-            if(event.key === Qt.Key_F2 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(1).keyPressed()
-            }
-            if(event.key === Qt.Key_F3 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(2).keyPressed()
-            }
-            if(event.key === Qt.Key_F4 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(3).keyPressed()
-            }
-            if(event.key === Qt.Key_F5 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(4).keyPressed()
-            }
-        }
-
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -104,7 +62,7 @@ ActivityBase {
             property alias iAmReady: iAmReady
             property alias wrongAnswerAnimation: wrongAnswerAnimation
             property alias dataset: dataset
-            property alias noteNameLabel: noteNameLabel
+            property alias messageBox: messageBox
             property bool isTutorialMode: true
         }
 
@@ -128,18 +86,18 @@ ActivityBase {
             duration: 2000
             onStarted: {
                 multipleStaff.stopNoteAnimation()
-                noteNameLabel.visible = true
+                messageBox.visible = true
                 colorLayer.color = "red"
             }
             onStopped: {
                 Activity.wrongAnswer()
-                noteNameLabel.visible = false
+                messageBox.visible = false
                 colorLayer.color = "black"
             }
         }
 
         Rectangle {
-            id: noteNameLabel
+            id: messageBox
             width: label.width + 20
             height: label.height + 20
             border.width: 5
@@ -155,13 +113,13 @@ ActivityBase {
                 SequentialAnimation {
                     loops: Animation.Infinite
                     NumberAnimation {
-                        target: noteNameLabel
+                        target: messageBox
                         property: "scale"
                         to: 0.85
                         duration: 700
                     }
                     NumberAnimation {
-                        target: noteNameLabel
+                        target: messageBox
                         property: "scale"
                         to: 1
                         duration: 700
@@ -243,7 +201,7 @@ ActivityBase {
                 height: horizontalLayout ? parent.height : parent.height / 2
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
-                whiteKeysEnabled: !noteNameLabel.visible
+                whiteKeysEnabled: !messageBox.visible
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: 1
                 anchors.bottom: parent.bottom
@@ -267,9 +225,10 @@ ActivityBase {
                 anchors.left: horizontalLayout ? piano.right : parent.left
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
-                whiteKeysEnabled: !noteNameLabel.visible
+                whiteKeysEnabled: !messageBox.visible
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: piano.currentOctaveNb
+                leftOctaveVisible: horizontalLayout
                 whiteNotesBass: [
                     whiteKeyNotes.slice(8, 16),
                     whiteKeyNotes.slice(12, 20),
@@ -296,7 +255,7 @@ ActivityBase {
                 right: doubleOctave.left
             }
             MouseArea {
-                enabled: !noteNameLabel.visible
+                enabled: !messageBox.visible
                 anchors.fill: parent
                 onClicked: {
                     piano.currentOctaveNb--
@@ -318,7 +277,7 @@ ActivityBase {
                 left: doubleOctave.right
             }
             MouseArea {
-                enabled: !noteNameLabel.visible
+                enabled: !messageBox.visible
                 anchors.fill: parent
                 onClicked: {
                     piano.currentOctaveNb++

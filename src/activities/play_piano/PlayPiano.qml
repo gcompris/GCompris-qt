@@ -64,43 +64,43 @@ ActivityBase {
 
         Keys.onPressed: {
             if(event.key === Qt.Key_1) {
-                piano.whiteKeyRepeater.itemAt(0).keyPressed()
+                piano.keyRepeater.itemAt(0).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_2) {
-                piano.whiteKeyRepeater.itemAt(1).keyPressed()
+                piano.keyRepeater.itemAt(1).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_3) {
-                piano.whiteKeyRepeater.itemAt(2).keyPressed()
+                piano.keyRepeater.itemAt(2).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_4) {
-                piano.whiteKeyRepeater.itemAt(3).keyPressed()
+                piano.keyRepeater.itemAt(3).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_5) {
-                piano.whiteKeyRepeater.itemAt(4).keyPressed()
+                piano.keyRepeater.itemAt(4).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_6) {
-                piano.whiteKeyRepeater.itemAt(5).keyPressed()
+                piano.keyRepeater.itemAt(5).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_7) {
-                piano.whiteKeyRepeater.itemAt(6).keyPressed()
+                piano.keyRepeater.itemAt(6).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_8) {
-                piano.whiteKeyRepeater.itemAt(7).keyPressed()
+                piano.keyRepeater.itemAt(7).whiteKey.keyPressed()
             }
             if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(0).keyPressed()
+                findBlackKey(1)
             }
             if(event.key === Qt.Key_F2 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(1).keyPressed()
+                findBlackKey(2)
             }
             if(event.key === Qt.Key_F3 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(2).keyPressed()
+                findBlackKey(3)
             }
             if(event.key === Qt.Key_F4 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(3).keyPressed()
+                findBlackKey(4)
             }
             if(event.key === Qt.Key_F5 && piano.blackKeysEnabled) {
-                piano.blackKeyRepeater.itemAt(4).keyPressed()
+                findBlackKey(5)
             }
             if(event.key === Qt.Key_Space) {
                 multipleStaff.play()
@@ -113,6 +113,17 @@ ActivityBase {
             }
             if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
                 piano.currentOctaveNb++
+            }
+        }
+
+        function findBlackKey(keyNumber) {
+            for(var i = 0; keyNumber; i++) {
+                if(piano.keyRepeater.itemAt(i) == undefined)
+                    break
+                if(piano.keyRepeater.itemAt(i).blackKey.visible)
+                    keyNumber--
+                if(!keyNumber)
+                    piano.keyRepeater.itemAt(i).blackKey.keyPressed()
             }
         }
 

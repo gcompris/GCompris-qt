@@ -56,10 +56,10 @@ function initLevel() {
 }
 
 function showTutorial() {
-    items.noteNameLabel.visible = false
+    items.messageBox.visible = false
     if(sequence.length) {
         displayNote(sequence[0])
-        items.noteNameLabel.visible = true
+        items.messageBox.visible = true
         sequence.shift()
     }
     else {
