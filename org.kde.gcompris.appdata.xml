@@ -403,7 +403,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/main_menu.png</image>
     </screenshot>
     <screenshot>
-      <caption>click_on_letter_up activity</caption>
+      <caption>Activity "Click on an uppercase letter"</caption>
       <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="ca-valencia">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="en-GB">click_on_letter_up activity</caption>
@@ -421,7 +421,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
     </screenshot>
     <screenshot>
-      <caption>clockgame activity</caption>
+      <caption>Activity "Learning Clock"</caption>
       <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="ca-valencia">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="en-GB">clockgame activity</caption>
@@ -439,7 +439,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/clockgame.png</image>
     </screenshot>
     <screenshot>
-      <caption>color_mix activity</caption>
+      <caption>Activity "Mixing color of paint"</caption>
       <caption xml:lang="ca">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="ca-valencia">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="en-GB">colour_mix activity</caption>
@@ -457,7 +457,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/color_mix.png</image>
     </screenshot>
     <screenshot>
-      <caption>colors activity</caption>
+      <caption>Activity "Colors"</caption>
       <caption xml:lang="ca">Activitat «Colors»</caption>
       <caption xml:lang="ca-valencia">Activitat «Colors»</caption>
       <caption xml:lang="en-GB">colours activity</caption>
@@ -475,7 +475,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/colors.png</image>
     </screenshot>
     <screenshot>
-      <caption>crane activity</caption>
+      <caption>Activity "Build the same model"</caption>
       <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="en-GB">crane activity</caption>
@@ -493,7 +493,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/crane.png</image>
     </screenshot>
     <screenshot>
-      <caption>enumerate activity</caption>
+      <caption>Activity "Count the items"</caption>
       <caption xml:lang="ca">Activitat «Compta els elements»</caption>
       <caption xml:lang="ca-valencia">Activitat «Compta els elements»</caption>
       <caption xml:lang="en-GB">enumerate activity</caption>
@@ -511,7 +511,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/enumerate.png</image>
     </screenshot>
     <screenshot>
-      <caption>fifteen activity</caption>
+      <caption>Activity "The fifteen game"</caption>
       <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="ca-valencia">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="en-GB">fifteen activity</caption>
@@ -529,7 +529,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/fifteen.png</image>
     </screenshot>
     <screenshot>
-      <caption>hexagon activity</caption>
+      <caption>Activity "Hexagon"</caption>
       <caption xml:lang="ca">Activitat «Hexàgon»</caption>
       <caption xml:lang="ca-valencia">Activitat «Hexàgon»</caption>
       <caption xml:lang="en-GB">hexagon activity</caption>
@@ -547,7 +547,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/hexagon.png</image>
     </screenshot>
     <screenshot>
-      <caption>scalesboard activity</caption>
+      <caption>Activity "Balance the scales properly"</caption>
       <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="ca-valencia">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="en-GB">scalesboard activity</caption>
@@ -565,7 +565,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
     </screenshot>
     <screenshot>
-      <caption>chess_partyend activity</caption>
+      <caption>Activity "End of chess game"</caption>
       <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="ca-valencia">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="en-GB">chess_partyend activity</caption>
@@ -583,7 +583,7 @@
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
     </screenshot>
     <screenshot>
-      <caption>traffic activity</caption>
+      <caption>Activity "A sliding-block puzzle game"</caption>
       <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="ca-valencia">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="en-GB">traffic activity</caption>
