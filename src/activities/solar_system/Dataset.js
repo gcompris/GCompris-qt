@@ -264,7 +264,7 @@ function get() {
                 },
                 {
                     "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_clip.svg",
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.png",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.svg",
                     "bodyName": qsTr("Saturn"),
                     "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth years."),
