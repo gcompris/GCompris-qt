@@ -105,6 +105,8 @@ function initLevel() {
 
     items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
+    items.optionsRow.noteOptionsIndex = 2
+    items.background.currentType = "Quarter"
     items.lyricsArea.resetLyricsArea()
     undoStack = []
 }

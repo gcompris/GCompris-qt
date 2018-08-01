@@ -29,15 +29,18 @@ var items
 var dataset
 var correctAnswerCount = []
 var sequence
+var noteIndexToDisplay
 
 function start(items_) {
     items = items_
     currentLevel = 0
-    dataset = items.dataset.item.levels
+    dataset = items.parser.parseFromUrl("qrc:/gcompris/src/activities/note_names/resource/dataset_01.json").levels
     numberOfLevel = dataset.length
 }
 
 function stop() {
+    items.addNoteTimer.stop()
+    items.multipleStaff.pauseNoteAnimation()
 }
 
 function initLevel() {
@@ -47,8 +50,9 @@ function initLevel() {
     items.background.clefType = dataset[currentLevel]["clef"]
     items.piano.currentOctaveNb = 1
     items.piano2.currentOctaveNb = 1
-    items.multipleStaff.stopNoteAnimation()
+    items.multipleStaff.pauseNoteAnimation()
     items.wrongAnswerAnimation.stop()
+    items.addNoteTimer.stop()
     items.multipleStaff.initClefs(items.background.clefType)
     sequence = JSON.parse(JSON.stringify(dataset[currentLevel]["sequence"]))
     items.isTutorialMode = true
@@ -69,6 +73,7 @@ function showTutorial() {
 }
 
 function startGame() {
+    noteIndexToDisplay = 0
     sequence = JSON.parse(JSON.stringify(dataset[currentLevel]["sequence"]))
     for(var i = 0; i < 2; i++) {
         for(var j = 0; j < dataset[currentLevel]["sequence"].length; j++)
@@ -80,6 +85,9 @@ function startGame() {
 
 function displayNote(currentNote) {
     items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.background.clefType)
+    if(!items.isTutorialMode) {
+        items.addNoteTimer.start()
+    }
 }
 
 function wrongAnswer() {
@@ -90,6 +98,7 @@ function wrongAnswer() {
         }
 
         correctAnswerCount[sequence[0]] = 0
+        noteIndexToDisplay--
 
         if(sequence[sequence.length - 1] != sequence[0])
             sequence.push(sequence.shift())
@@ -103,25 +112,25 @@ function wrongAnswer() {
         for(var i = 0; i < sequence.length; i++) {
             console.log(sequence[i])
         }
-
-        displayNote(sequence[0])
+        items.multipleStaff.resumeNoteAnimation()
     }
 }
 
 function correctAnswer() {
     if(correctAnswerCount[sequence[0]] == undefined)
-        correctAnswerCount[sequence[0]] = 0
+            correctAnswerCount[sequence[0]] = 0
 
     correctAnswerCount[sequence[0]]++
+    noteIndexToDisplay--
+    items.multipleStaff.pauseNoteAnimation()
     items.multipleStaff.musicElementModel.remove(1)
+    items.multipleStaff.resumeNoteAnimation()
     sequence.shift()
     console.log("Correct answer...New sequence:")
     for(var i = 0; i < sequence.length; i++) {
         console.log(sequence[i])
     }
-    if(sequence.length != 0)
-        displayNote(sequence[0])
-    else
+    if(sequence.length === 0)
         items.bonus.good("flower")
 }
 

@@ -203,11 +203,18 @@ Item {
     }
 
     /**
-     * Stops the sliding animation of the notes.
+     * Pauses the sliding animation of the notes.
      */
-    function stopNoteAnimation() {
+    function pauseNoteAnimation() {
         for(var i = 0; i < musicElementModel.count; i++) {
-            musicElementRepeater.itemAt(i).noteAnimation.stop()
+            if(musicElementRepeater.itemAt(i).noteAnimation.running)
+                musicElementRepeater.itemAt(i).noteAnimation.pause()
+        }
+    }
+
+    function resumeNoteAnimation() {
+        for(var i = 0; i < musicElementModel.count; i++) {
+            musicElementRepeater.itemAt(i).noteAnimation.resume()
         }
     }
 
@@ -244,7 +251,7 @@ Item {
                 isNextStaff = true
         }
 
-        if(isNextStaff) {
+        if(isNextStaff && !noteAnimationEnabled) {
             multipleStaff.currentEnteringStaff++
             if(multipleStaff.currentEnteringStaff >= multipleStaff.nbStaves)
                 multipleStaff.nbStaves++
@@ -382,6 +389,7 @@ Item {
                 }
                 audioLooper.stop()
                 var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch.toLowerCase() + "_pitches/" + noteName + ".wav"
+                console.log(noteToPlay)
                 audioLooper.playMusic(noteToPlay, duration)
             }
         }

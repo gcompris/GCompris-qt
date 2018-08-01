@@ -68,6 +68,7 @@ Row {
         id: noteOptions
         source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex][1])
         nbOptions: optionsRow.noteLengthName.length
+        currentIndex: 2
         onClicked: {
             background.currentType = optionsRow.noteLengthName[currentIndex][1]
             emitOptionMessage(optionsRow.noteLengthName[currentIndex][0])

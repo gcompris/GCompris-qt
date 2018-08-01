@@ -48,6 +48,59 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        Keys.onPressed: {
+            if(event.key === Qt.Key_1) {
+                if(Activity.sequence[0][0] === 'C')
+                    Activity.checkAnswer(Activity.sequence[0])
+                else
+                   Activity.checkAnswer("Z")
+            }
+            else if(event.key === Qt.Key_2) {
+                if(Activity.sequence[0][0] === 'D')
+                    Activity.checkAnswer(Activity.sequence[0])
+                else
+                   Activity.checkAnswer("Z")
+            }
+            else if(event.key === Qt.Key_3) {
+                if(Activity.sequence[0][0] === 'E')
+                    Activity.checkAnswer(Activity.sequence[0])
+                else
+                   Activity.checkAnswer("Z")
+            }
+            else if(event.key === Qt.Key_4) {
+                if(Activity.sequence[0][0] === 'F')
+                    Activity.checkAnswer(Activity.sequence[0])
+                else
+                   Activity.checkAnswer("Z")
+            }
+            else if(event.key === Qt.Key_5) {
+                if(Activity.sequence[0][0] === 'G')
+                    Activity.checkAnswer(Activity.sequence[0])
+                else
+                   Activity.checkAnswer("Z")
+            }
+            else if(event.key === Qt.Key_6) {
+                if(Activity.sequence[0][0] === 'A')
+                    Activity.checkAnswer(Activity.sequence[0])
+                else
+                   Activity.checkAnswer("Z")
+            }
+            else if(event.key === Qt.Key_7) {
+                if(Activity.sequence[0][0] === 'B')
+                    Activity.checkAnswer(Activity.sequence[0])
+                else
+                   Activity.checkAnswer("Z")
+            }
+            else if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
+                piano.currentOctaveNb--
+            }
+            else if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
+                piano.currentOctaveNb++
+            }
+            else
+                Activity.checkAnswer("Z")
+        }
+
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -61,15 +114,14 @@ ActivityBase {
             property alias bonus: bonus
             property alias iAmReady: iAmReady
             property alias wrongAnswerAnimation: wrongAnswerAnimation
-            property alias dataset: dataset
             property alias messageBox: messageBox
+            property alias addNoteTimer: addNoteTimer
+            property alias parser: parser
             property bool isTutorialMode: true
         }
 
-        Loader {
-            id: dataset
-            asynchronous: false
-            source: "qrc:/gcompris/src/activities/note_names/resource/dataset.qml"
+        JsonParser {
+            id: parser
         }
 
         onStart: { Activity.start(items) }
@@ -85,14 +137,24 @@ ActivityBase {
             to: 0.4
             duration: 2000
             onStarted: {
-                multipleStaff.stopNoteAnimation()
+                multipleStaff.pauseNoteAnimation()
+                addNoteTimer.pause()
                 messageBox.visible = true
                 colorLayer.color = "red"
             }
             onStopped: {
-                Activity.wrongAnswer()
                 messageBox.visible = false
                 colorLayer.color = "black"
+                if(Activity.sequence[Activity.noteIndexToDisplay] == undefined) {
+                    addNoteTimer.triggeredOnStart = true
+                    Activity.noteIndexToDisplay--
+                    Activity.wrongAnswer()
+                    addNoteTimer.start()
+                }
+                else {
+                    Activity.wrongAnswer()
+                    addNoteTimer.resume()
+                }
             }
         }
 
@@ -140,6 +202,7 @@ ActivityBase {
                 anchors.fill: parent
                 enabled: items.isTutorialMode
                 onClicked: {
+                    items.multipleStaff.pauseNoteAnimation()
                     items.multipleStaff.musicElementModel.remove(1)
                     Activity.showTutorial()
                 }
@@ -164,6 +227,15 @@ ActivityBase {
             z: 10
             onClicked: {
                 Activity.initLevel()
+            }
+        }
+
+        AdvancedTimer {
+            id: addNoteTimer
+            onTriggered: {
+                if(Activity.sequence[++Activity.noteIndexToDisplay] != undefined) {
+                    Activity.displayNote(Activity.sequence[Activity.noteIndexToDisplay])
+                }
             }
         }
 
