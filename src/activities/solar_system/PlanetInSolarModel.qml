@@ -52,8 +52,11 @@ Item {
         anchors.top: background.horizontalLayout ? planetNameText.bottom : planetItem.top
         anchors.topMargin: parent.width * 0.05
         anchors.horizontalCenter: parent.horizontalCenter
-        sourceSize.width: parent.width / 1.5
-        fillMode: Image.PreserveAspectCrop
+        width: parent.width / 1.3
+        height: planetImage.width
+        sourceSize.width: planetImage.width * 1.2
+        sourceSize.height: planetImage.width * 1.2
+        fillMode: Image.PreserveAspectFit
         source: planetImageSource
 
         states: [
@@ -83,30 +86,6 @@ Item {
             enabled: !message.visible
             hoverEnabled: ApplicationInfo.isMobile ? false : true
             onClicked: Activity.showQuizScreen(index)
-        }
-    }
-
-    // This animation is not run on vertical screens because on verticals, the amplitude of oscillation of text is too much for the kid to be distracted and the planet's too small to be negligible.
-    // Further the planet image is bounded by its anchors which is not letting it to oscillate. So, it was better to keep the animation restricted to horizontal screens for now.
-    SequentialAnimation {
-        id: floatingAnimation
-        loops: Animation.Infinite
-        running: background.horizontalLayout ? true : false
-        NumberAnimation {
-            target: planetNameText
-            property: "y"
-            from: -planetItem.height / 35.62
-            to: planetItem.height / 35.62
-            duration: 1800 + Math.floor(Math.random() * 500)
-            easing.type: Easing.InOutQuad
-        }
-        NumberAnimation {
-            target: planetNameText
-            property: "y"
-            from: planetItem.height / 35.62
-            to: -planetItem.height / 35.62
-            duration: 1800 + Math.floor(Math.random() * 500)
-            easing.type: Easing.InOutQuad
         }
     }
 }

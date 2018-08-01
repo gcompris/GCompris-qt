@@ -31,14 +31,32 @@ ActivityBase {
     }
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/solar_system/resource/background.jpg"
-
         property bool horizontalLayout: background.width > background.height
-
+        
+        Image {
+            id: stars
+            fillMode: Image.PreserveAspectCrop
+            source: "qrc:/gcompris/src/activities/solar_system/resource/background.jpg"
+            width: horizontalLayout ? parent.width * 2.5 : parent.height * 2.5
+            height: stars.width
+            sourceSize.width: stars.width
+            sourceSize.height: stars.width
+            x: horizontalLayout ? -stars.width * 0.48 : -stars.width * 0.5 + parent.width * 0.5
+            y: horizontalLayout ? -stars.height * 0.5 + parent.height * 0.5 : -stars.height * 0.5 + parent.height * 0.9
+            transform: Rotation {
+                origin.x: stars.width / 2; origin.y: stars.height / 2; angle: 0;
+                    NumberAnimation on angle{
+                    loops: Animation.Infinite
+                    from: 0
+                    to: 360
+                    duration: 108000
+                }
+            }
+        }
+        
         signal start
         signal stop
 
