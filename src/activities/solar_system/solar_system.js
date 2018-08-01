@@ -40,7 +40,7 @@ function start(items_) {
 
     for(var i = 0;  i < dataset.length; ++i) {
         items.planetsModel.append({
-            "clipImg": dataset[i].clipImg,
+            "realImg": dataset[i].realImg,
             "bodyName": dataset[i].bodyName
         });
     }

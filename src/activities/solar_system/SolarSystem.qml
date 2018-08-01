@@ -144,7 +144,7 @@ ActivityBase {
             model: planetsModel
 
             delegate: PlanetInSolarModel {
-                planetImageSource: clipImg
+                planetImageSource: realImg
                 planetName: bodyName
             }
         }

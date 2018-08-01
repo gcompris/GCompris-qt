@@ -21,7 +21,6 @@
 function get() {
     return [
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/sun_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/sun_real.svg",
                     "bodyName": qsTr("Sun"),
                     "levels": [
@@ -53,7 +52,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury_real.svg",
                     "bodyName": qsTr("Mercury"),
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
@@ -92,7 +90,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_real.svg",
                     "bodyName": qsTr("Venus"),
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
@@ -136,7 +133,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/earth_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth_real.svg",
                     "bodyName": qsTr("Earth"),
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
@@ -180,7 +176,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_real.svg",
                     "bodyName": qsTr("Mars"),
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
@@ -224,7 +219,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_real.svg",
                     "bodyName": qsTr("Jupiter"),
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
@@ -263,7 +257,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.svg",
                     "bodyName": qsTr("Saturn"),
                     "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 degrees celsius."),
@@ -302,7 +295,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_real.svg",
                     "bodyName": qsTr("Uranus"),
                     "temperatureHint": qsTr("The temperature on Saturn is -178 degrees celsius."),
@@ -341,7 +333,6 @@ function get() {
                     ]
                 },
                 {
-                    "clipImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_clip.svg",
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_real.svg",
                     "bodyName": qsTr("Neptune"),
                     "temperatureHint": qsTr("The maximum temperature on Saturn is -178 degrees celsius."),
