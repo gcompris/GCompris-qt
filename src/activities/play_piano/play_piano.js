@@ -26,7 +26,7 @@
 
 var currentLevel = 0
 var currentSubLevel = 0
-var numberOfLevel = 12
+var numberOfLevel = 10
 var noteIndexAnswered
 var items
 var levels
@@ -37,7 +37,6 @@ function start(items_) {
     items = items_
     currentLevel = 0
     levels = Dataset.getData()
-    items.piano.currentOctaveNb = 0
     items.introductoryAudioTimer.start()
 }
 
@@ -46,19 +45,8 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    if([6, 11].indexOf(items.bar.level) === -1)
-        items.piano.useSharpNotation = true
-    else
-        items.piano.useSharpNotation = false
-
     currentSubLevel = 0
-    var threeNotesMelody = levels[currentLevel].slice(0, 3)
-    var fourNotesMelody = levels[currentLevel].slice(3, 5)
-    Core.shuffle(threeNotesMelody)
-    Core.shuffle(fourNotesMelody)
-    levels[currentLevel] = threeNotesMelody
-    levels[currentLevel].push(fourNotesMelody[0])
-    levels[currentLevel].push(fourNotesMelody[1])
+    Core.shuffle(levels[currentLevel])
     nextSubLevel()
 }
 
@@ -67,17 +55,6 @@ function initSubLevel() {
         var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
         noteIndexAnswered = -1
         items.multipleStaff.loadFromData(currentSubLevelMelody)
-
-        if(items.bar.level === 1 || items.bar.level === 8)
-            items.piano.currentOctaveNb = 0
-        else if(items.bar.level === 2 || items.bar.level === 9)
-            items.piano.currentOctaveNb = 1
-        else if(items.bar.level === 3)
-            items.piano.currentOctaveNb = 2
-        else if(items.bar.level === 4)
-            items.piano.currentOctaveNb = 3
-        else
-            items.piano.currentOctaveNb = items.piano.defaultOctaveNb
 
         if(!isIntroductoryAudioPlaying)
             items.multipleStaff.play()

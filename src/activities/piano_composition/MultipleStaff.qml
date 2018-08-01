@@ -389,7 +389,6 @@ Item {
                 }
                 audioLooper.stop()
                 var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch.toLowerCase() + "_pitches/" + noteName + ".wav"
-                console.log(noteToPlay)
                 audioLooper.playMusic(noteToPlay, duration)
             }
         }

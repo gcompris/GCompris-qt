@@ -149,8 +149,7 @@ ActivityBase {
         }
         onStop: { Activity.stop() }
 
-        property string clefType: (items.bar.level <= 7) ? "Treble" : "Bass"
-        readonly property bool shiftButtonsVisible: [5, 6, 7, 10, 11, 12].indexOf(items.bar.level) != -1
+        property string clefType: (items.bar.level <= 5) ? "Treble" : "Bass"
 
         Timer {
             id: introductoryAudioTimer
@@ -220,8 +219,8 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.8
-            height: horizontalLayout ? parent.height * 0.7 : parent.height * 0.58
+            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
+            height: horizontalLayout ? parent.height * 0.85 : parent.height * 0.58
             nbStaves: 1
             clef: clefType
             noteIsColored: items.mode === "coloredNotes"
@@ -239,54 +238,17 @@ ActivityBase {
 
         Piano {
             id: piano
-            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.7
+            width: horizontalLayout ? parent.width * 0.3 : parent.width * 0.7
             height: horizontalLayout ? parent.height * 0.3 : parent.width * 0.26
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
-            blackLabelsVisible: ([5, 6, 7, 10, 11, 12].indexOf(items.bar.level) != -1)
-            useSharpNotation: (bar.level != 6) && (bar.level != 11)
+            blackLabelsVisible: ([4, 5, 9, 10].indexOf(items.bar.level) != -1)
             blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying
             whiteKeysEnabled: !multipleStaff.isMusicPlaying
             onNoteClicked: Activity.checkAnswer(note)
             currentOctaveNb: 0
-        }
-
-        Image {
-            id: shiftKeyboardLeft
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.width: piano.width / 7
-            width: sourceSize.width
-            height: width
-            fillMode: Image.PreserveAspectFit
-            rotation: 180
-            visible: (piano.currentOctaveNb > 0) && shiftButtonsVisible
-            anchors {
-                verticalCenter: piano.verticalCenter
-                right: piano.left
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: piano.currentOctaveNb--
-            }
-        }
-
-        Image {
-            id: shiftKeyboardRight
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.width: piano.width / 7
-            width: sourceSize.width
-            height: width
-            fillMode: Image.PreserveAspectFit
-            visible: (piano.currentOctaveNb < piano.maxNbOctaves - 1) && shiftButtonsVisible
-            anchors {
-                verticalCenter: piano.verticalCenter
-                left: piano.right
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: piano.currentOctaveNb++
-            }
+            useSharpNotation: true
         }
 
         Rectangle {
