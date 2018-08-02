@@ -60,7 +60,6 @@ Timer {
         if(interval != timerNormalInterval) {
             interval = timerNormalInterval
         }
-        triggeredOnStart = false
     }
 
     onRunningChanged: {

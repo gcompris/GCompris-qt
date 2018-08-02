@@ -43,8 +43,10 @@ function start(items_) {
 }
 
 function stop() {
-    items.addNoteTimer.stop()
+    newNotesSequence = []
     items.multipleStaff.pauseNoteAnimation()
+    items.wrongAnswerAnimation.stop()
+    items.addNoteTimer.stop()
 }
 
 function initLevel() {
@@ -79,28 +81,20 @@ function showTutorial() {
 
 function formNewNotesSequence() {
     targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
-    for(var i = 0; i < currentLevel; i++) {
+    for(var i = 0; i < currentLevel && newNotesSequence.length < 25; i++) {
         if(levels[currentLevel]["clef"] === levels[i]["clef"]) {
-            for(var j = 0; j < levels[i]["sequence"].length; j++)
+            for(var j = 0; j < levels[i]["sequence"].length && newNotesSequence.length < 25; j++)
                 newNotesSequence.push(levels[i]["sequence"][j])
         }
     }
 
+    for(var i = 0; newNotesSequence.length && newNotesSequence.length < 25; i++)
+        newNotesSequence.push(newNotesSequence[i % newNotesSequence.length])
+
+    for(var i = 0; newNotesSequence.length < 50; i++)
+        newNotesSequence.push(targetNotes[i % targetNotes.length])
+
     Core.shuffle(newNotesSequence)
-
-    if(targetNotes.length >= newNotesSequence.length) {
-        for(var i = 0; newNotesSequence[i] != undefined; i += 2)
-            newNotesSequence.splice(i + 1, 0, targetNotes.shift())
-
-        while(targetNotes.length)
-            newNotesSequence.push(targetNotes.shift())
-    }
-    else {
-        var notesPerInterval = Math.floor(newNotesSequence.length / targetNotes.length)
-        for(var i = notesPerInterval; targetNotes.length; i += notesPerInterval) {
-            newNotesSequence.splice(i, 0, targetNotes.shift())
-        }
-    }
 }
 
 function startGame() {
@@ -108,7 +102,6 @@ function startGame() {
     noteIndexToDisplay = 0
     items.progressBar.percentage = 0
     formNewNotesSequence()
-    targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
     displayNote(newNotesSequence[0])
 }
 
@@ -122,25 +115,24 @@ function displayNote(currentNote) {
 }
 
 function wrongAnswer() {
-    if(noteIndexToDisplay >= newNotesSequence.length)
-        noteIndexToDisplay -= 2
-    else
-        noteIndexToDisplay--
-    items.progressBar.updatePercentage(targetNotes.indexOf(newNotesSequence[currentNoteIndex]) != 1, false)
-    newNotesSequence.push(newNotesSequence[currentNoteIndex])
-    newNotesSequence.splice(currentNoteIndex, 1)
+    currentNoteIndex = (currentNoteIndex + 1) % newNotesSequence.length
+    items.progressBar.percentage = Math.max(0, items.progressBar.percentage - 4)
     items.multipleStaff.musicElementModel.remove(1)
     items.multipleStaff.resumeNoteAnimation()
 }
 
 function correctAnswer() {
-    items.progressBar.updatePercentage(targetNotes.indexOf(newNotesSequence[currentNoteIndex]) != -1, true)
-    currentNoteIndex++
+    currentNoteIndex = (currentNoteIndex + 1) % newNotesSequence.length
     items.multipleStaff.pauseNoteAnimation()
     items.multipleStaff.musicElementModel.remove(1)
     items.multipleStaff.resumeNoteAnimation()
-    if(currentNoteIndex >= newNotesSequence.length)
+    items.progressBar.percentage += 2
+    if(items.progressBar.percentage === 100) {
+        items.multipleStaff.pauseNoteAnimation()
+        items.wrongAnswerAnimation.stop()
+        items.addNoteTimer.stop()
         items.bonus.good("flower")
+    }
 }
 
 function checkAnswer(noteName) {

@@ -50,44 +50,44 @@ ActivityBase {
 
         Keys.onPressed: {
             if(event.key === Qt.Key_1) {
-                if(Activity.sequence[0][0] === 'C')
-                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
+                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'C')
+                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_2) {
-                if(Activity.sequence[0][0] === 'D')
-                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
+                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'D')
+                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_3) {
-                if(Activity.sequence[0][0] === 'E')
-                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
+                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'E')
+                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_4) {
-                if(Activity.sequence[0][0] === 'F')
-                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
+                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'F')
+                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_5) {
-                if(Activity.sequence[0][0] === 'G')
-                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
+                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'G')
+                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_6) {
-                if(Activity.sequence[0][0] === 'A')
-                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
+                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'A')
+                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_7) {
-                if(Activity.sequence[0][0] === 'B')
-                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
+                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'B')
+                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
@@ -149,11 +149,10 @@ ActivityBase {
             onStopped: {
                 messageBox.visible = false
                 colorLayer.color = "black"
-                if(Activity.noteIndexToDisplay >= Activity.newNotesSequence.length) {
-                    addNoteTimer.triggeredOnStart = true
+                if(progressBar.percentage != 100 && Activity.newNotesSequence.length) {
+                    Activity.wrongAnswer()
+                    addNoteTimer.resume()
                 }
-                Activity.wrongAnswer()
-                addNoteTimer.resume()
             }
         }
 
@@ -249,9 +248,8 @@ ActivityBase {
         AdvancedTimer {
             id: addNoteTimer
             onTriggered: {
-                if(Activity.newNotesSequence[++Activity.noteIndexToDisplay] != undefined) {
-                    Activity.displayNote(Activity.newNotesSequence[Activity.noteIndexToDisplay])
-                }
+                Activity.noteIndexToDisplay = (Activity.noteIndexToDisplay + 1) % Activity.newNotesSequence.length
+                Activity.displayNote(Activity.newNotesSequence[Activity.noteIndexToDisplay])
             }
         }
 
@@ -260,10 +258,10 @@ ActivityBase {
             height: 20 * ApplicationInfo.ratio
             width: parent.width / 4
 
-            readonly property real percentage: 0
+            readonly property int percentage: 0
             readonly property string message: qsTr("%1%").arg(value)
 
-            value: Math.round(percentage * 10) / 10
+            value: percentage
             maximumValue: 100
             visible: !items.isTutorialMode
             anchors {
@@ -280,31 +278,6 @@ ActivityBase {
                 color: "black"
                 text: parent.message
                 z: 2
-            }
-
-            function updatePercentage(isTargetNote, isCorrectAnswer) {
-                var newNotesRemSequenceLength = Activity.newNotesSequence.length - Activity.currentNoteIndex
-                var nbTargetNotes = 0
-                for(var i = Activity.currentNoteIndex; i < Activity.newNotesSequence.length; i++)
-                    if(Activity.targetNotes.indexOf(Activity.newNotesSequence[i]) != -1)
-                        nbTargetNotes++;
-
-                if(isCorrectAnswer) {
-                    if(isTargetNote)
-                        percentage += (2 * (100 - value)) / (nbTargetNotes + newNotesRemSequenceLength)
-                    else
-                        percentage += (100 - value) / (nbTargetNotes + newNotesRemSequenceLength)
-                }
-                else {
-                    if(isTargetNote)
-                        percentage -= (2 * (100 - value)) / (Activity.targetNotes.length + Activity.newNotesSequence.length)
-                    else
-                        percentage -= (100 - value) / (Activity.targetNotes.length + Activity.newNotesSequence.length)
-                }
-
-                if(percentage < 0) {
-                    percentage = 0
-                }
             }
         }
 
