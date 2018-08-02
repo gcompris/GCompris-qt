@@ -36,9 +36,10 @@ var noteIndexToDisplay
 function start(items_) {
     items = items_
     currentLevel = 0
-    dataset = items.parser.parseFromUrl("qrc:/gcompris/src/activities/note_names/resource/dataset_01.json")
+    dataset = items.dataset.item
     levels = dataset.levels
     numberOfLevel = levels.length
+    items.message.intro = [dataset.objective]
 }
 
 function stop() {

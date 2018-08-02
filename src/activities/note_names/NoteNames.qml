@@ -116,13 +116,16 @@ ActivityBase {
             property alias wrongAnswerAnimation: wrongAnswerAnimation
             property alias messageBox: messageBox
             property alias addNoteTimer: addNoteTimer
-            property alias parser: parser
+            property alias dataset: dataset
             property alias progressBar: progressBar
+            property alias message: message
             property bool isTutorialMode: true
         }
 
-        JsonParser {
-            id: parser
+        Loader {
+            id: dataset
+            asynchronous: false
+            source: "qrc:/gcompris/src/activities/note_names/resource/dataset_01.qml"
         }
 
         onStart: { Activity.start(items) }
@@ -221,9 +224,26 @@ ActivityBase {
             id: iAmReady
             focus: true
             z: 10
+            visible: !message.visible
+            onVisibleChanged: {
+                messageBox.visible = false
+            }
             onClicked: {
                 Activity.initLevel()
             }
+        }
+
+        IntroMessage {
+            id: message
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: parent.left
+                leftMargin: 5
+            }
+            z: 10
         }
 
         AdvancedTimer {
