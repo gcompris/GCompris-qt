@@ -25,17 +25,20 @@
 
 var currentLevel = 0
 var numberOfLevel
-var items
 var dataset
-var correctAnswerCount = []
-var sequence
+var items
+var levels
+var targetNotes = []
+var newNotesSequence = []
+var currentNoteIndex
 var noteIndexToDisplay
 
 function start(items_) {
     items = items_
     currentLevel = 0
-    dataset = items.parser.parseFromUrl("qrc:/gcompris/src/activities/note_names/resource/dataset_01.json").levels
-    numberOfLevel = dataset.length
+    dataset = items.parser.parseFromUrl("qrc:/gcompris/src/activities/note_names/resource/dataset_01.json")
+    levels = dataset.levels
+    numberOfLevel = levels.length
 }
 
 function stop() {
@@ -44,27 +47,28 @@ function stop() {
 }
 
 function initLevel() {
-    correctAnswerCount = []
-    sequence = []
+    targetNotes = []
+    newNotesSequence = []
     items.bar.level = currentLevel + 1
-    items.background.clefType = dataset[currentLevel]["clef"]
+    items.background.clefType = levels[currentLevel]["clef"]
     items.piano.currentOctaveNb = 1
     items.piano2.currentOctaveNb = 1
     items.multipleStaff.pauseNoteAnimation()
     items.wrongAnswerAnimation.stop()
     items.addNoteTimer.stop()
     items.multipleStaff.initClefs(items.background.clefType)
-    sequence = JSON.parse(JSON.stringify(dataset[currentLevel]["sequence"]))
+    targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
     items.isTutorialMode = true
+    items.multipleStaff.coloredNotes = dataset.referenceNotes[items.background.clefType]
     showTutorial()
 }
 
 function showTutorial() {
     items.messageBox.visible = false
-    if(sequence.length) {
-        displayNote(sequence[0])
+    if(targetNotes.length) {
+        displayNote(targetNotes[0])
         items.messageBox.visible = true
-        sequence.shift()
+        targetNotes.shift()
     }
     else {
         items.isTutorialMode = false
@@ -72,65 +76,69 @@ function showTutorial() {
     }
 }
 
-function startGame() {
-    noteIndexToDisplay = 0
-    sequence = JSON.parse(JSON.stringify(dataset[currentLevel]["sequence"]))
-    for(var i = 0; i < 2; i++) {
-        for(var j = 0; j < dataset[currentLevel]["sequence"].length; j++)
-            sequence.push(dataset[currentLevel]["sequence"][j])
+function formNewNotesSequence() {
+    targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
+    for(var i = 0; i < currentLevel; i++) {
+        if(levels[currentLevel]["clef"] === levels[i]["clef"]) {
+            for(var j = 0; j < levels[i]["sequence"].length; j++)
+                newNotesSequence.push(levels[i]["sequence"][j])
+        }
     }
-    Core.shuffle(sequence)
-    displayNote(sequence[0])
+
+    Core.shuffle(newNotesSequence)
+
+    if(targetNotes.length >= newNotesSequence.length) {
+        for(var i = 0; newNotesSequence[i] != undefined; i += 2)
+            newNotesSequence.splice(i + 1, 0, targetNotes.shift())
+
+        while(targetNotes.length)
+            newNotesSequence.push(targetNotes.shift())
+    }
+    else {
+        var notesPerInterval = Math.floor(newNotesSequence.length / targetNotes.length)
+        for(var i = notesPerInterval; targetNotes.length; i += notesPerInterval) {
+            newNotesSequence.splice(i, 0, targetNotes.shift())
+        }
+    }
+}
+
+function startGame() {
+    currentNoteIndex = 0
+    noteIndexToDisplay = 0
+    items.progressBar.percentage = 0
+    formNewNotesSequence()
+    targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
+    displayNote(newNotesSequence[0])
 }
 
 function displayNote(currentNote) {
+    console.log("New:" + JSON.stringify(newNotesSequence))
     items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.background.clefType)
     if(!items.isTutorialMode) {
+        items.addNoteTimer.interval = items.addNoteTimer.timerNormalInterval
         items.addNoteTimer.start()
     }
 }
 
 function wrongAnswer() {
-    if(sequence.length) {
-        if(correctAnswerCount[sequence[0]]) {
-            for(var i = 0; i < correctAnswerCount[sequence[0]]; i++)
-                sequence.push(sequence[0])
-        }
-
-        correctAnswerCount[sequence[0]] = 0
+    if(noteIndexToDisplay >= newNotesSequence.length)
+        noteIndexToDisplay -= 2
+    else
         noteIndexToDisplay--
-
-        if(sequence[sequence.length - 1] != sequence[0])
-            sequence.push(sequence.shift())
-        else {
-            sequence.push(sequence[1])
-            sequence.push(sequence.shift())
-            sequence.shift()
-        }
-        items.multipleStaff.musicElementModel.remove(1)
-        console.log("Wrong answer...New sequence:")
-        for(var i = 0; i < sequence.length; i++) {
-            console.log(sequence[i])
-        }
-        items.multipleStaff.resumeNoteAnimation()
-    }
+    items.progressBar.updatePercentage(targetNotes.indexOf(newNotesSequence[currentNoteIndex]) != 1, false)
+    newNotesSequence.push(newNotesSequence[currentNoteIndex])
+    newNotesSequence.splice(currentNoteIndex, 1)
+    items.multipleStaff.musicElementModel.remove(1)
+    items.multipleStaff.resumeNoteAnimation()
 }
 
 function correctAnswer() {
-    if(correctAnswerCount[sequence[0]] == undefined)
-            correctAnswerCount[sequence[0]] = 0
-
-    correctAnswerCount[sequence[0]]++
-    noteIndexToDisplay--
+    items.progressBar.updatePercentage(targetNotes.indexOf(newNotesSequence[currentNoteIndex]) != -1, true)
+    currentNoteIndex++
     items.multipleStaff.pauseNoteAnimation()
     items.multipleStaff.musicElementModel.remove(1)
     items.multipleStaff.resumeNoteAnimation()
-    sequence.shift()
-    console.log("Correct answer...New sequence:")
-    for(var i = 0; i < sequence.length; i++) {
-        console.log(sequence[i])
-    }
-    if(sequence.length === 0)
+    if(currentNoteIndex >= newNotesSequence.length)
         items.bonus.good("flower")
 }
 

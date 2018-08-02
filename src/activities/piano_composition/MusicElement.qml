@@ -196,7 +196,12 @@ Item {
                 return invalidConditionNumber
         }
 
-        color: (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
+        color: {
+            if(multipleStaff.notesColor === "inbuilt")
+                return (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
+            else
+                return multipleStaff.notesColor
+        }
         visible: noteIsColored && (elementType != "clef")
     }
 

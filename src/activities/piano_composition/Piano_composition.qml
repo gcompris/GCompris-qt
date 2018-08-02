@@ -248,7 +248,7 @@ ActivityBase {
             height: horizontalLayout ? parent.height * 0.58 : parent.height * 0.3
             nbStaves: 2
             clef: clefType
-            noteIsColored: true
+            coloredNotes: ['C','D', 'E', 'F', 'G', 'A', 'B']
             isMetronomeDisplayed: true
             anchors.right: horizontalLayout ? parent.right: undefined
             anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter

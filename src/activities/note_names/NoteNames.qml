@@ -51,43 +51,43 @@ ActivityBase {
         Keys.onPressed: {
             if(event.key === Qt.Key_1) {
                 if(Activity.sequence[0][0] === 'C')
-                    Activity.checkAnswer(Activity.sequence[0])
+                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_2) {
                 if(Activity.sequence[0][0] === 'D')
-                    Activity.checkAnswer(Activity.sequence[0])
+                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_3) {
                 if(Activity.sequence[0][0] === 'E')
-                    Activity.checkAnswer(Activity.sequence[0])
+                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_4) {
                 if(Activity.sequence[0][0] === 'F')
-                    Activity.checkAnswer(Activity.sequence[0])
+                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_5) {
                 if(Activity.sequence[0][0] === 'G')
-                    Activity.checkAnswer(Activity.sequence[0])
+                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_6) {
                 if(Activity.sequence[0][0] === 'A')
-                    Activity.checkAnswer(Activity.sequence[0])
+                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
             else if(event.key === Qt.Key_7) {
                 if(Activity.sequence[0][0] === 'B')
-                    Activity.checkAnswer(Activity.sequence[0])
+                    Activity.checkAnswer(Activity.sequence[currentNoteIndex])
                 else
                    Activity.checkAnswer("Z")
             }
@@ -117,6 +117,7 @@ ActivityBase {
             property alias messageBox: messageBox
             property alias addNoteTimer: addNoteTimer
             property alias parser: parser
+            property alias progressBar: progressBar
             property bool isTutorialMode: true
         }
 
@@ -145,16 +146,11 @@ ActivityBase {
             onStopped: {
                 messageBox.visible = false
                 colorLayer.color = "black"
-                if(Activity.sequence[Activity.noteIndexToDisplay] == undefined) {
+                if(Activity.noteIndexToDisplay >= Activity.newNotesSequence.length) {
                     addNoteTimer.triggeredOnStart = true
-                    Activity.noteIndexToDisplay--
-                    Activity.wrongAnswer()
-                    addNoteTimer.start()
                 }
-                else {
-                    Activity.wrongAnswer()
-                    addNoteTimer.resume()
-                }
+                Activity.wrongAnswer()
+                addNoteTimer.resume()
             }
         }
 
@@ -168,9 +164,9 @@ ActivityBase {
             radius: 10
             z: 11
             visible: false
-            onVisibleChanged: text = Activity.sequence[0] == undefined ? ""
-                                                                       : items.isTutorialMode ? qsTr("New note: %1").arg(Activity.sequence[0])
-                                                                       : Activity.sequence[0]
+            onVisibleChanged: text = Activity.targetNotes[0] == undefined ? ""
+                                                                       : items.isTutorialMode ? qsTr("New note: %1").arg(Activity.targetNotes[0])
+                                                                       : Activity.newNotesSequence[Activity.currentNoteIndex]
             Behavior on visible {
                 SequentialAnimation {
                     loops: Animation.Infinite
@@ -233,24 +229,78 @@ ActivityBase {
         AdvancedTimer {
             id: addNoteTimer
             onTriggered: {
-                if(Activity.sequence[++Activity.noteIndexToDisplay] != undefined) {
-                    Activity.displayNote(Activity.sequence[Activity.noteIndexToDisplay])
+                if(Activity.newNotesSequence[++Activity.noteIndexToDisplay] != undefined) {
+                    Activity.displayNote(Activity.newNotesSequence[Activity.noteIndexToDisplay])
+                }
+            }
+        }
+
+        ProgressBar {
+            id: progressBar
+            height: 20 * ApplicationInfo.ratio
+            width: parent.width / 4
+
+            readonly property real percentage: 0
+            readonly property string message: qsTr("%1%").arg(value)
+
+            value: Math.round(percentage * 10) / 10
+            maximumValue: 100
+            visible: !items.isTutorialMode
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 10
+            }
+
+            GCText {
+                anchors.centerIn: parent
+                fontSize: mediumSize
+                font.bold: true
+                color: "black"
+                text: parent.message
+                z: 2
+            }
+
+            function updatePercentage(isTargetNote, isCorrectAnswer) {
+                var newNotesRemSequenceLength = Activity.newNotesSequence.length - Activity.currentNoteIndex
+                var nbTargetNotes = 0
+                for(var i = Activity.currentNoteIndex; i < Activity.newNotesSequence.length; i++)
+                    if(Activity.targetNotes.indexOf(Activity.newNotesSequence[i]) != -1)
+                        nbTargetNotes++;
+
+                if(isCorrectAnswer) {
+                    if(isTargetNote)
+                        percentage += (2 * (100 - value)) / (nbTargetNotes + newNotesRemSequenceLength)
+                    else
+                        percentage += (100 - value) / (nbTargetNotes + newNotesRemSequenceLength)
+                }
+                else {
+                    if(isTargetNote)
+                        percentage -= (2 * (100 - value)) / (Activity.targetNotes.length + Activity.newNotesSequence.length)
+                    else
+                        percentage -= (100 - value) / (Activity.targetNotes.length + Activity.newNotesSequence.length)
+                }
+
+                if(percentage < 0) {
+                    percentage = 0
                 }
             }
         }
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.76
-            height: horizontalLayout ? parent.height * 0.9 : parent.height * 0.59
+            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.76
+            height: horizontalLayout ? parent.height * 0.8 : parent.height * 0.59
             nbStaves: 1
             clef: clefType
-            noteIsColored: false
+            coloredNotes: []
+            notesColor: "red"
             isMetronomeDisplayed: false
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: horizontalLayout ? 0 : parent.height * 0.02
+            anchors.topMargin: progressBar.height + 20
             flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2.7
             noteHoverEnabled: false
             noteAnimationEnabled: true
@@ -263,7 +313,7 @@ ActivityBase {
         Item {
             id: doubleOctave
             width: horizontalLayout ? 2 * parent.width * 0.3 : parent.width * 0.72
-            height: horizontalLayout ? parent.height * 0.3 : 2 * parent.width * 0.232
+            height: horizontalLayout ? parent.height * 0.26 : 2 * parent.width * 0.21
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 30

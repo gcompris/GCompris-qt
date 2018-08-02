@@ -30,7 +30,7 @@ Timer {
 
     property double startTime
     property double pauseTime
-    property int timerNormalInterval: 2000
+    property int timerNormalInterval: 2700
     property int remainingInterval
 
     interval: timerNormalInterval
@@ -39,6 +39,7 @@ Timer {
     signal resume
 
     onPause: {
+        console.log(interval)
         if(timer.running) {
             pauseTime = new Date().getTime()
             timer.stop()
@@ -47,8 +48,10 @@ Timer {
 
     onResume: {
         if(!timer.running) {
-            remainingInterval = Math.abs(timer.interval - Math.abs(pauseTime - startTime))
-            timer.interval = remainingInterval
+            if(!triggeredOnStart) {
+                remainingInterval = Math.abs(timer.interval - Math.abs(pauseTime - startTime))
+                timer.interval = remainingInterval
+            }
             timer.start()
         }
     }

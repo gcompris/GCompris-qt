@@ -73,5 +73,9 @@
             "sequence": ["F1", "G1", "A1"]
         }
     ],
-    "objective": "This dataset teaches notes from F1 to D6."
+    "objective": "You will learn notes from F1 to D6 in this lesson.",
+    "referenceNotes": {
+        "Treble": ["C", "G"],
+        "Bass": ["F", "C"]
+    }
 }

@@ -34,7 +34,8 @@ Item {
 
     // Stores the note index which is selected.
     property int selectedIndex: -1
-    property bool noteIsColored
+    property var coloredNotes: []
+    property string notesColor: "inbuilt"
     property bool noteHoverEnabled: true
     property bool centerNotesPosition: false
     property bool isMetronomeDisplayed: false
@@ -104,7 +105,7 @@ Item {
                 noteName: noteName_
                 noteType: noteType_
                 highlightWhenPlayed: highlightWhenPlayed_
-                noteIsColored: multipleStaff.noteIsColored
+                noteIsColored: multipleStaff.coloredNotes.indexOf(noteName[0]) != -1
                 soundPitch: soundPitch_
                 clefType: clefType_
                 elementType: elementType_
@@ -170,7 +171,7 @@ Item {
                     id: noteAnimation
                     target: musicElement
                     properties: "x"
-                    duration: 7000
+                    duration: 9000
                     from: multipleStaff.width - 10
                     to: musicElement.clefImageWidth
                     onStopped: {
