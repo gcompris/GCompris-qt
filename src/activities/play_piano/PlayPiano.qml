@@ -244,9 +244,12 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
             blackLabelsVisible: ([4, 5, 9, 10].indexOf(items.bar.level) != -1)
-            blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying
-            whiteKeysEnabled: !multipleStaff.isMusicPlaying
-            onNoteClicked: Activity.checkAnswer(note)
+            blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
+            whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
+            onNoteClicked: {
+                multipleStaff.playNoteAudio(note, "Quarter", clefType, 1000)
+                Activity.checkAnswer(note)
+            }
             currentOctaveNb: 0
             useSharpNotation: true
         }

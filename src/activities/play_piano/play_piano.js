@@ -41,6 +41,7 @@ function start(items_) {
 }
 
 function stop() {
+    items.multipleStaff.stopAudios()
 }
 
 function initLevel() {
