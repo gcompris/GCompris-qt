@@ -115,9 +115,12 @@ function displayNote(currentNote) {
 }
 
 function wrongAnswer() {
-    currentNoteIndex = (currentNoteIndex + 1) % newNotesSequence.length
+    if(items.multipleStaff.musicElementRepeater.itemAt(1).x === (3 * items.multipleStaff.height / 25)) {
+        items.multipleStaff.musicElementModel.remove(1)
+        currentNoteIndex = (currentNoteIndex + 1) % newNotesSequence.length
+    }
+
     items.progressBar.percentage = Math.max(0, items.progressBar.percentage - 4)
-    items.multipleStaff.musicElementModel.remove(1)
     items.multipleStaff.resumeNoteAnimation()
 }
 

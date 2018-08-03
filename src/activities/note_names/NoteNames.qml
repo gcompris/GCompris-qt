@@ -49,56 +49,56 @@ ActivityBase {
         }
 
         Keys.onPressed: {
-            if(event.key === Qt.Key_1) {
-                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'C')
-                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                else
-                   Activity.checkAnswer("Z")
+            if(!message.visible && !iAmReady.visible && !messageBox.visible && multipleStaff.musicElementModel.count - 1) {
+                if(event.key === Qt.Key_1) {
+                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'C')
+                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
+                    else
+                       Activity.checkAnswer("Z")
+                }
+                else if(event.key === Qt.Key_2) {
+                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'D')
+                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
+                    else
+                       Activity.checkAnswer("Z")
+                }
+                else if(event.key === Qt.Key_3) {
+                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'E')
+                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
+                    else
+                       Activity.checkAnswer("Z")
+                }
+                else if(event.key === Qt.Key_4) {
+                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'F')
+                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
+                    else
+                       Activity.checkAnswer("Z")
+                }
+                else if(event.key === Qt.Key_5) {
+                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'G')
+                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
+                    else
+                       Activity.checkAnswer("Z")
+                }
+                else if(event.key === Qt.Key_6) {
+                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'A')
+                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
+                    else
+                       Activity.checkAnswer("Z")
+                }
+                else if(event.key === Qt.Key_7) {
+                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'B')
+                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
+                    else
+                       Activity.checkAnswer("Z")
+                }
+                else if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
+                    piano.currentOctaveNb--
+                }
+                else if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
+                    piano.currentOctaveNb++
+                }
             }
-            else if(event.key === Qt.Key_2) {
-                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'D')
-                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                else
-                   Activity.checkAnswer("Z")
-            }
-            else if(event.key === Qt.Key_3) {
-                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'E')
-                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                else
-                   Activity.checkAnswer("Z")
-            }
-            else if(event.key === Qt.Key_4) {
-                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'F')
-                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                else
-                   Activity.checkAnswer("Z")
-            }
-            else if(event.key === Qt.Key_5) {
-                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'G')
-                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                else
-                   Activity.checkAnswer("Z")
-            }
-            else if(event.key === Qt.Key_6) {
-                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'A')
-                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                else
-                   Activity.checkAnswer("Z")
-            }
-            else if(event.key === Qt.Key_7) {
-                if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'B')
-                    Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                else
-                   Activity.checkAnswer("Z")
-            }
-            else if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
-                piano.currentOctaveNb--
-            }
-            else if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
-                piano.currentOctaveNb++
-            }
-            else
-                Activity.checkAnswer("Z")
         }
 
         // Add here the QML items you need to access in javascript
@@ -316,7 +316,7 @@ ActivityBase {
                 height: horizontalLayout ? parent.height : parent.height / 2
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
-                whiteKeysEnabled: !messageBox.visible
+                whiteKeysEnabled: !messageBox.visible && multipleStaff.musicElementModel.count && multipleStaff.musicElementModel.count - 1
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: 1
                 anchors.bottom: parent.bottom
@@ -340,7 +340,7 @@ ActivityBase {
                 anchors.left: horizontalLayout ? piano.right : parent.left
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
-                whiteKeysEnabled: !messageBox.visible
+                whiteKeysEnabled: piano.whiteKeysEnabled
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: piano.currentOctaveNb
                 leftOctaveVisible: horizontalLayout
