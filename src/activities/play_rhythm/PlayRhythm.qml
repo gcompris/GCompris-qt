@@ -83,6 +83,35 @@ ActivityBase {
         property string clefType: "Treble"
         property bool isRhythmPlaying: false
 
+        Keys.onSpacePressed: tempo.tempoPressed()
+
+        Rectangle {
+            id: instructionBox
+            radius: 10
+            width: background.width * 0.7
+            height: background.height / 9
+            anchors.horizontalCenter: parent.horizontalCenter
+            opacity: 0.8
+            border.width: 6
+            color: "white"
+            border.color: "#87A6DD"
+
+            GCText {
+                id: instructionText
+                color: "black"
+                z: 3
+                anchors.fill: parent
+                anchors.rightMargin: parent.width * 0.02
+                anchors.leftMargin: parent.width * 0.02
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+                text: bar.level % 2 == 0 ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
+                                         : qsTr("Follow the vertical line and click on the tempo or press space key and play the rhythm correctly.")
+            }
+        }
+
         Timer {
             id: introductoryAudioTimer
             interval: 3500
@@ -125,7 +154,7 @@ ActivityBase {
             anchors.top: background.top
             anchors.bottom: undefined
             numberOfSubLevels: 3
-            width: parent.width / 10
+            width: horizontalLayout ? parent.width / 10 : (parent.width - instructionBox.x - instructionBox.width - 1.5 * anchors.rightMargin)
         }
 
         MultipleStaff {
@@ -194,16 +223,18 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 enabled: !background.isRhythmPlaying && !bonus.isPlaying
-                onPressed: {
-                    tempo.scale = 0.85
-                    if(!multipleStaff.isMusicPlaying) {
-                        Activity.currentNote = 0
-                        multipleStaff.play()
-                    }
-                    items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
-                    Activity.checkAnswer(multipleStaff.pulseMarkerX)
-                }
+                onPressed: tempo.tempoPressed()
                 onReleased: tempo.scale = 1
+            }
+
+            function tempoPressed() {
+                tempo.scale = 0.85
+                if(!multipleStaff.isMusicPlaying) {
+                    Activity.currentNote = 0
+                    multipleStaff.play()
+                }
+                items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                Activity.checkAnswer(multipleStaff.pulseMarkerX)
             }
         }
 
@@ -217,7 +248,7 @@ ActivityBase {
             height: sourceSize.height
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
-            visible: bar.level % 2 == 0
+            visible: (bar.level % 2 == 0) && (bar.level != 0)
             MouseArea {
                 anchors.fill: parent
                 onClicked: {

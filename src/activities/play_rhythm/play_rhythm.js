@@ -73,8 +73,12 @@ function checkAnswer(pulseMarkerX) {
             isWrongRhythm = true
         }
     }
-    if((currentNote >= items.multipleStaff.musicElementModel.count - 1) && !isWrongRhythm)
-        items.bonus.good("flower")
+    if((currentNote >= items.multipleStaff.musicElementModel.count - 1)) {
+        if(!isWrongRhythm)
+            items.bonus.good("flower")
+        else
+            items.bonus.bad("flower")
+    }
 }
 
 function initSubLevel() {
