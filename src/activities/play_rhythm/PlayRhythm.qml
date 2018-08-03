@@ -74,6 +74,7 @@ ActivityBase {
             property alias multipleStaff: multipleStaff
             property alias iAmReady: iAmReady
             property alias introductoryAudioTimer: introductoryAudioTimer
+            property alias metronomeOscillation: metronomeOscillation
         }
 
         onStart: { Activity.start(items) }
@@ -123,7 +124,7 @@ ActivityBase {
             id: score
             anchors.top: background.top
             anchors.bottom: undefined
-            numberOfSubLevels: 5
+            numberOfSubLevels: 3
             width: parent.width / 10
         }
 
@@ -140,6 +141,8 @@ ActivityBase {
             anchors.topMargin: horizontalLayout ? parent.height * 0.1 : parent.height * 0.15
             noteHoverEnabled: false
             centerNotesPosition: true
+            firstCenteredNotePosition: width / (2 * (musicElementModel.count - 1))
+            spaceBetweenCenteredNotes: width / (2 * (musicElementModel.count - 1))
             enableNotesSound: false
             onPulseMarkerAnimationFinished: background.isRhythmPlaying = false
             onPlayDrumSound: {
@@ -190,7 +193,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             MouseArea {
                 anchors.fill: parent
-                enabled: !background.isRhythmPlaying
+                enabled: !background.isRhythmPlaying && !bonus.isPlaying
                 onPressed: {
                     tempo.scale = 0.85
                     if(!multipleStaff.isMusicPlaying) {
@@ -201,6 +204,78 @@ ActivityBase {
                     Activity.checkAnswer(multipleStaff.pulseMarkerX)
                 }
                 onReleased: tempo.scale = 1
+            }
+        }
+
+        Image {
+            id: metronome
+            source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_stand.svg"
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: parent.width / 3
+            sourceSize.height: parent.height / 4
+            width: sourceSize.width
+            height: sourceSize.height
+            anchors.bottom: bar.top
+            anchors.bottomMargin: 20
+            visible: bar.level % 2 == 0
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if(metronomeOscillation.running)
+                        metronomeOscillation.stop()
+                    else
+                        metronomeOscillation.start()
+                }
+            }
+
+            Image {
+                id: metronomeNeedle
+                source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_needle.svg"
+                fillMode: Image.PreserveAspectFit
+                width: parent.height
+                height: parent.height
+                anchors.centerIn: parent
+                transformOrigin: Item.Bottom
+                SequentialAnimation {
+                    id: metronomeOscillation
+                    loops: Animation.Infinite
+                    onStopped: metronomeNeedle.rotation = 0
+                    RotationAnimator {
+                        target: metronomeNeedle
+                        from: 0
+                        to: 12
+                        direction: RotationAnimator.Shortest
+                        duration: 500
+                    }
+                    ScriptAction {
+                        script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                    }
+                    RotationAnimator {
+                        target: metronomeNeedle
+                        from: 12
+                        to: 0
+                        direction: RotationAnimator.Shortest
+                        duration: 500
+                    }
+                    RotationAnimator {
+                        target: metronomeNeedle
+                        from: 0
+                        to: 348
+                        direction: RotationAnimator.Shortest
+                        duration: 500
+                        onStopped: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                    }
+                    ScriptAction {
+                        script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                    }
+                    RotationAnimator {
+                        target: metronomeNeedle
+                        from: 348
+                        to: 0
+                        direction: RotationAnimator.Shortest
+                        duration: 500
+                    }
+                }
             }
         }
 

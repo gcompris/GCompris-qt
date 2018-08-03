@@ -24,7 +24,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
-var numberOfLevel = 1
+var numberOfLevel
 var currentSubLevel = 0
 var currentNote = 0
 var isWrongRhythm = false
@@ -36,24 +36,26 @@ function start(items_) {
     items = items_
     currentLevel = 0
     levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_rhythm/resource/dataset.json").levels
+    numberOfLevel = levels.length
     items.introductoryAudioTimer.start()
 }
 
 function stop() {
+    items.metronomeOscillation.stop()
     items.multipleStaff.stopAudios()
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1
     currentSubLevel = 0
-    Core.shuffle(levels)
+    Core.shuffle(levels[currentLevel])
     nextSubLevel()
 }
 
 function nextSubLevel() {
     currentSubLevel++
     items.score.currentSubLevel = currentSubLevel
-    if(currentSubLevel > levels[currentLevel].length)
+    if(currentSubLevel >= levels[currentLevel].length)
         nextLevel()
     else
         initSubLevel()
@@ -71,15 +73,16 @@ function checkAnswer(pulseMarkerX) {
             isWrongRhythm = true
         }
     }
-    else if(!isWrongRhythm)
+    if((currentNote >= items.multipleStaff.musicElementModel.count - 1) && !isWrongRhythm)
         items.bonus.good("flower")
 }
 
 function initSubLevel() {
     if(!items.iAmReady.visible) {
+        items.metronomeOscillation.stop()
         items.multipleStaff.stopAudios()
         currentNote = 0
-        var currentSubLevelMelody = levels[currentLevel]
+        var currentSubLevelMelody = levels[currentLevel][currentSubLevel]
         items.multipleStaff.loadFromData(currentSubLevelMelody)
         items.background.isRhythmPlaying = true
         isWrongRhythm = false

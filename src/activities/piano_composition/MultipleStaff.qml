@@ -51,6 +51,8 @@ Item {
     property bool isFlickable: true
     property bool enableNotesSound: true
     property int currentEnteringStaff: 0
+    property real firstCenteredNotePosition: multipleStaff.width / 3.3
+    property real spaceBetweenCenteredNotes: 0
 
     /**
      * Emitted when a note is clicked.
@@ -152,12 +154,12 @@ Item {
                         return 0
                     else if(musicElementRepeater.itemAt(index - 1).elementType === "clef") {
                         if(centerNotesPosition)
-                            return sharpShiftDistance + defaultXPosition + multipleStaff.height / 3.3
+                            return sharpShiftDistance + defaultXPosition + multipleStaff.firstCenteredNotePosition
                         else
                             return sharpShiftDistance + defaultXPosition + 10
                     }
                     else
-                        return sharpShiftDistance + defaultXPosition
+                        return sharpShiftDistance + defaultXPosition + multipleStaff.spaceBetweenCenteredNotes
                 }
 
                 onYChanged: {
