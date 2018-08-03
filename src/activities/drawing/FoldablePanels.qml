@@ -256,11 +256,11 @@ Item {
         Image {
             id: undo
             source: "qrc:/gcompris/src/activities/drawing/resource/undo.svg"
-            height: background.width > background.height ? parent.height * 0.75 : parent.height * 0.60
-            width: height
+            height: activeConfiguration.height * 0.60//background.width > background.height ? parent.height * 0.75 : parent.height * 0.60
+            width: activeConfiguration.width / 5
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
-            anchors.leftMargin: parent.width * 0.10
+            anchors.leftMargin: parent.width * 0.08
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true
@@ -276,12 +276,12 @@ Item {
         Rectangle {
             id: activeColor
             height: undo.height - 4
-            width: height
+            width: activeConfiguration.width / 5
             color: items.paintColor
             radius: 10
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: undo.right
-            anchors.leftMargin: 10
+            anchors.leftMargin: 5
             border.width: 2
             border.color: "white"
         }
@@ -290,10 +290,9 @@ Item {
             id: activeTool
             source: activeToolIconSource
             height: undo.height
-            width: height
+            width: activeConfiguration.width / 5
             fillMode: Image.PreserveAspectFit
             anchors.left: activeColor.right
-            anchors.leftMargin: 10
             anchors.verticalCenter: parent.verticalCenter
         }
 
@@ -301,10 +300,9 @@ Item {
             id: redo
             source: "qrc:/gcompris/src/activities/drawing/resource/redo.svg"
             height: undo.height
-            width: height
+            width: activeConfiguration.width / 5
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: activeTool.right
-            anchors.leftMargin: 10
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true

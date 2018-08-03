@@ -24,9 +24,9 @@ ActivityInfo {
   icon: "drawing/drawing.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
-  title: "Drawing"
+  title: qsTr("Drawing")
   description: qsTr("Use the various drawing tools to create beautiful arts.")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Use various graphical tools to draw beautiful arts."
   goal: qsTr("Learn about basic drawing tools.")
   prerequisite: ""
   manual: qsTr("Select tools from the foldable panels to draw beautiful arts.<br><br>") +
