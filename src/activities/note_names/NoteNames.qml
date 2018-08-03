@@ -289,7 +289,7 @@ ActivityBase {
             clef: clefType
             coloredNotes: []
             notesColor: "red"
-            isMetronomeDisplayed: false
+            isPulseMarkerDisplayed: false
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
@@ -316,7 +316,7 @@ ActivityBase {
                 height: horizontalLayout ? parent.height : parent.height / 2
                 blackLabelsVisible: false
                 blackKeysEnabled: blackLabelsVisible
-                whiteKeysEnabled: !messageBox.visible && multipleStaff.musicElementModel.count && multipleStaff.musicElementModel.count - 1
+                whiteKeysEnabled: !messageBox.visible && multipleStaff.musicElementModel.count > 1
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: 1
                 anchors.bottom: parent.bottom

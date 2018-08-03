@@ -249,7 +249,7 @@ ActivityBase {
             nbStaves: 2
             clef: clefType
             coloredNotes: ['C','D', 'E', 'F', 'G', 'A', 'B']
-            isMetronomeDisplayed: true
+            isPulseMarkerDisplayed: false
             anchors.right: horizontalLayout ? parent.right: undefined
             anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
             anchors.top: instructionBox.bottom

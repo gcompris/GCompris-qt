@@ -106,7 +106,6 @@ function startGame() {
 }
 
 function displayNote(currentNote) {
-    console.log("New:" + JSON.stringify(newNotesSequence))
     items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.background.clefType)
     if(!items.isTutorialMode) {
         items.addNoteTimer.interval = items.addNoteTimer.timerNormalInterval
@@ -122,6 +121,8 @@ function wrongAnswer() {
 
     items.progressBar.percentage = Math.max(0, items.progressBar.percentage - 4)
     items.multipleStaff.resumeNoteAnimation()
+    if(items.multipleStaff.musicElementModel.count <= 1)
+        items.addNoteTimer.restart()
 }
 
 function correctAnswer() {
@@ -136,6 +137,8 @@ function correctAnswer() {
         items.addNoteTimer.stop()
         items.bonus.good("flower")
     }
+    else if(items.multipleStaff.musicElementModel.count <= 1)
+        items.addNoteTimer.restart()
 }
 
 function checkAnswer(noteName) {

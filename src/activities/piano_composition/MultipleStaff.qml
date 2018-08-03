@@ -38,7 +38,7 @@ Item {
     property string notesColor: "inbuilt"
     property bool noteHoverEnabled: true
     property bool centerNotesPosition: false
-    property bool isMetronomeDisplayed: false
+    property bool isPulseMarkerDisplayed: false
     property bool noteAnimationEnabled: false
     readonly property bool isMusicPlaying: musicTimer.running
 
@@ -46,7 +46,10 @@ Item {
     property alias musicElementModel: musicElementModel
     property alias musicElementRepeater: musicElementRepeater
     property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 3.5
+    readonly property real pulseMarkerX: pulseMarker.x
+    readonly property bool isPulseMarkerRunning: false
     property bool isFlickable: true
+    property bool enableNotesSound: true
     property int currentEnteringStaff: 0
 
     /**
@@ -62,6 +65,16 @@ Item {
      * It's used in note_names activity.
      */
     signal noteAnimationFinished
+
+    /**
+     * Emitted when the pulseMarker's animation is finished.
+     */
+    signal pulseMarkerAnimationFinished
+
+    /**
+     * Used in play_rhythm activity. It tells the instants when pulseMarker reaches a note and the drum sound is to be played.
+     */
+    signal playDrumSound
 
     ListModel {
         id: musicElementModel
@@ -92,7 +105,6 @@ Item {
                     height: multipleStaff.height / 5
                     width: multipleStaff.width - 5
                     lastPartition: index == (nbStaves - 1)
-                    isMetronomeDisplayed: multipleStaff.isMetronomeDisplayed
                 }
             }
         }
@@ -113,7 +125,8 @@ Item {
 
                 property int staffNb: staffNb_
                 property alias noteAnimation: noteAnimation
-                readonly property real shiftDistance: blackType != "" ? width / 6 : 0
+                // The shift which the elements experience when a sharp/flat note is added before them.
+                readonly property real sharpShiftDistance: blackType != "" ? width / 6 : 0
 
                 noteDetails: multipleStaff.getNoteDetails(noteName, noteType, clefType)
 
@@ -132,19 +145,22 @@ Item {
                                                                                                 : 0
 
                 x: {
+                    if(multipleStaff.noteAnimationEnabled)
+                        return NaN
+                    // !musicElementRepeater.itemAt(index - 1) acts as a fallback condition when there is no previous element present. It happens when Qt clears the model internally.
                     if(isDefaultClef || !musicElementRepeater.itemAt(index - 1))
                         return 0
                     else if(musicElementRepeater.itemAt(index - 1).elementType === "clef") {
                         if(centerNotesPosition)
-                            return shiftDistance + defaultXPosition + multipleStaff.width / 3.5
+                            return sharpShiftDistance + defaultXPosition + multipleStaff.height / 3.3
                         else
-                            return shiftDistance + defaultXPosition + 10
+                            return sharpShiftDistance + defaultXPosition + 10
                     }
                     else
-                        return shiftDistance + defaultXPosition
+                        return sharpShiftDistance + defaultXPosition
                 }
 
-                onXChanged: {
+                onYChanged: {
                     if(noteAnimationEnabled && elementType === "note")
                         noteAnimation.start()
                 }
@@ -188,6 +204,33 @@ Item {
             visible: (currentEnteringStaff === 0) && (nbStaves === 2)
             source: background.clefType ? "qrc:/gcompris/src/activities/piano_composition/resource/" + background.clefType.toLowerCase() + "Clef.svg"
                                         : ""
+        }
+    }
+
+    Rectangle {
+        id: pulseMarker
+        width: activity.horizontalLayout ? 5 : 3
+        border.width: width / 2
+        height: staves.itemAt(0) == undefined ? 0 : 4 * staves.itemAt(0).verticalDistanceBetweenLines + width
+        opacity: isPulseMarkerDisplayed && pulseMarkerAnimation.running
+        color: "red"
+        y: flickableTopMargin
+
+        property real nextPosition: 0
+
+        NumberAnimation {
+            id: pulseMarkerAnimation
+            target: pulseMarker
+            property: "x"
+            to: pulseMarker.nextPosition
+            onStarted: isPulseMarkerRunning = true
+            onStopped: {
+                isPulseMarkerRunning = false
+                if(pulseMarker.x === multipleStaff.width)
+                    pulseMarkerAnimationFinished()
+                else
+                    playDrumSound()
+            }
         }
     }
 
@@ -486,15 +529,14 @@ Item {
     function play() {
         musicTimer.currentNote = 0
         selectedIndex = -1
-        musicTimer.interval = 500
+        musicTimer.interval = 1
         if(isFlickable)
             flickableStaves.flick(0, nbStaves * multipleStaff.height)
-        /*
-        for(var v = 1 ; v < currentStaff ; ++ v)
-            staves.itemAt(v).showMetronome = false
-        // Only display metronome if we want to
-        staves.itemAt(0).showMetronome = isMetronomeDisplayed
-        **/
+
+        if(musicElementModel.count > 1)
+            pulseMarker.x = musicElementRepeater.itemAt(1).x + musicElementRepeater.itemAt(1).width / 2
+        else
+            pulseMarker.x = 0
 
         musicTimer.start()
     }
@@ -510,7 +552,9 @@ Item {
 
     Timer {
         id: musicTimer
+
         property int currentNote: 0
+
         onRunningChanged: {
             if(!running && musicElementModel.get(currentNote) !== undefined) {
                 var currentType = musicElementModel.get(currentNote).noteType_
@@ -524,17 +568,20 @@ Item {
                 }
 
                 musicTimer.interval = musicElementRepeater.itemAt(currentNote).duration
-                playNoteAudio(note, currentType, soundPitch, musicTimer.interval)
-                musicElementRepeater.itemAt(currentNote).highlightNote()
-                currentNote ++
-                /*
-                if(currentNote > nbMaxNotesPerStaff) {
-                    if(currentPlayedStaff < nbStaves && currentNote < musicElementModel.count) {
-                        staves.itemAt(currentPlayedStaff).showMetronome = isMetronomeDisplayed
-                        staves.itemAt(currentPlayedStaff).playNote(currentNote)
-                    }
-                }
-                **/
+                if(multipleStaff.enableNotesSound)
+                    playNoteAudio(note, currentType, soundPitch, musicTimer.interval)
+                pulseMarkerAnimation.stop()
+                pulseMarkerAnimation.duration = Math.max(1, musicTimer.interval)
+                if(musicElementRepeater.itemAt(currentNote + 1) != undefined)
+                    pulseMarker.nextPosition = musicElementRepeater.itemAt(currentNote + 1).x + musicElementRepeater.itemAt(currentNote + 1).width / 2
+                else
+                    pulseMarker.nextPosition = multipleStaff.width
+
+                pulseMarkerAnimation.start()
+
+                if(!isPulseMarkerDisplayed)
+                    musicElementRepeater.itemAt(currentNote).highlightNote()
+                currentNote++
                 musicTimer.start()
             }
         }

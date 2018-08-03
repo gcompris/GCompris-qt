@@ -38,9 +38,6 @@ Item {
 
     property bool lastPartition: false
 
-    property bool isMetronomeDisplayed: false
-    property bool showMetronome: false
-
     readonly property int yShift: activity.horizontalLayout ? 0 : 1.5
 
     Repeater {
@@ -72,40 +69,5 @@ Item {
         color: "black"
         x: staff.width - 10
         y: yShift
-    }
-
-    Rectangle {
-        id: metronome
-        width: 5
-        border.width: 10
-        height: (nbLines - 1) * verticalDistanceBetweenLines + 5
-        visible: isMetronomeDisplayed && showMetronome
-        color: "red"
-        y: 0
-        Behavior on x {
-            SmoothedAnimation {
-                id: metronomeAnimation
-                duration: -1
-           }
-        }
-    }
-
-    //These functions can be adjusted when play_rhythm will be started.
-    property var mDuration
-    function initMetronome() {
-        var staffDuration = 0;
-        for(var v = 0 ; v < notes.count ; ++ v) {
-            staffDuration += notes.get(v).mDuration;
-        }
-        metronomeAnimation.velocity = 1;
-        mDuration = staffDuration;
-        metronome.x = staff.width;
-        print("total duration " + staffDuration)
-        print("total distance " + metronome.x)
-    }
-
-    function playNote(noteId) {
-        metronomeAnimation.velocity = staff.width * 1000 / (notes.get(noteId).mDuration * notes.count);
-        print("velocity " + metronomeAnimation.velocity)
     }
 }

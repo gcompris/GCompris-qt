@@ -224,7 +224,7 @@ ActivityBase {
             nbStaves: 1
             clef: clefType
             coloredNotes: (items.mode === "coloredNotes") ? ['C', 'D', 'E', 'F', 'G', 'A', 'B'] : []
-            isMetronomeDisplayed: false
+            isPulseMarkerDisplayed: false
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: instruction.bottom

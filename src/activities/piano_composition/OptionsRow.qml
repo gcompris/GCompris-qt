@@ -61,6 +61,7 @@ Row {
     signal clearButtonClicked
     signal openButtonClicked
     signal saveButtonClicked
+    signal playButtonClicked
     signal clefAdded
     signal emitOptionMessage(string message)
 
@@ -184,6 +185,7 @@ Row {
         MouseArea {
             anchors.fill: parent
             onClicked: {
+                optionsRow.playButtonClicked()
                 emitOptionMessage(qsTr("Play melody"))
                 multipleStaff.play()
             }

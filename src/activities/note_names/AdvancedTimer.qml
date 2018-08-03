@@ -37,6 +37,7 @@ Timer {
 
     signal pause
     signal resume
+    signal restart
 
     onPause: {
         console.log(interval)
@@ -54,6 +55,12 @@ Timer {
             }
             timer.start()
         }
+    }
+
+    onRestart: {
+        timer.stop()
+        timer.interval = 1
+        timer.start()
     }
 
     onTriggered:{
