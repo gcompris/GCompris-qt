@@ -171,7 +171,7 @@ ActivityBase {
             noteHoverEnabled: false
             centerNotesPosition: true
             firstCenteredNotePosition: width / (2 * (musicElementModel.count - 1))
-            spaceBetweenCenteredNotes: width / (2 * (musicElementModel.count - 1))
+            spaceBetweenCenteredNotes: width / (2.5 * (musicElementModel.count - 1))
             enableNotesSound: false
             onPulseMarkerAnimationFinished: background.isRhythmPlaying = false
             onPlayDrumSound: {
