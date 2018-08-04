@@ -535,6 +535,8 @@ Item {
         if(isFlickable)
             flickableStaves.flick(0, nbStaves * multipleStaff.height)
 
+        pulseMarkerAnimation.stop()
+
         if(musicElementModel.count > 1)
             pulseMarker.x = musicElementRepeater.itemAt(1).x + musicElementRepeater.itemAt(1).width / 2
         else

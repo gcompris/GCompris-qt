@@ -55,7 +55,7 @@ function initLevel() {
 function nextSubLevel() {
     currentSubLevel++
     items.score.currentSubLevel = currentSubLevel
-    if(currentSubLevel >= levels[currentLevel].length)
+    if(currentSubLevel > items.score.numberOfSubLevels)
         nextLevel()
     else
         initSubLevel()
@@ -86,7 +86,7 @@ function initSubLevel() {
         items.metronomeOscillation.stop()
         items.multipleStaff.stopAudios()
         currentNote = 0
-        var currentSubLevelMelody = levels[currentLevel][currentSubLevel]
+        var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
         items.multipleStaff.loadFromData(currentSubLevelMelody)
         items.background.isRhythmPlaying = true
         isWrongRhythm = false

@@ -175,7 +175,7 @@ ActivityBase {
             enableNotesSound: false
             onPulseMarkerAnimationFinished: background.isRhythmPlaying = false
             onPlayDrumSound: {
-                if(background.isRhythmPlaying)
+                if(background.isRhythmPlaying && !metronomeOscillation.running)
                     items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
             }
         }
@@ -233,7 +233,8 @@ ActivityBase {
                     Activity.currentNote = 0
                     multipleStaff.play()
                 }
-                items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                if(!metronomeOscillation.running)
+                    items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
                 Activity.checkAnswer(multipleStaff.pulseMarkerX)
             }
         }
