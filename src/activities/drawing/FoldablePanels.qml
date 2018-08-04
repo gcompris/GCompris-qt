@@ -245,7 +245,7 @@ Item {
     Rectangle {
         id: activeConfiguration
         width: background.width > background.height ? root.tabWidth * 1.3 : root.tabWidth * 2
-        height: background.width > background.height ? root.tabHeight * 1.3 : root.tabHeight * 1.2
+        height: root.tabHeight * 1.2
         radius: 10
         color: "grey"
         border.color: "white"
@@ -256,11 +256,11 @@ Item {
         Image {
             id: undo
             source: "qrc:/gcompris/src/activities/drawing/resource/undo.svg"
-            height: activeConfiguration.height * 0.60//background.width > background.height ? parent.height * 0.75 : parent.height * 0.60
-            width: activeConfiguration.width / 5
+            height: background.width > background.height ? parent.height * 0.75 : parent.height * 0.60
+            width: activeConfiguration.width / 5.2
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: parent.left
-            anchors.leftMargin: parent.width * 0.08
+            anchors.leftMargin: parent.width * 0.10
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true
@@ -276,7 +276,7 @@ Item {
         Rectangle {
             id: activeColor
             height: undo.height - 4
-            width: activeConfiguration.width / 5
+            width: activeConfiguration.width / 5.2
             color: items.paintColor
             radius: 10
             anchors.verticalCenter: parent.verticalCenter
@@ -290,7 +290,7 @@ Item {
             id: activeTool
             source: activeToolIconSource
             height: undo.height
-            width: activeConfiguration.width / 5
+            width: activeConfiguration.width / 5.2
             fillMode: Image.PreserveAspectFit
             anchors.left: activeColor.right
             anchors.verticalCenter: parent.verticalCenter
@@ -300,7 +300,7 @@ Item {
             id: redo
             source: "qrc:/gcompris/src/activities/drawing/resource/redo.svg"
             height: undo.height
-            width: activeConfiguration.width / 5
+            width: activeConfiguration.width / 5.2
             anchors.verticalCenter: parent.verticalCenter
             anchors.left: activeTool.right
             MouseArea {
