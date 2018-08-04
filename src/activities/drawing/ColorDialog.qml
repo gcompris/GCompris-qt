@@ -74,11 +74,15 @@ Rectangle {
         }
 
         picker.hue = (1 / 6) * h
+        if(picker.hue < 0) {
+            picker.hue = 1 + picker.hue
+        }
+
         console.log(picker.hue)
         picker.saturation = (c / (1 - Math.abs(2 * ((max + min) / 2) - 1)))
         picker.lightness = (max + min) / 2
         sMarker.y = saturation * barHeight
-        hsMarker.y = picker.hue >= 0 ? hue * barHeight : (1 + hue) * barHeight
+        hsMarker.y = hue * barHeight
         lsMarker.y = (1 - lightness) * barHeight
 
         return true;
