@@ -404,6 +404,10 @@ ActivityBase {
                     property real realMouseY: mouseY
 
                     onPressed: {
+                        if(items.foldablePanels.activePanel != "null") {
+                            items.foldablePanels.foldAnimation.start()
+                            items.foldablePanels.activePanel = "null"
+                        }
 
                         if (items.nothingChanged)
                             items.nothingChanged = false
