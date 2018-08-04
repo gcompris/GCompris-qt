@@ -1,6 +1,9 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
+ *
+ * Authors:
+ *   Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,13 +24,14 @@ ActivityInfo {
   name: "note_names/NoteNames.qml"
   difficulty: 4
   icon: "note_names/note_names.svg"
-  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
+  author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: true
-  title: qsTr("Name that Note!")
+  title: qsTr("Name that Note")
   description: qsTr("Learn the names of the notes, in bass and treble clef.")
-  goal: qsTr("To develop a good understanding of note position and naming convention. To prepare for the piano player and composition activity")
+  //intro: "Identify the note and press the correct piano key"
+  goal: qsTr("To develop a good understanding of note position and naming convention. To prepare for the piano player and composition activity.")
   prerequisite: qsTr("None")
-  manual: qsTr("Answer all the presented notes three consecutive times correctly to pass the level.")
+  manual: qsTr("Identify the notes correctly and score a 100% to complete a level.")
   credit: ""
   section: "discovery sound"
   createdInVersion: 9500

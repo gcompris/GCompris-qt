@@ -3,9 +3,7 @@
  * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
- *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
- *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
- *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick port)
+ *   Aman Kumar Gupta <gupta2140@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

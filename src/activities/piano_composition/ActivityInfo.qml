@@ -1,6 +1,7 @@
 /* GCompris - ActivityInfo.qml
  *
  * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,7 +24,7 @@ ActivityInfo {
   icon: "piano_composition/piano_composition.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
-  title: qsTr("Piano Composition!")
+  title: qsTr("Piano Composition")
   description: qsTr("An activity to learn how the piano keyboard works, how notes are written on a musical staff and explore music composition by loading and saving your work.")
   goal: qsTr("Develop an understanding of music composition, and increase interest in making music with a piano keyboard. This activity covers many fundamental aspects of music, but there is much more to explore about music composition. If you enjoy this activity but want a more advanced tool, try downloading MuseScore (http://musescore.org/en/download), an open source music notation tool.")
   prerequisite: qsTr("Familiarity with note naming conventions, note-names activity useful to learn this notation.")

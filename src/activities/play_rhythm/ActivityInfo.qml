@@ -28,10 +28,10 @@ ActivityInfo {
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: qsTr("Play_rhythm activity")
+  title: qsTr("Play rhythm")
   //: Help title
   description: ""
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Click the drum to recreate the rhythm"
   //: Help goal
   goal: qsTr("Learn to beat rhythms precisely and accurately based on what you see and hear.")
   //: Help prerequisite

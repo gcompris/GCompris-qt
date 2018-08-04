@@ -276,7 +276,6 @@ ActivityBase {
 
             playButtonVisible: true
             undoButtonVisible: true
-            changeAccidentalStyleButtonVisible: [7, 12].indexOf(items.bar.level) != -1
 
             onUndoButtonClicked: Activity.undoPreviousAnswer()
         }
