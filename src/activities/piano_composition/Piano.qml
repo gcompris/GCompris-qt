@@ -49,6 +49,9 @@ Item {
 
     property bool leftOctaveVisible: false
 
+    property var coloredKeyLabels: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+    property var labelsColor: "inbuilt"
+
     //: Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
     readonly property var whiteKeyNotes: [
         ["F1", qsTr("F%1").arg(1)],

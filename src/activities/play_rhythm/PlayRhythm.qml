@@ -75,6 +75,7 @@ ActivityBase {
             property alias iAmReady: iAmReady
             property alias introductoryAudioTimer: introductoryAudioTimer
             property alias metronomeOscillation: metronomeOscillation
+            property bool isWrongRhythm: false
         }
 
         onStart: { Activity.start(items) }
@@ -185,33 +186,6 @@ ActivityBase {
             visible: false
         }
 
-        Rectangle {
-            id: optionDeck
-            width: optionsRow.iconsWidth * 3
-            height: optionsRow.iconsWidth * 1.7
-            border.width: 2
-            border.color: "black"
-            color: "black"
-            opacity: 0.5
-            radius: 10
-            y: background.height / 2 - height
-            x: background.width - width - 25
-        }
-
-        OptionsRow {
-            id: optionsRow
-            anchors.top: optionDeck.top
-            anchors.topMargin: 15
-            anchors.horizontalCenter: optionDeck.horizontalCenter
-            iconsWidth: horizontalLayout ? Math.min(50, (background.width - piano.x - piano.width) / 5) : 45
-
-            playButtonVisible: !multipleStaff.isPulseMarkerRunning && !multipleStaff.isMusicPlaying
-            clearButtonVisible: playButtonVisible
-
-            onClearButtonClicked: Activity.initSubLevel()
-            onPlayButtonClicked: background.isRhythmPlaying = true
-        }
-
         Image {
             id: tempo
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.png"
@@ -222,7 +196,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             MouseArea {
                 anchors.fill: parent
-                enabled: !background.isRhythmPlaying && !bonus.isPlaying
+                enabled: !background.isRhythmPlaying && !bonus.isPlaying && (!items.isWrongRhythm || multipleStaff.isPulseMarkerRunning)
                 onPressed: tempo.tempoPressed()
                 onReleased: tempo.scale = 1
             }
@@ -311,6 +285,11 @@ ActivityBase {
             }
         }
 
+        OptionsRow {
+            id: optionsRow
+            visible: false
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -318,13 +297,17 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked: {
+                background.isRhythmPlaying = true
+                Activity.initSubLevel()
+            }
         }
 
         Bonus {

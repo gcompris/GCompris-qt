@@ -112,13 +112,13 @@ ActivityBase {
             property alias piano2: piano2
             property alias bonus: bonus
             property alias iAmReady: iAmReady
-            property alias wrongAnswerAnimation: wrongAnswerAnimation
             property alias messageBox: messageBox
             property alias addNoteTimer: addNoteTimer
             property alias dataset: dataset
             property alias progressBar: progressBar
             property alias message: message
             property bool isTutorialMode: true
+            property alias displayNoteNameTimer: displayNoteNameTimer
         }
 
         Loader {
@@ -132,25 +132,21 @@ ActivityBase {
 
         property string clefType: "Treble"
 
-        NumberAnimation {
-            id: wrongAnswerAnimation
-            target: colorLayer
-            properties: "opacity"
-            from: 0
-            to: 0.4
-            duration: 2000
-            onStarted: {
-                multipleStaff.pauseNoteAnimation()
-                addNoteTimer.pause()
-                messageBox.visible = true
-                colorLayer.color = "red"
-            }
-            onStopped: {
-                messageBox.visible = false
-                colorLayer.color = "black"
-                if(progressBar.percentage != 100 && Activity.newNotesSequence.length) {
-                    Activity.wrongAnswer()
-                    addNoteTimer.resume()
+        Timer {
+            id: displayNoteNameTimer
+            interval: 2000
+            onRunningChanged: {
+                if(running) {
+                    multipleStaff.pauseNoteAnimation()
+                    addNoteTimer.pause()
+                    messageBox.visible = true
+                }
+                else {
+                    messageBox.visible = false
+                    if(progressBar.percentage != 100 && Activity.newNotesSequence.length) {
+                        Activity.wrongAnswer()
+                        addNoteTimer.resume()
+                    }
                 }
             }
         }
@@ -168,24 +164,6 @@ ActivityBase {
             onVisibleChanged: text = Activity.targetNotes[0] == undefined ? ""
                                                                        : items.isTutorialMode ? qsTr("New note: %1").arg(Activity.targetNotes[0])
                                                                        : Activity.newNotesSequence[Activity.currentNoteIndex]
-            Behavior on visible {
-                SequentialAnimation {
-                    loops: Animation.Infinite
-                    NumberAnimation {
-                        target: messageBox
-                        property: "scale"
-                        to: 0.85
-                        duration: 700
-                    }
-                    NumberAnimation {
-                        target: messageBox
-                        property: "scale"
-                        to: 1
-                        duration: 700
-                    }
-                }
-            }
-
             property string text
 
             GCText {
@@ -211,7 +189,7 @@ ActivityBase {
             anchors.fill: parent
             color: "black"
             opacity: 0.3
-            visible: iAmReady.visible || wrongAnswerAnimation.running
+            visible: iAmReady.visible
             z: 10
             MouseArea {
                 anchors.fill: parent
@@ -298,7 +276,7 @@ ActivityBase {
             noteAnimationEnabled: true
             onNoteAnimationFinished: {
                 if(!items.isTutorialMode)
-                    wrongAnswerAnimation.start()
+                    displayNoteNameTimer.start()
             }
         }
 
@@ -319,6 +297,7 @@ ActivityBase {
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: 1
                 anchors.bottom: parent.bottom
+                labelsColor: "red"
                 whiteNotesBass: [
                     whiteKeyNotes.slice(0, 8),
                     whiteKeyNotes.slice(4, 12),
@@ -343,6 +322,8 @@ ActivityBase {
                 onNoteClicked: Activity.checkAnswer(note)
                 currentOctaveNb: piano.currentOctaveNb
                 leftOctaveVisible: horizontalLayout
+                coloredKeyLabels: piano.coloredKeyLabels
+                labelsColor: "red"
                 whiteNotesBass: [
                     whiteKeyNotes.slice(8, 16),
                     whiteKeyNotes.slice(12, 20),

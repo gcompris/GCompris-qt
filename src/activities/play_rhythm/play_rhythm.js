@@ -27,7 +27,6 @@ var currentLevel = 0
 var numberOfLevel
 var currentSubLevel = 0
 var currentNote = 0
-var isWrongRhythm = false
 var items
 var levels
 var isIntroductoryAudioPlaying = false
@@ -70,11 +69,11 @@ function checkAnswer(pulseMarkerX) {
             items.multipleStaff.indicateAnsweredNote(true, currentNote)
         else {
             items.multipleStaff.indicateAnsweredNote(false, currentNote)
-            isWrongRhythm = true
+            items.isWrongRhythm = true
         }
     }
     if((currentNote >= items.multipleStaff.musicElementModel.count - 1)) {
-        if(!isWrongRhythm)
+        if(!items.isWrongRhythm)
             items.bonus.good("flower")
         else
             items.bonus.bad("flower")
@@ -89,7 +88,7 @@ function initSubLevel() {
         var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
         items.multipleStaff.loadFromData(currentSubLevelMelody)
         items.background.isRhythmPlaying = true
-        isWrongRhythm = false
+        items.isWrongRhythm = false
 
         if(!isIntroductoryAudioPlaying)
             items.multipleStaff.play()

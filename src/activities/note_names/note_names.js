@@ -38,13 +38,16 @@ function start(items_) {
     dataset = items.dataset.item
     levels = dataset.levels
     numberOfLevel = levels.length
-    items.message.intro = [dataset.objective]
+    items.piano.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
+    var objective = dataset.objective
+    objective += qsTr("<br>Note: Reference notes are red in color")
+    items.message.intro = [objective]
 }
 
 function stop() {
     newNotesSequence = []
     items.multipleStaff.pauseNoteAnimation()
-    items.wrongAnswerAnimation.stop()
+    items.displayNoteNameTimer.stop()
     items.addNoteTimer.stop()
 }
 
@@ -52,11 +55,12 @@ function initLevel() {
     targetNotes = []
     newNotesSequence = []
     items.bar.level = currentLevel + 1
+    items.piano.coloredKeyLabels = dataset.referenceNotes[levels[currentLevel]["clef"]]
     items.background.clefType = levels[currentLevel]["clef"]
     items.piano.currentOctaveNb = 1
     items.piano2.currentOctaveNb = 1
     items.multipleStaff.pauseNoteAnimation()
-    items.wrongAnswerAnimation.stop()
+    items.displayNoteNameTimer.stop()
     items.addNoteTimer.stop()
     items.multipleStaff.initClefs(items.background.clefType)
     targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
@@ -132,7 +136,7 @@ function correctAnswer() {
     items.progressBar.percentage += 2
     if(items.progressBar.percentage === 100) {
         items.multipleStaff.pauseNoteAnimation()
-        items.wrongAnswerAnimation.stop()
+        items.displayNoteNameTimer.stop()
         items.addNoteTimer.stop()
         items.bonus.good("flower")
     }
@@ -144,7 +148,7 @@ function checkAnswer(noteName) {
     if(noteName === items.multipleStaff.musicElementModel.get(1).noteName_)
         correctAnswer()
     else
-        items.wrongAnswerAnimation.start()
+        items.displayNoteNameTimer.start()
 }
 
 function nextLevel() {
@@ -164,4 +168,3 @@ function previousLevel() {
         initLevel()
     }
 }
-

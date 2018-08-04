@@ -63,56 +63,58 @@ ActivityBase {
         }
 
         Keys.onPressed: {
-            if(event.key === Qt.Key_1) {
-                piano.keyRepeater.itemAt(0).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_2) {
-                piano.keyRepeater.itemAt(1).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_3) {
-                piano.keyRepeater.itemAt(2).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_4) {
-                piano.keyRepeater.itemAt(3).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_5) {
-                piano.keyRepeater.itemAt(4).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_6) {
-                piano.keyRepeater.itemAt(5).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_7) {
-                piano.keyRepeater.itemAt(6).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_8) {
-                piano.keyRepeater.itemAt(7).whiteKey.keyPressed()
-            }
-            if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
-                findBlackKey(1)
-            }
-            if(event.key === Qt.Key_F2 && piano.blackKeysEnabled) {
-                findBlackKey(2)
-            }
-            if(event.key === Qt.Key_F3 && piano.blackKeysEnabled) {
-                findBlackKey(3)
-            }
-            if(event.key === Qt.Key_F4 && piano.blackKeysEnabled) {
-                findBlackKey(4)
-            }
-            if(event.key === Qt.Key_F5 && piano.blackKeysEnabled) {
-                findBlackKey(5)
-            }
-            if(event.key === Qt.Key_Space) {
-                multipleStaff.play()
-            }
-            if(event.key === Qt.Key_Backspace || event.key === Qt.Key_Delete) {
-                Activity.undoPreviousAnswer()
-            }
-            if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
-                piano.currentOctaveNb--
-            }
-            if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
-                piano.currentOctaveNb++
+            if(piano.whiteKeysEnabled && !iAmReady.visible) {
+                if(event.key === Qt.Key_1) {
+                    piano.keyRepeater.itemAt(0).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_2) {
+                    piano.keyRepeater.itemAt(1).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_3) {
+                    piano.keyRepeater.itemAt(2).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_4) {
+                    piano.keyRepeater.itemAt(3).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_5) {
+                    piano.keyRepeater.itemAt(4).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_6) {
+                    piano.keyRepeater.itemAt(5).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_7) {
+                    piano.keyRepeater.itemAt(6).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_8) {
+                    piano.keyRepeater.itemAt(7).whiteKey.keyPressed()
+                }
+                if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
+                    findBlackKey(1)
+                }
+                if(event.key === Qt.Key_F2 && piano.blackKeysEnabled) {
+                    findBlackKey(2)
+                }
+                if(event.key === Qt.Key_F3 && piano.blackKeysEnabled) {
+                    findBlackKey(3)
+                }
+                if(event.key === Qt.Key_F4 && piano.blackKeysEnabled) {
+                    findBlackKey(4)
+                }
+                if(event.key === Qt.Key_F5 && piano.blackKeysEnabled) {
+                    findBlackKey(5)
+                }
+                if(event.key === Qt.Key_Space) {
+                    multipleStaff.play()
+                }
+                if(event.key === Qt.Key_Backspace || event.key === Qt.Key_Delete) {
+                    Activity.undoPreviousAnswer()
+                }
+                if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
+                    piano.currentOctaveNb--
+                }
+                if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
+                    piano.currentOctaveNb++
+                }
             }
         }
 

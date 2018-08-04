@@ -60,7 +60,7 @@ Rectangle {
         height: width
         anchors.bottom: pianoKey.bottom
         anchors.horizontalCenter: pianoKey.horizontalCenter
-        color: noteColor
+        color: (piano.coloredKeyLabels.indexOf(keyName[0]) != -1) ? (piano.labelsColor === "inbuilt" ? noteColor : labelsColor) : "white"
         anchors.margins: 4
         border.color: "black"
         border.width: 2
