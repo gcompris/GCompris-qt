@@ -251,7 +251,7 @@ ActivityBase {
                         from: 0
                         to: 12
                         direction: RotationAnimator.Shortest
-                        duration: 500
+                        duration: 463
                     }
                     ScriptAction {
                         script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
@@ -261,15 +261,14 @@ ActivityBase {
                         from: 12
                         to: 0
                         direction: RotationAnimator.Shortest
-                        duration: 500
+                        duration: 463
                     }
                     RotationAnimator {
                         target: metronomeNeedle
                         from: 0
                         to: 348
                         direction: RotationAnimator.Shortest
-                        duration: 500
-                        onStopped: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
+                        duration: 463
                     }
                     ScriptAction {
                         script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
@@ -279,7 +278,7 @@ ActivityBase {
                         from: 348
                         to: 0
                         direction: RotationAnimator.Shortest
-                        duration: 500
+                        duration: 463
                     }
                 }
             }
