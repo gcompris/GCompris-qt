@@ -258,7 +258,7 @@ ActivityBase {
             height: 20 * ApplicationInfo.ratio
             width: parent.width / 4
 
-            readonly property int percentage: 0
+            property int percentage: 0
             readonly property string message: qsTr("%1%").arg(value)
 
             value: percentage
