@@ -47,7 +47,7 @@ Item {
     property alias musicElementRepeater: musicElementRepeater
     property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 3.5
     readonly property real pulseMarkerX: pulseMarker.x
-    readonly property bool isPulseMarkerRunning: false
+    readonly property bool isPulseMarkerRunning: pulseMarkerAnimation.running
     property bool isFlickable: true
     property bool enableNotesSound: true
     property int currentEnteringStaff: 0
@@ -225,9 +225,7 @@ Item {
             target: pulseMarker
             property: "x"
             to: pulseMarker.nextPosition
-            onStarted: isPulseMarkerRunning = true
             onStopped: {
-                isPulseMarkerRunning = false
                 if(pulseMarker.x === multipleStaff.width)
                     pulseMarkerAnimationFinished()
                 else
