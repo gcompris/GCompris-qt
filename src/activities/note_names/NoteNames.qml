@@ -282,7 +282,7 @@ ActivityBase {
 
         Item {
             id: doubleOctave
-            width: horizontalLayout ? 2 * parent.width * 0.3 : parent.width * 0.72
+            width: horizontalLayout ? 2 * parent.width * 0.4 : parent.width * 0.72
             height: horizontalLayout ? parent.height * 0.26 : 2 * parent.width * 0.21
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top

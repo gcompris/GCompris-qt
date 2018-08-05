@@ -189,7 +189,7 @@ ActivityBase {
         Image {
             id: tempo
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.png"
-            width: parent.width / 7
+            width: horizontalLayout ? parent.width / 7 : parent.width / 4
             height: width / 2
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
