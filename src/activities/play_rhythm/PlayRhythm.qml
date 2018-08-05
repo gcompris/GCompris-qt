@@ -160,15 +160,15 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.6 : parent.width * 0.8
-            height: horizontalLayout ? parent.height : parent.height * 0.7
+            width: horizontalLayout ? parent.width * 0.6 : parent.width * 0.9
+            height: horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
             nbStaves: 1
             clef: clefType
             isPulseMarkerDisplayed: items.bar.level % 2
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: horizontalLayout ? parent.height * 0.1 : parent.height * 0.15
+            anchors.topMargin: horizontalLayout ? 0 : parent.height * 0.1
             noteHoverEnabled: false
             centerNotesPosition: true
             firstCenteredNotePosition: width / (2 * (musicElementModel.count - 1))
@@ -191,8 +191,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.png"
             width: horizontalLayout ? parent.width / 7 : parent.width / 4
             height: width / 2
-            anchors.bottom: bar.top
-            anchors.bottomMargin: 20
+            anchors.top: metronome.top
             anchors.horizontalCenter: parent.horizontalCenter
             MouseArea {
                 anchors.fill: parent

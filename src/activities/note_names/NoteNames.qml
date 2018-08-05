@@ -260,8 +260,8 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.76
-            height: horizontalLayout ? parent.height * 0.8 : parent.height * 0.59
+            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
+            height: horizontalLayout ? parent.height * 0.9 : parent.height * 0.7
             nbStaves: 1
             clef: clefType
             coloredNotes: []
@@ -283,7 +283,7 @@ ActivityBase {
         Item {
             id: doubleOctave
             width: horizontalLayout ? 2 * parent.width * 0.4 : parent.width * 0.72
-            height: horizontalLayout ? parent.height * 0.26 : 2 * parent.width * 0.21
+            height: horizontalLayout ? parent.height * 0.22 : 2 * parent.height * 0.18
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 30
