@@ -72,9 +72,6 @@ ActivityBase {
             if(event.key === Qt.Key_7) {
                 piano.keyRepeater.itemAt(6).whiteKey.keyPressed()
             }
-            if(event.key === Qt.Key_8) {
-                piano.keyRepeater.itemAt(7).whiteKey.keyPressed()
-            }
             if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
                 findBlackKey(1)
             }
@@ -257,13 +254,14 @@ ActivityBase {
             anchors.top: instructionBox.bottom
             anchors.topMargin: parent.height * 0.1
             anchors.rightMargin: parent.width * 0.043
+            noteHoverEnabled: true
             onNoteClicked: {
                 if(selectedIndex === noteIndex)
                     selectedIndex = -1
                 else {
                     selectedIndex = noteIndex
                     background.clefType = musicElementModel.get(selectedIndex).soundPitch_
-                    playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType, musicElementRepeater.get(selectedIndex).duration)
+                    playNoteAudio(musicElementModel.get(selectedIndex).noteName_, musicElementModel.get(selectedIndex).noteType_, background.clefType, musicElementRepeater.itemAt(selectedIndex).duration)
                 }
             }
         }
@@ -373,7 +371,7 @@ ActivityBase {
                 Activity.undoChange()
             }
             onClearButtonClicked: {
-                if((multipleStaff.musicElementModel.count > 2) && multipleStaff.selectedIndex === -1) {
+                if((multipleStaff.musicElementModel.count > 1) && multipleStaff.selectedIndex === -1) {
                     Core.showMessageDialog(main,
                         qsTr("You have not selected any note. Do you want to erase all the notes?"),
                         qsTr("Yes"), function() {
@@ -386,7 +384,7 @@ ActivityBase {
                         null
                     )
                 }
-                else if((multipleStaff.musicElementModel.count > 2) &&!multipleStaff.musicElementModel.get(multipleStaff.selectedIndex).isDefaultClef_) {
+                else if((multipleStaff.musicElementModel.count > 1) && !multipleStaff.musicElementModel.get(multipleStaff.selectedIndex).isDefaultClef_) {
                     var noteIndex = multipleStaff.selectedIndex
                     var tempModel = multipleStaff.createNotesBackup()
                     Activity.pushToStack(tempModel)

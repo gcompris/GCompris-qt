@@ -48,7 +48,8 @@ ActivityBase {
         }
 
         Keys.onPressed: {
-            if(!message.visible && !iAmReady.visible && !messageBox.visible && multipleStaff.musicElementModel.count - 1) {
+            if(!introMessage.visible && !iAmReady.visible && !messageBox.visible && multipleStaff.musicElementModel.count - 1) {
+                // If the key pressed matches the note, pass the correct answer as parameter, else pass a wrong answer.
                 if(event.key === Qt.Key_1) {
                     if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'C')
                         Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
@@ -116,7 +117,7 @@ ActivityBase {
             property alias addNoteTimer: addNoteTimer
             property alias dataset: dataset
             property alias progressBar: progressBar
-            property alias message: message
+            property alias introMessage: introMessage
             property bool isTutorialMode: true
             property alias displayNoteNameTimer: displayNoteNameTimer
         }
@@ -200,7 +201,7 @@ ActivityBase {
             id: iAmReady
             focus: true
             z: 10
-            visible: !message.visible
+            visible: !introMessage.visible
             onVisibleChanged: {
                 messageBox.visible = false
             }
@@ -210,7 +211,7 @@ ActivityBase {
         }
 
         IntroMessage {
-            id: message
+            id: introMessage
             anchors {
                 top: parent.top
                 topMargin: 10
@@ -264,15 +265,12 @@ ActivityBase {
             height: horizontalLayout ? parent.height * 0.9 : parent.height * 0.7
             nbStaves: 1
             clef: clefType
-            coloredNotes: []
             notesColor: "red"
-            isPulseMarkerDisplayed: false
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: progressBar.height + 20
             flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2.7
-            noteHoverEnabled: false
             noteAnimationEnabled: true
             onNoteAnimationFinished: {
                 if(!items.isTutorialMode)
@@ -280,9 +278,10 @@ ActivityBase {
             }
         }
 
+        // A pair of two piano keyboard octaves.
         Item {
             id: doubleOctave
-            width: horizontalLayout ? 2 * parent.width * 0.4 : parent.width * 0.72
+            width: horizontalLayout ? parent.width * 0.8 : parent.width * 0.72
             height: horizontalLayout ? parent.height * 0.22 : 2 * parent.height * 0.18
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
@@ -298,14 +297,15 @@ ActivityBase {
                 currentOctaveNb: 1
                 anchors.bottom: parent.bottom
                 labelsColor: "red"
+                // The octaves sets corresponding to respective clef types are in pairs for piano and piano2 at a time when displaying.
                 whiteNotesBass: [
-                    whiteKeyNotes.slice(0, 8),
-                    whiteKeyNotes.slice(4, 12),
-                    whiteKeyNotes.slice(9, 17)
+                    whiteKeyNotes.slice(0, 4),    // F1 to B1
+                    whiteKeyNotes.slice(11, 18)   // C3 to B3
                 ]
                 whiteNotesTreble: [
-                    whiteKeyNotes.slice(11, 19),
-                    whiteKeyNotes.slice(18, 26),
+                    [],                           // No keys to show for this piano keyboard in the lowest octave.
+                    whiteKeyNotes.slice(18, 25),  // C4 to B4
+                    whiteKeyNotes.slice(32, 34),  // C6 to D6
                 ]
             }
 
@@ -325,13 +325,13 @@ ActivityBase {
                 coloredKeyLabels: piano.coloredKeyLabels
                 labelsColor: "red"
                 whiteNotesBass: [
-                    whiteKeyNotes.slice(8, 16),
-                    whiteKeyNotes.slice(12, 20),
-                    whiteKeyNotes.slice(17, 25)
+                    whiteKeyNotes.slice(4, 11),   // C2 to B2
+                    whiteKeyNotes.slice(18, 25),  // C4 to B4
                 ]
                 whiteNotesTreble: [
-                    whiteKeyNotes.slice(19, 27),
-                    whiteKeyNotes.slice(26, 34),
+                    whiteKeyNotes.slice(11, 18),  // C3 to B3
+                    whiteKeyNotes.slice(25, 32),  // C5 to B5
+                    [],                           // No keys to show for this piano keyboard in the highest octave.
                 ]
             }
         }

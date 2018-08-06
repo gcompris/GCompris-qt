@@ -85,9 +85,6 @@ ActivityBase {
                 if(event.key === Qt.Key_7) {
                     piano.keyRepeater.itemAt(6).whiteKey.keyPressed()
                 }
-                if(event.key === Qt.Key_8) {
-                    piano.keyRepeater.itemAt(7).whiteKey.keyPressed()
-                }
                 if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
                     findBlackKey(1)
                 }
@@ -108,12 +105,6 @@ ActivityBase {
                 }
                 if(event.key === Qt.Key_Backspace || event.key === Qt.Key_Delete) {
                     Activity.undoPreviousAnswer()
-                }
-                if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
-                    piano.currentOctaveNb--
-                }
-                if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
-                    piano.currentOctaveNb++
                 }
             }
         }
@@ -234,7 +225,6 @@ ActivityBase {
             onNoteClicked: {
                 playNoteAudio(musicElementModel.get(noteIndex).noteName_, musicElementModel.get(noteIndex).noteType_,  musicElementModel.get(noteIndex).soundPitch_)
             }
-            noteHoverEnabled: false
             centerNotesPosition: true
         }
 
@@ -248,11 +238,12 @@ ActivityBase {
             blackLabelsVisible: ([4, 5, 9, 10].indexOf(items.bar.level) != -1)
             blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
             whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
+            whiteNotesTreble: [ whiteKeyNotes.slice(18, 26) ]
+            whiteNotesBass: [ whiteKeyNotes.slice(11, 19)]
             onNoteClicked: {
                 multipleStaff.playNoteAudio(note, "Quarter", clefType, 1000)
                 Activity.checkAnswer(note)
             }
-            currentOctaveNb: 0
             useSharpNotation: true
         }
 

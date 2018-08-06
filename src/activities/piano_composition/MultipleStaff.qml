@@ -38,7 +38,7 @@ Item {
     property int selectedIndex: -1
     property var coloredNotes: []
     property string notesColor: "inbuilt"
-    property bool noteHoverEnabled: true
+    property bool noteHoverEnabled: false
     property bool centerNotesPosition: false
     property bool isPulseMarkerDisplayed: false
     property bool noteAnimationEnabled: false

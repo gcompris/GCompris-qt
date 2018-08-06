@@ -41,7 +41,7 @@ function start(items_) {
     items.piano.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
     var objective = dataset.objective
     objective += qsTr("<br>Note: Reference notes are red in color")
-    items.message.intro = [objective]
+    items.introMessage.intro = [objective]
 }
 
 function stop() {

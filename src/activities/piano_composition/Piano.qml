@@ -35,7 +35,7 @@ Item {
 
     property alias keyRepeater: keyRepeater
 
-    property int numberOfWhite: 8
+    property int numberOfWhite: 7
     property int currentOctaveNb: defaultOctaveNb
     readonly property int defaultOctaveNb: background.clefType === "Treble" ? 1 : 0
     readonly property int maxNbOctaves: whiteNotes.length
@@ -50,7 +50,7 @@ Item {
     property bool leftOctaveVisible: false
 
     property var coloredKeyLabels: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
-    property var labelsColor: "inbuilt"
+    property string labelsColor: "inbuilt"
 
     //: Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.
     readonly property var whiteKeyNotes: [
@@ -142,15 +142,15 @@ Item {
 
     // White key notes are from C3 to G4 when the clef is bass
     property var whiteNotesBass: [
-        whiteKeyNotes.slice(11, 19),
-        whiteKeyNotes.slice(15, 23)
+        whiteKeyNotes.slice(11, 18),
+        whiteKeyNotes.slice(18, 22)
     ]
     // White key notes are from G3 to C6 when the clef is treble
     property var whiteNotesTreble: [
-        whiteKeyNotes.slice(13, 21),
-        whiteKeyNotes.slice(18, 26),
-        whiteKeyNotes.slice(25, 33),
-        whiteKeyNotes.slice(28, 36)
+        whiteKeyNotes.slice(13, 18),
+        whiteKeyNotes.slice(18, 25),
+        whiteKeyNotes.slice(25, 32),
+        whiteKeyNotes.slice(32, 36)
     ]
     readonly property var whiteNotes: background.clefType === "Treble" ? whiteNotesTreble : whiteNotesBass
 
@@ -170,7 +170,7 @@ Item {
         Item {
             width: whiteWidth
             height: whiteHeight
-            x: index * whiteWidth
+            x: (((currentOctaveNb === 0) ? (piano.numberOfWhite - whiteNotes[0].length + index) : index)) * whiteWidth
 
             property alias whiteKey: whiteKey
             property alias blackKey: blackKey
@@ -185,7 +185,7 @@ Item {
                 keyName: whiteNotes[currentOctaveNb % whiteNotes.length][index][1]
                 labelsVisible: whiteLabelsVisible
                 isKeyEnabled: piano.whiteKeysEnabled
-                onKeyPressed: noteClicked(whiteNotes[currentOctaveNb][index][0])
+                onKeyPressed: noteClicked(whiteNotes[currentOctaveNb % whiteNotes.length][index][0])
             }
 
             PianoKey {
