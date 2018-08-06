@@ -295,7 +295,7 @@ ActivityBase {
                     anchors.right: (index === 1) ? octaveRepeater.right : undefined
                     coloredKeyLabels: doubleOctave.coloredKeyLabels
                     labelsColor: "red"
-                    // The octaves sets corresponding to respective clef types are in pairs for piano and piano2 at a time when displaying.
+                    // The octaves sets corresponding to respective clef types are in pairs for the joint piano keyboards at a time when displaying.
                     whiteNotesBass: {
                         if(index === 0) {
                             return [
