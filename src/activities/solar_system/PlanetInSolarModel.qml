@@ -54,8 +54,6 @@ Item {
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width / 1.3
         height: planetImage.width
-        sourceSize.width: planetImage.width * 1.2
-        sourceSize.height: planetImage.width * 1.2
         fillMode: Image.PreserveAspectFit
         source: planetImageSource
 

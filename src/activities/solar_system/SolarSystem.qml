@@ -39,7 +39,7 @@ ActivityBase {
         Image {
             id: stars
             fillMode: Image.PreserveAspectCrop
-            source: "qrc:/gcompris/src/activities/solar_system/resource/background.jpg"
+            source: "qrc:/gcompris/src/activities/solar_system/resource/background.svg"
             width: horizontalLayout ? parent.width * 2.5 : parent.height * 2.5
             height: stars.width
             sourceSize.width: stars.width
@@ -179,7 +179,7 @@ ActivityBase {
             Image {
                 id: solarSystemImage
                 source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
-                sourceSize.width: parent.width - 6 * ApplicationInfo.ratio
+                width: parent.width - 6 * ApplicationInfo.ratio
                 fillMode: Image.PreserveAspectCrop
                 anchors.centerIn: parent
             }

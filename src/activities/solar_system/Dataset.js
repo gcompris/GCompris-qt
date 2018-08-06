@@ -21,7 +21,7 @@
 function get() {
     return [
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/sun_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/sun.png",
                     "bodyName": qsTr("Sun"),
                     "levels": [
                         { 	// sub-level 1
@@ -52,7 +52,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury.png",
                     "bodyName": qsTr("Mercury"),
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
@@ -90,7 +90,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus.png",
                     "bodyName": qsTr("Venus"),
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
@@ -133,7 +133,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth.png",
                     "bodyName": qsTr("Earth"),
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
@@ -176,7 +176,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars.png",
                     "bodyName": qsTr("Mars"),
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
@@ -219,7 +219,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter.png",
                     "bodyName": qsTr("Jupiter"),
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
@@ -257,7 +257,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn.png",
                     "bodyName": qsTr("Saturn"),
                     "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth years."),
@@ -295,7 +295,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus.png",
                     "bodyName": qsTr("Uranus"),
                     "temperatureHint": qsTr("The temperature on Saturn is -178 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
@@ -333,7 +333,7 @@ function get() {
                     ]
                 },
                 {
-                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune_real.svg",
+                    "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune.png",
                     "bodyName": qsTr("Neptune"),
                     "temperatureHint": qsTr("The maximum temperature on Saturn is -178 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 years."),
