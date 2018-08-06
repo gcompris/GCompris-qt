@@ -93,6 +93,14 @@ set(QT_REQUIRED_VERSION 5.6.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
             Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)
+          
+if(ANDROID)
+    find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
+endif(ANDROID)
+
+if(SAILFISHOS)
+    find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Widgets)
+endif(SAILFISHOS)
 
 find_package (KF5 QUIET COMPONENTS
     DocTools
