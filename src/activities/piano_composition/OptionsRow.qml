@@ -292,7 +292,9 @@ Row {
 
     Image {
         id: changeAccidentalStyleButton
-        source: piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg" : "qrc:/gcompris/src/activities/piano_composition/resource/blackflat.svg"
+        source: changeAccidentalStyleButtonVisible ? (piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg"
+                                                   : "qrc:/gcompris/src/activities/piano_composition/resource/blackflat.svg")
+                                                   : ""
         sourceSize.width: optionsRow.iconsWidth
         visible: changeAccidentalStyleButtonVisible
         MouseArea {

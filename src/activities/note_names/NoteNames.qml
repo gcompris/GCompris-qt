@@ -18,7 +18,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
+import QtQuick 2.6
 import QtQuick.Controls 1.0
 import GCompris 1.0
 
@@ -51,54 +51,40 @@ ActivityBase {
             if(!introMessage.visible && !iAmReady.visible && !messageBox.visible && multipleStaff.musicElementModel.count - 1) {
                 // If the key pressed matches the note, pass the correct answer as parameter, else pass a wrong answer.
                 if(event.key === Qt.Key_1) {
-                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'C')
-                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                    else
-                       Activity.checkAnswer("Z")
+                    isCorrectKey('C')
                 }
                 else if(event.key === Qt.Key_2) {
-                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'D')
-                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                    else
-                       Activity.checkAnswer("Z")
+                    isCorrectKey('D')
                 }
                 else if(event.key === Qt.Key_3) {
-                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'E')
-                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                    else
-                       Activity.checkAnswer("Z")
+                    isCorrectKey('E')
                 }
                 else if(event.key === Qt.Key_4) {
-                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'F')
-                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                    else
-                       Activity.checkAnswer("Z")
+                    isCorrectKey('F')
                 }
                 else if(event.key === Qt.Key_5) {
-                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'G')
-                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                    else
-                       Activity.checkAnswer("Z")
+                    isCorrectKey('G')
                 }
                 else if(event.key === Qt.Key_6) {
-                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'A')
-                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                    else
-                       Activity.checkAnswer("Z")
+                    isCorrectKey('A')
                 }
                 else if(event.key === Qt.Key_7) {
-                    if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === 'B')
-                        Activity.checkAnswer(Activity.newNotesSequence[Activity.currentNoteIndex])
-                    else
-                       Activity.checkAnswer("Z")
+                    isCorrectKey('B')
                 }
                 else if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
-                    piano.currentOctaveNb--
+                    doubleOctave.currentOctaveNb--
                 }
                 else if(event.key === Qt.Key_Right && shiftKeyboardRight.visible) {
-                    piano.currentOctaveNb++
+                    doubleOctave.currentOctaveNb++
                 }
             }
+        }
+
+        function isCorrectKey(key) {
+            if(Activity.newNotesSequence[Activity.currentNoteIndex][0] === key)
+                Activity.correctAnswer()
+            else
+                items.displayNoteNameTimer.start()
         }
 
         // Add here the QML items you need to access in javascript
@@ -109,8 +95,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property alias bar: bar
             property alias multipleStaff: multipleStaff
-            property alias piano: piano
-            property alias piano2: piano2
+            property alias doubleOctave: doubleOctave
             property alias bonus: bonus
             property alias iAmReady: iAmReady
             property alias messageBox: messageBox
@@ -237,7 +222,6 @@ ActivityBase {
             width: parent.width / 4
 
             property int percentage: 0
-            readonly property string message: qsTr("%1%").arg(value)
 
             value: percentage
             maximumValue: 100
@@ -254,7 +238,7 @@ ActivityBase {
                 fontSize: mediumSize
                 font.bold: true
                 color: "black"
-                text: parent.message
+                text: parent.value + '%'
                 z: 2
             }
         }
@@ -278,7 +262,7 @@ ActivityBase {
             }
         }
 
-        // A pair of two piano keyboard octaves.
+        // We present a pair of two joint piano keyboard octaves.
         Item {
             id: doubleOctave
             width: horizontalLayout ? parent.width * 0.8 : parent.width * 0.72
@@ -286,65 +270,74 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 30
-            Piano {
-                id: piano
-                width: horizontalLayout ? parent.width / 2 : parent.width
-                height: horizontalLayout ? parent.height : parent.height / 2
-                blackLabelsVisible: false
-                blackKeysEnabled: blackLabelsVisible
-                whiteKeysEnabled: !messageBox.visible && multipleStaff.musicElementModel.count > 1
-                onNoteClicked: Activity.checkAnswer(note)
-                currentOctaveNb: 1
-                anchors.bottom: parent.bottom
-                labelsColor: "red"
-                // The octaves sets corresponding to respective clef types are in pairs for piano and piano2 at a time when displaying.
-                whiteNotesBass: [
-                    whiteKeyNotes.slice(0, 4),    // F1 to B1
-                    whiteKeyNotes.slice(11, 18)   // C3 to B3
-                ]
-                whiteNotesTreble: [
-                    [],                           // No keys to show for this piano keyboard in the lowest octave.
-                    whiteKeyNotes.slice(18, 25),  // C4 to B4
-                    whiteKeyNotes.slice(32, 34),  // C6 to D6
-                ]
-            }
 
-            Piano {
-                id: piano2
-                width: piano.width
-                height: piano.height
-                anchors.top: parent.top
-                anchors.topMargin: horizontalLayout ? 0 : -15
-                anchors.left: horizontalLayout ? piano.right : parent.left
-                blackLabelsVisible: false
-                blackKeysEnabled: blackLabelsVisible
-                whiteKeysEnabled: piano.whiteKeysEnabled
-                onNoteClicked: Activity.checkAnswer(note)
-                currentOctaveNb: piano.currentOctaveNb
-                leftOctaveVisible: horizontalLayout
-                coloredKeyLabels: piano.coloredKeyLabels
-                labelsColor: "red"
-                whiteNotesBass: [
-                    whiteKeyNotes.slice(4, 11),   // C2 to B2
-                    whiteKeyNotes.slice(18, 25),  // C4 to B4
-                ]
-                whiteNotesTreble: [
-                    whiteKeyNotes.slice(11, 18),  // C3 to B3
-                    whiteKeyNotes.slice(25, 32),  // C5 to B5
-                    [],                           // No keys to show for this piano keyboard in the highest octave.
-                ]
+            readonly property int nbJointKeyboards: 2
+            readonly property int maxNbOctaves: (background.clefType === "Bass") ? 2 : 3
+            property int currentOctaveNb: 0
+            property var coloredKeyLabels: []
+
+            Repeater {
+                id: octaveRepeater
+                anchors.fill: parent
+                model: doubleOctave.nbJointKeyboards
+                Piano {
+                    id: pianoKeyboard
+                    width: horizontalLayout ? octaveRepeater.width / 2 : octaveRepeater.width
+                    height: horizontalLayout ? octaveRepeater.height : octaveRepeater.height / 2
+                    blackLabelsVisible: false
+                    blackKeysEnabled: blackLabelsVisible
+                    whiteKeysEnabled: !messageBox.visible && multipleStaff.musicElementModel.count > 1
+                    onNoteClicked: Activity.checkAnswer(note)
+                    currentOctaveNb: doubleOctave.currentOctaveNb
+                    anchors.top: (index === 1) ? octaveRepeater.top : undefined
+                    anchors.topMargin: horizontalLayout ? 0 : -15
+                    anchors.bottom: (index === 0) ? octaveRepeater.bottom : undefined
+                    anchors.right: (index === 1) ? octaveRepeater.right : undefined
+                    coloredKeyLabels: doubleOctave.coloredKeyLabels
+                    labelsColor: "red"
+                    // The octaves sets corresponding to respective clef types are in pairs for piano and piano2 at a time when displaying.
+                    whiteNotesBass: {
+                        if(index === 0) {
+                            return [
+                                whiteKeyNotes.slice(0, 4),    // F1 to B1
+                                whiteKeyNotes.slice(11, 18)   // C3 to B3
+                            ]
+                        }
+                        else {
+                            return [
+                                whiteKeyNotes.slice(4, 11),   // C2 to B2
+                                whiteKeyNotes.slice(18, 25)   // C4 to B4
+                            ]
+                        }
+                    }
+                    whiteNotesTreble: {
+                        if(index === 0) {
+                            return [
+                                [],                           // No keys to show for this piano keyboard in the lowest octave.
+                                whiteKeyNotes.slice(18, 25),  // C4 to B4
+                                whiteKeyNotes.slice(32, 34),  // C6 to D6
+                            ]
+                        }
+                        else {
+                            return [
+                                whiteKeyNotes.slice(11, 18),  // C3 to B3
+                                whiteKeyNotes.slice(25, 32),  // C5 to B5
+                                [],                           // No keys to show for this piano keyboard in the highest octave.
+                            ]
+                        }
+                    }
+                }
             }
         }
 
         Image {
             id: shiftKeyboardLeft
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.width: piano.width / 7
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+            sourceSize.width: horizontalLayout ? doubleOctave.width / 14 : doubleOctave.width / 7
             width: sourceSize.width
             height: width
             fillMode: Image.PreserveAspectFit
-            rotation: 180
-            visible: (piano.currentOctaveNb > 0) && piano.visible
+            visible: (doubleOctave.currentOctaveNb > 0) && doubleOctave.visible
             anchors {
                 verticalCenter: doubleOctave.verticalCenter
                 right: doubleOctave.left
@@ -353,8 +346,7 @@ ActivityBase {
                 enabled: !messageBox.visible
                 anchors.fill: parent
                 onClicked: {
-                    piano.currentOctaveNb--
-                    piano2.currentOctaveNb--
+                    doubleOctave.currentOctaveNb--
                 }
             }
         }
@@ -362,11 +354,11 @@ ActivityBase {
         Image {
             id: shiftKeyboardRight
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.width: piano.width / 7
+            sourceSize.width: horizontalLayout ? doubleOctave.width / 14 : doubleOctave.width / 7
             width: sourceSize.width
             height: width
             fillMode: Image.PreserveAspectFit
-            visible: (piano.currentOctaveNb < piano.maxNbOctaves - 1) && piano.visible
+            visible: (doubleOctave.currentOctaveNb < doubleOctave.maxNbOctaves - 1) && doubleOctave.visible
             anchors {
                 verticalCenter: doubleOctave.verticalCenter
                 left: doubleOctave.right
@@ -375,8 +367,7 @@ ActivityBase {
                 enabled: !messageBox.visible
                 anchors.fill: parent
                 onClicked: {
-                    piano.currentOctaveNb++
-                    piano2.currentOctaveNb++
+                    doubleOctave.currentOctaveNb++
                 }
             }
         }

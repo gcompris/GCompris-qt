@@ -36,11 +36,8 @@ Item {
     property alias keyRepeater: keyRepeater
 
     property int numberOfWhite: 7
-    property int currentOctaveNb: defaultOctaveNb
-    readonly property int defaultOctaveNb: background.clefType === "Treble" ? 1 : 0
+    property int currentOctaveNb: 0
     readonly property int maxNbOctaves: whiteNotes.length
-
-    onDefaultOctaveNbChanged: currentOctaveNb = defaultOctaveNb
 
     property real whiteWidth: width / numberOfWhite // 23
     property real whiteHeight: height // 120

@@ -292,6 +292,7 @@ ActivityBase {
             useSharpNotation: bar.level != 4
             blackKeysEnabled: bar.level > 2
             visible: !background.isLyricsMode
+            currentOctaveNb: (background.clefType === "Bass") ? 0 : 1
             onNoteClicked: {
                 parent.addMusicElementAndPushToStack(note, currentType)
             }
@@ -310,12 +311,11 @@ ActivityBase {
 
         Image {
             id: shiftKeyboardLeft
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
             sourceSize.width: piano.width / 7
             width: sourceSize.width
             height: width
             fillMode: Image.PreserveAspectFit
-            rotation: 180
             visible: (piano.currentOctaveNb > 0) && piano.visible
             anchors {
                 verticalCenter: piano.verticalCenter
@@ -408,6 +408,10 @@ ActivityBase {
                 var tempModel = multipleStaff.createNotesBackup()
                 Activity.pushToStack(tempModel)
                 multipleStaff.addMusicElement("clef", "", "", false, false, background.clefType)
+                if(background.clefType === "Bass")
+                    piano.currentOctaveNb = 0
+                else
+                    piano.currentOctaveNb = 1
             }
             onEmitOptionMessage: clickedOptionMessage.show(message)
         }

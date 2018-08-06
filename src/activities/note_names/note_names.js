@@ -19,7 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 .pragma library
-.import QtQuick 2.0 as Quick
+.import QtQuick 2.6 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
@@ -31,6 +31,8 @@ var targetNotes = []
 var newNotesSequence = []
 var currentNoteIndex
 var noteIndexToDisplay
+var percentageDecreaseValue = 4
+var percentageIncreaseValue = 2
 
 function start(items_) {
     items = items_
@@ -38,10 +40,9 @@ function start(items_) {
     dataset = items.dataset.item
     levels = dataset.levels
     numberOfLevel = levels.length
-    items.piano.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
-    var objective = dataset.objective
-    objective += qsTr("<br>Note: Reference notes are red in color")
-    items.introMessage.intro = [objective]
+    items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
+    items.doubleOctave.currentOctaveNb = 1
+    items.introMessage.intro = [dataset.objective]
 }
 
 function stop() {
@@ -55,10 +56,9 @@ function initLevel() {
     targetNotes = []
     newNotesSequence = []
     items.bar.level = currentLevel + 1
-    items.piano.coloredKeyLabels = dataset.referenceNotes[levels[currentLevel]["clef"]]
     items.background.clefType = levels[currentLevel]["clef"]
-    items.piano.currentOctaveNb = 1
-    items.piano2.currentOctaveNb = 1
+    items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[items.background.clefType]
+    items.doubleOctave.currentOctaveNb = 1
     items.multipleStaff.pauseNoteAnimation()
     items.displayNoteNameTimer.stop()
     items.addNoteTimer.stop()
@@ -82,19 +82,22 @@ function showTutorial() {
     }
 }
 
+// The principle is to fill half sequence (length 25) with the notes from previous levels and another half with current level's target notes and shuffle them.
 function formNewNotesSequence() {
+    var halfSequenceLength = 25
+    var fullSequenceLength = 50
     targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
-    for(var i = 0; i < currentLevel && newNotesSequence.length < 25; i++) {
+    for(var i = 0; i < currentLevel && newNotesSequence.length < halfSequenceLength; i++) {
         if(levels[currentLevel]["clef"] === levels[i]["clef"]) {
-            for(var j = 0; j < levels[i]["sequence"].length && newNotesSequence.length < 25; j++)
+            for(var j = 0; j < levels[i]["sequence"].length && newNotesSequence.length < halfSequenceLength; j++)
                 newNotesSequence.push(levels[i]["sequence"][j])
         }
     }
 
-    for(var i = 0; newNotesSequence.length && newNotesSequence.length < 25; i++)
+    for(var i = 0; newNotesSequence.length && newNotesSequence.length < halfSequenceLength; i++)
         newNotesSequence.push(newNotesSequence[i % newNotesSequence.length])
 
-    for(var i = 0; newNotesSequence.length < 50; i++)
+    for(var i = 0; newNotesSequence.length < fullSequenceLength; i++)
         newNotesSequence.push(targetNotes[i % targetNotes.length])
 
     Core.shuffle(newNotesSequence)
@@ -122,7 +125,7 @@ function wrongAnswer() {
         currentNoteIndex = (currentNoteIndex + 1) % newNotesSequence.length
     }
 
-    items.progressBar.percentage = Math.max(0, items.progressBar.percentage - 4)
+    items.progressBar.percentage = Math.max(0, items.progressBar.percentage - percentageDecreaseValue)
     items.multipleStaff.resumeNoteAnimation()
     if(items.multipleStaff.musicElementModel.count <= 1)
         items.addNoteTimer.restart()
@@ -133,7 +136,7 @@ function correctAnswer() {
     items.multipleStaff.pauseNoteAnimation()
     items.multipleStaff.musicElementModel.remove(1)
     items.multipleStaff.resumeNoteAnimation()
-    items.progressBar.percentage += 2
+    items.progressBar.percentage += percentageIncreaseValue
     if(items.progressBar.percentage === 100) {
         items.multipleStaff.pauseNoteAnimation()
         items.displayNoteNameTimer.stop()

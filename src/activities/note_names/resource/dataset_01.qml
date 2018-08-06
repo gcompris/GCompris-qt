@@ -97,7 +97,7 @@ QtObject {
             "sequence": ["F1", "G1", "A1"]
         }
     ]
-    property string objective: qsTr("You will learn notes from F1 to D6 in this lesson.")
+    property string objective: qsTr("You will learn notes from F1 to D6 in this lesson.<br>Note: Reference notes are red in color.")
     property var referenceNotes: {
         "Treble": ["C", "G"],
         "Bass": ["F", "C"]

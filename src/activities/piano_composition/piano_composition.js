@@ -93,10 +93,14 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.optionsRow.bpm = 60
 
-    if(items.bar.level === 2)
+    if(items.bar.level === 2) {
         items.background.clefType = "Bass"
-    else
+        items.piano.currentOctaveNb = 0
+    }
+    else {
         items.background.clefType = "Treble"
+        items.piano.currentOctaveNb = 1
+    }
 
     items.multipleStaff.initClefs(items.background.clefType)
 
@@ -105,7 +109,6 @@ function initLevel() {
     else
         items.piano.useSharpNotation = true
 
-    items.piano.currentOctaveNb = items.piano.defaultOctaveNb
     items.multipleStaff.nbStaves = 2
     items.optionsRow.noteOptionsIndex = 2
     items.background.currentType = "Quarter"
