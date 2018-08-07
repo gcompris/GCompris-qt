@@ -246,7 +246,7 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.8
+            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.78
             height: horizontalLayout ? parent.height * 0.9 : parent.height * 0.7
             nbStaves: 1
             clef: clefType
@@ -266,7 +266,7 @@ ActivityBase {
         // We present a pair of two joint piano keyboard octaves.
         Item {
             id: doubleOctave
-            width: horizontalLayout ? parent.width * 0.8 : parent.width * 0.72
+            width: parent.width * 0.95
             height: horizontalLayout ? parent.height * 0.22 : 2 * parent.height * 0.18
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
@@ -334,14 +334,16 @@ ActivityBase {
         Image {
             id: shiftKeyboardLeft
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-            sourceSize.width: horizontalLayout ? doubleOctave.width / 14 : doubleOctave.width / 7
+            sourceSize.width: horizontalLayout ? doubleOctave.width / 13 : doubleOctave.width / 6
             width: sourceSize.width
             height: width
             fillMode: Image.PreserveAspectFit
             visible: (doubleOctave.currentOctaveNb > 0) && doubleOctave.visible
             anchors {
-                verticalCenter: doubleOctave.verticalCenter
-                right: doubleOctave.left
+                bottom: doubleOctave.top
+                left: doubleOctave.left
+                leftMargin: -37
+                bottomMargin: horizontalLayout ? 10 : 25
             }
             MouseArea {
                 enabled: !messageBox.visible
@@ -355,14 +357,16 @@ ActivityBase {
         Image {
             id: shiftKeyboardRight
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.width: horizontalLayout ? doubleOctave.width / 14 : doubleOctave.width / 7
+            sourceSize.width: horizontalLayout ? doubleOctave.width / 13 : doubleOctave.width / 6
             width: sourceSize.width
             height: width
             fillMode: Image.PreserveAspectFit
             visible: (doubleOctave.currentOctaveNb < doubleOctave.maxNbOctaves - 1) && doubleOctave.visible
             anchors {
-                verticalCenter: doubleOctave.verticalCenter
-                left: doubleOctave.right
+                bottom: doubleOctave.top
+                right: doubleOctave.right
+                rightMargin: -37
+                bottomMargin: horizontalLayout ? 10 : 25
             }
             MouseArea {
                 enabled: !messageBox.visible
