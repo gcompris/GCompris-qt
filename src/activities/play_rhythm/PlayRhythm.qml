@@ -180,7 +180,7 @@ ActivityBase {
             }
         }
 
-        Piano {
+        PianoOctaveKeyboard {
             id: piano
             visible: false
         }

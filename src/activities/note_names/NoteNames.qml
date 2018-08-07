@@ -19,7 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtQuick.Controls 1.0
+import QtQuick.Controls 1.5
 import GCompris 1.0
 
 import "../../core"
@@ -238,7 +238,8 @@ ActivityBase {
                 fontSize: mediumSize
                 font.bold: true
                 color: "black"
-                text: parent.value + '%'
+                //: %1 is replaced by a number (parent.value) and is followed by a % symbol.
+                text: qsTr("%1%").arg(parent.value)
                 z: 2
             }
         }
@@ -280,7 +281,7 @@ ActivityBase {
                 id: octaveRepeater
                 anchors.fill: parent
                 model: doubleOctave.nbJointKeyboards
-                Piano {
+                PianoOctaveKeyboard {
                     id: pianoKeyboard
                     width: horizontalLayout ? octaveRepeater.width / 2 : octaveRepeater.width
                     height: horizontalLayout ? octaveRepeater.height : octaveRepeater.height / 2
@@ -313,16 +314,16 @@ ActivityBase {
                     whiteNotesTreble: {
                         if(index === 0) {
                             return [
-                                [],                           // No keys to show for this piano keyboard in the lowest octave.
+                                whiteKeyNotes.slice(11, 18),  // C3 to B3
                                 whiteKeyNotes.slice(18, 25),  // C4 to B4
-                                whiteKeyNotes.slice(32, 34),  // C6 to D6
+                                whiteKeyNotes.slice(25, 32),  // C5 to B5
                             ]
                         }
                         else {
                             return [
-                                whiteKeyNotes.slice(11, 18),  // C3 to B3
+                                whiteKeyNotes.slice(18, 25),  // C4 to B4
                                 whiteKeyNotes.slice(25, 32),  // C5 to B5
-                                [],                           // No keys to show for this piano keyboard in the highest octave.
+                                whiteKeyNotes.slice(32, 34),  // C6 to D6
                             ]
                         }
                     }

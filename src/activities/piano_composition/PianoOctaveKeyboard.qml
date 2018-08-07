@@ -1,4 +1,4 @@
-/* GCompris - Piano.qml
+/* GCompris - PianoOctaveKeyboard.qml
 *
 * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
 * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>

@@ -228,7 +228,7 @@ ActivityBase {
             centerNotesPosition: true
         }
 
-        Piano {
+        PianoOctaveKeyboard {
             id: piano
             width: horizontalLayout ? parent.width * 0.3 : parent.width * 0.7
             height: horizontalLayout ? parent.height * 0.3 : parent.width * 0.26

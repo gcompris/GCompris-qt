@@ -279,7 +279,7 @@ ActivityBase {
             downVisible: (multipleStaff.flickableStaves.visibleArea.yPosition + multipleStaff.flickableStaves.visibleArea.heightRatio) < 1
         }
 
-        Piano {
+        PianoOctaveKeyboard {
             id: piano
             width: horizontalLayout ? parent.width * 0.34 : parent.width * 0.7
             height: horizontalLayout ? parent.height * 0.40 : parent.width * 0.26
