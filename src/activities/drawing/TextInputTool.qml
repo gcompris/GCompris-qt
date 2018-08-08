@@ -32,6 +32,7 @@ Rectangle {
     radius: 10
     z: 1000
     opacity: 0
+    onOpacityChanged: canvas.updateDemoText()
 
     property alias inputText: inputText
     property string fontSize: "8px "
