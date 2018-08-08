@@ -238,8 +238,8 @@ ActivityBase {
             blackLabelsVisible: ([4, 5, 9, 10].indexOf(items.bar.level) != -1)
             blackKeysEnabled: blackLabelsVisible && !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
             whiteKeysEnabled: !multipleStaff.isMusicPlaying && !introductoryAudioTimer.running
-            whiteNotesTreble: [ whiteKeyNotes.slice(18, 26) ]
-            whiteNotesBass: [ whiteKeyNotes.slice(11, 19)]
+            whiteKeyNoteLabelsTreble: [ whiteKeyNoteLabelsArray.slice(18, 26) ]
+            whiteKeyNoteLabelsBass: [ whiteKeyNoteLabelsArray.slice(11, 19)]
             onNoteClicked: {
                 multipleStaff.playNoteAudio(note, "Quarter", clefType, 1000)
                 Activity.checkAnswer(note)

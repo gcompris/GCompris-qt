@@ -297,35 +297,35 @@ ActivityBase {
                     coloredKeyLabels: doubleOctave.coloredKeyLabels
                     labelsColor: "red"
                     // The octaves sets corresponding to respective clef types are in pairs for the joint piano keyboards at a time when displaying.
-                    whiteNotesBass: {
+                    whiteKeyNoteLabelsBass: {
                         if(index === 0) {
                             return [
-                                whiteKeyNotes.slice(0, 4),    // F1 to B1
-                                whiteKeyNotes.slice(4, 11),   // C2 to B2
-                                whiteKeyNotes.slice(11, 18)   // C3 to B3
+                                whiteKeyNoteLabelsArray.slice(0, 4),    // F1 to B1
+                                whiteKeyNoteLabelsArray.slice(4, 11),   // C2 to B2
+                                whiteKeyNoteLabelsArray.slice(11, 18)   // C3 to B3
                             ]
                         }
                         else {
                             return [
-                                whiteKeyNotes.slice(4, 11),   // C2 to B2
-                                whiteKeyNotes.slice(11, 18),  // C3 to B3
-                                whiteKeyNotes.slice(18, 25)   // C4 to B4
+                                whiteKeyNoteLabelsArray.slice(4, 11),   // C2 to B2
+                                whiteKeyNoteLabelsArray.slice(11, 18),  // C3 to B3
+                                whiteKeyNoteLabelsArray.slice(18, 25)   // C4 to B4
                             ]
                         }
                     }
-                    whiteNotesTreble: {
+                    whiteKeyNoteLabelsTreble: {
                         if(index === 0) {
                             return [
-                                whiteKeyNotes.slice(11, 18),  // C3 to B3
-                                whiteKeyNotes.slice(18, 25),  // C4 to B4
-                                whiteKeyNotes.slice(25, 32)   // C5 to B5
+                                whiteKeyNoteLabelsArray.slice(11, 18),  // C3 to B3
+                                whiteKeyNoteLabelsArray.slice(18, 25),  // C4 to B4
+                                whiteKeyNoteLabelsArray.slice(25, 32)   // C5 to B5
                             ]
                         }
                         else {
                             return [
-                                whiteKeyNotes.slice(18, 25),  // C4 to B4
-                                whiteKeyNotes.slice(25, 32),  // C5 to B5
-                                whiteKeyNotes.slice(32, 34)   // C6 to D6
+                                whiteKeyNoteLabelsArray.slice(18, 25),  // C4 to B4
+                                whiteKeyNoteLabelsArray.slice(25, 32),  // C5 to B5
+                                whiteKeyNoteLabelsArray.slice(32, 34)   // C6 to D6
                             ]
                         }
                     }

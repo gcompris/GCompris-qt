@@ -423,8 +423,8 @@ Item {
             if(noteType != "Rest") {
                 // We should find a corresponding b type enharmonic notation for # type note to play the audio.
                 if(noteName[1] === "#") {
-                    var blackKeysFlat = piano.blackKeyFlatNotes
-                    var blackKeysSharp = piano.blackKeySharpNotes
+                    var blackKeysFlat = piano.blackKeyFlatNoteLabelsArray
+                    var blackKeysSharp = piano.blackKeySharpNoteLabelsArray
 
                     for(var i = 0; i < blackKeysSharp.length; i++) {
                         if(blackKeysSharp[i][0] === noteName) {
