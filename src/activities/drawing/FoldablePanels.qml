@@ -252,6 +252,9 @@ Item {
         x: toolsTitle.x + toolsTitle.width + (background.width > background.height ? width / 2 : width / 6)
         y: -7
         z: mainPanel.z - 1
+        MouseArea {
+            anchors.fill: parent
+        }
 
         Image {
             id: undo
