@@ -318,14 +318,14 @@ ActivityBase {
                             return [
                                 whiteKeyNotes.slice(11, 18),  // C3 to B3
                                 whiteKeyNotes.slice(18, 25),  // C4 to B4
-                                whiteKeyNotes.slice(25, 32),  // C5 to B5
+                                whiteKeyNotes.slice(25, 32)   // C5 to B5
                             ]
                         }
                         else {
                             return [
                                 whiteKeyNotes.slice(18, 25),  // C4 to B4
                                 whiteKeyNotes.slice(25, 32),  // C5 to B5
-                                whiteKeyNotes.slice(32, 34),  // C6 to D6
+                                whiteKeyNotes.slice(32, 34)   // C6 to D6
                             ]
                         }
                     }
