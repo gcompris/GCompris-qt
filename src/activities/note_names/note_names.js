@@ -58,7 +58,11 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.background.clefType = levels[currentLevel]["clef"]
     items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[items.background.clefType]
-    items.doubleOctave.currentOctaveNb = 1
+    if(items.background.clefType === "Treble")
+        items.doubleOctave.currentOctaveNb = 1
+    else
+        items.doubleOctave.currentOctaveNb = 2
+
     items.multipleStaff.pauseNoteAnimation()
     items.displayNoteNameTimer.stop()
     items.addNoteTimer.stop()

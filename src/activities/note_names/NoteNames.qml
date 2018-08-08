@@ -273,7 +273,7 @@ ActivityBase {
             anchors.bottomMargin: 30
 
             readonly property int nbJointKeyboards: 2
-            readonly property int maxNbOctaves: (background.clefType === "Bass") ? 2 : 3
+            readonly property int maxNbOctaves: 3
             property int currentOctaveNb: 0
             property var coloredKeyLabels: []
 
@@ -301,12 +301,14 @@ ActivityBase {
                         if(index === 0) {
                             return [
                                 whiteKeyNotes.slice(0, 4),    // F1 to B1
+                                whiteKeyNotes.slice(4, 11),   // C2 to B2
                                 whiteKeyNotes.slice(11, 18)   // C3 to B3
                             ]
                         }
                         else {
                             return [
                                 whiteKeyNotes.slice(4, 11),   // C2 to B2
+                                whiteKeyNotes.slice(11, 18),  // C3 to B3
                                 whiteKeyNotes.slice(18, 25)   // C4 to B4
                             ]
                         }
