@@ -32,8 +32,8 @@ Rectangle {
     property string origin: ""
     property string lyrics: ""
 
-    width: horizontalLayout ? parent.width * 0.4 : parent.width * 0.8
-    height: horizontalLayout ? parent.height * 0.5 : parent.width * 0.26
+    width: horizontalLayout ? parent.width * 0.42 : parent.width * 0.8
+    height: horizontalLayout ? parent.height * 0.5 : parent.height * 0.28
     anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
     anchors.left: horizontalLayout ? parent.left : undefined
     anchors.leftMargin: parent.width * 0.02
@@ -44,7 +44,7 @@ Rectangle {
     border.color: "black"
     opacity: 0.8
     visible: background.isLyricsMode
-    Item{
+    Item {
         id: melodyTitle
         width: parent.width
         height: parent.height / 6
@@ -72,7 +72,7 @@ Rectangle {
         anchors.horizontalCenter: melodyTitle.horizontalCenter
     }
 
-    Item{
+    Item {
         id: melodyOrigin
         width: parent.width
         height: parent.height / 8
@@ -91,18 +91,18 @@ Rectangle {
         }
     }
 
-    Item{
+    Item {
         id: melodyLyrics
         width: parent.width
-        height: parent.height - melodyTitle.height - melodyOrigin.height
+        height: parent.height - melodyTitle.height - melodyOrigin.height - 20
         anchors.top: melodyOrigin.bottom
         GCText {
             fontSizeMode: Text.Fit
             wrapMode: Text.WordWrap
             text: lyricsArea.lyrics
             anchors.fill: parent
-            anchors.rightMargin: parent.width * 0.1
-            anchors.leftMargin: parent.width * 0.1
+            anchors.rightMargin: parent.width * 0.05
+            anchors.leftMargin: parent.width * 0.05
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
         }

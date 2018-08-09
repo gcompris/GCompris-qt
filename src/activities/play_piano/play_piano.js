@@ -21,7 +21,6 @@
  */
 .pragma library
 .import QtQuick 2.6 as Quick
-.import "dataset.js" as Dataset
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0
@@ -36,7 +35,7 @@ var isIntroductoryAudioPlaying = false
 function start(items_) {
     items = items_
     currentLevel = 0
-    levels = Dataset.getData()
+    levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_piano/dataset.json").levels
     items.introductoryAudioTimer.start()
 }
 

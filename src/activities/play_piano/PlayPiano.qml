@@ -133,6 +133,7 @@ ActivityBase {
             property alias score: score
             property alias iAmReady: iAmReady
             property alias introductoryAudioTimer: introductoryAudioTimer
+            property alias parser: parser
             property string mode: "coloredNotes"
         }
 
@@ -155,6 +156,10 @@ ActivityBase {
                     Activity.initSubLevel()
                 }
             }
+        }
+
+        JsonParser {
+            id: parser
         }
 
         Rectangle {
@@ -217,7 +222,6 @@ ActivityBase {
             nbStaves: 1
             clef: clefType
             coloredNotes: (items.mode === "coloredNotes") ? ['C', 'D', 'E', 'F', 'G', 'A', 'B'] : []
-            isPulseMarkerDisplayed: false
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: instruction.bottom
