@@ -33,6 +33,7 @@ Item {
     property int nbStaves
     property string clef
     property int distanceBetweenStaff: multipleStaff.height / 3.3
+    readonly property real clefImageWidth: 3 * height / 25
 
     // Stores the note index which is selected.
     property int selectedIndex: -1
@@ -193,7 +194,7 @@ Item {
                     properties: "x"
                     duration: 9000
                     from: multipleStaff.width - 10
-                    to: musicElement.clefImageWidth
+                    to: multipleStaff.clefImageWidth
                     onStopped: {
                         noteAnimationFinished()
                     }
@@ -203,7 +204,7 @@ Item {
 
         Image {
             id: secondStaffDefaultClef
-            sourceSize.width: musicElementModel.count ? musicElementRepeater.itemAt(0).clefImageWidth : 0
+            sourceSize.width: musicElementModel.count ? multipleStaff.clefImageWidth : 0
             y: staves.count === 2 ? flickableTopMargin + staves.itemAt(1).y : 0
             visible: (currentEnteringStaff === 0) && (nbStaves === 2)
             source: background.clefType ? "qrc:/gcompris/src/activities/piano_composition/resource/" + background.clefType.toLowerCase() + "Clef.svg"
@@ -289,11 +290,11 @@ Item {
         if(soundPitch == undefined || soundPitch === "")
             soundPitch = clefType
 
-        var isNextStaff = (selectedIndex == -1) && musicElementModel.count && ((staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width) < musicElementRepeater.itemAt(0).clefImageWidth)
+        var isNextStaff = (selectedIndex == -1) && musicElementModel.count && ((staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width) < multipleStaff.clefImageWidth)
 
         // If the incoming element is a clef, make sure that there is enough required space to fit one more note too. Else it creates problem when the note is erased and the view is redrawn, else move on to the next staff.
         if(elementType === "clef" && musicElementModel.count && (selectedIndex == -1)) {
-            if(staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width - 2 * Math.max(musicElementRepeater.itemAt(0).clefImageWidth, musicElementRepeater.itemAt(0).noteImageWidth)  < 0)
+            if(staves.itemAt(0).width - musicElementRepeater.itemAt(musicElementModel.count - 1).x - musicElementRepeater.itemAt(musicElementModel.count - 1).width - 2 * Math.max(multipleStaff.clefImageWidth, musicElementRepeater.itemAt(0).noteImageWidth)  < 0)
                 isNextStaff = true
         }
 

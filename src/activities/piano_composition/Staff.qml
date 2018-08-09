@@ -33,8 +33,6 @@ Item {
 
     property int verticalDistanceBetweenLines: height / nbLines
 
-    width: 400
-    height: 100
     // Stave
     readonly property int nbLines: 5
 
@@ -43,6 +41,7 @@ Item {
     readonly property int yShift: activity.horizontalLayout ? 0 : 1.5
 
     Repeater {
+        id: staffLines
         model: nbLines
         Rectangle {
             width: staff.width
@@ -53,7 +52,9 @@ Item {
         }
     }
 
+    // Ending vertical line of the staff.
     Rectangle {
+        id: staffEndLine
         width: activity.horizontalLayout ? 5 : 3
         border.width: width / 2
         height: (nbLines - 1) * verticalDistanceBetweenLines + width
@@ -62,8 +63,9 @@ Item {
         y: yShift
     }
 
-    // End of partition line
+    // The 2nd vertical line denoting the end of multiple staves
     Rectangle {
+        id: multiStaffEndLine
         width: activity.horizontalLayout ? 5 : 3
         border.width: width / 2
         height: (nbLines - 1) * verticalDistanceBetweenLines + width

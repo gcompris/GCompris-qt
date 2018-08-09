@@ -124,7 +124,7 @@ function displayNote(currentNote) {
 }
 
 function wrongAnswer() {
-    if(items.multipleStaff.musicElementRepeater.itemAt(1).x === (3 * items.multipleStaff.height / 25)) {
+    if(items.multipleStaff.musicElementRepeater.itemAt(1).x <= items.multipleStaff.clefImageWidth) {
         items.multipleStaff.musicElementModel.remove(1)
         currentNoteIndex = (currentNoteIndex + 1) % newNotesSequence.length
     }
@@ -159,7 +159,7 @@ function checkAnswer(noteName) {
 }
 
 function nextLevel() {
-    if(!items.iAmReady.visible) {
+    if(!items.iAmReady.visible && !items.introMessage.visible) {
         if(numberOfLevel <= ++ currentLevel) {
             currentLevel = 0
         }
@@ -168,7 +168,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
-    if(!items.iAmReady.visible) {
+    if(!items.iAmReady.visible && !items.introMessage.visible) {
         if(--currentLevel < 0) {
             currentLevel = numberOfLevel - 1
         }

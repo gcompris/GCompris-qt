@@ -72,7 +72,7 @@ Item {
         }
         return 0
     }
-    readonly property real clefImageWidth: 3 * multipleStaff.height / 25
+
     readonly property real noteImageWidth: (multipleStaff.width - 15 - clefImageWidth) / 10
 
     readonly property var noteColorMap: { "1": "#FF0000", "2": "#FF7F00", "3": "#FFFF00",
@@ -162,7 +162,7 @@ Item {
     Image {
         id: clefImage
         source: (elementType === "clef") ? "qrc:/gcompris/src/activities/piano_composition/resource/" + clefType.toLowerCase() + "Clef.svg" : ""
-        sourceSize.width: clefImageWidth
+        sourceSize.width: multipleStaff.clefImageWidth
     }
 
     Image {
