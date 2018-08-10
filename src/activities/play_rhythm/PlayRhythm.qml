@@ -282,11 +282,6 @@ ActivityBase {
             }
         }
 
-        OptionsRow {
-            id: optionsRow
-            visible: false
-        }
-
         DialogHelp {
             id: dialogHelp
             onClose: home()

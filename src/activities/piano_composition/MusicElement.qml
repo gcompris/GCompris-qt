@@ -54,13 +54,13 @@ Item {
     function calculateTimerDuration(noteType) {
         noteType = noteType.toLowerCase()
         if(noteType === "whole")
-            return 240000 / optionsRow.bpm
+            return 240000 / multipleStaff.bpmValue
         else if(noteType === "half")
-            return 120000 / optionsRow.bpm
+            return 120000 / multipleStaff.bpmValue
         else if(noteType === "quarter")
-            return 60000 / optionsRow.bpm
+            return 60000 / multipleStaff.bpmValue
         else
-            return 30000 / optionsRow.bpm
+            return 30000 / multipleStaff.bpmValue
     }
 
     readonly property int duration: {

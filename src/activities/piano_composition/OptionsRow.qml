@@ -43,7 +43,6 @@ Row {
     property alias lyricsOrPianoModeIndex: lyricsOrPianoModeOption.currentIndex
     property alias restOptionIndex: restOptions.currentIndex
     property alias clefButtonIndex: clefButton.currentIndex
-    property int bpm: 60
 
     property bool noteOptionsVisible: false
     property bool playButtonVisible: false
@@ -63,6 +62,8 @@ Row {
     signal saveButtonClicked
     signal playButtonClicked
     signal clefAdded
+    signal bpmIncreased
+    signal bpmDecreased
     signal emitOptionMessage(string message)
 
     SwitchableOptions {
@@ -78,6 +79,7 @@ Row {
     }
 
     Item {
+        id: bpmMeter
         width: 4 * optionsRow.iconsWidth
         height: optionsRow.iconsWidth + 10
         visible: bpmVisible
@@ -91,12 +93,11 @@ Row {
         }
 
         Image {
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
             sourceSize.width: parent.width / 4
             width: sourceSize.width
             height: width
             fillMode: Image.PreserveAspectFit
-            rotation: 180
             anchors.left: parent.left
             anchors.leftMargin: -10
             anchors.verticalCenter: parent.verticalCenter
@@ -105,8 +106,7 @@ Row {
                 interval: 500
                 repeat: true
                 onTriggered: {
-                    if(bpm - 1 >= 1)
-                        bpm--
+                    bpmDecreased()
                     interval = 1
                 }
                 onRunningChanged: {
@@ -119,8 +119,7 @@ Row {
                 anchors.fill: parent
                 onPressed: {
                     parent.scale = 0.85
-                    if(bpm - 1 >= 1)
-                        bpm--
+                    bpmDecreased()
                     decreaseBpm.start()
                 }
                 onReleased: {
@@ -131,7 +130,7 @@ Row {
         }
 
         GCText {
-            text: bpm + " BPM"
+            text: multipleStaff.bpmValue + " BPM"
             width: 0.6 * parent.width
             height: width
             verticalAlignment: Text.AlignVCenter
@@ -153,7 +152,7 @@ Row {
                 interval: 500
                 repeat: true
                 onTriggered: {
-                    bpm++
+                    bpmIncreased()
                     interval = 1
                 }
                 onRunningChanged: {
@@ -166,7 +165,7 @@ Row {
                 anchors.fill: parent
                 onPressed: {
                     parent.scale = 0.85
-                    bpm++
+                    bpmIncreased()
                     increaseBpm.start()
                 }
                 onReleased: {

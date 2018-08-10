@@ -54,6 +54,7 @@ Item {
     property bool isFlickable: true
     property bool enableNotesSound: true
     property int currentEnteringStaff: 0
+    property int bpmValue: 60
     property real firstCenteredNotePosition: multipleStaff.width / 3.3
     property real spaceBetweenCenteredNotes: 0
 

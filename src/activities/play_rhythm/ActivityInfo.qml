@@ -37,7 +37,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Simple understanding of musical rhythm and beat.")
   //: Help manual
-  manual: qsTr("Listen to the rhythm played, and follow along with the music. If you would like to hear it again, click the play button. When you're ready to perform the identical rhythm, click the drum to the rhythm. If you clicked correctly and in the right tempo, another rhythm is displayed. If not, you must try again.<br>Even levels display a vertical playing line when you click the drum, which helps you see when to click to follow the rhythm. Click on the drum when the line is in the middle of the notes.<br>Odd levels are harder, because there is no vertical playing line. You must read the rhythm, and click it back in tempo. Click the metronome to hear the quarter note tempo.")
+  manual: qsTr("Listen to the rhythm played, and follow along with the music. If you would like to hear it again, click the play button. When you're ready to perform the identical rhythm, click the drum to the rhythm. If you clicked correctly and in the right tempo, another rhythm is displayed. If not, you must try again.<br>Even levels display a vertical playing line when you click the drum, which helps you see when to click to follow the rhythm. Click on the drum when the line is in the middle of the notes.<br>Odd levels are harder, because there is no vertical playing line. You must read the rhythm, and click it back in tempo. Click the metronome to hear the quarter note tempo.<br>Click on the reload button to replay the rhythm.")
   credit: ""
   section: "discovery sound_group"
   createdInVersion: 9500

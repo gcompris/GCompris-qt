@@ -413,6 +413,13 @@ ActivityBase {
                 else
                     piano.currentOctaveNb = 1
             }
+            onBpmDecreased: {
+                if(multipleStaff.bpmValue - 1 >= 1)
+                    multipleStaff.bpmValue--
+            }
+            onBpmIncreased: {
+                multipleStaff.bpmValue++
+            }
             onEmitOptionMessage: clickedOptionMessage.show(message)
         }
 
