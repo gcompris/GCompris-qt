@@ -31,6 +31,7 @@ Item {
     id: musicElement
     width: noteImageWidth
     height: multipleStaff.height / 5
+
     property string noteName
     property string noteType
     property string soundPitch
@@ -41,12 +42,6 @@ Item {
     property string blackType: noteName === "" ? ""
                                                : noteName[1] === "#" ? "sharp"
                                                : noteName[1] === "b" ? "flat" : ""// empty, "flat" or "sharp"
-
-    readonly property int length: (elementType === "clef") ? 2000
-                                                           : (noteType === "Whole" || noteName === "whole") ? 1
-                                                           : (noteType === "Half" || noteName === "half")  ? 2
-                                                           : (noteType === "Quarter" || noteName === "quarter") ? 4
-                                                           : 8
 
     /**
      * Calculates and assign the timer interval for a note.
@@ -116,15 +111,6 @@ Item {
         anchors.bottom: noteImage.bottom
         anchors.bottomMargin: parent.height / 6
         fillMode: Image.PreserveAspectFit
-    }
-
-    Image {
-        id: highlightImage
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/note_highlight.png"
-        visible: false
-        sourceSize.width: musicElement.width
-        height: musicElement.height / 2
-        anchors.bottom: noteImage.bottom
     }
 
     Rectangle {

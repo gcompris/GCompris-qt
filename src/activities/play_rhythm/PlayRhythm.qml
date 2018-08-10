@@ -171,7 +171,7 @@ ActivityBase {
             anchors.topMargin: horizontalLayout ? 0 : parent.height * 0.1
             centerNotesPosition: true
             firstCenteredNotePosition: width / (2 * (musicElementModel.count - 1))
-            spaceBetweenCenteredNotes: width / (2.5 * (musicElementModel.count - 1))
+            spaceBetweenNotes: width / (2.5 * (musicElementModel.count - 1))
             enableNotesSound: false
             onPulseMarkerAnimationFinished: background.isRhythmPlaying = false
             onPlayDrumSound: {

@@ -37,9 +37,15 @@ Item {
 
     // Stores the note index which is selected.
     property int selectedIndex: -1
+
+    // The notes that are to be colored can be assigned to this variable in the activity
     property var coloredNotes: []
+
+    // When the notesColor is inbuilt, the default color mapping will be done, else assign any color externally in the activity. Example: Reference notes in note_names are red colored.
     property string notesColor: "inbuilt"
     property bool noteHoverEnabled: false
+
+    // Stores if the notes are to be centered on the staff. Used in Play_piano and Play_rhythm.
     property bool centerNotesPosition: false
     property bool isPulseMarkerDisplayed: false
     property bool noteAnimationEnabled: false
@@ -55,8 +61,10 @@ Item {
     property bool enableNotesSound: true
     property int currentEnteringStaff: 0
     property int bpmValue: 60
+
+    // The position where the 1st note in the centered state is to be placed.
     property real firstCenteredNotePosition: multipleStaff.width / 3.3
-    property real spaceBetweenCenteredNotes: 0
+    property real spaceBetweenNotes: 0
 
     /**
      * Emitted when a note is clicked.
@@ -163,7 +171,7 @@ Item {
                             return sharpShiftDistance + defaultXPosition + 10
                     }
                     else
-                        return sharpShiftDistance + defaultXPosition + multipleStaff.spaceBetweenCenteredNotes
+                        return sharpShiftDistance + defaultXPosition + multipleStaff.spaceBetweenNotes
                 }
 
                 onYChanged: {

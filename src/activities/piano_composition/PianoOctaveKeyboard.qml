@@ -30,9 +30,6 @@ Item {
     id: piano
     z: 3
 
-    width: numberOfWhite * 23 // 23 is default width
-    height: 120
-
     property alias keyRepeater: keyRepeater
 
     property int numberOfWhite: 7
@@ -47,6 +44,7 @@ Item {
     property bool leftOctaveVisible: false
 
     property var coloredKeyLabels: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
+    // When the labelsColor is inbuilt, the default color mapping will be done, else assign any color externally in the activity. Example: Reference keys in note_names are red colored and all other are white.
     property string labelsColor: "inbuilt"
 
     //: Translators, C, D, E, F, G, A and B are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C4 is a C note in the 4th octave.

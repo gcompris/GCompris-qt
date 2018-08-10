@@ -35,7 +35,6 @@ Row {
     //: Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
     readonly property var translatedRestNames: [qsTr("Whole rest"), qsTr("Half rest"), qsTr("Quarter rest"), qsTr("Eighth rest")]
     readonly property var restAddedMessage: [qsTr("Added whole rest"), qsTr("Added half rest"), qsTr("Added quarter rest"), qsTr("Added eighth rest")]
-    readonly property var staffModes: [[qsTr("Add"), "add"], [qsTr("Erase"), "erase"]]
     readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 
     property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing * 13) / 16)
@@ -192,6 +191,7 @@ Row {
     }
 
     Item {
+        id: clefOption
         width: 2.3 * optionsRow.iconsWidth
         height: optionsRow.iconsWidth + 10
         visible: clefButtonVisible
@@ -317,6 +317,7 @@ Row {
     }
 
     Item {
+        id: rests
         width: 2.3 * optionsRow.iconsWidth
         height: optionsRow.iconsWidth + 10
         visible: restOptionsVisible

@@ -35,8 +35,6 @@ Rectangle {
     property bool isKeyEnabled: true
 
     signal keyPressed
-    signal indicateKey
-    onIndicateKey: keyPressAnimation.start()
 
     SequentialAnimation {
         id: keyPressAnimation
