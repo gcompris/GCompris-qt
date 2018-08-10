@@ -49,4 +49,5 @@ The following keyboard bindings work in this game:
 ")
   credit: ""
   section: "discovery sound_group"
+  createdInVersion: 9500
 }
