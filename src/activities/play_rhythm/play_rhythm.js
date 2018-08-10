@@ -37,6 +37,7 @@ function start(items_) {
     levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_rhythm/resource/dataset.json").levels
     numberOfLevel = levels.length
     items.introductoryAudioTimer.start()
+    initLevel()
 }
 
 function stop() {
@@ -81,34 +82,28 @@ function checkAnswer(pulseMarkerX) {
 }
 
 function initSubLevel() {
-    if(!items.iAmReady.visible) {
-        items.metronomeOscillation.stop()
-        items.multipleStaff.stopAudios()
-        currentNote = 0
-        var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
-        items.multipleStaff.loadFromData(currentSubLevelMelody)
-        items.background.isRhythmPlaying = true
-        items.isWrongRhythm = false
+     items.metronomeOscillation.stop()
+     items.multipleStaff.stopAudios()
+     currentNote = 0
+     var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
+     items.multipleStaff.loadFromData(currentSubLevelMelody)
+     items.background.isRhythmPlaying = true
+     items.isWrongRhythm = false
 
-        if(!isIntroductoryAudioPlaying)
-            items.multipleStaff.play()
-    }
+     if(!isIntroductoryAudioPlaying && !items.iAmReady.visible)
+         items.multipleStaff.play()
 }
 
 function nextLevel() {
-    if(!items.iAmReady.visible) {
-        if(numberOfLevel <= ++currentLevel) {
-            currentLevel = 0
-        }
-        initLevel()
+    if(numberOfLevel <= ++currentLevel) {
+        currentLevel = 0
     }
+    initLevel()
 }
 
 function previousLevel() {
-    if(!items.iAmReady.visible) {
-        if(--currentLevel < 0) {
-            currentLevel = numberOfLevel - 1
-        }
-        initLevel()
+    if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
     }
+    initLevel()
 }

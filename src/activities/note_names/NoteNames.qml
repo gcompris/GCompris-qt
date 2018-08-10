@@ -205,7 +205,7 @@ ActivityBase {
                 left: parent.left
                 leftMargin: 5
             }
-            z: 10
+            z: 12
         }
 
         AdvancedTimer {
@@ -341,6 +341,7 @@ ActivityBase {
             height: width
             fillMode: Image.PreserveAspectFit
             visible: (doubleOctave.currentOctaveNb > 0) && doubleOctave.visible
+            z: 11
             anchors {
                 bottom: doubleOctave.top
                 left: doubleOctave.left
@@ -364,6 +365,7 @@ ActivityBase {
             height: width
             fillMode: Image.PreserveAspectFit
             visible: (doubleOctave.currentOctaveNb < doubleOctave.maxNbOctaves - 1) && doubleOctave.visible
+            z: 11
             anchors {
                 bottom: doubleOctave.top
                 right: doubleOctave.right
@@ -399,8 +401,8 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: {
-                multipleStaff.eraseAllNotes()
                 iAmReady.visible = true
+                Activity.initLevel()
             }
         }
 

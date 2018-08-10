@@ -43,6 +43,7 @@ function start(items_) {
     items.doubleOctave.coloredKeyLabels = dataset.referenceNotes[levels[0]["clef"]]
     items.doubleOctave.currentOctaveNb = 1
     items.introMessage.intro = [dataset.objective]
+    initLevel()
 }
 
 function stop() {
@@ -69,8 +70,10 @@ function initLevel() {
     items.multipleStaff.initClefs(items.background.clefType)
     targetNotes = JSON.parse(JSON.stringify(levels[currentLevel]["sequence"]))
     items.isTutorialMode = true
+    items.progressBar.percentage = 0
     items.multipleStaff.coloredNotes = dataset.referenceNotes[items.background.clefType]
-    showTutorial()
+    if(!items.iAmReady.visible  && ! items.introMessage.visible)
+        showTutorial()
 }
 
 function showTutorial() {
@@ -159,19 +162,15 @@ function checkAnswer(noteName) {
 }
 
 function nextLevel() {
-    if(!items.iAmReady.visible && !items.introMessage.visible) {
-        if(numberOfLevel <= ++ currentLevel) {
-            currentLevel = 0
-        }
-        initLevel()
+    if(numberOfLevel <= ++ currentLevel) {
+        currentLevel = 0
     }
+    initLevel()
 }
 
 function previousLevel() {
-    if(!items.iAmReady.visible && !items.introMessage.visible) {
-        if(--currentLevel < 0) {
-            currentLevel = numberOfLevel - 1
-        }
-        initLevel()
+    if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
     }
+    initLevel()
 }

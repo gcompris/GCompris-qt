@@ -37,6 +37,7 @@ function start(items_) {
     currentLevel = 0
     levels = items.parser.parseFromUrl("qrc:/gcompris/src/activities/play_piano/dataset.json").levels
     items.introductoryAudioTimer.start()
+    initLevel()
 }
 
 function stop() {
@@ -51,14 +52,12 @@ function initLevel() {
 }
 
 function initSubLevel() {
-    if(!items.iAmReady.visible) {
-        var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
-        noteIndexAnswered = -1
-        items.multipleStaff.loadFromData(currentSubLevelMelody)
+    var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
+    noteIndexAnswered = -1
+    items.multipleStaff.loadFromData(currentSubLevelMelody)
 
-        if(!isIntroductoryAudioPlaying)
-            items.multipleStaff.play()
-    }
+    if(!isIntroductoryAudioPlaying && !items.iAmReady.visible)
+        items.multipleStaff.play()
 }
 
 function nextSubLevel() {
@@ -103,19 +102,15 @@ function checkAnswer(noteName) {
 }
 
 function nextLevel() {
-    if(!items.iAmReady.visible) {
-        if(numberOfLevel <= ++currentLevel) {
-            currentLevel = 0
-        }
-        initLevel()
+    if(numberOfLevel <= ++currentLevel) {
+        currentLevel = 0
     }
+    initLevel()
 }
 
 function previousLevel() {
-    if(!items.iAmReady.visible) {
-        if(--currentLevel < 0) {
-            currentLevel = numberOfLevel - 1
-        }
-        initLevel()
+     if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
     }
+    initLevel()
 }
