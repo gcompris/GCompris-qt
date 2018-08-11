@@ -85,6 +85,9 @@ ActivityBase {
                 if(event.key === Qt.Key_7) {
                     piano.keyRepeater.itemAt(6).whiteKey.keyPressed()
                 }
+                if(event.key === Qt.Key_8) {
+                    piano.keyRepeater.itemAt(7).whiteKey.keyPressed()
+                }
                 if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
                     findBlackKey(1)
                 }
