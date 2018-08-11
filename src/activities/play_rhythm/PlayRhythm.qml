@@ -180,11 +180,6 @@ ActivityBase {
             }
         }
 
-        PianoOctaveKeyboard {
-            id: piano
-            visible: false
-        }
-
         Image {
             id: tempo
             source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.png"
