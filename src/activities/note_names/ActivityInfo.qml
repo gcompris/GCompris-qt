@@ -30,7 +30,7 @@ ActivityInfo {
   description: qsTr("Learn the names of the notes, in bass and treble clef.")
   //intro: "Identify the note and press the correct piano key"
   goal: qsTr("To develop a good understanding of note position and naming convention. To prepare for the piano player and composition activity.")
-  prerequisite: qsTr("None")
+  prerequisite: ""
   manual: qsTr("Identify the notes correctly and score a 100% to complete a level.")
   credit: ""
   section: "discovery sound"

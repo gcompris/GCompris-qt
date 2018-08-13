@@ -48,28 +48,19 @@ ActivityBase {
         }
 
         Keys.onPressed: {
+            var keyNoteBindings = {}
+            keyNoteBindings[Qt.Key_1] = 'C'
+            keyNoteBindings[Qt.Key_2] = 'D'
+            keyNoteBindings[Qt.Key_3] = 'E'
+            keyNoteBindings[Qt.Key_4] = 'F'
+            keyNoteBindings[Qt.Key_5] = 'G'
+            keyNoteBindings[Qt.Key_6] = 'A'
+            keyNoteBindings[Qt.Key_7] = 'B'
+
             if(!introMessage.visible && !iAmReady.visible && !messageBox.visible && multipleStaff.musicElementModel.count - 1) {
-                // If the key pressed matches the note, pass the correct answer as parameter, else pass a wrong answer.
-                if(event.key === Qt.Key_1) {
-                    isCorrectKey('C')
-                }
-                else if(event.key === Qt.Key_2) {
-                    isCorrectKey('D')
-                }
-                else if(event.key === Qt.Key_3) {
-                    isCorrectKey('E')
-                }
-                else if(event.key === Qt.Key_4) {
-                    isCorrectKey('F')
-                }
-                else if(event.key === Qt.Key_5) {
-                    isCorrectKey('G')
-                }
-                else if(event.key === Qt.Key_6) {
-                    isCorrectKey('A')
-                }
-                else if(event.key === Qt.Key_7) {
-                    isCorrectKey('B')
+                if(keyNoteBindings[event.key]) {
+                    // If the key pressed matches the note, pass the correct answer as parameter.	
+                    isCorrectKey(keyNoteBindings[event.key])
                 }
                 else if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
                     doubleOctave.currentOctaveNb--
@@ -238,7 +229,7 @@ ActivityBase {
                 fontSize: mediumSize
                 font.bold: true
                 color: "black"
-                //: %1 is replaced by a number (parent.value) and is followed by a % symbol.
+                //: The following translation represents percentage.
                 text: qsTr("%1%").arg(parent.value)
                 z: 2
             }

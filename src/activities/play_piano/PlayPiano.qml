@@ -63,50 +63,33 @@ ActivityBase {
         }
 
         Keys.onPressed: {
+            var keyboardBindings = {}
+            keyboardBindings[Qt.Key_1] = 0
+            keyboardBindings[Qt.Key_2] = 1
+            keyboardBindings[Qt.Key_3] = 2
+            keyboardBindings[Qt.Key_4] = 3
+            keyboardBindings[Qt.Key_5] = 4
+            keyboardBindings[Qt.Key_6] = 5
+            keyboardBindings[Qt.Key_7] = 6
+            keyboardBindings[Qt.Key_8] = 7
+            keyboardBindings[Qt.Key_F1] = 1
+            keyboardBindings[Qt.Key_F2] = 2
+            keyboardBindings[Qt.Key_F3] = 3
+            keyboardBindings[Qt.Key_F4] = 4
+            keyboardBindings[Qt.Key_F5] = 5
+
             if(piano.whiteKeysEnabled && !iAmReady.visible) {
-                if(event.key === Qt.Key_1) {
-                    piano.keyRepeater.itemAt(0).whiteKey.keyPressed()
+                if(event.key >= Qt.Key_1 && event.key <= Qt.Key_8) {
+                    piano.keyRepeater.itemAt(keyboardBindings[event.key]).whiteKey.keyPressed()
                 }
-                if(event.key === Qt.Key_2) {
-                    piano.keyRepeater.itemAt(1).whiteKey.keyPressed()
+                else if(event.key >= Qt.Key_F1 && event.key <= Qt.Key_F5) {
+                    if(piano.blackKeysEnabled)
+                        findBlackKey(keyboardBindings[event.key])
                 }
-                if(event.key === Qt.Key_3) {
-                    piano.keyRepeater.itemAt(2).whiteKey.keyPressed()
-                }
-                if(event.key === Qt.Key_4) {
-                    piano.keyRepeater.itemAt(3).whiteKey.keyPressed()
-                }
-                if(event.key === Qt.Key_5) {
-                    piano.keyRepeater.itemAt(4).whiteKey.keyPressed()
-                }
-                if(event.key === Qt.Key_6) {
-                    piano.keyRepeater.itemAt(5).whiteKey.keyPressed()
-                }
-                if(event.key === Qt.Key_7) {
-                    piano.keyRepeater.itemAt(6).whiteKey.keyPressed()
-                }
-                if(event.key === Qt.Key_8) {
-                    piano.keyRepeater.itemAt(7).whiteKey.keyPressed()
-                }
-                if(event.key === Qt.Key_F1 && piano.blackKeysEnabled) {
-                    findBlackKey(1)
-                }
-                if(event.key === Qt.Key_F2 && piano.blackKeysEnabled) {
-                    findBlackKey(2)
-                }
-                if(event.key === Qt.Key_F3 && piano.blackKeysEnabled) {
-                    findBlackKey(3)
-                }
-                if(event.key === Qt.Key_F4 && piano.blackKeysEnabled) {
-                    findBlackKey(4)
-                }
-                if(event.key === Qt.Key_F5 && piano.blackKeysEnabled) {
-                    findBlackKey(5)
-                }
-                if(event.key === Qt.Key_Space) {
+                else if(event.key === Qt.Key_Space) {
                     multipleStaff.play()
                 }
-                if(event.key === Qt.Key_Backspace || event.key === Qt.Key_Delete) {
+                else if(event.key === Qt.Key_Backspace || event.key === Qt.Key_Delete) {
                     Activity.undoPreviousAnswer()
                 }
             }
@@ -118,7 +101,7 @@ ActivityBase {
                     break
                 if(piano.keyRepeater.itemAt(i).blackKey.visible)
                     keyNumber--
-                if(!keyNumber)
+                if(keyNumber === 0)
                     piano.keyRepeater.itemAt(i).blackKey.keyPressed()
             }
         }
