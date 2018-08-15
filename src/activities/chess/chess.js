@@ -124,6 +124,7 @@ function simplifiedState(state) {
 }
 
 function updateMessage(move) {
+    items.isWarningMessage = false
     items.gameOver = false
     items.message = items.blackTurn ? qsTr("Black's turn") : qsTr("White's turn")
     if(!move)
@@ -146,6 +147,7 @@ function updateMessage(move) {
     } else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK) {
         items.message = items.blackTurn ? qsTr("White checks", "black king is under attack") : qsTr("Black checks", "white king is under attack")
     } else if(move.flags == Engine.P4_MOVE_ILLEGAL) {
+        items.isWarningMessage = true
         items.message = qsTr("Invalid, your king may be in check")
     }
 }

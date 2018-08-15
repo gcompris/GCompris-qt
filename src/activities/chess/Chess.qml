@@ -86,6 +86,7 @@ ActivityBase {
             property bool blackTurn
             property bool gameOver
             property string message
+            property bool isWarningMessage
             property alias trigComputerMove: trigComputerMove
 
             Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
@@ -124,7 +125,7 @@ ActivityBase {
                                         (background.width - chessboard.width) / 2))
 
                 GCText {
-                    color: "white"
+                    color: items.isWarningMessage ? "red" : "white"
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: parent.width
                     fontSize: smallSize
