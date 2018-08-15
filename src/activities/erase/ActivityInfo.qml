@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Move the mouse or touch the screen until all the blocks disappear.")
   credit: ""
   section: "computer mouse"
+  createdInVersion: 0
 }

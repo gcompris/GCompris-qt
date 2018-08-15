@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Listen to the color and touch the matching duck.")
   credit: ""
   section: "discovery color"
+  createdInVersion: 0
 }

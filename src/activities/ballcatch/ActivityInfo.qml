@@ -36,4 +36,5 @@ ActivityInfo {
     manual: qsTr("Press the left and right arrow at the same time, to make the ball go in a straight line. On a touch screen you have to hit the two hands at the same time.")
     credit: ""
     section: "computer keyboard"
+  createdInVersion: 0
 }

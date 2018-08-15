@@ -41,4 +41,5 @@ ActivityInfo {
 \t")
   credit: ""
   section: "discovery maze"
+  createdInVersion: 0
 }

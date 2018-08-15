@@ -42,4 +42,5 @@ ActivityInfo {
 \t")
   credit: ""
   section: "discovery mazeMenu"
+  createdInVersion: 0
 }

@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Click or tap on the blocks all of them disappear.")
   credit: ""
   section: "computer mouse"
+  createdInVersion: 0
 }

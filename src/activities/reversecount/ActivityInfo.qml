@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Click on the dice to show how many ice spots there are between Tux and the fish. Click the dice with the right mouse button to count backwards. When done, click on the OK button or hit the Enter key.")
   credit: ""
   section: "math numeration"
+  createdInVersion: 0
 }

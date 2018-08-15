@@ -40,4 +40,5 @@ In case of paints the inks absorb different colors of light falling on it, subtr
         ")
   credit: qsTr("Images from http://openclipart.org")
   section: "experiment color"
+  createdInVersion: 0
 }

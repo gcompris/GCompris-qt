@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Draw the picture by touching each number in the right sequence, or sliding your finger or dragging the mouse through the numbers in the correct sequence.")
   credit: ""
   section: "math numeration"
+  createdInVersion: 0
 }

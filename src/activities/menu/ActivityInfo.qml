@@ -52,4 +52,5 @@ Shortcuts:
     " )
   credit: ""
   section: "/"
+  createdInVersion: 0
 }

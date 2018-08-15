@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("First select the item you want to put then click on a spot on the empty area")
   credit: ""
   section: "discovery"
+  createdInVersion: 0
 }

@@ -39,4 +39,5 @@ ActivityInfo {
                "You must click on it to bring it back to its former position.")
   credit: ""
   section: "computer mouse"
+  createdInVersion: 0
 }

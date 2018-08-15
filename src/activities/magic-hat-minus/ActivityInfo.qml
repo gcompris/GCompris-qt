@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Click on the hat to open it. Stars go in and a few stars escape. You have to count how many are still under the hat. Click on the bottom area to input your answer and on the OK button to validate your answer.")
   credit: ""
   section: "math numeration"
+  createdInVersion: 0
 }

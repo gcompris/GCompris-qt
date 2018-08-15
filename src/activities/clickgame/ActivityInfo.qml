@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Catch all the moving fish by simple clicking or touching them with your finger.")
   credit: qsTr("Fish are taken from the Unix utility xfishtank. All image credits belong to Guillaume Rousse.")
   section: "computer mouse"
+  createdInVersion: 0
 }

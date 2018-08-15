@@ -43,4 +43,5 @@ In level three, a random text prompt is displayed and you must click on the anim
 ")
   credit: ""
   section: "discovery sound_group"
+  createdInVersion: 0
 }

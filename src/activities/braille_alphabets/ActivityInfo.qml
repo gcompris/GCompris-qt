@@ -37,4 +37,5 @@ ActivityInfo {
                "and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.")
   credit: ""
   section: "discovery braille"
+  createdInVersion: 0
 }

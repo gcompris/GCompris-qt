@@ -36,4 +36,5 @@ ActivityInfo {
     manual: qsTr("Catch the clouds in increasing order. With a keyboard use the arrow keys to move the helicopter. With a pointing device you just click or tap on the target location. To know which number you have to catch you can either remember it or check the bottom right corner.")
     credit: ""
   section: "math numeration"
+  createdInVersion: 0
 }

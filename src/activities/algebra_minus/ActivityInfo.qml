@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("A subtraction is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!")
   credit: ""
   section: "math subtraction"
+  createdInVersion: 0
 }

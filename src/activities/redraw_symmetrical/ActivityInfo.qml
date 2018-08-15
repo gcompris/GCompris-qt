@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("First, select the proper color from the toolbar. Then click on the grid and drag to paint, then release the click to stop painting.")
   credit: ""
   section: "math geometry symmetry puzzle"
+  createdInVersion: 0
 }

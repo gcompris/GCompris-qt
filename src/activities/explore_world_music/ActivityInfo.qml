@@ -43,4 +43,5 @@ The third level is also a matching game. You must select the location that match
 ")
   credit: qsTr("Images from http://commons.wikimedia.org/wiki, http://archive.org")
   section: "discovery sound_group"
+  createdInVersion: 0
 }

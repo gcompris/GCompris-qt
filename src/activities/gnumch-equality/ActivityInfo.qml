@@ -40,4 +40,5 @@ ActivityInfo {
           qsTr("Take care to avoid the Troggles.")
   credit: ""
   section: "math"
+  createdInVersion: 0
 }

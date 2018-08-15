@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Draw the picture by clicking on each point in sequence. Each time a point is selected the next blue one appears.")
   credit: ""
   section: "computer mouse"
+  createdInVersion: 0
 }

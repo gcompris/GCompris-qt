@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("To balance the scales, move the masses to the left or the right side (on higher levels). They can be arranged in any order. Take care of the weight and the unit of the masses, remember that a kilogram (kg) is 1000 grams (g).")
   credit: ""
   section: "math"
+  createdInVersion: 0
 }

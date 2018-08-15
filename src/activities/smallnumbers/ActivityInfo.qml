@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("With the keyboard, type the number of dots you see on the falling dice.")
   credit: ""
   section: "computer keyboard math numeration"
+  createdInVersion: 0
 }

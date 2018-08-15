@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("With the keyboard, type the number of dots you see on the falling dominoes.")
   credit: ""
   section: "math numeration"
+  createdInVersion: 0
 }

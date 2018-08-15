@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Type the falling letters before they reach the ground")
   credit: ""
   section: "computer keyboard reading"
+  createdInVersion: 0
 }

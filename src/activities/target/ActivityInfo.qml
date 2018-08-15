@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Check the speed and direction of the target, and then click on it to launch a dart. When all your darts are thrown, you are asked to count your score. Enter the score with the keyboard.")
   credit: ""
   section: "math addition"
+  createdInVersion: 0
 }

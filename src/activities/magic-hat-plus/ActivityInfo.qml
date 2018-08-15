@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Click on the hat to open it. Under the hat, how many stars can you see moving around? Count carefully. Click on the bottom area to input your answer and on the OK button to validate your answer.")
   credit: ""
   section: "math numeration"
+  createdInVersion: 0
 }

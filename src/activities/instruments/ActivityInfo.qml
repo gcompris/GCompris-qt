@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Click on the correct instrument.")
   credit: ""
   section: "discovery music"
+  createdInVersion: 0
 }

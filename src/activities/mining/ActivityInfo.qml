@@ -42,4 +42,5 @@ The truck in the lower, right corner of the screen will tell you the number of a
 - realrainbow.ogg - used when a new gold nugget appears
 - metalpaint.wav - remixed and used when a gold nugget is collected")
   section: "computer mouse"
+  createdInVersion: 0
 }

@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Double tap or double click the mouse on rectangles until all the blocks disappear.")
   credit: ""
   section: "computer mouse"
+  createdInVersion: 0
 }

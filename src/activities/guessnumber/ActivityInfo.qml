@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Read the instructions that give you the range of the number to find. Enter a number in the top right entry box. You will be told if your number is higher or lower. Then enter another number. The distance between Tux and the escape area on the right represents how far you are from the correct number. If Tux is over or under the escape area, it means your number is over or under the correct number.")
   credit: ""
   section: "math numeration"
+  createdInVersion: 0
 }

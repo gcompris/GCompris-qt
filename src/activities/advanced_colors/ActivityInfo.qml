@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("You will see dancing butterflies of different colors and a question. You have to find the correct butterfly and touch it.")
   credit: ""
   section: "discovery colors"
+  createdInVersion: 0
 }

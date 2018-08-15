@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Click or tap on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click or tap on it on the upper screen area.")
   credit: ""
   section: "math numeration money"
+  createdInVersion: 0
 }

@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Each car can only move either horizontally or vertically. You must make some room in order to let the red car move through the gate on the right.")
   credit: ""
   section: "puzzle"
+  createdInVersion: 0
 }

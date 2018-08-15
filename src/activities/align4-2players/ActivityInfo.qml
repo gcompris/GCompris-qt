@@ -34,4 +34,5 @@ ActivityInfo {
   manual: qsTr("Play with a friend. Take turns to click the line in which you want to drop a token. You can also use the arrow keys to move the token left or right, and the down or space key to drop a token. First player to create a line of 4 tokens wins")
   credit: ""
   section: "strategy"
+  createdInVersion: 0
 }

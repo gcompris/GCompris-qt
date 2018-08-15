@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Drag a line from the ball, to set its speed and direction.")
   credit: ""
   section: "fun"
+  createdInVersion: 0
 }

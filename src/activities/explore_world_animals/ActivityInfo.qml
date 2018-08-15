@@ -45,4 +45,5 @@ In level two, a random text prompt is displayed and you must click on the animal
 ")
   credit: ""
   section: "discovery miscellaneous"
+  createdInVersion: 0
 }
