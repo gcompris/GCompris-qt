@@ -406,6 +406,7 @@
       <caption>"Click on an uppercase letter" activity</caption>
       <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="ca-valencia">Activitat «Fes clic en una lletra en majúscula»</caption>
+      <caption xml:lang="en-GB">"Click on an uppercase letter" activity</caption>
       <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="nl">"Click op een hoofdletter" activiteit</caption>
@@ -419,6 +420,7 @@
       <caption>"Learning Clock" activity</caption>
       <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="ca-valencia">Activitat «Rellotge d'aprenentatge»</caption>
+      <caption xml:lang="en-GB">"Learning Clock" activity</caption>
       <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="nl">Activiteit "Leren klok kijken</caption>
@@ -432,6 +434,7 @@
       <caption>"Mixing color of paint" activity</caption>
       <caption xml:lang="ca">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="ca-valencia">Activitat «Barreja els colors de la pintura»</caption>
+      <caption xml:lang="en-GB">"Mixing colour of paint" activity</caption>
       <caption xml:lang="fr">L'activité « Mélange de la couleur de peinture »</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="nl">Activiteit "Verfkleuren mengen"</caption>
@@ -445,6 +448,7 @@
       <caption>"Colors" activity</caption>
       <caption xml:lang="ca">Activitat «Colors»</caption>
       <caption xml:lang="ca-valencia">Activitat «Colors»</caption>
+      <caption xml:lang="en-GB">"Colours" activity</caption>
       <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="nl">Activiteit "Kleuren"</caption>
@@ -458,6 +462,7 @@
       <caption>"Build the same model" activity</caption>
       <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
+      <caption xml:lang="en-GB">"Build the same model" activity</caption>
       <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="nl">Activiteit "Bouw hetzelfde model"</caption>
@@ -471,6 +476,7 @@
       <caption>"Count the items" activity</caption>
       <caption xml:lang="ca">Activitat «Compta els elements»</caption>
       <caption xml:lang="ca-valencia">Activitat «Compta els elements»</caption>
+      <caption xml:lang="en-GB">"Count the items" activity</caption>
       <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="nl">Activiteit "Tel het aantal items"</caption>
@@ -484,6 +490,7 @@
       <caption>"The fifteen game" activity</caption>
       <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="ca-valencia">Activitat «El joc dels quinze»</caption>
+      <caption xml:lang="en-GB">"The fifteen game" activity</caption>
       <caption xml:lang="fr">L'activité « Le jeu du taquin »</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="nl">Activiteit "Het vijftien-spel"</caption>
@@ -497,6 +504,7 @@
       <caption>"Hexagon" activity</caption>
       <caption xml:lang="ca">Activitat «Hexàgon»</caption>
       <caption xml:lang="ca-valencia">Activitat «Hexàgon»</caption>
+      <caption xml:lang="en-GB">"Hexagon" activity</caption>
       <caption xml:lang="fr">L'activité « Localiser la fraise »</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="nl">Activiteit "Hexagon"</caption>
@@ -510,6 +518,7 @@
       <caption>"Balance the scales properly" activity</caption>
       <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="ca-valencia">Activitat «Equilibra correctament la balança»</caption>
+      <caption xml:lang="en-GB">"Balance the scales properly" activity</caption>
       <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="nl">Activiteit "Breng de weegschaal in evenwicht"</caption>
@@ -523,6 +532,7 @@
       <caption>"End of chess game" activity</caption>
       <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="ca-valencia">Activitat «Final de la partida d'escacs»</caption>
+      <caption xml:lang="en-GB">"End of chess game" activity</caption>
       <caption xml:lang="fr">L'activité « Le jeu des échecs »</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="nl">Activiteit "Eindspel van schaken"</caption>
@@ -536,6 +546,7 @@
       <caption>"A sliding-block puzzle game" activity</caption>
       <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="ca-valencia">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
+      <caption xml:lang="en-GB">"A sliding-block puzzle game" activity</caption>
       <caption xml:lang="fr">L'activité « Sortir la voiture du parking »</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="nl">Activiteit "Een puzzel met schuivende blokken"</caption>
