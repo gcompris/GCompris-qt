@@ -539,13 +539,14 @@ ActivityBase {
                             canvas.requestPaint()
                         }
 
-                        if (items.toolSelected == "text" && onBoardText.text != "") {
+                        if (items.toolSelected == "text") {
                             canvas.removeShadow()
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.font = inputTextFrame.font
                             console.log(inputTextFrame.font)
                             canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
                             onBoardText.text = ""
+                            Activity.selectTool("Brush")
 
                             canvas.requestPaint()
                         }
