@@ -346,7 +346,7 @@ function selectTool(toolName) {
             else {
                 items.urlImage = undo[undo.length - 1]
             }
-
+            items.canvas.ctx.globalCompositeOperation = 'source-over'
             ctx = items.canvas.getContext("2d")
             ctx.clearRect(0, 0, items.background.width, items.background.height)
             ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
