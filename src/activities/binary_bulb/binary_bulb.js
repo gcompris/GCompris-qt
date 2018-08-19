@@ -43,6 +43,7 @@ function resetBulbs() {
 }
 
 function initializeValues() {
+    items.currentSelectedBulb = -1
     items.numberSoFar = 0
     items.numberOfBulbs = dataset[items.currentLevel].bulbCount
     items.numberToConvert = dataset[items.currentLevel].numbersToBeConverted[items.score.currentSubLevel - 1]
@@ -60,22 +61,23 @@ function equalityCheck() {
             items.bonus.good("lion")
             resetBulbs()
         }
-    }           
+    }
     else {
         items.bonus.bad("lion")
         resetBulbs()
         items.numberSoFar = 0
-    }    
+    }
 }
 
-function changeState(index,value) {
-    if(items.bulbs.itemAt(index).state == "off") {
-        items.bulbs.itemAt(index).state = "on"
-        items.numberSoFar += value
-    }   
+function changeState(index) {
+    var currentBulb = items.bulbs.itemAt(index)
+    if(currentBulb.state == "off") {
+        currentBulb.state = "on"
+        items.numberSoFar += currentBulb.value
+    }
     else {
-        items.bulbs.itemAt(index).state = "off"
-        items.numberSoFar -= value
+        currentBulb.state = "off"
+        items.numberSoFar -= currentBulb.value
     }
 }
 
@@ -88,16 +90,22 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++items.currentLevel ) {
+    if(numberOfLevel <= items.currentLevel + 1) {
         items.currentLevel = 0
+    }
+    else {
+        ++ items.currentLevel
     }
     items.score.currentSubLevel = 1
     initLevel();
 }
 
 function previousLevel() {
-    if(--items.currentLevel < 0) {
+    if(items.currentLevel-1 < 0) {
         items.currentLevel = numberOfLevel - 1
+    }
+    else {
+        --items.currentLevel
     }
     items.score.currentSubLevel = 1
     initLevel();

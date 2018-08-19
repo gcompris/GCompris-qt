@@ -20,12 +20,12 @@ function get() {
     return [
                 { //level1
                     "bulbCount": 2,
-                    "numbersToBeConverted": [3],
+                    "numbersToBeConverted": [1, 2, 3],
                     "enableHelp": true
                 },
                 { //level 2
                     "bulbCount": 2,
-                    "numbersToBeConverted": [1, 2],
+                    "numbersToBeConverted": [1, 2, 3],
                     "enableHelp": false
                 },
                 { //level3

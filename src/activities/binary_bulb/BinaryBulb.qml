@@ -12,7 +12,7 @@
  *
  *   This program is distributed in the hope that it will be useful,
  *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
@@ -56,6 +56,7 @@ ActivityBase {
             property int numberSoFar: 0
             property int numberToConvert: 0
             property int numberOfBulbs: 0
+            property int currentSelectedBulb: -1
             property int currentLevel: 0
             property alias score: score
         }
@@ -69,12 +70,12 @@ ActivityBase {
                 Activity.initLevel()
             }
             intro: [
-                qsTr("Computers use Binary number system, where there are two symbols, 0 and 1."),
-                qsTr("In decimal number system 123 is represented as 1 x 100 + 2 x 10 + 3 x 1"),
-                qsTr("Binary represents numbers in the same pattern, but using powers of 2 instead of powers of 10 that decimal uses"),
-                qsTr("So, 1 in binary is represented by 001, 4 by 100, 7 by 111 and so on.."),
-                qsTr("Our computer has many many switches (called transistors) that can be turned on or off given electricity, and a switch that is on will represent a 1 and a switch that is off will represent a 0."),
-                qsTr("In this activity, you are given a number, you have to find its binary representation by turning on the bulbs. An on bulb representes 1 and an off bulb represents 0")
+                qsTr("Computers use binary number system, where there are two symbols, 0 and 1."),
+                qsTr("In decimal number system 123 is represented as 1 x 100 + 2 x 10 + 3 x 1."),
+                qsTr("Binary represents numbers in the same pattern, but using powers of 2 instead of powers of 10 that decimal uses."),
+                qsTr("So, 1 in binary is represented by 001, 4 by 100, 7 by 111 and so on..."),
+                qsTr("Our computer has a lot of switches (called transistors) that can be turned on or off given electricity. A switch that is on will represent a 1 and a switch that is off will represent a 0."),
+                qsTr("In this activity, you are given a number, you have to find its binary representation by turning on the bulbs. An on bulb represents 1 and an off bulb represents 0.")
             ]
             z: 20
             anchors {
@@ -91,18 +92,33 @@ ActivityBase {
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 Activity.equalityCheck()
             }
+            else if(event.key == Qt.Key_Space) {
+                if(items.currentSelectedBulb != -1) {
+                    Activity.changeState(items.currentSelectedBulb)
+                }
+            }
+            else if(event.key == Qt.Key_Left) {
+                if(--items.currentSelectedBulb < 0) {
+                    items.currentSelectedBulb = items.numberOfBulbs-1
+                }
+            }
+            else if(event.key == Qt.Key_Right) {
+                if(++items.currentSelectedBulb >= items.numberOfBulbs) {
+                    items.currentSelectedBulb = 0
+                }
+            }
         }
 
         Rectangle {
             id: questionItemBackground
-            opacity: 0.00
+            opacity: 0
             z: 10
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 bottomMargin: 10
             }
-            width: parent.width - 20
-            height: parent.height * 0.30
+            height: background.height / 6
+            width: parent.width - 20 * ApplicationInfo.ratio
         }
 
         GCText {
@@ -110,7 +126,6 @@ ActivityBase {
             anchors.fill: questionItemBackground
             anchors.bottom: questionItemBackground.bottom
             fontSizeMode: Text.Fit
-            fontSize: largeSize
             wrapMode: Text.Wrap
             z: 10
             color: "white"
@@ -121,7 +136,9 @@ ActivityBase {
 
         Row {
             id: row
-            anchors.centerIn: parent
+            anchors.top: questionItem.bottom
+            anchors.topMargin: 30 * ApplicationInfo.ratio
+            anchors.horizontalCenter: parent.horizontalCenter
             spacing: 10 * ApplicationInfo.ratio
             Repeater {
                 id: bulbs
@@ -137,7 +154,7 @@ ActivityBase {
             id: reachedSoFar
             anchors.horizontalCenter: row.horizontalCenter
             anchors.top: row.bottom
-            anchors.topMargin: 25
+            anchors.topMargin: 30 * ApplicationInfo.ratio
             color: "white"
             fontSize: largeSize
             text: items.numberSoFar
@@ -152,9 +169,10 @@ ActivityBase {
                 rightMargin: 10 * ApplicationInfo.ratio
                 bottomMargin: 10 * ApplicationInfo.ratio
             }
-            source: "/gcompris/src/core/resource/bar_ok.svg"
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
             onClicked: Activity.equalityCheck()
+            enabled: !bonus.isPlaying && !score.isWinAnimationPlaying
         }
 
         DialogHelp {
@@ -181,7 +199,7 @@ ActivityBase {
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.rightMargin: 0
-        }        
+        }
 
         Bonus {
             id: bonus

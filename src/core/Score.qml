@@ -97,6 +97,8 @@ Rectangle {
     onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onPlayWinAnimation: winAnimation.start()
 
+    readonly property bool isWinAnimationPlaying: winAnimation.running
+
     GCText {
         id: subLevelText
         anchors.centerIn: parent

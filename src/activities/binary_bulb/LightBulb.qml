@@ -23,16 +23,31 @@ import "../../core"
 import GCompris 1.0
 import "binary_bulb.js" as Activity
 
-Image {
+Item {
     id: bulb
     anchors.verticalCenter: parent.verticalCenter
-    sourceSize.height: 60 * ApplicationInfo.ratio
-    source: "resource/bulb_off.svg"
     state: "off"
     focus: true
 
+    Rectangle {
+        color: "transparent"
+        width: parent.width + 10
+        height: parent.height + 10
+        border.color: "red"
+        border.width: 3
+        anchors.centerIn: bulbImage
+        radius: 5
+        visible: index == items.currentSelectedBulb
+    }
+    Image {
+        id: bulbImage
+        height: parent.height
+        width: parent.width
+        sourceSize.height: 60 * ApplicationInfo.ratio
+        source: "resource/bulb_off.svg"
+    }
     property string bit: ""
-    readonly property int value: Math.pow(2,items.numberOfBulbs-index-1)
+    readonly property int value: Math.pow(2, items.numberOfBulbs - index - 1)
 
     GCText {
         anchors.bottom: parent.top
@@ -43,7 +58,7 @@ Image {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: Activity.changeState(index, value)
+        onClicked: Activity.changeState(index)
     }
 
     GCText {
@@ -58,16 +73,22 @@ Image {
             name: "off"
             PropertyChanges {
                 target: bulb
-                source: "resource/bulb_off.svg"
                 bit: "0"
+            }
+            PropertyChanges {
+                target: bulbImage
+                source: "resource/bulb_off.svg"
             }
         },
         State {
             name: "on"
             PropertyChanges {
                 target: bulb
-                source: "resource/bulb_on.svg"
                 bit: "1"
+            }
+            PropertyChanges {
+                target: bulbImage
+                source: "resource/bulb_on.svg"
             }
         }
     ]
