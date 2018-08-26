@@ -64,29 +64,24 @@ ActivityBase {
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
-        IntroMessage {
-            id: message
-            onIntroDone: {
-                Activity.initLevel()
-            }
-            intro: [
-                qsTr("Computers use binary number system, where there are two symbols, 0 and 1."),
-                qsTr("In decimal number system 123 is represented as 1 x 100 + 2 x 10 + 3 x 1."),
-                qsTr("Binary represents numbers in the same pattern, but using powers of 2 instead of powers of 10 that decimal uses."),
-                qsTr("So, 1 in binary is represented by 001, 4 by 100, 7 by 111 and so on..."),
-                qsTr("Our computer has a lot of switches (called transistors) that can be turned on or off given electricity. A switch that is on will represent a 1 and a switch that is off will represent a 0."),
-                qsTr("In this activity, you are given a number, you have to find its binary representation by turning on the bulbs. An on bulb represents 1 and an off bulb represents 0.")
-            ]
-            z: 20
-            anchors {
-                top: parent.top
-                topMargin: 10
-                right: parent.right
-                rightMargin: 5
-                left: parent.left
-                leftMargin: 5
+        // Tutorial section starts
+        Image {
+            id: tutorialImage
+            source: Activity.url + "background.svg"
+            anchors.fill: parent
+            z: 5
+            visible: true
+            Tutorial {
+                id: tutorialSection
+                tutorialDetails: Activity.tutorialInstructions
+                onSkipPressed: {
+                    Activity.initLevel()
+                    tutorialImage.visible = false
+                }
             }
         }
+        // Tutorial section ends
+
 
         Keys.onPressed: {
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
@@ -127,7 +122,7 @@ ActivityBase {
             anchors.bottom: questionItemBackground.bottom
             fontSizeMode: Text.Fit
             wrapMode: Text.Wrap
-            z: 10
+            z: 4
             color: "white"
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
@@ -194,6 +189,7 @@ ActivityBase {
 
         Score {
             id: score
+            visible: !tutorialImage.visible
             anchors.bottom: bar.top
             anchors.right: bar.right
             anchors.left: parent.left

@@ -25,6 +25,41 @@
 var numberOfLevel
 var items
 var dataset
+var url = "qrc:/gcompris/src/activities/binary_bulb/resource/"
+var tutorialInstructions = [
+            {
+                "instruction": qsTr("This activity teaches how to convert decimal numbers to binary numbers."),
+                "instructionImage" : "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial1.svg"
+            },
+            {
+                "instruction": qsTr("Computers use transistors to count and transistors have only 2 states, 0 and 1. Mathematically they are represented by binary digits, a digit like a transistor has 2 states, 0 and 1."),
+                "instructionImage" : "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial2.svg"
+            },
+            {
+                "instruction": qsTr("Binary system uses these digits in a very efficient way, allowing with only 8 bits to count from 0 to 255."),
+                "instructionImage": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial3.svg"
+            },
+            {
+                "instruction": qsTr("Each bit has a weight, from right to left 1, 2, 4, 8, 16, 32 etc.. They correspond to 2e0, 2e1, 2e2, 2e3 etc."),
+                "instructionImage": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial4.svg"
+            },
+            {
+                "instruction":  qsTr("To convert a decimal 5 to a binary value, 1 and 4 are added."),
+                "instructionImage": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial5.svg"
+            },
+            {
+                "instruction": qsTr("Their corresponding bits are set to 1, the others set to 0. Decimal 5 is equal to binary 101."),
+                "instructionImage": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial6.svg"
+            },
+            {
+                "instruction": qsTr("In the activity 0 and 1 are simulated by bulbs, switched on or off."),
+                "instructionImage": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial7.svg"
+            },
+            {
+                "instruction": qsTr("This table will help you to compute the last levels of the activity which do not display the bits weight."),
+                "instructionImage": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial8.svg"
+            }
+        ]
 var levelDataset
 
 function start(items_, dataset_) {
