@@ -59,10 +59,10 @@ QtObject {
          "y" : "0.862"
       },
       {
-         "pixmapfile" : "norway/sor-trondelag.png",
-         "toolTipText" : "Sør-Trøndelag",
-         "x" : "0.3",
-         "y" : "0.601"
+         "pixmapfile" : "norway/trondelag.png",
+         "toolTipText" : "Trøndelag",
+         "x" : "0.338",
+         "y" : "0.58"
       },
       {
          "pixmapfile" : "norway/oslo.png",
@@ -123,12 +123,6 @@ QtObject {
          "toolTipText" : "Rogaland",
          "x" : "0.114",
          "y" : "0.868"
-      },
-      {
-         "pixmapfile" : "norway/nord-trondelag.png",
-         "toolTipText" : "Nord-Trøndelag",
-         "x" : "0.372",
-         "y" : "0.549"
       },
       {
          "pixmapfile" : "norway/hedmark.png",
