@@ -25,6 +25,7 @@
 var numberOfLevel
 var items
 var dataset
+var levelDataset
 
 function start(items_, dataset_) {
     items = items_
@@ -45,8 +46,7 @@ function resetBulbs() {
 function initializeValues() {
     items.currentSelectedBulb = -1
     items.numberSoFar = 0
-    items.numberOfBulbs = dataset[items.currentLevel].bulbCount
-    items.numberToConvert = dataset[items.currentLevel].numbersToBeConverted[items.score.currentSubLevel - 1]
+    items.numberToConvert = levelDataset[items.score.currentSubLevel - 1]
 }
 
 function equalityCheck() {
@@ -85,6 +85,8 @@ function initLevel() {
     items.bar.level = items.currentLevel + 1
     items.score.numberOfSubLevels = dataset[items.currentLevel].numbersToBeConverted.length
     items.score.currentSubLevel = 1
+    items.numberOfBulbs = dataset[items.currentLevel].bulbCount
+    levelDataset = Core.shuffle(dataset[items.currentLevel].numbersToBeConverted)
     initializeValues()
     resetBulbs()
 }

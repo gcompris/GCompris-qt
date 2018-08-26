@@ -29,6 +29,8 @@ Item {
     state: "off"
     focus: true
 
+    property alias valueVisible: valueText.visible
+
     Rectangle {
         color: "transparent"
         width: parent.width + 10
@@ -50,6 +52,7 @@ Item {
     readonly property int value: Math.pow(2, items.numberOfBulbs - index - 1)
 
     GCText {
+        id: valueText
         anchors.bottom: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
         text: value
