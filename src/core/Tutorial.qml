@@ -151,7 +151,7 @@ Item {
         anchors.topMargin: 15
 	    anchors.top: tutorialTextContainer.bottom
 
-        text: qsTr("Skip")
+        text: nextButton.visible ? qsTr("Skip") : qsTr("Start")
 
         onClicked: {
             tutorialSection.visible = false

@@ -146,7 +146,7 @@ Item {
         anchors.topMargin: 15
 	    anchors.top: introTextContainer.bottom
 
-        text: qsTr("Skip")
+        text: nextButton.visible ? qsTr("Skip") : qsTr("Start")
 
         onClicked: {
             index = -1
