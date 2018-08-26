@@ -21,6 +21,7 @@
 
 #include <QtTest>
 #include <QObject>
+#include <QFile>
 
 #include "src/core/ApplicationSettings.h"
 #include "ApplicationSettingsMock.h"
@@ -29,6 +30,7 @@
 { \
     QFETCH(attributeType, attributeName); \
     QSignalSpy spy(&applicationSettingsMock, &ApplicationSettings::accessorNameChanged); \
+    QVERIFY(spy.isValid()); \
     QVERIFY(spy.count() == 0); \
     applicationSettingsMock.accessorName(attributeName); \
     QVERIFY(spy.count() == 1); \
@@ -39,6 +41,7 @@ class CoreApplicationSettingsTest : public QObject
 {
     Q_OBJECT
 private slots:
+    void cleanup();
     void ApplicationSettingsInitializationTest();
     void ApplicationSettingsTest();
     void ApplicationSettingsTest_data();
@@ -154,16 +157,20 @@ void CoreApplicationSettingsTest::ActivitySettingsTest()
     configuration.insert(QStringLiteral("DummyKey4"), QStringLiteral("DummyValue4"));
 
     applicationSettingsMock.saveActivityConfiguration(dummyActivity, configuration);
-    QVariantMap newconfiguration = applicationSettingsMock.loadActivityConfiguration(dummyActivity);
+    QVariantMap newConfiguration = applicationSettingsMock.loadActivityConfiguration(dummyActivity);
 
-    QCOMPARE(newconfiguration.value(QStringLiteral("DummyKey1")), configuration.value(QStringLiteral("DummyKey1")));
-    QCOMPARE(newconfiguration.value(QStringLiteral("DummyKey2")), configuration.value(QStringLiteral("DummyKey2")));
-    QCOMPARE(newconfiguration.value(QStringLiteral("DummyKey3")), configuration.value(QStringLiteral("DummyKey3")));
-    QCOMPARE(newconfiguration.value(QStringLiteral("DummyKey4")), configuration.value(QStringLiteral("DummyKey4")));
+    QCOMPARE(newConfiguration.value(QStringLiteral("DummyKey1")), configuration.value(QStringLiteral("DummyKey1")));
+    QCOMPARE(newConfiguration.value(QStringLiteral("DummyKey2")), configuration.value(QStringLiteral("DummyKey2")));
+    QCOMPARE(newConfiguration.value(QStringLiteral("DummyKey3")), configuration.value(QStringLiteral("DummyKey3")));
+    QCOMPARE(newConfiguration.value(QStringLiteral("DummyKey4")), configuration.value(QStringLiteral("DummyKey4")));
 
     delete ApplicationSettingsMock::getInstance();
 }
 
+void CoreApplicationSettingsTest::cleanup()
+{
+    QFile::remove("./dummy_application_settings.conf");
+}
+
 QTEST_MAIN(CoreApplicationSettingsTest)
 #include "ApplicationSettingsTest.moc"
-

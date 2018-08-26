@@ -24,6 +24,7 @@
 
 #include <QtTest>
 #include <QObject>
+#include <QFile>
 
 #include "src/core/File.h"
 
@@ -31,40 +32,100 @@ class CoreFileTest : public QObject
 {
     Q_OBJECT
 private slots:
-    void FileTest();
+    void cleanup();
+    void FileExistsTest();
+    void ReadWriteErrorsTest();
+    void ReadWriteErrorsTest_data();
     void ReadWriteTest();
+    void NameTest();
 };
 
-void CoreFileTest::FileTest()
+static const QString tempFilename = QStringLiteral("./dummy_test_files.txt");
+static const QString fakeFilename = QStringLiteral("-_/fezagvvx&V/d;-ùlc");
+
+void CoreFileTest::FileExistsTest()
 {
+    QFile tempFile(tempFilename);
+    // open in write mode to create the file if does not exist
+    tempFile.open(QIODevice::ReadWrite);
+    tempFile.close();
+
+    QVERIFY(File::exists(tempFilename));
+}
+
+void CoreFileTest::ReadWriteErrorsTest_data()
+{
+    QTest::addColumn<QString>("filename");
+    QTest::addColumn<QString>("readError");
+    QTest::addColumn<QString>("writeError");
+    QTest::newRow("empty file") << QStringLiteral("")
+                                << QStringLiteral("source is empty")
+                                << QStringLiteral("source is empty");
+
+    QTest::newRow("non existing file") << fakeFilename
+                                       << QStringLiteral("Unable to open the file")
+                                       << QStringLiteral("could not open file ") + fakeFilename;
+}
+
+void CoreFileTest::ReadWriteErrorsTest()
+{
+    QFETCH(QString, filename);
+    QFETCH(QString, readError);
+    QFETCH(QString, writeError);
+
+    const QString fileContent = QStringLiteral("this is going to test the class File in the core");
+
     File file;
-    QSignalSpy spyName(&file, &File::nameChanged);
-
-    QVERIFY(spyName.count() == 0);
-
-    QString name = QStringLiteral("./dummy_test_files.txt");
-    file.setName(name);
-    QVERIFY(File::exists(name));
-    QVERIFY(File::mkpath(QStringLiteral("./make/dummy/path")));
-    QVERIFY(spyName.count() == 1);
-    QCOMPARE(file.write(QStringLiteral("How are you??")), true);
-    QCOMPARE(file.read(), QStringLiteral("How are you??"));
+    file.setName(filename);
+    QSignalSpy spyError(&file, &File::error);
+    QVERIFY(spyError.isValid());
+    QVERIFY(spyError.count() == 0);
+    // we can't read
+    QVERIFY(file.read().isEmpty());
+    QVERIFY(spyError.count() == 1);
+    QString error = qvariant_cast<QString>(spyError.at(0).at(0));
+    QCOMPARE(error, readError);
+    // we can't write
+    QVERIFY(!file.write(fileContent));
+    QVERIFY(spyError.count() == 2);
+    error = qvariant_cast<QString>(spyError.at(1).at(0));
+    QCOMPARE(error, writeError);
 }
 
 void CoreFileTest::ReadWriteTest()
 {
+    QFile tempFile(tempFilename);
+    // open in write mode to create the file if does not exist
+    tempFile.open(QIODevice::ReadWrite);
+    tempFile.close();
+
     File file;
+    const QString fileContent = QStringLiteral("this is going to test the class File in the core");
+    // normal use case, file exists
+    QVERIFY(file.write(fileContent, tempFilename));
+    QCOMPARE(file.read(), fileContent);
+}
 
-    QString fileContaint = QStringLiteral("this is going to test the class File in the core");
-    QSignalSpy spyError(&file, &File::error);
-    QVERIFY(spyError.count() == 0);
-    // File object does not having file name
-    QVERIFY(!file.write(fileContaint));
-    QVERIFY(spyError.count() == 1);
-    QVERIFY(file.write(fileContaint, "./dummy_test_files.txt"));
-    QCOMPARE(file.read(), fileContaint);
-    QVERIFY(file.exists("./dummy_test_files.txt"));
+void CoreFileTest::NameTest()
+{
+    File file;
+    QSignalSpy spyName(&file, &File::nameChanged);
+    QVERIFY(spyName.isValid());
+    QVERIFY(spyName.count() == 0);
+    file.setName(tempFilename);
+    QVERIFY(spyName.count() == 1);
+    QCOMPARE(file.name(), tempFilename);
+    // test sanitizeUrl
+    const QString sameNameUnsanitized = QStringLiteral("file://")+tempFilename;
+    file.setName(sameNameUnsanitized);
+    // no update triggered as same name after sanitization
+    QVERIFY(spyName.count() == 1);
+    QCOMPARE(file.name(), tempFilename);
+}
 
+void CoreFileTest::cleanup()
+{
+    QFile::remove("./dummy_test_files.txt");
 }
 
 QTEST_MAIN(CoreFileTest)

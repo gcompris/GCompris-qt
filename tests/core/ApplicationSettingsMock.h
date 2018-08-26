@@ -32,7 +32,7 @@
 class ApplicationSettingsMock : public ApplicationSettings
 {
 public:
-    ApplicationSettingsMock() : ApplicationSettings(QStringLiteral("./DummyApplicationSettings.conf"))
+    ApplicationSettingsMock() : ApplicationSettings(QStringLiteral("./dummy_application_settings.conf"))
     {
     }
 

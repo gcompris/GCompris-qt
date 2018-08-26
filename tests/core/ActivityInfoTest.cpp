@@ -29,6 +29,7 @@
 { \
   QFETCH(attributeType, attributeName); \
   QSignalSpy spy(&activityinfo, &ActivityInfo::attributeName ## Changed); \
+  QVERIFY(spy.isValid()); \
   QVERIFY(spy.count() == 0); \
   activityinfo.set ## accessorName(attributeName); \
   QVERIFY(spy.count() == 1); \
