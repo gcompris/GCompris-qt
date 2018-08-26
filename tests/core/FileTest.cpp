@@ -76,17 +76,16 @@ void CoreFileTest::ReadWriteErrorsTest()
     const QString fileContent = QStringLiteral("this is going to test the class File in the core");
 
     File file;
-    file.setName(filename);
     QSignalSpy spyError(&file, &File::error);
     QVERIFY(spyError.isValid());
     QVERIFY(spyError.count() == 0);
     // we can't read
-    QVERIFY(file.read().isEmpty());
+    QVERIFY(file.read(filename).isEmpty());
     QVERIFY(spyError.count() == 1);
     QString error = qvariant_cast<QString>(spyError.at(0).at(0));
     QCOMPARE(error, readError);
     // we can't write
-    QVERIFY(!file.write(fileContent));
+    QVERIFY(!file.write(fileContent, filename));
     QVERIFY(spyError.count() == 2);
     error = qvariant_cast<QString>(spyError.at(1).at(0));
     QCOMPARE(error, writeError);
@@ -121,6 +120,12 @@ void CoreFileTest::NameTest()
     // no update triggered as same name after sanitization
     QVERIFY(spyName.count() == 1);
     QCOMPARE(file.name(), tempFilename);
+
+    const QString filenameUnsanitized = QStringLiteral("qrc:/")+tempFilename;
+    file.setName(filenameUnsanitized);
+    // no update triggered as same name after sanitization
+    QVERIFY(spyName.count() == 2);
+    QCOMPARE(file.name(), QStringLiteral(":/")+tempFilename);
 }
 
 void CoreFileTest::cleanup()
