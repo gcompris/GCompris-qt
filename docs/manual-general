@@ -1,0 +1,101 @@
+ 
+**Introduction
+
+GCompris is a rich educational software, including more than a hundred activities aimed at children from 2 to 12 years old. Those activities are playful, but always educational. The topics include reading and typing, arithmetics, geography, sciences, and other topics. It is meant to be used both at home and at school.
+
+
+***Core values
+
+In GCompris all the activities follow the same core values:
+
+   - we do not follow a specific country curriculum because we want to be international
+   - as we want to be international it makes some developments more complex but we are happy to do it
+   - we don't force children to follow a specific path in the software
+   - we don't put time limit because this kind of tuning exclude children with disabilities
+   - we let the children select the difficulty level and do nothing to determine it is appropriate or not for her
+   - we do nothing to make the children addict
+   - the software does not replace a teacher or a parent
+   - the software does not really teaches, it is a complement to a traditional teaching course
+   - activities must bring something more than doing the same activity on paper
+
+   
+***Distribution
+
+The source code of GCompris is under GNU GPLv3, it is free software. It runs best on Free-Software operating systems like GNU/Linux, where it is of course available for free.
+
+We also support proprietary operating systems, but there we sell the full version. For Windows you can buy an activation code on our website to unlock the full version. For Android, the software must be purchased from the play store.
+However for schools, you should contact us directly to get a lower price ( sales@gcompris.net ).
+
+Note that the latest version of GCompris for OSX and iOS are not available yet, we are looking at bringing them back soon.
+
+
+**Quick start tour
+
+-On first launch, we ask to download the pack of voices depending on selected language if it is not already done, as well as the additional image set.
+
+On the main menu page, the activities are listed by categories, with the different animals and their attributes at the top.
+    
+    -The cat is for computer activities, where children can learn to use a keyboard and a mouse or touchpad.
+    -The penguin (tux, the mascot of Linux) is for discovery activities, to initiate and discover lot of different topics.
+    -The pig is for experience activities, mostly related to science topics.
+    -The dragon (Konqi, the mascot of KDE), is for fun activities, which are more relaxing and.. fun.
+    -The sheep is for math activities, to learn numbers and operations.
+    -The panda is for puzzle activities, with all kinds of puzzle games to learn logic.
+    -The cow is for reading activities, to learn letters and words.
+    -The frog is for strategy activities, with some classical strategy games including checkers and chess.
+    
+ On the left, the Sun is meant to access your favorite set of activities. To add an activity to favorites, click the little sun icon on it to activate it.
+ 
+ On the right, there is a search category where you can find activities by keywords.
+ 
+ The activities also have some difficulty indications, with the little stars on the top-left corner of their icons. it goes from 1 yellow star for the easiest to 3 red stars for the hardest.
+ 
+ 
+On the bottom, there is the menu-bar, which different controls depending on the activity running.
+In the main menu page, this bar contains:
+
+-A quit button
+-The G button to access infos about GCompris
+-The question mark to access the help page
+-The Settings button to access the global settings page.
+
+ 
+**Main options
+
+In the global settings page, you find several options to configure the software to your needs.
+
+-first, a line checking if you have the full version. If not, this is where you can enter the activation code.
+
+-enable audio voices: to turn off/on the voices
+-enable audio effects: to turn off/on the sound effects
+-Fullscreen: start in fullscreen or window mode
+-virtual keyboard: to add a virtual keyboard on the screen
+
+-Enable automatic downloads: if you disable it, GCompris will never automatically download any additional content.
+-Download full word image set: if you have not already the additional image set, you can disable this option to never ask for it.
+
+-The activity section menu is visible: with this option you can restrict the user to the current section selected. So if you add some favorites, when starting with this option it will only show those.
+
+-The next setting is for the font, where you can select a different font type and adapt the size.
+We ship two fonts, Andika-R.otf which supports lots of languages, and OpenDyslexic-Regular.ttf for those who need it. Else you can select any third-party font installed in your system instead.
+The Default Button restores the default font size.
+
+-Then a setting about font capitalization: you can select only lower case or only upper case instead of Mixed case.
+
+-You can adapt the letter spacing
+
+-Very important setting: set the application language with the language selector
+The line under shows if you already have the corresponding voices, the button next to it allows to download them.
+
+-Another very important setting:  Difficulty filter
+with this, you can select which activities should be available depending on their difficulty level.
+It is a fast and simple way to adapt the content to the user level.
+
+
+**Contact
+
+mailing list: gcompris-devel@kde.org
+
+email: support@gcompris.net
+
+commercial: sales@gcompris.net
