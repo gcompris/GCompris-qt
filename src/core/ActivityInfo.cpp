@@ -45,8 +45,7 @@ void ActivityInfo::setName(const QString &name)
     m_name = name;
     // Once we are given a name, we can get the favorite property
     // from the persistant configuration
-    if(!ApplicationSettings::getInstance()->isKioskMode())
-        m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
+    m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
     emit nameChanged();
 }
 
