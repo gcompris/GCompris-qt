@@ -224,6 +224,7 @@ ActivityBase {
             }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
+            visible: ApplicationSettings.sectionVisible
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
