@@ -32,7 +32,8 @@ def print_warning(error):
 
 # checks 'variant' used instead of 'var'
 def check_var(line_str, line_number):
-    pass
+    if "property variant" in line_str:
+        print_warning("line:{} replace variant with var".format(line_number))
 
 
 # checks import version
@@ -64,7 +65,7 @@ def check_credits_update(line_str):
     if "THE GTK VERSION AUTHOR" in line_str:
         print_error("Replace original GTK VERSION AUTHOR label by your own name")
 
-    if "\"YOUR NAME\" <YOUR EMAIL>" in line_str:
+    if "YOUR NAME <YOUR EMAIL>" in line_str or "\"YOUR NAME\" <YOUR EMAIL>" in line_str:
         print_error("Replace original Qt Quick copyright label email by your own email address")
 
 
@@ -131,7 +132,7 @@ def main():
     
     js_files_array, qml_files_array = initialize(sys.argv[1])
     empty_directory(js_files_array, qml_files_array)
-    #check_js_files(js_files_array)
+    check_js_files(js_files_array)
     check_qml_files(qml_files_array)
 
 
