@@ -20,6 +20,14 @@ def initialize(activity_dir_name):
     return js_files_array, qml_files_array
 
 
+# create elements to escape list
+def read_elements_to_escape():
+    with open("./check_activities_ids_to_escape.txt", "r") as ids_file:
+        print("Element ids escaped:")
+        elements_to_escape = [print(ids, end="") for ids in ids_file]    
+    return elements_to_escape
+
+
 # print error
 def print_error(error):
     print("\tERROR:  ", error)
@@ -70,11 +78,11 @@ def check_credits_update(line_str):
 
 
 # checks whether qsTr can be used in the line_str
-def qsTr_use(line_str, line_number):
+def qsTr_use(line_str, line_number, elements_to_escape):
     regex_string = re.compile("""([^ ]+): ["][^"]+""")
     match_string = regex_string.search(line_str)
     if match_string:
-        #if match_string.group(1) not in elements_to_escape:
+        if match_string.group(1) not in elements_to_escape:
             print_warning("line:{} {} qsTr may not be used".format(line_number, match_string.group(1)))
 
 
@@ -109,20 +117,19 @@ def check_js_files(js_files_array):
     for js_file in js_files_array:
         with open(js_file, "r") as current_js_file:
             
-            print("FilePath:", js_file)
+            print("\nFilePath:", js_file)
             for line in current_js_file:
                 check_credits_update(line)
                 check_import_version(line)
 
 
 # checks qml files
-def check_qml_files(qml_files_array):
-    
+def check_qml_files(qml_files_array, elements_to_escape):
     for qml_file in qml_files_array:
         with open(qml_file, "r") as current_qml_file:
 
             line_number = 1
-            print("FilePath:", qml_file)
+            print("\nFilePath:", qml_file)
             if os.path.basename(qml_file) == "ActivityInfo.qml":
                 if "createdInVersion" not in current_qml_file.read():
                     print_error("ActivityInfo.qml does not have \"createdInVersion\":\n")
@@ -134,7 +141,7 @@ def check_qml_files(qml_files_array):
                     activity_info_qml_file(line)
 
                 check_credits_update(line)
-                qsTr_use(line, line_number)
+                qsTr_use(line, line_number, elements_to_escape)
                 check_var(line, line_number)
                 check_import_version(line)
 
@@ -155,10 +162,11 @@ def main():
                  "\nUsage: ./check_activity.py activity_directory_name"
                  "\neg: ./check_activity.py reversecount")
     
+    elements_to_escape = read_elements_to_escape()
     js_files_array, qml_files_array = initialize(sys.argv[1])
     empty_directory(js_files_array, qml_files_array)
     check_js_files(js_files_array)
-    check_qml_files(qml_files_array)
+    check_qml_files(qml_files_array, elements_to_escape)
 
 
 # if this file runs
