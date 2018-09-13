@@ -50,8 +50,8 @@ def check_import_version(line_str):
                             "GCompris" : "1.0",
                             "Box2D" : "2.0"}
     
-    regex_str = re.compile(r"import (\w+) (\d+.\d+)")
-    match_string = regex_str.search(line_str)
+    regex_string = re.compile(r"import (\w+) (\d+.\d+)")
+    match_string = regex_string.search(line_str)
     if match_string:
         module_name = match_string.group(1)
         module_ver = match_string.group(2)
@@ -71,12 +71,36 @@ def check_credits_update(line_str):
 
 # checks whether qsTr can be used in the line_str
 def qsTr_use(line_str, line_number):
-    pass
+    regex_string = re.compile("""([^ ]+): ["][^"]+""")
+    match_string = regex_string.search(line_str)
+    if match_string:
+        #if match_string.group(1) not in elements_to_escape:
+            print_warning("line:{} {} qsTr may not be used".format(line_number, match_string.group(1)))
 
 
 # checks copyrights updated
 def activity_info_qml_file(line_str):
-    pass
+    values_to_test = ["author: \"Your Name &lt;yy@zz.org&gt;\"",
+                      "name: \"test/Test.qml\"",
+                      "difficulty: 1",
+                      "icon: \"test/test.svg\"",
+                      "demo: false",
+                      "title: \"Test activity\"",
+                      "description: \"\"",
+                      "goal: \"\"",
+                      "prerequisite: \"\"",
+                      "manual: \"\"",
+                      "credit: \"\"",
+                      "section: \"\"",
+                      "intro: \"put here in comment the " 
+                      "text for the intro voice\""]
+    
+    for value in values_to_test:
+        if value in line_str:
+            if value == "difficulty: 1":
+                print_warning("{} may not be updated.".format(value))
+            else:
+                print_error("{} may not be updated.".format(value))
 
 
 # checks js files
@@ -99,10 +123,11 @@ def check_qml_files(qml_files_array):
 
             line_number = 1
             print("FilePath:", qml_file)
-
             if os.path.basename(qml_file) == "ActivityInfo.qml":
                 if "createdInVersion" not in current_qml_file.read():
                     print_error("ActivityInfo.qml does not have \"createdInVersion\":\n")
+                # reset file pointer to the start
+                current_qml_file.seek(0)
             
             for line in current_qml_file:
                 if os.path.basename(qml_file) == "ActivityInfo.qml":
