@@ -28,7 +28,6 @@
 #include "ApplicationSettings.h"
 
 #include <QObject>
-#include <QQmlPropertyMap>
 #include <QQmlEngine>
 #include <QtGlobal>
 
@@ -145,7 +144,7 @@ class ApplicationInfo : public QObject
      *
      * Use to deactivate some effects if OpenGL not used.
      */
-	Q_PROPERTY(bool useOpenGL READ useOpenGL CONSTANT)
+    Q_PROPERTY(bool useOpenGL READ useOpenGL WRITE setUseOpenGL NOTIFY useOpenGLChanged)
         
 public:
 
@@ -269,11 +268,11 @@ public:
     static void setWindow(QQuickWindow *window);
     explicit ApplicationInfo(QObject *parent = 0);
     ~ApplicationInfo();
-	int applicationWidth() const { return m_applicationWidth; }
-	void setApplicationWidth(const int newWidth);
+    int applicationWidth() const { return m_applicationWidth; }
+    void setApplicationWidth(const int newWidth);
     Platform platform() const { return m_platform; }
-	bool isPortraitMode() const { return m_isPortraitMode; }
-	void setIsPortraitMode(const bool newMode);
+    bool isPortraitMode() const { return m_isPortraitMode; }
+    void setIsPortraitMode(const bool newMode);
     bool isMobile() const { return m_isMobile; }
     bool hasShader() const {
 #if defined(Q_OS_ANDROID)
@@ -282,7 +281,7 @@ public:
         return true;
 #endif
     }
-	qreal ratio() const { return m_ratio; }
+    qreal ratio() const { return m_ratio; }
     qreal fontRatio() const { return m_fontRatio; }
     QString localeShort() const {
         return localeShort( ApplicationSettings::getInstance()->locale() );
@@ -292,13 +291,8 @@ public:
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
-    static bool useOpenGL() { 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-        return QString(GRAPHICAL_RENDERER) != "software"; 
-#else
-        return true;
-#endif
-    }
+    bool useOpenGL() const { return m_useOpenGL; }
+    void setUseOpenGL(bool useOpenGL) { m_useOpenGL = useOpenGL; }
 
     /**
      * Returns the native screen orientation.
@@ -422,24 +416,25 @@ protected slots:
     Q_INVOKABLE void notifyFullscreenChanged();
 
 protected:
-	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
+    qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
 
 signals:
-	void applicationWidthChanged();
-	void portraitModeChanged();
-	void ratioChanged();
+    void applicationWidthChanged();
+    void portraitModeChanged();
+    void ratioChanged();
     void fontRatioChanged();
     void applicationSettingsChanged();
     void fullscreenChanged();
+    void useOpenGLChanged();
 
 private:
     static ApplicationInfo *m_instance;
     int m_applicationWidth;
     Platform m_platform;
-	QQmlPropertyMap *m_constants;
-	bool m_isPortraitMode;
-	bool m_isMobile;
-	qreal m_ratio;
+    bool m_isPortraitMode;
+    bool m_isMobile;
+    bool m_useOpenGL;
+    qreal m_ratio;
     qreal m_fontRatio;
 
     // Symbols fonts that user can't see

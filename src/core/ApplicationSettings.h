@@ -249,6 +249,9 @@ class ApplicationSettings : public QObject
     // keep last version ran. If different than ApplicationInfo.GCVersionCode(), it means a new version is running
     Q_PROPERTY(int lastGCVersionRan READ lastGCVersionRan WRITE setLastGCVersionRan NOTIFY lastGCVersionRanChanged)
 
+    // define the renderer used. Either openGL or software renderer (only for Qt >= 5.8)
+    Q_PROPERTY(QString renderer READ renderer WRITE setRenderer NOTIFY rendererChanged)
+
     // no group
     Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
 
@@ -282,10 +285,10 @@ public:
         emit audioVoicesEnabledChanged();
     }
 
-	bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
-	void setIsAudioEffectsEnabled(const bool newMode) {
-		m_isAudioEffectsEnabled = newMode;
-		emit audioEffectsEnabledChanged();
+    bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
+    void setIsAudioEffectsEnabled(const bool newMode) {
+        m_isAudioEffectsEnabled = newMode;
+        emit audioEffectsEnabledChanged();
     }
 
     bool isFullscreen() const { return m_isFullscreen; }
@@ -463,6 +466,12 @@ public:
         emit lastGCVersionRanChanged();
     }
 
+    QString renderer() const { return m_renderer; }
+    void setRenderer(const QString &newRenderer) {
+        m_renderer = newRenderer;
+        emit rendererChanged();
+    }
+
     /**
      * Check if we use the external wordset for activity based on lang_api
      * @returns  true if wordset is loaded
@@ -499,6 +508,7 @@ protected slots:
     Q_INVOKABLE void notifyExeCountChanged();
 
     Q_INVOKABLE void notifyLastGCVersionRanChanged();
+    Q_INVOKABLE void notifyRendererChanged();
 
     Q_INVOKABLE void notifyBarHiddenChanged();
 
@@ -569,6 +579,7 @@ signals:
     void exeCountChanged();
 
     void lastGCVersionRanChanged();
+    void rendererChanged();
     void barHiddenChanged();
 
 protected:
@@ -614,6 +625,7 @@ private:
     quint32 m_exeCount;
 
     int m_lastGCVersionRan;
+    QString m_renderer;
 
     bool m_isBarHidden;
 

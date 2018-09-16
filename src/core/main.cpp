@@ -109,14 +109,6 @@ int main(int argc, char *argv[])
     // Disable it because we already support HDPI display natively
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-    QString renderer = QString(GRAPHICAL_RENDERER);
-    if(renderer == "software")
-       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-    else if(renderer == "opengl")
-       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
-#endif
-    
     QApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
@@ -149,9 +141,9 @@ int main(int argc, char *argv[])
     parser.addVersionOption();
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
-	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
+    QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
                                        QObject::tr("Run GCompris with the default system cursor."));
-	parser.addOption(clDefaultCursor);
+    parser.addOption(clDefaultCursor);
     QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
                                        QObject::tr("Run GCompris without cursor (touch screen mode)."));
     parser.addOption(clNoCursor);
@@ -173,8 +165,15 @@ int main(int argc, char *argv[])
     QCommandLineOption clWithKioskMode(QStringList() << "enable-kioskmode",
                                        QObject::tr("Enable the kiosk mode."));
     parser.addOption(clWithKioskMode);
-    parser.process(app);
 
+    QCommandLineOption clSoftwareRenderer(QStringList() << "software-renderer",
+                                       QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card, needs Qt 5.8 minimum)."));
+    parser.addOption(clSoftwareRenderer);
+    QCommandLineOption clOpenGLRenderer(QStringList() << "opengl-renderer",
+                                       QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
+    parser.addOption(clOpenGLRenderer);
+
+    parser.process(app);
 
     ApplicationInfo::init();
     ActivityInfoTree::init();
@@ -193,28 +192,27 @@ int main(int argc, char *argv[])
     // Getting fullscreen mode from config if exist, else true is default value
     bool isFullscreen = true;
     {
-
         if(config.contains("General/fullscreen")) {
             isFullscreen = config.value("General/fullscreen").toBool();
         }
 
-		// Set the cursor image
-		bool defaultCursor = false;
-		if(config.contains("General/defaultCursor")) {
-			defaultCursor = config.value("General/defaultCursor").toBool();
-		}
-		if(!defaultCursor && !parser.isSet(clDefaultCursor))
-			QGuiApplication::setOverrideCursor(
-						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
-								0, 0));
+        // Set the cursor image
+        bool defaultCursor = false;
+        if(config.contains("General/defaultCursor")) {
+            defaultCursor = config.value("General/defaultCursor").toBool();
+        }
+        if(!defaultCursor && !parser.isSet(clDefaultCursor))
+            QGuiApplication::setOverrideCursor(
+                                               QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
+                                                       0, 0));
 
-		// Hide the cursor
-		bool noCursor = false;
-		if(config.contains("General/noCursor")) {
-			noCursor = config.value("General/noCursor").toBool();
-		}
-		if(noCursor || parser.isSet(clNoCursor))
-			QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
+        // Hide the cursor
+        bool noCursor = false;
+        if(config.contains("General/noCursor")) {
+            noCursor = config.value("General/noCursor").toBool();
+        }
+        if(noCursor || parser.isSet(clNoCursor))
+            QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
     }
 
     // Update execution counter
@@ -240,6 +238,23 @@ int main(int argc, char *argv[])
     if(parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
     }
+    if(parser.isSet(clSoftwareRenderer)) {
+        ApplicationSettings::getInstance()->setRenderer("software");
+    }
+    if(parser.isSet(clOpenGLRenderer)) {
+        ApplicationSettings::getInstance()->setRenderer("opengl");
+    }
+
+    // Set the renderer used
+    const QString renderer = ApplicationSettings::getInstance()->renderer();
+    ApplicationInfo::getInstance()->setUseOpenGL(renderer != "software");
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
+    if(renderer == "software")
+       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
+    else if(renderer == "opengl")
+       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
+#endif
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),

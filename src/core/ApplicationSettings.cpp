@@ -62,6 +62,7 @@ static const QString CACHE_PATH_KEY = "cachePath";
 
 static const QString EXE_COUNT_KEY = "exeCount";
 static const QString LAST_GC_VERSION_RAN = "lastGCVersionRan";
+static const QString RENDERER_KEY = "renderer";
 
 static const QString FILTER_LEVEL_MIN = "filterLevelMin";
 static const QString FILTER_LEVEL_MAX = "filterLevelMax";
@@ -157,6 +158,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_config.beginGroup(INTERNAL_GROUP_KEY);
     m_exeCount = m_config.value(EXE_COUNT_KEY, 0).toUInt();
     m_lastGCVersionRan = m_config.value(LAST_GC_VERSION_RAN, 0).toUInt();
+    m_renderer = m_config.value(RENDERER_KEY, GRAPHICAL_RENDERER).toString();
     m_config.endGroup();
 
     // no group
@@ -184,6 +186,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
     connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
     connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
+    connect(this, &ApplicationSettings::rendererChanged, this, &ApplicationSettings::notifyRendererChanged);
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -225,6 +228,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.beginGroup(INTERNAL_GROUP_KEY);
     m_config.setValue(EXE_COUNT_KEY, m_exeCount);
     m_config.setValue(LAST_GC_VERSION_RAN, m_lastGCVersionRan);
+    m_config.setValue(RENDERER_KEY, m_renderer);
     m_config.endGroup();
 
     m_config.sync();
@@ -396,6 +400,12 @@ void ApplicationSettings::notifyLastGCVersionRanChanged()
     qDebug() << "lastVersionRan set to: " << m_lastGCVersionRan;
 }
 
+void ApplicationSettings::notifyRendererChanged()
+{
+    updateValueInConfig(INTERNAL_GROUP_KEY, RENDERER_KEY, m_renderer);
+    qDebug() << "renderer set to: " << m_renderer;
+}
+
 void ApplicationSettings::notifyBarHiddenChanged()
 {
     qDebug() << "is bar hidden: " << m_isBarHidden;
@@ -484,7 +494,7 @@ QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
 
 void ApplicationSettings::init()
 {
-	qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
-												  "ApplicationSettings", systeminfoProvider);
+    qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
+                                                  "ApplicationSettings", systeminfoProvider);
 }
 
