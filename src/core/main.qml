@@ -20,7 +20,7 @@
  */
 import QtQuick 2.6
 import QtQuick.Controls 1.5
-import QtQuick.Window 2.1
+import QtQuick.Window 2.2
 import QtQml 2.2
 
 import GCompris 1.0
@@ -194,8 +194,7 @@ Window {
 
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
-                var dialog;
-                dialog = Core.showMessageDialog(
+                Core.showMessageDialog(
                 main,
                 qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
                 "", null,
@@ -348,5 +347,26 @@ Window {
         }
     }
 
+    onSceneGraphError: {
+        print("scene graph error ", error, message)
+        ApplicationSettings.renderer = "software"
+        Core.showMessageDialog(
+            main,
+            qsTr("There is an issue while running GCompris. " +
+                 "We have fallbacken to software renderer mode that should solve the issue. ") +
+                 "You need to restart GCompris so it can take effect.",
+        "", null, "", null, null);
+    }
+
+    onSceneGraphInvalidated: {
+        print("scene graph invalidated")
+        ApplicationSettings.renderer = "software"
+        Core.showMessageDialog(
+            main,
+            qsTr("There is an issue while running GCompris. " +
+                 "We have fallbacken to software renderer mode that should solve the issue. ") +
+                 "You need to restart GCompris so it can take effect.",
+        "", null, "", null, null);
+    }
     /// @endcond
 }
