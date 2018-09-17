@@ -46,6 +46,27 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+        
+        IntroMessage {
+            id: message
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: parent.left
+                leftMargin: 5
+            }
+            z: 100
+            intro: [      
+                qsTr("Your goal is to get Tux across the canal lock to get the wooden logs, "
+                     +"using the different types of water locks available."),
+                qsTr("The vertical colored bars represent the water locks, which can be operated by clicking them. "
+                     +"Two locks of the same type cannot be operated simultaneously.") ,
+                qsTr("The water level inside the lock will change according to the side of the canal it is "
+                     +"connected with. Use this property to help Tux get the job done.")
+            ]
+        }
 
         onStart: water.state = 'down'
 
