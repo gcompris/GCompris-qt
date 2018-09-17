@@ -1,4 +1,21 @@
-#! /usr/bin/python3
+#!/usr/bin/python3
+#
+# GCompris - check_activity.py
+#
+# Copyright (C) 2018 Harry Mecwan <harry.mecwan91@gmail.com>
+#
+#   This program is free software; you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation; either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program; if not, see <http://www.gnu.org/licenses/>.
 
 import sys
 import os
@@ -56,7 +73,8 @@ def check_import_version(line_str):
                             "QtSensors" : "5.0",
                             "QtMultimedia" : "5.0",
                             "GCompris" : "1.0",
-                            "Box2D" : "2.0"}
+                            "Box2D" : "2.0"
+                            "QtQuick.Window" : "2.2"}
     
     regex_string = re.compile(r"import (\w+) (\d+.\d+)")
     match_string = regex_string.search(line_str)
