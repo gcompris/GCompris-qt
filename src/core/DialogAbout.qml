@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -67,8 +67,8 @@ DialogBackground {
     property string qtVersionTxt: qsTr("Based on Qt %1").arg(qtVersion)
 
     content:
-        "<center><b>" + "<a href='http://gcompris.net'>" +
-        qsTr("GCompris Home Page: http://gcompris.net") + "</a>" +
+        "<center><b>" + "<a href='https://gcompris.net'>" +
+        qsTr("GCompris Home Page: https://gcompris.net") + "</a>" +
         "</b></center>" +
         "<center>" + gcVersionTxt + " " + qtVersionTxt + "</center>" + "<br/>" +
 
@@ -88,8 +88,8 @@ DialogBackground {
              "contribute to KDE, including you.<br /><br />" +
              "Visit <a href=\"%2\">%2</a> for " +
              "more information about the KDE community and the software we produce.")
-        .arg("http://www.gnu.org/philosophy/free-sw.html")
-        .arg("http://www.kde.org/") +
+        .arg("https://www.gnu.org/philosophy/free-sw.html")
+        .arg("https://www.kde.org/") +
 
         "<img align='right' width='" + 138 * ApplicationInfo.ratio +
         "' height='" + 202 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/aboutkde.png'/>" +
@@ -120,8 +120,8 @@ DialogBackground {
              "If you need more information or documentation, then a visit to " +
              "<a href=\"%2\">%2</a> " +
              "will provide you with what you need.")
-        .arg("http://www.kde.org/community/getinvolved/")
-        .arg("http://techbase.kde.org/") +
+        .arg("https://www.kde.org/community/getinvolved/")
+        .arg("https://techbase.kde.org/") +
 
         "<br /> <br />" +
 
@@ -137,8 +137,8 @@ DialogBackground {
              "financial donation, using one of the ways described at " +
              "<a href=\"%2\">%2</a>." +
              "<br /><br />Thank you very much in advance for your support.")
-        .arg("http://ev.kde.org/")
-        .arg("http://www.kde.org/community/donations/") +
+        .arg("https://ev.kde.org/")
+        .arg("https://www.kde.org/community/donations/") +
 
         "<br /> <br />" +
 

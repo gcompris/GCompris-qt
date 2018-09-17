@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -46,7 +46,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
  * Cf. Template.qml for a sample skeleton activity.
  *
  * Cf.
- * [the wiki](http://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_new_activity)
+ * [the wiki](https://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_new_activity)
  * for further information about creating a new activity.
  *
  * @inherit QtQuick.Item

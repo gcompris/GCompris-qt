@@ -13,7 +13,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 var advanced_colors =
@@ -21,7 +21,7 @@ var advanced_colors =
             [ // Level 1
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/coral_butterfly.svg",
-                 //: Look at http://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors
+                 //: Look at https://gcompris.net/wiki/Advanced_color_translation to see all the advanced colors
                  //: Color #FF7F50
                  "text": qsTr("Find the coral butterfly")
              },
