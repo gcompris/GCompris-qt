@@ -42,8 +42,7 @@ ActivityInfo {
   manual: qsTr("Review a set of words. Each word is shown with a voice, a text and an image.<br/>"
            + "When done, you are suggested an exercise in which, given the voice, "
            + "you must find the right word. In the configuration, you can select the language you want to learn.")
-  credit: qsTr("The images and voices come from the Art4Apps project: http://www.art4apps.org/.<br>"
-           + "You can also access this activity online on http://gcompris.net/activity/lang.")
+  credit: qsTr("The images and voices come from the Art4Apps project: http://www.art4apps.org/.")
   section: "reading"
   createdInVersion: 5000
 }
