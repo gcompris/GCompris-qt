@@ -39,14 +39,14 @@
  */
 class ActivityInfo : public QObject
 {
-	Q_OBJECT
+    Q_OBJECT
 
-	/**
-	 * Name of the main activity QML file.
-	 *
-	 * Example: "activity/Activity.qml"
-	 */
-	Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
+    /**
+     * Name of the main activity QML file.
+     *
+     * Example: "activity/Activity.qml"
+     */
+    Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
 
     /**
      * Section(s) this activity belongs to.
@@ -56,63 +56,63 @@ class ActivityInfo : public QObject
      * computer, discovery, experiment, fun, math, puzzle,
      * reading, strategy.
      */
-	Q_PROPERTY(QString section READ section WRITE setSection NOTIFY sectionChanged)
+    Q_PROPERTY(QString section READ section WRITE setSection NOTIFY sectionChanged)
 
     /**
      * Difficulty of the activity.
      *
      * A difficulty level from 1 (easiest) to 6 (most difficult).
      */
-	Q_PROPERTY(quint32 difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
+    Q_PROPERTY(quint32 difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
 
     /**
      * Relative path to the icon of the activity.
      *
      * Example: "activity/activity.svg"
      */
-	Q_PROPERTY(QString icon READ icon WRITE setIcon NOTIFY iconChanged)
+    Q_PROPERTY(QString icon READ icon WRITE setIcon NOTIFY iconChanged)
 
     /**
      * Author of the activity.
      */
-	Q_PROPERTY(QString author READ author WRITE setAuthor NOTIFY authorChanged)
+    Q_PROPERTY(QString author READ author WRITE setAuthor NOTIFY authorChanged)
 
     /**
      * Whether the activity is part of the demo version of GCompris.
      */
-	Q_PROPERTY(bool demo READ demo WRITE setDemo NOTIFY demoChanged)
+    Q_PROPERTY(bool demo READ demo WRITE setDemo NOTIFY demoChanged)
 
     /**
      * Title of the activity.
      */
-	Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
+    Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
 
     /**
      * Description of the activity.
      */
-	Q_PROPERTY(QString description READ description WRITE setDescription NOTIFY descriptionChanged)
+    Q_PROPERTY(QString description READ description WRITE setDescription NOTIFY descriptionChanged)
 
     /**
      * Goal that this activity wants to achieve.
      */
-	Q_PROPERTY(QString goal READ goal WRITE setGoal NOTIFY goalChanged)
+    Q_PROPERTY(QString goal READ goal WRITE setGoal NOTIFY goalChanged)
 
-	/**
+    /**
      * Prerequisite for using this activity.
      */
-	Q_PROPERTY(QString prerequisite READ prerequisite WRITE setPrerequisite NOTIFY prerequisiteChanged)
+    Q_PROPERTY(QString prerequisite READ prerequisite WRITE setPrerequisite NOTIFY prerequisiteChanged)
 
     /**
      * Manual describing the activity's usage.
      */
-	Q_PROPERTY(QString manual READ manual WRITE setManual NOTIFY manualChanged)
+    Q_PROPERTY(QString manual READ manual WRITE setManual NOTIFY manualChanged)
 
     /**
      * Credits to third parties.
      */
-	Q_PROPERTY(QString credit READ credit WRITE setCredit NOTIFY creditChanged)
+    Q_PROPERTY(QString credit READ credit WRITE setCredit NOTIFY creditChanged)
 
-	Q_PROPERTY(bool favorite READ favorite WRITE setFavorite NOTIFY favoriteChanged)
+    Q_PROPERTY(bool favorite READ favorite WRITE setFavorite NOTIFY favoriteChanged)
 
     /**
      * This activity is enabled.
@@ -122,7 +122,17 @@ class ActivityInfo : public QObject
     /**
      * Version in which this activity has been created
      */
-	Q_PROPERTY(int createdInVersion READ createdInVersion WRITE setCreatedInVersion NOTIFY createdInVersionChanged)
+    Q_PROPERTY(int createdInVersion READ createdInVersion WRITE setCreatedInVersion NOTIFY createdInVersionChanged)
+
+    /**
+     * Contains a list of string defining the folder names for the different datasets.
+     */
+    Q_PROPERTY(QStringList levels READ levels WRITE setLevels NOTIFY levelsChanged)
+
+    /**
+     * Current dataset used for the activity (it is among the 'levels' list)
+     */
+    Q_PROPERTY(QString currentLevel READ currentLevel WRITE setCurrentLevel NOTIFY currentLevelChanged)
 
 public:
 	/// @cond INTERNAL_DOCS
@@ -158,6 +168,10 @@ public:
         void setEnabled(const bool);
         int createdInVersion() const;
         void setCreatedInVersion(const int);
+        QStringList levels() const;
+        void setLevels(const QStringList&);
+        QString currentLevel() const;
+        void setCurrentLevel(const QString&);
 
 	QStringList getSectionPath();
 
@@ -177,7 +191,8 @@ signals:
         void favoriteChanged();
         void enabledChanged();
 	void createdInVersionChanged();
-
+	void levelsChanged();
+	void currentLevelChanged();
 	/// @endcond
 private:
 	QString m_name;
@@ -195,6 +210,13 @@ private:
         bool m_favorite;
         bool m_enabled;
 	int m_createdInVersion;
+	QStringList m_levels;
+	QString m_currentLevel;
+
+	/*
+         * Set current level once we have the name and the levels
+         */
+	void setCurrentLevel();
 };
 
 #endif // ACTIVITYINFO_H

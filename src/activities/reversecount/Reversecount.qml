@@ -51,6 +51,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property GCSfx audioEffects: activity.audioEffects
+            readonly property string resourceUrl: activity.resourceUrl
+            property var levels: activity.datasetLoader.item.data
             property alias background: background
             property alias backgroundImg: backgroundImg
             property alias bar: bar
@@ -97,7 +99,7 @@ ActivityBase {
 
         Image {
             id: backgroundImg
-            source: Activity.url + Activity.backgrounds[0]
+            source: activity.resourceUrl + Activity.backgrounds[0]
             sourceSize.height: parent.height * 0.5
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
@@ -112,7 +114,7 @@ ActivityBase {
                 y: modelData[1] * (background.height- background.height/5) / 5
                 width: background.width / 5
                 height: background.height / 5
-                source: Activity.url + "iceblock.svg"
+                source: activity.resourceUrl + "iceblock.svg"
             }
         }
 
@@ -197,8 +199,7 @@ ActivityBase {
                 }
                 PropertyAction {
                     target: clock; property: 'source';
-                    value: "qrc:/gcompris/src/activities/reversecount/resource/" +
-                           "flower" + items.clockPosition + ".svg"
+                    value: activity.resourceUrl + "flower" + items.clockPosition + ".svg"
                 }
                 ParallelAnimation {
                     NumberAnimation {
@@ -228,5 +229,4 @@ ActivityBase {
             onLoose: Activity.initLevel()
         }
     }
-
 }

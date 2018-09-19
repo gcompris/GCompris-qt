@@ -27,7 +27,7 @@ import GCompris 1.0
 Image {
     id: tux
 
-    source: Activity.url + "tux_top_south.svg"
+    source: activity.resourceUrl + "tux_top_south.svg"
     fillMode: Image.PreserveAspectFit
     z: 10
 

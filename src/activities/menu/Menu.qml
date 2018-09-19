@@ -381,13 +381,13 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
                     anchors.margins: 5
-                    Image {
+                    /*Image {
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
                                 ActivityInfoTree.menuTree[index].difficulty + ".svg";
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                         x: 5
-                    }
+                    }*/
                     Image {
                         anchors {
                             horizontalCenter: parent.horizontalCenter
@@ -447,6 +447,29 @@ ActivityBase {
                     anchors.fill: activityBackground
                     onClicked: selectCurrentItem()
                 }
+
+                Rectangle {
+                    id: rect
+                    width: currentLevelField.width
+                    height: currentLevelField.height
+                    radius: 8
+                    color: "lightgrey"
+                    GCText {
+                        id: currentLevelField
+                        anchors.top: parent.top
+                        width: iconWidth * 0.15
+                        text: currentLevel
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            if(currentLevel == "") return;
+                            dialogChooseLevel.currentActivity = ActivityInfoTree.menuTree[index]
+                            dialogChooseLevel.chosenLevel = currentLevel;
+                            displayDialog(dialogChooseLevel);
+                        }
+                    }
+                }
                 Image {
                     source: activity.url + (favorite ? "all.svg" : "all_disabled.svg");
                     anchors {
@@ -467,13 +490,25 @@ ActivityBase {
                         return
                     particles.burst(50)
                     ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
-                    activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.menuTree[index].name,
+
+                    activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
                                              {
                                                  'menu': activity,
-                                                 'activityInfo': ActivityInfoTree.currentActivity
+                                                 'activityInfo': ActivityInfoTree.currentActivity,
+                                                 'levelFolder': currentLevel
                                              })
                     if (activityLoader.status == Loader.Ready) loadActivity()
                 }
+
+                DialogChooseLevel {
+                    id: dialogChooseLevel
+                    onClose: home()
+                    onStop: {
+                        currentLevel = dialogChooseLevel.chosenLevel
+                        ApplicationSettings.setCurrentLevel(name, currentLevel)
+                    }
+                }
+
             }
             highlight: Rectangle {
                 width: activityCellWidth - activitiesGrid.spacing

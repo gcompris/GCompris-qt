@@ -40,6 +40,7 @@ QString ActivityInfo::name() const
 {
     return m_name;
 }
+
 void ActivityInfo::setName(const QString &name)
 {
     m_name = name;
@@ -47,6 +48,9 @@ void ActivityInfo::setName(const QString &name)
     // from the persistant configuration
     if(!ApplicationSettings::getInstance()->isKioskMode())
         m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
+
+    setCurrentLevel();
+
     emit nameChanged();
 }
 
@@ -189,6 +193,42 @@ void ActivityInfo::setCreatedInVersion(const int created)
 {
     m_createdInVersion = created;
     emit createdInVersionChanged();
+}
+
+QStringList ActivityInfo::levels() const
+{
+    return m_levels;
+}
+
+void ActivityInfo::setLevels(const QStringList &levels)
+{
+    // levels only contains one element containing all the difficulties
+    m_levels = levels.front().split(',');
+
+    setCurrentLevel();
+
+    emit levelsChanged();
+}
+
+QString ActivityInfo::currentLevel() const
+{
+    return m_currentLevel;
+}
+
+void ActivityInfo::setCurrentLevel(const QString &currentLevel)
+{
+    m_currentLevel = currentLevel;
+    emit currentLevelChanged();
+}
+
+void ActivityInfo::setCurrentLevel()
+{
+    if(!m_name.isEmpty()) {
+        if(!m_levels.empty() && ApplicationSettings::getInstance()->currentLevel(m_name) == "") {
+            ApplicationSettings::getInstance()->setCurrentLevel(m_name, m_levels[0]);
+        }
+        m_currentLevel = ApplicationSettings::getInstance()->currentLevel(m_name);
+    }
 }
 
 QStringList ActivityInfo::getSectionPath()

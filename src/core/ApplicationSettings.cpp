@@ -44,6 +44,7 @@ static const QString GENERAL_GROUP_KEY = "General";
 static const QString ADMIN_GROUP_KEY = "Admin";
 static const QString INTERNAL_GROUP_KEY = "Internal";
 static const QString FAVORITE_GROUP_KEY = "Favorite";
+static const QString LEVELS_GROUP_KEY = "Levels";
 
 static const QString FULLSCREEN_KEY = "fullscreen";
 static const QString PREVIOUS_HEIGHT_KEY = "previousHeight";
@@ -440,6 +441,19 @@ bool ApplicationSettings::isFavorite(const QString &activity)
 	bool favorite = m_config.value(activity, false).toBool();
 	m_config.endGroup();
 	return favorite;
+}
+
+void ApplicationSettings::setCurrentLevel(const QString &activity, const QString &level)
+{
+	updateValueInConfig(LEVELS_GROUP_KEY, activity, level);
+}
+
+QString ApplicationSettings::currentLevel(const QString &activity)
+{
+	m_config.beginGroup(LEVELS_GROUP_KEY);
+	QString level = m_config.value(activity, "").toString();
+	m_config.endGroup();
+	return level;
 }
 
 template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,

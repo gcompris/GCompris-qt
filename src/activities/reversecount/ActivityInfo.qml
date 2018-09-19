@@ -21,7 +21,7 @@ ActivityInfo {
   name: "reversecount/Reversecount.qml"
   difficulty: 2
   icon: "reversecount/reversecount.svg"
-  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
+  author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
   demo: false
   //: Activity title
   title: qsTr("Practice subtraction with a fun game")
@@ -37,4 +37,5 @@ ActivityInfo {
   credit: ""
   section: "math numeration"
   createdInVersion: 0
+  levels: "1,2"
 }

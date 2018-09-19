@@ -123,12 +123,24 @@ Item {
     property Loading loading
 
     /**
+     * type:string
+     * The resource folder for the current activity. The resources
+     * of each activity needs to be stored with the same pattern.
+     * "qrc:/gcompris/src/activities/" + activity name + "/resource/"
+     *
+     */
+    property string resourceUrl: (activityInfo && activityInfo.name) ? "qrc:/gcompris/src/activities/" + activityInfo.name.split('/')[0] + "/resource/": ""
+
+    /**
      * type: bool
      * This variable stores if the activity is a musical activity.
      *
      * If it is a musical activity and the audioEffects is disabled, we temporarily unmute the GCSfx audioEffects for that activity and mute again on exiting it in main.qml.
      */
     property bool isMusicalActivity: false
+
+    property alias datasetLoader: datasetLoader
+    property string levelFolder
 
     /**
      * Emitted when the user wants to return to the Home/Menu screen.
@@ -231,5 +243,12 @@ Item {
                     "BuyMeOverlayInapp.qml" : "BuyMeOverlay.qml"
         anchors.fill: parent
         active: !activityInfo.demo && ApplicationSettings.isDemoMode
+    }
+
+    Loader {
+        id: datasetLoader
+        asynchronous: false
+        source: resourceUrl + levelFolder + "/Data.qml"
+        active: levelFolder != ""
     }
 }

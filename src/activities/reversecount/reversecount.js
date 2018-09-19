@@ -42,7 +42,6 @@ var backgrounds = [
 var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
 var tuxIsMoving = false;
-var debuginttmp = 0
 var placeFishToReachBool = false
 
 var level = null;
@@ -62,72 +61,19 @@ var fishes = [
             "Fish02.svg"
         ]
 
-
-var levels = [
-            {
-                "maxNumber": 1, /* Max number on each domino side */
-                "minNumber": 1,
-                "numberOfFish": 3
-            },
-            {
-                "maxNumber": 2,
-                "minNumber": 1,
-                "numberOfFish": 4
-            },
-            {
-                "maxNumber": 3,
-                "minNumber": 1,
-                "numberOfFish": 5
-            },
-            {
-                "maxNumber": 4,
-                "minNumber": 1,
-                "numberOfFish": 5
-            },
-            {
-                "maxNumber": 5,
-                "minNumber": 2,
-                "numberOfFish": 5
-            },
-            {
-                "maxNumber": 6,
-                "minNumber": 3,
-                "numberOfFish": 5
-            },
-            {
-                "maxNumber": 7,
-                "minNumber": 4,
-                "numberOfFish": 5
-            },
-            {
-                "maxNumber": 8,
-                "minNumber": 4,
-                "numberOfFish": 5
-            },
-            {
-                "maxNumber": 9,
-                "minNumber": 5,
-                "numberOfFish": 5
-            },
-
-        ]
-
 var numberOfFish
 var fishIndex = -1
 
 var currentLevel = 0
-var numberOfLevel = levels.length
+var numberOfLevel = 0
 var items
-
-var url = "qrc:/gcompris/src/activities/reversecount/resource/"
-
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    numberOfLevel = items.levels.length
     initLevel()
 }
-
 
 function stop() {
     fishIndex = -1
@@ -138,8 +84,8 @@ function initLevel() {
 
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
-    items.chooseDiceBar.valueMax = levels[currentLevel].maxNumber
-    numberOfFish = levels[currentLevel].numberOfFish
+    items.chooseDiceBar.valueMax = items.levels[currentLevel].maxNumber
+    numberOfFish = items.levels[currentLevel].numberOfFish
 
     fishIndex = 0
     tuxIceBlockNumber = 0
@@ -148,10 +94,9 @@ function initLevel() {
     calculateNextPlaceFishToReach()
     placeFishToReach()
     moveTuxToIceBlock()
-    items.backgroundImg.source = url + backgrounds[currentLevel % backgrounds.length]
+    items.backgroundImg.source = items.resourceUrl + backgrounds[currentLevel % backgrounds.length]
     items.clockPosition = 4
 }
-
 
 function moveTux() {
     calculateTuxIceBlockNextPos()
@@ -169,13 +114,12 @@ function moveTux() {
     }
 }
 
-
 function moveTuxToNextIceBlock() {
-    tuxIsMoving = false;
+    tuxIsMoving = false
     tuxIceBlockNumber++
     tuxIceBlockNumber = tuxIceBlockNumber % iceBlocksLayout.length
 
-    if (tuxIceBlockNumber >= 0 && tuxIceBlockNumber <= 4)
+    if (tuxIceBlockNumber > 0 && tuxIceBlockNumber <= 4)
         items.tux.rotation = -90
     else if (tuxIceBlockNumber >= 5 && tuxIceBlockNumber <= 8)
         items.tux.rotation = 0
@@ -205,7 +149,7 @@ function moveTuxToNextIceBlock() {
         return
     }
 
-    items.audioEffects.play(url + 'icy_walk.wav')
+    items.audioEffects.play(items.resourceUrl + 'icy_walk.wav')
     //if tux reaches its position + dice number before reaching the fish, calculation was wrong
     if (tuxIceBlockNumber == tuxIceBlockNumberGoal) {
         items.clockPosition--
@@ -219,7 +163,6 @@ function moveTuxToNextIceBlock() {
     tuxIsMoving = true
 }
 
-
 function moveTuxToIceBlock() {
     items.tux.x = iceBlocksLayout[tuxIceBlockNumber % iceBlocksLayout.length][0] *
             items.background.width / 5 +
@@ -229,10 +172,7 @@ function moveTuxToIceBlock() {
             (items.background.height / 5 - items.tux.height) / 2
 }
 
-
-
 function tuxRunningChanged() {
-
     if (tuxIsMoving) {
         moveTuxToNextIceBlock()
     } else {
@@ -242,7 +182,6 @@ function tuxRunningChanged() {
         }
     }
 }
-
 
 function calculateTuxIceBlockNextPos() {
     tuxIceBlockNumberGoal = tuxIceBlockNumber +
@@ -257,9 +196,9 @@ function calculateNextPlaceFishToReach() {
     var newFishIndex
     do {
         newFishIndex = Math.floor(Math.random() *
-                                  (levels[currentLevel].maxNumber * 2 -
-                                   levels[currentLevel].minNumber + 1)) +
-                levels[currentLevel].minNumber
+                                  (items.levels[currentLevel].maxNumber * 2 -
+                                   items.levels[currentLevel].minNumber + 1)) +
+                items.levels[currentLevel].minNumber
     } while((previousFishIndex === newFishIndex) || (newFishIndex >= iceBlocksLayout.length))
     previousFishIndex = newFishIndex
 
@@ -274,7 +213,7 @@ function placeFishToReach() {
     else
         items.fishToReach.opacity = 0
 
-    items.fishToReach.nextSource = url + fishes[fishIndex % fishes.length]
+    items.fishToReach.nextSource = items.resourceUrl + fishes[fishIndex % fishes.length]
     items.fishToReach.nextX = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
             items.background.width / 5 +
             (items.background.width / 5 - items.tux.width) / 2
@@ -282,7 +221,6 @@ function placeFishToReach() {
             (items.background.height - items.background.height/5) / 5 +
             (items.background.height / 5 - items.tux.height) / 2
 }
-
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
@@ -305,4 +243,3 @@ function lost() {
 function won() {
     items.bonus.good("flower")
 }
-

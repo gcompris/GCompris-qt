@@ -54,6 +54,9 @@
  * The <em>[Favorite]</em> group is auto-generated from the favorite activities
  * selected by a user.
  *
+ * The <em>[Levels]</em> group is auto-generated from the levels chosen by
+ * a user (if the activity provides multiple datasets).
+ *
  * Besides these global settings there is one group for each activity that
  * stores persistent settings.
  *
@@ -409,14 +412,14 @@ public:
             m_isDemoMode = !isBought;
             emit demoModeChanged();
         }
-	}
+    }
 
     bool sectionVisible() const { return m_sectionVisible; }
     void setSectionVisible(const bool newMode) {
-		qDebug() << "c++ setSectionVisible=" << newMode;
-		m_sectionVisible = newMode;
-		emit sectionVisibleChanged();
-	}
+        qDebug() << "c++ setSectionVisible=" << newMode;
+        m_sectionVisible = newMode;
+        emit sectionVisibleChanged();
+    }
 
     QString wordset() const { return m_wordset; }
     void setWordset(const QString &newWordset) {
@@ -505,6 +508,9 @@ protected slots:
 public slots:
     Q_INVOKABLE bool isFavorite(const QString &activity);
     Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
+    Q_INVOKABLE void setCurrentLevel(const QString &activity, const QString &level);
+    Q_INVOKABLE QString currentLevel(const QString &activity);
+
     Q_INVOKABLE void saveBaseFontSize();
     /// @endcond
 

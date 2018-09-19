@@ -41,7 +41,6 @@ public:
     ActivityInfo *menuTree(int) const;
     void setCurrentActivity(ActivityInfo *currentActivity);
     ActivityInfo *getCurrentActivity() const;
-    ActivityInfo *getParentActivity(ActivityInfo *root, ActivityInfo *menu);
     void menuTreeAppend(ActivityInfo *menu);
     void menuTreeAppend(QQmlEngine *engine,
                         const QDir &menuDir, const QString &menuFile);

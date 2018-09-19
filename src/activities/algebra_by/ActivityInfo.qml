@@ -37,4 +37,5 @@ ActivityInfo {
   credit: ""
   section: "math multiplication"
   createdInVersion: 0
+  levels: "1,2,3,4"
 }
