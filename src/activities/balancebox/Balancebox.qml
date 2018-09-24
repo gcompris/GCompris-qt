@@ -102,7 +102,7 @@ ActivityBase {
                      activity.needRestart = false;
                  } else
                      Activity.initLevel();
-
+                
         onStop: {
             Activity.stop();
             activity.needRestart = true;
