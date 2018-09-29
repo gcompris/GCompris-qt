@@ -131,3 +131,14 @@ add_custom_target (apk_signed_aligned
 add_custom_target (apk_install
    DEPENDS apkInstall
 )
+
+if (TARGET create-apk)
+   set(PACKAGE_DIR ${PACKAGE_SOURCE_ANDROID})
+   set_target_properties(create-apk-GCompris PROPERTIES ANDROID_APK_DIR "${PACKAGE_DIR}")
+   add_custom_target(gcompris-move-metadata ALL
+      COMMAND cmake -E echo "Moving GCompris shared Android resources"
+      COMMAND cmake -E make_directory ${PACKAGE_SOURCE_ANDROID}
+      COMMAND cmake -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}" "${PACKAGE_SOURCE_ANDROID}"
+   )
+   add_dependencies(create-apk gcompris-move-metadata)
+endif()

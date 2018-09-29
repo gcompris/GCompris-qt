@@ -128,7 +128,7 @@ QString ApplicationInfo::getResourceDataPath()
 QString ApplicationInfo::getFilePath(const QString &file)
 {
 #if defined(Q_OS_ANDROID)
-    return QString("assets:/%1").arg(file);
+    return QString("assets:/share/GCompris/rcc/%1").arg(file);
 #elif defined(Q_OS_MACX)
     return QString("%1/../Resources/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
 #elif defined(Q_OS_IOS)

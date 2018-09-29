@@ -213,7 +213,7 @@ endif(BUILD_STANDALONE)
 #if(WIN32) set(GCOMPRIS_OTHER_LIBS "") endif()
 
 # install fixup_bundle script to resolve and fixup runtime dependencies
-if(BUILD_STANDALONE)
+if(BUILD_STANDALONE AND NOT ANDROID)
   configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 

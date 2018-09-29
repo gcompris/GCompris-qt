@@ -92,8 +92,8 @@ endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 set(QT_REQUIRED_VERSION 5.6.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
-            Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)
-          
+    Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)
+
 if(ANDROID)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
 endif(ANDROID)
@@ -144,8 +144,6 @@ set(GRAPHICAL_RENDERER "auto" CACHE STRING "Policy for choosing the renderer bac
 if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
   set(_data_dest_dir bin/${_bundle_bin}/../Resources)
-elseif(ANDROID)
-  set(_data_dest_dir android/assets)
 else()
   set(_data_dest_dir share/${GCOMPRIS_EXECUTABLE_NAME})
 endif()
@@ -153,7 +151,7 @@ if(ANDROID)
   # Android .so output
   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
-  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
+  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/android/assets/${_data_dest_dir}/rcc CACHE INTERNAL "" FORCE)
   if(ACTIVATION_MODE STREQUAL "inapp")
     set(ANDROID_BILLING_PERMISSION "<uses-permission android:name=\"com.android.vending.BILLING\"/>")
     set(ANDROID_PACKAGE "net.gcompris")
@@ -441,7 +439,7 @@ else()
     # make sure submodule is up2date
     find_package(Git)
     if(GIT_FOUND)
-      execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init)
+      execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init WORKING_DIRECTORY ${CMAKE_SOURCE_DIR})
     endif()
 
     # for visual studio, we need to create a vcxproj
