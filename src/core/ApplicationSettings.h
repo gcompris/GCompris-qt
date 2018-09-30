@@ -260,7 +260,6 @@ public:
     explicit ApplicationSettings(const QString &path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
          + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QObject *parent = 0);
     virtual ~ApplicationSettings();
-    static void init();
     // It is not recommended to create a singleton of Qml Singleton registered
     // object but we could not found a better way to let us access ApplicationInfo
     // on the C++ side. All our test shows that it works.
@@ -270,8 +269,8 @@ public:
         }
         return m_instance;
     }
-    static QObject *systeminfoProvider(QQmlEngine *engine,
-                                       QJSEngine *scriptEngine);
+    static QObject *applicationSettingsProvider(QQmlEngine *engine,
+                                                QJSEngine *scriptEngine);
 
     bool showLockedActivities() const { return m_showLockedActivities; }
     void setShowLockedActivities(const bool newMode) {

@@ -482,8 +482,8 @@ bool ApplicationSettings::useExternalWordset()
     return !m_wordset.isEmpty() && DownloadManager::getInstance()->isDataRegistered("words");
 }
 
-QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
-                                                 QJSEngine *scriptEngine)
+QObject *ApplicationSettings::applicationSettingsProvider(QQmlEngine *engine,
+                                                          QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
@@ -491,10 +491,3 @@ QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
     ApplicationSettings* appSettings = getInstance();
     return appSettings;
 }
-
-void ApplicationSettings::init()
-{
-    qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
-                                                  "ApplicationSettings", systeminfoProvider);
-}
-

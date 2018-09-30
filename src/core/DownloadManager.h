@@ -222,9 +222,8 @@ public:
     /**
      * Registers DownloadManager singleton in the QML engine.
      */
-    static void init();
-    static QObject *systeminfoProvider(QQmlEngine *engine,
-            QJSEngine *scriptEngine);
+    static QObject *downloadManagerProvider(QQmlEngine *engine,
+                                            QJSEngine *scriptEngine);
     static DownloadManager* getInstance();
 
     /**

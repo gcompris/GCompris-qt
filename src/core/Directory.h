@@ -51,10 +51,6 @@ public:
       *          in the directory.
       */
     Q_INVOKABLE QStringList getFiles(const QString& location, const QStringList &nameFilters = QStringList());
-
-    /// @cond INTERNAL_DOCS
-    static void init();
-    /// @endcond
 };
 
 #endif

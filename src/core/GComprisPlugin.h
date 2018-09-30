@@ -1,9 +1,9 @@
-/* GCompris - Directory.cpp
+/* GCompris - GComprisPlugin.h
  *
- * Copyright (C) 2017 Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+ * Copyright (C) 2018 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   Rudra Nil Basu <rudra.nil.basu.1996@gmail.com>
+ *   Johnny Jazeix <jazeix@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -18,16 +18,25 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
+#ifndef GCOMPRISPLUGIN_H
+#define GCOMPRISPLUGIN_H
 
-#include "Directory.h"
-#include <QDir>
+#include <QQmlExtensionPlugin>
 
-Directory::Directory(QObject *parent) : QObject(parent)
+/**
+ * A plugin that exposes GCompris to QML in the form of declarative items.
+ */
+class Q_DECL_EXPORT GComprisPlugin : public QQmlExtensionPlugin
 {
-}
+    Q_OBJECT
+#if !defined(STATIC_PLUGIN_GCOMPRIS)
+    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionInterface")
+#endif
 
-QStringList Directory::getFiles(const QString& location, const QStringList &nameFilters)
-{
-    QDir dir(location);
-    return dir.entryList(nameFilters);
-}
+public:
+    explicit GComprisPlugin(QObject *parent = 0);
+
+    void registerTypes(const char *uri);
+};
+
+#endif

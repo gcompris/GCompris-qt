@@ -164,15 +164,6 @@ public:
     Q_ENUM(Platform)
 
     /**
-     * Registers singleton in the QML engine.
-     *
-     * It is not recommended to create a singleton of Qml Singleton registered
-     * object but we could not found a better way to let us access ApplicationInfo
-     * on the C++ side. All our test shows that it works.
-     */
-    static void init();
-
-    /**
      * Returns an absolute and platform independent path to the passed @p file
      *
      * @param file A relative filename.
@@ -263,8 +254,8 @@ public:
         }
         return m_instance;
     }
-    static QObject *systeminfoProvider(QQmlEngine *engine,
-									   QJSEngine *scriptEngine);
+    static QObject *applicationInfoProvider(QQmlEngine *engine,
+                                            QJSEngine *scriptEngine);
     static void setWindow(QQuickWindow *window);
     explicit ApplicationInfo(QObject *parent = 0);
     ~ApplicationInfo();

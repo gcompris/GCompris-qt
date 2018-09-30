@@ -245,7 +245,7 @@ QVariantList ApplicationInfo::localeSort(QVariantList list,
     return list;
 }
 
-QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
+QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,
                                              QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
@@ -258,10 +258,4 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
     connect(ApplicationSettings::getInstance(), &ApplicationSettings::fullscreenChanged, appInfo,
             &ApplicationInfo::notifyFullscreenChanged);
     return appInfo;
-}
-
-void ApplicationInfo::init()
-{
-    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0,
-                                              "ApplicationInfo", systeminfoProvider);
 }

@@ -25,7 +25,6 @@
 #include <QDir>
 #include <QString>
 #include <QTextStream>
-#include <QQmlComponent>
 
 File::File(QObject *parent) : QObject(parent)
 {
@@ -113,11 +112,6 @@ bool File::write(const QString& data, const QString& name)
     file.close();
 
     return true;
-}
-
-void File::init()
-{
-    qmlRegisterType<File>("GCompris", 1, 0, "File");
 }
 
 bool File::exists(const QString& path)

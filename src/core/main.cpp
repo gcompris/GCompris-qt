@@ -30,10 +30,9 @@
 #include <QPixmap>
 #include <QSettings>
 
+#include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
-#include "File.h"
-#include "Directory.h"
 #include "DownloadManager.h"
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
@@ -175,12 +174,9 @@ int main(int argc, char *argv[])
 
     parser.process(app);
 
-    ApplicationInfo::init();
-    ActivityInfoTree::init();
-    ApplicationSettings::init();
-    File::init();
-    Directory::init();
-    DownloadManager::init();
+    GComprisPlugin plugin;
+    plugin.registerTypes("GCompris");
+    ActivityInfoTree::registerResources();
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
@@ -239,20 +235,20 @@ int main(int argc, char *argv[])
         ApplicationSettings::getInstance()->setKioskMode(true);
     }
     if(parser.isSet(clSoftwareRenderer)) {
-        ApplicationSettings::getInstance()->setRenderer("software");
+        ApplicationSettings::getInstance()->setRenderer(QStringLiteral("software"));
     }
     if(parser.isSet(clOpenGLRenderer)) {
-        ApplicationSettings::getInstance()->setRenderer("opengl");
+        ApplicationSettings::getInstance()->setRenderer(QStringLiteral("opengl"));
     }
 
     // Set the renderer used
-    const QString renderer = ApplicationSettings::getInstance()->renderer();
-    ApplicationInfo::getInstance()->setUseOpenGL(renderer != "software");
+    const QString &renderer = ApplicationSettings::getInstance()->renderer();
+    ApplicationInfo::getInstance()->setUseOpenGL(renderer != QStringLiteral("software"));
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-    if(renderer == "software")
+    if(renderer == QStringLiteral("software"))
        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-    else if(renderer == "opengl")
+    else if(renderer == QStringLiteral("opengl"))
        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
 #endif
 

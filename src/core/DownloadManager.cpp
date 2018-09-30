@@ -100,20 +100,13 @@ DownloadManager* DownloadManager::getInstance()
     return _instance;
 }
 
-QObject *DownloadManager::systeminfoProvider(QQmlEngine *engine,
+QObject *DownloadManager::downloadManagerProvider(QQmlEngine *engine,
         QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
 
     return getInstance();
-}
-
-void DownloadManager::init()
-{
-    qmlRegisterSingletonType<DownloadManager>("GCompris", 1, 0,
-            "DownloadManager",
-            systeminfoProvider);
 }
 
 bool DownloadManager::downloadIsRunning() const

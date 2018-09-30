@@ -89,7 +89,6 @@ public:
     Q_INVOKABLE static bool mkpath(const QString& path);
 
     /// @cond INTERNAL_DOCS
-    static void init();
     QString name() const;
     void setName(const QString &str);
     /// @endcond

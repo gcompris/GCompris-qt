@@ -286,7 +286,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     return menuTree;
 }
 
-void ActivityInfoTree::init()
+void ActivityInfoTree::registerResources()
 {
     if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
@@ -300,11 +300,6 @@ void ActivityInfoTree::init()
     if(QResource::registerResource(ApplicationSettings::getInstance()->cachePath() +
                                    "/data2/" + QString("full-%1.rcc").arg(COMPRESSED_AUDIO)))
         qDebug() << "Registered the pre-download " << QString("full-%1.rcc").arg(COMPRESSED_AUDIO);
-
-    qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
-    qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
-
-
 }
 
 void ActivityInfoTree::filterBySearch(const QString& text)

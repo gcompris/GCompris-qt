@@ -25,6 +25,8 @@ set(gcompris_SRCS
    Directory.h
    DownloadManager.cpp
    DownloadManager.h
+   GComprisPlugin.cpp
+   GComprisPlugin.h
    main.cpp
    config.h.in
 )
