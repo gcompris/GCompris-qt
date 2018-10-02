@@ -101,7 +101,7 @@ ActivityBase {
                     toArabic: false
                 },
                 {
-                    values: ['VIII', 'LXXX', 'CCCCLXXX', 'DCCC', 'MCCC'],
+                    values: ['VIII', 'LXXX', 'CDLXXX', 'DCCC', 'MCCC'],
                     instruction: qsTr("Only one number is subtracted, not two. So 8 is always VIII and never IIX."),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
