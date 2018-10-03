@@ -268,6 +268,8 @@ add_custom_target(DlAndInstallBundledTranslations
 
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
+elseif(ANDROID)
+  install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION "share")
 else()
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_data_dest_dir})
 endif()
