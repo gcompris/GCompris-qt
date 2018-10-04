@@ -159,8 +159,6 @@ public:
         int createdInVersion() const;
         void setCreatedInVersion(const int);
 
-	QStringList getSectionPath();
-
 signals:
 	void nameChanged();
 	void sectionChanged();

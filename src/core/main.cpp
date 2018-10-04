@@ -243,12 +243,12 @@ int main(int argc, char *argv[])
 
     // Set the renderer used
     const QString &renderer = ApplicationSettings::getInstance()->renderer();
-    ApplicationInfo::getInstance()->setUseOpenGL(renderer != QStringLiteral("software"));
+    ApplicationInfo::getInstance()->setUseOpenGL(renderer != QLatin1String("software"));
 
 #if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-    if(renderer == QStringLiteral("software"))
+    if(renderer == QLatin1String("software"))
        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-    else if(renderer == QStringLiteral("opengl"))
+    else if(renderer == QLatin1String("opengl"))
        QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
 #endif
 

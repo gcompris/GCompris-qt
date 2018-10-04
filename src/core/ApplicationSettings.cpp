@@ -36,50 +36,50 @@
 
 #include <QtQml>
 
-#define GC_DEFAULT_FONT "Andika-R.otf"
+#define GC_DEFAULT_FONT QLatin1String("Andika-R.otf")
 #define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
 #define GC_DEFAULT_FONT_LETTER_SPACING 0
 
-static const QString GENERAL_GROUP_KEY = "General";
-static const QString ADMIN_GROUP_KEY = "Admin";
-static const QString INTERNAL_GROUP_KEY = "Internal";
-static const QString FAVORITE_GROUP_KEY = "Favorite";
+static const QString GENERAL_GROUP_KEY = QLatin1String("General");
+static const QString ADMIN_GROUP_KEY = QLatin1String("Admin");
+static const QString INTERNAL_GROUP_KEY = QLatin1String("Internal");
+static const QString FAVORITE_GROUP_KEY = QLatin1String("Favorite");
 
-static const QString FULLSCREEN_KEY = "fullscreen";
-static const QString PREVIOUS_HEIGHT_KEY = "previousHeight";
-static const QString PREVIOUS_WIDTH_KEY = "previousWidth";
-static const QString SHOW_LOCKED_ACTIVITIES_KEY = "showLockedActivities";
-static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
-static const QString ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
-static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
-static const QString LOCALE_KEY = "locale";
-static const QString FONT_KEY = "font";
-static const QString IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
-static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
+static const QString FULLSCREEN_KEY = QLatin1String("fullscreen");
+static const QString PREVIOUS_HEIGHT_KEY = QLatin1String("previousHeight");
+static const QString PREVIOUS_WIDTH_KEY = QLatin1String("previousWidth");
+static const QString SHOW_LOCKED_ACTIVITIES_KEY = QLatin1String("showLockedActivities");
+static const QString ENABLE_AUDIO_VOICES_KEY = QLatin1String("enableAudioVoices");
+static const QString ENABLE_AUDIO_EFFECTS_KEY = QLatin1String("enableAudioEffects");
+static const QString VIRTUALKEYBOARD_KEY = QLatin1String("virtualKeyboard");
+static const QString LOCALE_KEY = QLatin1String("locale");
+static const QString FONT_KEY = QLatin1String("font");
+static const QString IS_CURRENT_FONT_EMBEDDED = QLatin1String("isCurrentFontEmbedded");
+static const QString ENABLE_AUTOMATIC_DOWNLOADS = QLatin1String("enableAutomaticDownloads");
 
-static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
-static const QString CACHE_PATH_KEY = "cachePath";
+static const QString DOWNLOAD_SERVER_URL_KEY = QLatin1String("downloadServerUrl");
+static const QString CACHE_PATH_KEY = QLatin1String("cachePath");
 
-static const QString EXE_COUNT_KEY = "exeCount";
-static const QString LAST_GC_VERSION_RAN = "lastGCVersionRan";
-static const QString RENDERER_KEY = "renderer";
+static const QString EXE_COUNT_KEY = QLatin1String("exeCount");
+static const QString LAST_GC_VERSION_RAN = QLatin1String("lastGCVersionRan");
+static const QString RENDERER_KEY = QLatin1String("renderer");
 
-static const QString FILTER_LEVEL_MIN = "filterLevelMin";
-static const QString FILTER_LEVEL_MAX = "filterLevelMax";
+static const QString FILTER_LEVEL_MIN = QLatin1String("filterLevelMin");
+static const QString FILTER_LEVEL_MAX = QLatin1String("filterLevelMax");
 
-static const QString BASE_FONT_SIZE_KEY = "baseFontSize";
-static const QString FONT_CAPITALIZATION = "fontCapitalization";
-static const QString FONT_LETTER_SPACING = "fontLetterSpacing";
+static const QString BASE_FONT_SIZE_KEY = QLatin1String("baseFontSize");
+static const QString FONT_CAPITALIZATION = QLatin1String("fontCapitalization");
+static const QString FONT_LETTER_SPACING = QLatin1String("fontLetterSpacing");
 
-static const QString DEFAULT_CURSOR = "defaultCursor";
-static const QString NO_CURSOR = "noCursor";
-static const QString DEMO_KEY = "demo";
-static const QString CODE_KEY = "key";
-static const QString KIOSK_KEY = "kiosk";
-static const QString SECTION_VISIBLE = "sectionVisible";
-static const QString WORDSET = "wordset";
+static const QString DEFAULT_CURSOR = QLatin1String("defaultCursor");
+static const QString NO_CURSOR = QLatin1String("noCursor");
+static const QString DEMO_KEY = QLatin1String("demo");
+static const QString CODE_KEY = QLatin1String("key");
+static const QString KIOSK_KEY = QLatin1String("kiosk");
+static const QString SECTION_VISIBLE = QLatin1String("sectionVisible");
+static const QString WORDSET = QLatin1String("wordset");
 
-static const QString PROGRESS_KEY = "progress";
+static const QString PROGRESS_KEY = QLatin1String("progress");
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
@@ -103,7 +103,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
             ApplicationInfo::getInstance()->isMobile()).toBool();
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
-    if(m_font == "Andika-R.ttf")
+    if(m_font == QLatin1String("Andika-R.ttf"))
         m_font = "Andika-R.otf";
     m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
     setFontLetterSpacing(m_config.value(FONT_LETTER_SPACING, GC_DEFAULT_FONT_LETTER_SPACING).toReal());
@@ -150,7 +150,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
 
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
-    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "http://gcompris.net").toString();
+    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, QLatin1String("http://gcompris.net")).toString();
     m_cachePath = m_config.value(CACHE_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::CacheLocation)).toString();
     m_config.endGroup();
 

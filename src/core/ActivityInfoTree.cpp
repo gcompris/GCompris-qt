@@ -83,20 +83,6 @@ ActivityInfo *ActivityInfoTree::getCurrentActivity() const
     return m_currentActivity;
 }
 
-ActivityInfo *ActivityInfoTree::getParentActivity(ActivityInfo *root, ActivityInfo *menu)
-{
-    qDebug() << "Parent Path= " << menu->getSectionPath();
-
-    Q_FOREACH( QObject *object, root->children() )
-	{
-            ActivityInfo *activityInfo = qobject_cast<ActivityInfo*>(object);
-            if(activityInfo->section() == menu->section()) {
-                return activityInfo;
-            }
-	}
-    return m_menuTree.at(0);
-}
-
 void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
 {
     m_menuTreeFull.append(menu);
