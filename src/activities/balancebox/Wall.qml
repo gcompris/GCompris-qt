@@ -51,7 +51,7 @@ Item {
             density: 1
             restitution: Activity.restitution
             categories: Box.Category2
-            collidesWith: Box.Category1 | Box.Category2
+            collidesWith: Box.Category1
         }
     }
 
