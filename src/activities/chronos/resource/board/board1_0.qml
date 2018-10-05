@@ -25,10 +25,6 @@ QtObject {
    property string instruction: qsTr("Moonwalker")
    property var levels: [
       {
-          "pixmapfile": "images/bg.jpg",
-          "type": "SHAPE_BACKGROUND_IMAGE"
-      },
-      {
           "pixmapfile": "images/4.png",
           "x": "0.7",
           "y": "0.7",
