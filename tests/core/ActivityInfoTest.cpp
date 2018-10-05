@@ -42,7 +42,6 @@ class CoreActivityInfoTest : public QObject
 private slots:
     void ActivityInfoTest();
     void ActivityInfoTest_data();
-    void getSectionPathTest();
 };
 
 void CoreActivityInfoTest::ActivityInfoTest_data()
@@ -107,18 +106,6 @@ void CoreActivityInfoTest::ActivityInfoTest()
     ACTIVITY_INFO_TEST_ATTRIBUTE(createdInVersion, CreatedInVersion, int);
 
     delete ApplicationSettingsMock::getInstance();
-}
-
-void CoreActivityInfoTest::getSectionPathTest()
-{
-    ActivityInfo parent;
-    parent.setSection("parent");
-    ActivityInfo child(&parent);
-    child.setSection("child");
-    QStringList sectionPath = child.getSectionPath();
-
-    QCOMPARE(sectionPath.size(), 2);
-    QCOMPARE(sectionPath.join('/'), QStringLiteral("parent/child"));
 }
 
 QTEST_MAIN(CoreActivityInfoTest)
