@@ -381,13 +381,14 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
                     anchors.margins: 5
-                    /*Image {
+                    Image {
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
                                 ActivityInfoTree.menuTree[index].difficulty + ".svg";
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                         x: 5
-                    }*/
+                        visible: !currentLevelRectangle.visible
+                    }
                     Image {
                         anchors {
                             horizontalCenter: parent.horizontalCenter
@@ -449,7 +450,8 @@ ActivityBase {
                 }
 
                 Rectangle {
-                    id: rect
+                    id: currentLevelRectangle
+                    visible: currentLevel != ""
                     width: currentLevelField.width
                     height: currentLevelField.height
                     radius: 8
