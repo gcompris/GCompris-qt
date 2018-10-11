@@ -73,7 +73,7 @@ def check_import_version(line_str):
                             "QtSensors" : "5.0",
                             "QtMultimedia" : "5.0",
                             "GCompris" : "1.0",
-                            "Box2D" : "2.0"
+                            "Box2D" : "2.0",
                             "QtQuick.Window" : "2.2"}
     
     regex_string = re.compile(r"import (\w+) (\d+.\d+)")
@@ -173,6 +173,23 @@ def empty_directory(js_files_array, qml_files_array):
         sys.exit("No file to check! Did you enter a correct directory?")
 
 
+# check all activites
+def check_all_activities():
+
+    path = "../src/activities"
+    activity_list = [ activity for activity in os.listdir(path)
+                      if os.path.isdir(os.path.join(path, activity))]
+    activity_list.sort()
+
+    elements_to_escape = read_elements_to_escape()
+    
+    for activity in activity_list:
+        js_files_array, qml_files_array = initialize(activity)
+        empty_directory(js_files_array, qml_files_array)
+        check_js_files(js_files_array)
+        check_qml_files(qml_files_array, elements_to_escape)
+
+
 def main():
     
     if len(sys.argv) < 2:
@@ -180,11 +197,14 @@ def main():
                  "\nUsage: ./check_activity.py activity_directory_name"
                  "\neg: ./check_activity.py reversecount")
     
-    elements_to_escape = read_elements_to_escape()
-    js_files_array, qml_files_array = initialize(sys.argv[1])
-    empty_directory(js_files_array, qml_files_array)
-    check_js_files(js_files_array)
-    check_qml_files(qml_files_array, elements_to_escape)
+    if sys.argv[1] == "all":
+        check_all_activities()
+    else:
+        js_files_array, qml_files_array = initialize(sys.argv[1])
+        empty_directory(js_files_array, qml_files_array)
+        check_js_files(js_files_array)
+        elements_to_escape = read_elements_to_escape()
+        check_qml_files(qml_files_array, elements_to_escape)
 
 
 # if this file runs
