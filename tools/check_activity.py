@@ -21,6 +21,7 @@ import sys
 import os
 import glob
 import re
+import subprocess
 
 def initialize(activity_dir_name):	
     
@@ -190,6 +191,18 @@ def check_all_activities():
         check_qml_files(qml_files_array, elements_to_escape)
 
 
+# check author name
+def check_author_name():
+    
+    command = ["git", "config", "user.name"]
+    author_name = subprocess.run(command, check=True, stdout=subprocess.PIPE)
+    author_name = author_name.stdout.decode()[:-1]
+
+    if len(author_name.split()) != 2:
+        print("Author name format violation: {}".format(author_name))
+        print_error("Author name format <FirstName LastName>")
+
+
 def main():
     
     if len(sys.argv) < 2:
@@ -205,6 +218,8 @@ def main():
         check_js_files(js_files_array)
         elements_to_escape = read_elements_to_escape()
         check_qml_files(qml_files_array, elements_to_escape)
+
+    check_author_name()
 
 
 # if this file runs
