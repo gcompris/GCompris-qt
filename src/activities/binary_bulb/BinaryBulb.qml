@@ -36,7 +36,8 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: "resource/background.svg"
+        source: "../digital_electricity/resource/texture01.png"
+        fillMode: Image.Tile
         signal start
         signal stop
 
@@ -67,8 +68,9 @@ ActivityBase {
         // Tutorial section starts
         Image {
             id: tutorialImage
-            source: Activity.url + "background.svg"
+            source: "../digital_electricity/resource/texture01.png"
             anchors.fill: parent
+            fillMode: Image.Tile
             z: 5
             visible: true
             Tutorial {

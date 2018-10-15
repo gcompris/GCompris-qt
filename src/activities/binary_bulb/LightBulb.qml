@@ -43,9 +43,9 @@ Item {
     }
     Image {
         id: bulbImage
-        height: parent.height
         width: parent.width
-        sourceSize.height: 60 * ApplicationInfo.ratio
+        sourceSize.width: parent.width
+        fillMode: Image.PreserveAspectFit
         source: "resource/bulb_off.svg"
     }
     property string bit: ""
