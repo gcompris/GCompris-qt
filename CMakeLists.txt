@@ -30,7 +30,7 @@ set(GCOMPRIS_MINOR_VERSION 95)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 # Set the BUILD_DATE
-string(TIMESTAMP BUILD_DATE %Y%M)
+string(TIMESTAMP BUILD_DATE %Y%m)
 
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
