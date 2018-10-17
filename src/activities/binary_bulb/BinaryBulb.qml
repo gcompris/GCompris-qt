@@ -76,6 +76,7 @@ ActivityBase {
             Tutorial {
                 id: tutorialSection
                 tutorialDetails: Activity.tutorialInstructions
+                useImage: false
                 onSkipPressed: {
                     Activity.initLevel()
                     tutorialImage.visible = false

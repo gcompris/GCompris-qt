@@ -55,6 +55,10 @@ Item {
     /* Container for all the tutorial instructions */
     property var tutorialDetails
 
+    /* Do we use image or qml files for illustrations */
+    
+    property bool useImage : true
+    
     // Emitted when skipButton is clicked
     signal skipPressed
 
@@ -162,14 +166,30 @@ Item {
     // Image component for tutorial instructions
     Image {
         id: tutorialImage
+        enabled: useImage
         width: parent.width * 0.8
         height: (parent.height - nextButton.height) * 0.48
         fillMode: Image.PreserveAspectFit
-        source: tutorialDetails ? tutorialDetails[tutorialNumber].instructionImage : ""
+        source: tutorialDetails && useImage ? tutorialDetails[tutorialNumber].instructionImage : ""
         anchors {
             top: previousButton.bottom
             topMargin: 10
             horizontalCenter: parent.horizontalCenter
         }
     }
+    
+    // Alternative QML component for tutorial instructions
+    Loader {
+        id: tutorialQml
+        enabled: !tutorialImage.visible
+        width: parent.width * 0.8
+        height: (parent.height - nextButton.height) * 0.48
+        source: tutorialDetails && !useImage ? tutorialDetails[tutorialNumber].instructionQml : ""
+        anchors {
+            top: previousButton.bottom
+            topMargin: 10
+            horizontalCenter: parent.horizontalCenter
+        }
+    }
+    
 }
