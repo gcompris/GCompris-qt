@@ -333,6 +333,10 @@ ActivityBase {
             id: lyricsArea
         }
 
+        GCCreationHandler {
+            id: creationHandler
+        }
+
         OptionsRow {
             id: optionsRow
             anchors.top: instructionBox.bottom
@@ -386,7 +390,10 @@ ActivityBase {
                 melodyList.visible = true
                 melodyList.forceActiveFocus()
             }
-            onSaveButtonClicked: Activity.saveMelody()
+            onSaveButtonClicked: {
+                creationHandler.visible = true
+                creationHandler.open("piano_composition")
+            }
             onClefAdded: {
                 var insertingIndex = multipleStaff.selectedIndex === -1 ? multipleStaff.musicElementModel.count : multipleStaff.selectedIndex
                 var tempModel = multipleStaff.createNotesBackup()
