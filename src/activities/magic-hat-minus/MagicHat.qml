@@ -41,7 +41,7 @@ ActivityBase {
         sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
         property int starSize: Math.min(rightLayout.width / 12,
-                                        background.height / 16)
+                                        background.height / 21)
         signal start
         signal stop
 
@@ -54,6 +54,8 @@ ActivityBase {
 
         onStart: Activity.start(items, mode)
         onStop: Activity.stop()
+
+        property bool vert: background.width > (background.height - okButton.height)
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -116,8 +118,8 @@ ActivityBase {
             id: rightLayout
             anchors {
                 left: mainlayout.right
-                right: background.right
-                rightMargin: 10
+                right: background.vert ? okButton.left : background.right
+                rightMargin: background.vert ? 0 : 10
                 verticalCenter: background.verticalCenter
                 verticalCenterOffset: background.height/8
             }
