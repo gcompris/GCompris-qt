@@ -43,7 +43,6 @@ if(ECM_FOUND)
   include(ECMAddTests)
   include(ECMPoQmTools)
   if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
-    set(LOCALE_INSTALL_DIR "${CMAKE_CURRENT_SOURCE_DIR}/po")
     ecm_install_po_files_as_qm(po)
   endif()
 
