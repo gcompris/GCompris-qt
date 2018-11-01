@@ -36,6 +36,10 @@
 #include "Directory.h"
 #include "DownloadManager.h"
 
+// to be removed once merged in master
+#include "synth/GSynth.h"
+#include <QQmlComponent>
+
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
     QFile file("assets:/gcompris_" + locale + ".qm");
@@ -182,6 +186,10 @@ int main(int argc, char *argv[])
     File::init();
     Directory::init();
     DownloadManager::init();
+
+    // todo to be put in GComprisPlugin.cpp once merged in master
+    qmlRegisterSingletonType<GSynth>("GCompris", 1, 0,
+                                     "GSynth", GSynth::synthProvider);
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();

@@ -27,6 +27,23 @@ set(gcompris_SRCS
    DownloadManager.h
    main.cpp
    config.h.in
+   synth/ADSRenvelope.cpp
+   synth/ADSRenvelope.h
+   synth/fft.cpp
+   synth/fft.h
+   synth/filter.cpp
+   synth/filter.h
+   synth/GSynth.cpp
+   synth/GSynth.h
+   synth/linearSynthesis.cpp
+   synth/linearSynthesis.h
+   synth/modulation.cpp
+   synth/modulation.h
+   synth/generator.cpp
+   synth/generator.h
+   synth/reverb.h
+   synth/waveform.cpp
+   synth/waveform.h
 )
 
 if(ANDROID)

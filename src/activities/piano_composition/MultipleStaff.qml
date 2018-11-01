@@ -327,13 +327,13 @@ Item {
         }
 
         if(selectedIndex === -1) {
-            var isDefualtClef = false
+            var isDefaultClef = false
             if(!musicElementModel.count)
-                isDefualtClef = true
+                isDefaultClef = true
             musicElementModel.append({"noteName_": noteName, "noteType_": noteType, "soundPitch_": soundPitch,
                                       "clefType_": clefType, "highlightWhenPlayed_": highlightWhenPlayed,
                                       "staffNb_": multipleStaff.currentEnteringStaff,
-                                      "isDefaultClef_": isDefualtClef, "elementType_": elementType})
+                                      "isDefaultClef_": isDefaultClef, "elementType_": elementType})
 
         }
         else {
@@ -381,7 +381,8 @@ Item {
         currentEnteringStaff = 0
         selectedIndex = -1
         for(var i = 0; i < notes.length; i++) {
-            addMusicElement(notes[i]["elementType_"], notes[i]["noteName_"], notes[i]["noteType_"], false, false, notes[i]["clefType_"], notes[i]["soundPitch_"], true)
+            var note = notes[i]
+            addMusicElement(note["elementType_"], note["noteName_"], note["noteType_"], false, false, note["clefType_"], note["soundPitch_"], true)
         }
 
         // Remove the remaining unused staffs.
@@ -390,14 +391,17 @@ Item {
             flickableStaves.flick(0, - nbStaves * multipleStaff.height)
         }
 
-        if(musicElementModel.get(musicElementModel.count - 1).isDefaultClef_ && nbStaves > 2)
+        var lastMusicElement = musicElementModel.get(musicElementModel.count - 1)
+        if(lastMusicElement.isDefaultClef_ && nbStaves > 2) {
             musicElementModel.remove(musicElementModel.count - 1)
+            lastMusicElement = musicElementModel.get(musicElementModel.count - 1)
+        }
 
-        if(musicElementModel.get(musicElementModel.count - 1).staffNb_ < nbStaves - 1 && nbStaves != 2)
-            nbStaves = musicElementModel.get(musicElementModel.count - 1).staffNb_ + 1
+        if(lastMusicElement.staffNb_ < nbStaves - 1 && nbStaves != 2)
+            nbStaves = lastMusicElement.staffNb_ + 1
 
-        currentEnteringStaff = musicElementModel.get(musicElementModel.count - 1).staffNb_
-        background.clefType = musicElementModel.get(musicElementModel.count - 1).soundPitch_
+        currentEnteringStaff = lastMusicElement.staffNb_
+        background.clefType = lastMusicElement.soundPitch_
     }
 
     /**
@@ -443,9 +447,17 @@ Item {
                         }
                     }
                 }
-                audioLooper.stop()
+                //audioLooper.stop()
                 var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch.toLowerCase() + "_pitches/" + noteName + ".wav"
-                audioLooper.playMusic(noteToPlay, duration)
+                //audioLooper.playMusic(noteToPlay, duration)
+                // A3 = 74, A4 = 81
+                var toto = noteName[0].charCodeAt(0) - 'A'.charCodeAt(0) + 74
+                var tata = (noteName[1]-3) * 7
+                print("note", noteName);
+                print("toto", toto);
+                print("tata", tata);
+                var noteToPlay = toto + tata
+                GSynth.generate(noteToPlay, duration)
             }
         }
     }
