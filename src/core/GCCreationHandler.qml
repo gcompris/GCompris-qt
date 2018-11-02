@@ -40,14 +40,13 @@ Rectangle {
     signal fileLoaded(var data)
 
     onClose: {
-        buttonRow.visible = true
-        textField.visible = false
-        saveButton.visible = false
         visible = false
+        fileNameInput.text = qsTr("Enter file name")
     }
 
     property string activityName: ""
     property var dataToSave
+    property bool isSaveMode: false
     readonly property string sharedDirectoryPath: ApplicationInfo.getSharedWritablePath() + "/" + activityName + "/"
 
     ListModel {
@@ -87,9 +86,7 @@ Rectangle {
         onStatusChanged: if (status == Loader.Ready) item.start()
     }
 
-    function loadWindow() {
-        creationHandler.visible = true
-
+    function refreshWindow() {
         var pathExists = file.exists(sharedDirectoryPath)
         if(!pathExists)
             return
@@ -102,6 +99,13 @@ Rectangle {
         }
     }
 
+    function loadWindow() {
+        creationHandler.visible = true
+        creationHandler.isSaveMode = false
+
+        refreshWindow()
+    }
+
     function loadFile(fileName) {
         // Will be modified.
         var data = parser.parseFromUrl("file://" + sharedDirectoryPath + fileName)
@@ -110,12 +114,9 @@ Rectangle {
 
     function saveWindow(data) {
         creationHandler.visible = true
-        buttonRow.visible = false
-        textField.visible = true
-        saveButton.visible = true
-        fileNameInput.text = qsTr("Enter file name")
+        creationHandler.isSaveMode = true
         creationHandler.dataToSave = data
-        loadWindow()
+        refreshWindow()
     }
 
     function saveFile() {
@@ -137,7 +138,28 @@ Rectangle {
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
                                "", null, "", null, null);
-        loadWindow()
+        refreshWindow()
+    }
+
+    function searchFiles() {
+        if(fileNameInput.text === "") {
+            refreshWindow()
+            return
+        }
+
+        var pathExists = file.exists(sharedDirectoryPath)
+        if(!pathExists)
+            return
+
+        fileNames.clear()
+
+        var files = directory.getFiles(sharedDirectoryPath)
+        var textToSearch = fileNameInput.text.toLowerCase()
+
+        for(var i = 2; i < files.length; i++) {
+            if((files[i].toLowerCase()).indexOf(textToSearch) !== -1)
+                fileNames.append({ "name": files[i] })
+        }
     }
 
     Rectangle {
@@ -149,7 +171,7 @@ Rectangle {
         anchors.leftMargin: 20
         border.width: 1
         border.color: "black"
-        TextEdit {
+        TextInput {
         	id: fileNameInput
         	text: qsTr("Enter file name")
         	font.pointSize: 28
@@ -158,14 +180,20 @@ Rectangle {
         	visible: textField.visible
         	leftPadding: 10
         	selectByMouse: true
-    	}
+            maximumLength: 15
+            onTextChanged: {
+                if(!creationHandler.isSaveMode)
+                    searchFiles()
+    	    }
+        }
     }
 
     Button {
         id: saveButton
-        width: creationHandler.width / 15
+        width: 50 * ApplicationInfo.ratio
         height: creationHandler.height / 15
-        text: "Save"
+        visible: creationHandler.isSaveMode
+        text: qsTr("Save")
         style: GCButtonStyle {
             theme: "highContrast"
         }
@@ -176,8 +204,8 @@ Rectangle {
         onClicked: saveFile()
     }
 
-    property real cellWidth: viewContainer.width / 10
-    property real cellHeight: viewContainer.height / 10
+    property real cellWidth: 50 * ApplicationInfo.ratio
+    property real cellHeight: cellWidth
 
     Rectangle {
         id: viewContainer
@@ -210,7 +238,6 @@ Rectangle {
                     Image {
                         source: "qrc:/gcompris/src/core/resource/FileIcon.svg"
                         anchors.fill: parent
-                        fillMode: Image.PreserveAspectFit
                     }
                 }
 
@@ -236,9 +263,10 @@ Rectangle {
         spacing: 20
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 10
+        visible: !creationHandler.isSaveMode
         Button {
             id: loadButton
-            width: creationHandler.width / 15
+            width: 70 * ApplicationInfo.ratio
             height: creationHandler.height / 15
             text: "Load"
             style: GCButtonStyle {
@@ -248,7 +276,7 @@ Rectangle {
 
         Button {
             id: deleteButton
-            width: creationHandler.width / 15
+            width: 70 * ApplicationInfo.ratio
             height: creationHandler.height / 15
             text: "Delete"
             style: GCButtonStyle {

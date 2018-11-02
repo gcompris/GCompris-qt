@@ -393,7 +393,7 @@ ActivityBase {
             }
             onSaveButtonClicked: {
                 var notesToSave = multipleStaff.createNotesBackup()
-                creationHandler.saveWindow(notesToSave)
+                creationHandler.loadWindow()
             }
             onClefAdded: {
                 var insertingIndex = multipleStaff.selectedIndex === -1 ? multipleStaff.musicElementModel.count : multipleStaff.selectedIndex
