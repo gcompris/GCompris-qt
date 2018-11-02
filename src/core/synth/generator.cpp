@@ -446,3 +446,13 @@ Generator::setReverb(Reverb &_rev) {
     qDebug() << "setReverb";
     rev = _rev;
 }
+
+void Generator::setPreset(Preset &preset) {
+    qDebug() << "setPreset";
+    setModulation(preset.mod);
+    setReverb(preset.rev);
+    setMode(preset.waveformMode);
+    setTimbre(preset.timbreAmplitudes, preset.timbrePhases);
+    setEnvelope(preset.env);
+    setFilter(preset.filt);
+}

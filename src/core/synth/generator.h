@@ -32,6 +32,7 @@
 #include "filter.h"
 #include "ADSRenvelope.h"
 #include "reverb.h"
+#include "preset.h"
 
 #ifdef USE_FFTW
 #include <fftw3.h>
@@ -90,6 +91,8 @@ public slots:
     void setModulation(Modulation &modulation);
     void setFilter    (FilterParameters &filtParam);
     void setReverb    (Reverb &_rev);
+    void setPreset    (Preset &preset);
+    
 private:
     QAudioFormat format;
     QByteArray m_buffer;

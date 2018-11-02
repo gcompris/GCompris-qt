@@ -26,6 +26,7 @@
 #include <QAudioOutput>
 #include <QTimer>
 #include <QQmlEngine>
+#include "preset.h"
 
 class Generator;
 
@@ -70,6 +71,8 @@ private:
     QAudioOutput     *m_audioOutput;
     QIODevice        *m_output;
     QMap<int, QTimer *> m_timers;
+    
+    Preset PresetCustom;
 };
 
 #endif // GSYNTH_H

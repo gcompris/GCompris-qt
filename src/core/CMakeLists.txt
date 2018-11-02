@@ -41,6 +41,8 @@ set(gcompris_SRCS
    synth/modulation.h
    synth/generator.cpp
    synth/generator.h
+   synth/preset.h
+   synth/preset.cpp
    synth/reverb.h
    synth/waveform.cpp
    synth/waveform.h

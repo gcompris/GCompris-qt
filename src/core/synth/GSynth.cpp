@@ -50,6 +50,7 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
     m_audioOutput->setBufferSize(bufferSize);
     m_generator   = new Generator(m_format, this);
     // Only start generator if musical activity, and stop it on exit (in main.qml, activity.isMusicalActivity)
+    m_generator->setPreset(PresetCustom);
     m_generator->start();
     m_audioOutput->start(m_generator);
     m_audioOutput->setVolume(1);
