@@ -117,10 +117,11 @@ Item {
         id: highlightRectangle
         width: musicElement.width
         height: musicElement.height * 0.9
-        color: "red"
-        opacity: 0.6
-        border.color: "white"
-        radius: width / 6
+        color: "transparent"
+        opacity: 1
+        border.color: "#373737"
+        border.width: radius * 0.5
+        radius: width * 0.1
         visible: (multipleStaff.noteHoverEnabled && noteMouseArea.containsMouse) || highlightTimer.running
     }
 
@@ -134,7 +135,7 @@ Item {
         radius: width / 5
         visible: selectedIndex == index
     }
-
+    
     Image {
         id: noteImage
         source: (noteDetails === undefined) ? ""
@@ -167,12 +168,11 @@ Item {
         fillMode: Image.PreserveAspectFit
         z: 3
     }
-
-    // If the result is not good enough maybe have a rectangle and use opacity mask with a note
-    ColorOverlay {
-        anchors.fill: noteImage
-        source: noteImage
-
+    
+    Rectangle {
+        id:softColor
+        enabled: ApplicationInfo.useOpenGL ? false : true
+        
         readonly property int invalidConditionNumber: -6
         readonly property int noteColorNumber: {
             if(noteDetails === undefined || noteType === "" || noteType === "Rest" || noteName === "")
@@ -184,13 +184,26 @@ Item {
             else
                 return invalidConditionNumber
         }
-
         color: {
             if(multipleStaff.notesColor === "inbuilt")
-                return (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "black"  // make image like it lays under red glass
+                return (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "white"  // make image like it lays under red glass
             else
                 return multipleStaff.notesColor
         }
+        z: -10
+        width: noteImage.width * 0.8
+        height: width
+        radius: width * 0.5
+        anchors.centerIn: noteImage
+        opacity: 0.8
+        visible: ApplicationInfo.useOpenGL ? false : true
+    }
+
+    // If the result is not good enough maybe have a rectangle and use opacity mask with a note
+    ColorOverlay {
+        anchors.fill: noteImage
+        source: noteImage
+        color: softColor.color
         visible: noteIsColored && (elementType != "clef")
         transform: Scale { origin.x: width/2; xScale: noteImage.mirror == true ? -1 : 1 }
     }
