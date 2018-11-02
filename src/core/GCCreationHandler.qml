@@ -41,13 +41,20 @@ Rectangle {
 
     onClose: {
         visible = false
+        viewContainer.selectedFileIndex = -1
         fileNameInput.text = qsTr("Enter file name")
+    }
+
+    MouseArea {
+        anchors.fill: parent
+        onClicked: viewContainer.selectedFileIndex = -1
     }
 
     property string activityName: ""
     property var dataToSave
     property bool isSaveMode: false
     readonly property string sharedDirectoryPath: ApplicationInfo.getSharedWritablePath() + "/" + activityName + "/"
+    readonly property string fileSavePath: "file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json"
 
     ListModel {
         id: fileNames
@@ -107,9 +114,27 @@ Rectangle {
     }
 
     function loadFile(fileName) {
-        // Will be modified.
-        var data = parser.parseFromUrl("file://" + sharedDirectoryPath + fileName)
+        var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
+        var data = parser.parseFromUrl(filePath)
         creationHandler.fileLoaded(data)
+        creationHandler.close()
+    }
+
+    function deleteFile() {
+        var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
+        if(file.rmpath(filePath)) {
+            Core.showMessageDialog(creationHandler,
+                                   qsTr("Deleted successfully!"),
+                                   "", null, "", null, null);
+        }
+        else {
+            Core.showMessageDialog(creationHandler,
+                                   qsTr("Unable to delete!"),
+                                   "", null, "", null, null);
+        }
+
+        viewContainer.selectedFileIndex = -1
+        refreshWindow()
     }
 
     function saveWindow(data) {
@@ -126,7 +151,7 @@ Rectangle {
         if(!file.exists(sharedDirectoryPath))
             file.mkpath(sharedDirectoryPath)
 
-        if(file.exists("file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json")) {
+        if(file.exists(fileSavePath)) {
             replaceFileDialog.active = true
         }
         else
@@ -134,7 +159,7 @@ Rectangle {
     }
 
     function writeData() {
-        file.write(JSON.stringify(creationHandler.dataToSave), "file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json")
+        file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath)
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
                                "", null, "", null, null);
@@ -142,6 +167,7 @@ Rectangle {
     }
 
     function searchFiles() {
+        viewContainer.selectedFileIndex = -1
         if(fileNameInput.text === "") {
             refreshWindow()
             return
@@ -218,19 +244,39 @@ Rectangle {
         anchors.left: parent.left
         anchors.right: parent.right
 
+        property int selectedFileIndex: -1
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: viewContainer.selectedFileIndex = -1
+        }
+
         GridView {
             id: creationsList
             model: fileNames
             width: parent.width
-            height: parent.height
+            height: parent.height - 10
             interactive: true
             cellHeight: creationHandler.cellHeight
             cellWidth: creationHandler.cellWidth
+            anchors.top: parent.top
+            anchors.topMargin: 10
+            clip: true
 
             delegate: Item {
                 height: creationHandler.cellHeight
                 width: creationHandler.cellWidth
                 readonly property string fileName: fileName.text
+                Rectangle {
+                    anchors.fill: parent
+                    visible: index === viewContainer.selectedFileIndex
+                    color: "red"
+                    opacity: 0.4
+                    radius: 10
+                    anchors.top: parent.top
+                    anchors.topMargin: -5
+                }
+
                 Item {
                     id: fileIcon
                     width: creationHandler.cellWidth
@@ -253,6 +299,12 @@ Rectangle {
                     // Exclude ".json" while displaying file name
                     text: name.slice(0, name.length - 5)
                 }
+
+                MouseArea {
+                    anchors.fill: parent
+                    enabled: !creationHandler.isSaveMode
+                    onClicked: viewContainer.selectedFileIndex = index
+                }
             }
         }
     }
@@ -269,9 +321,11 @@ Rectangle {
             width: 70 * ApplicationInfo.ratio
             height: creationHandler.height / 15
             text: "Load"
+            enabled: viewContainer.selectedFileIndex != -1
             style: GCButtonStyle {
                 theme: "highContrast"
             }
+            onClicked: creationHandler.loadFile()
         }
 
         Button {
@@ -279,9 +333,11 @@ Rectangle {
             width: 70 * ApplicationInfo.ratio
             height: creationHandler.height / 15
             text: "Delete"
+            enabled: viewContainer.selectedFileIndex != -1
             style: GCButtonStyle {
                 theme: "highContrast"
             }
+            onClicked: deleteFile()
         }
     }
 

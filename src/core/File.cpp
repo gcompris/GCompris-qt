@@ -154,3 +154,8 @@ bool File::mkpath(const QString& path)
     QDir dir;
     return dir.mkpath(dir.filePath(sanitizeUrl(path)));
 }
+
+bool File::rmpath(const QString& path)
+{
+    return QFile::remove(sanitizeUrl(path));
+}

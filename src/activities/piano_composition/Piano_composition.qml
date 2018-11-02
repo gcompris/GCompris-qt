@@ -336,6 +336,9 @@ ActivityBase {
         GCCreationHandler {
             id: creationHandler
             activityName: "piano_composition"
+            onFileLoaded:  {
+                multipleStaff.redraw(data)
+            }
         }
 
         OptionsRow {
@@ -393,7 +396,7 @@ ActivityBase {
             }
             onSaveButtonClicked: {
                 var notesToSave = multipleStaff.createNotesBackup()
-                creationHandler.loadWindow()
+                creationHandler.saveWindow(notesToSave)
             }
             onClefAdded: {
                 var insertingIndex = multipleStaff.selectedIndex === -1 ? multipleStaff.musicElementModel.count : multipleStaff.selectedIndex

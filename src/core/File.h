@@ -98,6 +98,14 @@ public:
      */
     Q_INVOKABLE static bool mkpath(const QString& path);
 
+    /**
+     * Deletes a file @p path.
+     *
+     * @param path file to delete.
+     * @returns success
+     */
+    Q_INVOKABLE static bool rmpath(const QString& path);
+
     /// @cond INTERNAL_DOCS
     static void init();
     QString name() const;
