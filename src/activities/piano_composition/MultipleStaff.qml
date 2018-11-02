@@ -452,6 +452,9 @@ Item {
                 //audioLooper.playMusic(noteToPlay, duration)
                 // A3 = 74, A4 = 81
                 var toto = noteName[0].charCodeAt(0) - 'A'.charCodeAt(0) + 74
+                if(noteName[0].charCodeAt(0) == 'A'.charCodeAt(0) ||
+                   noteName[0].charCodeAt(0) == 'B'.charCodeAt(0))
+                    toto += 7;
                 var tata = (noteName[1]-3) * 7
                 print("note", noteName);
                 print("toto", toto);
