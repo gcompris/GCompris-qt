@@ -194,7 +194,6 @@ ActivityBase {
             onClose: {
                 visible = false
                 piano.enabled = true
-                bar.visible = true
                 focus = false
                 activity.focus = true
             }
@@ -337,7 +336,16 @@ ActivityBase {
             id: creationHandler
             activityName: "piano_composition"
             onFileLoaded:  {
+                // We need to draw the notes twice since we first need to count the number of staffs needed for the melody (we get that from
+                // the 1st redraw call), then we redraw the 2nd time to actually display the notes perfectly. This is done because for some reason, the
+                // staves model is updated slower than the addition of notes, so the notes aggregates in their default position instead of
+                // their required position, due to unavailability of the updated staff at that instant. So calculating the number of required staffs first seems the only solution for now.
                 multipleStaff.redraw(data)
+                multipleStaff.redraw(data)
+            }
+            onClose: {
+                optionsRow.lyricsOrPianoModeIndex = 0
+                lyricsArea.resetLyricsArea()
             }
         }
 
@@ -384,15 +392,8 @@ ActivityBase {
                 }
             }
             onOpenButtonClicked: {
-                melodyList.melodiesModel.clear()
-                var dataset = Dataset.get()
-                for(var i = 0; i < dataset.length; i++) {
-                    melodyList.melodiesModel.append(dataset[i])
-                }
-                piano.enabled = false
-                bar.visible = false
-                melodyList.visible = true
-                melodyList.forceActiveFocus()
+                dialogActivityConfig.active = true
+                displayDialog(dialogActivityConfig)
             }
             onSaveButtonClicked: {
                 var notesToSave = multipleStaff.createNotesBackup()
@@ -416,6 +417,57 @@ ActivityBase {
                 multipleStaff.bpmValue++
             }
             onEmitOptionMessage: clickedOptionMessage.show(message)
+        }
+
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            content: Component {
+                Column {
+                    id: column
+                    spacing: 10
+                    width: dialogActivityConfig.width
+                    height: dialogActivityConfig.height
+
+                    GCText {
+                        text: qsTr("Select the type of melody to load.")
+                        fontSizeMode: mediumSize
+                    }
+
+                    Button {
+                        text: qsTr("Pre-defined melodies")
+                        onClicked: {
+                            melodyList.melodiesModel.clear()
+                            var dataset = Dataset.get()
+                            for(var i = 0; i < dataset.length; i++) {
+                                melodyList.melodiesModel.append(dataset[i])
+                            }
+                            melodyList.visible = true
+                            piano.enabled = false
+                            melodyList.forceActiveFocus()
+                            dialogActivityConfig.close()
+                        }
+                        width: 150 * ApplicationInfo.ratio
+                        height: 60 * ApplicationInfo.ratio
+                        style: GCButtonStyle {
+                            theme: "dark"
+                        }
+                    }
+
+                    Button {
+                        text: qsTr("Your saved melodies")
+                        onClicked: {
+                            creationHandler.loadWindow()
+                            dialogActivityConfig.close()
+                        }
+                        width: 150 * ApplicationInfo.ratio
+                        height: 60 * ApplicationInfo.ratio
+                        style: GCButtonStyle {
+                            theme: "dark"
+                        }
+                    }
+                }
+            }
+            onClose: home()
         }
 
         DialogHelp {

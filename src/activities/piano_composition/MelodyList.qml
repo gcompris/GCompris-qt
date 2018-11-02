@@ -35,7 +35,7 @@ Rectangle {
     color: "#696da3"
     border.color: "black"
     border.width: 1
-    z: 1000 
+    z: 10000
     anchors.fill: parent
     visible: false
     focus: true
