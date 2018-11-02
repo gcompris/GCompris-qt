@@ -426,6 +426,7 @@ Item {
         initClefs(background.clefType)
     }
 
+    readonly property var octave1MidiNumbersTable: {"C":24,"C#":25,"Db":25,"D":26,"D#":27,"Eb":27,"E":28,"F":29,"F#":30,"Gb":30,"G":31,"G#":32,"Ab":32,"A":33,"A#":34,"Bb":34,"B":35}
     /**
      * Plays audio for a note.
      *
@@ -447,10 +448,7 @@ Item {
                         }
                     }
                 }
-                //audioLooper.stop()
-                var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch.toLowerCase() + "_pitches/" + noteName + ".wav"
-                //audioLooper.playMusic(noteToPlay, duration)
-                var octave1MidiNumbersTable = {"C":24,"C#":25,"Db":25,"D":26,"D#":27,"Eb":27,"E":28,"F":29,"F#":30,"Gb":30,"G":31,"G#":32,"Ab":32,"A":33,"A#":34,"Bb":34,"B":35};
+
                 var octaveNb = ""
                 var noteCharName = ""
                 if(noteName[1] == "#" || noteName[1] == "b"){
@@ -463,41 +461,8 @@ Item {
                     octaveNb = noteName[1]
                 }
                 var noteMidiName = (octaveNb-1)*12 + octave1MidiNumbersTable[noteCharName];
- 
-                print("noteName", noteName);
-                print("noteCharName", noteCharName);
-                print("octaveNb", octaveNb);
-                print("noteMidiName", noteMidiName);
- 
+
                 GSynth.generate(noteMidiName, duration)
-            }
-        }
-    }
-
-    Timer {
-        id: audioLooper
-
-        signal playMusic(string noteToPlay, int duration)
-        property string audio
-        property int loopCounter
-
-        onPlayMusic: {
-            audio = noteToPlay
-            audioLooper.interval = Math.min(1000, duration)
-            loopCounter = Math.ceil(duration / 1000)
-            start()
-        }
-        repeat: true
-        triggeredOnStart: true
-        onTriggered: {
-            if(--loopCounter < 0)
-                stop()
-            else
-                items.audioEffects.play(audio)
-        }
-        onRunningChanged: {
-            if(!running) {
-                items.audioEffects.stop()
             }
         }
     }

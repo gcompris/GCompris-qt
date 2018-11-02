@@ -17,7 +17,7 @@
 
 
 #include "ADSRenvelope.h"
-#include <QDebug>
+//#include <QDebug>
 
 ADSREnvelope::ADSREnvelope() {
     attackTime = decayTime = releaseTime = 0;
@@ -49,7 +49,7 @@ ADSREnvelope::eval(qreal t, unsigned char state) {
         if (t < attackTimeF) {
             return initialAmpl*(attackTimeF - t)/attackTimeF +  peakAmpl*t/attackTimeF;
         } else {
-            qWarning() << "ADSREnvelope::eval - attack outside range";
+            //qWarning() << "ADSREnvelope::eval - attack outside range";
             return peakAmpl;
         }
         break;
@@ -64,13 +64,13 @@ ADSREnvelope::eval(qreal t, unsigned char state) {
         if (t < releaseTimeF) {
             return sustainAmpl*(1 - t/releaseTimeF);
         } else {
-            qWarning() << "ADSREnvelope::eval - release outside range";
+            //qWarning() << "ADSREnvelope::eval - release outside range";
             return 0;
         }
         break;
     }
 
-    qWarning() << "ADSREnvelope::eval - invalid state";
+    //qWarning() << "ADSREnvelope::eval - invalid state";
     return 0;
 }
 

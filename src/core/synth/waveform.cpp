@@ -22,6 +22,7 @@
 Waveform::Waveform(unsigned int mode, unsigned int size) {
     waveTable = new qreal[size];
     tableSize = size;
+    this->mode = mode;
 
     for (unsigned int sample = 0; sample < tableSize; sample++) {
         qreal u = (2*M_PI * (qreal)sample) / ((qreal)tableSize);

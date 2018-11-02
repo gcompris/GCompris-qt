@@ -87,11 +87,17 @@ Generator::~Generator() {
     delete linSyn;
     delete [] convBuffer;
     delete [] convImpulse;
+    delete [] filtBuffer;
+    delete [] delayBuffer;
+    delete filter;
+    delete mod_waveform;
 
 #ifdef USE_FFTW
     fftw_destroy_plan(fftwPlan);
     fftw_free(fftwIn);
     fftw_free(fftwOut);
+#else
+    delete [] fftData;
 #endif
 }
 
@@ -144,7 +150,7 @@ Generator::writeData(const char *data, qint64 len) {
 // Doesn't seem to be called by QAudioOutput.
 qint64
 Generator::bytesAvailable() const {
-    qDebug() << "bytesAvailable()";
+    //qDebug() << "bytesAvailable()";
     return m_buffer.size() + QIODevice::bytesAvailable();
 }
 
@@ -420,17 +426,17 @@ Generator::setFilter(FilterParameters &filtParam) {
     FFTCompute(fftData, fftLength);
     emit fftUpdate(fftData, convBuffer_size, 2);
 #endif
-    qDebug() << filtParam.fftTimer;
+    //qDebug() << filtParam.fftTimer;
 }
 
 void
 Generator::setReverb(Reverb &_rev) {
-    qDebug() << "setReverb";
+    //qDebug() << "setReverb";
     rev = _rev;
 }
 
 void Generator::setPreset(Preset &preset) {
-    qDebug() << "setPreset";
+    //qDebug() << "setPreset";
     setModulation(preset.mod);
     setReverb(preset.rev);
     setMode(preset.waveformMode);

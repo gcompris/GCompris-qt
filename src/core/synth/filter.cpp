@@ -16,7 +16,7 @@
 */
 
 #include "filter.h"
-#include <QDebug>
+//#include <QDebug>
 
 Filter::Filter(unsigned int _samplingRate, FilterParameters &filt) {
     Filter(filt.type, filt.window_type, filt.size, _samplingRate, filt.freq1, filt.freq2);
@@ -55,7 +55,7 @@ Filter::Filter(unsigned int _type, unsigned int _window_type, unsigned int _size
     // ind_n = 0  => n = 0 - (2 - 1 - 1)/2 = 0
 
     if (type == FILTER_OFF) {
-        qDebug() << "FIROFF" << size;
+        //qDebug() << "FIROFF" << size;
         IR[0] = 1;
         return;
     }
