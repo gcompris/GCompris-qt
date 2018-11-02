@@ -22,7 +22,7 @@ ActivityInfo {
   name: "piano_composition/Piano_composition.qml"
   difficulty: 2
   icon: "piano_composition/piano_composition.svg"
-  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
+  author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: true
   title: qsTr("Piano Composition")
   description: qsTr("An activity to learn how the piano keyboard works, how notes are written on a musical staff and explore music composition by loading and saving your work.")
