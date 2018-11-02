@@ -98,7 +98,7 @@ Item {
         else
             return noteDetails.rotation
     }
-
+    
     Image {
         id: blackTypeImage
         source: blackType !== "" ? "qrc:/gcompris/src/activities/piano_composition/resource/black" + blackType + ".svg" : ""
@@ -143,6 +143,7 @@ Item {
         sourceSize.width: 200
         width: musicElement.width
         height: musicElement.height
+        mirror: parent.rotation == 180 && parent.noteType == "Eighth" ? true : false
     }
 
     Image {
@@ -191,6 +192,7 @@ Item {
                 return multipleStaff.notesColor
         }
         visible: noteIsColored && (elementType != "clef")
+        transform: Scale { origin.x: width/2; xScale: noteImage.mirror == true ? -1 : 1 }
     }
 
     Timer {
