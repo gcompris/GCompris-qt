@@ -47,7 +47,7 @@ The following keyboard bindings work in this game:
   - 1 to 8: Corresponding white keys in the order on the displayed octave.
   - F1 to F5: Corresponding black keys in the order on the displayed octave.
 ")
-  credit: ""
+  credit: qsTr("The synthesizer original code is https://github.com/vsr83/miniSynth")
   section: "discovery sound_group"
   createdInVersion: 9500
 }
