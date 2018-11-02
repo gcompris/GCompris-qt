@@ -38,8 +38,6 @@ public:
     Filter(unsigned int _samplingRate, FilterParameters &filt);
     ~Filter();
     qreal * IR;
-//    unsigned int type, window_type, size, samplingRate;
-//    qreal freq1, freq2;
 
 private:
 

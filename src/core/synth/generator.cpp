@@ -20,7 +20,6 @@
 #include "filter.h"
 #include <qendian.h>
 #include <QDebug>
-#include <QFile>
 
 Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(parent) {
     format = _format;
@@ -82,23 +81,6 @@ Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(p
     param.window_type  = Filter::WINDOW_RECT;
     param.fftTimer     = 100;
     setFilter(param);
-/*
-    param.size         = 1000;
-    setFilter(param);
-    QFile file("rtest2.txt");
-    if (!file.open(QIODevice::ReadOnly)) {
-        exit(0);
-    }
-    QTextStream in(&file);
-
-    int ind = 0;
-    while (!in.atEnd()) {
-        QString line = in.readLine();
-        qDebug() << line.toDouble();
-        convImpulse[ind++] = 20*line.toDouble();
-        if (ind == convImpulse_size) break;
-    }
-*/
 }
 
 Generator::~Generator() {

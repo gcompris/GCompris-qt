@@ -450,17 +450,26 @@ Item {
                 //audioLooper.stop()
                 var noteToPlay = "qrc:/gcompris/src/activities/piano_composition/resource/" + soundPitch.toLowerCase() + "_pitches/" + noteName + ".wav"
                 //audioLooper.playMusic(noteToPlay, duration)
-                // A3 = 74, A4 = 81
-                var toto = noteName[0].charCodeAt(0) - 'A'.charCodeAt(0) + 74
-                if(noteName[0].charCodeAt(0) == 'A'.charCodeAt(0) ||
-                   noteName[0].charCodeAt(0) == 'B'.charCodeAt(0))
-                    toto += 7;
-                var tata = (noteName[1]-3) * 7
-                print("note", noteName);
-                print("toto", toto);
-                print("tata", tata);
-                var noteToPlay = toto + tata
-                GSynth.generate(noteToPlay, duration)
+                var octave1MidiNumbersTable = {"C":24,"C#":25,"Db":25,"D":26,"D#":27,"Eb":27,"E":28,"F":29,"F#":30,"Gb":30,"G":31,"G#":32,"Ab":32,"A":33,"A#":34,"Bb":34,"B":35};
+                var octaveNb = ""
+                var noteCharName = ""
+                if(noteName[1] == "#" || noteName[1] == "b"){
+                    noteCharName = noteName[0] + noteName[1]
+                    octaveNb = noteName[2]
+                }
+                else
+                {
+                    noteCharName = noteName[0]
+                    octaveNb = noteName[1]
+                }
+                var noteMidiName = (octaveNb-1)*12 + octave1MidiNumbersTable[noteCharName];
+ 
+                print("noteName", noteName);
+                print("noteCharName", noteCharName);
+                print("octaveNb", octaveNb);
+                print("noteMidiName", noteMidiName);
+ 
+                GSynth.generate(noteMidiName, duration)
             }
         }
     }

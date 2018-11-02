@@ -39,10 +39,11 @@ public:
     virtual ~GSynth();
 
     /**
-     * Saves per-activity progress using the default "progress" key.
+     * Generate a note and start the corresponding timer
+     *  to stop it at "duration" ms.
      *
-     * @param activity Name of the activity that wants to persist settings.
-     * @param progress Last started level to save as progress value.
+     * @param note note to play
+     * @param duration how much time the note needs to be played
      */
     Q_INVOKABLE void generate(int note, int duration);
 
