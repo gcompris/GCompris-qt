@@ -120,7 +120,7 @@ function calculateWinPlaces() {
         winnersList.push((boardSize - 1 - x) % period);
     }
 
-    for (var x = 0; x < boardSize; x++) {
+    for (var x = period + 1; x < boardSize; x++) {
         if (winnersList.indexOf((x + 1) % period) >= 0) {
             winners.push(x);
         }
@@ -132,8 +132,10 @@ function calculateWinPlaces() {
         winners = [];
     } else {
         winners = winners.slice(-levelWin);
+        if (currentLevel == maxLevel - 1) {
+            winners = winners.slice(1);
+        }
     }
-
     listWin = winners;
 }
 
@@ -154,7 +156,7 @@ function machinePlay() {
 
     var min = levelsProperties[items.mode - 1].minNumberOfBalls;
     var max = levelsProperties[items.mode - 1].maxNumberOfBalls;
-    for (var x = min; x < max; x++) {
+    for (var x = min; x <= max; x++) {
         if (accessible(x)) {
             playable.push(x);
         }
