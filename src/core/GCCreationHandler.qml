@@ -254,13 +254,15 @@ Rectangle {
         GridView {
             id: creationsList
             model: fileNames
-            width: parent.width
+            width: parent.width - 10
             height: parent.height - 10
             interactive: true
             cellHeight: creationHandler.cellHeight
             cellWidth: creationHandler.cellWidth
             anchors.top: parent.top
             anchors.topMargin: 10
+            anchors.left: parent.left
+            anchors.leftMargin: 5
             clip: true
 
             delegate: Item {
@@ -273,14 +275,14 @@ Rectangle {
                     color: "red"
                     opacity: 0.4
                     radius: 10
-                    anchors.top: parent.top
-                    anchors.topMargin: -5
                 }
 
                 Item {
                     id: fileIcon
                     width: creationHandler.cellWidth
                     height: parent.height / 1.4
+                    anchors.top: parent.top
+                    anchors.topMargin: 3
                     Image {
                         source: "qrc:/gcompris/src/core/resource/FileIcon.svg"
                         anchors.fill: parent
