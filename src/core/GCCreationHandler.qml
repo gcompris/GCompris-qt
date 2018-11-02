@@ -22,6 +22,7 @@
 import QtQuick 2.6
 import QtQuick.Controls 1.5
 import GCompris 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
     id: creationHandler
@@ -38,10 +39,16 @@ Rectangle {
     signal close
     signal fileLoaded(var data)
 
-    onClose: visible = false
+    onClose: {
+        buttonRow.visible = true
+        textField.visible = false
+        saveButton.visible = false
+        visible = false
+    }
 
-    property string activity_name: ""
-    readonly property string sharedDirectoryPath: ApplicationInfo.getSharedWritablePath() + "/" + activity_name + "/"
+    property string activityName: ""
+    property var dataToSave
+    readonly property string sharedDirectoryPath: ApplicationInfo.getSharedWritablePath() + "/" + activityName + "/"
 
     ListModel {
         id: fileNames
@@ -61,16 +68,36 @@ Rectangle {
         onError: console.error("Error parsing JSON: " + msg);
     }
 
-    function open(activity_name) {
-        creationHandler.activity_name = activity_name
+    Loader {
+        id: replaceFileDialog
+        sourceComponent: GCDialog {
+            parent: activity.main
+            message: qsTr("A file with this name already exists. Do you want to replace it?")
+            button1Text: qsTr("Yes")
+            button2Text: qsTr("No")
+            onButton1Hit: {
+                writeData()
+                active = false
+            }
+            onButton2Hit: active = false
+        }
+        anchors.fill: parent
+        focus: true
+        active: false
+        onStatusChanged: if (status == Loader.Ready) item.start()
+    }
+
+    function loadWindow() {
+        creationHandler.visible = true
+
         var pathExists = file.exists(sharedDirectoryPath)
-        console.log(pathExists)
         if(!pathExists)
             return
 
+        fileNames.clear()
+
         var files = directory.getFiles(sharedDirectoryPath)
         for(var i = 2; i < files.length; i++) {
-            console.log(files[i])
             fileNames.append({ "name": files[i] })
         }
     }
@@ -81,12 +108,80 @@ Rectangle {
         creationHandler.fileLoaded(data)
     }
 
+    function saveWindow(data) {
+        creationHandler.visible = true
+        buttonRow.visible = false
+        textField.visible = true
+        saveButton.visible = true
+        fileNameInput.text = qsTr("Enter file name")
+        creationHandler.dataToSave = data
+        loadWindow()
+    }
+
+    function saveFile() {
+        if(activityName === "" || fileNameInput.text === "")
+            return
+
+        if(!file.exists(sharedDirectoryPath))
+            file.mkpath(sharedDirectoryPath)
+
+        if(file.exists("file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json")) {
+            replaceFileDialog.active = true
+        }
+        else
+            writeData()
+    }
+
+    function writeData() {
+        file.write(JSON.stringify(creationHandler.dataToSave), "file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json")
+        Core.showMessageDialog(creationHandler,
+                               qsTr("Saved successfully!"),
+                               "", null, "", null, null);
+        loadWindow()
+    }
+
+    Rectangle {
+        id: textField
+        width: parent.width / 2
+        height: saveButton.height
+        anchors.verticalCenter: saveButton.verticalCenter
+        anchors.left: parent.left
+        anchors.leftMargin: 20
+        border.width: 1
+        border.color: "black"
+        TextEdit {
+        	id: fileNameInput
+        	text: qsTr("Enter file name")
+        	font.pointSize: 28
+        	anchors.fill: parent
+        	verticalAlignment: TextInput.AlignVCenter
+        	visible: textField.visible
+        	leftPadding: 10
+        	selectByMouse: true
+    	}
+    }
+
+    Button {
+        id: saveButton
+        width: creationHandler.width / 15
+        height: creationHandler.height / 15
+        text: "Save"
+        style: GCButtonStyle {
+            theme: "highContrast"
+        }
+        anchors.top: parent.top
+        anchors.topMargin: 30
+        anchors.left: textField.right
+        anchors.leftMargin: 20
+        onClicked: saveFile()
+    }
+
     property real cellWidth: viewContainer.width / 10
     property real cellHeight: viewContainer.height / 10
 
     Rectangle {
         id: viewContainer
-        anchors.top: cancel.bottom
+        anchors.top: cancelButton.bottom
         anchors.bottom: buttonRow.top
         anchors.margins: 20
         border.color: "black"
@@ -107,7 +202,7 @@ Rectangle {
             delegate: Item {
                 height: creationHandler.cellHeight
                 width: creationHandler.cellWidth
-                readonly property string fileName: txt.text
+                readonly property string fileName: fileName.text
                 Item {
                     id: fileIcon
                     width: creationHandler.cellWidth
@@ -119,14 +214,17 @@ Rectangle {
                     }
                 }
 
-                Text {
-                    id: txt
+                GCText {
+                    id: fileName
                     anchors.top: fileIcon.bottom
                     height: parent.height - parent.height / 1.4
                     width: creationHandler.cellWidth
+                    font.pointSize: tinySize
+                    fontSizeMode: Text.Fit
+                    wrapMode: Text.WordWrap
                     horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    text: name
+                    // Exclude ".json" while displaying file name
+                    text: name.slice(0, name.length - 5)
                 }
             }
         }
@@ -160,7 +258,9 @@ Rectangle {
     }
 
     GCButtonCancel {
-        id: cancel
-        onClose: parent.close()
+        id: cancelButton
+        onClose: {
+            parent.close()
+        }
     }
 }

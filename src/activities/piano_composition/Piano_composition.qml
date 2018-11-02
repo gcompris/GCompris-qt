@@ -335,6 +335,7 @@ ActivityBase {
 
         GCCreationHandler {
             id: creationHandler
+            activityName: "piano_composition"
         }
 
         OptionsRow {
@@ -391,8 +392,8 @@ ActivityBase {
                 melodyList.forceActiveFocus()
             }
             onSaveButtonClicked: {
-                creationHandler.visible = true
-                creationHandler.open("piano_composition")
+                var notesToSave = multipleStaff.createNotesBackup()
+                creationHandler.saveWindow(notesToSave)
             }
             onClefAdded: {
                 var insertingIndex = multipleStaff.selectedIndex === -1 ? multipleStaff.musicElementModel.count : multipleStaff.selectedIndex
