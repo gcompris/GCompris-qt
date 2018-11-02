@@ -237,6 +237,11 @@ Item {
             target: pulseMarker
             property: "x"
             to: pulseMarker.nextPosition
+            onStarted: {
+                if(pulseMarker.height == 0 && staves.count != 0) {
+                    pulseMarker.height = Qt.binding(function() {return 4 * staves.itemAt(0).verticalDistanceBetweenLines + pulseMarker.width;})
+                }
+            }
             onStopped: {
                 if(pulseMarker.x === multipleStaff.width)
                     pulseMarkerAnimationFinished()
@@ -451,7 +456,7 @@ Item {
 
                 var octaveNb = ""
                 var noteCharName = ""
-                if(noteName[1] == "#" || noteName[1] == "b"){
+                if(noteName[1] == "#" || noteName[1] == "b") {
                     noteCharName = noteName[0] + noteName[1]
                     octaveNb = noteName[2]
                 }
@@ -560,13 +565,14 @@ Item {
 
         onRunningChanged: {
             if(!running && musicElementModel.get(currentNote) !== undefined) {
-                var currentType = musicElementModel.get(currentNote).noteType_
-                var note = musicElementModel.get(currentNote).noteName_
-                var soundPitch = musicElementModel.get(currentNote).soundPitch_
-                var currentStaff = musicElementModel.get(currentNote).staffNb_
-                background.clefType = musicElementModel.get(currentNote).clefType_
+                var currentElement = musicElementModel.get(currentNote)
+                var currentType = currentElement.noteType_
+                var note = currentElement.noteName_
+                var soundPitch = currentElement.soundPitch_
+                var currentStaff = currentElement.staffNb_
+                background.clefType = currentElement.clefType_
 
-                if(musicElementModel.get(currentNote).isDefaultClef_ && currentStaff > 1) {
+                if(currentElement.isDefaultClef_ && currentStaff > 1) {
                     flickableStaves.contentY = staves.itemAt(currentStaff - 1).y
                 }
 

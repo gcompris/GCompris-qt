@@ -23,6 +23,7 @@
 #include <QByteArray>
 #include <QIODevice>
 
+#include <QMutex>
 #include <QList>
 #include <QMutableListIterator>
 
@@ -127,6 +128,7 @@ private:
 
     qreal fftTimer;
 
+    QMutex m_lock;
 #ifdef USE_FFTW
     fftw_complex *fftwIn, *fftwOut;
     fftw_plan     fftwPlan;

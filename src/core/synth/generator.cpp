@@ -19,7 +19,6 @@
 #include "generator.h"
 #include "filter.h"
 #include <qendian.h>
-#include <QDebug>
 
 Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(parent) {
     format = _format;
@@ -121,7 +120,9 @@ Generator::addWave(unsigned char note, unsigned char vel) {
     wav.age      = 0;
     wav.env = defaultEnv;
 
+    m_lock.lock();
     waveList.push_back(wav);
+    m_lock.unlock();
 }
 
 qint64
@@ -130,7 +131,6 @@ Generator::readData(char *data, qint64 len) {
     // large delay between noteOn requests and the generation of audio. Thus,
     // in order to provide more responsive interface, the packet size is
     // limited to 2048 bytes ~ 1024 samples.
-    //qDebug() << "generator readData";
     if (len > 2048) len = 2048;
 
     generateData(len);
@@ -150,7 +150,6 @@ Generator::writeData(const char *data, qint64 len) {
 // Doesn't seem to be called by QAudioOutput.
 qint64
 Generator::bytesAvailable() const {
-    //qDebug() << "bytesAvailable()";
     return m_buffer.size() + QIODevice::bytesAvailable();
 }
 
@@ -200,7 +199,6 @@ Generator::setTimbre(QVector<int> &amplitudes, QVector<int> &phases) {
 
 void
 Generator::generateData(qint64 len) {
-    //qDebug() << "generate data";
     unsigned int numSamples = len/2;
     m_buffer.resize(len);
 
@@ -210,6 +208,7 @@ Generator::generateData(qint64 len) {
                    filteredData = QVector<qreal>(numSamples, 0);
 
     // All samples for each active note in waveList are synthesized separately.
+    m_lock.lock();
     QMutableListIterator<Wave> i(waveList);
 
     while (i.hasNext()) {
@@ -217,7 +216,6 @@ Generator::generateData(qint64 len) {
         qreal attackTime  = 0.001*(qreal)wav.env.attackTime,
 //              decayTime   = 0.001*(qreal)wav.env.decayTime,
               releaseTime = 0.001*(qreal)wav.env.releaseTime;
-
 
         qreal freq = 8.175 * 0.5 * qPow(2, ((qreal)wav.note)/12);
         qreal ampl = 0.5*((qreal)wav.vel)/256;
@@ -250,7 +248,7 @@ Generator::generateData(qint64 len) {
             }
 
             if (wav.state == ADSREnvelope::STATE_OFF) {
-                i.remove();
+                break;
             } else {
                 qreal freqmod = 0, amod = 0;
 
@@ -286,7 +284,11 @@ Generator::generateData(qint64 len) {
             wav.state_age += (qreal)numSamples/44100;
             i.setValue(wav);
         }
+        else {
+            i.remove();
+        }
     }
+    m_lock.unlock();
 
     for (unsigned int sample = 0; sample < numSamples; sample++) {
         convBuffer[convBuffer_ind] = synthData[sample];
@@ -305,7 +307,7 @@ Generator::generateData(qint64 len) {
         delayBuffer[delayBuffer_ind] = filteredData[sample];
         delayBuffer_ind = (delayBuffer_ind + 1) % delayBuffer_size;
 
-        // Primitive Reverb algorith.
+        // Primitive Reverb algorithm.
         if (rev.active) {
             qreal reverb = 0;
             unsigned int ind;
@@ -323,13 +325,10 @@ Generator::generateData(qint64 len) {
             convBuffer_ind = (convBuffer_ind + 1) % convBuffer_size;
         }
     }
-//    qDebug() << numSamples;
 #ifdef USE_FFTW
     fftTimer += (qreal)numSamples / 44100;
-//    qDebug() << fftTimer;
    // if (numSamples > 1023) {
     if (fftTimer > 0.001*filter->fftTimer) {
-      //  qDebug () << filter->fftTimer;
         fftTimer = 0;
         for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
             fftwIn[convind][0] = convBuffer[convind];
@@ -371,7 +370,6 @@ Generator::generateData(qint64 len) {
 
     const int channelBytes = format.sampleSize() / 8;
     unsigned char *ptr = reinterpret_cast<unsigned char *>(m_buffer.data());
-
     for (unsigned int sample = 0; sample < numSamples; sample++) {
         if (filteredData[sample] > 1)  filteredData[sample] = 1;
         if (filteredData[sample] < -1) filteredData[sample] = -1;
@@ -426,17 +424,14 @@ Generator::setFilter(FilterParameters &filtParam) {
     FFTCompute(fftData, fftLength);
     emit fftUpdate(fftData, convBuffer_size, 2);
 #endif
-    //qDebug() << filtParam.fftTimer;
 }
 
 void
 Generator::setReverb(Reverb &_rev) {
-    //qDebug() << "setReverb";
     rev = _rev;
 }
 
 void Generator::setPreset(Preset &preset) {
-    //qDebug() << "setPreset";
     setModulation(preset.mod);
     setReverb(preset.rev);
     setMode(preset.waveformMode);
