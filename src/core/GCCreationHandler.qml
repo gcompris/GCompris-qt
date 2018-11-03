@@ -41,8 +41,9 @@ Rectangle {
 
     onClose: {
         visible = false
+        fileNameInput.clear()
         viewContainer.selectedFileIndex = -1
-        fileNameInput.text = qsTr("Enter file name")
+        creationsList.flick(0, 1400)
     }
 
     MouseArea {
@@ -197,13 +198,14 @@ Rectangle {
         anchors.leftMargin: 20
         border.width: 1
         border.color: "black"
+
+        readonly property string placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
+
         TextInput {
         	id: fileNameInput
-        	text: qsTr("Enter file name")
         	font.pointSize: 28
         	anchors.fill: parent
         	verticalAlignment: TextInput.AlignVCenter
-        	visible: textField.visible
         	leftPadding: 10
         	selectByMouse: true
             maximumLength: 15
@@ -212,6 +214,16 @@ Rectangle {
                     searchFiles()
     	    }
         }
+
+        GCText {
+            fontSizeMode: mediumSize
+            anchors.fill: parent
+            verticalAlignment: TextInput.AlignVCenter
+            text: parent.placeholderText
+            leftPadding: 10
+            color: "#aaa"
+            visible: !fileNameInput.text
+    	}
     }
 
     Button {
@@ -265,6 +277,18 @@ Rectangle {
             anchors.leftMargin: 5
             clip: true
 
+            MouseArea {
+                anchors.fill: parent
+                enabled: !creationHandler.isSaveMode
+                onClicked: {
+                    var itemIndex = creationsList.indexAt(mouseX, mouseY)
+                    if(itemIndex == -1)
+                        viewContainer.selectedFileIndex = -1
+                    else
+                        viewContainer.selectedFileIndex = itemIndex
+                }
+            }
+
             delegate: Item {
                 height: creationHandler.cellHeight
                 width: creationHandler.cellWidth
@@ -301,12 +325,6 @@ Rectangle {
                     // Exclude ".json" while displaying file name
                     text: name.slice(0, name.length - 5)
                 }
-
-                MouseArea {
-                    anchors.fill: parent
-                    enabled: !creationHandler.isSaveMode
-                    onClicked: viewContainer.selectedFileIndex = index
-                }
             }
         }
     }
@@ -322,7 +340,7 @@ Rectangle {
             id: loadButton
             width: 70 * ApplicationInfo.ratio
             height: creationHandler.height / 15
-            text: "Load"
+            text: qsTr("Load")
             enabled: viewContainer.selectedFileIndex != -1
             style: GCButtonStyle {
                 theme: "highContrast"
@@ -334,7 +352,7 @@ Rectangle {
             id: deleteButton
             width: 70 * ApplicationInfo.ratio
             height: creationHandler.height / 15
-            text: "Delete"
+            text: qsTr("Delete")
             enabled: viewContainer.selectedFileIndex != -1
             style: GCButtonStyle {
                 theme: "highContrast"
@@ -348,5 +366,17 @@ Rectangle {
         onClose: {
             parent.close()
         }
+    }
+
+    // The scroll buttons
+    GCButtonScroll {
+        anchors.right: viewContainer.right
+        anchors.rightMargin: 5 * ApplicationInfo.ratio
+        anchors.bottom: viewContainer.bottom
+        anchors.bottomMargin: 5 * ApplicationInfo.ratio
+        onUp: creationsList.flick(0, 1400)
+        onDown: creationsList.flick(0, -1400)
+        upVisible: creationsList.visibleArea.yPosition <= 0 ? false : true
+        downVisible: creationsList.visibleArea.yPosition + creationsList.visibleArea.heightRatio >= 1 ? false : true
     }
 }
