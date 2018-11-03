@@ -130,7 +130,7 @@ Row {
 
         GCText {
             //: BPM is the abbreviation for Beats Per Minute.
-            text: multipleStaff.bpmValue + qsTr(" BPM")
+            text: qsTr("%1 BPM").arg(multipleStaff.bpmValue)
             width: 0.6 * parent.width
             height: width
             verticalAlignment: Text.AlignVCenter
