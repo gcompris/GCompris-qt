@@ -22,6 +22,7 @@
 import QtQuick 2.6
 import QtQuick.Controls 1.5
 import GCompris 1.0
+import QtQuick.Controls.Styles 1.4
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
@@ -41,7 +42,7 @@ Rectangle {
 
     onClose: {
         visible = false
-        fileNameInput.clear()
+        fileNameInput.text = ""
         viewContainer.selectedFileIndex = -1
         creationsList.flick(0, 1400)
     }
@@ -189,41 +190,29 @@ Rectangle {
         }
     }
 
-    Rectangle {
-        id: textField
-        width: parent.width / 2
-        height: saveButton.height
-        anchors.verticalCenter: saveButton.verticalCenter
-        anchors.left: parent.left
-        anchors.leftMargin: 20
-        border.width: 1
-        border.color: "black"
-
-        readonly property string placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
-
-        TextInput {
-        	id: fileNameInput
-        	font.pointSize: 28
-        	anchors.fill: parent
-        	verticalAlignment: TextInput.AlignVCenter
-        	leftPadding: 10
-        	selectByMouse: true
-            maximumLength: 15
-            onTextChanged: {
-                if(!creationHandler.isSaveMode)
-                    searchFiles()
-    	    }
-        }
-
-        GCText {
-            fontSizeMode: mediumSize
-            anchors.fill: parent
-            verticalAlignment: TextInput.AlignVCenter
-            text: parent.placeholderText
-            leftPadding: 10
-            color: "#aaa"
-            visible: !fileNameInput.text
-    	}
+    TextField {
+    	id: fileNameInput
+    	font.pointSize: 28
+    	width: parent.width / 2
+    	height: saveButton.height
+    	anchors.verticalCenter: saveButton.verticalCenter
+    	anchors.left: parent.left
+    	anchors.leftMargin: 20
+    	verticalAlignment: TextInput.AlignVCenter
+    	selectByMouse: true
+       maximumLength: 15
+       placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
+       onTextChanged: {
+           if(!creationHandler.isSaveMode)
+               searchFiles()
+       }
+       style: TextFieldStyle {
+           textColor: "black"
+           background: Rectangle {
+               border.color: "black"
+               border.width: 1
+           }
+       }
     }
 
     Button {
@@ -237,7 +226,7 @@ Rectangle {
         }
         anchors.top: parent.top
         anchors.topMargin: 30
-        anchors.left: textField.right
+        anchors.left: fileNameInput.right
         anchors.leftMargin: 20
         onClicked: saveFile()
     }
