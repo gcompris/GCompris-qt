@@ -48,7 +48,9 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     currentSubLevel = 0
-    Core.shuffle(levels[currentLevel])
+    Core.shuffle(levels[currentLevel].melodies)
+    items.multipleStaff.isPulseMarkerDisplayed = levels[currentLevel].pulseMarkerVisible
+    items.isMetronomeVisible = levels[currentLevel].metronomeVisible
     nextSubLevel()
 }
 
@@ -85,7 +87,7 @@ function initSubLevel() {
      items.metronomeOscillation.stop()
      items.multipleStaff.stopAudios()
      currentNote = 0
-     var currentSubLevelMelody = levels[currentLevel][currentSubLevel - 1]
+     var currentSubLevelMelody = levels[currentLevel].melodies[currentSubLevel - 1]
      items.multipleStaff.loadFromData(currentSubLevelMelody)
      items.background.isRhythmPlaying = true
      items.isWrongRhythm = false

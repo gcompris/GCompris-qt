@@ -75,6 +75,7 @@ ActivityBase {
             property alias iAmReady: iAmReady
             property alias introductoryAudioTimer: introductoryAudioTimer
             property alias metronomeOscillation: metronomeOscillation
+            property bool isMetronomeVisible: false
             property bool isWrongRhythm: false
         }
 
@@ -108,8 +109,8 @@ ActivityBase {
                 verticalAlignment: Text.AlignVCenter
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
-                text: bar.level % 2 == 0 ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
-                                         : qsTr("Follow the vertical line and click on the tempo or press space key and play the rhythm correctly.")
+                text: items.isMetronomeVisible ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
+                                               : qsTr("Follow the vertical line and click on the tempo or press space key and play the rhythm correctly.")
             }
         }
 
@@ -164,7 +165,6 @@ ActivityBase {
             height: horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
             nbStaves: 1
             clef: clefType
-            isPulseMarkerDisplayed: items.bar.level % 2
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
@@ -216,7 +216,7 @@ ActivityBase {
             height: sourceSize.height
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
-            visible: (bar.level % 2 == 0) && (bar.level != 0)
+            visible: items.isMetronomeVisible
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
