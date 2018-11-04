@@ -95,7 +95,7 @@ Rectangle {
         onStatusChanged: if (status == Loader.Ready) item.start()
     }
 
-    function refreshWindow() {
+    function refreshWindow(filterText) {
         var pathExists = file.exists(sharedDirectoryPath)
         if(!pathExists)
             return
@@ -104,14 +104,16 @@ Rectangle {
 
         var files = directory.getFiles(sharedDirectoryPath)
         for(var i = 0; i < files.length; i++) {
-            fileNames.append({ "name": files[i] })
+            if(filterText === undefined || filterText === "" ||
+              (files[i].toLowerCase()).indexOf(filterText) !== -1)
+                fileNames.append({ "name": files[i] })
         }
     }
 
     function loadWindow() {
         creationHandler.visible = true
         creationHandler.isSaveMode = false
-
+        fileNameInput.forceActiveFocus()
         refreshWindow()
     }
 
@@ -126,12 +128,12 @@ Rectangle {
         var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
         if(file.rmpath(filePath)) {
             Core.showMessageDialog(creationHandler,
-                                   qsTr("Deleted successfully!"),
+                                   qsTr("%1 deleted successfully!").arg(filePath),
                                    "", null, "", null, null);
         }
         else {
             Core.showMessageDialog(creationHandler,
-                                   qsTr("Unable to delete!"),
+                                   qsTr("Unable to delete %1!").arg(filePath),
                                    "", null, "", null, null);
         }
 
@@ -143,6 +145,7 @@ Rectangle {
         creationHandler.visible = true
         creationHandler.isSaveMode = true
         creationHandler.dataToSave = data
+        fileNameInput.forceActiveFocus()
         refreshWindow()
     }
 
@@ -170,24 +173,7 @@ Rectangle {
 
     function searchFiles() {
         viewContainer.selectedFileIndex = -1
-        if(fileNameInput.text === "") {
-            refreshWindow()
-            return
-        }
-
-        var pathExists = file.exists(sharedDirectoryPath)
-        if(!pathExists)
-            return
-
-        fileNames.clear()
-
-        var files = directory.getFiles(sharedDirectoryPath)
-        var textToSearch = fileNameInput.text.toLowerCase()
-
-        for(var i = 0; i < files.length; i++) {
-            if((files[i].toLowerCase()).indexOf(textToSearch) !== -1)
-                fileNames.append({ "name": files[i] })
-        }
+        refreshWindow(fileNameInput.text.toLowerCase())
     }
 
     TextField {
@@ -200,19 +186,19 @@ Rectangle {
     	anchors.leftMargin: 20
     	verticalAlignment: TextInput.AlignVCenter
     	selectByMouse: true
-       maximumLength: 15
-       placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
-       onTextChanged: {
-           if(!creationHandler.isSaveMode)
-               searchFiles()
-       }
-       style: TextFieldStyle {
-           textColor: "black"
-           background: Rectangle {
-               border.color: "black"
-               border.width: 1
-           }
-       }
+        maximumLength: 15
+        placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
+        onTextChanged: {
+            if(!creationHandler.isSaveMode)
+                searchFiles()
+        }
+        style: TextFieldStyle {
+            textColor: "black"
+            background: Rectangle {
+                border.color: "black"
+                border.width: 1
+            }
+        }
     }
 
     Button {
@@ -270,7 +256,7 @@ Rectangle {
                 anchors.fill: parent
                 enabled: !creationHandler.isSaveMode
                 onClicked: {
-                    var itemIndex = creationsList.indexAt(mouseX, mouseY)
+                    var itemIndex = creationsList.indexAt(mouseX, mouseY+creationsList.contentY)
                     if(itemIndex == -1)
                         viewContainer.selectedFileIndex = -1
                     else
@@ -290,22 +276,19 @@ Rectangle {
                     radius: 10
                 }
 
-                Item {
+                Image {
                     id: fileIcon
                     width: creationHandler.cellWidth
                     height: parent.height / 1.4
                     anchors.top: parent.top
                     anchors.topMargin: 3
-                    Image {
-                        source: "qrc:/gcompris/src/core/resource/file_icon.svg"
-                        anchors.fill: parent
-                    }
+                    source: "qrc:/gcompris/src/core/resource/file_icon.svg"
                 }
 
                 GCText {
                     id: fileName
                     anchors.top: fileIcon.bottom
-                    height: parent.height - parent.height / 1.4
+                    height: parent.height - fileIcon.height
                     width: creationHandler.cellWidth
                     font.pointSize: tinySize
                     fontSizeMode: Text.Fit
