@@ -55,7 +55,7 @@ void DirectoryTest::GetFilesTest()
     file.write("", "./dummy_directory/file1");
     // Creating the empty directory of name dir1.
     file.mkpath("./dummy_directory/dir1");
-    filelist = directory.getFiles("./dummy_directory");
+    filelist = directory.getFiles("./dummy_directory", {"*"});
     QCOMPARE(filelist.count(), 4);
 
     file.write("", "./dummy_directory/file2");
