@@ -80,6 +80,7 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
     QTest::addColumn<QString>("wordset");
     QTest::addColumn<QString>("downloadServerUrl");
     QTest::addColumn<QString>("cachePath");
+    QTest::addColumn<QString>("userDataPath");
     QTest::addColumn<quint32>("exeCount");
     QTest::addColumn<bool>("isBarHidden");
     QTest::addColumn<int>("baseFontSize");
@@ -87,8 +88,8 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
     QTest::addColumn<bool>("isFullscreen");
     QTest::addColumn<QString>("renderer");
 
-    QTest::newRow("dummySettings1") << true << true << true << (quint32)21 << (quint32)25 << true << "en_EN" << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << "codeKey1" << true << true << "wordset1" << "downloadServerUrl1" << "cachePath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer";
-    QTest::newRow("dummySettings2") << false << false << false << (quint32)20 << (quint32)32 << false << "en_US" << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << "codekey2" << false << false << "wordset2" << "downloadServerUrl2" << "cachePath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer";
+    QTest::newRow("dummySettings1") << true << true << true << (quint32)21 << (quint32)25 << true << "en_EN" << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << "codeKey1" << true << true << "wordset1" << "downloadServerUrl1" << "cachePath1" << "userDataPath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer";
+    QTest::newRow("dummySettings2") << false << false << false << (quint32)20 << (quint32)32 << false << "en_US" << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << "codekey2" << false << false << "wordset2" << "downloadServerUrl2" << "cachePath2" << "userDataPath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer";
 }
 
 void CoreApplicationSettingsTest::ApplicationSettingsTest()
@@ -117,6 +118,7 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest()
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, wordset, setWordset, wordsetChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, downloadServerUrl, setDownloadServerUrl, downloadServerUrlChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, cachePath, setCachePath, cachePathChanged);
+    APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, userDataPath, setUserDataPath, userDataPathChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(quint32, exeCount, setExeCount, exeCountChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isBarHidden, setBarHidden, barHiddenChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(int, baseFontSize, setBaseFontSize, baseFontSizeChanged);

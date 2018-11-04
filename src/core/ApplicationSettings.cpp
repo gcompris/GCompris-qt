@@ -59,6 +59,7 @@ static const QString ENABLE_AUTOMATIC_DOWNLOADS = QLatin1String("enableAutomatic
 
 static const QString DOWNLOAD_SERVER_URL_KEY = QLatin1String("downloadServerUrl");
 static const QString CACHE_PATH_KEY = QLatin1String("cachePath");
+static const QString USERDATA_PATH_KEY = QLatin1String("userDataPath");
 static const QString RENDERER_KEY = QLatin1String("renderer");
 
 static const QString EXE_COUNT_KEY = QLatin1String("exeCount");
@@ -152,6 +153,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, QLatin1String("http://gcompris.net")).toString();
     m_cachePath = m_config.value(CACHE_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::CacheLocation)).toString();
+    m_userDataPath = m_config.value(USERDATA_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/GCompris")).toString();
     m_renderer = m_config.value(RENDERER_KEY, GRAPHICAL_RENDERER).toString();
     m_config.endGroup();
 
@@ -183,6 +185,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
     connect(this, &ApplicationSettings::cachePathChanged, this, &ApplicationSettings::notifyCachePathChanged);
+    connect(this, &ApplicationSettings::userDataPathChanged, this, &ApplicationSettings::notifyUserDataPathChanged);
     connect(this, &ApplicationSettings::rendererChanged, this, &ApplicationSettings::notifyRendererChanged);
     connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
     connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
@@ -222,6 +225,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
     m_config.setValue(CACHE_PATH_KEY, m_cachePath);
+    m_config.setValue(USERDATA_PATH_KEY, m_userDataPath);
     m_config.setValue(RENDERER_KEY, m_renderer);
     m_config.endGroup();
 
@@ -386,6 +390,12 @@ void ApplicationSettings::notifyCachePathChanged()
 {
     updateValueInConfig(ADMIN_GROUP_KEY, CACHE_PATH_KEY, m_cachePath);
     qDebug() << "cachePath set to: " << m_cachePath;
+}
+
+void ApplicationSettings::notifyUserDataPathChanged()
+{
+    updateValueInConfig(ADMIN_GROUP_KEY, USERDATA_PATH_KEY, m_userDataPath);
+    qDebug() << "userDataPath set to: " << m_userDataPath;
 }
 
 void ApplicationSettings::notifyRendererChanged()

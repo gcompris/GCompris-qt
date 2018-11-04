@@ -212,15 +212,6 @@ public:
     Q_INVOKABLE void abandonAudioFocus() const;
 
     /**
-     * Return the platform specific path for storing data shared between apps
-     *
-     * On Android: /storage/emulated/0/GCompris (>= Android 4.2),
-     *             /storage/sdcard0/GCompris (< Android 4.2)
-     * On Linux: $HOME/local/share/GCompris
-     */
-    Q_INVOKABLE QString getSharedWritablePath() const;
-
-    /**
      * Compare two strings respecting locale specific sort order.
      *
      * @param a         First string to compare

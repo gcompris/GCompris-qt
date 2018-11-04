@@ -244,6 +244,15 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(QString cachePath READ cachePath WRITE setCachePath NOTIFY cachePathChanged)
 
     /**
+     * Return the platform specific path for storing data shared between apps
+     *
+     * On Android: /storage/emulated/0/GCompris (>= Android 4.2),
+     *             /storage/sdcard0/GCompris (< Android 4.2)
+     * On Linux: $HOME/local/share/GCompris
+     */
+    Q_PROPERTY(QString userDataPath READ userDataPath WRITE setUserDataPath NOTIFY userDataPathChanged)
+
+    /**
       * Define the renderer used.
       * Either openGL or software renderer (only for Qt >= 5.8)
       */
@@ -441,6 +450,11 @@ public:
         emit cachePathChanged();
     }
 
+    QString userDataPath() const { return m_userDataPath; }
+    void setUserDataPath(const QString &newUserDataPath) {
+        m_userDataPath = newUserDataPath;
+        emit userDataPathChanged();
+    }
     quint32 exeCount() const { return m_exeCount; }
     void setExeCount(const quint32 newExeCount) {
         m_exeCount = newExeCount;
@@ -506,7 +520,7 @@ protected slots:
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
     Q_INVOKABLE void notifyCachePathChanged();
-
+    Q_INVOKABLE void notifyUserDataPathChanged();
     Q_INVOKABLE void notifyExeCountChanged();
 
     Q_INVOKABLE void notifyLastGCVersionRanChanged();
@@ -577,6 +591,7 @@ signals:
 
     void downloadServerUrlChanged();
     void cachePathChanged();
+    void userDataPathChanged();
 
     void exeCountChanged();
 
@@ -623,6 +638,7 @@ private:
 
     QString m_downloadServerUrl;
     QString m_cachePath;
+    QString m_userDataPath;
 
     quint32 m_exeCount;
 

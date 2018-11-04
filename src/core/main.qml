@@ -149,7 +149,7 @@ Window {
                     + ", ratio=" + ApplicationInfo.ratio
                     + ", fontRatio=" + ApplicationInfo.fontRatio
                     + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
-                    + ", sharedWritablePath=" + ApplicationInfo.getSharedWritablePath()
+                    + ", userDataPath=" + ApplicationSettings.userDataPath
                     + ")");
         if (ApplicationSettings.exeCount === 1 &&
                 !ApplicationSettings.isKioskMode &&

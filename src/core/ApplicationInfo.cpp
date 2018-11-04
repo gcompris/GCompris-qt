@@ -166,12 +166,6 @@ QString ApplicationInfo::getLocaleFilePath(const QString &file)
     return filename;
 }
 
-QString ApplicationInfo::getSharedWritablePath() const
-{
-    return QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
-            + QLatin1String("/GCompris");
-}
-
 QStringList ApplicationInfo::getSystemExcludedFonts()
 {
     return m_excludedFonts;
