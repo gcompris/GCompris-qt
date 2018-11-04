@@ -243,14 +243,17 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(QString cachePath READ cachePath WRITE setCachePath NOTIFY cachePathChanged)
 
+    /**
+      * Define the renderer used.
+      * Either openGL or software renderer (only for Qt >= 5.8)
+      */
+    Q_PROPERTY(QString renderer READ renderer WRITE setRenderer NOTIFY rendererChanged)
+
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
     // keep last version ran. If different than ApplicationInfo.GCVersionCode(), it means a new version is running
     Q_PROPERTY(int lastGCVersionRan READ lastGCVersionRan WRITE setLastGCVersionRan NOTIFY lastGCVersionRanChanged)
-
-    // define the renderer used. Either openGL or software renderer (only for Qt >= 5.8)
-    Q_PROPERTY(QString renderer READ renderer WRITE setRenderer NOTIFY rendererChanged)
 
     // no group
     Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)

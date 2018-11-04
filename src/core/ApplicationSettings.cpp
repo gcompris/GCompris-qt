@@ -59,10 +59,10 @@ static const QString ENABLE_AUTOMATIC_DOWNLOADS = QLatin1String("enableAutomatic
 
 static const QString DOWNLOAD_SERVER_URL_KEY = QLatin1String("downloadServerUrl");
 static const QString CACHE_PATH_KEY = QLatin1String("cachePath");
+static const QString RENDERER_KEY = QLatin1String("renderer");
 
 static const QString EXE_COUNT_KEY = QLatin1String("exeCount");
 static const QString LAST_GC_VERSION_RAN = QLatin1String("lastGCVersionRan");
-static const QString RENDERER_KEY = QLatin1String("renderer");
 
 static const QString FILTER_LEVEL_MIN = QLatin1String("filterLevelMin");
 static const QString FILTER_LEVEL_MAX = QLatin1String("filterLevelMax");
@@ -152,13 +152,13 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, QLatin1String("http://gcompris.net")).toString();
     m_cachePath = m_config.value(CACHE_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::CacheLocation)).toString();
+    m_renderer = m_config.value(RENDERER_KEY, GRAPHICAL_RENDERER).toString();
     m_config.endGroup();
 
     // internal group
     m_config.beginGroup(INTERNAL_GROUP_KEY);
     m_exeCount = m_config.value(EXE_COUNT_KEY, 0).toUInt();
     m_lastGCVersionRan = m_config.value(LAST_GC_VERSION_RAN, 0).toUInt();
-    m_renderer = m_config.value(RENDERER_KEY, GRAPHICAL_RENDERER).toString();
     m_config.endGroup();
 
     // no group
@@ -183,10 +183,10 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
     connect(this, &ApplicationSettings::cachePathChanged, this, &ApplicationSettings::notifyCachePathChanged);
+    connect(this, &ApplicationSettings::rendererChanged, this, &ApplicationSettings::notifyRendererChanged);
     connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
     connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
     connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
-    connect(this, &ApplicationSettings::rendererChanged, this, &ApplicationSettings::notifyRendererChanged);
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -222,13 +222,13 @@ ApplicationSettings::~ApplicationSettings()
     m_config.beginGroup(ADMIN_GROUP_KEY);
     m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
     m_config.setValue(CACHE_PATH_KEY, m_cachePath);
+    m_config.setValue(RENDERER_KEY, m_renderer);
     m_config.endGroup();
 
     // internal group
     m_config.beginGroup(INTERNAL_GROUP_KEY);
     m_config.setValue(EXE_COUNT_KEY, m_exeCount);
     m_config.setValue(LAST_GC_VERSION_RAN, m_lastGCVersionRan);
-    m_config.setValue(RENDERER_KEY, m_renderer);
     m_config.endGroup();
 
     m_config.sync();
@@ -388,6 +388,12 @@ void ApplicationSettings::notifyCachePathChanged()
     qDebug() << "cachePath set to: " << m_cachePath;
 }
 
+void ApplicationSettings::notifyRendererChanged()
+{
+    updateValueInConfig(ADMIN_GROUP_KEY, RENDERER_KEY, m_renderer);
+    qDebug() << "renderer set to: " << m_renderer;
+}
+
 void ApplicationSettings::notifyExeCountChanged()
 {
     updateValueInConfig(INTERNAL_GROUP_KEY, EXE_COUNT_KEY, m_exeCount);
@@ -398,12 +404,6 @@ void ApplicationSettings::notifyLastGCVersionRanChanged()
 {
     updateValueInConfig(INTERNAL_GROUP_KEY, LAST_GC_VERSION_RAN, m_lastGCVersionRan);
     qDebug() << "lastVersionRan set to: " << m_lastGCVersionRan;
-}
-
-void ApplicationSettings::notifyRendererChanged()
-{
-    updateValueInConfig(INTERNAL_GROUP_KEY, RENDERER_KEY, m_renderer);
-    qDebug() << "renderer set to: " << m_renderer;
 }
 
 void ApplicationSettings::notifyBarHiddenChanged()
