@@ -308,7 +308,7 @@ Rectangle {
                     anchors.top: parent.top
                     anchors.topMargin: 3
                     Image {
-                        source: "qrc:/gcompris/src/core/resource/FileIcon.svg"
+                        source: "qrc:/gcompris/src/core/resource/file_icon.svg"
                         anchors.fill: parent
                     }
                 }
