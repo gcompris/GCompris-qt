@@ -102,7 +102,7 @@ Rectangle {
         fileNames.clear()
 
         var files = directory.getFiles(sharedDirectoryPath)
-        for(var i = 2; i < files.length; i++) {
+        for(var i = 0; i < files.length; i++) {
             fileNames.append({ "name": files[i] })
         }
     }
@@ -183,7 +183,7 @@ Rectangle {
         var files = directory.getFiles(sharedDirectoryPath)
         var textToSearch = fileNameInput.text.toLowerCase()
 
-        for(var i = 2; i < files.length; i++) {
+        for(var i = 0; i < files.length; i++) {
             if((files[i].toLowerCase()).indexOf(textToSearch) !== -1)
                 fileNames.append({ "name": files[i] })
         }
