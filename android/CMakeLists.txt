@@ -109,28 +109,33 @@ add_custom_command (
 
 # Command to create apk from Makefile
 add_custom_target (apk_debug
-   DEPENDS ${ALL_LOCALES} createApkFromAndroidDeployQtDebug java_src
+   DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkFromAndroidDeployQtDebug java_src
 )
 
 # Command to create apk from Makefile
 add_custom_target (apk_release
-   DEPENDS ${ALL_LOCALES} createApkFromAndroidDeployQtRelease java_src
+   DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkFromAndroidDeployQtRelease java_src
 )
 
 # Command to create signed apk from Makefile
 add_custom_target (apk_signed
-   DEPENDS ${ALL_LOCALES} createApkSignedFromAndroidDeployQtRelease java_src
+   DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkSignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to create signed aligned apk from Makefile
 add_custom_target (apk_signed_aligned
-   DEPENDS ${ALL_LOCALES} createApkSignedAlignedFromAndroidDeployQtRelease java_src
+   DEPENDS ${ALL_LOCALES} move_translations_to_assets createApkSignedAlignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to install the signed aligned apk through adb from Makefile
 add_custom_target (apk_install
    DEPENDS apkInstall
 )
+
+add_custom_command(
+  OUTPUT move_translations_to_assets
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${GCOMPRIS_TRANSLATIONS_DIR} ${CMAKE_BINARY_DIR}/android/assets/share/GCompris
+  )
 
 if (TARGET create-apk)
    set(PACKAGE_DIR ${PACKAGE_SOURCE_ANDROID})
