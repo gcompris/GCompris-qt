@@ -27,7 +27,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Gnumch Multiples")
   //: Help title
-  description: qsTr("Guide the Number Muncher to all the multiples of the number at the top of the screen.")
+  description: qsTr("Guide the Number Muncher to all the multiples of the number at the bottom of the screen.")
 //  intro: "Guide the number eater with the arrow keys to the multiples of the displayed number and press space to swallow them."
   //: Help goal
   goal: qsTr("Learn about multiples and factors.")

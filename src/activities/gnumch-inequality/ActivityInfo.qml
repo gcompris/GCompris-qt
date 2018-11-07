@@ -27,7 +27,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Gnumch Inequality")
   //: Help title
-  description: qsTr("Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.")
+  description: qsTr("Guide the Number Muncher to the all the expressions that do not equal the number at the bottom of the screen.")
 //  intro: "Guide the number eater with the arrow keys to the numbers that are different from the ones displayed and press the space bar to swallow them."
   //: Help goal
   goal: qsTr("Practice addition, subtraction, multiplication and division.")
