@@ -33,17 +33,17 @@ Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(p
     defaultEnv.peakAmpl = 1;
     defaultEnv.sustainAmpl = 0.8;
 
-    fftTimer = 0;
+//     fftTimer = 0;
 
     rev.delay = 8000;
     rev.active= false;
     rev.attenuation = 1;
-    rev.samplingRate = 44100;
+    rev.samplingRate = 22050;
 
     mod_waveform = new Waveform(Waveform::MODE_SIN);
 
-    delayBuffer_size = 44100*2;
-    convBuffer_size = 8192;
+    delayBuffer_size = 22050*2;
+    convBuffer_size = 4096;
     convBuffer      = new qreal[convBuffer_size];
     filtBuffer      = new qreal[convBuffer_size];
     delayBuffer     = new qreal[delayBuffer_size];
@@ -62,23 +62,23 @@ Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(p
     filter      = 0;
     convImpulse = 0;
 
-#ifdef USE_FFTW
-    fftwIn  = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*convBuffer_size);
-    fftwOut = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*convBuffer_size);
-    fftwPlan= fftw_plan_dft_1d(convBuffer_size, fftwIn, fftwOut,
-                                FFTW_FORWARD, FFTW_ESTIMATE);
-#else
-    fftLength = convBuffer_size;
-    fftData = new std::complex<qreal>[fftLength];
-#endif
+// #ifdef USE_FFTW
+//     fftwIn  = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*convBuffer_size);
+//     fftwOut = (fftw_complex*) fftw_malloc(sizeof(fftw_complex)*convBuffer_size);
+//     fftwPlan= fftw_plan_dft_1d(convBuffer_size, fftwIn, fftwOut,
+//                                 FFTW_FORWARD, FFTW_ESTIMATE);
+// #else
+//     fftLength = convBuffer_size;
+//     fftData = new std::complex<qreal>[fftLength];
+// #endif
 
     FilterParameters param;
     param.freq1 = param.freq2 = 0;
-    param.samplingRate = 44100;
+    param.samplingRate = 22050;
     param.size         = 128;
     param.type         = Filter::FILTER_OFF;
     param.window_type  = Filter::WINDOW_RECT;
-    param.fftTimer     = 100;
+//     param.fftTimer     = 100;
     setFilter(param);
 }
 
@@ -91,13 +91,13 @@ Generator::~Generator() {
     delete filter;
     delete mod_waveform;
 
-#ifdef USE_FFTW
-    fftw_destroy_plan(fftwPlan);
-    fftw_free(fftwIn);
-    fftw_free(fftwOut);
-#else
-    delete [] fftData;
-#endif
+// #ifdef USE_FFTW
+//     fftw_destroy_plan(fftwPlan);
+//     fftw_free(fftwIn);
+//     fftw_free(fftwOut);
+// #else
+//     delete [] fftData;
+// #endif
 }
 
 void
@@ -135,7 +135,7 @@ Generator::readData(char *data, qint64 len) {
 
     generateData(len);
     memcpy(data, m_buffer.constData(), len);
-    curtime += (qreal)len/(44100*2);
+    curtime += (qreal)len/(22050*2);
     return len;
 }
 
@@ -224,9 +224,9 @@ Generator::generateData(qint64 len) {
               wavAge   = wav.age;
 
         for (unsigned int sample = 0; sample < numSamples; sample++) {
-            qreal t    = curtime   + (qreal)sample / 44100;
-            qreal envt = stateAge  + (qreal)sample / 44100;
-            qreal modt = wavAge    + (qreal)sample / 44100;
+            qreal t    = curtime   + (qreal)sample / 22050;
+            qreal envt = stateAge  + (qreal)sample / 22050;
+            qreal modt = wavAge    + (qreal)sample / 22050;
 
             // Handle timed change of state in the ADSR-envelopes ATTACK->DECAY
             // and RELEASE->OFF.
@@ -236,7 +236,7 @@ Generator::generateData(qint64 len) {
                     stateAge -= attackTime;
                     wav.state = ADSREnvelope::STATE_DECAY;
                     wav.state_age -= attackTime;
-                    envt = stateAge  + (qreal)sample / 44100;
+                    envt = stateAge  + (qreal)sample / 22050;
                 }
                 break;
             case ADSREnvelope::STATE_RELEASE:
@@ -279,9 +279,9 @@ Generator::generateData(qint64 len) {
                 synthData[sample] = newVal + oldVal;
             }
         }
-        wav.age += (qreal)numSamples/44100;
+        wav.age += (qreal)numSamples/22050;
         if (wav.state != ADSREnvelope::STATE_OFF) {
-            wav.state_age += (qreal)numSamples/44100;
+            wav.state_age += (qreal)numSamples/22050;
             i.setValue(wav);
         }
         else {
@@ -308,63 +308,63 @@ Generator::generateData(qint64 len) {
         delayBuffer_ind = (delayBuffer_ind + 1) % delayBuffer_size;
 
         // Primitive Reverb algorithm.
-        if (rev.active) {
-            qreal reverb = 0;
-            unsigned int ind;
-            unsigned int nsteps = delayBuffer_size / rev.delay;
-
-            for (int delayInd = 0; delayInd < nsteps; delayInd ++) {
-                ind = (delayBuffer_ind + delayBuffer_size - 1 - delayInd * 8000) % delayBuffer_size;
-                reverb += delayBuffer[ind] * qExp(-delayInd*rev.attenuation);
-            }
-            convBuffer_ind = (convBuffer_ind + 1) % convBuffer_size;
-            filtBuffer[convBuffer_ind] = reverb;//filteredData[sample];
-            filteredData[sample] = reverb;
-        } else {
-            filtBuffer[convBuffer_ind] = filteredData[sample];
-            convBuffer_ind = (convBuffer_ind + 1) % convBuffer_size;
-        }
+//         if (rev.active) {
+//             qreal reverb = 0;
+//             unsigned int ind;
+//             unsigned int nsteps = delayBuffer_size / rev.delay;
+// 
+//             for (int delayInd = 0; delayInd < nsteps; delayInd ++) {
+//                 ind = (delayBuffer_ind + delayBuffer_size - 1 - delayInd * 8000) % delayBuffer_size;
+//                 reverb += delayBuffer[ind] * qExp(-delayInd*rev.attenuation);
+//             }
+//             convBuffer_ind = (convBuffer_ind + 1) % convBuffer_size;
+//             filtBuffer[convBuffer_ind] = reverb;//filteredData[sample];
+//             filteredData[sample] = reverb;
+//         } else {
+//             filtBuffer[convBuffer_ind] = filteredData[sample];
+//             convBuffer_ind = (convBuffer_ind + 1) % convBuffer_size;
+//         }
     }
-#ifdef USE_FFTW
-    fftTimer += (qreal)numSamples / 44100;
-   // if (numSamples > 1023) {
-    if (fftTimer > 0.001*filter->fftTimer) {
-        fftTimer = 0;
-        for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
-            fftwIn[convind][0] = convBuffer[convind];
-            fftwIn[convind][1] = 0;
-        }
-        fftw_execute(fftwPlan);
-        emit fftUpdate(fftwOut, convBuffer_size, 0);
-        for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
-            fftwIn[convind][0] = filtBuffer[convind];
-            fftwIn[convind][1] = 0;
-        }
-        fftw_execute(fftwPlan);
-        emit fftUpdate(fftwOut, convBuffer_size, 1);
-        for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
-            fftwIn[convind][0] = 0;
-            fftwIn[convind][1] = 0;
-        }
-    }
-#else
-    fftTimer += (qreal)numSamples / 44100;
-    if (fftTimer > 0.001*filter->fftTimer) {
-        fftTimer = 0;
-        for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
-            std::complex <qreal> v(convBuffer[convind], 0);
-            fftData[convind] = v;
-        }
-        FFTCompute(fftData, fftLength);
-        emit fftUpdate(fftData, convBuffer_size, 0);
-        for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
-            std::complex <qreal> v(filtBuffer[convind], 0);
-            fftData[convind] = v;
-        }
-        FFTCompute(fftData, fftLength);
-        emit fftUpdate(fftData, convBuffer_size, 1);
-    }
-#endif
+// #ifdef USE_FFTW
+//     fftTimer += (qreal)numSamples / 22050;
+//    // if (numSamples > 1023) {
+//     if (fftTimer > 0.001*filter->fftTimer) {
+//         fftTimer = 0;
+//         for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
+//             fftwIn[convind][0] = convBuffer[convind];
+//             fftwIn[convind][1] = 0;
+//         }
+//         fftw_execute(fftwPlan);
+//         emit fftUpdate(fftwOut, convBuffer_size, 0);
+//         for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
+//             fftwIn[convind][0] = filtBuffer[convind];
+//             fftwIn[convind][1] = 0;
+//         }
+//         fftw_execute(fftwPlan);
+//         emit fftUpdate(fftwOut, convBuffer_size, 1);
+//         for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
+//             fftwIn[convind][0] = 0;
+//             fftwIn[convind][1] = 0;
+//         }
+//     }
+// #else
+//     fftTimer += (qreal)numSamples / 22050;
+//     if (fftTimer > 0.001*filter->fftTimer) {
+//         fftTimer = 0;
+//         for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
+//             std::complex <qreal> v(convBuffer[convind], 0);
+//             fftData[convind] = v;
+//         }
+//         FFTCompute(fftData, fftLength);
+//         emit fftUpdate(fftData, convBuffer_size, 0);
+//         for (unsigned int convind = 0; convind < convBuffer_size; convind++) {
+//             std::complex <qreal> v(filtBuffer[convind], 0);
+//             fftData[convind] = v;
+//         }
+//         FFTCompute(fftData, fftLength);
+//         emit fftUpdate(fftData, convBuffer_size, 1);
+//     }
+// #endif
 
     // Convert data from qreal to qint16.
 
@@ -399,31 +399,31 @@ Generator::setFilter(FilterParameters &filtParam) {
     if (convImpulse) delete [] convImpulse;
 
     filter = new Filter(filtParam.type, filtParam.window_type, filtParam.size,
-                        44100, filtParam.freq1, filtParam.freq2);
-    filter->fftTimer = filtParam.fftTimer;
+                        22050, filtParam.freq1, filtParam.freq2);
+//     filter->fftTimer = filtParam.fftTimer;
     convImpulse_size = filter->size;
     convImpulse      = new qreal[convImpulse_size];
     for (unsigned int ind = 0; ind < convImpulse_size; ind++) {
         convImpulse[ind] = filter->IR[ind];
     }
-#ifdef USE_FFTW
-    for (unsigned int convind = 0; convind < convImpulse_size; convind++) {
-        fftwIn[convind][0] = 2*(convBuffer_size/(M_PI*M_PI))*convImpulse[convind];
-        fftwIn[convind][1] = 0;
-    }
-    fftw_execute(fftwPlan);
-    emit fftUpdate(fftwOut, convBuffer_size, 2);
-#else
-    for (unsigned int convind = 0; convind < convImpulse_size; convind++) {
-        std::complex <qreal> v(2*(convBuffer_size/(M_PI*M_PI))*convImpulse[convind], 0);
-        fftData[convind] = v;
-    }
-    for (unsigned int convind = convImpulse_size; convind < fftLength; convind++) {
-        fftData[convind] = 0;
-    }
-    FFTCompute(fftData, fftLength);
-    emit fftUpdate(fftData, convBuffer_size, 2);
-#endif
+// #ifdef USE_FFTW
+//     for (unsigned int convind = 0; convind < convImpulse_size; convind++) {
+//         fftwIn[convind][0] = 2*(convBuffer_size/(M_PI*M_PI))*convImpulse[convind];
+//         fftwIn[convind][1] = 0;
+//     }
+//     fftw_execute(fftwPlan);
+//     emit fftUpdate(fftwOut, convBuffer_size, 2);
+// #else
+//     for (unsigned int convind = 0; convind < convImpulse_size; convind++) {
+//         std::complex <qreal> v(2*(convBuffer_size/(M_PI*M_PI))*convImpulse[convind], 0);
+//         fftData[convind] = v;
+//     }
+//     for (unsigned int convind = convImpulse_size; convind < fftLength; convind++) {
+//         fftData[convind] = 0;
+//     }
+//     FFTCompute(fftData, fftLength);
+//     emit fftUpdate(fftData, convBuffer_size, 2);
+// #endif
 }
 
 void

@@ -29,9 +29,9 @@ GSynth *GSynth::m_instance = NULL;
 
 GSynth::GSynth(QObject *parent) : QObject(parent)
 {
-    bufferSize = 8192*2;
+    bufferSize = 2048;
 
-    m_format.setSampleRate(44100);
+    m_format.setSampleRate(22050);
     m_format.setChannelCount(1);
     m_format.setSampleSize(16);
     m_format.setCodec("audio/pcm");
@@ -44,7 +44,7 @@ GSynth::GSynth(QObject *parent) : QObject(parent)
         m_format = info.nearestFormat(m_format);
     }
     m_device = QAudioDeviceInfo::defaultOutputDevice();
-    m_buffer = QByteArray(bufferSize*2, 0);
+    m_buffer = QByteArray(bufferSize, 0);
 
     m_audioOutput = new QAudioOutput(m_device, m_format, this);
     m_audioOutput->setBufferSize(bufferSize);

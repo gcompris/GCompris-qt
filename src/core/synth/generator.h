@@ -35,11 +35,11 @@
 #include "reverb.h"
 #include "preset.h"
 
-#ifdef USE_FFTW
-#include <fftw3.h>
-#else
-#include "fft.h"
-#endif
+// #ifdef USE_FFTW
+// #include <fftw3.h>
+// #else
+// #include "fft.h"
+// #endif
 
 // The state of each active note is described with an Wave object. Wave
 // objects are assembled into the QList<Wave> waveList and removed once
@@ -76,11 +76,11 @@ public:
 
     void generateData(qint64 len);
 signals:
-#ifdef USE_FFTW
-    void fftUpdate(fftw_complex *out, unsigned int size, unsigned int ind_dataset);
-#else
-    void fftUpdate(std::complex<qreal> *out, unsigned int size, unsigned int ind_dataset);
-#endif
+// #ifdef USE_FFTW
+//     void fftUpdate(fftw_complex *out, unsigned int size, unsigned int ind_dataset);
+// #else
+//     void fftUpdate(std::complex<qreal> *out, unsigned int size, unsigned int ind_dataset);
+// #endif
 public slots:
     void noteOn   (unsigned char chan, unsigned char note, unsigned char vel);
     void noteOff  (unsigned char chan, unsigned char note);
@@ -126,16 +126,16 @@ private:
     qreal *convImpulse;
     unsigned int convImpulse_size;
 
-    qreal fftTimer;
+//     qreal fftTimer;
 
     QMutex m_lock;
-#ifdef USE_FFTW
-    fftw_complex *fftwIn, *fftwOut;
-    fftw_plan     fftwPlan;
-#else
-    std::complex<qreal> *fftData;
-    unsigned int fftLength;
-#endif
+// #ifdef USE_FFTW
+//     fftw_complex *fftwIn, *fftwOut;
+//     fftw_plan     fftwPlan;
+// #else
+//     std::complex<qreal> *fftData;
+//     unsigned int fftLength;
+// #endif
 };
 
 #endif // OUTPUTQT_H
