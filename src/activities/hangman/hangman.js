@@ -163,6 +163,7 @@ function processKeyPress(text) {
 
     // If no more '_' in the word to find, we have found all letters, show bonus
     if(items.hidden.text.indexOf("_") === -1) {
+        items.maskThreshold = 0;
         items.playWord()
         items.bonus.good("lion");
     }

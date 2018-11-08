@@ -83,6 +83,7 @@ ActivityBase {
             property alias locale: background.locale
             property alias ok: ok
             property int remainingLife
+            property double maskThreshold
             property var goodWord
             property int goodWordIndex
             property bool easyMode: false
@@ -97,6 +98,7 @@ ActivityBase {
                     bonus.interval = 500
             }
             onRemainingLifeChanged: {
+                maskThreshold = 0.15 * remainingLife
                 if(remainingLife == 3) {
                     playWord();
                 }
@@ -236,7 +238,7 @@ ActivityBase {
                 maskSource: threshmask
                 spread: 0.4
                 // remainingLife between 0 and 6 => threshold between 0 and 0.9
-                threshold: 0.15 * items.remainingLife
+                threshold: items.maskThreshold
             }
         }
 
