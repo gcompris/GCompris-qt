@@ -29,7 +29,7 @@ GSynth *GSynth::m_instance = NULL;
 
 GSynth::GSynth(QObject *parent) : QObject(parent)
 {
-    bufferSize = 2048;
+    bufferSize = 4096;
 
     m_format.setSampleRate(22050);
     m_format.setChannelCount(1);
