@@ -35,10 +35,10 @@ Item {
 
     /// index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
-    property string text
+    property string imageText
     property alias image: image.source;
     property bool wonState: false
-
+    property int mode: 1;
     signal won
 
     onWon: {
@@ -70,7 +70,7 @@ Item {
         if (wonState)
             return
 
-        var chars = text.split("");
+        var chars = imageText.split("");
         if (chars[unmatchedIndex] == c) {
             unmatchedIndex++;
             return true;
@@ -88,13 +88,57 @@ Item {
 
     function isCompleted()
     {
-        return (unmatchedIndex === text.length);
+        return (unmatchedIndex === imageText.length);
+    }
+
+    function getImageText(imageText) {
+        if (mode == 1) {
+            return imageText;
+        } else if (mode == 2) {
+            if (imageText == "1")
+                return "I";
+            else if (imageText == "2")
+                return "II";
+
+            else if (imageText == "3")
+                return "III";
+
+            else if (imageText == "4")
+                return "IV";
+
+            else if (imageText == "5")
+                return "V";
+
+            else if (imageText == "6")
+                return "VI";
+
+            else if (imageText == "7")
+                return "VII";
+
+            else if (imageText == "8")
+                return "VIII";
+
+            else if (imageText == "9")
+                return "IX";
+        }
     }
 
     Image {
         id: image
         // FIXME, the size should be passed from the caller
         sourceSize.height: 106 * ApplicationInfo.ratio
+
+        GCText {
+            id: numberText
+            visible: ((mode == 1 || mode == 2) ? true : false)
+            y: 0
+            fontSize: 30
+
+            anchors.horizontalCenter: parent.horizontalCenter
+            color: "white"
+            anchors.margins: ApplicationInfo.ratio * 5
+            text: getImageText(imageText)
+        }
 
         ParticleSystemStarLoader {
             id: particle
@@ -123,7 +167,7 @@ Item {
 
         onStopped: {
             Activity.audioCrashPlay();
-            Activity.appendRandomWord(word.text)
+            Activity.appendRandomWord(word.imageText)
             Activity.deleteWord(word);
         }
     }

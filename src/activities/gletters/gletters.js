@@ -291,10 +291,16 @@ function createWord()
         var word
 
         if(items.ourActivity.getImage(text)) {
+            var mode = items.ourActivity.getMode();
+            var images = "qrc:/gcompris/src/activities/smallnumbers/resource/dice0.svg";
+            if(mode == 3)
+                images = items.ourActivity.getImage(text);
+
             word = wordComponent.createObject( items.background,
                 {
-                    "text": text,
-                    "image": items.ourActivity.getImage(text),
+                    "imageText": text,
+                    "image": images,
+                    "mode": items.ourActivity.getMode(),
                     // assume x=width-25px for now, Word auto-adjusts onCompleted():
                     "x": Math.random() * (items.main.width - 25),
                     "y": -25,
