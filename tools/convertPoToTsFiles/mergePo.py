@@ -27,7 +27,6 @@
 # something like: python2 mergePo.py gcompris_fi.po fi.po && sed '/^#|/ d' < gcompris_fi.po > qtgl.po && mv qtgl.po gcompris_fi.po
 
 import polib
-import re
 import sys
 
 if len(sys.argv) < 3:

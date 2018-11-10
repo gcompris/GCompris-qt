@@ -5,7 +5,7 @@
 # need to switch to it (or at least use it if available else switch to existing
 # l10n-fetch-po-files.py script to retrieve the po)
 #
-# Licence of KDECMakeSettings.cmake
+# License of KDECMakeSettings.cmake
 #=============================================================================
 # Copyright 2014      Alex Merry <alex.merry@kde.org>
 # Copyright 2013      Aleix Pol <aleixpol@kde.org>

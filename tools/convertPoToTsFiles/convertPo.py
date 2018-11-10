@@ -25,7 +25,6 @@
 # For those not found, no translation is provided.
 
 import polib
-import re
 import sys
 import xml.etree.ElementTree as ET
 
