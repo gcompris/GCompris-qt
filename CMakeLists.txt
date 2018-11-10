@@ -331,7 +331,7 @@ add_custom_target(
 set(DOWNLOAD_ASSETS "" CACHE STRING "Download and packages images and voices. use a list like: words,en,fr,pt_BR to retrieve multiple files")
 add_custom_command(
     OUTPUT predownloadAssets
-    COMMAND python2 tools/download-assets.py ${DOWNLOAD_ASSETS} ${COMPRESSED_AUDIO} ${GCOMPRIS_RCC_DIR}
+    COMMAND python tools/download-assets.py ${DOWNLOAD_ASSETS} ${COMPRESSED_AUDIO} ${GCOMPRIS_RCC_DIR}
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 
