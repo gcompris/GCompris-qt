@@ -2,7 +2,7 @@
 #
 # GCompris - download-assets.py
 #
-# Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
+# Copyright (C) 2016-2018 Johnny Jazeix <jazeix@gmail.com>
 #
 #   This program is free software; you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -16,37 +16,22 @@
 #
 #   You should have received a copy of the GNU General Public License
 #   along with this program; if not, see <https://www.gnu.org/licenses/>.
-#import os
-import urllib2
+import urllib.request
+import shutil
 import sys
 
-# code from http://stackoverflow.com/questions/22676/how-do-i-download-a-file-over-http-using-python
-def download_file(file, output_dir):
-    u = urllib2.urlopen(file)
-    file_name = output_dir + "/" + file.split('/')[-1]
-    f = open(file_name, 'wb')
-    meta = u.info()
-    file_size = int(meta.getheaders("Content-Length")[0])
-    print "Downloading: %s in %s Bytes: %s" % (file, file_name, file_size)
-    file_size_dl = 0
-    block_sz = 8192
-    while True:
-        buffer = u.read(block_sz)
-        if not buffer:
-            break
-        file_size_dl += len(buffer)
-        f.write(buffer)
-        status = r"%10d  [%3.2f%%]" % (file_size_dl, file_size_dl * 100. / file_size)
-        status = status + chr(8)*(len(status)+1)
-        print status,
-    f.close()
+# see https://stackoverflow.com/questions/7243750/download-file-from-web-in-python-3/7244263#7244263
+def download_file(from_url, output_dir):
+    file_name = output_dir + "/" + from_url.split('/')[-1]
+    with urllib.request.urlopen(from_url) as response, open(file_name, 'wb') as out_file:
+        shutil.copyfileobj(response, out_file)
 
 # argv[0]: program name
 # argv[1]: assets to download (words, full for full rccs, locale to get correpsonding locale voices)
 # argv[2]: audio format (ogg, mp3, aac)
 # argv[3]: output directory (rcc directory)
 if len(sys.argv) != 4:
-    print "Usage: download-assets.py \"words,full,en,fr,pt_BR\""
+    print("Usage: download-assets.py \"words,full,en,fr,pt_BR\" ogg/mp3/aac outputFolder")
     sys.exit(0)
 
 """Download the voices and words assets depending on the wanted audio format
@@ -56,18 +41,17 @@ DOWNLOAD_PATH = "http://gcompris.net/data2/"
 AUDIO_FORMAT = sys.argv[2]
 OUTPUT_FOLDER = sys.argv[3]+"/data2/"
 
-all_languages = [x.strip() for x in sys.argv[1].split(",") if len(x)]
-downloadWords = "words" in all_languages
-downloadFull = "full" in all_languages
-if downloadWords:
-    all_languages.remove("words")
+ALL_LANGUAGES = [x.strip() for x in sys.argv[1].split(",") if len(x)]
+DOWNLOAD_WORDS = "words" in ALL_LANGUAGES
+DOWNLOAD_FULL = "full" in ALL_LANGUAGES
+if DOWNLOAD_WORDS:
+    ALL_LANGUAGES.remove("words")
     download_file(DOWNLOAD_PATH+"words/words.rcc", OUTPUT_FOLDER+"words/")
 
-if downloadFull:
-    all_languages.remove("full")
+if DOWNLOAD_FULL:
+    ALL_LANGUAGES.remove("full")
     download_file(DOWNLOAD_PATH+"full-"+AUDIO_FORMAT+".rcc", OUTPUT_FOLDER)
 
-for lang in all_languages:
-    download_file(DOWNLOAD_PATH+"voices-"+AUDIO_FORMAT+"/voices-"+lang+".rcc", OUTPUT_FOLDER+"voices-"+AUDIO_FORMAT+"/")
-# Inform qmake about the updated file list
-#os.utime("CMakeLists.txt", None)
+for lang in ALL_LANGUAGES:
+    lang_url = DOWNLOAD_PATH+"voices-"+AUDIO_FORMAT+"/voices-"+lang+".rcc"
+    download_file(lang_url, OUTPUT_FOLDER+"voices-"+AUDIO_FORMAT+"/")
