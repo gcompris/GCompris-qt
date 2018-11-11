@@ -50,6 +50,12 @@ if(ECM_FOUND)
   include(ECMCoverageOption)
 endif(ECM_FOUND)
 
+# add tools (cppcheck, clang-tidy...) if build on testing mode only
+# (slower compilation)
+if(BUILD_TESTING)
+  include(CodeQualityUtils)
+endif()
+
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
   find_package(ECM)
   set(ANDROID 1)

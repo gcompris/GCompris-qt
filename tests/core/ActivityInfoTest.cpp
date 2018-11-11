@@ -74,17 +74,17 @@ void CoreActivityInfoTest::ActivityInfoTest()
     // called here to set the static instance object to the mock one
     ApplicationSettingsMock::getInstance();
 
-    QCOMPARE(activityinfo.name(), QStringLiteral(""));
-    QCOMPARE(activityinfo.section(), QStringLiteral(""));
-    QCOMPARE(activityinfo.icon(), QStringLiteral(""));
-    QCOMPARE(activityinfo.author(), QStringLiteral(""));
+    QCOMPARE(activityinfo.name(), "");
+    QCOMPARE(activityinfo.section(), "");
+    QCOMPARE(activityinfo.icon(), "");
+    QCOMPARE(activityinfo.author(), "");
     QVERIFY(activityinfo.demo());
-    QCOMPARE(activityinfo.title(), QStringLiteral(""));
-    QCOMPARE(activityinfo.description(), QStringLiteral(""));
-    QCOMPARE(activityinfo.goal(), QStringLiteral(""));
-    QCOMPARE(activityinfo.prerequisite(), QStringLiteral(""));
-    QCOMPARE(activityinfo.manual(), QStringLiteral(""));
-    QCOMPARE(activityinfo.credit(), QStringLiteral(""));
+    QCOMPARE(activityinfo.title(), "");
+    QCOMPARE(activityinfo.description(), "");
+    QCOMPARE(activityinfo.goal(), "");
+    QCOMPARE(activityinfo.prerequisite(), "");
+    QCOMPARE(activityinfo.manual(), "");
+    QCOMPARE(activityinfo.credit(), "");
     QVERIFY(!activityinfo.favorite());
     QVERIFY(activityinfo.enabled());
     QCOMPARE(activityinfo.createdInVersion(), 0);

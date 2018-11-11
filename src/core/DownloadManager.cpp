@@ -34,9 +34,9 @@
 #include <QtQml>
 
 const QString DownloadManager::contentsFilename = QString("Contents");
-DownloadManager* DownloadManager::_instance = 0;
+DownloadManager* DownloadManager::_instance = nullptr;
 
-void copyPath(QString src, QString dst)
+void copyPath(const QString &src, const QString &dst)
 {
     QDir dir(src);
     if (!dir.exists())
@@ -111,12 +111,12 @@ QObject *DownloadManager::downloadManagerProvider(QQmlEngine *engine,
 
 bool DownloadManager::downloadIsRunning() const
 {
-    return (activeJobs.size() > 0);
+    return !activeJobs.empty();
 }
 
 void DownloadManager::abortDownloads()
 {
-    if (activeJobs.size() > 0) {
+    if (downloadIsRunning()) {
         QMutexLocker locker(&jobsMutex);
         QMutableListIterator<DownloadJob*> iter(activeJobs);
         while (iter.hasNext()) {

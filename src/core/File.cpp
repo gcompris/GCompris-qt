@@ -35,9 +35,9 @@ QString File::name() const
     return m_name;
 }
 
-QString File::sanitizeUrl(const QString &str)
+QString File::sanitizeUrl(const QString &url)
 {
-    QString target(str);
+    QString target(url);
 
     // make sure we strip off invalid URL schemes:
     if (target.startsWith(QLatin1String("file://")))

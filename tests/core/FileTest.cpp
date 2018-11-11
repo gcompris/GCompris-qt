@@ -58,7 +58,7 @@ void CoreFileTest::ReadWriteErrorsTest_data()
     QTest::addColumn<QString>("filename");
     QTest::addColumn<QString>("readError");
     QTest::addColumn<QString>("writeError");
-    QTest::newRow("empty file") << QStringLiteral("")
+    QTest::newRow("empty file") << ""
                                 << QStringLiteral("source is empty")
                                 << QStringLiteral("source is empty");
 

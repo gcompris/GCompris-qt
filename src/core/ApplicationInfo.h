@@ -106,7 +106,7 @@ class ApplicationInfo : public QObject
 	/**
 	 * Short (2-letter) locale string of the currently active language.
 	 */
-	Q_PROPERTY(QString localeShort READ localeShort)
+	Q_PROPERTY(QString localeShort READ localeShort CONSTANT)
 
     /**
      * GCompris version string (compile time).
