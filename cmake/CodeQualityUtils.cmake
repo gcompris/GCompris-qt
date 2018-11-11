@@ -1,5 +1,4 @@
 # These tools are run (for now) only if BUILD_TESTING is ON
-# Another useful tool could be clazy compiler too
 
 # Run cppcheck on the code
 find_program(CPPCHECK_EXE NAMES cppcheck)
@@ -21,5 +20,7 @@ if(CLANG_TIDY_EXE)
     list(
         APPEND CMAKE_CXX_CLANG_TIDY
             "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-owning-memory,-modernize-use-auto,-readability-braces-around-statements,-cppcoreguidelines-pro-type-static-cast-downcast,-cppcoreguidelines-pro-type-vararg,-cppcoreguidelines-pro-bounds-array-to-pointer-decay"
-        )
+    )
 endif()
+# in KDECMakeSettings.cmake, if built with clang and this option, it runs clazy
+set(ENABLE_CLAZY ON)
