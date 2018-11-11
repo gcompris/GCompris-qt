@@ -32,14 +32,7 @@
 #include "modulation.h"
 #include "filter.h"
 #include "ADSRenvelope.h"
-#include "reverb.h"
 #include "preset.h"
-
-// #ifdef USE_FFTW
-// #include <fftw3.h>
-// #else
-// #include "fft.h"
-// #endif
 
 // The state of each active note is described with an Wave object. Wave
 // objects are assembled into the QList<Wave> waveList and removed once
@@ -75,12 +68,7 @@ public:
     qint64 bytesAvailable() const;
 
     void generateData(qint64 len);
-signals:
-// #ifdef USE_FFTW
-//     void fftUpdate(fftw_complex *out, unsigned int size, unsigned int ind_dataset);
-// #else
-//     void fftUpdate(std::complex<qreal> *out, unsigned int size, unsigned int ind_dataset);
-// #endif
+
 public slots:
     void noteOn   (unsigned char chan, unsigned char note, unsigned char vel);
     void noteOff  (unsigned char chan, unsigned char note);
@@ -91,7 +79,6 @@ public slots:
     void setEnvelope  (ADSREnvelope &env);
     void setModulation(Modulation &modulation);
     void setFilter    (FilterParameters &filtParam);
-    void setReverb    (Reverb &_rev);
     void setPreset    (Preset &preset);
     
 private:
@@ -108,7 +95,6 @@ private:
     Modulation       mod;
     Waveform        *mod_waveform;
     Filter          *filter;
-    Reverb           rev;
 
     // convBuffer and filtBuffer are circular buffers used to store the
     // previous convBuffer_size samples before and after convolution.
@@ -116,26 +102,20 @@ private:
     // data for the fftUpdate signal. The data in convBuffer is also used
     // in the computation of convolution. convBuffer_ind tells the location
     // of the last added sample in the buffer.
-
-    qreal *convBuffer, *filtBuffer, *delayBuffer;
-    unsigned int convBuffer_size, delayBuffer_size;
-    quint32 convBuffer_ind, delayBuffer_ind;
+    static const int m_samplingRate = 22050;
+    static const int maxUsedBytes = 2048;
+    
+    qreal *convBuffer;
+    qreal *synthData, *filteredData;
+    unsigned int convBuffer_size;
+    quint32 convBuffer_ind;
 
     // Impulse response for the current filter.
 
     qreal *convImpulse;
     unsigned int convImpulse_size;
 
-//     qreal fftTimer;
-
     QMutex m_lock;
-// #ifdef USE_FFTW
-//     fftw_complex *fftwIn, *fftwOut;
-//     fftw_plan     fftwPlan;
-// #else
-//     std::complex<qreal> *fftData;
-//     unsigned int fftLength;
-// #endif
 };
 
 #endif // OUTPUTQT_H

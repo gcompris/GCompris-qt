@@ -32,8 +32,8 @@ public:
     ~ADSREnvelope();
     enum {STATE_OFF, STATE_ATTACK, STATE_DECAY, STATE_RELEASE};
 
-    unsigned int attackTime, decayTime, releaseTime;
     qreal initialAmpl, peakAmpl, sustainAmpl;
+    unsigned int attackTime, decayTime, releaseTime;
 
     qreal eval(qreal t, unsigned char state);
 private:

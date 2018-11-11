@@ -74,7 +74,7 @@ void GSynth::generate(int note, int duration) {
     m_generator->noteOn(1, note, 255);
     if(!m_timers.contains(note)) {
         m_timers[note] = new QTimer();
-        connect(m_timers[note], &QTimer::timeout,
+        connect(m_timers[note], &QTimer::timeout, this,
                 [this, note]() {
                     stopAudio(note);
                 });

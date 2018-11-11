@@ -30,8 +30,8 @@ public:
     void setTimbre(QVector<int> &amplitudes, QVector<int> &phases);
 
 private:
-    QVector<int> timbreAmplitudes;
-    QVector<int> timbrePhases;
+    int *timbreAmplitudes;
+    int *timbrePhases;
     unsigned int numHarmonics;
 };
 

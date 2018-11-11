@@ -26,9 +26,9 @@ public:
     Modulation();
     ~Modulation();
 
-    unsigned int mode;
     qreal FM_freq, FM_ampl;
     qreal AM_freq, AM_ampl, AM_time;
+    unsigned int mode;
 
     bool propFreq, useEnvelope;
 };

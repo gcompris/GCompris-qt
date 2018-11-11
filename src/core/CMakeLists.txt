@@ -29,8 +29,6 @@ set(gcompris_SRCS
    config.h.in
    synth/ADSRenvelope.cpp
    synth/ADSRenvelope.h
-   synth/fft.cpp
-   synth/fft.h
    synth/filter.cpp
    synth/filter.h
    synth/GSynth.cpp
@@ -43,7 +41,6 @@ set(gcompris_SRCS
    synth/generator.h
    synth/preset.h
    synth/preset.cpp
-   synth/reverb.h
    synth/waveform.cpp
    synth/waveform.h
 )

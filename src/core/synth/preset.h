@@ -22,7 +22,6 @@
 #include "filter.h"
 #include "linearSynthesis.h"
 #include "modulation.h"
-#include "reverb.h"
 
 #include <QVector>
 
@@ -31,13 +30,12 @@ public:
     Preset ();
     ~Preset();
 
-    unsigned int waveformMode;
     QVector<int> timbreAmplitudes;
     QVector<int> timbrePhases;
+    unsigned int waveformMode;
 
     ADSREnvelope     env;
     FilterParameters filt;
-    Reverb           rev;
     Modulation       mod;
 };
 

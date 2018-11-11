@@ -23,8 +23,8 @@
 
 class FilterParameters {
 public:
-    unsigned int type, window_type, size, samplingRate, fftTimer;
     qreal freq1, freq2;
+    unsigned int type, window_type, size, samplingRate, fftTimer;
 };
 
 class Filter : public FilterParameters {

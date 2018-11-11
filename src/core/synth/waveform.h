@@ -32,7 +32,6 @@ public:
     ~Waveform();    
 
     qreal eval(qreal t);
-    unsigned int mode;
 
     enum {MODE_SIN, MODE_SAW, MODE_SQU, MODE_SAW2};
 private:
@@ -43,6 +42,9 @@ private:
 
     qreal *waveTable;
     unsigned int tableSize;
+    
+public:
+    unsigned int mode;
 };
 
 #endif // WAVEFORM_H

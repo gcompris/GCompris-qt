@@ -23,8 +23,8 @@ LinearSynthesis::LinearSynthesis(unsigned int mode, unsigned int size) :
 
     numHarmonics = 16;
 
-    timbreAmplitudes = QVector<int>(numHarmonics, 0);
-    timbrePhases     = QVector<int>(numHarmonics, 0);
+    timbreAmplitudes = new int[numHarmonics];
+    timbrePhases     = new int[numHarmonics];
 
     timbreAmplitudes[0] = 100;
 }
@@ -33,12 +33,21 @@ void
 LinearSynthesis::setTimbre(QVector<int> &amplitudes, QVector<int> &phases) {
     Q_ASSERT(amplitudes.size() == phases.size());
 
-    timbreAmplitudes = amplitudes;
-    timbrePhases = phases;
-    numHarmonics = timbreAmplitudes.size();
+    if(timbreAmplitudes) delete[] timbreAmplitudes;
+    if(timbrePhases) delete[] timbrePhases;
+
+    numHarmonics = amplitudes.size();
+    timbreAmplitudes = new int[numHarmonics];
+    timbrePhases = new int[numHarmonics];
+    for(int i = 0 ; i < numHarmonics ; ++ i) {
+        timbreAmplitudes[i] = amplitudes[i];
+        timbrePhases[i] = phases[i];
+    }
 }
 
 LinearSynthesis::~LinearSynthesis() {
+    delete[] timbreAmplitudes;
+    delete[] timbrePhases;
 }
 
 qreal
