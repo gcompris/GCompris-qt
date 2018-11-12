@@ -41,7 +41,8 @@ function start(items_) {
     for(var i = 0;  i < dataset.length; ++i) {
         items.planetsModel.append({
             "realImg": dataset[i].realImg,
-            "bodyName": dataset[i].bodyName
+            "bodyName": dataset[i].bodyName,
+            "bodySize": dataset[i].bodySize
         });
     }
 

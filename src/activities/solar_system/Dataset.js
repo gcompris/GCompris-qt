@@ -23,6 +23,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/sun.png",
                     "bodyName": qsTr("Sun"),
+                    "bodySize": 1.3,
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("How large is the Sun compared to other planets in our Solar System?"),
@@ -54,6 +55,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury.png",
                     "bodyName": qsTr("Mercury"),
+                    "bodySize": 0.12,
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
                     "levels": [
@@ -92,6 +94,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus.png",
                     "bodyName": qsTr("Venus"),
+                    "bodySize": 0.22,
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
@@ -135,6 +138,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth.png",
                     "bodyName": qsTr("Earth"),
+                    "bodySize": 0.3,
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
                     "levels": [
@@ -178,6 +182,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars.png",
                     "bodyName": qsTr("Mars"),
+                    "bodySize": 0.15,
                     "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
@@ -221,6 +226,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter.png",
                     "bodyName": qsTr("Jupiter"),
+                    "bodySize": 1,
                     "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
@@ -259,6 +265,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn.png",
                     "bodyName": qsTr("Saturn"),
+                    "bodySize": 1.2,
                     "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth years."),
                     "levels": [
@@ -297,6 +304,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus.png",
                     "bodyName": qsTr("Uranus"),
+                    "bodySize": 0.5,
                     "temperatureHint": qsTr("The temperature on Saturn is -178 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
@@ -335,6 +343,7 @@ function get() {
                 {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune.png",
                     "bodyName": qsTr("Neptune"),
+                    "bodySize": 0.4,
                     "temperatureHint": qsTr("The maximum temperature on Saturn is -178 degrees celsius."),
                     "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 years."),
                     "levels": [

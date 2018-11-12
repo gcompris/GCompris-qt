@@ -30,45 +30,89 @@ Item {
 
     property string planetImageSource
     property string planetName
+    property double planetSize
+    property bool planetHovered
 
     // Name of the planet which hovers over the top of each planet
     GCText {
         id: planetNameText
-        anchors.horizontalCenter: background.horizontalLayout ? parent.horizontalCenter : undefined
-        anchors.leftMargin: background.horizontalLayout ? 0 : 10 * ApplicationInfo.ratio
-        anchors.left: !background.horizontalLayout ? planetImage.right : undefined
-        horizontalAlignment: background.horizontalLayout ? Text.AlignHCenter : undefined
-        y: !background.horizontalLayout ? 5 * ApplicationInfo.ratio : 0
         width: parent.width
         fontSizeMode: Text.Fit
         font.pointSize: NaN // need to clear font.pointSize explicitly
         font.pixelSize: parent.width * 0.18
         color: "white"
         text: planetName
+        
+        states: [
+                State {
+                    name: "hScreen"
+                    when: background.horizontalLayout
+                    AnchorChanges {
+                        target: planetNameText
+                        anchors.bottom: planetItem.top
+                        anchors.horizontalCenter: planetItem.horizontalCenter
+                        anchors.left: undefined
+                        anchors.verticalCenter: undefined
+                    }
+                    PropertyChanges {
+                        target: planetNameText
+                        anchors.bottomMargin: 20 * ApplicationInfo.ratio
+                        anchors.leftMargin: 0
+                        horizontalAlignment: Text.AlignHCenter
+                    }
+                },
+                State {
+                    name: "vScreen"
+                    when: !background.horizontalLayout
+                    AnchorChanges {
+                        target: planetNameText
+                        anchors.bottom: undefined
+                        anchors.horizontalCenter: undefined
+                        anchors.left: planetItem.right
+                        anchors.verticalCenter: planetItem.verticalCenter
+                    }
+                    PropertyChanges {
+                        target: planetNameText
+                        anchors.bottomMargin: 0
+                        anchors.leftMargin: 20 * ApplicationInfo.ratio
+                        horizontalAlignment: Text.AlignLeft
+                    }
+                }
+                
+        ]
+        
+        MouseArea {
+            id: mouseAreaText
+            anchors.fill: planetNameText
+            enabled: !message.visible
+            hoverEnabled: ApplicationInfo.isMobile ? false : true
+            onEntered: planetHovered = true
+            onExited: planetHovered = false
+            onClicked: {
+                Activity.showQuizScreen(index)
+            }
+        }
     }
 
     Image {
         id: planetImage
-        anchors.top: background.horizontalLayout ? planetNameText.bottom : planetItem.top
-        anchors.topMargin: parent.width * 0.05
+        z: -10
         anchors.horizontalCenter: parent.horizontalCenter
-        width: parent.width / 1.3
+        anchors.verticalCenter: parent.verticalCenter
+        width: parent.width * planetSize
         height: planetImage.width
         fillMode: Image.PreserveAspectFit
         source: planetImageSource
-
-        states: [
-            State {
-                name: "clicked"
-                when: mouseArea.pressed
-                PropertyChanges {
-                    target: planetImage
-                    scale: 0.7
-                }
-            },
+    }
+    
+    states: [
             State {
                 name: "hover"
-                when: mouseArea.containsMouse
+                when: planetHovered
+                PropertyChanges {
+                    target: planetNameText
+                    scale: 1.2
+                }
                 PropertyChanges {
                     target: planetImage
                     scale: 1.2
@@ -80,10 +124,13 @@ Item {
 
         MouseArea {
             id: mouseArea
-            anchors.fill: planetImage
+            anchors.fill: planetItem
             enabled: !message.visible
             hoverEnabled: ApplicationInfo.isMobile ? false : true
-            onClicked: Activity.showQuizScreen(index)
+            onEntered: planetHovered = true
+            onExited: planetHovered = false
+            onClicked: {
+                Activity.showQuizScreen(index)
+            }
         }
-    }
 }

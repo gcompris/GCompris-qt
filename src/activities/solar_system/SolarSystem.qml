@@ -146,6 +146,7 @@ ActivityBase {
             delegate: PlanetInSolarModel {
                 planetImageSource: realImg
                 planetName: bodyName
+                planetSize: bodySize
             }
         }
 
