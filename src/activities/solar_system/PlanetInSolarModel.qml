@@ -32,6 +32,7 @@ Item {
     property string planetName
     property double planetSize
     property bool planetHovered
+    property bool hintMode
 
     // Name of the planet which hovers over the top of each planet
     GCText {
@@ -84,7 +85,7 @@ Item {
         MouseArea {
             id: mouseAreaText
             anchors.fill: planetNameText
-            enabled: !message.visible
+            enabled: !message.visible && !hintMode
             hoverEnabled: ApplicationInfo.isMobile ? false : true
             onEntered: planetHovered = true
             onExited: planetHovered = false
@@ -125,7 +126,7 @@ Item {
         MouseArea {
             id: mouseArea
             anchors.fill: planetItem
-            enabled: !message.visible
+            enabled: !message.visible && !hintMode
             hoverEnabled: ApplicationInfo.isMobile ? false : true
             onEntered: planetHovered = true
             onExited: planetHovered = false

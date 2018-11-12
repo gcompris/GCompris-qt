@@ -179,12 +179,38 @@ ActivityBase {
 
             Image {
                 id: solarSystemImage
-                source: "qrc:/gcompris/src/activities/solar_system/resource/hint_solar_model.png"
-                width: parent.width - 6 * ApplicationInfo.ratio
                 fillMode: Image.PreserveAspectCrop
-                anchors.centerIn: parent
+                source: "qrc:/gcompris/src/activities/solar_system/resource/background.svg"
+                width: horizontalLayout ? parent.width * 2.5 : parent.height * 2.5
+                height: stars.width
+                sourceSize.width: stars.width
+                sourceSize.height: stars.width
+                x: horizontalLayout ? -stars.width * 0.48 : -stars.width * 0.5 + parent.width * 0.5
+                y: horizontalLayout ? -stars.height * 0.5 + parent.height * 0.5 : -stars.height * 0.5 + parent.height * 0.9
             }
 
+            GridView {
+                id: planetViewHint
+                y: horizontalLayout ? (parent.height - bar.height) / 2 - cellHeight/2 : 0
+                x: horizontalLayout ? 0 : parent.width / 2 - cellHeight / 2
+                layoutDirection: Qt.LeftToRight
+                verticalLayoutDirection: GridView.BottomToTop
+                width: horizontalLayout ? parent.width : cellWidth
+                height: horizontalLayout ? cellHeight : parent.height - bar.height
+                clip: false
+                interactive: false
+                cellWidth: background.itemWidth
+                cellHeight: cellWidth
+                model: items.planetsModel
+
+                delegate: PlanetInSolarModel {
+                    hintMode: true
+                    planetImageSource: realImg
+                    planetName: bodyName
+                    planetSize: bodySize
+                }
+            }
+            
             NumberAnimation {
                 id: hintAppearAnimation
                 target: solarSystemImageHint
