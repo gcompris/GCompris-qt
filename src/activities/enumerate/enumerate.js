@@ -1,4 +1,4 @@
-/* GCompris - enumarate.js
+/* GCompris - enumerate.js
 *
 * Copyright (C) 2014 Thib ROMAIN <thibrom@gmail.com>
 *

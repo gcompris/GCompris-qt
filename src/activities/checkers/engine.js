@@ -844,7 +844,7 @@ var Draughts = function (fen) {
     }
     var captureArray = []
     if (finished === true && capture.takes.length) {
-      // fix for mutiple capture
+      // fix for multiple capture
       capture.from = capture.jumps[0]
       captureArray[0] = capture
     } else {

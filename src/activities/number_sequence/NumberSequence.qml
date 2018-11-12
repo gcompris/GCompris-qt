@@ -40,7 +40,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/checkers/resource/background-wood.svg"
-        sourceSize.width: parent.witdh
+        sourceSize.width: parent.width
         sourceSize.height: parent.height
         signal start
         signal stop

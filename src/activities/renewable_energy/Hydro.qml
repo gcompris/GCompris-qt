@@ -491,7 +491,7 @@ Item {
             if(rain.opacity > 0.2 && river.level < 1) {
                 river.level += 0.01
             } else if(river.level > 0) {
-                // Make the river level dependant on whether the dam runs
+                // Make the river level dependent on whether the dam runs
                 river.level -= (dam.power > 0 ? 0.001 : 0.0005)
             } else {
                 dam.started = false

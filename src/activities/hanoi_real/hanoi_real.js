@@ -174,7 +174,7 @@ function placeDisc(disc, towerImage)
 function setDiscY(disc, towerImage)
 {
     //  -(towerImage.height * 0.12) because we need to remove the base of the tower
-    // dependant of the image!
+    // dependent of the image!
     disc.y = towerImage.y + towerImage.height - disc.position * disc.height - (towerImage.height * 0.12)
 }
 

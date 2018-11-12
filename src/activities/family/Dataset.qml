@@ -108,7 +108,7 @@ QtObject {
 //    currentstate: [],
 //    edgeState:[],
 //    answer: [],
-//    optionss: []
+//    options: []
 // 
 // },
 

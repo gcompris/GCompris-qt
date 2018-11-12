@@ -89,7 +89,7 @@ ActivityBase {
             rows: items.rows
             anchors {
                 left: background.left
-                right: background.rigth
+                right: background.right
                 top: background.top
                 margins: 10 * ApplicationInfo.ratio
             }

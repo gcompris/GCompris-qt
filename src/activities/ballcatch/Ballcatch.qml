@@ -60,7 +60,7 @@ ActivityBase {
             property alias leftHand: leftHand
             property alias deltaPressedTimer: deltaPressedTimer
             /* when the corresponding arrow key is pressed, the following boolean pass
-               to true and is reseted at the end of the level */
+               to true and is reset at the end of the level */
             property bool leftPressed
             property bool rightPressed
         }

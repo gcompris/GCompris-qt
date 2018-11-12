@@ -138,7 +138,7 @@ function initLevel() {
 
 function calculateFrequency() {
     var freq = [];
-    //regex pattern to detect whether the character is an english alphabet or some accented latin chacarcter
+    //regex pattern to detect whether the character is an english alphabet or some accented latin character
     var pattern = /[A-Za-z\u00C0-\u017F]/;
     for(var i = 0; i < words.length; i++) {
         var currentWord = words[i].translatedTxt;

@@ -82,7 +82,7 @@ function startMotion(x1, y1) {
     items.timer.start()
 }
 
-/* Calcualtes the angle between the two points */
+/* Calculates the angle between the two points */
 function getAngle(sx1, sy1, sx2, sy2)
 {
         var dy, slope, angle;

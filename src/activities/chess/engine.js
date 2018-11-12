@@ -330,7 +330,7 @@ function p4_prepare(state){
                  * the area, waiting for an opportunity.
                  *
                  * As prepare is only called at the beginning of each tree
-                 * search, the king could wander out of the targetted area
+                 * search, the king could wander out of the targeted area
                  * in deep searches. But that's OK. Heuristics are
                  * heuristics.
                  */
@@ -782,7 +782,7 @@ function p4_findmove(state, level, colour, ep){
 }
 
 /*p4_make_move changes the state and returns an object containing
- * everything necesary to undo the change.
+ * everything necessary to undo the change.
  *
  * p4_unmake_move uses the p4_make_move return value to restore the
  * previous state.
