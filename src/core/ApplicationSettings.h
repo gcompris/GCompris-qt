@@ -269,7 +269,7 @@ class ApplicationSettings : public QObject
 
 public:
 	/// @cond INTERNAL_DOCS
-    explicit ApplicationSettings(const QString &path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
+    explicit ApplicationSettings(const QString &configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
          + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QObject *parent = 0);
     virtual ~ApplicationSettings();
     // It is not recommended to create a singleton of Qml Singleton registered

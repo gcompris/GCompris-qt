@@ -82,7 +82,7 @@ static const QString WORDSET = QLatin1String("wordset");
 
 static const QString PROGRESS_KEY = QLatin1String("progress");
 
-ApplicationSettings *ApplicationSettings::m_instance = NULL;
+ApplicationSettings *ApplicationSettings::m_instance = nullptr;
 
 ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *parent): QObject(parent),
      m_baseFontSizeMin(-7), m_baseFontSizeMax(7),
@@ -237,7 +237,7 @@ ApplicationSettings::~ApplicationSettings()
 
     m_config.sync();
 
-    m_instance = NULL;
+    m_instance = nullptr;
 }
 
 void ApplicationSettings::notifyShowLockedActivitiesChanged()

@@ -80,7 +80,7 @@ DownloadManager::DownloadManager()
 DownloadManager::~DownloadManager()
 {
     shutdown();
-    _instance = 0;
+    _instance = nullptr;
 }
 
 void DownloadManager::shutdown()
@@ -449,7 +449,7 @@ bool DownloadManager::parseContents(DownloadJob *job)
 
 bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename) const
 {
-    Q_ASSERT(job->contents != (QMap<QString, QString>()));
+    Q_ASSERT(!job->contents.empty());
 
     if (!QFile::exists(filename))
         return false;

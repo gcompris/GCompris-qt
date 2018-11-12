@@ -30,7 +30,7 @@
 #include <QTextStream>
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
-	m_currentActivity(NULL)
+	m_currentActivity(nullptr)
 {
 }
 
@@ -46,7 +46,7 @@ ActivityInfo *ActivityInfoTree::getRootMenu() const
 
 QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
 {
-    return QQmlListProperty<ActivityInfo>(this, NULL, &menuTreeCount, &menuTreeAt);
+    return QQmlListProperty<ActivityInfo>(this, nullptr, &menuTreeCount, &menuTreeAt);
 }
 
 int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
@@ -61,10 +61,10 @@ int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
 ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index)
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
-    if(obj)
+    if(obj != nullptr)
         return obj->m_menuTree.at(index);
     else
-        return 0;
+        return nullptr;
 }
 
 ActivityInfo *ActivityInfoTree::menuTree(int index) const
@@ -236,7 +236,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 {
     Q_UNUSED(scriptEngine)
 
-    ActivityInfoTree *menuTree = new ActivityInfoTree(NULL);
+    ActivityInfoTree *menuTree = new ActivityInfoTree(nullptr);
     QQmlComponent componentRoot(engine,
                                 QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
     QObject *objectRoot = componentRoot.create();
@@ -257,7 +257,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
             QQmlComponent componentRoot(engine, QUrl(url));
             QObject *objectRoot = componentRoot.create();
-            if(objectRoot) {
+            if(objectRoot != nullptr) {
                 menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
             } else {
                 qDebug() << "ERROR: failed to load " << line << " " << componentRoot.errors();

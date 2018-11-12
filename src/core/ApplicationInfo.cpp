@@ -41,8 +41,8 @@
 #include <QFontDatabase>
 #include <QDir>
 
-QQuickWindow *ApplicationInfo::m_window = NULL;
-ApplicationInfo *ApplicationInfo::m_instance = NULL;
+QQuickWindow *ApplicationInfo::m_window = nullptr;
+ApplicationInfo *ApplicationInfo::m_instance = nullptr;
 
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
@@ -99,7 +99,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 
 ApplicationInfo::~ApplicationInfo()
 {
-    m_instance = NULL;
+    m_instance = nullptr;
 }
 
 bool ApplicationInfo::sensorIsSupported(const QString& sensorType)
@@ -196,10 +196,10 @@ void ApplicationInfo::setWindow(QQuickWindow *window)
     m_window = window;
 }
 
-void ApplicationInfo::screenshot(QString const &path)
+void ApplicationInfo::screenshot(const QString &file)
 {
     QImage img = m_window->grabWindow();
-    img.save(path);
+    img.save(file);
 }
 
 void ApplicationInfo::notifyFullscreenChanged()

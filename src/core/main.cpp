@@ -265,7 +265,7 @@ int main(int argc, char *argv[])
 #endif
 
     if(parser.isSet(exportActivitiesAsSQL)) {
-        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));
+        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
         menuTree->exportAsSQL();
         exit(0);
     }
