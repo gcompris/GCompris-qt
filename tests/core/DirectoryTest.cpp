@@ -54,14 +54,14 @@ void DirectoryTest::GetFilesTest()
     // Creating the empty file of name file1.
     file.write("", "./dummy_directory/file1");
     // Creating the empty directory of name dir1.
-    file.mkpath("./dummy_directory/dir1");
+    File::mkpath("./dummy_directory/dir1");
     filelist = directory.getFiles("./dummy_directory", {"*"});
     QCOMPARE(filelist.count(), 4);
 
     file.write("", "./dummy_directory/file2");
     file.write("", "./dummy_directory/file3");
-    file.mkpath("./dummy_directory/dir2");
-    file.mkpath("./dummy_directory/dir3");
+    File::mkpath("./dummy_directory/dir2");
+    File::mkpath("./dummy_directory/dir3");
     filelist = directory.getFiles("./dummy_directory");
     QCOMPARE(filelist.count(), 8);
 

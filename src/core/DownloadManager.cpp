@@ -42,13 +42,13 @@ void copyPath(const QString &src, const QString &dst)
     if (!dir.exists())
         return;
 
-    Q_FOREACH(const QString &d, dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
+    for(const QString &d : dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
         QString dst_path = dst + QDir::separator() + d;
         dir.mkpath(dst_path);
-        copyPath(src+ QDir::separator() + d, dst_path);
+        copyPath(src + QDir::separator() + d, dst_path);
     }
 
-    Q_FOREACH(const QString &f, dir.entryList(QDir::Files)) {
+    for(const QString &f : dir.entryList(QDir::Files)) {
         qDebug() << "Copying " << src + QDir::separator() + f << " to " << dst + QDir::separator() + f;
         QFile::copy(src + QDir::separator() + f, dst + QDir::separator() + f);
     }
@@ -64,8 +64,7 @@ DownloadManager::DownloadManager()
         QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data" <<
         QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data2";
 
-    for(auto it = previousDataLocations.begin(); it != previousDataLocations.end() ; ++ it) {
-        QDir &prevDir = *it;
+    for(QDir &prevDir: previousDataLocations) {
         if(prevDir.exists()) {
             if(prevDir.dirName() == "data2") {
                 qDebug() << "Data changed place, move from previous folder to the new one";
@@ -95,7 +94,7 @@ void DownloadManager::shutdown()
 // Using the singleton after the QmlEngine has been destroyed is forbidden!
 DownloadManager* DownloadManager::getInstance()
 {
-    if (!_instance)
+    if (_instance == nullptr)
         _instance = new DownloadManager;
     return _instance;
 }
@@ -121,7 +120,7 @@ void DownloadManager::abortDownloads()
         QMutableListIterator<DownloadJob*> iter(activeJobs);
         while (iter.hasNext()) {
             DownloadJob *job = iter.next();
-            if (job->reply) {
+            if (job->reply != nullptr) {
                 disconnect(job->reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
                 disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
                         this, SLOT(handleError(QNetworkReply::NetworkError)));
@@ -193,7 +192,7 @@ bool DownloadManager::downloadResource(const QString& path)
     {
         QMutexLocker locker(&jobsMutex);
         QUrl url(serverUrl.toString() + '/' + path);
-        if (getJobByUrl_locked(url)) {
+        if (getJobByUrl_locked(url) != nullptr) {
             qDebug() << "Download of" << url << "is already running, skipping second attempt.";
             return false;
         }
@@ -333,18 +332,18 @@ bool DownloadManager::download(DownloadJob* job)
 
 inline DownloadManager::DownloadJob* DownloadManager::getJobByUrl_locked(const QUrl& url) const
 {
-    for (int i = 0; i < activeJobs.size(); i++)
-        if (activeJobs[i]->url == url || activeJobs[i]->queue.indexOf(url) != -1)
-            return activeJobs[i];
+    for (auto activeJob : activeJobs)
+        if (activeJob->url == url || activeJob->queue.indexOf(url) != -1)
+            return activeJob;
     return nullptr;
 }
 
 inline DownloadManager::DownloadJob* DownloadManager::getJobByReply(QNetworkReply *r)
 {
     QMutexLocker locker(&jobsMutex);
-    for (int i = 0; i < activeJobs.size(); i++)
-        if (activeJobs[i]->reply == r)
-            return activeJobs[i];
+    for (auto activeJob : activeJobs)
+        if (activeJob->reply == r)
+            return activeJob;
     return nullptr;  // should never happen!
 }
 

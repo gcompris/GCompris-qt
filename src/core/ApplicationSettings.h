@@ -1,4 +1,4 @@
-/* GCompris - ApplicationSettingsDefault.cpp
+/* GCompris - ApplicationSettings.h
  *
  * Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
  *

@@ -40,8 +40,8 @@ private slots:
     void NameTest();
 };
 
-static const QString tempFilename = QStringLiteral("./dummy_test_files.txt");
-static const QString fakeFilename = QStringLiteral("-_/fezagvvx&V/d;-ùlc");
+static const char *tempFilename = "./dummy_test_files.txt";
+static const char *fakeFilename = "-_/fezagvvx&V/d;-ùlc";
 
 void CoreFileTest::FileExistsTest()
 {

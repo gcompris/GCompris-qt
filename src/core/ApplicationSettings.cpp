@@ -40,47 +40,47 @@
 #define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
 #define GC_DEFAULT_FONT_LETTER_SPACING 0
 
-static const QString GENERAL_GROUP_KEY = QLatin1String("General");
-static const QString ADMIN_GROUP_KEY = QLatin1String("Admin");
-static const QString INTERNAL_GROUP_KEY = QLatin1String("Internal");
-static const QString FAVORITE_GROUP_KEY = QLatin1String("Favorite");
+static const char *GENERAL_GROUP_KEY = "General";
+static const char *ADMIN_GROUP_KEY = "Admin";
+static const char *INTERNAL_GROUP_KEY = "Internal";
+static const char *FAVORITE_GROUP_KEY = "Favorite";
 
-static const QString FULLSCREEN_KEY = QLatin1String("fullscreen");
-static const QString PREVIOUS_HEIGHT_KEY = QLatin1String("previousHeight");
-static const QString PREVIOUS_WIDTH_KEY = QLatin1String("previousWidth");
-static const QString SHOW_LOCKED_ACTIVITIES_KEY = QLatin1String("showLockedActivities");
-static const QString ENABLE_AUDIO_VOICES_KEY = QLatin1String("enableAudioVoices");
-static const QString ENABLE_AUDIO_EFFECTS_KEY = QLatin1String("enableAudioEffects");
-static const QString VIRTUALKEYBOARD_KEY = QLatin1String("virtualKeyboard");
-static const QString LOCALE_KEY = QLatin1String("locale");
-static const QString FONT_KEY = QLatin1String("font");
-static const QString IS_CURRENT_FONT_EMBEDDED = QLatin1String("isCurrentFontEmbedded");
-static const QString ENABLE_AUTOMATIC_DOWNLOADS = QLatin1String("enableAutomaticDownloads");
+static const char *FULLSCREEN_KEY = "fullscreen";
+static const char *PREVIOUS_HEIGHT_KEY = "previousHeight";
+static const char *PREVIOUS_WIDTH_KEY = "previousWidth";
+static const char *SHOW_LOCKED_ACTIVITIES_KEY = "showLockedActivities";
+static const char *ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
+static const char *ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
+static const char *VIRTUALKEYBOARD_KEY = "virtualKeyboard";
+static const char *LOCALE_KEY = "locale";
+static const char *FONT_KEY = "font";
+static const char *IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
+static const char *ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
-static const QString DOWNLOAD_SERVER_URL_KEY = QLatin1String("downloadServerUrl");
-static const QString CACHE_PATH_KEY = QLatin1String("cachePath");
-static const QString USERDATA_PATH_KEY = QLatin1String("userDataPath");
-static const QString RENDERER_KEY = QLatin1String("renderer");
+static const char *DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
+static const char *CACHE_PATH_KEY = "cachePath";
+static const char *USERDATA_PATH_KEY = "userDataPath";
+static const char *RENDERER_KEY = "renderer";
 
-static const QString EXE_COUNT_KEY = QLatin1String("exeCount");
-static const QString LAST_GC_VERSION_RAN = QLatin1String("lastGCVersionRan");
+static const char *EXE_COUNT_KEY = "exeCount";
+static const char *LAST_GC_VERSION_RAN = "lastGCVersionRan";
 
-static const QString FILTER_LEVEL_MIN = QLatin1String("filterLevelMin");
-static const QString FILTER_LEVEL_MAX = QLatin1String("filterLevelMax");
+static const char *FILTER_LEVEL_MIN = "filterLevelMin";
+static const char *FILTER_LEVEL_MAX = "filterLevelMax";
 
-static const QString BASE_FONT_SIZE_KEY = QLatin1String("baseFontSize");
-static const QString FONT_CAPITALIZATION = QLatin1String("fontCapitalization");
-static const QString FONT_LETTER_SPACING = QLatin1String("fontLetterSpacing");
+static const char *BASE_FONT_SIZE_KEY = "baseFontSize";
+static const char *FONT_CAPITALIZATION = "fontCapitalization";
+static const char *FONT_LETTER_SPACING = "fontLetterSpacing";
 
-static const QString DEFAULT_CURSOR = QLatin1String("defaultCursor");
-static const QString NO_CURSOR = QLatin1String("noCursor");
-static const QString DEMO_KEY = QLatin1String("demo");
-static const QString CODE_KEY = QLatin1String("key");
-static const QString KIOSK_KEY = QLatin1String("kiosk");
-static const QString SECTION_VISIBLE = QLatin1String("sectionVisible");
-static const QString WORDSET = QLatin1String("wordset");
+static const char *DEFAULT_CURSOR = "defaultCursor";
+static const char *NO_CURSOR = "noCursor";
+static const char *DEMO_KEY = "demo";
+static const char *CODE_KEY = "key";
+static const char *KIOSK_KEY = "kiosk";
+static const char *SECTION_VISIBLE = "sectionVisible";
+static const char *WORDSET = "wordset";
 
-static const QString PROGRESS_KEY = QLatin1String("progress");
+static const char *PROGRESS_KEY = "progress";
 
 ApplicationSettings *ApplicationSettings::m_instance = nullptr;
 

@@ -52,7 +52,7 @@ QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
 int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
-    if(obj)
+    if(obj != nullptr)
         return obj->m_menuTree.count();
     else
         return 0;
@@ -227,7 +227,7 @@ void ActivityInfoTree::exportAsSQL()
                 "\"" << activity->goal().toHtmlEscaped() << "\", " <<
                 "\"" << activity->manual().toHtmlEscaped() << "\", " <<
                 "\"" << activity->credit() << "\", " <<
-                activity->demo() <<
+                static_cast<int>(activity->demo()) <<
                 ");" << endl;
     }
 }
