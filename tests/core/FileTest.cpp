@@ -113,13 +113,13 @@ void CoreFileTest::NameTest()
     QVERIFY(spyName.count() == 0);
     file.setName(tempFilename);
     QVERIFY(spyName.count() == 1);
-    QCOMPARE(file.name(), tempFilename);
+    QCOMPARE(file.name(), QString(tempFilename));
     // test sanitizeUrl
     const QString sameNameUnsanitized = QStringLiteral("file://")+tempFilename;
     file.setName(sameNameUnsanitized);
     // no update triggered as same name after sanitization
     QVERIFY(spyName.count() == 1);
-    QCOMPARE(file.name(), tempFilename);
+    QCOMPARE(file.name(), QString(tempFilename));
 
     const QString filenameUnsanitized = QStringLiteral("qrc:/")+tempFilename;
     file.setName(filenameUnsanitized);
