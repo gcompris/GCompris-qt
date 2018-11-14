@@ -362,7 +362,7 @@ protected slots:
      *             Any occurrence of '$CA' placeholder will be replaced by
      *             the current compressed audio format ('ogg' or 'aac).
      *             Example: 'voices-$CA/$LOCALE/misc/click_on_letter.$CA'
-     * @param locale the locale for which to get this audio file
+     * @param localeName the locale for which to get this audio file
      * @returns An absolute path to the corresponding resource file.
      */
     Q_INVOKABLE QString getAudioFilePathForLocale(const QString &file,
