@@ -59,6 +59,15 @@ Flipable {
     property color backColor: "white"
     property color pointColor: "black"
 
+    // Define the mode/representation of domino
+    // "dot" is for representation in the form of dots
+    // "number" is for representation in the form of integer numbers
+    // "roman" is for representation in the form of roman numbers
+    property string mode: "dot"
+
+    // Source of the images should be in the same format as below with the number associated and svg format
+    property string source: "qrc:/gcompris/src/activities/memory-enumerate/resource/math_"
+
     // Set to true when to display on both sides.
     property bool flipEnabled: false
 
@@ -78,6 +87,7 @@ Flipable {
 
         DominoNumber {
             id: number1
+            mode: flipable.mode
             width: parent.width / 2
             height: parent.height
             color: flipable.pointColor
@@ -85,6 +95,7 @@ Flipable {
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
+            source: flipable.source
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             audioEffects: flipable.audioEffects
@@ -99,8 +110,10 @@ Flipable {
             color: flipable.borderColor
         }
 
+
         DominoNumber {
             id: number2
+            mode: flipable.mode
             x: parent.width / 2
             width: parent.width / 2
             height: parent.height
@@ -109,6 +122,7 @@ Flipable {
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
+            source: flipable.source
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             audioEffects: flipable.audioEffects
