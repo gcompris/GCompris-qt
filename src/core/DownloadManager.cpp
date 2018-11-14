@@ -173,17 +173,15 @@ bool DownloadManager::updateResource(const QString& path)
 {
     if (checkDownloadRestriction())
         return downloadResource(path);  // check for updates and register
-    else {
-        QString absPath = getAbsoluteResourcePath(path);
-        // automatic download prohibited -> register if available
-        if (!absPath.isEmpty())
-            return registerResourceAbsolute(absPath);
-        else {
-            qDebug() << "No such local resource and download prohibited:"
-                << path;
-            return false;
-        }
-    }
+
+    QString absPath = getAbsoluteResourcePath(path);
+    // automatic download prohibited -> register if available
+    if (!absPath.isEmpty())
+        return registerResourceAbsolute(absPath);
+
+    qDebug() << "No such local resource and download prohibited:"
+             << path;
+    return false;
 }
 
 bool DownloadManager::downloadResource(const QString& path)
@@ -498,22 +496,22 @@ bool DownloadManager::registerResourceAbsolute(const QString& filename)
     if (!QResource::registerResource(filename)) {
         qDebug() << "Error registering resource file" << filename;
         return false;
-    } else {
-        qDebug() << "Successfully registered resource"
-                << filename;
-        registeredResources.append(filename);
-
-        locker.unlock(); /* note: we unlock before emitting to prevent
-                          * potential deadlocks */
-
-        emit resourceRegistered(getRelativeResourcePath(filename));
-
-        QString v = getVoicesResourceForLocale(
-                    ApplicationSettings::getInstance()->locale());
-        if (v == getRelativeResourcePath(filename))
-            emit voicesRegistered();
-        return true;
     }
+
+    qDebug() << "Successfully registered resource"
+             << filename;
+    registeredResources.append(filename);
+
+    locker.unlock(); /* note: we unlock before emitting to prevent
+                      * potential deadlocks */
+
+    emit resourceRegistered(getRelativeResourcePath(filename));
+
+    QString v = getVoicesResourceForLocale(
+                     ApplicationSettings::getInstance()->locale());
+    if (v == getRelativeResourcePath(filename))
+        emit voicesRegistered();
+    return true;
 }
 
 /*
@@ -548,7 +546,7 @@ void DownloadManager::downloadFinished()
         job->file.flush();  // note: important, or checksums might be wrong!
         job->file.close();
     }
-    if (reply->error() && job->file.exists())
+    if (reply->error() != 0 && job->file.exists())
         job->file.remove();
     else {
         // active temp file
@@ -562,7 +560,7 @@ void DownloadManager::downloadFinished()
     QString targetFilename = getFilenameForUrl(job->url);
     if (job->url.fileName() == contentsFilename) {
         // Contents
-        if (reply->error()) {
+        if (reply->error() != 0) {
             qWarning() << "Error downloading Contents from" << job->url
                     << ":" << reply->error() << ":" << reply->errorString();
             // note: errorHandler() emit's error!
@@ -578,7 +576,7 @@ void DownloadManager::downloadFinished()
         }
     } else {
         // RCC file
-        if (reply->error()) {
+        if (reply->error() != 0) {
             qWarning() << "Error downloading RCC file from " << job->url
                 << ":" << reply->error() << ":" << reply->errorString();
             // note: errorHandler() emit's error!

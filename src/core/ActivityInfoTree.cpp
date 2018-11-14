@@ -30,7 +30,7 @@
 #include <QTextStream>
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
-	m_currentActivity(nullptr)
+       m_rootMenu(nullptr), m_currentActivity(nullptr)
 {
 }
 
@@ -54,8 +54,8 @@ int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
     if(obj != nullptr)
         return obj->m_menuTree.count();
-    else
-        return 0;
+
+    return 0;
 }
 
 ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index)
@@ -63,8 +63,8 @@ ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *prope
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
     if(obj != nullptr)
         return obj->m_menuTree.at(index);
-    else
-        return nullptr;
+
+    return nullptr;
 }
 
 ActivityInfo *ActivityInfoTree::menuTree(int index) const

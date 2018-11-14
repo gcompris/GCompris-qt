@@ -29,6 +29,7 @@
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
+    m_difficulty(0),
     m_demo(true),
     m_favorite(false),
     m_enabled(true),
