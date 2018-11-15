@@ -23,6 +23,3 @@ Modulation::Modulation() {
     propFreq = false;
     AM_freq = FM_freq = AM_ampl = FM_ampl = 0;
 }
-
-Modulation::~Modulation() {
-}

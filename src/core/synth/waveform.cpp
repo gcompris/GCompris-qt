@@ -46,7 +46,7 @@ Waveform::Waveform(unsigned int mode, unsigned int size) {
 
 Waveform::~Waveform() {
     delete [] waveTable;
-    waveTable = 0;
+    waveTable = nullptr;
 }
 
 qreal
@@ -71,9 +71,8 @@ Waveform::waveSqu(qreal t) {
     qreal tmod = (qreal)fmod((double)t, 2*M_PI);
     if (tmod < M_PI) {
         return 1;
-    } else {
-        return -1;
     }
+    return -1;
 }
 
 
@@ -108,20 +107,20 @@ Waveform::eval(qreal t) {
 
     if (ind_min == ind_max) {
         return waveTable[ind_min];
-
-    } else if (ind_max == tableSize) {
+    }
+    if (ind_max == tableSize) {
         value_prev = waveTable[ind_min];
         value_next = waveTable[0];
         return indmod * value_next + (1-indmod) * value_prev;
-    } else if (ind_min < ind_max) {
+    }
+    if (ind_min < ind_max) {
         Q_ASSERT(ind_max < tableSize);
         value_prev = waveTable[ind_min];
         value_next = waveTable[ind_max];
         return indmod * value_next + (1-indmod) * value_prev;
-    } else {
-        // This shouldn't be reached;
-        qCritical("Wave Table Interpolation Failed");
-        QCoreApplication::exit(-1);
     }
+    // This shouldn't be reached;
+    qCritical("Wave Table Interpolation Failed");
+    QCoreApplication::exit(-1);
     return 0;
 }

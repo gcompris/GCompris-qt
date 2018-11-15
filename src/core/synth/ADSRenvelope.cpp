@@ -73,7 +73,3 @@ ADSREnvelope::eval(qreal t, unsigned char state) {
     //qWarning() << "ADSREnvelope::eval - invalid state";
     return 0;
 }
-
-ADSREnvelope::~ADSREnvelope() {
-
-}

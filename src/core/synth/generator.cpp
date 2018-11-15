@@ -35,6 +35,8 @@ Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(p
 
     mod_waveform = new Waveform(Waveform::MODE_SIN);
 
+    convImpulse_size = 0;
+
     convBuffer_size = 4096;
     convBuffer      = new qreal[convBuffer_size];
 
@@ -44,8 +46,8 @@ Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(p
         convBuffer[indconv] = 0;
     }
 
-    filter      = 0;
-    convImpulse = 0;
+    filter      = nullptr;
+    convImpulse = nullptr;
 
     synthData    = new qreal[maxUsedBytes];
     filteredData = new qreal[maxUsedBytes];
@@ -307,8 +309,8 @@ Generator::setModulation(Modulation &modulation) {
 
 void
 Generator::setFilter(FilterParameters &filtParam) {
-    if (filter)      delete filter;
-    if (convImpulse) delete [] convImpulse;
+    delete filter;
+    delete [] convImpulse;
 
     filter = new Filter(filtParam.type, filtParam.window_type, filtParam.size,
                         m_samplingRate, filtParam.freq1, filtParam.freq2);

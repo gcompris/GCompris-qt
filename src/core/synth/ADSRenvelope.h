@@ -29,7 +29,7 @@ public:
                  qreal _initialAmpl,
                  qreal _peakAmpl,
                  qreal _sustainAmpl);
-    ~ADSREnvelope();
+    ~ADSREnvelope() = default;
     enum {STATE_OFF, STATE_ATTACK, STATE_DECAY, STATE_RELEASE};
 
     qreal initialAmpl, peakAmpl, sustainAmpl;

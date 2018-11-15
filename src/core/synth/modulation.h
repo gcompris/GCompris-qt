@@ -24,7 +24,7 @@
 class Modulation {
 public:
     Modulation();
-    ~Modulation();
+    ~Modulation() = default;
 
     qreal FM_freq, FM_ampl;
     qreal AM_freq, AM_ampl, AM_time;

@@ -33,8 +33,8 @@ void
 LinearSynthesis::setTimbre(QVector<int> &amplitudes, QVector<int> &phases) {
     Q_ASSERT(amplitudes.size() == phases.size());
 
-    if(timbreAmplitudes) delete[] timbreAmplitudes;
-    if(timbrePhases) delete[] timbrePhases;
+    delete[] timbreAmplitudes;
+    delete[] timbrePhases;
 
     numHarmonics = amplitudes.size();
     timbreAmplitudes = new int[numHarmonics];

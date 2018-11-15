@@ -44,7 +44,7 @@ void DirectoryTest::GetFilesTest()
     dir.removeRecursively();
 
     File file;
-    QVERIFY(file.mkpath("./dummy_directory"));
+    QVERIFY(File::mkpath("./dummy_directory"));
 
     Directory directory;
     QStringList filelist = directory.getFiles("./dummy_directory");
@@ -66,6 +66,11 @@ void DirectoryTest::GetFilesTest()
     QCOMPARE(filelist.count(), 6);
 
     // Removing the directory.
+    QVERIFY(File::rmpath("./dummy_directory/file3"));
+    QVERIFY(File::rmpath("./dummy_directory/file2"));
+    QVERIFY(!File::rmpath("./dummy_directory/dir3"));
+    filelist = directory.getFiles("./dummy_directory");
+    QCOMPARE(filelist.count(), 4);
     dir.removeRecursively();
 }
 

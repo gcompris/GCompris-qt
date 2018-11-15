@@ -25,7 +25,7 @@
 
 #include <QDebug>
 
-GSynth *GSynth::m_instance = NULL;
+GSynth *GSynth::m_instance = nullptr;
 
 GSynth::GSynth(QObject *parent) : QObject(parent)
 {

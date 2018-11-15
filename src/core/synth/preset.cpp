@@ -41,6 +41,3 @@ Preset::Preset() : timbreAmplitudes(8, 0), timbrePhases(8, 0) {
     timbreAmplitudes[7] = 50;
     timbrePhases[0] = 0;
 }
-
-Preset::~Preset() {
-}

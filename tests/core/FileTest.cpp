@@ -103,6 +103,11 @@ void CoreFileTest::ReadWriteTest()
     // normal use case, file exists
     QVERIFY(file.write(fileContent, tempFilename));
     QCOMPARE(file.read(), fileContent);
+
+    // append to the file
+    const QString appendedText = QStringLiteral("appended text.");
+    QVERIFY(file.append(appendedText, tempFilename));
+    QCOMPARE(file.read(), fileContent+appendedText);
 }
 
 void CoreFileTest::NameTest()

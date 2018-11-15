@@ -35,6 +35,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+    isMusicalActivity: true
 
     property bool horizontalLayout: background.width > background.height
 

@@ -70,7 +70,6 @@ private:
     QAudioFormat      m_format;
     QByteArray        m_buffer;
     QAudioOutput     *m_audioOutput;
-    QIODevice        *m_output;
     QMap<int, QTimer *> m_timers;
     
     Preset PresetCustom;

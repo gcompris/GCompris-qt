@@ -33,6 +33,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+    isMusicalActivity: true
 
     property bool horizontalLayout: width > height
 

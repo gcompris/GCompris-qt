@@ -28,7 +28,7 @@
 class Preset {
 public:
     Preset ();
-    ~Preset();
+    ~Preset() = default;
 
     QVector<int> timbreAmplitudes;
     QVector<int> timbrePhases;
