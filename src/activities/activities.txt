@@ -123,6 +123,7 @@ penalty
 piano_composition
 photo_hunter
 planegame
+play_piano
 railroad
 readingh
 readingv
