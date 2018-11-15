@@ -48,22 +48,22 @@ void DirectoryTest::GetFilesTest()
 
     Directory directory;
     QStringList filelist = directory.getFiles("./dummy_directory");
-    // It counts './' & '../' in directory.
-    QCOMPARE(filelist.count(), 2);
+    // We do not count './' & '../' in directory.
+    QCOMPARE(filelist.count(), 0);
 
     // Creating the empty file of name file1.
     file.write("", "./dummy_directory/file1");
     // Creating the empty directory of name dir1.
     File::mkpath("./dummy_directory/dir1");
     filelist = directory.getFiles("./dummy_directory", {"*"});
-    QCOMPARE(filelist.count(), 4);
+    QCOMPARE(filelist.count(), 2);
 
     file.write("", "./dummy_directory/file2");
     file.write("", "./dummy_directory/file3");
     File::mkpath("./dummy_directory/dir2");
     File::mkpath("./dummy_directory/dir3");
     filelist = directory.getFiles("./dummy_directory");
-    QCOMPARE(filelist.count(), 8);
+    QCOMPARE(filelist.count(), 6);
 
     // Removing the directory.
     dir.removeRecursively();

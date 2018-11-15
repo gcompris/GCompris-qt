@@ -114,6 +114,30 @@ bool File::write(const QString& data, const QString& name)
     return true;
 }
 
+bool File::append(const QString& data, const QString& name)
+{
+    if (!name.isEmpty())
+        setName(name);
+
+    if (m_name.isEmpty()) {
+        emit error("source is empty");
+        return false;
+    }
+
+    QFile file(m_name);
+    if (!file.open(QFile::WriteOnly | QFile::Append)) {
+        emit error("could not open file " + m_name);
+        return false;
+    }
+
+    QTextStream out(&file);
+    out << data;
+
+    file.close();
+
+    return true;
+}
+
 bool File::exists(const QString& path)
 {
     return QFile::exists(sanitizeUrl(path));
@@ -123,4 +147,9 @@ bool File::mkpath(const QString& path)
 {
     QDir dir;
     return dir.mkpath(dir.filePath(sanitizeUrl(path)));
+}
+
+bool File::rmpath(const QString& path)
+{
+    return QFile::remove(sanitizeUrl(path));
 }
