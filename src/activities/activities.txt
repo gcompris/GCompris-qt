@@ -124,6 +124,7 @@ piano_composition
 photo_hunter
 planegame
 play_piano
+play_rhythm
 railroad
 readingh
 readingv

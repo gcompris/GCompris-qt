@@ -1,0 +1,85 @@
+{
+	"levels": [
+		{
+			"pulseMarkerVisible": true,
+			"metronomeVisible": false,
+			"melodies": [
+    			"Treble C4Quarter C4Eighth C4Half",
+    			"Treble C4Quarter C4Eighth C4Eighth",
+    			"Treble C4Quarter C4Quarter C4Half"
+			]
+		},
+		{
+			"pulseMarkerVisible": false,
+			"metronomeVisible": true,
+			"melodies": [
+    			"Treble C4Quarter C4Half C4Eighth",
+    			"Treble C4Quarter C4Quarter C4Quarter",
+    			"Treble C4Eighth C4Quarter C4Quarter"
+			]
+		},
+		{
+			"pulseMarkerVisible": true,
+			"metronomeVisible": false,
+			"melodies": [
+    			"Treble C4Quarter C4Eighth C4Half",
+    			"Treble C4Quarter C4Half C4Quarter",
+    			"Treble C4Quarter C4Quarter C4Eighth"
+			]
+		},
+		{
+			"pulseMarkerVisible": false,
+			"metronomeVisible": true,
+			"melodies": [
+    			"Treble C4Eighth C4Quarter C4Eighth",
+    			"Treble C4Quarter C4Eighth C4Half",
+    			"Treble C4Eighth C4Quarter C4Half"
+			]
+		},
+		{
+			"pulseMarkerVisible": true,
+			"metronomeVisible": false,
+			"melodies": [
+    			"Treble C4Eighth C4Eighth C4Quarter C4Eighth",
+    			"Treble C4Quarter C4Quarter C4Half C4Eighth",
+    			"Treble C4Half C4Eighth C4Eighth C4Quarter"
+			]
+		},
+		{
+			"pulseMarkerVisible": false,
+			"metronomeVisible": true,
+			"melodies": [
+    			"Treble C4Quarter C4Quarter C4Quarter C4Quarter",
+    			"Treble C4Eighth C4Quarter C4Half C4Eighth",
+    			"Treble C4Eighth C4Half C4Eighth C4Eighth"
+			]
+		},
+		{
+			"pulseMarkerVisible": true,
+			"metronomeVisible": false,
+			"melodies": [
+    			"Treble C4Eighth C4Quarter C4Quarter C4Quarter",
+    			"Treble C4Eighth C4Eighth C4Eighth C4Eighth",
+    			"Treble C4Quarter C4Half C4Quarter C4Eighth"
+			]
+		},
+		{
+			"pulseMarkerVisible": false,
+			"metronomeVisible": true,
+			"melodies": [
+    			"Treble C4Eighth C4Quarter C4Eighth C4Quarter",
+    			"Treble C4Quarter C4Half C4Eighth C4Eighth",
+    			"Treble C4Quarter C4Eighth C4Quarter C4Eighth"
+			]
+		},
+		{
+			"pulseMarkerVisible": true,
+			"metronomeVisible": false,
+			"melodies": [
+    			"Treble C4Quarter C4Quarter C4Half C4Eighth",
+    			"Treble C4Eighth C4Eighth C4Eighth C4Quarter",
+    			"Treble C4Quarter C4Eighth C4Quarter C4Eighth"
+			]
+		}
+    ]
+}
