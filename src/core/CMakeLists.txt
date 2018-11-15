@@ -29,6 +29,22 @@ set(gcompris_SRCS
    GComprisPlugin.h
    main.cpp
    config.h.in
+   synth/ADSRenvelope.cpp
+   synth/ADSRenvelope.h
+   synth/filter.cpp
+   synth/filter.h
+   synth/GSynth.cpp
+   synth/GSynth.h
+   synth/linearSynthesis.cpp
+   synth/linearSynthesis.h
+   synth/modulation.cpp
+   synth/modulation.h
+   synth/generator.cpp
+   synth/generator.h
+   synth/preset.h
+   synth/preset.cpp
+   synth/waveform.cpp
+   synth/waveform.h
 )
 
 if(ANDROID)

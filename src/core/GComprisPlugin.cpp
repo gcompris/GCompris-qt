@@ -25,6 +25,7 @@
 #include "File.h"
 #include "Directory.h"
 #include "DownloadManager.h"
+#include "synth/GSynth.h"
 #include <QQmlComponent>
 
 const int versionMajor = 1;
@@ -53,5 +54,8 @@ void GComprisPlugin::registerTypes(const char *uri)
                                                   "ApplicationSettings", ApplicationSettings::applicationSettingsProvider);
     qmlRegisterSingletonType<DownloadManager>(uri, versionMajor, versionMinor,
                                               "DownloadManager", DownloadManager::downloadManagerProvider);
+
+    qmlRegisterSingletonType<GSynth>(uri, versionMajor, versionMinor,
+                                     "GSynth", GSynth::synthProvider);
 
 }
