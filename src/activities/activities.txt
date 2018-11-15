@@ -120,6 +120,7 @@ number_sequence
 numbers-odd-even
 paintings
 penalty
+piano_composition
 photo_hunter
 planegame
 railroad
