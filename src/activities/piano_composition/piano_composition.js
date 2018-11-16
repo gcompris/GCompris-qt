@@ -33,10 +33,10 @@ var userDir = "file://" + GCompris.ApplicationSettings.userDataPath + "/" + "pia
 var userFile = userDir + "/melodies.json"
 var undoStack = []
 var instructions = [{
-        "text": qsTr("This is the treble cleff staff for high pitched notes.")
+        "text": qsTr("This is the treble clef staff for high pitched notes.")
     },
     {
-        "text": qsTr("This is the bass cleff staff for low pitched notes.")
+        "text": qsTr("This is the bass clef staff for low pitched notes.")
     },
     {
         "text": qsTr("The black keys are sharp and flat keys, have a # sign.")
