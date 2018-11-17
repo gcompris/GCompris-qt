@@ -89,6 +89,11 @@ void CoreFileTest::ReadWriteErrorsTest()
     QVERIFY(spyError.count() == 2);
     error = qvariant_cast<QString>(spyError.at(1).at(0));
     QCOMPARE(error, writeError);
+    // we can't append
+    QVERIFY(!file.append(fileContent, filename));
+    QVERIFY(spyError.count() == 3);
+    error = qvariant_cast<QString>(spyError.at(2).at(0));
+    QCOMPARE(error, writeError);
 }
 
 void CoreFileTest::ReadWriteTest()

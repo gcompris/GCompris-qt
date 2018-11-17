@@ -387,7 +387,13 @@ Item {
         selectedIndex = -1
         for(var i = 0; i < notes.length; i++) {
             var note = notes[i]
-            addMusicElement(note["elementType_"], note["noteName_"], note["noteType_"], false, false, note["clefType_"], note["soundPitch_"], true)
+            // On load melody from file, the first "note" is the BPM value
+            if(note.bpm) {
+                bpmValue = note.bpm;
+            }
+            else {
+                addMusicElement(note["elementType_"], note["noteName_"], note["noteType_"], false, false, note["clefType_"], note["soundPitch_"], true)
+            }
         }
 
         // Remove the remaining unused staffs.

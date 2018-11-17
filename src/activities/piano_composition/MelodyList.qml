@@ -28,7 +28,6 @@ import QtQuick.Controls 1.5
 
 import "../../core"
 import "piano_composition.js" as Activity
-import "melodies.js" as Dataset
 
 Rectangle {
     id: dialogBackground
@@ -122,6 +121,7 @@ Rectangle {
                                         dialogBackground.selectedMelodyIndex = index
                                         items.multipleStaff.stopAudios()
                                         items.multipleStaff.nbStaves = 2
+                                        items.multipleStaff.bpmValue = defaultBPM ? defaultBPM : 60
                                         items.multipleStaff.loadFromData(melody)
                                         lyricsArea.setLyrics(title, _origin, lyrics)
                                     }
