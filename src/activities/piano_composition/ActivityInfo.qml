@@ -26,7 +26,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Piano Composition")
   description: qsTr("An activity to learn how the piano keyboard works, how notes are written on a musical staff and explore music composition by loading and saving your work.")
-  goal: qsTr("Develop an understanding of music composition, and increase interest in making music with a piano keyboard. This activity covers many fundamental aspects of music, but there is much more to explore about music composition. If you enjoy this activity but want a more advanced tool, try downloading MuseScore (http://musescore.org/en/download), an open source music notation tool.")
+  goal: qsTr("Develop an understanding of music composition, and increase interest in making music with a piano keyboard. This activity covers many fundamental aspects of music, but there is much more to explore about music composition. If you enjoy this activity but want a more advanced tool, try downloading Minuet (https://minuet.kde.org/), an open source software for music education or MuseScore (http://musescore.org/en/download), an open source music notation tool.")
   prerequisite: qsTr("Familiarity with note naming conventions, note-names activity useful to learn this notation.")
   manual: qsTr("This activity has several levels, each level adds a new functionality to the previous level. 
   Level 1: Basic piano keyboard (white keys only) and students can experiment with clicking the colored rectangle keys to write music.

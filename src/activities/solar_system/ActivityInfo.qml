@@ -32,12 +32,12 @@ ActivityInfo {
   description: qsTr("Answer the questions presented and get a 100% correctness among the options.")
   //intro: "Answer the questions presented and get a 100% correctness among the options."
   //: Help goal
-  goal: ""
+  goal: qsTr("Learn information about the solar system. If you want to learn more about astronomy, try downloading KStars (https://edu.kde.org/kstars/) or Stellarium (http://stellarium.org/) which are open source astronomy softwares.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
   manual: qsTr("Click on a planet or the Sun to reveal questions. Each question contains 4 options. One of those is 100% correct. Try to answer the questions until you get a 100% closeness in the closeness meter.")
   credit: ""
-  section: "fun"
+  section: "experiment"
   createdInVersion: 9500
 }
