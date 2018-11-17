@@ -343,10 +343,10 @@ ActivityBase {
                 // their required position, due to unavailability of the updated staff at that instant. So calculating the number of required staffs first seems the only solution for now.
                 multipleStaff.redraw(data)
                 multipleStaff.redraw(data)
+                lyricsArea.resetLyricsArea()
             }
             onClose: {
                 optionsRow.lyricsOrPianoModeIndex = 0
-                lyricsArea.resetLyricsArea()
             }
         }
 

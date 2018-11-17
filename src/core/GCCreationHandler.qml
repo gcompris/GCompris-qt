@@ -41,8 +41,9 @@ Rectangle {
     signal fileLoaded(var data)
 
     onClose: {
-        visible = false
+        fileNameInput.focus = false
         fileNameInput.text = ""
+        visible = false
         viewContainer.selectedFileIndex = -1
         creationsList.flick(0, 1400)
     }
@@ -178,8 +179,9 @@ Rectangle {
 
     TextField {
     	id: fileNameInput
-    	font.pointSize: 28
     	width: parent.width / 2
+    	font.pointSize: NaN
+    	font.pixelSize: height * 0.6
     	height: saveButton.height
     	anchors.verticalCenter: saveButton.verticalCenter
     	anchors.left: parent.left
@@ -197,32 +199,33 @@ Rectangle {
             background: Rectangle {
                 border.color: "black"
                 border.width: 1
+                radius: fileNameInput.height / 4
             }
         }
     }
 
     Button {
         id: saveButton
-        width: 50 * ApplicationInfo.ratio
-        height: creationHandler.height / 15
+        width: 70 * ApplicationInfo.ratio
+        height: Math.min(creationHandler.height / 15, cancelButton.height)
         visible: creationHandler.isSaveMode
         text: qsTr("Save")
         style: GCButtonStyle {
             theme: "highContrast"
         }
-        anchors.top: parent.top
-        anchors.topMargin: 30
+        anchors.verticalCenter: cancelButton.verticalCenter
         anchors.left: fileNameInput.right
         anchors.leftMargin: 20
         onClicked: saveFile()
     }
 
     property real cellWidth: 50 * ApplicationInfo.ratio
-    property real cellHeight: cellWidth
+    property real cellHeight: cellWidth * 1.3
 
     Rectangle {
         id: viewContainer
         anchors.top: cancelButton.bottom
+        anchors.topMargin: 10
         anchors.bottom: buttonRow.top
         anchors.margins: 20
         border.color: "black"
@@ -279,7 +282,7 @@ Rectangle {
                 Image {
                     id: fileIcon
                     width: creationHandler.cellWidth
-                    height: parent.height / 1.4
+                    height: parent.height / 1.5
                     anchors.top: parent.top
                     anchors.topMargin: 3
                     source: "qrc:/gcompris/src/core/resource/file_icon.svg"
@@ -288,7 +291,7 @@ Rectangle {
                 GCText {
                     id: fileName
                     anchors.top: fileIcon.bottom
-                    height: parent.height - fileIcon.height
+                    height: parent.height - fileIcon.height - 15
                     width: creationHandler.cellWidth
                     font.pointSize: tinySize
                     fontSizeMode: Text.Fit
