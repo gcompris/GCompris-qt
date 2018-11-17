@@ -68,6 +68,7 @@ ActivityBase {
             property int cellSize: background.width < background.height ? (background.width / (columns + 3)) : (background.height / (rows + 4))
             property bool gameDone
             property int counter
+            property int nextPlayerStart: 1
         }
 
         onStart: { Activity.start(items, twoPlayer) }

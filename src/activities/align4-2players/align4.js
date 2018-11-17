@@ -55,10 +55,19 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
 
-    items.counter = 0
+    items.counter = items.nextPlayerStart+1
 
-    items.player2score.endTurn();
-    items.player1score.beginTurn();
+    if(items.nextPlayerStart == 1) {
+        items.player2score.endTurn();
+        items.player1score.beginTurn();
+    }
+    else {
+        items.player1score.endTurn();
+        items.player2score.beginTurn();
+        if(!twoPlayer) {
+            items.trigTuxMove.start();
+        }
+    }
 
     items.gameDone = false
     items.pieces.clear()
@@ -85,7 +94,7 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
@@ -99,6 +108,11 @@ function previousLevel() {
 }
 
 function reset() {
+    // If the previous game is not won, we switch the starting player
+    // Else, the next player is the one who lost (set in continueGame())
+    if(!items.gameDone) {
+        items.nextPlayerStart = (items.nextPlayerStart == 1) ? 2 : 1;
+    }
     items.trigTuxMove.stop();
     items.drop.stop()    // stop animation
     items.pieces.clear() // Clear the board
@@ -165,7 +179,6 @@ function handleDrop(column) {
         currentPiece = nextFreeStop * items.columns + column
         items.drop.start()
     }
-
 }
 
 function setPieceState(col, row, state) {
@@ -187,9 +200,7 @@ function getBoardFromModel() {
         }
         board.push(temp)
     }
-
     return board
-
 }
 
 function getFreeStopFromBoard(column, board) {
@@ -368,7 +379,6 @@ function evaluateBoard(player1, player2, board) {
                        board[3][5], board[2][6]);
 
     return score
-
 }
 
 function checkGameWon(currentPieceRow, currentPieceColumn) {
@@ -470,9 +480,11 @@ function continueGame() {
             if(currentPlayer === "1") {
                 items.player1score.win();
                 items.player2score.endTurn();
+                items.nextPlayerStart = 2;
             } else {
                 items.player2score.win();
                 items.player1score.endTurn();
+                items.nextPlayerStart = 1;
             }
             items.bonus.good("flower")
         }
@@ -494,10 +506,12 @@ function continueGame() {
                 items.player2score.endTurn()
                 items.bonus.good("flower")
                 items.counter--
+                items.nextPlayerStart = 2;
             } else {
                 items.player2score.win()
                 items.player1score.endTurn()
                 items.bonus.bad("flower")
+                items.nextPlayerStart = 1;
             }
         }
         if(items.counter % 2) {
@@ -510,6 +524,7 @@ function continueGame() {
         items.player1score.endTurn()
         items.player2score.endTurn()
         items.bonus.bad("flower")
+        items.nextPlayerStart = (items.nextPlayerStart == 1) ? 2 : 1;
     }
 }
 
