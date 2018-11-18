@@ -23,7 +23,7 @@ import GCompris 1.0
 
 /**
  * A QML component to display integers(0-9) on Domino.
- * Numbers are displayed in the form of number of circles.
+ * Numbers are displayed in the form of specified representation.
  *
  * @inherit QtQuick.Item
  */
@@ -35,6 +35,12 @@ Item {
      * Integer to display on the domino
      */
     property int value
+
+    /**
+     * type:string
+     * String to specify representation of Domino
+     */
+    property string mode
 
     /**
      * type:int
@@ -78,6 +84,36 @@ Item {
      */
     property GCSfx audioEffects
 
+    /**
+     * type:string
+     * String to specify the source folder for the image mode
+     */
+    property string source
+
+    readonly property variant romans : ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+
+    GCText {
+        id: numberText
+        visible: (item.mode == "number" || item.mode == "roman")
+        fontSize: ((item.mode == "number") ? 30 : (item.value == 8) ? 20 : (item.value == 7 || item.value == 3) ? 25 : 30)
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
+        color: item.color
+        anchors.margins: ApplicationInfo.ratio * 5
+        text: (mode == "number") ? item.value : romans[item.value]
+    }
+
+    Image {
+        id: imageText
+        visible: (item.mode == "image")
+        height: parent.height
+        fillMode: Image.PreserveAspectFit
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.margins: ApplicationInfo.ratio * 5
+        source: item.source + item.value + ".svg"
+    }
+
     function isVisible(index) {
         var value = item.value
         var visible = false
@@ -117,6 +153,7 @@ Item {
     Grid {
         columns: 3
         spacing: 3
+        visible: (item.mode == "dot")
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         horizontalItemAlignment: Grid.AlignHCenter
@@ -180,8 +217,7 @@ Item {
         onTriggered: goUp ? up() : down()
     }
 
-    MultiPointTouchArea
-    {
+    MultiPointTouchArea {
         enabled: ApplicationInfo.isMobile && item.isClickable
         anchors.fill: parent
         maximumTouchPoints: 1
