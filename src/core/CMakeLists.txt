@@ -113,7 +113,7 @@ if(BUILD_STANDALONE)
   elseif(WIN32)
     list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
   elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
-    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin)
+    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin)
   endif()
 
   list(APPEND _qt_plugins Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin)
