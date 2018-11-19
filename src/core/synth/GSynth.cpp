@@ -20,8 +20,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "generator.h"
 #include "GSynth.h"
+#include "generator.h"
 
 #include <QDebug>
 

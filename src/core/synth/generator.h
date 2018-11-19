@@ -15,8 +15,8 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef OUTPUTQT_H
-#define OUTPUTQT_H
+#ifndef GENERATOR_H
+#define GENERATOR_H
 
 #include <QAudioDeviceInfo>
 #include <QAudioOutput>
@@ -28,7 +28,6 @@
 #include <QMutableListIterator>
 
 #include "linearSynthesis.h"
-#include "ADSRenvelope.h"
 #include "modulation.h"
 #include "filter.h"
 #include "ADSRenvelope.h"
@@ -54,7 +53,7 @@ public:
 class Generator : public QIODevice {
     Q_OBJECT
 public:
-    Generator(const QAudioFormat &_format, QObject *parent = 0);
+    explicit Generator(const QAudioFormat &_format, QObject *parent = 0);
     ~Generator();
 
     void start    ();
@@ -85,7 +84,7 @@ private:
     QAudioFormat format;
     QByteArray m_buffer;
 
-    // State of the syntheziser
+    // State of the synthesizer
     qreal curtime;
     QList<Wave> waveList;
 
@@ -118,4 +117,4 @@ private:
     QMutex m_lock;
 };
 
-#endif // OUTPUTQT_H
+#endif // GENERATOR_H

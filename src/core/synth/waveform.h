@@ -28,7 +28,7 @@
 
 class Waveform  {
 public:
-    Waveform(unsigned int mode, unsigned int size=4096);
+    explicit Waveform(unsigned int mode, unsigned int size=4096);
     ~Waveform();    
 
     qreal eval(qreal t);

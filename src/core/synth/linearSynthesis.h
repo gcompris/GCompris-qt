@@ -23,7 +23,7 @@
 
 class LinearSynthesis : public Waveform {
 public:
-    LinearSynthesis(unsigned int mode, unsigned int size=4096);
+    explicit LinearSynthesis(unsigned int mode, unsigned int size=4096);
     ~LinearSynthesis();
 
     qreal evalTimbre(qreal t);
