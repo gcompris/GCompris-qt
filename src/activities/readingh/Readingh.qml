@@ -228,7 +228,7 @@ ActivityBase {
             id: wordToFindBox
             x: 430/800*parent.width
             y: 90/600*parent.height
-            text: qsTr("<font color=\"#373737\">Check if the word<br/><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed").arg(items.textToFind)
+            text: qsTr("<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</font>").arg(items.textToFind)
             color: "#373737"
             horizontalAlignment: Text.AlignHCenter
             width: background.width/3
