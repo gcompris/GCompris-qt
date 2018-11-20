@@ -63,19 +63,23 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+        
+        property int pieceSize: Math.round(blueFrame.width * 0.222)
 
         Image {
+            id: blueFrame
             source: Activity.url + "blueframe.svg"
-            sourceSize.width: Math.min(background.width * 0.9,
-                                       background.height * 0.9)
+            sourceSize.width: Math.min(background.width,
+                                       background.height - bar.height) * 0.95
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenterOffset: -bar.height * 0.5
         }
 
         Grid {
             id: puzzleArea
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: blueFrame.horizontalCenter
+            anchors.verticalCenter: blueFrame.verticalCenter
             columns: 4
             spacing: 0
 
@@ -98,20 +102,19 @@ ActivityBase {
                 id: repeater
                 model: fifteenModel
                 delegate: Item {
-                    width: Math.min(background.width * 0.2,
-                                    background.height * 0.2)
-                    height: width
+                    width: pieceSize
+                    height: pieceSize
                     clip: true
                     property int val: value
 
                     Image {
                         id: image
                         source: value ? items.scene : ""
-                        sourceSize.width: parent.width * 4
+                        sourceSize.width: pieceSize * 4
                         fillMode: Image.Pad
                         transform: Translate {
-                            x: - image.width / 4 * ((value - 1) % 4)
-                            y: - image.width / 4 * Math.floor((value - 1) / 4)
+                            x: - pieceSize * ((value - 1) % 4)
+                            y: - pieceSize * Math.floor((value - 1) / 4)
                         }
                     }
 
