@@ -37,7 +37,7 @@ QtObject {
      *
      */
     property var changelog: [
-            { "versionCode": 9500, "content": qsTr("Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in geo-country activity.<br/>Fix in braille activities where the cells start at 1, not 0.") },
+            { "versionCode": 9500, "content": qsTr("Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in geo-country activity.<br/>Fix in braille activities where the cells start at 1, not 0.<br/>Translation added for Hungarian.") },
             { "versionCode": 9100, "content": qsTr("Many little fixes and improvements. Translations added for Scottish Gaelic.") },
             { "versionCode": 9000, "content": qsTr("License page added in configuration. Multiple changes on layouts to improve the ergonomy.") },
             { "versionCode": 8000, "content": qsTr("Lang activity now available in Polish, Swedish and Ukrainian.") },
