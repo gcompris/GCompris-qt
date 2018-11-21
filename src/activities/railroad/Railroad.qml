@@ -519,8 +519,8 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: height
             height: score.height
+            width: height
             sourceSize.width: width
             sourceSize.height: height
             anchors.top: score.top
@@ -548,7 +548,9 @@ ActivityBase {
 
         Score {
             id: score
-            fontSize: isHorizontal ? internalTextComponent.smallSize : internalTextComponent.tinySize
+            height: bar.height * 0.8
+            width: height
+            fontSizeMode: Text.fit
             anchors.top: parent.top
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
