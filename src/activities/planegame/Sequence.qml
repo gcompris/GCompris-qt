@@ -1,4 +1,4 @@
-/* GCompris - Score.qml
+/* GCompris - Sequence.qml
  *
  * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
