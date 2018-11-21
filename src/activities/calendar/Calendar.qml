@@ -376,7 +376,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: bar.height * 0.6
+            height: bar.height * 0.8
             width: okButton.height
             sourceSize.width: okButton.width
             sourceSize.height: okButton.height
@@ -421,7 +421,8 @@ ActivityBase {
         Score {
             id: score
             height: okButton.height
-            fontSize: items.horizontalLayout ? internalTextComponent.mediumSize : (answerChoices.visible ? internalTextComponent.smallSize : internalTextComponent.tinySize)
+            width: height
+            fontSizeMode: Text.Fit
             anchors.top: calendarBox.bottom
             anchors.bottom: undefined
             anchors.left:  undefined

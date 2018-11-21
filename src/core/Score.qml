@@ -45,6 +45,15 @@ Rectangle {
     property alias fontSize: subLevelText.fontSize
 
     /**
+     * type:string
+     * Define how text size is determined
+     *
+     * @sa GCFont.fontSizeMode.
+     */
+    
+    property alias fontSizeMode: subLevelText.fontSizeMode
+
+    /**
      * type:int
      * Total number of sub-levels to show.
      *
