@@ -251,7 +251,7 @@ Item {
                     && code != 5) {  // no error: OperationCanceledError
                 // show error message
                 var messageDialog = Core.showMessageDialog(main,
-                                                           qsTr("Download error") + code + ": " + msg,
+                                                           qsTr("Download error (code: %1): %2").arg(code).arg(msg),
                                                            "", null,
                                                            "", null,
                                                            function() {
