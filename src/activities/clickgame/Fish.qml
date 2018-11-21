@@ -1,4 +1,4 @@
-/* GCompris - Clickgame.qml
+/* GCompris - Fish.qml
  *
  * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
