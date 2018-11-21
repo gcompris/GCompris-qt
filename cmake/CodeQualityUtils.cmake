@@ -20,6 +20,6 @@ if(CLANG_TIDY_EXE)
     set(CMAKE_CXX_CLANG_TIDY ${CLANG_TIDY_EXE})
     list(
         APPEND CMAKE_CXX_CLANG_TIDY
-            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-owning-memory,-modernize-use-auto,-readability-braces-around-statements,-cppcoreguidelines-pro-type-static-cast-downcast,-cppcoreguidelines-pro-type-vararg,-cppcoreguidelines-pro-bounds-array-to-pointer-decay"
+            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-owning-memory,-modernize-use-auto,-readability-braces-around-statements,-cppcoreguidelines-pro-type-static-cast-downcast,-cppcoreguidelines-pro-type-vararg,-cppcoreguidelines-pro-bounds-array-to-pointer-decay,-cppcoreguidelines-pro-bounds-pointer-arithmetic"
         )
 endif()

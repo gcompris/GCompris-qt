@@ -296,7 +296,7 @@ void ActivityInfoTree::filterBySearch(const QString& text)
         const QStringList wordsList = text.split(' ', QString::SkipEmptyParts);
         for(const QString &searchTerm: wordsList) {
             const QString trimmedText = searchTerm.trimmed();
-            const auto constMenuTreeFull = m_menuTreeFull;
+            const auto &constMenuTreeFull = m_menuTreeFull;
             for(const auto &activity: constMenuTreeFull) {
                 if(activity->title().contains(trimmedText, Qt::CaseInsensitive) ||
                     activity->name().contains(trimmedText, Qt::CaseInsensitive) ||
@@ -322,15 +322,15 @@ void ActivityInfoTree::filterBySearch(const QString& text)
 QVariantList ActivityInfoTree::allCharacters() {
     QSet<QChar> keyboardChars;
     const auto constMenuTreeFull = m_menuTreeFull;
-    for(auto &tree: constMenuTreeFull) {
+    for(const auto &tree: constMenuTreeFull) {
         const QString &title = tree->title();
-        Q_FOREACH(const QChar &letter, title) {
+        for(const QChar &letter: title) {
             if(!letter.isSpace() && !letter.isPunct()) {
                 keyboardChars.insert(letter.toLower());
             }
         }
     }
-    Q_FOREACH(const QString &letters, keyboardChars) {
+    for(const QString &letters: keyboardChars) {
         m_keyboardCharacters.push_back(letters);
     }
     std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end());

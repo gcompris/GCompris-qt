@@ -294,8 +294,8 @@ Generator::generateData(qint64 len) {
 }
 
 void
-Generator::setEnvelope(ADSREnvelope &_env) {
-    defaultEnv = _env;
+Generator::setEnvelope(ADSREnvelope &env) {
+    defaultEnv = env;
 }
 
 void

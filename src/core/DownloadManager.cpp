@@ -33,7 +33,7 @@
 
 #include <QtQml>
 
-const QString DownloadManager::contentsFilename = QString("Contents");
+const QString DownloadManager::contentsFilename = QStringLiteral("Contents");
 DownloadManager* DownloadManager::_instance = nullptr;
 
 void copyPath(const QString &src, const QString &dst)
@@ -569,14 +569,12 @@ void DownloadManager::downloadFinished()
             qWarning() << "Error downloading Contents from" << job->url
                     << ":" << reply->error() << ":" << reply->errorString();
             // note: errorHandler() emit's error!
-            code = Error;
             goto outError;
         }
         //qDebug() << "Download of Contents finished successfully: " << job->url;
         if (!parseContents(job)) {
             qWarning() << "Invalid format of Contents file" << job->url;
             emit error(QNetworkReply::UnknownContentError, QObject::tr("Invalid format of Contents file"));
-            code = Error;
             goto outError;
         }
     } else {
@@ -662,7 +660,7 @@ void DownloadManager::downloadFinished()
         while (!job->queue.isEmpty()) {
             nUrl = job->queue.takeFirst();
             QString relPath = getRelativeResourcePath(getFilenameForUrl(nUrl));
-            foreach (const QString &base, getSystemResourcePaths()) {
+            for (const QString &base: getSystemResourcePaths()) {
                 QString filename = base + '/' + relPath;
                 if (QFile::exists(filename))
                     registerResourceAbsolute(filename);
