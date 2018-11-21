@@ -202,14 +202,14 @@ Item {
         
         Score {
             id: score
-            fontSize: 0.013 * parent.width
             visible: items.scoreChecked
-            height: horizontalLayout ? 0.1 * parent.height : 0.06 * parent.height
-            width: horizontalLayout ? 0.015 * parent.width : parent.width
+            width: rightZone.width * 0.4
+            height: width * 0.6
+            margins: 10 * ApplicationInfo.ratio
             anchors {
                 top: parent.top
-                right: categoryBackground.right
-                left: categoryImage.right
+                right: parent.right
+                left: undefined
                 bottom: undefined
             }
         }

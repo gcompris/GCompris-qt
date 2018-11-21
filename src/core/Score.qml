@@ -50,9 +50,14 @@ Rectangle {
      *
      * @sa GCFont.fontSizeMode.
      */
-    
     property alias fontSizeMode: subLevelText.fontSizeMode
-
+    
+    /**
+     * type:real
+     * Define margins
+     */
+    property real margins: 30
+    
     /**
      * type:int
      * Total number of sub-levels to show.
@@ -95,7 +100,7 @@ Rectangle {
     radius: 10
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    anchors.margins: 30
+    anchors.margins: margins
 
     border.color: "black"
     border.width: 0
@@ -111,7 +116,6 @@ Rectangle {
     GCText {
         id: subLevelText
         anchors.centerIn: parent
-        fontSize: mediumSize
         fontSizeMode: Text.Fit
         font.bold: true
         color: "#373737"
