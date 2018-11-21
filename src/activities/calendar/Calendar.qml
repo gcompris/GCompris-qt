@@ -422,7 +422,6 @@ ActivityBase {
             id: score
             height: okButton.height
             width: height
-            fontSizeMode: Text.Fit
             anchors.top: calendarBox.bottom
             anchors.bottom: undefined
             anchors.left:  undefined

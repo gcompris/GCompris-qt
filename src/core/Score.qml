@@ -112,6 +112,7 @@ Rectangle {
         id: subLevelText
         anchors.centerIn: parent
         fontSize: mediumSize
+        fontSizeMode: Text.Fit
         font.bold: true
         color: "#373737"
         text: message

@@ -550,7 +550,6 @@ ActivityBase {
             id: score
             height: bar.height * 0.8
             width: height
-            fontSizeMode: Text.fit
             anchors.top: parent.top
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
