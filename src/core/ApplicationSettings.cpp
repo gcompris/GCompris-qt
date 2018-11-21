@@ -107,7 +107,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     if(m_font == QLatin1String("Andika-R.ttf"))
         m_font = "Andika-R.otf";
     m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
-    setFontLetterSpacing(m_config.value(FONT_LETTER_SPACING, GC_DEFAULT_FONT_LETTER_SPACING).toReal());
+    m_fontLetterSpacing = m_config.value(FONT_LETTER_SPACING, GC_DEFAULT_FONT_LETTER_SPACING).toReal();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 
     // Init the activation mode
@@ -144,7 +144,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
     m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
     m_noCursor = m_config.value(NO_CURSOR, false).toBool();
-    setBaseFontSize(m_config.value(BASE_FONT_SIZE_KEY, 0).toInt());
+    m_baseFontSize = m_config.value(BASE_FONT_SIZE_KEY, 0).toInt();
 
     m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();

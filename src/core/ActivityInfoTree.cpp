@@ -46,7 +46,7 @@ ActivityInfo *ActivityInfoTree::getRootMenu() const
 
 QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
 {
-    return QQmlListProperty<ActivityInfo>(this, nullptr, &menuTreeCount, &menuTreeAt);
+    return {this, nullptr, &menuTreeCount, &menuTreeAt};
 }
 
 int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
@@ -330,7 +330,7 @@ QVariantList ActivityInfoTree::allCharacters() {
             }
         }
     }
-    for(const QString &letters: keyboardChars) {
+    for(const QChar &letters: keyboardChars) {
         m_keyboardCharacters.push_back(letters);
     }
     std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end());
