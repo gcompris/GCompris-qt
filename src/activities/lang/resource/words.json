@@ -535,11 +535,6 @@
                         "voice": "voices-$CA/$LOCALE/words/knit.$CA"
                     },
                     {
-                        "description": "to laugh",
-                        "image": "words/laugh.png",
-                        "voice": "voices-$CA/$LOCALE/words/laugh.$CA"
-                    },
-                    {
                         "description": "to lick",
                         "image": "words/lick.png",
                         "voice": "voices-$CA/$LOCALE/words/lick.$CA"
@@ -1656,6 +1651,11 @@
                         "description": "joy",
                         "image": "words/joy.png",
                         "voice": "voices-$CA/$LOCALE/words/joy.$CA"
+                    },
+                    {
+                        "description": "to laugh",
+                        "image": "words/laugh.png",
+                        "voice": "voices-$CA/$LOCALE/words/laugh.$CA"
                     },
                     {
                         "description": "mad",
