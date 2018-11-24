@@ -24,7 +24,7 @@
 class FilterParameters {
 public:
     qreal freq1, freq2;
-    unsigned int type, window_type, size, samplingRate, fftTimer;
+    unsigned int type, window_type, size, samplingRate;
 };
 
 class Filter : public FilterParameters {
@@ -35,7 +35,6 @@ public:
 
     Filter(unsigned int _type, unsigned int _window_type, unsigned int _size,
            unsigned int _samplingRate, qreal _freq1, qreal _freq2 = 0);
-    Filter(unsigned int _samplingRate, FilterParameters &filt);
     ~Filter();
     qreal * IR;
 

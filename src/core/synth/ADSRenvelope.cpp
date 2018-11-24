@@ -19,9 +19,7 @@
 #include "ADSRenvelope.h"
 //#include <QDebug>
 
-ADSREnvelope::ADSREnvelope() {
-    attackTime = decayTime = releaseTime = 0;
-    initialAmpl = peakAmpl = sustainAmpl = 0;
+ADSREnvelope::ADSREnvelope() : ADSREnvelope(0, 0, 0, 0.f, 0.f, 0.f) {
 }
 
 ADSREnvelope::ADSREnvelope(unsigned int _attackTime,
@@ -29,17 +27,16 @@ ADSREnvelope::ADSREnvelope(unsigned int _attackTime,
                            unsigned int _releaseTime,
                            qreal _initialAmpl,
                            qreal _peakAmpl,
-                           qreal _sustainAmpl) {
-    attackTime  = _attackTime;
-    decayTime   = _decayTime;
-    releaseTime = _releaseTime;
-    initialAmpl = _initialAmpl;
-    peakAmpl    = _peakAmpl;
-    sustainAmpl = _sustainAmpl;
+                           qreal _sustainAmpl) : initialAmpl(_initialAmpl),
+                                                 peakAmpl(_peakAmpl),
+                                                 sustainAmpl(_sustainAmpl),
+                                                 attackTime(_attackTime),
+                                                 decayTime(_decayTime),
+                                                 releaseTime(_releaseTime) {
 }
 
 qreal
-ADSREnvelope::eval(qreal t, unsigned char state) {
+ADSREnvelope::eval(qreal t, unsigned char state) const {
     qreal attackTimeF  = ((qreal)attackTime)/1000;
     qreal decayTimeF   = ((qreal)decayTime)/1000;
     qreal releaseTimeF = ((qreal)releaseTime)/1000;

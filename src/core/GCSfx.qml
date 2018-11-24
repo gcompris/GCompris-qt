@@ -1,4 +1,4 @@
-/* GCompris - GCSoundEffect.qml
+/* GCompris - GCSfx.qml
  *
  * Copyright (C) 2018 Timothée Giet <animtim@gmail.com>
  *

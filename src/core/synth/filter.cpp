@@ -16,13 +16,10 @@
 */
 
 #include "filter.h"
-//#include <QDebug>
-
-Filter::Filter(unsigned int _samplingRate, FilterParameters &filt) : Filter(filt.type, filt.window_type, filt.size, _samplingRate, filt.freq1, filt.freq2) {
-}
 
 Filter::Filter(unsigned int _type, unsigned int _window_type, unsigned int _size,
-               unsigned int _samplingRate, qreal _freq1, qreal _freq2) {
+               unsigned int _samplingRate, qreal _freq1, qreal _freq2) :
+    FilterParameters() {
     type = _type;
     window_type = _window_type;
     size = _size;

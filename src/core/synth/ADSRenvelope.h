@@ -35,7 +35,7 @@ public:
     qreal initialAmpl, peakAmpl, sustainAmpl;
     unsigned int attackTime, decayTime, releaseTime;
 
-    qreal eval(qreal t, unsigned char state);
+    qreal eval(qreal t, unsigned char state) const;
 private:
 };
 

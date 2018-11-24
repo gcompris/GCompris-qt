@@ -33,7 +33,6 @@ Preset::Preset() : timbreAmplitudes(8, 0), timbrePhases(8, 0) {
     filt.size         = 100;
     filt.type         = Filter::FILTER_OFF;
     filt.window_type  = Filter::WINDOW_RECT;
-    filt.fftTimer     = 100;
 
     timbreAmplitudes[0] = 50;
     timbreAmplitudes[1] = 15;

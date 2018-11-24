@@ -18,10 +18,8 @@
 #include "modulation.h"
 #include "waveform.h"
 
-Modulation::Modulation() {
-    mode = Waveform::MODE_SIN;
-    propFreq = false;
-    AM_freq = FM_freq = AM_ampl = FM_ampl = 0;
-    useEnvelope = false;
-    AM_time = 0.2;
+Modulation::Modulation() : FM_freq(0.f), FM_ampl(0.f),
+                           AM_freq(0.f), AM_ampl(0.f), AM_time(0.2f),
+                           mode(Waveform::MODE_SIN),
+                           propFreq(false), useEnvelope(false) {
 }

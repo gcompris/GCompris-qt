@@ -1,4 +1,4 @@
-/* GCompris - ApplicationSettingsAndroid.cpp
+/* GCompris - ApplicationAndroid.cpp
  *
  * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *

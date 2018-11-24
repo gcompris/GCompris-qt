@@ -20,8 +20,7 @@
 #include "filter.h"
 #include <qendian.h>
 
-Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(parent) {
-    format = _format;
+Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(parent), format(_format) {
     linSyn = new LinearSynthesis(Waveform::MODE_SIN);
     curtime = 0;
 
@@ -180,8 +179,8 @@ Generator::generateData(qint64 len) {
 
     // Raw synthesized data is assembled into synthData. This data is then
     // filtered and assembled into filteredData.
-    memset(synthData, 0.f, numSamples*sizeof(qreal));
-    memset(filteredData, 0.f, numSamples*sizeof(qreal));
+    memset(synthData, 0, numSamples*sizeof(qreal));
+    memset(filteredData, 0, numSamples*sizeof(qreal));
 
     // All samples for each active note in waveList are synthesized separately.
     m_lock.lock();
