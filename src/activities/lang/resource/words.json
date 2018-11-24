@@ -79,6 +79,11 @@
                         "voice": "voices-$CA/$LOCALE/words/fairy.$CA"
                     },
                     {
+                        "description": "flat",
+                        "image": "words/flat.png",
+                        "voice": "voices-$CA/$LOCALE/words/flat.$CA"
+                    },
+                    {
                         "description": "front",
                         "image": "words/front.png",
                         "voice": "voices-$CA/$LOCALE/words/front.$CA"
@@ -849,11 +854,6 @@
                         "description": "fat",
                         "image": "words/fat.png",
                         "voice": "voices-$CA/$LOCALE/words/fat.$CA"
-                    },
-                    {
-                        "description": "flat",
-                        "image": "words/flat.png",
-                        "voice": "voices-$CA/$LOCALE/words/flat.$CA"
                     },
                     {
                         "description": "full",
