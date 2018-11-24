@@ -22,4 +22,6 @@ Modulation::Modulation() {
     mode = Waveform::MODE_SIN;
     propFreq = false;
     AM_freq = FM_freq = AM_ampl = FM_ampl = 0;
+    useEnvelope = false;
+    AM_time = 0.2;
 }
