@@ -249,6 +249,7 @@ ActivityBase {
         "vegetables": qsTr("vegetables"), "object": qsTr("object"),
         "construction": qsTr("construction"),
         "furniture": qsTr("furniture"), "houseware": qsTr("houseware"),
-        "tool": qsTr("tool"), "food": qsTr("food")}
+        "tool": qsTr("tool"), "food": qsTr("food"),
+        "transport": qsTr("transport")}
 
 }
