@@ -335,7 +335,6 @@ ActivityBase {
 
         GCCreationHandler {
             id: creationHandler
-            activityName: "piano_composition"
             onFileLoaded:  {
                 // We need to draw the notes twice since we first need to count the number of staffs needed for the melody (we get that from
                 // the 1st redraw call), then we redraw the 2nd time to actually display the notes perfectly. This is done because for some reason, the

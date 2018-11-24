@@ -53,9 +53,10 @@ Rectangle {
         onClicked: viewContainer.selectedFileIndex = -1
     }
 
-    property string activityName: ""
+
     property var dataToSave
     property bool isSaveMode: false
+    readonly property string activityName: ActivityInfoTree.currentActivity.name.split('/')[0]
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
     readonly property string fileSavePath: "file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json"
 
