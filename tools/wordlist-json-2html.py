@@ -47,7 +47,7 @@ footer= """
 
 orderedData = {}
 
-with open("words_by_sections.html", "w") as section_file:
+with open("words_by_section.html", "w") as section_file:
     section_file.write("""<html dir=\"ltr\" lang=\"fr\">
 
 <head>
