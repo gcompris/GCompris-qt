@@ -107,9 +107,17 @@ function start(items_) {
             }
         }
         var levelsFile;
-        if (items.levelSet === "user")
-            levelsFile = userFile;
+        if (items.levelSet === "user" && items.file.exists(items.filePath))
+            levelsFile = items.filePath;
         else {
+            if(items.levelSet === "user") {
+                Core.showMessageDialog(items.background,
+                                        // The argument represents the file path name to be loaded.
+                                       qsTr("The file '%1' is missing!<br>Falling back to builtin levels.").arg(items.filePath),
+                                       "", null,
+                                       "", null,
+                                       null);
+            }
             levelsFile = builtinFile;
             currentLevel = GCompris.ApplicationSettings.loadActivityProgress(
                         "balancebox");

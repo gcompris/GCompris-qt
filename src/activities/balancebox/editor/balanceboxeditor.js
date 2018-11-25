@@ -142,34 +142,14 @@ function modelToLevel()
 function saveModel()
 {
     var l = modelToLevel();
-    var path = userFile.substring(0, userFile.lastIndexOf("/"));
-    if (!props.file.exists(path)) {
-        if (!props.file.mkpath(path))
-            console.error("Could not create directory " + path);
-        else
-            console.debug("Created directory " + path);
-    }
     levels[currentLevel] = l;
     // renumber levels before saving:
     for(var i = 0; i < levels.length; i++)
         levels[i].level = i + 1;
-    if (!props.file.write(JSON.stringify(levels), userFile))
-        Core.showMessageDialog(props.editor,
-                               //~ singular Error saving %n level to your levels file (%1)
-                               //~ plural Error saving %n levels to your levels file (%1)
-                               qsTr("Error saving %n level(s) to your levels file (%1)", "", numberOfLevel)
-                               .arg(userFile),
-                               "", null, "", null, null);
-    else {
-        Core.showMessageDialog(props.editor,
-                               //~ singular Saved %n level to your levels file (%1)
-                               //~ plural Saved %n levels to your levels file (%1)
-                               qsTr("Saved %n level(s) to your levels file (%1)", "", numberOfLevel)
-                               .arg(userFile),
-                               "", null, "", null, null);
-        levelChanged = false;
-        currentIsNewLevel = false;
-    }
+
+    levelChanged = false;
+    currentIsNewLevel = false;
+    return levels
 }
 
 function modifyMap(props, row, col)

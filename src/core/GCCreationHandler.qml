@@ -38,7 +38,7 @@ Rectangle {
     z: 2000
 
     signal close
-    signal fileLoaded(var data)
+    signal fileLoaded(var data, var filePath)
 
     onClose: {
         fileNameInput.focus = false
@@ -122,7 +122,7 @@ Rectangle {
     function loadFile(fileName) {
         var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
         var data = parser.parseFromUrl(filePath)
-        creationHandler.fileLoaded(data)
+        creationHandler.fileLoaded(data, filePath)
         creationHandler.close()
     }
 

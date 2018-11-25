@@ -37,6 +37,9 @@ ActivityBase {
 
     property string mode: "play"  // "play" or "test"
     property string levelSet: "builtin"   // "builtin" or "user"
+    // When the user launches the activity in "user" mode by default(due to previously save config mode) for the first time after updating GCompris, default user file must be loaded as they must be having created levels in it.
+    // From next time onwards, the saved file path is loaded. Refer to line 567.
+    property string loadedFilePath: (levelSet == "builtin") ? Activity.builtinFile : Activity.userFile
     property var testLevel
     property bool inForeground: false   // to avoid unneeded reconfigurations
 
@@ -112,6 +115,7 @@ ActivityBase {
             id: items
             property string mode: activity.mode
             property string levelSet: activity.levelSet
+            property string filePath: activity.loadedFilePath
             property var testLevel: activity.testLevel
             property Item main: activity.main
             property alias background: background
@@ -120,6 +124,7 @@ ActivityBase {
             property alias tilt: tilt
             property alias timer: timer
             property alias ball: ball
+            property alias file: file
             property int ballSize: cellSize - 2*wallSize
             property alias mapWrapper: mapWrapper
             property int cellSize: mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
@@ -277,7 +282,7 @@ ActivityBase {
                         duration: 1000
                     }
                 }
-            
+
                 onBeginContact: {
                     if (other.categories !== items.wallType)
                         Activity.addBallContact(other);
@@ -310,7 +315,7 @@ ActivityBase {
             }            
             
         }
-        
+
         Timer {
             id: timer
             interval: Activity.step;
@@ -341,7 +346,7 @@ ActivityBase {
                 else if (yRotation < -90)
                     yRotation = -90;
             }
-            
+
             TiltSensor {
                 id: tiltSensor
                 active: ApplicationInfo.isMobile ? true : false
@@ -487,13 +492,29 @@ ActivityBase {
             onTriggered: Activity.keyboardHandler()
         }
 
+        GCCreationHandler {
+            id: creationHandler
+            readonly property bool isEditorActive: editorLoader.active && editorLoader.item.visible
+            onFileLoaded: {
+                if(!isEditorActive)
+                    activity.loadedFilePath = filePath
+                else
+                    editorLoader.item.filename = filePath
+                close()
+            }
+            parent: isEditorActive ? editorLoader.item : dialogActivityConfig
+        }
+
+        File {
+            id: file
+        }
+
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
             content: Component {
                 Item {
                     property alias levelsBox: levelsBox
-
                     property var availableLevels: [
                         { "text": qsTr("Built-in"), "value": "builtin" },
                         { "text": qsTr("User"), "value": "user" },
@@ -510,13 +531,25 @@ ActivityBase {
                             label: qsTr("Select your level set")
                         }
 
-                        Button {
-                            id: editorButton
-                            style:  GCButtonStyle {}
-                            height: levelsBox.height
-                            text: qsTr("Start Editor")
-                            visible: levelsBox.currentIndex == 1
-                            onClicked: background.startEditor()
+                        Column {
+                            spacing: 5
+                            Button {
+                                id: editorButton
+                                style:  GCButtonStyle {}
+                                height: levelsBox.height
+                                text: qsTr("Start Editor")
+                                visible: levelsBox.currentIndex == 1
+                                onClicked: background.startEditor()
+                            }
+
+                            Button {
+                                id: loadButton
+                                style:  GCButtonStyle {}
+                                height: levelsBox.height
+                                text: qsTr("Load saved levels")
+                                visible: levelsBox.currentIndex == 1
+                                onClicked: creationHandler.loadWindow()
+                            }
                         }
                     }
                 }
@@ -527,24 +560,28 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["levels"]) {
                     activity.levelSet = dataToSave["levels"];
+                    if(dataToSave['filePath'])
+                        activity.loadedFilePath = dataToSave["filePath"]
                 }
             }
 
             onSaveData: {
                 var newLevels = dialogActivityConfig.configItem
                     .availableLevels[dialogActivityConfig.configItem.levelsBox.currentIndex].value;
-                if (newLevels !== activity.levelSet) {
+                var initialFilePath = dataToSave['filePath'] ? dataToSave['filePath'] : ""
+                if(newLevels === "builtin")
+                    activity.loadedFilePath = Activity.builtinFile
+                if (newLevels !== activity.levelSet || initialFilePath != activity.loadedFilePath) {
                     activity.levelSet = newLevels;
-                    dataToSave = {"levels": activity.levelSet};
+                    dataToSave = {"levels": activity.levelSet, "filePath": activity.loadedFilePath};
                     activity.needRestart = true;
                 }
             }
 
             dataValidationFunc: function() {
                 var newLevels = dialogActivityConfig.configItem
-                    .availableLevels[dialogActivityConfig.configItem.levelsBox.currentIndex].value;
-                if (newLevels === "user" &&
-                        !parser.jsonFile.exists(Activity.userFile)) {
+                    .availableLevels[dialogActivityConfig.configItem.levelsBox.currentIndex].value
+                if (newLevels === "user" && activity.loadedFilePath === Activity.builtinFile) {
                     Core.showMessageDialog(dialogActivityConfig,
                                            qsTr("You selected the user-defined level set, but you have not yet defined any user levels!<br/> " +
                                  "Either create your user levels by starting the level editor or choose the 'built-in' level set."),

@@ -31,7 +31,8 @@ import "balanceboxeditor.js" as Activity
 Item {
     id: editor
 
-    property string filename: Activity.userFile
+    property string filename: ""
+    onFilenameChanged: Activity.initEditor(props)
 
     property ActivityBase currentActivity
     property var testBox
@@ -144,12 +145,20 @@ Item {
 //            anchors.topMargin: 20
 
             Button {
+                id: loadButton
+                width: parent.width
+                height: props.cellSize
+                style: GCButtonStyle {}
+                text: qsTr("Load")
+                onClicked: creationHandler.loadWindow()
+            }
+            Button {
                 id: saveButton
                 width: parent.width
                 height: props.cellSize
                 style: GCButtonStyle {}
                 text: qsTr("Save")
-                onClicked: Activity.saveModel();
+                onClicked: creationHandler.saveWindow(Activity.saveModel())
             }
             Button {
                 id: testButton
@@ -662,9 +671,9 @@ Item {
             if (Activity.levelChanged)
                 Activity.warnUnsavedChanges(activity.home,
                                             function() {});
-            else
+            else {
                 activity.home()
+            }
         }
     }
-
 }
