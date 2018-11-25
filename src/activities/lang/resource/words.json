@@ -1884,11 +1884,6 @@
                         "voice": "voices-$CA/$LOCALE/words/soldier.$CA"
                     },
                     {
-                        "description": "female soldier",
-                        "image": "words/soldier_female.png",
-                        "voice": "voices-$CA/$LOCALE/words/soldier_female.$CA"
-                    },
-                    {
                         "description": "teacher",
                         "image": "words/teacher.png",
                         "voice": "voices-$CA/$LOCALE/words/teacher.$CA"
@@ -1988,16 +1983,6 @@
                         "description": "mate",
                         "image": "words/mate.png",
                         "voice": "voices-$CA/$LOCALE/words/mate.$CA"
-                    },
-                    {
-                        "description": "mate female",
-                        "image": "words/mate_female.png",
-                        "voice": "voices-$CA/$LOCALE/words/mate_female.$CA"
-                    },
-                    {
-                        "description": "mate male",
-                        "image": "words/mate_male.png",
-                        "voice": "voices-$CA/$LOCALE/words/mate_male.$CA"
                     },
                     {
                         "description": "mom",
