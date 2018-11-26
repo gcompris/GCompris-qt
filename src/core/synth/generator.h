@@ -29,7 +29,6 @@
 
 #include "linearSynthesis.h"
 #include "modulation.h"
-#include "filter.h"
 #include "ADSRenvelope.h"
 #include "preset.h"
 
@@ -77,7 +76,6 @@ public slots:
     void setTimbre    (QVector<int> &amplitudes, QVector<int> &phases);
     void setEnvelope  (ADSREnvelope &env);
     void setModulation(Modulation &modulation);
-    void setFilter    (FilterParameters &filtParam);
     void setPreset    (Preset &preset);
     
 private:
@@ -93,27 +91,12 @@ private:
     ADSREnvelope     defaultEnv;
     Modulation       mod;
     Waveform        *mod_waveform;
-    Filter          *filter;
 
-    // convBuffer and filtBuffer are circular buffers used to store the
-    // previous convBuffer_size samples before and after convolution.
-    // Both buffers are used as inputs for the FFT in the computation of
-    // data for the fftUpdate signal. The data in convBuffer is also used
-    // in the computation of convolution. convBuffer_ind tells the location
-    // of the last added sample in the buffer.
     static const int m_samplingRate = 22050;
     static const int maxUsedBytes = 2048;
     
-    qreal *convBuffer;
-    qreal *synthData, *filteredData;
-    unsigned int convBuffer_size;
-    quint32 convBuffer_ind;
-
-    // Impulse response for the current filter.
-
-    qreal *convImpulse;
-    unsigned int convImpulse_size;
-
+    qreal *synthData;
+    
     QMutex m_lock;
 };
 

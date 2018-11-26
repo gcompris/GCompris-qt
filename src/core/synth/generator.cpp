@@ -17,7 +17,6 @@
 
 
 #include "generator.h"
-#include "filter.h"
 #include <qendian.h>
 
 Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(parent), format(_format) {
@@ -34,44 +33,16 @@ Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(p
 
     mod_waveform = new Waveform(Waveform::MODE_SIN);
 
-    convImpulse_size = 0;
-
-    convBuffer_size = 4096;
-    convBuffer      = new qreal[convBuffer_size];
-
-    convBuffer_ind  = 0;
-
-    for (unsigned int indconv = 0; indconv < convBuffer_size; indconv++) {
-        convBuffer[indconv] = 0;
-    }
-
-    filter      = nullptr;
-    convImpulse = nullptr;
-
     synthData    = new qreal[maxUsedBytes];
-    filteredData = new qreal[maxUsedBytes];
 
     for (unsigned int indMaxRead = 0; indMaxRead < maxUsedBytes; indMaxRead++) {
         synthData[indMaxRead]    = 0;
-        filteredData[indMaxRead] = 0;
     }
-
-    FilterParameters param;
-    param.freq1 = param.freq2 = 0;
-    param.samplingRate = m_samplingRate;
-    param.size         = 128;
-    param.type         = Filter::FILTER_OFF;
-    param.window_type  = Filter::WINDOW_RECT;
-    setFilter(param);
 }
 
 Generator::~Generator() {
     delete linSyn;
-    delete [] convBuffer;
-    delete [] convImpulse;
     delete [] synthData;
-    delete [] filteredData;
-    delete filter;
     delete mod_waveform;
 }
 
@@ -177,10 +148,8 @@ Generator::generateData(qint64 len) {
     unsigned int numSamples = len/2;
     m_buffer.resize(len);
 
-    // Raw synthesized data is assembled into synthData. This data is then
-    // filtered and assembled into filteredData.
+    // Raw synthesized data is assembled into synthData.
     memset(synthData, 0, numSamples*sizeof(qreal));
-    memset(filteredData, 0, numSamples*sizeof(qreal));
 
     // All samples for each active note in waveList are synthesized separately.
     m_lock.lock();
@@ -265,28 +234,13 @@ Generator::generateData(qint64 len) {
     }
     m_lock.unlock();
 
-    for (unsigned int sample = 0; sample < numSamples; sample++) {
-        convBuffer[convBuffer_ind] = synthData[sample];
-
-        for (unsigned int convind = 0; convind < convImpulse_size; convind ++) {            
-            if (convImpulse[convind] != 0) {
-                // The term convBuffer_size keeps the left side non-negative and avoids
-                // negative results from the modulo operator.
-
-                int bufind = (convBuffer_ind + convBuffer_size - convind) % convBuffer_size;
-
-                filteredData[sample] += convImpulse[convind] * convBuffer[bufind];
-            }
-        }
-        convBuffer_ind = (convBuffer_ind + 1) % convBuffer_size;
-    }
     // Convert data from qreal to qint16.
     const int channelBytes = format.sampleSize() / 8;
     unsigned char *ptr = reinterpret_cast<unsigned char *>(m_buffer.data());
     for (unsigned int sample = 0; sample < numSamples; sample++) {
-        if (filteredData[sample] > 1)  filteredData[sample] = 1;
-        if (filteredData[sample] < -1) filteredData[sample] = -1;
-        qint16 value = static_cast<qint16>(filteredData[sample] * 32767);
+        if (synthData[sample] > 1)  synthData[sample] = 1;
+        if (synthData[sample] < -1) synthData[sample] = -1;
+        qint16 value = static_cast<qint16>(synthData[sample] * 32767);
         qToLittleEndian<qint16>(value, ptr);
         ptr += channelBytes;
     }
@@ -306,24 +260,9 @@ Generator::setModulation(Modulation &modulation) {
     mod = modulation;
 }
 
-void
-Generator::setFilter(FilterParameters &filtParam) {
-    delete filter;
-    delete [] convImpulse;
-
-    filter = new Filter(filtParam.type, filtParam.window_type, filtParam.size,
-                        m_samplingRate, filtParam.freq1, filtParam.freq2);
-    convImpulse_size = filter->size;
-    convImpulse      = new qreal[convImpulse_size];
-    for (unsigned int ind = 0; ind < convImpulse_size; ind++) {
-        convImpulse[ind] = filter->IR[ind];
-    }
-}
-
 void Generator::setPreset(Preset &preset) {
     setModulation(preset.mod);
     setMode(preset.waveformMode);
     setTimbre(preset.timbreAmplitudes, preset.timbrePhases);
     setEnvelope(preset.env);
-    setFilter(preset.filt);
 }

@@ -19,7 +19,6 @@
 #define PRESET_H
 
 #include "ADSRenvelope.h"
-#include "filter.h"
 #include "linearSynthesis.h"
 #include "modulation.h"
 
@@ -35,7 +34,6 @@ public:
     unsigned int waveformMode;
 
     ADSREnvelope     env;
-    FilterParameters filt;
     Modulation       mod;
 };
 

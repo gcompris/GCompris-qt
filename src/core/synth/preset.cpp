@@ -28,12 +28,6 @@ Preset::Preset() : timbreAmplitudes(8, 0), timbrePhases(8, 0) {
     env.peakAmpl = 1;
     env.sustainAmpl = 0.8;
 
-    filt.freq1 = filt.freq2 = 4000;
-    filt.samplingRate = 44100;
-    filt.size         = 100;
-    filt.type         = Filter::FILTER_OFF;
-    filt.window_type  = Filter::WINDOW_RECT;
-
     timbreAmplitudes[0] = 50;
     timbreAmplitudes[1] = 15;
     timbreAmplitudes[3] = 15;

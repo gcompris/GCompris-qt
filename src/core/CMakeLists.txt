@@ -31,8 +31,6 @@ set(gcompris_SRCS
    config.h.in
    synth/ADSRenvelope.cpp
    synth/ADSRenvelope.h
-   synth/filter.cpp
-   synth/filter.h
    synth/GSynth.cpp
    synth/GSynth.h
    synth/linearSynthesis.cpp
