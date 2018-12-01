@@ -37,25 +37,15 @@ ActivityBase {
 
     property bool horizontalLayout: width > height
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop
+        color: "#ABCDEF"
         signal start
         signal stop
 
-        property string backgroundImagesUrl: ":/gcompris/src/activities/piano_composition/resource/background/"
-        property var backgroundImages: directory.getFiles(backgroundImagesUrl)
-
         Directory {
             id: directory
-        }
-
-        source:{
-            if(items.bar.level === 0)
-                return "qrc" + backgroundImagesUrl + backgroundImages[0]
-            else
-                return "qrc" + backgroundImagesUrl + backgroundImages[(items.bar.level - 1) % backgroundImages.length]
         }
 
         Component.onCompleted: {
@@ -240,23 +230,19 @@ ActivityBase {
 
         Rectangle {
             id: optionDeck
-            width: optionsRow.changeAccidentalStyleButtonVisible ? optionsRow.iconsWidth * 5 : optionsRow.iconsWidth * 4
-            height: optionsRow.iconsWidth * 1.7
-            border.width: 2
-            border.color: "black"
-            color: "black"
+            width: optionsRow.changeAccidentalStyleButtonVisible ? optionsRow.iconsWidth * 3.3 : optionsRow.iconsWidth * 2.2
+            height: optionsRow.iconsWidth * 1.1
+            color: "white"
             opacity: 0.5
             radius: 10
-            y: horizontalLayout ? background.height / 2 - height : instruction.height + 10
-            x: horizontalLayout ? background.width - width - 25 : background.width / 2 - width / 2
+            y: horizontalLayout ? piano.y : multipleStaff.y / 2 + instruction.height - height / 2
+            x: horizontalLayout ? multipleStaff.x + multipleStaff.width : background.width / 2 - width / 2
         }
 
         OptionsRow {
             id: optionsRow
-            anchors.top: optionDeck.top
-            anchors.topMargin: 15
             anchors.horizontalCenter: optionDeck.horizontalCenter
-            iconsWidth: horizontalLayout ? Math.min(50, (background.width - piano.x - piano.width) / 5) : 45
+            anchors.verticalCenter: optionDeck.verticalCenter
 
             playButtonVisible: true
             undoButtonVisible: true

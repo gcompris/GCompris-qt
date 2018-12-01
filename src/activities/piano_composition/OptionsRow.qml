@@ -27,7 +27,7 @@ import "../../core"
 
 Row {
     id: optionsRow
-    spacing: 15
+    spacing: iconsWidth * 0.1
 
     //: Whole note, Half note, Quarter note and Eighth note are the different length notes in the musical notation.
     readonly property var noteLengthName: [[qsTr("Whole note"), "Whole"], [qsTr("Half note"), "Half"], [qsTr("Quarter note"), "Quarter"], [qsTr("Eighth note"), "Eighth"]]
@@ -37,7 +37,7 @@ Row {
     readonly property var restAddedMessage: [qsTr("Added whole rest"), qsTr("Added half rest"), qsTr("Added quarter rest"), qsTr("Added eighth rest")]
     readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 
-    property real iconsWidth: Math.min(50, (background.width - optionsRow.spacing * 13) / 16)
+    property real iconsWidth: bar.height * 0.8
     property alias noteOptionsIndex: noteOptions.currentIndex
     property alias lyricsOrPianoModeIndex: lyricsOrPianoModeOption.currentIndex
     property alias restOptionIndex: restOptions.currentIndex
