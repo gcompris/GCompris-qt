@@ -170,9 +170,7 @@ Item {
     }
     
     Rectangle {
-        id:softColor
-        enabled: ApplicationInfo.useOpenGL ? false : true
-        
+        id:softColor        
         readonly property int invalidConditionNumber: -6
         readonly property int noteColorNumber: {
             if(noteDetails === undefined || noteType === "" || noteType === "Rest" || noteName === "")
@@ -196,16 +194,7 @@ Item {
         radius: width * 0.5
         anchors.centerIn: noteImage
         opacity: 0.8
-        visible: ApplicationInfo.useOpenGL ? false : true
-    }
-
-    // If the result is not good enough maybe have a rectangle and use opacity mask with a note
-    ColorOverlay {
-        anchors.fill: noteImage
-        source: noteImage
-        color: softColor.color
         visible: noteIsColored && (elementType != "clef")
-        transform: Scale { origin.x: width/2; xScale: noteImage.mirror == true ? -1 : 1 }
     }
 
     Timer {
