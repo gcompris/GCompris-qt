@@ -31,7 +31,7 @@ Rectangle {
     property var bar : bar
 
     width: gridPart.width
-    height: background.height / 7 - 4
+    height: background.height / 3 - 4
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     border.color: "black"
@@ -44,6 +44,8 @@ Rectangle {
 
     GCText {
         id: goalText
+        height: parent.height - bar.height
+        width: parent.width - parent.height*1.8
 
         function setTextGoal(goal) {
             if (activity.type === "equality") {
@@ -64,24 +66,17 @@ Rectangle {
         fontSize: hugeSize
         font.weight: Font.DemiBold
         maximumLineCount: 1
-        verticalAlignment: Text.AlignVCenter
+        verticalAlignment: Text.AlignTop
         horizontalAlignment: Text.AlignHCenter
 
-        anchors {
-            right: muncherLife.left
-            rightMargin: ApplicationInfo.ratio*5
-            left: bar.right
-            leftMargin: ApplicationInfo.ratio*5
-            top: parent.top
-            bottom: parent.bottom
-        }
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 
     Rectangle {
         id: muncherLife
 
         width: height
-        height: parent.height * 0.9
+        height: parent.height * 0.7
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
         anchors.rightMargin: ApplicationInfo.ratio*5
