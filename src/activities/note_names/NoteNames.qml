@@ -374,6 +374,7 @@ ActivityBase {
 
         OptionsRow {
             id: optionsRow
+            iconsWidth: 0
             visible: false
         }
 
