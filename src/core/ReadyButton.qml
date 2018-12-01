@@ -33,15 +33,13 @@ Rectangle {
      */
     property var themes: {
         "dark": {
-            borderColor: "#FF373737",
-            fillColor0: "#A8FFFFFF",
-            fillColor1: "#68FFFFFF",
-            textColor: "#FF373737"
+            borderColor: "#373737",
+            fillColor: "#FFFFFF",
+            textColor: "#373737"
         },
         "light": {
             borderColor: "white",
-            fillColor0: "#42FFFFFF",
-            fillColor1: "#23FFFFFF",
+            fillColor: "#373737",
             textColor: "white"
         }
     }
@@ -68,10 +66,7 @@ Rectangle {
     border.width: 4
     width: iAmReadyText.width + 50 * ApplicationInfo.ratio
     height: iAmReadyText.height + 50 * ApplicationInfo.ratio
-    gradient: Gradient {
-            GradientStop { position: 0 ; color: themes[theme].fillColor0 }
-            GradientStop { position: 1 ; color: themes[theme].fillColor1 }
-        }
+    color: themes[theme].fillColor
 
     GCText {
         id: iAmReadyText
