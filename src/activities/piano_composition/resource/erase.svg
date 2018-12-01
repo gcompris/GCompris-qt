@@ -12,7 +12,7 @@
    height="42"
    id="Layer_1"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="add.svg"
+   sodipodi:docname="erase.svg"
    sodipodi:version="0.32"
    space="preserve"
    style="overflow:visible"
@@ -27,7 +27,7 @@
     <rdf:RDF>
       <cc:Work
          rdf:about="">
-        <dc:title></dc:title>
+        <dc:title />
         <dc:description />
         <dc:subject>
           <rdf:Bag />
@@ -80,8 +80,8 @@
      borderopacity="1.0"
      id="base"
      inkscape:current-layer="g3"
-     inkscape:cx="15.328017"
-     inkscape:cy="18.088295"
+     inkscape:cx="1.5369209"
+     inkscape:cy="19.040462"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:window-height="1051"
@@ -126,26 +126,27 @@
        cy="119.45399"
        r="18" />
     <path
-       style="opacity:1;vector-effect:none;fill:#5471af;fill-opacity:1;stroke:none;stroke-width:11.42506504;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;vector-effect:none;fill:#df543d;fill-opacity:1;stroke:none;stroke-width:11.42506504;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        d="M 21 1 A 20 20 0 0 0 1 21 A 20 20 0 0 0 21 41 A 20 20 0 0 0 41 21 A 20 20 0 0 0 21 1 z M 21 4 A 17 17 0 0 1 38 21 A 17 17 0 0 1 21 38 A 17 17 0 0 1 4 21 A 17 17 0 0 1 21 4 z "
        transform="translate(-3.0415638e-8,98.453992)"
        id="path837" />
     <rect
-       style="opacity:1;vector-effect:none;fill:#5471af;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="overflow:visible;opacity:1;vector-effect:none;fill:#df543d;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect867"
        width="6"
        height="19.999998"
-       x="18"
-       y="109.45399"
-       ry="0" />
+       x="-72.617485"
+       y="89.315964"
+       ry="0"
+       transform="rotate(-45)" />
     <rect
-       style="overflow:visible;opacity:1;vector-effect:none;fill:#5471af;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="overflow:visible;opacity:1;vector-effect:none;fill:#df543d;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect867-3"
        width="5.9999952"
        height="20"
-       x="-122.45399"
-       y="11"
+       x="-102.31596"
+       y="-79.617485"
        ry="0"
-       transform="rotate(-90)" />
+       transform="rotate(-135)" />
   </g>
 </svg>

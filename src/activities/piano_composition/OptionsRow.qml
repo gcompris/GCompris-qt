@@ -238,7 +238,7 @@ Row {
 
     BarButton {
         id: clearButton
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/edit-clear.svg"
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/erase.svg"
         sourceSize.width: optionsRow.iconsWidth
         visible: clearButtonVisible
         onClicked: clearButtonClicked()
