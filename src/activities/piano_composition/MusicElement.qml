@@ -170,7 +170,7 @@ Item {
     }
     
     Rectangle {
-        id:softColor        
+        id:softColor
         readonly property int invalidConditionNumber: -6
         readonly property int noteColorNumber: {
             if(noteDetails === undefined || noteType === "" || noteType === "Rest" || noteName === "")
@@ -193,6 +193,7 @@ Item {
         height: width
         radius: width * 0.5
         anchors.centerIn: noteImage
+        opacity: 0.8
         visible: noteIsColored && (elementType != "clef")
     }
 
