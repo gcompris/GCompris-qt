@@ -108,6 +108,7 @@ Item {
 
         Column {
             id: staffColumn
+            z: 10
             spacing: distanceBetweenStaff
             anchors.top: parent.top
             anchors.topMargin: flickableTopMargin

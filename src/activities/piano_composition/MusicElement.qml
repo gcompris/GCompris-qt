@@ -184,16 +184,15 @@ Item {
         }
         color: {
             if(multipleStaff.notesColor === "inbuilt")
-                return (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "white"  // make image like it lays under red glass
+                return (noteColorNumber > invalidConditionNumber) ? noteColorMap[noteColorNumber] : "white"
             else
                 return multipleStaff.notesColor
         }
-        z: -10
+        z: -1
         width: noteImage.width * 0.8
         height: width
         radius: width * 0.5
         anchors.centerIn: noteImage
-        opacity: 0.8
         visible: noteIsColored && (elementType != "clef")
     }
 
