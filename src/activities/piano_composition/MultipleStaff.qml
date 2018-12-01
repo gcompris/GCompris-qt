@@ -60,7 +60,7 @@ Item {
     property bool isFlickable: true
     property bool enableNotesSound: true
     property int currentEnteringStaff: 0
-    property int bpmValue: 60
+    property int bpmValue: 120
 
     // The position where the 1st note in the centered state is to be placed.
     property real firstCenteredNotePosition: multipleStaff.width / 3.3

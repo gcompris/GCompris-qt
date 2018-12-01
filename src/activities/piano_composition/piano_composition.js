@@ -91,7 +91,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.multipleStaff.bpmValue = 60
+    items.multipleStaff.bpmValue = 120
 
     if(items.bar.level === 2) {
         items.background.clefType = "Bass"
