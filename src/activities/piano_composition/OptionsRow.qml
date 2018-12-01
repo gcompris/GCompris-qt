@@ -176,18 +176,15 @@ Row {
         }
     }
 
-    Image {
+    BarButton {
         id: playButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/play.svg"
         sourceSize.width: optionsRow.iconsWidth
         visible: playButtonVisible
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
+        onClicked: {
                 optionsRow.playButtonClicked()
                 emitOptionMessage(qsTr("Play melody"))
                 multipleStaff.play()
-            }
         }
     }
 
@@ -221,7 +218,7 @@ Row {
             anchors.leftMargin: 5
         }
 
-        Image {
+        BarButton {
             id: addClefButton
             sourceSize.width: optionsRow.iconsWidth / 1.4
             source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
@@ -230,80 +227,61 @@ Row {
             visible: clefButton.visible
             anchors.top: parent.top
             anchors.topMargin: 10
-            MouseArea {
-                anchors.fill: parent
-                onPressed: parent.scale = 0.8
-                onReleased: {
-                    background.clefType = !clefButton.currentIndex ? "Treble" : "Bass"
-                    emitOptionMessage(!clefButton.currentIndex ? qsTr("Added Treble clef") : qsTr("Added Bass clef"))
-                    parent.scale = 1
-                    clefAdded()
-                }
+            onClicked: {
+                background.clefType = !clefButton.currentIndex ? "Treble" : "Bass"
+                emitOptionMessage(!clefButton.currentIndex ? qsTr("Added Treble clef") : qsTr("Added Bass clef"))
+                parent.scale = 1
+                clefAdded()
             }
         }
     }
 
-    Image {
+    BarButton {
         id: clearButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/edit-clear.svg"
         sourceSize.width: optionsRow.iconsWidth
         visible: clearButtonVisible
-        MouseArea {
-            anchors.fill: parent
-            onClicked: clearButtonClicked()
-        }
+        onClicked: clearButtonClicked()
     }
 
-    Image {
+    BarButton {
         id: undoButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/undo.svg"
         sourceSize.width: optionsRow.iconsWidth
         visible: undoButtonVisible
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
+        onClicked: {
                 emitOptionMessage(qsTr("Undo"))
                 undoButtonClicked()
-            }
         }
     }
 
-    Image {
+    BarButton {
         id: openButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/open.svg"
         sourceSize.width: optionsRow.iconsWidth
         visible: openButtonVisible
-        MouseArea {
-            anchors.fill: parent
-            onClicked: openButtonClicked()
-        }
+        onClicked: openButtonClicked()
     }
 
-    Image {
+    BarButton {
         id: saveButton
         source: "qrc:/gcompris/src/activities/piano_composition/resource/save.svg"
         sourceSize.width: optionsRow.iconsWidth
         visible: saveButtonVisible
-        MouseArea {
-            anchors.fill: parent
-            onClicked: saveButtonClicked()
-        }
+        onClicked: saveButtonClicked()
     }
 
-    Image {
+    BarButton {
         id: changeAccidentalStyleButton
         source: changeAccidentalStyleButtonVisible ? (piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg"
                                                    : "qrc:/gcompris/src/activities/piano_composition/resource/blackflat.svg")
                                                    : ""
         sourceSize.width: optionsRow.iconsWidth
         visible: changeAccidentalStyleButtonVisible
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                piano.useSharpNotation = !piano.useSharpNotation
-                //: Sharp notes and Flat notes represents the accidental style of the notes in the music.
-                emitOptionMessage(piano.useSharpNotation ? qsTr("Sharp notes") : qsTr("Flat notes"))
-            }
+        onClicked: {
+            piano.useSharpNotation = !piano.useSharpNotation
+            //: Sharp notes and Flat notes represents the accidental style of the notes in the music.
+            emitOptionMessage(piano.useSharpNotation ? qsTr("Sharp notes") : qsTr("Flat notes"))
         }
     }
 
@@ -350,7 +328,7 @@ Row {
             anchors.leftMargin: 5
         }
 
-        Image {
+        BarButton {
             id: addRestButton
             sourceSize.width: optionsRow.iconsWidth / 1.4
             source: "qrc:/gcompris/src/activities/piano_composition/resource/add.svg"
@@ -359,14 +337,10 @@ Row {
             visible: restOptions.visible
             anchors.top: parent.top
             anchors.topMargin: 10
-            MouseArea {
-                anchors.fill: parent
-                onPressed: parent.scale = 0.8
-                onReleased: {
-                    emitOptionMessage(optionsRow.restAddedMessage[restOptionIndex])
-                    parent.scale = 1
-                    background.addMusicElementAndPushToStack(restType.toLowerCase(), "Rest")
-                }
+            onClicked: {
+                emitOptionMessage(optionsRow.restAddedMessage[restOptionIndex])
+                parent.scale = 1
+                background.addMusicElementAndPushToStack(restType.toLowerCase(), "Rest")
             }
         }
     }
