@@ -236,7 +236,7 @@ ActivityBase {
             opacity: 0.5
             radius: 10
             y: horizontalLayout ? piano.y : multipleStaff.y / 2 + instruction.height - height / 2
-            x: horizontalLayout ? multipleStaff.x + multipleStaff.width : background.width / 2 - width / 2
+            x: horizontalLayout ? multipleStaff.x + multipleStaff.width + 25 : background.width / 2 - width / 2
         }
 
         OptionsRow {
