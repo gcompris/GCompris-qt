@@ -242,6 +242,7 @@ ActivityBase {
             nbStaves: 1
             clef: clefType
             notesColor: "red"
+            softColorOpacity: 0
             isFlickable: false
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top

@@ -193,7 +193,7 @@ Item {
         height: width
         radius: width * 0.5
         anchors.centerIn: noteImage
-        opacity: 0.8
+        opacity: softColorOpacity
         visible: noteIsColored && (elementType != "clef")
     }
 

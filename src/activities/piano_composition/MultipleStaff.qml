@@ -54,6 +54,7 @@ Item {
     property alias flickableStaves: flickableStaves
     property alias musicElementModel: musicElementModel
     property alias musicElementRepeater: musicElementRepeater
+    property double softColorOpacity : 0.8
     property real flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 3.5
     readonly property real pulseMarkerX: pulseMarker.x
     readonly property bool isPulseMarkerRunning: pulseMarkerAnimation.running
