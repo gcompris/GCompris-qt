@@ -37,7 +37,7 @@ Row {
     readonly property var restAddedMessage: [qsTr("Added whole rest"), qsTr("Added half rest"), qsTr("Added quarter rest"), qsTr("Added eighth rest")]
     readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 
-    property real iconsWidth: bar.height * 0.8
+    property real iconsWidth: score.height * 1.2
     property alias noteOptionsIndex: noteOptions.currentIndex
     property alias lyricsOrPianoModeIndex: lyricsOrPianoModeOption.currentIndex
     property alias restOptionIndex: restOptions.currentIndex

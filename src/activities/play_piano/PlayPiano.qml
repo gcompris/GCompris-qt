@@ -35,7 +35,7 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
-    property bool horizontalLayout: width > height
+    property bool horizontalLayout: width > height * 1.2
 
     pageComponent: Rectangle {
         id: background
@@ -211,8 +211,8 @@ ActivityBase {
 
         PianoOctaveKeyboard {
             id: piano
-            width: horizontalLayout ? parent.width * 0.3 : parent.width * 0.7
-            height: horizontalLayout ? parent.height * 0.3 : parent.width * 0.26
+            width: horizontalLayout ? parent.width * 0.5 : parent.width * 0.7
+            height: parent.height * 0.3
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: bar.top
             anchors.bottomMargin: 20
@@ -241,8 +241,7 @@ ActivityBase {
 
         OptionsRow {
             id: optionsRow
-            anchors.horizontalCenter: optionDeck.horizontalCenter
-            anchors.verticalCenter: optionDeck.verticalCenter
+            anchors.centerIn: optionDeck
 
             playButtonVisible: true
             undoButtonVisible: true
