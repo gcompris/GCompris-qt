@@ -73,7 +73,7 @@ ActivityBase {
                                        background.height - bar.height) * 0.95
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            anchors.verticalCenterOffset: -bar.height * 0.5
+            anchors.verticalCenterOffset: -bar.height * 0.55
         }
 
         Grid {
