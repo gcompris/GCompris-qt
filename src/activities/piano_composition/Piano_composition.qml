@@ -354,6 +354,7 @@ ActivityBase {
             anchors.top: instructionBox.bottom
             anchors.topMargin: 10
             anchors.horizontalCenter: parent.horizontalCenter
+            iconsWidth: bar.height * 0.5
 
             noteOptionsVisible: bar.level > 4
             playButtonVisible: true
