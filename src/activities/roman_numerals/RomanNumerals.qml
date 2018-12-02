@@ -66,13 +66,13 @@ ActivityBase {
             property var dataset: [
                 {
                     values: ['I', 'V', 'X', 'L', 'C', 'D', 'M'],
-                    instruction: qsTr("The roman numbers are all built out of these 7 numbers:\nI and V (units, 1 and 5)\nX and L (tens, 10 and 50)\nC and D (hundreds, 100 and 500)\n and M (1000)\n An interesting observation here is that the roman numeric system lacks the number 0."),
+                    instruction: qsTr("The roman numbers are all built out of these 7 numbers:\nI and V (units, 1 and 5)\nX and L (tens, 10 and 50)\nC and D (hundreds, 100 and 500)\n and M (1000).\n An interesting observation here is that the roman numeric system lacks the number 0."),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
                     values: [1, 5, 10, 50, 100, 500, 1000],
-                    instruction: qsTr("The roman numbers are all built out of these 7 numbers:\nI and V (units, 1 and 5)\nX and L (tens, 10 and 50)\nC and D (hundreds, 100 and 500)\n and M (1000)\n An interesting observation here is that the roman numeric system lacks the number 0."),
+                    instruction: qsTr("The roman numbers are all built out of these 7 numbers:\nI and V (units, 1 and 5)\nX and L (tens, 10 and 50)\nC and D (hundreds, 100 and 500)\n and M (1000).\n An interesting observation here is that the roman numeric system lacks the number 0."),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
@@ -84,31 +84,31 @@ ActivityBase {
                 },
                 {
                     values: [2, 3, 4, 5, 6, 7, 8, 9],
-                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)"),
+                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII.\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
                     values: ['XX', 'XXX', 'XL', 'LX', 'LXX', 'LXXX', 'XC'],
-                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
                     values: [20, 30, 40, 60, 70, 80, 90],
-                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
                     values: ['CC', 'CCC', 'CD', 'DC', 'DCC', 'DCCC', 'CM', ],
-                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
+                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
                     values: [200, 300, 400, 600, 700, 800, 900],
-                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
+                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
