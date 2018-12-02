@@ -7,7 +7,8 @@
  *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
  *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
  *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick port)
- *
+ *   Timothée Giet <animtim@gmail.com> (refactoring)
+ * 
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
  *   the Free Software Foundation; either version 3 of the License, or
@@ -203,9 +204,10 @@ ActivityBase {
         Rectangle {
             id: instructionBox
             radius: 10
-            width: background.width * 0.98
-            height: background.height / 9
-            anchors.horizontalCenter: parent.horizontalCenter
+            width: background.width * 0.75
+            height: background.height * 0.15
+            anchors.right: parent.right
+            anchors.margins: 10
             opacity: 0.8
             border.width: 6
             color: "white"
@@ -228,7 +230,7 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.50 : parent.width * 0.8
+            width: horizontalLayout ? parent.width * 0.50 : parent.width * 0.6
             height: horizontalLayout ? parent.height * 0.58 : parent.height * 0.3
             nbStaves: 2
             clef: clefType
@@ -265,7 +267,7 @@ ActivityBase {
 
         PianoOctaveKeyboard {
             id: piano
-            width: horizontalLayout ? parent.width * 0.34 : parent.width * 0.7
+            width: horizontalLayout ? parent.width * 0.34 : parent.width * 0.6
             height: horizontalLayout ? parent.height * 0.40 : parent.width * 0.26
             anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
             anchors.left: horizontalLayout ? parent.left : undefined
@@ -331,6 +333,7 @@ ActivityBase {
 
         LyricsArea {
             id: lyricsArea
+            width: PianoOctaveKeyboard.width
         }
 
         GCCreationHandler {
@@ -351,14 +354,15 @@ ActivityBase {
 
         OptionsRow {
             id: optionsRow
-            anchors.top: instructionBox.bottom
-            anchors.topMargin: 10
-            anchors.horizontalCenter: parent.horizontalCenter
-            iconsWidth: bar.height * 0.5
+            columns: horizontalLayout ? 11 : 1
+            anchors.top: horizontalLayout ? instructionBox.bottom : background.top
+            anchors.margins: 10
+            anchors.left: background.left
+            iconsWidth: horizontalLayout ? background.width / 15 : (background.height - bar.height) / 12
 
             noteOptionsVisible: bar.level > 4
             playButtonVisible: true
-            clefButtonVisible: bar.level > 2
+            keyOption.clefButtonVisible: bar.level > 2
             clearButtonVisible: true
             undoButtonVisible: true
             openButtonVisible: bar.level > 6
@@ -403,7 +407,7 @@ ActivityBase {
                 print(notesToSave)
                 creationHandler.saveWindow(notesToSave)
             }
-            onClefAdded: {
+            keyOption.onClefAdded: {
                 var insertingIndex = multipleStaff.selectedIndex === -1 ? multipleStaff.musicElementModel.count : multipleStaff.selectedIndex
                 var tempModel = multipleStaff.createNotesBackup()
                 Activity.pushToStack(tempModel)

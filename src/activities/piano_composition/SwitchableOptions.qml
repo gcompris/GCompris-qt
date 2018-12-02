@@ -6,6 +6,7 @@
 *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
 *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
 *   Aman Kumar Gupta <gupta2140@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (refactoring)
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -30,34 +31,48 @@ Image {
 
     property int currentIndex: 0
     property int nbOptions: 1
-
+    
     signal clicked
 
     sourceSize.width: optionsRow.iconsWidth
-    anchors.top: parent.top
-    anchors.topMargin: -6
+
     MouseArea {
+        id: mouseArea
         anchors.fill: parent
+        hoverEnabled: true
         onClicked: {
             parent.currentIndex = (parent.currentIndex + 1) % nbOptions
-            clickAnimation.start()
+            //clickAnimation.start()
             parent.clicked()
         }
     }
-
-    SequentialAnimation {
-        id: clickAnimation
-        NumberAnimation {
-            target: switchableOptions
-            property: "scale"
-            to: 0.7
-            duration: 150
+    
+    states: [
+        State {
+            name: "notclicked"
+            PropertyChanges {
+                target: switchableOptions
+                scale: 1.0
+            }
+        },
+        State {
+            name: "clicked"
+            when: mouseArea.pressed
+            PropertyChanges {
+                target: switchableOptions
+                scale: 0.9
+            }
+        },
+        State {
+            name: "hover"
+            when: mouseArea.containsMouse
+            PropertyChanges {
+                target: switchableOptions
+                scale: 1.1
+            }
         }
-        NumberAnimation {
-            target: switchableOptions
-            property: "scale"
-            to: 1
-            duration: 150
-        }
-    }
+    ]
+    
+    Behavior on scale { NumberAnimation { duration: 70 } }
+    Behavior on opacity { PropertyAnimation { duration: 200 } }
 }
