@@ -601,9 +601,9 @@ function get() {
                 },
                 {
                     "noteName": "halfRest",
-                    "imageName": "wholeRest",
-                    "rotation": 180,
-                    "positionOnStaff": 1.6
+                    "imageName": "halfRest",
+                    "rotation": 0,
+                    "positionOnStaff": 3.4
                 },
                 {
                     "noteName": "quarterRest",

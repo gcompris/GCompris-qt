@@ -120,7 +120,6 @@ Grid {
             radius: 10
         }
         
-        // Since the half rest image is just the rotated image of whole rest image, we check if the current rest type is half, we assign the source as whole rest and rotate it by 180 degrees.
         SwitchableOptions {
             id: restOptions
             
