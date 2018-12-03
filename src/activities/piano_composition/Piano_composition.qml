@@ -123,7 +123,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         property string currentType: "Quarter"
-        property string restType: "Quarter"
+        property string restType: "Whole"
         property string clefType: bar.level == 2 ? "Bass" : "Treble"
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
 
