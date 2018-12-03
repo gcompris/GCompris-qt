@@ -57,9 +57,8 @@ Item {
             //: Treble clef and Bass clef are the notations to indicate the pitch of the sound written on it.
             emitOptionMessage(!currentIndex ? qsTr("Treble clef") : qsTr("Bass clef"))
         }
-        anchors.topMargin: 3
         anchors.left: parent.left
-        anchors.leftMargin: 5
+        anchors.verticalCenter: parent.verticalCenter
     }
     
     BarButton {

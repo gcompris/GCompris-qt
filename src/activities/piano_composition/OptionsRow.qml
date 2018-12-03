@@ -124,7 +124,7 @@ Grid {
         SwitchableOptions {
             id: restOptions
             
-            readonly property string restTypeImage: ((optionsRow.noteLengthName[currentIndex][1] === "Half") ? "Whole" : optionsRow.noteLengthName[currentIndex][1]).toLowerCase()
+            readonly property string restTypeImage: (optionsRow.noteLengthName[currentIndex][1]).toLowerCase()
             
             source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
             nbOptions: optionsRow.noteLengthName.length
@@ -134,7 +134,6 @@ Grid {
             }
             width: optionsRow.iconsWidth * 0.9
             sourceSize.width: width
-            rotation: optionsRow.noteLengthName[currentIndex][1] === "Half" ? 180 : 0
             visible: restOptionsVisible
             anchors.topMargin: -3
             anchors.left: parent.left
@@ -202,7 +201,7 @@ Grid {
     SwitchableOptions {
         id: lyricsOrPianoModeOption
         nbOptions: optionsRow.lyricsOrPianoModes.length
-        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1-icon.svg".arg(optionsRow.lyricsOrPianoModes[currentIndex][1])
+        source: "qrc:/gcompris/src/activities/piano_composition/resource/%1.svg".arg(optionsRow.lyricsOrPianoModes[currentIndex][1])
         visible: lyricsOrPianoModeOptionVisible
         onClicked: emitOptionMessage(optionsRow.lyricsOrPianoModes[currentIndex][0])
     }
