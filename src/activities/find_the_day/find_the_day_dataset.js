@@ -43,27 +43,27 @@ function get() {
                  ],
                  [ // Level 1 Questions
                   {
-                      "question": qsTr("Find the date 13 days after 3 May."),
+                      "question": qsTr("Find the date 13 days after May 3."),
                       "answer": {"year": 2018, "month": 4, "day": 16}
                   },
                   {
-                      "question": qsTr("Find the date 7 days after 1 October."),
+                      "question": qsTr("Find the date 7 days after October 1."),
                       "answer": {"year": 2018, "month": 9, "day": 8}
                   },
                   {
-                      "question": qsTr("Find the date 31 days after 12 July."),
+                      "question": qsTr("Find the date 31 days after July 12."),
                       "answer": {"year": 2018, "month": 7, "day": 12}
                   },
                   {
-                      "question": qsTr("Find the date two weeks after 27 November."),
+                      "question": qsTr("Find the date two weeks after November 27."),
                       "answer": {"year": 2018, "month": 11, "day": 11}
                   },
                   {
-                      "question": qsTr("Find the date 19 days before 1 September."),
+                      "question": qsTr("Find the date 19 days before September 1."),
                       "answer": {"year": 2018, "month": 7, "day": 13}
                   },
                   {
-                      "question": qsTr("Find the date 5 days before 8 December."),
+                      "question": qsTr("Find the date 5 days before December 8."),
                       "answer": {"year": 2018, "month": 11, "day": 3}
                   }
                  ]
@@ -83,23 +83,23 @@ function get() {
                  ],
                  [ // Level 2  Questions
                   {
-                      "question": qsTr("Find day of week 3 days after 5 December."),
+                      "question": qsTr("Find day of week 3 days after December 5."),
                       "answer": {"dayOfWeek": 6}
                   },
                   {
-                      "question": qsTr("Find day of week 12 days before 12 November."),
+                      "question": qsTr("Find day of week 12 days before November 12."),
                       "answer": {"dayOfWeek": 3}
                   },
                   {
-                      "question": qsTr("Find day of week 32 days after 5 January."),
+                      "question": qsTr("Find day of week 32 days after January 5."),
                       "answer": {"dayOfWeek": 2}
                   },
                   {
-                      "question": qsTr("Find day of week 5 days after 23 February."),
+                      "question": qsTr("Find day of week 5 days after February 23."),
                       "answer": {"dayOfWeek": 3}
                   },
                   {
-                      "question": qsTr("Find day of week 17 days before 16 August."),
+                      "question": qsTr("Find day of week 17 days before August 16."),
                       "answer": {"dayOfWeek": 1}
                   }
 
@@ -120,23 +120,23 @@ function get() {
 
                  [ // Level 3 Questions
                   {
-                      "question": qsTr("Find the date 2 weeks and 3 days after 12 January."),
+                      "question": qsTr("Find the date 2 weeks and 3 days after January 12."),
                       "answer": {"year": 2018, "month": 0, "day": 29}
                   },
                   {
-                      "question": qsTr("Find the date 3 weeks and 2 days after 22 March."),
+                      "question": qsTr("Find the date 3 weeks and 2 days after March 22."),
                       "answer": {"year": 2018, "month": 3, "day": 14}
                   },
                   {
-                      "question": qsTr("Find the date 5 weeks and 6 days after 5 October."),
+                      "question": qsTr("Find the date 5 weeks and 6 days after October 5."),
                       "answer": {"year": 2018, "month": 10, "day": 15}
                   },
                   {
-                      "question": qsTr("Find the date 1 week and 1 day before 8 August."),
+                      "question": qsTr("Find the date 1 week and 1 day before August 8."),
                       "answer": {"year": 2018, "month": 6, "day": 31}
                   },
                   {
-                      "question": qsTr("Find the date 2 weeks and 5 days before 2 July."),
+                      "question": qsTr("Find the date 2 weeks and 5 days before July 2."),
                       "answer": {"year": 2018, "month": 5, "day": 13}
                   }
 
@@ -156,23 +156,23 @@ function get() {
                  ],
                  [ // Level 4 Questions
                   {
-                      "question": qsTr("Find day of week 5 months and 2 days after 3 July."),
+                      "question": qsTr("Find day of week 5 months and 2 days after July 3."),
                       "answer": {"dayOfWeek": 3}
                   },
                   {
-                      "question": qsTr("Find day of week 2 months and 4 days after 8 October."),
+                      "question": qsTr("Find day of week 2 months and 4 days after October 8."),
                       "answer": {"dayOfWeek": 3}
                   },
                   {
-                      "question": qsTr("Find day of week 1 month and 3 days before 28 December."),
+                      "question": qsTr("Find day of week 1 month and 3 days before December 28."),
                       "answer": {"dayOfWeek": 0}
                   },
                   {
-                      "question": qsTr("Find day of week 8 months and 7 days after 28 February."),
+                      "question": qsTr("Find day of week 8 months and 7 days after February 28."),
                       "answer": {"dayOfWeek": 0}
                   },
                   {
-                      "question": qsTr("Find day of week 3 months and 3 days before 15 September."),
+                      "question": qsTr("Find day of week 3 months and 3 days before September 15."),
                       "answer": {"dayOfWeek": 2}
                   }
                  ]
@@ -191,23 +191,23 @@ function get() {
                  ],
                  [ // Level 5 Questions
                   {
-                      "question": qsTr("Find the date 2 months, 1 week and 5 days after 12 January."),
+                      "question": qsTr("Find the date 2 months, 1 week and 5 days after January 12."),
                       "answer": {"year": 2018, "month": 2, "day": 24}
                   },
                   {
-                      "question": qsTr("Find the date 3 months, 2 weeks and 1 day after 23 August."),
+                      "question": qsTr("Find the date 3 months, 2 weeks and 1 day after August 23."),
                       "answer": {"year": 2018, "month": 11, "day": 8}
                   },
                   {
-                      "question": qsTr("Find the date 5 months, 3 weeks and 2 days after 20 March."),
+                      "question": qsTr("Find the date 5 months, 3 weeks and 2 days after March 20."),
                       "answer": {"year": 2018, "month": 8, "day": 12}
                   },
                   {
-                      "question": qsTr("Find the date 1 month 1 week and 1 day before 10 September."),
+                      "question": qsTr("Find the date 1 month 1 week and 1 day before September 10."),
                       "answer": {"year": 2018, "month": 7, "day": 2}
                   },
                   {
-                      "question": qsTr("Find the date 2 months, 1 week and 8 days before 7 April."),
+                      "question": qsTr("Find the date 2 months, 1 week and 8 days before April 7."),
                       "answer": {"year": 2018, "month": 0, "day": 23}
                   }
                  ]
