@@ -163,7 +163,7 @@ ActivityBase {
             border.width: 1 * ApplicationInfo.ratio
             color: "white"
             width: parent.width * 0.9
-            height:info.height * 1.3
+            height: background.height/5
             anchors.top: charList.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.topMargin: 5 * ApplicationInfo.ratio
@@ -172,11 +172,13 @@ ActivityBase {
                 id:info
                 color: "black"
                 anchors.centerIn: parent
-                horizontalAlignment: Text.AlignHCenter
+                horizontalAlignment:  Text.AlignHCenter
                 width: parent.width * 0.94
+                height: info_rect.height
                 wrapMode: Text.WordWrap
                 fontSize: regularSize
                 text: items.dataset[items.count].text
+                fontSizeMode: Text.Fit
             }
         }
 
