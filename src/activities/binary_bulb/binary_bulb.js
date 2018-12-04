@@ -32,7 +32,7 @@ var tutorialInstructions = [
                 "instructionQml" : "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial1.qml"
             },
             {
-                "instruction": qsTr("Computers use transistors to count and transistors have only 2 states, 0 and 1. Mathematically they are represented by binary digits, a digit like a transistor has 2 states, 0 and 1."),
+                "instruction": qsTr("Computers use transistors to count and transistors have only two states, 0 and 1. Mathematically, these states are represented by 0 and 1, which makes up the binary system of numeration."),
                 "instructionQml" : "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial2.qml"
             },
             {
@@ -40,11 +40,11 @@ var tutorialInstructions = [
                 "instructionQml": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial3.qml"
             },
             {
-                "instruction": qsTr("Binary system uses these digits in a very efficient way, allowing with only 8 bits to count from 0 to 255."),
+                "instruction": qsTr("Binary system uses these numbers very efficiently, allowing to count from 0 to 255 with 8 bits only."),
                 "instructionQml": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial4.qml"
             },
             {
-                "instruction": qsTr("Each bit has a weight, from right to left 1, 2, 4, 8, 16, 32 etc.. They correspond to 2e0, 2e1, 2e2, 2e3 etc."),
+                "instruction": qsTr("Each bit had a progressive value, corresponding to the powers of 2, ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."),
                 "instructionQml": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial5.qml"
             },
             {
