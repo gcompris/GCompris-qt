@@ -56,7 +56,7 @@ var tutorialInstructions = [
                 "instructionQml": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial7.qml"
             },
             {
-                "instruction": qsTr("This image will help you to compute bits' weight."),
+                "instruction": qsTr("This image will help you to compute bits' value."),
                 "instructionQml": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial5.qml"
             }
         ]
