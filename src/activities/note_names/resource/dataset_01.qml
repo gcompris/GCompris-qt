@@ -97,7 +97,7 @@ QtObject {
             "sequence": ["F1", "G1", "A1"]
         }
     ]
-    property string objective: qsTr("This activity will teach you to read notes from F1 in bass clef up to D6 in treble clef.<br>For each level you will learn new notes and train the one you have already learned.<br>Reference notes are colored in red and will help you to read the notes placed around them.")
+    property string objective: qsTr("This activity will teach you to read notes from F1 in bass clef up to D6 in treble clef.<br>For each level you will learn new notes and train the ones you have already learned.<br>Reference notes are colored in red and will help you to read the notes placed around them.")
     property var referenceNotes: {
         "Treble": ["C", "G"],
         "Bass": ["F", "C"]
