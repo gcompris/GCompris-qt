@@ -37,6 +37,7 @@ Rectangle {
     property Item bonus
     property int selectedIndex: -1
     property alias containerModel: list.model
+    property int listPix: wholeBody.height /30
 
     signal up
     signal down
@@ -111,7 +112,7 @@ Rectangle {
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width * 0.94
                 wrapMode: Text.WordWrap
-                fontSize: regularSize
+                font.pixelSize: listPix
             }
 
             MouseArea {
@@ -147,7 +148,7 @@ Rectangle {
         id: list
         anchors {
             fill: parent
-            bottomMargin: bar.height
+            bottomMargin: bar.height*1.5 + listScrollerB.height+20
             leftMargin: 30 * ApplicationInfo.ratio
             rightMargin: 30 * ApplicationInfo.ratio
             topMargin: 10 * ApplicationInfo.ratio
@@ -168,7 +169,9 @@ Rectangle {
                            "Select the line to move, then touch its target position.")
                 width: parent.width - 4
                 wrapMode: Text.WordWrap
-                fontSize: regularSize
+                horizontalAlignment: Text.AlignHCenter
+                font.pointSize: NaN
+                font.pixelSize: listPix
             }
         }
         onCurrentIndexChanged: timer.restart()
@@ -179,6 +182,21 @@ Rectangle {
             NumberAnimation { properties: "y"; duration: 500 }
         }
         Component.onCompleted: currentIndex = -1
+    }
+
+    GCButtonScroll {
+        id:listScrollerB
+        upVisible: list.visibleArea.yPosition <= 0 ? 0 : 1
+        downVisible: list.visibleArea.yPosition + list.visibleArea.heightRatio >= 1 ? 0 : 1
+        anchors {
+            bottom: parent.bottom
+            bottomMargin: bar.height +10
+            horizontalCenter: parent.horizontalCenter
+        }
+        isHorizontal: true
+        onUp: list.flick(0,700)
+        onDown: list.flick(0,-700)
+
     }
 
     Timer {
