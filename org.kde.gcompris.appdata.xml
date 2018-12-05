@@ -4,7 +4,6 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>GCompris Educational Game</name>
-  <name xml:lang="ar">لعبة «فهمت» التعليميّة</name>
   <name xml:lang="ca">Joc educatiu GCompris</name>
   <name xml:lang="ca-valencia">Joc educatiu GCompris</name>
   <name xml:lang="de">GCompris-Lernspiel</name>
@@ -24,7 +23,7 @@
   <name xml:lang="pl">Gra edukacyjna GCompris</name>
   <name xml:lang="pt">Jogo Educativo GCompris</name>
   <name xml:lang="pt-BR">Jogo educacional GCompris</name>
-  <name xml:lang="ro">Joc educațional GCompris</name>
+  <name xml:lang="ro">Jocul educațional GCompris</name>
   <name xml:lang="ru">Набор обучающих игр GCompris</name>
   <name xml:lang="sk">Výuková hra GCompris</name>
   <name xml:lang="sl">Izobraževalna igra GCompris</name>
@@ -35,7 +34,6 @@
   <name xml:lang="zh-CN">GCompris 教育游戏</name>
   <name xml:lang="zh-TW">GCompris 教育遊戲</name>
   <summary>Multi-Activity Educational game for children 2 to 10</summary>
-  <summary xml:lang="ar">لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات</summary>
   <summary xml:lang="ca">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
   <summary xml:lang="ca-valencia">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
   <summary xml:lang="de">Lernspiel mit vielen Aktivitäten für Kinder von 2 bis 10 Jahren</summary>
@@ -67,7 +65,6 @@
   <summary xml:lang="zh-TW">為 2-10 歲孩子設計的教育遊戲</summary>
   <description>
     <p>GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.</p>
-    <p xml:lang="ar">«فهمت» هو طقم برمجيّات تعليميّة عالية الجودة يضمّ مختلف الأنشطة للأطفال من سنتين إلى ١٠ سنوات.</p>
     <p xml:lang="ca">El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
     <p xml:lang="ca-valencia">El GCompris és una suite de programari educatiu d'alta qualitat, que inclou una gran quantitat d'activitats per a nens i nenes entre els 2 i els 10 anys.</p>
     <p xml:lang="cs">GCompris je vysoce kvalitní vzdělávací softwarový balík, skládající se z mnoha aktivit pro děti ve věku 2-10.</p>
@@ -80,21 +77,22 @@
     <p xml:lang="hi">जीकॉम्परी एक शैक्षिक सॉफ्टवेयर सूट है जिसमें 2 से 10 वर्ष की आयु के बच्चों के लिए कई गतिविधियां शामिल हैं।</p>
     <p xml:lang="id">GCompris adalah kumpulan permainan mendidik yang berisi berbagai kegiatan untuk anak umur 2 sampai dengan 10 Tahun.</p>
     <p xml:lang="it">GCompris è una raccolta di alta qualità di programmi didattici che comprende numerose attività per bambini da 2 a 10 anni.</p>
-    <p xml:lang="nl">GCompris is een educatief softwarepakket van hoge kwaliteit, inclusief een groot aantal activiteiten voor kinderen van 2 tot 10 jaar.</p>
+    <p xml:lang="nl">GCompris is een educatieve software suite van hoge kwaliteit die bestaat uit vele activiteiten voor kinderen vanaf twee tot tien jaar.</p>
     <p xml:lang="nn">GCompris er eit leik og lær-spel med mange ulike aktivitetar for ungar frå 2 til 10 år.</p>
     <p xml:lang="pl">GCompris to wysokiej jakości pakiet oprogramowania edukacyjnego z licznymi aktywnościami dla dzieci w wieku od 2 do 10 lat.</p>
-    <p xml:lang="pt">O GCompris é um pacote aplicacional educativo de alta qualidade, composto por uma grande quantidade de actividades para crianças dos 2 aos 10 anos.</p>
-    <p xml:lang="pt-BR">O GCompris é uma suíte educacional de alta qualidade, que inclui uma grande quantidade de atividades para crianças com idade entre 2 e 10 anos.</p>
+    <p xml:lang="pt">O GCompris é um pacote de aplicações educativas que é composto por diversas actividades para as crianças dos 2 aos 10 anos de idade.</p>
+    <p xml:lang="pt-BR">GCompris é uma suíte de software educacional de alta qualidade que inclui um grande número de atividades para crianças com idade entre 2 e 10 anos.</p>
     <p xml:lang="ro">GCompris este un pachet de software educațional compus din numeroase activități pentru copii între 2 și 10 ani.</p>
     <p xml:lang="ru">GCompris — большая коллекция обучающих игр и упражнений для детей от 2 до 10 лет.</p>
+    <p xml:lang="sk">GCompris je balík výukového softvéru zložený z rôznych aktivít pre deti od 2 do 10 rokov.</p>
     <p xml:lang="sl">Program GCompris je visokokakovostna izobraževalna zbirka, sestavljena iz velikega števila dejavnosti, ki so namenjena otrokom med drugim in desetim letom starosti.</p>
     <p xml:lang="sv">GCompris är en högkvalitativ pedagogisk programvarusvit som innehåller ett stort antal aktiviteter för barn mellan 2 och 10 år.</p>
     <p xml:lang="tr">GCompris, 2 ile 10 yaş arasındaki çocuklar için çok sayıda etkinlik içeren bir eğitim yazılımı paketidir.</p>
     <p xml:lang="uk">GCompris — високоякісний комплекс навчального програмного забезпечення, що складається з багатьох вправ для дітей від 2 до 10 років.</p>
     <p xml:lang="x-test">xxGCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.xx</p>
+    <p xml:lang="zh-TW">GCompris 是一套教育軟體的集合，它提供適合兩歲到十歲兒童各種不同的活動。</p>
     <p>Some of the activities are game orientated, but nonetheless
     still educational.</p>
-    <p xml:lang="ar">بعض الأنشطة هدفها الترفيه، ولكنّها -مع ذلك- تعليميّة.</p>
     <p xml:lang="ca">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
     <p xml:lang="ca-valencia">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
     <p xml:lang="cs">Některé aktivity jsou v podobě her, ale přesto jsou poučné.</p>
@@ -105,7 +103,7 @@
     <p xml:lang="et">Mõned tegevused on mängulisemad, aga siiski õppeotstarbega.</p>
     <p xml:lang="fi">Jotkin toiminnoista ovat pelimäisiä mutta silti opettavaisia.</p>
     <p xml:lang="fr">Certaines activités sont ludiques mais ont toujours un intérêt pédagogique.</p>
-    <p xml:lang="gl">Algunhas das actividades están orientadas ao xogo, pero son aínda así educativas.</p>
+    <p xml:lang="gl">Algunhas das actividades están orientadas a xogar pero son tamén educativas.</p>
     <p xml:lang="hi">कुछ गतिविधियां खेल केंद्रित हैं, लेकिन फिर भी शैक्षिक हैं।</p>
     <p xml:lang="id">Beberapa aktivitas mengacu ke permainan, namun tetap saja mendidik.</p>
     <p xml:lang="it">Alcune delle attività sono orientate al gioco, ma comunque didattiche.</p>
@@ -127,7 +125,6 @@
     <p xml:lang="zh-TW">有些活動是遊戲性質，但還是有很棒的教育意義。</p>
     <p>Below you can find a list of categories with some of the
     activities available in that category.</p>
-    <p xml:lang="ar">يمكنك أن تجد أدناه قائمة بالفئات وبعض الأنشطة الموجودة في كل فئة.</p>
     <p xml:lang="ca">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="ca-valencia">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="de">Sie können Aktivitäten aus folgenden Bereichen in GCompris finden:</p>
@@ -137,7 +134,7 @@
     <p xml:lang="et">Allpool leiab kategooriate loetelu koos mõningate neile omaste tegevustega.</p>
     <p xml:lang="fi">Alta löydät luettelot luokista sekä maininnan joistakin kuhunkin luokkaan kuuluvista toiminnoista.</p>
     <p xml:lang="fr">Vous pouvez trouver ci-dessous une liste des catégories avec certaines de leurs activités.</p>
-    <p xml:lang="gl">A continuación atopará unha lista de categorías e as actividades dispoñíbeis en cada unha desas categorías.</p>
+    <p xml:lang="gl">A continuación pode atopar unha lista de categorías con algunhas das actividades que hai dispoñíbeis en cada categoría.</p>
     <p xml:lang="hi">नीचे आप उस श्रेणी में उपलब्ध कुछ गतिविधियों के साथ श्रेणियों की एक सूची पा सकते हैं।</p>
     <p xml:lang="id">Di bawah ini kamu dapat menemukan daftar kategori-kategori dengan beberapa aktivitas-aktivitas yang tersedia dalam kategori tersebut.</p>
     <p xml:lang="it">Di seguito puoi trovare un elenco di categorie con alcune delle attività disponibili per categoria.</p>
@@ -159,7 +156,6 @@
     <p xml:lang="zh-TW">下方您可以看到該類別的活動清單。</p>
     <ul>
       <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
-      <li xml:lang="ar">استكشاف الحاسوب: لوحة المفاتيح والفأرة ومختلف إيماءات الفأرة وغيرها.</li>
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
       <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
       <li xml:lang="de">Entdeckung des Computers: Tastatur, Maus, verschiedene Mausgesten ...</li>
@@ -169,7 +165,7 @@
       <li xml:lang="et">arvuti tundmaõppimine: klaviatuur, hiir, erinevad hiireliigutused ...</li>
       <li xml:lang="fi">tietokoneen oppiminen: näppäimistö, hiiri, eri hiirieleet…</li>
       <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
-      <li xml:lang="gl">Descubrimento do computador: teclado, rato, xestos do rato, etc.</li>
+      <li xml:lang="gl">Descubrindo o computador: o teclado, o rato, os xestos do rato…</li>
       <li xml:lang="hi">कंप्यूटर की खोज: कीबोर्ड, माउस, अलग माउस इशारों, ...</li>
       <li xml:lang="id">penemuan komputer: keyboard, mos, perbedaan pergerakan mos, ..</li>
       <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ...</li>
@@ -191,7 +187,6 @@
       <li xml:lang="zh-TW">電腦探索：鍵盤、滑鼠、不同的滑鼠手勢等</li>
       <li>arithmetic: table memory, enumeration, mirror image, balance
     the scale, change giving, ...</li>
-      <li xml:lang="ar">الحساب: جدول الضرب والعدّ وصورة المرآة وموازنة كفّتا الميزان وإعطاء الباقي وغيرها.</li>
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
@@ -201,17 +196,17 @@
       <li xml:lang="et">aritmeetika: nähtu mäletamine, loendamine, peegelpildid, kaalu tasakaalustamine, raha tagasiandmine...</li>
       <li xml:lang="fi">aritmetiikka: kertotaulujen opettelu, laskutehtävät, peilikuvan piirtäminen, vaa’an tasapainottaminen, vaihtorahan antaminen, …</li>
       <li xml:lang="fr">arithmétique : apprentissage des tables d'opérations mathématiques, l'énumération, de symétrie d'image, équilibrage de la balance, rendre la monnaie…</li>
-      <li xml:lang="gl">Aritmética: táboas de memoria, enumeración, imaxes espello, equilibrio de balanzas, cálculo do cambio, etc.</li>
+      <li xml:lang="gl">Aritmética: táboas de memoria, enumeracóns, imaxes espello, equilibrar a balanza, dar o cambio…</li>
       <li xml:lang="hi">अंकगणितीय: तालिका मेमोरी, गणण, दर्पण छवि, पैमाने संतुलन, देय परिवर्तन, ...</li>
       <li xml:lang="id">aritmatika: tabel ingatan, pencacahan, cerminan gambar, menyeimbangkan skala, ganti memberi, ..</li>
       <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ...</li>
       <li xml:lang="ko">산술 연산: 표 기억하기, 배열하기, 그림 뒤집기, 저울 맞추기, 거스름돈 계산하기, ...</li>
-      <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wisselgeld geven, ...</li>
+      <li xml:lang="nl">rekenen: tafels oefenen, reeksen, afbeelding spiegelen, de schaal in evenwicht brengen, wijziging gegeven, ...</li>
       <li xml:lang="nn">rekning: gongetabellen, teljing, spegelbilete, måling av vekt, vekslepengar, …</li>
       <li xml:lang="pl">arytmetyka: tablice pamięciowe, wyliczanie, obraz lustrzany, wyrównoważanie wagi, wydawanie reszty, ...</li>
       <li xml:lang="pt">aritmética: memória da tabuada, enumeração, imagem-espelho, equilíbrio de balanças, trocos, ...</li>
       <li xml:lang="pt-BR">matemática: memória matemática, enumeração, imagens espelhadas, balanceamento de escalas, moedas e troco, ...</li>
-      <li xml:lang="ro">aritmetică: tabla înmulțirii, enumerări, imagini în oglindă, echilibrează balanța, darea restului, ...</li>
+      <li xml:lang="ro">aritmetică: tabla înmulțirii, enumerări, imagini în oglindă, echilibrarea balanței, datul restului, ...</li>
       <li xml:lang="ru">арифметика: игра «память» с подсчётом, счёт, отражение рисунка, уравновешивание весов, подсчёт сдачи, ...</li>
       <li xml:lang="sk">aritmetické: tabuľková pamäť, výpočet, zrkalový obrázok, vyváženie mierky, zmena dávky...</li>
       <li xml:lang="sl">računstvo: spomin z računi, štetje, uravnoteži tehtnico, vračanje drobiža, ...</li>
@@ -222,7 +217,6 @@
       <li xml:lang="zh-CN">算数：表格记忆、枚举、镜像、天平、找零……</li>
       <li xml:lang="zh-TW">數學運算：表格記憶、列舉、影像映射、平衡、找零計算等</li>
       <li>science: the canal lock, color mixing, gravity concept, ...</li>
-      <li xml:lang="ar">العلوم: قفل القناة ومزج الألوان ومفهوم الجاذبيّة وغيرها.</li>
       <li xml:lang="ca">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
       <li xml:lang="ca-valencia">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
       <li xml:lang="de">Wissenschaft: Kanalschleuse, Farbmischung, Gravitation,...</li>
@@ -232,17 +226,17 @@
       <li xml:lang="et">loodusteadused: kanali lüüs, värvide segamine, gravitatsiooni mõistmine...</li>
       <li xml:lang="fi">tiede: kanavasulku, värien sekoitus, painovoiman käsite…</li>
       <li xml:lang="fr">science : fonctionnement d'une écluse, mélange des couleurs, concept de la gravité…</li>
-      <li xml:lang="gl">Ciencia: o bloqueo da canle, mestura de cores, o concepto de gravidade, etc.</li>
+      <li xml:lang="gl">Ciencia: o bloqueo da canle, mesturar cores, o concepto da gravitación, etc.</li>
       <li xml:lang="hi">विज्ञान: नहर लॉक, रंग मिश्रण, गुरुत्वाकर्षण अवधारणा, ...</li>
       <li xml:lang="id">ilmu pengetahuan: kunci kanal, pencampuran warna, konsep gravitasi, ...</li>
       <li xml:lang="it">scienza: la chiusa del canale, miscelazione dei colori, il concetto di gravità, ...</li>
       <li xml:lang="ko">과학: 운하 갑문, 색 섞기, 중력, ...</li>
-      <li xml:lang="nl">natuurkunde: de sluizen bedienen, mengen van kleuren, concept van zwaartekracht, ...</li>
+      <li xml:lang="nl">natuurkunde: de sluis, mengen van kleuren, concept van zwaartekracht, ...</li>
       <li xml:lang="nn">vitskap: kanalsluse, blanding av fargar, tyngdekraft, …</li>
       <li xml:lang="pl">nauka: śluza na kanale, mieszanie barw, poczucie grawitacji, ...</li>
       <li xml:lang="pt">ciência: bloqueio de canais, misturas de cores, conceito de gravidade, ...</li>
       <li xml:lang="pt-BR">ciência: comporta de canal, mistura de cores, conceito de gravidade, ...</li>
-      <li xml:lang="ro">științe: podul mobil, combinarea culorilor, gravitația, ...</li>
+      <li xml:lang="ro">științe: ecluza unui canal, amestecul culorilor, conceptul de gravitație, ...</li>
       <li xml:lang="ru">наука: работа судоходного шлюза, смешивание цветов, представление о гравитации, ...</li>
       <li xml:lang="sk">veda: zamknutý kanál, miešanie farieb, koncept grvitácie...</li>
       <li xml:lang="sl">znanost: zapornica kanala, mešanje barv, koncept težnosti ...</li>
@@ -253,7 +247,6 @@
       <li xml:lang="zh-CN">科学：运河闸门、颜料色彩混合、重力的概念……</li>
       <li xml:lang="zh-TW">科學：顏色混合、重力觀念、運河鎖等等</li>
       <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
-      <li xml:lang="ar">الألعاب: الذاكرة و«وصّل ٤» و"إكس-أُو" و«سودوكو»، وبرج هانوي وغيرها.</li>
       <li xml:lang="ca">jocs: memòria, connectar 4, tres en ratlla, sudoku, torre de Hanoi...</li>
       <li xml:lang="ca-valencia">jocs: memòria, connectar 4, tres en ratlla, sudoku, torre de Hanoi...</li>
       <li xml:lang="de">Spiele: Memory, Vier gewinnt, Tic-Tac-Toe, Sudoku, Türme von Hanoi,...</li>
@@ -263,12 +256,12 @@
       <li xml:lang="et">mängud: mälu, nelja ühendamine, trips-traps-trull, sudoku, Hanoi tornid...</li>
       <li xml:lang="fi">pelit: muisti, neljän suora, ristinolla, sudoku, Hanoin tornit…</li>
       <li xml:lang="fr">jeux : trouve les paires, puissance 4, morpion, sudoku, la tour d'hanoï…</li>
-      <li xml:lang="gl">Xogos: memoria, conectar 4, pai nai fillo, sudoku, torre de Hanoi, etc.</li>
+      <li xml:lang="gl">Xogos: memoria, catro en liña, pai nai fillo, sudoku, a torre de Hanoi, etc.</li>
       <li xml:lang="hi">खेल: स्मृति, कनेक्ट 4, टिक टैक टो , सुडोकू, हनोई टॉवर, ...</li>
       <li xml:lang="id">permainan: ingatan, menyambung 4, tic tac toe, sudoku, menara hanoi, ...</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ...</li>
       <li xml:lang="ko">게임: 메모리 게임, 4개 연결하기, 삼목, 수도쿠, 하노이 탑, ...</li>
-      <li xml:lang="nl">spellen: geheugenspel, vier op een rij, boter kaas en eieren, sudoku, torens van hanoi, ...</li>
+      <li xml:lang="nl">spellen: geheugenspel, vier verbinden, tic-tac-toe, sudoku, torens van hanoi, ...</li>
       <li xml:lang="nn">spel: hugsespel, fire på rad, bondesjakk, sudoku, tårnet i Hanoi, …</li>
       <li xml:lang="pl">gry: na pamięć, łączenie czwórek, tic tac toe, sudoku, wieża hanoi, ...</li>
       <li xml:lang="pt">jogos: memória, 4 em linha, jogo do galo, sudoku, torres de Hanói, ...</li>
@@ -284,7 +277,6 @@
       <li xml:lang="zh-CN">游戏：记忆、四子棋、井子棋、数独、汉诺塔……</li>
       <li xml:lang="zh-TW">遊戲：記憶遊戲、四子棋、井字遊戲、數獨、河內塔等等</li>
       <li>reading: reading practice, ...</li>
-      <li xml:lang="ar">القراءة: ممارسة القراءة وغيرها.</li>
       <li xml:lang="ca">lectura: practicar la lectura...</li>
       <li xml:lang="ca-valencia">lectura: practicar la lectura...</li>
       <li xml:lang="de">Lesen: Leseübungen ...</li>
@@ -294,12 +286,12 @@
       <li xml:lang="et">lugemine</li>
       <li xml:lang="fi">lukeminen: lukemisen harjoittelu…</li>
       <li xml:lang="fr">lecture : entraînement à la lecture…</li>
-      <li xml:lang="gl">Lectura: práctica de lectura, etc.</li>
+      <li xml:lang="gl">Lectura: práctica de lectura…</li>
       <li xml:lang="hi">पढ़ना: पढ़ना अभ्यास, ...</li>
       <li xml:lang="id">membaca: latihan membaca, ...</li>
       <li xml:lang="it">lettura: esercitare la lettura, ...</li>
       <li xml:lang="ko">읽기: 읽기 연습, ...</li>
-      <li xml:lang="nl">lezen: lees oefening, ...</li>
+      <li xml:lang="nl">lezen: lezen oefenen, ...</li>
       <li xml:lang="nn">lesing: leseøvingar, …</li>
       <li xml:lang="pl">czytanie: nauka czytania, ...</li>
       <li xml:lang="pt">leitura: exercícios de leitura, ...</li>
@@ -316,7 +308,6 @@
       <li xml:lang="zh-TW">閱讀：閱讀練習等等</li>
       <li>other: learn to tell time, the braille system, maze, music
     instruments, ...</li>
-      <li xml:lang="ar">أخرى: تعلّم قراءة الوقت ونظام «بريل» وألغاز متاهات والآلات الموسيقيّة وغيرها.</li>
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
@@ -326,7 +317,7 @@
       <li xml:lang="et">muu: kellaaja väljendamine, Braille'i kiri, labürint, muusikariistad...</li>
       <li xml:lang="fi">muuta: kellonajan kertominen, Braille-järjestelmä, sokkelo, soittimet…</li>
       <li xml:lang="fr">autre : apprendre à dire l'heure, le système braille, le labyrinthe, les instruments de musique…</li>
-      <li xml:lang="gl">Outros: aprender a dicir as horas, o sistema braille, labirinto, instrumentos musicais, etc.</li>
+      <li xml:lang="gl">Outros: aprender a dicir as horas, o sistema Braille, labirintos, instrumentos musicais, etc.</li>
       <li xml:lang="hi">अन्य: समय बताओ, ब्रेल प्रणाली, भूलभुलैया, संगीत वाद्ययंत्र, ...</li>
       <li xml:lang="id">lainnya: belajar menceritakan waktu, sistem braille, labirin, alat musik, ...</li>
       <li xml:lang="it">altro: impara a leggere l'ora, il sistema braille, labirinto, strumenti musicali, ...</li>
@@ -351,7 +342,6 @@
     are being developed. GCompris is free software, that means that
     you can adapt it to your own needs, improve it and, most
     importantly, share it with children everywhere.</p>
-    <p xml:lang="ar">في «فهمت» حاليًا أكثر من ١٠٠ نشاط وثمّة غيرها يجري تطويرها. «فهمت» برمجيّة حرّة، هذا يعني أنك تستطيع تطويعها حسب احتياجك، وكذلك تطويرها، والأهم من ذلك هو مشاركتها مع الأطفال في كل مكان.</p>
     <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
     <p xml:lang="ca-valencia">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
     <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
@@ -361,7 +351,7 @@
     <p xml:lang="et">Praegu pakub GCompris üle 100 tegevuse ja neid tuleb aina juurde. GCompris on vaba tarkvara, mis tähendab, et seda saab kohandada oma vajadustele, täiustada, ja mis peamine, jagada oma täiustusi lastega kogu maailmas.</p>
     <p xml:lang="fi">GComprisissa on nykyisellään yli sata toimintoa, ja lisää kehitetään. GCompris on vapaata ohjelmistoa, mikä tarkoittaa, että voit muokata sitä tarpeisiisi, parannella sitä ja mikä tärkeintä jakaa sitä lapsille kaikkialla.</p>
     <p xml:lang="fr">Actuellement, GCompris contient plus de 100 activités et d'autres sont en cours de développement. GCompris est un logiciel libre, ce qui veut dire que vous pouvez l'adapter à vos propres besoins, le modifier et, le plus important, le partager avec des enfants où que ce soit.</p>
-    <p xml:lang="gl">Actualmente GCompris ofrece máis de 100 actividades e hai máis en desenvolvemento. GCompris é software libre, o que significa que pode adaptalo para axustalo ás súas necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.</p>
+    <p xml:lang="gl">Actualmente, GCompris ofrece máis de 100 actividades e hai máis en camiño. GCompris é software libre, o que significa que calquera pode adaptalo ás súas propias necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.</p>
     <p xml:lang="hi">वर्तमान में जी कॉम्पप्रस 100 गतिविधियों से अधिक प्रदान करता है और अधिक विकसित किए जा रहे हैं। जी कॉम्पप्रस मुफ्त सॉफ्टवेयर है, इसका मतलब है कि आप इसे अपनी आवश्यकताओं के अनुसार अनुकूलित कर सकते हैं, इसमें सुधार कर सकते हैं, और सबसे महत्वपूर्ण बात, इसे हर जगह बच्चों के साथ साझा कर सकते हैं।</p>
     <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu dapat menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
     <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
@@ -385,7 +375,6 @@
   <screenshots>
     <screenshot type="default">
       <caption>GCompris main menu</caption>
-      <caption xml:lang="ar">قائمة «فهمت» الرئيسيّة</caption>
       <caption xml:lang="ca">Menú principal del GCompris</caption>
       <caption xml:lang="ca-valencia">Menú principal del GCompris</caption>
       <caption xml:lang="cs">Hlavní nabídka GCompris</caption>
@@ -400,196 +389,55 @@
       <caption xml:lang="pl">Główne menu GCompris</caption>
       <caption xml:lang="pt">Menu principal do GCompris</caption>
       <caption xml:lang="pt-BR">Menu principal do GCompris</caption>
+      <caption xml:lang="ro">Meniul principal GCompris</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="x-test">xxGCompris main menuxx</caption>
+      <caption xml:lang="zh-TW">GCompris 主畫面</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/main_menu.png</image>
     </screenshot>
     <screenshot>
       <caption>"Click on an uppercase letter" activity</caption>
-      <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Fes clic en una lletra en majúscula»</caption>
-      <caption xml:lang="cs">Aktivita "Klikni na velké písmeno"</caption>
-      <caption xml:lang="en-GB">"Click on an uppercase letter" activity</caption>
-      <caption xml:lang="es">Actividad «Pulsa en una letra mayúscula»</caption>
-      <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
-      <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
-      <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
-      <caption xml:lang="nl">"Click op een hoofdletter" activiteit</caption>
-      <caption xml:lang="pt">Actividade para "Carregar numa letra maiúscula"</caption>
-      <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
-      <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
-      <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
     </screenshot>
     <screenshot>
       <caption>"Learning Clock" activity</caption>
-      <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Rellotge d'aprenentatge»</caption>
-      <caption xml:lang="cs">Aktivita "Nauč se hodiny"</caption>
-      <caption xml:lang="en-GB">"Learning Clock" activity</caption>
-      <caption xml:lang="es">Actividad «Juego del reloj»</caption>
-      <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
-      <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
-      <caption xml:lang="it">Attività «Impara l'orologio»</caption>
-      <caption xml:lang="nl">Activiteit "Leren klok kijken</caption>
-      <caption xml:lang="pt">Actividade para "Descobrir o Relógio"</caption>
-      <caption xml:lang="sv">Aktiviteten "Lära sig klockan"</caption>
-      <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
-      <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/clockgame.png</image>
     </screenshot>
     <screenshot>
       <caption>"Mixing color of paint" activity</caption>
-      <caption xml:lang="ca">Activitat «Barreja els colors de la pintura»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Barreja els colors de la pintura»</caption>
-      <caption xml:lang="cs">Aktivita "Míchání tiskařských barev"</caption>
-      <caption xml:lang="en-GB">"Mixing colour of paint" activity</caption>
-      <caption xml:lang="es">Actividad «Mezcla de colores»</caption>
-      <caption xml:lang="fr">L'activité « Mélange de la couleur de peinture »</caption>
-      <caption xml:lang="gl">Actividade de «Mesturar a cor da pintura»</caption>
-      <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
-      <caption xml:lang="nl">Activiteit "Verfkleuren mengen"</caption>
-      <caption xml:lang="pt">Actividade para "Misturar a cor das tintas"</caption>
-      <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
-      <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
-      <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/color_mix.png</image>
     </screenshot>
     <screenshot>
       <caption>"Colors" activity</caption>
-      <caption xml:lang="ca">Activitat «Colors»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Colors»</caption>
-      <caption xml:lang="cs">Aktivita "Barvy"</caption>
-      <caption xml:lang="en-GB">"Colours" activity</caption>
-      <caption xml:lang="es">Actividad «Colores»</caption>
-      <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
-      <caption xml:lang="gl">Actividade de «Cores»</caption>
-      <caption xml:lang="it">Attività «Colori»</caption>
-      <caption xml:lang="nl">Activiteit "Kleuren"</caption>
-      <caption xml:lang="pt">Actividade de "Cores"</caption>
-      <caption xml:lang="sv">Aktiviteten "Färger"</caption>
-      <caption xml:lang="uk">Вправа з кольорами</caption>
-      <caption xml:lang="x-test">xx"Colors" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/colors.png</image>
     </screenshot>
     <screenshot>
       <caption>"Build the same model" activity</caption>
-      <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
-      <caption xml:lang="cs">Aktivita "Postav stejný model"</caption>
-      <caption xml:lang="en-GB">"Build the same model" activity</caption>
-      <caption xml:lang="es">Actividad «Grúa»</caption>
-      <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
-      <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
-      <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
-      <caption xml:lang="nl">Activiteit "Bouw hetzelfde model"</caption>
-      <caption xml:lang="pt">Actividade para "Construir o mesmo modelo"</caption>
-      <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
-      <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
-      <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/crane.png</image>
     </screenshot>
     <screenshot>
       <caption>"Count the items" activity</caption>
-      <caption xml:lang="ca">Activitat «Compta els elements»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Compta els elements»</caption>
-      <caption xml:lang="cs">Aktivita "Spočítej položky"</caption>
-      <caption xml:lang="en-GB">"Count the items" activity</caption>
-      <caption xml:lang="es">Actividad «Enumeración»</caption>
-      <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
-      <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
-      <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
-      <caption xml:lang="nl">Activiteit "Tel het aantal items"</caption>
-      <caption xml:lang="pt">Actividade para "Contar os itens"</caption>
-      <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
-      <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
-      <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/enumerate.png</image>
     </screenshot>
     <screenshot>
       <caption>"The fifteen game" activity</caption>
-      <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
-      <caption xml:lang="ca-valencia">Activitat «El joc dels quinze»</caption>
-      <caption xml:lang="cs">Aktivita "Hra patnáct"</caption>
-      <caption xml:lang="en-GB">"The fifteen game" activity</caption>
-      <caption xml:lang="es">Actividad «Quince»</caption>
-      <caption xml:lang="fr">L'activité « Le jeu du taquin »</caption>
-      <caption xml:lang="gl">Actividade de «O xogo dos quince»</caption>
-      <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
-      <caption xml:lang="nl">Activiteit "Het vijftien-spel"</caption>
-      <caption xml:lang="pt">Actividade do "Jogo dos quinze"</caption>
-      <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
-      <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
-      <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/fifteen.png</image>
     </screenshot>
     <screenshot>
       <caption>"Hexagon" activity</caption>
-      <caption xml:lang="ca">Activitat «Hexàgon»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Hexàgon»</caption>
-      <caption xml:lang="cs">Aktivita "Hexagon"</caption>
-      <caption xml:lang="en-GB">"Hexagon" activity</caption>
-      <caption xml:lang="es">Actividad «Hexágono»</caption>
-      <caption xml:lang="fr">L'activité « Localiser la fraise »</caption>
-      <caption xml:lang="gl">Actividade de «Hexágono»</caption>
-      <caption xml:lang="it">Attività «Esagono»</caption>
-      <caption xml:lang="nl">Activiteit "Hexagon"</caption>
-      <caption xml:lang="pt">Actividade de "Hexágono"</caption>
-      <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
-      <caption xml:lang="uk">Вправа «Шестикутник»</caption>
-      <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/hexagon.png</image>
     </screenshot>
     <screenshot>
       <caption>"Balance the scales properly" activity</caption>
-      <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Equilibra correctament la balança»</caption>
-      <caption xml:lang="cs">Aktivita "Správně vyrovnat váhy"</caption>
-      <caption xml:lang="en-GB">"Balance the scales properly" activity</caption>
-      <caption xml:lang="es">Actividad «Balanzas»</caption>
-      <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
-      <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma adecuada»</caption>
-      <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
-      <caption xml:lang="nl">Activiteit "Breng de weegschaal in evenwicht"</caption>
-      <caption xml:lang="pt">Actividade para "Equilibrar as balanças adequadamente"</caption>
-      <caption xml:lang="sv">Aktiviteten "Balansera vågen rätt"</caption>
-      <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
-      <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
     </screenshot>
     <screenshot>
       <caption>"End of chess game" activity</caption>
-      <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Final de la partida d'escacs»</caption>
-      <caption xml:lang="cs">Aktivita "Konec šachové partie"</caption>
-      <caption xml:lang="en-GB">"End of chess game" activity</caption>
-      <caption xml:lang="es">Actividad «Final de partida de ajedrez»</caption>
-      <caption xml:lang="fr">L'activité « Le jeu des échecs »</caption>
-      <caption xml:lang="gl">Actividade de «Final dunha partida de xadrez»</caption>
-      <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
-      <caption xml:lang="nl">Activiteit "Eindspel van schaken"</caption>
-      <caption xml:lang="pt">Actividade de "Fim de jogo de xadrez"</caption>
-      <caption xml:lang="sv">Aktiviteten "Slutspel i schack"</caption>
-      <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
-      <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
     </screenshot>
     <screenshot>
       <caption>"A sliding-block puzzle game" activity</caption>
-      <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
-      <caption xml:lang="ca-valencia">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
-      <caption xml:lang="cs">Aktivita "Hra s posouváním bloků"</caption>
-      <caption xml:lang="en-GB">"A sliding-block puzzle game" activity</caption>
-      <caption xml:lang="es">Actividad «Tráfico»</caption>
-      <caption xml:lang="fr">L'activité « Sortir la voiture du parking »</caption>
-      <caption xml:lang="gl">Actividade de «Un crebacabezas de bloques que se moven»</caption>
-      <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
-      <caption xml:lang="nl">Activiteit "Een puzzel met schuivende blokken"</caption>
-      <caption xml:lang="pt">Actividade de "Puzzle de blocos deslizantes"</caption>
-      <caption xml:lang="sv">Aktiviteten "Pusselspel med glidande block"</caption>
-      <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
-      <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/traffic.png</image>
     </screenshot>
   </screenshots>
