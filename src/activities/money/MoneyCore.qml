@@ -59,6 +59,10 @@ ActivityBase {
             property alias tuxMoney: tuxMoney
             property alias bar: bar
             property alias bonus: bonus
+            property int itemIndex
+            property bool pocketFocus
+            property var area
+            property alias pocket: pocket
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -119,9 +123,21 @@ ActivityBase {
                             sourceSize.height: column.itemHeight
                             height: column.itemHeight
 
+                            property bool selected: false
+
                             MultiPointTouchArea {
                                 anchors.fill: parent
                                 onReleased: Activity.unpay(index)
+                            }
+
+                            Rectangle{
+                                width: parent.width * 1.1
+                                height: parent.height * 1.1
+                                color: "#88111111"
+                                anchors.centerIn : parent
+                                radius: 5
+                                visible: selected
+                                z: -1
                             }
                         }
                     }
@@ -273,17 +289,73 @@ ActivityBase {
                             sourceSize.height:  column.itemHeight
                             height: column.itemHeight
 
+                            property bool selected: false
+
                             MultiPointTouchArea {
                                 anchors.fill: parent
                                 onReleased: Activity.pay(index)
+                            }
+                            Rectangle {
+                                width: parent.width * 1.1
+                                height: parent.height * 1.1
+                                color: "#88111111"
+                                anchors.centerIn: parent
+                                radius: 5
+                                visible: selected
+                                z: -1
                             }
                         }
                     }
                 }
             }
-
         }
 
+
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Tab) {
+                if(items.area.count !== 0 && items.itemIndex !== -1)
+                    items.area.itemAt(items.itemIndex).selected = false
+
+                if(items.pocketFocus) {
+                    items.pocketFocus = false
+                    items.area = answer
+                }
+                else {
+                    items.pocketFocus = true
+                    items.area = pocket
+                }
+                items.itemIndex = 0
+            }
+
+            if(items.area.count !== 0) {
+                if(items.itemIndex >= 0)
+                    items.area.itemAt(items.itemIndex).selected = false
+
+                if(event.key === Qt.Key_Right) {
+                    if(items.itemIndex != (items.area.count-1))
+                        items.itemIndex++
+                    else
+                        items.itemIndex = 0
+                }
+                if(event.key === Qt.Key_Left) {
+                    if(items.itemIndex > 0)
+                        items.itemIndex--
+                    else
+                        items.itemIndex = items.area.count-1
+                }
+                if([Qt.Key_Space, Qt.Key_Return].indexOf(event.key) != -1 && items.itemIndex !== -1 ) {
+                    if(items.pocketFocus)
+                        Activity.pay(items.itemIndex)
+                    else
+                        Activity.unpay(items.itemIndex)
+                    if(items.itemIndex > 0)
+                        items.itemIndex--
+                }
+            }
+
+            if(items.area.count !== 0 && items.itemIndex !== -1)
+                items.area.itemAt(items.itemIndex).selected = true
+        }
 
         DialogHelp {
             id: dialogHelp
