@@ -711,6 +711,12 @@ function initLevel() {
                       .arg(priceText)
 
     }
+
+    //Keyboard reset
+    items.itemIndex = -1
+    items.pocketFocus = true
+    items.area = items.pocket
+
 }
 
 // Given a price return a random object
