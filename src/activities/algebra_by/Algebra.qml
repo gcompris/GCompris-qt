@@ -69,20 +69,24 @@ ActivityBase {
             onTriggered: Activity.run()
         }
 
-        Bar {
-            id: bar
-            content: BarEnumContent { value: help | home | level }
-            onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
-            }
-            onPreviousLevelClicked: {
-                Activity.previousLevel()
-            }
-            onNextLevelClicked: {
-                Activity.nextLevel()
+        Item {
+            width: background.width - 60 * ApplicationInfo.ratio
+            height: background.height
+            Bar {
+                id: bar
 
+                content: BarEnumContent { value: help | home | level }
+                onHelpClicked: {
+                    displayDialog(dialogHelpLeftRight)
+                }
+                onPreviousLevelClicked: {
+                    Activity.previousLevel()
+                }
+                onNextLevelClicked: {
+                    Activity.nextLevel()
+                }
+                onHomeClicked: home()
             }
-            onHomeClicked: home()
         }
 
         Balloon {
@@ -131,7 +135,7 @@ ActivityBase {
 
     Flow {
         id:textFlow
-        x: 200 * ApplicationInfo.ratio
+        x: parent.width / 2 - width / 2
         y: 80
         width: parent.width / 2
         height: 100
