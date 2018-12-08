@@ -714,8 +714,7 @@ function initLevel() {
 
     //Keyboard reset
     items.itemIndex = -1
-    items.pocketFocus = true
-    items.area = items.pocket
+    items.selectedArea = items.pocket
 
 }
 
