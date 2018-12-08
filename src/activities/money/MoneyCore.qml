@@ -51,8 +51,8 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property GCSfx audioEffects: activity.audioEffects
-            property alias answerModel: answerModel
-            property alias pocketModel: pocketModel
+            property alias answerModel: answerArea.pocketModel
+            property alias pocketModel: pocketArea.pocketModel
             property alias store: store
             property alias instructions: instructions
             property alias tux: tux
@@ -60,9 +60,9 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int itemIndex
-            property bool pocketFocus
-            property var area
-            property alias pocket: pocket
+            property var selectedArea
+            property alias pocket: pocketArea.answer
+            property alias answer: answerArea.answer
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -83,65 +83,9 @@ ActivityBase {
             property int itemHeight: itemWidth * 0.59
 
             // === The Answer Area ===
-            Rectangle {
+            MoneyArea {
                 id: answerArea
-                height: (column.itemHeight + 10) * column.nbLines
-                width: column.width
-                color: "#55333333"
-                border.color: "black"
-                border.width: 2
-                radius: 5
-
-                Flow {
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
-                    anchors.fill: parent
-                    spacing: 10
-
-                    add: Transition {
-                        NumberAnimation {
-                            properties: "x"
-                            from: parent.width * 0.05
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
-
-                    move: Transition {
-                        NumberAnimation {
-                            properties: "x,y"
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
-
-                    Repeater {
-                        id: answer
-                        model: ListModel { id: answerModel }
-                        Image {
-                            source: Activity.url + img
-                            sourceSize.height: column.itemHeight
-                            height: column.itemHeight
-
-                            property bool selected: false
-
-                            MultiPointTouchArea {
-                                anchors.fill: parent
-                                onReleased: Activity.unpay(index)
-                            }
-
-                            Rectangle{
-                                width: parent.width * 1.1
-                                height: parent.height * 1.1
-                                color: "#88111111"
-                                anchors.centerIn : parent
-                                radius: 5
-                                visible: selected
-                                z: -1
-                            }
-                        }
-                    }
-                }
+                onTransaction: Activity.unpay(index)
             }
 
             // === The Store Area ===
@@ -249,90 +193,33 @@ ActivityBase {
             }
 
             // === The Pocket Area ===
-            Rectangle {
+            MoneyArea {
                 id: pocketArea
-                height: (column.itemHeight + 10) * column.nbLines
-                width: column.width
-                color: "#661111AA"
-                border.color: "black"
-                border.width: 2
-                radius: 5
-
-                Flow {
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
-                    anchors.fill: parent
-                    spacing: 10
-
-                    add: Transition {
-                        NumberAnimation {
-                            properties: "x"
-                            from: parent.width * 0.05
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
-
-                    move: Transition {
-                        NumberAnimation {
-                            properties: "x,y"
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
-
-                    Repeater {
-                        id: pocket
-                        model: ListModel { id: pocketModel }
-                        Image {
-                            source: Activity.url + img
-                            sourceSize.height:  column.itemHeight
-                            height: column.itemHeight
-
-                            property bool selected: false
-
-                            MultiPointTouchArea {
-                                anchors.fill: parent
-                                onReleased: Activity.pay(index)
-                            }
-                            Rectangle {
-                                width: parent.width * 1.1
-                                height: parent.height * 1.1
-                                color: "#88111111"
-                                anchors.centerIn: parent
-                                radius: 5
-                                visible: selected
-                                z: -1
-                            }
-                        }
-                    }
-                }
+                onTransaction: Activity.pay(index)
             }
         }
 
 
         Keys.onPressed: {
             if(event.key === Qt.Key_Tab) {
-                if(items.area.count !== 0 && items.itemIndex !== -1)
-                    items.area.itemAt(items.itemIndex).selected = false
+                if(items.selectedArea.count !== 0 && items.itemIndex !== -1)
+                    items.selectedArea.itemAt(items.itemIndex).selected = false
 
-                if(items.pocketFocus) {
-                    items.pocketFocus = false
-                    items.area = answer
+                if(items.selectedArea == items.pocket) {
+                    items.selectedArea = items.answer
                 }
                 else {
-                    items.pocketFocus = true
-                    items.area = pocket
+                    items.selectedArea = items.pocket
                 }
                 items.itemIndex = 0
             }
 
-            if(items.area.count !== 0) {
+            if(items.selectedArea.count !== 0) {
                 if(items.itemIndex >= 0)
-                    items.area.itemAt(items.itemIndex).selected = false
+                    items.selectedArea.itemAt(items.itemIndex).selected = false
 
                 if(event.key === Qt.Key_Right) {
-                    if(items.itemIndex != (items.area.count-1))
+                    if(items.itemIndex != (items.selectedArea.count-1))
                         items.itemIndex++
                     else
                         items.itemIndex = 0
@@ -341,10 +228,10 @@ ActivityBase {
                     if(items.itemIndex > 0)
                         items.itemIndex--
                     else
-                        items.itemIndex = items.area.count-1
+                        items.itemIndex = items.selectedArea.count-1
                 }
-                if([Qt.Key_Space, Qt.Key_Return].indexOf(event.key) != -1 && items.itemIndex !== -1 ) {
-                    if(items.pocketFocus)
+                if([Qt.Key_Space, Qt.Key_Enter, Qt.Key_Return].indexOf(event.key) != -1 && items.itemIndex !== -1 ) {
+                    if(items.selectedArea == items.pocket)
                         Activity.pay(items.itemIndex)
                     else
                         Activity.unpay(items.itemIndex)
@@ -353,8 +240,8 @@ ActivityBase {
                 }
             }
 
-            if(items.area.count !== 0 && items.itemIndex !== -1)
-                items.area.itemAt(items.itemIndex).selected = true
+            if(items.selectedArea.count !== 0 && items.itemIndex !== -1)
+                items.selectedArea.itemAt(items.itemIndex).selected = true
         }
 
         DialogHelp {
