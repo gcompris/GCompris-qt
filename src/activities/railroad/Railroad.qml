@@ -301,8 +301,8 @@ ActivityBase {
                     opacity: 0.3
                     radius: 5
                     visible: (items.currentKeyZone === answerZone) && (!trainAnimationTimer.running && !animateFlow.running) && items.keyNavigationMode
-                    x: visible ? answerZone.currentItem.x : 0
-                    y: visible ? answerZone.currentItem.y : 0
+                    x: (visible && answerZone.currentItem) ? answerZone.currentItem.x : 0
+                    y: (visible && answerZone.currentItem) ? answerZone.currentItem.y : 0
                     Behavior on x {
                         SpringAnimation {
                             spring: 3
@@ -481,8 +481,8 @@ ActivityBase {
                 opacity: 0.8
                 radius: 5
                 visible: items.currentKeyZone === sampleList && items.keyNavigationMode
-                x: (sampleList.currentIndex >= 0) ? sampleList.currentItem.x : 0
-                y: (sampleList.currentIndex >= 0) ? sampleList.currentItem.y : 0
+                x: (sampleList.currentIndex >= 0 && sampleList.currentItem) ? sampleList.currentItem.x : 0
+                y: (sampleList.currentIndex >= 0 && sampleList.currentItem) ? sampleList.currentItem.y : 0
                 Behavior on x {
                     SpringAnimation {
                         spring: 3
