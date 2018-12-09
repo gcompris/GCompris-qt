@@ -85,6 +85,7 @@ ActivityBase {
 
         property string clefType: "Treble"
         property bool isRhythmPlaying: false
+        property int metronomeSpeed: 30000 / multipleStaff.bpmValue
 
         Keys.onSpacePressed: tempo.tempoPressed()
 
@@ -231,6 +232,7 @@ ActivityBase {
 
             Image {
                 id: metronomeNeedle
+                
                 source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_needle.svg"
                 fillMode: Image.PreserveAspectFit
                 width: parent.height
@@ -246,7 +248,7 @@ ActivityBase {
                         from: 0
                         to: 12
                         direction: RotationAnimator.Shortest
-                        duration: 463
+                        duration: metronomeSpeed
                     }
                     ScriptAction {
                         script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
@@ -256,14 +258,14 @@ ActivityBase {
                         from: 12
                         to: 0
                         direction: RotationAnimator.Shortest
-                        duration: 463
+                        duration: metronomeSpeed
                     }
                     RotationAnimator {
                         target: metronomeNeedle
                         from: 0
                         to: 348
                         direction: RotationAnimator.Shortest
-                        duration: 463
+                        duration: metronomeSpeed
                     }
                     ScriptAction {
                         script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
@@ -273,7 +275,7 @@ ActivityBase {
                         from: 348
                         to: 0
                         direction: RotationAnimator.Shortest
-                        duration: 463
+                        duration: metronomeSpeed
                     }
                 }
             }
