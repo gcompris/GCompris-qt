@@ -63,6 +63,7 @@ Grid {
     signal playButtonClicked
     signal bpmIncreased
     signal bpmDecreased
+    signal bpmChanged
     signal emitOptionMessage(string message)
 
 

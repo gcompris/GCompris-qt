@@ -292,6 +292,10 @@ ActivityBase {
             onBpmIncreased: {
                 multipleStaff.bpmValue++
             }
+            onBpmChanged: {
+                Activity.initSubLevel()
+                background.isRhythmPlaying = true
+            }
         }
 
         DialogHelp {
