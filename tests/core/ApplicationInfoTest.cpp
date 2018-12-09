@@ -34,6 +34,11 @@ private slots:
     void LocaleTest();
     void WindowTest_data();
     void WindowTest();
+
+    void getVoicesLocaleTest_data();
+    void getVoicesLocaleTest();
+    void getAudioFilePathForLocaleTest_data();
+    void getAudioFilePathForLocaleTest();
 };
 
 void ApplicationInfoTest::LocaleTest_data()
@@ -104,6 +109,69 @@ void ApplicationInfoTest::WindowTest()
     QVERIFY(appInfo.useOpenGL() == useOpenGL);
     QVERIFY(appInfo.applicationWidth() == applicationWidth);
     QVERIFY(appInfo.isPortraitMode() == portraitMode);
+}
+
+void ApplicationInfoTest::getVoicesLocaleTest_data()
+{
+    QTest::addColumn<QString>("actual");
+    QTest::addColumn<QString>("expected");
+    QTest::newRow("default") << GC_DEFAULT_LOCALE
+                             << "en";
+    QTest::newRow("en_US") << "en_US"
+                           << "en";
+    QTest::newRow("pt_BR") << "pt_BR"
+                           << "pt_BR";
+    QTest::newRow("pt_PT") << "pt_PT"
+                           << "pt";
+    QTest::newRow("fr_FR") << "fr_FR"
+                           << "fr";
+}
+
+void ApplicationInfoTest::getVoicesLocaleTest()
+{
+    // Set default locale to "C". ALlows to test GC_DEFAULT_LOCALE
+    QLocale defaultLocale = QLocale::system();
+    QLocale::setDefault(QLocale::c());
+    ApplicationInfo appInfo;
+    ApplicationInfo::getInstance();
+
+    QFETCH(QString, actual);
+    QFETCH(QString, expected);
+
+    QCOMPARE(appInfo.getVoicesLocale(actual), expected);
+
+    QLocale::setDefault(defaultLocale);
+}
+
+void ApplicationInfoTest::getAudioFilePathForLocaleTest_data()
+{
+    QTest::addColumn<QString>("file");
+    QTest::addColumn<QString>("locale");
+    QTest::addColumn<QString>("expected");
+    QTest::newRow("absolutePath_en") << "/$LOCALE/$CA"
+                                        << "en"
+                                        << QString("/en/%1").arg(COMPRESSED_AUDIO);
+    QTest::newRow("absolutePath_pt_BR") << "qrc:/$LOCALE/test"
+                                        << "pt_BR"
+                                        << "qrc:/pt_BR/test";
+    QTest::newRow("absolute_fr") << ":/test/test2"
+                                 << "unused"
+                                 << ":/test/test2";
+    QTest::newRow("relative_fr") << "$LOCALE/$CA"
+                                 << "fr"
+                                 << QString("qrc:/gcompris/data/fr/%1").arg(COMPRESSED_AUDIO);
+}
+
+void ApplicationInfoTest::getAudioFilePathForLocaleTest()
+{
+    ApplicationInfo appInfo;
+    ApplicationInfo::getInstance();
+
+    QFETCH(QString, file);
+    QFETCH(QString, locale);
+    QFETCH(QString, expected);
+
+    QCOMPARE(appInfo.getAudioFilePathForLocale(file, locale), expected);
 }
 
 QTEST_MAIN(ApplicationInfoTest)
