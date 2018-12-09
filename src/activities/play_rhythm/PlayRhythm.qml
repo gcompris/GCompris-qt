@@ -87,7 +87,7 @@ ActivityBase {
         property bool isRhythmPlaying: false
         property int metronomeSpeed: 30000 / multipleStaff.bpmValue - 37
 
-        Keys.onSpacePressed: if (!background.isRhythmPlaying && !bonus.isPlaying && (!items.isWrongRhythm || multipleStaff.isPulseMarkerRunning))
+        Keys.onSpacePressed: if (!background.isRhythmPlaying && !bonus.isPlaying)
                                 tempo.tempoPressed()
 
         Rectangle {
@@ -193,16 +193,17 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             MouseArea {
                 anchors.fill: parent
-                enabled: !background.isRhythmPlaying && !bonus.isPlaying && (!items.isWrongRhythm || multipleStaff.isPulseMarkerRunning)
+                enabled: !background.isRhythmPlaying && !bonus.isPlaying
                 onPressed: tempo.tempoPressed()
                 onReleased: tempo.scale = 1
             }
 
             function tempoPressed() {
                 tempo.scale = 0.85
-                if(!multipleStaff.isMusicPlaying) {
-                    Activity.currentNote = 0
+                if(!multipleStaff.isMusicPlaying && Activity.currentNote == 0) {
                     multipleStaff.play()
+                } else if (!multipleStaff.isMusicPlaying && Activity.currentNote > 0){
+                    items.bonus.bad("flower")
                 }
                 GSynth.generate(60, 100)
                 Activity.checkAnswer(multipleStaff.pulseMarkerX)

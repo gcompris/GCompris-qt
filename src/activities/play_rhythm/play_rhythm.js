@@ -52,6 +52,7 @@ function initLevel() {
     items.multipleStaff.isPulseMarkerDisplayed = levels[currentLevel].pulseMarkerVisible
     items.isMetronomeVisible = levels[currentLevel].metronomeVisible
     nextSubLevel()
+    currentNote = 0
 }
 
 function nextSubLevel() {
