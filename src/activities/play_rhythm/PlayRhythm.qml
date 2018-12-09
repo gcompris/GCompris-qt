@@ -87,7 +87,8 @@ ActivityBase {
         property bool isRhythmPlaying: false
         property int metronomeSpeed: 30000 / multipleStaff.bpmValue - 37
 
-        Keys.onSpacePressed: tempo.tempoPressed()
+        Keys.onSpacePressed: if (!background.isRhythmPlaying && !bonus.isPlaying && (!items.isWrongRhythm || multipleStaff.isPulseMarkerRunning))
+                                tempo.tempoPressed()
 
         Rectangle {
             id: instructionBox
