@@ -86,6 +86,7 @@ Item {
             onReleased: {
                 decreaseBpm.stop()
                 bpmDown.scale = 1
+                bpmChanged()
             }
         }
         states: [
@@ -152,6 +153,7 @@ Item {
             onReleased: {
                 increaseBpm.stop()
                 bpmUp.scale = 1
+                bpmChanged()
             }
         }
         states: [
