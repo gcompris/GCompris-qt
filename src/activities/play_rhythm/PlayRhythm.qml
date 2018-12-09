@@ -85,7 +85,7 @@ ActivityBase {
 
         property string clefType: "Treble"
         property bool isRhythmPlaying: false
-        property int metronomeSpeed: 30000 / multipleStaff.bpmValue
+        property int metronomeSpeed: 30000 / multipleStaff.bpmValue - 37
 
         Keys.onSpacePressed: tempo.tempoPressed()
 
