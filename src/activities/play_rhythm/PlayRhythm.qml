@@ -164,6 +164,7 @@ ActivityBase {
             id: multipleStaff
             width: horizontalLayout ? parent.width * 0.6 : parent.width * 0.9
             height: horizontalLayout ? parent.height * 1.1 : parent.height * 0.76
+            bpmValue: 90
             nbStaves: 1
             clef: clefType
             isFlickable: false
@@ -275,6 +276,21 @@ ActivityBase {
                         duration: 463
                     }
                 }
+            }
+        }
+        
+        OptionsRow {
+            id: optionsRow
+            anchors.verticalCenter: tempo.verticalCenter
+            anchors.left: tempo.right
+
+            bpmVisible: true
+            onBpmDecreased: {
+                if(multipleStaff.bpmValue - 1 >= 1)
+                    multipleStaff.bpmValue--
+            }
+            onBpmIncreased: {
+                multipleStaff.bpmValue++
             }
         }
 
