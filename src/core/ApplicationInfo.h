@@ -332,7 +332,7 @@ public:
 
     /// @endcond
 
-protected slots:
+public slots:
 	/**
 	 * Returns the resource root-path used for GCompris resources.
 	 */
