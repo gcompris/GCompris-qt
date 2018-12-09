@@ -33,7 +33,6 @@ ActivityBase {
     property string backgroundImg
     property var dataset
     property bool withTux: false
-    property string additionnalPath
 
     onStart: focus = true
     onStop: {}
@@ -49,6 +48,7 @@ ActivityBase {
         signal stop
 
         property alias items: items
+        property bool keyNavigationVisible: false
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -68,10 +68,11 @@ ActivityBase {
             property int playerScore: playerScore.text
             property var dataset: activity.dataset
             property alias containerModel: containerModel
-            property alias cardRepeater: cardRepeater
             property alias grid: grid
+            property bool blockClicks: false
             property int columns
             property int rows
+            property int spacing: 5 * ApplicationInfo.ratio
         }
 
         onStart: Activity.start(items)
@@ -82,30 +83,47 @@ ActivityBase {
             id: containerModel
         }
 
-        Grid {
+
+        GridView {
             id: grid
-            spacing: 5 * ApplicationInfo.ratio
-            columns: items.columns
-            rows: items.rows
+            width: background.width - (items.columns + 1) * items.spacing - anchors.margins
+            height: background.height - (items.rows + 1) * items.spacing - anchors.margins
+            cellWidth: (background.width - (items.columns + 1) * items.spacing) / items.columns - anchors.margins
+            cellHeight: (background.height - (items.rows + 1) * items.spacing) / (items.rows + 0.5) - anchors.margins
             anchors {
                 left: background.left
                 right: background.right
                 top: background.top
-                margins: 10 * ApplicationInfo.ratio
+                bottom: background.bottom
+                margins: 5 * ApplicationInfo.ratio
             }
 
-            Repeater {
-                id: cardRepeater
-                model: containerModel
+            model: containerModel
 
-                delegate: CardItem {
-                    pairData: pairData_
-                    tuxTurn: background.items.tuxTurn
-                    width: (background.width - (grid.columns + 1) * grid.spacing) / grid.columns
-                    height: (background.height - (grid.rows + 1) * grid.spacing) / (grid.rows + 0.5)
-                    audioVoices: activity.audioVoices
-                    audioEffects: activity.audioEffects
-               }
+            function getItemAtIndex(i) {
+                var xi = (i % items.columns) * cellWidth + anchors.margins
+                var yi = (i / items.columns) * cellHeight + anchors.margins
+                return itemAt(xi, yi)
+            }
+
+            delegate: CardItem {
+                pairData: pairData_
+                tuxTurn: background.items.tuxTurn
+                width: (background.width - (items.columns + 1) * items.spacing) / items.columns - 15 * ApplicationInfo.ratio
+                height: (background.height - (items.rows + 1) * items.spacing) / (items.rows + 0.5) - 15 * ApplicationInfo.ratio
+                audioVoices: activity.audioVoices
+                audioEffects: activity.audioEffects
+                onIsFoundChanged: background.keyNavigationVisible = false
+            }
+            interactive: false
+            keyNavigationWraps: true
+            highlightFollowsCurrentItem: true
+            highlight: Rectangle {
+                color: "#AAFFFFFF"
+                radius: 10
+                visible: background.keyNavigationVisible
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
             add: Transition {
                 PathAnimation {
@@ -190,6 +208,40 @@ ActivityBase {
             interval: 2000
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-    }
 
+        Keys.enabled: !items.blockClicks
+        Keys.onPressed: {
+            background.keyNavigationVisible = true
+            if(event.key === Qt.Key_Left) {
+                grid.moveCurrentIndexLeft()
+                // skip the highlight on the already found cards
+                while(grid.currentItem.isFound && !items.blockClicks) {
+                    grid.moveCurrentIndexLeft()
+                }
+            }
+            else if(event.key === Qt.Key_Right) {
+                grid.moveCurrentIndexRight()
+                // skip the highlight on the already found cards
+                while(grid.currentItem.isFound && !items.blockClicks) {
+                    grid.moveCurrentIndexRight()
+                }
+            }
+            else if(event.key === Qt.Key_Up) {
+                grid.moveCurrentIndexUp()
+                // skip the highlight on the already found cards
+                while(grid.currentItem.isFound && !items.blockClicks) {
+                    grid.moveCurrentIndexUp()
+                }
+            }
+            else if(event.key === Qt.Key_Down) {
+                grid.moveCurrentIndexDown()
+                // skip the highlight on the already found cards
+                while(grid.currentItem.isFound && !items.blockClicks) {
+                    grid.moveCurrentIndexDown()
+                }
+            }
+            else if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+                if(grid.currentItem.isBack && !grid.currentItem.isFound && !grid.currentItem.tuxTurn && items.selectionCount < 2) grid.currentItem.selected()
+        }
+    }
 }

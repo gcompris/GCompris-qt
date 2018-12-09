@@ -51,6 +51,7 @@ function initLevel() {
     items.playQueue = []
     items.tuxTurn = false
     items.selectionCount = 0
+    items.blockClicks = false
 
     // compute the number of cards
     var columns = items.dataset[currentLevel].columns
@@ -112,11 +113,10 @@ function initLevel() {
 
 // Return a pair of cards that have already been shown
 function getShownPair() {
-
     for(var i = 0;  i < nbOfPair * 2; ++i) {
-        var cardItem1 = items.cardRepeater.itemAt(i)
+        var cardItem1 = items.grid.getItemAtIndex(i)
         for(var j = 0;  j < nbOfPair * 2; ++j) {
-            var cardItem2 = items.cardRepeater.itemAt(j)
+            var cardItem2 = items.grid.getItemAtIndex(j)
             if(i != j &&
                 !cardItem1.isFound &&
                 cardItem1.isShown &&
@@ -154,9 +154,9 @@ function chooseCard() {
     // If no pairs shown select a random card
     var listCardNonReturned = []
     for(var i = 0;  i < cardList.length; ++i) {
-        if (items.cardRepeater.itemAt(i).isFound == false &&
-            items.cardRepeater.itemAt(i).isBack)
-            listCardNonReturned.push(items.cardRepeater.itemAt(i))
+        if (items.grid.getItemAtIndex(i).isFound == false &&
+            items.grid.getItemAtIndex(i).isBack)
+            listCardNonReturned.push(items.grid.getItemAtIndex(i))
     }
 
     //select randomly a card in it
@@ -226,18 +226,20 @@ function tuxPlay() {
 
 
 function youWon() {
+    items.blockClicks = true
     items.bonus.good("flower")
 }
 
 function youLoose(){
+    items.blockClicks = true
     items.bonus.bad("flower")
-    if (items.withTux){
+    if (items.withTux) {
         initLevel()
     }
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
