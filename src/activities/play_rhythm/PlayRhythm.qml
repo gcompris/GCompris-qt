@@ -315,14 +315,16 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: {
-                background.isRhythmPlaying = true
                 Activity.initSubLevel()
             }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: {
+                win.connect(Activity.nextSubLevel)
+                loose.connect(Activity.initSubLevel)
+            }
         }
     }
 }
