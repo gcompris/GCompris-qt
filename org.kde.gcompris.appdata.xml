@@ -403,6 +403,7 @@
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="nl">"Click op een hoofdletter" activiteit</caption>
       <caption xml:lang="pt">Actividade para "Carregar numa letra maiúscula"</caption>
+      <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
       <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
@@ -414,6 +415,7 @@
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="nl">Activiteit "Leren klok kijken</caption>
       <caption xml:lang="pt">Actividade para "Descobrir o Relógio"</caption>
+      <caption xml:lang="sv">Aktiviteten "Lär dig klockan"</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
       <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/clockgame.png</image>
@@ -425,6 +427,7 @@
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="nl">Activiteit "Verfkleuren mengen"</caption>
       <caption xml:lang="pt">Actividade para "Misturar a cor das tintas"</caption>
+      <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
       <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/color_mix.png</image>
@@ -436,6 +439,7 @@
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="nl">Activiteit "Kleuren"</caption>
       <caption xml:lang="pt">Actividade de "Cores"</caption>
+      <caption xml:lang="sv">Aktiviteten "Färger"</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
       <caption xml:lang="x-test">xx"Colors" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/colors.png</image>
@@ -447,6 +451,7 @@
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="nl">Activiteit "Bouw hetzelfde model"</caption>
       <caption xml:lang="pt">Actividade para "Construir o mesmo modelo"</caption>
+      <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
       <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/crane.png</image>
@@ -458,6 +463,7 @@
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="nl">Activiteit "Tel het aantal items"</caption>
       <caption xml:lang="pt">Actividade para "Contar os itens"</caption>
+      <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
       <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/enumerate.png</image>
@@ -469,6 +475,7 @@
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="nl">Activiteit "Het vijftien-spel"</caption>
       <caption xml:lang="pt">Actividade do "Jogo dos quinze"</caption>
+      <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
       <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/fifteen.png</image>
@@ -480,6 +487,7 @@
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="nl">Activiteit "Hexagon"</caption>
       <caption xml:lang="pt">Actividade de "Hexágono"</caption>
+      <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
       <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/hexagon.png</image>
@@ -491,6 +499,7 @@
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="nl">Activiteit "Breng de weegschaal in evenwicht"</caption>
       <caption xml:lang="pt">Actividade para "Equilibrar as balanças adequadamente"</caption>
+      <caption xml:lang="sv">Aktiviteten "Balansera vågen"</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
       <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
@@ -502,6 +511,7 @@
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="nl">Activiteit "Eindspel van schaken"</caption>
       <caption xml:lang="pt">Actividade de "Fim de jogo de xadrez"</caption>
+      <caption xml:lang="sv">Aktiviteten "Slutet på schackspelet"</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
@@ -513,6 +523,7 @@
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="nl">Activiteit "Een puzzel met schuivende blokken"</caption>
       <caption xml:lang="pt">Actividade de "Puzzle de blocos deslizantes"</caption>
+      <caption xml:lang="sv">Aktiviteten "Ett pusselspel med glidande block"</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
       <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/traffic.png</image>
