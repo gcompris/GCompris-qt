@@ -280,7 +280,7 @@ function previousLevel() {
 function createFish(minDuration) {
     var fishSource = fishes[Math.floor(Math.random() * fishes.length)]
     var minY = items.score.y + items.score.height
-    var maxY = bar.y - fishSource.height
+    var maxY = bar.y - fishSource.height - bar.height
     var fish = component.createObject(
                 background,
                 {
