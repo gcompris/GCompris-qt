@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="metronome_needle.svg"
+   sodipodi:docname="metronome_weight.svg"
    inkscape:export-filename="/home/algot/Documents/runeman.org/clipart/metronome.png"
    inkscape:export-xdpi="86.098335"
    inkscape:export-ydpi="86.098335">
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="-22.064511"
-     inkscape:cy="93.574532"
+     inkscape:cx="47.370589"
+     inkscape:cy="153.67861"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -101,13 +101,16 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(300.59358,-266.64809)">
-    <rect
-       style="opacity:1;vector-effect:none;fill:#cccccc;fill-opacity:1;stroke:#727272;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect1023"
-       width="9.374979"
-       height="239.06248"
-       x="-201.56248"
-       y="321.11218"
-       ry="4.6874876" />
+    <path
+       style="fill:#727272;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -208.125,296.73714 h 22.5 l 9.375,-11.25 v -11.25 h -41.25 v 11.25 z"
+       id="path1047"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:0.9375px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -206.25,294.86214 h 18.75 l 9.375,-9.375 v -9.375 h -37.5 v 9.375 z"
+       id="path1047-9"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

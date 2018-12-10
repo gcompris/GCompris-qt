@@ -71,7 +71,8 @@ ActivityBase {
 
         property string clefType: "Treble"
         property bool isRhythmPlaying: false
-        property int metronomeSpeed: 30000 / multipleStaff.bpmValue - 37
+        property int metronomeSpeed: 60000 / multipleStaff.bpmValue - 53
+        property real weightOffset: metronome.height * multipleStaff.bpmValue * 0.004
 
         Keys.onSpacePressed: if (!background.isRhythmPlaying && !bonus.isPlaying)
                                 tempo.tempoPressed()
@@ -219,7 +220,6 @@ ActivityBase {
 
             Image {
                 id: metronomeNeedle
-                
                 source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_needle.svg"
                 fillMode: Image.PreserveAspectFit
                 width: parent.height
@@ -229,27 +229,14 @@ ActivityBase {
                 SequentialAnimation {
                     id: metronomeOscillation
                     loops: Animation.Infinite
+                    onStarted: metronomeNeedle.rotation = 12
                     onStopped: metronomeNeedle.rotation = 0
-                    RotationAnimator {
-                        target: metronomeNeedle
-                        from: 0
-                        to: 12
-                        direction: RotationAnimator.Shortest
-                        duration: metronomeSpeed
-                    }
                     ScriptAction {
                         script: items.audioEffects.play("qrc:/gcompris/src/activities/play_rhythm/resource/click.wav")
                     }
                     RotationAnimator {
                         target: metronomeNeedle
                         from: 12
-                        to: 0
-                        direction: RotationAnimator.Shortest
-                        duration: metronomeSpeed
-                    }
-                    RotationAnimator {
-                        target: metronomeNeedle
-                        from: 0
                         to: 348
                         direction: RotationAnimator.Shortest
                         duration: metronomeSpeed
@@ -260,11 +247,30 @@ ActivityBase {
                     RotationAnimator {
                         target: metronomeNeedle
                         from: 348
-                        to: 0
+                        to: 12
                         direction: RotationAnimator.Shortest
                         duration: metronomeSpeed
                     }
                 }
+                Image {
+                    id: metronomeWeight
+                    source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_weight.svg"
+                    fillMode: Image.PreserveAspectFit
+                    width: parent.height
+                    height: parent.height
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.verticalCenterOffset: weightOffset
+                }
+                
+            }
+            Image {
+                id: metronomeFront
+                source: "qrc:/gcompris/src/activities/play_rhythm/resource/metronome_front.svg"
+                fillMode: Image.PreserveAspectFit
+                width: parent.height
+                height: parent.height
+                anchors.centerIn: parent
             }
         }
         
@@ -275,10 +281,11 @@ ActivityBase {
 
             bpmVisible: true
             onBpmDecreased: {
-                if(multipleStaff.bpmValue - 1 >= 1)
+                if(multipleStaff.bpmValue >= 51)
                     multipleStaff.bpmValue--
             }
             onBpmIncreased: {
+                if(multipleStaff.bpmValue <= 179)
                 multipleStaff.bpmValue++
             }
             onBpmChanged: {
