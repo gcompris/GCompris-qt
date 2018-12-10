@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="metronome_needle.svg"
+   sodipodi:docname="metronome_front.svg"
    inkscape:export-filename="/home/algot/Documents/runeman.org/clipart/metronome.png"
    inkscape:export-xdpi="86.098335"
    inkscape:export-ydpi="86.098335">
@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="-22.064511"
-     inkscape:cy="93.574532"
+     inkscape:cx="-13.579231"
+     inkscape:cy="128.92987"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -58,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -101,13 +101,16 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(300.59358,-266.64809)">
-    <rect
-       style="opacity:1;vector-effect:none;fill:#cccccc;fill-opacity:1;stroke:#727272;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect1023"
-       width="9.374979"
-       height="239.06248"
-       x="-201.56248"
-       y="321.11218"
-       ry="4.6874876" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;vector-effect:none;fill:#794d2b;fill-opacity:1;stroke:none;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -196.87532,541.80387 c -18.74969,0.37919 -32.81218,17.83779 -32.81218,33.37079 h 65.62499 c 0,-15.533 -14.0625,-33.75 -32.81281,-33.37079 z"
+       id="path1025-7"
+       sodipodi:nodetypes="sccs" />
+    <path
+       style="opacity:1;vector-effect:none;fill:#e6d4b7;fill-opacity:1;stroke:none;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -196.87532,544.2378 a 28.125,28.125 0 0 0 -28.125,28.125 h 56.25 a 28.125,28.125 0 0 0 -28.125,-28.125 z"
+       id="path1025"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
