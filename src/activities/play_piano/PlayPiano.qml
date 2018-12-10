@@ -44,10 +44,6 @@ ActivityBase {
         signal start
         signal stop
 
-        Directory {
-            id: directory
-        }
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
