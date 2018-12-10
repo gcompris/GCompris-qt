@@ -35,27 +35,13 @@ ActivityBase {
 
     property bool horizontalLayout: width > height
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        fillMode: Image.PreserveAspectCrop
+        color: "#ABCDEF"
 
         signal start
         signal stop
-
-        property string backgroundImagesUrl: ":/gcompris/src/activities/piano_composition/resource/background/"
-        property var backgroundImages: directory.getFiles(backgroundImagesUrl)
-
-        Directory {
-            id: directory
-        }
-
-        source: {
-            if(items.bar.level === 0)
-                return "qrc" + backgroundImagesUrl + backgroundImages[0]
-            else
-                return "qrc" + backgroundImagesUrl + backgroundImages[(items.bar.level - 1) % backgroundImages.length]
-        }
 
         Component.onCompleted: {
             activity.start.connect(start)
