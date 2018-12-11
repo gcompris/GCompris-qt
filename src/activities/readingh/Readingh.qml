@@ -191,9 +191,9 @@ ActivityBase {
             id: wordDisplayList
             spacing: 20
             x: 70/800*parent.width
-            y: 100/600*parent.height
+            y: 100/600*parent.height - 40 * ApplicationInfo.ratio
             width: 350/800*parent.width-x
-            height: 520/600*parent.height-y
+            height: 520/600*parent.height-y - 40 * ApplicationInfo.ratio
             flow: mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
             layoutDirection: Core.isLeftToRightLocale(locale) ? Qt.LeftToRight : Qt.RightToLeft
 
