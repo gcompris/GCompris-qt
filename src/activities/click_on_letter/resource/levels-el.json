@@ -1,0 +1,13 @@
+[
+    { "level": 1, "questions": "αεηιουω", "answers": "αεηιουω" },
+    { "level": 2, "questions": "αεηιουω", "answers": "αεηιουωβγ" },
+    { "level": 3, "questions": "αεηιουω", "answers": "αεηιουωβγδεζ" },
+    { "level": 4, "questions": "βγδζθκλμν", "answers": "βγδζθκλμν" },
+    { "level": 5, "questions": "ξπρστφχψβγ", "answers": "ξπρστφχψβγ" },
+    { "level": 6, "questions": "αβεζηθικοπω", "answers": "αβεζηθικοπω" },
+    { "level": 7, "questions": "βαγεδηζιθοκω", "answers": "βαγεδηζιθοκω" },
+    { "level": 8, "questions": "αβγδεζηθικλμ", "answers": "αβγδεζηθικλμ" },
+    { "level": 9, "questions": "νξοπρστυφχψω", "answers": "νξοπρστυφχψω" },
+    { "level": 10, "questions": "εκρφλςακδλςδψ", "answers": "εκρφλςακδλςδψ" },
+    { "level": 11, "questions": "βδζθκλμνξπρστφχψ", "answers": "βδζθκλμνξπρστφχψ" }
+]
