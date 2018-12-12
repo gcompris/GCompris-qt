@@ -22,6 +22,7 @@
 
 .pragma library
 .import QtQuick 2.6 as Quick
+.import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/erase/resource/"
@@ -116,8 +117,7 @@ function start(main_, items_, type_) {
 
 function stop() {
 }
-var nbx = (currentLevel % 2 * 3) + 5;
-var nby = (currentLevel % 2 * 3) + 5;
+
 function initLevel() {
     items.blocks.clear()
     imgIndex++
@@ -128,11 +128,8 @@ function initLevel() {
     }
     createdBlocks = 0
     killedBlocks = 0
-    var nbx = (currentLevel % 2 * 3) + 5;
-    var nby = (currentLevel % 2 * 3) + 5;
-    var w = main.width / nbx
-    var h = (main.height - items.bar.height) / nby
-    var i = 0
+    var nbx = Math.min((currentLevel % 2 * 3) + 5, main.width / (10 * GCompris.ApplicationInfo.ratio));
+    var nby = Math.min((currentLevel % 2 * 3) + 5, main.height / (10 * GCompris.ApplicationInfo.ratio));
     var data
 
         for(var x = 0;  x < nbx; ++x) {

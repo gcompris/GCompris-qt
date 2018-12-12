@@ -99,6 +99,7 @@ ActivityBase {
                 type: activity.type
                 main: MAIN
                 bar: BAR
+                background: items.background
             }
         }
 
@@ -124,8 +125,9 @@ ActivityBase {
         }
 
         Score {
+            id: score
             anchors {
-                bottom: parent.bottom
+                bottom: (background.width > background.height + 40 * ApplicationInfo.ratio) ? background.bottom : bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio

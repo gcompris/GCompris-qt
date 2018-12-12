@@ -28,20 +28,25 @@ Image {
     id: block
     property Item main
     property Item bar
+    property Item background
     property double ix
     property double iy
     property int nbx
     property int nby
 
     x: ix * main.width / nbx
-    y: iy * (main.height - bar.height / 2) / nby
+    y: iy * (main.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
     width: main.width / nbx
-    height: (main.height - bar.height / 2) / nby
+    height: (main.height - bar.height) / (nby + getMultipleOfRatioToAdjustHeight() * ApplicationInfo.ratio)
 
     signal enter
     signal leave
     property string type
     property int counter: 0
+
+    function getMultipleOfRatioToAdjustHeight() {
+        return (background.width > background.height + 40 * ApplicationInfo.ratio) ? 0.125 : 0.625
+    }
 
     onEnter: {
         if(opacity == 1.0) {
