@@ -26,12 +26,12 @@ import "../../core"
 
 Rectangle {
     property int goal
-    property var muncherLife : muncherLife
-    property var life : life
-    property var bar : bar
+    property var muncherLife: muncherLife
+    property var life: life
+    property var bar: bar
 
     width: gridPart.width
-    height: background.height / 3 - 4
+    height: background.height / 3
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     border.color: "black"
@@ -76,10 +76,10 @@ Rectangle {
         id: muncherLife
 
         width: height
-        height: parent.height * 0.7
+        height: parent.height * 0.5
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
-        anchors.rightMargin: ApplicationInfo.ratio*5
+        anchors.rightMargin: 5 * ApplicationInfo.ratio
         border.width: 2
         radius: 5
 
