@@ -44,9 +44,10 @@ Item {
     }
     GCText {
         //: BPM is the abbreviation for Beats Per Minute.
-        text: qsTr("%1 BPM").arg(multipleStaff.bpmValue)
+        text: qsTr("%1 BPM").arg(multipleStaff.bpmValue + "<br>")
         width: 0.9 * bpmBg.width
-        height: bpmBg.height
+        height: 0.9 * bpmBg.height
+        horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         anchors.centerIn: bpmBg
         fontSizeMode: Text.Fit
