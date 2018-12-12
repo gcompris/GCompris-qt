@@ -27,8 +27,8 @@ import "../../core"
 
 Rectangle {
     id: answerBackground
-    width: 140 * ApplicationInfo.ratio
-    height: 70 * ApplicationInfo.ratio
+    width: Math.min(140 * ApplicationInfo.ratio, background.width / 4)
+    height: width / 2
     color: activeFocus ? "#ff07fff2" : "#cccccccc"
     radius: 10
     border {

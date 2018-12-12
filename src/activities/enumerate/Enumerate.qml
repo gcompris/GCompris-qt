@@ -87,14 +87,13 @@ ActivityBase {
         Column {
             id: answer
             anchors {
-                right: parent.right
-                bottom: keyboard.top
+                left: parent.left
+                top: parent.top
                 margins: 10
             }
             spacing: 5
 
-            Repeater
-            {
+            Repeater {
                 id: answerColumn
                 property int currentIndex
 
@@ -123,8 +122,7 @@ ActivityBase {
                 itemList.itemAt(i).positionMe()
         }
 
-        Repeater
-        {
+        Repeater {
             id: itemList
 
             ItemToEnumerate {
