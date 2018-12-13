@@ -38,7 +38,7 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
-    property bool horizontalLayout: background.width > background.height
+    property bool horizontalLayout: background.width >= background.height
 
     pageComponent: Rectangle {
         id: background
@@ -126,7 +126,8 @@ ActivityBase {
         property string restType: "Whole"
         property string clefType: bar.level == 2 ? "Bass" : "Treble"
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
-
+        property int layoutMargins: 5 * ApplicationInfo.ratio
+        
         File {
             id: file
             onError: console.error("File error: " + msg)
@@ -142,7 +143,6 @@ ActivityBase {
                 messageAnimation.start()
             }
 
-            width: horizontalLayout ? parent.width / 12 : parent.width / 6
             height: width * 0.4
             visible: false
             anchors.top: optionsRow.bottom
@@ -207,7 +207,6 @@ ActivityBase {
             width: background.width * 0.75
             height: background.height * 0.15
             anchors.right: parent.right
-            anchors.margins: 10
             opacity: 0.8
             border.width: 6
             color: "white"
@@ -230,17 +229,12 @@ ActivityBase {
 
         MultipleStaff {
             id: multipleStaff
-            width: horizontalLayout ? parent.width * 0.50 : parent.width * 0.6
-            height: horizontalLayout ? parent.height * 0.58 : parent.height * 0.3
             nbStaves: 2
             clef: clefType
             coloredNotes: ['C','D', 'E', 'F', 'G', 'A', 'B']
-            anchors.right: horizontalLayout ? parent.right: undefined
-            anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
-            anchors.top: instructionBox.bottom
-            anchors.topMargin: parent.height * 0.1
-            anchors.rightMargin: parent.width * 0.043
             noteHoverEnabled: true
+            anchors.margins: layoutMargins
+            
             onNoteClicked: {
                 if(selectedIndex === noteIndex)
                     selectedIndex = -1
@@ -254,87 +248,92 @@ ActivityBase {
 
         GCButtonScroll {
             id: multipleStaffFlickButton
-            anchors.right: parent.right
-            anchors.rightMargin: 5 * ApplicationInfo.ratio
+            anchors.left: multipleStaff.right
             anchors.verticalCenter: multipleStaff.verticalCenter
-            width: horizontalLayout ? parent.width * 0.033 : parent.width * 0.06
-            height: width * heightRatio
+            width: bar.height * 0.3
+            height: width * 2
             onUp: multipleStaff.flickableStaves.flick(0, multipleStaff.height * 1.3)
             onDown: multipleStaff.flickableStaves.flick(0, -multipleStaff.height * 1.3)
             upVisible: multipleStaff.flickableStaves.visibleArea.yPosition > 0
             downVisible: (multipleStaff.flickableStaves.visibleArea.yPosition + multipleStaff.flickableStaves.visibleArea.heightRatio) < 1
         }
-
-        PianoOctaveKeyboard {
-            id: piano
-            width: horizontalLayout ? parent.width * 0.34 : parent.width * 0.6
-            height: horizontalLayout ? parent.height * 0.40 : parent.width * 0.26
-            anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
-            anchors.left: horizontalLayout ? parent.left : undefined
-            anchors.leftMargin: parent.width * 0.04
-            anchors.top: horizontalLayout ? multipleStaff.top : multipleStaff.bottom
-            anchors.topMargin: horizontalLayout ? parent.height * 0.08 : parent.height * 0.025
-            blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
-            useSharpNotation: bar.level != 4
-            blackKeysEnabled: bar.level > 2
-            visible: !background.isLyricsMode
-            currentOctaveNb: (background.clefType === "Bass") ? 0 : 1
-            onNoteClicked: {
-                parent.addMusicElementAndPushToStack(note, currentType)
+        
+        Item {
+            id: pianoLayout
+            width: multipleStaff.width + multipleStaffFlickButton.width
+            height: multipleStaff.height
+            anchors.margins: layoutMargins
+            
+            PianoOctaveKeyboard {
+                id: piano
+                height: parent.height
+                width: parent.width * 0.8
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                blackLabelsVisible: [3, 4, 5, 6, 7, 8].indexOf(items.bar.level) == -1 ? false : true
+                useSharpNotation: bar.level != 4
+                blackKeysEnabled: bar.level > 2
+                visible: !background.isLyricsMode
+                currentOctaveNb: (background.clefType === "Bass") ? 0 : 1
+                
+                onNoteClicked: {
+                    parent.addMusicElementAndPushToStack(note, currentType)
+                }
             }
+            
+            function addMusicElementAndPushToStack(noteName, noteType, elementType) {
+                if(noteType === "Rest")
+                    elementType = "rest"
+                    else if(elementType == undefined)
+                        elementType = "note"
+                        
+                        var tempModel = multipleStaff.createNotesBackup()
+                        Activity.pushToStack(tempModel)
+                        multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, background.clefType)
+            }
+            
+            Image {
+                id: shiftKeyboardLeft
+                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+                sourceSize.width: parent.width * 0.1
+                width: sourceSize.width
+                height: parent.height
+                fillMode: Image.PreserveAspectFit
+                visible: (piano.currentOctaveNb > 0) && piano.visible
+                anchors.right: piano.left
+                anchors.verticalCenter: parent.verticalCenter
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: piano.currentOctaveNb--
+                }
+            }
+            
+            Image {
+                id: shiftKeyboardRight
+                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                sourceSize.width: parent.width * 0.1
+                width: sourceSize.width
+                height: parent.height
+                fillMode: Image.PreserveAspectFit
+                visible: (piano.currentOctaveNb < piano.maxNbOctaves - 1) && piano.visible
+                anchors.left: piano.right
+                anchors.verticalCenter: parent.verticalCenter
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: piano.currentOctaveNb++
+                }
+            }
+            
+            LyricsArea {
+                id: lyricsArea
+                width: parent.width
+                height: parent.height
+                anchors.fill: pianoLayout
+            }
+            
         }
 
-        function addMusicElementAndPushToStack(noteName, noteType, elementType) {
-            if(noteType === "Rest")
-                elementType = "rest"
-            else if(elementType == undefined)
-                elementType = "note"
 
-            var tempModel = multipleStaff.createNotesBackup()
-            Activity.pushToStack(tempModel)
-            multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, background.clefType)
-        }
-
-        Image {
-            id: shiftKeyboardLeft
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-            sourceSize.width: piano.width / 7
-            width: sourceSize.width
-            height: width
-            fillMode: Image.PreserveAspectFit
-            visible: (piano.currentOctaveNb > 0) && piano.visible
-            anchors {
-                verticalCenter: piano.verticalCenter
-                right: piano.left
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: piano.currentOctaveNb--
-            }
-        }
-
-        Image {
-            id: shiftKeyboardRight
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.width: piano.width / 7
-            width: sourceSize.width
-            height: width
-            fillMode: Image.PreserveAspectFit
-            visible: (piano.currentOctaveNb < piano.maxNbOctaves - 1) && piano.visible
-            anchors {
-                verticalCenter: piano.verticalCenter
-                left: piano.right
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: piano.currentOctaveNb++
-            }
-        }
-
-        LyricsArea {
-            id: lyricsArea
-            width: PianoOctaveKeyboard.width
-        }
 
         GCCreationHandler {
             id: creationHandler
@@ -354,12 +353,9 @@ ActivityBase {
 
         OptionsRow {
             id: optionsRow
-            columns: horizontalLayout ? 11 : 1
-            anchors.top: horizontalLayout ? instructionBox.bottom : background.top
-            anchors.margins: 10
+            anchors.margins: layoutMargins
             anchors.left: background.left
-            iconsWidth: horizontalLayout ? background.width / 15 : (background.height - bar.height) / 12
-
+            iconsWidth: 0
             noteOptionsVisible: bar.level > 4
             playButtonVisible: true
             keyOption.clefButtonVisible: bar.level > 2
@@ -498,5 +494,73 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+        
+        states: [
+            State {
+                name: "hScreen"
+                when: horizontalLayout
+                PropertyChanges {
+                    target: clickedOptionMessage
+                    width: background.width / 12
+                }
+                AnchorChanges {
+                    target: optionsRow
+                    anchors.top: instructionBox.bottom
+                }
+                PropertyChanges {
+                    target: optionsRow
+                    columns: 11
+                    iconsWidth: background.width / 15
+                }
+                AnchorChanges {
+                    target: multipleStaff
+                    anchors.left: background.horizontalCenter
+                    anchors.top: optionsRow.bottom
+                }
+                PropertyChanges {
+                    target: multipleStaff
+                    width: background.width * 0.5 - multipleStaffFlickButton.width - layoutMargins * 3
+                    height: background.height - instructionBox.height - optionsRow.height - bar.height - layoutMargins * 4
+                }
+                AnchorChanges {
+                    target: pianoLayout
+                    anchors.left: background.left
+                    anchors.top: optionsRow.bottom
+                }
+            },
+            State {
+                name: "vScreen"
+                when: !horizontalLayout
+                PropertyChanges {
+                    target: clickedOptionMessage
+                    width: background.width / 6
+                }
+                AnchorChanges{
+                    target: optionsRow
+                    anchors.top: background.top
+                }
+                PropertyChanges {
+                    target: optionsRow
+                    columns: 1
+                    iconsWidth: (background.height - bar.height) / 12
+                }
+                AnchorChanges {
+                    target: multipleStaff
+                    anchors.left: optionsRow.right
+                    anchors.top: instructionBox.bottom
+                }
+                PropertyChanges {
+                    target: multipleStaff
+                    width: background.width - multipleStaffFlickButton.width - optionsRow.width - layoutMargins * 3
+                    height: (background.height - instructionBox.height - bar.height - layoutMargins * 4) * 0.5
+                }
+                AnchorChanges {
+                    target: pianoLayout
+                    anchors.left: optionsRow.right
+                    anchors.top: multipleStaff.bottom
+                }
+            }
+        
+        ]
     }
 }

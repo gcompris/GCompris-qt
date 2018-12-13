@@ -32,13 +32,6 @@ Rectangle {
     property string origin: ""
     property string lyrics: ""
 
-    width: horizontalLayout ? parent.width * 0.42 : parent.width * 0.8
-    height: horizontalLayout ? parent.height * 0.5 : parent.height * 0.28
-    anchors.horizontalCenter: horizontalLayout ? undefined : parent.horizontalCenter
-    anchors.left: horizontalLayout ? parent.left : undefined
-    anchors.leftMargin: parent.width * 0.02
-    anchors.top: horizontalLayout ? multipleStaff.top : multipleStaff.bottom
-    anchors.topMargin: horizontalLayout ? parent.height * 0.05 : parent.height * 0.025
     border.width: 3
     radius: 5
     border.color: "black"
