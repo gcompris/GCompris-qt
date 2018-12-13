@@ -34,7 +34,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
         
         Image {
             id: stars

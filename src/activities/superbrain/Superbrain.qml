@@ -39,7 +39,7 @@ ActivityBase {
         focus: true
 
         readonly property double scaleFactor: 1
-        readonly property bool isPortrait: (height > width)
+        readonly property bool isPortrait: (height >= width)
 
         signal start
         signal stop

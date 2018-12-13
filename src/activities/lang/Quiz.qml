@@ -42,7 +42,7 @@ Item {
     property alias wordListView: wordListView
     property alias parser: parser
     property var goodWord
-    property bool horizontalLayout: background.width > background.height
+    property bool horizontalLayout: background.width >= background.height
     property bool buttonsBlocked: false
 
     function init(loadedItems_, wordList_, mode_) {

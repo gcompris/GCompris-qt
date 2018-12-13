@@ -39,7 +39,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
 
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
         property int playX: (activity.width - playWidth) / 2
         property int playY: (activity.height - playHeight) / 2
         property int playWidth: horizontalLayout ? activity.height : activity.width

@@ -32,7 +32,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property bool horizontalLayout: width > height
+    property bool horizontalLayout: width >= height
 
     pageComponent: Rectangle {
         id: background

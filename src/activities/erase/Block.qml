@@ -45,7 +45,7 @@ Image {
     property int counter: 0
 
     function getMultipleOfRatioToAdjustHeight() {
-        return (background.width > background.height + 40 * ApplicationInfo.ratio) ? 0.125 : 0.625
+        return (background.width >= background.height + 40 * ApplicationInfo.ratio) ? 0.125 : 0.625
     }
 
     onEnter: {

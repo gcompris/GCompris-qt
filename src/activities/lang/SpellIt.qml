@@ -70,7 +70,7 @@ Item {
         sourceSize.width: Math.max(parent.width, parent.height)
         height: parent.height
 
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
 
         JsonParser {
             id: parser

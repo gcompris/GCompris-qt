@@ -110,7 +110,7 @@ ActivityBase {
         Score {
             id: score
             visible: false
-            fontSize: background.width > background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
+            fontSize: background.width >= background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
             height: internalTextComponent.height + 10
             anchors.bottom: bar.top
             anchors.margins: 10

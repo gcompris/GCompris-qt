@@ -41,7 +41,7 @@ ActivityBase {
         width: parent.width
         height: parent.height
         fillMode: Image.PreserveAspectCrop
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
 
         signal start
         signal stop

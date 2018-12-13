@@ -68,7 +68,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property bool isPortrait: (background.height > background.width)
+            property bool isPortrait: (background.height >= background.width)
             property int cellSize: items.isPortrait ?
                                        Math.min((background.width - numbers.childrenRect.width) / (8 + 2),
                                                 (background.height - controls.height - letters.childrenRect.height) / (8 + barHeightAddon)) :

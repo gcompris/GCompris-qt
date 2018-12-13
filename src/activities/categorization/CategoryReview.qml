@@ -34,7 +34,7 @@ Item {
     property bool leftAreaContainsDrag: false
     property bool rightAreaContainsDrag: false
     property bool started: rootItem.opacity == 1
-    property bool horizontalLayout: categoryBackground.width > categoryBackground.height
+    property bool horizontalLayout: categoryBackground.width >= categoryBackground.height
     property alias leftZone: leftZone.model
     property alias rightZone: rightZone.model
     property alias middleZone: middleZone.model

@@ -143,7 +143,7 @@ ActivityBase {
                 model: items.numberOfBulbs
                 LightBulb {
                     height: background.height / 5
-                    width: (background.width > background.height) ? (background.width / 20) : ((background.width - (16 * row.spacing)) / 8)
+                    width: (background.width >= background.height) ? (background.width / 20) : ((background.width - (16 * row.spacing)) / 8)
                     valueVisible: Dataset.get()[items.currentLevel].bulbValueVisible
                 }
             }

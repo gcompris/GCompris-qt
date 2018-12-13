@@ -127,7 +127,7 @@ ActivityBase {
         Score {
             id: score
             anchors {
-                bottom: (background.width > background.height + 40 * ApplicationInfo.ratio) ? background.bottom : bar.top
+                bottom: (background.width >= background.height + 40 * ApplicationInfo.ratio) ? background.bottom : bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio
