@@ -174,6 +174,8 @@ Grid {
         id: noteOptions
         source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex][1])
         nbOptions: optionsRow.noteLengthName.length
+        sourceSize.width: optionsRow.iconsWidth
+        sourceSize.height: optionsRow.iconsWidth
         currentIndex: 2
         onClicked: {
             background.currentType = optionsRow.noteLengthName[currentIndex][1]
