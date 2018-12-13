@@ -135,7 +135,7 @@ ActivityBase {
             layoutDirection: Qt.LeftToRight
             verticalLayoutDirection: GridView.BottomToTop
             width: horizontalLayout ? parent.width : cellWidth
-            height: horizontalLayout ? cellHeight : parent.height - bar.height
+            height: horizontalLayout ? cellHeight : parent.height - bar.height * 1.5
             clip: false
             interactive: false
             visible: items.solarSystemVisible
