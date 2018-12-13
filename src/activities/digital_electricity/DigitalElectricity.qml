@@ -44,7 +44,7 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool hori: background.width > background.height
+        property bool hori: background.width >= background.height
 
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()

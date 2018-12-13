@@ -31,7 +31,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
-    property bool isHorizontal: background.width > background.height
+    property bool isHorizontal: background.width >= background.height
 
     pageComponent: Image {
         id: background

@@ -49,7 +49,7 @@ Item {
 
     Component.onCompleted: {
         // make sure our word is completely visible
-        if (x + width > parent.width)
+        if (x + width >= parent.width)
             x = parent.width - width;
     }
 

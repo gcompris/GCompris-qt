@@ -44,7 +44,7 @@ Rectangle {
     signal close
 
     property alias melodiesModel: melodiesModel
-    property bool horizontalLayout: dialogBackground.width > dialogBackground.height
+    property bool horizontalLayout: dialogBackground.width >= dialogBackground.height
     property int selectedMelodyIndex: -1
 
     ListModel {

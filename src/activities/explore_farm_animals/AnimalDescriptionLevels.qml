@@ -45,7 +45,7 @@ Rectangle {
     property alias description: descriptionText.text
     property alias imageSource: animalImage.source
 
-    property bool horizontalLayout: background.width > background.height
+    property bool horizontalLayout: background.width >= background.height
 
     signal showDescriptionPanel
     signal closeDescriptionPanel

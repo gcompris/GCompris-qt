@@ -61,7 +61,7 @@ ActivityBase {
             property alias answerChoices: answerChoices
             property alias questionDelay: questionDelay
             property alias okButtonParticles: okButtonParticles
-            property bool horizontalLayout: background.width > background.height * 1.5
+            property bool horizontalLayout: background.width >= background.height * 1.5
             property alias daysOfTheWeekModel: daysOfTheWeekModel
         }
 

@@ -165,7 +165,7 @@ ActivityBase {
         }
 
         // Filters
-        property bool horizontal: main.width > main.height
+        property bool horizontal: main.width >= main.height
         property int sectionIconWidth: {
             if(horizontal)
                 return Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))

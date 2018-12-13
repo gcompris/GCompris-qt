@@ -35,7 +35,7 @@ ActivityBase {
     onStop: {}
     isMusicalActivity: true
 
-    property bool horizontalLayout: width > height * 1.2
+    property bool horizontalLayout: width >= height * 1.2
 
     pageComponent: Rectangle {
         id: background

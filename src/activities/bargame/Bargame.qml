@@ -122,7 +122,7 @@ ActivityBase {
             transform: Rotation {
                 origin.x: 0;
                 origin.y: 0;
-                angle: (rootWindow.width > rootWindow.height) ? 0 : 90
+                angle: (rootWindow.width >= rootWindow.height) ? 0 : 90
                 onAngleChanged: {
                     if (angle === 90) {
                         boxModel.anchors.top = undefined;

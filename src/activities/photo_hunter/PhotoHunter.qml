@@ -65,7 +65,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: background.width < background.height
+        property bool vert: background.width <= background.height
         property double barHeight: ApplicationSettings.isBarHidden ? bar.height / 2 : bar.height
         property bool startedHelp: false
 

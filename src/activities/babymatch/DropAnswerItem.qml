@@ -34,7 +34,7 @@ Rectangle {
     property double yCenter: y + height / 2
     property Item currentTileImageItem
 
-    width: parent.width > parent.height ? parent.height/35 : parent.width/35
+    width: parent.width >= parent.height ? parent.height/35 : parent.width/35
     height: width
     radius: width/2
     z: 200

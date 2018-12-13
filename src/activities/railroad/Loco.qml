@@ -32,7 +32,7 @@ Item {
         id: img
         source: imageURL
         height: background.height / 8.0
-        width: ((background.width > background.height) ? background.width : background.height) / 5.66
+        width: ((background.width >= background.height) ? background.width : background.height) / 5.66
         Drag.hotSpot.x: width / 2
         Drag.hotSpot.y: height / 2
     }

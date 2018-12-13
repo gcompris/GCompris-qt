@@ -39,7 +39,7 @@ ActivityBase {
         signal stop
 
         property bool gotIt: false
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
 
         Component.onCompleted: {
             activity.start.connect(start)

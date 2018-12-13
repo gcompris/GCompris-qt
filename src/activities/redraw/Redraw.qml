@@ -41,7 +41,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: Math.max(parent.width, parent.height)
 
-        property bool landscape: width > height
+        property bool landscape: width >= height
 
         signal start
         signal stop

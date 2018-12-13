@@ -55,7 +55,7 @@ ActivityBase {
         onStart: Activity.start(items, mode)
         onStop: Activity.stop()
 
-        property bool vert: background.width > (background.height - okButton.height)
+        property bool vert: background.width >= (background.height - okButton.height)
 
         // Add here the QML items you need to access in javascript
         QtObject {

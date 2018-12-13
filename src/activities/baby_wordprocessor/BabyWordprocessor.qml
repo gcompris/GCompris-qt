@@ -46,7 +46,7 @@ ActivityBase {
             edit.forceActiveFocus();
         }
 
-        property bool horizontalMode: height < width
+        property bool horizontalMode: height <= width
 
         GCCreationHandler {
             id: creationHandler

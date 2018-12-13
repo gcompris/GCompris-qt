@@ -35,7 +35,7 @@ ActivityBase {
     onStop: {}
 
     property string boardsUrl: ":/gcompris/src/activities/categorization/resource/board/"
-    property bool vert: background.width < background.height
+    property bool vert: background.width <= background.height
     property var barAtStart
 
     pageComponent: Image {
@@ -76,7 +76,7 @@ ActivityBase {
 
         function hideBar() {
             barAtStart = ApplicationSettings.isBarHidden;
-            if(categoryReview.width > categoryReview.height)
+            if(categoryReview.width >= categoryReview.height)
                 ApplicationSettings.isBarHidden = false;
             else 
                 ApplicationSettings.isBarHidden = true;

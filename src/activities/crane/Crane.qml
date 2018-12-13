@@ -78,7 +78,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool portrait: height > width ? true : false
+        property bool portrait: height >= width ? true : false
         property bool inLine: true
 
         Keys.onPressed: {

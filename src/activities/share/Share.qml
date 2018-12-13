@@ -77,7 +77,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: background.width > background.height
+        property bool vert: background.width >= background.height
         property int currentBoys: 0
         property int currentGirls: 0
         property int currentCandies: 0
