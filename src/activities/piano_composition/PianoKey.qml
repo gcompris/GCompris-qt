@@ -29,7 +29,8 @@ Rectangle {
     id: pianoKey
 
     property string noteColor
-    property string keyName
+    // keyName is an array of 2 elements. The 1st index has the "actual" key name, while the 2nd index has the translated one.
+    property var keyName
     property real labelSquareSize
     property bool labelsVisible
     property bool isKeyEnabled: true
@@ -58,7 +59,7 @@ Rectangle {
         height: width
         anchors.bottom: pianoKey.bottom
         anchors.horizontalCenter: pianoKey.horizontalCenter
-        color: (piano.coloredKeyLabels.indexOf(keyName[0]) != -1) ? (piano.labelsColor === "inbuilt" ? noteColor : labelsColor) : "white"
+        color: ((keyName[0] != undefined) && (piano.coloredKeyLabels.indexOf(keyName[0][0]) != -1)) ? (piano.labelsColor === "inbuilt" ? noteColor : labelsColor) : "white"
         anchors.margins: 4
         border.color: "black"
         border.width: 2
@@ -66,7 +67,7 @@ Rectangle {
         visible: labelsVisible
         GCText {
             anchors.fill: parent
-            text: keyName
+            text: keyName[1] != undefined ? keyName[1] : ""
             fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
