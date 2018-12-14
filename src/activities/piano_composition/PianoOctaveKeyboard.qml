@@ -176,11 +176,11 @@ Item {
                 width: whiteWidth
                 height: whiteHeight
                 labelSquareSize: piano.labelSquareSize
-                noteColor: keyLabelColors[keyName[0]]
-                keyName: whiteKeyNoteLabels[currentOctaveNb % whiteKeyNoteLabels.length][index][1]
+                noteColor: keyLabelColors[keyName[0][0]]
+                keyName: whiteKeyNoteLabels[currentOctaveNb % whiteKeyNoteLabels.length][index]
                 labelsVisible: whiteLabelsVisible
                 isKeyEnabled: piano.whiteKeysEnabled
-                onKeyPressed: noteClicked(whiteKeyNoteLabels[currentOctaveNb % whiteKeyNoteLabels.length][index][0])
+                onKeyPressed: noteClicked(keyName[0])
             }
 
             PianoKey {
@@ -195,25 +195,18 @@ Item {
                     return false
                 }
                 labelSquareSize: piano.labelSquareSize - 2
-                noteColor: keyName ? keyLabelColors[keyName.substr(0, 2)] : "black"
+                noteColor: keyName ? keyLabelColors[keyName[0].substr(0, 2)] : "black"
                 keyName: {
                     for(var i = 0; i < blackKeyFlatNoteLabelsArray.length; i++) {
-                        if((blackKeyFlatNoteLabelsArray[i][0][0] === whiteKeyNoteLabels[currentOctaveNb % whiteKeyNoteLabels.length][index][0][0])
-                           && (blackKeyFlatNoteLabelsArray[i][0][2] === whiteKeyNoteLabels[currentOctaveNb % whiteKeyNoteLabels.length][index][0][1]))
-                            return blackKeyNoteLabels[i][1]
+                        if((blackKeyFlatNoteLabelsArray[i][0][0] === whiteKey.keyName[0][0])
+                           && (blackKeyFlatNoteLabelsArray[i][0][2] === whiteKey.keyName[0][1]))
+                            return blackKeyNoteLabels[i]
                     }
                     return ""
                 }
                 labelsVisible: blackLabelsVisible
                 isKeyEnabled: piano.blackKeysEnabled
-                onKeyPressed: {
-                    for(var i = 0; i < blackKeyNoteLabels.length; i++) {
-                        if(blackKeyNoteLabels[i][1] === keyName) {
-                            noteClicked(blackKeyNoteLabels[i][0])
-                            break
-                        }
-                    }
-                }
+                onKeyPressed: noteClicked(keyName[0])
             }
         }
     }
