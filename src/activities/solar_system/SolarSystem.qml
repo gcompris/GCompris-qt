@@ -44,8 +44,7 @@ ActivityBase {
             height: stars.width
             sourceSize.width: stars.width
             sourceSize.height: stars.width
-            x: horizontalLayout ? -stars.width * 0.48 : -stars.width * 0.5 + parent.width * 0.5
-            y: horizontalLayout ? -stars.height * 0.5 + parent.height * 0.5 : -stars.height * 0.5 + parent.height * 0.9
+
             transform: Rotation {
                 origin.x: stars.width / 2; origin.y: stars.height / 2; angle: 0;
                     NumberAnimation on angle{
@@ -125,17 +124,13 @@ ActivityBase {
             id: planetsModel
         }
 
-        readonly property int itemWidth: horizontalLayout ? background.width / 9 : (background.height - bar.height) / 9
+        readonly property int itemWidth: horizontalLayout ? background.width * 0.11 : (background.height - bar.height) * 0.11
 
         // Arrangement of all the planets in the solar system
         GridView {
             id: planetView
-            y: horizontalLayout ? (parent.height - bar.height) / 2 - cellHeight/2 : 0
-            x: horizontalLayout ? 0 : parent.width / 2 - cellHeight / 2
             layoutDirection: Qt.LeftToRight
             verticalLayoutDirection: GridView.BottomToTop
-            width: horizontalLayout ? parent.width : cellWidth
-            height: horizontalLayout ? cellHeight : parent.height - bar.height * 1.5
             clip: false
             interactive: false
             visible: items.solarSystemVisible
@@ -149,6 +144,49 @@ ActivityBase {
                 planetSize: bodySize
             }
         }
+        states: [
+            State {
+                name: "hGrid"
+                when: background.horizontalLayout
+                AnchorChanges {
+                    target: planetView
+                    anchors.horizontalCenter: background.horizontalCenter
+                    anchors.verticalCenter: background.verticalCenter
+                    anchors.top: undefined
+                }
+                PropertyChanges {
+                    target: planetView
+                    width: background.width
+                    height: cellHeight
+
+                }
+                PropertyChanges {
+                    target: stars
+                    x: -stars.width * 0.48
+                    y: -stars.height * 0.5 + background.height * 0.5
+                }
+            },
+            State {
+                name: "vGrid"
+                when: !background.horizontalLayout
+                AnchorChanges {
+                    target: planetView
+                    anchors.horizontalCenter: background.horizontalCenter
+                    anchors.verticalCenter: undefined
+                    anchors.top: background.top
+                }
+                PropertyChanges {
+                    target: planetView
+                    width: cellWidth
+                    height: background.height - bar.height * 1.5
+                }
+                PropertyChanges {
+                    target: stars
+                    x: -stars.width * 0.5 + background.width * 0.5
+                    y: -stars.height * 0.5 + background.height * 0.9
+                }
+            }
+        ]
 
         QuizScreen {
             id: mainQuizScreen
