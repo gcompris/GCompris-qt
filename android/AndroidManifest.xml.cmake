@@ -32,7 +32,7 @@
 		</activity>
 	</application>
 	<supports-screens android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:largeScreens="true"/>
-	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19"/>
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26"/>
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	@ANDROID_INTERNET_PERMISSION@
