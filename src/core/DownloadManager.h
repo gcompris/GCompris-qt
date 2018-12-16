@@ -268,7 +268,7 @@ public:
      */
     Q_INVOKABLE bool areVoicesRegistered() const;
 
-    /*
+    /**
      * Registers a rcc resource file given by a relative resource path
      *
      * @param filename  Relative resource path.

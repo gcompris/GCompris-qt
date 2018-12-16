@@ -147,7 +147,7 @@ QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
 
 inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
 {
-    foreach (const QString &base, getSystemResourcePaths()) {
+    for (const QString &base : getSystemResourcePaths()) {
         if (QFile::exists(base + '/' + path))
             return QString(base + '/' + path);
     }
