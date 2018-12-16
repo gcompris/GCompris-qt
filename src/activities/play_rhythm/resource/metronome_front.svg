@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="-13.579231"
+     inkscape:cx="-165.25363"
      inkscape:cy="128.92987"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -58,7 +58,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -103,13 +103,13 @@
      transform="translate(300.59358,-266.64809)">
     <path
        inkscape:connector-curvature="0"
-       style="opacity:1;vector-effect:none;fill:#794d2b;fill-opacity:1;stroke:none;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m -196.87532,541.80387 c -18.74969,0.37919 -32.81218,17.83779 -32.81218,33.37079 h 65.62499 c 0,-15.533 -14.0625,-33.75 -32.81281,-33.37079 z"
+       style="opacity:1;vector-effect:none;fill:#76582d;fill-opacity:1;stroke:none;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -196.87532,543.12969 c -18.74969,0.37919 -32.81218,17.83779 -32.81218,33.37079 h 65.62499 c 0,-15.533 -14.0625,-33.75 -32.81281,-33.37079 z"
        id="path1025-7"
        sodipodi:nodetypes="sccs" />
     <path
-       style="opacity:1;vector-effect:none;fill:#e6d4b7;fill-opacity:1;stroke:none;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="m -196.87532,544.2378 a 28.125,28.125 0 0 0 -28.125,28.125 h 56.25 a 28.125,28.125 0 0 0 -28.125,-28.125 z"
+       style="opacity:1;vector-effect:none;fill:#caa66e;fill-opacity:1;stroke:none;stroke-width:1.875;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -196.87532,545.56362 a 28.125,28.125 0 0 0 -28.125,28.125 h 56.25 a 28.125,28.125 0 0 0 -28.125,-28.125 z"
        id="path1025"
        inkscape:connector-curvature="0" />
   </g>
