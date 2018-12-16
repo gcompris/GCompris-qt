@@ -36,44 +36,11 @@
 const QString DownloadManager::contentsFilename = QStringLiteral("Contents");
 DownloadManager* DownloadManager::_instance = nullptr;
 
-void copyPath(const QString &src, const QString &dst)
-{
-    QDir dir(src);
-    if (!dir.exists())
-        return;
-
-    for(const QString &d : dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
-        QString dst_path = dst + QDir::separator() + d;
-        dir.mkpath(dst_path);
-        copyPath(src + QDir::separator() + d, dst_path);
-    }
-
-    for(const QString &f : dir.entryList(QDir::Files)) {
-        qDebug() << "Copying " << src + QDir::separator() + f << " to " << dst + QDir::separator() + f;
-        QFile::copy(src + QDir::separator() + f, dst + QDir::separator() + f);
-    }
-}
-
 /* Public interface: */
 
 DownloadManager::DownloadManager()
   : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
-    // Cleanup of previous data directory no more used
-    QList<QDir> previousDataLocations = QList<QDir>() <<
-        QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data" <<
-        QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data2";
-
-    for(QDir &prevDir: previousDataLocations) {
-        if(prevDir.exists()) {
-            if(prevDir.dirName() == "data2") {
-                qDebug() << "Data changed place, move from previous folder to the new one";
-                copyPath(prevDir.absolutePath(), getSystemDownloadPath() + "/data2");
-            }
-            qDebug() << "Remove previous directory data: " << prevDir.absolutePath();
-            prevDir.removeRecursively();
-        }
-    }
 }
 
 DownloadManager::~DownloadManager()
@@ -206,59 +173,6 @@ bool DownloadManager::downloadResource(const QString& path)
     }
     return true;
 }
-
-#if 0
-// vvv might be helpful later with other use-cases:
-void DownloadManager::registerLocalResources()
-{
-    QStringList filenames = getLocalResources();
-    if (filenames.empty()) {
-        qDebug() << "No local resources found";
-        return;
-    }
-
-    QList<QString>::const_iterator iter;
-    for (iter = filenames.constBegin(); iter != filenames.constEnd(); iter++)
-        registerResource(*iter);
-}
-
-bool DownloadManager::checkForUpdates()
-{
-    QStringList filenames = getLocalResources();
-    if (filenames.empty()) {
-        qDebug() << "No local resources found";
-        return true;
-    }
-
-    if (!checkDownloadRestriction()) {
-        qDebug() << "Can't download with current network connection (" <<
-                networkConfiguration.bearerTypeName() << ")!";
-        return false;
-    }
-
-    QList<QString>::const_iterator iter;
-    DownloadJob *job = new DownloadJob();
-    for (iter = filenames.constBegin(); iter != filenames.constEnd(); iter++) {
-        QUrl url = getUrlForFilename(*iter);
-        qDebug() << "Scheduling resource for update: " << url;
-        job->queue.append(url);
-    }
-    job->url = job->queue.takeFirst();
-
-    {
-        QMutexLocker locker(&jobsMutex);
-        activeJobs.append(job);
-    }
-
-    if (!download(job)) {
-        QMutexLocker locker(&jobsMutex);
-        activeJobs.removeOne(job);
-        return false;
-    }
-    return true;
-
-}
-#endif
 
 /* Private: */
 
@@ -621,7 +535,7 @@ void DownloadManager::downloadFinished()
         job->url = job->queue.takeFirst();
         QString relPath = getRelativeResourcePath(getFilenameForUrl(job->url));
         // check in each resource-path for an up2date rcc file:
-        foreach (const QString &base, getSystemResourcePaths()) {
+        for (const QString &base : getSystemResourcePaths()) {
             QString filename = base + '/' + relPath;
             if (QFile::exists(filename)
                 && checksumMatches(job, filename))
@@ -686,11 +600,63 @@ void DownloadManager::downloadFinished()
     return;
 }
 
+#if 0
+// vvv might be helpful later with other use-cases:
+void DownloadManager::registerLocalResources()
+{
+    QStringList filenames = getLocalResources();
+    if (filenames.empty()) {
+        qDebug() << "No local resources found";
+        return;
+    }
+
+    QList<QString>::const_iterator iter;
+    for (iter = filenames.constBegin(); iter != filenames.constEnd(); iter++)
+        registerResource(*iter);
+}
+
+bool DownloadManager::checkForUpdates()
+{
+    QStringList filenames = getLocalResources();
+    if (filenames.empty()) {
+        qDebug() << "No local resources found";
+        return true;
+    }
+
+    if (!checkDownloadRestriction()) {
+        qDebug() << "Can't download with current network connection (" <<
+                networkConfiguration.bearerTypeName() << ")!";
+        return false;
+    }
+
+    QList<QString>::const_iterator iter;
+    DownloadJob *job = new DownloadJob();
+    for (iter = filenames.constBegin(); iter != filenames.constEnd(); iter++) {
+        QUrl url = getUrlForFilename(*iter);
+        qDebug() << "Scheduling resource for update: " << url;
+        job->queue.append(url);
+    }
+    job->url = job->queue.takeFirst();
+
+    {
+        QMutexLocker locker(&jobsMutex);
+        activeJobs.append(job);
+    }
+
+    if (!download(job)) {
+        QMutexLocker locker(&jobsMutex);
+        activeJobs.removeOne(job);
+        return false;
+    }
+    return true;
+
+}
+
 QStringList DownloadManager::getLocalResources()
 {
     QStringList result;
 
-    foreach (const QString &path, getSystemResourcePaths()) {
+    for (const QString &path : getSystemResourcePaths()) {
         QDir dir(path);
         if (!dir.exists(path) && !dir.mkpath(path)) {
             qWarning() << "Could not create resource path " << path;
@@ -708,3 +674,4 @@ QStringList DownloadManager::getLocalResources()
     }
     return result;
 }
+#endif

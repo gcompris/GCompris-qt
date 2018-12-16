@@ -442,7 +442,7 @@ QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activi
     m_config.beginGroup(activity);
     QStringList keys = m_config.childKeys();
     QVariantMap data;
-    foreach(const QString &key, keys) {
+    for(const QString &key : keys) {
         data[key] = m_config.value(key);
     }
     m_config.endGroup();

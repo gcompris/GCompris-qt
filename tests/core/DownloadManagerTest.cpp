@@ -172,6 +172,7 @@ private slots:
             QVERIFY(false);
         }
     }
+    
 private:
     /**
      * @brief downloadManager The DownloadManager object, that is the test downloadManager

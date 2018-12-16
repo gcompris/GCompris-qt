@@ -192,7 +192,9 @@ private:
     void unregisterResource_locked(const QString& filename);
     bool isRegistered(const QString& filename) const;
 
+#if 0
     QStringList getLocalResources();
+#endif
 
 private slots:
 
