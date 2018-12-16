@@ -120,6 +120,7 @@ function startGame() {
 
 function displayNote(currentNote) {
     items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.background.clefType)
+    items.multipleStaff.playNoteAudio(currentNote, "Quarter", items.background.clefType, 500)
     if(!items.isTutorialMode) {
         items.addNoteTimer.interval = items.addNoteTimer.timerNormalInterval
         items.addNoteTimer.start()
