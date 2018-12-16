@@ -58,7 +58,7 @@ QtObject {
                 },
                 {
                     "instructions": qsTr("Place the FRUITS to the right and others to the left"),
-                    "image": "Demonstrative Pronouns",
+                    "image": "Fruits",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
                     "prefix": "",

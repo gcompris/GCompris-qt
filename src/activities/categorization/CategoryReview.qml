@@ -113,7 +113,7 @@ Item {
             radius: 10
             border.width: 2
             width: horizontalLayout ? parent.width/5 : parent.width/3
-            height: horizontalLayout ? parent.height/6 : parent.height * 0.09
+            height: horizontalLayout ? parent.height/6 : parent.height * 0.12
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#000" }
                 GradientStop { position: 0.9; color: "#666" }
@@ -167,14 +167,14 @@ Item {
             id: categoryTextBox
             color: "black"
             opacity: type == "words" ? 1 : 0
-            width: horizontalLayout ? rightScreen.width * 0.35 : rightScreen.width * 0.35
+            width: horizontalLayout ? rightScreen.width * 0.35 : rightScreen.width * 0.55
             height: horizontalLayout ? rightScreen.height * 0.18 : rightScreen.height * 0.15
             anchors {
                 left: middleScreen.right
-                leftMargin: 0.15 * rightScreen.width
+                leftMargin: horizontalLayout ? 0.15 * rightScreen.width : 0.08 * rightScreen.width
             }
             z: 3
-            y: 0.015*parent.height
+            y: 0.015 * parent.height
             radius: 10
             border.width: 2
             gradient: Gradient {
@@ -202,7 +202,7 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: horizontalLayout ? rightScreen.width * 0.20 : rightScreen.width * 0.35
             height: horizontalLayout ? rightScreen.width * 0.20 : rightScreen.width * 0.35
-            y: parent.height*0.8
+            y: parent.height * 0.8
             z: 2
             anchors {
                 rightMargin: 14 * ApplicationInfo.ratio
@@ -243,6 +243,7 @@ Item {
                 right: categoryBackground.right
                 left: categoryImage.right
                 bottom: undefined
+                rightMargin: 0.05 * rightScreen.width
             }
         }
     }
@@ -251,7 +252,7 @@ Item {
 
     Keys.onReleased: {
         if (event.key === Qt.Key_Back) {
-            event.accepted = true
+            event.accepted= true
             Activity.launchMenuScreen()
         }
     }
