@@ -173,20 +173,30 @@ ActivityBase {
 
         Image {
             id: tempo
-            source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.png"
+            source: "qrc:/gcompris/src/activities/play_rhythm/resource/drumhead.svg"
             width: horizontalLayout ? parent.width / 7 : parent.width / 4
-            height: width / 2
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
             anchors.top: metronome.top
             anchors.horizontalCenter: parent.horizontalCenter
+            transform: Scale {
+                id: tempoScale
+                origin.y: tempo.height
+                yScale: 1
+                SequentialAnimation on yScale {
+                    id: tempoAnim
+                    PropertyAnimation { to: 0.5; duration: 50 }
+                    PropertyAnimation { to: 1; duration: 50 }
+                }
+            }
             MouseArea {
                 anchors.fill: parent
                 enabled: !background.isRhythmPlaying && !bonus.isPlaying
                 onPressed: tempo.tempoPressed()
-                onReleased: tempo.scale = 1
             }
 
             function tempoPressed() {
-                tempo.scale = 0.85
+                tempoAnim.start()
                 if(!multipleStaff.isMusicPlaying && Activity.currentNote == 0) {
                     multipleStaff.play()
                 } else if (!multipleStaff.isMusicPlaying && Activity.currentNote > 0){
