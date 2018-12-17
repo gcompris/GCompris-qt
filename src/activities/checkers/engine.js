@@ -1159,7 +1159,7 @@ var Draughts = function (fen) {
       return load(fen)
     },
 
-    reset: function () {
+    resetGame: function () {
       return reset()
     },
 
@@ -1187,7 +1187,7 @@ var Draughts = function (fen) {
 
     ascii: ascii,
 
-    turn: function () {
+    getTurn: function () {
       return turn.toLowerCase()
     },
 

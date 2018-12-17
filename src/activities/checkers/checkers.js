@@ -42,7 +42,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     state = new Engine.Draughts('W:W31-50:B1-20')
-    state.reset()
+    state.resetGame()
     items.from = -1
     items.gameOver = false
     items.redo_stack = []
@@ -97,7 +97,7 @@ function updateMessage() {
 }
 
 function refresh() {
-    items.blackTurn = (state.turn() == 'b')
+    items.blackTurn = (state.getTurn() == 'b')
     items.history = state.history()
     updateMessage()
     items.positions = 0 // Force a model reload
@@ -239,7 +239,7 @@ function undo() {
     // In computer mode, the white always starts, take care
     // of undo after a mate which requires us to revert on
     // a white play
-    if(!items.twoPlayer && state.turn() == 'b') {
+    if(!items.twoPlayer && state.getTurn() == 'b') {
         move = state.undo();
         redo_stack.push(move)
     }
@@ -261,7 +261,7 @@ function redo() {
    // In computer mode, the white always starts, take care
     // of undo after a mate which requires us to revert on
     // a white play
-    if(!items.twoPlayer && state.turn() == 'b') {
+    if(!items.twoPlayer && state.getTurn() == 'b') {
         move = redo_stack.pop()
         moveByEngine(move)
     }
