@@ -131,12 +131,12 @@ Rectangle {
         if(file.rmpath(filePath)) {
             Core.showMessageDialog(creationHandler,
                                    qsTr("%1 deleted successfully!").arg(filePath),
-                                   "", null, "", null, null);
+                                   qsTr("Ok"), null, "", null, null);
         }
         else {
             Core.showMessageDialog(creationHandler,
                                    qsTr("Unable to delete %1!").arg(filePath),
-                                   "", null, "", null, null);
+                                   qsTr("Ok"), null, "", null, null);
         }
 
         viewContainer.selectedFileIndex = -1
@@ -169,7 +169,7 @@ Rectangle {
         file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath)
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
-                               "", null, "", null, null);
+                               qsTr("Ok"), null, "", null, null);
         refreshWindow()
     }
 
