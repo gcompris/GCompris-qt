@@ -30,8 +30,8 @@ Rectangle {
 
     width: parent.width
     height: parent.height
-    color: "yellow"
-    border.color: "black"
+    color: "#ABCDEF"
+    border.color: "white"
     border.width: 2
     radius: 20
     visible: false
@@ -275,7 +275,7 @@ Rectangle {
                 Rectangle {
                     anchors.fill: parent
                     visible: index === viewContainer.selectedFileIndex
-                    color: "red"
+                    color: "#E77936"
                     opacity: 0.4
                     radius: 10
                 }
