@@ -101,11 +101,13 @@ ActivityBase {
                     spacing: 5.7 * ApplicationInfo.ratio
                     Repeater {
                         id: question
+                        // workaround for https://bugreports.qt.io/browse/QTBUG-72643 (qml binding with global variable in Repeater do not work)
+                        property alias itemWidth: column.itemWidth
                         Image {
                             source: Activity.url + modelData + '.svg'
                             sourceSize.height: height
                             sourceSize.width: width
-                            width: column.itemWidth - 6 * ApplicationInfo.ratio
+                            width: question.itemWidth - 6 * ApplicationInfo.ratio
                             height: width
                             fillMode: Image.PreserveAspectFit
                         }
@@ -132,7 +134,7 @@ ActivityBase {
                                     modelData + '.svg'
                             sourceSize.height: height
                             sourceSize.width: width
-                            width: column.itemWidth - 6 * ApplicationInfo.ratio
+                            width: question.itemWidth - 6 * ApplicationInfo.ratio
                             height: width
                             fillMode: Image.PreserveAspectFit
                         }
@@ -188,7 +190,7 @@ ActivityBase {
                         Image {
                             id: img
                             source: Activity.url + modelData + '.svg'
-                            width: column.itemWidth - 6 * ApplicationInfo.ratio
+                            width: question.itemWidth - 6 * ApplicationInfo.ratio
                             height: width
                             sourceSize.width: width
                             sourceSize.height: height
