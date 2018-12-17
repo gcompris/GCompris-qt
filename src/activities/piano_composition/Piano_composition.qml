@@ -127,7 +127,7 @@ ActivityBase {
         property string clefType: bar.level == 2 ? "Bass" : "Treble"
         property bool isLyricsMode: (optionsRow.lyricsOrPianoModeIndex === 1) && optionsRow.lyricsOrPianoModeOptionVisible
         property int layoutMargins: 5 * ApplicationInfo.ratio
-        
+
         File {
             id: file
             onError: console.error("File error: " + msg)
@@ -234,7 +234,7 @@ ActivityBase {
             coloredNotes: ['C','D', 'E', 'F', 'G', 'A', 'B']
             noteHoverEnabled: true
             anchors.margins: layoutMargins
-            
+
             onNoteClicked: {
                 if(selectedIndex === noteIndex)
                     selectedIndex = -1
@@ -280,7 +280,7 @@ ActivityBase {
                     parent.addMusicElementAndPushToStack(note, currentType)
                 }
             }
-            
+
             function addMusicElementAndPushToStack(noteName, noteType, elementType) {
                 if(noteType === "Rest")
                     elementType = "rest"
@@ -291,7 +291,7 @@ ActivityBase {
                         Activity.pushToStack(tempModel)
                         multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, background.clefType)
             }
-            
+
             Image {
                 id: shiftKeyboardLeft
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
@@ -307,7 +307,7 @@ ActivityBase {
                     onClicked: piano.currentOctaveNb--
                 }
             }
-            
+
             Image {
                 id: shiftKeyboardRight
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
@@ -323,7 +323,7 @@ ActivityBase {
                     onClicked: piano.currentOctaveNb++
                 }
             }
-            
+
             LyricsArea {
                 id: lyricsArea
                 width: parent.width
@@ -332,8 +332,6 @@ ActivityBase {
             }
             
         }
-
-
 
         GCCreationHandler {
             id: creationHandler

@@ -44,7 +44,7 @@ Grid {
     property alias keyOption: keyOption
     property alias bpmMeter: bpmMeter
     property alias restOptionIndex: restOptions.currentIndex
-    
+
     property bool restOptionsVisible: false
     property bool noteOptionsVisible: false
     property bool playButtonVisible: false
@@ -104,9 +104,8 @@ Grid {
 
     KeyOption {
         id: keyOption
-        
     }
-    
+
     Item {
         id: rests
         width: optionsRow.iconsWidth * 2
@@ -120,12 +119,12 @@ Grid {
             anchors.fill: parent
             radius: 10
         }
-        
+
         SwitchableOptions {
             id: restOptions
-            
+
             readonly property string restTypeImage: (optionsRow.noteLengthName[currentIndex][1]).toLowerCase()
-            
+
             source: "qrc:/gcompris/src/activities/piano_composition/resource/%1Rest.svg".arg(restTypeImage)
             nbOptions: optionsRow.noteLengthName.length
             onClicked: {
@@ -139,7 +138,7 @@ Grid {
             anchors.left: parent.left
             anchors.leftMargin: 5
         }
-        
+
         BarButton {
             id: addRestButton
             width: restOptions.width
@@ -151,11 +150,11 @@ Grid {
             onClicked: {
                 emitOptionMessage(optionsRow.restAddedMessage[restOptionIndex])
                 parent.scale = 1
-                background.addMusicElementAndPushToStack(restType.toLowerCase(), "Rest")
+                pianoLayout.addMusicElementAndPushToStack(restType.toLowerCase(), "Rest")
             }
         }
     }
-    
+
     BarButton {
         id: changeAccidentalStyleButton
         source: changeAccidentalStyleButtonVisible ? (piano.useSharpNotation ? "qrc:/gcompris/src/activities/piano_composition/resource/blacksharp.svg"
@@ -169,7 +168,7 @@ Grid {
             emitOptionMessage(piano.useSharpNotation ? qsTr("Sharp notes") : qsTr("Flat notes"))
         }
     }
-    
+
     SwitchableOptions {
         id: noteOptions
         source: "qrc:/gcompris/src/activities/piano_composition/resource/genericNote%1.svg".arg(optionsRow.noteLengthName[currentIndex][1])
