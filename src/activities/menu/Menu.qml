@@ -293,11 +293,10 @@ ActivityBase {
 
         // Activities
         property int iconWidth: 120 * ApplicationInfo.ratio
-        property int iconHeight: 120 * ApplicationInfo.ratio
         property int activityCellWidth:
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
-        property int activityCellHeight: iconHeight * 1.7
+        property int activityCellHeight: iconWidth * 1.7
 
         Loader {
             id: warningOverlay
@@ -370,8 +369,8 @@ ActivityBase {
                 height: activityCellHeight - activitiesGrid.spacing
                 Rectangle {
                     id: activityBackground
-                    width: activityCellWidth - activitiesGrid.spacing
-                    height: activityCellHeight - activitiesGrid.spacing
+                    width: parent.width
+                    height: parent.height
                     anchors.horizontalCenter: parent.horizontalCenter
                     color: "white"
                     opacity: 0.5
@@ -380,7 +379,10 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/" + icon;
                     anchors.top: activityBackground.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    sourceSize.height: iconHeight
+                    width: iconWidth - activitiesGrid.spacing
+                    height: width
+                    sourceSize.width: width
+                    fillMode: Image.PreserveAspectFit
                     anchors.margins: 5
                     Image {
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
