@@ -398,7 +398,6 @@ ActivityBase {
                 var notesToSave = multipleStaff.createNotesBackup()
                 // add bpm at start
                 notesToSave.unshift({"bpm": multipleStaff.bpmValue});
-                print(notesToSave)
                 creationHandler.saveWindow(notesToSave)
             }
             keyOption.onClefAdded: {

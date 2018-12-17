@@ -38,7 +38,6 @@ Timer {
     signal restart
 
     onPause: {
-        console.log(interval)
         if(timer.running) {
             pauseTime = new Date().getTime()
             timer.stop()
