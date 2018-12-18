@@ -62,7 +62,7 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items, activityMode) }
-        onStop : { Activity.stop() }
+        onStop: { Activity.stop() }
 
         onWidthChanged: Activity.sceneSizeChanged()
         onHeightChanged: Activity.sceneSizeChanged()
@@ -82,10 +82,10 @@ ActivityBase {
         
         GCText {
             id: description
-            text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
+            text: activityMode == "reaxl" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
             qsTr("Build the same tower in the empty area as the one you see on the right-hand side")
             width: instruction.width
-            fontSize: largeSize
+            fontSize: mediumSize
             color: "#373737"
             wrapMode: Text.WordWrap
             anchors.centerIn: instruction
