@@ -79,7 +79,7 @@ ActivityBase {
 
         Rectangle {
             id: target
-            height: width / 2
+            height: width / 2.5
             width: parent.width / 5
             radius: height / 10
             anchors {
@@ -95,10 +95,10 @@ ActivityBase {
 
         GCText {
             text: qsTr("Match the color")
-            fontSize: 18
             color: "#2a2a2a"
             horizontalAlignment: Text.AlignRight
             wrapMode: Text.WordWrap
+            fontSizeMode: Text.Fit
             anchors {
                 top: target.top
                 right: target.left
@@ -110,7 +110,7 @@ ActivityBase {
         GCText {
             id: helpMessage
             text: ""
-            fontSize: mediumSize
+            fontSizeMode: Text.Fit
             horizontalAlignment: Text.AlignLeft
             wrapMode: Text.WordWrap
             anchors {
@@ -118,17 +118,19 @@ ActivityBase {
                 left: target.right
                 right: parent.right
                 leftMargin: items.margins
+                bottom: result.top
             }
         }
         Rectangle {
             id: result
             height: width
-            width: target.width * 0.75
+            width: Math.min(target.width * 0.75, 90 * ApplicationInfo.ratio)
             radius: height / 2
+
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: target.bottom
-                topMargin: (background.height - items.chooserHeight * 4) / 2
+                topMargin: (background.height - items.chooserHeight * 4) / 3
             }
             border.color: "#2a2a2a"
             border.width: 0
@@ -179,8 +181,8 @@ ActivityBase {
 
         Score {
             id: score
-            x: parent.width * 0.25
             y: parent.height * 0.65
+            anchors.left: parent.left
             anchors.right: undefined
             anchors.bottom: undefined
             currentSubLevel: 0

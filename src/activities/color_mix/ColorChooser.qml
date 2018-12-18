@@ -64,7 +64,7 @@ Image {
         anchors {
             verticalCenter: parent.verticalCenter
             right: parent.right
-            rightMargin: parent.width * 0.2
+            rightMargin: parent.width * 0.25
         }
     }
 
@@ -73,7 +73,7 @@ Image {
         anchors {
             verticalCenter: parent.verticalCenter
             left: parent.left
-            leftMargin: parent.width * 0.3
+            leftMargin: parent.width * 0.5
         }
     }
 
