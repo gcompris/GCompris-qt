@@ -127,7 +127,7 @@ ActivityBase {
                 }
 
                 Grid {
-                    spacing: 10
+                    spacing: 60 * ApplicationInfo.ratio
                     columns: items.isPortrait ? 3 : 1
                     anchors.horizontalCenter: parent.horizontalCenter
                     horizontalItemAlignment: Grid.AlignHCenter
@@ -136,11 +136,19 @@ ActivityBase {
                     Button {
                         id: undo
                         height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Undo");
+                        width: height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         onClicked: Activity.undo()
                         enabled: (items.history && items.history.length > 0) ? true : false
                         opacity: enabled ? 1 : 0
+                        Image {
+                            source: 'qrc:/gcompris/src/activities/chess/resource/undo.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         Behavior on opacity {
                             PropertyAnimation {
                                 easing.type: Easing.InQuad
@@ -151,14 +159,22 @@ ActivityBase {
 
                     Button {
                         id: redo
-                        height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Redo");
+                        height: undo.height
+                        width: undo.height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         onClicked: {
                             Activity.redo()
                         }
                         enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
                         opacity: enabled
+                        Image {
+                            source: 'qrc:/gcompris/src/activities/chess/resource/redo.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         Behavior on opacity {
                             PropertyAnimation {
                                 easing.type: Easing.InQuad
@@ -168,11 +184,19 @@ ActivityBase {
                     }
 
                     Button {
-                        height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Swap");
+                        height: undo.height
+                        width: undo.height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         enabled: items.twoPlayer
                         opacity: enabled
+                        Image {
+                            source: 'qrc:/gcompris/src/activities/chess/resource/turn.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         onClicked: chessboard.swap()
                     }
                 }
