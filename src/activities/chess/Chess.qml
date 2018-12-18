@@ -144,11 +144,19 @@ ActivityBase {
                     Button {
                         id: undo
                         height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Undo");
+                        width: height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         onClicked: Activity.undo()
                         enabled: items.history.length > 0 ? 1 : 0
                         opacity: enabled
+                        Image {
+                            source: Activity.url + 'undo.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         Behavior on opacity {
                             PropertyAnimation {
                                 easing.type: Easing.InQuad
@@ -160,7 +168,8 @@ ActivityBase {
                     Button {
                         id: redo
                         height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Redo");
+                        width: height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         onClicked: {
                             if (!twoPlayers) {
@@ -172,6 +181,13 @@ ActivityBase {
                         }
                         enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
                         opacity: enabled
+                        Image {
+                            source: Activity.url + 'redo.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         Behavior on opacity {
                             PropertyAnimation {
                                 easing.type: Easing.InQuad
@@ -182,10 +198,18 @@ ActivityBase {
 
                     Button {
                         height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Swap");
+                        width: height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         enabled: items.twoPlayer
                         opacity: enabled
+                        Image {
+                            source: Activity.url + 'turn.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         onClicked: chessboard.swap()
                     }
                 }
