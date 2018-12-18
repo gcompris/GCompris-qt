@@ -66,7 +66,6 @@ ActivityBase {
             source: Activity.url + "top_back.svg"
             sourceSize.width: parent.width * 0.90
 
-
             Row {
                 id: row
                 spacing: 10 * ApplicationInfo.ratio
@@ -78,17 +77,19 @@ ActivityBase {
                     id: cardRepeater
                     model: ["L","O","U","I","S"," ","B","R","A","I","L","L","E"]
 
+                    // workaround for https://bugreports.qt.io/browse/QTBUG-72643 (qml binding with global variable in Repeater do not work)
+                    property alias rowSpacing: row.spacing
                     Item {
                         id: inner
                         height: charList.height * 0.95
-                        width:(charList.width - 13 * row.spacing)/ 13
+                        width: (charList.width - 13 * cardRepeater.rowSpacing)/ 13
 
                         Rectangle {
                             id: rect1
-                            width:  charList.width / 13
+                            width: charList.width / 13
                             height: ins.height
                             border.width: 3
-                            opacity: index==5 ? 0 :1
+                            opacity: index == 5 ? 0 :1
                             border.color: "black"
                             color: "white"
 
