@@ -29,7 +29,7 @@ ActivityInfo {
     description: qsTr("The version in GCompris is the international draughts.")
     //intro: "play checkers with your friend"
     //: Help goal
-    goal: qsTr("Capture all the pieces of your opponent before your opponent capture all of yours.")
+    goal: qsTr("Capture all the pieces of your opponent before your opponent captures all of yours.")
     //: Help prerequisite
     prerequisite: ""
     //: Help manual

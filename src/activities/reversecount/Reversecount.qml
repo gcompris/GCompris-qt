@@ -228,8 +228,8 @@ ActivityBase {
                     property alias modeBox: modeBox
                     property var availableModes: [
                         { "text": qsTr("Dots"), "value": "dot" },
-                        { "text": qsTr("Numbers"), "value": "number" },
-                        { "text": qsTr("Romans"), "value": "roman" },
+                        { "text": qsTr("Arabic numbers"), "value": "number" },
+                        { "text": qsTr("Roman numbers"), "value": "roman" },
                         { "text": qsTr("Images"), "value": "image" }
                     ]
                     Flow {

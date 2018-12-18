@@ -89,7 +89,7 @@ function get() {
              },
              {
                  "title": "Fuchs du hast die Gans gestohlen",
-                 "_origin": qsTr("German"),
+                 "_origin": qsTr("Germany"),
                  "lyrics": "Fuchs, du hast die Gans gestohlen, gib sie wieder her, gib sie wieder her! Sonst wird dich der Jäger holen, mit dem Schießgewehr! Sonst wird dich der Jäger holen, mit dem Schießgewehr!",
                  "defaultBPM": 100,
                  "melody": "Treble D4Quarter E4Quarter F#4Quarter G4Quarter A4Quarter A4Quarter A4Quarter A4Quarter B4Quarter G4Quarter D5Quarter B4Quarter A4Whole B4Quarter G4Quarter D5Quarter B4Quarter A4Whole A4Quarter G4Quarter G4Quarter G4Quarter G4Quarter F#4Quarter F#4Quarter F#4Quarter F#4Quarter E4Quarter F#4Quarter E4Quarter D4Quarter F#4Quarter A4Half"
