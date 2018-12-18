@@ -135,7 +135,7 @@ ActivityBase {
                 }
 
                 Grid {
-                    spacing: 10
+                    spacing: 60 * ApplicationInfo.ratio
                     columns: items.isPortrait ? 3 : 1
                     anchors.horizontalCenter: parent.horizontalCenter
                     horizontalItemAlignment: Grid.AlignHCenter
@@ -167,8 +167,8 @@ ActivityBase {
 
                     Button {
                         id: redo
-                        height: 30 * ApplicationInfo.ratio
-                        width: height
+                        height: undo.height
+                        width: undo.height
                         text: "";
                         style: GCButtonStyle { theme: "light" }
                         onClicked: {
@@ -197,8 +197,8 @@ ActivityBase {
                     }
 
                     Button {
-                        height: 30 * ApplicationInfo.ratio
-                        width: height
+                        height: undo.height
+                        width: undo.height
                         text: "";
                         style: GCButtonStyle { theme: "light" }
                         enabled: items.twoPlayer
