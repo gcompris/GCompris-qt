@@ -29,7 +29,7 @@ ActivityInfo {
   description: qsTr("This activity helps you to learn the concept of conversion of decimal number system to binary number system.")
   //intro: "Turn on the right bulbs to represent the binary of the given decimal number. When you have achieved it, press OK"
   //: Help goal
-  goal: qsTr("To get familiar with binary number system")
+  goal: qsTr("To get familiar with the binary number system")
   //: Help prerequisite
   prerequisite: qsTr("Decimal number system")
   //: Help manual

@@ -199,7 +199,7 @@ Item {
                 fontSizeMode: Text.Fit
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                text: qsTr("Closeness: %1%").arg(closenessMeterValue)
+                text: qsTr("Accuracy: %1%").arg(closenessMeterValue)
             }
         }
 
@@ -275,7 +275,7 @@ Item {
             verticalAlignment: Text.AlignVCenter
             wrapMode: Text.WordWrap
             fontSizeMode: mediumSize
-            text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2").arg(progressBar.value).arg(progressBar.value <= 90 ? qsTr("You should score above 90% to become a Solar System expert!<br>Retry to test your skills more or train in normal mode to explore more about the Solar System.") : qsTr("Great! You can replay the assessment to test your knowledge on more questions."))
+            text: qsTr("Your final score is: <font color=\"#3bb0de\">%1%</font>.<br><br>%2").arg(progressBar.value).arg(progressBar.value <= 90 ? qsTr("You should score above 90% to become a Solar System expert!<br>Retry to test your skills again or train in normal mode to explore more about the Solar System.") : qsTr("Great! You can replay the assessment to test your knowledge on more questions."))
         }
 
         // To prevent clicking on options under it

@@ -26,13 +26,13 @@ function get() {
                     "bodySize": 1.3,
                     "levels": [
                         { 	// sub-level 1
-                            "question": qsTr("How large is the Sun compared to other planets in our Solar System?"),
+                            "question": qsTr("How large is the Sun compared to the planets in our Solar System?"),
                             "options": [qsTr("Sixth largest"), qsTr("Third largest"), qsTr("Largest"), qsTr("Seventh largest")],
                             "closeness": [17.5, 67, 100, 1]
                         },
                         { 	// sub-level 2
                             "question": qsTr("The temperature of the Sun is around:"),
-                            "options": [qsTr("1000 degrees celsius"), qsTr("4500 degrees celsius"), qsTr("5505 degrees celsius"), qsTr("3638 degrees celsius")],
+                            "options": [qsTr("1000 °C"), qsTr("4500 °C"), qsTr("5505 °C"), qsTr("3638 °C")],
                             "closeness": [1, 78, 100, 60]
                         },
                         { 	// sub-level 3
@@ -56,7 +56,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury.png",
                     "bodyName": qsTr("Mercury"),
                     "bodySize": 0.12,
-                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
+                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
                     "levels": [
                         { 	// sub-level 1
@@ -76,7 +76,7 @@ function get() {
                         },
                         { 	// sub-level 4
                             "question": qsTr("The maximum temperature on Mercury is:"),
-                            "options": [qsTr("50 degrees celsius"), qsTr("35 degrees celsius"), qsTr("427 degrees celsius"), qsTr("273 degrees celsius")],
+                            "options": [qsTr("50 °C"), qsTr("35 °C"), qsTr("427 °C"), qsTr("273 °C")],
                             "closeness": [4.8, 1, 100, 61]
                         },
                         { 	// sub-level 5
@@ -95,7 +95,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus.png",
                     "bodyName": qsTr("Venus"),
                     "bodySize": 0.22,
-                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
+                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
                         { 	// sub-level 1
@@ -125,7 +125,7 @@ function get() {
                         },
                         { 	// sub-level 6
                             "question": qsTr("The maximum temperature on Venus is:"),
-                            "options": [qsTr("100 degrees celsius"), qsTr("20 degrees celsius"), qsTr("467 degrees celsius"), qsTr("45 degrees celsius")],
+                            "options": [qsTr("100 °C"), qsTr("20 °C"), qsTr("467 °C"), qsTr("45 °C")],
                             "closeness": [18.7, 1, 100, 6.5]
                         },
                         {   // sub-level 7
@@ -139,7 +139,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth.png",
                     "bodyName": qsTr("Earth"),
                     "bodySize": 0.3,
-                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
+                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
                     "levels": [
                         { 	// sub-level 1
@@ -169,7 +169,7 @@ function get() {
                         },
                         { 	// sub-level 6
                             "question": qsTr("Maximum temperature on Earth is:"),
-                            "options": [qsTr("100 degrees celsius"), qsTr("58 degrees celsius"), qsTr("30 degrees celsius"), qsTr("45 degrees celsius")],
+                            "options": [qsTr("100 °C"), qsTr("58 °C"), qsTr("30 °C"), qsTr("45 °C")],
                             "closeness": [1, 100, 33, 69.3]
                         },
                         {   // sub-level 7
@@ -183,7 +183,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars.png",
                     "bodyName": qsTr("Mars"),
                     "bodySize": 0.15,
-                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 degrees celsius."),
+                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
                         { 	// sub-level 1
@@ -193,7 +193,7 @@ function get() {
                         },
                         { 	// sub-level 2
                             "question": qsTr("The maximum temperature on Mars is:"),
-                            "options": [qsTr("20 degrees celsius"), qsTr("35 degrees celsius"), qsTr("100 degrees celsius"), qsTr("60 degrees celsius")],
+                            "options": [qsTr("20 °C"), qsTr("35 °C"), qsTr("100 °C"), qsTr("60 °C")],
                             "closeness": [100, 81.4, 1, 51.5]
                         },
                         { 	// sub-level 3
@@ -227,7 +227,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter.png",
                     "bodyName": qsTr("Jupiter"),
                     "bodySize": 1,
-                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 degrees celsius."),
+                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
                         { 	// sub-level 1
@@ -242,7 +242,7 @@ function get() {
                         },
                         { 	// sub-level 3
                             "question": qsTr("The minimum temperature on Jupiter is:"),
-                            "options": [qsTr("-145 degrees celsius"), qsTr("100 degrees celsius"), qsTr("50 degrees celsius"), qsTr("-180 degrees celsius")],
+                            "options": [qsTr("-145 °C"), qsTr("100 °C"), qsTr("50 °C"), qsTr("-180 °C")],
                             "closeness": [100, 63, 24.7, 1]
                         },
                         { 	// sub-level 4
@@ -266,7 +266,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn.png",
                     "bodyName": qsTr("Saturn"),
                     "bodySize": 1.2,
-                    "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 degrees celsius."),
+                    "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth years."),
                     "levels": [
                         { 	// sub-level 1
@@ -291,7 +291,7 @@ function get() {
                         },
                         { 	// sub-level 5
                             "question": qsTr("The minimum temperature on Saturn is:"),
-                            "options": [qsTr("0 degrees celsius"), qsTr("100 degrees celsius"), qsTr("-178 degrees celsius"), qsTr("-100 degrees celsius")],
+                            "options": [qsTr("0 °C"), qsTr("100 °C"), qsTr("-178 °C"), qsTr("-100 °C")],
                             "closeness": [36.6, 1, 100, 72]
                         },
                         { 	// sub-level 6
@@ -305,7 +305,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus.png",
                     "bodyName": qsTr("Uranus"),
                     "bodySize": 0.5,
-                    "temperatureHint": qsTr("The temperature on Saturn is -178 degrees celsius."),
+                    "temperatureHint": qsTr("The temperature on Saturn is -178 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
                         { 	// sub-level 1
@@ -335,7 +335,7 @@ function get() {
                         },
                         { 	// sub-level 6
                             "question": qsTr("The maximum temperature on Uranus is:"),
-                            "options": [qsTr("100 degrees celsius"), qsTr("-216 degrees celsius"), qsTr("0 degrees celsius"), qsTr("-100 degrees celsius")],
+                            "options": [qsTr("100 °C"), qsTr("-216 °C"), qsTr("0 °C"), qsTr("-100 °C")],
                             "closeness": [1, 100, 32.3, 63.6]
                         }
                     ]
@@ -344,7 +344,7 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune.png",
                     "bodyName": qsTr("Neptune"),
                     "bodySize": 0.4,
-                    "temperatureHint": qsTr("The maximum temperature on Saturn is -178 degrees celsius."),
+                    "temperatureHint": qsTr("The maximum temperature on Saturn is -178 °C."),
                     "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 years."),
                     "levels": [
                         { 	// sub-level 1
@@ -369,7 +369,7 @@ function get() {
                         },
                         { 	// sub-level 5
                             "question": qsTr("The average temperature on Neptune is:"),
-                            "options": [qsTr("100 degrees celsius"), qsTr("30 degrees celsius"), qsTr("-210 degrees celsius"), qsTr("-100 degrees celsius")],
+                            "options": [qsTr("100 °C"), qsTr("30 °C"), qsTr("-210 °C"), qsTr("-100 °C")],
                             "closeness": [1, 23, 100, 64]
                         },
                         { 	// sub-level 6

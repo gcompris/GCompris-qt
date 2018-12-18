@@ -36,8 +36,8 @@ ActivityInfo {
   manual: qsTr("A Roman numeral is the name for a number when it is written in the way the Romans used to write numbers. Roman numerals are not used very often today in the west. They are used to write the names of kings and queens, or popes. For example: Queen Elizabeth II. They may be used to write the year a book or movie was made.\n
   The building of the roman numbers is made up by an agglutination of numbers (the thousands, joined with the hundreds, joined with the tens, joined with the units → just like the arab decimal system). This agglutination of numbers is interpreted as the sum of these particular numbers (again → just like the arab decimal system: you add up thousands+hundreds+tens+units, and you write the respective figures combined).\n
   Examples:\n
-  2394: we got a sum of 2000 (MM), 300 (CCC), ninety (XC) and 4 units (IV), so we write this combined: MMCCCXCIV\n
-  MMMCMXLIX: we got first thousands (MMM=3000), then we got hundreds (CM=1000–100=900), then we got tens (XL=50–10=40), and at last we got units (IX=10–1=9), so we write this in the decimal system: 3949).")
+  2394: we got a sum of 2000 (MM), 300 (CCC), 90 (XC) and 4 units (IV), so we write this combined: MMCCCXCIV\n
+  MMMCMXLIX: we got first thousands (MMM=3000), then we got hundreds (CM=1000–100=900), then we got tens (XL=50–10=40), and at last we got units (IX=10–1=9), so we write this in the decimal system: 3949.")
   credit: ""
   section: "math"
   createdInVersion: 7000

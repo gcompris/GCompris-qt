@@ -126,7 +126,7 @@ ActivityBase {
                 },
                 {
                     values: ['_random_', 50 /* up to this number */ , 10 /* sublevels */],
-                    instruction: qsTr("Now you know the rules, you can read and write any number in roman numerals."),
+                    instruction: qsTr("Now you know the rules, you can read and write numbers in roman numerals."),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
