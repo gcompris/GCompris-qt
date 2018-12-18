@@ -207,7 +207,6 @@ function discReleased(index)
     var disc = items.discRepeater.itemAt(index)
     var isCorrect = false;
 
-
     if(activityMode == "real") {
         for(var i = 0 ; i < items.towerModel.model ; ++ i) {
             var towerItem = items.towerModel.itemAt(i);
