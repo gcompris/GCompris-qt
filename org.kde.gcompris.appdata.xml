@@ -415,6 +415,8 @@
       <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="ca-valencia">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="el">Δραστηριότητα "Κλικ σε κεφαλαίο γράμμα"</caption>
+      <caption xml:lang="en-GB">"Click on an uppercase letter" activity</caption>
+      <caption xml:lang="es">Actividad «Pulsa en una letra mayúscula»</caption>
       <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ml">"ഒരു വലിയ അക്ഷരത്തിൽ ക്ലിക്ക് ചെയ്യുക" പ്രവർത്തനം</caption>
@@ -431,6 +433,8 @@
       <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="ca-valencia">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="el">Δραστηριότητα "Ρολόι"</caption>
+      <caption xml:lang="en-GB">"Learning Clock" activity</caption>
+      <caption xml:lang="es">Actividad «Juego del reloj»</caption>
       <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ml">"സമയം പഠിക്കൽ" പ്രവർത്തനം</caption>
@@ -447,6 +451,8 @@
       <caption xml:lang="ca">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="ca-valencia">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="el">Δραστηριότητα "Μείξη χρωμάτων"</caption>
+      <caption xml:lang="en-GB">"Mixing colour of paint" activity</caption>
+      <caption xml:lang="es">Actividad «Mezcla de colores»</caption>
       <caption xml:lang="gl">Actividade de «Mesturar a cor da pintura»</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ml">"ചായത്തിൻ്റെ നിറങ്ങൾ കൂട്ടിക്കലർത്താം" പ്രവർത്തനം</caption>
@@ -463,6 +469,8 @@
       <caption xml:lang="ca">Activitat «Colors»</caption>
       <caption xml:lang="ca-valencia">Activitat «Colors»</caption>
       <caption xml:lang="el">Δραστηριότητα "Χρώματα"</caption>
+      <caption xml:lang="en-GB">"Colours" activity</caption>
+      <caption xml:lang="es">Actividad «Colores»</caption>
       <caption xml:lang="gl">Actividade de «Cores»</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ml">"നിറങ്ങൾ" പ്രവർത്തനം</caption>
@@ -479,6 +487,8 @@
       <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="el">Δραστηριότητα "Φτιάξε το ίδιο"</caption>
+      <caption xml:lang="en-GB">"Build the same model" activity</caption>
+      <caption xml:lang="es">Actividad «Grúa»</caption>
       <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ml">"മാതൃക പോലെ നിർമ്മിക്കുക " പ്രവർത്തനം</caption>
@@ -495,6 +505,8 @@
       <caption xml:lang="ca">Activitat «Compta els elements»</caption>
       <caption xml:lang="ca-valencia">Activitat «Compta els elements»</caption>
       <caption xml:lang="el">Δραστηριότητα "Μέτρα τα αντικείμενα"</caption>
+      <caption xml:lang="en-GB">"Count the items" activity</caption>
+      <caption xml:lang="es">Actividad «Enumeración»</caption>
       <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ml">"എത്രയെണ്ണം?" പ്രവർത്തനം</caption>
@@ -511,6 +523,8 @@
       <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="ca-valencia">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="el">Δραστηριότητα "Δεκαπέντε"</caption>
+      <caption xml:lang="en-GB">"The fifteen game" activity</caption>
+      <caption xml:lang="es">Actividad «Quince»</caption>
       <caption xml:lang="gl">Actividade de «O xogo dos quince»</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ml">"പതിനഞ്ചിന്റെ കളി" പ്രവർത്തനം</caption>
@@ -527,6 +541,8 @@
       <caption xml:lang="ca">Activitat «Hexàgon»</caption>
       <caption xml:lang="ca-valencia">Activitat «Hexàgon»</caption>
       <caption xml:lang="el">Δραστηριότητα "Εξάγωνο"</caption>
+      <caption xml:lang="en-GB">"Hexagon" activity</caption>
+      <caption xml:lang="es">Actividad «Hexágono»</caption>
       <caption xml:lang="gl">Actividade de «Hexágono»</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ml">"ഷഡ്ഭുജം" പ്രവർത്തനം</caption>
@@ -543,6 +559,8 @@
       <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="ca-valencia">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="el">Δραστηριότητα "Ισορρόπησε τη ζυγαριά"</caption>
+      <caption xml:lang="en-GB">"Balance the scales properly" activity</caption>
+      <caption xml:lang="es">Actividad «Balanzas»</caption>
       <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma axeitada»</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ml">"തട്ടുകളിലെ തൂക്കമൊപ്പിക്കൂ" പ്രവർത്തനം</caption>
@@ -559,6 +577,8 @@
       <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="ca-valencia">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="el">Δραστηριότητα "Το σκάκι στο τέλος"</caption>
+      <caption xml:lang="en-GB">"End of chess game" activity</caption>
+      <caption xml:lang="es">Actividad «Final de partida de ajedrez»</caption>
       <caption xml:lang="gl">Actividade de «Final dunha partida de xadrez»</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ml">"ചെസ്സു കളിയുടെ അവസാനം" പ്രവർത്തനം</caption>
@@ -575,6 +595,8 @@
       <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="ca-valencia">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="el">Δραστηριότητα "Βγάζω το αυτοκίνητο"</caption>
+      <caption xml:lang="en-GB">"A sliding-block puzzle game" activity</caption>
+      <caption xml:lang="es">Actividad «Tráfico»</caption>
       <caption xml:lang="gl">Actividade de «Un crebacabezas de bloques que se moven»</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ml">"വഴി കണ്ടെത്തൽ" പ്രവർത്തനം</caption>
