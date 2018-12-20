@@ -67,7 +67,7 @@ ActivityBase {
             keyboardBindings[Qt.Key_F4] = 4
             keyboardBindings[Qt.Key_F5] = 5
 
-            if(event.key >= Qt.Key_1 && event.key <= Qt.Key_7) {
+            if(event.key >= Qt.Key_1 && event.key <= Qt.Key_7 && keyboardBindings[event.key] < piano.whiteKeyNoteLabels.length) {
                 piano.keyRepeater.itemAt(keyboardBindings[event.key]).whiteKey.keyPressed()
             }
             else if(event.key >= Qt.Key_F1 && event.key <= Qt.Key_F5) {
