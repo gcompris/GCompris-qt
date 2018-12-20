@@ -93,7 +93,7 @@
     <p xml:lang="tr">GCompris, 2 ile 10 yaş arasındaki çocuklar için çok sayıda etkinlik içeren bir eğitim yazılımı paketidir.</p>
     <p xml:lang="uk">GCompris — високоякісний комплекс навчального програмного забезпечення, що складається з багатьох вправ для дітей від 2 до 10 років.</p>
     <p xml:lang="x-test">xxGCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.xx</p>
-    <p xml:lang="zh-TW">GCompris 是一套教育軟體的集合，它提供適合兩歲到十歲兒童各種不同的活動。</p>
+    <p xml:lang="zh-TW">GCompris 是一套教育軟體的集合，它提供適合兩歲到十歲兒童各種不同的遊戲。</p>
     <p>Some of the activities are game orientated, but nonetheless
     still educational.</p>
     <p xml:lang="ca">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
@@ -158,7 +158,7 @@
     <p xml:lang="uk">Нижче наведено список категорій із деякими вправами у цих категоріях.</p>
     <p xml:lang="x-test">xxBelow you can find a list of categories with some of the activities available in that category.xx</p>
     <p xml:lang="zh-CN">下面列出了一些分类和对应分类中的活动。</p>
-    <p xml:lang="zh-TW">下方您可以看到該類別的活動清單。</p>
+    <p xml:lang="zh-TW">下方您可以看到該類別的遊戲清單。</p>
     <ul>
       <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
@@ -382,7 +382,7 @@
     <p xml:lang="uk">У поточній версії GCompris понад 100 вправ. Розробники постійно працюють над новими вправами. GCompris є вільним програмним забезпеченням, це означає, що ви можете адаптувати програму до власних потреб, покращувати її і, що найважливіше, ділитися вашими творіннями із усіма дітьми.</p>
     <p xml:lang="x-test">xxCurrently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.xx</p>
     <p xml:lang="zh-CN">当前 GCompris 提供超过100个活动，还有更多的正在开发中。GCompris 是自由软件，这意味着您可以根据您的需要进行调整、改进，以及最重要的一点，和世界各地的孩子们分享。</p>
-    <p xml:lang="zh-TW">目前 GCompris 提供超過 100 個活動，還有更多正在開發中。GCompris 是一套自由軟體，表示您可以根據您自己的需求來改進，並分享給所有的孩子們。</p>
+    <p xml:lang="zh-TW">目前 GCompris 提供超過 100 個遊戲，還有更多正在開發中。GCompris 是一套自由軟體，表示您可以根據您自己的需求來改進，並分享給所有的孩子們。</p>
   </description>
   <screenshots>
     <screenshot type="default">
@@ -417,6 +417,7 @@
       <caption xml:lang="el">Δραστηριότητα "Κλικ σε κεφαλαίο γράμμα"</caption>
       <caption xml:lang="en-GB">"Click on an uppercase letter" activity</caption>
       <caption xml:lang="es">Actividad «Pulsa en una letra mayúscula»</caption>
+      <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
       <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ml">"ഒരു വലിയ അക്ഷരത്തിൽ ക്ലിക്ക് ചെയ്യുക" പ്രവർത്തനം</caption>
@@ -426,6 +427,7 @@
       <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
       <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
+      <caption xml:lang="zh-TW">「在大寫字母上按一下」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</image>
     </screenshot>
     <screenshot>
@@ -435,6 +437,7 @@
       <caption xml:lang="el">Δραστηριότητα "Ρολόι"</caption>
       <caption xml:lang="en-GB">"Learning Clock" activity</caption>
       <caption xml:lang="es">Actividad «Juego del reloj»</caption>
+      <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
       <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ml">"സമയം പഠിക്കൽ" പ്രവർത്തനം</caption>
@@ -444,6 +447,7 @@
       <caption xml:lang="sv">Aktiviteten "Lär dig klockan"</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
       <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
+      <caption xml:lang="zh-TW">「學習時鐘」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/clockgame.png</image>
     </screenshot>
     <screenshot>
@@ -453,6 +457,7 @@
       <caption xml:lang="el">Δραστηριότητα "Μείξη χρωμάτων"</caption>
       <caption xml:lang="en-GB">"Mixing colour of paint" activity</caption>
       <caption xml:lang="es">Actividad «Mezcla de colores»</caption>
+      <caption xml:lang="fr">L'activité « Mélange de la couleur de peinture »</caption>
       <caption xml:lang="gl">Actividade de «Mesturar a cor da pintura»</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ml">"ചായത്തിൻ്റെ നിറങ്ങൾ കൂട്ടിക്കലർത്താം" പ്രവർത്തനം</caption>
@@ -462,6 +467,7 @@
       <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
       <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
+      <caption xml:lang="zh-TW">「混合顏色」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/color_mix.png</image>
     </screenshot>
     <screenshot>
@@ -471,6 +477,7 @@
       <caption xml:lang="el">Δραστηριότητα "Χρώματα"</caption>
       <caption xml:lang="en-GB">"Colours" activity</caption>
       <caption xml:lang="es">Actividad «Colores»</caption>
+      <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
       <caption xml:lang="gl">Actividade de «Cores»</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ml">"നിറങ്ങൾ" പ്രവർത്തനം</caption>
@@ -480,6 +487,7 @@
       <caption xml:lang="sv">Aktiviteten "Färger"</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
       <caption xml:lang="x-test">xx"Colors" activityxx</caption>
+      <caption xml:lang="zh-TW">「顏色」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/colors.png</image>
     </screenshot>
     <screenshot>
@@ -489,6 +497,7 @@
       <caption xml:lang="el">Δραστηριότητα "Φτιάξε το ίδιο"</caption>
       <caption xml:lang="en-GB">"Build the same model" activity</caption>
       <caption xml:lang="es">Actividad «Grúa»</caption>
+      <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
       <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ml">"മാതൃക പോലെ നിർമ്മിക്കുക " പ്രവർത്തനം</caption>
@@ -498,6 +507,7 @@
       <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
       <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
+      <caption xml:lang="zh-TW">「建立相同的模型」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/crane.png</image>
     </screenshot>
     <screenshot>
@@ -507,6 +517,7 @@
       <caption xml:lang="el">Δραστηριότητα "Μέτρα τα αντικείμενα"</caption>
       <caption xml:lang="en-GB">"Count the items" activity</caption>
       <caption xml:lang="es">Actividad «Enumeración»</caption>
+      <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
       <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ml">"എത്രയെണ്ണം?" പ്രവർത്തനം</caption>
@@ -516,6 +527,7 @@
       <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
       <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
+      <caption xml:lang="zh-TW">「數一數物品」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/enumerate.png</image>
     </screenshot>
     <screenshot>
@@ -525,6 +537,7 @@
       <caption xml:lang="el">Δραστηριότητα "Δεκαπέντε"</caption>
       <caption xml:lang="en-GB">"The fifteen game" activity</caption>
       <caption xml:lang="es">Actividad «Quince»</caption>
+      <caption xml:lang="fr">L'activité « Le jeu du taquin »</caption>
       <caption xml:lang="gl">Actividade de «O xogo dos quince»</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ml">"പതിനഞ്ചിന്റെ കളി" പ്രവർത്തനം</caption>
@@ -534,6 +547,7 @@
       <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
       <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
+      <caption xml:lang="zh-TW">「遊戲十五」</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/fifteen.png</image>
     </screenshot>
     <screenshot>
@@ -543,6 +557,7 @@
       <caption xml:lang="el">Δραστηριότητα "Εξάγωνο"</caption>
       <caption xml:lang="en-GB">"Hexagon" activity</caption>
       <caption xml:lang="es">Actividad «Hexágono»</caption>
+      <caption xml:lang="fr">L'activité « Localiser la fraise »</caption>
       <caption xml:lang="gl">Actividade de «Hexágono»</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ml">"ഷഡ്ഭുജം" പ്രവർത്തനം</caption>
@@ -552,6 +567,7 @@
       <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
       <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
+      <caption xml:lang="zh-TW">「六角形」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/hexagon.png</image>
     </screenshot>
     <screenshot>
@@ -561,6 +577,7 @@
       <caption xml:lang="el">Δραστηριότητα "Ισορρόπησε τη ζυγαριά"</caption>
       <caption xml:lang="en-GB">"Balance the scales properly" activity</caption>
       <caption xml:lang="es">Actividad «Balanzas»</caption>
+      <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
       <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma axeitada»</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ml">"തട്ടുകളിലെ തൂക്കമൊപ്പിക്കൂ" പ്രവർത്തനം</caption>
@@ -570,6 +587,7 @@
       <caption xml:lang="sv">Aktiviteten "Balansera vågen"</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
       <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
+      <caption xml:lang="zh-TW">「讓天平平衡」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/scalesboard.png</image>
     </screenshot>
     <screenshot>
@@ -579,6 +597,7 @@
       <caption xml:lang="el">Δραστηριότητα "Το σκάκι στο τέλος"</caption>
       <caption xml:lang="en-GB">"End of chess game" activity</caption>
       <caption xml:lang="es">Actividad «Final de partida de ajedrez»</caption>
+      <caption xml:lang="fr">L'activité « Le jeu des échecs »</caption>
       <caption xml:lang="gl">Actividade de «Final dunha partida de xadrez»</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ml">"ചെസ്സു കളിയുടെ അവസാനം" പ്രവർത്തനം</caption>
@@ -588,6 +607,7 @@
       <caption xml:lang="sv">Aktiviteten "Slutet på schackspelet"</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
+      <caption xml:lang="zh-TW">「西洋棋殘局」遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/chess_partyend.png</image>
     </screenshot>
     <screenshot>
@@ -597,6 +617,7 @@
       <caption xml:lang="el">Δραστηριότητα "Βγάζω το αυτοκίνητο"</caption>
       <caption xml:lang="en-GB">"A sliding-block puzzle game" activity</caption>
       <caption xml:lang="es">Actividad «Tráfico»</caption>
+      <caption xml:lang="fr">L'activité « Sortir la voiture du parking »</caption>
       <caption xml:lang="gl">Actividade de «Un crebacabezas de bloques que se moven»</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ml">"വഴി കണ്ടെത്തൽ" പ്രവർത്തനം</caption>
@@ -606,6 +627,7 @@
       <caption xml:lang="sv">Aktiviteten "Ett pusselspel med glidande block"</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
       <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
+      <caption xml:lang="zh-TW">「滑動方塊」解謎遊戲</caption>
       <image width="1080" height="720">https://gcompris.net/screenshots-qt/middle/traffic.png</image>
     </screenshot>
   </screenshots>
