@@ -22,7 +22,6 @@
 import QtQuick 2.6
 import QtQuick.Controls 1.5
 import GCompris 1.0
-import QtMultimedia 5.0
 
 import "../../core"
 import "../piano_composition"
