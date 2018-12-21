@@ -168,7 +168,7 @@ function previousLevel() {
 
 function checkOrder() {
     items.flow.validMousePress = false
-    for(var i = 0;i < items.boxes.count-1;i++) {
+    for(var i = 0 ; i < items.boxes.count-1 ; i++) {
         if( ascendingOrder && ( ( mode == "number" && num[i] > num[i+1]) || (mode == "alphabets" && alphabets.indexOf(num[i]) > alphabets.indexOf(num[i+1]))) ) {
             items.bonus.bad("lion")
             items.flow.validMousePress = true
@@ -191,7 +191,7 @@ function placeBlock(box, initialPosition) {
      */
     var minDistance = Number.POSITIVE_INFINITY
     var closestBlock
-    for(var i = 0;i < items.boxes.model;i++) {
+    for(var i = 0 ; i < items.boxes.model ; i++) {
         var currentBlock = items.boxes.itemAt(i)
         if(currentBlock.boxValue === box.boxValue) {
             continue
@@ -208,7 +208,7 @@ function placeBlock(box, initialPosition) {
 
         var item1Pos = -1
         var item2Pos = num.indexOf(closestBlock.boxValue)
-        for (var i = 0;i < num.length; i++) {
+        for (var i = 0 ; i < num.length ; i++) {
             /*
              * var item1Pos = num.indexOf(box.boxValue)
              * var item2Pos = num.indexOf(closestBlock.boxValue)
@@ -227,7 +227,7 @@ function placeBlock(box, initialPosition) {
         var oldPositions = []
         var newPositions = []
 
-        for(var i = 0;i < num.length;i++) {
+        for(var i = 0 ; i < num.length ; i++) {
             oldPositions[i] = num[i]
             newPositions[i] = num[i]
         }
@@ -235,20 +235,20 @@ function placeBlock(box, initialPosition) {
         if(item1Pos > item2Pos) {
             // update new position
             var currentBoxValue = newPositions[item1Pos]
-            for(var i = item1Pos;i > item2Pos;i--) {
+            for(var i = item1Pos ; i > item2Pos ; i--) {
                 newPositions[i] = newPositions[i-1]
             }
             newPositions[item2Pos] = currentBoxValue
         } else {
             // update new position
             var currentBoxValue = newPositions[item1Pos]
-            for(var i = item1Pos;i < item2Pos;i++) {
+            for(var i = item1Pos ; i < item2Pos ; i++) {
                 newPositions[i] = newPositions[i+1];
             }
             newPositions[item2Pos] = currentBoxValue
         }
         rearrange(oldPositions, newPositions, box, initialPosition)
-        for(var i = 0;i < num.length;i++) {
+        for(var i = 0 ; i < num.length ; i++) {
             num[i] = newPositions[i]
         }
     } else {
@@ -258,7 +258,7 @@ function placeBlock(box, initialPosition) {
 }
 
 function rearrange(oldPositions, newPositions, movingBlock, initialPosition) {
-    for(var i = 0;i < newPositions.length;i++) {
+    for(var i = 0 ; i < newPositions.length ; i++) {
         if(oldPositions[i] === newPositions[i]) {
             continue
         }
@@ -275,7 +275,7 @@ function rearrange(oldPositions, newPositions, movingBlock, initialPosition) {
 }
 
 function findBlockWithLabel(label) {
-    for(var i = 0;i < items.boxes.model;i++) {
+    for(var i = 0 ; i < items.boxes.model ; i++) {
         if(items.boxes.itemAt(i).boxValue == label) {
             return items.boxes.itemAt(i)
         }
@@ -283,5 +283,5 @@ function findBlockWithLabel(label) {
 }
 
 function distance(box, currentBlock) {
-    return Math.pow((box.x-currentBlock.x),2) + Math.pow((box.y-currentBlock.y),2)
+    return Math.pow((box.x-currentBlock.x), 2) + Math.pow((box.y-currentBlock.y), 2)
 }

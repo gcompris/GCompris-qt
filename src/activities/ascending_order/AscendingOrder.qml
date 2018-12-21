@@ -92,11 +92,11 @@ ActivityBase {
             id: container
             color: "transparent"
             width: Math.min(parent.width, ((boxes.itemAt(0)).width*boxes.model)+(boxes.model-1)*flow.spacing)
-            height: parent.height/2
 
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.verticalCenter
+                top: score.bottom
+                topMargin: 5 * ApplicationInfo.ratio
             }
 
             Flow {
@@ -126,7 +126,7 @@ ActivityBase {
                         width: 65 * ApplicationInfo.ratio
                         height: 65 * ApplicationInfo.ratio
                         radius: 10
-                        border{
+                        border {
                             color: "black"
                             width: 3 * ApplicationInfo.ratio
                         }
@@ -145,7 +145,7 @@ ActivityBase {
                                 box.beginDragPosition = Qt.point(box.x, box.y)
                             }
                             onReleased: {
-                                Activity.placeBlock(box, box.beginDragPosition);
+                                Activity.placeBlock(box, box.beginDragPosition)
                             }
                         }
                         Behavior on x {
@@ -189,9 +189,8 @@ ActivityBase {
         BarButton {
           id: ok
           source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-          sourceSize.width: 75 * ApplicationInfo.ratio
-          visible: true
-          anchors {
+          sourceSize.width: 70 * ApplicationInfo.ratio
+            anchors {
               right: parent.right
               bottom: bar.top
               bottomMargin: 10 * ApplicationInfo.ratio
@@ -205,6 +204,7 @@ ActivityBase {
             anchors {
                 right: parent.right
                 top: instruction.bottom
+                topMargin: 5 * ApplicationInfo.ratio
                 bottom: undefined
             }
         }
