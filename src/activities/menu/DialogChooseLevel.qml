@@ -194,7 +194,7 @@ Rectangle {
                             id: difficultiesRepeater
                             delegate: GCDialogCheckBox {
                                 id: objective
-                                width: dialogChooseLevel.width
+                                width: dialogChooseLevel.width - 30 - 2 * flick.anchors.margins
                                 text: modelData.objective
                                 exclusiveGroup: levelsGroup
                                 checked: chosenLevel == modelData.level

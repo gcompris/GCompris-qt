@@ -62,6 +62,10 @@ ActivityBase {
             property int currentS: 43
             property int numberOfTry: 3
             property int currentTry: 0
+            property var levels: activity.datasetLoader.item.data
+            property bool minutesHandVisible
+            property bool secondsHandVisible
+            property bool zonesVisible
         }
 
         onStart: {
@@ -135,7 +139,7 @@ ActivityBase {
         /* The clock */
         Image {
             id: clock
-            source: Activity.url + "clock_bg.svg"
+            source: activity.resourceUrl + "clock_bg.svg"
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
             sourceSize.height: parent.height
@@ -145,18 +149,18 @@ ActivityBase {
             /* The yellow zones */
             Image {
                 id: zones
-                source: Activity.url + "clock_zones.svg"
+                source: activity.resourceUrl + "clock_zones.svg"
                 anchors.centerIn: parent
                 fillMode: Image.PreserveAspectFit
                 sourceSize.height: parent.height * 0.7
-                visible: items.bar.level < 5
+                visible: items.zonesVisible
                 z: 2
             }
 
             /* The setter */
             Image {
                 id: setter
-                source: Activity.url + "clock_setter.svg"
+                source: activity.resourceUrl + "clock_setter.svg"
                 anchors {
                     verticalCenter: parent.verticalCenter
                     left: parent.right
@@ -189,10 +193,10 @@ ActivityBase {
                     }
                     z: 4
                     color: "#d56a3a"
-                    visible: items.bar.level < 6
+                    visible: items.minutesHandVisible
                 }
             }
-
+            /* The seconds */
             Repeater {
                 model: 60
 
@@ -211,7 +215,7 @@ ActivityBase {
                                                     (index + 1) * 2 * Math.PI / 60)
                     }
                     z: 4
-                    visible: items.bar.level < 8
+                    visible: items.secondsHandVisible
                 }
             }
 
@@ -279,7 +283,7 @@ ActivityBase {
                 }
                 z: 4
                 color: "#2a2a2a"
-                visible: items.bar.level < 4
+                visible: false
             }
 
             /* Arrow H */
@@ -319,6 +323,7 @@ ActivityBase {
                 width: height / 20
                 radius: width / 2
                 color: "#d56a3a"
+                visible: items.minutesHandVisible
                 transform: Rotation {
                     id: rotm
                     origin.x: m.width / 2
@@ -348,6 +353,7 @@ ActivityBase {
                 width: height / 30
                 radius: width / 2
                 color: "#2ccf4b"
+                visible: items.secondsHandVisible
                 transform: Rotation {
                     id: rots
                     origin.x: s.width / 2
@@ -367,7 +373,6 @@ ActivityBase {
                     verticalCenterOffset: s.height / 2
                 }
                 z: 7
-                visible: items.bar.level > 2
             }
 
             /* Center */
@@ -396,9 +401,9 @@ ActivityBase {
                     var dh = Math.min(Math.abs(a - agnh),
                                       Math.abs(a - agnh - 360),
                                       Math.abs(a - agnh + 360))
-                    var dm = Math.min(Math.abs(a - angm),
-                                      Math.abs(a - angm - 360),
-                                      Math.abs(a - angm + 360))
+                    var dm = m.visible ? Math.min(Math.abs(a - angm),
+                                             Math.abs(a - angm - 360),
+                                             Math.abs(a - angm + 360)) : 9999
                     var ds = s.visible ? Math.min(
                                              Math.abs(a - angs),
                                              Math.abs(a - angs - 360),
@@ -416,6 +421,7 @@ ActivityBase {
 
                 onReleased: {
                     Activity.selectedArrow = null
+                    //todo replace this with Ok button
                     if (items.currentH === items.targetH
                             && items.currentM === items.targetM
                             && items.currentS === items.targetS) {
@@ -465,10 +471,13 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent {
-                value: help | home | level
+                value: help | home | level | hint
             }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onHintClicked: {
+                helper.visible = !helper.visible
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()

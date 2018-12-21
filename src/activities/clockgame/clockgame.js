@@ -19,7 +19,6 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-var url = "qrc:/gcompris/src/activities/clockgame/resource/"
 var currentLevel = 0
 var numberOfLevel = 10
 var items
@@ -28,6 +27,7 @@ var selectedArrow
 function start(items_) {
     items = items_
     currentLevel = 0
+    numberOfLevel = items.levels.length
     initLevel()
 }
 
@@ -36,31 +36,42 @@ function stop() {}
 function initLevel() {
     items.bar.level = currentLevel + 1
 
+    items.numberOfTry = items.levels[currentLevel].numberOfSubLevels
     items.currentH = Math.floor(Math.random() * 12)
     items.targetH = Math.floor(Math.random() * 12)
-
-    /* Set hours */
-    switch (items.bar.level) {
-    case 1:
-        items.currentM = Math.floor(Math.random() * 4) * 15
-        items.targetM = Math.floor(Math.random() * 4) * 15
-        break
-    case 2:
-        items.currentM = Math.floor(Math.random() * 12) * 5
-        items.targetM = Math.floor(Math.random() * 12) * 5
-        break
-    default:
+    items.minutesHandVisible = items.levels[currentLevel].displayMinutesHand
+    if(!items.minutesHandVisible) {
+        items.currentM = 0
+        items.targetM = 0
+    }
+    else if(items.levels[currentLevel].fixedMinutes !== undefined) {
+        items.currentM = Math.floor(Math.random() * 60)
+        items.targetM = items.levels[currentLevel].fixedMinutes
+    }
+    else {
         items.currentM = Math.floor(Math.random() * 60)
         items.targetM = Math.floor(Math.random() * 60)
-        break
     }
 
-    if (items.bar.level > 3) {
-        items.currentS = Math.floor(Math.random() * 60)
-        items.targetS = Math.floor(Math.random() * 60)
-    } else {
+    items.secondsHandVisible = items.levels[currentLevel].displaySecondsHand
+    if(!items.secondsHandVisible) {
         items.currentS = 0
         items.targetS = 0
+    }
+    else if(items.levels[currentLevel].fixedSeconds !== undefined) {
+        items.currentS = Math.floor(Math.random() * 60)
+        items.targetS = items.levels[currentLevel].fixedSeconds
+    }
+    else {
+        items.currentS = Math.floor(Math.random() * 60)
+        items.targetS = Math.floor(Math.random() * 60)
+    }
+
+    if(items.levels[currentLevel].zonesVisible !== undefined) {
+        items.zonesVisible = items.levels[currentLevel].zonesVisible
+    }
+    else {
+        items.zonesVisible = true
     }
 }
 

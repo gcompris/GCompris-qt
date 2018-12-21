@@ -37,4 +37,5 @@ ActivityInfo {
   credit: ""
   section: "discovery"
   createdInVersion: 0
+  levels: "1,2"
 }
