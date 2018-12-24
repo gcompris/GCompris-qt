@@ -87,46 +87,46 @@ Item {
         ["F6", qsTr("F%1").arg(6)]
     ]
 
-    //: Translators, C#, D#, F#, G#, and A# are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C#4 is a C# note in the 4th octave.
+    //: Translators, C♯, D♯, F♯, G♯, and A♯ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, C♯4 is a C♯ note in the 4th octave.
     readonly property var blackKeySharpNoteLabelsArray: [
-        ["C#3", qsTr("C#%1").arg(3)],
-        ["D#3", qsTr("D#%1").arg(3)],
-        ["F#3", qsTr("F#%1").arg(3)],
-        ["G#3", qsTr("G#%1").arg(3)],
-        ["A#3", qsTr("A#%1").arg(3)],
-        ["C#4", qsTr("C#%1").arg(4)],
-        ["D#4", qsTr("D#%1").arg(4)],
-        ["F#4", qsTr("F#%1").arg(4)],
-        ["G#4", qsTr("G#%1").arg(4)],
-        ["A#4", qsTr("A#%1").arg(4)],
-        ["C#5", qsTr("C#%1").arg(5)],
-        ["D#5", qsTr("D#%1").arg(5)],
-        ["F#5", qsTr("F#%1").arg(5)],
-        ["G#5", qsTr("G#%1").arg(5)],
-        ["A#5", qsTr("A#%1").arg(5)],
-        ["C#6", qsTr("C#%1").arg(6)],
-        ["D#6", qsTr("D#%1").arg(6)]
+        ["C#3", qsTr("C♯%1").arg(3)],
+        ["D#3", qsTr("D♯%1").arg(3)],
+        ["F#3", qsTr("F♯%1").arg(3)],
+        ["G#3", qsTr("G♯%1").arg(3)],
+        ["A#3", qsTr("A♯%1").arg(3)],
+        ["C#4", qsTr("C♯%1").arg(4)],
+        ["D#4", qsTr("D♯%1").arg(4)],
+        ["F#4", qsTr("F♯%1").arg(4)],
+        ["G#4", qsTr("G♯%1").arg(4)],
+        ["A#4", qsTr("A♯%1").arg(4)],
+        ["C#5", qsTr("C♯%1").arg(5)],
+        ["D#5", qsTr("D♯%1").arg(5)],
+        ["F#5", qsTr("F♯%1").arg(5)],
+        ["G#5", qsTr("G♯%1").arg(5)],
+        ["A#5", qsTr("A♯%1").arg(5)],
+        ["C#6", qsTr("C♯%1").arg(6)],
+        ["D#6", qsTr("D♯%1").arg(6)]
     ]
 
-    //: Translators, Db, Eb, Gb, Ab, Bb are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, Db4 is a Db note in the 4th octave.
+    //: Translators, D♭, E♭, G♭, A♭, B♭ are the note notations in English musical notation system. The numbers in the arguments represents the octave number of the note. For instance, D♭4 is a D♭ note in the 4th octave.
     readonly property var blackKeyFlatNoteLabelsArray: [
-        ["Db3", qsTr("Db%1").arg(3)],
-        ["Eb3", qsTr("Eb%1").arg(3)],
-        ["Gb3", qsTr("Gb%1").arg(3)],
-        ["Ab3", qsTr("Ab%1").arg(3)],
-        ["Bb3", qsTr("Bb%1").arg(3)],
-        ["Db4", qsTr("Db%1").arg(4)],
-        ["Eb4", qsTr("Eb%1").arg(4)],
-        ["Gb4", qsTr("Gb%1").arg(4)],
-        ["Ab4", qsTr("Ab%1").arg(4)],
-        ["Bb4", qsTr("Bb%1").arg(4)],
-        ["Db5", qsTr("Db%1").arg(5)],
-        ["Eb5", qsTr("Eb%1").arg(5)],
-        ["Gb5", qsTr("Gb%1").arg(5)],
-        ["Ab5", qsTr("Ab%1").arg(5)],
-        ["Bb5", qsTr("Bb%1").arg(5)],
-        ["Db6", qsTr("Db%1").arg(6)],
-        ["Eb6", qsTr("Eb%1").arg(6)]
+        ["Db3", qsTr("D♭%1").arg(3)],
+        ["Eb3", qsTr("E♭%1").arg(3)],
+        ["Gb3", qsTr("G♭%1").arg(3)],
+        ["Ab3", qsTr("A♭%1").arg(3)],
+        ["Bb3", qsTr("B♭%1").arg(3)],
+        ["Db4", qsTr("D♭%1").arg(4)],
+        ["Eb4", qsTr("E♭%1").arg(4)],
+        ["Gb4", qsTr("G♭%1").arg(4)],
+        ["Ab4", qsTr("A♭%1").arg(4)],
+        ["Bb4", qsTr("B♭%1").arg(4)],
+        ["Db5", qsTr("D♭%1").arg(5)],
+        ["Eb5", qsTr("E♭%1").arg(5)],
+        ["Gb5", qsTr("G♭%1").arg(5)],
+        ["Ab5", qsTr("A♭%1").arg(5)],
+        ["Bb5", qsTr("B♭%1").arg(5)],
+        ["Db6", qsTr("D♭%1").arg(6)],
+        ["Eb6", qsTr("E♭%1").arg(6)]
     ]
     readonly property var blackKeyNoteLabels: useSharpNotation ? blackKeySharpNoteLabelsArray : blackKeyFlatNoteLabelsArray
 

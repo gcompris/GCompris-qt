@@ -39,10 +39,10 @@ var instructions = [{
         "text": qsTr("This is the bass clef staff for low pitched notes.")
     },
     {
-        "text": qsTr("The black keys are sharp and flat keys, have a # sign.")
+        "text": qsTr("The black keys are sharp and flat keys, have a ♯ sign.")
     },
     {
-        "text": qsTr("Each black key has two names: flat and sharp. Flat notes have b sign.")
+        "text": qsTr("Each black key has two names: flat and sharp. Flat notes have ♭ sign.")
     },
     {
         "text": qsTr("Click on the note symbol to write different length notes such as whole notes, half notes, quarter notes and eighth notes.")
