@@ -26,11 +26,16 @@ ActivityInfo {
   icon: "note_names/note_names.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Name that Note")
+  //: Help title
   description: qsTr("Learn the names of the notes, in bass and treble clef.")
   //intro: "Identify the note and press the correct piano key"
+  //: Help goal
   goal: qsTr("To develop a good understanding of note position and naming convention. To prepare for the piano player and composition activity.")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("Identify the notes correctly and score a 100% to complete a level.")
   credit: ""
   section: "discovery sound"

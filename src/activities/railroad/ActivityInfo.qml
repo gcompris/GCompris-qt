@@ -24,11 +24,16 @@ ActivityInfo {
   icon: "railroad/railroad.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
   demo: true
+  //: Activity title
   title: qsTr("Railroad activity")
+  //: Help title
   description: qsTr("Rebuild the displayed train at the top of the screen by dragging the appropriate carriages and locomotive. Deselect an item by dragging it down.")
   //intro: "Observe the train and then click on the items to set up a similar train"
+  //: Help goal
   goal: qsTr("Memory training")
+  //: Help prerequisite
   prerequisite: ""
+  //: Help manual
   manual: qsTr("A train - a locomotive and carriage(s) - is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by dragging the appropriate carriages and locomotive. Deselect an item by dragging it down.<br><br>") +
           qsTr("<b>Keyboard Controls:</b><br><br>") +
           qsTr("1. Use arrow keys to move in the answer or sample zone.<br>") +
