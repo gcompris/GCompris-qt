@@ -34,6 +34,7 @@ ActivityBase {
     property string dataSetUrl: "qrc:/gcompris/src/activities/gletters/resource/"
     /* no need to display the configuration button for smallnumbers */
     property bool configurationButtonVisible: true
+    property bool configurationDialogSelect: true
 
     property bool uppercaseOnly: false
 
@@ -218,9 +219,15 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
-                displayDialog(dialogActivityConfig)
+                if(configurationDialogSelect) {
+                    dialogActivityConfig.active = true
+                    dialogActivityConfig.setDefaultValues()
+                    displayDialog(dialogActivityConfig)
+                } else {
+                    diceDialogActivityConfig.active = true
+                    diceDialogActivityConfig.setDefaultValues()
+                    displayDialog(diceDialogActivityConfig)
+                }
             }
         }
 

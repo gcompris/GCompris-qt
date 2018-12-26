@@ -30,9 +30,70 @@ Gletters {
 
     mode: "letter"
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers/resource/"
-    configurationButtonVisible: false
+    configurationButtonVisible: true
+    configurationDialogSelect: false
+    QtObject {
+            id: items
+            property int mode: 1
+    }
+
+    DialogActivityConfig {
+        id: diceDialogActivityConfig
+        currentActivity: activity
+        content: Component {
+            Item {
+                property alias modeBox: modeBox
+
+                property var availableModes: [
+                    { "text": qsTr("Numbers"), "value": 1 },
+                    { "text": qsTr("Romans"), "value": 2 },
+                    { "text": qsTr("Dots"), "value": 3 }
+                ]
+
+                Flow {
+                    id: flow
+                    spacing: 5
+                    width: diceDialogActivityConfig.width
+                    GCComboBox {
+                        id: modeBox
+                        model: availableModes
+                        background: diceDialogActivityConfig
+                        label: qsTr("Select Dice Type")
+                    }
+                }
+            }
+        }
+
+        onClose: home()
+
+        onLoadData: {
+            if(dataToSave && dataToSave["mode"]) {
+                items.mode = dataToSave["mode"];
+            }
+        }
+        onSaveData: {
+            var newMode = diceDialogActivityConfig.configItem.availableModes[diceDialogActivityConfig.configItem.modeBox.currentIndex].value;
+            if (newMode !== items.mode) {
+                items.mode = newMode;
+                dataToSave = {"mode": items.mode};
+            }
+            activity.initLevel();
+        }
+        function setDefaultValues() {
+            for(var i = 0 ; i < diceDialogActivityConfig.configItem.availableModes.length ; i++) {
+                if(diceDialogActivityConfig.configItem.availableModes[i].value === items.mode) {
+                    diceDialogActivityConfig.configItem.modeBox.currentIndex = i;
+                    break;
+                }
+            }
+        }
+    }
 
     function getImage(key) {
         return dataSetUrl + "dice" + key + ".svg"
+    }
+
+    function getMode() {
+        return items.mode;
     }
 }
