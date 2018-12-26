@@ -422,6 +422,7 @@
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ml">"ഒരു വലിയ അക്ഷരത്തിൽ ക്ലിക്ക് ചെയ്യുക" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">"Click op een hoofdletter" activiteit</caption>
+      <caption xml:lang="pl">Aktywność "klikania na wielkie litery"</caption>
       <caption xml:lang="pt">Actividade para "Carregar numa letra maiúscula"</caption>
       <caption xml:lang="ro">Activitatea "Clic pe o literă mare"</caption>
       <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
@@ -442,6 +443,7 @@
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ml">"സമയം പഠിക്കൽ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Leren klok kijken</caption>
+      <caption xml:lang="pl">Aktywność "nauki zegara"</caption>
       <caption xml:lang="pt">Actividade para "Descobrir o Relógio"</caption>
       <caption xml:lang="ro">Activitatea de "Învățarea ceasului clasic"</caption>
       <caption xml:lang="sv">Aktiviteten "Lär dig klockan"</caption>
@@ -462,6 +464,7 @@
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ml">"ചായത്തിൻ്റെ നിറങ്ങൾ കൂട്ടിക്കലർത്താം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Verfkleuren mengen"</caption>
+      <caption xml:lang="pl">Aktywność "mieszania barw"</caption>
       <caption xml:lang="pt">Actividade para "Misturar a cor das tintas"</caption>
       <caption xml:lang="ro">Activitatea "Amestecul culorilor din vopsea"</caption>
       <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
@@ -482,6 +485,7 @@
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ml">"നിറങ്ങൾ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Kleuren"</caption>
+      <caption xml:lang="pl">Aktywność "barw"</caption>
       <caption xml:lang="pt">Actividade de "Cores"</caption>
       <caption xml:lang="ro">Activitatea "Culorile"</caption>
       <caption xml:lang="sv">Aktiviteten "Färger"</caption>
@@ -502,6 +506,7 @@
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ml">"മാതൃക പോലെ നിർമ്മിക്കുക " പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Bouw hetzelfde model"</caption>
+      <caption xml:lang="pl">Aktywność "zbudowania tego samego modelu"</caption>
       <caption xml:lang="pt">Actividade para "Construir o mesmo modelo"</caption>
       <caption xml:lang="ro">Activitatea "Construiește același model"</caption>
       <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
@@ -522,6 +527,7 @@
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ml">"എത്രയെണ്ണം?" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Tel het aantal items"</caption>
+      <caption xml:lang="pl">Aktywność "zliczania elementów"</caption>
       <caption xml:lang="pt">Actividade para "Contar os itens"</caption>
       <caption xml:lang="ro">Activitatea "Numără elementele"</caption>
       <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
@@ -542,6 +548,7 @@
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ml">"പതിനഞ്ചിന്റെ കളി" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Het vijftien-spel"</caption>
+      <caption xml:lang="pl">Aktywność "gra w piętnaście"</caption>
       <caption xml:lang="pt">Actividade do "Jogo dos quinze"</caption>
       <caption xml:lang="ro">Activitatea "Jocul de cincisprezece"</caption>
       <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
@@ -562,6 +569,7 @@
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ml">"ഷഡ്ഭുജം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Hexagon"</caption>
+      <caption xml:lang="pl">Aktywność "sześciokąta"</caption>
       <caption xml:lang="pt">Actividade de "Hexágono"</caption>
       <caption xml:lang="ro">Activitatea "Hexagonul"</caption>
       <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
@@ -582,6 +590,7 @@
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ml">"തട്ടുകളിലെ തൂക്കമൊപ്പിക്കൂ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Breng de weegschaal in evenwicht"</caption>
+      <caption xml:lang="pl">Aktywność "zrównoważenia skal"</caption>
       <caption xml:lang="pt">Actividade para "Equilibrar as balanças adequadamente"</caption>
       <caption xml:lang="ro">Activitatea "Echilibrează balanța"</caption>
       <caption xml:lang="sv">Aktiviteten "Balansera vågen"</caption>
@@ -602,6 +611,7 @@
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ml">"ചെസ്സു കളിയുടെ അവസാനം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Eindspel van schaken"</caption>
+      <caption xml:lang="pl">Aktywność "zakończeń partii szachowych"</caption>
       <caption xml:lang="pt">Actividade de "Fim de jogo de xadrez"</caption>
       <caption xml:lang="ro">Activitatea "Sfârșitul jocului de șah"</caption>
       <caption xml:lang="sv">Aktiviteten "Slutet på schackspelet"</caption>
@@ -622,6 +632,7 @@
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ml">"വഴി കണ്ടെത്തൽ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Een puzzel met schuivende blokken"</caption>
+      <caption xml:lang="pl">Aktywność "puzzli z przesuwającym się puzzlem"</caption>
       <caption xml:lang="pt">Actividade de "Puzzle de blocos deslizantes"</caption>
       <caption xml:lang="ro">Activitatea "Un joc de puzzle cu blocuri glisante"</caption>
       <caption xml:lang="sv">Aktiviteten "Ett pusselspel med glidande block"</caption>
