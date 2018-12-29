@@ -74,6 +74,7 @@
     <p xml:lang="el">Το GCompris είναι μια σουίτα εκπαιδευτικού λογισμικού με πολυάριθμες δραστηριότητες για παιδιά ηλικίας 2 έως 10 ετών.</p>
     <p xml:lang="en-GB">GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.</p>
     <p xml:lang="es">GCompris es un conjunto de programas educativos de alta calidad que contiene un gran número de actividades para niños entre 2 y 10 años.</p>
+    <p xml:lang="fi">GCompris on laadukas monitoimintoinen opetusohjelmisto 2–10-vuotiaille lapsille.</p>
     <p xml:lang="fr">GCompris est un logiciel éducatif qui propose des activités variées aux enfants de 2 à 10 ans. Il est plébiscité par les écoles maternelles et primaires de part sa qualité et son spectre couvrant les cycles 1, 2 et 3.</p>
     <p xml:lang="gl">GCompris é unha colección de programas educativos que inclúe numerosas actividades para nenas e nenos de entre 2 e 10 anos.</p>
     <p xml:lang="hi">जीकॉम्परी एक शैक्षिक सॉफ्टवेयर सूट है जिसमें 2 से 10 वर्ष की आयु के बच्चों के लिए कई गतिविधियां शामिल हैं।</p>
@@ -394,6 +395,7 @@
       <caption xml:lang="el">Κύριο μενού του GCompris</caption>
       <caption xml:lang="en-GB">GCompris main menu</caption>
       <caption xml:lang="es">Menú principal de GCompris</caption>
+      <caption xml:lang="fi">GComprisin päävalikko</caption>
       <caption xml:lang="fr">Menu principal de GCompris</caption>
       <caption xml:lang="gl">Menú principal de GCompris</caption>
       <caption xml:lang="it">Menu principale di GCompris</caption>
@@ -417,6 +419,7 @@
       <caption xml:lang="el">Δραστηριότητα "Κλικ σε κεφαλαίο γράμμα"</caption>
       <caption xml:lang="en-GB">"Click on an uppercase letter" activity</caption>
       <caption xml:lang="es">Actividad «Pulsa en una letra mayúscula»</caption>
+      <caption xml:lang="fi">”Napsauta suuraakkosta” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
       <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
@@ -438,6 +441,7 @@
       <caption xml:lang="el">Δραστηριότητα "Ρολόι"</caption>
       <caption xml:lang="en-GB">"Learning Clock" activity</caption>
       <caption xml:lang="es">Actividad «Juego del reloj»</caption>
+      <caption xml:lang="fi">”Kellon oppiminen” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
       <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
@@ -459,6 +463,7 @@
       <caption xml:lang="el">Δραστηριότητα "Μείξη χρωμάτων"</caption>
       <caption xml:lang="en-GB">"Mixing colour of paint" activity</caption>
       <caption xml:lang="es">Actividad «Mezcla de colores»</caption>
+      <caption xml:lang="fi">”Värien sekoitus” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Mélange de la couleur de peinture »</caption>
       <caption xml:lang="gl">Actividade de «Mesturar a cor da pintura»</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
@@ -480,6 +485,7 @@
       <caption xml:lang="el">Δραστηριότητα "Χρώματα"</caption>
       <caption xml:lang="en-GB">"Colours" activity</caption>
       <caption xml:lang="es">Actividad «Colores»</caption>
+      <caption xml:lang="fi">”Värit”-toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
       <caption xml:lang="gl">Actividade de «Cores»</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
@@ -501,6 +507,7 @@
       <caption xml:lang="el">Δραστηριότητα "Φτιάξε το ίδιο"</caption>
       <caption xml:lang="en-GB">"Build the same model" activity</caption>
       <caption xml:lang="es">Actividad «Grúa»</caption>
+      <caption xml:lang="fi">”Rakenna sama malli” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
       <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
@@ -522,6 +529,7 @@
       <caption xml:lang="el">Δραστηριότητα "Μέτρα τα αντικείμενα"</caption>
       <caption xml:lang="en-GB">"Count the items" activity</caption>
       <caption xml:lang="es">Actividad «Enumeración»</caption>
+      <caption xml:lang="fi">”Laske kohteet” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
       <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
@@ -585,6 +593,7 @@
       <caption xml:lang="el">Δραστηριότητα "Ισορρόπησε τη ζυγαριά"</caption>
       <caption xml:lang="en-GB">"Balance the scales properly" activity</caption>
       <caption xml:lang="es">Actividad «Balanzas»</caption>
+      <caption xml:lang="fi">”Tasapainota vaaka oikein” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
       <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma axeitada»</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
@@ -606,6 +615,7 @@
       <caption xml:lang="el">Δραστηριότητα "Το σκάκι στο τέλος"</caption>
       <caption xml:lang="en-GB">"End of chess game" activity</caption>
       <caption xml:lang="es">Actividad «Final de partida de ajedrez»</caption>
+      <caption xml:lang="fi">”Šakin loppupeli” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Le jeu des échecs »</caption>
       <caption xml:lang="gl">Actividade de «Final dunha partida de xadrez»</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
