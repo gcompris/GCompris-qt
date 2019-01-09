@@ -190,7 +190,7 @@ ActivityBase {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 text: qsTr( "It is not possible to consume more electricity " +
-                           "than what is produced. This is a key limitation in the " +
+                           "than what is produced. There is a key limitation in the " +
                            "distribution of electricity, with minor exceptions, " +
                            "electrical energy cannot be stored, and therefore it " +
                            "must be generated as it is needed. A sophisticated " +

@@ -27,7 +27,7 @@ QtObject {
     property var levels: [
         {
             "type": "lesson",
-            "name": qsTr("fishes"),
+            "name": qsTr("Fishes"),
             "image": imagesPrefix + "fish20.jpg",
             "content": [
                 {

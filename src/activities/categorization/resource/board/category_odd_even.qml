@@ -28,7 +28,7 @@ QtObject {
     property var levels: [
         {
             "type": "lesson",
-            "name": qsTr("odd even numbers"),
+            "name": qsTr("Odd even numbers"),
             "image": imagesPrefix + "11.svg",
             "content": [
                 {
