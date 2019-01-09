@@ -106,7 +106,7 @@ Scalesboard {
                 "targets": [[1200, kg(1.2)], [1300, kg(1.3)], [1400, kg(1.4)],
                            [1500, kg(1.5)], [1600, kg(1.6)]],
                 "rightDrop": false,
-                "message": qsTr("Remember, one kilo ('kg') equals 1000 grams ('g')."),
+                "message": qsTr("Remember, one kilogram ('kg') equals 1000 grams ('g')."),
                 "question": qsTr("Enter the weight of the gift in gram: %1")
             },
             {

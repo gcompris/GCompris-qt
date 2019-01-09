@@ -28,7 +28,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Jaguar"),
-            "text": qsTr("Jaguars are named after the Native American word meaning 'he who kills with one leap' because they like to climb trees to attack their prey."),
+            "text": qsTr("The jaguar's jaw is well developed. Because of this, it has the strongest bite of all the felines, being able to break even a tortoise shell!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/jaggy.jpg",
             "text2": qsTr("Jaguar"),
             "x": 0.36,
