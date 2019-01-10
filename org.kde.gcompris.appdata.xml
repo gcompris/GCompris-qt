@@ -85,7 +85,7 @@
     <p xml:lang="nn">GCompris er eit leik og lær-spel med mange ulike aktivitetar for ungar frå 2 til 10 år.</p>
     <p xml:lang="pl">GCompris to wysokiej jakości pakiet oprogramowania edukacyjnego z licznymi aktywnościami dla dzieci w wieku od 2 do 10 lat.</p>
     <p xml:lang="pt">O GCompris é um pacote de aplicações educativas que é composto por diversas actividades para as crianças dos 2 aos 10 anos de idade.</p>
-    <p xml:lang="pt-BR">GCompris é uma suíte de software educacional de alta qualidade que inclui um grande número de atividades para crianças com idade entre 2 e 10 anos.</p>
+    <p xml:lang="pt-BR">O GCompris é uma suíte de software educacional de alta qualidade que inclui um grande número de atividades para crianças com idade entre 2 e 10 anos.</p>
     <p xml:lang="ro">GCompris este un pachet de software educațional compus din numeroase activități pentru copii între 2 și 10 ani.</p>
     <p xml:lang="ru">GCompris — большая коллекция обучающих игр и упражнений для детей от 2 до 10 лет.</p>
     <p xml:lang="sk">GCompris je balík výukového softvéru zložený z rôznych aktivít pre deti od 2 do 10 rokov.</p>
@@ -117,7 +117,7 @@
     <p xml:lang="nn">Nokre av aktivitetane er mest som spel, men er likevel lærerike.</p>
     <p xml:lang="pl">Niektóre z aktywności są bardziej grą, lecz nadal bardzo pouczającą.</p>
     <p xml:lang="pt">Algumas das actividades são apresentadas como jogos, mas são educativas à mesma.</p>
-    <p xml:lang="pt-BR">Algumas das atividades são de orientação lúdica, mas mesmo assim ainda educacional.</p>
+    <p xml:lang="pt-BR">Algumas das atividades são de orientação lúdica, mas mesmo assim ainda educacionais.</p>
     <p xml:lang="ro">Unele activități sunt orientate pe joacă, dar totuși educative.</p>
     <p xml:lang="ru">Некоторые из заданий представлены в игровой форме, но и они являются обучающими.</p>
     <p xml:lang="sk">Niektoré z aktivít sú herne orientované, ale stále výukové.</p>
@@ -427,6 +427,7 @@
       <caption xml:lang="nl">"Click op een hoofdletter" activiteit</caption>
       <caption xml:lang="pl">Aktywność "klikania na wielkie litery"</caption>
       <caption xml:lang="pt">Actividade para "Carregar numa letra maiúscula"</caption>
+      <caption xml:lang="pt-BR">Atividade "Clique em uma letra maiúscula"</caption>
       <caption xml:lang="ro">Activitatea "Clic pe o literă mare"</caption>
       <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
@@ -449,6 +450,7 @@
       <caption xml:lang="nl">Activiteit "Leren klok kijken</caption>
       <caption xml:lang="pl">Aktywność "nauki zegara"</caption>
       <caption xml:lang="pt">Actividade para "Descobrir o Relógio"</caption>
+      <caption xml:lang="pt-BR">Atividade "O Relógio"</caption>
       <caption xml:lang="ro">Activitatea de "Învățarea ceasului clasic"</caption>
       <caption xml:lang="sv">Aktiviteten "Lär dig klockan"</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
@@ -471,6 +473,7 @@
       <caption xml:lang="nl">Activiteit "Verfkleuren mengen"</caption>
       <caption xml:lang="pl">Aktywność "mieszania barw"</caption>
       <caption xml:lang="pt">Actividade para "Misturar a cor das tintas"</caption>
+      <caption xml:lang="pt-BR">Atividade "Mistura de tintas coloridas"</caption>
       <caption xml:lang="ro">Activitatea "Amestecul culorilor din vopsea"</caption>
       <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
@@ -493,6 +496,7 @@
       <caption xml:lang="nl">Activiteit "Kleuren"</caption>
       <caption xml:lang="pl">Aktywność "barw"</caption>
       <caption xml:lang="pt">Actividade de "Cores"</caption>
+      <caption xml:lang="pt-BR">Atividade "Cores"</caption>
       <caption xml:lang="ro">Activitatea "Culorile"</caption>
       <caption xml:lang="sv">Aktiviteten "Färger"</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
@@ -515,6 +519,7 @@
       <caption xml:lang="nl">Activiteit "Bouw hetzelfde model"</caption>
       <caption xml:lang="pl">Aktywność "zbudowania tego samego modelu"</caption>
       <caption xml:lang="pt">Actividade para "Construir o mesmo modelo"</caption>
+      <caption xml:lang="pt-BR">Atividade "Construa o mesmo modelo"</caption>
       <caption xml:lang="ro">Activitatea "Construiește același model"</caption>
       <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
@@ -537,6 +542,7 @@
       <caption xml:lang="nl">Activiteit "Tel het aantal items"</caption>
       <caption xml:lang="pl">Aktywność "zliczania elementów"</caption>
       <caption xml:lang="pt">Actividade para "Contar os itens"</caption>
+      <caption xml:lang="pt-BR">Atividade "Contagem de itens"</caption>
       <caption xml:lang="ro">Activitatea "Numără elementele"</caption>
       <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
@@ -558,6 +564,7 @@
       <caption xml:lang="nl">Activiteit "Het vijftien-spel"</caption>
       <caption xml:lang="pl">Aktywność "gra w piętnaście"</caption>
       <caption xml:lang="pt">Actividade do "Jogo dos quinze"</caption>
+      <caption xml:lang="pt-BR">Atividade "O jogo do quinze"</caption>
       <caption xml:lang="ro">Activitatea "Jocul de cincisprezece"</caption>
       <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
@@ -579,6 +586,7 @@
       <caption xml:lang="nl">Activiteit "Hexagon"</caption>
       <caption xml:lang="pl">Aktywność "sześciokąta"</caption>
       <caption xml:lang="pt">Actividade de "Hexágono"</caption>
+      <caption xml:lang="pt-BR">Atividade "Hexágono"</caption>
       <caption xml:lang="ro">Activitatea "Hexagonul"</caption>
       <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
@@ -601,6 +609,7 @@
       <caption xml:lang="nl">Activiteit "Breng de weegschaal in evenwicht"</caption>
       <caption xml:lang="pl">Aktywność "zrównoważenia skal"</caption>
       <caption xml:lang="pt">Actividade para "Equilibrar as balanças adequadamente"</caption>
+      <caption xml:lang="pt-BR">Atividade "Equilibre a balança"</caption>
       <caption xml:lang="ro">Activitatea "Echilibrează balanța"</caption>
       <caption xml:lang="sv">Aktiviteten "Balansera vågen"</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
@@ -623,6 +632,7 @@
       <caption xml:lang="nl">Activiteit "Eindspel van schaken"</caption>
       <caption xml:lang="pl">Aktywność "zakończeń partii szachowych"</caption>
       <caption xml:lang="pt">Actividade de "Fim de jogo de xadrez"</caption>
+      <caption xml:lang="pt-BR">Atividade "Finalize o jogo de xadrez"</caption>
       <caption xml:lang="ro">Activitatea "Sfârșitul jocului de șah"</caption>
       <caption xml:lang="sv">Aktiviteten "Slutet på schackspelet"</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
@@ -644,6 +654,7 @@
       <caption xml:lang="nl">Activiteit "Een puzzel met schuivende blokken"</caption>
       <caption xml:lang="pl">Aktywność "puzzli z przesuwającym się puzzlem"</caption>
       <caption xml:lang="pt">Actividade de "Puzzle de blocos deslizantes"</caption>
+      <caption xml:lang="pt-BR">Atividade "Quebra-cabeça com peças deslizantes"</caption>
       <caption xml:lang="ro">Activitatea "Un joc de puzzle cu blocuri glisante"</caption>
       <caption xml:lang="sv">Aktiviteten "Ett pusselspel med glidande block"</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
