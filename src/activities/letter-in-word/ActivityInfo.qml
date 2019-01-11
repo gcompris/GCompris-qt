@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("spellings, letter recognition")
   //: Help manual
-  manual: ""
+  manual: qsTr("A letter is displayed on the flag attached to the plane, select all the words or the objects in which the letter appears and then press OK.")
   credit: ""
   section: "reading"
   createdInVersion: 7000
