@@ -21,7 +21,7 @@
 import QtQuick 2.6
 import GCompris 1.0
 
-import "../programmingMaze.js" as Activity
+import "../../programmingMaze.js" as Activity
 
 Instruction {
     id: callProcedure

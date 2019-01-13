@@ -22,13 +22,19 @@ ActivityInfo {
   name: "programmingMaze/ProgrammingMaze.qml"
   difficulty: 3
   icon: "programmingMaze/programmingMaze.svg"
-  author: "Siddhesh Suthar &lt;siddhesh.it@gmail.com&gt;"
+  author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
   demo: false
+  //: Activity title
   title: qsTr("Programming Maze")
+  //: Help title
   description: qsTr("This activity teaches the kid to program the Tux to its goal using
                     simple instructions like move forward, turn left etc")
+  // intro: "Arrange the instructions and traverse the correct path to reach the fish."
+  //: Help goal
   goal: qsTr("Tux is hungry. Help him find fish by programming him to the correct ice spot.")
+  //: Help prerequisite
   prerequisite: qsTr("Can read instructions. Thinking of the path logically")
+  //: Help manual
   manual: qsTr("Choose the instructions from given menu. Arrange the instruction in an
                 order so that they can make the tux reach to its goal.<br><br>") +
           qsTr("<b>Keyboard Controls:</b><br><br>") +

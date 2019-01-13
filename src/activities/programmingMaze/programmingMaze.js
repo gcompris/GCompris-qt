@@ -86,10 +86,10 @@ var EAST = 270
  * To add a new instruction, add its component here and add the instruction name in "instructionList" inside createInstructionObjects() along with the other instructions.
  */
 var instructionComponents = {
-    "move-forward": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/MoveForward.qml"),
-    "turn-left": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/TurnLeftOrRight.qml"),
-    "turn-right": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/TurnLeftOrRight.qml"),
-    "call-procedure": Qt.createComponent("qrc:/gcompris/src/activities/programmingMaze/instructions/Procedure.qml")
+    "move-forward": Qt.createComponent(url + "instructions/MoveForward.qml"),
+    "turn-left": Qt.createComponent(url + "instructions/TurnLeftOrRight.qml"),
+    "turn-right": Qt.createComponent(url + "instructions/TurnLeftOrRight.qml"),
+    "call-procedure": Qt.createComponent(url + "instructions/Procedure.qml")
 }
 
 var mainTutorialInstructions = [
