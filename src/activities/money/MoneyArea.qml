@@ -25,8 +25,8 @@ import "money.js" as Activity
 
 Rectangle {
     id: moneyAreaBody
-    height: (column.itemHeight + 10) * column.nbLines
-    width: column.width
+    height: (columnLayout.itemHeight + 10) * columnLayout.nbLines
+    width: columnLayout.width
     color: "#55333333"
     border.color: "black"
     border.width: 2
@@ -64,8 +64,8 @@ Rectangle {
             model: ListModel { id: pocketModel }
             Image {
                 source: Activity.url + img
-                sourceSize.height: column.itemHeight
-                height: column.itemHeight
+                sourceSize.height: columnLayout.itemHeight
+                height: columnLayout.itemHeight
 
                 property bool selected: false
 

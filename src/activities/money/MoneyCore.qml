@@ -69,7 +69,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Column {
-            id: column
+            id: columnLayout
             spacing: 10
             x: parent.width * 0.05
             y: parent.height * 0.05
@@ -92,17 +92,17 @@ ActivityBase {
             property int nbStoreColumns: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                          activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
             //tempSpace is a workaround to replace instructionsArea.realHeight that is freezing with Qt-5.9.1
-            property int tempSpace: bar.level === 1 ? 140 + column.spacing : 0
+            property int tempSpace: bar.level === 1 ? 140 + columnLayout.spacing : 0
             property int itemStoreWidth:
-                Math.min((column.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
+                Math.min((columnLayout.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
                          (parent.height - answerArea.height -
                           pocketArea.height - bar.height) * 0.8) - tempSpace
             property int itemStoreHeight: itemStoreWidth
 
             Rectangle {
                 id: storeArea
-                height: (column.itemStoreHeight + 10)
-                width: column.width
+                height: (columnLayout.itemStoreHeight + 10)
+                width: columnLayout.width
                 color: "#55333333"
                 border.color: "black"
                 border.width: 2
@@ -130,13 +130,13 @@ ActivityBase {
                         visible: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                  activity.dataset === "BACK_WITH_CENTS"
                         source: Activity.url + "/tux.svg"
-                        sourceSize.height:  column.itemStoreHeight
-                        sourceSize.width:  column.itemStoreHeight
+                        sourceSize.height:  columnLayout.itemStoreHeight
+                        sourceSize.width:  columnLayout.itemStoreHeight
                         Repeater {
                             id: tuxMoney
                             Image {
                                 source: Activity.url + modelData.img
-                                sourceSize.height:  column.itemStoreHeight * 0.4
+                                sourceSize.height:  columnLayout.itemStoreHeight * 0.4
                                 x: tux.x + index * 20
                                 y: tux.y + tux.height / 2 + index * 20
                             }
@@ -147,8 +147,8 @@ ActivityBase {
                         id: store
                         Image {
                             source: Activity.url + modelData.img
-                            sourceSize.height: column.itemStoreHeight
-                            sourceSize.width: column.itemStoreHeight
+                            sourceSize.height: columnLayout.itemStoreHeight
+                            sourceSize.width: columnLayout.itemStoreHeight
                             GCText {
                                 text: modelData.price
                                 fontSize: 16
@@ -169,7 +169,7 @@ ActivityBase {
             Rectangle {
                 id: instructionsArea
                 height: instructions.height
-                width: column.width
+                width: columnLayout.width
                 color: "#55333333"
                 border.color: "black"
                 border.width: 2
@@ -180,13 +180,13 @@ ActivityBase {
                 anchors.rightMargin: 10
                 visible: bar.level === 1
 
-                property int realHeight: bar.level === 1 ? height + column.spacing : 0
+                property int realHeight: bar.level === 1 ? height + columnLayout.spacing : 0
 
                 GCText {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
-                    width: column.width
-                    height: column.height / 6
+                    width: columnLayout.width
+                    height: columnLayout.height / 6
                     wrapMode: Text.WordWrap
                     fontSizeMode: Text.Fit
                 }
