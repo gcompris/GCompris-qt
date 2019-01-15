@@ -183,7 +183,6 @@ Item {
                 fillMode: Image.PreserveAspectFit
                 height: parent.height*0.8
                 sourceSize.height: height
-                sourceSize.width: width
                 x: parent.width*0.06
                 anchors.verticalCenter: parent.verticalCenter
             }
