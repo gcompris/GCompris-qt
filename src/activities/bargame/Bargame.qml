@@ -39,6 +39,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
+        property bool horizontalLayout: background.width >= background.height
 
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -62,6 +63,7 @@ ActivityBase {
             property alias player2score: player2score
 
             property int mode: 1
+            property int gridSize: (horizontalLayout ? rootWindow.width : (rootWindow.height - bar.height * 1.2)) / Activity.levelsProperties[items.mode - 1].boardSize
             property bool isPlayer1Beginning: true
             property bool isPlayer1Turn: true
         }
@@ -85,12 +87,12 @@ ActivityBase {
             id: tux
             visible: gameMode == 1
             source: Activity.url + "tux1.svg"
-            height: rootWindow.height / 4
+            height: rootWindow.height * 0.2
             width: tux.height
-            y: rootWindow.height - rootWindow.height / 1.8
+            y: rootWindow.height * 0.4
             anchors {
                 right: rootWindow.right
-                rightMargin: 16 * ApplicationInfo.ratio
+                rightMargin: 23 * ApplicationInfo.ratio
 
             }
             MouseArea {
@@ -116,24 +118,24 @@ ActivityBase {
         // Box row
         Item {
             id: boxModel
-            x: 0
-            anchors.top: tux.bottom
+            
+            states: [
+                State {
+                    name: "horizontalBar"
+                    when: horizontalLayout
+                    PropertyChanges { target: boxModel; x: 0; y: rootWindow.height - bar.height * 2}
+                },
+                State {
+                    name: "verticalBar"
+                    when: !horizontalLayout
+                    PropertyChanges { target: boxModel; x: rootWindow.width * 0.5; y: 0}
+                }
+            ]
 
             transform: Rotation {
                 origin.x: 0;
                 origin.y: 0;
-                angle: (rootWindow.width >= rootWindow.height) ? 0 : 90
-                onAngleChanged: {
-                    if (angle === 90) {
-                        boxModel.anchors.top = undefined;
-                        boxModel.y = 0;
-                        boxModel.anchors.horizontalCenter = rootWindow.horizontalCenter;
-                    } else {
-                        boxModel.anchors.horizontalCenter = undefined;
-                        boxModel.x = 0;
-                        boxModel.anchors.top = tux.bottom;
-                    }
-                }
+                angle: horizontalLayout ? 0 : 90
             }
 
             // The empty boxes grid
@@ -148,7 +150,7 @@ ActivityBase {
                     Image {
                         id: greenCase
                         source: Activity.url + ((index == boxes.columns - 1) ? "case_last.svg" : "case.svg")
-                        sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        sourceSize.width: items.gridSize
                         width: sourceSize.width
                         height: sourceSize.width
                         visible: true
@@ -167,7 +169,7 @@ ActivityBase {
                     model: answerBallsPlacement.columns
                     Image {
                         source: Activity.url + "ball_1.svg"
-                        sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        sourceSize.width: items.gridSize
                         width: sourceSize.width
                         height: sourceSize.width
                         visible: false
@@ -187,7 +189,7 @@ ActivityBase {
                     Image {
                         id: greenMask
                         source: Activity.url + ((index == boxes.columns - 1) ? "mask_last.svg" : "mask.svg")
-                        sourceSize.width: ((rootWindow.width > rootWindow.height) ? rootWindow.width : (rootWindow.height * 0.86)) / (15 + (items.mode - 1) * Activity.levelsProperties[items.mode - 1].elementSizeFactor)
+                        sourceSize.width: items.gridSize
                         width: sourceSize.width
                         height: sourceSize.width
                         // Numbering label
@@ -201,7 +203,7 @@ ActivityBase {
                             anchors {
                                 horizontalCenter: parent.horizontalCenter
                                 bottom: parent.top
-                                bottomMargin: ((rootWindow.width > rootWindow.height) ? 4 * ApplicationInfo.ratio : -16 * ApplicationInfo.ratio)
+                                bottomMargin: (horizontalLayout ? 4 * ApplicationInfo.ratio : -16 * ApplicationInfo.ratio)
                             }
                             GCText {
                                 id: numberText
@@ -216,7 +218,7 @@ ActivityBase {
                                 }
                             }
                             transform: Rotation {
-                                angle: (rootWindow.width > rootWindow.height) ? 0 : -90
+                                angle: horizontalLayout ? 0 : -90
                             }
                         }
                     }
