@@ -285,7 +285,8 @@ ActivityBase {
             MouseArea {
                 id: numberPlateArea
                 anchors.fill: parent
-                hoverEnabled: true
+                hoverEnabled: enabled
+                enabled: (gameMode == 1 && items.isPlayer1Turn == false) ? false : true
                 onClicked: {
                     items.numberOfBalls ++;
                     var max = Activity.levelsProperties[items.mode - 1].maxNumberOfBalls
