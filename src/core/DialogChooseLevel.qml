@@ -21,24 +21,12 @@
 import QtQuick 2.6
 import QtQuick.Controls 1.5
 import GCompris 1.0
-import "../../core"
 
 /**
- * A QML component for a full screen configuration dialog.
+ * todo
  * @ingroup components
  *
- * All user editable settings are presented to the user in a
- * DialogActivityConfig dialog. The global configuration can be accessed
- * through the Bar in the main menu, activity specific configuration from the
- * respective activity.
- *
- * All config items that are shown in this dialog are persisted
- * using ApplicationSettings.
- *
- * For an example have a look at Menu.qml.
- *
- * For more details on how to add configuration to an activity cf.
- * [the wiki](http://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_configuration_for_a_specific_activity)
+ * todo
  *
  * @sa ApplicationSettings
  * @inherit QtQuick.Item
@@ -73,7 +61,7 @@ Rectangle {
     property string chosenLevel
 
     /// @endcond
-
+    
     /**
      * Emitted when the config dialog has been closed.
      */
@@ -93,7 +81,9 @@ Rectangle {
     onCurrentActivityChanged: initialize()
 
     function initialize() {
+        print(currentActivity.currentLevel)
         activityName = currentActivity.name.split('/')[0]
+        chosenLevel = currentActivity.currentLevel
         difficultiesModel = []
         for(var level in currentActivity.levels) {
             objectiveLoader.dataFiles.push({"level": currentActivity.levels[level], "file": "qrc:/gcompris/src/activities/"+activityName+"/resource/"+currentActivity.levels[level]+"/Data.qml"})
@@ -113,6 +103,7 @@ Rectangle {
             currentFile = file
             source = file.file.toString()
         }
+
         onLoaded: {
             difficultiesModel.push({"level": currentFile.level, "objective": item.objective})
             if(dataFiles.length != 0) {

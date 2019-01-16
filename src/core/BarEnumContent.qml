@@ -113,4 +113,12 @@ QtObject {
      * Used for displaying a hint to the children to help.
      */
     readonly property int hint: 512
+
+    /**
+     * type:int
+     * Representation of the activity configuration button.
+     *
+     * Used for displaying the configuration of activities in the menu.
+     */
+    readonly property int activityConfig: 1024
 }

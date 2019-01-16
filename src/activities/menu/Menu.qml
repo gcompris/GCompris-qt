@@ -123,12 +123,16 @@ ActivityBase {
     property string currentTag: sections[0].tag
     /// @endcond
 
+    property string clickMode: "play"
+
     pageComponent: Image {
         id: background
         source: activity.url + "background.svg"
         sourceSize.width: Math.max(parent.width, parent.height)
         height: main.height
         fillMode: Image.PreserveAspectCrop
+
+        opacity: clickMode === "play" ? 1 : 0.8
 
         Timer {
             // triggered once at startup to populate the keyboard
@@ -367,6 +371,7 @@ ActivityBase {
                 id: delegateItem
                 width: activityCellWidth - activitiesGrid.spacing
                 height: activityCellHeight - activitiesGrid.spacing
+                enabled: clickMode === "play" || currentLevel != ""
                 Rectangle {
                     id: activityBackground
                     width: activityCellWidth - activitiesGrid.spacing
@@ -381,13 +386,13 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
                     anchors.margins: 5
+                    opacity: delegateItem.enabled ? 1 : 0.5
                     Image {
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
                                 ActivityInfoTree.menuTree[index].difficulty + ".svg";
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                         x: 5
-                        visible: !currentLevelRectangle.visible
                     }
                     Image {
                         anchors {
@@ -449,29 +454,6 @@ ActivityBase {
                     onClicked: selectCurrentItem()
                 }
 
-                Rectangle {
-                    id: currentLevelRectangle
-                    visible: currentLevel != ""
-                    width: currentLevelField.width
-                    height: currentLevelField.height
-                    radius: 8
-                    color: "lightgrey"
-                    GCText {
-                        id: currentLevelField
-                        anchors.top: parent.top
-                        width: iconWidth * 0.15
-                        text: currentLevel
-                    }
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if(currentLevel == "") return;
-                            dialogChooseLevel.currentActivity = ActivityInfoTree.menuTree[index]
-                            dialogChooseLevel.chosenLevel = currentLevel;
-                            displayDialog(dialogChooseLevel);
-                        }
-                    }
-                }
                 Image {
                     source: activity.url + (favorite ? "all.svg" : "all_disabled.svg");
                     anchors {
@@ -487,21 +469,6 @@ ActivityBase {
                     }
                 }
 
-                function selectCurrentItem() {
-                    if(pageView.busy)
-                        return
-                    particles.burst(50)
-                    ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
-
-                    activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
-                                             {
-                                                 'menu': activity,
-                                                 'activityInfo': ActivityInfoTree.currentActivity,
-                                                 'levelFolder': currentLevel
-                                             })
-                    if (activityLoader.status == Loader.Ready) loadActivity()
-                }
-
                 DialogChooseLevel {
                     id: dialogChooseLevel
                     onClose: home()
@@ -511,6 +478,27 @@ ActivityBase {
                     }
                 }
 
+                function selectCurrentItem() {
+                    if(pageView.busy || !delegateItem.enabled)
+                        return
+
+                    if(clickMode == "play") {
+                        particles.burst(50)
+                        ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
+                        activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.currentActivity.name,
+                        {
+                            'menu': activity,
+                            'activityInfo': ActivityInfoTree.currentActivity,
+                            'levelFolder': currentLevel
+                        })
+                        if (activityLoader.status == Loader.Ready) loadActivity()
+                    }
+                    else {
+                        dialogChooseLevel.currentActivity = ActivityInfoTree.menuTree[index]
+                        dialogChooseLevel.chosenLevel = currentLevel;
+                        displayDialog(dialogChooseLevel);
+                    }
+                }
             }
             highlight: Rectangle {
                 width: activityCellWidth - activitiesGrid.spacing
@@ -696,7 +684,7 @@ ActivityBase {
             id: bar
             // No exit button on mobile, UI Guidelines prohibits it
             content: BarEnumContent {
-                value: help | config | about | (ApplicationInfo.isMobile ? 0 : exit)
+                value: help | config | activityConfig | about | (ApplicationInfo.isMobile ? 0 : exit)
             }
             anchors.bottom: keyboard.visible ? keyboard.top : parent.bottom
             onAboutClicked: {
@@ -707,6 +695,16 @@ ActivityBase {
             onHelpClicked: {
                 searchTextField.focus = false
                 displayDialog(dialogHelp)
+            }
+
+            onActivityConfigClicked: {
+                print("activityConfig")
+                if(clickMode == "play") {
+                    clickMode = "activityConfig"
+                }
+                else {
+                    clickMode = "play"
+                }
             }
 
             onConfigClicked: {

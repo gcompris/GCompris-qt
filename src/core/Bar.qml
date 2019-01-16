@@ -173,6 +173,13 @@ Item {
     signal hintClicked
 
     /**
+     * Emitted when the activity configuration button was clicked.
+     *
+     * Only in menu to change the activity configuration.
+     */
+    signal activityConfigClicked
+
+    /**
      * Emitted when the home button was clicked.
      *
      * Should always be connected to the ActivityBase.home signal and thus
@@ -242,6 +249,11 @@ Item {
         {
             'bid': hint,
             'contentId': content.hint,
+            'allowed': true
+        },
+        {
+            'bid': activityConfigImage,
+            'contentId': content.activityConfig,
             'allowed': true
         },
         {
@@ -454,6 +466,14 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_hint.svg";
             sourceSize.width: fullButtonScaled
             onClicked: bar.hintClicked()
+        }
+    }
+    Component {
+        id: activityConfigImage
+        BarButton {
+            source: "qrc:/gcompris/src/core/resource/bar_activity_config.svg";
+            sourceSize.width: fullButtonScaled
+            onClicked: bar.activityConfigClicked()
         }
     }
     Component {
