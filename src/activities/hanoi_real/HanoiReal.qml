@@ -100,7 +100,6 @@ ActivityBase {
 
             Rectangle {
                 id: disc
-                parent: towerModel.itemAt(0)
                 z: 4
                 width: Activity.getDiscWidth(index)
                 height: activityMode == "real"? towerModel.itemAt(0).height * 0.15: towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
@@ -116,7 +115,7 @@ ActivityBase {
 
                 property alias text: textSimplified.text
 
-                anchors.horizontalCenter: if(parent) parent.horizontalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
 
                 Behavior on y {
                     NumberAnimation {
