@@ -68,6 +68,7 @@ ActivityBase {
             property bool keyNavigationMode: false
             // stores height of sampleGrid images to set rail bar support position
             property int sampleImageHeight: 0
+            property int sampleModel: Activity.dataset["noOfLocos"][bar.level - 1] + Activity.dataset["noOfWagons"][bar.level - 1]
         }
 
         onStart: { Activity.start(items) }
@@ -346,7 +347,7 @@ ActivityBase {
             anchors.margins: 20
             cellWidth: width / columnCount
             cellHeight: isHorizontal ? background.height / 7 : background.height / 7.5
-            model: Activity.dataset["noOfLocos"][bar.level - 1] + Activity.dataset["noOfWagons"][bar.level - 1]
+            model: Math.max(0, items.sampleModel)
             interactive: false
 
             // No. of wagons in a row
