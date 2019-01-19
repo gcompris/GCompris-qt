@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        fillMode : Image.PreserveAspectCrop
+        fillMode: Image.PreserveAspectCrop
         source: "resource/cave.svg"
         anchors.fill: parent
 
