@@ -17,7 +17,6 @@
  */
 import GCompris 1.0
 
-// Must be updated once GnumchEquality is reviewed
 ActivityInfo {
   name: "gnumch-multiples/GnumchMultiples.qml"
   difficulty: 3

@@ -24,7 +24,7 @@ import QtQuick 2.6
 QtObject {
 
     property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/worldbg.jpg"
-    property var tab : [
+    property var tab: [
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Chichén Itzá"),
@@ -104,7 +104,7 @@ QtObject {
         }
     ]
 
-    property var instructions : [
+    property var instructions: [
         {
             "text": qsTr("The 7 New Wonders of World.")
         },

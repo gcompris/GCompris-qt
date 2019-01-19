@@ -86,8 +86,8 @@ ActivityBase {
             property alias progressRight: progressRight
             property alias progressTop: progressTop
             property alias bonus: bonus
-            property int duration : 0
-            property int progressBarOpacity : 40
+            property int duration: 0
+            property int progressBarOpacity: 40
             property string saveBallState: "INITIAL"
             property double ballX: ball.parent.width/2 - ball.width/2
             property double ballY: ball.parent.height*0.77 - ball.height/2
