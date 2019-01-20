@@ -78,6 +78,8 @@ else()
 
     if(SAILFISHOS)
       install(DIRECTORY ${_box2d_install_dir} DESTINATION share/harbour-gcompris-qt/lib/qml)
+    elseif(APPLE)
+      install(DIRECTORY ${_box2d_install_dir} DESTINATION gcompris-qt.app/Contents/lib/qml)
     else()
       install(DIRECTORY ${_box2d_install_dir} DESTINATION lib/qml)
     endif()
