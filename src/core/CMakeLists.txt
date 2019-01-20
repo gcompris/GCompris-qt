@@ -107,7 +107,7 @@ if(BUILD_STANDALONE)
     list(APPEND _qt_plugins Qt5::QJpegPlugin)
   endif()
   if(APPLE)
-    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin)
+    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
   elseif(WIN32)
     list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
   elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
@@ -130,12 +130,15 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}gstmediacapture
       mediaservice/${_lib_prefix}gstmediaplayer)
   elseif(APPLE)
-    list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}qavfmediaplayer
+    list(APPEND _qt_plugins2 audio/${_lib_prefix}qtaudio_coreaudio
+      mediaservice/${_lib_prefix}qavfmediaplayer
       mediaservice/${_lib_prefix}qtmedia_audioengine
       mediaservice/${_lib_prefix}qavfcamera)
   endif()
   
   set(_qml_plugins
+    QtGraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
+    QtGraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivate
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
@@ -164,7 +167,7 @@ if(BUILD_STANDALONE)
       MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
       MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
       MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
-      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2015 Bruno Coudoin and Others.")
+      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2019 Timothee Giet and Others.")
     set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
   else()
     set(_qtconf_destdir bin)
@@ -186,7 +189,11 @@ if(BUILD_STANDALONE)
     list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
   endforeach()
   foreach(_plugin ${_qt_plugins2})
-    installQtPlugin2(${_plugin} ${_qt_plugins_destdir} _lib)
+    if(APPLE)
+      installQtPlugin2(${_plugin} ${_qt_plugins_destdir}/../Plugins _lib)
+    else()
+      installQtPlugin2(${_plugin} ${_qt_plugins_destdir} _lib)
+    endif()
     list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
   endforeach()
 
@@ -196,10 +203,12 @@ if(BUILD_STANDALONE)
     list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
   endforeach()
 
-  # install QtGraphicalEffects (which is not a lib but only qml files)
-  set(_qml_subdir QtGraphicalEffects)
-  getQtQmlPath(_qt_qml_path)
-  install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
+  ## install QtGraphicalEffects (which is not a lib but only qml files)
+  # BUT, actually there are some libs in it, and this does not work on APPLE. Moved to _qml_plugins instead
+  #
+  #set(_qml_subdir QtGraphicalEffects)
+  #getQtQmlPath(_qt_qml_path)
+  #install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
 
   # Fix for Linux 'make package' that fails to link with libicu
   if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID)
