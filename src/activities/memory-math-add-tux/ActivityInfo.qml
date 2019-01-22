@@ -26,7 +26,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Addition memory game against Tux")
   //: Help title
-  description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone. Tux will do the same. You have to beat it !")
+  description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone. Tux will do the same. You have to beat it!")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
   goal: qsTr("Practice adding up, until all the cards are gone.")
