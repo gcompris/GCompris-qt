@@ -416,6 +416,7 @@
       <caption>"Click on an uppercase letter" activity</caption>
       <caption xml:lang="ca">Activitat «Fes clic en una lletra en majúscula»</caption>
       <caption xml:lang="ca-valencia">Activitat «Fes clic en una lletra en majúscula»</caption>
+      <caption xml:lang="cs">Aktivita "Klikni na velké písmeno"</caption>
       <caption xml:lang="el">Δραστηριότητα "Κλικ σε κεφαλαίο γράμμα"</caption>
       <caption xml:lang="en-GB">"Click on an uppercase letter" activity</caption>
       <caption xml:lang="es">Actividad «Pulsa en una letra mayúscula»</caption>
@@ -439,6 +440,7 @@
       <caption>"Learning Clock" activity</caption>
       <caption xml:lang="ca">Activitat «Rellotge d'aprenentatge»</caption>
       <caption xml:lang="ca-valencia">Activitat «Rellotge d'aprenentatge»</caption>
+      <caption xml:lang="cs">Aktivita "Nauč se hodiny"</caption>
       <caption xml:lang="el">Δραστηριότητα "Ρολόι"</caption>
       <caption xml:lang="en-GB">"Learning Clock" activity</caption>
       <caption xml:lang="es">Actividad «Juego del reloj»</caption>
@@ -462,6 +464,7 @@
       <caption>"Mixing color of paint" activity</caption>
       <caption xml:lang="ca">Activitat «Barreja els colors de la pintura»</caption>
       <caption xml:lang="ca-valencia">Activitat «Barreja els colors de la pintura»</caption>
+      <caption xml:lang="cs">Aktivita "Míchání tiskařských barev"</caption>
       <caption xml:lang="el">Δραστηριότητα "Μείξη χρωμάτων"</caption>
       <caption xml:lang="en-GB">"Mixing colour of paint" activity</caption>
       <caption xml:lang="es">Actividad «Mezcla de colores»</caption>
@@ -485,6 +488,7 @@
       <caption>"Colors" activity</caption>
       <caption xml:lang="ca">Activitat «Colors»</caption>
       <caption xml:lang="ca-valencia">Activitat «Colors»</caption>
+      <caption xml:lang="cs">Aktivita "Barvy"</caption>
       <caption xml:lang="el">Δραστηριότητα "Χρώματα"</caption>
       <caption xml:lang="en-GB">"Colours" activity</caption>
       <caption xml:lang="es">Actividad «Colores»</caption>
@@ -508,6 +512,7 @@
       <caption>"Build the same model" activity</caption>
       <caption xml:lang="ca">Activitat «Construeix el mateix model»</caption>
       <caption xml:lang="ca-valencia">Activitat «Construeix el mateix model»</caption>
+      <caption xml:lang="cs">Aktivita "Postav stejný model"</caption>
       <caption xml:lang="el">Δραστηριότητα "Φτιάξε το ίδιο"</caption>
       <caption xml:lang="en-GB">"Build the same model" activity</caption>
       <caption xml:lang="es">Actividad «Grúa»</caption>
@@ -531,6 +536,7 @@
       <caption>"Count the items" activity</caption>
       <caption xml:lang="ca">Activitat «Compta els elements»</caption>
       <caption xml:lang="ca-valencia">Activitat «Compta els elements»</caption>
+      <caption xml:lang="cs">Aktivita "Spočítej položky"</caption>
       <caption xml:lang="el">Δραστηριότητα "Μέτρα τα αντικείμενα"</caption>
       <caption xml:lang="en-GB">"Count the items" activity</caption>
       <caption xml:lang="es">Actividad «Enumeración»</caption>
@@ -554,6 +560,7 @@
       <caption>"The fifteen game" activity</caption>
       <caption xml:lang="ca">Activitat «El joc dels quinze»</caption>
       <caption xml:lang="ca-valencia">Activitat «El joc dels quinze»</caption>
+      <caption xml:lang="cs">Aktivita "Hra patnáct"</caption>
       <caption xml:lang="el">Δραστηριότητα "Δεκαπέντε"</caption>
       <caption xml:lang="en-GB">"The fifteen game" activity</caption>
       <caption xml:lang="es">Actividad «Quince»</caption>
@@ -576,6 +583,7 @@
       <caption>"Hexagon" activity</caption>
       <caption xml:lang="ca">Activitat «Hexàgon»</caption>
       <caption xml:lang="ca-valencia">Activitat «Hexàgon»</caption>
+      <caption xml:lang="cs">Aktivita "Hexagon"</caption>
       <caption xml:lang="el">Δραστηριότητα "Εξάγωνο"</caption>
       <caption xml:lang="en-GB">"Hexagon" activity</caption>
       <caption xml:lang="es">Actividad «Hexágono»</caption>
@@ -598,6 +606,7 @@
       <caption>"Balance the scales properly" activity</caption>
       <caption xml:lang="ca">Activitat «Equilibra correctament la balança»</caption>
       <caption xml:lang="ca-valencia">Activitat «Equilibra correctament la balança»</caption>
+      <caption xml:lang="cs">Aktivita "Správně vyrovnat váhy"</caption>
       <caption xml:lang="el">Δραστηριότητα "Ισορρόπησε τη ζυγαριά"</caption>
       <caption xml:lang="en-GB">"Balance the scales properly" activity</caption>
       <caption xml:lang="es">Actividad «Balanzas»</caption>
@@ -621,6 +630,7 @@
       <caption>"End of chess game" activity</caption>
       <caption xml:lang="ca">Activitat «Final de la partida d'escacs»</caption>
       <caption xml:lang="ca-valencia">Activitat «Final de la partida d'escacs»</caption>
+      <caption xml:lang="cs">Aktivita "Konec šachové partie"</caption>
       <caption xml:lang="el">Δραστηριότητα "Το σκάκι στο τέλος"</caption>
       <caption xml:lang="en-GB">"End of chess game" activity</caption>
       <caption xml:lang="es">Actividad «Final de partida de ajedrez»</caption>
@@ -644,6 +654,7 @@
       <caption>"A sliding-block puzzle game" activity</caption>
       <caption xml:lang="ca">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
       <caption xml:lang="ca-valencia">Activitat «Un joc de trencaclosques amb blocs que es desplacen»</caption>
+      <caption xml:lang="cs">Aktivita "Hra s posouváním bloků"</caption>
       <caption xml:lang="el">Δραστηριότητα "Βγάζω το αυτοκίνητο"</caption>
       <caption xml:lang="en-GB">"A sliding-block puzzle game" activity</caption>
       <caption xml:lang="es">Actividad «Tráfico»</caption>
