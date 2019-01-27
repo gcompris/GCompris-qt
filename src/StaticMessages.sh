@@ -18,7 +18,6 @@ function import_po_files # First parameter will be a path that will contain seve
     for file in `ls $podir`
     do
         lang=${file%.po} #remove .po from end of file
-        #python3 ./activities/lang/resource/poToDataset.py $podir/$file ./activities/lang/resource/content-$lang.json
-        echo "${PWD} - ./activities/lang/resource/poToDataset.py $podir/$file ./activities/lang/resource/content-$lang.json"
+        python3 ./activities/lang/resource/poToDataset.py $podir/$file ./activities/lang/resource/content-$lang.json
     done
 }
