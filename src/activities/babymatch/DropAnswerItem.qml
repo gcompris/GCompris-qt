@@ -51,7 +51,7 @@ Rectangle {
         id: targetImage
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
-        z : -1
+        z: -1
     }
 
     function imageRemove() {

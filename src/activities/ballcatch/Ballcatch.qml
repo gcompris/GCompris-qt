@@ -233,7 +233,7 @@ ActivityBase {
                 top: parent.top
                 topMargin: 10
             }
-            z : 10
+            z: 10
 
             index: bar.level === 1 &&
                      !(items.leftPressed && items.rightPressed) ? 0 : -1

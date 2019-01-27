@@ -90,17 +90,17 @@ ActivityBase {
             if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
                 Activity.equalityCheck()
             }
-            else if(event.key == Qt.Key_Space) {
+            else if(event.key === Qt.Key_Space) {
                 if(items.currentSelectedBulb != -1) {
                     Activity.changeState(items.currentSelectedBulb)
                 }
             }
-            else if(event.key == Qt.Key_Left) {
+            else if(event.key === Qt.Key_Left) {
                 if(--items.currentSelectedBulb < 0) {
                     items.currentSelectedBulb = items.numberOfBulbs-1
                 }
             }
-            else if(event.key == Qt.Key_Right) {
+            else if(event.key === Qt.Key_Right) {
                 if(++items.currentSelectedBulb >= items.numberOfBulbs) {
                     items.currentSelectedBulb = 0
                 }

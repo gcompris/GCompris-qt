@@ -93,11 +93,11 @@ ActivityBase {
 
         function findBlackKey(keyNumber) {
             for(var i = 0; keyNumber; i++) {
-                if(piano.keyRepeater.itemAt(i) == undefined)
+                if(piano.keyRepeater.itemAt(i) === undefined)
                     break
                 if(piano.keyRepeater.itemAt(i).blackKey.visible)
                     keyNumber--
-                if(keyNumber == 0)
+                if(keyNumber === 0)
                     piano.keyRepeater.itemAt(i).blackKey.keyPressed()
             }
         }
@@ -284,7 +284,7 @@ ActivityBase {
             function addMusicElementAndPushToStack(noteName, noteType, elementType) {
                 if(noteType === "Rest")
                     elementType = "rest"
-                    else if(elementType == undefined)
+                    else if(elementType === undefined)
                         elementType = "note"
                         
                         var tempModel = multipleStaff.createNotesBackup()

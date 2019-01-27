@@ -24,6 +24,6 @@ import QtQuick 2.6
 import "../../core"
 import "../magic-hat-minus/"
 
-MagicHat{
+MagicHat {
     mode: "plus"
 }

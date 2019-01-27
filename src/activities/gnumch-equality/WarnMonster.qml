@@ -25,7 +25,7 @@ import GCompris 1.0
 import "../../core"
 
 Rectangle {
-    property var text : warningText
+    property alias text: warningText
 
     width: warningText.contentWidth * 1.1
     height: warningText.height * 1.1

@@ -74,7 +74,7 @@ ActivityBase {
             if(event.key >= Qt.Key_0 && event.key < Qt.Key_0 + items.numberOfColor)
                 items.colorSelector = event.key - Qt.Key_0
 
-            if(event.key == Qt.Key_Backspace)
+            if(event.key === Qt.Key_Backspace)
                 userModel.clearCurrentItem()
         }
         Keys.onEnterPressed: userModel.paintCurrentItem()

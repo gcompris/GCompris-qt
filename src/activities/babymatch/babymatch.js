@@ -93,14 +93,14 @@ function initLevel() {
     items.score.currentSubLevel = currentSubLevel + 1
     items.score.numberOfSubLevels = numberOfSubLevel + 1
     
-    if(levelData.glow == undefined)
+    if(levelData.glow === undefined)
         glowEnabled = glowEnabledDefault
     else 
         glowEnabled = levelData.glow
 
     items.toolTip.show('')
 
-    if(levelData.instruction == undefined) {
+    if(levelData.instruction === undefined) {
         items.instruction.opacity = 0
         items.instruction.text = ""
     } else if(!displayDropCircle) {
@@ -132,11 +132,11 @@ function initLevel() {
                 "imgSound": levelData.levels[i].soundFile ?
                      soundsUrl + levelData.levels[i].soundFile :
                      "qrc:/gcompris/src/core/resource/sounds/scroll.wav",
-                "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
-                "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,
+                "imgHeight": levelData.levels[i].height === undefined ? 0 : levelData.levels[i].height,
+                "imgWidth": levelData.levels[i].width === undefined ? 0 : levelData.levels[i].width,
                 "toolTipText":
                    // We remove the text before the pipe symbol if any (translation disembiguation)
-                   levelData.levels[i].toolTipText == undefined ?
+                   levelData.levels[i].toolTipText === undefined ?
                                                        "" :
                                                        (levelData.levels[i].toolTipText.split('|').length > 1 ?
                                                         levelData.levels[i].toolTipText.split('|')[1] :
@@ -151,7 +151,7 @@ function initLevel() {
                          });
         }
         //Create Text pieces for the level which has to display additional information
-        else if(levelData.levels[i].type == "DisplayText") {
+        else if(levelData.levels[i].type === "DisplayText") {
 			showText[k++] = textItemComponent.createObject(
                             items.backgroundImage, {
                                 "posX": levelData.levels[i].x,
@@ -174,8 +174,8 @@ function initLevel() {
                     "imgName": levelData.levels[i].pixmapfile,
                     "posX": levelData.levels[i].x,
                     "posY": levelData.levels[i].y,
-                    "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
-                    "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width, 
+                    "imgHeight": levelData.levels[i].height === undefined ? 0 : levelData.levels[i].height,
+                    "imgWidth": levelData.levels[i].width === undefined ? 0 : levelData.levels[i].width,
                 });
             }
         }

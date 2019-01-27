@@ -142,7 +142,7 @@ Flipable {
 
     Behavior on opacity { NumberAnimation { duration: 1000 } }
 
-    states : [
+    states: [
         State {
             name: "front"
             PropertyChanges { target: rotation; angle: 180 }

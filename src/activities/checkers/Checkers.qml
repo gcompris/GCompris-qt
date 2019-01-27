@@ -204,7 +204,7 @@ ActivityBase {
 
 
             Rectangle {
-                id:boardBg
+                id: boardBg
                 width: items.cellSize * (items.numberOfCases + 0.2)
                 height: items.cellSize * (items.numberOfCases + 0.2)
                 z: 09
@@ -366,7 +366,7 @@ ActivityBase {
                 toPiece.hide(from)
                 movingPiece = fromPiece
 
-                if(moves.jumps.length != 0) {
+                if(moves.jumps.length !== 0) {
                     listJumps = moves.jumps
                 }
                 else {
@@ -382,7 +382,7 @@ ActivityBase {
 
             function getPieceAt(pos) {
                 for(var i=0; i < pieces.count; i++) {
-                    if(pieces.itemAt(i).newPos == pos)
+                    if(pieces.itemAt(i).newPos === pos)
                         return pieces.itemAt(i)
                 }
                 return undefined
@@ -422,7 +422,7 @@ ActivityBase {
                     var tmp = listJumps
                     listJumps = tmp
                     // only change player once all the jumps have been done
-                    if(listJumps.length == 1) {
+                    if(listJumps.length === 1) {
 
                         items.movesToDo.shift()
                         if(items.movesToDo.length > 0) {

@@ -121,7 +121,7 @@ ActivityBase {
                 var oldLocale = background.locale;
                 var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                 // Remove .UTF-8
-                if(newLocale.indexOf('.') != -1) {
+                if(newLocale.indexOf('.') !== -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
                 dataToSave = {

@@ -53,25 +53,25 @@ ActivityBase {
         }
 
         Keys.onPressed: {
-            if ((event.key == Qt.Key_Return || event.key == Qt.Key_Enter) && okButton.enabled) {
+            if ((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && okButton.enabled) {
                 Activity.checkAnswer()
             }
-            if (event.key == Qt.Key_Plus) {
+            if (event.key === Qt.Key_Plus) {
                 Activity.zoomIn()
             }
-            if (event.key == Qt.Key_Minus) {
+            if (event.key === Qt.Key_Minus) {
                 Activity.zoomOut()
             }
-            if (event.key == Qt.Key_Right) {
+            if (event.key === Qt.Key_Right) {
                 playArea.x -= 200;
             }
-            if (event.key == Qt.Key_Left) {
+            if (event.key === Qt.Key_Left) {
                 playArea.x += 200
             }
-            if (event.key == Qt.Key_Up) {
+            if (event.key === Qt.Key_Up) {
                 playArea.y += 200
             }
-            if (event.key == Qt.Key_Down) {
+            if (event.key === Qt.Key_Down) {
                 playArea.y -= 200
             }
             if (playArea.x >= mousePan.drag.maximumX) {

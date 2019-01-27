@@ -173,7 +173,7 @@ ActivityBase {
             }
 
             function initSubLevel() {
-                if(dataset[currentLevel].values[0] == '_random_') {
+                if(dataset[currentLevel].values[0] === '_random_') {
                     questionValue = Math.round(Math.random() * dataset[currentLevel].values[1] + 1)
                     score.numberOfSubLevels = dataset[currentLevel].values[2]
                 } else {

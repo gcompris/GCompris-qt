@@ -139,7 +139,7 @@ ActivityBase {
             if(userEntry.text.length === 0) {
                 userEntry.text = "?"
             } else {
-                if(targetItem.scoreTotal == userEntry.text)
+                if(targetItem.scoreTotal === userEntry.text)
                     bonus.good("flower")
             }
         }
@@ -164,7 +164,7 @@ ActivityBase {
 
             userEntry.text += text
 
-            if(targetItem.scoreTotal == userEntry.text)
+            if(targetItem.scoreTotal === userEntry.text)
                 bonus.good("flower")
         }
 

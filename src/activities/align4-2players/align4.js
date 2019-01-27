@@ -57,7 +57,7 @@ function initLevel() {
 
     items.counter = items.nextPlayerStart+1
 
-    if(items.nextPlayerStart == 1) {
+    if(items.nextPlayerStart === 1) {
         items.player2score.endTurn();
         items.player1score.beginTurn();
     }
@@ -154,7 +154,7 @@ function moveCurrentIndexLeft() {
 
 function isModelEmpty(model) {
     var state = model.stateTemp
-    return (state == "1" || state == "2") ? false : true
+    return (state === "1" || state === "2") ? false : true
 }
 
 function getPieceAt(col, row) {

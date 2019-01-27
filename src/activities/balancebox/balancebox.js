@@ -194,19 +194,19 @@ function checkBallContacts()
             items.ball.y > ballContacts[k].y - items.ballSize/2 &&
             items.ball.y < ballContacts[k].y + items.ballSize/2) {
             // collision
-            if (ballContacts[k].categories == items.holeType)
+            if (ballContacts[k].categories === items.holeType)
                 finishBall(false, ballContacts[k].x, ballContacts[k].y);
-            else if (ballContacts[k].categories == items.goalType && goalUnlocked)
+            else if (ballContacts[k].categories === items.goalType && goalUnlocked)
                 finishBall(true,
                            ballContacts[k].x + (items.cellSize - items.wallSize - items.ballSize)/2,
                            ballContacts[k].y + (items.cellSize - items.wallSize - items.ballSize)/2);
-            else if (ballContacts[k].categories == items.buttonType) {
+            else if (ballContacts[k].categories === items.buttonType) {
                 if (!ballContacts[k].pressed
-                    && ballContacts[k].orderNum == lastContact + 1)
+                    && ballContacts[k].orderNum === lastContact + 1)
                 {
                     ballContacts[k].pressed = true;
                     lastContact = ballContacts[k].orderNum;
-                    if (lastContact == contacts.length) {
+                    if (lastContact === contacts.length) {
                         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
                         goalUnlocked = true;
                         goal.imageSource = baseUrl + "/door.svg";

@@ -62,11 +62,9 @@ Image {
 
     Image {
         id: star
-
         x: animalImg.width / 2.5
         y: animalImg.height * 0.8
         visible: false
-
         source:"qrc:/gcompris/src/core/resource/star.png"
     }
 
@@ -85,7 +83,7 @@ Image {
             }
             var questionTargetId = items.questionOrder[Activity.items.progressbar.value]
             Activity.items.instruction.visible = false
-            if (Activity.items.score.currentSubLevel == 1) {
+            if (Activity.items.score.currentSubLevel === 1) {
                 if(animalImg.audio) {
                     audioVoices.play(animalImg.audio);
                 }

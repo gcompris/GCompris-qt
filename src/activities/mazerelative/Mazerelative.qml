@@ -21,6 +21,7 @@
 */
 import QtQuick 2.6
 import "../maze"
+
 Maze {
     relativeMode: true
 }

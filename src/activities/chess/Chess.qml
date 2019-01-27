@@ -217,7 +217,7 @@ ActivityBase {
 
 
             Rectangle {
-                id:boardBg
+                id: boardBg
                 width: items.cellSize * 8.2
                 height: boardBg.width
                 z: 08
@@ -410,7 +410,7 @@ ActivityBase {
             function moveTo(from, to) {
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
-                if(toPiece.img != '')
+                if(toPiece.img !== '')
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                 else
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
@@ -425,7 +425,7 @@ ActivityBase {
 
             function getPieceAt(pos) {
                 for(var i=0; i < pieces.count; i++) {
-                    if(pieces.itemAt(i).newPos == pos)
+                    if(pieces.itemAt(i).newPos === pos)
                         return pieces.itemAt(i)
                 }
                 return(undefined)

@@ -83,7 +83,7 @@ ActivityBase {
 
         function findBlackKey(keyNumber) {
             for(var i = 0; keyNumber; i++) {
-                if(piano.keyRepeater.itemAt(i) == undefined)
+                if(piano.keyRepeater.itemAt(i) === undefined)
                     break
                 if(piano.keyRepeater.itemAt(i).blackKey.visible)
                     keyNumber--

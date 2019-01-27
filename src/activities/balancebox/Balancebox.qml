@@ -46,7 +46,7 @@ ActivityBase {
     property bool alwaysStart: true     // enforce start signal for editor-to-testing- and returning from config-transition
     property bool needRestart: true
 
-    onWidthChanged:if (inForeground && pageView.currentItem === activity)
+    onWidthChanged: if (inForeground && pageView.currentItem === activity)
                        Activity.reconfigureScene();
 
     onHeightChanged: if (inForeground && pageView.currentItem === activity)

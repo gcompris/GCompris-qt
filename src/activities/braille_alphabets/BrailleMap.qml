@@ -62,7 +62,7 @@ Rectangle {
                 ]
 
                 Column {
-                    width:  (grid1.width - grid1.spacing * 10) / 10
+                    width: (grid1.width - grid1.spacing * 10) / 10
 
                     Rectangle {
                         id: rect1

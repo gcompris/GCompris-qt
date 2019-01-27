@@ -24,7 +24,7 @@ import "../../core"
 import "../algebra_by/"
 
 Algebra {
-    onStart:{
+    onStart: {
         operand.text = "/"
     }
 }

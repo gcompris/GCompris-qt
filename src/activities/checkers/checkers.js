@@ -166,7 +166,7 @@ function findBestMove(currentState, depth, sign) {
     }
 
     var moves = currentState.moves()
-    if(moves.length == 0) {
+    if(moves.length === 0) {
         return [100, 0];
     }
     var bestScore = -1000;
@@ -190,7 +190,7 @@ function computerMove() {
     var bestMoves = []
     var newState = new Engine.Draughts(state.fen())
     // 0 is b, 1 is b -> w, 2 is b -> w -> b guesses
-    var depth = currentLevel == 5 ? 2 : 1;
+    var depth = currentLevel === 5 ? 2 : 1;
 
     for(var move in moves) {
         newState.move(moves[move]);
@@ -239,7 +239,7 @@ function undo() {
     // In computer mode, the white always starts, take care
     // of undo after a mate which requires us to revert on
     // a white play
-    if(!items.twoPlayer && state.getTurn() == 'b') {
+    if(!items.twoPlayer && state.getTurn() === 'b') {
         move = state.undo();
         redo_stack.push(move)
     }
@@ -261,7 +261,7 @@ function redo() {
    // In computer mode, the white always starts, take care
     // of undo after a mate which requires us to revert on
     // a white play
-    if(!items.twoPlayer && state.getTurn() == 'b') {
+    if(!items.twoPlayer && state.getTurn() === 'b') {
         move = redo_stack.pop()
         moveByEngine(move)
     }
@@ -345,18 +345,18 @@ function getScore(board) {
     
     for(var i = 0; i < position.length; ++i) {
         var img = position[i] !== '0' && position[i] !== '?' ? position[i] : ''
-        if(img == '')
+        if(img === '')
             continue;
-        else if(img == 'w') {
+        else if(img === 'w') {
             white ++;
         }
-        else if(img == 'W') {
+        else if(img === 'W') {
             white += queenScore;
         }
-        if(img == 'b') {
+        if(img === 'b') {
             black ++;
         }
-        else if(img == 'B') {
+        else if(img === 'B') {
             black += queenScore;
         }
     }

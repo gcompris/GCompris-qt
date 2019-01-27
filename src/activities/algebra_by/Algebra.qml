@@ -51,7 +51,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias balloon: balloon
-            property alias timer:timer
+            property alias timer: timer
             property GCSfx audioEffects: activity.audioEffects
         }
 
@@ -134,7 +134,7 @@ ActivityBase {
     }
 
     Flow {
-        id:textFlow
+        id: textFlow
         x: parent.width / 2 - width / 2
         y: 80
         width: parent.width / 2

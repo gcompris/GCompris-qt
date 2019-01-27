@@ -158,18 +158,18 @@ ActivityBase {
                 var id = x + y * sudoColumn.rows;
 
                 // Only color if we can modify the case
-                if(sudokuModel.get(id).mState == "default")
+                if(sudokuModel.get(id).mState === "default")
                     sudokuModel.get(id).mState = "hovered";
 
                 // Restore previous case if different from the new one
                 if(previousHoveredCase != id) {
-                    if(previousHoveredCase != -1 && sudokuModel.get(previousHoveredCase).mState == "hovered")
+                    if(previousHoveredCase != -1 && sudokuModel.get(previousHoveredCase).mState === "hovered")
                         sudokuModel.get(previousHoveredCase).mState = "default"
                     previousHoveredCase = id
                 }
             }
             onExited: {
-                if(previousHoveredCase != -1 && sudokuModel.get(previousHoveredCase).mState == "hovered")
+                if(previousHoveredCase != -1 && sudokuModel.get(previousHoveredCase).mState === "hovered")
                     sudokuModel.get(previousHoveredCase).mState = "default"
                 previousHoveredCase = -1
             }

@@ -105,7 +105,7 @@ Image {
     
     Image {
         id: introTux
-        z:3
+        z: 3
         source: Activity.url + "tux_braille.svg"
         fillMode: Image.PreserveAspectFit
         sourceSize.width: parent.width * 0.2
@@ -129,7 +129,7 @@ Image {
     
     Rectangle {
         id: bgTux
-        z:0
+        z: 0
         color: "#94c1d2"
         width: introTux.width * 1.5
         height: introTux.height * 1.1

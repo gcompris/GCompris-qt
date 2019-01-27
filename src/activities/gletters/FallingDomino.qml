@@ -70,7 +70,7 @@ Item {
             return
 
         var chars = text.split("");
-        if (chars[unmatchedIndex] == c) {
+        if (chars[unmatchedIndex] === c) {
             unmatchedIndex++;
             return true;
         } else {

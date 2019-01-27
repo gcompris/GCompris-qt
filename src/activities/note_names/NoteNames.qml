@@ -148,7 +148,7 @@ ActivityBase {
             }
 
             onVisibleChanged: {
-                if(Activity.targetNotes[0] == undefined)
+                if(Activity.targetNotes[0] === undefined)
                     text = ""
                 else if(items.isTutorialMode)
                     text = qsTr("New note: %1").arg(getTranslatedNoteName(Activity.targetNotes[0]))

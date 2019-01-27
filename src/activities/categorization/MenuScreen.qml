@@ -62,7 +62,7 @@ Image {
         home()
     }
 
-    Keys.enabled : (items.mode == "expert") ? false : true
+    Keys.enabled: (items.mode == "expert") ? false : true
     Keys.onPressed: {
         if(event.key === Qt.Key_Space) {
             menuGrid.currentItem.selectCurrentItem()

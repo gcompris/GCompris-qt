@@ -139,7 +139,7 @@ ActivityBase {
                 color: "blue"
                 anchors.top: border.top
                 anchors.left: border.right
-                z:10
+                z: 10
                 opacity: 0.3
             }
         }

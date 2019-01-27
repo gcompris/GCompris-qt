@@ -32,7 +32,7 @@ var currentQuestion
 var hasWon
 
 function start(items_, dataset_, mode_) {
-    if (mode_ == "Colors")
+    if (mode_ === "Colors")
         Core.checkForVoices(items_.background);
     items = items_
     dataset = dataset_.get()

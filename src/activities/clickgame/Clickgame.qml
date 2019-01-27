@@ -58,7 +58,9 @@ ActivityBase {
 
         Timer {
             id: timer
-            interval: 5000; running: true; repeat: true
+            interval: 5000
+            running: true
+            repeat: true
             onTriggered: activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/bubble.wav")
         }
 

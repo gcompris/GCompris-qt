@@ -75,7 +75,6 @@ Item {
         property: "opacity"
         to: 0
         duration: 1000
-
         onStopped: Activity.deleteWord(word);
     }
 
@@ -91,7 +90,7 @@ Item {
             return (text === c)
         } else {
             var chars = text.split("");
-            if (chars[unmatchedIndex] == c) {
+            if (chars[unmatchedIndex] === c) {
                 unmatchedIndex++;
                 return true;
             } else {
@@ -114,7 +113,6 @@ Item {
 
     GCText {
         id: wordText
-
         text: ""
         fontSize: 35
         font.bold: true
@@ -129,9 +127,7 @@ Item {
 
         GCText {
             id: highlightedWordText
-
             anchors.fill: parent
-
             text: ""
             fontSize: parent.fontSize
             font.bold: parent.font.bold

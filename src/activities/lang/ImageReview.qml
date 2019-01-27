@@ -364,7 +364,7 @@ Item {
     }
 
     function nextPressed() {
-        if(currentMiniGame == 0) {
+        if(currentMiniGame === 0) {
             nextSubLevel()
         }
     }

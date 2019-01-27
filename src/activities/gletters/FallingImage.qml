@@ -60,7 +60,6 @@ Item {
         property: "opacity"
         to: 0
         duration: 1000
-
         onStopped: Activity.deleteWord(word);
     }
 
@@ -71,7 +70,7 @@ Item {
             return
 
         var chars = text.split("");
-        if (chars[unmatchedIndex] == c) {
+        if (chars[unmatchedIndex] === c) {
             unmatchedIndex++;
             return true;
         } else {

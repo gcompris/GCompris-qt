@@ -157,14 +157,14 @@ function restartLevel() {
 
 function processKey(event) {
     if(!gameFinished) {
-        if(event.key == Qt.Key_Left) {
+        if(event.key === Qt.Key_Left) {
             // left
             if(!items.leftPressed) {
                 leftShiftPressed();
                 items.leftPressed = true
             }
         }
-        else if(event.key == Qt.Key_Right) {
+        else if(event.key === Qt.Key_Right) {
             // right
             if(!items.rightPressed) {
                 rightShiftPressed();

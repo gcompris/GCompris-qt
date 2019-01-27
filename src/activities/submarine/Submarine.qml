@@ -58,41 +58,41 @@ ActivityBase {
 
         /* Testing purposes, A / Left Key => Reduces velocity, D / Right Key => Increases velocity */
         Keys.onPressed: {
-            if ((event.key == Qt.Key_D || event.key == Qt.Key_Right) && !tutorial.visible) {
+            if ((event.key === Qt.Key_D || event.key === Qt.Key_Right) && !tutorial.visible) {
                 submarine.increaseHorizontalVelocity(1)
             }
-            if ((event.key == Qt.Key_A || event.key == Qt.Key_Left) && !tutorial.visible) {
+            if ((event.key === Qt.Key_A || event.key === Qt.Key_Left) && !tutorial.visible) {
                 submarine.decreaseHorizontalVelocity(1)
             }
-            if ((event.key == Qt.Key_W || event.key == Qt.Key_Up) && !tutorial.visible) {
+            if ((event.key === Qt.Key_W || event.key === Qt.Key_Up) && !tutorial.visible) {
                 centralBallastTank.fillBallastTanks()
                 controls.updateVannes(centralBallastTank.waterFilling, controls.rotateCentralFill)
             }
-            if ((event.key == Qt.Key_S || event.key == Qt.Key_Down) && !tutorial.visible) {
+            if ((event.key === Qt.Key_S || event.key === Qt.Key_Down) && !tutorial.visible) {
                 centralBallastTank.flushBallastTanks()
                 controls.updateVannes(centralBallastTank.waterFlushing, controls.rotateCentralFlush)
             }
-            if ((event.key == Qt.Key_Plus) && !tutorial.visible) {
+            if ((event.key === Qt.Key_Plus) && !tutorial.visible) {
                 submarine.increaseWingsAngle(1)
             }
-            if ((event.key == Qt.Key_Minus) && !tutorial.visible) {
+            if ((event.key === Qt.Key_Minus) && !tutorial.visible) {
                 submarine.decreaseWingsAngle(1)
             }
 
-            if ((event.key == Qt.Key_R) && !tutorial.visible) {
+            if ((event.key === Qt.Key_R) && !tutorial.visible) {
                 leftBallastTank.fillBallastTanks()
                 controls.updateVannes(leftBallastTank.waterFilling, controls.rotateLeftFill)
             }
-            if ((event.key == Qt.Key_F) && !tutorial.visible) {
+            if ((event.key === Qt.Key_F) && !tutorial.visible) {
                 leftBallastTank.flushBallastTanks()
                 controls.updateVannes(leftBallastTank.waterFlushing, controls.rotateLeftFlush)
             }
 
-            if ((event.key == Qt.Key_T) && !tutorial.visible) {
+            if ((event.key === Qt.Key_T) && !tutorial.visible) {
                 rightBallastTank.fillBallastTanks()
                 controls.updateVannes(rightBallastTank.waterFilling, controls.rotateRightFill)
             }
-            if ((event.key == Qt.Key_G) && !tutorial.visible) {
+            if ((event.key === Qt.Key_G) && !tutorial.visible) {
                 rightBallastTank.flushBallastTanks()
                 controls.updateVannes(rightBallastTank.waterFlushing, controls.rotateRightFlush)
             }
@@ -475,10 +475,10 @@ ActivityBase {
                         onBeginContact: {
                             var collidedObject = other.getBody().target
 
-                            if (collidedObject == whale) {
+                            if (collidedObject === whale) {
                                 whale.hit()
                             }
-                            if (collidedObject == crown) {
+                            if (collidedObject === crown) {
                                 crown.captureCrown()
                             } else {
                                 Activity.finishLevel(false)

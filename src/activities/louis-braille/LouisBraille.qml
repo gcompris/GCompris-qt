@@ -170,7 +170,7 @@ ActivityBase {
             anchors.topMargin: 5 * ApplicationInfo.ratio
 
             GCText {
-                id:info
+                id: info
                 color: "black"
                 anchors.centerIn: parent
                 horizontalAlignment:  Text.AlignHCenter

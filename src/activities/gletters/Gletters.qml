@@ -232,7 +232,6 @@ ActivityBase {
         
         Score {
             id: score
-
             anchors.top: undefined
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
@@ -242,13 +241,10 @@ ActivityBase {
         
         VirtualKeyboard {
             id: keyboard
-            
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-
             onKeypress: Activity.processKeyPress(text)
-            
             onError: console.log("VirtualKeyboard error: " + msg);
         }
         

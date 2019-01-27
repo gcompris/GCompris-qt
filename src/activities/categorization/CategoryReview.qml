@@ -55,7 +55,7 @@ Item {
         sourceSize.width:parent.width
 
         Zone {
-            id:leftZone
+            id: leftZone
             x: 0.012 * middleScreen.width
             z: 2
             y: 0.05 * parent.height

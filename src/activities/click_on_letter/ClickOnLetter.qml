@@ -275,7 +275,6 @@ ActivityBase {
         Image {
             id: engine
             source: Activity.url + "engine.svg"
-
             anchors.bottom: railway.bottom
             anchors.left: railway.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio
@@ -287,7 +286,6 @@ ActivityBase {
         Image {
             id: smoke
             source: Activity.url + "smoke.svg"
-
             anchors.bottom: engine.top
             anchors.left: railway.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio
