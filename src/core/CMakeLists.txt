@@ -285,6 +285,12 @@ if(WIN32)
   set(CPACK_NSIS_DISPLAY_NAME "GCompris Educational Software")
   set(CPACK_NSIS_MUI_FINISHPAGE_RUN "${GCOMPRIS_EXECUTABLE_NAME}")
   set(CPACK_PACKAGE_VENDOR "GCompris team")
+
+  # Create shortcuts in menu to be able to launch in software or opengl mode
+  list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris (Safe Mode).lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--software-renderer'")
+  list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris.lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--opengl-renderer'")
+  string (REPLACE ";" "\n" CPACK_NSIS_CREATE_ICONS_EXTRA "${CPACK_NSIS_CREATE_ICONS_EXTRA}")
+
 else(WIN32)
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
 endif()
