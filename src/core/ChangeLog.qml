@@ -37,6 +37,10 @@ QtObject {
      *
      */
     property var changelog: [
+
+            { "versionCode": 9600, "content": [qsTr("Translation updated for multiple languages (Breton, Brazilian Portuguese, Finnish...)."),
+                qsTr("Add Russian dataset for Click on letter activity."),
+qsTr("Lang activity now available in Dutch.")] },
             { "versionCode": 9500, "content": [qsTr("Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in geo-country activity."),
                 qsTr("Fix in braille activities where the cells start at 1, not 0."),
                 qsTr("Translation added for Basque, Hungarian and Malayalam."),
