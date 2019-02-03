@@ -60,11 +60,19 @@ Flipable {
     property color pointColor: "black"
 
     // Define the mode/representation of domino
-    // "dot" is for representation in the form of dots
-    // "number" is for representation in the form of integer numbers
-    // "roman" is for representation in the form of roman numbers
-    // "image" is for representation in the form of a count of butterflies
     property string mode: "dot"
+
+    // menu modes for setting different types for domino
+    readonly property var menuModes : [
+        //: "Dots" is for representation of the points in a domino in the form of dots
+        { "text": qsTr("Dots"), "value": "dot" },
+        //: "Arabic Numbers" is for representation of the points in a domino in the form of integer numbers
+        { "text": qsTr("Arabic Numbers"), "value": "number" },
+        //: "Roman Numbers" is for representation of the points in a domino  in the form of roman numbers
+        { "text": qsTr("Roman Numbers"), "value": "roman" },
+        //: "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
+        { "text": qsTr("Images"), "value": "image" }
+    ]
 
     // Source of the images should be in the same format as below with the number associated and svg format
     property string source: "qrc:/gcompris/src/activities/memory-enumerate/resource/math_"

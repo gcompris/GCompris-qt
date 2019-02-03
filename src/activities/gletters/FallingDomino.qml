@@ -38,6 +38,7 @@ Item {
     property string text
     property var dominoValues
     property bool wonState: false
+    property string mode: "dot"
 
     signal won
 
@@ -94,6 +95,7 @@ Item {
         id: domino
         width: 120 * ApplicationInfo.ratio
         height: width / 2
+        mode: word.mode
         visible: dominoValues.length != 0
         value1: dominoValues[0]
         value2: dominoValues[1]

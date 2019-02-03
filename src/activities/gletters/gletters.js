@@ -237,7 +237,7 @@ function processKeyPress(text) {
 
 function setSpeed()
 {
-    if (mode == "letter") {
+    if (mode === "letter") {
         speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (currentLevel + 1)));
         fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase + (dropRateMult * (currentLevel + 1))));
     } else { // wordsgame
@@ -303,6 +303,7 @@ function createWord()
             word = wordComponent.createObject( items.background,
                 {
                     "text": text,
+                    "mode": items.ourActivity.getMode(),
                     "dominoValues": items.ourActivity.getDominoValues(text),
                     // assume x=width-25px for now, Word auto-adjusts onCompleted():
                     "x": Math.random() * (items.main.width - 25),

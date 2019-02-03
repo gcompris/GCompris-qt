@@ -27,10 +27,14 @@ import "../gletters"
 
 Gletters {
     id: activity
-
-    mode: "letter"
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers2/resource/"
-    configurationButtonVisible: false
+    configurationButtonVisible: true
+    activityName: "smallnumbers2"
+    property string dominoMode: "dot"
+
+    function getMode() {
+        return activity.dominoMode;
+    }
 
     function getDominoValues(key) {
         var val1 = Math.floor(Math.random() * key)
