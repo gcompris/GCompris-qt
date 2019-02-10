@@ -32,6 +32,10 @@ elseif(ACTIVATION_MODE STREQUAL "internal")
   set(APK_SUFFIX "-internal${APK_SUFFIX}")
 endif(ACTIVATION_MODE STREQUAL "inapp")
 
+# _HOST have been removed from ECM in https://cgit.kde.org/extra-cmake-modules.git/commit/?id=731ba7036effcc430f98031e7f2a9826f6234cba
+set(_HOST "${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}")
+string(TOLOWER "${_HOST}" _HOST)
+
 if(WITH_DEMO_ONLY)
   set(APK_SUFFIX "-demo${APK_SUFFIX}")
 endif(WITH_DEMO_ONLY)

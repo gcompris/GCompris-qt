@@ -10,6 +10,13 @@ if(SAILFISHOS)
   add_definitions(-DSAILFISHOS)
 endif()
 
+if(ANDROID)
+  # needed since ECM 5.45 (https://bugs.kde.org/show_bug.cgi?id=394042)
+  include_directories(SYSTEM
+    "${CMAKE_SYSROOT}/usr/include"
+    )
+endif()
+
 set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfo.h
