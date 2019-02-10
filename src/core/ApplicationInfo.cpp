@@ -72,6 +72,8 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     m_platform = Linux;
 #endif
 
+    m_isBox2DInstalled = false;
+
     QRect rect = qApp->primaryScreen()->geometry();
     m_ratio = qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.);
     // calculate a factor for font-scaling, cf.
@@ -214,6 +216,31 @@ void ApplicationInfo::notifyFullscreenChanged()
         m_window->showNormal();
 }
 
+// Would be better to create a component importing Box2D 2.0 using QQmlContext and test if it exists but it does not work.
+void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine) {
+    /*
+      QQmlContext *context = new QQmlContext(engine.rootContext());
+      context->setContextObject(&myDataSet);
+
+      QQmlComponent component(&engine);
+      component.setData("import QtQuick 2.0\nimport Box2D 2.0\nItem { }", QUrl());
+      component.create(context);
+      box2dInstalled = (component != nullptr);
+    */
+    bool box2dInstalled = false;
+    for(const QString &folder: engine.importPathList()) {
+        if(QDir(folder).entryList().contains(QStringLiteral("Box2D.2.0"))) {
+            if(QDir(folder+"/Box2D.2.0").entryList().contains("qmldir")) {
+                qDebug() << "Found box2d in " << folder;
+                box2dInstalled = true;
+                break;
+            }
+        }
+    }
+    m_isBox2DInstalled = box2dInstalled;
+    emit isBox2DInstalledChanged();
+}
+
 // return the shortest possible locale name for the given locale, describing
 // a unique voices dataset
 QString ApplicationInfo::getVoicesLocale(const QString &locale)
@@ -255,5 +282,6 @@ QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,
     ApplicationInfo* appInfo = getInstance();
     connect(ApplicationSettings::getInstance(), &ApplicationSettings::fullscreenChanged, appInfo,
             &ApplicationInfo::notifyFullscreenChanged);
+
     return appInfo;
 }

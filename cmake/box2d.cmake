@@ -1,11 +1,7 @@
 
 set(QML_BOX2D_MODULE "auto" CACHE STRING "Policy for qml-box2d module [auto|submodule|system|disabled]")
 
-if (${QML_BOX2D_MODULE} STREQUAL "disabled")
-  # disable all activities depending on qml-box2d
-  set(_disabled_activities "balancebox,land_safe,submarine")
-  message(STATUS "Disabling qml-box2d module and depending activities: ${_disabled_activities}")
-else()
+if (NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
   include(qt_helper)
 
   getQtQmlPath(_qt_qml_system_path)

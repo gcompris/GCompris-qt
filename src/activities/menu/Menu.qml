@@ -76,6 +76,18 @@ ActivityBase {
         pageView.push(toPush);
     }
 
+    Connections {
+        // At the launch of the application, box2d check is performed after we 
+        // first initialize the menu. This connection is to refresh
+        // automatically the menu at start.
+        target: ApplicationInfo
+        onIsBox2DInstalledChanged: {
+            ActivityInfoTree.filterByTag(activity.currentTag)
+            ActivityInfoTree.filterLockedActivities()
+            ActivityInfoTree.filterEnabledActivities()
+        }
+    }
+
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
     property var sections: [
