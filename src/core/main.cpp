@@ -264,6 +264,8 @@ int main(int argc, char *argv[])
                          .arg(QCoreApplication::applicationDirPath()));
 #endif
 
+    ApplicationInfo::getInstance()->setBox2DInstalled(engine);
+
     if(parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
         menuTree->exportAsSQL();
@@ -277,7 +279,6 @@ int main(int argc, char *argv[])
         qWarning("Error: Your root item has to be a Window.");
         return -1;
     }
-
     ApplicationInfo::setWindow(window);
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));

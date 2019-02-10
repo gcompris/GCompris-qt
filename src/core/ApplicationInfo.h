@@ -47,12 +47,12 @@ class ApplicationInfo : public QObject
     /**
      * Width of the application viewport.
      */
-	Q_PROPERTY(int applicationWidth READ applicationWidth WRITE setApplicationWidth NOTIFY applicationWidthChanged)
+    Q_PROPERTY(int applicationWidth READ applicationWidth WRITE setApplicationWidth NOTIFY applicationWidthChanged)
 
     /**
      * Platform the application is currently running on.
      */
-	Q_PROPERTY(Platform platform READ platform CONSTANT)
+    Q_PROPERTY(Platform platform READ platform CONSTANT)
 
     /**
      * Whether the application is currently running on a mobile platform.
@@ -60,7 +60,7 @@ class ApplicationInfo : public QObject
      * Mobile platforms are Android, Ios (not supported yet),
      * Blackberry (not supported)
      */
-	Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
+    Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
 
     /**
      * Whether the current platform supports fragment shaders.
@@ -72,21 +72,21 @@ class ApplicationInfo : public QObject
      *
      * For now always set to false, to prevent crashes.
      */
-	Q_PROPERTY(bool hasShader READ hasShader CONSTANT)
+    Q_PROPERTY(bool hasShader READ hasShader CONSTANT)
 
     /**
      * Whether currently in portrait mode, on mobile platforms.
      *
      * Based on viewport geometry.
      */
-	Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
+    Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
 
     /**
      * Ratio factor used for scaling of sizes on high-dpi devices.
      *
      * Must be used by activities as a scaling factor to all pixel values.
      */
-	Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
+    Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
 
     /**
      * Ratio factor used for font scaling.
@@ -101,27 +101,27 @@ class ApplicationInfo : public QObject
      *
      * GCText applies this factor automatically on its new fontSize property.
      */
-	Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
+    Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
 
-	/**
-	 * Short (2-letter) locale string of the currently active language.
-	 */
-	Q_PROPERTY(QString localeShort READ localeShort CONSTANT)
+    /**
+     * Short (2-letter) locale string of the currently active language.
+     */
+    Q_PROPERTY(QString localeShort READ localeShort CONSTANT)
 
     /**
      * GCompris version string (compile time).
      */
-	Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
+    Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
 
     /**
      * GCompris version code (compile time).
      */
-	Q_PROPERTY(int GCVersionCode READ GCVersionCode CONSTANT)
+    Q_PROPERTY(int GCVersionCode READ GCVersionCode CONSTANT)
 
     /**
      * Qt version string (runtime).
      */
-	Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
+    Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
 
     /**
      * Audio codec used for voices resources.
@@ -145,6 +145,13 @@ class ApplicationInfo : public QObject
      * Use to deactivate some effects if OpenGL not used.
      */
     Q_PROPERTY(bool useOpenGL READ useOpenGL WRITE setUseOpenGL NOTIFY useOpenGLChanged)
+
+    /**
+     * Whether Box2D is installed or not.
+     *
+     * Use to disable activities that use Box2D when it's not installed.
+     */
+    Q_PROPERTY(bool isBox2DInstalled READ isBox2DInstalled NOTIFY isBox2DInstalledChanged)
         
 public:
 
@@ -276,6 +283,9 @@ public:
     bool useOpenGL() const { return m_useOpenGL; }
     void setUseOpenGL(bool useOpenGL) { m_useOpenGL = useOpenGL; }
 
+    bool isBox2DInstalled() const { return m_isBox2DInstalled; }
+    void setBox2DInstalled(const QQmlEngine &engine);
+
     /**
      * Returns the native screen orientation.
      *
@@ -333,10 +343,10 @@ public:
     /// @endcond
 
 public slots:
-	/**
-	 * Returns the resource root-path used for GCompris resources.
-	 */
-	QString getResourceDataPath();
+    /**
+     * Returns the resource root-path used for GCompris resources.
+     */
+    QString getResourceDataPath();
 
     /**
      * Returns an absolute path to a language specific sound/voices file. If
@@ -408,6 +418,7 @@ signals:
     void applicationSettingsChanged();
     void fullscreenChanged();
     void useOpenGLChanged();
+    void isBox2DInstalledChanged();
 
 private:
     static ApplicationInfo *m_instance;
@@ -416,6 +427,7 @@ private:
     bool m_isPortraitMode;
     bool m_isMobile;
     bool m_useOpenGL;
+    bool m_isBox2DInstalled;
     qreal m_ratio;
     qreal m_fontRatio;
 

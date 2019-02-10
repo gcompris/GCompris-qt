@@ -55,5 +55,6 @@ ActivityInfo {
  - : Decrease diving plane angle")
   credit: ""
   section: "experimental"
+  enabled: ApplicationInfo.isBox2DInstalled
   createdInVersion: 9000
 }
