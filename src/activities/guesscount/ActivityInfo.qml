@@ -27,7 +27,6 @@ ActivityInfo {
     icon: "guesscount/guesscount.svg"
     author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
     demo: true
-    //: activity title
     //: Activity title
     title: qsTr("Guesscount")
     //: Help title
@@ -38,7 +37,7 @@ ActivityInfo {
     //: Help prerequisite
     prerequisite: qsTr("knowledge of arithmetic operations")
     //: Help manual
-    manual: ""
+    manual: qsTr("Drag the appropriate numbers and the operators to the boxes to obtain the number to guess in the instruction.")
     credit: ""
     section: "math"
     createdInVersion: 8000
