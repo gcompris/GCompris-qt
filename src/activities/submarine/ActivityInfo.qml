@@ -44,11 +44,11 @@ ActivityInfo {
  Switch filling of Ballast tanks:
  W / Up arrow: Central ballast tank
  R: Left ballast tank
- T: Right ballast tanks
+ T: Right ballast tank
  Switch flush ballast tanks:
  S / Down arrow: Central ballast tank
  F: Left ballast tank
- G: Right ballast tanks
+ G: Right ballast tank
 
  Diving planes:
  + : Increase diving plane angle
