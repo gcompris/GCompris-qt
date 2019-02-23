@@ -239,6 +239,23 @@ if(BUILD_STANDALONE)
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
     TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
   endif()
+  
+  #Add OpenSSL support on Windows MINGW build
+  if(MINGW)
+    find_package(OpenSSL REQUIRED)
+    if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+      #64bit
+      install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1-x64.dll" DESTINATION bin)
+      install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1-x64.dll" DESTINATION bin)
+    elseif(CMAKE_SIZEOF_VOID_P EQUAL 4)
+      #32bit
+      install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1.dll" DESTINATION bin)
+      install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1.dll" DESTINATION bin)
+    endif()
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL)
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::Crypto)
+  endif()
+  
 endif(BUILD_STANDALONE)
 
 # Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?) -> Johnny : we need this even if it takes time because some required dependencies are pulled here
