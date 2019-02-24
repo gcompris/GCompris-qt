@@ -241,19 +241,18 @@ if(BUILD_STANDALONE)
   endif()
   
   #Add OpenSSL support on Windows MINGW build
-  if(MINGW)
+  if(WIN32)
     find_package(OpenSSL REQUIRED)
     if(CMAKE_SIZEOF_VOID_P EQUAL 8)
       #64bit
-      install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1-x64.dll" DESTINATION bin)
-      install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1-x64.dll" DESTINATION bin)
-    elseif(CMAKE_SIZEOF_VOID_P EQUAL 4)
-      #32bit
-      install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1.dll" DESTINATION bin)
-      install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1.dll" DESTINATION bin)
+      set(OPENSSL_DLL_SUFFIX "-x64")
     endif()
-    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL)
-    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::Crypto)
+    if(MINGW)
+      install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
+      install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
+    endif()
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
+    message(STATUS "OPENSSL - crypto: ${OPENSSL_CRYPTO_LIBRARY}, ssl: ${OPENSSL_SSL_LIBRARY} ${OPENSSL_LIBRARIES}")
   endif()
   
 endif(BUILD_STANDALONE)
