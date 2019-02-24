@@ -82,6 +82,8 @@ static const char *WORDSET = "wordset";
 
 static const char *PROGRESS_KEY = "progress";
 
+static const char *DEFAULT_DOWNLOAD_SERVER = "https://cdn.kde.org/gcompris";
+
 ApplicationSettings *ApplicationSettings::m_instance = nullptr;
 
 ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *parent): QObject(parent),
@@ -151,7 +153,10 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
 
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
-    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, QLatin1String("http://gcompris.net")).toString();
+    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, QLatin1String(DEFAULT_DOWNLOAD_SERVER)).toString();
+    if(m_downloadServerUrl == "http://gcompris.net") {
+        setDownloadServerUrl(DEFAULT_DOWNLOAD_SERVER);
+    }
     m_cachePath = m_config.value(CACHE_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::CacheLocation)).toString();
     m_userDataPath = m_config.value(USERDATA_PATH_KEY, QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) + QLatin1String("/GCompris")).toString();
     m_renderer = m_config.value(RENDERER_KEY, GRAPHICAL_RENDERER).toString();
