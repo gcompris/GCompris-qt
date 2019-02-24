@@ -70,11 +70,6 @@ endif()
 # Set executable filename
 if(ANDROID)
   set(GCOMPRIS_EXECUTABLE_NAME GCompris)
-  if("${ANDROID_ARCHITECTURE}" STREQUAL "x86")
-    # We always want x86 to be a release above to arm one because the play
-    # store want x86 to be pushed after arm.
-    MATH(EXPR GCOMPRIS_MINOR_VERSION "${GCOMPRIS_MINOR_VERSION}+1")
-  endif("${ANDROID_ARCHITECTURE}" STREQUAL "x86")
 elseif(SAILFISHOS)
   set(GCOMPRIS_EXECUTABLE_NAME harbour-gcompris-qt)
 elseif(WIN32)
