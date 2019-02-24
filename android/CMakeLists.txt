@@ -48,6 +48,10 @@ if(WITH_KIOSK_MODE)
   set(APK_SUFFIX "-kiosk${APK_SUFFIX}")
 endif(WITH_KIOSK_MODE)
 
+# _HOST have been removed from ECM in https://cgit.kde.org/extra-cmake-modules.git/commit/?id=731ba7036effcc430f98031e7f2a9826f6234cba
+set(_HOST "${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}")
+string(TOLOWER "${_HOST}" _HOST)
+
 # set android package source for androiddeployqt json file
 set(PACKAGE_SOURCE_ANDROID ${CMAKE_BINARY_DIR}/tmpAndroid)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
