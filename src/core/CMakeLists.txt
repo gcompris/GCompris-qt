@@ -217,7 +217,7 @@ if(BUILD_STANDALONE)
   #getQtQmlPath(_qt_qml_path)
   #install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
 
-  # Fix for Linux 'make package' that fails to link with libicu
+  # Fix for Linux 'make package' that fails to link with libicu; also package OpenSSL libs from system
   if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID)
     add_library( libicudata SHARED IMPORTED )
     FILE(GLOB LIBICUDATA_SO "${Qt5_DIR}/../../libicudata.so.[0-9][0-9]")
@@ -238,6 +238,15 @@ if(BUILD_STANDALONE)
     endif()
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
     TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
+    # package installed OpenSSL libraries
+    find_package(OpenSSL REQUIRED)
+    install(FILES "${OPENSSL_SSL_LIBRARY}" DESTINATION bin)
+    install(FILES "${OPENSSL_CRYPTO_LIBRARY}" DESTINATION bin)
+    install(FILES "${OPENSSL_SSL_LIBRARY}.10" DESTINATION bin)
+    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.10" DESTINATION bin)
+    install(FILES "${OPENSSL_SSL_LIBRARY}.1.0.2k" DESTINATION bin)
+    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.1.0.2k" DESTINATION bin)
+    TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
   
   #Add OpenSSL support on Windows builds
