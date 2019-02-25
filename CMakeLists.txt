@@ -56,11 +56,17 @@ if(BUILD_TESTING)
   include(CodeQualityUtils)
 endif()
 
+set(QT_REQUIRED_VERSION 5.6.0)
+
 if(CMAKE_SYSTEM_NAME STREQUAL Android)
   find_package(ECM)
   set(ANDROID 1)
   # TODO: possibly should be setup by toolchain one day
   set(QT_QMAKE_EXECUTABLE "${_qt5Core_install_prefix}/bin/qmake")
+  if(ECM_VERSION VERSION_GREATER "5.55.0")
+    set(QT_REQUIRED_VERSION 5.12.0)
+  endif()
+
   # workaround until this fix is in released ECM
   if(ECM_VERSION VERSION_LESS "5.15.0")
     add_definitions(-DANDROID)
@@ -91,8 +97,6 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 
-set(QT_REQUIRED_VERSION 5.6.0)
-
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
     Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)
 
@@ -103,6 +107,10 @@ endif(ANDROID)
 if(SAILFISHOS)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Widgets)
 endif(SAILFISHOS)
+
+if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
+  message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
+endif()
 
 find_package (KF5 QUIET COMPONENTS
     DocTools

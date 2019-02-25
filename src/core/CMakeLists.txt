@@ -240,24 +240,24 @@ if(BUILD_STANDALONE)
     TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
   endif()
   
-  #Add OpenSSL support on Windows MINGW build
+  #Add OpenSSL support on Windows builds
   if(WIN32)
     find_package(OpenSSL REQUIRED)
-    if(CMAKE_SIZEOF_VOID_P EQUAL 8)
-      #64bit
-      set(OPENSSL_DLL_SUFFIX "-x64")
-    endif()
     if(MINGW)
+      if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+        #64bit
+        set(OPENSSL_DLL_SUFFIX "-x64")
+      endif()
       install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
       install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
-    else(MINGW)
+    else(MINGW) # appveyor
       install(FILES "${OPENSSL_INCLUDE_DIR}/../libeay32.dll" DESTINATION bin)
       install(FILES "${OPENSSL_INCLUDE_DIR}/../libssl32.dll" DESTINATION bin)
       install(FILES "${OPENSSL_INCLUDE_DIR}/../ssleay32.dll" DESTINATION bin)
     endif()
     target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
-  
+
 endif(BUILD_STANDALONE)
 
 # Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?) -> Johnny : we need this even if it takes time because some required dependencies are pulled here
