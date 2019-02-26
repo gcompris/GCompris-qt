@@ -58,6 +58,7 @@ f_cmake()
     fi
 
     cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
+	  -DCMAKE_ANDROID_API=16 \
 	  -DCMAKE_BUILD_TYPE=release \
 	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
