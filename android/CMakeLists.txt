@@ -48,9 +48,11 @@ if(WITH_KIOSK_MODE)
   set(APK_SUFFIX "-kiosk${APK_SUFFIX}")
 endif(WITH_KIOSK_MODE)
 
-# _HOST have been removed from ECM in https://cgit.kde.org/extra-cmake-modules.git/commit/?id=731ba7036effcc430f98031e7f2a9826f6234cba
-set(_HOST "${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}")
-string(TOLOWER "${_HOST}" _HOST)
+# specific clang addition
+if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+  set(STDCPP_PATH ",\"stdcpp-path\": \"${ANDROID_NDK}/sources/cxx-stl/llvm-libc++/libs/${ANDROID_ABI}/libc++_shared.so\"")
+  set(REMOVE_mandroid_FLAG_FOR_CLANG "sed -i -e 's/-mandroid//' Configure")
+endif()
 
 set(ANDROID_TOOLCHAIN arm-linux-androideabi)
 # set android package source for androiddeployqt json file
@@ -160,9 +162,7 @@ ExternalProject_Add(
 add_custom_command( 
   OUTPUT package_openssl
   COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto.so"
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto.so.1.0.0"
   COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl.so"
-  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl.so.1.0.0"
   )
 
 #

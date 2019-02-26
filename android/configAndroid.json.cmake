@@ -12,4 +12,5 @@
  "android-package-source-directory": "@PACKAGE_SOURCE_ANDROID@/",
  "android-package": "net.gcompris",
  "android-extra-plugins": "@CMAKE_BINARY_DIR@/lib/qml"
+ @STDCPP_PATH@
 }
