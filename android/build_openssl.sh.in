@@ -11,6 +11,6 @@ export ANDROID_DEV=@ANDROID_NDK@/platforms/android-@CMAKE_ANDROID_API@/arch-arm/
 export SYSROOT=@ANDROID_NDK@/platforms/android-@CMAKE_ANDROID_API@/arch-arm/
 cd ${source_dir}
 @REMOVE_mandroid_FLAG_FOR_CLANG@
-./Configure --prefix=. --openssldir=./ssl android-armv7
+./Configure --prefix=. --openssldir=./ssl android-armv7 no-asm
 make && make libssl.so.1.0.0 libcrypto.so.1.0.0
 cd -
