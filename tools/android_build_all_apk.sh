@@ -20,7 +20,7 @@
 # Uncomment if this is not already done
 # make getSvnTranslations
 
-Qt5_BaseDIR=~/Qt5.9.3/5.9.3
+Qt5_BaseDIR=~/Qt5.12.1/5.12.1
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 # The current version
@@ -60,6 +60,8 @@ f_cmake()
     cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
 	  -DCMAKE_ANDROID_API=16 \
 	  -DCMAKE_BUILD_TYPE=release \
+	  -DCMAKE_ANDROID_STL_TYPE=c++_shared \
+	  -DANDROID_TOOLCHAIN_PATH=/opt/android-16-arm/bin/ \
 	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
 	  -DQt5Qml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Qml \
@@ -91,20 +93,20 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-f_cmake armeabi inapp OFF ON OFF
+f_cmake arm inapp OFF ON OFF
 make
 make BuildTranslations
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi internal OFF ON OFF
+f_cmake arm internal OFF ON OFF
 make
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi no OFF ON OFF
+f_cmake arm no OFF ON OFF
 make
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi no ON ON OFF
+f_cmake arm no ON ON OFF
 make clean
 make
 make BuildTranslations

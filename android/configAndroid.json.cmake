@@ -5,7 +5,7 @@
  "ndk": "@ANDROID_NDK@",
  "toolchain-prefix": "@ANDROID_TOOLCHAIN@",
  "tool-prefix": "@ANDROID_TOOLCHAIN@",
- "toolchain-version": "@ANDROID_GCC_VERSION@",
+ "toolchain-version": "4.9",
  "ndk-host": "@_HOST@",
  "target-architecture": "@ANDROID_ABI@",
  "application-binary": "@CMAKE_LIBRARY_OUTPUT_DIRECTORY@/libGCompris.so",

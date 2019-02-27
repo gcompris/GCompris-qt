@@ -3,14 +3,17 @@
 # The only argument to the script is source directory.
 source_dir=$1
 
-export PATH=@ANDROID_NDK@/toolchains/@ANDROID_TOOLCHAIN@-@ANDROID_GCC_VERSION@/prebuilt/@_HOST@/bin/:$PATH
-export CROSS_COMPILE="@ANDROID_TOOLCHAIN@-"
+export PATH=@ANDROID_NDK@/toolchains/@ANDROID_TOOLCHAIN@-4.9/prebuilt/@_HOST@/bin/:$PATH
+echo $PATH
+export CROSS_COMPILE="@ANDROID_TOOLCHAIN_PATH@@ANDROID_TOOLCHAIN@-"
 export NDK_SYSROOT=@ANDROID_NDK@
 export ANDROID_NDK_ROOT=@ANDROID_NDK@
 export ANDROID_DEV=@ANDROID_NDK@/platforms/android-@CMAKE_ANDROID_API@/arch-arm/usr
 export SYSROOT=@ANDROID_NDK@/platforms/android-@CMAKE_ANDROID_API@/arch-arm/
 cd ${source_dir}
 @REMOVE_mandroid_FLAG_FOR_CLANG@
-./Configure --prefix=. --openssldir=./ssl android-armv7 no-asm
+# ./Configure --prefix=. --openssldir=./ssl android-armv7 no-asm shared
+# make ANDROID_DEV=/opt/android-16-arm/sysroot/usr/ CALC_VERSIONS="SHLIB_COMPAT=; SHLIB_SOVER=" build_libs
+./Configure --prefix=. --openssldir=./ssl android-armv7 no-asm shared
 make && make libssl.so.1.0.0 libcrypto.so.1.0.0
 cd -

@@ -145,7 +145,7 @@ add_custom_target (apk_install
 
 # compile openssl needed to download from https
 include(ExternalProject)
-set(OPENSSL_DIR "${CMAKE_SOURCE_DIR}/external/openssl/")
+set(OPENSSL_DIR "${CMAKE_BINARY_DIR}/external/openssl/")
 configure_file("build_openssl.sh.in" "build_openssl.sh" @ONLY)
 
 ExternalProject_Add(
