@@ -37,7 +37,7 @@ if len(sys.argv) != 4:
 """Download the voices and words assets depending on the wanted audio format
 """
 
-DOWNLOAD_PATH = "http://gcompris.net/data2/"
+DOWNLOAD_PATH = "https://cdn.kde.org/gcompris/data2/"
 AUDIO_FORMAT = sys.argv[2]
 OUTPUT_FOLDER = sys.argv[3]+"/data2/"
 
