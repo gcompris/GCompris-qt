@@ -62,6 +62,7 @@ f_cmake()
 	  -DCMAKE_BUILD_TYPE=release \
 	  -DCMAKE_ANDROID_STL_TYPE=c++_shared \
 	  -DANDROID_TOOLCHAIN_PATH=/opt/android-16-arm/bin/ \
+	  -DCMAKE_ANDROID_NDK_TOOLCHAIN_VERSION=clang \
 	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
 	  -DQt5Qml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Qml \

@@ -108,9 +108,10 @@ if(SAILFISHOS)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Widgets)
 endif(SAILFISHOS)
 
-if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
-  message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
-endif()
+## For now we workaround CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION to clang with a command variable, so not needed
+# if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
+#   message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
+# endif()
 
 find_package (KF5 QUIET COMPONENTS
     DocTools
