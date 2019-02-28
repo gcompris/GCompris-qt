@@ -239,7 +239,6 @@ if(BUILD_STANDALONE)
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
     TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
     # package installed OpenSSL libraries
-    find_package(OpenSSL REQUIRED)
     install(FILES "${OPENSSL_SSL_LIBRARY}" DESTINATION bin)
     install(FILES "${OPENSSL_CRYPTO_LIBRARY}" DESTINATION bin)
     install(FILES "${OPENSSL_SSL_LIBRARY}.10" DESTINATION bin)
@@ -251,7 +250,6 @@ if(BUILD_STANDALONE)
   
   #Add OpenSSL support on Windows builds
   if(WIN32)
-    find_package(OpenSSL REQUIRED)
     if(MINGW)
       if(CMAKE_SIZEOF_VOID_P EQUAL 8)
         #64bit
