@@ -113,7 +113,7 @@ endif(SAILFISHOS)
 #   message(FATAL_ERROR "ECM ${ECM_VERSION} not compatible with Qt ${Qt5Core_VERSION} version for android.")
 # endif()
 
-if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID) OR WIN32)
+if((UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL REQUIRED)
 endif()
 
