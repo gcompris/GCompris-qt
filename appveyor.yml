@@ -2,11 +2,7 @@ version: 1.0.{build}
 branches:
   only:
   - KDE/0.95
-<<<<<<< HEAD
   - master
-=======
-  - openssl
->>>>>>> 662885cf... appveyor, bump to vs2017 and Qt5.12.1
 skip_tags: true
 image: Visual Studio 2017
 configuration: Release
