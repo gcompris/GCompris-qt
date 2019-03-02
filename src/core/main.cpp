@@ -113,7 +113,9 @@ int main(int argc, char *argv[])
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
-
+    
+    //add a variable to disable default fullscreen on Mac, see below..
+    bool isOnMac = false;
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
     // http://doc.qt.io/qt-5/osx-deployment.html
@@ -121,6 +123,7 @@ int main(int argc, char *argv[])
     dir.cdUp();
     dir.cd("Plugins");
     QGuiApplication::setLibraryPaths(QStringList(dir.absolutePath()));
+    isOnMac = true;
 #endif
 
     // Local scope for config
@@ -190,6 +193,10 @@ int main(int argc, char *argv[])
     {
         if(config.contains("General/fullscreen")) {
             isFullscreen = config.value("General/fullscreen").toBool();
+        }
+        //Disable default fullscreen launch on Mac as it's a bit broken, window is behind desktop bars
+        if(isOnMac) {
+            isFullscreen = false;
         }
 
         // Set the cursor image
