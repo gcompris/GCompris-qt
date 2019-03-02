@@ -333,7 +333,7 @@ Item {
             id: repeatItem
             parent: rootItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
+            sourceSize.width: Math.min(imageFrame.x, 100 * ApplicationInfo.ratio) - 2 * anchors.margins
 
             z: 12
             anchors {
@@ -348,11 +348,6 @@ Item {
         Score {
             id: score
             parent: rootItem
-            anchors.bottom: undefined
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.top: parent.top
         }
     }
     Loader {
@@ -386,7 +381,7 @@ Item {
         var mode = miniGames[miniGameIndex][1];
         var itemToLoad = miniGames[miniGameIndex][2];
 
-        // Starting a minigame we don't wan't pending voices to play
+        // Starting a minigame we don't want pending voices to play
         Activity.clearVoiceQueue()
 
         // preparing the wordList

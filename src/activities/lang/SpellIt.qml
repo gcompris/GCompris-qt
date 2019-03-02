@@ -239,10 +239,10 @@ Item {
             fillMode: Image.PreserveAspectFit
             anchors {
                 top: imageFrame.bottom
-                topMargin: 10* ApplicationInfo.ratio
-                left: imageFrame.right
-                leftMargin: 10* ApplicationInfo.ratio
-                right: parent.right
+                topMargin: 10
+                right: imageFrame.left
+                rightMargin: parent.width * 0.06
+
             }
             MouseArea {
                 id: okMouseArea
@@ -280,11 +280,6 @@ Item {
 
     Score {
         id: score
-        anchors.bottom: undefined
-        anchors.bottomMargin: 10 * ApplicationInfo.ratio
-        anchors.right: parent.right
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
-        anchors.top: parent.top
     }
 
     VirtualKeyboard {
