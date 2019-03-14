@@ -63,11 +63,8 @@ QString loadTranslation(QSettings &config, QTranslator &translator)
 {
     QString locale;
     // Get locale
-    if(config.contains("General/locale")) {
-        locale = config.value("General/locale").toString();
-    } else {
-        locale = GC_DEFAULT_LOCALE;
-    }
+    locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
+
     if(locale == GC_DEFAULT_LOCALE)
         locale = QString(QLocale::system().name() + ".UTF-8");
 
@@ -115,7 +112,6 @@ int main(int argc, char *argv[])
     app.setApplicationVersion(ApplicationInfo::GCVersion());
     
     //add a variable to disable default fullscreen on Mac, see below..
-    bool isOnMac = false;
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
     // http://doc.qt.io/qt-5/osx-deployment.html
@@ -123,7 +119,6 @@ int main(int argc, char *argv[])
     dir.cdUp();
     dir.cd("Plugins");
     QGuiApplication::setLibraryPaths(QStringList(dir.absolutePath()));
-    isOnMac = true;
 #endif
 
     // Local scope for config
@@ -188,32 +183,27 @@ int main(int argc, char *argv[])
     // async callback from the payment system
     ApplicationSettings::getInstance()->checkPayment();
 
-    // Getting fullscreen mode from config if exist, else true is default value
+    // Disable default fullscreen launch on Mac as it's a bit broken, window is behind desktop bars
+#if defined(Q_OS_MAC)
+    bool isFullscreen = false;
+#else
+    // for other platforms, fullscreen is the default value
     bool isFullscreen = true;
+#endif
     {
-        if(config.contains("General/fullscreen")) {
-            isFullscreen = config.value("General/fullscreen").toBool();
-        }
-        //Disable default fullscreen launch on Mac as it's a bit broken, window is behind desktop bars
-        if(isOnMac) {
-            isFullscreen = false;
-        }
+        isFullscreen = config.value("General/fullscreen", isFullscreen).toBool();
 
         // Set the cursor image
-        bool defaultCursor = false;
-        if(config.contains("General/defaultCursor")) {
-            defaultCursor = config.value("General/defaultCursor").toBool();
-        }
+        bool defaultCursor = config.value("General/defaultCursor", false).toBool();
+
         if(!defaultCursor && !parser.isSet(clDefaultCursor))
             QGuiApplication::setOverrideCursor(
                                                QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
                                                        0, 0));
 
         // Hide the cursor
-        bool noCursor = false;
-        if(config.contains("General/noCursor")) {
-            noCursor = config.value("General/noCursor").toBool();
-        }
+        bool noCursor = config.value("General/noCursor", false).toBool();
+
         if(noCursor || parser.isSet(clNoCursor))
             QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
     }
