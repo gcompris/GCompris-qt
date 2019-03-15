@@ -238,7 +238,11 @@ function modifyMap(props, row, col)
                     targetList.push(parseInt(props.contactValue));
                 props.mapModel.setProperty(row * level.map.length + col,
                                            "contactValue", props.contactValue);
-                props.contactValue = Number(Number(props.contactValue) + 1).toString();
+                // the grid is 10*10 so 99 max goals
+                var contactValue = Number(props.contactValue);
+                if(contactValue < 99) {
+                    props.contactValue = Number(contactValue + 1).toString();
+                }
                 newValue |= CONTACT;
             }
         } else {
