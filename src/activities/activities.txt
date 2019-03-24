@@ -134,7 +134,7 @@ redraw_symmetrical
 renewable_energy
 reversecount
 roman_numerals
-sanjay
+animal_quiz
 scalesboard
 scalesboard_weight
 scalesboard_weight_avoirdupois

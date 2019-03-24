@@ -1,6 +1,6 @@
-/* GCompris - sanjay.js
+/* GCompris - animal_quiz.js
  *
- * Copyright (C) 2018 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2018 sanjayashokshetty sanjayshetty2015@gmail.com
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
@@ -27,7 +27,7 @@ var numberOfLevel = 8
 var items
 var animals=["bunny.svg","cat.svg","dog.svg","monkey.svg","panda-bear.svg","pig.svg","The_Whale-Fish.svg","tux_top_south.svg"]
 var answers=["bunny","cat","dog","monkey","panda-bear","pig","whalefish","penguin"]
-var url = "qrc:/gcompris/src/activities/sanjay/resource/"
+var url = "qrc:/gcompris/src/activities/animal_quiz/resource/"
 var options
 
 function start(items_) {
@@ -56,8 +56,9 @@ function validate(text){
         items.respond.color="green"
         items.respond.visible=true
         items.anim.running=true
+        items.respond.visible=false
+        items.respond.visible=false
         nextLevel()
-//        items.respond.visible=false
     }else{
         items.respond.text="Wrong"
         items.respond.color="red"

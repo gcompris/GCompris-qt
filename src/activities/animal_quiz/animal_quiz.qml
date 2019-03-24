@@ -24,7 +24,7 @@ import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.2
 
 import "../../core"
-import "sanjay.js" as Activity
+import "animal_quiz.js" as Activity
 
 ActivityBase {
     id: activity

@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2018 Your Name <yy@zz.org>
+ * Copyright (C) 2018 Your sanjayashokshetty sanjayshetty2015@gmail.com
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,13 +18,13 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "sanjay/Sanjay.qml"
+  name: "animal_quiz/animal_quiz.qml"
   difficulty: 1
-  icon: "sanjay/sanjay.svg"
+  icon: "animal_quiz/animal_quiz.svg"
   author: "sanjayashokshetty &lt;sanjayshetty2015@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: "Animals"
+  title: "Animal Quiz"
   //: Help title
   description: "Watch and learn about animals"
   //intro: "put here in comment the text for the intro voice"
