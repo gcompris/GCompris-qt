@@ -10,10 +10,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   viewBox="0 0 39.374999 56.250001"
+   viewBox="0 0 42 60"
    height="60"
    width="42"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="girl.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -30,7 +30,7 @@
      showgrid="false"
      units="px"
      inkscape:zoom="1.6819304"
-     inkscape:cx="23.574402"
+     inkscape:cx="-230.30055"
      inkscape:cy="64.777487"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -80,12 +80,35 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
      id="g1248"
-     transform="matrix(0.69449136,0,0,0.69449136,88.361984,-10.740054)">
+     transform="matrix(0.74079078,0,0,0.74079078,94.252783,-11.456058)">
     <path
        style="display:inline;overflow:visible;fill:#6d4d30;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4.48256016px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m -78.18476,62.085172 c 2.138617,0.481263 6.546924,2.458243 6.287382,4.39412 -0.09044,0.674573 -3.768599,-0.532013 -4.451146,0.06213 -0.682613,0.59422 -0.646835,1.178482 0.857829,2.0824 0.726381,0.436386 0.688382,1.774762 -0.214043,1.710641 -0.90236,-0.0642 -3.309572,-1.397321 -4.398312,-2.534473 -1.088803,-1.137075 -3.15073,-3.292985 -2.585631,-3.927083 0.830181,-0.931548 4.503921,-1.78774 4.503921,-1.78774 z"
