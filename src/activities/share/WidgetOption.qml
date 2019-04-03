@@ -50,6 +50,7 @@ Rectangle {
         width: items.cellSize
         sourceSize.width: width
         source: widget.src
+        mipmap: true
     }
     //number of available items
     GCText {

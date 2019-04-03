@@ -44,6 +44,7 @@ Rectangle {
         anchors.leftMargin: 20
         source: "resource/images/" + name + ".svg"
         fillMode: Image.PreserveAspectFit
+        mipmap: true
     }
 
     //displays the number of candies each child has
