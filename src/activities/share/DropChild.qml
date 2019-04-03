@@ -37,12 +37,13 @@ Rectangle {
 
     Image {
         id: childImage
-        sourceSize.width: items.cellSize * 1.5 * 0.7
-        sourceSize.height: items.cellSize * 1.5 - 5
+        width: items.cellSize
+        sourceSize.width: width
         anchors.bottom: area.top
         anchors.left: parent.left
         anchors.leftMargin: 20
         source: "resource/images/" + name + ".svg"
+        fillMode: Image.PreserveAspectFit
     }
 
     //displays the number of candies each child has
@@ -137,6 +138,7 @@ Rectangle {
                     sourceSize.width: items.cellSize * 0.6
                     sourceSize.height: items.cellSize * 1.2
                     source: "resource/images/candy.svg"
+                    fillMode: Image.PreserveAspectFit
 
                     property int lastX
                     property int lastY

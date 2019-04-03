@@ -64,7 +64,7 @@ ActivityBase {
             property int totalCandies
             property int totalChildren: totalBoys + totalGirls
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / 11, background.height / (9 + barHeightAddon))
+            property int cellSize: Math.round(Math.min(background.width / 11, background.height / (9 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
             property int maxNumberOfCandiesPerWidget: 8
         }
@@ -304,16 +304,16 @@ ActivityBase {
                     current: background.currentBoys
                     placedInChild: background.placedInBoys
                 }
+                
+                BasketWidget {
+                    id: basketWidget
+                }
 
                 CandyWidget {
                     id: candyWidget
                     total: background.easyMode ? items.totalCandies : 8 * items.totalChildren + 1
                     current: background.currentCandies
                     element.opacity: background.easyMode ? 1 : 0
-                }
-
-                BasketWidget {
-                    id: basketWidget
                 }
             }
         }
@@ -423,8 +423,8 @@ ActivityBase {
                 bottom: background.vert ? bar.top : leftWidget.bottom
                 margins: 3 * ApplicationInfo.ratio
             }
-            width: basketWidget.width
-            height: background.vert ? (basketWidget.height * 0.8) : basketWidget.height
+            width: girlWidget.width
+            height: background.vert ? (girlWidget.height * 0.8) : girlWidget.height
             numberOfSubLevels: items.nbSubLevel
             currentSubLevel: items.currentSubLevel + 1
         }
