@@ -31,7 +31,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "#ffffb3"
+        color: "#abcdef"
         signal start
         signal stop
 
@@ -146,7 +146,7 @@ ActivityBase {
             //show that the widget can be dropped here
             color: background.contains(boy.x, boy.y, grid) ||
                    background.contains(girl.x, girl.y, grid) ||
-                   background.contains(basket.x, basket.y, grid) ? "pink" : "transparent"
+                   background.contains(basket.x, basket.y, grid) ? "#d5e6f7" : "transparent"
 
             anchors {
                 top: background.vert ? parent.top : leftWidget.bottom
@@ -203,13 +203,9 @@ ActivityBase {
             radius: 10
             border.width: 2
             z: 10
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
-
+            border.color: "#DDD"
+            color: "#373737"
+            
             property alias text: instructionTxt.text
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -242,8 +238,6 @@ ActivityBase {
             z: instruction.z
             fontSize: background.vert ? regularSize : smallSize
             color: "white"
-            style: Text.Outline
-            styleColor: "black"
             horizontalAlignment: Text.AlignHCenter
             width: Math.max(Math.min(parent.width * 0.8, text.length * 8), parent.width * 0.3)
             wrapMode: TextEdit.WordWrap
@@ -256,8 +250,8 @@ ActivityBase {
                        items.cellSize * 1.74 : background.width
             height: background.vert ?
                         background.height : items.cellSize * 1.74
-            color: "#FFFF42"
-            border.color: "#FFD85F"
+            color: "#5a9de0"
+            border.color: "#3f81c4"
             border.width: 4
             z: 4
 

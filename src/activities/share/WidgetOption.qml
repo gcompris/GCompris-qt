@@ -57,7 +57,9 @@ Rectangle {
         anchors.left: element.right
         anchors.bottom: element.bottom
         text: availableItems
+        color: "#f2f2f2"
     }
+    
     property alias dragAreaElement: dragAreaElement
     
     MouseArea {

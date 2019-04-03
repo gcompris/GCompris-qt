@@ -33,7 +33,7 @@ WidgetOption {
         if (background.contains(newCoordinate.x, newCoordinate.y, grid)) {
             if (widget.canDrag) {
                 widget.canDrag = false
-                widget.element.opacity = 0
+                widget.element.opacity = 0.6
                 listModel.append({countS: 0, nameS: "basket"});
             }
         }
@@ -41,6 +41,5 @@ WidgetOption {
 
     element {
         opacity: 0
-        Behavior on opacity { PropertyAnimation { duration: 500 } }
     }
 }

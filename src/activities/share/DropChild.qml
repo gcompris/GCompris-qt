@@ -49,6 +49,7 @@ Rectangle {
     //displays the number of candies each child has
     GCText {
         id: candyCount
+        color: "#373737"
         anchors.bottom: area.top
         anchors.right: parent.right
         anchors.rightMargin: 20
@@ -64,7 +65,7 @@ Rectangle {
         anchors.bottom: parent.bottom
         radius: width * 0.07
 
-        color: "#cfecf0"
+        color: "#f2f2f2"
 
         property var childCoordinate: repeaterDropAreas.mapToItem(background, dropChild.x, dropChild.y)
         property var candyCoord: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
