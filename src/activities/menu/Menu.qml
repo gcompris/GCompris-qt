@@ -132,8 +132,6 @@ ActivityBase {
         height: main.height
         fillMode: Image.PreserveAspectCrop
 
-        opacity: clickMode === "play" ? 1 : 0.8
-
         Timer {
             // triggered once at startup to populate the keyboard
             id: keyboardFiller
@@ -350,7 +348,7 @@ ActivityBase {
 
             anchors {
                 top: {
-                    if(activity.currentTag === "search")
+                    if(searchBar.visible)
                         return searchBar.bottom
                     else
                         return horizontal ? section.bottom : parent.top
@@ -471,10 +469,16 @@ ActivityBase {
 
                 DialogChooseLevel {
                     id: dialogChooseLevel
-                    onClose: home()
-                    onStop: {
+                    onClose: {
+                        home()
+                    }
+                    onSaveData: {
                         currentLevel = dialogChooseLevel.chosenLevel
                         ApplicationSettings.setCurrentLevel(name, currentLevel)
+                    }
+                    onStartActivity: {
+                        clickMode = "play"
+                        selectCurrentItem()
                     }
                 }
 
@@ -545,9 +549,9 @@ ActivityBase {
         
         Rectangle {
             id: searchBar
-            width: horizontal ?  parent.width/2 : parent.width - (section.width+10)
+            width: horizontal ? parent.width/2 : parent.width - (section.width+10)
             height: searchTextField.height
-            visible: activity.currentTag === "search"
+            visible: clickMode === "activityConfig" || activity.currentTag === "search"
             anchors {
                 top: horizontal ? section.bottom : parent.top
                 left: horizontal ? undefined : section.right
@@ -591,9 +595,20 @@ ActivityBase {
                 }
             }
 
+            GCText {
+                id: activitySettingsLabel
+                text: qsTr("Activity Settings")
+                visible: clickMode === "activityConfig"
+                width: parent.width
+                height: paintedHeight
+                anchors.verticalCenter: parent.verticalCenter
+                horizontalAlignment: Text.AlignHCenter
+                color: "black"
+            }
             TextField {
                 id: searchTextField
                 width: parent.width
+                visible: activity.currentTag === "search"
                 textColor: "black"
                 font.pointSize: 16
                 font.bold: true
@@ -698,7 +713,6 @@ ActivityBase {
             }
 
             onActivityConfigClicked: {
-                print("activityConfig")
                 if(clickMode == "play") {
                     clickMode = "activityConfig"
                 }

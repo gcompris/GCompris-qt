@@ -432,28 +432,28 @@ QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activi
 
 void ApplicationSettings::setFavorite(const QString &activity, bool favorite)
 {
-	updateValueInConfig(FAVORITE_GROUP_KEY, activity, favorite);
+    updateValueInConfig(FAVORITE_GROUP_KEY, activity, favorite);
 }
 
 bool ApplicationSettings::isFavorite(const QString &activity)
 {
-	m_config.beginGroup(FAVORITE_GROUP_KEY);
-	bool favorite = m_config.value(activity, false).toBool();
-	m_config.endGroup();
-	return favorite;
+    m_config.beginGroup(FAVORITE_GROUP_KEY);
+    bool favorite = m_config.value(activity, false).toBool();
+    m_config.endGroup();
+    return favorite;
 }
 
 void ApplicationSettings::setCurrentLevel(const QString &activity, const QString &level)
 {
-	updateValueInConfig(LEVELS_GROUP_KEY, activity, level);
+    updateValueInConfig(LEVELS_GROUP_KEY, activity, level);
 }
 
 QString ApplicationSettings::currentLevel(const QString &activity)
 {
-	m_config.beginGroup(LEVELS_GROUP_KEY);
-	QString level = m_config.value(activity, "").toString();
-	m_config.endGroup();
-	return level;
+    m_config.beginGroup(LEVELS_GROUP_KEY);
+    QString level = m_config.value(activity, "").toString();
+    m_config.endGroup();
+    return level;
 }
 
 template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,

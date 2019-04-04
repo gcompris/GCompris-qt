@@ -135,7 +135,7 @@ Rectangle {
 
     function getInitialConfiguration() {
         if(activityName == "") {
-            activityName = ActivityInfoTree.currentActivity.name.split('/')[0];
+            activityName = activityInfo.name.split('/')[0];
         }
         dataToSave = ApplicationSettings.loadActivityConfiguration(activityName)
         loadData()

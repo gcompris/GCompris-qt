@@ -74,6 +74,10 @@ Rectangle {
 
     signal stop
 
+    signal saveData
+
+    signal startActivity
+
     color: "#696da3"
     border.color: "black"
     border.width: 1
@@ -81,7 +85,6 @@ Rectangle {
     onCurrentActivityChanged: initialize()
 
     function initialize() {
-        print(currentActivity.currentLevel)
         activityName = currentActivity.name.split('/')[0]
         chosenLevel = currentActivity.currentLevel
         difficultiesModel = []
@@ -161,19 +164,48 @@ Rectangle {
                 }
             }
 
+            Row {
+                id: datasetOptionsRow
+                height: datasetVisibleButton.height
+                width: parent.width
+                spacing: parent.width / 4
+                anchors.leftMargin: parent.width / 8
+                Button {
+                    id: datasetVisibleButton
+                    text: qsTr("Dataset")
+                    width: parent.width / 3
+                    property bool selected: true
+                    style: GCButtonStyle {
+                        selected: datasetVisibleButton.selected
+                    }
+                    onClicked: { selected = true; }
+                }
+                Button {
+                    id: optionsVisibleButton
+                    text: qsTr("Options")
+                    width: parent.width / 3
+                    style: GCButtonStyle {
+                        selected: !datasetVisibleButton.selected
+                    }
+                    onClicked: { datasetVisibleButton.selected = false; } //showOptions()
+                }
+            }
+
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
                 width: dialogChooseLevel.width - 30
-                height: dialogChooseLevel.height - (30 + title.height * 1.2)
+                height: dialogChooseLevel.height - (30 + title.height * 1.2) - saveAndPlayRow.height - datasetOptionsRow.height - 3 * parent.spacing
                 border.color: "black"
                 border.width: 2
-                anchors.margins: 100
 
                 Flickable {
                     id: flick
                     anchors.margins: 8
-                    anchors.fill: parent
+                    anchors.top: parent.top
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.bottom: parent.bottom
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
                     contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
@@ -205,6 +237,41 @@ Rectangle {
                     onDown: flick.flick(0, -1400)
                     upVisible: flick.visibleArea.yPosition <= 0 ? false : true
                     downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
+                }
+
+            }
+            Row {
+                id: saveAndPlayRow
+                height: cancelButton.height
+                width: parent.width
+                spacing: parent.width / 16
+                Button {
+                    id: cancelButton
+                    text: qsTr("Cancel")
+                    width: parent.width / 4
+                    property bool selected: true
+                    style: GCButtonStyle {}
+                    onClicked: dialogChooseLevel.close()
+                }
+                Button {
+                    id: saveButton
+                    text: qsTr("Save")
+                    width: parent.width / 4
+                    property bool selected: true
+                    style: GCButtonStyle { }
+                    onClicked: {
+                        saveData();
+                    }
+                }
+                Button {
+                    id: saveAndStartButton
+                    text: qsTr("Save and start")
+                    width: parent.width / 3
+                    style: GCButtonStyle { }
+                    onClicked: {
+                        saveData();
+                        startActivity();
+                    }
                 }
             }
 

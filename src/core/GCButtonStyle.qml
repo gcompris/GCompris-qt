@@ -101,14 +101,16 @@ ButtonStyle {
             fontBold: true
         }
     }
-    
+
+    property bool selected: false
+
     background: Rectangle {
         border.width: control.activeFocus ? 4 : 2
         border.color: themes[theme].borderColor
         radius: 10
         gradient: Gradient {
-            GradientStop { position: 0 ; color: control.pressed ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
-            GradientStop { position: 1 ; color: control.pressed ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
+            GradientStop { position: 0 ; color: (control.pressed || selected) ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
+            GradientStop { position: 1 ; color: (control.pressed || selected) ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
         }
     }
     label: Item {
