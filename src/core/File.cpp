@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include "File.h"
@@ -25,7 +25,6 @@
 #include <QDir>
 #include <QString>
 #include <QTextStream>
-#include <QQmlComponent>
 
 File::File(QObject *parent) : QObject(parent)
 {
@@ -36,9 +35,9 @@ QString File::name() const
     return m_name;
 }
 
-QString File::sanitizeUrl(const QString &str)
+QString File::sanitizeUrl(const QString &url)
 {
-    QString target(str);
+    QString target(url);
 
     // make sure we strip off invalid URL schemes:
     if (target.startsWith(QLatin1String("file://")))
@@ -115,9 +114,28 @@ bool File::write(const QString& data, const QString& name)
     return true;
 }
 
-void File::init()
+bool File::append(const QString& data, const QString& name)
 {
-    qmlRegisterType<File>("GCompris", 1, 0, "File");
+    if (!name.isEmpty())
+        setName(name);
+
+    if (m_name.isEmpty()) {
+        emit error("source is empty");
+        return false;
+    }
+
+    QFile file(m_name);
+    if (!file.open(QFile::WriteOnly | QFile::Append)) {
+        emit error("could not open file " + m_name);
+        return false;
+    }
+
+    QTextStream out(&file);
+    out << data;
+
+    file.close();
+
+    return true;
 }
 
 bool File::exists(const QString& path)
@@ -129,4 +147,9 @@ bool File::mkpath(const QString& path)
 {
     QDir dir;
     return dir.mkpath(dir.filePath(sanitizeUrl(path)));
+}
+
+bool File::rmpath(const QString& path)
+{
+    return QFile::remove(sanitizeUrl(path));
 }

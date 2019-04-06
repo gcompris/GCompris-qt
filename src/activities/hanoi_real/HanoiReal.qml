@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -62,7 +62,7 @@ ActivityBase {
         }
 
         onStart: { Activity.start(items, activityMode) }
-        onStop : { Activity.stop() }
+        onStop: { Activity.stop() }
 
         onWidthChanged: Activity.sceneSizeChanged()
         onHeightChanged: Activity.sceneSizeChanged()
@@ -85,7 +85,7 @@ ActivityBase {
             text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
             qsTr("Build the same tower in the empty area as the one you see on the right-hand side")
             width: instruction.width
-            fontSize: largeSize
+            fontSize: mediumSize
             color: "#373737"
             wrapMode: Text.WordWrap
             anchors.centerIn: instruction
@@ -100,25 +100,23 @@ ActivityBase {
 
             Rectangle {
                 id: disc
-                parent: towerModel.itemAt(0)
                 z: 4
                 width: Activity.getDiscWidth(index)
                 height: activityMode == "real"? towerModel.itemAt(0).height * 0.15: towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
-                
+
                 opacity: index < items.numberOfDisc ? 1 : 0
                 onHeightChanged: Activity.sceneSizeChanged()
                 property alias color: disc.color
                 radius: height * 0.5
-                property bool mouseEnabled : true
+                property bool mouseEnabled: true
                 property alias discMouseArea: discMouseArea
                 property Item towerImage
                 property int position // The position index on the tower
 
                 property alias text: textSimplified.text
 
-                anchors.horizontalCenter: if(parent) parent.horizontalCenter
-                
-                
+                anchors.horizontalCenter: parent.horizontalCenter
+
                 Behavior on y {
                     NumberAnimation {
                         id: bouncebehavior

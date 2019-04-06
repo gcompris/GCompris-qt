@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -26,7 +26,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Addition memory game against Tux")
   //: Help title
-  description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone. Tux will do the same. You have to beat it !")
+  description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone. Tux will do the same. You have to beat it!")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
   goal: qsTr("Practice adding up, until all the cards are gone.")

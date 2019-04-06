@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   viewBox="0 0 744 1052"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="trebleC4Half.svg">
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="0.43502872"
+     inkscape:cx="513.36151"
+     inkscape:cy="323.93186"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2011-05-27T21:51:50</dc:date>
+        <dc:description>There didn't seem to be a whole note on openclipart already. Here is a big one!</dc:description>
+        <dc:source>https://openclipart.org/detail/140893/whole-note-by-10binary</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>10binary</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>music</rdf:li>
+            <rdf:li>notation</rdf:li>
+            <rdf:li>note</rdf:li>
+            <rdf:li>whole</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Edited by Timothée Giet for GCompris</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     d="m 617.23751,729.20386 c 0,8.15934 0,16.31868 0,24.47802 -183.1579,0.44944 -366.31952,-0.41701 -549.463789,-2.71012 0,-7.86767 0,-15.73535 0,-23.60302 183.153709,0.85591 366.308879,1.32619 549.463789,1.83512 z"
+     id="path3287-6"
+     inkscape:connector-curvature="0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path3"
+     style="fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:5.92409992;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+     d="m 411.08132,225.77655 c -7.2475,0.33178 -15.544,4.8587 -15.75,12.156 -0.45246,129.79 -2.2252,259.57 -4.4375,389.34 -2.3903,17.098 -7.7188,34.867 -26.875,28.812 -39.21,-14.91 -85.23,-10.4 -121.63,10.35 -37.084,16.471 -67.22,55.289 -65,97 0.69789,35.974 35.134,60.301 68.438,63.719 35.814,8.2749 72.771,-2.12 103.62,-20.688 34.633,-18.379 71.629,-47.097 72.875,-89.906 2.4559,-167.09 4.7446,-319.48 -0.5625,-483.28 -0.073,-5.4712 -5.0506,-7.758 -10.688,-7.5 z m -99.28,436.04 c 30.478,-0.002 56.713,13.001 67.312,36.562 16.152,35.904 -10.092,82.712 -58.594,104.53 -48.502,21.819 -100.91,10.404 -117.06,-25.5 -16.152,-35.904 10.092,-82.712 58.594,-104.53 16.672,-7.5002 33.785,-11.062 49.75,-11.062 z" />
+</svg>

@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 .pragma library
 .import QtQuick 2.6 as Quick
@@ -280,7 +280,7 @@ function previousLevel() {
 function createFish(minDuration) {
     var fishSource = fishes[Math.floor(Math.random() * fishes.length)]
     var minY = items.score.y + items.score.height
-    var maxY = bar.y - fishSource.height
+    var maxY = bar.y - fishSource.height - bar.height
     var fish = component.createObject(
                 background,
                 {

@@ -16,7 +16,7 @@
     *   GNU General Public License for more details.
     *
     *   You should have received a copy of the GNU General Public License
-    *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+    *   along with this program; if not, see <https://www.gnu.org/licenses/>.
     */
 .pragma library
 .import QtQuick 2.6 as Quick
@@ -191,7 +191,7 @@ function allPlaced() {
                 items.categoryReview.score.currentSubLevel ++
         }
     }
-    if(items.categoryReview.score.currentSubLevel == totalImages)
+    if(items.categoryReview.score.currentSubLevel === totalImages)
         items.bonus.good("flower")
     else
         items.bonus.bad("flower")
@@ -298,8 +298,8 @@ function isDragInRightArea(rightAreaLeftBorderPos, elementLeftPos) {
 }
 
 function dropControl(sourcePosition, destinationPosition, image, index) {
-    var destinationZone = destinationPosition == "left" ? items.categoryReview.leftZone : destinationPosition == "right" ? items.categoryReview.rightZone : items.categoryReview.middleZone
-    var sourceZone = sourcePosition == "left" ? items.categoryReview.leftZone : sourcePosition == "right" ? items.categoryReview.rightZone : items.categoryReview.middleZone
+    var destinationZone = destinationPosition === "left" ? items.categoryReview.leftZone : destinationPosition === "right" ? items.categoryReview.rightZone : items.categoryReview.middleZone
+    var sourceZone = sourcePosition === "left" ? items.categoryReview.leftZone : sourcePosition === "right" ? items.categoryReview.rightZone : items.categoryReview.middleZone
     destinationZone.append({"name": image, "droppedZone": destinationPosition})
     sourceZone.remove(index)
 }

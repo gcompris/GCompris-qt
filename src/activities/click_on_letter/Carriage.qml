@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -63,7 +63,6 @@ Item {
                                         carriageBg.verticalCenter :
                                         parent.verticalCenter
             z: 11
-
             text: letter
             font.pointSize: NaN  // need to clear font.pointSize explicitly
             font.pixelSize: parent.width * 0.65
@@ -85,13 +84,13 @@ Item {
         }
 
         Image {
-            id:softFailure
+            id: softFailure
             z: 12
             source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/cross.svg"
             width: parent.width
             height: width
             anchors.centerIn: text
-            opacity:0
+            opacity: 0
             visible: ApplicationInfo.useOpenGL ? false : true
         }
         
@@ -120,7 +119,8 @@ Item {
             PropertyChanges {
                 target: carriageItem
                 scale: /*carriageImage.scale * */ 1.2
-                z: 2}
+                z: 2
+            }
         }
 
         transitions: Transition {
@@ -144,8 +144,8 @@ Item {
                 target: carriageImage
                 easing.type: Easing.InOutQuad
                 property: "rotation"
-                to: 0
-                duration: 50 }
+                to: 0; duration: 50
+            }
         }
 
         SequentialAnimation {

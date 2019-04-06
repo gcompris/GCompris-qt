@@ -1,4 +1,4 @@
-/* GCompris - ApplicationSettingsDefault.cpp
+/* GCompris - ApplicationInfo.h
  *
  * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
@@ -19,7 +19,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #ifndef APPLICATIONINFO_H
 #define APPLICATIONINFO_H
@@ -28,7 +28,6 @@
 #include "ApplicationSettings.h"
 
 #include <QObject>
-#include <QQmlPropertyMap>
 #include <QQmlEngine>
 #include <QtGlobal>
 
@@ -48,12 +47,12 @@ class ApplicationInfo : public QObject
     /**
      * Width of the application viewport.
      */
-	Q_PROPERTY(int applicationWidth READ applicationWidth WRITE setApplicationWidth NOTIFY applicationWidthChanged)
+    Q_PROPERTY(int applicationWidth READ applicationWidth WRITE setApplicationWidth NOTIFY applicationWidthChanged)
 
     /**
      * Platform the application is currently running on.
      */
-	Q_PROPERTY(Platform platform READ platform CONSTANT)
+    Q_PROPERTY(Platform platform READ platform CONSTANT)
 
     /**
      * Whether the application is currently running on a mobile platform.
@@ -61,7 +60,7 @@ class ApplicationInfo : public QObject
      * Mobile platforms are Android, Ios (not supported yet),
      * Blackberry (not supported)
      */
-	Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
+    Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
 
     /**
      * Whether the current platform supports fragment shaders.
@@ -73,21 +72,21 @@ class ApplicationInfo : public QObject
      *
      * For now always set to false, to prevent crashes.
      */
-	Q_PROPERTY(bool hasShader READ hasShader CONSTANT)
+    Q_PROPERTY(bool hasShader READ hasShader CONSTANT)
 
     /**
      * Whether currently in portrait mode, on mobile platforms.
      *
      * Based on viewport geometry.
      */
-	Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
+    Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
 
     /**
      * Ratio factor used for scaling of sizes on high-dpi devices.
      *
      * Must be used by activities as a scaling factor to all pixel values.
      */
-	Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
+    Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
 
     /**
      * Ratio factor used for font scaling.
@@ -102,27 +101,27 @@ class ApplicationInfo : public QObject
      *
      * GCText applies this factor automatically on its new fontSize property.
      */
-	Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
+    Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
 
-	/**
-	 * Short (2-letter) locale string of the currently active language.
-	 */
-	Q_PROPERTY(QString localeShort READ localeShort)
+    /**
+     * Short (2-letter) locale string of the currently active language.
+     */
+    Q_PROPERTY(QString localeShort READ localeShort CONSTANT)
 
     /**
      * GCompris version string (compile time).
      */
-	Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
+    Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
 
     /**
      * GCompris version code (compile time).
      */
-	Q_PROPERTY(int GCVersionCode READ GCVersionCode CONSTANT)
+    Q_PROPERTY(int GCVersionCode READ GCVersionCode CONSTANT)
 
     /**
      * Qt version string (runtime).
      */
-	Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
+    Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
 
     /**
      * Audio codec used for voices resources.
@@ -145,7 +144,14 @@ class ApplicationInfo : public QObject
      *
      * Use to deactivate some effects if OpenGL not used.
      */
-	Q_PROPERTY(bool useOpenGL READ useOpenGL CONSTANT)
+    Q_PROPERTY(bool useOpenGL READ useOpenGL WRITE setUseOpenGL NOTIFY useOpenGLChanged)
+
+    /**
+     * Whether Box2D is installed or not.
+     *
+     * Use to disable activities that use Box2D when it's not installed.
+     */
+    Q_PROPERTY(bool isBox2DInstalled READ isBox2DInstalled NOTIFY isBox2DInstalledChanged)
         
 public:
 
@@ -163,15 +169,6 @@ public:
     };
 
     Q_ENUM(Platform)
-
-    /**
-     * Registers singleton in the QML engine.
-     *
-     * It is not recommended to create a singleton of Qml Singleton registered
-     * object but we could not found a better way to let us access ApplicationInfo
-     * on the C++ side. All our test shows that it works.
-     */
-    static void init();
 
     /**
      * Returns an absolute and platform independent path to the passed @p file
@@ -222,15 +219,6 @@ public:
     Q_INVOKABLE void abandonAudioFocus() const;
 
     /**
-     * Return the platform specific path for storing data shared between apps
-     *
-     * On Android: /storage/emulated/0/GCompris (>= Android 4.2),
-     *             /storage/sdcard0/GCompris (< Android 4.2)
-     * On Linux: $HOME/local/share/GCompris
-     */
-    Q_INVOKABLE QString getSharedWritablePath() const;
-
-    /**
      * Compare two strings respecting locale specific sort order.
      *
      * @param a         First string to compare
@@ -264,16 +252,16 @@ public:
         }
         return m_instance;
     }
-    static QObject *systeminfoProvider(QQmlEngine *engine,
-									   QJSEngine *scriptEngine);
+    static QObject *applicationInfoProvider(QQmlEngine *engine,
+                                            QJSEngine *scriptEngine);
     static void setWindow(QQuickWindow *window);
     explicit ApplicationInfo(QObject *parent = 0);
     ~ApplicationInfo();
-	int applicationWidth() const { return m_applicationWidth; }
-	void setApplicationWidth(const int newWidth);
+    int applicationWidth() const { return m_applicationWidth; }
+    void setApplicationWidth(const int newWidth);
     Platform platform() const { return m_platform; }
-	bool isPortraitMode() const { return m_isPortraitMode; }
-	void setIsPortraitMode(const bool newMode);
+    bool isPortraitMode() const { return m_isPortraitMode; }
+    void setIsPortraitMode(const bool newMode);
     bool isMobile() const { return m_isMobile; }
     bool hasShader() const {
 #if defined(Q_OS_ANDROID)
@@ -282,7 +270,7 @@ public:
         return true;
 #endif
     }
-	qreal ratio() const { return m_ratio; }
+    qreal ratio() const { return m_ratio; }
     qreal fontRatio() const { return m_fontRatio; }
     QString localeShort() const {
         return localeShort( ApplicationSettings::getInstance()->locale() );
@@ -292,13 +280,11 @@ public:
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
-    static bool useOpenGL() { 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-        return QString(GRAPHICAL_RENDERER) != "software"; 
-#else
-        return true;
-#endif
-    }
+    bool useOpenGL() const { return m_useOpenGL; }
+    void setUseOpenGL(bool useOpenGL) { m_useOpenGL = useOpenGL; }
+
+    bool isBox2DInstalled() const { return m_isBox2DInstalled; }
+    void setBox2DInstalled(const QQmlEngine &engine);
 
     /**
      * Returns the native screen orientation.
@@ -356,11 +342,11 @@ public:
 
     /// @endcond
 
-protected slots:
-	/**
-	 * Returns the resource root-path used for GCompris resources.
-	 */
-	QString getResourceDataPath();
+public slots:
+    /**
+     * Returns the resource root-path used for GCompris resources.
+     */
+    QString getResourceDataPath();
 
     /**
      * Returns an absolute path to a language specific sound/voices file. If
@@ -386,7 +372,7 @@ protected slots:
      *             Any occurrence of '$CA' placeholder will be replaced by
      *             the current compressed audio format ('ogg' or 'aac).
      *             Example: 'voices-$CA/$LOCALE/misc/click_on_letter.$CA'
-     * @param locale the locale for which to get this audio file
+     * @param localeName the locale for which to get this audio file
      * @returns An absolute path to the corresponding resource file.
      */
     Q_INVOKABLE QString getAudioFilePathForLocale(const QString &file,
@@ -422,24 +408,27 @@ protected slots:
     Q_INVOKABLE void notifyFullscreenChanged();
 
 protected:
-	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
+    qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
 
 signals:
-	void applicationWidthChanged();
-	void portraitModeChanged();
-	void ratioChanged();
+    void applicationWidthChanged();
+    void portraitModeChanged();
+    void ratioChanged();
     void fontRatioChanged();
     void applicationSettingsChanged();
     void fullscreenChanged();
+    void useOpenGLChanged();
+    void isBox2DInstalledChanged();
 
 private:
     static ApplicationInfo *m_instance;
     int m_applicationWidth;
     Platform m_platform;
-	QQmlPropertyMap *m_constants;
-	bool m_isPortraitMode;
-	bool m_isMobile;
-	qreal m_ratio;
+    bool m_isPortraitMode;
+    bool m_isMobile;
+    bool m_useOpenGL;
+    bool m_isBox2DInstalled;
+    qreal m_ratio;
     qreal m_fontRatio;
 
     // Symbols fonts that user can't see

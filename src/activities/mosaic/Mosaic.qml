@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -116,7 +116,7 @@ ActivityBase {
             width: parent.width * 0.9
 
             property int nbItems: 24
-            property bool horizontal: background.width > background.height
+            property bool horizontal: background.width >= background.height
             property int nbColumns: Activity.questionLayout[nbItems][0]
             property int nbLines: Activity.questionLayout[nbItems][1]
             property int itemWidth: horizontal ?

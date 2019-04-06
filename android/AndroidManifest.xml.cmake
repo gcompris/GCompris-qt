@@ -6,7 +6,7 @@
 				<action android:name="android.intent.action.MAIN"/>
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
-			<meta-data android:name="android.app.lib_name" android:value="-- %%INSERT_APP_LIB_NAME%% --"/>
+			<meta-data android:name="android.app.lib_name" android:value="GCompris"/>
 			<meta-data android:name="android.app.qt_sources_resource_id" android:resource="@array/qt_sources"/>
 			<meta-data android:name="android.app.repository" android:value="default"/>
 			<meta-data android:name="android.app.qt_libs_resource_id" android:resource="@array/qt_libs"/>
@@ -32,7 +32,7 @@
 		</activity>
 	</application>
 	<supports-screens android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:largeScreens="true"/>
-	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19"/>
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="26"/>
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	@ANDROID_INTERNET_PERMISSION@

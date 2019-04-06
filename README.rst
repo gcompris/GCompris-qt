@@ -1,12 +1,12 @@
 *********************************
-`GCompris <http://gcompris.net>`_
+`GCompris <https://gcompris.net>`_
 *********************************
 
 .. image:: src/core/resource/gcompris.png
 
 Presentation
 ============
-`GCompris <http://gcompris.net>`_ is a high quality educational software suite, 
+`GCompris <https://gcompris.net>`_ is a high quality educational software suite, 
 including a large number of activities for children aged 2 to 10. 
 Some of the activities are game orientated, but nonetheless still educational.
 
@@ -44,19 +44,19 @@ About You
 
 You can help by:
 
-* `Creating new activities <http://gcompris.net/wiki/Qt_Quick_development_process>`_.
+* `Creating new activities <https://gcompris.net/wiki/Qt_Quick_development_process>`_.
 * Providing fancy graphics to incorporate as icons or backgrounds.
 * `Translating GCompris
-  <http://gcompris.net/wiki/Developer%27s_corner#Translation>`_.
-* `Recording voices <http://gcompris.net/wiki/Voice_translation_Qt>`_.
+  <https://gcompris.net/wiki/Developer%27s_corner#Translation>`_.
+* `Recording voices <https://gcompris.net/wiki/Voice_translation_Qt>`_.
 * `Just giving your ideas
-  <http://gcompris.net/wiki/Ideas_for_activities>`_.
+  <https://gcompris.net/wiki/Ideas_for_activities>`_.
 
 Get more information on our `developer's wiki
-<http://gcompris.net/wiki/Developer%27s_corner>`_.
+<https://gcompris.net/wiki/Developer%27s_corner>`_.
 
 Licence
 =======
 
 GCompris is free software released under the `GPL V3+
-<http://www.gnu.org/licenses/gpl-3.0.fr.html>`_.
+<https://www.gnu.org/licenses/gpl-3.0.fr.html>`_.

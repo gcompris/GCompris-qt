@@ -10,6 +10,13 @@ if(SAILFISHOS)
   add_definitions(-DSAILFISHOS)
 endif()
 
+if(ANDROID)
+  # needed since ECM 5.45 (https://bugs.kde.org/show_bug.cgi?id=394042)
+  include_directories(SYSTEM
+    "${CMAKE_SYSROOT}/usr/include"
+    )
+endif()
+
 set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfo.h
@@ -25,8 +32,24 @@ set(gcompris_SRCS
    Directory.h
    DownloadManager.cpp
    DownloadManager.h
+   GComprisPlugin.cpp
+   GComprisPlugin.h
    main.cpp
    config.h.in
+   synth/ADSRenvelope.cpp
+   synth/ADSRenvelope.h
+   synth/GSynth.cpp
+   synth/GSynth.h
+   synth/linearSynthesis.cpp
+   synth/linearSynthesis.h
+   synth/modulation.cpp
+   synth/modulation.h
+   synth/generator.cpp
+   synth/generator.h
+   synth/preset.h
+   synth/preset.cpp
+   synth/waveform.cpp
+   synth/waveform.h
 )
 
 if(ANDROID)
@@ -91,11 +114,11 @@ if(BUILD_STANDALONE)
     list(APPEND _qt_plugins Qt5::QJpegPlugin)
   endif()
   if(APPLE)
-    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin)
+    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
   elseif(WIN32)
     list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
   elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
-    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin)
+    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QXcbEglIntegrationPlugin Qt5::QXcbGlxIntegrationPlugin Qt5::QAlsaPlugin Qt5::QPulseAudioPlugin)
   endif()
 
   list(APPEND _qt_plugins Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin)
@@ -114,12 +137,15 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}gstmediacapture
       mediaservice/${_lib_prefix}gstmediaplayer)
   elseif(APPLE)
-    list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}qavfmediaplayer
+    list(APPEND _qt_plugins2 audio/${_lib_prefix}qtaudio_coreaudio
+      mediaservice/${_lib_prefix}qavfmediaplayer
       mediaservice/${_lib_prefix}qtmedia_audioengine
       mediaservice/${_lib_prefix}qavfcamera)
   endif()
   
   set(_qml_plugins
+    QtGraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
+    QtGraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivate
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
@@ -148,7 +174,7 @@ if(BUILD_STANDALONE)
       MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
       MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
       MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
-      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2015 Bruno Coudoin and Others.")
+      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2019 Timothee Giet and Others.")
     set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
   else()
     set(_qtconf_destdir bin)
@@ -170,7 +196,11 @@ if(BUILD_STANDALONE)
     list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
   endforeach()
   foreach(_plugin ${_qt_plugins2})
-    installQtPlugin2(${_plugin} ${_qt_plugins_destdir} _lib)
+    if(APPLE)
+      installQtPlugin2(${_plugin} ${_qt_plugins_destdir}/../Plugins _lib)
+    else()
+      installQtPlugin2(${_plugin} ${_qt_plugins_destdir} _lib)
+    endif()
     list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
   endforeach()
 
@@ -180,12 +210,14 @@ if(BUILD_STANDALONE)
     list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
   endforeach()
 
-  # install QtGraphicalEffects (which is not a lib but only qml files)
-  set(_qml_subdir QtGraphicalEffects)
-  getQtQmlPath(_qt_qml_path)
-  install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
+  ## install QtGraphicalEffects (which is not a lib but only qml files)
+  # BUT, actually there are some libs in it, and this does not work on APPLE. Moved to _qml_plugins instead
+  #
+  #set(_qml_subdir QtGraphicalEffects)
+  #getQtQmlPath(_qt_qml_path)
+  #install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
 
-  # Fix for Linux 'make package' that fails to link with libicu
+  # Fix for Linux 'make package' that fails to link with libicu; also package OpenSSL libs from system
   if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID)
     add_library( libicudata SHARED IMPORTED )
     FILE(GLOB LIBICUDATA_SO "${Qt5_DIR}/../../libicudata.so.[0-9][0-9]")
@@ -206,14 +238,40 @@ if(BUILD_STANDALONE)
     endif()
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
     TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
+    # package installed OpenSSL libraries
+    install(FILES "${OPENSSL_SSL_LIBRARY}" DESTINATION bin)
+    install(FILES "${OPENSSL_CRYPTO_LIBRARY}" DESTINATION bin)
+    install(FILES "${OPENSSL_SSL_LIBRARY}.10" DESTINATION bin)
+    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.10" DESTINATION bin)
+    install(FILES "${OPENSSL_SSL_LIBRARY}.1.0.2k" DESTINATION bin)
+    install(FILES "${OPENSSL_CRYPTO_LIBRARY}.1.0.2k" DESTINATION bin)
+    TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
+  
+  #Add OpenSSL support on Windows builds
+  if(WIN32)
+    if(MINGW)
+      if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+        #64bit
+        set(OPENSSL_DLL_SUFFIX "-x64")
+      endif()
+      install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
+      install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
+    else(MINGW) # appveyor
+      install(FILES "${OPENSSL_INCLUDE_DIR}/../libeay32.dll" DESTINATION bin)
+      install(FILES "${OPENSSL_INCLUDE_DIR}/../libssl32.dll" DESTINATION bin)
+      install(FILES "${OPENSSL_INCLUDE_DIR}/../ssleay32.dll" DESTINATION bin)
+    endif()
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
+  endif()
+
 endif(BUILD_STANDALONE)
 
 # Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?) -> Johnny : we need this even if it takes time because some required dependencies are pulled here
 #if(WIN32) set(GCOMPRIS_OTHER_LIBS "") endif()
 
 # install fixup_bundle script to resolve and fixup runtime dependencies
-if(BUILD_STANDALONE)
+if(BUILD_STANDALONE AND NOT ANDROID)
   configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
@@ -256,9 +314,16 @@ if(WIN32)
   set(CPACK_NSIS_EXECUTABLES_DIRECTORY "bin")
   set(CPACK_PACKAGE_EXECUTABLES "${GCOMPRIS_EXECUTABLE_NAME};GCompris")
   set(CPACK_CREATE_DESKTOP_LINKS "${GCOMPRIS_EXECUTABLE_NAME};GCompris")
-  set(CPACK_NSIS_URL_INFO_ABOUT "http:\\\\\\\\gcompris.net")
+  set(CPACK_NSIS_URL_INFO_ABOUT "https:\\\\\\\\gcompris.net")
   set(CPACK_NSIS_DISPLAY_NAME "GCompris Educational Software")
   set(CPACK_NSIS_MUI_FINISHPAGE_RUN "${GCOMPRIS_EXECUTABLE_NAME}")
+  set(CPACK_PACKAGE_VENDOR "GCompris team")
+
+  # Create shortcuts in menu to be able to launch in software or opengl mode
+  list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris (Safe Mode).lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--software-renderer'")
+  list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris.lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--opengl-renderer'")
+  string (REPLACE ";" "\n" CPACK_NSIS_CREATE_ICONS_EXTRA "${CPACK_NSIS_CREATE_ICONS_EXTRA}")
+
 else(WIN32)
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
 endif()

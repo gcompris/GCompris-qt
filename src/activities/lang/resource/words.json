@@ -14,9 +14,24 @@
                         "voice": "voices-$CA/$LOCALE/words/alphabet.$CA"
                     },
                     {
+                        "description": "angel",
+                        "image": "words/angel.png",
+                        "voice": "voices-$CA/$LOCALE/words/angel.$CA"
+                    },
+                    {
+                        "description": "behind",
+                        "image": "words/behind.png",
+                        "voice": "voices-$CA/$LOCALE/words/behind.$CA"
+                    },
+                    {
                         "description": "bit",
                         "image": "words/bit.png",
                         "voice": "voices-$CA/$LOCALE/words/bit.$CA"
+                    },
+                    {
+                        "description": "bone",
+                        "image": "words/bone.png",
+                        "voice": "voices-$CA/$LOCALE/words/bone.$CA"
                     },
                     {
                         "description": "bubble",
@@ -24,9 +39,24 @@
                         "voice": "voices-$CA/$LOCALE/words/bubble.$CA"
                     },
                     {
+                        "description": "camp",
+                        "image": "words/camp.png",
+                        "voice": "voices-$CA/$LOCALE/words/camp.$CA"
+                    },
+                    {
                         "description": "carnival",
                         "image": "words/carnival.png",
                         "voice": "voices-$CA/$LOCALE/words/carnival.$CA"
+                    },
+                     {
+                        "description": "chores",
+                        "image": "words/chores.png",
+                        "voice": "voices-$CA/$LOCALE/words/chores.$CA"
+                    },
+                    {
+                        "description": "christmas",
+                        "image": "words/christmas.png",
+                        "voice": "voices-$CA/$LOCALE/words/christmas.$CA"
                     },
                     {
                         "description": "craft",
@@ -34,14 +64,149 @@
                         "voice": "voices-$CA/$LOCALE/words/craft.$CA"
                     },
                     {
+                        "description": "dot",
+                        "image": "words/dot.png",
+                        "voice": "voices-$CA/$LOCALE/words/dot.$CA"
+                    },
+                    {
+                        "description": "engine",
+                        "image": "words/engine.png",
+                        "voice": "voices-$CA/$LOCALE/words/engine.$CA"
+                    },
+                    {
+                        "description": "fairy",
+                        "image": "words/fairy.png",
+                        "voice": "voices-$CA/$LOCALE/words/fairy.$CA"
+                    },
+                    {
+                        "description": "flat",
+                        "image": "words/flat.png",
+                        "voice": "voices-$CA/$LOCALE/words/flat.$CA"
+                    },
+                    {
+                        "description": "front",
+                        "image": "words/front.png",
+                        "voice": "voices-$CA/$LOCALE/words/front.$CA"
+                    },
+                    {
+                        "description": "gnome",
+                        "image": "words/gnome.png",
+                        "voice": "voices-$CA/$LOCALE/words/gnome.$CA"
+                    },
+                    {
+                        "description": "guignol",
+                        "image": "words/guignol.png",
+                        "voice": "voices-$CA/$LOCALE/words/guignol.$CA"
+                    },
+                    {
+                        "description": "half",
+                        "image": "words/half.png",
+                        "voice": "voices-$CA/$LOCALE/words/half.$CA"
+                    },
+                    {
+                        "description": "king",
+                        "image": "words/king.png",
+                        "voice": "voices-$CA/$LOCALE/words/king.$CA"
+                    },
+                    {
+                        "description": "knight",
+                        "image": "words/knight.png",
+                        "voice": "voices-$CA/$LOCALE/words/knight.$CA"
+                    },
+                    {
+                        "description": "lad",
+                        "image": "words/lad.png",
+                        "voice": "voices-$CA/$LOCALE/words/lad.$CA"
+                    },
+                    {
+                        "description": "left",
+                        "image": "words/left.png",
+                        "voice": "voices-$CA/$LOCALE/words/left.$CA"
+                    },
+                    {
+                        "description": "light",
+                        "image": "words/light.png",
+                        "voice": "voices-$CA/$LOCALE/words/light.$CA"
+                    },
+                    {
+                        "description": "line",
+                        "image": "words/line.png",
+                        "voice": "voices-$CA/$LOCALE/words/line.$CA"
+                    },
+                    {
                         "description": "link",
                         "image": "words/link.png",
                         "voice": "voices-$CA/$LOCALE/words/link.$CA"
                     },
                     {
+                        "description": "movie",
+                        "image": "words/movie.png",
+                        "voice": "voices-$CA/$LOCALE/words/movie.$CA"
+                    },
+                    {
+                        "description": "music",
+                        "image": "words/music.png",
+                        "voice": "voices-$CA/$LOCALE/words/music.$CA"
+                    },
+                    {
                         "description": "number",
                         "image": "words/number.png",
                         "voice": "voices-$CA/$LOCALE/words/number.$CA"
+                    },
+                    {
+                        "description": "on",
+                        "image": "words/on.png",
+                        "voice": "voices-$CA/$LOCALE/words/on.$CA"
+                    },
+                    {
+                        "description": "pedal",
+                        "image": "words/pedal.png",
+                        "voice": "voices-$CA/$LOCALE/words/pedal.$CA"
+                    },
+                    {
+                        "description": "pirate",
+                        "image": "words/pirate.png",
+                        "voice": "voices-$CA/$LOCALE/words/pirate.$CA"
+                    },
+                    {
+                        "description": "pope",
+                        "image": "words/pope.png",
+                        "voice": "voices-$CA/$LOCALE/words/pope.$CA"
+                    },
+                    {
+                        "description": "porthole",
+                        "image": "words/porthole.png",
+                        "voice": "voices-$CA/$LOCALE/words/porthole.$CA"
+                    },
+                    {
+                        "description": "president",
+                        "image": "words/president.png",
+                        "voice": "voices-$CA/$LOCALE/words/president.$CA"
+                    },
+                    {
+                        "description": "price",
+                        "image": "words/price.png",
+                        "voice": "voices-$CA/$LOCALE/words/price.$CA"
+                    },
+                    {
+                        "description": "prince",
+                        "image": "words/prince.png",
+                        "voice": "voices-$CA/$LOCALE/words/prince.$CA"
+                    },
+                    {
+                        "description": "princess",
+                        "image": "words/princess.png",
+                        "voice": "voices-$CA/$LOCALE/words/princess.$CA"
+                    },
+                    {
+                        "description": "prisoner",
+                        "image": "words/prisoner.png",
+                        "voice": "voices-$CA/$LOCALE/words/prisoner.$CA"
+                    },
+                    {
+                        "description": "queen",
+                        "image": "words/queen.png",
+                        "voice": "voices-$CA/$LOCALE/words/queen.$CA"
                     },
                     {
                         "description": "question",
@@ -54,6 +219,21 @@
                         "voice": "voices-$CA/$LOCALE/words/quiz.$CA"
                     },
                     {
+                        "description": "right",
+                        "image": "words/right.png",
+                        "voice": "voices-$CA/$LOCALE/words/right.$CA"
+                    },
+                    {
+                        "description": "rocket",
+                        "image": "words/rocket.png",
+                        "voice": "voices-$CA/$LOCALE/words/rocket.$CA"
+                    },
+                    {
+                        "description": "round",
+                        "image": "words/round.png",
+                        "voice": "voices-$CA/$LOCALE/words/round.$CA"
+                    },
+                    {
                         "description": "science",
                         "image": "words/science.png",
                         "voice": "voices-$CA/$LOCALE/words/science.$CA"
@@ -64,14 +244,59 @@
                         "voice": "voices-$CA/$LOCALE/words/splatter.$CA"
                     },
                     {
+                        "description": "spot",
+                        "image": "words/spot.png",
+                        "voice": "voices-$CA/$LOCALE/words/spot.$CA"
+                    },
+                    {
+                        "description": "square",
+                        "image": "words/square.png",
+                        "voice": "voices-$CA/$LOCALE/words/square.$CA"
+                    },
+                    {
+                        "description": "stand",
+                        "image": "words/stand.png",
+                        "voice": "voices-$CA/$LOCALE/words/stand.$CA"
+                    },
+                    {
+                        "description": "stripe",
+                        "image": "words/stripe.png",
+                        "voice": "voices-$CA/$LOCALE/words/stripe.$CA"
+                    },
+                    {
+                        "description": "student",
+                        "image": "words/student.png",
+                        "voice": "voices-$CA/$LOCALE/words/student.$CA"
+                    },
+                    {
                         "description": "text",
                         "image": "words/text.png",
                         "voice": "voices-$CA/$LOCALE/words/text.$CA"
                     },
                     {
+                        "description": "thief",
+                        "image": "words/thief.png",
+                        "voice": "voices-$CA/$LOCALE/words/thief.$CA"
+                    },
+                    {
+                        "description": "triangle",
+                        "image": "words/triangle.png",
+                        "voice": "voices-$CA/$LOCALE/words/triangle.$CA"
+                    },
+                    {
+                        "description": "trip",
+                        "image": "words/trip.png",
+                        "voice": "voices-$CA/$LOCALE/words/trip.$CA"
+                    },
+                    {
                         "description": "tune",
                         "image": "words/tune.png",
                         "voice": "voices-$CA/$LOCALE/words/tune.$CA"
+                    },
+                    {
+                        "description": "under",
+                        "image": "words/under.png",
+                        "voice": "voices-$CA/$LOCALE/words/under.$CA"
                     },
                     {
                         "description": "vowel",
@@ -95,502 +320,477 @@
                 "name": "action",
                 "content": [
                     {
-                        "description": "ate",
-                        "image": "words/ate.png",
-                        "voice": "voices-$CA/$LOCALE/words/ate.$CA"
-                    },
-                    {
-                        "description": "bake",
-                        "image": "words/bake.png",
-                        "voice": "voices-$CA/$LOCALE/words/bake.$CA"
-                    },
-                    {
-                        "description": "bark",
+                        "description": "to bark",
                         "image": "words/bark.png",
                         "voice": "voices-$CA/$LOCALE/words/bark.$CA"
                     },
                     {
-                        "description": "beat",
+                        "description": "to beat",
                         "image": "words/beat.png",
                         "voice": "voices-$CA/$LOCALE/words/beat.$CA"
                     },
                     {
-                        "description": "beg",
+                        "description": "to beg",
                         "image": "words/beg.png",
                         "voice": "voices-$CA/$LOCALE/words/beg.$CA"
                     },
                     {
-                        "description": "bite",
+                        "description": "to bite",
                         "image": "words/bite.png",
                         "voice": "voices-$CA/$LOCALE/words/bite.$CA"
                     },
                     {
-                        "description": "blink",
+                        "description": "to blink",
                         "image": "words/blink.png",
                         "voice": "voices-$CA/$LOCALE/words/blink.$CA"
                     },
                     {
-                        "description": "boil",
+                        "description": "to boil",
                         "image": "words/boil.png",
                         "voice": "voices-$CA/$LOCALE/words/boil.$CA"
                     },
                     {
-                        "description": "break",
+                        "description": "to break",
                         "image": "words/break.png",
                         "voice": "voices-$CA/$LOCALE/words/break.$CA"
                     },
                     {
-                        "description": "call",
+                        "description": "to call",
                         "image": "words/call.png",
                         "voice": "voices-$CA/$LOCALE/words/call.$CA"
                     },
                     {
-                        "description": "catch",
+                        "description": "to catch",
                         "image": "words/catch.png",
                         "voice": "voices-$CA/$LOCALE/words/catch.$CA"
                     },
                     {
-                        "description": "chat",
+                        "description": "to chat",
                         "image": "words/chat.png",
                         "voice": "voices-$CA/$LOCALE/words/chat.$CA"
                     },
                     {
-                        "description": "chop",
+                        "description": "to chop",
                         "image": "words/chop.png",
                         "voice": "voices-$CA/$LOCALE/words/chop.$CA"
                     },
                     {
-                        "description": "chores",
-                        "image": "words/chores.png",
-                        "voice": "voices-$CA/$LOCALE/words/chores.$CA"
-                    },
-                    {
-                        "description": "clap",
+                        "description": "to clap",
                         "image": "words/clap.png",
                         "voice": "voices-$CA/$LOCALE/words/clap.$CA"
                     },
                     {
-                        "description": "clean",
+                        "description": "to clean",
                         "image": "words/clean.png",
                         "voice": "voices-$CA/$LOCALE/words/clean.$CA"
                     },
                     {
-                        "description": "cough",
+                        "description": "to cook",
+                        "image": "words/cook.png",
+                        "voice": "voices-$CA/$LOCALE/words/cook.$CA"
+                    },
+                    {
+                        "description": "to cough",
                         "image": "words/cough.png",
                         "voice": "voices-$CA/$LOCALE/words/cough.$CA"
                     },
                     {
-                        "description": "crawl",
+                        "description": "to crawl",
                         "image": "words/crawl.png",
                         "voice": "voices-$CA/$LOCALE/words/crawl.$CA"
                     },
                     {
-                        "description": "croak",
+                        "description": "to croak",
                         "image": "words/croak.png",
                         "voice": "voices-$CA/$LOCALE/words/croak.$CA"
                     },
                     {
-                        "description": "cry",
+                        "description": "to cry",
                         "image": "words/cry.png",
                         "voice": "voices-$CA/$LOCALE/words/cry.$CA"
                     },
                     {
-                        "description": "cut",
+                        "description": "to cut",
                         "image": "words/cut.png",
                         "voice": "voices-$CA/$LOCALE/words/cut.$CA"
                     },
                     {
-                        "description": "dig",
+                        "description": "to dig",
                         "image": "words/dig.png",
                         "voice": "voices-$CA/$LOCALE/words/dig.$CA"
                     },
                     {
-                        "description": "drank",
-                        "image": "words/drank.png",
-                        "voice": "voices-$CA/$LOCALE/words/drank.$CA"
-                    },
-                    {
-                        "description": "draw",
+                        "description": "to draw",
                         "image": "words/draw.png",
                         "voice": "voices-$CA/$LOCALE/words/draw.$CA"
                     },
                     {
-                        "description": "dream",
+                        "description": "to dream",
                         "image": "words/dream.png",
                         "voice": "voices-$CA/$LOCALE/words/dream.$CA"
                     },
                     {
-                        "description": "drinking",
-                        "image": "words/drinking.png",
-                        "voice": "voices-$CA/$LOCALE/words/drinking.$CA"
+                        "description": "to drink",
+                        "image": "words/to_drink.png",
+                        "voice": "voices-$CA/$LOCALE/words/to_drink.$CA"
                     },
                     {
-                        "description": "drive",
+                        "description": "to drive",
                         "image": "words/drive.png",
                         "voice": "voices-$CA/$LOCALE/words/drive.$CA"
                     },
                     {
-                        "description": "drool",
+                        "description": "to drool",
                         "image": "words/drool.png",
                         "voice": "voices-$CA/$LOCALE/words/drool.$CA"
                     },
                     {
-                        "description": "dry",
+                        "description": "to dry",
                         "image": "words/dry.png",
                         "voice": "voices-$CA/$LOCALE/words/dry.$CA"
                     },
                     {
-                        "description": "eat",
+                        "description": "to eat",
                         "image": "words/eat.png",
                         "voice": "voices-$CA/$LOCALE/words/eat.$CA"
                     },
                     {
-                        "description": "fall down",
-                        "image": "words/fall_down.png",
-                        "voice": "voices-$CA/$LOCALE/words/fall_down.$CA"
-                    },
-                    {
-                        "description": "feed",
+                        "description": "to feed",
                         "image": "words/feed.png",
                         "voice": "voices-$CA/$LOCALE/words/feed.$CA"
                     },
                     {
-                        "description": "fell",
-                        "image": "words/fell.png",
-                        "voice": "voices-$CA/$LOCALE/words/fell.$CA"
+                        "description": "to fall",
+                        "image": "words/fall.png",
+                        "voice": "voices-$CA/$LOCALE/words/fall.$CA"
                     },
                     {
-                        "description": "fetch",
+                        "description": "to fetch",
                         "image": "words/fetch.png",
                         "voice": "voices-$CA/$LOCALE/words/fetch.$CA"
                     },
                     {
-                        "description": "find",
+                        "description": "to find",
                         "image": "words/find.png",
                         "voice": "voices-$CA/$LOCALE/words/find.$CA"
                     },
                     {
-                        "description": "flight",
-                        "image": "words/flight.png",
-                        "voice": "voices-$CA/$LOCALE/words/flight.$CA"
-                    },
-                    {
-                        "description": "float",
+                        "description": "to float",
                         "image": "words/float.png",
                         "voice": "voices-$CA/$LOCALE/words/float.$CA"
                     },
                     {
-                        "description": "fly",
+                        "description": "to fly",
                         "image": "words/fly.png",
                         "voice": "voices-$CA/$LOCALE/words/fly.$CA"
                     },
                     {
-                        "description": "freeze",
+                        "description": "to freeze",
                         "image": "words/freeze.png",
                         "voice": "voices-$CA/$LOCALE/words/freeze.$CA"
                     },
                     {
-                        "description": "growl",
+                        "description": "to growl",
                         "image": "words/growl.png",
                         "voice": "voices-$CA/$LOCALE/words/growl.$CA"
                     },
                     {
-                        "description": "hatch",
+                        "description": "to hatch",
                         "image": "words/hatch.png",
                         "voice": "voices-$CA/$LOCALE/words/hatch.$CA"
                     },
                     {
-                        "description": "hear",
+                        "description": "to hear",
                         "image": "words/hear.png",
                         "voice": "voices-$CA/$LOCALE/words/hear.$CA"
                     },
                     {
-                        "description": "howl",
+                        "description": "to howl",
                         "image": "words/howl.png",
                         "voice": "voices-$CA/$LOCALE/words/howl.$CA"
                     },
                     {
-                        "description": "hug",
+                        "description": "to hug",
                         "image": "words/hug.png",
                         "voice": "voices-$CA/$LOCALE/words/hug.$CA"
                     },
                     {
-                        "description": "jump",
+                        "description": "to jump",
                         "image": "words/jump.png",
                         "voice": "voices-$CA/$LOCALE/words/jump.$CA"
                     },
                     {
-                        "description": "kiss",
+                        "description": "to kiss",
                         "image": "words/kiss.png",
                         "voice": "voices-$CA/$LOCALE/words/kiss.$CA"
                     },
                     {
-                        "description": "kneel",
+                        "description": "to kneel",
                         "image": "words/kneel.png",
                         "voice": "voices-$CA/$LOCALE/words/kneel.$CA"
                     },
                     {
-                        "description": "knit",
+                        "description": "to knit",
                         "image": "words/knit.png",
                         "voice": "voices-$CA/$LOCALE/words/knit.$CA"
                     },
                     {
-                        "description": "lick",
+                        "description": "to lick",
                         "image": "words/lick.png",
                         "voice": "voices-$CA/$LOCALE/words/lick.$CA"
                     },
                     {
-                        "description": "look",
+                        "description": "to look",
                         "image": "words/look.png",
                         "voice": "voices-$CA/$LOCALE/words/look.$CA"
                     },
                     {
-                        "description": "meet",
+                        "description": "to meet",
                         "image": "words/meet.png",
                         "voice": "voices-$CA/$LOCALE/words/meet.$CA"
                     },
                     {
-                        "description": "nap",
+                        "description": "to nap",
                         "image": "words/nap.png",
                         "voice": "voices-$CA/$LOCALE/words/nap.$CA"
                     },
                     {
-                        "description": "peck",
+                        "description": "to peck",
                         "image": "words/peck.png",
                         "voice": "voices-$CA/$LOCALE/words/peck.$CA"
                     },
                     {
-                        "description": "play",
+                        "description": "to play",
                         "image": "words/play.png",
                         "voice": "voices-$CA/$LOCALE/words/play.$CA"
                     },
                     {
-                        "description": "plow",
+                        "description": "to plow",
                         "image": "words/plow.png",
                         "voice": "voices-$CA/$LOCALE/words/plow.$CA"
                     },
                     {
-                        "description": "pounce",
+                        "description": "to pounce",
                         "image": "words/pounce.png",
                         "voice": "voices-$CA/$LOCALE/words/pounce.$CA"
                     },
                     {
-                        "description": "pull",
+                        "description": "to pull",
                         "image": "words/pull.png",
                         "voice": "voices-$CA/$LOCALE/words/pull.$CA"
                     },
                     {
-                        "description": "quarrel",
+                        "description": "to quarrel",
                         "image": "words/quarrel.png",
                         "voice": "voices-$CA/$LOCALE/words/quarrel.$CA"
                     },
                     {
-                        "description": "read",
+                        "description": "to read",
                         "image": "words/read.png",
                         "voice": "voices-$CA/$LOCALE/words/read.$CA"
                     },
                     {
-                        "description": "rip",
+                        "description": "to rip",
                         "image": "words/rip.png",
                         "voice": "voices-$CA/$LOCALE/words/rip.$CA"
                     },
                     {
-                        "description": "rise",
+                        "description": "to rise",
                         "image": "words/rise.png",
                         "voice": "voices-$CA/$LOCALE/words/rise.$CA"
                     },
                     {
-                        "description": "run",
+                        "description": "to run",
                         "image": "words/run.png",
                         "voice": "voices-$CA/$LOCALE/words/run.$CA"
                     },
                     {
-                        "description": "sat",
-                        "image": "words/sat.png",
-                        "voice": "voices-$CA/$LOCALE/words/sat.$CA"
+                        "description": "to scare",
+                        "image": "words/scare.png",
+                        "voice": "voices-$CA/$LOCALE/words/scare.$CA"
                     },
                     {
-                        "description": "scared",
-                        "image": "words/scared.png",
-                        "voice": "voices-$CA/$LOCALE/words/scared.$CA"
-                    },
-                    {
-                        "description": "scratch",
+                        "description": "to scratch",
                         "image": "words/scratch.png",
                         "voice": "voices-$CA/$LOCALE/words/scratch.$CA"
                     },
                     {
-                        "description": "scream",
+                        "description": "to scream",
                         "image": "words/scream.png",
                         "voice": "voices-$CA/$LOCALE/words/scream.$CA"
                     },
                     {
-                        "description": "scribble",
+                        "description": "to scribble",
                         "image": "words/scribble.png",
                         "voice": "voices-$CA/$LOCALE/words/scribble.$CA"
                     },
                     {
-                        "description": "see",
+                        "description": "to see",
                         "image": "words/see.png",
                         "voice": "voices-$CA/$LOCALE/words/see.$CA"
                     },
                     {
-                        "description": "shake",
+                        "description": "to shake",
                         "image": "words/shake.png",
                         "voice": "voices-$CA/$LOCALE/words/shake.$CA"
                     },
                     {
-                        "description": "shave",
+                        "description": "to shave",
                         "image": "words/shave.png",
                         "voice": "voices-$CA/$LOCALE/words/shave.$CA"
                     },
                     {
-                        "description": "sing",
+                        "description": "to sing",
                         "image": "words/sing.png",
                         "voice": "voices-$CA/$LOCALE/words/sing.$CA"
                     },
                     {
-                        "description": "sip",
+                        "description": "to sip",
                         "image": "words/sip.png",
                         "voice": "voices-$CA/$LOCALE/words/sip.$CA"
                     },
                     {
-                        "description": "sit",
+                        "description": "to sit",
                         "image": "words/sit.png",
                         "voice": "voices-$CA/$LOCALE/words/sit.$CA"
                     },
                     {
-                        "description": "slam",
+                        "description": "to slam",
                         "image": "words/slam.png",
                         "voice": "voices-$CA/$LOCALE/words/slam.$CA"
                     },
                     {
-                        "description": "sleep",
+                        "description": "to sleep",
                         "image": "words/sleep.png",
                         "voice": "voices-$CA/$LOCALE/words/sleep.$CA"
                     },
                     {
-                        "description": "smell",
+                        "description": "to smell",
                         "image": "words/smell.png",
                         "voice": "voices-$CA/$LOCALE/words/smell.$CA"
                     },
                     {
-                        "description": "smooch",
+                        "description": "to smooch",
                         "image": "words/smooch.png",
                         "voice": "voices-$CA/$LOCALE/words/smooch.$CA"
                     },
                     {
-                        "description": "sniff",
+                        "description": "to sniff",
                         "image": "words/sniff.png",
                         "voice": "voices-$CA/$LOCALE/words/sniff.$CA"
                     },
                     {
-                        "description": "speak",
+                        "description": "to speak",
                         "image": "words/speak.png",
                         "voice": "voices-$CA/$LOCALE/words/speak.$CA"
                     },
                     {
-                        "description": "spill",
+                        "description": "to spill",
                         "image": "words/spill.png",
                         "voice": "voices-$CA/$LOCALE/words/spill.$CA"
                     },
                     {
-                        "description": "splash",
+                        "description": "to splash",
                         "image": "words/splash.png",
                         "voice": "voices-$CA/$LOCALE/words/splash.$CA"
                     },
                     {
-                        "description": "spray",
+                        "description": "to spray",
                         "image": "words/spray.png",
                         "voice": "voices-$CA/$LOCALE/words/spray.$CA"
                     },
                     {
-                        "description": "spread",
+                        "description": "to spread",
                         "image": "words/spread.png",
                         "voice": "voices-$CA/$LOCALE/words/spread.$CA"
                     },
                     {
-                        "description": "spring",
+                        "description": "to spring",
                         "image": "words/spring.png",
                         "voice": "voices-$CA/$LOCALE/words/spring.$CA"
                     },
                     {
-                        "description": "squat",
+                        "description": "to squat",
                         "image": "words/squat.png",
                         "voice": "voices-$CA/$LOCALE/words/squat.$CA"
                     },
                     {
-                        "description": "sting",
+                        "description": "to stare",
+                        "image": "words/stare.png",
+                        "voice": "voices-$CA/$LOCALE/words/stare.$CA"
+                    },
+                    {
+                        "description": "to sting",
                         "image": "words/sting.png",
                         "voice": "voices-$CA/$LOCALE/words/sting.$CA"
                     },
                     {
-                        "description": "stitch",
+                        "description": "to stitch",
                         "image": "words/stitch.png",
                         "voice": "voices-$CA/$LOCALE/words/stitch.$CA"
                     },
                     {
-                        "description": "stop",
+                        "description": "to stop",
                         "image": "words/stop.png",
                         "voice": "voices-$CA/$LOCALE/words/stop.$CA"
                     },
                     {
-                        "description": "stretch",
+                        "description": "to stretch",
                         "image": "words/stretch.png",
                         "voice": "voices-$CA/$LOCALE/words/stretch.$CA"
                     },
                     {
-                        "description": "study",
+                        "description": "to study",
                         "image": "words/study.png",
                         "voice": "voices-$CA/$LOCALE/words/study.$CA"
                     },
                     {
-                        "description": "teach",
+                        "description": "to teach",
                         "image": "words/teach.png",
                         "voice": "voices-$CA/$LOCALE/words/teach.$CA"
                     },
                     {
-                        "description": "tear",
+                        "description": "to tear",
                         "image": "words/tear.png",
                         "voice": "voices-$CA/$LOCALE/words/tear.$CA"
                     },
                     {
-                        "description": "think",
+                        "description": "to think",
                         "image": "words/think.png",
                         "voice": "voices-$CA/$LOCALE/words/think.$CA"
                     },
                     {
-                        "description": "touch",
+                        "description": "to touch",
                         "image": "words/touch.png",
                         "voice": "voices-$CA/$LOCALE/words/touch.$CA"
                     },
                     {
-                        "description": "wag",
+                        "description": "to wag",
                         "image": "words/wag.png",
                         "voice": "voices-$CA/$LOCALE/words/wag.$CA"
                     },
                     {
-                        "description": "walk",
+                        "description": "to walk",
                         "image": "words/walk.png",
                         "voice": "voices-$CA/$LOCALE/words/walk.$CA"
                     },
                     {
-                        "description": "wash",
+                        "description": "to wash",
                         "image": "words/wash.png",
                         "voice": "voices-$CA/$LOCALE/words/wash.$CA"
                     },
                     {
-                        "description": "whisper",
+                        "description": "to whisper",
                         "image": "words/whisper.png",
                         "voice": "voices-$CA/$LOCALE/words/whisper.$CA"
                     },
                     {
-                        "description": "win",
+                        "description": "to win",
                         "image": "words/win.png",
                         "voice": "voices-$CA/$LOCALE/words/win.$CA"
                     },
                     {
-                        "description": "write",
+                        "description": "to write",
                         "image": "words/write.png",
                         "voice": "voices-$CA/$LOCALE/words/write.$CA"
                     }
@@ -601,9 +801,9 @@
                 "name": "adjective",
                 "content": [
                     {
-                        "description": "behind",
-                        "image": "words/behind.png",
-                        "voice": "voices-$CA/$LOCALE/words/behind.$CA"
+                        "description": "bald",
+                        "image": "words/bald.png",
+                        "voice": "voices-$CA/$LOCALE/words/bald.$CA"
                     },
                     {
                         "description": "big",
@@ -651,16 +851,6 @@
                         "voice": "voices-$CA/$LOCALE/words/fat.$CA"
                     },
                     {
-                        "description": "flat",
-                        "image": "words/flat.png",
-                        "voice": "voices-$CA/$LOCALE/words/flat.$CA"
-                    },
-                    {
-                        "description": "front",
-                        "image": "words/front.png",
-                        "voice": "voices-$CA/$LOCALE/words/front.$CA"
-                    },
-                    {
                         "description": "full",
                         "image": "words/full.png",
                         "voice": "voices-$CA/$LOCALE/words/full.$CA"
@@ -674,11 +864,6 @@
                         "description": "golden",
                         "image": "words/golden.png",
                         "voice": "voices-$CA/$LOCALE/words/golden.$CA"
-                    },
-                    {
-                        "description": "half",
-                        "image": "words/half.png",
-                        "voice": "voices-$CA/$LOCALE/words/half.$CA"
                     },
                     {
                         "description": "happy",
@@ -701,24 +886,14 @@
                         "voice": "voices-$CA/$LOCALE/words/huge.$CA"
                     },
                     {
-                        "description": "hunchback",
-                        "image": "words/hunchback.png",
-                        "voice": "voices-$CA/$LOCALE/words/hunchback.$CA"
+                        "description": "hunchbacked",
+                        "image": "words/hunchbacked.png",
+                        "voice": "voices-$CA/$LOCALE/words/hunchbacked.$CA"
                     },
                     {
                         "description": "ill",
                         "image": "words/ill.png",
                         "voice": "voices-$CA/$LOCALE/words/ill.$CA"
-                    },
-                    {
-                        "description": "left",
-                        "image": "words/left.png",
-                        "voice": "voices-$CA/$LOCALE/words/left.$CA"
-                    },
-                    {
-                        "description": "line",
-                        "image": "words/line.png",
-                        "voice": "voices-$CA/$LOCALE/words/line.$CA"
                     },
                     {
                         "description": "liquid",
@@ -736,34 +911,14 @@
                         "voice": "voices-$CA/$LOCALE/words/naked.$CA"
                     },
                     {
-                        "description": "on",
-                        "image": "words/on.png",
-                        "voice": "voices-$CA/$LOCALE/words/on.$CA"
-                    },
-                    {
                         "description": "open",
                         "image": "words/open.png",
                         "voice": "voices-$CA/$LOCALE/words/open.$CA"
                     },
                     {
-                        "description": "petite",
-                        "image": "words/petite.png",
-                        "voice": "voices-$CA/$LOCALE/words/petite.$CA"
-                    },
-                    {
                         "description": "pretty",
                         "image": "words/pretty.png",
                         "voice": "voices-$CA/$LOCALE/words/pretty.$CA"
-                    },
-                    {
-                        "description": "right",
-                        "image": "words/right.png",
-                        "voice": "voices-$CA/$LOCALE/words/right.$CA"
-                    },
-                    {
-                        "description": "round",
-                        "image": "words/round.png",
-                        "voice": "voices-$CA/$LOCALE/words/round.$CA"
                     },
                     {
                         "description": "royal",
@@ -796,21 +951,6 @@
                         "voice": "voices-$CA/$LOCALE/words/small.$CA"
                     },
                     {
-                        "description": "spot",
-                        "image": "words/spot.png",
-                        "voice": "voices-$CA/$LOCALE/words/spot.$CA"
-                    },
-                    {
-                        "description": "square",
-                        "image": "words/square.png",
-                        "voice": "voices-$CA/$LOCALE/words/square.$CA"
-                    },
-                    {
-                        "description": "stand",
-                        "image": "words/stand.png",
-                        "voice": "voices-$CA/$LOCALE/words/stand.$CA"
-                    },
-                    {
                         "description": "steep",
                         "image": "words/steep.png",
                         "voice": "voices-$CA/$LOCALE/words/steep.$CA"
@@ -824,11 +964,6 @@
                         "description": "straight",
                         "image": "words/straight.png",
                         "voice": "voices-$CA/$LOCALE/words/straight.$CA"
-                    },
-                    {
-                        "description": "stripe",
-                        "image": "words/stripe.png",
-                        "voice": "voices-$CA/$LOCALE/words/stripe.$CA"
                     },
                     {
                         "description": "strong",
@@ -849,16 +984,6 @@
                         "description": "tired",
                         "image": "words/tired.png",
                         "voice": "voices-$CA/$LOCALE/words/tired.$CA"
-                    },
-                    {
-                        "description": "triangle",
-                        "image": "words/triangle.png",
-                        "voice": "voices-$CA/$LOCALE/words/triangle.$CA"
-                    },
-                    {
-                        "description": "under",
-                        "image": "words/under.png",
-                        "voice": "voices-$CA/$LOCALE/words/under.$CA"
                     },
                     {
                         "description": "wet",
@@ -1041,11 +1166,6 @@
                         "voice": "voices-$CA/$LOCALE/words/back.$CA"
                     },
                     {
-                        "description": "bald",
-                        "image": "words/bald.png",
-                        "voice": "voices-$CA/$LOCALE/words/bald.$CA"
-                    },
-                    {
                         "description": "beard",
                         "image": "words/beard.png",
                         "voice": "voices-$CA/$LOCALE/words/beard.$CA"
@@ -1114,11 +1234,6 @@
                         "description": "face",
                         "image": "words/face.png",
                         "voice": "voices-$CA/$LOCALE/words/face.$CA"
-                    },
-                    {
-                        "description": "feet",
-                        "image": "words/feet.png",
-                        "voice": "voices-$CA/$LOCALE/words/feet.$CA"
                     },
                     {
                         "description": "femur",
@@ -1234,11 +1349,6 @@
                         "description": "spine",
                         "image": "words/spine.png",
                         "voice": "voices-$CA/$LOCALE/words/spine.$CA"
-                    },
-                    {
-                        "description": "stare",
-                        "image": "words/stare.png",
-                        "voice": "voices-$CA/$LOCALE/words/stare.$CA"
                     },
                     {
                         "description": "stomach",
@@ -1533,22 +1643,17 @@
                         "voice": "voices-$CA/$LOCALE/words/blush.$CA"
                     },
                     {
-                        "description": "danger",
-                        "image": "words/danger.png",
-                        "voice": "voices-$CA/$LOCALE/words/danger.$CA"
+                        "description": "fear",
+                        "image": "words/fear.png",
+                        "voice": "voices-$CA/$LOCALE/words/fear.$CA"
                     },
                     {
-                        "description": "frown",
-                        "image": "words/frown.png",
-                        "voice": "voices-$CA/$LOCALE/words/frown.$CA"
+                        "description": "joy",
+                        "image": "words/joy.png",
+                        "voice": "voices-$CA/$LOCALE/words/joy.$CA"
                     },
                     {
-                        "description": "fun",
-                        "image": "words/fun.png",
-                        "voice": "voices-$CA/$LOCALE/words/fun.$CA"
-                    },
-                    {
-                        "description": "laugh",
+                        "description": "to laugh",
                         "image": "words/laugh.png",
                         "voice": "voices-$CA/$LOCALE/words/laugh.$CA"
                     },
@@ -1639,11 +1744,6 @@
                         "voice": "voices-$CA/$LOCALE/words/chef.$CA"
                     },
                     {
-                        "description": "chief",
-                        "image": "words/chief.png",
-                        "voice": "voices-$CA/$LOCALE/words/chief.$CA"
-                    },
-                    {
                         "description": "cleaning lady",
                         "image": "words/cleaning_lady.png",
                         "voice": "voices-$CA/$LOCALE/words/cleaning_lady.$CA"
@@ -1662,11 +1762,6 @@
                         "description": "cowboy",
                         "image": "words/cowboy.png",
                         "voice": "voices-$CA/$LOCALE/words/cowboy.$CA"
-                    },
-                    {
-                        "description": "criminal",
-                        "image": "words/criminal.png",
-                        "voice": "voices-$CA/$LOCALE/words/criminal.$CA"
                     },
                     {
                         "description": "doctor",
@@ -1724,21 +1819,6 @@
                         "voice": "voices-$CA/$LOCALE/words/juggler.$CA"
                     },
                     {
-                        "description": "king",
-                        "image": "words/king.png",
-                        "voice": "voices-$CA/$LOCALE/words/king.$CA"
-                    },
-                    {
-                        "description": "knight",
-                        "image": "words/knight.png",
-                        "voice": "voices-$CA/$LOCALE/words/knight.$CA"
-                    },
-                    {
-                        "description": "lad",
-                        "image": "words/lad.png",
-                        "voice": "voices-$CA/$LOCALE/words/lad.$CA"
-                    },
-                    {
                         "description": "lawyer",
                         "image": "words/lawyer.png",
                         "voice": "voices-$CA/$LOCALE/words/lawyer.$CA"
@@ -1779,11 +1859,6 @@
                         "voice": "voices-$CA/$LOCALE/words/pilot.$CA"
                     },
                     {
-                        "description": "pirate",
-                        "image": "words/pirate.png",
-                        "voice": "voices-$CA/$LOCALE/words/pirate.$CA"
-                    },
-                    {
                         "description": "plumber",
                         "image": "words/plumber.png",
                         "voice": "voices-$CA/$LOCALE/words/plumber.$CA"
@@ -1794,39 +1869,9 @@
                         "voice": "voices-$CA/$LOCALE/words/police.$CA"
                     },
                     {
-                        "description": "pope",
-                        "image": "words/pope.png",
-                        "voice": "voices-$CA/$LOCALE/words/pope.$CA"
-                    },
-                    {
-                        "description": "president",
-                        "image": "words/president.png",
-                        "voice": "voices-$CA/$LOCALE/words/president.$CA"
-                    },
-                    {
                         "description": "priest",
                         "image": "words/priest.png",
                         "voice": "voices-$CA/$LOCALE/words/priest.$CA"
-                    },
-                    {
-                        "description": "prince",
-                        "image": "words/prince.png",
-                        "voice": "voices-$CA/$LOCALE/words/prince.$CA"
-                    },
-                    {
-                        "description": "princess",
-                        "image": "words/princess.png",
-                        "voice": "voices-$CA/$LOCALE/words/princess.$CA"
-                    },
-                    {
-                        "description": "prisoner",
-                        "image": "words/prisoner.png",
-                        "voice": "voices-$CA/$LOCALE/words/prisoner.$CA"
-                    },
-                    {
-                        "description": "queen",
-                        "image": "words/queen.png",
-                        "voice": "voices-$CA/$LOCALE/words/queen.$CA"
                     },
                     {
                         "description": "sailor",
@@ -1839,24 +1884,9 @@
                         "voice": "voices-$CA/$LOCALE/words/soldier.$CA"
                     },
                     {
-                        "description": "female soldier",
-                        "image": "words/soldier_female.png",
-                        "voice": "voices-$CA/$LOCALE/words/soldier_female.$CA"
-                    },
-                    {
-                        "description": "student",
-                        "image": "words/student.png",
-                        "voice": "voices-$CA/$LOCALE/words/student.$CA"
-                    },
-                    {
                         "description": "teacher",
                         "image": "words/teacher.png",
                         "voice": "voices-$CA/$LOCALE/words/teacher.$CA"
-                    },
-                    {
-                        "description": "thief",
-                        "image": "words/thief.png",
-                        "voice": "voices-$CA/$LOCALE/words/thief.$CA"
                     },
                     {
                         "description": "vet",
@@ -1874,16 +1904,6 @@
                 "type": "lesson",
                 "name": "people",
                 "content": [
-                    {
-                        "description": "angel",
-                        "image": "words/angel.png",
-                        "voice": "voices-$CA/$LOCALE/words/angel.$CA"
-                    },
-                    {
-                        "description": "fairy",
-                        "image": "words/fairy.png",
-                        "voice": "voices-$CA/$LOCALE/words/fairy.$CA"
-                    },
                     {
                         "description": "wedding",
                         "image": "words/wedding.png",
@@ -1940,11 +1960,6 @@
                         "voice": "voices-$CA/$LOCALE/words/girl.$CA"
                     },
                     {
-                        "description": "gnome",
-                        "image": "words/gnome.png",
-                        "voice": "voices-$CA/$LOCALE/words/gnome.$CA"
-                    },
-                    {
                         "description": "grandmother",
                         "image": "words/grandmother.png",
                         "voice": "voices-$CA/$LOCALE/words/grandmother.$CA"
@@ -1968,21 +1983,6 @@
                         "description": "mate",
                         "image": "words/mate.png",
                         "voice": "voices-$CA/$LOCALE/words/mate.$CA"
-                    },
-                    {
-                        "description": "mate female",
-                        "image": "words/mate_female.png",
-                        "voice": "voices-$CA/$LOCALE/words/mate_female.$CA"
-                    },
-                    {
-                        "description": "mate male",
-                        "image": "words/mate_male.png",
-                        "voice": "voices-$CA/$LOCALE/words/mate_male.$CA"
-                    },
-                    {
-                        "description": "men",
-                        "image": "words/men.png",
-                        "voice": "voices-$CA/$LOCALE/words/men.$CA"
                     },
                     {
                         "description": "mom",
@@ -2054,11 +2054,6 @@
                         "description": "ballet",
                         "image": "words/ballet.png",
                         "voice": "voices-$CA/$LOCALE/words/ballet.$CA"
-                    },
-                    {
-                        "description": "camp",
-                        "image": "words/camp.png",
-                        "voice": "voices-$CA/$LOCALE/words/camp.$CA"
                     },
                     {
                         "description": "cheer",
@@ -2182,16 +2177,6 @@
                 "name": "food",
                 "content": [
                     {
-                        "description": "beef",
-                        "image": "words/beef.png",
-                        "voice": "voices-$CA/$LOCALE/words/beef.$CA"
-                    },
-                    {
-                        "description": "bone",
-                        "image": "words/bone.png",
-                        "voice": "voices-$CA/$LOCALE/words/bone.$CA"
-                    },
-                    {
                         "description": "bread",
                         "image": "words/bread.png",
                         "voice": "voices-$CA/$LOCALE/words/bread.$CA"
@@ -2287,11 +2272,6 @@
                         "voice": "voices-$CA/$LOCALE/words/flour.$CA"
                     },
                     {
-                        "description": "food",
-                        "image": "words/food.png",
-                        "voice": "voices-$CA/$LOCALE/words/food.$CA"
-                    },
-                    {
                         "description": "fries",
                         "image": "words/fries.png",
                         "voice": "voices-$CA/$LOCALE/words/fries.$CA"
@@ -2310,6 +2290,11 @@
                         "description": "ham",
                         "image": "words/ham.png",
                         "voice": "voices-$CA/$LOCALE/words/ham.$CA"
+                    },
+                    {
+                        "description": "hamburger",
+                        "image": "words/hamburger.png",
+                        "voice": "voices-$CA/$LOCALE/words/hamburger.$CA"
                     },
                     {
                         "description": "hot dog",
@@ -2382,9 +2367,9 @@
                         "voice": "voices-$CA/$LOCALE/words/pizza.$CA"
                     },
                     {
-                        "description": "pop",
-                        "image": "words/pop.png",
-                        "voice": "voices-$CA/$LOCALE/words/pop.$CA"
+                        "description": "popcorn",
+                        "image": "words/popcorn.png",
+                        "voice": "voices-$CA/$LOCALE/words/popcorn.$CA"
                     },
                     {
                         "description": "rice",
@@ -2435,11 +2420,6 @@
                         "description": "sprinkle",
                         "image": "words/sprinkle.png",
                         "voice": "voices-$CA/$LOCALE/words/sprinkle.$CA"
-                    },
-                    {
-                        "description": "steak",
-                        "image": "words/steak.png",
-                        "voice": "voices-$CA/$LOCALE/words/steak.$CA"
                     },
                     {
                         "description": "stew",
@@ -2878,11 +2858,6 @@
                         "description": "lamb",
                         "image": "words/lamb.png",
                         "voice": "voices-$CA/$LOCALE/words/lamb.$CA"
-                    },
-                    {
-                        "description": "leg animal",
-                        "image": "words/leg_animal.png",
-                        "voice": "voices-$CA/$LOCALE/words/leg_animal.$CA"
                     },
                     {
                         "description": "lemur",
@@ -4503,11 +4478,6 @@
                         "voice": "voices-$CA/$LOCALE/words/lamp.$CA"
                     },
                     {
-                        "description": "light",
-                        "image": "words/light.png",
-                        "voice": "voices-$CA/$LOCALE/words/light.$CA"
-                    },
-                    {
                         "description": "mat",
                         "image": "words/mat.png",
                         "voice": "voices-$CA/$LOCALE/words/mat.$CA"
@@ -4788,11 +4758,6 @@
                         "description": "soccer ball",
                         "image": "words/ball_soccer.png",
                         "voice": "voices-$CA/$LOCALE/words/ball_soccer.$CA"
-                    },
-                    {
-                        "description": "bead",
-                        "image": "words/bead.png",
-                        "voice": "voices-$CA/$LOCALE/words/bead.$CA"
                     },
                     {
                         "description": "bell",
@@ -5450,39 +5415,9 @@
                         "voice": "voices-$CA/$LOCALE/words/ball_of_yarn.$CA"
                     },
                     {
-                        "description": "christmas",
-                        "image": "words/christmas.png",
-                        "voice": "voices-$CA/$LOCALE/words/christmas.$CA"
-                    },
-                    {
                         "description": "foam",
                         "image": "words/foam.png",
                         "voice": "voices-$CA/$LOCALE/words/foam.$CA"
-                    },
-                    {
-                        "description": "guignol",
-                        "image": "words/guignol.png",
-                        "voice": "voices-$CA/$LOCALE/words/guignol.$CA"
-                    },
-                    {
-                        "description": "movie",
-                        "image": "words/movie.png",
-                        "voice": "voices-$CA/$LOCALE/words/movie.$CA"
-                    },
-                    {
-                        "description": "music",
-                        "image": "words/music.png",
-                        "voice": "voices-$CA/$LOCALE/words/music.$CA"
-                    },
-                    {
-                        "description": "price",
-                        "image": "words/price.png",
-                        "voice": "voices-$CA/$LOCALE/words/price.$CA"
-                    },
-                    {
-                        "description": "dot",
-                        "image": "words/dot.png",
-                        "voice": "voices-$CA/$LOCALE/words/dot.$CA"
                     }
                 ]
             },
@@ -5589,12 +5524,13 @@
                         "description": "wrench",
                         "image": "words/wrench.png",
                         "voice": "voices-$CA/$LOCALE/words/wrench.$CA"
-                    },
-                    {
-                        "description": "trip",
-                        "image": "words/trip.png",
-                        "voice": "voices-$CA/$LOCALE/words/trip.$CA"
-                    },
+                    }
+                ]
+            },
+            {
+                "type": "lesson",
+                "name": "transport",
+                "content": [
                     {
                         "description": "bike",
                         "image": "words/bike.png",
@@ -5621,11 +5557,6 @@
                         "voice": "voices-$CA/$LOCALE/words/car.$CA"
                     },
                     {
-                        "description": "engine",
-                        "image": "words/engine.png",
-                        "voice": "voices-$CA/$LOCALE/words/engine.$CA"
-                    },
-                    {
                         "description": "motorcycle",
                         "image": "words/motorcycle.png",
                         "voice": "voices-$CA/$LOCALE/words/motorcycle.$CA"
@@ -5636,29 +5567,14 @@
                         "voice": "voices-$CA/$LOCALE/words/parachute.$CA"
                     },
                     {
-                        "description": "pedal",
-                        "image": "words/pedal.png",
-                        "voice": "voices-$CA/$LOCALE/words/pedal.$CA"
-                    },
-                    {
                         "description": "plane",
                         "image": "words/plane.png",
                         "voice": "voices-$CA/$LOCALE/words/plane.$CA"
                     },
                     {
-                        "description": "porthole",
-                        "image": "words/porthole.png",
-                        "voice": "voices-$CA/$LOCALE/words/porthole.$CA"
-                    },
-                    {
                         "description": "raft",
                         "image": "words/raft.png",
                         "voice": "voices-$CA/$LOCALE/words/raft.$CA"
-                    },
-                    {
-                        "description": "rocket",
-                        "image": "words/rocket.png",
-                        "voice": "voices-$CA/$LOCALE/words/rocket.$CA"
                     },
                     {
                         "description": "sail",

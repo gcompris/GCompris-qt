@@ -17,7 +17,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 
@@ -26,7 +26,7 @@ QtObject {
     property string backgroundImage: "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/content.svg"
     property var tab : [
         {
-            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
+            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Chameleon"),
             "text": qsTr("Chameleon lives in Africa and Madagascar and is well-known for its ability to change its skin color in a couple of seconds."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/chameleon.jpg",
@@ -37,7 +37,7 @@ QtObject {
             "height": 0.1005
         },
         {
-            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
+            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Polar bear"),
             "text": qsTr("Polar bear is one of the world's largest predatory mammals. It weights up to a ton and can be as long as 3 meters!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/polar_bear.jpg",
@@ -48,7 +48,7 @@ QtObject {
             "height": 0.1005
         },
         {
-            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
+            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Kangaroo"),
             "text": qsTr("Kangaroo lives in Australia and is well-known for pouch on its belly used to cradle baby kangaroos."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/kangaroo.jpg",
@@ -59,7 +59,7 @@ QtObject {
             "height": 0.1005
         },
         {
-            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
+            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Scarlet macaw"),
             "text": qsTr("Scarlet macaw lives in South America and is a big and bright colored parrot, able to learn up to 100 words!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/scarlet_macaw.jpg",
@@ -70,7 +70,7 @@ QtObject {
             "height": 0.1005
         },
         {
-            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/tux.svg",
+            "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Moose"),
             "text": qsTr("Being the largest of all the deers, moose eats as much as 25 kg a day. However, it's not easy, so sometimes moose has to stand on its hind legs to reach branches up to 4 meters!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/moose.jpg",

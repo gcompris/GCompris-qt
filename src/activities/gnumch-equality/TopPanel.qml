@@ -17,7 +17,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -26,12 +26,12 @@ import "../../core"
 
 Rectangle {
     property int goal
-    property var muncherLife : muncherLife
-    property var life : life
-    property var bar : bar
+    property var muncherLife: muncherLife
+    property var life: life
+    property var bar: bar
 
     width: gridPart.width
-    height: background.height / 7 - 4
+    height: background.height / 3
     anchors.right: parent.right
     anchors.bottom: parent.bottom
     border.color: "black"
@@ -44,6 +44,8 @@ Rectangle {
 
     GCText {
         id: goalText
+        height: parent.height - bar.height
+        width: parent.width - parent.height*1.8
 
         function setTextGoal(goal) {
             if (activity.type === "equality") {
@@ -64,27 +66,20 @@ Rectangle {
         fontSize: hugeSize
         font.weight: Font.DemiBold
         maximumLineCount: 1
-        verticalAlignment: Text.AlignVCenter
+        verticalAlignment: Text.AlignTop
         horizontalAlignment: Text.AlignHCenter
 
-        anchors {
-            right: muncherLife.left
-            rightMargin: ApplicationInfo.ratio*5
-            left: bar.right
-            leftMargin: ApplicationInfo.ratio*5
-            top: parent.top
-            bottom: parent.bottom
-        }
+        anchors.horizontalCenter: parent.horizontalCenter
     }
 
     Rectangle {
         id: muncherLife
 
         width: height
-        height: parent.height * 0.9
+        height: parent.height * 0.5
         anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
-        anchors.rightMargin: ApplicationInfo.ratio*5
+        anchors.rightMargin: 5 * ApplicationInfo.ratio
         border.width: 2
         radius: 5
 

@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -42,6 +42,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -61,6 +62,7 @@ ActivityBase {
             property alias tux: tux
             property alias fishToReach: fishToReach
             property int clockPosition: 4
+            property string mode: "dot"
         }
 
         onStart: { Activity.start(items) }
@@ -164,13 +166,18 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Image {
@@ -214,8 +221,58 @@ ActivityBase {
             }
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+                    property var availableModes: [
+                        { "text": qsTr("Dots"), "value": "dot" },
+                        { "text": qsTr("Arabic numbers"), "value": "number" },
+                        { "text": qsTr("Roman numbers"), "value": "roman" },
+                        { "text": qsTr("Images"), "value": "image" }
+                    ]
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: modeBox
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select Domino Representation")
+                        }
+                    }
+                }
+            }
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    items.mode = dataToSave["mode"];
+                }
+            }
+            onSaveData: {
+                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                if (newMode !== items.mode) {
+                    items.mode = newMode;
+                    dataToSave = {"mode": items.mode};
+                }
+                Activity.initLevel();
+            }
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         ChooseDiceBar {
             id: chooseDiceBar
+            mode: items.mode
             x: background.width / 5 + 20
             y: (background.height - background.height/5) * 3 / 5
             audioEffects: activity.audioEffects

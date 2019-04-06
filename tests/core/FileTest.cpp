@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 /* This file is used for the unit tests */
@@ -40,8 +40,8 @@ private slots:
     void NameTest();
 };
 
-static const QString tempFilename = QStringLiteral("./dummy_test_files.txt");
-static const QString fakeFilename = QStringLiteral("-_/fezagvvx&V/d;-ùlc");
+static const char *tempFilename = "./dummy_test_files.txt";
+static const char *fakeFilename = "-_/fezagvvx&V/d;-ùlc";
 
 void CoreFileTest::FileExistsTest()
 {
@@ -58,7 +58,7 @@ void CoreFileTest::ReadWriteErrorsTest_data()
     QTest::addColumn<QString>("filename");
     QTest::addColumn<QString>("readError");
     QTest::addColumn<QString>("writeError");
-    QTest::newRow("empty file") << QStringLiteral("")
+    QTest::newRow("empty file") << ""
                                 << QStringLiteral("source is empty")
                                 << QStringLiteral("source is empty");
 
@@ -89,6 +89,11 @@ void CoreFileTest::ReadWriteErrorsTest()
     QVERIFY(spyError.count() == 2);
     error = qvariant_cast<QString>(spyError.at(1).at(0));
     QCOMPARE(error, writeError);
+    // we can't append
+    QVERIFY(!file.append(fileContent, filename));
+    QVERIFY(spyError.count() == 3);
+    error = qvariant_cast<QString>(spyError.at(2).at(0));
+    QCOMPARE(error, writeError);
 }
 
 void CoreFileTest::ReadWriteTest()
@@ -103,6 +108,11 @@ void CoreFileTest::ReadWriteTest()
     // normal use case, file exists
     QVERIFY(file.write(fileContent, tempFilename));
     QCOMPARE(file.read(), fileContent);
+
+    // append to the file
+    const QString appendedText = QStringLiteral("appended text.");
+    QVERIFY(file.append(appendedText, tempFilename));
+    QCOMPARE(file.read(), fileContent+appendedText);
 }
 
 void CoreFileTest::NameTest()
@@ -113,13 +123,13 @@ void CoreFileTest::NameTest()
     QVERIFY(spyName.count() == 0);
     file.setName(tempFilename);
     QVERIFY(spyName.count() == 1);
-    QCOMPARE(file.name(), tempFilename);
+    QCOMPARE(file.name(), QString(tempFilename));
     // test sanitizeUrl
     const QString sameNameUnsanitized = QStringLiteral("file://")+tempFilename;
     file.setName(sameNameUnsanitized);
     // no update triggered as same name after sanitization
     QVERIFY(spyName.count() == 1);
-    QCOMPARE(file.name(), tempFilename);
+    QCOMPARE(file.name(), QString(tempFilename));
 
     const QString filenameUnsanitized = QStringLiteral("qrc:/")+tempFilename;
     file.setName(filenameUnsanitized);

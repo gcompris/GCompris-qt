@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -78,7 +78,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool portrait: height > width ? true : false
+        property bool portrait: height >= width ? true : false
         property bool inLine: true
 
         Keys.onPressed: {

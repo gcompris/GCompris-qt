@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 
@@ -51,21 +51,25 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property GCSfx audioEffects: activity.audioEffects
-            property alias answerModel: answerModel
-            property alias pocketModel: pocketModel
+            property alias answerModel: answerArea.pocketModel
+            property alias pocketModel: pocketArea.pocketModel
             property alias store: store
             property alias instructions: instructions
             property alias tux: tux
             property alias tuxMoney: tuxMoney
             property alias bar: bar
             property alias bonus: bonus
+            property int itemIndex
+            property var selectedArea
+            property alias pocket: pocketArea.answer
+            property alias answer: answerArea.answer
         }
 
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
         Column {
-            id: column
+            id: columnLayout
             spacing: 10
             x: parent.width * 0.05
             y: parent.height * 0.05
@@ -79,70 +83,26 @@ ActivityBase {
             property int itemHeight: itemWidth * 0.59
 
             // === The Answer Area ===
-            Rectangle {
+            MoneyArea {
                 id: answerArea
-                height: (column.itemHeight + 10) * column.nbLines
-                width: column.width
-                color: "#55333333"
-                border.color: "black"
-                border.width: 2
-                radius: 5
-
-                Flow {
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
-                    anchors.fill: parent
-                    spacing: 10
-
-                    add: Transition {
-                        NumberAnimation {
-                            properties: "x"
-                            from: parent.width * 0.05
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
-
-                    move: Transition {
-                        NumberAnimation {
-                            properties: "x,y"
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
-
-                    Repeater {
-                        id: answer
-                        model: ListModel { id: answerModel }
-                        Image {
-                            source: Activity.url + img
-                            sourceSize.height: column.itemHeight
-                            height: column.itemHeight
-
-                            MultiPointTouchArea {
-                                anchors.fill: parent
-                                onReleased: Activity.unpay(index)
-                            }
-                        }
-                    }
-                }
+                onTransaction: Activity.unpay(index)
             }
 
             // === The Store Area ===
             property int nbStoreColumns: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                          activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
             //tempSpace is a workaround to replace instructionsArea.realHeight that is freezing with Qt-5.9.1
-            property int tempSpace: bar.level === 1 ? 140 + column.spacing : 0
+            property int tempSpace: bar.level === 1 ? 140 + columnLayout.spacing : 0
             property int itemStoreWidth:
-                Math.min((column.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
+                Math.min((columnLayout.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
                          (parent.height - answerArea.height -
                           pocketArea.height - bar.height) * 0.8) - tempSpace
             property int itemStoreHeight: itemStoreWidth
 
             Rectangle {
                 id: storeArea
-                height: (column.itemStoreHeight + 10)
-                width: column.width
+                height: (columnLayout.itemStoreHeight + 10)
+                width: columnLayout.width
                 color: "#55333333"
                 border.color: "black"
                 border.width: 2
@@ -170,13 +130,13 @@ ActivityBase {
                         visible: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                  activity.dataset === "BACK_WITH_CENTS"
                         source: Activity.url + "/tux.svg"
-                        sourceSize.height:  column.itemStoreHeight
-                        sourceSize.width:  column.itemStoreHeight
+                        sourceSize.height:  columnLayout.itemStoreHeight
+                        sourceSize.width:  columnLayout.itemStoreHeight
                         Repeater {
                             id: tuxMoney
                             Image {
                                 source: Activity.url + modelData.img
-                                sourceSize.height:  column.itemStoreHeight * 0.4
+                                sourceSize.height:  columnLayout.itemStoreHeight * 0.4
                                 x: tux.x + index * 20
                                 y: tux.y + tux.height / 2 + index * 20
                             }
@@ -187,8 +147,8 @@ ActivityBase {
                         id: store
                         Image {
                             source: Activity.url + modelData.img
-                            sourceSize.height: column.itemStoreHeight
-                            sourceSize.width: column.itemStoreHeight
+                            sourceSize.height: columnLayout.itemStoreHeight
+                            sourceSize.width: columnLayout.itemStoreHeight
                             GCText {
                                 text: modelData.price
                                 fontSize: 16
@@ -209,7 +169,7 @@ ActivityBase {
             Rectangle {
                 id: instructionsArea
                 height: instructions.height
-                width: column.width
+                width: columnLayout.width
                 color: "#55333333"
                 border.color: "black"
                 border.width: 2
@@ -220,70 +180,69 @@ ActivityBase {
                 anchors.rightMargin: 10
                 visible: bar.level === 1
 
-                property int realHeight: bar.level === 1 ? height + column.spacing : 0
+                property int realHeight: bar.level === 1 ? height + columnLayout.spacing : 0
 
                 GCText {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
-                    width: column.width
-                    height: column.height / 6
+                    width: columnLayout.width
+                    height: columnLayout.height / 6
                     wrapMode: Text.WordWrap
                     fontSizeMode: Text.Fit
                 }
             }
 
             // === The Pocket Area ===
-            Rectangle {
+            MoneyArea {
                 id: pocketArea
-                height: (column.itemHeight + 10) * column.nbLines
-                width: column.width
-                color: "#661111AA"
-                border.color: "black"
-                border.width: 2
-                radius: 5
+                onTransaction: Activity.pay(index)
+            }
+        }
 
-                Flow {
-                    anchors.topMargin: 4
-                    anchors.bottomMargin: 4
-                    anchors.leftMargin: 10
-                    anchors.rightMargin: 10
-                    anchors.fill: parent
-                    spacing: 10
 
-                    add: Transition {
-                        NumberAnimation {
-                            properties: "x"
-                            from: parent.width * 0.05
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Tab) {
+                if(items.selectedArea.count !== 0 && items.itemIndex !== -1)
+                    items.selectedArea.itemAt(items.itemIndex).selected = false
 
-                    move: Transition {
-                        NumberAnimation {
-                            properties: "x,y"
-                            easing.type: Easing.InOutQuad
-                        }
-                    }
+                if(items.selectedArea == items.pocket) {
+                    items.selectedArea = items.answer
+                }
+                else {
+                    items.selectedArea = items.pocket
+                }
+                items.itemIndex = 0
+            }
 
-                    Repeater {
-                        id: pocket
-                        model: ListModel { id: pocketModel }
-                        Image {
-                            source: Activity.url + img
-                            sourceSize.height:  column.itemHeight
-                            height: column.itemHeight
+            if(items.selectedArea.count !== 0) {
+                if(items.itemIndex >= 0)
+                    items.selectedArea.itemAt(items.itemIndex).selected = false
 
-                            MultiPointTouchArea {
-                                anchors.fill: parent
-                                onReleased: Activity.pay(index)
-                            }
-                        }
-                    }
+                if(event.key === Qt.Key_Right) {
+                    if(items.itemIndex != (items.selectedArea.count-1))
+                        items.itemIndex++
+                    else
+                        items.itemIndex = 0
+                }
+                if(event.key === Qt.Key_Left) {
+                    if(items.itemIndex > 0)
+                        items.itemIndex--
+                    else
+                        items.itemIndex = items.selectedArea.count-1
+                }
+                if([Qt.Key_Space, Qt.Key_Enter, Qt.Key_Return].indexOf(event.key) != -1 && items.itemIndex !== -1 ) {
+                    if(items.selectedArea == items.pocket)
+                        Activity.pay(items.itemIndex)
+                    else
+                        Activity.unpay(items.itemIndex)
+                    if(items.itemIndex > 0)
+                        items.itemIndex--
                 }
             }
 
+            if(items.selectedArea.count !== 0 && items.itemIndex !== -1)
+                items.selectedArea.itemAt(items.itemIndex).selected = true
         }
-
 
         DialogHelp {
             id: dialogHelp

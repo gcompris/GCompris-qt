@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 .pragma library
 .import QtQuick 2.6 as Quick
@@ -82,7 +82,7 @@ function startMotion(x1, y1) {
     items.timer.start()
 }
 
-/* Calcualtes the angle between the two points */
+/* Calculates the angle between the two points */
 function getAngle(sx1, sy1, sx2, sy2)
 {
         var dy, slope, angle;

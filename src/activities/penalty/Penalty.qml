@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -86,8 +86,8 @@ ActivityBase {
             property alias progressRight: progressRight
             property alias progressTop: progressTop
             property alias bonus: bonus
-            property int duration : 0
-            property int progressBarOpacity : 40
+            property int duration: 0
+            property int progressBarOpacity: 40
             property string saveBallState: "INITIAL"
             property double ballX: ball.parent.width/2 - ball.width/2
             property double ballY: ball.parent.height*0.77 - ball.height/2

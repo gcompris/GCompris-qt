@@ -19,7 +19,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -70,7 +70,7 @@ Item {
         sourceSize.width: Math.max(parent.width, parent.height)
         height: parent.height
 
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
 
         JsonParser {
             id: parser
@@ -239,10 +239,10 @@ Item {
             fillMode: Image.PreserveAspectFit
             anchors {
                 top: imageFrame.bottom
-                topMargin: 10* ApplicationInfo.ratio
-                left: imageFrame.right
-                leftMargin: 10* ApplicationInfo.ratio
-                right: parent.right
+                topMargin: 10
+                right: imageFrame.left
+                rightMargin: parent.width * 0.06
+
             }
             MouseArea {
                 id: okMouseArea
@@ -280,11 +280,6 @@ Item {
 
     Score {
         id: score
-        anchors.bottom: undefined
-        anchors.bottomMargin: 10 * ApplicationInfo.ratio
-        anchors.right: parent.right
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
-        anchors.top: parent.top
     }
 
     VirtualKeyboard {

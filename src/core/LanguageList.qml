@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -53,17 +53,19 @@ QtObject {
             { "text": "Ελληνικά", "locale": "el_GR.UTF-8" },
             { "text": "Español", "locale": "es_ES.UTF-8" },
             { "text": "Eesti", "locale": "et_EE.UTF-8" },
+            { "text": "Euskara", "locale": "eu_ES.UTF-8" },
             { "text": "Suomi", "locale": "fi_FI.UTF-8" },
             { "text": "Français", "locale": "fr_FR.UTF-8" },
             { "text": "Gaeilge", "locale": "ga_IE.UTF-8" },
             { "text": "Gàidhlig", "locale": "gd_GB.UTF-8" },
             { "text": "Galego", "locale": "gl_ES.UTF-8" },
             { "text": "हिन्दी", "locale": "hi_IN.UTF-8" },
-            //{ "text": "Magyar", "locale": "hu_HU.UTF-8" },
+            { "text": "Magyar", "locale": "hu_HU.UTF-8" },
             { "text": "Indonesia", "locale": "id_ID.UTF-8" },
             { "text": "Italiano", "locale": "it_IT.UTF-8" },
             //{ "text": "Lietuvių", "locale": "lt_LT.UTF-8" },
             //{ "text": "Latviešu", "locale": "lv_LV.UTF-8" },
+            { "text": "മലയാളം",  "locale": "ml_IN.UTF-8" },
             { "text": "Nederlands", "locale": "nl_NL.UTF-8" },
             { "text": "Norsk (nynorsk)", "locale": "nn_NO.UTF-8" },
             { "text": "Polski", "locale": "pl_PL.UTF-8" },

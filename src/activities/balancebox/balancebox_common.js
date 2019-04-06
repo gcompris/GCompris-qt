@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 /**
@@ -60,7 +60,7 @@ var CONTACT = 0x0080;
 
 var baseUrl = "qrc:/gcompris/src/activities/balancebox/resource";
 var builtinFile = baseUrl + "/levels-default.json";
-var userFile = "file://" + GCompris.ApplicationInfo.getSharedWritablePath()
+var userFile = "file://" + GCompris.ApplicationSettings.userDataPath
         + "/balancebox/" + "levels-user.json"
 
 function validateLevels(doc)

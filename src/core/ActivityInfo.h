@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #ifndef ACTIVITYINFO_H
 #define ACTIVITYINFO_H
@@ -172,8 +172,6 @@ public:
         void setLevels(const QStringList&);
         QString currentLevel() const;
         void setCurrentLevel(const QString&);
-
-	QStringList getSectionPath();
 
 signals:
 	void nameChanged();

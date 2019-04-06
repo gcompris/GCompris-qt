@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -105,7 +105,7 @@ Image {
     
     Image {
         id: introTux
-        z:3
+        z: 3
         source: Activity.url + "tux_braille.svg"
         fillMode: Image.PreserveAspectFit
         sourceSize.width: parent.width * 0.2
@@ -129,7 +129,7 @@ Image {
     
     Rectangle {
         id: bgTux
-        z:0
+        z: 0
         color: "#94c1d2"
         width: introTux.width * 1.5
         height: introTux.height * 1.1

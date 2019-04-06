@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef FILE_H
@@ -71,6 +71,16 @@ public:
     Q_INVOKABLE bool write(const QString& data, const QString& name = QString());
 
     /**
+     * Appends @p data to a file.
+     *
+     * @param data Text data to append.
+     * @param name [optional] Filename to append to. If omitted writes to
+     *             the file specified by the member name.
+     * @returns success of the operation.
+     * @sa name
+     */
+    Q_INVOKABLE bool append(const QString& data, const QString& name = QString());
+    /**
      * Checks whether file @p path exists.
      *
      * @param path Filename to check.
@@ -88,8 +98,15 @@ public:
      */
     Q_INVOKABLE static bool mkpath(const QString& path);
 
+    /**
+     * Deletes a file @p path.
+     *
+     * @param path file to delete.
+     * @returns success
+     */
+    Q_INVOKABLE static bool rmpath(const QString& path);
+
     /// @cond INTERNAL_DOCS
-    static void init();
     QString name() const;
     void setName(const QString &str);
     /// @endcond

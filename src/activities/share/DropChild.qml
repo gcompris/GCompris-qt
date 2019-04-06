@@ -13,7 +13,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -37,17 +37,20 @@ Rectangle {
 
     Image {
         id: childImage
-        sourceSize.width: items.cellSize * 1.5 * 0.7
-        sourceSize.height: items.cellSize * 1.5 - 5
+        width: items.cellSize
+        sourceSize.width: width
         anchors.bottom: area.top
         anchors.left: parent.left
         anchors.leftMargin: 20
         source: "resource/images/" + name + ".svg"
+        fillMode: Image.PreserveAspectFit
+        mipmap: true
     }
 
     //displays the number of candies each child has
     GCText {
         id: candyCount
+        color: "#373737"
         anchors.bottom: area.top
         anchors.right: parent.right
         anchors.rightMargin: 20
@@ -63,7 +66,7 @@ Rectangle {
         anchors.bottom: parent.bottom
         radius: width * 0.07
 
-        color: "#cfecf0"
+        color: "#f2f2f2"
 
         property var childCoordinate: repeaterDropAreas.mapToItem(background, dropChild.x, dropChild.y)
         property var candyCoord: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
@@ -137,6 +140,7 @@ Rectangle {
                     sourceSize.width: items.cellSize * 0.6
                     sourceSize.height: items.cellSize * 1.2
                     source: "resource/images/candy.svg"
+                    fillMode: Image.PreserveAspectFit
 
                     property int lastX
                     property int lastY

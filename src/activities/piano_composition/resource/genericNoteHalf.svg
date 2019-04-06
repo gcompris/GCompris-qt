@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2986"
+   viewBox="0 0 744.09 1052.4"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="genericNoteHalf.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     id="namedview12"
+     showgrid="false"
+     inkscape:zoom="0.22424933"
+     inkscape:cx="-118.48042"
+     inkscape:cy="526.20001"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <title
+     id="title3044">half note</title>
+  <defs
+     id="defs2988" />
+  <g
+     id="layer1">
+    <path
+       id="path3"
+       style="stroke-linejoin:round;fill-rule:evenodd;stroke:#000000;stroke-linecap:round;stroke-width:5.9241;fill:#000000;fill-opacity:1"
+       d="m407.69 223.84c-7.2475 0.33178-15.544 4.8587-15.75 12.156-0.45246 129.79-2.2252 259.57-4.4375 389.34-2.3903 17.098-7.7188 34.867-26.875 28.812-39.21-14.91-85.23-10.4-121.63 10.35-37.084 16.471-67.22 55.289-65 97 0.69789 35.974 35.134 60.301 68.438 63.719 35.814 8.2749 72.771-2.12 103.62-20.688 34.633-18.379 71.629-47.097 72.875-89.906 2.4559-167.09 4.7446-319.48-0.5625-483.28-0.073-5.4712-5.0506-7.758-10.688-7.5zm-99.28 436.04c30.478-0.002 56.713 13.001 67.312 36.562 16.152 35.904-10.092 82.712-58.594 104.53-48.502 21.819-100.91 10.404-117.06-25.5-16.152-35.904 10.092-82.712 58.594-104.53 16.672-7.5002 33.785-11.062 49.75-11.062z" />
+  </g>
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Half Note (Stem Facing Up)</dc:title>
+        <dc:date>2010-10-28T16:56:55</dc:date>
+        <dc:description>A single half note with stem facing up.</dc:description>
+        <dc:source>https://openclipart.org/detail/92971/half-note-(stem-facing-up)-by-jaschon</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>jaschon</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>black and white</rdf:li>
+            <rdf:li>half</rdf:li>
+            <rdf:li>half note</rdf:li>
+            <rdf:li>music</rdf:li>
+            <rdf:li>music note</rdf:li>
+            <rdf:li>musical notation</rdf:li>
+            <rdf:li>note</rdf:li>
+            <rdf:li>quaver</rdf:li>
+            <rdf:li>sound</rdf:li>
+            <rdf:li>staff</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Edited by Timothée Giet for GCompris</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

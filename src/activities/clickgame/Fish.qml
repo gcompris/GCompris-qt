@@ -1,4 +1,4 @@
-/* GCompris - Clickgame.qml
+/* GCompris - Fish.qml
  *
  * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import QtQuick.Particles 2.0

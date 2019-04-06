@@ -3,6 +3,9 @@ GCompris.pro.user
 .directory
 *.aac
 *.qrc
+*.qmlc
+*.jsc
+*~
 build/*
 *.DS_Store
 src/activities/activities_out.txt

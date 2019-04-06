@@ -15,7 +15,7 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program; if not, see <http://www.gnu.org/licenses/>.
+#   along with this program; if not, see <https://www.gnu.org/licenses/>.
 
 # Using polib.py from https://bitbucket.org/izi/polib/wiki/Home
 
@@ -24,10 +24,9 @@
 # (if existing) and replace the translation for the ts file.
 # For those not found, no translation is provided.
 
-import polib
-import re
 import sys
 import xml.etree.ElementTree as ET
+import polib
 
 if len(sys.argv) < 4:
     print('Usage : python convertPo.py gcompris_gtk.po gcompris_qt_template.ts $LOCALE.'
@@ -44,7 +43,7 @@ root.set('language', sys.argv[3])
 
 for messages in root.iter('message'):
     original = messages.find('source').text
-    if original != None:
+    if original is not None:
         for entry in po:
             if entry.msgid.encode('utf-8') == original.encode('utf-8') and \
                     'type' in messages.find('translation').attrib and \
@@ -60,4 +59,3 @@ with open('gcompris_' + sys.argv[3] + '.ts', 'wb') as f:
     f.write('<?xml version="1.0" encoding="utf-8" ?>\n<!DOCTYPE TS>\n'.encode('utf-8'))
     tree.write(f, 'utf-8')
 # tree.write('gcompris_' + sys.argv[3] + '.ts', 'utf-8');
-

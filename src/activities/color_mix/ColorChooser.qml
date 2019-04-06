@@ -17,7 +17,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -64,7 +64,7 @@ Image {
         anchors {
             verticalCenter: parent.verticalCenter
             right: parent.right
-            rightMargin: parent.width * 0.2
+            rightMargin: parent.width * 0.25
         }
     }
 
@@ -73,7 +73,7 @@ Image {
         anchors {
             verticalCenter: parent.verticalCenter
             left: parent.left
-            leftMargin: parent.width * 0.3
+            leftMargin: parent.width * 0.5
         }
     }
 

@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
@@ -50,7 +50,7 @@ Item {
 
     Component.onCompleted: {
         // make sure our word is completely visible
-        if (x + width > parent.width)
+        if (x + width >= parent.width)
             x = parent.width - width;
     }
 
@@ -75,7 +75,6 @@ Item {
         property: "opacity"
         to: 0
         duration: 1000
-
         onStopped: Activity.deleteWord(word);
     }
 
@@ -91,7 +90,7 @@ Item {
             return (text === c)
         } else {
             var chars = text.split("");
-            if (chars[unmatchedIndex] == c) {
+            if (chars[unmatchedIndex] === c) {
                 unmatchedIndex++;
                 return true;
             } else {
@@ -114,7 +113,6 @@ Item {
 
     GCText {
         id: wordText
-
         text: ""
         fontSize: 35
         font.bold: true
@@ -129,9 +127,7 @@ Item {
 
         GCText {
             id: highlightedWordText
-
             anchors.fill: parent
-
             text: ""
             fontSize: parent.fontSize
             font.bold: parent.font.bold

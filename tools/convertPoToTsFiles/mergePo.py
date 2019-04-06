@@ -15,7 +15,7 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program; if not, see <http://www.gnu.org/licenses/>.
+#   along with this program; if not, see <https://www.gnu.org/licenses/>.
 
 # Using polib.py from https://bitbucket.org/izi/polib/wiki/Home
 
@@ -26,9 +26,8 @@
 
 # something like: python2 mergePo.py gcompris_fi.po fi.po && sed '/^#|/ d' < gcompris_fi.po > qtgl.po && mv qtgl.po gcompris_fi.po
 
-import polib
-import re
 import sys
+import polib
 
 if len(sys.argv) < 3:
     print('Usage : python mergePo.py gcompris_qt.po gcompris_gtk.po.'
@@ -44,9 +43,12 @@ print(po.percent_translated())
 # First remove all fuzzy strings
 for entry in po.fuzzy_entries():
     entry.msgstr = ''
-    if entry.msgid_plural: entry.msgstr_plural['0'] = ''
-    if entry.msgid_plural and '1' in entry.msgstr_plural: entry.msgstr_plural['1'] = ''
-    if entry.msgid_plural and '2' in entry.msgstr_plural: entry.msgstr_plural['2'] = ''
+    if entry.msgid_plural:
+        entry.msgstr_plural['0'] = ''
+    if entry.msgid_plural and '1' in entry.msgstr_plural:
+        entry.msgstr_plural['1'] = ''
+    if entry.msgid_plural and '2' in entry.msgstr_plural:
+        entry.msgstr_plural['2'] = ''
     entry.flags.remove('fuzzy')
     po.save()
 
@@ -60,7 +62,7 @@ for entry in po.fuzzy_entries():
 # Then replace in the output all the good strings
 for entry in po:
     if entry.msgstr != "":
-        continue;
+        continue
 
     for entryGtk in poGtk:
         if entry.msgid.encode('utf-8') == entryGtk.msgid.encode('utf-8') and entryGtk.msgstr != "":
@@ -69,4 +71,3 @@ for entry in po:
 po.save()
 
 print(po.percent_translated())
-

@@ -1,4 +1,4 @@
-/* GCompris - ApplicationSettingsDefault.cpp
+/* GCompris - ApplicationSettings.h
  *
  * Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef APPLICATIONSETTINGS_H
@@ -246,6 +246,21 @@ class ApplicationSettings : public QObject
      */
     Q_PROPERTY(QString cachePath READ cachePath WRITE setCachePath NOTIFY cachePathChanged)
 
+    /**
+     * Return the platform specific path for storing data shared between apps
+     *
+     * On Android: /storage/emulated/0/GCompris (>= Android 4.2),
+     *             /storage/sdcard0/GCompris (< Android 4.2)
+     * On Linux: $HOME/local/share/GCompris
+     */
+    Q_PROPERTY(QString userDataPath READ userDataPath WRITE setUserDataPath NOTIFY userDataPathChanged)
+
+    /**
+      * Define the renderer used.
+      * Either openGL or software renderer (only for Qt >= 5.8)
+      */
+    Q_PROPERTY(QString renderer READ renderer WRITE setRenderer NOTIFY rendererChanged)
+
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
@@ -257,10 +272,9 @@ class ApplicationSettings : public QObject
 
 public:
 	/// @cond INTERNAL_DOCS
-    explicit ApplicationSettings(const QString &path = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
+    explicit ApplicationSettings(const QString &configPath = QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation)
          + "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QObject *parent = 0);
     virtual ~ApplicationSettings();
-    static void init();
     // It is not recommended to create a singleton of Qml Singleton registered
     // object but we could not found a better way to let us access ApplicationInfo
     // on the C++ side. All our test shows that it works.
@@ -270,8 +284,8 @@ public:
         }
         return m_instance;
     }
-    static QObject *systeminfoProvider(QQmlEngine *engine,
-                                       QJSEngine *scriptEngine);
+    static QObject *applicationSettingsProvider(QQmlEngine *engine,
+                                                QJSEngine *scriptEngine);
 
     bool showLockedActivities() const { return m_showLockedActivities; }
     void setShowLockedActivities(const bool newMode) {
@@ -285,10 +299,10 @@ public:
         emit audioVoicesEnabledChanged();
     }
 
-	bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
-	void setIsAudioEffectsEnabled(const bool newMode) {
-		m_isAudioEffectsEnabled = newMode;
-		emit audioEffectsEnabledChanged();
+    bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
+    void setIsAudioEffectsEnabled(const bool newMode) {
+        m_isAudioEffectsEnabled = newMode;
+        emit audioEffectsEnabledChanged();
     }
 
     bool isFullscreen() const { return m_isFullscreen; }
@@ -439,6 +453,11 @@ public:
         emit cachePathChanged();
     }
 
+    QString userDataPath() const { return m_userDataPath; }
+    void setUserDataPath(const QString &newUserDataPath) {
+        m_userDataPath = newUserDataPath;
+        emit userDataPathChanged();
+    }
     quint32 exeCount() const { return m_exeCount; }
     void setExeCount(const quint32 newExeCount) {
         m_exeCount = newExeCount;
@@ -464,6 +483,12 @@ public:
     void setLastGCVersionRan(const int newLastGCVersionRan) {
         m_lastGCVersionRan = newLastGCVersionRan;
         emit lastGCVersionRanChanged();
+    }
+
+    QString renderer() const { return m_renderer; }
+    void setRenderer(const QString &newRenderer) {
+        m_renderer = newRenderer;
+        emit rendererChanged();
     }
 
     /**
@@ -498,10 +523,11 @@ protected slots:
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
     Q_INVOKABLE void notifyCachePathChanged();
-
+    Q_INVOKABLE void notifyUserDataPathChanged();
     Q_INVOKABLE void notifyExeCountChanged();
 
     Q_INVOKABLE void notifyLastGCVersionRanChanged();
+    Q_INVOKABLE void notifyRendererChanged();
 
     Q_INVOKABLE void notifyBarHiddenChanged();
 
@@ -571,10 +597,12 @@ signals:
 
     void downloadServerUrlChanged();
     void cachePathChanged();
+    void userDataPathChanged();
 
     void exeCountChanged();
 
     void lastGCVersionRanChanged();
+    void rendererChanged();
     void barHiddenChanged();
 
 protected:
@@ -616,10 +644,12 @@ private:
 
     QString m_downloadServerUrl;
     QString m_cachePath;
+    QString m_userDataPath;
 
     quint32 m_exeCount;
 
     int m_lastGCVersionRan;
+    QString m_renderer;
 
     bool m_isBarHidden;
 

@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 /*
@@ -55,6 +55,9 @@ Item {
     /* Container for all the tutorial instructions */
     property var tutorialDetails
 
+    /* Do we use image or qml files for illustrations */
+    property bool useImage: true
+    
     // Emitted when skipButton is clicked
     signal skipPressed
 
@@ -162,10 +165,25 @@ Item {
     // Image component for tutorial instructions
     Image {
         id: tutorialImage
+        visible: useImage
         width: parent.width * 0.8
         height: (parent.height - nextButton.height) * 0.48
         fillMode: Image.PreserveAspectFit
-        source: tutorialDetails ? tutorialDetails[tutorialNumber].instructionImage : ""
+        source: tutorialDetails && useImage ? tutorialDetails[tutorialNumber].instructionImage : ""
+        anchors {
+            top: previousButton.bottom
+            topMargin: 10
+            horizontalCenter: parent.horizontalCenter
+        }
+    }
+
+    // Alternative QML component for tutorial instructions
+    Loader {
+        id: tutorialQml
+        enabled: !tutorialImage.visible
+        width: parent.width * 0.8
+        height: (parent.height - nextButton.height) * 0.48
+        source: tutorialDetails && !useImage ? tutorialDetails[tutorialNumber].instructionQml : ""
         anchors {
             top: previousButton.bottom
             topMargin: 10

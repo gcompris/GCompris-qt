@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -66,7 +66,6 @@ ActivityBase {
             source: Activity.url + "top_back.svg"
             sourceSize.width: parent.width * 0.90
 
-
             Row {
                 id: row
                 spacing: 10 * ApplicationInfo.ratio
@@ -78,17 +77,19 @@ ActivityBase {
                     id: cardRepeater
                     model: ["L","O","U","I","S"," ","B","R","A","I","L","L","E"]
 
+                    // workaround for https://bugreports.qt.io/browse/QTBUG-72643 (qml binding with global variable in Repeater do not work)
+                    property alias rowSpacing: row.spacing
                     Item {
                         id: inner
                         height: charList.height * 0.95
-                        width:(charList.width - 13 * row.spacing)/ 13
+                        width: (charList.width - 13 * cardRepeater.rowSpacing)/ 13
 
                         Rectangle {
                             id: rect1
-                            width:  charList.width / 13
+                            width: charList.width / 13
                             height: ins.height
                             border.width: 3
-                            opacity: index==5 ? 0 :1
+                            opacity: index == 5 ? 0 :1
                             border.color: "black"
                             color: "white"
 
@@ -163,20 +164,22 @@ ActivityBase {
             border.width: 1 * ApplicationInfo.ratio
             color: "white"
             width: parent.width * 0.9
-            height:info.height * 1.3
+            height: background.height/5
             anchors.top: charList.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.topMargin: 5 * ApplicationInfo.ratio
 
             GCText {
-                id:info
+                id: info
                 color: "black"
                 anchors.centerIn: parent
-                horizontalAlignment: Text.AlignHCenter
+                horizontalAlignment:  Text.AlignHCenter
                 width: parent.width * 0.94
+                height: info_rect.height
                 wrapMode: Text.WordWrap
                 fontSize: regularSize
                 text: items.dataset[items.count].text
+                fontSizeMode: Text.Fit
             }
         }
 

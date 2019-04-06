@@ -19,7 +19,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 .pragma library
 .import QtQuick 2.6 as Quick
@@ -174,7 +174,7 @@ function placeDisc(disc, towerImage)
 function setDiscY(disc, towerImage)
 {
     //  -(towerImage.height * 0.12) because we need to remove the base of the tower
-    // dependant of the image!
+    // dependent of the image!
     disc.y = towerImage.y + towerImage.height - disc.position * disc.height - (towerImage.height * 0.12)
 }
 
@@ -206,7 +206,6 @@ function discReleased(index)
 {
     var disc = items.discRepeater.itemAt(index)
     var isCorrect = false;
-
 
     if(activityMode == "real") {
         for(var i = 0 ; i < items.towerModel.model ; ++ i) {

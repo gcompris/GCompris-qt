@@ -9,10 +9,10 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    id="svg2"
-   viewBox="0 0 39.374999 56.250001"
+   viewBox="0 0 42 60"
    height="60"
    width="42"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="candy.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -29,7 +29,7 @@
      showgrid="false"
      units="px"
      inkscape:zoom="4.7572176"
-     inkscape:cx="17.731924"
+     inkscape:cx="-72.026426"
      inkscape:cy="63.383296"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -46,12 +46,35 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title></dc:title>
+        <dc:date>2017</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
      id="g3527"
-     transform="matrix(0.67684674,0,0,0.67684674,-68.882985,-459.20893)">
+     transform="matrix(0.72196986,0,0,0.72196986,-73.475185,-489.82286)">
     <path
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#6d1e1e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.37690854;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        d="m 132.02811,679.84788 c -8.04553,-0.25046 -15.95524,4.50231 -19.292,11.86311 -2.59537,5.37625 -3.07538,11.6434 -2.05839,17.46758 0.57967,3.65038 4.41695,5.85396 7.92046,4.98797 3.36839,-0.19947 5.94772,-3.12367 6.13926,-6.41619 0.76465,-4.06045 -0.93689,-8.80985 1.84107,-12.32994 2.25228,-2.20936 6.2761,-2.21667 8.89754,-0.78363 1.74778,2.91763 1.09226,6.56962 1.24283,9.83823 -0.005,16.76895 -0.0427,33.54176 0.0498,50.30834 0.2483,4.26937 5.20633,6.28248 8.87931,5.01663 4.27691,-0.7914 5.63523,-5.40692 5.06709,-9.18845 -0.0232,-16.60727 1.19769,-33.20689 0.69832,-49.81303 -0.2394,-5.15461 -0.59604,-10.90499 -4.58899,-14.69697 -3.79679,-4.00462 -9.29092,-6.27512 -14.79625,-6.25365 z"

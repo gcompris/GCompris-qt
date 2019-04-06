@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include <QtTest>
@@ -42,8 +42,6 @@ class CoreActivityInfoTest : public QObject
 private slots:
     void ActivityInfoTest();
     void ActivityInfoTest_data();
-    void getSectionPathTest();
-    void setNameWithKioskMode();
 };
 
 void CoreActivityInfoTest::ActivityInfoTest_data()
@@ -76,17 +74,17 @@ void CoreActivityInfoTest::ActivityInfoTest()
     // called here to set the static instance object to the mock one
     ApplicationSettingsMock::getInstance();
 
-    QCOMPARE(activityinfo.name(), QStringLiteral(""));
-    QCOMPARE(activityinfo.section(), QStringLiteral(""));
-    QCOMPARE(activityinfo.icon(), QStringLiteral(""));
-    QCOMPARE(activityinfo.author(), QStringLiteral(""));
+    QVERIFY(activityinfo.name().isEmpty());
+    QVERIFY(activityinfo.section().isEmpty());
+    QVERIFY(activityinfo.icon().isEmpty());
+    QVERIFY(activityinfo.author().isEmpty());
     QVERIFY(activityinfo.demo());
-    QCOMPARE(activityinfo.title(), QStringLiteral(""));
-    QCOMPARE(activityinfo.description(), QStringLiteral(""));
-    QCOMPARE(activityinfo.goal(), QStringLiteral(""));
-    QCOMPARE(activityinfo.prerequisite(), QStringLiteral(""));
-    QCOMPARE(activityinfo.manual(), QStringLiteral(""));
-    QCOMPARE(activityinfo.credit(), QStringLiteral(""));
+    QVERIFY(activityinfo.title().isEmpty());
+    QVERIFY(activityinfo.description().isEmpty());
+    QVERIFY(activityinfo.goal().isEmpty());
+    QVERIFY(activityinfo.prerequisite().isEmpty());
+    QVERIFY(activityinfo.manual().isEmpty());
+    QVERIFY(activityinfo.credit().isEmpty());
     QVERIFY(!activityinfo.favorite());
     QVERIFY(activityinfo.enabled());
     QCOMPARE(activityinfo.createdInVersion(), 0);
@@ -106,42 +104,6 @@ void CoreActivityInfoTest::ActivityInfoTest()
     ACTIVITY_INFO_TEST_ATTRIBUTE(favorite, Favorite, bool);
     ACTIVITY_INFO_TEST_ATTRIBUTE(enabled, Enabled, bool);
     ACTIVITY_INFO_TEST_ATTRIBUTE(createdInVersion, CreatedInVersion, int);
-
-    delete ApplicationSettingsMock::getInstance();
-}
-
-void CoreActivityInfoTest::getSectionPathTest()
-{
-    ActivityInfo parent;
-    parent.setSection("parent");
-    ActivityInfo child(&parent);
-    child.setSection("child");
-    QStringList sectionPath = child.getSectionPath();
-
-    QCOMPARE(sectionPath.size(), 2);
-    QCOMPARE(sectionPath.join('/'), QStringLiteral("parent/child"));
-}
-
-void CoreActivityInfoTest::setNameWithKioskMode()
-{
-    const QString fakeActivity = QStringLiteral("fakeActivity");
-    ActivityInfo activityInfo;
-    activityInfo.setFavorite(true);
-    ApplicationSettingsMock::getInstance()->setKioskMode(true);
-    ApplicationSettingsMock::getInstance()->setFavorite(fakeActivity, false);
-    activityInfo.setName(fakeActivity);
-    // in kiosk mode, we don't retrieve the favorite to always have a clean start
-    QVERIFY(activityInfo.favorite());
-
-    ApplicationSettingsMock::getInstance()->setKioskMode(false);
-    activityInfo.setName(fakeActivity);
-    // the activity is not a favorite, we remove its flag when setting the name
-    QVERIFY(!activityInfo.favorite());
-
-    ApplicationSettingsMock::getInstance()->setFavorite(fakeActivity, true);
-    activityInfo.setName(fakeActivity);
-    // the activity is a favorite, we add its flag when setting the name
-    QVERIFY(activityInfo.favorite());
 
     delete ApplicationSettingsMock::getInstance();
 }

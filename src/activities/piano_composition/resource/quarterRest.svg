@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="744"
+   height="1052"
+   viewBox="0 0 744 1052"
+   id="svg2"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="quarterRest.svg">
+  <metadata
+     id="metadata10">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2018</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     id="namedview6"
+     showgrid="false"
+     inkscape:zoom="0.98333333"
+     inkscape:cx="436.77966"
+     inkscape:cy="665.08474"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     style="fill:#000000;stroke-width:0.13448758"
+     d="m 333.7686,734.3469 c -25.69298,-25.81812 -43.43836,-58.86702 -59.70312,-91.31819 -13.59746,-30.8995 -29.37634,-64.55433 -23.88378,-99.14787 5.03092,-27.83029 39.0092,-24.58201 59.95674,-21.11428 27.64745,4.50032 54.85193,12.33997 80.48245,23.6508 -40.91758,-45.60495 -80.03796,-92.85423 -119.6464,-139.59686 -16.25819,-18.87392 -1.35403,-44.20433 14.3869,-57.81053 27.3097,-29.79103 69.31119,-48.55318 82.26281,-89.56777 13.97793,-36.28996 -0.27527,-77.14236 -27.55677,-103.01613 -13.81702,-11.19521 -38.61279,-46.24034 -4.95399,-45.75598 23.96597,22.52895 43.88242,49.68841 66.04957,74.20744 26.32425,31.33528 53.34602,62.2571 78.55306,94.41511 11.96745,23.02644 -9.26627,44.95161 -24.96023,59.49006 -26.68396,25.81364 -63.78554,44.74819 -75.2554,82.60844 -13.27286,34.03859 -2.2259,73.34439 23.16398,98.67463 22.46654,27.70666 47.51947,53.44068 68.71035,82.09086 3.40601,28.83546 -28.47699,15.07999 -38.72637,1.01207 -26.93401,-15.14756 -60.05751,-24.85143 -90.6407,-16.40864 -25.2707,11.16309 -26.60556,44.19993 -25.08311,68.01865 2.0628,25.81434 9.82709,51.53381 24.87033,72.70339 1.23116,4.76106 -3.84291,7.87499 -8.02632,6.8648 z"
+     id="path812"
+     inkscape:connector-curvature="0" />
+</svg>

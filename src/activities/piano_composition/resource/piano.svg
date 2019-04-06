@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="42"
+   id="Layer_1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="piano.svg"
+   sodipodi:version="0.32"
+   space="preserve"
+   style="overflow:visible"
+   version="1.1"
+   viewBox="0 0 42.000002 42"
+   width="42"
+   inkscape:export-filename="D:\GR8DAN\My Pictures\Graphics\Buttons\large_round_blue_play_button_pressed.png"
+   inkscape:export-xdpi="39.369999"
+   inkscape:export-ydpi="39.369999">
+  <metadata
+     id="metadata3001">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title></dc:title>
+        <dc:description />
+        <dc:subject>
+          <rdf:Bag />
+        </dc:subject>
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://www.openclipart.org/">
+            <dc:title />
+          </cc:Agent>
+        </dc:publisher>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <dc:date>2018</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+        <dc:language />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     bordercolor="#666666"
+     borderopacity="1.0"
+     id="base"
+     inkscape:current-layer="g3"
+     inkscape:cx="7.8931225"
+     inkscape:cy="24.955787"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-height="1051"
+     inkscape:window-width="1884"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:zoom="2.6255907"
+     pagecolor="#d1d1d1"
+     showgrid="false"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid855" />
+  </sodipodi:namedview>
+  <g
+     id="g3"
+     transform="translate(3.0415638e-8,-98.453992)">
+    <radialGradient
+       cx="68.590797"
+       cy="68.5327"
+       gradientUnits="userSpaceOnUse"
+       id="XMLID_2_"
+       r="63.7393"
+       gradientTransform="matrix(-0.24216096,0,0,0.24216096,36.716755,100.51532)">
+      <stop
+         id="stop8"
+         offset="0"
+         style="stop-color:#D4E4F7" />
+      <stop
+         id="stop10"
+         offset="1"
+         style="stop-color:#7FB5F7" />
+    </radialGradient>
+    <circle
+       style="opacity:1;vector-effect:none;fill:#eef1f7;fill-opacity:1;stroke:none;stroke-width:9;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path826"
+       cx="21"
+       cy="119.45399"
+       r="18" />
+    <path
+       style="opacity:1;vector-effect:none;fill:#5471af;fill-opacity:1;stroke:none;stroke-width:11.42506504;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 21 1 A 20 20 0 0 0 1 21 A 20 20 0 0 0 21 41 A 20 20 0 0 0 41 21 A 20 20 0 0 0 21 1 z M 21 4 A 17 17 0 0 1 38 21 A 17 17 0 0 1 21 38 A 17 17 0 0 1 4 21 A 17 17 0 0 1 21 4 z "
+       transform="translate(-3.0415638e-8,98.453992)"
+       id="path837" />
+    <g
+       id="g5"
+       transform="matrix(0.07786013,0,0,0.07891947,4.7739485,99.874072)"
+       style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none">
+      <rect
+         x="288.70001"
+         y="172.7"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect7" />
+      <rect
+         x="249"
+         y="172.7"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect9" />
+      <rect
+         x="209.3"
+         y="172.7"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect11" />
+      <rect
+         x="169.60001"
+         y="172.7"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect13" />
+    </g>
+    <rect
+       x="23.320234"
+       y="113.51136"
+       style="fill:#5471af;fill-opacity:1;stroke:#5471af;stroke-opacity:1"
+       width="1.5649889"
+       height="7.8919468"
+       id="rect15" />
+    <rect
+       x="20.213614"
+       y="113.51136"
+       style="fill:#5471af;fill-opacity:1;stroke:#5471af;stroke-opacity:1"
+       width="1.5649889"
+       height="7.8919468"
+       id="rect23" />
+    <rect
+       x="26.419067"
+       y="113.51136"
+       style="fill:#5471af;fill-opacity:1;stroke:#5471af;stroke-opacity:1"
+       width="1.5649889"
+       height="7.8919468"
+       id="rect31" />
+    <g
+       id="g39"
+       transform="matrix(0.07786013,0,0,0.07891947,4.7739485,99.874072)"
+       style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none">
+      <rect
+         x="129.89999"
+         y="172.7"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect41" />
+      <rect
+         x="90.199997"
+         y="172.7"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect43" />
+      <rect
+         x="50.5"
+         y="172.7"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect45" />
+    </g>
+    <rect
+       x="10.956045"
+       y="113.51136"
+       style="fill:#5471af;fill-opacity:1;stroke:#5471af;stroke-opacity:1"
+       width="1.5649889"
+       height="7.8919468"
+       id="rect47" />
+    <rect
+       x="14.054878"
+       y="113.51136"
+       style="fill:#5471af;fill-opacity:1;stroke:#5471af;stroke-opacity:1"
+       width="1.5649889"
+       height="7.8919468"
+       id="rect55" />
+    <g
+       id="g63"
+       transform="matrix(0.07786013,0,0,0.07891947,0.7884533,101.29414)"
+       style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none">
+      <rect
+         x="379.38791"
+         y="154.7061"
+         style="fill:none;fill-opacity:1;stroke:#5471af;stroke-opacity:1;stroke-width:12.75705294;stroke-miterlimit:4;stroke-dasharray:none"
+         width="38.099998"
+         height="150.8"
+         id="rect69" />
+    </g>
+  </g>
+</svg>

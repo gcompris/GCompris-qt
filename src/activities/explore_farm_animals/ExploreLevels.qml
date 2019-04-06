@@ -19,7 +19,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 
 import QtQuick 2.6
@@ -56,7 +56,7 @@ ActivityBase {
             anchors.centerIn: parent
         }
 
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
         property int playX: (activity.width - playWidth) / 2
         property int playY: (activity.height - playHeight) / 2
         property int playWidth: horizontalLayout ? activity.height : activity.width

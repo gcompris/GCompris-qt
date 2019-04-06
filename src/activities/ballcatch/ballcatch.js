@@ -16,7 +16,7 @@
  GNU General Public License for more details.
 
  You should have received a copy of the GNU General Public License
- along with this program; if not, see <http://www.gnu.org/licenses/>.
+ along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 
 .pragma library
@@ -157,14 +157,14 @@ function restartLevel() {
 
 function processKey(event) {
     if(!gameFinished) {
-        if(event.key == Qt.Key_Left) {
+        if(event.key === Qt.Key_Left) {
             // left
             if(!items.leftPressed) {
                 leftShiftPressed();
                 items.leftPressed = true
             }
         }
-        else if(event.key == Qt.Key_Right) {
+        else if(event.key === Qt.Key_Right) {
             // right
             if(!items.rightPressed) {
                 rightShiftPressed();

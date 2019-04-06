@@ -13,7 +13,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -24,8 +24,8 @@ import "../../core"
 Rectangle {
     id: widget
 
-    width: items.cellSize * 1.5
-    height: items.cellSize * 1.5
+    width: element.opacity > 0 ? items.cellSize * 1.5 : 0
+    height: width
     color: "transparent"
 
     //initial position of the element
@@ -46,40 +46,42 @@ Rectangle {
 
     Image {
         id: element
-        sourceSize.width: items.cellSize * 1.5
-        sourceSize.height: items.cellSize * 1.5
+        fillMode: Image.PreserveAspectFit
+        width: items.cellSize
+        sourceSize.width: width
         source: widget.src
-
-        //number of available items
-        GCText {
-            id: elementText
-            anchors.left: parent.left
-            anchors.bottom: parent.bottom
-            text: availableItems
-        }
-
-        property alias dragAreaElement: dragAreaElement
-
-        MouseArea {
-            id: dragAreaElement
-            anchors.fill: parent
-            drag.target: (widget.canDrag) ? parent : null
-            enabled: element.opacity > 0
-            onPressed: {
-                instruction.hide()
-                if (widget.name !== "candy")
-                    background.resetCandy()
+        mipmap: true
+    }
+    //number of available items
+    GCText {
+        id: elementText
+        anchors.left: element.right
+        anchors.bottom: element.bottom
+        text: availableItems
+        color: "#f2f2f2"
+    }
+    
+    property alias dragAreaElement: dragAreaElement
+    
+    MouseArea {
+        id: dragAreaElement
+        anchors.fill: parent
+        drag.target: (widget.canDrag) ? element : null
+        enabled: element.opacity > 0
+        onPressed: {
+            instruction.hide()
+            if (widget.name !== "candy")
+                background.resetCandy()
                 //set the initial position
                 widget.lastX = element.x
                 widget.lastY = element.y
-            }
-
-            onReleased: {
-                widget.releaseElement()
-                //set the widget to its initial coordinates
-                element.x = widget.lastX
-                element.y = widget.lastY
-            }
+        }
+        
+        onReleased: {
+            widget.releaseElement()
+            //set the widget to its initial coordinates
+            element.x = widget.lastX
+            element.y = widget.lastY
         }
     }
 }

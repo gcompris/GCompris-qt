@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1"
+   sodipodi:docname="blackflat.svg"
+   viewBox="0 0 60 60"
+   sodipodi:version="0.32"
+   _SVGFile__filename="oldscale/actions/music_flat.svg"
+   version="1.0"
+   y="0"
+   x="0"
+   inkscape:version="0.92.1 r15371">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#7b7b7b"
+     inkscape:window-height="1051"
+     inkscape:zoom="5.2958333"
+     inkscape:window-x="0"
+     borderopacity="1.0"
+     inkscape:current-layer="g1091"
+     inkscape:cx="30"
+     inkscape:cy="20.176541"
+     inkscape:window-width="1884"
+     inkscape:pageopacity="0"
+     showgrid="false"
+     inkscape:window-maximized="1" />
+  <g
+     id="g1091">
+    <g
+       id="g1709"
+       transform="matrix(1.0946,0,0,1.0946,-4.7351,-2.6665)">
+      <path
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.00013256;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         d="M 12.523438 3.0917969 A 2.5003163 2.5003163 0 0 0 10.060547 5.6269531 L 10.060547 26.71875 A 2.5003163 2.5003163 0 0 0 10.035156 27.074219 L 10.035156 54.375 A 2.5003163 2.5003163 0 0 0 13.533203 56.667969 C 23.143625 52.489167 33.920332 47.837878 41.269531 42.865234 C 44.944131 40.378912 47.862733 37.873777 49.257812 34.695312 C 49.955352 33.10608 50.189736 31.26249 49.691406 29.513672 C 49.19626 27.776021 48.058106 26.246613 46.484375 24.914062 C 41.053574 20.075889 34.917744 18.76088 29.302734 19.052734 C 23.566123 19.350911 18.395259 21.317731 15.0625 22.898438 L 15.0625 5.6269531 A 2.5003163 2.5003163 0 0 0 12.523438 3.0917969 z M 31.044922 23.892578 C 35.099841 23.983751 39.349751 25.234346 43.183594 28.660156 A 2.5003163 2.5003163 0 0 0 43.238281 28.710938 C 44.294947 29.600743 44.72508 30.331222 44.882812 30.884766 C 45.040547 31.43831 45.011769 31.926454 44.677734 32.6875 C 44.009664 34.209589 41.790933 36.475418 38.466797 38.724609 C 32.616129 42.683312 23.651655 46.733166 15.035156 50.507812 L 15.035156 44.453125 A 2.5003163 2.5003163 0 0 0 15.0625 44.068359 L 15.0625 28.546875 C 17.365264 27.210513 22.722672 24.285493 29.320312 23.921875 C 29.889881 23.890484 30.465648 23.879553 31.044922 23.892578 z "
+         transform="matrix(0.91357574,0,0,0.91357574,4.3258725,2.4360497)"
+         id="path839" />
+    </g>
+  </g>
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Edited by Timothée Giet for GCompris</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

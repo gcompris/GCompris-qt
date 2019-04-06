@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -59,7 +59,7 @@ DialogBackground {
                                  "translator-credits" ? "" : qsTr("translator-credits") + "<br/>"
     // Let's try to maitain here the contributor list sorted by number of commits
     // git shortlog -se | sort -nr | cut -c8- | sed 's/ <.*>/,/' | xargs
-    property string developers: "Bruno Coudoin, Johnny Jazeix, Timothée Giet, Holger Kaelberer, Rajdeep Kaur, siddhesh suthar, Akshat Tandon, Aruna Sankaranarayanan, Thibaut ROMAIN, Stephane Mankowski, Amit Tomar, Yuri Chornoivan, Ilya Bizyaev, Amit Sagtani, Stefan Toncu, Aman Kumar Gupta, Divyam Madaan, SagarC Agarwal, Ayush Agrawal, Rudra Nil Basu, Manuel Tondeur, Pulkit Gupta, Burkhard Lück, Ganesh Harshan, Bharath M S, Horia PELLE, Harry Mecwan, Antoni Bella Pérez, Emmanuel Charruau, Per Andersson, JB BUTET, Rohit Das, Karl Ove Hufthammer, Arkit Vora, Sergey Popov, Nitish Chauhan, Imran Tatriev, Harpreet S, Aleix Pol, Antos Vaclauski, rahul yadav, Himanshu Vishwakarma, Aseem Arora, Souradeep Barua, Parth Partani, Paolo Gibellini, Luciano Montanaro, Luigi Toscano, B.J. Cupps, Utkarsh Tiwari, Harald H, Chaitanya KS, Alexander Potashev, Anu Mittal, André Marcelo Alvarenga, Alexis Breton, Ynon Perek, Yask Srivastava, Hannah von Reth, Sayan Biswas, Stefan Asserhäll, Shashwat Dixit, Séamus Ó Briain, Rishabh Gupta, Răpițeanu Viorel-Cătălin, Rajat Asthana, Mantas Kriaučiūnas, Łukasz Wojniłowicz, Jose Riha, Jiri Bohac, Djalil Mesli, Artur Puzio, Andrey Cygankov, Arnold Dumas, Clément Coudoin"
+    property string developers: "Bruno Coudoin, Johnny Jazeix, Timothée Giet, Holger Kaelberer, Akshat Tandon, Rajdeep Kaur, siddhesh suthar, Aruna Sankaranarayanan, Aman Kumar Gupta, Stephane Mankowski, Amit Tomar, Yuri Chornoivan, Thibaut ROMAIN, Amit Sagtani, Ilya Bizyaev, Stefan Toncu, SagarC Agarwal, Ganesh Harshan, Divyam Madaan, Ayush Agrawal, Rudra Nil Basu, Harry Mecwan, Pulkit Gupta, Manuel Tondeur, Karl Ove Hufthammer, Burkhard Lück, Horia PELLE, Bharath M S, Per Andersson, JB BUTET, Himanshu Vishwakarma, Emmanuel Charruau, Rohit Das, Arkit Vora, Antoni Bella Pérez, Sergey Popov, Séamus Ó Briain, Nitish Chauhan, Imran Tatriev, Harpreet S, Harald H, Alexis Breton, Aleix Pol, Rajat Asthana, rahul yadav, Aseem Arora, Akshay Kumar, Utkarsh Tiwari, Souradeep Barua, Parth Partani, Paolo Gibellini, Nick Richards, Luigi Toscano, Luciano Montanaro, Chaitanya KS, B.J. Cupps, Anu Mittal, Antos Vaclauski, André Marcelo Alvarenga, Alexander Potashev, Ynon Perek, Yask Srivastava, Stefan Asserhäll, Shashwat Dixit, Sayan Biswas, Rishabh Gupta, Răpițeanu Viorel-Cătălin, Mantas Kriaučiūnas, Łukasz Wojniłowicz, Jose Riha, Jonathan Demeyer, Jiri Bohac, Hannah von Reth, Djalil Mesli, Clément Coudoin, Billy Laws, Artur Puzio, Arnold Dumas, Antoś Vaclaŭski, Andrey Cygankov"
 
     property string gcVersion: ApplicationInfo.GCVersion
     property string qtVersion: ApplicationInfo.QTVersion
@@ -67,8 +67,8 @@ DialogBackground {
     property string qtVersionTxt: qsTr("Based on Qt %1").arg(qtVersion)
 
     content:
-        "<center><b>" + "<a href='http://gcompris.net'>" +
-        qsTr("GCompris Home Page: http://gcompris.net") + "</a>" +
+        "<center><b>" + "<a href='https://gcompris.net'>" +
+        qsTr("GCompris Home Page: https://gcompris.net") + "</a>" +
         "</b></center>" +
         "<center>" + gcVersionTxt + " " + qtVersionTxt + "</center>" + "<br/>" +
 
@@ -88,8 +88,8 @@ DialogBackground {
              "contribute to KDE, including you.<br /><br />" +
              "Visit <a href=\"%2\">%2</a> for " +
              "more information about the KDE community and the software we produce.")
-        .arg("http://www.gnu.org/philosophy/free-sw.html")
-        .arg("http://www.kde.org/") +
+        .arg("https://www.gnu.org/philosophy/free-sw.html")
+        .arg("https://www.kde.org/") +
 
         "<img align='right' width='" + 138 * ApplicationInfo.ratio +
         "' height='" + 202 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/aboutkde.png'/>" +
@@ -120,8 +120,8 @@ DialogBackground {
              "If you need more information or documentation, then a visit to " +
              "<a href=\"%2\">%2</a> " +
              "will provide you with what you need.")
-        .arg("http://www.kde.org/community/getinvolved/")
-        .arg("http://techbase.kde.org/") +
+        .arg("https://www.kde.org/community/getinvolved/")
+        .arg("https://techbase.kde.org/") +
 
         "<br /> <br />" +
 
@@ -137,8 +137,8 @@ DialogBackground {
              "financial donation, using one of the ways described at " +
              "<a href=\"%2\">%2</a>." +
              "<br /><br />Thank you very much in advance for your support.")
-        .arg("http://ev.kde.org/")
-        .arg("http://www.kde.org/community/donations/") +
+        .arg("https://ev.kde.org/")
+        .arg("https://www.kde.org/community/donations/") +
 
         "<br /> <br />" +
 

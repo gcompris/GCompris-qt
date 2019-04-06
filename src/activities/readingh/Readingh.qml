@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -121,7 +121,7 @@ ActivityBase {
                 var oldLocale = background.locale;
                 var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                 // Remove .UTF-8
-                if(newLocale.indexOf('.') != -1) {
+                if(newLocale.indexOf('.') !== -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
                 dataToSave = {
@@ -191,9 +191,9 @@ ActivityBase {
             id: wordDisplayList
             spacing: 20
             x: 70/800*parent.width
-            y: 100/600*parent.height
+            y: 100/600*parent.height - 40 * ApplicationInfo.ratio
             width: 350/800*parent.width-x
-            height: 520/600*parent.height-y
+            height: 520/600*parent.height-y - 40 * ApplicationInfo.ratio
             flow: mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
             layoutDirection: Core.isLeftToRightLocale(locale) ? Qt.LeftToRight : Qt.RightToLeft
 
@@ -228,7 +228,7 @@ ActivityBase {
             id: wordToFindBox
             x: 430/800*parent.width
             y: 90/600*parent.height
-            text: qsTr("<font color=\"#373737\">Check if the word<br/><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed").arg(items.textToFind)
+            text: qsTr("<font color=\"#373737\">Check if the word<br/></font><b><font color=\"#315AAA\">%1</font></b><br/><font color=\"#373737\">is displayed</font>").arg(items.textToFind)
             color: "#373737"
             horizontalAlignment: Text.AlignHCenter
             width: background.width/3

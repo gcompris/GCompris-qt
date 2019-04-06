@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -44,6 +44,20 @@ Rectangle {
      */
     property alias fontSize: subLevelText.fontSize
 
+    /**
+     * type:string
+     * Define how text size is determined
+     *
+     * @sa GCFont.fontSizeMode.
+     */
+    property alias fontSizeMode: subLevelText.fontSizeMode
+    
+    /**
+     * type:real
+     * Define margins
+     */
+    property real margins: 30
+    
     /**
      * type:int
      * Total number of sub-levels to show.
@@ -86,7 +100,7 @@ Rectangle {
     radius: 10
     anchors.bottom: parent.bottom
     anchors.right: parent.right
-    anchors.margins: 30
+    anchors.margins: margins
 
     border.color: "black"
     border.width: 0
@@ -97,10 +111,12 @@ Rectangle {
     onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onPlayWinAnimation: winAnimation.start()
 
+    readonly property bool isWinAnimationPlaying: winAnimation.running
+
     GCText {
         id: subLevelText
         anchors.centerIn: parent
-        fontSize: mediumSize
+        fontSizeMode: Text.Fit
         font.bold: true
         color: "#373737"
         text: message

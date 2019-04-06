@@ -19,7 +19,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -42,7 +42,7 @@ Item {
     property alias wordListView: wordListView
     property alias parser: parser
     property var goodWord
-    property bool horizontalLayout: background.width > background.height
+    property bool horizontalLayout: background.width >= background.height
     property bool buttonsBlocked: false
 
     function init(loadedItems_, wordList_, mode_) {
@@ -118,7 +118,7 @@ Item {
         Grid {
             id: gridId
             columns: quiz.horizontalLayout ? 2 : 1
-            spacing: 10 * ApplicationInfo.ratio
+            spacing: 0.5 * ApplicationInfo.ratio
             anchors.fill: parent
             anchors.margins: 10 * ApplicationInfo.ratio
 
@@ -191,7 +191,7 @@ Item {
                 height: quiz.horizontalLayout
                         ? background.height - bar.height
                         : (background.height - bar.height) * 0.60
-                spacing: 10 * ApplicationInfo.ratio
+                spacing: 2 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
@@ -203,7 +203,7 @@ Item {
                     color: "lightsteelblue"
                     radius: 5
                     visible: background.keyNavigation
-                    y: wordListView.currentItem.y
+                    y: wordListView.currentItem ? wordListView.currentItem.y : 0
                     Behavior on y {
                         SpringAnimation {
                             spring: 3
@@ -230,6 +230,7 @@ Item {
                         id: wordImageQuiz
                         width: height
                         height: wordListView.buttonHeight
+                        mipmap: true
                         source: image
                         z: 7
                         fillMode: Image.PreserveAspectFit
@@ -278,11 +279,6 @@ Item {
         Score {
             id: score
             parent: quiz
-            anchors.bottom: undefined
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.top: parent.top
         }
 
         Bonus {

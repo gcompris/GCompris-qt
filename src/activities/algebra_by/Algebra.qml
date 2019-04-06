@@ -13,7 +13,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -51,7 +51,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias balloon: balloon
-            property alias timer:timer
+            property alias timer: timer
             property GCSfx audioEffects: activity.audioEffects
         }
 
@@ -69,20 +69,24 @@ ActivityBase {
             onTriggered: Activity.run()
         }
 
-        Bar {
-            id: bar
-            content: BarEnumContent { value: help | home | level }
-            onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
-            }
-            onPreviousLevelClicked: {
-                Activity.previousLevel()
-            }
-            onNextLevelClicked: {
-                Activity.nextLevel()
+        Item {
+            width: background.width - 60 * ApplicationInfo.ratio
+            height: background.height
+            Bar {
+                id: bar
 
+                content: BarEnumContent { value: help | home | level }
+                onHelpClicked: {
+                    displayDialog(dialogHelpLeftRight)
+                }
+                onPreviousLevelClicked: {
+                    Activity.previousLevel()
+                }
+                onNextLevelClicked: {
+                    Activity.nextLevel()
+                }
+                onHomeClicked: home()
             }
-            onHomeClicked: home()
         }
 
         Balloon {
@@ -130,8 +134,8 @@ ActivityBase {
     }
 
     Flow {
-        id:textFlow
-        x: 200 * ApplicationInfo.ratio
+        id: textFlow
+        x: parent.width / 2 - width / 2
         y: 80
         width: parent.width / 2
         height: 100

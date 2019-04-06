@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include <QObject>
@@ -44,28 +44,33 @@ void DirectoryTest::GetFilesTest()
     dir.removeRecursively();
 
     File file;
-    QVERIFY(file.mkpath("./dummy_directory"));
+    QVERIFY(File::mkpath("./dummy_directory"));
 
     Directory directory;
     QStringList filelist = directory.getFiles("./dummy_directory");
-    // It counts './' & '../' in directory.
-    QCOMPARE(filelist.count(), 2);
+    // We do not count './' & '../' in directory.
+    QCOMPARE(filelist.count(), 0);
 
     // Creating the empty file of name file1.
     file.write("", "./dummy_directory/file1");
     // Creating the empty directory of name dir1.
-    file.mkpath("./dummy_directory/dir1");
-    filelist = directory.getFiles("./dummy_directory");
-    QCOMPARE(filelist.count(), 4);
+    File::mkpath("./dummy_directory/dir1");
+    filelist = directory.getFiles("./dummy_directory", {"*"});
+    QCOMPARE(filelist.count(), 2);
 
     file.write("", "./dummy_directory/file2");
     file.write("", "./dummy_directory/file3");
-    file.mkpath("./dummy_directory/dir2");
-    file.mkpath("./dummy_directory/dir3");
+    File::mkpath("./dummy_directory/dir2");
+    File::mkpath("./dummy_directory/dir3");
     filelist = directory.getFiles("./dummy_directory");
-    QCOMPARE(filelist.count(), 8);
+    QCOMPARE(filelist.count(), 6);
 
     // Removing the directory.
+    QVERIFY(File::rmpath("./dummy_directory/file3"));
+    QVERIFY(File::rmpath("./dummy_directory/file2"));
+    QVERIFY(!File::rmpath("./dummy_directory/dir3"));
+    filelist = directory.getFiles("./dummy_directory");
+    QCOMPARE(filelist.count(), 4);
     dir.removeRecursively();
 }
 

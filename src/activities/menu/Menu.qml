@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import "../../core"
@@ -74,6 +74,18 @@ ActivityBase {
             toPush.push({item: dialogs[i]});
         }
         pageView.push(toPush);
+    }
+
+    Connections {
+        // At the launch of the application, box2d check is performed after we 
+        // first initialize the menu. This connection is to refresh
+        // automatically the menu at start.
+        target: ApplicationInfo
+        onIsBox2DInstalledChanged: {
+            ActivityInfoTree.filterByTag(activity.currentTag)
+            ActivityInfoTree.filterLockedActivities()
+            ActivityInfoTree.filterEnabledActivities()
+        }
     }
 
     // @cond INTERNAL_DOCS
@@ -167,7 +179,7 @@ ActivityBase {
         }
 
         // Filters
-        property bool horizontal: main.width > main.height
+        property bool horizontal: main.width >= main.height
         property int sectionIconWidth: {
             if(horizontal)
                 return Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))
@@ -226,6 +238,7 @@ ActivityBase {
             }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
+            visible: ApplicationSettings.sectionVisible
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
@@ -294,11 +307,10 @@ ActivityBase {
 
         // Activities
         property int iconWidth: 120 * ApplicationInfo.ratio
-        property int iconHeight: 120 * ApplicationInfo.ratio
         property int activityCellWidth:
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
-        property int activityCellHeight: iconHeight * 1.7
+        property int activityCellHeight: iconWidth * 1.7
 
         Loader {
             id: warningOverlay
@@ -372,8 +384,8 @@ ActivityBase {
                 enabled: clickMode === "play" || currentLevel != ""
                 Rectangle {
                     id: activityBackground
-                    width: activityCellWidth - activitiesGrid.spacing
-                    height: activityCellHeight - activitiesGrid.spacing
+                    width: parent.width
+                    height: parent.height
                     anchors.horizontalCenter: parent.horizontalCenter
                     color: "white"
                     opacity: 0.5
@@ -382,7 +394,10 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/" + icon;
                     anchors.top: activityBackground.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    sourceSize.height: iconHeight
+                    width: iconWidth - activitiesGrid.spacing
+                    height: width
+                    sourceSize.width: width
+                    fillMode: Image.PreserveAspectFit
                     anchors.margins: 5
                     opacity: delegateItem.enabled ? 1 : 0.5
                     Image {

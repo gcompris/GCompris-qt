@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 
@@ -30,7 +30,7 @@ Image {
     z: 10
 
     property string img
-    property bool acceptMove : false
+    property bool acceptMove: false
     property int newPos
     // color = -1 if no piece, 0 is black and 1 is white
     property int isWhite: img.length != 2 ? -1 : img[0] == 'w' ? 1 : 0

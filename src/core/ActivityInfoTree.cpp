@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #include "ActivityInfoTree.h"
 #include "ApplicationInfo.h"
@@ -30,7 +30,7 @@
 #include <QTextStream>
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
-	m_currentActivity(NULL)
+       m_rootMenu(nullptr), m_currentActivity(nullptr)
 {
 }
 
@@ -46,25 +46,25 @@ ActivityInfo *ActivityInfoTree::getRootMenu() const
 
 QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
 {
-    return QQmlListProperty<ActivityInfo>(this, NULL, &menuTreeCount, &menuTreeAt);
+    return {this, nullptr, &menuTreeCount, &menuTreeAt};
 }
 
 int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
-    if(obj)
+    if(obj != nullptr)
         return obj->m_menuTree.count();
-    else
-        return 0;
+
+    return 0;
 }
 
 ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index)
 {
     ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
-    if(obj)
+    if(obj != nullptr)
         return obj->m_menuTree.at(index);
-    else
-        return 0;
+
+    return nullptr;
 }
 
 ActivityInfo *ActivityInfoTree::menuTree(int index) const
@@ -227,7 +227,7 @@ void ActivityInfoTree::exportAsSQL()
                 "\"" << activity->goal().toHtmlEscaped() << "\", " <<
                 "\"" << activity->manual().toHtmlEscaped() << "\", " <<
                 "\"" << activity->credit() << "\", " <<
-                activity->demo() <<
+                static_cast<int>(activity->demo()) <<
                 ");" << endl;
     }
 }
@@ -236,7 +236,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 {
     Q_UNUSED(scriptEngine)
 
-    ActivityInfoTree *menuTree = new ActivityInfoTree(NULL);
+    ActivityInfoTree *menuTree = new ActivityInfoTree(nullptr);
     QQmlComponent componentRoot(engine,
                                 QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
     QObject *objectRoot = componentRoot.create();
@@ -257,7 +257,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
             QQmlComponent componentRoot(engine, QUrl(url));
             QObject *objectRoot = componentRoot.create();
-            if(objectRoot) {
+            if(objectRoot != nullptr) {
                 menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
             } else {
                 qDebug() << "ERROR: failed to load " << line << " " << componentRoot.errors();
@@ -272,7 +272,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     return menuTree;
 }
 
-void ActivityInfoTree::init()
+void ActivityInfoTree::registerResources()
 {
     if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
         qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
@@ -286,11 +286,6 @@ void ActivityInfoTree::init()
     if(QResource::registerResource(ApplicationSettings::getInstance()->cachePath() +
                                    "/data2/" + QString("full-%1.rcc").arg(COMPRESSED_AUDIO)))
         qDebug() << "Registered the pre-download " << QString("full-%1.rcc").arg(COMPRESSED_AUDIO);
-
-    qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
-    qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
-
-
 }
 
 void ActivityInfoTree::filterBySearch(const QString& text)
@@ -301,7 +296,7 @@ void ActivityInfoTree::filterBySearch(const QString& text)
         const QStringList wordsList = text.split(' ', QString::SkipEmptyParts);
         for(const QString &searchTerm: wordsList) {
             const QString trimmedText = searchTerm.trimmed();
-            const auto constMenuTreeFull = m_menuTreeFull;
+            const auto &constMenuTreeFull = m_menuTreeFull;
             for(const auto &activity: constMenuTreeFull) {
                 if(activity->title().contains(trimmedText, Qt::CaseInsensitive) ||
                     activity->name().contains(trimmedText, Qt::CaseInsensitive) ||
@@ -327,15 +322,15 @@ void ActivityInfoTree::filterBySearch(const QString& text)
 QVariantList ActivityInfoTree::allCharacters() {
     QSet<QChar> keyboardChars;
     const auto constMenuTreeFull = m_menuTreeFull;
-    for(auto &tree: constMenuTreeFull) {
+    for(const auto &tree: constMenuTreeFull) {
         const QString &title = tree->title();
-        Q_FOREACH(const QChar &letter, title) {
+        for(const QChar &letter: title) {
             if(!letter.isSpace() && !letter.isPunct()) {
                 keyboardChars.insert(letter.toLower());
             }
         }
     }
-    Q_FOREACH(const QString &letters, keyboardChars) {
+    for(const QChar &letters: keyboardChars) {
         m_keyboardCharacters.push_back(letters);
     }
     std::sort(m_keyboardCharacters.begin(), m_keyboardCharacters.end());

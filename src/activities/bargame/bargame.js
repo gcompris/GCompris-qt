@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 .pragma library
 .import GCompris 1.0 as GCompris
@@ -120,7 +120,7 @@ function calculateWinPlaces() {
         winnersList.push((boardSize - 1 - x) % period);
     }
 
-    for (var x = 0; x < boardSize; x++) {
+    for (var x = period + 1; x < boardSize; x++) {
         if (winnersList.indexOf((x + 1) % period) >= 0) {
             winners.push(x);
         }
@@ -132,8 +132,10 @@ function calculateWinPlaces() {
         winners = [];
     } else {
         winners = winners.slice(-levelWin);
+        if (currentLevel == maxLevel - 1) {
+            winners = winners.slice(1);
+        }
     }
-
     listWin = winners;
 }
 
@@ -154,7 +156,7 @@ function machinePlay() {
 
     var min = levelsProperties[items.mode - 1].minNumberOfBalls;
     var max = levelsProperties[items.mode - 1].maxNumberOfBalls;
-    for (var x = min; x < max; x++) {
+    for (var x = min; x <= max; x++) {
         if (accessible(x)) {
             playable.push(x);
         }
@@ -175,7 +177,7 @@ function play(player, value) {
         var boardSize = levelsProperties[items.mode - 1].boardSize;
         if (moveCount <= (boardSize - 1)) {
             items.answerBallsPlacement.children[moveCount].visible = true;
-            if (player == 1) {
+            if (player === 1) {
                 items.answerBallsPlacement.children[moveCount].source = url + "ball_1.svg";
             } else {
                 items.answerBallsPlacement.children[moveCount].source = url + "ball_2.svg";
@@ -184,17 +186,17 @@ function play(player, value) {
         // one of the players has won
         if (moveCount == (boardSize - 1)) {
             items.okArea.enabled = false;
-            if (gameMode == 2) {
+            if (gameMode === 2) {
                 items.isPlayer1Beginning = !items.isPlayer1Beginning;
             }
-            if (player == 2) {
+            if (player === 2) {
                 items.player1score.win();
                 items.player2score.endTurn();
                 items.bonus.good("flower");
             } else {
                 items.player1score.endTurn();
                 items.player2score.win();
-                if (gameMode == 1) {
+                if (gameMode === 1) {
                     items.bonus.bad("flower");
                 }
                 else {
@@ -207,17 +209,17 @@ function play(player, value) {
 
     items.isPlayer1Turn = !items.isPlayer1Turn;
 
-    if (player == 1 && gameMode == 1) {
+    if (player === 1 && gameMode === 1) {
         items.player1score.endTurn();
         items.player2score.beginTurn();
         items.okArea.enabled = false;
         items.trigTuxMove.start();
-    } else if (player == 2 && gameMode == 1) {
+    } else if (player === 2 && gameMode === 1) {
         items.player2score.endTurn();
         items.player1score.beginTurn();
         items.okArea.enabled = true;
-    } else if (gameMode == 2) {
-        if (player == 1) {
+    } else if (gameMode === 2) {
+        if (player === 1) {
             items.player1score.endTurn();
             items.player2score.beginTurn();
         } else {

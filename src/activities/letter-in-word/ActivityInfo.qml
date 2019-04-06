@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("spellings, letter recognition")
   //: Help manual
-  manual: ""
+  manual: qsTr("A letter is displayed on the flag attached to the plane, select all the words or the objects in which the letter appears and then press OK.")
   credit: ""
   section: "reading"
   createdInVersion: 7000

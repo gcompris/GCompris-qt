@@ -1,4 +1,4 @@
-/* GCompris - enumarate.js
+/* GCompris - enumerate.js
 *
 * Copyright (C) 2014 Thib ROMAIN <thibrom@gmail.com>
 *
@@ -17,7 +17,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 .pragma library
 .import QtQuick 2.6 as Quick

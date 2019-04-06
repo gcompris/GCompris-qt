@@ -19,7 +19,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -31,7 +31,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
-    property bool isHorizontal: background.width > background.height
+    property bool isHorizontal: background.width >= background.height
 
     pageComponent: Image {
         id: background
@@ -68,6 +68,7 @@ ActivityBase {
             property bool keyNavigationMode: false
             // stores height of sampleGrid images to set rail bar support position
             property int sampleImageHeight: 0
+            property int sampleModel: Activity.dataset["noOfLocos"][bar.level - 1] + Activity.dataset["noOfWagons"][bar.level - 1]
         }
 
         onStart: { Activity.start(items) }
@@ -301,8 +302,8 @@ ActivityBase {
                     opacity: 0.3
                     radius: 5
                     visible: (items.currentKeyZone === answerZone) && (!trainAnimationTimer.running && !animateFlow.running) && items.keyNavigationMode
-                    x: visible ? answerZone.currentItem.x : 0
-                    y: visible ? answerZone.currentItem.y : 0
+                    x: (visible && answerZone.currentItem) ? answerZone.currentItem.x : 0
+                    y: (visible && answerZone.currentItem) ? answerZone.currentItem.y : 0
                     Behavior on x {
                         SpringAnimation {
                             spring: 3
@@ -346,7 +347,7 @@ ActivityBase {
             anchors.margins: 20
             cellWidth: width / columnCount
             cellHeight: isHorizontal ? background.height / 7 : background.height / 7.5
-            model: Activity.dataset["noOfLocos"][bar.level - 1] + Activity.dataset["noOfWagons"][bar.level - 1]
+            model: Math.max(0, items.sampleModel)
             interactive: false
 
             // No. of wagons in a row
@@ -481,8 +482,8 @@ ActivityBase {
                 opacity: 0.8
                 radius: 5
                 visible: items.currentKeyZone === sampleList && items.keyNavigationMode
-                x: (sampleList.currentIndex >= 0) ? sampleList.currentItem.x : 0
-                y: (sampleList.currentIndex >= 0) ? sampleList.currentItem.y : 0
+                x: (sampleList.currentIndex >= 0 && sampleList.currentItem) ? sampleList.currentItem.x : 0
+                y: (sampleList.currentIndex >= 0 && sampleList.currentItem) ? sampleList.currentItem.y : 0
                 Behavior on x {
                     SpringAnimation {
                         spring: 3
@@ -519,8 +520,8 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: height
             height: score.height
+            width: height
             sourceSize.width: width
             sourceSize.height: height
             anchors.top: score.top
@@ -548,7 +549,8 @@ ActivityBase {
 
         Score {
             id: score
-            fontSize: isHorizontal ? internalTextComponent.smallSize : internalTextComponent.tinySize
+            height: bar.height * 0.8
+            width: height
             anchors.top: parent.top
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right

@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -44,6 +44,6 @@ In higher levels, you can use the right/left keys to rotate the spaceship. By ro
 The landing platform is green if your speed is fine for a safe landing.")
   credit: ""
   section: "experiment"
-  enabled: true //ApplicationInfo.hasShader
+  enabled: ApplicationInfo.isBox2DInstalled //ApplicationInfo.hasShader
   createdInVersion: 6000
 }

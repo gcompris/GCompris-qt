@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -27,7 +27,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Gnumch Factors")
   //: Help title
-  description: qsTr("Guide the Number Muncher to all the factors of the number at the top of the screen.")
+  description: qsTr("Guide the Number Muncher to all the factors of the number at the bottom of the screen.")
 //  intro: "Guide the number eater with the arrow keys to the factors of the displayed number and press space to swallow them."
   //: Help goal
   goal: qsTr("Learn about multiples and factors.")

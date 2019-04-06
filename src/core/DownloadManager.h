@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef DOWNLOADMANAGER_H
@@ -192,7 +192,9 @@ private:
     void unregisterResource_locked(const QString& filename);
     bool isRegistered(const QString& filename) const;
 
+#if 0
     QStringList getLocalResources();
+#endif
 
 private slots:
 
@@ -222,9 +224,8 @@ public:
     /**
      * Registers DownloadManager singleton in the QML engine.
      */
-    static void init();
-    static QObject *systeminfoProvider(QQmlEngine *engine,
-            QJSEngine *scriptEngine);
+    static QObject *downloadManagerProvider(QQmlEngine *engine,
+                                            QJSEngine *scriptEngine);
     static DownloadManager* getInstance();
 
     /**
@@ -269,7 +270,7 @@ public:
      */
     Q_INVOKABLE bool areVoicesRegistered() const;
 
-    /*
+    /**
      * Registers a rcc resource file given by a relative resource path
      *
      * @param filename  Relative resource path.

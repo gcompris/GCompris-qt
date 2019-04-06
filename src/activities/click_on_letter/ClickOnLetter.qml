@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -275,7 +275,6 @@ ActivityBase {
         Image {
             id: engine
             source: Activity.url + "engine.svg"
-
             anchors.bottom: railway.bottom
             anchors.left: railway.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio
@@ -287,7 +286,6 @@ ActivityBase {
         Image {
             id: smoke
             source: Activity.url + "smoke.svg"
-
             anchors.bottom: engine.top
             anchors.left: railway.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio

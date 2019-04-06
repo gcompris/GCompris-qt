@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 
@@ -65,9 +65,10 @@ ActivityBase {
             property alias columns: grid.columns
             property alias rows: grid.rows
             property alias trigTuxMove: trigTuxMove
-            property int cellSize: background.width < background.height ? (background.width / (columns + 3)) : (background.height / (rows + 4))
+            property int cellSize: background.width <= background.height ? (background.width / (columns + 3)) : (background.height / (rows + 4))
             property bool gameDone
             property int counter
+            property int nextPlayerStart: 1
         }
 
         onStart: { Activity.start(items, twoPlayer) }

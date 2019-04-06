@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -66,67 +66,67 @@ ActivityBase {
             property var dataset: [
                 {
                     values: ['I', 'V', 'X', 'L', 'C', 'D', 'M'],
-                    instruction: qsTr("Roman numerals, are based on seven symbols: \nI = 1, V = 5\nX = 10, L = 50\nC = 100, D = 500\nM = 1000"),
+                    instruction: qsTr("The roman numbers are all built out of these 7 numbers:\nI and V (units, 1 and 5)\nX and L (tens, 10 and 50)\nC and D (hundreds, 100 and 500)\n and M (1000).\n An interesting observation here is that the roman numeric system lacks the number 0."),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
                     values: [1, 5, 10, 50, 100, 500, 1000],
-                    instruction: qsTr("Roman numerals, are based on seven symbols: \nI = 1, V = 5\nX = 10, L = 50\nC = 100, D = 500\nM = 1000"),
+                    instruction: qsTr("The roman numbers are all built out of these 7 numbers:\nI and V (units, 1 and 5)\nX and L (tens, 10 and 50)\nC and D (hundreds, 100 and 500)\n and M (1000).\n An interesting observation here is that the roman numeric system lacks the number 0."),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
-                    values: ['II', 'III', 'VI', 'XX', 'XXII', 'XXX', 'LX', 'CC', 'CCL', 'MM', 'CLX', 'DCCLI', 'CCCLXVI'],
-                    instruction: qsTr("Several symbols create a larger number like:\nII = 2\nXX = 20\nXI = 11"),
+                    values: ['II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'],
+                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII.\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)"),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
-                    values: [2, 3, 6, 20, 22, 30, 60, 200, 250, 2000, 160, 651, 361],
-                    instruction: qsTr("Several symbols create a larger number like:\nII = 2\nXX = 20\nXI = 11"),
+                    values: [2, 3, 4, 5, 6, 7, 8, 9],
+                    instruction: qsTr("All the units except 4 and 9 are built using sums of I and V:\nI, II, III, V, VI, VII, VIII.\n The 4 and the 9 units are built using differences:\nIV (5 – 1) and IX (10 – 1)"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
-                    values: ['IV', 'IX', 'XL', 'XC', 'CD', 'CM'],
-                    instruction: qsTr("If a lower value symbol is before a higher value one, it is subtracted. Otherwise it is added. So:\n'IV' is '4'\n'VI' is '6'\n'IX' is '9'"),
+                    values: ['XX', 'XXX', 'XL', 'LX', 'LXX', 'LXXX', 'XC'],
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
-                    values: [4, 9, 40, 90, 400, 900],
-                    instruction: qsTr("If a lower value symbol is before a higher value one, it is subtracted. Otherwise it is added. So:\n'IV' is '4'\n'VI' is '6'\n'IX' is '9'"),
+                    values: [20, 30, 40, 60, 70, 80, 90],
+                    instruction: qsTr("All the tens except 40 and 90 are built using sums of X and L:\nX, XX, XXX, L, LX, LXX, LXXX.\nThe 40 and the 90 tens are built using differences:\nXL (10 taken from 50) and XC (10 taken from 100)\n "),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
-                    values: ['VIII', 'LXXX', 'CCCCLXXX', 'DCCC', 'MCCC'],
-                    instruction: qsTr("Only one number is subtracted, not two. So 8 is always VIII and never IIX."),
+                    values: ['CC', 'CCC', 'CD', 'DC', 'DCC', 'DCCC', 'CM', ],
+                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
-                    values: [8, 70, 480, 800, 1300],
-                    instruction: qsTr("Only one number is subtracted, not two. So 8 is always VIII and never IIX."),
+                    values: [200, 300, 400, 600, 700, 800, 900],
+                    instruction: qsTr("All the hundreds except 400 and 900 are built using sums of C and D:\nC, CC, CCC, D, DC, DCC, DCCC.\nThe 400 and the 900 hundreds are built using differences:\nCD (100 taken from 500) and CM (100 taken from 1000)"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
-                    values: ['XLIX', 'CMXC', 'XCV', 'XLVIII', 'CMXCIX', 'XLVI', 'CXCII', 'CDLXXV'],
-                    instruction: qsTr("Proper form is to subtract only a value with the next lower power of 10. Thus, 900 is written CM, but 990 would not be XM - properly, it is CM for the 900 portion and XC for the 90 portion, or CMXC. Similarly, 999 would not be IM but rather CMXCIX - CM for the 900 portion, XC for the 90 portion, and IX for the 9 portion. Only values starting in 1's are ever used to subtract; 45 is properly XLV, not VL."),
+                    values: ['MM', 'MMM'],
+                    instruction: qsTr("Sums of M are used for building thousands: M, MM, MMM.\nNotice that you cannot join more than three identical symbols. The first implication of this rule is that you cannot use just sums for building all possible units, tens or hundreds, you must use differences too. On the other hand, it limits the maximum roman number to 3999 (MMMCMXCIX).\n"),
                     question: qsTr("Convert the roman number %1 in arabic."),
                     toArabic: true
                 },
                 {
-                    values: [48, 991, 96, 49, 998, 47, 193, 472, 1092],
-                    instruction: qsTr("Proper form is to subtract only a value with the next lower power of 10. Thus, 900 is written CM, but 990 would not be XM - properly, it is CM for the 900 portion and XC for the 90 portion, or CMXC. Similarly, 999 would not be IM but rather CMXCIX - CM for the 900 portion, XC for the 90 portion, and IX for the 9 portion. Only values starting in 1's are ever used to subtract; 45 is properly XLV, not VL."),
+                    values: [2000, 3000],
+                    instruction: qsTr("Sums of M are used for building thousands: M, MM, MMM.\nNotice that you cannot join more than three identical symbols. The first implication of this rule is that you cannot use just sums for building all possible units, tens or hundreds, you must use differences too. On the other hand, it limits the maximum roman number to 3999 (MMMCMXCIX).\n"),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
                 {
                     values: ['_random_', 50 /* up to this number */ , 10 /* sublevels */],
-                    instruction: qsTr("Now you know the rules, you can read and write any numbers in roman numerals."),
+                    instruction: qsTr("Now you know the rules, you can read and write numbers in roman numerals."),
                     question: qsTr("Convert the arabic number %1 in roman."),
                     toArabic: false
                 },
@@ -173,7 +173,7 @@ ActivityBase {
             }
 
             function initSubLevel() {
-                if(dataset[currentLevel].values[0] == '_random_') {
+                if(dataset[currentLevel].values[0] === '_random_') {
                     questionValue = Math.round(Math.random() * dataset[currentLevel].values[1] + 1)
                     score.numberOfSubLevels = dataset[currentLevel].values[2]
                 } else {

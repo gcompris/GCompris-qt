@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 
@@ -39,7 +39,7 @@ ActivityBase {
         focus: true
 
         readonly property double scaleFactor: 1
-        readonly property bool isPortrait: (height > width)
+        readonly property bool isPortrait: (height >= width)
 
         signal start
         signal stop

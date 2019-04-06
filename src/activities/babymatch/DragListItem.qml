@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
@@ -171,7 +171,7 @@ Item {
                     }
 
                     if(imgSound)
-                        activity.audioEffects.play(ApplicationInfo.getAudioFilePath(imgSound))
+                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound))
                     tileImage.pressedOnce = true
                 }
 

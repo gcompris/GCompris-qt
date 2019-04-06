@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -46,13 +46,24 @@ ActivityBase {
             edit.forceActiveFocus();
         }
 
+        property bool horizontalMode: height <= width
+
+        GCCreationHandler {
+            id: creationHandler
+            onFileLoaded: {
+                edit.clear()
+                edit.text = data["text"]
+                edit.cursorPosition = edit.length
+            }
+            onClose: edit.forceActiveFocus()
+        }
+
         Column {
             id: controls
             width: 120 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
                 top: parent.top
-                bottom: bar.top
                 margins: 10
             }
             spacing: 10
@@ -77,12 +88,51 @@ ActivityBase {
             }
         }
 
+        Column {
+            id: saveAndLoadButtons
+            width: controls.width
+
+            property bool isEnoughSpace: {
+                if(ApplicationInfo.isMobile && parent.horizontalMode)
+                    return false
+                return (parent.height - keyboard.height - controls.height) > 2.5 * loadButton.height
+            }
+
+            anchors {
+                right: !isEnoughSpace ? controls.left : parent.right
+                top: !isEnoughSpace ? parent.top : controls.bottom
+                margins: 10
+            }
+            spacing: 10
+
+            Button {
+                id: loadButton
+                style: GCButtonStyle { textSize: "regular"}
+                width: parent.width
+                text: qsTr("Load")
+                onClicked: {
+                    creationHandler.loadWindow()
+                }
+            }
+            Button {
+                id: saveButton
+                style: GCButtonStyle { textSize: "regular"}
+                width: parent.width
+                text: qsTr("Save")
+                onClicked: {
+                    var textToSave = {}
+                    textToSave["text"] = edit.getFormattedText(0, edit.length)
+                    creationHandler.saveWindow(textToSave)
+                }
+            }
+        }
+
         Flickable {
             id: flick
 
             anchors {
                 left: parent.left
-                right: controls.left
+                right: saveAndLoadButtons.left
                 top: parent.top
                 bottom: bar.top
                 margins: 10

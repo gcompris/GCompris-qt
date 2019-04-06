@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -39,7 +39,7 @@ ActivityBase {
         signal stop
 
         property bool gotIt: false
-        property bool horizontalLayout: background.width > background.height
+        property bool horizontalLayout: background.width >= background.height
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -171,7 +171,7 @@ ActivityBase {
 
                             signal hit
                             onHit: {
-                                activity.audioEffects.play(Activity.url + "pickaxe."+ApplicationInfo.CompressedAudio)
+                                activity.audioEffects.play(Activity.url + "pickaxe.wav")
                                 background.gotIt = true
                                 tuto.setState("Unzoom")
                             }
@@ -204,7 +204,7 @@ ActivityBase {
                             opacity: !modelData.isTarget ? 1 : (background.gotIt ? 0 : 1)
 
                             Component.onCompleted: {
-                                activity.audioEffects.play(Activity.url + "realrainbow."+ApplicationInfo.CompressedAudio)
+                                activity.audioEffects.play(Activity.url + "realrainbow.wav")
                             }
 
                             ParallelAnimation {

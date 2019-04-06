@@ -19,7 +19,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -62,11 +62,9 @@ Image {
 
     Image {
         id: star
-
         x: animalImg.width / 2.5
         y: animalImg.height * 0.8
         visible: false
-
         source:"qrc:/gcompris/src/core/resource/star.png"
     }
 
@@ -85,8 +83,10 @@ Image {
             }
             var questionTargetId = items.questionOrder[Activity.items.progressbar.value]
             Activity.items.instruction.visible = false
-            if (Activity.items.score.currentSubLevel == 1) {
-                audioVoices.play(animalImg.audio);
+            if (Activity.items.score.currentSubLevel === 1) {
+                if(animalImg.audio) {
+                    audioVoices.play(animalImg.audio);
+                }
                 displayDescription(animalImg)
                 star.visible = true;
             } else {

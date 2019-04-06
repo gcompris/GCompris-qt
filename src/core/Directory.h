@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #ifndef DIRECTORY_H
@@ -51,10 +51,6 @@ public:
       *          in the directory.
       */
     Q_INVOKABLE QStringList getFiles(const QString& location, const QStringList &nameFilters = QStringList());
-
-    /// @cond INTERNAL_DOCS
-    static void init();
-    /// @endcond
 };
 
 #endif

@@ -1,6 +1,6 @@
 #!/bin/sh
 # Automate the android builds
-# This script creates the different apk for arm and x86
+# This script creates the different apk for arm
 #
 # Copyright (C) 2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
 #
@@ -15,12 +15,12 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program; if not, see <http://www.gnu.org/licenses/>.
+#   along with this program; if not, see <https://www.gnu.org/licenses/>.
 
 # Uncomment if this is not already done
 # make getSvnTranslations
 
-Qt5_BaseDIR=~/Qt5.9.3/5.9.3
+Qt5_BaseDIR=~/Qt5.12.1/5.12.1
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 # The current version
@@ -58,22 +58,26 @@ f_cmake()
     fi
 
     cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
+	  -DCMAKE_ANDROID_API=16 \
 	  -DCMAKE_BUILD_TYPE=release \
+	  -DCMAKE_ANDROID_STL_TYPE=c++_shared \
+	  -DANDROID_TOOLCHAIN_PATH=/opt/android-16-arm/bin/ \
+	  -DCMAKE_ANDROID_NDK_TOOLCHAIN_VERSION=clang \
 	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
-	  -DQt5Qml_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Qml \
-	  -DQt5Network_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Network \
-	  -DQt5Core_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Core \
-	  -DQt5Quick_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Quick \
-	  -DQt5Gui_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Gui \
-	  -DQt5Multimedia_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Multimedia \
-	  -DQt5Svg_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Svg \
-	  -DQt5Widgets_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Widgets \
-	  -DQt5Xml_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Xml \
-	  -DQt5XmlPatterns_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5XmlPatterns \
-	  -DQt5LinguistTools_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5LinguistTools \
-	  -DQt5Sensors_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5Sensors \
-	  -DQt5AndroidExtras_DIR=~/Qt5.9.3/5.9.3/android_armv7/lib/cmake/Qt5AndroidExtras \
+	  -DQt5Qml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Qml \
+	  -DQt5Network_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Network \
+	  -DQt5Core_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Core \
+	  -DQt5Quick_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Quick \
+	  -DQt5Gui_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Gui \
+	  -DQt5Multimedia_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Multimedia \
+	  -DQt5Svg_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Svg \
+	  -DQt5Widgets_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Widgets \
+	  -DQt5Xml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Xml \
+	  -DQt5XmlPatterns_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5XmlPatterns \
+	  -DQt5LinguistTools_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5LinguistTools \
+	  -DQt5Sensors_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Sensors \
+	  -DQt5AndroidExtras_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5AndroidExtras \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DACTIVATION_MODE=$2 \
@@ -90,20 +94,20 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-f_cmake armeabi inapp OFF ON OFF
+f_cmake arm inapp OFF ON OFF
 make
 make BuildTranslations
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi internal OFF ON OFF
+f_cmake arm internal OFF ON OFF
 make
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi no OFF ON OFF
+f_cmake arm no OFF ON OFF
 make
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi no ON ON OFF
+f_cmake arm no ON ON OFF
 make clean
 make
 make BuildTranslations
@@ -112,31 +116,3 @@ make apk_release && make apk_signed && make apk_signed_aligned
 # Remove extra apk
 rm -f android/bin/*release-armeabi*
 rm -f android/bin/*release-signed-armeabi*
-
-# X86
-cd ..
-QtTarget=android_x86
-builddir=${buildprefix}-${QtTarget}
-mkdir -p ${builddir}
-cd ${builddir}
-
-f_cmake x86 inapp OFF ON OFF
-make
-make BuildTranslations
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake x86 internal OFF ON OFF
-make
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake x86 no OFF ON OFF
-make
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake x86 no ON ON OFF
-make
-make apk_release && make apk_signed && make apk_signed_aligned
-
-# Remove extra apk
-rm -f android/bin/*release-x86*
-rm -f android/bin/*release-signed-x86*

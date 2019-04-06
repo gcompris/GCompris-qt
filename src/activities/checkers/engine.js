@@ -844,7 +844,7 @@ var Draughts = function (fen) {
     }
     var captureArray = []
     if (finished === true && capture.takes.length) {
-      // fix for mutiple capture
+      // fix for multiple capture
       capture.from = capture.jumps[0]
       captureArray[0] = capture
     } else {
@@ -1159,7 +1159,7 @@ var Draughts = function (fen) {
       return load(fen)
     },
 
-    reset: function () {
+    resetGame: function () {
       return reset()
     },
 
@@ -1187,7 +1187,7 @@ var Draughts = function (fen) {
 
     ascii: ascii,
 
-    turn: function () {
+    getTurn: function () {
       return turn.toLowerCase()
     },
 

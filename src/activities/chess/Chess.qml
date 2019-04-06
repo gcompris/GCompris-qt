@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import QtQuick.Controls 1.5
@@ -68,7 +68,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property bool isPortrait: (background.height > background.width)
+            property bool isPortrait: (background.height >= background.width)
             property int cellSize: items.isPortrait ?
                                        Math.min((background.width - numbers.childrenRect.width) / (8 + 2),
                                                 (background.height - controls.height - letters.childrenRect.height) / (8 + barHeightAddon)) :
@@ -135,7 +135,7 @@ ActivityBase {
                 }
 
                 Grid {
-                    spacing: 10
+                    spacing: 60 * ApplicationInfo.ratio
                     columns: items.isPortrait ? 3 : 1
                     anchors.horizontalCenter: parent.horizontalCenter
                     horizontalItemAlignment: Grid.AlignHCenter
@@ -144,11 +144,19 @@ ActivityBase {
                     Button {
                         id: undo
                         height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Undo");
+                        width: height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         onClicked: Activity.undo()
                         enabled: items.history.length > 0 ? 1 : 0
                         opacity: enabled
+                        Image {
+                            source: Activity.url + 'undo.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         Behavior on opacity {
                             PropertyAnimation {
                                 easing.type: Easing.InQuad
@@ -159,8 +167,9 @@ ActivityBase {
 
                     Button {
                         id: redo
-                        height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Redo");
+                        height: undo.height
+                        width: undo.height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         onClicked: {
                             if (!twoPlayers) {
@@ -172,6 +181,13 @@ ActivityBase {
                         }
                         enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
                         opacity: enabled
+                        Image {
+                            source: Activity.url + 'redo.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         Behavior on opacity {
                             PropertyAnimation {
                                 easing.type: Easing.InQuad
@@ -181,11 +197,19 @@ ActivityBase {
                     }
 
                     Button {
-                        height: 30 * ApplicationInfo.ratio
-                        text: qsTr("Swap");
+                        height: undo.height
+                        width: undo.height
+                        text: "";
                         style: GCButtonStyle { theme: "light" }
                         enabled: items.twoPlayer
                         opacity: enabled
+                        Image {
+                            source: Activity.url + 'turn.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
                         onClicked: chessboard.swap()
                     }
                 }
@@ -193,7 +217,7 @@ ActivityBase {
 
 
             Rectangle {
-                id:boardBg
+                id: boardBg
                 width: items.cellSize * 8.2
                 height: boardBg.width
                 z: 08
@@ -386,7 +410,7 @@ ActivityBase {
             function moveTo(from, to) {
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
-                if(toPiece.img != '')
+                if(toPiece.img !== '')
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                 else
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
@@ -401,7 +425,7 @@ ActivityBase {
 
             function getPieceAt(pos) {
                 for(var i=0; i < pieces.count; i++) {
-                    if(pieces.itemAt(i).newPos == pos)
+                    if(pieces.itemAt(i).newPos === pos)
                         return pieces.itemAt(i)
                 }
                 return(undefined)

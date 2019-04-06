@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 .pragma library
 .import QtQuick 2.6 as Quick
@@ -71,7 +71,7 @@ function previousLevel() {
 function simplifiedState(state) {
     var newState = new Array()
     for(var i = state.length - 1; i >= 0; --i) {
-        if(state[i] != 16) {
+        if(state[i] !== 16) {
             var img = ""
             switch(state[i]) {
                 case 2:
@@ -134,7 +134,7 @@ function updateMessage(move) {
         items.message = items.blackTurn ? qsTr("White mates", "white wins") : qsTr("Black mates", "black wins")
         items.gameOver = true
         if(!items.twoPlayer)
-            if(state.to_play != 0)
+            if(state.to_play !== 0)
                 items.bonus.good('gnu')
             else
                 items.bonus.good('tux')
@@ -146,7 +146,7 @@ function updateMessage(move) {
         items.bonus.good('flower')
     } else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK) {
         items.message = items.blackTurn ? qsTr("White checks", "black king is under attack") : qsTr("Black checks", "white king is under attack")
-    } else if(move.flags == Engine.P4_MOVE_ILLEGAL) {
+    } else if(move.flags === Engine.P4_MOVE_ILLEGAL) {
         items.isWarningMessage = true
         items.message = qsTr("Invalid, your king may be in check")
     }
@@ -196,9 +196,9 @@ function visibleMove(move, from, to) {
         items.pieces.moveTo(from + 3, to - 1)
     else if(move.flags & Engine.P4_MOVE_FLAG_CASTLE_QUEEN)
         items.pieces.moveTo(from - 4, to + 1)
-    else if(items.pieces.getPieceAt(to).img == 'wp' && to > 55)
+    else if(items.pieces.getPieceAt(to).img === 'wp' && to > 55)
         items.pieces.promotion(to)
-    else if(items.pieces.getPieceAt(to).img == 'bp' && to < 8)
+    else if(items.pieces.getPieceAt(to).img === 'bp' && to < 8)
         items.pieces.promotion(to)
 }
 
@@ -236,7 +236,7 @@ function undo() {
     // In computer mode, the white always starts, take care
     // of undo after a mate which requires us to revert on
     // a white play
-    if(!items.twoPlayer && state.to_play != 0) {
+    if(!items.twoPlayer && state.to_play !== 0) {
         redo_stack.push(state.history[state.moveno - 1])
         state.jump_to_moveno(state.moveno - 1)
     }
@@ -262,7 +262,7 @@ function redo() {
     // In computer mode, the white always starts, take care
     // of undo after a mate which requires us to revert on
     // a white play
-    if(!items.twoPlayer && state.to_play != 0) {
+    if(!items.twoPlayer && state.to_play !== 0) {
         items.redoTimer.moveByEngine(items.redo_stack.pop())
     }
 
@@ -317,7 +317,7 @@ function showPossibleMoves(from) {
     clearAcceptMove()
     var fromEngine = viewPosToEngine(from)
     for(var i=0; i < result.length; ++i) {
-        if(fromEngine == result[i][1]) {
+        if(fromEngine === result[i][1]) {
             var pos = engineToViewPos(result[i][2])
             items.squares.getSquareAt(pos)['acceptMove'] = true
         }

@@ -19,7 +19,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -32,7 +32,7 @@ Item {
         id: img
         source: imageURL
         height: background.height / 8.0
-        width: ((background.width > background.height) ? background.width : background.height) / 5.66
+        width: ((background.width >= background.height) ? background.width : background.height) / 5.66
         Drag.hotSpot.x: width / 2
         Drag.hotSpot.y: height / 2
     }

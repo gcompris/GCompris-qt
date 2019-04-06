@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -34,7 +34,7 @@ Rectangle {
     property double yCenter: y + height / 2
     property Item currentTileImageItem
 
-    width: parent.width > parent.height ? parent.height/35 : parent.width/35
+    width: parent.width >= parent.height ? parent.height/35 : parent.width/35
     height: width
     radius: width/2
     z: 200
@@ -51,7 +51,7 @@ Rectangle {
         id: targetImage
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
-        z : -1
+        z: -1
     }
 
     function imageRemove() {

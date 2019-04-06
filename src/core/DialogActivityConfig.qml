@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -36,7 +36,7 @@ import GCompris 1.0
  * For an example have a look at Menu.qml.
  *
  * For more details on how to add configuration to an activity cf.
- * [the wiki](http://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_configuration_for_a_specific_activity)
+ * [the wiki](https://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_configuration_for_a_specific_activity)
  *
  * @sa ApplicationSettings
  * @inherit QtQuick.Item

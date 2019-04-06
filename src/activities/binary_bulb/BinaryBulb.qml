@@ -1,0 +1,209 @@
+/* GCompris - BinaryBulb.qml
+ *
+ * Copyright (C) 2018 Rajat Asthana <rajatasthana4@gmail.com>
+ *
+ * Authors:
+ *   RAJAT ASTHANA <rajatasthana4@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
+ */
+import QtQuick 2.6
+import GCompris 1.0
+
+import "../../core"
+import "binary_bulb.js" as Activity
+import "numbers.js" as Dataset
+
+ActivityBase {
+    id: activity
+
+    onStart: focus = true
+    onStop: {}
+
+    property var dataset: Dataset
+
+    pageComponent: Image {
+        id: background
+        anchors.fill: parent
+        source: "../digital_electricity/resource/texture01.png"
+        fillMode: Image.Tile
+        signal start
+        signal stop
+
+        Component.onCompleted: {
+            activity.start.connect(start)
+            activity.stop.connect(stop)
+        }
+
+        // Add here the QML items you need to access in javascript
+        QtObject {
+            id: items
+            property Item main: activity.main
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias bulbs: bulbs
+            property int numberSoFar: 0
+            property int numberToConvert: 0
+            property int numberOfBulbs: 0
+            property int currentSelectedBulb: -1
+            property int currentLevel: 0
+            property alias score: score
+        }
+
+        onStart: { Activity.start(items, dataset) }
+        onStop: { Activity.stop() }
+
+        // Tutorial section starts
+        Image {
+            id: tutorialImage
+            source: "../digital_electricity/resource/texture01.png"
+            anchors.fill: parent
+            fillMode: Image.Tile
+            z: 5
+            visible: true
+            Tutorial {
+                id: tutorialSection
+                tutorialDetails: Activity.tutorialInstructions
+                useImage: false
+                onSkipPressed: {
+                    Activity.initLevel()
+                    tutorialImage.visible = false
+                }
+            }
+        }
+        // Tutorial section ends
+
+
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+                Activity.equalityCheck()
+            }
+            else if(event.key === Qt.Key_Space) {
+                if(items.currentSelectedBulb != -1) {
+                    Activity.changeState(items.currentSelectedBulb)
+                }
+            }
+            else if(event.key === Qt.Key_Left) {
+                if(--items.currentSelectedBulb < 0) {
+                    items.currentSelectedBulb = items.numberOfBulbs-1
+                }
+            }
+            else if(event.key === Qt.Key_Right) {
+                if(++items.currentSelectedBulb >= items.numberOfBulbs) {
+                    items.currentSelectedBulb = 0
+                }
+            }
+        }
+
+        Rectangle {
+            id: questionItemBackground
+            opacity: 0
+            z: 10
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                bottomMargin: 10
+            }
+            height: background.height / 6
+            width: parent.width - 20 * ApplicationInfo.ratio
+        }
+
+        GCText {
+            id: questionItem
+            anchors.fill: questionItemBackground
+            anchors.bottom: questionItemBackground.bottom
+            fontSizeMode: Text.Fit
+            wrapMode: Text.Wrap
+            z: 4
+            color: "white"
+            verticalAlignment: Text.AlignVCenter
+            horizontalAlignment: Text.AlignHCenter
+            text: qsTr("What is the binary representation of %1?").arg(items.numberToConvert)
+        }
+
+        Row {
+            id: row
+            anchors.top: questionItem.bottom
+            anchors.topMargin: 30 * ApplicationInfo.ratio
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: 10 * ApplicationInfo.ratio
+            Repeater {
+                id: bulbs
+                model: items.numberOfBulbs
+                LightBulb {
+                    height: background.height / 5
+                    width: (background.width >= background.height) ? (background.width / 20) : ((background.width - (16 * row.spacing)) / 8)
+                    valueVisible: Dataset.get()[items.currentLevel].bulbValueVisible
+                }
+            }
+        }
+
+        GCText {
+            id: reachedSoFar
+            anchors.horizontalCenter: row.horizontalCenter
+            anchors.top: row.bottom
+            anchors.topMargin: 30 * ApplicationInfo.ratio
+            color: "white"
+            fontSize: largeSize
+            text: items.numberSoFar
+            visible: Dataset.get()[items.currentLevel].enableHelp
+        }
+
+        BarButton {
+            id: okButton
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottomMargin: 10 * ApplicationInfo.ratio
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            onClicked: Activity.equalityCheck()
+            enabled: !bonus.isPlaying && !score.isWinAnimationPlaying
+        }
+
+        DialogHelp {
+            id: dialogHelp
+            onClose: home()
+        }
+
+        Bar {
+            id: bar
+            content: BarEnumContent { value: help | home | level}
+            onHelpClicked: {
+                displayDialog(dialogHelp)
+            }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
+            onHomeClicked: activity.home()
+        }
+
+        Score {
+            id: score
+            visible: !tutorialImage.visible
+            anchors.bottom: bar.top
+            anchors.right: bar.right
+            anchors.left: parent.left
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: 0
+        }
+
+        Bonus {
+            id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
+        }
+    }
+}

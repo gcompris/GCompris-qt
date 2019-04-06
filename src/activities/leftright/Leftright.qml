@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -61,15 +61,10 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Item {
-            id: topBorder
-            height: background.height * 0.08
-        }
-
         Image {
             id: blackBoard
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: topBorder.bottom
+            anchors.top: score.bottom
             fillMode: Image.PreserveAspectFit
             sourceSize.width: Math.min(background.width,
                                        (background.height - leftButton.height - bar.height) * 1.3)
@@ -195,6 +190,7 @@ ActivityBase {
         Score {
             id: score
             anchors.top: background.top
+            anchors.topMargin: parent.height * 0.01
             anchors.bottom: undefined
         }
     }

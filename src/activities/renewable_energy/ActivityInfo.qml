@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -31,7 +31,7 @@ ActivityInfo {
     //: Help goal
     goal: qsTr("Learn about an electrical system based on renewable energy")
     //: Help manual
-    manual: qsTr("Click on different active elements : sun, cloud, dam, solar array, wind farm and transformers, in order to reactivate the entire electrical system. When the system is back up and Tux is in his home, push the light button for him. To win you must switch on all the consumers while all the producers are up. ")
+    manual: qsTr("Click on different active elements: sun, cloud, dam, solar array, wind farm and transformers, in order to reactivate the entire electrical system. When the system is back up and Tux is in his home, push the light button for him. To win you must switch on all the consumers while all the producers are up. ")
     //: Help prerequisite
     prerequisite: ""
     credit: qsTr("Drawing by Stephane Cabaraux")

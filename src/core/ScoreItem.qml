@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -183,7 +183,6 @@ Item {
                 fillMode: Image.PreserveAspectFit
                 height: parent.height*0.8
                 sourceSize.height: height
-                sourceSize.width: width
                 x: parent.width*0.06
                 anchors.verticalCenter: parent.verticalCenter
             }

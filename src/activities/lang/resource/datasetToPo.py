@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # GCompris - datasetToPo.py
 #
@@ -15,16 +15,20 @@
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with this program; if not, see <http://www.gnu.org/licenses/>.
+#   along with this program; if not, see <https://www.gnu.org/licenses/>.
 
 import sys
 import json
 import os
 import datetime
+import urllib
+import polib
 
-if(len(sys.argv) < 2):
-    print "Usage: dataSetToPo.py dataset.json [content-fr.json]"
-    print "  The optional argument is used to backport manually created json"
+from urllib.parse import quote
+
+if(len(sys.argv) < 3):
+    print("Usage: dataSetToPo.py dataset.json output.po [content-fr.json]")
+    print("  The optional argument is used to backport manually created json")
     sys.exit(1)
 
 def loadManualFile(manual):
@@ -43,14 +47,15 @@ def getManualTranslation(manualData, key):
         return ""
 
 manualData = None
-if(len(sys.argv) == 3):
-    manualData = loadManualFile(sys.argv[2])
-
+if(len(sys.argv) == 4):
+    manualData = loadManualFile(sys.argv[3])
 
 dataset = sys.argv[1]
 json_data = open(dataset)
 data = json.load(json_data)
 json_data.close()
+
+displayInConsole = False
 
 # Get last modification time of data set
 modtime = os.path.getmtime(dataset)
@@ -58,26 +63,42 @@ modtime_utc = datetime.datetime.utcfromtimestamp(modtime)
 modtime_utc_string = modtime_utc.strftime('%Y-%m-%d %H:%M') + '+0000'
 
 # Header
-print 'msgid ""'
-print 'msgstr ""'
-print '"Project-Id-Version: gcompris_qt\\n"'
-print '"POT-Creation-Date: ' + modtime_utc_string + '\\n"'
-print '"MIME-Version: 1.0\\n"'
-print '"Content-Type: text/plain; charset=UTF-8\\n"'
-print '"Content-Transfer-Encoding: 8bit\\n"'
-print ''
+po = polib.POFile()
+po.metadata = {
+    'Project-Id-Version': 'gcompris_qt\\n',
+    'Report-Msgid-Bugs-To': 'https://bugs.kde.org/enter_bug.cgi?product=gcompris',
+    'POT-Creation-Date': modtime_utc_string,
+    'PO-Revision-Date': modtime_utc_string,
+    'Last-Translator': 'FULL NAME <EMAIL@ADDRESS>\n',
+    'Language-Team': 'LANGUAGE <kde-i18n-doc@kde.org>\n',
+    'MIME-Version': '1.0',
+    'Content-Type': 'text/plain; charset=utf-8',
+    'Content-Transfer-Encoding': '8bit',
+}
 
 for chapter in data:
     for lesson in chapter['content']:
         for word in lesson['content']:
-            print "#. " + chapter['name'] + \
-                " / " + lesson['name'] + \
-                " / " + word['description'] + \
-                ": http://gcompris.net/incoming/lang/words.html#" + \
-                word['image'].split('/')[-1].split(".")[0]
-            print "#: " + "http://gcompris.net/incoming/lang/words.html#" + \
-                word['image'].split('/')[-1].split(".")[0]
-            print 'msgctxt "LangWords|"'
-            print 'msgid "' + word['description'] + '"'
-            print 'msgstr "' + getManualTranslation(manualData, word['voice']).encode('utf-8') + '"'
-            print ""
+            voice = word['voice'].split('/')[-1].split(".")[0] + ".ogg"
+            imageLink = "https://gcompris.net/incoming/lang/words_by_section.html#" + \
+                       urllib.parse.quote(word['description'].split('/')[-1].split(".")[0])
+            if displayInConsole:
+                print("#. " + chapter['name'] + \
+                      " / " + lesson['name'] + \
+                      " / " + word['description'] + \
+                      ": "+ imageLink)
+                print('msgctxt "'+voice+'"|"')
+                print('msgid "' + word['description'] + '"')
+                print('msgstr "' + getManualTranslation(manualData, voice) + '"')
+                print("")
+
+            entry = polib.POEntry(
+                msgid = word['description'],
+                msgstr = getManualTranslation(manualData, voice),
+                msgctxt = voice,
+                comment = chapter['name'] + " / " + lesson['name'] + " / " + word['description'] +
+                          "\n" + imageLink
+            )
+            po.append(entry)
+
+po.save(sys.argv[2])

@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -162,7 +162,7 @@ ActivityBase {
             intro: [
                 qsTr("Tux has come back from fishing on his boat. " +
                      "Bring the electrical system back up so he can have light in his home."),
-                qsTr("Click on different active elements : sun, cloud, dam, solar array, " +
+                qsTr("Click on different active elements: sun, cloud, dam, solar array, " +
                      "wind farm and transformers, in order to reactivate the entire electrical system."),
                 qsTr("When the system is back up and Tux is in his home, push the light button for him. " +
                      "To win you must switch on all the consumers while all the producers are up."),
@@ -190,7 +190,7 @@ ActivityBase {
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 text: qsTr( "It is not possible to consume more electricity " +
-                           "than what is produced. This is a key limitation in the " +
+                           "than what is produced. There is a key limitation in the " +
                            "distribution of electricity, with minor exceptions, " +
                            "electrical energy cannot be stored, and therefore it " +
                            "must be generated as it is needed. A sophisticated " +

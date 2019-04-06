@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -139,7 +139,7 @@ ActivityBase {
             if(userEntry.text.length === 0) {
                 userEntry.text = "?"
             } else {
-                if(targetItem.scoreTotal == userEntry.text)
+                if(targetItem.scoreTotal === userEntry.text)
                     bonus.good("flower")
             }
         }
@@ -164,7 +164,7 @@ ActivityBase {
 
             userEntry.text += text
 
-            if(targetItem.scoreTotal == userEntry.text)
+            if(targetItem.scoreTotal === userEntry.text)
                 bonus.good("flower")
         }
 

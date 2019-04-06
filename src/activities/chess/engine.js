@@ -330,7 +330,7 @@ function p4_prepare(state){
                  * the area, waiting for an opportunity.
                  *
                  * As prepare is only called at the beginning of each tree
-                 * search, the king could wander out of the targetted area
+                 * search, the king could wander out of the targeted area
                  * in deep searches. But that's OK. Heuristics are
                  * heuristics.
                  */
@@ -403,7 +403,7 @@ function p4_parse(state, colour, ep, score) {
                         captures.push([weight + values[E] + weight_lut[e] + all_weights[E][e], s, e]);
                     }
                 }
-                if(a == P4_KING && castle_flags){
+                if(a === P4_KING && castle_flags){
                     if((castle_flags & 1) &&
                         (board[s-1] + board[s-2] + board[s-3] == 0) &&
                         p4_check_castling(board, s - 2,other_colour,dir,-1)){//Q side
@@ -473,12 +473,12 @@ function p4_parse(state, colour, ep, score) {
             enpassant, not 2.
          */
         s = ep - dir - 1;
-        if (board[s] == pawn){
+        if (board[s] === pawn){
             taken = values[P4_PAWN] + all_weights[P4_PAWN | other_colour][ep - dir];
             captures.push([score - weight_lut[s] + weight_lut[ep] + taken, s, ep]);
         }
         s += 2;
-        if (board[s] == pawn){
+        if (board[s] === pawn){
             taken = values[P4_PAWN] + all_weights[P4_PAWN | other_colour][ep - dir];
             captures.push([score - weight_lut[s] + weight_lut[ep] + taken, s, ep]);
         }
@@ -569,8 +569,8 @@ function p4_check_castling(board, s, colour, dir, side){
         if((E & diag_mask) == diag_slider)
             return 0;
         /*knights on row 7. (row 6 is handled below)*/
-        if (board[p + dir - 2] == knight ||
-            board[p + dir + 2] == knight)
+        if (board[p + dir - 2] === knight ||
+            board[p + dir + 2] === knight)
             return 0;
     }
 
@@ -578,7 +578,7 @@ function p4_check_castling(board, s, colour, dir, side){
      * or a knight on row 6. */
     for(p = s + dir - 1; p < s + dir + 4; p++){
         E = board[p] & grid_mask;
-        if(E == king_pawn || board[p + dir] == knight)
+        if(E === king_pawn || board[p + dir] === knight)
             return 0;
     }
     /* scan back row for rooks, queens on the other side.
@@ -614,16 +614,16 @@ function p4_check_check(state, colour){
     var s = p[1];
     var other_colour = 1 - colour;
     var dir = 10 - 20 * colour;
-    if (board[s + dir - 1] == (P4_PAWN | other_colour) ||
-        board[s + dir + 1] == (P4_PAWN | other_colour))
+    if (board[s + dir - 1] === (P4_PAWN | other_colour) ||
+        board[s + dir + 1] === (P4_PAWN | other_colour))
         return true;
     var knight_moves = P4_MOVES[P4_KNIGHT];
     var king_moves = P4_MOVES[P4_KING];
     var knight = P4_KNIGHT | other_colour;
     var king = P4_KING | other_colour;
     for (i = 0; i < 8; i++){
-        if (board[s + knight_moves[i]] == knight ||
-            board[s + king_moves[i]] == king)
+        if (board[s + knight_moves[i]] === knight ||
+            board[s + king_moves[i]] === king)
             return true;
     }
     var diagonal_moves = P4_MOVES[P4_BISHOP];
@@ -782,7 +782,7 @@ function p4_findmove(state, level, colour, ep){
 }
 
 /*p4_make_move changes the state and returns an object containing
- * everything necesary to undo the change.
+ * everything necessary to undo the change.
  *
  * p4_unmake_move uses the p4_make_move return value to restore the
  * previous state.
@@ -808,7 +808,7 @@ function p4_make_move(state, s, e, promotion){
             board[e] = promotion;
             end_piece = promotion;
         }
-        else if (((s ^ e) & 1) && E == 0){
+        else if (((s ^ e) & 1) && E === 0){
             /*this is a diagonal move, but the end spot is empty, so we surmise enpassant */
             ep_position = e - 10 + 20 * moved_colour;
             ep_taken = board[ep_position];
@@ -1005,7 +1005,7 @@ function p4_move(state, s, e, promotion){
     p4_maybe_prepare(state);
     var moves = p4_parse(state, colour, state.enpassant, 0);
     for (i = 0; i < moves.length; i++){
-        if (e == moves[i][2] && s == moves[i][1]){
+        if (e === moves[i][2] && s === moves[i][1]){
             legal = true;
             break;
         }
@@ -1210,7 +1210,7 @@ function p4_state2fen(state, reduced){
         var count = 0;
         for (var x = 1; x < 9; x++){
             var piece = board[y * 10 + x];
-            if (piece == 0)
+            if (piece === 0)
                 count++;
             else{
                 if (count)
@@ -1291,7 +1291,7 @@ function p4_fen2state(fen, state){
     var i;
     for (var j = 0; j < fen_board.length; j++){
         var c = fen_board.charAt(j);
-        if (c == '/'){
+        if (c === '/'){
             x = 1;
             y -= 10;
             if (y < 20)
@@ -1520,11 +1520,11 @@ function p4_find_source_point(state, e, str){
                          state.enpassant, 0);
     for (i = 0; i < moves.length; i++){
         var mv = moves[i];
-        if (e == mv[2]){
+        if (e === mv[2]){
             s = mv[1];
-            if (state.board[s] == piece &&
-                (column === undefined || column == s % 10) &&
-                (row === undefined || row == parseInt(s / 10))
+            if (state.board[s] === piece &&
+                (column === undefined || column === s % 10) &&
+                (row === undefined || row === parseInt(s / 10))
                ){
                    var change = p4_make_move(state, s, e, P4_QUEEN);
                    if (! p4_check_check(state, colour))

@@ -16,12 +16,11 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include "Directory.h"
 #include <QDir>
-#include <QQmlComponent>
 
 Directory::Directory(QObject *parent) : QObject(parent)
 {
@@ -30,10 +29,5 @@ Directory::Directory(QObject *parent) : QObject(parent)
 QStringList Directory::getFiles(const QString& location, const QStringList &nameFilters)
 {
     QDir dir(location);
-    return dir.entryList(nameFilters);
-}
-
-void Directory::init()
-{
-    qmlRegisterType<Directory>("GCompris", 1, 0, "Directory");
+    return dir.entryList(nameFilters, (QDir::NoDotAndDotDot | QDir::AllEntries));
 }

@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -34,7 +34,7 @@ Item {
     property bool leftAreaContainsDrag: false
     property bool rightAreaContainsDrag: false
     property bool started: rootItem.opacity == 1
-    property bool horizontalLayout: categoryBackground.width > categoryBackground.height
+    property bool horizontalLayout: categoryBackground.width >= categoryBackground.height
     property alias leftZone: leftZone.model
     property alias rightZone: rightZone.model
     property alias middleZone: middleZone.model
@@ -55,7 +55,7 @@ Item {
         sourceSize.width:parent.width
 
         Zone {
-            id:leftZone
+            id: leftZone
             x: 0.012 * middleScreen.width
             z: 2
             y: 0.05 * parent.height
@@ -202,14 +202,14 @@ Item {
         
         Score {
             id: score
-            fontSize: 0.013 * parent.width
             visible: items.scoreChecked
-            height: horizontalLayout ? 0.1 * parent.height : 0.06 * parent.height
-            width: horizontalLayout ? 0.015 * parent.width : parent.width
+            width: rightZone.width * 0.4
+            height: width * 0.6
+            margins: 10 * ApplicationInfo.ratio
             anchors {
                 top: parent.top
-                right: categoryBackground.right
-                left: categoryImage.right
+                right: parent.right
+                left: undefined
                 bottom: undefined
             }
         }

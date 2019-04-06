@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -29,7 +29,7 @@ ActivityInfo {
     description: qsTr("The version in GCompris is the international draughts.")
     //intro: "play checkers against the computer"
     //: Help goal
-    goal: qsTr("Capture all the pieces of your opponent before your opponent capture all of yours.")
+    goal: qsTr("Capture all the pieces of your opponent before your opponent captures all of yours.")
     //: Help prerequisite
     prerequisite: ""
     //: Help manual

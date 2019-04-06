@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 /* ToDo:
@@ -107,9 +107,17 @@ function start(items_) {
             }
         }
         var levelsFile;
-        if (items.levelSet === "user")
-            levelsFile = userFile;
+        if (items.levelSet === "user" && items.file.exists(items.filePath))
+            levelsFile = items.filePath;
         else {
+            if(items.levelSet === "user") {
+                Core.showMessageDialog(items.background,
+                                        // The argument represents the file path name to be loaded.
+                                       qsTr("The file '%1' is missing!<br>Falling back to builtin levels.").arg(items.filePath),
+                                       "", null,
+                                       "", null,
+                                       null);
+            }
             levelsFile = builtinFile;
             currentLevel = GCompris.ApplicationSettings.loadActivityProgress(
                         "balancebox");
@@ -186,19 +194,19 @@ function checkBallContacts()
             items.ball.y > ballContacts[k].y - items.ballSize/2 &&
             items.ball.y < ballContacts[k].y + items.ballSize/2) {
             // collision
-            if (ballContacts[k].categories == items.holeType)
+            if (ballContacts[k].categories === items.holeType)
                 finishBall(false, ballContacts[k].x, ballContacts[k].y);
-            else if (ballContacts[k].categories == items.goalType && goalUnlocked)
+            else if (ballContacts[k].categories === items.goalType && goalUnlocked)
                 finishBall(true,
                            ballContacts[k].x + (items.cellSize - items.wallSize - items.ballSize)/2,
                            ballContacts[k].y + (items.cellSize - items.wallSize - items.ballSize)/2);
-            else if (ballContacts[k].categories == items.buttonType) {
+            else if (ballContacts[k].categories === items.buttonType) {
                 if (!ballContacts[k].pressed
-                    && ballContacts[k].orderNum == lastContact + 1)
+                    && ballContacts[k].orderNum === lastContact + 1)
                 {
                     ballContacts[k].pressed = true;
                     lastContact = ballContacts[k].orderNum;
-                    if (lastContact == contacts.length) {
+                    if (lastContact === contacts.length) {
                         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
                         goalUnlocked = true;
                         goal.imageSource = baseUrl + "/door.svg";

@@ -22,7 +22,7 @@
 <author>
 <personname>
 <firstname>This documentation was converted from the 
-<ulink url="http://gcompris.net/wiki/Manual">&gcompris; Manual</ulink> 
+<ulink url="https://gcompris.net/wiki/Manual">&gcompris; Manual</ulink> 
 page.</firstname>
 <surname></surname>
 </personname>
@@ -73,7 +73,7 @@ activities such as memory and logic games, scientific experiments &etc;.</para>
 suite of activities. Unfortunately, it is difficult to follow and maintain them as each one offers different 
 graphic interfaces which vary widely in quality.</para>
 <para>The purpose of &gcompris; is to provide a development platform for educational activities.</para>
-<para>&gcompris; is part of &kde; project and is placed under the <ulink url="http://www.gnu.org/licenses/gpl.html">GPL license</ulink>.</para>
+<para>&gcompris; is part of &kde; project and is placed under the <ulink url="https://www.gnu.org/licenses/gpl.html">GPL license</ulink>.</para>
 </sect1>
 
 <sect1 id="minimal-configuration">
@@ -222,9 +222,9 @@ distribution to add it. In most cases, you have to install an additional package
 'language-pack-xx' - xx is a language code such as 'En' for English. </para>
 <para>If your language is not supported, you can contribute to the software and add the 
 translation of your language. If you are interested, you can contact the 
-<ulink url="http://l10n.kde.org/teams">translation team</ulink> of 
+<ulink url="https://l10n.kde.org/teams">translation team</ulink> of 
 the &kde; project for your language. You can check the level of translation for your language on 
-the <ulink url="http://l10n.kde.org/">&kde; translation web site</ulink>.</para>
+the <ulink url="https://l10n.kde.org/">&kde; translation web site</ulink>.</para>
 </sect1>
 
 <sect1 id="learning-language">
@@ -328,12 +328,12 @@ some text activities (like wordsgame), or make it show real car images instead o
 &gcompris;
 </para>
 <para>
-Program copyright 2000-2015 Bruno Coudoin and others
+Program copyright 2000-2018 Bruno Coudoin and others
 </para>
 
 <para>
 Documentation Copyright see the 
-<ulink url="http://gcompris.net/mediawiki-1.22.0/index.php?title=Manual&amp;action=history">Manual page history</ulink>
+<ulink url="https://gcompris.net/mediawiki-1.31.0/index.php?title=Manual&amp;action=history">Manual page history</ulink>
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->

@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #include "ActivityInfo.h"
 
@@ -29,6 +29,7 @@
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
+    m_difficulty(0),
     m_demo(true),
     m_favorite(false),
     m_enabled(true),
@@ -46,8 +47,7 @@ void ActivityInfo::setName(const QString &name)
     m_name = name;
     // Once we are given a name, we can get the favorite property
     // from the persistant configuration
-    if(!ApplicationSettings::getInstance()->isKioskMode())
-        m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
+    m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 
     setCurrentLevel();
 
@@ -194,6 +194,7 @@ void ActivityInfo::setCreatedInVersion(const int created)
     m_createdInVersion = created;
     emit createdInVersionChanged();
 }
+<<<<<<< HEAD
 
 QStringList ActivityInfo::levels() const
 {
@@ -240,3 +241,5 @@ QStringList ActivityInfo::getSectionPath()
     } while( ( activity = qobject_cast<ActivityInfo*>(activity->parent()) ) );
     return path;
 }
+=======
+>>>>>>> master

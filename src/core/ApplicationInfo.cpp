@@ -19,7 +19,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 #include "ApplicationInfo.h"
@@ -41,15 +41,16 @@
 #include <QFontDatabase>
 #include <QDir>
 
-QQuickWindow *ApplicationInfo::m_window = NULL;
-ApplicationInfo *ApplicationInfo::m_instance = NULL;
+QQuickWindow *ApplicationInfo::m_window = nullptr;
+ApplicationInfo *ApplicationInfo::m_instance = nullptr;
 
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
 
-    m_isMobile = false;
 #if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY) || defined(SAILFISHOS)
     m_isMobile = true;
+#else
+    m_isMobile = false;
 #endif
 
 #if defined(Q_OS_ANDROID)
@@ -67,7 +68,11 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     m_platform = Blackberry;
 #elif defined(SAILFISHOS)
     m_platform = SailfishOS;
+#else // default is Linux
+    m_platform = Linux;
 #endif
+
+    m_isBox2DInstalled = false;
 
     QRect rect = qApp->primaryScreen()->geometry();
     m_ratio = qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.);
@@ -83,6 +88,8 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
 
+    m_useOpenGL = true;
+
     if (m_isMobile)
         connect(qApp->primaryScreen(), &QScreen::physicalSizeChanged, this, &ApplicationInfo::notifyPortraitMode);
 
@@ -95,12 +102,11 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     // Get fonts from rcc
     const QStringList fontFilters = {"*.otf", "*.ttf"};
     m_fontsFromRcc = QDir(":/gcompris/src/core/resource/fonts").entryList(fontFilters);
-
 }
 
 ApplicationInfo::~ApplicationInfo()
 {
-    m_instance = NULL;
+    m_instance = nullptr;
 }
 
 bool ApplicationInfo::sensorIsSupported(const QString& sensorType)
@@ -129,7 +135,7 @@ QString ApplicationInfo::getResourceDataPath()
 QString ApplicationInfo::getFilePath(const QString &file)
 {
 #if defined(Q_OS_ANDROID)
-    return QString("assets:/%1").arg(file);
+    return QString("assets:/share/GCompris/rcc/%1").arg(file);
 #elif defined(Q_OS_MACX)
     return QString("%1/../Resources/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
 #elif defined(Q_OS_IOS)
@@ -150,12 +156,11 @@ QString ApplicationInfo::getAudioFilePathForLocale(const QString &file,
 {
     QString filename = file;
     filename.replace("$LOCALE", localeName);
-    filename.replace("$CA", COMPRESSED_AUDIO);
+    filename.replace("$CA", CompressedAudio());
 
     if(file.startsWith('/') || file.startsWith(QLatin1String("qrc:")) || file.startsWith(':'))
         return filename;
-    else
-        return getResourceDataPath() + '/' + filename;
+    return getResourceDataPath() + '/' + filename;
 }
 
 QString ApplicationInfo::getLocaleFilePath(const QString &file)
@@ -165,12 +170,6 @@ QString ApplicationInfo::getLocaleFilePath(const QString &file)
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
     return filename;
-}
-
-QString ApplicationInfo::getSharedWritablePath() const
-{
-    return QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
-            + QLatin1String("/GCompris");
 }
 
 QStringList ApplicationInfo::getSystemExcludedFonts()
@@ -203,10 +202,10 @@ void ApplicationInfo::setWindow(QQuickWindow *window)
     m_window = window;
 }
 
-void ApplicationInfo::screenshot(QString const &path)
+void ApplicationInfo::screenshot(const QString &file)
 {
     QImage img = m_window->grabWindow();
-    img.save(path);
+    img.save(file);
 }
 
 void ApplicationInfo::notifyFullscreenChanged()
@@ -215,6 +214,31 @@ void ApplicationInfo::notifyFullscreenChanged()
         m_window->showFullScreen();
     else
         m_window->showNormal();
+}
+
+// Would be better to create a component importing Box2D 2.0 using QQmlContext and test if it exists but it does not work.
+void ApplicationInfo::setBox2DInstalled(const QQmlEngine &engine) {
+    /*
+      QQmlContext *context = new QQmlContext(engine.rootContext());
+      context->setContextObject(&myDataSet);
+
+      QQmlComponent component(&engine);
+      component.setData("import QtQuick 2.0\nimport Box2D 2.0\nItem { }", QUrl());
+      component.create(context);
+      box2dInstalled = (component != nullptr);
+    */
+    bool box2dInstalled = false;
+    for(const QString &folder: engine.importPathList()) {
+        if(QDir(folder).entryList().contains(QStringLiteral("Box2D.2.0"))) {
+            if(QDir(folder+"/Box2D.2.0").entryList().contains("qmldir")) {
+                qDebug() << "Found box2d in " << folder;
+                box2dInstalled = true;
+                break;
+            }
+        }
+    }
+    m_isBox2DInstalled = box2dInstalled;
+    emit isBox2DInstalledChanged();
 }
 
 // return the shortest possible locale name for the given locale, describing
@@ -246,7 +270,7 @@ QVariantList ApplicationInfo::localeSort(QVariantList list,
     return list;
 }
 
-QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
+QObject *ApplicationInfo::applicationInfoProvider(QQmlEngine *engine,
                                              QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
@@ -258,11 +282,6 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
     ApplicationInfo* appInfo = getInstance();
     connect(ApplicationSettings::getInstance(), &ApplicationSettings::fullscreenChanged, appInfo,
             &ApplicationInfo::notifyFullscreenChanged);
-    return appInfo;
-}
 
-void ApplicationInfo::init()
-{
-    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0,
-                                              "ApplicationInfo", systeminfoProvider);
+    return appInfo;
 }

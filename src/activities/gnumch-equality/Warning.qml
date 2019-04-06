@@ -17,7 +17,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -43,7 +43,7 @@ Rectangle {
     property var mArea: area
 
     function setFault(index) {
-        if (index == -1) {
+        if (index === -1) {
             fault = qsTr("You were eaten by a Troggle.") + "<br>"
             return
         }
@@ -58,7 +58,7 @@ Rectangle {
                 fault +=  num1 + " - " + num2 + " = " + (num1 - num2)
             }
         } else if (activity.type == "primes") {
-            if (num1 == 1) {
+            if (num1 === 1) {
                 fault += qsTr("1 is not a prime number.")
                 return
             }

@@ -17,7 +17,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -25,7 +25,7 @@ import GCompris 1.0
 import "../../core"
 
 Rectangle {
-    property var text : warningText
+    property alias text: warningText
 
     width: warningText.contentWidth * 1.1
     height: warningText.height * 1.1
@@ -38,7 +38,7 @@ Rectangle {
 
     GCText {
         id: warningText
-        text: qsTr("Be careful, a troggle !")
+        text: qsTr("Be careful, a troggle!")
         fontSize: largeSize
         wrapMode: Text.WordWrap
         horizontalAlignment: Text.AlignHCenter

@@ -23,3 +23,8 @@ All monuments: Wikipedia
 Level 6
 Background http://www.clipartbest.com/clipart-dcrMeMMc9
 All pyramids: Wikipedia
+
+Copyright: Timothee Giet, 2018
+License: CC-BY-SA 4.0
+Files:
+key.svg

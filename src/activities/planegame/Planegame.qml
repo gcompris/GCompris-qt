@@ -16,7 +16,7 @@
  GNU General Public License for more details.
 
  You should have received a copy of the GNU General Public License
- along with this program; if not, see <http://www.gnu.org/licenses/>.
+ along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 
 import QtQuick 2.6
@@ -110,7 +110,7 @@ ActivityBase {
         Score {
             id: score
             visible: false
-            fontSize: background.width > background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
+            fontSize: background.width >= background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
             height: internalTextComponent.height + 10
             anchors.bottom: bar.top
             anchors.margins: 10

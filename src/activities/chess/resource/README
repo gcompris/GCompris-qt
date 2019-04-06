@@ -1,4 +1,4 @@
-Copyright: Timothée Giet, 2016
+Copyright: Timothée Giet, 2016 - 2018
 License: CC-BY-SA 4.0
 Files:
 background-wood.svg
@@ -10,6 +10,9 @@ bq.svg
 br.svg
 chess-black.svg
 chess-white.svg
+redo.svg
+turn.svg
+undo.svg
 wb.svg
 wk.svg
 wn.svg

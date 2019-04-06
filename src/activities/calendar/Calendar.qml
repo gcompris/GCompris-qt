@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -61,7 +61,7 @@ ActivityBase {
             property alias answerChoices: answerChoices
             property alias questionDelay: questionDelay
             property alias okButtonParticles: okButtonParticles
-            property bool horizontalLayout: background.width > background.height * 1.5
+            property bool horizontalLayout: background.width >= background.height * 1.5
             property alias daysOfTheWeekModel: daysOfTheWeekModel
         }
 
@@ -376,7 +376,7 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            height: bar.height * 0.6
+            height: bar.height * 0.8
             width: okButton.height
             sourceSize.width: okButton.width
             sourceSize.height: okButton.height
@@ -421,7 +421,7 @@ ActivityBase {
         Score {
             id: score
             height: okButton.height
-            fontSize: items.horizontalLayout ? internalTextComponent.mediumSize : (answerChoices.visible ? internalTextComponent.smallSize : internalTextComponent.tinySize)
+            width: height
             anchors.top: calendarBox.bottom
             anchors.bottom: undefined
             anchors.left:  undefined

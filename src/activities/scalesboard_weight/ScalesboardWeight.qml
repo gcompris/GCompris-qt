@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import "../scalesboard"
 
@@ -106,7 +106,7 @@ Scalesboard {
                 "targets": [[1200, kg(1.2)], [1300, kg(1.3)], [1400, kg(1.4)],
                            [1500, kg(1.5)], [1600, kg(1.6)]],
                 "rightDrop": false,
-                "message": qsTr("Remember, one kilo ('kg') equals 1000 grams ('g')."),
+                "message": qsTr("Remember, one kilogram ('kg') equals 1000 grams ('g')."),
                 "question": qsTr("Enter the weight of the gift in gram: %1")
             },
             {

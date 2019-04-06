@@ -13,7 +13,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 import QtQuick 2.6
@@ -31,7 +31,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "#ffffb3"
+        color: "#abcdef"
         signal start
         signal stop
 
@@ -64,7 +64,7 @@ ActivityBase {
             property int totalCandies
             property int totalChildren: totalBoys + totalGirls
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / 11, background.height / (9 + barHeightAddon))
+            property int cellSize: Math.round(Math.min(background.width / 11, background.height / (9 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
             property int maxNumberOfCandiesPerWidget: 8
         }
@@ -77,7 +77,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: background.width > background.height
+        property bool vert: background.width >= background.height
         property int currentBoys: 0
         property int currentGirls: 0
         property int currentCandies: 0
@@ -146,7 +146,7 @@ ActivityBase {
             //show that the widget can be dropped here
             color: background.contains(boy.x, boy.y, grid) ||
                    background.contains(girl.x, girl.y, grid) ||
-                   background.contains(basket.x, basket.y, grid) ? "pink" : "transparent"
+                   background.contains(basket.x, basket.y, grid) ? "#d5e6f7" : "transparent"
 
             anchors {
                 top: background.vert ? parent.top : leftWidget.bottom
@@ -203,13 +203,9 @@ ActivityBase {
             radius: 10
             border.width: 2
             z: 10
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#000" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
-
+            border.color: "#DDD"
+            color: "#373737"
+            
             property alias text: instructionTxt.text
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -242,8 +238,6 @@ ActivityBase {
             z: instruction.z
             fontSize: background.vert ? regularSize : smallSize
             color: "white"
-            style: Text.Outline
-            styleColor: "black"
             horizontalAlignment: Text.AlignHCenter
             width: Math.max(Math.min(parent.width * 0.8, text.length * 8), parent.width * 0.3)
             wrapMode: TextEdit.WordWrap
@@ -256,8 +250,8 @@ ActivityBase {
                        items.cellSize * 1.74 : background.width
             height: background.vert ?
                         background.height : items.cellSize * 1.74
-            color: "#FFFF42"
-            border.color: "#FFD85F"
+            color: "#5a9de0"
+            border.color: "#3f81c4"
             border.width: 4
             z: 4
 
@@ -304,16 +298,16 @@ ActivityBase {
                     current: background.currentBoys
                     placedInChild: background.placedInBoys
                 }
+                
+                BasketWidget {
+                    id: basketWidget
+                }
 
                 CandyWidget {
                     id: candyWidget
                     total: background.easyMode ? items.totalCandies : 8 * items.totalChildren + 1
                     current: background.currentCandies
                     element.opacity: background.easyMode ? 1 : 0
-                }
-
-                BasketWidget {
-                    id: basketWidget
                 }
             }
         }
@@ -423,8 +417,8 @@ ActivityBase {
                 bottom: background.vert ? bar.top : leftWidget.bottom
                 margins: 3 * ApplicationInfo.ratio
             }
-            width: basketWidget.width
-            height: background.vert ? (basketWidget.height * 0.8) : basketWidget.height
+            width: girlWidget.width
+            height: background.vert ? (girlWidget.height * 0.8) : girlWidget.height
             numberOfSubLevels: items.nbSubLevel
             currentSubLevel: items.currentSubLevel + 1
         }

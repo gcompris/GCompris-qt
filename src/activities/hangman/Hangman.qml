@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -83,6 +83,7 @@ ActivityBase {
             property alias locale: background.locale
             property alias ok: ok
             property int remainingLife
+            property double maskThreshold
             property var goodWord
             property int goodWordIndex
             property bool easyMode: false
@@ -97,6 +98,7 @@ ActivityBase {
                     bonus.interval = 500
             }
             onRemainingLifeChanged: {
+                maskThreshold = 0.15 * remainingLife
                 if(remainingLife == 3) {
                     playWord();
                 }
@@ -236,7 +238,7 @@ ActivityBase {
                 maskSource: threshmask
                 spread: 0.4
                 // remainingLife between 0 and 6 => threshold between 0 and 0.9
-                threshold: 0.15 * items.remainingLife
+                threshold: items.maskThreshold
             }
         }
 
@@ -441,7 +443,7 @@ ActivityBase {
             sourceComponent: GCDialog {
                 parent: activity.main
                 message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
-                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
+                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("https://l10n.kde.org/") +
                          "<br /> <br />" +
                          qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
                 onClose: background.englishFallback = false

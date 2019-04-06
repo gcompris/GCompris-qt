@@ -18,7 +18,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 
 .pragma library
@@ -138,7 +138,7 @@ function initLevel() {
 
 function calculateFrequency() {
     var freq = [];
-    //regex pattern to detect whether the character is an english alphabet or some accented latin chacarcter
+    //regex pattern to detect whether the character is an english alphabet or some accented latin character
     var pattern = /[A-Za-z\u00C0-\u017F]/;
     for(var i = 0; i < words.length; i++) {
         var currentWord = words[i].translatedTxt;

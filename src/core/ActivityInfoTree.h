@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #ifndef ACTIVITYINFOTREE_H
 #define ACTIVITYINFOTREE_H
@@ -91,7 +91,7 @@ private:
 	};
 
 public:
-    static void init();
+    static void registerResources();
     static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
     void exportAsSQL();
 };

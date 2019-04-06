@@ -16,7 +16,7 @@
 *   GNU General Public License for more details.
 *
 *   You should have received a copy of the GNU General Public License
-*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 
 import QtQuick 2.6
@@ -35,7 +35,7 @@ ActivityBase {
     onStop: {}
 
     property string boardsUrl: ":/gcompris/src/activities/categorization/resource/board/"
-    property bool vert: background.width < background.height
+    property bool vert: background.width <= background.height
     property var barAtStart
 
     pageComponent: Image {
@@ -76,7 +76,7 @@ ActivityBase {
 
         function hideBar() {
             barAtStart = ApplicationSettings.isBarHidden;
-            if(categoryReview.width > categoryReview.height)
+            if(categoryReview.width >= categoryReview.height)
                 ApplicationSettings.isBarHidden = false;
             else 
                 ApplicationSettings.isBarHidden = true;

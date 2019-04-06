@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 .pragma library
 .import QtQuick 2.6 as Quick
@@ -41,7 +41,8 @@ function start(items_) {
     for(var i = 0;  i < dataset.length; ++i) {
         items.planetsModel.append({
             "realImg": dataset[i].realImg,
-            "bodyName": dataset[i].bodyName
+            "bodyName": dataset[i].bodyName,
+            "bodySize": dataset[i].bodySize
         });
     }
 

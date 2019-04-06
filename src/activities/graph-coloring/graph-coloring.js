@@ -17,7 +17,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 .pragma library
 .import QtQuick 2.6 as Quick
@@ -279,7 +279,7 @@ function initLevel() {
 function checkGuess() {
     var flag = false;
     var levelData = levels[currentLevel].graph
-    //Check wether all the nodes have been colored or not
+    //Check whether all the nodes have been colored or not
     for (var i = 0; i < levelData.nodePositions.length; i++){
         var node1 = items.nodesRepeater.model.get(i)
         if (node1.colIndex == -1){
@@ -288,7 +288,7 @@ function checkGuess() {
         }
     }
 
-    //Check wether the adjacent nodes do not have the same color
+    //Check whether the adjacent nodes do not have the same color
     for (var i = 0; i < levelData.edgeList.length; i++){
         var node1 = items.nodesRepeater.model.get(levelData.edgeList[i][0])
         var node2 = items.nodesRepeater.model.get(levelData.edgeList[i][1])

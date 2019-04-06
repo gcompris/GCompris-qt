@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
 import GCompris 1.0
@@ -59,6 +59,24 @@ Flipable {
     property color backColor: "white"
     property color pointColor: "black"
 
+    // Define the mode/representation of domino
+    property string mode: "dot"
+
+    // menu modes for setting different types for domino
+    readonly property var menuModes : [
+        //: "Dots" is for representation of the points in a domino in the form of dots
+        { "text": qsTr("Dots"), "value": "dot" },
+        //: "Arabic Numbers" is for representation of the points in a domino in the form of integer numbers
+        { "text": qsTr("Arabic Numbers"), "value": "number" },
+        //: "Roman Numbers" is for representation of the points in a domino  in the form of roman numbers
+        { "text": qsTr("Roman Numbers"), "value": "roman" },
+        //: "Images" is for representation of the points in a domino in the form of an image (containing a specific count of same elements)
+        { "text": qsTr("Images"), "value": "image" }
+    ]
+
+    // Source of the images should be in the same format as below with the number associated and svg format
+    property string source: "qrc:/gcompris/src/activities/memory-enumerate/resource/math_"
+
     // Set to true when to display on both sides.
     property bool flipEnabled: false
 
@@ -78,6 +96,7 @@ Flipable {
 
         DominoNumber {
             id: number1
+            mode: flipable.mode
             width: parent.width / 2
             height: parent.height
             color: flipable.pointColor
@@ -85,6 +104,7 @@ Flipable {
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
+            source: flipable.source
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             audioEffects: flipable.audioEffects
@@ -101,6 +121,7 @@ Flipable {
 
         DominoNumber {
             id: number2
+            mode: flipable.mode
             x: parent.width / 2
             width: parent.width / 2
             height: parent.height
@@ -109,6 +130,7 @@ Flipable {
             borderWidth: 0
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
+            source: flipable.source
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
             audioEffects: flipable.audioEffects

@@ -13,7 +13,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import GCompris 1.0
 
@@ -44,16 +44,17 @@ ActivityInfo {
  Switch filling of Ballast tanks:
  W / Up arrow: Central ballast tank
  R: Left ballast tank
- T: Right ballast tanks
+ T: Right ballast tank
  Switch flush ballast tanks:
  S / Down arrow: Central ballast tank
  F: Left ballast tank
- G: Right ballast tanks
+ G: Right ballast tank
 
  Diving planes:
  + : Increase diving plane angle
  - : Decrease diving plane angle")
   credit: ""
   section: "experimental"
+  enabled: ApplicationInfo.isBox2DInstalled
   createdInVersion: 9000
 }

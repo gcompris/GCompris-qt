@@ -16,7 +16,7 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 #include <QtDebug>
 #include <QApplication>
@@ -30,22 +30,21 @@
 #include <QPixmap>
 #include <QSettings>
 
+#include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
-#include "File.h"
-#include "Directory.h"
 #include "DownloadManager.h"
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
-    QFile file("assets:/gcompris_" + locale + ".qm");
+    QFile file("assets:/share/GCompris/gcompris_" + locale + ".qm");
 
     file.open(QIODevice::ReadOnly);
     QDataStream in(&file);
     uchar *data = (uchar*)malloc(file.size());
 
     if(!file.exists())
-        qDebug() << "file assets:/" << locale << ".qm does not exist";
+        qDebug() << "file assets:/share/GCompris/gcompris_" << locale << ".qm does not exist";
 
     in.readRawData((char*)data, file.size());
 
@@ -64,11 +63,8 @@ QString loadTranslation(QSettings &config, QTranslator &translator)
 {
     QString locale;
     // Get locale
-    if(config.contains("General/locale")) {
-        locale = config.value("General/locale").toString();
-    } else {
-        locale = GC_DEFAULT_LOCALE;
-    }
+    locale = config.value("General/locale", GC_DEFAULT_LOCALE).toString();
+
     if(locale == GC_DEFAULT_LOCALE)
         locale = QString(QLocale::system().name() + ".UTF-8");
 
@@ -109,20 +105,13 @@ int main(int argc, char *argv[])
     // Disable it because we already support HDPI display natively
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
-    QString renderer = QString(GRAPHICAL_RENDERER);
-    if(renderer == "software")
-       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
-    else if(renderer == "opengl")
-       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
-#endif
-    
     QApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
-
+    
+    //add a variable to disable default fullscreen on Mac, see below..
 #if defined(Q_OS_MAC)
     // Sandboxing on MacOSX as documented in:
     // http://doc.qt.io/qt-5/osx-deployment.html
@@ -149,9 +138,9 @@ int main(int argc, char *argv[])
     parser.addVersionOption();
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
-	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
+    QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
                                        QObject::tr("Run GCompris with the default system cursor."));
-	parser.addOption(clDefaultCursor);
+    parser.addOption(clDefaultCursor);
     QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
                                        QObject::tr("Run GCompris without cursor (touch screen mode)."));
     parser.addOption(clNoCursor);
@@ -173,15 +162,19 @@ int main(int argc, char *argv[])
     QCommandLineOption clWithKioskMode(QStringList() << "enable-kioskmode",
                                        QObject::tr("Enable the kiosk mode."));
     parser.addOption(clWithKioskMode);
+
+    QCommandLineOption clSoftwareRenderer(QStringList() << "software-renderer",
+                                       QObject::tr("Use software renderer instead of openGL (slower but should run with any graphical card, needs Qt 5.8 minimum)."));
+    parser.addOption(clSoftwareRenderer);
+    QCommandLineOption clOpenGLRenderer(QStringList() << "opengl-renderer",
+                                       QObject::tr("Use openGL renderer instead of software (faster but crash potentially depending on your graphical card)."));
+    parser.addOption(clOpenGLRenderer);
+
     parser.process(app);
 
-
-    ApplicationInfo::init();
-    ActivityInfoTree::init();
-    ApplicationSettings::init();
-    File::init();
-    Directory::init();
-    DownloadManager::init();
+    GComprisPlugin plugin;
+    plugin.registerTypes("GCompris");
+    ActivityInfoTree::registerResources();
 
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
@@ -190,31 +183,29 @@ int main(int argc, char *argv[])
     // async callback from the payment system
     ApplicationSettings::getInstance()->checkPayment();
 
-    // Getting fullscreen mode from config if exist, else true is default value
+    // Disable default fullscreen launch on Mac as it's a bit broken, window is behind desktop bars
+#if defined(Q_OS_MAC)
+    bool isFullscreen = false;
+#else
+    // for other platforms, fullscreen is the default value
     bool isFullscreen = true;
+#endif
     {
+        isFullscreen = config.value("General/fullscreen", isFullscreen).toBool();
 
-        if(config.contains("General/fullscreen")) {
-            isFullscreen = config.value("General/fullscreen").toBool();
-        }
+        // Set the cursor image
+        bool defaultCursor = config.value("General/defaultCursor", false).toBool();
 
-		// Set the cursor image
-		bool defaultCursor = false;
-		if(config.contains("General/defaultCursor")) {
-			defaultCursor = config.value("General/defaultCursor").toBool();
-		}
-		if(!defaultCursor && !parser.isSet(clDefaultCursor))
-			QGuiApplication::setOverrideCursor(
-						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
-								0, 0));
+        if(!defaultCursor && !parser.isSet(clDefaultCursor))
+            QGuiApplication::setOverrideCursor(
+                                               QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
+                                                       0, 0));
 
-		// Hide the cursor
-		bool noCursor = false;
-		if(config.contains("General/noCursor")) {
-			noCursor = config.value("General/noCursor").toBool();
-		}
-		if(noCursor || parser.isSet(clNoCursor))
-			QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
+        // Hide the cursor
+        bool noCursor = config.value("General/noCursor", false).toBool();
+
+        if(noCursor || parser.isSet(clNoCursor))
+            QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
     }
 
     // Update execution counter
@@ -240,6 +231,23 @@ int main(int argc, char *argv[])
     if(parser.isSet(clWithKioskMode)) {
         ApplicationSettings::getInstance()->setKioskMode(true);
     }
+    if(parser.isSet(clSoftwareRenderer)) {
+        ApplicationSettings::getInstance()->setRenderer(QStringLiteral("software"));
+    }
+    if(parser.isSet(clOpenGLRenderer)) {
+        ApplicationSettings::getInstance()->setRenderer(QStringLiteral("opengl"));
+    }
+
+    // Set the renderer used
+    const QString &renderer = ApplicationSettings::getInstance()->renderer();
+    ApplicationInfo::getInstance()->setUseOpenGL(renderer != QLatin1String("software"));
+
+#if QT_VERSION >= QT_VERSION_CHECK(5, 8, 0)
+    if(renderer == QLatin1String("software"))
+       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::Software);
+    else if(renderer == QLatin1String("opengl"))
+       QQuickWindow::setSceneGraphBackend(QSGRendererInterface::OpenGL);
+#endif
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
@@ -253,8 +261,10 @@ int main(int argc, char *argv[])
                          .arg(QCoreApplication::applicationDirPath()));
 #endif
 
+    ApplicationInfo::getInstance()->setBox2DInstalled(engine);
+
     if(parser.isSet(exportActivitiesAsSQL)) {
-        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));
+        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, nullptr)));
         menuTree->exportAsSQL();
         exit(0);
     }
@@ -262,11 +272,10 @@ int main(int argc, char *argv[])
     QObject *topLevel = engine.rootObjects().value(0);
 
     QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
-    if (!window) {
-		qWarning("Error: Your root item has to be a Window.");
-		return -1;
-	}
-
+    if (window == nullptr) {
+        qWarning("Error: Your root item has to be a Window.");
+        return -1;
+    }
     ApplicationInfo::setWindow(window);
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));

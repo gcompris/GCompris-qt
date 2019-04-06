@@ -15,7 +15,7 @@
  GNU General Public License for more details.
 
  You should have received a copy of the GNU General Public License
- along with this program; if not, see <http://www.gnu.org/licenses/>.
+ along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
 import GCompris 1.0
@@ -60,7 +60,7 @@ ActivityBase {
             property alias leftHand: leftHand
             property alias deltaPressedTimer: deltaPressedTimer
             /* when the corresponding arrow key is pressed, the following boolean pass
-               to true and is reseted at the end of the level */
+               to true and is reset at the end of the level */
             property bool leftPressed
             property bool rightPressed
         }
@@ -233,7 +233,7 @@ ActivityBase {
                 top: parent.top
                 topMargin: 10
             }
-            z : 10
+            z: 10
 
             index: bar.level === 1 &&
                      !(items.leftPressed && items.rightPressed) ? 0 : -1
