@@ -24,25 +24,26 @@ import "../../../../core"
 
 Dataset {
     objective: qsTr("Numbers between 1 and 8")
+    difficulty: 1
     data: [
     {
-        "maxNumber": 1, /* Max number on each domino side */
         "minNumber": 1,
+        "maxNumber": 1, /* Max number on each domino side */
         "numberOfFish": 3
     },
     {
-        "maxNumber": 2,
         "minNumber": 1,
+        "maxNumber": 2,
         "numberOfFish": 4
     },
     {
-        "maxNumber": 3,
         "minNumber": 1,
+        "maxNumber": 3,
         "numberOfFish": 5
     },
     {
-        "maxNumber": 4,
         "minNumber": 1,
+        "maxNumber": 4,
         "numberOfFish": 5
     }
     ]

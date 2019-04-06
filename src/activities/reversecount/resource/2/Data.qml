@@ -24,30 +24,31 @@ import "../../../../core"
 
 Dataset {
     objective: qsTr("Numbers between 2 and 18")
+    difficulty: 2
     data: [
     {
-        "maxNumber": 5,
         "minNumber": 2,
+        "maxNumber": 5,
         "numberOfFish": 5
     },
     {
-        "maxNumber": 6,
         "minNumber": 3,
+        "maxNumber": 6,
         "numberOfFish": 5
     },
     {
+        "minNumber": 4,
         "maxNumber": 7,
-        "minNumber": 4,
         "numberOfFish": 5
     },
     {
+        "minNumber": 4,
         "maxNumber": 8,
-        "minNumber": 4,
         "numberOfFish": 5
     },
     {
-        "maxNumber": 9,
         "minNumber": 5,
+        "maxNumber": 9,
         "numberOfFish": 5
     }
     ]

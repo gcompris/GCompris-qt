@@ -53,7 +53,7 @@ Rectangle {
      * type:string
      * Title of the configuration dialog.
     */
-    readonly property string title: currentActivity ? qsTr("%1 levels").arg(currentActivity.title) : ""
+    readonly property string title: currentActivity ? qsTr("%1 settings").arg(currentActivity.title) : ""
 
     property var difficultiesModel: []
     property QtObject currentActivity
@@ -108,7 +108,7 @@ Rectangle {
         }
 
         onLoaded: {
-            difficultiesModel.push({"level": currentFile.level, "objective": item.objective})
+            difficultiesModel.push({"level": currentFile.level, "objective": item.objective, "difficulty": item.difficulty})
             if(dataFiles.length != 0) {
                 start()
             }
@@ -213,15 +213,26 @@ Rectangle {
                         id: levelsGroup
                     }
                     Column {
+                        spacing: 10
                         Repeater {
                             id: difficultiesRepeater
-                            delegate: GCDialogCheckBox {
-                                id: objective
-                                width: dialogChooseLevel.width - 30 - 2 * flick.anchors.margins
-                                text: modelData.objective
-                                exclusiveGroup: levelsGroup
-                                checked: chosenLevel == modelData.level
-                                onClicked: chosenLevel = modelData.level
+                            delegate: Row {
+                                height: objective.height
+                                Image {
+                                    id: difficultyIcon
+                                    source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                    modelData.difficulty + ".svg";
+                                    sourceSize.height: objective.indicatorImageHeight
+                                    anchors.verticalCenter: objective.verticalCenter
+                                }
+                                GCDialogCheckBox {
+                                    id: objective
+                                    width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
+                                    text: modelData.objective
+                                    exclusiveGroup: levelsGroup
+                                    checked: chosenLevel == modelData.level
+                                    onClicked: chosenLevel = modelData.level
+                                }                            
                             }
                         }
                     }
@@ -238,7 +249,6 @@ Rectangle {
                     upVisible: flick.visibleArea.yPosition <= 0 ? false : true
                     downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
                 }
-
             }
             Row {
                 id: saveAndPlayRow

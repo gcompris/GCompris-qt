@@ -24,6 +24,7 @@ import "../../../../core"
 
 Dataset {
     objective: qsTr("Set and display time on analog clock for full half and quarters of an hour.")
+    difficulty: 2
     data: [
     {
         "numberOfSubLevels": 5,

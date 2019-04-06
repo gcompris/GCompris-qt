@@ -24,6 +24,7 @@ import "../../../../core"
 
 Dataset {
     objective: qsTr("Set and display time on analog clock for a time containing minutes and seconds.")
+    difficulty: 4
     data: [
     {
         "numberOfSubLevels": 5,

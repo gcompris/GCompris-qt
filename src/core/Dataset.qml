@@ -34,5 +34,6 @@ Item {
     id: dataset
 
     property string objective
+    property int difficulty
     property var data
 }
