@@ -194,7 +194,6 @@ void ActivityInfo::setCreatedInVersion(const int created)
     m_createdInVersion = created;
     emit createdInVersionChanged();
 }
-<<<<<<< HEAD
 
 QStringList ActivityInfo::levels() const
 {
@@ -231,15 +230,3 @@ void ActivityInfo::setCurrentLevel()
         m_currentLevel = ApplicationSettings::getInstance()->currentLevel(m_name);
     }
 }
-
-QStringList ActivityInfo::getSectionPath()
-{
-    QStringList path;
-    ActivityInfo *activity(this);
-    do {
-        path.prepend(activity->section());
-    } while( ( activity = qobject_cast<ActivityInfo*>(activity->parent()) ) );
-    return path;
-}
-=======
->>>>>>> master
