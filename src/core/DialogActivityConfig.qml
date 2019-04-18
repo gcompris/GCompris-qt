@@ -239,9 +239,10 @@ Rectangle {
                 console.log("Configuration data is invalid, not saving!");
                 return;
             }
-
             saveData()
-            ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
+            if(activityName != "") {
+                ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
+            }
             parent.close()
         }
     }
