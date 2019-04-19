@@ -23,9 +23,10 @@ import QtQuick 2.6
 
 import "../../core"
 import "../algebra_by"
+import "algebra.js" as Activity
 
 Algebra {
     onStart: {
-        operand.text = "x"
+        operand.text = Activity.OperandsEnum.TIMES_SIGN
     }
 }

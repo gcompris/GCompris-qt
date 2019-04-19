@@ -23,10 +23,10 @@ import QtQuick 2.6
 
 import "../../core"
 import "../algebra_by/"
-
+import "../algebra_by/algebra.js" as Activity
 
 Algebra {
     onStart: {
-        operand.text = "-"
+        operand.text = Activity.OperandsEnum.MINUS_SIGN
     }
 }
