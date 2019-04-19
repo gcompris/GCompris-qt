@@ -27,6 +27,12 @@ var operand
 var secondOperandVal
 var firstOperandVal
 var operations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var OperandsEnum = {
+    TIMES_SIGN : "\u00D7",
+    PLUS_SIGN : "\u002B",
+    MINUS_SIGN : "\u2212",
+    DIVIDE_SIGN : "\u2215"
+}
 
 var nbLevel = operations.length
 
@@ -40,7 +46,7 @@ function start(coreItems_, otherItems_, operand_) {
     // currentLevel * N (N behind random)
     // where the last levels will do:
     // N * currentLevel
-    if(operand.text === "x" || operand.text === "+")
+    if(operand.text === OperandsEnum.TIMES_SIGN || operand.text === OperandsEnum.PLUS_SIGN)
         nbLevel = 2 * operations.length
     else
         nbLevel = operations.length
@@ -82,19 +88,19 @@ function calculateOperands()
 {
     switch(operand.text)
     {
-    case "x":
+    case OperandsEnum.TIMES_SIGN:
         firstOperandVal = coreItems.bar.level
         secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
         break;
-    case "+":
+    case OperandsEnum.PLUS_SIGN:
         firstOperandVal = coreItems.bar.level
         secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
         break;
-    case "-":
+    case OperandsEnum.MINUS_SIGN:
         firstOperandVal = coreItems.bar.level + 9
         secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
         break;
-    case "/":
+    case OperandsEnum.DIVIDE_SIGN:
         firstOperandVal = coreItems.bar.level * operations[coreItems.score.currentSubLevel - 1]
         secondOperandVal = coreItems.bar.level
         break;
@@ -115,16 +121,16 @@ function calculateOperands()
 function getAnswer() {
     switch(operand.text)
     {
-    case "x":
+    case OperandsEnum.TIMES_SIGN:
         return (firstOperandVal * secondOperandVal)
 
-    case "+":
+    case OperandsEnum.PLUS_SIGN:
         return (firstOperandVal + secondOperandVal)
 
-    case "-":
+    case OperandsEnum.MINUS_SIGN:
         return (firstOperandVal - secondOperandVal)
     
-    case "/":
+    case OperandsEnum.DIVIDE_SIGN:
         return (firstOperandVal / secondOperandVal)
     }
 }
