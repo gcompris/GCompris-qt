@@ -37,12 +37,12 @@ import GCompris 1.0
 ParticleSystem {
     id: particles
     anchors.fill: parent
+    running: false
 
     /// @cond INTERNAL_DOCS
 
     property alias emitter: clickedEmitter
     property alias clip: imageParticle.clip
-
     /// @endcond
 
     Emitter {

@@ -42,8 +42,18 @@ Loader {
      * Cf. Emitter.burst
      */
     function burst(val) {
-        if(active)
+        if(active) {
+            item.start()
             item.emitter.burst(val)
+            stopParticleSystem.restart()
+        }
+    }
+
+    Timer {
+        id: stopParticleSystem
+        interval: item.emitter.lifeSpan + item.emitter.lifeSpanVariation
+        repeat: false
+        onTriggered: item.stop()
     }
     onLoaded: item.clip = clip
     source: "ParticleSystemStar.qml"
