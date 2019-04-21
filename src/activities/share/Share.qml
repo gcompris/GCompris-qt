@@ -64,7 +64,7 @@ ActivityBase {
             property int totalCandies
             property int totalChildren: totalBoys + totalGirls
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.round(Math.min(background.width / 11, background.height / (9 + barHeightAddon)))
+            property int cellSize: Math.round(Math.min(background.width / 12, background.height / (11 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
             property int maxNumberOfCandiesPerWidget: 8
         }
@@ -255,7 +255,7 @@ ActivityBase {
             border.width: 4
             z: 4
 
-            //grid with ok button and images of a boy, a girl, a candy and a basket
+            //grid with ok button and images of a boy, a girl, a candy, a basket and the button to display the instructions
             Grid {
                 id: view
                 x: 10
@@ -264,13 +264,13 @@ ActivityBase {
                 width: background.vert ? leftWidget.width : 3 * bar.height
                 height: background.vert ? background.height - 2 * bar.height : bar.height
                 spacing: 10
-                columns: background.vert ? 1 : 5
+                columns: background.vert ? 1 : 6
 
                 //ok button
                 Image {
                     id: okButton
                     source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-                    sourceSize.width: items.cellSize * 1.5
+                    sourceSize.width: items.cellSize * 1.5 - view.x / 2
                     fillMode: Image.PreserveAspectFit
 
                     MouseArea {
@@ -308,6 +308,21 @@ ActivityBase {
                     total: background.easyMode ? items.totalCandies : 8 * items.totalChildren + 1
                     current: background.currentCandies
                     element.opacity: background.easyMode ? 1 : 0
+                }
+
+                Image {
+                    id: showInstruction
+                    source:"qrc:/gcompris/src/core/resource/bar_hint.svg"
+                    sourceSize.width: items.cellSize * 1.5 - view.x / 2
+                    fillMode: Image.PreserveAspectFit
+
+                    MouseArea {
+                        anchors.fill: parent
+                        enabled: background.finished ? false : true
+                        onPressed: showInstruction.opacity = 0.6
+                        onReleased: showInstruction.opacity = 1
+                        onClicked: items.instruction.opacity == 0 ? items.instruction.show() : items.instruction.hide()
+                    }
                 }
             }
         }
