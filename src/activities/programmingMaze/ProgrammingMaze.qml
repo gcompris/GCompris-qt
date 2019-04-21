@@ -1,9 +1,11 @@
-/* GCompris - programmingMaze.qml
+/* GCompris - ProgrammingMaze.qml
  *
  * Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
+ * Copyright (C) 2018 Aman Kumar Gupta <gupta2140@gmail.com>
  *
  * Authors:
- *   Siddhesh Suthar <siddhesh.it@gmail.com> (Qt Quick port)
+ *   Siddhesh Suthar <siddhesh.it@gmail.com>
+ *   Aman Kumar Gupta <gupta2140@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -18,12 +20,11 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.2
+import QtQuick 2.6
 import GCompris 1.0
 import "../../core"
 
 import "programmingMaze.js" as Activity
-
 
 ActivityBase {
     id: activity
@@ -43,17 +44,23 @@ ActivityBase {
         oldHeight = height
     }
 
-    pageComponent: Rectangle {
+    property bool keyboardNavigationVisible: false
+    property string mode: "basic"
+    property string datasetUrl: "qrc:/gcompris/src/activities/programmingMaze/Dataset.qml"
+
+    pageComponent: Image {
         id: background
-        anchors.fill: parent
-        color: "#8C8984"
+        source: "qrc:/gcompris/src/activities/programmingMaze/resource/background.svg"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: parent.width
 
         signal start
         signal stop
 
-        property bool keyNavigation: false
         property bool insertIntoMain: true
-        property bool insertIntoProcedure: false
+        property alias items: items
+        property int buttonWidth: background.width / 10
+        property int buttonHeight: background.height / 15.3
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -67,51 +74,74 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property GCAudio audioEffects: activity.audioEffects
+            property GCSfx audioEffects: activity.audioEffects
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
-            property alias answerModel: answerModel
-            property alias answerSheet: answerSheet
+            property alias mainFunctionModel: mainFunctionModel
+            property alias mainFunctionCodeArea: mainFunctionCodeArea
             property alias procedureModel: procedureModel
-            property alias procedure: procedure
+            property alias procedureCodeArea: procedureCodeArea
+            property alias instructionArea: instructionArea
             property alias player: player
-            property alias runCodeImage: runCode.source
+            property alias constraintInstruction: constraintInstruction
+            property alias tutorialImage: tutorialImage
+            property alias fish: fish
+            property alias dataset: dataset
+            property bool isRunCodeEnabled: true
+            property bool isTuxMouseAreaEnabled: false
+            property bool currentLevelContainsProcedure
+            property int maxNumberOfInstructionsAllowed
+            property int numberOfInstructionsAdded
         }
 
-        onStart: {
-            Activity.start(items)
-            keyNavigation = false
+        // This function catches the signal emitted after completion of movement of Tux after executing each instruction.
+        function checkSuccessAndExecuteNextInstruction() {
+            Activity.checkSuccessAndExecuteNextInstruction()
         }
+
+        // This function catches the signal emitted after finding a dead-end in any of the executing instruction.
+        function deadEnd() {
+            Activity.deadEnd()
+        }
+
+        Loader {
+            id: dataset
+        }
+
+        onStart: { Activity.start(items, mode, datasetUrl) }
         onStop: { Activity.stop() }
 
+        property var areaWithKeyboardInput: instructionArea
 
-        Keys.onRightPressed: {
-            keyNavigation = true
-            instruction.moveCurrentIndexRight()
+        onAreaWithKeyboardInputChanged: activeCodeAreaIndicator.changeActiveCodeAreaIndicator(areaWithKeyboardInput)
+
+        Keys.enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
+        Keys.onPressed: {
+            activity.keyboardNavigationVisible = true
+            if(event.key === Qt.Key_Left)
+                areaWithKeyboardInput.moveCurrentIndexLeft()
+            if(event.key === Qt.Key_Right)
+                areaWithKeyboardInput.moveCurrentIndexRight()
+            if(event.key === Qt.Key_Up)
+                areaWithKeyboardInput.moveCurrentIndexUp()
+            if(event.key === Qt.Key_Down)
+                areaWithKeyboardInput.moveCurrentIndexDown()
+            if(event.key === Qt.Key_Space)
+                areaWithKeyboardInput.spaceKeyPressed()
+            if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
+                runCodeOrResetTux()
+            if(event.key === Qt.Key_Tab)
+                areaWithKeyboardInput.tabKeyPressed()
+            if(event.key === Qt.Key_Delete && activeCodeAreaIndicator.top != instructionArea.top) {
+                areaWithKeyboardInput.deleteKeyPressed()
+            }
         }
-        Keys.onLeftPressed:  {
-            keyNavigation = true
-            instruction.moveCurrentIndexLeft()
-        }
-        Keys.onDownPressed:  {
-            keyNavigation = true
-            instruction.moveCurrentIndexDown()
-        }
-        Keys.onUpPressed:  {
-            keyNavigation = true
-            instruction.moveCurrentIndexUp()
-        }
-        Keys.onSpacePressed:  {
-            keyNavigation = true
-            instruction.currentItem.mouseAreaInstruction.clicked()
-        }
-        Keys.onEnterPressed:  {
-            keyNavigation = true
-            instruction.currentItem.mouseAreaInstruction.clicked()
-        }
-        Keys.onReturnPressed:  {
-            keyNavigation = true
-            instruction.currentItem.mouseAreaInstruction.clicked()
+
+        function runCodeOrResetTux() {
+            if(!Activity.deadEndPoint)
+                runCodeMouseArea.executeCode()
+            else
+                Activity.initLevel()
         }
 
         ListModel {
@@ -119,371 +149,239 @@ ActivityBase {
         }
 
         ListModel {
-            id: answerModel
+            id: mainFunctionModel
         }
 
         ListModel {
             id: procedureModel
         }
 
+        Rectangle {
+            id: constraintInstruction
+            anchors.left: parent.left
+            anchors.bottom: runCode.top
+            width: parent.width / 2.3
+            height: parent.height / 8.9
+            radius: 10
+            z: 3
+            color: "#E8E8E8" //paper white
+            border.width: 3 * ApplicationInfo.ratio
+            border.color: "#87A6DD"  //light blue
+
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            function changeConstraintInstructionOpacity() {
+                if(opacity)
+                    constraintInstruction.hide()
+                else
+                    constraintInstruction.show()
+            }
+
+            function show() {
+                if(instructionText.text)
+                    opacity = 0.8
+            }
+            function hide() {
+                opacity = 0
+            }
+
+            GCText {
+                id: instructionText
+                anchors.fill: parent
+                anchors.margins: parent.border.width
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                fontSizeMode: Text.Fit
+                wrapMode: Text.WordWrap
+
+                readonly property string resetTuxInstructionText: qsTr("Click on Tux or press Enter key to reset it or RELOAD button to reload the level.")
+                readonly property string constraintInstructionText: qsTr("Reach the fish in less than %1 instructions.").arg(items.maxNumberOfInstructionsAllowed + 1)
+
+                text: items.isTuxMouseAreaEnabled ? resetTuxInstructionText : constraintInstructionText
+            }
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: constraintInstruction.changeConstraintInstructionOpacity()
+        }
+
         Repeater {
             id: mazeModel
-            model: Activity.mazeBlocks[0]
 
             anchors.left: parent.left
             anchors.top: parent.top
 
             Image {
-                x: modelData[0] * width
-                y: modelData[1] * height
+                x: modelData.x * width
+                y: modelData.y * height
                 width: background.width / 10
-                height: (background.height - background.height/10) / 10
+                height: (background.height - background.height / 10) / 10
                 source: Activity.reverseCountUrl + "iceblock.svg"
-
-                Image {
-                    id: fish
-                    anchors.centerIn: parent
-                    sourceSize.width: background.width / 12
-                    source: (modelData[0] == Activity.mazeBlocks[Activity.currentLevel][1][0][0] && modelData[1] == Activity.mazeBlocks[Activity.currentLevel][1][0][1]) ? Activity.reverseCountUrl + "blue-fish.svg" : ""
-                    z: 5
-                }
             }
+        }
+
+        Image {
+            id: fish
+            sourceSize.width: background.width / 12
+            source: Activity.reverseCountUrl + "blue-fish.svg"
         }
 
         Image {
             id: player
             source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
             sourceSize.width: background.width / 12
-            x: 0; y: 0; z: 11
+            z: 1
             property int duration: 1000
-            property bool tuxIsBusy: false
+            readonly property real playerCenterX: x + width / 2
+            readonly property real playerCenterY: y + height / 2
 
-            signal init
-
-            onInit: {
-                player.rotation = Activity.EAST
-            }
-
-            onTuxIsBusyChanged: {
-                Activity.playerRunningChanged()
-            }
-
-            Behavior on x {
-                SmoothedAnimation {
-                    duration: player.duration
-                    reversingMode: SmoothedAnimation.Immediate
-                    onRunningChanged: {
-                        player.tuxIsBusy = !player.tuxIsBusy
-                    }
-                }
-            }
-
-            Behavior on y {
-                SmoothedAnimation {
-                    duration: player.duration
-                    reversingMode: SmoothedAnimation.Immediate
-                    onRunningChanged: {
-                        player.tuxIsBusy = !player.tuxIsBusy
-                    }
-                }
-            }
-
-            Behavior on rotation {
-                RotationAnimation {
-                    duration: player.duration / 2
-                    direction: RotationAnimation.Shortest
-                    onRunningChanged: {
-                        player.tuxIsBusy = !player.tuxIsBusy
-                    }
-                }
-            }
-
-        }
-
-        property int buttonWidth: background.width / 10
-        property int buttonHeight: background.height / 10
-
-        GridView {
-            id: instruction
-            width: parent.width * 0.5
-            height: parent.height * 0.3 + 25 * ApplicationInfo.ratio
-            cellWidth: background.buttonWidth
-            cellHeight: background.buttonHeight
-
-            anchors.left: parent.left
-            anchors.bottom: runCode.top
-            anchors.top: mazeModel.bottom
-            anchors.topMargin: background.buttonHeight * 4
-            anchors.bottomMargin: runCode.height / 2
-
-            interactive: false
-            model: instructionModel
-
-            header: instructionHeaderComponent
-
-            highlight: Rectangle {
-                width: buttonWidth
-                height: buttonHeight
-                color: "lightsteelblue"
-                border.width: 3
-                border.color: "black"
-                visible: background.keyNavigation
-                x: instruction.currentItem.x
-                Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
-            }
-            highlightFollowsCurrentItem: false
-            focus: true
-            keyNavigationWraps: true
-
-            delegate: Column {
-                spacing: 10 * ApplicationInfo.ratio
-                property alias mouseAreaInstruction: mouseAreaInstruction
-
-                Item {
-                    width: background.buttonWidth
-                    height: background.buttonHeight
-
-                    Rectangle {
-                        id: rect
-                        width: parent.width
-                        height: parent.height
-                        anchors.fill: parent
-                        gradient: Gradient {
-                            GradientStop { position: 0.0; color: "#0191C8" }
-                            GradientStop { position: 1.0; color: "#005B9A" }
-                        }
-                        opacity: 0.5
-                    }
-
-                    Image {
-                        id: icon
-                        source: Activity.url + name + ".svg"
-                        sourceSize {width: parent.width; height: parent.height}
-                        width: sourceSize.width
-                        height: sourceSize.height
-                        anchors.horizontalCenter: parent.horizontalCenter
-                    }
-
-
-                    Image {
-                        source: "qrc:/gcompris/src/core/resource/button.svg"
-                        sourceSize {  height: parent.height; width: parent.width }
-                        width: sourceSize.width
-                        height: sourceSize.height
-                    }
-
-                    MouseArea {
-                        id: mouseAreaInstruction
-                        anchors.fill: parent
-                        signal clicked
-                        onClicked: {
-                            insertIntoModel()
-                        }
-                        onPressed: {
-                            insertIntoModel()
-                        }
-                        function insertIntoModel() {
-                            clickedAnim.start()
-                            if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE) {
-                                procedureModel.append({"name": name})
-                            }
-                            if(background.insertIntoMain) {
-                                answerModel.append({"name": name})
-                            }
-                        }
-                    }
-                    SequentialAnimation {
-                        id: clickedAnim
-                        PropertyAnimation {
-                            target: rect
-                            property: "opacity"
-                            to: "1"
-                            duration: 300
-                        }
-
-                        PropertyAnimation {
-                            target: rect
-                            property: "opacity"
-                            to: "0.5"
-                            duration: 300
-                        }
-                    }
+            MouseArea {
+                id: tuxMouseArea
+                anchors.fill: parent
+                enabled: items.isTuxMouseAreaEnabled
+                onClicked: {
+                    Activity.initLevel()
                 }
             }
         }
 
-        // insert data upon clicking the list items into this answerData
-        // and then process it to run the code
+        Rectangle {
+            id: activeCodeAreaIndicator
+            opacity: 0.5
+            visible: activity.keyboardNavigationVisible
 
-        AnswerSheet {
-            id: answerSheet
-            background: background
-            currentModel: answerModel
+            function changeActiveCodeAreaIndicator(activeArea) {
+                anchors.top = activeArea.top
+                anchors.fill = activeArea
+            }
+        }
+
+        InstructionArea {
+            id: instructionArea
+        }
+
+        HeaderArea {
+            id: mainFunctionHeader
+            headerText: qsTr("Main")
+            headerOpacity: background.insertIntoMain ? 1 : 0.5
+            onClicked: background.insertIntoMain = true
+            anchors.top: parent.top
             anchors.right: parent.right
-            anchors.top: answerHeaderComponent.bottom
         }
 
-        AnswerSheet {
-            id: procedure
-            background: background
+        CodeArea {
+            id: mainFunctionCodeArea
+            currentModel: mainFunctionModel
+            anchors.right: parent.right
+            anchors.top: mainFunctionHeader.bottom
+
+            onTabKeyPressed: {
+                mainFunctionCodeArea.currentIndex = -1
+                if(!items.currentLevelContainsProcedure) {
+                    background.areaWithKeyboardInput = instructionArea
+                    instructionArea.currentIndex = 0
+                }
+                else {
+                    background.areaWithKeyboardInput = procedureCodeArea
+                    background.insertIntoMain = false
+                }
+            }
+        }
+
+        HeaderArea {
+            id: procedureHeader
+            headerText: qsTr("Procedure")
+            headerOpacity: !background.insertIntoMain ? 1 : 0.5
+            visible: procedureCodeArea.visible
+            onClicked: background.insertIntoMain = false
+            anchors.top: mainFunctionCodeArea.bottom
+            anchors.right: parent.right
+        }
+
+        CodeArea {
+            id: procedureCodeArea
             currentModel: procedureModel
             anchors.right: parent.right
-            anchors.bottom: parent.bottom
-            visible: bar.level > 2
+            anchors.top: procedureHeader.bottom
+            visible: items.currentLevelContainsProcedure
+
+            property alias procedureIterator: procedureCodeArea.currentIndex
+
+            onTabKeyPressed: {
+                procedureCodeArea.currentIndex = -1
+                background.areaWithKeyboardInput = instructionArea
+                instructionArea.currentIndex = 0
+                background.insertIntoMain = true
+            }
         }
 
         Image {
             id: runCode
             width: background.width / 10
             height: background.height / 10
-            anchors.right: instruction.right
+            anchors.right: instructionArea.right
             anchors.bottom: bar.top
             anchors.margins: 10 * ApplicationInfo.ratio
 
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
             fillMode: Image.PreserveAspectFit
 
-
             MouseArea {
                 id: runCodeMouseArea
                 anchors.fill: parent
-                hoverEnabled: true
+                hoverEnabled: ApplicationInfo.isMobile ? false : (!items.isRunCodeEnabled ? false : true)
+                enabled: items.isRunCodeEnabled
+
+                signal executeCode
+
                 onEntered: runCode.scale = 1.1
-                onClicked: {
-                    // todo add a condition to disable it if code is running
-                    // either the execution hasn't started or stopped because of deadEndPoint
-                    if(Activity.codeIterator == 0 || Activity.deadEndPoint) {
-                        console.log(Activity.codeIterator +" value of codeIterator")
-                        Activity.runCode()
-                    }
+                onExecuteCode: {
+                    if(mainFunctionModel.count)
+                        startCodeExecution()
                 }
+                onClicked: executeCode()
                 onExited: runCode.scale = 1
+
+                function startCodeExecution() {
+                    runCodeClickAnimation.start()
+                    Activity.resetCodeAreasIndices()
+
+                    if(constraintInstruction.opacity)
+                        constraintInstruction.hide()
+
+                    Activity.runCode()
+                }
+            }
+
+            SequentialAnimation {
+                id: runCodeClickAnimation
+                NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100 }
+                NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100 }
             }
         }
 
+        Image {
+            id: tutorialImage
+            source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW01.svg"
+            anchors.fill: parent
+            z: 5
+            visible: true
 
+            property bool shownProcedureTutorialInstructions: false
 
-        Component {
-            id: instructionHeaderComponent
-            Rectangle {
-                id: headerRect
-                width: instruction.width
-                height: 25 * ApplicationInfo.ratio
-                color: "#005B9A"
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize { height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                }
-
-                GCText {
-                    id: headerText
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    width: parent.width
-                    height: parent.height
-                    fontSizeMode: Font.DemiBold
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: qsTr("Choose the instructions")
+            Tutorial {
+                id:tutorialSection
+                tutorialDetails: bar.level <= 2 ? Activity.mainTutorialInstructions : Activity.procedureTutorialInstructions
+                onSkipPressed: {
+                    Activity.initLevel()
+                    tutorialImage.visible = false
+                    tutorialNumber = 0
                 }
             }
-        }
-
-        Item {
-            id: answerHeaderComponent
-            width: answerSheet.width
-            height: 50 * ApplicationInfo.ratio
-            anchors.left: answerSheet.left
-            anchors.top: parent.top
-
-            Rectangle {
-                id: answerHeaderRect
-                anchors.fill: parent
-                color: "#005B9A"
-                opacity: background.insertIntoMain ? 1 : 0.5
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        background.insertIntoMain = true
-                        background.insertIntoProcedure = false
-                    }
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                }
-
-                GCText {
-                    id: answerHeaderText
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    width: parent.width
-                    height: parent.height
-                    fontSizeMode: Font.DemiBold
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: qsTr("Your Code")
-                }
-            }
-        }
-
-        Item{
-            id: procedureHeaderComponent
-            width: procedure.width
-            height: 50 * ApplicationInfo.ratio
-            anchors.left: procedure.left
-            anchors.bottom: procedure.top
-            visible: procedure.visible
-            Rectangle {
-                id: procedureHeaderRect
-                anchors.fill: parent
-                color: "#005B9A"
-                opacity: background.insertIntoProcedure ? 1 : 0.5
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        background.insertIntoMain = false
-                        background.insertIntoProcedure = true
-                    }
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                }
-
-                GCText {
-                    id: procedureHeaderText
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    width: parent.width
-                    height: parent.height
-                    fontSizeMode: Font.DemiBold
-                    minimumPointSize: 7
-                    fontSize: mediumSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: qsTr("Your procedure")
-                }
+            onVisibleChanged: {
+                if(tutorialImage.visible && tutorialImage.shownProcedureTutorialInstructions)
+                    tutorialSection.visible = true
             }
         }
 
@@ -494,7 +392,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: tutorialImage.visible ? help | home : help | home | level | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -509,5 +407,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
 }
