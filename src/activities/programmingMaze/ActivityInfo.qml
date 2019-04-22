@@ -36,7 +36,7 @@ ActivityInfo {
   prerequisite: qsTr("Can read instructions. Thinking of the path logically")
   //: Help manual
   manual: qsTr("Choose the instructions from given menu. Arrange the instruction in an
-                order so that they can make the tux reach to its goal.<br><br>") +
+                order so that they can make the Tux reach to his goal.<br><br>") +
           qsTr("<b>Keyboard Controls:</b><br><br>") +
           qsTr("1. <i><u>To navigate through instructions in the current code area having keyboard focus</i></u>:") +
           qsTr("<ul><li><b>Arrow keys</b></li></ul><br>") +

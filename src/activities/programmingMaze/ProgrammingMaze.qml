@@ -263,7 +263,7 @@ ActivityBase {
 
         HeaderArea {
             id: mainFunctionHeader
-            headerText: qsTr("Main")
+            headerText: qsTr("Main function")
             headerOpacity: background.insertIntoMain ? 1 : 0.5
             onClicked: background.insertIntoMain = true
             anchors.top: parent.top
