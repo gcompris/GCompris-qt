@@ -36,6 +36,8 @@ ActivityBase {
     Keys.onReleased: Activity.processReleasedKey(event)
 
     property var dataset
+    property var tutorialInstructions
+    property bool showTutorial: false
 
     property int oldWidth: width
     onWidthChanged: {
@@ -60,9 +62,10 @@ ActivityBase {
         sourceSize.width: parent.width
 
         Component.onCompleted: {
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+                activity.start.connect(start)
+                activity.stop.connect(stop)
         }
+
         QtObject {
             id: items
             property alias background: background
@@ -74,9 +77,38 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
+            property bool showTutorial: activity.showTutorial
+       }
+
+        onStart: { Activity.start(items, dataset) }
+        onStop: { Activity.stop() }
+
+        //Tutorial section starts
+        Loader {
+            active: showTutorial
+            anchors.fill: parent
+            z: 1
+            sourceComponent: tutorialComponent
+            Component {
+                id: tutorialComponent
+                Image {
+                    id: tutorialImage
+                    source: "../digital_electricity/resource/texture01.png"
+                    anchors.fill: parent
+                    fillMode: Image.Tile
+                    Tutorial {
+                        id: tutorialSection
+                        tutorialDetails: tutorialInstructions
+                        useImage: false
+                        onSkipPressed: {
+                            showTutorial = false
+                            Activity.initLevel()
+                        }
+                    }
+                }
+            }
         }
-        onStart: Activity.start(items, dataset)
-        onStop: Activity.stop();
+        // Tutorial section ends
 
         MultiPointTouchArea {
             anchors.fill: parent
@@ -95,7 +127,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: items.showTutorial ? (help | home) : (help | home | level) }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
@@ -109,7 +141,7 @@ ActivityBase {
 
         Score {
             id: score
-            visible: false
+            visible: !showTutorial
             fontSize: background.width >= background.height ? internalTextComponent.largeSize : internalTextComponent.mediumSize
             height: internalTextComponent.height + 10
             anchors.bottom: bar.top
@@ -143,6 +175,7 @@ ActivityBase {
 
         Plane {
             id: plane
+            visible: !showTutorial
             background: background
         }
 

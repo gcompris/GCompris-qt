@@ -52,7 +52,9 @@ function start(items_, dataset_) {
     dataset = dataset_
     numberOfLevel = dataset.length
     currentLevel = 0
-    initLevel()
+    if(items.showTutorial === false) {
+      initLevel()
+    }
 }
 
 function stop() {
@@ -80,8 +82,8 @@ function initLevel() {
     items.movePlaneTimer.stop();
     items.cloudCreation.stop()
 
-    items.score.visible = dataset[currentLevel].showNext
     items.score.message = dataset[currentLevel].data[currentSubLevel]
+    items.score.visible = dataset[currentLevel].showNext
 
     upPressed = false
     downPressed = false
@@ -96,7 +98,8 @@ function initLevel() {
     items.movePlaneTimer.interval = 1000
     items.movePlaneTimer.start();
     items.cloudCreation.start()
-    // Inject the first cloud now
+
+    //Inject the first cloud now
     createCloud()
 }
 
@@ -104,7 +107,6 @@ function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
-
     initLevel();
 }
 

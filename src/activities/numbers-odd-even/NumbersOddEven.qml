@@ -21,6 +21,8 @@ import "../planegame"
 
 Planegame {
 
+    showTutorial: true
+
     dataset: [
         {
             data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),
@@ -39,4 +41,42 @@ Planegame {
             showNext: false
         }
     ]
+
+    tutorialInstructions: [
+                {
+                    "instruction": qsTr("This activity teaches about even and odd numbers."),
+                    "instructionQml": ""
+                },
+                {
+                    "instruction": qsTr("Even numbers are numbers which leave remainder 0 when divided by 2."),
+                    "instructionQml": ""
+                },
+
+                {
+                    "instruction": qsTr("What is meant by remainder of a number?"),
+                    "instructionQml" : "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial1.qml"
+                },
+
+                {
+                    "instruction": qsTr("Even numbers are numbers which leave remainder 0 when divided by 2."),
+                    "instructionQml" : "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial2.qml"
+                },
+                {
+                    "instruction": qsTr("Odd numbers are numbers which do not leave remainder 0 when divided by 2."),
+                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial3.qml"
+                },
+                {
+                    "instruction": qsTr("Exercise to test your understanding."),
+                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial4.qml"
+                },
+                {
+                    "instruction": qsTr("Exercise to test your understanding."),
+                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial5.qml"
+                },
+                {
+                    "instruction":  qsTr("Exercise to test your understanding."),
+                    "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial6.qml"
+                }
+
+            ]
 }
