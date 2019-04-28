@@ -33,10 +33,14 @@ poFile = polib.pofile(sys.argv[1], encoding='utf-8')
 jsonFile = sys.argv[2]
 data = {}
 
+if poFile.percent_translated() < 40:
+    print("Need at least 40% of the words translated to create the json data file")
+    sys.exit(0)
+    
 for entry in poFile.translated_entries():
     word = entry.msgctxt
     data[word] = entry.msgstr
 
 with open(jsonFile, "w", encoding='utf-8') as data_file:
     json.dump(data, data_file, indent=4, sort_keys=True, ensure_ascii=False)
-
+    data_file.write("\n") # Add missing new line at end of file
