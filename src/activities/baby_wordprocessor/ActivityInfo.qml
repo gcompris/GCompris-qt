@@ -38,6 +38,6 @@ ActivityInfo {
     Press 'Shift' and use the arrow keys to select the text. Use Ctrl+C to copy, Ctrl+V to paste and Crtl+X to cut text. Ctrl+Z can be used to undo changes.
     Try to fiddle around and find more shortcuts. For example, what is the shortcut to select all the text?")
   credit: ""
-  section: "computer keyboard reading"
+  section: "computer keyboard reading letters"
   createdInVersion: 6000
 }

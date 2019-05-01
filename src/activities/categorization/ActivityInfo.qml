@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Review the instructions and then drag and drop the elements as specified")
   credit: ""
-  section: "fun"
+  section: "reading vocabulary"
   createdInVersion: 8000
 }

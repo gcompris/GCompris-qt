@@ -53,6 +53,6 @@ The following keyboard bindings work in this game:
   - F1 to F5: Corresponding black keys in the order on the displayed octave.
 ")
   credit: qsTr("The synthesizer original code is https://github.com/vsr83/miniSynth")
-  section: "discovery sound_group"
+  section: "discovery music"
   createdInVersion: 9500
 }

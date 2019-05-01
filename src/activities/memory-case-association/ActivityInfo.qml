@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding the lower/uppercase of an alphabet, and you have to associate all the upper case letters with its lower case and vice versa.")
   credit: ""
-  section: "reading"
+  section: "reading letters"
   createdInVersion: 9000
 }

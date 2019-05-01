@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Type the complete word as it falls, before it reaches the ground")
   credit: ""
-  section: "computer keyboard reading"
+  section: "computer keyboard reading words"
   createdInVersion: 0
 }

@@ -33,6 +33,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Look at the two sequences. Each fruit in the first sequence has been replaced by another fruit in the second sequence. Complete the second sequence by using the correct fruits, after studying this pattern.")
   credit: ""
-  section: "discovery"
+  section: "discovery logic"
   createdInVersion: 0
 }

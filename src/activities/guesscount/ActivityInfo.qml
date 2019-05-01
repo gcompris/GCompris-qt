@@ -39,6 +39,6 @@ ActivityInfo {
     //: Help manual
     manual: qsTr("Drag the appropriate numbers and the operators to the boxes to obtain the number to guess in the instruction.")
     credit: ""
-    section: "math"
+    section: "math arithmetic"
     createdInVersion: 8000
 }

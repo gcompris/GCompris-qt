@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Read the instructions and perform the requested calculation to find a date. Then select this date on the calendar.")
   credit: ""
-  section: "discovery"
+  section: "math measures"
   createdInVersion: 9000
 }

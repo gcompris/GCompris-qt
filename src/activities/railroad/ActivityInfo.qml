@@ -42,6 +42,6 @@ ActivityInfo {
           qsTr("4. Use Space key to add a wagon or locomotive from samples to answer list.<br>") +
           qsTr("5. Use Delete key to remove a wagon or locomotive from answer zone.<br>")
   credit: ""
-  section: "discovery memory"
+  section: "discovery logic"
   createdInVersion: 9500
 }

@@ -35,6 +35,6 @@ ActivityInfo {
     //: Help prerequisite
     prerequisite: ""
     credit: qsTr("Drawing by Stephane Cabaraux")
-    section: "experiment"
+    section: "experiment sciences"
     createdInVersion: 5000
 }

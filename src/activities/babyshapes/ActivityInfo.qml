@@ -39,6 +39,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Complete the puzzle by dragging each piece from the set of pieces on the left, to the matching space in the puzzle.")
   credit: qsTr("The dog is provided by Andre Connes and released under the GPL")
-  section: "discovery"
+  section: "computer"
   createdInVersion: 4000
 }

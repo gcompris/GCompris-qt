@@ -41,6 +41,6 @@ ActivityInfo {
           qsTr("At higher levels, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on the \"barefoot / sportshoe\"-icon in the upper left corner of the screen to toggle the run-fast-mode.
 \t")
   credit: ""
-  section: "discovery mazeMenu"
+  section: "fun maze"
   createdInVersion: 0
 }

@@ -17,7 +17,6 @@
  */
 import GCompris 1.0
 
-// Must be updated once GnumchEquality is reviewed
 ActivityInfo {
   name: "gnumch-factors/GnumchFactors.qml"
   difficulty: 5
@@ -40,6 +39,6 @@ ActivityInfo {
           "<br><br>" +
           qsTr("Take care to avoid the Troggles.")
   credit: ""
-  section: "math"
+  section: "math arithmetic"
   createdInVersion: 0
 }

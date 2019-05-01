@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Follow the instructions when you run the activity.")
   credit: ""
-  section: "experiment"
+  section: "experiment sciences"
   createdInVersion: 4000
 }

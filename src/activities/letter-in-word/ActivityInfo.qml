@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("A letter is displayed on the flag attached to the plane, select all the words or the objects in which the letter appears and then press OK.")
   credit: ""
-  section: "reading"
+  section: "reading words"
   createdInVersion: 7000
 }

@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("A multiplication is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins in their balloon land!")
   credit: ""
-  section: "math multiplication"
+  section: "math multiplication arithmetic"
   createdInVersion: 0
 }

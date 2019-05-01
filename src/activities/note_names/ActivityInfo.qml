@@ -38,6 +38,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Identify the notes correctly and score a 100% to complete a level.")
   credit: ""
-  section: "discovery sound"
+  section: "discovery music"
   createdInVersion: 9500
 }

@@ -35,6 +35,6 @@ ActivityInfo {
     //: Help manual
     manual: qsTr("Click on different active elements: sun, cloud, pumping station, and the sewage treatment plant, in order to reactivate the entire water system. When the system is back up and Tux is in the shower, push the shower button for him.")
     credit: qsTr("Drawing by Stephane Cabaraux.")
-    section: "experiment"
+    section: "experiment sciences"
     createdInVersion: 5000
 }

@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("To balance the scales, move the weights to the left or the right side (on higher levels). The weights can be arranged in any order.")
   credit:""
-  section: "math"
+  section: "math measures"
   createdInVersion: 0
 }

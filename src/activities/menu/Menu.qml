@@ -82,7 +82,7 @@ ActivityBase {
         // automatically the menu at start.
         target: ApplicationInfo
         onIsBox2DInstalledChanged: {
-            ActivityInfoTree.filterByTag(activity.currentTag)
+            ActivityInfoTree.filterByTag(activity.currentTag, currentCategory)
             ActivityInfoTree.filterLockedActivities()
             ActivityInfoTree.filterEnabledActivities()
         }
@@ -101,11 +101,19 @@ ActivityBase {
         },
         {
             icon: activity.url + "discovery.svg",
-            tag: "discovery"
+            tag: "discovery",
+            categories: [{ "logic": qsTr("Logic") },
+                         { "arts": qsTr("Fine Arts") },
+                         { "music": qsTr("Music") }
+            ]
         },
         {
             icon: activity.url + "experience.svg",
-            tag: "experiment"
+            tag: "experiment",
+            categories: [{ "sciences": qsTr("Sciences") },
+                         { "history": qsTr("History") },
+                         { "geography": qsTr("Geography") }
+            ]
         },
         {
             icon: activity.url + "fun.svg",
@@ -113,7 +121,11 @@ ActivityBase {
         },
         {
             icon: activity.url + "math.svg",
-            tag: "math"
+            tag: "math",
+            categories: [{ "numeration": qsTr("Numeration") },
+                         { "arithmetic": qsTr("Arithmetic") },
+                         { "measures": qsTr("Measures") }
+                        ]
         },
         {
             icon: activity.url + "puzzle.svg",
@@ -121,7 +133,11 @@ ActivityBase {
         },
         {
             icon: activity.url + "reading.svg",
-            tag: "reading"
+            tag: "reading",
+            categories: [{ "letters": qsTr("Letters") },
+                         { "words": qsTr("Words") },
+                         { "vocabulary": qsTr("Vocabulary") }
+                        ]
         },
         {
             icon: activity.url + "strategy.svg",
@@ -133,6 +149,8 @@ ActivityBase {
         }
     ]
     property string currentTag: sections[0].tag
+    property var currentTagCategories: []
+    property string currentCategory: ""
     /// @endcond
 
     pageComponent: Image {
@@ -213,8 +231,22 @@ ActivityBase {
             keyboardMode = true
             event.accepted = false
         }
-        Keys.onTabPressed: currentActiveGrid = ((currentActiveGrid == activitiesGrid) ?
-                                                    section : activitiesGrid);
+        Keys.onTabPressed: {
+            if(currentActiveGrid == section) {
+                if(currentTagCategories && currentTagCategories.length != 0) {
+                    currentActiveGrid = categoriesGrid;
+                }
+                else {
+                    currentActiveGrid = activitiesGrid;
+                }
+            }
+            else if(currentActiveGrid == categoriesGrid) {
+                currentActiveGrid = activitiesGrid;
+            }
+            else {
+                currentActiveGrid = section;
+            }
+        }
         Keys.onEnterPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onReturnPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onRightPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexRight();
@@ -273,12 +305,19 @@ ActivityBase {
                     function selectCurrentItem() {
                         section.currentIndex = index
                         activity.currentTag = modelData.tag
+                        activity.currentTagCategories = modelData.categories
+                        if(modelData.categories != undefined) {
+                            currentCategory = Object.keys(modelData.categories[0])[0];
+                        }
+                        else {
+                            currentCategory = ""
+                        }
                         particles.burst(10)
                         if(modelData.tag === "search") {
                             ActivityInfoTree.filterBySearch(searchTextField.text);
                         }
                         else {
-                            ActivityInfoTree.filterByTag(modelData.tag)
+                            ActivityInfoTree.filterByTag(modelData.tag, currentCategory)
                             ActivityInfoTree.filterLockedActivities()
                             ActivityInfoTree.filterEnabledActivities()
                         }
@@ -354,6 +393,65 @@ ActivityBase {
         }
 
         GridView {
+            id: categoriesGrid
+            model: currentTagCategories
+            anchors.top: horizontal ? section.bottom : parent.top
+            interactive: false
+            keyNavigationWraps: true
+            width: horizontal ? main.width : main.width - section.width
+            visible: activity.currentTag !== "search"
+            x: {
+                if(currentTagCategories) {
+                    if(horizontal) {
+                        return categoriesGrid.width / (4 * (currentTagCategories.length+1))
+                    }
+                    else {
+                        return categoriesGrid.width / (4 * (currentTagCategories.length+1)) + section.width
+                    }
+                }
+                else {
+                    return 0
+                }
+            }
+
+            cellWidth: currentTagCategories ? categoriesGrid.width / currentTagCategories.length : 0
+            cellHeight: height
+            height: searchTextField.height
+
+            delegate: Button {
+                id: button
+                style: GCButtonStyle {
+                    selected: currentCategory === button.category
+                }
+                width: categoriesGrid.width / (currentTagCategories.length + 1)
+                height: categoriesGrid.cellHeight
+                text: Object.values(modelData)[0]
+                property string category: Object.keys(modelData)[0]
+                onClicked: {
+                    selectCurrentItem()
+                }
+
+                function selectCurrentItem() {
+                    categoriesGrid.currentIndex = index
+                    currentCategory = Object.keys(modelData)[0]
+                    ActivityInfoTree.filterByTag(currentTag, currentCategory)
+                    ActivityInfoTree.filterLockedActivities()
+                    ActivityInfoTree.filterEnabledActivities()
+                }
+            }
+            highlight: Rectangle {
+                width: activityCellWidth - activitiesGrid.spacing
+                height: activityCellHeight - activitiesGrid.spacing
+                color:  "#AAFFFFFF"
+                border.width: 3
+                border.color: "black"
+                visible: background.keyboardMode
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+            }
+        }
+
+        GridView {
             id: activitiesGrid
 
             anchors {
@@ -361,7 +459,7 @@ ActivityBase {
                     if(activity.currentTag === "search")
                         return searchBar.bottom
                     else
-                        return horizontal ? section.bottom : parent.top
+                        return categoriesGrid.bottom
                 }
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
@@ -532,10 +630,21 @@ ActivityBase {
             upVisible: activitiesGrid.visibleArea.yPosition <= 0 ? false : true
             downVisible: activitiesGrid.visibleArea.yPosition >= 1 ? false : true
         }
-        
+
+        Rectangle {
+            id: categories
+            width: horizontal ? parent.width : parent.width - (section.width+10)
+            height: searchTextField.height
+            visible: sections[activity.currentTag] === "search"
+            anchors {
+                top: horizontal ? section.bottom : categoriesGrid.top
+                left: horizontal ? undefined : section.right
+            }
+        }
+
         Rectangle {
             id: searchBar
-            width: horizontal ?  parent.width/2 : parent.width - (section.width+10)
+            width: horizontal ? parent.width/2 : parent.width - (section.width+10)
             height: searchTextField.height
             visible: activity.currentTag === "search"
             anchors {
@@ -721,7 +830,7 @@ ActivityBase {
             }
             onClose: {
                 if(activity.currentTag != "search") {
-                    ActivityInfoTree.filterByTag(activity.currentTag)
+                    ActivityInfoTree.filterByTag(activity.currentTag, currentCategory)
                     ActivityInfoTree.filterLockedActivities()
                     ActivityInfoTree.filterEnabledActivities()
                 } else

@@ -39,6 +39,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Drag and drop the map pieces to correct locations to redraw the whole map.")
   credit: ""
-  section: "discovery"
+  section: "experiment geography"
   createdInVersion: 4000
 }

@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Enter the braille code in the tile for the letters on the banner pulled by Tux in his plane across the screen. Check the braille chart by clicking on the toggle button for help.")
   credit: ""
-  section: "discovery braille"
+  section: "reading braille letters"
   createdInVersion: 4000
 }

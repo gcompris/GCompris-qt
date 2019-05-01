@@ -35,6 +35,6 @@ ActivityInfo {
       //: Help manual
       manual: qsTr("A division is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!")
       credit: ""
-      section: "math division"
+      section: "math division arithmetic"
       createdInVersion: 4000
 }

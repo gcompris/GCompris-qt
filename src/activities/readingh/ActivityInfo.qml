@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("A word is shown on the board. A list of words, displayed horizontally, will appear and disappear. Does the given word belong to the list?")
   credit: ""
-  section: "reading"
+  section: "reading words"
   createdInVersion: 5000
 }

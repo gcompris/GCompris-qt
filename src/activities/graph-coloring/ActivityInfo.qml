@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: ""
   credit: ""
-  section: "math"
+  section: "discovery logic"
   createdInVersion: 6000
 }

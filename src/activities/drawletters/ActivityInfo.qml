@@ -35,6 +35,6 @@ ActivityInfo {
       //: Help manual
       manual: qsTr("Draw the letter by connecting the dots in the correct order")
       credit: ""
-      section: "reading"
+      section: "reading letters"
       createdInVersion: 7000
 }

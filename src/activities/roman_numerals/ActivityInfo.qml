@@ -39,6 +39,6 @@ ActivityInfo {
   2394: we got a sum of 2000 (MM), 300 (CCC), 90 (XC) and 4 units (IV), so we write this combined: MMCCCXCIV\n
   MMMCMXLIX: we got first thousands (MMM=3000), then we got hundreds (CM=1000–100=900), then we got tens (XL=50–10=40), and at last we got units (IX=10–1=9), so we write this in the decimal system: 3949.")
   credit: ""
-  section: "math"
+  section: "experiment history"
   createdInVersion: 7000
 }
