@@ -35,7 +35,7 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Set the clock to the given time, in the time-units shown (hours:minutes or hours:minutes:seconds). Drag the different arrows, to make the respective time unit go up or down.")
   credit: ""
-  section: "discovery"
+  section: "math measures"
   createdInVersion: 0
   levels: "1,2"
 }

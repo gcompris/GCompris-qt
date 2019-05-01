@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Select a number or a symbol on the left and click on its target position. GCompris will not let you enter invalid data.")
   credit: ""
-  section: "puzzle"
+  section: "discovery logic"
   createdInVersion: 0
 }

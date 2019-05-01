@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("You can enter the letters using the virtual keyboard on the screen or with the real keyboard.")
   credit: ""
-  section: "keyboard reading"
+  section: "keyboard reading words"
   createdInVersion: 5000
 }

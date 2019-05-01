@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Turn on the right bulbs to represent the binary of the given decimal number. When you have achieved it, press OK.")
   credit: ""
-  section: "experiment"
+  section: "experiment sciences"
   createdInVersion: 9500
 }

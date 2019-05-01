@@ -121,13 +121,15 @@ void ActivityInfoTree::sortByName(bool emitChanged)
 // the tag 'all' means no filter
 // the tag 'favorite' means only marked as favorite
 // The level is also filtered based on the global property
-void ActivityInfoTree::filterByTag(const QString &tag, bool emitChanged)
+void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, bool emitChanged)
 {
     m_menuTree.clear();
     // https://www.kdab.com/goodbye-q_foreach/, for loops on QList may cause detach
     const auto constMenuTreeFull = m_menuTreeFull;
     for(const auto &activity: constMenuTreeFull) {
-        if((activity->section().indexOf(tag) != -1 ||
+        // filter on category if given else on tag
+        if(((category != "" && activity->section().indexOf(category) != -1) ||
+            (category == "" && activity->section().indexOf(tag) != -1) ||
             tag == "all" ||
             (tag == "favorite" && activity->favorite())) &&
             (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&

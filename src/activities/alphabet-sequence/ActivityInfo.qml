@@ -35,6 +35,6 @@ ActivityInfo {
     //: Help manual
     manual: qsTr("Catch the alphabet letters. With a keyboard use the arrow keys to move the helicopter. With a pointing device you just click or tap on the target location. To know which letter you have to catch you can either remember it or check the bottom right corner.")
     credit: ""
-    section: "reading"
-  createdInVersion: 0
+    section: "reading letters"
+    createdInVersion: 0
 }

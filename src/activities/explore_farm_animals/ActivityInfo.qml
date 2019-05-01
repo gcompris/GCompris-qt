@@ -42,6 +42,6 @@ In level two, a random animal sound is played and you must find which animal mak
 In level three, a random text prompt is displayed and you must click on the animal that matches the text. When you have matched all texts correctly, you win!
 ")
   credit: ""
-  section: "discovery sound_group"
+  section: "experiment sciences"
   createdInVersion: 0
 }

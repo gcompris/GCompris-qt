@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the middle, then drag pieces of candy to each child's rectangle.")
   credit: ""
-  section: "math"
+  section: "math arithmetic"
   createdInVersion: 7000
 }

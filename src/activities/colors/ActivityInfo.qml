@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Listen to the color and touch the matching duck.")
   credit: ""
-  section: "discovery color"
+  section: "reading color vocabulary"
   createdInVersion: 0
 }

@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Drag electrical components from the selector and drop them in the working area. In the working area, you can move the components by dragging them. To delete a component, select the deletion tool on top of the component selector, and select the component. You can click on the component and then on the rotate button to rotate it or info button to get information about it. You can click on the switch to open and close it. To connect two terminals, click on first terminal, then on second terminal. To deselect terminal or delete tool, click on any empty area. The simulation is updated in real time by any user action.")
   credit: ""
-  section: "experimental"
+  section: "experiment sciences"
   createdInVersion: 9000
 }

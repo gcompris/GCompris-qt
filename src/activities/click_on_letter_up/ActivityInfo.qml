@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon in the bottom box.")
   credit: ""
-  section: "reading"
+  section: "reading letters"
   createdInVersion: 0
 }

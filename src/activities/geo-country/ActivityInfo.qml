@@ -39,6 +39,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Drag and drop different regions of the country to correct locations to redraw the whole country.")
   credit: ""
-  section: "discovery"
+  section: "experiment history"
   createdInVersion: 4000
 }

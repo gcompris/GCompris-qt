@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Type the falling letters before they reach the ground")
   credit: ""
-  section: "computer keyboard reading"
+  section: "computer keyboard reading letters"
   createdInVersion: 0
 }

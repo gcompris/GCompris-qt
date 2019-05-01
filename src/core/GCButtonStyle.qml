@@ -30,6 +30,7 @@ import GCompris 1.0
  * @inherit QtQuick.Controls.Styles.ButtonStyle
  */
 ButtonStyle {
+    id: buttonStyle
     /**
      * type:real
      * Fixed font size of the label in pt.
@@ -85,6 +86,8 @@ ButtonStyle {
         }
     }
 
+    property bool selected: false
+
     property string textSize: "regular"
     
     property var textSizes: {
@@ -102,15 +105,13 @@ ButtonStyle {
         }
     }
 
-    property bool selected: false
-
     background: Rectangle {
         border.width: control.activeFocus ? 4 : 2
         border.color: themes[theme].borderColor
         radius: 10
         gradient: Gradient {
-            GradientStop { position: 0 ; color: (control.pressed || selected) ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
-            GradientStop { position: 1 ; color: (control.pressed || selected) ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
+            GradientStop { position: 0 ; color: (control.pressed || buttonStyle.selected) ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
+            GradientStop { position: 1 ; color: (control.pressed || buttonStyle.selected) ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
         }
     }
     label: Item {

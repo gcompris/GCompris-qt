@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Click on the given keys to learn more of the monuments and then identify where the monuments is on the map by its name.")
   credit: qsTr("Photos taken from Wikipedia.")
-  section: "discovery"
+  section: "discovery arts"
   createdInVersion: 6000
 }

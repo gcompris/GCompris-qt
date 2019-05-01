@@ -39,6 +39,6 @@ ActivityInfo {
   prerequisite: qsTr("Mouse-manipulation: movement, drag and drop")
   //: Help manual
   manual: qsTr("Drag the image parts from the box on the left to create a painting on the main board.")
-  section: "puzzle"
+  section: "discovery arts puzzle"
   createdInVersion: 5000
 }

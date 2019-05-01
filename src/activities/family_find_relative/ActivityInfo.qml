@@ -37,6 +37,6 @@ ActivityInfo {
   "The circles are linked with lines to mark the relations. Married couples are marked with a ring on the link.\n" +
   "Click on a pair of family members which corresponds to the given relation.")
   credit: ""
-  section: "discovery"
+  section: "experiment history"
   createdInVersion: 9000
 }

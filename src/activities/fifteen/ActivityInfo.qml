@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Click or drag on any pieces that has a free block beside it, and it will be swapped with the empty one.")
   credit: ""
-  section: "puzzle"
+  section: "discovery logic"
   createdInVersion: 0
 }
