@@ -33,6 +33,9 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    property var dataset: Dataset
+    property string resourceUrl: "qrc:/gcompris/src/activities/tangram/resource/"
+
     Keys.onPressed: Activity.processPressedKey(event)
 
     pageComponent: Item {
@@ -55,7 +58,7 @@ ActivityBase {
 
         Image {
             id: bg
-            source: Activity.url + "tangram/background.svg"
+            source: activity.resourceUrl + "tangram/background.svg"
             sourceSize.width: 2000 * ApplicationInfo.ratio
             sourceSize.height: 2000 * ApplicationInfo.ratio
             width: 2000 * background.playRatio
@@ -89,8 +92,8 @@ ActivityBase {
             property alias userList: userList
             property alias userListModel: userList.model
             property Item selectedItem
-            property var currentTans: Dataset.dataset[bar.level - 1]
-            property int numberOfLevel: Dataset.dataset.length
+            property var currentTans: dataset.dataset[bar.level - 1]
+            property int numberOfLevel: dataset.dataset.length
             property bool editionMode: false
         }
 
@@ -101,7 +104,7 @@ ActivityBase {
 
         Image {
             id: bgData
-            source: items.currentTans.bg ? Activity.url + items.currentTans.bg : ''
+            source: items.currentTans.bg ? activity.resourceUrl + items.currentTans.bg : ''
             sourceSize.width: 1000 * background.playRatio
             sourceSize.height: 1000 * background.playRatio
             width: 1000 * background.playRatio
@@ -128,7 +131,7 @@ ActivityBase {
                     id: tansModel
                     x: background.playX + background.playWidth * modelData.x - width / 2
                     y: background.playY + background.playHeight * modelData.y - height / 2
-                    source: Activity.url + "m-" + modelData.img
+                    source: activity.resourceUrl + "m-" + modelData.img
                     sourceSize.width: modelData.width * background.playWidth
                     sourceSize.height: modelData.height * background.playWidth
                     z: index
@@ -186,7 +189,7 @@ ActivityBase {
                 Image {
                     id: tans
                     mirror: !items.editionMode ? modelData.initFlipping : modelData.flipping
-                    source: Activity.url + modelData.img
+                    source: activity.resourceUrl + modelData.img
                     sourceSize.width: modelData.width * background.playWidth
                     sourceSize.height: modelData.height * background.playWidth
                 }

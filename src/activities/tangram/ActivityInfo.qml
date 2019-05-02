@@ -40,7 +40,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation")
   //: Help manual
-  manual: qsTr("Select the tangram to form. Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to show the rotation you want. At first levels, simpler objects are used to introduce the tangram concept.")
+  manual: qsTr("Select the tangram to form. Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to show the rotation you want. Check baby tangram activity for an introduction to tangram.")
   credit: ""
   section: "puzzle"
   createdInVersion: 6000
