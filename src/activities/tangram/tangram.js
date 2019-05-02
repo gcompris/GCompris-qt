@@ -22,9 +22,6 @@
 .pragma library
 .import QtQuick 2.6 as Quick
 
-var url = "qrc:/gcompris/src/activities/tangram/resource/"
-
-
 var currentLevel = 0
 var items
 
