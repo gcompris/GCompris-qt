@@ -268,7 +268,7 @@ Item {
             id: activeColor
             height: parent.height * 0.8
             width: height
-            color: items.paintColor
+            color: colorPicker.currentColorCode
             radius: 10
             anchors.right: parent.right
             anchors.rightMargin: parent.height * 0.1
