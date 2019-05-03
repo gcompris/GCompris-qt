@@ -26,7 +26,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: root
-    property int tabWidth: background.width * 0.15
+    property int tabWidth: background.width * 0.18
     property int tabHeight: background.height * 0.06
     property alias colorModel: colorModel
     property alias mainPanel: mainPanel
@@ -108,15 +108,52 @@ Item {
             }
         }
 
-        GCText {
-            text: qsTr("Menu")
-            fontSize: tinySize
-            anchors.fill: parent
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
-            fontSizeMode: Text.Fit
-            color: "white"
+        Rectangle {
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            width: parent.width - parent.height
+            height: parent.height
+            color: "#00000000"
+            GCText {
+                text: qsTr("Menu")
+                anchors.fill: parent
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                fontSizeMode: Text.Fit
+                color: "white"
+            }
+        }
+        
+        Rectangle {
+            id: menuIconLayout
+            height: parent.height * 0.5
+            width: height
+            color: "#00000000"
+            anchors.right: parent.right
+            anchors.rightMargin: parent.height * 0.3
+            anchors.verticalCenter: parent.verticalCenter
+            Rectangle {
+                color: "#ffffff"
+                width: parent.width
+                height: parent.height * 0.1
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.top: parent.top
+            }
+            Rectangle {
+                color: "#ffffff"
+                width: parent.width
+                height: parent.height * 0.1
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+            }
+            Rectangle {
+                color: "#ffffff"
+                width: parent.width
+                height: parent.height * 0.1
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.bottom: parent.bottom
+            }
         }
     }
 
@@ -150,16 +187,36 @@ Item {
             }
         }
 
-        GCText {
-            text: qsTr("Tools")
-            fontSize: tinySize
-            anchors.fill: parent
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
-            fontSizeMode: Text.Fit
-            color: "white"
+        Rectangle {
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            width: parent.width - parent.height
+            height: parent.height
+            color: "#00000000"
+            GCText {
+                text: qsTr("Tools")
+                anchors.fill: parent
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                fontSizeMode: Text.Fit
+                color: "white"
+            }
         }
+        
+        Image {
+            id: activeTool
+            source: activeToolIconSource
+            height: parent.height * 0.8
+            width: height
+            sourceSize.height: height
+            sourceSize.width: width
+            fillMode: Image.PreserveAspectFit
+            anchors.right: parent.right
+            anchors.rightMargin: parent.height * 0.1
+            anchors.verticalCenter: parent.verticalCenter
+        }
+        
     }
 
     Rectangle {
@@ -190,20 +247,39 @@ Item {
             }
         }
 
-        GCText {
-            text: qsTr("Color")
-            fontSize: tinySize
-            anchors.fill: parent
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
-            fontSizeMode: Text.Fit
-            color: "white"
+        Rectangle {
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            width: parent.width - parent.height
+            height: parent.height
+            color: "#00000000"
+            GCText {
+                text: qsTr("Color")
+                anchors.fill: parent
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                fontSizeMode: Text.Fit
+                color: "white"
+            }
+        }
+        
+        Rectangle {
+            id: activeColor
+            height: parent.height * 0.8
+            width: height
+            color: items.paintColor
+            radius: 10
+            anchors.right: parent.right
+            anchors.rightMargin: parent.height * 0.1
+            anchors.verticalCenter: parent.verticalCenter
+            border.width: 2
+            border.color: "white"
         }
     }
 
     Rectangle {
-        id: toolsOptionTitle
+        id: toolOptionsTitle
         width: root.tabWidth
         height: root.tabHeight
         radius: 10
@@ -216,7 +292,7 @@ Item {
             anchors.fill: parent
             enabled: (mainPanel.y < -5 && activePanel != "toolOptions") || (mainPanel.y > -5 && activePanel === "toolOptions")
             onClicked: {
-                animTarget = toolsOptionTitle
+                animTarget = toolOptionsTitle
                 root.activePanel = "toolOptions"
                 menuGrid.visible = false
                 colorGrid.visible = false
@@ -224,34 +300,62 @@ Item {
                     foldAnimation.start()
                 }
                 else {
-                    toolsOptionTitle.visible = true
+                    toolOptionsTitle.visible = true
                     unfoldAnimation.start()
                 }
             }
         }
 
-        GCText {
-            text: qsTr("Tool Options")
-            fontSize: tinySize
-            anchors.fill: parent
-            fontSizeMode: Text.Fit
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            wrapMode: Text.WordWrap
-            color: "white"
+        Rectangle {
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+            width: parent.width - parent.height
+            height: parent.height
+            color: "#00000000"
+            GCText {
+                text: qsTr("Options")
+                anchors.fill: parent
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                wrapMode: Text.WordWrap
+                fontSizeMode: Text.Fit
+                color: "white"
+            }
+        }
+        
+        Rectangle {
+            id: optionsIconLayout
+            height: parent.height * 0.8
+            width: height
+            color: "#00000000"
+            radius: 10
+            opacity: items.globalOpacityValue
+            anchors.right: parent.right
+            anchors.rightMargin: parent.height * 0.1
+            anchors.verticalCenter: parent.verticalCenter
+            Rectangle{
+                id: optionsIcon
+                height: parent.height * items.sizeS * 0.04
+                width: height
+                radius: height * 0.5
+                color: "#ffffff"
+                opacity: items.globalOpacityValue
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+            }
         }
     }
 
     Rectangle {
-        id: activeConfiguration
-        width: background.width > background.height ? root.tabWidth * 1.3 : root.tabWidth * 2
-        height: root.tabHeight * 1.2
+        id: undoPanel
+        width: root.tabHeight * 2.4
+        height: root.tabHeight
         radius: 10
-        color: "grey"
+        color: panelColor
         border.color: "white"
-        x: toolsTitle.x + toolsTitle.width + (background.width > background.height ? width / 2 : width / 6)
+        x: background.width * 0.5 - width * 0.5
         y: -7
-        z: mainPanel.z - 1
+        //z: mainPanel.z - 1
         MouseArea {
             anchors.fill: parent
         }
@@ -259,16 +363,19 @@ Item {
         Image {
             id: undo
             source: "qrc:/gcompris/src/activities/drawing/resource/undo.svg"
-            height: background.width > background.height ? parent.height * 0.75 : parent.height * 0.60
-            width: activeConfiguration.width / 5.2
-            anchors.verticalCenter: parent.verticalCenter
+            height: parent.height * 0.8
+            width: height
+            sourceSize.width: height
+            sourceSize.height: height
             anchors.left: parent.left
-            anchors.leftMargin: parent.width * 0.10
+            anchors.leftMargin: parent.width * 0.1
+            anchors.verticalCenter: parent.verticalCenter
+            mipmap: true
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true
-                onEntered: undo.scale = 1.1
-                onExited: undo.scale = 1
+                onPressed: undo.scale = 0.9
+                onReleased: undo.scale = 1
                 onClicked: {
                     Activity.selectTool("Undo")
                     activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
@@ -276,41 +383,22 @@ Item {
             }
         }
 
-        Rectangle {
-            id: activeColor
-            height: undo.height - 4
-            width: activeConfiguration.width / 5.2
-            color: items.paintColor
-            radius: 10
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.left: undo.right
-            anchors.leftMargin: 5
-            border.width: 2
-            border.color: "white"
-        }
-
-        Image {
-            id: activeTool
-            source: activeToolIconSource
-            height: undo.height
-            width: activeConfiguration.width / 5.2
-            fillMode: Image.PreserveAspectFit
-            anchors.left: activeColor.right
-            anchors.verticalCenter: parent.verticalCenter
-        }
-
         Image {
             id: redo
             source: "qrc:/gcompris/src/activities/drawing/resource/redo.svg"
             height: undo.height
-            width: activeConfiguration.width / 5.2
+            width: height
+            sourceSize.width: height
+            sourceSize.height: height
+            anchors.right: parent.right
+            anchors.rightMargin: parent.width * 0.1
             anchors.verticalCenter: parent.verticalCenter
-            anchors.left: activeTool.right
+            mipmap: true
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true
-                onEntered: redo.scale = 1.1
-                onExited: redo.scale = 1
+                onPressed: redo.scale = 0.9
+                onReleased: redo.scale = 1
                 onClicked: {
                     Activity.selectTool("Redo")
                     activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
