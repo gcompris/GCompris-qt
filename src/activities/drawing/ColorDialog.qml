@@ -28,6 +28,8 @@ Rectangle {
     height: background.height * 0.33
     color: "transparent"
 
+    signal colorChanged()
+    
     property real hue
     property real saturation
     property real lightness
@@ -38,6 +40,7 @@ Rectangle {
     property color currentColorCode: picker.currentColor()
 
     function currentColor() {
+        picker.colorChanged()
         return Qt.hsla(picker.hue, picker.saturation, picker.lightness, 1.0)
     }
 
@@ -104,6 +107,8 @@ Rectangle {
         // Display the colors
         Rectangle {
             anchors.fill: parent
+            border.width: 1
+            border.color: "#eeeeee"
             gradient: Gradient {
                 GradientStop { position: 0.0/6.0; color: Qt.hsla(0.0/6.0, 1, picker.lightness, 1) }
                 GradientStop { position: 1.0/6.0; color: Qt.hsla(1.0/6.0, 1, picker.lightness, 1) }
@@ -147,6 +152,8 @@ Rectangle {
 
         Rectangle {
             anchors.fill: parent
+            border.width: 1
+            border.color: "#eeeeee"
             gradient: Gradient {
                 GradientStop { position: 0.0; color: Qt.hsla(picker.hue, 0, picker.lightness, 0) }
                 GradientStop { position: 1.0; color: Qt.hsla(picker.hue, 1, picker.lightness, 1) }
@@ -181,6 +188,8 @@ Rectangle {
 
         Rectangle {
             anchors.fill: parent
+            border.width: 1
+            border.color: "#eeeeee"
             gradient: Gradient {
                 GradientStop { position: 0.0; color: Qt.hsla(picker.hue, picker.saturation, 1, 1) }
                 GradientStop { position: 0.5; color: Qt.hsla(picker.hue, picker.saturation, 0.5, 1) }

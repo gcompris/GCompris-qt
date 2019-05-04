@@ -35,6 +35,11 @@ Item {
     property alias toolsMode: toolsMode
     property color panelColor: "#1A1A1B"
     property string activeToolIconSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg"
+    
+    function colorUpdate(){
+        items.paintColor = colorPicker.currentColorCode
+        items.selectedColor = colorPicker.currentColorCode
+    }
 
     ListModel {
         id: menuModel
@@ -534,38 +539,20 @@ Item {
                 width: colorGrid.cellWidth * 0.80
                 height: colorGrid.cellHeight * 0.90
                 color: modelData
-                border.width: 3
-                border.color: items.activeColorIndex === index ? "grey" : "transparent"
+                border.width: items.activeColorIndex === index ? "3" : "1"
+                border.color: "#eeeeee"
+                scale: items.activeColorIndex === index ? 1.1 : 1
                 MouseArea {
                     anchors.fill: parent
-                    hoverEnabled: true
-
-                    onEntered: {
-                        if(items.activeColorIndex != index) {
-                            parent.border.color = "grey"
-                            root1.scale = 1.1
-                        }
-                    }
-                    onExited: {
-                        if(items.activeColorIndex != index) {
-                            root1.scale = 1
-                            parent.border.color = modelData
-                        }
-                    }
 
                     // set this color as current paint color
                     onClicked: {
-                        var lastActiveIndex = items.activeColorIndex
-                        var lastActiveColor = items.paintColor
-                        root.colorModel.remove(lastActiveIndex)
-                        root.colorModel.insert(lastActiveIndex, {colorCode: lastActiveColor.toString()})
                         items.activeColorIndex = index
                         items.paintColor = root1.color
-                        items.lastActiveColor = items.paintColor
-                        background.hideExpandedTools()
-                        items.paintColor = color
-                        background.reloadSelectedPen()
                         colorPicker.updateColor((items.paintColor).toString())
+                        root.colorUpdate()
+                        background.reloadSelectedPen()
+                        background.hideExpandedTools()
                         foldAnimation.start()
                     }
                 }
@@ -578,6 +565,7 @@ Item {
             anchors.verticalCenter: mainPanel.verticalCenter
             visible: colorGrid.visible
             anchors.leftMargin: 20
+            onColorChanged: root.colorUpdate()
         }
 
         Rectangle {
@@ -587,6 +575,7 @@ Item {
             visible: colorGrid.visible
             radius: 8
             border.width: 3
+            border.color: "#eeeeee"
             z: colorGrid.z
             anchors.left: colorPicker.right
             anchors.leftMargin: 10

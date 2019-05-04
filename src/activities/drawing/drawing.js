@@ -58,7 +58,7 @@ function start(items_) {
     items = items_
     currentLevel = 0
     items.toolSelected = "pencil"
-    items.paintColor = "#000000"
+    items.paintColor = items.selectedColor
     initLevel()
 }
 
@@ -300,7 +300,7 @@ function previousLevel() {
 
 function selectTool(toolName) {
     console.log("Clicked on " + toolName)
-    items.paintColor = items.lastActiveColor
+    items.paintColor = items.selectedColor
     items.eraserMode = false
     items.timer.stop()
     if(toolName === "Eraser") {

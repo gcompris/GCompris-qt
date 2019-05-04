@@ -120,7 +120,7 @@ ActivityBase {
             property alias onBoardText: onBoardText
             property alias fileDialog: fileDialog
             property color paintColor: "#000000"
-            property color lastActiveColor: "#000000"
+            property color selectedColor: "#000000"
             property color backgroundColor: "#ffffff"
             property string urlImage
             property bool loadSavedImage: false
