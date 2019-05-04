@@ -238,7 +238,14 @@ ActivityBase {
 
             Canvas {
                 id: canvas
-                anchors.fill: parent
+                width: parent.width
+                height: parent.height
+                scale: 1
+                x: 0
+                y: 0
+                
+                renderStrategy: Canvas.Threaded
+                renderTarget: Canvas.FramebufferObject
 
                 property real lastX
                 property real lastY
