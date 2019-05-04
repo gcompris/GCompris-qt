@@ -98,10 +98,9 @@ function initLevel() {
     // if the width/height is changed, the drawing is reset and repainted the last image saved
     if (items.widthHeightChanged) {
         // load the image
-        items.canvas.url = items.lastUrl
         ctx = items.canvas.getContext("2d")
         ctx.clearRect(0, 0, items.background.width, items.background.height)
-        ctx.drawImage(items.canvas.url, 0, 0, items.canvas.width, items.canvas.height)
+        ctx.drawImage(items.lastUrl, 0, 0)
         items.canvas.requestPaint()
         // reset the flag to false
         items.widthHeightChanged = false
