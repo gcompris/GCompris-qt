@@ -31,8 +31,9 @@ Rectangle {
     anchors.centerIn: parent
     radius: 10
     z: 1000
-    opacity: 0
-    onOpacityChanged: canvas.updateDemoText()
+    visible: false
+    enabled: false
+    onEnabledChanged: canvas.updateDemoText()
 
     property alias inputText: inputText
     property string fontSize: "8px "
@@ -66,12 +67,11 @@ Rectangle {
         MouseArea {
             id: mouseArea
             anchors.fill: parent
-            enabled: inputTextFrame.opacity == 1 ? true : false
             onClicked: {
                 onBoardText.text = inputText.text
                 // hide the inputTextFrame
-                inputTextFrame.opacity = 0
-                inputTextFrame.z = -1
+                inputTextFrame.enabled = false
+                inputTextFrame.visible = false
 
                 // show the text
                 onBoardText.opacity = 1

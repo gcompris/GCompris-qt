@@ -329,8 +329,8 @@ function selectTool(toolName) {
         items.background.reloadSelectedPen()
 
         // make visible the inputTextFrame
-        items.inputTextFrame.opacity = 1
-        items.inputTextFrame.z = 1000
+        items.inputTextFrame.visible = true
+        items.inputTextFrame.enabled = true
 
         // restore input text to ""
         items.inputText.text = ""
