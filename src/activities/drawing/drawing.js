@@ -482,7 +482,7 @@ function paintBucket() {
     var g1 = colorLayer.data[begPixel + 1]
     var b1 = colorLayer.data[begPixel + 2]
 
-    if(r1 === (items.canvas.fillColor.r * 255) && g1 === (items.canvas.fillColor.g * 255) && b1 === (items.canvas.fillColor.b * 255)) {
+    if(r1 === (items.selectedColor.r * 255) && g1 === (items.selectedColor.g * 255) && b1 === (items.selectedColor.b * 255)) {
         items.canvas.isBucketDone = true;
         return;
     }
@@ -510,9 +510,9 @@ function paintBucket() {
         sY = sY + 1;
         ctx.fillRect(sX, sY, 1, 1)
         begPixel = sX * 4 + sY * 4 * colorLayer.width
-        colorLayer.data[begPixel] = items.canvas.fillColor.r * 255
-        colorLayer.data[begPixel + 1] = items.canvas.fillColor.g * 255
-        colorLayer.data[begPixel + 2] = items.canvas.fillColor.b * 255
+        colorLayer.data[begPixel] = items.selectedColor.r * 255
+        colorLayer.data[begPixel + 1] = items.selectedColor.g * 255
+        colorLayer.data[begPixel + 2] = items.selectedColor.b * 255
         colorLayer.data[begPixel + 3] = 255
 
         while(sY + 1 < colorLayer.height) {
@@ -520,9 +520,9 @@ function paintBucket() {
             begPixel = sX * 4 + sY * 4 * colorLayer.width
             if(((colorLayer.data[begPixel ] === r1) && (colorLayer.data[begPixel + 1] === g1) && (colorLayer.data[ begPixel + 2 ] === b1))) {
                 ctx.fillRect(sX, sY, 2, 2)
-                colorLayer.data[begPixel] = items.canvas.fillColor.r * 255
-                colorLayer.data[begPixel + 1] = items.canvas.fillColor.g * 255
-                colorLayer.data[begPixel + 2] = items.canvas.fillColor.b * 255
+                colorLayer.data[begPixel] = items.selectedColor.r * 255
+                colorLayer.data[begPixel + 1] = items.selectedColor.g * 255
+                colorLayer.data[begPixel + 2] = items.selectedColor.b * 255
                 colorLayer.data[begPixel + 3] = 255
 
                 if(sX > 1) {

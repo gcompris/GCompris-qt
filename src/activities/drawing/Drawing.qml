@@ -262,7 +262,6 @@ ActivityBase {
                 property int startY: -1
                 property int finishX: -1
                 property int finishY: -1
-                property color fillColor: items.paintColor
                 property bool isBucketDone: true
 
                 GCText {
