@@ -281,7 +281,7 @@ ActivityBase {
                     height: items.toolsMode.activeStampHeight
                     fillMode: Image.PreserveAspectFit
                     z: -1
-                    opacity: 0.5
+                    opacity: items.globalOpacityValue
                     visible: items.toolSelected === "stamp"
                     onSourceChanged: items.toolsMode.activeStampDimensionRatio = sourceSize.width / sourceSize.height
                 }
@@ -291,27 +291,12 @@ ActivityBase {
                     var ctx = getContext('2d')
                     ctx.beginPath()
                     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-                    //paintWhite()
-                    canvas.ctx.strokeStyle = "#ffffff"
-                }
-
-                function paintWhite() {
-                    canvas.ctx = getContext("2d")
-                    canvas.ctx.fillStyle = "#ffffff"
-                    canvas.ctx.beginPath()
-                    canvas.ctx.moveTo(0, 0)
-                    canvas.ctx.lineTo(background.width, 0)
-                    canvas.ctx.lineTo(background.width, background.height)
-                    canvas.ctx.lineTo(0, background.height)
-                    canvas.ctx.closePath()
-                    canvas.ctx.fill()
+                    canvas.ctx.fillStyle = items.backgroundColor
                 }
 
                 onImageLoaded: {
                     // load images from files
                     if (items.urlImage != "") {
-                        //canvas.clearCanvas()
                         canvas.ctx.clearRect(0, 0, items.background.width, items.background.height)
                         canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
                         //                        if (items.loadSavedImage) {
@@ -877,7 +862,8 @@ ActivityBase {
                     id: rectangle
                     color: items.paintColor
                     enabled: items.toolSelected == "rectangle" || items.toolSelected == "line"|| items.toolSelected == "lineShift"
-                    opacity: enabled ? 1 : 0
+                    visible: enabled
+                    opacity: items.globalOpacityValue
 
                     property real rotationn: 0
 
@@ -894,7 +880,8 @@ ActivityBase {
                     radius: width / 2
                     color: items.paintColor
                     enabled: items.toolSelected == "circle"
-                    opacity: enabled ? 1 : 0
+                    visible: enabled
+                    opacity: items.globalOpacityValue
                     property real rotationn: 0
                 }
             }

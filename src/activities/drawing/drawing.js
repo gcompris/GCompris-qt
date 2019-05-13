@@ -304,7 +304,7 @@ function selectTool(toolName) {
     items.timer.stop()
     if(toolName === "Eraser") {
         items.eraserMode = true
-        items.paintColor = Qt.rgba(0, 0, 0, 1)
+        items.paintColor = items.backgroundColor
         items.globalOpacityValue = 1
         items.foldablePanels.toolsMode.opacitySliderValue = items.globalOpacityValue
         items.toolSelected = "eraser"
