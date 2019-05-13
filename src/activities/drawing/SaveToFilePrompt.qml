@@ -186,7 +186,6 @@ Rectangle {
     function noPressed() {
         if(buttonPressed === "reload") {
             cancelPressed()
-            Activity.reloadCanvas = true
             Activity.initLevel()
         }
         else if(buttonPressed === "home") {

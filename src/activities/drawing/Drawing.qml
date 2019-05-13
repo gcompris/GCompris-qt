@@ -49,16 +49,13 @@ ActivityBase {
         // When the width/height is changed, paint the last image on the canvas
         onWidthChanged: {
             if (items.background.started) {
-                items.widthHeightChanged = true
-                Activity.initLevel()
+                Activity.preserveImage()
             }
         }
         onHeightChanged: {
             if (items.background.started) {
-                items.widthHeightChanged = true
-                items.foldablePanels.animTarget.y = -7
                 items.foldablePanels.activePanel = "null"
-                Activity.initLevel()
+                Activity.preserveImage()
             }
         }
 
@@ -163,7 +160,6 @@ ActivityBase {
                 saveToFilePrompt.buttonPressed = "home"
                 if (!items.nothingChanged) {
                     saveToFilePrompt.text = qsTr("Do you want to save your painting?")
-                    main.opacity = 0.5
                     saveToFilePrompt.opacity = 1
                     saveToFilePrompt.z = 200
                 } else {
@@ -176,7 +172,6 @@ ActivityBase {
                 if (!items.nothingChanged) {
                     saveToFilePrompt.buttonPressed = "reload"
                     saveToFilePrompt.text = qsTr("Do you want to save your painting before reseting the board?")
-                    main.opacity = 0.5
                     saveToFilePrompt.opacity = 1
                     saveToFilePrompt.z = 200
                 } else {
@@ -197,12 +192,10 @@ ActivityBase {
             //            items.inputText.text = ""
         }
 
-        Rectangle {
+        Item {
             id: main
             width: parent.width
             height: parent.height
-
-            color: background.color
 
             Behavior on x {
                 enabled: items.mainAnimationOnX
@@ -253,7 +246,6 @@ ActivityBase {
                 // for brush
                 property var lastPoint
                 property var currentPoint
-
                 property var ctx
                 property string url: ""
 
@@ -283,14 +275,6 @@ ActivityBase {
                     opacity: items.globalOpacityValue
                     visible: items.toolSelected === "stamp"
                     onSourceChanged: items.toolsMode.activeStampDimensionRatio = sourceSize.width / sourceSize.height
-                }
-
-                function clearCanvas() {
-                    // clear all drawings from the board
-                    var ctx = getContext('2d')
-                    ctx.beginPath()
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    canvas.ctx.fillStyle = items.backgroundColor
                 }
 
                 onImageLoaded: {
