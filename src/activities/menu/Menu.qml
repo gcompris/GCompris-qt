@@ -108,9 +108,9 @@ ActivityBase {
             ]
         },
         {
-            icon: activity.url + "experience.svg",
-            tag: "experiment",
-            categories: [{ "sciences": qsTr("Sciences") },
+            icon: activity.url + "sciences.svg",
+            tag: "sciences",
+            categories: [{ "experiment": qsTr("Experiment") },
                          { "history": qsTr("History") },
                          { "geography": qsTr("Geography") }
             ]

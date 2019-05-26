@@ -35,6 +35,6 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("You are in charge of the canal lock. Open the gates and the locks in the right order, so Tux can travel through the gates in both directions.")
   credit: qsTr("Drawing by Stephane Cabaraux.")
-  section: "experiment sciences"
+  section: "sciences experiment"
   createdInVersion: 0
 }

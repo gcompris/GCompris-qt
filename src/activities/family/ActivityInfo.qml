@@ -37,6 +37,6 @@ ActivityInfo {
   "The circles are linked with lines to mark the relations. Married couples are marked with a ring on the link.\n" +
   "You are the person in the white circle. Select the name you should call the person in the orange circle.\n")
   credit: ""
-  section: "experiment history"
+  section: "sciences history"
   createdInVersion: 9000
 }

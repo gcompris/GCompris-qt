@@ -44,6 +44,6 @@ In level one, players enjoy exploring each animal on the screen. Click on the qu
 In level two, a random text prompt is displayed and you must click on the animal that matches the text. When you have matched all texts correctly, you win!
 ")
   credit: ""
-  section: "experiment sciences"
+  section: "sciences experiment"
   createdInVersion: 0
 }
