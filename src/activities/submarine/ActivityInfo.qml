@@ -54,7 +54,7 @@ ActivityInfo {
  + : Increase diving plane angle
  - : Decrease diving plane angle")
   credit: ""
-  section: "experiment sciences"
+  section: "sciences experiment"
   enabled: ApplicationInfo.isBox2DInstalled
   createdInVersion: 9000
 }
