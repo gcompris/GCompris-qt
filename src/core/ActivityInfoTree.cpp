@@ -128,8 +128,8 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
     const auto constMenuTreeFull = m_menuTreeFull;
     for(const auto &activity: constMenuTreeFull) {
         // filter on category if given else on tag
-        if(((category != "" && activity->section().indexOf(category) != -1) ||
-            (category == "" && activity->section().indexOf(tag) != -1) ||
+        if(((!category.isEmpty() && activity->section().indexOf(category) != -1) ||
+            (category.isEmpty() && activity->section().indexOf(tag) != -1) ||
             tag == "all" ||
             (tag == "favorite" && activity->favorite())) &&
             (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
