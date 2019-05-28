@@ -56,6 +56,7 @@ ActivityBase {
             property alias store: store
             property alias instructions: instructions
             property alias tux: tux
+            property var levels: activity.datasetLoader.item.data
             property alias tuxMoney: tuxMoney
             property alias bar: bar
             property alias bonus: bonus
@@ -135,7 +136,7 @@ ActivityBase {
                         Repeater {
                             id: tuxMoney
                             Image {
-                                source: Activity.url + modelData.img
+                                source: modelData.img
                                 sourceSize.height:  columnLayout.itemStoreHeight * 0.4
                                 x: tux.x + index * 20
                                 y: tux.y + tux.height / 2 + index * 20
@@ -146,7 +147,7 @@ ActivityBase {
                     Repeater {
                         id: store
                         Image {
-                            source: Activity.url + modelData.img
+                            source: modelData.img
                             sourceSize.height: columnLayout.itemStoreHeight
                             sourceSize.width: columnLayout.itemStoreHeight
                             GCText {

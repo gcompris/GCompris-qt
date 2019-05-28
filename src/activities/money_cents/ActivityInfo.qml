@@ -37,4 +37,5 @@ ActivityInfo {
   credit: ""
   section: "math money measures"
   createdInVersion: 0
+  levels: "1"
 }
