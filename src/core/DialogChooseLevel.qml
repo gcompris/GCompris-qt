@@ -72,26 +72,43 @@ Rectangle {
      */
     signal start
 
+    onStart: initialize()
+
     signal stop
 
+    /**
+     * Emitted when the settings are to be saved.
+     *
+     * The actual persisting of the settings in the settings file is done by
+     * DialogActivityConfig. The activity has to take care to update its
+     * internal state.
+     */
     signal saveData
 
     signal startActivity
+
+    /**
+     * Emitted when the config settings have been loaded.
+     */
+    signal loadData
 
     color: "#696da3"
     border.color: "black"
     border.width: 1
 
-    onCurrentActivityChanged: initialize()
-
     function initialize() {
         activityName = currentActivity.name.split('/')[0]
+
+        // dataset information
         chosenLevel = currentActivity.currentLevel
         difficultiesModel = []
         for(var level in currentActivity.levels) {
             objectiveLoader.dataFiles.push({"level": currentActivity.levels[level], "file": "qrc:/gcompris/src/activities/"+activityName+"/resource/"+currentActivity.levels[level]+"/Data.qml"})
         }
         objectiveLoader.start()
+
+        // activity configuration information
+        configLoader.getInitialConfiguration()
     }
 
     Loader {
@@ -164,6 +181,7 @@ Rectangle {
                 }
             }
 
+            // Header buttons
             Row {
                 id: datasetOptionsRow
                 height: datasetVisibleButton.height
@@ -173,6 +191,7 @@ Rectangle {
                 Button {
                     id: datasetVisibleButton
                     text: qsTr("Dataset")
+                    enabled: difficultiesRepeater.count != 0
                     width: parent.width / 3
                     property bool selected: true
                     style: GCButtonStyle {
@@ -183,6 +202,7 @@ Rectangle {
                 Button {
                     id: optionsVisibleButton
                     text: qsTr("Options")
+                    enabled: activityConfigFile.exists("qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml")
                     width: parent.width / 3
                     style: GCButtonStyle {
                         selected: !datasetVisibleButton.selected
@@ -191,6 +211,7 @@ Rectangle {
                 }
             }
 
+            // "Dataset"/"Options" content
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
@@ -209,11 +230,38 @@ Rectangle {
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
                     contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
-                    ExclusiveGroup {
-                        id: levelsGroup
+
+                    Loader {
+                        id: configLoader
+                        visible: !datasetVisibleButton.selected
+                        active: optionsVisibleButton.enabled
+                        source: active ? "qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml" : ""
+
+                        onItemChanged: {
+                            if(item) {
+                                item.background = dialogChooseLevel
+                                dialogChooseLevel.saveData.connect(save);
+                            }
+                        }
+                        function getInitialConfiguration() {
+                            if(item) {
+                                item.dataToSave = ApplicationSettings.loadActivityConfiguration(activityName)
+                                item.setDefaultValues()
+                            }
+                        }
+                        function save() {
+                            item.saveValues()
+                            ApplicationSettings.saveActivityConfiguration(activityName, item.dataToSave)
+                        }
                     }
+
                     Column {
+                        visible: datasetVisibleButton.selected
                         spacing: 10
+
+                        ExclusiveGroup {
+                            id: levelsGroup
+                        }
                         Repeater {
                             id: difficultiesRepeater
                             delegate: Row {
@@ -250,6 +298,7 @@ Rectangle {
                     downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
                 }
             }
+            // Footer buttons
             Row {
                 id: saveAndPlayRow
                 height: cancelButton.height
@@ -295,5 +344,9 @@ Rectangle {
         onClose: {
             parent.close()
         }
+    }
+
+    File {
+        id: activityConfigFile
     }
 }

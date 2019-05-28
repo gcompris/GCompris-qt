@@ -232,7 +232,7 @@ Item {
         function hidePopUpAndRestoreFocus() {
             popup.visible = false;
             // Restore focus on previous activity for keyboard input
-            background.currentActivity.forceActiveFocus();
+            background.forceActiveFocus();
         }
         
         Rectangle {

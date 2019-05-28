@@ -225,25 +225,8 @@ ActivityBase {
             id: dialogActivityConfig
             currentActivity: activity
             content: Component {
-                Item {
-                    property alias modeBox: modeBox
-                    property var availableModes: [
-                        { "text": qsTr("Dots"), "value": "dot" },
-                        { "text": qsTr("Arabic numbers"), "value": "number" },
-                        { "text": qsTr("Roman numbers"), "value": "roman" },
-                        { "text": qsTr("Images"), "value": "image" }
-                    ]
-                    Flow {
-                        id: flow
-                        spacing: 5
-                        width: dialogActivityConfig.width
-                        GCComboBox {
-                            id: modeBox
-                            model: availableModes
-                            background: dialogActivityConfig
-                            label: qsTr("Select Domino Representation")
-                        }
-                    }
+                ActivityConfig {
+                    background: dialogActivityConfig
                 }
             }
             onClose: home()
@@ -260,6 +243,7 @@ ActivityBase {
                 }
                 Activity.initLevel();
             }
+            // to be removed
             function setDefaultValues() {
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
                     if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
