@@ -346,27 +346,5 @@ Window {
             property Component replaceTransition: pushHTransition
         }
     }
-
-    onSceneGraphError: {
-        print("scene graph error ", error, message)
-        ApplicationSettings.renderer = "software"
-        Core.showMessageDialog(
-            main,
-            qsTr("There is an issue while running GCompris. " +
-                 "We have fallbacken to software renderer mode that should solve the issue. ") +
-                 "You need to restart GCompris so it can take effect.",
-        "", null, "", null, null);
-    }
-
-    onSceneGraphInvalidated: {
-        print("scene graph invalidated")
-        ApplicationSettings.renderer = "software"
-        Core.showMessageDialog(
-            main,
-            qsTr("There is an issue while running GCompris. " +
-                 "We have fallbacken to software renderer mode that should solve the issue. ") +
-                 "You need to restart GCompris so it can take effect.",
-        "", null, "", null, null);
-    }
     /// @endcond
 }
