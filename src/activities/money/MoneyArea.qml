@@ -63,7 +63,7 @@ Rectangle {
             id: pocket
             model: ListModel { id: pocketModel }
             Image {
-                source: Activity.url + img
+                source: img
                 sourceSize.height: columnLayout.itemHeight
                 height: columnLayout.itemHeight
 
