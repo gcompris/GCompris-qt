@@ -42,7 +42,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -166,16 +166,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
@@ -221,35 +219,22 @@ ActivityBase {
             }
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                ActivityConfig {
-                    background: dialogActivityConfig
-                }
-            }
-            onClose: home()
-            onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    items.mode = dataToSave["mode"];
-                }
+            currentActivity: activity.activityInfo
+
+            onClose: {
+                home()
             }
             onSaveData: {
-                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                if (newMode !== items.mode) {
-                    items.mode = newMode;
-                    dataToSave = {"mode": items.mode};
-                }
-                Activity.initLevel();
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                home()
             }
-            // to be removed
-            function setDefaultValues() {
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
-                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                        break;
-                    }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
                 }
             }
         }

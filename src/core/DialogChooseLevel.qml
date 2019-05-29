@@ -60,6 +60,8 @@ Rectangle {
 
     property string chosenLevel
 
+    property var activityData
+    onActivityDataChanged: loadData()
     /// @endcond
     
     /**
@@ -106,9 +108,6 @@ Rectangle {
             objectiveLoader.dataFiles.push({"level": currentActivity.levels[level], "file": "qrc:/gcompris/src/activities/"+activityName+"/resource/"+currentActivity.levels[level]+"/Data.qml"})
         }
         objectiveLoader.start()
-
-        // activity configuration information
-        configLoader.getInitialConfiguration()
     }
 
     Loader {
@@ -240,10 +239,12 @@ Rectangle {
                         onItemChanged: {
                             if(item) {
                                 item.background = dialogChooseLevel
-                                dialogChooseLevel.saveData.connect(save);
+                                dialogChooseLevel.saveData.connect(save)
+                                getInitialConfiguration()
                             }
                         }
                         function getInitialConfiguration() {
+                            activityData = Qt.binding(function() { return item.dataToSave })
                             if(item) {
                                 item.dataToSave = ApplicationSettings.loadActivityConfiguration(activityName)
                                 item.setDefaultValues()
@@ -278,7 +279,7 @@ Rectangle {
                                     width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
                                     text: modelData.objective
                                     exclusiveGroup: levelsGroup
-                                    checked: chosenLevel == modelData.level
+                                    checked: chosenLevel === modelData.level
                                     onClicked: chosenLevel = modelData.level
                                 }                            
                             }

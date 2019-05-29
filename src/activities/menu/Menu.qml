@@ -514,7 +514,6 @@ ActivityBase {
                     }
                     else {
                         dialogChooseLevel.currentActivity = ActivityInfoTree.menuTree[index]
-                        dialogChooseLevel.chosenLevel = currentLevel;
                         displayDialog(dialogChooseLevel);
                     }
                 }
