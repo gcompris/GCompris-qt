@@ -104,10 +104,15 @@ Rectangle {
         // dataset information
         chosenLevel = currentActivity.currentLevel
         difficultiesModel = []
-        for(var level in currentActivity.levels) {
-            objectiveLoader.dataFiles.push({"level": currentActivity.levels[level], "file": "qrc:/gcompris/src/activities/"+activityName+"/resource/"+currentActivity.levels[level]+"/Data.qml"})
+        if(currentActivity.levels.length == 0) {
+            print("no levels to load for", activityName)
         }
-        objectiveLoader.start()
+        else {
+            for(var level in currentActivity.levels) {
+                objectiveLoader.dataFiles.push({"level": currentActivity.levels[level], "file": "qrc:/gcompris/src/activities/"+activityName+"/resource/"+currentActivity.levels[level]+"/Data.qml"})
+            }
+            objectiveLoader.start()
+        }
     }
 
     Loader {
@@ -118,6 +123,7 @@ Rectangle {
         signal stop
 
         onStart: {
+            if(dataFiles.length)
             var file = dataFiles.shift()
             currentFile = file
             source = file.file.toString()

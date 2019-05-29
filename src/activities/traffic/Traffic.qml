@@ -45,7 +45,7 @@ ActivityBase {
                                   // mode, candidate for a config dialog
         
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -105,59 +105,30 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-        
-        DialogActivityConfig {
+
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias modeBox: modeBox
+            currentActivity: activity.activityInfo
 
-                    property var availableModes: [
-                    { "text": qsTr("Colors"), "value": "COLOR" },
-                    { "text": qsTr("Images"), "value": "IMAGE" }
-                    ]
-
-                    Flow {
-                        id: flow
-                        spacing: 5
-                        width: dialogActivityConfig.width
-                        GCComboBox {
-                            id: modeBox
-                            model: availableModes
-                            background: dialogActivityConfig
-                            label: qsTr("Select your mode")
-                        }
-                    }
-                }
+            onClose: {
+                home()
             }
-            onClose: home()
-            onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    mode = dataToSave["mode"];
-                    Activity.mode = dataToSave["mode"];
-                }
-            }
-
             onSaveData: {
-                mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                dataToSave = {"mode": mode}
-                Activity.mode = mode;
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                home()
             }
-
-            function setDefaultValues() {
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === mode) {
-                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                        break;
-                    }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                   background.mode = activityData["mode"];
                 }
             }
         }
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload | config }
+            content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -165,10 +136,7 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.initLevel()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                // Set default values
-                dialogActivityConfig.setDefaultValues();
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
