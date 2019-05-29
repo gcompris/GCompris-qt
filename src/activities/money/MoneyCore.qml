@@ -61,6 +61,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int itemIndex
+            property int pocketRows
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
@@ -77,7 +78,7 @@ ActivityBase {
             width: parent.width * 0.9
 
             property int nbColumns: 5
-            property int nbLines: 2
+            property int nbLines: items.pocketRows
             property int itemWidth:
                 Math.min(width / nbColumns - 10 - 10 / nbColumns,
                          parent.height * 0.4 / nbLines - 10 - 10 / nbLines)
@@ -102,13 +103,12 @@ ActivityBase {
 
             Rectangle {
                 id: storeArea
-                height: (columnLayout.itemStoreHeight + 10)
+                height: columnLayout.itemStoreHeight + 10
                 width: columnLayout.width
                 color: "#55333333"
                 border.color: "black"
                 border.width: 2
                 radius: 5
-
                 Flow {
                     id: storeAreaFlow
                     anchors.topMargin: 4

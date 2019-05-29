@@ -24,7 +24,7 @@ import "../../../../core"
 import "../../../money/moneyConstants.js" as Constants
 
 Dataset {
-    objective: qsTr("Learn how to pay up to 10 euros")
+    objective: qsTr("Learn how to pay up to 10 units")
     property var moneyItems: Constants.moneyItems
     data: [
     {
