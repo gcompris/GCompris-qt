@@ -123,7 +123,6 @@ Rectangle {
         signal stop
 
         onStart: {
-            if(dataFiles.length)
             var file = dataFiles.shift()
             currentFile = file
             source = file.file.toString()
