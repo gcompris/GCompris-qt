@@ -73,7 +73,10 @@ function initLevel() {
     items.pocketModel.clear()
 
     var data = dataset[currentLevel]
+
+    items.pocketRows = (data.pocket.length > 10) ? 3 : 2
     var pocket = Core.shuffle(data.pocket)
+
     for (var i in pocket)
         items.pocketModel.append(pocket[i])
 
@@ -88,7 +91,7 @@ function initLevel() {
             // Calc a random price for each item based on the previous prices
             price = Math.floor((centsMode ? 0 : 1) +
                                Math.random() *
-                               ((priceTotal - priceCounter) / data.numberOfItem))
+                               (2 * (priceTotal - priceCounter) / data.numberOfItem))
         else
             // Put the remaining missing price on the last item
             price = priceTotal - priceCounter
