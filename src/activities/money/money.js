@@ -74,7 +74,7 @@ function initLevel() {
 
     var data = dataset[currentLevel]
 
-    items.pocketRows = (data.pocket.length > 10) ? 3 : 2
+    items.pocketRows = (data.pocket.length > 12) ? 3 : 2
     var pocket = Core.shuffle(data.pocket)
 
     for (var i in pocket)
@@ -136,8 +136,14 @@ function initLevel() {
         case 10:
             tuxMoney = [Constants.moneyItems.MONEY_PAPER_10E]
             break
+        case 15:
+            tuxMoney = [Constants.moneyItems.MONEY_PAPER_10E, Constants.moneyItems.MONEY_PAPER_5E]
+            break
         case 20:
             tuxMoney = [Constants.moneyItems.MONEY_PAPER_20E]
+            break
+        case 25:
+            tuxMoney = [Constants.moneyItems.MONEY_PAPER_20E, Constants.moneyItems.MONEY_PAPER_5E]
             break
         case 30:
             tuxMoney = [Constants.moneyItems.MONEY_PAPER_20E, Constants.moneyItems.MONEY_PAPER_10E]
@@ -149,7 +155,16 @@ function initLevel() {
             tuxMoney = [Constants.moneyItems.MONEY_PAPER_50E]
             break
         case 100:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_50E, Constants.moneyItems.MONEY_PAPER_50E]
+            tuxMoney = [Constants.moneyItems.MONEY_PAPER_100E]
+            break
+        case 200:
+            tuxMoney = [Constants.moneyItems.MONEY_PAPER_200E]
+            break
+        case 300:
+            tuxMoney = [Constants.moneyItems.MONEY_PAPER_200E, Constants.moneyItems.MONEY_PAPER_100E]
+            break
+        case 400:
+            tuxMoney = [Constants.moneyItems.MONEY_PAPER_200E, Constants.moneyItems.MONEY_PAPER_200E]
             break
         }
         items.tuxMoney.model = tuxMoney

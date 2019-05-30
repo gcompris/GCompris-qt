@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/money_back *.qml *.svg *.js resource/* resource/*/*/*.qml)
+GCOMPRIS_ADD_RCC(activities/money_back *.qml *.svg *.js resource/*)

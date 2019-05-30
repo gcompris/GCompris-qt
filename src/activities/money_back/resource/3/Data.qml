@@ -24,158 +24,104 @@ import "../../../../core"
 import "../../../money/moneyConstants.js" as Constants
 
 Dataset {
-    objective: qsTr("Learn how to pay up to 100 units")
+    objective: qsTr("Learn how to calculate change when amount paid is upto 400 units")
     property var moneyItems: Constants.moneyItems
     data: [
     {
         "numberOfItem": 1,
-        "minPrice": 3,
-        "maxPrice": 10,
-        "pocket": [
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },  
-    {
-        "numberOfItem": 1,
-        "minPrice": 10,
-        "maxPrice": 20,
+        "minPrice": 1,
+        "maxPrice": 49,
+        "paid": 50,
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 20,
-        "maxPrice": 30,
-        "pocket": [
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 30,
-        "maxPrice": 60,
-        "pocket": [
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_20E,
-            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E
+            moneyItems.MONEY_COIN_1E,
         ]
     },
     {
-        "numberOfItem": 1,
-        "minPrice": 60,
-        "maxPrice": 100,
+        "numberOfItem": 2,
+        "minPrice": 50,
+        "maxPrice": 99,
+        "paid": 100,
         "pocket": [
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_50E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_20E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E
         ]
     },
     {
         "numberOfItem": 3,
-        "minPrice": 10,
-        "maxPrice": 20,
+        "minPrice": 100,
+        "maxPrice": 199,
+        "paid": 200,
         "pocket": [
+            moneyItems.MONEY_PAPER_100E,
+            moneyItems.MONEY_PAPER_50E,
+            moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
     },
     {
         "numberOfItem": 4,
-        "minPrice": 20,
-        "maxPrice": 30,
+        "minPrice": 200,
+        "maxPrice": 299,
+        "paid": 300,
         "pocket": [
+            moneyItems.MONEY_PAPER_200E,
+            moneyItems.MONEY_PAPER_20E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
     },
     {
         "numberOfItem": 5,
-        "minPrice": 30,
-        "maxPrice": 60,
+        "minPrice": 300,
+        "maxPrice": 399,
+        "paid": 400,
         "pocket": [
-            moneyItems.MONEY_PAPER_20E,
-            moneyItems.MONEY_PAPER_20E,
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_PAPER_200E,
+            moneyItems.MONEY_PAPER_100E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_20E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_20E,
             moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 6,
-        "minPrice": 60,
-        "maxPrice": 100,
-        "pocket": [
-            moneyItems.MONEY_PAPER_10E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_PAPER_50E,
-            moneyItems.MONEY_PAPER_20E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E
         ]
     }
     ]
