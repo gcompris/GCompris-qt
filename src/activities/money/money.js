@@ -67,15 +67,24 @@ function start(items_, datasetName) {
 function stop() {
 }
 
+function getCoinCount (pocket) {
+    var count = 0
+    for(var i = 0; i < pocket.length; i++) {
+        if(pocket[i].val <= 2)
+            count++
+    }
+    return count;
+}
+
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.answerModel.clear()
     items.pocketModel.clear()
 
     var data = dataset[currentLevel]
-
-    items.pocketRows = (data.pocket.length > 12) ? 3 : 2
     var pocket = Core.shuffle(data.pocket)
+    var coinCount = getCoinCount(pocket)
+    items.pocketRows = ((data.pocket.length - coinCount / 2) > 9) ? 3 : 2
 
     for (var i in pocket)
         items.pocketModel.append(pocket[i])
