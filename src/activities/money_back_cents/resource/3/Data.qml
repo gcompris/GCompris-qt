@@ -24,15 +24,17 @@ import "../../../../core"
 import "../../../money/moneyConstants.js" as Constants
 
 Dataset {
-    objective: qsTr("Learn how to calculate change including cents when amount paid is upto 30 units")
+    objective: qsTr("Learn how to calculate change including cents when amount paid is upto 300 units")
     property var moneyItems: Constants.moneyItems
     data: [
     {
         "numberOfItem": 1,
-        "minPrice": 1,
-        "maxPrice": 9,
-        "paid": 10,
+        "minPrice": 30,
+        "maxPrice": 39,
+        "paid": 40,
         "pocket": [
+            moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
@@ -48,10 +50,13 @@ Dataset {
     },
     {
         "numberOfItem": 1,
-        "minPrice": 5,
-        "maxPrice": 14,
-        "paid": 15,
+        "minPrice": 40,
+        "maxPrice": 49,
+        "paid": 50,
         "pocket": [
+            moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
@@ -68,11 +73,14 @@ Dataset {
     },
     {
         "numberOfItem": 2,
-        "minPrice": 10,
-        "maxPrice": 19,
-        "paid": 20,
+        "minPrice": 50,
+        "maxPrice": 70,
+        "paid": 100,
         "pocket": [
+            moneyItems.MONEY_PAPER_50E,
+            moneyItems.MONEY_PAPER_20E,
             moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
@@ -88,10 +96,13 @@ Dataset {
     },
     {
         "numberOfItem": 3,
-        "minPrice": 15,
-        "maxPrice": 24,
-        "paid": 25,
+        "minPrice": 100,
+        "maxPrice": 199,
+        "paid": 200,
         "pocket": [
+            moneyItems.MONEY_PAPER_100E,
+            moneyItems.MONEY_PAPER_50E,
+            moneyItems.MONEY_PAPER_20E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
@@ -109,11 +120,15 @@ Dataset {
     },
     {
         "numberOfItem": 4,
-        "minPrice": 20,
-        "maxPrice": 29,
-        "paid": 30,
+        "minPrice": 200,
+        "maxPrice": 299,
+        "paid": 300,
         "pocket": [
+            moneyItems.MONEY_PAPER_200E,
+            moneyItems.MONEY_PAPER_50E,
             moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_PAPER_10E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
