@@ -1,6 +1,20 @@
 [Desktop Entry]
 Name=GCompris
+Name[ca]=GCompris
+Name[ca@valencia]=GCompris
+Name[eu]=GCompris
+Name[pt]=GCompris
+Name[sv]=GCompris
+Name[uk]=GCompris
+Name[x-test]=xxGComprisxx
 GenericName=Educational Game
+GenericName[ca]=Joc educatiu
+GenericName[ca@valencia]=Joc educatiu
+GenericName[eu]=Hezkuntza-jokoa
+GenericName[pt]=Jogo Educativo
+GenericName[sv]=Pedagogiskt spel
+GenericName[uk]=Освітня гра
+GenericName[x-test]=xxEducational Gamexx
 Comment=Multi-Activity Educational game for children 2 to 10
 Comment[ar]=لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات
 Comment[ca]=Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys
