@@ -4,38 +4,6 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>GCompris</name>
-  <name xml:lang="ar">لعبة «فهمت» التعليميّة</name>
-  <name xml:lang="ca">Joc educatiu GCompris</name>
-  <name xml:lang="ca-valencia">Joc educatiu GCompris</name>
-  <name xml:lang="de">GCompris-Lernspiel</name>
-  <name xml:lang="el">Εκπαιδευτικό παιχνίδι GCompris</name>
-  <name xml:lang="en-GB">GCompris Educational Game</name>
-  <name xml:lang="es">Juego educativo GCompris</name>
-  <name xml:lang="et">Hariv mäng GCompris</name>
-  <name xml:lang="eu">GCompris hezkuntza-jokoa</name>
-  <name xml:lang="fi">GCompris, opettavainen peli</name>
-  <name xml:lang="fr">Jeu éducatif GCompris</name>
-  <name xml:lang="gl">Xogo educativo GCompris</name>
-  <name xml:lang="hi">जीकोंप्रिस शेक्षणिक अनुप्रयोग</name>
-  <name xml:lang="id">Permainan Pendidikan GCompris</name>
-  <name xml:lang="it">Gioco didattico GCompris</name>
-  <name xml:lang="ko">GCompris 교육용 게임</name>
-  <name xml:lang="ml">ജികോംപ്രി വിദ്യാഭ്യാസപരമായ കളി</name>
-  <name xml:lang="nl">Educatief spel GCompris</name>
-  <name xml:lang="nn">GCompris leik-og-lær-spel</name>
-  <name xml:lang="pl">Gra edukacyjna GCompris</name>
-  <name xml:lang="pt">Jogo Educativo GCompris</name>
-  <name xml:lang="pt-BR">Jogo educacional GCompris</name>
-  <name xml:lang="ro">Jocul educațional GCompris</name>
-  <name xml:lang="ru">Набор обучающих игр GCompris</name>
-  <name xml:lang="sk">Výuková hra GCompris</name>
-  <name xml:lang="sl">Izobraževalna igra GCompris</name>
-  <name xml:lang="sv">GCompris pedagogiskt spel</name>
-  <name xml:lang="tr">GCompris Eğitici Oyun</name>
-  <name xml:lang="uk">Освітня гра GCompris</name>
-  <name xml:lang="x-test">xxGCompris Educational Gamexx</name>
-  <name xml:lang="zh-CN">GCompris 教育游戏</name>
-  <name xml:lang="zh-TW">GCompris 教育遊戲</name>
   <summary>Multi-Activity Educational game for children 2 to 10</summary>
   <summary xml:lang="ar">لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات</summary>
   <summary xml:lang="ca">Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys</summary>
