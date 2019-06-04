@@ -33,6 +33,7 @@ Dataset {
         "maxPrice": 3,
         "paid": 5,
         "pocket": [
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_5C,
@@ -51,6 +52,7 @@ Dataset {
         "maxPrice": 3,
         "paid": 5,
         "pocket": [
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_5C,
@@ -69,6 +71,7 @@ Dataset {
         "maxPrice": 3,
         "paid": 5,
         "pocket": [
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_5C,
@@ -87,6 +90,7 @@ Dataset {
         "maxPrice": 3,
         "paid": 5,
         "pocket": [
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_5C,
@@ -105,6 +109,7 @@ Dataset {
         "maxPrice": 4,
         "paid": 5,
         "pocket": [
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_5C,
