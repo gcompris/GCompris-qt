@@ -137,44 +137,27 @@ function initLevel() {
                 qsTr("Click on the coins or paper money at the bottom of the screen to pay." +
                      " If you want to remove a coin or note, click on it on the upper screen area.")
     } else {
-        var tuxMoney
-        switch(data.paid) {
-        case 5:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_5E]
-            break
-        case 10:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_10E]
-            break
-        case 15:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_10E, Constants.moneyItems.MONEY_PAPER_5E]
-            break
-        case 20:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_20E]
-            break
-        case 25:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_20E, Constants.moneyItems.MONEY_PAPER_5E]
-            break
-        case 30:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_20E, Constants.moneyItems.MONEY_PAPER_10E]
-            break
-        case 40:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_20E, Constants.moneyItems.MONEY_PAPER_20E]
-            break
-        case 50:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_50E]
-            break
-        case 100:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_100E]
-            break
-        case 200:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_200E]
-            break
-        case 300:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_200E, Constants.moneyItems.MONEY_PAPER_100E]
-            break
-        case 400:
-            tuxMoney = [Constants.moneyItems.MONEY_PAPER_200E, Constants.moneyItems.MONEY_PAPER_200E]
-            break
+        var avaliableCurrency = []
+        for(var item in Constants.moneyItems) {
+            avaliableCurrency.push(Constants.moneyItems[item])
+        }
+        avaliableCurrency.sort(function sort(a, b) { return a.val - b.val });
+        var amountToBeCovered = data.paid
+        var tuxMoney = []
+        while(amountToBeCovered > 0) {
+            var maxPossible = avaliableCurrency[0]
+            if(amountToBeCovered >= avaliableCurrency[avaliableCurrency.length - 1].val)
+                maxPossible = avaliableCurrency[avaliableCurrency.length - 1]
+            else {
+                for(var i = 1; i < avaliableCurrency.length; i++) {
+                    if((avaliableCurrency[i].val > amountToBeCovered) && (avaliableCurrency[i - 1].val <= amountToBeCovered)) {
+                        maxPossible = avaliableCurrency[i - 1]
+                        break;
+                    }
+                }
+            }
+            tuxMoney.push(maxPossible)
+            amountToBeCovered -= maxPossible.val;
         }
         items.tuxMoney.model = tuxMoney
 
