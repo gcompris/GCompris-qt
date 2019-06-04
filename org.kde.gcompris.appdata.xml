@@ -4,6 +4,13 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>GCompris</name>
+  <name xml:lang="ca">GCompris</name>
+  <name xml:lang="es">GCompris</name>
+  <name xml:lang="nl">GCompris</name>
+  <name xml:lang="pt">GCompris</name>
+  <name xml:lang="sv">GCompris</name>
+  <name xml:lang="uk">GCompris</name>
+  <name xml:lang="x-test">xxGComprisxx</name>
   <summary>Multi-Activity Educational game for children 2 to 10</summary>
   <summary xml:lang="ar">لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات</summary>
   <summary xml:lang="ca">Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys</summary>
