@@ -137,23 +137,16 @@ function initLevel() {
                 qsTr("Click on the coins or paper money at the bottom of the screen to pay." +
                      " If you want to remove a coin or note, click on it on the upper screen area.")
     } else {
-        var avaliableCurrency = []
-        for(var item in Constants.moneyItems) {
-            avaliableCurrency.push(Constants.moneyItems[item])
-        }
-        avaliableCurrency.sort(function sort(a, b) { return a.val - b.val });
+        var availableCurrency = pocket.slice()
+        availableCurrency.sort(function sort(a, b) { return b.val - a.val });
         var amountToBeCovered = data.paid
         var tuxMoney = []
         while(amountToBeCovered > 0) {
-            var maxPossible = avaliableCurrency[0]
-            if(amountToBeCovered >= avaliableCurrency[avaliableCurrency.length - 1].val)
-                maxPossible = avaliableCurrency[avaliableCurrency.length - 1]
-            else {
-                for(var i = 1; i < avaliableCurrency.length; i++) {
-                    if((avaliableCurrency[i].val > amountToBeCovered) && (avaliableCurrency[i - 1].val <= amountToBeCovered)) {
-                        maxPossible = avaliableCurrency[i - 1]
-                        break;
-                    }
+            var maxPossible = 0
+            for(var i = 0; i < availableCurrency.length; i++) {
+                if((availableCurrency[i].val <= amountToBeCovered)) {
+                    maxPossible = availableCurrency[i]
+                    break;
                 }
             }
             tuxMoney.push(maxPossible)
