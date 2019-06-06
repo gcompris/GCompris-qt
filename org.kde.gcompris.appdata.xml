@@ -6,6 +6,7 @@
   <name>GCompris</name>
   <name xml:lang="ca">GCompris</name>
   <name xml:lang="es">GCompris</name>
+  <name xml:lang="eu">GCompris</name>
   <name xml:lang="nl">GCompris</name>
   <name xml:lang="pt">GCompris</name>
   <name xml:lang="sv">GCompris</name>
@@ -54,7 +55,7 @@
     <p xml:lang="el">Το GCompris είναι μια σουίτα εκπαιδευτικού λογισμικού με πολυάριθμες δραστηριότητες για παιδιά ηλικίας 2 έως 10 ετών.</p>
     <p xml:lang="en-GB">GCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.</p>
     <p xml:lang="es">GCompris es un conjunto de programas educativos de alta calidad que contiene un gran número de actividades para niños entre 2 y 10 años.</p>
-    <p xml:lang="eu">GCompris kalitate handiko hezkuntza-softwarea multzo bat da, 2 eta 10 urte bitarteko haurrentzako jarduera ugari dituena.</p>
+    <p xml:lang="eu">GCompris kalitate handiko hezkuntza-software multzo bat da, 2 eta 10 urte bitarteko haurrentzako jarduera ugari dituena.</p>
     <p xml:lang="fi">GCompris on laadukas monitoimintoinen opetusohjelmisto 2–10-vuotiaille lapsille.</p>
     <p xml:lang="fr">GCompris est un logiciel éducatif qui propose des activités variées aux enfants de 2 à 10 ans. Il est plébiscité par les écoles maternelles et primaires de part sa qualité et son spectre couvrant les cycles 1, 2 et 3.</p>
     <p xml:lang="gl">GCompris é unha colección de programas educativos que inclúe numerosas actividades para nenas e nenos de entre 2 e 10 anos.</p>
@@ -120,7 +121,7 @@
     <p xml:lang="en-GB">Below you can find a list of categories with some of the activities available in that category.</p>
     <p xml:lang="es">A continuación puede encontrar una lista de categorías con algunas de las actividades disponibles en cada una de ellas.</p>
     <p xml:lang="et">Allpool leiab kategooriate loetelu koos mõningate neile omaste tegevustega.</p>
-    <p xml:lang="eu">Behean kategoria zerrenda bat aurki dezakezu, kategoria horretan erabilgarri dauden jardueretako batzuekin.</p>
+    <p xml:lang="eu">Behean kategoria zerrenda bat aurki dezakezu, kategoria horretan erabilgarri dauden jardueretako batzuekin batera.</p>
     <p xml:lang="fi">Alta löydät luettelot luokista sekä maininnan joistakin kuhunkin luokkaan kuuluvista toiminnoista.</p>
     <p xml:lang="fr">Vous pouvez trouver ci-dessous une liste des catégories avec certaines de leurs activités.</p>
     <p xml:lang="gl">A continuación atopará unha lista de categorías e as actividades dispoñíbeis en cada unha desas categorías.</p>
@@ -254,7 +255,7 @@
       <li xml:lang="en-GB">games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
       <li xml:lang="es">juegos: memoria, conectar 4, tres en raya, sudoku, torres de hanoi...</li>
       <li xml:lang="et">mängud: mälu, nelja ühendamine, trips-traps-trull, sudoku, Hanoi tornid...</li>
-      <li xml:lang="eu">jokoak: oroimena, konektatu 4, hirutan hiru, sudoku, hani dorrea, ...</li>
+      <li xml:lang="eu">jokoak: oroimena, konektatu 4, hirutan hiru, sudoku, hanoi dorrea, ...</li>
       <li xml:lang="fi">pelit: muisti, neljän suora, ristinolla, sudoku, Hanoin tornit…</li>
       <li xml:lang="fr">jeux : trouve les paires, puissance 4, morpion, sudoku, la tour d'hanoï…</li>
       <li xml:lang="gl">Xogos: memoria, conectar 4, pai nai fillo, sudoku, torre de Hanoi, etc.</li>
