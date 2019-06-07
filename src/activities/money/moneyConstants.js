@@ -57,5 +57,6 @@ var moneyItems = {
     MONEY_PAPER_20E: { img: "qrc:/gcompris/src/activities/money/resource/n20e.svg", val: 20.0 },
     MONEY_PAPER_50E: { img: "qrc:/gcompris/src/activities/money/resource/n50e.svg", val: 50.0 },
     MONEY_PAPER_100E: { img: "qrc:/gcompris/src/activities/money/resource/n100e.png", val: 100.0 },
-    MONEY_PAPER_200E: { img: "qrc:/gcompris/src/activities/money/resource/n200e.svg", val: 200.0 }
+    MONEY_PAPER_200E: { img: "qrc:/gcompris/src/activities/money/resource/n200e.svg", val: 200.0 },
+    MONEY_PAPER_500E: { img: "qrc:/gcompris/src/activities/money/resource/n500e.png", val: 500.0 }
 }

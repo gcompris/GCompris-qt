@@ -21,11 +21,11 @@
 import QtQuick 2.6
 import GCompris 1.0
 import "../../../../core"
-import "../../../money/moneyConstants.js" as Constants
+import "../../../money/moneyConstants.js" as MoneyConstants
 
 Dataset {
     objective: qsTr("Learn how to pay up to 100 units")
-    property var moneyItems: Constants.moneyItems
+    property var moneyItems: MoneyConstants.moneyItems
     data: [
     {
         "numberOfItem": 1,
