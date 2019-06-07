@@ -21,11 +21,11 @@
 import QtQuick 2.6
 import GCompris 1.0
 import "../../../../core"
-import "../../../money/moneyConstants.js" as Constants
+import "../../../money/moneyConstants.js" as MoneyConstants
 
 Dataset {
     objective: qsTr("Learn how to calculate change when amount paid is upto 100 units")
-    property var moneyItems: Constants.moneyItems
+    property var moneyItems: MoneyConstants.moneyItems
     data: [
     {
         "numberOfItem": 1,
@@ -106,6 +106,25 @@ Dataset {
         "minPrice": 1,
         "maxPrice": 40,
         "paid": 50,
+        "pocket": [
+            moneyItems.MONEY_PAPER_50E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_PAPER_20E,
+            moneyItems.MONEY_COIN_1E
+        ]
+    },
+    {
+        "numberOfItem": 3,
+        "minPrice": 1,
+        "maxPrice": 50,
+        "paid": 55,
         "pocket": [
             moneyItems.MONEY_PAPER_50E,
             moneyItems.MONEY_COIN_2E,

@@ -22,8 +22,7 @@
 .pragma library
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import GCompris 1.0 as GCompris
-
-.import "moneyConstants.js" as Constants
+.import "moneyConstants.js" as MoneyConstants
 
 var url = "qrc:/gcompris/src/activities/money/resource/"
 
@@ -84,7 +83,7 @@ function initLevel() {
     var data = dataset[currentLevel]
     var pocket = Core.shuffle(data.pocket)
     var coinCount = getCoinCount(pocket)
-    items.pocketRows = ((data.pocket.length - coinCount / 2) > 9) ? 3 : 2
+    items.pocketRows = (((data.pocket.length - coinCount / 2) > 9) ? 3 : 2)
 
     for (var i in pocket)
         items.pocketModel.append(pocket[i])
@@ -185,11 +184,11 @@ function initLevel() {
 function getRandomObject(price) {
     var list
     if(price < 5)
-        list = Constants.cheapObjects
+        list = MoneyConstants.cheapObjects
     else if(price < 10)
-        list = Constants.normalObjects
+        list = MoneyConstants.normalObjects
     else
-        list = Constants.expensiveObjects
+        list = MoneyConstants.expensiveObjects
 
     return list[Math.floor(Math.random() * list.length)]
 }

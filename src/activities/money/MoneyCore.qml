@@ -62,6 +62,7 @@ ActivityBase {
             property alias bonus: bonus
             property int itemIndex
             property int pocketRows
+            property var verticalOrientation: background.height > background.width
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
@@ -78,7 +79,7 @@ ActivityBase {
             width: parent.width * 0.9
 
             property int nbColumns: 5
-            property int nbLines: items.pocketRows
+            property int nbLines: (items.verticalOrientation) ? items.pocketRows + 1 : items.pocketRows
             property int itemWidth:
                 Math.min(width / nbColumns - 10 - 10 / nbColumns,
                          parent.height * 0.4 / nbLines - 10 - 10 / nbLines)
@@ -138,7 +139,7 @@ ActivityBase {
                             Image {
                                 source: modelData.img
                                 sourceSize.height:  columnLayout.itemStoreHeight * 0.4
-                                x: tux.x + index * 20
+                                x: tux.x + index * 50
                                 y: tux.y + tux.height / 2 + index * 20
                             }
                         }
