@@ -44,19 +44,19 @@ function start(items_, datasetName) {
         case "WITHOUT_CENTS":
             centsMode = false
             backMode = false
-        break
+            break
         case "WITH_CENTS":
             centsMode = true
             backMode = false
-        break
+            break
         case "BACK_WITHOUT_CENTS":
             centsMode = false
             backMode = true
-        break
+            break
         case "BACK_WITH_CENTS":
             centsMode = true
             backMode = true
-        break
+            break
     }
     currentLevel = 0
     numberOfLevel = dataset.length
@@ -85,7 +85,7 @@ function initLevel() {
     var coinCount = getCoinCount(pocket)
     items.pocketRows = (((data.pocket.length - coinCount / 2) > 9) ? 3 : 2)
 
-    for (var i in pocket)
+    for(var i = 0; i < pocket.length; i++)
         items.pocketModel.append(pocket[i])
 
     // fill up the store in a random way
@@ -182,15 +182,15 @@ function initLevel() {
 
 // Given a price return a random object
 function getRandomObject(price) {
-    var list
+    var objectList
     if(price < 5)
-        list = MoneyConstants.cheapObjects
+        objectList = MoneyConstants.cheapObjects
     else if(price < 10)
-        list = MoneyConstants.normalObjects
+        objectList = MoneyConstants.normalObjects
     else
-        list = MoneyConstants.expensiveObjects
+        objectList = MoneyConstants.expensiveObjects
 
-    return list[Math.floor(Math.random() * list.length)]
+    return objectList[Math.floor(Math.random() * objectList.length)]
 }
 
 function checkAnswer() {

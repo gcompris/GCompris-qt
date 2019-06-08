@@ -31,28 +31,6 @@ Dataset {
     data: [
     {
         "numberOfItem": 1,
-        "minPrice": 3,
-        "maxPrice": 10,
-        "pocket": [
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_5C,
-            moneyItems.MONEY_COIN_2C,
-            moneyItems.MONEY_COIN_20C,
-            moneyItems.MONEY_COIN_50C,
-            moneyItems.MONEY_COIN_20C,
-            moneyItems.MONEY_COIN_10C,
-            moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
-        ]
-    },  
-    {
-        "numberOfItem": 1,
         "minPrice": 10,
         "maxPrice": 20,
         "pocket": [
@@ -72,7 +50,7 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     },
     {
@@ -97,7 +75,7 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     },
     {
@@ -123,7 +101,7 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     },
     {
@@ -148,11 +126,11 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     },
     {
-        "numberOfItem": 2,
+        "numberOfItem": 3,
         "minPrice": 10,
         "maxPrice": 20,
         "pocket": [
@@ -172,7 +150,7 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     },
     {
@@ -197,7 +175,7 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     },
     {
@@ -224,7 +202,7 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     },
     {
@@ -249,7 +227,7 @@ Dataset {
             moneyItems.MONEY_COIN_20C,
             moneyItems.MONEY_COIN_10C,
             moneyItems.MONEY_COIN_1C,
-            moneyItems.MONEY_COIN_1C,
+            moneyItems.MONEY_COIN_1C
         ]
     }
     ]

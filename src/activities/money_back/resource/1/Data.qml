@@ -31,32 +31,6 @@ Dataset {
     {
         "numberOfItem": 1,
         "minPrice": 1,
-        "maxPrice": 2,
-        "paid": 3,
-        "pocket": [
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 1,
-        "maxPrice": 3,
-        "paid": 5,
-        "pocket": [
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 1,
         "maxPrice": 4,
         "paid": 5,
         "pocket": [
@@ -64,35 +38,6 @@ Dataset {
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 1,
-        "maxPrice": 5,
-        "paid": 7,
-        "pocket": [
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 1,
-        "maxPrice": 6,
-        "paid": 7,
-        "pocket": [
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
         ]
     },
@@ -102,26 +47,12 @@ Dataset {
         "maxPrice": 7,
         "paid": 10,
         "pocket": [
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 1,
-        "maxPrice": 8,
-        "paid": 10,
-        "pocket": [
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E,
         ]
     },
     {
@@ -130,23 +61,9 @@ Dataset {
         "maxPrice": 9,
         "paid": 10,
         "pocket": [
-            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },
-    {
-        "numberOfItem": 1,
-        "minPrice": 1,
-        "maxPrice": 10,
-        "paid": 11,
-        "pocket": [
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_1E,
-            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_1E
@@ -159,11 +76,56 @@ Dataset {
         "paid": 15,
         "pocket": [
             moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E
+        ]
+    },
+    {
+        "numberOfItem": 1,
+        "minPrice": 1,
+        "maxPrice": 13,
+        "paid": 15,
+        "pocket": [
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_1E
+        ]
+    },
+    {
+        "numberOfItem": 1,
+        "minPrice": 1,
+        "maxPrice": 15,
+        "paid": 20,
+        "pocket": [
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
             moneyItems.MONEY_PAPER_5E,
             moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E
+        ]
+    },
+    {
+        "numberOfItem": 1,
+        "minPrice": 1,
+        "maxPrice": 19,
+        "paid": 20,
+        "pocket": [
+            moneyItems.MONEY_PAPER_10E,
+            moneyItems.MONEY_COIN_2E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_PAPER_5E,
+            moneyItems.MONEY_COIN_1E,
+            moneyItems.MONEY_COIN_2E,
             moneyItems.MONEY_COIN_1E
         ]
     }
