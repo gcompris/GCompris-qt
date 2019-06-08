@@ -25,6 +25,7 @@ import "../../../money/moneyConstants.js" as MoneyConstants
 
 Dataset {
     objective: qsTr("Learn how to calculate change including cents when amount paid is upto 10 units")
+    difficulty: 1
     property var moneyItems: MoneyConstants.moneyItems
     data: [
     {

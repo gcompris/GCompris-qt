@@ -204,7 +204,7 @@ Rectangle {
             // Header buttons
             Row {
                 id: datasetOptionsRow
-                height: datasetVisibleButton.height
+                height: dialogChooseLevel.height / 12
                 width: parent.width
                 spacing: parent.width / 4
                 anchors.leftMargin: parent.width / 8
@@ -212,6 +212,7 @@ Rectangle {
                     id: datasetVisibleButton
                     text: qsTr("Dataset")
                     enabled: hasDataset
+                    height: parent.height
                     width: parent.width / 3
                     property bool selected: true
                     style: GCButtonStyle {
@@ -221,6 +222,7 @@ Rectangle {
                 }
                 Button {
                     id: optionsVisibleButton
+                    height: parent.height
                     text: qsTr("Options")
                     enabled: hasConfig
                     width: parent.width / 3
@@ -323,11 +325,12 @@ Rectangle {
             // Footer buttons
             Row {
                 id: saveAndPlayRow
-                height: cancelButton.height
+                height: dialogChooseLevel.height / 12
                 width: parent.width
                 spacing: parent.width / 16
                 Button {
                     id: cancelButton
+                    height: parent.height
                     text: qsTr("Cancel")
                     width: parent.width / 4
                     property bool selected: true
@@ -336,6 +339,7 @@ Rectangle {
                 }
                 Button {
                     id: saveButton
+                    height: parent.height
                     text: qsTr("Save")
                     width: parent.width / 4
                     property bool selected: true
@@ -346,6 +350,7 @@ Rectangle {
                 }
                 Button {
                     id: saveAndStartButton
+                    height: parent.height
                     text: qsTr("Save and start")
                     width: parent.width / 3
                     style: GCButtonStyle { }
