@@ -25,6 +25,7 @@ import "../../../money/moneyConstants.js" as MoneyConstants
 
 Dataset {
     objective: qsTr("Learn how to pay up to 100 units")
+    difficulty: 2
     property var moneyItems: MoneyConstants.moneyItems
     data: [
     {
