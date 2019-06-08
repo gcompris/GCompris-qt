@@ -479,7 +479,7 @@ ActivityBase {
                 id: delegateItem
                 width: activityCellWidth - activitiesGrid.spacing
                 height: activityCellHeight - activitiesGrid.spacing
-                enabled: clickMode === "play" || currentLevel != ""
+                enabled: clickMode === "play" || dialogChooseLevel.hasConfigOrDataset
                 Rectangle {
                     id: activityBackground
                     width: parent.width
@@ -582,6 +582,7 @@ ActivityBase {
 
                 DialogChooseLevel {
                     id: dialogChooseLevel
+                    currentActivity: ActivityInfoTree.menuTree[index]
                     onClose: {
                         home()
                     }
@@ -615,7 +616,6 @@ ActivityBase {
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                     else {
-                        dialogChooseLevel.currentActivity = ActivityInfoTree.menuTree[index]
                         displayDialog(dialogChooseLevel);
                     }
                 }
