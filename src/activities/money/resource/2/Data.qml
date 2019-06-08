@@ -30,20 +30,6 @@ Dataset {
     data: [
     {
         "numberOfItem": 1,
-        "minPrice": 3,
-        "maxPrice": 10,
-        "pocket": [
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_PAPER_5E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_2E,
-            moneyItems.MONEY_COIN_1E
-        ]
-    },  
-    {
-        "numberOfItem": 1,
         "minPrice": 10,
         "maxPrice": 20,
         "pocket": [
@@ -127,7 +113,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 4,
+        "numberOfItem": 3,
         "minPrice": 20,
         "maxPrice": 30,
         "pocket": [
@@ -144,7 +130,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 5,
+        "numberOfItem": 4,
         "minPrice": 30,
         "maxPrice": 60,
         "pocket": [
@@ -163,7 +149,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 6,
+        "numberOfItem": 4,
         "minPrice": 60,
         "maxPrice": 100,
         "pocket": [

@@ -46,7 +46,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 1,
+        "numberOfItem": 2,
         "minPrice": 10,
         "maxPrice": 99,
         "paid": 100,
@@ -66,7 +66,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 2,
+        "numberOfItem": 3,
         "minPrice": 10,
         "maxPrice": 199,
         "paid": 200,
@@ -88,7 +88,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 2,
+        "numberOfItem": 1,
         "minPrice": 10,
         "maxPrice": 299,
         "paid": 300,
@@ -109,7 +109,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 3,
+        "numberOfItem": 2,
         "minPrice": 10,
         "maxPrice": 399,
         "paid": 400,
@@ -154,7 +154,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 3,
+        "numberOfItem": 1,
         "minPrice": 10,
         "maxPrice": 599,
         "paid": 600,
@@ -177,7 +177,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 3,
+        "numberOfItem": 2,
         "minPrice": 10,
         "maxPrice": 699,
         "paid": 700,
@@ -201,7 +201,7 @@ Dataset {
         ]
     },
     {
-        "numberOfItem": 4,
+        "numberOfItem": 3,
         "minPrice": 10,
         "maxPrice": 899,
         "paid": 1000,
