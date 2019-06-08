@@ -236,9 +236,9 @@ Window {
                         !properties.enterItem.isDialog)    // going into an activity then
                     playIntroVoice(properties.enterItem.activityInfo.name);    // play intro
 
-                // is this if needed?
-                //if (!properties.exitItem.isDialog ||       // if coming from menu or
-                //        properties.enterItem.alwaysStart)  // start signal enforced (for special case like transition from config-dialog to editor)
+                // Don't restart an activity if you click on help
+                if (!properties.exitItem.isDialog ||       // if coming from menu or
+                    properties.enterItem.alwaysStart)  // start signal enforced (for special case like transition from config-dialog to editor)
                     properties.enterItem.start();
 
                 if(properties.name === "pushTransition") {

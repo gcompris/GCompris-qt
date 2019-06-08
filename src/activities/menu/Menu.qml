@@ -591,6 +591,10 @@ ActivityBase {
                     }
                     onStartActivity: {
                         clickMode = "play"
+                        // immediately pop the Dialog to load the activity
+                        // if we don't do it immediately the page is busy
+                        // and it does not load the activity
+                        pageView.pop({immediate: true})
                         selectCurrentItem()
                     }
                 }
