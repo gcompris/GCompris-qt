@@ -237,6 +237,9 @@ ActivityBase {
                     items.mode = activityData["mode"];
                 }
             }
+            onStartActivity: {
+                background.start()
+            }
         }
 
         ChooseDiceBar {

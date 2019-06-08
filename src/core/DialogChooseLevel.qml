@@ -63,7 +63,13 @@ Rectangle {
     property var activityData
     onActivityDataChanged: loadData()
     /// @endcond
-    
+
+    /**
+     * By default, we display configuration (this avoids to add code in each 
+     * activity to set it by default).
+     */
+    property bool displayDatasetAtStart: !hasConfig
+
     /**
      * Emitted when the config dialog has been closed.
      */
@@ -114,6 +120,14 @@ Rectangle {
                 objectiveLoader.dataFiles.push({"level": currentActivity.levels[level], "file": "qrc:/gcompris/src/activities/"+activityName+"/resource/"+currentActivity.levels[level]+"/Data.qml"})
             }
             objectiveLoader.start()
+        }
+
+        // Defaults to config if in an activity else to dataset if in menu
+        if(displayDatasetAtStart) {
+            datasetVisibleButton.clicked()
+        }
+        else {
+             optionsVisibleButton.clicked()
         }
     }
 
