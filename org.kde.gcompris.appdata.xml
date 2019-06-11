@@ -411,6 +411,7 @@
       <caption xml:lang="fi">GComprisin päävalikko</caption>
       <caption xml:lang="fr">Menu principal de GCompris</caption>
       <caption xml:lang="gl">Menú principal de GCompris</caption>
+      <caption xml:lang="id">Menu utama GCompris</caption>
       <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="ml">ജികോംപ്രി പ്രധാന മെനു</caption>
       <caption xml:lang="nl">GCompris-hoofdmenu</caption>
@@ -437,6 +438,7 @@
       <caption xml:lang="fi">”Napsauta suuraakkosta” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
       <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
+      <caption xml:lang="id">Aktivitas "Klik pada huruf kapital"</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ml">"ഒരു വലിയ അക്ഷരത്തിൽ ക്ലിക്ക് ചെയ്യുക" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">"Click op een hoofdletter" activiteit</caption>
@@ -463,6 +465,7 @@
       <caption xml:lang="fi">”Kellon oppiminen” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
       <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
+      <caption xml:lang="id">Aktivitas "Mempelajari Jam"</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ml">"സമയം പഠിക്കൽ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Leren klok kijken</caption>
@@ -489,6 +492,7 @@
       <caption xml:lang="fi">”Värien sekoitus” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Mélange de la couleur de peinture »</caption>
       <caption xml:lang="gl">Actividade de «Mesturar a cor da pintura»</caption>
+      <caption xml:lang="id">Aktivitas "Mencampur warna cat"</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ml">"ചായത്തിൻ്റെ നിറങ്ങൾ കൂട്ടിക്കലർത്താം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Verfkleuren mengen"</caption>
@@ -515,6 +519,7 @@
       <caption xml:lang="fi">”Värit”-toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
       <caption xml:lang="gl">Actividade de «Cores»</caption>
+      <caption xml:lang="id">Aktivitas "Mewarnai"</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ml">"നിറങ്ങൾ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Kleuren"</caption>
@@ -541,6 +546,7 @@
       <caption xml:lang="fi">”Rakenna sama malli” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
       <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
+      <caption xml:lang="id">Aktivitas "Bangun model yang sama"</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ml">"മാതൃക പോലെ നിർമ്മിക്കുക " പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Bouw hetzelfde model"</caption>
@@ -567,6 +573,7 @@
       <caption xml:lang="fi">”Laske kohteet” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
       <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
+      <caption xml:lang="id">Aktivitas "Menghitung benda"</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ml">"എത്രയെണ്ണം?" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Tel het aantal items"</caption>
@@ -592,6 +599,7 @@
       <caption xml:lang="eu">"Hamabosteko jokoa" jarduera</caption>
       <caption xml:lang="fr">L'activité « Le jeu du taquin »</caption>
       <caption xml:lang="gl">Actividade de «O xogo dos quince»</caption>
+      <caption xml:lang="id">Aktivitas "Permainan lima belas"</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ml">"പതിനഞ്ചിന്റെ കളി" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Het vijftien-spel"</caption>
@@ -617,6 +625,7 @@
       <caption xml:lang="eu">"Hexagonoa" jarduera</caption>
       <caption xml:lang="fr">L'activité « Localiser la fraise »</caption>
       <caption xml:lang="gl">Actividade de «Hexágono»</caption>
+      <caption xml:lang="id">Aktivitas "Segi Enam"</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ml">"ഷഡ്ഭുജം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Hexagon"</caption>
@@ -643,6 +652,7 @@
       <caption xml:lang="fi">”Tasapainota vaaka oikein” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
       <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma axeitada»</caption>
+      <caption xml:lang="id">Aktivitas "Seimbangkan timbangan"</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ml">"തട്ടുകളിലെ തൂക്കമൊപ്പിക്കൂ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Breng de weegschaal in evenwicht"</caption>
@@ -669,6 +679,7 @@
       <caption xml:lang="fi">”Šakin loppupeli” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Le jeu des échecs »</caption>
       <caption xml:lang="gl">Actividade de «Final dunha partida de xadrez»</caption>
+      <caption xml:lang="id">Aktivitas "Akhir dari permainan catur"</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ml">"ചെസ്സു കളിയുടെ അവസാനം" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Eindspel van schaken"</caption>
@@ -694,6 +705,7 @@
       <caption xml:lang="eu">"Bloke irristagarrien puzzle joko bat" jarduera</caption>
       <caption xml:lang="fr">L'activité « Sortir la voiture du parking »</caption>
       <caption xml:lang="gl">Actividade de «Un crebacabezas de bloques que se moven»</caption>
+      <caption xml:lang="id">Aktivitas "Permainan teka-teki menggeser balok"</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ml">"വഴി കണ്ടെത്തൽ" പ്രവർത്തനം</caption>
       <caption xml:lang="nl">Activiteit "Een puzzel met schuivende blokken"</caption>
