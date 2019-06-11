@@ -498,7 +498,9 @@ Item {
                         onExited: parent.scale = 1.0
                         onClicked: {
                             console.log(itemName)
-                            activeToolIconSource = img.source
+                            if (root.activePanel == "toolsPanel"){
+                                activeToolIconSource = img.source;
+                            }
                             Activity.selectTool(itemName)
                             foldAnimation.start()
                         }

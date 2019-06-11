@@ -91,8 +91,9 @@ function initLevel() {
 
 function resetCanvas() {
 // clear all drawings from the board
-    items.backgroundColor = "#ffffff"
     ctx.clearRect(0, 0, items.canvas.width, items.canvas.height);
+    ctx.fillStyle = items.backgroundColor;
+    ctx.fillRect(0, 0, items.canvas.width, items.canvas.height);
 }
 
 function preserveImage() {
