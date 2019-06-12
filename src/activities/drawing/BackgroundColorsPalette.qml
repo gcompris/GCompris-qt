@@ -69,7 +69,6 @@ Rectangle {
                 onClicked: {
                     items.backgroundColor = root.color
                     items.backgroundColorPalette.visible = false
-                    Activity.selectTool("Erase all")
                 }
             }
         }
