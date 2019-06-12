@@ -125,7 +125,6 @@ ActivityBase {
             property bool nothingChanged: true
             property bool widthHeightChanged: false
             property bool mainAnimationOnX: true
-            property bool undoRedo: false
             property bool eraserMode: false
             property int sizeS: 2
             property int index: 0
@@ -544,7 +543,6 @@ ActivityBase {
                             print("resetting redo array!")
                             Activity.redo = []
                         }
-                        Activity.redoMode = false
                     }
 
                     onPositionChanged: {

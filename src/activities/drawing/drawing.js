@@ -51,7 +51,6 @@ var ctx
 
 var points = []
 var connectedPoints = []
-var redoMode = false
 
 function start(items_) {
     items = items_
@@ -87,6 +86,9 @@ function initLevel() {
     items.background.started = true
 
     items.background.hideExpandedTools()
+    
+    //add empty undo item to restore empty canvas
+    undo = undo.concat(items.canvas.toDataURL())
 }
 
 function resetCanvas() {
@@ -283,6 +285,38 @@ function previousLevel() {
     initLevel()
 }
 
+function undoAction() {
+    if(undo.length > 1) {
+        var temp = undo.pop()
+        redo = redo.concat(temp)
+        items.urlImage = undo[undo.length - 1]
+        items.canvas.ctx.globalCompositeOperation = 'source-over'
+        ctx = items.canvas.getContext("2d")
+        ctx.clearRect(0, 0, items.background.width, items.background.height)
+        ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
+        items.canvas.requestPaint()
+    }
+    else {
+        console.log("Undo array Empty!")
+    }
+}
+
+function redoAction() {
+    items.background.hideExpandedTools()
+    if(redo.length > 0) {
+        items.urlImage = redo.pop()
+        ctx = items.canvas.getContext("2d")
+        ctx.clearRect(0, 0, items.background.width, items.background.height)
+        ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
+        items.canvas.requestPaint()
+        undo = undo.concat(items.urlImage)
+        console.log("undo length: " + undo.length)
+    }
+    else {
+        console.log("Redo array Empty!")
+    }
+}
+
 
 function selectTool(toolName) {
     console.log("Clicked on " + toolName)
@@ -322,45 +356,11 @@ function selectTool(toolName) {
         items.inputText.text = ""
     }
     else if(toolName === "Undo") {
-        items.background.hideExpandedTools()
-        if(undo.length > 1 ) {
-            var temp = undo.pop()
-            redo = redo.concat(temp)
-            if(redoMode) {
-                items.urlImage = temp
-            }
-            else {
-                items.urlImage = undo[undo.length - 1]
-            }
-            items.canvas.ctx.globalCompositeOperation = 'source-over'
-            ctx = items.canvas.getContext("2d")
-            ctx.clearRect(0, 0, items.background.width, items.background.height)
-            ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
-            items.canvas.requestPaint()
-        }
-        else {
-            console.log("Undo array Empty!")
-        }
+        items.background.hideExpandedTools();
+        undoAction();
     }
     else if(toolName === "Redo") {
-        items.background.hideExpandedTools()
-        if(redo.length > 0) {
-            redoMode = true
-            items.urlImage = redo.pop()
-            ctx = items.canvas.getContext("2d")
-            ctx.clearRect(0, 0, items.background.width, items.background.height)
-            ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
-            items.canvas.requestPaint()
-            undo = undo.concat(items.urlImage)
-            console.log("undo length: " + undo.length)
-
-            if(redo.length == 0) {
-                redoMode = false
-            }
-        }
-        else {
-            console.log("Redo array Empty!")
-        }
+        redoAction();
     }
     else if(toolName === "Load") {
         if (items.load.opacity == 0)
