@@ -89,18 +89,20 @@ function initLevel() {
 
 function resetCanvas() {
 // clear all drawings from the board
-    ctx = items.canvas.getContext("2d")
-    ctx.globalAlpha = 1
+    ctx = items.canvas.getContext("2d");
+    ctx.globalAlpha = 1;
     ctx.fillStyle = items.backgroundColor;
     ctx.fillRect(0, 0, items.canvas.width, items.canvas.height);
-    items.canvas.requestPaint()
+    items.canvas.requestPaint();
 }
 
 function preserveImage() {
     // if the width/height is changed, the drawing is reset and repainted the last image saved
-    ctx = items.canvas.getContext("2d")
-    ctx.clearRect(0, 0, items.background.width, items.background.height)
-    ctx.drawImage(items.lastUrl, 0, 0)
+    ctx = items.canvas.getContext("2d");
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = items.backgroundColor;
+    ctx.fillRect(0, 0, items.background.width, items.background.height);
+    ctx.drawImage(items.lastUrl, 0, 0);
 }
 
 function getPattern() {
