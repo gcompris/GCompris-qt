@@ -286,6 +286,7 @@ function previousLevel() {
 }
 
 function undoAction() {
+    items.background.hideExpandedTools();
     if(undo.length > 1) {
         var temp = undo.pop()
         redo = redo.concat(temp)
@@ -356,7 +357,6 @@ function selectTool(toolName) {
         items.inputText.text = ""
     }
     else if(toolName === "Undo") {
-        items.background.hideExpandedTools();
         undoAction();
     }
     else if(toolName === "Redo") {

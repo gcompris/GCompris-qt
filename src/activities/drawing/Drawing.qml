@@ -31,11 +31,11 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
-
+    
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: items.backgroundColor
+        color: "#cacaca"
         signal start
         signal stop
 
@@ -219,14 +219,6 @@ ActivityBase {
             TextInputTool {
                 id: inputTextFrame
             }
-
-            //Rectangle {
-            //                id: canvasBackground
-            //                z: 1
-            //                anchors.fill: parent
-            //                anchors.margins: 8
-
-            //                color: "green"
 
             Canvas {
                 id: canvas
