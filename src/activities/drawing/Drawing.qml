@@ -544,20 +544,15 @@ ActivityBase {
                         canvas.ctx = canvas.getContext('2d')
                         canvas.ctx.globalCompositeOperation = 'source-over'
 
-                        canvas.ctx.strokeStyle = items.eraserMode ? Qt.rgba(0, 0, 0, 1) :
+                        canvas.ctx.strokeStyle = items.eraserMode ? items.backgroundColor :
                                                                     items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
                                                                                                       items.toolSelected == "brush4" ? "black" :
                                                                                                                                        items.paintColor
 
                         if(items.eraserMode) {
-                            canvas.ctx.globalCompositeOperation = 'destination-out'
-                            canvas.ctx.fillStyle = Qt.rgba(0, 0, 0, 1)
+                            canvas.ctx.fillStyle = items.backgroundColor
                         }
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
-                            if(items.toolSelected === "eraser") {
-                                canvas.ctx.globalCompositeOperation = 'destination-out'
-                            }
-
                             canvas.removeShadow()
                             canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.lineWidth = items.toolSelected == "eraser" ?
