@@ -161,13 +161,12 @@ Item {
         anchors.top: toolsTipSize.bottom
         anchors.horizontalCenter: toolsTipSize.horizontalCenter
         anchors.topMargin: 30
-        value: 1.0
-        minimumValue: 0.0
-        maximumValue: 1.0
+        value: 1
+        minimumValue: 0
+        maximumValue: 1
         stepSize: 0.1
         onValueChanged: {
             items.globalOpacityValue = value
-            items.canvas.getContext('2d').globalAlpha = value
         }
     }
 

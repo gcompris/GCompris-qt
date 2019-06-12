@@ -382,6 +382,9 @@ ActivityBase {
                         mappedMouse = mapToItem(parent, mouseX, mouseY)
 
                         print("tools: ",items.toolSelected)
+                        
+                        //always make sure that alpha is set to slider value for tools actions
+                        canvas.ctx.globalAlpha = items.globalOpacityValue
 
                         if (items.toolSelected == "rectangle" || items.toolSelected == "circle" || items.toolSelected == "lineShift") {
                             // set the origin coordinates for current shape

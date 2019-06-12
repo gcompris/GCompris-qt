@@ -71,31 +71,29 @@ function initLevel() {
     undo = []
     redo = []
 
-    ctx = items.canvas.getContext("2d")
-    items.globalOpacityValue = 1
-    resetCanvas()
-
-    items.foldablePanels.toolsMode.opacitySliderValue = items.globalOpacityValue
-    items.canvas.requestPaint()
+    //ctx = items.canvas.getContext("2d")
 
     //load saved paintings from file
     parseImageSaved()
     items.gridView2.model = dataset
 
     getPattern()
+    
     items.background.started = true
-
     items.background.hideExpandedTools()
     
+    resetCanvas()
     //add empty undo item to restore empty canvas
     undo = undo.concat(items.canvas.toDataURL())
 }
 
 function resetCanvas() {
 // clear all drawings from the board
-    ctx.clearRect(0, 0, items.canvas.width, items.canvas.height);
+    ctx = items.canvas.getContext("2d")
+    ctx.globalAlpha = 1
     ctx.fillStyle = items.backgroundColor;
     ctx.fillRect(0, 0, items.canvas.width, items.canvas.height);
+    items.canvas.requestPaint()
 }
 
 function preserveImage() {
@@ -293,7 +291,9 @@ function undoAction() {
         items.urlImage = undo[undo.length - 1]
         items.canvas.ctx.globalCompositeOperation = 'source-over'
         ctx = items.canvas.getContext("2d")
-        ctx.clearRect(0, 0, items.background.width, items.background.height)
+        //always set alpha to 1
+        ctx.globalAlpha = 1
+        //ctx.clearRect(0, 0, items.background.width, items.background.height)
         ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
         items.canvas.requestPaint()
     }
@@ -307,7 +307,9 @@ function redoAction() {
     if(redo.length > 0) {
         items.urlImage = redo.pop()
         ctx = items.canvas.getContext("2d")
-        ctx.clearRect(0, 0, items.background.width, items.background.height)
+        //always set alpha to 1
+        ctx.globalAlpha = 1
+        //ctx.clearRect(0, 0, items.background.width, items.background.height)
         ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
         items.canvas.requestPaint()
         undo = undo.concat(items.urlImage)
