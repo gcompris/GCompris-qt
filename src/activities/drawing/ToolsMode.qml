@@ -126,7 +126,6 @@ Item {
                 anchors.fill: parent
                 onClicked: {
                     if(modes.model !== stampsModel) {
-                        items.foldablePanels.activeToolIconSource = imgSource
                         items.toolSelected = name
                         items.lastToolSelected = name
                         background.hideExpandedTools()
