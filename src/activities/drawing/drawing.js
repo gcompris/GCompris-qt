@@ -56,8 +56,8 @@ function start(items_) {
     items = items_
     currentLevel = 0
     items.toolSelected = "pencil"
-    items.paintColor = items.selectedColor
     initLevel()
+    items.foldablePanels.colorUpdate()
 }
 
 function stop() {
