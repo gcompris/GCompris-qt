@@ -265,13 +265,18 @@ ActivityBase {
                     z: -1
                     opacity: items.globalOpacityValue
                     visible: items.toolSelected === "stamp"
-                    onSourceChanged: items.toolsMode.activeStampDimensionRatio = sourceSize.width / sourceSize.height
+                    onSourceChanged: {
+                        items.toolsMode.activeStampDimensionRatio = sourceSize.width / sourceSize.height
+                        items.canvas.loadImage(items.toolsMode.activeStampImageSource)
+                    }
                 }
 
                 onImageLoaded: {
                     // load images from files
-                    if (items.urlImage != "") {
-                        canvas.ctx.clearRect(0, 0, items.background.width, items.background.height)
+                    if (items.toolSelected != "stamp" && items.urlImage != "") {
+                        canvas.ctx.globalAlpha(1)
+                        canvas.ctx.fillStyle(items.backgroundColor)
+                        canvas.ctx.fillRect(0, 0, items.background.width, items.background.height)
                         canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
                         //                        if (items.loadSavedImage) {
                         //                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
@@ -287,14 +292,7 @@ ActivityBase {
                         items.mainAnimationOnX = true
                         items.urlImage = ""
 
-                        // undo and redo
-                    } /*else if (items.undoRedo) {
-                        ctx.drawImage(items.urlImage,0,0)
-                        requestPaint()
-                        items.lastUrl = canvas.url
-                        //unloadImage(items.urlImage)
-                        items.undoRedo = false
-                    }*/
+                    }
                 }
 
                 function resetShape () {
@@ -422,7 +420,7 @@ ActivityBase {
                         } else if (items.toolSelected == "eraser") {
                             canvas.lastX = mouseX
                             canvas.lastY = mouseY
-                            canvas.ctx.strokeStyle = "#ffefff"
+                            canvas.ctx.strokeStyle = "#ffffff"
                         } else if (items.toolSelected == "pencil") {
                             canvas.lastX = mouseX
                             canvas.lastY = mouseY
@@ -431,7 +429,7 @@ ActivityBase {
                             canvas.lastY = mouseY
                             canvas.lastPoint = { x: mouseX, y: mouseY }
                         } else if (items.toolSelected == "brush4") {
-                            canvas.ctx.strokeStyle = "#ffefff"
+                            canvas.ctx.strokeStyle = "#ffffff"
                             Activity.points.push({x: mouseX, y: mouseY})
                         } else if (items.toolSelected == "brush5") {
                             Activity.connectedPoints.push({x: mouseX, y: mouseY})
@@ -821,6 +819,7 @@ ActivityBase {
                         }
 
                         if(items.toolSelected === "stamp") {
+                            canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.drawImage(items.toolsMode.activeStampImageSource, stampGhostImage.x, stampGhostImage.y,
                                                  stampGhostImage.width, stampGhostImage.height)
                             canvas.requestPaint()

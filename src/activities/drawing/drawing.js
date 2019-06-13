@@ -412,6 +412,7 @@ function selectTool(toolName) {
         items.stampGhostImage.z = 1500
         items.stampGhostImage.x = items.area.realMouseX
         items.stampGhostImage.y = items.area.realMouseY
+        items.canvas.loadImage(items.toolsMode.activeStampImageSource)
     }
 
     else if(toolName === "Brush") {
