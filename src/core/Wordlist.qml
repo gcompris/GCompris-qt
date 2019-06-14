@@ -98,21 +98,22 @@ Item {
     signal error(string msg);
 
     /**
+     * Load Wordlist from JSON Object.
+     *
+     * @param type:object levels to load wordlist from.
+     */
+    function loadFromJSON(levels) {
+        wordList = {levels: levels};
+        maxLevel = wordList.levels.length;
+        return wordList;
+    }
+
+    /**
      * Load Wordlist from file @p fname.
      *
      * @param type:string fname Filename to load wordlist from.
      */
-    function loadFromFile(fname, levels) {
-
-        // If levels are provided explicitly as function parameter, use them as wordlist
-        if(levels !== undefined) {
-            var levelsObject = {levels: levels}
-            wordList = levelsObject;
-            maxLevel = wordList.levels.length;
-            return wordList;
-        }
-
-        // Otherwise load wordlist from file
+    function loadFromFile(fname) {
         filename = fname;
         var from;
         maxLevel = 0
