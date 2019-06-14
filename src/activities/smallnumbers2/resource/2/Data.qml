@@ -24,6 +24,7 @@ import "../../../../core"
 
 Dataset {
     objective: qsTr("Select number on dice up to 7")
+    difficulty: 2
     data: [
       {
          "level" : "1",
