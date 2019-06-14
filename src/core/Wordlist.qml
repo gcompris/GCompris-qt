@@ -102,7 +102,17 @@ Item {
      *
      * @param type:string fname Filename to load wordlist from.
      */
-    function loadFromFile(fname) {
+    function loadFromFile(fname, levels) {
+
+        // If levels are provided explicitly as function parameter, use them as wordlist
+        if(levels !== undefined) {
+            var levelsObject = {levels: levels}
+            wordList = levelsObject;
+            maxLevel = wordList.levels.length;
+            return wordList;
+        }
+
+        // Otherwise load wordlist from file
         filename = fname;
         var from;
         maxLevel = 0
