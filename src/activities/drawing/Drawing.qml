@@ -274,8 +274,8 @@ ActivityBase {
                 onImageLoaded: {
                     // load images from files
                     if (items.toolSelected != "stamp" && items.urlImage != "") {
-                        canvas.ctx.globalAlpha(1)
-                        canvas.ctx.fillStyle(items.backgroundColor)
+                        canvas.ctx.globalAlpha = 1
+                        canvas.ctx.fillStyle = items.backgroundColor
                         canvas.ctx.fillRect(0, 0, items.background.width, items.background.height)
                         canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
                         //                        if (items.loadSavedImage) {
