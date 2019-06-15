@@ -23,7 +23,7 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Select number on dice up to 4")
+    objective: qsTr("Select number on dominoes up to 4")
     difficulty: 1
     data: [
       {
