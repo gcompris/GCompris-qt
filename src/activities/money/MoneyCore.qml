@@ -62,7 +62,7 @@ ActivityBase {
             property alias bonus: bonus
             property int itemIndex
             property int pocketRows
-            property var verticalOrientation: background.height > background.width
+            property var verticalOrientation: background.height > background.width - bar.height
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
@@ -138,7 +138,7 @@ ActivityBase {
                             id: tuxMoney
                             Image {
                                 source: modelData.img
-                                sourceSize.height:  columnLayout.itemStoreHeight * 0.4
+                                sourceSize.height:  columnLayout.itemStoreHeight * 0.3
                                 x: tux.x + index * 50
                                 y: tux.y + tux.height / 2 + index * 20
                             }
