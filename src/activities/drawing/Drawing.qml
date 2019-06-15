@@ -337,10 +337,22 @@ ActivityBase {
                 onPaint: {
                     canvas.ctx = getContext('2d')
                 }
+                
+                MouseArea {
+                    id: areaSafe
+                    anchors.fill: parent
+                    enabled: items.foldablePanels.activePanel != "null"
+                    
+                    onClicked: {
+                        items.foldablePanels.foldAnimation.start()
+                        items.foldablePanels.activePanel = "null"
+                    }
+                }
 
                 MouseArea {
                     id: area
                     anchors.fill: parent
+                    enabled: !areaSafe.enabled
 
                     hoverEnabled: items.toolSelected === "text" || items.toolSelected === "stamp"
                     property var mappedMouse: mapToItem(parent, mouseX, mouseY)
