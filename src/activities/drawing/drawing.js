@@ -408,11 +408,10 @@ function selectTool(toolName) {
         items.toolSelected = "stamp"
         items.lastToolSelected = "stamp"
         items.toolsMode.modesModel = items.toolsMode.stampsModel
-        items.stampGhostImage.opacity = 0.5
         items.stampGhostImage.z = 1500
         items.stampGhostImage.x = items.area.realMouseX
         items.stampGhostImage.y = items.area.realMouseY
-        items.canvas.loadImage(items.toolsMode.activeStampImageSource)
+        items.canvas.loadImage(items.stampGhostImage.source)
     }
 
     else if(toolName === "Brush") {
