@@ -47,10 +47,6 @@ Item {
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/filesaveas.svg" }
         ListElement { itemName: qsTr("Load")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/fileopen.svg" }
-        ListElement { itemName: qsTr("Undo")
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/undo.svg" }
-        ListElement { itemName: qsTr("Redo")
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/redo.svg" }
         ListElement { itemName: qsTr("Erase all")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/empty.svg" }
         ListElement { itemName: qsTr("Background color")
