@@ -488,8 +488,8 @@ Item {
                 Image {
                     id: img
                     source: imgSource
-                    sourceSize.width: menuGrid.cellWidth * 0.60
                     sourceSize.height: menuGrid.cellHeight * 0.60
+                    fillMode: Image.PreserveAspectFit
 
                     MouseArea {
                         anchors.fill: parent
