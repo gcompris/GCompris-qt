@@ -832,8 +832,10 @@ ActivityBase {
 
                         if(items.toolSelected === "stamp") {
                             canvas.ctx = canvas.getContext('2d')
-                            canvas.ctx.drawImage(stampGhostImage.source, stampGhostImage.x, stampGhostImage.y,
-                                                 stampGhostImage.width, stampGhostImage.height)
+                            canvas.ctx.drawImage(stampGhostImage.source,
+                                                 stampGhostImage.x + (stampGhostImage.width-stampGhostImage.paintedWidth) / 2,
+                                                 stampGhostImage.y + (stampGhostImage.height-stampGhostImage.paintedHeight) / 2,
+                                                 stampGhostImage.paintedWidth, stampGhostImage.paintedHeight)
                             canvas.requestPaint()
                             activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                         }
