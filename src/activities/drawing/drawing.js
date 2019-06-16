@@ -290,19 +290,17 @@ function pushToUndo() {
     items.urlImage = items.canvas.toDataURL()
     items.lastUrl = items.urlImage
     undo = undo.concat(items.urlImage)
-    console.log("undo length: " + undo.length)
 }
 
 function resetRedo() {
     if (redo.length > 0) {
         print("resetting redo array!")
         redo = []
-        redo = redo.concat(items.canvas.toDataURL())
     }
 }
 
 function undoAction() {
-    if(undo.length > 0) {
+    if(undo.length > 1) {
         items.undoLock = true
         redo = redo.concat(undo.pop())
         items.urlImage = undo[undo.length - 1]
@@ -323,12 +321,13 @@ function redoAction() {
     if(redo.length > 0) {
         items.undoLock = true
         items.urlImage = redo.pop()
+        items.lastUrl = items.urlImage
         ctx = items.canvas.getContext("2d")
         //always set alpha to 1
         ctx.globalAlpha = 1
         ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
+        undo = undo.concat(items.urlImage)
         items.canvas.requestPaint()
-        pushToUndo()
         console.log("undo length: " + undo.length)
     }
     else {
