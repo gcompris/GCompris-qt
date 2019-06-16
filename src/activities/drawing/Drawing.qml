@@ -126,6 +126,7 @@ ActivityBase {
             property bool widthHeightChanged: false
             property bool mainAnimationOnX: true
             property bool eraserMode: false
+            property bool undoLock: false
             property int sizeS: 2
             property int index: 0
             property real globalOpacityValue: 1
@@ -272,26 +273,25 @@ ActivityBase {
                 }
 
                 onImageLoaded: {
-                    // load images from files
-                    if (items.toolSelected != "stamp" && items.urlImage != "") {
+                    // rules when calling loadImage, which happens in various cases (load stamp image, load undo and redo, load file...)
+                    if (items.undoLock == true) {
+                        canvas.ctx.globalAlpha = 1
+                        canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
+                        requestPaint()
+                        items.undoLock = false
+                    } else if (items.toolSelected != "stamp" && items.urlImage != "") {
                         canvas.ctx.globalAlpha = 1
                         canvas.ctx.fillStyle = items.backgroundColor
                         canvas.ctx.fillRect(0, 0, items.background.width, items.background.height)
                         canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
-                        //                        if (items.loadSavedImage) {
-                        //                            canvas.ctx.drawImage(canvas.url, 0, 0, canvas.width, canvas.height)
-                        //                        } else {
-                        //                            canvas.ctx.drawImage(canvas.url, canvas.width / 2 - canvas.height / 2, 0, canvas.height, canvas.height)
-                        //                        }
 
                         // mark the loadSavedImage as finished
-                        items.loadSavedImage = false
+                        //  items.loadSavedImage = false
                         requestPaint()
-                        items.lastUrl = items.urlImage//canvas.url
-                        //unloadImage(items.urlImage)
+                        //  items.lastUrl = items.urlImage//canvas.url
+                        //  unloadImage(items.urlImage)
                         items.mainAnimationOnX = true
-                        items.urlImage = ""
-
+                        //  items.urlImage = ""
                     }
                 }
 
@@ -537,16 +537,10 @@ ActivityBase {
 
                         if (items.toolSelected == "brush5")
                             Activity.connectedPoints = []
-
-
-                        // push the state of the current board on UNDO stack
-                        items.urlImage = canvas.toDataURL()
-                        items.lastUrl = items.urlImage
-                        Activity.undo = Activity.undo.concat(items.urlImage)
-
-                        if (Activity.redo.length != 0) {
-                            print("resetting redo array!")
-                            Activity.redo = []
+                            
+                        if (items.toolSelected != "stamp" && items.toolSelected != "fill") {
+                            Activity.pushToUndo()
+                            Activity.resetRedo()
                         }
                     }
 
@@ -824,13 +818,13 @@ ActivityBase {
                     }
 
                     onClicked: {
-                        if (items.toolSelected == "fill") {
+                        if (items.toolSelected === "fill") {
                             canvas.startX = mouseX
                             canvas.startY = mouseY
                             Activity.paintBucket()
-                        }
-
-                        if(items.toolSelected === "stamp") {
+                            Activity.pushToUndo()
+                            Activity.resetRedo()
+                        }else if(items.toolSelected === "stamp") {
                             canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.drawImage(stampGhostImage.source,
                                                  stampGhostImage.x + (stampGhostImage.width-stampGhostImage.paintedWidth) / 2,
@@ -838,6 +832,9 @@ ActivityBase {
                                                  stampGhostImage.paintedWidth, stampGhostImage.paintedHeight)
                             canvas.requestPaint()
                             activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                            Activity.pushToUndo()
+                            Activity.resetRedo()
+                            console.log("stamp clicked...")
                         }
                     }
                 }

@@ -285,19 +285,34 @@ function previousLevel() {
     initLevel()
 }
 
+function pushToUndo() {
+    // push the state of the current board on UNDO stack
+    items.urlImage = items.canvas.toDataURL()
+    items.lastUrl = items.urlImage
+    undo = undo.concat(items.urlImage)
+    console.log("undo length: " + undo.length)
+}
+
+function resetRedo() {
+    if (redo.length > 0) {
+        print("resetting redo array!")
+        redo = []
+        redo = redo.concat(items.canvas.toDataURL())
+    }
+}
+
 function undoAction() {
-    items.background.hideExpandedTools();
-    if(undo.length > 1) {
-        var temp = undo.pop()
-        redo = redo.concat(temp)
+    if(undo.length > 0) {
+        items.undoLock = true
+        redo = redo.concat(undo.pop())
         items.urlImage = undo[undo.length - 1]
         items.canvas.ctx.globalCompositeOperation = 'source-over'
         ctx = items.canvas.getContext("2d")
         //always set alpha to 1
         ctx.globalAlpha = 1
-        //ctx.clearRect(0, 0, items.background.width, items.background.height)
         ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
         items.canvas.requestPaint()
+        console.log("undo length: " + undo.length)
     }
     else {
         console.log("Undo array Empty!")
@@ -305,16 +320,15 @@ function undoAction() {
 }
 
 function redoAction() {
-    items.background.hideExpandedTools()
     if(redo.length > 0) {
+        items.undoLock = true
         items.urlImage = redo.pop()
         ctx = items.canvas.getContext("2d")
         //always set alpha to 1
         ctx.globalAlpha = 1
-        //ctx.clearRect(0, 0, items.background.width, items.background.height)
         ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
         items.canvas.requestPaint()
-        undo = undo.concat(items.urlImage)
+        pushToUndo()
         console.log("undo length: " + undo.length)
     }
     else {
