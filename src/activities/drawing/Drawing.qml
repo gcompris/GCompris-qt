@@ -120,6 +120,8 @@ ActivityBase {
             property color selectedColor: "#000000"
             property color backgroundColor: "#ffffff"
             property string urlImage
+            property int urlImageWidth
+            property int urlImageHeight
             property bool loadSavedImage: false
             property bool initSave: false
             property bool nothingChanged: true
@@ -132,7 +134,6 @@ ActivityBase {
             property real globalOpacityValue: 1
             property string toolSelected: "pencil"
             property string patternType: "dot"
-            property string lastUrl
             property string lastToolSelected: "pencil"
         }
 
@@ -276,7 +277,7 @@ ActivityBase {
                     // rules when calling loadImage, which happens in various cases (load stamp image, load undo and redo, load file...)
                     if (items.undoLock == true) {
                         canvas.ctx.globalAlpha = 1
-                        canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
+                        canvas.ctx.drawImage(items.urlImage, 0, 0, items.urlImageWidth, items.urlImageHeight)
                         requestPaint()
                         items.undoLock = false
                     } else if (items.toolSelected != "stamp" && items.urlImage != "") {
@@ -288,7 +289,6 @@ ActivityBase {
                         // mark the loadSavedImage as finished
                         //  items.loadSavedImage = false
                         requestPaint()
-                        //  items.lastUrl = items.urlImage//canvas.url
                         //  unloadImage(items.urlImage)
                         items.mainAnimationOnX = true
                         //  items.urlImage = ""

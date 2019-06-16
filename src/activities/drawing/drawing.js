@@ -40,7 +40,11 @@ var loadImagesSource = [
         ]
 
 var undo = []
+var undoWidth = []
+var undoHeight = []
 var redo = []
+var redoWidth = []
+var redoHeight = []
 
 var userFile = "file://" + GCompris.ApplicationInfo.getSharedWritablePath()
         + "/paint/" + "levels-user.json"
@@ -69,7 +73,11 @@ function initLevel() {
     connectedPoints = []
 
     undo = []
+    undoWidth = []
+    undoHeight = []
     redo = []
+    redoWidth = []
+    redoHeight = []
 
     //ctx = items.canvas.getContext("2d")
 
@@ -85,6 +93,8 @@ function initLevel() {
     resetCanvas()
     //add empty undo item to restore empty canvas
     undo = undo.concat(items.canvas.toDataURL())
+    undoWidth = undoWidth.concat(items.canvas.width)
+    undoHeight = undoHeight.concat(items.canvas.height)
 }
 
 function resetCanvas() {
@@ -102,7 +112,8 @@ function preserveImage() {
     ctx.globalAlpha = 1;
     ctx.fillStyle = items.backgroundColor;
     ctx.fillRect(0, 0, items.background.width, items.background.height);
-    ctx.drawImage(items.lastUrl, 0, 0);
+    ctx.drawImage(items.urlImage, 0, 0);
+    items.canvas.requestPaint()
 }
 
 function getPattern() {
@@ -288,14 +299,17 @@ function previousLevel() {
 function pushToUndo() {
     // push the state of the current board on UNDO stack
     items.urlImage = items.canvas.toDataURL()
-    items.lastUrl = items.urlImage
     undo = undo.concat(items.urlImage)
+    undoWidth = undoWidth.concat(items.canvas.width)
+    undoHeight = undoHeight.concat(items.canvas.height)
 }
 
 function resetRedo() {
     if (redo.length > 0) {
         print("resetting redo array!")
         redo = []
+        redoWidth = []
+        redoHeight = []
     }
 }
 
@@ -303,12 +317,18 @@ function undoAction() {
     if(undo.length > 1) {
         items.undoLock = true
         redo = redo.concat(undo.pop())
+        redoWidth = redoWidth.concat(undoWidth.pop())
+        redoHeight = redoHeight.concat(undoHeight.pop())
         items.urlImage = undo[undo.length - 1]
+        items.urlImageWidth = undoWidth[undoWidth.length - 1]
+        items.urlImageHeight = undoHeight[undoHeight.length -1]
         items.canvas.ctx.globalCompositeOperation = 'source-over'
         ctx = items.canvas.getContext("2d")
         //always set alpha to 1
         ctx.globalAlpha = 1
-        ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
+        ctx.fillStyle = items.backgroundColor
+        ctx.fillRect(0, 0, items.canvas.width, items.canvas.height)
+        ctx.drawImage(items.urlImage, 0, 0, items.urlImageWidth, items.urlImageHeight, 0, 0, items.urlImageWidth, items.urlImageHeight)
         items.canvas.requestPaint()
         console.log("undo length: " + undo.length)
     }
@@ -321,12 +341,15 @@ function redoAction() {
     if(redo.length > 0) {
         items.undoLock = true
         items.urlImage = redo.pop()
-        items.lastUrl = items.urlImage
+        items.urlImageWidth = redoWidth.pop()
+        items.urlImageHeight = redoHeight.pop()
         ctx = items.canvas.getContext("2d")
         //always set alpha to 1
         ctx.globalAlpha = 1
-        ctx.drawImage(items.urlImage, 0, 0, items.canvas.width, items.canvas.height)
+        ctx.drawImage(items.urlImage, 0, 0, items.urlImageWidth, items.urlImageHeight, 0, 0, items.urlImageWidth, items.urlImageHeight)
         undo = undo.concat(items.urlImage)
+        undoWidth = undoWidth.concat(items.urlImageWidth)
+        undoHeight = undoHeight.concat(items.urlImageHeight)
         items.canvas.requestPaint()
         console.log("undo length: " + undo.length)
     }
