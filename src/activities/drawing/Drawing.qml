@@ -142,6 +142,7 @@ ActivityBase {
             property string toolSelected: "pencil"
             property string patternType: "dot"
             property string lastToolSelected: "pencil"
+            property string toolCategory: "Brush"
         }
 
         JsonParser {
@@ -191,13 +192,6 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-
-        function hideExpandedTools () {
-            // hide the inputTextFrame
-            //            items.inputTextFrame.opacity = 0
-            //            items.inputTextFrame.z = -1
-            //            items.inputText.text = ""
         }
 
         Item {
@@ -385,17 +379,31 @@ ActivityBase {
 
                     property real realMouseX: mouseX
                     property real realMouseY: mouseY
+                    
+                    // functions for starting tools in onPressed:
+                    function startGeometric(selected){
+                        // set the origin coordinates for current shape
+                        currentShape.x = mapToItem(parent, mouseX, mouseY).x
+                        currentShape.y = mapToItem(parent, mouseX, mouseY).y
+                        originalX = currentShape.x
+                        originalY = currentShape.y
+                        
+                        // set the current color for the current shape
+                        currentShape.color = items.paintColor
+                        
+                        if (selected == "line")
+                            currentShape.height = items.sizeS
+                    }
+                    
+                    function initMouse() {
+                        canvas.lastX = mouseX
+                        canvas.lastY = mouseY
+                    }
 
                     onPressed: {
-                        if(items.foldablePanels.activePanel != "null") {
-                            items.foldablePanels.foldAnimation.start()
-                            items.foldablePanels.activePanel = "null"
-                        }
-
                         if (items.nothingChanged)
                             items.nothingChanged = false
 
-                        background.hideExpandedTools()
                         mappedMouse = mapToItem(parent, mouseX, mouseY)
 
                         print("tools: ",items.toolSelected)
@@ -403,49 +411,14 @@ ActivityBase {
                         //always make sure that alpha is set to slider value for tools actions
                         canvas.ctx.globalAlpha = items.globalOpacityValue
 
-                        if (items.toolSelected == "rectangle" || items.toolSelected == "circle" || items.toolSelected == "lineShift") {
-                            // set the origin coordinates for current shape
-                            currentShape.x = mapToItem(parent, mouseX, mouseY).x
-                            currentShape.y = mapToItem(parent, mouseX, mouseY).y
-
-                            originalX = currentShape.x
-                            originalY = currentShape.y
-
-                            // set the current color for the current shape
-                            currentShape.color = items.paintColor
-                        } else if (items.toolSelected == "line") {
-                            // set the origin coordinates for current shape
-                            currentShape.x = mapToItem(parent, mouseX, mouseY).x
-                            currentShape.y = mapToItem(parent, mouseX, mouseY).y
-
-                            originalX = currentShape.x
-                            originalY = currentShape.y
-
-                            currentShape.height = items.sizeS
-
-                            // set the current color for the current shape
-                            currentShape.color = items.paintColor
-                        } else if (items.toolSelected == "text") {
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
+                        if (items.toolCategory == "Geometric") {
+                            startGeometric(items.toolSelected)
                         } else if (items.toolSelected == "pattern") {
                             canvas.ctx.strokeStyle = "#ffffff"  // very important!
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
+                            initMouse()
                             Activity.points.push({x: mouseX, y: mouseY})
-                        } else if (items.toolSelected == "spray") {
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
-                        } else if (items.toolSelected == "eraser") {
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
-                            canvas.ctx.strokeStyle = "#ffffff"
-                        } else if (items.toolSelected == "pencil") {
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
                         } else if (items.toolSelected == "brush3") {
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
+                            initMouse()
                             canvas.lastPoint = { x: mouseX, y: mouseY }
                         } else if (items.toolSelected == "brush4") {
                             canvas.ctx.strokeStyle = "#ffffff"
@@ -453,12 +426,10 @@ ActivityBase {
                         } else if (items.toolSelected == "brush5") {
                             Activity.connectedPoints.push({x: mouseX, y: mouseY})
                         } else if (items.toolSelected == "blur") {
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
+                            initMouse()
                         } else {
-                            canvas.lastX = mouseX
-                            canvas.lastY = mouseY
-                            print("ON Pressed - tool not known")
+                            initMouse()
+                            print("ON Pressed - default tool init")
                         }
                     }
 
@@ -563,11 +534,9 @@ ActivityBase {
                     onPositionChanged: {
                         canvas.ctx = canvas.getContext('2d')
                         canvas.ctx.globalCompositeOperation = 'source-over'
-
-                        canvas.ctx.strokeStyle = items.eraserMode ? items.backgroundColor :
-                                                                    items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') :
-                                                                                                      items.toolSelected == "brush4" ? "black" :
-                                                                                                                                       items.paintColor
+                        
+                        tempCanvas.ctx.strokeStyle = items.eraserMode ? items.backgroundColor : items.selectedColor
+                        canvas.ctx.strokeStyle = items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') : items.paintColor
 
                         if(items.eraserMode) {
                             canvas.ctx.fillStyle = items.backgroundColor

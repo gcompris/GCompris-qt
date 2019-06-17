@@ -128,7 +128,6 @@ Item {
                     if(modes.model !== stampsModel) {
                         items.toolSelected = name
                         items.lastToolSelected = name
-                        background.hideExpandedTools()
                         console.log("Click on " + name)
 
                         // change the selectBrush tool

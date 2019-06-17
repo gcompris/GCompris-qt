@@ -95,7 +95,6 @@ function initLevel() {
     getPattern()
     
     items.background.started = true
-    items.background.hideExpandedTools()
     
     resetCanvas()
     //add empty undo item to restore empty canvas
@@ -375,12 +374,10 @@ function selectTool(toolName) {
         items.eraserMode = true
         items.toolSelected = "eraser"
         items.toolsMode.modesModel = items.toolsMode.pencilModes
-        items.background.hideExpandedTools()
         items.background.reloadSelectedPen()
     }
     else if(toolName === "Bucket fill") {
         items.toolSelected = "fill"
-        items.background.hideExpandedTools()
 
         // change the selectBrush tool
         items.timer.index = 0
@@ -390,7 +387,6 @@ function selectTool(toolName) {
     }
     else if(toolName === "Text") {
         items.toolSelected = "text"
-        items.background.hideExpandedTools()
         items.background.reloadSelectedPen()
 
         // make visible the inputTextFrame
@@ -409,8 +405,6 @@ function selectTool(toolName) {
     else if(toolName === "Load") {
         if (items.load.opacity == 0)
             items.load.opacity = 1
-
-        items.background.hideExpandedTools()
 
         // mark the pencil as the default tool
         items.toolSelected = "pencil"
@@ -443,7 +437,6 @@ function selectTool(toolName) {
     else if(toolName === "Geometric") {
         items.toolSelected = "rectangle"
         items.lastToolSelected = "rectangle"
-        items.background.hideExpandedTools()
         items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.geometricModes
     }
@@ -460,7 +453,6 @@ function selectTool(toolName) {
     else if(toolName === "Brush") {
         items.toolSelected = "pencil"
         items.lastToolSelected = "pencil"
-        items.background.hideExpandedTools()
         items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.pencilModes
     }

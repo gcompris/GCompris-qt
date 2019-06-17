@@ -34,7 +34,6 @@ Image {
         onClicked: {
             items.toolSelected = name
             items.lastToolSelected = name
-            background.hideExpandedTools()
 
             showSelected.x = toolItem.x + row2.spacing
             showSelected.y = toolItem.y + row2.spacing * 0.5

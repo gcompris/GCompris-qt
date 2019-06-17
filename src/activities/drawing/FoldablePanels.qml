@@ -500,6 +500,7 @@ Item {
                             console.log(itemName)
                             if (root.activePanel == "toolsPanel"){
                                 activeToolIconSource = img.source;
+                                items.toolCategory = itemName
                             }
                             Activity.selectTool(itemName)
                             foldAnimation.start()
@@ -554,7 +555,6 @@ Item {
                         colorPicker.updateColor((items.paintColor).toString())
                         root.colorUpdate()
                         background.reloadSelectedPen()
-                        background.hideExpandedTools()
                         foldAnimation.start()
                     }
                 }

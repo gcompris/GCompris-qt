@@ -51,7 +51,6 @@ Rectangle {
         hoverEnabled: true
 
         onClicked: {
-            background.hideExpandedTools()
             items.sizeS = parent.lineSize * 18
             print("frame.lineSize " + Math.floor(frame.lineSize * 15))
             print("items.sizeS: " + items.sizeS)
