@@ -2,6 +2,7 @@
  *
  * Copyright (C) 2016 Toncu Stefan <stefan.toncu29@gmail.com>
  *               2018 Amit Sagtani <asagtani06@gmail.com>
+ *               2019 Timothée Giet <animtim@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,7 +23,7 @@ ActivityInfo {
   name: "drawing/Drawing.qml"
   difficulty: 1
   icon: "drawing/drawing.svg"
-  author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
+  author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt; , Amit Sagtani &lt;asagtani06@gmail.com&gt; , Timothée Giet &lt;animtim@gmail.com&gt;"
   demo: true
   title: qsTr("Drawing")
   description: qsTr("Use the various drawing tools to create beautiful arts.")

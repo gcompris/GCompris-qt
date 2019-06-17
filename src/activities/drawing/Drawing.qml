@@ -1,7 +1,14 @@
 /* GCompris - Drawing.qml
  *
  * Copyright (C) 2016 Toncu Stefan <stefan.toncu29@gmail.com>
- *
+ *               2018 Amit Sagtani <asagtani06@gmail.com>
+ *               2019 Timothée Giet <animtim@gmail.com>
+ * 
+ * Authors:
+ *   Stefan Toncu <stefan.toncu29@gmail.com>
+ *   Amit Sagtani <asagtani06@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
+ * 
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
  *   the Free Software Foundation; either version 3 of the License, or
