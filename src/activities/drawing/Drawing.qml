@@ -476,6 +476,15 @@ ActivityBase {
                         // stop the text following the cursor
                         if (moveOnBoard.running)
                             moveOnBoard.stop()
+                            
+                        if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
+                            var tempImage = tempCanvas.ctx.getImageData(0, 0, tempCanvas.width, tempCanvas.height)
+                            canvas.ctx = canvas.getContext("2d")
+                            canvas.ctx.drawImage(tempImage, 0, 0)
+                            tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
+                            tempCanvas.requestPaint()
+                            canvas.requestPaint()
+                        }
 
                         if (items.toolSelected == "line") {
                             canvas.removeShadow()
@@ -565,19 +574,20 @@ ActivityBase {
                         }
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
                             canvas.removeShadow()
-                            canvas.ctx = canvas.getContext('2d')
-                            canvas.ctx.lineWidth = items.toolSelected == "eraser" ?
+                            tempCanvas.ctx = tempCanvas.getContext('2d')
+                            tempCanvas.ctx.globalAlpha = 1
+                            tempCanvas.ctx.lineWidth = items.toolSelected == "eraser" ?
                                         items.sizeS * 4 : items.sizeS
-                            canvas.ctx.lineCap = 'round'
-                            canvas.ctx.lineJoin = 'round'
-                            canvas.ctx.beginPath()
-                            canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
+                            tempCanvas.ctx.lineCap = 'round'
+                            tempCanvas.ctx.lineJoin = 'round'
+                            tempCanvas.ctx.beginPath()
+                            tempCanvas.ctx.moveTo(canvas.lastX, canvas.lastY)
                             canvas.lastX = area.mouseX
                             canvas.lastY = area.mouseY
-                            canvas.ctx.lineTo(canvas.lastX, canvas.lastY)
-                            canvas.ctx.stroke()
+                            tempCanvas.ctx.lineTo(canvas.lastX, canvas.lastY)
+                            tempCanvas.ctx.stroke()
 
-                            canvas.requestPaint()
+                            tempCanvas.requestPaint()
                         } else if (items.toolSelected == "rectangle") {
                             mappedMouse = mapToItem(parent, mouseX, mouseY)
                             var width = mappedMouse.x - area.originalX
@@ -886,6 +896,17 @@ ActivityBase {
         Canvas {
             id: shape
             opacity: 0
+        }
+        
+        Canvas {
+            id: tempCanvas
+            opacity: items.globalOpacityValue
+            width: parent.width
+            height: parent.height
+            scale: 1
+            x: 0
+            y: 0
+            property var ctx
         }
 
         FoldablePanels {
