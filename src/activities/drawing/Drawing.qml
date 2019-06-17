@@ -334,10 +334,6 @@ ActivityBase {
                     canvas.ctx.shadowOffsetX = 0
                     canvas.ctx.shadowOffsetY = 0
                 }
-
-                onPaint: {
-                    canvas.ctx = getContext('2d')
-                }
                 
                 MouseArea {
                     id: areaSafe
@@ -408,8 +404,14 @@ ActivityBase {
 
                         print("tools: ",items.toolSelected)
                         
+                        canvas.ctx = canvas.getContext("2d")
+                        tempCanvas.ctx = tempCanvas.getContext("2d")
+                        
                         //always make sure that alpha is set to slider value for tools actions
                         canvas.ctx.globalAlpha = items.globalOpacityValue
+                        
+                        canvas.ctx.strokeStyle = items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') : items.paintColor
+                        tempCanvas.ctx.strokeStyle = items.eraserMode ? items.backgroundColor : items.paintColor
 
                         if (items.toolCategory == "Geometric") {
                             startGeometric(items.toolSelected)
@@ -425,8 +427,6 @@ ActivityBase {
                             Activity.points.push({x: mouseX, y: mouseY})
                         } else if (items.toolSelected == "brush5") {
                             Activity.connectedPoints.push({x: mouseX, y: mouseY})
-                        } else if (items.toolSelected == "blur") {
-                            initMouse()
                         } else {
                             initMouse()
                             print("ON Pressed - default tool init")
@@ -450,7 +450,6 @@ ActivityBase {
                             
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
                             var tempImage = tempCanvas.ctx.getImageData(0, 0, tempCanvas.width, tempCanvas.height)
-                            canvas.ctx = canvas.getContext("2d")
                             canvas.ctx.drawImage(tempImage, 0, 0)
                             tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
                             tempCanvas.requestPaint()
@@ -479,7 +478,6 @@ ActivityBase {
 
                         if (items.toolSelected == "circle") {
                             canvas.removeShadow()
-                            canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.beginPath();
                             canvas.ctx.arc(area.currentShape.x + area.currentShape.width / 2,
                                            area.currentShape.y + area.currentShape.width / 2,
@@ -532,10 +530,8 @@ ActivityBase {
                     }
 
                     onPositionChanged: {
-                        canvas.ctx = canvas.getContext('2d')
                         canvas.ctx.globalCompositeOperation = 'source-over'
                         
-                        tempCanvas.ctx.strokeStyle = items.eraserMode ? items.backgroundColor : items.selectedColor
                         canvas.ctx.strokeStyle = items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') : items.paintColor
 
                         if(items.eraserMode) {
@@ -543,7 +539,6 @@ ActivityBase {
                         }
                         if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
                             canvas.removeShadow()
-                            tempCanvas.ctx = tempCanvas.getContext('2d')
                             tempCanvas.ctx.globalAlpha = 1
                             tempCanvas.ctx.lineWidth = items.toolSelected == "eraser" ?
                                         items.sizeS * 4 : items.sizeS
@@ -659,7 +654,6 @@ ActivityBase {
                         } else if (items.toolSelected == "pattern") {
                             canvas.removeShadow()
                             Activity.points.push({x: mouseX, y: mouseY})
-                            canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.lineWidth = items.sizeS * 5
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
 
@@ -685,7 +679,6 @@ ActivityBase {
                             canvas.removeShadow()
                             canvas.lastX = mouseX
                             canvas.lastY = mouseY
-                            canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.lineWidth = items.sizeS * 5
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
                             canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
@@ -786,7 +779,6 @@ ActivityBase {
                             }
                             canvas.requestPaint()
                         } else if (items.toolSelected == "blur") {
-                            canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
                             canvas.ctx.shadowBlur = 10
                             canvas.ctx.shadowColor = items.paintColor
@@ -811,7 +803,6 @@ ActivityBase {
                             Activity.pushToUndo()
                             Activity.resetRedo()
                         }else if(items.toolSelected === "stamp") {
-                            canvas.ctx = canvas.getContext('2d')
                             canvas.ctx.drawImage(stampGhostImage.source,
                                                  stampGhostImage.x + (stampGhostImage.width-stampGhostImage.paintedWidth) / 2,
                                                  stampGhostImage.y + (stampGhostImage.height-stampGhostImage.paintedHeight) / 2,
