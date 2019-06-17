@@ -410,7 +410,7 @@ ActivityBase {
                         //always make sure that alpha is set to slider value for tools actions
                         canvas.ctx.globalAlpha = items.globalOpacityValue
                         
-                        canvas.ctx.strokeStyle = items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') : items.paintColor
+                        canvas.ctx.strokeStyle = items.paintColor
                         tempCanvas.ctx.strokeStyle = items.eraserMode ? items.backgroundColor : items.paintColor
 
                         if (items.toolCategory == "Geometric") {
@@ -532,8 +532,6 @@ ActivityBase {
                     onPositionChanged: {
                         canvas.ctx.globalCompositeOperation = 'source-over'
                         
-                        canvas.ctx.strokeStyle = items.toolSelected == "pattern" ? canvas.ctx.createPattern(shape.toDataURL(), 'repeat') : items.paintColor
-
                         if(items.eraserMode) {
                             canvas.ctx.fillStyle = items.backgroundColor
                         }
@@ -653,6 +651,7 @@ ActivityBase {
                             }
                         } else if (items.toolSelected == "pattern") {
                             canvas.removeShadow()
+                            canvas.ctx.strokeStyle = canvas.ctx.createPattern(shape.toDataURL(), 'repeat')
                             Activity.points.push({x: mouseX, y: mouseY})
                             canvas.ctx.lineWidth = items.sizeS * 5
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'

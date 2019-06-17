@@ -43,6 +43,8 @@ Item {
     function colorUpdate(){
         items.paintColor = colorPicker.currentColorCode
         items.selectedColor = colorPicker.currentColorCode
+        if (items.toolSelected == "pattern")
+            Activity.getPattern()
     }
 
     ListModel {
@@ -567,7 +569,9 @@ Item {
             anchors.verticalCenter: mainPanel.verticalCenter
             visible: colorGrid.visible
             anchors.leftMargin: 20
-            onColorChanged: root.colorUpdate()
+            onColorChanged: {
+                root.colorUpdate()
+            }
         }
 
         Rectangle {
