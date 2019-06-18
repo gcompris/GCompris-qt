@@ -130,10 +130,6 @@ Item {
                         items.lastToolSelected = name
                         console.log("Click on " + name)
 
-                        // change the selectBrush tool
-                        timer.index = 0
-                        timer.start()
-                        background.reloadSelectedPen()
                         Activity.selectMode(name)
                     }
                     else if(modes.model === stampsModel) {

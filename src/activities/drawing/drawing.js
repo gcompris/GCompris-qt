@@ -369,25 +369,16 @@ function selectTool(toolName) {
     console.log("Clicked on " + toolName)
     items.paintColor = items.selectedColor
     items.eraserMode = false
-    items.timer.stop()
     if(toolName === "Eraser") {
         items.eraserMode = true
         items.toolSelected = "eraser"
         items.toolsMode.modesModel = items.toolsMode.pencilModes
-        items.background.reloadSelectedPen()
     }
     else if(toolName === "Bucket fill") {
         items.toolSelected = "fill"
-
-        // change the selectBrush tool
-        items.timer.index = 0
-        items.timer.start()
-
-        items.background.reloadSelectedPen()
     }
     else if(toolName === "Text") {
         items.toolSelected = "text"
-        items.background.reloadSelectedPen()
 
         // make visible the inputTextFrame
         items.inputTextFrame.visible = true
@@ -437,7 +428,6 @@ function selectTool(toolName) {
     else if(toolName === "Geometric") {
         items.toolSelected = "rectangle"
         items.lastToolSelected = "rectangle"
-        items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.geometricModes
     }
     else if(toolName === "Stamp") {
@@ -453,7 +443,6 @@ function selectTool(toolName) {
     else if(toolName === "Brush") {
         items.toolSelected = "pencil"
         items.lastToolSelected = "pencil"
-        items.background.reloadSelectedPen()
         items.toolsMode.modesModel = items.toolsMode.pencilModes
     }
     else if(toolName === "Export to PNG") {
@@ -470,21 +459,18 @@ function selectMode(modeName) {
         items.patternType = "dot"
         items.lastToolSelected = "pattern"
         getPattern()
-        items.background.reloadSelectedPen()
     }
     else if(modeName === "pattern2") {
         items.toolSelected = "pattern"
         items.patternType = "horizLine"
         items.lastToolSelected = "pattern"
         getPattern2()
-        items.background.reloadSelectedPen()
     }
     else if(modeName === "pattern3") {
         items.toolSelected = "pattern"
         items.patternType = "vertLine"
         items.lastToolSelected = "pattern"
         getPattern3()
-        items.background.reloadSelectedPen()
     }
 }
 

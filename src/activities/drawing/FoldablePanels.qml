@@ -556,7 +556,6 @@ Item {
                         items.paintColor = root1.color
                         colorPicker.updateColor((items.paintColor).toString())
                         root.colorUpdate()
-                        background.reloadSelectedPen()
                         foldAnimation.start()
                     }
                 }

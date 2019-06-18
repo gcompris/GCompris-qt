@@ -71,27 +71,6 @@ ActivityBase {
             onError: console.error("File error: " + msg);
         }
 
-        Timer {
-            id: timer
-            interval: 1
-            running: true
-            repeat: true
-
-            property int index: 0
-
-            onTriggered: {
-                index ++
-
-                if (index >= 10)
-                    stop()
-            }
-        }
-
-        function reloadSelectedPen() {
-            timer.index = 0
-            timer.start()
-        }
-
         SaveToFilePrompt {
             id: saveToFilePrompt
             z: -1
@@ -105,7 +84,6 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias canvas: canvas
-            property alias timer: timer
             property alias area: area
             property alias inputText: inputTextFrame.inputText
             property alias inputTextFrame: inputTextFrame
