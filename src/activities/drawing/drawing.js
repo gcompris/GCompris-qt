@@ -437,7 +437,7 @@ function selectTool(toolName) {
         items.stampGhostImage.z = 1500
         items.stampGhostImage.x = items.area.realMouseX
         items.stampGhostImage.y = items.area.realMouseY
-        items.canvas.loadImage(items.stampGhostImage.source)
+        updateStampImage()
     }
 
     else if(toolName === "Brush") {
@@ -472,6 +472,13 @@ function selectMode(modeName) {
         items.lastToolSelected = "pattern"
         getPattern3()
     }
+}
+
+// copy the result of the stampGhostImage to a new image to use as stamp
+function updateStampImage(){
+    items.stampGhostImage.grabToImage(function(result) {
+                                            items.stampImage.source = result.url;
+                                        });
 }
 
 // Paint flood-fill algorithm(Stack based Implementation)

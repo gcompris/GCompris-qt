@@ -49,7 +49,10 @@ Item {
         value: 180
         minimumValue: 1
         maximumValue: canvas.height
-        onValueChanged: items.toolsMode.activeStampHeight = value
+        onValueChanged: {
+            items.toolsMode.activeStampHeight = value
+            Activity.updateStampImage()
+        }
         stepSize: 80
         visible: items.toolSelected === "stamp"
     }

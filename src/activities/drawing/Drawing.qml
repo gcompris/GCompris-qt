@@ -56,14 +56,16 @@ ActivityBase {
         // When the width/height is changed, paint the last image on the canvas
         onWidthChanged: {
             if (items.background.started) {
+                items.resizeLock = true
                 Activity.preserveImage()
+                items.resizeLock = false
             }
         }
         onHeightChanged: {
-            if (items.background.started) {
-                items.foldablePanels.activePanel = "null"
+            if (items.background.started && !items.resizeLock) {
                 Activity.preserveImage()
             }
+            items.foldablePanels.activePanel = "null"
         }
 
         File {
@@ -99,6 +101,7 @@ ActivityBase {
             property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt: saveToFilePrompt
             property alias stampGhostImage: stampGhostImage
+            property alias stampImage: stampImage
             property alias onBoardText: onBoardText
             property alias fileDialog: fileDialog
             property color paintColor: "#000000"
@@ -114,6 +117,7 @@ ActivityBase {
             property bool mainAnimationOnX: true
             property bool eraserMode: false
             property bool undoLock: false
+            property bool resizeLock: false
             property int sizeS: 2
             property int index: 0
             property real globalOpacityValue: 1
@@ -236,7 +240,7 @@ ActivityBase {
                     z: -1
                     opacity: 0
                 }
-
+                
                 Image {
                     id: stampGhostImage
                     source: items.toolsMode.activeStampImageSource
@@ -248,7 +252,15 @@ ActivityBase {
                     visible: items.toolSelected === "stamp"
                     onSourceChanged: {
                         items.toolsMode.activeStampDimensionRatio = sourceSize.width / sourceSize.height
-                        items.canvas.loadImage(items.toolsMode.activeStampImageSource)
+                        Activity.updateStampImage()
+                    }
+                }
+                
+                Image {
+                    id: stampImage
+                    visible: false
+                    onSourceChanged: {
+                        items.canvas.loadImage(stampImage.source)
                     }
                 }
 
@@ -780,10 +792,10 @@ ActivityBase {
                             Activity.pushToUndo()
                             Activity.resetRedo()
                         }else if(items.toolSelected === "stamp") {
-                            canvas.ctx.drawImage(stampGhostImage.source,
-                                                 stampGhostImage.x + (stampGhostImage.width-stampGhostImage.paintedWidth) / 2,
-                                                 stampGhostImage.y + (stampGhostImage.height-stampGhostImage.paintedHeight) / 2,
-                                                 stampGhostImage.paintedWidth, stampGhostImage.paintedHeight)
+                            canvas.ctx.drawImage(stampImage.source,
+                                                 stampGhostImage.x,
+                                                 stampGhostImage.y,
+                                                 stampImage.width, stampImage.height)
                             canvas.requestPaint()
                             activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                             Activity.pushToUndo()
