@@ -259,7 +259,7 @@ ActivityBase {
                 
                 Image {
                     id: stampLoadImage
-                    source: items.imageLoaded
+                    source: items.imageToLoad ? items.imageLoaded : ""
                     width: canvas.width
                     height: canvas.height
                     fillMode: Image.PreserveAspectFit
@@ -277,7 +277,7 @@ ActivityBase {
                     width: items.imageToLoad ? parent.width : stampGhostImage.width
                     height: items.imageToLoad ? parent.height : stampGhostImage.height
                     onSourceChanged: {
-                        items.canvas.loadImage(stampImage.source)
+                        canvas.loadImage(stampImage.source)
                         if (items.imageToLoad == true) {
                             Activity.drawLoadedImage()
                         }
