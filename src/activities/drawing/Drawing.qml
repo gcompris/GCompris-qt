@@ -101,16 +101,18 @@ ActivityBase {
             property alias toolsMode: foldablePanels.toolsMode
             property alias saveToFilePrompt: saveToFilePrompt
             property alias stampGhostImage: stampGhostImage
+            property alias stampLoadImage: stampLoadImage
             property alias stampImage: stampImage
             property alias onBoardText: onBoardText
             property alias fileDialog: fileDialog
             property color paintColor: "#000000"
             property color selectedColor: "#000000"
             property color backgroundColor: "#ffffff"
+            property string imageLoaded
             property string urlImage
             property int urlImageWidth
             property int urlImageHeight
-            property bool loadSavedImage: false
+            property bool imageToLoad: false
             property bool initSave: false
             property bool nothingChanged: true
             property bool widthHeightChanged: false
@@ -223,7 +225,6 @@ ActivityBase {
                 property var lastPoint
                 property var currentPoint
                 property var ctx
-                property string url: ""
 
                 // For bucket-fill Tool
                 property int startX: -1
@@ -257,10 +258,29 @@ ActivityBase {
                 }
                 
                 Image {
+                    id: stampLoadImage
+                    source: items.imageLoaded
+                    width: canvas.width
+                    height: canvas.height
+                    fillMode: Image.PreserveAspectFit
+                    visible: items.imageToLoad
+                    onSourceChanged: {
+                        if (items.imageToLoad == true) {
+                            Activity.updateLoadImage()
+                        }
+                    }
+                }
+                
+                Image {
                     id: stampImage
                     visible: false
+                    width: items.imageToLoad ? parent.width : stampGhostImage.width
+                    height: items.imageToLoad ? parent.height : stampGhostImage.height
                     onSourceChanged: {
                         items.canvas.loadImage(stampImage.source)
+                        if (items.imageToLoad == true) {
+                            Activity.drawLoadedImage()
+                        }
                     }
                 }
 
@@ -271,18 +291,6 @@ ActivityBase {
                         canvas.ctx.drawImage(items.urlImage, 0, 0, items.urlImageWidth, items.urlImageHeight)
                         requestPaint()
                         items.undoLock = false
-                    } else if (items.toolSelected != "stamp" && items.urlImage != "") {
-                        canvas.ctx.globalAlpha = 1
-                        canvas.ctx.fillStyle = items.backgroundColor
-                        canvas.ctx.fillRect(0, 0, items.background.width, items.background.height)
-                        canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
-
-                        // mark the loadSavedImage as finished
-                        //  items.loadSavedImage = false
-                        requestPaint()
-                        //  unloadImage(items.urlImage)
-                        items.mainAnimationOnX = true
-                        //  items.urlImage = ""
                     }
                 }
 
@@ -340,8 +348,8 @@ ActivityBase {
                     id: area
                     anchors.fill: parent
                     enabled: !areaSafe.enabled
-
                     hoverEnabled: items.toolSelected === "text" || items.toolSelected === "stamp"
+                    
                     property var mappedMouse: mapToItem(parent, mouseX, mouseY)
                     property var currentShape: items.toolSelected == "circle" ? circle : rectangle
                     property real originalX

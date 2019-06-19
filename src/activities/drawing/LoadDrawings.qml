@@ -48,9 +48,8 @@ Rectangle {
         delegate: Item {
             width: gridView.cellWidth
             height: gridView.cellHeight
-            property alias loadImage: loadImage
             Image {
-                id: loadImage
+                id: imageFromGrid
                 source: modelData
                 anchors.centerIn: parent
                 sourceSize.width: parent.width * 0.7
@@ -61,9 +60,8 @@ Rectangle {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        canvas.url = loadImage.source
-                        canvas.loadImage(loadImage.source)
-
+                        items.imageToLoad = true
+                        items.imageLoaded = imageFromGrid.source
                         main.x = 0
                     }
                 }
@@ -118,9 +116,6 @@ Rectangle {
                 main.y = main.height
 
                 loadSavedPainting.anchors.left =  load.left
-
-                // change the images sources from "saved images" to "load images"
-                items.loadSavedImage = true
             }
         }
     }

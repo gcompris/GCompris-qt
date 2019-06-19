@@ -63,21 +63,20 @@ Rectangle {
             color: "transparent"
 
             Image {
-                id: loadImage2
+                id: imageFromGrid2
                 source: modelData.url
                 anchors.centerIn: parent
                 sourceSize.width: parent.width
                 sourceSize.height: parent.height
                 width: parent.width * 0.9
                 height: parent.height * 0.9
-
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         loadSavedPainting.anchors.left = main.left
 
-                        canvas.url = loadImage2.source
-                        canvas.loadImage(loadImage2.source)
+                        items.imageToLoad = true
+                        items.imageLoaded = imageFromGrid2.source
 
                         main.x = 0
                         main.y = 0
@@ -131,9 +130,6 @@ Rectangle {
 
                     // move down the loadPaintings screen
                     main.y = 0
-
-                    // change the images sources from "saved images" to "load images"
-                    items.loadSavedImage = false
                 }
             }
         }

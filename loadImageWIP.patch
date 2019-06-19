@@ -1,0 +1,204 @@
+diff --git a/src/activities/drawing/Drawing.qml b/src/activities/drawing/Drawing.qml
+index 70bb5b51..dbcf6043 100644
+--- a/src/activities/drawing/Drawing.qml
++++ b/src/activities/drawing/Drawing.qml
+@@ -101,16 +101,18 @@ ActivityBase {
+             property alias toolsMode: foldablePanels.toolsMode
+             property alias saveToFilePrompt: saveToFilePrompt
+             property alias stampGhostImage: stampGhostImage
++            property alias stampLoadImage: stampLoadImage
+             property alias stampImage: stampImage
+             property alias onBoardText: onBoardText
+             property alias fileDialog: fileDialog
+             property color paintColor: "#000000"
+             property color selectedColor: "#000000"
+             property color backgroundColor: "#ffffff"
++            property string imageLoaded: ""
+             property string urlImage
+             property int urlImageWidth
+             property int urlImageHeight
+-            property bool loadSavedImage: false
++            property bool imageToLoad: false
+             property bool initSave: false
+             property bool nothingChanged: true
+             property bool widthHeightChanged: false
+@@ -223,7 +225,6 @@ ActivityBase {
+                 property var lastPoint
+                 property var currentPoint
+                 property var ctx
+-                property string url: ""
+ 
+                 // For bucket-fill Tool
+                 property int startX: -1
+@@ -256,11 +257,30 @@ ActivityBase {
+                     }
+                 }
+                 
++                Image {
++                    id: stampLoadImage
++                    source: items.imageToLoad ? items.imageLoaded : ""
++                    width: background.width
++                    height: background.height
++                    fillMode: Image.PreserveAspectFit
++                    visible: items.imageToLoad
++                    onSourceChanged: {
++                        if (items.imageToLoad == true) {
++                            Activity.updateLoadImage()
++                        }
++                    }
++                }
++                
+                 Image {
+                     id: stampImage
+                     visible: false
++                    width: items.imageToLoad ? parent.width : stampGhostImage.width
++                    height: items.imageToLoad ? parent.height : stampGhostImage.height
+                     onSourceChanged: {
+                         items.canvas.loadImage(stampImage.source)
++                        if (items.imageToLoad == true) {
++                            Activity.drawLoadedImage()
++                        }
+                     }
+                 }
+ 
+@@ -271,18 +291,6 @@ ActivityBase {
+                         canvas.ctx.drawImage(items.urlImage, 0, 0, items.urlImageWidth, items.urlImageHeight)
+                         requestPaint()
+                         items.undoLock = false
+-                    } else if (items.toolSelected != "stamp" && items.urlImage != "") {
+-                        canvas.ctx.globalAlpha = 1
+-                        canvas.ctx.fillStyle = items.backgroundColor
+-                        canvas.ctx.fillRect(0, 0, items.background.width, items.background.height)
+-                        canvas.ctx.drawImage(items.urlImage, 0, 0, canvas.width, canvas.height)
+-
+-                        // mark the loadSavedImage as finished
+-                        //  items.loadSavedImage = false
+-                        requestPaint()
+-                        //  unloadImage(items.urlImage)
+-                        items.mainAnimationOnX = true
+-                        //  items.urlImage = ""
+                     }
+                 }
+ 
+@@ -340,8 +348,8 @@ ActivityBase {
+                     id: area
+                     anchors.fill: parent
+                     enabled: !areaSafe.enabled
+-
+                     hoverEnabled: items.toolSelected === "text" || items.toolSelected === "stamp"
++                    
+                     property var mappedMouse: mapToItem(parent, mouseX, mouseY)
+                     property var currentShape: items.toolSelected == "circle" ? circle : rectangle
+                     property real originalX
+diff --git a/src/activities/drawing/LoadDrawings.qml b/src/activities/drawing/LoadDrawings.qml
+index 66702e67..503b7059 100644
+--- a/src/activities/drawing/LoadDrawings.qml
++++ b/src/activities/drawing/LoadDrawings.qml
+@@ -48,9 +48,8 @@ Rectangle {
+         delegate: Item {
+             width: gridView.cellWidth
+             height: gridView.cellHeight
+-            property alias loadImage: loadImage
+             Image {
+-                id: loadImage
++                id: imageFromGrid
+                 source: modelData
+                 anchors.centerIn: parent
+                 sourceSize.width: parent.width * 0.7
+@@ -61,10 +60,10 @@ Rectangle {
+                 MouseArea {
+                     anchors.fill: parent
+                     onClicked: {
+-                        canvas.url = loadImage.source
+-                        canvas.loadImage(loadImage.source)
+-
++                        items.imageToLoad = true
++                        items.imageLoaded = imageFromGrid.source
+                         main.x = 0
++                        main.y = 0
+                     }
+                 }
+             }
+@@ -118,9 +117,6 @@ Rectangle {
+                 main.y = main.height
+ 
+                 loadSavedPainting.anchors.left =  load.left
+-
+-                // change the images sources from "saved images" to "load images"
+-                items.loadSavedImage = true
+             }
+         }
+     }
+diff --git a/src/activities/drawing/LoadSavedDrawings.qml b/src/activities/drawing/LoadSavedDrawings.qml
+index 7c6229da..f49928c6 100644
+--- a/src/activities/drawing/LoadSavedDrawings.qml
++++ b/src/activities/drawing/LoadSavedDrawings.qml
+@@ -63,21 +63,20 @@ Rectangle {
+             color: "transparent"
+ 
+             Image {
+-                id: loadImage2
++                id: imageFromGrid2
+                 source: modelData.url
+                 anchors.centerIn: parent
+                 sourceSize.width: parent.width
+                 sourceSize.height: parent.height
+                 width: parent.width * 0.9
+                 height: parent.height * 0.9
+-
+                 MouseArea {
+                     anchors.fill: parent
+                     onClicked: {
+                         loadSavedPainting.anchors.left = main.left
+ 
+-                        canvas.url = loadImage2.source
+-                        canvas.loadImage(loadImage2.source)
++                        items.imageToLoad = true
++                        items.imageLoaded = imageFromGrid2.source
+ 
+                         main.x = 0
+                         main.y = 0
+@@ -131,9 +130,6 @@ Rectangle {
+ 
+                     // move down the loadPaintings screen
+                     main.y = 0
+-
+-                    // change the images sources from "saved images" to "load images"
+-                    items.loadSavedImage = false
+                 }
+             }
+         }
+diff --git a/src/activities/drawing/drawing.js b/src/activities/drawing/drawing.js
+index 727ef1ad..44a3d87d 100644
+--- a/src/activities/drawing/drawing.js
++++ b/src/activities/drawing/drawing.js
+@@ -481,6 +481,29 @@ function updateStampImage(){
+                                         });
+ }
+ 
++// copy the result of the stampLoadImage to a new image to use as stamp
++function updateLoadImage(){
++    items.stampLoadImage.grabToImage(function(result) {
++                                            items.stampImage.source = result.url;
++                                        });
++}
++
++function drawLoadedImage(){
++    ctx = items.canvas.getContext("2d")
++    ctx.globalAlpha = 1
++    ctx.fillStyle = items.backgroundColor
++    ctx.fillRect(0, 0, items.background.width, items.background.height)
++    ctx.drawImage(items.stampImage.source, 0, 0, items.stampImage.width, items.stampImage.height);
++    items.canvas.requestPaint()
++    pushToUndo()
++    resetRedo()
++    updateStampImage()
++    items.imageToLoad = false
++    items.mainAnimationOnX = true
++    console.log("Image loaded")
++}
++
++
+ // Paint flood-fill algorithm(Stack based Implementation)
+ function paintBucket() {
+     console.log( "Flood fill started at " + new Date().toLocaleTimeString() )

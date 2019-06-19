@@ -481,6 +481,30 @@ function updateStampImage(){
                                         });
 }
 
+// copy the result of the stampLoadImage to a new image to use as stamp
+function updateLoadImage(){
+    items.stampLoadImage.grabToImage(function(result) {
+                                            items.stampImage.source = result.url;
+                                        });
+}
+
+function drawLoadedImage(){
+    ctx = items.canvas.getContext("2d")
+    ctx.globalAlpha = 1
+    ctx.fillStyle = items.backgroundColor
+    ctx.fillRect(0, 0, items.background.width, items.background.height)
+    items.canvas.loadImage(items.stampImage.source)
+    ctx.drawImage(items.stampImage.source, 0, 0, items.stampImage.width, items.stampImage.height);
+    items.canvas.requestPaint()
+    pushToUndo()
+    resetRedo()
+    updateStampImage()
+    items.imageToLoad = false
+    items.mainAnimationOnX = true
+    console.log("Image loaded")
+}
+
+
 // Paint flood-fill algorithm(Stack based Implementation)
 function paintBucket() {
     console.log( "Flood fill started at " + new Date().toLocaleTimeString() )
