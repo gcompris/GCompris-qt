@@ -400,7 +400,6 @@ function redoAction() {
 function selectTool(toolName) {
     console.log("Clicked on " + toolName)
     items.paintColor = items.selectedColor
-    items.eraserMode = false
     if(toolName === "Eraser") {
         items.eraserMode = true
         items.toolSelected = "eraser"
@@ -471,7 +470,6 @@ function selectTool(toolName) {
         items.stampGhostImage.y = items.area.realMouseY
         updateStampImage()
     }
-
     else if(toolName === "Brush") {
         items.toolSelected = "pencil"
         items.lastToolSelected = "pencil"

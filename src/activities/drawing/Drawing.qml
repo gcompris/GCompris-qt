@@ -118,7 +118,6 @@ ActivityBase {
             property bool nothingChanged: true
             property bool widthHeightChanged: false
             property bool mainAnimationOnX: true
-            property bool eraserMode: false
             property bool undoLock: false
             property bool resizeLock: false
             property int sizeS: 2
@@ -328,14 +327,6 @@ ActivityBase {
                     return Math.floor(Math.random() * (max - min + 1)) + min;
                 }
 
-                function removeShadow() {
-                    // remove the shadow effect
-                    canvas.ctx.shadowColor = 'rgba(0,0,0,0)'
-                    canvas.ctx.shadowBlur = 0
-                    canvas.ctx.shadowOffsetX = 0
-                    canvas.ctx.shadowOffsetY = 0
-                }
-                
                 MouseArea {
                     id: areaSafe
                     anchors.fill: parent
@@ -412,8 +403,16 @@ ActivityBase {
                         canvas.ctx.globalAlpha = items.globalOpacityValue
                         
                         canvas.ctx.strokeStyle = items.paintColor
-                        tempCanvas.ctx.strokeStyle = items.eraserMode ? items.backgroundColor : items.paintColor
+                        canvas.ctx.fillStyle = items.paintColor
+                        tempCanvas.ctx.strokeStyle = items.toolSelected === "eraser" ? items.backgroundColor : items.paintColor
+                        tempCanvas.ctx.fillStyle = tempCanvas.ctx.strokeStyle
 
+                        if (items.toolSelected === "blur") {
+                            tempCanvas.addShadow()
+                        } else {
+                            tempCanvas.removeShadow()
+                        }
+                        
                         if (items.toolCategory == "Geometric") {
                             startGeometric(items.toolSelected)
                         } else if (items.toolSelected == "pattern") {
@@ -449,7 +448,7 @@ ActivityBase {
                         if (moveOnBoard.running)
                             moveOnBoard.stop()
                             
-                        if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
+                        if (items.toolCategory == "Brush") {
                             var tempImage = tempCanvas.ctx.getImageData(0, 0, tempCanvas.width, tempCanvas.height)
                             canvas.ctx.drawImage(tempImage, 0, 0)
                             tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
@@ -458,7 +457,6 @@ ActivityBase {
                         }
 
                         if (items.toolSelected == "line") {
-                            canvas.removeShadow()
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.beginPath()
 
@@ -478,7 +476,6 @@ ActivityBase {
                         }
 
                         if (items.toolSelected == "circle") {
-                            canvas.removeShadow()
                             canvas.ctx.beginPath();
                             canvas.ctx.arc(area.currentShape.x + area.currentShape.width / 2,
                                            area.currentShape.y + area.currentShape.width / 2,
@@ -491,7 +488,6 @@ ActivityBase {
                         }
 
                         if (items.toolSelected == "rectangle" || items.toolSelected == "lineShift") {
-                            canvas.removeShadow()
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.beginPath()
                             canvas.ctx.moveTo(area.currentShape.x,area.currentShape.y)
@@ -505,7 +501,6 @@ ActivityBase {
                         }
 
                         if (items.toolSelected == "text") {
-                            canvas.removeShadow()
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.font = inputTextFrame.font
                             console.log(inputTextFrame.font)
@@ -532,24 +527,7 @@ ActivityBase {
                     onPositionChanged: {
                         canvas.ctx.globalCompositeOperation = 'source-over'
                         
-                        if(items.eraserMode) {
-                            canvas.ctx.fillStyle = items.backgroundColor
-                        }
-                        if (items.toolSelected == "pencil" || items.toolSelected == "eraser") {
-                            canvas.removeShadow()
-                            tempCanvas.ctx.globalAlpha = 1
-                            tempCanvas.ctx.lineWidth = items.toolSelected == "eraser" ?
-                                        items.sizeS * 4 : items.sizeS
-                            tempCanvas.ctx.lineCap = 'round'
-                            tempCanvas.ctx.lineJoin = 'round'
-                            tempCanvas.ctx.beginPath()
-                            tempCanvas.ctx.moveTo(canvas.lastX, canvas.lastY)
-                            canvas.lastX = area.mouseX
-                            canvas.lastY = area.mouseY
-                            tempCanvas.ctx.lineTo(canvas.lastX, canvas.lastY)
-                            tempCanvas.ctx.stroke()
-                            tempCanvas.requestPaint()
-                        } else if (items.toolSelected == "rectangle") {
+                        if (items.toolSelected == "rectangle") {
                             mappedMouse = mapToItem(parent, mouseX, mouseY)
                             var width = mappedMouse.x - area.originalX
                             var height = mappedMouse.y - area.originalY
@@ -649,7 +627,6 @@ ActivityBase {
                                 currentShape.width = items.sizeS
                             }
                         } else if (items.toolSelected == "pattern") {
-                            canvas.removeShadow()
                             canvas.ctx.strokeStyle = canvas.ctx.createPattern(shape.toDataURL(), 'repeat')
                             Activity.points.push({x: mouseX, y: mouseY})
                             canvas.ctx.lineWidth = items.sizeS * 5
@@ -674,7 +651,6 @@ ActivityBase {
                             canvas.ctx.stroke();
                             canvas.requestPaint()
                         } else if (items.toolSelected == "spray") {
-                            canvas.removeShadow()
                             canvas.lastX = mouseX
                             canvas.lastY = mouseY
                             canvas.ctx.lineWidth = items.sizeS * 5
@@ -691,7 +667,6 @@ ActivityBase {
 
                             canvas.requestPaint()
                         } else if (items.toolSelected == "brush3") {
-                            canvas.removeShadow()
                             canvas.lastX = mouseX
                             canvas.lastY = mouseY
                             canvas.ctx.lineWidth = items.sizeS * 1.2
@@ -724,7 +699,6 @@ ActivityBase {
 
                             canvas.requestPaint()
                         } else if(items.toolSelected == "brush4") {
-                            canvas.removeShadow()
                             Activity.points.push({x: mouseX, y: mouseY})
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
                             canvas.ctx.fillStyle = items.paintColor
@@ -737,7 +711,6 @@ ActivityBase {
                             }
                             canvas.requestPaint()
                         } else if(items.toolSelected == "sketchBrush") {
-                            canvas.removeShadow()
                             Activity.connectedPoints.push({x: mouseX, y: mouseY})
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
                             canvas.ctx.lineWidth = 1
@@ -776,20 +749,19 @@ ActivityBase {
                                 }
                             }
                             canvas.requestPaint()
-                        } else if (items.toolSelected == "blur") {
-                            canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';
-                            canvas.ctx.shadowBlur = 10
-                            canvas.ctx.shadowColor = items.paintColor
-                            canvas.ctx.lineWidth = items.sizeS
-                            canvas.ctx.strokeStyle = items.paintColor
-                            canvas.ctx.beginPath()
-                            canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
+                        } else if(items.toolCategory === "Brush") {
+                            tempCanvas.ctx.globalAlpha = 1
+                            tempCanvas.ctx.lineWidth = items.toolSelected === "eraser" ?
+                                        items.sizeS * 4 : items.sizeS
+                            tempCanvas.ctx.lineCap = 'round'
+                            tempCanvas.ctx.lineJoin = 'round'
+                            tempCanvas.ctx.beginPath()
+                            tempCanvas.ctx.moveTo(canvas.lastX, canvas.lastY)
                             canvas.lastX = area.mouseX
                             canvas.lastY = area.mouseY
-                            canvas.ctx.lineTo(canvas.lastX, canvas.lastY)
-                            canvas.ctx.stroke()
-
-                            canvas.requestPaint()
+                            tempCanvas.ctx.lineTo(canvas.lastX, canvas.lastY)
+                            tempCanvas.ctx.stroke()
+                            tempCanvas.requestPaint()
                         }
                     }
 
@@ -865,6 +837,22 @@ ActivityBase {
             x: 0
             y: 0
             property var ctx
+            
+            function removeShadow() {
+                // remove the shadow effect
+                tempCanvas.ctx.shadowColor = 'rgba(0,0,0,0)'
+                tempCanvas.ctx.shadowBlur = 0
+                
+            }
+            
+            function addShadow() {
+                // add the shadow effect
+                tempCanvas.ctx.shadowColor = items.paintColor
+                tempCanvas.ctx.shadowBlur = items.sizeS * 0.5
+                tempCanvas.ctx.shadowOffsetX = 0
+                tempCanvas.ctx.shadowOffsetY = 0
+            }
+            
         }
 
         FoldablePanels {
