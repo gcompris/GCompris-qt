@@ -91,6 +91,7 @@ ActivityBase {
             property alias inputTextFrame: inputTextFrame
             property alias parser: parser
             property alias gridView2: loadSavedPainting.gridView2
+            property alias directory: loadSavedPainting.directory
             property alias file: file
             property alias load: load
             property alias mainRegion: main
@@ -127,6 +128,8 @@ ActivityBase {
             property string patternType: "dot"
             property string lastToolSelected: "pencil"
             property string toolCategory: "Brush"
+            property string userFiles: ApplicationInfo.getSharedWritablePath() + "/drawing/"
+
         }
 
         JsonParser {

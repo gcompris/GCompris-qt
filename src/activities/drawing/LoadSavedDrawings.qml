@@ -34,12 +34,17 @@ Rectangle {
     z: 100
 
     property alias gridView2: gridView2
+    property alias directory: directory
 
     anchors {
         bottom: main.top
         left: load.left
     }
 
+    Directory {
+        id: directory
+    }
+    
     GCText {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
@@ -55,6 +60,7 @@ Rectangle {
         cellWidth: (main.width - sizeOfImages.width) * slider.value
         cellHeight: main.height * slider.value
         flow: GridView.FlowTopToBottom
+        model: Activity.dataset
         z: 1
 
         delegate: Rectangle {
@@ -64,7 +70,7 @@ Rectangle {
 
             Image {
                 id: imageFromGrid2
-                source: modelData.url
+                source: "file://" + items.userFiles + modelData
                 anchors.centerIn: parent
                 sourceSize.width: parent.width
                 sourceSize.height: parent.height
@@ -89,9 +95,9 @@ Rectangle {
                     sourceSize.width: 40 * ApplicationInfo.ratio
 
                     onClose: {
+                        //TODO: add a method to delete images
                         Activity.dataset.splice(index, 1)
                         gridView2.model = Activity.dataset
-                        Activity.saveToFile(false)
                     }
                 }
             }

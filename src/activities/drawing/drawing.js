@@ -53,10 +53,9 @@ var redo = []
 var redoWidth = []
 var redoHeight = []
 
-var userFile = "file://" + GCompris.ApplicationInfo.getSharedWritablePath()
-        + "/paint/" + "levels-user.json"
+var extensions = ["*.svg", "*.png", "*.jpg", "*.jpeg"]
 
-var dataset = null
+var dataset = []
 
 var ctx
 
@@ -75,7 +74,7 @@ function stop() {
 }
 
 function initLevel() {
-    dataset = null
+    dataset = []
     points = []
     connectedPoints = []
 
@@ -90,7 +89,6 @@ function initLevel() {
 
     //load saved paintings from file
     parseImageSaved()
-    items.gridView2.model = dataset
 
     getPattern()
     
@@ -181,16 +179,16 @@ function getCirclePattern() {
     patternCtx.stroke()
 }
 
+
 // parse the content of the paintings saved by the user
 function parseImageSaved() {
-    dataset = items.parser.parseFromUrl(userFile)
-    if (dataset == null) {
-        console.error("ERROR! dataset = []")
-        dataset = []
-        return
-    }
+    dataset = items.directory.getFiles(items.userFiles, extensions)
+    items.gridView2.model = dataset
+    console.log(items.userFiles)
+    console.log(dataset)
 }
 
+/*
 // if showMessage === true, then show the message Core.showMessageDialog(...), else don't show it
 function saveToFile(showMessage) {
     // verify if the path is good
@@ -232,6 +230,40 @@ function saveToFile(showMessage) {
 
     // reset nothingChanged
     items.nothingChanged = true
+}
+*/
+
+function saveFile() {
+    var path =  GCompris.ApplicationInfo.getSharedWritablePath() + "/drawing"
+    if(!items.file.exists(path)) {
+        if(!items.file.mkpath(path)) {
+            Core.showMessageDialog(items.main,
+                                   qsTr("Error: could not create the directory %1").arg(path),
+                                   "", null, "", null, null)
+            console.error("Could not create directory " + path)
+            return;
+        }
+        else
+            console.debug("Created directory " + path)
+    }
+    var i = 0;
+    while(items.file.exists(path + "/drawing" + i.toString() + ".png")) {
+        i += 1
+    }
+    items.canvas.grabToImage(function(result) {
+        if(result.saveToFile(path + "/drawing" + i.toString() + ".png")) {
+            console.log("File drawing" + i + ".png saved successfully.")
+            Core.showMessageDialog(items.main,
+                                   qsTr("Saved drawing to %1").arg(path + "/drawing" + i.toString() + ".png"),
+                                   "", null, "", null, null)
+
+        }
+        else {
+            Core.showMessageDialog(items.main,
+                                   qsTr("Error in saving the drawing."),
+                                   "", null, "", null, null)
+        }
+    })
 }
 
 function handleKeyNavigations(event) {
@@ -404,7 +436,7 @@ function selectTool(toolName) {
         items.mainRegion.x = items.background.width
     }
     else if(toolName === "Save") {
-        saveToFile(true)
+        saveFile()
     }
     else if(toolName === "More Colors") {
         items.colorPalette.visible = true
