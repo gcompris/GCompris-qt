@@ -402,9 +402,9 @@ ActivityBase {
                         //always make sure that alpha is set to slider value for tools actions
                         canvas.ctx.globalAlpha = items.globalOpacityValue
                         
-                        canvas.ctx.strokeStyle = items.paintColor
-                        canvas.ctx.fillStyle = items.paintColor
-                        tempCanvas.ctx.strokeStyle = items.toolSelected === "eraser" ? items.backgroundColor : items.paintColor
+                        canvas.ctx.strokeStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
+                        canvas.ctx.fillStyle = canvas.ctx.strokeStyle
+                        tempCanvas.ctx.strokeStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
                         tempCanvas.ctx.fillStyle = tempCanvas.ctx.strokeStyle
 
                         if (items.toolSelected === "blur") {
@@ -448,14 +448,6 @@ ActivityBase {
                         if (moveOnBoard.running)
                             moveOnBoard.stop()
                             
-                        if (items.toolCategory == "Brush") {
-                            var tempImage = tempCanvas.ctx.getImageData(0, 0, tempCanvas.width, tempCanvas.height)
-                            canvas.ctx.drawImage(tempImage, 0, 0)
-                            tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
-                            tempCanvas.requestPaint()
-                            canvas.requestPaint()
-                        }
-
                         if (items.toolSelected == "line") {
                             canvas.ctx.fillStyle = items.paintColor
                             canvas.ctx.beginPath()
@@ -512,11 +504,18 @@ ActivityBase {
 
                         // reset the "points" array
                         if (items.toolSelected == "pattern" ||
-                                items.toolSelected == "brush4")
+                                items.toolSelected == "brush4") {
                             Activity.points = []
-
-                        if (items.toolSelected == "sketchBrush")
+                        } else if (items.toolSelected == "sketchBrush") {
                             Activity.connectedPoints = []
+                        } else if (items.toolCategory === "Brush" || items.toolCategory === "Eraser") {
+                            var tempImage = tempCanvas.ctx.getImageData(0, 0, tempCanvas.width, tempCanvas.height)
+                            canvas.ctx.drawImage(tempImage, 0, 0)
+                            tempCanvas.ctx.clearRect(0, 0, tempCanvas.width, tempCanvas.height)
+                            tempCanvas.requestPaint()
+                            canvas.requestPaint()
+                        }
+
                             
                         if (items.toolSelected != "stamp" && items.toolSelected != "fill") {
                             Activity.pushToUndo()
@@ -656,7 +655,7 @@ ActivityBase {
                             canvas.ctx.lineWidth = items.sizeS * 5
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
                             canvas.ctx.moveTo(canvas.lastX, canvas.lastY)
-                            canvas.ctx.fillStyle = items.paintColor
+                            canvas.ctx.fillStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
 
                             for (var i = 50; i--; i >= 0) {
                                 var radius = items.sizeS * 5;
@@ -701,7 +700,7 @@ ActivityBase {
                         } else if(items.toolSelected == "brush4") {
                             Activity.points.push({x: mouseX, y: mouseY})
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round'
-                            canvas.ctx.fillStyle = items.paintColor
+                            canvas.ctx.fillStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
                             canvas.ctx.lineWidth = items.sizeS / 4
                             for (var i = 0; i < Activity.points.length; i++) {
                                 canvas.ctx.beginPath();
@@ -740,7 +739,7 @@ ActivityBase {
 
                                 if (d < 1000) {
                                     canvas.ctx.beginPath();
-                                    canvas.ctx.strokeStyle = 'rgba(0,0,0,0.8)';
+                                    canvas.ctx.strokeStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
                                     canvas.ctx.moveTo( Activity.connectedPoints[Activity.connectedPoints.length-1].x + (dx * 0.1),
                                                       Activity.connectedPoints[Activity.connectedPoints.length-1].y + (dy * 0.1));
                                     canvas.ctx.lineTo( Activity.connectedPoints[i].x - (dx * 0.1),
@@ -749,9 +748,9 @@ ActivityBase {
                                 }
                             }
                             canvas.requestPaint()
-                        } else if(items.toolCategory === "Brush") {
+                        } else if(items.toolCategory === "Brush" || items.toolCategory === "Eraser") {
                             tempCanvas.ctx.globalAlpha = 1
-                            tempCanvas.ctx.lineWidth = items.toolSelected === "eraser" ?
+                            tempCanvas.ctx.lineWidth = items.toolCategory === "Eraser" ?
                                         items.sizeS * 4 : items.sizeS
                             tempCanvas.ctx.lineCap = 'round'
                             tempCanvas.ctx.lineJoin = 'round'
@@ -847,7 +846,7 @@ ActivityBase {
             
             function addShadow() {
                 // add the shadow effect
-                tempCanvas.ctx.shadowColor = items.paintColor
+                tempCanvas.ctx.shadowColor = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
                 tempCanvas.ctx.shadowBlur = items.sizeS * 0.5
                 tempCanvas.ctx.shadowOffsetX = 0
                 tempCanvas.ctx.shadowOffsetY = 0

@@ -125,7 +125,7 @@ function getPattern() {
     var patternCtx = items.shape.getContext("2d")
     patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
     items.shape.width = items.shape.height = dotWidth + dotDistance
-    patternCtx.fillStyle = items.paintColor
+    patternCtx.fillStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
     patternCtx.beginPath()
     patternCtx.arc(dotWidth / 2, dotWidth / 2, dotWidth / 2, 0, Math.PI * 2, false);
     patternCtx.closePath()
@@ -138,7 +138,7 @@ function getPattern2() {
     var patternCtx = items.shape.getContext("2d")
     patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
     items.shape.width = items.shape.height = lineSize
-    patternCtx.strokeStyle = items.paintColor
+    patternCtx.strokeStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
     patternCtx.lineWidth = lineWidth
     patternCtx.beginPath()
     patternCtx.moveTo(0, lineWidth)
@@ -153,16 +153,8 @@ function getPattern3() {
     ctx.clearRect(0, 0, items.shape.width, items.shape.height)
     items.shape.width = lineWidth;
     items.shape.height = lineSize;
-    ctx.fillStyle = items.paintColor
+    ctx.fillStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
     ctx.fillRect(lineWidth / 2, 0, lineWidth, lineSize);
-}
-
-function getSprayPattern() {
-    var patternCtx = items.shape.getContext("2d")
-    patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
-    items.shape.width = items.shape.height = 3
-    patternCtx.fillStyle = items.paintColor
-    patternCtx.fillRect(0, 0, 2, 2);
 }
 
 function getCirclePattern() {
@@ -171,7 +163,7 @@ function getCirclePattern() {
     patternCtx.clearRect(0, 0, items.shape.width, items.shape.height)
     items.shape.width = dotWidth * 0.6 + dotDistance * 2
     items.shape.height = items.shape.width
-    patternCtx.strokeStyle = items.paintColor
+    patternCtx.fillStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
     patternCtx.lineWidth = 1
     patternCtx.beginPath()
     patternCtx.arc(dotWidth / 2, dotWidth / 2, dotWidth / 2, 0, Math.PI * 2, false);
@@ -401,7 +393,6 @@ function selectTool(toolName) {
     console.log("Clicked on " + toolName)
     items.paintColor = items.selectedColor
     if(toolName === "Eraser") {
-        items.eraserMode = true
         items.toolSelected = "eraser"
         items.toolsMode.modesModel = items.toolsMode.pencilModes
     }
