@@ -65,7 +65,7 @@ var connectedPoints = []
 function start(items_) {
     items = items_
     currentLevel = 0
-    items.toolSelected = "pencil"
+    items.toolSelected = "hardBrush"
     initLevel()
     items.foldablePanels.colorUpdate()
 }
@@ -394,7 +394,7 @@ function selectTool(toolName) {
     items.paintColor = items.selectedColor
     if(toolName === "Eraser") {
         items.toolSelected = "eraser"
-        items.toolsMode.modesModel = items.toolsMode.pencilModes
+        items.toolsMode.modesModel = items.toolsMode.brushModes
     }
     else if(toolName === "Bucket fill") {
         items.toolSelected = "fill"
@@ -419,8 +419,8 @@ function selectTool(toolName) {
         if (items.load.opacity == 0)
             items.load.opacity = 1
 
-        // mark the pencil as the default tool
-        items.toolSelected = "pencil"
+        // mark the hardBrush as the default tool
+        items.toolSelected = "hardBrush"
 
         // move the main screen to right
         items.mainRegion.x = items.background.width
@@ -462,9 +462,9 @@ function selectTool(toolName) {
         updateStampImage()
     }
     else if(toolName === "Brush") {
-        items.toolSelected = "pencil"
-        items.lastToolSelected = "pencil"
-        items.toolsMode.modesModel = items.toolsMode.pencilModes
+        items.toolSelected = "hardBrush"
+        items.lastToolSelected = "hardBrush"
+        items.toolsMode.modesModel = items.toolsMode.brushModes
     }
     else if(toolName === "Export to PNG") {
         exportToPng()

@@ -28,7 +28,7 @@ Item {
 
     anchors.centerIn: parent
     property alias modesModel: modes.model
-    property alias pencilModes: pencilModes
+    property alias brushModes: brushModes
     property alias geometricModes: geometricModes
     property alias stampsModel: stampsModel
     property alias opacitySliderValue: opacitySlider.value
@@ -39,25 +39,25 @@ Item {
 
 
     ListModel {
-        id: pencilModes
-        ListElement { name: "pencil";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pencil.png" }
+        id: brushModes
+        ListElement { name: "hardBrush";
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/hardBrush.svg" }
+        ListElement { name: "softBrush";
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/softBrush.svg" }
+        ListElement { name: "sketchBrush";
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush5.png" }
+        ListElement { name: "spray";
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/spray.png" }
         ListElement { name: "dot";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern1.png" }
         ListElement { name: "pattern2";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern3.png" }
         ListElement { name: "pattern3";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern3.png" }
-        ListElement { name: "spray";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/spray.png" }
         ListElement { name: "brush3";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush3.png" }
         ListElement { name: "brush4";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush4.png" }
-        ListElement { name: "sketchBrush";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush5.png" }
-        ListElement { name: "blur";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/blur.png" }
     }
 
     ListModel {
@@ -104,7 +104,7 @@ Item {
         anchors.topMargin: 15
         anchors.left: parent.left
         anchors.leftMargin: 20
-        model: pencilModes
+        model: brushModes
         delegate: modesComponent
     }
 
@@ -119,6 +119,8 @@ Item {
                 source: imgSource
                 width: parent.width * 0.80
                 height: parent.height * 0.80
+                sourceSize.width: width
+                sourceSize.height: height
                 anchors.centerIn: parent
                 fillMode: Image.PreserveAspectFit
             }

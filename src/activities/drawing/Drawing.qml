@@ -123,9 +123,9 @@ ActivityBase {
             property int sizeS: 2
             property int index: 0
             property real globalOpacityValue: 1
-            property string toolSelected: "pencil"
+            property string toolSelected: "hardBrush"
             property string patternType: "dot"
-            property string lastToolSelected: "pencil"
+            property string lastToolSelected: "hardBrush"
             property string toolCategory: "Brush"
             property string userFiles: ApplicationInfo.getSharedWritablePath() + "/drawing/"
 
@@ -407,7 +407,7 @@ ActivityBase {
                         tempCanvas.ctx.strokeStyle = items.toolCategory === "Eraser" ? items.backgroundColor : items.paintColor
                         tempCanvas.ctx.fillStyle = tempCanvas.ctx.strokeStyle
 
-                        if (items.toolSelected === "blur") {
+                        if (items.toolSelected === "softBrush") {
                             tempCanvas.addShadow()
                         } else {
                             tempCanvas.removeShadow()

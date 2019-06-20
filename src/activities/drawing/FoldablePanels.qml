@@ -63,8 +63,6 @@ Item {
 
     ListModel {
         id: toolsModel
-        //        ListElement { itemName: qsTr("Pencil")
-        //            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pen.svg" }
         ListElement { itemName: qsTr("Brush")
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush_paint.png" }
         ListElement { itemName: qsTr("Geometric")
