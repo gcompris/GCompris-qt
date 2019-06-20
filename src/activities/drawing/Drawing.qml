@@ -120,13 +120,14 @@ ActivityBase {
             property bool mainAnimationOnX: true
             property bool undoLock: false
             property bool resizeLock: false
-            property int sizeS: 2
+            property int sizeS: 6
             property int index: 0
             property real globalOpacityValue: 1
             property string toolSelected: "hardBrush"
             property string patternType: "dot"
             property string lastToolSelected: "hardBrush"
             property string toolCategory: "Brush"
+            property string selectedModeIcon: "qrc:/gcompris/src/activities/drawing/resource/hardBrush.svg"
             property string userFiles: ApplicationInfo.getSharedWritablePath() + "/drawing/"
 
         }

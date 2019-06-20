@@ -334,16 +334,16 @@ Item {
             width: height
             color: "#00000000"
             radius: 10
-            opacity: items.globalOpacityValue
             anchors.right: parent.right
             anchors.rightMargin: parent.height * 0.1
             anchors.verticalCenter: parent.verticalCenter
-            Rectangle{
+            Image {
                 id: optionsIcon
+                source: items.selectedModeIcon
                 height: parent.height * items.sizeS * 0.04
                 width: height
-                radius: height * 0.5
-                color: "#ffffff"
+                sourceSize.width: parent.height
+                sourceSize.height: parent.height
                 opacity: items.globalOpacityValue
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -503,6 +503,8 @@ Item {
                                 items.toolCategory = itemName
                             }
                             Activity.selectTool(itemName)
+                            toolsMode.resetIndex()
+                            toolsMode.updateModeIcon()
                             foldAnimation.start()
                         }
                     }

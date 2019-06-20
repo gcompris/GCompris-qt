@@ -37,6 +37,13 @@ Item {
     property real activeStampHeight: 180.0
     property real activeStampWidth: activeStampHeight //* activeStampDimensionRatio
 
+    function updateModeIcon() {
+        items.selectedModeIcon = modes.model.get(modes.currentIndex).imgSource
+    }
+    
+    function resetIndex() {
+        modes.currentIndex = 0
+    }
 
     ListModel {
         id: brushModes
@@ -106,6 +113,7 @@ Item {
         anchors.leftMargin: 20
         model: brushModes
         delegate: modesComponent
+        currentIndex: 0
     }
 
     Component {
@@ -113,9 +121,10 @@ Item {
         Rectangle {
             width: modes.cellWidth
             height: modes.cellHeight
-            color: (modes.model !== stampsModel && items.toolSelected == name) ? "lightblue" : "transparent"
+            color: (modes.model !== stampsModel && modes.currentIndex == index) ? "lightblue" : "transparent"
             radius: 10
             Image {
+                id: modeIcon
                 source: imgSource
                 width: parent.width * 0.80
                 height: parent.height * 0.80
@@ -127,6 +136,8 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
+                    modes.currentIndex = index
+                    updateModeIcon()
                     if(modes.model !== stampsModel) {
                         items.toolSelected = name
                         items.lastToolSelected = name
@@ -158,7 +169,7 @@ Item {
         anchors.horizontalCenter: toolsTipSize.horizontalCenter
         anchors.topMargin: 30
         value: 1
-        minimumValue: 0
+        minimumValue: 0.02
         maximumValue: 1
         stepSize: 0.1
         onValueChanged: {
