@@ -403,7 +403,7 @@ ActivityBase {
 
                         mappedMouse = mapToItem(parent, mouseX, mouseY)
 
-                        print("tools: ",items.toolSelected)
+                        print("tools: ", items.toolSelected)
                         
                         canvas.ctx = canvas.getContext("2d")
                         tempCanvas.ctx = tempCanvas.getContext("2d")
@@ -426,7 +426,7 @@ ActivityBase {
                         } else if (items.toolSelected == "brush4") {
                             canvas.ctx.strokeStyle = "#ffffff"
                             Activity.points.push({x: mouseX, y: mouseY})
-                        } else if (items.toolSelected == "brush5") {
+                        } else if (items.toolSelected == "sketchBrush") {
                             Activity.connectedPoints.push({x: mouseX, y: mouseY})
                         } else {
                             initMouse()
@@ -512,7 +512,6 @@ ActivityBase {
                             canvas.ctx.fillText(onBoardText.text,area.realMouseX,area.realMouseY)
                             onBoardText.text = ""
                             Activity.selectTool("Brush")
-
                             canvas.requestPaint()
                         }
 
@@ -521,7 +520,7 @@ ActivityBase {
                                 items.toolSelected == "brush4")
                             Activity.points = []
 
-                        if (items.toolSelected == "brush5")
+                        if (items.toolSelected == "sketchBrush")
                             Activity.connectedPoints = []
                             
                         if (items.toolSelected != "stamp" && items.toolSelected != "fill") {
@@ -549,7 +548,6 @@ ActivityBase {
                             canvas.lastY = area.mouseY
                             tempCanvas.ctx.lineTo(canvas.lastX, canvas.lastY)
                             tempCanvas.ctx.stroke()
-
                             tempCanvas.requestPaint()
                         } else if (items.toolSelected == "rectangle") {
                             mappedMouse = mapToItem(parent, mouseX, mouseY)
@@ -738,7 +736,7 @@ ActivityBase {
                                 canvas.ctx.stroke();
                             }
                             canvas.requestPaint()
-                        } else if(items.toolSelected == "brush5") {
+                        } else if(items.toolSelected == "sketchBrush") {
                             canvas.removeShadow()
                             Activity.connectedPoints.push({x: mouseX, y: mouseY})
                             canvas.ctx.lineJoin = canvas.ctx.lineCap = 'round';

@@ -54,7 +54,7 @@ Item {
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush3.png" }
         ListElement { name: "brush4";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush4.png" }
-        ListElement { name: "brush5";
+        ListElement { name: "sketchBrush";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush5.png" }
         ListElement { name: "blur";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/blur.png" }
