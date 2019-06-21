@@ -24,7 +24,7 @@
 var url = "qrc:/gcompris/src/activities/magic-hat-minus/resource/"
 
 var currentLevel
-var numberOfLevel = 9
+var numberOfLevel
 var numberOfUserStars
 var items;
 var mode;
@@ -33,12 +33,17 @@ var numberOfStars
 var nbStarsToAddOrRemove
 var nbStarsToCount
 var animationCount
+var questionCoefficients = []
+var maxStarSlots = 30
+var answerCoefficients = []
+var coefficientsNeeded = false
 
 function start(items_, mode_) {
     items = items_
     mode = mode_
     magicHat = items.hat
     currentLevel = 0
+    numberOfLevel = items.levels.length
     initLevel()
 }
 
@@ -59,53 +64,38 @@ function initLevel() {
     } else {
         items.introductionText.visible = true
     }
-
-    for(var j=0; j<3; j++) {
+    coefficientsNeeded = (items.maxValue / maxStarSlots <= 1) ? false : true
+    for(var j = 0; j < 3; j++) {
         items.repeatersList[0].itemAt(j).initStars()
         items.repeatersList[1].itemAt(j).initStars()
         items.repeatersList[2].itemAt(j).resetStars()
     }
-
-    var maxValue = mode === "minus" ? 10 : 9
-    switch(currentLevel) {
-        case 0: numberOfStars[0] = getRandomInt(2,4)
-             break;
-        case 1: numberOfStars[0] = getRandomInt(2,6)
-             break;
-        case 2: numberOfStars[0] = getRandomInt(2,maxValue)
-            break;
-        case 3: numberOfStars[0] = getRandomInt(2,5)
-                numberOfStars[1] = getRandomInt(2,5)
-            break;
-        case 4: numberOfStars[0] = getRandomInt(2,8)
-                numberOfStars[1] = getRandomInt(2,8)
-             break;
-        case 5: numberOfStars[0] = getRandomInt(2,maxValue)
-                numberOfStars[1] = getRandomInt(2,maxValue)
-             break;
-        case 6: numberOfStars[0] = getRandomInt(2,4)
-                numberOfStars[1] = getRandomInt(2,4)
-                numberOfStars[2] = getRandomInt(2,4)
-            break;
-        case 7: numberOfStars[0] = getRandomInt(2,6)
-                numberOfStars[1] = getRandomInt(2,6)
-                numberOfStars[2] = getRandomInt(2,6)
-            break;
-        case 8: numberOfStars[0] = getRandomInt(2,8)
-                numberOfStars[1] = getRandomInt(2,8)
-                numberOfStars[2] = getRandomInt(2,8)
-            break;
-        case 9: numberOfStars[0] = getRandomInt(2,maxValue)
-                numberOfStars[1] = getRandomInt(2,maxValue)
-                numberOfStars[2] = getRandomInt(2,maxValue)
-            break;
+    if(!coefficientsNeeded) {
+        questionCoefficients[0] = questionCoefficients[1] = questionCoefficients[2] = 1;
+        answerCoefficients[0] = answerCoefficients[1] = answerCoefficients[2] = 1;
+        setCoefficientVisibility(false)
+    } else {
+        for(var i = 0; i < 3; i++)
+            questionCoefficients[i] = Math.round(items.levels[currentLevel].maxStars[i] / 10);
+        answerCoefficients[0] = items.maxValue / 100;
+        answerCoefficients[1] = items.maxValue / 20;
+        answerCoefficients[2] = items.maxValue / 10;
+        setCoefficientVisibility(true)
+        setWantedColor("1")
     }
+    var subtractor = (mode === "minus") ? 0 : 1
+    numberOfStars[0] = (items.levels[currentLevel].maxStars[0] > 0) ? getRandomInt(items.levels[currentLevel].minStars[0], (items.levels[currentLevel].maxStars[0] / questionCoefficients[0]) - subtractor) : 0
+    numberOfStars[1] = (items.levels[currentLevel].maxStars[1] > 0) ? getRandomInt(items.levels[currentLevel].minStars[1], (items.levels[currentLevel].maxStars[1] / questionCoefficients[1]) - subtractor) : 0
+    numberOfStars[2] = (items.levels[currentLevel].maxStars[2] > 0) ? getRandomInt(items.levels[currentLevel].minStars[2], (items.levels[currentLevel].maxStars[2] / questionCoefficients[2]) - subtractor) : 0
 
     for(var i=0; i<3; i++) {
         items.repeatersList[0].itemAt(i).nbStarsOn = numberOfStars[i]
+        items.repeatersList[0].itemAt(i).coefficient = questionCoefficients[i]
         items.repeatersList[1].itemAt(i).nbStarsOn = 0
+        items.repeatersList[1].itemAt(i).coefficient = questionCoefficients[i]
         items.repeatersList[2].itemAt(i).nbStarsOn = 0
         items.repeatersList[2].itemAt(i).authorizeClick = false
+        items.repeatersList[2].itemAt(i).coefficient = answerCoefficients[i]
         if(numberOfStars[i] > 0) {
             items.repeatersList[0].itemAt(i).opacity = 1
             items.repeatersList[1].itemAt(i).opacity = 1
@@ -123,14 +113,32 @@ function initLevel() {
     }
 
     if(mode === "minus") {
-        for(var i=0; i<3; i++) {
+        for(var i = 0; i < 3; i++) {
             nbStarsToCount[i] = numberOfStars[i] - nbStarsToAddOrRemove[i]
             items.repeatersList[1].itemAt(i).nbStarsOn = 0
         }
     } else {
-        for(var i=0; i<3; i++) {
+        for(var i = 0; i < 3; i++) {
             nbStarsToCount[i] = numberOfStars[i]+nbStarsToAddOrRemove[i]
             items.repeatersList[1].itemAt(i).nbStarsOn = nbStarsToAddOrRemove[i]
+        }
+    }
+}
+
+function setCoefficientVisibility(visibility) {
+    for(var i = 0; i < 3; i++) {
+        for(var j = 0; j < 3; j++) {
+            items.repeatersList[j].itemAt(i).coefficientVisible = visibility
+        }
+    }
+}
+
+function setWantedColor(colorValue) {
+    if(colorValue != null) {
+        for(var i = 0; i < 3; i++) {
+            for(var j = 0; j < 3; j++) {
+                items.repeatersList[j].itemAt(i).starsColor = colorValue
+            }
         }
     }
 }
@@ -143,12 +151,23 @@ function userClickedAStar(barIndex,state) {
 }
 
 function verifyAnswer() {
-    if(numberOfUserStars[0] === nbStarsToCount[0] &&
-       numberOfUserStars[1] === nbStarsToCount[1] &&
-       numberOfUserStars[2] === nbStarsToCount[2]) {
-        items.bonus.good("flower")
+    if(items.maxValue / maxStarSlots <= 1) {
+        if(numberOfUserStars[0] === nbStarsToCount[0] &&
+        numberOfUserStars[1] === nbStarsToCount[1] &&
+        numberOfUserStars[2] === nbStarsToCount[2]) {
+            items.bonus.good("flower")
+        } else {
+            items.bonus.bad("flower")
+        }
     } else {
-        items.bonus.bad("flower")
+        var starsCalculatedByUser = numberOfUserStars[0] * answerCoefficients[0] + numberOfUserStars[1] * answerCoefficients[1] +
+                                                    numberOfUserStars[2] * answerCoefficients[2];
+        var actualNumberOfStars = nbStarsToCount[0] * questionCoefficients[0] + nbStarsToCount[1] * questionCoefficients[1] +
+        nbStarsToCount[2] * questionCoefficients[2];
+        if(starsCalculatedByUser == actualNumberOfStars)
+            items.bonus.good("flower")
+        else
+            items.bonus.bad("flower")
     }
 }
 
@@ -171,13 +190,13 @@ function moveStarsUnderHat() {
         items.introductionText.visible = false
     }
 
-    for(var j=0; j<3; j++) {
+    for(var j = 0; j < 3; j++) {
         items.repeatersList[0].itemAt(j).moveStars()
     }
 }
 
 function moveBackMinusStars() {
-    for(var j=0; j<3; j++) {
+    for(var j = 0; j < 3; j++) {
         items.repeatersList[0].itemAt(j).
           moveBackMinusStars(items.repeatersList[1].itemAt(j),
                              nbStarsToAddOrRemove[j])
@@ -185,7 +204,7 @@ function moveBackMinusStars() {
 }
 
 function movePlusStars() {
-    for(var j=0; j<3; j++) {
+    for(var j = 0; j < 3; j++) {
         items.repeatersList[1].itemAt(j).moveStars()
     }
 }
@@ -219,7 +238,7 @@ function animation2Finished()
 }
 
 function userGuessNumberState() {
-    for(var i=0; i<3; i++) {
+    for(var i = 0; i < 3; i++) {
         if(numberOfStars[i] + nbStarsToAddOrRemove[i])
             items.repeatersList[2].itemAt(i).authorizeClick = true
     }

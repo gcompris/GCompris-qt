@@ -48,6 +48,7 @@ ActivityBase {
         property var starColors : ["1", "2", "3"]
         
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -64,6 +65,8 @@ ActivityBase {
             property alias background: background
             property GCSfx audioEffects: activity.audioEffects
             property alias bar: bar
+            property var levels: activity.datasetLoader.item.data
+            property int maxValue: activity.datasetLoader.item.maxValue
             property alias bonus: bonus
             property alias hat: theHat
             property alias introductionText: introText
@@ -200,6 +203,24 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                home()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -207,9 +228,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
