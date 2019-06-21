@@ -64,6 +64,8 @@ ActivityBase {
             property alias background: background
             property GCSfx audioEffects: activity.audioEffects
             property alias bar: bar
+            property var levels: activity.datasetLoader.item.data
+            property var range: activity.datasetLoader.item.range
             property alias bonus: bonus
             property alias hat: theHat
             property alias introductionText: introText

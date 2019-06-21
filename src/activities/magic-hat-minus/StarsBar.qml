@@ -21,6 +21,7 @@
  */
 import QtQuick 2.6
 import "magic-hat.js" as Activity
+import "../../core"
 
 Item {
     id: item
@@ -29,6 +30,9 @@ Item {
     property int barIndex
     property int nbStarsOn: 0
     property bool authorizeClick: false
+    property int coefficient: 1
+    property bool coefficientVisible: false
+    property var maxRange
     property int starsSize
     property string backgroundColor
     property string starsColor: "1"
@@ -39,6 +43,16 @@ Item {
         id: rowlayout
         height: item.height
         spacing: 5
+        GCText {
+            id: text
+            visible: item.coefficientVisible
+            text: qsTr(item.coefficient.toString() + "  x")
+            fontSizeMode: Text.HorizontalFit
+            width: rowlayout.width / 10
+            color: "white"
+            anchors.rightMargin: 20
+            fontSize: tinySize
+        }
         Repeater {
             id: repeaterStars
             model: item.opacity == 1 ? 10 : 0

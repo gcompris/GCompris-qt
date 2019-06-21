@@ -24,7 +24,7 @@
 var url = "qrc:/gcompris/src/activities/magic-hat-minus/resource/"
 
 var currentLevel
-var numberOfLevel = 9
+var numberOfLevel
 var numberOfUserStars
 var items;
 var mode;
@@ -33,12 +33,16 @@ var numberOfStars
 var nbStarsToAddOrRemove
 var nbStarsToCount
 var animationCount
+var coffieients = []
+var answerCofficients = []
+var coefficientsNeeded = false
 
 function start(items_, mode_) {
     items = items_
     mode = mode_
     magicHat = items.hat
     currentLevel = 0
+    numberOfLevel = items.levels.length
     initLevel()
 }
 
@@ -59,53 +63,39 @@ function initLevel() {
     } else {
         items.introductionText.visible = true
     }
-
+    coefficientsNeeded = items.range / 30 <= 1 ? false : true
     for(var j=0; j<3; j++) {
         items.repeatersList[0].itemAt(j).initStars()
         items.repeatersList[1].itemAt(j).initStars()
         items.repeatersList[2].itemAt(j).resetStars()
     }
-
-    var maxValue = mode === "minus" ? 10 : 9
-    switch(currentLevel) {
-        case 0: numberOfStars[0] = getRandomInt(2,4)
-             break;
-        case 1: numberOfStars[0] = getRandomInt(2,6)
-             break;
-        case 2: numberOfStars[0] = getRandomInt(2,maxValue)
-            break;
-        case 3: numberOfStars[0] = getRandomInt(2,5)
-                numberOfStars[1] = getRandomInt(2,5)
-            break;
-        case 4: numberOfStars[0] = getRandomInt(2,8)
-                numberOfStars[1] = getRandomInt(2,8)
-             break;
-        case 5: numberOfStars[0] = getRandomInt(2,maxValue)
-                numberOfStars[1] = getRandomInt(2,maxValue)
-             break;
-        case 6: numberOfStars[0] = getRandomInt(2,4)
-                numberOfStars[1] = getRandomInt(2,4)
-                numberOfStars[2] = getRandomInt(2,4)
-            break;
-        case 7: numberOfStars[0] = getRandomInt(2,6)
-                numberOfStars[1] = getRandomInt(2,6)
-                numberOfStars[2] = getRandomInt(2,6)
-            break;
-        case 8: numberOfStars[0] = getRandomInt(2,8)
-                numberOfStars[1] = getRandomInt(2,8)
-                numberOfStars[2] = getRandomInt(2,8)
-            break;
-        case 9: numberOfStars[0] = getRandomInt(2,maxValue)
-                numberOfStars[1] = getRandomInt(2,maxValue)
-                numberOfStars[2] = getRandomInt(2,maxValue)
-            break;
+    if(!coefficientsNeeded) {
+        coffieients[0] = coffieients[1] = coffieients[2] = 1;
+        answerCofficients[0] = answerCofficients[1] = answerCofficients[2] = 1;
+        setCoefficientVisibility(false)
+        setWantedColor()
+    } else {
+        for(var i = 0; i < 3; i++)
+            coffieients[i] = Math.round(items.levels[currentLevel].maxStars[i] / 10);
+        answerCofficients[0] = items.range / 100;
+        answerCofficients[1] = items.range / 20;
+        answerCofficients[2] = items.range / 10;
+        setCoefficientVisibility(true)
+        setWantedColor("1")
     }
+    var subtractor = mode === "minus" ? 0 : 1
+    numberOfStars[0] = items.levels[currentLevel].maxStars[0] > 0 ? getRandomInt(items.levels[currentLevel].minStars[0], (items.levels[currentLevel].maxStars[0] / coffieients[0]) - subtractor) : 0
+    numberOfStars[1] = items.levels[currentLevel].maxStars[1] > 0 ? getRandomInt(items.levels[currentLevel].minStars[1], (items.levels[currentLevel].maxStars[1] / coffieients[1]) - subtractor) : 0
+    numberOfStars[2] = items.levels[currentLevel].maxStars[2] > 0 ? getRandomInt(items.levels[currentLevel].minStars[2], (items.levels[currentLevel].maxStars[2] / coffieients[2]) - subtractor) : 0
 
     for(var i=0; i<3; i++) {
         items.repeatersList[0].itemAt(i).nbStarsOn = numberOfStars[i]
+        items.repeatersList[0].itemAt(i).coefficient = coffieients[i]
         items.repeatersList[1].itemAt(i).nbStarsOn = 0
+        items.repeatersList[1].itemAt(i).coefficient = coffieients[i]
         items.repeatersList[2].itemAt(i).nbStarsOn = 0
         items.repeatersList[2].itemAt(i).authorizeClick = false
+        items.repeatersList[2].itemAt(i).coefficient = answerCofficients[i]
         if(numberOfStars[i] > 0) {
             items.repeatersList[0].itemAt(i).opacity = 1
             items.repeatersList[1].itemAt(i).opacity = 1
@@ -135,6 +125,27 @@ function initLevel() {
     }
 }
 
+function setCoefficientVisibility(visibility) {
+    for(var i=0; i<3; i++) {
+        items.repeatersList[0].itemAt(i).coefficientVisible = visibility
+        items.repeatersList[1].itemAt(i).coefficientVisible = visibility
+        items.repeatersList[2].itemAt(i).coefficientVisible = visibility
+        items.repeatersList[0].itemAt(i).maxRange = items.range.toString()
+        items.repeatersList[1].itemAt(i).maxRange = items.range.toString()
+        items.repeatersList[2].itemAt(i).maxRange = items.range.toString()
+    }
+}
+
+function setWantedColor(colorValue) {
+    if(colorValue != null) {
+        for(var i=0; i<3; i++) {
+            items.repeatersList[0].itemAt(i).starsColor = colorValue
+            items.repeatersList[1].itemAt(i).starsColor = colorValue
+            items.repeatersList[2].itemAt(i).starsColor = colorValue
+        }
+    }
+}
+
 function userClickedAStar(barIndex,state) { 
     if(state)
         numberOfUserStars[barIndex]++
@@ -143,12 +154,23 @@ function userClickedAStar(barIndex,state) {
 }
 
 function verifyAnswer() {
-    if(numberOfUserStars[0] === nbStarsToCount[0] &&
-       numberOfUserStars[1] === nbStarsToCount[1] &&
-       numberOfUserStars[2] === nbStarsToCount[2]) {
-        items.bonus.good("flower")
+    if(items.range / 30 <= 1) {
+        if(numberOfUserStars[0] === nbStarsToCount[0] &&
+        numberOfUserStars[1] === nbStarsToCount[1] &&
+        numberOfUserStars[2] === nbStarsToCount[2]) {
+            items.bonus.good("flower")
+        } else {
+            items.bonus.bad("flower")
+        }
     } else {
-        items.bonus.bad("flower")
+        var userStars = numberOfUserStars[0] * answerCofficients[0] + numberOfUserStars[1] * answerCofficients[1] +
+                                                    numberOfUserStars[2] * answerCofficients[2];
+        var toBeStars = nbStarsToCount[0] * coffieients[0] + nbStarsToCount[1] * coffieients[1] +
+        nbStarsToCount[2] * coffieients[2];
+        if( userStars ==  toBeStars)
+            items.bonus.good("flower")
+        else
+            items.bonus.bad("flower")
     }
 }
 
