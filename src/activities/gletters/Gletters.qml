@@ -86,7 +86,8 @@ ActivityBase {
             property Item main: activity.main
             property Item ourActivity: activity
             property GCAudio audioVoices: activity.audioVoices
-            property var levels: activity.datasetLoader.item !== null ? activity.datasetLoader.item.data : undefined
+            property var levels: activity.datasetLoader.item !== null ? activity.datasetLoader.item.data : null
+            property var instructionText: ""
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -104,6 +105,50 @@ ActivityBase {
             Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
+
+        //instruction rectangle
+        Rectangle {
+            id: instruction
+            anchors {
+                top: parent.top
+                topMargin: 5
+                horizontalCenter: parent.horizontalCenter
+            }
+            height: instructionTxt.contentHeight * 1.1
+            width: Math.max(Math.min(parent.width * 0.8, instructionTxt.text.length * 10), parent.width * 0.3)
+            opacity: 0.8
+            visible: items.levels
+            radius: 10
+            border.width: 2
+            z: 10
+            border.color: "#DDD"
+            color: "#373737"
+
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            //shows/hides the Instruction
+            MouseArea {
+                anchors.fill: parent
+                onClicked: instruction.opacity = instruction.opacity == 0 ? 0.8 : 0
+            }
+
+            GCText {
+                id: instructionTxt
+                anchors {
+                    top: parent.top
+                    topMargin: 5
+                    horizontalCenter: parent.horizontalCenter
+                }
+                opacity: instruction.opacity
+                z: instruction.z
+                fontSize: smallSize
+                color: "white"
+                text: items.instructionText
+                horizontalAlignment: Text.AlignHCenter
+                width: parent.width * 0.8
+                wrapMode: TextEdit.WordWrap
+            }
+        }
 
         TextInput {
             // Helper element to capture composed key events like french ô which

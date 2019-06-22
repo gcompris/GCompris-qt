@@ -76,7 +76,7 @@ function start(items_, uppercaseOnly_,  _mode) {
 
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
-    if(items.levels == undefined)
+    if(!items.levels)
         items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
             items.ourActivity.dataSetUrl + "default-"+locale+".json"));
     else
@@ -95,7 +95,7 @@ function start(items_, uppercaseOnly_,  _mode) {
         }
         // If not found, we will use the default file
         items.wordlist.useDefault = true
-        if(items.levels == undefined)
+        if(!items.levels)
             items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
             items.ourActivity.dataSetUrl + "default-"+localeShort+".json"));
         else
@@ -115,6 +115,8 @@ function stop() {
 }
 
 function initLevel() {
+    if(items.levels)
+        items.instructionText = items.levels[currentLevel].objective
     items.audioVoices.clearQueue()
     items.bar.level = currentLevel + 1;
     wgMaxFallingItems = 3
@@ -415,7 +417,6 @@ function playLetter(letter) {
     items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
-
 
 function focusTextInput() {
     if (!GCompris.ApplicationInfo.isMobile && items && items.textinput)

@@ -23,11 +23,12 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-   objective: qsTr("Select number on dominoes up to 9")
+   objective: qsTr("Select a number on dominoes up to 9")
    difficulty: 3
    data: [
       {
          "level" : "1",
+         "objective" : "Select the number on dominoes up to 6",
          "words" : [
             "1",
             "2",
@@ -39,6 +40,7 @@ Dataset {
       },
       {
          "level" : "2",
+         "objective" : "Select the number on dominoes up to 7",
          "words" : [
             "1",
             "2",
@@ -51,6 +53,7 @@ Dataset {
       },
       {
          "level" : "3",
+         "objective" : "Select the number on dominoes up to 8",
          "words" : [
             "1",
             "2",
@@ -64,6 +67,7 @@ Dataset {
       },
       {
          "level" : "4",
+         "objective" : "Select the number on dominoes up to 9",
          "words" : [
             "1",
             "2",

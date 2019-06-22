@@ -23,11 +23,12 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Select number on dice up to 4")
+    objective: qsTr("Select a number on dice up to 4")
     difficulty: 1
     data: [
       {
          "level" : "1",
+         "objective" : "Select the number on dice up to 2",
          "words" : [
             "1",
             "2"
@@ -35,6 +36,7 @@ Dataset {
       },
       {
          "level" : "2",
+         "objective" : "Select the number on dice up to 3",
          "words" : [
             "1",
             "2",
@@ -43,6 +45,7 @@ Dataset {
       },
       {
          "level" : "3",
+         "objective" : "Select the number on dice up to 4",
          "words" : [
             "1",
             "2",
