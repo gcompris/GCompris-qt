@@ -24,7 +24,7 @@ import "../../../../core"
 import "../../../money/moneyConstants.js" as MoneyConstants
 
 Dataset {
-    objective: qsTr("Learn how to calculate change when amount paid is upto 100 units")
+    objective: qsTr("Learn how to calculate change when amount paid is up to 100 units")
     difficulty: 2
     property var moneyItems: MoneyConstants.moneyItems
     data: [
