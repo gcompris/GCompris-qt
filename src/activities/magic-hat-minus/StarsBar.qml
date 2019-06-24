@@ -46,7 +46,7 @@ Item {
         GCText {
             id: text
             visible: item.coefficientVisible
-            text: qsTr(item.coefficient.toString() + "  x")
+            text: qsTr("%1%2").arg(item.coefficient).arg("x")
             fontSizeMode: Text.HorizontalFit
             width: rowlayout.width / 10
             color: "white"

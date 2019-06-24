@@ -25,7 +25,7 @@ import "../../../../core"
 Dataset {
     objective: qsTr("Learn to calculate remaining stars upto 1000 with coefficients")
     difficulty: 5
-    property var range: 1000
+    property int maxValue: 1000
     data: [
       {
          "level" : "1",

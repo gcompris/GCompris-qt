@@ -23,44 +23,34 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-   objective: qsTr("Learn to calculate total stars upto 10")
-   difficulty: 2
-   property int maxValue: 10
-   data: [
+    objective: qsTr("Learn to calculate total stars upto 10000 with coefficients")
+    difficulty: 6
+    property int maxValue: 10000
+    data: [
       {
          "level" : "1",
-         "minStars" : [2, 0, 0],
-         "maxStars" : [3, 0, 0] 
+         "minStars" : [2, 2, 0],
+         "maxStars" : [500, 500, 0] 
       },
       {
          "level" : "2",
-         "minStars" : [2, 0, 0],
-         "maxStars" : [4, 0, 0] 
+         "minStars" : [2, 2, 0],
+         "maxStars" : [1000, 1000, 0] 
       },
       {
          "level" : "3",
-         "minStars" : [2, 0, 0],
-         "maxStars" : [5, 0, 0]
+         "minStars" : [2, 2, 2],
+         "maxStars" : [2000, 2000, 1000]
       },
       {
          "level" : "4",
-         "minStars" : [2, 0, 0],
-         "maxStars" : [6, 0, 0]
+         "minStars" : [2, 2, 2],
+         "maxStars" : [3000, 3000, 1000]
       },
       {
          "level" : "5",
-         "minStars" : [2, 0, 0],
-         "maxStars" : [7, 0, 0]
-      },
-      {
-         "level" : "6",
-         "minStars" : [2, 0, 0],
-         "maxStars" : [8, 0, 0]
-      },
-      {
-         "level" : "7",
-         "minStars" : [2, 0, 0],
-         "maxStars" : [9, 0, 0]
+         "minStars" : [2, 2, 2],
+         "maxStars" : [4000, 4000, 2000]
       }
    ]
 }
