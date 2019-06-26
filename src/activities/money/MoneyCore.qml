@@ -153,7 +153,9 @@ ActivityBase {
                             sourceSize.width: columnLayout.itemStoreHeight
                             GCText {
                                 text: modelData.price
-                                fontSize: 16
+                                height: parent.height
+                                width: parent.width
+                                fontSizeMode: Text.Fit
                                 font.weight: Font.DemiBold
                                 style: Text.Outline
                                 styleColor: "black"
