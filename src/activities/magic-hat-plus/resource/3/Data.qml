@@ -28,32 +28,26 @@ Dataset {
    property int maxValue: 30
    data: [
       {
-         "level" : "1",
          "minStars" : [2, 0, 0],
          "maxStars" : [5, 0, 0] 
       },
       {
-         "level" : "2",
          "minStars" : [2, 2, 0],
          "maxStars" : [7, 3, 0] 
       },
       {
-         "level" : "3",
          "minStars" : [2, 2, 0],
          "maxStars" : [8, 8, 0]
       },
       {
-         "level" : "4",
          "minStars" : [2, 2, 2],
          "maxStars" : [8, 8, 4]
       },
       {
-         "level" : "5",
          "minStars" : [2, 2, 2],
          "maxStars" : [9, 9, 7]
       },
       {
-         "level" : "6",
          "minStars" : [2, 2, 2],
          "maxStars" : [9, 9, 9]
       }

@@ -28,17 +28,14 @@ Dataset {
     property int maxValue: 10
     data: [
       {
-         "level" : "1",
          "minStars" : [2, 0, 0],
          "maxStars" : [3, 0, 0] 
       },
       {
-         "level" : "2",
          "minStars" : [2, 0, 0],
          "maxStars" : [4, 0, 0]
       },
       {
-         "level" : "3",
          "minStars" : [2, 0, 0],
          "maxStars" : [5, 0, 0]
       }
