@@ -45,7 +45,7 @@ Item {
         GCText {
             id: text
             visible: item.coefficientVisible
-            //: text displaying coefficient with which the set of stars is to be multiplied along with multipli.
+            //: text displaying coefficient with which the set of stars is to be multiplied along with multiplication symbol.
             text: qsTr("%1x").arg(item.coefficient)
             fontSizeMode: Text.HorizontalFit
             width: rowlayout.width / 10
