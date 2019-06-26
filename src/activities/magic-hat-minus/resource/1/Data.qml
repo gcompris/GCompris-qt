@@ -23,7 +23,7 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn to calculate remaining stars upto 5")
+    objective: qsTr("Learn to calculate remaining stars up to 5")
     difficulty: 1
     property int maxValue: 10
     data: [

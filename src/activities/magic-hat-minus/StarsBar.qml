@@ -32,7 +32,6 @@ Item {
     property bool authorizeClick: false
     property int coefficient: 1
     property bool coefficientVisible: false
-    property var maxRange
     property int starsSize
     property string backgroundColor
     property string starsColor: "1"
@@ -46,7 +45,8 @@ Item {
         GCText {
             id: text
             visible: item.coefficientVisible
-            text: qsTr("%1%2").arg(item.coefficient).arg("x")
+            //: text displaying coefficient with which the set of stars is to be multiplied along with multipli.
+            text: qsTr("%1x").arg(item.coefficient)
             fontSizeMode: Text.HorizontalFit
             width: rowlayout.width / 10
             color: "white"

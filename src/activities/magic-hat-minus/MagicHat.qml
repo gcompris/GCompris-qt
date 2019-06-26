@@ -65,7 +65,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property alias bar: bar
             property var levels: activity.datasetLoader.item.data
-            property var maxValue: activity.datasetLoader.item.maxValue
+            property int maxValue: activity.datasetLoader.item.maxValue
             property alias bonus: bonus
             property alias hat: theHat
             property alias introductionText: introText
