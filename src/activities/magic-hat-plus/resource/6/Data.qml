@@ -28,8 +28,8 @@ Dataset {
     property int maxValue: 10000
     data: [
       {
-         "minStars" : [2, 2, 0],
-         "maxStars" : [500, 500, 0] 
+         "minStars" : [2, 0, 0],
+         "maxStars" : [1000, 0, 0]
       },
       {
          "minStars" : [2, 2, 0],

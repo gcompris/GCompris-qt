@@ -74,7 +74,6 @@ function initLevel() {
         questionCoefficients[0] = questionCoefficients[1] = questionCoefficients[2] = 1;
         answerCoefficients[0] = answerCoefficients[1] = answerCoefficients[2] = 1;
         setCoefficientVisibility(false)
-        setWantedColor()
     } else {
         for(var i = 0; i < 3; i++)
             questionCoefficients[i] = Math.round(items.levels[currentLevel].maxStars[i] / 10);
@@ -165,7 +164,7 @@ function verifyAnswer() {
                                                     numberOfUserStars[2] * answerCoefficients[2];
         var actualNumberOfStars = nbStarsToCount[0] * questionCoefficients[0] + nbStarsToCount[1] * questionCoefficients[1] +
         nbStarsToCount[2] * questionCoefficients[2];
-        if(starsCalculatedByUser ==  actualNumberOfStars)
+        if(starsCalculatedByUser == actualNumberOfStars)
             items.bonus.good("flower")
         else
             items.bonus.bad("flower")
