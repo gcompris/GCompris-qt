@@ -56,11 +56,11 @@ Item {
         ListElement { name: "spray";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/spray.png" }
         ListElement { name: "dot";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern1.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/patternCircles.svg" }
         ListElement { name: "pattern2";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern3.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/patternH.svg" }
         ListElement { name: "pattern3";
-            imgSource: "qrc:/gcompris/src/activities/drawing/resource/pattern3.png" }
+            imgSource: "qrc:/gcompris/src/activities/drawing/resource/patternV.svg" }
         ListElement { name: "brush3";
             imgSource: "qrc:/gcompris/src/activities/drawing/resource/brush3.png" }
         ListElement { name: "brush4";
