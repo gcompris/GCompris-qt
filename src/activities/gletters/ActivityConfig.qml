@@ -49,7 +49,6 @@ Item {
                 background: activityConfiguration.background
                 label: qsTr("Select your locale")
             }
-            
         }
         GCDialogCheckBox {
             id: uppercaseBox
@@ -73,7 +72,6 @@ Item {
                 break;
             }
         }
-    
     }
 
     function saveValues() {
@@ -93,7 +91,7 @@ Item {
         if(oldLocale !== newLocale || oldUppercaseMode !== activityConfiguration.uppercaseOnly) {
             configHasChanged = true;
         }
-    
+
         // Restart the activity with new information
         if(configHasChanged) {
             background.stop();
