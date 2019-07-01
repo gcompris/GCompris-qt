@@ -259,6 +259,8 @@ ActivityBase {
                 currentActivity.currentLevel = dialogActivityConfig.chosenLevel
                 ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
                 home()
+                background.stop()
+                background.start()
             }
             onClose: {
                 home()
