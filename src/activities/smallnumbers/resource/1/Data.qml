@@ -28,7 +28,7 @@ Dataset {
     data: [
       {
          "level" : "1",
-         "objective" : "Select the number on dice up to 2",
+         "objective" : qsTr("Select the number on dice up to 2"),
          "words" : [
             "1",
             "2"
@@ -36,7 +36,7 @@ Dataset {
       },
       {
          "level" : "2",
-         "objective" : "Select the number on dice up to 3",
+         "objective" : qsTr("Select the number on dice up to 3"),
          "words" : [
             "1",
             "2",
@@ -45,7 +45,7 @@ Dataset {
       },
       {
          "level" : "3",
-         "objective" : "Select the number on dice up to 4",
+         "objective" : qsTr("Select the number on dice up to 4"),
          "words" : [
             "1",
             "2",

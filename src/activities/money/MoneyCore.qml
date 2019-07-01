@@ -64,7 +64,7 @@ ActivityBase {
             property alias bonus: bonus
             property int itemIndex
             property int pocketRows
-            property var verticalOrientation: background.height > background.width - bar.height
+            property bool verticalOrientation: background.height > background.width - bar.height
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
