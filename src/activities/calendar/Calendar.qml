@@ -57,6 +57,7 @@ ActivityBase {
             property alias calendar: calendar
             property alias okButton: okButton
             property alias questionItem: questionItem
+            property var levels: activity.datasetLoader.item.data
             property alias score: score
             property alias answerChoices: answerChoices
             property alias questionDelay: questionDelay
@@ -65,7 +66,7 @@ ActivityBase {
             property alias daysOfTheWeekModel: daysOfTheWeekModel
         }
 
-        onStart: { Activity.start(items, dataset) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
         Keys.onPressed: (answerChoices.visible) ? answerChoices.handleKeys(event) : handleKeys(event);
 
