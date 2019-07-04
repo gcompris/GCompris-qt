@@ -162,6 +162,7 @@ function getTemplateQuestionText(mode, date) {
     } else {
         questionText = "Find the date " + date.offset.toString() + " days after " + date.day.toString() + "-" +
         (date.month + 1).toString() + "-" + date.year.toString();
+
     }
     return questionText
 }
@@ -177,6 +178,7 @@ function initQuestion() {
             if(currentLevelConfig.mode == "findDayOfWeek") {
                 var selectedDate = new Date(randomDate.year, randomDate.month - 1, randomDate.day)
                 correctAnswer.dayOfWeek = Number(selectedDate.getDay())
+
             } else if(currentLevelConfig.mode == "findYearMonthDay") {
                 correctAnswer = addOffsetToCurrentDate(randomDate)
                 randomDate.offset = correctAnswer.offset
