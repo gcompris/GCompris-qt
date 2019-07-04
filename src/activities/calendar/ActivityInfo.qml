@@ -37,5 +37,5 @@ ActivityInfo {
     credit: ""
     section: "math measures"
     createdInVersion: 9000
-    levels: "1"
+    levels: "1,2,3"
 }

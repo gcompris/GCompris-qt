@@ -40,6 +40,7 @@ var minRange //sum of min. visible month and year on calendar for navigation bar
 var maxRange //sum of max. visible month and year on calendar for navigation bar next/prev button visibility.
 var correctAnswer
 var mode
+var daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 function start(items_) {
     items = items_
@@ -108,7 +109,6 @@ function isLeapYear(year) {
 }
 
 function generateRandomYearMonthDay(minimumDate, maximumDate) {
-    var daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     var minYear = Number(minimumDate.slice(0, 4))
     var maxYear = Number(maximumDate.slice(0, 4))
     var minMonth = Number(minimumDate.slice(5, 7))
@@ -119,17 +119,24 @@ function generateRandomYearMonthDay(minimumDate, maximumDate) {
     var currentMonth = minMonth + Math.floor(Math.random() * Math.floor((maxMonth - minMonth)))
     var currentDate
     daysInMonths[1] = (isLeapYear(currentYear)) ? 29 : 28;
-    currentDate = minDate + Math.floor(Math.random() * Math.floor((daysInMonths[currentMonth - 1] - minMonth)))
-    var maxOffset = (maxDate - minDate) + (maxMonth - minMonth) * 28 + (maxYear - minYear) * 365
-    var offset = 1 + Math.floor(Math.random() * Math.floor(maxOffset))
+    currentDate = minDate + Math.floor(Math.random() * Math.floor((daysInMonths[currentMonth - 1] - minDate)))
+    return { year: currentYear, month: currentMonth - 1, day: currentDate }
+}
+
+function addOffsetToCurrentDate(currentDate) {
+    var maxOffset = currentLevelConfig.questionAnswers.maxOffset
+    console.log(typeof maxOffset)
+    var offset = Math.floor(maxOffset / 2) + Math.floor(Math.random() * Math.floor(maxOffset))
+    console.log(offset)
+    daysInMonths[1] = (isLeapYear(currentDate.year)) ? 29 : 28;
     var currentOffset = offset;
-    currentOffset += currentDate 
+    currentOffset += currentDate.day
     var answerDate = 1;
-    var answerMonth = currentMonth
-    var answerYear = currentYear
+    var answerMonth = currentDate.month
+    var answerYear = currentDate.year
     while(currentOffset > 0) {
-        if(currentOffset - daysInMonths[answerMonth - 1] > 0) {
-            currentOffset -= daysInMonths[answerMonth - 1]
+        if(currentOffset - daysInMonths[answerMonth] > 0) {
+            currentOffset -= daysInMonths[answerMonth]
             answerMonth++;
         } else {
             answerDate = currentOffset;
@@ -137,26 +144,24 @@ function generateRandomYearMonthDay(minimumDate, maximumDate) {
         }
         if(answerMonth > 12) {
             answerYear++;
-            answerMonth = 1;
+            daysInMonths[1] = (isLeapYear(answerYear)) ? 29 : 28;
+            answerMonth = 0;
         }
     }
-
-    var question = "Find the date " + offset.toString() + "days after " + currentYear.toString() + "-" +
-        currentMonth.toString() + "-" + currentDate.toString();
-    return { year: answerYear, month: answerMonth - 1, day: answerDate, offset: offset } 
+    return { year: answerYear, month: answerMonth, day: answerDate, offset: offset } 
 }
 
 function getTemplateQuestionText(mode, date) {
     var questionText
     if(mode == "findDayOfWeek") {
-        questionText = "Find the Week Day on " + date.day.toString()
+        questionText = "Find the weekday on " + date.day.toString()
     } else if(mode == "findDay") {
         questionText = "Select Day " + date.day.toString()
     } else if(mode == "findMonthOnly") {
-        questionText = "Find the month" + date.month.toString()
+        questionText = "Find month number" + (date.month + 1).toString()
     } else {
-        "Find the date " + date.offset.toString() + "days after " + date.year.toString() + "-" +
-        date.month.toString() + "-" + date.day.toString();
+        questionText = "Find the date " + date.offset.toString() + " days after " + date.day.toString() + "-" +
+        (date.month + 1).toString() + "-" + date.year.toString();
     }
     return questionText
 }
@@ -172,6 +177,9 @@ function initQuestion() {
             if(currentLevelConfig.mode == "findDayOfWeek") {
                 var selectedDate = new Date(randomDate.year, randomDate.month - 1, randomDate.day)
                 correctAnswer.dayOfWeek = Number(selectedDate.getDay())
+            } else if(currentLevelConfig.mode == "findYearMonthDay") {
+                correctAnswer = addOffsetToCurrentDate(randomDate)
+                randomDate.offset = correctAnswer.offset
             } else {
                 correctAnswer = randomDate
             }

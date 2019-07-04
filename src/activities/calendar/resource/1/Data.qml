@@ -1,9 +1,9 @@
 /* GCompris - Data.qml
  *
- * Copyright (C) 2018 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2019 Akshay Kumar <email.akshay98@gmail.com>
  *
  * Authors:
- *   Johnny Jazeix <jazeix@gmail.com>
+ *   Akshay Kumar <email.akshay98@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Calendar Questions for a single mohth")
+    objective: qsTr("Calendar Questions for a single month")
     difficulty: 1
     data: [
     {
