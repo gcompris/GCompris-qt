@@ -38,7 +38,8 @@ function get() {
                       "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "mode": "findDay"
+                      "mode": "findDay",
+                      "questionsExplicitly": false
                   }
                  ],
                  [ // Level 1 Questions
@@ -78,7 +79,8 @@ function get() {
                       "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "mode": "findDayOfWeek"
+                      "mode": "findDayOfWeek",
+                      "questionsExplicitly": false
                   }
                  ],
                  [ // Level 2  Questions
@@ -121,7 +123,8 @@ function get() {
                       "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "mode": "findDay"
+                      "mode": "findDay",
+                      "questionsExplicitly": false
                   }
                  ],
 
@@ -165,7 +168,8 @@ function get() {
                       "maximumDate": "2018-03-31",
                       "visibleMonth": 2,
                       "visibleYear": 2018,
-                      "mode": "findDay"
+                      "mode": "findDay",
+                      "questionsExplicitly": false
                   }
                  ],
                  [ // Level 4 Questions
@@ -200,7 +204,8 @@ function get() {
                       "maximumDate": "2018-12-31",
                       "visibleMonth": 1,
                       "visibleYear": 2018,
-                      "mode": "findMonthOnly"
+                      "mode": "findMonthOnly",
+                      "questionsExplicitly": false
                   }
                  ],
                  [ // Level 5 Questions
@@ -231,11 +236,13 @@ function get() {
                  [ // Level 6 Configurations
                   {
                       "navigationBarVisible" : true,
-                      "minimumDate": "2017-01-01",
-                      "maximumDate": "2019-12-31",
-                      "visibleMonth": 2,
+                      "minimumDate": "2018-09-01",
+                      "maximumDate": "2019-01-31",
+                      "visibleMonth": 10,
                       "visibleYear": 2018,
-                      "mode": "findYearMonthDay"
+                      "mode": "findYearMonthDay",
+                      "questionsExplicitly": true,
+                      "maxOffset": 30,
                   }
 
                  ],
@@ -287,7 +294,8 @@ function get() {
                       "maximumDate": "2019-12-31",
                       "visibleMonth": 1,
                       "visibleYear": 2018,
-                      "mode": "findYearMonthDay"
+                      "mode": "findYearMonthDay",
+                      "questionsExplicitly": true
                   }
                  ],
                  [ // Level 7 Questions

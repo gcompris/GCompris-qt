@@ -41,10 +41,9 @@ var maxRange //sum of max. visible month and year on calendar for navigation bar
 var correctAnswer
 var mode
 
-function start(items_, dataset_) {
+function start(items_) {
     items = items_
-    dataset = dataset_.get()
-    numberOfLevel = dataset.length
+    numberOfLevel = items.levels.length
     currentLevel = 0
 
     if(Qt.locale(GCompris.ApplicationSettings.locale).firstDayOfWeek == Qml.Locale.Monday) {
@@ -59,7 +58,7 @@ function stop() {
 function initLevel() {
     currentSubLevel = 1;
     items.bar.level = currentLevel + 1
-    currentLevelConfig = dataset[currentLevel][0][0]
+    currentLevelConfig = items.levels[currentLevel]
     setCalendarConfigurations()
     initQuestion();
 }
@@ -92,10 +91,74 @@ function setCalendarConfigurations() {
     monthSelected = currentLevelConfig["visibleMonth"]
     items.answerChoices.visible = (mode === "findDayOfWeek") ? true : false
     items.okButton.visible = !items.answerChoices.visible
-    currentDataSet = dataset[currentLevel][1]
+    currentDataSet = currentLevelConfig["questionAnswers"]
     currentDataSet = Core.shuffle(currentDataSet)
     items.score.numberOfSubLevels = currentDataSet.length
     items.score.currentSubLevel = currentSubLevel
+}
+
+function isLeapYear(year) {
+    if(year % 100 == 0 && year % 400 != 0) {
+        return false
+    } else if(year % 4 == 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function generateRandomYearMonthDay(minimumDate, maximumDate) {
+    var daysInMonths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    var minYear = Number(minimumDate.slice(0, 4))
+    var maxYear = Number(maximumDate.slice(0, 4))
+    var minMonth = Number(minimumDate.slice(5, 7))
+    var maxMonth = Number(maximumDate.slice(5, 7))
+    var minDate = Number(minimumDate.slice(8, 10))
+    var maxDate = Number(maximumDate.slice(8, 10))
+    var currentYear = minYear + Math.floor(Math.random() * Math.floor((maxYear - minYear)))
+    var currentMonth = minMonth + Math.floor(Math.random() * Math.floor((maxMonth - minMonth)))
+    var currentDate
+    daysInMonths[1] = (isLeapYear(currentYear)) ? 29 : 28;
+    currentDate = minDate + Math.floor(Math.random() * Math.floor((daysInMonths[currentMonth - 1] - minMonth)))
+    var maxOffset = (maxDate - minDate) + (maxMonth - minMonth) * 28 + (maxYear - minYear) * 365
+    var offset = 1 + Math.floor(Math.random() * Math.floor(maxOffset))
+    var currentOffset = offset;
+    currentOffset += currentDate 
+    var answerDate = 1;
+    var answerMonth = currentMonth
+    var answerYear = currentYear
+    while(currentOffset > 0) {
+        if(currentOffset - daysInMonths[answerMonth - 1] > 0) {
+            currentOffset -= daysInMonths[answerMonth - 1]
+            answerMonth++;
+        } else {
+            answerDate = currentOffset;
+            currentOffset = 0
+        }
+        if(answerMonth > 12) {
+            answerYear++;
+            answerMonth = 1;
+        }
+    }
+
+    var question = "Find the date " + offset.toString() + "days after " + currentYear.toString() + "-" +
+        currentMonth.toString() + "-" + currentDate.toString();
+    return { year: answerYear, month: answerMonth - 1, day: answerDate, offset: offset } 
+}
+
+function getTemplateQuestionText(mode, date) {
+    var questionText
+    if(mode == "findDayOfWeek") {
+        questionText = "Find the Week Day on " + date.day.toString()
+    } else if(mode == "findDay") {
+        questionText = "Select Day " + date.day.toString()
+    } else if(mode == "findMonthOnly") {
+        questionText = "Find the month" + date.month.toString()
+    } else {
+        "Find the date " + date.offset.toString() + "days after " + date.year.toString() + "-" +
+        date.month.toString() + "-" + date.day.toString();
+    }
+    return questionText
 }
 
 function initQuestion() {
@@ -103,9 +166,21 @@ function initQuestion() {
         items.bonus.good("lion")
     }
     else {
-        items.score.currentSubLevel = currentSubLevel
-        items.questionItem.text = currentDataSet[currentSubLevel-1]["question"]
-        correctAnswer = currentDataSet[currentSubLevel-1]["answer"]
+        if(!currentLevelConfig.questionsExplicitlyGiven) {
+            var randomDate = generateRandomYearMonthDay(currentLevelConfig.minimumDate, currentLevelConfig.maximumDate)
+            items.score.currentSubLevel = currentSubLevel
+            if(currentLevelConfig.mode == "findDayOfWeek") {
+                var selectedDate = new Date(randomDate.year, randomDate.month - 1, randomDate.day)
+                correctAnswer.dayOfWeek = Number(selectedDate.getDay())
+            } else {
+                correctAnswer = randomDate
+            }
+            items.questionItem.text = getTemplateQuestionText(currentLevelConfig.mode, randomDate)
+        } else {
+            items.score.currentSubLevel = currentSubLevel
+            items.questionItem.text = currentDataSet[currentSubLevel-1]["question"]
+            correctAnswer = currentDataSet[currentSubLevel-1]["answer"]
+        }
     }
 }
 
@@ -134,8 +209,14 @@ function checkAnswer() {
             isCorrectAnswer = true
         }
     }
+    // For levels having question based on day only.
+    else if(mode === "findDay") {
+        if(daySelected === correctAnswer["day"]) {
+            isCorrectAnswer = true
+        }
+    }
     // For levels having questions based on dayOfWeek, month and year.
-    else if(mode !== "findDayOfWeek") {
+    else {
         if(monthSelected === correctAnswer["month"] && daySelected === correctAnswer["day"] && yearSelected === correctAnswer["year"]) {
             isCorrectAnswer = true
         }
