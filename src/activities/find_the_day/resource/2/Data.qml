@@ -29,6 +29,18 @@ Dataset {
     {
        "navigationBarVisible" : true,
         "minimumDate": "2018-01-01",
+        "maximumDate": "2018-03-31",
+        "visibleMonth": 1,
+        "visibleYear": 2018,
+        "mode": "findYearMonthDay",
+        "questionsExplicitlyGiven": false,
+        "questionAnswers": {
+            "length": 5,
+        }
+    },
+    {
+       "navigationBarVisible" : true,
+        "minimumDate": "2018-01-01",
         "maximumDate": "2019-12-31",
         "visibleMonth": 10,
         "visibleYear": 2018,

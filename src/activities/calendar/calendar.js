@@ -108,6 +108,12 @@ function isLeapYear(year) {
     }
 }
 
+function getDateInLongFormat(date) {
+    var months = ["January","February","March","April","May","June","July",
+    "August","September","October","November","December"];
+    return date.day.toString() + " " + months[date.month] + " " + date.year.toString() + "?";
+}
+
 function generateRandomYearMonthDay(minimumDate, maximumDate) {
     var minYear = Number(minimumDate.slice(0, 4))
     var maxYear = Number(maximumDate.slice(0, 4))
@@ -125,9 +131,7 @@ function generateRandomYearMonthDay(minimumDate, maximumDate) {
 
 function addOffsetToCurrentDate(currentDate) {
     var maxOffset = currentLevelConfig.questionAnswers.maxOffset
-    console.log(typeof maxOffset)
     var offset = Math.floor(maxOffset / 2) + Math.floor(Math.random() * Math.floor(maxOffset))
-    console.log(offset)
     daysInMonths[1] = (isLeapYear(currentDate.year)) ? 29 : 28;
     var currentOffset = offset;
     currentOffset += currentDate.day
@@ -154,15 +158,17 @@ function addOffsetToCurrentDate(currentDate) {
 function getTemplateQuestionText(mode, date) {
     var questionText
     if(mode == "findDayOfWeek") {
-        questionText = "Find the weekday on " + date.day.toString()
+        questionText = "What day of the week is on " + date.day.toString() + "?"
     } else if(mode == "findDay") {
-        questionText = "Select Day " + date.day.toString()
+        questionText = "Select day " + date.day.toString()
     } else if(mode == "findMonthOnly") {
-        questionText = "Find month number" + (date.month + 1).toString()
+        questionText = "Find month number " + (date.month + 1).toString()
     } else {
-        questionText = "Find the date " + date.offset.toString() + " days after " + date.day.toString() + "-" +
-        (date.month + 1).toString() + "-" + date.year.toString();
-
+        if(date.offset) {
+            questionText = "Find the date " + date.offset.toString() + " days after " + getDateInLongFormat(date);
+        }
+        else
+            questionText = "Find the date " + getDateInLongFormat(date)
     }
     return questionText
 }
@@ -178,8 +184,7 @@ function initQuestion() {
             if(currentLevelConfig.mode == "findDayOfWeek") {
                 var selectedDate = new Date(randomDate.year, randomDate.month - 1, randomDate.day)
                 correctAnswer.dayOfWeek = Number(selectedDate.getDay())
-
-            } else if(currentLevelConfig.mode == "findYearMonthDay") {
+            } else if(currentLevelConfig.mode == "findYearMonthDay" && currentLevelConfig.questionAnswers.maxOffset) {
                 correctAnswer = addOffsetToCurrentDate(randomDate)
                 randomDate.offset = correctAnswer.offset
             } else {

@@ -24,8 +24,20 @@ import "../../../../core"
 
 Dataset {
     objective: qsTr("Find the date several months away")
-    difficulty: 2
+    difficulty: 3
     data: [
+    {
+       "navigationBarVisible" : true,
+        "minimumDate": "2018-01-01",
+        "maximumDate": "2018-12-31",
+        "visibleMonth": 0,
+        "visibleYear": 2018,
+        "mode": "findYearMonthDay",
+        "questionsExplicitlyGiven": false,
+        "questionAnswers": {
+            "length": 5,
+        }
+    },
     {
        "navigationBarVisible" : true,
         "minimumDate": "2018-01-01",
