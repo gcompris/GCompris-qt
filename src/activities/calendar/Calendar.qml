@@ -43,6 +43,7 @@ ActivityBase {
         sourceSize.width: Math.max(parent.width, parent.height)
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -398,6 +399,25 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                background.start()
+                home()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -405,9 +425,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
