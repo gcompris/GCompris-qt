@@ -22,6 +22,23 @@ import QtQuick 2.6
 import GCompris 1.0
 import "../../../../core"
 
+/*
+Contains the questions, answers and calendar configurations of every level.
+Add more levels by inserting questions and answers below.
+Days of weeks are indexed from 0 i.e (Sunday = 0, Monday = 1, Tuesday = 2, .... ..... .... , Saturday = 6)
+Months of year are indexed from 0 i.e (January = 0, February = 1, March = 2, .... ..... ...., December = 11)
+If questions are provided explicitly field questionAnswers contains an array of questions and answers and
+if they are not provided, then questionAnswers field contains parameter length signifying the number of questions, and optional
+parameter maxOffset for questions where the user has to find date some days ahead of the given date.
+[
+    //MODES
+      // findMonthOnly --> For questions based on finding month only.
+      // findYearMonthDay --> For questions based on finding year, month and day.
+      // findDayOfWeek --> For questions based on finding day of week only.
+      // findDay --> For questions based on finding day of a given month and year.
+ ]
+*/
+
 Dataset {
     objective: qsTr("Find the date less than two month away")
     difficulty: 2
