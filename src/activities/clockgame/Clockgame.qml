@@ -472,7 +472,6 @@ ActivityBase {
                 levelFolder = dialogActivityConfig.chosenLevel
                 currentActivity.currentLevel = dialogActivityConfig.chosenLevel
                 ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
-                home()
             }
             onClose: {
                 home()

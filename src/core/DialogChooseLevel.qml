@@ -212,6 +212,7 @@ Rectangle {
                     id: datasetVisibleButton
                     text: qsTr("Dataset")
                     enabled: hasDataset
+                    opacity: enabled ? 1 : 0
                     width: parent.width / 3
                     property bool selected: true
                     style: GCButtonStyle {
@@ -223,6 +224,7 @@ Rectangle {
                     id: optionsVisibleButton
                     text: qsTr("Options")
                     enabled: hasConfig
+                    opacity: enabled ? 1 : 0
                     width: parent.width / 3
                     style: GCButtonStyle {
                         selected: !datasetVisibleButton.selected
@@ -342,6 +344,7 @@ Rectangle {
                     style: GCButtonStyle { }
                     onClicked: {
                         saveData();
+                        close();
                     }
                 }
                 Button {

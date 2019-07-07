@@ -679,7 +679,7 @@ ActivityBase {
             id: searchBar
             width: horizontal ? parent.width/2 : parent.width - (section.width+10)
             height: searchTextField.height
-            visible: clickMode === "activityConfig" || activity.currentTag === "search"
+            visible: activity.currentTag === "search"
             anchors {
                 top: horizontal ? section.bottom : parent.top
                 left: horizontal ? undefined : section.right
@@ -723,16 +723,6 @@ ActivityBase {
                 }
             }
 
-            GCText {
-                id: activitySettingsLabel
-                text: qsTr("Activity Settings")
-                visible: clickMode === "activityConfig"
-                width: parent.width
-                height: paintedHeight
-                anchors.verticalCenter: parent.verticalCenter
-                horizontalAlignment: Text.AlignHCenter
-                color: "black"
-            }
             TextField {
                 id: searchTextField
                 width: parent.width
@@ -768,6 +758,38 @@ ActivityBase {
 
                 placeholderText: qsTr("Search specific activities")
                 onTextChanged: ActivityInfoTree.filterBySearch(searchTextField.text);
+            }
+        }
+
+        Rectangle {
+            id: activityConfigTextBar
+            width: horizontal ? parent.width/2 : parent.width - (section.width+10)
+            height: activitySettingsLabel.height
+            visible: clickMode === "activityConfig"
+            anchors {
+                bottom: bar.top
+                left: horizontal ? undefined : section.right
+            }
+            anchors.horizontalCenter: horizontal ? parent.horizontalCenter : undefined
+            opacity: 0.9
+            radius: 10
+            border.width: 2
+            border.color: "black"
+            gradient: Gradient {
+                GradientStop { position: 0.3; color: "#333" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
+
+            GCText {
+                id: activitySettingsLabel
+                text: qsTr("Activity Settings")
+                visible: parent.visible
+                width: parent.width
+                height: paintedHeight
+                anchors.verticalCenter: parent.verticalCenter
+                horizontalAlignment: Text.AlignHCenter
+                color: "black"
             }
         }
 
