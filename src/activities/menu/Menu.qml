@@ -451,7 +451,7 @@ ActivityBase {
                 radius: 10
                 border.width: 5
                 border.color: "#FF87A6DD"
-                visible: background.keyboardMode
+                visible: true
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }

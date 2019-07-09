@@ -65,7 +65,6 @@ ButtonStyle {
             backgroundColorGradient1: "#13373737",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "#FF373737",
-            borderSize: 2,
             textColor: "#FF373737"
         },
         "light": {
@@ -74,7 +73,6 @@ ButtonStyle {
             backgroundColorGradient1: "#23FFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            borderSize: 2,
             textColor: "white"
         },
         "highContrast": {
@@ -83,7 +81,6 @@ ButtonStyle {
             backgroundColorGradient1: "#AAFFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            borderSize: 2,
             textColor: "#FF373737"
             
         },
@@ -93,7 +90,6 @@ ButtonStyle {
             backgroundColorGradient1: "#80F6FBFC",
             selectedColorGradient1: "#FFF6FBFC",
             borderColor: "#FF87A6DD",
-            borderSize: selected ? 4 : 2,
             textColor: "#FF373737"
         }
     }
@@ -118,7 +114,7 @@ ButtonStyle {
     }
     
     background: Rectangle {
-        border.width: control.activeFocus ? themes[theme].borderSize * 2 : themes[theme].borderSize
+        border.width: control.activeFocus ? 4 : 2
         border.color: themes[theme].borderColor
         radius: 10
         gradient: Gradient {
