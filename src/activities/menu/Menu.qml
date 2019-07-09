@@ -207,6 +207,7 @@ ActivityBase {
         property int sectionIconHeight: sectionIconWidth
         property int sectionCellWidth: sectionIconWidth * 1.1
         property int sectionCellHeight: sectionIconHeight * 1.1
+        property int categoriesHeight: currentCategory == "" ? 0 : sectionCellHeight - 2
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
@@ -396,6 +397,7 @@ ActivityBase {
             id: categoriesGrid
             model: currentTagCategories
             anchors.top: horizontal ? section.bottom : parent.top
+            topMargin: 5
             interactive: false
             keyNavigationWraps: true
             width: horizontal ? main.width : main.width - section.width
@@ -416,12 +418,14 @@ ActivityBase {
 
             cellWidth: currentTagCategories ? categoriesGrid.width / currentTagCategories.length : 0
             cellHeight: height
-            height: searchTextField.height
+            height: horizontal ? categoriesHeight * 0.5 : categoriesHeight
 
             delegate: Button {
                 id: button
                 style: GCButtonStyle {
                     selected: currentCategory === button.category
+                    theme: "categories"
+                    textSize: "regular"
                 }
                 width: categoriesGrid.width / (currentTagCategories.length + 1)
                 height: categoriesGrid.cellHeight
@@ -440,11 +444,13 @@ ActivityBase {
                 }
             }
             highlight: Rectangle {
+                z: 10
                 width: activityCellWidth - activitiesGrid.spacing
                 height: activityCellHeight - activitiesGrid.spacing
-                color:  "#AAFFFFFF"
-                border.width: 3
-                border.color: "black"
+                color:  "#00FFFFFF"
+                radius: 10
+                border.width: 5
+                border.color: "#FF87A6DD"
                 visible: background.keyboardMode
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -464,6 +470,7 @@ ActivityBase {
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
+                topMargin: currentCategory == "" ? 4 : 10
             }
             width: background.width
             cellWidth: activityCellWidth
@@ -645,7 +652,7 @@ ActivityBase {
         Rectangle {
             id: searchBar
             width: horizontal ? parent.width/2 : parent.width - (section.width+10)
-            height: searchTextField.height
+            height: horizontal ? sectionCellHeight * 0.5 : sectionCellHeight
             visible: activity.currentTag === "search"
             anchors {
                 top: horizontal ? section.bottom : parent.top
@@ -693,8 +700,9 @@ ActivityBase {
             TextField {
                 id: searchTextField
                 width: parent.width
+                height: parent.height
                 textColor: "black"
-                font.pointSize: 16
+                font.pointSize: 32
                 font.bold: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
