@@ -46,6 +46,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -64,6 +65,7 @@ ActivityBase {
             property alias imageBack: imageBack
             property alias imageBack2: imageBack2
             property int pointIndexToClick
+            property int mode: 1
         }
 
         onStart: { Activity.start(items,mode,dataset,url) }
@@ -243,21 +245,83 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
+        
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+
+                    property var availableModes: [
+                        { "text": qsTr("Automatic"), "value": 1 },
+                        { "text": qsTr("Manual"), "value": 2 }
+                    ]
+
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: modeBox
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Go to next level")
+                        }
+                    }
+                }
+            }
+
+            onClose: home()
+
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    items.mode = dataToSave["mode"];
+                }
+            }
+            onSaveData: {
+                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                if (newMode !== items.mode) {
+                    items.mode = newMode;
+                    dataToSave = {"mode": items.mode};
+                }
+                if (items.mode == 1) {
+                    bonus.win.connect(Activity.nextLevel)
+                } else {
+                    bonus.win.disconnect(Activity.nextLevel)
+                }
+                Activity.initLevel();
+            }
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                // Set default values
+                dialogActivityConfig.setDefaultValues();
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: items.mode == 1 ? win.connect(Activity.nextLevel) : win.disconnect(Activity.nextLevel)
         }
     }
 }
