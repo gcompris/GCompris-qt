@@ -72,7 +72,7 @@ public slots:
     void noteOff  (unsigned char chan, unsigned char note);
 
     // Slots for manipulation of the current patch.
-    void setMode      (int _mode);
+    void setMode      (unsigned int _mode);
     void setTimbre    (QVector<int> &amplitudes, QVector<int> &phases);
     void setEnvelope  (ADSREnvelope &env);
     void setModulation(Modulation &modulation);

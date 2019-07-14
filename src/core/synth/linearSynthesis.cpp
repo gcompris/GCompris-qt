@@ -54,12 +54,12 @@ qreal
 LinearSynthesis::evalTimbre(qreal t) {
     qreal val = 0;
     for (unsigned int harm = 0; harm < numHarmonics; harm++) {
-        int qa_int = timbreAmplitudes[harm],
-            qp_int = timbrePhases[harm];
+        int qa_int = timbreAmplitudes[harm];
+        int qp_int = timbrePhases[harm];
 
         if (qa_int > 0) {
-            qreal qa = (qreal)qa_int/100,
-                  qp = (2*M_PI*(qreal)qp_int)/360;
+            qreal qa = (qreal)qa_int/100;
+            qreal qp = (2*M_PI*(qreal)qp_int)/360;
 
             val += qa * eval(((qreal)harm + 1) * t - qp);
         }
