@@ -31,7 +31,6 @@
 #include <QScreen>
 #include <QLocale>
 #include <QRect>
-#include <QDesktopWidget>
 
 #include <QtQml>
 
