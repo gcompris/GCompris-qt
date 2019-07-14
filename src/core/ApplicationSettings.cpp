@@ -30,7 +30,6 @@
 #include <QGuiApplication>
 #include <QScreen>
 #include <QLocale>
-#include <QApplication>
 #include <QRect>
 #include <QDesktopWidget>
 
@@ -91,8 +90,7 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
      m_fontLetterSpacingMin(0.0), m_fontLetterSpacingMax(8.0),
      m_config(configPath, QSettings::IniFormat)
 {
-    const QRect &screenSize = QApplication::desktop()->screenGeometry();
-
+    const QRect &screenSize = QGuiApplication::screens().at(0)->availableGeometry();
     // initialize from settings file or default
 
     // general group
