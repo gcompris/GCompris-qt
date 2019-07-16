@@ -109,8 +109,8 @@ function isLeapYear(year) {
 }
 
 function getDateInLongFormat(date) {
-    var months = ["January","February","March","April","May","June","July",
-    "August","September","October","November","December"];
+    var months = [qsTr("January"), qsTr("February"), qsTr("March"), qsTr("April"), qsTr("May"), qsTr("June"), qsTr("July"),
+        qsTr("August"), qsTr("September"), qsTr("October"), qsTr("November"), qsTr("December")];
     return date.day.toString() + " " + months[date.month] + " " + date.year.toString() + "?";
 }
 
@@ -120,12 +120,11 @@ function generateRandomYearMonthDay(minimumDate, maximumDate) {
     var minMonth = Number(minimumDate.slice(5, 7))
     var maxMonth = Number(maximumDate.slice(5, 7))
     var minDate = Number(minimumDate.slice(8, 10))
-    var maxDate = Number(maximumDate.slice(8, 10))
-    var currentYear = minYear + Math.floor(Math.random() * Math.floor((maxYear - minYear)))
-    var currentMonth = minMonth + Math.floor(Math.random() * Math.floor((maxMonth - minMonth)))
+    var currentYear = minYear + Math.floor(Math.random() * Math.floor((maxYear - minYear + 1)))
+    var currentMonth = minMonth + Math.floor(Math.random() * Math.floor((maxMonth - minMonth + 1)))
     var currentDate
     daysInMonths[1] = (isLeapYear(currentYear)) ? 29 : 28;
-    currentDate = minDate + Math.floor(Math.random() * Math.floor((daysInMonths[currentMonth - 1] - minDate)))
+    currentDate = minDate + Math.floor(Math.random() * Math.floor((daysInMonths[currentMonth - 1] - minDate + 1)))
     return { year: currentYear, month: currentMonth - 1, day: currentDate }
 }
 
@@ -158,17 +157,16 @@ function addOffsetToCurrentDate(currentDate) {
 function getTemplateQuestionText(mode, date) {
     var questionText
     if(mode == "findDayOfWeek") {
-        questionText = "What day of the week is on " + date.day.toString() + "?"
+        questionText = qsTr("What day of the week is on %1 ?").arg(date.day)
     } else if(mode == "findDay") {
-        questionText = "Select day " + date.day.toString()
+        questionText = qsTr("Select day %1 ?").arg(date.day)
     } else if(mode == "findMonthOnly") {
-        questionText = "Find month number " + (date.month + 1).toString()
+        questionText = qsTr("Find month number %1").arg(date.month + 1)
     } else {
         if(date.offset) {
-            questionText = "Find the date " + date.offset.toString() + " days after " + getDateInLongFormat(date);
-        }
-        else
-            questionText = "Find the date " + getDateInLongFormat(date)
+            questionText = qsTr("Find the date %1 days after %2").arg(date.offset).arg(getDateInLongFormat(date))
+        } else
+            questionText = qsTr("Find the date %1").arg(getDateInLongFormat(date))
     }
     return questionText
 }
