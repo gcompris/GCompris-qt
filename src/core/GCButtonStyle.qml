@@ -51,12 +51,11 @@ ButtonStyle {
     
     /**
      * type:bool
-     * if the view is horizontal and button theme is category,
-     * add a right margin on the text label for the icon.
+     * if there is an icon on the right, we need to add a rightMargin for the text label
      * 
      * Default is false.
      */
-    property bool isHorizontal: false
+    property bool haveIconRight: false
 
     /**
      * type:var
@@ -74,8 +73,7 @@ ButtonStyle {
             backgroundColorGradient1: "#13373737",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "#FF373737",
-            textColor: "#FF373737",
-            withIcon: false
+            textColor: "#FF373737"
         },
         "light": {
             backgroundColorGradient0: "#42FFFFFF",
@@ -83,8 +81,7 @@ ButtonStyle {
             backgroundColorGradient1: "#23FFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            textColor: "white",
-            withIcon: false
+            textColor: "white"
         },
         "highContrast": {
             backgroundColorGradient0: "#EEFFFFFF",
@@ -92,8 +89,7 @@ ButtonStyle {
             backgroundColorGradient1: "#AAFFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            textColor: "#FF373737",
-            withIcon: false
+            textColor: "#FF373737"
             
         },
         "categories": {
@@ -102,8 +98,7 @@ ButtonStyle {
             backgroundColorGradient1: "#80F6FBFC",
             selectedColorGradient1: "#FFF6FBFC",
             borderColor: "#FF87A6DD",
-            textColor: "#FF373737",
-            withIcon: true
+            textColor: "#FF373737"
         }
     }
 
@@ -142,7 +137,7 @@ ButtonStyle {
             bottom: parent.bottom
             left: parent.left
             right: parent.right
-            rightMargin: themes[theme].withIcon && isHorizontal ? parent.height : 0
+            rightMargin: haveIconRight ? parent.height : 0
         }
         implicitWidth: labelText.implicitWidth
         implicitHeight: labelText.implicitHeight

@@ -426,7 +426,7 @@ ActivityBase {
                     selected: currentCategory === button.category
                     theme: "categories"
                     textSize: "regular"
-                    isHorizontal: horizontal
+                    haveIconRight: horizontal
                 }
                 width: categoriesGrid.width / (currentTagCategories.length + 1)
                 height: categoriesGrid.cellHeight
