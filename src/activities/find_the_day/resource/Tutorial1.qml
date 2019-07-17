@@ -1,9 +1,9 @@
 /* GCompris - Tutorial1.qml
  *
- * Copyright (C) 2019 Deepak Kumar <deepakdk2431@gmail.com>
+ * Copyright (C) 2019 Akshay Kumar <email.akshay98@gmail.com>
  *
  * Authors:
- *   Deepak Kumar <deepakdk2431@gmail.com>
+ *   Akshay Kumar <email.akshay98@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
