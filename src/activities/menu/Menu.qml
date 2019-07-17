@@ -426,6 +426,7 @@ ActivityBase {
                     selected: currentCategory === button.category
                     theme: "categories"
                     textSize: "regular"
+                    isHorizontal: horizontal
                 }
                 width: categoriesGrid.width / (currentTagCategories.length + 1)
                 height: categoriesGrid.cellHeight
@@ -441,6 +442,18 @@ ActivityBase {
                     ActivityInfoTree.filterByTag(currentTag, currentCategory)
                     ActivityInfoTree.filterLockedActivities()
                     ActivityInfoTree.filterEnabledActivities()
+                }
+                Image {
+                    visible: horizontal
+                    source: "qrc:/gcompris/src/activities/menu/resource/category-" + button.category + ".svg";
+                    height: Math.round(parent.height * 0.8)
+                    sourceSize.height: height
+                    width: height
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        right: parent.right
+                        rightMargin: parent.height * 0.1
+                    }
                 }
             }
             highlight: Rectangle {

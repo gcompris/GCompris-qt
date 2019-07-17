@@ -46,8 +46,17 @@ ButtonStyle {
      * theme of the button. For now, three themes are accepted: "light" and "dark" and "highContrast"
      *
      * Default is dark.
-    */
+     */
     property string theme: "dark"
+    
+    /**
+     * type:bool
+     * if the view is horizontal and button theme is category,
+     * add a right margin on the text label for the icon.
+     * 
+     * Default is false.
+     */
+    property bool isHorizontal: false
 
     /**
      * type:var
@@ -57,7 +66,7 @@ ButtonStyle {
      *   the colors of the button when not selected: backgroundColorGradient0 and backgroundColorGradient1.
      *   the button's border color
      *   the text color
-    */
+     */
     property var themes: {
         "dark": {
             backgroundColorGradient0: "#23373737",
@@ -65,7 +74,8 @@ ButtonStyle {
             backgroundColorGradient1: "#13373737",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "#FF373737",
-            textColor: "#FF373737"
+            textColor: "#FF373737",
+            withIcon: false
         },
         "light": {
             backgroundColorGradient0: "#42FFFFFF",
@@ -73,7 +83,8 @@ ButtonStyle {
             backgroundColorGradient1: "#23FFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            textColor: "white"
+            textColor: "white",
+            withIcon: false
         },
         "highContrast": {
             backgroundColorGradient0: "#EEFFFFFF",
@@ -81,7 +92,8 @@ ButtonStyle {
             backgroundColorGradient1: "#AAFFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            textColor: "#FF373737"
+            textColor: "#FF373737",
+            withIcon: false
             
         },
         "categories": {
@@ -90,7 +102,8 @@ ButtonStyle {
             backgroundColorGradient1: "#80F6FBFC",
             selectedColorGradient1: "#FFF6FBFC",
             borderColor: "#FF87A6DD",
-            textColor: "#FF373737"
+            textColor: "#FF373737",
+            withIcon: true
         }
     }
 
@@ -124,7 +137,13 @@ ButtonStyle {
     }
     label: Item {
         id: labelItem
-        anchors.fill: parent
+        anchors {
+            top: parent.top
+            bottom: parent.bottom
+            left: parent.left
+            right: parent.right
+            rightMargin: themes[theme].withIcon && isHorizontal ? parent.height : 0
+        }
         implicitWidth: labelText.implicitWidth
         implicitHeight: labelText.implicitHeight
 
