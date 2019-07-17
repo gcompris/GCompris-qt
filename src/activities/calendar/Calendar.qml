@@ -27,12 +27,16 @@ import QtQuick.Controls.Styles 1.4
 import "../../core"
 import "calendar.js" as Activity
 import "calendar_dataset.js" as Dataset
+import "tutorial_instructions.js" as Instructions
 
 ActivityBase {
     id: activity
     property var dataset: Dataset
     onStart: focus = true
     onStop: {}
+
+    property var tutorialInstructions: Instructions.get()
+    property bool showTutorial: true
 
     pageComponent: Image {
         id: background
@@ -65,6 +69,7 @@ ActivityBase {
             property alias okButtonParticles: okButtonParticles
             property bool horizontalLayout: background.width >= background.height * 1.5
             property alias daysOfTheWeekModel: daysOfTheWeekModel
+            property bool showTutorial: activity.showTutorial
         }
 
         onStart: { Activity.start(items) }
@@ -347,6 +352,7 @@ ActivityBase {
 
         Rectangle {
             id: questionItemBackground
+            visible: !showTutorial
             color: "#373737"
             border.width: 2
             border.color: "#f2f2f2"
@@ -364,6 +370,7 @@ ActivityBase {
         // Displays the question.
         GCText {
             id: questionItem
+            visible: !showTutorial
             anchors.fill: questionItemBackground
             anchors.bottom: questionItemBackground.bottom
             fontSizeMode: Text.Fit
@@ -373,6 +380,33 @@ ActivityBase {
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
+
+        //Tutorial section starts
+        Loader {
+            active: showTutorial
+            anchors.fill: parent
+            z: 1
+            sourceComponent: tutorialComponent
+            Component {
+                id: tutorialComponent
+                Image {
+                    id: tutorialImage
+                    source: "../digital_electricity/resource/texture01.png"
+                    anchors.fill: parent
+                    fillMode: Image.Tile
+                    Tutorial {
+                        id: tutorialSection
+                        tutorialDetails: tutorialInstructions
+                        useImage: false
+                        onSkipPressed: {
+                            showTutorial = false
+                            Activity.initLevel()
+                        }
+                    }
+                }
+            }
+        }
+        // Tutorial section ends
 
         // Answer Submission button.
         BarButton {
@@ -444,6 +478,7 @@ ActivityBase {
 
         Score {
             id: score
+            visible: !showTutorial
             height: okButton.height
             width: height
             anchors.top: calendarBox.bottom

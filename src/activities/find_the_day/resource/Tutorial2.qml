@@ -1,9 +1,9 @@
-/* GCompris - find_the_day.qml
+/* GCompris - Tutorial2.qml
  *
- * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
+ * Copyright (C) 2019 Deepak Kumar <deepakdk2431@gmail.com>
  *
  * Authors:
- *   Amit Sagtani <asagtani06@gmail.com>
+ *   Deepak Kumar <deepakdk2431@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -19,12 +19,10 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
-import "../calendar"
-import "find_the_day_dataset.js" as Dataset
-import "tutorial_instructions.js" as Instructions
+import "../../../core"
 
-Calendar {
-    dataset: Dataset
-    tutorialInstructions: Instructions.get()
+TutorialBase {
+    questionText: qsTr("Since July has 31 days, out of 20 the first 7 days will change the month from July to August. Now we have to add the remaining 20 - 7 = 14 days to 1 August 2018 which will make the final date equal to 14 August 2018")
 }

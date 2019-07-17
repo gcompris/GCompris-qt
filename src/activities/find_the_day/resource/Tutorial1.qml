@@ -1,9 +1,9 @@
-/* GCompris - find_the_day.qml
+/* GCompris - Tutorial1.qml
  *
- * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
+ * Copyright (C) 2019 Deepak Kumar <deepakdk2431@gmail.com>
  *
  * Authors:
- *   Amit Sagtani <asagtani06@gmail.com>
+ *   Deepak Kumar <deepakdk2431@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -19,12 +19,11 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
-import "../calendar"
-import "find_the_day_dataset.js" as Dataset
-import "tutorial_instructions.js" as Instructions
+import "../../../core"
 
-Calendar {
-    dataset: Dataset
-    tutorialInstructions: Instructions.get()
+TutorialBase {
+    questionText: qsTr("We add 5 to the current date, which gives us the new date 20, and since December has 31 days and the new date is less than that. So the answer will be 20 December 2018.")
 }
+
