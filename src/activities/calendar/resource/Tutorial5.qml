@@ -24,8 +24,8 @@ import GCompris 1.0
 import "../../../core"
 
 TutorialBase {
-    questionText: "Select Leap year"
-    firstNumber: "2018"
-    secondNumber: "2016"
+    questionText: qsTr("Select Leap year")
+    firstNumber: qsTr("2018")
+    secondNumber: qsTr("2016")
     answer: 2016
 }

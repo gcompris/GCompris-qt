@@ -25,7 +25,7 @@ import "../../../core"
 
 TutorialBase {
     questionText: qsTr("Select the correct option")
-    firstNumber: "18"
-    secondNumber: "13"
+    firstNumber: qsTr("18")
+    secondNumber: qsTr("13")
     answer: 13
 }

@@ -24,7 +24,6 @@ import GCompris 1.0
 import "../../../core"
 
 TutorialBase {
-
-    firstNumber: "111"
-    secondNumber: "108"
+    firstNumber: qsTr("111")
+    secondNumber: qsTr("108")
 }

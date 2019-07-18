@@ -111,7 +111,8 @@ function isLeapYear(year) {
 function getDateInLongFormat(date) {
     var months = [qsTr("January"), qsTr("February"), qsTr("March"), qsTr("April"), qsTr("May"), qsTr("June"), qsTr("July"),
         qsTr("August"), qsTr("September"), qsTr("October"), qsTr("November"), qsTr("December")];
-    return date.day.toString() + " " + months[date.month] + " " + date.year.toString() + "?";
+    //: return current date with format including current day, current month(in textual format) and current year
+    return qsTr("%1 %2 %3").arg(date.day).arg(months[date.month]).arg(date.year)
 }
 
 function generateRandomYearMonthDay(minimumDate, maximumDate) {
@@ -157,9 +158,9 @@ function addOffsetToCurrentDate(currentDate) {
 function getTemplateQuestionText(mode, date) {
     var questionText
     if(mode == "findDayOfWeek") {
-        questionText = qsTr("What day of the week is on %1 ?").arg(date.day)
+        questionText = qsTr("What day of the week is on %1?").arg(date.day)
     } else if(mode == "findDay") {
-        questionText = qsTr("Select day %1 ?").arg(date.day)
+        questionText = qsTr("Select day %1?").arg(date.day)
     } else if(mode == "findMonthOnly") {
         questionText = qsTr("Find month number %1").arg(date.month + 1)
     } else {
