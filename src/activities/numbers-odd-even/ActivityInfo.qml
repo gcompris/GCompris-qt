@@ -36,5 +36,6 @@ ActivityInfo {
     manual: qsTr("Catch the odd or even number clouds. With a keyboard use the arrow keys to move the helicopter. With a pointing device you just click or tap on the target location. To know which number you have to catch you can either remember it or check the bottom right corner.")
     credit: ""
     section: "math numeration"
-  createdInVersion: 0
+    createdInVersion: 0
+    levels: "1,2"
 }

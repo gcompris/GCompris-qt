@@ -62,8 +62,9 @@ ActivityBase {
         sourceSize.width: parent.width
 
         Component.onCompleted: {
-                activity.start.connect(start)
-                activity.stop.connect(stop)
+            dialogActivityConfig.initialize()
+            activity.start.connect(start)
+            activity.stop.connect(stop)
         }
 
         QtObject {
@@ -71,6 +72,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property var levels: activity.datasetLoader.item.data
             property alias score: score
             property alias plane: plane
             property GCAudio audioVoices: activity.audioVoices
@@ -120,6 +122,24 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                home()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -127,11 +147,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: items.showTutorial ? (help | home) : (help | home | level) }
+            content: BarEnumContent { value: items.showTutorial ? (help | home | activityConfig) : (help | home | level | activityConfig) }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
