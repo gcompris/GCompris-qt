@@ -55,11 +55,16 @@ Image {
 
     GCText {
         id: number
+        height: cloud.height / 2
+        width: cloud.width / 2
         anchors.horizontalCenter: cloud.horizontalCenter
         anchors.verticalCenter: cloud.verticalCenter
+        horizontalAlignment: Text.AlignHCenter
         color: "black"
         font.bold: true
-        fontSize: 18
+        font.pointSize: 100
+        minimumPointSize: 10
+        fontSizeMode: Text.Fit
     }
 
     Component.onCompleted: {

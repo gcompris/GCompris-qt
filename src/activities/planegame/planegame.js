@@ -49,10 +49,7 @@ function start(items_, dataset_) {
     Core.checkForVoices(items_.background);
 
     items = items_
-    if(items.levels)
-        dataset = items.levels
-    else
-        dataset = dataset_
+    dataset = items.levels
     numberOfLevel = dataset.length
     currentLevel = 0
     if(items.showTutorial === false) {

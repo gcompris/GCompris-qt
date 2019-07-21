@@ -37,4 +37,5 @@ ActivityInfo {
     credit: ""
     section: "reading letters"
     createdInVersion: 0
+    levels: "1,2,3"
 }
