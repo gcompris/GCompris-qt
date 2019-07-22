@@ -133,18 +133,17 @@ function addOffsetToCurrentDate(currentDate) {
     var maxOffset = currentLevelConfig.questionAnswers.maxOffset
     var offset = Math.floor(maxOffset / 2) + Math.floor(Math.random() * Math.floor(maxOffset))
     daysInMonths[1] = (isLeapYear(currentDate.year)) ? 29 : 28;
-    var currentOffset = offset;
-    currentOffset += currentDate.day
+    offset += currentDate.day
     var answerDate = 1;
     var answerMonth = currentDate.month
     var answerYear = currentDate.year
-    while(currentOffset > 0) {
-        if(currentOffset - daysInMonths[answerMonth] > 0) {
-            currentOffset -= daysInMonths[answerMonth]
+    while(offset > 0) {
+        if(offset - daysInMonths[answerMonth] > 0) {
+            offset -= daysInMonths[answerMonth]
             answerMonth++;
         } else {
-            answerDate = currentOffset;
-            currentOffset = 0
+            answerDate = offset;
+            offset = 0
         }
         if(answerMonth > 12) {
             answerYear++;
@@ -165,8 +164,10 @@ function getTemplateQuestionText(mode, date) {
         questionText = qsTr("Find month number %1").arg(date.month + 1)
     } else {
         if(date.offset) {
+            //: The second argument represents the given date in complete format(with complete month name) and the first argument represents the difference in days between given date and answer date.
             questionText = qsTr("Find the date %1 days after %2").arg(date.offset).arg(getDateInLongFormat(date))
         } else
+            //: The argument represents the answer date in complete format(with complete month name)
             questionText = qsTr("Find the date %1").arg(getDateInLongFormat(date))
     }
     return questionText
