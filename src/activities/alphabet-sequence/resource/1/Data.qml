@@ -32,7 +32,7 @@ Dataset {
             showNext: true
         },
         {
-            data: qsTr("f/g/h/i/j/k").toUpperCase().split("/"),
+            data: qsTr("f/g/h/i/j/k").split("/"),
             showNext: true
         },
         {

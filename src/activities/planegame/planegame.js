@@ -78,7 +78,15 @@ function initLevel() {
     items.bar.level = currentLevel + 1;
     currentSubLevel = 0
     numberOfSubLevels = dataset[currentLevel].data.length
-
+    if(items.letterMode === "upper") {
+        for(var i = 0; i < numberOfSubLevels; i++) {
+            dataset[currentLevel].data[i] = dataset[currentLevel].data[i].toUpperCase()
+        }
+    } else {
+        for(var i = 0; i < numberOfSubLevels; i++) {
+            dataset[currentLevel].data[i] = dataset[currentLevel].data[i].toLowerCase()
+        }
+    }
     items.movePlaneTimer.stop();
     items.cloudCreation.stop()
 

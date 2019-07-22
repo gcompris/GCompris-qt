@@ -35,6 +35,8 @@ ActivityBase {
     Keys.onPressed: Activity.processPressedKey(event)
     Keys.onReleased: Activity.processReleasedKey(event)
 
+    property string mode: "lower"
+
     property var dataset
     property var tutorialInstructions
     property bool showTutorial: false
@@ -80,6 +82,7 @@ ActivityBase {
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
             property bool showTutorial: activity.showTutorial
+            property var letterMode: activity.mode
        }
 
         onStart: { Activity.start(items, dataset) }
@@ -125,12 +128,20 @@ ActivityBase {
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
-
             onSaveData: {
                 levelFolder = dialogActivityConfig.chosenLevel
                 currentActivity.currentLevel = dialogActivityConfig.chosenLevel
                 ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
                 home()
+                activity.focus = true
+                background.stop()
+                background.start()
+            }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    activity.mode = activityData["mode"];
+                    Activity.initLevel()
+                }
             }
             onClose: {
                 home()

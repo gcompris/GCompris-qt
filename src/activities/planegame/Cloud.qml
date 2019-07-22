@@ -60,6 +60,7 @@ Image {
         anchors.horizontalCenter: cloud.horizontalCenter
         anchors.verticalCenter: cloud.verticalCenter
         horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         color: "black"
         font.bold: true
         font.pointSize: 100
