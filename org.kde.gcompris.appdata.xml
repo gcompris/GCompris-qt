@@ -16,6 +16,7 @@
   <name xml:lang="pl">GCompris</name>
   <name xml:lang="pt">GCompris</name>
   <name xml:lang="pt-BR">GCompris</name>
+  <name xml:lang="ru">GCompris</name>
   <name xml:lang="sv">GCompris</name>
   <name xml:lang="uk">GCompris</name>
   <name xml:lang="x-test">xxGComprisxx</name>
@@ -417,6 +418,7 @@
       <caption xml:lang="pt">Menu principal do GCompris</caption>
       <caption xml:lang="pt-BR">Menu principal do GCompris</caption>
       <caption xml:lang="ro">Meniul principal GCompris</caption>
+      <caption xml:lang="ru">Главное меню GCompris</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="x-test">xxGCompris main menuxx</caption>
