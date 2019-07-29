@@ -110,6 +110,11 @@ int main(int argc, char *argv[])
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
+#if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
+    // Set desktop file name, as the built-in (orgDomain + appName) is not
+    // the one we use (because appName is gcompris-qt, not gcompris)
+    QGuiApplication::setDesktopFileName("org.kde.gcompris");
+#endif
     
     //add a variable to disable default fullscreen on Mac, see below..
 #if defined(Q_OS_MAC)
