@@ -768,18 +768,14 @@ ActivityBase {
             visible: clickMode === "activityConfig"
             anchors {
                 bottom: bar.top
+                bottomMargin: height * 0.3
                 left: horizontal ? undefined : section.right
             }
             anchors.horizontalCenter: horizontal ? parent.horizontalCenter : undefined
-            opacity: 0.9
             radius: 10
-            border.width: 2
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.3; color: "#333" }
-                GradientStop { position: 0.9; color: "#666" }
-                GradientStop { position: 1.0; color: "#AAA" }
-            }
+            border.width: height * 0.05
+            border.color: "#8b66b2"
+            color: "#eeeeee"
 
             GCText {
                 id: activitySettingsLabel
@@ -789,7 +785,7 @@ ActivityBase {
                 height: paintedHeight
                 anchors.verticalCenter: parent.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
-                color: "black"
+                color: "#232323"
             }
         }
 
