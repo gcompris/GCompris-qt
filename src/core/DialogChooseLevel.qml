@@ -204,7 +204,7 @@ Rectangle {
             // Header buttons
             Row {
                 id: datasetOptionsRow
-                height: datasetVisibleButton.height
+                height: dialogChooseLevel.height / 12
                 width: parent.width
                 spacing: parent.width / 4
                 anchors.leftMargin: parent.width / 8
@@ -212,6 +212,7 @@ Rectangle {
                     id: datasetVisibleButton
                     text: qsTr("Dataset")
                     enabled: hasDataset
+                    height: parent.height
                     opacity: enabled ? 1 : 0
                     width: parent.width / 3
                     property bool selected: true
@@ -224,6 +225,7 @@ Rectangle {
                     id: optionsVisibleButton
                     text: qsTr("Options")
                     enabled: hasConfig
+                    height: parent.height
                     opacity: enabled ? 1 : 0
                     width: parent.width / 3
                     style: GCButtonStyle {
@@ -325,12 +327,13 @@ Rectangle {
             // Footer buttons
             Row {
                 id: saveAndPlayRow
-                height: cancelButton.height
+                height: dialogChooseLevel.height / 12
                 width: parent.width
                 spacing: parent.width / 16
                 Button {
                     id: cancelButton
                     text: qsTr("Cancel")
+                    height: parent.height
                     width: parent.width / 4
                     property bool selected: true
                     style: GCButtonStyle {}
@@ -339,6 +342,7 @@ Rectangle {
                 Button {
                     id: saveButton
                     text: qsTr("Save")
+                    height: parent.height
                     width: parent.width / 4
                     property bool selected: true
                     style: GCButtonStyle { }
@@ -350,6 +354,7 @@ Rectangle {
                 Button {
                     id: saveAndStartButton
                     text: qsTr("Save and start")
+                    height: parent.height
                     width: parent.width / 3
                     style: GCButtonStyle { }
                     onClicked: {

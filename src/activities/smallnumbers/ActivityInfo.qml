@@ -37,4 +37,5 @@ ActivityInfo {
   credit: ""
   section: "computer keyboard math numeration"
   createdInVersion: 0
+  levels: "1,2,3"
 }

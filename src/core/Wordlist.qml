@@ -98,6 +98,17 @@ Item {
     signal error(string msg);
 
     /**
+     * Load Wordlist from JSON Object.
+     *
+     * @param type:object levels to load wordlist from.
+    */
+    function loadFromJSON(levels) {
+        wordList = {levels: levels};
+        maxLevel = wordList.levels.length;
+        return wordList;
+    }
+
+    /**
      * Load Wordlist from file @p fname.
      *
      * @param type:string fname Filename to load wordlist from.

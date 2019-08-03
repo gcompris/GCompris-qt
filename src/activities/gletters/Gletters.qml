@@ -76,7 +76,7 @@ ActivityBase {
         property string locale: "system"
         
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -86,6 +86,8 @@ ActivityBase {
             property Item main: activity.main
             property Item ourActivity: activity
             property GCAudio audioVoices: activity.audioVoices
+            property var levels: activity.datasetLoader.item !== null ? activity.datasetLoader.item.data : null
+            property string instructionText: ""
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -103,6 +105,50 @@ ActivityBase {
             Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
+
+        //instruction rectangle
+        Rectangle {
+            id: instruction
+            anchors {
+                top: parent.top
+                topMargin: 5
+                horizontalCenter: parent.horizontalCenter
+            }
+            height: instructionTxt.contentHeight * 1.1
+            width: Math.max(Math.min(parent.width * 0.8, instructionTxt.text.length * 10), parent.width * 0.3)
+            opacity: 0.8
+            visible: items.levels
+            radius: 10
+            border.width: 2
+            z: 10
+            border.color: "#DDD"
+            color: "#373737"
+
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            //shows/hides the Instruction
+            MouseArea {
+                anchors.fill: parent
+                onClicked: instruction.opacity = instruction.opacity == 0 ? 0.8 : 0
+            }
+
+            GCText {
+                id: instructionTxt
+                anchors {
+                    top: parent.top
+                    topMargin: 5
+                    horizontalCenter: parent.horizontalCenter
+                }
+                opacity: instruction.opacity
+                z: instruction.z
+                fontSize: smallSize
+                color: "white"
+                text: items.instructionText
+                horizontalAlignment: Text.AlignHCenter
+                width: parent.width * 0.8
+                wrapMode: TextEdit.WordWrap
+            }
+        }
 
         TextInput {
             // Helper element to capture composed key events like french ô which
@@ -122,129 +168,34 @@ ActivityBase {
             }
         }
 
-        //created to retrieve available menu modes for domino configurations
-        Domino {
-            id: invisibleDomino
-            visible: false
-        }
-
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias localeBox: localeBox
-                    property alias dominoModeBox: dominoModeBox
-                    property alias uppercaseBox: uppercaseBox
-                    height: column.height
-
-                    property alias availableLangs: langs.languages
-                    LanguageList {
-                        id: langs
-                    }
-                    property var availableModes: invisibleDomino.menuModes
-
-                    Column {
-                        id: column
-                        spacing: 10
-                        width: parent.width
-                        Flow {
-                            spacing: 5
-                            width: dialogActivityConfig.width
-                            GCComboBox {
-                                id: localeBox
-                                visible: (activity.activityName == "gletters")
-                                model: langs.languages
-                                background: dialogActivityConfig
-                                label: qsTr("Select your locale")
-                            }
-                            GCComboBox {
-                                id: dominoModeBox
-                                visible: (activity.activityName == "smallnumbers2")
-                                model: availableModes
-                                background: dialogActivityConfig
-                                label: qsTr("Select Domino mode")
-                            }
-                        }
-                        GCDialogCheckBox {
-                            id: uppercaseBox
-                            visible: (activity.activityName == "gletters")
-                            width: dialogActivityConfig.width
-                            text: qsTr("Uppercase only mode")
-                            checked: activity.uppercaseOnly
-                        }
-                    }
-                }
-            }
-
-            onClose: home()
-            onLoadData: {
-                if (activity.activityName == "gletters") {
-                    if(dataToSave && dataToSave["locale"]) {
-                        background.locale = dataToSave["locale"];
-                        activity.uppercaseOnly = dataToSave["uppercaseMode"] === "true" ? true : false;
-                    }
-                } else if (activity.activityName == "smallnumbers2") {
-                    if(dataToSave && dataToSave["mode"]) {
-                        activity.dominoMode = dataToSave["mode"];
-                    }
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
             }
             onSaveData: {
-                var configHasChanged = false
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                home()
+                background.stop()
+                background.start()
+            }
+            onLoadData: {
                 if (activity.activityName == "gletters") {
-                    var oldLocale = background.locale;
-                    var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
-                    // Remove .UTF-8
-                    if(newLocale.indexOf('.') != -1) {
-                        newLocale = newLocale.substring(0, newLocale.indexOf('.'))
-                    }
-
-                    var oldUppercaseMode = activity.uppercaseOnly
-                    activity.uppercaseOnly = dialogActivityConfig.configItem.uppercaseBox.checked
-                    dataToSave = {"locale": newLocale, "uppercaseMode": ""+activity.uppercaseOnly}
-
-                    background.locale = newLocale;
-                    if(oldLocale !== newLocale || oldUppercaseMode !== activity.uppercaseOnly) {
-                        configHasChanged = true;
+                    if(activityData && activityData["locale"]) {
+                        background.locale = activityData["locale"];
+                        activity.uppercaseOnly = activityData["uppercaseMode"] === "true" ? true : false;
                     }
                 } else if (activity.activityName == "smallnumbers2") {
-                    var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.dominoModeBox.currentIndex].value;
-                    if (newMode !== activity.dominoMode) {
-                        activity.dominoMode = newMode;
-                        dataToSave = {"mode": activity.dominoMode};
-                        configHasChanged = true;
+                    if(activityData && activityData["mode"]) {
+                        activity.dominoMode = activityData["mode"];
                     }
-                }
-                
-                // Restart the activity with new information
-                if(configHasChanged) {
-                    background.stop();
-                    background.start();
                 }
             }
-
-            function setDefaultValues() {
-                if (activity.activityName == "gletters") {
-                    var localeUtf8 = background.locale;
-                    if(background.locale != "system") {
-                        localeUtf8 += ".UTF-8";
-                    }
-
-                    for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
-                        if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
-                            dialogActivityConfig.configItem.localeBox.currentIndex = i;
-                            break;
-                        }
-                    }
-                } else if (activity.activityName == "smallnumbers2") {
-                    for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
-                        if(dialogActivityConfig.configItem.availableModes[i].value === activity.dominoMode) {
-                            dialogActivityConfig.configItem.dominoModeBox.currentIndex = i;
-                            break;
-                        }
-                    }
-                }
+            onStartActivity: {
+                background.start()
             }
         }
 
@@ -256,16 +207,14 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: configurationButtonVisible ? (help | home | level | config) : (help | home | level)}
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
