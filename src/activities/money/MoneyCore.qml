@@ -20,6 +20,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 import "money.js" as Activity
@@ -41,6 +42,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -56,10 +58,13 @@ ActivityBase {
             property alias store: store
             property alias instructions: instructions
             property alias tux: tux
+            property var levels: activity.datasetLoader.item.data
             property alias tuxMoney: tuxMoney
             property alias bar: bar
             property alias bonus: bonus
             property int itemIndex
+            property int pocketRows
+            property bool verticalOrientation: background.height > background.width - bar.height
             property var selectedArea
             property alias pocket: pocketArea.answer
             property alias answer: answerArea.answer
@@ -76,7 +81,7 @@ ActivityBase {
             width: parent.width * 0.9
 
             property int nbColumns: 5
-            property int nbLines: 2
+            property int nbLines: (items.verticalOrientation) ? items.pocketRows + 1 : items.pocketRows
             property int itemWidth:
                 Math.min(width / nbColumns - 10 - 10 / nbColumns,
                          parent.height * 0.4 / nbLines - 10 - 10 / nbLines)
@@ -101,13 +106,12 @@ ActivityBase {
 
             Rectangle {
                 id: storeArea
-                height: (columnLayout.itemStoreHeight + 10)
+                height: columnLayout.itemStoreHeight + 10
                 width: columnLayout.width
                 color: "#55333333"
                 border.color: "black"
                 border.width: 2
                 radius: 5
-
                 Flow {
                     id: storeAreaFlow
                     anchors.topMargin: 4
@@ -135,9 +139,9 @@ ActivityBase {
                         Repeater {
                             id: tuxMoney
                             Image {
-                                source: Activity.url + modelData.img
-                                sourceSize.height:  columnLayout.itemStoreHeight * 0.4
-                                x: tux.x + index * 20
+                                source: modelData.img
+                                sourceSize.height:  columnLayout.itemStoreHeight * 0.3
+                                x: tux.x + index * 50
                                 y: tux.y + tux.height / 2 + index * 20
                             }
                         }
@@ -146,12 +150,14 @@ ActivityBase {
                     Repeater {
                         id: store
                         Image {
-                            source: Activity.url + modelData.img
+                            source: modelData.img
                             sourceSize.height: columnLayout.itemStoreHeight
                             sourceSize.width: columnLayout.itemStoreHeight
                             GCText {
                                 text: modelData.price
-                                fontSize: 16
+                                height: parent.height
+                                width: parent.width
+                                fontSizeMode: Text.Fit
                                 font.weight: Font.DemiBold
                                 style: Text.Outline
                                 styleColor: "black"
@@ -244,6 +250,26 @@ ActivityBase {
                 items.selectedArea.itemAt(items.itemIndex).selected = true
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                home()
+                background.stop()
+                background.start()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -251,9 +277,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
