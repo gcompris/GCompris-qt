@@ -132,6 +132,7 @@ function generateRandomYearMonthDay(minimumDate, maximumDate) {
 function addOffsetToCurrentDate(currentDate) {
     var maxOffset = currentLevelConfig.questionAnswers.maxOffset
     var offset = Math.floor(maxOffset / 2) + Math.floor(Math.random() * Math.floor(maxOffset))
+    var storedOffset = offset
     daysInMonths[1] = (isLeapYear(currentDate.year)) ? 29 : 28;
     offset += currentDate.day
     var answerDate = 1;
@@ -151,13 +152,13 @@ function addOffsetToCurrentDate(currentDate) {
             answerMonth = 0;
         }
     }
-    return { year: answerYear, month: answerMonth, day: answerDate, offset: offset } 
+    return { year: answerYear, month: answerMonth, day: answerDate, offset: storedOffset }
 }
 
 function getTemplateQuestionText(mode, date) {
     var questionText
     if(mode == "findDayOfWeek") {
-        questionText = qsTr("What day of the week is on %1?").arg(date.day)
+        questionText = qsTr("What day of the week is on %1?").arg(getDateInLongFormat(date))
     } else if(mode == "findDay") {
         questionText = qsTr("Select day %1?").arg(date.day)
     } else if(mode == "findMonthOnly") {
