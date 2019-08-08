@@ -148,7 +148,7 @@ function get() {
                             "closeness": [1, 100, 35, 35]
                         },
                         { 	// sub-level 2
-                            "question": qsTr("How long does it take for Earth to complete one year?"),
+                            "question": qsTr("How long does it take for Earth to make one revolution around the Sun?"),
                             "options": [qsTr("200 days"), qsTr("30 days"), qsTr("7 days"), qsTr("365 days")],
                             "closeness": [54.3, 7.3, 1, 100]
                         },
@@ -212,7 +212,7 @@ function get() {
                             "closeness": [47.3, 91, 100, 1]
                         },
                         { 	// sub-level 6
-                            "question": qsTr("How long does it take for Mars to complete one year?"),
+                            "question": qsTr("How long does it take for Mars to make one revolution around the Sun?"),
                             "options": [qsTr("687 days"), qsTr("30 days"), qsTr("7 days"), qsTr("365 days")],
                             "closeness": [100, 4.3, 1, 53]
                         },
@@ -256,7 +256,7 @@ function get() {
                             "closeness": [100, 63.5, 94.8, 1]
                         },
                         { 	// sub-level 6
-                            "question": qsTr("How long does it take for Jupiter to complete one year?"),
+                            "question": qsTr("How long does it take for Jupiter to make one revolution around the Sun?"),
                             "options": [qsTr("5 Earth years"), qsTr("12 Earth years"), qsTr("30 Earth years"), qsTr("1 Earth year")],
                             "closeness": [61.5, 100, 1, 39.5]
                         }
@@ -295,7 +295,7 @@ function get() {
                             "closeness": [36.6, 1, 100, 72]
                         },
                         { 	// sub-level 6
-                            "question": qsTr("How long does it take for Saturn to complete one year?"),
+                            "question": qsTr("How long does it take for Saturn to make one revolution around the Sun?"),
                             "options": [qsTr("29.5 Earth years"), qsTr("20 Earth years"), qsTr("10 Earth years"), qsTr("1 Earth year")],
                             "closeness": [100, 67, 32, 1]
                         }
