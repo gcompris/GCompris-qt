@@ -1,4 +1,3 @@
-
 /* GCompris - Data.qml
  *
  * Copyright (C) 2019 Akshay Kumar <email.akshay98@gmail.com>
@@ -24,8 +23,9 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Count numbers upto 15")
+    objective: qsTr("Count numbers up to 15")
     difficulty: 1
+    //: If the value of variable showNext is true then the next number to be selected is shown as hint, otherwise not.
     data: [
         {
             data: "0 1 2 3".split(" "),

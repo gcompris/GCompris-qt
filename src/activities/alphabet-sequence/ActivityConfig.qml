@@ -38,7 +38,7 @@ Item {
             id: modeBox
             model: availableModes
             background: activityConfiguration.background
-            label: qsTr("Select Domino Representation")
+            label: qsTr("Select Case")
         }
     }
 

@@ -1,4 +1,3 @@
-
 /* GCompris - Data.qml
  *
  * Copyright (C) 2019 Akshay Kumar <email.akshay98@gmail.com>
@@ -24,8 +23,9 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Select even and odd numbers upto 30")
+    objective: qsTr("Select even and odd numbers up to 30")
     difficulty: 1
+    //: If the value of variable showNext is true then the next number to be selected is shown as hint, otherwise not.
     data: [
         {
             data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),

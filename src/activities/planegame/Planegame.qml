@@ -74,7 +74,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property var levels: activity.datasetLoader.item.data
+            property var levels: activity.datasetLoader.item !== null ? activity.datasetLoader.item.data : null
             property alias score: score
             property alias plane: plane
             property GCAudio audioVoices: activity.audioVoices

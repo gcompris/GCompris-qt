@@ -23,25 +23,6 @@ Planegame {
 
     showTutorial: true
 
-    dataset: [
-        {
-            data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),
-            showNext: true
-        },
-        {
-            data: "1 3 5 7 9 11 13 15 17 19 21".split(" "),
-            showNext: true
-        },
-        {
-            data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),
-            showNext: false
-        },
-        {
-            data: "1 3 5 7 9 11 13 15 17 19 21".split(" "),
-            showNext: false
-        }
-    ]
-
     tutorialInstructions: [
                 {
                     "instruction": qsTr("This activity teaches about even and odd numbers."),
