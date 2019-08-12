@@ -151,6 +151,11 @@ Image {
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.bottom: parent.bottom
+                width: ApplicationInfo.ratio * 30
+                horizontalAlignment: Text.AlignHCenter
+                font.pointSize: 20
+                minimumPointSize: 5
+                fontSizeMode: Text.Fit
                 text: score
             }
             

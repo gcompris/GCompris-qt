@@ -62,6 +62,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias targetModel: targetItem.model
+            property var levels: activity.datasetLoader.item.data
             property alias targetItem: targetItem
             property alias userEntry: userEntry
             property int currentArrow
@@ -164,7 +165,7 @@ ActivityBase {
 
             userEntry.text += text
 
-            if(targetItem.scoreTotal === userEntry.text)
+            if(targetItem.scoreTotal.toString() === userEntry.text)
                 bonus.good("flower")
         }
 

@@ -24,87 +24,16 @@
 
 var url = "qrc:/gcompris/src/activities/target/resource/"
 
-var colors = [
-            "#ff1b00",
-            "#7edee2",
-            "#f1f500",
-            "#3dff00",
-            "#b7d2d4",
-            "#6db5ba"
-        ]
-
-var levels = [
-            [
-                {size: 50, color: colors[0], score: 5},
-                {size: 100, color: colors[1], score: 4},
-                {size: 150, color: colors[2], score: 3},
-                {size: 200, color: colors[3], score: 2},
-                {size: 250, color: colors[4], score: 1}
-            ],
-            [
-                {size: 50, color: colors[0], score: 10},
-                {size: 100, color: colors[1], score: 5},
-                {size: 150, color: colors[2], score: 3},
-                {size: 200, color: colors[3], score: 2},
-                {size: 250, color: colors[4], score: 1}
-            ],
-            [
-                {size: 50, color: colors[0], score: 20},
-                {size: 100, color: colors[1], score: 10},
-                {size: 150, color: colors[2], score: 8},
-                {size: 200, color: colors[3], score: 5},
-                {size: 250, color: colors[4], score: 3},
-                {size: 300, color: colors[5], score: 2}
-            ],
-            [
-                {size: 50, color: colors[0], score: 30},
-                {size: 100, color: colors[1], score: 20},
-                {size: 150, color: colors[2], score: 10},
-                {size: 200, color: colors[3], score: 5},
-                {size: 250, color: colors[4], score: 3},
-                {size: 300, color: colors[5], score: 2}
-            ],
-            [
-                {size: 50, color: colors[0], score: 50},
-                {size: 100, color: colors[1], score: 30},
-                {size: 150, color: colors[2], score: 20},
-                {size: 200, color: colors[3], score: 8},
-                {size: 250, color: colors[4], score: 3},
-                {size: 300, color: colors[5], score: 2}
-            ],
-            [
-                {size: 50, color: colors[0], score: 100},
-                {size: 100, color: colors[1], score: 50},
-                {size: 150, color: colors[2], score: 12},
-                {size: 200, color: colors[3], score: 8},
-                {size: 250, color: colors[4], score: 3},
-                {size: 300, color: colors[5], score: 2}
-            ],
-            [
-                {size: 50, color: colors[0], score: 500},
-                {size: 100, color: colors[1], score: 100},
-                {size: 150, color: colors[2], score: 50},
-                {size: 200, color: colors[3], score: 15},
-                {size: 250, color: colors[4], score: 7},
-                {size: 300, color: colors[5], score: 3}
-            ],
-            [
-                {size: 50, color: colors[0], score: 64},
-                {size: 100, color: colors[1], score: 32},
-                {size: 150, color: colors[2], score: 16},
-                {size: 200, color: colors[3], score: 8},
-                {size: 250, color: colors[4], score: 4},
-                {size: 300, color: colors[5], score: 2}
-            ]
-        ]
-
+var levels
 var currentLevel = 0
-var numberOfLevel = levels.length
+var numberOfLevel
 var items
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    levels = items.levels
+    numberOfLevel = levels.length
     items.currentSubLevel = 0
     items.numberOfSubLevel = 5
     initLevel()
