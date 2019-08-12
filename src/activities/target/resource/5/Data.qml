@@ -35,6 +35,7 @@ Dataset {
         "#6db5ba",
         "#ffffff"
     ]
+    
     data: [
         [
             {size: 50, color: colors[0], score: 100},
