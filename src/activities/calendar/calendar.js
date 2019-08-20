@@ -122,7 +122,13 @@ function generateRandomYearMonthDay(minimumDate, maximumDate) {
     var maxMonth = Number(maximumDate.slice(5, 7))
     var minDate = Number(minimumDate.slice(8, 10))
     var currentYear = minYear + Math.floor(Math.random() * Math.floor((maxYear - minYear + 1)))
-    var currentMonth = minMonth + Math.floor(Math.random() * Math.floor((maxMonth - minMonth + 1)))
+    var currentMonth
+    if(currentLevelConfig.questionAnswers.maxOffset) {
+        currentMonth = minMonth + Math.floor(Math.random() * Math.floor((maxMonth - minMonth - currentLevelConfig.questionAnswers.maxOffset / 30)))
+    } else {
+        currentMonth = minMonth + Math.floor(Math.random() * Math.floor((maxMonth - minMonth + 1)))
+    }
+    currentMonth = Math.max(currentMonth, 1)
     var currentDate
     daysInMonths[1] = (isLeapYear(currentYear)) ? 29 : 28;
     currentDate = minDate + Math.floor(Math.random() * Math.floor((daysInMonths[currentMonth - 1] - minDate + 1)))
@@ -146,7 +152,7 @@ function addOffsetToCurrentDate(currentDate) {
             answerDate = offset;
             offset = 0
         }
-        if(answerMonth > 12) {
+        if(answerMonth > 11) {
             answerYear++;
             daysInMonths[1] = (isLeapYear(answerYear)) ? 29 : 28;
             answerMonth = 0;
@@ -158,9 +164,9 @@ function addOffsetToCurrentDate(currentDate) {
 function getTemplateQuestionText(mode, date) {
     var questionText
     if(mode == "findDayOfWeek") {
-        questionText = qsTr("What day of the week is on %1?").arg(getDateInLongFormat(date))
+        questionText = qsTr("What day of the week is on %1 of given month?").arg(date.day)
     } else if(mode == "findDay") {
-        questionText = qsTr("Select day %1?").arg(date.day)
+        questionText = qsTr("Select day %1").arg(date.day)
     } else if(mode == "findMonthOnly") {
         questionText = qsTr("Find month number %1").arg(date.month + 1)
     } else {

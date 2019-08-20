@@ -412,11 +412,11 @@ ActivityBase {
         BarButton {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            visible: !showTutorial
             height: bar.height * 0.8
             width: okButton.height
             sourceSize.width: okButton.width
             sourceSize.height: okButton.height
-            z: 10
             anchors.top: calendarBox.bottom
             anchors.right: calendarBox.right
             anchors.margins: items.horizontalLayout ? 30 : 6

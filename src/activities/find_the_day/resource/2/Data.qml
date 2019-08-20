@@ -41,7 +41,7 @@ parameter maxOffset for questions where the user has to find date some days ahea
 
 Dataset {
     objective: qsTr("Find the date less than two month away")
-    difficulty: 2
+    difficulty: 5
     data: [
     {
        "navigationBarVisible" : true,
