@@ -25,7 +25,7 @@ import "../../../../core"
 
 Dataset {
     objective: qsTr("Practice addition on targets with max value 500")
-    difficulty: 1
+    difficulty: 4
     property var colors: [
         "#ff1b00",
         "#7edee2",
