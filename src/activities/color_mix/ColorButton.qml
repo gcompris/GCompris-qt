@@ -43,9 +43,11 @@ Item {
     MouseArea {
         id: mouseArea
         anchors.centerIn: parent
-        height: 3 * parent.height
-        width: 3 * parent.width
+        height: 2.3 * parent.height
+        width: 2.3 * parent.width
         hoverEnabled: true
+
+        onClicked: button.clicked()
     }
 
     states: [
@@ -69,7 +71,7 @@ Item {
             when: mouseArea.containsMouse
             PropertyChanges {
                 target: button
-                scale: 1.2
+                scale: 1.1
             }
         }
     ]
