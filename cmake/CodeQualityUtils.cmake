@@ -20,6 +20,6 @@ if(CLANG_TIDY_EXE)
     set(CMAKE_CXX_CLANG_TIDY ${CLANG_TIDY_EXE})
     list(
         APPEND CMAKE_CXX_CLANG_TIDY
-            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-*,-modernize-use-auto,-readability-braces-around-statements,-readability-static-accessed-through-instance,-readability-magic-numbers"
+            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-*,-modernize-use-auto,-readability-*"
         )
 endif()
