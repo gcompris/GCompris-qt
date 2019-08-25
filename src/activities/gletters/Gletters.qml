@@ -99,6 +99,16 @@ ActivityBase {
         }
 
         onStart: {
+            // for smallnumbers and smallnumbers2, we want to have the application locale, not the system one
+            if(activity.activityName !== "gletters") {
+                var overridenLocale = ApplicationSettings.locale
+                // Remove .UTF-8
+                if(overridenLocale.indexOf('.') != -1) {
+                    overridenLocale = overridenLocale.substring(0, overridenLocale.indexOf('.'))
+                }
+                background.locale = overridenLocale
+            }
+
             Activity.start(items, uppercaseOnly, mode);
             Activity.focusTextInput()
         }
@@ -153,14 +163,14 @@ ActivityBase {
                             width: dialogActivityConfig.width
                             GCComboBox {
                                 id: localeBox
-                                visible: (activity.activityName == "gletters")
+                                visible: (activity.activityName === "gletters")
                                 model: langs.languages
                                 background: dialogActivityConfig
                                 label: qsTr("Select your locale")
                             }
                             GCComboBox {
                                 id: dominoModeBox
-                                visible: (activity.activityName == "smallnumbers2")
+                                visible: (activity.activityName === "smallnumbers2")
                                 model: availableModes
                                 background: dialogActivityConfig
                                 label: qsTr("Select Domino mode")
@@ -168,7 +178,7 @@ ActivityBase {
                         }
                         GCDialogCheckBox {
                             id: uppercaseBox
-                            visible: (activity.activityName == "gletters")
+                            visible: (activity.activityName === "gletters")
                             width: dialogActivityConfig.width
                             text: qsTr("Uppercase only mode")
                             checked: activity.uppercaseOnly
@@ -179,12 +189,12 @@ ActivityBase {
 
             onClose: home()
             onLoadData: {
-                if (activity.activityName == "gletters") {
+                if (activity.activityName === "gletters") {
                     if(dataToSave && dataToSave["locale"]) {
                         background.locale = dataToSave["locale"];
                         activity.uppercaseOnly = dataToSave["uppercaseMode"] === "true" ? true : false;
                     }
-                } else if (activity.activityName == "smallnumbers2") {
+                } else if (activity.activityName === "smallnumbers2") {
                     if(dataToSave && dataToSave["mode"]) {
                         activity.dominoMode = dataToSave["mode"];
                     }
@@ -192,7 +202,7 @@ ActivityBase {
             }
             onSaveData: {
                 var configHasChanged = false
-                if (activity.activityName == "gletters") {
+                if (activity.activityName === "gletters") {
                     var oldLocale = background.locale;
                     var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                     // Remove .UTF-8
@@ -208,7 +218,7 @@ ActivityBase {
                     if(oldLocale !== newLocale || oldUppercaseMode !== activity.uppercaseOnly) {
                         configHasChanged = true;
                     }
-                } else if (activity.activityName == "smallnumbers2") {
+                } else if (activity.activityName === "smallnumbers2") {
                     var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.dominoModeBox.currentIndex].value;
                     if (newMode !== activity.dominoMode) {
                         activity.dominoMode = newMode;
@@ -225,7 +235,7 @@ ActivityBase {
             }
 
             function setDefaultValues() {
-                if (activity.activityName == "gletters") {
+                if (activity.activityName === "gletters") {
                     var localeUtf8 = background.locale;
                     if(background.locale != "system") {
                         localeUtf8 += ".UTF-8";
@@ -237,7 +247,7 @@ ActivityBase {
                             break;
                         }
                     }
-                } else if (activity.activityName == "smallnumbers2") {
+                } else if (activity.activityName === "smallnumbers2") {
                     for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
                         if(dialogActivityConfig.configItem.availableModes[i].value === activity.dominoMode) {
                             dialogActivityConfig.configItem.dominoModeBox.currentIndex = i;
