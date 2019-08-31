@@ -28,6 +28,7 @@ Planegame {
     // Supports multigraphs, e.g. /sh/ or /sch/ gets treated as one letter
     property string alphabet: qsTr("a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z");
 
+    showTutorial: false
     dataset: [
         {
             data: activity.alphabet.split("/"),

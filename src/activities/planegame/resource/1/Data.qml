@@ -25,7 +25,7 @@ import "../../../../core"
 Dataset {
     objective: qsTr("Count numbers up to 15")
     difficulty: 1
-    //: If the value of variable showNext is true then the next number to be selected is shown as hint, otherwise not.
+    // If the value of variable showNext is true then the next number to be selected is shown as hint, otherwise not.
     data: [
         {
             data: "0 1 2 3".split(" "),

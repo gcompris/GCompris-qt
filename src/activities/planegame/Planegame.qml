@@ -82,7 +82,7 @@ ActivityBase {
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
             property bool showTutorial: activity.showTutorial
-            property var letterMode: activity.mode
+            property string letterMode: activity.mode
        }
 
         onStart: { Activity.start(items, dataset) }

@@ -25,7 +25,7 @@ import "../../../../core"
 Dataset {
     objective: qsTr("Select even and odd numbers up to 20")
     difficulty: 1
-    //: If the value of variable showNext is true then the next number to be selected is shown as hint, otherwise not.
+    // If the value of variable showNext is true then the next number to be selected is shown as hint, otherwise not.
     data: [
         {
             data: "0 2 4".split(" "),

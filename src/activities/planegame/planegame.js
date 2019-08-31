@@ -78,7 +78,7 @@ function cloudDestroy(clouds) {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;
+    items.bar.level = currentLevel + 1
     currentSubLevel = 0
     numberOfSubLevels = dataset[currentLevel].data.length
     if(items.letterMode === "upper") {
