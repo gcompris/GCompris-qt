@@ -1,4 +1,3 @@
-
 /* GCompris - Data.qml
  *
  * Copyright (C) 2019 Akshay Kumar <email.akshay98@gmail.com>
@@ -35,7 +34,7 @@ Dataset {
         "#6db5ba",
         "#ffffff"
     ]
-    
+
     data: [
         [
             {size: 50, color: colors[0], score: 100},

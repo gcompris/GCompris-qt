@@ -1,4 +1,3 @@
-
 /* GCompris - Data.qml
  *
  * Copyright (C) 2019 Akshay Kumar <email.akshay98@gmail.com>
