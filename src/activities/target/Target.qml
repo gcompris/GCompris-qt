@@ -50,6 +50,7 @@ ActivityBase {
         }
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -62,6 +63,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias targetModel: targetItem.model
+            property var levels: activity.datasetLoader.item.data
             property alias targetItem: targetItem
             property alias userEntry: userEntry
             property int currentArrow
@@ -164,7 +166,7 @@ ActivityBase {
 
             userEntry.text += text
 
-            if(targetItem.scoreTotal === userEntry.text)
+            if(targetItem.scoreTotal.toString() === userEntry.text)
                 bonus.good("flower")
         }
 
@@ -208,6 +210,25 @@ ActivityBase {
             onError: console.log("VirtualKeyboard error: " + msg);
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                background.start()
+                home()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -216,9 +237,12 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()

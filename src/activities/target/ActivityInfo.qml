@@ -37,4 +37,5 @@ ActivityInfo {
   credit: ""
   section: "math addition arithmetic"
   createdInVersion: 0
+  levels: "1,2,3,4,5"
 }
