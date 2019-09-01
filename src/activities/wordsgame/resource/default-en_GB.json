@@ -278,8 +278,8 @@
             "gold",
             "gone",
             "good",
-            "gray",
             "grew",
+            "grey",
             "grow",
             "hair",
             "half",
@@ -593,7 +593,7 @@
             "cloth",
             "cloud",
             "coast",
-            "color",
+            "colour",
             "could",
             "count",
             "court",
@@ -925,7 +925,7 @@
             "castle",
             "caught",
             "ceased",
-            "center",
+            "centre",
             "chance",
             "change",
             "charge",
@@ -1518,7 +1518,7 @@
             "liability",
             "liberty",
             "library",
-            "license",
+            "licence",
             "likewise",
             "limitation",
             "limited",
@@ -1807,7 +1807,7 @@
             "arrangement",
             "balance",
             "barrier",
-            "behavior",
+            "behaviour",
             "bicycle",
             "biology",
             "birdfarm",
@@ -1985,7 +1985,7 @@
          ]
       }
    ],
-   "name" : "default-en",
-   "locale" : "en",
-   "description" : "Default English (American)"
+   "name" : "default-en_GB",
+   "locale" : "en_GB",
+   "description" : "Default English (British)"
 }
