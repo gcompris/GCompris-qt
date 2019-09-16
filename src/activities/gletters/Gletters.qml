@@ -36,6 +36,8 @@ ActivityBase {
     property bool configurationButtonVisible: true
 
     property bool uppercaseOnly: false
+    
+    property int speedSetting: 10
 
     property string activityName: "gletters"
 
@@ -109,7 +111,7 @@ ActivityBase {
                 background.locale = overridenLocale
             }
 
-            Activity.start(items, uppercaseOnly, mode);
+            Activity.start(items, uppercaseOnly, mode, speedSetting);
             Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
@@ -146,6 +148,7 @@ ActivityBase {
                     property alias localeBox: localeBox
                     property alias dominoModeBox: dominoModeBox
                     property alias uppercaseBox: uppercaseBox
+                    property alias speedSlider: speedSlider
                     height: column.height
 
                     property alias availableLangs: langs.languages
@@ -183,6 +186,24 @@ ActivityBase {
                             text: qsTr("Uppercase only mode")
                             checked: activity.uppercaseOnly
                         }
+                        Flow {
+                            width: dialogActivityConfig.width
+                            spacing: 5
+                            GCSlider {
+                                id: speedSlider
+                                width: 250 * ApplicationInfo.ratio
+                                value: activity.speedSetting
+                                maximumValue: 10
+                                minimumValue: 1
+                                scrollEnabled: false
+                            }
+                            GCText {
+                                id: speedSliderText
+                                text: qsTr("Speed")
+                                fontSize: mediumSize
+                                wrapMode: Text.WordWrap
+                            }
+                        }
                     }
                 }
             }
@@ -198,6 +219,9 @@ ActivityBase {
                     if(dataToSave && dataToSave["mode"]) {
                         activity.dominoMode = dataToSave["mode"];
                     }
+                }
+                if(dataToSave && dataToSave["speedSetting"]) {
+                    activity.speedSetting = dataToSave["speedSetting"];
                 }
             }
             onSaveData: {
@@ -225,6 +249,12 @@ ActivityBase {
                         dataToSave = {"mode": activity.dominoMode};
                         configHasChanged = true;
                     }
+                }
+                var oldSpeed = activity.speedSetting
+                activity.speedSetting = dialogActivityConfig.configItem.speedSlider.value
+                if(oldSpeed != activity.speedSetting) {
+                    dataToSave = {"speedSetting": activity.speedSetting};
+                    configHasChanged = true;
                 }
                 
                 // Restart the activity with new information

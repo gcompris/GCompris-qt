@@ -36,6 +36,7 @@ var maxLevel = 0;
 var maxSubLevel = 0;
 var items;
 var uppercaseOnly;
+var speedSetting;
 var mode;
 
 //speed calculations, common:
@@ -65,12 +66,26 @@ var wordComponent = null;
 
 var successRate // Falling speed depends on it
 
-function start(items_, uppercaseOnly_,  _mode) {
+function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     items = items_;
     uppercaseOnly = uppercaseOnly_;
     mode = _mode;
+    speedSetting = speedSetting_;
     currentLevel = 0;
     currentSubLevel = 0;
+
+    incSpeed = 1 * speedSetting;
+    fallRateBase = 400 / speedSetting;
+    dropRateBase = 25000 / (speedSetting / 2);
+    
+    if (mode == "word") {
+        wgMaxFallSpeed = 70000 / speedSetting;
+        wgMaxSpeed = 1500 / speedSetting;
+        wgMinFallSpeed = 30000 / speedSetting;
+        wgMinSpeed = 500 / speedSetting;
+        wgDefaultFallSpeed = 80000 / speedSetting;
+        wgAddSpeed = 100 / (speedSetting / 2);
+    }
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
 
@@ -241,7 +256,7 @@ function setSpeed()
         speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (currentLevel + 1)));
         fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase + (dropRateMult * (currentLevel + 1))));
     } else { // wordsgame
-        speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (currentLevel+1)*wgAddSpeed;
+        speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (currentLevel + 1)*wgAddSpeed;
         fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (currentLevel+1)*wgAddFallSpeed
 
         if(speed < wgMinSpeed ) speed = wgMinSpeed;
