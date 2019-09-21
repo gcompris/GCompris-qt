@@ -80,18 +80,18 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     
     fallRateBase = 400 / speedSetting;
     fallRateMult = 800 / speedSetting;
-    dropRateBase = Math.max(5000, 10000 / speedSetting);
-    dropRateMult = 10 * speedSetting;
+    dropRateBase = 60000 / speedSetting;
+    dropRateMult = 1000 / speedSetting;
 
     if (mode == "word") {
-        wgMaxFallSpeed = 80000 / speedSetting;
-        wgMaxSpeed = 1700 / speedSetting;
-        wgMinFallSpeed = 40000 / speedSetting;
-        wgMinSpeed = 1000 / speedSetting;
-        wgDefaultFallSpeed = 80000 / speedSetting;
-        wgDefaultSpeed = 1700 / speedSetting;
-        wgAddSpeed = 1 * speedSetting;
-        wgAddFallSpeed = 10 * speedSetting;
+        wgMaxFallSpeed = 90000 / speedSetting;
+        wgMaxSpeed = 1500 / speedSetting;
+        wgMinFallSpeed = 70000 / speedSetting;
+        wgMinSpeed = 1300 / speedSetting;
+        wgDefaultFallSpeed = 90000 / speedSetting;
+        wgDefaultSpeed = 1500 / speedSetting;
+        wgAddSpeed = 2 * speedSetting;
+        wgAddFallSpeed = 100 * speedSetting;
     }
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
@@ -265,10 +265,10 @@ function setSpeed()
 {
     if (mode === "letter") {
         speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (currentLevel + 1)));
-        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase + (dropRateMult * (currentLevel + 1))));
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase - (dropRateMult * (currentLevel + 1))));
     } else { // wordsgame
         speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (currentLevel + 1)*wgAddSpeed;
-        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (currentLevel+1)*wgAddFallSpeed
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (currentLevel + 1)*wgAddFallSpeed
 
         if(speed < wgMinSpeed ) speed = wgMinSpeed;
         if(speed > wgMaxSpeed ) speed = wgMaxSpeed;
