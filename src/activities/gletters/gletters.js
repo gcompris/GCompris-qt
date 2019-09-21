@@ -75,16 +75,22 @@ function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     currentSubLevel = 0;
 
     incSpeed = 1 * speedSetting;
-    fallRateBase = 400 / speedSetting;
-    dropRateBase = 25000 / (speedSetting / 2);
+    incFallSpeed = 100 * speedSetting;
     
+    fallRateBase = 400 / speedSetting;
+    fallRateMult = 800 / speedSetting;
+    dropRateBase = Math.max(5000, 10000 / speedSetting);
+    dropRateMult = 10 * speedSetting;
+
     if (mode == "word") {
-        wgMaxFallSpeed = 70000 / speedSetting;
-        wgMaxSpeed = 1500 / speedSetting;
-        wgMinFallSpeed = 30000 / speedSetting;
-        wgMinSpeed = 500 / speedSetting;
+        wgMaxFallSpeed = 80000 / speedSetting;
+        wgMaxSpeed = 1700 / speedSetting;
+        wgMinFallSpeed = 40000 / speedSetting;
+        wgMinSpeed = 1000 / speedSetting;
         wgDefaultFallSpeed = 80000 / speedSetting;
-        wgAddSpeed = 100 / (speedSetting / 2);
+        wgDefaultSpeed = 1700 / speedSetting;
+        wgAddSpeed = 1 * speedSetting;
+        wgAddFallSpeed = 10 * speedSetting;
     }
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
