@@ -27,6 +27,7 @@ var operand
 var secondOperandVal
 var firstOperandVal
 var operations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var speedSetting
 var OperandsEnum = {
     TIMES_SIGN : "\u00D7",
     PLUS_SIGN : "\u002B",
@@ -36,10 +37,11 @@ var OperandsEnum = {
 
 var nbLevel = operations.length
 
-function start(coreItems_, otherItems_, operand_) {
+function start(coreItems_, otherItems_, operand_, speedSetting_) {
     operand   = operand_
     coreItems = coreItems_
     otherItems = otherItems_
+    speedSetting = speedSetting_
     currentLevel = 0
     coreItems.score.numberOfSubLevels = 10
     // for multiplication and addition, the first levels will display
@@ -149,9 +151,7 @@ function run() {
     otherItems.secondOp.visible = true
     otherItems.numpad.answerFlag = false
     otherItems.result = getAnswer()
-
-    // TODO adjusting or disabling the difficulty
-    coreItems.balloon.startMoving(20000)
+    coreItems.balloon.startMoving(100000 / speedSetting)
 }
 
 function questionsLeft() {
