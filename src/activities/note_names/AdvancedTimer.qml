@@ -28,10 +28,9 @@ Timer {
 
     property double startTime
     property double pauseTime
-    property int timerNormalInterval: 2700
     property int remainingInterval
 
-    interval: timerNormalInterval
+    interval: activity.timerNormalInterval
 
     signal pause
     signal resume
@@ -61,8 +60,8 @@ Timer {
     }
 
     onTriggered:{
-        if(interval != timerNormalInterval) {
-            interval = timerNormalInterval
+        if(interval != activity.timerNormalInterval) {
+            interval = activity.timerNormalInterval
         }
     }
 

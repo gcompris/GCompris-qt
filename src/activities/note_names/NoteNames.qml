@@ -28,6 +28,8 @@ import "note_names.js" as Activity
 
 ActivityBase {
     id: activity
+    property int speedSetting: 5
+    property int timerNormalInterval: (13500 / speedSetting)
 
     onStart: focus = true
     onStop: {}
@@ -38,11 +40,11 @@ ActivityBase {
         id: background
         anchors.fill: parent
         color: "#ABCDEF"
-
         signal start
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -104,10 +106,75 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/note_names/resource/dataset_01.qml"
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, activity.timerNormalInterval) }
         onStop: { Activity.stop() }
 
         property string clefType: "Treble"
+
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias speedSlider: speedSlider
+                    height: column.height
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                         Flow {
+                            width: dialogActivityConfig.width
+                            spacing: 5
+                            GCSlider {
+                                id: speedSlider
+                                width: 250 * ApplicationInfo.ratio
+                                value: activity.speedSetting
+                                maximumValue: 5
+                                minimumValue: 1
+                                scrollEnabled: false
+                            }
+                            GCText {
+                                id: speedSliderText
+                                text: qsTr("Speed")
+                                fontSize: mediumSize
+                                wrapMode: Text.WordWrap
+                            }
+                        }
+                    }
+                }
+            }
+
+            onStart: {
+                if(!introMessage.visible || !iAmReady.visible) {
+                    multipleStaff.pauseNoteAnimation()
+                    addNoteTimer.pause()
+                }
+            }
+            onClose: {
+                home();
+                introMessage.visible = false;
+                iAmReady.visible = true;
+            }
+            onLoadData: {
+                 if(dataToSave) {
+                     if(dataToSave["speedSetting"]) {
+                    activity.speedSetting = dataToSave["speedSetting"];
+                     }
+                }
+            }
+            onSaveData: {
+                var oldSpeed = activity.speedSetting
+                activity.speedSetting = dialogActivityConfig.configItem.speedSlider.value
+                if(oldSpeed != activity.speedSetting) {
+                    dataToSave = {"speedSetting": activity.speedSetting};
+                    background.stop();
+                    introMessage.visible = false;
+                    iAmReady.visible = true;
+                }
+            }
+        }
 
         Timer {
             id: displayNoteNameTimer
@@ -264,6 +331,7 @@ ActivityBase {
             anchors.topMargin: progressBar.height + 20
             flickableTopMargin: multipleStaff.height / 14 + distanceBetweenStaff / 2.7
             noteAnimationEnabled: true
+            noteAnimationDuration: items.isTutorialMode ? 9000 : 45000 / activity.speedSetting
             onNoteAnimationFinished: {
                 if(!items.isTutorialMode)
                     displayNoteNameTimer.start()
@@ -404,13 +472,17 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: (help | home | level | reload | config) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                 dialogActivityConfig.active = true
+                 displayDialog(dialogActivityConfig)
+            }
             onReloadClicked: {
                 iAmReady.visible = true
                 Activity.initLevel()
