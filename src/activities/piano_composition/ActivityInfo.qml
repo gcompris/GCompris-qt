@@ -28,6 +28,7 @@ ActivityInfo {
   title: qsTr("Piano Composition")
   //: Help title
   description: qsTr("An activity to learn how the piano keyboard works, how notes are written on a musical staff and explore music composition by loading and saving your work.")
+  //intro: "Learn to compose piano music using the octaves and the tools presented above the staff."
   //: Help goal
   goal: qsTr("Develop an understanding of music composition, and increase interest in making music with a piano keyboard. This activity covers many fundamental aspects of music, but there is much more to explore about music composition. If you enjoy this activity but want a more advanced tool, try downloading Minuet (https://minuet.kde.org/), an open source software for music education or MuseScore (http://musescore.org/en/download), an open source music notation tool.")
   //: Help prerequisite
