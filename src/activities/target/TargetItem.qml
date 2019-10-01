@@ -146,12 +146,13 @@ Image {
             color: model.color
             radius: width / 2
             border.width: 1 * ApplicationInfo.ratio
-            border.color: "black"
+            border.color: "#40000000"
             
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.bottom: parent.bottom
                 text: score
+                color: "#A0000000"
             }
             
         }

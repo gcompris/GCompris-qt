@@ -25,12 +25,12 @@
 var url = "qrc:/gcompris/src/activities/target/resource/"
 
 var colors = [
-            "#ff1b00",
-            "#7edee2",
-            "#f1f500",
-            "#3dff00",
-            "#b7d2d4",
-            "#6db5ba"
+            "#ee7f7f",
+            "#eebf7f",
+            "#e0ee7f",
+            "#7fee8f",
+            "#7fcbee",
+            "#b8c8f6"
         ]
 
 var levels = [
