@@ -115,7 +115,7 @@ ActivityBase {
                 items.arrowFlying = true
                 if(items.currentArrow != items.nbArrow) {
                     arrowRepeater.itemAt(items.currentArrow).opacity = 1
-                    arrowRepeater.itemAt(items.currentArrow++).scale = 0.5
+                    arrowRepeater.itemAt(items.currentArrow++).scale = 1
                 }
             }
         }
