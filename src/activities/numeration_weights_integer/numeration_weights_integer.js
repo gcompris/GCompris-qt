@@ -203,6 +203,8 @@ function readNumerationTableEnteredValue() {
 function checkAnswer() {
     items.instruction.hide()
 
+    setWeightHeadersWeightCaptions()
+
     var allWeightsAreInTheRightColumns = areAllWeightsInTheRightColumns()
     if (!allWeightsAreInTheRightColumns) {
         items.instruction.text = qsTr("Some weights are not in the right column.")
@@ -279,6 +281,7 @@ function checkNumberWeightHeadersPositions() {
             console.log("numberWeightType/numberWeightTypeDropped",numberWeightType+"/"+numberWeightTypeDropped)
             if (numberWeightTypeDropped !== numberWeightType) {
                 items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.border.width = 5
+                items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.textAlias = "tt"
                 allNumbersInRightPositions = false
             }
             else items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.border.width = 0
@@ -286,6 +289,18 @@ function checkNumberWeightHeadersPositions() {
     }
     return allNumbersInRightPositions
 }
+
+
+function setWeightHeadersWeightCaptions() {
+    for (var i = 0; i<items.numberClassListModel.count; i++) {
+        for (var j=0; j<3; j++) {
+            var numberWeightType = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightType
+            items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.textAlias = numberWeightType
+        }
+    }
+}
+
+
 
 function checkNumberClassesColumnsPositions() {
     var allClassesColumnsInRightPositions = true
@@ -338,6 +353,8 @@ function evaluateAndDisplayProgresses(correctAnswer) {
         }
         numbersToConvertIndex++
         items.numberToConvertRectangle.text = numbersToConvert[numbersToConvertIndex]
+        console.log("numbersToConvert: " + numbersToConvert)
+        console.log("Index of numbersToConvert: " + numbersToConvertIndex)
         return
     }
     else {
@@ -356,6 +373,8 @@ function evaluateAndDisplayProgresses(correctAnswer) {
         numbersToConvert.splice(numbersToConvertIndex+1, 0, numbersToConvert[numbersToConvertIndex]);
         numbersToConvert.splice(numbersToConvertIndex+3, 0, numbersToConvert[numbersToConvertIndex]);
         numbersToConvertIndex++ //? how can we catch here the stop signal to wait a little bit before to go to next question ?
+        console.log("numbersToConvert: " + numbersToConvert)
+        console.log("Index of numbersToConvert: " + numbersToConvertIndex)
         items.numberToConvertRectangle.text = numbersToConvert[numbersToConvertIndex]
     }
 }

@@ -84,7 +84,7 @@ Rectangle {
         }
 
         onPositionChanged: {
-            Activity.unselectAllNumberWeightDragElement()
+           Activity.unselectAllNumberWeightDragElement()
         }
 
 

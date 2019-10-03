@@ -67,7 +67,7 @@ Rectangle {
             id: numberWeightHeaderImage
 
             anchors.fill: parent
-            sourceSize.width: parent.width //?
+            sourceSize.width: parent.width
             sourceSize.height: parent.height
 
             GCText {
