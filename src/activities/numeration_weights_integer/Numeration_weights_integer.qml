@@ -205,11 +205,11 @@ ActivityBase {
             Rectangle {
                 id: numberClassTypeHeader
                 width: mainZoneArea.width
-                height: mainZoneArea.height / 15
+                height: mainZoneArea.height / 20
                 anchors.top: topBanner.bottom
                 anchors.left: parent.left
                 anchors.right: parent.right
-                border.color: "red"
+                border.color: "blue"
                 border.width: 1
 
                 ListView {
@@ -218,11 +218,10 @@ ActivityBase {
                     anchors { fill: parent}
                     model: numberClassTypeModel
                     orientation: ListView.Horizontal
-                    //spacing: 10 //?
 
                     delegate: Rectangle {
                         width: numberClassTypeModel.get(index).numberClassTypeHeaderWidth
-                        height: numberClassTypeHeader.height / 1.5
+                        height: numberClassTypeHeader.height
                         border.width: 1
                         border.color: "black"
                         color: "lightsteelblue"
@@ -248,7 +247,7 @@ ActivityBase {
                 id: numberClassHeaders
 
                 width: mainZoneArea.width
-                height: mainZoneArea.height / 15
+                height: mainZoneArea.height / 10
                 anchors.top: numberClassTypeHeader.bottom
                 anchors.left: parent.left
                 anchors.right: parent.right
