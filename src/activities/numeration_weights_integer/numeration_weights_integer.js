@@ -392,13 +392,6 @@ function start(items_) {
     items = items_
     currentLevel = 0
 
-    classNamesUsedArray = setClassNamesUsedArray(fullClassNamesConstantArray)
-
-    numberHasADecimalPart = hasNumberADecimalPart()
-    setNumberClassTypeListModel()
-    updateIntegerAndDecimalHeaderWidth()
-
-    setNumberClassDragListModel(fullClassNamesConstantArray)
     setNumberWeightDragListModel(numberWeightComponentConstantArray)
     initLevel()
 
@@ -465,7 +458,12 @@ function updateIntegerAndDecimalHeaderWidth() {
 
 
 function setNumberClassDragListModel(fullClassNamesConstantArray) {
+    classNamesUsedArray = setClassNamesUsedArray(fullClassNamesConstantArray)
+    numberHasADecimalPart = hasNumberADecimalPart()
+    setNumberClassTypeListModel()
+    updateIntegerAndDecimalHeaderWidth()
     console.log("classNamesUsed " + classNamesUsedArray)
+    items.numberClassDragListModel.clear()
     for (var i=0; i<classNamesUsedArray.length; i++) {
         var classNameStr = classNamesUsedArray[i]
         if (classNameStr !== "Decimal Part") {
@@ -547,6 +545,7 @@ function initLevel() {
     numbersCorrectlyAnswered = []
 
     resetNumerationTable()
+    setNumberClassDragListModel(fullClassNamesConstantArray)
 
     console.log("stop init ")
 }

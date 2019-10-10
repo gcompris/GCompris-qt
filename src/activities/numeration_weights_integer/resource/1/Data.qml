@@ -105,7 +105,7 @@ Dataset {
          "smallerNumberClass": "Unit class",
          "biggerNumberClass": "Thousand class",
          "numbers" : [
-            "64",
+            "164",
             "13",
             "82",
             "92",
