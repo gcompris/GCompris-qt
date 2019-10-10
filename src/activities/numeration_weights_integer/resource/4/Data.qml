@@ -23,22 +23,22 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Drag the different numbers weights to obtain a number between 1 and 999 999.")
+    objective: qsTr("Drag the different numbers weights to obtain a number between 1 and 999 999 999.")
     difficulty: 1
     data: [
       {
          "level" : "1",
-         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 3000"),
+         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 999 999 999"),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
          "smallerNumberClass": "Unit class",
-         "biggerNumberClass": "Thousand class",
+         "biggerNumberClass": "Million class",
          "numbers" : [
-            "1245",
-            "2125",
-            "5",
-            "2500",
-            "8202",
-            "512",
+            "123456789",
+            "465465444",
+            "132465423",
+            "432321123",
+            "254213212",
+            "132132215",
             "2578",
             "1237",
             "2186",
@@ -47,7 +47,7 @@ Dataset {
       },
       {
          "level" : "2",
-         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 15000."),
+         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 15 000."),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
          "smallerNumberClass": "Unit class",
          "biggerNumberClass": "Thousand class",
@@ -66,7 +66,7 @@ Dataset {
       },
       {
          "level" : "3",
-         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 300000"),
+         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 300 000"),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
          "smallerNumberClass": "Unit class",
          "biggerNumberClass": "Thousand class",
@@ -85,7 +85,7 @@ Dataset {
       },
       {
          "level" : "4",
-         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 600000"),
+         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 600 000"),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
          "smallerNumberClass": "Unit class",
          "biggerNumberClass": "Thousand class",
@@ -104,7 +104,7 @@ Dataset {
       },
       {
          "level" : "5",
-         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 999999"),
+         "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 999 999"),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
          "smallerNumberClass": "Unit class",
          "biggerNumberClass": "Thousand class",

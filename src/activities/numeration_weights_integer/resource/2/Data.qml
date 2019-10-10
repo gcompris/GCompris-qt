@@ -31,8 +31,7 @@ Dataset {
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 99"),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
          "smallerNumberClass": "Unit class",
-         //"smallerNumberClass": "Decimal Part",
-         "biggerNumberClass": "Milliard class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "40",
             "10",
@@ -49,6 +48,9 @@ Dataset {
       {
          "level" : "2",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 199."),
+         //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "155",
             "10",
@@ -65,6 +67,9 @@ Dataset {
       {
          "level" : "3",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 300"),
+         //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "256",
             "122",
@@ -81,6 +86,9 @@ Dataset {
       {
          "level" : "4",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 700"),
+         //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "556",
             "422",
@@ -97,6 +105,9 @@ Dataset {
       {
          "level" : "5",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 999"),
+         //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "62",
             "822",

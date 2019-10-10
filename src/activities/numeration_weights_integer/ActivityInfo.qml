@@ -37,5 +37,5 @@ ActivityInfo {
   credit: ""
   section: "fun"
   createdInVersion: 9800
-  levels: "1,2,3"
+  levels: "1,2,3,4"
 }

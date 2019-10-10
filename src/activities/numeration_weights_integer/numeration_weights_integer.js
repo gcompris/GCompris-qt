@@ -64,7 +64,7 @@ var numberWeightDragArray = {
     "OneHundredThousand": { name: qsTr("Unit"), caption: "100 000", imageName: "weightCaption.svg", weightValue: "100000", dragkeys: "numberWeightKey", color: "transparent", selected: false },
     "OneMillion": { name: qsTr("Unit"), caption: "1 000 000", imageName: "weightCaption.svg", weightValue: "1000000", dragkeys: "numberWeightKey", color: "transparent", selected: false },
     "TenMillion": { name: qsTr("Unit"), caption: "10 000 000", imageName: "weightCaption.svg", weightValue: "10000000", dragkeys: "numberWeightKey", color: "transparent", selected: false },
-    "OneHundredMillion": { name: qsTr("Unit"), caption: "1000 000 000", imageName: "weightCaption.svg", weightValue: "100000000", dragkeys: "numberWeightKey", color: "transparent" , selected: false },
+    "OneHundredMillion": { name: qsTr("Unit"), caption: "100 000 000", imageName: "weightCaption.svg", weightValue: "100000000", dragkeys: "numberWeightKey", color: "transparent" , selected: false },
     "OneMilliard": { name: qsTr("Unit"), caption: "1 000 000 000", imageName: "weightCaption.svg", weightValue: "1000000000", dragkeys: "numberWeightKey", color: "transparent" , selected: false },
     "TenMilliard": { name: qsTr("Unit"), caption: "10 000 000 000", imageName: "weightCaption.svg", weightValue: "10000000000", dragkeys: "numberWeightKey", color: "transparent" , selected: false },
     "OneHundredMilliard": { name: qsTr("Unit"), caption: "100 000 000 000", imageName: "weightCaption.svg", weightValue: "100000000000", dragkeys: "numberWeightKey", color: "transparent" , selected: false }
