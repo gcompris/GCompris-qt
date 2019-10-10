@@ -163,8 +163,9 @@ Rectangle {
                                         property alias border: numberWeightComponentRectangle.border
 
                                         anchors.fill: parent
-                                        sourceSize.width: parent.width
+//                                        sourceSize.width: parent.width
                                         sourceSize.height: parent.height
+                                        fillMode: Image.PreserveAspectFit
 
                                         MouseArea {
                                              anchors.fill: parent
