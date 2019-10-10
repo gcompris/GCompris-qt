@@ -24,9 +24,11 @@ var numberOfLevel = 0    //?
 var items
 
 var numbersToConvert = []
+var originalNumbersToConvert = []
+var numbersCorrectlyAnswered = []
 var scorePercentage = 0
 var scorePourcentageStep = 0
-var numbersToConvertIndex = 0
+var wrongAnswerAlreadyGiven = false
 var selectedNumberWeightDragElementIndex = -1
 var numberHasADecimalPart = false
 
@@ -238,7 +240,9 @@ function checkAnswer() {
         return
     }
     else {
-        evaluateAndDisplayProgresses(true)
+        if (evaluateAndDisplayProgresses(true)) {
+            nextLevel()
+        }
     }
 
 }
@@ -247,23 +251,23 @@ function areAllWeightsInTheRightColumns() {
     var allWeightsAreInTheRightColumns = true
     for (var i = 0; i<items.numberClassListModel.count; i++) {
         for (var j=0; j<3; j++) {
-            console.log("getNumberColumnWeight: " + getNumberColumnWeight(i, j))
+            //console.log("getNumberColumnWeight: " + getNumberColumnWeight(i, j))
             var numberColumnWeight = getNumberColumnWeight(items.numberClassListModel.get(i).name, j)
-            console.log("-*-*-*-*-*numberColumnWeight",numberColumnWeight)
+            //console.log("-*-*-*-*-*numberColumnWeight",numberColumnWeight)
             for (var k=0; k<9; k++) {
                  var numberWeightWeight = getNumberWeightWeight(i, j, k)
                 if (numberWeightWeight !== "") {
-                    console.log("get image names: " + getNumberWeightImageName(i, j, k))
-                    console.log("get getNumberWeightWeight: " + getNumberWeightWeight(i, j, k))
+                    //console.log("get image names: " + getNumberWeightImageName(i, j, k))
+                    //console.log("get getNumberWeightWeight: " + getNumberWeightWeight(i, j, k))
                     if (numberColumnWeight != numberWeightWeight) {
-                        console.log("Error: numberColumnWeight !== numberWeightWeight: " + numberColumnWeight + "/" + numberWeightWeight)
+                        //console.log("Error: numberColumnWeight !== numberWeightWeight: " + numberColumnWeight + "/" + numberWeightWeight)
                         items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightComponentRectangle.border.color = "red"
                         allWeightsAreInTheRightColumns = false
                     }
                     else
                     {
                         items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightComponentRectangle.border.color = "black"
-                        console.log("Successful" + numberColumnWeight + "/" + numberWeightWeight)
+                        //console.log("Successfull :" + numberColumnWeight + "/" + numberWeightWeight)
                     }
                 }
             }
@@ -278,7 +282,7 @@ function checkNumberWeightHeadersPositions() {
         for (var j=0; j<3; j++) {
             var numberWeightTypeDropped = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.textAlias
             var numberWeightType = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightType
-            console.log("numberWeightType/numberWeightTypeDropped",numberWeightType+"/"+numberWeightTypeDropped)
+            //console.log("numberWeightType/numberWeightTypeDropped",numberWeightType+"/"+numberWeightTypeDropped)
             if (numberWeightTypeDropped !== numberWeightType) {
                 items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.border.width = 5
                 items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.textAlias = "tt"
@@ -319,11 +323,10 @@ function checkNumberClassesColumnsPositions() {
 
 function expectedAndEnteredValuesAreEquals() {
     var enteredValue = readNumerationTableEnteredValue()
-    console.log("enteredValue/parseInt(numbersToConvert[numbersToConvertIndex],10)",enteredValue + "/" + parseInt(numbersToConvert[numbersToConvertIndex],10))
+    console.log("enteredValue/expected value:",enteredValue + " / " + parseInt(numbersToConvert[0],10))
 
     //test if entered value is equal to number expected
-    if (enteredValue === parseInt(numbersToConvert[numbersToConvertIndex],10)) {
-        console.log("enteredValue/parseInt(numbersToConvert[numbersToConvertIndex],10)",enteredValue + "/" + parseInt(numbersToConvert[numbersToConvertIndex],10))
+    if (enteredValue === parseInt(numbersToConvert[0],10)) {
         return true
     }
     else {
@@ -343,39 +346,45 @@ function checkEnteredValue() {
 
 function evaluateAndDisplayProgresses(correctAnswer) {
     if (correctAnswer) {
+        wrongAnswerAlreadyGiven = false
         items.bonus.good("flower")
-        console.log("1///////////////scorePercentage",scorePercentage)
-        scorePercentage = scorePercentage + scorePourcentageStep    //?
-        console.log("2///////////////scorePercentage",scorePercentage)
+        console.log("correct: scorePercentage before incrementation",scorePercentage)
+        numbersCorrectlyAnswered.push(numbersToConvert.shift())  //remove first element and copy it in numbersCorrectlyAnswered
+        scorePercentage = scorePercentage + scorePourcentageStep
+        console.log("correct: scorePercentage after incrementation",scorePercentage)
         items.progressBar.value = scorePercentage
         if (scorePercentage > 97) {
-            nextLevel()
+            return true
         }
-        numbersToConvertIndex++
-        items.numberToConvertRectangle.text = numbersToConvert[numbersToConvertIndex]
-        console.log("numbersToConvert: " + numbersToConvert)
-        console.log("Index of numbersToConvert: " + numbersToConvertIndex)
+        items.numberToConvertRectangle.text = numbersToConvert[0]
+        console.log("original NumbersToConvert: " + originalNumbersToConvert)
+        console.log("NumbersToConvert: " + numbersToConvert)
+        console.log("numbersCorrectlyAnswered: " + numbersCorrectlyAnswered)
         return
     }
     else {
         items.bonus.bad("flower")
-        scorePercentage = scorePercentage - (2 * scorePourcentageStep)
-        if (scorePercentage < 0) scorePercentage = 0
-        items.progressBar.value = scorePercentage
-        var numbersToConvertIndexPlus4 = numbersToConvertIndex + 4
-        //we insert here an random additional value, otherwise there could be an overflow when adding the 2 values
-        //inserted when the user makes an error and that we are at the end of the array
-        if (numbersToConvertIndexPlus4 -1 > numbersToConvert.length ) {
-            var randomValueToInsert = numbersToConvert[Math.floor(Math.random() * numbersToConvert.length)]
-            numbersToConvert.push(randomValueToInsert)
+        items.numberToConvertRectangle.text = numbersToConvert[0]
+        console.log("incorrect: scorePercentage before incrementation",scorePercentage)
+        console.log("wrongAnswerAlreadyGiven: ", wrongAnswerAlreadyGiven)
+        if (wrongAnswerAlreadyGiven === false) {
+            scorePercentage = scorePercentage - scorePourcentageStep
+            if (scorePercentage < 0) scorePercentage = 0
+            items.progressBar.value = scorePercentage
+            if (numbersToConvert.length < 2) {
+                numbersToConvert.splice(2, 0, numbersCorrectlyAnswered[Math.floor(Math.random() * numbersCorrectlyAnswered.length)])
+            }
+            console.log("number to convert before splice: ",numbersToConvert)
+            numbersToConvert.splice(2, 0, numbersToConvert[0]);
+            console.log("number to convert after splice: ",numbersToConvert)
+            wrongAnswerAlreadyGiven = true
+            console.log("incorrect: scorePercentage after incrementation",scorePercentage)
         }
-        //when user makes an error, the given error is inserted twice, one time to find the good result, a second time to be sure that the answer is understood
-        numbersToConvert.splice(numbersToConvertIndex+1, 0, numbersToConvert[numbersToConvertIndex]);
-        numbersToConvert.splice(numbersToConvertIndex+3, 0, numbersToConvert[numbersToConvertIndex]);
-        numbersToConvertIndex++ //? how can we catch here the stop signal to wait a little bit before to go to next question ?
-        console.log("numbersToConvert: " + numbersToConvert)
-        console.log("Index of numbersToConvert: " + numbersToConvertIndex)
-        items.numberToConvertRectangle.text = numbersToConvert[numbersToConvertIndex]
+        console.log("NumbersToConvert length: " + numbersToConvert.length)
+        console.log("original NumbersToConvert: " + originalNumbersToConvert)
+        console.log("NumbersToConvert: " + numbersToConvert)
+        console.log("numbersCorrectlyAnswered: " + numbersCorrectlyAnswered)
+        return false
     }
 }
 
@@ -528,13 +537,14 @@ function initLevel() {
 
     console.log("currentLevel: " + currentLevel)
     numbersToConvert = items.levels[currentLevel].numbers
+    originalNumbersToConvert = numbersToConvert.slice()
     console.log("numbersToConvert: " + numbersToConvert)
     scorePercentage = 0
     items.progressBar.value = scorePercentage
-    numbersToConvertIndex = 0
     scorePourcentageStep = Math.round((100 / numbersToConvert.length))
 
-    items.numberToConvertRectangle.text = numbersToConvert[numbersToConvertIndex]
+    items.numberToConvertRectangle.text = numbersToConvert[0]
+    numbersCorrectlyAnswered = []
 
     resetNumerationTable()
 

@@ -31,8 +31,7 @@ Dataset {
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 9"),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
          "smallerNumberClass": "Unit class",
-         //"smallerNumberClass": "Decimal Part",
-         "biggerNumberClass": "Milliard class",
+         "biggerNumberClass": "Thousand class",
          "numbers" : [
             "4",
             "1",
@@ -49,6 +48,8 @@ Dataset {
       {
          "level" : "2",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 20."),
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "14",
             "2",
@@ -65,11 +66,13 @@ Dataset {
       {
          "level" : "3",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 40"),
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "14",
             "2",
             "22",
-            "2",
+            "31",
             "37",
             "38",
             "5",
@@ -81,6 +84,8 @@ Dataset {
       {
          "level" : "4",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 60"),
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Unit class",
          "numbers" : [
             "54",
             "23",
@@ -97,6 +102,8 @@ Dataset {
       {
          "level" : "5",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 99"),
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Thousand class",
          "numbers" : [
             "64",
             "13",
