@@ -29,11 +29,16 @@
 #include <QCursor>
 #include <QPixmap>
 #include <QSettings>
+#include <QQuickStyle>
+
+#include <QQmlContext>
 
 #include "GComprisPlugin.h"
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "DownloadManager.h"
+
+#include "serverMasterController/controllers/master-controller.h"
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
@@ -110,6 +115,8 @@ int main(int argc, char *argv[])
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
+
+    QQuickStyle::setStyle("Material");
 #if QT_VERSION >= QT_VERSION_CHECK(5, 7, 0)
     // Set desktop file name, as the built-in (orgDomain + appName) is not
     // the one we use (because appName is gcompris-qt, not gcompris)
@@ -257,6 +264,10 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::quit, DownloadManager::getInstance(),
                      &DownloadManager::shutdown);
+    cm::controllers::MasterController masterController;
+    engine.rootContext()->setContextProperty("masterController", &masterController);
+
+
     // add import path for shipped qml modules:
 #ifdef SAILFISHOS
     engine.addImportPath(QStringLiteral("%1/../share/%2/lib/qml")
