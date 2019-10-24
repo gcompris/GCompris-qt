@@ -1,0 +1,15 @@
+#!/usr/bin/sh
+
+# The only argument to the script is source directory.
+source_dir=$1
+
+export PATH=@ANDROID_NDK@/toolchains/aarch64-linux-android-4.9/prebuilt/@_HOST@/bin/:$PATH
+export NDK_SYSROOT=@ANDROID_NDK@
+export ANDROID_NDK_ROOT=@ANDROID_NDK@
+export ANDROID_DEV=@ANDROID_NDK@/platforms/android-@CMAKE_ANDROID_API@/arch-@ANDROID_ARCH@/usr
+export SYSROOT=@ANDROID_NDK@/platforms/android-@CMAKE_ANDROID_API@/arch-@ANDROID_ARCH@/
+cd ${source_dir}
+@REMOVE_mandroid_FLAG_FOR_CLANG@
+./Configure --prefix=@CMAKE_CURRENT_BINARY_DIR@ --openssldir=./ssl android-arm64 no-asm shared -D__ANDROID_API__=@CMAKE_ANDROID_API@
+make
+cd -

@@ -20,8 +20,11 @@
 # Uncomment if this is not already done
 # make getSvnTranslations
 
-Qt5_BaseDIR=~/Qt5.12.1/5.12.1
+Qt5_BaseDIR=~/Qt/5.12.5
 export ANDROID_NDK_ROOT=$ANDROID_NDK
+export ANDROID_ARCH=arm64
+export ANDROID_ARCH_ABI=arm64-v8a
+export Qt5_android=${Qt5_BaseDIR}/${QtTarget}/
 
 # The current version
 version=$(sed -n -e 's/set(GCOMPRIS_MINOR_VERSION \([0-9]\+\)).*/\1/p' CMakeLists.txt)
@@ -58,10 +61,8 @@ f_cmake()
     fi
 
     cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
-	  -DCMAKE_ANDROID_API=21 \
+	  -DCMAKE_ANDROID_API=22 \
 	  -DCMAKE_BUILD_TYPE=release \
-	  -DCMAKE_ANDROID_STL_TYPE=c++_shared \
-	  -DCMAKE_ANDROID_NDK_TOOLCHAIN_VERSION=clang \
 	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
 	  -DQt5Qml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Qml \
@@ -94,13 +95,13 @@ mkdir -p ${builddir}
 cd ${builddir}
 
 f_cmake arm64 inapp OFF ON OFF
-make
+make -j 4
 make BuildTranslations
 make apk_release && make apk_signed && make apk_signed_aligned
 
 
 f_cmake arm64 no OFF ON OFF
-make
+make -j 4
 make apk_release && make apk_signed && make apk_signed_aligned
 
 
