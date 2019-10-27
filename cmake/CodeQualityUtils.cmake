@@ -6,10 +6,10 @@ find_program(CPPCHECK_EXE NAMES cppcheck)
 if(CPPCHECK_EXE)
     set(CMAKE_CXX_CPPCHECK ${CPPCHECK_EXE})
     list(
-        APPEND CMAKE_CXX_CPPCHECK 
+        APPEND CMAKE_CXX_CPPCHECK
             "--enable=all"
             "--inconclusive"
-            "--force" 
+            "--force"
             "--inline-suppr"
     )
 endif()

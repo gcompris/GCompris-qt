@@ -18,38 +18,38 @@ if(ANDROID)
 endif()
 
 set(gcompris_SRCS
-   ActivityInfo.cpp
-   ActivityInfo.h
-   ActivityInfoTree.cpp
-   ActivityInfoTree.h
-   ApplicationInfo.cpp
-   ApplicationInfo.h
-   ApplicationSettings.cpp
-   ApplicationSettings.h
-   File.cpp
-   File.h
-   Directory.cpp
-   Directory.h
-   DownloadManager.cpp
-   DownloadManager.h
-   GComprisPlugin.cpp
-   GComprisPlugin.h
-   main.cpp
-   config.h.in
-   synth/ADSRenvelope.cpp
-   synth/ADSRenvelope.h
-   synth/GSynth.cpp
-   synth/GSynth.h
-   synth/linearSynthesis.cpp
-   synth/linearSynthesis.h
-   synth/modulation.cpp
-   synth/modulation.h
-   synth/generator.cpp
-   synth/generator.h
-   synth/preset.h
-   synth/preset.cpp
-   synth/waveform.cpp
-   synth/waveform.h
+  ActivityInfo.cpp
+  ActivityInfo.h
+  ActivityInfoTree.cpp
+  ActivityInfoTree.h
+  ApplicationInfo.cpp
+  ApplicationInfo.h
+  ApplicationSettings.cpp
+  ApplicationSettings.h
+  File.cpp
+  File.h
+  Directory.cpp
+  Directory.h
+  DownloadManager.cpp
+  DownloadManager.h
+  GComprisPlugin.cpp
+  GComprisPlugin.h
+  main.cpp
+  config.h.in
+  synth/ADSRenvelope.cpp
+  synth/ADSRenvelope.h
+  synth/GSynth.cpp
+  synth/GSynth.h
+  synth/linearSynthesis.cpp
+  synth/linearSynthesis.h
+  synth/modulation.cpp
+  synth/modulation.h
+  synth/generator.cpp
+  synth/generator.h
+  synth/preset.h
+  synth/preset.cpp
+  synth/waveform.cpp
+  synth/waveform.h
 )
 
 if(ANDROID)
@@ -64,7 +64,7 @@ if(CMAKE_HOST_WIN32)
   set(gcompris_icon GCompris.ico)
   set(gcompris_RES
     ${GCOMPRIS_RESOURCES}/${gcompris_icon}
-	GCompris.rc
+    GCompris.rc
   )
 elseif(CMAKE_HOST_APPLE)
   set(gcompris_icon GCompris.icns)
@@ -142,7 +142,7 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}qtmedia_audioengine
       mediaservice/${_lib_prefix}qavfcamera)
   endif()
-  
+
   set(_qml_plugins
     QtGraphicalEffects/${_lib_prefix}qtgraphicaleffectsplugin
     QtGraphicalEffects/private/${_lib_prefix}qtgraphicaleffectsprivate
@@ -151,7 +151,7 @@ if(BUILD_STANDALONE)
     QtQuick.2/${_lib_prefix}qtquick2plugin
     QtMultimedia/${_lib_prefix}declarative_multimedia
     QtSensors/${_lib_prefix}declarative_sensors)
-  
+
   if(NOT SAILFISHOS)
     list(APPEND _qml_plugins
       QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
@@ -220,24 +220,24 @@ if(BUILD_STANDALONE)
   # Fix for Linux 'make package' that fails to link with libicu; also package OpenSSL libs from system
   if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID)
     add_library( libicudata SHARED IMPORTED )
-    FILE(GLOB LIBICUDATA_SO "${Qt5_DIR}/../../libicudata.so.[0-9][0-9]")
-    if ("${LIBICUDATA_SO}" STREQUAL "")
-      FILE(GLOB LIBICUDATA_SO "/usr/lib/*/libicudata.so.[0-9][0-9]")
+    file(GLOB LIBICUDATA_SO "${Qt5_DIR}/../../libicudata.so.[0-9][0-9]")
+    if("${LIBICUDATA_SO}" STREQUAL "")
+      file(GLOB LIBICUDATA_SO "/usr/lib/*/libicudata.so.[0-9][0-9]")
     endif()
     set_target_properties( libicudata PROPERTIES IMPORTED_LOCATION ${LIBICUDATA_SO} )
     add_library( libicui18n SHARED IMPORTED )
-    FILE(GLOB LIBICUI18N_SO "${Qt5_DIR}/../../libicui18n.so.[0-9][0-9]")
-    if ("${LIBICUI18N_SO}" STREQUAL "")
-      FILE(GLOB LIBICUI18N_SO "/usr/lib/*/libicui18n.so.[0-9][0-9]")
+    file(GLOB LIBICUI18N_SO "${Qt5_DIR}/../../libicui18n.so.[0-9][0-9]")
+    if("${LIBICUI18N_SO}" STREQUAL "")
+      file(GLOB LIBICUI18N_SO "/usr/lib/*/libicui18n.so.[0-9][0-9]")
     endif()
     set_target_properties( libicui18n PROPERTIES IMPORTED_LOCATION ${LIBICUI18N_SO} )
     add_library( libicuuc SHARED IMPORTED )
-    FILE(GLOB LIBICUUC_SO "${Qt5_DIR}/../../libicuuc.so.[0-9][0-9]")
-    if ("${LIBICUUC_SO}" STREQUAL "")
-      FILE(GLOB LIBICUUC_SO "/usr/lib/*/libicuuc.so.[0-9][0-9]")
+    file(GLOB LIBICUUC_SO "${Qt5_DIR}/../../libicuuc.so.[0-9][0-9]")
+    if("${LIBICUUC_SO}" STREQUAL "")
+      file(GLOB LIBICUUC_SO "/usr/lib/*/libicuuc.so.[0-9][0-9]")
     endif()
     set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${LIBICUUC_SO} )
-    TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
     # package installed OpenSSL libraries
     install(FILES "${OPENSSL_SSL_LIBRARY}" DESTINATION bin)
     install(FILES "${OPENSSL_CRYPTO_LIBRARY}" DESTINATION bin)
@@ -245,9 +245,9 @@ if(BUILD_STANDALONE)
     install(FILES "${OPENSSL_CRYPTO_LIBRARY}.10" DESTINATION bin)
     install(FILES "${OPENSSL_SSL_LIBRARY}.1.0.2k" DESTINATION bin)
     install(FILES "${OPENSSL_CRYPTO_LIBRARY}.1.0.2k" DESTINATION bin)
-    TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
+    target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
-  
+
   #Add OpenSSL support on Windows builds
   if(WIN32)
     if(MINGW)
@@ -257,7 +257,7 @@ if(BUILD_STANDALONE)
       endif()
       install(FILES "${Qt5_DIR}/../../../bin/libcrypto-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
       install(FILES "${Qt5_DIR}/../../../bin/libssl-1_1${OPENSSL_DLL_SUFFIX}.dll" DESTINATION bin)
-    else(MINGW) # appveyor
+    else() # appveyor
       install(FILES "${OPENSSL_INCLUDE_DIR}/../libeay32.dll" DESTINATION bin)
       install(FILES "${OPENSSL_INCLUDE_DIR}/../libssl32.dll" DESTINATION bin)
       install(FILES "${OPENSSL_INCLUDE_DIR}/../ssleay32.dll" DESTINATION bin)
@@ -265,7 +265,7 @@ if(BUILD_STANDALONE)
     target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} OpenSSL::SSL OpenSSL::Crypto)
   endif()
 
-endif(BUILD_STANDALONE)
+endif()
 
 # Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?) -> Johnny : we need this even if it takes time because some required dependencies are pulled here
 #if(WIN32) set(GCOMPRIS_OTHER_LIBS "") endif()
@@ -293,7 +293,7 @@ if(WIN32 AND NOT MINGW)
     # CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS contains visual c++ libraries
     install(FILES ${CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS} DESTINATION bin)
 endif()
-  
+
 # Packaging
 # =========
 
@@ -322,9 +322,8 @@ if(WIN32)
   # Create shortcuts in menu to be able to launch in software or opengl mode
   list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris (Safe Mode).lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--software-renderer'")
   list(APPEND CPACK_NSIS_CREATE_ICONS_EXTRA "  CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\GCompris.lnk' '$INSTDIR\\\\bin\\\\${GCOMPRIS_EXECUTABLE_NAME}.exe' '--opengl-renderer'")
-  string (REPLACE ";" "\n" CPACK_NSIS_CREATE_ICONS_EXTRA "${CPACK_NSIS_CREATE_ICONS_EXTRA}")
-
-else(WIN32)
+  string(REPLACE ";" "\n" CPACK_NSIS_CREATE_ICONS_EXTRA "${CPACK_NSIS_CREATE_ICONS_EXTRA}")
+else()
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
 endif()
 

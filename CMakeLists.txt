@@ -9,14 +9,14 @@ include(InstallRequiredSystemLibraries)
 
 # Set c++11 support
 include(CheckCXXCompilerFlag)
-CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
-CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
+check_cxx_compiler_flag("-std=c++11" COMPILER_SUPPORTS_CXX11)
+check_cxx_compiler_flag("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
 if(COMPILER_SUPPORTS_CXX11)
-        set(my_cxx_flags "-std=c++11")
+  set(my_cxx_flags "-std=c++11")
 elseif(COMPILER_SUPPORTS_CXX0X)
-        set(my_cxx_flags "-std=c++0x")
+  set(my_cxx_flags "-std=c++0x")
 else()
-        message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
+  message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
@@ -26,11 +26,11 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DQT_QML_DEBUG")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 98)
+set(GCOMPRIS_MINOR_VERSION 97)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 if("${ANDROID_ARCH}" STREQUAL "arm64")
-set(GCOMPRIS_PATCH_VERSION 1)
+  set(GCOMPRIS_PATCH_VERSION 1)
 endif()
 
 # Set the BUILD_DATE
@@ -46,13 +46,13 @@ if(ECM_FOUND)
   include(kdeFetchTranslation)
   include(ECMAddTests)
   include(ECMPoQmTools)
-  if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
+  if(IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
     ecm_install_po_files_as_qm(po)
   endif()
 
   option(BUILD_TESTING "Build and enable unit tests" OFF)
   include(ECMCoverageOption)
-endif(ECM_FOUND)
+endif()
 
 # add tools (cppcheck, clang-tidy...) if build on testing mode only
 # (slower compilation)
@@ -99,18 +99,18 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
     message(SEND_ERROR "Building in the source directory is not supported.")
     message(FATAL_ERROR "Please remove the created \"CMakeCache.txt\" file, the \"CMakeFiles\"
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
-endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
+endif()
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
     Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)
 
 if(ANDROID)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED AndroidExtras)
-endif(ANDROID)
+endif()
 
 if(SAILFISHOS)
     find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED Widgets)
-endif(SAILFISHOS)
+endif()
 
 ## For now we workaround CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION to clang with a command variable, so not needed
 # if(ANDROID AND ECM_VERSION VERSION_LESS "5.56.0" AND Qt5Core_VERSION VERSION_GREATER "5.11.99")
@@ -121,7 +121,7 @@ if((UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID) OR WIN32)
     find_package(OpenSSL REQUIRED)
 endif()
 
-find_package (KF5 QUIET COMPONENTS
+find_package(KF5 QUIET COMPONENTS
     DocTools
 )
 if(ECM_FOUND)
@@ -174,7 +174,7 @@ if(ANDROID)
   if(ACTIVATION_MODE STREQUAL "inapp")
     set(ANDROID_BILLING_PERMISSION "<uses-permission android:name=\"com.android.vending.BILLING\"/>")
     set(ANDROID_PACKAGE "net.gcompris")
-  else(ACTIVATION_MODE)
+  else()
     set(ANDROID_PACKAGE "net.gcompris.full")
   endif()
   add_subdirectory(android)
@@ -188,7 +188,7 @@ else()
   set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir}/translations CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir}/rcc CACHE INTERNAL "" FORCE)
-endif(ANDROID)
+endif()
 
 # Always create these folders
 add_custom_command(
@@ -244,7 +244,7 @@ foreach(PoSource ${TRANSLATIONS_FILES})
 endforeach()
 
 # Install translations
-if (WIN32)
+if(WIN32)
     add_custom_target(BuildTranslations
         DEPENDS ${QM_FILES}
         COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
@@ -272,7 +272,7 @@ add_custom_target(BundleTranslations
 add_custom_command(
     OUTPUT doDlAndInstallBundledTranslations
     COMMAND curl -fsS -o translations-${GCOMPRIS_VERSION}.7z
-                 http://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
+               http://gcompris.net/download/translations-${GCOMPRIS_VERSION}.7z
     COMMAND 7z x -y -o${CMAKE_BINARY_DIR}/share/${GCOMPRIS_EXECUTABLE_NAME}
                translations-${GCOMPRIS_VERSION}.7z
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
@@ -398,7 +398,7 @@ add_custom_target(dist
 
 if(KF5_FOUND)
     add_subdirectory(docs/docbook)
-endif(KF5_FOUND)
+endif()
 
 # qml-box2d
 include(cmake/box2d.cmake)
@@ -414,7 +414,7 @@ endif()
 if(BUILD_TESTING)
   enable_testing()
   add_subdirectory(tests)
-endif(BUILD_TESTING)
+endif()
 
 add_custom_target(binaries)
 add_dependencies(binaries ${GCOMPRIS_EXECUTABLE_NAME} rcc_core rcc_menu rcc_activities all_activities)
