@@ -40,6 +40,7 @@ Rectangle {
     signal close
 
     property bool horizontalLayout: dialogBackground.width >= dialogBackground.height
+    property int margin30: Math.round(30 * ApplicationInfo.ratio)
 
     Row {
         spacing: 2
@@ -60,7 +61,7 @@ Rectangle {
 
                 GCText {
                     id: title
-                    text: qsTr("Pieces of background music")
+                    text: qsTr("Background music")
                     width: dialogBackground.width - 30
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
@@ -83,25 +84,23 @@ Rectangle {
                 Flickable {
                     id: flickableList
                     anchors.fill: parent
-                    anchors.topMargin: 10
-                    anchors.leftMargin: 20
-                    contentWidth: parent.width
-                    contentHeight: musicGrid.height
+                    anchors.margins: 10 * ApplicationInfo.ratio
+                    contentHeight: musicGrid.height + musicInfo.height + margin30
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
                     Flow {
                         id: musicGrid
                         width: parent.width
-                        spacing: 40
+                        spacing: 10 * ApplicationInfo.ratio
                         anchors.horizontalCenter: parent.horizontalCenter
 
                         Repeater {
                             model: dialogActivityConfig.configItem ? dialogActivityConfig.configItem.allBackgroundMusic : 0
 
                             Item {
-                                width: dialogBackground.horizontalLayout ? dialogBackground.width / 5 : dialogBackground.width / 4
-                                height: dialogBackground.height / 5
+                                width: (musicGrid.width - margin30)  * 0.33
+                                height: title.height * 2
 
                                 Button {
                                     text: modelData.slice(0, modelData.lastIndexOf('.'))
@@ -154,6 +153,60 @@ Rectangle {
                                     }
                                 }
                             }
+                        }
+                    }
+
+                    Column {
+                        id: musicInfo
+                        spacing: 10 * ApplicationInfo.ratio
+                        width: parent.width
+                        anchors.top: musicGrid.bottom
+                        anchors.leftMargin: 20
+
+                        GCText {
+                            //: Current background music playing
+                            text: qsTr("Now Playing:")
+                            width: dialogBackground.width - 30
+                            horizontalAlignment: Text.AlignHCenter
+                            color: "black"
+                            fontSize: mediumSize
+                            wrapMode: Text.WordWrap
+                        }
+                        GCText {
+                            //: Title of the current background music playing
+                            text: qsTr("Title: %1").arg(backgroundMusic.metaDataMusic[0])
+                            width: dialogBackground.width - 30
+                            horizontalAlignment: Text.AlignLeft
+                            color: "black"
+                            fontSize: smallSize
+                            wrapMode: Text.WordWrap
+                        }
+                        GCText {
+                            //: Artist of the current background music playing
+                            text: qsTr("Artist: %1").arg(backgroundMusic.metaDataMusic[1])
+                            width: dialogBackground.width - 30
+                            horizontalAlignment: Text.AlignLeft
+                            color: "black"
+                            fontSize: smallSize
+                            wrapMode: Text.WordWrap
+                        }
+                        GCText {
+                            //: Date of the current background music playing
+                            text: qsTr("Date: %1").arg(backgroundMusic.metaDataMusic[2])
+                            width: dialogBackground.width - 30
+                            horizontalAlignment: Text.AlignLeft
+                            color: "black"
+                            fontSize: smallSize
+                            wrapMode: Text.WordWrap
+                        }
+                        GCText {
+                            //: Copyright of the current background music playing
+                            text: qsTr("Copyright: %1").arg(backgroundMusic.metaDataMusic[3])
+                            width: dialogBackground.width - 30
+                            horizontalAlignment: Text.AlignLeft
+                            color: "black"
+                            fontSize: smallSize
+                            wrapMode: Text.WordWrap
                         }
                     }
                 }

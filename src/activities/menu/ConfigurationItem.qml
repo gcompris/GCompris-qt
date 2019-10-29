@@ -40,7 +40,7 @@ Item {
 
     Column {
         id: column
-        spacing: 10
+        spacing: 10 * ApplicationInfo.ratio
         width: parent.width
 
         move: Transition {
@@ -51,7 +51,7 @@ Item {
         Row {
             id: demoModeBox
             width: parent.width
-            spacing: 10
+            spacing: 10 * ApplicationInfo.ratio
 
             property bool checked: !ApplicationSettings.isDemoMode
 
@@ -214,7 +214,18 @@ Item {
         }
 
         Flow {
-            spacing: 5
+            spacing: 5 * ApplicationInfo.ratio
+            width: parent.width
+            GCText {
+                id: audioEffectsVolumeText
+                text: qsTr("Audio effects volume")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+        }
+
+        Flow {
+            spacing: 5 * ApplicationInfo.ratio
             width: parent.width
             GCSlider {
                 id: audioEffectsVolumeSlider
@@ -224,12 +235,6 @@ Item {
                 value: audioEffectsVolume * 10
                 onValueChanged: ApplicationSettings.audioEffectsVolume = value / 10;
                 scrollEnabled: false
-            }
-            GCText {
-                id: audioEffectsVolumeText
-                text: qsTr("Audio effects volume")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
             }
         }
 
@@ -241,47 +246,19 @@ Item {
                 isBackgroundMusicEnabled = checked;
             }
         }
-        
-        Flow {
-            width: parent.width
-            spacing: 5 * ApplicationInfo.ratio
 
+        Flow {
+            spacing: 5 * ApplicationInfo.ratio
+            width: parent.width
             GCText {
                 text: qsTr("Background Music")
                 fontSize: mediumSize
                 height: 50 * ApplicationInfo.ratio
             }
-
-            // Padding
-            Item {
-                height: 1
-                width: 10 * ApplicationInfo.ratio
-            }
-            
-            Button {
-                id: backgroundMusicName
-                height: 30 * ApplicationInfo.ratio
-                text: {
-                    if(backgroundMusic.playbackState != Audio.PlayingState)
-                        return qsTr("Not playing")
-                    return configItem.extractMusicNameFromPath(backgroundMusic.source)
-                }
-                style: GCButtonStyle {}
-                onClicked: {
-                    dialogConfig.visible = false
-                    backgroundMusicList.visible = true
-                }
-            }
-            
-            // Padding
-            Item {
-                height: 1
-                width: 10 * ApplicationInfo.ratio
-            }
-            
             Image {
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
+                height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
+                sourceSize.width: height
 
                 MouseArea {
                     anchors.fill: parent
@@ -292,23 +269,49 @@ Item {
         }
 
         Flow {
+            width: parent.width
+            spacing: 5 * ApplicationInfo.ratio
+
+            Button {
+                id: backgroundMusicName
+                height: 30 * ApplicationInfo.ratio
+                width: background.width * 0.8
+                text: {
+                    if(backgroundMusic.playbackState != Audio.PlayingState)
+                        return qsTr("Not playing")
+                    else if (backgroundMusic.metaDataMusic[0] != undefined)
+                        return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
+                    else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/resource/intro")
+                        return qsTr("Introduction music")
+                    return ""
+                }
+                style: GCButtonStyle {}
+                onClicked: {
+                    dialogConfig.visible = false
+                    backgroundMusicList.visible = true
+                }
+            }
+        }
+
+        Flow {
             spacing: 5
             width: parent.width
-            GCSlider {
-                id: backgroundMusicVolumeSlider
-                width: 250 * ApplicationInfo.ratio
-                maximumValue: 10
-                minimumValue: 0
-                value: backgroundMusicVolume * 10
-                onValueChanged: ApplicationSettings.backgroundMusicVolume = value / 10;
-                scrollEnabled: false
-            }
             GCText {
                 id: backgroundMusicVolumeText
                 text: qsTr("Background music volume")
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
             }
+        }
+
+        GCSlider {
+            id: backgroundMusicVolumeSlider
+            width: 250 * ApplicationInfo.ratio
+            maximumValue: 10
+            minimumValue: 0
+            value: backgroundMusicVolume * 10
+            onValueChanged: ApplicationSettings.backgroundMusicVolume = value / 10;
+            scrollEnabled: false
         }
 
         GCDialogCheckBox {
@@ -374,6 +377,12 @@ Item {
                 label: qsTr("Font selector")
             }
         }
+        GCText {
+            id: baseFontSizeText
+            text: qsTr("Font size")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
         Flow {
             spacing: 5
             width: parent.width
@@ -385,12 +394,6 @@ Item {
                 value: baseFontSize
                 onValueChanged: ApplicationSettings.baseFontSize = value;
                 scrollEnabled: false
-            }
-            GCText {
-                id: baseFontSizeText
-                text: qsTr("Font size")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
             }
             Button {
                 height: 30 * ApplicationInfo.ratio
@@ -409,6 +412,12 @@ Item {
                 label: qsTr("Font Capitalization")
             }
         }
+        GCText {
+            id: fontLetterSpacingText
+            text: qsTr("Font letter spacing")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
         Flow {
             spacing: 5
             width: parent.width
@@ -420,12 +429,6 @@ Item {
                 value: fontLetterSpacing
                 onValueChanged: ApplicationSettings.fontLetterSpacing = value;
                 scrollEnabled: false
-            }
-            GCText {
-                id: fontLetterSpacingText
-                text: qsTr("Font letter spacing")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
             }
             Button {
                 height: 30 * ApplicationInfo.ratio
@@ -508,12 +511,11 @@ Item {
                 fontSize: mediumSize
                 height: 50 * ApplicationInfo.ratio
             }
+        }
 
-            // Padding
-            Item {
-                height: 1
-                width: 10 * ApplicationInfo.ratio
-            }
+        Flow {
+            width: parent.width
+            spacing: 5 * ApplicationInfo.ratio
 
             Image {
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
@@ -525,12 +527,6 @@ Item {
                         filterRepeater.setMin(filterRepeater.min + 1)
                     }
                 }
-            }
-
-            // Padding
-            Item {
-                height: 1
-                width: 5 * ApplicationInfo.ratio
             }
 
             // Level filtering
@@ -594,12 +590,6 @@ Item {
                         }
                     }
                 }
-            }
-
-            // Padding
-            Item {
-                height: 1
-                width: 5 * ApplicationInfo.ratio
             }
 
             Image {

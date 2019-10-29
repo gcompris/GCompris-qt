@@ -118,8 +118,8 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_fontLetterSpacing = m_config.value(FONT_LETTER_SPACING, GC_DEFAULT_FONT_LETTER_SPACING).toReal();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
     m_filteredBackgroundMusic = m_config.value(FILTERED_BACKGROUND_MUSIC_KEY, ApplicationInfo::getInstance()->getBackgroundMusicFromRcc()).toStringList();
-    m_backgroundMusicVolume = m_config.value(BACKGROUND_MUSIC_VOLUME_KEY, 1).toReal();
-    m_audioEffectsVolume = m_config.value(AUDIO_EFFECTS_VOLUME_KEY, 1).toReal();
+    m_backgroundMusicVolume = m_config.value(BACKGROUND_MUSIC_VOLUME_KEY, 0.4).toReal();
+    m_audioEffectsVolume = m_config.value(AUDIO_EFFECTS_VOLUME_KEY, 0.7).toReal();
 
     // Init the activation mode
     if(QLatin1String(ACTIVATION_MODE) == "no")

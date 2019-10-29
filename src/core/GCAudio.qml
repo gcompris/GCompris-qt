@@ -76,6 +76,18 @@ Item {
     property alias errorString: audio.errorString
     
     /**
+     * type:bool
+     * check if the player is for background music
+     */
+    property bool isBackgroundMusic: false
+    
+    /**
+     * type:array
+     * background music metadata
+     */
+    property var metaDataMusic: ["", "", "", ""]
+    
+    /**
      * Trigger this signal externally to play the next audio in the "files". This, in turn, stops the currently playing audio and check the necessary
      * conditions (see onStopped signal in "audio" element) and decides what needs to be done for the next audio.
      */
@@ -172,7 +184,7 @@ Item {
             source = ""
             source = file
             files.push(file)
-            _playNextFile()
+            silenceTimer.start()
         } else {
             files.push(file)
         }
@@ -203,13 +215,14 @@ Item {
     function _playNextFile() {
         if(files.length == 0)
             return
+
         var nextFile = files.shift()
         if(nextFile === '') {
-            audio.source = ""
+            source = ""
             gcaudio.done()
         } else {
-            audio.source = ""
-            audio.source = nextFile
+            source = ""
+            source = nextFile
             if(!muted)
                 audio.play()
         }
@@ -231,6 +244,11 @@ Item {
                 silenceTimer.start()
             else
                 gcaudio.done()
+        }
+        metaData.onMetaDataChanged: {
+            if(isBackgroundMusic) {
+                metaDataMusic = [metaData.title, metaData.contributingArtist, metaData.year, metaData.copyright]
+            }
         }
     }
 

@@ -109,9 +109,6 @@ Window {
         }
 
         Component.onCompleted: {
-            if(ApplicationSettings.isAudioEffectsEnabled)
-                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
-
             if (DownloadManager.areVoicesRegistered())
                 delayedWelcomeTimer.playWelcome();
             else {
@@ -130,50 +127,42 @@ Window {
 
     GCAudio {
         id: backgroundMusic
+        
+        isBackgroundMusic: true
+        
         muted: !ApplicationSettings.isBackgroundMusicEnabled
 
         volume: ApplicationSettings.backgroundMusicVolume
 
         onMutedChanged: {
-            if(!hasAudio && !delayedbackgroundMusic.running && !files.length) {
-                delayedbackgroundMusic.playBackgroundMusic()
+            if(!hasAudio && !files.length) {
+                backgroundMusic.playBackgroundMusic()
             }
         }
 
-        onDone: delayedbackgroundMusic.playBackgroundMusic()
+        onDone: backgroundMusic.playBackgroundMusic()
 
-        Timer {
-            id: delayedbackgroundMusic
-            interval: (ApplicationSettings.isAudioVoicesEnabled && !ApplicationSettings.isAudioEffectsEnabled) ? 2000 : 20000
-            repeat: false
 
-            onTriggered: {
-                delayedbackgroundMusic.playBackgroundMusic();
+        function playBackgroundMusic() {
+            rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+            
+            for(var i = 0; i < filteredBackgroundMusic.length; i++) {
+                backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + filteredBackgroundMusic[i]))
             }
-
-            function playBackgroundMusic() {
-                rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-
-                for(var i = 0; i < filteredBackgroundMusic.length; i++) {
-                    backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + filteredBackgroundMusic[i]))
-                }
-
-                if(main.isMusicalActivityRunning)
-                    backgroundMusic.pause()
-            }
+            
+            if(main.isMusicalActivityRunning)
+                backgroundMusic.pause()
         }
+        
         Component.onCompleted: {
+            if(ApplicationSettings.isBackgroundMusicEnabled)
+                backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
             if(ApplicationSettings.isBackgroundMusicEnabled
                && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
-               if(!ApplicationSettings.isAudioEffectsEnabled && !ApplicationSettings.isAudioVoicesEnabled) {
-                  delayedbackgroundMusic.playBackgroundMusic()
-               }
-               else {
-                  delayedbackgroundMusic.start()
-               }
+                    backgroundMusic.playBackgroundMusic()
             }
             else {
-                DownloadManager.backgroundMusicRegistered.connect(delayedbackgroundMusic.playBackgroundMusic)
+                DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
             }
         }
     }
