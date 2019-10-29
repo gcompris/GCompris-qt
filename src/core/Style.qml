@@ -32,6 +32,6 @@ Item {
 
     FontLoader {
         id: fontAwesomeLoader
-        source: "qrc:/assets/fontawesome.ttf"
+        source: "qrc:/gcompris/src/core/resource/fonts/fontawesome-webfont.ttf"
     }
 }

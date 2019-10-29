@@ -1,4 +1,7 @@
 import QtQuick 2.0
+import "../../../core"
+color: Style.colourBackground
+
 
 Item {
     Rectangle {
