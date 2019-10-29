@@ -30,6 +30,7 @@ ActivityBase {
     id: activity
     property int speedSetting: 5
     property int timerNormalInterval: (13500 / speedSetting)
+    isMusicalActivity: true
 
     onStart: focus = true
     onStop: {}

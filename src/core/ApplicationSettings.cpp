@@ -59,10 +59,6 @@ static const char *FILTERED_BACKGROUND_MUSIC_KEY = "filteredBackgroundMusic";
 static const char *BACKGROUND_MUSIC_VOLUME_KEY = "backgroundMusicVolume";
 static const char *AUDIO_EFFECTS_VOLUME_KEY = "audioEffectsVolume";
 
-static const char *FILTERED_BACKGROUND_MUSIC_KEY = "filteredBackgroundMusic";
-static const char *BACKGROUND_MUSIC_VOLUME_KEY = "backgroundMusicVolume";
-static const char *AUDIO_EFFECTS_VOLUME_KEY = "audioEffectsVolume";
-
 static const char *DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
 static const char *CACHE_PATH_KEY = "cachePath";
 static const char *USERDATA_PATH_KEY = "userDataPath";

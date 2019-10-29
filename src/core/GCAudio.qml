@@ -213,8 +213,10 @@ Item {
     /// @cond INTERNAL_DOCS
 
     function _playNextFile() {
-        if(files.length == 0)
+        if(files.length == 0) {
+            gcaudio.done()
             return
+        }
 
         var nextFile = files.shift()
         if(nextFile === '') {

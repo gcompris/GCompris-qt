@@ -59,19 +59,19 @@ Window {
 
     /**
      * type: bool
-     * It tells whether the background music is enabled for an activity.
+     * It tells whether a musical activity is running.
      *
-     * It changes to false if the started activity is a musical activity and back to true when the activity is closed.
+     * It changes to true if the started activity is a musical activity and back to false when the activity is closed, allowing to play background music.
      */
-    property bool isBackgroundMusicEnabledInActivity: true
+    property bool isMusicalActivityRunning: false
 
     /**
-     * When a musical activity is started, isBackgroundMusicEnabledInActivity changes to false and the backgroundMusic pauses.
+     * When a musical activity is started, the backgroundMusic pauses.
      *
-     * When returning back from the musical activity to menu, isBackgroundMusicEnabledInActivity changes to true and backgroundMusic resumes.
+     * When returning back from the musical activity to menu, backgroundMusic resumes.
      */
-    onIsBackgroundMusicEnabledInActivityChanged: {
-        if(!isBackgroundMusicEnabledInActivity) {
+    onIsMusicalActivityRunningChanged: {
+        if(isMusicalActivityRunning) {
             backgroundMusic.pause()
         }
         else {
@@ -87,7 +87,7 @@ Window {
     }
 
     onClosing: Core.quit(main)
-    
+
     GCAudio {
         id: audioVoices
         muted: !ApplicationSettings.isAudioVoicesEnabled
@@ -127,11 +127,8 @@ Window {
 
     GCAudio {
         id: backgroundMusic
-        
         isBackgroundMusic: true
-        
         muted: !ApplicationSettings.isBackgroundMusicEnabled
-
         volume: ApplicationSettings.backgroundMusicVolume
 
         onMutedChanged: {
@@ -142,24 +139,22 @@ Window {
 
         onDone: backgroundMusic.playBackgroundMusic()
 
-
         function playBackgroundMusic() {
             rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
-            
+
             for(var i = 0; i < filteredBackgroundMusic.length; i++) {
                 backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + filteredBackgroundMusic[i]))
             }
-            
             if(main.isMusicalActivityRunning)
                 backgroundMusic.pause()
         }
-        
+
         Component.onCompleted: {
             if(ApplicationSettings.isBackgroundMusicEnabled)
                 backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
             if(ApplicationSettings.isBackgroundMusicEnabled
                && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
-                    backgroundMusic.playBackgroundMusic()
+                   backgroundMusic.playBackgroundMusic()
             }
             else {
                 DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
@@ -213,33 +208,34 @@ Window {
         if(music == '') {
             music = DownloadManager.getBackgroundMusicResources()
         }
-    // We have local music but it is not yet registered
+        // We have local music but it is not yet registered
         else if(!DownloadManager.isDataRegistered("backgroundMusic") && DownloadManager.haveLocalResource(music)) {
-    // We have music and automatic download is enabled. Download the music and register it
-         if(DownloadManager.updateResource(music) && DownloadManager.downloadIsRunning()) {
-             DownloadManager.registerResource(music)
-             rccBackgroundMusic = Core.shuffle(ApplicationInfo.getBackgroundMusicFromRcc())
-          }
-          else {
-              rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+            // We have music and automatic download is enabled. Download the music and register it
+            if(DownloadManager.updateResource(music) && DownloadManager.downloadIsRunning()) {
+                DownloadManager.registerResource(music)
+                rccBackgroundMusic = Core.shuffle(ApplicationInfo.getBackgroundMusicFromRcc())
+            }
+            else {
+                rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
             }
         }
         else if(!DownloadManager.haveLocalResource(music)) {
             Core.showMessageDialog(
-                        main,
-                        qsTr("The background music is not yet downloaded. ")
-                        + qsTr("Do you want to download it now?"),
-                        qsTr("Yes"),
-                        function() {
-                           if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
-                                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-                           }
-                        },
-                        qsTr("No"), null,
-                        function() { pageView.currentItem.focus = true }
-                    );
+            main,
+            qsTr("The background music is not yet downloaded. ")
+            + qsTr("Do you want to download it now?"),
+            qsTr("Yes"),
+            function() {
+                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
+                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                 }
+            },
+            qsTr("No"), null,
+            function() { pageView.currentItem.focus = true }
+            );
         }
+    }
+
     ChangeLog {
        id: changelog
     }
