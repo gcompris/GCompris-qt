@@ -184,6 +184,12 @@ ActivityBase {
                             text: qsTr("Uppercase only mode")
                             checked: activity.uppercaseOnly
                         }
+                        GCText {
+                            id: speedSliderText
+                            text: qsTr("Speed")
+                            fontSize: mediumSize
+                            wrapMode: Text.WordWrap
+                        }
                         Flow {
                             width: dialogActivityConfig.width
                             spacing: 5
@@ -194,12 +200,6 @@ ActivityBase {
                                 maximumValue: 10
                                 minimumValue: 1
                                 scrollEnabled: false
-                            }
-                            GCText {
-                                id: speedSliderText
-                                text: qsTr("Speed")
-                                fontSize: mediumSize
-                                wrapMode: Text.WordWrap
                             }
                         }
                     }

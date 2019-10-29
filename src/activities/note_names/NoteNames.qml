@@ -121,9 +121,15 @@ ActivityBase {
 
                     Column {
                         id: column
-                        spacing: 10
+                        spacing: 10 * ApplicationInfo.ratio
                         width: parent.width
 
+                        GCText {
+                            id: speedSliderText
+                            text: qsTr("Speed")
+                            fontSize: mediumSize
+                            wrapMode: Text.WordWrap
+                        }
                          Flow {
                             width: dialogActivityConfig.width
                             spacing: 5
@@ -134,12 +140,6 @@ ActivityBase {
                                 maximumValue: 5
                                 minimumValue: 1
                                 scrollEnabled: false
-                            }
-                            GCText {
-                                id: speedSliderText
-                                text: qsTr("Speed")
-                                fontSize: mediumSize
-                                wrapMode: Text.WordWrap
                             }
                         }
                     }
