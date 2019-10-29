@@ -36,6 +36,7 @@ import GCompris 1.0
 
 import "../../core"
 import "server.js" as Activity
+import "components"
 
 ActivityBase {
     id: activity
@@ -79,39 +80,11 @@ ActivityBase {
             onGoManageGroupsView: contentFrame.replace("views/ManageGroupsView.qml")
         }
 
-        Rectangle {
-            id: navigationBar
-            anchors {
-                top: parent.top
-                bottom: parent.bottom
-                left: parent.left
-            }
-            width: 100
-            color: "#000000"
 
-            Column {
-                Button {
-                    text: "Dashboard"
-                    onClicked: masterController.ui_navigationController.goDashboardView()
-                }
-                Button {
-                    text: "New Client"
-                    onClicked: masterController.ui_navigationController.goCreateClientView()
-                }
-                Button {
-                    text: "Find Client"
-                    onClicked: masterController.ui_navigationController.goFindClientView()
-                }
-                Button {
-                    text: "Manage Pupils"
-                    onClicked: masterController.ui_navigationController.goManagePupilsView()
-                }
-                Button {
-                    text: "Manage Groups"
-                    onClicked: masterController.ui_navigationController.goManageGroupsView()
-                }
-            }
+        NavigationBar {
+            id: navigationBar
         }
+
 
         StackView {
             id: contentFrame
