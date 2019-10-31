@@ -130,7 +130,7 @@ ActivityBase {
             }
 
             //else => bad
-            bonus.bad("flower")
+            bonus.bad("flower", bonus.checkAnswer)
         }
 
         //center zone

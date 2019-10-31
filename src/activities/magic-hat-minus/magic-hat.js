@@ -148,7 +148,7 @@ function verifyAnswer() {
        numberOfUserStars[2] === nbStarsToCount[2]) {
         items.bonus.good("flower")
     } else {
-        items.bonus.bad("flower")
+        items.bonus.bad("flower", items.bonus.checkAnswer)
     }
 }
 
