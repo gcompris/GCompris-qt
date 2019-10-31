@@ -33,7 +33,7 @@ import GCompris 1.0
  * feedback to the user and emits the @ref win / @ref loose signals when
  * finished.
  *
- * Maintains a list of possible audio voice resources to be playebd back
+ * Maintains a list of possible audio voice resources to be played back
  * upon winning/loosing events, and selects randomly from them when triggered.
  *
  * @inherit QtQuick.Image
@@ -97,10 +97,14 @@ Image {
         "voices-$CA/$LOCALE/misc/perfect.$CA"
     ]
     property var looseVoices: [
+        "voices-$CA/$LOCALE/misc/try_again.$CA",
         "voices-$CA/$LOCALE/misc/check_answer.$CA"
     ]
+    readonly property int tryAgain: 0
+    readonly property int checkAnswer: 1
     /// @endcond
 
+    property int nextAudioIndex: 0
     /**
      * type:bool
      * True between the moment we have the win/lose signal emitted and the 
@@ -139,10 +143,16 @@ Image {
      * @param name Type of win image to show.
      * Possible values are "flower", "gnu", "lion", "note", "smiley", "tux"
      */
-    function bad(name) {
+    function bad(name, audioIndex) {
         source = url + "bonus/" + name + "_bad.svg"
         isWin = false;
         timer.start()
+        if(audioIndex) {
+            nextAudioIndex = audioIndex
+        }
+        else {
+            nextAudioIndex = bonus.tryAgain
+        }
     }
 
     /**
@@ -163,9 +173,14 @@ Image {
      * Private: Triggers loose feedback after the timer completion.
      */
     function _bad(name) {
-        if(!audioVoices.play(
-                    ApplicationInfo.getAudioFilePath(
-                        looseVoices[Math.floor(Math.random()*looseVoices.length)])))
+        var audio = ApplicationInfo.getAudioFilePath(
+                        looseVoices[nextAudioIndex])
+        // Defaults to "check answer" if required audio does not exist
+        if(!file.exists(audio)) {
+            audio = ApplicationInfo.getAudioFilePath(
+                        looseVoices[bonus.checkAnswer])
+        }
+        if(!audioVoices.play(audio))
             if(looseSound)
                 audioEffects.play(looseSound)
         start()
@@ -194,6 +209,9 @@ Image {
         }
     }
 
+    File {
+        id: file
+    }
     // It is useful to launch the bonus after a delay to let the children
     // appreciate the completed level
     Timer {
