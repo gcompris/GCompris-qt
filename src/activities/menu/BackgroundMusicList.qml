@@ -191,8 +191,8 @@ Rectangle {
                             wrapMode: Text.WordWrap
                         }
                         GCText {
-                            //: Date of the current background music playing
-                            text: qsTr("Date: %1").arg(backgroundMusic.metaDataMusic[2])
+                            //: Year of the current background music playing
+                            text: qsTr("Year: %1").arg(backgroundMusic.metaDataMusic[2])
                             width: dialogBackground.width - 30
                             horizontalAlignment: Text.AlignLeft
                             color: "black"
