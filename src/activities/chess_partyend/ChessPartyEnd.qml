@@ -27,6 +27,7 @@ import "../chess"
 Chess {
     twoPlayers: false
     difficultyByLevel: false
+    displayTakenPiecesButton: false
     fen: [
         ["", "4k3/8/8/8/8/8/8/K4QQ1 w - -"],
         ["", "1k6/8/8/8/8/8/8/K4RR1 w - -"],

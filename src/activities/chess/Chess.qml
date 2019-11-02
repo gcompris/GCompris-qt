@@ -33,7 +33,9 @@ ActivityBase {
 
     property bool acceptClick: true
     property bool twoPlayers: false
+    property bool displayTakenPiecesButton: true
     property int coordsOpacity: 1
+    property int movesCount: 0
     // difficultyByLevel means that at level 1 computer is bad better at last level
     property bool difficultyByLevel: true
     property var fen: [
@@ -88,6 +90,8 @@ ActivityBase {
             property string message
             property bool isWarningMessage
             property alias trigComputerMove: trigComputerMove
+            property alias whiteTakenPieceModel: whiteTakenPieces.takenPiecesModel
+            property alias blackTakenPieceModel: blackTakenPieces.takenPiecesModel
 
             Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
         }
@@ -136,7 +140,7 @@ ActivityBase {
 
                 Grid {
                     spacing: 60 * ApplicationInfo.ratio
-                    columns: items.isPortrait ? 3 : 1
+                    columns: items.isPortrait ? 4 : 1
                     anchors.horizontalCenter: parent.horizontalCenter
                     horizontalItemAlignment: Grid.AlignHCenter
                     verticalItemAlignment: Grid.AlignVCenter
@@ -147,7 +151,21 @@ ActivityBase {
                         width: height
                         text: "";
                         style: GCButtonStyle { theme: "light" }
-                        onClicked: Activity.undo()
+                        onClicked: {
+                            Activity.undo()
+                            if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
+                                whiteTakenPieces.pushedLast.pop()
+                                whiteTakenPieces.takenPiecesModel.remove(whiteTakenPieces.takenPiecesModel.count-1)
+                            }
+                            if(!items.twoPlayer) {
+                                movesCount--
+                            }
+                            if(blackTakenPieces.pushedLast[blackTakenPieces.pushedLast.length-1] == movesCount) {
+                                blackTakenPieces.pushedLast.pop()
+                                blackTakenPieces.takenPiecesModel.remove(blackTakenPieces.takenPiecesModel.count-1)
+                            }
+                            movesCount--
+                        }
                         enabled: items.history.length > 0 ? 1 : 0
                         opacity: enabled
                         Image {
@@ -197,6 +215,35 @@ ActivityBase {
                     }
 
                     Button {
+                        id: drawerButton
+                        height: 30 * ApplicationInfo.ratio
+                        width: height
+                        text: "";
+                        style: GCButtonStyle { theme: "light" }
+
+                        onClicked: {
+                            whiteTakenPieces.open = !whiteTakenPieces.open
+                            blackTakenPieces.open = !blackTakenPieces.open
+                        }
+
+                        enabled: displayTakenPiecesButton
+                        opacity: enabled
+                        Image {
+                            source: Activity.url + 'captured.svg'
+                            height: parent.height
+                            width: height
+                            sourceSize.height: height
+                            fillMode: Image.PreserveAspectFit
+                        }
+                        Behavior on opacity {
+                            PropertyAnimation {
+                                easing.type: Easing.InQuad
+                                duration: 200
+                            }
+                        }
+                    }
+
+                    Button {
                         height: undo.height
                         width: undo.height
                         text: "";
@@ -214,7 +261,6 @@ ActivityBase {
                     }
                 }
             }
-
 
             Rectangle {
                 id: boardBg
@@ -371,7 +417,7 @@ ActivityBase {
                 z: 1
                 pos: modelData.pos
                 newPos: modelData.pos
-                rotation: - chessboard.rotation
+                rotation: -chessboard.rotation
 
                 property int spacing: 6 * ApplicationInfo.ratio
 
@@ -408,10 +454,19 @@ ActivityBase {
             }
 
             function moveTo(from, to) {
+                movesCount ++
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
-                if(toPiece.img !== '')
+                if(toPiece.img !== '') {
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                    if(toPiece.isWhite) {
+                        whiteTakenPieces.takenPiecesModel.append(toPiece)
+                        whiteTakenPieces.pushedLast.push(movesCount)
+                    } else {
+                        blackTakenPieces.takenPiecesModel.append(toPiece)
+                        blackTakenPieces.pushedLast.push(movesCount)
+                    }
+                }
                 else
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                 toPiece.hide(from)
@@ -454,6 +509,17 @@ ActivityBase {
                 move = engineMove
                 redoTimer.start()
             }
+        }
+
+        TakenPiecesList {
+            id: whiteTakenPieces
+            openWidth: items.cellSize
+            edge: false
+        }
+        TakenPiecesList {
+            id: blackTakenPieces
+            openWidth: items.cellSize
+            edge: true
         }
 
         DialogHelp {
