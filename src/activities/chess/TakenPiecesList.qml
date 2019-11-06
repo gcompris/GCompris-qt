@@ -33,7 +33,7 @@ Rectangle {
 
     height: parent.height
     width: open ? openWidth : 0
-    color: "#88111111"
+    color: edge ? "#88EEEEEE" : "#88111111"
 
     Behavior on width {
         NumberAnimation { duration: 200 }
@@ -52,9 +52,9 @@ Rectangle {
             model: ListModel { id:pieceList }
             Piece {
                 id: piece
-                sourceSize.width: items.cellSize
+                sourceSize.width: width
                 width: open ? piece.height : 0
-                height: parent.height / 15
+                height: parent.height / 18
                 source: img ? Activity.url + img + '.svg' : ''
                 img: model.img
                 newPos: model.pos
@@ -63,6 +63,14 @@ Rectangle {
                     NumberAnimation { duration: 200 }
                 }
             }
+        }
+    }
+    
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            whiteTakenPieces.open = false
+            blackTakenPieces.open = false
         }
     }
 }

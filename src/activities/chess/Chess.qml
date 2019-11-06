@@ -513,12 +513,12 @@ ActivityBase {
 
         TakenPiecesList {
             id: whiteTakenPieces
-            openWidth: items.cellSize
+            openWidth: items.cellSize * 0.8
             edge: false
         }
         TakenPiecesList {
             id: blackTakenPieces
-            openWidth: items.cellSize
+            openWidth: items.cellSize * 0.8
             edge: true
         }
 
