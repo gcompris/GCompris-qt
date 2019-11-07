@@ -67,6 +67,8 @@ Item {
     // Emitted when previousButton is clicked
     signal previousPressed
 
+    property alias tutorialText: tutorialText
+
     // Tutorial instructions
     GCText {
         id: tutorialText
@@ -106,7 +108,7 @@ Item {
     // previousButton: It emits skipPressed and navigates to previous tutorial when clicked
     IntroButton {
         id: previousButton
-        width: parent.width / 4
+        width: parent.width / 5
         height: 90
         z: 5
         anchors.right: nextButton.left
@@ -126,7 +128,7 @@ Item {
     // nextButton: It emits nextPressed which navigates to next tutorial when clicked
     IntroButton {
         id: nextButton
-        width: parent.width / 4
+        width: parent.width / 5
         height: 90
         z: 5
         anchors.right: skipButton.left
@@ -146,7 +148,7 @@ Item {
     // skipButton: It emits the skipPressed signal which calls the initLevel to close the tutorial when clicked.
     IntroButton {
         id: skipButton
-        width: parent.width / 4
+        width: parent.width / 5
         height: 90
         z: 5
         anchors.right: parent.right
@@ -161,6 +163,27 @@ Item {
 	        skipPressed()
 	    }
     }
+
+    IntroButton {
+        id: showButton
+        width: parent.width / 5
+        height: 90
+        z: 5
+        anchors.right: previousButton.visible ? previousButton.left : nextButton.left
+        anchors.topMargin: 15
+        anchors.rightMargin: 15
+        anchors.top: tutorialTextContainer.bottom
+        visible: tutorialNumber != (tutorialDetails.length - 1)
+
+        text: qsTr("Show")
+
+        onClicked: {
+            ++tutorialNumber
+            nextPressed()
+        }
+    }
+
+
 
     // Image component for tutorial instructions
     Image {

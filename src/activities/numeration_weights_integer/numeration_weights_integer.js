@@ -76,6 +76,41 @@ var numberWeightDragArray = {
 var numberClassTypeColumnsArray = ["Integer Part","Decimal Part"]
 
 
+var tutorialInstructions = [
+            {
+                "instruction": qsTr("This activity teaches how to convert decimal numbers to binary numbers."),
+                "instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial1.qml"
+            },
+            {
+                "instruction": qsTr("Computers use transistors to count and transistors have only two states, 0 and 1. Mathematically, these states are represented by 0 and 1, which makes up the binary system of numeration."),
+                "instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial2.qml"
+            },
+            {
+                "instruction": qsTr("In the activity 0 and 1 are simulated by bulbs, switched on or off."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial3.qml"
+            },
+            {
+                "instruction": qsTr("Binary system uses these numbers very efficiently, allowing to count from 0 to 255 with 8 bits only."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial4.qml"
+            },
+            {
+                "instruction": qsTr("Each bit adds a progressive value, corresponding to the powers of 2, ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial5.qml"
+            },
+            {
+                "instruction":  qsTr("To convert a decimal 5 to a binary value, 1 and 4 are added."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial6.qml"
+            },
+            {
+                "instruction": qsTr("Their corresponding bits are set to 1, the others set to 0. Decimal 5 is equal to binary 101."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial7.qml"
+            },
+            {
+                "instruction": qsTr("This image will help you to compute bits' value."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial5.qml"
+            }
+        ]
+
 
 function removeClassInNumberClassesArray(className) {
     console.log(numberClassesArray)

@@ -92,7 +92,6 @@ ActivityBase {
         property bool vert: background.width >= background.height
 
 
-
         //mainZone
         DropArea {
             id: mainZoneArea
@@ -375,7 +374,6 @@ ActivityBase {
                 }
             }
 
-
             RowLayout {
                 id: numberClassDropAreasGridLayout
 
@@ -386,8 +384,8 @@ ActivityBase {
 
                 Repeater {
                     id: numberClassDropAreaRepeater
-                    model: numberClassListModel
 
+                    model: numberClassListModel
                     NumberClassDropArea {
                         id: numberClassDropAreaElement
 
@@ -402,8 +400,22 @@ ActivityBase {
                     }
                 }
             }
-        }
 
+            Tutorial {
+                id: tutorialSection
+
+                tutorialText.anchors.top: undefined
+                tutorialText.anchors.bottom: tutorialSection.bottom
+                tutorialText.anchors.margins: tutorialSection.tutorialText.height
+                tutorialDetails: Activity.tutorialInstructions
+                useImage: false
+
+                onSkipPressed: {
+                    Activity.initLevel()
+                    tutorialImage.visible = false
+                }
+            }
+        }
 
         ListModel {
             id: numberClassListModel
