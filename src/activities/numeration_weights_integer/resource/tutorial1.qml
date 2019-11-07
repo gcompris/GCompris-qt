@@ -34,16 +34,6 @@ Rectangle {
         console.log("test")
     }
 
-    Rectangle {
-        x:100
-        y:100
-        width: 100
-        height: 1000
-        color: "red"
-        border.color: "black"
-        border.width: 5
-        radius: 10
-    }
 
     anchors.fill: parent
     color: "#80FFFFFF"
@@ -54,8 +44,8 @@ Rectangle {
         State { name: "other"
 
             PropertyChanges {
-                target: myrectangle
-                x: 300
+                target: numberClassDragElements.itemAt(0)
+                x: 200
                 y: 200
             }
         }
@@ -66,7 +56,14 @@ Rectangle {
         Transition {
 
             // This applies a default NumberAnimation to any changes a state change makes to x or y properties
-            NumberAnimation { properties: "x,y" }
+            NumberAnimation {
+                properties: "x,y"
+            }
+            onRunningChanged: {
+                numberClassDragElements.itemAt(0).Drag.drop()
+
+                console.log("mince")
+            }
         }
     ]
 

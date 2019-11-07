@@ -111,21 +111,6 @@ ActivityBase {
 
             keys: "NumberClassKey"
 
-            Rectangle {
-                id: myrectangle
-
-                x:0
-                y:0
-                width: 100
-                height: 100
-                color: "blue"
-                border.color: "black"
-                border.width: 5
-                radius: 10
-                z: 100
-            }
-
-
             //shows/hides the objective/instruction
             MouseArea {
                 anchors.fill: mainZoneArea
@@ -615,6 +600,7 @@ ActivityBase {
 
                     // numbers classes drag elements
                     Repeater {
+                        id: numberClassDragElements
                         model: numberClassDragListModel
 
                         NumberClassDragElement {
