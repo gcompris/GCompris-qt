@@ -1,4 +1,4 @@
-/* GCompris - tutorial2.qml
+/* GCompris - tutorial1.qml
  *
  * Copyright (C) 2018 Timothée Giet <animtim@gcompris.net>
  *
@@ -19,97 +19,54 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import GCompris 1.0 
+import GCompris 1.0
 
 import "../../../core"
+import "../../../activities"
+
 
 Rectangle {
+    id: tutorial2
+
+    Component.onCompleted: {
+        tutorial2.state = ''
+            tutorial2.state === '' ? tutorial2.state = 'other' : tutorial2.state = ''
+        console.log("test")
+    }
+
+    Rectangle {
+        x:100
+        y:100
+        width: 100
+        height: 1000
+        color: "red"
+        border.color: "black"
+        border.width: 5
+        radius: 10
+    }
+
     anchors.fill: parent
     color: "#80FFFFFF"
-    
-    Item {
-        width: parent.width
-        height: parent.height * 0.5
-        
-        Image {
-            source: "transistor.svg"
-            fillMode: Image.PreserveAspectFit
-            anchors.fill: parent
-            sourceSize.height: implicitHeight
-        }
-    }
-    
-    Item {
-        width: parent.width * 0.2
-        height: parent.height * 0.5
-        anchors.bottom: parent.bottom
-        anchors.left: parent.left
 
-        GCText {
-            anchors {
-                right: parent.right
-                verticalCenter: parent.verticalCenter
+    states: [
+        // This adds a second state to the container where the rectangle is farther to the right
+
+        State { name: "other"
+
+            PropertyChanges {
+                target: numberWeightDragElements.itemAt(0)
+                x: 200
             }
-            text: "0"
-            font.pixelSize: parent.height * 0.5
-            color: "black"
-            horizontalAlignment: Text.AlignRight
-            width: 0.9 * parent.width
-            height: 0.9 * parent.height
-            z: 2
         }
-    }
-    
-    Item {
-        width: parent.width * 0.3
-        height: parent.height * 0.4
-        anchors.bottom: parent.bottom
-        anchors.right: parent.horizontalCenter
-        anchors.bottomMargin: parent.height * 0.05
-        
-        Image {
-            source: ""
-            fillMode: Image.PreserveAspectFit
-            anchors.fill: parent
-            sourceSize.width: implicitWidth
-        }
-        
-    }
-    
-    Item {
-        width: parent.width * 0.3
-        height: parent.height * 0.4
-        anchors.bottom: parent.bottom
-        anchors.left: parent.horizontalCenter
-        anchors.bottomMargin: parent.height * 0.05
-        
-        Image {
-            source: ""
-            fillMode: Image.PreserveAspectFit
-            anchors.fill: parent
-            sourceSize.width: implicitWidth
-        }
-        
-    }
+    ]
+    transitions: [
+        // This adds a transition that defaults to applying to all state changes
 
-    Item {
-        width: parent.width * 0.2
-        height: parent.height * 0.5
-        anchors.bottom: parent.bottom
-        anchors.right: parent.right
+        Transition {
 
-        GCText {
-            anchors {
-                left: parent.left
-                verticalCenter: parent.verticalCenter
-            }
-            text: "1"
-            font.pixelSize: parent.height * 0.5
-            color: "black"
-            horizontalAlignment: Text.AlignLeft
-            width: 0.9 * parent.width
-            height: 0.9 * parent.height
-            z: 2
+            // This applies a default NumberAnimation to any changes a state change makes to x or y properties
+            NumberAnimation { properties: "x,y" }
         }
-    }
+    ]
+
 }

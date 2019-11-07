@@ -29,10 +29,21 @@ Rectangle {
     id: tutorial1
 
     Component.onCompleted: {
+        tutorial1.state = ''
             tutorial1.state === '' ? tutorial1.state = 'other' : tutorial1.state = ''
+        console.log("test")
     }
 
-
+    Rectangle {
+        x:100
+        y:100
+        width: 100
+        height: 1000
+        color: "red"
+        border.color: "black"
+        border.width: 5
+        radius: 10
+    }
 
     anchors.fill: parent
     color: "#80FFFFFF"
@@ -43,8 +54,9 @@ Rectangle {
         State { name: "other"
 
             PropertyChanges {
-                target: ActivityBase.activity.background
-                x: 200
+                target: myrectangle
+                x: 300
+                y: 200
             }
         }
     ]
