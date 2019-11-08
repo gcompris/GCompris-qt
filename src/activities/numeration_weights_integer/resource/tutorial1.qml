@@ -54,15 +54,16 @@ Rectangle {
         // This adds a transition that defaults to applying to all state changes
 
         Transition {
-
+            id: transition_id
             // This applies a default NumberAnimation to any changes a state change makes to x or y properties
             NumberAnimation {
                 properties: "x,y"
             }
             onRunningChanged: {
-                numberClassDragElements.itemAt(0).Drag.drop()
-
-                console.log("mince")
+                if(!transition_id.running) {
+                    numberClassDragElements.itemAt(0).Drag.drop()
+                    console.log("mince")
+                }
             }
         }
     ]
