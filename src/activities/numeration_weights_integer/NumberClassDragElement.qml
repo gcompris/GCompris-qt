@@ -36,7 +36,26 @@ Rectangle {
     property string name
     property bool dragEnabled: true
 
-    Drag.active: numberClassDragElementMouseArea.drag.active
+    Drag.active: true //numberClassDragElementMouseArea.drag.active
+
+    Drag.hotSpot.x: width / 2
+    Drag.hotSpot.y: height / 2
+
+    // I've added this property for simplicity's sake.
+            property bool dragActive: numberClassDragElementMouseArea.drag.active
+
+     onDragActiveChanged: {
+               if (dragActive) {
+                   print("drag started")
+                   Drag.start();
+               } else {
+                   print("drag finished")
+                   Drag.drop();
+               }
+           }
+
+        //   Drag.dragType: Drag.Automatic
+
 
     opacity: dragEnabled ? 1 : 0.5
 

@@ -31,7 +31,7 @@ Rectangle {
     Component.onCompleted: {
         tutorial1.state = ''
             tutorial1.state === '' ? tutorial1.state = 'other' : tutorial1.state = ''
-        console.log("test")
+        console.log("tutorial1_completed")
     }
 
 
@@ -45,7 +45,7 @@ Rectangle {
 
             PropertyChanges {
                 target: numberClassDragElements.itemAt(0)
-                x: 200
+                x: 400
                 y: 200
             }
         }
@@ -61,8 +61,10 @@ Rectangle {
             }
             onRunningChanged: {
                 if(!transition_id.running) {
-                    numberClassDragElements.itemAt(0).Drag.drop()
-                    console.log("mince")
+                    //var tt = numberClassDragElements.itemAt(0).Drag.drop()
+
+                    //console.log("--" + tt + "")
+                    //console.log(tt)
                 }
             }
         }
