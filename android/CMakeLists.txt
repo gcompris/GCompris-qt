@@ -177,9 +177,9 @@ add_custom_command(
   COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl.so"
   )
 else()
-  # For Qt 5.12.5, it needs libcrypto_1_1.so and libssl_1_1.so
+  # For Qt 5.12.5 and above 5.13.0, it needs libcrypto_1_1.so and libssl_1_1.so
   set(suffix_libssl "")
-  if(Qt5Core_VERSION VERSION_LESS "5.13.0")
+  if(Qt5Core_VERSION VERSION_GREATER_EQUAL "5.12.5" AND NOT Qt5Core_VERSION MATCHES "5.13.0")
     set(suffix_libssl "_1_1")
   endif()
 ExternalProject_Add(
