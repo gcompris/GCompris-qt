@@ -97,7 +97,7 @@ class ApplicationInfo : public QObject
      *
      * For these cases we calculate a fontRatio in ApplicationInfo that takes
      * dpi information into account, as proposed on
-     * http://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
+     * https://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
      *
      * GCText applies this factor automatically on its new fontSize property.
      */
@@ -301,10 +301,10 @@ public:
     /**
      * Change the desired orientation of the application.
      *
-     * Android specific function, cf. http://developer.android.com/reference/android/app/Activity.html#setRequestedOrientation(int)
+     * Android specific function, cf. https://developer.android.com/reference/android/app/Activity.html#setRequestedOrientation(int)
      *
      * @param orientation Desired orientation of the application. For possible
-     *                    values cf. http://developer.android.com/reference/android/content/pm/ActivityInfo.html#screenOrientation .
+     *                    values cf. https://developer.android.com/reference/android/content/pm/ActivityInfo.html#screenOrientation .
      *                    Some useful values:
      *                    - -1: SCREEN_ORIENTATION_UNSPECIFIED
      *                    -  0: SCREEN_ORIENTATION_LANDSCAPE: forces landscape

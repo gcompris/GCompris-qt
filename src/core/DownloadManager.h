@@ -119,7 +119,7 @@ private:
      * Uses QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
      * which returns
      *   - on desktop linux $HOME/.cache/KDE/gcompris-qt/
-     *   - on other platforms check <http://doc.qt.io/qt-5/qstandardpaths.html>
+     *   - on other platforms check <https://doc.qt.io/qt-5/qstandardpaths.html>
      *
      * @return An absolute path.
      */

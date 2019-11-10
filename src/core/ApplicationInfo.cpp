@@ -77,7 +77,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     QRect rect = qApp->primaryScreen()->geometry();
     m_ratio = qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.);
     // calculate a factor for font-scaling, cf.
-    // http://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
+    // https://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
     qreal refDpi = 216.;
     qreal refHeight = 1776.;
     qreal refWidth = 1080.;
