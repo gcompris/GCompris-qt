@@ -86,7 +86,7 @@ ActivityBase {
             property Item main: activity.main
             property Item ourActivity: activity
             property GCAudio audioVoices: activity.audioVoices
-            property var levels: activity.datasetLoader.item !== null ? activity.datasetLoader.item.data : null
+            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property string instructionText: ""
             property alias background: background
             property alias bar: bar
@@ -175,10 +175,10 @@ ActivityBase {
                 home()
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevel
-                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
-                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
-                home()
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                // todo this is triggered before the change of locale, so it is not taken in account!
                 background.stop()
                 background.start()
             }

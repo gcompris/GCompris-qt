@@ -25,31 +25,36 @@ import "../../../../core"
 Dataset {
     objective: qsTr("Learn to calculate remaining stars up to 30")
     difficulty: 3
-    property int maxValue: 30
     data: [
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [5, 0, 0] 
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [10, 0, 0] 
-      },
-      {
-         "minStars" : [2, 2, 0],
-         "maxStars" : [8, 8, 0]
-      },
-      {
-         "minStars" : [2, 2, 0],
-         "maxStars" : [10, 10, 0]
-      },
-      {
-         "minStars" : [2, 2, 2],
-         "maxStars" : [9, 9, 7]
-      },
-      {
-         "minStars" : [2, 2, 2],
-         "maxStars" : [10, 10, 10]
-      }
-   ]
+    {
+        "maxValue": 30,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [5, 0, 0] 
+    },
+    {
+        "maxValue": 30,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [10, 0, 0] 
+    },
+    {
+        "maxValue": 30,
+        "minStars" : [2, 2, 0],
+        "maxStars" : [8, 8, 0]
+    },
+    {
+        "maxValue": 30,
+        "minStars" : [2, 2, 0],
+        "maxStars" : [10, 10, 0]
+    },
+    {
+        "maxValue": 30,
+        "minStars" : [2, 2, 2],
+        "maxStars" : [9, 9, 7]
+    },
+    {
+        "maxValue": 30,
+        "minStars" : [2, 2, 2],
+        "maxStars" : [10, 10, 10]
+    }
+    ]
 }

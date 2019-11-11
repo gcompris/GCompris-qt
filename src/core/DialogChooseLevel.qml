@@ -58,7 +58,7 @@ Rectangle {
     property var difficultiesModel: []
     property QtObject currentActivity
 
-    property string chosenLevel
+    property var chosenLevels: []
 
     property var activityData
     onActivityDataChanged: loadData()
@@ -118,7 +118,7 @@ Rectangle {
 
     function initialize() {
         // dataset information
-        chosenLevel = currentActivity.currentLevel
+        chosenLevels = currentActivity.currentLevels
         difficultiesModel = []
         if(currentActivity.levels.length == 0) {
             print("no levels to load for", activityName)
@@ -153,7 +153,7 @@ Rectangle {
         }
 
         onLoaded: {
-            difficultiesModel.push({"level": currentFile.level, "objective": item.objective, "difficulty": item.difficulty})
+            difficultiesModel.push({"level": currentFile.level, "objective": item.objective, "difficulty": item.difficulty, "selectedInConfig": chosenLevels.includes(currentFile.level)})
             if(dataFiles.length != 0) {
                 start()
             }
@@ -302,9 +302,6 @@ Rectangle {
                         visible: datasetVisibleButton.selected
                         spacing: 10
 
-                        ExclusiveGroup {
-                            id: levelsGroup
-                        }
                         Repeater {
                             id: difficultiesRepeater
                             delegate: Row {
@@ -320,9 +317,20 @@ Rectangle {
                                     id: objective
                                     width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
                                     text: modelData.objective
-                                    exclusiveGroup: levelsGroup
-                                    checked: chosenLevel === modelData.level
-                                    onClicked: chosenLevel = modelData.level
+                                    // to be fixed by all last used levels
+                                    checked: modelData.selectedInConfig
+                                    onClicked: {
+                                        if(checked) {
+                                            chosenLevels.push(modelData.level)
+                                        }
+                                        else if(chosenLevels.length > 1) {
+                                            chosenLevels.splice(chosenLevels.indexOf(modelData.level), 1)
+                                        }
+                                        else {
+                                            // At least one must be selected
+                                            checked = true;
+                                        }
+                                    }
                                 }                            
                             }
                         }
@@ -373,6 +381,7 @@ Rectangle {
                     text: qsTr("Save and start")
                     height: parent.height
                     width: parent.width / 3
+                    visible: inMenu === true
                     style: GCButtonStyle { }
                     onClicked: {
                         saveData();

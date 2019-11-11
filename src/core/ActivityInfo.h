@@ -130,9 +130,9 @@ class ActivityInfo : public QObject
     Q_PROPERTY(QStringList levels READ levels WRITE setLevels NOTIFY levelsChanged)
 
     /**
-     * Current dataset used for the activity (it is among the 'levels' list)
+     * Current datasets used for the activity (it is among the 'levels' list)
      */
-    Q_PROPERTY(QString currentLevel READ currentLevel WRITE setCurrentLevel NOTIFY currentLevelChanged)
+    Q_PROPERTY(QStringList currentLevels READ currentLevels WRITE setCurrentLevels NOTIFY currentLevelsChanged)
 
 public:
 	/// @cond INTERNAL_DOCS
@@ -170,8 +170,8 @@ public:
         void setCreatedInVersion(const int);
         QStringList levels() const;
         void setLevels(const QStringList&);
-        QString currentLevel() const;
-        void setCurrentLevel(const QString&);
+        QStringList currentLevels() const;
+        void setCurrentLevels(const QStringList&);
 
 signals:
 	void nameChanged();
@@ -190,7 +190,7 @@ signals:
         void enabledChanged();
 	void createdInVersionChanged();
 	void levelsChanged();
-	void currentLevelChanged();
+	void currentLevelsChanged();
 	/// @endcond
 private:
 	QString m_name;
@@ -209,12 +209,12 @@ private:
         bool m_enabled;
 	int m_createdInVersion;
 	QStringList m_levels;
-	QString m_currentLevel;
+        QStringList m_currentLevels;
 
 	/*
          * Set current level once we have the name and the levels
          */
-	void setCurrentLevel();
+	void setCurrentLevels();
 };
 
 #endif // ACTIVITYINFO_H

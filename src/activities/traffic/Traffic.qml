@@ -113,11 +113,6 @@ ActivityBase {
             onClose: {
                 home()
             }
-            onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevel
-                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
-                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
-            }
             onLoadData: {
                 if(activityData && activityData["mode"]) {
                    background.mode = activityData["mode"];

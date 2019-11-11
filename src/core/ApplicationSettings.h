@@ -534,8 +534,8 @@ protected slots:
 public slots:
     Q_INVOKABLE bool isFavorite(const QString &activity);
     Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
-    Q_INVOKABLE void setCurrentLevel(const QString &activity, const QString &level);
-    Q_INVOKABLE QString currentLevel(const QString &activity);
+    Q_INVOKABLE void setCurrentLevels(const QString &activity, const QStringList &level);
+    Q_INVOKABLE QStringList currentLevels(const QString &activity);
 
     Q_INVOKABLE void saveBaseFontSize();
     /// @endcond

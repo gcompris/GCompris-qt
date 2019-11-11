@@ -65,8 +65,7 @@ ActivityBase {
             property alias background: background
             property GCSfx audioEffects: activity.audioEffects
             property alias bar: bar
-            property var levels: activity.datasetLoader.item.data
-            property int maxValue: activity.datasetLoader.item.maxValue
+            property var levels: activity.datasetLoader.data
             property alias bonus: bonus
             property alias hat: theHat
             property alias introductionText: introText
@@ -208,10 +207,10 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevel
-                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
-                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
-                home()
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                background.start()
             }
             onClose: {
                 home()

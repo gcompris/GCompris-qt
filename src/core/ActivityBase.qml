@@ -140,7 +140,7 @@ Item {
     property bool isMusicalActivity: false
 
     property alias datasetLoader: datasetLoader
-    property string levelFolder
+    property var levelFolder
 
     /**
      * Emitted when the user wants to return to the Home/Menu screen.
@@ -245,10 +245,47 @@ Item {
         active: !activityInfo.demo && ApplicationSettings.isDemoMode
     }
 
+    onLevelFolderChanged: {
+        if(levelFolder === undefined || levelFolder.length === 0) {
+            return
+        }
+
+        datasetLoader.data = []
+        for(var level in levelFolder) {
+            datasetLoader.dataFiles.push({"file": resourceUrl+levelFolder[level]+"/Data.qml"})
+        }
+        datasetLoader.start()
+    }
     Loader {
         id: datasetLoader
         asynchronous: false
-        source: resourceUrl + levelFolder + "/Data.qml"
-        active: levelFolder != ""
+
+        property var dataFiles: []
+        property var currentFile
+        property var data: []
+        signal start
+        signal stop
+
+        onStart: {
+            var file = dataFiles.shift()
+            currentFile = file
+            source = file.file.toString()
+        }
+
+        onLoaded: {
+            data = data.concat(item.data)
+
+            if(dataFiles.length != 0) {
+                start()
+            }
+            else {
+                stop()
+            }
+        }
+        onStop: {
+            //print("stop", JSON.stringify(data))
+            source = ""
+            // Core.shuffle(data) do we want to shuffle??? Should depend on the activity (if we want increasing levels) or teachers (random multiplication tables for example)
+        }
     }
 }

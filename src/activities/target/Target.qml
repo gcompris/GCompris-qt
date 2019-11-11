@@ -63,7 +63,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias targetModel: targetItem.model
-            property var levels: activity.datasetLoader.item.data
+            property var levels: activity.datasetLoader.data
             property alias targetItem: targetItem
             property alias userEntry: userEntry
             property int currentArrow
@@ -215,11 +215,10 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevel
-                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
-                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 background.start()
-                home()
             }
             onClose: {
                 home()

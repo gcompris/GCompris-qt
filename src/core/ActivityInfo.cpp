@@ -49,7 +49,7 @@ void ActivityInfo::setName(const QString &name)
     // from the persistant configuration
     m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 
-    setCurrentLevel();
+    setCurrentLevels();
 
     emit nameChanged();
 }
@@ -205,28 +205,28 @@ void ActivityInfo::setLevels(const QStringList &levels)
     // levels only contains one element containing all the difficulties
     m_levels = levels.front().split(',');
 
-    setCurrentLevel();
+    setCurrentLevels();
 
     emit levelsChanged();
 }
 
-QString ActivityInfo::currentLevel() const
+QStringList ActivityInfo::currentLevels() const
 {
-    return m_currentLevel;
+    return m_currentLevels;
 }
 
-void ActivityInfo::setCurrentLevel(const QString &currentLevel)
+void ActivityInfo::setCurrentLevels(const QStringList &currentLevels)
 {
-    m_currentLevel = currentLevel;
-    emit currentLevelChanged();
+    m_currentLevels = currentLevels;
+    emit currentLevelsChanged();
 }
 
-void ActivityInfo::setCurrentLevel()
+void ActivityInfo::setCurrentLevels()
 {
     if(!m_name.isEmpty()) {
-        if(!m_levels.empty() && ApplicationSettings::getInstance()->currentLevel(m_name) == "") {
-            ApplicationSettings::getInstance()->setCurrentLevel(m_name, m_levels[0]);
+        if(!m_levels.empty() && ApplicationSettings::getInstance()->currentLevels(m_name).empty()) {
+            ApplicationSettings::getInstance()->setCurrentLevels(m_name, {m_levels[0]});
         }
-        m_currentLevel = ApplicationSettings::getInstance()->currentLevel(m_name);
+        m_currentLevels = ApplicationSettings::getInstance()->currentLevels(m_name);
     }
 }

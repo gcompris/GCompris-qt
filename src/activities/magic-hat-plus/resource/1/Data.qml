@@ -23,21 +23,23 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-   objective: qsTr("Learn to calculate total stars up to 5")
-   difficulty: 1
-   property int maxValue: 5
-   data: [
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [3, 0, 0] 
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [4, 0, 0]
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [5, 0, 0]
-      }
-   ]
+    objective: qsTr("Learn to calculate total stars up to 5")
+    difficulty: 1
+    data: [
+    {
+        "maxValue": 5,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [3, 0, 0] 
+    },
+    {
+        "maxValue": 5,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [4, 0, 0]
+    },
+    {
+        "maxValue": 5,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [5, 0, 0]
+    }
+    ]
 }

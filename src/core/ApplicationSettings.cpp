@@ -468,15 +468,15 @@ bool ApplicationSettings::isFavorite(const QString &activity)
     return favorite;
 }
 
-void ApplicationSettings::setCurrentLevel(const QString &activity, const QString &level)
+void ApplicationSettings::setCurrentLevels(const QString &activity, const QStringList &level)
 {
     updateValueInConfig(LEVELS_GROUP_KEY, activity, level);
 }
 
-QString ApplicationSettings::currentLevel(const QString &activity)
+QStringList ApplicationSettings::currentLevels(const QString &activity)
 {
     m_config.beginGroup(LEVELS_GROUP_KEY);
-    QString level = m_config.value(activity, "").toString();
+    QStringList level = m_config.value(activity, QStringList()).toStringList();
     m_config.endGroup();
     return level;
 }

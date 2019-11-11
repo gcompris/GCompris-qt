@@ -58,13 +58,14 @@ function initLevel() {
     nbStarsToAddOrRemove = new Array(0, 0, 0)
     nbStarsToCount = new Array(0, 0, 0)
     animationCount = 0
-    
+    var maxValue = items.levels[currentLevel].maxValue
+
     if(currentLevel > 0) {
         items.introductionText.visible = false
     } else {
         items.introductionText.visible = true
     }
-    coefficientsNeeded = (items.maxValue / maxStarSlots <= 1) ? false : true
+    coefficientsNeeded = (maxValue / maxStarSlots <= 1) ? false : true
     for(var j = 0; j < 3; j++) {
         items.repeatersList[0].itemAt(j).initStars()
         items.repeatersList[1].itemAt(j).initStars()
@@ -77,9 +78,9 @@ function initLevel() {
     } else {
         for(var i = 0; i < 3; i++)
             questionCoefficients[i] = Math.round(items.levels[currentLevel].maxStars[i] / 10);
-        answerCoefficients[0] = items.maxValue / 100;
-        answerCoefficients[1] = items.maxValue / 20;
-        answerCoefficients[2] = items.maxValue / 10;
+        answerCoefficients[0] = maxValue / 100;
+        answerCoefficients[1] = maxValue / 20;
+        answerCoefficients[2] = maxValue / 10;
         setCoefficientVisibility(true)
         setWantedColor("1")
     }
@@ -151,7 +152,7 @@ function userClickedAStar(barIndex,state) {
 }
 
 function verifyAnswer() {
-    if(items.maxValue / maxStarSlots <= 1) {
+    if(items.levels[currentLevel].maxValue / maxStarSlots <= 1) {
         if(numberOfUserStars[0] === nbStarsToCount[0] &&
         numberOfUserStars[1] === nbStarsToCount[1] &&
         numberOfUserStars[2] === nbStarsToCount[2]) {

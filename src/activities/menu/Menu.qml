@@ -590,8 +590,8 @@ ActivityBase {
                         home()
                     }
                     onSaveData: {
-                        currentLevel = dialogChooseLevel.chosenLevel
-                        ApplicationSettings.setCurrentLevel(name, currentLevel)
+                        currentLevels = dialogChooseLevel.chosenLevels
+                        ApplicationSettings.setCurrentLevels(name, currentLevels)
                     }
                     onStartActivity: {
                         clickMode = "play"
@@ -614,7 +614,7 @@ ActivityBase {
                         {
                             'menu': activity,
                             'activityInfo': ActivityInfoTree.currentActivity,
-                            'levelFolder': currentLevel
+                            'levelFolder': currentLevels
                         })
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }

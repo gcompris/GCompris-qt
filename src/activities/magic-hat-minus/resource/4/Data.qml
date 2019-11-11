@@ -25,27 +25,31 @@ import "../../../../core"
 Dataset {
     objective: qsTr("Learn to calculate remaining stars up to 100 with coefficients")
     difficulty: 4
-    property int maxValue: 100
     data: [
-      {
-         "minStars" : [2, 2, 0],
-         "maxStars" : [20, 10, 0] 
-      },
-      {
-         "minStars" : [2, 2, 2],
-         "maxStars" : [20, 20, 10] 
-      },
-      {
-         "minStars" : [2, 2, 2],
-         "maxStars" : [20, 20, 20]
-      },
-      {
-         "minStars" : [2, 2, 2],
-         "maxStars" : [30, 30, 20]
-      },
-      {
-         "minStars" : [2, 2, 2],
-         "maxStars" : [40, 40, 20]
-      }
-   ]
+    {
+        "maxValue": 100,
+        "minStars" : [2, 2, 0],
+        "maxStars" : [20, 10, 0] 
+    },
+    {
+        "maxValue": 100,
+        "minStars" : [2, 2, 2],
+        "maxStars" : [20, 20, 10] 
+    },
+    {
+        "maxValue": 100,
+        "minStars" : [2, 2, 2],
+        "maxStars" : [20, 20, 20]
+    },
+    {
+        "maxValue": 100,
+        "minStars" : [2, 2, 2],
+        "maxStars" : [30, 30, 20]
+    },
+    {
+        "maxValue": 100,
+        "minStars" : [2, 2, 2],
+        "maxStars" : [40, 40, 20]
+    }
+    ]
 }

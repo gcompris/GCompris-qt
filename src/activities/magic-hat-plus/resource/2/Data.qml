@@ -23,37 +23,43 @@ import GCompris 1.0
 import "../../../../core"
 
 Dataset {
-   objective: qsTr("Learn to calculate total stars up to 10")
-   difficulty: 2
-   property int maxValue: 10
-   data: [
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [3, 0, 0] 
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [4, 0, 0] 
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [5, 0, 0]
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [6, 0, 0]
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [7, 0, 0]
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [8, 0, 0]
-      },
-      {
-         "minStars" : [2, 0, 0],
-         "maxStars" : [9, 0, 0]
-      }
-   ]
+    objective: qsTr("Learn to calculate total stars up to 10")
+    difficulty: 2
+    data: [
+    {
+        "maxValue": 10,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [3, 0, 0] 
+    },
+    {
+        "maxValue": 10,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [4, 0, 0] 
+    },
+    {
+        "maxValue": 10,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [5, 0, 0]
+    },
+    {
+        "maxValue": 10,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [6, 0, 0]
+    },
+    {
+        "maxValue": 10,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [7, 0, 0]
+    },
+    {
+        "maxValue": 10,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [8, 0, 0]
+    },
+    {
+        "maxValue": 10,
+        "minStars" : [2, 0, 0],
+        "maxStars" : [9, 0, 0]
+    }
+    ]
 }

@@ -53,7 +53,7 @@ ActivityBase {
             property Item main: activity.main
             property GCSfx audioEffects: activity.audioEffects
             readonly property string resourceUrl: activity.resourceUrl
-            property var levels: activity.datasetLoader.item.data
+            property var levels: activity.datasetLoader.data
             property alias background: background
             property alias backgroundImg: backgroundImg
             property alias bar: bar
@@ -227,9 +227,11 @@ ActivityBase {
                 home()
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevel
-                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
-                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                // restart activity on saving
+                background.start()
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {

@@ -30,7 +30,7 @@ Item {
     property bool uppercaseOnly: false
     property string locale: "system"
     height: column.height
-    width: background.width
+    width: if(background) background.width
     property alias availableLangs: langs.languages
     LanguageList {
         id: langs
@@ -61,8 +61,11 @@ Item {
 
     property var dataToSave
     function setDefaultValues() {
-        var localeUtf8 = activityConfiguration.locale;
-        if(activityConfiguration.locale != "system") {
+        // Recreate the binding
+        uppercaseBox.checked = Qt.binding(function(){return activityConfiguration.uppercaseOnly;})
+
+        var localeUtf8 = dataToSave.locale;
+        if(localeUtf8 !== "system") {
             localeUtf8 += ".UTF-8";
         }
 
@@ -72,6 +75,8 @@ Item {
                 break;
             }
         }
+        activityConfiguration.locale = localeUtf8
+        activityConfiguration.uppercaseOnly = (dataToSave.uppercaseMode === "true")
     }
 
     function saveValues() {

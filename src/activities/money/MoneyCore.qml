@@ -58,7 +58,7 @@ ActivityBase {
             property alias store: store
             property alias instructions: instructions
             property alias tux: tux
-            property var levels: activity.datasetLoader.item.data
+            property var levels: activity.datasetLoader.data
             property alias tuxMoney: tuxMoney
             property alias bar: bar
             property alias bonus: bonus
@@ -255,10 +255,9 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevel
-                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
-                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
-                home()
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 background.stop()
                 background.start()
             }
