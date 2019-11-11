@@ -155,8 +155,8 @@ Item {
     Item {
         id: popup
         visible: false
-        width: parent.width
-        height: parent.height
+        width: if(parent) parent.width
+        height: if(parent) parent.height
         
         parent: background
         z: 100

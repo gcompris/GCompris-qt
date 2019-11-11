@@ -108,6 +108,14 @@ Rectangle {
     border.color: "black"
     border.width: 1
 
+    property bool inMenu: false
+
+    onVisibleChanged: {
+        if(visible) {
+            configLoader.initializePanel()
+        }
+    }
+
     function initialize() {
         // dataset information
         chosenLevel = currentActivity.currentLevel
@@ -261,13 +269,22 @@ Rectangle {
                         active: optionsVisibleButton.enabled
                         source: active ? "qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml" : ""
 
-                        onItemChanged: {
+                        // Load configuration at start of activity
+                        // in the menu, it's done when the visibility property
+                        // of the dialog changes
+                        onItemChanged: if(!inMenu) { initializePanel(); }
+
+                        function initializePanel() {
                             if(item) {
-                                item.background = dialogChooseLevel
-                                dialogChooseLevel.saveData.connect(save)
+                                // only connect once the signal to save data
+                                if(item.background !== dialogChooseLevel) {
+                                    item.background = dialogChooseLevel
+                                    dialogChooseLevel.saveData.connect(save)
+                                }
                                 getInitialConfiguration()
                             }
                         }
+
                         function getInitialConfiguration() {
                             activityData = Qt.binding(function() { return item.dataToSave })
                             if(item) {

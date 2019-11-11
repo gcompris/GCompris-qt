@@ -584,6 +584,8 @@ ActivityBase {
                     id: dialogChooseLevel
                     displayDatasetAtStart: hasDataset
                     currentActivity: ActivityInfoTree.menuTree[index]
+                    inMenu: true
+
                     onClose: {
                         home()
                     }
