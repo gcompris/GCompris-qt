@@ -2,6 +2,7 @@
 Name=GCompris
 Name[ca]=GCompris
 Name[cs]=GCompris
+Name[en_GB]=GCompris
 Name[es]=GCompris
 Name[fr]=GCompris
 Name[it]=GCompris
@@ -17,6 +18,7 @@ Name[zh_TW]=GCompris
 GenericName=Educational Game
 GenericName[ca]=Joc educatiu
 GenericName[cs]=Výuková hra
+GenericName[en_GB]=Educational Game
 GenericName[es]=Juego educativo
 GenericName[fr]=Jeu éducatif
 GenericName[it]=Gioco didattico
