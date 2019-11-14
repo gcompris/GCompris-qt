@@ -296,7 +296,7 @@ ActivityBase {
             id: instructionTxt
             anchors {
                 top: background.vert ? grid.top : leftWidget.bottom
-                topMargin: -10
+                topMargin:  20
                 horizontalCenter: background.vert ? grid.horizontalCenter : leftWidget.horizontalCenter
             }
             opacity: instruction.opacity
