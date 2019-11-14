@@ -125,6 +125,8 @@ ActivityBase {
             }
 
             onDropped: {
+                console.log("Here is should also drop when dragging with animation, it does only with mouse area dragging")
+
                 var className = drag.source.name
                 drag.source.dragEnabled = false
                 Activity.appendClassNameColumn(className, drag.source, false)

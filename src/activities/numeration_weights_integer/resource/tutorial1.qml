@@ -18,56 +18,46 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
-import QtQuick 2.6
+import QtQuick 2.13
 import GCompris 1.0 
 
 import "../../../core"
 import "../../../activities"
 
-
 Rectangle {
     id: tutorial1
 
     Component.onCompleted: {
-        tutorial1.state = ''
-            tutorial1.state === '' ? tutorial1.state = 'other' : tutorial1.state = ''
-        console.log("tutorial1_completed")
+        console.log("tutorial1_screen_loaded")
     }
-
 
     anchors.fill: parent
     color: "#80FFFFFF"
-    
-    states: [
-        // This adds a second state to the container where the rectangle is farther to the right
 
-        State { name: "other"
+    PropertyAnimation on x {
+        id: animationId
 
-            PropertyChanges {
-                target: numberClassDragElements.itemAt(0)
-                x: 400
-                y: 200
-            }
+        property bool animationIsRunning: false
+
+        target: numberClassDragElements.itemAt(0);
+
+        to: 300;
+        duration: 500;
+        easing.type: Easing.OutBounce
+
+        onStarted: {
+
+            animationIsRunning = true
+            numberClassDragElements.itemAt(0).animationIsRunning = animationIsRunning
+            numberClassDragElements.itemAt(0).Drag.startDrag()
+
         }
-    ]
-    transitions: [
-        // This adds a transition that defaults to applying to all state changes
 
-        Transition {
-            id: transition_id
-            // This applies a default NumberAnimation to any changes a state change makes to x or y properties
-            NumberAnimation {
-                properties: "x,y"
-            }
-            onRunningChanged: {
-                if(!transition_id.running) {
-                    //var tt = numberClassDragElements.itemAt(0).Drag.drop()
-
-                    //console.log("--" + tt + "")
-                    //console.log(tt)
-                }
-            }
+        onFinished: {
+            numberClassDragElements.itemAt(0).Drag.drop()
+            console.log("Sent Drag drop")
+            animationIsRunning = false
         }
-    ]
-
+    }
+    PropertyAnimation on y { to: 400; duration: 500; easing.type: Easing.OutBounce }
 }
