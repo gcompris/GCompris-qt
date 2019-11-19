@@ -64,6 +64,7 @@ ActivityBase {
             score.currentSubLevel = 1
             initLevel()
             items.running = true
+            introDelay.start()
         }
 
         onStop: {
@@ -134,6 +135,20 @@ ActivityBase {
             activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url +
                                        'xylofon_son' + (index + 1) + ".wav"))
         }
+        Timer {
+            id: introDelay
+            interval: 1000
+            repeat: false
+            onTriggered: {
+                if(activity.audioVoices.playbackState == 1) {
+                    introDelay.start()
+                }
+                else {
+                    parent.repeat()
+                }
+            }
+        }
+
 
         Timer {
             id: knock
