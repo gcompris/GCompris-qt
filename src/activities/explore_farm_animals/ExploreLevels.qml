@@ -166,11 +166,10 @@ ActivityBase {
             visible: items.score.currentSubLevel != 1
             anchors.bottom: bar.top
             anchors.right: parent.right
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: progressbarText.height
             ProgressBar {
                 id: progressbar
-                height: progressbarText.height
-                width: bar.width
                 property string message
                 onValueChanged: message = value + "/" + maximumValue
                 onMaximumValueChanged:  message = value + "/" + maximumValue
@@ -182,6 +181,15 @@ ActivityBase {
                     font.bold: true
                     color: "black"
                     text: progressbar.message
+                }
+
+                Rectangle {
+                    z: -1
+                    radius: 5 * ApplicationInfo.ratio
+                    anchors.centerIn: parent
+                    height: progressbarText.height
+                    width: parent.width
+                    color: "#80EEEEEE"
                 }
             }
         }
