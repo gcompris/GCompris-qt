@@ -8,6 +8,7 @@
   <name xml:lang="ca-valencia">GCompris</name>
   <name xml:lang="cs">GCompris</name>
   <name xml:lang="de">GCompris</name>
+  <name xml:lang="el">GCompris</name>
   <name xml:lang="en-GB">GCompris</name>
   <name xml:lang="es">GCompris</name>
   <name xml:lang="eu">GCompris</name>
@@ -203,7 +204,7 @@
       <li xml:lang="ca">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="ca-valencia">aritmètica: memoritzar la taula, enumeració, imatge al mirall, equilibrar la balança, donar el canvi...</li>
       <li xml:lang="de">Arithmetik: Kombitabellen, Aufzählungen, Bilder spiegeln, Gewichte ausgleichen, Wechselgeld geben...</li>
-      <li xml:lang="el">αριθμητική: μνημονικός πίνακας, απαρίθμηση, κάτοπτρο, ισορροπώ τη ζυγαριά, δίνω ρέστα, ...</li>
+      <li xml:lang="el">αριθμητική: παιχνίδια memory, απαρίθμηση, κάτοπτρο, ισορροπώ τη ζυγαριά, δίνω ρέστα, ...</li>
       <li xml:lang="en-GB">arithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...</li>
       <li xml:lang="es">aritmética: memorización de tablas, enumeración, imagen especular, equilibrar la balanza, devolver cambios...</li>
       <li xml:lang="et">aritmeetika: nähtu mäletamine, loendamine, peegelpildid, kaalu tasakaalustamine, raha tagasiandmine...</li>
@@ -336,7 +337,7 @@
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
-      <li xml:lang="el">άλλα: μαθαίνω να λέω την ώρα, το σύστημα braille, λαβύρινθος, μουσικά όργανα, ...</li>
+      <li xml:lang="el">άλλα: μαθαίνω να λέω την ώρα, το σύστημα μπράιγ, λαβύρινθος, μουσικά όργανα, ...</li>
       <li xml:lang="en-GB">other: learn to tell time, the braille system, maze, music instruments, ...</li>
       <li xml:lang="es">otras: aprender a decir la hora, el sistema braille, laberintos, instrumentos musicales...</li>
       <li xml:lang="et">muu: kellaaja väljendamine, Braille'i kiri, labürint, muusikariistad...</li>
