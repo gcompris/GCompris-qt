@@ -18,7 +18,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
-import QtQuick 2.6
+import QtQuick 2.13
 import GCompris 1.0
 
 import "../../../core"
@@ -32,6 +32,9 @@ Rectangle {
         tutorial2.state = ''
             tutorial2.state === '' ? tutorial2.state = 'other' : tutorial2.state = ''
         console.log("test")
+        animid.running = true
+
+
     }
 
     anchors.fill: parent
@@ -44,8 +47,9 @@ Rectangle {
 
             PropertyChanges {
                 target: numberClassDragElements.itemAt(0)
-                x: 300
-                y: 300
+                x: 500
+                y: 500
+
 
             }
         }
@@ -56,10 +60,32 @@ Rectangle {
         Transition {
 
             // This applies a default NumberAnimation to any changes a state change makes to x or y properties
-            NumberAnimation { properties: "x,y"
+            NumberAnimation {
+                id: animid
+
+
+
+                properties: "x,y"
                 onRunningChanged: {
-                    console.log("mince")
+                    console.log("onRunningChanged")
                 }
+
+
+                onStarted: {
+
+              /*        animationIsRunning = true
+                      numberClassDragElements.itemAt(0).Drag.active = true    //? had to add this line why?
+                      numberClassDragElements.itemAt(0).animationIsRunning = animationIsRunning   //? why is that not enough to set Drag.active?
+                      numberClassDragElements.itemAt(0).Drag.startDrag()*/
+                      console.log("onStarted")
+
+                  }
+
+                  onFinished: {
+                   //   numberClassDragElements.itemAt(0).Drag.drop()
+                      console.log("Sent Drag drop")
+                     // animationIsRunning = false
+                  }
             }
         }
     ]

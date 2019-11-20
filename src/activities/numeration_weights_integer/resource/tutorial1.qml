@@ -27,37 +27,53 @@ import "../../../activities"
 Rectangle {
     id: tutorial1
 
+    property bool animationIsRunning: animationIsRunning
+
     Component.onCompleted: {
         console.log("tutorial1_screen_loaded")
+        myAnim.running = true
+        myAnimY.running = true
     }
 
     anchors.fill: parent
     color: "#80FFFFFF"
 
-    PropertyAnimation on x {
-        id: animationId
 
-        property bool animationIsRunning: false
+    Rectangle {
+        id: myRect
+        width: 100; height: 100
+        color: "red"
+        z: 1000
+        y: -200
 
-        target: numberClassDragElements.itemAt(0);
 
-        to: 300;
-        duration: 500;
-        easing.type: Easing.OutBounce
+        NumberAnimation{
+            id: myAnim
 
-        onStarted: {
-
-            animationIsRunning = true
-            numberClassDragElements.itemAt(0).animationIsRunning = animationIsRunning
-            numberClassDragElements.itemAt(0).Drag.startDrag()
-
+            target: numberClassDragElements.itemAt(0)
+            property: "x";
+            to: background.width - background.width/5
+            duration: 3000
+            onStarted: {
+                  animationIsRunning = true
+                  numberClassDragElements.itemAt(0).animationIsRunning = animationIsRunning
+                  console.log("onStarted")
+            }
+            onFinished: {
+                  numberClassDragElements.itemAt(0).Drag.drop()
+                  console.log("Sent Drag drop")
+                  animationIsRunning = false
+            }
         }
 
-        onFinished: {
-            numberClassDragElements.itemAt(0).Drag.drop()
-            console.log("Sent Drag drop")
-            animationIsRunning = false
+        NumberAnimation{
+            id: myAnimY
+
+            target: numberClassDragElements.itemAt(0)
+            property: "y";
+            to: background.height / 5
+            duration: 3000
         }
+
     }
-    PropertyAnimation on y { to: 400; duration: 500; easing.type: Easing.OutBounce }
 }

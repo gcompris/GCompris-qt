@@ -78,16 +78,16 @@ var numberClassTypeColumnsArray = ["Integer Part","Decimal Part"]
 
 var tutorialInstructions = [
             {
-                "instruction": qsTr("This activity teaches how to convert decimal numbers to binary numbers."),
-                "instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial1.qml"
+                "instruction": qsTr("This activity teaches how to place numbers weights to represent a number quantity.")
+                //"instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial1.qml"
             },
             {
-                "instruction": qsTr("Computers use transistors to count and transistors have only two states, 0 and 1. Mathematically, these states are represented by 0 and 1, which makes up the binary system of numeration."),
-                "instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial2.qml"
+                "instruction": qsTr("Before to enter any number weights you have to enter the number classes (unit class only if numbers are less than 1000 and unit classes and thousand class if they are more than 999.")
+                //"instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial2.qml"
             },
             {
-                "instruction": qsTr("In the activity 0 and 1 are simulated by bulbs, switched on or off."),
-                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial3.qml"
+                "instruction": qsTr("Here using drag and drop we add the unit class and the thousand class."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial1.qml"
             },
             {
                 "instruction": qsTr("Binary system uses these numbers very efficiently, allowing to count from 0 to 255 with 8 bits only."),

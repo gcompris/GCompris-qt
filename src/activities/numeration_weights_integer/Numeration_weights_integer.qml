@@ -26,7 +26,7 @@
 // TODO: remove settings in bar menu
 
 
-import QtQuick 2.6
+import QtQuick 2.13
 import GCompris 1.0
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 1.5

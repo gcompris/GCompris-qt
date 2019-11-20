@@ -55,7 +55,7 @@ Item {
     /* Container for all the tutorial instructions */
     property var tutorialDetails
 
-    /* Do we use image or qml files for illustrations */
+    /* Do we use image, qml files for illustrations, or do we not use any of them */
     property bool useImage: true
     
     // Emitted when skipButton is clicked
@@ -206,7 +206,7 @@ Item {
         enabled: !tutorialImage.visible
         width: parent.width * 0.8
         height: (parent.height - nextButton.height) * 0.48
-        source: tutorialDetails && !useImage ? tutorialDetails[tutorialNumber].instructionQml : ""
+        source: tutorialDetails[tutorialNumber].instructionQml !== undefined && !useImage ? tutorialDetails[tutorialNumber].instructionQml : ""
         anchors {
             top: previousButton.bottom
             topMargin: 10
