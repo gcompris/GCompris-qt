@@ -224,7 +224,7 @@ ActivityBase {
         Image {
             id: fish
             sourceSize.width: background.width / 12
-            source: Activity.reverseCountUrl + "blue-fish.svg"
+            source: Activity.reverseCountUrl + "fish-blue.svg"
         }
 
         Image {
