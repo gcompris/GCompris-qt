@@ -79,23 +79,20 @@ var numberClassTypeColumnsArray = ["Integer Part","Decimal Part"]
 var tutorialInstructions = [
             {
                 "instruction": qsTr("This activity teaches how to place numbers weights to represent a number quantity.")
-                //"instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial1.qml"
             },
             {
                 "instruction": qsTr("Before to enter any number weights you have to enter the number classes (unit class only if numbers are less than 1000 and unit classes and thousand class if they are more than 999.")
-                //"instructionQml" : "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial2.qml"
             },
             {
                 "instruction": qsTr("Here using drag and drop we add the unit class and the thousand class."),
                 "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial1.qml"
             },
             {
-                "instruction": qsTr("Binary system uses these numbers very efficiently, allowing to count from 0 to 255 with 8 bits only."),
-                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial4.qml"
+                "instruction": qsTr("The we have to enter the weight name in the rights columns.")
             },
             {
-                "instruction": qsTr("Each bit adds a progressive value, corresponding to the powers of 2, ascending from right to left: bit 1 → 2⁰=1 , bit 2 → 2¹=2 , bit 3 → 2²=4 , bit 4 → 2³=8 , bit 5 → 2⁴=16 , bit 6 → 2⁵=32 , bit 7 → 2⁶=64 , bit 8 → 2⁷=128."),
-                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial5.qml"
+                "instruction": qsTr("Here using drag and drop we add the weight unit in the unit column."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial2.qml"
             },
             {
                 "instruction":  qsTr("To convert a decimal 5 to a binary value, 1 and 4 are added."),
@@ -153,7 +150,7 @@ function resetNumerationTable() {
     for (var i = 0; i<items.numberClassListModel.count; i++) {
         for (var j=0; j<3; j++) {
             for (var k=0; k<9; k++) {
-                var numberWeightImageTile = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightImageTile
+                var numberWeightImageTile = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightImageTile
                 removeNumberWeightComponent(numberWeightImageTile)
             }
         }
@@ -162,11 +159,11 @@ function resetNumerationTable() {
 
 
 function getNumberWeightImageName(numberClassIndex, numberWeightIndex, numberWeightComponentIndex) {
-    return items.numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeaterAlias.itemAt(numberWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(numberWeightComponentIndex).numberWeightImageTile.source
+    return items.numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(numberWeightComponentIndex).numberWeightImageTile.source
 }
 
 function getNumberWeightWeight(numberClassIndex, numberWeightIndex, numberWeightComponentIndex) {
-    return items.numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeaterAlias.itemAt(numberWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(numberWeightComponentIndex).numberWeightImageTile.weightValue
+    return items.numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(numberWeightComponentIndex).numberWeightImageTile.weightValue
 }
 
 function getNumberColumnWeight(numberClassName, numberWeightIndex) {
@@ -240,7 +237,7 @@ function readNumerationTableEnteredValue() {
 function checkAnswer() {
     items.instruction.hide()
 
-    setWeightHeadersWeightCaptions()
+ //   setWeightHeadersWeightCaptions()
 
     var allWeightsAreInTheRightColumns = areAllWeightsInTheRightColumns()
     if (!allWeightsAreInTheRightColumns) {
@@ -320,7 +317,6 @@ function checkNumberWeightHeadersPositions() {
             //console.log("numberWeightType/numberWeightTypeDropped",numberWeightType+"/"+numberWeightTypeDropped)
             if (numberWeightTypeDropped !== numberWeightType) {
                 items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.border.width = 5
-                items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.textAlias = "tt"
                 allNumbersInRightPositions = false
             }
             else items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.border.width = 0

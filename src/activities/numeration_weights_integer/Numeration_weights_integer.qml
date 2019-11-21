@@ -327,7 +327,7 @@ ActivityBase {
 
                         width: mainZoneArea.width / numberClassListModel.count
                         height: numberClassHeaders.height / 1.5
-                        border.width: 1
+                        border.width: numberClassListModel.get(index).misplaced === true ? 5 : 1
                         //FIXME: when removing an element of NumberClassList model border color is stilll asked
                         border.color: numberClassListModel.get(index).misplaced === true ? "red" : "lightsteelblue"
                         color: dragArea.held ? "lightsteelblue" : "white"
@@ -378,6 +378,8 @@ ActivityBase {
 
             RowLayout {
                 id: numberClassDropAreasGridLayout
+
+                property alias numberClassDropAreaRepeater: numberClassDropAreaRepeater
 
                 anchors.top: numberClassHeaders.bottom
                 width: parent.width

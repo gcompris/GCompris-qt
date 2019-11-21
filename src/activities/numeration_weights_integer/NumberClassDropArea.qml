@@ -38,7 +38,7 @@ Rectangle {
     property string defaultColor: "darkseagreen"
     property string overlapColor: "grey"
 
-    property alias numberWeightsDropAreasRepeaterAlias: numberWeightsDropAreasRepeater
+    property alias numberWeightsDropAreasRepeater: numberWeightsDropAreasRepeater
 
     width: parent.width
     height: parent.height - numberClassHeaders.height
@@ -70,7 +70,6 @@ Rectangle {
             id: numberWeightsDropAreasRepeater
             model: numberWeightHeadersModel
 
-
             Rectangle {
                 id: numberWeightDropAreaRectangle
 
@@ -101,11 +100,9 @@ Rectangle {
                     id: numberWeightsDropTiles
 
                     property alias numberWeightDropAreaGridRepeater: numberWeightDropAreaGridRepeater
-
                     anchors.top: numberWeightHeaderElement.bottom
                     width: parent.width
                     height: parent.height - numberWeightHeaderElement.height
-
                     Grid {
                         id: numberWeightDropAreaGrid
 
@@ -115,28 +112,22 @@ Rectangle {
                         width: parent.width
                         height: parent.height
                         columns: 1
-
                         Repeater {
                             id: numberWeightDropAreaGridRepeater
                             model: 9
-
                             DropArea {
                                 property alias numberWeightImageTile: numberWeightImageTile
                                 property alias numberWeightComponentRectangle: numberWeightComponentRectangle
 
                                 keys: "numberWeightKey"
-
                                 width: parent.width
                                 height: parent.height/9
-
                                 onEntered: {
                                     numberWeightComponentRectangle.color = overlapColor
                                 }
-
                                 onExited: {
                                     numberWeightComponentRectangle.color = defaultColor
                                 }
-
                                 onDropped: {
                                     var imageName = drag.source.imageName
                                     var caption = drag.source.caption
@@ -144,7 +135,6 @@ Rectangle {
                                     Activity.setNumberWeightComponent(numberWeightImageTile,imageName,caption, weightValue)
                                     numberWeightComponentRectangle.color = defaultColor
                                 }
-
                                 Rectangle {
                                     id: numberWeightComponentRectangle
 
@@ -154,14 +144,12 @@ Rectangle {
                                     width: parent.width
                                     height: parent.height
                                     color: defaultColor
-
                                     Image {
                                         id: numberWeightImageTile
 
                                         property string caption: ""
                                         property string weightValue: ""
                                         property alias border: numberWeightComponentRectangle.border
-
                                         anchors.fill: parent
 //                                        sourceSize.width: parent.width
                                         sourceSize.height: parent.height
@@ -181,9 +169,8 @@ Rectangle {
                                                          Activity.setNumberWeightComponent(numberWeightImageTile,imageName,caption,weightValue)
                                                     }
                                                 }
-                                             }
+                                            }
                                         }
-
                                         GCText {
                                             id: numberClassElementCaption
 

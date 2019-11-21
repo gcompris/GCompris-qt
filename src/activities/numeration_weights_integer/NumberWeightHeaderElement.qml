@@ -87,7 +87,7 @@ Rectangle {
         id: numberWeightHeaderCaption
 
         anchors.fill: parent
-        anchors.margins: 10  //find a way to fit the text without truncating it
+        anchors.margins: 10  //? find a way to fit the text without truncating it
         fontSizeMode: Text.Fit
         color: "white"
         verticalAlignment: Text.AlignVCenter
@@ -99,17 +99,17 @@ Rectangle {
     MouseArea {
          anchors.fill: parent
          onClicked: {
-             if (numberWeightHeaderImage.status === Image.Ready) {
+           /*  if (numberWeightHeaderImage.status === Image.Ready) {   //?  needs certainly to be removed
                 Activity.removeNumberWeightComponent(numberWeightImageTile)
              }
-             else {
+             else {*/
                 if (Activity.selectedNumberWeightDragElementIndex !== -1) {
                     if (numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).dragkeys === "numberWeightHeaderKey") {
-                        numberWeightHeaderImage.source = numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).imageName
+                        //numberWeightHeaderImage.source = numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).imageName
                         numberWeightHeaderCaption.text = numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).caption
                     }
                 }
-            }
+         //   }
          }
     }
 }

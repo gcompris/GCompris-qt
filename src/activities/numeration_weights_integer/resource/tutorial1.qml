@@ -45,7 +45,7 @@ Item {
         target: numberClassDragElements.itemAt(0)
         property: "x";
         to: background.width * 2/3
-        duration: 3000
+        duration: 300 //0
         onStarted: {
             unitClassDragButtonOrigX = numberClassDragElements.itemAt(0).x
             unitClassDragButtonOrigY = numberClassDragElements.itemAt(0).y
@@ -58,7 +58,6 @@ Item {
             console.log("Sent Drag drop")
             animationIsRunning = false
             numberClassDragElements.itemAt(0).x = unitClassDragButtonOrigX
-
             numberClassDragElements.itemAt(0).z = 1000
             animThousandClassX.running = true
             animThousandClassY.running = true
@@ -71,12 +70,10 @@ Item {
         target: numberClassDragElements.itemAt(0)
         property: "y";
         to: background.height * 1/3
-        duration: 3000
-
+        duration: 300 //0
         onFinished: {
             numberClassDragElements.itemAt(0).y = unitClassDragButtonOrigY
         }
-
     }
 
     NumberAnimation{
@@ -85,7 +82,7 @@ Item {
         target: numberClassDragElements.itemAt(1)
         property: "x";
         to: background.width * 1/3
-        duration: 3000
+        duration: 300 //0
         onStarted: {
             thousandClassDragButtonOrigX = numberClassDragElements.itemAt(1).x
             thousandClassDragButtonOrigY = numberClassDragElements.itemAt(1).y
@@ -108,13 +105,9 @@ Item {
         target: numberClassDragElements.itemAt(1)
         property: "y";
         to: background.height * 1/3
-        duration: 3000
-
+        duration: 300 //0
         onFinished: {
             numberClassDragElements.itemAt(1).y = thousandClassDragButtonOrigY
         }
-
     }
-
-
 }

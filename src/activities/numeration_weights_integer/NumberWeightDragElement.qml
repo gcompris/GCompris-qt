@@ -26,6 +26,7 @@ import "numeration_weights_integer.js" as Activity
 Rectangle {
     id: numberWeightDragElement
 
+    property bool animationIsRunning
     property int lastX
     property int lastY
     property string imageName
@@ -46,9 +47,7 @@ Rectangle {
     border.color: "red"
     border.width: selected === true ? 1 : 0
 
-
-
-    Drag.active: numberWeightDragElementMouseArea.drag.active
+    Drag.active: numberWeightDragElementMouseArea.drag.active || animationIsRunning
 
     src: "resource/images/" + imageName
 
@@ -86,7 +85,6 @@ Rectangle {
         onPositionChanged: {
            Activity.unselectAllNumberWeightDragElement()
         }
-
 
         onClicked: {
             Activity.selectNumberWeightDragElement(index)

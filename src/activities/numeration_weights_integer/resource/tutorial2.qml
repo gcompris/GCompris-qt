@@ -24,70 +24,109 @@ import GCompris 1.0
 import "../../../core"
 import "../../../activities"
 
-
-Rectangle {
+Item {
     id: tutorial2
 
+    property bool animationIsRunning: animationIsRunning
+    property int unitWeightColumnDragButtonOrigX
+    property int unitWeightColumnDragButtonOrigY
+    property int thousandClassDragButtonOrigX
+    property int thousandClassDragButtonOrigY
+    property int animationSequenceIndex: 0
+    property int numberClassIndex: 1
+    property int numberColumnWeightIndex: 2
+    property int numberColumnWeightDragButtonIndex: 0
+    property int headerOriginY
+
+
     Component.onCompleted: {
-        tutorial2.state = ''
-            tutorial2.state === '' ? tutorial2.state = 'other' : tutorial2.state = ''
-        console.log("test")
-        animid.running = true
-
-
+        console.log("tutorial2_screen_loaded")
+        animUnitColumnWeightX.running = true
+        animUnitColumnWeightY.running = true
+        headerOriginY = numberClassDropAreaRepeater.itemAt(0).numberWeightsDropAreasRepeater.itemAt(0).mapToItem(activity, 0, 0).y
     }
 
-    anchors.fill: parent
-    color: "#80FFFFFF"
-
-    states: [
-        // This adds a second state to the container where the rectangle is farther to the right
-
-        State { name: "other"
-
-            PropertyChanges {
-                target: numberClassDragElements.itemAt(0)
-                x: 500
-                y: 500
+    NumberAnimation {
+        id: animUnitColumnWeightX
 
 
+        target: numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex)
+        property: "x";
+        to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).mapToItem(activity, 0, 0).x
+        duration: 3000
+        onStarted: {
+            unitWeightColumnDragButtonOrigX = numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x
+            unitWeightColumnDragButtonOrigY = numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y
+            animationIsRunning = true
+            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).animationIsRunning = animationIsRunning
+        }
+        onFinished: {
+            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).Drag.drop()
+            animationIsRunning = false
+            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = unitWeightColumnDragButtonOrigX
+            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).z = 1000
+            if (animationSequenceIndex === 0) {
+                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = unitWeightColumnDragButtonOrigX
+                animationSequenceIndex = 1
+                numberClassIndex = 1
+                numberColumnWeightIndex = 1
+                numberColumnWeightDragButtonIndex = 1
+                animUnitColumnWeightX.running = true
+                animUnitColumnWeightY.running = true
+                animUnitColumnWeightX.start()
+            } else if (animationSequenceIndex === 1) {
+                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = unitWeightColumnDragButtonOrigX
+                animationSequenceIndex = 2
+                numberClassIndex = 1
+                numberColumnWeightIndex = 0
+                numberColumnWeightDragButtonIndex = 2
+                animUnitColumnWeightX.running = true
+                animUnitColumnWeightY.running = true
+                animUnitColumnWeightX.start()
+                console.log("fail")
+            } else if (animationSequenceIndex === 2) {
+                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = unitWeightColumnDragButtonOrigX
+                animationSequenceIndex = 3
+                numberClassIndex = 0
+                numberColumnWeightIndex = 2
+                numberColumnWeightDragButtonIndex = 0
+                animUnitColumnWeightX.running = true
+                animUnitColumnWeightY.running = true
+                animUnitColumnWeightX.start()
+            } else if (animationSequenceIndex === 3) {
+                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = unitWeightColumnDragButtonOrigX
+                animationSequenceIndex = 4
+                numberClassIndex = 0
+                numberColumnWeightIndex = 1
+                numberColumnWeightDragButtonIndex = 1
+                animUnitColumnWeightX.running = true
+                animUnitColumnWeightY.running = true
+            } else if (animationSequenceIndex === 4) {
+                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = unitWeightColumnDragButtonOrigX
+                animationSequenceIndex = 5
+                numberClassIndex = 0
+                numberColumnWeightIndex = 0
+                numberColumnWeightDragButtonIndex = 2
+                animUnitColumnWeightX.running = true
+                animUnitColumnWeightY.running = true
             }
         }
-    ]
-    transitions: [
-        // This adds a transition that defaults to applying to all state changes
+    }
 
-        Transition {
+    NumberAnimation {
+        id: animUnitColumnWeightY
 
-            // This applies a default NumberAnimation to any changes a state change makes to x or y properties
-            NumberAnimation {
-                id: animid
-
-
-
-                properties: "x,y"
-                onRunningChanged: {
-                    console.log("onRunningChanged")
-                }
-
-
-                onStarted: {
-
-              /*        animationIsRunning = true
-                      numberClassDragElements.itemAt(0).Drag.active = true    //? had to add this line why?
-                      numberClassDragElements.itemAt(0).animationIsRunning = animationIsRunning   //? why is that not enough to set Drag.active?
-                      numberClassDragElements.itemAt(0).Drag.startDrag()*/
-                      console.log("onStarted")
-
-                  }
-
-                  onFinished: {
-                   //   numberClassDragElements.itemAt(0).Drag.drop()
-                      console.log("Sent Drag drop")
-                     // animationIsRunning = false
-                  }
-            }
+        target: numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex)
+        property: "y";
+        //to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).mapToItem(activity, 0, 0).y
+        to : 33 //headerOriginY
+        duration: 3000
+        onFinished: {
+            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = unitWeightColumnDragButtonOrigY
         }
-    ]
+    }
+
+
+
 
 }
