@@ -29,6 +29,8 @@ import "reversecount.js" as Activity
 Item {
     id: chooseDiceBar
     z: 1000
+    width: barRow.width
+    height: barRow.height
 
     property alias value1: domino.value1
     property alias value2: domino.value2
@@ -39,6 +41,7 @@ Item {
     Row {
         id: barRow
         spacing: 8
+        anchors.centerIn: parent
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg";

@@ -217,7 +217,7 @@ ActivityBase {
                 y: modelData.y * height
                 width: background.width / 10
                 height: (background.height - background.height / 10) / 10
-                source: Activity.reverseCountUrl + "iceblock.svg"
+                source: Activity.reverseCountUrl + "ice-block.svg"
             }
         }
 
