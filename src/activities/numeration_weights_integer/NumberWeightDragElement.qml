@@ -49,6 +49,10 @@ Rectangle {
 
     Drag.active: numberWeightDragElementMouseArea.drag.active || animationIsRunning
 
+    onStateChanged: {
+        console.log("state changed")
+    }
+
     src: "resource/images/" + imageName
 
     Image {

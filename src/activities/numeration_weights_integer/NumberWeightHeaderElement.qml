@@ -97,19 +97,13 @@ Rectangle {
     }
 
     MouseArea {
-         anchors.fill: parent
-         onClicked: {
-           /*  if (numberWeightHeaderImage.status === Image.Ready) {   //?  needs certainly to be removed
-                Activity.removeNumberWeightComponent(numberWeightImageTile)
-             }
-             else {*/
-                if (Activity.selectedNumberWeightDragElementIndex !== -1) {
-                    if (numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).dragkeys === "numberWeightHeaderKey") {
-                        //numberWeightHeaderImage.source = numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).imageName
-                        numberWeightHeaderCaption.text = numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).caption
-                    }
+        anchors.fill: parent
+        onClicked: {
+            if (Activity.selectedNumberWeightDragElementIndex !== -1) {
+                if (numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).dragkeys === "numberWeightHeaderKey") {
+                    numberWeightHeaderCaption.text = numberWeightDragListModel.get(Activity.selectedNumberWeightDragElementIndex).caption
                 }
-         //   }
-         }
+            }
+        }
     }
 }
