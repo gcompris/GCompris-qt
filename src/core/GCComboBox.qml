@@ -109,6 +109,7 @@ Item {
             height: button.height
             GCText {
                 id: labelText
+                width:  parent.parent.width - button.width - parent.parent.spacing
                 text: label
                 anchors.verticalCenter: parent.verticalCenter
                 fontSize: mediumSize
