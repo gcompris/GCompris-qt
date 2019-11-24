@@ -44,8 +44,8 @@ Item {
      */
     signal foundDeadEnd
 
-    function setCodeAreaHighlightMoveDuration() {
-        Activity.items.mainFunctionCodeArea.highlightMoveDuration = movementAnimationDuration
-        Activity.items.procedureCodeArea.highlightMoveDuration = movementAnimationDuration
-    }
+//     function setCodeAreaHighlightMoveDuration() {
+//         Activity.items.mainFunctionCodeArea.highlightMoveDuration = movementAnimationDuration
+//         Activity.items.procedureCodeArea.highlightMoveDuration = movementAnimationDuration
+//     }
 }

@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Aman Kumar Gupta <gupta2140@gmail.com>
+ *   Timothée Giet <animtim@gcompris.net> (Layout and graphics rework)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -63,13 +64,11 @@ GridView {
     highlight: Rectangle {
         width: buttonWidth - 3 * ApplicationInfo.ratio
         height: buttonHeight * 1.18 - 3 * ApplicationInfo.ratio
-        color: "lightsteelblue"
-        border.width: 3.5 * ApplicationInfo.ratio
-        border.color: "purple"
+        color: "#00ffffff"
+        border.width: 3.5 * ApplicationInfo.ratio //activity.keyboardNavigationVisible ? 3.5 * ApplicationInfo.ratio : 0
+        border.color: "#e77935"
         z: 2
         radius: width / 18
-        opacity: 0.6
-        visible: activity.keyboardNavigationVisible
     }
     highlightFollowsCurrentItem: true
     keyNavigationWraps: true
@@ -84,18 +83,21 @@ GridView {
             width: parent.width - 3 * ApplicationInfo.ratio
             height: parent.height - 3 * ApplicationInfo.ratio
             border.width: 1.2 * ApplicationInfo.ratio
-            border.color: "black"
+            border.color: "#2a2a2a"
             anchors.centerIn: parent
             radius: width / 18
+            color: instructionArea.instructionToInsert == name ? "#f3bc9a" : "#ffffff"
 
             Image {
                 id: icon
                 source: Activity.url + name + ".svg"
-                sourceSize {
-                    width: parent.width / 1.2
-                    height: parent.height / 1.2
-                }
+                width: Math.round(parent.width / 1.2)
+                height: Math.round(parent.height / 1.2)
+                sourceSize.width: height
+                sourceSize.height: height
                 anchors.centerIn: parent
+                fillMode: Image.PreserveAspectFit
+                mipmap: true
             }
         }
 
