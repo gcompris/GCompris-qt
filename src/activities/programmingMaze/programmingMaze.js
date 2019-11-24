@@ -6,6 +6,7 @@
  * Authors:
  *   Siddhesh Suthar <siddhesh.it@gmail.com>
  *   Aman Kumar Gupta <gupta2140@gmail.com>
+ *   Timothée Giet <animtim@gcompris.net> (Layout and graphics rework)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -62,9 +63,6 @@ var codeIterator = 0
  * Else, it means that initLevel() is called to reset the entire level and the instruction areas are cleared as well.
  */
 var resetTux = false
-
-// Duration of movement of highlight in the execution area.
-var moveAnimDuration
 
 //Stores the currrent instruction which is going to be processed
 var currentInstruction
@@ -241,10 +239,6 @@ function initLevel() {
 
     changedRotation = EAST
     deadEndPoint = false
-    moveAnimDuration = 1000
-    items.background.insertIntoMain = true
-    items.mainFunctionCodeArea.highlightMoveDuration = moveAnimDuration / 2
-    items.procedureCodeArea.highlightMoveDuration = moveAnimDuration / 2
     items.isTuxMouseAreaEnabled = false
     items.isRunCodeEnabled = true
     items.maxNumberOfInstructionsAllowed = mazeBlocks[currentLevel].maxNumberOfInstructions

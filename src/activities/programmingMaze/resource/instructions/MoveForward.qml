@@ -93,8 +93,6 @@ Instruction {
 
         nextTileExists = nextPositionExists(playerCenterX, playerCenterY)
 
-        setCodeAreaHighlightMoveDuration()
-
         if(nextTileExists) {
             movementAnimation.start()
         }
