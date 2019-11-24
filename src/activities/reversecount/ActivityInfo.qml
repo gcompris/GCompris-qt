@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   //: Activity title
-  title: qsTr("Practice subtraction with a fun game")
+  title: qsTr("Count intervals")
   //: Help title
   description: qsTr("Tux is hungry. Help him find fish by counting to the correct ice spot.")
 //  intro: "Click on the domino and validate your choice with the OK button to indicate the number of ice blocks Tux will have to follow to eat a fish."
