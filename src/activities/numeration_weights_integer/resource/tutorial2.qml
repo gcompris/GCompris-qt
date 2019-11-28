@@ -33,17 +33,17 @@ Item {
     property int thousandClassDragButtonOrigX
     property int thousandClassDragButtonOrigY
     property int animationSequenceIndex: 0
-    property int numberClassIndex: 0
-    property int numberColumnWeightIndex: 2
-    property int numberColumnWeightDragButtonIndex: 0
-    property int headerOriginY
+    property int numberClassIndex
+    property int numberColumnWeightIndex
+    property int numberColumnWeightDragButtonIndex
 
 
     Component.onCompleted: {
         console.log("tutorial2_screen_loaded")
+        numberClassIndex = 0
+        numberColumnWeightIndex = 2
+        numberColumnWeightDragButtonIndex = 0
         numberWeightsParallelAnimation.running = true
-        numberWeightsParallelAnimation.running = true
-        headerOriginY = numberClassDropAreaRepeater.itemAt(0).numberWeightsDropAreasRepeater.itemAt(0).mapToItem(activity, 0, 0).y
     }
 
 
@@ -116,6 +116,7 @@ Item {
             } else if (animationSequenceIndex === 4) {
                 numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = unitWeightColumnDragButtonOrigX
                 numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = unitWeightColumnDragButtonOrigY
+                animationSequenceIndex = 5
                 numberClassIndex = 1
                 numberColumnWeightIndex = 0
                 numberColumnWeightDragButtonIndex = 2
