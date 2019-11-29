@@ -46,12 +46,6 @@ ActivityBase {
     property bool alwaysStart: true     // enforce start signal for editor-to-testing- and returning from config-transition
     property bool needRestart: true
 
-    onWidthChanged: if (inForeground && pageView.currentItem === activity)
-                       Activity.reconfigureScene();
-
-    onHeightChanged: if (inForeground && pageView.currentItem === activity)
-                         Activity.reconfigureScene();
-
     onStart: {
         inForeground = true;
         focus = true;
@@ -164,18 +158,24 @@ ActivityBase {
             id: mapWrapper
 
             property double margin: 20
+            property int barHeight: ApplicationSettings.isBarHidden ? 0 : bar.height
             property int columns: 0
             property int rows: 0
             property double length: Math.min(background.height -
-                    2*mapWrapper.margin, background.width - 2*mapWrapper.margin);
+                    mapWrapper.barHeight - 2 * mapWrapper.margin, background.width - 2 * mapWrapper.margin);
 
             color: "#E3DEDB"
-
             width: length
             height: length
-        
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+            anchors.top: background.top
+            anchors.topMargin: mapWrapper.margin
+            anchors.horizontalCenter: background.horizontalCenter
+
+            onWidthChanged: if (activity.inForeground && pageView.currentItem === activity)
+                resizeTimer.restart()
+
+            onHeightChanged: if (activity.inForeground && pageView.currentItem === activity)
+                resizeTimer.restart()
 
             transform: [
                 Rotation {
@@ -191,6 +191,12 @@ ActivityBase {
                     angle: ApplicationInfo.isMobile ? 0 : items.tilt.yRotation
                 }
             ]
+            
+            Timer {
+                id: resizeTimer
+                interval: 100
+                onTriggered: Activity.reconfigureScene()
+            }
 
             // right:
             Wall {
