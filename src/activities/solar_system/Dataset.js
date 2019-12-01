@@ -56,8 +56,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mercury.png",
                     "bodyName": qsTr("Mercury"),
                     "bodySize": 0.12,
-                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
+                    "temperatureHint": qsTr("The maximum temperature on Mercury is 427 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Mercury is 88 days."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Mercury in the Solar System?"),
@@ -85,7 +85,7 @@ function get() {
                             "closeness": [20.5, 1, 100, 94.5]
                         },
                         { 	// sub-level 6
-                            "question": qsTr("How long is a day on Mercury?"),
+                            "question": qsTr("How long is a rotation of Mercury?"),
                             "options": [qsTr("50 Earth days"), qsTr("365 Earth days"), qsTr("59 Earth days"), qsTr("107 Earth days")],
                             "closeness": [97, 1, 100, 84.4]
                         }
@@ -95,8 +95,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/venus.png",
                     "bodyName": qsTr("Venus"),
                     "bodySize": 0.22,
-                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
+                    "temperatureHint": qsTr("The maximum temperature on Venus is 467 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Venus in the Solar System?"),
@@ -131,7 +131,7 @@ function get() {
                         {   // sub-level 7
                             "question": qsTr("How many moons has Venus?"),
                             "options": ["5", "10", "2", "0"],
-                            "closeness": [63, 1, 100, 75.3]
+                            "closeness": [50, 1, 80, 100]
                         }
                     ]
                 },
@@ -139,8 +139,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/earth.png",
                     "bodyName": qsTr("Earth"),
                     "bodySize": 0.3,
-                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Venus is 225 days."),
+                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Earth in the Solar System?"),
@@ -183,8 +183,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/mars.png",
                     "bodyName": qsTr("Mars"),
                     "bodySize": 0.15,
-                    "temperatureHint": qsTr("The maximum temperature on Earth is 58 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Earth is 365 days."),
+                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Mars is 687 days."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Mars in the Solar System?"),
@@ -227,8 +227,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/jupiter.png",
                     "bodyName": qsTr("Jupiter"),
                     "bodySize": 1,
-                    "temperatureHint": qsTr("The maximum temperature on Mars is 20 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
+                    "temperatureHint": qsTr("The maximum temperature on Jupiter is -145 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth years."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Jupiter in the Solar System?"),
@@ -247,8 +247,8 @@ function get() {
                         },
                         { 	// sub-level 4
                             "question": qsTr("How many moons has Jupiter?"),
-                            "options": ["1", "20", "25", "53"],
-                            "closeness": [1, 37, 46.7, 100]
+                            "options": ["1", "79", "25", "53"],
+                            "closeness": [1, 100, 32.1, 67.9]
                         },
                         { 	// sub-level 5
                             "question": qsTr("How long is one day on Jupiter?"),
@@ -266,8 +266,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/saturn.png",
                     "bodyName": qsTr("Saturn"),
                     "bodySize": 1.2,
-                    "temperatureHint": qsTr("The minimum temperature on Jupiter is -145 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Jupiter is 12 Earth years."),
+                    "temperatureHint": qsTr("The minimum temperature on Saturn is -178 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Saturn in the Solar System?"),
@@ -281,8 +281,8 @@ function get() {
                         },
                         { 	// sub-level 3
                             "question": qsTr("How many moons has Saturn?"),
-                            "options": ["120", "1", "150", "200"],
-                            "closeness": [80, 1, 100, 60.8]
+                            "options": ["120", "1", "82", "200"],
+                            "closeness": [32.2, 1, 100, 1]
                         },
                         { 	// sub-level 4
                             "question": qsTr("How long is one day on Saturn?"),
@@ -305,8 +305,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/uranus.png",
                     "bodyName": qsTr("Uranus"),
                     "bodySize": 0.5,
-                    "temperatureHint": qsTr("The temperature on Saturn is -178 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Saturn is 29.5 Earth years."),
+                    "temperatureHint": qsTr("The temperature on Uranus is -216 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 Earth years."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Uranus in the Solar System?"),
@@ -344,8 +344,8 @@ function get() {
                     "realImg": "qrc:/gcompris/src/activities/solar_system/resource/neptune.png",
                     "bodyName": qsTr("Neptune"),
                     "bodySize": 0.4,
-                    "temperatureHint": qsTr("The maximum temperature on Saturn is -178 °C."),
-                    "lengthOfYearHint": qsTr("The length of a year on Uranus is 84 years."),
+                    "temperatureHint": qsTr("The maximum temperature on Neptune is -210 °C."),
+                    "lengthOfYearHint": qsTr("The length of a year on Neptune is 165 years."),
                     "levels": [
                         { 	// sub-level 1
                             "question": qsTr("At which position is Neptune in the Solar System?"),
