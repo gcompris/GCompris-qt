@@ -430,7 +430,7 @@ ActivityBase {
                 }
                 width: categoriesGrid.width / (currentTagCategories.length + 1)
                 height: categoriesGrid.cellHeight
-                text: Object.values(modelData)[0]
+                text: modelData[category]
                 property string category: Object.keys(modelData)[0]
                 onClicked: {
                     selectCurrentItem()
