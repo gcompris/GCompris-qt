@@ -68,6 +68,9 @@ Rectangle {
 
         Repeater {
             id: numberWeightsDropAreasRepeater
+
+
+
             model: numberWeightHeadersModel
 
             Rectangle {
@@ -100,6 +103,7 @@ Rectangle {
                     id: numberWeightsDropTiles
 
                     property alias numberWeightDropAreaGridRepeater: numberWeightDropAreaGridRepeater
+
                     anchors.top: numberWeightHeaderElement.bottom
                     width: parent.width
                     height: parent.height - numberWeightHeaderElement.height

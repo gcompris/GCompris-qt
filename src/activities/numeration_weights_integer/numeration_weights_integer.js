@@ -81,7 +81,8 @@ var tutorialInstructions = [
                 "instruction": qsTr("This activity teaches how to place numbers weights to represent a number quantity.")
             },
             {
-                "instruction": qsTr("Before to enter any number weights you have to enter the number classes (unit class only if numbers are less than 1000 and unit classes and thousand class if they are more than 999.")
+                "instruction": qsTr("Before to enter any number weights you have to enter the number classes (unit class only if numbers are less than 1000 and unit classes and thousand class if they are more than 999."),
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial0.qml"
             },
             {
                 "instruction": qsTr("Here using drag and drop we add the unit class and the thousand class."),
@@ -96,11 +97,11 @@ var tutorialInstructions = [
             },
             {
                 "instruction":  qsTr("To convert a decimal 5 to a binary value, 1 and 4 are added."),
-                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial6.qml"
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial3.qml"
             },
             {
                 "instruction": qsTr("Their corresponding bits are set to 1, the others set to 0. Decimal 5 is equal to binary 101."),
-                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial7.qml"
+                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial4.qml"
             },
             {
                 "instruction": qsTr("This image will help you to compute bits' value."),

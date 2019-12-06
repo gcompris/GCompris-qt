@@ -79,6 +79,7 @@ ActivityBase {
             property int cellSize: Math.min(background.width / 11, background.height / (9 + barHeightAddon))
             property var levels: activity.datasetLoader.item.data
             property alias numberToConvertRectangle: numberToConvertRectangle
+            property alias tutorialSection: tutorialSection
         }
 
         Loader {
@@ -125,8 +126,6 @@ ActivityBase {
             }
 
             onDropped: {
-                console.log("Here is should also drop when dragging with animation, it does only with mouse area dragging")
-
                 var className = drag.source.name
                 drag.source.dragEnabled = false
                 Activity.appendClassNameColumn(className, drag.source, false)
