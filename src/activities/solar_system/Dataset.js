@@ -85,7 +85,7 @@ function get() {
                             "closeness": [20.5, 1, 100, 94.5]
                         },
                         { 	// sub-level 6
-                            "question": qsTr("How long is a day on Mercury?"),
+                            "question": qsTr("How long is one rotation on Mercury?"),
                             "options": [qsTr("50 Earth days"), qsTr("365 Earth days"), qsTr("59 Earth days"), qsTr("107 Earth days")],
                             "closeness": [97, 1, 100, 84.4]
                         }
@@ -119,7 +119,7 @@ function get() {
                             "closeness": [100, 1, 23, 11.6]
                         },
                         { 	// sub-level 5
-                            "question": qsTr("How long is a day on Venus?"),
+                            "question": qsTr("How long is a rotation on Venus?"),
                             "options": [qsTr("117 Earth days"), qsTr("365 Earth days"), qsTr("88 Earth days"), qsTr("107 Earth days")],
                             "closeness": [100, 1, 88.8, 96.4]
                         },
@@ -131,7 +131,7 @@ function get() {
                         {   // sub-level 7
                             "question": qsTr("How many moons has Venus?"),
                             "options": ["5", "10", "2", "0"],
-                            "closeness": [63, 1, 100, 75.3]
+                            "closeness": [50, 1, 80, 100]
                         }
                     ]
                 },
@@ -158,7 +158,7 @@ function get() {
                             "closeness": [100, 15, 75, 50.5]
                         },
                         { 	// sub-level 4
-                            "question": qsTr("How long is a day on Earth?"),
+                            "question": qsTr("How long is a rotation on Earth?"),
                             "options": [qsTr("12 hours"), qsTr("24 hours"), qsTr("365 hours"), qsTr("48 hours")],
                             "closeness": [96.5, 100, 1, 93]
                         },
@@ -207,7 +207,7 @@ function get() {
                             "closeness": [67, 1, 100, 50.5]
                         },
                         { 	// sub-level 5
-                            "question": qsTr("How long is a day on Mars?"),
+                            "question": qsTr("How long is a rotation on Mars?"),
                             "options": [qsTr("12 hours"), qsTr("24 hours"), qsTr("24.5 hours"), qsTr("48 hours")],
                             "closeness": [47.3, 91, 100, 1]
                         },
@@ -247,11 +247,11 @@ function get() {
                         },
                         { 	// sub-level 4
                             "question": qsTr("How many moons has Jupiter?"),
-                            "options": ["1", "20", "25", "53"],
-                            "closeness": [1, 37, 46.7, 100]
+                            "options": ["1", "79", "25", "53"],
+                            "closeness": [1, 100, 32.1, 67.9]
                         },
                         { 	// sub-level 5
-                            "question": qsTr("How long is one day on Jupiter?"),
+                            "question": qsTr("How long is one rotation on Jupiter?"),
                             "options": [qsTr("10 hours"), qsTr("24 hours"), qsTr("12 hours"), qsTr("48 hours")],
                             "closeness": [100, 63.5, 94.8, 1]
                         },
@@ -281,11 +281,11 @@ function get() {
                         },
                         { 	// sub-level 3
                             "question": qsTr("How many moons has Saturn?"),
-                            "options": ["120", "1", "150", "200"],
-                            "closeness": [80, 1, 100, 60.8]
+                            "options": ["120", "1", "82", "200"],
+                            "closeness": [32.2, 1, 100, 1]
                         },
                         { 	// sub-level 4
-                            "question": qsTr("How long is one day on Saturn?"),
+                            "question": qsTr("How long is one rotation on Saturn?"),
                             "options": [qsTr("10.5 hours"), qsTr("24 hours"), qsTr("12 hours"), qsTr("48 hours")],
                             "closeness": [100, 64.3, 96, 1]
                         },
@@ -324,7 +324,7 @@ function get() {
                             "closeness": [1, 36, 100, 75.5]
                         },
                         { 	// sub-level 4
-                            "question": qsTr("How long is one day on Uranus?"),
+                            "question": qsTr("How long is one rotation on Uranus?"),
                             "options": [qsTr("10 hours"), qsTr("27 hours"), qsTr("17 hours"), qsTr("48 hours")],
                             "closeness": [77.6, 68, 100, 1]
                         },
@@ -363,7 +363,7 @@ function get() {
                             "closeness": [1, 31.8, 100, 66.3]
                         },
                         { 	// sub-level 4
-                            "question": qsTr("How long is one day on Neptune?"),
+                            "question": qsTr("How long is one rotation on Neptune?"),
                             "options": [qsTr("16 hours"), qsTr("27 hours"), qsTr("17 hours"), qsTr("48 hours")],
                             "closeness": [100, 66, 97, 1]
                         },
