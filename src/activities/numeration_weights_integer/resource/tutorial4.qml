@@ -1,9 +1,9 @@
 /* GCompris - tutorial4.qml
  *
- * Copyright (C) 2018 Timothée Giet <animtim@gcompris.net>
+ * Copyright (C) 2019 Emmanuel Charruau <echarruau@gmail.com>
  *
  * Authors:
- *   Timothée Giet <animtim@gcompris.net>
+ *   Emmanuel Charruau <echarruau@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -18,125 +18,37 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
-import QtQuick 2.6
-import GCompris 1.0 
+import QtQuick 2.13
+import GCompris 1.0
 
 import "../../../core"
+import "../../../activities"
 
-Rectangle {
-    anchors.fill: parent
-    color: "#80FFFFFF"
-    
-    Item {
-        id: topBlock
-        width: parent.width
-        height: parent.height * 0.2
-        
-        GCText {
-            anchors {
-                right: parent.right
-                verticalCenter: parent.verticalCenter
-            }
-            text: qsTr("0 to 255 with")
-            fontSizeMode: Text.Fit
-            minimumPixelSize: 15
-            color: "black"
-            horizontalAlignment: Text.AlignHCenter
-            width: 0.9 * parent.width
-            height: 0.9 * parent.height
-            wrapMode: Text.WordWrap
-            z: 2
-        }
+import "../numeration_weights_integer.js" as Activity
+
+
+Item {
+    id: tutorial4
+
+    readonly property int animation_DURATION: 1000
+
+    Component.onCompleted: {
+        console.log("tutorial4_screen_loaded")
+        okButtonAnimation.running = true
     }
-    
-    Row {
-        id: tableBlock1
-        width: parent.width * 0.9
-        height: parent.height * 0.2
-        anchors.top: topBlock.bottom
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.05
-        Repeater {
-            model: ["", "", "", "", "", "", "", ""]
-            Item {
-                id: item128
-                width: parent.width / 8
-                height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                GCText {
-                    anchors {
-                        right: parent.right
-                        verticalCenter: parent.verticalCenter
-                        horizontalCenter: parent.horizontalCenter
-                    }
-                    text: modelData
-                    fontSizeMode: Text.Fit
-                    minimumPixelSize: 15
-                    color: "black"
-                    horizontalAlignment: Text.AlignHCenter
-                    width: 0.9 * parent.width
-                    height: 0.9 * parent.height
-                    wrapMode: Text.WordWrap
-                    z: 2
-                }
-            }
-        }
-    }
-    
-    Row {
-        id: bulbBlock
-        width: parent.width * 0.9
-        height: parent.height * 0.4
-        anchors.top: tableBlock1.bottom
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.05
-        Repeater {
-            model: ["off", "off", "off", "off", "off", "off", "off", "off"]
-            Item {
-                id: item128
-                width: parent.width / 8
-                height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                Image {
-                    source: "bulb_" + modelData + ".svg"
-                    fillMode: Image.PreserveAspectFit
-                    anchors.fill: parent
-                    sourceSize.width: implicitWidth
-                }
-            }
-        }
-    }
-    
-    Row {
-        width: parent.width * 0.9
-        height: parent.height * 0.2
-        anchors.top: bulbBlock.bottom
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.05
-        Repeater {
-            model: ["0", "0", "0", "0", "0", "0", "0", "0"]
-            Item {
-                id: item128
-                width: parent.width / 8
-                height: parent.height
-                anchors.verticalCenter: parent.verticalCenter
-                GCText {
-                    anchors {
-                        right: parent.right
-                        verticalCenter: parent.verticalCenter
-                        horizontalCenter: parent.horizontalCenter
-                    }
-                    text: modelData
-                    fontSizeMode: Text.Fit
-                    minimumPixelSize: 15
-                    color: "black"
-                    horizontalAlignment: Text.AlignHCenter
-                    width: 0.9 * parent.width
-                    height: 0.9 * parent.height
-                    wrapMode: Text.WordWrap
-                    z: 2
-                }
-            }
+
+    NumberAnimation {
+        id: okButtonAnimation
+
+        target: okButton
+        property: "opacity";
+        to: 0.1
+        duration: animation_DURATION
+
+        onFinished: {
+            console.log("test")
+            okButton.opacity = 1
+            Activity.checkAnswer()
         }
     }
 }

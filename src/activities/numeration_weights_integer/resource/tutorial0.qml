@@ -34,7 +34,6 @@ Item {
 
         //this is not a good solution, it does not work if tutorial0 is called before initLevel() is finished //?
 
-        console.log("yyyyyyyyyyyyyyyyyyyy")
         Activity.numbersToConvert.unshift(1204)
         Activity.items.numberToConvertRectangle.text = Activity.numbersToConvert[0]
         console.log(Activity.numbersToConvert)

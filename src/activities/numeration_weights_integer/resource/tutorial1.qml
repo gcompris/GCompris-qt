@@ -28,88 +28,62 @@ Item {
     id: tutorial1
 
     property bool animationIsRunning: animationIsRunning
-    property int unitClassDragButtonOrigX
-    property int unitClassDragButtonOrigY
-    property int thousandClassDragButtonOrigX
-    property int thousandClassDragButtonOrigY
+    property int numberClassDragButtonOrigX
+    property int numberClassDragButtonOrigY
+    property int numberClassDragButtonIndex
+    property int animationSequenceIndex
+
+    readonly property int animation_DURATION: 3000
 
     Component.onCompleted: {
         console.log("tutorial1_screen_loaded")
-        animUnitClassX.running = true
-        animUnitClassY.running = true
+        numberClassParallelAnimation.running = true
+        numberClassDragButtonIndex = 0
     }
 
 
+    ParallelAnimation {
+        id: numberClassParallelAnimation
 
-    NumberAnimation{
-        id: animUnitClassX
+        NumberAnimation {
+            id: animUnitColumnWeightX
 
-        target: numberClassDragElements.itemAt(0)
-        property: "x";
-        to: background.width * 2/3
-        duration: 300 //0
+            target: numberClassDragElements.itemAt(numberClassDragButtonIndex)
+            property: "x";
+            to: background.width * (2-animationSequenceIndex)/3
+            duration: animation_DURATION
+        }
+
+        NumberAnimation {
+            id: animUnitColumnWeightY
+
+            target: numberClassDragElements.itemAt(numberClassDragButtonIndex)
+            property: "y";
+            to: background.height * 1/3
+            duration: animation_DURATION
+        }
+
         onStarted: {
-            unitClassDragButtonOrigX = numberClassDragElements.itemAt(0).x
-            unitClassDragButtonOrigY = numberClassDragElements.itemAt(0).y
+            numberClassDragButtonOrigX = numberClassDragElements.itemAt(numberClassDragButtonIndex).x
+            numberClassDragButtonOrigY = numberClassDragElements.itemAt(numberClassDragButtonIndex).y
+            numberClassDragElements.itemAt(numberClassDragButtonIndex).Drag.start()
             animationIsRunning = true
-            numberClassDragElements.itemAt(0).animationIsRunning = animationIsRunning
-            console.log("onStarted")
+            numberClassDragElements.itemAt(numberClassDragButtonIndex).animationIsRunning = animationIsRunning
         }
+
         onFinished: {
-            numberClassDragElements.itemAt(0).Drag.drop()
-            console.log("Sent Drag drop")
-            animationIsRunning = false
-            numberClassDragElements.itemAt(0).x = unitClassDragButtonOrigX
-            numberClassDragElements.itemAt(0).z = 1000
-            animThousandClassX.running = true
-            animThousandClassY.running = true
-        }
-    }
-
-    NumberAnimation{
-        id: animUnitClassY
-
-        target: numberClassDragElements.itemAt(0)
-        property: "y";
-        to: background.height * 1/3
-        duration: 300 //0
-        onFinished: {
-            numberClassDragElements.itemAt(0).y = unitClassDragButtonOrigY
-        }
-    }
-
-    NumberAnimation{
-        id: animThousandClassX
-
-        target: numberClassDragElements.itemAt(1)
-        property: "x";
-        to: background.width * 1/3
-        duration: 300 //0
-        onStarted: {
-            thousandClassDragButtonOrigX = numberClassDragElements.itemAt(1).x
-            thousandClassDragButtonOrigY = numberClassDragElements.itemAt(1).y
-            animationIsRunning = true
-            numberClassDragElements.itemAt(1).animationIsRunning = animationIsRunning
-            console.log("onStarted")
-        }
-        onFinished: {
-            numberClassDragElements.itemAt(1).Drag.drop()
-            console.log("Sent Drag drop")
-            animationIsRunning = false
-            numberClassDragElements.itemAt(1).x = thousandClassDragButtonOrigX
-            numberClassDragElements.itemAt(1).z = 1000
-        }
-    }
-
-    NumberAnimation{
-        id: animThousandClassY
-
-        target: numberClassDragElements.itemAt(1)
-        property: "y";
-        to: background.height * 1/3
-        duration: 300 //0
-        onFinished: {
-            numberClassDragElements.itemAt(1).y = thousandClassDragButtonOrigY
+            numberClassDragElements.itemAt(numberClassDragButtonIndex).Drag.drop()
+            numberClassDragElements.itemAt(numberClassDragButtonIndex).z = 1000
+            if (animationSequenceIndex === 0) {
+                numberClassDragElements.itemAt(numberClassDragButtonIndex).x = numberClassDragButtonOrigX
+                numberClassDragElements.itemAt(numberClassDragButtonIndex).y = numberClassDragButtonOrigY
+                animationSequenceIndex++
+                numberClassDragButtonIndex = 1
+                numberClassParallelAnimation.running = true
+            } else if (animationSequenceIndex === 1) {
+                numberClassDragElements.itemAt(numberClassDragButtonIndex).x = numberClassDragButtonOrigX
+                numberClassDragElements.itemAt(numberClassDragButtonIndex).y = numberClassDragButtonOrigY
+            }
         }
     }
 }

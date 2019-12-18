@@ -33,21 +33,33 @@ Item {
     property int animationSequenceIndex
     property int numberClassIndex
     property int numberColumnWeightIndex
-    //unit weight = 3, ten weight = 4, hunderd weight = 5 etc...    //whange cariable in tutorial2.qml  //?
     property int dragButtonIndex
-    property int weightIndex
+    property int weightRowIndex
+
+    readonly property int unit_CLASS_INDEX: 1
+    readonly property int thousand_CLASS_INDEX: 0
+
+    readonly property int unit_COLUMN_INDEX: 2
+    readonly property int tenth_COLUMN_INDEX: 1
+    readonly property int hundred_COLUMN_INDEX: 0
 
 
+    readonly property int unit_WEIGHT_BUTTON_INDEX: 3
+    readonly property int ten_WEIGHT_BUTTON_INDEX: 4
+    readonly property int hundred_WEIGHT_BUTTON_INDEX: 5
+    readonly property int thousand_WEIGHT_BUTTON_INDEX: 6
+
+    readonly property int animation_DURATION: 300//0
 
 
     Component.onCompleted: {
-        console.log("tutorial2_screen_loaded")
+        console.log("tutorial3_screen_loaded")
         animationSequenceIndex = 0
         numberClassIndex = 1
         numberColumnWeightIndex = 2
-        dragButtonIndex = 3
+        dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
         numberWeightsParallelAnimation.running = true
-        weightIndex = 0
+        weightRowIndex = 0
     }
 
 
@@ -59,8 +71,8 @@ Item {
 
             target: numberWeightDragElements.itemAt(dragButtonIndex)
             property: "x";
-            to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(weightIndex).mapToItem(activity, 0, 0).x
-            duration: 3000
+            to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(weightRowIndex).mapToItem(activity, 0, 0).x
+            duration: animation_DURATION
         }
 
         NumberAnimation {
@@ -68,8 +80,8 @@ Item {
 
             target: numberWeightDragElements.itemAt(dragButtonIndex)
             property: "y";
-            to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(weightIndex).mapToItem(activity, 0, 0).y
-            duration: 3000
+            to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(weightRowIndex).mapToItem(activity, 0, 0).y
+            duration: animation_DURATION
         }
 
         onStarted: {
@@ -82,53 +94,62 @@ Item {
 
         onFinished: {
             numberWeightDragElements.itemAt(dragButtonIndex).Drag.drop()
-            numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+            numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX   //?
             numberWeightDragElements.itemAt(dragButtonIndex).z = 1000
             if (animationSequenceIndex === 0) {
                 numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
                 numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 1
-                numberClassIndex = 1
+                animationSequenceIndex++
+                numberClassIndex = unit_CLASS_INDEX
                 numberColumnWeightIndex = 2
-                dragButtonIndex = 3
-                weightIndex = 1
+                dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
+                weightRowIndex = 1
                 numberWeightsParallelAnimation.running = true
             } else if (animationSequenceIndex === 1) {
                 numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
                 numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 2
-                numberClassIndex = 1
-                numberColumnWeightIndex = 2
-                dragButtonIndex = 3
-                weightIndex = 2
+                animationSequenceIndex++
+                numberClassIndex = unit_CLASS_INDEX
+                numberColumnWeightIndex = unit_COLUMN_INDEX
+                dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
+                weightRowIndex = 2
                 numberWeightsParallelAnimation.running = true
             } else if (animationSequenceIndex === 2) {
                 numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
                 numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 3
-                numberClassIndex = 1
-                numberColumnWeightIndex = 2
-                dragButtonIndex = 3
-                weightIndex = 3
+                animationSequenceIndex++
+                numberClassIndex = unit_CLASS_INDEX
+                numberColumnWeightIndex = unit_COLUMN_INDEX
+                dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
+                weightRowIndex = 3
                 numberWeightsParallelAnimation.running = true
             } else if (animationSequenceIndex === 3) {
                 numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
                 numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 4
-                numberClassIndex = 1
-                numberColumnWeightIndex = 2
-                dragButtonIndex = 3
-                weightIndex = 3
+                animationSequenceIndex++
+                numberClassIndex = unit_CLASS_INDEX
+                numberColumnWeightIndex = hundred_COLUMN_INDEX
+                dragButtonIndex = hundred_WEIGHT_BUTTON_INDEX
+                weightRowIndex = 0
                 numberWeightsParallelAnimation.running = true
             } else if (animationSequenceIndex === 4) {
                 numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
                 numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 5
-                numberClassIndex = 0
-                numberColumnWeightIndex = 0
-                dragButtonIndex = 3
+                animationSequenceIndex++
+                numberClassIndex = unit_CLASS_INDEX
+                numberColumnWeightIndex = hundred_COLUMN_INDEX
+                dragButtonIndex = hundred_WEIGHT_BUTTON_INDEX
+                weightRowIndex = 1
                 numberWeightsParallelAnimation.running = true
             } else if (animationSequenceIndex === 5) {
+                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                animationSequenceIndex++
+                numberClassIndex = thousand_CLASS_INDEX
+                numberColumnWeightIndex = unit_COLUMN_INDEX
+                dragButtonIndex = thousand_WEIGHT_BUTTON_INDEX
+                numberWeightsParallelAnimation.running = true
+            } else if (animationSequenceIndex === 6) {
                 numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
                 numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
             }

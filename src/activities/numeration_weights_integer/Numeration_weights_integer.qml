@@ -80,6 +80,7 @@ ActivityBase {
             property var levels: activity.datasetLoader.item.data
             property alias numberToConvertRectangle: numberToConvertRectangle
             property alias tutorialSection: tutorialSection
+            property alias okButton: okButton
         }
 
         Loader {
@@ -415,7 +416,7 @@ ActivityBase {
 
                 onSkipPressed: {
                     Activity.initLevel()
-                    tutorialImage.visible = false
+                    tutorialImage.visible = false    //?
                 }
             }
         }
@@ -472,7 +473,7 @@ ActivityBase {
         GCText {
             id: instructionTxt
             anchors {
-                top: background.vert ? parent.top : leftWidget.bottom
+                top: background.vert ? parent.top : leftWidget.bottom //?
                 topMargin: -10
                 horizontalCenter: background.horizontalCenter
             }

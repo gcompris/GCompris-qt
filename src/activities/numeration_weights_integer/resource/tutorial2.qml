@@ -35,6 +35,8 @@ Item {
     property int numberColumnWeightIndex
     property int numberColumnWeightDragButtonIndex
 
+    readonly property int animation_DURATION: 300//0
+
 
     Component.onCompleted: {
         console.log("tutorial2_screen_loaded")
@@ -55,7 +57,7 @@ Item {
             target: numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex)
             property: "x";
             to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).mapToItem(activity, 0, 0).x
-            duration: 300 //0
+            duration: animation_DURATION
         }
 
         NumberAnimation {
@@ -65,7 +67,7 @@ Item {
             property: "y";
             to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).numberWeightHeaderElement.mapToItem(activity, 0, 0).y
             //to: numberClassDropAreaRepeater.itemAt(numberClassIndex).numberWeightsDropAreasRepeater.itemAt(numberColumnWeightIndex).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(3).mapToItem(activity, 0, 0).y
-            duration: 300 //0
+            duration: animation_DURATION
         }
 
         onStarted: {

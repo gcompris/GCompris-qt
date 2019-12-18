@@ -81,31 +81,24 @@ var tutorialInstructions = [
                 "instruction": qsTr("This activity teaches how to place numbers weights to represent a number quantity.")
             },
             {
-                "instruction": qsTr("Before to enter any number weights you have to enter the number classes (unit class only if numbers are less than 1000 and unit classes and thousand class if they are more than 999."),
+                "instruction": qsTr("Here we will represent the quantity 1204."),
                 "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial0.qml"
             },
             {
-                "instruction": qsTr("Here using drag and drop we add the unit class and the thousand class."),
+                "instruction": qsTr("Using drag and drop we add the unit class and the thousand class."),
                 "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial1.qml"
             },
             {
-                "instruction": qsTr("The we have to enter the weight name in the rights columns.")
-            },
-            {
-                "instruction": qsTr("Here using drag and drop we add the weight unit in the unit column."),
+                "instruction": qsTr("We add the different weights in the corresponding columns."),
                 "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial2.qml"
             },
             {
-                "instruction":  qsTr("To convert a decimal 5 to a binary value, 1 and 4 are added."),
+                "instruction":  qsTr("Then we place the needed weights in the right columns to obtain in this example 1204."),
                 "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial3.qml"
             },
             {
-                "instruction": qsTr("Their corresponding bits are set to 1, the others set to 0. Decimal 5 is equal to binary 101."),
+                "instruction": qsTr("Once the weights are enter, we click on the ok button."),
                 "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial4.qml"
-            },
-            {
-                "instruction": qsTr("This image will help you to compute bits' value."),
-                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial5.qml"
             }
         ]
 
@@ -172,7 +165,6 @@ function getNumberColumnWeight(numberClassName, numberWeightIndex) {
     var numberWeight = numberWeightsColumnsArray[numberWeightIndex]
 
     var numberColumnWeight
-    console.log("**********************numberClassName",numberClassName)
     var columnWeightKey = numberClassName + "_" + numberWeight
 
     switch (columnWeightKey) {
@@ -288,18 +280,19 @@ function areAllWeightsInTheRightColumns() {
             var numberColumnWeight = getNumberColumnWeight(items.numberClassListModel.get(i).name, j)
             //console.log("-*-*-*-*-*numberColumnWeight",numberColumnWeight)
             for (var k=0; k<9; k++) {
-                 var numberWeightWeight = getNumberWeightWeight(i, j, k)
+                console.log("----i ---j ----k " + i + " " + j + " " + k )
+                var numberWeightWeight = getNumberWeightWeight(i, j, k)
                 if (numberWeightWeight !== "") {
                     //console.log("get image names: " + getNumberWeightImageName(i, j, k))
                     //console.log("get getNumberWeightWeight: " + getNumberWeightWeight(i, j, k))
                     if (numberColumnWeight != numberWeightWeight) {
                         //console.log("Error: numberColumnWeight !== numberWeightWeight: " + numberColumnWeight + "/" + numberWeightWeight)
-                        items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightComponentRectangle.border.color = "red"
+                        items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightComponentRectangle.border.color = "red"
                         allWeightsAreInTheRightColumns = false
                     }
                     else
                     {
-                        items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightComponentRectangle.border.color = "black"
+                        items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightsDropTiles.numberWeightDropAreaGridRepeater.itemAt(k).numberWeightComponentRectangle.border.color = "black"
                         //console.log("Successfull :" + numberColumnWeight + "/" + numberWeightWeight)
                     }
                 }
@@ -313,14 +306,15 @@ function checkNumberWeightHeadersPositions() {
     var allNumbersInRightPositions = true
     for (var i = 0; i<items.numberClassListModel.count; i++) {
         for (var j=0; j<3; j++) {
-            var numberWeightTypeDropped = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.textAlias
-            var numberWeightType = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightType
+                            console.log("----i ---j" + i + " " + j)
+            var numberWeightTypeDropped = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightHeaderElement.textAlias
+            var numberWeightType = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightType
             //console.log("numberWeightType/numberWeightTypeDropped",numberWeightType+"/"+numberWeightTypeDropped)
             if (numberWeightTypeDropped !== numberWeightType) {
-                items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.border.width = 5
+                items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightHeaderElement.border.width = 5
                 allNumbersInRightPositions = false
             }
-            else items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.border.width = 0
+            else items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightHeaderElement.border.width = 0
         }
     }
     return allNumbersInRightPositions
@@ -330,8 +324,8 @@ function checkNumberWeightHeadersPositions() {
 function setWeightHeadersWeightCaptions() {
     for (var i = 0; i<items.numberClassListModel.count; i++) {
         for (var j=0; j<3; j++) {
-            var numberWeightType = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightType
-            items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeaterAlias.itemAt(j).numberWeightHeaderElement.textAlias = numberWeightType
+            var numberWeightType = items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightType
+            items.numberClassDropAreaRepeater.itemAt(i).numberWeightsDropAreasRepeater.itemAt(j).numberWeightHeaderElement.textAlias = numberWeightType
         }
     }
 }
@@ -557,6 +551,11 @@ function appendClassNameColumn(className,element_src,misplaced) {
     updateIntegerAndDecimalHeaderWidth()
 }
 
+function removeAllClassNameColumn() {
+    items.numberClassListModel.clear()
+}
+
+
 
 function initLevel() {
     console.log("start init ")
@@ -575,6 +574,8 @@ function initLevel() {
 
     items.numberToConvertRectangle.text = numbersToConvert[0]
     numbersCorrectlyAnswered = []
+
+    removeAllClassNameColumn()
 
     resetNumerationTable()
     setNumberClassDragListModel(fullClassNamesConstantArray)
