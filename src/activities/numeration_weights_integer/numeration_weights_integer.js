@@ -81,8 +81,7 @@ var tutorialInstructions = [
                 "instruction": qsTr("This activity teaches how to place numbers weights to represent a number quantity.")
             },
             {
-                "instruction": qsTr("Here we will represent the quantity 1204."),
-                "instructionQml": "qrc:/gcompris/src/activities/numeration_weights_integer/resource/tutorial0.qml"
+                "instruction": qsTr("Here we will represent the quantity 1204.")
             },
             {
                 "instruction": qsTr("Using drag and drop we add the unit class and the thousand class."),
@@ -230,7 +229,8 @@ function readNumerationTableEnteredValue() {
 function checkAnswer() {
     items.instruction.hide()
 
- //   setWeightHeadersWeightCaptions()
+    //   setWeightHeadersWeightCaptions()   //set automatically weight headers caption in weight headers cells, this can be used while debugging to gain some time or
+    //   could be used in expert mode once pupils have understood the weight concept. To be kept at the moment.
 
     var allWeightsAreInTheRightColumns = areAllWeightsInTheRightColumns()
     if (!allWeightsAreInTheRightColumns) {
@@ -265,11 +265,10 @@ function checkAnswer() {
         return
     }
     else {
-        if (evaluateAndDisplayProgresses(true)) {
+        if (evaluateAndDisplayProgresses(true) && currentLevel !== 0) {     //if we are in tutorial mode (level 0) we do not jump to level 1, we let the user click on tutorial start button to do it
             nextLevel()
         }
     }
-
 }
 
 function areAllWeightsInTheRightColumns() {
@@ -560,7 +559,7 @@ function removeAllClassNameColumn() {
 function initLevel() {
     console.log("start init ")
 
-    items.bar.level = currentLevel + 1
+    items.bar.level = currentLevel
     items.instruction.text = items.levels[currentLevel].objective
     items.instruction.show()
 
@@ -576,9 +575,16 @@ function initLevel() {
     numbersCorrectlyAnswered = []
 
     removeAllClassNameColumn()
-
     resetNumerationTable()
+
     setNumberClassDragListModel(fullClassNamesConstantArray)
+
+    if (currentLevel === 0) {
+        items.tutorialSection.tutorialNumber = 0
+        items.tutorialSection.visible = true
+    } else {
+        items.tutorialSection.visible = false
+    }
 
     console.log("stop init ")
 }

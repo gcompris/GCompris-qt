@@ -67,7 +67,14 @@ Item {
     // Emitted when previousButton is clicked
     signal previousPressed
 
+    // Emitted when restartButton is clicked
+    signal restartPressed
+
+
     property alias tutorialText: tutorialText
+    property alias showButton: showButton
+    property alias previousButton: previousButton
+    property alias restartButton: restartButton
 
     // Tutorial instructions
     GCText {
@@ -115,7 +122,7 @@ Item {
         anchors.topMargin: 15
         anchors.rightMargin: 15
 	    anchors.top: tutorialTextContainer.bottom
-        visible: tutorialNumber != 0
+     //   visible: tutorialNumber != 0
 
         text: qsTr("Previous")
 
@@ -182,6 +189,26 @@ Item {
             nextPressed()
         }
     }
+
+    IntroButton {
+        id: restartButton
+        width: parent.width / 5
+        height: 90
+        z: 5
+        anchors.right: previousButton.visible ? previousButton.left : nextButton.left
+        anchors.topMargin: 15
+        anchors.rightMargin: 15
+        anchors.top: tutorialTextContainer.bottom
+        visible: false
+
+        text: qsTr("Restart")
+
+        onClicked: {
+            tutorialNumber = 0
+            restartPressed()
+        }
+    }
+
 
 
 

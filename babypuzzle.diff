@@ -1,0 +1,25 @@
+diff --git a/src/activities/baby_tangram/ActivityInfo.qml b/src/activities/baby_tangram/ActivityInfo.qml
+index f772a5a2..c9858939 100644
+--- a/src/activities/baby_tangram/ActivityInfo.qml
++++ b/src/activities/baby_tangram/ActivityInfo.qml
+@@ -24,16 +24,16 @@ ActivityInfo {
+   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
+   demo: true
+   //: Activity title
+-  title: qsTr("Reassemble the shapes")
++  title: qsTr("Baby Puzzle")
+   //: Help title
+-  description: qsTr("The objective is to form a given shape")
+-  // intro: "Click on each object to obtain the same figure. You can change their orientation by clicking on the arrows."
++  description: qsTr("The objective is to assemble the baby puzzle")
++  // intro: "Move each puzzle piece, to obtain the completed puzzle. You can change their orientation by clicking on the arrows."
+   //: Help goal
+   goal: ""
+   //: Help prerequisite
+   prerequisite: qsTr("Mouse-manipulation")
+   //: Help manual
+-  manual: qsTr("Select the object to form. Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to show the rotation you want. More complicated levels can be found in tangram activity.")
++  manual: qsTr("Move a piece by dragging it. Use the rotation button if necessary. More complicated levels can be found in tangram activity.")
+   credit: ""
+   section: "puzzle"
+   createdInVersion: 9800

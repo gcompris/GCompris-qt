@@ -27,6 +27,16 @@ Dataset {
     difficulty: 1
     data: [
       {
+         "level" : "0",
+         "objective" : qsTr("Tutorial"),
+         //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"
+         "smallerNumberClass": "Unit class",
+         "biggerNumberClass": "Thousand class",
+         "numbers" : [
+            "1204"
+         ]
+      },
+      {
          "level" : "1",
          "objective" : qsTr("Drag the number weights in the right cells to create numbers up to 9"),
          //possible smallerNumberClass are "Decimal Part","Unit class","Thousand class","Million class","Milliard class"

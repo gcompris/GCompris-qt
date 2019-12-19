@@ -327,7 +327,7 @@ ActivityBase {
 
                         width: mainZoneArea.width / numberClassListModel.count
                         height: numberClassHeaders.height / 1.5
-                        border.width: numberClassListModel.get(index).misplaced === true ? 5 : 1
+                        border.width: numberClassListModel.get(index).misplaced === true ? 5 : 1  //? TypeError: Value is undefined and could not be converted to an object
                         //FIXME: when removing an element of NumberClassList model border color is stilll asked
                         border.color: numberClassListModel.get(index).misplaced === true ? "red" : "lightsteelblue"
                         color: dragArea.held ? "lightsteelblue" : "white"
@@ -393,8 +393,6 @@ ActivityBase {
                     NumberClassDropArea {
                         id: numberClassDropAreaElement
 
-                        //property alias numberWeightDragListModel: activity.background.numberWeightDragListModel //?
-
                         className: name  //name comes from numberClassListModel
 
                         Layout.fillHeight: true
@@ -413,10 +411,17 @@ ActivityBase {
                 tutorialText.anchors.margins: tutorialSection.tutorialText.height
                 tutorialDetails: Activity.tutorialInstructions
                 useImage: false
+                showButton.visible: false
+                previousButton.visible: false
+                restartButton.visible : true
 
                 onSkipPressed: {
+                    Activity.nextLevel()
                     Activity.initLevel()
-                    tutorialImage.visible = false    //?
+                }
+
+                onRestartPressed: {
+                    Activity.initLevel()
                 }
             }
         }
