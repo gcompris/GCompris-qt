@@ -33,7 +33,7 @@ Item {
     property int numberClassDragButtonIndex
     property int animationSequenceIndex
 
-    readonly property int animation_DURATION: 3000
+    readonly property int animation_DURATION: 1000
 
     Component.onCompleted: {
         console.log("tutorial1_screen_loaded")

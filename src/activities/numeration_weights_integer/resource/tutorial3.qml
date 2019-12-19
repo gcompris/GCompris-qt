@@ -49,7 +49,7 @@ Item {
     readonly property int hundred_WEIGHT_BUTTON_INDEX: 5
     readonly property int thousand_WEIGHT_BUTTON_INDEX: 6
 
-    readonly property int animation_DURATION: 300//0
+    readonly property int animation_DURATION: 1000
 
 
     Component.onCompleted: {

@@ -559,14 +559,18 @@ function removeAllClassNameColumn() {
 function initLevel() {
     console.log("start init ")
 
+
+    console.log("------"  +  items.levels[0].numbers)
+
     items.bar.level = currentLevel
     items.instruction.text = items.levels[currentLevel].objective
     items.instruction.show()
 
     console.log("currentLevel: " + currentLevel)
     numbersToConvert = items.levels[currentLevel].numbers
+    console.log("numbersToConvert1: " + numbersToConvert)
     originalNumbersToConvert = numbersToConvert.slice()
-    console.log("numbersToConvert: " + numbersToConvert)
+    console.log("numbersToConvert2: " + numbersToConvert)
     scorePercentage = 0
     items.progressBar.value = scorePercentage
     scorePourcentageStep = Math.round((100 / numbersToConvert.length))

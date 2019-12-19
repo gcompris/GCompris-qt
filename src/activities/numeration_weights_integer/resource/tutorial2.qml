@@ -35,7 +35,7 @@ Item {
     property int numberColumnWeightIndex
     property int numberColumnWeightDragButtonIndex
 
-    readonly property int animation_DURATION: 300//0
+    readonly property int animation_DURATION: 1000
 
 
     Component.onCompleted: {
