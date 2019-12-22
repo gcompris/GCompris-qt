@@ -51,7 +51,10 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            //dialogActivityConfig.getInitialConfiguration()
+
+            dialogActivityConfig.initialize()
+
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -650,17 +653,43 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload | config}
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.reloadRandom()    //?
-            onConfigClicked: {
-                dialogActivityConfig.active = true
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
+            }
+
+        }
+
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onClose: {
+                home()
+            }
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevel
+                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
+                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
+                home()
+                background.stop()
+                background.start()
+
+
+            }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
+                }
+            }
+            onStartActivity: {
+                background.start()
             }
         }
 
