@@ -19,9 +19,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtQuick.Controls 1.5
 import GCompris 1.0
-import "note_names.js" as Activity
 
 Timer {
     id: timer
