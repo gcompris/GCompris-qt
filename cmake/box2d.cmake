@@ -13,6 +13,14 @@ if(NOT ${QML_BOX2D_MODULE} STREQUAL "disabled")
   else()
     # try to find module in system scope
     find_library(QML_BOX2D_LIBRARY NAMES Box2D libBox2D PATHS ${_box2d_system_dir} NO_DEFAULT_PATH)
+    # Look in default path if not found
+    if(NOT QML_BOX2D_LIBRARY AND NOT "${CMAKE_FIND_ROOT_PATH}" STREQUAL "")
+      # Remove the root path to look for the library
+      set(_box2d_without_cmake_find_root_path)
+      string(REPLACE "${CMAKE_FIND_ROOT_PATH}" "" _box2d_without_cmake_find_root_path ${_box2d_system_dir})
+      find_library(QML_BOX2D_LIBRARY NAMES Box2D libBox2D PATHS ${_box2d_without_cmake_find_root_path})
+    endif()
+
     if(QML_BOX2D_LIBRARY)
       message(STATUS "Using system qml-box2d plugin at ${QML_BOX2D_LIBRARY}")
       # for packaging builds, copy the module manually to the correct location
