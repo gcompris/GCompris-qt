@@ -47,6 +47,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -65,6 +66,7 @@ ActivityBase {
             property int numberOfLine: targetModelData.length / numberOfColumn
             property alias targetModel: targetModel
             property var targetModelData
+            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
         }
 
         onStart: { Activity.start(items) }
@@ -416,6 +418,30 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                activity.focus = true
+                background.stop()
+                background.start()
+            }
+            onLoadData: {
+                if(activityData) {
+                    Activity.initLevel()
+                }
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -423,13 +449,16 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onActivityConfigClicked: {
+                 displayDialog(dialogActivityConfig)
+             }
         }
 
         Bonus {
