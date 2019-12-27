@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Emmanuel Charruau <echarruau@gmail.com>"
   demo: true
   //: Activity title
-  title: "Numeration activity"
+  title: qsTr("Numeration activity")
   //: Help title
   description: ""
   //intro: "put here in comment the text for the intro voice"  //?

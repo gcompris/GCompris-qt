@@ -46,18 +46,18 @@ Rectangle {
     color: "blue"
 
     ListModel {
-            id: numberWeightHeadersModel
+        id: numberWeightHeadersModel
 
-            ListElement {
-                weightType: "Hundred"
-            }
-            ListElement {
-                weightType: "Ten"
-            }
-            ListElement {
-                weightType: "Unit"
-            }
+        ListElement {
+            weightType: qsTr("Hundred")
         }
+        ListElement {
+            weightType: qsTr("Ten")
+        }
+        ListElement {
+            weightType: qsTr("Unit")
+        }
+    }
 
     RowLayout {
         id: numberWeightsDropAreasRowLayout
@@ -68,9 +68,6 @@ Rectangle {
 
         Repeater {
             id: numberWeightsDropAreasRepeater
-
-
-
             model: numberWeightHeadersModel
 
             Rectangle {

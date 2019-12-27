@@ -1,4 +1,4 @@
-/* GCompris - Share.qml
+/* GCompris - Numeration_weights_integer.qml
  *
  * Copyright (C) 2019 Emmanuel Charruau <echarruau@gmail.com>
  *
@@ -33,7 +33,6 @@ import QtQuick.Controls 1.5
 import QtQml.Models 2.1
 
 import "../../core"
-
 import "numeration_weights_integer.js" as Activity
 
 ActivityBase {
@@ -96,7 +95,6 @@ ActivityBase {
 
         property bool vert: background.width >= background.height
 
-
         //mainZone
         DropArea {
             id: mainZoneArea
@@ -124,7 +122,6 @@ ActivityBase {
 
             Rectangle {
                 id: mainZoneAreaDropRectangleVisualisation
-
                 anchors.fill: parent
                 color: "pink"
             }
@@ -416,7 +413,7 @@ ActivityBase {
                 useImage: false
                 showButton.visible: false
                 previousButton.visible: false
-                restartButton.visible : true
+                restartButton.visible: true
 
                 onSkipPressed: {
                     Activity.nextLevel()
@@ -548,10 +545,6 @@ ActivityBase {
                 opacity = 0
             }
         }
-
-
-
-
 
         //dragable weights list (leftwidget)
         Rectangle {

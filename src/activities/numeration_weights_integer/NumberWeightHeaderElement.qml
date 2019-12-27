@@ -1,4 +1,3 @@
-
 /* GCompris - NumberWeightHeaderElement.qml
  *
  * Copyright (C) 2019 Emmanuel Charruau <echarruau@gmail.com>

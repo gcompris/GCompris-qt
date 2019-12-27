@@ -1,4 +1,3 @@
- 
 /* GCompris - NumberClassHeaderElement.qml
  *
  * Copyright (C) 2019 Emmanuel Charruau <echarruau@gmail.com>
@@ -21,7 +20,6 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
-
 
 Item {
     id: numberClassHeaderElement
@@ -48,7 +46,6 @@ Item {
             }
             held = false
         }
-
 
         Rectangle {
             id: content
@@ -92,14 +89,12 @@ Item {
                 text: index     //numberClassListModel.get(index).name //?
                 z: 100
             }
-
         }
 
         DropArea {
             anchors { fill: parent; margins: 10 }
 
             onEntered: {
-
                 console.log("entered")
                 visualModel.items.move(
                         drag.source.DelegateModel.itemsIndex,
