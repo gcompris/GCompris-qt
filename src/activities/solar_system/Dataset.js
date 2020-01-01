@@ -119,7 +119,7 @@ function get() {
                             "closeness": [100, 1, 23, 11.6]
                         },
                         { 	// sub-level 5
-                            "question": qsTr("How long is a rotation on Venus?"),
+                            "question": qsTr("How long is one rotation on Venus?"),
                             "options": [qsTr("117 Earth days"), qsTr("365 Earth days"), qsTr("88 Earth days"), qsTr("107 Earth days")],
                             "closeness": [100, 1, 88.8, 96.4]
                         },
@@ -158,7 +158,7 @@ function get() {
                             "closeness": [100, 15, 75, 50.5]
                         },
                         { 	// sub-level 4
-                            "question": qsTr("How long is a rotation on Earth?"),
+                            "question": qsTr("How long is one rotation on Earth?"),
                             "options": [qsTr("12 hours"), qsTr("24 hours"), qsTr("365 hours"), qsTr("48 hours")],
                             "closeness": [96.5, 100, 1, 93]
                         },
@@ -207,7 +207,7 @@ function get() {
                             "closeness": [67, 1, 100, 50.5]
                         },
                         { 	// sub-level 5
-                            "question": qsTr("How long is a rotation on Mars?"),
+                            "question": qsTr("How long is one rotation on Mars?"),
                             "options": [qsTr("12 hours"), qsTr("24 hours"), qsTr("24.5 hours"), qsTr("48 hours")],
                             "closeness": [47.3, 91, 100, 1]
                         },
