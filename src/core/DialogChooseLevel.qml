@@ -153,7 +153,7 @@ Rectangle {
         }
 
         onLoaded: {
-            difficultiesModel.push({"level": currentFile.level, "objective": item.objective, "difficulty": item.difficulty, "selectedInConfig": chosenLevels.includes(currentFile.level)})
+            difficultiesModel.push({"level": currentFile.level, "objective": item.objective, "difficulty": item.difficulty, "selectedInConfig": (chosenLevels.indexOf(currentFile.level) != -1)})
             if(dataFiles.length != 0) {
                 start()
             }
