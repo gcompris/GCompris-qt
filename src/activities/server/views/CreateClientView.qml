@@ -1,7 +1,8 @@
 import QtQuick 2.0
 import "../../../core"
 
-import components 1.0
+import "../components"
+
 
 Item {
     Rectangle {

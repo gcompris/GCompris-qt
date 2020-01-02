@@ -1,0 +1,444 @@
+Index: src/activities/guessnumber/ActivityInfo.qml
+===================================================================
+--- src/activities/guessnumber/ActivityInfo.qml
++++ src/activities/guessnumber/ActivityInfo.qml
+@@ -37,4 +37,5 @@
+   credit: ""
+   section: "math numeration"
+   createdInVersion: 0
++  levels: "1,2,3,4"
+ }
+Index: src/activities/guessnumber/AnswerArea.qml
+===================================================================
+--- src/activities/guessnumber/AnswerArea.qml
++++ src/activities/guessnumber/AnswerArea.qml
+@@ -36,7 +36,6 @@
+     }
+ 
+     property string userEntry
+-
+     // A top gradient
+     Rectangle {
+         anchors.fill: parent
+@@ -54,7 +53,7 @@
+         anchors.fill: parent
+         horizontalAlignment: Text.AlignHCenter
+         verticalAlignment: Text.AlignVCenter
+-        text: answerBackground.userEntry
++        text: Activity.splitAnswer(answerBackground.userEntry)
+         color: "black"
+         fontSize: largeSize
+         style: Text.Outline
+@@ -65,11 +64,11 @@
+         id: hiddentext
+         opacity: 0
+         fontSize: userEntryText.fontSize
+-        text: items.currentMax
++        text: items.levels[Activity.currentLevel].maxNumber
+     }
+ 
+     onUserEntryChanged: {
+-        if(userEntry != "")
++        if(userEntry != "") 
+             Activity.setUserAnswer(parseInt(userEntry))
+     }
+ }
+Index: src/activities/guessnumber/Guessnumber.qml
+===================================================================
+--- src/activities/guessnumber/Guessnumber.qml
++++ src/activities/guessnumber/Guessnumber.qml
+@@ -44,6 +44,7 @@
+         onHeightChanged: helico.init()
+ 
+         Component.onCompleted: {
++            dialogActivityConfig.initialize()
+             activity.start.connect(start)
+             activity.stop.connect(stop)
+         }
+@@ -59,8 +60,8 @@
+             property alias textArea: textArea
+             property alias infoText: userInfo
+             property alias answerArea: answerArea
++            property var levels: activity.datasetLoader.item.data
+             property alias numpad: numpad
+-            property int currentMax: 0
+             property int maxSize: 120
+             property int minSize: 80
+             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
+@@ -134,6 +135,25 @@
+             numpad.updateAnswer(event.key, false);
+         }
+ 
++        DialogChooseLevel {
++            id: dialogActivityConfig
++            currentActivity: activity.activityInfo
++
++            onSaveData: {
++                levelFolder = dialogActivityConfig.chosenLevel
++                currentActivity.currentLevel = dialogActivityConfig.chosenLevel
++                ApplicationSettings.setCurrentLevel(currentActivity.name, dialogActivityConfig.chosenLevel)
++                background.start()
++                home()
++            }
++            onClose: {
++                home()
++            }
++            onStartActivity: {
++                background.start()
++            }
++        }
++
+         DialogHelp {
+             id: dialogHelp
+             onClose: home()
+@@ -141,13 +161,16 @@
+ 
+         Bar {
+             id: bar
+-            content: BarEnumContent { value: help | home | level }
++            content: BarEnumContent { value: help | home | level | activityConfig }
+             onHelpClicked: {
+                 displayDialog(dialogHelp)
+             }
++            onActivityConfigClicked: {
++                 displayDialog(dialogActivityConfig)
++            }
+             onPreviousLevelClicked: Activity.previousLevel()
+             onNextLevelClicked: Activity.nextLevel()
+-            onHomeClicked: activity.home()
++            onHomeClicked: activity.home() 
+         }
+ 
+         Bonus {
+Index: src/activities/guessnumber/guessnumber.js
+===================================================================
+--- src/activities/guessnumber/guessnumber.js
++++ src/activities/guessnumber/guessnumber.js
+@@ -23,7 +23,7 @@
+ .import QtQuick 2.6 as Quick
+ 
+ var currentLevel = 0
+-var numberOfLevel = 9
++var numberOfLevel
+ var items
+ var numberToGuess = 0
+ 
+@@ -37,41 +37,16 @@
+ }
+ 
+ function initLevel() {
++    numberOfLevel = items.levels.length
+     items.bar.level = currentLevel + 1
+     items.helico.init()
+     items.helico.state = "horizontal"
+     items.infoText.text = ""
+     items.numpad.resetText()
+-    switch(currentLevel) {
+-    case 0: items.currentMax = 20
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    case 1: items.currentMax = 40
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    case 2: items.currentMax = 60
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    case 3: items.currentMax = 100
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    case 4: items.currentMax = 500
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    case 5: items.currentMax = 1000
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    case 6: items.currentMax = 5000
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    case 7: items.currentMax = 10000
+-           numberToGuess = getRandomInt(1,items.currentMax)
+-           break;
+-    case 8: items.currentMax = 50000
+-            numberToGuess = getRandomInt(1,items.currentMax)
+-            break;
+-    }
+-    items.textArea.text = qsTr("Guess a number between 1 and %1").arg(items.currentMax);
++    
++    if(items.levels)
++        numberToGuess = getRandomInt(items.levels[currentLevel].minNumber, items.levels[currentLevel].maxNumber)
++    items.textArea.text = items.levels[currentLevel].objective
+ }
+ 
+ function nextLevel() {
+@@ -92,10 +67,14 @@
+     return Math.floor(Math.random() * (max - min + 1) + min);
+ }
+ 
++function splitAnswer(userEntry) {
++    return userEntry.replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1 ");
++}
++
+ function setUserAnswer(value){
+     if(value === 0)
+         return;
+-    if(value > items.currentMax){
++    if(value > items.levels[currentLevel].maxNumber){
+         items.infoText.text = qsTr("Number too high")
+         return;
+     }
+@@ -112,9 +91,9 @@
+         items.helico.x = items.background.width
+         items.helico.y = items.background.height / 2 - items.helico.height / 2
+     } else {
+-        var diff = Math.abs(numberToGuess-value)/items.currentMax
++        var diff = Math.abs(numberToGuess-value) / items.levels[currentLevel].maxNumber
+         items.helico.x = (items.background.width-items.helico.width) - diff * items.background.width
+         items.helico.y = items.background.height / 2 +
+-                ((numberToGuess-value) / items.currentMax) * (items.background.height/2) - items.helico.height / 2
++                ((numberToGuess-value) / items.levels[currentLevel].maxNumber) * (items.background.height/2) - items.helico.height / 2
+     }
+ }
+Index: src/activities/guessnumber/resource/1/Data.qml
+===================================================================
+--- /dev/null
++++ src/activities/guessnumber/resource/1/Data.qml
+@@ -0,0 +1,55 @@
++/* GCompris - Data.qml
++ *
++ * Copyright (C) 2019 Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ * Authors:
++ *   Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ *   This program is free software; you can redistribute it and/or modify
++ *   it under the terms of the GNU General Public License as published by
++ *   the Free Software Foundation; either version 3 of the License, or
++ *   (at your option) any later version.
++ *
++ *   This program is distributed in the hope that it will be useful,
++ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
++ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ *   GNU General Public License for more details.
++ *
++ *   You should have received a copy of the GNU General Public License
++ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
++ */
++
++import QtQuick 2.6
++import GCompris 1.0
++import "../../../../core"
++
++Dataset {
++    objective: qsTr("Guess a number between 1 and 100.")
++    difficulty: 1
++    data: [
++        {
++            "level" : "1",
++            "objective" : qsTr("Guess a number between 1 and 25"),
++            "minNumber" : 1,
++            "maxNumber" : 25
++        },
++        {
++            "level" : "2",
++            "objective" : qsTr("Guess a number between 25 and 50"),
++            "minNumber" : 25,
++            "maxNumber" : 50
++        },
++        {
++            "level" : "3",
++            "objective" : qsTr("Guess a number between 50 and 75"),
++            "minNumber" : 50,
++            "maxNumber" : 75
++        },
++        {
++            "level" : "4",
++            "objective" : qsTr("Guess a number between 75 and 100"),
++            "minNumber" : 75,
++            "maxNumber" : 100
++        }
++    ]
++}
+\ No newline at end of file
+Index: src/activities/guessnumber/resource/2/Data.qml
+===================================================================
+--- /dev/null
++++ src/activities/guessnumber/resource/2/Data.qml
+@@ -0,0 +1,55 @@
++/* GCompris - Data.qml
++ *
++ * Copyright (C) 2019 Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ * Authors:
++ *   Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ *   This program is free software; you can redistribute it and/or modify
++ *   it under the terms of the GNU General Public License as published by
++ *   the Free Software Foundation; either version 3 of the License, or
++ *   (at your option) any later version.
++ *
++ *   This program is distributed in the hope that it will be useful,
++ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
++ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ *   GNU General Public License for more details.
++ *
++ *   You should have received a copy of the GNU General Public License
++ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
++ */
++
++import QtQuick 2.6
++import GCompris 1.0
++import "../../../../core"
++
++Dataset {
++    objective: qsTr("Guess a number between 1 and 1 000.")
++    difficulty: 2
++    data: [
++        {
++            "level" : "1",
++            "objective" : qsTr("Guess a number between 1 and 250"),
++            "minNumber" : 1,
++            "maxNumber" : 250
++        },
++        {
++            "level" : "2",
++            "objective" : qsTr("Guess a number between 250 and 500"),
++            "minNumber" : 250,
++            "maxNumber" : 500
++        },
++        {
++            "level" : "3",
++            "objective" : qsTr("Guess a number between 500 and 750"),
++            "minNumber" : 500,
++            "maxNumber" : 750
++        },
++        {
++            "level" : "4",
++            "objective" : qsTr("Guess a number between 750 and 1 000"),
++            "minNumber" : 750,
++            "maxNumber" : 1000
++        }
++    ]
++}
+\ No newline at end of file
+Index: src/activities/guessnumber/resource/3/Data.qml
+===================================================================
+--- /dev/null
++++ src/activities/guessnumber/resource/3/Data.qml
+@@ -0,0 +1,55 @@
++/* GCompris - Data.qml
++ *
++ * Copyright (C) 2019 Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ * Authors:
++ *   Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ *   This program is free software; you can redistribute it and/or modify
++ *   it under the terms of the GNU General Public License as published by
++ *   the Free Software Foundation; either version 3 of the License, or
++ *   (at your option) any later version.
++ *
++ *   This program is distributed in the hope that it will be useful,
++ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
++ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ *   GNU General Public License for more details.
++ *
++ *   You should have received a copy of the GNU General Public License
++ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
++ */
++
++import QtQuick 2.6
++import GCompris 1.0
++import "../../../../core"
++
++Dataset {
++    objective: qsTr("Guess a number between 1 and 100 000.")
++    difficulty: 3
++    data: [
++        {
++            "level" : "1",
++            "objective" : qsTr("Guess a number between 1 and 25 000"),
++            "minNumber" : 1,
++            "maxNumber" : 25000
++        },
++        {
++            "level" : "2",
++            "objective" : qsTr("Guess a number between 25 000 and 50 000"),
++            "minNumber" : 25000,
++            "maxNumber" : 50000
++        },
++        {
++            "level" : "3",
++            "objective" : qsTr("Guess a number between 50 000 and 75 000"),
++            "minNumber" : 50000,
++            "maxNumber" : 75000
++        },
++        {
++            "level" : "4",
++            "objective" : qsTr("Guess a number between 75 000 and 100 000"),
++            "minNumber" : 75000,
++            "maxNumber" : 100000
++        }
++    ]
++}
+\ No newline at end of file
+Index: src/activities/guessnumber/resource/4/Data.qml
+===================================================================
+--- /dev/null
++++ src/activities/guessnumber/resource/4/Data.qml
+@@ -0,0 +1,55 @@
++/* GCompris - Data.qml
++ *
++ * Copyright (C) 2019 Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ * Authors:
++ *   Sambhav Kaul <sambhav.kaul12@gmail.com>
++ *
++ *   This program is free software; you can redistribute it and/or modify
++ *   it under the terms of the GNU General Public License as published by
++ *   the Free Software Foundation; either version 3 of the License, or
++ *   (at your option) any later version.
++ *
++ *   This program is distributed in the hope that it will be useful,
++ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
++ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ *   GNU General Public License for more details.
++ *
++ *   You should have received a copy of the GNU General Public License
++ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
++ */
++
++import QtQuick 2.6
++import GCompris 1.0
++import "../../../../core"
++
++Dataset {
++    objective: qsTr("Guess a number between 1 and 1 000 000 000.")
++    difficulty: 4
++    data: [
++        {
++            "level" : "1",
++            "objective" : qsTr("Guess a number between 1 and 250 000 000"),
++            "minNumber" : 1,
++            "maxNumber" : 250000000
++        },
++        {
++            "level" : "2",
++            "objective" : qsTr("Guess a number between 250 000 000 and 500 000 000"),
++            "minNumber" : 250000000,
++            "maxNumber" : 500000000
++        },
++        {
++            "level" : "3",
++            "objective" : qsTr("Guess a number between 500 000 000 and 750 000 000"),
++            "minNumber" : 500000000,
++            "maxNumber" : 750000000
++        },
++        {
++            "level" : "4",
++            "objective" : qsTr("Guess a number between 750 000 000 and 1 000 000 000"),
++            "minNumber" : 750000000,
++            "maxNumber" : 1000000000
++        }
++    ]
++}
+\ No newline at end of file

@@ -1,5 +1,5 @@
 import QtQuick 2.9
-import assets 1.0
+//import assets 1.0
 
 Item {
     property alias commandList: commandRepeater.model
