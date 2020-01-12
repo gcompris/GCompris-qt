@@ -251,6 +251,7 @@ Item {
         }
 
         datasetLoader.data = []
+        levelFolder.sort()
         for(var level in levelFolder) {
             datasetLoader.dataFiles.push({"file": resourceUrl+levelFolder[level]+"/Data.qml"})
         }
