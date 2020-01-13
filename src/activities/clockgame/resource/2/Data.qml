@@ -1,9 +1,9 @@
 /* GCompris - Data.qml
  *
- * Copyright (C) 2018 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2020 Deepak Kumar <deepakdk2431@gmail.com>
  *
  * Authors:
- *   Johnny Jazeix <jazeix@gmail.com>
+ *   Deepak Kumar <deepakdk2431@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,32 +21,36 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Set and display time on analog clock for a time containing minutes and seconds.")
+    objective: qsTr("Full and half hours.")
     difficulty: 4
     data: [
-    {
-        "numberOfSubLevels": 5,
-        "displayMinutesHand": true,
-        "fixedSeconds": 0,
-        "displaySecondsHand": false
-    },
-    {
-        "numberOfSubLevels": 5,
-        "fixedMinutes": 0,
-        "displayMinutesHand": true,
-        "fixedSeconds": 30,
-        "displaySecondsHand": true
-    },
-    {
-        "numberOfSubLevels": 5,
-        "displayMinutesHand": true,
-        "displaySecondsHand": true
-    },
-    {
-        "numberOfSubLevels": 10,
-        "displayMinutesHand": true,
-        "displaySecondsHand": true,
-        "zonesVisible": false
-    }
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 0,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 0,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 30,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 30,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        }
     ]
 }

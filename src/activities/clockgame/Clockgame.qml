@@ -77,6 +77,7 @@ ActivityBase {
         }
 
         Score {
+            id: score
             anchors {
                 bottom: bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
@@ -420,16 +421,6 @@ ActivityBase {
                     }
                 }
 
-                onReleased: {
-                    Activity.selectedArrow = null
-                    //todo replace this with Ok button
-                    if (items.currentH === items.targetH
-                            && items.currentM === items.targetM
-                            && items.currentS === items.targetS) {
-                        items.bonus.good("gnu")
-                    }
-                }
-
                 onMouseXChanged: {
                     /* Move */
                     if (Activity.selectedArrow !== null) {
@@ -460,6 +451,27 @@ ActivityBase {
                         if (previousM < 15 && items.currentM > 45)
                             items.currentH = (items.currentH - 1 + 12) % 12
                     }
+                }
+            }
+        }
+
+        BarButton {
+            id: okButton
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
+            anchors.bottomMargin: parent.width * 0.03
+            anchors.left: score.right
+            anchors.leftMargin: parent.width * 0.7
+            ParticleSystemStarLoader {
+                id: okButtonParticles
+                clip: false
+            }
+            MouseArea {
+                id: okButtonMouseArea
+                anchors.fill: parent
+                onClicked: {
+                    Activity.checkAnswer()
                 }
             }
         }

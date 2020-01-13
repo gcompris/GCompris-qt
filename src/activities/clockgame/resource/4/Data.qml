@@ -21,22 +21,36 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Full hours.")
-    difficulty: 4
+    objective: qsTr("Time containing minutes.")
+    difficulty: 5
     data: [
         {
             "numberOfSubLevels": 5,
-            "fixedMinutes": 0,
-            "displayMinutesHand": false,
+            "fixedMinutes": 25,
+            "displayMinutesHand": true,
             "fixedSeconds": 0,
             "displaySecondsHand": false
         },
         {
             "numberOfSubLevels": 5,
-            "fixedMinutes": 0,
-            "displayMinutesHand": false,
+            "fixedMinutes": 55,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 35,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 10,
+            "displayMinutesHand": true,
             "fixedSeconds": 0,
             "displaySecondsHand": false
         }
+
     ]
 }

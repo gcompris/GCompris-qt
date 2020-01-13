@@ -39,6 +39,7 @@ function initLevel() {
     items.numberOfTry = items.levels[currentLevel].numberOfSubLevels
     items.currentH = Math.floor(Math.random() * 12)
     items.targetH = Math.floor(Math.random() * 12)
+
     items.minutesHandVisible = items.levels[currentLevel].displayMinutesHand
     if(!items.minutesHandVisible) {
         items.currentM = 0
@@ -81,6 +82,17 @@ function nextTry() {
         nextLevel()
     } else {
         initLevel()
+    }
+}
+
+function checkAnswer() {
+    if (items.currentH === items.targetH
+                    && items.currentM === items.targetM
+                    && items.currentS === items.targetS) {
+        items.bonus.good("gnu")
+    }
+    else {
+        items.bonus.bad("gnu")
     }
 }
 

@@ -1,9 +1,9 @@
 /* GCompris - Data.qml
  *
- * Copyright (C) 2020 Deepak Kumar <deepakdk2431@gmail.com>
+ * Copyright (C) 2018 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   Deepak Kumar <deepakdk2431@gmail.com>
+ *   Johnny Jazeix <jazeix@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,20 +21,48 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Full hours.")
-    difficulty: 4
+    objective: qsTr("Full half and quarters of an hour.")
+    difficulty: 5
     data: [
         {
             "numberOfSubLevels": 5,
             "fixedMinutes": 0,
-            "displayMinutesHand": false,
+            "displayMinutesHand": true,
             "fixedSeconds": 0,
             "displaySecondsHand": false
         },
         {
             "numberOfSubLevels": 5,
             "fixedMinutes": 0,
-            "displayMinutesHand": false,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 15,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 15,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 30,
+            "displayMinutesHand": true,
+            "fixedSeconds": 0,
+            "displaySecondsHand": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "fixedMinutes": 45,
+            "displayMinutesHand": true,
             "fixedSeconds": 0,
             "displaySecondsHand": false
         }
