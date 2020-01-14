@@ -51,7 +51,7 @@ Loader {
 
     Timer {
         id: stopParticleSystem
-        interval: item.emitter.lifeSpan + item.emitter.lifeSpanVariation
+        interval: (item && item.emitter) ? item.emitter.lifeSpan + item.emitter.lifeSpanVariation : 0
         repeat: false
         onTriggered: item.stop()
     }
