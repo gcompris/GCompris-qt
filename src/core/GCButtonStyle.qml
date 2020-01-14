@@ -83,6 +83,14 @@ ButtonStyle {
             borderColor: "white",
             textColor: "373737"
             
+        },
+        "settingsButton": {
+            backgroundColorGradient0: "#bdbed0",
+            selectedColorGradient0: "#e6e6e6",
+            backgroundColorGradient1: "#bdbed0",
+            selectedColorGradient1: "#e6e6e6",
+            borderColor: selected ? "#ffffffff" : "#00ffffff",
+            textColor: "black"
         }
     }
 
@@ -106,9 +114,9 @@ ButtonStyle {
     }
 
     background: Rectangle {
-        border.width: control.activeFocus ? 4 : 2
+        border.width: theme === "settingsButton" ? 3 * ApplicationInfo.ratio : control.activeFocus ? 3 * ApplicationInfo.ratio : 1 * ApplicationInfo.ratio
         border.color: themes[theme].borderColor
-        radius: 10
+        radius: 10 * ApplicationInfo.ratio
         gradient: Gradient {
             GradientStop { position: 0 ; color: (control.pressed || buttonStyle.selected) ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
             GradientStop { position: 1 ; color: (control.pressed || buttonStyle.selected) ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }

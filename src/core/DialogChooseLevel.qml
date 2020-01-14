@@ -176,12 +176,13 @@ Rectangle {
             anchors.top: parent.top
             Item { width: 1; height: 10 }
             Rectangle {
+                id: titleRectangle
                 color: "#e6e6e6"
-                radius: 6.0
+                radius: 10 * ApplicationInfo.ratio
                 width: dialogChooseLevel.width - 30
                 height: title.height * 1.2
                 border.color: "black"
-                border.width: 2
+                border.width: 0
 
                 Row {
                     spacing: 2
@@ -198,7 +199,7 @@ Rectangle {
                     GCText {
                         id: title
                         text: dialogChooseLevel.title
-                        width: dialogChooseLevel.width - (30 + cancel.width)
+                        width: dialogChooseLevel.width - 30 //- (30 + cancel.width)
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         color: "black"
@@ -225,6 +226,7 @@ Rectangle {
                     width: parent.width / 3
                     property bool selected: true
                     style: GCButtonStyle {
+                        theme: "settingsButton"
                         selected: datasetVisibleButton.selected
                     }
                     onClicked: { selected = true; }
@@ -237,6 +239,7 @@ Rectangle {
                     opacity: enabled ? 1 : 0
                     width: parent.width / 3
                     style: GCButtonStyle {
+                        theme: "settingsButton"
                         selected: !datasetVisibleButton.selected
                     }
                     onClicked: { datasetVisibleButton.selected = false; } //showOptions()
@@ -245,16 +248,17 @@ Rectangle {
 
             // "Dataset"/"Options" content
             Rectangle {
-                color: "#e6e6e6"
-                radius: 6.0
+                color: "#bdbed0"
+                radius: 10 * ApplicationInfo.ratio
                 width: dialogChooseLevel.width - 30
                 height: dialogChooseLevel.height - (30 + title.height * 1.2) - saveAndPlayRow.height - datasetOptionsRow.height - 3 * parent.spacing
-                border.color: "black"
-                border.width: 2
+                border.color: "white"
+                border.width: 3 * ApplicationInfo.ratio
+                anchors.margins: 100
 
                 Flickable {
                     id: flick
-                    anchors.margins: 8
+                    anchors.margins: 10 * ApplicationInfo.ratio
                     anchors.top: parent.top
                     anchors.left: parent.left
                     anchors.right: parent.right
@@ -361,8 +365,10 @@ Rectangle {
                     height: parent.height
                     width: parent.width / 4
                     property bool selected: true
-                    style: GCButtonStyle {}
-                    onClicked: dialogChooseLevel.close()
+                    style: GCButtonStyle {
+                        theme: "settingsButton"
+                    }
+                    onClicked: close();
                 }
                 Button {
                     id: saveButton
@@ -370,7 +376,9 @@ Rectangle {
                     height: parent.height
                     width: parent.width / 4
                     property bool selected: true
-                    style: GCButtonStyle { }
+                    style: GCButtonStyle {
+                        theme: "settingsButton"
+                    }
                     onClicked: {
                         saveData();
                         close();
@@ -382,7 +390,9 @@ Rectangle {
                     height: parent.height
                     width: parent.width / 3
                     visible: inMenu === true
-                    style: GCButtonStyle { }
+                    style: GCButtonStyle {
+                        theme: "settingsButton"
+                    }
                     onClicked: {
                         saveData();
                         startActivity();
@@ -391,14 +401,6 @@ Rectangle {
             }
 
             Item { width: 1; height: 10 }
-        }
-    }
-
-    // The cancel button
-    GCButtonCancel {
-        id: cancel
-        onClose: {
-            parent.close()
         }
     }
 

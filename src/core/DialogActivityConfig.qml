@@ -156,12 +156,33 @@ Rectangle {
             anchors.top: parent.top
             Item { width: 1; height: 10 }
             Rectangle {
+                id: titleRectangle
                 color: "#e6e6e6"
-                radius: 6.0
+                radius: 10 * ApplicationInfo.ratio
                 width: dialogActivityContent.width - 30
                 height: title.height * 1.2
                 border.color: "black"
-                border.width: 2
+                border.width: 0
+
+                // The apply button
+                GCButtonCancel {
+                    id: apply
+                    apply: true
+                    anchors.verticalCenter: titleRectangle.verticalCenter
+                    anchors.margins: 2 * ApplicationInfo.ratio
+                    onClose: {
+                        if (dialogActivityContent.dataValidationFunc && !
+                            dialogActivityContent.dataValidationFunc()) {
+                            console.log("Configuration data is invalid, not saving!");
+                        return;
+                            }
+                            saveData()
+                            if(activityName != "") {
+                                ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
+                            }
+                            dialogActivityContent.close()
+                    }
+                }
 
                 Row {
                     spacing: 2
@@ -178,7 +199,7 @@ Rectangle {
                     GCText {
                         id: title
                         text: dialogActivityContent.title
-                        width: dialogActivityContent.width - (30 + cancel.width)
+                        width: dialogActivityContent.width - (30 + apply.width)
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         color: "black"
@@ -190,17 +211,17 @@ Rectangle {
             }
 
             Rectangle {
-                color: "#e6e6e6"
-                radius: 6.0
+                color: "#bdbed0"
+                radius: 10 * ApplicationInfo.ratio
                 width: dialogActivityContent.width - 30
                 height: dialogActivityContent.height - (30 + title.height * 1.2)
-                border.color: "black"
-                border.width: 2
+                border.color: "white"
+                border.width: 3 * ApplicationInfo.ratio
                 anchors.margins: 100
 
                 Flickable {
                     id: flick
-                    anchors.margins: 8
+                    anchors.margins: 10 * ApplicationInfo.ratio
                     anchors.fill: parent
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
@@ -229,22 +250,4 @@ Rectangle {
             Item { width: 1; height: 10 }
         }
     }
-
-    // The cancel button
-    GCButtonCancel {
-        id: cancel
-        onClose: {
-            if (dialogActivityContent.dataValidationFunc && !
-                    dialogActivityContent.dataValidationFunc()) {
-                console.log("Configuration data is invalid, not saving!");
-                return;
-            }
-            saveData()
-            if(activityName != "") {
-                ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
-            }
-            parent.close()
-        }
-    }
-
 }

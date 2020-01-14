@@ -29,14 +29,17 @@ import GCompris 1.0
  */
 Image {
     id: cancel
-    source: "qrc:/gcompris/src/core/resource/cancel.svg";
+    source: apply ? "qrc:/gcompris/src/core/resource/apply.svg" : "qrc:/gcompris/src/core/resource/cancel.svg";
     anchors.right: parent.right
     anchors.top: parent.top
     smooth: true
     sourceSize.width: 60 * ApplicationInfo.ratio
+    fillMode: Image.PreserveAspectFit
     anchors.margins: 10
 
     signal close
+
+    property bool apply: false
 
     SequentialAnimation {
         id: anim
