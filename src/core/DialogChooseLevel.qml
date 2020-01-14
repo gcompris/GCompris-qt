@@ -166,241 +166,234 @@ Rectangle {
         }
     }
 
-    Row {
-        visible: true
-        spacing: 2
-        Item { width: 10; height: 1 }
+    Column {
+        id: titleColumn
+        spacing: 10
+        anchors.top: parent.top
+        anchors.topMargin: 10
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: dialogChooseLevel.width - 30
+        Rectangle {
+            id: titleRectangle
+            color: "#e6e6e6"
+            radius: 10 * ApplicationInfo.ratio
+            width: parent.width
+            height: title.height * 1.2
+            border.color: "black"
+            border.width: 0
 
-        Column {
-            spacing: 10
-            anchors.top: parent.top
-            Item { width: 1; height: 10 }
-            Rectangle {
-                id: titleRectangle
-                color: "#e6e6e6"
-                radius: 10 * ApplicationInfo.ratio
-                width: dialogChooseLevel.width - 30
-                height: title.height * 1.2
-                border.color: "black"
-                border.width: 0
-
-                Row {
-                    spacing: 2
-                    padding: 8
-                    Image {
-                        id: titleIcon
-                        anchors {
-                            left: parent.left
-                            top: parent.top
-                            margins: 4 * ApplicationInfo.ratio
-                        }
-                    }
-
-                    GCText {
-                        id: title
-                        text: dialogChooseLevel.title
-                        width: dialogChooseLevel.width - 30 //- (30 + cancel.width)
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        color: "black"
-                        fontSize: 20
-                        font.weight: Font.DemiBold
-                        wrapMode: Text.WordWrap
-                    }
-                }
-            }
-
-            // Header buttons
             Row {
-                id: datasetOptionsRow
-                height: dialogChooseLevel.height / 12
-                width: parent.width
-                spacing: parent.width / 4
-                anchors.leftMargin: parent.width / 8
-                Button {
-                    id: datasetVisibleButton
-                    text: qsTr("Dataset")
-                    enabled: hasDataset
-                    height: parent.height
-                    opacity: enabled ? 1 : 0
-                    width: parent.width / 3
-                    property bool selected: true
-                    style: GCButtonStyle {
-                        theme: "settingsButton"
-                        selected: datasetVisibleButton.selected
+                spacing: 2
+                padding: 8
+                Image {
+                    id: titleIcon
+                    anchors {
+                        left: parent.left
+                        top: parent.top
+                        margins: 4 * ApplicationInfo.ratio
                     }
-                    onClicked: { selected = true; }
                 }
-                Button {
-                    id: optionsVisibleButton
-                    text: qsTr("Options")
-                    enabled: hasConfig
-                    height: parent.height
-                    opacity: enabled ? 1 : 0
-                    width: parent.width / 3
-                    style: GCButtonStyle {
-                        theme: "settingsButton"
-                        selected: !datasetVisibleButton.selected
-                    }
-                    onClicked: { datasetVisibleButton.selected = false; } //showOptions()
+
+                GCText {
+                    id: title
+                    text: dialogChooseLevel.title
+                    width: titleColumn.width - 10
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    color: "black"
+                    fontSize: 20
+                    font.weight: Font.DemiBold
+                    wrapMode: Text.WordWrap
                 }
             }
+        }
 
-            // "Dataset"/"Options" content
-            Rectangle {
-                color: "#bdbed0"
-                radius: 10 * ApplicationInfo.ratio
-                width: dialogChooseLevel.width - 30
-                height: dialogChooseLevel.height - (30 + title.height * 1.2) - saveAndPlayRow.height - datasetOptionsRow.height - 3 * parent.spacing
-                border.color: "white"
-                border.width: 3 * ApplicationInfo.ratio
-                anchors.margins: 100
+        // Header buttons
+        Row {
+            id: datasetOptionsRow
+            height: dialogChooseLevel.height / 12
+            width: titleRectangle.width
+            spacing: titleRectangle.width * 0.1
+            Button {
+                id: datasetVisibleButton
+                text: qsTr("Dataset")
+                enabled: hasDataset
+                height: parent.height
+                width: titleRectangle.width * 0.45
+                opacity: enabled ? 1 : 0
+                property bool selected: true
+                style: GCButtonStyle {
+                    theme: "settingsButton"
+                    selected: datasetVisibleButton.selected
+                }
+                onClicked: { selected = true; }
+            }
+            Button {
+                id: optionsVisibleButton
+                text: qsTr("Options")
+                enabled: hasConfig
+                height: parent.height
+                width: titleRectangle.width * 0.45
+                opacity: enabled ? 1 : 0
+                style: GCButtonStyle {
+                    theme: "settingsButton"
+                    selected: !datasetVisibleButton.selected
+                }
+                onClicked: { datasetVisibleButton.selected = false; } //showOptions()
+            }
+        }
 
-                Flickable {
-                    id: flick
-                    anchors.margins: 10 * ApplicationInfo.ratio
-                    anchors.top: parent.top
-                    anchors.left: parent.left
-                    anchors.right: parent.right
-                    anchors.bottom: parent.bottom
-                    flickableDirection: Flickable.VerticalFlick
-                    clip: true
-                    contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
+        // "Dataset"/"Options" content
+        Rectangle {
+            color: "#bdbed0"
+            radius: 10 * ApplicationInfo.ratio
+            width: dialogChooseLevel.width - 30
+            height: dialogChooseLevel.height - (30 + title.height * 1.2) - saveAndPlayRow.height - datasetOptionsRow.height - 3 * parent.spacing
+            border.color: "white"
+            border.width: 3 * ApplicationInfo.ratio
+            anchors.margins: 100
 
-                    Loader {
-                        id: configLoader
-                        visible: !datasetVisibleButton.selected
-                        active: optionsVisibleButton.enabled
-                        source: active ? "qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml" : ""
+            Flickable {
+                id: flick
+                anchors.margins: 10 * ApplicationInfo.ratio
+                anchors.top: parent.top
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                flickableDirection: Flickable.VerticalFlick
+                clip: true
+                contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
 
-                        // Load configuration at start of activity
-                        // in the menu, it's done when the visibility property
-                        // of the dialog changes
-                        onItemChanged: if(!inMenu) { initializePanel(); }
+                Loader {
+                    id: configLoader
+                    visible: !datasetVisibleButton.selected
+                    active: optionsVisibleButton.enabled
+                    source: active ? "qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml" : ""
 
-                        function initializePanel() {
-                            if(item) {
-                                // only connect once the signal to save data
-                                if(item.background !== dialogChooseLevel) {
-                                    item.background = dialogChooseLevel
-                                    dialogChooseLevel.saveData.connect(save)
-                                }
-                                getInitialConfiguration()
+                    // Load configuration at start of activity
+                    // in the menu, it's done when the visibility property
+                    // of the dialog changes
+                    onItemChanged: if(!inMenu) { initializePanel(); }
+
+                    function initializePanel() {
+                        if(item) {
+                            // only connect once the signal to save data
+                            if(item.background !== dialogChooseLevel) {
+                                item.background = dialogChooseLevel
+                                dialogChooseLevel.saveData.connect(save)
                             }
-                        }
-
-                        function getInitialConfiguration() {
-                            activityData = Qt.binding(function() { return item.dataToSave })
-                            if(item) {
-                                item.dataToSave = ApplicationSettings.loadActivityConfiguration(activityName)
-                                item.setDefaultValues()
-                            }
-                        }
-                        function save() {
-                            item.saveValues()
-                            ApplicationSettings.saveActivityConfiguration(activityName, item.dataToSave)
+                            getInitialConfiguration()
                         }
                     }
+                    function getInitialConfiguration() {
+                        activityData = Qt.binding(function() { return item.dataToSave })
+                        if(item) {
+                            item.dataToSave = ApplicationSettings.loadActivityConfiguration(activityName)
+                            item.setDefaultValues()
+                        }
+                    }
+                    function save() {
+                        item.saveValues()
+                        ApplicationSettings.saveActivityConfiguration(activityName, item.dataToSave)
+                    }
+                }
 
-                    Column {
-                        visible: datasetVisibleButton.selected
-                        spacing: 10
+                Column {
+                    visible: datasetVisibleButton.selected
+                    spacing: 10
 
-                        Repeater {
-                            id: difficultiesRepeater
-                            delegate: Row {
-                                height: objective.height
-                                Image {
-                                    id: difficultyIcon
-                                    source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                    modelData.difficulty + ".svg";
-                                    sourceSize.height: objective.indicatorImageHeight
-                                    anchors.verticalCenter: objective.verticalCenter
-                                }
-                                GCDialogCheckBox {
-                                    id: objective
-                                    width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
-                                    text: modelData.objective
-                                    // to be fixed by all last used levels
-                                    checked: modelData.selectedInConfig
-                                    onClicked: {
-                                        if(checked) {
-                                            chosenLevels.push(modelData.level)
-                                        }
-                                        else if(chosenLevels.length > 1) {
-                                            chosenLevels.splice(chosenLevels.indexOf(modelData.level), 1)
-                                        }
-                                        else {
-                                            // At least one must be selected
-                                            checked = true;
-                                        }
+                    Repeater {
+                        id: difficultiesRepeater
+                        delegate: Row {
+                            height: objective.height
+                            Image {
+                                id: difficultyIcon
+                                source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                modelData.difficulty + ".svg";
+                                sourceSize.height: objective.indicatorImageHeight
+                                anchors.verticalCenter: objective.verticalCenter
+                            }
+                            GCDialogCheckBox {
+                                id: objective
+                                width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
+                                text: modelData.objective
+                                // to be fixed by all last used levels
+                                checked: modelData.selectedInConfig
+                                onClicked: {
+                                    if(checked) {
+                                        chosenLevels.push(modelData.level)
                                     }
-                                }                            
+                                    else if(chosenLevels.length > 1) {
+                                        chosenLevels.splice(chosenLevels.indexOf(modelData.level), 1)
+                                    }
+                                    else {
+                                        // At least one must be selected
+                                        checked = true;
+                                    }
+                                }
                             }
                         }
                     }
                 }
-
-                // The scroll buttons
-                GCButtonScroll {
-                    anchors.right: parent.right
-                    anchors.rightMargin: 5 * ApplicationInfo.ratio
-                    anchors.bottom: flick.bottom
-                    anchors.bottomMargin: 5 * ApplicationInfo.ratio
-                    onUp: flick.flick(0, 1400)
-                    onDown: flick.flick(0, -1400)
-                    upVisible: flick.visibleArea.yPosition <= 0 ? false : true
-                    downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
-                }
-            }
-            // Footer buttons
-            Row {
-                id: saveAndPlayRow
-                height: dialogChooseLevel.height / 12
-                width: parent.width
-                spacing: parent.width / 16
-                Button {
-                    id: cancelButton
-                    text: qsTr("Cancel")
-                    height: parent.height
-                    width: parent.width / 4
-                    property bool selected: true
-                    style: GCButtonStyle {
-                        theme: "settingsButton"
-                    }
-                    onClicked: close();
-                }
-                Button {
-                    id: saveButton
-                    text: qsTr("Save")
-                    height: parent.height
-                    width: parent.width / 4
-                    property bool selected: true
-                    style: GCButtonStyle {
-                        theme: "settingsButton"
-                    }
-                    onClicked: {
-                        saveData();
-                        close();
-                    }
-                }
-                Button {
-                    id: saveAndStartButton
-                    text: qsTr("Save and start")
-                    height: parent.height
-                    width: parent.width / 3
-                    visible: inMenu === true
-                    style: GCButtonStyle {
-                        theme: "settingsButton"
-                    }
-                    onClicked: {
-                        saveData();
-                        startActivity();
-                    }
-                }
             }
 
-            Item { width: 1; height: 10 }
+            // The scroll buttons
+            GCButtonScroll {
+                anchors.right: parent.right
+                anchors.rightMargin: 5 * ApplicationInfo.ratio
+                anchors.bottom: flick.bottom
+                anchors.bottomMargin: 5 * ApplicationInfo.ratio
+                onUp: flick.flick(0, 1400)
+                onDown: flick.flick(0, -1400)
+                upVisible: flick.visibleArea.yPosition <= 0 ? false : true
+                downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
+            }
+        }
+        // Footer buttons
+        Row {
+            id: saveAndPlayRow
+            height: dialogChooseLevel.height / 12
+            width: titleRectangle.width
+            spacing: titleRectangle.width * 0.05
+            Button {
+                id: cancelButton
+                text: qsTr("Cancel")
+                height: parent.height
+                width: titleRectangle.width * 0.25
+                property bool selected: true
+                style: GCButtonStyle {
+                    theme: "settingsButton"
+                }
+                onClicked: close();
+            }
+            Button {
+                id: saveButton
+                text: qsTr("Save")
+                height: parent.height
+                width: titleRectangle.width * 0.25
+                property bool selected: true
+                style: GCButtonStyle {
+                    theme: "settingsButton"
+                }
+                onClicked: {
+                    saveData();
+                    close();
+                }
+            }
+            Button {
+                id: saveAndStartButton
+                text: qsTr("Save and start")
+                height: parent.height
+                width: titleRectangle.width * 0.4
+                visible: inMenu === true
+                style: GCButtonStyle {
+                    theme: "settingsButton"
+                }
+                onClicked: {
+                    saveData();
+                    startActivity();
+                }
+            }
         }
     }
 
