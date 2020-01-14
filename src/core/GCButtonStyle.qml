@@ -81,7 +81,7 @@ ButtonStyle {
             backgroundColorGradient1: "#AAFFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            textColor: "373737"
+            textColor: "#373737"
             
         },
         "settingsButton": {
@@ -91,6 +91,14 @@ ButtonStyle {
             selectedColorGradient1: "#e6e6e6",
             borderColor: selected ? "#ffffffff" : "#00ffffff",
             textColor: "black"
+        },
+        "noStyle": {
+            backgroundColorGradient0: "#00FFFFFF",
+            selectedColorGradient0: "#00FFFFFF",
+            backgroundColorGradient1: "#00FFFFFF",
+            selectedColorGradient1: "#00FFFFFF",
+            borderColor: "#00FFFFFF",
+            textColor: "#00000000"
         }
     }
 

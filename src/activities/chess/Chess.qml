@@ -146,7 +146,7 @@ ActivityBase {
                         height: 30 * ApplicationInfo.ratio
                         width: height
                         text: "";
-                        style: GCButtonStyle { theme: "light" }
+                        style: GCButtonStyle { theme: "noStyle" }
                         onClicked: Activity.undo()
                         enabled: items.history.length > 0 ? 1 : 0
                         opacity: enabled
@@ -170,7 +170,7 @@ ActivityBase {
                         height: undo.height
                         width: undo.height
                         text: "";
-                        style: GCButtonStyle { theme: "light" }
+                        style: GCButtonStyle { theme: "noStyle" }
                         onClicked: {
                             if (!twoPlayers) {
                                 acceptClick = false;
@@ -200,7 +200,7 @@ ActivityBase {
                         height: undo.height
                         width: undo.height
                         text: "";
-                        style: GCButtonStyle { theme: "light" }
+                        style: GCButtonStyle { theme: "noStyle" }
                         enabled: items.twoPlayer
                         opacity: enabled
                         Image {
