@@ -1,7 +1,7 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
-#include "../controllers/cm-lib_global.h"
+#include "cm-lib_global.h"
 
 namespace cm {
 namespace models {
@@ -17,5 +17,3 @@ public:
 }
 
 #endif
-
-
