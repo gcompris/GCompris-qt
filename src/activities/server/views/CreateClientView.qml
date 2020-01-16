@@ -1,6 +1,6 @@
 import QtQuick 2.0
-import "../../../core"
 
+import "../../../core"
 import "../components"
 
 
@@ -16,6 +16,6 @@ Item {
 
 
     CommandBar {
-
+        commandList: masterController.ui_commandController.ui_createClientViewContextCommands
     }
 }

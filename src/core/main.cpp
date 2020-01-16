@@ -39,6 +39,15 @@
 #include "DownloadManager.h"
 
 #include "serverMasterController/controllers/master-controller.h"
+#include "serverMasterController/controllers/command-controller.h"
+#include "serverMasterController/controllers/navigation-controller.h"
+
+#include "serverMasterController/framework/command.h"
+
+
+
+
+
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
@@ -266,6 +275,13 @@ int main(int argc, char *argv[])
                      &DownloadManager::shutdown);
     cm::controllers::MasterController masterController;
     engine.rootContext()->setContextProperty("masterController", &masterController);
+
+
+    qmlRegisterType<cm::controllers::MasterController>("CM", 1, 0, "MasterController");
+    qmlRegisterType<cm::controllers::NavigationController>("CM", 1, 0, "NavigationController");
+    qmlRegisterType<cm::controllers::CommandController>("CM", 1, 0, "CommandController");
+
+    qmlRegisterType<cm::framework::Command>("CM", 1, 0, "Command");
 
 
     // add import path for shipped qml modules:

@@ -56,6 +56,8 @@ set(gcompris_SRCS
    serverMasterController/controllers/navigation-controller.h
    serverMasterController/models/client.cpp
    serverMasterController/models/client.h
+   serverMasterController/framework/command.cpp
+   serverMasterController/framework/command.h  
 )
 
 if(ANDROID)

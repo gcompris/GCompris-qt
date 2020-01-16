@@ -1,6 +1,6 @@
 /* GCompris - Data.qml
  *
- * Copyright (C) 2019 Shubham Mishra <email.shivam828787@gmail.com>
+ * Copyright (C) 2020 Shubham Mishra <email.shivam828787@gmail.com>
  *
  * Authors:
  *   Shubham Mishra <email.shivam828787@gmail.com>
@@ -21,44 +21,48 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Select a number on dice up to 7")
-    difficulty: 5
+    objective: qsTr("Select a number on dominoes up to 6")
+    difficulty: 3
     data: [
       {
-         "level" : "1",
-         "objective" : qsTr("Select the number 7"),
+         "objective" : qsTr("Select the number 6"),
+         "sublevels" : "6",
          "words" : [
-            "7",
-            "7",
-            "7"
+            "6",
+            "6"
         ]
       },
       {
-         "level" : "2",
-         "objective" : qsTr("Select the number on dice up to 4"),
+         "objective" : qsTr("Select the number on dominoes from 5 to 6"),
+         "sublevels" : "8",
          "words" : [
-            "1",
-            "2",
-            "3",
-            "4"
+            "5",
+            "6"
          ]
       },
       {
-         "level" : "3",
-         "objective" : qsTr("Select the number on dice up to 5"),
+         "objective" : qsTr("Select the number on dominoes from 4 to 6"),
+         "sublevels" : "10",
          "words" : [
-            "1",
-            "2",
+            "4",
+            "5",
+            "6"
+         ]
+      },
+      {
+         "objective" : qsTr("Select the number on dominoes from 3 to 6"),
+         "sublevels" : "12",
+         "words" : [
             "3",
             "4",
-            "5"
+            "5",
+            "6"
          ]
       },
       {
-         "level" : "4",
-         "objective" : qsTr("Select the number on dice up to 6"),
+         "objective" : qsTr("Select the number on dominoes from 2 to 6"),
+         "sublevels" : "14",
          "words" : [
-            "1",
             "2",
             "3",
             "4",
@@ -67,16 +71,15 @@ Dataset {
          ]
       },
       {
-         "level" : "5",
-         "objective" : qsTr("Select the number on dice up to 7"),
+         "objective" : qsTr("Select the number on dominoes from 1 to 6"),
+         "sublevels" : "16",
          "words" : [
             "1",
             "2",
             "3",
             "4",
             "5",
-            "6",
-            "7"
+            "6"
          ]
       }
    ]

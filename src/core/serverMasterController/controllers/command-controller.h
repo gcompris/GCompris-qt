@@ -3,8 +3,8 @@
 
 #include <QObject>
 #include <QtQml/QQmlListProperty>
-#include <cm-lib_global.h>
-#include <framework/command.h>
+#include "../cm-lib_global.h"
+#include "../framework/command.h"
 
 namespace cm {
 namespace controllers {

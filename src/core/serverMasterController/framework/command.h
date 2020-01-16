@@ -7,7 +7,7 @@
 #include <QScopedPointer>
 #include <QString>
 
-#include <cm-lib_global.h>
+#include "../cm-lib_global.h"
 
 namespace cm {
 namespace framework {
