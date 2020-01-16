@@ -54,6 +54,8 @@ set(gcompris_SRCS
    serverMasterController/controllers/master-controller.cpp
    serverMasterController/controllers/master-controller.h
    serverMasterController/controllers/navigation-controller.h
+   serverMasterController/controllers/command-controller.h
+   serverMasterController/controllers/command-controller.cpp
    serverMasterController/models/client.cpp
    serverMasterController/models/client.h
    serverMasterController/framework/command.cpp
