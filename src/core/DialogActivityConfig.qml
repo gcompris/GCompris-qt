@@ -199,7 +199,7 @@ Rectangle {
                     GCText {
                         id: title
                         text: dialogActivityContent.title
-                        width: dialogActivityContent.width - (30 + apply.width)
+                        width: dialogActivityContent.width - 30
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         color: "black"
