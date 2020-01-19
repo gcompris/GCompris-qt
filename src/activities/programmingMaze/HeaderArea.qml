@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Aman Kumar Gupta <gupta2140@gmail.com>
+ *   Timothée Giet <animtim@gcompris.net> (Layout and graphics rework)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,34 +27,28 @@ Rectangle {
     id: header
     width: background.width * 0.4
     height: background.height / 10
+    radius: 8 * ApplicationInfo.ratio
     border.width: 2 * ApplicationInfo.ratio
-    border.color: "black"
-    color: "transparent"
+    border.color: "#a6d8ea"
+    color: "#ffffff"
+    opacity: headerOpacity
 
     property real headerOpacity
     property string headerText
 
     signal clicked
 
-    Image {
-        width: parent.width - 2 * parent.border.width
-        height: parent.height - 2 * parent.border.width
-        anchors.centerIn: parent
-        source: "qrc:/gcompris/src/activities/guesscount/resource/backgroundW02.svg"
-        opacity: header.headerOpacity
-
-        GCText {
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            width: parent.width
-            height: parent.height
-            fontSizeMode: Font.DemiBold
-            minimumPointSize: 7
-            fontSize: mediumSize
-            wrapMode: Text.WordWrap
-            color: "white"
-            text: header.headerText
-        }
+    GCText {
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        width: parent.width
+        height: parent.height
+        fontSizeMode: Font.DemiBold
+        minimumPointSize: 7
+        fontSize: mediumSize
+        wrapMode: Text.WordWrap
+        color: "#2e2f2f"
+        text: header.headerText
     }
 
     MouseArea {

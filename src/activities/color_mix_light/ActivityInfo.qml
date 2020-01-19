@@ -37,7 +37,7 @@ ActivityInfo {
 The activity deals with mixing primary colors of light (additive mixing).
 
 In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.")
-  credit: qsTr("Images from http://openclipart.org")
+  credit: qsTr("Images from https://openclipart.org")
   section: "sciences experiment color"
   createdInVersion: 0
 }

@@ -58,10 +58,41 @@ Item {
     property alias source: audio.source
 
     /**
+     * type: positive real number less than 1
+     * Determines intensity of the audio.
+     */
+    property alias volume: audio.volume
+
+    /**
+     * type:bool
+     * Whether the audio element contains audio.
+     */
+    property bool hasAudio: audio.hasAudio
+
+    /**
      * type:string
      * Detailed error message in case of playback errors.
      */
     property alias errorString: audio.errorString
+    
+    /**
+     * type:bool
+     * check if the player is for background music
+     */
+    property bool isBackgroundMusic: false
+    
+    /**
+     * type:array
+     * background music metadata
+     */
+    property var metaDataMusic: ["", "", "", ""]
+    
+    /**
+     * Trigger this signal externally to play the next audio in the "files". This, in turn, stops the currently playing audio and check the necessary
+     * conditions (see onStopped signal in "audio" element) and decides what needs to be done for the next audio.
+     */
+    signal nextAudio()
+    onNextAudio: stop()
 
     /**
      * type:var
@@ -88,11 +119,17 @@ Item {
      */
     signal done
 
-    /**
-     *  When mute is changed we set the volume to 0 to mute a potential playing
-     * sound.
-     */
-    onMutedChanged: muted ? audio.volume = 0 : audio.volume = 1
+    //Pauses the currently playing audio
+    function pause() {
+        if(playbackState === Audio.PlayingState)
+            audio.pause()
+    }
+
+    //Resumes the current audio if it had been paused
+    function resume() {
+        if(playbackState === Audio.PausedState || playbackState === Audio.StoppedState)
+            audio.play()
+    }
 
     /**
      * Plays back the audio resource @p file.
@@ -147,6 +184,7 @@ Item {
             source = ""
             source = file
             files.push(file)
+            silenceTimer.interval = 1
             silenceTimer.start()
         } else {
             files.push(file)
@@ -176,13 +214,18 @@ Item {
     /// @cond INTERNAL_DOCS
 
     function _playNextFile() {
+        if(files.length == 0) {
+            gcaudio.done()
+            return
+        }
+
         var nextFile = files.shift()
-        if(!nextFile || 0 === nextFile.length) {
-            audio.source = ""
+        if(nextFile === '') {
+            source = ""
             gcaudio.done()
         } else {
-            audio.source = ""
-            audio.source = nextFile
+            source = ""
+            source = nextFile
             if(!muted)
                 audio.play()
         }
@@ -190,6 +233,7 @@ Item {
 
     Audio {
         id: audio
+        muted: gcaudio.muted
         onError: {
             // This file cannot be played, remove it from the source asap
             source = ""
@@ -203,6 +247,11 @@ Item {
                 silenceTimer.start()
             else
                 gcaudio.done()
+        }
+        metaData.onMetaDataChanged: {
+            if(isBackgroundMusic) {
+                metaDataMusic = [metaData.title, metaData.contributingArtist, metaData.year, metaData.copyright]
+            }
         }
     }
 

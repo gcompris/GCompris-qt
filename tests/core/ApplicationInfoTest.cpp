@@ -116,9 +116,9 @@ void ApplicationInfoTest::getVoicesLocaleTest_data()
     QTest::addColumn<QString>("actual");
     QTest::addColumn<QString>("expected");
     QTest::newRow("default") << GC_DEFAULT_LOCALE
-                             << "en";
+                             << "en_US";
     QTest::newRow("en_US") << "en_US"
-                           << "en";
+                           << "en_US";
     QTest::newRow("pt_BR") << "pt_BR"
                            << "pt_BR";
     QTest::newRow("pt_PT") << "pt_PT"

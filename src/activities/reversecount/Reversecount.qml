@@ -6,6 +6,7 @@
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Major rework)
+ *   Timothée Giet <animtim@gcompris.net> (Layout and graphics rework)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -36,7 +37,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "#ff00a4b0"
+        color: "#ff1dade4"
 
         signal start
         signal stop
@@ -55,7 +56,6 @@ ActivityBase {
             readonly property string resourceUrl: activity.resourceUrl
             property var levels: activity.datasetLoader.data
             property alias background: background
-            property alias backgroundImg: backgroundImg
             property alias bar: bar
             property alias bonus: bonus
             property alias chooseDiceBar: chooseDiceBar
@@ -63,6 +63,8 @@ ActivityBase {
             property alias fishToReach: fishToReach
             property int clockPosition: 4
             property string mode: "dot"
+            property var heightBase: (background.height - bar.height * 1.5) / 5
+            property var widthBase: background.width / 5
         }
 
         onStart: { Activity.start(items) }
@@ -72,39 +74,30 @@ ActivityBase {
         Keys.onReturnPressed: Activity.moveTux()
 
         onWidthChanged: {
-            if(Activity.fishIndex > 0) {
-                // set x
-                fishToReach.x = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][0] *
-            background.width / 5 + (background.width / 5 - tux.width) / 2
-                // set y
-                fishToReach.y = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][1] *
-            (background.height - background.height/5) / 5 +
-            (background.height / 5 - tux.height) / 2
-                // Move Tux
-                Activity.moveTuxToIceBlock()
-            }
+            sizeChangedTimer.restart()
         }
 
         onHeightChanged: {
+            sizeChangedTimer.restart()
+        }
+        
+        function replaceItems() {
             if(Activity.fishIndex > 0) {
                 // set x
                 fishToReach.x = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][0] *
-            background.width / 5 + (background.width / 5 - tux.width) / 2
+            items.widthBase + (items.widthBase - fishToReach.width) / 2
                 // set y
                 fishToReach.y = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][1] *
-            (background.height - background.height/5) / 5 +
-            (background.height / 5 - tux.height) / 2
+            items.heightBase + (items.heightBase - fishToReach.height) / 2
                 // Move Tux
                 Activity.moveTuxToIceBlock()
             }
         }
-
-        Image {
-            id: backgroundImg
-            source: activity.resourceUrl + Activity.backgrounds[0]
-            sourceSize.height: parent.height * 0.5
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
+        
+        Timer {
+            id: sizeChangedTimer
+            interval: 100
+            onTriggered: replaceItems()
         }
 
         // === The ice blocks ===
@@ -112,27 +105,26 @@ ActivityBase {
             model: Activity.iceBlocksLayout
 
             Image {
-                x: modelData[0] * background.width / 5
-                y: modelData[1] * (background.height- background.height/5) / 5
-                width: background.width / 5
-                height: background.height / 5
-                source: activity.resourceUrl + "iceblock.svg"
+                x: modelData[0] * items.widthBase
+                y: modelData[1] * items.heightBase
+                width: items.widthBase
+                height: items.heightBase
+                source: items.resourceUrl + "ice-block.svg"
             }
         }
 
-
         Tux {
             id: tux
-            sourceSize.width: Math.min(background.width / 6, background.height / 6)
+            sourceSize.width: Math.min(items.widthBase, items.heightBase)
             z: 11
         }
 
 
         Image {
             id: fishToReach
-            sourceSize.width: Math.min(background.width / 6, background.height / 6)
+            source: items.resourceUrl + "fish-blue.svg"
+            sourceSize.width: Math.min(items.widthBase, items.heightBase)
             z: 10
-            property string nextSource
             property int nextX
             property int nextY
 
@@ -145,10 +137,8 @@ ActivityBase {
                 clip: false
             }
 
-            onOpacityChanged: { if(opacity == 0) { source = ""; source = nextSource; } }
-
-            onSourceChanged: {
-                if(source != "") {
+            onOpacityChanged: {
+                if(opacity == 0) {
                     x = nextX
                     y = nextY
                     opacity = 1
@@ -204,7 +194,7 @@ ActivityBase {
                 }
                 PropertyAction {
                     target: clock; property: 'source';
-                    value: activity.resourceUrl + "flower" + items.clockPosition + ".svg"
+                    value: items.resourceUrl + "flower" + items.clockPosition + ".svg"
                 }
                 ParallelAnimation {
                     NumberAnimation {
@@ -246,8 +236,8 @@ ActivityBase {
         ChooseDiceBar {
             id: chooseDiceBar
             mode: items.mode
-            x: background.width / 5 + 20
-            y: (background.height - background.height/5) * 3 / 5
+            anchors.horizontalCenter: items.background.horizontalCenter
+            y: items.heightBase * 2
             audioEffects: activity.audioEffects
         }
 

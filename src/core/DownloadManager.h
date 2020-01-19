@@ -119,7 +119,7 @@ private:
      * Uses QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
      * which returns
      *   - on desktop linux $HOME/.cache/KDE/gcompris-qt/
-     *   - on other platforms check <http://doc.qt.io/qt-5/qstandardpaths.html>
+     *   - on other platforms check <https://doc.qt.io/qt-5/qstandardpaths.html>
      *
      * @return An absolute path.
      */
@@ -237,6 +237,8 @@ public:
      */
     Q_INVOKABLE QString getVoicesResourceForLocale(const QString& locale) const;
 
+    // @returns A relative background music resource path.
+    Q_INVOKABLE QString getBackgroundMusicResources() const;
     /**
      * Checks whether the given relative resource @p path exists locally.
      *
@@ -377,6 +379,14 @@ signals:
      * @sa resourceRegistered
      */
     void voicesRegistered();
+
+    /** Emitted when background music has been registered.
+     *
+     * Convenience signal and special case of resourceRegistered.
+     *
+     * @sa resourceRegistered
+     */
+    void backgroundMusicRegistered();
 };
 
 #endif /* DOWNLOADMANAGER_H */

@@ -33,7 +33,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation")
   //: Help manual
-  manual: qsTr("Drag and Drop one top piece at a time, from one peg to another, to reproduce the tower on the right in the empty space on the left.")
+  manual: qsTr("Drag and Drop one top piece at a time, from one peg to another, to reproduce the tower on the right in the empty space on its left.")
   credit: qsTr("Concept taken from EPI games.")
   section: "discovery logic"
   createdInVersion: 4000

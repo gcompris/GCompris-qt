@@ -28,7 +28,6 @@ import "../gletters"
 Gletters {
     id: activity
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers2/resource/"
-    configurationButtonVisible: true
     activityName: "smallnumbers2"
     property string dominoMode: "dot"
 

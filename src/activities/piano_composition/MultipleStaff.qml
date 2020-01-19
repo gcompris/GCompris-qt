@@ -62,6 +62,7 @@ Item {
     property bool enableNotesSound: true
     property int currentEnteringStaff: 0
     property int bpmValue: 120
+    property real noteAnimationDuration: 9000
 
     // The position where the 1st note in the centered state is to be placed.
     property real firstCenteredNotePosition: multipleStaff.width / 3.3
@@ -202,7 +203,7 @@ Item {
                     id: noteAnimation
                     target: musicElement
                     properties: "x"
-                    duration: 9000
+                    duration: noteAnimationDuration
                     from: multipleStaff.width - 10
                     to: multipleStaff.clefImageWidth
                     onStopped: {

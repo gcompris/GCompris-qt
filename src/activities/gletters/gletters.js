@@ -36,6 +36,7 @@ var maxLevel = 0;
 var maxSubLevel = 0;
 var items;
 var uppercaseOnly;
+var speedSetting;
 var mode;
 
 //speed calculations, common:
@@ -60,17 +61,38 @@ var wgAddFallSpeed = 1000;
 var wgMaxFallingItems;
 
 var droppedWords;
+var droppedWordsCounter = 0;
 var currentWord = null;  // reference to the word currently typing, null if n/a
 var wordComponent = null;
 
 var successRate // Falling speed depends on it
 
-function start(items_, uppercaseOnly_,  _mode) {
+function start(items_, uppercaseOnly_,  _mode, speedSetting_) {
     items = items_;
     uppercaseOnly = uppercaseOnly_;
     mode = _mode;
+    speedSetting = speedSetting_;
     currentLevel = 0;
     currentSubLevel = 0;
+
+    incSpeed = 1 * speedSetting;
+    incFallSpeed = 100 * speedSetting;
+    
+    fallRateBase = 400 / speedSetting;
+    fallRateMult = 800 / speedSetting;
+    dropRateBase = 60000 / speedSetting;
+    dropRateMult = 1000 / speedSetting;
+
+    if (mode == "word") {
+        wgMaxFallSpeed = 90000 / speedSetting;
+        wgMaxSpeed = 1500 / speedSetting;
+        wgMinFallSpeed = 70000 / speedSetting;
+        wgMinSpeed = 1300 / speedSetting;
+        wgDefaultFallSpeed = 90000 / speedSetting;
+        wgDefaultSpeed = 1500 / speedSetting;
+        wgAddSpeed = 2 * speedSetting;
+        wgAddFallSpeed = 100 * speedSetting;
+    }
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
 
@@ -105,6 +127,7 @@ function start(items_, uppercaseOnly_,  _mode) {
     }
     maxLevel = items.wordlist.maxLevel;
     droppedWords = new Array();
+    droppedWordsCounter = 0;
     initLevel();
 }
 
@@ -121,6 +144,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1;
     wgMaxFallingItems = 3
     successRate = 1.0
+    droppedWordsCounter = 0
 
     // initialize level
     deleteWords();
@@ -200,7 +224,8 @@ function initSubLevel() {
         items.wordDropTimer.interval = fallSpeed = Math.max(fallSpeed - incFallSpeed, wgMinFallSpeed);
     }
     items.score.currentSubLevel = currentSubLevel + 1;
-    if (currentSubLevel == 0 || droppedWords.length <= 1)  // note, last word is still fading out
+    // note, last word is still fading out so better use droppedWordsCounter than droppedWords.length in this case
+    if (currentSubLevel == 0 || droppedWordsCounter == 0)
         dropWord();
     //console.log("Gletters: initializing subLevel " + (currentSubLevel + 1) + " words=" + JSON.stringify(level.words));
 }
@@ -235,6 +260,7 @@ function processKeyPress(text) {
 
     if (currentWord !== null && currentWord.isCompleted()) {
         // win!
+        droppedWordsCounter -= 1
         currentWord.won();  // note: deleteWord() is triggered after fadeout
         successRate += 0.1
         currentWord = null
@@ -246,10 +272,10 @@ function setSpeed()
 {
     if (mode === "letter") {
         speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (currentLevel + 1)));
-        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase + (dropRateMult * (currentLevel + 1))));
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase - (dropRateMult * (currentLevel + 1))));
     } else { // wordsgame
-        speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (currentLevel+1)*wgAddSpeed;
-        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (currentLevel+1)*wgAddFallSpeed
+        speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (currentLevel + 1)*wgAddSpeed;
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (currentLevel + 1)*wgAddFallSpeed
 
         if(speed < wgMinSpeed ) speed = wgMinSpeed;
         if(speed > wgMaxSpeed ) speed = wgMaxSpeed;
@@ -331,6 +357,7 @@ function createWord()
             console.log("Gletters: Error creating word object");
         else {
             droppedWords[droppedWords.length] = word;
+            droppedWordsCounter += 1
             // speed to duration:
             var duration = (items.main.height / 2) * speed / successRate;
             /* console.debug("Gletters: dropping new word " + word.text

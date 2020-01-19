@@ -42,8 +42,8 @@ MouseArea {
     }
 
     onClicked: {
-        if(Activity.items.warningDialog.visible)
-            Activity.items.warningDialog.visible = false
+        if(items.warningDialog.visible)
+            items.warningDialog.visible = false
     }
     Rectangle {
         id: tile
@@ -97,7 +97,7 @@ MouseArea {
                 AnchorChanges { target: tile; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
             },
             State {
-                when: Activity.items.warningDialog.visible
+                when: items.warningDialog.visible
                 PropertyChanges {
                     target: mouseArea
                     enabled: false

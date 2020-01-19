@@ -29,7 +29,7 @@ ActivityInfo {
   description: qsTr("Symbols must be unique in a row, in a column, and (if defined) each region.")
 //  intro: "Select a number or a symbol and click its target area. Each symbol must appear only once in a row, in a column and in a subregion if any."
   //: Help goal
-  goal: qsTr("The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid. In the official Sudoku the grid is 9x9 made up of 3x3 subgrids (called 'regions'). In GCompris we start at lower levels with a simpler version using symbols and with no regions. In all cases the grid is presented with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &lt;http://en.wikipedia.org/wiki/Sudoku&gt;).")
+  goal: qsTr("The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid. In the official Sudoku the grid is 9x9 made up of 3x3 subgrids (called 'regions'). In GCompris we start at lower levels with a simpler version using symbols and with no regions. In all cases the grid is presented with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &lt;https://en.wikipedia.org/wiki/Sudoku&gt;).")
   //: Help prerequisite
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability")
   //: Help manual

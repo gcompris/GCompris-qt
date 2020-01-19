@@ -93,8 +93,10 @@ ActivityBase {
         Score {
             id: score
             z: 1003
-            anchors.bottom: background.bottom
+            height: background.height - availablePieces.height - 1.5 * bar.height
+            anchors.bottom: bar.top
             anchors.right: background.right
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
         }
 
         Keys.onPressed: {

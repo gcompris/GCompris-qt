@@ -117,7 +117,7 @@ ActivityBase {
                 items.arrowFlying = true
                 if(items.currentArrow != items.nbArrow) {
                     arrowRepeater.itemAt(items.currentArrow).opacity = 1
-                    arrowRepeater.itemAt(items.currentArrow++).scale = 0.5
+                    arrowRepeater.itemAt(items.currentArrow++).scale = 1
                 }
             }
         }
@@ -141,7 +141,7 @@ ActivityBase {
             if(userEntry.text.length === 0) {
                 userEntry.text = "?"
             } else {
-                if(targetItem.scoreTotal === userEntry.text)
+                if(targetItem.scoreTotal == userEntry.text)
                     bonus.good("flower")
             }
         }

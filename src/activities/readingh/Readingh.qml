@@ -32,6 +32,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    property int speedSetting: 5
     /* mode of the activity, "readingh" (horizontal) or "readingv" (vertical):*/
     property string mode: "readingh"
 
@@ -82,6 +83,7 @@ ActivityBase {
             content: Component {
                 Item {
                     property alias localeBox: localeBox
+                    property alias speedSlider: speedSlider
                     height: column.height
 
                     property alias availableLangs: langs.languages
@@ -91,7 +93,7 @@ ActivityBase {
 
                     Column {
                         id: column
-                        spacing: 10
+                        spacing: 10 * ApplicationInfo.ratio
                         width: parent.width
 
                         Flow {
@@ -105,6 +107,24 @@ ActivityBase {
                                 label: qsTr("Select your locale")
                             }
                         }
+                        GCText {
+                            id: speedSliderText
+                            text: qsTr("Speed")
+                            fontSize: mediumSize
+                            wrapMode: Text.WordWrap
+                        }
+                         Flow {
+                            width: dialogActivityConfig.width
+                            spacing: 5
+                            GCSlider {
+                                id: speedSlider
+                                width: 250 * ApplicationInfo.ratio
+                                value: activity.speedSetting
+                                maximumValue: 5
+                                minimumValue: 1
+                                scrollEnabled: false
+                            }
+                        }
                     }
                 }
             }
@@ -115,6 +135,11 @@ ActivityBase {
                     if(dataToSave["locale"]) {
                         background.locale = dataToSave["locale"];
                     }
+                }
+                 if(dataToSave) {
+                     if(dataToSave["speedSetting"]) {
+                    activity.speedSetting = dataToSave["speedSetting"];
+                     }
                 }
             }
             onSaveData: {
@@ -133,6 +158,13 @@ ActivityBase {
                 if(oldLocale !== newLocale) {
                     background.stop();
                     wordDisplayList.layoutDirection = Core.isLeftToRightLocale(background.locale) ? Qt.LeftToRight : Qt.RightToLeft;
+                    background.start();
+                }
+                var oldSpeed = activity.speedSetting
+                activity.speedSetting = dialogActivityConfig.configItem.speedSlider.value
+                if(oldSpeed != activity.speedSetting) {
+                    dataToSave = {"speedSetting": activity.speedSetting};
+                    background.stop();
                     background.start();
                 }
             }
@@ -293,7 +325,7 @@ ActivityBase {
         Timer {
             id: wordDropTimer
             repeat: true
-            interval: 1000
+            interval: items.currentIndex == -1 ? 100 : 5000 / speedSetting;
             onTriggered: Activity.dropWord();
         }
 

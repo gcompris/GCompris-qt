@@ -33,10 +33,12 @@ var currentNoteIndex
 var noteIndexToDisplay
 var percentageDecreaseValue = 4
 var percentageIncreaseValue = 2
+var timerNormalInterval
 
-function start(items_) {
+function start(items_, timerNormalInterval_) {
     items = items_
     currentLevel = 0
+    timerNormalInterval = timerNormalInterval_
     dataset = items.dataset.item
     levels = dataset.levels
     numberOfLevel = levels.length
@@ -72,7 +74,7 @@ function initLevel() {
     items.isTutorialMode = true
     items.progressBar.percentage = 0
     items.multipleStaff.coloredNotes = dataset.referenceNotes[items.background.clefType]
-    if(!items.iAmReady.visible  && ! items.introMessage.visible)
+    if(!items.iAmReady.visible  && !items.introMessage.visible)
         showTutorial()
 }
 
@@ -83,7 +85,7 @@ function showTutorial() {
         items.messageBox.visible = true
         targetNotes.shift()
     }
-    else {
+    else if (!items.iAmReady.visible) {
         items.isTutorialMode = false
         startGame()
     }
@@ -122,7 +124,7 @@ function displayNote(currentNote) {
     items.multipleStaff.addMusicElement("note", currentNote, "Quarter", false, false, items.background.clefType)
     items.multipleStaff.playNoteAudio(currentNote, "Quarter", items.background.clefType, 500)
     if(!items.isTutorialMode) {
-        items.addNoteTimer.interval = items.addNoteTimer.timerNormalInterval
+        items.addNoteTimer.interval = timerNormalInterval
         items.addNoteTimer.start()
     }
 }

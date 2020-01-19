@@ -6,6 +6,7 @@
  * Authors:
  *   Siddhesh Suthar <siddhesh.it@gmail.com>
  *   Aman Kumar Gupta <gupta2140@gmail.com>
+ *   Timothée Giet <animtim@gcompris.net> (Layout and graphics rework)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -35,20 +36,17 @@ GridView {
 
     interactive: false
     model: currentModel
-    clip: true
 
     highlight: Rectangle {
         width: buttonWidth
         height: buttonHeight
-        color: "lightsteelblue"
+        color: "#00ffffff"
         border.width: 3.5 * ApplicationInfo.ratio
-        border.color: "purple"
-        opacity: 0.5
+        border.color: "#e77935"
         z: 11
         radius: width / 18
     }
     highlightFollowsCurrentItem: true
-    highlightMoveDuration: 500
     keyNavigationWraps: true
     focus: true
 
@@ -93,7 +91,6 @@ GridView {
                 if((initialEditItemIndex == currentIndex) || (initialEditItemIndex == -1 && currentIndex != -1)) {
                     codeArea.isEditingInstruction = !codeArea.isEditingInstruction
                 }
-
                 if(!codeArea.isEditingInstruction)
                     codeArea.initialEditItemIndex = -1
                 else
@@ -105,6 +102,7 @@ GridView {
                 editInstructionIndicator.y = calculatedY + 1.5 * ApplicationInfo.ratio
             }
         }
+
         else if((items.numberOfInstructionsAdded < items.maxNumberOfInstructionsAllowed) && instructionArea.instructionToInsert)
             appendInstruction()
     }
@@ -143,8 +141,7 @@ GridView {
             anchors.centerIn: parent
             width: parent.width
             height: parent.height - 3 * ApplicationInfo.ratio
-            color: "blue"
-            radius: width
+            color: "#e77935"
         }
 
         states: [
@@ -169,7 +166,7 @@ GridView {
         width: background.buttonWidth - 3 * ApplicationInfo.ratio
         height: background.buttonHeight - 3 * ApplicationInfo.ratio
         color: "red"
-        border.color: "black"
+        border.color: "red"
         border.width: 1.5 * ApplicationInfo.ratio
         opacity: 0.2
         radius: width / 18
@@ -180,6 +177,7 @@ GridView {
         anchors.fill: parent
         enabled: items.isTuxMouseAreaEnabled || items.isRunCodeEnabled
         onPressed: {
+            codeArea.currentIndex = -1
             codeArea.draggedItemIndex = codeArea.indexAt(mouseX,mouseY)
             if(codeArea.draggedItemIndex === -1) {
                 constraintInstruction.changeConstraintInstructionOpacity()
@@ -261,16 +259,6 @@ GridView {
         width: background.buttonWidth
         height: background.buttonHeight
 
-        Rectangle {
-            id: circlePlaceholder
-            width: 30 * ApplicationInfo.ratio
-            height: width
-            radius: width
-            anchors.centerIn: parent
-            color: "#cecece"
-            opacity: 0
-        }
-
         Item {
             id: item
             width: background.buttonWidth
@@ -287,7 +275,6 @@ GridView {
                     name: "inDrag"
                     when: index == codeArea.draggedItemIndex
 
-                    PropertyChanges { target: circlePlaceholder; opacity: 1 }
                     PropertyChanges { target: item; parent: codeArea }
                     PropertyChanges { target: item; width: background.buttonWidth * 0.80 }
                     PropertyChanges { target: item; height: background.buttonHeight * 0.80 }
@@ -327,15 +314,20 @@ GridView {
                 width: parent.width - 3 * ApplicationInfo.ratio
                 height: parent.height - 3 * ApplicationInfo.ratio
                 border.width: 1.2 * ApplicationInfo.ratio
-                border.color: "black"
+                border.color: "#2a2a2a"
                 anchors.centerIn: parent
                 radius: width / 18
 
                 Image {
                     id: codeAreaIcon
                     source: Activity.url + name + ".svg"
-                    sourceSize { width: parent.width / 1.2; height: parent.height / 1.2 }
+                    width: Math.round(parent.width / 1.2)
+                    height: Math.round(parent.height / 1.2)
+                    sourceSize.width: height
+                    sourceSize.height: height
                     anchors.centerIn: parent
+                    fillMode: Image.PreserveAspectFit
+                    mipmap: true
                 }
             }
         }

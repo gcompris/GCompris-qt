@@ -132,7 +132,7 @@ Generator::noteOff(unsigned char chan, unsigned char note) {
 }
 
 void
-Generator::setMode(int _mode) {
+Generator::setMode(unsigned int _mode) {
     delete linSyn;
     linSyn = new LinearSynthesis(_mode);
     curtime = 0;
@@ -157,14 +157,14 @@ Generator::generateData(qint64 len) {
 
     while (i.hasNext()) {
         Wave wav = i.next();
-        qreal attackTime  = 0.001*(qreal)wav.env.attackTime,
-              releaseTime = 0.001*(qreal)wav.env.releaseTime;
+        qreal attackTime  = 0.001*(qreal)wav.env.attackTime;
+        qreal releaseTime = 0.001*(qreal)wav.env.releaseTime;
 
         qreal freq = 8.175 * 0.5 * qPow(2, ((qreal)wav.note)/12);
         qreal ampl = 0.5*((qreal)wav.vel)/256;
 
-        qreal stateAge = wav.state_age,
-              wavAge   = wav.age;
+        qreal stateAge = wav.state_age;
+        qreal wavAge   = wav.age;
 
         const qreal step = 1.f / m_samplingRate;
         qreal samplePerStep = 0.f;
@@ -195,7 +195,8 @@ Generator::generateData(qint64 len) {
             if (wav.state == ADSREnvelope::STATE_OFF) {
                 break;
             } else {
-                qreal freqmod = 0, amod = 0;
+                qreal freqmod = 0;
+                qreal amod = 0;
 
                 // Compute modulation waves.
 

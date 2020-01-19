@@ -257,6 +257,14 @@ Item {
             text: parent.message
             z: 2
         }
+        Rectangle {
+            z: -1
+            radius: 5 * ApplicationInfo.ratio
+            anchors.centerIn: parent
+            height: progressbarText.height
+            width: parent.width
+            color: "#80EEEEEE"
+        }
     }
 
     Rectangle {

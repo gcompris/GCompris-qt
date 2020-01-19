@@ -29,8 +29,8 @@ Gletters {
     id: activity
 
     mode: "letter"
+    activityName: "smallnumbers"
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers/resource/"
-    configurationButtonVisible: false
 
     function getImage(key) {
         return dataSetUrl + "dice" + key + ".svg"

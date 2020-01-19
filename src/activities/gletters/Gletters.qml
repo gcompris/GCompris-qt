@@ -32,10 +32,10 @@ ActivityBase {
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
     property string dataSetUrl: "qrc:/gcompris/src/activities/gletters/resource/"
-    /* no need to display the configuration button for smallnumbers */
-    property bool configurationButtonVisible: true
 
     property bool uppercaseOnly: false
+    
+    property int speedSetting: 10
 
     property string activityName: "gletters"
 
@@ -101,7 +101,17 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.start(items, uppercaseOnly, mode);
+            // for smallnumbers and smallnumbers2, we want to have the application locale, not the system one
+            if(activity.activityName !== "gletters") {
+                var overridenLocale = ApplicationSettings.locale
+                // Remove .UTF-8
+                if(overridenLocale.indexOf('.') != -1) {
+                    overridenLocale = overridenLocale.substring(0, overridenLocale.indexOf('.'))
+                }
+                background.locale = overridenLocale
+            }
+
+            Activity.start(items, uppercaseOnly, mode, speedSetting);
             Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
@@ -183,15 +193,18 @@ ActivityBase {
                 background.start()
             }
             onLoadData: {
-                if (activity.activityName == "gletters") {
+                if (activity.activityName === "gletters") {
                     if(activityData && activityData["locale"]) {
                         background.locale = activityData["locale"];
                         activity.uppercaseOnly = activityData["uppercaseMode"] === "true" ? true : false;
                     }
-                } else if (activity.activityName == "smallnumbers2") {
+                } else if (activity.activityName === "smallnumbers2") {
                     if(activityData && activityData["mode"]) {
                         activity.dominoMode = activityData["mode"];
                     }
+                }
+                if(activityData && activityData["speedSetting"]) {
+                    activity.speedSetting = activityData["speedSetting"];
                 }
             }
             onStartActivity: {
@@ -227,11 +240,9 @@ ActivityBase {
         
         Score {
             id: score
-            anchors.top: undefined
-            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: keyboard.top
+            anchors.bottom: bar.top
         }
         
         VirtualKeyboard {

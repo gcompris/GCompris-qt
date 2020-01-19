@@ -191,7 +191,7 @@ function checkAnswer() {
         if (determiningComponents[0].inputTerminals.itemAt(0).value == 1) {
             items.bonus.good('tux')
         } else {
-            items.bonus.bad('tux')
+            items.bonus.bad('tux', items.bonus.checkAnswer)
             processingAnswer = false
         }
     } else if (problemType == items.tutorialDataset.problemType.equation1Variable) {
@@ -209,7 +209,7 @@ function checkAnswer() {
             if (operationResult != digitalLight.inputTerminals.itemAt(0).value) {
                 switch1.imgSrc = switch1InitialState
                 updateComponent(switch1.index)
-                items.bonus.bad('tux')
+                items.bonus.bad('tux', items.bonus.checkAnswer)
                 processingAnswer = false
                 return
             }
@@ -238,7 +238,7 @@ function checkAnswer() {
                     switch2.imgSrc = switch2InitialState
                     updateComponent(switch1.index)
                     updateComponent(switch2.index)
-                    items.bonus.bad('tux')
+                    items.bonus.bad('tux', items.bonus.checkAnswer)
                     processingAnswer = false
                     return
                 }
@@ -277,7 +277,7 @@ function checkAnswer() {
                         updateComponent(switch2.index)
                         updateComponent(switch3.index)
                         processingAnswer = false
-                        items.bonus.bad('tux')
+                        items.bonus.bad('tux', items.bonus.checkAnswer)
                         return
                     }
                 }
@@ -298,7 +298,7 @@ function checkAnswer() {
                 items.bonus.good('tux')
                 return
             }
-            items.bonus.bad('tux')
+            items.bonus.bad('tux', items.bonus.checkAnswer)
             processingAnswer = false
             return
         } else if (currentLevel == 21) {
@@ -330,7 +330,7 @@ function checkAnswer() {
                 items.bonus.good('tux')
                 return
             }
-            items.bonus.bad('tux')
+            items.bonus.bad('tux', items.bonus.checkAnswer)
             processingAnswer = false
         }
     }

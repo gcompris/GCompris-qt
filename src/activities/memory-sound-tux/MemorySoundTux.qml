@@ -28,4 +28,5 @@ MemoryCommon {
     dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/memory-sound/resource/gcompris_band.svg"
     withTux: true
+    isMusicalActivity: true
 }

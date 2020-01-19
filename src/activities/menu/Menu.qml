@@ -209,6 +209,7 @@ ActivityBase {
         property int sectionIconHeight: sectionIconWidth
         property int sectionCellWidth: sectionIconWidth * 1.1
         property int sectionCellHeight: sectionIconHeight * 1.1
+        property int categoriesHeight: currentCategory == "" ? 0 : sectionCellHeight - 2
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
@@ -398,6 +399,7 @@ ActivityBase {
             id: categoriesGrid
             model: currentTagCategories
             anchors.top: horizontal ? section.bottom : parent.top
+            topMargin: 5
             interactive: false
             keyNavigationWraps: true
             width: horizontal ? main.width : main.width - section.width
@@ -418,16 +420,19 @@ ActivityBase {
 
             cellWidth: currentTagCategories ? categoriesGrid.width / currentTagCategories.length : 0
             cellHeight: height
-            height: searchTextField.height
+            height: horizontal ? categoriesHeight * 0.5 : categoriesHeight
 
             delegate: Button {
                 id: button
                 style: GCButtonStyle {
                     selected: currentCategory === button.category
+                    theme: "categories"
+                    textSize: "regular"
+                    haveIconRight: horizontal
                 }
                 width: categoriesGrid.width / (currentTagCategories.length + 1)
                 height: categoriesGrid.cellHeight
-                text: Object.values(modelData)[0]
+                text: modelData[category]
                 property string category: Object.keys(modelData)[0]
                 onClicked: {
                     selectCurrentItem()
@@ -440,14 +445,28 @@ ActivityBase {
                     ActivityInfoTree.filterLockedActivities()
                     ActivityInfoTree.filterEnabledActivities()
                 }
+                Image {
+                    visible: horizontal
+                    source: "qrc:/gcompris/src/activities/menu/resource/category-" + button.category + ".svg";
+                    height: Math.round(parent.height * 0.8)
+                    sourceSize.height: height
+                    width: height
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        right: parent.right
+                        rightMargin: parent.height * 0.1
+                    }
+                }
             }
             highlight: Rectangle {
+                z: 10
                 width: activityCellWidth - activitiesGrid.spacing
                 height: activityCellHeight - activitiesGrid.spacing
-                color:  "#AAFFFFFF"
-                border.width: 3
-                border.color: "black"
-                visible: background.keyboardMode
+                color:  "#00FFFFFF"
+                radius: 10
+                border.width: 5
+                border.color: "#FF87A6DD"
+                visible: true
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
@@ -466,6 +485,7 @@ ActivityBase {
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
+                topMargin: currentCategory == "" ? 4 : 10
             }
             width: background.width
             cellWidth: activityCellWidth
@@ -538,22 +558,6 @@ ActivityBase {
                         maximumLineCount: 2
                         wrapMode: Text.WordWrap
                         text: ActivityInfoTree.menuTree[index].title
-                    }
-                    // If we have enough room at the bottom display the description
-                    GCText {
-                        id: description
-                        visible: delegateItem.height - (title.y + title.height) > description.height ? 1 : 0
-                        anchors.top: title.bottom
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        horizontalAlignment: Text.AlignHCenter
-                        width: activityBackground.width
-                        fontSizeMode: Text.Fit
-                        minimumPointSize: 7
-                        fontSize: regularSize
-                        elide: Text.ElideRight
-                        maximumLineCount: 3
-                        wrapMode: Text.WordWrap
-                        text: ActivityInfoTree.menuTree[index].description
                     }
                 }
                 ParticleSystemStarLoader {
@@ -680,7 +684,7 @@ ActivityBase {
         Rectangle {
             id: searchBar
             width: horizontal ? parent.width/2 : parent.width - (section.width+10)
-            height: searchTextField.height
+            height: horizontal ? sectionCellHeight * 0.5 : sectionCellHeight
             visible: activity.currentTag === "search"
             anchors {
                 top: horizontal ? section.bottom : parent.top
@@ -728,9 +732,9 @@ ActivityBase {
             TextField {
                 id: searchTextField
                 width: parent.width
-                visible: activity.currentTag === "search"
+                height: parent.height
                 textColor: "black"
-                font.pointSize: 16
+                font.pointSize: 32
                 font.bold: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
@@ -899,7 +903,7 @@ ActivityBase {
             }
 
             onSaveData: {
-                dialogActivityConfig.configItem.save();
+                dialogActivityConfig.configItem.save()
             }
             onClose: {
                 if(activity.currentTag != "search") {
@@ -908,7 +912,43 @@ ActivityBase {
                     ActivityInfoTree.filterEnabledActivities()
                 } else
                     ActivityInfoTree.filterBySearch(searchTextField.text);
+                
+                backgroundMusic.clearQueue()
+                /**
+                 * 1. If the current playing background music is in new filtered playlist too, continue playing it and append all the next filtered musics to backgroundMusic element.
+                 * 2. Else, stop the current music, find the filtered music which comes just after it, and append all the further musics after it.
+                 */
+                var backgroundMusicSource = String(backgroundMusic.source)
+                var backgroundMusicName = dialogActivityConfig.configItem.extractMusicNameFromPath(backgroundMusicSource) + backgroundMusicSource.slice(backgroundMusicSource.lastIndexOf('.'), backgroundMusicSource.length)
+                var nextMusicIndex = dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(backgroundMusicName)
+                if(nextMusicIndex != -1) {
+                    nextMusicIndex++
+                    while(nextMusicIndex < dialogActivityConfig.configItem.filteredBackgroundMusic.length)
+                        backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + dialogActivityConfig.configItem.filteredBackgroundMusic[nextMusicIndex++]))
+                }
+                else {
+                    nextMusicIndex = dialogActivityConfig.configItem.allBackgroundMusic.indexOf(backgroundMusicName) + 1
+                    while(nextMusicIndex < dialogActivityConfig.configItem.allBackgroundMusic.length) {
+                        if(dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(dialogActivityConfig.configItem.allBackgroundMusic[nextMusicIndex]) != -1) {
+                            nextMusicIndex = dialogActivityConfig.configItem.filteredBackgroundMusic.indexOf(dialogActivityConfig.configItem.allBackgroundMusic[nextMusicIndex])
+                            break
+                        }
+                        nextMusicIndex++
+                    }
+                    
+                    while(nextMusicIndex < dialogActivityConfig.configItem.filteredBackgroundMusic.length)
+                        backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + dialogActivityConfig.configItem.filteredBackgroundMusic[nextMusicIndex++]))
+                    backgroundMusic.nextAudio()
+                }
                 home()
+            }
+            
+            BackgroundMusicList {
+                id: backgroundMusicList
+                onClose: {
+                    visible = false
+                    dialogActivityConfig.configItem.visible = true
+                }
             }
         }
     }

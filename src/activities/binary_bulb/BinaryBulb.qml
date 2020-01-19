@@ -133,7 +133,7 @@ ActivityBase {
         }
 
         Row {
-            id: row
+            id: bulbsRow
             anchors.top: questionItem.bottom
             anchors.topMargin: 30 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
@@ -143,7 +143,7 @@ ActivityBase {
                 model: items.numberOfBulbs
                 LightBulb {
                     height: background.height / 5
-                    width: (background.width >= background.height) ? (background.width / 20) : ((background.width - (16 * row.spacing)) / 8)
+                    width: (background.width >= background.height) ? (background.width / 20) : ((background.width - (16 * bulbsRow.spacing)) / 8)
                     valueVisible: Dataset.get()[items.currentLevel].bulbValueVisible
                 }
             }
@@ -151,8 +151,8 @@ ActivityBase {
 
         GCText {
             id: reachedSoFar
-            anchors.horizontalCenter: row.horizontalCenter
-            anchors.top: row.bottom
+            anchors.horizontalCenter: bulbsRow.horizontalCenter
+            anchors.top: bulbsRow.bottom
             anchors.topMargin: 30 * ApplicationInfo.ratio
             color: "white"
             fontSize: largeSize

@@ -25,6 +25,7 @@ import "algebra.js" as Activity
 ActivityBase {
     id: activity
 
+    property int speedSetting: 5
     property alias operand: operand
 
     onStart: {
@@ -40,6 +41,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -55,8 +57,61 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
         }
 
-        onStart: Activity.start(coreItems, otherItems, operand)
+        onStart: Activity.start(coreItems, otherItems, operand, speedSetting)
         onStop: Activity.stop()
+
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias speedSlider: speedSlider
+                    height: column.height
+
+                    Column {
+                        id: column
+                        spacing: 10 * ApplicationInfo.ratio
+                        width: parent.width
+                        GCText {
+                            id: speedSliderText
+                            text: qsTr("Speed")
+                            fontSize: mediumSize
+                            wrapMode: Text.WordWrap
+                        }
+                         Flow {
+                            width: dialogActivityConfig.width
+                            spacing: 5
+                            GCSlider {
+                                id: speedSlider
+                                width: 250 * ApplicationInfo.ratio
+                                value: activity.speedSetting
+                                maximumValue: 5
+                                minimumValue: 1
+                                scrollEnabled: false
+                            }
+                        }
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                 if(dataToSave) {
+                     if(dataToSave["speedSetting"]) {
+                    activity.speedSetting = dataToSave["speedSetting"];
+                     }
+                }
+            }
+            onSaveData: {
+                var oldSpeed = activity.speedSetting
+                activity.speedSetting = dialogActivityConfig.configItem.speedSlider.value
+                if(oldSpeed != activity.speedSetting) {
+                    dataToSave = {"speedSetting": activity.speedSetting};
+                    background.stop();
+                    background.start();
+                }
+            }
+        }
 
         DialogHelp {
             id: dialogHelpLeftRight
@@ -75,7 +130,7 @@ ActivityBase {
             Bar {
                 id: bar
 
-                content: BarEnumContent { value: help | home | level }
+                content: BarEnumContent { value: (help | home | level | config) }
                 onHelpClicked: {
                     displayDialog(dialogHelpLeftRight)
                 }
@@ -85,6 +140,10 @@ ActivityBase {
                 onNextLevelClicked: {
                     Activity.nextLevel()
                 }
+                onConfigClicked: {
+                dialogActivityConfig.active = true
+                displayDialog(dialogActivityConfig)
+            }
                 onHomeClicked: home()
             }
         }

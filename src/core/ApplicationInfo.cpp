@@ -77,7 +77,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     QRect rect = qApp->primaryScreen()->geometry();
     m_ratio = qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.);
     // calculate a factor for font-scaling, cf.
-    // http://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
+    // https://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
     qreal refDpi = 216.;
     qreal refHeight = 1776.;
     qreal refWidth = 1080.;
@@ -182,6 +182,13 @@ QStringList ApplicationInfo::getFontsFromRcc()
     return m_fontsFromRcc;
 }
 
+QStringList ApplicationInfo::getBackgroundMusicFromRcc()
+{
+    const QStringList backgroundMusicFilters = { QString("*.%1").arg(COMPRESSED_AUDIO) };
+    m_backgroundMusicFromRcc = QDir(":/gcompris/data/backgroundMusic").entryList(backgroundMusicFilters);
+    return m_backgroundMusicFromRcc;
+}
+
 void ApplicationInfo::notifyPortraitMode()
 {
     int width = qApp->primaryScreen()->geometry().width();
@@ -252,7 +259,9 @@ QString ApplicationInfo::getVoicesLocale(const QString &locale)
             _locale = "en_US";
     }
     // locales we have country-specific voices for:
-    if (_locale.startsWith(QLatin1String("pt_BR")) ||
+    if (_locale.startsWith(QLatin1String("en_GB")) ||
+        _locale.startsWith(QLatin1String("en_US")) ||
+        _locale.startsWith(QLatin1String("pt_BR")) ||
         _locale.startsWith(QLatin1String("zh_CN")) ||
         _locale.startsWith(QLatin1String("zh_TW")))
         return QLocale(_locale).name();

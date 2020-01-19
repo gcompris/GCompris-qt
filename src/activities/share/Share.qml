@@ -130,7 +130,7 @@ ActivityBase {
             }
 
             //else => bad
-            bonus.bad("flower")
+            bonus.bad("flower", bonus.checkAnswer)
         }
 
         //center zone
@@ -231,7 +231,7 @@ ActivityBase {
             id: instructionTxt
             anchors {
                 top: background.vert ? parent.top : leftWidget.bottom
-                topMargin: -10
+                topMargin: 10
                 horizontalCenter: grid.horizontalCenter
             }
             opacity: instruction.opacity

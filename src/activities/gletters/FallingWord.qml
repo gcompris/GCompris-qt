@@ -60,7 +60,7 @@ Item {
         else if (wordText.text.length > 0 && wordText.text.length >= unmatchedIndex) {
             highlightedWordText.text = wordText.text.substring(0, unmatchedIndex);
             /* Need to add the ZERO WIDTH JOINER to force joined char in Arabic and
-             * Hangul: http://en.wikipedia.org/wiki/Zero-width_joiner
+             * Hangul: https://en.wikipedia.org/wiki/Zero-width_joiner
              *
              * FIXME: this works only on desktop systems, on android this
              * shifts the typed word a few pixels down. */

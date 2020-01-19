@@ -6,10 +6,10 @@ find_program(CPPCHECK_EXE NAMES cppcheck)
 if(CPPCHECK_EXE)
     set(CMAKE_CXX_CPPCHECK ${CPPCHECK_EXE})
     list(
-        APPEND CMAKE_CXX_CPPCHECK 
+        APPEND CMAKE_CXX_CPPCHECK
             "--enable=all"
             "--inconclusive"
-            "--force" 
+            "--force"
             "--inline-suppr"
     )
 endif()
@@ -20,6 +20,6 @@ if(CLANG_TIDY_EXE)
     set(CMAKE_CXX_CLANG_TIDY ${CLANG_TIDY_EXE})
     list(
         APPEND CMAKE_CXX_CLANG_TIDY
-            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-*,-modernize-use-auto,-readability-braces-around-statements,-readability-static-accessed-through-instance"
+            "-checks=*,-fuchsia*,-google*,-hicpp*,-llvm*,-cppcoreguidelines-*,-modernize-use-auto,-modernize-use-trailing-return-type,-readability-*"
         )
 endif()

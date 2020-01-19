@@ -103,7 +103,8 @@ Waveform::eval(qreal t) {
     qreal indmod = indF - (qreal)ind_min;
     Q_ASSERT(indmod < 1 && indmod >= 0);
 
-    qreal value_next, value_prev;
+    qreal value_next;
+    qreal value_prev;
 
     if (ind_min == ind_max) {
         return waveTable[ind_min];

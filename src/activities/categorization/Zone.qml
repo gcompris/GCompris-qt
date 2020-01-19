@@ -97,6 +97,8 @@ Flow {
                         else if(rightAreaContainsDrag)
                             droppedPosition = "right"
 
+                        Activity.setValues()
+
                         // If we drop on same zone, we move it at its initial place
                         if(currPosition == droppedPosition) {
                             image.x = 0
@@ -107,7 +109,6 @@ Flow {
                             image.source = ""
                         }
 
-                        Activity.setValues()
                         lastX = point1.x
                         lastY = point1.y
                     }

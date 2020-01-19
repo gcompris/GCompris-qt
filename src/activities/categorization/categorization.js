@@ -194,7 +194,7 @@ function allPlaced() {
     if(items.categoryReview.score.currentSubLevel === totalImages)
         items.bonus.good("flower")
     else
-        items.bonus.bad("flower")
+        items.bonus.bad("flower", items.bonus.checkAnswer)
 }
 
 // Save properties to lessons

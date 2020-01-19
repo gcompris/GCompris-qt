@@ -20,7 +20,7 @@ foreach(_variableName ${_variableNames})
   endif()
 endforeach()
 list(APPEND RCC_OUTPUT_FILES \"/usr/${_data_dest_dir}/rcc/menu.rcc\")
-list(APPEND RCC_OUTPUT_FILES \"/usr/${_data_dest_dir}/rcc/core.rcc\")  
+list(APPEND RCC_OUTPUT_FILES \"/usr/${_data_dest_dir}/rcc/core.rcc\")
 list(APPEND RCC_OUTPUT_FILES \"/usr/${_data_dest_dir}/rcc/activities.rcc\")
 string(REPLACE "\"\"" "\"\n\"" RCC_GENERATED_FILES ${RCC_OUTPUT_FILES})
 

@@ -19,6 +19,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 
@@ -27,6 +28,8 @@ Item {
     property Item background
     property alias localeBox: localeBox
     property alias uppercaseBox: uppercaseBox
+    property alias speedSlider: speedSlider
+    property int speedSetting: 10
     property bool uppercaseOnly: false
     property string locale: "system"
     height: column.height
@@ -41,25 +44,43 @@ Item {
         spacing: 10
         Flow {
             spacing: 5
-            width: activityConfiguration.width
+            width: dialogActivityConfig.width
             GCComboBox {
                 id: localeBox
-                visible: true
                 model: langs.languages
-                background: activityConfiguration.background
+                background: dialogActivityConfig
                 label: qsTr("Select your locale")
             }
-        }
-        GCDialogCheckBox {
-            id: uppercaseBox
-            visible: true
-            width: parent.width
-            text: qsTr("Uppercase only mode")
-            checked: activityConfiguration.uppercaseOnly
+            
+            GCDialogCheckBox {
+                id: uppercaseBox
+                width: dialogActivityConfig.width
+                text: qsTr("Uppercase only mode")
+                checked: uppercaseOnly
+            }
+            GCText {
+                id: speedSliderText
+                text: qsTr("Speed")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+            Flow {
+                width: dialogActivityConfig.width
+                spacing: 5
+                GCSlider {
+                    id: speedSlider
+                    width: 250 * ApplicationInfo.ratio
+                    value: speedSetting
+                    maximumValue: 10
+                    minimumValue: 1
+                    scrollEnabled: false
+                }
+            }
         }
     }
 
     property var dataToSave
+
     function setDefaultValues() {
         // Recreate the binding
         uppercaseBox.checked = Qt.binding(function(){return activityConfiguration.uppercaseOnly;})
@@ -77,6 +98,7 @@ Item {
         }
         activityConfiguration.locale = localeUtf8
         activityConfiguration.uppercaseOnly = (dataToSave.uppercaseMode === "true")
+        activityConfiguration.speedSetting = dataToSave.speedSetting
     }
 
     function saveValues() {
@@ -90,10 +112,14 @@ Item {
 
         var oldUppercaseMode = activityConfiguration.uppercaseOnly
         activityConfiguration.uppercaseOnly = activityConfiguration.uppercaseBox.checked
-        dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly}
 
+        var oldSpeed = activityConfiguration.speedSetting
+        speedSetting = speedSlider.value
+
+        dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly, "speedSetting": speedSetting}
         activityConfiguration.locale = newLocale;
-        if(oldLocale !== newLocale || oldUppercaseMode !== activityConfiguration.uppercaseOnly) {
+
+        if(oldLocale !== newLocale || oldUppercaseMode !== activityConfiguration.uppercaseOnly || oldSpeed !== speedSetting) {
             configHasChanged = true;
         }
 

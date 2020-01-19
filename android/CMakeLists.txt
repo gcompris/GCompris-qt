@@ -1,25 +1,25 @@
 #android build
 # copied/inspired from stellarium project (http://www.stellarium.org/wiki/index.php/Building_for_Android)
 
-LIST(APPEND JAVA_SRCS "src/com/android/vending/billing/IInAppBillingService.aidl" "src/net/gcompris/GComprisActivity.java")
+list(APPEND JAVA_SRCS "src/com/android/vending/billing/IInAppBillingService.aidl" "src/net/gcompris/GComprisActivity.java")
 
-FOREACH(JavaSource ${JAVA_SRCS})
-  ADD_CUSTOM_COMMAND(
+foreach(JavaSource ${JAVA_SRCS})
+  add_custom_command(
     OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource}
     COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_SOURCE_DIR}/${JavaSource} ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource}
     DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/${JavaSource}
     )
-  LIST(APPEND TARGET_JAVA_FILES ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource})
-ENDFOREACH()
+  list(APPEND TARGET_JAVA_FILES ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource})
+endforeach()
 
-ADD_CUSTOM_TARGET (java_src DEPENDS ${TARGET_JAVA_FILES})
+add_custom_target(java_src DEPENDS ${TARGET_JAVA_FILES})
 
-find_program(ANDROID_DEPLOY_QT NAMES androiddeployqt PATHS ${_qt5Core_install_prefix}/bin/ )
+find_program(ANDROID_DEPLOY_QT NAMES androiddeployqt PATHS ${_qt5Core_install_prefix}/bin/)
 
 # Look for androiddeployqt program
-if (NOT ANDROID_DEPLOY_QT)
+if(NOT ANDROID_DEPLOY_QT)
   message(FATAL_ERROR "Could not find androiddeployqt. Make sure you set all the Qt5_* paths to the Qt for android compiled version.")
-endif(NOT ANDROID_DEPLOY_QT)
+endif()
 
 # Set version
 set(ANDROID_VERSION_NAME ${GCOMPRIS_VERSION})
@@ -30,7 +30,7 @@ if(ACTIVATION_MODE STREQUAL "inapp")
   set(APK_SUFFIX "-inapp${APK_SUFFIX}")
 elseif(ACTIVATION_MODE STREQUAL "internal")
   set(APK_SUFFIX "-internal${APK_SUFFIX}")
-endif(ACTIVATION_MODE STREQUAL "inapp")
+endif()
 
 # _HOST have been removed from ECM in https://cgit.kde.org/extra-cmake-modules.git/commit/?id=731ba7036effcc430f98031e7f2a9826f6234cba
 set(_HOST "${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}")
@@ -38,23 +38,27 @@ string(TOLOWER "${_HOST}" _HOST)
 
 if(WITH_DEMO_ONLY)
   set(APK_SUFFIX "-demo${APK_SUFFIX}")
-endif(WITH_DEMO_ONLY)
+endif()
 
 if(WITH_DOWNLOAD)
   set(APK_SUFFIX "-dl${APK_SUFFIX}")
-endif(WITH_DOWNLOAD)
+endif()
 
 if(WITH_KIOSK_MODE)
   set(APK_SUFFIX "-kiosk${APK_SUFFIX}")
-endif(WITH_KIOSK_MODE)
+endif()
 
 # specific clang addition
-if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
   set(STDCPP_PATH ",\"stdcpp-path\": \"${ANDROID_NDK}/sources/cxx-stl/llvm-libc++/libs/${ANDROID_ABI}/libc++_shared.so\"")
   set(REMOVE_mandroid_FLAG_FOR_CLANG "sed -i -e 's/-mandroid//' Configure")
 endif()
 
 set(ANDROID_TOOLCHAIN arm-linux-androideabi)
+if("${ANDROID_ARCH}" STREQUAL "arm64")
+  set(ANDROID_TOOLCHAIN aarch64-linux-android)
+endif()
+
 # set android package source for androiddeployqt json file
 set(PACKAGE_SOURCE_ANDROID ${CMAKE_BINARY_DIR}/tmpAndroid)
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml @ONLY)
@@ -82,72 +86,81 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   list(APPEND ALL_LOCALES ${locale})
 endforeach()
 
-add_custom_command (
+find_program(ZIP_ALIGN NAMES zipalign PATHS ${ANDROID_SDK_ROOT}/build-tools/${ANDROID_SDK_BUILD_TOOLS_REVISION}/)
+
+add_custom_command(
   OUTPUT createApkFromAndroidDeployQtDebug
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --debug
-  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/bin/QtApp-debug.apk ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-debug-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --debug --gradle
+  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/build/outputs/apk/debug/android-debug.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-debug-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
-add_custom_command (
+add_custom_command(
   OUTPUT createApkFromAndroidDeployQtRelease
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${PACKAGE_SOURCE_ANDROID}
-  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release
-  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/bin/QtApp-release-unsigned.apk ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_DEPLOY_QT} --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${PACKAGE_SOURCE_ANDROID}/configAndroid.json --release --gradle
+  COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/build/outputs/apk/release/android-release-unsigned.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
-add_custom_command (
+add_custom_command(
   OUTPUT createApkSignedFromAndroidDeployQtRelease
-  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $ENV{ANDROID_KEYSTORE} -storepass $ENV{ANDROID_KEYSTORE_PASSWD} ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk gcompris
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $ENV{ANDROID_KEYSTORE} -storepass $ENV{ANDROID_KEYSTORE_PASSWD} ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk gcompris
 )
 
-add_custom_command (
+add_custom_command(
   OUTPUT createApkSignedAlignedFromAndroidDeployQtRelease
-  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${ANDROID_SDK_ROOT}/build-tools/21.1.2/zipalign -v 4 ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ZIP_ALIGN} -v 4 ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
-add_custom_command (
+add_custom_command(
   OUTPUT apkInstall
-  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
-  COMMAND ${ANDROID_SDK_ROOT}/platform-tools/adb install -r ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_SDK_ROOT}/platform-tools/adb install -r ${CMAKE_CURRENT_BINARY_DIR}/GCompris-Android-release-signed-aligned-${ANDROID_ABI}${APK_SUFFIX}${GCOMPRIS_VERSION}.apk
 )
 
 # Command to create apk from Makefile
-add_custom_target (apk_debug
-   DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtDebug java_src
+add_custom_target(apk_debug
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtDebug java_src
 )
 
 # Command to create apk from Makefile
-add_custom_target (apk_release
-   DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtRelease java_src
+add_custom_target(apk_release
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkFromAndroidDeployQtRelease java_src
 )
 
 # Command to create signed apk from Makefile
-add_custom_target (apk_signed
-   DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkSignedFromAndroidDeployQtRelease java_src
+add_custom_target(apk_signed
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkSignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to create signed aligned apk from Makefile
-add_custom_target (apk_signed_aligned
-   DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkSignedAlignedFromAndroidDeployQtRelease java_src
+add_custom_target(apk_signed_aligned
+  DEPENDS ${ALL_LOCALES} move_translations_to_assets package_openssl createApkSignedAlignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to install the signed aligned apk through adb from Makefile
-add_custom_target (apk_install
-   DEPENDS apkInstall
+add_custom_target(apk_install
+  DEPENDS apkInstall
 )
 
 # compile openssl needed to download from https
 include(ExternalProject)
 set(OPENSSL_DIR "${CMAKE_BINARY_DIR}/external/openssl/")
-configure_file("build_openssl.sh.in" "build_openssl.sh" @ONLY)
+set(SCRIPT_BUILD "build_openssl.sh.in")
+if("${ANDROID_ARCH}" STREQUAL "arm64")
+  set(SCRIPT_BUILD "build_openssl_64.sh.in")
+endif()
+message(STATUS "Building ${SCRIPT_BUILD}")
 
+configure_file("${SCRIPT_BUILD}" "build_openssl.sh" @ONLY)
+
+if("${ANDROID_ARCH}" STREQUAL "arm")
 ExternalProject_Add(
   ext_openssl
   DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
@@ -158,12 +171,33 @@ ExternalProject_Add(
   BUILD_COMMAND sh "${CMAKE_CURRENT_BINARY_DIR}/build_openssl.sh" <SOURCE_DIR>
   INSTALL_COMMAND ""
   )
-
-add_custom_command( 
+add_custom_command(
   OUTPUT package_openssl
   COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto.so"
   COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.0.0" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl.so"
   )
+else()
+  # For Qt 5.12.5 and above 5.13.0, it needs libcrypto_1_1.so and libssl_1_1.so
+  set(suffix_libssl "")
+  if(Qt5Core_VERSION VERSION_GREATER_EQUAL "5.12.5" AND NOT Qt5Core_VERSION MATCHES "5.13.0")
+    set(suffix_libssl "_1_1")
+  endif()
+ExternalProject_Add(
+  ext_openssl
+  DOWNLOAD_DIR ${CMAKE_BINARY_DIR}
+  SOURCE_DIR ${OPENSSL_DIR}
+  URL https://www.openssl.org/source/openssl-1.1.1c.tar.gz
+  URL_HASH SHA256=f6fb3079ad15076154eda9413fed42877d668e7069d9b87396d0804fdb3f4c90
+  CONFIGURE_COMMAND echo "Configuration not needed"
+  BUILD_COMMAND sh "${CMAKE_CURRENT_BINARY_DIR}/build_openssl.sh" <SOURCE_DIR>
+  INSTALL_COMMAND ""
+  )
+add_custom_command(
+  OUTPUT package_openssl
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libcrypto.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libcrypto${suffix_libssl}.so"
+  COMMAND ${CMAKE_COMMAND} -E copy "${OPENSSL_DIR}/libssl.so.1.1" "${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/libssl${suffix_libssl}.so"
+  )
+endif()
 
 #
 add_custom_command(
@@ -171,13 +205,13 @@ add_custom_command(
   COMMAND ${CMAKE_COMMAND} -E copy_directory ${GCOMPRIS_TRANSLATIONS_DIR} ${CMAKE_BINARY_DIR}/android/assets/share/GCompris
   )
 
-if (TARGET create-apk)
-   set(PACKAGE_DIR ${PACKAGE_SOURCE_ANDROID})
-   set_target_properties(create-apk-GCompris PROPERTIES ANDROID_APK_DIR "${PACKAGE_DIR}")
-   add_custom_target(gcompris-move-metadata ALL
-      COMMAND cmake -E echo "Moving GCompris shared Android resources"
-      COMMAND cmake -E make_directory ${PACKAGE_SOURCE_ANDROID}
-      COMMAND cmake -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}" "${PACKAGE_SOURCE_ANDROID}"
-   )
-   add_dependencies(create-apk gcompris-move-metadata)
+if(TARGET create-apk)
+  set(PACKAGE_DIR ${PACKAGE_SOURCE_ANDROID})
+  set_target_properties(create-apk-GCompris PROPERTIES ANDROID_APK_DIR "${PACKAGE_DIR}")
+  add_custom_target(gcompris-move-metadata ALL
+    COMMAND cmake -E echo "Moving GCompris shared Android resources"
+    COMMAND cmake -E make_directory ${PACKAGE_SOURCE_ANDROID}
+    COMMAND cmake -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}" "${PACKAGE_SOURCE_ANDROID}"
+    )
+  add_dependencies(create-apk gcompris-move-metadata)
 endif()

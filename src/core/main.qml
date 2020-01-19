@@ -53,7 +53,31 @@ Window {
     /// @cond INTERNAL_DOCS
 
     property var applicationState: Qt.application.state
+    property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
+    property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
+    property alias backgroundMusic: backgroundMusic
+
+    /**
+     * type: bool
+     * It tells whether a musical activity is running.
+     *
+     * It changes to true if the started activity is a musical activity and back to false when the activity is closed, allowing to play background music.
+     */
     property bool isMusicalActivityRunning: false
+
+    /**
+     * When a musical activity is started, the backgroundMusic pauses.
+     *
+     * When returning back from the musical activity to menu, backgroundMusic resumes.
+     */
+    onIsMusicalActivityRunningChanged: {
+        if(isMusicalActivityRunning) {
+            backgroundMusic.pause()
+        }
+        else {
+            backgroundMusic.resume()
+        }
+    }
 
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
@@ -85,9 +109,6 @@ Window {
         }
 
         Component.onCompleted: {
-            if(ApplicationSettings.isAudioEffectsEnabled)
-                audioVoices.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
-
             if (DownloadManager.areVoicesRegistered())
                 delayedWelcomeTimer.playWelcome();
             else {
@@ -101,6 +122,44 @@ Window {
     GCSfx {
         id: audioEffects
         muted: !ApplicationSettings.isAudioEffectsEnabled && !main.isMusicalActivityRunning
+        volume: ApplicationSettings.audioEffectsVolume
+    }
+
+    GCAudio {
+        id: backgroundMusic
+        isBackgroundMusic: true
+        muted: !ApplicationSettings.isBackgroundMusicEnabled
+        volume: ApplicationSettings.backgroundMusicVolume
+
+        onMutedChanged: {
+            if(!hasAudio && !files.length) {
+                backgroundMusic.playBackgroundMusic()
+            }
+        }
+
+        onDone: backgroundMusic.playBackgroundMusic()
+
+        function playBackgroundMusic() {
+            rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+
+            for(var i = 0; i < filteredBackgroundMusic.length; i++) {
+                backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + filteredBackgroundMusic[i]))
+            }
+            if(main.isMusicalActivityRunning)
+                backgroundMusic.pause()
+        }
+
+        Component.onCompleted: {
+            if(ApplicationSettings.isBackgroundMusicEnabled)
+                backgroundMusic.append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
+            if(ApplicationSettings.isBackgroundMusicEnabled
+               && DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources())) {
+                   backgroundMusic.playBackgroundMusic()
+            }
+            else {
+                DownloadManager.backgroundMusicRegistered.connect(backgroundMusic.playBackgroundMusic)
+            }
+        }
     }
 
     function playIntroVoice(name) {
@@ -140,6 +199,43 @@ Window {
             );
         }
     }
+
+    function checkBackgroundMusic() {
+        var music = DownloadManager.getBackgroundMusicResources()
+        if(rccBackgroundMusic == '') {
+            rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+        }
+        if(music == '') {
+            music = DownloadManager.getBackgroundMusicResources()
+        }
+        // We have local music but it is not yet registered
+        else if(!DownloadManager.isDataRegistered("backgroundMusic") && DownloadManager.haveLocalResource(music)) {
+            // We have music and automatic download is enabled. Download the music and register it
+            if(DownloadManager.updateResource(music) && DownloadManager.downloadIsRunning()) {
+                DownloadManager.registerResource(music)
+                rccBackgroundMusic = Core.shuffle(ApplicationInfo.getBackgroundMusicFromRcc())
+            }
+            else {
+                rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+            }
+        }
+        else if(!DownloadManager.haveLocalResource(music)) {
+            Core.showMessageDialog(
+            main,
+            qsTr("The background music is not yet downloaded. ")
+            + qsTr("Do you want to download it now?"),
+            qsTr("Yes"),
+            function() {
+                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
+                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                }
+            },
+            qsTr("No"), null,
+            function() { pageView.currentItem.focus = true }
+            );
+        }
+    }
+
     ChangeLog {
        id: changelog
     }
@@ -179,6 +275,7 @@ Window {
                         function() {
                             pageView.currentItem.focus = true
                             checkWordset()
+                            checkBackgroundMusic()
                         }
              );
         }
@@ -189,9 +286,8 @@ Window {
                 DownloadManager.updateResource(
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
             }
-
             checkWordset()
-
+            checkBackgroundMusic()
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 Core.showMessageDialog(
@@ -219,7 +315,8 @@ Window {
             "properties": {
                 'audioVoices': audioVoices,
                 'audioEffects': audioEffects,
-                'loading': loading
+                'loading': loading,
+                'backgroundMusic': backgroundMusic
             }
         }
 
@@ -234,7 +331,7 @@ Window {
 
                 if(!properties.exitItem.isDialog &&        // if coming from menu and
                         !properties.enterItem.isDialog)    // going into an activity then
-                    playIntroVoice(properties.enterItem.activityInfo.name);    // play intro
+                    playIntroVoice(properties.enterItem.activityInfo.name); // play intro
 
                 // Don't restart an activity if you click on help
                 if (!properties.exitItem.isDialog ||       // if coming from menu or

@@ -33,7 +33,7 @@ ActivityInfo {
     //: Help prerequisite
     prerequisite: qsTr("Basic enumeration")
     //: Help manual
-    manual: qsTr("First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard.")
+    manual: qsTr("First, properly organize the items so that you can count them. Then, select the item you want to answer in the top left area. Enter the answer with the keyboard.")
     credit: ""
   section: "math numeration"
   createdInVersion: 0

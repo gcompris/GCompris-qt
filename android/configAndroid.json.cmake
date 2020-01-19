@@ -3,6 +3,7 @@
  "qt": "@_qt5Core_install_prefix@",
  "sdk": "@ANDROID_SDK_ROOT@",
  "ndk": "@ANDROID_NDK@",
+ "sdkBuildToolsRevision": "@ANDROID_SDK_BUILD_TOOLS_REVISION@",
  "toolchain-prefix": "@ANDROID_TOOLCHAIN@",
  "tool-prefix": "@ANDROID_TOOLCHAIN@",
  "toolchain-version": "4.9",

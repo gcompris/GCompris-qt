@@ -226,7 +226,7 @@ function checkAnswer() {
         items.bonus.good("flower");
     }
     else {
-        items.bonus.bad("flower");
+        items.bonus.bad("flower", items.bonus.checkAnswer);
    }
 }
 

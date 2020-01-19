@@ -117,7 +117,7 @@ function updateScore(isCorrectAnswer) {
         currentSubLevel++;
     }
     else
-        items.bonus.bad("lion")
+        items.bonus.bad("lion", items.bonus.checkAnswer)
 }
 
 function checkAnswer() {

@@ -63,8 +63,6 @@ private slots:
     void stopAudio(int note);
     
 private:
-    unsigned int bufferSize;
-
     Generator        *m_generator;
     QAudioDeviceInfo  m_device;
     QAudioFormat      m_format;

@@ -23,6 +23,7 @@ import QtQuick 2.6
 import QtQuick.Controls 1.5
 import QtQuick.Controls.Styles 1.4
 import GCompris 1.0
+import QtMultimedia 5.0
 
 import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core
@@ -39,7 +40,7 @@ Item {
 
     Column {
         id: column
-        spacing: 10
+        spacing: 10 * ApplicationInfo.ratio
         width: parent.width
 
         move: Transition {
@@ -50,7 +51,7 @@ Item {
         Row {
             id: demoModeBox
             width: parent.width
-            spacing: 10
+            spacing: 10 * ApplicationInfo.ratio
 
             property bool checked: !ApplicationSettings.isDemoMode
 
@@ -212,6 +213,107 @@ Item {
             }
         }
 
+        Flow {
+            spacing: 5 * ApplicationInfo.ratio
+            width: parent.width
+            GCText {
+                id: audioEffectsVolumeText
+                text: qsTr("Audio effects volume")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+        }
+
+        Flow {
+            spacing: 5 * ApplicationInfo.ratio
+            width: parent.width
+            GCSlider {
+                id: audioEffectsVolumeSlider
+                width: 250 * ApplicationInfo.ratio
+                maximumValue: 10
+                minimumValue: 0
+                value: audioEffectsVolume * 10
+                onValueChanged: ApplicationSettings.audioEffectsVolume = value / 10;
+                scrollEnabled: false
+            }
+        }
+
+	    GCDialogCheckBox {
+           id: enableBackgroundMusicBox
+            text: qsTr("Enable background music")
+            checked: isBackgroundMusicEnabled
+            onCheckedChanged: {
+                isBackgroundMusicEnabled = checked;
+            }
+        }
+
+        Flow {
+            spacing: 5 * ApplicationInfo.ratio
+            width: parent.width
+            GCText {
+                text: qsTr("Background Music")
+                fontSize: mediumSize
+                height: 50 * ApplicationInfo.ratio
+            }
+            Image {
+                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+                height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
+                sourceSize.width: height
+
+                MouseArea {
+                    anchors.fill: parent
+                    enabled: (backgroundMusic.playbackState == Audio.PlayingState && !backgroundMusic.muted)
+                    onClicked: backgroundMusic.nextAudio()
+                }
+            }
+        }
+
+        Flow {
+            width: parent.width
+            spacing: 5 * ApplicationInfo.ratio
+
+            Button {
+                id: backgroundMusicName
+                height: 30 * ApplicationInfo.ratio
+                width: background.width * 0.8
+                text: {
+                    if(backgroundMusic.playbackState != Audio.PlayingState)
+                        return qsTr("Not playing")
+                    else if (backgroundMusic.metaDataMusic[0] != undefined)
+                        return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
+                    else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/resource/intro")
+                        return qsTr("Introduction music")
+                    return ""
+                }
+                style: GCButtonStyle {}
+                onClicked: {
+                    dialogConfig.visible = false
+                    backgroundMusicList.visible = true
+                }
+            }
+        }
+
+        Flow {
+            spacing: 5
+            width: parent.width
+            GCText {
+                id: backgroundMusicVolumeText
+                text: qsTr("Background music volume")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+        }
+
+        GCSlider {
+            id: backgroundMusicVolumeSlider
+            width: 250 * ApplicationInfo.ratio
+            maximumValue: 10
+            minimumValue: 0
+            value: backgroundMusicVolume * 10
+            onValueChanged: ApplicationSettings.backgroundMusicVolume = value / 10;
+            scrollEnabled: false
+        }
+
         GCDialogCheckBox {
             id: enableFullscreenBox
             text: qsTr("Fullscreen")
@@ -275,6 +377,12 @@ Item {
                 label: qsTr("Font selector")
             }
         }
+        GCText {
+            id: baseFontSizeText
+            text: qsTr("Font size")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
         Flow {
             spacing: 5
             width: parent.width
@@ -286,12 +394,6 @@ Item {
                 value: baseFontSize
                 onValueChanged: ApplicationSettings.baseFontSize = value;
                 scrollEnabled: false
-            }
-            GCText {
-                id: baseFontSizeText
-                text: qsTr("Font size")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
             }
             Button {
                 height: 30 * ApplicationInfo.ratio
@@ -310,6 +412,12 @@ Item {
                 label: qsTr("Font Capitalization")
             }
         }
+        GCText {
+            id: fontLetterSpacingText
+            text: qsTr("Font letter spacing")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
         Flow {
             spacing: 5
             width: parent.width
@@ -321,12 +429,6 @@ Item {
                 value: fontLetterSpacing
                 onValueChanged: ApplicationSettings.fontLetterSpacing = value;
                 scrollEnabled: false
-            }
-            GCText {
-                id: fontLetterSpacingText
-                text: qsTr("Font letter spacing")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
             }
             Button {
                 height: 30 * ApplicationInfo.ratio
@@ -409,12 +511,11 @@ Item {
                 fontSize: mediumSize
                 height: 50 * ApplicationInfo.ratio
             }
+        }
 
-            // Padding
-            Item {
-                height: 1
-                width: 10 * ApplicationInfo.ratio
-            }
+        Flow {
+            width: parent.width
+            spacing: 5 * ApplicationInfo.ratio
 
             Image {
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg"
@@ -426,12 +527,6 @@ Item {
                         filterRepeater.setMin(filterRepeater.min + 1)
                     }
                 }
-            }
-
-            // Padding
-            Item {
-                height: 1
-                width: 5 * ApplicationInfo.ratio
             }
 
             // Level filtering
@@ -497,12 +592,6 @@ Item {
                 }
             }
 
-            // Padding
-            Item {
-                height: 1
-                width: 5 * ApplicationInfo.ratio
-            }
-
             Image {
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
                 sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
@@ -520,15 +609,27 @@ Item {
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
+    property bool isBackgroundMusicEnabled: ApplicationSettings.isBackgroundMusicEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
     property string wordset: ApplicationSettings.wordset
+    property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
+    property var allBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property int baseFontSize  // don't bind to ApplicationSettings.baseFontSize
     property real fontLetterSpacing // don't bind to ApplicationSettings.fontLetterSpacing
     // or we get a binding loop warning
-
+    property real backgroundMusicVolume
+    property real audioEffectsVolume
+    
+    function extractMusicNameFromPath(musicPath) {
+        var musicDirectoryPath = ApplicationInfo.getAudioFilePath("backgroundMusic/")
+        var musicName = String(musicPath)
+        musicName = musicName.slice(musicDirectoryPath.length, musicName.length)
+        return musicName.slice(0, musicName.lastIndexOf('.'))
+    }
+    
     function loadFromConfig() {
         // Synchronize settings with data
         showLockedActivities = ApplicationSettings.showLockedActivities
@@ -537,6 +638,9 @@ Item {
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
+
+        isBackgroundMusicEnabled = ApplicationSettings.isBackgroundMusicEnabled
+        enableBackgroundMusicBox.checked = isBackgroundMusicEnabled
 
         isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
@@ -554,8 +658,14 @@ Item {
         wordsetBox.checked = DownloadManager.isDataRegistered("words") || ApplicationSettings.wordset == 'data2/words/words.rcc'
         wordsetBox.enabled = !DownloadManager.isDataRegistered("words")
 
-        baseFontSize = ApplicationSettings.baseFontSize;
-        fontLetterSpacing = ApplicationSettings.fontLetterSpacing;
+        baseFontSize = ApplicationSettings.baseFontSize
+        fontLetterSpacing = ApplicationSettings.fontLetterSpacing
+        backgroundMusicVolume = ApplicationSettings.backgroundMusicVolume
+        audioEffectsVolume = ApplicationSettings.audioEffectsVolume
+        filteredBackgroundMusic = ApplicationSettings.filteredBackgroundMusic
+        allBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
+        if(filteredBackgroundMusic.length === 0)
+            filteredBackgroundMusic = allBackgroundMusic
         // Set locale
         for(var i = 0 ; i < dialogConfig.languages.length ; i ++) {
             if(dialogConfig.languages[i].locale === ApplicationSettings.locale) {
@@ -585,12 +695,13 @@ Item {
         ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
+        ApplicationSettings.isBackgroundMusicEnabled = isBackgroundMusicEnabled
+        ApplicationSettings.filteredBackgroundMusic = filteredBackgroundMusic
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
         ApplicationSettings.wordset = wordset
-
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
@@ -656,7 +767,36 @@ Item {
                 }
             }
         }
-    }
+
+        // download backgroundMusic.rcc if needed
+        if(DownloadManager.isDataRegistered("backgroundMusic")) {
+        // we either have it, we try to update in the background
+        // or we are downloading it
+            if(DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources()))
+                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources())
+            }
+        else {
+        // download automatically if automatic download else ask for download
+            if(isAutomaticDownloadsEnabled) {
+                var prevAutomaticDownload = ApplicationSettings.isAutomaticDownloadsEnabled
+                ApplicationSettings.isAutomaticDownloadsEnabled = true;
+                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources());
+                ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
+            }
+            else {
+                Core.showMessageDialog(main,
+                qsTr("The background music is not yet installed. ")
+                + qsTr("Do you want to download it now?"),
+                qsTr("Yes"),
+                function() {
+                    if (DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources()))
+                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                },
+                qsTr("No"),null
+                );
+                }
+            }
+        }
 
     ListModel {
         id: fonts
@@ -707,6 +847,17 @@ Item {
         { text: qsTr("All uppercase"), value: Font.AllUppercase },
         { text: qsTr("All lowercase"), value: Font.AllLowercase }
     ]
+    
+    function isFilteredBackgroundMusicChanged() {
+        initialFilteredMusic = ApplicationSettings.filteredBackgroundMusic
+        if(initialFilteredMusic.length != filteredBackgroundMusic.length)
+            return true
+        for(var i = 0; i < initialFilteredMusic.length; i++)
+            if(filteredBackgroundMusic.indexOf(initialFilteredMusic[i]) == -1)
+                return true
+        
+        return false
+    }
 
     function hasConfigChanged() {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
@@ -719,11 +870,13 @@ Item {
         (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
+        (ApplicationSettings.isBackgroundMusicEnabled != isBackgroundMusicEnabled) ||
         (ApplicationSettings.isFullscreen != isFullscreen) ||
         (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
         (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||
         (ApplicationSettings.baseFontSize != baseFontSize) ||
-        (ApplicationSettings.showLockedActivities != showLockedActivities)
+        (ApplicationSettings.showLockedActivities != showLockedActivities) ||
+        isFilteredBackgroundMusicChanged()
         );
     }
 }

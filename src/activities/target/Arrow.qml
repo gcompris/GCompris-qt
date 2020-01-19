@@ -40,13 +40,15 @@ Repeater {
     
     Rectangle {
         id: arrow
-        width: 30 * ApplicationInfo.ratio
-        height: 30 * ApplicationInfo.ratio
+        width: 15 * ApplicationInfo.ratio
+        height: 15 * ApplicationInfo.ratio
         radius: width / 2
         anchors.centerIn: parent
         border.width: 1 * ApplicationInfo.ratio
-        border.color: "black"
+        border.color: "#60000000"
         opacity: 0
+        color: "#d6d6d6"
+        scale: 2
         
         Behavior on scale {
             id: scale

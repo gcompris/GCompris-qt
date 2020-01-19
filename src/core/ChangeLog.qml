@@ -38,9 +38,18 @@ QtObject {
      */
     property var changelog: [
 
+            { "versionCode": 9700, "content": [qsTr("New sub-categories to organize activities"),
+                qsTr("Translation added for Macedonian."),
+                qsTr("New activities Programming Maze and Baby Tangram"),
+                qsTr("New background music and volume settings."),
+                qsTr("New speed setting in several activities."),
+                qsTr("New option in chess to display captured pieces."),
+                qsTr("New images in Colors, Advanced colors and Target game."),
+                qsTr("New voices for US English."),
+                qsTr("Many little fixes and improvements.")] },
             { "versionCode": 9600, "content": [qsTr("Translation updated for multiple languages (Breton, Brazilian Portuguese, Finnish...)."),
                 qsTr("Add Russian dataset for Click on letter activity."),
-qsTr("Lang activity now available in Dutch.")] },
+                qsTr("Lang activity now available in Dutch.")] },
             { "versionCode": 9500, "content": [qsTr("Merge Norwegian counties Nord-Trøndelag and Sør-Trøndelag into Trøndelag in geo-country activity."),
                 qsTr("Fix in braille activities where the cells start at 1, not 0."),
                 qsTr("Translation added for Basque, Hungarian and Malayalam."),

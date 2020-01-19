@@ -6,6 +6,7 @@
  * Authors:
  *   Siddhesh Suthar <siddhesh.it@gmail.com>
  *   Aman Kumar Gupta <gupta2140@gmail.com>
+ *   Timothée Giet <animtim@gcompris.net> (Layout and graphics rework)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -50,7 +51,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/programmingMaze/resource/background.svg"
+        source: "qrc:/gcompris/src/activities/programmingMaze/resource/background-pm.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
 
@@ -159,7 +160,8 @@ ActivityBase {
         Rectangle {
             id: constraintInstruction
             anchors.left: parent.left
-            anchors.bottom: runCode.top
+            anchors.top: instructionArea.bottom
+            anchors.topMargin: 5 * ApplicationInfo.ratio
             width: parent.width / 2.3
             height: parent.height / 8.9
             radius: 10
@@ -217,20 +219,21 @@ ActivityBase {
                 y: modelData.y * height
                 width: background.width / 10
                 height: (background.height - background.height / 10) / 10
-                source: Activity.reverseCountUrl + "iceblock.svg"
+                source: Activity.reverseCountUrl + "ice-block.svg"
             }
         }
 
         Image {
             id: fish
             sourceSize.width: background.width / 12
-            source: Activity.reverseCountUrl + "blue-fish.svg"
+            source: Activity.reverseCountUrl + "fish-blue.svg"
         }
 
         Image {
             id: player
             source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
-            sourceSize.width: background.width / 12
+            width: background.width / 12
+            sourceSize.width: width
             z: 1
             property int duration: 1000
             readonly property real playerCenterX: x + width / 2
@@ -248,8 +251,12 @@ ActivityBase {
 
         Rectangle {
             id: activeCodeAreaIndicator
+            color: "#1dade4"
             opacity: 0.5
+            radius: 8 * ApplicationInfo.ratio
             visible: activity.keyboardNavigationVisible
+            border.width: 2 * ApplicationInfo.ratio
+            border.color: "white"
 
             function changeActiveCodeAreaIndicator(activeArea) {
                 anchors.top = activeArea.top
@@ -316,48 +323,55 @@ ActivityBase {
             }
         }
 
-        Image {
-            id: runCode
-            width: background.width / 10
-            height: background.height / 10
-            anchors.right: instructionArea.right
-            anchors.bottom: bar.top
-            anchors.margins: 10 * ApplicationInfo.ratio
+        Item {
+            id: runCodeLayout
+            height: constraintInstruction.height
+            anchors.left: constraintInstruction.right
+            anchors.right: mainFunctionCodeArea.left
+            anchors.verticalCenter: constraintInstruction.verticalCenter
 
-            source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-            fillMode: Image.PreserveAspectFit
+            Image {
+                id: runCode
+                height: Math.min(parent.width, parent.height)
+                width: height
+                sourceSize.width: height
+                sourceSize.height: height
+                anchors.centerIn: parent
+                source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
+                fillMode: Image.PreserveAspectFit
 
-            MouseArea {
-                id: runCodeMouseArea
-                anchors.fill: parent
-                hoverEnabled: ApplicationInfo.isMobile ? false : (!items.isRunCodeEnabled ? false : true)
-                enabled: items.isRunCodeEnabled
+                MouseArea {
+                    id: runCodeMouseArea
+                    anchors.fill: parent
+                    hoverEnabled: ApplicationInfo.isMobile ? false : (!items.isRunCodeEnabled ? false : true)
+                    enabled: items.isRunCodeEnabled
 
-                signal executeCode
+                    signal executeCode
 
-                onEntered: runCode.scale = 1.1
-                onExecuteCode: {
-                    if(mainFunctionModel.count)
-                        startCodeExecution()
+                    onEntered: runCode.scale = 1.1
+                    onExecuteCode: {
+                        if(mainFunctionModel.count)
+                            startCodeExecution()
+                    }
+                    onClicked: executeCode()
+                    onExited: runCode.scale = 1
+
+                    function startCodeExecution() {
+                        runCodeClickAnimation.start()
+                        Activity.resetCodeAreasIndices()
+
+                        if(constraintInstruction.opacity)
+                            constraintInstruction.hide()
+
+                        Activity.runCode()
+                    }
                 }
-                onClicked: executeCode()
-                onExited: runCode.scale = 1
 
-                function startCodeExecution() {
-                    runCodeClickAnimation.start()
-                    Activity.resetCodeAreasIndices()
-
-                    if(constraintInstruction.opacity)
-                        constraintInstruction.hide()
-
-                    Activity.runCode()
+                SequentialAnimation {
+                    id: runCodeClickAnimation
+                    NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100 }
+                    NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100 }
                 }
-            }
-
-            SequentialAnimation {
-                id: runCodeClickAnimation
-                NumberAnimation { target: runCode; property: "scale"; to: 0.8; duration: 100 }
-                NumberAnimation { target: runCode; property: "scale"; to: 1.0; duration: 100 }
             }
         }
 

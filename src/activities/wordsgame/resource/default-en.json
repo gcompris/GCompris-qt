@@ -280,7 +280,6 @@
             "good",
             "gray",
             "grew",
-            "grey",
             "grow",
             "hair",
             "half",
@@ -926,7 +925,7 @@
             "castle",
             "caught",
             "ceased",
-            "centre",
+            "center",
             "chance",
             "change",
             "charge",
@@ -1808,7 +1807,7 @@
             "arrangement",
             "balance",
             "barrier",
-            "behaviour",
+            "behavior",
             "bicycle",
             "biology",
             "birdfarm",
@@ -1844,7 +1843,7 @@
             "enlighten",
             "enormous",
             "entertain",
-            "everwhere",
+            "everywhere",
             "execute",
             "eyelash",
             "eyewear",
@@ -1988,5 +1987,5 @@
    ],
    "name" : "default-en",
    "locale" : "en",
-   "description" : "Default English (Canada)"
+   "description" : "Default English (American)"
 }

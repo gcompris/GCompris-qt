@@ -98,7 +98,7 @@ Item {
 
     /**
      * type:Flow
-     * Combobox display when inactive: the button with current choice  and its label besides.
+     * Combobox display when inactive: the label and the button with current choice.
      */
     Flow {
         id: flow

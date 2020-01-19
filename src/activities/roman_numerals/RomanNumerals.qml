@@ -219,7 +219,7 @@ ActivityBase {
                 if(feedback.value == items.questionValue) {
                     bonus.good('tux')
                 } else {
-                    bonus.bad('tux')
+                    bonus.bad('tux', bonus.checkAnswer)
                 }
             }
         }

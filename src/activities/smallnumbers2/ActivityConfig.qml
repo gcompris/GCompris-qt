@@ -19,6 +19,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 
@@ -32,6 +33,9 @@ Item {
         { "text": qsTr("Roman numbers"), "value": "roman" },
         { "text": qsTr("Images"), "value": "image" }
     ]
+    property alias speedSlider: speedSlider
+    property int speedSetting: 10
+
     Flow {
         id: flow
         spacing: 5
@@ -41,6 +45,25 @@ Item {
             model: availableModes
             background: activityConfiguration.background
             label: qsTr("Select Domino Representation")
+        }
+        GCText {
+            id: speedSliderText
+            text: qsTr("Speed")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+            height: 100
+        }
+        Flow {
+            width: dialogActivityConfig.width
+            spacing: 5
+            GCSlider {
+                id: speedSlider
+                width: 250 * ApplicationInfo.ratio
+                value: speedSetting
+                maximumValue: 10
+                minimumValue: 1
+                scrollEnabled: false
+            }
         }
     }
 
@@ -52,9 +75,17 @@ Item {
                 break;
             }
         }
+        if(dataToSave.speedSetting) {
+            activityConfiguration.speedSetting = dataToSave.speedSetting
+        }
+        else {
+            activityConfiguration.speedSetting = 10
+        }
     }
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        dataToSave = {"mode": newMode};
+        var oldSpeed = activityConfiguration.speedSetting
+        speedSetting = speedSlider.value
+        dataToSave = {"mode": newMode, "speedSetting": speedSetting}
     }
 }

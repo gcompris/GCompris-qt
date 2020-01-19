@@ -29,16 +29,6 @@ var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],
                        [2, 4],[1, 4],[0, 4],[0, 3],[0, 2],
                        [0, 1]]
 
-var backgrounds = [
-            "baleine.svg",
-            "phoque.svg",
-            "ourspolaire.svg",
-            "morse.svg",
-            "elephant_mer.svg",
-            "epaulard.svg",
-            "narval.svg"
-        ]
-
 var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
 var tuxIsMoving = false;
@@ -94,7 +84,6 @@ function initLevel() {
     calculateNextPlaceFishToReach()
     placeFishToReach()
     moveTuxToIceBlock()
-    items.backgroundImg.source = items.resourceUrl + backgrounds[currentLevel % backgrounds.length]
     items.clockPosition = 4
 }
 
@@ -165,11 +154,9 @@ function moveTuxToNextIceBlock() {
 
 function moveTuxToIceBlock() {
     items.tux.x = iceBlocksLayout[tuxIceBlockNumber % iceBlocksLayout.length][0] *
-            items.background.width / 5 +
-            (items.background.width / 5 - items.tux.width) / 2
+            items.widthBase + (items.widthBase - items.tux.width) / 2
     items.tux.y = iceBlocksLayout[tuxIceBlockNumber % iceBlocksLayout.length][1] *
-            (items.background.height - items.background.height/5) / 5 +
-            (items.background.height / 5 - items.tux.height) / 2
+            items.heightBase + (items.heightBase - items.tux.height) / 2
 }
 
 function tuxRunningChanged() {
@@ -213,13 +200,10 @@ function placeFishToReach() {
     else
         items.fishToReach.opacity = 0
 
-    items.fishToReach.nextSource = items.resourceUrl + fishes[fishIndex % fishes.length]
     items.fishToReach.nextX = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
-            items.background.width / 5 +
-            (items.background.width / 5 - items.tux.width) / 2
+            items.widthBase + (items.widthBase - items.fishToReach.width) / 2
     items.fishToReach.nextY = iceBlocksLayout[fishIndex % iceBlocksLayout.length][1] *
-            (items.background.height - items.background.height/5) / 5 +
-            (items.background.height / 5 - items.tux.height) / 2
+            items.heightBase + (items.heightBase - items.fishToReach.height) / 2
 }
 
 function nextLevel() {

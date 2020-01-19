@@ -46,8 +46,16 @@ ButtonStyle {
      * theme of the button. For now, three themes are accepted: "light" and "dark" and "highContrast"
      *
      * Default is dark.
-    */
+     */
     property string theme: "dark"
+    
+    /**
+     * type:bool
+     * if there is an icon on the right, we need to add a rightMargin for the text label
+     * 
+     * Default is false.
+     */
+    property bool haveIconRight: false
 
     /**
      * type:var
@@ -57,7 +65,8 @@ ButtonStyle {
      *   the colors of the button when not selected: backgroundColorGradient0 and backgroundColorGradient1.
      *   the button's border color
      *   the text color
-    */
+     */
+
     property var themes: {
         "dark": {
             backgroundColorGradient0: "#23373737",
@@ -81,8 +90,15 @@ ButtonStyle {
             backgroundColorGradient1: "#AAFFFFFF",
             selectedColorGradient1: "#803ACAFF",
             borderColor: "white",
-            textColor: "#373737"
-            
+            textColor: "#FF373737"
+        },
+        "categories": {
+            backgroundColorGradient0: "#80F6FBFC",
+            selectedColorGradient0: "#FFF6FBFC",
+            backgroundColorGradient1: "#80F6FBFC",
+            selectedColorGradient1: "#FFF6FBFC",
+            borderColor: "#FF87A6DD",
+            textColor: "#FF373737"
         },
         "settingsButton": {
             backgroundColorGradient0: "#bdbed0",
@@ -122,7 +138,7 @@ ButtonStyle {
     }
 
     background: Rectangle {
-        border.width: theme === "settingsButton" ? 3 * ApplicationInfo.ratio : control.activeFocus ? 3 * ApplicationInfo.ratio : 1 * ApplicationInfo.ratio
+        border.width: theme === "settingsButton" ? 3 * ApplicationInfo.ratio : control.activeFocus ? 3 * ApplicationInfo.ratio : 1 * ApplicationInfo.ratio
         border.color: themes[theme].borderColor
         radius: 10 * ApplicationInfo.ratio
         gradient: Gradient {

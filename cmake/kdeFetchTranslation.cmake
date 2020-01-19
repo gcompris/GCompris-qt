@@ -82,7 +82,7 @@ if(NOT TARGET fetch-translations AND KDE_L10N_AUTO_TRANSLATIONS)
     bash ${CMAKE_SOURCE_DIR}/tools/move_translations.sh ${_l10n_poqm_dir} ${CMAKE_SOURCE_DIR}/po
     )
 
-    if (NOT EXISTS ${_l10n_po_dir} OR NOT EXISTS ${_l10n_poqm_dir})
+    if(NOT EXISTS ${_l10n_po_dir} OR NOT EXISTS ${_l10n_poqm_dir})
         execute_process(${releaseme_clone_commands})
         execute_process(${fetch_commands})
         execute_process(${move_translations})
