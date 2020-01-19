@@ -76,8 +76,8 @@ ActivityBase {
             onGoDashboardView: contentFrame.replace("views/DashboardView.qml")
             onGoEditClientView: contentFrame.replace("views/EditClientView.qml", {selectedClient: client})
             onGoFindClientView: contentFrame.replace("views/FindClientView.qml")
-            onGoManagePupilsView: contentFrame.replace("views/ManagePupilsView.qml")
-            onGoManageGroupsView: contentFrame.replace("views/ManageGroupsView.qml")
+         //   onGoManagePupilsView: contentFrame.replace("views/ManagePupilsView.qml")
+         //   onGoManageGroupsView: contentFrame.replace("views/ManageGroupsView.qml")
         }
 
 

@@ -17,6 +17,8 @@ if(ANDROID)
     )
 endif()
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/serverMasterController/)
+
 set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfo.h

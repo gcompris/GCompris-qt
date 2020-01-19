@@ -2,6 +2,8 @@ import QtQuick 2.9
 import CM 1.0
 //import assets 1.0
 
+import "../../../core"
+
 Item {
     property Command command
     width: Style.widthCommandButton
