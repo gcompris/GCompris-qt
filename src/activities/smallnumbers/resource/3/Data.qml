@@ -21,61 +21,53 @@
 import "../../../../core"
 
 Dataset {
-   objective: qsTr("Select a number on dice up to 9")
-   difficulty: 3
-   data: [
+    objective: qsTr("Select a number on dice up to 5")
+    difficulty: 2
+    data: [
       {
-         "level" : "1",
-         "objective" : qsTr("Select the number on dice up to 6"),
+         "objective" : qsTr("Select the number 5"),
+         "sublevels" : "6",
          "words" : [
-            "1",
-            "2",
-            "3",
-            "4",
             "5",
-            "6"
+            "5"
+        ]
+      },
+      {
+         "objective" : qsTr("Select the number on dice from 4 to 5"),
+         "sublevels" : "8",
+         "words" : [
+            "4",
+            "5"
          ]
       },
       {
-         "level" : "2",
-         "objective" : qsTr("Select the number on dice up to 7"),
+         "objective" : qsTr("Select the number on dice from 3 to 5"),
+         "sublevels" : "10",
          "words" : [
-            "1",
-            "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7"
+            "5"
          ]
       },
       {
-         "level" : "3",
-         "objective" : qsTr("Select the number on dice up to 8"),
+         "objective" : qsTr("Select the number on dice from 2 to 5"),
+         "sublevels" : "12",
          "words" : [
-            "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8"
+            "5"
          ]
       },
       {
-         "level" : "4",
-         "objective" : qsTr("Select the number on dice up to 9"),
+         "objective" : qsTr("Select the number on dice from 1 to 5"),
+         "sublevels" : "14",
          "words" : [
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
+            "5"
          ]
       }
    ]

@@ -33,11 +33,12 @@ var currentLevel = 0;
 var currentSubLevel = 0;
 var level = null;
 var maxLevel = 0;
-var maxSubLevel = 0;
+var maxSubLevel = 0; // store number of falling elements for each level
 var items;
 var uppercaseOnly;
 var speedSetting;
 var mode;
+var levelData; // array to store level words
 
 //speed calculations, common:
 var speed = 0;           // how fast letters fall
@@ -149,11 +150,20 @@ function initLevel() {
     // initialize level
     deleteWords();
     level = items.wordlist.getLevelWordList(currentLevel + 1);
+    /* for smallnumbers2, maxSubLevel will take value of sublevels attribute from json which represent number of
+       falling elements in each level and for other activities it will be 0 here.*/
     maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
+    levelData = new Array();
+
+    // for smallnumbers2 and smallnumbers activities levelData will contain random data, while for other activity it contains same data as level.words
+    if(items.ourActivity.useDataset === true)
+        setLevelData();
+    else
+        levelData = level.words
 
     if (maxSubLevel == 0) {
         // If "sublevels" length is not set in wordlist, use the words length
-        maxSubLevel = level.words.length
+        maxSubLevel = levelData.length
     }
     items.score.numberOfSubLevels = maxSubLevel;
     setSpeed();
@@ -172,28 +182,29 @@ function initLevel() {
         // first generate a map of needed letters
         var letters = new Array();
         items.keyboard.shiftKey = false;
-        for (var i = 0; i < level.words.length; i++) {
+        for (var i = 0; i < levelData.length; i++) {
             if(mode ==='letter') {
                 // The word is a letter, even if it has several chars (digraph)
-                var letter = level.words[i];
+                var letter = levelData[i];
                 var isUpper = (letter == letter.toLocaleUpperCase());
-                if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                var isDigit = (letter.toLocaleLowerCase() === letter.toLocaleUpperCase())
+                if (!isDigit && isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
                     items.keyboard.shiftKey = true;
-                else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                else if (!isDigit && !isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
                     items.keyboard.shiftKey = true;
                 else if (letters.indexOf(letter) === -1)
-                    letters.push(level.words[i]);
+                    letters.push(levelData[i]);
             } else {
                 // We split each word in char to create the keyboard
-                for (var j = 0; j < level.words[i].length; j++) {
-                    var letter = level.words[i].charAt(j);
+                for (var j = 0; j < levelData[i].length; j++) {
+                    var letter = levelData[i].charAt(j);
                     var isUpper = (letter == letter.toLocaleUpperCase());
                     if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
                         items.keyboard.shiftKey = true;
                     else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
                         items.keyboard.shiftKey = true;
                     else if (letters.indexOf(letter) === -1)
-                        letters.push(level.words[i].charAt(j));
+                        letters.push(levelData[i].charAt(j));
                 }
             }
         }
@@ -202,7 +213,7 @@ function initLevel() {
         var layout = new Array();
         var row = 0;
         var offset = 0;
-        while (offset < letters.length-1) {
+        while (offset < letters.length) {
             var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
             layout[row] = new Array();
             for (var j = 0; j < cols; j++)
@@ -212,8 +223,51 @@ function initLevel() {
         }
         items.keyboard.layout = layout;
     }
-    items.wordlist.initRandomWord(currentLevel + 1)
+    if(items.ourActivity.useDataset === true)
+        items.wordlist.randomWordList = levelData
+    else
+        items.wordlist.initRandomWord(currentLevel + 1)
+
     initSubLevel()
+}
+
+// function to create array of random data
+function setLevelData() {
+    /* algorithm will add 50% of previous level elements to levelData and 50% times new 2 elements but we can't use
+       this for data size of 2 and 3 so handling them separately */
+    if(level.words.length === 2) {
+        for(var i = 0; i < maxSubLevel; i++) {
+            levelData.push(addNewElement())
+        }
+    }
+    else if(level.words.length === 3) {
+        for(var i = 0; i < maxSubLevel; i++) {
+            if(Math.floor(Math.random() * 5) < 1)  // adds previous element with probability of 1/5 and rest two with 2/5
+                levelData.push(level.words[1]);
+            else
+                levelData.push(addNewElement())
+        }
+    }
+    else {
+        for(var i = 0; i < maxSubLevel; i++) {
+            if(Math.floor(Math.random() * 2) == 0)
+                levelData.push(addNewElement())
+            else {
+                // generate a random index for an element (excluding first and last element) to be added in levelData
+                var index = Math.floor(Math.random() * (level.words.length - 2)) + 1;
+                levelData.push(level.words[index])
+            }
+        }
+    }
+}
+
+// function will return any one of new number which we aim to teach in this level
+function addNewElement() {
+    // if generated random number is 0, it will return first element otherwise last
+    if(Math.floor(Math.random()*2) === 0)
+        return level.words[0];
+    else
+        return level.words[level.words.length-1];
 }
 
 function initSubLevel() {

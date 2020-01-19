@@ -30,6 +30,7 @@ Gletters {
 
     mode: "letter"
     activityName: "smallnumbers"
+    useDataset: true
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers/resource/"
 
     function getImage(key) {

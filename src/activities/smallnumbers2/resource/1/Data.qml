@@ -21,34 +21,40 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Select a number on dominoes up to 4")
+    objective: qsTr("Select a number on dominoes up to 3")
     difficulty: 1
     data: [
       {
-         "level" : "1",
-         "objective" : qsTr("Select the number on dominoes up to 2"),
+        "objective" : qsTr("Select the numbers 1 and 2"),
+        "sublevels" : "8",
+        "words" : [
+           "1",
+           "2"
+        ]
+      },
+      {
+         "objective" : qsTr("Select the number 3"),
+         "sublevels" : "6",
          "words" : [
-            "1",
-            "2"
+            "3",
+            "3"
+        ]
+      },
+      {
+         "objective" : qsTr("Select the number on dominoes from 2 to 3"),
+         "sublevels" : "8",
+         "words" : [
+            "2",
+            "3"
          ]
       },
       {
-         "level" : "2",
-         "objective" : qsTr("Select the number on dominoes up to 3"),
+         "objective" : qsTr("Select the number on dominoes from 1 to 3"),
+         "sublevels" : "10",
          "words" : [
             "1",
             "2",
-            "3",
-         ]
-      },
-      {
-         "level" : "3",
-         "objective" : qsTr("Select the number on dominoes up to 4"),
-         "words" : [
-            "1",
-            "2",
-            "3",
-            "4"
+            "3"
          ]
       }
    ]

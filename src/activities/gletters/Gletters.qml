@@ -39,6 +39,8 @@ ActivityBase {
 
     property string activityName: "gletters"
 
+    property bool useDataset: false
+
     /* mode of the activity, "letter" (gletters) or "word" (wordsgame):*/
     property string mode: "letter"
 

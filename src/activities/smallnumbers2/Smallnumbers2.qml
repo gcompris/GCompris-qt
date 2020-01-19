@@ -29,6 +29,7 @@ Gletters {
     id: activity
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers2/resource/"
     activityName: "smallnumbers2"
+    useDataset: true
     property string dominoMode: "dot"
 
     function getMode() {
