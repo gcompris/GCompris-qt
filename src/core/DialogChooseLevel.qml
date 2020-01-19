@@ -311,6 +311,7 @@ Rectangle {
                                 source: "qrc:/gcompris/src/core/resource/difficulty" +
                                 modelData.difficulty + ".svg";
                                 sourceSize.height: objective.indicatorImageHeight
+                                sourceSize.width: height
                                 anchors.verticalCenter: objective.verticalCenter
                             }
                             GCDialogCheckBox {
