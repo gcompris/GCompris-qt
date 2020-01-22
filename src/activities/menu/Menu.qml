@@ -52,6 +52,7 @@ ActivityBase {
         // Restore focus that has been taken by the loaded activity
         if(pageView.currentItem == activity)
             focus = true;
+        anchoredActivity = -1
     }
 
     onHome: {
@@ -63,6 +64,7 @@ ActivityBase {
             // Restore focus that has been taken by the loaded activity
             if(pageView.currentItem == activity)
                 focus = true;
+            anchoredActivity = -1
         }
     }
 
@@ -151,6 +153,7 @@ ActivityBase {
     property string currentTag: sections[0].tag
     property var currentTagCategories: []
     property string currentCategory: ""
+    property int anchoredActivity: -1
     /// @endcond
 
     property string clickMode: "play"
@@ -198,18 +201,9 @@ ActivityBase {
 
         // Filters
         property bool horizontal: main.width >= main.height
-        property int sectionIconWidth: {
-            if(horizontal)
-                return Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))
-            else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
-                return Math.min(100 * ApplicationInfo.ratio, (background.height - (bar.height+keyboard.height)) / (sections.length + 1))
-            else
-                return Math.min(100 * ApplicationInfo.ratio, (background.height - bar.height) / (sections.length + 1))
-        }
-        property int sectionIconHeight: sectionIconWidth
+        property int sectionIconWidth: Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))
         property int sectionCellWidth: sectionIconWidth * 1.1
-        property int sectionCellHeight: sectionIconHeight * 1.1
-        property int categoriesHeight: currentCategory == "" ? 0 : sectionCellHeight - 2
+        property int categoriesHeight: currentCategory == "" ? 0 : sectionCellWidth - 2
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
@@ -260,20 +254,11 @@ ActivityBase {
         GridView {
             id: section
             model: sections
-            width: horizontal ? main.width : sectionCellWidth
-            height: {
-               if(horizontal)
-                   return sectionCellHeight
-               else if(activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard)
-                   return sectionCellHeight * (sections.length+1)
-               else
-                   return main.height - bar.height
-            }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
-            y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
+            y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellWidth
             visible: ApplicationSettings.sectionVisible
             cellWidth: sectionCellWidth
-            cellHeight: sectionCellHeight
+            cellHeight: sectionCellWidth
             interactive: false
             keyNavigationWraps: true
             property int initialX: 4
@@ -284,11 +269,11 @@ ActivityBase {
                 Item {
                     id: backgroundSection
                     width: sectionCellWidth
-                    height: sectionCellHeight
+                    height: sectionCellWidth
 
                     Image {
                         source: modelData.icon
-                        sourceSize.height: sectionIconHeight
+                        sourceSize.height: sectionIconWidth
                         anchors.margins: 5
                         anchors.horizontalCenter: parent.horizontalCenter
                     }
@@ -330,7 +315,7 @@ ActivityBase {
             delegate: sectionDelegate
             highlight: Item {
                 width: sectionCellWidth
-                height: sectionCellHeight
+                height: sectionCellWidth
 
                 Rectangle {
                     anchors.fill: parent
@@ -347,17 +332,13 @@ ActivityBase {
 
         // Activities
         property int iconWidth: 120 * ApplicationInfo.ratio
-        property int activityCellWidth:
-            horizontal ? background.width / Math.floor(background.width / iconWidth) :
-                         (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
+        property int activityCellWidth:  activitiesGrid.width / Math.floor(activitiesGrid.width / iconWidth)
         property int activityCellHeight: iconWidth * 1.7
 
         Loader {
             id: warningOverlay
             anchors {
-                top: horizontal ? section.bottom : parent.top
                 bottom: parent.bottom
-                left: horizontal ? parent.left : section.right
                 right: parent.right
                 margins: 4
             }
@@ -398,29 +379,12 @@ ActivityBase {
         GridView {
             id: categoriesGrid
             model: currentTagCategories
-            anchors.top: horizontal ? section.bottom : parent.top
             topMargin: 5
             interactive: false
             keyNavigationWraps: true
-            width: horizontal ? main.width : main.width - section.width
             visible: activity.currentTag !== "search"
-            x: {
-                if(currentTagCategories) {
-                    if(horizontal) {
-                        return categoriesGrid.width / (4 * (currentTagCategories.length+1))
-                    }
-                    else {
-                        return categoriesGrid.width / (4 * (currentTagCategories.length+1)) + section.width
-                    }
-                }
-                else {
-                    return 0
-                }
-            }
-
             cellWidth: currentTagCategories ? categoriesGrid.width / currentTagCategories.length : 0
             cellHeight: height
-            height: horizontal ? categoriesHeight * 0.5 : categoriesHeight
 
             delegate: Button {
                 id: button
@@ -475,6 +439,17 @@ ActivityBase {
         GridView {
             id: activitiesGrid
 
+            onWidthChanged: {
+                if (anchoredActivity > -1){
+                    positionViewAtIndex(anchoredActivity, GridView.visible)
+                }
+            }
+            onHeightChanged: {
+                if (anchoredActivity > -1){
+                    positionViewAtIndex(anchoredActivity, GridView.visible)
+                }
+            }
+
             anchors {
                 top: {
                     if(searchBar.visible)
@@ -483,7 +458,6 @@ ActivityBase {
                         return categoriesGrid.bottom
                 }
                 bottom: bar.top
-                left: horizontal ? parent.left : section.right
                 margins: 4
                 topMargin: currentCategory == "" ? 4 : 10
             }
@@ -591,6 +565,7 @@ ActivityBase {
                     inMenu: true
 
                     onClose: {
+                        anchoredActivity = -1
                         home()
                     }
                     onSaveData: {
@@ -623,6 +598,7 @@ ActivityBase {
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                     else {
+                        anchoredActivity = index
                         displayDialog(dialogChooseLevel);
                     }
                 }
@@ -672,27 +648,13 @@ ActivityBase {
 
         Rectangle {
             id: categories
-            width: horizontal ? parent.width : parent.width - (section.width+10)
             height: searchTextField.height
             visible: sections[activity.currentTag] === "search"
-            anchors {
-                top: horizontal ? section.bottom : categoriesGrid.top
-                left: horizontal ? undefined : section.right
-            }
         }
 
         Rectangle {
             id: searchBar
-            width: horizontal ? parent.width/2 : parent.width - (section.width+10)
-            height: horizontal ? sectionCellHeight * 0.5 : sectionCellHeight
             visible: activity.currentTag === "search"
-            anchors {
-                top: horizontal ? section.bottom : parent.top
-                left: horizontal ? undefined : section.right
-            }
-            anchors.topMargin: horizontal ? 0 : 4
-            anchors.bottomMargin: horizontal ? 0 : 4
-            anchors.horizontalCenter: horizontal ? parent.horizontalCenter : undefined
             opacity: 0.5
             radius: 10
             border.width: 2
@@ -769,15 +731,12 @@ ActivityBase {
 
         Rectangle {
             id: activityConfigTextBar
-            width: horizontal ? parent.width/2 : parent.width - (section.width+10)
             height: activitySettingsLabel.height
             visible: clickMode === "activityConfig"
             anchors {
                 bottom: bar.top
                 bottomMargin: height * 0.3
-                left: horizontal ? undefined : section.right
             }
-            anchors.horizontalCenter: horizontal ? parent.horizontalCenter : undefined
             radius: 10
             border.width: height * 0.05
             border.color: "#8b66b2"
@@ -794,6 +753,202 @@ ActivityBase {
                 color: "#232323"
             }
         }
+
+        states: [
+            State {
+                name: "horizontalState"; when: horizontal === true
+                PropertyChanges {
+                    target: background
+                    sectionIconWidth: Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1))
+                }
+                PropertyChanges {
+                    target: section
+                    width: main.width
+                    height: sectionCellWidth
+                }
+                PropertyChanges {
+                    target: categoriesGrid
+                    width: main.width
+                    height: categoriesHeight * 0.5
+                    x: currentTagCategories ? categoriesGrid.width / (4 * (currentTagCategories.length + 1)) : 0
+                }
+                PropertyChanges {
+                    target: activitiesGrid
+                    width: background.width
+                }
+                PropertyChanges {
+                    target: categories
+                    width: background.width
+                }
+                PropertyChanges {
+                    target: searchBar
+                    width: background.width * 0.5
+                    height: sectionCellWidth * 0.5
+                    anchors.topMargin: 0
+                    anchors.bottomMargin: 0
+                }
+                PropertyChanges {
+                    target: activityConfigTextBar
+                    width: background.width * 0.5
+                }
+                AnchorChanges {
+                    target: warningOverlay
+                    anchors.top: section.bottom
+                    anchors.left: background.left
+                }
+                AnchorChanges {
+                    target: categoriesGrid
+                    anchors.top: section.bottom
+                }
+                AnchorChanges {
+                    target: activitiesGrid
+                    anchors.left: background.left
+                }
+                AnchorChanges {
+                    target: categories
+                    anchors.top: section.bottom
+                    anchors.left: undefined
+                }
+                AnchorChanges {
+                    target: searchBar
+                    anchors.top: section.bottom
+                    anchors.left: undefined
+                    anchors.horizontalCenter: background.horizontalCenter
+                }
+                AnchorChanges {
+                    target: activityConfigTextBar
+                    anchors.left: undefined
+                    anchors.horizontalCenter: background.horizontalCenter
+                }
+            },
+            State {
+                name: "verticalState"; when: horizontal === false
+                PropertyChanges {
+                    target: background
+                    sectionIconWidth: Math.min(100 * ApplicationInfo.ratio, (background.height - bar.height) / (sections.length + 1))
+                }
+                PropertyChanges {
+                    target: section
+                    width: sectionCellWidth
+                    height: main.height - bar.height
+                }
+                PropertyChanges {
+                    target: categoriesGrid
+                    width: main.width - section.width
+                    height: categoriesHeight
+                    x: currentTagCategories ? categoriesGrid.width / (4 * (currentTagCategories.length + 1)) + section.width : 0
+                }
+                PropertyChanges {
+                    target: activitiesGrid
+                    width: background.width - sectionCellWidth
+                }
+                PropertyChanges {
+                    target: categories
+                    width: background.width - (section.width + 10)
+                }
+                PropertyChanges {
+                    target: searchBar
+                    width: background.width - (section.width + 10)
+                    height: sectionCellWidth
+                    anchors.topMargin: 4
+                    anchors.bottomMargin: 4
+                }
+                PropertyChanges {
+                    target: activityConfigTextBar
+                    width: background.width - (section.width + 10)
+                }
+                AnchorChanges {
+                    target: warningOverlay
+                    anchors.top: background.top
+                    anchors.left: section.right
+                }
+                AnchorChanges {
+                    target: categoriesGrid
+                    anchors.top: background.top
+                }
+                AnchorChanges {
+                    target: activitiesGrid
+                    anchors.left: section.right
+                }
+                AnchorChanges {
+                    target: categories
+                    anchors.top: categoriesGrid.top
+                    anchors.left: section.right
+                }
+                AnchorChanges {
+                    target: searchBar
+                    anchors.top: background.top
+                    anchors.left: section.right
+                    anchors.horizontalCenter: undefined
+                }
+                AnchorChanges {
+                    target: activityConfigTextBar
+                    anchors.left: section.right
+                    anchors.horizontalCenter: undefined
+                }
+            },
+            State {
+                name: "verticalWithSearch"; when: horizontal === false && activity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard
+                PropertyChanges {
+                    target: background
+                    sectionIconWidth: Math.min(100 * ApplicationInfo.ratio, (background.height - (bar.height+keyboard.height)) / (sections.length + 1))
+                }
+                PropertyChanges {
+                    target: section
+                    width: main.width
+                    height: sectionCellWidth (sections.length + 1)
+                }
+                PropertyChanges {
+                    target: categoriesGrid
+                    width: main.width - section.width
+                    height: categoriesHeight
+                    x: currentTagCategories ? categoriesGrid.width / (4 * (currentTagCategories.length + 1)) + section.width : 0
+                }
+                PropertyChanges {
+                    target: activitiesGrid
+                    width: background.width - sectionCellWidth
+                }
+                PropertyChanges {
+                    target: categories
+                    width: background.width - (section.width + 10)
+                }
+                PropertyChanges {
+                    target: searchBar
+                    width: background.width - (section.width + 10)
+                    height: sectionCellWidth
+                    anchors.topMargin: 4
+                    anchors.bottomMargin: 4
+                }
+                PropertyChanges {
+                    target: activityConfigTextBar
+                    width: background.width - (section.width + 10)
+                }
+                AnchorChanges {
+                    target: warningOverlay
+                    anchors.top: background.top
+                    anchors.left: section.right
+                }
+                AnchorChanges {
+                    target: categoriesGrid
+                    anchors.top: background.top
+                }
+                AnchorChanges {
+                    target: activitiesGrid
+                    anchors.left: section.right
+                }
+                AnchorChanges {
+                    target: categories
+                    anchors.top: categoriesGrid.top
+                    anchors.left: section.right
+                }
+                AnchorChanges {
+                    target: searchBar
+                    anchors.top: background.top
+                    anchors.left: section.right
+                    anchors.horizontalCenter: undefined
+                }
+            }
+        ]
 
         VirtualKeyboard {
             id: keyboard
