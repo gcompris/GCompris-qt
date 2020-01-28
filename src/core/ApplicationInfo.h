@@ -191,6 +191,9 @@ public:
         QString _locale = locale;
         if(_locale == GC_DEFAULT_LOCALE) {
             _locale = QLocale::system().name();
+        } 
+        if(_locale == "C") {
+            _locale = "en_US";
         }
         // Can't use left(2) because of Asturian where there are 3 chars
         return _locale.left(_locale.indexOf('_'));
