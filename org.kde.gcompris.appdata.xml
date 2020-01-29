@@ -854,4 +854,9 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+  <custom>
+    <value key="KDE::f_droid">https://f-droid.org/en/packages/net.gcompris.full/</value>
+    <value key="KDE::google_play">https://play.google.com/store/apps/details?id=net.gcompris.full</value>
+    <value key="KDE::windows_store">https://www.microsoft.com/store/apps/9pgxjtcxn8qm</value>
+  </custom>
 </component>
