@@ -125,7 +125,7 @@ ActivityBase {
             asynchronous: false
         }
 
-        Dataset {
+        TutorialDataset {
             id: tutorialDataset
         }
 
