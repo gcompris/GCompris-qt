@@ -101,7 +101,7 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Dataset {
+        FamilyDataset {
             id: dataset
         }
 
