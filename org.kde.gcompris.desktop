@@ -1,6 +1,7 @@
 [Desktop Entry]
 Name=GCompris
 Name[ca]=GCompris
+Name[ca@valencia]=GCompris
 Name[cs]=GCompris
 Name[el]=GCompris
 Name[en_GB]=GCompris
@@ -25,6 +26,7 @@ Name[zh_CN]=GCompris
 Name[zh_TW]=GCompris
 GenericName=Educational Game
 GenericName[ca]=Joc educatiu
+GenericName[ca@valencia]=Joc educatiu
 GenericName[cs]=Výuková hra
 GenericName[el]=Εκπαιδευτικό παιχνίδι
 GenericName[en_GB]=Educational Game
