@@ -5,6 +5,7 @@
   <project_license>GPL-3.0+</project_license>
   <name>GCompris</name>
   <name xml:lang="ca">GCompris</name>
+  <name xml:lang="ca-valencia">GCompris</name>
   <name xml:lang="cs">GCompris</name>
   <name xml:lang="el">GCompris</name>
   <name xml:lang="en-GB">GCompris</name>
