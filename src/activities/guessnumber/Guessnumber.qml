@@ -31,6 +31,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    property alias currentActivity: activity.activityInfo
+
     pageComponent: Image {
         id: background
         fillMode: Image.PreserveAspectCrop
@@ -44,6 +46,7 @@ ActivityBase {
         onHeightChanged: helico.init()
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -59,8 +62,9 @@ ActivityBase {
             property alias textArea: textArea
             property alias infoText: userInfo
             property alias answerArea: answerArea
-            property alias numpad: numpad
+            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property int currentMax: 0
+            property alias numpad: numpad
             property int maxSize: 120
             property int minSize: 80
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
@@ -134,6 +138,30 @@ ActivityBase {
             numpad.updateAnswer(event.key, false);
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                background.start()
+            }
+
+            onLoadData: {
+                if(activityData) {
+                    Activity.initLevel()
+                }
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -141,9 +169,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                 displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()

@@ -36,7 +36,6 @@ Rectangle {
     }
 
     property string userEntry
-
     // A top gradient
     Rectangle {
         anchors.fill: parent
@@ -54,7 +53,6 @@ Rectangle {
         anchors.fill: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: answerBackground.userEntry
         color: "black"
         fontSize: largeSize
         style: Text.Outline
@@ -69,7 +67,9 @@ Rectangle {
     }
 
     onUserEntryChanged: {
+        userEntryText.text = Number(answerBackground.userEntry).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0)
         if(userEntry != "")
             Activity.setUserAnswer(parseInt(userEntry))
+        userEntryText.text = userEntry
     }
 }

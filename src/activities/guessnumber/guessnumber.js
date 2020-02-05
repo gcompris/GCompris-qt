@@ -23,7 +23,7 @@
 .import QtQuick 2.6 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 9
+var numberOfLevel
 var items
 var numberToGuess = 0
 
@@ -37,41 +37,15 @@ function stop() {
 }
 
 function initLevel() {
+    numberOfLevel = items.levels.length
     items.bar.level = currentLevel + 1
+    items.currentMax = items.levels[currentLevel].maxNumber
     items.helico.init()
     items.helico.state = "horizontal"
     items.infoText.text = ""
     items.numpad.resetText()
-    switch(currentLevel) {
-    case 0: items.currentMax = 20
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    case 1: items.currentMax = 40
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    case 2: items.currentMax = 60
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    case 3: items.currentMax = 100
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    case 4: items.currentMax = 500
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    case 5: items.currentMax = 1000
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    case 6: items.currentMax = 5000
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    case 7: items.currentMax = 10000
-           numberToGuess = getRandomInt(1,items.currentMax)
-           break;
-    case 8: items.currentMax = 50000
-            numberToGuess = getRandomInt(1,items.currentMax)
-            break;
-    }
-    items.textArea.text = qsTr("Guess a number between 1 and %1").arg(items.currentMax);
+    numberToGuess = getRandomInt(1, items.levels[currentLevel].maxNumber)
+    items.textArea.text = items.levels[currentLevel].objective
 }
 
 function nextLevel() {
@@ -95,7 +69,7 @@ function getRandomInt(min, max) {
 function setUserAnswer(value){
     if(value === 0)
         return;
-    if(value > items.currentMax){
+    if(value > items.levels[currentLevel].maxNumber){
         items.infoText.text = qsTr("Number too high")
         return;
     }
@@ -112,9 +86,9 @@ function setUserAnswer(value){
         items.helico.x = items.background.width
         items.helico.y = items.background.height / 2 - items.helico.height / 2
     } else {
-        var diff = Math.abs(numberToGuess-value)/items.currentMax
+        var diff = Math.abs(numberToGuess-value) / items.levels[currentLevel].maxNumber
         items.helico.x = (items.background.width-items.helico.width) - diff * items.background.width
         items.helico.y = items.background.height / 2 +
-                ((numberToGuess-value) / items.currentMax) * (items.background.height/2) - items.helico.height / 2
+                ((numberToGuess-value) / items.levels[currentLevel].maxNumber) * (items.background.height/2) - items.helico.height / 2
     }
 }
