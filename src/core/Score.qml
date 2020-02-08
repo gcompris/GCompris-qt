@@ -56,7 +56,7 @@ Rectangle {
      * type:real
      * Define margins
      */
-    property real margins: 30
+    property real margins: 30
     
     /**
      * type:int
@@ -93,6 +93,7 @@ Rectangle {
      * Triggers scale and rotation animation.
      */
     signal playWinAnimation
+    signal stop
 
     color: "#AAFFFFFF"
     width: subLevelText.width * 2
@@ -156,5 +157,6 @@ Rectangle {
                 easing.type: Easing.InOutQuad
             }
         }
+        onStopped: score.stop()
     }
 }
