@@ -26,8 +26,13 @@
 var url = "qrc:/gcompris/src/activities/enumerate/resource/"
 var url2 = "qrc:/gcompris/src/activities/algorithm/resource/"
 var items
-var currentLevel = 0
-var numberOfLevel = 9
+var maxSubLevel
+var dataset
+var currentLevel
+var currentSubLevel
+var numberOfLevel
+var numberOfItemType
+var numberOfItemMax
 var itemIcons = [
             url2 + "apple.svg",
             url2 + "banana.svg",
@@ -61,69 +66,17 @@ function stop() {
 }
 
 function initLevel() {
+    if(items.levels)
+        items.instructionText = items.levels[currentLevel].objective
     items.bar.level = currentLevel + 1
-    cleanUp()
-
-    var numberOfItemType
-    var numberOfItemMax
-
-    switch(currentLevel)
-    {
-    case 0:
-        numberOfItemType = 1;
-        numberOfItemMax  = 5;
-        break;
-    case 1:
-        numberOfItemType = 2;
-        numberOfItemMax  = 5;
-        break;
-    case 2:
-        numberOfItemType = 3;
-        numberOfItemMax  = 4;
-        break;
-    case 3:
-        numberOfItemType = 3;
-        numberOfItemMax  = 5;
-        break;
-    case 4:
-        numberOfItemType = 4;
-        numberOfItemMax  = 5;
-        break;
-    case 5:
-        numberOfItemType = 4;
-        numberOfItemMax  = 6;
-        break;
-    case 6:
-        numberOfItemType = 5;
-        numberOfItemMax  = 5;
-        break;
-    case 7:
-        numberOfItemType = 4;
-        numberOfItemMax  = 6;
-        break;
-    case 8:
-        numberOfItemType = 3;
-        numberOfItemMax  = 8;
-        break;
-    default:
-        numberOfItemType = 2;
-        numberOfItemMax  = 9;
-    }
-
-    itemIcons = Core.shuffle(itemIcons)
-    var enumItems = new Array()
-    var types = new Array()
-
-    for(var type = 0; type < numberOfItemType; type++) {
-        var nbItems = getRandomInt(1, numberOfItemMax)
-        for(var j = 0; j < nbItems; j++) {
-            enumItems.push(itemIcons[type])
-        }
-        answerToFind[itemIcons[type]] = nbItems
-        types.push(itemIcons[type])
-    }
-    items.answerColumnModel = types
-    items.itemListModel = enumItems
+    dataset = items.levels
+    numberOfLevel = dataset.length
+    currentSubLevel = 0
+    numberOfItemType = dataset[currentLevel].numberOfItemType
+    numberOfItemMax = dataset[currentLevel].numberOfItemMax
+    maxSubLevel = dataset[currentLevel].sublevels
+    items.score.numberOfSubLevels = maxSubLevel;
+    initSubLevel();
 }
 
 function nextLevel() {
@@ -147,17 +100,31 @@ function cleanUp() {
 
 function setUserAnswer(imgPath, userValue) {
     userAnswers[imgPath] = userValue
-    checkAnswers()
-    return userAnswers[imgPath] === answerToFind[imgPath]
 }
 
 function checkAnswers() {
+    items.okButton.enabled = false;
+    var i = 0
+    var isAnswerGood =  true;
     for (var key in answerToFind) {
         if(userAnswers[key] !== answerToFind[key]) {
-            return;
+            items.answerColumn.itemAt(i).state = "badAnswer";
+            isAnswerGood = false;
         }
+        else
+            items.answerColumn.itemAt(i).state = "goodAnswer";
+         i++
     }
-    items.bonus.good("smiley")
+
+    if(isAnswerGood)
+        nextSubLevel()
+    else
+        items.bonus.bad("smiley")
+}
+
+function resetAnswerAreaColor() {
+     for(var i = 0; i < numberOfItemType; i++ )
+         items.answerColumn.itemAt(i).state = "default";
 }
 
 function getRandomInt(min, max) {
@@ -169,4 +136,41 @@ var currentAnswerItem
 function registerAnswerItem(item) {
     currentAnswerItem = item
     item.forceActiveFocus()
+}
+
+function initSubLevel() {
+     cleanUp()
+    itemIcons = Core.shuffle(itemIcons)
+    items.score.currentSubLevel = currentSubLevel + 1;
+    items.okButton.enabled = false;
+    var enumItems = new Array()
+    var types = new Array()
+    for(var type = 0; type < numberOfItemType; type++) {
+        var nbItems = getRandomInt(1, numberOfItemMax)
+        for(var j = 0; j < nbItems; j++) {
+            enumItems.push(itemIcons[type])
+        }
+        answerToFind[itemIcons[type]] = nbItems
+        types.push(itemIcons[type])
+    }
+    items.answerColumn.model = types
+    items.itemListModel = enumItems
+}
+
+function nextSubLevel() {
+    if( ++currentSubLevel >= maxSubLevel) {
+        items.okButton.enabled = false;
+        items.bonus.good("smiley")
+        currentSubLevel = 0;
+    }
+    else
+        items.score.playWinAnimation();
+}
+
+function enableOkButton() {
+    for (var key in answerToFind) {
+        if(typeof userAnswers[key] == 'undefined')
+            return
+    }
+    items.okButton.enabled = true;
 }

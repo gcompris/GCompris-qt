@@ -29,16 +29,28 @@ Rectangle {
     id: answerBackground
     width: Math.min(140 * ApplicationInfo.ratio, background.width / 4)
     height: width / 2
-    color: activeFocus ? "#ff07fff2" : "#cccccccc"
     radius: 10
     border {
         width: activeFocus ?  3 : 1
         color: "black"
     }
 
+    states: [
+        State {
+            name: "badAnswer"
+            PropertyChanges {target: answerBackground ; color: "red"}
+        },
+        State {
+            name: "goodAnswer"
+            PropertyChanges {target: answerBackground ; color: "green"}
+        },
+        State {
+            name: "default"
+            PropertyChanges {target: answerBackground ; color: activeFocus ? "#ff07fff2" : "#cccccccc"}
+        }
+    ]
+
     property string imgPath
-    // The backspace code coming from the virtual keyboard
-    property string backspaceCode
 
     // True when the value is entered correctly
     property bool valid: false
@@ -78,7 +90,10 @@ Rectangle {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
-        onClicked: Activity.registerAnswerItem(answerBackground)
+        onClicked: {
+            Activity.registerAnswerItem(answerBackground)
+            Activity.resetAnswerAreaColor();
+        }
     }
 
     Image {
@@ -95,30 +110,10 @@ Rectangle {
     }
 
     Keys.onPressed: {
-        if(event.key === Qt.Key_Backspace) {
-            backspace()
-        }
         appendText(event.text)
     }
 
-    function backspace() {
-        userEntry.text = userEntry.text.slice(0, -1)
-        if(userEntry.text.length === 0) {
-            userEntry.text = "?"
-            valid = Activity.setUserAnswer(imgPath, -1)
-            return
-        } else {
-            valid = Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
-            return
-        }
-    }
-
     function appendText(text) {
-        if(text === answerBackground.backspaceCode) {
-            backspace()
-            return
-        }
-
         var number = parseInt(text)
         if(isNaN(number))
             return
@@ -127,13 +122,10 @@ Rectangle {
             userEntry.text = ""
         }
 
-        if(userEntry.text.length >= 2) {
-            valid = false
-            return
-        }
-
-        userEntry.text += text
-        valid = Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
+        userEntry.text = text
+        Activity.resetAnswerAreaColor();
+        Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
+        Activity.enableOkButton()
     }
 
     GCText {

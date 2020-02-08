@@ -43,11 +43,56 @@ ActivityBase {
         sourceSize.width: Math.max(parent.width, parent.height)
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
         onStart: { Activity.start(items); keyboard.populate(); }
         onStop: { Activity.stop() }
+
+        //instruction rectangle
+        Rectangle {
+            id: instruction
+            anchors {
+                top: parent.top
+                topMargin: 5
+                horizontalCenter: parent.horizontalCenter
+            }
+            height: instructionTxt.contentHeight * 1.1
+            width: Math.max(Math.min(parent.width * 0.8, instructionTxt.text.length * 10), parent.width * 0.3)
+            opacity: 0.8
+            visible: items.levels
+            radius: 10
+            border.width: 2
+            z: instruction.opacity === 0 ? -10 : 10
+            border.color: "#DDD"
+            color: "#373737"
+
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            //shows/hides the Instruction
+            MouseArea {
+                anchors.fill: parent
+                onClicked: instruction.opacity = instruction.opacity == 0 ? 0.8 : 0
+            }
+
+            GCText {
+                id: instructionTxt
+                anchors {
+                    top: parent.top
+                    topMargin: 5
+                    horizontalCenter: parent.horizontalCenter
+                }
+                opacity: instruction.opacity
+                z: instruction.z
+                fontSize: smallSize
+                color: "white"
+                text: items.instructionText
+                horizontalAlignment: Text.AlignHCenter
+                width: parent.width * 0.8
+                wrapMode: TextEdit.WordWrap
+            }
+        }
 
         Keys.onDownPressed: {
             if(++answerColumn.currentIndex >= answerColumn.count)
@@ -65,8 +110,12 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias answerColumnModel: answerColumn.model
+            property alias okButton: okButton
+            property alias answerColumn: answerColumn
             property alias itemListModel: itemList.model
+            property string instructionText: ""
+            property alias score: score
+            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
         }
 
         DropArea {
@@ -101,8 +150,8 @@ ActivityBase {
                 AnswerArea {
                     imgPath: modelData
                     focus: true
-                    backspaceCode: keyboard.backspace
                     audioEffects: activity.audioEffects
+                    state: "default"
                 }
             }
 
@@ -147,14 +196,46 @@ ActivityBase {
                     { label: "6" },
                     { label: "7" },
                     { label: "8" },
-                    { label: "9" },
-                    { label: keyboard.backspace }
+                    { label: "9" }
                 ] ]
             }
 
             onKeypress: Activity.currentAnswerItem.appendText(text)
 
             onError: console.log("VirtualKeyboard error: " + msg);
+        }
+
+
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                activity.focus = true
+                background.stop()
+                background.start()
+            }
+            onLoadData: {
+                if(activityData) {
+                    Activity.initLevel()
+                }
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
+        Score {
+            id: score
+            anchors.top: okButton.bottom
+            anchors.bottom: keyboard.top
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            onStop: Activity.initSubLevel()
         }
 
         DialogHelp {
@@ -165,14 +246,33 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onActivityConfigClicked: {
+                 displayDialog(dialogActivityConfig)
+             }
         }
+
+        BarButton {
+            id: okButton
+            anchors {
+                bottom: bar.top
+                right: parent.right
+                rightMargin: 9 * ApplicationInfo.ratio
+                bottomMargin: 9 * ApplicationInfo.ratio
+            }
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 80 * ApplicationInfo.ratio
+            onClicked: Activity.checkAnswers();
+        }
+
+        Keys.onReturnPressed: okButton.enabled === true ? Activity.checkAnswers() : ""
+        Keys.onEnterPressed: okButton.enabled === true ? Activity.checkAnswers() : ""
 
         Bonus {
             id: bonus
