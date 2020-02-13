@@ -84,7 +84,8 @@ Item {
     function setDefaultValues() {
         // Recreate the binding
         uppercaseBox.checked = Qt.binding(function(){return activityConfiguration.uppercaseOnly;})
-
+        speedSlider.value = Qt.binding(function() {return activityConfiguration.speedSetting;})
+        
         var localeUtf8 = dataToSave.locale;
         if(localeUtf8 !== "system") {
             localeUtf8 += ".UTF-8";
