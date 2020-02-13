@@ -484,13 +484,12 @@ ActivityBase {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
-                // restart activity on saving
-                background.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
+                background.stop()
                 background.start()
             }
         }

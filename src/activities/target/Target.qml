@@ -218,12 +218,12 @@ ActivityBase {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
-                background.start()
             }
             onClose: {
                 home()
             }
             onStartActivity: {
+                background.stop()
                 background.start()
             }
         }

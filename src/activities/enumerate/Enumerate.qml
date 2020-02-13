@@ -214,8 +214,6 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 activity.focus = true
-                background.stop()
-                background.start()
             }
             onLoadData: {
                 if(activityData) {
@@ -226,6 +224,7 @@ ActivityBase {
                 home()
             }
             onStartActivity: {
+                background.stop()
                 background.start()
             }
         }

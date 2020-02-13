@@ -190,9 +190,6 @@ ActivityBase {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
-                // todo this is triggered before the change of locale, so it is not taken in account!
-                background.stop()
-                background.start()
             }
             onLoadData: {
                 if (activity.activityName === "gletters") {
@@ -210,6 +207,7 @@ ActivityBase {
                 }
             }
             onStartActivity: {
+                background.stop()
                 background.start()
             }
         }

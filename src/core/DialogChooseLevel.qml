@@ -378,6 +378,9 @@ Rectangle {
                 }
                 onClicked: {
                     saveData();
+                    if (inMenu === false) {
+                        startActivity();
+                    }
                     close();
                 }
             }

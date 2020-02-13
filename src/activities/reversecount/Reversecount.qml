@@ -220,8 +220,6 @@ ActivityBase {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
-                // restart activity on saving
-                background.start()
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {
@@ -229,6 +227,7 @@ ActivityBase {
                 }
             }
             onStartActivity: {
+                background.stop()
                 background.start()
             }
         }
