@@ -26,7 +26,6 @@ Item {
     id: question
 
     property string text
-    property bool displayed: text != "" ? true : false
     property string answer
     property string userEntry
 
@@ -39,7 +38,6 @@ Item {
         border.color: "black"
         border.width: 2
         radius: 8
-        opacity: question.displayed ? 1 : 0
 
         gradient: Gradient {
             GradientStop { position: 0.0; color: "#F0FFFFFF" }
@@ -58,14 +56,8 @@ Item {
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: TextEdit.WordWrap
-        opacity: question.displayed ? 1 : 0
         text: question.text != "" ? question.text.arg(question.userEntry) : ""
         Behavior on opacity { NumberAnimation { duration: 100 } }
 
-    }
-
-    onUserEntryChanged: {
-        if(userEntry === question.answer)
-            bonus.good("flower")
     }
 }

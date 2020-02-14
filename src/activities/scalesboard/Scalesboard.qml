@@ -29,7 +29,6 @@ import "."
 ActivityBase {
     id: activity
 
-    property var dataset
 
     onStart: focus = true
     onStop: {}
@@ -47,6 +46,7 @@ ActivityBase {
                                  items.masseAreaLeft.weight > items.masseAreaRight.weight ? 20 : -20
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -61,7 +61,8 @@ ActivityBase {
             property int numberOfSubLevels
             property int currentSubLevel
             property int giftWeight
-            property var dataset: activity.dataset
+            property int scaleHeight: background.scaleHeight
+            property var levels: activity.datasetLoader.data
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
             property alias masseAreaRight: masseAreaRight
@@ -69,16 +70,13 @@ ActivityBase {
             property alias masseRightModel: masseAreaRight.masseModel
             property alias question: question
             property alias numpad: numpad
+            property bool rightDrop
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         property bool vert: background.width > background.height
-
-        onScaleHeightChanged: Activity.initCompleted && scaleHeight == 0 && question.hasText == "" ?
-                                  bonus.good("flower") :
-                                  activity.audioEffects.play('qrc:/gcompris/src/activities/erase/resource/eraser2.wav')
 
         Image {
             id: scale
@@ -195,7 +193,7 @@ ActivityBase {
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
                 nbColumns: 3
-                dropEnabledForThisLevel: items.dataset[bar.level - 1].rightDrop
+                dropEnabledForThisLevel: items.rightDrop
                 audioEffects: activity.audioEffects
 
                 Behavior on anchors.verticalCenterOffset {
@@ -221,7 +219,6 @@ ActivityBase {
             audioEffects: activity.audioEffects
         }
 
-
         Message {
             id: message
             anchors {
@@ -241,11 +238,27 @@ ActivityBase {
             y: parent.height * 0.45
             z: 1000
             width: parent.width - y
-            text: items.dataset[bar.level - 1].question && background.scaleHeight == 0 ?
-                      items.dataset[bar.level - 1].question : ""
             answer: items.giftWeight
+            visible: (items.question.text && background.scaleHeight === 0) ? true : false
+        }
 
-            property bool hasText: items.dataset[bar.level - 1].question ? true : false
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                // restart activity on saving
+                background.start()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
         }
 
         DialogHelp {
@@ -253,17 +266,41 @@ ActivityBase {
             onClose: home()
         }
 
+        BarButton {
+            id: okButton
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
+            anchors.bottomMargin: parent.width * 0.03
+            anchors.left: score.left
+            anchors.leftMargin: parent.width * 0.01
+            visible: (!question.text || items.question.userEntry) ? true : false
+            ParticleSystemStarLoader {
+                id: okButtonParticles
+                clip: false
+            }
+            MouseArea {
+                id: okButtonMouseArea
+                anchors.fill: parent
+                onClicked: {
+                    Activity.checkAnswer()
+                }
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-
-            onLevelChanged: message.text = items.dataset[bar.level - 1].message ? items.dataset[bar.level - 1].message : ""
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
+            onLevelChanged: message.text = items.levels[bar.level - 1].message ? items.levels[bar.level - 1].message : ""
         }
 
         Score {
@@ -276,25 +313,27 @@ ActivityBase {
 
             numberOfSubLevels: items.numberOfSubLevels
             currentSubLevel: items.currentSubLevel
-            opacity: question.displayed ? 0 : 1
         }
 
         NumPad {
             id: numpad
             onAnswerChanged: question.userEntry = answer
             maxDigit: ('' + items.giftWeight).length + 1
-            opacity: question.displayed ? 1 : 0
+            opacity: question.visible ? 1 : 0
             columnWidth: 60 * ApplicationInfo.ratio
         }
 
         Keys.onPressed: {
-            if(question.displayed) {
-                numpad.updateAnswer(event.key, true);
+            if(okButton.visible && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
+                    Activity.checkAnswer()
+                }
+            else if(question.visible) {
+                    numpad.updateAnswer(event.key, true);
             }
         }
 
         Keys.onReleased: {
-            if(question.displayed) {
+            if(question.visible) {
                 numpad.updateAnswer(event.key, false);
             }
         }

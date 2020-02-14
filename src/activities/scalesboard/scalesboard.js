@@ -34,7 +34,7 @@ var initCompleted = false
 function start(items_) {
     items = items_
     currentLevel = 0
-    numberOfLevel = items.dataset.length
+    numberOfLevel = items.levels.length
     initLevel()
 }
 
@@ -43,9 +43,11 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    currentTargets = Core.shuffle(items.dataset[currentLevel].targets)
+    currentTargets = Core.shuffle(items.levels[currentLevel].targets)
     items.currentSubLevel = 1
     items.numberOfSubLevels = currentTargets.length
+    items.rightDrop = items.levels[currentLevel].rightDrop
+    items.question.text = items.levels[currentLevel].question != undefined ? items.levels[currentLevel].question : ""
     displayLevel()
 }
 
@@ -57,7 +59,7 @@ function displayLevel()
     items.masseAreaLeft.init()
     items.masseAreaRight.init()
     items.masseAreaCenter.init()
-    var data = items.dataset[currentLevel]
+    var data = items.levels[currentLevel]
     for(var i=0; i < data.masses.length; i++)
         items.masseAreaCenter.addMasse("masse" + (i % 5 + 1) + ".svg",
                                        data.masses[i][0],
@@ -73,6 +75,16 @@ function displayLevel()
                                   /* dragEnabled */ false)
 
     initCompleted = true
+}
+
+function checkAnswer() {
+    if((initCompleted && items.scaleHeight == 0 && !items.question.visible)
+            || (items.question.userEntry == items.question.answer)) {
+        items.bonus.good("flower")
+    }
+    else {
+        items.bonus.bad("flower")
+    }
 }
 
 function nextSubLevel() {

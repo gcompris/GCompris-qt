@@ -114,7 +114,7 @@ Rectangle {
         height: parent.height * 2
         enabled: dropEnabledForThisLevel && dropEnabled
     }
-    
+
     Flow {
         id: masseFlow
         anchors.topMargin: 4
@@ -191,6 +191,7 @@ Rectangle {
                     enabled: model.dragEnabled
 
                     onPressed: {
+                        message.text = ""
                         if(masseModel.contains(parent.masseIndex)) {
                             parent.initDrag()
                         }
@@ -241,10 +242,10 @@ Rectangle {
                             parent.Drag.cancel()
                             parent.replace()
                         }
-                        
+
                     }
                 }
-                
+
                 GCText {
                     id: text
                     anchors.fill: parent
@@ -271,7 +272,7 @@ Rectangle {
                     source: text
                 }
             }
-            
+
         }
     }
 
