@@ -262,7 +262,8 @@ Item {
         }
 
         datasetLoader.data = []
-        levelFolder.sort()
+        // sorting levelFolders in numeric manner
+        levelFolder.sort((a, b) => parseInt(a) - parseInt(b));
         for(var level in levelFolder) {
             datasetLoader.dataFiles.push({"file": resourceUrl+levelFolder[level]+"/Data.qml"})
         }
