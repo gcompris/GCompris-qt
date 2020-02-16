@@ -1,9 +1,9 @@
 /* GCompris - Data.qml
  *
- * Copyright (C) 2018 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2020 Shubham Mishra <shivam828787@gmail.com>
  *
  * Authors:
- *   Johnny Jazeix <jazeix@gmail.com>
+ *   Shubham Mishra <shivam828787@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,27 +21,52 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("obj 2")
+    objective: qsTr("Learn multiplication table of 2")
+    difficulty: 5
     data: [
-    {
-        "maxNumber": 1, /* Max number on each domino side */
-        "minNumber": 1,
-        "numberOfFish": 3
-    },
-    {
-        "maxNumber": 2,
-        "minNumber": 1,
-        "numberOfFish": 4
-    },
-    {
-        "maxNumber": 3,
-        "minNumber": 1,
-        "numberOfFish": 5
-    },
-    {
-        "maxNumber": 4,
-        "minNumber": 1,
-        "numberOfFish": 5
-    }
+        {
+            "operands": [
+                {
+                    "first": 2,
+                    "second": 1
+                },
+                {
+                    "first": 2,
+                    "second": 2
+                },
+                {
+                    "first": 2,
+                    "second": 3
+                },
+                {
+                    "first": 2,
+                    "second": 4
+                },
+                {
+                    "first": 2,
+                    "second": 5
+                },
+                {
+                    "first": 2,
+                    "second": 6
+                },
+                {
+                    "first": 2,
+                    "second": 7
+                },
+                {
+                    "first": 2,
+                    "second": 8
+                },
+                {
+                    "first": 2,
+                    "second": 9
+                },
+                {
+                    "first": 2,
+                    "second": 10
+                }
+            ]
+        }
     ]
 }

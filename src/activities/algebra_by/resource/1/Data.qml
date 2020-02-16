@@ -1,9 +1,9 @@
 /* GCompris - Data.qml
  *
- * Copyright (C) 2018 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2020 Shubham Mishra <shivam828787@gmail.com>
  *
  * Authors:
- *   Johnny Jazeix <jazeix@gmail.com>
+ *   Shubham Mishra <shivam828787@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,27 +21,52 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("This is a long long long long objective. We want to see it it can display long long texts. But it is not long long long enough. Or maybe it is...")
+    objective: qsTr("Learn multiplication table of 1")
+    difficulty: 5
     data: [
-    {
-        "maxNumber": 1, /* Max number on each domino side */
-        "minNumber": 1,
-        "numberOfFish": 3
-    },
-    {
-        "maxNumber": 2,
-        "minNumber": 1,
-        "numberOfFish": 4
-    },
-    {
-        "maxNumber": 3,
-        "minNumber": 1,
-        "numberOfFish": 5
-    },
-    {
-        "maxNumber": 4,
-        "minNumber": 1,
-        "numberOfFish": 5
-    }
+        {
+            "operands": [
+                {
+                    "first": 1,
+                    "second": 1
+                },
+                {
+                    "first": 1,
+                    "second": 2
+                },
+                {
+                    "first": 1,
+                    "second": 3
+                },
+                {
+                    "first": 1,
+                    "second": 4
+                },
+                {
+                    "first": 1,
+                    "second": 5
+                },
+                {
+                    "first": 1,
+                    "second": 6
+                },
+                {
+                    "first": 1,
+                    "second": 7
+                },
+                {
+                    "first": 1,
+                    "second": 8
+                },
+                {
+                    "first": 1,
+                    "second": 9
+                },
+                {
+                    "first": 1,
+                    "second": 10
+                }
+            ]
+        }
     ]
 }

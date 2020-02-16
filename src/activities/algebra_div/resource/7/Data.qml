@@ -21,50 +21,50 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn multiplication table of 4")
+    objective: qsTr("Learn division table of 7")
     difficulty: 6
     data: [
         {
             "operands": [
                 {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 2
-                },
-                {
-                    "first": 4,
-                    "second": 3
-                },
-                {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 5
-                },
-                {
-                    "first": 4,
-                    "second": 6
-                },
-                {
-                    "first": 4,
+                    "first": 7,
                     "second": 7
                 },
                 {
-                    "first": 4,
-                    "second": 8
+                    "first": 14,
+                    "second": 7
                 },
                 {
-                    "first": 4,
-                    "second": 9
+                    "first": 21,
+                    "second": 7
                 },
                 {
-                    "first": 4,
-                    "second": 10
+                    "first": 28,
+                    "second": 7
+                },
+                {
+                    "first": 35,
+                    "second": 7
+                },
+                {
+                    "first": 42,
+                    "second": 7
+                },
+                {
+                    "first": 49,
+                    "second": 7
+                },
+                {
+                    "first": 56,
+                    "second": 7
+                },
+                {
+                    "first": 63,
+                    "second": 7
+                },
+                {
+                    "first": 70,
+                    "second": 7
                 }
             ]
         }

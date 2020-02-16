@@ -21,50 +21,50 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn multiplication table of 4")
+    objective: qsTr("Learn division table of 5")
     difficulty: 6
     data: [
         {
             "operands": [
                 {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 2
-                },
-                {
-                    "first": 4,
-                    "second": 3
-                },
-                {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
+                    "first": 5,
                     "second": 5
                 },
                 {
-                    "first": 4,
-                    "second": 6
+                    "first": 10,
+                    "second": 5
                 },
                 {
-                    "first": 4,
-                    "second": 7
+                    "first": 15,
+                    "second": 5
                 },
                 {
-                    "first": 4,
-                    "second": 8
+                    "first": 20,
+                    "second": 5
                 },
                 {
-                    "first": 4,
-                    "second": 9
+                    "first": 25,
+                    "second": 5
                 },
                 {
-                    "first": 4,
-                    "second": 10
+                    "first": 30,
+                    "second": 5
+                },
+                {
+                    "first": 35,
+                    "second": 5
+                },
+                {
+                    "first": 40,
+                    "second": 5
+                },
+                {
+                    "first": 45,
+                    "second": 5
+                },
+                {
+                    "first": 50,
+                    "second": 5
                 }
             ]
         }

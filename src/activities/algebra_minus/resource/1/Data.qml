@@ -21,50 +21,50 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn multiplication table of 4")
-    difficulty: 6
+    objective: qsTr("Learn subtraction table of 1")
+    difficulty: 5
     data: [
         {
             "operands": [
                 {
-                    "first": 4,
-                    "second": 4
+                    "first": 1,
+                    "second": 1
+                },
+                {
+                    "first": 2,
+                    "second": 1
+                },
+                {
+                    "first": 3,
+                    "second": 1
                 },
                 {
                     "first": 4,
-                    "second": 2
+                    "second": 1
                 },
                 {
-                    "first": 4,
-                    "second": 3
+                    "first": 5,
+                    "second": 1
                 },
                 {
-                    "first": 4,
-                    "second": 4
+                    "first": 6,
+                    "second": 1
                 },
                 {
-                    "first": 4,
-                    "second": 5
+                    "first": 7,
+                    "second": 1
                 },
                 {
-                    "first": 4,
-                    "second": 6
+                    "first": 8,
+                    "second": 1
                 },
                 {
-                    "first": 4,
-                    "second": 7
+                    "first": 9,
+                    "second": 1
                 },
                 {
-                    "first": 4,
-                    "second": 8
-                },
-                {
-                    "first": 4,
-                    "second": 9
-                },
-                {
-                    "first": 4,
-                    "second": 10
+                    "first": 10,
+                    "second": 1
                 }
             ]
         }

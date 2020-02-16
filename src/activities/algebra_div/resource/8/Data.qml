@@ -21,50 +21,50 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn multiplication table of 4")
+    objective: qsTr("Learn division table of 8")
     difficulty: 6
     data: [
         {
             "operands": [
                 {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 2
-                },
-                {
-                    "first": 4,
-                    "second": 3
-                },
-                {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 5
-                },
-                {
-                    "first": 4,
-                    "second": 6
-                },
-                {
-                    "first": 4,
-                    "second": 7
-                },
-                {
-                    "first": 4,
+                    "first": 8,
                     "second": 8
                 },
                 {
-                    "first": 4,
-                    "second": 9
+                    "first": 16,
+                    "second": 8
                 },
                 {
-                    "first": 4,
-                    "second": 10
+                    "first": 24,
+                    "second": 8
+                },
+                {
+                    "first": 32,
+                    "second": 8
+                },
+                {
+                    "first": 40,
+                    "second": 8
+                },
+                {
+                    "first": 48,
+                    "second": 8
+                },
+                {
+                    "first": 56,
+                    "second": 8
+                },
+                {
+                    "first": 64,
+                    "second": 8
+                },
+                {
+                    "first": 72,
+                    "second": 8
+                },
+                {
+                    "first": 80,
+                    "second": 8
                 }
             ]
         }

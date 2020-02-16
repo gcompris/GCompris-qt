@@ -21,50 +21,50 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn multiplication table of 4")
+    objective: qsTr("Learn division table of 3")
     difficulty: 6
     data: [
         {
             "operands": [
                 {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 2
-                },
-                {
-                    "first": 4,
+                    "first": 3,
                     "second": 3
                 },
                 {
-                    "first": 4,
-                    "second": 4
+                    "first": 6,
+                    "second": 3
                 },
                 {
-                    "first": 4,
-                    "second": 5
+                    "first": 9,
+                    "second": 3
                 },
                 {
-                    "first": 4,
-                    "second": 6
+                    "first": 12,
+                    "second": 3
                 },
                 {
-                    "first": 4,
-                    "second": 7
+                    "first": 15,
+                    "second": 3
                 },
                 {
-                    "first": 4,
-                    "second": 8
+                    "first": 18,
+                    "second": 3
                 },
                 {
-                    "first": 4,
-                    "second": 9
+                    "first": 21,
+                    "second": 3
                 },
                 {
-                    "first": 4,
-                    "second": 10
+                    "first": 24,
+                    "second": 3
+                },
+                {
+                    "first": 27,
+                    "second": 3
+                },
+                {
+                    "first": 30,
+                    "second": 3
                 }
             ]
         }

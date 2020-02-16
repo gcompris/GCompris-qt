@@ -24,7 +24,6 @@ import "algebra.js" as Activity
 
 ActivityBase {
     id: activity
-
     property int speedSetting: 5
     property alias operand: operand
 
@@ -41,7 +40,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -52,64 +51,37 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
+            property alias okButton: okButton
             property alias balloon: balloon
             property alias timer: timer
+            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property GCSfx audioEffects: activity.audioEffects
         }
 
         onStart: Activity.start(coreItems, otherItems, operand, speedSetting)
         onStop: Activity.stop()
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias speedSlider: speedSlider
-                    height: column.height
-
-                    Column {
-                        id: column
-                        spacing: 10 * ApplicationInfo.ratio
-                        width: parent.width
-                        GCText {
-                            id: speedSliderText
-                            text: qsTr("Speed")
-                            fontSize: mediumSize
-                            wrapMode: Text.WordWrap
-                        }
-                         Flow {
-                            width: dialogActivityConfig.width
-                            spacing: 5
-                            GCSlider {
-                                id: speedSlider
-                                width: 250 * ApplicationInfo.ratio
-                                value: activity.speedSetting
-                                maximumValue: 5
-                                minimumValue: 1
-                                scrollEnabled: false
-                            }
-                        }
-                    }
-                }
-            }
-
-            onClose: home()
-            onLoadData: {
-                 if(dataToSave) {
-                     if(dataToSave["speedSetting"]) {
-                    activity.speedSetting = dataToSave["speedSetting"];
-                     }
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
             }
             onSaveData: {
-                var oldSpeed = activity.speedSetting
-                activity.speedSetting = dialogActivityConfig.configItem.speedSlider.value
-                if(oldSpeed != activity.speedSetting) {
-                    dataToSave = {"speedSetting": activity.speedSetting};
-                    background.stop();
-                    background.start();
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+
+            onLoadData: {
+                if(activityData && activityData["speedSetting"]) {
+                    activity.speedSetting = activityData["speedSetting"];
                 }
+            }
+
+            onStartActivity: {
+                background.stop()
+                background.start()
             }
         }
 
@@ -129,8 +101,7 @@ ActivityBase {
             height: background.height
             Bar {
                 id: bar
-
-                content: BarEnumContent { value: (help | home | level | config) }
+                content: BarEnumContent { value: (help | home | level | activityConfig) }
                 onHelpClicked: {
                     displayDialog(dialogHelpLeftRight)
                 }
@@ -140,12 +111,47 @@ ActivityBase {
                 onNextLevelClicked: {
                     Activity.nextLevel()
                 }
-                onConfigClicked: {
-                dialogActivityConfig.active = true
-                displayDialog(dialogActivityConfig)
-            }
+                onActivityConfigClicked: {
+                    displayDialog(dialogActivityConfig)
+                }
                 onHomeClicked: home()
             }
+        }
+
+        BarButton {
+            id: okButton
+            x: parent.width * 0.7
+            z: 10
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            anchors.bottom: score.top
+            anchors.bottomMargin: 0.8 * height
+            height: 0.80 * bar.height;
+            width: height
+            sourceSize.height: height
+            sourceSize.width: height
+            onClicked: Activity.questionsLeft();
+            enabled: false
+        }
+
+        Keys.onReturnPressed: {
+            if(okButton.enabled === true) {
+                okButton.clicked()
+                okButtonAnimation.start()
+            }
+        }
+
+        Keys.onEnterPressed: {
+            if(okButton.enabled === true) {
+                okButton.clicked()
+                okButtonAnimation.start()
+            }
+        }
+
+        SequentialAnimation {
+            id: okButtonAnimation
+            running: false
+            NumberAnimation { target: okButton; property: "scale"; to: 0.9; duration: 70 }
+            NumberAnimation { target: okButton; property: "scale"; to: 1; duration: 70 }
         }
 
         Balloon {
@@ -183,7 +189,7 @@ ActivityBase {
 
     NumPad {
         id: numpad
-        onAnswerChanged: Activity.questionsLeft()
+        onAnswerChanged: Activity.coreItems.okButton.enabled = (answer != "")
         maxDigit: ('' + otherItems.result).length + 1
     }
 

@@ -37,4 +37,5 @@ ActivityInfo {
       credit: ""
       section: "math division arithmetic"
       createdInVersion: 4000
+      levels: "1,2,3,4,5,6,7,8,9,10"
 }

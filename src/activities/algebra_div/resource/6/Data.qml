@@ -21,50 +21,50 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn multiplication table of 4")
+    objective: qsTr("Learn multiplication table of 6")
     difficulty: 6
     data: [
         {
             "operands": [
                 {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 2
-                },
-                {
-                    "first": 4,
-                    "second": 3
-                },
-                {
-                    "first": 4,
-                    "second": 4
-                },
-                {
-                    "first": 4,
-                    "second": 5
-                },
-                {
-                    "first": 4,
+                    "first": 6,
                     "second": 6
                 },
                 {
-                    "first": 4,
-                    "second": 7
+                    "first": 12,
+                    "second": 6
                 },
                 {
-                    "first": 4,
-                    "second": 8
+                    "first": 18,
+                    "second": 6
                 },
                 {
-                    "first": 4,
-                    "second": 9
+                    "first": 24,
+                    "second": 6
                 },
                 {
-                    "first": 4,
-                    "second": 10
+                    "first": 30,
+                    "second": 6
+                },
+                {
+                    "first": 36,
+                    "second": 6
+                },
+                {
+                    "first": 42,
+                    "second": 6
+                },
+                {
+                    "first": 48,
+                    "second": 6
+                },
+                {
+                    "first": 54,
+                    "second": 6
+                },
+                {
+                    "first": 60,
+                    "second": 6
                 }
             ]
         }
