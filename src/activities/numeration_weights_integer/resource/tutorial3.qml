@@ -18,7 +18,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
-import QtQuick 2.13
+import QtQuick 2.6
 import GCompris 1.0
 
 import "../../../core"
@@ -92,66 +92,68 @@ Item {
             numberWeightDragElements.itemAt(dragButtonIndex).animationIsRunning = animationIsRunning
         }
 
-        onFinished: {
-            numberWeightDragElements.itemAt(dragButtonIndex).Drag.drop()
-            numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX   //?
-            numberWeightDragElements.itemAt(dragButtonIndex).z = 1000
-            if (animationSequenceIndex === 0) {
-                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex++
-                numberClassIndex = unit_CLASS_INDEX
-                numberColumnWeightIndex = 2
-                dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
-                weightRowIndex = 1
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 1) {
-                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex++
-                numberClassIndex = unit_CLASS_INDEX
-                numberColumnWeightIndex = unit_COLUMN_INDEX
-                dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
-                weightRowIndex = 2
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 2) {
-                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex++
-                numberClassIndex = unit_CLASS_INDEX
-                numberColumnWeightIndex = unit_COLUMN_INDEX
-                dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
-                weightRowIndex = 3
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 3) {
-                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex++
-                numberClassIndex = unit_CLASS_INDEX
-                numberColumnWeightIndex = hundred_COLUMN_INDEX
-                dragButtonIndex = hundred_WEIGHT_BUTTON_INDEX
-                weightRowIndex = 0
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 4) {
-                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex++
-                numberClassIndex = unit_CLASS_INDEX
-                numberColumnWeightIndex = hundred_COLUMN_INDEX
-                dragButtonIndex = hundred_WEIGHT_BUTTON_INDEX
-                weightRowIndex = 1
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 5) {
-                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex++
-                numberClassIndex = thousand_CLASS_INDEX
-                numberColumnWeightIndex = unit_COLUMN_INDEX
-                dragButtonIndex = thousand_WEIGHT_BUTTON_INDEX
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 6) {
-                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+        onRunningChanged: {
+            if (!running) {
+                numberWeightDragElements.itemAt(dragButtonIndex).Drag.drop()
+                numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX   //?
+                numberWeightDragElements.itemAt(dragButtonIndex).z = 1000
+                if (animationSequenceIndex === 0) {
+                    numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex++
+                    numberClassIndex = unit_CLASS_INDEX
+                    numberColumnWeightIndex = 2
+                    dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
+                    weightRowIndex = 1
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 1) {
+                    numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex++
+                    numberClassIndex = unit_CLASS_INDEX
+                    numberColumnWeightIndex = unit_COLUMN_INDEX
+                    dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
+                    weightRowIndex = 2
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 2) {
+                    numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex++
+                    numberClassIndex = unit_CLASS_INDEX
+                    numberColumnWeightIndex = unit_COLUMN_INDEX
+                    dragButtonIndex = unit_WEIGHT_BUTTON_INDEX
+                    weightRowIndex = 3
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 3) {
+                    numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex++
+                    numberClassIndex = unit_CLASS_INDEX
+                    numberColumnWeightIndex = hundred_COLUMN_INDEX
+                    dragButtonIndex = hundred_WEIGHT_BUTTON_INDEX
+                    weightRowIndex = 0
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 4) {
+                    numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex++
+                    numberClassIndex = unit_CLASS_INDEX
+                    numberColumnWeightIndex = hundred_COLUMN_INDEX
+                    dragButtonIndex = hundred_WEIGHT_BUTTON_INDEX
+                    weightRowIndex = 1
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 5) {
+                    numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex++
+                    numberClassIndex = thousand_CLASS_INDEX
+                    numberColumnWeightIndex = unit_COLUMN_INDEX
+                    dragButtonIndex = thousand_WEIGHT_BUTTON_INDEX
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 6) {
+                    numberWeightDragElements.itemAt(dragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(dragButtonIndex).y = weightColumnDragButtonOrigY
+                }
             }
         }
     }

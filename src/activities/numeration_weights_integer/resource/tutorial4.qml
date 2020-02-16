@@ -18,7 +18,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
-import QtQuick 2.13
+import QtQuick 2.6
 import GCompris 1.0
 
 import "../../../core"
@@ -45,10 +45,12 @@ Item {
         to: 0.1
         duration: animation_DURATION
 
-        onFinished: {
-            console.log("test")
-            okButton.opacity = 1
-            Activity.checkAnswer()
+        onRunningChanged: {
+            if (!running) {
+                console.log("test")
+                okButton.opacity = 1
+                Activity.checkAnswer()
+            }
         }
     }
 }

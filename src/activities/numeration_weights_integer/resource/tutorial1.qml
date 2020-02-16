@@ -18,7 +18,8 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
-import QtQuick 2.13
+
+import QtQuick 2.6
 import GCompris 1.0 
 
 import "../../../core"
@@ -71,18 +72,21 @@ Item {
             numberClassDragElements.itemAt(numberClassDragButtonIndex).animationIsRunning = animationIsRunning
         }
 
-        onFinished: {
-            numberClassDragElements.itemAt(numberClassDragButtonIndex).Drag.drop()
-            numberClassDragElements.itemAt(numberClassDragButtonIndex).z = 1000
-            if (animationSequenceIndex === 0) {
-                numberClassDragElements.itemAt(numberClassDragButtonIndex).x = numberClassDragButtonOrigX
-                numberClassDragElements.itemAt(numberClassDragButtonIndex).y = numberClassDragButtonOrigY
-                animationSequenceIndex++
-                numberClassDragButtonIndex = 1
-                numberClassParallelAnimation.running = true
-            } else if (animationSequenceIndex === 1) {
-                numberClassDragElements.itemAt(numberClassDragButtonIndex).x = numberClassDragButtonOrigX
-                numberClassDragElements.itemAt(numberClassDragButtonIndex).y = numberClassDragButtonOrigY
+
+        onRunningChanged: {
+            if (!running) {
+                numberClassDragElements.itemAt(numberClassDragButtonIndex).Drag.drop()
+                numberClassDragElements.itemAt(numberClassDragButtonIndex).z = 1000
+                if (animationSequenceIndex === 0) {
+                    numberClassDragElements.itemAt(numberClassDragButtonIndex).x = numberClassDragButtonOrigX
+                    numberClassDragElements.itemAt(numberClassDragButtonIndex).y = numberClassDragButtonOrigY
+                    animationSequenceIndex++
+                    numberClassDragButtonIndex = 1
+                    numberClassParallelAnimation.running = true
+                } else if (animationSequenceIndex === 1) {
+                    numberClassDragElements.itemAt(numberClassDragButtonIndex).x = numberClassDragButtonOrigX
+                    numberClassDragElements.itemAt(numberClassDragButtonIndex).y = numberClassDragButtonOrigY
+                }
             }
         }
     }

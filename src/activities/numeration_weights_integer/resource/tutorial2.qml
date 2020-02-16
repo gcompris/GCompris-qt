@@ -18,7 +18,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
-import QtQuick 2.13
+import QtQuick 2.6
 import GCompris 1.0
 
 import "../../../core"
@@ -78,53 +78,56 @@ Item {
             numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).animationIsRunning = animationIsRunning
         }
 
-        onFinished: {
-            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).Drag.drop()
-            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
-            numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).z = 1000
-            if (animationSequenceIndex === 0) {
+
+        onRunningChanged: {
+            if (!running) {
+                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).Drag.drop()
                 numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 1
-                numberClassIndex = 0
-                numberColumnWeightIndex = 1
-                numberColumnWeightDragButtonIndex = 1
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 1) {
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 2
-                numberClassIndex = 0
-                numberColumnWeightIndex = 0
-                numberColumnWeightDragButtonIndex = 2
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 2) {
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 3
-                numberClassIndex = 1
-                numberColumnWeightIndex = 2
-                numberColumnWeightDragButtonIndex = 0
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 3) {
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 4
-                numberClassIndex = 1
-                numberColumnWeightIndex = 1
-                numberColumnWeightDragButtonIndex = 1
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 4) {
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
-                animationSequenceIndex = 5
-                numberClassIndex = 1
-                numberColumnWeightIndex = 0
-                numberColumnWeightDragButtonIndex = 2
-                numberWeightsParallelAnimation.running = true
-            } else if (animationSequenceIndex === 5) {
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
-                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
+                numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).z = 1000
+                if (animationSequenceIndex === 0) {
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex = 1
+                    numberClassIndex = 0
+                    numberColumnWeightIndex = 1
+                    numberColumnWeightDragButtonIndex = 1
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 1) {
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex = 2
+                    numberClassIndex = 0
+                    numberColumnWeightIndex = 0
+                    numberColumnWeightDragButtonIndex = 2
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 2) {
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex = 3
+                    numberClassIndex = 1
+                    numberColumnWeightIndex = 2
+                    numberColumnWeightDragButtonIndex = 0
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 3) {
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex = 4
+                    numberClassIndex = 1
+                    numberColumnWeightIndex = 1
+                    numberColumnWeightDragButtonIndex = 1
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 4) {
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
+                    animationSequenceIndex = 5
+                    numberClassIndex = 1
+                    numberColumnWeightIndex = 0
+                    numberColumnWeightDragButtonIndex = 2
+                    numberWeightsParallelAnimation.running = true
+                } else if (animationSequenceIndex === 5) {
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).x = weightColumnDragButtonOrigX
+                    numberWeightDragElements.itemAt(numberColumnWeightDragButtonIndex).y = weightColumnDragButtonOrigY
+                }
             }
         }
     }
