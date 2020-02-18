@@ -301,6 +301,17 @@ Window {
                 ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
             }
         }
+
+        // Warning for Play Store users to switch to full version, should only be released for the demo!
+        if(ApplicationInfo.platform == ApplicationInfo.Android) {
+            Core.showMessageDialog(
+                main,
+                qsTr("GCompris full version is now available for free.<br/>This version is no longer maintained and will be removed in the future.<br/>Please download the full version from the Play Store to get the future updates and all the activities.<br/>"),
+                "", null,
+                "", null,
+                function() { pageView.currentItem.focus = true }
+            );
+        }
     }
 
     Loading {
