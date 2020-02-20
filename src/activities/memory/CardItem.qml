@@ -82,7 +82,10 @@ Flipable {
         }
         GCText {
             anchors.centerIn: parent
+            width: parent.paintedWidth * 0.9
+            height: parent.paintedHeight * 0.9
             fontSizeMode: Text.Fit
+            fontSize: 64
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             color: "black"
