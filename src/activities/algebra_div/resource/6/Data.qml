@@ -21,7 +21,7 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Learn multiplication table of 6")
+    objective: qsTr("Learn division table of 6")
     difficulty: 6
     data: [
         {
