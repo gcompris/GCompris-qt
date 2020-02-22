@@ -225,7 +225,7 @@ void ActivityInfo::setCurrentLevels()
 {
     if(!m_name.isEmpty()) {
         if(!m_levels.empty() && ApplicationSettings::getInstance()->currentLevels(m_name).empty()) {
-            ApplicationSettings::getInstance()->setCurrentLevels(m_name, {m_levels[0]});
+            ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_levels);
         }
         m_currentLevels = ApplicationSettings::getInstance()->currentLevels(m_name);
     }
