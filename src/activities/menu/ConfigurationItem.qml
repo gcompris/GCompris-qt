@@ -783,7 +783,7 @@ Item {
                 DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources());
                 ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
             }
-            else {
+            else if(ApplicationSettings.isBackgroundMusicEnabled) {
                 Core.showMessageDialog(main,
                 qsTr("The background music is not yet installed. ")
                 + qsTr("Do you want to download it now?"),
