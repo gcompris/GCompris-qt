@@ -227,6 +227,8 @@ Rectangle {
                     selected: datasetVisibleButton.selected
                 }
                 onClicked: { selected = true; }
+                // reset the view to original position when changing tab
+                onSelectedChanged: { flick.contentY = 0; }
             }
             Button {
                 id: optionsVisibleButton
