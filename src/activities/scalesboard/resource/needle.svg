@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="216.15625"
-   height="68.734581"
+   width="216"
+   height="68"
    id="svg4139"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="needle.svg">
   <defs
      id="defs4141" />
@@ -25,11 +25,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="164.08296"
-     inkscape:cy="23.010448"
+     inkscape:cx="54.33805"
+     inkscape:cy="21.242681"
      inkscape:document-units="px"
      inkscape:current-layer="g4122"
-     showgrid="false"
+     showgrid="true"
      borderlayer="true"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -37,11 +37,16 @@
      fit-margin-bottom="0"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="721"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid815"
+       empspacing="4" />
+  </sodipodi:namedview>
   <metadata
      id="metadata4144">
     <rdf:RDF>
@@ -51,30 +56,63 @@
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <dc:title />
+        <dc:date>2020</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-267.03922,-503.16741)">
+     transform="translate(-267.03922,-503.90199)">
     <g
        transform="translate(25.57047,5.9176513)"
        id="g4122">
       <path
-         inkscape:transform-center-y="1.4142136"
-         d="m 241.96607,546.17071 215.16249,0 0,12.62691 c -106.09345,9.53202 -108.6981,8.23579 -215.16249,0 z"
+         style="fill:#ca3939;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.46875,497.98434 -4,36 h 8 z"
+         id="path834-6"
          inkscape:connector-curvature="0"
-         style="fill:#dedec3;fill-opacity:1;stroke:#000000;stroke-width:1.02339828;stroke-linecap:round;stroke-linejoin:round"
-         sodipodi:nodetypes="ccccc"
-         id="path5527" />
+         sodipodi:nodetypes="cccc" />
       <path
-         d="m 345.995,525.73125 2.3315,-27.97 2.2017,-1.3e-4 2.4613,27.99763 z"
+         style="fill:#757575;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 241.46875,557.98434 v -12 h 216 v 12 c 0,0 -80,8 -108,8 -28,0 -108,-8 -108,-8 z"
+         id="path817"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 243.46875,555.98434 v -8 h 212 v 8 c 0,0 -78,8 -106,8 -28,0 -106,-8 -106,-8 z"
+         id="path817-3"
          inkscape:connector-curvature="0"
-         style="fill:#f64242;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
-         sodipodi:nodetypes="ccccc"
-         id="path4674" />
+         sodipodi:nodetypes="ccccsc" />
+      <path
+         style="fill:#e65b5b;fill-opacity:1;stroke:none;stroke-width:0.92582011px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 349.46875,505.98434 -2,26 h 4 z"
+         id="path834"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccc" />
     </g>
   </g>
 </svg>

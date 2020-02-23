@@ -1,24 +1,16 @@
 metal_hit.wav: https://www.freesound.org/people/jorickhoofd/sounds/160045/
 	This work is licensed under the Attribution License.
 
-Copyright: lmproulx, 2011
-License: Public domain
-Files: 
+Copyright: Timothee Giet, 2020
+License: CC-BY-SA
+Files:
+background.svg
+gift.svg
+masse1.svg
+masse2.svg
+masse3.svg
+masse4.svg
+masse5.svg
 needle.svg
 plate.svg
 scale.svg
-
-Copyright: jonata, 2007
-License: Public domain
-Files:
-masse*.svg
-
-Copyright: rg1024, 2010
-License: Public domain
-Files:
-gift.svg
-
-Copyright: Viscious-speed, 2014
-License: Public domain
-Files:
-background.svg
