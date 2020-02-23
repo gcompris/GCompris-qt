@@ -118,7 +118,7 @@ Rectangle {
 
     function initialize() {
         // dataset information
-        chosenLevels = currentActivity.currentLevels
+        chosenLevels = currentActivity.currentLevels.slice()
         difficultiesModel = []
         if(currentActivity.levels.length == 0) {
             print("no levels to load for", activityName)
@@ -135,7 +135,7 @@ Rectangle {
             datasetVisibleButton.clicked()
         }
         else {
-             optionsVisibleButton.clicked()
+            optionsVisibleButton.clicked()
         }
     }
 
@@ -320,8 +320,8 @@ Rectangle {
                                 id: objective
                                 width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
                                 text: modelData.objective
-                                // to be fixed by all last used levels
                                 checked: modelData.selectedInConfig
+                                onVisibleChanged: if(visible) checked = modelData.selectedInConfig
                                 onClicked: {
                                     if(checked) {
                                         chosenLevels.push(modelData.level)
