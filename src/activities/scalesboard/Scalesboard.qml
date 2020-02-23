@@ -76,22 +76,22 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        property bool vert: background.width > background.height
+        property bool isHorizontal: background.width > background.height
 
         Image {
-            id: scale
+            id: scaleBoard
             source: Activity.url + "scale.svg"
-            sourceSize.width: Math.min(parent.width - 10 * ApplicationInfo.ratio,
-                                       (parent.height - bar.height - 10 * ApplicationInfo.ratio) * 2)
+            sourceSize.width: isHorizontal ? Math.min(parent.width - okButton.height * 2,
+                                                      (parent.height - okButton.height * 2) * 2) : parent.width
             anchors.centerIn: parent
         }
 
         Image {
             id: needle
-            parent: scale
+            parent: scaleBoard
             source: Activity.url + "needle.svg"
             sourceSize.width: parent.width * 0.75
-            z: -10
+            z: -1
             property int angle: - background.scaleHeight * 0.35
             anchors {
                 horizontalCenter: parent.horizontalCenter
@@ -114,10 +114,10 @@ ActivityBase {
         // === The Left plate ===
         Image {
             id: plateLeft
-            parent: scale
+            parent: scaleBoard
             source: Activity.url + "plate.svg"
             sourceSize.width: parent.width * 0.35
-            z: -1
+            z: -10
 
             anchors {
                 horizontalCenter: parent.horizontalCenter
@@ -135,7 +135,7 @@ ActivityBase {
             // The Left Drop Area
             MasseArea {
                 id: masseAreaLeft
-                parent: scale
+                parent: scaleBoard
                 width: plateLeft.width
                 anchors {
                     horizontalCenter: parent.horizontalCenter
@@ -161,10 +161,10 @@ ActivityBase {
         // === The Right plate ===
         Image {
             id: plateRight
-            parent: scale
+            parent: scaleBoard
             source: Activity.url + "plate.svg"
             sourceSize.width: parent.width * 0.35
-            z: -1
+            z: -10
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 horizontalCenterOffset: parent.paintedWidth * 0.3
@@ -181,7 +181,7 @@ ActivityBase {
             // The Right Drop Area
             MasseArea {
                 id: masseAreaRight
-                parent: scale
+                parent: scaleBoard
                 width: plateRight.width
                 anchors {
                     horizontalCenter: parent.horizontalCenter
@@ -208,7 +208,7 @@ ActivityBase {
         // === The Initial Masses List ===
         MasseArea {
             id: masseAreaCenter
-            parent: scale
+            parent: scaleBoard
             x: parent.width * 0.05
             y: parent.height * 0.84 - height
             width: parent.width
@@ -233,7 +233,7 @@ ActivityBase {
 
         Question {
             id: question
-            parent: scale
+            parent: scaleBoard
             anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.45
             z: 1000
@@ -270,10 +270,6 @@ ActivityBase {
             id: okButton
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
-            anchors.bottom: bar.top
-            anchors.bottomMargin: parent.width * 0.03
-            anchors.left: score.left
-            anchors.leftMargin: parent.width * 0.01
             visible: (!question.text || items.question.userEntry) ? true : false
             ParticleSystemStarLoader {
                 id: okButtonParticles
@@ -305,15 +301,64 @@ ActivityBase {
 
         Score {
             id: score
-            anchors {
-                bottom: background.vert ? background.bottom : bar.top
-                right: parent.right
-                bottomMargin: 10 * ApplicationInfo.ratio
-            }
-
             numberOfSubLevels: items.numberOfSubLevels
             currentSubLevel: items.currentSubLevel
         }
+
+        states: [
+            State {
+                name: "horizontalLayout"; when: background.isHorizontal
+                AnchorChanges {
+                    target: score
+                    anchors.top: okButton.bottom
+                    anchors.bottom: undefined
+                    anchors.right: background.right
+                    anchors.verticalCenter: undefined
+                }
+                PropertyChanges {
+                    target: score
+                    anchors.topMargin: 10 * ApplicationInfo.ratio
+                }
+                AnchorChanges {
+                    target: okButton
+                    anchors.horizontalCenter: score.horizontalCenter
+                    anchors.verticalCenter: background.verticalCenter
+                    anchors.bottom: undefined
+                    anchors.right: undefined
+                }
+                PropertyChanges {
+                    target: okButton
+                    anchors.rightMargin: 0
+                    anchors.bottomMargin: 0
+                }
+            },
+            State {
+                name: "verticalLayout"; when: !background.isHorizontal
+                AnchorChanges {
+                    target: score
+                    anchors.top: undefined
+                    anchors.bottom: undefined
+                    anchors.right: okButton.left
+                    anchors.verticalCenter: okButton.verticalCenter
+                }
+                PropertyChanges {
+                    target: score
+                    anchors.topMargin: 0
+                }
+                AnchorChanges {
+                    target: okButton
+                    anchors.horizontalCenter: undefined
+                    anchors.verticalCenter: undefined
+                    anchors.bottom: bar.top
+                    anchors.right: background.right
+                }
+                PropertyChanges {
+                    target: okButton
+                    anchors.rightMargin: width * 0.2
+                    anchors.bottomMargin: width * 0.3
+                }
+            }
+        ]
 
         NumPad {
             id: numpad
