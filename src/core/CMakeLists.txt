@@ -62,6 +62,19 @@ set(gcompris_SRCS
    serverMasterController/models/client.h
    serverMasterController/framework/command.cpp
    serverMasterController/framework/command.h  
+   serverMasterController/data/data-decorator.cpp   
+   serverMasterController/data/data-decorator.h
+   serverMasterController/data/datetime-decorator.cpp   
+   serverMasterController/data/datetime-decorator.h   
+   serverMasterController/data/entity-collection.h   
+   serverMasterController/data/entity.cpp   
+   serverMasterController/data/entity.h   
+   serverMasterController/data/enumerator-decorator.cpp   
+   serverMasterController/data/enumerator-decorator.h   
+   serverMasterController/data/int-decorator.cpp   
+   serverMasterController/data/int-decorator.h   
+   serverMasterController/data/string-decorator.cpp   
+   serverMasterController/data/string-decorator.h   
 )
 
 if(ANDROID)
