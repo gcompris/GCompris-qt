@@ -5,6 +5,8 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port)
+ *   Aiswarya Kaitheri Kandoth <aiswaryakk29@gmail.com> (add speedSetting)
+ *   Timothée Giet <animtim@gmail.com> (random numbers in setLevelData)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -233,41 +235,29 @@ function initLevel() {
 
 // function to create array of random data
 function setLevelData() {
-    /* algorithm will add 50% of previous level elements to levelData and 50% times new 2 elements but we can't use
-       this for data size of 2 and 3 so handling them separately */
+    // generate a random index for an element to be added in levelData
+    // to increase probability to get a specific number, add it several times in the dataset list accordingly
+    var previousNumber = 0
+    var nextNumber = 0
+    // special case if only 2 numbers available
     if(level.words.length === 2) {
         for(var i = 0; i < maxSubLevel; i++) {
-            levelData.push(addNewElement())
-        }
-    }
-    else if(level.words.length === 3) {
-        for(var i = 0; i < maxSubLevel; i++) {
-            if(Math.floor(Math.random() * 5) < 1)  // adds previous element with probability of 1/5 and rest two with 2/5
-                levelData.push(level.words[1]);
-            else
-                levelData.push(addNewElement())
+            var index = Math.floor(Math.random() * level.words.length);
+            levelData.push(level.words[index]);
         }
     }
     else {
         for(var i = 0; i < maxSubLevel; i++) {
-            if(Math.floor(Math.random() * 2) == 0)
-                levelData.push(addNewElement())
-            else {
-                // generate a random index for an element (excluding first and last element) to be added in levelData
-                var index = Math.floor(Math.random() * (level.words.length - 2)) + 1;
-                levelData.push(level.words[index])
+            // avoid to have twice same number in a row
+            while(nextNumber == previousNumber) {
+                var index = Math.floor(Math.random() * level.words.length);
+                nextNumber = level.words[index];
             }
+            previousNumber = nextNumber
+            levelData.push(nextNumber)
         }
     }
-}
 
-// function will return any one of new number which we aim to teach in this level
-function addNewElement() {
-    // if generated random number is 0, it will return first element otherwise last
-    if(Math.floor(Math.random()*2) === 0)
-        return level.words[0];
-    else
-        return level.words[level.words.length-1];
 }
 
 function initSubLevel() {
