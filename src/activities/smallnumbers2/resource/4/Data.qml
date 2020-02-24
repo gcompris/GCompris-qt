@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Shubham Mishra <email.shivam828787@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -25,52 +26,6 @@ Dataset {
     difficulty: 3
     data: [
       {
-         "objective" : qsTr("Select the number 6"),
-         "sublevels" : "6",
-         "words" : [
-            "6",
-            "6"
-        ]
-      },
-      {
-         "objective" : qsTr("Select the number on dominoes from 5 to 6"),
-         "sublevels" : "8",
-         "words" : [
-            "5",
-            "6"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dominoes from 4 to 6"),
-         "sublevels" : "10",
-         "words" : [
-            "4",
-            "5",
-            "6"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dominoes from 3 to 6"),
-         "sublevels" : "12",
-         "words" : [
-            "3",
-            "4",
-            "5",
-            "6"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dominoes from 2 to 6"),
-         "sublevels" : "14",
-         "words" : [
-            "2",
-            "3",
-            "4",
-            "5",
-            "6"
-         ]
-      },
-      {
          "objective" : qsTr("Select the number on dominoes from 1 to 6"),
          "sublevels" : "16",
          "words" : [
@@ -79,6 +34,10 @@ Dataset {
             "3",
             "4",
             "5",
+            "6",
+            "6",
+            "6",
+            "6",
             "6"
          ]
       }

@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Akshay Kumar <email.akshay98@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -33,27 +34,12 @@ Dataset {
         ]
       },
       {
-         "objective" : qsTr("Select the number 3"),
-         "sublevels" : "6",
-         "words" : [
-            "3",
-            "3"
-        ]
-      },
-      {
-         "objective" : qsTr("Select the number on dominoes from 2 to 3"),
-         "sublevels" : "8",
-         "words" : [
-            "2",
-            "3"
-         ]
-      },
-      {
          "objective" : qsTr("Select the number on dominoes from 1 to 3"),
          "sublevels" : "10",
          "words" : [
             "1",
             "2",
+            "3",
             "3"
          ]
       }

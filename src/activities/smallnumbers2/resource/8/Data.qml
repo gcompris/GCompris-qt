@@ -1,9 +1,8 @@
 /* GCompris - Data.qml
  *
- * Copyright (C) 2020 Shubham Mishra <email.shivam828787@gmail.com>
+ * Copyright (C) 2020 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
- *   Shubham Mishra <email.shivam828787@gmail.com>
  *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -22,13 +21,14 @@
 import "../../../../core"
 
 Dataset {
-    objective: qsTr("Select a number on dominoes up to 7")
+    objective: qsTr("Select a number on dominoes from 0 to 9")
     difficulty: 3
     data: [
       {
-         "objective" : qsTr("Select the number on dominoes from 1 to 7"),
-         "sublevels" : "18",
+         "objective" : qsTr("Select the number on dominoes from 0 to 9"),
+         "sublevels" : "24",
          "words" : [
+            "0",
             "1",
             "2",
             "3",
@@ -36,11 +36,8 @@ Dataset {
             "5",
             "6",
             "7",
-            "7",
-            "7",
-            "7",
-            "7",
-            "7"
+            "8",
+            "9"
          ]
       }
    ]
