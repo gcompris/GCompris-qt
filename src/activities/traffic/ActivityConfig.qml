@@ -46,6 +46,9 @@ Item {
     property var dataToSave
 
     function setDefaultValues() {
+        if(dataToSave["mode"] === undefined) {
+            dataToSave["mode"] = "IMAGE";
+        }
         for(var i = 0 ; i < availableModes.length ; i ++) {
             if(availableModes[i].value === dataToSave["mode"]) {
                 modeBox.currentIndex = i;

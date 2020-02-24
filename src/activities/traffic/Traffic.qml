@@ -42,8 +42,6 @@ ActivityBase {
         signal stop
 
         property string mode: "IMAGE" // allow to choose between "COLOR" and "IMAGE"
-                                  // mode, candidate for a config dialog
-        
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -91,7 +89,7 @@ ActivityBase {
                     
                     delegate: Rectangle {
                         id: gridDelegate
-                        height: jamGrid.height/ jamGrid.rows
+                        height: jamGrid.height / jamGrid.rows
                         width: height
                         border.width: 1
                         border.color: "white"
