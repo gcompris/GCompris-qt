@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Akshay Kumar <email.akshay98@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -25,37 +26,14 @@ Dataset {
     difficulty: 2
     data: [
       {
-         "objective" : qsTr("Select the number 4"),
-         "sublevels" : "6",
-         "words" : [
-            "4",
-            "4"
-        ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 3 to 4"),
-         "sublevels" : "8",
-         "words" : [
-            "3",
-            "4"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 2 to 4"),
-         "sublevels" : "10",
-         "words" : [
-            "2",
-            "3",
-            "4"
-         ]
-      },
-      {
          "objective" : qsTr("Select the number on dice from 1 to 4"),
          "sublevels" : "12",
          "words" : [
             "1",
             "2",
             "3",
+            "4",
+            "4",
             "4"
          ]
       }

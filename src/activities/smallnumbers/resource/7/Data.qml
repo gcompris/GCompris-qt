@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Shubham Mishra <email.shivam828787@gmail.com>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -25,91 +26,6 @@ Dataset {
     difficulty: 3
     data: [
       {
-         "objective" : qsTr("Select the number 9"),
-         "sublevels" : "6",
-         "words" : [
-            "9",
-            "9"
-        ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 8 to 9"),
-         "sublevels" : "8",
-         "words" : [
-            "8",
-            "9"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 7 to 9"),
-         "sublevels" : "10",
-         "words" : [
-            "7",
-            "8",
-            "9"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 6 to 9"),
-         "sublevels" : "12",
-         "words" : [
-            "6",
-            "7",
-            "8",
-            "9"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 5 to 9"),
-         "sublevels" : "14",
-         "words" : [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 4 to 9"),
-         "sublevels" : "16",
-         "words" : [
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 3 to 9"),
-         "sublevels" : "18",
-         "words" : [
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-         ]
-      },
-      {
-         "objective" : qsTr("Select the number on dice from 2 to 9"),
-         "sublevels" : "20",
-         "words" : [
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
-         ]
-      },
-      {
          "objective" : qsTr("Select the number on dice from 1 to 9"),
          "sublevels" : "22",
          "words" : [
@@ -121,6 +37,13 @@ Dataset {
             "6",
             "7",
             "8",
+            "9",
+            "9",
+            "9",
+            "9",
+            "9",
+            "9",
+            "9",
             "9"
          ]
       }
