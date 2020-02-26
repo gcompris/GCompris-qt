@@ -42,7 +42,12 @@ ActivityBase {
         sourceSize.width: Math.max(parent.width, parent.height)
 
         property bool landscape: width >= height
-
+        property int areaWidth: landscape ? (width - colorSelectorFlick.width) / 2 - 20 :
+                                            width - colorSelectorFlick.width - 20
+        property int areaHeight: landscape ? height - bar.height * 1.2 - 20:
+                                             (height - bar.height * 1.2) / 2 - 20
+        property int cellSize: Math.min(areaWidth / items.numberOfColumn,
+                                        areaHeight / items.numberOfLine)
         signal start
         signal stop
 
@@ -102,19 +107,18 @@ ActivityBase {
 
             // The color selector
             Flickable {
-                id: flickable
+                id: colorSelectorFlick
                 interactive: true
-                width: 70 * ApplicationInfo.ratio
-                height: background.height
+                width: height / 7
+                height: background.height - bar.height * 1.2
                 boundsBehavior: Flickable.StopAtBounds
                 contentHeight: items.numberOfColor * width
-                bottomMargin: bar.height
                 Column {
                     id: colorSelector
                     Repeater {
                         model: items.numberOfColor
                         Item {
-                            width: flickable.width
+                            width: colorSelectorFlick.width
                             height: width
                             Image {
                                 id: img
@@ -226,17 +230,15 @@ ActivityBase {
             Grid {
                 id: drawAndExampleArea
                 columns: background.landscape ? 2 : 1
-                width: gridWidth
-                height: parent.height
+                width: parent.width - colorSelector.width
+                height: parent.height - bar.height * 1.2
                 spacing: 10
-
-                property int gridWidth: parent.width - colorSelector.width
 
                 // The drawing area
                 Grid {
                     id: drawingArea
-                    width: background.landscape ? parent.gridWidth / 2 - parent.spacing * 2 : parent.gridWidth
-                    height: background.landscape ? parent.height : parent.height / 2
+                    width: background.areaWidth
+                    height: background.areaHeight
                     columns: items.numberOfColumn
                     Repeater {
                         id: userModel
@@ -288,9 +290,8 @@ ActivityBase {
 
                         Item {
                             id: userItem
-                            width: Math.min(drawingArea.width / items.numberOfColumn,
-                                            drawingArea.height / items.numberOfLine)
-                            height: width
+                            width: background.cellSize
+                            height: background.cellSize
                             property color color: Activity.colors[colorIndex]
                             property int colorIndex
 
@@ -349,8 +350,8 @@ ActivityBase {
                 // The painting to reproduce
                 Grid {
                     id: imageArea
-                    width: drawingArea.width
-                    height: drawingArea.height
+                    width: background.areaWidth
+                    height: background.areaHeight
                     columns: items.numberOfColumn
                     LayoutMirroring.enabled: activity.symmetry
                     LayoutMirroring.childrenInherit: true
@@ -358,9 +359,8 @@ ActivityBase {
                         id: targetModel
                         model: items.targetModelData
                         Item {
-                            width: Math.min(imageArea.width / items.numberOfColumn,
-                                            imageArea.height / items.numberOfLine)
-                            height: width
+                            width: background.cellSize
+                            height: background.cellSize
                             property alias color: targetRect.color
 
                             Rectangle {
