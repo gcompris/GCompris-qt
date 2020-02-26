@@ -9,33 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="49.999996"
-   height="49.999992"
+   width="32"
+   height="32"
    id="svg3043"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="black.svg">
   <defs
-     id="defs3045">
-    <linearGradient
-       id="linearGradient5080"
-       y2="193.89999"
-       gradientUnits="userSpaceOnUse"
-       x2="308.01999"
-       gradientTransform="matrix(1.1793251,0,0,1.1716681,-119.76682,391.47024)"
-       y1="212.38"
-       x1="314.62"
-       inkscape:collect="always">
-      <stop
-         id="stop5076"
-         style="stop-color:#555753"
-         offset="0" />
-      <stop
-         id="stop5078"
-         style="stop-color:#555753;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-  </defs>
+     id="defs3045" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -44,21 +25,26 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="10.84887"
-     inkscape:cy="16.006416"
+     inkscape:cx="41.920299"
+     inkscape:cy="17.613559"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      borderlayer="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="975"
-     inkscape:window-height="665"
-     inkscape:window-x="370"
-     inkscape:window-y="43"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1884"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid817"
+       empspacing="4" />
+  </sodipodi:namedview>
   <metadata
      id="metadata3048">
     <rdf:RDF>
@@ -67,24 +53,43 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
+        <dc:date>2020</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
       </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-213.18001,-597.54339)">
+     transform="translate(-213.18001,-615.54338)">
     <path
+       style="opacity:1;vector-effect:none;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 241.18001,635.5434 c 0,6.62742 -5.37258,12 -12,12 -6.62742,0 -12,-5.37258 -12,-12 0,-6.62742 8,-12.00002 12,-20.00002 8,8 12,13.3726 12,20.00002 z"
+       id="path821"
        inkscape:connector-curvature="0"
-       id="path2770"
-       style="color:#000000;fill:#2e3436;fill-rule:evenodd"
-       d="m 247.51856,597.60592 c -1.27536,-0.0724 -2.1499,3.05909 -3.17018,5.88286 -2.44141,0.39823 -4.84637,1.33949 -7.10558,2.73327 -4.09937,-2.17213 -9.4741,-5.59325 -11.56933,-4.18136 -2.64182,1.77391 7.21489,5.70186 6.46789,8.41703 -0.27329,0.28962 -0.51014,0.61544 -0.78343,0.92316 -3.53457,2.38935 -17.92792,3.13149 -18.14655,6.38969 -0.20041,3.0591 9.72917,4.48909 12.02482,7.07755 -0.16398,1.04986 -0.25507,2.09973 -0.29151,3.14959 -1.9677,2.75138 -6.79585,5.75616 -4.93747,7.65678 0.8381,0.88696 3.04265,0.10861 5.61159,-1.14037 1.33002,5.30363 4.53663,9.68411 9.2919,11.80194 9.29191,4.10895 20.89768,-1.93682 25.96268,-13.46724 2.87867,-6.55261 3.00621,-13.48535 0.87454,-19.00619 0.27329,-0.41633 0.41904,-0.81455 0.36438,-1.24898 -0.0546,-0.68784 -0.60124,-0.94126 -1.38467,-0.97746 -1.71263,-3.1315 -4.22691,-5.62945 -7.48819,-7.05944 -1.36645,-0.59734 -2.78757,-1.01366 -4.2269,-1.19468 0.18219,-2.55225 0.16397,-4.8149 -0.98385,-5.57514 -0.1822,-0.12671 -0.34617,-0.18101 -0.51014,-0.18101 z" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path4980"
-       style="color:#000000;fill:url(#linearGradient5080);fill-rule:evenodd"
-       d="m 250.21503,610.45772 c -3.97183,-0.48873 -7.61572,2.33504 -10.85878,3.14959 -1.20248,5.62946 -8.56313,6.3173 -13.28196,7.38527 4.55486,1.32138 7.87079,6.28109 5.75734,10.77017 -0.96563,9.5574 10.60371,17.84771 18.80245,11.56662 10.25753,-6.04578 14.77595,-23.25995 4.29978,-31.33306 -1.43933,-0.48873 -3.37059,-1.77391 -4.71883,-1.53859 z" />
+       sodipodi:nodetypes="ssscs" />
   </g>
 </svg>
