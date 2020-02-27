@@ -123,9 +123,10 @@ ActivityBase {
             x: parent.width * 0.7
             z: 10
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            anchors.bottom: score.top
-            anchors.bottomMargin: 0.8 * height
-            height: 0.80 * bar.height;
+            anchors.verticalCenter: score.verticalCenter
+            anchors.left: score.right
+            anchors.leftMargin: 0.2 * height
+            height: bar.height;
             width: height
             sourceSize.height: height
             sourceSize.width: height
@@ -170,7 +171,7 @@ ActivityBase {
         Score {
             id: score
             x: parent.width * 0.25
-            y: parent.height * 0.65
+            anchors.verticalCenter: parent.verticalCenter
             anchors.right: undefined
             anchors.bottom: undefined
             currentSubLevel: 0
