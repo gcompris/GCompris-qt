@@ -31,7 +31,6 @@ Item {
     property alias speedSlider: speedSlider
     property int speedSetting: 10
     property string locale: "system"
-    height: column.height
     width: if(background) background.width
     property alias availableLangs: langs.languages
     LanguageList {
@@ -39,21 +38,18 @@ Item {
     }
 
     Column {
-        id: column
         spacing: 10
         Flow {
             spacing: 5
             width: activityConfiguration.width
             GCComboBox {
                 id: localeBox
-                visible: true
                 model: langs.languages
                 background: activityConfiguration.background
                 label: qsTr("Select your locale")
             }
             GCDialogCheckBox {
                 id: uppercaseBox
-                visible: true
                 width: parent.width
                 text: qsTr("Uppercase only mode")
                 checked: activityConfiguration.uppercaseOnly
@@ -119,7 +115,7 @@ Item {
         dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly, "speedSetting": speedSetting}
         activityConfiguration.locale = newLocale;
 
-        if(oldLocale !== newLocale || oldUppercaseMode !== activityConfiguration.uppercaseOnly) {
+        if(oldLocale !== newLocale || oldUppercaseMode !== activityConfiguration.uppercaseOnly || oldSpeed !== speedSetting) {
             configHasChanged = true;
         }
 

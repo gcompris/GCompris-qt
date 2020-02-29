@@ -32,7 +32,6 @@ Item {
     property int speedSetting: 10
     property bool uppercaseOnly: false
     property string locale: "system"
-    height: columnContent.height
     width: if(background) background.width
     property alias availableLangs: langs.languages
     LanguageList {
@@ -40,7 +39,6 @@ Item {
     }
 
     Column {
-        id: columnContent
         spacing: 10
         Flow {
             spacing: 5
