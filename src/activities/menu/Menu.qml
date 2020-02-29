@@ -52,7 +52,6 @@ ActivityBase {
         // Restore focus that has been taken by the loaded activity
         if(pageView.currentItem == activity)
             focus = true;
-        anchoredActivity = -1
     }
 
     onHome: {
@@ -64,7 +63,6 @@ ActivityBase {
             // Restore focus that has been taken by the loaded activity
             if(pageView.currentItem == activity)
                 focus = true;
-            anchoredActivity = -1
         }
     }
 
@@ -153,7 +151,6 @@ ActivityBase {
     property string currentTag: sections[0].tag
     property var currentTagCategories: []
     property string currentCategory: ""
-    property int anchoredActivity: -1
     /// @endcond
 
     property string clickMode: "play"
@@ -438,18 +435,6 @@ ActivityBase {
 
         GridView {
             id: activitiesGrid
-
-            onWidthChanged: {
-                if (anchoredActivity > -1){
-                    positionViewAtIndex(anchoredActivity, GridView.visible)
-                }
-            }
-            onHeightChanged: {
-                if (anchoredActivity > -1){
-                    positionViewAtIndex(anchoredActivity, GridView.visible)
-                }
-            }
-
             anchors {
                 top: {
                     if(searchBar.visible)
@@ -565,7 +550,6 @@ ActivityBase {
                     inMenu: true
 
                     onClose: {
-                        anchoredActivity = -1
                         home()
                     }
                     onSaveData: {
@@ -598,9 +582,9 @@ ActivityBase {
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                     else {
-                        anchoredActivity = index
                         displayDialog(dialogChooseLevel);
                     }
+                    activitiesGrid.currentIndex = index
                 }
             }
             highlight: Rectangle {
