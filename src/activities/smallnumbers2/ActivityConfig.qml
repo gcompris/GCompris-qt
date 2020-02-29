@@ -74,23 +74,22 @@ Item {
 
     property var dataToSave
     function setDefaultValues() {
-        for(var i = 0 ; i < availableModes.length ; i++) {
-            if(availableModes[i].value === dataToSave["mode"]) {
-                modeBox.currentIndex = i;
-                break;
-            }
-        }
-        if(dataToSave.speedSetting) {
-            activityConfiguration.speedSetting = dataToSave.speedSetting
-        }
-        else {
-            activityConfiguration.speedSetting = 10
-        }
+        speedSlider.value = Qt.binding(function() {return activityConfiguration.speedSetting;})
+        activityConfiguration.speedSetting = dataToSave.speedSetting
     }
     function saveValues() {
-        var newMode = availableModes[modeBox.currentIndex].value;
+        var configHasChanged = false
         var oldSpeed = activityConfiguration.speedSetting
         speedSetting = speedSlider.value
-        dataToSave = {"mode": newMode, "speedSetting": speedSetting}
+        dataToSave = {"speedSetting": speedSetting}
+        if (oldSpeed !== speedSetting) {
+            configHasChanged = true
+        }
+
+        // Restart the activity with new information
+        if(configHasChanged) {
+            background.stop();
+            background.start();
+        }
     }
 }
