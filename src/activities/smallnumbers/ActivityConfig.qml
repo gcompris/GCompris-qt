@@ -57,21 +57,15 @@ Item {
     property var dataToSave
     function setDefaultValues() {
         speedSlider.value = Qt.binding(function() {return activityConfiguration.speedSetting;})
-        activityConfiguration.speedSetting = dataToSave.speedSetting
+        if(dataToSave.speedSetting) {
+            activityConfiguration.speedSetting = dataToSave.speedSetting
+        }
+        else {
+            activityConfiguration.speedSetting = 10
+        }
     }
     function saveValues() {
-        var configHasChanged = false
-        var oldSpeed = activityConfiguration.speedSetting
         speedSetting = speedSlider.value
         dataToSave = {"speedSetting": speedSetting}
-        if (oldSpeed !== speedSetting) {
-            configHasChanged = true
-        }
-
-        // Restart the activity with new information
-        if(configHasChanged) {
-            background.stop();
-            background.start();
-        }
     }
 }

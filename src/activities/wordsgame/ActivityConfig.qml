@@ -95,35 +95,26 @@ Item {
         }
         activityConfiguration.locale = localeUtf8
         activityConfiguration.uppercaseOnly = (dataToSave.uppercaseMode === "true")
-        activityConfiguration.speedSetting = dataToSave.speedSetting
+        if(dataToSave.speedSetting) {
+            activityConfiguration.speedSetting = dataToSave.speedSetting
+        }
+        else {
+            activityConfiguration.speedSetting = 10
+        }
     }
 
     function saveValues() {
-        var configHasChanged = false
-        var oldLocale = activityConfiguration.locale;
         var newLocale = activityConfiguration.availableLangs[activityConfiguration.localeBox.currentIndex].locale;
         // Remove .UTF-8
         if(newLocale.indexOf('.') != -1) {
             newLocale = newLocale.substring(0, newLocale.indexOf('.'))
         }
 
-        var oldUppercaseMode = activityConfiguration.uppercaseOnly
         activityConfiguration.uppercaseOnly = activityConfiguration.uppercaseBox.checked
 
-        var oldSpeed = activityConfiguration.speedSetting
         speedSetting = speedSlider.value
 
         dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly, "speedSetting": speedSetting}
         activityConfiguration.locale = newLocale;
-
-        if(oldLocale !== newLocale || oldUppercaseMode !== activityConfiguration.uppercaseOnly || oldSpeed !== speedSetting) {
-            configHasChanged = true;
-        }
-
-        // Restart the activity with new information
-        if(configHasChanged) {
-            background.stop();
-            background.start();
-        }
     }
 }
