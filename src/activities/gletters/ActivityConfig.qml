@@ -32,7 +32,7 @@ Item {
     property int speedSetting: 10
     property bool uppercaseOnly: false
     property string locale: "system"
-    height: column.height
+    height: columnContent.height
     width: if(background) background.width
     property alias availableLangs: langs.languages
     LanguageList {
@@ -40,21 +40,20 @@ Item {
     }
 
     Column {
-        id: column
+        id: columnContent
         spacing: 10
         Flow {
             spacing: 5
-            width: dialogActivityConfig.width
+            width: activityConfiguration.width
             GCComboBox {
                 id: localeBox
                 model: langs.languages
-                background: dialogActivityConfig
+                background: activityConfiguration.background
                 label: qsTr("Select your locale")
             }
-            
             GCDialogCheckBox {
                 id: uppercaseBox
-                width: dialogActivityConfig.width
+                width: activityConfiguration.width
                 text: qsTr("Uppercase only mode")
                 checked: uppercaseOnly
             }
@@ -65,7 +64,7 @@ Item {
                 wrapMode: Text.WordWrap
             }
             Flow {
-                width: dialogActivityConfig.width
+                width: activityConfiguration.width
                 spacing: 5
                 GCSlider {
                     id: speedSlider
