@@ -35,34 +35,39 @@ Item {
     ]
     property alias speedSlider: speedSlider
     property int speedSetting: 10
+    height: columnContent.height
+    width: if(background) background.width
 
-    Flow {
-        id: flow
-        spacing: 5
-        width: parent.width
-        GCComboBox {
-            id: modeBox
-            model: availableModes
-            background: activityConfiguration.background
-            label: qsTr("Select Domino Representation")
-        }
-        GCText {
-            id: speedSliderText
-            text: qsTr("Speed")
-            fontSize: mediumSize
-            wrapMode: Text.WordWrap
-            height: 100
-        }
+    Column {
+        id: columnContent
+        spacing: 10
         Flow {
-            width: dialogActivityConfig.width
             spacing: 5
-            GCSlider {
-                id: speedSlider
-                width: 250 * ApplicationInfo.ratio
-                value: speedSetting
-                maximumValue: 10
-                minimumValue: 1
-                scrollEnabled: false
+            width: activityConfiguration.width
+            GCComboBox {
+                id: modeBox
+                model: availableModes
+                background: activityConfiguration.background
+                label: qsTr("Select Domino Representation")
+            }
+            GCText {
+                id: speedSliderText
+                text: qsTr("Speed")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+                height: 100
+            }
+            Flow {
+                width: activityConfiguration.width
+                spacing: 5
+                GCSlider {
+                    id: speedSlider
+                    width: 250 * ApplicationInfo.ratio
+                    value: speedSetting
+                    maximumValue: 10
+                    minimumValue: 1
+                    scrollEnabled: false
+                }
             }
         }
     }
