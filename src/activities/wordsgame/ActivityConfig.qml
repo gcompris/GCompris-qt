@@ -28,6 +28,8 @@ Item {
     property alias localeBox: localeBox
     property alias uppercaseBox: uppercaseBox
     property bool uppercaseOnly: false
+    property alias speedSlider: speedSlider
+    property int speedSetting: 10
     property string locale: "system"
     height: column.height
     width: if(background) background.width
@@ -49,13 +51,31 @@ Item {
                 background: activityConfiguration.background
                 label: qsTr("Select your locale")
             }
-        }
-        GCDialogCheckBox {
-            id: uppercaseBox
-            visible: true
-            width: parent.width
-            text: qsTr("Uppercase only mode")
-            checked: activityConfiguration.uppercaseOnly
+            GCDialogCheckBox {
+                id: uppercaseBox
+                visible: true
+                width: parent.width
+                text: qsTr("Uppercase only mode")
+                checked: activityConfiguration.uppercaseOnly
+            }
+            GCText {
+                id: speedSliderText
+                text: qsTr("Speed")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+            Flow {
+                width: activityConfiguration.width
+                spacing: 5
+                GCSlider {
+                    id: speedSlider
+                    width: 250 * ApplicationInfo.ratio
+                    value: speedSetting
+                    maximumValue: 10
+                    minimumValue: 1
+                    scrollEnabled: false
+                }
+            }
         }
     }
 
@@ -63,6 +83,7 @@ Item {
     function setDefaultValues() {
         // Recreate the binding
         uppercaseBox.checked = Qt.binding(function(){return activityConfiguration.uppercaseOnly;})
+        speedSlider.value = Qt.binding(function() {return activityConfiguration.speedSetting;})
 
         var localeUtf8 = dataToSave.locale;
         if(localeUtf8 !== "system") {
@@ -77,6 +98,7 @@ Item {
         }
         activityConfiguration.locale = localeUtf8
         activityConfiguration.uppercaseOnly = (dataToSave.uppercaseMode === "true")
+        activityConfiguration.speedSetting = dataToSave.speedSetting
     }
 
     function saveValues() {
@@ -89,13 +111,17 @@ Item {
         }
 
         var oldUppercaseMode = activityConfiguration.uppercaseOnly
-        dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly}
+        activityConfiguration.uppercaseOnly = activityConfiguration.uppercaseBox.checked
+
+        var oldSpeed = activityConfiguration.speedSetting
+        speedSetting = speedSlider.value
+
+        dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly, "speedSetting": speedSetting}
+        activityConfiguration.locale = newLocale;
 
         if(oldLocale !== newLocale || oldUppercaseMode !== activityConfiguration.uppercaseOnly) {
             configHasChanged = true;
         }
-        activityConfiguration.uppercaseOnly = activityConfiguration.uppercaseBox.checked
-        activityConfiguration.locale = newLocale;
 
         // Restart the activity with new information
         if(configHasChanged) {
