@@ -28,11 +28,12 @@ Item {
     property Item background
     property alias speedSlider: speedSlider
     property int speedSetting: 10
+    width: if(background) background.width
 
     Flow {
         id: flow
         spacing: 5
-        width: parent.width
+        width: activityConfiguration.width
         GCText {
             id: speedSliderText
             text: qsTr("Speed")
@@ -40,7 +41,7 @@ Item {
             wrapMode: Text.WordWrap
         }
         Flow {
-            width: dialogActivityConfig.width
+            width: activityConfiguration.width
             spacing: 5
             GCSlider {
                 id: speedSlider
