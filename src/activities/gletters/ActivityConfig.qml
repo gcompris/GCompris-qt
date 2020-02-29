@@ -93,7 +93,13 @@ Item {
                 break;
             }
         }
-        activityConfiguration.locale = localeUtf8
+        if(dataToSave.locale) {
+            activityConfiguration.locale = localeUtf8
+            activityConfiguration.locale = activityConfiguration.availableLangs[0].locale
+        }
+        else {
+            localeBox.currentIndex = 0
+        }
         activityConfiguration.uppercaseOnly = (dataToSave.uppercaseMode === "true")
         if(dataToSave.speedSetting) {
             activityConfiguration.speedSetting = dataToSave.speedSetting

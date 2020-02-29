@@ -81,6 +81,10 @@ Item {
                 break;
             }
         }
+        if(dataToSave["mode"] === undefined) {
+            dataToSave["mode"] = "dot";
+            modeBox.currentIndex = 0
+        }
         if(dataToSave.speedSetting) {
             activityConfiguration.speedSetting = dataToSave.speedSetting
         }
