@@ -19,6 +19,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 
