@@ -9,6 +9,7 @@ algorithm
 align4
 align4-2players
 alphabet-sequence
+anuj_activity
 babymatch
 babyshapes
 baby_tangram
@@ -122,8 +123,8 @@ number_sequence
 numbers-odd-even
 paintings
 penalty
-piano_composition
 photo_hunter
+piano_composition
 planegame
 play_piano
 play_rhythm
