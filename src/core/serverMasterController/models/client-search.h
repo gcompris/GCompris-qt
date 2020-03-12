@@ -4,7 +4,7 @@
 #include <QScopedPointer>
 
 #include <cm-lib_global.h>
-//#include <controllers/i-database-controller.h>
+#include <controllers/i-database-controller.h>
 #include <data/string-decorator.h>
 #include <data/entity.h>
 #include <data/entity-collection.h>
@@ -20,7 +20,7 @@ class CMLIBSHARED_EXPORT ClientSearch : public data::Entity
 	Q_PROPERTY( QQmlListProperty<cm::models::Client> ui_searchResults READ ui_searchResults NOTIFY searchResultsChanged )
 
 public:
-//	ClientSearch(QObject* parent = nullptr, controllers::IDatabaseController* databaseController = nullptr);
+	ClientSearch(QObject* parent = nullptr, controllers::IDatabaseController* databaseController = nullptr);
 	~ClientSearch();
 
 	data::StringDecorator* searchText();

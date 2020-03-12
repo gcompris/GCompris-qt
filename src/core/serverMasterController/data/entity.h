@@ -8,6 +8,7 @@
 
 #include <cm-lib_global.h>
 #include <data/data-decorator.h>
+#include <data/string-decorator.h>
 #include <data/entity-collection.h>
 
 namespace cm {
@@ -23,7 +24,9 @@ public:
 	virtual ~Entity();
 
 public:
+	const QString& id() const;
 	const QString& key() const;
+	void setPrimaryKey(StringDecorator* primaryKey);
 	void update(const QJsonObject& jsonObject);
 	QJsonObject toJson() const;
 
