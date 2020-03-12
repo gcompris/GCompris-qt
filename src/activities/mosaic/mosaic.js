@@ -56,27 +56,15 @@ var selectorModel
 
 var url = "qrc:/gcompris/src/activities/mosaic/resource/"
 
-// What is the grid layout based on the number of items
-var questionLayout = {
-    8:  [4, 2],
-    16: [4, 4],
-    24: [6, 4]
-}
-
-var selectorLayout = {
-    8:  [8, 1],
-    16: [8, 2],
-    24: [12, 2]
-}
-
 var currentLevel = 0
-var numberOfLevel = 16
+var numberOfLevel
 var items
 
 function start(items_) {
     items = items_
     currentLevel = 0
     initLevel()
+    numberOfLevel = items.levels.length
 }
 
 function stop() {
@@ -86,19 +74,13 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.background.areaWithKeyboardFocus = items.selector
     items.selectedItem = ""
-
-    if(currentLevel < 4) {
-        items.nbItems = 8
-        selectorModel = images.slice(currentLevel,
+    items.nbItems = items.levels[currentLevel].nbItems
+    items.selectorLayoutColumns = items.levels[currentLevel].selectorLayout[items.nbItems][0]
+    items.selectorLayoutRows = items.levels[currentLevel].selectorLayout[items.nbItems][1]
+    items.questionLayoutColumns = items.levels[currentLevel].questionLayout[items.nbItems][0]
+    items.questionLayoutRows = items.levels[currentLevel].questionLayout[items.nbItems][1]
+    selectorModel = images.slice(currentLevel,
                                      currentLevel + items.nbItems);
-    } else if(currentLevel < 8) {
-        items.nbItems = 16
-        selectorModel = images.slice(currentLevel - 4,
-                                     currentLevel - 4 + items.nbItems);
-    } else {
-        items.nbItems = 24
-        selectorModel = images.slice(0, items.nbItems);
-    }
     items.selector.model = selectorModel
 
     questionModel = Core.shuffle(selectorModel)

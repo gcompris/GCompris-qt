@@ -1,5 +1,7 @@
 #include "master-controller.h"
 
+using namespace cm::models;
+
 namespace cm {
 namespace controllers {
 
@@ -11,11 +13,13 @@ public:
 	{
 		commandController = new CommandController(masterController);
 		navigationController = new NavigationController(masterController);
+        newClient = new Client(masterController);
 	}
 
 	MasterController* masterController{nullptr};
 	CommandController* commandController{nullptr};
 	NavigationController* navigationController{nullptr};
+    Client* newClient{nullptr};
 	QString welcomeMessage = "This is MasterController to Major Tom";
 };
 
@@ -37,6 +41,11 @@ CommandController* MasterController::commandController()
 NavigationController* MasterController::navigationController()
 {
 	return implementation->navigationController;
+}
+
+Client* MasterController::newClient()
+{
+    return implementation->newClient;
 }
 
 const QString& MasterController::welcomeMessage() const

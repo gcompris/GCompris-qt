@@ -19,6 +19,7 @@ class CMLIBSHARED_EXPORT MasterController : public QObject
 	Q_PROPERTY( QString ui_welcomeMessage READ welcomeMessage CONSTANT )
 	Q_PROPERTY( cm::controllers::NavigationController* ui_navigationController READ navigationController CONSTANT )
 	Q_PROPERTY( cm::controllers::CommandController* ui_commandController READ commandController CONSTANT )
+    Q_PROPERTY( cm::models::Client* ui_newClient READ newClient CONSTANT )
 
 public:
 	explicit MasterController(QObject* parent = nullptr);
@@ -27,6 +28,7 @@ public:
 	CommandController* commandController();
 	NavigationController* navigationController();
 	const QString& welcomeMessage() const;
+    models::Client* newClient();
 
 private:
 	class Implementation;

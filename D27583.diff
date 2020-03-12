@@ -1,0 +1,239 @@
+diff --git a/src/activities/mosaic/ActivityInfo.qml b/src/activities/mosaic/ActivityInfo.qml
+--- a/src/activities/mosaic/ActivityInfo.qml
++++ b/src/activities/mosaic/ActivityInfo.qml
+@@ -37,4 +37,5 @@
+   credit: ""
+   section: "puzzle"
+   createdInVersion: 0
++  levels: "1"
+ }
+diff --git a/src/activities/mosaic/Mosaic.qml b/src/activities/mosaic/Mosaic.qml
+--- a/src/activities/mosaic/Mosaic.qml
++++ b/src/activities/mosaic/Mosaic.qml
+@@ -44,6 +44,7 @@
+         property var areaWithKeyboardFocus: selector
+ 
+         Component.onCompleted: {
++            dialogActivityConfig.initialize()
+             activity.start.connect(start)
+             activity.stop.connect(stop)
+         }
+@@ -56,11 +57,16 @@
+             property alias question: question
+             property alias answer: answer
+             property alias selector: selector
+-            property alias nbItems: column.nbItems
++            property var levels: activity.datasetLoader.data
+             property alias background: background
+             property alias bar: bar
+             property alias bonus: bonus
+             property string selectedItem
++            property int nbItems
++            property int selectorLayoutColumns
++            property int selectorLayoutRows
++            property int questionLayoutColumns
++            property int questionLayoutRows
+         }
+ 
+         onStart: { Activity.start(items) }
+@@ -115,23 +121,22 @@
+             y: parent.height * 0.05
+             width: parent.width * 0.9
+ 
+-            property int nbItems: 24
+             property bool horizontal: background.width >= background.height
+-            property int nbColumns: Activity.questionLayout[nbItems][0]
+-            property int nbLines: Activity.questionLayout[nbItems][1]
++            property int nbColumns: items.questionLayoutColumns
++            property int nbLines: items.questionLayoutRows
+             property int itemWidth: horizontal ?
+                                         Math.min(width / 2 / nbColumns - 10 - 10 / nbColumns / 2,
+                                                  parent.height / 2 / nbLines - 10 - 10 / nbLines / 2) :
+                                         Math.min(width / nbColumns - 10 - 10 / nbColumns / 2,
+                                                  parent.height * 0.25 / nbLines - 10 - 10 / nbLines / 2)
+             property int itemHeight: itemWidth
+ 
+             property int nbSelectorColumns: horizontal ?
+-                                                Activity.selectorLayout[nbItems][0] :
+-                                                Activity.selectorLayout[nbItems][0] / 2
++                                                items.selectorLayoutColumns :
++                                                items.selectorLayoutColumns / 2
+             property int nbSelectorLines: horizontal ?
+-                                              Activity.selectorLayout[nbItems][1] :
+-                                              Activity.selectorLayout[nbItems][1] * 2
++                                              items.selectorLayoutRows :
++                                              items.selectorLayoutRows * 2
+ 
+             Grid {
+                 id: row
+@@ -358,17 +363,39 @@
+             }
+         }
+ 
++        DialogChooseLevel {
++            id: dialogActivityConfig
++            currentActivity: activity.activityInfo
++
++            onSaveData: {
++                levelFolder = dialogActivityConfig.chosenLevels
++                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
++                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
++                // restart activity on saving
++                background.start()
++            }
++            onClose: {
++                home()
++            }
++            onStartActivity: {
++                background.start()
++            }
++        }
++
+         DialogHelp {
+             id: dialogHelp
+             onClose: home()
+         }
+ 
+         Bar {
+             id: bar
+-            content: BarEnumContent { value: help | home | level }
++            content: BarEnumContent { value: help | home | level | activityConfig }
+             onHelpClicked: {
+                 displayDialog(dialogHelp)
+             }
++            onActivityConfigClicked: {
++                displayDialog(dialogActivityConfig)
++            }
+             onPreviousLevelClicked: Activity.previousLevel()
+             onNextLevelClicked: Activity.nextLevel()
+             onHomeClicked: activity.home()
+diff --git a/src/activities/mosaic/mosaic.js b/src/activities/mosaic/mosaic.js
+--- a/src/activities/mosaic/mosaic.js
++++ b/src/activities/mosaic/mosaic.js
+@@ -56,27 +56,15 @@
+ 
+ var url = "qrc:/gcompris/src/activities/mosaic/resource/"
+ 
+-// What is the grid layout based on the number of items
+-var questionLayout = {
+-    8:  [4, 2],
+-    16: [4, 4],
+-    24: [6, 4]
+-}
+-
+-var selectorLayout = {
+-    8:  [8, 1],
+-    16: [8, 2],
+-    24: [12, 2]
+-}
+-
+ var currentLevel = 0
+-var numberOfLevel = 16
++var numberOfLevel
+ var items
+ 
+ function start(items_) {
+     items = items_
+     currentLevel = 0
+     initLevel()
++    numberOfLevel = items.levels.length
+ }
+ 
+ function stop() {
+@@ -86,19 +74,13 @@
+     items.bar.level = currentLevel + 1
+     items.background.areaWithKeyboardFocus = items.selector
+     items.selectedItem = ""
+-
+-    if(currentLevel < 4) {
+-        items.nbItems = 8
+-        selectorModel = images.slice(currentLevel,
++    items.nbItems = items.levels[currentLevel].nbItems
++    items.selectorLayoutColumns = items.levels[currentLevel].selectorLayout[items.nbItems][0]
++    items.selectorLayoutRows = items.levels[currentLevel].selectorLayout[items.nbItems][1]
++    items.questionLayoutColumns = items.levels[currentLevel].questionLayout[items.nbItems][0]
++    items.questionLayoutRows = items.levels[currentLevel].questionLayout[items.nbItems][1]
++    selectorModel = images.slice(currentLevel,
+                                      currentLevel + items.nbItems);
+-    } else if(currentLevel < 8) {
+-        items.nbItems = 16
+-        selectorModel = images.slice(currentLevel - 4,
+-                                     currentLevel - 4 + items.nbItems);
+-    } else {
+-        items.nbItems = 24
+-        selectorModel = images.slice(0, items.nbItems);
+-    }
+     items.selector.model = selectorModel
+ 
+     questionModel = Core.shuffle(selectorModel)
+diff --git a/src/activities/mosaic/resource/1/Data.qml b/src/activities/mosaic/resource/1/Data.qml
+new file mode 100644
+--- /dev/null
++++ b/src/activities/mosaic/resource/1/Data.qml
+@@ -0,0 +1,65 @@
++/* GCompris - Data.qml
++ *
++ * Copyright (C) 2020 Deepak Kumar <deepakdk2431@gmail.com>
++ *
++ * Authors:
++ *   Deepak Kumar <deepakdk2431@gmail.com>
++ *
++ *   This program is free software; you can redistribute it and/or modify
++ *   it under the terms of the GNU General Public License as published by
++ *   the Free Software Foundation; either version 3 of the License, or
++ *   (at your option) any later version.
++ *
++ *   This program is distributed in the hope that it will be useful,
++ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
++ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ *   GNU General Public License for more details.
++ *
++ *   You should have received a copy of the GNU General Public License
++ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
++ */
++import "../../../../core"
++
++Dataset {
++    objective: qsTr("Rebuid the mosaic when items are on single line.")
++    difficulty: 1
++    data: [
++        {
++            "nbItems": 2,
++            "questionLayout": {2: [2,1]},
++            "selectorLayout": {2: [2,1]}
++
++        },
++        {
++            "nbItems": 3,
++            "questionLayout": {3: [3,1]},
++            "selectorLayout": {3: [3,1]}
++
++        },
++        {
++            "nbItems": 4,
++            "questionLayout": {4: [4,1]},
++            "selectorLayout": {4: [4,1]}
++
++        },
++        {
++            "nbItems": 5,
++            "questionLayout": {5: [5,1]},
++            "selectorLayout": {5: [5,1]}
++
++        },
++        {
++            "nbItems": 6,
++            "questionLayout": {6: [6,1]},
++            "selectorLayout": {6: [6,1]}
++
++        },
++        {
++            "nbItems": 8,
++            "questionLayout": {8: [8,1]},
++            "selectorLayout": {8: [8,1]}
++
++        }
++
++    ]
++}
+

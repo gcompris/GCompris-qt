@@ -44,6 +44,7 @@ ActivityBase {
         property var areaWithKeyboardFocus: selector
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -56,11 +57,16 @@ ActivityBase {
             property alias question: question
             property alias answer: answer
             property alias selector: selector
-            property alias nbItems: column.nbItems
+            property var levels: activity.datasetLoader.data
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
             property string selectedItem
+            property int nbItems
+            property int selectorLayoutColumns
+            property int selectorLayoutRows
+            property int questionLayoutColumns
+            property int questionLayoutRows
         }
 
         onStart: { Activity.start(items) }
@@ -115,10 +121,9 @@ ActivityBase {
             y: parent.height * 0.05
             width: parent.width * 0.9
 
-            property int nbItems: 24
             property bool horizontal: background.width >= background.height
-            property int nbColumns: Activity.questionLayout[nbItems][0]
-            property int nbLines: Activity.questionLayout[nbItems][1]
+            property int nbColumns: items.questionLayoutColumns
+            property int nbLines: items.questionLayoutRows
             property int itemWidth: horizontal ?
                                         Math.min(width / 2 / nbColumns - 10 - 10 / nbColumns / 2,
                                                  parent.height / 2 / nbLines - 10 - 10 / nbLines / 2) :
@@ -127,11 +132,11 @@ ActivityBase {
             property int itemHeight: itemWidth
 
             property int nbSelectorColumns: horizontal ?
-                                                Activity.selectorLayout[nbItems][0] :
-                                                Activity.selectorLayout[nbItems][0] / 2
+                                                items.selectorLayoutColumns :
+                                                items.selectorLayoutColumns / 2
             property int nbSelectorLines: horizontal ?
-                                              Activity.selectorLayout[nbItems][1] :
-                                              Activity.selectorLayout[nbItems][1] * 2
+                                              items.selectorLayoutRows :
+                                              items.selectorLayoutRows * 2
 
             Grid {
                 id: row
@@ -358,6 +363,25 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                // restart activity on saving
+                background.start()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -365,9 +389,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()

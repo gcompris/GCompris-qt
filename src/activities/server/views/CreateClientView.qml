@@ -5,6 +5,9 @@ import "../components"
 
 
 Item {
+
+    property Client newClient: masterController.ui_newClient
+
     Rectangle {
         anchors.fill: parent
         color: Style.colourBackground
