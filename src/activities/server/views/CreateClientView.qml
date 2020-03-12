@@ -1,7 +1,9 @@
 import QtQuick 2.0
 
-import "../../../core"
+import CM 1.0
 import "../components"
+import "../../../core"
+
 
 
 Item {

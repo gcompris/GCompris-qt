@@ -60,6 +60,7 @@ set(gcompris_SRCS
    serverMasterController/controllers/command-controller.cpp
    serverMasterController/controllers/database-controller.h
    serverMasterController/controllers/database-controller.cpp
+   serverMasterController/controllers/i-database-controller.h
    serverMasterController/models/client.cpp
    serverMasterController/models/client.h
    serverMasterController/models/address.cpp
