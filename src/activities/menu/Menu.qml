@@ -709,8 +709,15 @@ ActivityBase {
                 }
 
                 placeholderText: qsTr("Search specific activities")
-                onTextChanged: ActivityInfoTree.filterBySearch(searchTextField.text);
+                onTextChanged: searchTimer.restart();
             }
+        }
+
+        //timer to workaround some weird Type errors when typing too fast in the search field
+        Timer {
+            id: searchTimer
+            interval: 100
+            onTriggered: ActivityInfoTree.filterBySearch(searchTextField.text);
         }
 
         Rectangle {
