@@ -91,8 +91,8 @@ ActivityBase {
             anchors {
                 top: parent.top
                 bottom: parent.bottom
-                right: parent.right
-                left: navigationBar.right
+                right: navigationBar.left
+                left: parent.left
             }
             initialItem: "qrc:/gcompris/src/activities/server/views/SplashView.qml"
             clip: true
