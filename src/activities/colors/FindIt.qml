@@ -90,29 +90,49 @@ ActivityBase {
               id: containerModel
         }
 
+        function fitItems(x_, y_, n_) {
+            var sx
+            var sy
+
+            var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
+            if (Math.floor(px * y_ / x_) * px < n_) {
+                sx = y / Math.ceil(px * y_ / x_);
+            } else {
+                sx = x_ / px;
+            }
+
+            var py = Math.ceil(Math.sqrt(n_ * y_ / x_));
+            if (Math.floor(py * x_ / y_) * py < n_) {
+                sy = x_ / Math.ceil(x_ *  py / y_);
+            } else {
+                sy = y_ / py;
+            }
+
+            return Math.max(sx, sy);
+        }
+
         GridView {
             id: container
             model: containerModel
-            x: background.width * 0.2
-            y: background.height * 0.2
-            width: background.width * 0.7
-            height: background.height * 0.6
+            anchors.top: questionItem.bottom
+            anchors.topMargin: score.height * 0.2
+            anchors.bottom: score.top
+            anchors.horizontalCenter: background.horizontalCenter
+            width: background.width - score.width * 2
             interactive: false
-            cellWidth: itemHeight + 10
-            cellHeight: itemWidth + 10
+            cellWidth: itemWidth
+            cellHeight: itemWidth
             keyNavigationWraps: true
 
-            property int itemWidth: Math.min((parent.width * 0.6) / (count / 2),
-                                             (parent.height * 0.5) / (count / 3))
-            property int itemHeight: itemWidth
+            property int itemWidth: fitItems(container.width, container.height, container.count)
 
             delegate: ColorItem {
                 audioVoices: activity.audioVoices
                 source: model.image
                 audioSrc: model.audio ? model.audio : ""
                 question: model.text
-                sourceSize.height: container.itemHeight
-                sourceSize.width: container.itemWidth
+                sourceSize.height: container.itemWidth * 0.9
+                sourceSize.width: container.itemWidth * 0.9
             }
             add: Transition {
                 PathAnimation {
