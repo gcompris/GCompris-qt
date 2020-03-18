@@ -22,7 +22,7 @@
 .pragma library
 .import QtQuick 2.6 as Quick
 
-var resourceURL = "qrc:/gcompris/src/activities/railroad/resource/"
+var resourceURL = "qrc:/gcompris/src/activities/moadmmh_activity/resource/"
 
 var currentLevel = 0
 var numberOfLevel = 4

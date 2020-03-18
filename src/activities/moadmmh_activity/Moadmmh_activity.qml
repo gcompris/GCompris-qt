@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.resourceURL + "railroad-bg.svg"
+        source: Activity.resourceURL + "moadmmh-bg.svg"
         sourceSize.height: background.height
         fillMode: Image.PreserveAspectCrop
         anchors.horizontalCenter: parent.horizontalCenter
@@ -41,14 +41,14 @@ ActivityBase {
 
         signal start
         signal stop
-        
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
         // Add here the QML items you need to access in javascript
-        
+
         QtObject {
             id: items
             property Item main: activity.main
@@ -60,7 +60,7 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-        
+
         Rectangle {
             id: rectangle
             width: 300; height: 300
