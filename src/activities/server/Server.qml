@@ -72,6 +72,7 @@ ActivityBase {
 
         Connections {
             target: masterController.ui_navigationController
+            onGoManagePupilsView: contentFrame.replace("views/ManagePupilsView.qml")
             onGoCreateClientView: contentFrame.replace("views/CreateClientView.qml")
             onGoDashboardView: contentFrame.replace("views/DashboardView.qml")
             onGoEditClientView: contentFrame.replace("views/EditClientView.qml", {selectedClient: client})

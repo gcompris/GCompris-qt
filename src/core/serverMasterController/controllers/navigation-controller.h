@@ -17,7 +17,8 @@ public:
 	explicit NavigationController(QObject* parent = nullptr) : QObject(parent){}
 
 signals:
-	void goCreateClientView();
+    void goManagePupilsView();
+    void goCreateClientView();
 	void goDashboardView();
 	void goEditClientView(cm::models::Client* client);
 	void goFindClientView();
