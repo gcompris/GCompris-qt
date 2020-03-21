@@ -82,6 +82,7 @@ lightsoff
 louis-braille
 magic-hat-minus
 magic-hat-plus
+matorix
 maze
 mazeinvisible
 mazerelative
@@ -122,8 +123,8 @@ number_sequence
 numbers-odd-even
 paintings
 penalty
-piano_composition
 photo_hunter
+piano_composition
 planegame
 play_piano
 play_rhythm
