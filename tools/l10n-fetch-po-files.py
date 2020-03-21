@@ -43,13 +43,13 @@ if not os.path.exists(OUTPUT_PO_PATH):
 all_languages = subprocess.check_output(['svn', 'cat', SVN_PATH + 'subdirs'],
                                        stderr=subprocess.STDOUT)
 
-all_languages = [x.strip() for x in all_languages.split("\n") if len(x)]
+all_languages = [x.strip() for x in all_languages.decode().split("\n") if len(x)]
 all_languages.remove("x-test")
 for lang in all_languages:
     try:
         raw_data = subprocess.check_output(['svn', 'cat', SVN_PATH + lang + SOURCE_PO_PATH],
                                           stderr=subprocess.PIPE)
-        (transformed, subs) = fixer.subn('# ~| ', raw_data)
+        (transformed, subs) = fixer.subn('# ~| ', raw_data.decode())
         pos1 = re_empty_msgid.search(transformed).start()
         pos2 = re_empty_line.search(transformed).start()
         if re_has_qt_contexts.search(transformed, pos1, pos2) is None:
@@ -58,12 +58,13 @@ for lang in all_languages:
                     transformed[pos2:]
             subs = subs + 1
         if (subs > 0):
-            print "Fetched %s (and performed %d cleanups)" % (lang, subs)
+            print("Fetched %s (and performed %d cleanups)" % (lang, subs))
         else:
-            print "Fetched %s" % lang
-        file(OUTPUT_PO_PATH + OUTPUT_PO_PATTERN % lang, "wb").write(transformed)
+            print("Fetched %s" % lang)
+        out_file = open(OUTPUT_PO_PATH + OUTPUT_PO_PATTERN % lang, "wb")
+        out_file.write(transformed.encode())
     except subprocess.CalledProcessError:
-        print "No data for %s" % lang
+        print ("No data for %s" % lang)
 
 # Inform qmake about the updated file list
 #os.utime("CMakeLists.txt", None)
