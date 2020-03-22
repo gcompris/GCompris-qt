@@ -14,137 +14,169 @@ Item {
     width: Style.widthNavigationButton
 
     Rectangle {
-        anchors.fill: parent
+        id: mainRectangle
+        y: 20
+        width: parent.width
+        height: parent.height - y
         color: Style.colourBackground
         border.width: 1
         border.color: "lightgrey"
 
-        GridLayout {
-            id: grid
+        ColumnLayout{
+            id: groupNames
+
+            spacing: 2
+            anchors.top: parent.top
             width: parent.width - 10
 
-            columns: 3
-            columnSpacing: 0
 
+            //groups header
             Rectangle {
-                id: firstCol
-                implicitHeight: 60
-              //  color: "orange"
-                Layout.preferredWidth: 60
-                Text {
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    color: Style.colourNavigationBarBackground
-                    font {
-                        family: Style.fontAwesome
-                        pixelSize: Style.pixelSizeNavigationBarIcon/2
+
+                id: test
+                height: 40
+                width: parent.width
+
+                RowLayout {
+                    width: parent.width
+                    height: 40
+
+                    Rectangle {
+                        Layout.fillHeight: true
+                        Layout.minimumWidth: mainRectangle.width/5
+                        Text {
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            color: Style.colourNavigationBarBackground
+                            font {
+                                family: Style.fontAwesome
+                                pixelSize: Style.pixelSizeNavigationBarIcon/2
+                            }
+                            text: "\uf0c0"
+                            font.bold: true
+                            leftPadding: 20
+                        }
                     }
-                    text: "\uf0c0"
-                    font.bold: true
+                    Rectangle {
+                        implicitHeight: 60
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                        Text {
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.left: parent.left
+                            leftPadding: 10
+                            text: "Groups"
+                            font.bold: true
+                            color: Style.colourNavigationBarBackground
+                        }
+                    }
                 }
             }
-            Rectangle {
-                id: secondCol
-                implicitHeight: 60
-              //  color: "lightgreen"
-                implicitWidth: grid.width-firstCol.width-thirdCol.width
-                Text {
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.left: parent.left
-                    //leftPadding: 20
-                    text: "Groups"
-                    font.bold: true
-                    color: Style.colourNavigationBarBackground
-                }
-            }
-            Rectangle {
-                id: thirdCol
-                implicitHeight: 60
-            //    color: "orange"
-                Layout.preferredWidth: 40
-                Text { text: ""}
-            }
 
-        }
-
-
-        GridLayout {
-            id: grid2
-            width: parent.width - 10
-
-            anchors.top: grid.bottom
-
-            columns: 3
-            columnSpacing: 0
-            flow: GridLayout.TopToBottom
-            rows: repeater.count
-
-
+            //groups names
             Repeater {
                 id: repeater
                 model: ["CP", "CE1", "CE2"]
+
                 Rectangle {
-                    id: firstCol2
-                    implicitHeight: 40
-                    Layout.preferredWidth: 60
-                    Text {
-                        text: "\uf054"
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-                        leftPadding: 5
-                        color: "grey"
-                        font {
-                            family: Style.fontAwesome
-                            pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                    width: groupNames.width
+                    Layout.preferredHeight: 40
+
+                    RowLayout {
+                        width: mainRectangle.width - 10
+                        height: 40
+
+                        Rectangle {
+                            Layout.fillHeight: true
+                            Layout.minimumWidth: mainRectangle.width/5
+                            Text {
+                                text: "\uf054"
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                anchors.verticalCenter: parent.verticalCenter
+                                leftPadding: 20
+                                color: "grey"
+                                font {
+                                    family: Style.fontAwesome
+                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                }
+                            }
+                        }
+                        Rectangle {
+                            Layout.fillWidth: true
+                            Layout.fillHeight: true
+                            height: 40
+                            Text {
+                                text: modelData
+                                anchors.verticalCenter: parent.verticalCenter
+                                width: parent.width
+                                color: "grey"
+                                leftPadding: 5
+                                elide: Text.ElideRight
+                            }
+                        }
+                        Rectangle {
+                            id: elipsis
+                            Layout.minimumWidth: mainRectangle.width/5
+                            Layout.fillHeight: true
+                            height: 40
+                            Text {
+                                id: elipsisText
+                                text: "\uf142"   //elipsis-v
+                                anchors.horizontalCenter: parent.horizontalCenter
+                                anchors.verticalCenter: parent.verticalCenter
+                                color: "grey"
+                                font {
+                                    family: Style.fontAwesome
+                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2    //? see with style
+                                }
+                            }
+                            MouseArea {
+                                anchors.fill: parent
+                                hoverEnabled: true
+                                onClicked: { elipsisText.color = Style.colourNavigationBarBackground }
+                                onEntered: { elipsisText.color = Style.colourNavigationBarBackground }
+                                onExited: { elipsisText.color = "grey" }
+                            }
                         }
                     }
                 }
             }
+        }
 
-            Repeater {
-                id: repeater2
-                model: ["CPjfdgdfgdsgdfgdfgdsfgdfgdgfdfgdfgdfgdfgdsgdfgdfgdfgdfgdsfg", "CE1", "CE2"]
-                Rectangle {
-                    id: secondCol2
-                    implicitHeight: 40
-                    implicitWidth: grid.width-firstCol.width-thirdCol.width
-                    Text {
-                        text: modelData
-                        anchors.verticalCenter: parent.verticalCenter
-                        width: parent.implicitWidth
-                        color: "grey"
-                        leftPadding: 5
-                        elide: Text.ElideRight
-                    }
-                }
-            }
+        Rectangle {
+            id: addAGroupLabelRectangle
 
-            Repeater {
-                id: repeater3
-                model: ["CP", "CE1", "CE2"]
-                Rectangle {
-                    id: thirdCol2
-                    implicitHeight: 40
-                    color: "lightblue"
-                    Layout.preferredWidth: 40
-                    Text {
-                        text: "\uf142"   //elipsis-v
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-                        color: "grey"
-                        font {
-                            family: Style.fontAwesome
-                            pixelSize: Style.pixelSizeNavigationBarIcon / 2
-                        }
-                    }
-                }
-            }
+            anchors.top: groupNames.bottom
+            anchors.left: parent.left
+
+            width: parent.width - 10
+            height: 40
 
             Text {
-                      textFormat: Text.RichText
-                      text: "See the <a href=\"http://qt-project.org\">Qt Project website</a>."
-                      onLinkActivated: console.log(link + " link activated")
-              }
+                id: addAGroupText
+                text: "\uf067" + qsTr("  Add a group")
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                leftPadding: 5
+                color: "grey"
+                font {
+                    family: Style.fontAwesome
+                    pixelSize: Style.pixelSizeNavigationBarIcon / 3   //? see with style
+                }
+
+                onHoveredLinkChanged: {
+                    color = "blue"
+                    console.log("fffffffff")
+                }
+            }
+
+            MouseArea {
+                   anchors.fill: parent
+                   hoverEnabled: true
+                   onClicked: { addAGroupText.color = Style.colourNavigationBarBackground }
+                   onEntered: { addAGroupText.color = Style.colourNavigationBarBackground }
+                   onExited: { addAGroupText.color = "grey" }
+            }
         }
     }
 }

@@ -29,6 +29,7 @@ Item {
         id: pupilsNavigationBar
 
         anchors.top: topBanner.bottom
+
     }
 
 

@@ -2,7 +2,6 @@ import QtQuick 2.9
 import "../../../core"
 
 Item {
-    property bool isCollapsed: true
 
     anchors {
         top: parent.top
@@ -27,10 +26,6 @@ Item {
             color: Style.colourNavigationBarFont
             text: "Groups and pupils management"
             verticalAlignment: Text.AlignVCenter
-            //horizontalAlignment: Text.AlignHCenter
         }
-
-
     }
 }
- 
