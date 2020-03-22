@@ -345,20 +345,27 @@ add_custom_target(
   DEPENDS ${MP3_FILES}
   )
 
+if(ANDROID)
+  set(GCOMPRIS_ASSETS_DIR ${GCOMPRIS_RCC_DIR}/../../../ CACHE INTERNAL "" FORCE)
+else()
+  set(GCOMPRIS_ASSETS_DIR ${GCOMPRIS_RCC_DIR} CACHE INTERNAL "" FORCE)
+endif()
+
 # predownload assets (voices and images) and install them in the rcc folder
-set(DOWNLOAD_ASSETS "" CACHE STRING "Download and packages images and voices. use a list like: words,en,fr,pt_BR to retrieve multiple files")
+set(DOWNLOAD_ASSETS "" CACHE STRING "Download and packages images and voices. use a list like: words,en,fr,pt_BR,music to retrieve multiple files")
 add_custom_command(
     OUTPUT predownloadAssets
-    COMMAND python3 tools/download-assets.py ${DOWNLOAD_ASSETS} ${COMPRESSED_AUDIO} ${GCOMPRIS_RCC_DIR}
+    COMMAND python3 tools/download-assets.py ${DOWNLOAD_ASSETS} ${COMPRESSED_AUDIO} ${GCOMPRIS_ASSETS_DIR}
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 
 add_custom_command(
-  OUTPUT assetsFolders
-  COMMAND cmake -E make_directory "${GCOMPRIS_RCC_DIR}/data2"
-  COMMAND cmake -E make_directory "${GCOMPRIS_RCC_DIR}/data2/voices-${COMPRESSED_AUDIO}"
-  COMMAND cmake -E make_directory "${GCOMPRIS_RCC_DIR}/data2/words"
-  )
+    OUTPUT assetsFolders
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2"
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2/voices-${COMPRESSED_AUDIO}"
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2/words"
+    COMMAND cmake -E make_directory "${GCOMPRIS_ASSETS_DIR}/data2/backgroundMusic"
+    )
 # Install assets
 add_custom_target(getAssets
   DEPENDS assetsFolders predownloadAssets
