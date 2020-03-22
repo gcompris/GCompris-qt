@@ -156,7 +156,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1
 
     /* Is it a static or dynamic level ? */
-    if (currentLevel > levels.length / 2) {
+    if (currentLevel >= levels.length / 2) {
         /* Dynamic */
         size=Math.min(Math.floor((currentLevel+1)/10), 9)
         table = new Array(size * size)
