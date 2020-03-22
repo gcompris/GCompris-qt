@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # GCompris - l10n-fetch-po-files.py
 #

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # GCompris - mergePo.py
 #
@@ -19,18 +19,18 @@
 
 # Using polib.py from https://bitbucket.org/izi/polib/wiki/Home
 
-# Usage : python mergePo.py qt.po gtk.po
+# Usage : python3 mergePo.py qt.po gtk.po
 # Find in the first argument po file the translated lines of the gtk po file
 # (if existing) and replace the translation for the po file.
 # For those not found, no translation is provided.
 
-# something like: python mergePo.py gcompris_fi.po fi.po && sed '/^#|/ d' < gcompris_fi.po > qtgl.po && mv qtgl.po gcompris_fi.po
+# something like: python3 mergePo.py gcompris_fi.po fi.po && sed '/^#|/ d' < gcompris_fi.po > qtgl.po && mv qtgl.po gcompris_fi.po
 
 import sys
 import polib
 
 if len(sys.argv) < 3:
-    print('Usage : python mergePo.py gcompris_qt.po gcompris_gtk.po.'
+    print('Usage : python3 mergePo.py gcompris_qt.po gcompris_gtk.po.'
           ' Output will be in the input file!')
     sys.exit(1)
 

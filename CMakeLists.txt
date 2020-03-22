@@ -208,7 +208,7 @@ include(cmake/rcc.cmake)
 # Simple command calling the python script
   add_custom_command(
     OUTPUT retrievePoFilesFromSvn
-    COMMAND python tools/l10n-fetch-po-files.py
+    COMMAND python3 tools/l10n-fetch-po-files.py
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 # Install translations
@@ -217,7 +217,7 @@ add_custom_target(getSvnTranslations
   COMMENT "Re-run cmake after this to be able to run BuildTranslations with the latest files"
   )
 
-# Get all po files in po/. You can get them doing: python tools/l10n-fetch-po-files.py
+# Get all po files in po/. You can get them doing: python3 tools/l10n-fetch-po-files.py
 file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "po/*.po")
 # Set the output dir for the translation files to /bin
 foreach(PoSource ${TRANSLATIONS_FILES})
@@ -349,7 +349,7 @@ add_custom_target(
 set(DOWNLOAD_ASSETS "" CACHE STRING "Download and packages images and voices. use a list like: words,en,fr,pt_BR to retrieve multiple files")
 add_custom_command(
     OUTPUT predownloadAssets
-    COMMAND python tools/download-assets.py ${DOWNLOAD_ASSETS} ${COMPRESSED_AUDIO} ${GCOMPRIS_RCC_DIR}
+    COMMAND python3 tools/download-assets.py ${DOWNLOAD_ASSETS} ${COMPRESSED_AUDIO} ${GCOMPRIS_RCC_DIR}
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 
