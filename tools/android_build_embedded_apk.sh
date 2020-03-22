@@ -25,7 +25,7 @@
 # Uncomment if this is not already done
 # make getSvnTranslations
 
-Qt5_BaseDIR=~/Qt5.4.2/5.4
+Qt5_BaseDIR=~/Qt/5.12.6
 export ANDROID_NDK_ROOT=$ANDROID_NDK
 
 # The current version
@@ -38,7 +38,7 @@ buildprefix=emb-$version
 rm -f po/*@*
 
 #
-if [ ! -f gcompris.appdata.xml ]
+if [ ! -f org.kde.gcompris.appdata.xml ]
 then
     echo "ERROR: Run me from the top level GCompris source dir"
     exit 1
@@ -53,7 +53,7 @@ download_assets=$1
 
 # Param: ANDROID_ARCHITECTURE WITH_ACTIVATION_CODE DEMO_ONLY DOWNLOAD KIOSK_MODE DOWNLOAD_ASSETS
 # DOWNLOAD_ASSETS: list of assets to bundle in the apk
-#  e.g: words,en,fr # This packages the large words rcc, the french and english voices
+#  e.g: words,en,fr,music # This packages the large words rcc, the french and english voices, and the music
 f_cmake()
 {
     if [ $# != 6 ]
@@ -71,17 +71,30 @@ f_cmake()
         rm -rf CMakeFiles
     fi
 
-    cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
+    cmake -DCMAKE_TOOLCHAIN_FILE=~/ecm/share/ECM/toolchain/Android.cmake \
 	  -DCMAKE_BUILD_TYPE=release \
 	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
+	  -DQt5Qml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Qml \
+	  -DQt5Network_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Network \
+	  -DQt5Core_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Core \
+	  -DQt5Quick_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Quick \
+	  -DQt5Gui_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Gui \
+	  -DQt5Multimedia_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Multimedia \
+	  -DQt5Svg_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Svg \
+	  -DQt5Widgets_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Widgets \
+	  -DQt5Xml_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Xml \
+	  -DQt5XmlPatterns_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5XmlPatterns \
+	  -DQt5LinguistTools_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5LinguistTools \
+	  -DQt5Sensors_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5Sensors \
+	  -DQt5AndroidExtras_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5AndroidExtras \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
 	  -DACTIVATION_MODE=$2 \
 	  -DWITH_DEMO_ONLY=$3 \
 	  -DWITH_DOWNLOAD=$4 \
 	  -DWITH_KIOSK_MODE=$5 \
-          -DDOWNLOAD_ASSETS=$6 \
+	  -DDOWNLOAD_ASSETS=$6 \
 	  ..
 
 }
@@ -100,5 +113,5 @@ make getAssets
 make apk_release && make apk_signed && make apk_signed_aligned
 
 # Remove extra apk
-rm -f android/bin/*release-arm*
-rm -f android/bin/*release-signed-arm*
+rm -f android/*release-arm*
+rm -f android/*release-signed-arm*
