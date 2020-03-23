@@ -319,6 +319,7 @@ if(WIN32)
   set(CPACK_NSIS_MODIFY_PATH "ON")
   set(CPACK_NSIS_URL_INFO_ABOUT "https:\\\\\\\\gcompris.net")
   set(CPACK_NSIS_DISPLAY_NAME "GCompris Educational Software")
+  set(CPACK_NSIS_WELCOME_TITLE_3LINES "ON")
   set(CPACK_NSIS_MUI_FINISHPAGE_RUN "${GCOMPRIS_EXECUTABLE_NAME}")
   set(CPACK_PACKAGE_VENDOR "GCompris team")
 
