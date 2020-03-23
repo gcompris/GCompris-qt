@@ -65,6 +65,10 @@ Item {
                 address: newClient.ui_billingAddress
                 headerText: "Billing Address"
             }
+            AddressEditor {
+                address: newClient.ui_billingAddress
+                headerText: "Billing Address"
+            }
         }
     }
 

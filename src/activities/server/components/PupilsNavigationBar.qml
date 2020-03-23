@@ -14,10 +14,9 @@ Item {
     width: Style.widthNavigationButton
 
     Rectangle {
-        id: mainRectangle
-        y: 20
+        id: pupilsNavigationRectangle
         width: parent.width
-        height: parent.height - y
+        height: parent.height
         color: Style.colourBackground
         border.width: 1
         border.color: "lightgrey"
@@ -34,16 +33,16 @@ Item {
             Rectangle {
 
                 id: test
-                height: 40
+                height: 60
                 width: parent.width
 
                 RowLayout {
                     width: parent.width
-                    height: 40
+                    height: parent.height
 
                     Rectangle {
                         Layout.fillHeight: true
-                        Layout.minimumWidth: mainRectangle.width/5
+                        Layout.minimumWidth: pupilsNavigationRectangle.width/5
                         Text {
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.horizontalCenter: parent.horizontalCenter
@@ -55,6 +54,7 @@ Item {
                             text: "\uf0c0"
                             font.bold: true
                             leftPadding: 20
+                            topPadding: 20
                         }
                     }
                     Rectangle {
@@ -65,6 +65,7 @@ Item {
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.left: parent.left
                             leftPadding: 10
+                            topPadding: 20
                             text: "Groups"
                             font.bold: true
                             color: Style.colourNavigationBarBackground
@@ -83,12 +84,12 @@ Item {
                     Layout.preferredHeight: 40
 
                     RowLayout {
-                        width: mainRectangle.width - 10
+                        width: pupilsNavigationRectangle.width - 10
                         height: 40
 
                         Rectangle {
                             Layout.fillHeight: true
-                            Layout.minimumWidth: mainRectangle.width/5
+                            Layout.minimumWidth: pupilsNavigationRectangle.width/5
                             Text {
                                 text: "\uf054"
                                 anchors.horizontalCenter: parent.horizontalCenter
@@ -116,7 +117,7 @@ Item {
                         }
                         Rectangle {
                             id: elipsis
-                            Layout.minimumWidth: mainRectangle.width/5
+                            Layout.minimumWidth: pupilsNavigationRectangle.width/5
                             Layout.fillHeight: true
                             height: 40
                             Text {
