@@ -14,6 +14,7 @@
   <name xml:lang="eu">GCompris</name>
   <name xml:lang="fr">GCompris</name>
   <name xml:lang="gl">GCompris</name>
+  <name xml:lang="he">GCompris (ג'יקומפריס)</name>
   <name xml:lang="id">GCompris</name>
   <name xml:lang="it">GCompris</name>
   <name xml:lang="mk">Жикомпри</name>
@@ -43,6 +44,7 @@
   <summary xml:lang="fi">Useampitoimintoinen opettavainen peli 2–10-vuotiaille lapsille</summary>
   <summary xml:lang="fr">Jeu éducatif multi-activités pour les enfants de 2 à 10 ans</summary>
   <summary xml:lang="gl">Xogo educativo con varias actividades para nenos de entre 2 e 10 anos</summary>
+  <summary xml:lang="he">משחק חינוך לפלטפורמות מרובות לילדים/ות בגילאי 2-10</summary>
   <summary xml:lang="hi">२ से १० वर्ष के बच्चों के लिओ विभिन्न क्रियाओं वाला शेक्षणिक खेल</summary>
   <summary xml:lang="id">Permainan Pendidikan berisi berbagai kegiatan untuk anak-anak 2 hingga 10 tahun</summary>
   <summary xml:lang="it">Gioco didattico multi-attività per bambini da 2 a 10 anni</summary>
@@ -79,6 +81,7 @@
     <p xml:lang="fi">GCompris on laadukas monitoimintoinen opetusohjelmisto 2–10-vuotiaille lapsille.</p>
     <p xml:lang="fr">GCompris est un logiciel éducatif qui propose des activités variées aux enfants de 2 à 10 ans. Il est plébiscité par les écoles maternelles et primaires de part sa qualité et son spectre couvrant les cycles 1, 2 et 3.</p>
     <p xml:lang="gl">GCompris é unha colección de programas educativos que inclúe numerosas actividades para nenas e nenos de entre 2 e 10 anos.</p>
+    <p xml:lang="he">חבילת הלומדות האיכותיות Gcompris כוללת מספר גדול של פעילויות לילדים וילדות בגילאי 2 עד 10</p>
     <p xml:lang="hi">जीकॉम्परी एक शैक्षिक सॉफ्टवेयर सूट है जिसमें 2 से 10 वर्ष की आयु के बच्चों के लिए कई गतिविधियां शामिल हैं।</p>
     <p xml:lang="id">GCompris adalah kumpulan permainan mendidik yang berisi berbagai kegiatan untuk anak umur 2 hingga 10 tahun.</p>
     <p xml:lang="it">GCompris è una raccolta di alta qualità di programmi didattici che comprende numerose attività per bambini da 2 a 10 anni.</p>
@@ -114,6 +117,7 @@
     <p xml:lang="fi">Jotkin toiminnoista ovat pelimäisiä mutta silti opettavaisia.</p>
     <p xml:lang="fr">Certaines activités sont ludiques mais ont toujours un intérêt pédagogique.</p>
     <p xml:lang="gl">Algunhas das actividades están orientadas ao xogo, pero son aínda así educativas.</p>
+    <p xml:lang="he">חלק מהפעילויות הן מוכוונות משחק אבל לא פחות לימודיות.</p>
     <p xml:lang="hi">कुछ गतिविधियां खेल केंद्रित हैं, लेकिन फिर भी शैक्षिक हैं।</p>
     <p xml:lang="id">Beberapa kegiatan berorientasi pada permainan, tetapi masih memiliki nilai pendidikan.</p>
     <p xml:lang="it">Alcune delle attività sono orientate al gioco, ma comunque didattiche.</p>
@@ -149,6 +153,7 @@
     <p xml:lang="fi">Alta löydät luettelot luokista sekä maininnan joistakin kuhunkin luokkaan kuuluvista toiminnoista.</p>
     <p xml:lang="fr">Vous pouvez trouver ci-dessous une liste des catégories avec certaines de leurs activités.</p>
     <p xml:lang="gl">A continuación atopará unha lista de categorías e as actividades dispoñíbeis en cada unha desas categorías.</p>
+    <p xml:lang="he">למטה אפשר למצוא רשימת נושאים והפעילויות שקיימות תחת כל נושא.</p>
     <p xml:lang="hi">नीचे आप उस श्रेणी में उपलब्ध कुछ गतिविधियों के साथ श्रेणियों की एक सूची पा सकते हैं।</p>
     <p xml:lang="id">Di bawah ini kamu bisa menemukan daftar kategori dengan beberapa kegiatan yang tersedia di dalam setiap kategori tersebut.</p>
     <p xml:lang="it">Di seguito puoi trovare un elenco di categorie con alcune delle attività disponibili per categoria.</p>
@@ -184,6 +189,7 @@
       <li xml:lang="fi">tietokoneen oppiminen: näppäimistö, hiiri, eri hiirieleet…</li>
       <li xml:lang="fr">découverte de l'ordinateur : clavier, souris, mouvements de la souris…</li>
       <li xml:lang="gl">Descubrimento do computador: teclado, rato, xestos do rato, etc.</li>
+      <li xml:lang="he">לגלות את המחשב: מקלדת, עכבר, מחוות...</li>
       <li xml:lang="hi">कंप्यूटर की खोज: कीबोर्ड, माउस, अलग माउस इशारों, ...</li>
       <li xml:lang="id">Pengenalan komputer: keyboard, mouse, gestur mouse yang berbeda, ...</li>
       <li xml:lang="it">scoperta del computer: tastiera, mouse, vari gesti con il mouse, ...</li>
@@ -219,6 +225,7 @@
       <li xml:lang="fi">aritmetiikka: kertotaulujen opettelu, laskutehtävät, peilikuvan piirtäminen, vaa’an tasapainottaminen, vaihtorahan antaminen, …</li>
       <li xml:lang="fr">arithmétique : apprentissage des tables d'opérations mathématiques, l'énumération, de symétrie d'image, équilibrage de la balance, rendre la monnaie…</li>
       <li xml:lang="gl">Aritmética: táboas de memoria, enumeración, imaxes espello, equilibrio de balanzas, cálculo do cambio, etc.</li>
+      <li xml:lang="he">חשבון: טבלת זכרון, מנייה, תמונות מראה, לאזן את המאזניים, להחזיר עודף...</li>
       <li xml:lang="hi">अंकगणितीय: तालिका मेमोरी, गणण, दर्पण छवि, पैमाने संतुलन, देय परिवर्तन, ...</li>
       <li xml:lang="id">aritmatika: tabel ingatan, pencacahan, cerminan gambar, menyeimbangkan skala, ganti memberi, ..</li>
       <li xml:lang="it">aritmetica: tabelline, enumerazione, immagine speculare, allineare la bilancia, dare il resto, ...</li>
@@ -253,6 +260,7 @@
       <li xml:lang="fi">tiede: kanavasulku, värien sekoitus, painovoiman käsite…</li>
       <li xml:lang="fr">science : fonctionnement d'une écluse, mélange des couleurs, concept de la gravité…</li>
       <li xml:lang="gl">Ciencia: o bloqueo da canle, mestura de cores, o concepto de gravidade, etc.</li>
+      <li xml:lang="he">מדע: מנעולי מים בתעלה, ערבוב צבעים, מושג כח-המשיכה...</li>
       <li xml:lang="hi">विज्ञान: नहर लॉक, रंग मिश्रण, गुरुत्वाकर्षण अवधारणा, ...</li>
       <li xml:lang="id">ilmu pengetahuan: kunci kanal, pencampuran warna, konsep gravitasi, ...</li>
       <li xml:lang="it">scienza: la chiusa del canale, miscelazione dei colori, il concetto di gravità, ...</li>
@@ -287,6 +295,7 @@
       <li xml:lang="fi">pelit: muisti, neljän suora, ristinolla, sudoku, Hanoin tornit…</li>
       <li xml:lang="fr">jeux : trouve les paires, puissance 4, morpion, sudoku, la tour d'hanoï…</li>
       <li xml:lang="gl">Xogos: memoria, conectar 4, pai nai fillo, sudoku, torre de Hanoi, etc.</li>
+      <li xml:lang="he">משחקים: זכרון, 4 בשורה, איקס-עיגול, סודוקו, מגדלי האנוי...</li>
       <li xml:lang="hi">खेल: स्मृति, कनेक्ट 4, टिक टैक टो , सुडोकू, हनोई टॉवर, ...</li>
       <li xml:lang="id">permainan: ingatan, menyambungkan 4, tic tac toe, sudoku, menara hanoi, ...</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ...</li>
@@ -321,6 +330,7 @@
       <li xml:lang="fi">lukeminen: lukemisen harjoittelu…</li>
       <li xml:lang="fr">lecture : entraînement à la lecture…</li>
       <li xml:lang="gl">Lectura: práctica de lectura, etc.</li>
+      <li xml:lang="he">קריאה: אימוני קריאה...</li>
       <li xml:lang="hi">पढ़ना: पढ़ना अभ्यास, ...</li>
       <li xml:lang="id">membaca: latihan membaca, ...</li>
       <li xml:lang="it">lettura: esercitare la lettura, ...</li>
@@ -356,6 +366,7 @@
       <li xml:lang="fi">muuta: kellonajan kertominen, Braille-järjestelmä, sokkelo, soittimet…</li>
       <li xml:lang="fr">autre : apprendre à dire l'heure, le système braille, le labyrinthe, les instruments de musique…</li>
       <li xml:lang="gl">Outros: aprender a dicir as horas, o sistema braille, labirinto, instrumentos musicais, etc.</li>
+      <li xml:lang="he">אחרים: ללמוד לקרוא שעון, מערכת הבּרָייל, מבוכים, כלי נגינה...</li>
       <li xml:lang="hi">अन्य: समय बताओ, ब्रेल प्रणाली, भूलभुलैया, संगीत वाद्ययंत्र, ...</li>
       <li xml:lang="id">lainnya: belajar menceritakan waktu, sistem braille, labirin, alat musik, ...</li>
       <li xml:lang="it">altro: impara a leggere l'ora, il sistema braille, labirinto, strumenti musicali, ...</li>
@@ -394,6 +405,7 @@
     <p xml:lang="fi">GComprisissa on nykyisellään yli sata toimintoa, ja lisää kehitetään. GCompris on vapaata ohjelmistoa, mikä tarkoittaa, että voit muokata sitä tarpeisiisi, parannella sitä ja mikä tärkeintä jakaa sitä lapsille kaikkialla.</p>
     <p xml:lang="fr">Actuellement, GCompris contient plus de 100 activités et d'autres sont en cours de développement. GCompris est un logiciel libre, ce qui veut dire que vous pouvez l'adapter à vos propres besoins, le modifier et, le plus important, le partager avec des enfants où que ce soit.</p>
     <p xml:lang="gl">Actualmente GCompris ofrece máis de 100 actividades e hai máis en desenvolvemento. GCompris é software libre, o que significa que pode adaptalo para axustalo ás súas necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.</p>
+    <p xml:lang="he">כרגע מציעה חבילת ג'יקומפריס יותר מ100 פעילויות ונוספות נמצאות בפיתוח. ג'יקומפריס היא תוכנה חופשית, מה שאומר שאפשר לשנות אותה לפי הצרכים שלך, לשפר אותה והכי חשוב- לחלוק אותה עם ילדים בכל מקום.</p>
     <p xml:lang="hi">वर्तमान में जी कॉम्पप्रस 100 गतिविधियों से अधिक प्रदान करता है और अधिक विकसित किए जा रहे हैं। जी कॉम्पप्रस मुफ्त सॉफ्टवेयर है, इसका मतलब है कि आप इसे अपनी आवश्यकताओं के अनुसार अनुकूलित कर सकते हैं, इसमें सुधार कर सकते हैं, और सबसे महत्वपूर्ण बात, इसे हर जगह बच्चों के साथ साझा कर सकते हैं।</p>
     <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu bisa menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
     <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
@@ -432,6 +444,7 @@
       <caption xml:lang="fi">GComprisin päävalikko</caption>
       <caption xml:lang="fr">Menu principal de GCompris</caption>
       <caption xml:lang="gl">Menú principal de GCompris</caption>
+      <caption xml:lang="he">התפריט המרכזי של ג'יקומפריס</caption>
       <caption xml:lang="id">Menu utama GCompris</caption>
       <caption xml:lang="it">Menu principale di GCompris</caption>
       <caption xml:lang="ko">GCompris 주 메뉴</caption>
@@ -465,6 +478,7 @@
       <caption xml:lang="fi">”Napsauta suuraakkosta” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver la lettre majuscule »</caption>
       <caption xml:lang="gl">Actividade de «Premer unha letra maiúscula»</caption>
+      <caption xml:lang="he">פעילות "להקיש על האותיות הגדולות"</caption>
       <caption xml:lang="id">Aktivitas "Klik pada huruf kapital"</caption>
       <caption xml:lang="it">Attività «Fai clic su una lettera maiuscola»</caption>
       <caption xml:lang="ko">"대문자 누르기" 활동</caption>
@@ -497,6 +511,7 @@
       <caption xml:lang="fi">”Kellon oppiminen” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
       <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
+      <caption xml:lang="he">פעילות "ללמוד לקרוא שעון"</caption>
       <caption xml:lang="id">Aktivitas "Mempelajari Jam"</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ko">"시계 익히기" 활동</caption>
@@ -529,6 +544,7 @@
       <caption xml:lang="fi">”Värien sekoitus” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Mélange de la couleur de peinture »</caption>
       <caption xml:lang="gl">Actividade de «Mesturar a cor da pintura»</caption>
+      <caption xml:lang="he">פעילות "לערבב צבעים עם צבע"</caption>
       <caption xml:lang="id">Aktivitas "Mencampur warna cat"</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ko">"물감 색 섞기" 활동</caption>
@@ -561,6 +577,7 @@
       <caption xml:lang="fi">”Värit”-toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
       <caption xml:lang="gl">Actividade de «Cores»</caption>
+      <caption xml:lang="he">פעילות "צבעים"</caption>
       <caption xml:lang="id">Aktivitas "Mewarnai"</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ko">"색깔" 활동</caption>
@@ -593,6 +610,7 @@
       <caption xml:lang="fi">”Rakenna sama malli” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
       <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
+      <caption xml:lang="he">פעילות "לבנות את אותו דגם"</caption>
       <caption xml:lang="id">Aktivitas "Bangun model yang sama"</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ko">"같은 모델 만들기" 활동</caption>
@@ -625,6 +643,7 @@
       <caption xml:lang="fi">”Laske kohteet” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
       <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
+      <caption xml:lang="he">פעילות "למנות את הפריטים"</caption>
       <caption xml:lang="id">Aktivitas "Menghitung benda"</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ko">"물건 개수 세기" 활동</caption>
@@ -656,6 +675,7 @@
       <caption xml:lang="eu">"Hamabosteko jokoa" jarduera</caption>
       <caption xml:lang="fr">L'activité « Le jeu du taquin »</caption>
       <caption xml:lang="gl">Actividade de «O xogo dos quince»</caption>
+      <caption xml:lang="he">פעילות "המשחק החמישהעשר"</caption>
       <caption xml:lang="id">Aktivitas "Permainan lima belas"</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ko">"15 게임" 활동</caption>
@@ -687,6 +707,7 @@
       <caption xml:lang="eu">"Hexagonoa" jarduera</caption>
       <caption xml:lang="fr">L'activité « Localiser la fraise »</caption>
       <caption xml:lang="gl">Actividade de «Hexágono»</caption>
+      <caption xml:lang="he">פעילות "מתומן"</caption>
       <caption xml:lang="id">Aktivitas "Segi Enam"</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ko">"육각형" 활동</caption>
@@ -719,6 +740,7 @@
       <caption xml:lang="fi">”Tasapainota vaaka oikein” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
       <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma axeitada»</caption>
+      <caption xml:lang="he">פעילות "לאזן את המאזניים"</caption>
       <caption xml:lang="id">Aktivitas "Seimbangkan timbangan"</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ko">"저울 균형 맞추기" 활동</caption>
@@ -751,6 +773,7 @@
       <caption xml:lang="fi">”Šakin loppupeli” -toiminto</caption>
       <caption xml:lang="fr">L'activité « Le jeu des échecs »</caption>
       <caption xml:lang="gl">Actividade de «Final dunha partida de xadrez»</caption>
+      <caption xml:lang="he">פעילות "סוף משחק שחמט"</caption>
       <caption xml:lang="id">Aktivitas "Akhir dari permainan catur"</caption>
       <caption xml:lang="it">Attività «Fine della partita a scacchi»</caption>
       <caption xml:lang="ko">"체스 게임" 활동</caption>
@@ -782,6 +805,7 @@
       <caption xml:lang="eu">"Bloke irristagarrien puzzle joko bat" jarduera</caption>
       <caption xml:lang="fr">L'activité « Sortir la voiture du parking »</caption>
       <caption xml:lang="gl">Actividade de «Un crebacabezas de bloques que se moven»</caption>
+      <caption xml:lang="he">פעילות "משחק הרכבה של לבנים מחליקות"</caption>
       <caption xml:lang="id">Aktivitas "Permainan teka-teki menggeser balok"</caption>
       <caption xml:lang="it">Attività «Un rompicapo con blocchi scorrevoli»</caption>
       <caption xml:lang="ko">"블록 밀기 퍼즐 게임" 활동</caption>
