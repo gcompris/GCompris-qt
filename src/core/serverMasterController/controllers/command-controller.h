@@ -20,6 +20,7 @@ class CMLIBSHARED_EXPORT CommandController : public QObject
 	Q_PROPERTY(QQmlListProperty<cm::framework::Command> ui_createClientViewContextCommands READ ui_createClientViewContextCommands CONSTANT)
 	Q_PROPERTY(QQmlListProperty<cm::framework::Command> ui_findClientViewContextCommands READ ui_findClientViewContextCommands CONSTANT)
 	Q_PROPERTY(QQmlListProperty<cm::framework::Command> ui_editClientViewContextCommands READ ui_editClientViewContextCommands CONSTANT)
+    Q_PROPERTY(QQmlListProperty<cm::framework::Command> ui_managePupilsViewContextCommands READ ui_managePupilsViewContextCommands CONSTANT)
 
 public:
 	explicit CommandController(QObject* _parent = nullptr, IDatabaseController* databaseController = nullptr, controllers::NavigationController* navigationController = nullptr, models::Client* newClient = nullptr, models::ClientSearch* clientSearch = nullptr);
@@ -28,6 +29,7 @@ public:
 	QQmlListProperty<framework::Command> ui_createClientViewContextCommands();
 	QQmlListProperty<framework::Command> ui_findClientViewContextCommands();
 	QQmlListProperty<framework::Command> ui_editClientViewContextCommands();
+    QQmlListProperty<framework::Command> ui_managePupilsViewContextCommands();
 
 public slots:
 	void setSelectedClient(cm::models::Client* client);
@@ -35,6 +37,10 @@ public slots:
 	void onFindClientSearchExecuted();
 	void onEditClientSaveExecuted();
 	void onEditClientDeleteExecuted();
+    void onManagePupilsAddPupilExecuted();
+    void onManagePupilsAddPupilsFromListExecuted();
+    void onManagePupilsEditPupilExecuted();
+    void onManagePupilsRemovePupilsExecuted();
 
 private:
 	class Implementation;

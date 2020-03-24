@@ -19,8 +19,8 @@ public:
 		, newClient(_newClient)
 		, clientSearch(_clientSearch)
 	{
-		Command* createClientSaveCommand = new Command( commandController, QChar( 0xf0c7 ), "Save" );
-		QObject::connect( createClientSaveCommand, &Command::executed, commandController, &CommandController::onCreateClientSaveExecuted );
+        Command* createClientSaveCommand = new Command( commandController, QChar( 0xf0c7 ), "Save" );
+        QObject::connect( createClientSaveCommand, &Command::executed, commandController, &CommandController::onCreateClientSaveExecuted );
 		createClientViewContextCommands.append( createClientSaveCommand );
 
 		Command* findClientSearchCommand = new Command( commandController, QChar( 0xf002 ), "Search" );
@@ -34,7 +34,23 @@ public:
 		Command* editClientSaveCommand = new Command( commandController, QChar( 0xf0c7 ), "Save" );
 		QObject::connect( editClientSaveCommand, &Command::executed, commandController, &CommandController::onEditClientSaveExecuted );
 		editClientViewContextCommands.append( editClientSaveCommand );
-	}
+
+        Command* managePupilsAddPupilCommand = new Command( commandController, QChar( 0xf234 ), "Add Pupil" );
+        QObject::connect( managePupilsAddPupilCommand, &Command::executed, commandController, &CommandController::onManagePupilsAddPupilExecuted );
+        managePupilsViewContextCommands.append( managePupilsAddPupilCommand );
+
+        Command* managePupilsAddPupilFromListCommand = new Command( commandController, QChar( 0xf2c2 ), "Add Pupils from List" );
+        QObject::connect( managePupilsAddPupilFromListCommand, &Command::executed, commandController, &CommandController::onManagePupilsAddPupilsFromListExecuted );
+        managePupilsViewContextCommands.append( managePupilsAddPupilFromListCommand );
+
+        Command* managePupilsRemovePupilsFromListCommand = new Command( commandController, QChar( 0xf503 ), "Remove Pupil(s)" );
+        QObject::connect( managePupilsRemovePupilsFromListCommand, &Command::executed, commandController, &CommandController::onManagePupilsRemovePupilsExecuted );
+        managePupilsViewContextCommands.append( managePupilsRemovePupilsFromListCommand );
+
+        Command* managePupilsEditPupilFromListCommand = new Command( commandController, QChar( 0xf4ff ), "Edit Pupil" );
+        QObject::connect( managePupilsEditPupilFromListCommand, &Command::executed, commandController, &CommandController::onManagePupilsEditPupilExecuted );
+        managePupilsViewContextCommands.append( managePupilsEditPupilFromListCommand );
+    }
 
 	CommandController* commandController{nullptr};
 
@@ -46,6 +62,7 @@ public:
 	QList<Command*> createClientViewContextCommands{};
 	QList<Command*> findClientViewContextCommands{};
 	QList<Command*> editClientViewContextCommands{};
+    QList<Command*> managePupilsViewContextCommands{};
 };
 
 CommandController::CommandController(QObject* parent, IDatabaseController* databaseController, NavigationController* navigationController, Client* newClient, ClientSearch* clientSearch)
@@ -72,6 +89,12 @@ QQmlListProperty<Command> CommandController::ui_editClientViewContextCommands()
 {
 	return QQmlListProperty<Command>(this, implementation->editClientViewContextCommands);
 }
+
+QQmlListProperty<Command> CommandController::ui_managePupilsViewContextCommands()
+{
+    return QQmlListProperty<Command>(this, implementation->managePupilsViewContextCommands);
+}
+
 
 void CommandController::setSelectedClient(Client* client)
 {
@@ -119,5 +142,60 @@ void CommandController::onEditClientDeleteExecuted()
 	implementation->clientSearch->search();
 	implementation->navigationController->goDashboardView();
 }
+
+void CommandController::onManagePupilsAddPupilExecuted()
+{
+    qDebug() << "You created a new pupil!";
+
+  /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
+
+    qDebug() << "New client saved.";
+
+    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
+    implementation->clientSearch->search();
+    implementation->navigationController->goFindClientView();*/
+}
+
+void CommandController::onManagePupilsAddPupilsFromListExecuted()
+{
+    qDebug() << "You created new pupils from list!";
+
+  /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
+
+    qDebug() << "New client saved.";
+
+    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
+    implementation->clientSearch->search();
+    implementation->navigationController->goFindClientView();*/
+}
+
+void CommandController::onManagePupilsEditPupilExecuted()
+{
+    qDebug() << "You edited a pupil!";
+
+  /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
+
+    qDebug() << "New client saved.";
+
+    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
+    implementation->clientSearch->search();
+    implementation->navigationController->goFindClientView();*/
+}
+
+void CommandController::onManagePupilsRemovePupilsExecuted()
+{
+    qDebug() << "You removed pupil(s)!";
+
+  /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
+
+    qDebug() << "New client saved.";
+
+    implementation->clientSearch->searchText()->setValue(implementation->newClient->id());
+    implementation->clientSearch->search();
+    implementation->navigationController->goFindClientView();*/
+}
+
+
+
 
 }}

@@ -24,8 +24,8 @@ Item {
      readonly property real widthNavigationButton: widthNavigationButtonIcon + widthNavigationButtonDescription
      readonly property real heightNavigationButton: Math.max(heightNavigationButtonIcon, heightNavigationButtonDescription)
 
-     readonly property color colourCommandBarBackground: "#cecece"
-     readonly property color colourCommandBarFont: "#131313"
+     readonly property color colourCommandBarBackground: "#4A72D9"
+     readonly property color colourCommandBarFont: "#ffffff"
      readonly property color colourCommandBarFontDisabled: "#636363"
      readonly property real heightCommandBar: heightCommandButton
      readonly property int pixelSizeCommandBarIcon: 32

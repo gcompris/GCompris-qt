@@ -25,6 +25,9 @@ Item {
                 right: parent.right
             }
 
+            spacing: 70
+            rightPadding : 70
+
             Repeater {
                 id: commandRepeater
                 delegate: CommandButton {

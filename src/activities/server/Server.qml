@@ -91,7 +91,7 @@ ActivityBase {
             id: contentFrame
             anchors {
                 top: parent.top
-                bottom: parent.bottom
+                bottom: ApplicationSettings.isBarHidden ? parent.bottom : bar.top
                 right: navigationBar.left
                 left: parent.left
             }

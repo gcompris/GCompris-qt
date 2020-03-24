@@ -166,6 +166,11 @@ Item {
 
     }
 
+    CommandBar {
+        commandList: masterController.ui_commandController.ui_managePupilsViewContextCommands
+    }
+
+
 
 /*    ScrollView {
         id: scrollView
@@ -213,9 +218,6 @@ Item {
             }
         }
     }
+*/
 
-
-    CommandBar {
-        commandList: masterController.ui_commandController.ui_createClientViewContextCommands
-    }*/
 }
