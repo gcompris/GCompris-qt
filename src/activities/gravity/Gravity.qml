@@ -212,19 +212,19 @@ ActivityBase {
             intro: [
                 qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
                      +" beyond earth. This force of gravitational attraction is directly dependent"
-                     +" upon the masses of both objects and inversely proportional to"
-                     +" the square of the distance that separates their centers."),
+                     +" upon the mass of both objects and inversely proportional to"
+                     +" the square of the distance between their centers."),
                 qsTr("Since the gravitational force is directly proportional to the mass of both interacting"
                      +" objects, more massive objects will attract each other with a greater gravitational"
                      +" force."),
-                qsTr("But as this force is inversely proportional to the square of the separation distance"
-                     +" between the two interacting objects, more separation distance will"
-                     +" result in weaker gravitational forces."),
+                qsTr("But as this force is inversely proportional to the square of the distance"
+                     +" between the two interacting objects, more distance will"
+                     +" result in weaker gravitational force."),
                 qsTr("Your goal is to move the spaceship and avoid hitting the planets until you reach the"
-                     +"space shuttle. The arrow indicates the direction and the intensity of the gravity"
+                     +" space shuttle. The arrow indicates the direction and the intensity of the gravity"
                      +" on your ship."),
-                qsTr("Try to stay near the center of the screen, and anticipate by looking at the arrow size"
-                    +" and direction.")
+                qsTr("Try to stay near the center of the screen, and anticipate by looking at the size"
+                    +" and direction of the arrow.")
             ]
             z: 110
             anchors {

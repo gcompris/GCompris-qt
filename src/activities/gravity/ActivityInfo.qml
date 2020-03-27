@@ -37,7 +37,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Move the spaceship with the left and right keys, or with the buttons on the screen for mobile devices. Try to stay near the center of the screen and anticipate by looking at size and direction of the arrow showing the gravity force.")
+  manual: qsTr("Move the spaceship with the left and right keys, or with the buttons on the screen for mobile devices. Try to stay near the center of the screen and anticipate by looking at the size and direction of the arrow showing the gravity force.")
   credit: ""
   section: "sciences experiment"
   createdInVersion: 9800
