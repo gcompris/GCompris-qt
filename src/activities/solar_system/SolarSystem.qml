@@ -35,7 +35,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         property bool horizontalLayout: background.width >= background.height
-        
+
         Image {
             id: stars
             fillMode: Image.PreserveAspectCrop
@@ -55,7 +55,7 @@ ActivityBase {
                 }
             }
         }
-        
+
         signal start
         signal stop
 
@@ -79,6 +79,8 @@ ActivityBase {
             property bool quizScreenVisible: false
             property string temperatureHint
             property string lengthOfYearHint
+            property string positionOfPlanetHint
+            property bool hintProvided: true
         }
 
         onStart: {
@@ -248,7 +250,7 @@ ActivityBase {
                     planetSize: bodySize
                 }
             }
-            
+
             NumberAnimation {
                 id: hintAppearAnimation
                 target: solarSystemImageHint
@@ -286,9 +288,12 @@ ActivityBase {
 
             readonly property string hint1: qsTr("1. The <b>farther</b> a planet from the Sun, the <b>lower</b> is its temperature.<br><font color=\"#3bb0de\">%1</font>").arg(items.temperatureHint)
             readonly property string hint2: qsTr("2. The duration of a year on a planet <b>increases as we go away from the Sun</b>.<br><font color=\"#3bb0de\">%1</font>").arg(items.lengthOfYearHint)
+            //: find an equivalent rhyme in your language where the first letter of each word corresponds to the first letter of the planet in proper sequence
+            //~ try to make the rhyme as simple as possible
+            readonly property string hint3: qsTr("3. Always remember this rhyme to learn the position of planets, examine the first letter in each word - <b>M</b>y <b>V</b>ery <b>E</b>xcellent <b>M</b>other <b>J</b>ust <b>S</b>erved <b>U</b>s <b>N</b>oodles.<br><font color=\"#3bb0de\">%1</font>").arg(items.positionOfPlanetHint)
 
             title: qsTr("Hint")
-            content: "%1<br>%2".arg(hint1).arg(hint2)
+            content: "%1<br>%2<br>%3".arg(hint1).arg(hint2).arg(hint3)
             onClose: {
                 solarSystemImageHint.visible = false
                 home()
@@ -361,7 +366,8 @@ ActivityBase {
                      items.solarSystemVisible ? withConfig :
                      items.assessmentMode ? withConfigWithHint :
                      Activity.indexOfSelectedPlanet == 0 ? withoutConfigWithoutHint :
-                     withoutConfigWithHint
+                     items.hintProvided ? withoutConfigWithHint :
+                     withoutConfigWithoutHint
 
             property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }

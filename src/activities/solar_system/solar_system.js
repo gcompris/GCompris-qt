@@ -74,6 +74,7 @@ function nextSubLevel(isAssessmentMode) {
         }
         else {
             items.mainQuizScreen.question = currentPlanetLevels[currentSubLevel].question
+            items.hintProvided = currentPlanetLevels[currentSubLevel].hintProvided
             for(var i = 0 ; i < 4 ; i ++) {
                 optionListShuffle.push({
                     "optionValue": currentPlanetLevels[currentSubLevel].options[i],
