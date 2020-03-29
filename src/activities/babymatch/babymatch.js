@@ -56,8 +56,9 @@ function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGl
 
 function resetData() {
     items.availablePieces.model.clear()
-    for(var i = 0 ; i < spots.length ; ++ i)
+    for(var i = 0 ; i < spots.length ; ++ i) {
         spots[i].destroy()
+    }
     spots = []
 
     for(var i = 0 ; i < showText.length ; ++ i)
@@ -69,8 +70,7 @@ function resetData() {
 }
 
 function stop() {
-    for(var i = 0 ; i < spots.length ; ++ i) 
-        spots[i].destroy()
+    resetData()
 }
 
 function initLevel() {
