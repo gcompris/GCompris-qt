@@ -23,6 +23,7 @@
 .import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
+var useMultipleDataset
 var currentLevel = 1
 var currentSubLevel = 0
 var numberOfLevel
@@ -37,20 +38,34 @@ var spots = []
 var showText = []
 var displayDropCircle
 
-function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGlow_, displayDropCircle_) {
+function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGlow_, displayDropCircle_, useMultipleDataset_) {
     items = items_
     imagesUrl = imagesUrl_
     soundsUrl = soundsUrl_
     boardsUrl = boardsUrl_
-    numberOfLevel = levelCount_
+    useMultipleDataset = useMultipleDataset_
+    numberOfLevel = useMultipleDataset ? items.levels.length : levelCount_
     glowEnabledDefault = answerGlow_
     displayDropCircle = displayDropCircle_
     currentLevel = 1
     currentSubLevel = 0
     numberOfSubLevel = 0
-    spots = []
-    showText = []
+    resetData()
     initLevel()
+}
+
+function resetData() {
+    items.availablePieces.model.clear()
+    for(var i = 0 ; i < spots.length ; ++ i)
+        spots[i].destroy()
+    spots = []
+
+    for(var i = 0 ; i < showText.length ; ++ i)
+        showText[i].destroy()
+    showText = []
+
+    items.backgroundPiecesModel.clear()
+    items.backgroundImage.source = ""
 }
 
 function stop() {
@@ -60,22 +75,12 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel
-    var filename = boardsUrl + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml"
-    items.dataset.source = filename
+    if(useMultipleDataset)
+        items.dataset.source = items.levels[currentLevel-1][currentSubLevel];
+    else
+        items.dataset.source = boardsUrl + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml"
     var levelData = items.dataset.item
-    
-    items.availablePieces.model.clear()
-    for(var i = 0 ; i < spots.length ; ++ i) 
-        spots[i].destroy()
-    spots = []
-    
-    for(var i = 0 ; i < showText.length ; ++ i) 
-        showText[i].destroy()
-    showText = []
-    
-    items.backgroundPiecesModel.clear()
-    items.backgroundImage.source = ""
-
+    resetData();
     items.availablePieces.view.currentDisplayedGroup = 0
     items.availablePieces.view.previousNavigation = 1
     items.availablePieces.view.nextNavigation = 1

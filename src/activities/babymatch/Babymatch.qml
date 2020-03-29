@@ -32,6 +32,7 @@ ActivityBase {
     // But for imageName for example, we reuse the images of babymatch, so we need to differentiate them
     property string imagesUrl: boardsUrl
     property string soundsUrl: boardsUrl
+    property bool useMultipleDataset: false
     property string boardsUrl: "qrc:/gcompris/src/activities/babymatch/resource/"
     property int levelCount: 7
     property bool answerGlow: true	//For highlighting the answers
@@ -51,6 +52,7 @@ ActivityBase {
         property bool vert: background.width >= background.height
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -70,6 +72,7 @@ ActivityBase {
             property alias instruction: instruction
             property alias toolTip: toolTip
             property alias score: score
+            property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property alias dataset: dataset
         }
 
@@ -78,7 +81,7 @@ ActivityBase {
             asynchronous: false
         }
 
-        onStart: { Activity.start(items, imagesUrl, soundsUrl, boardsUrl, levelCount, answerGlow, displayDropCircle) }
+        onStart: { Activity.start(items, imagesUrl, soundsUrl, boardsUrl, levelCount, answerGlow, displayDropCircle, useMultipleDataset) }
         onStop: { Activity.stop() }
 
         DialogHelp {
@@ -88,13 +91,42 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: useMultipleDataset ? (help | home | level | activityConfig) : (help | home | level) }
             onHelpClicked: {displayDialog(dialogHelp)}
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                Activity.resetData();
+                activity.home()
+            }
+            onActivityConfigClicked: {
+                Activity.initLevel()
+                 displayDialog(dialogActivityConfig)
+             }
         }
         
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                activity.focus = true
+            }
+            onLoadData: {
+                if(activityData) {
+                    Activity.initLevel()
+                }
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         Score {
             id: score
             visible: numberOfSubLevels > 1

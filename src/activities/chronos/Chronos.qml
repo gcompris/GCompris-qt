@@ -25,10 +25,10 @@ import "../babymatch"
 
 Babymatch {
     id: activity
-
     onStart: focus = true
     onStop: {}
 
+    useMultipleDataset: true
     boardsUrl: "qrc:/gcompris/src/activities/chronos/resource/"
     levelCount: 6
 }
