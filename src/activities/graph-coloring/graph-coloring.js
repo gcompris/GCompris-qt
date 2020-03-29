@@ -230,7 +230,6 @@ var levels = [
         ];
 
 var numberOfLevel = levels.length
-var mode = "symbol";
 
 function start(items_) {
     items = items_
