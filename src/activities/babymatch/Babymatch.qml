@@ -101,7 +101,7 @@ ActivityBase {
             }
             onActivityConfigClicked: {
                 Activity.initLevel()
-                 displayDialog(dialogActivityConfig)
+                displayDialog(dialogActivityConfig)
              }
         }
         
@@ -318,7 +318,7 @@ ActivityBase {
                 height: parent.height - anchors.margins
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.margins: parent.height/8
+                anchors.margins: parent.height / 8
                 radius: 10
                 color: "#E8E8E8" //paper white
             }
@@ -336,7 +336,7 @@ ActivityBase {
             fontSize: regularSize
             color: "#373737"
             horizontalAlignment: Text.AlignHCenter
-            width: Math.max(Math.min(parent.width * 0.9, text.length * 11), parent.width * 0.3)
+            width: Math.max(Math.min(parent.width * 0.7, text.length * 10), parent.width * 0.3)
             wrapMode: TextEdit.WordWrap
         }
 

@@ -1016,7 +1016,7 @@
        sodipodi:nodetypes="csccc"
        id="path758"
        d="m 437.0307,771.6609 c 0,13.3383 18.5433,13.6019 14.6889,18.4706 -3.5096,4.7852 -25.1868,-3.8776 -25.1868,-17.2159 1.418,-10.0928 3.2913,-13.2372 16.248,-32.1102 8.7571,1.8339 -5.7501,17.5171 -5.7501,30.8555 z"
-       style="font-size:12px;fill:url(#linearGradient858);fill-rule:evenodd"
+       style="font-size:12px;fill-rule:evenodd"
        inkscape:connector-curvature="0" /><path
        transform="matrix(0.679103,0,0,0.647698,182.0967,434.7571)"
        sodipodi:nodetypes="ccccc"
@@ -1069,7 +1069,7 @@
        sodipodi:nodetypes="cscss"
        id="path857"
        d="m 493.8758,766.6382 c -0.3072,15.9104 -12.1513,15.9752 -9.017,21.446 4.2583,7.7032 22.3508,-6.853 22.3508,-20.1912 0,-13.068 -19.1506,-30.9614 -21.2352,-29.7552 -13.0024,9.2238 8.441,15.2471 7.9014,28.5004 z"
-       style="font-size:12px;fill:url(#linearGradient852);fill-rule:evenodd"
+       style="font-size:12px;fill-rule:evenodd"
        inkscape:connector-curvature="0" /><rect
        y="747.25024"
        x="239.33931"
