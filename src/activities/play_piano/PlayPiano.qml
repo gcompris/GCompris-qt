@@ -20,7 +20,6 @@
  * along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
-import QtQuick.Controls 1.5
 import GCompris 1.0
 
 import "../../core"
@@ -44,6 +43,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -110,7 +110,6 @@ ActivityBase {
         }
 
         onStart: {
-            dialogActivityConfig.getInitialConfiguration()
             Activity.start(items)
         }
         onStop: { Activity.stop() }
@@ -244,56 +243,17 @@ ActivityBase {
             onUndoButtonClicked: Activity.undoPreviousAnswer()
         }
 
-        ExclusiveGroup {
-            id: configOptions
-        }
-
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            content: Component {
-                Column {
-                    id: column
-                    spacing: 5
-                    width: dialogActivityConfig.width
-                    height: dialogActivityConfig.height
+            currentActivity: activity.activityInfo
 
-                    property alias coloredNotesModeBox: coloredNotesModeBox
-                    property alias colorlessNotesModeBox: colorlessNotesModeBox
-
-                    GCDialogCheckBox {
-                        id: coloredNotesModeBox
-                        width: column.width - 50
-                        text: qsTr("Display colored notes.")
-                        checked: items.mode === "coloredNotes"
-                        exclusiveGroup: configOptions
-                        onCheckedChanged: {
-                            if(coloredNotesModeBox.checked) {
-                                items.mode = "coloredNotes"
-                            }
-                        }
-                    }
-
-                    GCDialogCheckBox {
-                        id: colorlessNotesModeBox
-                        width: coloredNotesModeBox.width
-                        text: qsTr("Display colorless notes.")
-                        checked: items.mode === "colorlessNotes"
-                        exclusiveGroup: configOptions
-                        onCheckedChanged: {
-                            if(colorlessNotesModeBox.checked) {
-                                items.mode = "colorlessNotes"
-                            }
-                        }
-                    }
-                }
-            }
-            onLoadData: {
-                if(dataToSave && dataToSave["mode"])
-                    items.mode = dataToSave["mode"]
-            }
-            onSaveData: dataToSave["mode"] = items.mode
             onClose: {
                 home()
+            }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
+                }
             }
             onVisibleChanged: {
                 multipleStaff.eraseAllNotes()
@@ -308,13 +268,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config | reload }
+            content: BarEnumContent { value: help | home | level | activityConfig | reload }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
             onReloadClicked: {
