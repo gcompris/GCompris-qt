@@ -29,9 +29,11 @@ var items
 var dataArray = [{"color":"red"},{"color":"blue"},{"color":"yellow"}]
 var groupsNamesArray = []
 
+
+
 groupsNamesArray = ["CP","CE1","CE2","Judo","Théâtre"]
 
-
+groupsNamesArray.push("Chant")
 
 var pupilsNamesArray = [["Aurélien Richelieu","2004"],
                    ["Nadia Comtois","2003"],

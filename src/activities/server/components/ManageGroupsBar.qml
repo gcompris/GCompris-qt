@@ -74,7 +74,7 @@ Item {
                             anchors.left: parent.left
                             leftPadding: 10
                             topPadding: 20
-                            text: "Groups"
+                            text: qsTr("Groups")
                             font.bold: true
                             color: Style.colourNavigationBarBackground
                         }
@@ -82,9 +82,14 @@ Item {
                 }
             }
 
+
+
+
+
+
             //groups names
             Repeater {
-                id: repeater
+                id: groupsNamesRepeater
                 model: Activity.groupsNamesArray
 
                 Rectangle {
@@ -142,12 +147,114 @@ Item {
                             MouseArea {
                                 anchors.fill: parent
                                 hoverEnabled: true
-                                onClicked: { elipsisText.color = Style.colourNavigationBarBackground }
-                                onEntered: { elipsisText.color = Style.colourNavigationBarBackground }
-                                onExited: { elipsisText.color = "grey" }
+                                onClicked: {
+                                    elipsisText.color = Style.colourNavigationBarBackground
+                                   /* modifyGroupCommandsRectangle.anchors.right = parent.anchors.right
+                                    modifyGroupCommandsRectangle.anchors.top = parent.anchors.top
+                                    modifyGroupCommandsRectangle.height = parent.height
+                                    modifyGroupCommandsRectangle.width = 50*/
+                                    //modifyGroupCommandsRectangle.focus = true
+                                    //modifyGroupCommandsRectangle.visible = true
+
+                                    modifyGroupCommandsRectangle.open()
+
+
+                                }
+                                onEntered: { elipsisText.color = Style.colourNavigationBarBackground
+                                modifyGroupCommandsRectangle.visible = true }
+                                onExited: { elipsisText.color = "grey"
+                                    modifyGroupCommandsRectangle.visible = false
+                                }
+
+
+                                Rectangle {
+                                    id: modifyGroupCommandsRectangle
+
+                                    anchors.centerIn: parent
+                                    visible: false
+                                    height: parent.height
+                                    width: 100
+                                  //  focus: true
+                                  //  modal: true
+
+
+
+
+                                    RowLayout {
+                                        width: pupilsNavigationRectangle.width/3
+                                        height: parent.height
+                                        //anchors.fill: parent
+
+                                        Rectangle {
+                                            id: editIconRectangle
+                                            Layout.preferredWidth: 30
+                                            Layout.preferredHeight: editIcon.height
+
+
+                                            color: "red"
+                                            Text {
+                                                id: editIcon
+                                                //anchors.verticalCenter: parent.verticalCenter
+                                                //anchors.horizontalCenter: parent.horizontalCenter
+                                                text: "\uf304"
+                                                color: "grey"
+                                                font {
+                                                    family: Style.fontAwesome
+                                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                                }
+                                            }
+                                            MouseArea {
+                                               anchors.fill: parent
+                                               hoverEnabled: true
+                                               onClicked: {
+                                                   addAGroupText.color = Style.colourNavigationBarBackground
+                                                   addGroupDialog.open()
+                                                   console.log("clicked ...")
+                                               }
+                                             //  onEntered: { editIconRectangle.color = Style.colourNavigationBarBackground }
+                                             //  onExited: { editIconRectangle.color = Style.colourBackground }
+                                            }
+                                        }
+                                        Rectangle {
+                                            Layout.preferredWidth: 30
+                                            Layout.preferredHeight: editIcon.height
+
+                                            Text {
+                                                id: trashIcon
+                                                //anchors.verticalCenter: parent.verticalCenter
+                                                //anchors.horizontalCenter: parent.horizontalCenter
+                                                text: "\uf2ed"
+                                                color: "grey"
+                                                font {
+                                                    family: Style.fontAwesome
+                                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                                }
+                                            }
+                                            MouseArea {
+                                               anchors.fill: parent
+                                               hoverEnabled: true
+                                               onClicked: {
+                                                   addAGroupText.color = Style.colourNavigationBarBackground
+                                                   addGroupDialog.open()
+                                                   console.log("clicked ...")
+                                               }
+                                            //   onEntered: { editIconRectangle.color = Style.colourNavigationBarBackground }
+                                            //   onExited: { editIconRectangle.color = Style.colourBackground }
+                                            }
+                                        }
+                                    }
+
+                                }
+
+
                             }
+
+
+
+
                         }
                     }
+
                 }
             }
         }
@@ -163,7 +270,7 @@ Item {
 
             Text {
                 id: addAGroupText
-                text: "\uf067" + qsTr("  Add a group")
+                text: "\uf067" + qsTr("Add a group")
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 leftPadding: 5
@@ -171,12 +278,7 @@ Item {
                 font {
                     family: Style.fontAwesome
                     pixelSize: Style.pixelSizeNavigationBarIcon / 3   //? see with style
-                }
-
-                onHoveredLinkChanged: {
-                    color = "blue"
-                    console.log("fffffffff")
-                }
+                }         
             }
 
             MouseArea {
@@ -218,12 +320,17 @@ Item {
 
                     x: parent.width / 10
                     y: parent.height / 3
-                    text: "Hello"
+                    text: qsTr("Group name")
                     cursorVisible: false
                     font {
                         family: Style.fontAwesome
                         pixelSize: 20
                     }
+                    selectByMouse: true
+                    focus: true
+
+                    Component.onCompleted: groupNamesTextInput.selectAll()
+
                 }
 
                 Rectangle {
@@ -244,7 +351,10 @@ Item {
                     text: qsTr("Save")
                     onClicked: {
                        console.log("save...")
-                       Activity.groupsNamesArray.push("Musique")
+                       Activity.groupsNamesArray.push(groupNamesTextInput.text)
+                       console.log(Activity.groupsNamesArray)
+                       groupsNamesRepeater.model = Activity.groupsNamesArray
+
                        addGroupDialog.close();
                     }
                 }
