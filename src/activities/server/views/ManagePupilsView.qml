@@ -1,11 +1,13 @@
 import QtQuick 2.12
 import QtQuick.Layouts 1.12
+import QtQml.Models 2.12
 
 import CM 1.0
 import "../components"
 import "../../../core"
 import QtQuick.Controls 2.2
 import "."
+import "../server.js" as Activity
 
 
 
@@ -24,13 +26,14 @@ Item {
 
     TopBanner {
         id: topBanner
+
+        text: "Groups and pupils management"
     }
 
-    PupilsNavigationBar {
+    ManageGroupsBar {
         id: pupilsNavigationBar
 
         anchors.top: topBanner.bottom
-
     }
 
     Rectangle {
@@ -43,6 +46,7 @@ Item {
 
         //color: "red"
 
+
         ColumnLayout{
             id: pupilsDetailsColumn
 
@@ -54,7 +58,7 @@ Item {
             property int yearOfBirthColWidth : pupilsDetailsColumn.width/8
 
 
-            //groups header
+            //pupils header
             Rectangle {
                 id: test
 
@@ -108,10 +112,10 @@ Item {
                 }
             }
 
-            //groups names
+            //pupils data
             Repeater {
                 id: repeater
-                model: [["Thomas petit","2004","CP, CE1, CE2"],["Georges Grand","2007","CE1, CE2, CM1"]]
+                model: Activity.pupilsNamesArray
 
                 Rectangle {
                     width: parent.width

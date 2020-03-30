@@ -43,6 +43,12 @@ Item {
                 onNavigationButtonClicked: masterController.ui_navigationController.goManagePupilsView();
             }
             NavigationButton {
+                iconCharacter: "\uf073"
+                description: "Manages Workplane"
+                hoverColour: "#8aef63"
+                onNavigationButtonClicked: masterController.ui_navigationController.goManageWorkPlanView();
+            }
+            NavigationButton {
                 iconCharacter: "\uf0ae"
                 description: "Manages Sequences"
                 hoverColour: "#8aef63"

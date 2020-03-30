@@ -1,8 +1,16 @@
 import QtQuick 2.9
 import QtQuick.Layouts 1.12
+//import QtQuick.Controls 1.4
 import "../../../core"
+import QtQuick.Dialogs 1.3
+import QtQuick.Controls 2.3
+
+import "../components"
+
+import "../server.js" as Activity
 
 Item {
+    id: pupilsNavigationBarItem
     property bool isCollapsed: true
     property int groupTextMargin: 30
 
@@ -77,7 +85,7 @@ Item {
             //groups names
             Repeater {
                 id: repeater
-                model: ["CP", "CE1", "CE2"]
+                model: Activity.groupsNamesArray
 
                 Rectangle {
                     width: groupNames.width
@@ -172,11 +180,87 @@ Item {
             }
 
             MouseArea {
-                   anchors.fill: parent
-                   hoverEnabled: true
-                   onClicked: { addAGroupText.color = Style.colourNavigationBarBackground }
-                   onEntered: { addAGroupText.color = Style.colourNavigationBarBackground }
-                   onExited: { addAGroupText.color = "grey" }
+               anchors.fill: parent
+               hoverEnabled: true
+               onClicked: {
+                   addAGroupText.color = Style.colourNavigationBarBackground
+                   addGroupDialog.open()
+                   console.log("clicked ...")
+               }
+               onEntered: { addAGroupText.color = Style.colourNavigationBarBackground }
+               onExited: { addAGroupText.color = "grey" }
+            }
+
+            Popup {
+                id: addGroupDialog
+
+                anchors.centerIn: Overlay.overlay
+                width: 600
+                height: 200
+                modal: true
+                focus: true
+                closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
+                Text {
+                    id: addGroupDialogText
+
+                    x: parent.width / 10
+                    y: parent.height / 8
+                    text: qsTr("Add a group name")
+                    font.bold: true
+                    font {
+                        family: Style.fontAwesome
+                        pixelSize: 20
+                    }
+                }
+
+                TextInput {
+                    id: groupNamesTextInput
+
+                    x: parent.width / 10
+                    y: parent.height / 3
+                    text: "Hello"
+                    cursorVisible: false
+                    font {
+                        family: Style.fontAwesome
+                        pixelSize: 20
+                    }
+                }
+
+                Rectangle {
+                    id: groupNameTextInputRectangle
+
+                    anchors.top: groupNamesTextInput.bottom
+                    anchors.left: groupNamesTextInput.left
+                    width: addGroupDialog.width * 4/6
+                    height: 3
+                    color: Style.colourNavigationBarBackground
+                }
+
+                ViewButton {
+                    id: saveButton
+
+                    anchors.right: parent.right
+                    anchors.bottom: parent.bottom
+                    text: qsTr("Save")
+                    onClicked: {
+                       console.log("save...")
+                       Activity.groupsNamesArray.push("Musique")
+                       addGroupDialog.close();
+                    }
+                }
+
+                ViewButton {
+                    id: cancelButton
+
+                    anchors.right: saveButton.left
+                    anchors.bottom: parent.bottom
+                    text: qsTr("Cancel")
+
+                    onClicked: {
+                       console.log("cancel...")
+                       addGroupDialog.close();
+                    }
+                }
             }
         }
     }

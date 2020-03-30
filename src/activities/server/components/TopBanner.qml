@@ -3,6 +3,8 @@ import "../../../core"
 
 Item {
 
+    property string text
+
     anchors {
         top: parent.top
         left: parent.left
@@ -16,15 +18,14 @@ Item {
         color: Style.colourNavigationBarBackground
 
         Text {
-            id: textIcon
-            width: Style.widthNavigationButtonIcon
-            height: Style.heightNavigationButtonIcon
+            id: topBanneTitleText
+            anchors.fill:parent
             leftPadding: 20
             font {
                 pixelSize: Style.pixelSizeTopBannerText
             }
             color: Style.colourNavigationBarFont
-            text: "Groups and pupils management"
+            text: topBanner.text
             verticalAlignment: Text.AlignVCenter
         }
     }

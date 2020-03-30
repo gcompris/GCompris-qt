@@ -26,6 +26,25 @@ var currentLevel = 0
 var numberOfLevel = 4
 var items
 
+var dataArray = [{"color":"red"},{"color":"blue"},{"color":"yellow"}]
+var groupsNamesArray = []
+
+groupsNamesArray = ["CP","CE1","CE2","Judo","Théâtre"]
+
+
+
+var pupilsNamesArray = [["Aurélien Richelieu","2004"],
+                   ["Nadia Comtois","2003"],
+                   ["Raphaël Thibault","2003"],
+                   ["Anastasie Firmin","2001"],
+                   ["Arianne Vincent","2001"],
+                   ["Marlène Porcher","2001"],
+                   ["Gervais Plourde","2001"],
+                   ["Madeline François","2002"],
+                   ["Solange Géroux","2003"],
+                   ["Axel Deniau","2002"]]
+
+
 function start(items_) {
     items = items_
     currentLevel = 0
@@ -37,6 +56,8 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+
+
 }
 
 function nextLevel() {
