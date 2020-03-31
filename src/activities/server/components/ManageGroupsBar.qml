@@ -82,11 +82,6 @@ Item {
                 }
             }
 
-
-
-
-
-
             //groups names
             Repeater {
                 id: groupsNamesRepeater
@@ -149,23 +144,14 @@ Item {
                                 hoverEnabled: true
                                 onClicked: {
                                     elipsisText.color = Style.colourNavigationBarBackground
-                                   /* modifyGroupCommandsRectangle.anchors.right = parent.anchors.right
-                                    modifyGroupCommandsRectangle.anchors.top = parent.anchors.top
-                                    modifyGroupCommandsRectangle.height = parent.height
-                                    modifyGroupCommandsRectangle.width = 50*/
-                                    //modifyGroupCommandsRectangle.focus = true
-                                    //modifyGroupCommandsRectangle.visible = true
-
                                     modifyGroupCommandsRectangle.open()
-
-
                                 }
-                                onEntered: { elipsisText.color = Style.colourNavigationBarBackground
-                                modifyGroupCommandsRectangle.visible = true }
-                                onExited: { elipsisText.color = "grey"
-                                    modifyGroupCommandsRectangle.visible = false
+                                onEntered: {    elipsisText.color = Style.colourNavigationBarBackground
+                                                modifyGroupCommandsRectangle.visible = true
                                 }
-
+                                onExited: {     elipsisText.color = "grey"
+                                                modifyGroupCommandsRectangle.visible = false
+                                }
 
                                 Rectangle {
                                     id: modifyGroupCommandsRectangle
@@ -174,28 +160,18 @@ Item {
                                     visible: false
                                     height: parent.height
                                     width: 100
-                                  //  focus: true
-                                  //  modal: true
-
-
-
 
                                     RowLayout {
                                         width: pupilsNavigationRectangle.width/3
                                         height: parent.height
-                                        //anchors.fill: parent
 
                                         Rectangle {
                                             id: editIconRectangle
                                             Layout.preferredWidth: 30
                                             Layout.preferredHeight: editIcon.height
 
-
-                                            color: "red"
                                             Text {
                                                 id: editIcon
-                                                //anchors.verticalCenter: parent.verticalCenter
-                                                //anchors.horizontalCenter: parent.horizontalCenter
                                                 text: "\uf304"
                                                 color: "grey"
                                                 font {
@@ -208,11 +184,14 @@ Item {
                                                hoverEnabled: true
                                                onClicked: {
                                                    addAGroupText.color = Style.colourNavigationBarBackground
-                                                   addGroupDialog.open()
+                                                   modifyGroupDialog.inputText = modelData
+                                                   console.log("--" + index)
+                                                   modifyGroupDialog.groupNameIndex = index
+                                                   modifyGroupDialog.open()
                                                    console.log("clicked ...")
                                                }
-                                             //  onEntered: { editIconRectangle.color = Style.colourNavigationBarBackground }
-                                             //  onExited: { editIconRectangle.color = Style.colourBackground }
+                                               onEntered: { editIcon.color = Style.colourNavigationBarBackground }
+                                               onExited: { editIcon.color = Style.colourCommandBarFontDisabled }
                                             }
                                         }
                                         Rectangle {
@@ -221,8 +200,6 @@ Item {
 
                                             Text {
                                                 id: trashIcon
-                                                //anchors.verticalCenter: parent.verticalCenter
-                                                //anchors.horizontalCenter: parent.horizontalCenter
                                                 text: "\uf2ed"
                                                 color: "grey"
                                                 font {
@@ -238,23 +215,33 @@ Item {
                                                    addGroupDialog.open()
                                                    console.log("clicked ...")
                                                }
-                                            //   onEntered: { editIconRectangle.color = Style.colourNavigationBarBackground }
-                                            //   onExited: { editIconRectangle.color = Style.colourBackground }
+                                               onEntered: { trashIcon.color = Style.colourNavigationBarBackground }
+                                               onExited: { trashIcon.color = Style.colourCommandBarFontDisabled }
                                             }
                                         }
                                     }
-
                                 }
 
+                                AddModifyGroupDialog {
+                                    id: modifyGroupDialog
 
+                                    property int groupNameIndex
+
+                                    inputText: "testdefault"
+                                    label: "Modify Group Name"
+
+                                    onAccepted: {
+                                       console.log("save.dfg..")
+                                       console.log(textInputValue)
+                                       Activity.groupsNamesArray[groupNameIndex] = textInputValue
+                                       console.log(Activity.groupsNamesArray)
+                                       groupsNamesRepeater.model = Activity.groupsNamesArray
+                                       modifyGroupDialog.close()
+                                    }
+                                }
                             }
-
-
-
-
                         }
                     }
-
                 }
             }
         }
@@ -293,83 +280,20 @@ Item {
                onExited: { addAGroupText.color = "grey" }
             }
 
-            Popup {
+
+            AddModifyGroupDialog {
                 id: addGroupDialog
 
-                anchors.centerIn: Overlay.overlay
-                width: 600
-                height: 200
-                modal: true
-                focus: true
-                closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
-                Text {
-                    id: addGroupDialogText
+                label: qsTr("Add a group name")
+                inputText: qsTr("Group name")
 
-                    x: parent.width / 10
-                    y: parent.height / 8
-                    text: qsTr("Add a group name")
-                    font.bold: true
-                    font {
-                        family: Style.fontAwesome
-                        pixelSize: 20
-                    }
-                }
-
-                TextInput {
-                    id: groupNamesTextInput
-
-                    x: parent.width / 10
-                    y: parent.height / 3
-                    text: qsTr("Group name")
-                    cursorVisible: false
-                    font {
-                        family: Style.fontAwesome
-                        pixelSize: 20
-                    }
-                    selectByMouse: true
-                    focus: true
-
-                    Component.onCompleted: groupNamesTextInput.selectAll()
-
-                }
-
-                Rectangle {
-                    id: groupNameTextInputRectangle
-
-                    anchors.top: groupNamesTextInput.bottom
-                    anchors.left: groupNamesTextInput.left
-                    width: addGroupDialog.width * 4/6
-                    height: 3
-                    color: Style.colourNavigationBarBackground
-                }
-
-                ViewButton {
-                    id: saveButton
-
-                    anchors.right: parent.right
-                    anchors.bottom: parent.bottom
-                    text: qsTr("Save")
-                    onClicked: {
-                       console.log("save...")
-                       Activity.groupsNamesArray.push(groupNamesTextInput.text)
-                       console.log(Activity.groupsNamesArray)
-                       groupsNamesRepeater.model = Activity.groupsNamesArray
-
-                       addGroupDialog.close();
-                    }
-                }
-
-                ViewButton {
-                    id: cancelButton
-
-                    anchors.right: saveButton.left
-                    anchors.bottom: parent.bottom
-                    text: qsTr("Cancel")
-
-                    onClicked: {
-                       console.log("cancel...")
-                       addGroupDialog.close();
-                    }
+                onAccepted: {
+                   console.log("save new group..")
+                   console.log(textInputValue)
+                   Activity.groupsNamesArray.push(textInputValue)
+                   console.log(Activity.groupsNamesArray)
+                   groupsNamesRepeater.model = Activity.groupsNamesArray
+                   addGroupDialog.close()
                 }
             }
         }
