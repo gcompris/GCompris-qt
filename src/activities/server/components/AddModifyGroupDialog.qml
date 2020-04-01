@@ -8,6 +8,7 @@ Popup {
 
     property string label: "To be modified in calling element."
     property string inputText: "Group Name to be modified in calling element."
+    property bool textInputReadOnly: false
 
     signal accepted(string textInputValue)
 
@@ -43,6 +44,7 @@ Popup {
         }
         selectByMouse: true
         focus: true
+        readOnly: addModifyGroupDialog.textInputReadOnly
 
         Component.onCompleted: addModifyGroupNameTextInput.selectAll()
 

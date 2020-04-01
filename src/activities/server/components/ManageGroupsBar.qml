@@ -88,16 +88,19 @@ Item {
                 model: Activity.groupsNamesArray
 
                 Rectangle {
+                    id: groupNameRectangle
                     width: groupNames.width
                     Layout.preferredHeight: 40
 
                     RowLayout {
+                        id: groupNameRow
                         width: pupilsNavigationRectangle.width - 10
                         height: 40
 
                         Rectangle {
                             Layout.fillHeight: true
                             Layout.minimumWidth: pupilsNavigationRectangle.width/5
+                            color: "transparent"
                             Text {
                                 text: "\uf054"
                                 anchors.horizontalCenter: parent.horizontalCenter
@@ -114,6 +117,7 @@ Item {
                             Layout.fillWidth: true
                             Layout.fillHeight: true
                             height: 40
+                            color: "transparent"
                             Text {
                                 text: modelData
                                 anchors.verticalCenter: parent.verticalCenter
@@ -128,6 +132,7 @@ Item {
                             Layout.minimumWidth: pupilsNavigationRectangle.width/5
                             Layout.fillHeight: true
                             height: 40
+                            color: "transparent"
                             Text {
                                 id: elipsisText
                                 text: "\uf142"   //elipsis-v
@@ -139,108 +144,151 @@ Item {
                                     pixelSize: Style.pixelSizeNavigationBarIcon / 2    //? see with style
                                 }
                             }
-                            MouseArea {
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                onClicked: {
-                                    elipsisText.color = Style.colourNavigationBarBackground
-                                    modifyGroupCommandsRectangle.open()
-                                }
-                                onEntered: {    elipsisText.color = Style.colourNavigationBarBackground
-                                                modifyGroupCommandsRectangle.visible = true
-                                }
-                                onExited: {     elipsisText.color = "grey"
-                                                modifyGroupCommandsRectangle.visible = false
-                                }
+                        }
+                    }
+
+                    MouseArea {
+                        //anchors.fill: groupNameRectangle
+                        anchors.right: groupNameRectangle.right
+                        anchors.top: groupNameRectangle.top
+                        height: groupNameRectangle.height
+                        width: groupNameRectangle.width
+
+
+                        //anchors.fill: parent
+                        hoverEnabled: true
+                        onClicked: {
+                            elipsisText.color = Style.colourNavigationBarBackground
+                            modifyGroupCommandsRectangle.open()
+                        }
+                        onEntered: {    elipsisText.color = Style.colourNavigationBarBackground
+                                        modifyGroupCommandsRectangle.visible = true
+                                        groupNameRectangle.color = Style.colourPanelBackgroundHover
+                        }
+                        onExited: {     elipsisText.color = "grey"
+                                        modifyGroupCommandsRectangle.visible = false
+                                        groupNameRectangle.color = Style.colourBackground
+                        }
+
+                        Rectangle {
+                            id: modifyGroupCommandsRectangle
+
+                            anchors.right: parent.right
+                            visible: false
+                            height: groupNameRow.height
+                            width: 100
+                            color: "transparent"
+
+                            RowLayout {
+                                width: pupilsNavigationRectangle.width/3
+                                height: parent.height
 
                                 Rectangle {
-                                    id: modifyGroupCommandsRectangle
+                                    id: editIconRectangle
 
-                                    anchors.centerIn: parent
-                                    visible: false
-                                    height: parent.height
-                                    width: 100
+                                    Layout.fillWidth: true
+                                    Layout.preferredWidth: modifyGroupCommandsRectangle/2
+                                    Layout.preferredHeight: editIcon.height
+                                    color: "transparent"
 
-                                    RowLayout {
-                                        width: pupilsNavigationRectangle.width/3
-                                        height: parent.height
-
-                                        Rectangle {
-                                            id: editIconRectangle
-                                            Layout.preferredWidth: 30
-                                            Layout.preferredHeight: editIcon.height
-
-                                            Text {
-                                                id: editIcon
-                                                text: "\uf304"
-                                                color: "grey"
-                                                font {
-                                                    family: Style.fontAwesome
-                                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
-                                                }
-                                            }
-                                            MouseArea {
-                                               anchors.fill: parent
-                                               hoverEnabled: true
-                                               onClicked: {
-                                                   addAGroupText.color = Style.colourNavigationBarBackground
-                                                   modifyGroupDialog.inputText = modelData
-                                                   console.log("--" + index)
-                                                   modifyGroupDialog.groupNameIndex = index
-                                                   modifyGroupDialog.open()
-                                                   console.log("clicked ...")
-                                               }
-                                               onEntered: { editIcon.color = Style.colourNavigationBarBackground }
-                                               onExited: { editIcon.color = Style.colourCommandBarFontDisabled }
-                                            }
-                                        }
-                                        Rectangle {
-                                            Layout.preferredWidth: 30
-                                            Layout.preferredHeight: editIcon.height
-
-                                            Text {
-                                                id: trashIcon
-                                                text: "\uf2ed"
-                                                color: "grey"
-                                                font {
-                                                    family: Style.fontAwesome
-                                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
-                                                }
-                                            }
-                                            MouseArea {
-                                               anchors.fill: parent
-                                               hoverEnabled: true
-                                               onClicked: {
-                                                   addAGroupText.color = Style.colourNavigationBarBackground
-                                                   addGroupDialog.open()
-                                                   console.log("clicked ...")
-                                               }
-                                               onEntered: { trashIcon.color = Style.colourNavigationBarBackground }
-                                               onExited: { trashIcon.color = Style.colourCommandBarFontDisabled }
-                                            }
+                                    Text {
+                                        id: editIcon
+                                        text: "\uf304"
+                                        anchors.centerIn: parent
+                                        color: "grey"
+                                        font {
+                                            family: Style.fontAwesome
+                                            pixelSize: Style.pixelSizeNavigationBarIcon / 2
                                         }
                                     }
+                                    MouseArea {
+                                       anchors.fill: parent
+                                       hoverEnabled: true
+                                       onClicked: {
+                                           addAGroupText.color = Style.colourNavigationBarBackground
+                                           modifyGroupDialog.inputText = modelData
+                                           console.log("--" + index)
+                                           modifyGroupDialog.groupNameIndex = index
+                                           modifyGroupDialog.open()
+                                           console.log("clicked ...")
+                                       }
+                                       onEntered: { editIcon.color = Style.colourNavigationBarBackground }
+                                       onExited: { editIcon.color = Style.colourCommandBarFontDisabled }
+                                    }
                                 }
+                                Rectangle {
+                                    Layout.preferredWidth: modifyGroupCommandsRectangle/2
+                                    Layout.preferredHeight: editIcon.height
+                                    Layout.fillWidth: true
+                                    color: "transparent"
 
-                                AddModifyGroupDialog {
-                                    id: modifyGroupDialog
-
-                                    property int groupNameIndex
-
-                                    inputText: "testdefault"
-                                    label: "Modify Group Name"
-
-                                    onAccepted: {
-                                       console.log("save.dfg..")
-                                       console.log(textInputValue)
-                                       Activity.groupsNamesArray[groupNameIndex] = textInputValue
-                                       console.log(Activity.groupsNamesArray)
-                                       groupsNamesRepeater.model = Activity.groupsNamesArray
-                                       modifyGroupDialog.close()
+                                    Text {
+                                        id: trashIcon
+                                        text: "\uf2ed"
+                                        anchors.centerIn: parent
+                                        color: "grey"
+                                        font {
+                                            family: Style.fontAwesome
+                                            pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                        }
+                                    }
+                                    MouseArea {
+                                       anchors.fill: parent
+                                       hoverEnabled: true
+                                       onClicked: {
+                                           addAGroupText.color = Style.colourNavigationBarBackground
+                                           removeGroupDialog.groupNameIndex = index
+                                           removeGroupDialog.open()
+                                           console.log("clicked ...")
+                                       }
+                                       onEntered: { trashIcon.color = Style.colourNavigationBarBackground }
+                                       onExited: { trashIcon.color = Style.colourCommandBarFontDisabled }
                                     }
                                 }
                             }
                         }
+
+
+                        AddModifyGroupDialog {
+                            id: modifyGroupDialog
+
+                            property int groupNameIndex
+
+                            label: "Modify Group Name"
+                            inputText: "testdefault"
+
+                            onAccepted: {
+                               console.log("save.dfg..")
+                               console.log(textInputValue)
+                               Activity.groupsNamesArray[groupNameIndex] = textInputValue
+                               console.log(Activity.groupsNamesArray)
+                               groupsNamesRepeater.model = Activity.groupsNamesArray
+                               modifyGroupDialog.close()
+                            }
+                        }
+
+                        AddModifyGroupDialog {
+                            id: removeGroupDialog
+
+                            property int groupNameIndex
+
+                            label: qsTr("Are you sure you want to remove the group")
+                            inputText: Activity.groupsNamesArray[groupNameIndex]
+
+                            textInputReadOnly: true
+
+                            onAccepted: {
+                               console.log("save.dfg..")
+                               console.log(textInputValue)
+                               Activity.groupsNamesArray[groupNameIndex] = textInputValue
+                               console.log(Activity.groupsNamesArray)
+                               groupsNamesRepeater.model = Activity.groupsNamesArray
+                               modifyGroupDialog.close()
+                            }
+                        }
+
+
+
                     }
                 }
             }
