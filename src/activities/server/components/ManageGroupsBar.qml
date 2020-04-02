@@ -157,10 +157,6 @@ Item {
 
                         //anchors.fill: parent
                         hoverEnabled: true
-                        onClicked: {
-                            elipsisText.color = Style.colourNavigationBarBackground
-                            modifyGroupCommandsRectangle.open()
-                        }
                         onEntered: {    elipsisText.color = Style.colourNavigationBarBackground
                                         modifyGroupCommandsRectangle.visible = true
                                         groupNameRectangle.color = Style.colourPanelBackgroundHover
@@ -205,7 +201,6 @@ Item {
                                        anchors.fill: parent
                                        hoverEnabled: true
                                        onClicked: {
-                                           addAGroupText.color = Style.colourNavigationBarBackground
                                            modifyGroupDialog.inputText = modelData
                                            console.log("--" + index)
                                            modifyGroupDialog.groupNameIndex = index

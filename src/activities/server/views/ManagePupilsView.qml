@@ -12,6 +12,9 @@ import "../server.js" as Activity
 
 
 Item {
+    id: managePupilsView
+
+    width: activity.width
 
   //  property Client newClient: masterController.ui_newClient
 
@@ -43,6 +46,7 @@ Item {
         anchors.top: topBanner.bottom
         anchors.right: parent.right
         anchors.bottom: parent.bottom
+        width: managePupilsView.width
 
         //color: "red"
 
@@ -60,7 +64,7 @@ Item {
 
             //pupils header
             Rectangle {
-                id: test
+                id: pupilsHeaderRectangle
 
                 height: 60
                 width: parent.width
@@ -79,7 +83,7 @@ Item {
                             color: Style.colourNavigationBarBackground
                             text: "Pupils Names"
                             font.bold: true
-                            leftPadding: 20
+                            leftPadding: 60
                             topPadding: 20
                         }
                     }
@@ -114,33 +118,40 @@ Item {
 
             //pupils data
             Repeater {
-                id: repeater
+                id: pupilsDetailsRepeater
                 model: Activity.pupilsNamesArray
 
                 Rectangle {
-                    width: parent.width
-                    Layout.preferredHeight: 40
+                    id: pupilDetailsRectangle
+                    width: managePupilsViewRectangle.width - navigationBar.width
+                    height: 40
+
+                    //Layout.preferredHeight: 40
+
+                    color: "blue"
+                    border.color: "green"
+                    border.width: 5
 
                     RowLayout {
-                        width: managePupilsViewRectangle.width - 10
+                        width: parent.width
                         height: 40
 
                         Rectangle {
                             id: pupilName
                             Layout.fillHeight: true
                             Layout.minimumWidth: pupilsDetailsColumn.pupilNameColWidth
-                            Text {
+                            color: "transparent"
+                            CheckBox {
                                 text: modelData[0]
-                                //anchors.horizontalCenter: parent.horizontalCenter
                                 anchors.verticalCenter: parent.verticalCenter
                                 leftPadding: 20
-                                color: "grey"
                             }
                         }
                         Rectangle {
                             id: yearOfBirth
                             Layout.fillHeight: true
                             Layout.minimumWidth: pupilsDetailsColumn.yearOfBirthColWidth   //any way to find "year of birth text width" if translations ?
+                            color: "transparent"
                             Text {
                                 id: yearText
                                 text: modelData[1]
@@ -151,19 +162,177 @@ Item {
                         }
                         Rectangle {
                             id: groups
+                            Layout.minimumWidth: 30
+                            Layout.fillHeight: true
+                            height: 40
+                            color: "transparent"
+                            Text {
+                                id: elipsisText
+                                text: "yy" //modelData[2]
+                                leftPadding: 10
+                                anchors.verticalCenter: parent.verticalCenter
+                                color: "grey"
+                            }
+                        }
+                        Rectangle {
+                            id: pupilCommandOptions
                             Layout.fillWidth: true
                             Layout.fillHeight: true
                             height: 40
+                            color: "transparent"
                             Text {
-                                id: elipsisText
-                                text: modelData[2]
+                                id: pupilElipsisV
+                                text: "options"
                                 leftPadding: 10
                                 anchors.verticalCenter: parent.verticalCenter
                                 color: "grey"
                             }
                         }
                     }
+
+                    MouseArea {
+
+                        anchors.right: pupilDetailsRectangle.right
+                        anchors.top: pupilDetailsRectangle.top
+                        height: pupilDetailsRectangle.height
+                        width: pupilDetailsRectangle.width - 50
+
+                        //anchors.fill: parent
+                        hoverEnabled: true
+                        onEntered: {    modifyPupilCommandsRectangle.visible = true
+                                        pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
+                        }
+                        onExited: {
+                                        modifyPupilCommandsRectangle.visible = false
+                                        pupilDetailsRectangle.color = Style.colourBackground
+                        }
+
+                        Rectangle {
+                            id: modifyPupilCommandsRectangle
+
+                            anchors.right: parent.right
+                            visible: false
+                            height: pupilDetailsRow.height
+                            width: 100
+                            color: "transparent"
+
+                            RowLayout {
+                                id: pupilDetailsRow
+                                width: parent.width
+                                height: parent.height
+
+                                Rectangle {
+                                    id: editIconRectangle
+
+                                    Layout.fillWidth: true
+                                    Layout.preferredWidth: modifyPupilCommandsRectangle/2
+                                    Layout.preferredHeight: editIcon.height
+                                    color: "transparent"
+
+                                    Text {
+                                        id: editIcon
+                                        text: "\uf304"
+                                        anchors.centerIn: parent
+                                        color: "grey"
+                                        font {
+                                            family: Style.fontAwesome
+                                            pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                        }
+                                    }
+                                    MouseArea {
+                                       anchors.fill: parent
+                                       hoverEnabled: true
+                                       onClicked: {
+                                           modifyPupilDialog.inputText = modelData[0]
+                                           console.log("--" + index)
+                                           modifyPupilDialog.pupilDetailsIndex = index
+                                           modifyPupilDialog.open()
+                                           console.log("clicked ...")
+                                       }
+                                       onEntered: { editIcon.color = Style.colourNavigationBarBackground }
+                                       onExited: { editIcon.color = Style.colourCommandBarFontDisabled }
+                                    }
+                                }
+                                Rectangle {
+                                    Layout.preferredWidth: modifyPupilCommandsRectangle/2
+                                    Layout.preferredHeight: editIcon.height
+                                    Layout.fillWidth: true
+                                    color: "transparent"
+
+                                    Text {
+                                        id: trashIcon
+                                        text: "\uf2ed"
+                                        anchors.centerIn: parent
+                                        color: "grey"
+                                        font {
+                                            family: Style.fontAwesome
+                                            pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                        }
+                                    }
+                                    MouseArea {
+                                       anchors.fill: parent
+                                       hoverEnabled: true
+                                       onClicked: {
+                                           addAGroupText.color = Style.colourNavigationBarBackground
+                                           removeGroupDialog.pupilDetailsIndex = index
+                                           removeGroupDialog.open()
+                                           console.log("clicked ...")
+                                       }
+                                       onEntered: { trashIcon.color = Style.colourNavigationBarBackground }
+                                       onExited: { trashIcon.color = Style.colourCommandBarFontDisabled }
+                                    }
+                                }
+                            }
+                        }
+
+
+                        AddModifyGroupDialog {
+                            id: modifyPupilDialog
+
+                            property int pupilDetailsIndex
+
+                            label: "Modify Pupil Details"
+                            inputText: "testdefault"
+
+                            onAccepted: {
+                               console.log("save.dfg..")
+                               console.log(textInputValue)
+                               Activity.pupilsNamesArray[pupilDetailsIndex][0] = textInputValue
+                               Activity.pupilsNamesArray[pupilDetailsIndex][1] = "2004"
+                               console.log(Activity.pupilsNamesArray)
+                               pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+                               modifyPupilDialog.close()
+                            }
+                        }
+
+                        AddModifyGroupDialog {
+                            id: removeGroupDialog
+
+                            property int groupNameIndex
+
+                            label: qsTr("Are you sure you want to remove the group")
+                            inputText: Activity.groupsNamesArray[groupNameIndex]
+
+                            textInputReadOnly: true
+
+                            onAccepted: {
+                               console.log("save.dfg..")
+                               console.log(textInputValue)
+                               Activity.groupsNamesArray[groupNameIndex][0] = textInputValue
+                               Activity.groupsNamesArray[groupNameIndex][1] = "2004"
+                               console.log(Activity.groupsNamesArray)
+                               pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+                               modifyGroupDialog.close()
+                            }
+                        }
+
+
+
+                    }
+
+
                 }
+
             }
         }
 
