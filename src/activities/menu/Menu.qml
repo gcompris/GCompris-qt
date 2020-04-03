@@ -486,12 +486,20 @@ ActivityBase {
                         sourceSize.width: iconWidth * 0.15
                     }
                     Image {
-                        source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                ActivityInfoTree.menuTree[index].maximalDifficulty + ".svg"
+                        id: iconSeparator
+                        source: "qrc:/gcompris/src/core/resource/separator.svg"
                         visible: ActivityInfoTree.menuTree[index].minimalDifficulty !== ActivityInfoTree.menuTree[index].maximalDifficulty
                         anchors.top: parent.top
-                        sourceSize.width: iconWidth * 0.15
-                        x: minimalDifficultyIcon.width
+                        anchors.left: minimalDifficultyIcon.right
+                        sourceSize.height: minimalDifficultyIcon.height
+                    }
+                    Image {
+                        source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                ActivityInfoTree.menuTree[index].maximalDifficulty + ".svg"
+                        visible: iconSeparator.visible
+                        anchors.top: parent.top
+                        anchors.left: iconSeparator.right
+                        sourceSize.width: minimalDifficultyIcon.width
                     }
                     Image {
                         anchors {
