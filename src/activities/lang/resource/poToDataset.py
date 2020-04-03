@@ -21,9 +21,6 @@
 import json
 import polib
 import sys
-import urllib
-
-from urllib.parse import unquote
 
 if len(sys.argv) != 3:
     print("Usage: po2Dataset.py po_file json_file")

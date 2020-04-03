@@ -24,8 +24,6 @@ import datetime
 import urllib
 import polib
 
-from urllib.parse import quote
-
 if(len(sys.argv) < 3):
     print("Usage: dataSetToPo.py dataset.json output.po [content-fr.json]")
     print("  The optional argument is used to backport manually created json")
