@@ -733,7 +733,7 @@ ActivityBase {
         //timer to workaround some weird Type errors when typing too fast in the search field
         Timer {
             id: searchTimer
-            interval: 100
+            interval: 500
             onTriggered: ActivityInfoTree.filterBySearch(searchTextField.text);
         }
 
