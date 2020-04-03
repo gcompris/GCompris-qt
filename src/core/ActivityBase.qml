@@ -262,13 +262,18 @@ Item {
         }
 
         datasetLoader.data = []
+        var data = [];
         // sorting levelFolders in numeric manner
         levelFolder.sort(function(a, b) { return (parseInt(a) - parseInt(b)) });
-        for(var level in levelFolder) {
-            datasetLoader.dataFiles.push({"file": resourceUrl+levelFolder[level]+"/Data.qml"})
+        for(var level in levelFolder /*todo maybe we don't need anymore levelFolder and we can use activityInfo.currentLevels*/) {
+            var id = levelFolder[level];
+            data = data.concat(activityInfo.getDataset(id).data)
         }
-        datasetLoader.start()
+        datasetLoader.data = data
+        //datasetLoader.start()
     }
+
+    // todo Maybe not needed anymore
     Loader {
         id: datasetLoader
         asynchronous: false

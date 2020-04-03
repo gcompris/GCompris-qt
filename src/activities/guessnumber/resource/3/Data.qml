@@ -21,9 +21,9 @@
 
 import QtQuick 2.6
 import GCompris 1.0
-import "../../../../core"
+import GCompris 1.0
 
-Dataset {
+Data {
     objective: qsTr("Guess a number between 1 and %1").arg(Number(1000).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0))
     difficulty: 3
     data: [

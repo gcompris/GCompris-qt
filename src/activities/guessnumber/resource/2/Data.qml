@@ -19,9 +19,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-import "../../../../core"
+import GCompris 1.0
 
-Dataset {
+Data {
     objective: qsTr("Guess a number between 1 and %1").arg(100)
     difficulty: 2
     data: [

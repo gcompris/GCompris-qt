@@ -18,9 +18,9 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import "../../../../core"
+import GCompris 1.0
 
-Dataset {
+Data {
     objective: qsTr("Group 4 types of fruits and enumerate each group (9 fruits max)")
     difficulty: 3
     data: [

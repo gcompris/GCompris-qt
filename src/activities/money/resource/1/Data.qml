@@ -18,10 +18,10 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import "../../../../core"
+import GCompris 1.0
 import "../../../money/moneyConstants.js" as MoneyConstants
 
-Dataset {
+Data {
     objective: qsTr("Learn how to pay up to 10 units")
     property var moneyItems: MoneyConstants.moneyItems
     difficulty: 1

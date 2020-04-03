@@ -25,6 +25,7 @@
 #include <QString>
 #include <QStringList>
 #include <QQmlListProperty>
+#include "Dataset.h"
 
 /**
  * @class ActivityInfo
@@ -64,6 +65,20 @@ class ActivityInfo : public QObject
      * A difficulty level from 1 (easiest) to 6 (most difficult).
      */
     Q_PROPERTY(quint32 difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
+
+    /**
+     * Minimal difficulty of the activity dataset.
+     *
+     * A difficulty level from 1 (easiest) to 6 (most difficult).
+     */
+    Q_PROPERTY(quint32 minimalDifficulty READ minimalDifficulty WRITE setMinimalDifficulty NOTIFY minimalDifficultyChanged)
+
+    /**
+     * Maximal difficulty of the activity dataset.
+     *
+     * A difficulty level from 1 (easiest) to 6 (most difficult).
+     */
+    Q_PROPERTY(quint32 maximalDifficulty READ maximalDifficulty WRITE setMaximalDifficulty NOTIFY maximalDifficultyChanged)
 
     /**
      * Relative path to the icon of the activity.
@@ -135,86 +150,107 @@ class ActivityInfo : public QObject
     Q_PROPERTY(QStringList currentLevels READ currentLevels WRITE setCurrentLevels NOTIFY currentLevelsChanged)
 
 public:
-	/// @cond INTERNAL_DOCS
-	explicit ActivityInfo(QObject *parent = 0);
+    /// @cond INTERNAL_DOCS
+    explicit ActivityInfo(QObject *parent = 0);
 
-	QString name() const;
-	void setName(const QString &);
-	QString section() const;
-	void setSection(const QString &);
-        quint32 difficulty() const;
-	void setDifficulty(const quint32 &);
-	QString icon() const;
-	void setIcon(const QString &);
-	QString author() const;
-	void setAuthor(const QString &);
-	bool demo() const;
-	void setDemo(const bool &);
-	QString title() const;
-	void setTitle(const QString &);
-	QString description() const;
-	void setDescription(const QString &);
-	QString goal() const;
-	void setGoal(const QString &);
-	QString prerequisite() const;
-	void setPrerequisite(const QString &);
-	QString manual() const;
-	void setManual(const QString &);
-	QString credit() const;
-	void setCredit(const QString &);
-        bool favorite() const;
-        void setFavorite(const bool);
-        bool enabled() const;
-        void setEnabled(const bool);
-        int createdInVersion() const;
-        void setCreatedInVersion(const int);
-        QStringList levels() const;
-        void setLevels(const QStringList&);
-        QStringList currentLevels() const;
-        void setCurrentLevels(const QStringList&);
+    QString name() const;
+    void setName(const QString &);
+    QString section() const;
+    void setSection(const QString &);
+    quint32 difficulty() const;
+    void setDifficulty(const quint32 &);
+    quint32 minimalDifficulty() const;
+    void setMinimalDifficulty(const quint32 &);
+    quint32 maximalDifficulty() const;
+    void setMaximalDifficulty(const quint32 &);
+    QString icon() const;
+    void setIcon(const QString &);
+    QString author() const;
+    void setAuthor(const QString &);
+    bool demo() const;
+    void setDemo(const bool &);
+    QString title() const;
+    void setTitle(const QString &);
+    QString description() const;
+    void setDescription(const QString &);
+    QString goal() const;
+    void setGoal(const QString &);
+    QString prerequisite() const;
+    void setPrerequisite(const QString &);
+    QString manual() const;
+    void setManual(const QString &);
+    QString credit() const;
+    void setCredit(const QString &);
+    bool favorite() const;
+    void setFavorite(const bool);
+    bool enabled() const;
+    void setEnabled(const bool);
+    int createdInVersion() const;
+    void setCreatedInVersion(const int);
+    QStringList levels() const;
+    void setLevels(const QStringList&);
+    QStringList currentLevels() const;
+    void setCurrentLevels(const QStringList&);
+    QQmlListProperty<Dataset> datasets();
+    void fillDatasets(QQmlEngine *engine);
+
+    Q_INVOKABLE Dataset *getDataset(const QString& name) const;
 
 signals:
-	void nameChanged();
-	void sectionChanged();
-	void difficultyChanged();
-	void iconChanged();
-	void authorChanged();
-	void demoChanged();
-	void titleChanged();
-	void descriptionChanged();
-	void goalChanged();
-	void prerequisiteChanged();
-	void manualChanged();
-	void creditChanged();
-        void favoriteChanged();
-        void enabledChanged();
-	void createdInVersionChanged();
-	void levelsChanged();
-	void currentLevelsChanged();
-	/// @endcond
-private:
-	QString m_name;
-	QString m_section;
-	quint32 m_difficulty;
-	QString m_icon;
-	QString m_author;
-	bool m_demo;
-	QString m_title;
-	QString m_description;
-	QString m_goal;
-	QString m_prerequisite;
-	QString m_manual;
-	QString m_credit;
-        bool m_favorite;
-        bool m_enabled;
-	int m_createdInVersion;
-	QStringList m_levels;
-        QStringList m_currentLevels;
+    void nameChanged();
+    void sectionChanged();
+    void difficultyChanged();
+    void minimalDifficultyChanged();
+    void maximalDifficultyChanged();
+    void iconChanged();
+    void authorChanged();
+    void demoChanged();
+    void titleChanged();
+    void descriptionChanged();
+    void goalChanged();
+    void prerequisiteChanged();
+    void manualChanged();
+    void creditChanged();
+    void favoriteChanged();
+    void enabledChanged();
+    void createdInVersionChanged();
+    void levelsChanged();
+    void currentLevelsChanged();
+    void datasetsChanged();
+    /// @endcond
 
-	/*
-         * Set current level once we have the name and the levels
-         */
-	void setCurrentLevels();
+private:
+    QString m_name;
+    QString m_section;
+    quint32 m_difficulty;
+    quint32 m_minimalDifficulty;
+    quint32 m_maximalDifficulty;
+    QString m_icon;
+    QString m_author;
+    bool m_demo;
+    QString m_title;
+    QString m_description;
+    QString m_goal;
+    QString m_prerequisite;
+    QString m_manual;
+    QString m_credit;
+    bool m_favorite;
+    bool m_enabled;
+    int m_createdInVersion;
+    QStringList m_levels;
+    QStringList m_currentLevels;
+
+    /* The key is the name of the dataset */
+    QMap<QString, Dataset *> m_datasets;
+    /*
+     * Set current level once we have the name and the levels
+     */
+    void setCurrentLevels();
+
+    /*
+     * Compute minimal and maximal difficulty depending on the current levels.
+     */
+    void computeMinMaxDifficulty();
 };
 
 #endif // ACTIVITYINFO_H

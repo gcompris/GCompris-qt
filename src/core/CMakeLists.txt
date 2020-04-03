@@ -28,6 +28,8 @@ set(gcompris_SRCS
   ApplicationSettings.h
   File.cpp
   File.h
+  Dataset.cpp
+  Dataset.h
   Directory.cpp
   Directory.h
   DownloadManager.cpp

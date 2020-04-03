@@ -260,7 +260,9 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
             QQmlComponent componentRoot(engine, QUrl(url));
             QObject *objectRoot = componentRoot.create();
             if(objectRoot != nullptr) {
-                menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
+                ActivityInfo* activityInfo = qobject_cast<ActivityInfo*>(objectRoot);
+                activityInfo->fillDatasets(engine);
+                menuTree->menuTreeAppend(activityInfo);
             } else {
                 qDebug() << "ERROR: failed to load " << line << " " << componentRoot.errors();
             }

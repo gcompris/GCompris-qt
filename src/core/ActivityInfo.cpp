@@ -30,6 +30,8 @@
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
     m_difficulty(0),
+    m_minimalDifficulty(0),
+    m_maximalDifficulty(0),
     m_demo(true),
     m_favorite(false),
     m_enabled(true),
@@ -72,6 +74,26 @@ void ActivityInfo::setDifficulty(const quint32 &difficulty)
 {
     m_difficulty = difficulty;
     emit difficultyChanged();
+}
+
+quint32 ActivityInfo::minimalDifficulty() const
+{
+    return m_minimalDifficulty;
+}
+void ActivityInfo::setMinimalDifficulty(const quint32 &minimalDifficulty)
+{
+    m_minimalDifficulty = minimalDifficulty;
+    emit minimalDifficultyChanged();
+}
+
+quint32 ActivityInfo::maximalDifficulty() const
+{
+    return m_maximalDifficulty;
+}
+void ActivityInfo::setMaximalDifficulty(const quint32 &maximalDifficulty)
+{
+    m_maximalDifficulty = maximalDifficulty;
+    emit maximalDifficultyChanged();
 }
 
 QString ActivityInfo::icon() const
@@ -210,23 +232,72 @@ void ActivityInfo::setLevels(const QStringList &levels)
     emit levelsChanged();
 }
 
+void ActivityInfo::fillDatasets(QQmlEngine *engine)
+{
+    for(const QString &level: m_levels) {
+        QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0]).arg(level);
+        QQmlComponent componentRoot(engine, QUrl(url));
+        QObject *objectRoot = componentRoot.create();
+        if(objectRoot != nullptr) {
+            Dataset *dataset = qobject_cast<Dataset*>(objectRoot);
+            m_datasets[level] = dataset;
+        } else {
+            qDebug() << "ERROR: failed to load " << m_name << " " << componentRoot.errors();
+        }
+    }
+    if(m_levels.empty()) {
+        m_minimalDifficulty = m_difficulty;
+        m_maximalDifficulty = m_difficulty;
+    }
+    else {
+        computeMinMaxDifficulty();
+    }
+}
+
 QStringList ActivityInfo::currentLevels() const
 {
     return m_currentLevels;
 }
 
+void ActivityInfo::computeMinMaxDifficulty()
+{
+    if(m_currentLevels.empty() || m_datasets.empty()) {
+        return;
+    }
+    int minimalDifficultyFound = 100;
+    int maximalDifficultyFound = 0;
+    for(const QString &datasetName: m_currentLevels) {
+        Dataset *data = m_datasets[datasetName];
+        if(minimalDifficultyFound > data->difficulty()) {
+            minimalDifficultyFound = data->difficulty();
+        }
+        if(maximalDifficultyFound < data->difficulty()) {
+            maximalDifficultyFound = data->difficulty();
+        }
+    }
+    m_minimalDifficulty = minimalDifficultyFound;
+    m_maximalDifficulty = maximalDifficultyFound;
+}
+
 void ActivityInfo::setCurrentLevels(const QStringList &currentLevels)
 {
     m_currentLevels = currentLevels;
+    computeMinMaxDifficulty();
     emit currentLevelsChanged();
 }
 
 void ActivityInfo::setCurrentLevels()
 {
     if(!m_name.isEmpty()) {
+        // by default, activate all existing levels
         if(!m_levels.empty() && ApplicationSettings::getInstance()->currentLevels(m_name).empty()) {
             ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_levels);
         }
         m_currentLevels = ApplicationSettings::getInstance()->currentLevels(m_name);
     }
+    computeMinMaxDifficulty();
+}
+
+Dataset *ActivityInfo::getDataset(const QString& name) const {
+    return m_datasets[name];
 }

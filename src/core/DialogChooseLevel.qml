@@ -120,15 +120,11 @@ Rectangle {
         // dataset information
         chosenLevels = currentActivity.currentLevels.slice()
         difficultiesModel = []
-        if(currentActivity.levels.length == 0) {
-            print("no levels to load for", activityName)
+        for(var level in currentActivity.levels) {
+            var data = currentActivity.getDataset(currentActivity.levels[level])
+            difficultiesModel.push({"level": currentActivity.levels[level], "objective": data.objective, "difficulty": data.difficulty, "selectedInConfig": (chosenLevels.indexOf(currentActivity.levels[level]) != -1)})
         }
-        else {
-            for(var level in currentActivity.levels) {
-                objectiveLoader.dataFiles.push({"level": currentActivity.levels[level], "file": "qrc:/gcompris/src/activities/"+activityName+"/resource/"+currentActivity.levels[level]+"/Data.qml"})
-            }
-            objectiveLoader.start()
-        }
+        difficultiesRepeater.model = difficultiesModel
 
         // Defaults to config if in an activity else to dataset if in menu
         if(displayDatasetAtStart) {
@@ -136,33 +132,6 @@ Rectangle {
         }
         else {
             optionsVisibleButton.clicked()
-        }
-    }
-
-    Loader {
-        id: objectiveLoader
-        property var dataFiles: []
-        property var currentFile
-        signal start
-        signal stop
-
-        onStart: {
-            var file = dataFiles.shift()
-            currentFile = file
-            source = file.file.toString()
-        }
-
-        onLoaded: {
-            difficultiesModel.push({"level": currentFile.level, "objective": item.objective, "difficulty": item.difficulty, "selectedInConfig": (chosenLevels.indexOf(currentFile.level) != -1)})
-            if(dataFiles.length != 0) {
-                start()
-            }
-            else {
-                stop()
-            }
-        }
-        onStop: {
-            difficultiesRepeater.model = difficultiesModel
         }
     }
 
