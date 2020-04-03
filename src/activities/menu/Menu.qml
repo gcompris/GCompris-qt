@@ -468,7 +468,7 @@ ActivityBase {
                     opacity: 0.5
                 }
                 Image {
-                    source: "qrc:/gcompris/src/activities/" + icon;
+                    source: "qrc:/gcompris/src/activities/" + icon
                     anchors.top: activityBackground.top
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: iconWidth - activitiesGrid.spacing
@@ -477,12 +477,21 @@ ActivityBase {
                     fillMode: Image.PreserveAspectFit
                     anchors.margins: 5
                     opacity: delegateItem.enabled ? 1 : 0.5
+
                     Image {
+                        id: minimalDifficultyIcon
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                ActivityInfoTree.menuTree[index].difficulty + ".svg";
+                                ActivityInfoTree.menuTree[index].minimalDifficulty + ".svg"
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
-                        x: 5
+                    }
+                    Image {
+                        source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                ActivityInfoTree.menuTree[index].maximalDifficulty + ".svg"
+                        visible: ActivityInfoTree.menuTree[index].minimalDifficulty !== ActivityInfoTree.menuTree[index].maximalDifficulty
+                        anchors.top: parent.top
+                        sourceSize.width: iconWidth * 0.15
+                        x: minimalDifficultyIcon.width
                     }
                     Image {
                         anchors {

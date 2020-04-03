@@ -1,4 +1,4 @@
-/* GCompris - Data.qml
+/* GCompris - moneyConstants.js
  *
  * Copyright (C) 2019 Akshay Kumar <email.akshay98@gmail.com>
  *

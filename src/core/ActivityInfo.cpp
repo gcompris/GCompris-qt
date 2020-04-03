@@ -264,8 +264,8 @@ void ActivityInfo::computeMinMaxDifficulty()
     if(m_currentLevels.empty() || m_datasets.empty()) {
         return;
     }
-    int minimalDifficultyFound = 100;
-    int maximalDifficultyFound = 0;
+    quint32 minimalDifficultyFound = 100;
+    quint32 maximalDifficultyFound = 0;
     for(const QString &datasetName: m_currentLevels) {
         Dataset *data = m_datasets[datasetName];
         if(minimalDifficultyFound > data->difficulty()) {
@@ -275,8 +275,8 @@ void ActivityInfo::computeMinMaxDifficulty()
             maximalDifficultyFound = data->difficulty();
         }
     }
-    m_minimalDifficulty = minimalDifficultyFound;
-    m_maximalDifficulty = maximalDifficultyFound;
+    setMinimalDifficulty(minimalDifficultyFound);
+    setMaximalDifficulty(maximalDifficultyFound);
 }
 
 void ActivityInfo::setCurrentLevels(const QStringList &currentLevels)
