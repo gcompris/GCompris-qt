@@ -21,40 +21,12 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Full half and quarters of an hour.")
+    objective: qsTr("Quarters of an hour.")
     difficulty: 5
     data: [
         {
             "numberOfSubLevels": 5,
-            "fixedMinutes": 0,
-            "displayMinutesHand": true,
-            "fixedSeconds": 0,
-            "displaySecondsHand": false
-        },
-        {
-            "numberOfSubLevels": 5,
-            "fixedMinutes": 0,
-            "displayMinutesHand": true,
-            "fixedSeconds": 0,
-            "displaySecondsHand": false
-        },
-        {
-            "numberOfSubLevels": 5,
             "fixedMinutes": 15,
-            "displayMinutesHand": true,
-            "fixedSeconds": 0,
-            "displaySecondsHand": false
-        },
-        {
-            "numberOfSubLevels": 5,
-            "fixedMinutes": 15,
-            "displayMinutesHand": true,
-            "fixedSeconds": 0,
-            "displaySecondsHand": false
-        },
-        {
-            "numberOfSubLevels": 5,
-            "fixedMinutes": 30,
             "displayMinutesHand": true,
             "fixedSeconds": 0,
             "displaySecondsHand": false

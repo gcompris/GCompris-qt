@@ -21,13 +21,38 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Time containing minutes and seconds.")
+    objective: qsTr("No hints.")
     difficulty: 6
     data: [
         {
             "numberOfSubLevels": 5,
             "displayMinutesHand": true,
-            "displaySecondsHand": true
+            "displaySecondsHand": true,
+            "hoursVisible": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "displayMinutesHand": true,
+            "displaySecondsHand": true,
+            "hoursVisible": false,
+            "hoursMarksVisible": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "displayMinutesHand": true,
+            "displaySecondsHand": true,
+            "hoursVisible": false,
+            "hoursMarksVisible": false,
+            "zonesVisible": false
+        },
+        {
+            "numberOfSubLevels": 5,
+            "displayMinutesHand": true,
+            "displaySecondsHand": true,
+            "hoursVisible": false,
+            "hoursMarksVisible": false,
+            "zonesVisible": false,
+            "minutesVisible": false
         }
     ]
 }

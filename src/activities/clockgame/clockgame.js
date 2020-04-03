@@ -74,6 +74,27 @@ function initLevel() {
     else {
         items.zonesVisible = true
     }
+
+    if(items.levels[currentLevel].hoursMarksVisible !== undefined) {
+        items.hoursMarksVisible = items.levels[currentLevel].hoursMarksVisible
+    }
+    else {
+        items.hoursMarksVisible = true
+    }
+
+    if(items.levels[currentLevel].hoursVisible !== undefined) {
+        items.hoursVisible = items.levels[currentLevel].hoursVisible
+    }
+    else {
+        items.hoursVisible = true
+    }
+
+    if(items.levels[currentLevel].minutesVisible !== undefined) {
+        items.minutesVisible = items.levels[currentLevel].minutesVisible
+    }
+    else {
+        items.minutesVisible = true
+    }
 }
 
 function nextTry() {

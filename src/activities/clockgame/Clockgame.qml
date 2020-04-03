@@ -67,6 +67,9 @@ ActivityBase {
             property bool minutesHandVisible
             property bool secondsHandVisible
             property bool zonesVisible
+            property bool hoursMarksVisible
+            property bool hoursVisible
+            property bool minutesVisible
         }
 
         onStart: {
@@ -148,7 +151,7 @@ ActivityBase {
 
             property int radius: Math.min(background.width * 1.4, background.height)
 
-            /* The yellow zones */
+            /* The light grey zones */
             Image {
                 id: zones
                 source: activity.resourceUrl + "clock_zones.svg"
@@ -195,7 +198,7 @@ ActivityBase {
                     }
                     z: 4
                     color: "#d56a3a"
-                    visible: items.minutesHandVisible
+                    visible: items.minutesHandVisible && items.minutesVisible
                 }
             }
             /* The seconds */
@@ -242,7 +245,7 @@ ActivityBase {
                     }
                     z: 4
                     color: "#3a81d5"
-                    visible: items.bar.level < 7
+                    visible: items.hoursVisible
                 }
             }
 
@@ -264,8 +267,7 @@ ActivityBase {
                                                     (index + 1) * 2 * Math.PI / 12)
                     }
                     z: 4
-                    visible: items.bar.level < 9 || (items.bar.level === 9
-                                                     && ((index + 1) % 3) === 0)
+                    visible: items.hoursMarksVisible || !items.hoursMarksVisible && (index + 1) % 3 === 0
                 }
             }
 

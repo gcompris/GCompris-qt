@@ -30,13 +30,6 @@ Data {
             "displayMinutesHand": false,
             "fixedSeconds": 0,
             "displaySecondsHand": false
-        },
-        {
-            "numberOfSubLevels": 5,
-            "fixedMinutes": 0,
-            "displayMinutesHand": false,
-            "fixedSeconds": 0,
-            "displaySecondsHand": false
         }
     ]
 }
