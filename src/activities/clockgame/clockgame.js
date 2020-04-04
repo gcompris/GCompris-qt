@@ -23,11 +23,17 @@ var currentLevel = 0
 var numberOfLevel = 10
 var items
 var selectedArrow
+var pastQuestionsH = []
+var pastQuestionsM = []
+var pastQuestionsS = []
 
 function start(items_) {
     items = items_
     currentLevel = 0
     numberOfLevel = items.levels.length
+    pastQuestionsH = []
+    pastQuestionsM = []
+    pastQuestionsS = []
     initLevel()
 }
 
@@ -38,11 +44,8 @@ function initLevel() {
 
     items.numberOfTry = items.levels[currentLevel].numberOfSubLevels
 
-    items.currentH = Math.floor(Math.random() * 12)
-    items.targetH = Math.floor(Math.random() * 12)
-    while(items.currentH === items.targetH) {
-        items.currentH = Math.floor(Math.random() * 12)
-    }
+    differentTargetH()
+    differentCurrentH()
 
     items.minutesHandVisible = items.levels[currentLevel].displayMinutesHand
     if(!items.minutesHandVisible) {
@@ -50,13 +53,11 @@ function initLevel() {
         items.targetM = 0
     }
     else if(items.levels[currentLevel].fixedMinutes !== undefined) {
-        items.currentM = Math.floor(Math.random() * 60)
         items.targetM = items.levels[currentLevel].fixedMinutes
         differentCurrentM()
     }
     else {
-        items.currentM = Math.floor(Math.random() * 60)
-        items.targetM = Math.floor(Math.random() * 60)
+        differentTargetM()
         differentCurrentM()
     }
 
@@ -66,13 +67,11 @@ function initLevel() {
         items.targetS = 0
     }
     else if(items.levels[currentLevel].fixedSeconds !== undefined) {
-        items.currentS = Math.floor(Math.random() * 60)
         items.targetS = items.levels[currentLevel].fixedSeconds
         differentCurrentS()
     }
     else {
-        items.currentS = Math.floor(Math.random() * 60)
-        items.targetS = Math.floor(Math.random() * 60)
+        differentTargetS()
         differentCurrentS()
     }
 
@@ -105,13 +104,46 @@ function initLevel() {
     }
 }
 
+function differentTargetH() {
+    items.targetH = Math.floor(Math.random() * 12)
+    while(pastQuestionsH.includes(items.targetH)) {
+        items.targetH = Math.floor(Math.random() * 12)
+    }
+    pastQuestionsH.push(items.targetH)
+}
+
+function differentTargetM() {
+    items.targetM = Math.floor(Math.random() * 60)
+    while(pastQuestionsM.includes(items.targetM)) {
+        items.targetM = Math.floor(Math.random() * 60)
+    }
+    pastQuestionsM.push(items.targetM)
+}
+
+function differentTargetS() {
+    items.targetS = Math.floor(Math.random() * 60)
+    while(pastQuestionsS.includes(items.targetS)) {
+        items.targetS = Math.floor(Math.random() * 60)
+    }
+    pastQuestionsS.push(items.targetS)
+}
+
+function differentCurrentH() {
+    items.currentH = Math.floor(Math.random() * 12)
+    while(items.currentH === items.targetH) {
+        items.currentH = Math.floor(Math.random() * 12)
+    }
+}
+
 function differentCurrentM() {
+    items.currentM = Math.floor(Math.random() * 60)
     while(items.currentM === items.targetM) {
         items.currentM = Math.floor(Math.random() * 60)
     }
 }
 
 function differentCurrentS() {
+    items.currentS = Math.floor(Math.random() * 60)
     while(items.currentS === items.targetS) {
         items.currentS = Math.floor(Math.random() * 60)
     }
@@ -142,6 +174,9 @@ function nextLevel() {
         currentLevel = 0
     }
     items.currentTry = 0
+    pastQuestionsH = []
+    pastQuestionsM = []
+    pastQuestionsS = []
     initLevel()
 }
 
@@ -150,6 +185,9 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     items.currentTry = 0
+    pastQuestionsH = []
+    pastQuestionsM = []
+    pastQuestionsS = []
     initLevel()
 }
 
