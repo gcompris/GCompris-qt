@@ -21,8 +21,9 @@ import sys
 import json
 import os
 import datetime
-import urllib
 import polib
+import urllib
+from urllib.parse import quote
 
 if(len(sys.argv) < 3):
     print("Usage: dataSetToPo.py dataset.json output.po [content-fr.json]")
