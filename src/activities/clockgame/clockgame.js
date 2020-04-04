@@ -31,6 +31,7 @@ function start(items_) {
     items = items_
     currentLevel = 0
     numberOfLevel = items.levels.length
+    items.currentTry = 0
     pastQuestionsH = []
     pastQuestionsM = []
     pastQuestionsS = []
