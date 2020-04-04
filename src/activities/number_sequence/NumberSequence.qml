@@ -46,7 +46,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -65,7 +65,7 @@ ActivityBase {
             property alias imageBack: imageBack
             property alias imageBack2: imageBack2
             property int pointIndexToClick
-            property int mode: 1
+            property int mode: 1 // default is automatic
         }
 
         onStart: { Activity.start(items,mode,dataset,url) }
@@ -246,82 +246,40 @@ ActivityBase {
             onClose: home()
         }
         
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias modeBox: modeBox
-
-                    property var availableModes: [
-                        { "text": qsTr("Automatic"), "value": 1 },
-                        { "text": qsTr("Manual"), "value": 2 }
-                    ]
-
-                    Flow {
-                        id: flow
-                        spacing: 5
-                        width: dialogActivityConfig.width
-                        GCComboBox {
-                            id: modeBox
-                            model: availableModes
-                            background: dialogActivityConfig
-                            label: qsTr("Go to next level")
-                        }
-                    }
-                }
-            }
+            currentActivity: activity.activityInfo
 
             onClose: home()
 
             onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    items.mode = dataToSave["mode"];
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
                 }
             }
-            onSaveData: {
-                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                if (newMode !== items.mode) {
-                    items.mode = newMode;
-                    dataToSave = {"mode": items.mode};
-                }
-                if (items.mode == 1) {
-                    bonus.win.connect(Activity.nextLevel)
-                } else {
-                    bonus.win.disconnect(Activity.nextLevel)
-                }
-                Activity.initLevel();
-            }
-            function setDefaultValues() {
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
-                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                        break;
-                    }
-                }
+            onStartActivity: {
+                background.stop()
+                background.start()
             }
         }
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                // Set default values
-                dialogActivityConfig.setDefaultValues();
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: items.mode == 1 ? win.connect(Activity.nextLevel) : win.disconnect(Activity.nextLevel)
+            onWin: if(items.mode == 1) Activity.nextLevel();
         }
     }
 }

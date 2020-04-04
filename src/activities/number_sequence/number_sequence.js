@@ -50,6 +50,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.pointIndexToClick = 0
+    reset()
     loadCoordinates()
     loadBackgroundImage()
     if(mode == "drawletters" || mode == "drawnumbers") {
@@ -80,6 +81,13 @@ function playLetterSound(sound) {
     items.audioVoices.append(sound)
 }
 
+function reset() {
+    for(var i = 0; i < items.pointImageRepeater.count; i++)
+        items.pointImageRepeater.itemAt(i).highlight = false;
+
+    for(var i = 0; i < items.segmentsRepeater.count; i++)
+        items.segmentsRepeater.itemAt(i).opacity = 0
+}
 
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick) {
