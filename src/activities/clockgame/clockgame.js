@@ -37,8 +37,12 @@ function initLevel() {
     items.bar.level = currentLevel + 1
 
     items.numberOfTry = items.levels[currentLevel].numberOfSubLevels
+
     items.currentH = Math.floor(Math.random() * 12)
     items.targetH = Math.floor(Math.random() * 12)
+    while(items.currentH === items.targetH) {
+        items.currentH = Math.floor(Math.random() * 12)
+    }
 
     items.minutesHandVisible = items.levels[currentLevel].displayMinutesHand
     if(!items.minutesHandVisible) {
@@ -48,10 +52,12 @@ function initLevel() {
     else if(items.levels[currentLevel].fixedMinutes !== undefined) {
         items.currentM = Math.floor(Math.random() * 60)
         items.targetM = items.levels[currentLevel].fixedMinutes
+        differentCurrentM()
     }
     else {
         items.currentM = Math.floor(Math.random() * 60)
         items.targetM = Math.floor(Math.random() * 60)
+        differentCurrentM()
     }
 
     items.secondsHandVisible = items.levels[currentLevel].displaySecondsHand
@@ -62,10 +68,12 @@ function initLevel() {
     else if(items.levels[currentLevel].fixedSeconds !== undefined) {
         items.currentS = Math.floor(Math.random() * 60)
         items.targetS = items.levels[currentLevel].fixedSeconds
+        differentCurrentS()
     }
     else {
         items.currentS = Math.floor(Math.random() * 60)
         items.targetS = Math.floor(Math.random() * 60)
+        differentCurrentS()
     }
 
     if(items.levels[currentLevel].zonesVisible !== undefined) {
@@ -94,6 +102,18 @@ function initLevel() {
     }
     else {
         items.minutesVisible = true
+    }
+}
+
+function differentCurrentM() {
+    while(items.currentM === items.targetM) {
+        items.currentM = Math.floor(Math.random() * 60)
+    }
+}
+
+function differentCurrentS() {
+    while(items.currentS === items.targetS) {
+        items.currentS = Math.floor(Math.random() * 60)
     }
 }
 
