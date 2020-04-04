@@ -84,10 +84,9 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 bottomMargin: 10 * ApplicationInfo.ratio
-                right: bar.right
-                rightMargin: 10 * ApplicationInfo.ratio
                 left: parent.left
                 leftMargin: 10 * ApplicationInfo.ratio
+                right: undefined
                 top: undefined
             }
             numberOfSubLevels: items.numberOfTry
@@ -147,17 +146,17 @@ ActivityBase {
             source: activity.resourceUrl + "clock_bg.svg"
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
-            sourceSize.height: parent.height
+            sourceSize.width: radius * 0.9
 
-            property int radius: Math.min(background.width * 1.4, background.height)
+            property int radius: Math.min(background.width, background.height - bar.height)
 
-            /* The light grey zones */
+            /* The grey zones */
             Image {
                 id: zones
                 source: activity.resourceUrl + "clock_zones.svg"
                 anchors.centerIn: parent
                 fillMode: Image.PreserveAspectFit
-                sourceSize.height: parent.height * 0.7
+                sourceSize.width: parent.width * 0.8
                 visible: items.zonesVisible
                 z: 2
             }
@@ -462,9 +461,9 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 60 * ApplicationInfo.ratio
             anchors.bottom: bar.top
-            anchors.bottomMargin: parent.width * 0.03
-            anchors.left: score.right
-            anchors.leftMargin: parent.width * 0.7
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
             ParticleSystemStarLoader {
                 id: okButtonParticles
                 clip: false
