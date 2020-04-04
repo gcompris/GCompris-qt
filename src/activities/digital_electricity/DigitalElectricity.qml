@@ -33,9 +33,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property string mode: "tutorial"
-    property bool isTutorialMode: mode == "tutorial" ? true : false
-
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -47,7 +44,7 @@ ActivityBase {
         property bool hori: background.width >= background.height
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -113,8 +110,9 @@ ActivityBase {
             property alias displayTruthTable: inputOutputTxt.displayTruthTable
             property alias dataset: dataset
             property alias tutorialDataset: tutorialDataset
+            property string mode: "tutorial"
+            property bool isTutorialMode: mode == "tutorial" ? true : false
             property alias infoImage: infoImage
-            property bool isTutorialMode: activity.isTutorialMode
             property alias tutorialInstruction: tutorialInstruction
             property real toolsMargin: 90 * ApplicationInfo.ratio
             property real zoomLvl: 0.25
@@ -432,55 +430,15 @@ ActivityBase {
             }
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias modesComboBox: modesComboBox
-
-                    property var availableModes: [
-                        { "text": qsTr("Tutorial Mode"), "value": "tutorial" },
-                        { "text": qsTr("Free Mode"), "value": "free" },
-                    ]
-
-                    Flow {
-                        id: flow
-                        spacing: 5
-                        width: dialogActivityConfig.width
-                        GCComboBox {
-                            id: modesComboBox
-                            model: availableModes
-                            background: dialogActivityConfig
-                            label: qsTr("Select your Mode")
-                        }
-                    }
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home();
             }
-
-            onClose: home();
-
             onLoadData: {
-                if(dataToSave && dataToSave["modes"]) {
-                    activity.mode = dataToSave["modes"];
-                }
-            }
-
-            onSaveData: {
-                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modesComboBox.currentIndex].value;
-                if (newMode !== activity.mode) {
-                    activity.mode = newMode;
-                    dataToSave = {"modes": activity.mode};
-                    Activity.reset()
-                }
-            }
-
-            function setDefaultValues() {
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length; i ++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === activity.mode) {
-                        dialogActivityConfig.configItem.modesComboBox.currentIndex = i;
-                        break;
-                    }
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
                 }
             }
         }
@@ -492,7 +450,7 @@ ActivityBase {
 
         BarButton {
             id: okButton
-            visible: activity.isTutorialMode
+            visible: items.isTutorialMode
             anchors {
                 bottom: bar.top
                 right: parent.right
@@ -507,15 +465,13 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | ( activity.isTutorialMode ? level : 0) | reload | config}
+            content: BarEnumContent { value: help | home | (items.isTutorialMode ? level : 0) | reload | activityConfig}
             onHelpClicked: {displayDialog(dialogHelp)}
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.reset()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
