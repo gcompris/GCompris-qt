@@ -524,7 +524,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        filterRepeater.setMin(filterRepeater.min + 1)
+                        filterRepeater.setMin(filterRepeater.minFilter + 1)
                     }
                 }
             }
@@ -534,41 +534,49 @@ Item {
                 id: filterRepeater
                 model: 6
 
-                property int min: ApplicationSettings.filterLevelMin
-                property int max: ApplicationSettings.filterLevelMax
+                property int minFilter: ApplicationSettings.filterLevelMin
+                property int maxFilter: ApplicationSettings.filterLevelMax
 
                 function setMin(value) {
                     var newMin
-                    if(min < 1)
-                    newMin = 1
-                    else if(min > 6)
-                    newMin = 6
-                    else if(max >= value)
-                    newMin = value
+                    if(minFilter < 1) {
+                        newMin = 1
+                    }
+                    else if(minFilter > 6) {
+                        newMin = 6
+                    }
+                    else if(maxFilter >= value) {
+                        newMin = value
+                    }
 
-                    if(newMin)
-                    ApplicationSettings.filterLevelMin = newMin
+                    if(newMin) {
+                        minFilter = newMin
+                    }
                 }
 
                 function setMax(value) {
                     var newMax
-                    if(max < 1)
-                    newMax = 1
-                    else if(max > 6)
-                    newMax = 6
-                    else if(min <= value)
-                    newMax = value
+                    if(maxFilter < 1) {
+                        newMax = 1
+                    }
+                    else if(maxFilter > 6) {
+                        newMax = 6
+                    }
+                    else if(minFilter <= value) {
+                        newMax = value
+                    }
 
-                    if(newMax)
-                    ApplicationSettings.filterLevelMax = newMax
+                    if(newMax) {
+                        maxFilter = newMax
+                    }
                 }
 
                 Image {
                     source: "qrc:/gcompris/src/core/resource/difficulty" +
                     (modelData + 1) + ".svg";
                     sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
-                    opacity: modelData + 1 >= filterRepeater.min &&
-                    modelData + 1 <= filterRepeater.max
+                    opacity: modelData + 1 >= filterRepeater.minFilter &&
+                    modelData + 1 <= filterRepeater.maxFilter
                     ? 1 : 0.4
 
                     property int value: modelData + 1
@@ -576,16 +584,20 @@ Item {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            if(parent.value < filterRepeater.max) {
-                                if(parent.opacity == 1)
-                                filterRepeater.setMin(parent.value + 1)
-                                else
-                                filterRepeater.setMin(parent.value)
-                            } else if(parent.value > filterRepeater.min) {
-                                if(parent.opacity == 1)
-                                filterRepeater.setMax(parent.value - 1)
-                                else
-                                filterRepeater.setMax(parent.value)
+                            if(parent.value < filterRepeater.maxFilter) {
+                                if(parent.opacity == 1) {
+                                    filterRepeater.setMin(parent.value + 1)
+                                }
+                                else {
+                                    filterRepeater.setMin(parent.value)
+                                }
+                            } else if(parent.value > filterRepeater.minFilter) {
+                                if(parent.opacity == 1) {
+                                    filterRepeater.setMax(parent.value - 1)
+                                }
+                                else {
+                                    filterRepeater.setMax(parent.value)
+                                }
                             }
                         }
                     }
@@ -651,6 +663,9 @@ Item {
         isAutomaticDownloadsEnabled = ApplicationSettings.isAutomaticDownloadsEnabled
         enableAutomaticDownloadsBox.checked = isAutomaticDownloadsEnabled
 
+        filterRepeater.minFilter = ApplicationSettings.filterLevelMin
+        filterRepeater.maxFilter = ApplicationSettings.filterLevelMax
+
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
 
@@ -705,6 +720,12 @@ Item {
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
+
+        if(ApplicationSettings.filterLevelMin != filterRepeater.minFilter ||
+           ApplicationSettings.filterLevelMax != filterRepeater.maxFilter) {
+               ApplicationSettings.filterLevelMin = filterRepeater.minFilter
+               ApplicationSettings.filterLevelMax = filterRepeater.maxFilter
+        }
 
         ApplicationSettings.saveBaseFontSize();
         ApplicationSettings.notifyFontLetterSpacingChanged();
