@@ -474,8 +474,9 @@ void ApplicationSettings::saveActivityConfiguration(const QString &activity, con
     QMapIterator<QString, QVariant> i(data);
     while (i.hasNext()) {
         i.next();
-        updateValueInConfig(activity, i.key(), i.value());
+        updateValueInConfig(activity, i.key(), i.value(), false);
     }
+    m_config.sync();
 }
 
 QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activity)
@@ -518,12 +519,14 @@ QStringList ApplicationSettings::currentLevels(const QString &activity)
 }
 
 template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,
-                                              const QString& key, const T& value)
+                                              const QString& key, const T& value, bool sync)
 {
     m_config.beginGroup(group);
     m_config.setValue(key, value);
     m_config.endGroup();
-    m_config.sync();
+    if(sync) {
+        m_config.sync();
+    }
 }
 
 int ApplicationSettings::loadActivityProgress(const QString &activity)

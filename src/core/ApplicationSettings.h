@@ -662,7 +662,7 @@ protected:
 private:
     // Update in configuration the couple {key, value} in the group.
     template<class T> void updateValueInConfig(const QString& group,
-                                         const QString& key, const T& value);
+                                         const QString& key, const T& value, bool sync = true);
 
     bool m_showLockedActivities;
     bool m_isAudioVoicesEnabled;
