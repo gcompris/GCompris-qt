@@ -246,8 +246,8 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
         }
     }
     if(m_levels.empty()) {
-        m_minimalDifficulty = m_difficulty;
-        m_maximalDifficulty = m_difficulty;
+        setMinimalDifficulty(m_difficulty);
+        setMaximalDifficulty(m_difficulty);
     }
     else {
         computeMinMaxDifficulty();
@@ -298,6 +298,19 @@ void ActivityInfo::setCurrentLevels()
     computeMinMaxDifficulty();
 }
 
+void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax) {
+    QStringList newLevels;
+    for(auto it = m_datasets.begin(); it != m_datasets.end(); ++ it) {
+        Dataset *dataset = it.value();
+        if(levelMin <= dataset->difficulty() && dataset->difficulty() <= levelMax) {
+            newLevels << it.key();
+        }
+    }
+    setCurrentLevels(newLevels);
+    ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_levels, false);
+}
+
 Dataset *ActivityInfo::getDataset(const QString& name) const {
     return m_datasets[name];
 }
+

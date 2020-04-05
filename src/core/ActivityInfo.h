@@ -193,6 +193,7 @@ public:
     void setCurrentLevels(const QStringList&);
     QQmlListProperty<Dataset> datasets();
     void fillDatasets(QQmlEngine *engine);
+    void enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax);
 
     Q_INVOKABLE Dataset *getDataset(const QString& name) const;
 

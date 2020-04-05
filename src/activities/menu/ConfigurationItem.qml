@@ -725,6 +725,7 @@ Item {
            ApplicationSettings.filterLevelMax != filterRepeater.maxFilter) {
                ApplicationSettings.filterLevelMin = filterRepeater.minFilter
                ApplicationSettings.filterLevelMax = filterRepeater.maxFilter
+               ActivityInfoTree.minMaxFiltersChanged(filterRepeater.minFilter, filterRepeater.maxFilter)
         }
 
         ApplicationSettings.saveBaseFontSize();

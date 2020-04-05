@@ -132,8 +132,8 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
             (category.isEmpty() && activity->section().indexOf(tag) != -1) ||
             tag == "all" ||
             (tag == "favorite" && activity->favorite())) &&
-            (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
-             activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
+            (activity->maximalDifficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
+             activity->minimalDifficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
             m_menuTree.push_back(activity);
         }
     }
@@ -144,9 +144,10 @@ void ActivityInfoTree::filterByTag(const QString &tag, const QString &category, 
 
 void ActivityInfoTree::filterByDifficulty(quint32 levelMin, quint32 levelMax)
 {
+    //todo fix here the difficulty filtering
     auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
                              [&](const ActivityInfo* activity) {
-                                 return activity->difficulty() < levelMin || activity->difficulty() > levelMax;
+                                 return activity->minimalDifficulty() < levelMin || activity->maximalDifficulty() > levelMax;
                              });
     m_menuTree.erase(it, m_menuTree.end());
 }
@@ -321,6 +322,13 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(), ApplicationSettings::getInstance()->filterLevelMax());
     sortByDifficulty(false);
     Q_EMIT menuTreeChanged();
+}
+
+void ActivityInfoTree::minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emit) {
+    for(ActivityInfo *activity: m_menuTreeFull) {
+        activity->enableDatasetsBetweenDifficulties(levelMin, levelMax);
+    }
+    ApplicationSettings::getInstance()->sync();
 }
 
 QVariantList ActivityInfoTree::allCharacters() {

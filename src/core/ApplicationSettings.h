@@ -581,7 +581,7 @@ protected slots:
 public slots:
     Q_INVOKABLE bool isFavorite(const QString &activity);
     Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
-    Q_INVOKABLE void setCurrentLevels(const QString &activity, const QStringList &level);
+    Q_INVOKABLE void setCurrentLevels(const QString &activity, const QStringList &level, bool sync = true);
     Q_INVOKABLE QStringList currentLevels(const QString &activity);
 
     Q_INVOKABLE void saveBaseFontSize();
@@ -618,6 +618,10 @@ public slots:
      * @param progress Last started level to save as progress value.
      */
     Q_INVOKABLE void saveActivityProgress(const QString &activity, int progress);
+    /**
+     * Synchronize the changes done in the application in the configuration file.
+     */
+    Q_INVOKABLE void sync();
 
 signals:
     void showLockedActivitiesChanged();

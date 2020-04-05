@@ -505,9 +505,9 @@ bool ApplicationSettings::isFavorite(const QString &activity)
     return favorite;
 }
 
-void ApplicationSettings::setCurrentLevels(const QString &activity, const QStringList &level)
+void ApplicationSettings::setCurrentLevels(const QString &activity, const QStringList &level, bool sync)
 {
-    updateValueInConfig(LEVELS_GROUP_KEY, activity, level);
+    updateValueInConfig(LEVELS_GROUP_KEY, activity, level, sync);
 }
 
 QStringList ApplicationSettings::currentLevels(const QString &activity)
@@ -527,6 +527,10 @@ template<class T> void ApplicationSettings::updateValueInConfig(const QString& g
     if(sync) {
         m_config.sync();
     }
+}
+
+void ApplicationSettings::sync() {
+    m_config.sync();
 }
 
 int ApplicationSettings::loadActivityProgress(const QString &activity)

@@ -57,6 +57,7 @@ protected Q_SLOTS:
                                                  bool emitChanged = true);
     Q_INVOKABLE void filterBySearch(const QString& text);
     Q_INVOKABLE void filterByDifficulty(quint32 levelMin, quint32 levelMax);
+    Q_INVOKABLE void minMaxFiltersChanged(quint32 levelMin, quint32 levelMax, bool emitChanged = true);
 
 signals:
     void menuTreeChanged();
@@ -78,7 +79,7 @@ private:
     {
         bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
         {
-            return a->difficulty() < b->difficulty();
+            return a->minimalDifficulty() < b->minimalDifficulty();
         }
     };
 
