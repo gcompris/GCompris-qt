@@ -234,12 +234,18 @@ void ActivityInfo::setLevels(const QStringList &levels)
 
 void ActivityInfo::fillDatasets(QQmlEngine *engine)
 {
+    quint32 levelMin = ApplicationSettings::getInstance()->filterLevelMin();
+    quint32 levelMax = ApplicationSettings::getInstance()->filterLevelMax();
     for(const QString &level: m_levels) {
         QString url = QString("qrc:/gcompris/src/activities/%1/resource/%2/Data.qml").arg(m_name.split('/')[0]).arg(level);
         QQmlComponent componentRoot(engine, QUrl(url));
         QObject *objectRoot = componentRoot.create();
         if(objectRoot != nullptr) {
             Dataset *dataset = qobject_cast<Dataset*>(objectRoot);
+            if(levelMin > dataset->difficulty() || levelMax < dataset->difficulty()) {
+                dataset->setEnabled(false);
+            }
+
             m_datasets[level] = dataset;
         } else {
             qDebug() << "ERROR: failed to load " << m_name << " " << componentRoot.errors();
@@ -304,10 +310,14 @@ void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 l
         Dataset *dataset = it.value();
         if(levelMin <= dataset->difficulty() && dataset->difficulty() <= levelMax) {
             newLevels << it.key();
+            dataset->setEnabled(true);
+        }
+        else {
+            dataset->setEnabled(false);
         }
     }
     setCurrentLevels(newLevels);
-    ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_levels, false);
+    ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_currentLevels, false);
 }
 
 Dataset *ActivityInfo::getDataset(const QString& name) const {

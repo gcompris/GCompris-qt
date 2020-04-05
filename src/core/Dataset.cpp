@@ -23,7 +23,8 @@
 Dataset::Dataset(QObject *parent):
     QObject(parent),
     m_objective(""),
-    m_difficulty(0)
+    m_difficulty(0),
+    m_enabled(true)
 {
 }
 
@@ -56,4 +57,14 @@ void Dataset::setData(const QVariant &data)
 {
     m_data = data;
     emit dataChanged();
+}
+
+bool Dataset::enabled() const
+{
+    return m_enabled;
+}
+void Dataset::setEnabled(const bool &enabled)
+{
+    m_enabled = enabled;
+    emit enabledChanged();
 }

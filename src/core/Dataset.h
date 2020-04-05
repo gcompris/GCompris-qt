@@ -56,6 +56,10 @@ class Dataset : public QObject {
      * Content of the dataset (json array).
      */
     Q_PROPERTY(QVariant data READ data WRITE setData NOTIFY dataChanged)
+    /**
+     * If the dataset is enabled.
+     */
+    Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
 
 public:
     /// @cond INTERNAL_DOCS
@@ -66,17 +70,21 @@ public:
     quint32 difficulty() const;
     void setDifficulty(const quint32 &);
     QVariant data() const;
-    void setData(const QVariant &data);
+    void setData(const QVariant &);
+    bool enabled() const;
+    void setEnabled(const bool &);
 
 signals:
     void objectiveChanged();
     void difficultyChanged();
     void dataChanged();
+    void enabledChanged();
 
 private:
     QString m_objective;
     quint32 m_difficulty;
     QVariant m_data;
+    bool m_enabled;
 };
 
 #endif // DATASET_H

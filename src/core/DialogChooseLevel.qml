@@ -122,7 +122,7 @@ Rectangle {
         difficultiesModel = []
         for(var level in currentActivity.levels) {
             var data = currentActivity.getDataset(currentActivity.levels[level])
-            difficultiesModel.push({"level": currentActivity.levels[level], "objective": data.objective, "difficulty": data.difficulty, "selectedInConfig": (chosenLevels.indexOf(currentActivity.levels[level]) != -1)})
+            difficultiesModel.push({"level": currentActivity.levels[level], "enabled": data.enabled, "objective": data.objective, "difficulty": data.difficulty, "selectedInConfig": (chosenLevels.indexOf(currentActivity.levels[level]) != -1)})
         }
         difficultiesRepeater.model = difficultiesModel
 
@@ -277,6 +277,7 @@ Rectangle {
                         id: difficultiesRepeater
                         delegate: Row {
                             height: objective.height
+                            visible: modelData.enabled
                             Image {
                                 id: difficultyIcon
                                 source: "qrc:/gcompris/src/core/resource/difficulty" +
