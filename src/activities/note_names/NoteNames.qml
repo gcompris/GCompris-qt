@@ -45,7 +45,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -112,46 +112,13 @@ ActivityBase {
 
         property string clefType: "Treble"
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias speedSlider: speedSlider
-                    height: column.height
+            currentActivity: activity.activityInfo
 
-                    Column {
-                        id: column
-                        spacing: 10 * ApplicationInfo.ratio
-                        width: parent.width
-
-                        GCText {
-                            id: speedSliderText
-                            text: qsTr("Speed")
-                            fontSize: mediumSize
-                            wrapMode: Text.WordWrap
-                        }
-                         Flow {
-                            width: dialogActivityConfig.width
-                            spacing: 5
-                            GCSlider {
-                                id: speedSlider
-                                width: 250 * ApplicationInfo.ratio
-                                value: activity.speedSetting
-                                maximumValue: 5
-                                minimumValue: 1
-                                scrollEnabled: false
-                            }
-                        }
-                    }
-                }
-            }
-
-            onStart: {
-                if(!introMessage.visible || !iAmReady.visible) {
-                    multipleStaff.pauseNoteAnimation()
-                    addNoteTimer.pause()
-                }
+            onStartActivity: {
+                introMessage.visible = false;
+                iAmReady.visible = true;
             }
             onClose: {
                 home();
@@ -159,20 +126,8 @@ ActivityBase {
                 iAmReady.visible = true;
             }
             onLoadData: {
-                 if(dataToSave) {
-                     if(dataToSave["speedSetting"]) {
-                    activity.speedSetting = dataToSave["speedSetting"];
-                     }
-                }
-            }
-            onSaveData: {
-                var oldSpeed = activity.speedSetting
-                activity.speedSetting = dialogActivityConfig.configItem.speedSlider.value
-                if(oldSpeed != activity.speedSetting) {
-                    dataToSave = {"speedSetting": activity.speedSetting};
-                    background.stop();
-                    introMessage.visible = false;
-                    iAmReady.visible = true;
+                if(activityData && activityData["speedSetting"]) {
+                    activity.speedSetting = activityData["speedSetting"];
                 }
             }
         }
@@ -473,16 +428,17 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: (help | home | level | reload | config) }
+            content: BarEnumContent { value: (help | home | level | reload | activityConfig) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                 dialogActivityConfig.active = true
-                 displayDialog(dialogActivityConfig)
+            onActivityConfigClicked: {
+                multipleStaff.pauseNoteAnimation()
+                addNoteTimer.pause()
+                displayDialog(dialogActivityConfig)
             }
             onReloadClicked: {
                 iAmReady.visible = true
