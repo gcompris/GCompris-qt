@@ -127,6 +127,7 @@ Item {
                     id: pupilDetailsRectangle
 
                     property bool editPupilRectangleVisible: false
+                    property bool optionsPupilRectangleVisible: false
 
                     width: managePupilsViewRectangle.width
                     height: 40
@@ -135,6 +136,8 @@ Item {
                     border.width: 5
 
                     RowLayout {
+                        id: pupilDetailsRectangleRowLayout
+
                         width: parent.width
                         height: 40
 
@@ -203,7 +206,8 @@ Item {
                             Layout.fillHeight: true
                             height: 40
 
-                            visible: false
+
+                            visible: pupilDetailsRectangle.optionsPupilRectangleVisible
                             color: "transparent"
                             Text {
                                 id: optionsIcon
@@ -233,11 +237,14 @@ Item {
                         onEntered: {    //modifyPupilCommandsRectangle.visible = true
                                         pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
                                         pupilDetailsRectangle.editPupilRectangleVisible = true
+                                        pupilDetailsRectangle.optionsPupilRectangleVisible = true
 
                         }
                         onExited: {
                                         ///modifyPupilCommandsRectangle.visible = false
                                         pupilDetailsRectangle.color = Style.colourBackground
+                                        pupilDetailsRectangle.editPupilRectangleVisible = false
+                                        pupilDetailsRectangle.optionsPupilRectangleVisible = false
                         }
                    }
 
