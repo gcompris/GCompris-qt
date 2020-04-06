@@ -135,104 +135,12 @@ Item {
                     border.color: "green"
                     border.width: 5
 
-                    RowLayout {
-                        id: pupilDetailsRectangleRowLayout
-
-                        width: parent.width
-                        height: 40
-
-                        Rectangle {
-                            id: pupilName
-                            Layout.fillHeight: true
-                            Layout.minimumWidth: pupilsDetailsColumn.pupilNameColWidth
-                            color: "transparent"
-                            CheckBox {
-                                text: modelData[0]
-                                anchors.verticalCenter: parent.verticalCenter
-                                leftPadding: 20
-                            }
-                        }
-                        Rectangle {
-                            id: yearOfBirth
-                            Layout.fillHeight: true
-                            Layout.minimumWidth: pupilsDetailsColumn.yearOfBirthColWidth   //any way to find "year of birth text width" if translations ?
-                            color: "transparent"
-                            Text {
-                                id: yearText
-                                text: modelData[1]
-                                anchors.verticalCenter: parent.verticalCenter
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                color: "grey"
-                            }
-                        }
-                        Rectangle {
-                            id: groups
-                            Layout.fillWidth: true
-                            Layout.fillHeight: true
-                            height: 40
-                            color: "transparent"
-                            Text {
-                                id: groupsText
-                                text: "yy" //modelData[2]
-                                leftPadding: 10
-                                anchors.verticalCenter: parent.verticalCenter
-                                color: "grey"
-                            }
-                        }
-                        Rectangle {
-                            id: editPupilRectangle
-                            Layout.minimumWidth: 50
-                            Layout.alignment: Qt.AlignRight
-                            Layout.fillHeight: true
-                            height: 40
-
-                            visible: pupilDetailsRectangle.editPupilRectangleVisible
-                            color: "transparent"
-                            Text {
-                                id: editIcon
-                                text: "\uf304"
-                                anchors.centerIn: parent
-                                color: "grey"
-                                font {
-                                   family: Style.fontAwesome
-                                   pixelSize: Style.pixelSizeNavigationBarIcon / 2
-                                }
-                            }
-                        }
-                        Rectangle {
-                            id: optionsPupilRectangle
-                            Layout.minimumWidth: 50
-                            Layout.alignment: Qt.AlignRight
-                            Layout.fillHeight: true
-                            height: 40
-
-
-                            visible: pupilDetailsRectangle.optionsPupilRectangleVisible
-                            color: "transparent"
-                            Text {
-                                id: optionsIcon
-                                text: "\uf142"   //elipsis-v
-                                anchors.horizontalCenter: parent.horizontalCenter
-                                anchors.verticalCenter: parent.verticalCenter
-                                color: "grey"
-                                font {
-                                    family: Style.fontAwesome
-                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2    //? see with style
-                                }
-                            }
-                        }
-
-                    }
-
                     MouseArea {
-
-                        Layout.alignment: Qt.AlignRight
-                        //anchors.fill: parent //right: pupilCommandOptions.right
-                        //anchors.top: pupilCommandOptions.top
-                        height: parent.height
+                        anchors.right: pupilDetailsRectangle.right //right: pupilCommandOptions.right
+                        anchors.top: pupilDetailsRectangle.top
+                        height: pupilDetailsRectangle.height
                         width: parent.width
 
-                        //anchors.fill: parent
                         hoverEnabled: true
                         onEntered: {    //modifyPupilCommandsRectangle.visible = true
                                         pupilDetailsRectangle.color = Style.colourPanelBackgroundHover
@@ -246,11 +154,147 @@ Item {
                                         pupilDetailsRectangle.editPupilRectangleVisible = false
                                         pupilDetailsRectangle.optionsPupilRectangleVisible = false
                         }
-                   }
 
+                        RowLayout {
+                            id: pupilDetailsRectangleRowLayout
 
+                            width: parent.width
+                            height: 40
 
+                            Rectangle {
+                                id: pupilName
+                                Layout.alignment: Qt.AlignLeft
+                                Layout.fillHeight: true
+                                Layout.minimumWidth: pupilsDetailsColumn.pupilNameColWidth
+                                color: "transparent"
+                                CheckBox {
+                                    text: modelData[0]
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    leftPadding: 20
+                                }
+                            }
+                            Rectangle {
+                                id: yearOfBirth
+                                Layout.fillHeight: true
+                                Layout.minimumWidth: pupilsDetailsColumn.yearOfBirthColWidth   //any way to find "year of birth text width" if translations ?
+                                color: "transparent"
+                                Text {
+                                    id: yearText
+                                    text: modelData[1]
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    color: "grey"
+                                }
+                            }
+                            Rectangle {
+                                id: groups
+                                Layout.fillWidth: true
+                                Layout.fillHeight: true
+                                height: 40
+                                color: "transparent"
+                                Text {
+                                    id: groupsText
+                                    text: "yy" //modelData[2]
+                                    leftPadding: 10
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    color: "grey"
+                                }
+                            }
+                            Rectangle {
+                                id: editPupilRectangle
+                                Layout.minimumWidth: 50
+                                //Layout.alignment: Qt.AlignRight
+                                Layout.fillHeight: true
+                                height: 40
 
+                                visible: pupilDetailsRectangle.editPupilRectangleVisible
+                                color: "transparent"
+                                Text {
+                                    id: editIcon
+                                    text: "\uf304"
+                                    anchors.centerIn: parent
+                                    color: "grey"
+                                    font {
+                                       family: Style.fontAwesome
+                                       pixelSize: Style.pixelSizeNavigationBarIcon / 2
+                                    }
+                                }
+                                MouseArea {
+                                    anchors.left: parent.left
+                                    anchors.top: parent.top
+                                    height: parent.height
+                                    width: parent.width
+
+                                    //anchors.fill: parent
+                                    hoverEnabled: true
+                                    onEntered: {    //modifyPupilCommandsRectangle.visible = true
+                                                    editIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
+                                                    //pupilDetailsRectangle.editPupilRectangleVisible = true
+                                                    //pupilDetailsRectangle.optionsPupilRectangleVisible = true
+                                        print("sdfsfsdf")
+
+                                    }
+                                    onExited: {
+                                                    ///modifyPupilCommandsRectangle.visible = false
+                                                    editIcon.color = Style.colourCommandBarFontDisabled //Style.colourBackground
+                                                    //pupilDetailsRectangle.editPupilRectangleVisible = false
+                                                    //pupilDetailsRectangle.optionsPupilRectangleVisible = false
+                                    }
+                               }
+                            }
+                            Rectangle {
+                                id: optionsPupilRectangle
+                                Layout.minimumWidth: 50
+                                Layout.alignment: Qt.AlignRight
+                                Layout.fillHeight: true
+                                height: 40
+
+                                visible: pupilDetailsRectangle.optionsPupilRectangleVisible
+                                color: "transparent"
+                                Text {
+                                    id: optionsIcon
+                                    text: "\uf142"   //elipsis-v
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    color: "grey"
+                                    font {
+                                        family: Style.fontAwesome
+                                        pixelSize: Style.pixelSizeNavigationBarIcon / 2    //? see with style
+                                    }
+                                }
+                                MouseArea {
+                                    anchors.left: parent.left
+                                    anchors.top: parent.top
+                                    height: parent.height
+                                    width: parent.width
+
+                                    hoverEnabled: true
+                                    onClicked: {
+                                        modifyPupilGroupsDialog.open()
+                                    }
+
+                                    onEntered: {
+                                        //modifyPupilCommandsRectangle.visible = true
+                                        optionsIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
+                                        //pupilDetailsRectangle.editPupilRectangleVisible = true
+                                        //pupilDetailsRectangle.optionsPupilRectangleVisible = true
+                                        print("sdfsfsdf")
+
+                                    }
+                                    onExited: {
+                                        ///modifyPupilCommandsRectangle.visible = false
+                                        optionsIcon.color = Style.colourCommandBarFontDisabled //Style.colourBackground
+                                        //pupilDetailsRectangle.editPupilRectangleVisible = false
+                                        //pupilDetailsRectangle.optionsPupilRectangleVisible = false
+                                    }
+                               }
+                            }
+                        }
+                    }
+
+                    ModifyPupilGroupsDialog {
+                        id: modifyPupilGroupsDialog
+                    }
 
 
 //                        Rectangle {
@@ -414,22 +458,13 @@ Item {
 //                            }
 //                        }
                     }
-
-
-
-
                 }
-
             }
-
-
-
     }
 
     CommandBar {
         commandList: masterController.ui_commandController.ui_managePupilsViewContextCommands
     }
-
 
 
 /*    ScrollView {
