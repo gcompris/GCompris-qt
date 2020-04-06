@@ -21,6 +21,12 @@
 import QtQuick 2.6
 import GCompris 1.0
 
+/**
+* A QML to use as button
+*
+* Currently used in land_safe and gravity activities
+*/
+
 Image {
     id: root
     state: "notclicked"
@@ -74,6 +80,4 @@ Image {
     ]
 
     Behavior on scale { NumberAnimation { duration: 70 } }
-//    Behavior on opacity { PropertyAnimation { duration: 200 } }
-
 }

@@ -1,6 +1,10 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Siddhesh suthar<siddhesh.it@gmail.com>
+ * Copyright (C) 2020 Timothée Giet<animtim@gmail.com>
+ *
+ * Authors:
+ *   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (complete activity rewrite)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,23 +22,23 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "intro_gravity/IntroGravity.qml"
-  difficulty: 4
-  icon: "intro_gravity/intro_gravity.svg"
-  author: "Siddhesh suthar &lt;siddhesh.it@gmail.com&gt;"
+  name: "gravity/Gravity.qml"
+  difficulty: 3
+  icon: "gravity/gravity.svg"
+  author: "Timothée Giet &lt;animtim@gmail.com&gt;"
   demo: true
   //: Activity title
-  title: qsTr("Intro gravity")
+  title: qsTr("Gravity")
   //: Help title
   description: qsTr("Introduction to the concept of gravity")
-  //intro: "Change the planets' gravitational force by moving the sliders up and down. Be careful not to crash Tux's spaceship."
+  //intro: "Move the spaceship to avoid hitting the planets and reach the space station."
   //: Help goal
-  goal: qsTr("Maintain the spaceship in the middle without crashing into the planets or the asteroids")
+  goal: qsTr("Move the spaceship to avoid hitting the planets and reach the space station.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Follow the instructions when you run the activity.")
+  manual: qsTr("Move the spaceship with the left and right keys, or with the buttons on the screen for mobile devices. Try to stay near the center of the screen and anticipate by looking at the size and direction of the arrow showing the gravity force.")
   credit: ""
   section: "sciences experiment"
-  createdInVersion: 4000
+  createdInVersion: 9800
 }

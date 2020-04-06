@@ -1,11 +1,9 @@
 Copyright: Timothée Giet, 2017
 License: CC-BY-SA 4.0
 Files:
-arrow_down.svg
-arrow_left.svg
-arrow_right.svg
-arrow_up.svg
 background.svg
 ground.svg
-landing.svg
+landing-g.svg
+landing-r.svg
+landing-y.svg
 rocket.svg

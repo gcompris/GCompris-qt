@@ -219,7 +219,7 @@ Window {
                 rccBackgroundMusic = ApplicationInfo.getBackgroundMusicFromRcc()
             }
         }
-        else if(!DownloadManager.haveLocalResource(music)) {
+        else if(ApplicationSettings.isBackgroundMusicEnabled && !DownloadManager.haveLocalResource(music)) {
             Core.showMessageDialog(
             main,
             qsTr("The background music is not yet downloaded. ")

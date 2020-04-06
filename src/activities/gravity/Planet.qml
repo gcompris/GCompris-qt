@@ -1,10 +1,11 @@
-/*GCompris :- intro_gravity.qml
+/* GCompris - Planet.qml
 *
-* Copyright (C) 2015 Siddhesh suthar <siddhesh.it@gmail.com>
+* Copyright (C) 2020 Timothée Giet <animtim@gmail.com>
 *
 * Authors:
 *   Bruno Coudoin <bruno.coudoin@gcompris.net> and Matilda Bernard (GTK+ version)
 *   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+*   Timothée Giet <animtim@gmail.com> (complete activity rewrite)
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -19,28 +20,46 @@
 *   You should have received a copy of the GNU General Public License
 *   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
-
 import QtQuick 2.6
-import "intro_gravity.js" as Activity
-import "../../core"
 import GCompris 1.0
 
-Image {
-    id: asteroid
-    sourceSize.height: 100 * ApplicationInfo.ratio
-    z: 5
+import "../../core"
+import "gravity.js" as Activity
 
+Image {
+    id: planet
+    asynchronous: true
+    sourceSize.width: undefined
+    sourceSize.height: undefined
+    z: 5
+    y: height * -2
+    x: leftSide ? width * -0.5 : parent.width - width * 0.5 
+    visible: false
+    
+    property bool leftSide: true
     property alias fallDuration: down.duration
 
     function startMoving() {
-        down.restart()
+        down.restart();
     }
-
 
     NumberAnimation {
         id: down
-        target: asteroid
+        target: planet
         property: "y"
-        to: parent.height
+        to: parent.height + height * 2
+    }
+
+    Image {
+        id: gravityImage
+        asynchronous: true
+        sourceSize.width: undefined
+        sourceSize.height: undefined
+        source: Activity.url + "gravity.svg"
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: parent.verticalCenter
+        width: planet.width * 3
+        height: width
+        z: -1
     }
 }

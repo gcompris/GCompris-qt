@@ -65,6 +65,7 @@ gnumch-inequality
 gnumch-multiples
 gnumch-primes
 graph-coloring
+gravity
 guesscount
 guessnumber
 hangman
@@ -73,7 +74,6 @@ hanoi_real
 hexagon
 imagename
 instruments
-intro_gravity
 land_safe
 lang
 leftright

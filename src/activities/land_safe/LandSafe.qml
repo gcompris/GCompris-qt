@@ -197,7 +197,7 @@ ActivityBase {
             Behavior on opacity {
                 NumberAnimation {
                     duration: 500
-                    easing.type: Easing.InExpo
+                    easing.type: Easing.OutExpo
                 }
             }
             
@@ -615,8 +615,6 @@ ActivityBase {
                 anchors.right: parent.right
                 anchors.bottom: gravityText.top
                 anchors.bottomMargin: 10 * ApplicationInfo.ratio
-//                anchors.bottom: upDownControl.bottom
-//                anchors.bottomMargin: upDownControl.bottomMargin
                 width: 15 + 3 * items.scale * ApplicationInfo.ratio
                 height: background.height / 2.5
                 z: 2 // on top of rocket and ground
@@ -650,7 +648,7 @@ ActivityBase {
             anchors.right: background.right
             anchors.rightMargin: accelerometer.width
             anchors.bottom: bar.top
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
             width: upButton.width + 20 * ApplicationInfo.ratio
             height: upButton.height + downButton.height + 20 * ApplicationInfo.ratio
             visible: items.onScreenControls
@@ -661,14 +659,14 @@ ActivityBase {
 
             ControlButton {
                 id: upButton
-                source: Activity.baseUrl + "/arrow_up.svg"
+                source: "qrc:/gcompris/src/core/resource/arrow_up.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Up});
                 exceed: upDownControl.spacing / 2
             }
 
             ControlButton {
                 id: downButton
-                source: Activity.baseUrl + "/arrow_down.svg"
+                source: "qrc:/gcompris/src/core/resource/arrow_down.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Down});
                 exceed: upDownControl.spacing / 2
             }
@@ -690,7 +688,7 @@ ActivityBase {
 
             ControlButton {
                 id: leftButton
-                source: Activity.baseUrl + "/arrow_left.svg"
+                source: "qrc:/gcompris/src/core/resource/arrow_left.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Left});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Left});
                 exceed: leftRightControl.spacing / 2
@@ -698,7 +696,7 @@ ActivityBase {
 
             ControlButton {
                 id: rightButton
-                source: Activity.baseUrl + "/arrow_right.svg"
+                source: "qrc:/gcompris/src/core/resource/arrow_right.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Right});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Right});
                 exceed: leftRightControl.spacing / 2
