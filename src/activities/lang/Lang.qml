@@ -155,6 +155,8 @@ ActivityBase {
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
+            property string configurationLocale: "system"
+
             content: Component {
                 Item {
                     property alias localeBox: localeBox
@@ -185,18 +187,27 @@ ActivityBase {
                 }
             }
 
+            function setLocale(localeToSet) {
+                // Store the locale as-is to be displayed in menu
+                configurationLocale = localeToSet
+                items.locale = Core.resolveLocale(localeToSet)
+            }
+
             onLoadData: {
                 if(!dataToSave)
                     return
 
                 if(dataToSave['locale']) {
-                    items.locale = dataToSave["locale"];
+                    setLocale(dataToSave["locale"]);
+                }
+                else {
+                    setLocale(items.locale);
                 }
             }
             onSaveData: {
                 // Save the lessons status on the current locale
-                var oldLocale = items.locale
-                dataToSave[ApplicationInfo.getVoicesLocale(items.locale)] =
+                var oldLocale = configurationLocale
+                dataToSave[ApplicationInfo.getVoicesLocale(oldLocale)] =
                         Activity.lessonsToSavedProperties(dataToSave)
 
                 if(!dialogActivityConfig.loader.item)
@@ -210,7 +221,7 @@ ActivityBase {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
                 dataToSave['locale'] = newLocale
-                items.locale = newLocale;
+                setLocale(newLocale)
 
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
@@ -221,8 +232,8 @@ ActivityBase {
 
 
             function setDefaultValues() {
-                var localeUtf8 = items.locale;
-                if(items.locale != "system") {
+                var localeUtf8 = configurationLocale;
+                if(configurationLocale != "system") {
                     localeUtf8 += ".UTF-8";
                 }
 

@@ -28,6 +28,8 @@ import QtQuick 2.6
  * Put here the locales for which we have a good enough translation.
  */
 QtObject {
+    property bool inMenu: false
+
     /**
      * type:list
      * List of language objects.
@@ -40,7 +42,7 @@ QtObject {
      * standard locale.
      */
     property var languages: [
-            { "text": qsTr("Your system default"), "locale": "system" },
+            { "text": inMenu ? qsTr("Your system default") : qsTr("GCompris' language"), "locale": "system" },
             { "text": "UK English", "locale": "en_GB.UTF-8" },
             { "text": "American English", "locale": "en_US.UTF-8" },
             //{ "text": "български", "locale": "bg_BG.UTF-8" },

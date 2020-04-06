@@ -22,6 +22,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: activityConfiguration
@@ -32,6 +33,7 @@ Item {
     property int speedSetting: 10
     property bool uppercaseOnly: false
     property string locale: "system"
+    property string configurationLocale: "system"
     width: if(background) background.width
     property alias availableLangs: langs.languages
     LanguageList {
@@ -76,6 +78,12 @@ Item {
         }
     }
 
+    function setLocale(localeToSet) {
+        // Store the locale as-is to be displayed in menu
+        configurationLocale = localeToSet
+        activityConfiguration.locale = Core.resolveLocale(localeToSet)
+    }
+
     property var dataToSave
     function setDefaultValues() {
         // Recreate the binding
@@ -87,25 +95,27 @@ Item {
             localeUtf8 += ".UTF-8";
         }
 
-        for(var i = 0 ; i < activityConfiguration.availableLangs.length ; i ++) {
-            if(activityConfiguration.availableLangs[i].locale === localeUtf8) {
-                activityConfiguration.localeBox.currentIndex = i;
-                break;
-            }
-        }
         if(dataToSave.locale) {
-            activityConfiguration.locale = localeUtf8
-            activityConfiguration.locale = activityConfiguration.availableLangs[0].locale
+            setLocale(localeUtf8)
         }
         else {
-            localeBox.currentIndex = 0
+            activityConfiguration.localeBox.currentIndex = 0
+            setLocale(activityConfiguration.availableLangs[0].locale)
         }
+
         activityConfiguration.uppercaseOnly = (dataToSave.uppercaseMode === "true")
         if(dataToSave.speedSetting) {
             activityConfiguration.speedSetting = dataToSave.speedSetting
         }
         else {
             activityConfiguration.speedSetting = 10
+        }
+
+        for(var i = 0 ; i < activityConfiguration.availableLangs.length ; i ++) {
+            if(activityConfiguration.availableLangs[i].locale === localeUtf8) {
+                activityConfiguration.localeBox.currentIndex = i;
+                break;
+            }
         }
     }
 
@@ -120,7 +130,7 @@ Item {
 
         speedSetting = speedSlider.value
 
-        dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly, "speedSetting": speedSetting}
-        activityConfiguration.locale = newLocale;
+        setLocale(newLocale);
+        dataToSave = {"locale": newLocale, "uppercaseMode": "" + activityConfiguration.uppercaseOnly, "speedSetting": speedSetting, "activityLocale": activityConfiguration.locale}
     }
 }

@@ -36,6 +36,7 @@ Item {
 
     LanguageList {
         id: allLangs
+        inMenu: true
     }
 
     Column {

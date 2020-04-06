@@ -23,6 +23,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "missing-letter.js" as Activity
 
 ActivityBase {
@@ -253,6 +254,8 @@ ActivityBase {
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
+            property string configurationLocale: "system"
+
             content: Component {
                 Item {
                     property alias localeBox: localeBox
@@ -283,13 +286,23 @@ ActivityBase {
             }
 
             onClose: home()
+
+            function setLocale(localeToSet) {
+                // Store the locale as-is to be displayed in menu
+                configurationLocale = localeToSet
+                background.locale = Core.resolveLocale(localeToSet)
+            }
+
             onLoadData: {
                 if(dataToSave && dataToSave["locale"]) {
-                    background.locale = dataToSave["locale"];
+                    setLocale(dataToSave["locale"])
+                }
+                else {
+                    setLocale(background.locale)
                 }
             }
             onSaveData: {
-                var oldLocale = background.locale;
+                var oldLocale = configurationLocale;
                 var newLocale =
                         dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                 // Remove .UTF-8
@@ -298,8 +311,7 @@ ActivityBase {
                 }
                 dataToSave = {"locale": newLocale }
 
-                background.locale = newLocale;
-
+                setLocale(newLocale)
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
                     background.stop();
@@ -309,8 +321,8 @@ ActivityBase {
 
 
             function setDefaultValues() {
-                var localeUtf8 = background.locale;
-                if(background.locale != "system") {
+                var localeUtf8 = configurationLocale;
+                if(configurationLocale != "system") {
                     localeUtf8 += ".UTF-8";
                 }
 

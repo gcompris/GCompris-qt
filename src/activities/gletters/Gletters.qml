@@ -24,6 +24,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import "gletters.js" as Activity
 
 ActivityBase {
@@ -193,9 +194,12 @@ ActivityBase {
             }
             onLoadData: {
                 if (activity.activityName === "gletters") {
-                    if(activityData && activityData["locale"]) {
-                        background.locale = activityData["locale"];
+                    if(activityData && activityData["activityLocale"]) {
+                        background.locale = activityData["activityLocale"];
                         activity.uppercaseOnly = activityData["uppercaseMode"] === "true" ? true : false;
+                    }
+                    else {
+                        background.locale = Core.resolveLocale(background.locale)
                     }
                 } else if (activity.activityName === "smallnumbers2") {
                     if(activityData && activityData["mode"]) {
@@ -270,7 +274,5 @@ ActivityBase {
             repeat: false
             onTriggered: Activity.dropWord();
         }
-
     }
-
 }

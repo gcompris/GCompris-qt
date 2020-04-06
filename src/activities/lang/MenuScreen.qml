@@ -120,7 +120,6 @@ Image {
         keyNavigationWraps: true
         property int spacing: 10
 
-
         delegate: Item {
             id: delegateItem
             width: levelCellWidth - menuGrid.spacing

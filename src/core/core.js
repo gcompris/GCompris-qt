@@ -244,3 +244,21 @@ function isLeftToRightLocale(locale) {
     var localeShort = GCompris.ApplicationInfo.getVoicesLocale(locale)
     return (localeShort != "ar" && localeShort != "he");
 }
+
+function resolveLocale(localeToSet) {
+    // Resolve the locale used to a real one
+    // if Gcompris' locale selected, we want the real locale
+    // and if GCompris' locale is system, then resolve again
+    var newLocale = localeToSet
+    if(newLocale === "system") {
+        newLocale = GCompris.ApplicationSettings.locale
+        // Remove .UTF-8
+        if(newLocale.indexOf('.') != -1) {
+            newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+        }
+        return newLocale
+    }
+    else {
+        return localeToSet
+    }
+}
