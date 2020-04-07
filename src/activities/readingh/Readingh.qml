@@ -46,7 +46,7 @@ ActivityBase {
         fillMode: Image.Stretch
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -77,120 +77,31 @@ ActivityBase {
         onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            property string configurationLocale: "system"
-
-            content: Component {
-                Item {
-                    property alias localeBox: localeBox
-                    property alias speedSlider: speedSlider
-                    height: column.height
-
-                    property alias availableLangs: langs.languages
-                    LanguageList {
-                        id: langs
-                    }
-
-                    Column {
-                        id: column
-                        spacing: 10 * ApplicationInfo.ratio
-                        width: parent.width
-
-                        Flow {
-                            spacing: 5
-                            width: dialogActivityConfig.width
-                            GCComboBox {
-                                id: localeBox
-                                model: langs.languages
-                                background: dialogActivityConfig
-                                width: dialogActivityConfig.width
-                                label: qsTr("Select your locale")
-                            }
-                        }
-                        GCText {
-                            id: speedSliderText
-                            text: qsTr("Speed")
-                            fontSize: mediumSize
-                            wrapMode: Text.WordWrap
-                        }
-                         Flow {
-                            width: dialogActivityConfig.width
-                            spacing: 5
-                            GCSlider {
-                                id: speedSlider
-                                width: 250 * ApplicationInfo.ratio
-                                value: activity.speedSetting
-                                maximumValue: 5
-                                minimumValue: 1
-                                scrollEnabled: false
-                            }
-                        }
-                    }
-                }
-            }
-
-            onClose: home()
-
-            function setLocale(localeToSet) {
-                // Store the locale as-is to be displayed in menu
-                configurationLocale = localeToSet
-                background.locale = Core.resolveLocale(localeToSet)
-            }
-
-            onLoadData: {
-                if(dataToSave) {
-                    if(dataToSave["locale"]) {
-                        setLocale(dataToSave["locale"]);
-                    }
-                    if(dataToSave["speedSetting"]) {
-                        activity.speedSetting = dataToSave["speedSetting"];
-                    }
-                }
-                else {
-                    setLocale(background.locale)
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
             }
             onSaveData: {
-                var oldLocale = configurationLocale;
-                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
-                // Remove .UTF-8
-                if(newLocale.indexOf('.') !== -1) {
-                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onLoadData: {
+                if(activityData && activityData["activityLocale"]) {
+                    background.locale = activityData["activityLocale"];
                 }
-                dataToSave = {
-                    "locale": newLocale,
+                else {
+                    background.locale = Core.resolveLocale(background.locale)
                 }
-
-                setLocale(newLocale);
-                // Restart the activity with new information
-                if(oldLocale !== newLocale) {
-                    background.stop();
-                    wordDisplayList.layoutDirection = Core.isLeftToRightLocale(configurationLocale) ? Qt.LeftToRight : Qt.RightToLeft;
-                    background.start();
-                }
-                var oldSpeed = activity.speedSetting
-                activity.speedSetting = dialogActivityConfig.configItem.speedSlider.value
-                if(oldSpeed != activity.speedSetting) {
-                    dataToSave = {"speedSetting": activity.speedSetting};
-                    background.stop();
-                    background.start();
+                if(activityData && activityData["speedSetting"]) {
+                    activity.speedSetting = activityData["speedSetting"];
                 }
             }
-
-            function setDefaultValues() {
-                var localeUtf8 = configurationLocale;
-                if(configurationLocale != "system") {
-                    localeUtf8 += ".UTF-8";
-                }
-
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
-                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
-                        break;
-                    }
-                }
+            onStartActivity: {
+                background.stop()
+                background.start()
             }
         }
 
@@ -201,16 +112,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
