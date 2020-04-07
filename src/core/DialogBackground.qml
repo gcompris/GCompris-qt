@@ -43,7 +43,6 @@ Rectangle {
     z: 1000
     property bool isDialog: true
     property string title
-    property alias titleIcon: titleIcon.source
     property string content
     property string contentIcon
     property alias button0Text: button0.text
@@ -70,24 +69,22 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
-                Row {
-                    spacing: 2
-                    padding: 8
-                    Image {
-                        id: titleIcon
-                    }
-
-                    GCText {
-                        id: title
-                        text: dialogBackground.title
-                        width: dialogBackground.width - (70 + cancel.width)
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        color: "black"
-                        fontSize: 20
-                        font.weight: Font.DemiBold
-                        wrapMode: Text.WordWrap
-                    }
+                GCText {
+                    id: title
+                    text: dialogBackground.title
+                    width: dialogBackground.width - cancel.width * 2
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    color: "black"
+                    fontSize: 20
+                    font.weight: Font.DemiBold
+                    wrapMode: Text.WordWrap
+                }
+                // The cancel button
+                GCButtonCancel {
+                    id: cancel
+                    onClose: parent.close()
                 }
             }
             Rectangle {
@@ -123,7 +120,7 @@ Rectangle {
                             theme: "highContrast"
                         }
                     }
-                    
+
                     Image {
                         id: iconImage
                         source: contentIcon
@@ -135,7 +132,7 @@ Rectangle {
                         anchors.top: button0.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
                     }
-                    
+
                     GCText {
                         id: textContent
                         text: style + "<body>" + content + "</body>"
@@ -163,11 +160,4 @@ Rectangle {
             Item { width: 1; height: 10 }
         }
     }
-
-    // The cancel button
-    GCButtonCancel {
-        id: cancel
-        onClose: parent.close()
-    }
-
 }

@@ -151,18 +151,6 @@ Rectangle {
             border.color: "black"
             border.width: 0
 
-            Row {
-                spacing: 2
-                padding: 8
-                Image {
-                    id: titleIcon
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        margins: 4 * ApplicationInfo.ratio
-                    }
-                }
-
                 GCText {
                     id: title
                     text: dialogChooseLevel.title
@@ -174,7 +162,6 @@ Rectangle {
                     font.weight: Font.DemiBold
                     wrapMode: Text.WordWrap
                 }
-            }
         }
 
         // Header buttons

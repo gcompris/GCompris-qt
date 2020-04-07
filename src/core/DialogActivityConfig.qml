@@ -184,29 +184,17 @@ Rectangle {
                     }
                 }
 
-                Row {
-                    spacing: 2
-                    padding: 8
-                    Image {
-                        id: titleIcon
-                        anchors {
-                            left: parent.left
-                            top: parent.top
-                            margins: 4 * ApplicationInfo.ratio
-                        }
-                    }
-
-                    GCText {
-                        id: title
-                        text: dialogActivityContent.title
-                        width: dialogActivityContent.width - 30
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        color: "black"
-                        fontSize: 20
-                        font.weight: Font.DemiBold
-                        wrapMode: Text.WordWrap
-                    }
+                GCText {
+                    id: title
+                    text: dialogActivityContent.title
+                    width: dialogActivityContent.width - apply.width * 2
+                    anchors.horizontalCenter: titleRectangle.horizontalCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    color: "black"
+                    fontSize: 20
+                    font.weight: Font.DemiBold
+                    wrapMode: Text.WordWrap
                 }
             }
 
