@@ -64,7 +64,7 @@ ActivityBase {
             property alias nodesRepeater: nodesRepeater
             property alias edgesRepeater: edgesRepeater
             property alias chooserGrid: chooserGrid
-            property string mode
+            property string mode: "color"
         }
 
         onStart: { Activity.start(items) }

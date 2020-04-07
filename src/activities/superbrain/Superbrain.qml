@@ -50,7 +50,7 @@ ActivityBase {
         }
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -67,6 +67,7 @@ ActivityBase {
             property alias guessModel: guessModel
             property alias guessColumn: guessColumn
             property alias currentRepeater: currentRepeater
+            property string mode: "color"
         }
 
         onStart: { Activity.start(items) }
@@ -620,71 +621,29 @@ if (targetY < 0) {
             onClose: home()
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias modeBox: modeBox
-
-                    property var availableModes: [
-                        { "text": qsTr("Colors"), "value": "color" },
-                        { "text": qsTr("Shapes"), "value": "symbol" }
-                    ]
-
-                    Flow {
-                        id: flow
-                        spacing: 5
-                        width: dialogActivityConfig.width
-                        GCComboBox {
-                            id: modeBox
-                            model: availableModes
-                            background: dialogActivityConfig
-                            label: qsTr("Select your mode")
-                        }
-                    }
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
             }
-            onClose: home()
             onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    Activity.mode = dataToSave["mode"];
-                }
-            }
-
-            onSaveData: {
-                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                if (newMode !== Activity.mode) {
-                    chooserGrid.model = new Array();
-                    Activity.mode = newMode;
-                    dataToSave = {"mode": Activity.mode};
-                    Activity.initLevel();
-                }
-            }
-
-            function setDefaultValues() {
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === Activity.mode) {
-                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                        break;
-                    }
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
                 }
             }
         }
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                // Set default values
-                dialogActivityConfig.setDefaultValues();
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }

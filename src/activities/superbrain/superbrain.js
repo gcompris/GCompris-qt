@@ -53,7 +53,6 @@ var colors = [
             "#FF04611a",  // dark green
             "#FFa0174b",   // dark magenta
         ];
-var mode = "color";
 var symbols = [
             baseUrl + "darkblue_star.svg",
             baseUrl + "lightgreen_triangle.svg",

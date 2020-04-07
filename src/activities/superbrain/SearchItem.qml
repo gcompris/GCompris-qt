@@ -33,7 +33,7 @@ Item {
 
     Image {
         id: symbol
-        visible: Activity.mode === "symbol"
+        visible: items.mode === "symbol"
         fillMode: Image.PreserveAspectFit
         source: Activity.symbols[root.searchItemIndex]
         anchors.left: parent.left
@@ -44,7 +44,7 @@ Item {
     }
     Rectangle {
         id: symbolHighlighter
-        visible: (Activity.mode === "symbol") && root.highlightSymbol
+        visible: (items.mode === "symbol") && root.highlightSymbol
         anchors.fill: parent
         width: parent.width
         height: parent.height
@@ -55,7 +55,7 @@ Item {
 
     Rectangle {
         id: color
-        visible: Activity.mode === "color"
+        visible: items.mode === "color"
         color: Activity.colors[root.searchItemIndex]
         anchors.fill: parent
         width: parent.width
