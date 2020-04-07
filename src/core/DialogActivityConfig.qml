@@ -187,7 +187,7 @@ Rectangle {
                 GCText {
                     id: title
                     text: dialogActivityContent.title
-                    width: dialogActivityContent.width - apply.width * 2
+                    width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the apply button size
                     anchors.horizontalCenter: titleRectangle.horizontalCenter
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter

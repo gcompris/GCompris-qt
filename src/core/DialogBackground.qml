@@ -62,6 +62,7 @@ Rectangle {
             anchors.top: parent.top
             Item { width: 1; height: 10 }
             Rectangle {
+                id: titleRectangle
                 color: "#e6e6e6"
                 radius: 6.0
                 width: dialogBackground.width - 30
@@ -72,7 +73,7 @@ Rectangle {
                 GCText {
                     id: title
                     text: dialogBackground.title
-                    width: dialogBackground.width - cancel.width * 2
+                    width: titleRectangle.width - 120 * ApplicationInfo.ratio //minus twice the cancel button size
                     anchors.horizontalCenter: parent.horizontalCenter
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
@@ -84,7 +85,9 @@ Rectangle {
                 // The cancel button
                 GCButtonCancel {
                     id: cancel
-                    onClose: parent.close()
+                    anchors.verticalCenter: titleRectangle.verticalCenter
+                    anchors.margins: 2 * ApplicationInfo.ratio
+                    onClose: dialogBackground.close()
                 }
             }
             Rectangle {
