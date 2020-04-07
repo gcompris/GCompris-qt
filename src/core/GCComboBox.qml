@@ -43,8 +43,8 @@ Item {
     id: gccombobox
     focus: true
 
-    width: parent.width
-    height: flow.height
+    width: parent.width * 0.9
+    height: comboColumn.height
 
     /**
      * type:Item
@@ -97,13 +97,26 @@ Item {
     }
 
     /**
-     * type:Flow
+     * type:Column
      * Combobox display when inactive: the label and the button with current choice.
      */
-    Flow {
-        id: flow
+    Column {
+        id: comboColumn
         width: parent.width
         spacing: 5 * ApplicationInfo.ratio
+        Item {
+            id: labelArea
+            width: labelText.width
+            height: labelText.height
+            GCText {
+                id: labelText
+                text: label
+                anchors.verticalCenter: parent.verticalCenter
+                width: comboColumn.width
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+        }
         Rectangle {
             id: button
             visible: true
@@ -132,18 +145,6 @@ Item {
                 onReleased: {
                    popup.visible = true
                 }
-            }
-        }
-
-        Item {
-            width: labelText.width
-            height: button.height
-            GCText {
-                id: labelText
-                text: label
-                anchors.verticalCenter: parent.verticalCenter
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
             }
         }
     }
