@@ -60,7 +60,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -242,101 +242,32 @@ ActivityBase {
             }
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            property string configurationLocale: "system"
-
-            content: Component {
-                Item {
-                    property alias localeBox: localeBox
-                    height: column.height
-
-                    property alias availableLangs: langs.languages
-                    LanguageList {
-                        id: langs
-                    }
-
-                    Column {
-                        id: column
-                        spacing: 10
-                        width: parent.width
-
-                        Flow {
-                            spacing: 5
-                            width: dialogActivityConfig.width
-                            GCComboBox {
-                                id: localeBox
-                                model: langs.languages
-                                background: dialogActivityConfig
-                                label: qsTr("Select your locale")
-                            }
-
-                            GCDialogCheckBox {
-                                id: easyModeBox
-                                width: parent.width
-                                text: qsTr("Display image to find as hint")
-                                checked: items.easyMode
-                                onCheckedChanged: {
-                                    items.easyMode = checked
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            onClose: home()
-
-            function setLocale(localeToSet) {
-                // Store the locale as-is to be displayed in menu
-                configurationLocale = localeToSet
-                background.locale = Core.resolveLocale(localeToSet)
-            }
-
-            onLoadData: {
-                if(dataToSave && dataToSave["locale"]) {
-                    setLocale(dataToSave["locale"]);
-                }
-                else {
-                    setLocale(background.locale)
-                }
-                if(dataToSave && dataToSave["easyMode"]) {
-                    items.easyMode = (dataToSave["easyMode"] === "true");
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
             }
             onSaveData: {
-                var oldLocale = configurationLocale;
-                var newLocale =
-                        dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
-                // Remove .UTF-8
-                if(newLocale.indexOf('.') != -1) {
-                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
-                }
-                dataToSave = {"locale": newLocale,
-                              "easyMode": "" + items.easyMode }
-
-                setLocale(newLocale);
-
-                // Restart the activity with new information
-                if(oldLocale !== newLocale) {
-                    background.stop();
-                    background.start();
-                }
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
-
-            function setDefaultValues() {
-                var localeUtf8 = configurationLocale;
-                if(configurationLocale != "system") {
-                    localeUtf8 += ".UTF-8";
+            onLoadData: {
+                if(activityData && activityData["activityLocale"]) {
+                    background.locale = activityData["activityLocale"];
+                }
+                else {
+                    background.locale = Core.resolveLocale(background.locale)
+                }
+                if(activityData && activityData["easyMode"]) {
+                    items.easyMode = (activityData["easyMode"] === "true");
                 }
 
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
-                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
-                        break;
-                    }
-                }
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
             }
         }
 
@@ -348,16 +279,14 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level | config }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
