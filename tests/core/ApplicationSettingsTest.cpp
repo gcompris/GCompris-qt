@@ -156,9 +156,9 @@ void CoreApplicationSettingsTest::ActivitySettingsTest()
     QCOMPARE(applicationSettingsMock.loadActivityProgress(dummyActivity), 0);
 
     // Test current level getter/setter
-    QCOMPARE(applicationSettingsMock.currentLevel(dummyActivity), "");
-    applicationSettingsMock.setCurrentLevel(dummyActivity, "3");
-    QCOMPARE(applicationSettingsMock.currentLevel(dummyActivity), "3");
+    QCOMPARE(applicationSettingsMock.currentLevels(dummyActivity), {});
+    applicationSettingsMock.setCurrentLevels(dummyActivity, {"3"});
+    QCOMPARE(applicationSettingsMock.currentLevels(dummyActivity), {"3"});
 
     // By Default the activity
     QVariantMap configuration;
