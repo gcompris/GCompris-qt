@@ -21,10 +21,5 @@ Button {
         radius: 2
         color: parent.hovered ? Style.colourNavigationBarBackground : Style.colourBackground
     }
-
-  /*  onClicked: {
-        returnValue = loader.myvalue;
-        mypopDialog.close();
-    }*/
 }
 

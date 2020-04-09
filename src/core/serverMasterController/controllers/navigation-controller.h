@@ -23,6 +23,7 @@ signals:
 	void goEditClientView(cm::models::Client* client);
 	void goFindClientView();
     void goManageWorkPlanView();
+    void goAddPupilsFromListDialog();
 
 };
 

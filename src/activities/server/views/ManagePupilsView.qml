@@ -18,6 +18,13 @@ Item {
 
   //  property Client newClient: masterController.ui_newClient
 
+    Connections {
+        target: masterController.ui_navigationController
+        onGoAddPupilsFromListDialog: addPupilsFromListDialog.open()
+    }
+
+
+
     Rectangle {
         anchors.fill: parent
         color: Style.colourBackground
@@ -297,6 +304,7 @@ Item {
                     }
 
 
+
 //                        Rectangle {
 //                            id: pupilCommandOptions
 //                            Layout.minimumWidth: 50
@@ -465,6 +473,13 @@ Item {
     CommandBar {
         commandList: masterController.ui_commandController.ui_managePupilsViewContextCommands
     }
+
+    AddPupilsFromListDialog {
+        id: addPupilsFromListDialog
+
+        onPupilsDetailsAdded: pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+    }
+
 
 
 /*    ScrollView {

@@ -1,6 +1,7 @@
 import QtQuick 2.6
 import "../../../core"
 import QtQuick.Controls 2.12
+import QtQuick.Layouts 1.12
 import "../server.js" as Activity
 
 Popup {
@@ -9,6 +10,14 @@ Popup {
     property string label: "To be modified in calling element."
     property string inputText: "Group Name to be modified in calling element."
     property bool textInputReadOnly: false
+
+    signal pupilGroupsModified(string pupilGroupsList)
+
+    QtObject {
+        id: items
+        //property Item main: activity.main
+        property alias groupNamesListView: groupNamesListView
+    }
 
     signal accepted(string textInputValue)
 
@@ -19,23 +28,22 @@ Popup {
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
-    Column {
-        height: parent.height - saveButton.height
+    ColumnLayout {
+        height: parent.height
 
         width: parent.width
 
         Rectangle {
-            id: deletePupilTextRectangle
-            //anchors.top: parent.top
-            anchors.left: parent.left
+            id: removePupilTextRectangle
 
-            width: parent.width
-            height: 50
-
+            Layout.preferredWidth: parent.width
+            Layout.alignment: Qt.AlignCenter
+            Layout.minimumHeight: 40
+            Layout.preferredHeight: 40
             Text {
                 id: deletePupilGroupsText
                 anchors.centerIn: parent
-                text: qsTr("Delete pupil")
+                text: qsTr("Remove pupil")
                 font.bold: true
                 color: "grey"
                 font {
@@ -47,9 +55,10 @@ Popup {
 
         Rectangle {
             id: deletePupilRectangle
-            anchors.left: parent.left
-            width: parent.width
-            height: 40
+            Layout.preferredWidth: parent.width
+            Layout.minimumHeight: 40
+            Layout.preferredHeight: 40
+            Layout.alignment: Qt.AlignCenter
 
             Rectangle {
                 id: trashIconRectangle
@@ -84,20 +93,23 @@ Popup {
 
         Rectangle {
             id: separatorLine
-            anchors.left: parent.left
 
-            width: parent.width
-            height: 1
-            color: "#1E000000"   //?
+            Layout.alignment: Qt.AlignCenter
+            Layout.minimumHeight: 1
+            Layout.preferredHeight: 1
+            Layout.preferredWidth: parent.width
+
+            color: "grey"
         }
 
 
         Rectangle {
             id: modifyGroupsTextRectangle
-            anchors.left: parent.left
 
-            width: parent.width
-            height: 50
+            Layout.preferredWidth: parent.width
+            Layout.minimumHeight: 50
+            Layout.preferredHeight: 40
+            Layout.alignment: Qt.AlignCenter
 
             Text {
                 id: modifyGroupsText
@@ -112,41 +124,46 @@ Popup {
             }
         }
 
-        ListView {
-            anchors.left: parent.left
-            width: parent.width
-            height: 300
+        Rectangle {
+            id: groupNamesRectangle
+            Layout.preferredWidth: parent.width / 3
+            Layout.alignment: Qt.AlignCenter
+            Layout.fillHeight: true
 
-            model: ["Option 1", "Option 2", "Option 3","Option 1", "Option 2", "Option 3","Option 1", "Option 2", "Option 3","Option 1", "Option 2", "Option 3"]
-            delegate: CheckDelegate {
-                text: modelData
+            Layout.minimumHeight: 50
+            Layout.preferredHeight: 40
+
+            border.color: "red"
+            border.width: 3
+
+            ListView {
+                id: groupNamesListView
+                anchors.top: parent.top
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
+                height: parent.height
+
+                model: Activity.groupsNamesArray
+                delegate: CheckDelegate {
+                    text: modelData
+
+                    onCheckedChanged: {
+                        print("checked changed: " + index)
+                    }
+                }
             }
         }
     }
 
-    ViewButton {
-        id: saveButton
+    onClosed: {
+        console.log("close popup")
+        var pupilGroupsCheckedList = []
+        pupilGroupsCheckedList = Activity.readPupilGroupsChecked(index)
 
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        text: qsTr("Save")
-        onClicked: {
-            console.log("---- " + addModifyGroupNameTextInput.text)
-            addModifyGroupDialog.accepted(addModifyGroupNameTextInput.text)
-        }
+        groupNamesListView.contains()
 
+        print("index: " + index)
+        console
     }
 
-    ViewButton {
-        id: cancelButton
-
-        anchors.right: saveButton.left
-        anchors.bottom: parent.bottom
-        text: qsTr("Cancel")
-
-        onClicked: {
-           console.log("cancel...")
-           addModifyGroupDialog.close();
-        }
-    }
 }

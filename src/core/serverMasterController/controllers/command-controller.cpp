@@ -140,7 +140,7 @@ void CommandController::onEditClientDeleteExecuted()
 	qDebug() << "Client deleted.";
 
 	implementation->clientSearch->search();
-	implementation->navigationController->goDashboardView();
+    implementation->navigationController->goAddPupilsFromListDialog();
 }
 
 void CommandController::onManagePupilsAddPupilExecuted()
@@ -159,7 +159,7 @@ void CommandController::onManagePupilsAddPupilExecuted()
 void CommandController::onManagePupilsAddPupilsFromListExecuted()
 {
     qDebug() << "You created new pupils from list!";
-
+    implementation->navigationController->goAddPupilsFromListDialog();
   /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
 
     qDebug() << "New client saved.";
