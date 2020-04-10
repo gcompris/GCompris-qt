@@ -232,8 +232,10 @@ ActivityBase {
 
         Score {
             id: score
-            anchors.top: okButton.bottom
-            anchors.bottom: keyboard.top
+            anchors.top: undefined
+            anchors.bottom: undefined
+            anchors.verticalCenter: okButton.verticalCenter
+            anchors.right: okButton.visible ? okButton.left : background.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             onStop: Activity.initSubLevel()
         }
