@@ -69,8 +69,10 @@ function stop() {
 }
 
 function initLevel() {
-    if(items.levels)
+    if(items.levels) {
         items.instructionText = items.levels[currentLevel].objective;
+        items.instruction.opacity = 0.8;
+    }
     items.bar.level = currentLevel + 1;
     dataset = items.levels;
     numberOfLevel = dataset.length;

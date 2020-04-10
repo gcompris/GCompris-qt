@@ -113,6 +113,7 @@ ActivityBase {
             property alias okButton: okButton
             property alias answerColumn: answerColumn
             property alias itemListModel: itemList.model
+            property alias instruction: instruction
             property string instructionText: ""
             property alias score: score
             property GCSfx audioEffects: activity.audioEffects
@@ -126,6 +127,7 @@ ActivityBase {
             anchors.bottom: background.bottom
             width: background.width
             height: background.height
+            onEntered: instruction.opacity !== 0 ? instruction.opacity = 0 : null
         }
 
         Image {
