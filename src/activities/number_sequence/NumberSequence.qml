@@ -245,7 +245,7 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-        
+
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
