@@ -99,6 +99,8 @@ function previousLevel() {
 function cleanUp() {
     userAnswers = new Array();
     answerToFind = new Array();
+    items.answerColumn.model = null;
+    items.itemListModel = null;
 }
 
 function setUserAnswer(imgPath, userValue) {
@@ -148,7 +150,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-var currentAnswerItem
+var currentAnswerItem;
 
 function registerAnswerItem(item) {
     currentAnswerItem = item;

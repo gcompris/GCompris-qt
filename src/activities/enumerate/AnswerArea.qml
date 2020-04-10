@@ -107,9 +107,11 @@ Rectangle {
             userEntry.text = ""
         }
 
-        userEntry.text = text
-        Activity.resetAnswerAreaColor();
-        if (Activity.answersMode === 1 && Activity.lockKeyboard === false) {
+        if(Activity.lockKeyboard === false) {
+            userEntry.text = text;
+            Activity.resetAnswerAreaColor();
+        }
+        if(Activity.answersMode === 1 && Activity.lockKeyboard === false) {
             valid = Activity.setUserAnswer(imgPath, parseInt(userEntry.text));
             Activity.checkAnswersAuto();
         } else {
