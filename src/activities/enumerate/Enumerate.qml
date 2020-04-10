@@ -115,7 +115,9 @@ ActivityBase {
             property alias itemListModel: itemList.model
             property string instructionText: ""
             property alias score: score
+            property GCSfx audioEffects: activity.audioEffects
             property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
+            property int mode: 1 // default is automatic
         }
 
         DropArea {
@@ -150,7 +152,6 @@ ActivityBase {
                 AnswerArea {
                     imgPath: modelData
                     focus: true
-                    audioEffects: activity.audioEffects
                     state: "default"
                 }
             }
@@ -216,8 +217,8 @@ ActivityBase {
                 activity.focus = true
             }
             onLoadData: {
-                if(activityData) {
-                    Activity.initLevel()
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
                 }
             }
             onClose: {
@@ -259,6 +260,8 @@ ActivityBase {
 
         BarButton {
             id: okButton
+            enabled: items.mode === 2
+            visible: items.mode === 2
             anchors {
                 bottom: bar.top
                 right: parent.right
@@ -270,8 +273,8 @@ ActivityBase {
             onClicked: Activity.checkAnswers();
         }
 
-        Keys.onReturnPressed: okButton.enabled === true ? Activity.checkAnswers() : ""
-        Keys.onEnterPressed: okButton.enabled === true ? Activity.checkAnswers() : ""
+        Keys.onReturnPressed: okButton.visible && okButton.enabled === true ? Activity.checkAnswers() : ""
+        Keys.onEnterPressed: okButton.visible && okButton.enabled === true ? Activity.checkAnswers() : ""
 
         Bonus {
             id: bonus

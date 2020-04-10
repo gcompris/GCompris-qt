@@ -31,22 +31,22 @@ Rectangle {
     height: width / 2
     radius: 10
     border {
-        width: activeFocus ?  3 : 1
-        color: "black"
+        width: activeFocus && state === "default" ?  5 : 1
+        color: "#373737"
     }
 
     states: [
         State {
             name: "badAnswer"
-            PropertyChanges {target: answerBackground ; color: "red"}
+            PropertyChanges {target: answerBackground ; color: "#ea5454"} //red
         },
         State {
             name: "goodAnswer"
-            PropertyChanges {target: answerBackground ; color: "green"}
+            PropertyChanges {target: answerBackground ; color: "#54ea54"} //green
         },
         State {
             name: "default"
-            PropertyChanges {target: answerBackground ; color: activeFocus ? "#ff07fff2" : "#cccccccc"}
+            PropertyChanges {target: answerBackground ; color: activeFocus ? "#63ede5" : "#eeeeee"} //light blue, grey
         }
     ]
 
@@ -55,36 +55,21 @@ Rectangle {
     // True when the value is entered correctly
     property bool valid: false
 
-    property GCSfx audioEffects
-
     Component.onCompleted: Activity.registerAnswerItem(answerBackground)
 
-    onValidChanged: valid ? audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav") : null
+    onValidChanged: valid ? Activity.playAudio() : null
 
     // A top gradient
     Rectangle {
         anchors.fill: parent
-        anchors.margins: activeFocus ?  3 : 1
+        anchors.margins: parent.activeFocus ?  5 : 1
         radius: 10
+        visible: answerBackground.state === "default"
         gradient: Gradient {
-            GradientStop { position: 0.0; color: valid ? "#CC00FF00" : "#CCFFFFFF" }
-            GradientStop { position: 0.5; color: valid ? "#8000FF00" : "#80FFFFFF" }
-            GradientStop { position: 1.0; color: valid ? "#8000F000" : "#00000000" }
+            GradientStop { position: 0.0; color: valid ? "#ff54ea54" : "#CCFFFFFF" }
+            GradientStop { position: 0.5; color: valid ? "#ff54ea54" : "#80FFFFFF" }
+            GradientStop { position: 1.0; color: valid ? "#ff54ea54" : "#00000000" }
         }
-    }
-
-    // The OK feedback
-    Image {
-        source: "qrc:/gcompris/src/core/resource/apply.svg";
-        fillMode: Image.PreserveAspectFit
-        anchors {
-            right: parent.left
-            verticalCenter: parent.verticalCenter
-        }
-        sourceSize.height: parent.height * 0.8
-        anchors.margins: 10
-        opacity: valid ? 1.0 : 0.0
-        Behavior on opacity { NumberAnimation { duration: 200 } }
     }
 
     MouseArea {
@@ -124,8 +109,13 @@ Rectangle {
 
         userEntry.text = text
         Activity.resetAnswerAreaColor();
-        Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
-        Activity.enableOkButton()
+        if (Activity.answersMode === 1 && Activity.lockKeyboard === false) {
+            valid = Activity.setUserAnswer(imgPath, parseInt(userEntry.text));
+            Activity.checkAnswersAuto();
+        } else {
+            Activity.setUserAnswer(imgPath, parseInt(userEntry.text));
+            Activity.enableOkButton();
+            }
     }
 
     GCText {

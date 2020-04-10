@@ -23,16 +23,16 @@
 .import QtQuick 2.6 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/enumerate/resource/"
-var url2 = "qrc:/gcompris/src/activities/algorithm/resource/"
-var items
-var maxSubLevel
-var dataset
-var currentLevel
-var currentSubLevel
-var numberOfLevel
-var numberOfItemType
-var numberOfItemMax
+var url = "qrc:/gcompris/src/activities/enumerate/resource/";
+var url2 = "qrc:/gcompris/src/activities/algorithm/resource/";
+var items;
+var maxSubLevel;
+var dataset;
+var currentLevel;
+var currentSubLevel;
+var numberOfLevel;
+var numberOfItemType;
+var numberOfItemMax;
 var itemIcons = [
             url2 + "apple.svg",
             url2 + "banana.svg",
@@ -45,66 +45,81 @@ var itemIcons = [
             url2 + "plum.svg",
             url + "strawberry.svg",
             url + "watermelon.svg",
-        ]
-var numberOfTypes = itemIcons.length
-var userAnswers = new Array()
-var answerToFind = new Array()
+        ];
+var numberOfTypes = itemIcons.length;
+var userAnswers = new Array();
+var answerToFind = new Array();
+var answersMode;
+var lockKeyboard = true;
 
 
 // We keep a globalZ across all items. It is increased on each
 // item selection to put it on top
-var globalZ = 0
+var globalZ = 0;
 
 function start(items_) {
-    items = items_
-    currentLevel = 0
-    initLevel()
+    items = items_;
+    answersMode = items.mode;
+    currentLevel = 0;
+    initLevel();
 }
 
 function stop() {
-    cleanUp()
+    cleanUp();
 }
 
 function initLevel() {
     if(items.levels)
-        items.instructionText = items.levels[currentLevel].objective
-    items.bar.level = currentLevel + 1
-    dataset = items.levels
-    numberOfLevel = dataset.length
-    currentSubLevel = 0
-    numberOfItemType = dataset[currentLevel].numberOfItemType
-    numberOfItemMax = dataset[currentLevel].numberOfItemMax
-    maxSubLevel = dataset[currentLevel].sublevels
+        items.instructionText = items.levels[currentLevel].objective;
+    items.bar.level = currentLevel + 1;
+    dataset = items.levels;
+    numberOfLevel = dataset.length;
+    currentSubLevel = 0;
+    numberOfItemType = dataset[currentLevel].numberOfItemType;
+    numberOfItemMax = dataset[currentLevel].numberOfItemMax;
+    maxSubLevel = dataset[currentLevel].sublevels;
     items.score.numberOfSubLevels = maxSubLevel;
     initSubLevel();
 }
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
+        currentLevel = 0;
     }
     initLevel();
 }
 
 function previousLevel() {
     if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
+        currentLevel = numberOfLevel - 1;
     }
     initLevel();
 }
 
 function cleanUp() {
-    userAnswers = new Array()
-    answerToFind = new Array()
+    userAnswers = new Array();
+    answerToFind = new Array();
 }
 
 function setUserAnswer(imgPath, userValue) {
-    userAnswers[imgPath] = userValue
+    userAnswers[imgPath] = userValue;
+    if (answersMode === 1) {
+        return userAnswers[imgPath] === answerToFind[imgPath];
+    }
+}
+
+function checkAnswersAuto() {
+    for (var key in answerToFind) {
+        if(userAnswers[key] !== answerToFind[key]) {
+            return;
+        }
+    }
+    nextSubLevel();
 }
 
 function checkAnswers() {
     items.okButton.enabled = false;
-    var i = 0
+    var i = 0;
     var isAnswerGood =  true;
     for (var key in answerToFind) {
         if(userAnswers[key] !== answerToFind[key]) {
@@ -113,13 +128,15 @@ function checkAnswers() {
         }
         else
             items.answerColumn.itemAt(i).state = "goodAnswer";
-         i++
+         i++;
     }
 
-    if(isAnswerGood)
-        nextSubLevel()
+    if(isAnswerGood) {
+        playAudio();
+        nextSubLevel();
+    }
     else
-        items.bonus.bad("smiley")
+        items.bonus.bad("smiley");
 }
 
 function resetAnswerAreaColor() {
@@ -134,33 +151,35 @@ function getRandomInt(min, max) {
 var currentAnswerItem
 
 function registerAnswerItem(item) {
-    currentAnswerItem = item
-    item.forceActiveFocus()
+    currentAnswerItem = item;
+    item.forceActiveFocus();
 }
 
 function initSubLevel() {
-     cleanUp()
-    itemIcons = Core.shuffle(itemIcons)
+    cleanUp();
+    itemIcons = Core.shuffle(itemIcons);
     items.score.currentSubLevel = currentSubLevel + 1;
     items.okButton.enabled = false;
-    var enumItems = new Array()
-    var types = new Array()
+    var enumItems = new Array();
+    var types = new Array();
     for(var type = 0; type < numberOfItemType; type++) {
-        var nbItems = getRandomInt(1, numberOfItemMax)
+        var nbItems = getRandomInt(1, numberOfItemMax);
         for(var j = 0; j < nbItems; j++) {
-            enumItems.push(itemIcons[type])
+            enumItems.push(itemIcons[type]);
         }
-        answerToFind[itemIcons[type]] = nbItems
-        types.push(itemIcons[type])
+        answerToFind[itemIcons[type]] = nbItems;
+        types.push(itemIcons[type]);
     }
-    items.answerColumn.model = types
-    items.itemListModel = enumItems
+    items.answerColumn.model = types;
+    items.itemListModel = enumItems;
+    lockKeyboard = false;
 }
 
 function nextSubLevel() {
+    lockKeyboard = true;
     if( ++currentSubLevel >= maxSubLevel) {
         items.okButton.enabled = false;
-        items.bonus.good("smiley")
+        items.bonus.good("smiley");
         currentSubLevel = 0;
     }
     else
@@ -170,7 +189,11 @@ function nextSubLevel() {
 function enableOkButton() {
     for (var key in answerToFind) {
         if(typeof userAnswers[key] == 'undefined')
-            return
+            return;
     }
     items.okButton.enabled = true;
+}
+
+function playAudio() {
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
 }
