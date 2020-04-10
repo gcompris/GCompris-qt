@@ -25,38 +25,26 @@ Data {
     difficulty: 2
     data: [
         {
-            "objective": qsTr("Group 2 types of fruits and enumerate each group (4 fruits max)"),
-            "sublevels" : "4",
-            "numberOfItemType" : 2,
-            "numberOfItemMax"  : 4
+            "objective": qsTr("Group 3 types of fruits and enumerate each group (3 fruits max)"),
+            "sublevels" : "5",
+            "numberOfItemType" : 3,
+            "numberOfItemMax"  : 3
         },
         {
             "objective": qsTr("Group 3 types of fruits and enumerate each group (4 fruits max)"),
-            "sublevels" : "4",
+            "sublevels" : "5",
             "numberOfItemType" : 3,
             "numberOfItemMax"  : 4
         },
         {
             "objective": qsTr("Group 2 types of fruits and enumerate each group (5 fruits max)"),
             "sublevels" : "5",
-            "numberOfItemType" : 2,
-            "numberOfItemMax"  : 5
-        },
-        {
-            "objective": qsTr("Group 3 types of fruits and enumerate each group (5 fruits max)"),
-            "sublevels" : "5",
             "numberOfItemType" : 3,
             "numberOfItemMax"  : 5
         },
         {
-            "objective": qsTr("Group 2 types of fruits and enumerate each group (6 fruits max)"),
-            "sublevels" : "6",
-            "numberOfItemType" : 2,
-            "numberOfItemMax"  : 6
-        },
-        {
-           "objective": qsTr("Group 3 types of fruits and enumerate each group (6 fruits max)"),
-            "sublevels" : "6",
+            "objective": qsTr("Group 3 types of fruits and enumerate each group (6 fruits max)"),
+            "sublevels" : "5",
             "numberOfItemType" : 3,
             "numberOfItemMax"  : 6
         }

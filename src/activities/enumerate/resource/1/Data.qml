@@ -25,14 +25,8 @@ Data {
     difficulty: 1
     data: [
         {
-            "objective": qsTr("Enumerate 1 fruit"),
-            "sublevels" : "2",
-            "numberOfItemType" : 1,
-            "numberOfItemMax"  : 1
-        },
-        {
             "objective": qsTr("Enumerate up to 2 fruits"),
-            "sublevels" : "3",
+            "sublevels" : "4",
             "numberOfItemType" : 1,
             "numberOfItemMax"  : 2
         },
