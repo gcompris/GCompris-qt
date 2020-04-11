@@ -35,7 +35,7 @@ ActivityBase {
     property string dataSetUrl: "qrc:/gcompris/src/activities/gletters/resource/"
 
     property bool uppercaseOnly: false
-    
+
     property int speedSetting: 10
 
     property string activityName: "gletters"
@@ -77,7 +77,7 @@ ActivityBase {
 
         // system locale by default
         property string locale: "system"
-        
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -220,7 +220,7 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-        
+
         Bar {
             id: bar
             anchors.bottom: keyboard.top
@@ -241,14 +241,14 @@ ActivityBase {
             interval: 2000
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-        
+
         Score {
             id: score
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: bar.top
         }
-        
+
         VirtualKeyboard {
             id: keyboard
             anchors.bottom: parent.bottom
@@ -257,7 +257,7 @@ ActivityBase {
             onKeypress: Activity.processKeyPress(text)
             onError: console.log("VirtualKeyboard error: " + msg);
         }
-        
+
         Wordlist {
             id: wordlist
             defaultFilename: activity.dataSetUrl + "default-en.json"
@@ -268,7 +268,7 @@ ActivityBase {
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }
-        
+
         Timer {
             id: wordDropTimer
             repeat: false
