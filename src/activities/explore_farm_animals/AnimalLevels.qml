@@ -62,8 +62,8 @@ Image {
 
     Image {
         id: star
-        x: animalImg.width / 2.5
-        y: animalImg.height * 0.8
+        anchors.verticalCenter: animalImg.bottom
+        anchors.horizontalCenter: animalImg.horizontalCenter
         visible: false
         source:"qrc:/gcompris/src/core/resource/star.png"
     }

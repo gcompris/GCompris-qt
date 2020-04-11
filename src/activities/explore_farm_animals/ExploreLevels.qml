@@ -39,27 +39,31 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Item {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/chess/resource/background-wood.svg"
+        width: parent.width
+        height: parent.height
+        sourceSize.width: width
+        sourceSize.height: height
 
         /* In order to accept any screen ratio the play area is always a 1000x1000
-         * square and is centered in a big background image that is 2000x2000
+         * square and is centered in a big background image that is 3000x3000
          */
 
         Image {
             id: bg
             source: dataset.item.backgroundImage
-            sourceSize.width: 2000 * ApplicationInfo.ratio
-            sourceSize.height: 2000 * ApplicationInfo.ratio
-            width: 2000 * background.playRatio
+            sourceSize.width: width
+            sourceSize.height: width
+            width: 3000 * background.playRatio
             height: width
             anchors.centerIn: parent
         }
 
-        property bool horizontalLayout: background.width >= background.height
         property int playX: (activity.width - playWidth) / 2
         property int playY: (activity.height - playHeight) / 2
-        property int playWidth: horizontalLayout ? activity.height : activity.width
+        property int playWidth: Math.min(activity.height - (bar.height * 2.2), activity.width)
         property int playHeight: playWidth
         property double playRatio: playWidth / 1000
 
@@ -97,7 +101,7 @@ ActivityBase {
             property var questionOrder
             property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[progressbar.value]] : ""
         }
-        
+
         Timer {
             id: nextQuestion
             repeat: false
