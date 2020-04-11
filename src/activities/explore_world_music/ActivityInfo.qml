@@ -29,7 +29,7 @@ ActivityInfo {
   description: qsTr("Learn about the music of the world.")
   // intro: "Click on the suitcases to learn about music from around the world."
   //: Help goal
-  goal: qsTr("Develop a better understanding of the variety of music present in the world")
+  goal: qsTr("Develop a better understanding of the variety of music present in the world.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
