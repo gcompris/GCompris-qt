@@ -84,7 +84,7 @@ QtObject {
 
     property var instructions : [
         {
-            "text": qsTr("Explore exotic animals from around the world.")
+            "text": qsTr("Explore wild animals from around the world.")
         },
         {
             "text": qsTr("Click on location where the given animal lives.")
