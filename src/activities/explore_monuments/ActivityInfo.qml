@@ -29,7 +29,7 @@ ActivityInfo {
   description: qsTr("Explore Monuments around the world.")
   //intro: "Explore Monuments around the world."
   //: Help goal
-  goal: qsTr("To learn about different monuments on the basis of their location.")
+  goal: qsTr("Learn about various monuments from around the world and remember their location.")
   //: Help prerequisite
   prerequisite: qsTr("Knowledge of different monuments.")
   //: Help manual
