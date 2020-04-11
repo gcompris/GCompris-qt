@@ -87,9 +87,12 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
     QTest::addColumn<int>("lastGCVersionRan");
     QTest::addColumn<bool>("isFullscreen");
     QTest::addColumn<QString>("renderer");
-
-    QTest::newRow("dummySettings1") << true << true << true << (quint32)21 << (quint32)25 << true << "en_EN" << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << "codeKey1" << true << true << "wordset1" << "downloadServerUrl1" << "cachePath1" << "userDataPath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer";
-    QTest::newRow("dummySettings2") << false << false << false << (quint32)20 << (quint32)32 << false << "en_US" << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << "codekey2" << false << false << "wordset2" << "downloadServerUrl2" << "cachePath2" << "userDataPath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer";
+    QTest::addColumn<qreal>("backgroundMusicVolume");
+    QTest::addColumn<qreal>("audioEffectsVolume");
+    QTest::addColumn<QStringList>("filteredBackgroundMusic");
+    
+    QTest::newRow("dummySettings1") << true << true << true << (quint32)21 << (quint32)25 << true << "en_EN" << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << "codeKey1" << true << true << "wordset1" << "downloadServerUrl1" << "cachePath1" << "userDataPath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer" << (qreal)0.5 << (qreal)0.7 << (QStringList() << "music1");
+    QTest::newRow("dummySettings2") << false << false << false << (quint32)20 << (quint32)32 << false << "en_US" << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << "codekey2" << false << false << "wordset2" << "downloadServerUrl2" << "cachePath2" << "userDataPath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer" << (qreal)1.0 << (qreal)0.0 << (QStringList() << "music2" << "music3");
 }
 
 void CoreApplicationSettingsTest::ApplicationSettingsTest()
@@ -125,6 +128,9 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest()
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(int, lastGCVersionRan, setLastGCVersionRan, lastGCVersionRanChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isFullscreen, setFullscreen, fullscreenChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, renderer, setRenderer, rendererChanged);
+    APPLICATION_SETTINGS_TEST_ATTRIBUTE(qreal, backgroundMusicVolume, setBackgroundMusicVolume, backgroundMusicVolumeChanged);
+    APPLICATION_SETTINGS_TEST_ATTRIBUTE(qreal, audioEffectsVolume, setAudioEffectsVolume, audioEffectsVolumeChanged);
+    APPLICATION_SETTINGS_TEST_ATTRIBUTE(QStringList, filteredBackgroundMusic, setFilteredBackgroundMusic, filteredBackgroundMusicChanged);
 
     delete ApplicationSettingsMock::getInstance();
 }

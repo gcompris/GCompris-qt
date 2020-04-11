@@ -10,6 +10,7 @@ set(CORE_TEST_LIBRARIES
 
 ecm_add_tests(ActivityInfoTest.cpp
               ApplicationSettingsTest.cpp
+              DatasetTest.cpp
               DirectoryTest.cpp
               FileTest.cpp
               ApplicationInfoTest.cpp

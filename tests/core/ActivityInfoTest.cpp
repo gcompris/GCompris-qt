@@ -48,7 +48,9 @@ void CoreActivityInfoTest::ActivityInfoTest_data()
 {
     QTest::addColumn<QString>("name");
     QTest::addColumn<QString>("section");
-    QTest::addColumn<unsigned int>("difficulty");
+    QTest::addColumn<quint32>("difficulty");
+    QTest::addColumn<quint32>("minimalDifficulty");
+    QTest::addColumn<quint32>("maximalDifficulty");
     QTest::addColumn<QString>("icon");
     QTest::addColumn<QString>("author");
     QTest::addColumn<bool>("demo");
@@ -62,9 +64,9 @@ void CoreActivityInfoTest::ActivityInfoTest_data()
     QTest::addColumn<bool>("enabled");
     QTest::addColumn<int>("createdInVersion");
 
-    QTest::newRow("ActivityInfo") << "Name" << "section" << (unsigned int)3 << "icon" << "author" << true << "title" << "description" << "goal" << "prerequisite" << "manual" << "credit" << false << false << 2;
-    QTest::newRow("UnknownInfo") << "Unknown" << "Unknown" << (unsigned int)5 << "Unknown" << "Unknown" << false << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << true << true << 10;
-    QTest::newRow("Empty") << "" << "" << (unsigned int)0 << "" << "" << false << "" << "" << "" << "" << "" << "" << true << true << 0;
+    QTest::newRow("ActivityInfo") << "Name" << "section" << (quint32)3 << (quint32)2 << (quint32)4 << "icon" << "author" << true << "title" << "description" << "goal" << "prerequisite" << "manual" << "credit" << false << false << 2;
+    QTest::newRow("UnknownInfo") << "Unknown" << "Unknown" << (quint32)5 << (quint32)1 << (quint32)6 << "Unknown" << "Unknown" << false << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << true << true << 10;
+    QTest::newRow("Empty") << "" << "" << (quint32)0 << (quint32)1 << (quint32)2 << "" << "" << false << "" << "" << "" << "" << "" << "" << true << true << 0;
 }
 
 void CoreActivityInfoTest::ActivityInfoTest()
@@ -91,7 +93,9 @@ void CoreActivityInfoTest::ActivityInfoTest()
 
     ACTIVITY_INFO_TEST_ATTRIBUTE(name, Name, QString);
     ACTIVITY_INFO_TEST_ATTRIBUTE(section, Section, QString);
-    ACTIVITY_INFO_TEST_ATTRIBUTE(difficulty, Difficulty, unsigned int);
+    ACTIVITY_INFO_TEST_ATTRIBUTE(difficulty, Difficulty, quint32);
+    ACTIVITY_INFO_TEST_ATTRIBUTE(minimalDifficulty, MinimalDifficulty, quint32);
+    ACTIVITY_INFO_TEST_ATTRIBUTE(maximalDifficulty, MaximalDifficulty, quint32);
     ACTIVITY_INFO_TEST_ATTRIBUTE(icon, Icon, QString);
     ACTIVITY_INFO_TEST_ATTRIBUTE(author, Author, QString);
     ACTIVITY_INFO_TEST_ATTRIBUTE(demo, Demo, bool);
