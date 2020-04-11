@@ -104,7 +104,7 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
              }
         }
-        
+
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
@@ -130,6 +130,9 @@ ActivityBase {
         Score {
             id: score
             visible: numberOfSubLevels > 1
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
         }
 
         Bonus {
@@ -188,7 +191,7 @@ ActivityBase {
                     opacity = 0
                 }
             }
-            
+
             Rectangle {
                 width: parent.width - anchors.margins
                 height: parent.height - anchors.margins
@@ -198,7 +201,7 @@ ActivityBase {
                 radius: 10
                 color: "#87A6DD"  //light blue
             }
-        
+
             Rectangle {
                 width: parent.width - anchors.margins
                 height: parent.height - anchors.margins
@@ -208,7 +211,7 @@ ActivityBase {
                 radius: 10
                 color: "#E8E8E8" //paper white
             }
-            
+
             GCText {
                 id: toolTipTxt
                 anchors.centerIn: parent
@@ -218,8 +221,7 @@ ActivityBase {
                 wrapMode: TextEdit.WordWrap
             }
         }
-        
-        
+
         Rectangle {
             id: grid
 
@@ -232,7 +234,7 @@ ActivityBase {
             height: background.vert ?
                         background.height - (bar.height * 1.1) :
                         background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
-            
+
             Image {
                 id: backgroundImage
                 fillMode: Image.PreserveAspectFit
@@ -245,7 +247,7 @@ ActivityBase {
                 height: source == "" ? grid.height : (ratio < gridRatio ? grid.height : grid.width / ratio)
                 anchors.topMargin: 10
                 anchors.centerIn: parent
-                
+
                 //Inserting static background images
                 Repeater {
                     id: backgroundPieces
@@ -289,7 +291,7 @@ ActivityBase {
                 }
             }
         }
-        
+
         Rectangle {
             id: instruction
             anchors.horizontalCenter: instructionTxt.horizontalCenter
@@ -311,7 +313,7 @@ ActivityBase {
             function hide() {
                 opacity = 0
             }
-            
+
             Rectangle {
                 id: insideFill
                 width: parent.width - anchors.margins
@@ -340,7 +342,7 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
         }
 
-        
+
         ListModel {
             id: backgroundPiecesModel
         }
