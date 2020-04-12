@@ -42,7 +42,7 @@ ActivityBase {
         property bool horizontalLayout: background.width >= background.height
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -369,72 +369,34 @@ ActivityBase {
             onClose: home()
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias modeBox: modeBox
-
-                    property var availableModes: [
-                        { "text": qsTr("Easy"), "value": 1 },
-                        { "text": qsTr("Medium"), "value": 2 },
-                        { "text": qsTr("Difficult"), "value": 3 }
-                    ]
-
-                    Flow {
-                        id: flow
-                        spacing: 5
-                        width: dialogActivityConfig.width
-                        GCComboBox {
-                            id: modeBox
-                            model: availableModes
-                            background: dialogActivityConfig
-                            label: qsTr("Select your difficulty")
-                        }
-                    }
-                }
-            }
+            currentActivity: activity.activityInfo
 
             onClose: home()
 
             onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    items.mode = dataToSave["mode"];
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
                 }
             }
-            onSaveData: {
-                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
-                if (newMode !== items.mode) {
-                    items.mode = newMode;
-                    dataToSave = {"mode": items.mode};
-                }
-                Activity.initLevel();
-            }
-            function setDefaultValues() {
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
-                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                        break;
-                    }
-                }
+            onStartActivity: {
+                rootWindow.stop()
+                rootWindow.start()
             }
         }
 
         Bar {
             id: bar
             level: 1
-            content: BarEnumContent { value: help | home | level | reload | config }
+            content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                // Set default values
-                dialogActivityConfig.setDefaultValues();
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
             onReloadClicked: Activity.restartLevel()
