@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "gletters/gletters.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Simple Letters")
   //: Help title

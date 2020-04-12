@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "mining/mining.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Mining for gold")
   //: Help title

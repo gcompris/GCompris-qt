@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "mazerelative/mazerelative.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Relative Maze")
   //: Help title

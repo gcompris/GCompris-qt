@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 2
     icon: "alphabet-sequence/alphabet-sequence.svg"
     author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-    demo: false
     //: Activity title
     title: qsTr("Alphabet sequence")
     //: Help title

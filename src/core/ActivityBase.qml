@@ -248,14 +248,6 @@ Item {
         anchors.fill: parent
     }
 
-    Loader {
-        id: demoPageLoader
-        source: ApplicationSettings.activationMode == 1 ?
-                    "BuyMeOverlayInapp.qml" : "BuyMeOverlay.qml"
-        anchors.fill: parent
-        active: !activityInfo.demo && ApplicationSettings.isDemoMode
-    }
-
     onLevelFolderChanged: {
         if(levelFolder === undefined || levelFolder.length === 0) {
             return

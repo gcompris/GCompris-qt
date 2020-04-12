@@ -148,9 +148,6 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 #    message("${_variableName}=${${_variableName}}")
 #endforeach()
 
-set(ACTIVATION_MODE "no" CACHE STRING "Policy for activation [no|inapp|internal]")
-option(WITH_DEMO_ONLY "Include only demo activities" OFF)
-
 option(WITH_DOWNLOAD "Internal download" ON)
 # @FIXME These permissions should be removed if download is disable
 #        but it makes the application crash on exit (tested on Android 6)
@@ -171,12 +168,7 @@ if(ANDROID)
   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ANDROID_ABI}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/android/assets/${_data_dest_dir}/rcc CACHE INTERNAL "" FORCE)
-  if(ACTIVATION_MODE STREQUAL "inapp")
-    set(ANDROID_BILLING_PERMISSION "<uses-permission android:name=\"com.android.vending.BILLING\"/>")
-    set(ANDROID_PACKAGE "net.gcompris")
-  else()
-    set(ANDROID_PACKAGE "net.gcompris.full")
-  endif()
+  set(ANDROID_PACKAGE "net.gcompris.full")
   add_subdirectory(android)
 elseif(CMAKE_HOST_APPLE)
   # MacOSX build

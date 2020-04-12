@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "traffic/traffic.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
-  demo: true
   //: Activity title
   title: qsTr("A sliding-block puzzle game")
   //: Help title

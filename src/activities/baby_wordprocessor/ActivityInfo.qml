@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "baby_wordprocessor/baby_wordprocessor.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("A baby wordprocessor")
   //: Help title

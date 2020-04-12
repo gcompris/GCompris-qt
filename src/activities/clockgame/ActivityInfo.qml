@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "clockgame/clockgame.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Learning Clock")
   //: Help title

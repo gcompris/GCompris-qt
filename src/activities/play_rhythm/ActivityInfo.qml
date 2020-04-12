@@ -26,7 +26,6 @@ ActivityInfo {
   difficulty: 1
   icon: "play_rhythm/play_rhythm.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Play rhythm")
   //: Help title

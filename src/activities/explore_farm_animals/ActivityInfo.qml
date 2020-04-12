@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "explore_farm_animals/explore_farm_animals.svg"
   author: "Djalil Mesli &lt;djalilmesli@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Explore Farm Animals")
   //: Help title

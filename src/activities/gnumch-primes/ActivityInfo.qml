@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "gnumch-primes/gnumch-primes.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Gnumch Primes")
   //: Help title

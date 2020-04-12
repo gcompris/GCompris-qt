@@ -23,7 +23,6 @@ ActivityInfo {
   difficulty: 1
   icon: "railroad/railroad.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Railroad activity")
   //: Help title

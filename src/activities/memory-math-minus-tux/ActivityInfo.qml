@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "memory-math-minus-tux/memory-math-minus-tux.svg"
   author: "JB BUTET &lt;ashashiwa@mgail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Subtraction memory game against Tux")
   //: Help title

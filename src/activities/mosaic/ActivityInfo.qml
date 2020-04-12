@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "mosaic/mosaic.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Rebuild the mosaic")
   //: Help title

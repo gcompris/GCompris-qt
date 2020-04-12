@@ -25,7 +25,6 @@ ActivityInfo {
   difficulty: 1
   icon: "babymatch/babymatch.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Matching Items")
   //: Help title

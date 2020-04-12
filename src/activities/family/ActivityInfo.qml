@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "family/family.svg"
   author: "Rajdeep Kaur &lt;rajdeep.kaur@kde.org&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Family")
   //: Help title

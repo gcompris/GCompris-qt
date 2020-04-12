@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "explore_world_music/explore_world_music.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Explore World Music")
   //: Help title

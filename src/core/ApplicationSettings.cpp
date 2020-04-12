@@ -47,7 +47,6 @@ static const char *LEVELS_GROUP_KEY = "Levels";
 static const char *FULLSCREEN_KEY = "fullscreen";
 static const char *PREVIOUS_HEIGHT_KEY = "previousHeight";
 static const char *PREVIOUS_WIDTH_KEY = "previousWidth";
-static const char *SHOW_LOCKED_ACTIVITIES_KEY = "showLockedActivities";
 static const char *ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
 static const char *ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
 static const char *ENABLE_BACKGROUND_MUSIC_KEY = "enableBackgroundMusic";
@@ -77,8 +76,6 @@ static const char *FONT_LETTER_SPACING = "fontLetterSpacing";
 
 static const char *DEFAULT_CURSOR = "defaultCursor";
 static const char *NO_CURSOR = "noCursor";
-static const char *DEMO_KEY = "demo";
-static const char *CODE_KEY = "key";
 static const char *KIOSK_KEY = "kiosk";
 static const char *SECTION_VISIBLE = "sectionVisible";
 static const char *WORDSET = "wordset";
@@ -118,32 +115,12 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     m_backgroundMusicVolume = m_config.value(BACKGROUND_MUSIC_VOLUME_KEY, 0.2).toReal();
     m_audioEffectsVolume = m_config.value(AUDIO_EFFECTS_VOLUME_KEY, 0.7).toReal();
 
-    // Init the activation mode
-    if(QLatin1String(ACTIVATION_MODE) == "no")
-        m_activationMode = 0;
-    else if(QLatin1String(ACTIVATION_MODE) == "inapp")
-        m_activationMode = 1;
-    else if(QLatin1String(ACTIVATION_MODE) == "internal")
-        m_activationMode = 2;
-    else
-        qFatal("Unknown activation mode");
-
-    // Set the demo mode
-    if(QLatin1String(ACTIVATION_MODE) != "no")
-        m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
-    else
-        m_isDemoMode = false;
-    m_codeKey = m_config.value(CODE_KEY, "").toString();
-
 #if defined(WITH_KIOSK_MODE)
     m_isKioskMode = m_config.value(KIOSK_KEY, true).toBool();
 #else
     m_isKioskMode = m_config.value(KIOSK_KEY, false).toBool();
 #endif
 
-    // Option only useful if we are in demo mode (else all the activities are available and unlocked)
-    // By default, all the activities are displayed (even locked ones)
-    m_showLockedActivities = m_config.value(SHOW_LOCKED_ACTIVITIES_KEY, m_isDemoMode).toBool();
     m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
     m_wordset = m_config.value(WORDSET, "").toString();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
@@ -177,7 +154,6 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     // no group
     m_isBarHidden = false;
 
-    connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
     connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
     connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
     connect(this, &ApplicationSettings::backgroundMusicEnabledChanged, this, &ApplicationSettings::notifyBackgroundMusicEnabledChanged);
@@ -193,8 +169,6 @@ ApplicationSettings::ApplicationSettings(const QString &configPath, QObject *par
     connect(this, &ApplicationSettings::filterLevelMaxChanged, this, &ApplicationSettings::notifyFilterLevelMaxChanged);
     connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
     connect(this, &ApplicationSettings::wordsetChanged, this, &ApplicationSettings::notifyWordsetChanged);
-    connect(this, &ApplicationSettings::demoModeChanged, this, &ApplicationSettings::notifyDemoModeChanged);
-    connect(this, &ApplicationSettings::codeKeyChanged, this, &ApplicationSettings::notifyCodeKeyChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
     connect(this, &ApplicationSettings::cachePathChanged, this, &ApplicationSettings::notifyCachePathChanged);
@@ -212,7 +186,6 @@ ApplicationSettings::~ApplicationSettings()
     // make sure settings file is up2date:
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(SHOW_LOCKED_ACTIVITIES_KEY, m_showLockedActivities);
     m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
     m_config.setValue(ENABLE_BACKGROUND_MUSIC_KEY, m_isBackgroundMusicEnabled);
     m_config.setValue(FILTERED_BACKGROUND_MUSIC_KEY, m_filteredBackgroundMusic);
@@ -228,8 +201,6 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
     m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
-    m_config.setValue(DEMO_KEY, m_isDemoMode);
-    m_config.setValue(CODE_KEY, m_codeKey);
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
     m_config.setValue(WORDSET, m_wordset);
@@ -257,12 +228,6 @@ ApplicationSettings::~ApplicationSettings()
     m_config.sync();
 
     m_instance = nullptr;
-}
-
-void ApplicationSettings::notifyShowLockedActivitiesChanged()
-{
-    updateValueInConfig(GENERAL_GROUP_KEY, SHOW_LOCKED_ACTIVITIES_KEY, m_showLockedActivities);
-    qDebug() << "notifyShowLockedActivitiesChanged: " << m_showLockedActivities;
 }
 
 void ApplicationSettings::notifyAudioVoicesEnabledChanged()
@@ -380,20 +345,6 @@ void ApplicationSettings::notifyFilterLevelMaxChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MAX, m_filterLevelMax);
     qDebug() << "filterLevelMax set to: " << m_filterLevelMax;
-}
-
-void ApplicationSettings::notifyDemoModeChanged()
-{
-    updateValueInConfig(GENERAL_GROUP_KEY, DEMO_KEY, m_isDemoMode);
-    qDebug() << "notifyDemoMode: " << m_isDemoMode;
-}
-
-void ApplicationSettings::notifyCodeKeyChanged()
-{
-    checkPayment();
-    if(!m_isDemoMode)
-        updateValueInConfig(GENERAL_GROUP_KEY, CODE_KEY, m_codeKey);
-    qDebug() << "notifyCodeKey: " << m_codeKey;
 }
 
 void ApplicationSettings::notifyKioskModeChanged()

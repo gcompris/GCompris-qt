@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "clickgame/clickgame.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Click On Me")
   //: Help title

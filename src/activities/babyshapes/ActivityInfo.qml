@@ -26,7 +26,6 @@ ActivityInfo {
   difficulty: 1
   icon: "babyshapes/babyshapes.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Complete the puzzle")
   //: Help title

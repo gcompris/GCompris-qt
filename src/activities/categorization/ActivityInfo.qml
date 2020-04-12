@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "categorization/categorization.svg"
   author: "Divyam Madaan &lt;divyam3897@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Categorization")
   //: Help title

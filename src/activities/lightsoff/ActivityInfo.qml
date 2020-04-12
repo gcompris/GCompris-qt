@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "lightsoff/lightsoff.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Lights Off")
   //: Help title

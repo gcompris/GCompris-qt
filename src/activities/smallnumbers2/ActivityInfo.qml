@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "smallnumbers2/smallnumbers2.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Numbers with dominoes")
   //: Help title

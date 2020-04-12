@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "memory-case-association-tux/memory-case-association-tux.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Case association memory game against Tux")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "digital_electricity/digital_electricity.svg"
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Digital Electricity")
   //: Help title

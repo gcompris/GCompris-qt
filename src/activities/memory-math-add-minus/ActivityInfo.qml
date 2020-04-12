@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "memory-math-add-minus/memory-math-add-minus.svg"
   author: "JB BUTET &lt;ashashiwa@mgail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Addition and subtraction memory game")
   //: Help title

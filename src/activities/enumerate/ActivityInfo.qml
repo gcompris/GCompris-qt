@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 2
     icon: "enumerate/enumerate.svg"
     author: "Thib ROMAIN &lt;thibrom@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Count the items")
     //: Help title

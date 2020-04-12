@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "gnumch-equality/gnumch-equality.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Gnumch Equality")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "braille_fun/braille_fun.svg"
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Braille Fun")
   //: Help title

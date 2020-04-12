@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "memory-math-mult-div-tux/memory-math-mult-div-tux.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Multiplication and division memory game against Tux")
   //: Help title

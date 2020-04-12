@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "find_the_day/find_the_day.svg"
   author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Find the day")
   //: Help title

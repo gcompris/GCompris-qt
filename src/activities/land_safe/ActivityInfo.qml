@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "land_safe/land_safe.svg"
   author: "Matilda Bernard &lt;serah4291@gmail.com&gt; (Gtk+), Holger Kaelberer &lt;holger.k@elberer.de&gt; (Qt Quick)"
-  demo: true
   //: Activity title
   title: qsTr("Land Safe")
   //: Help title

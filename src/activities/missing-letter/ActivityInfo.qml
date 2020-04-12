@@ -23,7 +23,6 @@ ActivityInfo
   difficulty: 2
   icon: "missing-letter/missing-letter.svg"
   author: "Amit Tomar &lt;a.tomar@outlook.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Missing Letter")
   //: Help title

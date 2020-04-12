@@ -25,39 +25,6 @@
 #include <QDebug>
 #include <QtAndroid>
 
-void ApplicationSettings::setDemoMode(const bool newDemoMode)
-{
-    if(!newDemoMode) {
-        // Call Google play store
-        QAndroidJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
-                                                  "buyGCompris");
-    } else {
-        // Going back to demo mode, should never happens except for testing
-        ApplicationSettings::getInstance()->bought(false);
-    }
-}
-
-void ApplicationSettings::checkPayment() {
-#if defined(WITH_ACTIVATION_CODE)
-    QAndroidJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
-                                              "checkPayment");
-#endif
-}
-
-uint ApplicationSettings::checkActivationCode(const QString &code) {
-    // Not used in inapp mode.
-    return 0;
-}
-
-static void bought(JNIEnv *, jclass /*clazz*/, jboolean b)
-{
-    ApplicationSettings::getInstance()->bought(b);
-}
-
-static JNINativeMethod methods[] = {
-    {"bought", "(Z)V", (void *)bought}
-};
-
 bool ApplicationInfo::requestAudioFocus() const
 {
   qDebug() << "requestAudioFocus";
@@ -75,10 +42,6 @@ jint JNICALL JNI_OnLoad(JavaVM *vm, void *)
 {
     JNIEnv *env;
     if (vm->GetEnv(reinterpret_cast<void **>(&env), JNI_VERSION_1_4) != JNI_OK)
-        return JNI_FALSE;
-
-    jclass clazz = env->FindClass("net/gcompris/GComprisActivity");
-    if (env->RegisterNatives(clazz, methods, sizeof(methods) / sizeof(methods[0])) < 0)
         return JNI_FALSE;
 
     return JNI_VERSION_1_4;

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "memory-math-add-minus-mult-div-tux/memory-math-add-minus-mult-div-tux.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("All operations memory game against Tux")
   //: Help title

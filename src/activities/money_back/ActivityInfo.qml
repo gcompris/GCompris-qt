@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "money_back/money_back.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Give Tux his change")
   //: Help title

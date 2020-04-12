@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "redraw/redraw.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Redraw the given image")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "share/share.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Share pieces of candy")
   //: Help title

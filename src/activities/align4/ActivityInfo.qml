@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "align4/align4.svg"
   author: "Bharath M S &lt;brat.197@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Align four (against Tux)")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 4
     icon: "calendar/calendar.svg"
     author: "Amit Sagtani &lt;asagtani06@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Calendar")
     //: Help title

@@ -50,7 +50,6 @@ public:
 
 protected Q_SLOTS:
     Q_INVOKABLE void filterByTag(const QString &tag, const QString &category = "", bool emitChanged = true);
-    Q_INVOKABLE void filterLockedActivities(bool emitChanged = true);
     Q_INVOKABLE void filterEnabledActivities(bool emitChanged = true);
     // create a tree from the whole list of activities with the activities created between the two versions
     Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion,

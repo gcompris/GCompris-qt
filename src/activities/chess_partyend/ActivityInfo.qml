@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "chess_partyend/chess_partyend.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("End of chess game")
   //: Help title

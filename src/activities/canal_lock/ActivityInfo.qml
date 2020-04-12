@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "canal_lock/canal_lock.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Operate a canal lock")
   //: Help title

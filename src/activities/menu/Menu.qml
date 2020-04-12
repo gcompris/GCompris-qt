@@ -83,7 +83,6 @@ ActivityBase {
         target: ApplicationInfo
         onIsBox2DInstalledChanged: {
             ActivityInfoTree.filterByTag(activity.currentTag, currentCategory)
-            ActivityInfoTree.filterLockedActivities()
             ActivityInfoTree.filterEnabledActivities()
         }
     }
@@ -303,7 +302,6 @@ ActivityBase {
                         }
                         else {
                             ActivityInfoTree.filterByTag(modelData.tag, currentCategory)
-                            ActivityInfoTree.filterLockedActivities()
                             ActivityInfoTree.filterEnabledActivities()
                         }
                     }
@@ -403,7 +401,6 @@ ActivityBase {
                     categoriesGrid.currentIndex = index
                     currentCategory = Object.keys(modelData)[0]
                     ActivityInfoTree.filterByTag(currentTag, currentCategory)
-                    ActivityInfoTree.filterLockedActivities()
                     ActivityInfoTree.filterEnabledActivities()
                 }
                 Image {
@@ -500,17 +497,6 @@ ActivityBase {
                         anchors.top: parent.top
                         anchors.left: iconSeparator.right
                         sourceSize.width: minimalDifficultyIcon.width
-                    }
-                    Image {
-                        anchors {
-                            horizontalCenter: parent.horizontalCenter
-                            top: parent.top
-                            rightMargin: 4
-                        }
-                        source: demo || !ApplicationSettings.isDemoMode
-                                ? "" :
-                                  activity.url + "lock.svg"
-                        sourceSize.width: 30 * ApplicationInfo.ratio
                     }
                     Image {
                         anchors {
@@ -1071,7 +1057,6 @@ ActivityBase {
             onClose: {
                 if(activity.currentTag != "search") {
                     ActivityInfoTree.filterByTag(activity.currentTag, currentCategory)
-                    ActivityInfoTree.filterLockedActivities()
                     ActivityInfoTree.filterEnabledActivities()
                 } else
                     ActivityInfoTree.filterBySearch(searchTextField.text);

@@ -93,11 +93,6 @@ class ActivityInfo : public QObject
     Q_PROPERTY(QString author READ author WRITE setAuthor NOTIFY authorChanged)
 
     /**
-     * Whether the activity is part of the demo version of GCompris.
-     */
-    Q_PROPERTY(bool demo READ demo WRITE setDemo NOTIFY demoChanged)
-
-    /**
      * Title of the activity.
      */
     Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
@@ -167,8 +162,6 @@ public:
     void setIcon(const QString &);
     QString author() const;
     void setAuthor(const QString &);
-    bool demo() const;
-    void setDemo(const bool &);
     QString title() const;
     void setTitle(const QString &);
     QString description() const;
@@ -205,7 +198,6 @@ signals:
     void maximalDifficultyChanged();
     void iconChanged();
     void authorChanged();
-    void demoChanged();
     void titleChanged();
     void descriptionChanged();
     void goalChanged();
@@ -228,7 +220,6 @@ private:
     quint32 m_maximalDifficulty;
     QString m_icon;
     QString m_author;
-    bool m_demo;
     QString m_title;
     QString m_description;
     QString m_goal;

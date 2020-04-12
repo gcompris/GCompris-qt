@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "instruments/instruments.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Music instruments")
   //: Help title

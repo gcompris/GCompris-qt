@@ -28,7 +28,6 @@ ActivityInfo {
   difficulty: 4
   icon: "lang/lang.svg"
   author: "siddhesh suthar &lt;siddhesh.it@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Enrich your vocabulary")
   //: Help title

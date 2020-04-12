@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "algebra_plus/algebra_plus.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Addition of numbers")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "nine_men_morris_2players/nine_men_morris_2players.svg"
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Nine men's morris (with a friend)")
   //: Help title

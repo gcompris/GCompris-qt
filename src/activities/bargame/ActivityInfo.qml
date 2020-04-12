@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "bargame/bargame.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Bargame (against Tux)")
   //: Help title

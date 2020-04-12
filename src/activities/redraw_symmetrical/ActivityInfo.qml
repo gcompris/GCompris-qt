@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "redraw_symmetrical/redraw_symmetrical.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Mirror the given image")
   //: Help title

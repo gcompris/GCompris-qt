@@ -26,7 +26,6 @@ ActivityInfo {
     difficulty: 3
     icon: "guesscount/guesscount.svg"
     author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Guesscount")
     //: Help title

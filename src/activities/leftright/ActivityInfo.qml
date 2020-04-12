@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 2
     icon: "leftright/leftright.svg"
     author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-    demo: false
     //: Activity title
     title: qsTr("Find your left and right hands")
     //: Help title

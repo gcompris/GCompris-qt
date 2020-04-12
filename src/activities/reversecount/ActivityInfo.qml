@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "reversecount/reversecount.svg"
   author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Count intervals")
   //: Help title

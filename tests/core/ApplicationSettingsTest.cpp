@@ -59,7 +59,6 @@ void CoreApplicationSettingsTest::ApplicationSettingsInitializationTest()
 
 void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
 {
-    QTest::addColumn<bool>("showLockedActivities");
     QTest::addColumn<bool>("isAudioVoicesEnabled");
     QTest::addColumn<bool>("isAudioEffectsEnabled");
     QTest::addColumn<bool>("isBackgroundMusicEnabled");
@@ -74,8 +73,6 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
     QTest::addColumn<bool>("isAutomaticDownloadsEnabled");
     QTest::addColumn<quint32>("filterLevelMin");
     QTest::addColumn<quint32>("filterLevelMax");
-    QTest::addColumn<bool>("isDemoMode");
-    QTest::addColumn<QString>("codeKey");
     QTest::addColumn<bool>("isKioskMode");
     QTest::addColumn<bool>("sectionVisible");
     QTest::addColumn<QString>("wordset");
@@ -92,8 +89,8 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest_data()
     QTest::addColumn<qreal>("audioEffectsVolume");
     QTest::addColumn<QStringList>("filteredBackgroundMusic");
     
-    QTest::newRow("dummySettings1") << true << true << true << true << (quint32)21 << (quint32)25 << true << "en_EN" << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << "codeKey1" << true << true << "wordset1" << "downloadServerUrl1" << "cachePath1" << "userDataPath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer" << (qreal)0.5 << (qreal)0.7 << (QStringList() << "music1");
-    QTest::newRow("dummySettings2") << false << false << false << false << (quint32)20 << (quint32)32 << false << "en_US" << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << "codekey2" << false << false << "wordset2" << "downloadServerUrl2" << "cachePath2" << "userDataPath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer" << (qreal)1.0 << (qreal)0.0 << (QStringList() << "music2" << "music3");
+    QTest::newRow("dummySettings1") << true << true << true << (quint32)21 << (quint32)25 << true << "en_EN" << "font1" << true << (quint32)36 << (qreal)2.532 << true << (quint32)26 << (quint32)84 << true << true << "wordset1" << "downloadServerUrl1" << "cachePath1" << "userDataPath1" << (quint32)48 << true << 7 << 52 << false << "softwareRenderer" << (qreal)0.5 << (qreal)0.7 << (QStringList() << "music1");
+    QTest::newRow("dummySettings2") << false << false << false << (quint32)20 << (quint32)32 << false << "en_US" << "font2" << false << (quint32)34 <<(qreal)2.3 << false << (quint32)24 << (quint32)80 << false << false << "wordset2" << "downloadServerUrl2" << "cachePath2" << "userDataPath2" << (quint32)44 << false << 5 << 64 << false << "openglRenderer" << (qreal)1.0 << (qreal)0.0 << (QStringList() << "music2" << "music3");
 }
 
 void CoreApplicationSettingsTest::ApplicationSettingsTest()
@@ -101,7 +98,6 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest()
     ApplicationSettingsMock applicationSettingsMock;
     ApplicationSettingsMock::getInstance();
 
-    APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, showLockedActivities, setShowLockedActivities, showLockedActivitiesChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isAudioVoicesEnabled, setIsAudioVoicesEnabled, audioVoicesEnabledChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isAudioEffectsEnabled, setIsAudioEffectsEnabled, audioEffectsEnabledChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isBackgroundMusicEnabled, setIsBackgroundMusicEnabled, backgroundMusicEnabledChanged);
@@ -116,8 +112,6 @@ void CoreApplicationSettingsTest::ApplicationSettingsTest()
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isAutomaticDownloadsEnabled, setIsAutomaticDownloadsEnabled, automaticDownloadsEnabledChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(quint32, filterLevelMin, setFilterLevelMin, filterLevelMinChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(quint32, filterLevelMax, setFilterLevelMax, filterLevelMaxChanged);
-    APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isDemoMode, setDemoMode, demoModeChanged);
-    APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, codeKey, setCodeKey, codeKeyChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, isKioskMode, setKioskMode, kioskModeChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(bool, sectionVisible, setSectionVisible, sectionVisibleChanged);
     APPLICATION_SETTINGS_TEST_ATTRIBUTE(QString, wordset, setWordset, wordsetChanged);

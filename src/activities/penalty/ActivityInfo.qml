@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "penalty/penalty.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Penalty kick")
   //: Help title

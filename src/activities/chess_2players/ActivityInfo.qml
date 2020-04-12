@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "chess_2players/chess_2players.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Play chess against your friend")
   //: Help title

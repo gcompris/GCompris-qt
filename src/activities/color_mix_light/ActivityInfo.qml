@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "color_mix_light/color_mix_light.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Mixing colors of light")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "chess/chess.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Play chess against Tux")
   //: Help title

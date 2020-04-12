@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "erase_clic/erase_clic.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Click or tap")
   //: Help title

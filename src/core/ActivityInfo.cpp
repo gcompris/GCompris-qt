@@ -32,7 +32,6 @@ ActivityInfo::ActivityInfo(QObject *parent):
     m_difficulty(0),
     m_minimalDifficulty(0),
     m_maximalDifficulty(0),
-    m_demo(true),
     m_favorite(false),
     m_enabled(true),
     m_createdInVersion(0)
@@ -114,16 +113,6 @@ void ActivityInfo::setAuthor(const QString &author)
 {
     m_author = author;
     emit authorChanged();
-}
-
-bool ActivityInfo::demo() const
-{
-    return m_demo;
-}
-void ActivityInfo::setDemo(const bool &demo)
-{
-    m_demo = demo;
-    emit demoChanged();
 }
 
 QString ActivityInfo::title() const

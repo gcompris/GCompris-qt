@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "explore_monuments/explore_monuments.svg"
   author: "Ayush Agrawal &lt;ayushagrawal288@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Explore Monuments")
   //: Help title

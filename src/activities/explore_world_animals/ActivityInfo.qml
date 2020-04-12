@@ -26,7 +26,6 @@ ActivityInfo {
   difficulty: 4
   icon: "explore_world_animals/explore_world_animals.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Explore World Animals")
   //: Help title

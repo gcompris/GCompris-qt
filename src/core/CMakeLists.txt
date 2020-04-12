@@ -57,7 +57,7 @@ set(gcompris_SRCS
 if(ANDROID)
   list(APPEND gcompris_SRCS ApplicationAndroid.cpp)
 else()
-  list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp ApplicationInfoDefault.cpp)
+  list(APPEND gcompris_SRCS ApplicationInfoDefault.cpp)
 endif()
 
 # Resources

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "memory-tux/memory-tux.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Memory Game with images against Tux")
   //: Help title

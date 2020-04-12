@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "erase/erase.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Move the mouse or touch the screen")
   //: Help title

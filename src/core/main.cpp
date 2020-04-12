@@ -184,10 +184,6 @@ int main(int argc, char *argv[])
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
 
-    // Must be done after ApplicationSettings is constructed because we get an
-    // async callback from the payment system
-    ApplicationSettings::getInstance()->checkPayment();
-
     // Disable default fullscreen launch on Mac as it's a bit broken, window is behind desktop bars
 #if defined(Q_OS_MAC)
     bool isFullscreen = false;

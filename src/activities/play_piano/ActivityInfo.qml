@@ -26,7 +26,6 @@ ActivityInfo {
   difficulty: 1
   icon: "play_piano/play_piano.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Play piano")
   //: Help title

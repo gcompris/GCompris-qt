@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 2
     icon: "planegame/planegame.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Numbers in Order")
     //: Help title

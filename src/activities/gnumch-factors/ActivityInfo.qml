@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "gnumch-factors/gnumch-factors.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Gnumch Factors")
   //: Help title

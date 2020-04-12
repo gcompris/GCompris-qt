@@ -22,7 +22,6 @@ ActivityInfo {
       difficulty: 1
       icon: "drawletters/drawletters.svg"
       author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
-      demo: true
       //: Activity title
       title: qsTr("Draw Letters")
       //: Help title

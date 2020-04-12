@@ -23,7 +23,6 @@ ActivityInfo {
   difficulty: 3
   icon: "gnumch-inequality/gnumch-inequality.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Gnumch Inequality")
   //: Help title

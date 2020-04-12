@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 3
     icon: "watercycle/watercycle.svg"
     author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Watercycle")
     //: Help title

@@ -26,7 +26,6 @@ ActivityInfo {
   difficulty: 3
   icon: "gravity/gravity.svg"
   author: "Timothée Giet &lt;animtim@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Gravity")
   //: Help title

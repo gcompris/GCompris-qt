@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "submarine/submarine.svg"
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Pilot a Submarine")
   //: Help title

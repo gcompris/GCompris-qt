@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "hanoi_real/hanoi_real.svg"
   author: "Amit Tomar &lt;a.tomar@outlook.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("The Tower of Hanoi")
   //: Help title

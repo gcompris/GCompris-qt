@@ -26,7 +26,6 @@ ActivityInfo {
   difficulty: 2
   icon: "geography/geography.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Locate the countries")
   //: Help title

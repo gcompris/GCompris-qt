@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "memory-enumerate/memory-enumerate.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Enumeration memory game")
   //: Help title

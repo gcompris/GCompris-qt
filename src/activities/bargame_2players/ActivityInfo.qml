@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "bargame_2players/bargame_2players.svg"
   author: "Utkarsh Tiwari &lt;iamutkarshtiwari@kde.org&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Bargame (with a friend)")
   //: Help title

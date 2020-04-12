@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "scalesboard/scalesboard.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Balance the scales properly")
   //: Help title

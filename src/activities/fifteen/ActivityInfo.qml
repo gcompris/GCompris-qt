@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "fifteen/fifteen.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("The fifteen game")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 4
     icon: "renewable_energy/renewable_energy.svg"
     author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Renewable Energy")
     //: Help title

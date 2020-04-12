@@ -27,7 +27,6 @@ ActivityInfo {
   difficulty: 1
   icon: "paintings/paintings.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Assemble the puzzle")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "colors/colors.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Colors")
   //: Help title

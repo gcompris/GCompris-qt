@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "roman_numerals/roman_numerals.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Roman numerals")
   //: Help title

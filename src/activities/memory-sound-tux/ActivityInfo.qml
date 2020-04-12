@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "memory-sound-tux/memory-sound-tux.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Audio memory game against Tux")
   //: Help title

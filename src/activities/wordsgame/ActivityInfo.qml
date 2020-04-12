@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "wordsgame/wordsgame.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Falling Words")
   //: Help title

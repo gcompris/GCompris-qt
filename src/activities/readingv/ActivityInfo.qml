@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "readingv/readingv.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Vertical-reading practice")
   //: Help title

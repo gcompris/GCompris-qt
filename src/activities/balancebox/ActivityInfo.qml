@@ -25,7 +25,6 @@ ActivityInfo {
   difficulty: 2
   icon: "balancebox/balancebox.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Balance Box")
   //: Help title

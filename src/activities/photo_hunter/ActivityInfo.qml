@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "photo_hunter/photo_hunter.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Photo Hunter")
   //: Help title

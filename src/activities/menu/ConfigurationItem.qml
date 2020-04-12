@@ -49,154 +49,6 @@ Item {
             NumberAnimation { properties: "x,y"; duration: 120 }
         }
 
-        // Put configuration here
-        Row {
-            id: demoModeBox
-            width: parent.width
-            spacing: 10 * ApplicationInfo.ratio
-
-            property bool checked: !ApplicationSettings.isDemoMode
-
-            Image {
-                sourceSize.height: 50 * ApplicationInfo.ratio
-                source:
-                demoModeBox.checked ? "qrc:/gcompris/src/core/resource/apply.svg" :
-                "qrc:/gcompris/src/core/resource/cancel.svg"
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        if(ApplicationSettings.isDemoMode)
-                        ApplicationSettings.isDemoMode = false
-                    }
-                }
-            }
-
-            Button {
-                width: parent.parent.width - 50 * ApplicationInfo.ratio - 10 * 2
-                height: parent.height
-                enabled: ApplicationSettings.isDemoMode
-                anchors.leftMargin: 10
-                anchors.verticalCenter: parent.verticalCenter
-                text: demoModeBox.checked ? qsTr("You have the full version") :
-                qsTr("Buy the full version").toUpperCase()
-                style: ButtonStyle {
-                    background: Rectangle {
-                        implicitWidth: 100
-                        implicitHeight: 25
-                        border.width: control.activeFocus ? 4 : 2
-                        border.color: "black"
-                        radius: 10
-                        gradient: Gradient {
-                            GradientStop { position: 0 ; color: control.pressed ? "#87ff5c" :
-                                ApplicationSettings.isDemoMode ? "#ffe85c" : "#EEEEEE"}
-                            GradientStop { position: 1 ; color: control.pressed ? "#44ff00" :
-                                ApplicationSettings.isDemoMode ? "#f8d600" : "#AAAAAA"}
-                        }
-                    }
-                    label: GCText {
-                        text: control.text
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        wrapMode: Text.WordWrap
-                    }
-                }
-
-                onClicked: {
-                    if(ApplicationSettings.activationMode == 1) {
-                        if(ApplicationSettings.isDemoMode)
-                            ApplicationSettings.isDemoMode = false
-                    } else if(ApplicationSettings.activationMode == 2) {
-                        activationCodeEntry.visible = !activationCodeEntry.visible
-                    }
-                }
-            }
-        }
-
-        Column {
-            id: activationCodeEntry
-            width: parent.width
-            spacing: 10
-            visible: false
-            opacity: 0
-
-            Behavior on opacity { NumberAnimation { duration: 200 } }
-
-            onVisibleChanged: {
-                if(visible) {
-                    activationInput.forceActiveFocus()
-                    activationInput.cursorPosition = 0
-                    opacity = 1
-                } else {
-                    activationInput.focus = false
-                    opacity = 0
-                }
-            }
-
-            GCText {
-                id: activationInstruction
-                fontSize: regularSize
-                color: "black"
-                style: Text.Outline
-                styleColor: "white"
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width
-                wrapMode: TextEdit.WordWrap
-                text: qsTr("On <a href='https://gcompris.net'>https://gcompris.net</a> " +
-                           "you will find the instructions to obtain an activation code.")
-                Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
-                                           linkActivated.connect(Qt.openUrlExternally) : null
-            }
-
-            TextInput {
-                id: activationInput
-                width: parent.width
-                focus: true
-                font.weight: Font.DemiBold
-                font.pointSize: ApplicationSettings.baseFontSize
-                                + 14 * ApplicationInfo.fontRatio
-                color: 'black'
-                horizontalAlignment: Text.AlignHCenter
-                inputMask: '>HHHH-HHHH-HHHH;#'
-                text: ApplicationSettings.codeKey
-                onTextChanged: {
-                    var code = text.replace(/-/g,'')
-                    var codeValidity = ApplicationSettings.checkActivationCode(code);
-                    switch (codeValidity) {
-                    case 0:
-                        activationMsg.text = qsTr('Enter your activation code');
-                        break;
-                    case 1:
-                        activationMsg.text = qsTr('Sorry, your code is too old for this version of GCompris');
-                        break;
-                    case 2:
-                        activationMsg.text = qsTr('Your code is valid, thanks a lot for your support');
-                        activationCodeEntry.visible = false
-                        ApplicationSettings.codeKey = code
-                        break;
-                    }
-                }
-            }
-
-            GCText {
-                id: activationMsg
-                width: parent.width
-                color: "black"
-                fontSize: regularSize
-                horizontalAlignment: TextInput.AlignHCenter
-                wrapMode: TextEdit.WordWrap
-            }
-        }
-
-        GCDialogCheckBox {
-            id: displayLockedActivitiesBox
-            text: qsTr("Show locked activities")
-            visible: ApplicationSettings.isDemoMode
-            checked: showLockedActivities
-            onCheckedChanged: {
-                showLockedActivities = checked;
-            }
-        }
-
         GCDialogCheckBox {
             id: enableAudioVoicesBox
             text: qsTr("Enable audio voices")
@@ -599,7 +451,6 @@ Item {
         }
     }
 
-    property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
     property bool isBackgroundMusicEnabled: ApplicationSettings.isBackgroundMusicEnabled
@@ -625,7 +476,6 @@ Item {
 
     function loadFromConfig() {
         // Synchronize settings with data
-        showLockedActivities = ApplicationSettings.showLockedActivities
         isAudioVoicesEnabled = ApplicationSettings.isAudioVoicesEnabled
         enableAudioVoicesBox.checked = isAudioVoicesEnabled
 
@@ -688,7 +538,6 @@ Item {
     }
 
     function save() {
-        ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isBackgroundMusicEnabled = isBackgroundMusicEnabled
@@ -878,7 +727,6 @@ Item {
         (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
         (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||
         (ApplicationSettings.baseFontSize != baseFontSize) ||
-        (ApplicationSettings.showLockedActivities != showLockedActivities) ||
         isFilteredBackgroundMusicChanged()
         );
     }

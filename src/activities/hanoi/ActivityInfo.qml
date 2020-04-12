@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "hanoi/hanoi.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Simplified Tower of Hanoi")
   //: Help title

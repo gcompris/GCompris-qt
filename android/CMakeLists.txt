@@ -1,7 +1,7 @@
 #android build
 # copied/inspired from stellarium project (http://www.stellarium.org/wiki/index.php/Building_for_Android)
 
-list(APPEND JAVA_SRCS "src/com/android/vending/billing/IInAppBillingService.aidl" "src/net/gcompris/GComprisActivity.java")
+list(APPEND JAVA_SRCS "src/net/gcompris/GComprisActivity.java")
 
 foreach(JavaSource ${JAVA_SRCS})
   add_custom_command(
@@ -26,19 +26,10 @@ set(ANDROID_VERSION_NAME ${GCOMPRIS_VERSION})
 
 # Set a name representing the build type
 set(APK_SUFFIX "-")
-if(ACTIVATION_MODE STREQUAL "inapp")
-  set(APK_SUFFIX "-inapp${APK_SUFFIX}")
-elseif(ACTIVATION_MODE STREQUAL "internal")
-  set(APK_SUFFIX "-internal${APK_SUFFIX}")
-endif()
 
 # _HOST have been removed from ECM in https://cgit.kde.org/extra-cmake-modules.git/commit/?id=731ba7036effcc430f98031e7f2a9826f6234cba
 set(_HOST "${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}")
 string(TOLOWER "${_HOST}" _HOST)
-
-if(WITH_DEMO_ONLY)
-  set(APK_SUFFIX "-demo${APK_SUFFIX}")
-endif()
 
 if(WITH_DOWNLOAD)
   set(APK_SUFFIX "-dl${APK_SUFFIX}")

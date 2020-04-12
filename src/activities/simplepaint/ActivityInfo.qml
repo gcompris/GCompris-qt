@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "simplepaint/simplepaint.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: true
   //: Activity title
   title: qsTr("A simple drawing activity")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "memory-wordnumber/memory-wordnumber.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Wordnumber memory game")
   //: Help title

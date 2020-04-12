@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "melody/melody.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Melody")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "align4-2players/align4-2players.svg"
   author: "Bharath M S &lt;brat.197@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Align four (with a friend)")
   //: Help title

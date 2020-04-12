@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "binary_bulb/binary_bulb.svg"
   author: "Rajat Asthana &lt;rajatasthana4@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Binary bulbs")
   //: Help title

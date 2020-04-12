@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "louis-braille/louis-braille.svg"
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("The History of Louis Braille")
   //: Help title

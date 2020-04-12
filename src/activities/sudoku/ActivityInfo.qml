@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "sudoku/sudoku.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Sudoku, place unique symbols in a grid")
   //: Help title

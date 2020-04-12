@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "click_on_letter_up/click_on_letter_up.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Click on an uppercase letter")
   //: Help title

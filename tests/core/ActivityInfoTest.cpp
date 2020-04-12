@@ -53,7 +53,6 @@ void CoreActivityInfoTest::ActivityInfoTest_data()
     QTest::addColumn<quint32>("maximalDifficulty");
     QTest::addColumn<QString>("icon");
     QTest::addColumn<QString>("author");
-    QTest::addColumn<bool>("demo");
     QTest::addColumn<QString>("title");
     QTest::addColumn<QString>("description");
     QTest::addColumn<QString>("goal");
@@ -64,9 +63,9 @@ void CoreActivityInfoTest::ActivityInfoTest_data()
     QTest::addColumn<bool>("enabled");
     QTest::addColumn<int>("createdInVersion");
 
-    QTest::newRow("ActivityInfo") << "Name" << "section" << (quint32)3 << (quint32)2 << (quint32)4 << "icon" << "author" << true << "title" << "description" << "goal" << "prerequisite" << "manual" << "credit" << false << false << 2;
-    QTest::newRow("UnknownInfo") << "Unknown" << "Unknown" << (quint32)5 << (quint32)1 << (quint32)6 << "Unknown" << "Unknown" << false << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << true << true << 10;
-    QTest::newRow("Empty") << "" << "" << (quint32)0 << (quint32)1 << (quint32)2 << "" << "" << false << "" << "" << "" << "" << "" << "" << true << true << 0;
+    QTest::newRow("ActivityInfo") << "Name" << "section" << (quint32)3 << (quint32)2 << (quint32)4 << "icon" << "author" << "title" << "description" << "goal" << "prerequisite" << "manual" << "credit" << false << false << 2;
+    QTest::newRow("UnknownInfo") << "Unknown" << "Unknown" << (quint32)5 << (quint32)1 << (quint32)6 << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << "Unknown" << true << true << 10;
+    QTest::newRow("Empty") << "" << "" << (quint32)0 << (quint32)1 << (quint32)2 << "" << "" << "" << "" << "" << "" << "" << "" << true << true << 0;
 }
 
 void CoreActivityInfoTest::ActivityInfoTest()
@@ -80,7 +79,6 @@ void CoreActivityInfoTest::ActivityInfoTest()
     QVERIFY(activityinfo.section().isEmpty());
     QVERIFY(activityinfo.icon().isEmpty());
     QVERIFY(activityinfo.author().isEmpty());
-    QVERIFY(activityinfo.demo());
     QVERIFY(activityinfo.title().isEmpty());
     QVERIFY(activityinfo.description().isEmpty());
     QVERIFY(activityinfo.goal().isEmpty());
@@ -98,7 +96,6 @@ void CoreActivityInfoTest::ActivityInfoTest()
     ACTIVITY_INFO_TEST_ATTRIBUTE(maximalDifficulty, MaximalDifficulty, quint32);
     ACTIVITY_INFO_TEST_ATTRIBUTE(icon, Icon, QString);
     ACTIVITY_INFO_TEST_ATTRIBUTE(author, Author, QString);
-    ACTIVITY_INFO_TEST_ATTRIBUTE(demo, Demo, bool);
     ACTIVITY_INFO_TEST_ATTRIBUTE(title, Title, QString);
     ACTIVITY_INFO_TEST_ATTRIBUTE(description, Description, QString);
     ACTIVITY_INFO_TEST_ATTRIBUTE(goal, Goal, QString);

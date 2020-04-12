@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "magic-hat-plus/magic-hat-plus.svg"
   author: "Thib ROMAIN &lt;thibrom@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("The magician hat")
   //: Help title

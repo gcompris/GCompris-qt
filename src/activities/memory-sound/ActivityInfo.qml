@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "memory-sound/memory-sound.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Audio memory game")
   //: Help title

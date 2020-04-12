@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "color_mix/color_mix.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Mixing color of paint")
   //: Help title

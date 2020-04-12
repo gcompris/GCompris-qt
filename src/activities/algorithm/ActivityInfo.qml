@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "algorithm/algorithm.svg"
   author: "Bharath M S &lt;brat.197@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Logical associations")
   //: Help title

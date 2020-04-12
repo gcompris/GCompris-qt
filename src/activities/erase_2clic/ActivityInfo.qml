@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "erase_2clic/erase_2clic.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Double tap or double click")
   //: Help title

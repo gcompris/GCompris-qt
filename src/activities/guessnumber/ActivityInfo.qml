@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "guessnumber/guessnumber.svg"
   author: "Thib ROMAIN &lt;thibrom@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Guess a number")
   //: Help title

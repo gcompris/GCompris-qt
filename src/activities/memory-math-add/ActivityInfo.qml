@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "memory-math-add/memory-math-add.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Addition memory game")
   //: Help title

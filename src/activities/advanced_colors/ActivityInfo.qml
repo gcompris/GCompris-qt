@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "advanced_colors/advanced_colors.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Advanced colors")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "family_find_relative/family_find_relative.svg"
   author: "Rudra Nil Basu &lt;rudra.nil.basu.1996@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Point the relatives")
   //: Help title

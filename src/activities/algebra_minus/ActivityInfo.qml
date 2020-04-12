@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "algebra_minus/algebra_minus.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Subtraction of numbers")
   //: Help title

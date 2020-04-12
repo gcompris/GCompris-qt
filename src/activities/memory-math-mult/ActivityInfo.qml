@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "memory-math-mult/memory-math-mult.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Multiplication memory game")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "hangman/hangman.svg"
   author: "Rajdeep kaur &lt;rajdeep1994@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("The classic hangman game")
   //: Help title

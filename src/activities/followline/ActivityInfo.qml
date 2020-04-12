@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "followline/followline.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Control the hose-pipe")
   //: Help title

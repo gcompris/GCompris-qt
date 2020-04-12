@@ -39,7 +39,5 @@
 #define DOWNLOAD_ALLOWED "ON"
 /* Date at which GCompris has been built */
 #define BUILD_DATE "201757"
-/* Type of activation system */
-#define ACTIVATION_MODE "no"
 
 #endif // GCOMPRIS_CONFIG_H

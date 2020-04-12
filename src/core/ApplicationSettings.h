@@ -70,12 +70,6 @@ class ApplicationSettings : public QObject
 
 	/* General group */
 
-	/**
-	 * Whether to show locked activities.
-	 * False if in Demo mode, true otherwise.
-	 */
-    Q_PROPERTY(bool showLockedActivities READ showLockedActivities WRITE setShowLockedActivities NOTIFY showLockedActivitiesChanged)
-
     /**
      * Whether audio voices/speech should be enabled.
      */
@@ -177,21 +171,6 @@ class ApplicationSettings : public QObject
      * Maximum value for difficulty level filter.
      */
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
-
-    /**
-     * Whether in demo mode.
-     */
-    Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
-
-    /**
-     * Activation code key.
-     */
-    Q_PROPERTY(QString codeKey READ codeKey WRITE setCodeKey NOTIFY codeKeyChanged)
-
-    /**
-     * Activation mode.
-     */
-    Q_PROPERTY(quint32 activationMode READ activationMode CONSTANT)
 
     /**
      * Whether kiosk mode is currently active.
@@ -306,12 +285,6 @@ public:
     static QObject *applicationSettingsProvider(QQmlEngine *engine,
                                                 QJSEngine *scriptEngine);
 
-    bool showLockedActivities() const { return m_showLockedActivities; }
-    void setShowLockedActivities(const bool newMode) {
-        m_showLockedActivities = newMode;
-        emit showLockedActivitiesChanged();
-    }
-
     bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
     void setIsAudioVoicesEnabled(const bool newMode) {
         m_isAudioVoicesEnabled = newMode;
@@ -410,47 +383,10 @@ public:
         emit filterLevelMaxChanged();
     }
 
-    bool isDemoMode() const { return m_isDemoMode; }
-    void setDemoMode(const bool newMode);
-
-    QString codeKey() const { return m_codeKey; }
-    void setCodeKey(const QString &newCodeKey) {
-        m_codeKey = newCodeKey;
-        emit codeKeyChanged();
-    }
-
-    /**
-     * @brief activationMode
-     * @return 0: no, 1: inapp, 2: internal
-     */
-    quint32 activationMode() const { return m_activationMode; }
-
     bool isKioskMode() const { return m_isKioskMode; }
     void setKioskMode(const bool newMode) {
         m_isKioskMode = newMode;
         emit kioskModeChanged();
-    }
-
-    /**
-     * Check validity of the activation code
-     * @param code An activation code to check
-     * @returns  0 if the code is not valid or we don't know yet
-     *           1 if the code is valid but out of date
-     *           2 if the code is valid and under 2 years
-     */
-    Q_INVOKABLE uint checkActivationCode(const QString &code);
-
-    /**
-     * Check Payment API
-     * Call a payment system to sync our demoMode state with it
-     */
-    void checkPayment();
-    // Called by the payment system
-    void bought(const bool isBought) {
-        if(m_isDemoMode != !isBought) {
-            m_isDemoMode = !isBought;
-            emit demoModeChanged();
-        }
     }
 
     bool sectionVisible() const { return m_sectionVisible; }
@@ -543,7 +479,6 @@ public:
 
 protected slots:
 
-    Q_INVOKABLE void notifyShowLockedActivitiesChanged();
     Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
     Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
     Q_INVOKABLE void notifyBackgroundMusicEnabledChanged();
@@ -559,8 +494,6 @@ protected slots:
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
-    Q_INVOKABLE void notifyDemoModeChanged();
-    Q_INVOKABLE void notifyCodeKeyChanged();
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
     Q_INVOKABLE void notifyWordsetChanged();
@@ -624,7 +557,6 @@ public slots:
     Q_INVOKABLE void sync();
 
 signals:
-    void showLockedActivitiesChanged();
     void audioVoicesEnabledChanged();
     void audioEffectsEnabledChanged();
     void backgroundMusicEnabledChanged();
@@ -640,8 +572,6 @@ signals:
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
-    void demoModeChanged();
-    void codeKeyChanged();
     void kioskModeChanged();
     void sectionVisibleChanged();
     void wordsetChanged();
@@ -668,7 +598,6 @@ private:
     template<class T> void updateValueInConfig(const QString& group,
                                          const QString& key, const T& value, bool sync = true);
 
-    bool m_showLockedActivities;
     bool m_isAudioVoicesEnabled;
     bool m_isAudioEffectsEnabled;
     bool m_isBackgroundMusicEnabled;
@@ -686,9 +615,6 @@ private:
     bool m_noCursor;
     QString m_locale;
     QString m_font;
-    bool m_isDemoMode;
-    QString m_codeKey;
-    quint32 m_activationMode;
     bool m_isKioskMode;
     bool m_sectionVisible;
     QString m_wordset;

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "superbrain/superbrain.svg"
   author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Super Brain")
   //: Help title

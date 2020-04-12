@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 1
     icon: "ballcatch/ballcatch.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Make the ball go to Tux")
     //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "tangram/tangram.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("The tangram puzzle game")
   //: Help title

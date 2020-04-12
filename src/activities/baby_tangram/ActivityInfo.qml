@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "baby_tangram/baby_tangram.svg"
   author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Baby Puzzle")
   //: Help title

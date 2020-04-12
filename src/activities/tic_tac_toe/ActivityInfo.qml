@@ -25,7 +25,6 @@ ActivityInfo {
   difficulty: 2
   icon: "tic_tac_toe/tic_tac_toe.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Tic Tac Toe (against Tux)")
   //: Help title

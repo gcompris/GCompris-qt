@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "smallnumbers/smallnumbers.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Numbers With Dice")
   //: Help title

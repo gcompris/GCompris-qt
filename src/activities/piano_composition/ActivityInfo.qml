@@ -23,7 +23,6 @@ ActivityInfo {
   difficulty: 2
   icon: "piano_composition/piano_composition.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Piano Composition")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "template/template.svg"
   author: "Your Name &lt;yy@zz.org&gt;"
-  demo: true
   //: Activity title
   title: "Template activity"
   //: Help title

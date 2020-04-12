@@ -152,20 +152,6 @@ void ActivityInfoTree::filterByDifficulty(quint32 levelMin, quint32 levelMax)
     m_menuTree.erase(it, m_menuTree.end());
 }
 
-void ActivityInfoTree::filterLockedActivities(bool emitChanged)
-{
-    // If we have the full version or if we show all the activities, we don't need to do anything
-    if(!ApplicationSettings::getInstance()->isDemoMode() || ApplicationSettings::getInstance()->showLockedActivities())
-        return;
-
-    // Remove non free activities if needed. We need to already have a menuTree filled!
-    auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
-                             [](const ActivityInfo* activity) { return !activity->demo(); });
-    m_menuTree.erase(it, m_menuTree.end());
-    if (emitChanged)
-        Q_EMIT menuTreeChanged();
-}
-
 void ActivityInfoTree::filterEnabledActivities(bool emitChanged)
 {
     auto it = std::remove_if(m_menuTree.begin(), m_menuTree.end(),
@@ -210,8 +196,7 @@ void ActivityInfoTree::exportAsSQL()
             "prerequisite TEXT," <<
             "goal TEXT," <<
             "manual TEXT," <<
-            "credit TEXT," <<
-            "demo INT);" << endl;
+            "credit TEXT);" << endl;
     cout << "DELETE FROM activities" << endl;
 
     int i(0);
@@ -229,8 +214,7 @@ void ActivityInfoTree::exportAsSQL()
                 "\"" << activity->prerequisite() << "\", " <<
                 "\"" << activity->goal().toHtmlEscaped() << "\", " <<
                 "\"" << activity->manual().toHtmlEscaped() << "\", " <<
-                "\"" << activity->credit() << "\", " <<
-                static_cast<int>(activity->demo()) <<
+                "\"" << activity->credit() <<
                 ");" << endl;
     }
 }
@@ -272,7 +256,6 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
     file.close();
 
     menuTree->filterByTag("favorite");
-    menuTree->filterLockedActivities();
     menuTree->filterEnabledActivities();
     return menuTree;
 }
@@ -318,7 +301,6 @@ void ActivityInfoTree::filterBySearch(const QString& text)
         m_menuTree = m_menuTreeFull;
 
     filterEnabledActivities(false);
-    filterLockedActivities(false);
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(), ApplicationSettings::getInstance()->filterLevelMax());
     sortByDifficulty(false);
     Q_EMIT menuTreeChanged();

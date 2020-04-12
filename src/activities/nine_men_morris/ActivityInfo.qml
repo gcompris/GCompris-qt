@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "nine_men_morris/nine_men_morris.svg"
   author: "Pulkit Gupta &lt;pulkitnsit@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Nine men's morris (against Tux)")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "graph-coloring/graph-coloring.svg"
   author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.in&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Graph Coloring")
   //: Help title

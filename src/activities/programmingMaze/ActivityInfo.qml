@@ -23,7 +23,6 @@ ActivityInfo {
   difficulty: 3
   icon: "programmingMaze/programmingMaze.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Programming Maze")
   //: Help title

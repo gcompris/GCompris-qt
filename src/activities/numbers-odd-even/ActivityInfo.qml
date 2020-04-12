@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 2
     icon: "numbers-odd-even/numbers-odd-even.svg"
     author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-    demo: false
     //: Activity title
     title: qsTr("Even and Odd Numbers")
     //: Help title

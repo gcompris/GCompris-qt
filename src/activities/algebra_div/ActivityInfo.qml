@@ -22,7 +22,6 @@ ActivityInfo {
       difficulty: 6
       icon: "algebra_div/algebra_div.svg"
       author: "Sayan Biswas &lt;techsayan01@gmail.com&gt;"
-      demo: false
       //: Activity title
       title: qsTr("Division of numbers")
       //: Help title

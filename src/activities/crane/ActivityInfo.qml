@@ -27,7 +27,6 @@ ActivityInfo {
   difficulty: 2
   icon: "crane/crane.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Build the same model")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "scalesboard_weight_avoirdupois/scalesboard_weight_avoirdupois.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Balance the scales properly")
   //: Help title

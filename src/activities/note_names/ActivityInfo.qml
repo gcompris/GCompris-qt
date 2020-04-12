@@ -25,7 +25,6 @@ ActivityInfo {
   difficulty: 4
   icon: "note_names/note_names.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Name that Note")
   //: Help title

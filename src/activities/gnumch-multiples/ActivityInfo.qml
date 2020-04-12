@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "gnumch-multiples/gnumch-multiples.svg"
   author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Gnumch Multiples")
   //: Help title

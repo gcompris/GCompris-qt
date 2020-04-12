@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "football/football.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("The football game")
   //: Help title

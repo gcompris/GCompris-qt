@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 4
     icon: "checkers/checkers.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Play checkers against the computer")
     //: Help title

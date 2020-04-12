@@ -25,7 +25,6 @@ ActivityInfo {
   difficulty: 2
   icon: "tic_tac_toe_2players/tic_tac_toe_2players.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Tic Tac Toe (with a friend)")
   //: Help title

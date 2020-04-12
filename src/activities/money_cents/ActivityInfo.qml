@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "money_cents/money_cents.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Money with cents")
   //: Help title

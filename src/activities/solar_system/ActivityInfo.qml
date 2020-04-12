@@ -25,7 +25,6 @@ ActivityInfo {
   difficulty: 5
   icon: "solar_system/solar_system.svg"
   author: "Aman Kumar Gupta &lt;gupta2140@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Solar System")
   //: Help title

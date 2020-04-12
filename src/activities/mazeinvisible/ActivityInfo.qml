@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 4
   icon: "mazeinvisible/mazeinvisible.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Invisible Maze")
   //: Help title

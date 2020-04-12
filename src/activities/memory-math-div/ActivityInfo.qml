@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 6
   icon: "memory-math-div/memory-math-div.svg"
   author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Division memory game")
   //: Help title

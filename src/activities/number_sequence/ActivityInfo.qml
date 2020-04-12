@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 2
   icon: "number_sequence/number_sequence.svg"
   author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Number sequence")
   //: Help title

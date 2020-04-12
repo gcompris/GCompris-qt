@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 3
   icon: "algebra_by/algebra_by.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
   //: Activity title
   title: qsTr("Multiplication of numbers")
   //: Help title

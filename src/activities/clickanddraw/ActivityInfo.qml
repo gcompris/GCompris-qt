@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 1
   icon: "clickanddraw/clickanddraw.svg"
   author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Click and draw")
   //: Help title

@@ -22,7 +22,6 @@ ActivityInfo {
   difficulty: 5
   icon: "braille_alphabets/braille_alphabets.svg"
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Discover the Braille system")
   //: Help title

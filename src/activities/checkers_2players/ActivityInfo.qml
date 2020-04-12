@@ -22,7 +22,6 @@ ActivityInfo {
     difficulty: 4
     icon: "checkers_2players/checkers_2players.svg"
     author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
-    demo: true
     //: Activity title
     title: qsTr("Play checkers with your friend")
     //: Help title

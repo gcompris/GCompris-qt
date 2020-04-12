@@ -25,7 +25,6 @@ ActivityInfo {
   difficulty: 3
   icon: "imagename/imagename.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: true
   //: Activity title
   title: qsTr("Image Name")
   //: Help title
