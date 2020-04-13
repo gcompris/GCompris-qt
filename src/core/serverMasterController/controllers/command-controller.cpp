@@ -185,8 +185,9 @@ void CommandController::onManagePupilsEditPupilExecuted()
 void CommandController::onManagePupilsRemovePupilsExecuted()
 {
     qDebug() << "You removed pupil(s)!";
+    implementation->navigationController->goRemovePupilsDialog();
 
-  /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
+    /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
 
     qDebug() << "New client saved.";
 

@@ -24,6 +24,7 @@ signals:
 	void goFindClientView();
     void goManageWorkPlanView();
     void goAddPupilsFromListDialog();
+    void goRemovePupilsDialog();
 
 };
 

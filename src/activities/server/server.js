@@ -51,9 +51,6 @@ var pupilsNamesArray = []
 
 
 
-
-
-
 function addPupilsNamesFromList(pupilsDetailsStr) {
 
     var addedPupilsNamesArray = []
@@ -83,7 +80,7 @@ function addPupilsNamesFromList(pupilsDetailsStr) {
 
         reformatedPupilDetailsArray.push(pupilDetails[0].toString())
         reformatedPupilDetailsArray.push(pupilDetails[1].toString())
-        reformatedPupilDetailsArray.push(groupsArray)
+        reformatedPupilDetailsArray.push(pupilDetails[2].toString())
 
         addedPupilsNamesArray.push(reformatedPupilDetailsArray)
 

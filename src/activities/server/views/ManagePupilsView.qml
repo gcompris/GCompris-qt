@@ -18,11 +18,18 @@ Item {
 
   //  property Client newClient: masterController.ui_newClient
 
+    property alias pupilsDetailsRepeater: pupilsDetailsRepeater
+
     Connections {
         target: masterController.ui_navigationController
         onGoAddPupilsFromListDialog: addPupilsFromListDialog.open()
+        onGoRemovePupilsDialog: removePupilsDialog.open()
     }
 
+
+    ListView {
+        id: selectedPupilsListview
+    }
 
 
     Rectangle {
@@ -126,12 +133,13 @@ Item {
             //pupils data
             Repeater {
                 id: pupilsDetailsRepeater
+
                 model: Activity.pupilsNamesArray
-
-
 
                 Rectangle {
                     id: pupilDetailsRectangle
+
+                    //property alias pupilNameCheckBox: pupilDetailsRectangle.pupilDetailsRectangleMouseArea.pupilDetailsRectangleRowLayout.pupilName.pupilNameCheckBox
 
                     property bool editPupilRectangleVisible: false
                     property bool optionsPupilRectangleVisible: false
@@ -143,6 +151,7 @@ Item {
                     border.width: 5
 
                     MouseArea {
+                        id: pupilDetailsRectangleMouseArea
                         anchors.right: pupilDetailsRectangle.right //right: pupilCommandOptions.right
                         anchors.top: pupilDetailsRectangle.top
                         height: pupilDetailsRectangle.height
@@ -175,9 +184,12 @@ Item {
                                 Layout.minimumWidth: pupilsDetailsColumn.pupilNameColWidth
                                 color: "transparent"
                                 CheckBox {
+                                    id: pupilNameCheckBox
                                     text: modelData[0]
                                     anchors.verticalCenter: parent.verticalCenter
                                     leftPadding: 20
+
+
                                 }
                             }
                             Rectangle {
@@ -201,7 +213,7 @@ Item {
                                 color: "transparent"
                                 Text {
                                     id: groupsText
-                                    text: "yy" //modelData[2]
+                                    text: modelData[2]
                                     leftPadding: 10
                                     anchors.verticalCenter: parent.verticalCenter
                                     color: "grey"
@@ -480,6 +492,9 @@ Item {
         onPupilsDetailsAdded: pupilsDetailsRepeater.model = Activity.pupilsNamesArray
     }
 
+    RemovePupilsDialog {
+        id: removePupilsDialog
+    }
 
 
 /*    ScrollView {
