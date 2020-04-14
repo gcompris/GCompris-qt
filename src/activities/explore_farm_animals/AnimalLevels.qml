@@ -73,9 +73,8 @@ Image {
     MultiPointTouchArea {
         id: touchArea
         anchors.centerIn: parent
-        // Make the item big enough to be clicked easily
-        width: Math.max(parent.width, 55 * ApplicationInfo.ratio)
-        height: Math.max(parent.height, 55 * ApplicationInfo.ratio)
+        width: parent.width
+        height: parent.height
         touchPoints: [ TouchPoint { id: point1 } ]
         mouseEnabled: progressbar.value != progressbar.maximumValue && !items.bonus.isPlaying
 
