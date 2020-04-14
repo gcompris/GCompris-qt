@@ -64,6 +64,8 @@ Image {
         id: star
         anchors.verticalCenter: animalImg.bottom
         anchors.horizontalCenter: animalImg.horizontalCenter
+        width: background.playWidth * 0.05
+        height: width
         visible: false
         source:"qrc:/gcompris/src/core/resource/star.png"
     }
