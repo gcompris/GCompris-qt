@@ -34,8 +34,6 @@ Rectangle {
     border.width: 5
     border.color: "black"
 
-    width: parent.width
-    height: parent.height
     MouseArea {
         anchors.fill: parent
         onPressed: parent.closeDescriptionPanel()
@@ -64,8 +62,8 @@ Rectangle {
     NumberAnimation {
         id: descriptionPanelAppearAnimation
         target: descriptionPanel
-        property: horizontalLayout ? "x" : "y"
-        from: horizontalLayout ? -width : -height
+        property: "x"
+        from: -width
         to: 0
         duration: 1200
         easing.type: Easing.OutBack
@@ -231,8 +229,8 @@ Rectangle {
         NumberAnimation {
             id: slideBackDescriptionPanel
             target: descriptionPanel
-            property: horizontalLayout ? "x" : "y"
-            to: horizontalLayout ? -width : -height
+            property: "x"
+            to: -width
             duration: 1200
             easing.type: Easing.InSine
         }

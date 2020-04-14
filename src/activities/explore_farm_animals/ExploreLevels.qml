@@ -160,8 +160,8 @@ ActivityBase {
 
         AnimalDescriptionLevels {
             id: descriptionPanel
-            width: parent.width
-            height: parent.height
+            width: background.width
+            height: background.height - bar.height * 1.2
             z: instruction.z + 1
         }
 
