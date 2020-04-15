@@ -24,7 +24,7 @@ import GCompris 1.0 as GCompris
 
 QtObject {
 
-    property string backgroundImage: "qrc:/gcompris/src/activities/explore_world_music/resource/music/content.svg"
+    property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/world-map.svg"
     property var tab : [
         {
             "image": "qrc:/gcompris/src/activities/explore_world_music/resource/music/suitcase.svg",
@@ -33,8 +33,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/australia.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/australia.jpg",
             "text2": qsTr("Australia"),
-            "x": 0.87,
-            "y": 0.65,
+            "x": 0.840,
+            "y": 0.63,
             "width": 0.05,
             "height": 0.05
         },
@@ -45,8 +45,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/africa.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/africa.jpg",
             "text2": qsTr("Africa"),
-            "x": 0.57,
-            "y": 0.47,
+            "x": 0.53,
+            "y": 0.54,
             "width": 0.05,
             "height": 0.05
         },
@@ -57,8 +57,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/middleeast.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/middleeast.jpg",
             "text2": qsTr("Middle East"),
-            "x": 0.62,
-            "y": 0.32,
+            "x": 0.59,
+            "y": 0.46,
             "width": 0.05,
             "height": 0.05
         },
@@ -69,8 +69,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/japan.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/japan.jpg",
             "text2": qsTr("Japan"),
-            "x": 0.87,
-            "y": 0.22,
+            "x": 0.855,
+            "y": 0.445,
             "width": 0.05,
             "height": 0.05
         },
@@ -81,8 +81,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/ireland.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/ireland.jpg",
             "text2": qsTr("Scotland and Ireland"),
-            "x": 0.50,
-            "y": 0.14,
+            "x": 0.44,
+            "y": 0.36,
             "width": 0.05,
             "height": 0.05
         },
@@ -93,8 +93,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/italy.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/italy.jpg",
             "text2": qsTr("Italy"),
-            "x": 0.54,
-            "y": 0.22,
+            "x": 0.52,
+            "y": 0.44,
             "width": 0.05,
             "height": 0.05
         },
@@ -105,8 +105,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/beethoven.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/orchestra.jpg",
             "text2": qsTr("European Classical Music"),
-            "x": 0.57,
-            "y": 0.17,
+            "x": 0.50,
+            "y": 0.38,
             "width": 0.05,
             "height": 0.05
         },
@@ -117,8 +117,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/mexico.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/mexico.jpg",
             "text2": qsTr("Mexico"),
-            "x": 0.24,
-            "y": 0.37,
+            "x": 0.19,
+            "y": 0.5,
             "width": 0.05,
             "height": 0.05
         },
@@ -129,8 +129,8 @@ QtObject {
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/america.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/america.jpg",
             "text2": qsTr("United States of America"),
-            "x": 0.25,
-            "y": 0.22,
+            "x": 0.185,
+            "y": 0.425,
             "width": 0.05,
             "height": 0.05
         }
