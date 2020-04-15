@@ -128,6 +128,8 @@ Popup {
 
                     //console.log("---- " + lines)
                     addPupilsFromListDialog.pupilsDetailsAdded()
+                    addPupilsFromListDialog.close();
+
                 }
 
             }
@@ -141,7 +143,7 @@ Popup {
 
                 onClicked: {
                    console.log("cancel...")
-                   addModifyGroupDialog.close();
+                   addPupilsFromListDialog.close();
                 }
             }
         }

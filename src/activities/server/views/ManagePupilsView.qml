@@ -18,7 +18,9 @@ Item {
 
   //  property Client newClient: masterController.ui_newClient
 
-    property alias pupilsDetailsRepeater: pupilsDetailsRepeater
+
+    signal pupilsNamesListSelected(var pupilsNamesList)
+
 
     Connections {
         target: masterController.ui_navigationController
@@ -141,6 +143,8 @@ Item {
 
                     //property alias pupilNameCheckBox: pupilDetailsRectangle.pupilDetailsRectangleMouseArea.pupilDetailsRectangleRowLayout.pupilName.pupilNameCheckBox
 
+                    property alias pupilNameCheckBox: pupilNameCheckBox
+
                     property bool editPupilRectangleVisible: false
                     property bool optionsPupilRectangleVisible: false
 
@@ -259,6 +263,12 @@ Item {
                                                     //pupilDetailsRectangle.editPupilRectangleVisible = false
                                                     //pupilDetailsRectangle.optionsPupilRectangleVisible = false
                                     }
+                                    onClicked: {
+                                        modifyPupilDialog.pupilName = modelData[0]
+                                        modifyPupilDialog.groupsNames = modelData[2]
+                                        modifyPupilDialog.pupilsListIndex = index
+                                        modifyPupilDialog.open()
+                                    }
                                }
                             }
                             Rectangle {
@@ -315,171 +325,19 @@ Item {
                         id: modifyPupilGroupsDialog
                     }
 
+                    AddModifyPupilDialog {
+                        id: modifyPupilDialog
 
+                        label: qsTr("Modify the name or the groups")
 
-//                        Rectangle {
-//                            id: pupilCommandOptions
-//                            Layout.minimumWidth: 50
-//                            Layout.fillHeight: true
-//                            Layout.alignment: Qt.AlignRight
-//                            height: 40
-//                            color: "transparent"
-//                            Text {
-//                                id: elipsisText
-//                                text: "\uf142"   //elipsis-v
-//                                anchors.horizontalCenter: parent.horizontalCenter
-//                                anchors.verticalCenter: parent.verticalCenter
-//                                color: "grey"
-//                                font {
-//                                    family: Style.fontAwesome
-//                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2    //? see with style
-//                                }
-//                            }
+                        onAccepted: {
+                            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
 
-//                            MouseArea {
-
-//                                anchors.right: pupilCommandOptions.right
-//                                anchors.top: pupilCommandOptions.top
-//                                height: pupilCommandOptions.height
-//                                width: pupilCommandOptions.width
-
-//                                //anchors.fill: parent
-//                                hoverEnabled: true
-//                                onEntered: {    modifyPupilCommandsRectangle.visible = true
-//                                                pupilCommandOptions.color = Style.colourPanelBackgroundHover
-//                                }
-//                                onExited: {
-//                                                modifyPupilCommandsRectangle.visible = false
-//                                                pupilCommandOptions.color = Style.colourBackground
-//                                }
-
-//                                Rectangle {
-//                                    id: modifyPupilCommandsRectangle
-
-//                                    anchors.right: parent.right
-//                                    visible: false
-//                                    height: parent.height
-//                                    width: 100
-//                                    color: "transparent"
-
-//                                    border.width: 3
-//                                    border.color: "red"
-
-//                                    Row {
-//                                        id: pupilDetailsRow
-//                                        width: parent.width
-//                                        height: parent.height
-
-//                                        Rectangle {
-//                                            id: editIconRectangle
-
-//                                            width: parent.width/2
-//                                            height: parent.height
-//                                            color: "transparent"
-
-//                                            border.color: "red"
-//                                            border.width: 3
-
-//                                            Text {
-//                                                id: editIcon
-//                                                text: "\uf304"
-//                                                anchors.centerIn: parent
-//                                                color: "grey"
-//                                                font {
-//                                                    family: Style.fontAwesome
-//                                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
-//                                                }
-//                                            }
-//                                            MouseArea {
-//                                               anchors.fill: parent
-//                                               hoverEnabled: true
-//                                               onClicked: {
-//                                                   modifyPupilDialog.inputText = modelData[0]
-//                                                   console.log("--" + index)
-//                                                   modifyPupilDialog.pupilDetailsIndex = index
-//                                                   modifyPupilDialog.open()
-//                                                   console.log("clicked ...")
-//                                               }
-//                                               onEntered: { editIcon.color = Style.colourNavigationBarBackground }
-//                                               onExited: { editIcon.color = Style.colourCommandBarFontDisabled }
-//                                            }
-//                                        }
-//                                        Rectangle {
-//                                            width: parent.width/2
-//                                            height: parent.height
-
-//                                            color: "transparent"
-
-//                                            Text {
-//                                                id: trashIcon
-//                                                text: "\uf2ed"
-//                                                anchors.centerIn: parent
-//                                                color: "grey"
-//                                                font {
-//                                                    family: Style.fontAwesome
-//                                                    pixelSize: Style.pixelSizeNavigationBarIcon / 2
-//                                                }
-//                                            }
-//                                            MouseArea {
-//                                               anchors.fill: parent
-//                                               hoverEnabled: true
-//                                               onClicked: {
-//                                                   addAGroupText.color = Style.colourNavigationBarBackground
-//                                                   removeGroupDialog.pupilDetailsIndex = index
-//                                                   removeGroupDialog.open()
-//                                                   console.log("clicked ...")
-//                                               }
-//                                               onEntered: { trashIcon.color = Style.colourNavigationBarBackground }
-//                                               onExited: { trashIcon.color = Style.colourCommandBarFontDisabled }
-//                                            }
-//                                        }
-//                                    }
-//                                }
-
-//                                AddModifyGroupDialog {
-//                                    id: modifyPupilDialog
-
-//                                    property int pupilDetailsIndex
-
-//                                    label: "Modify Pupil Details"
-//                                    inputText: "testdefault"
-
-//                                    onAccepted: {
-//                                       console.log("save.dfg..")
-//                                       console.log(textInputValue)
-//                                       Activity.pupilsNamesArray[pupilDetailsIndex][0] = textInputValue
-//                                       Activity.pupilsNamesArray[pupilDetailsIndex][1] = "2004"
-//                                       console.log(Activity.pupilsNamesArray)
-//                                       pupilsDetailsRepeater.model = Activity.pupilsNamesArray
-//                                       modifyPupilDialog.close()
-//                                    }
-//                                }
-
-//                                AddModifyGroupDialog {
-//                                    id: removeGroupDialog
-
-//                                    property int groupNameIndex
-
-//                                    label: qsTr("Are you sure you want to remove the group")
-//                                    inputText: Activity.groupsNamesArray[groupNameIndex]
-
-//                                    textInputReadOnly: true
-
-//                                    onAccepted: {
-//                                       console.log("save.dfg..")
-//                                       console.log(textInputValue)
-//                                       Activity.groupsNamesArray[groupNameIndex][0] = textInputValue
-//                                       Activity.groupsNamesArray[groupNameIndex][1] = "2004"
-//                                       console.log(Activity.groupsNamesArray)
-//                                       pupilsDetailsRepeater.model = Activity.pupilsNamesArray
-//                                       modifyGroupDialog.close()
-//                                    }
-//                                }
-//                            }
-//                        }
+                        }
                     }
                 }
             }
+        }
     }
 
     CommandBar {
@@ -494,55 +352,29 @@ Item {
 
     RemovePupilsDialog {
         id: removePupilsDialog
-    }
 
-
-/*    ScrollView {
-        id: scrollView
-        anchors {
-            left: parent.left
-            right: parent.right
-            top: parent.top
-            //bottom: commandBar.top
-            margins: Style.sizeScreenMargin
-        }
-        clip: true
-
-        Column {
-            spacing: Style.sizeScreenMargin
-            width: scrollView.width
-
-            Panel {
-                headerText: "Client Details"
-                contentComponent:
-                    Column {
-                        spacing: Style.sizeControlSpacing
-                        StringEditorSingleLine {
-                            stringDecorator: newClient.ui_reference
-                            anchors {
-                                left: parent.left
-                                right: parent.right
-                            }
-                        }
-                        StringEditorSingleLine {
-                            stringDecorator: newClient.ui_name
-                            anchors {
-                                left: parent.left
-                                right: parent.right
-                            }
-                        }
-                    }
+        onOpened: {
+            var pupilsNamesList = []
+            for(var i = 0 ; i < pupilsDetailsRepeater.count ; i ++) {
+                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
+                    console.log("test" + pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                    pupilsNamesList.push(pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                }
             }
-            AddressEditor {
-                address: newClient.ui_supplyAddress
-                headerText: "Supply Address"
+            console.log(pupilsNamesList)
+            managePupilsView.pupilsNamesListSelected(pupilsNamesList)
+            var pupilsNamesListStr = ""
+            for(i = 0 ; i < pupilsNamesList.length ; i++) {
+                console.log("++--------" + pupilsNamesList[i])
+
+                pupilsNamesListStr = pupilsNamesListStr + pupilsNamesList[i] + "\r\n"
             }
-            AddressEditor {
-                address: newClient.ui_billingAddress
-                headerText: "Billing Address"
-            }
+
+            pupilsNamesText.text = pupilsNamesListStr
+
+            console.log("----------")
+            console.log(pupilsNamesListStr)
+
         }
     }
-*/
-
 }

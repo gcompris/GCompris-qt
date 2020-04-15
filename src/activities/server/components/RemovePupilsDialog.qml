@@ -7,7 +7,7 @@ import "../server.js" as Activity
 Popup {
     id: removePupilsDialog
 
-    signal pupilsToBeRemoved()
+    property alias pupilsNamesText: pupilsNamesText
 
     anchors.centerIn: Overlay.overlay
     width: 600
@@ -19,10 +19,9 @@ Popup {
     onOpened: {
         pupilsNamesText.text = "test"
         print("uuuu")
-        print(pupilsDetailsRepeater.itemAt(2).pupilDetailsRectangleMouseArea.pupilName.pupilNameCheckBox.text)
+       // console.log(pupilsDetailsRepeater.itemAt(2)).pupilDetailsRectangleMouseArea.width
 
     }
-
 
     ColumnLayout {
         height: parent.height
@@ -39,6 +38,8 @@ Popup {
             Text {
                 id: deletePupilGroupsText
                 anchors.centerIn: parent
+                width: parent.width * 2/3
+                wrapMode: Text.WordWrap
                 text: qsTr("Are you sure you want to remove the following children from the server?")
                 font.bold: true
                 color: Style.colourNavigationBarBackground
@@ -90,9 +91,13 @@ Popup {
 
               //      var lines = edit.text.split('\n')
 
-                    Activity.addPupilsNamesFromList(edit.text)
+                    //Activity.addPupilsNamesFromList(edit.text)
 
                     //console.log("---- " + lines)
+
+                    console.log(pupilsDetailsRepeater.itemAt(2)).pupilDetailsRectangleMouseArea.width
+
+
                     removePupilsDialog.pupilsToBeRemoved()
                 }
 
