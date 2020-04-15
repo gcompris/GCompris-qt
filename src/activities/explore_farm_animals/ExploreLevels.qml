@@ -135,10 +135,10 @@ ActivityBase {
             AnimalLevels {
                 questionId: index
                 source: dataset.item.tab[index].image
-                x: background.playX + background.playWidth * dataset.item.tab[index].x - width / 2
-                y: background.playY + background.playHeight * dataset.item.tab[index].y - height / 2
-                width: background.playWidth * dataset.item.tab[index].width
-                height: background.playHeight * dataset.item.tab[index].height
+                x: Math.round(background.playX + background.playWidth * dataset.item.tab[index].x - width / 2)
+                y: Math.round(background.playY + background.playHeight * dataset.item.tab[index].y - height / 2)
+                width: Math.round(background.playWidth * dataset.item.tab[index].width)
+                height: Math.round(background.playHeight * dataset.item.tab[index].height)
                 title: dataset.item.tab[index].title
                 description: dataset.item.tab[index].text
                 imageSource: dataset.item.tab[index].image2
