@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
 
-    property string backgroundImage: "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/content.svg"
+    property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/world-map.svg"
     property var tab : [
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
@@ -31,10 +31,10 @@ QtObject {
             "text": qsTr("The jaguar's jaw is well developed. Because of this, it has the strongest bite of all the felines, being able to break even a tortoise shell!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/jaggy.jpg",
             "text2": qsTr("Jaguar"),
-            "x": 0.36,
-            "y": 0.56,
-            "width": 0.0785,
-            "height": 0.1005
+            "x": 0.32,
+            "y": 0.575,
+            "width": 0.1,
+            "height": 0.1
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
@@ -42,10 +42,10 @@ QtObject {
             "text": qsTr("Hedgehogs eat small animals, like frogs and insects, so many people keep them as useful pets. When in danger, they will curl up into a ball and stick up their coat of sharp spines."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/hedgy.jpg",
             "text2": qsTr("Hedgehog"),
-            "x": 0.53,
-            "y": 0.24,
-            "width": 0.0785,
-            "height": 0.1005
+            "x": 0.5,
+            "y": 0.4,
+            "width": 0.1,
+            "height": 0.1
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
@@ -53,10 +53,10 @@ QtObject {
             "text": qsTr("The giraffe lives in Africa and is the tallest mammal in the world. Just their legs, which are usually 1.8 meters long, are taller than most humans!"),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/giraffe.jpg",
             "text2": qsTr("Giraffe"),
-            "x": 0.58,
-            "y": 0.48,
-            "width": 0.0785,
-            "height": 0.1005
+            "x": 0.525,
+            "y": 0.53,
+            "width": 0.1,
+            "height": 0.1
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
@@ -64,10 +64,10 @@ QtObject {
             "text": qsTr("Bison live on the plains of North America and were hunted by the Native Americans for food."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/bison.jpg",
             "text2": qsTr("Bison"),
-            "x": 0.27,
-            "y": 0.29,
-            "width": 0.0785,
-            "height": 0.1005
+            "x": 0.215,
+            "y": 0.445,
+            "width": 0.1,
+            "height": 0.1
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
@@ -75,10 +75,10 @@ QtObject {
             "text": qsTr("Narwhals are whales that live in the Arctic Ocean and have long tusks. These tusks remind many people of the mythical unicorn's horn."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/narwhal.jpg",
             "text2": qsTr("Narwhal"),
-            "x": 0.50,
-            "y": 0.06,
-            "width": 0.0785,
-            "height": 0.1005
+            "x": 0.47,
+            "y": 0.255,
+            "width": 0.1,
+            "height": 0.1
         }
     ]
 
