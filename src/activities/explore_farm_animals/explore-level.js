@@ -52,7 +52,9 @@ function initLevel() {
     items.progressbar.maximumValue = items.dataModel.count
     items.score.numberOfSubLevels = items.hasAudioQuestions ? 3 : 2;
     // randomize the questions for level 2 and 3
+    items.questionOrder = Array.apply(null, {length: items.dataModel.count}).map(Number.call, Number)
     Core.shuffle(items.questionOrder);
+
     // Change the currentSubLevel value to 1 to be sure to update the question value
     // else if you are sublevel 0 and go to last level, the question is not the good one
     items.progressbar.value = 1
