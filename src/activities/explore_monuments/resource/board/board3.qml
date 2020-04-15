@@ -22,7 +22,7 @@
 import QtQuick 2.6
 
 QtObject {
-    property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/france/francebg.jpg"
+    property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/france/france.svg"
     property var tab: [
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -30,10 +30,10 @@ QtObject {
             "text": qsTr("Mont Saint-Michel is a rocky tidal island located in Normandy, at the mouth of the Couesnon River, near the city of Avranches. The highest point of the island is the spire at the top of the Abbey’s bell tower, 170 metres above sea level. They are currently less than 50 people living on the island. The unique feature of Mont Saint-Michel is that it is completely surrounded by water and can only be accessed at low tide."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/montStMichel.jpg",
             "text2": qsTr("Mont-Saint-Michel"),
-            "x": "0.278",
-            "y": "0.268",
-            "height": "0.07",
-            "width": "0.07"
+            "x": "0.265",
+            "y": "0.285",
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -41,10 +41,10 @@ QtObject {
             "text": qsTr("With more than 4 million visitors each year, Carcassonne is among the most prestigious tourist destinations in France, on a par with Mont Saint Michel and Paris’ Notre-Dame. A UNESCO World Heritage Site since 1997, Carcassonne is a dramatic representation of medieval architecture perched on a rocky spur that towers above the River Aude, southeast of the new town."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/citedeCarcassonne.jpg",
             "text2": qsTr("Cité de Carcassonne"),
-            "x": "0.588",
-            "y": "0.875",
-            "height": "0.07",
-            "width": "0.07"
+            "x": "0.545",
+            "y": "0.880",
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -52,10 +52,10 @@ QtObject {
             "text": qsTr("By size, Reims Cathedral is quite an extraordinary construction: designed to accommodate huge crowds, its gigantic dimensions include a surface area of 6,650 m2 and a length of 122m. A Gothic art masterpiece and the coronation site of the Kings of France, it has been listed as a UNESCO World Heritage Site since 1991. The Mecca for tourists in the Champagne region welcomes 1,500,000 visitors every year."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/reimsCathedral.jpg",
             "text2": qsTr("Reims Cathedral"),
-            "x": "0.687",
-            "y": "0.196",
-            "height": "0.07",
-            "width": "0.07"
+            "x": "0.670",
+            "y": "0.225",
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -65,8 +65,8 @@ QtObject {
             "text2": qsTr("Pont du Gard"),
             "x": "0.691",
             "y": "0.757",
-            "height": "0.07",
-            "width": "0.07"
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -76,8 +76,8 @@ QtObject {
             "text2": qsTr("Arles Amphitheatre"),
             "x": "0.730",
             "y": "0.831",
-            "height": "0.07",
-            "width": "0.07"
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -87,8 +87,8 @@ QtObject {
             "text2": qsTr("Château de Chambord"),
             "x": "0.456",
             "y": "0.388",
-            "height": "0.07",
-            "width": "0.07"
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -98,8 +98,8 @@ QtObject {
             "text2": qsTr("Rocamadour"),
             "x": "0.538",
             "y": "0.658",
-            "height": "0.07",
-            "width": "0.07"
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -109,8 +109,8 @@ QtObject {
             "text2": qsTr("Palais des Papes"),
             "x": "0.771",
             "y": "0.768",
-            "height": "0.07",
-            "width": "0.07"
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -120,8 +120,8 @@ QtObject {
             "text2": qsTr("Château de Chenonceau"),
             "x": "0.449",
             "y": "0.464",
-            "height": "0.07",
-            "width": "0.07"
+            "height": "0.05",
+            "width": "0.05"
         },
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
@@ -131,8 +131,8 @@ QtObject {
             "text2": qsTr("Eiffel Tower"),
             "x": "0.538",
             "y": "0.304",
-            "height": "0.07",
-            "width": "0.07"
+            "height": "0.05",
+            "width": "0.05"
         },
     ]
 

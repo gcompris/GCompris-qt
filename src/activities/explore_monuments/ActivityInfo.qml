@@ -32,7 +32,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Knowledge of different monuments.")
   //: Help manual
-  manual: qsTr("Click on the given keys to learn more of the monuments and then identify where the monuments is on the map by its name.")
+  manual: qsTr("Click on the spots to learn about the monuments and then locate them on the map.")
   credit: qsTr("Photos taken from Wikipedia.")
   section: "discovery arts"
   createdInVersion: 6000

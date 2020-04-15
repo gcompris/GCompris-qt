@@ -22,7 +22,7 @@
 import QtQuick 2.6
 
 QtObject {
-    property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/usa/usbg.jpg"
+    property string backgroundImage: "qrc:/gcompris/src/activities/explore_monuments/resource/usa/usa.svg"
     property var tab: [
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
