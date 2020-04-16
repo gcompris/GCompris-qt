@@ -14,10 +14,6 @@ import "../server.js" as Activity
 Item {
     id: managePupilsView
 
-    //width: activity.width
-
-  //  property Client newClient: masterController.ui_newClient
-
 
     signal pupilsNamesListSelected(var pupilsNamesList)
 
@@ -135,6 +131,9 @@ Item {
             //pupils data
             Repeater {
                 id: pupilsDetailsRepeater
+
+
+
 
                 model: Activity.pupilsNamesArray
 
@@ -332,7 +331,7 @@ Item {
 
                         onAccepted: {
                             pupilsDetailsRepeater.model = Activity.pupilsNamesArray
-
+                                        pupilDetailsRectangle.update()
                         }
                     }
                 }
@@ -347,7 +346,10 @@ Item {
     AddPupilsFromListDialog {
         id: addPupilsFromListDialog
 
-        onPupilsDetailsAdded: pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+        onPupilsDetailsAdded: {
+            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+        }
+
     }
 
     RemovePupilsDialog {

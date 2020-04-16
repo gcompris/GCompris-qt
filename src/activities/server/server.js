@@ -35,20 +35,16 @@ groupsNamesArray = ["CP","CE1","CE2","Judo","Théâtre"]
 
 groupsNamesArray.push("Chant")
 
-var pupilsNamesArray = []
-
-
-//        [["Aurélien Richelieu","2004",["CP","CE1","CE2","Judo","Théâtre"]],
-//                   ["Nadia Comtois","2003",["CP","CE1","CE2","Judo","Théâtre"]],
-//                   ["Raphaël Thibault","2003",["CP","CE1","CE2"]],
-//                   ["Anastasie Firmin","2001",["CP","CE1","CE2"]],
-//                   ["Arianne Vincent","2001",["CE2","Judo","Théâtre"]],
-//                   ["Marlène Porcher","2001",["CP","CE1","CE2","Théâtre"]],
-//                   ["Gervais Plourde","2001",["CP","CE2","Judo","Théâtre"]],
-//                   ["Madeline François","2002",["CP","CE1","CE2","Théâtre","maison"]],
-//                   ["Solange Géroux","2003",["CP","CE2","Judo","Théâtre"]],
-//                   ["Axel Deniau","2002",["CP","CE2","Judo","Théâtre"]]]
-
+var pupilsNamesArray = [["Mailys Urbain","2004","CP-CE1-CE2-Judo-Théâtre"],
+                        ["Lucienne Lucie","2003","CP-CE1-CE2-Judo-Théâtre"],
+                       ["France Juste","2003","CP-CE1-CE2"],
+                       ["Sasha Lilou","2001","CP-CE1-CE2"],
+                       ["Karine Mathilde","2001","CE2-Judo-Théâtre"],
+                       ["Diodore Jean-Charles","2001","CP-CE1-CE2-Théâtre"],
+                       ["Jordan Yannic","2001","CP-CE2-Judo-Théâtre"],
+                       ["Éloi Vespasien","2002","CP-CE1-CE2-Théâtre-maison"],
+                       ["Hubert Clovis","2003","CP-CE2-Judo-Théâtre"],
+                       ["Corneille Christiane","2002","CP-CE2-Judo-Théâtre"]]
 
 
 function addPupilsNamesFromList(pupilsDetailsStr) {

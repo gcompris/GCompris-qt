@@ -13,7 +13,7 @@ Popup {
     property bool textInputReadOnly: false
     property int pupilsListIndex
 
-    signal accepted(string textInputValue)
+    signal accepted()
 
     anchors.centerIn: Overlay.overlay
     width: 600
@@ -107,16 +107,18 @@ Popup {
                 text: qsTr("Save")
                 onClicked: {
                     console.log("---- " + addModifyPupilDialog.pupilName)
-                    addModifyPupilDialog.accepted(addModifyPupilDialog.pupilName)
+
                     console.log("1++++---- " + pupilsListIndex)
                     console.log("2++++---- " + pupilNameTextInput.text)
                     console.log("3++++---- " + Activity.pupilsNamesArray)
-                    Activity.pupilsNamesArray[pupilsListIndex][0] = "yyyy" //pupilNameTextInput.text
+                    Activity.pupilsNamesArray[pupilsListIndex][0] = pupilNameTextInput.text
 
                     console.log("---- " + Activity.pupilsNamesArray)
 
+                    addModifyPupilDialog.accepted()
 
-                    addModifyPupilDialog.close();
+
+                //    addModifyPupilDialog.close();
                 }
             }
 
