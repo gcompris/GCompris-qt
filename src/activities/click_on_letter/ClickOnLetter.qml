@@ -51,6 +51,7 @@ ActivityBase {
         signal start
         signal stop
         signal voiceError
+        signal voiceDone
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -70,6 +71,19 @@ ActivityBase {
             property alias score: score
             property alias bonus: bonus
             property alias locale: background.locale
+            property bool goToNextSubLevel: false
+            property bool goToNextLevel: false
+        }
+
+       onVoiceDone: {
+           if(items.goToNextSubLevel) {
+               items.goToNextSubLevel = false;
+               Activity.nextSubLevel();
+           }
+           if(items.goToNextLevel) {
+               items.goToNextLevel = false;
+               items.bonus.good("flower");
+           }
         }
 
         onVoiceError: {
@@ -78,6 +92,7 @@ ActivityBase {
         }
 
         onStart: {
+            activity.audioVoices.done.connect(voiceDone)
             activity.audioVoices.error.connect(voiceError)
             Activity.start(items, mode);
         }
@@ -140,7 +155,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         BarButton {

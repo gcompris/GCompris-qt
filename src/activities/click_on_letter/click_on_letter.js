@@ -191,10 +191,14 @@ function previousLevel() {
 function nextSubLevel() {
     items.audioVoices.clearQueue()
     if(++currentSubLevel >= maxSubLevel) {
-        currentSubLevel = 0
-        nextLevel()
+        if(items.audioVoices.hasAudio) {
+            items.goToNextLevel = true
+        } else {
+            items.bonus.good("flower")
+        }
+    } else {
+        initLevel();
     }
-    initLevel();
 }
 
 function checkAnswer(index)
@@ -202,7 +206,11 @@ function checkAnswer(index)
     var modelEntry = items.trainModel.get(index);
     if (modelEntry.letter === currentLetter) {
         playLetter(modelEntry.letter);
-        items.bonus.good("flower");
+        if(items.audioVoices.hasAudio) {
+            items.goToNextSubLevel = true
+        } else {
+            nextSubLevel();
+        }
         return true
     } else {
         return false
