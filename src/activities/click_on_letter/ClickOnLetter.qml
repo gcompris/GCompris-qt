@@ -167,7 +167,11 @@ ActivityBase {
                 right: parent.right
                 margins: 10
             }
-            onClicked: Activity.playLetter(Activity.currentLetter);
+            onClicked: {
+                activity.audioVoices.clearQueue();
+                activity.audioVoices.stop();
+                Activity.playLetter(Activity.currentLetter);
+            }
         }
 
         Image {
