@@ -141,7 +141,7 @@ ActivityBase {
             repeat: false
             onTriggered: {
                 if(activity.audioVoices.playbackState == 1) {
-                    introDelay.start()
+                    introDelay.restart()
                 }
                 else {
                     parent.repeat()
@@ -158,7 +158,7 @@ ActivityBase {
                 questionPlayer.start()
             }
         }
-        
+
         Timer {
             id: questionPlayer
             onTriggered: {
@@ -190,8 +190,12 @@ ActivityBase {
                     bar.level--
                 }
                 initLevel();
+                parent.repeat();
             }
-            onNextLevelClicked: parent.nextLevel()
+            onNextLevelClicked: {
+                parent.nextLevel();
+                parent.repeat();
+            }
             onHomeClicked: activity.home()
             onRepeatClicked: parent.repeat()
         }
@@ -251,6 +255,8 @@ ActivityBase {
 
         function repeat() {
             if(items.running == true) {
+                introDelay.stop()
+                activity.audioVoices.stop()
                 questionPlayer.stop()
                 activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'knock.wav'))
                 items.questionToPlay = items.question.slice()
