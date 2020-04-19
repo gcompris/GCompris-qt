@@ -20,6 +20,7 @@ Item {
 
     Connections {
         target: masterController.ui_navigationController
+        onGoAddPupilDialog: addPupilDialog.open()
         onGoAddPupilsFromListDialog: addPupilsFromListDialog.open()
         onGoRemovePupilsDialog: removePupilsDialog.open()
     }
@@ -113,6 +114,7 @@ Item {
                         }
                     }
                     Rectangle {
+                        id: pupilGroupsHeader
                         Layout.fillWidth: true
                         Layout.fillHeight: true
                         Text {
@@ -131,9 +133,6 @@ Item {
             //pupils data
             Repeater {
                 id: pupilsDetailsRepeater
-
-
-
 
                 model: Activity.pupilsNamesArray
 
@@ -191,8 +190,6 @@ Item {
                                     text: modelData[0]
                                     anchors.verticalCenter: parent.verticalCenter
                                     leftPadding: 20
-
-
                                 }
                             }
                             Rectangle {
@@ -253,8 +250,7 @@ Item {
                                                     editIcon.color = Style.colourNavigationBarBackground //Style.colourPanelBackgroundHover
                                                     //pupilDetailsRectangle.editPupilRectangleVisible = true
                                                     //pupilDetailsRectangle.optionsPupilRectangleVisible = true
-                                        print("sdfsfsdf")
-
+                                                    print("sdfsfsdf")
                                     }
                                     onExited: {
                                                     ///modifyPupilCommandsRectangle.visible = false
@@ -331,7 +327,7 @@ Item {
 
                         onAccepted: {
                             pupilsDetailsRepeater.model = Activity.pupilsNamesArray
-                                        pupilDetailsRectangle.update()
+                            //pupilDetailsRectangle.update()  //? does not work
                         }
                     }
                 }
@@ -342,6 +338,20 @@ Item {
     CommandBar {
         commandList: masterController.ui_commandController.ui_managePupilsViewContextCommands
     }
+
+
+    AddModifyPupilDialog {
+        id: addPupilDialog
+
+        label: qsTr("Add pupil name and its group(s)")
+
+        onAccepted: {
+            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+        }
+
+
+    }
+
 
     AddPupilsFromListDialog {
         id: addPupilsFromListDialog
@@ -378,5 +388,18 @@ Item {
             console.log(pupilsNamesListStr)
 
         }
+
+        onAccepted: {
+            var pupilsNamesToRemoveList = []
+            for(var i = pupilsDetailsRepeater.count-1; i >= 0; i--) {
+                if (pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.checked === true) {
+                    Activity.pupilsNamesArray.splice(i,1)
+
+                    console.log("removed" + pupilsDetailsRepeater.itemAt(i).pupilNameCheckBox.text)
+                }
+            }
+            pupilsDetailsRepeater.model = Activity.pupilsNamesArray
+        }
+
     }
 }

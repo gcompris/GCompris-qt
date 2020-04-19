@@ -9,19 +9,21 @@ Popup {
 
     property alias pupilsNamesText: pupilsNamesText
 
+    signal accepted()
+
     anchors.centerIn: Overlay.overlay
     width: 600
-    height: 600
+    height: 400
     modal: true
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
-    onOpened: {
-        pupilsNamesText.text = "test"
-        print("uuuu")
-       // console.log(pupilsDetailsRepeater.itemAt(2)).pupilDetailsRectangleMouseArea.width
+//    onOpened: {
+//        pupilsNamesText.text = "test"
+//        print("uuuu")
+//       // console.log(pupilsDetailsRepeater.itemAt(2)).pupilDetailsRectangleMouseArea.width
 
-    }
+//    }
 
     ColumnLayout {
         height: parent.height
@@ -78,35 +80,25 @@ Popup {
 
             Layout.preferredWidth: parent.width
             Layout.alignment: Qt.AlignCenter
-            Layout.minimumHeight: saveButton.height
+            Layout.minimumHeight: okButton.height
             Layout.preferredHeight: Layout.minimumHeight
 
             ViewButton {
-                id: saveButton
+                id: okButton
 
                 anchors.right: parent.right
                 anchors.bottom: parent.bottom
                 text: qsTr("Ok")
                 onClicked: {
-
-              //      var lines = edit.text.split('\n')
-
-                    //Activity.addPupilsNamesFromList(edit.text)
-
-                    //console.log("---- " + lines)
-
-                    console.log(pupilsDetailsRepeater.itemAt(2)).pupilDetailsRectangleMouseArea.width
-
-
-                    removePupilsDialog.pupilsToBeRemoved()
+                    removePupilsDialog.accepted()
+                    removePupilsDialog.close()
                 }
-
             }
 
             ViewButton {
                 id: cancelButton
 
-                anchors.right: saveButton.left
+                anchors.right: okButton.left
                 anchors.bottom: parent.bottom
                 text: qsTr("Cancel")
 

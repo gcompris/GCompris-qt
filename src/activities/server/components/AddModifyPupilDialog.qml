@@ -17,16 +17,33 @@ Popup {
 
     anchors.centerIn: Overlay.overlay
     width: 600
-    height: 300
+    height: 400
     modal: true
     focus: true
     closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutsideParent
 
 
     ColumnLayout {
+
         height: parent.height
         width: parent.width
         spacing: 20
+
+        Text {
+            id: errorMessage
+
+            Layout.preferredHeight: 40
+            Layout.preferredWidth: errorMessage.implicitWidth
+            Layout.alignment : Qt.AlignHCenter | Qt.AlignCenter
+
+            font {
+                family: Style.fontAwesome
+                pixelSize: 15
+
+            }
+            color: "red"
+            visible: false
+        }
 
         Text {
             id: groupDialogText
@@ -113,12 +130,43 @@ Popup {
                     console.log("3++++---- " + Activity.pupilsNamesArray)
                     Activity.pupilsNamesArray[pupilsListIndex][0] = pupilNameTextInput.text
 
-                    console.log("---- " + Activity.pupilsNamesArray)
+                    //Activity.pupilsNamesArray[pupilsListIndex][0] = pupilNameTextInput.text
 
-                    addModifyPupilDialog.accepted()
+                    console.log("???? " + Activity.pupilsNamesArray[pupilsListIndex][2])
 
 
-                //    addModifyPupilDialog.close();
+
+                    var testGroupNames = groupsNamesTextInput.text.split("-");
+                    //test if all the grousp added exist
+                    var allGroupsAreValid = true
+                    for (var i=0; i<testGroupNames.length; i++) {
+                        print(testGroupNames[i])
+                        if (!Activity.groupsNamesArray.includes(testGroupNames[i])) {
+                            errorMessage.text = qsTr("The following group does not exists : " + testGroupNames[i])
+                            errorMessage.visible = true
+                            allGroupsAreValid = false
+                        }
+                    }
+
+                    //test if groups are not added twice
+                    for (i=0; i<testGroupNames.length; i++) {
+                        print(testGroupNames[i])
+                        if (Activity.groupsNamesArray.includes(testGroupNames[i])) {
+                            var idx = testGroupNames.indexOf(testGroupNames[i])
+                            var idx2 = testGroupNames.indexOf(testGroupNames[i], idx+1)
+                            if (idx2 !== -1) {
+                                errorMessage.text = qsTr("The following group has been added more than once : " + testGroupNames[i])
+                                errorMessage.visible = true
+                                allGroupsAreValid = false
+                            }
+                        }
+                    }
+
+                    if (allGroupsAreValid === true) {
+                        Activity.pupilsNamesArray[pupilsListIndex][2] = groupsNamesTextInput.text
+                        addModifyPupilDialog.accepted()
+                        addModifyPupilDialog.close();
+                    }
                 }
             }
 

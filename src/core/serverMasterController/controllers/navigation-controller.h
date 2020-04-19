@@ -25,6 +25,7 @@ signals:
     void goManageWorkPlanView();
     void goAddPupilsFromListDialog();
     void goRemovePupilsDialog();
+    void goAddPupilDialog();
 
 };
 

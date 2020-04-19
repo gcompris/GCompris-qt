@@ -146,6 +146,7 @@ void CommandController::onEditClientDeleteExecuted()
 void CommandController::onManagePupilsAddPupilExecuted()
 {
     qDebug() << "You created a new pupil!";
+    implementation->navigationController->goAddPupilDialog();
 
   /*  implementation->databaseController->createRow(implementation->newClient->key(), implementation->newClient->id(), implementation->newClient->toJson());
 
