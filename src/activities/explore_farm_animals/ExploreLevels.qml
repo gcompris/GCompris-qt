@@ -137,8 +137,8 @@ ActivityBase {
 
         onVoiceDone: {
             if(items.bonusPlaying) {
-                Activity.repeat();
                 items.bonusPlaying = false;
+                Activity.repeat();
             }
         }
 
