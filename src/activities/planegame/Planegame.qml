@@ -58,6 +58,7 @@ ActivityBase {
         anchors.fill: parent
         signal start
         signal stop
+        signal voiceDone
         source: Activity.url + "../algorithm/resource/desert_scene.svg"
         sourceSize.width: parent.width
 
@@ -78,9 +79,20 @@ ActivityBase {
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
             property bool showTutorial: activity.showTutorial
+            property bool goToNextLevel: false
        }
 
-        onStart: { Activity.start(items, dataset) }
+       onVoiceDone: {
+           if(items.goToNextLevel) {
+               items.goToNextLevel = false;
+               items.bonus.good("flower");
+           }
+        }
+
+        onStart: {
+            activity.audioVoices.done.connect(voiceDone)
+            Activity.start(items, dataset)
+        }
         onStop: { Activity.stop() }
 
         //Tutorial section starts

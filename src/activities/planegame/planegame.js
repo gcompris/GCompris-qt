@@ -300,7 +300,11 @@ function handleCollisionsWithCloud() {
 
                     if(currentSubLevel === numberOfSubLevels) {
                         /* Try the next level */
-                        items.bonus.good("flower")
+                        if(items.audioVoices.hasAudio) {
+                            items.goToNextLevel = true
+                        } else {
+                            items.bonus.good("flower")
+                        }
                     } else {
                         items.score.message = dataset[currentLevel].data[currentSubLevel]
                     }
