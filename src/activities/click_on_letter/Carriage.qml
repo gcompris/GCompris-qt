@@ -31,6 +31,7 @@ Item {
     id: carriageItem
     property int nbCarriage
     property bool isCarriage: index <= nbCarriage
+    property bool clickEnabled
 
     Image {
         id: carriageImage
@@ -93,18 +94,20 @@ Item {
             opacity: 0
             visible: ApplicationInfo.useOpenGL ? false : true
         }
-        
+
         MouseArea {
             id: mouseArea
             anchors.fill: parent
             hoverEnabled: ApplicationInfo.isMobile ? false : true
 
             onClicked: {
-                if (Activity.checkAnswer(index)) {
-                    successAnimation.restart();
-                    particle.burst(30)
-                } else {
-                    failureAnimation.restart()
+                if(carriageItem.clickEnabled) {
+                    if (Activity.checkAnswer(index)) {
+                        successAnimation.restart();
+                        particle.burst(30)
+                    } else {
+                        failureAnimation.restart()
+                    }
                 }
             }
         }
@@ -162,7 +165,7 @@ Item {
             }
         }
     }
-    
+
     Colorize {
         id: color
         z: 5

@@ -282,6 +282,7 @@ ActivityBase {
             delegate: Carriage {
                 width: background.itemWidth
                 nbCarriage: (parent.width - engine.width) / background.itemWidth
+                clickEnabled: activity.audioVoices.playbackState == 1 ? false : true
             }
         }
 
