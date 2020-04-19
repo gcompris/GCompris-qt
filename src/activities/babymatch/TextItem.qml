@@ -36,7 +36,7 @@ Item {
     GCText {
         id: displayTxt
         anchors {
-            horizontalCenter: parent.horizontalCenter
+            horizontalCenter: parent ? parent.horizontalCenter: null
         }
         property bool firstTime: true
         fontSize: Math.max(Math.min(displayText.parent.width / 20 , 12), 5)
