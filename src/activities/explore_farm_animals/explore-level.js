@@ -120,7 +120,11 @@ function initSubSubLevel(IsNext) {
         items.bonus.good("smiley");
     }
      if(items.score.currentSubLevel == 2 && items.hasAudioQuestions && getCurrentQuestion()) {
-         repeat();
+         if(items.bonus.isPlaying) {
+             items.bonusPlaying = true;
+         } else {
+             repeat();
+        }
     }
 }
 
@@ -136,8 +140,8 @@ function reload() {
 }
 
 function repeat() {
-    items.audioVoices.stop()
-    items.audioVoices.clearQueue()
+    items.audioVoices.stop();
+    items.audioVoices.clearQueue();
     items.audioVoices.append(getCurrentQuestion().audio);
 }
 

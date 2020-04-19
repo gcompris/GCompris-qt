@@ -71,6 +71,7 @@ ActivityBase {
 
         signal start
         signal stop
+        signal voiceDone
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -100,6 +101,7 @@ ActivityBase {
             property string currentAudio
             property var questionOrder
             property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[progressbar.value]] : ""
+            property bool bonusPlaying: false
         }
 
         Timer {
@@ -122,11 +124,22 @@ ActivityBase {
             }
         }
 
-        onStart: { Activity.start(items, url, numberOfLevels) }
+        onStart: {
+            activity.audioVoices.done.connect(voiceDone)
+            activity.audioEffects.done.connect(voiceDone)
+            Activity.start(items, url, numberOfLevels)
+        }
         onStop: { Activity.stop() }
 
         Keys.onEscapePressed: {
             descriptionPanel.visible ? descriptionPanel.closeDescriptionPanel() : home()
+        }
+
+        onVoiceDone: {
+            if(items.bonusPlaying) {
+                Activity.repeat();
+                items.bonusPlaying = false;
+            }
         }
 
         Repeater {

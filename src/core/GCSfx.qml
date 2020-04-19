@@ -61,6 +61,11 @@ Item {
     property alias status: sfx.status
 
     /**
+     * Emitted when playback of sound has finished.
+     */
+    signal done
+
+    /**
      * Plays back the sfx resource @p file.
      *
      * @param type:string file [optional] URL to an sfx source.
@@ -88,6 +93,11 @@ Item {
 
     SoundEffect {
         id: sfx
+        onPlayingChanged: {
+            if(!playing){
+                gcsfx.done();
+            }
+        }
     }
 
     /// @endcond
