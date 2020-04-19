@@ -191,7 +191,7 @@ function previousLevel() {
 function nextSubLevel() {
     items.audioVoices.clearQueue()
     if(++currentSubLevel >= maxSubLevel) {
-        if(items.audioVoices.hasAudio) {
+        if(items.audioVoices.playbackState == 1) {
             items.goToNextLevel = true
         } else {
             items.bonus.good("flower")
@@ -206,7 +206,7 @@ function checkAnswer(index)
     var modelEntry = items.trainModel.get(index);
     if (modelEntry.letter === currentLetter) {
         playLetter(modelEntry.letter);
-        if(items.audioVoices.hasAudio) {
+        if(items.audioVoices.playbackState == 1) {
             items.goToNextSubLevel = true
         } else {
             nextSubLevel();
