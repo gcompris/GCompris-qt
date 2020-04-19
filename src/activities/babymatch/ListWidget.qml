@@ -50,7 +50,6 @@ Item {
         duration: 300
         onStopped: {
             view.okShowed = true
-            instruction.show()
         }
     }
     PropertyAnimation {
