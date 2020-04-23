@@ -463,7 +463,7 @@
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="x-test">xxGCompris main menuxx</caption>
       <caption xml:lang="zh-TW">GCompris 主畫面</caption>
-      <image width="1080" height="720">https://cdn.kde.org/screenshots/gcompris/gcompris.png</image>
+      <image width="1920" height="1080">https://cdn.kde.org/screenshots/gcompris/gcompris.png</image>
     </screenshot>
     <screenshot>
       <caption>"Click on an uppercase letter" activity</caption>
@@ -496,7 +496,7 @@
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
       <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
       <caption xml:lang="zh-TW">「在大寫字母上按一下」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/click_on_letter_up.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/click_on_letter_up.png</image>
     </screenshot>
     <screenshot>
       <caption>"Learning Clock" activity</caption>
@@ -529,7 +529,7 @@
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
       <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
       <caption xml:lang="zh-TW">「學習時鐘」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/clockgame.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/clockgame.png</image>
     </screenshot>
     <screenshot>
       <caption>"Mixing color of paint" activity</caption>
@@ -562,7 +562,7 @@
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
       <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
       <caption xml:lang="zh-TW">「混合顏色」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/color_mix.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/color_mix.png</image>
     </screenshot>
     <screenshot>
       <caption>"Colors" activity</caption>
@@ -595,7 +595,7 @@
       <caption xml:lang="uk">Вправа з кольорами</caption>
       <caption xml:lang="x-test">xx"Colors" activityxx</caption>
       <caption xml:lang="zh-TW">「顏色」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/colors.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/colors.png</image>
     </screenshot>
     <screenshot>
       <caption>"Build the same model" activity</caption>
@@ -628,7 +628,7 @@
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
       <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
       <caption xml:lang="zh-TW">「建立相同的模型」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/crane.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/crane.png</image>
     </screenshot>
     <screenshot>
       <caption>"Count the items" activity</caption>
@@ -661,7 +661,7 @@
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
       <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
       <caption xml:lang="zh-TW">「數一數物品」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/enumerate.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/enumerate.png</image>
     </screenshot>
     <screenshot>
       <caption>"The fifteen game" activity</caption>
@@ -693,7 +693,7 @@
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
       <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
       <caption xml:lang="zh-TW">「遊戲十五」</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/fifteen.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/fifteen.png</image>
     </screenshot>
     <screenshot>
       <caption>"Hexagon" activity</caption>
@@ -725,7 +725,7 @@
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
       <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
       <caption xml:lang="zh-TW">「六角形」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/hexagon.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/hexagon.png</image>
     </screenshot>
     <screenshot>
       <caption>"Balance the scales properly" activity</caption>
@@ -758,7 +758,7 @@
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
       <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
       <caption xml:lang="zh-TW">「讓天平平衡」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/scalesboard.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/scalesboard.png</image>
     </screenshot>
     <screenshot>
       <caption>"End of chess game" activity</caption>
@@ -791,7 +791,7 @@
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
       <caption xml:lang="zh-TW">「西洋棋殘局」遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/chess_partyend.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/chess_partyend.png</image>
     </screenshot>
     <screenshot>
       <caption>"A sliding-block puzzle game" activity</caption>
@@ -823,13 +823,13 @@
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
       <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
       <caption xml:lang="zh-TW">「滑動方塊」解謎遊戲</caption>
-      <image width="1080" height="720">https://gcompris.net/screenshots_qt/large/traffic.png</image>
+      <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/traffic.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://gcompris.net/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
   <url type="help">https://gcompris.net/wiki/Manual</url>
-  <url type="donation">https://gcompris.net/buy-en.html#donation</url>
+  <url type="donation">https://gcompris.net/donate-en.html</url>
   <url type="translate">https://gcompris.net/wiki/Developer%27s_corner#Translation</url>
   <update_contact>gcompris-devel@kde.org</update_contact>
   <project_group>KDE</project_group>
