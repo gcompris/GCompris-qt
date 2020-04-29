@@ -59,5 +59,5 @@ function stopVoice() {
 function playSound() {
     stopVoice();
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/audioclick.wav");
-    items.typedText.text = ""
+    items.typedText.text = "";
 }
