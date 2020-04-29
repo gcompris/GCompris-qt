@@ -35,7 +35,8 @@ ActivityInfo {
   manual: qsTr("Type any key on the keyboard.
     Letters, numbers and other character keys will display the corresponding character on the screen.
     If there is a corresponding voice it will be played, else it will play a bleep sound.
-    Other keys will just play a click sound.")
+    Other keys will just play a click sound.
+    ")
   credit: ""
   section: "computer keyboard letters numeration"
   createdInVersion: 9800
