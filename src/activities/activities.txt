@@ -9,10 +9,11 @@ algorithm
 align4
 align4-2players
 alphabet-sequence
-babymatch
-babyshapes
+baby_keyboard
 baby_tangram
 baby_wordprocessor
+babymatch
+babyshapes
 balancebox
 ballcatch
 bargame
@@ -29,10 +30,10 @@ chess
 chess_2players
 chess_partyend
 chronos
-clickanddraw
-clickgame
 click_on_letter
 click_on_letter_up
+clickanddraw
+clickgame
 clockgame
 color_mix
 color_mix_light
@@ -122,8 +123,8 @@ number_sequence
 numbers-odd-even
 paintings
 penalty
-piano_composition
 photo_hunter
+piano_composition
 planegame
 play_piano
 play_rhythm
