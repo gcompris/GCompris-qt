@@ -43,7 +43,8 @@ ActivityBase {
         id: background
         focus: true
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
         source: backgroundImg
 
         property bool keyboardMode: false
