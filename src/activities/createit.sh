@@ -27,9 +27,9 @@ cp -r $templatedir $activitydir
 
 
 #retrieve version code
-major=`awk '/set\(GCOMPRIS_MAJOR_VERSION / {print substr ($NF, 0, length($NF)-1)}' <  ../../CMakeLists.txt`
-minor=`awk '/set\(GCOMPRIS_MINOR_VERSION / {print substr ($NF, 0, length($NF)-1)}' <  ../../CMakeLists.txt`
-patch=`awk '/set\(GCOMPRIS_PATCH_VERSION / {print substr ($NF, 0, length($NF)-1)}' <  ../../CMakeLists.txt`
+major=`awk '/set\(GCOMPRIS_MAJOR_VERSION / {print substr ($NF, 0, length($NF)-1); exit}' <  ../../CMakeLists.txt`
+minor=`awk '/set\(GCOMPRIS_MINOR_VERSION / {print substr ($NF, 0, length($NF)-1); exit}' <  ../../CMakeLists.txt`
+patch=`awk '/set\(GCOMPRIS_PATCH_VERSION / {print substr ($NF, 0, length($NF)-1); exit}' <  ../../CMakeLists.txt`
 versioncode=$(($major*10000+$minor*100+$patch))
 
 cd $activitydir
