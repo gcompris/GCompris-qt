@@ -88,6 +88,8 @@ ActivityBase {
             property int goodWordIndex
             property bool easyMode: false
             property alias englishFallbackDialog: englishFallbackDialog
+            property alias winTimer: winTimer
+            property alias goodIcon: goodIcon
 
             function playWord() {
                 var locale = ApplicationInfo.getVoicesLocale(items.locale)
@@ -113,6 +115,17 @@ ActivityBase {
 
         onStop: {
             Activity.stop();
+        }
+
+        Image {
+            id: goodIcon
+            source: "qrc:/gcompris/src/core/resource/apply.svg"
+            anchors.top: score.bottom
+            anchors.horizontalCenter: score.horizontalCenter
+            anchors.topMargin: ok.anchors.bottomMargin
+            sourceSize.height: ok.width
+            sourceSize.width: ok.width
+            visible: false
         }
 
         GCText {
@@ -393,6 +406,12 @@ ActivityBase {
             focus: true
             active: background.englishFallback
             onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+
+        Timer {
+            id: winTimer
+            interval: 2000
+            onTriggered: bonus.good("lion")
         }
     }
 }

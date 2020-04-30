@@ -164,8 +164,10 @@ function processKeyPress(text) {
     // If no more '_' in the word to find, we have found all letters, show bonus
     if(items.hidden.text.indexOf("_") === -1) {
         items.maskThreshold = 0;
-        items.playWord()
-        items.bonus.good("lion");
+        items.playWord();
+        items.hidden.text = items.goodWord.translatedTxt;
+        items.goodIcon.visible = true
+        items.winTimer.start();
     }
 }
 
@@ -194,6 +196,7 @@ function initSubLevel() {
         items.score.visible = false
     items.goodWordIndex = subLevelsLeft.pop()
     items.ok.visible = false
+    items.goodIcon.visible = false
     items.goodWord = wordList[items.goodWordIndex]
     items.wordImage.changeSource(items.goodWord.image);
     items.remainingLife = 6;
