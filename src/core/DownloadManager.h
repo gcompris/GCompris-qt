@@ -46,7 +46,7 @@
  * default local writable location. Downloads are based on common relative
  * resource paths, such that a URL of the form
  *
- * <tt>http://\<server-base\>/\<path/to/my/resource.rcc\></tt>
+ * <tt>https://\<server-base\>/\<path/to/my/resource.rcc\></tt>
  *
  * will be downloaded to a local path
  *
