@@ -23,60 +23,21 @@
 .import QtQuick 2.6 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var images = [
-            "aquarela_colors.svg",
-            "giraffe.svg",
-            "pencil.svg",
-            "mouse_on_cheese.svg",
-            "mushroom_house.svg",
-            "pencils_paper.svg",
-            "pencils.svg",
-            "white_cake.svg",
-            "die_1.svg",
-            "die_2.svg",
-            "die_3.svg",
-            "die_4.svg",
-            "die_5.svg",
-            "die_6.svg",
-            "die_7.svg",
-            "die_0.svg",
-            "digital_die0.svg",
-            "digital_die1.svg",
-            "digital_die2.svg",
-            "digital_die3.svg",
-            "digital_die4.svg",
-            "digital_die5.svg",
-            "digital_die6.svg",
-            "digital_die7.svg"
-        ]
-
 var questionModel
 var answerModel
 var selectorModel
 
 var url = "qrc:/gcompris/src/activities/mosaic/resource/"
 
-// What is the grid layout based on the number of items
-var questionLayout = {
-    8:  [4, 2],
-    16: [4, 4],
-    24: [6, 4]
-}
-
-var selectorLayout = {
-    8:  [8, 1],
-    16: [8, 2],
-    24: [12, 2]
-}
-
 var currentLevel = 0
-var numberOfLevel = 16
+var numberOfLevel
 var items
 
 function start(items_) {
     items = items_
     currentLevel = 0
     initLevel()
+    numberOfLevel = items.levels.length
 }
 
 function stop() {
@@ -86,21 +47,16 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.background.areaWithKeyboardFocus = items.selector
     items.selectedItem = ""
+    items.nbItems = items.levels[currentLevel].nbOfCells
+    items.questionLayoutColumns = items.levels[currentLevel].layout[0][0]
+    items.questionLayoutRows = items.levels[currentLevel].layout[0][1]
+    items.selectorLayoutColumns = items.levels[currentLevel].layout[1][0]
+    items.selectorLayoutRows = items.levels[currentLevel].layout[1][1]
+    items.modelDisplayLayout = items.levels[currentLevel].modelDisplayLayout
+    items.scaleGridRatio = items.levels[currentLevel].scaleGridRatio
+    selectorModel = items.levels[currentLevel].images
 
-    if(currentLevel < 4) {
-        items.nbItems = 8
-        selectorModel = images.slice(currentLevel,
-                                     currentLevel + items.nbItems);
-    } else if(currentLevel < 8) {
-        items.nbItems = 16
-        selectorModel = images.slice(currentLevel - 4,
-                                     currentLevel - 4 + items.nbItems);
-    } else {
-        items.nbItems = 24
-        selectorModel = images.slice(0, items.nbItems);
-    }
     items.selector.model = selectorModel
-
     questionModel = Core.shuffle(selectorModel)
     items.question.model = questionModel
 

@@ -36,4 +36,5 @@ ActivityInfo {
   credit: ""
   section: "puzzle"
   createdInVersion: 0
+  levels: "1,2,3,4"
 }

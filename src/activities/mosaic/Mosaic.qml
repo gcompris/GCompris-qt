@@ -44,6 +44,7 @@ ActivityBase {
         property var areaWithKeyboardFocus: selector
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -56,11 +57,18 @@ ActivityBase {
             property alias question: question
             property alias answer: answer
             property alias selector: selector
-            property alias nbItems: column.nbItems
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
             property string selectedItem
+            property var levels: activity.datasetLoader.data
+            property int nbItems
+            property int selectorLayoutColumns
+            property int selectorLayoutRows
+            property int questionLayoutColumns
+            property int questionLayoutRows
+            property string modelDisplayLayout
+            property real scaleGridRatio
         }
 
         onStart: { Activity.start(items) }
@@ -112,13 +120,14 @@ ActivityBase {
             id: column
             spacing: 10
             x: parent.width * 0.05
-            y: parent.height * 0.05
+            y: column.singleColumnMode ? parent.height * 0.01 : parent.height * 0.05
             width: parent.width * 0.9
 
             property int nbItems: 24
             property bool horizontal: background.width >= background.height
-            property int nbColumns: Activity.questionLayout[nbItems][0]
-            property int nbLines: Activity.questionLayout[nbItems][1]
+            property bool singleColumnMode: items.modelDisplayLayout === "singleColumn"
+            property int nbColumns: items.questionLayoutColumns
+            property int nbLines: items.questionLayoutRows
             property int itemWidth: horizontal ?
                                         Math.min(width / 2 / nbColumns - 10 - 10 / nbColumns / 2,
                                                  parent.height / 2 / nbLines - 10 - 10 / nbLines / 2) :
@@ -126,20 +135,17 @@ ActivityBase {
                                                  parent.height * 0.25 / nbLines - 10 - 10 / nbLines / 2)
             property int itemHeight: itemWidth
 
-            property int nbSelectorColumns: horizontal ?
-                                                Activity.selectorLayout[nbItems][0] :
-                                                Activity.selectorLayout[nbItems][0] / 2
-            property int nbSelectorLines: horizontal ?
-                                              Activity.selectorLayout[nbItems][1] :
-                                              Activity.selectorLayout[nbItems][1] * 2
+            property int nbSelectorColumns
+            property int nbSelectorLines
 
             Grid {
                 id: row
                 spacing: 10
-                columns: column.horizontal ? 2 : 1
+                columns: column.singleColumnMode ? 1 : (column.horizontal ? 2 : 1)
 
                 // === The Question Area ===
                 Rectangle {
+                    id: questionRectangle
                     height: (column.itemHeight + 10) * column.nbLines
                     width: column.horizontal ? column.width / 2 : column.width + 10
                     color: "#55333333"
@@ -158,6 +164,7 @@ ActivityBase {
                         interactive: false
                         keyNavigationWraps: true
                         delegate: Image {
+                            id: imageQuestionId
                             source: Activity.url + modelData
                             fillMode: Image.PreserveAspectFit
                             width: question.cellWidth - 5 * ApplicationInfo.ratio
@@ -170,6 +177,7 @@ ActivityBase {
 
                 // === The Answer Area ===
                 Rectangle {
+                    id: answerRectangle
                     height: (column.itemHeight + 10) * column.nbLines
                     width: column.horizontal ? column.width / 2 : column.width + 10
                     color: "#55333333"
@@ -221,7 +229,6 @@ ActivityBase {
                                 }
                             }
                         }
-
                         function selectCurrentCell(selectedCell) {
                             Activity.answerSelected(selectedCell.cellIndex)
                         }
@@ -235,6 +242,7 @@ ActivityBase {
 
             // === The Selector ===
             Rectangle {
+                id: selectorRectangle
                 height: (column.itemWidth + 10) * column.nbSelectorLines
                 width: column.width + 10
                 color: "#661111AA"
@@ -275,6 +283,37 @@ ActivityBase {
                         readonly property string imageName: modelData
 
                         states: [
+                            State {
+                                name: "singleColumn"
+                                when: column.singleColumnMode
+                                PropertyChanges {
+                                    target: column
+                                    nbSelectorColumns: items.selectorLayoutColumns
+                                    nbSelectorLines: items.selectorLayoutRows
+                                }
+                                PropertyChanges {
+                                    target: selectorRectangle
+                                    height: (column.itemHeight + 20) * (column.nbLines / 1.05)
+                                    width: column.horizontal ? column.width / 2 : column.width + 10
+                                }
+                            },
+                           State {
+                                name: "doubleColumn"
+                                when: !column.singleColumnMode
+                                PropertyChanges {
+                                    target: column
+                                    nbSelectorColumns: horizontal ?
+                                                           items.selectorLayoutColumns :
+                                                           items.selectorLayoutColumns / 2
+                                    nbSelectorLines: horizontal ?
+                                                           items.selectorLayoutRows :
+                                                           items.selectorLayoutRows * 2
+                                }
+                                PropertyChanges {
+                                    target: selectorRectangle
+                                    width: column.width + 10
+                                }
+                            },
                             State {
                                 name: "notclicked"
                                 when: !imageId.iAmSelected && !mouseArea.containsMouse
@@ -358,6 +397,25 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                // restart activity on saving
+                background.start()
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.start()
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -365,9 +423,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
