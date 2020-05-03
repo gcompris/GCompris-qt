@@ -60,6 +60,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -74,7 +75,8 @@ ActivityBase {
             property alias planetsModel: planetsModel
             property alias mainQuizScreen: mainQuizScreen
             property alias dialogActivityConfig: dialogActivityConfig
-            property bool assessmentMode: false
+            property string mode: "learning"
+            property bool assessmentMode: mode === "assessment" ? true : false
             property bool solarSystemVisible: true
             property bool quizScreenVisible: false
             property string temperatureHint
@@ -84,7 +86,6 @@ ActivityBase {
         }
 
         onStart: {
-            dialogActivityConfig.getInitialConfiguration()
             Activity.start(items)
         }
 
@@ -102,9 +103,9 @@ ActivityBase {
             }
             z: 10
 
-            readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Normal mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? qsTr("Assessment") : qsTr("Normal"))
+            readonly property string commonInstruction: qsTr("Mode: <font color=\"#3bb0de\">%1</font><br><br>There are two modes in the activity which you can switch from the configuration window:<br><b>1. Learning mode</b> - In this mode you can play and learn about the Solar System.<br><b>2. Assessment mode</b> - In this mode you can test your knowledge about the Solar System.").arg(items.assessmentMode ? qsTr("Assessment") : qsTr("Learning"))
 
-            readonly property var normalModeInstructions: [
+            readonly property var learningModeInstructions: [
                 commonInstruction,
                 qsTr("Click on the Sun or any planet to reveal questions. Each question will have 4 options, out of which one is correct."),
                 qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter, or hint which indicates the correct answer.")
@@ -117,7 +118,7 @@ ActivityBase {
                 qsTr("You should score above 90% to pass the assessment and become a Solar System expert!")
             ]
 
-            intro: items.assessmentMode ? assessmentModeInstructions : normalModeInstructions
+            intro: items.assessmentMode ? assessmentModeInstructions : learningModeInstructions
 
             onIntroChanged: index = 0
         }
@@ -304,54 +305,23 @@ ActivityBase {
             onButton0Hit: solarSystemImageHint.visible = true
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    width: dialogActivityConfig.width
-                    height: dialogActivityConfig.height
-
-                    property alias assessmentModeBox: assessmentModeBox
-                    property bool initialCheckStatus
-
-                    GCDialogCheckBox {
-                        id: assessmentModeBox
-                        width: dialogActivityConfig.width
-                        text: qsTr("Assessment mode")
-                        checked: items.assessmentMode
-                    }
+            currentActivity: activity.activityInfo
+            onClose: {
+                if(items.assessmentMode) {
+                    Activity.startAssessmentMode()
                 }
+                else {
+                    Activity.showSolarModel()
+                }
+                home();
             }
-
             onLoadData: {
-                if(dataToSave && dataToSave["assessmentMode"])
-                    items.assessmentMode = dataToSave["assessmentMode"] === "true" ? true : false
-                Activity.numberOfLevel = items.assessmentMode ? 1 : 2
-
-            }
-
-            onSaveData: {
-                if(!dialogActivityConfig.configItem) {
-                    return
-                }
-                dialogActivityConfig.configItem.initialCheckStatus = items.assessmentMode
-                if(dialogActivityConfig.configItem.assessmentModeBox.checked != items.assessmentMode) {
-                    items.assessmentMode = !items.assessmentMode
-                    dataToSave["assessmentMode"] = items.assessmentMode ? "true" : "false"
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
                     Activity.numberOfLevel = items.assessmentMode ? 1 : 2
                 }
-            }
-
-            onClose: {
-                if(items.assessmentMode != dialogActivityConfig.configItem.initialCheckStatus) {
-                    if(items.assessmentMode)
-                        Activity.startAssessmentMode()
-                    else {
-                        Activity.showSolarModel()
-                    }
-                }
-                home()
             }
         }
 
@@ -369,11 +339,11 @@ ActivityBase {
                      items.hintProvided ? withoutConfigWithHint :
                      withoutConfigWithoutHint
 
-            property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
+            property BarEnumContent withConfig: BarEnumContent { value: help | home | activityConfig }
             property BarEnumContent withoutConfigWithHint: BarEnumContent { value: help | home | level | hint }
             property BarEnumContent withoutConfigWithoutHint: BarEnumContent { value: help | home | level }
-            property BarEnumContent withConfigWithRestart: BarEnumContent { value: help | home | config | reload }
-            property BarEnumContent withConfigWithHint: BarEnumContent { value: help | home | config | hint }
+            property BarEnumContent withConfigWithRestart: BarEnumContent { value: help | home | activityConfig | reload }
+            property BarEnumContent withConfigWithHint: BarEnumContent { value: help | home | activityConfig | hint }
 
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -393,8 +363,7 @@ ActivityBase {
                 else
                     displayDialog(hintDialog)
             }
-            onConfigClicked: {
-                dialogActivityConfig.active = true
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
             onReloadClicked: Activity.startAssessmentMode()
