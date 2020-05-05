@@ -58,8 +58,7 @@ Data {
                 [3,1],
                 [3,1]
             ],
-            "modelDisplayLayout": "singleColumn",
-            "scaleGridRatio": 1,
+            "modelDisplayLayout": "smaller",
             "images": images.slice(0,3)
         },
         {
@@ -68,8 +67,7 @@ Data {
                 [4,1],
                 [4,1]
             ],
-            "modelDisplayLayout": "singleColumn",
-            "scaleGridRatio": 1,
+            "modelDisplayLayout": "smaller",
             "images": images.slice(1,5)
         },
         {
@@ -78,8 +76,7 @@ Data {
                 [5,1],
                 [5,1]
             ],
-            "modelDisplayLayout": "singleColumn",
-            "scaleGridRatio": 1,
+            "modelDisplayLayout": "smaller",
             "images": images.slice(2,7)
         },
         {
@@ -88,8 +85,7 @@ Data {
                 [6,1],
                 [6,1]
             ],
-            "modelDisplayLayout": "singleColumn",
-            "scaleGridRatio": 1,
+            "modelDisplayLayout": "smaller",
             "images": images.slice(3,9)
 
         }

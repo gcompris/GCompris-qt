@@ -53,7 +53,6 @@ function initLevel() {
     items.selectorLayoutColumns = items.levels[currentLevel].layout[1][0]
     items.selectorLayoutRows = items.levels[currentLevel].layout[1][1]
     items.modelDisplayLayout = items.levels[currentLevel].modelDisplayLayout
-    items.scaleGridRatio = items.levels[currentLevel].scaleGridRatio
     selectorModel = items.levels[currentLevel].images
 
     items.selector.model = selectorModel

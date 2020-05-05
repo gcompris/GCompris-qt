@@ -58,8 +58,7 @@ Data {
                 [4,2],
                 [8,1]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(0,8)
         },
         {
@@ -68,8 +67,7 @@ Data {
                 [4,2],
                 [8,1]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(1,9)
         },
         {
@@ -78,8 +76,7 @@ Data {
                 [4,2],
                 [8,1]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(2,10)
         },
         {
@@ -88,8 +85,7 @@ Data {
                 [4,2],
                 [8,1]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(3,11)
         },
         {
@@ -98,8 +94,7 @@ Data {
                 [4,4],
                 [8,2]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(4,20)
         },
         {
@@ -108,8 +103,7 @@ Data {
                 [4,4],
                 [8,2]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(5,21)
         },
         {
@@ -118,8 +112,7 @@ Data {
                 [4,4],
                 [8,2]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(6,22)
         },
         {
@@ -128,8 +121,7 @@ Data {
                 [4,4],
                 [8,2]
             ],
-            "modelDisplayLayout": "doubleColumn",
-            "scaleGridRatio": 1.7,
+            "modelDisplayLayout": "sameSize",
             "images": images.slice(2,18)
         }
     ]

@@ -68,7 +68,6 @@ ActivityBase {
             property int questionLayoutColumns
             property int questionLayoutRows
             property string modelDisplayLayout
-            property real scaleGridRatio
         }
 
         onStart: { Activity.start(items) }
@@ -116,51 +115,133 @@ ActivityBase {
             areaWithKeyboardFocus.selectCurrentCell(areaWithKeyboardFocus.currentItem)
         }
 
-        Column {
-            id: column
-            spacing: 10
-            x: parent.width * 0.05
-            y: column.singleColumnMode ? parent.height * 0.01 : parent.height * 0.05
-            width: parent.width * 0.9
+        function fitItems(x_, y_, n_) {
+            var sx
+            var sy
+
+            var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
+            if (Math.floor(px * y_ / x_) * px < n_) {
+                sx = y / Math.ceil(px * y_ / x_);
+            } else {
+                sx = x_ / px;
+            }
+
+            var py = Math.ceil(Math.sqrt(n_ * y_ / x_));
+            if (Math.floor(py * x_ / y_) * py < n_) {
+                sy = x_ / Math.ceil(x_ *  py / y_);
+            } else {
+                sy = y_ / py;
+            }
+
+            return Math.max(sx, sy);
+        }
+
+        Rectangle {
+            id: mainArea
+            anchors.top: background.top
+            anchors.bottom: bar.top
+            anchors.left: background.left
+            anchors.right: background.right
+            color: "#00FFFFFF"
 
             property int nbItems: 24
             property bool horizontal: background.width >= background.height
-            property bool singleColumnMode: items.modelDisplayLayout === "singleColumn"
+            property bool smallQuestionMode: items.modelDisplayLayout === "smaller"
             property int nbColumns: items.questionLayoutColumns
             property int nbLines: items.questionLayoutRows
-            property int itemWidth: horizontal ?
-                                        Math.min(width / 2 / nbColumns - 10 - 10 / nbColumns / 2,
-                                                 parent.height / 2 / nbLines - 10 - 10 / nbLines / 2) :
-                                        Math.min(width / nbColumns - 10 - 10 / nbColumns / 2,
-                                                 parent.height * 0.25 / nbLines - 10 - 10 / nbLines / 2)
-            property int itemHeight: itemWidth
+            property int layoutMargin: 10
 
-            property int nbSelectorColumns
-            property int nbSelectorLines
+            states: [
+                State {
+                    name: "horizontal"
+                    when: mainArea.horizontal
+                    AnchorChanges {
+                        target: questionRectangle
+                        anchors.top: parent.top
+                        anchors.left: parent.left
+                        anchors.horizontalCenter: undefined
+                    }
+                    PropertyChanges {
+                        target: answerRectangle
+                        height: mainArea.height * 0.66 - mainArea.layoutMargin * 2
+                        width: mainArea.width * 0.5  - mainArea.layoutMargin * 1.5
+                    }
+                    AnchorChanges {
+                        target: answerRectangle
+                        anchors.top: parent.top
+                        anchors.left: questionRectangle.right
+                    }
+                },
+                State {
+                    name: "vertical"
+                    when: !mainArea.horizontal
+                    AnchorChanges {
+                        target: questionRectangle
+                        anchors.top: parent.top
+                        anchors.left: parent.left
+                        anchors.horizontalCenter: undefined
+                    }
+                    PropertyChanges {
+                        target: answerRectangle
+                        height: mainArea.height / 3 - mainArea.layoutMargin * 2
+                        width: mainArea.width - mainArea.layoutMargin * 2
+                    }
+                    AnchorChanges {
+                        target: answerRectangle
+                        anchors.top: questionRectangle.bottom
+                        anchors.left: parent.left
+                    }
+                }
+            ]
 
-            Grid {
-                id: row
-                spacing: 10
-                columns: column.singleColumnMode ? 1 : (column.horizontal ? 2 : 1)
-
-                // === The Question Area ===
+            // === The Question Area ===
+            Rectangle {
+                id: questionRectangle
+                color: "#00FFFFFF"
+                height: answerRectangle.height
+                width: answerRectangle.width
+                anchors.top: mainArea.top
+                anchors.left: mainArea.left
+                anchors.topMargin: mainArea.layoutMargin
+                anchors.leftMargin: mainArea.layoutMargin
                 Rectangle {
-                    id: questionRectangle
-                    height: (column.itemHeight + 10) * column.nbLines
-                    width: column.horizontal ? column.width / 2 : column.width + 10
+                    id: questionRectangleContent
+                    anchors.centerIn: parent
                     color: "#55333333"
                     border.color: "black"
                     border.width: 2
                     radius: 5
 
+                    states: [
+                        State {
+                            name: "smallQuestion"
+                            when: mainArea.smallQuestionMode
+                            PropertyChanges {
+                                target: questionRectangleContent
+                                height: answerRectangle.height * 0.7
+                                width: answerRectangle.width * 0.7
+                            }
+                        },
+                        State {
+                            name: "normalQuestion"
+                            when: !mainArea.smallQuestionMode
+                            PropertyChanges {
+                                target: questionRectangleContent
+                                height: answerRectangle.height
+                                width: answerRectangle.width
+                            }
+                        }
+                    ]
+
                     GridView {
                         id: question
-                        width: (column.nbColumns * column.itemWidth) + (12.5 * (column.nbColumns - 1))
-                        height: parent.height
-                        x: 2 * ApplicationInfo.ratio
-                        y: 2 * ApplicationInfo.ratio
+                        width: cellWidth * mainArea.nbColumns
+                        height: cellHeight * mainArea.nbLines
+                        anchors.centerIn: parent
+                        anchors.verticalCenterOffset: 2.5 * ApplicationInfo.ratio
+                        anchors.horizontalCenterOffset: anchors.verticalCenterOffset
                         cellHeight: cellWidth
-                        cellWidth: width / column.nbColumns
+                        cellWidth: Math.min(parent.width / mainArea.nbColumns, parent.height / mainArea.nbLines)
                         interactive: false
                         keyNavigationWraps: true
                         delegate: Image {
@@ -174,68 +255,72 @@ ActivityBase {
                         }
                     }
                 }
+            }
 
-                // === The Answer Area ===
-                Rectangle {
-                    id: answerRectangle
-                    height: (column.itemHeight + 10) * column.nbLines
-                    width: column.horizontal ? column.width / 2 : column.width + 10
-                    color: "#55333333"
-                    border.color: "black"
-                    border.width: 2
-                    radius: 5
+            // === The Answer Area ===
+            Rectangle {
+                id: answerRectangle
+                height: mainArea.height * 0.33 - mainArea.layoutMargin * 2
+                width: mainArea.width  - mainArea.layoutMargin * 2
+                anchors.top: questionRectangle.bottom
+                anchors.left: mainArea.left
+                anchors.topMargin: mainArea.layoutMargin
+                anchors.leftMargin: mainArea.layoutMargin
+                color: "#55333333"
+                border.color: "black"
+                border.width: 2
+                radius: 5
 
-                    GridView {
-                        id: answer
-                        width: (column.nbColumns * column.itemWidth) + (12.5 * (column.nbColumns - 1))
-                        height: parent.height
-                        x: 2 * ApplicationInfo.ratio
-                        cellHeight: cellWidth
-                        cellWidth: width / column.nbColumns
-                        interactive: false
-                        keyNavigationWraps: true
-                        highlightFollowsCurrentItem: true
-                        highlight: Rectangle {
-                            color: "red"
-                            border.width: 3
-                            border.color: "black"
-                            opacity: 0.6
-                            visible: background.keyboardMode && (background.areaWithKeyboardFocus === answer)
-                            Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                            Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
-                        }
+                GridView {
+                    id: answer
+                    width: cellWidth * mainArea.nbColumns
+                    height: cellHeight * mainArea.nbLines
+                    anchors.centerIn: parent
+                    cellHeight: cellWidth
+                    cellWidth: Math.min(parent.width / mainArea.nbColumns, parent.height / mainArea.nbLines)
+                    interactive: false
+                    keyNavigationWraps: true
+                    highlightFollowsCurrentItem: true
+                    highlight: Rectangle {
+                        color: "red"
+                        border.width: 3
+                        border.color: "black"
+                        opacity: 0.6
+                        visible: background.keyboardMode && (background.areaWithKeyboardFocus === answer)
+                        Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                        Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                    }
 
-                        // If the image was directly used as a delegate (without containing it in the item), the highlight element would have been be hard to notice as it would get completely hidden by the image due to the same sizes.
-                        delegate: Item {
-                            id: cellItem
-                            width: answer.cellWidth
-                            height: answer.cellHeight
+                    // If the image was directly used as a delegate (without containing it in the item), the highlight element would have been be hard to notice as it would get completely hidden by the image due to the same sizes.
+                    delegate: Item {
+                        id: cellItem
+                        width: answer.cellWidth
+                        height: answer.cellHeight
 
-                            readonly property int cellIndex: index
+                        readonly property int cellIndex: index
 
-                            Image {
-                                id: imageAnswerId
-                                source: Activity.url + modelData
-                                fillMode: Image.PreserveAspectFit
-                                width: answer.cellWidth - 5 * ApplicationInfo.ratio
-                                height: width
-                                sourceSize.width: width
-                                sourceSize.height: height
-                                anchors.centerIn: parent
+                        Image {
+                            id: imageAnswerId
+                            source: Activity.url + modelData
+                            fillMode: Image.PreserveAspectFit
+                            width: answer.cellWidth - 5 * ApplicationInfo.ratio
+                            height: width
+                            sourceSize.width: width
+                            sourceSize.height: height
+                            anchors.centerIn: parent
 
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: answer.selectCurrentCell(cellItem)
-                                }
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: answer.selectCurrentCell(cellItem)
                             }
                         }
-                        function selectCurrentCell(selectedCell) {
-                            Activity.answerSelected(selectedCell.cellIndex)
-                        }
+                    }
+                    function selectCurrentCell(selectedCell) {
+                        Activity.answerSelected(selectedCell.cellIndex)
+                    }
 
-                        function changeAreaWithKeyboardFocus() {
-                            areaWithKeyboardFocus = selector
-                        }
+                    function changeAreaWithKeyboardFocus() {
+                        areaWithKeyboardFocus = selector
                     }
                 }
             }
@@ -243,20 +328,27 @@ ActivityBase {
             // === The Selector ===
             Rectangle {
                 id: selectorRectangle
-                height: (column.itemWidth + 10) * column.nbSelectorLines
-                width: column.width + 10
+                height: mainArea.height * 0.33 - mainArea.layoutMargin * 2
+                width: mainArea.width - mainArea.layoutMargin * 2
+                anchors.top: answerRectangle.bottom
+                anchors.left: mainArea.left
+                anchors.topMargin: mainArea.layoutMargin
+                anchors.leftMargin: mainArea.layoutMargin
                 color: "#661111AA"
                 border.color: "black"
                 border.width: 2
                 radius: 5
+                property int selectorItemSize: fitItems(selectorRectangle.width, selectorRectangle.height, selector.count)
+
                 GridView {
                     id: selector
-                    width: (column.nbSelectorColumns * column.itemWidth) + (12.5 * (column.nbSelectorColumns - 1))
+                    width: parent.width
                     height: parent.height
-                    x: 2 * ApplicationInfo.ratio
-                    y: 2 * ApplicationInfo.ratio
-                    cellHeight: cellWidth
-                    cellWidth: width / column.nbSelectorColumns
+                    anchors.centerIn: parent
+                    anchors.verticalCenterOffset: 2.5 * ApplicationInfo.ratio
+                    anchors.horizontalCenterOffset: anchors.verticalCenterOffset
+                    cellHeight: selectorRectangle.selectorItemSize
+                    cellWidth: selectorRectangle.selectorItemSize
                     interactive: false
                     keyNavigationWraps: true
                     highlightFollowsCurrentItem: true
@@ -284,37 +376,6 @@ ActivityBase {
 
                         states: [
                             State {
-                                name: "singleColumn"
-                                when: column.singleColumnMode
-                                PropertyChanges {
-                                    target: column
-                                    nbSelectorColumns: items.selectorLayoutColumns
-                                    nbSelectorLines: items.selectorLayoutRows
-                                }
-                                PropertyChanges {
-                                    target: selectorRectangle
-                                    height: (column.itemHeight + 20) * (column.nbLines / 1.05)
-                                    width: column.horizontal ? column.width / 2 : column.width + 10
-                                }
-                            },
-                           State {
-                                name: "doubleColumn"
-                                when: !column.singleColumnMode
-                                PropertyChanges {
-                                    target: column
-                                    nbSelectorColumns: horizontal ?
-                                                           items.selectorLayoutColumns :
-                                                           items.selectorLayoutColumns / 2
-                                    nbSelectorLines: horizontal ?
-                                                           items.selectorLayoutRows :
-                                                           items.selectorLayoutRows * 2
-                                }
-                                PropertyChanges {
-                                    target: selectorRectangle
-                                    width: column.width + 10
-                                }
-                            },
-                            State {
                                 name: "notclicked"
                                 when: !imageId.iAmSelected && !mouseArea.containsMouse
                                 PropertyChanges {
@@ -335,7 +396,7 @@ ActivityBase {
                                 when: mouseArea.containsMouse
                                 PropertyChanges {
                                     target: imageId
-                                    scale: 1.1
+                                    scale: 1
                                 }
                             },
                             State {
