@@ -55,8 +55,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                 [6,4],
-                [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)
@@ -64,8 +63,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                [6,4],
-                [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)
@@ -73,8 +71,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                [6,4],
-                [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)
@@ -82,8 +79,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                [6,4],
-                [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)
@@ -91,8 +87,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                [6,4],
-               [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)
@@ -100,8 +95,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                [6,4],
-               [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)
@@ -109,8 +103,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                [6,4],
-               [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)
@@ -118,8 +111,7 @@ Data {
         {
             "nbOfCells": 24,
             "layout": [
-                [6,4],
-               [12,2]
+                [8,3]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,24)

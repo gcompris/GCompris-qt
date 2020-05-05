@@ -63,8 +63,6 @@ ActivityBase {
             property string selectedItem
             property var levels: activity.datasetLoader.data
             property int nbItems
-            property int selectorLayoutColumns
-            property int selectorLayoutRows
             property int questionLayoutColumns
             property int questionLayoutRows
             property string modelDisplayLayout

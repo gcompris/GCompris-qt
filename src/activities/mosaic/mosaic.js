@@ -50,8 +50,6 @@ function initLevel() {
     items.nbItems = items.levels[currentLevel].nbOfCells
     items.questionLayoutColumns = items.levels[currentLevel].layout[0][0]
     items.questionLayoutRows = items.levels[currentLevel].layout[0][1]
-    items.selectorLayoutColumns = items.levels[currentLevel].layout[1][0]
-    items.selectorLayoutRows = items.levels[currentLevel].layout[1][1]
     items.modelDisplayLayout = items.levels[currentLevel].modelDisplayLayout
     selectorModel = items.levels[currentLevel].images
 

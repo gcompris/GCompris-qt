@@ -53,45 +53,24 @@ Data {
 
     data: [
         {
-            "nbOfCells": 3,
-            "layout": [
-                [3,1],
-                [3,1]
-            ],
-            "modelDisplayLayout": "smaller",
-            "images": images.slice(0,3)
-        },
-        {
-            "nbOfCells": 4,
-            "layout": [
-                [4,1],
-                [4,1]
-            ],
-            "modelDisplayLayout": "smaller",
-            "images": images.slice(1,5)
-        },
-        {
-            "nbOfCells": 5,
-            "layout": [
-                [5,1],
-                [5,1]
-            ],
-            "modelDisplayLayout": "smaller",
-            "images": images.slice(2,7)
-        },
-        {
             "nbOfCells": 6,
             "layout": [
-                [6,1],
                 [6,1]
             ],
             "modelDisplayLayout": "smaller",
             "images": images.slice(3,9)
         },
         {
+            "nbOfCells": 7,
+            "layout": [
+                [7,1]
+            ],
+            "modelDisplayLayout": "smaller",
+            "images": images.slice(2,9)
+        },
+        {
             "nbOfCells": 8,
             "layout": [
-                [8,1],
                 [8,1]
             ],
             "modelDisplayLayout": "smaller",

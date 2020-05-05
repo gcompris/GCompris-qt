@@ -55,8 +55,7 @@ Data {
         {
             "nbOfCells": 8,
             "layout": [
-                [4,2],
-                [8,1]
+                [4,2]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(0,8)
@@ -64,8 +63,7 @@ Data {
         {
             "nbOfCells": 8,
             "layout": [
-                [4,2],
-                [8,1]
+                [4,2]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(1,9)
@@ -73,8 +71,7 @@ Data {
         {
             "nbOfCells": 8,
             "layout": [
-                [4,2],
-                [8,1]
+                [4,2]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(2,10)
@@ -82,8 +79,7 @@ Data {
         {
             "nbOfCells": 8,
             "layout": [
-                [4,2],
-                [8,1]
+                [4,2]
             ],
             "modelDisplayLayout": "sameSize",
             "images": images.slice(3,11)
@@ -91,7 +87,6 @@ Data {
         {
             "nbOfCells": 16,
             "layout": [
-                [4,4],
                 [8,2]
             ],
             "modelDisplayLayout": "sameSize",
@@ -100,7 +95,6 @@ Data {
         {
             "nbOfCells": 16,
             "layout": [
-                [4,4],
                 [8,2]
             ],
             "modelDisplayLayout": "sameSize",
@@ -109,7 +103,6 @@ Data {
         {
             "nbOfCells": 16,
             "layout": [
-                [4,4],
                 [8,2]
             ],
             "modelDisplayLayout": "sameSize",
@@ -118,7 +111,6 @@ Data {
         {
             "nbOfCells": 16,
             "layout": [
-                [4,4],
                 [8,2]
             ],
             "modelDisplayLayout": "sameSize",

@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Up to 6 items are placed on single line.")
+    objective: qsTr("Up to 5 items are placed on single line.")
     difficulty: 2
 
     property var images: [
@@ -55,7 +55,6 @@ Data {
         {
             "nbOfCells": 3,
             "layout": [
-                [3,1],
                 [3,1]
             ],
             "modelDisplayLayout": "smaller",
@@ -64,7 +63,6 @@ Data {
         {
             "nbOfCells": 4,
             "layout": [
-                [4,1],
                 [4,1]
             ],
             "modelDisplayLayout": "smaller",
@@ -73,21 +71,10 @@ Data {
         {
             "nbOfCells": 5,
             "layout": [
-                [5,1],
                 [5,1]
             ],
             "modelDisplayLayout": "smaller",
             "images": images.slice(2,7)
-        },
-        {
-            "nbOfCells": 6,
-            "layout": [
-                [6,1],
-                [6,1]
-            ],
-            "modelDisplayLayout": "smaller",
-            "images": images.slice(3,9)
-
         }
     ]
 }
