@@ -43,64 +43,7 @@
 .import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris
 
-var levels = [
-                                /**  simple  **/
-            {   "planet": qsTr("Ceres"),    "gravity":  0.27,   "maxAccel": 0.054,
-                "accelSteps": 2,            "alt": 75.0 ,       "mode": "simple",
-                "fuel" : -1 },
-            {   "planet": qsTr("Pluto"),    "gravity":  0.62,   "maxAccel": 0.186,
-                "accelSteps": 3,            "alt": 100.0,       "mode": "simple",
-                "fuel" : -1 },
-            {   "planet": qsTr("Titan"),    "gravity": 1.352,   "maxAccel": 0.406,
-                "accelSteps": 3,            "alt": 100.0,       "mode": "simple",
-                "fuel" : -1 },
-            {   "planet": qsTr("Moon"),     "gravity": 1.622,   "maxAccel": 0.324,
-                "accelSteps": 4,            "alt": 150.0,       "mode": "simple",
-                "fuel" : 10 },
-            {   "planet": qsTr("Mars"),     "gravity": 3.711,   "maxAccel": 0.619,
-                "accelSteps": 5,            "alt": 200.0,       "mode": "simple",
-                "fuel" : 20 },
-            {   "planet": qsTr("Venus"),    "gravity":  8.87,   "maxAccel": 1.331,
-                "accelSteps": 6,            "alt": 300.0,       "mode": "simple",
-                "fuel" : 70 },
-            {   "planet": qsTr("Earth"),    "gravity": 9.807,   "maxAccel": 1.373,
-                "accelSteps": 7,            "alt": 350.0,       "mode": "simple",
-                "fuel" : 70 },
-
-                                /**  rotation  **/
-            {   "planet": qsTr("Ceres"),    "gravity":  0.27,   "maxAccel": 0.054,
-                "accelSteps": 2,            "alt": 75.0 ,       "mode": "rotation",
-                "fuel" : -1 },
-            {   "planet": qsTr("Pluto"),    "gravity":  0.62,   "maxAccel": 0.186,
-                "accelSteps": 3,            "alt": 100.0,       "mode": "rotation",
-                "fuel" : -1 },
-            {   "planet": qsTr("Titan"),    "gravity": 1.352,   "maxAccel": 0.406,
-                "accelSteps": 3,            "alt": 100.0,       "mode": "rotation",
-                "fuel" : -1 },
-            {   "planet": qsTr("Moon"),     "gravity":  1.62,   "maxAccel": 0.324,
-                "accelSteps": 4,            "alt": 150.0,       "mode": "rotation",
-                "fuel" : 10 },
-            {   "planet": qsTr("Mars"),     "gravity":  3.71,   "maxAccel": 0.619,
-                "accelSteps": 5,            "alt": 200.0,       "mode": "rotation",
-                "fuel" : 20 },
-            {   "planet": qsTr("Venus"),    "gravity":  8.87,   "maxAccel": 1.331,
-                "accelSteps": 5,            "alt": 300.0,       "mode": "rotation",
-                "fuel" : 70 },
-            {   "planet": qsTr("Earth"),    "gravity": 9.807,   "maxAccel": 1.373,
-                "accelSteps": 7,            "alt": 350.0,       "mode": "rotation",
-                "fuel" : 70 }
-
-];
-
-var introTextSimple = qsTr("Use the up and down keys to control the thrust."
-                           + "<br/>Use the right and left keys to control direction."
-                           + "<br/>You must drive Tux's ship towards the landing platform."
-                           + "<br/>The landing platform turns green when the velocity is safe to land.")
-
-var introTextRotate = qsTr("The up and down keys control the thrust of the rear engine."
-                           + "<br/>The right and left keys now control the rotation of the ship."
-                           + "<br/>To move the ship in horizontal direction you must first rotate and then accelerate it.")
-
+var levels;
 var currentLevel = 0;
 var numberOfLevel;
 var items = null;
@@ -124,7 +67,9 @@ function start(items_) {
     items = items_;
     currentLevel = 0;
     lastLevel = -1;
+    levels = items_.levels;
     numberOfLevel = levels.length;
+
     barAtStart = GCompris.ApplicationSettings.isBarHidden;
     GCompris.ApplicationSettings.isBarHidden = true;
     initLevel()
@@ -181,13 +126,9 @@ function initLevel() {
 
 //    console.log("Starting level (surfaceOff=" + items.ground.surfaceOffset + ", ppm=" + items.world.pixelsPerMeter + ")");
 
-    if (currentLevel === 0 && lastLevel !== 0) {
+    if (levels[currentLevel].intro !== undefined) {
         items.ok.visible = false;
-        items.intro.intro = [introTextSimple];
-        items.intro.index = 0;
-    } else if (currentLevel === levels.length / 2 && lastLevel !== 0) {
-        items.ok.visible = false;
-        items.intro.intro = [introTextRotate];
+        items.intro.intro = [levels[currentLevel].intro];
         items.intro.index = 0;
     } else {
         // go
@@ -221,7 +162,7 @@ function getAltitudeReal()
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();

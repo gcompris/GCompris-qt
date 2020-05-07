@@ -88,6 +88,7 @@ ActivityBase {
         }
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -112,6 +113,7 @@ ActivityBase {
             property var rocketCategory: Fixture.Category1
             property var groundCategory: Fixture.Category2
             property var landingCategory: Fixture.Category3
+            property var levels: activity.datasetLoader.data
             property string mode: "rotate"  // "simple"
             property double velocity: 0.0
             property double altitude: 0.0
@@ -639,7 +641,7 @@ ActivityBase {
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
-                text: Activity.levels[bar.level-1].planet
+                text: items.levels ? items.levels[bar.level-1].planet : ""
             }
         }
 
@@ -715,10 +717,28 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         Bar {
             id: bar
             z: 21
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 Activity.initLevel();
                 displayDialog(dialogHelp);
@@ -726,6 +746,9 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {

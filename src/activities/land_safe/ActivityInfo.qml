@@ -45,4 +45,5 @@ The landing platform is green if your speed is fine for a safe landing.")
   section: "sciences experiment"
   enabled: ApplicationInfo.isBox2DInstalled //ApplicationInfo.hasShader
   createdInVersion: 6000
+  levels: "1,2"
 }
