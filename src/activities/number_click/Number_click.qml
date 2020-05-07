@@ -109,6 +109,9 @@ ActivityBase {
                 id: tux
                 source: Activity.url + "tux.svg"
 
+                height: parent.height * 0.4
+                fillMode: Image.PreserveAspectFit
+
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: numericNumber.bottom
                 anchors.topMargin: parent.height * 0.05
