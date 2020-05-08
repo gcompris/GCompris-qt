@@ -36,4 +36,5 @@ ActivityInfo {
   credit: qsTr("The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &lt;https://en.wikipedia.org/wiki/Lights_Out_(game)&gt;")
   section: "discovery logic"
   createdInVersion: 0
+  levels: "1,2,3,4,5,6,7,8,9"
 }

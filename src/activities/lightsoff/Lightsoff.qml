@@ -20,6 +20,7 @@
 *   along with this program; if not, see <https://www.gnu.org/licenses/>.
 */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 import "lightsoff.js" as Activity
@@ -42,6 +43,7 @@ ActivityBase {
         property bool keyNavigationVisible: false
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -55,6 +57,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias skyColor: background.color
             property alias modelTable: modelTable
+            property var levels: activity.datasetLoader.data
             property bool blockClicks: false
             property int nbCell: 5
             property int cellSize: Math.min(
@@ -226,10 +229,28 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         Bar {
             id: bar
             content: BarEnumContent {
-                value: help | home | level | reload
+                value: help | home | level | reload | activityConfig
             }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -238,6 +259,9 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.initLevel()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
