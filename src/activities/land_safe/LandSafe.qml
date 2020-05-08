@@ -641,7 +641,7 @@ ActivityBase {
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
-                text: items.levels ? items.levels[bar.level-1].planet : ""
+                text: (items.levels && items.levels[bar.level-1]) ? items.levels[bar.level-1].planet : ""
             }
         }
 
