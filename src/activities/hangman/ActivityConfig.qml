@@ -39,24 +39,21 @@ Item {
     }
 
     Column {
-        spacing: 10
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCComboBox {
-                id: localeBox
-                model: langs.languages
-                background: activityConfiguration.background
-                label: qsTr("Select your locale")
-            }
-            GCDialogCheckBox {
-                id: easyModeBox
-                width: parent.width
-                text: qsTr("Display image to find as hint")
-                checked: activityConfiguration.easyMode
-                onCheckedChanged: {
-                    activityConfiguration.easyMode = checked
-                }
+        spacing: 10 * ApplicationInfo.ratio
+        width: activityConfiguration.width
+        GCComboBox {
+            id: localeBox
+            model: langs.languages
+            background: activityConfiguration.background
+            label: qsTr("Select your locale")
+        }
+        GCDialogCheckBox {
+            id: easyModeBox
+            width: parent.width
+            text: qsTr("Display image to find as hint")
+            checked: activityConfiguration.easyMode
+            onCheckedChanged: {
+                activityConfiguration.easyMode = checked
             }
         }
     }

@@ -37,16 +37,13 @@ Item {
     }
 
     Column {
-        spacing: 10
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCComboBox {
-                id: localeBox
-                model: langs.languages
-                background: activityConfiguration.background
-                label: qsTr("Select your locale")
-            }
+        spacing: 10 * ApplicationInfo.ratio
+        width: activityConfiguration.width
+        GCComboBox {
+            id: localeBox
+            model: langs.languages
+            background: activityConfiguration.background
+            label: qsTr("Select your locale")
         }
     }
 
@@ -62,7 +59,7 @@ Item {
         if(localeUtf8 !== "system") {
             localeUtf8 += ".UTF-8";
         }
-        
+
         if(dataToSave.locale) {
             setLocale(localeUtf8)
         }

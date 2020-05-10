@@ -35,12 +35,10 @@ Item {
     ]
     property alias speedSlider: speedSlider
     property int speedSetting: 10
-    height: columnContent.height
     width: if(background) background.width
 
     Column {
-        id: columnContent
-        spacing: 10
+        spacing: 10 * ApplicationInfo.ratio
         width: activityConfiguration.width
         GCComboBox {
             id: modeBox
@@ -53,7 +51,6 @@ Item {
             text: qsTr("Speed")
             fontSize: mediumSize
             wrapMode: Text.WordWrap
-            height: 100
         }
         GCSlider {
             id: speedSlider

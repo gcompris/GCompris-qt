@@ -20,6 +20,7 @@
  */
 import QtQuick 2.6
 import QtQuick.Controls 1.5
+import GCompris 1.0
 
 import "../../core"
 
@@ -36,13 +37,12 @@ Item {
         id: configOptions
     }
 
-    Flow {
-        id: flow
-        spacing: 5
+    Column {
+        spacing: 10 * ApplicationInfo.ratio
         width: parent.width
         GCDialogCheckBox {
             id: coloredNotesModeBox
-            width: flow.width - 50
+            width: parent.width - 50
             text: qsTr("Display colored notes.")
             checked: activityConfiguration.mode === coloredNotes
             exclusiveGroup: configOptions

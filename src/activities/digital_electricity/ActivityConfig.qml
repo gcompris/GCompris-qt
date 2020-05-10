@@ -19,6 +19,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 import "digital_electricity.js" as Activity
@@ -32,9 +33,8 @@ Item {
         { "text": qsTr("Tutorial Mode"), "value": "tutorial" },
         { "text": qsTr("Free Mode"), "value": "free" }
     ]
-    Flow {
-        id: flow
-        spacing: 5
+    Column {
+        spacing: 10 * ApplicationInfo.ratio
         width: parent.width
         GCComboBox {
             id: modeBox

@@ -41,40 +41,33 @@ Item {
     }
 
     Column {
-        spacing: 10
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCComboBox {
-                id: localeBox
-                model: langs.languages
-                background: activityConfiguration.background
-                label: qsTr("Select your locale")
-            }
-            GCDialogCheckBox {
-                id: uppercaseBox
-                width: parent.width
-                text: qsTr("Uppercase only mode")
-                checked: activityConfiguration.uppercaseOnly
-            }
-            GCText {
-                id: speedSliderText
-                text: qsTr("Speed")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-            }
-            Flow {
-                width: activityConfiguration.width
-                spacing: 5
-                GCSlider {
-                    id: speedSlider
-                    width: 250 * ApplicationInfo.ratio
-                    value: speedSetting
-                    maximumValue: 10
-                    minimumValue: 1
-                    scrollEnabled: false
-                }
-            }
+        spacing: 10 * ApplicationInfo.ratio
+        width: activityConfiguration.width
+        GCComboBox {
+            id: localeBox
+            model: langs.languages
+            background: activityConfiguration.background
+            label: qsTr("Select your locale")
+        }
+        GCDialogCheckBox {
+            id: uppercaseBox
+            width: parent.width
+            text: qsTr("Uppercase only mode")
+            checked: activityConfiguration.uppercaseOnly
+        }
+        GCText {
+            id: speedSliderText
+            text: qsTr("Speed")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
+        GCSlider {
+            id: speedSlider
+            width: 250 * ApplicationInfo.ratio
+            value: speedSetting
+            maximumValue: 10
+            minimumValue: 1
+            scrollEnabled: false
         }
     }
 

@@ -31,28 +31,21 @@ Item {
     width: if(background) background.width
 
     Column {
-        spacing: 10
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCText {
-                id: speedSliderText
-                text: qsTr("Speed")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-            }
-            Flow {
-                width: activityConfiguration.width
-                spacing: 5
-                GCSlider {
-                    id: speedSlider
-                    width: 250 * ApplicationInfo.ratio
-                    value: speedSetting
-                    minimumValue: 1
-                    maximumValue: 5
-                    scrollEnabled: false
-                }
-            }
+        spacing: 10 * ApplicationInfo.ratio
+        width: activityConfiguration.width
+        GCText {
+            id: speedSliderText
+            text: qsTr("Speed")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
+        GCSlider {
+            id: speedSlider
+            width: 250 * ApplicationInfo.ratio
+            value: speedSetting
+            minimumValue: 1
+            maximumValue: 5
+            scrollEnabled: false
         }
     }
 

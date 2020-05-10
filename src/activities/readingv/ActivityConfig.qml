@@ -39,34 +39,27 @@ Item {
     }
 
     Column {
-        spacing: 10
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCComboBox {
-                id: localeBox
-                model: langs.languages
-                background: activityConfiguration.background
-                label: qsTr("Select your locale")
-            }
-            GCText {
-                id: speedSliderText
-                text: qsTr("Speed")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-            }
-            Flow {
-                width: activityConfiguration.width
-                spacing: 5
-                GCSlider {
-                    id: speedSlider
-                    width: 250 * ApplicationInfo.ratio
-                    value: speedSetting
-                    maximumValue: 10
-                    minimumValue: 1
-                    scrollEnabled: false
-                }
-            }
+        spacing: 10 * ApplicationInfo.ratio
+        width: activityConfiguration.width
+        GCComboBox {
+            id: localeBox
+            model: langs.languages
+            background: activityConfiguration.background
+            label: qsTr("Select your locale")
+        }
+        GCText {
+            id: speedSliderText
+            text: qsTr("Speed")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+        }
+        GCSlider {
+            id: speedSlider
+            width: 250 * ApplicationInfo.ratio
+            value: speedSetting
+            maximumValue: 10
+            minimumValue: 1
+            scrollEnabled: false
         }
     }
 
@@ -80,7 +73,7 @@ Item {
     function setDefaultValues() {
         // Recreate the binding
         speedSlider.value = Qt.binding(function() {return activityConfiguration.speedSetting;})
-        
+
         var localeUtf8 = dataToSave.locale;
         if(localeUtf8 !== "system") {
             localeUtf8 += ".UTF-8";

@@ -19,6 +19,8 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
+
 import "../../core"
 
 Item {
@@ -30,11 +32,16 @@ Item {
         { "text": qsTr("Automatic"), "value": 1 },
         { "text": qsTr("OK button"), "value": 2 }
     ]
-    GCComboBox {
-        id: modeBox
-        model: availableModes
-        background: activityConfiguration.background
-        label: qsTr("Validate answers")
+
+    Column {
+        spacing: 10 * ApplicationInfo.ratio
+        width: parent.width
+        GCComboBox {
+            id: modeBox
+            model: availableModes
+            background: activityConfiguration.background
+            label: qsTr("Validate answers")
+        }
     }
 
     property var dataToSave

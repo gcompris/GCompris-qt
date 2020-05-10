@@ -30,9 +30,8 @@ Item {
     property int speedSetting: 5
     width: if(background) background.width
 
-    Flow {
-        id: flow
-        spacing: 5
+    Column {
+        spacing: 10 * ApplicationInfo.ratio
         width: activityConfiguration.width
         GCText {
             id: speedSliderText
@@ -40,17 +39,13 @@ Item {
             fontSize: mediumSize
             wrapMode: Text.WordWrap
         }
-        Flow {
-            width: activityConfiguration.width
-            spacing: 5
-            GCSlider {
-                id: speedSlider
-                width: 250 * ApplicationInfo.ratio
-                value: speedSetting
-                maximumValue: 5
-                minimumValue: 1
-                scrollEnabled: false
-            }
+        GCSlider {
+            id: speedSlider
+            width: 250 * ApplicationInfo.ratio
+            value: speedSetting
+            maximumValue: 5
+            minimumValue: 1
+            scrollEnabled: false
         }
     }
 

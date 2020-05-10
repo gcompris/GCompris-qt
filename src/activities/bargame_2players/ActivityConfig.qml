@@ -19,6 +19,8 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
+
 import "../../core"
 
 Item {
@@ -31,9 +33,8 @@ Item {
         { "text": qsTr("Medium"), "value": 2 },
         { "text": qsTr("Difficult"), "value": 3 }
     ]
-    Flow {
-        id: flow
-        spacing: 5
+    Column {
+        spacing: 10 * ApplicationInfo.ratio
         width: parent.width
         GCComboBox {
             id: modeBox

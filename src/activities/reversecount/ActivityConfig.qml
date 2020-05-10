@@ -19,6 +19,7 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 
 import "../../core"
 
@@ -33,9 +34,8 @@ Item {
         { "text": qsTr("Roman numbers"), "value": "roman" },
         { "text": qsTr("Images"), "value": "image" }
     ]
-    Flow {
-        id: flow
-        spacing: 5
+    Column {
+        spacing: 10 * ApplicationInfo.ratio
         width: parent.width
         GCComboBox {
             id: modeBox
