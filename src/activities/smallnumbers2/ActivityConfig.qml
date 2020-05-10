@@ -41,34 +41,27 @@ Item {
     Column {
         id: columnContent
         spacing: 10
-        Flow {
-            spacing: 5
-            width: activityConfiguration.width
-            GCComboBox {
-                id: modeBox
-                model: availableModes
-                background: activityConfiguration.background
-                label: qsTr("Select Domino Representation")
-            }
-            GCText {
-                id: speedSliderText
-                text: qsTr("Speed")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-                height: 100
-            }
-            Flow {
-                width: activityConfiguration.width
-                spacing: 5
-                GCSlider {
-                    id: speedSlider
-                    width: 250 * ApplicationInfo.ratio
-                    value: speedSetting
-                    maximumValue: 10
-                    minimumValue: 1
-                    scrollEnabled: false
-                }
-            }
+        width: activityConfiguration.width
+        GCComboBox {
+            id: modeBox
+            model: availableModes
+            background: activityConfiguration.background
+            label: qsTr("Select Domino Representation")
+        }
+        GCText {
+            id: speedSliderText
+            text: qsTr("Speed")
+            fontSize: mediumSize
+            wrapMode: Text.WordWrap
+            height: 100
+        }
+        GCSlider {
+            id: speedSlider
+            width: 250 * ApplicationInfo.ratio
+            value: speedSetting
+            maximumValue: 10
+            minimumValue: 1
+            scrollEnabled: false
         }
     }
 
