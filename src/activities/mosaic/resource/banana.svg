@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   width="100"
+   height="100"
+   sodipodi:docname="banana.svg">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2015</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1880"
+     inkscape:window-height="1060"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="8.34386"
+     inkscape:cx="44.274886"
+     inkscape:cy="47.063481"
+     inkscape:window-x="-3"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:snap-global="false" />
+  <path
+     d="m 83.695854,13.475123 c 3.503998,-3.6329962 6.815371,-7.5839262 8.246242,-5.8626985 2.289393,1.3769822 0.03068,3.0876845 0.316853,5.4974035 0.286174,2.409718 -1.694915,13.790871 0.594478,14.479362 2.289393,0.688491 4.19645,3.233238 5.151135,6.540666 C 104.2473,55.757298 86.540303,75.358116 63.772294,83.039035 41.004284,90.719954 3.280918,75.095075 2.1362214,73.029601 1.5638731,70.619883 0.70535065,64.767708 4.1394404,62.702235 33.615378,53.407606 69.534509,71.652619 84.987913,29.998909 87.56348,22.769753 83.695854,13.475123 83.695854,13.475123 Z"
+     id="path847-3"
+     inkscape:connector-curvature="0"
+     style="fill:#a58b17;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.51095748;stroke-linejoin:round"
+     sodipodi:nodetypes="ccssszcccc" />
+  <path
+     d="m 85.695854,13.475123 c 3.503998,-3.6329965 4.434694,-5.6047234 5.205031,-3.503153 0.494887,1.35011 -0.688412,4.0839 -0.402239,6.493619 0.286174,2.409718 0.04773,12.496809 2.354781,13.123601 1.210756,0.328945 2.19645,1.233238 3.151135,4.540666 C 102.2473,55.757298 86.709795,70.985235 63.941786,78.666154 41.173776,86.347073 5.6199011,74.078126 4.4752045,72.012652 3.9028562,69.602934 2.7053506,66.598216 6.1394404,64.532743 35.615378,55.238114 71.534509,71.652619 86.987913,29.998909 89.56348,22.769753 85.695854,13.475123 85.695854,13.475123 Z"
+     id="path847"
+     inkscape:connector-curvature="0"
+     style="fill:#f4d028;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.51095748;stroke-linejoin:round"
+     sodipodi:nodetypes="csssszcccc" />
+</svg>

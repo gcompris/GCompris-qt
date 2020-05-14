@@ -59,7 +59,7 @@ function initLevel() {
 
     answerModel = new Array()
     for(var i=0; i < questionModel.length; i++)
-        answerModel.push("die_0.svg")
+        answerModel.push("dice_0.svg")
     items.answer.model = answerModel
 
 }
