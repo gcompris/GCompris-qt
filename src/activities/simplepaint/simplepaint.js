@@ -105,7 +105,7 @@ var backgrounds = [
     'qrc:/gcompris/src/activities/enumerate/resource/background.svg',
     'qrc:/gcompris/src/activities/football/resource/background.svg',
     'qrc:/gcompris/src/activities/hanoi_real/resource/background.svg',
-    'qrc:/gcompris/src/activities/intro_gravity/resource/background.svg',
+    'qrc:/gcompris/src/activities/gravity/resource/background.svg',
     'qrc:/gcompris/src/activities/instruments/resource/background.svg',
     'qrc:/gcompris/src/activities/gletters/resource/background.svg',
     'qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg',
