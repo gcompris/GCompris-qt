@@ -147,7 +147,8 @@ ActivityBase {
             property bool smallQuestionMode: items.modelDisplayLayout === "smaller"
             property int nbColumns: items.questionLayoutColumns
             property int nbLines: items.questionLayoutRows
-            property int layoutMargin: 10
+            property int layoutMargin: Math.floor(10 * ApplicationInfo.ratio)
+            property int itemsMargin: Math.floor(5 * ApplicationInfo.ratio)
 
             states: [
                 State {
@@ -236,20 +237,23 @@ ActivityBase {
                         width: cellWidth * mainArea.nbColumns
                         height: cellHeight * mainArea.nbLines
                         anchors.centerIn: parent
-                        anchors.verticalCenterOffset: 2.5 * ApplicationInfo.ratio
-                        anchors.horizontalCenterOffset: anchors.verticalCenterOffset
                         cellHeight: cellWidth
-                        cellWidth: Math.min(parent.width / mainArea.nbColumns, parent.height / mainArea.nbLines)
+                        cellWidth: Math.floor(Math.min((parent.width - mainArea.itemsMargin) / mainArea.nbColumns, (parent.height - mainArea.itemsMargin) / mainArea.nbLines))
                         interactive: false
                         keyNavigationWraps: true
-                        delegate: Image {
-                            id: imageQuestionId
-                            source: Activity.url + modelData
-                            fillMode: Image.PreserveAspectFit
-                            width: question.cellWidth - 5 * ApplicationInfo.ratio
-                            height: width
-                            sourceSize.width: width
-                            sourceSize.height: height
+                        delegate: Item {
+                            width: question.cellWidth
+                            height: question.cellHeight
+                            Image {
+                                id: imageQuestionId
+                                source: Activity.url + modelData
+                                fillMode: Image.PreserveAspectFit
+                                width: question.cellWidth - mainArea.itemsMargin
+                                height: width
+                                sourceSize.width: width
+                                sourceSize.height: width
+                                anchors.centerIn: parent
+                            }
                         }
                     }
                 }
@@ -275,7 +279,7 @@ ActivityBase {
                     height: cellHeight * mainArea.nbLines
                     anchors.centerIn: parent
                     cellHeight: cellWidth
-                    cellWidth: Math.min(parent.width / mainArea.nbColumns, parent.height / mainArea.nbLines)
+                    cellWidth: Math.floor(Math.min((parent.width - mainArea.itemsMargin) / mainArea.nbColumns, (parent.height - mainArea.itemsMargin) / mainArea.nbLines))
                     interactive: false
                     keyNavigationWraps: true
                     highlightFollowsCurrentItem: true
@@ -301,7 +305,7 @@ ActivityBase {
                             id: imageAnswerId
                             source: Activity.url + modelData
                             fillMode: Image.PreserveAspectFit
-                            width: answer.cellWidth - 5 * ApplicationInfo.ratio
+                            width: answer.cellWidth - mainArea.itemsMargin
                             height: width
                             sourceSize.width: width
                             sourceSize.height: height
@@ -336,15 +340,13 @@ ActivityBase {
                 border.color: "black"
                 border.width: 2
                 radius: 5
-                property int selectorItemSize: fitItems(selectorRectangle.width, selectorRectangle.height, selector.count)
+                property int selectorItemSize: fitItems(selectorRectangle.width - mainArea.itemsMargin, selectorRectangle.height - mainArea.itemsMargin, selector.count)
 
                 GridView {
                     id: selector
                     width: parent.width
                     height: parent.height
                     anchors.centerIn: parent
-                    anchors.verticalCenterOffset: 2.5 * ApplicationInfo.ratio
-                    anchors.horizontalCenterOffset: anchors.verticalCenterOffset
                     cellHeight: selectorRectangle.selectorItemSize
                     cellWidth: selectorRectangle.selectorItemSize
                     interactive: false
@@ -359,15 +361,22 @@ ActivityBase {
                         Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                         Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
                     }
-                    delegate: Image {
-                        id: imageId
-                        source: Activity.url + modelData
-                        fillMode: Image.PreserveAspectFit
-                        width: selector.cellWidth - 5 * ApplicationInfo.ratio
+                    delegate: Item {
+                        id: selectorItem
+                        width: selector.cellWidth
                         height: width
-                        sourceSize.width: width
-                        sourceSize.height: height
-                        z: iAmSelected ? 10 : 1
+                        Image {
+                            id: imageId
+                            source: Activity.url + modelData
+                            fillMode: Image.PreserveAspectFit
+                            width: selector.cellWidth - mainArea.itemsMargin
+                            height: width
+                            sourceSize.width: width
+                            sourceSize.height: height
+                            antialiasing: true
+                            anchors.centerIn: parent
+                            z: selectorItem.iAmSelected ? 10 : 1
+                        }
 
                         readonly property bool iAmSelected: items.selectedItem === modelData
                         readonly property string imageName: modelData
@@ -375,7 +384,7 @@ ActivityBase {
                         states: [
                             State {
                                 name: "notclicked"
-                                when: !imageId.iAmSelected && !mouseArea.containsMouse
+                                when: !selectorItem.iAmSelected && !mouseArea.containsMouse
                                 PropertyChanges {
                                     target: imageId
                                     scale: 0.8
@@ -399,7 +408,7 @@ ActivityBase {
                             },
                             State {
                                 name: "selected"
-                                when: imageId.iAmSelected
+                                when: selectorItem.iAmSelected
                                 PropertyChanges {
                                     target: imageId
                                     scale: 1
@@ -409,7 +418,7 @@ ActivityBase {
 
                         SequentialAnimation {
                             id: anim
-                            running: imageId.iAmSelected
+                            running: selectorItem.iAmSelected
                             loops: Animation.Infinite
                             alwaysRunToEnd: true
                             NumberAnimation {
