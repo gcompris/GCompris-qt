@@ -38,7 +38,6 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
-        focus: true
 
         signal start
         signal stop
@@ -71,12 +70,20 @@ ActivityBase {
             property bool keyNavigationMode: false
         }
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            Activity.start(items);
+            eventHandler.forceActiveFocus();
+        }
         onStop: { Activity.stop() }
-        Keys.enabled: !bonus.isPlaying
-        Keys.onPressed: {
-            items.keyNavigationMode = true;
-            items.currentKeyZone.handleKeys(event);
+
+        Item {
+            id: eventHandler
+            focus: true
+            Keys.enabled: !bonus.isPlaying
+            Keys.onPressed: {
+                items.keyNavigationMode = true;
+                items.currentKeyZone.handleKeys(event);
+            }
         }
 
         Column {
@@ -402,12 +409,16 @@ ActivityBase {
             currentActivity: activity.activityInfo
 
             onClose: {
-                home()
+                home();
+                eventHandler.forceActiveFocus();
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"];
                 }
+            }
+            onStartActivity: {
+                eventHandler.forceActiveFocus();
             }
         }
 
