@@ -35,7 +35,8 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: "qrc:/gcompris/src/activities/tic_tac_toe/resource/background.svg"
-        sourceSize.width: parent.width
+        sourceSize.width: width
+        sourceSize.height: height
         fillMode: Image.PreserveAspectCrop
         focus: true
 
