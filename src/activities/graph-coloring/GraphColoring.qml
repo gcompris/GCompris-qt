@@ -65,11 +65,19 @@ ActivityBase {
             property alias nodesRepeater: nodesRepeater
             property alias edgesRepeater: edgesRepeater
             property alias chooserGrid: chooserGrid
+            property alias nodeHighlight: nodeHighlight
             property string mode: "color"
+            property var currentKeyZone: graphRect
+            property bool keyNavigationMode: false
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+        Keys.enabled: !bonus.isPlaying
+        Keys.onPressed: {
+            items.keyNavigationMode = true;
+            items.currentKeyZone.handleKeys(event);
+        }
 
         Column {
             id: colorsColumn
@@ -185,12 +193,14 @@ ActivityBase {
                         id: mouseArea
                         anchors.fill: parent
                         acceptedButtons: Qt.LeftButton | Qt.RightButton
-                        enabled: true
+                        enabled: !bonus.isPlaying
                         z: 3
                         hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                         onClicked:{
-                            var obj = items.nodesRepeater.model.get(index);
+                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                            items.currentKeyZone = chooser;
+                            items.nodeHighlight.setHighlight(index);
                             showChooser(true, index, parent);
                         }
                     }
@@ -207,11 +217,54 @@ ActivityBase {
 
                 }
             }
+
+            Rectangle {
+                id: nodeHighlight
+                z: -1
+                width: graphRect.optDiameter * 1.5
+                height: width
+                radius: width * 0.5
+                color: "#80ffffff"
+                visible: items.currentKeyZone === graphRect && items.keyNavigationMode
+                anchors.centerIn: nodesRepeater.itemAt(0)
+                property int index: -1
+                function setHighlight(toIndex) {
+                    index = toIndex;
+                    anchors.centerIn = nodesRepeater.itemAt(index);
+                }
+            }
+
+            function handleKeys(event) {
+                if(event.key === Qt.Key_Right) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    nodeHighlight.index += 1;
+                    if(nodeHighlight.index > nodesRepeater.count - 1) {
+                        nodeHighlight.index = 0;
+                    }
+                }
+                if(event.key === Qt.Key_Left) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    nodeHighlight.index -= 1;
+                    if(nodeHighlight.index < 0) {
+                        nodeHighlight.index = nodesRepeater.count - 1;
+                    }
+                }
+                //if space is used before direction keys, init index at 0
+                if(nodeHighlight.index === -1) {
+                    nodeHighlight.index = 0;
+                }
+                nodeHighlight.anchors.centerIn = nodesRepeater.itemAt(nodeHighlight.index);
+                if(event.key === Qt.Key_Space) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    showChooser(true, nodeHighlight.index, nodesRepeater.itemAt(nodeHighlight.index));
+                    items.currentKeyZone = chooser;
+                    items.chooserGrid.currentIndex = 0;
+                }
+            }
         }
         function showChooser(visible, guessIndex, item)
         {
             if (!visible) {
-                chooserTimer.stop();
                 chooser.scale = 0;
                 return;
             }
@@ -237,7 +290,6 @@ ActivityBase {
             chooser.y = targetY;
             chooser.scale = 1;
             chooser.visible = true;
-            chooserTimer.restart();
             //console.log(" item.x = " + item.x + " item.y" + item.y+" absolute.x" + absolute.x +" absolute.y" + absolute.y)
         }
 
@@ -271,16 +323,14 @@ ActivityBase {
                 verticalLayoutDirection: GridView.TopToBottom
                 layoutDirection: Qt.LeftToRight
                 flow: GridView.FlowLeftToRight
+                highlight: Rectangle {
+                    color: "#80ffffff"
+                    visible: items.currentKeyZone === chooser && items.keyNavigationMode
+                }
 
                 property int gridCount : count
                 property int colIndex: 0
                 property int guessIndex: 0
-
-                Timer {
-                    id: chooserTimer
-                    interval: 5000
-                    onTriggered: showChooser(false);
-                }
 
                 model: new Array()
 
@@ -292,25 +342,53 @@ ActivityBase {
                     border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
                     searchItemIndex: modelData
                     highlightSymbol: index == chooserGrid.colIndex
-                    radius: 5
+                    radius: width * 0.5
 
                     MouseArea {
                         id: chooserMouseArea
                         anchors.fill: parent
                         acceptedButtons: Qt.LeftButton
+                        enabled: !bonus.isPlaying
                         z: 11
                         hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                         onClicked: {
                             chooserGrid.colIndex = chooserItem.searchItemIndex;
-                            var obj = items.nodesRepeater.model;
-                            obj.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
-                            showChooser(false);
-                            Activity.checkAdjacent()
-                            Activity.checkGuess()
+                            chooser.selectItem();
                         }
                     }
                 }
+            }
+
+            function handleKeys(event) {
+                if(event.key === Qt.Key_Right) {
+                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    chooserGrid.currentIndex += 1;
+                    if(chooserGrid.currentIndex > chooserGrid.count - 1) {
+                        chooserGrid.currentIndex = 0;
+                    }
+                }
+                if(event.key === Qt.Key_Left) {
+                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                    chooserGrid.currentIndex -= 1;
+                    if(chooserGrid.currentIndex < 0) {
+                        chooserGrid.currentIndex = chooserGrid.count - 1;
+                    }
+                }
+                if(event.key === Qt.Key_Space) {
+                    chooserGrid.colIndex = chooserGrid.currentItem.searchItemIndex;
+                    selectItem();
+                }
+            }
+
+            function selectItem() {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                var obj = items.nodesRepeater.model;
+                obj.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
+                showChooser(false);
+                Activity.checkAdjacent();
+                Activity.checkGuess();
+                items.currentKeyZone = graphRect;
             }
         }
 

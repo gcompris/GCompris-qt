@@ -273,6 +273,9 @@ function initLevel() {
                                              "highlight": false
                                          });
     }
+    if(items.keyNavigationMode) {
+        items.nodeHighlight.setHighlight(0);
+    }
 }
 
 function checkGuess() {
