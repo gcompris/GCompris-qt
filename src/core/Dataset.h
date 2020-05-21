@@ -73,7 +73,7 @@ public:
     void setData(const QVariant &);
     bool enabled() const;
     void setEnabled(const bool &);
-
+    /// @endcond
 signals:
     void objectiveChanged();
     void difficultyChanged();
