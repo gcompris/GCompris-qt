@@ -32,7 +32,11 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Visual letter-recognition.")
   //: Help manual
-  manual: qsTr("A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon.")
+  manual: qsTr("A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again by clicking on the mouth icon.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
+          qsTr("-Use Arrow keys to navigate") + ("<br>") +
+          qsTr("-Use Space key to select an item") + ("<br>") +
+          qsTr("-Use Tab key to repeat the question")
   credit: ""
   section: "reading letters"
   createdInVersion: 0
