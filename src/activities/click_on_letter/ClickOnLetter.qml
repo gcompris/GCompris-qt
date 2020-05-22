@@ -73,6 +73,7 @@ ActivityBase {
             property alias locale: background.locale
             property bool goToNextSubLevel: false
             property bool goToNextLevel: false
+            property bool keyNavigationMode: false
         }
 
        onVoiceDone: {
@@ -87,40 +88,58 @@ ActivityBase {
         }
 
         onVoiceError: {
-            questionItem.visible = true
-            repeatItem.visible = false
+            questionItem.visible = true;
+            repeatItem.visible = false;
         }
 
         onStart: {
-            activity.audioVoices.done.connect(voiceDone)
-            activity.audioVoices.error.connect(voiceError)
+            activity.audioVoices.done.connect(voiceDone);
+            activity.audioVoices.error.connect(voiceError);
             Activity.start(items, mode);
+            eventHandler.forceActiveFocus();
         }
 
         onStop: Activity.stop()
+
+        Item {
+            id: eventHandler
+            focus: true
+            Keys.enabled: !bonus.isPlaying
+            Keys.onPressed: {
+                if(event.key === Qt.Key_Tab) {
+                    activity.audioVoices.clearQueue();
+                    activity.audioVoices.stop();
+                    Activity.playLetter(Activity.currentLetter);
+                } else {
+                    background.handleKeys(event);
+                }
+            }
+        }
 
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
             onClose: {
-                home()
+                home();
+                eventHandler.forceActiveFocus();
             }
             onSaveData: {
-                levelFolder = dialogActivityConfig.chosenLevels
-                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
-                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                levelFolder = dialogActivityConfig.chosenLevels;
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels;
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels);
             }
             onLoadData: {
                 if(activityData && activityData["activityLocale"]) {
                     background.locale = activityData["activityLocale"];
                 }
                 else {
-                    background.locale = Core.resolveLocale(background.locale)
+                    background.locale = Core.resolveLocale(background.locale);
                 }
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                background.stop();
+                background.start();
+                eventHandler.forceActiveFocus();
             }
         }
 
@@ -277,12 +296,42 @@ ActivityBase {
             interactive: false
             verticalLayoutDirection: GridView.BottomToTop
             layoutDirection: Qt.LeftToRight
+            keyNavigationWraps: true
+            currentIndex: -1
 
             model: trainModel
             delegate: Carriage {
                 width: background.itemWidth
                 nbCarriage: (parent.width - engine.width) / background.itemWidth
                 clickEnabled: activity.audioVoices.playbackState == 1 ? false : true
+                isSelected: train.currentIndex === index
+            }
+        }
+
+        function handleKeys(event) {
+            if(!items.keyNavigationMode) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                items.keyNavigationMode = true;
+                train.currentIndex = 0;
+            } else if(event.key === Qt.Key_Right) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                train.moveCurrentIndexRight();
+            } else if(event.key === Qt.Key_Left) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                train.moveCurrentIndexLeft();
+            } else if(event.key === Qt.Key_Up) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                train.moveCurrentIndexUp();
+            } else if(event.key === Qt.Key_Down) {
+                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
+                train.moveCurrentIndexDown();
+            } else if(event.key === Qt.Key_Space && activity.audioVoices.playbackState != 1) {
+                if(Activity.checkAnswer(train.currentIndex)) {
+                    train.currentItem.successAnimation.restart();
+                    train.currentItem.particle.burst(30);
+                } else {
+                    train.currentItem.failureAnimation.restart();
+                }
             }
         }
 

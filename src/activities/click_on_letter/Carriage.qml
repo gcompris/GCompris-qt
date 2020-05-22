@@ -32,6 +32,10 @@ Item {
     property int nbCarriage
     property bool isCarriage: index <= nbCarriage
     property bool clickEnabled
+    property bool isSelected
+    property alias successAnimation: successAnimation
+    property alias failureAnimation: failureAnimation
+    property alias particle: particle
 
     Image {
         id: carriageImage
@@ -53,6 +57,15 @@ Item {
             color: "#f0d578"
             border.color: "#b98a1c"
             border.width: 3
+        }
+
+        Rectangle {
+            id: selector
+            z: 9
+            visible: isSelected
+            anchors.fill: parent
+            radius: 5
+            color: "#800000ff"
         }
 
         GCText {
@@ -113,6 +126,7 @@ Item {
         }
 
         ParticleSystemStarLoader {
+            z: 10
             id: particle
             clip: false
         }

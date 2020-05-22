@@ -28,7 +28,6 @@ import "../click_on_letter"
 
 ClickOnLetter {
     id: activity
-    
     mode: "uppercase"
 
 }
