@@ -79,7 +79,7 @@ ActivityBase {
         Item {
             id: eventHandler
             focus: true
-            Keys.enabled: !bonus.isPlaying
+            Keys.enabled: !bonus.isPlaying && !dialogActivityConfig.visible
             Keys.onPressed: {
                 items.keyNavigationMode = true;
                 items.currentKeyZone.handleKeys(event);
