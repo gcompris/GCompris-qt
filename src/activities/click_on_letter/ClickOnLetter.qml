@@ -104,7 +104,7 @@ ActivityBase {
         Item {
             id: eventHandler
             focus: true
-            Keys.enabled: !bonus.isPlaying
+            Keys.enabled: !bonus.isPlaying && !dialogActivityConfig.visible
             Keys.onPressed: {
                 if(event.key === Qt.Key_Tab) {
                     activity.audioVoices.clearQueue();
