@@ -39,7 +39,6 @@ to GCompris.
 You can help by:
 
 * [Creating new activities](https://gcompris.net/wiki/Qt_Quick_development_process).
-* Providing fancy graphics to incorporate as icons or backgrounds.
 * [Translating GCompris](https://gcompris.net/wiki/Developer%27s_corner#Translation).
 * [Recording voices](https://gcompris.net/wiki/Voice_translation_Qt).
 * [Just giving your ideas](https://gcompris.net/wiki/Ideas_for_activities).
