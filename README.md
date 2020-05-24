@@ -3,11 +3,11 @@
 ![GCompris logo](src/core/resource/gcompris.png)
 
 ## Presentation
-[GCompris](https://gcompris.net) is a high quality educational software suite, 
-including a large number of activities for children aged 2 to 10. 
-Some of the activities are game orientated, but nonetheless still educational.
+[GCompris](https://gcompris.net) is a high quality educational software suite,
+including a large number of activities for children aged 2 to 10.
+Some of the activities are game orientated, but still educational.
 
-Currently GCompris offers in excess of 100 activities and more are being
+Currently GCompris offers more than 100 activities, and more are being
 developed. GCompris is free software, that means that you can use it as you
 wish, adapt it to your own needs, improve it, and, most importantly, share it
 with everyone.
@@ -22,7 +22,7 @@ There are many simple activities dedicated to children on any platforms,
 desktops, web and tablets. When they exist, they are hard to find and request
 the teacher or parent to manage a lot of independant small tools.
 
-GCompris is an educational suite of activities all accessible from a
+GCompris is an educational suite of activities, all accessible from a
 single unified user interface.
 
 ## How
@@ -31,8 +31,7 @@ GCompris is designed in a way that it is easy to add new activities to it. The
 activity is free to implement the game scheme it wants. The status bar is a
 common facility provided to the activities.
 
-GCompris provides some tools to let teacher/educator to easily add activities
-to GCompris.
+GCompris provides some tools for teachers/educators to easily add activities.
 
 ## About You
 
