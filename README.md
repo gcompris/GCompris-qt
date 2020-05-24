@@ -8,7 +8,7 @@ including a large number of activities for children aged 2 to 10.
 Some of the activities are game orientated, but still educational.
 
 Currently GCompris offers more than 100 activities, and more are being
-developed. GCompris is free software, that means that you can use it as you
+developed. GCompris is free software, it means that you can use it as you
 wish, adapt it to your own needs, improve it, and, most importantly, share it
 with everyone.
 
