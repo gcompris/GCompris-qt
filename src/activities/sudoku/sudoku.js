@@ -25,47 +25,7 @@
 
 // Hard coded level definitions
 var levels = [
-            [ // Level 1
-             [
-                 ['.','C','B'],
-                 ['.','B','A'],
-                 ['.','A','C']
-             ],
-             [
-                 ['C','A','B'],
-                 ['.','.','.'],
-                 ['B','C','A']
-             ],
-             [
-                 ['C','A','B'],
-                 ['A','B','C'],
-                 ['.','.','.']
-             ],
-             [
-                 ['A','.','C'],
-                 ['C','.','B'],
-                 ['B','.','A']
-             ],
-             [
-                 ['A','.','C'],
-                 ['B','C','.'],
-                 ['.','A','B']
-             ],
-             [
-                 ['A','B','C'],
-                 ['B','.','A'],
-                 ['.','A','.']
-             ],
-             [
-                 ['.','B','A'],
-                 ['B','.','C'],
-                 ['A','C','.']
-             ],        [
-                 ['A','B','C'],
-                 ['.','C','A'],
-                 ['.','A','.']
-             ],
-            ],
+
             [ // Level 2
              [
                  ['A','.','.'],
@@ -556,7 +516,7 @@ var levels = [
         ]
 
 var currentLevel = 0
-var numberOfLevel = levels.length
+var numberOfLevel
 var items
 var symbolizeLevelMax = 7 // Last level in which we set symbols
 
@@ -574,12 +534,11 @@ function start(items_) {
     items = items_
     currentLevel = 0
     items.score.currentSubLevel = 1
-
+    numberOfLevel = items.levels.length
     // Shuffle all levels
-    for(var nb = 0 ; nb < levels.length ; ++ nb) {
-        Core.shuffle(levels[nb]);
+    for(var nb = 0 ; nb < items.levels.length ; ++ nb) {
+        Core.shuffle(items.levels[nb]);
     }
-
     // Shuffle the symbols
     Core.shuffle(symbols);
     for(var s = 0 ; s < symbols.length ; ++ s) {
@@ -595,7 +554,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
-    items.score.numberOfSubLevels = levels[currentLevel].length
+    items.score.numberOfSubLevels = items.levels[currentLevel].length
 
     for(var i = items.availablePiecesModel.model.count-1 ; i >= 0 ; -- i) {
         items.availablePiecesModel.model.remove(i);
@@ -604,7 +563,7 @@ function initLevel() {
     items.sudokuModel.clear();
 
     // Copy current sudoku in local variable
-    var initialSudoku = levels[currentLevel][items.score.currentSubLevel-1];
+    var initialSudoku =items.levels[currentLevel][items.score.currentSubLevel-1];
 
     items.columns = initialSudoku.length
     items.rows = items.columns
@@ -681,7 +640,7 @@ function incrementLevel() {
 }
 
 function clickOn(caseX, caseY) {
-    var initialSudoku = levels[currentLevel][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[currentLevel][items.score.currentSubLevel-1];
 
     var currentCase = caseX + caseY * initialSudoku.length;
 
