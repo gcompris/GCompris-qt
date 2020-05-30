@@ -90,7 +90,7 @@ Item {
      */
     property string source
 
-    readonly property variant romans : ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+    readonly property var romans : ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
     GCText {
         id: numberText
