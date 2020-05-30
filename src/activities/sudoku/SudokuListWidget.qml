@@ -68,7 +68,7 @@ Item {
                     anchors.centerIn: parent
                     sourceSize.height: view.iconSize
                     source: model.imgName === undefined ? "" :
-                                                          Activity.url + model.imgName + extension
+                                                          Activity.url + model.imgName
                     z: iAmSelected ? 10 : 1
 
                     property bool iAmSelected: view.currentIndex == index

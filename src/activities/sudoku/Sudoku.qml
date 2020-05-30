@@ -44,6 +44,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
             focus = true
@@ -62,6 +63,7 @@ ActivityBase {
             property alias columns: sudoColumn.columns
             property alias rows: sudoColumn.rows
             property alias sudokuModel: sudokuModel
+            property var levels: activity.datasetLoader.data
         }
         onStart: Activity.start(items)
 
@@ -72,11 +74,33 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
+            }
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
