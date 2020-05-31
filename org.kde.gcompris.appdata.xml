@@ -36,6 +36,7 @@
   <summary xml:lang="br">C'hoari kelennadel gant oberezioù a bep seur evit ar vugale etre 2 ha 10 vloaz</summary>
   <summary xml:lang="ca">Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys</summary>
   <summary xml:lang="ca-valencia">Joc educatiu amb múltiples activitats per a infants de 2 a 10 anys</summary>
+  <summary xml:lang="cs">Vzdělávání pomocí spousty aktivit pro děti od 2 do 10 let</summary>
   <summary xml:lang="de">Lernspiel mit vielen Aktivitäten für Kinder von 2 bis 10 Jahren</summary>
   <summary xml:lang="el">Εκπαιδευτικό παιχνίδι πολλαπλών δραστηριοτήτων για ηλικίες 2 έως 10 ετών</summary>
   <summary xml:lang="en-GB">Multi-Activity Educational game for children 2 to 10</summary>
@@ -181,6 +182,7 @@
       <li xml:lang="br">Dizoleiñ an urzhiataer: klavier, logodenn, jestroù disheñvel gant al logodenn…</li>
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
       <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
+      <li xml:lang="cs">objevování počítače: klávesnice, myš, různá gesta myší, ...</li>
       <li xml:lang="de">Entdeckung des Computers: Tastatur, Maus, verschiedene Mausgesten ...</li>
       <li xml:lang="el">ανακαλύπτω τον υπολογιστή: πληκτρολόγιο, ποντίκι, διάφορες ενδείξεις δείκτη ποντικιού, ...</li>
       <li xml:lang="en-GB">computer discovery: keyboard, mouse, different mouse gestures, ...</li>
@@ -252,6 +254,7 @@
       <li xml:lang="br">Skiantoù : mont en-dro ur skluj, meskañ al livioù, meizad an nerzh-dedennañ, ...</li>
       <li xml:lang="ca">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
       <li xml:lang="ca-valencia">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
+      <li xml:lang="cs">věda: zámek kanálu, míchání barev, gravitace, ...</li>
       <li xml:lang="de">Wissenschaft: Kanalschleuse, Farbmischung, Gravitation,...</li>
       <li xml:lang="el">επιστήμη: σύστημα αλλαγής στάθμης ροής, ανάμειξη χρωμάτων, η έννοια της βαρύτητας, ...</li>
       <li xml:lang="en-GB">science: the canal lock, colour mixing, gravity concept, ...</li>
@@ -322,6 +325,7 @@
       <li xml:lang="br">Lenn : pleustriñ war al lenn…</li>
       <li xml:lang="ca">lectura: practicar la lectura...</li>
       <li xml:lang="ca-valencia">lectura: practicar la lectura...</li>
+      <li xml:lang="cs">čtení: procvičování čtení, ...</li>
       <li xml:lang="de">Lesen: Leseübungen ...</li>
       <li xml:lang="el">ανάγνωση: εξάσκηση στην ανάγνωση, ...</li>
       <li xml:lang="en-GB">reading: reading practice, ...</li>
@@ -397,6 +401,7 @@
     <p xml:lang="br">Evit ar poent e kinnig GCompris muioc'h eget 100 oberezh ha reoù all a zo war ar stern. Ur meziant digor eo GCompris, ar pezh a sinifi e c'heller azasaat anezhañ diouzh ezhommoù-mañ-ezhommoù, gwellaat anezhañ ha, pouezusosc'h c'hoazh, lakaat bugale d'ober gantañ ne vern pelec'h.</p>
     <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
     <p xml:lang="ca-valencia">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb infants de tot arreu.</p>
+    <p xml:lang="cs">V současné době GCompris nabízí více než 100 aktivit a další se připravují. GCompris je svobodný software, což znamená, že můžeš přizpůsobit svým vlastním potřebám, zlepšit a co je nejdůležitější, je sdílet s dětmi po celém světě.</p>
     <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
     <p xml:lang="el">Προς το παρόν το GCompris προσφέρει περισσότερες από 100 δραστηριότητες και αναπτύσσονται και άλλες. Το GCompris είναι ελεύθερο λογισμικό, το οποίο σημαίνει ότι μπορείτε να το προσαρμόσετε στις ανάγκες σας, να το βελτιώσετε, και, το σπουδαιότερο, να το μοιραστείτε με παιδιά από όλον τον κόσμο.</p>
     <p xml:lang="en-GB">Currently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.</p>
