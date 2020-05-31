@@ -633,8 +633,8 @@ function incrementLevel() {
         items.score.currentSubLevel = 1
         currentLevel ++
     }
-    if(currentLevel > numberOfLevel) {
-        currentLevel = numberOfLevel
+    if(currentLevel >= numberOfLevel) {
+        currentLevel = 0
     }
     initLevel();
 }
