@@ -51,6 +51,7 @@ ActivityBase {
         property bool keyNavigationVisible: false
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -66,13 +67,14 @@ ActivityBase {
             property int selectionCount
             property int tuxScore: tuxScore.text
             property int playerScore: playerScore.text
-            property var dataset: activity.dataset
+            property var levels: activity.datasetLoader.data !=  0 ? activity.datasetLoader.data : activity.dataset
             property alias containerModel: containerModel
             property alias grid: grid
             property bool blockClicks: false
             property int columns
             property int rows
             property int spacing: 5 * ApplicationInfo.ratio
+            property bool isMultipleDatasetMode: activity.datasetLoader.data != 0
         }
 
         onStart: Activity.start(items)
@@ -143,13 +145,35 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onClose: {
+                home()
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: items.isMultipleDatasetMode ? (help | home | level | activityConfig) : (help | home | level) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
         }

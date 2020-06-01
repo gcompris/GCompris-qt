@@ -37,7 +37,7 @@ function start(items_) {
     items = items_
 
     currentLevel = 0
-    numberOfLevel = items.dataset.length
+    numberOfLevel = items.levels.length
 
     initLevel()
 }
@@ -54,11 +54,11 @@ function initLevel() {
     items.blockClicks = false
 
     // compute the number of cards
-    var columns = items.dataset[currentLevel].columns
-    var rows = items.dataset[currentLevel].rows
-    var images = items.dataset[currentLevel].images
-    var sounds = items.dataset[currentLevel].sounds
-    var texts = items.dataset[currentLevel].texts
+    var columns = items.levels[currentLevel].columns
+    var rows = items.levels[currentLevel].rows
+    var images = items.levels[currentLevel].images
+    var sounds = items.levels[currentLevel].sounds
+    var texts = items.levels[currentLevel].texts
     items.columns = columns
     items.rows = rows
     nbOfPair = rows * columns / 2
@@ -70,7 +70,7 @@ function initLevel() {
                 sounds ? sounds.length : 0,
                 texts ? texts.length : 0)
 
-    if(rows * columns > maxData) {
+    if(rows * columns > maxData * 2) {
         console.log("ERROR: Memory dataset does not have enough data pairs at level ",
                     currentLevel + 1)
         return
