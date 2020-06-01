@@ -25,7 +25,7 @@
 var currentLevel = 0
 var numberOfLevel
 var items
-var symbolizeLevelMax = 7 // Last level in which we set symbols
+var symbolizeLevel // It will be true for levels which uses symbols
 
 var url = "qrc:/gcompris/src/activities/sudoku/resource/"
 
@@ -62,11 +62,11 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1;
     items.score.numberOfSubLevels = items.levels[currentLevel].length
+    symbolizeLevel = undefined
 
     for(var i = items.availablePiecesModel.model.count-1 ; i >= 0 ; -- i) {
         items.availablePiecesModel.model.remove(i);
     }
-
     items.sudokuModel.clear();
 
     // Copy current sudoku in local variable
@@ -91,7 +91,7 @@ function initLevel() {
         }
     }
 
-    if(currentLevel < symbolizeLevelMax) { // Play with symbols
+    if(symbolizeLevel) { // Play with symbols
         // Randomize symbols
         for(var i = 0 ; i < symbols.length ; ++ i) {
             for(var line = 0 ; line < items.sudokuModel.count ; ++ line) {
@@ -107,6 +107,19 @@ function initLevel() {
             items.availablePiecesModel.model.append({"imgName": i.toString(),
                                                         "text": i.toString(),
                                                         "extension": ".svg"});
+        }
+    }
+}
+
+function setSymbolizeLevel() {
+    var initialSudoku = items.levels[currentLevel][items.score.currentSubLevel-1];
+
+    for(var row = 0; row < items.rows ; row++) {
+        for(var col = 0; col < items.columns ; col++) {
+            if(initialSudoku[row][col] != '.') {
+                symbolizeLevel = (initialSudoku[row][col] >='1' && initialSudoku[row][col] <='9') ? false : true;
+                return;
+            }
         }
     }
 }
@@ -267,7 +280,10 @@ function restoreState(mCase) {
 function dataToImageSource(data) {
     var imageName = "";
 
-    if(currentLevel < symbolizeLevelMax) { // Play with symbols
+    if(symbolizeLevel == undefined)
+        setSymbolizeLevel();
+
+    if(symbolizeLevel) { // Play with symbols
         for(var i = 0 ; i < symbols.length ; ++ i) {
             if(symbols[i].text == data) {
                 imageName = url + symbols[i].imgName+symbols[i].extension;
