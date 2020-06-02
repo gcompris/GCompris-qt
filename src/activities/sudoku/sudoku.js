@@ -62,7 +62,6 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1;
     items.score.numberOfSubLevels = items.levels[currentLevel].length
-    symbolizeLevel = undefined
 
     for(var i = items.availablePiecesModel.model.count-1 ; i >= 0 ; -- i) {
         items.availablePiecesModel.model.remove(i);
@@ -70,10 +69,11 @@ function initLevel() {
     items.sudokuModel.clear();
 
     // Copy current sudoku in local variable
-    var initialSudoku =items.levels[currentLevel][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[currentLevel][items.score.currentSubLevel-1];
 
     items.columns = initialSudoku.length
     items.rows = items.columns
+    setSymbolizeLevel()
 
     // Compute number of regions
     var nbLines = Math.floor(Math.sqrt(items.columns));
@@ -116,8 +116,8 @@ function setSymbolizeLevel() {
 
     for(var row = 0; row < items.rows ; row++) {
         for(var col = 0; col < items.columns ; col++) {
-            if(initialSudoku[row][col] != '.') {
-                symbolizeLevel = (initialSudoku[row][col] >='1' && initialSudoku[row][col] <='9') ? false : true;
+            if(initialSudoku[row][col] !== '.') {
+                symbolizeLevel = (initialSudoku[row][col] >= '1' && initialSudoku[row][col] <= '9') ? false : true;
                 return;
             }
         }
@@ -279,9 +279,6 @@ function restoreState(mCase) {
 
 function dataToImageSource(data) {
     var imageName = "";
-
-    if(symbolizeLevel == undefined)
-        setSymbolizeLevel();
 
     if(symbolizeLevel) { // Play with symbols
         for(var i = 0 ; i < symbols.length ; ++ i) {
