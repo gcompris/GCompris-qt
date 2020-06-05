@@ -25,17 +25,8 @@
 var currentLevel = 0
 var numberOfLevel
 var items
-var symbolizeLevel // It will be true for levels which uses symbols
-
+var symbols
 var url = "qrc:/gcompris/src/activities/sudoku/resource/"
-
-var symbols = [
-            {"imgName": "circle", "text": 'A', "extension": ".svg"},
-            {"imgName": "rectangle", "text": 'B', "extension": ".svg"},
-            {"imgName": "rhombus", "text": 'C', "extension": ".svg"},
-            {"imgName": "star", "text": 'D', "extension": ".svg"},
-            {"imgName": "triangle", "text": 'E', "extension": ".svg"}
-        ]
 
 function start(items_) {
     items = items_
@@ -44,13 +35,7 @@ function start(items_) {
     numberOfLevel = items.levels.length
     // Shuffle all levels
     for(var nb = 0 ; nb < items.levels.length ; ++ nb) {
-        Core.shuffle(items.levels[nb]);
-    }
-    // Shuffle the symbols
-    Core.shuffle(symbols);
-    for(var s = 0 ; s < symbols.length ; ++ s) {
-        // Change the letter
-        symbols[s].text = String.fromCharCode('A'.charCodeAt() +s);
+        Core.shuffle(items.levels[nb]["data"]);
     }
 
     initLevel()
@@ -61,7 +46,8 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
-    items.score.numberOfSubLevels = items.levels[currentLevel].length
+    items.score.numberOfSubLevels = items.levels[currentLevel]["data"].length
+    symbols = items.levels[currentLevel]["symbols"]
 
     for(var i = items.availablePiecesModel.model.count-1 ; i >= 0 ; -- i) {
         items.availablePiecesModel.model.remove(i);
@@ -69,15 +55,14 @@ function initLevel() {
     items.sudokuModel.clear();
 
     // Copy current sudoku in local variable
-    var initialSudoku = items.levels[currentLevel][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[currentLevel]["data"][items.score.currentSubLevel-1];
 
     items.columns = initialSudoku.length
     items.rows = items.columns
-    setSymbolizeLevel()
 
     // Compute number of regions
     var nbLines = Math.floor(Math.sqrt(items.columns));
-    items.background.nbRegions = nbLines*nbLines == items.columns ? nbLines : 1;
+    items.background.nbRegions = (nbLines*nbLines == items.columns) ? nbLines : 1;
 
     // Create grid
     for(var i = 0 ; i < initialSudoku.length ; ++ i) {
@@ -91,37 +76,15 @@ function initLevel() {
         }
     }
 
-    if(symbolizeLevel) { // Play with symbols
-        // Randomize symbols
-        for(var i = 0 ; i < symbols.length ; ++ i) {
-            for(var line = 0 ; line < items.sudokuModel.count ; ++ line) {
-                if(items.sudokuModel.get(line).textValue == symbols[i].text) {
-                    items.availablePiecesModel.model.append(symbols[i]);
-                    break; // break to pass to the next symbol
-                }
+    for(var i = 0 ; i < symbols.length ; ++ i) {
+        for(var line = 0 ; line < items.sudokuModel.count ; ++ line) {
+            if(items.sudokuModel.get(line).textValue == symbols[i].text) {
+                items.availablePiecesModel.model.append(symbols[i]);
+                break; // break to pass to the next symbol
             }
         }
     }
-    else { // Play with numbers
-        for(var i = 1 ; i < items.columns+1 ; ++ i) {
-            items.availablePiecesModel.model.append({"imgName": i.toString(),
-                                                        "text": i.toString(),
-                                                        "extension": ".svg"});
-        }
-    }
-}
 
-function setSymbolizeLevel() {
-    var initialSudoku = items.levels[currentLevel][items.score.currentSubLevel-1];
-
-    for(var row = 0; row < items.rows ; row++) {
-        for(var col = 0; col < items.columns ; col++) {
-            if(initialSudoku[row][col] !== '.') {
-                symbolizeLevel = (initialSudoku[row][col] >= '1' && initialSudoku[row][col] <= '9') ? false : true;
-                return;
-            }
-        }
-    }
 }
 
 function nextLevel() {
@@ -160,7 +123,7 @@ function incrementLevel() {
 }
 
 function clickOn(caseX, caseY) {
-    var initialSudoku = items.levels[currentLevel][items.score.currentSubLevel-1];
+    var initialSudoku = items.levels[currentLevel]["data"][items.score.currentSubLevel-1];
 
     var currentCase = caseX + caseY * initialSudoku.length;
 
@@ -280,17 +243,10 @@ function restoreState(mCase) {
 function dataToImageSource(data) {
     var imageName = "";
 
-    if(symbolizeLevel) { // Play with symbols
-        for(var i = 0 ; i < symbols.length ; ++ i) {
-            if(symbols[i].text == data) {
-                imageName = url + symbols[i].imgName+symbols[i].extension;
-                break;
-            }
-        }
-    }
-    else { // numbers
-        if(data != ".") {
-            imageName = url+data+".svg";
+    for(var i = 0 ; i < symbols.length ; ++ i) {
+        if(symbols[i].text == data) {
+            imageName = url + symbols[i].imgName+symbols[i].extension;
+            break;
         }
     }
 
