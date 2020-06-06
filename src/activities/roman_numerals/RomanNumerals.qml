@@ -33,10 +33,11 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: items.toArabic ?
-                    "qrc:/gcompris/src/activities/roman_numerals/resource/arcs.svg" :
-                    "qrc:/gcompris/src/activities/roman_numerals/resource/torrazzo-crema.svg"
+                    "qrc:/gcompris/src/activities/roman_numerals/resource/arabian-building.svg" :
+                    "qrc:/gcompris/src/activities/roman_numerals/resource/roman-building.svg"
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: Math.max(parent.width, parent.height)
+        sourceSize.width: width
+        sourceSize.height: height
         signal start
         signal stop
 
