@@ -59,24 +59,26 @@ ActivityBase {
         }
 
         function nextLevel() {
-            Activity.nextLevel()
-            if (Activity._currentLevel == 7) {
-                operator = " - "
-                Activity._operator = operator
-            }
+            Activity.nextLevel();
+            initLevel();
+        }
 
-            if (Activity._currentLevel == 0) {
-                operator = " + "
-            }
-            topPanel.goal = Activity.getGoal()
-            monsters.destroyAll()
-            Activity.fillAllGrid()
-            topPanel.life.opacity = 1
-            spawningMonsters.stop()
-            timerActivateWarn.stop()
-            if (Activity._currentLevel != 7) {
-                spawningMonsters.start()
-                timerActivateWarn.start()
+        function previousLevel() {
+            Activity.previousLevel();
+            initLevel();
+        }
+
+        function initLevel() {
+            topPanel.life.opacity = 1;
+            forceActiveFocus();
+            Activity.initLevel();
+            operator = Activity._operator;
+            topPanel.goal = Activity.getGoal();
+            monsters.destroyAll();
+            spawningMonsters.stop();
+            timerActivateWarn.stop();
+            if (Activity._currentLevel % 6 !== 0) {
+                spawningMonsters.restart();
             }
         }
 
@@ -91,19 +93,8 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.start(modelCells, topPanel.bar, bonus, type, operator)
-            topPanel.life.opacity = 1
-            forceActiveFocus()
-            operator = " + "
-            Activity._operator = operator
-            Activity.fillAllGrid()
-            topPanel.goal = Activity.getGoal()
-            if (Activity._currentLevel % 6 == 1) {
-                spawningMonsters.restart()
-            } else {
-                spawningMonsters.stop()
-                timerActivateWarn.stop()
-            }
+            Activity.start(modelCells, topPanel.bar, bonus, type, operator);
+            initLevel();
         }
         onStop: {
             monsters.destroyAll()

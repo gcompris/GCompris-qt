@@ -46,8 +46,14 @@ function start(modelCells, bar, bonus, type, operator) {
 function stop() {
 }
 
+function initLevel() {
+    _operator = _currentLevel < 7 ? " + " : " - ";
+    fillAllGrid();
+    _bar.level = _currentLevel + 1;
+}
+
 function nextLevel() {
-    if(_numberOfLevel <= ++_currentLevel ) {
+    if(_numberOfLevel <= ++_currentLevel) {
         _currentLevel = 0
     }
 }

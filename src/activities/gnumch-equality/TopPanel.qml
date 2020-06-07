@@ -99,11 +99,11 @@ Rectangle {
         id: bar
 
         content: BarEnumContent {
-            value: help | home
+            value: help | home | level
         }
         onHelpClicked: displayDialog(dialogHelp)
-        onPreviousLevelClicked: Activity.previousLevel()
-        onNextLevelClicked: Activity.nextLevel()
+        onPreviousLevelClicked: background.previousLevel()
+        onNextLevelClicked: background.nextLevel()
         onHomeClicked: activity.home()
     }
 }
