@@ -243,9 +243,18 @@ ActivityBase {
             anchors.horizontalCenter: background.horizontalCenter
         }
 
+        Rectangle {
+            id: controlsArea
+            anchors.left: background.left
+            anchors.right: boardBg.left
+            anchors.top: boardBg.top
+            anchors.bottom: boardBg.bottom
+            opacity: 0
+        }
+
         states: [
             State {
-                name: "portaitLayout"; when: items.isPortrait
+                name: "portraitLayout"; when: items.isPortrait
                 PropertyChanges {
                     target: layoutArea
                     width: background.width * 0.86
@@ -257,6 +266,7 @@ ActivityBase {
                     height: controls.buttonSize * 1.2
                     anchors.leftMargin: controls.spacing * 0.5
                     anchors.topMargin: 0
+                    anchors.horizontalCenterOffset: 0
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -265,8 +275,8 @@ ActivityBase {
                 AnchorChanges {
                     target: controls
                     anchors.top: textMessage.bottom
+                    anchors.horizontalCenter: undefined
                     anchors.left: boardBg.left
-                    anchors.right: undefined
                 }
             },
             State {
@@ -282,6 +292,7 @@ ActivityBase {
                     height: layoutArea.height
                     anchors.leftMargin: 0
                     anchors.topMargin: controls.spacing * 0.5
+                    anchors.horizontalCenterOffset: items.cellSize * 0.8
                 }
                 AnchorChanges {
                     target: layoutArea
@@ -289,9 +300,9 @@ ActivityBase {
                 }
                 AnchorChanges {
                     target: controls
-                    anchors.top: boardBg.top
+                    anchors.top: controlsArea.top
+                    anchors.horizontalCenter: controlsArea.horizontalCenter
                     anchors.left: undefined
-                    anchors.right: boardBg.left
                 }
             }
         ]
