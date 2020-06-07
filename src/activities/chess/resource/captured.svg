@@ -26,11 +26,11 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1884"
-     inkscape:window-height="1051"
+     inkscape:window-height="1054"
      id="namedview10"
      showgrid="true"
-     inkscape:zoom="4.9166667"
-     inkscape:cx="21.78496"
+     inkscape:zoom="9.8333334"
+     inkscape:cx="12.429028"
      inkscape:cy="12.40678"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -93,7 +93,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2018</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -120,15 +120,24 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
+  <rect
+     style="opacity:1;vector-effect:none;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.93874586px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect842"
+     width="40"
+     height="40"
+     x="1"
+     y="1"
+     ry="5" />
   <path
-     style="opacity:1;vector-effect:none;fill:#653611;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="M 6 1 C 3.23 1 1 3.23 1 6 L 1 36 C 1 38.77 3.23 41 6 41 L 21 41 L 21 1 L 6 1 z "
-     id="rect819-3" />
+     style="opacity:1;vector-effect:none;fill:#653611;fill-opacity:1;stroke:none;stroke-width:1.00000012px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 21,2 V 40 H 6 C 3.784,40 2,38.216 2,36 V 6 C 2,3.784 3.784,2 6,2 Z"
+     id="rect844-3"
+     inkscape:connector-curvature="0" />
   <path
-     inkscape:connector-curvature="0"
-     style="opacity:1;vector-effect:none;fill:#ebd0a5;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-     d="m 36,1 c 2.77,0 5,2.23 5,5 v 30 c 0,2.77 -2.23,5 -5,5 H 21 V 1 Z"
-     id="rect819-3-6" />
+     style="opacity:1;vector-effect:none;fill:#ebd0a5;fill-opacity:1;stroke:none;stroke-width:1.00000012px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 21,2 v 38 h 15 c 2.216,0 4,-1.784 4,-4 V 6 C 40,3.784 38.216,2 36,2 Z"
+     id="rect844"
+     inkscape:connector-curvature="0" />
   <g
      id="g869"
      transform="matrix(0.33665277,0,0,0.33665277,0.15448841,10.248513)">

@@ -219,7 +219,7 @@ ActivityBase {
                         height: 30 * ApplicationInfo.ratio
                         width: height
                         text: "";
-                        style: GCButtonStyle { theme: "light" }
+                        style: GCButtonStyle { theme: "noStyle" }
 
                         onClicked: {
                             whiteTakenPieces.open = !whiteTakenPieces.open
