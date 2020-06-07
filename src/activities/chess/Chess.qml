@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (big layout refactoring)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -69,12 +70,9 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
+            property var barHeightAddon: ApplicationSettings.isBarHidden ? textMessage.height : bar.height
             property bool isPortrait: (background.height >= background.width)
-            property int cellSize: items.isPortrait ?
-                                       Math.min((background.width - numbers.childrenRect.width) / (8 + 2),
-                                                (background.height - controls.height - letters.childrenRect.height) / (8 + barHeightAddon)) :
-                                       Math.min((background.width - numbers.childrenRect.width) / (8 + 2), (background.height - letters.childrenRect.height) / (8.5 + barHeightAddon))
+            property int cellSize: boardBg.width * 0.1
             property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
@@ -99,267 +97,307 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Grid {
-            anchors {
-                top: parent.top
-                topMargin: items.isPortrait ? 0 : items.cellSize
-                leftMargin: 10 * ApplicationInfo.ratio
-                rightMargin: 10 * ApplicationInfo.ratio
-            }
-            columns: (items.isPortrait==true)?1:3
-            rows: (items.isPortrait==true)?2:1
-            width: (items.isPortrait==true)?undefined:background.width
+        GCText {
+            id: textMessage
+            z: 20
+            color: items.isWarningMessage ? "red" : "white"
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 10
+            anchors.top: parent.top
+            width: layoutArea.width
+            fontSize: smallSize
+            text: items.message
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: TextEdit.WordWrap
+        }
+
+        Grid {
+            id: controls
+            z: 20
+            spacing: (boardBg.width - buttonSize * 4) * 0.25
+            columns: items.isPortrait ? 4 : 1
             horizontalItemAlignment: Grid.AlignHCenter
             verticalItemAlignment: Grid.AlignVCenter
+            property int buttonSize: undo.width
 
-            Column {
-                id: controls
-                anchors {
-                    leftMargin: 10
-                    rightMargin: 10
+            Button {
+                id: undo
+                height: 30 * ApplicationInfo.ratio
+                width: height
+                text: "";
+                style: GCButtonStyle { theme: "noStyle" }
+                onClicked: {
+                    Activity.undo()
+                    if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
+                        whiteTakenPieces.pushedLast.pop()
+                        whiteTakenPieces.takenPiecesModel.remove(whiteTakenPieces.takenPiecesModel.count-1)
+                    }
+                    if(!items.twoPlayer) {
+                        movesCount--
+                    }
+                    if(blackTakenPieces.pushedLast[blackTakenPieces.pushedLast.length-1] == movesCount) {
+                        blackTakenPieces.pushedLast.pop()
+                        blackTakenPieces.takenPiecesModel.remove(blackTakenPieces.takenPiecesModel.count-1)
+                    }
+                    movesCount--
                 }
-                z: 20
-                width: items.isPortrait ?
-                           parent.width :
-                           Math.max(undo.width * 1.2,
-                                    Math.min(
-                                        (background.width * 0.9 - undo.width - chessboard.width),
-                                        (background.width - chessboard.width) / 2))
+                enabled: items.history.length > 0 ? 1 : 0
+                opacity: enabled
+                Image {
+                    source: Activity.url + 'undo.svg'
+                    height: parent.height
+                    width: height
+                    sourceSize.height: height
+                    fillMode: Image.PreserveAspectFit
+                }
+                Behavior on opacity {
+                    PropertyAnimation {
+                        easing.type: Easing.InQuad
+                        duration: 200
+                    }
+                }
+            }
 
-                GCText {
-                    color: items.isWarningMessage ? "red" : "white"
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    width: parent.width
-                    fontSize: smallSize
-                    text: items.message
-                    horizontalAlignment: Text.AlignHCenter
-                    wrapMode: TextEdit.WordWrap
+            Button {
+                id: redo
+                height: undo.height
+                width: undo.height
+                text: "";
+                style: GCButtonStyle { theme: "noStyle" }
+                onClicked: {
+                    if (!twoPlayers) {
+                        acceptClick = false;
+                        Activity.redo()
+                    } else {
+                        Activity.redo()
+                    }
+                }
+                enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
+                opacity: enabled
+                Image {
+                    source: Activity.url + 'redo.svg'
+                    height: parent.height
+                    width: height
+                    sourceSize.height: height
+                    fillMode: Image.PreserveAspectFit
+                }
+                Behavior on opacity {
+                    PropertyAnimation {
+                        easing.type: Easing.InQuad
+                        duration: 200
+                    }
+                }
+            }
+
+            Button {
+                id: drawerButton
+                height: 30 * ApplicationInfo.ratio
+                width: height
+                text: "";
+                style: GCButtonStyle { theme: "noStyle" }
+
+                onClicked: {
+                    whiteTakenPieces.open = !whiteTakenPieces.open
+                    blackTakenPieces.open = !blackTakenPieces.open
                 }
 
-                Grid {
-                    spacing: 60 * ApplicationInfo.ratio
-                    columns: items.isPortrait ? 4 : 1
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    horizontalItemAlignment: Grid.AlignHCenter
-                    verticalItemAlignment: Grid.AlignVCenter
-
-                    Button {
-                        id: undo
-                        height: 30 * ApplicationInfo.ratio
-                        width: height
-                        text: "";
-                        style: GCButtonStyle { theme: "noStyle" }
-                        onClicked: {
-                            Activity.undo()
-                            if(whiteTakenPieces.pushedLast[whiteTakenPieces.pushedLast.length-1] == movesCount) {
-                                whiteTakenPieces.pushedLast.pop()
-                                whiteTakenPieces.takenPiecesModel.remove(whiteTakenPieces.takenPiecesModel.count-1)
-                            }
-                            if(!items.twoPlayer) {
-                                movesCount--
-                            }
-                            if(blackTakenPieces.pushedLast[blackTakenPieces.pushedLast.length-1] == movesCount) {
-                                blackTakenPieces.pushedLast.pop()
-                                blackTakenPieces.takenPiecesModel.remove(blackTakenPieces.takenPiecesModel.count-1)
-                            }
-                            movesCount--
-                        }
-                        enabled: items.history.length > 0 ? 1 : 0
-                        opacity: enabled
-                        Image {
-                            source: Activity.url + 'undo.svg'
-                            height: parent.height
-                            width: height
-                            sourceSize.height: height
-                            fillMode: Image.PreserveAspectFit
-                        }
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                easing.type: Easing.InQuad
-                                duration: 200
-                            }
-                        }
+                enabled: displayTakenPiecesButton
+                opacity: enabled
+                Image {
+                    source: Activity.url + 'captured.svg'
+                    height: parent.height
+                    width: height
+                    sourceSize.height: height
+                    fillMode: Image.PreserveAspectFit
+                }
+                Behavior on opacity {
+                    PropertyAnimation {
+                        easing.type: Easing.InQuad
+                        duration: 200
                     }
+                }
+            }
 
-                    Button {
-                        id: redo
-                        height: undo.height
-                        width: undo.height
-                        text: "";
-                        style: GCButtonStyle { theme: "noStyle" }
-                        onClicked: {
-                            if (!twoPlayers) {
-                                acceptClick = false;
-                                Activity.redo()
-                            } else {
-                                Activity.redo()
-                            }
-                        }
-                        enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
-                        opacity: enabled
-                        Image {
-                            source: Activity.url + 'redo.svg'
-                            height: parent.height
-                            width: height
-                            sourceSize.height: height
-                            fillMode: Image.PreserveAspectFit
-                        }
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                easing.type: Easing.InQuad
-                                duration: 200
-                            }
-                        }
+            Button {
+                height: undo.height
+                width: undo.height
+                text: "";
+                style: GCButtonStyle { theme: "noStyle" }
+                enabled: items.twoPlayer
+                opacity: enabled
+                Image {
+                    source: Activity.url + 'turn.svg'
+                    height: parent.height
+                    width: height
+                    sourceSize.height: height
+                    fillMode: Image.PreserveAspectFit
+                }
+                onClicked: chessboard.swap()
+            }
+        }
+
+        Rectangle {
+            id: layoutArea
+            width: background.width
+            height: background.height - textMessage.height - items.barHeightAddon * 1.1
+            opacity: 0
+            anchors.horizontalCenter: background.horizontalCenter
+        }
+
+        states: [
+            State {
+                name: "portaitLayout"; when: items.isPortrait
+                PropertyChanges {
+                    target: layoutArea
+                    width: background.width * 0.86
+                    height: background.height - textMessage.height - bar.height * 1.1 - controls.height
+                }
+                PropertyChanges {
+                    target: controls
+                    width:layoutArea.width
+                    height: controls.buttonSize * 1.2
+                    anchors.leftMargin: controls.spacing * 0.5
+                    anchors.topMargin: 0
+                }
+                AnchorChanges {
+                    target: layoutArea
+                    anchors.top: controls.bottom
+                }
+                AnchorChanges {
+                    target: controls
+                    anchors.top: textMessage.bottom
+                    anchors.left: boardBg.left
+                    anchors.right: undefined
+                }
+            },
+            State {
+                name: "horizontalLayout"; when: !items.isPortrait
+                PropertyChanges {
+                    target: layoutArea
+                    width: background.width
+                    height: background.height - textMessage.height - items.barHeightAddon * 1.1
+                }
+                PropertyChanges {
+                    target: controls
+                    width: controls.buttonSize * 1.2
+                    height: layoutArea.height
+                    anchors.leftMargin: 0
+                    anchors.topMargin: controls.spacing * 0.5
+                }
+                AnchorChanges {
+                    target: layoutArea
+                    anchors.top: textMessage.bottom
+                }
+                AnchorChanges {
+                    target: controls
+                    anchors.top: boardBg.top
+                    anchors.left: undefined
+                    anchors.right: boardBg.left
+                }
+            }
+        ]
+
+        Rectangle {
+            id: boardBg
+            width: Math.min(layoutArea.width, layoutArea.height)
+            height: boardBg.width
+            anchors.centerIn: layoutArea
+            z: 08
+            color: "#452501"
+
+            // The chessboard
+            GridView {
+                id: chessboard
+                cellWidth: items.cellSize
+                cellHeight: items.cellSize
+                width: items.cellSize * 8
+                height: chessboard.width
+                interactive: false
+                keyNavigationWraps: true
+                model: 64
+                layoutDirection: Qt.RightToLeft
+                delegate: square
+                rotation: 180
+                z: 10
+                anchors.centerIn: boardBg
+
+                Component {
+                    id: square
+                    Image {
+                        source: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
+                        Activity.url + 'chess-white.svg' : Activity.url + 'chess-black.svg';
+                        width: items.cellSize
+                        height: items.cellSize
                     }
+                }
 
-                    Button {
-                        id: drawerButton
-                        height: 30 * ApplicationInfo.ratio
-                        width: height
-                        text: "";
-                        style: GCButtonStyle { theme: "noStyle" }
+                Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
 
-                        onClicked: {
-                            whiteTakenPieces.open = !whiteTakenPieces.open
-                            blackTakenPieces.open = !blackTakenPieces.open
-                        }
+                function swap() {
+                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
+                    coordsOpacity = 0
+                    timerSwap.start()
+                    if(chessboard.rotation == 180)
+                        chessboard.rotation = 0
+                        else
+                            chessboard.rotation = 180
+                }
+            }
 
-                        enabled: displayTakenPiecesButton
-                        opacity: enabled
-                        Image {
-                            source: Activity.url + 'captured.svg'
-                            height: parent.height
-                            width: height
-                            sourceSize.height: height
-                            fillMode: Image.PreserveAspectFit
-                        }
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                easing.type: Easing.InQuad
-                                duration: 200
-                            }
-                        }
+            Timer {
+                id: timerSwap
+                interval: 1500
+                running: false
+                repeat: false
+                onTriggered: coordsOpacity = 1
+            }
+
+            Item {
+                id: letters
+                anchors.left: chessboard.left
+                anchors.top: chessboard.bottom
+                opacity: coordsOpacity
+                Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
+                Repeater {
+                    id: lettersA
+                    model: chessboard.rotation == 0 ? ["F", "G", "F", "E", "D", "C", "B", "A"] : ["A", "B", "C", "D", "E", "F", "G", "H"]
+                    GCText {
+                        x: items.cellSize * (index % 8) + (items.cellSize/2-width/2)
+                        y: items.cellSize * Math.floor(index / 8)
+                        text: modelData
+                        color: "#CBAE7B"
+                        font.pointSize: NaN
+                        font.pixelSize: items.cellSize * 0.5
                     }
-
-                    Button {
-                        height: undo.height
-                        width: undo.height
-                        text: "";
-                        style: GCButtonStyle { theme: "noStyle" }
-                        enabled: items.twoPlayer
-                        opacity: enabled
-                        Image {
-                            source: Activity.url + 'turn.svg'
-                            height: parent.height
-                            width: height
-                            sourceSize.height: height
-                            fillMode: Image.PreserveAspectFit
-                        }
-                        onClicked: chessboard.swap()
+                }
+            }
+            Item {
+                id: numbers
+                anchors.left: chessboard.right
+                anchors.top: chessboard.top
+                opacity: coordsOpacity
+                Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
+                Repeater {
+                    model: chessboard.rotation == 0 ? ["1", "2", "3", "4", "5", "6", "7", "8"] : ["8", "7", "6", "5", "4", "3", "2", "1"]
+                    GCText {
+                        x: items.cellSize * Math.floor(index / 8) + width
+                        y: items.cellSize * (index % 8) + (items.cellSize/2-height/2)
+                        text: modelData
+                        color: "#CBAE7B"
+                        font.pointSize: NaN
+                        font.pixelSize: items.cellSize * 0.5
                     }
                 }
             }
 
             Rectangle {
-                id: boardBg
-                width: items.cellSize * 8.2
-                height: boardBg.width
-                z: 08
-                color: "#452501"
-
-                // The chessboard
-                GridView {
-                    id: chessboard
-                    cellWidth: items.cellSize
-                    cellHeight: items.cellSize
-                    width: items.cellSize * 8
-                    height: chessboard.width
-                    interactive: false
-                    keyNavigationWraps: true
-                    model: 64
-                    layoutDirection: Qt.RightToLeft
-                    delegate: square
-                    rotation: 180
-                    z: 10
-                    anchors.centerIn: boardBg
-
-                    Component {
-                        id: square
-                        Image {
-                            source: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
-                                       Activity.url + 'chess-white.svg' : Activity.url + 'chess-black.svg';
-                            width: items.cellSize
-                            height: items.cellSize
-                        }
-                    }
-
-                    Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
-
-                    function swap() {
-                        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
-                        coordsOpacity = 0
-                        timerSwap.start()
-                        if(chessboard.rotation == 180)
-                            chessboard.rotation = 0
-                        else
-                            chessboard.rotation = 180
-                    }
-                }
-
-                Timer {
-                    id: timerSwap
-                    interval: 1500
-                    running: false
-                    repeat: false
-                    onTriggered: coordsOpacity = 1
-                }
-
-                Grid {
-                    id: letters
-                    anchors.left: chessboard.left
-                    anchors.top: chessboard.bottom
-                    opacity: coordsOpacity
-                    Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
-                    Repeater {
-                        id: lettersA
-                        model: chessboard.rotation == 0 ? ["F", "G", "F", "E", "D", "C", "B", "A"] : ["A", "B", "C", "D", "E", "F", "G", "H"]
-                        GCText {
-                            x: items.cellSize * (index % 8) + (items.cellSize/2-width/2)
-                            y: items.cellSize * Math.floor(index / 8)
-                            text: modelData
-                            color: "#CBAE7B"
-                        }
-                    }
-                }
-                Grid {
-                    id: numbers
-                    anchors.left: chessboard.right
-                    anchors.top: chessboard.top
-                    opacity: coordsOpacity
-                    Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 500} }
-                    Repeater {
-                        model: chessboard.rotation == 0 ? ["1", "2", "3", "4", "5", "6", "7", "8"] : ["8", "7", "6", "5", "4", "3", "2", "1"]
-                        GCText {
-                            x: items.cellSize * Math.floor(index / 8) + width
-                            y: items.cellSize * (index % 8) + (items.cellSize/2-height/2)
-                            text: modelData
-                            color: "#CBAE7B"
-                        }
-                    }
-                }
-
-                Rectangle {
-                    id: boardBorder
-                    width: items.cellSize * 10
-                    height: boardBorder.width
-                    anchors.centerIn: boardBg
-                    z: -1
-                    color: "#542D0F"
-                    border.color: "#3A1F0A"
-                    border.width: items.cellSize * 0.1
-                }
+                id: boardBorder
+                width: items.cellSize * 10
+                height: boardBorder.width
+                anchors.centerIn: boardBg
+                z: -1
+                color: "#542D0F"
+                border.color: "#3A1F0A"
+                border.width: items.cellSize * 0.1
             }
         }
 
