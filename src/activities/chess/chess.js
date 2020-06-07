@@ -320,6 +320,14 @@ function showPossibleMoves(from) {
     var fromEngine = viewPosToEngine(from)
     for(var i=0; i < result.length; ++i) {
         if(fromEngine === result[i][1]) {
+            // we don't want to display invalid moves
+            var move = Engine.p4_make_move(state, result[i][1], result[i][2]);
+            //is it check?
+            if (Engine.p4_check_check(state, state.to_play)) {
+                Engine.p4_unmake_move(state, move);
+                continue;
+            }
+            Engine.p4_unmake_move(state, move);
             var pos = engineToViewPos(result[i][2])
             items.squares.getSquareAt(pos)['acceptMove'] = true
         }
