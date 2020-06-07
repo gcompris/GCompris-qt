@@ -40,4 +40,5 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
   credit: ""
   section: "math memory arithmetic"
   createdInVersion: 0
+  levels: "1,2,3,4,5,6,7,8,9,10"
 }
