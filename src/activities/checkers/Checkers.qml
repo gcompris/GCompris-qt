@@ -358,9 +358,9 @@ ActivityBase {
                 MouseArea {
                     id: dragArea
                     anchors.fill: parent
-                    enabled: !items.gameOver && ((items.blackTurn && !parent.isWhite) || (!items.blackTurn && parent.isWhite))
-                                && !items.trigComputerMove.running
-                    drag.target: parent
+                    enabled: !items.gameOver && !items.trigComputerMove.running
+                    drag.target: ((items.blackTurn && !parent.isWhite) || (!items.blackTurn && parent.isWhite)) ?
+                                parent : null
                     onPressed: {
                         piece.Drag.keys = ['acceptMe']
                         parent.z = 100
