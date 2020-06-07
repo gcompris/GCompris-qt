@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
+ *   Timothée Giet <animtim@gmail.com> (big layout refactoring)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -58,12 +59,9 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
+            property var barHeightAddon: ApplicationSettings.isBarHidden ? textMessage.height : bar.height
             property bool isPortrait: (background.height >= background.width)
-            property int cellSize: items.isPortrait ?
-                                       Math.min(background.width / (items.numberOfCases + 2),
-                                                (background.height - controls.height) / (items.numberOfCases + barHeightAddon)) :
-                                       Math.min(background.width / (items.numberOfCases + 2), background.height / (items.numberOfCases + barHeightAddon))
+            property int cellSize: boardBg.width * 0.098
             property var fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
@@ -88,127 +86,172 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Grid {
-            anchors {
-                top: parent.top
-                topMargin: items.isPortrait ? 0 : items.cellSize / 2
-                leftMargin: 10 * ApplicationInfo.ratio
-                rightMargin: 10 * ApplicationInfo.ratio
-            }
-            columns: (items.isPortrait==true) ? 1 : 3
-            rows: (items.isPortrait==true) ? 2 : 1
-            width: (items.isPortrait==true) ? undefined : background.width
+        GCText {
+            id: textMessage
+            z: 20
+            color: "white"
             anchors.horizontalCenter: parent.horizontalCenter
-            spacing: 10
+            width: parent.width
+            fontSize: smallSize
+            text: items.message
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: TextEdit.WordWrap
+        }
+
+        Grid {
+            id: controls
+            z: 20
+            spacing: (boardBg.width - buttonSize * 3) / 3
+            columns: items.isPortrait ? 3 : 1
             horizontalItemAlignment: Grid.AlignHCenter
             verticalItemAlignment: Grid.AlignVCenter
+            property int buttonSize: undo.width
 
-            Column {
-                id: controls
-                anchors {
-                    leftMargin: 10
-                    rightMargin: 10
+            Button {
+                id: undo
+                height: 30 * ApplicationInfo.ratio
+                width: height
+                text: "";
+                style: GCButtonStyle { theme: "noStyle" }
+                onClicked: Activity.undo()
+                enabled: (items.history && items.history.length > 0) ? true : false
+                opacity: enabled ? 1 : 0
+                Image {
+                    source: 'qrc:/gcompris/src/activities/chess/resource/undo.svg'
+                    height: parent.height
+                    width: height
+                    sourceSize.height: height
+                    fillMode: Image.PreserveAspectFit
                 }
-                width: items.isPortrait ?
-                           parent.width :
-                           Math.max(undo.width * 1.2,
-                                    Math.min(
-                                        (background.width * 0.9 - undo.width - chessboard.width),
-                                        (background.width - chessboard.width) / 2))
-
-                GCText {
-                    color: "white"
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    width: parent.width
-                    fontSize: smallSize
-                    text: items.message
-                    horizontalAlignment: Text.AlignHCenter
-                    wrapMode: TextEdit.WordWrap
-                }
-
-                Grid {
-                    spacing: 60 * ApplicationInfo.ratio
-                    columns: items.isPortrait ? 3 : 1
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    horizontalItemAlignment: Grid.AlignHCenter
-                    verticalItemAlignment: Grid.AlignVCenter
-
-                    Button {
-                        id: undo
-                        height: 30 * ApplicationInfo.ratio
-                        width: height
-                        text: "";
-                        style: GCButtonStyle { theme: "noStyle" }
-                        onClicked: Activity.undo()
-                        enabled: (items.history && items.history.length > 0) ? true : false
-                        opacity: enabled ? 1 : 0
-                        Image {
-                            source: 'qrc:/gcompris/src/activities/chess/resource/undo.svg'
-                            height: parent.height
-                            width: height
-                            sourceSize.height: height
-                            fillMode: Image.PreserveAspectFit
-                        }
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                easing.type: Easing.InQuad
-                                duration: 200
-                            }
-                        }
-                    }
-
-                    Button {
-                        id: redo
-                        height: undo.height
-                        width: undo.height
-                        text: "";
-                        style: GCButtonStyle { theme: "noStyle" }
-                        onClicked: {
-                            Activity.redo()
-                        }
-                        enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
-                        opacity: enabled
-                        Image {
-                            source: 'qrc:/gcompris/src/activities/chess/resource/redo.svg'
-                            height: parent.height
-                            width: height
-                            sourceSize.height: height
-                            fillMode: Image.PreserveAspectFit
-                        }
-                        Behavior on opacity {
-                            PropertyAnimation {
-                                easing.type: Easing.InQuad
-                                duration: 200
-                            }
-                        }
-                    }
-
-                    Button {
-                        height: undo.height
-                        width: undo.height
-                        text: "";
-                        style: GCButtonStyle { theme: "noStyle" }
-                        enabled: items.twoPlayer
-                        opacity: enabled
-                        Image {
-                            source: 'qrc:/gcompris/src/activities/chess/resource/turn.svg'
-                            height: parent.height
-                            width: height
-                            sourceSize.height: height
-                            fillMode: Image.PreserveAspectFit
-                        }
-                        onClicked: chessboard.swap()
+                Behavior on opacity {
+                    PropertyAnimation {
+                        easing.type: Easing.InQuad
+                        duration: 200
                     }
                 }
             }
 
+            Button {
+                id: redo
+                height: undo.height
+                width: undo.height
+                text: "";
+                style: GCButtonStyle { theme: "noStyle" }
+                onClicked: {
+                    Activity.redo()
+                }
+                enabled: items.redo_stack.length > 0 && acceptClick ? 1 : 0
+                opacity: enabled
+                Image {
+                    source: 'qrc:/gcompris/src/activities/chess/resource/redo.svg'
+                    height: parent.height
+                    width: height
+                    sourceSize.height: height
+                    fillMode: Image.PreserveAspectFit
+                }
+                Behavior on opacity {
+                    PropertyAnimation {
+                        easing.type: Easing.InQuad
+                        duration: 200
+                    }
+                }
+            }
 
-            Rectangle {
-                id: boardBg
-                width: items.cellSize * (items.numberOfCases + 0.2)
-                height: items.cellSize * (items.numberOfCases + 0.2)
-                z: 09
-                color: "#2E1B0C"
+            Button {
+                height: undo.height
+                width: undo.height
+                text: "";
+                style: GCButtonStyle { theme: "noStyle" }
+                enabled: items.twoPlayer
+                opacity: enabled
+                Image {
+                    source: 'qrc:/gcompris/src/activities/chess/resource/turn.svg'
+                    height: parent.height
+                    width: height
+                    sourceSize.height: height
+                    fillMode: Image.PreserveAspectFit
+                }
+                onClicked: chessboard.swap()
+            }
+        }
+
+        Rectangle {
+            id: layoutArea
+            width: background.width
+            height: background.height - textMessage.height - items.barHeightAddon * 1.1
+            opacity: 0
+            anchors.horizontalCenter: background.horizontalCenter
+        }
+
+        Rectangle {
+            id: controlsArea
+            anchors.left: background.left
+            anchors.right: boardBg.left
+            anchors.top: boardBg.top
+            anchors.bottom: boardBg.bottom
+            opacity: 0
+        }
+
+        states: [
+            State {
+                name: "portraitLayout"; when: items.isPortrait
+                PropertyChanges {
+                    target: layoutArea
+                    width: background.width * 0.86
+                    height: background.height - textMessage.height - bar.height * 1.1 - controls.height
+                }
+                PropertyChanges {
+                    target: controls
+                    width:layoutArea.width
+                    height: controls.buttonSize * 1.2
+                    anchors.leftMargin: controls.spacing * 0.5
+                    anchors.topMargin: 0
+                }
+                AnchorChanges {
+                    target: layoutArea
+                    anchors.top: controls.bottom
+                }
+                AnchorChanges {
+                    target: controls
+                    anchors.top: textMessage.bottom
+                    anchors.horizontalCenter: undefined
+                    anchors.left: boardBg.left
+                }
+            },
+            State {
+                name: "horizontalLayout"; when: !items.isPortrait
+                PropertyChanges {
+                    target: layoutArea
+                    width: background.width
+                    height: background.height - textMessage.height - items.barHeightAddon * 1.1
+                }
+                PropertyChanges {
+                    target: controls
+                    width: controls.buttonSize * 1.2
+                    height: layoutArea.height
+                    anchors.leftMargin: 0
+                    anchors.topMargin: controls.spacing * 0.5
+                }
+                AnchorChanges {
+                    target: layoutArea
+                    anchors.top: textMessage.bottom
+                }
+                AnchorChanges {
+                    target: controls
+                    anchors.top: controlsArea.top
+                    anchors.horizontalCenter: controlsArea.horizontalCenter
+                    anchors.left: undefined
+                }
+            }
+        ]
+
+        Rectangle {
+            id: boardBg
+            width: Math.min(layoutArea.width, layoutArea.height)
+            height: boardBg.width
+            anchors.centerIn: layoutArea
+            z: 09
+            color: "#2E1B0C"
 
             // The chessboard
             GridView {
@@ -229,7 +272,7 @@ ActivityBase {
                     id: square
                     Image {
                         source: index % 2 + (Math.floor(index / items.numberOfCases) % 2) == 1 ?
-                                   Activity.url + 'checkers-white.svg' : Activity.url + 'checkers-black.svg';
+                        Activity.url + 'checkers-white.svg' : Activity.url + 'checkers-black.svg';
                         width: items.cellSize
                         height: items.cellSize
                     }
@@ -241,12 +284,12 @@ ActivityBase {
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
                     if(chessboard.rotation == 180)
                         chessboard.rotation = 0
-                    else
-                        chessboard.rotation = 180
+                        else
+                            chessboard.rotation = 180
                 }
             }
-            }
         }
+
 
         Repeater {
             id: squares
