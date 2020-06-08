@@ -247,7 +247,7 @@ ActivityBase {
             // conversion code copied from:
             // http://blog.stevenlevithan.com/archives/javascript-roman-numeral-converter
             function arabic2Roman(num) {
-                if (!+num)
+                if (!+num || num > 3999)
                     return '';
                 var digits = String(+num).split(""),
                         key = ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM",
