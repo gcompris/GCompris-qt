@@ -25,11 +25,11 @@ Data {
     difficulty: 3
 
   property var symbols: [
-        {"imgName": "circle", "text": 'A', "extension": ".svg"},
-        {"imgName": "rectangle", "text": 'B', "extension": ".svg"},
-        {"imgName": "rhombus", "text": 'C', "extension": ".svg"},
-        {"imgName": "star", "text": 'D', "extension": ".svg"},
-        {"imgName": "triangle", "text": 'E', "extension": ".svg"}
+        {"imgName": "circle.svg", "text": 'A'},
+        {"imgName": "rectangle.svg", "text": 'B'},
+        {"imgName": "rhombus.svg", "text": 'C'},
+        {"imgName": "star.svg", "text": 'D'},
+        {"imgName": "triangle.svg", "text": 'E'}
     ]
 
     data: [

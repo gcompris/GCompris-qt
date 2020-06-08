@@ -245,7 +245,7 @@ function dataToImageSource(data) {
 
     for(var i = 0 ; i < symbols.length ; ++ i) {
         if(symbols[i].text == data) {
-            imageName = url + symbols[i].imgName+symbols[i].extension;
+            imageName = url + symbols[i].imgName;
             break;
         }
     }

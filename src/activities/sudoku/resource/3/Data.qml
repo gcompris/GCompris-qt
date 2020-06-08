@@ -25,16 +25,16 @@ Data {
     difficulty: 5
 
     property var symbols: [
-        {"imgName": "circle", "text": 'A', "extension": ".svg"},
-        {"imgName": "rectangle", "text": 'B', "extension": ".svg"},
-        {"imgName": "rhombus", "text": 'C', "extension": ".svg"},
-        {"imgName": "star", "text": 'D', "extension": ".svg"},
-        {"imgName": "triangle", "text": 'E', "extension": ".svg"},
-        {"imgName": "1", "text": '1', "extension": ".svg"},
-        {"imgName": "2", "text": '2', "extension": ".svg"},
-        {"imgName": "3", "text": '3', "extension": ".svg"},
-        {"imgName": "4", "text": '4', "extension": ".svg"},
-        {"imgName": "5", "text": '5', "extension": ".svg"}
+        {"imgName": "circle.svg", "text": 'A'},
+        {"imgName": "rectangle.svg", "text": 'B'},
+        {"imgName": "rhombus.svg", "text": 'C'},
+        {"imgName": "star.svg", "text": 'D'},
+        {"imgName": "triangle.svg", "text": 'E'},
+        {"imgName": "1.svg", "text": '1'},
+        {"imgName": "2.svg", "text": '2'},
+        {"imgName": "3.svg", "text": '3'},
+        {"imgName": "4.svg", "text": '4'},
+        {"imgName": "5.svg", "text": '5'}
     ]
 
     data: [
