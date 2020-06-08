@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *   Timothée Giet <animtim@gmail.com> (layout refactoring)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -40,6 +41,8 @@ ActivityBase {
         sourceSize.height: height
         signal start
         signal stop
+
+        property int layoutMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -273,47 +276,53 @@ ActivityBase {
             onRomanChanged: arabic = roman2Arabic(roman)
         }
 
-        Column {
-            id: column
-            anchors.fill: parent
-            anchors.topMargin: 10
-            GCText {
-                id: questionLabel
-                anchors.horizontalCenter: parent.horizontalCenter
-                wrapMode: TextEdit.WordWrap
-                text: items.questionValue ? items.questionText.arg(items.questionValue) : ''
-                color: 'white'
-                width: parent.width * 0.9
-                horizontalAlignment: Text.AlignHCenter
-                Rectangle {
-                    z: -1
-                    border.color: 'black'
-                    border.width: 1
+        Rectangle {
+            id: questionArea
+            anchors.top: background.top
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: background.layoutMargins
+            color: "#f2f2f2"
+            radius: background.layoutMargins
+            height: questionLabel.height + 20 * ApplicationInfo.ratio
+            Rectangle {
+                anchors.centerIn: parent
+                width: parent.width - background.layoutMargins
+                height: parent.height - background.layoutMargins
+                color: "#f2f2f2"
+                radius: parent.radius
+                border.width: 3 * ApplicationInfo.ratio
+                border.color: "#9fb8e3"
+                GCText {
+                    id: questionLabel
                     anchors.centerIn: parent
-                    width: parent.width * 1.1
-                    height: parent.height
-                    opacity: 0.8
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#000" }
-                        GradientStop { position: 0.9; color: "#666" }
-                        GradientStop { position: 1.0; color: "#AAA" }
-                    }
-                    radius: 10
+                    wrapMode: TextEdit.WordWrap
+                    text: items.questionValue ? items.questionText.arg(items.questionValue) : ''
+                    color: "#373737"
+                    width: parent.width * 0.9
+                    horizontalAlignment: Text.AlignHCenter
                 }
             }
-            Item { // Just a margin
-                width: 1
-                height: 5 * ApplicationInfo.ratio
-            }
+        }
+
+        Rectangle {
+            id: inputArea
+            anchors.top: questionArea.bottom
+            anchors.left: background.left
+            anchors.margins: background.layoutMargins
+            color: "#f2f2f2"
+            radius: background.layoutMargins
+            width: questionArea.width * 0.5 - background.layoutMargins * 0.5
+            height: textInput.height
             TextInput {
                 id: textInput
                 x: parent.width / 2
-                width: 60 * ApplicationInfo.ratio
-                color: 'white'
+                width: parent.width
+                color: "#373737"
                 text: ''
                 maximumLength: items.toArabic ?
-                                   ('' + romanConverter.roman2Arabic(items.questionValue)).length + 1 :
-                                   romanConverter.arabic2Roman(items.questionValue).length + 1
+                ('' + romanConverter.roman2Arabic(items.questionValue)).length + 1 :
+                romanConverter.arabic2Roman(items.questionValue).length + 1
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -323,32 +332,17 @@ ActivityBase {
                 font.capitalization: ApplicationSettings.fontCapitalization
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 cursorVisible: true
+                wrapMode: TextInput.Wrap
                 validator: RegExpValidator{regExp: items.toArabic ?
-                                                       /[0-9]+/ :
-                                                       /[ivxlcdmIVXLCDM]*/}
-                onTextChanged: if(text) {
-                                   text = text.toUpperCase();
-                                   if(items.toArabic)
-                                       romanConverter.arabic = parseInt(text)
-                                   else
-                                       romanConverter.roman = text
-                               }
-
-                Rectangle {
-                    z: -1
-                    opacity: 0.8
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#000" }
-                        GradientStop { position: 0.9; color: "#666" }
-                        GradientStop { position: 1.0; color: "#AAA" }
+                    /[0-9]+/ :
+                    /[ivxlcdmIVXLCDM]*/}
+                    onTextChanged: if(text) {
+                        text = text.toUpperCase();
+                        if(items.toArabic)
+                            romanConverter.arabic = parseInt(text)
+                            else
+                                romanConverter.roman = text
                     }
-                    radius: 10
-                    border.color: 'black'
-                    border.width: 1
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    width: column.width * 0.7
-                    height: parent.height
-                }
 
                 function appendText(car) {
                     if(car === keyboard.backspace) {
@@ -363,88 +357,74 @@ ActivityBase {
                     text = text.substring(0, cursorPosition) + car + text.substring(cursorPosition)
                     cursorPosition = oldPos + 1
                 }
+            }
+        }
 
-            }
-            Item { // Just a margin
-                width: 1
-                height: 5 * ApplicationInfo.ratio
-            }
+        Rectangle {
+            id: feedbackArea
+            anchors.top: questionArea.bottom
+            anchors.margins: background.layoutMargins
+            anchors.right: background.right
+            width: inputArea.width
+            height: inputArea.height
+            color: "#f2f2f2"
+            radius: background.layoutMargins
+
             GCText {
                 id: feedback
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: items.toArabic ?
-                          qsTr("Roman value: %1").arg(value) :
-                          qsTr('Arabic value: %1').arg(value)
-                color: 'white'
-                Rectangle {
-                    z: -1
-                    opacity: 0.8
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#000" }
-                        GradientStop { position: 0.9; color: "#666" }
-                        GradientStop { position: 1.0; color: "#AAA" }
-                    }
-                    radius: 10
-                    border.color: 'black'
-                    border.width: 1
-                    anchors.centerIn: parent
-                    width: parent.width * 1.1
-                    height: parent.height
-                }
+                qsTr("Roman value: %1").arg(value) :
+                qsTr('Arabic value: %1').arg(value)
+                color: "#373737"
                 property string value: items.toArabic ?
-                                           romanConverter.roman :
-                                           romanConverter.arabic ? romanConverter.arabic : ''
+                romanConverter.roman :
+                romanConverter.arabic ? romanConverter.arabic : ''
+                verticalAlignment: Text.AlignVCenter
+                width: parent.width * 0.9
+                height: parent.height * 0.9
+                fontSizeMode: Text.Fit
+                minimumPointSize: 10
+                fontSize: mediumSize
             }
-            Item { // Just a margin
-                width: 1
-                height: 5 * ApplicationInfo.ratio
-            }
+        }
+
+        Rectangle {
+            id: instructionArea
+            visible: items.instruction != ''
+            anchors.top: feedbackArea.bottom
+            anchors.bottom: okButton.top
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.margins: background.layoutMargins
+            color: "#9fb8e3"
             Rectangle {
-                color: "transparent"
-                width: parent.width
-                height: (background.height - (y + bar.height + okButton.height + keyboard.height) * 1.1 )
-                Flickable {
+                width: parent.width - background.layoutMargins
+                height: parent.height - background.layoutMargins
+                anchors.centerIn: parent
+                color: "#f2f2f2"
+                GCText {
+                    id: instruction
+                    wrapMode: TextEdit.WordWrap
+                    anchors.centerIn: parent
                     width: parent.width
                     height: parent.height
-                    contentWidth: parent.width
-                    contentHeight: instructionContainer.height
-                    anchors.fill: parent
-                    flickableDirection: Flickable.VerticalFlick
-                    clip: true
-                    GCText {
-                        id: instruction
-                        visible: items.instruction != ''
-                        wrapMode: TextEdit.WordWrap
-                        fontSize: tinySize
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        width: parent.width * 0.95
-                        text: items.instruction
-                        horizontalAlignment: Text.AlignHCenter
-                        color: 'white'
-                        Rectangle {
-                            id: instructionContainer
-                            z: -1
-                            opacity: 0.8
-                            gradient: Gradient {
-                                GradientStop { position: 0.0; color: "#000" }
-                                GradientStop { position: 0.9; color: "#666" }
-                                GradientStop { position: 1.0; color: "#AAA" }
-                            }
-                            radius: 10
-                            border.color: 'black'
-                            border.width: 1
-                            anchors.centerIn: parent
-                            width: parent.width
-                            height: parent.contentHeight
-                        }
-                    }
+                    text: items.instruction
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    color: "#373737"
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 10
+                    fontSize: mediumSize
                 }
             }
         }
 
         Score {
             id: score
-            anchors.bottom: bar.top
+            anchors.right: okButton.left
+            anchors.verticalCenter: okButton.verticalCenter
+            anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 1
         }
@@ -504,19 +484,19 @@ ActivityBase {
             onNextLevelClicked: items.nextLevel()
             onHomeClicked: activity.home()
             level: items.currentLevel + 1
-            onHintClicked: feedback.visible = !feedback.visible
+            onHintClicked: feedbackArea.visible = !feedbackArea.visible
         }
         BarButton {
           id: okButton
           source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
-          sourceSize.width: 60 * ApplicationInfo.ratio
           visible: true
-          anchors {
-              verticalCenter: score.verticalCenter
-              right: score.left
-              rightMargin: 10 * ApplicationInfo.ratio
-              bottomMargin: 10 * ApplicationInfo.ratio
-          }
+          anchors.right: background.right
+          anchors.bottom: bar.top
+          anchors.margins: 2 * background.layoutMargins
+          height: bar.height;
+          width: height
+          sourceSize.height: height
+          sourceSize.width: height
           onClicked: items.check()
         }
 
