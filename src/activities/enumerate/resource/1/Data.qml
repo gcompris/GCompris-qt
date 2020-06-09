@@ -21,23 +21,23 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Enumerate up to 4 fruits")
+    objective: qsTr("Enumerate up to 4 fruits.")
     difficulty: 1
     data: [
         {
-            "objective": qsTr("Enumerate up to 2 fruits"),
+            "objective": qsTr("Enumerate up to 2 fruits."),
             "sublevels" : "4",
             "numberOfItemType" : 1,
             "numberOfItemMax"  : 2
         },
         {
-            "objective": qsTr("Enumerate up to 3 fruits"),
+            "objective": qsTr("Enumerate up to 3 fruits."),
             "sublevels" : "4",
             "numberOfItemType" : 1,
             "numberOfItemMax"  : 3
         },
         {
-            "objective": qsTr("Enumerate up to 4 fruits"),
+            "objective": qsTr("Enumerate up to 4 fruits."),
             "sublevels" : "4",
             "numberOfItemType" : 1,
             "numberOfItemMax"  : 4

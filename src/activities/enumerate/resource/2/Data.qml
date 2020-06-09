@@ -21,23 +21,23 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Group 2 types of fruits and enumerate each group (5 fruits max)")
+    objective: qsTr("Group 2 types of fruits and enumerate each group (5 fruits max).")
     difficulty: 2
     data: [
         {
-            "objective": qsTr("Group 2 types of fruits and enumerate each group (3 fruits max)"),
+            "objective": qsTr("Group 2 types of fruits and enumerate each group (3 fruits max)."),
             "sublevels" : "4",
             "numberOfItemType" : 2,
             "numberOfItemMax"  : 3
         },
         {
-            "objective": qsTr("Group 2 types of fruits and enumerate each group (4 fruits max)"),
+            "objective": qsTr("Group 2 types of fruits and enumerate each group (4 fruits max)."),
             "sublevels" : "4",
             "numberOfItemType" : 2,
             "numberOfItemMax"  : 4
         },
         {
-            "objective": qsTr("Group 2 types of fruits and enumerate each group (5 fruits max)"),
+            "objective": qsTr("Group 2 types of fruits and enumerate each group (5 fruits max)."),
             "sublevels" : "4",
             "numberOfItemType" : 2,
             "numberOfItemMax"  : 5
