@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("For children who can read numbers")
+    objective: qsTr("For children who can read numbers.")
     difficulty: 5
     data: [
         [
