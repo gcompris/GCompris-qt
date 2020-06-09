@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("The spaceship rotates when you use the direction keys")
+    objective: qsTr("The spaceship rotates when you use the direction keys.")
     difficulty: 5
     data: [
        {
