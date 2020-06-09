@@ -64,7 +64,9 @@ ActivityBase {
             property string instruction: dataset[currentLevel].instruction
             property string questionValue
 
-            property int currentLevel: 0
+            // we initialize it to -1, so on start() function,
+            // it forces a layout refresh when it's set to 0
+            property int currentLevel: -1
             property int numberOfLevel: dataset.length
 
             property var dataset: [
@@ -187,7 +189,7 @@ ActivityBase {
             }
 
             function nextLevel() {
-                if(numberOfLevel - 1 == currentLevel ) {
+                if(numberOfLevel - 1 == currentLevel) {
                     currentLevel = 0
                 } else {
                     currentLevel++
@@ -506,6 +508,5 @@ ActivityBase {
             onWin: items.isChecking = false
             onLoose: items.isChecking = false
         }
-
     }
 }
