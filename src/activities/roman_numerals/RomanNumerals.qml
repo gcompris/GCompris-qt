@@ -416,7 +416,7 @@ ActivityBase {
                     verticalAlignment: Text.AlignVCenter
                     color: "#373737"
                     fontSizeMode: Text.Fit
-                    minimumPointSize: 10
+                    minimumPointSize: 8
                     fontSize: mediumSize
                 }
             }
