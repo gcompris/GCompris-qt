@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn subtraction table of 6")
+    objective: qsTr("Learn subtraction table of 6.")
     difficulty: 6
     data: [
         {

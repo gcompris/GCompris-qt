@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn multiplication table of 2")
+    objective: qsTr("Learn multiplication table of 2.")
     difficulty: 5
     data: [
         {

@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn division table of 3")
+    objective: qsTr("Learn division table of 3.")
     difficulty: 6
     data: [
         {
