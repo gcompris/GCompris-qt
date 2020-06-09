@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Medium grids")
+    objective: qsTr("Medium grids.")
     difficulty: 2
     data: [
         {

@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Large grids")
+    objective: qsTr("Large grids.")
     difficulty: 3
     data: [
           { // A
