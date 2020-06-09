@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn to calculate total stars up to 100 with coefficients")
+    objective: qsTr("Learn to calculate total stars up to 100 with coefficients.")
     difficulty: 4
     data: [
     {
