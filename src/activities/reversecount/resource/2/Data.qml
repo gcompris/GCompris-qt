@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Numbers between 2 and 18")
+    objective: qsTr("Numbers between 2 and 18.")
     difficulty: 2
     data: [
     {
