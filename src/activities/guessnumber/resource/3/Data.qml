@@ -23,20 +23,20 @@ import QtQuick 2.6
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Guess a number between 1 and %1").arg(Number(1000).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0))
+    objective: qsTr("Guess a number between 1 and %1.").arg(Number(1000).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0))
     difficulty: 3
     data: [
         {
             // first number is the minimum number and second is the maximum number
-            "objective" : qsTr("Guess a number between 1 and %1").arg(10),
+            "objective" : qsTr("Guess a number between 1 and %1.").arg(10),
             "maxNumber" : 10
         },
         {
-            "objective" : qsTr("Guess a number between 1 and %1").arg(100),
+            "objective" : qsTr("Guess a number between 1 and %1.").arg(100),
             "maxNumber" : 100
         },
         {
-            "objective" : qsTr("Guess a number between 1 and %1").arg(Number(1000).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0)),
+            "objective" : qsTr("Guess a number between 1 and %1.").arg(Number(1000).toLocaleString(Qt.locale(ApplicationInfo.localeShort), 'f', 0)),
             "maxNumber" : 1000
         }
     ]
