@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("5*5 grids, Very easy")
+    objective: qsTr("5*5 grids, Very easy.")
     difficulty: 3
     data: [
         { // 1
