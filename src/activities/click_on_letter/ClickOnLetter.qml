@@ -286,10 +286,12 @@ ActivityBase {
 
         Item {
             id: wholeTrainArea
-            anchors.bottom: engine.bottom
-            anchors.left: engine.left
+            anchors.bottom: bar.top
+            anchors.left: background.left
             anchors.right: background.right
             anchors.top: repeatItem.bottom
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: 5 * ApplicationInfo.ratio
         }
 
         GridView {
