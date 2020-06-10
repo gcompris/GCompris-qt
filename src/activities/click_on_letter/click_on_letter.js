@@ -101,7 +101,7 @@ function loadLevels()
             levels[i].answers = levels[i].answers.toLocaleLowerCase();
         } else {
             levels[i].questions = levels[i].questions.toLocaleUpperCase();
-            levels[i].answers = levels[i].answers.toLocaleUpperCase();        
+            levels[i].answers = levels[i].answers.toLocaleUpperCase();
         }
     }
 }
