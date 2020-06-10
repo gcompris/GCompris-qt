@@ -36,7 +36,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-        	dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -356,40 +356,22 @@ ActivityBase {
             }
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    height: column.height
-
-                    Column {
-                        id: column
-                        spacing: 10
-                        width: parent.width
-
-                        GCDialogCheckBox {
-                            id: easyModeBox
-                            width: dialogActivityConfig.width
-                            text: qsTr("Display candy counter")
-                            checked: background.easyMode
-                            onCheckedChanged: {
-                                background.easyMode = checked
-                                Activity.reloadRandom()
-                            }
-                        }
-                    }
-                }
-            }
-
-            onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    background.easyMode = (dataToSave["mode"] === "true");
-                }
-            }
-
+            currentActivity: activity.activityInfo
             onSaveData: {
-                dataToSave = { "mode": "" + background.easyMode }
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    background.easyMode = (activityData["mode"] === "true");
+                }
+            }
+            onStartActivity: {
+                background.stop()
+                background.start()
             }
 
             onClose: home()
@@ -403,7 +385,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload | config}
+            content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -411,9 +393,8 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.reloadRandom()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                displayDialog(dialogActivityConfig)
+            onActivityConfigClicked: {
+                 displayDialog(dialogActivityConfig)
             }
         }
 
