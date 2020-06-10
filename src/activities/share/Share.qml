@@ -36,7 +36,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-        	dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -53,7 +53,6 @@ ActivityBase {
             property int nbSubLevel
             property alias listModel: listModel
             property bool acceptCandy: false
-            property alias dataset: dataset
             property alias girlWidget: girlWidget
             property alias boyWidget: boyWidget
             property alias candyWidget: candyWidget
@@ -63,15 +62,11 @@ ActivityBase {
             property int totalGirls
             property int totalCandies
             property int totalChildren: totalBoys + totalGirls
+            property var levels: activity.datasetLoader.data
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.round(Math.min(background.width / 12, background.height / (11 + barHeightAddon)))
             property alias repeaterDropAreas: repeaterDropAreas
             property int maxNumberOfCandiesPerWidget: 8
-        }
-
-        Loader {
-            id: dataset
-            asynchronous: false
         }
 
         onStart: { Activity.start(items) }
@@ -247,9 +242,9 @@ ActivityBase {
         Rectangle {
             id: leftWidget
             width: background.vert ?
-                       items.cellSize * 1.74 : background.width
+                       items.cellSize * 2.04 : background.width
             height: background.vert ?
-                        background.height : items.cellSize * 1.74
+                        background.height : items.cellSize * 2.04
             color: "#5a9de0"
             border.color: "#3f81c4"
             border.width: 4
@@ -287,6 +282,7 @@ ActivityBase {
                     id: girlWidget
                     name: "girl"
                     total: items.totalGirls
+                    visible: items.totalGirls !== 0
                     current: background.currentGirls
                     placedInChild: background.placedInGirls
                 }
@@ -294,6 +290,7 @@ ActivityBase {
                 ChildWidget {
                     id: boyWidget
                     name: "boy"
+                    visible: items.totalBoys !== 0
                     total: items.totalBoys
                     current: background.currentBoys
                     placedInChild: background.placedInBoys
@@ -356,40 +353,22 @@ ActivityBase {
             }
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    height: column.height
-
-                    Column {
-                        id: column
-                        spacing: 10
-                        width: parent.width
-
-                        GCDialogCheckBox {
-                            id: easyModeBox
-                            width: dialogActivityConfig.width
-                            text: qsTr("Display candy counter")
-                            checked: background.easyMode
-                            onCheckedChanged: {
-                                background.easyMode = checked
-                                Activity.reloadRandom()
-                            }
-                        }
-                    }
-                }
-            }
-
-            onLoadData: {
-                if(dataToSave && dataToSave["mode"]) {
-                    background.easyMode = (dataToSave["mode"] === "true");
-                }
-            }
-
+            currentActivity: activity.activityInfo
             onSaveData: {
-                dataToSave = { "mode": "" + background.easyMode }
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    background.easyMode = (activityData["mode"] === "true");
+                }
+            }
+            onStartActivity: {
+                background.stop();
+                background.start()
             }
 
             onClose: home()
@@ -403,7 +382,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload | config}
+            content: BarEnumContent { value: help | home | level | reload | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -411,9 +390,8 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.reloadRandom()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                displayDialog(dialogActivityConfig)
+            onActivityConfigClicked: {
+                 displayDialog(dialogActivityConfig)
             }
         }
 

@@ -20,7 +20,7 @@
 .import QtQuick 2.6 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 10
+var numberOfLevel
 var items
 
 var savedTotalBoys
@@ -29,6 +29,7 @@ var savedTotalCandies
 var savedPlacedInGirls
 var savedPlacedInBoys
 var savedCurrentCandies
+var subLevelData
 
 function start(items_) {
     items = items_
@@ -41,24 +42,21 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    var filename = "resource/board/"+ "board" + currentLevel + ".qml"
-    items.dataset.source = filename
-
     setUp()
 }
 
 function setUp() {
-    var levelData = items.dataset.item
-
+    var levelData = items.levels
+    numberOfLevel = items.levels.length
+    subLevelData = levelData[currentLevel][items.currentSubLevel];
     // use board levels
-    if (currentLevel < 7) {
-        var subLevelData = levelData.levels[items.currentSubLevel];
+    if (!subLevelData["randomisedInputData"]) {
         items.totalBoys = subLevelData.totalBoys
         items.totalGirls = subLevelData.totalGirls
         items.totalCandies = subLevelData.totalCandies
 
         items.instruction.text = subLevelData.instruction
-        items.nbSubLevel = levelData.levels.length
+        items.nbSubLevel = levelData[currentLevel].length
 
         items.background.currentCandies = items.totalGirls * subLevelData.placedInGirls +
                 items.totalBoys * subLevelData.placedInBoys
@@ -76,37 +74,24 @@ function setUp() {
     else {
         // create random (guided) levels
         // get a random number between 1 and max for boys, girls and candies
-        var maxBoys = levelData.levels[0].maxBoys
-        var maxGirls = levelData.levels[0].maxGirls
-        var maxCandies = levelData.levels[0].maxCandies
+        var maxBoys = subLevelData.maxBoys
+        var maxGirls = subLevelData.maxGirls
+        var maxCandies = subLevelData.maxCandies
 
         items.totalBoys = Math.floor(Math.random() * maxBoys) + 1
         items.totalGirls = Math.floor(Math.random() * maxGirls) + 1
         var sum = items.totalBoys + items.totalGirls
-        // use sum * 4 as top margin (max 4 candies per rectangle)
-        items.totalCandies = Math.floor(Math.random() * (4 * sum - sum + 1)) + sum
-
+        // use sum * 6 as top margin (max 6 candies per rectangle)
+        items.totalCandies = Math.floor(Math.random() * (5 * sum + 1)) + sum
+        items.nbSubLevel = levelData[currentLevel].length
         // stay within the max margin
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
 
-        //~ singular Place %n boy
-        //~ plural Place %n boys
-        items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalBoys);
-
-        //~ singular and %n girl in the center.
-        //~ plural and %n girls in the center.
-        items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalGirls);
-        
-        //~ singular Then equally split %n candy between them.
-        //~ plural Then equally split %n candies between them.
-        items.instruction.text += qsTr("Then equally split %n pieces of candy between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalCandies);
-
         items.background.showCount = false
-        items.nbSubLevel = 5
 
         // depending on the levels configuration, add candies from start in a child rectangle
-        if (levelData.levels[0].alreadyPlaced == false) {
+        if (subLevelData.alreadyPlaced === false) {
             items.background.placedInGirls = 0
             items.background.placedInBoys = 0
             items.background.currentCandies = 0
@@ -121,6 +106,18 @@ function setUp() {
                         + items.totalBoys * items.background.placedInBoys
             }
         }
+        //~ singular Place %n boy
+        //~ plural Place %n boys
+        items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalBoys);
+
+        //~ singular and %n girl in the center.
+        //~ plural and %n girls in the center.
+        items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalGirls);
+
+        //~ singular Then equally split %n candy between them.
+        //~ plural Then equally split %n candies between them.
+        items.instruction.text += qsTr("Then equally split %n pieces of candy between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalCandies - items.background.currentCandies);
+
 
         items.background.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
@@ -179,7 +176,7 @@ function loadVariables() {
 }
 
 function reloadRandom() {
-    if (currentLevel < 7) {
+    if (!subLevelData["randomisedInputData"]) {
         initLevel()
     }
     else {
