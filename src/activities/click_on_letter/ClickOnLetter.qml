@@ -22,7 +22,6 @@
  */
 
 import QtQuick 2.6
-import QtGraphicalEffects 1.0
 import GCompris 1.0
 import "../../core"
 import "click_on_letter.js" as Activity
@@ -200,57 +199,36 @@ ActivityBase {
             anchors.bottom: bar.top
             anchors.left: parent.left
             anchors.right: parent.right
-            height: 15 * ApplicationInfo.ratio
-            sourceSize.width: Math.max(parent.width, parent.height)
+            sourceSize.width: width
+            sourceSize.height: height
             anchors.bottomMargin: 13 * ApplicationInfo.ratio
         }
 
-        Item {
+        Rectangle {
             id: questionItem
-            anchors.left: parent.left
-            anchors.top: parent.top
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.topMargin: parent.height * 0.25
-            z: 10
-            width: questionText.width * 2
-            height: questionText.height * 1.3
+            anchors.fill: repeatItem
+            border.color: "#FFFFFF"
+            border.width: 2
+            color: "#2881C3"
+            radius: 10
             visible: false
 
             property alias text: questionText.text
 
-            Rectangle {
-                id: questionRect
-                anchors.fill: parent
-                border.color: "#FFFFFFFF"
-                border.width: 2
-                color: "#000065"
-                opacity: 0.31
-                radius: 10
-            }
-
             GCText {
                 id: questionText
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                opacity: 1.0
+                anchors.centerIn: parent
+                width: repeatItem.width
+                height: repeatItem.height
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
                 z:11
                 text: ""
-                fontSize: 44
+                fontSizeMode: Text.Fit
+                minimumPointSize: 10
+                fontSize: width > 0 ? width : 128
                 font.bold: true
-                style: Text.Outline
-                styleColor: "#2a2a2a"
                 color: "white"
-            }
-
-            DropShadow {
-                anchors.fill: questionText
-                cached: false
-                horizontalOffset: 1
-                verticalOffset: 1
-                radius: 3
-                samples: 16
-                color: "#422a2a2a"
-                source: questionText
             }
         }
 
@@ -258,8 +236,30 @@ ActivityBase {
             id: trainModel
         }
 
-        property int itemWidth: Math.min(parent.width / 7.5, parent.height / 5)
-        property int itemHeight: itemWidth * 1.11
+        //always calculate layout for a maximum of 24 letters per level
+        property int itemWidth: fitItems(wholeTrainArea.width, wholeTrainArea.height, 24)
+
+        function fitItems(x_, y_, n_) {
+            var sx
+            var sy
+
+            //adding +1 to px and py to include one more item (the engine) in the calculation
+            var px = Math.ceil(Math.sqrt(n_ * x_ / y_)) + 1;
+            if (Math.floor(px * y_ / x_) * px < n_) {
+                sx = y_ / Math.ceil(px * y_ / x_);
+            } else {
+                sx = x_ / px;
+            }
+
+            var py = Math.ceil(Math.sqrt(n_ * y_ / x_)) + 1;
+            if (Math.floor(py * x_ / y_) * py < n_) {
+                sy = x_ / Math.ceil(x_ *  py / y_);
+            } else {
+                sy = y_ / py;
+            }
+
+            return Math.max(sx, sy);
+        }
 
         Image {
             id: engine
@@ -269,6 +269,7 @@ ActivityBase {
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.bottomMargin: 5 * ApplicationInfo.ratio
             sourceSize.width: itemWidth
+            sourceSize.height: itemWidth
             fillMode: Image.PreserveAspectFit
         }
 
@@ -279,19 +280,26 @@ ActivityBase {
             anchors.left: railway.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.bottomMargin: 5 * ApplicationInfo.ratio
-            sourceSize.width: itemWidth
+            sourceSize.width: engine.width
             fillMode: Image.PreserveAspectFit
+        }
+
+        Item {
+            id: wholeTrainArea
+            anchors.bottom: engine.bottom
+            anchors.left: engine.left
+            anchors.right: background.right
+            anchors.top: repeatItem.bottom
         }
 
         GridView {
             id: train
-            anchors.bottom: railway.bottom
+            anchors.bottom: engine.bottom
+            anchors.top: wholeTrainArea.top
+            anchors.right: wholeTrainArea.right
             anchors.left: engine.right
-            anchors.right: parent.right
-            anchors.top: parent.top
-            anchors.bottomMargin: 5 * ApplicationInfo.ratio
             cellWidth: itemWidth
-            cellHeight: itemHeight
+            cellHeight: itemWidth
             clip: false
             interactive: false
             verticalLayoutDirection: GridView.BottomToTop
@@ -301,8 +309,8 @@ ActivityBase {
 
             model: trainModel
             delegate: Carriage {
-                width: background.itemWidth
-                nbCarriage: (parent.width - engine.width) / background.itemWidth
+                width: train.cellWidth
+                nbCarriage: train.width / train.cellWidth - 1
                 clickEnabled: activity.audioVoices.playbackState == 1 ? false : true
                 isSelected: train.currentIndex === index
             }

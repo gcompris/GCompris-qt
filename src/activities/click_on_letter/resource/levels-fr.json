@@ -11,5 +11,6 @@
     { "level": 10, "questions": "qrstuvwxyz", "answers": "qrstuvwxyz" },
     { "level": 11, "questions": "bcdfghjklmnpqrstvwxz", "answers": "bcdfghjklmnpqrstvwxz" },
     { "level": 12, "questions": "éèàçù", "answers": "éèàçù" },
-    { "level": 13, "questions": "àâäçéèêëîïôöùûü", "answers": "àâäçéèêëîïôöùûü" }
+    { "level": 13, "questions": "àâäçéèêëîïôöùûü", "answers": "àâäçéèêëîïôöùûü" },
+    { "level": 14, "questions": "abcdefghijklmnopqrstuvwx", "answers": "abcdefghijklmnopqrstuvwx" }
 ]
