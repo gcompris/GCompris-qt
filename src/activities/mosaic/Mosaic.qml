@@ -119,7 +119,7 @@ ActivityBase {
 
             var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
             if (Math.floor(px * y_ / x_) * px < n_) {
-                sx = y / Math.ceil(px * y_ / x_);
+                sx = y_ / Math.ceil(px * y_ / x_);
             } else {
                 sx = x_ / px;
             }
