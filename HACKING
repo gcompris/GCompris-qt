@@ -5,7 +5,7 @@ Official repository
 The official repository requires a KDE developer account, we will ask regular
 contributors to get an account and work on the KDE repository.
 
-    https://cgit.kde.org/gcompris.git
+    https://invent.kde.org/education/gcompris
 
 For new developers and those interested only in smaller contributions use the
 https://phabricator.kde.org/ or GitHub repository.
