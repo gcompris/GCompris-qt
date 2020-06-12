@@ -23,46 +23,5 @@ import QtQuick 2.6
 */
 
 QtObject {
-    property var levels : [
-        {
-            "instruction": qsTr("Alice wants to equally share 3 pieces of candy between 3 of her friends: one girl and two boys. Can you help her? First, place the children in the center, then drag the pieces of candy to each of them."),
-            "totalBoys": 2,
-            "totalGirls": 1,
-            "totalCandies": 3,
-            "showCount": false,
-            "forceShowBasket": false,
-            "placedInGirls": 0,
-            "placedInBoys": 0
-        },
-        {
-            "instruction": qsTr("Now, Alice wants to give 6 pieces of candy to her friends"),
-            "totalBoys": 2,
-            "totalGirls": 1,
-            "totalCandies": 6,
-            "showCount": false,
-            "forceShowBasket": false,
-            "placedInGirls": 0,
-            "placedInBoys": 0
-        },
-        {
-            "instruction": qsTr("Can you help Alice give 9 pieces of candy to her friends: one girl and two boys?"),
-            "totalBoys": 2,
-            "totalGirls": 1,
-            "totalCandies": 9,
-            "showCount": false,
-            "forceShowBasket": false,
-            "placedInGirls": 0,
-            "placedInBoys": 0
-        },
-        {
-            "instruction": qsTr("Alice has 12 pieces of candy left. She wants to give them all to her friends. Can you help her split the pieces of candy equally?"),
-            "totalBoys": 2,
-            "totalGirls": 1,
-            "totalCandies": 12,
-            "showCount": false,
-            "forceShowBasket": false,
-            "placedInGirls": 0,
-            "placedInBoys": 0
-        }
-    ]
+    property var levels :
 }

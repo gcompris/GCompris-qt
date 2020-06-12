@@ -20,7 +20,7 @@
 .import QtQuick 2.6 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 10
+var numberOfLevel
 var items
 
 var savedTotalBoys
@@ -41,24 +41,21 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    var filename = "resource/board/"+ "board" + currentLevel + ".qml"
-    items.dataset.source = filename
-
     setUp()
 }
 
 function setUp() {
-    var levelData = items.dataset.item
-
+    var levelData = items.levels
+    numberOfLevel = items.levels.length
     // use board levels
     if (currentLevel < 7) {
-        var subLevelData = levelData.levels[items.currentSubLevel];
+        var subLevelData = levelData[currentLevel][items.currentSubLevel];
         items.totalBoys = subLevelData.totalBoys
         items.totalGirls = subLevelData.totalGirls
         items.totalCandies = subLevelData.totalCandies
 
         items.instruction.text = subLevelData.instruction
-        items.nbSubLevel = levelData.levels.length
+        items.nbSubLevel = levelData[currentLevel].length
 
         items.background.currentCandies = items.totalGirls * subLevelData.placedInGirls +
                 items.totalBoys * subLevelData.placedInBoys
