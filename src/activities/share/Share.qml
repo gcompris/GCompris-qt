@@ -242,9 +242,9 @@ ActivityBase {
         Rectangle {
             id: leftWidget
             width: background.vert ?
-                       items.cellSize * 1.74 : background.width
+                       items.cellSize * 2.04 : background.width
             height: background.vert ?
-                        background.height : items.cellSize * 1.74
+                        background.height : items.cellSize * 2.04
             color: "#5a9de0"
             border.color: "#3f81c4"
             border.width: 4
