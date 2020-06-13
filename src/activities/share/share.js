@@ -87,18 +87,6 @@ function setUp() {
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
 
-        //~ singular Place %n boy
-        //~ plural Place %n boys
-        items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalBoys);
-
-        //~ singular and %n girl in the center.
-        //~ plural and %n girls in the center.
-        items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalGirls);
-        
-        //~ singular Then equally split %n candy between them.
-        //~ plural Then equally split %n candies between them.
-        items.instruction.text += qsTr("Then equally split %n pieces of candy between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalCandies);
-
         items.background.showCount = false
 
         // depending on the levels configuration, add candies from start in a child rectangle
@@ -117,6 +105,18 @@ function setUp() {
                         + items.totalBoys * items.background.placedInBoys
             }
         }
+        //~ singular Place %n boy
+        //~ plural Place %n boys
+        items.instruction.text = qsTr("Place %n boy(s) ", "First part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalBoys);
+
+        //~ singular and %n girl in the center.
+        //~ plural and %n girls in the center.
+        items.instruction.text += qsTr("and %n girl(s) in the center. ", "Second part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalGirls);
+
+        //~ singular Then equally split %n candy between them.
+        //~ plural Then equally split %n candies between them.
+        items.instruction.text += qsTr("Then equally split %n pieces of candy between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalCandies - items.background.currentCandies);
+
 
         items.background.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
