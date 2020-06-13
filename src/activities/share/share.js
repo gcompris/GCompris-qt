@@ -47,9 +47,9 @@ function initLevel() {
 function setUp() {
     var levelData = items.levels
     numberOfLevel = items.levels.length
+    var subLevelData = levelData[currentLevel][items.currentSubLevel];
     // use board levels
-    if (currentLevel < 7) {
-        var subLevelData = levelData[currentLevel][items.currentSubLevel];
+    if (!subLevelData["randomisedInputData"]) {
         items.totalBoys = subLevelData.totalBoys
         items.totalGirls = subLevelData.totalGirls
         items.totalCandies = subLevelData.totalCandies
@@ -73,16 +73,16 @@ function setUp() {
     else {
         // create random (guided) levels
         // get a random number between 1 and max for boys, girls and candies
-        var maxBoys = levelData.levels[0].maxBoys
-        var maxGirls = levelData.levels[0].maxGirls
-        var maxCandies = levelData.levels[0].maxCandies
+        var maxBoys = subLevelData.maxBoys
+        var maxGirls = subLevelData.maxGirls
+        var maxCandies = subLevelData.maxCandies
 
         items.totalBoys = Math.floor(Math.random() * maxBoys) + 1
         items.totalGirls = Math.floor(Math.random() * maxGirls) + 1
         var sum = items.totalBoys + items.totalGirls
         // use sum * 4 as top margin (max 4 candies per rectangle)
         items.totalCandies = Math.floor(Math.random() * (4 * sum - sum + 1)) + sum
-
+        items.nbSubLevel = levelData[currentLevel].length
         // stay within the max margin
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
@@ -100,10 +100,9 @@ function setUp() {
         items.instruction.text += qsTr("Then equally split %n pieces of candy between them.", "Third part of Place %n boy(s) and %n girl(s) in the center. Then equally split %n pieces of candy between them.", items.totalCandies);
 
         items.background.showCount = false
-        items.nbSubLevel = 5
 
         // depending on the levels configuration, add candies from start in a child rectangle
-        if (levelData.levels[0].alreadyPlaced == false) {
+        if (subLevelData.alreadyPlaced == false) {
             items.background.placedInGirls = 0
             items.background.placedInBoys = 0
             items.background.currentCandies = 0

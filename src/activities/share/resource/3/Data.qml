@@ -21,49 +21,192 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Select a number on dice up to 3")
-    difficulty: 1
+    objective: qsTr("Split a number of candies equally between kids.")
+    difficulty: 5
     data:  [
         [
             {
-                "instruction": qsTr("Paul wants to equally share 2 pieces of candy between 2 of his friends: one girl and one boy. Can you help him? First, place the children in center, then drag the pieces of candy to each of them."),
-                "totalBoys": 1,
-                "totalGirls": 1,
-                "totalCandies": 2,
-                "showCount": true,
-                "forceShowBasket": "false",
-                "placedInGirls": 0,
-                "placedInBoys": 0
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 6,
+                "alreadyPlaced": false
             },
             {
-                "instruction": qsTr("Now he wants to give 4 pieces of candy to his friends."),
-                "totalBoys": 1,
-                "totalGirls": 1,
-                "totalCandies": 4,
-                "showCount": true,
-                "forceShowBasket": false,
-                "placedInGirls": 0,
-                "placedInBoys": 0
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 10,
+                "alreadyPlaced": true
             },
             {
-                "instruction": qsTr("Can you now give 6 of Paul's pieces of candy to his friends?"),
-                "totalBoys": 1,
-                "totalGirls": 1,
-                "totalCandies": 6,
-                "showCount": true,
-                "forceShowBasket": false,
-                "placedInGirls": 0,
-                "placedInBoys": 0
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 12,
+                "alreadyPlaced": false
             },
             {
-                "instruction": qsTr("Paul has only 10 pieces of candy left. He eats 2 pieces of candy and he gives the rest to his friends. Can you help him equally split the 8 remaining pieces of candy?"),
-                "totalBoys": 1,
-                "totalGirls": 1,
-                "totalCandies": 8,
-                "showCount": true,
-                "forceShowBasket": false,
-                "placedInGirls": 0,
-                "placedInBoys": 0
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 16,
+                "alreadyPlaced": true
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 16,
+                "alreadyPlaced": false
+            }
+        ],
+        [
+            {
+                "randomisedInputData": true,
+                "maxBoys": 1,
+                "maxGirls": 3,
+                "maxCandies": 6,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 10,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 14,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 16,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 18,
+                "alreadyPlaced": false
+            }
+        ],
+        [
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 2,
+                "maxCandies": 10,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 3,
+                "maxCandies": 14,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 2,
+                "maxCandies": 16,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 3,
+                "maxCandies": 18,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 20,
+                "alreadyPlaced": false
+            }
+        ],
+        [
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 10,
+                "alreadyPlaced": true
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
+                "maxGirls": 2,
+                "maxCandies": 13,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 16,
+                "alreadyPlaced": true
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 20,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 20,
+                "alreadyPlaced": false
+            }
+        ],
+        [
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 8,
+                "alreadyPlaced": true
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 12,
+                "alreadyPlaced": true
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 16,
+                "alreadyPlaced": true
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 18,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 20,
+                "alreadyPlaced": true
             }
         ]
     ]
