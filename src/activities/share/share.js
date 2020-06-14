@@ -29,6 +29,7 @@ var savedTotalCandies
 var savedPlacedInGirls
 var savedPlacedInBoys
 var savedCurrentCandies
+var subLevelData
 
 function start(items_) {
     items = items_
@@ -47,7 +48,7 @@ function initLevel() {
 function setUp() {
     var levelData = items.levels
     numberOfLevel = items.levels.length
-    var subLevelData = levelData[currentLevel][items.currentSubLevel];
+    subLevelData = levelData[currentLevel][items.currentSubLevel];
     // use board levels
     if (!subLevelData["randomisedInputData"]) {
         items.totalBoys = subLevelData.totalBoys
@@ -175,7 +176,7 @@ function loadVariables() {
 }
 
 function reloadRandom() {
-    if (currentLevel < 7) {
+    if (!subLevelData["randomisedInputData"]) {
         initLevel()
     }
     else {

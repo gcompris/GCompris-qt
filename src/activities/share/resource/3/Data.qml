@@ -27,8 +27,8 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 2,
-                "maxGirls": 2,
+                "maxBoys": 0,
+                "maxGirls": 4,
                 "maxCandies": 6,
                 "alreadyPlaced": false
             },
@@ -64,8 +64,8 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 1,
-                "maxGirls": 3,
+                "maxBoys": 0,
+                "maxGirls": 4,
                 "maxCandies": 6,
                 "alreadyPlaced": false
             },
@@ -101,8 +101,8 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 3,
-                "maxGirls": 2,
+                "maxBoys": 0,
+                "maxGirls": 5,
                 "maxCandies": 10,
                 "alreadyPlaced": false
             },
@@ -138,8 +138,8 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 2,
-                "maxGirls": 2,
+                "maxBoys": 0,
+                "maxGirls": 4,
                 "maxCandies": 10,
                 "alreadyPlaced": true
             },
@@ -175,8 +175,8 @@ Data {
         [
             {
                 "randomisedInputData": true,
-                "maxBoys": 3,
-                "maxGirls": 3,
+                "maxBoys": 0,
+                "maxGirls": 6,
                 "maxCandies": 8,
                 "alreadyPlaced": true
             },

@@ -49,7 +49,7 @@ Item {
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "true";
         }
-           easyModeBox.checked = (dataToSave.mode === "true")
+        easyModeBox.checked = (dataToSave.mode === "true")
     }
 
     function saveValues() {

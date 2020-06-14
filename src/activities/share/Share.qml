@@ -282,6 +282,7 @@ ActivityBase {
                     id: girlWidget
                     name: "girl"
                     total: items.totalGirls
+                    visible: items.totalGirls !== 0
                     current: background.currentGirls
                     placedInChild: background.placedInGirls
                 }
@@ -289,6 +290,7 @@ ActivityBase {
                 ChildWidget {
                     id: boyWidget
                     name: "boy"
+                    visible: items.totalBoys !== 0
                     total: items.totalBoys
                     current: background.currentBoys
                     placedInChild: background.placedInBoys
@@ -365,8 +367,7 @@ ActivityBase {
                 }
             }
             onStartActivity: {
-                background.stop()
-                background.start()
+                Activity.reloadRandom()
             }
 
             onClose: home()
@@ -380,7 +381,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload | activityConfig }
+            content: BarEnumContent { value: help | home | level | reload | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
