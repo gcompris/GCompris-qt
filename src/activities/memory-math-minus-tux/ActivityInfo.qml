@@ -38,4 +38,5 @@ In this game, these cards are hiding the two parts of an operation. You need to 
   credit: ""
   section: "math memory arithmetic"
   createdInVersion: 0
+  levels: "1,2,3,4,5,6,7,8,9,10"
 }

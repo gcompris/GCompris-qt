@@ -18,10 +18,8 @@
 import QtQuick 2.6
 
 import "../memory"
-import "../memory-math-minus/memory-minusdataset.js" as Dataset
 
 MemoryCommon {
-    dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
     withTux: true
 }
