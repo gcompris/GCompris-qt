@@ -33,9 +33,12 @@ ActivityBase {
 
     property string url: "qrc:/gcompris/src/activities/canal_lock/resource/"
 
-    pageComponent: Item {
+    pageComponent: Image {
         id: background
+        source: activity.url + "sky.svg"
         anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
 
         property int running: 0
 
@@ -46,7 +49,7 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        
+
         IntroMessage {
             id: message
             anchors {
@@ -58,7 +61,7 @@ ActivityBase {
                 leftMargin: 5
             }
             z: 100
-            intro: [      
+            intro: [
                 qsTr("Your goal is to get Tux across the canal lock to get the wooden logs, "
                      +"using the different types of water locks available."),
                 qsTr("The vertical colored bars represent the water locks, which can be operated by clicking them. "
@@ -69,14 +72,6 @@ ActivityBase {
         }
 
         onStart: water.state = 'down'
-
-        Image {
-            id: sky
-            source: activity.url + "sky.svg"
-            sourceSize.width: parent.width
-            anchors.top: parent.top
-            height: (background.height - canal.paintedHeight) / 2 + canal.paintedHeight * 0.6
-        }
 
         Image {
             source: activity.url + "sun.svg"
@@ -103,40 +98,58 @@ ActivityBase {
             anchors.topMargin: parent.height * 0.02
         }
 
-        Image {
-            source: activity.url + "ground.svg"
-            sourceSize.width: parent.width
-            anchors.bottom: parent.bottom
-            height: (background.height - canal.paintedHeight) / 2 + canal.paintedHeight * 0.3
+        Rectangle {
+            color: "#805451"
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.top: canal.bottom
+            anchors.topMargin: -boat.leftPositionY
+            anchors.bottom: background.bottom
+        }
+
+        Item {
+            id: canalArea
+            anchors.top: parent.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: bar.top
         }
 
         Image {
             id: canal
             source: activity.url + "canal_lock.svg"
-            anchors.fill: parent
-            sourceSize.width: parent.width
+            anchors.centerIn: canalArea
+            height: canalArea.height
+            width: canalArea.width
+            sourceSize.width: width
+            sourceSize.height: height
             fillMode: Image.PreserveAspectFit
 
             Image {
+                id: canalLeft
                 source: activity.url + "canal_left.svg"
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.left
+                anchors.top: canal.top
+                anchors.left: canal.left
                 width: (background.width - parent.paintedWidth) / 2 + 1
-                sourceSize.height: parent.paintedHeight
+                height: parent.height
+                sourceSize.height: height
+                fillMode: Image.TileHorizontally
             }
 
             Image {
                 source: activity.url + "canal_right.svg"
-                anchors.verticalCenter: parent.verticalCenter
+                anchors.top: canal.top
                 anchors.right: parent.right
-                width: (background.width - parent.paintedWidth) / 2 + 1
-                sourceSize.height: parent.paintedHeight
+                width: canalLeft.width
+                height: parent.height
+                sourceSize.height: height
+                fillMode: Image.TileHorizontally
             }
 
             Rectangle {
                 id: water
                 anchors.bottom: parent.bottom
-                anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
+                anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.23
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.horizontalCenterOffset: parent.paintedWidth * 0.035
@@ -145,7 +158,7 @@ ActivityBase {
                 height: minHeight
                 state: "undef"
 
-                property int maxHeight: parent.paintedHeight * 0.33
+                property int maxHeight: canal.paintedHeight * 0.328
                 property int minHeight: canal.paintedHeight * 0.15
                 property int duration: 3500
 
@@ -180,11 +193,11 @@ ActivityBase {
             Lock {
                 id: lock1
                 color: "#dfb625"
-                anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
+                anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.03
-                anchors.horizontalCenterOffset: - parent.paintedWidth * 0.16
+                anchors.horizontalCenterOffset: - canal.paintedWidth * 0.16
                 minHeight: canal.paintedHeight * 0.05
-                maxHeight: parent.paintedHeight * 0.18
+                maxHeight: canal.paintedHeight * 0.18
                 duration: 0
 
                 MouseArea {
@@ -214,11 +227,11 @@ ActivityBase {
             Lock {
                 id: lock2
                 color: "#dfb625"
-                anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
+                anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.03
-                anchors.horizontalCenterOffset: parent.paintedWidth * 0.22
+                anchors.horizontalCenterOffset: canal.paintedWidth * 0.22
                 minHeight: canal.paintedHeight * 0.05
-                maxHeight: parent.paintedHeight * 0.18
+                maxHeight: canal.paintedHeight * 0.18
                 duration: 0
 
                 MouseArea {
@@ -248,9 +261,9 @@ ActivityBase {
             Lock {
                 id: door1
                 color: "#31cb25"
-                anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
+                anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.2
-                anchors.horizontalCenterOffset: - parent.paintedWidth * 0.07
+                anchors.horizontalCenterOffset: - canal.paintedWidth * 0.07
                 minHeight: canal.paintedHeight * 0.05
                 maxHeight: canal.paintedHeight * 0.4
                 duration: 0
@@ -281,9 +294,9 @@ ActivityBase {
             Lock {
                 id: door2
                 color: "#31cb25"
-                anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
+                anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.2
-                anchors.horizontalCenterOffset: parent.paintedWidth * 0.14
+                anchors.horizontalCenterOffset: canal.paintedWidth * 0.14
                 minHeight: canal.paintedHeight * 0.15
                 maxHeight: canal.paintedHeight * 0.4
                 duration: 0
@@ -314,12 +327,12 @@ ActivityBase {
             Image {
                 id: leftLight
                 source: activity.url + "light_red.svg"
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
+                anchors.bottom: canal.bottom
+                anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.46
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.horizontalCenterOffset: - parent.paintedWidth * 0.18
-                sourceSize.height: parent.paintedHeight * 0.1
+                anchors.horizontalCenter: canal.horizontalCenter
+                anchors.horizontalCenterOffset: - canal.paintedWidth * 0.18
+                sourceSize.height: canal.paintedHeight * 0.1
 
                 states: [
                     State {
@@ -342,12 +355,12 @@ ActivityBase {
             Image {
                 id: rightLight
                 source: activity.url + "light_red.svg"
-                anchors.bottom: parent.bottom
-                anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
+                anchors.bottom: canal.bottom
+                anchors.bottomMargin: (canal.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.60
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.horizontalCenterOffset: parent.paintedWidth * 0.20
-                sourceSize.height: parent.paintedHeight * 0.1
+                anchors.horizontalCenter: canal.horizontalCenter
+                anchors.horizontalCenterOffset: canal.paintedWidth * 0.20
+                sourceSize.height: canal.paintedHeight * 0.1
                 mirror: true
 
                 states: [
@@ -373,13 +386,14 @@ ActivityBase {
                 source: activity.url + "boat1.svg"
                 sourceSize.width: water.width * 0.74
                 anchors {
-                    bottom: parent.bottom
+                    bottom: canal.bottom
                     bottomMargin: leftPositionY
-                    horizontalCenter: parent.horizontalCenter
+                    horizontalCenter: canal.horizontalCenter
                     horizontalCenterOffset: leftPositionX
 
                     onHorizontalCenterOffsetChanged: {
-                        if(boat.anchors.horizontalCenterOffset == boat.rightPositionX) {
+                        if(boat.anchors.horizontalCenterOffset == boat.rightPositionX &&
+                            boat.source == activity.url + "boat1.svg") {
                             boat.source = activity.url + "boat2.svg"
                             bonus.good("flower")
                         } else if(boat.anchors.horizontalCenterOffset == boat.leftPositionX) {
@@ -389,13 +403,13 @@ ActivityBase {
                 }
                 state: 'left'
 
-                property int leftPositionX: - (parent.paintedWidth / 2) * 0.8
-                property int leftPositionY: (background.height - canal.paintedHeight) / 2 +
+                property int leftPositionX: - (canal.paintedWidth / 2) * 0.8
+                property int leftPositionY: (canal.height - canal.paintedHeight) / 2 +
                                             canal.paintedHeight * 0.37
                 property int middlePositionX: canal.paintedWidth * 0.035
-                property int rightPositionX: (parent.paintedWidth / 2) * 0.7
-                property int rightPositionY: (background.height - canal.paintedHeight) / 2 +
-                                            canal.paintedHeight * 0.55 // > 0.5  < 0.6
+                property int rightPositionX: (canal.paintedWidth / 2) * 0.7
+                property int rightPositionY: (canal.height - canal.paintedHeight) / 2 +
+                                            canal.paintedHeight * 0.55
                 property int duration: 0
 
                 Behavior on anchors.horizontalCenterOffset {

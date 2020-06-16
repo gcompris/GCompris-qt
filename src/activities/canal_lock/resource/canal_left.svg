@@ -13,7 +13,7 @@
    height="590.30927"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    version="1.0"
    sodipodi:docname="canal_left.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -31,17 +31,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284272"
-     inkscape:cx="-222.46525"
-     inkscape:cy="172.90504"
+     inkscape:cx="-0.43372593"
+     inkscape:cy="206.76207"
      inkscape:document-units="px"
      inkscape:current-layer="BACKGROUND"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1880"
-     inkscape:window-height="1060"
-     inkscape:window-x="-3"
-     inkscape:window-y="-3"
+     inkscape:window-width="1884"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2015</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -88,15 +88,9 @@
      id="BACKGROUND"
      inkscape:label="BACKGROUND"
      style="display:inline"
-     transform="translate(77.828423,58.93059)">
-    <path
-       style="fill:#4f76d6;fill-opacity:1;stroke:none;display:inline;stroke-width:1.02;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m -79.873753,298.26224 18.046723,-0.61619 -0.01046,102.02075 -18.101376,0 z"
-       id="rect5246"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+     transform="translate(77.828423,58.930595)">
     <g
-       style="stroke:none;display:inline"
+       style="display:inline;stroke:none"
        id="g8068"
        transform="matrix(1.0047582,0,0,1.0047582,8.296667,40.54157)" />
     <g
@@ -107,9 +101,15 @@
          id="g8511" />
     </g>
     <path
-       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:1.02;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m -62.153306,293.60694 -17.488109,0 0,13.78447 17.488109,0 z"
-       id="rect5241"
+       style="display:inline;fill:#4f76d6;fill-opacity:1;stroke:none;stroke-width:1.01999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -79.873753,298.26224 18.046723,-0.61619 -0.01046,101.44362 h -18.101376 z"
+       id="rect5246-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       style="display:inline;fill:#999999;fill-opacity:1;stroke:none;stroke-width:1.01999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -62.153306,293.99967 h -17.488109 v 12.999 h 17.488109 z"
+       id="rect5241-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
   </g>
@@ -118,5 +118,5 @@
      id="FRONT"
      style="display:inline"
      inkscape:label="FRONT"
-     transform="translate(77.828423,58.93059)" />
+     transform="translate(77.828423,58.930595)" />
 </svg>

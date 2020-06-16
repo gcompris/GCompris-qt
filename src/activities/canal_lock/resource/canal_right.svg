@@ -13,7 +13,7 @@
    height="590.30927"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    version="1.0"
    sodipodi:docname="canal_right.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -30,18 +30,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.0000001"
-     inkscape:cx="-30.361444"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="-86.861443"
      inkscape:cy="246.46782"
      inkscape:document-units="px"
      inkscape:current-layer="BACKGROUND"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1880"
-     inkscape:window-height="1060"
-     inkscape:window-x="-3"
-     inkscape:window-y="-3"
+     inkscape:window-width="1884"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -56,7 +56,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2015</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -90,26 +90,15 @@
      style="display:inline"
      transform="translate(77.828423,58.93059)">
     <path
-       style="fill:#4f76d6;fill-opacity:1;stroke:none;stroke-width:1.0200001;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m -79.873753,202.00045 18.046723,-1.20113 -0.01046,198.86745 -18.101376,0 z"
-       id="rect5246"
+       style="display:inline;fill:#4f76d6;fill-opacity:1;stroke:none;stroke-width:1.0200001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -79.87375,202.00045 18.04672,-1.20113 -0.0105,198.29036 h -18.10138 z"
+       id="rect5246-7"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
-    <g
-       style="stroke:none;display:inline"
-       id="g8068"
-       transform="matrix(1.0047582,0,0,1.0047582,8.296667,40.54157)" />
-    <g
-       transform="translate(87.780878,94.819668)"
-       id="g8509">
-      <g
-         transform="translate(-9.5,-16)"
-         id="g8511" />
-    </g>
     <path
-       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:1.01999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       d="m -62.153306,189.60694 -17.488109,0 0,13.78447 17.488109,0 z"
-       id="rect5241"
+       style="display:inline;fill:#999999;fill-opacity:1;stroke:none;stroke-width:1.01999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m -62.15331,189.50068 h -17.4881 v 13 h 17.4881 z"
+       id="rect5241-6"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
   </g>
