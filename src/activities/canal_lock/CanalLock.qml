@@ -432,13 +432,13 @@ ActivityBase {
                             return
                         boat.duration = water.duration
                         var prevState = boat.state
-                        if(boat.state == "left" && door1.state == "open")
+                        if(boat.state == "left" && door1.opened)
                             boat.state = "middleDown"
-                        else if(boat.state == "middleUp" && door2.state == "open")
+                        else if(boat.state == "middleUp" && door2.opened)
                             boat.state = "right"
-                        else if(boat.state == "right" && door2.state == "open")
+                        else if(boat.state == "right" && door2.opened)
                             boat.state = "middleUp"
-                        else if(boat.state == "middleDown" && door1.state == "open")
+                        else if(boat.state == "middleDown" && door1.opened)
                             boat.state = "left"
 
                         if(prevState !== boat.state)

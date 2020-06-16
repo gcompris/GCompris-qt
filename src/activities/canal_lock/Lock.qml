@@ -36,6 +36,7 @@ Rectangle {
     property int minHeight
     property int maxHeight
     property int duration
+    property bool opened: height == minHeight
 
     Behavior on height { NumberAnimation { duration: lock.duration } }
 
