@@ -31,7 +31,6 @@
   <name xml:lang="sk">GCompris</name>
   <name xml:lang="sv">GCompris</name>
   <name xml:lang="uk">GCompris</name>
-  <name xml:lang="x-test">xxGComprisxx</name>
   <name xml:lang="zh-TW">GCompris</name>
   <summary>Multi-Activity Educational game for children 2 to 10</summary>
   <summary xml:lang="ar">لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى ١٠ سنوات</summary>
@@ -67,7 +66,6 @@
   <summary xml:lang="sv">Pedagogiskt multiaktivitetsspel för barn från 2 till 10 år</summary>
   <summary xml:lang="tr">2 ile 10 yaş arasındaki çocuklar için çok Etkinlikli oyun</summary>
   <summary xml:lang="uk">Набір освітніх ігор для дітей від 2 до 10 років</summary>
-  <summary xml:lang="x-test">xxMulti-Activity Educational game for children 2 to 10xx</summary>
   <summary xml:lang="zh-CN">为 2 到 10 岁儿童准备的多功能教育游戏</summary>
   <summary xml:lang="zh-TW">為 2-10 歲孩子設計的教育遊戲</summary>
   <description>
@@ -105,7 +103,6 @@
     <p xml:lang="sv">GCompris är en högkvalitativ pedagogisk programvarusvit som innehåller ett stort antal aktiviteter för barn mellan 2 och 10 år.</p>
     <p xml:lang="tr">GCompris, 2 ile 10 yaş arasındaki çocuklar için çok sayıda etkinlik içeren bir eğitim yazılımı paketidir.</p>
     <p xml:lang="uk">GCompris — високоякісний комплекс навчального програмного забезпечення, що складається з багатьох вправ для дітей від 2 до 10 років.</p>
-    <p xml:lang="x-test">xxGCompris is a high quality educational software suite, including a large number of activities for children aged 2 to 10.xx</p>
     <p xml:lang="zh-TW">GCompris 是一套教育軟體的集合，它提供適合兩歲到十歲兒童各種不同的遊戲。</p>
     <p>Some of the activities are game orientated, but nonetheless
     still educational.</p>
@@ -142,7 +139,6 @@
     <p xml:lang="sv">Vissa av aktiviteterna är spelorienterade, men trots det ändå pedagogiska.</p>
     <p xml:lang="tr">Bazı etkinlikler oyun odaklıdır, ancak yine de eğiticidir.</p>
     <p xml:lang="uk">Деякі із вправ є суто ігровими, але містять і елементи навчання.</p>
-    <p xml:lang="x-test">xxSome of the activities are game orientated, but nonetheless still educational.xx</p>
     <p xml:lang="zh-CN">一些活动是游戏导向的，不过尽管如此仍是教育性的。</p>
     <p xml:lang="zh-TW">有些活動是遊戲性質，但還是有很棒的教育意義。</p>
     <p>Below you can find a list of categories with some of the
@@ -179,7 +175,6 @@
     <p xml:lang="sv">Nedan finns en lista över kategorier med några av aktiviteterna tillgängliga i varje kategori.</p>
     <p xml:lang="tr">Aşağıda, bazı etkinliklerin bulunduğu kategorilerin bir listesini bulabilirsiniz.</p>
     <p xml:lang="uk">Нижче наведено список категорій із деякими вправами у цих категоріях.</p>
-    <p xml:lang="x-test">xxBelow you can find a list of categories with some of the activities available in that category.xx</p>
     <p xml:lang="zh-CN">下面列出了一些分类和对应分类中的活动。</p>
     <p xml:lang="zh-TW">下方您可以看到該類別的遊戲清單。</p>
     <ul>
@@ -217,7 +212,6 @@
       <li xml:lang="sv">upptäcka datorn: tangentbord, mus, olika musgester, ...</li>
       <li xml:lang="tr">bilgisayarı keşfetme: klavye, fare, farklı fare hareketleri, ...</li>
       <li xml:lang="uk">Знайомство з комп’ютером: клавіатура, миша, керування мишею…</li>
-      <li xml:lang="x-test">xxcomputer discovery: keyboard, mouse, different mouse gestures, ...xx</li>
       <li xml:lang="zh-CN">探索电脑：键盘、鼠标、不同的鼠标手势……</li>
       <li xml:lang="zh-TW">電腦探索：鍵盤、滑鼠、不同的滑鼠手勢等</li>
       <li>arithmetic: table memory, enumeration, mirror image, balance
@@ -254,7 +248,6 @@
       <li xml:lang="sv">aritmetik: tabellminne, uppräkning, spegelbild, balansera vågen, ge växel, ...</li>
       <li xml:lang="tr">aritmetik: tablo belleği, numaralandırma, ayna görüntüsü, ölçeği dengelemek, para üstü, ...</li>
       <li xml:lang="uk">Арифметика: запам’ятовування таблиць, нумерація, віддзеркалення, балансування масштабу, обчислення решти…</li>
-      <li xml:lang="x-test">xxarithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...xx</li>
       <li xml:lang="zh-CN">算数：表格记忆、枚举、镜像、天平、找零……</li>
       <li xml:lang="zh-TW">數學運算：表格記憶、列舉、影像映射、平衡、找零計算等</li>
       <li>science: the canal lock, color mixing, gravity concept, ...</li>
@@ -291,7 +284,6 @@
       <li xml:lang="sv">vetenskap: kanalslussen, färgblandning, gravitationskonceptet, ...</li>
       <li xml:lang="tr">bilim: kanal kilidi, renk karışımı, yerçekimi kavramı, ...</li>
       <li xml:lang="uk">Наука: шлюзування, змішування кольорів, поняття тяжіння…</li>
-      <li xml:lang="x-test">xxscience: the canal lock, color mixing, gravity concept, ...xx</li>
       <li xml:lang="zh-CN">科学：运河闸门、颜料色彩混合、重力的概念……</li>
       <li xml:lang="zh-TW">科學：顏色混合、重力觀念、運河鎖等等</li>
       <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
@@ -327,7 +319,6 @@
       <li xml:lang="sv">spel: memory, koppla 4, tre-i-rad, sudoku, tornen i Hanoi, ...</li>
       <li xml:lang="tr">oyunlar: hafıza, dörtleme, üç taş, sudoku, hanoi kulesi, ...</li>
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
-      <li xml:lang="x-test">xxgames: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...xx</li>
       <li xml:lang="zh-CN">游戏：记忆、四子棋、井子棋、数独、汉诺塔……</li>
       <li xml:lang="zh-TW">遊戲：記憶遊戲、四子棋、井字遊戲、數獨、河內塔等等</li>
       <li>reading: reading practice, ...</li>
@@ -364,7 +355,6 @@
       <li xml:lang="sv">läsning: läsningsövning, ...</li>
       <li xml:lang="tr">okuma: okuma egzersizi, ...</li>
       <li xml:lang="uk">Читання: вправи із читання…</li>
-      <li xml:lang="x-test">xxreading: reading practice, ...xx</li>
       <li xml:lang="zh-CN">阅读：阅读练习……</li>
       <li xml:lang="zh-TW">閱讀：閱讀練習等等</li>
       <li>other: learn to tell time, the braille system, maze, music
@@ -401,7 +391,6 @@
       <li xml:lang="sv">annat: lära sig klockan, punktskrift, labyrint, musikinstrument, ...</li>
       <li xml:lang="tr">diğer: saati söylemeyi öğrenme, braille sistemi, labirent, müzik, enstrümanlar, ...</li>
       <li xml:lang="uk">Інше: навчання позначенням часу, система Брайля, лабіринти, музичні інструменти…</li>
-      <li xml:lang="x-test">xxother: learn to tell time, the braille system, maze, music instruments, ...xx</li>
       <li xml:lang="zh-CN">其他：学认钟表、盲文系统、迷宫、乐器……</li>
       <li xml:lang="zh-TW">其他：看時間、點字系統、迷宮、認識樂器等等</li>
     </ul>
@@ -442,7 +431,6 @@
     <p xml:lang="sv">För närvarande erbjuder GCompris över 100 aktiviteter och ännu fler håller på att utvecklas. GCompris är fri programvara, vilket betyder att man kan anpassa det till sina egna behov, och viktigast av allt, dela det med barn överallt.</p>
     <p xml:lang="tr">Şu anda GCompris 100'den fazla etkinlik sunuyor ve daha fazlasını geliştiriliyor. GCompris bir özgür yazılımdır; bu, onu kendi ihtiyaçlarınıza uyarlayabilir, geliştirebilir ve en önemlisi, her yerde çocuklarla paylaşabileceğiniz anlamına gelir.</p>
     <p xml:lang="uk">У поточній версії GCompris понад 100 вправ. Розробники постійно працюють над новими вправами. GCompris є вільним програмним забезпеченням, це означає, що ви можете адаптувати програму до власних потреб, покращувати її і, що найважливіше, ділитися вашими творіннями із усіма дітьми.</p>
-    <p xml:lang="x-test">xxCurrently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.xx</p>
     <p xml:lang="zh-CN">当前 GCompris 提供超过100个活动，还有更多的正在开发中。GCompris 是自由软件，这意味着您可以根据您的需要进行调整、改进，以及最重要的一点，和世界各地的孩子们分享。</p>
     <p xml:lang="zh-TW">目前 GCompris 提供超過 100 個遊戲，還有更多正在開發中。GCompris 是一套自由軟體，表示您可以根據您自己的需求來改進，並分享給所有的孩子們。</p>
   </description>
@@ -479,7 +467,6 @@
       <caption xml:lang="sk">Hlavná ponuka GCompris</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
-      <caption xml:lang="x-test">xxGCompris main menuxx</caption>
       <caption xml:lang="zh-TW">GCompris 主畫面</caption>
       <image width="1920" height="1080">https://cdn.kde.org/screenshots/gcompris/gcompris.png</image>
     </screenshot>
@@ -512,7 +499,6 @@
       <caption xml:lang="sk">Aktivita "Kliknúť na veľké písmeno"</caption>
       <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
-      <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
       <caption xml:lang="zh-TW">「在大寫字母上按一下」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/click_on_letter_up.png</image>
     </screenshot>
@@ -545,7 +531,6 @@
       <caption xml:lang="sk">Aktivita "Učenie hodín"</caption>
       <caption xml:lang="sv">Aktiviteten "Lära sig klockan"</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
-      <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
       <caption xml:lang="zh-TW">「學習時鐘」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/clockgame.png</image>
     </screenshot>
@@ -578,7 +563,6 @@
       <caption xml:lang="sk">Aktivita "Miešanie farieb maľby"</caption>
       <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
-      <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
       <caption xml:lang="zh-TW">「混合顏色」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/color_mix.png</image>
     </screenshot>
@@ -611,7 +595,6 @@
       <caption xml:lang="sk">Aktivita "Farby"</caption>
       <caption xml:lang="sv">Aktiviteten "Färger"</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
-      <caption xml:lang="x-test">xx"Colors" activityxx</caption>
       <caption xml:lang="zh-TW">「顏色」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/colors.png</image>
     </screenshot>
@@ -644,7 +627,6 @@
       <caption xml:lang="sk">Aktivita "Postaviť rovnaký model"</caption>
       <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
-      <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
       <caption xml:lang="zh-TW">「建立相同的模型」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/crane.png</image>
     </screenshot>
@@ -677,7 +659,6 @@
       <caption xml:lang="sk">Aktivita "Počítať položky"</caption>
       <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
-      <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
       <caption xml:lang="zh-TW">「數一數物品」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/enumerate.png</image>
     </screenshot>
@@ -709,7 +690,6 @@
       <caption xml:lang="sk">Aktivita "Hra pätnásť"</caption>
       <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
-      <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
       <caption xml:lang="zh-TW">「遊戲十五」</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/fifteen.png</image>
     </screenshot>
@@ -741,7 +721,6 @@
       <caption xml:lang="sk">Aktivita "Hexagón"</caption>
       <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
-      <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
       <caption xml:lang="zh-TW">「六角形」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/hexagon.png</image>
     </screenshot>
@@ -774,7 +753,6 @@
       <caption xml:lang="sk">Aktivita "Vyvážiť správne váhy"</caption>
       <caption xml:lang="sv">Aktiviteten "Balansera vågen rätt"</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
-      <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
       <caption xml:lang="zh-TW">「讓天平平衡」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/scalesboard.png</image>
     </screenshot>
@@ -807,7 +785,6 @@
       <caption xml:lang="sk">Aktivita "Koniec šachovej hry"</caption>
       <caption xml:lang="sv">Aktiviteten "Slutspel i schack"</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
-      <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
       <caption xml:lang="zh-TW">「西洋棋殘局」遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/chess_partyend.png</image>
     </screenshot>
@@ -839,7 +816,6 @@
       <caption xml:lang="sk">Aktivita "Posuvné puzzle"</caption>
       <caption xml:lang="sv">Aktiviteten "Pusselspel med glidande block"</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
-      <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
       <caption xml:lang="zh-TW">「滑動方塊」解謎遊戲</caption>
       <image width="1600" height="1040">https://gcompris.net/screenshots_qt/large/traffic.png</image>
     </screenshot>
