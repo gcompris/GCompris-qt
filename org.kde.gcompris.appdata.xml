@@ -29,6 +29,7 @@
   <name xml:lang="ro">GCompris</name>
   <name xml:lang="ru">GCompris</name>
   <name xml:lang="sk">GCompris</name>
+  <name xml:lang="sl">GCompris</name>
   <name xml:lang="sv">GCompris</name>
   <name xml:lang="uk">GCompris</name>
   <name xml:lang="x-test">xxGComprisxx</name>
@@ -438,7 +439,7 @@
     <p xml:lang="ro">Momentan GCompris oferă peste 100 de activități și multe altele sunt în lucru. GCompris este software liber, ceea ce înseamnă că poate fi adaptat nevoilor dumneavoastră, îmbunătățit, dar mai ales, partajat cu copii de pretutindeni.</p>
     <p xml:lang="ru">В настоящее время GCompris содержит более 100 упражнений, и новые находятся в  разработке. GCompris — свободное ПО, и это значит, что вы можете приспособить его для своих нужд, улучшить, а самое главное — поделиться им с детьми во всём мире.</p>
     <p xml:lang="sk">Aktuálne GCompris ponúka vyše 100 aktivít a ďalšie sa vyvíjajú. GCompris je slobodný softvér, čo znamená, že si ho môžete prispôsobiť na vlastné potreby, zlepšiť, a hlavne zdieľať s deťmi všade.</p>
-    <p xml:lang="sl">GCompris trenutno ponuja več kot 100 dejavnosti, še več pa jih je v razvoju. GCompris je prosta programska oprema, kar pomeni, da jo lahko prilagodite po svoje, še pomembneje pa je, da jo lahko delite z otroki širom sveta.</p>
+    <p xml:lang="sl">GCompris trenutno ponuja več kot 100 dejavnosti, še več pa jih je v razvoju. GCompris je prosta programska oprema, kar pomeni, da jo lahko prilagodite po svoje, še pomembneje pa je, da jo lahko delite z otroki po vsem svetu.</p>
     <p xml:lang="sv">För närvarande erbjuder GCompris över 100 aktiviteter och ännu fler håller på att utvecklas. GCompris är fri programvara, vilket betyder att man kan anpassa det till sina egna behov, och viktigast av allt, dela det med barn överallt.</p>
     <p xml:lang="tr">Şu anda GCompris 100'den fazla etkinlik sunuyor ve daha fazlasını geliştiriliyor. GCompris bir özgür yazılımdır; bu, onu kendi ihtiyaçlarınıza uyarlayabilir, geliştirebilir ve en önemlisi, her yerde çocuklarla paylaşabileceğiniz anlamına gelir.</p>
     <p xml:lang="uk">У поточній версії GCompris понад 100 вправ. Розробники постійно працюють над новими вправами. GCompris є вільним програмним забезпеченням, це означає, що ви можете адаптувати програму до власних потреб, покращувати її і, що найважливіше, ділитися вашими творіннями із усіма дітьми.</p>
@@ -477,6 +478,7 @@
       <caption xml:lang="ro">Meniul principal GCompris</caption>
       <caption xml:lang="ru">Главное меню GCompris</caption>
       <caption xml:lang="sk">Hlavná ponuka GCompris</caption>
+      <caption xml:lang="sl">GCompris glavni meni</caption>
       <caption xml:lang="sv">GCompris-huvudmeny</caption>
       <caption xml:lang="uk">Головне меню GCompris</caption>
       <caption xml:lang="x-test">xxGCompris main menuxx</caption>
@@ -510,6 +512,7 @@
       <caption xml:lang="pt-BR">Atividade "Clique em uma letra maiúscula"</caption>
       <caption xml:lang="ro">Activitatea "Clic pe o literă mare"</caption>
       <caption xml:lang="sk">Aktivita "Kliknúť na veľké písmeno"</caption>
+      <caption xml:lang="sl">Dejavnost "Kliknite na veliko črko"</caption>
       <caption xml:lang="sv">Aktiviteten "Klicka på en stor bokstav"</caption>
       <caption xml:lang="uk">Вправа «Клацніть на великій літері»</caption>
       <caption xml:lang="x-test">xx"Click on an uppercase letter" activityxx</caption>
@@ -543,6 +546,7 @@
       <caption xml:lang="pt-BR">Atividade "O Relógio"</caption>
       <caption xml:lang="ro">Activitatea de "Învățarea ceasului clasic"</caption>
       <caption xml:lang="sk">Aktivita "Učenie hodín"</caption>
+      <caption xml:lang="sl">Dejavnost "Učimo se poznati na uro"</caption>
       <caption xml:lang="sv">Aktiviteten "Lära sig klockan"</caption>
       <caption xml:lang="uk">Вправа «Вивчення годинника»</caption>
       <caption xml:lang="x-test">xx"Learning Clock" activityxx</caption>
@@ -576,6 +580,7 @@
       <caption xml:lang="pt-BR">Atividade "Mistura de tintas coloridas"</caption>
       <caption xml:lang="ro">Activitatea "Amestecul culorilor din vopsea"</caption>
       <caption xml:lang="sk">Aktivita "Miešanie farieb maľby"</caption>
+      <caption xml:lang="sl">Dejavnost "Mešanje barv"</caption>
       <caption xml:lang="sv">Aktiviteten "Blanda målarfärger"</caption>
       <caption xml:lang="uk">Вправа «Змішування кольорів малюнка»</caption>
       <caption xml:lang="x-test">xx"Mixing color of paint" activityxx</caption>
@@ -609,6 +614,7 @@
       <caption xml:lang="pt-BR">Atividade "Cores"</caption>
       <caption xml:lang="ro">Activitatea "Culorile"</caption>
       <caption xml:lang="sk">Aktivita "Farby"</caption>
+      <caption xml:lang="sl">Dejavnost "Barve"</caption>
       <caption xml:lang="sv">Aktiviteten "Färger"</caption>
       <caption xml:lang="uk">Вправа з кольорами</caption>
       <caption xml:lang="x-test">xx"Colors" activityxx</caption>
@@ -642,6 +648,7 @@
       <caption xml:lang="pt-BR">Atividade "Construa o mesmo modelo"</caption>
       <caption xml:lang="ro">Activitatea "Construiește același model"</caption>
       <caption xml:lang="sk">Aktivita "Postaviť rovnaký model"</caption>
+      <caption xml:lang="sl">Dejavnost "Izgradi enak model"</caption>
       <caption xml:lang="sv">Aktiviteten "Bygg samma modell"</caption>
       <caption xml:lang="uk">Вправа «Відтворіть модель»</caption>
       <caption xml:lang="x-test">xx"Build the same model" activityxx</caption>
@@ -675,6 +682,7 @@
       <caption xml:lang="pt-BR">Atividade "Contagem de itens"</caption>
       <caption xml:lang="ro">Activitatea "Numără elementele"</caption>
       <caption xml:lang="sk">Aktivita "Počítať položky"</caption>
+      <caption xml:lang="sl">Dejavnost "Preštej predmete"</caption>
       <caption xml:lang="sv">Aktiviteten "Räkna sakerna"</caption>
       <caption xml:lang="uk">Вправа «Порахувати предмети»</caption>
       <caption xml:lang="x-test">xx"Count the items" activityxx</caption>
@@ -707,6 +715,7 @@
       <caption xml:lang="pt-BR">Atividade "O jogo do quinze"</caption>
       <caption xml:lang="ro">Activitatea "Jocul de cincisprezece"</caption>
       <caption xml:lang="sk">Aktivita "Hra pätnásť"</caption>
+      <caption xml:lang="sl">Dejavnost "Igra petnajst"</caption>
       <caption xml:lang="sv">Aktiviteten "Femtonspel"</caption>
       <caption xml:lang="uk">Вправа «Гра „П'ятнадцять“»</caption>
       <caption xml:lang="x-test">xx"The fifteen game" activityxx</caption>
@@ -739,6 +748,7 @@
       <caption xml:lang="pt-BR">Atividade "Hexágono"</caption>
       <caption xml:lang="ro">Activitatea "Hexagonul"</caption>
       <caption xml:lang="sk">Aktivita "Hexagón"</caption>
+      <caption xml:lang="sl">Dejavnost "Šesterokotnik"</caption>
       <caption xml:lang="sv">Aktiviteten "Hexagon"</caption>
       <caption xml:lang="uk">Вправа «Шестикутник»</caption>
       <caption xml:lang="x-test">xx"Hexagon" activityxx</caption>
@@ -772,6 +782,7 @@
       <caption xml:lang="pt-BR">Atividade "Equilibre a balança"</caption>
       <caption xml:lang="ro">Activitatea "Echilibrează balanța"</caption>
       <caption xml:lang="sk">Aktivita "Vyvážiť správne váhy"</caption>
+      <caption xml:lang="sl">Dejavnost "Pravilno uravnoteži tehtnice"</caption>
       <caption xml:lang="sv">Aktiviteten "Balansera vågen rätt"</caption>
       <caption xml:lang="uk">Вправа «Рівновага на вагах»</caption>
       <caption xml:lang="x-test">xx"Balance the scales properly" activityxx</caption>
@@ -805,6 +816,7 @@
       <caption xml:lang="pt-BR">Atividade "Finalize o jogo de xadrez"</caption>
       <caption xml:lang="ro">Activitatea "Sfârșitul jocului de șah"</caption>
       <caption xml:lang="sk">Aktivita "Koniec šachovej hry"</caption>
+      <caption xml:lang="sl">Dejavnost "Šahovska končnica"</caption>
       <caption xml:lang="sv">Aktiviteten "Slutspel i schack"</caption>
       <caption xml:lang="uk">Вправа «Завершення гри у шахи»</caption>
       <caption xml:lang="x-test">xx"End of chess game" activityxx</caption>
@@ -837,6 +849,7 @@
       <caption xml:lang="pt-BR">Atividade "Quebra-cabeça com peças deslizantes"</caption>
       <caption xml:lang="ro">Activitatea "Un joc de puzzle cu blocuri glisante"</caption>
       <caption xml:lang="sk">Aktivita "Posuvné puzzle"</caption>
+      <caption xml:lang="sl">Dejavnost "Sestavljanke drsečih blokov"</caption>
       <caption xml:lang="sv">Aktiviteten "Pusselspel med glidande block"</caption>
       <caption xml:lang="uk">Вправа «Головоломка з пересувними блоками»</caption>
       <caption xml:lang="x-test">xx"A sliding-block puzzle game" activityxx</caption>
