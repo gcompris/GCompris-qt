@@ -131,7 +131,10 @@ var nby
 var currentLevel = 0
 var numberOfLevel = backgrounds.length
 
-function start(main_, items_) {
+var background
+
+function start(main_, items_, _background) {
+    background=_background
     main = main_
     items = items_
     currentLevel = 0
@@ -146,6 +149,7 @@ function initLevel() {
     items.paintModel.clear()
     nbx = 20 + currentLevel
     nby = Math.floor(nbx * (main.height / main.width))
+    background.refreshCursor()
 
     var model = []
     for(var ix = 0;  ix < nbx; ++ix) {

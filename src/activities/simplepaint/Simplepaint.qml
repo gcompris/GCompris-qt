@@ -39,22 +39,127 @@ ActivityBase {
         signal start
         signal stop
         focus: true
+        property bool isColorTab: false
+
+        Keys.onUpPressed: {
+            if(isColorTab) {
+                if (--items.current_color<0) {
+                    items.current_color = items.colors.length-1
+                }
+                items.colorSelector = items.colors[items.current_color]
+                moveColorSelector()
+            }else {
+                if(cursor.iy>0) {
+                cursor.iy--
+                }
+            }
+        }
+
+        Keys.onDownPressed: {
+            if(isColorTab) {
+                if (++items.current_color>items.colors.length-1){
+                    items.current_color = 0
+                }
+                items.colorSelector = items.colors[items.current_color]
+                moveColorSelector()
+        }else {
+                if(cursor.iy<(Activity.nby-1)) {
+                cursor.iy++
+                }
+            }
+        }
+
+        Keys.onRightPressed: {
+            if(!isColorTab) {
+                if(cursor.ix<(Activity.nbx-1)) {
+                cursor.ix++
+                }
+            }
+        }
+
+        Keys.onLeftPressed: {
+            if(!isColorTab) {
+                if(cursor.ix>0) {
+                cursor.ix--
+                }
+            }
+        }
+
+        Keys.onSpacePressed: spawnBlock()
+
+        Keys.onReturnPressed: spawnBlock()
+
+        Keys.onEnterPressed: spawnBlock()
+
+        Keys.onTabPressed:changeTab()
+
+        function changeTab() {
+            isColorTab = !isColorTab
+            if(isColorTab) {
+                 colorSelector.cellWidth = 60 * ApplicationInfo.ratio+20
+            }else {
+                colorSelector.cellWidth = 60 * ApplicationInfo.ratio
+            }
+        }
+
+        function spawnBlock() {
+            if(!isColorTab) {
+                var block = rootItem.childAt(cursor.x, cursor.y)
+                if(block)
+                    block.touched()
+            }else {
+                changeTab()
+            }
+        }
+
+        function refreshCursor() {
+            cursor.nbx= Activity.nbx
+            cursor.nby=Activity.nby
+        }
+
+        function moveColorSelector() {
+            moveColorSelectorAnim.running = false
+            moveColorSelectorAnim.from = colorSelector.contentY
+            if(items.current_color != (items.colors.length-1)) {
+                colorSelector.positionViewAtIndex(items.current_color >= 1 ? items.current_color-2 : items.current_color, colorSelector.Contain)
+            }else {
+                colorSelector.positionViewAtEnd()
+                colorSelector.positionViewAtEnd()
+            }
+            moveColorSelectorAnim.to = colorSelector.contentY
+            moveColorSelectorAnim.running = true
+        }
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+
+        //Cursor to navigate in cells
+        PaintCursor {
+            id:cursor;
+            initialX: colorSelector.width + 20 * ApplicationInfo.ratio
+            z:1
+            ix: 0
+            iy: 0
+            nbx: 20
+            nby: 10
+            color: items.colors[0]
+        }
+
+
         QtObject {
             id: items
             property alias background: background
             property alias bar: bar
             property alias paintModel: paintModel
             property var colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
-            property string colorSelector: colors[0]
+            property int current_color:0
+            property string colorSelector: colors[current_color]
             property string backgroundImg: Activity.backgrounds[bar.level - 1]
         }
 
-        onStart: Activity.start(main, items)
+        onStart: Activity.start(main, items, background)
         onStop: Activity.stop()
 
         MultiPointTouchArea {
@@ -68,6 +173,8 @@ ActivityBase {
                 var touch = touchPoints[i]
                 var block = rootItem.childAt(touch.x, touch.y)
                 if(block)
+                    cursor.ix = block.ix
+                    cursor.iy = block.iy
                     block.touched()
             }
         }
@@ -100,6 +207,14 @@ ActivityBase {
                 model: items.colors
                 cellWidth: 60 * ApplicationInfo.ratio
                 cellHeight: cellWidth
+
+                NumberAnimation {
+                    id: moveColorSelectorAnim
+                    target: colorSelector
+                    property: "contentY"
+                    duration: 150
+                }
+
                 delegate: Item {
                     width: colorSelector.cellWidth
                     height: width
@@ -197,6 +312,8 @@ ActivityBase {
                             onClicked: {
                                 activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                                 items.colorSelector = modelData
+                                items.current_color=items.colors.indexOf(modelData)
+                                items.colorSelector=items.colors[items.current_color]
                             }
                         }
                     }
