@@ -147,6 +147,9 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.paintModel.clear()
+    items.current_color = 1
+    items.selectedColor = items.colors[1]
+    items.colorSelector.positionViewAtBeginning()
     nbx = 20 + currentLevel
     nby = Math.floor(nbx * (main.height / main.width))
     background.refreshCursor()
@@ -176,5 +179,5 @@ function previousLevel() {
 }
 
 function getColor() {
-    return items.colorSelector
+    return items.selectedColor
 }

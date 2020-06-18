@@ -39,112 +39,134 @@ ActivityBase {
         signal start
         signal stop
         focus: true
-        property bool isColorTab: false
+        property bool isColorTab: true
+        property bool spaceIsPressed: false
 
-        Keys.onUpPressed: {
-            if(isColorTab) {
-                if (--items.current_color<0) {
-                    items.current_color = items.colors.length-1
+        Keys.onPressed: {
+            items.keyboardControls = true;
+
+            if(event.key === Qt.Key_Up) {
+                if(isColorTab) {
+                    if(--items.current_color < 0) {
+                        items.current_color = items.colors.length - 1;
+                    }
+                    items.selectedColor = items.colors[items.current_color];
+                    moveColorSelector();
+                } else {
+                    if(cursor.iy > 0) {
+                        cursor.iy--;
+                    }
+                    if(spaceIsPressed) {
+                        spawnBlock();
+                    }
                 }
-                items.colorSelector = items.colors[items.current_color]
-                moveColorSelector()
-            }else {
-                if(cursor.iy>0) {
-                cursor.iy--
+            }
+
+            if(event.key === Qt.Key_Down) {
+                if(isColorTab) {
+                    if(++items.current_color > items.colors.length - 1){
+                        items.current_color = 0;
+                    }
+                    items.selectedColor = items.colors[items.current_color];
+                    moveColorSelector();
+                }else {
+                    if(cursor.iy < (Activity.nby - 1)) {
+                        cursor.iy++;
+                    }
+                    if(spaceIsPressed) {
+                        spawnBlock();
+                    }
                 }
+            }
+
+            if(event.key === Qt.Key_Right) {
+                if(!isColorTab) {
+                    if(cursor.ix < (Activity.nbx - 1)) {
+                        cursor.ix++;
+                    }
+                    if(spaceIsPressed) {
+                        spawnBlock();
+                    }
+                }
+            }
+
+            if(event.key === Qt.Key_Left) {
+                if(!isColorTab) {
+                    if(cursor.ix > 0) {
+                        cursor.ix--;
+                    }
+                    if(spaceIsPressed) {
+                        spawnBlock();
+                    }
+                }
+            }
+
+            if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                if(!isColorTab) {
+                spawnBlock();
+                spaceIsPressed = true;
+                } else {
+                    changeTab();
+                }
+            }
+
+            if(event.key === Qt.Key_Tab) {
+                changeTab();
             }
         }
 
-        Keys.onDownPressed: {
-            if(isColorTab) {
-                if (++items.current_color>items.colors.length-1){
-                    items.current_color = 0
-                }
-                items.colorSelector = items.colors[items.current_color]
-                moveColorSelector()
-        }else {
-                if(cursor.iy<(Activity.nby-1)) {
-                cursor.iy++
-                }
+        Keys.onReleased: {
+            if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                spaceIsPressed = false;
             }
         }
-
-        Keys.onRightPressed: {
-            if(!isColorTab) {
-                if(cursor.ix<(Activity.nbx-1)) {
-                cursor.ix++
-                }
-            }
-        }
-
-        Keys.onLeftPressed: {
-            if(!isColorTab) {
-                if(cursor.ix>0) {
-                cursor.ix--
-                }
-            }
-        }
-
-        Keys.onSpacePressed: spawnBlock()
-
-        Keys.onReturnPressed: spawnBlock()
-
-        Keys.onEnterPressed: spawnBlock()
-
-        Keys.onTabPressed:changeTab()
 
         function changeTab() {
-            isColorTab = !isColorTab
-            if(isColorTab) {
-                 colorSelector.cellWidth = 60 * ApplicationInfo.ratio+20
-            }else {
-                colorSelector.cellWidth = 60 * ApplicationInfo.ratio
-            }
+            isColorTab = !isColorTab;
         }
 
         function spawnBlock() {
             if(!isColorTab) {
-                var block = rootItem.childAt(cursor.x, cursor.y)
+                var block = rootItem.childAt(cursor.x, cursor.y);
                 if(block)
-                    block.touched()
+                    block.touched();
             }else {
-                changeTab()
+                changeTab();
             }
         }
 
         function refreshCursor() {
-            cursor.nbx= Activity.nbx
-            cursor.nby=Activity.nby
+            cursor.nbx = Activity.nbx;
+            cursor.nby = Activity.nby;
         }
 
         function moveColorSelector() {
-            moveColorSelectorAnim.running = false
-            moveColorSelectorAnim.from = colorSelector.contentY
+            moveColorSelectorAnim.running = false;
+            moveColorSelectorAnim.from = colorSelector.contentY;
             if(items.current_color != (items.colors.length-1)) {
-                colorSelector.positionViewAtIndex(items.current_color >= 1 ? items.current_color-2 : items.current_color, colorSelector.Contain)
+                colorSelector.positionViewAtIndex(items.current_color >= 1 ? items.current_color-2 : items.current_color, colorSelector.Contain);
             }else {
-                colorSelector.positionViewAtEnd()
-                colorSelector.positionViewAtEnd()
+                colorSelector.positionViewAtEnd();
             }
-            moveColorSelectorAnim.to = colorSelector.contentY
-            moveColorSelectorAnim.running = true
+            moveColorSelectorAnim.to = colorSelector.contentY;
+            moveColorSelectorAnim.running = true;
         }
 
         Component.onCompleted: {
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+            activity.start.connect(start);
+            activity.stop.connect(stop);
         }
 
         //Cursor to navigate in cells
         PaintCursor {
             id:cursor;
+            visible: items.keyboardControls && !isColorTab
             initialX: colorSelector.width + 20 * ApplicationInfo.ratio
             z:1
             ix: 0
             iy: 0
             nbx: 20
             nby: 10
-            color: items.colors[0]
         }
 
 
@@ -153,29 +175,36 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias paintModel: paintModel
+            property alias colorSelector: colorSelector
             property var colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
-            property int current_color:0
-            property string colorSelector: colors[current_color]
+            property int current_color: 1
+            property string selectedColor: colors[current_color]
             property string backgroundImg: Activity.backgrounds[bar.level - 1]
+            property bool keyboardControls: false
         }
 
-        onStart: Activity.start(main, items, background)
-        onStop: Activity.stop()
+        onStart: Activity.start(main, items, background);
+        onStop: Activity.stop();
 
         MultiPointTouchArea {
             anchors.fill: parent
-            onPressed: checkTouchPoint(touchPoints)
-            onTouchUpdated: checkTouchPoint(touchPoints)
+            onPressed: {
+                items.keyboardControls = false;
+                isColorTab = false;
+                checkTouchPoint(touchPoints);
+            }
+            onTouchUpdated: checkTouchPoint(touchPoints);
         }
 
         function checkTouchPoint(touchPoints) {
             for(var i in touchPoints) {
                 var touch = touchPoints[i]
-                var block = rootItem.childAt(touch.x, touch.y)
-                if(block)
+                if(rootItem.childAt(touch.x, touch.y)) {
+                    var block = rootItem.childAt(touch.x, touch.y)
                     cursor.ix = block.ix
                     cursor.iy = block.iy
                     block.touched()
+                }
             }
         }
 
@@ -239,7 +268,18 @@ ActivityBase {
                             anchors.centerIn: parent
                         }
 
-                        property bool iAmSelected: modelData == items.colorSelector
+                        Rectangle {
+                            id: colorCursor
+                            visible: items.keyboardControls && isColorTab
+                            anchors.fill: parent
+                            scale: 1.1
+                            color: "#00FFFFFF"
+                            radius: parent.radius
+                            border.width: rect.iAmSelected ? radius : 0
+                            border.color: "#E0FFFFFF"
+                        }
+
+                        property bool iAmSelected: modelData == items.selectedColor
 
                         states: [
                             State {
@@ -310,10 +350,11 @@ ActivityBase {
                             anchors.fill: parent
                             hoverEnabled: true
                             onClicked: {
-                                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
-                                items.colorSelector = modelData
-                                items.current_color=items.colors.indexOf(modelData)
-                                items.colorSelector=items.colors[items.current_color]
+                                activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav');
+                                items.keyboardControls = false;
+                                items.selectedColor = modelData;
+                                items.current_color = items.colors.indexOf(modelData);
+                                items.selectedColor = items.colors[items.current_color];
                             }
                         }
                     }

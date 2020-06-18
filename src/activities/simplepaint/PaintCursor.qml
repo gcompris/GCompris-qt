@@ -26,7 +26,6 @@ import GCompris 1.0
 
 Item {
     id: cursor
-    property alias color: rectangle.color
     property double ix
     property double iy
     property int nbx
@@ -41,21 +40,13 @@ Item {
     width: r * 2
     height: r * 2
 
-    Rectangle {
-        id: rectangle
-        anchors.fill: parent
-        //border.width: bar.level == 1 ? 1 : 0
-        //border.color: "black"
-    }
-
-
     Image {
         scale: 0.9
-        width: rectangle.height
-        height: rectangle.height
-        sourceSize.width: rectangle.height
-        sourceSize.height: rectangle.height
-        source: Activity.url + "eraser.svg"
+        width: parent.height
+        height: parent.height
+        sourceSize.width: height
+        sourceSize.height: height
+        source: Activity.url + "cursor.svg"
         visible: true
         anchors.centerIn: parent
     }
