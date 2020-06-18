@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Split a number of candies equally between kids.")
+    objective: qsTr("Split candies equally between kids.")
     difficulty: 5
     data:  [
         [
