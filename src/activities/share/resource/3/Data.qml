@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Split candies equally between kids.")
+    objective: qsTr("Maximum 30 candies and 6 kids, possible rest.")
     difficulty: 5
     data:  [
         [
@@ -117,21 +117,21 @@ Data {
                 "randomisedInputData": true,
                 "maxBoys": 3,
                 "maxGirls": 2,
-                "maxCandies": 16,
-                "alreadyPlaced": false
-            },
-            {
-                "randomisedInputData": true,
-                "maxBoys": 2,
-                "maxGirls": 3,
                 "maxCandies": 18,
                 "alreadyPlaced": false
             },
             {
                 "randomisedInputData": true,
                 "maxBoys": 2,
+                "maxGirls": 3,
+                "maxCandies": 22,
+                "alreadyPlaced": false
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 2,
                 "maxGirls": 2,
-                "maxCandies": 20,
+                "maxCandies": 26,
                 "alreadyPlaced": false
             }
         ],
@@ -147,28 +147,28 @@ Data {
                 "randomisedInputData": true,
                 "maxBoys": 2,
                 "maxGirls": 2,
-                "maxCandies": 13,
+                "maxCandies": 14,
                 "alreadyPlaced": false
             },
             {
                 "randomisedInputData": true,
                 "maxBoys": 3,
                 "maxGirls": 3,
-                "maxCandies": 16,
+                "maxCandies": 18,
                 "alreadyPlaced": true
             },
             {
                 "randomisedInputData": true,
                 "maxBoys": 3,
                 "maxGirls": 3,
-                "maxCandies": 20,
+                "maxCandies": 22,
                 "alreadyPlaced": false
             },
             {
                 "randomisedInputData": true,
                 "maxBoys": 3,
                 "maxGirls": 3,
-                "maxCandies": 20,
+                "maxCandies": 26,
                 "alreadyPlaced": false
             }
         ],
@@ -177,13 +177,6 @@ Data {
                 "randomisedInputData": true,
                 "maxBoys": 0,
                 "maxGirls": 6,
-                "maxCandies": 8,
-                "alreadyPlaced": true
-            },
-            {
-                "randomisedInputData": true,
-                "maxBoys": 3,
-                "maxGirls": 3,
                 "maxCandies": 12,
                 "alreadyPlaced": true
             },
@@ -198,14 +191,21 @@ Data {
                 "randomisedInputData": true,
                 "maxBoys": 3,
                 "maxGirls": 3,
-                "maxCandies": 18,
+                "maxCandies": 20,
+                "alreadyPlaced": true
+            },
+            {
+                "randomisedInputData": true,
+                "maxBoys": 3,
+                "maxGirls": 3,
+                "maxCandies": 24,
                 "alreadyPlaced": false
             },
             {
                 "randomisedInputData": true,
                 "maxBoys": 3,
                 "maxGirls": 3,
-                "maxCandies": 20,
+                "maxCandies": 30,
                 "alreadyPlaced": true
             }
         ]

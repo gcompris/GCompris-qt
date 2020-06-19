@@ -81,8 +81,8 @@ function setUp() {
         items.totalBoys = Math.floor(Math.random() * maxBoys) + 1
         items.totalGirls = Math.floor(Math.random() * maxGirls) + 1
         var sum = items.totalBoys + items.totalGirls
-        // use sum * 4 as top margin (max 4 candies per rectangle)
-        items.totalCandies = Math.floor(Math.random() * (4 * sum - sum + 1)) + sum
+        // use sum * 6 as top margin (max 6 candies per rectangle)
+        items.totalCandies = Math.floor(Math.random() * (5 * sum + 1)) + sum
         items.nbSubLevel = levelData[currentLevel].length
         // stay within the max margin
         if (items.totalCandies > maxCandies)
