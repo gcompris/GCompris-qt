@@ -80,6 +80,10 @@ Item {
             activity.Keys.enabled = false;
             background.Keys.enabled = false;
             message.forceActiveFocus();
+        } else  {
+            activity.forceActiveFocus();
+            activity.Keys.enabled = true;
+            background.Keys.enabled = true;
         }
     }
 
