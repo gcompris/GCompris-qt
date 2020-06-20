@@ -178,13 +178,13 @@ void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion,
 
 void ActivityInfoTree::exportAsSQL()
 {
-    QTextStream cout(stdout);
+    QTextStream qtOut(stdout);
 
     ApplicationSettings::getInstance()->setFilterLevelMin(1);
     ApplicationSettings::getInstance()->setFilterLevelMax(6);
     filterByTag("all");
 
-    cout << "CREATE TABLE activities (" <<
+    qtOut << "CREATE TABLE activities (" <<
             "id INT UNIQUE, " <<
             "name TEXT," <<
             "section TEXT," <<
@@ -196,13 +196,13 @@ void ActivityInfoTree::exportAsSQL()
             "prerequisite TEXT," <<
             "goal TEXT," <<
             "manual TEXT," <<
-            "credit TEXT);" << endl;
-    cout << "DELETE FROM activities" << endl;
+            "credit TEXT);\n";
+    qtOut << "DELETE FROM activities\n";
 
     int i(0);
     const auto constMenuTree = m_menuTree;
     for(const auto &activity: constMenuTree) {
-        cout << "INSERT INTO activities VALUES(" <<
+        qtOut << "INSERT INTO activities VALUES(" <<
                 i++ << ", " <<
                 "'" << activity->name() << "', " <<
                 "'" << activity->section() << "', " <<
@@ -215,8 +215,9 @@ void ActivityInfoTree::exportAsSQL()
                 "\"" << activity->goal().toHtmlEscaped() << "\", " <<
                 "\"" << activity->manual().toHtmlEscaped() << "\", " <<
                 "\"" << activity->credit() <<
-                ");" << endl;
+                ");\n";
     }
+    qtOut.flush();
 }
 
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
