@@ -45,7 +45,7 @@ ActivityBase {
 
         onWidthChanged: updateOnWidthReset.start()
         onHeightChanged: Activity.resetUpperGate()
-        
+
         property bool hori: background.width >= background.height
 
         signal start
