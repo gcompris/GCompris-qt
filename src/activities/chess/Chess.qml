@@ -507,6 +507,22 @@ ActivityBase {
                 movesCount ++
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
+
+                // Specific case for en passant move. It is a case where
+                // we capture without having the pawn to the "to" position.
+                // To know if we captured, we browse the whole board to look 
+                // for missing pawn
+                var state = Activity.simplifiedState(Activity.state.board)
+                for(var i=0; i < state.length; ++i) {
+                    var pos = state[i].pos
+                    var pawnPiece = getPieceAt(pos)
+                    if(pos != from && state[i].img === "" &&
+                        pawnPiece.img !== '') {
+                        toPiece = pawnPiece
+                        break
+                    }
+                }
+
                 if(toPiece.img !== '') {
                     items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
                     if(toPiece.isWhite) {

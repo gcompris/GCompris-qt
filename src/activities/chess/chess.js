@@ -57,7 +57,7 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
@@ -295,7 +295,7 @@ function randomMove() {
         return
     }
     // Get all possible moves
-    var moves = Engine.p4_parse(state, state.to_play, 0, 0)
+    var moves = Engine.p4_parse(state, state.to_play, state.enpassant, 0)
     moves = Core.shuffle(moves)
     var move = state.move(moves[0][1], moves[0][2])
     if(move.ok) {
@@ -315,7 +315,7 @@ function clearAcceptMove() {
 
 // Highlight the possible moves for the piece at position 'from'
 function showPossibleMoves(from) {
-    var result = Engine.p4_parse(state, state.to_play, 0, 0)
+    var result = Engine.p4_parse(state, state.to_play, state.enpassant, 0)
     clearAcceptMove()
     var fromEngine = viewPosToEngine(from)
     for(var i=0; i < result.length; ++i) {
