@@ -91,7 +91,7 @@ function setUp() {
         items.background.showCount = false
 
         // depending on the levels configuration, add candies from start in a child rectangle
-        if (subLevelData.alreadyPlaced == false) {
+        if (subLevelData.alreadyPlaced === false) {
             items.background.placedInGirls = 0
             items.background.placedInBoys = 0
             items.background.currentCandies = 0

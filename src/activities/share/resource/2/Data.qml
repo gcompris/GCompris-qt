@@ -59,7 +59,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("He wants to give 8 more pieces of candy to his friends"),
+                "instruction": qsTr("He wants to give 8 more pieces of candy to his friends."),
                 "randomisedInputData": false,
                 "totalBoys": 1,
                 "totalGirls": 1,
@@ -140,7 +140,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Now, Alice wants to give 8 pieces of candy to her friends"),
+                "instruction": qsTr("Now, Alice wants to give 8 pieces of candy to her friends."),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 2,
@@ -162,7 +162,7 @@ Data {
                 "placedInBoys": 0
             },
             {
-                "instruction": qsTr("Alice wants to give 16 pieces of candy to her friends"),
+                "instruction": qsTr("Alice wants to give 16 pieces of candy to her friends."),
                 "randomisedInputData": false,
                 "totalBoys": 2,
                 "totalGirls": 2,
