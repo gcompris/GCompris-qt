@@ -77,7 +77,7 @@ Item {
      * Text besides the combobox, used to describe what the combobox is for.
      */
     property string label
-    
+
     /**
      * type:bool
      * Internal value.
@@ -158,7 +158,7 @@ Item {
         visible: false
         width: if(parent) parent.width
         height: if(parent) parent.height
-        
+
         parent: background
         z: 100
         focus: visible
@@ -233,15 +233,15 @@ Item {
         function hidePopUpAndRestoreFocus() {
             popup.visible = false;
             // Restore focus on previous activity for keyboard input
-            background.forceActiveFocus();
+            activity.forceActiveFocus();
         }
-        
+
         Rectangle {
             id: listBackground
             anchors.fill: parent
             radius: 10
             color: "grey"
-            
+
             Rectangle {
                 id : headerDescription
 		        z: 10
