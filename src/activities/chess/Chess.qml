@@ -509,7 +509,7 @@ ActivityBase {
                 var toPiece = getPieceAt(to)
 
                 // Specific case for en passant move. It is a case where
-                // we capture without having the pawn to the "to" position.
+                // we capture a pawn without having it at the "to" position.
                 // To know if we captured, we browse the whole board to look 
                 // for missing pawn
                 var state = Activity.simplifiedState(Activity.state.board)
