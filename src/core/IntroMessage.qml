@@ -42,14 +42,46 @@ import GCompris 1.0
 Item {
     id: message
 
+    focus: true
     anchors.fill: parent
     visible: index == -1 ? false : true
+
+    Component.onCompleted: {
+        activity.start.connect(start)
+    }
 
     /**
      * Emitted when the index of intro is equal to its length
      * or when skipButton is clicked.
      */
     signal introDone
+
+    onIntroDone: {
+        activity.forceActiveFocus();
+        activity.Keys.enabled = true;
+        background.Keys.enabled = true;
+    }
+
+    /**
+     * Emitted when starting the intro message.
+     */
+    signal start
+
+    onStart: {
+        if(visible) {
+            activity.Keys.enabled = false;
+            background.Keys.enabled = false;
+            message.forceActiveFocus();
+        }
+    }
+
+    onVisibleChanged: {
+        if(visible) {
+            activity.Keys.enabled = false;
+            background.Keys.enabled = false;
+            message.forceActiveFocus();
+        }
+    }
 
     /**
      * The index of the intro array.
@@ -63,10 +95,34 @@ Item {
      *
      * It has to be filled by the user when defining an IntroMessage item.
      */
-    property var intro;
+    property var intro
 
     property int textContainerWidth: 0.9 * parent.width
     property int textContainerHeight: 0.75 * parent.height - nextButton.height
+
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Left && index != 0) {
+            --index;
+        }
+        if(event.key === Qt.Key_Right) {
+            if(index != (intro.length - 1)) {
+                index++;
+            } else {
+                index = -1;
+                message.introDone();
+
+            }
+        }
+        if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+            index = -1;
+            message.introDone();
+        }
+    }
+
+    Keys.onEscapePressed: {
+        index = -1;
+        message.introDone();
+    }
 
     // to avoid clicking on the activity
     MouseArea {
@@ -117,7 +173,7 @@ Item {
 
         text: qsTr("Previous")
 
-        onClicked: --index
+        onClicked: --index;
     }
 
     IntroButton {
@@ -133,7 +189,7 @@ Item {
 
         text: qsTr("Next")
 
-        onClicked: index++
+        onClicked: index++;
     }
 
     IntroButton {
@@ -149,8 +205,8 @@ Item {
         text: nextButton.visible ? qsTr("Skip") : qsTr("Start")
 
         onClicked: {
-            index = -1
-            message.introDone()
+            index = -1;
+            message.introDone();
 	    }
     }
 }
