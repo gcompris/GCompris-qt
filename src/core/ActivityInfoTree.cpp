@@ -282,7 +282,11 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     m_menuTree.clear();
     if(!text.trimmed().isEmpty()) {
         // perform search on each word entered in the searchField
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        const QStringList wordsList = text.split(' ', Qt::SkipEmptyParts);
+#else
         const QStringList wordsList = text.split(' ', QString::SkipEmptyParts);
+#endif
         for(const QString &searchTerm: wordsList) {
             const QString trimmedText = searchTerm.trimmed();
             const auto &constMenuTreeFull = m_menuTreeFull;

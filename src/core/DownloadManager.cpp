@@ -129,7 +129,11 @@ inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) con
 // @FIXME should support a variable subpath length like data2/full.rcc"
 inline QString DownloadManager::getRelativeResourcePath(const QString& path) const
 {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+    QStringList parts = path.split('/', Qt::SkipEmptyParts);
+#else
     QStringList parts = path.split('/', QString::SkipEmptyParts);
+#endif
     if (parts.size() < 3)
         return QString();
     return QString(parts[parts.size()-3] + '/' + parts[parts.size()-2]
@@ -352,7 +356,11 @@ bool DownloadManager::parseContents(DownloadJob *job)
     QTextStream in(&job->file);
     while (!in.atEnd()) {
         QString line = in.readLine();
+#if QT_VERSION >= QT_VERSION_CHECK(5, 15, 0)
+        QStringList parts = line.split(' ', Qt::SkipEmptyParts);
+#else
         QStringList parts = line.split(' ', QString::SkipEmptyParts);
+#endif
         if (parts.size() != 2) {
             qWarning() << "Invalid format of Contents file!";
             return false;
