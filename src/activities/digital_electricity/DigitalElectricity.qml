@@ -84,7 +84,7 @@ ActivityBase {
                 playArea.y = mousePan.drag.minimumY
             }
         }
-        
+
         onHoriChanged: {
             if (hori == true) {
                 playArea.x += items.toolsMargin
@@ -164,7 +164,7 @@ ActivityBase {
                 bottomMargin: 20
             }
             z: 6
-            
+
             GCText {
                 id: infoTxt
                 anchors {
@@ -214,7 +214,7 @@ ActivityBase {
                 }
                 z: 5
             }
-            
+
             ListModel {
                 id: truthTablesModel
                 property int rows
@@ -308,7 +308,7 @@ ActivityBase {
                                     return ((index % truthTable.columns) / (truthTablesModel.inputs - 1)) <= 1 ? "#A7D9F9" : "#A7F9DD"
                                 }
                             }
-                                   
+
                             GCText {
                                 id: truthTableValue
                                 anchors.centerIn: parent
@@ -324,10 +324,9 @@ ActivityBase {
                     }
                 }
             }
-            
+
         }
-        
-        
+
         Rectangle {
             id: playArea
             color: "#10000000"
@@ -338,7 +337,7 @@ ActivityBase {
             height: background.hori ?
                        background.height * 4 - (bar.height * 1.1) :
                        background.height * 4 - (bar.height * 1.1) - items.toolsMargin
-            
+
             PinchArea {
                 id: pinchZoom
                 anchors.fill: parent
