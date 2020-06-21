@@ -1,10 +1,9 @@
-/* GCompris - GeoCountry.qml
+/* GCompris - Data.qml
  *
- * Copyright (C) 2015 Pulkit Gupta <pulkitgenius@gmail.com>
+ * Copyright (C) 2020 Shubham Mishra <email.shivam828787@gmail.com>
  *
  * Authors:
- *   Jean-Philippe Ayanides <jp.ayanides@free.fr> (GTK+ version)
- *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Shubham Mishra <email.shivam828787@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -17,18 +16,17 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <https://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.6
+import GCompris 1.0
 
-import "../babymatch"
-
-Babymatch {
-    id: activity
-
-    onStart: focus = true
-    onStop: {}
-    useMultipleDataset: true
-    boardsUrl: "qrc:/gcompris/src/activities/geo-country/resource/"
-    answerGlow: false
+Data {
+    objective: qsTr("Countries of Australia.")
+    difficulty: 6
+    data: [
+        [
+            //Australia
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board13_0.qml"
+        ]
+    ]
 }
