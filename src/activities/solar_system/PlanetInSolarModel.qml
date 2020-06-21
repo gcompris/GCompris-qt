@@ -43,7 +43,7 @@ Item {
         font.pixelSize: parent.width * 0.18
         color: "white"
         text: planetName
-        
+
         states: [
                 State {
                     name: "hScreen"
@@ -79,9 +79,9 @@ Item {
                         horizontalAlignment: Text.AlignLeft
                     }
                 }
-                
+
         ]
-        
+
         MouseArea {
             id: mouseAreaText
             anchors.fill: planetNameText
@@ -105,7 +105,7 @@ Item {
         fillMode: Image.PreserveAspectFit
         source: planetImageSource
     }
-    
+
     states: [
             State {
                 name: "hover"

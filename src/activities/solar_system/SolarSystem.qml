@@ -85,11 +85,71 @@ ActivityBase {
             property bool hintProvided: true
         }
 
-        onStart: {
-            Activity.start(items)
+        onStart: Activity.start(items)
+        onStop: Activity.stop()
+
+        property bool keyboardMode: false
+
+        Keys.onPressed: {
+            if(!mainQuizScreen.visible) {
+                if(event.key === Qt.Key_Down) {
+                    planetView.moveCurrentIndexDown();
+                } else if(event.key === Qt.Key_Right) {
+                    planetView.moveCurrentIndexRight();
+                } else if(event.key === Qt.Key_Up) {
+                    planetView.moveCurrentIndexUp();
+                } else if(event.key === Qt.Key_Left) {
+                    planetView.moveCurrentIndexLeft();
+                } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Space || event.key === Qt.Key_Return) {
+                    Activity.showQuizScreen(planetView.currentIndex);
+                }
+            } else {
+                if(mainQuizScreen.blockAnswerButtons) {
+                    return;
+                }
+                if(event.key === Qt.Key_Down || event.key === Qt.Key_Right) {
+                    if(mainQuizScreen.optionListView.currentIndex <
+                        mainQuizScreen.optionListView.count - 1) {
+                         mainQuizScreen.optionListView.currentIndex += 1;
+                    } else {
+                        mainQuizScreen.optionListView.currentIndex = 0;
+                    }
+                } else if(event.key === Qt.Key_Up || event.key === Qt.Key_Left) {
+                    if(mainQuizScreen.optionListView.currentIndex > 0) {
+                         mainQuizScreen.optionListView.currentIndex -= 1;
+                    } else {
+                        mainQuizScreen.optionListView.currentIndex =
+                        mainQuizScreen.optionListView.count - 1;
+                    }
+                } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Space || event.key === Qt.Key_Return) {
+                    mainQuizScreen.optionListView.currentItem.pressed();
+                }
+            }
         }
 
-        onStop: Activity.stop()
+        Keys.onTabPressed: {
+            if(items.hintProvided) {
+                if(items.assessmentMode)
+                    solarSystemImageHint.visible = true;
+                else
+                    displayDialog(hintDialog);
+            }
+        }
+
+
+        Keys.onEscapePressed: {
+            mainQuizScreen.closenessMeter.stopAnimations();
+            if(items.solarSystemVisible || (items.assessmentMode && !solarSystemImageHint.visible))
+                activity.home();
+            else if(solarSystemImageHint.visible)
+                solarSystemImageHint.visible = false
+            else
+                Activity.showSolarModel();
+        }
+
+        Keys.onReleased: {
+            keyboardMode = true
+        }
 
         IntroMessage {
             id: message
@@ -140,6 +200,15 @@ ActivityBase {
             cellWidth: background.itemWidth
             cellHeight: cellWidth
             model: planetsModel
+            keyNavigationWraps: true
+            highlight: Rectangle {
+                scale: 1.2
+                color:  "#80FFFFFF"
+                visible: background.keyboardMode
+                radius: 10 * ApplicationInfo.ratio
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+            }
 
             delegate: PlanetInSolarModel {
                 planetImageSource: realImg
@@ -298,6 +367,7 @@ ActivityBase {
             onClose: {
                 solarSystemImageHint.visible = false
                 home()
+                activity.forceActiveFocus()
             }
 
             button0Text: qsTr("View solar system")

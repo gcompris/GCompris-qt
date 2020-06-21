@@ -34,17 +34,17 @@ Rectangle {
     color: "#00000000"
     width: (isHorizontal ? 110 : 50) * ApplicationInfo.ratio
     height: (isHorizontal ? 50 : 110) * ApplicationInfo.ratio
-    
+
     signal up
     signal down
-    
+
     property bool upVisible: false
     property bool downVisible: false
 
     property bool isHorizontal: false
     property real heightRatio: isHorizontal ? (50 / 110) : (110 / 50)
     property real widthRatio: 1 / heightRatio
-    
+
     BarButton {
         id: scrollUp
         width: isHorizontal ? parent.height : parent.width
@@ -58,7 +58,7 @@ Rectangle {
         onClicked: up()
         visible: upVisible
     }
-    
+
     BarButton {
         id: scrollDown
         width: isHorizontal ? parent.height : parent.width

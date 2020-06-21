@@ -121,7 +121,7 @@ Item {
      * Triggered at the end of wrongAnswerAnimation.
      */
     signal incorrectlyPressed
-    
+
     /**
      * Emitted when answer button is clicked.
      */

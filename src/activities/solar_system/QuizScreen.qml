@@ -30,10 +30,10 @@ Item {
     id: mainQuizScreen
     width: parent.width
     height: parent.height
-    focus: true
 
     property alias score: score
     property alias optionListModel: optionListModel
+    property alias optionListView: optionListView
     property alias restartAssessmentMessage: restartAssessmentMessage
     property alias blockAnswerButtons: optionListView.blockAnswerButtons
     property alias closenessMeter: closenessMeter
@@ -134,6 +134,15 @@ Item {
                 }
 
                 property bool blockAnswerButtons: false
+
+                highlight: Rectangle {
+                    scale: 1.2
+                    color:  "#2881C3"
+                    visible: background.keyboardMode
+                    radius: 10 * ApplicationInfo.ratio
+                    Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                    Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                }
 
                 delegate: AnswerButton {
                     id: optionButton

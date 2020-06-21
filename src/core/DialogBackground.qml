@@ -41,6 +41,7 @@ Rectangle {
     border.color: "black"
     border.width: 1
     z: 1000
+    focus: visible
     property bool isDialog: true
     property string title
     property string content
@@ -52,6 +53,18 @@ Rectangle {
     signal play
     signal stop
     signal button0Hit
+
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Down) {
+            scrollItem.down();
+        } else if(event.key === Qt.Key_Up) {
+            scrollItem.up();
+        }
+    }
+
+    Keys.onEscapePressed: {
+        dialogBackground.close();
+    }
 
     Row {
         spacing: 2
@@ -104,7 +117,7 @@ Rectangle {
                     anchors.margins: 8
                     anchors.fill: parent
                     contentWidth: textContent.contentWidth
-                    contentHeight: iconImage.height + textContent.contentHeight
+                    contentHeight: iconImage.height + button0.height + textContent.contentHeight
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
@@ -150,6 +163,7 @@ Rectangle {
                 }
                 // The scroll buttons
                 GCButtonScroll {
+                    id: scrollItem
                     anchors.right: parent.right
                     anchors.rightMargin: 5 * ApplicationInfo.ratio
                     anchors.bottom: flick.bottom
@@ -160,7 +174,6 @@ Rectangle {
                     downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
                 }
             }
-            Item { width: 1; height: 10 }
         }
     }
 }
