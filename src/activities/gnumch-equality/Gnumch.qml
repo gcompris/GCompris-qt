@@ -48,9 +48,8 @@ ActivityBase {
             // Set the cell invisible if it's the correct answer.
             if (Activity.isAnswerCorrect(muncher.index)) {
                 modelCells.get(muncher.index).show = false
-                var levelDone = gridPart.isLevelDone()
-                if (levelDone) {
-                    nextLevel()
+                if (gridPart.isLevelDone()) {
+                    stopLevel();
                 }
             } else {
                 modelCells.get(muncher.index).show = false
@@ -74,12 +73,16 @@ ActivityBase {
             Activity.initLevel();
             operator = Activity._operator;
             topPanel.goal = Activity.getGoal();
-            monsters.destroyAll();
-            spawningMonsters.stop();
-            timerActivateWarn.stop();
+            stopLevel();
             if (Activity._currentLevel % 6 !== 0) {
                 spawningMonsters.restart();
             }
+        }
+
+        function stopLevel() {
+            monsters.destroyAll();
+            spawningMonsters.stop();
+            timerActivateWarn.stop();
         }
 
         anchors.fill: parent
@@ -384,6 +387,10 @@ ActivityBase {
 
         Bonus {
             id: bonus
+
+            onStop: {
+                parent.nextLevel();
+            }
         }
     }
 }
