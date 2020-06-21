@@ -44,6 +44,11 @@ ActivityBase {
             if (!muncher.movable)
                 return
 
+            // Case already discovered
+            if (!modelCells.get(muncher.index).show) {
+                return
+            }
+
             muncher.eating = true
             // Set the cell invisible if it's the correct answer.
             if (Activity.isAnswerCorrect(muncher.index)) {
