@@ -28,8 +28,7 @@ Babymatch {
 
     onStart: focus = true
     onStop: {}
-
+    useMultipleDataset: true
     boardsUrl: "qrc:/gcompris/src/activities/geo-country/resource/"
-    levelCount: 16
     answerGlow: false
 }
