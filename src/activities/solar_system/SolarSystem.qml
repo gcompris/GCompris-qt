@@ -127,7 +127,7 @@ ActivityBase {
             id: planetsModel
         }
 
-        readonly property int itemWidth: horizontalLayout ? background.width * 0.11 : (background.height - bar.height) * 0.11
+        readonly property int itemWidth: horizontalLayout ? background.width * 0.11 : (background.height - bar.height * 1.5) * 0.11
 
         // Arrangement of all the planets in the solar system
         GridView {
