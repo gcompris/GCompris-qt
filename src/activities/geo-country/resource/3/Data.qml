@@ -21,29 +21,12 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Countries of America.")
+    objective: qsTr("Countries of Australia.")
     difficulty: 6
     data: [
         [
-            //Argentina
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board3_0.qml"
-        ],
-        [
-            //Brazil
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board7_0.qml"
-        ],
-        [
-            //Canada
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board8_0.qml"
-        ],
-        [
-            //USA
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board10_0.qml",
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board10_1.qml"
-        ],
-        [
-            //Mexico
-            "qrc:/gcompris/src/activities/geo-country/resource/board/board9_0.qml"
+            //Australia
+            "qrc:/gcompris/src/activities/geo-country/resource/board/board13_0.qml"
         ]
     ]
 }

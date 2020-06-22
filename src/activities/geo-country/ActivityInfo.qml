@@ -40,5 +40,5 @@ ActivityInfo {
   credit: ""
   section: "sciences geography"
   createdInVersion: 4000
-  levels: "1"
+  levels: "1,2,3,4"
 }
