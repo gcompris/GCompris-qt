@@ -40,6 +40,9 @@ if poFile.percent_translated() < 40:
 for entry in poFile.translated_entries():
     word = entry.msgctxt
     data[word] = entry.msgstr
+for entry in poFile.untranslated_entries():
+    word = entry.msgctxt
+    data[word] = entry.msgstr
 
 with open(jsonFile, "w", encoding='utf-8') as data_file:
     json.dump(data, data_file, indent=4, sort_keys=True, ensure_ascii=False)
