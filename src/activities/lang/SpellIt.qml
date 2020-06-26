@@ -227,7 +227,7 @@ Item {
                 font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 maximumLength: maximumLengthAnswer
                 onAccepted: {
-                    okMouseArea.clicked(okMouseArea)
+                    okMouseArea.clicked(toString(okMouseArea))
                 }
             }
         }
