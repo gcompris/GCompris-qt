@@ -410,6 +410,7 @@ Item {
                 initLevel(wordListIndex + 1)
             } else {
                 Activity.launchMenuScreen()
+                miniGameLoader.source = ""
             }
         }
     }
