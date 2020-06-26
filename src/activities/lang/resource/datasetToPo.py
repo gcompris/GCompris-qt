@@ -21,9 +21,8 @@ import sys
 import json
 import os
 import datetime
-import urllib
 import polib
-
+import urllib
 from urllib.parse import quote
 
 if(len(sys.argv) < 3):
