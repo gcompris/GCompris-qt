@@ -377,8 +377,12 @@ add_custom_target(DlAndInstallBundledConvertedOggs
   COMMENT "Download the bundled converted oggs and install them in the source dir"
   )
 
+if(${GCOMPRIS_PATCH_VERSION} STREQUAL 0)
+  set(ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${GCOMPRIS_VERSION})
+else()
+  set(ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${GCOMPRIS_VERSION}.${GCOMPRIS_PATCH_VERSION})
+endif()
 
-set(ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${GCOMPRIS_VERSION})
 add_custom_target(dist
     COMMAND git archive --prefix=${ARCHIVE_NAME}/ HEAD
         | xz > ${CMAKE_BINARY_DIR}/${ARCHIVE_NAME}.tar.xz
