@@ -47,6 +47,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -71,7 +72,7 @@ ActivityBase {
             property var details
             property bool categoriesFallback
             property alias file: file
-            property var categories: directory.getFiles(boardsUrl)
+            property var categories: activity.datasetLoader.data
         }
 
         function hideBar() {
@@ -84,13 +85,11 @@ ActivityBase {
         
         onStart: {
             Activity.init(items, boardsUrl)
-            dialogActivityConfig.getInitialConfiguration()
             Activity.start()
             hideBar()
         }
 
         onStop: {
-            dialogActivityConfig.saveDatainConfiguration()
             ApplicationSettings.isBarHidden = barAtStart;
         }
         
@@ -115,72 +114,29 @@ ActivityBase {
             id: configOptions
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            content: Component {
-                Column {
-                    id: column
-                    spacing: 5
-                    width: dialogActivityConfig.width
-                    height: dialogActivityConfig.height
-                    property alias easyModeBox: easyModeBox
-                    property alias mediumModeBox: mediumModeBox
-                    property alias expertModeBox: expertModeBox
+            currentActivity: activity.activityInfo
 
-                    GCDialogCheckBox {
-                        id: easyModeBox
-                        width: column.width - 50
-                        text: qsTr("Put together all the elements from a category (with score)")
-                        checked: (items.mode == "easy") ? true : false
-                        exclusiveGroup: configOptions
-                        onCheckedChanged: {
-                            if(easyModeBox.checked) {
-                                items.mode = "easy"
-                                menuScreen.iAmReady.visible = false
-                            }
-                        }
-                    }
-
-                    GCDialogCheckBox {
-                        id: mediumModeBox
-                        width: easyModeBox.width
-                        text: qsTr("Put together all the elements from a category (without score)")
-                        checked: (items.mode == "medium") ? true : false
-                        exclusiveGroup: configOptions
-                        onCheckedChanged: {
-                            if(mediumModeBox.checked) {
-                                items.mode = "medium"
-                                menuScreen.iAmReady.visible = false
-                            }
-                        }
-                    }
-
-                    GCDialogCheckBox {
-                        id: expertModeBox
-                        width: easyModeBox.width
-                        text: qsTr("Discover a category, grouping elements together")
-                        checked: (items.mode == "expert") ? true : false
-                        exclusiveGroup: configOptions
-                        onCheckedChanged: {
-                            if(expertModeBox.checked) {
-                                items.mode = "expert"
-                                menuScreen.iAmReady.visible = true
-                            }
-                        }
-                    }
-                }
-            }
             onLoadData: {
-                if(dataToSave && dataToSave["mode"])
-                    items.mode = dataToSave["mode"]
-                if(dataToSave && dataToSave["displayUpdateDialogAtStart"])
-                    items.displayUpdateDialogAtStart = (dataToSave["displayUpdateDialogAtStart"] == "true") ? true : false
+                if(activityData && activityData["mode"])
+                    items.mode = activityData["mode"]
+                if(activityData && activityData["displayUpdateDialogAtStart"])
+                    items.displayUpdateDialogAtStart = (activityData["displayUpdateDialogAtStart"] == "true") ? true : false
             }
 
             onSaveData: {
-                dataToSave["data"] = Activity.categoriesToSavedProperties(dataToSave)
-                dataToSave["mode"] = items.mode
-                dataToSave["displayUpdateDialogAtStart"] = items.displayUpdateDialogAtStart ? "true" : "false"
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+
+            onStartActivity: {
+                items.mode = activityData["mode"]
+                items.displayUpdateDialogAtStart = activityData["displayUpdateDialogAtStart"]
+                items.menuScreen.iAmReady.visible = (activityData["mode"] == "expert") ? true : false;
+                background.stop();
+                background.start()
             }
             onClose: home()
         }
@@ -193,7 +149,7 @@ ActivityBase {
         Bar {
             id: bar
             content: menuScreen.started ? withConfig : withoutConfig
-            property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
+            property BarEnumContent withConfig: BarEnumContent { value: help | home | activityConfig}
             property BarEnumContent withoutConfig: BarEnumContent { value: home | level }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
@@ -206,9 +162,8 @@ ActivityBase {
                 else if(items.categoryReview.started)
                     Activity.launchMenuScreen()
             }
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                displayDialog(dialogActivityConfig)
+            onActivityConfigClicked: {
+                 displayDialog(dialogActivityConfig)
             }
         }
 
@@ -228,7 +183,7 @@ ActivityBase {
                 button2Text: qsTr("Never show this dialog later")
                 onClose: items.categoriesFallback = false
                 onButton1Hit: DownloadManager.downloadResource('data2/words/words.rcc')
-                onButton2Hit: { items.displayUpdateDialogAtStart = false; dialogActivityConfig.saveDatainConfiguration() }
+                onButton2Hit: { items.displayUpdateDialogAtStart = false }
             }
             anchors.fill: parent
             focus: true

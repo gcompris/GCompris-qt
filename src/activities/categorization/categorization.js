@@ -29,7 +29,6 @@ var items
 var lessons
 var categories
 var images
-var items
 var currentLevel = 1
 var numberOfLevel
 var index
@@ -62,7 +61,6 @@ function start() {
     for(var i = 0; i < categoryLists.length; i++) {
         categoriesFilename = "qrc" + boardsUrl + categoryLists[i]
         categoryDataset.source = categoriesFilename
-
         if(isEmbeddedMode || categoryDataset.item.isEmbedded) {
             categoriesData.push(categoryDataset.item)
         }
@@ -71,7 +69,7 @@ function start() {
     categories = getCategoryModel(categoriesData)
     addPropertiesToCategories(categories)
     items.menuModel.append(categories)
-    savedPropertiesToCategories(items.dialogActivityConfig.dataToSave)
+    savedPropertiesToCategories(items.dialogActivityConfig.activityData)
     sortByFavorites()
     items.menuScreen.start()
 }
@@ -88,6 +86,8 @@ function addPropertiesToCategories(categories) {
 
 // Return all the properties we have to save
 function categoriesToSavedProperties() {
+    if(!items)
+        return;
     var props = {}
     for(var i = 0; i < items.menuModel.count; i++) {
         var category = items.menuModel.get(i)
