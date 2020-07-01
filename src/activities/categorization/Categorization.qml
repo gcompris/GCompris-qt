@@ -102,16 +102,8 @@ ActivityBase {
         }
         }
 
-        Directory {
-            id: directory
-        }
-
         CategoryReview {
             id: categoryReview
-        }
-
-        ExclusiveGroup {
-            id: configOptions
         }
 
         DialogChooseLevel {
@@ -121,11 +113,12 @@ ActivityBase {
             onLoadData: {
                 if(activityData && activityData["mode"])
                     items.mode = activityData["mode"]
-                if(activityData && activityData["displayUpdateDialogAtStart"])
-                    items.displayUpdateDialogAtStart = (activityData["displayUpdateDialogAtStart"] == "true") ? true : false
+                if(activityData && activityData["displayUpdateDialogAtStart"] !== undefined)
+                    items.displayUpdateDialogAtStart = (activityData["displayUpdateDialogAtStart"] === true) ? true : false
             }
 
             onSaveData: {
+                activityData["displayUpdateDialogAtStart"] = items.displayUpdateDialogAtStart
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
@@ -133,8 +126,7 @@ ActivityBase {
 
             onStartActivity: {
                 items.mode = activityData["mode"]
-                items.displayUpdateDialogAtStart = activityData["displayUpdateDialogAtStart"]
-                items.menuScreen.iAmReady.visible = (activityData["mode"] == "expert") ? true : false;
+                items.menuScreen.iAmReady.visible = (activityData["mode"] === "expert") ? true : false;
                 background.stop();
                 background.start()
             }
@@ -183,11 +175,11 @@ ActivityBase {
                 button2Text: qsTr("Never show this dialog later")
                 onClose: items.categoriesFallback = false
                 onButton1Hit: DownloadManager.downloadResource('data2/words/words.rcc')
-                onButton2Hit: { items.displayUpdateDialogAtStart = false }
+                onButton2Hit: { items.displayUpdateDialogAtStart = false; items.dialogActivityConfig.saveData()}
             }
             anchors.fill: parent
             focus: true
-            active: items.categoriesFallback && items.displayUpdateDialogAtStart
+            active: items.categoriesFallback && items.displayUpdateDialogAtStart;
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }

@@ -28,7 +28,6 @@ Item {
     id: activityConfiguration
     property Item background
     property string mode: "easy"
-    property string displayUpdateDialogAtStart: "true"
     width: if(background) background.width
 
     Column {
@@ -48,7 +47,7 @@ Item {
             id: easyModeBox
             width: column.width - 50
             text: qsTr("Put together all the elements from a category (with score)")
-            checked: (mode == "easy") ? true : false
+            checked: (mode === "easy") ? true : false
             exclusiveGroup: configOptions
             onCheckedChanged: {
                 if(easyModeBox.checked) {
@@ -61,7 +60,7 @@ Item {
             id: mediumModeBox
             width: easyModeBox.width
             text: qsTr("Put together all the elements from a category (without score)")
-            checked: (mode == "medium") ? true : false
+            checked: (mode === "medium") ? true : false
             exclusiveGroup: configOptions
             onCheckedChanged: {
                 if(mediumModeBox.checked) {
@@ -74,7 +73,7 @@ Item {
             id: expertModeBox
             width: easyModeBox.width
             text: qsTr("Discover a category, grouping elements together")
-            checked: (mode == "expert") ? true : false
+            checked: (mode === "expert") ? true : false
             exclusiveGroup: configOptions
             onCheckedChanged: {
                 if(expertModeBox.checked) {
@@ -91,16 +90,12 @@ Item {
             dataToSave["data"] = Activity.categoriesToSavedProperties(dataToSave)
           if(dataToSave["mode"]=== undefined)
             dataToSave["mode"] = mode
-          if(dataToSave["displayUpdateDialogAtStart"] === undefined)
-            dataToSave["displayUpdateDialogAtStart"] = displayUpdateDialogAtStart ? "true" : "false"
         }
         mode = dataToSave["mode"]
-        displayUpdateDialogAtStart = dataToSave["displayUpdateDialogAtStart"]
     }
 
     function saveValues() {
         dataToSave["data"] = Activity.categoriesToSavedProperties(dataToSave)
         dataToSave["mode"] = mode;
-        dataToSave["displayUpdateDialogAtStart"] = displayUpdateDialogAtStart ? "true" : "false"
     }
 }
