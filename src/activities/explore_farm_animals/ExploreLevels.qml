@@ -35,6 +35,7 @@ ActivityBase {
     property int numberOfLevels
     property string url
     property bool hasAudioQuestions
+    property bool needsVoices: false
 
     onStart: focus = true
     onStop: {}
@@ -128,6 +129,9 @@ ActivityBase {
             activity.audioVoices.done.connect(voiceDone)
             activity.audioEffects.done.connect(voiceDone)
             Activity.start(items, url, numberOfLevels)
+            if(activity.needsVoices === true) {
+                activity.isMusicalActivity = true
+            }
         }
         onStop: { Activity.stop() }
 
