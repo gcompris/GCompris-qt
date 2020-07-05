@@ -183,7 +183,7 @@ Window {
             if(DownloadManager.updateResource(wordset)) {
                 ApplicationSettings.wordset = wordset
             }
-        } else if(ApplicationSettings.wordset) { // Only if wordset specified
+        } else if(ApplicationSettings.useWordset) { // Only if external wordset is enabled
             // words.rcc has not been downloaded yet -> ask for download
             Core.showMessageDialog(
                         main,
@@ -197,6 +197,11 @@ Window {
                         qsTr("No"), null,
                         function() { pageView.currentItem.focus = true }
             );
+        }
+
+        //disable wordset is useWordset config is false
+        if(!ApplicationSettings.useWordset) {
+            ApplicationSettings.wordset = "";
         }
     }
 

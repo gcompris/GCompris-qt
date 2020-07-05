@@ -188,6 +188,11 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(QString wordset READ wordset WRITE setWordset NOTIFY wordsetChanged)
 
     /**
+     * Wether the extra word set should be used.
+     */
+    Q_PROPERTY(bool useWordset READ useWordset WRITE setUseWordset NOTIFY useWordsetChanged)
+
+    /**
      * Current base font-size used for font scaling.
      *
      * This setting is the basis for application-wide font-scaling. A value
@@ -402,6 +407,12 @@ public:
         emit wordsetChanged();
     }
 
+    bool useWordset() const { return m_useWordset; }
+    void setUseWordset(const bool newMode) {
+        m_useWordset = newMode;
+        emit useWordsetChanged();
+    }
+
     QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString &newDownloadServerUrl) {
         m_downloadServerUrl = newDownloadServerUrl;
@@ -497,6 +508,7 @@ protected slots:
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
     Q_INVOKABLE void notifyWordsetChanged();
+    Q_INVOKABLE void notifyUseWordsetChanged();
     Q_INVOKABLE void notifyFilteredBackgroundMusicChanged();
     Q_INVOKABLE void notifyBackgroundMusicVolumeChanged();
     Q_INVOKABLE void notifyAudioEffectsVolumeChanged();
@@ -575,6 +587,7 @@ signals:
     void kioskModeChanged();
     void sectionVisibleChanged();
     void wordsetChanged();
+    void useWordsetChanged();
     void baseFontSizeChanged();
     void filteredBackgroundMusicChanged();
     void backgroundMusicVolumeChanged();
@@ -618,6 +631,7 @@ private:
     bool m_isKioskMode;
     bool m_sectionVisible;
     QString m_wordset;
+    bool m_useWordset;
     QStringList m_filteredBackgroundMusic;
     qreal m_backgroundMusicVolume;
     qreal m_audioEffectsVolume;

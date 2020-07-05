@@ -180,18 +180,46 @@ Item {
             }
         }
 
+        Button {
+            id: wordsetButton
+            height: 30 * ApplicationInfo.ratio
+            visible: ApplicationInfo.isDownloadAllowed
+            text: qsTr("Download full word image set")
+            style: GCButtonStyle {}
+
+            onClicked: {
+                if(DownloadManager.downloadResource("data2/words/words.rcc"))
+                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+            }
+        }
+
+        Connections {
+            target: DownloadManager
+            onDownloadFinished: wordsetBox.updateStatus()
+        }
+
         /* Technically wordset config is a string that holds the wordset name or '' for the
         * internal wordset. But as we support only internal and words its best to show the
         * user a boolean choice.
         */
         GCDialogCheckBox {
             id: wordsetBox
-            checked: DownloadManager.isDataRegistered("words")
-            text: enabled ? qsTr("Use full word image set") : qsTr("Download full word image set")
+            checked: useWordset
+            text: enabled ? qsTr("Use full word image set") : qsTr("Full word image set is not installed")
             visible: ApplicationInfo.isDownloadAllowed
-            enabled: !DownloadManager.isDataRegistered("words")
+            enabled: DownloadManager.isDataRegistered("words")
             onCheckedChanged: {
-                wordset = checked ? 'data2/words/words.rcc' : '';
+                if(checked) {
+                    wordset = "data2/words/words.rcc";
+                    useWordset = true;
+                } else {
+                    wordset = "";
+                    useWordset = false;
+                }
+            }
+
+            function updateStatus() {
+                enabled = DownloadManager.isDataRegistered("words")
             }
         }
 
@@ -459,6 +487,7 @@ Item {
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
     property string wordset: ApplicationSettings.wordset
+    property bool useWordset: ApplicationSettings.useWordset
     property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
     property var allBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property int baseFontSize  // don't bind to ApplicationSettings.baseFontSize
@@ -500,9 +529,8 @@ Item {
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
 
-        wordset = ApplicationSettings.wordset
-        wordsetBox.checked = DownloadManager.isDataRegistered("words") || ApplicationSettings.wordset == 'data2/words/words.rcc'
-        wordsetBox.enabled = !DownloadManager.isDataRegistered("words")
+        wordset = useWordset ? ApplicationSettings.wordset : ""
+        wordsetBox.checked = useWordset
 
         baseFontSize = ApplicationSettings.baseFontSize
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing
@@ -547,6 +575,7 @@ Item {
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
         ApplicationSettings.wordset = wordset
+        ApplicationSettings.useWordset = useWordset
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
@@ -613,7 +642,7 @@ Item {
                         if (DownloadManager.downloadResource(wordset))
                         var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                     },
-                    qsTr("No"), function() { ApplicationSettings.wordset = '' },
+                    qsTr("No"), function() { ApplicationSettings.wordset = "" },
                     null
                     );
                 }
@@ -715,6 +744,7 @@ Item {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
         (ApplicationSettings.sectionVisible != sectionVisible) ||
         (ApplicationSettings.wordset != wordset) ||
+        (ApplicationSettings.useWordset != useWordset) ||
         (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
         (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
         (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
