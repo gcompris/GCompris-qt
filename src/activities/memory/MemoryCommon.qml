@@ -33,6 +33,7 @@ ActivityBase {
     property string backgroundImg
     property var dataset
     property bool withTux: false
+    property bool needsVoices: false
 
     onStart: focus = true
     onStop: {}
@@ -75,21 +76,16 @@ ActivityBase {
             property int rows
             property int spacing: 5 * ApplicationInfo.ratio
             property bool isMultipleDatasetMode: activity.datasetLoader.data != 0
-            property bool audioVoicesConfig: false
         }
 
         onStart: {
             Activity.start(items);
-            if(activity.isMusicalActivity) {
-                items.audioVoicesConfig = ApplicationSettings.isAudioVoicesEnabled;
-                ApplicationSettings.isAudioVoicesEnabled = true;
+            if(activity.needsVoices === true) {
+                activity.isMusicalActivity = true
             }
         }
 
         onStop: {
-            if(activity.isMusicalActivity) {
-                ApplicationSettings.isAudioVoicesEnabled = items.audioVoicesConfig;
-            }
             Activity.stop();
         }
 

@@ -90,7 +90,7 @@ Window {
 
     GCAudio {
         id: audioVoices
-        muted: !ApplicationSettings.isAudioVoicesEnabled
+        muted: !ApplicationSettings.isAudioVoicesEnabled && !main.isMusicalActivityRunning
 
         Timer {
             id: delayedWelcomeTimer
