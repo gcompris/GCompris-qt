@@ -75,11 +75,23 @@ ActivityBase {
             property int rows
             property int spacing: 5 * ApplicationInfo.ratio
             property bool isMultipleDatasetMode: activity.datasetLoader.data != 0
+            property bool audioVoicesConfig: false
         }
 
-        onStart: Activity.start(items)
+        onStart: {
+            Activity.start(items);
+            if(activity.isMusicalActivity) {
+                items.audioVoicesConfig = ApplicationSettings.isAudioVoicesEnabled;
+                ApplicationSettings.isAudioVoicesEnabled = true;
+            }
+        }
 
-        onStop: Activity.stop()
+        onStop: {
+            if(activity.isMusicalActivity) {
+                ApplicationSettings.isAudioVoicesEnabled = items.audioVoicesConfig;
+            }
+            Activity.stop();
+        }
 
         ListModel {
             id: containerModel
