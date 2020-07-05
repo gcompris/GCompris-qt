@@ -24,8 +24,7 @@ WidgetOption {
 
     src: "resource/images/candy.svg"
     name: "candy"
-    availableItems: (background.showCount && background.easyMode) ?
-                           widget.total - widget.current : ""
+    availableItems: (background.easyMode) ? widget.total - widget.current : ""
 
     property int placedInChild
 
@@ -91,11 +90,18 @@ WidgetOption {
                         listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
                         background.currentCandies ++
                     }
+
+                    if (background.currentCandies === items.totalCandies) {
+                        widget.canDrag = false
+                        background.resetCandy()
+                        candyWidget.element.opacity = 0.6
+                    }
                 }
-                // if all the "dropAreas" are full with items.maxNumberOfCandiesPerWidget candies,
-                // then stop the "swing" effect of the candy in leftWidget
-                if (background.currentCandies + 1 == widget.total)
-                    background.resetCandy()
+            }
+            else {
+                widget.canDrag = false
+                background.resetCandy()
+                candyWidget.element.opacity = 0.6
             }
         }
     }

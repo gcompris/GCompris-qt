@@ -63,7 +63,6 @@ function setUp() {
 
         items.background.placedInGirls = subLevelData.placedInGirls
         items.background.placedInBoys = subLevelData.placedInBoys
-        items.background.showCount = subLevelData.showCount
 
         items.background.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
@@ -87,8 +86,6 @@ function setUp() {
         // stay within the max margin
         if (items.totalCandies > maxCandies)
             items.totalCandies = maxCandies
-
-        items.background.showCount = false
 
         // depending on the levels configuration, add candies from start in a child rectangle
         if (subLevelData.alreadyPlaced === false) {
@@ -185,7 +182,6 @@ function reloadRandom() {
 
         items.background.rest = items.totalCandies -
                 Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
-        items.background.showCount = false
         items.basketWidget.element.opacity = 1
     }
 }

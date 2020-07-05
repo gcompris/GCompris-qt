@@ -23,8 +23,7 @@ WidgetOption {
     id: widget
 
     src: "resource/images/" + name + ".svg"
-    availableItems: (background.showCount && background.easyMode) ?
-                           widget.total - widget.current : ""
+    availableItems: (background.easyMode) ? widget.total - widget.current : ""
 
     property int placedInChild
 

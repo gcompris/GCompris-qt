@@ -31,7 +31,6 @@ Data {
                 "totalBoys": 0,
                 "totalGirls": 2,
                 "totalCandies": 2,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -42,7 +41,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 1,
                 "totalCandies": 5,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -53,7 +51,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 1,
                 "totalCandies": 7,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -64,7 +61,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 1,
                 "totalCandies": 8,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -75,7 +71,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 1,
                 "totalCandies": 9,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -88,7 +83,6 @@ Data {
                 "totalBoys": 0,
                 "totalGirls": 3,
                 "totalCandies": 3,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -99,7 +93,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 2,
                 "totalCandies": 9,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 1
@@ -110,7 +103,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 2,
                 "totalCandies": 10,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 2
@@ -121,7 +113,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 2,
                 "totalCandies": 14,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 2
@@ -134,7 +125,6 @@ Data {
                 "totalBoys": 0,
                 "totalGirls": 4,
                 "totalCandies": 4,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -145,7 +135,6 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 2,
                 "totalCandies": 8,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -156,7 +145,6 @@ Data {
                 "totalBoys": 3,
                 "totalGirls": 1,
                 "totalCandies": 12,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 2,
                 "placedInBoys": 0
@@ -167,7 +155,6 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 2,
                 "totalCandies": 16,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -178,7 +165,6 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 2,
                 "totalCandies": 20,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 3
@@ -191,7 +177,6 @@ Data {
                 "totalBoys": 0,
                 "totalGirls": 5,
                 "totalCandies": 11,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -202,7 +187,6 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 3,
                 "totalCandies": 16,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 2
@@ -213,7 +197,6 @@ Data {
                 "totalBoys": 4,
                 "totalGirls": 1,
                 "totalCandies": 21,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 2,
                 "placedInBoys": 0
@@ -224,7 +207,6 @@ Data {
                 "totalBoys": 3,
                 "totalGirls": 2,
                 "totalCandies": 20,
-                "showCount": false,
                 "forceShowBasket": true,
                 "placedInGirls": 1,
                 "placedInBoys": 0
@@ -237,7 +219,6 @@ Data {
                 "totalBoys": 0,
                 "totalGirls": 2,
                 "totalCandies": 6,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -248,7 +229,6 @@ Data {
                 "totalBoys": 1,
                 "totalGirls": 2,
                 "totalCandies": 12,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 2,
                 "placedInBoys": 0
@@ -259,7 +239,6 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 2,
                 "totalCandies": 17,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 0
@@ -270,7 +249,6 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 2,
                 "totalCandies": 20,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 2,
                 "placedInBoys": 1
@@ -281,7 +259,6 @@ Data {
                 "totalBoys": 2,
                 "totalGirls": 3,
                 "totalCandies": 25,
-                "showCount": true,
                 "forceShowBasket": true,
                 "placedInGirls": 0,
                 "placedInBoys": 1

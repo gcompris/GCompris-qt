@@ -79,7 +79,6 @@ ActivityBase {
         property int rest
         property int placedInGirls
         property int placedInBoys
-        property bool showCount: true
         property bool easyMode: true
         property alias wrongMove: wrongMove
         property bool finished: false
@@ -302,7 +301,7 @@ ActivityBase {
 
                 CandyWidget {
                     id: candyWidget
-                    total: background.easyMode ? items.totalCandies : 8 * items.totalChildren + 1
+                    total: items.totalCandies
                     current: background.currentCandies
                     element.opacity: background.easyMode ? 1 : 0
                 }

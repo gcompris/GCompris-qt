@@ -56,7 +56,7 @@ Rectangle {
         anchors.rightMargin: 20
 
         //"listModel.get(index) ? ... " because of an error received at startup of each level
-        text: (listModel.get(index) && background.showCount) ? listModel.get(index).countS : ""
+        text: (listModel.get(index)) ? listModel.get(index).countS : ""
     }
 
     Rectangle {
@@ -111,9 +111,9 @@ Rectangle {
                                 listModel.setProperty(index, "countS", listModel.get(index).countS + 1)
                                 //the current number of candies increases
                                 background.currentCandies ++
-
-                                if (background.currentCandies + 1 === items.candyWidget.total) {
+                                if (background.currentCandies === items.candyWidget.total) {
                                     background.resetCandy()
+                                    candyWidget.element.opacity = 0.6
                                 }
                             }
                             else {
