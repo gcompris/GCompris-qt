@@ -134,15 +134,14 @@ ActivityBase {
             enabled: false
         }
 
-        Keys.onReturnPressed: {
-            if(okButton.enabled === true) {
-                okButton.clicked()
-                okButtonAnimation.start()
-            }
-        }
+        Keys.onReturnPressed: validateKey();
 
-        Keys.onEnterPressed: {
-            if(okButton.enabled === true) {
+        Keys.onEnterPressed: validateKey();
+
+        function validateKey() {
+            if(iAmReady.visible) {
+                iAmReady.clicked();
+            } else if(okButton.enabled === true) {
                 okButton.clicked()
                 okButtonAnimation.start()
             }
