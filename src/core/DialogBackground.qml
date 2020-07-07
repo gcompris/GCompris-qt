@@ -66,6 +66,8 @@ Rectangle {
         dialogBackground.close();
     }
 
+    onClose: activity.forceActiveFocus();
+
     Row {
         spacing: 2
         Item { width: 10; height: 1 }

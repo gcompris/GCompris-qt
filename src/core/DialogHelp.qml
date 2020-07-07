@@ -37,6 +37,7 @@ import GCompris 1.0
 DialogBackground {
     visible: false
     title: activityInfo.title
+
     property QtObject activityInfo: ActivityInfoTree.currentActivity
 
     function getIcon() {
@@ -45,7 +46,7 @@ DialogBackground {
         }
         return ""
     }
-    
+
     function reformat(string) {
         var text = string.replace(/^    (.*)\n/gm,'<ul><li>$1</li></ul>')
         text = text.replace(/\n/gm,'<br/>')
