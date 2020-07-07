@@ -44,6 +44,7 @@ import GCompris 1.0
 Rectangle {
     id: dialogActivityContent
     visible: false
+    focus: visible
 
     /* Public interface: */
 
@@ -132,6 +133,22 @@ Rectangle {
     color: "#696da3"
     border.color: "black"
     border.width: 1
+
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Down) {
+            scrollItem.down();
+        } else if(event.key === Qt.Key_Up) {
+            scrollItem.up();
+        } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+            apply.close();
+        }
+    }
+
+    Keys.onEscapePressed: {
+        dialogActivityContent.close();
+    }
+
+    onClose: activity.forceActiveFocus();
 
     function getInitialConfiguration() {
         if(activityName == "") {
@@ -224,6 +241,7 @@ Rectangle {
 
                 // The scroll buttons
                 GCButtonScroll {
+                    id: scrollItem
                     anchors.right: parent.right
                     anchors.rightMargin: 5 * ApplicationInfo.ratio
                     anchors.bottom: flick.bottom
