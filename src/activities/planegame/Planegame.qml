@@ -115,6 +115,9 @@ ActivityBase {
                         onSkipPressed: {
                             showTutorial = false
                             Activity.initLevel()
+                            background.Keys.enabled = true
+                            activity.Keys.enabled = true
+                            activity.forceActiveFocus()
                         }
                     }
                 }
