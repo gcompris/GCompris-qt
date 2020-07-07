@@ -46,6 +46,12 @@ import GCompris 1.0
 Item {
     id: tutorialSection
     anchors.fill: parent
+    focus: true
+
+    Component.onCompleted: {
+        activity.start.connect(start)
+    }
+
 
     /* type: int
      * Counter for tutorial instructions
@@ -57,7 +63,7 @@ Item {
 
     /* Do we use image or qml files for illustrations */
     property bool useImage: true
-    
+
     // Emitted when skipButton is clicked
     signal skipPressed
 
@@ -66,6 +72,53 @@ Item {
 
     // Emitted when previousButton is clicked
     signal previousPressed
+	
+    // Emitted when starting the intro message.
+    signal start
+
+    onSkipPressed: {
+        tutorialSection.focus = false;
+        delayTimer.start();
+    }
+
+    onStart: {
+        if(visible) {
+            activity.Keys.enabled = false;
+            background.Keys.enabled = false;
+            tutorialSection.forceActiveFocus();
+        }
+    }
+
+    onVisibleChanged: {
+        if(visible) {
+            activity.Keys.enabled = false;
+            background.Keys.enabled = false;
+            tutorialSection.forceActiveFocus();
+        } else {
+            tutorialSection.focus = false;
+            delayTimer.start();
+        }
+    }
+
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Left && previousButton.visible) {
+            previousButton.clicked();
+        }
+        if(event.key === Qt.Key_Right) {
+            if(nextButton.visible) {
+                nextButton.clicked();
+            } else {
+                skipButton.clicked();
+            }
+        }
+        if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+            skipButton.clicked();
+        }
+    }
+
+    Keys.onEscapePressed: {
+        skipButton.clicked();
+    }
 
     // Tutorial instructions
     GCText {
@@ -188,6 +241,19 @@ Item {
             top: previousButton.bottom
             topMargin: 10
             horizontalCenter: parent.horizontalCenter
+        }
+    }
+    //we need to give a little delay between closing the intro and giving back focus to the activity,
+    //to avoid duplicate keystroke
+    Timer {
+        id: delayTimer
+        interval: 100
+        running: false
+        repeat: false
+        onTriggered: {
+            activity.forceActiveFocus();
+            activity.Keys.enabled = true;
+            background.Keys.enabled = true;
         }
     }
 }
