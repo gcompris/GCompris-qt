@@ -202,6 +202,7 @@ ActivityBase {
             cellHeight: cellWidth
             model: planetsModel
             keyNavigationWraps: true
+            currentIndex: -1
             highlight: Rectangle {
                 scale: 1.2
                 color:  "#80FFFFFF"

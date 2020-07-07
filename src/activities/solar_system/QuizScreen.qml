@@ -123,6 +123,7 @@ Item {
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
                 model: optionListModel
+                currentIndex: -1
 
                 readonly property real buttonHeight: (height - 3 * spacing) / 4
 
