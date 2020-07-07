@@ -234,13 +234,6 @@ ActivityBase {
                 topMargin: 10
             }
             z: 10
-
-            index: bar.level === 1 &&
-                     !(items.leftPressed && items.rightPressed) ? 0 : -1
-
-            opacity: items.leftPressed ^ items.rightPressed ? 0 : 1
-
-            Behavior on opacity { NumberAnimation { duration: 120 } }
         }
 
         function playSound(identifier) {
