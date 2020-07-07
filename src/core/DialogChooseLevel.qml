@@ -123,8 +123,13 @@ Rectangle {
         } else if(event.key === Qt.Key_Up) {
             scrollItem.up();
         } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
-            saveAndStartButton.clicked();
-        } else if(event.key === Qt.Key_Left || event.key === Qt.Key_Right) {
+            if(saveAndStartButton.visible){
+                saveAndStartButton.clicked();
+            } else {
+                saveButton.clicked();
+            }
+        } else if(datasetVisibleButton.enabled && optionsVisibleButton.enabled &&
+                (event.key === Qt.Key_Left || event.key === Qt.Key_Right)) {
             if(datasetVisibleButton.selected) {
                 optionsVisibleButton.clicked();
             } else {
@@ -322,6 +327,7 @@ Rectangle {
 
             // The scroll buttons
             GCButtonScroll {
+                id: scrollItem
                 anchors.right: parent.right
                 anchors.rightMargin: 5 * ApplicationInfo.ratio
                 anchors.bottom: flick.bottom
