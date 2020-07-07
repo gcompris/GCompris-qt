@@ -24,12 +24,22 @@ import GCompris 1.0
 import QtQuick.Controls 1.5
 
 import "../../core"
+import "baby_wordprocessor.js" as Activity
+
 
 ActivityBase {
     id: activity
 
     onStart: focus = true
     onStop: {}
+
+    // When going on configuration, it steals the focus and re set it to the activity.
+    // We need to set it back to the textinput item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusTextInput();
+        }
+    }
 
     pageComponent: Rectangle {
         id: background
@@ -43,10 +53,15 @@ ActivityBase {
         }
         onStart: {
             keyboard.populate();
-            edit.forceActiveFocus();
+            Activity.start(items);
         }
 
         property bool horizontalMode: height <= width
+
+        QtObject {
+            id: items
+            property alias edit: edit
+        }
 
         GCCreationHandler {
             id: creationHandler
@@ -55,7 +70,7 @@ ActivityBase {
                 edit.text = data["text"]
                 edit.cursorPosition = edit.length
             }
-            onClose: edit.forceActiveFocus()
+            onClose: Activity.focusTextInput();
         }
 
         Column {
