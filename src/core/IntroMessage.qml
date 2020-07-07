@@ -57,9 +57,8 @@ Item {
     signal introDone
 
     onIntroDone: {
-        activity.forceActiveFocus();
-        activity.Keys.enabled = true;
-        background.Keys.enabled = true;
+        message.focus = false;
+        delayTimer.start();
     }
 
     /**
@@ -81,9 +80,8 @@ Item {
             background.Keys.enabled = false;
             message.forceActiveFocus();
         } else  {
-            activity.forceActiveFocus();
-            activity.Keys.enabled = true;
-            background.Keys.enabled = true;
+            message.focus = false;
+            delayTimer.start();
         }
     }
 
@@ -104,28 +102,25 @@ Item {
     property int textContainerWidth: 0.9 * parent.width
     property int textContainerHeight: 0.75 * parent.height - nextButton.height
 
-    Keys.onReleased: {
-        if(event.key === Qt.Key_Left && index != 0) {
-            --index;
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Left && previousButton.visible) {
+            previousButton.clicked();
         }
         if(event.key === Qt.Key_Right) {
-            if(index != (intro.length - 1)) {
-                index++;
+            if(nextButton.visible) {
+                nextButton.clicked();
             } else {
-                index = -1;
-                message.introDone();
+                skipButton.clicked();
 
             }
         }
         if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-            index = -1;
-            message.introDone();
+            skipButton.clicked();
         }
     }
 
     Keys.onEscapePressed: {
-        index = -1;
-        message.introDone();
+        skipButton.clicked();
     }
 
     // to avoid clicking on the activity
@@ -212,5 +207,18 @@ Item {
             index = -1;
             message.introDone();
 	    }
+    }
+    //we need to give a little delay between closing the intro and giving back focus to the activity,
+    //to avoid duplicate keystroke
+    Timer {
+        id: delayTimer
+        interval: 100
+        running: false
+        repeat: false
+        onTriggered: {
+            activity.forceActiveFocus();
+            activity.Keys.enabled = true;
+            background.Keys.enabled = true;
+        }
     }
 }
