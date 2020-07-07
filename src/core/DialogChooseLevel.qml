@@ -34,6 +34,7 @@ import GCompris 1.0
 Rectangle {
     id: dialogChooseLevel
     visible: false
+    focus: visible
 
     /* Public interface: */
 
@@ -115,6 +116,28 @@ Rectangle {
             configLoader.initializePanel()
         }
     }
+
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Down) {
+            scrollItem.down();
+        } else if(event.key === Qt.Key_Up) {
+            scrollItem.up();
+        } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+            saveAndStartButton.clicked();
+        } else if(event.key === Qt.Key_Left || event.key === Qt.Key_Right) {
+            if(datasetVisibleButton.selected) {
+                optionsVisibleButton.clicked();
+            } else {
+                datasetVisibleButton.clicked();
+            }
+        }
+    }
+
+    Keys.onEscapePressed: {
+        cancelButton.clicked();
+    }
+
+    onClose: activity.forceActiveFocus();
 
     function initialize() {
         // dataset information
