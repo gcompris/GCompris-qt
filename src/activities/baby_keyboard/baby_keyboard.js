@@ -61,3 +61,8 @@ function playSound() {
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/audioclick.wav");
     items.typedText.text = "";
 }
+
+function focusTextInput() {
+    if (items && items.textinput)
+        items.textinput.forceActiveFocus();
+}

@@ -30,6 +30,14 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    // When going on configuration, it steals the focus and re set it to the activity.
+    // We need to set it back to the textinput item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusTextInput()
+        }
+    }
+
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -62,7 +70,7 @@ ActivityBase {
         onStart: {
             Activity.start(items);
             keyboard.populate();
-            textinput.forceActiveFocus();
+            Activity.focusTextInput();
         }
         onStop: { Activity.stop() }
 
