@@ -41,7 +41,7 @@ import GCompris 1.0
  */
 Item {
     id: gccombobox
-    focus: true
+    focus: visible
 
     width: parent.width * 0.9
     height: comboColumn.height
@@ -233,7 +233,7 @@ Item {
         function hidePopUpAndRestoreFocus() {
             popup.visible = false;
             // Restore focus on previous activity for keyboard input
-            activity.forceActiveFocus();
+            parent.forceActiveFocus();
         }
 
         Rectangle {
