@@ -76,28 +76,31 @@ Item {
     // Emitted when starting the intro message.
     signal start
 
-    onSkipPressed: {
-        tutorialSection.focus = false;
-        delayTimer.start();
-    }
-
     onStart: {
         if(visible) {
-            activity.Keys.enabled = false;
-            background.Keys.enabled = false;
-            tutorialSection.forceActiveFocus();
+            getFocus();
         }
     }
 
     onVisibleChanged: {
         if(visible) {
-            activity.Keys.enabled = false;
-            background.Keys.enabled = false;
-            tutorialSection.forceActiveFocus();
-        } else {
-            tutorialSection.focus = false;
-            delayTimer.start();
+            getFocus();
         }
+    }
+
+    onSkipPressed: {
+        restoreFocus();
+    }
+
+    function getFocus() {
+        activity.Keys.enabled = false;
+        background.Keys.enabled = false;
+        tutorialSection.forceActiveFocus();
+    }
+
+    function restoreFocus() {
+        tutorialSection.focus = false;
+        delayTimer.start();
     }
 
     Keys.onPressed: {
