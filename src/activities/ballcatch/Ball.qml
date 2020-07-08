@@ -38,6 +38,12 @@ Image {
     readonly property int finishY: tux.y + tux.height / 4
     readonly property real finishScale: initScale / 2
     property int radius: initScale
+    property bool levelChange: false    //needed in case of changing level while animation is running
+
+    function stop() {
+        levelChange = true;
+        animation.stop();
+    }
 
     ParallelAnimation {
         id: animation
@@ -56,37 +62,38 @@ Image {
                           to: 360; duration: 1000
                           easing.type: Easing.InOutQuad }
         onStarted: {
-            items.background.playSound("brick")
+            items.background.playSound("brick");
         }
 
         onStopped: {
             // We are done with the ballon move
-            if(Activity.gameWon) {
+            if(levelChange) {
+                return
+            } else if(Activity.gameWon) {
                 // This is a win
-                items.background.playSound("completetask")
-                bonus.good("tux")
-            }
-            else {
+                items.background.playSound("completetask");
+                bonus.good("tux");
+            } else {
                 // This is a lose
-                bonus.bad("tux")
+                bonus.bad("tux");
             }
         }
     }
 
     function startAnimation() {
         if(Activity.gameWon) {
-            finishX = x
+            finishX = x;
         }
         else if(Activity.items.leftPressed) {
-            finishX = tux.x + tux.width * 2
+            finishX = tux.x + tux.width * 2;
         }
         else {
-            finishX = tux.x - tux.width * 2
+            finishX = tux.x - tux.width * 2;
         }
         /* Only start the timer if the game is at init state.
            In init state, radius is initScale */
         if(ball.radius == ball.initScale)
-            animation.start()
+            animation.start();
     }
 
     function reinitBall() {
@@ -94,5 +101,6 @@ Image {
         y = leftHand.y - height / 3;
         ball.scale = initScale;
         ball.rotation = 0;
+        levelChange = false;
     }
 }

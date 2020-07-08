@@ -33,7 +33,7 @@ ActivityBase {
     onStop: {}
 
     Keys.onPressed: {
-        Activity.processKey(event)
+        Activity.processKey(event);
     }
 
     pageComponent: Image {
@@ -48,8 +48,8 @@ ActivityBase {
         property bool isVertical: background.width <= background.height     // To check if in Vertical mode
 
         Component.onCompleted: {
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+            activity.start.connect(start);
+            activity.stop.connect(stop);
         }
         QtObject {
             id: items
@@ -65,11 +65,9 @@ ActivityBase {
             property bool rightPressed
         }
 
-        onStart: {
-            Activity.start(items)
-        }
+        onStart: Activity.start(items);
 
-        onStop: { Activity.stop() }
+        onStop: Activity.stop();
 
         onWidthChanged: {
             leftHand.reinitPosition();
@@ -85,18 +83,16 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelpLeftRight
-            onClose: home()
+            onClose: home();
         }
 
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | level }
-            onHelpClicked: {
-                displayDialog(dialogHelpLeftRight)
-            }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHelpClicked: displayDialog(dialogHelpLeftRight);
+            onPreviousLevelClicked: if(!bonus.isPlaying) Activity.previousLevel();
+            onNextLevelClicked: if(!bonus.isPlaying) Activity.nextLevel();
+            onHomeClicked: home();
         }
 
         Bonus {
@@ -104,11 +100,11 @@ ActivityBase {
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
             Component.onCompleted: {
-                win.connect(Activity.nextLevel)
-                loose.connect(Activity.restartLevel)
+                win.connect(Activity.nextLevel);
+                loose.connect(Activity.restartLevel);
             }
-            onStart: tux.opacity = 0
-            onStop: tux.opacity = 1
+            onStart: tux.opacity = 0;
+            onStop: tux.opacity = 1;
         }
 
         Image {
@@ -136,13 +132,14 @@ ActivityBase {
             }
 
             function animate(newTime) {
-                leftHandAnimation.duration = newTime
+                leftHandAnimation.duration = newTime;
                 leftHandAnimation.start();
             }
 
             function reinitPosition() {
-                leftHand.x = background.width / 2 - width * 2
-                leftHand.y = background.height - 1.5 * height
+                leftHandAnimation.stop();
+                leftHand.x = background.width / 2 - width * 2;
+                leftHand.y = background.height - 1.5 * height;
             }
 
             MultiPointTouchArea {
@@ -153,7 +150,7 @@ ActivityBase {
                     // left
                     if(!items.leftPressed && !Activity.gameFinished) {
                         Activity.leftShiftPressed();
-                        items.leftPressed = true
+                        items.leftPressed = true;
                     }
                 }
             }
@@ -168,13 +165,14 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
 
             function animate(newTime) {
-                rightHandAnimation.duration = newTime
+                rightHandAnimation.duration = newTime;
                 rightHandAnimation.start();
             }
 
             function reinitPosition() {
-                rightHand.x = background.width / 2 + width
-                rightHand.y = background.height - 1.5 * height
+                rightHandAnimation.stop();
+                rightHand.x = background.width / 2 + width;
+                rightHand.y = background.height - 1.5 * height;
             }
 
             NumberAnimation {
@@ -192,7 +190,7 @@ ActivityBase {
                     // right
                     if(!items.rightPressed && !Activity.gameFinished) {
                         Activity.rightShiftPressed();
-                        items.rightPressed = true
+                        items.rightPressed = true;
                     }
                 }
             }
@@ -223,7 +221,7 @@ ActivityBase {
 
         // Instructions
         IntroMessage {
-            id: instructions
+            id: message
             intro: ApplicationInfo.isMobile ?
                        [qsTr("Tap both hands at the same time, " +
                             "to make the ball go in a straight line.")] :
@@ -237,7 +235,7 @@ ActivityBase {
         }
 
         function playSound(identifier) {
-            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/"+ identifier + ".wav")
+            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/"+ identifier + ".wav");
         }
 
         /* Timer starting when user first presses a first key.
@@ -247,8 +245,8 @@ ActivityBase {
             id: deltaPressedTimer
             running: false; repeat: false
             onTriggered: {
-                Activity.endTimer()
-                ball.startAnimation()
+                Activity.endTimer();
+                ball.startAnimation();
             }
         }
 

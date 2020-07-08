@@ -120,11 +120,13 @@ function initLevel() {
     timerinc = levelProperties[currentLevel].timerInc
 
     timerDiff = 0
+    items.deltaPressedTimer.stop();
     items.deltaPressedTimer.interval = timerinc
 
     items.background.source = "qrc:/gcompris/src/activities/ballcatch/resource/beach" +
             levelProperties[currentLevel].backgroundImage + ".svg"
 
+    items.ball.stop();
     items.ball.reinitBall();
 
     items.leftPressed = false
