@@ -245,6 +245,7 @@ Rectangle {
         GridView {
             id: creationsList
             model: fileNames
+            flickDeceleration: 1500
             width: parent.width - 10
             height: parent.height - 10
             interactive: true
@@ -350,8 +351,8 @@ Rectangle {
         anchors.rightMargin: 5 * ApplicationInfo.ratio
         anchors.bottom: viewContainer.bottom
         anchors.bottomMargin: 5 * ApplicationInfo.ratio
-        onUp: creationsList.flick(0, 1400)
-        onDown: creationsList.flick(0, -1400)
+        onUp: creationsList.flick(0, 1000)
+        onDown: creationsList.flick(0, -1000)
         upVisible: creationsList.visibleArea.yPosition <= 0 ? false : true
         downVisible: creationsList.visibleArea.yPosition + creationsList.visibleArea.heightRatio >= 1 ? false : true
     }

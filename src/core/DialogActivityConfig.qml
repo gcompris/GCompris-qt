@@ -226,6 +226,7 @@ Rectangle {
 
                 Flickable {
                     id: flick
+                    flickDeceleration: 1500
                     anchors.margins: 10 * ApplicationInfo.ratio
                     anchors.fill: parent
                     flickableDirection: Flickable.VerticalFlick
@@ -246,8 +247,8 @@ Rectangle {
                     anchors.rightMargin: 5 * ApplicationInfo.ratio
                     anchors.bottom: flick.bottom
                     anchors.bottomMargin: 5 * ApplicationInfo.ratio
-                    onUp: flick.flick(0, 1400)
-                    onDown: flick.flick(0, -1400)
+                    onUp: flick.flick(0, 1000)
+                    onDown: flick.flick(0, -1000)
                     upVisible: flick.visibleArea.yPosition <= 0 ? false : true
                     downVisible: flick.visibleArea.yPosition + flick.visibleArea.heightRatio >= 1 ? false : true
                 }
