@@ -57,8 +57,7 @@ Item {
     signal introDone
 
     onIntroDone: {
-        message.focus = false;
-        delayTimer.start();
+        restoreFocus();
     }
 
     /**
@@ -68,21 +67,25 @@ Item {
 
     onStart: {
         if(visible) {
-            activity.Keys.enabled = false;
-            background.Keys.enabled = false;
-            message.forceActiveFocus();
+            getFocus();
         }
     }
 
     onVisibleChanged: {
         if(visible) {
-            activity.Keys.enabled = false;
-            background.Keys.enabled = false;
-            message.forceActiveFocus();
-        } else  {
-            message.focus = false;
-            delayTimer.start();
+            getFocus();
         }
+    }
+
+    function getFocus() {
+        activity.Keys.enabled = false;
+        background.Keys.enabled = false;
+        message.forceActiveFocus();
+    }
+
+    function restoreFocus() {
+        message.focus = false;
+        delayTimer.start();
     }
 
     /**
