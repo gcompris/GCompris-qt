@@ -26,8 +26,6 @@ Monster {
     id: smarty
 
     frames: 3
-    frameW: 66
-    widthRatio: 0.93
 
     function goAfterMuncher() {
         // Number of cells between muncher and smarty.

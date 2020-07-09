@@ -26,8 +26,6 @@ Monster {
 
     monsterType: "eater"
     frames: 3
-    frameW: 64
-    widthRatio: 0.9
 
     onMovingOnChanged: {
         if (movingOn == false) {

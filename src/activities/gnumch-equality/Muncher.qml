@@ -51,8 +51,6 @@ Creature {
 
     monsterType: "muncher"
     frames: 4
-    frameW: 80
-    widthRatio: 1.35
     Drag.active: ApplicationInfo.isMobile ? muncherArea.drag.active : false
     Drag.hotSpot.x: width / 2
     Drag.hotSpot.y: height / 2

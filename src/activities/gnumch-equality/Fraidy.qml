@@ -35,8 +35,6 @@ Monster {
 
     monsterType: "fraidy"
     frames: 3
-    frameW: 53
-    widthRatio: 0.74
 
     onMovingOnChanged: {
         // He will either follow the border or go outside.

@@ -90,8 +90,6 @@ Rectangle {
             width: parent.width
             height: parent.width
             frames: 1
-            frameW: 80
-            widthRatio: 1.35
         }
     }
 

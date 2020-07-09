@@ -26,8 +26,6 @@ Monster {
 
     monsterType: "diaper"
     frames: 3
-    frameW: 54
-    widthRatio: 0.81
 
     onMovingOnChanged: {
         if (movingOn == false && opacity == 1) {

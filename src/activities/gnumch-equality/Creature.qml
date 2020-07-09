@@ -32,8 +32,8 @@ Item {
     property bool movingOn: false
     property bool eating: false
     property int frames
-    property int frameW
-    property real widthRatio
+    property int frameSize: 80
+    property int animCount: 0
     property GCSfx audioEffects
 
     function moveTo(direction) {
@@ -114,28 +114,32 @@ Item {
 
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
-        width: parent.width / parent.height <= widthRatio ? parent.width * 0.85 : parent.height * 0.85 * widthRatio
-        height: width * (1/widthRatio)
+        width: Math.min(parent.width, parent.height)
+        height: width
         source: "qrc:/gcompris/src/activities/gnumch-equality/resource/"
                 + monsterType + ".png"
 
-        frameCount: frames
-        frameWidth: frameW
+        frameCount: creature.frames
+        frameWidth: creature.frameSize
+        frameHeight: creature.frameSize
         frameDuration: 50
         currentFrame: 0
         running: false
 
         onCurrentFrameChanged: {
-            if (currentFrame == frames - 1) {
+            creature.animCount++
+            if (creature.animCount == creature.frames) {
+                creature.animCount = 0
                 turn++
             }
         }
 
         onTurnChanged: {
             if (turn == 2) {
-                eating = false
+                creature.eating = false
                 turn = 0
                 currentFrame = 0
+                creature.animCount = 0
                 pause()
             }
         }
