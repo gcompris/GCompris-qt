@@ -30,7 +30,7 @@ Data {
         { // Level 1
             columns: 5,
             rows: 2,
-            texts: Memory.getAddMinusTable(5)
+            texts: Memory.getAddMinusTable(9)
         }
     ]
 }
