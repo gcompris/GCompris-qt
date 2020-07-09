@@ -37,6 +37,14 @@ ActivityBase {
 
     onStart: focus = true
 
+    // When opening a dialog, it steals the focus and re set it to the activity.
+    // We need to set it back to the eventHandler item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusEventHandler()
+        }
+    }
+
     pageComponent: Image {
         id: background
         source: Activity.url + "background.svg"
@@ -73,6 +81,7 @@ ActivityBase {
             property bool goToNextSubLevel: false
             property bool goToNextLevel: false
             property bool keyNavigationMode: false
+            property alias eventHandler: eventHandler
         }
 
        onVoiceDone: {

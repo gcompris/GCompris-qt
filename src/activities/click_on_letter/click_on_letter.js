@@ -216,3 +216,8 @@ function checkAnswer(index)
         return false
     }
 }
+
+function focusEventHandler() {
+    if (items && items.eventHandler)
+        items.eventHandler.forceActiveFocus();
+}
