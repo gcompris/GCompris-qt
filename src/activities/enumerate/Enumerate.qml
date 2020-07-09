@@ -28,10 +28,17 @@ import "enumerate.js" as Activity
 
 ActivityBase {
     id: activity
-    focus: true
 
-    onStart: {}
+    onStart: { focus: true }
     onStop: {}
+
+    // When opening a dialog, it steals the focus and re set it to the activity.
+    // We need to set it back to the answerColumn item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusAnswerInput();
+        }
+    }
 
     pageComponent: Image {
         id: background
@@ -216,7 +223,6 @@ ActivityBase {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
-                activity.focus = true
             }
             onLoadData: {
                 if(activityData && activityData["mode"]) {

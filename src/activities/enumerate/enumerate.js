@@ -201,3 +201,7 @@ function enableOkButton() {
 function playAudio() {
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
 }
+
+function focusAnswerInput() {
+    registerAnswerItem(items.answerColumn.itemAt(items.answerColumn.currentIndex));
+}
