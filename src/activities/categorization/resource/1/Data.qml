@@ -21,23 +21,23 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Very Familiar categories, with score.")
+    objective: qsTr("Very Familiar categories.")
     difficulty: 3
     data:  [
         [
-            "category_colors.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_colors.qml"
         ],
         [
-            "category_animals.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_animals.qml"
         ],
         [
-            "category_food.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_food.qml"
         ],
         [
-            "category_numbers.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_numbers.qml"
         ],
         [
-            "category_birds.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_birds.qml"
         ]
     ]
 }

@@ -88,7 +88,7 @@ Item {
     function setDefaultValues() {
         if( dataToSave["data"] === undefined) {
             dataToSave["data"] = Activity.categoriesToSavedProperties(dataToSave)
-          if(dataToSave["mode"]=== undefined)
+          if(dataToSave["mode"] === undefined)
             dataToSave["mode"] = mode
         }
         mode = dataToSave["mode"]

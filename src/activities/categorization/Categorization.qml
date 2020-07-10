@@ -34,7 +34,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property string boardsUrl: ":/gcompris/src/activities/categorization/resource/board/"
     property bool vert: background.width <= background.height
     property var barAtStart
 
@@ -84,7 +83,7 @@ ActivityBase {
         }
         
         onStart: {
-            Activity.init(items, boardsUrl)
+            Activity.init(items)
             Activity.start()
             hideBar()
         }

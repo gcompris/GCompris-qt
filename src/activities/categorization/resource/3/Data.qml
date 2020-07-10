@@ -21,26 +21,26 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Unfamiliar categories, with score, without score and without model.")
+    objective: qsTr("Unfamiliar categories.")
     difficulty: 5
     data:  [
         [
-            "category_household_goods.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_household_goods.qml"
         ],
         [
-            "category_monuments.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_monuments.qml"
         ],
         [
-            "category_renewable.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_renewable.qml"
         ],
         [
-            "category_transports.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_transports.qml"
         ],
         [
-            "category_odd_even.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_odd_even.qml"
         ],
         [
-            "category_tools.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_tools.qml"
         ]
     ]
 }

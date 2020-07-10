@@ -21,29 +21,29 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Less familiar categories, with or without score.")
+    objective: qsTr("Less familiar categories.")
     difficulty: 4
     data:  [
         [
-            "category_vegetables.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_vegetables.qml"
         ],
         [
-            "category_shapes.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_shapes.qml"
         ],
         [
-            "category_flowers.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_flowers.qml"
         ],
         [
-            "category_living_beings.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_living_beings.qml"
         ],
         [
-            "category_nature.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_nature.qml"
         ],
         [
-            "category_insects.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_insects.qml"
         ],
         [
-            "category_fishes.qml"
+            "qrc:/gcompris/src/activities/categorization/resource/board/category_fishes.qml"
         ]
     ]
 }
