@@ -30,8 +30,10 @@ Item {
     property alias localeBox: localeBox
     property string locale: "system"
     property string configurationLocale: "system"
-    property alias easyModeBox: easyModeBox
-    property bool easyMode: false
+    property alias easyModeImageBox: easyModeImageBox
+    property alias easyModeAudioBox: easyModeAudioBox
+    property bool easyModeImage: false
+    property bool easyModeAudio: false
     width: if(background) background.width
     property alias availableLangs: langs.languages
     LanguageList {
@@ -48,12 +50,21 @@ Item {
             label: qsTr("Select your locale")
         }
         GCDialogCheckBox {
-            id: easyModeBox
+            id: easyModeImageBox
             width: parent.width
             text: qsTr("Display image to find as hint")
-            checked: activityConfiguration.easyMode
+            checked: activityConfiguration.easyModeImage
             onCheckedChanged: {
-                activityConfiguration.easyMode = checked
+                activityConfiguration.easyModeImage = checked
+            }
+        }
+        GCDialogCheckBox {
+            id: easyModeAudioBox
+            width: parent.width
+            text: qsTr("Speak words to find (if available) when three attempts are remaining")
+            checked: activityConfiguration.easyModeAudio
+            onCheckedChanged: {
+                activityConfiguration.easyModeAudio = checked
             }
         }
     }
@@ -67,7 +78,8 @@ Item {
     property var dataToSave
     function setDefaultValues() {
         // Recreate the binding
-        easyModeBox.checked = Qt.binding(function(){return activityConfiguration.easyMode;})
+        easyModeImageBox.checked = Qt.binding(function(){return activityConfiguration.easyModeImage;})
+        easyModeAudioBox.checked = Qt.binding(function(){return activityConfiguration.easyModeAudio;})
 
         var localeUtf8 = dataToSave.locale;
         if(localeUtf8 !== "system") {
@@ -82,7 +94,8 @@ Item {
             setLocale(activityConfiguration.availableLangs[0].locale)
         }
 
-        activityConfiguration.easyMode = (dataToSave.easyMode === "true")
+        activityConfiguration.easyModeImage = (dataToSave.easyModeImage ? dataToSave.easyModeImage === "true" : dataToSave.easyMode === "true")
+        activityConfiguration.easyModeAudio = (dataToSave.easyModeAudio === "true")
 
         for(var i = 0 ; i < activityConfiguration.availableLangs.length ; i ++) {
             if(activityConfiguration.availableLangs[i].locale === localeUtf8) {
@@ -101,7 +114,10 @@ Item {
 
         setLocale(newLocale);
 
-        activityConfiguration.easyMode = activityConfiguration.easyModeBox.checked
-        dataToSave = {"locale": newLocale, "activityLocale": activityConfiguration.locale, "easyMode": "" + activityConfiguration.easyMode}
+        activityConfiguration.easyModeImage = activityConfiguration.easyModeImageBox.checked
+        activityConfiguration.easyModeAudio = activityConfiguration.easyModeAudioBox.checked
+        dataToSave = {"locale": newLocale, "activityLocale": activityConfiguration.locale,
+                      "easyModeImage": "" + activityConfiguration.easyModeImage,
+                      "easyModeAudio": "" + activityConfiguration.easyModeAudio}
     }
 }

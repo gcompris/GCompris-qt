@@ -86,7 +86,8 @@ ActivityBase {
             property double maskThreshold
             property var goodWord
             property int goodWordIndex
-            property bool easyMode: false
+            property bool easyModeImage: false
+            property bool easyModeAudio: false
             property alias englishFallbackDialog: englishFallbackDialog
             property alias winTimer: winTimer
             property alias goodIcon: goodIcon
@@ -101,7 +102,7 @@ ActivityBase {
             }
             onRemainingLifeChanged: {
                 maskThreshold = 0.15 * remainingLife
-                if(remainingLife == 3) {
+                if(easyModeAudio && (remainingLife == 3)) {
                     playWord();
                 }
             }
@@ -200,7 +201,7 @@ ActivityBase {
             anchors.top: guessedText.bottom
             y: 5 * ApplicationInfo.ratio
             z: 10
-            opacity: items.easyMode ? 1 : 0
+            opacity: items.easyModeImage ? 1 : 0
             Image {
 		        id: wordImage
 		        smooth: true
@@ -273,8 +274,14 @@ ActivityBase {
                 else {
                     background.locale = Core.resolveLocale(background.locale)
                 }
-                if(activityData && activityData["easyMode"]) {
-                    items.easyMode = (activityData["easyMode"] === "true");
+                if (activityData) {
+                    if (activityData["easyModeImage"])
+                        items.easyModeImage = (activityData["easyModeImage"] === "true");
+                    else if (activityData["easyMode"])
+                        items.easyModeImage = (activityData["easyMode"] === "true");
+                }
+                if(activityData && activityData["easyModeAudio"]) {
+                    items.easyModeAudio = (activityData["easyModeAudio"] === "true");
                 }
 
             }
