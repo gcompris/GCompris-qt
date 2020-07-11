@@ -336,17 +336,14 @@ ActivityBase {
             }
         }
 
-        Keys.onPressed: {
-            if(event.key === Qt.Key_Space) {
-                wordsView.currentItem.select()
-            }
-        }
         Keys.onReleased: {
             keyboardMode = true
             event.accepted = false
         }
-        Keys.onEnterPressed: wordsView.currentItem.select();
-        Keys.onReturnPressed: wordsView.currentItem.select();
+        Keys.onSpacePressed: wordsView.currentItem.select();
+        Keys.onTabPressed: repeatItem.clicked();
+        Keys.onEnterPressed: ok.clicked();
+        Keys.onReturnPressed: ok.clicked();
         Keys.onRightPressed: wordsView.moveCurrentIndexRight();
         Keys.onLeftPressed: wordsView.moveCurrentIndexLeft();
         Keys.onDownPressed: wordsView.moveCurrentIndexDown();
