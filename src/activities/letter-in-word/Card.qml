@@ -1,9 +1,11 @@
 /* GCompris - Card.qml
  *
- * Copyright (C) 2016 Akshat Tandon  <akshat.tandon@research.iiit.ac.in>
+ * Copyright (C) 2016 Akshat Tandon <akshat.tandon@research.iiit.ac.in>
+ *               2020 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
- *   Akshat Tandon    <akshat.tandon@research.iiit.ac.in>
+ *   Akshat Tandon <akshat.tandon@research.iiit.ac.in>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -27,79 +29,65 @@ import "letter-in-word.js" as Activity
 
 Item {
     id: cardItem
-    height: wordPic.height + cardImage.height - 30 * ApplicationInfo.ratio
     property bool mouseActive: true
+    property bool isHighlighted
+
+    Rectangle {
+        visible: isHighlighted
+        anchors.fill: parent
+        radius: 5 * ApplicationInfo.ratio
+        color:  "#AAFFFFFF"
+    }
 
     Image {
         id: wordPic
-        sourceSize.width: cardItem.width - 6
-        sourceSize.height: cardItem.width - 5
+        width: cardItem.width * 0.8
+        height: width
+        anchors.top: parent.top
+        anchors.horizontalCenter: parent.horizontalCenter
+        sourceSize.width: width
         fillMode: Image.PreserveAspectFit
         source: imgurl
-        z: -5
     }
 
-    Image {
-        id: tick
-        source: "qrc:/gcompris/src/core/resource/apply.svg"
-        sourceSize.width: cardImage.width / 3
-        sourceSize.height: cardImage.width / 3
-        visible: false
-
-        anchors {
-            leftMargin: cardItem.right - 0.01
-            bottomMargin: parent.top - 10
-        }
-    }
-    Image {
-        id: cardImage
-        anchors.top: wordPic.bottom
-        anchors.topMargin: -30 * ApplicationInfo.ratio
-        sourceSize.width: cardItem.width - 10
-        fillMode: Image.PreserveAspectFit
-        source: Activity.resUrl2 + "cloud.svg"
-        z: (state == 'marked') ? 1 : -1
+    Rectangle {
+        id: cardBg
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.bottom
+        width: wordPic.width
+        height: wordPic.height * 0.5
+        radius: 10 * ApplicationInfo.ratio
+        color: "#E0FFFFFF"
 
         GCText {
             id: textItem
-            z: 11
-            // textFound is the rich text with letter found, spelling is the text in the dataset
-            text:"<font color=\"#2a2a2a\">" + (selected ? textFound : spelling) + "</font>"
-            property string textFound: spelling
-            textFormat: Text.RichText
+            text: spelling
             font.pointSize: NaN  // need to clear font.pointSize explicitly
-            font.pixelSize: spelling.length > 5 ? (spelling.length > 7 ? cardImage.width * 0.19 : cardImage.width * 0.25): cardImage.width * 0.30
+            fontSizeMode: Text.Fit
+            minimumPixelSize: 10
+            font.pixelSize: cardBg.width * 0.30
             font.bold: true
             style: Text.Outline
-            width: cardImage.width
-            height: cardImage.height
+            width: cardBg.width
+            height: cardBg.height
             wrapMode: spelling.indexOf(' ') === -1 ? Text.WrapAnywhere : Text.WordWrap
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
             styleColor: "white"
         }
 
-        states:
-            State {
-                name: "marked"; when: selected && mouseActive
-                PropertyChanges {
-                    target: tick
-                    visible: true
-                }
-            }
-
         SequentialAnimation {
             id: successAnimation
             running: selected
             loops: 2
             NumberAnimation {
-                target: cardImage
+                target: cardBg
                 easing.type: Easing.InOutQuad
                 property: "rotation"
                 to: 20; duration: 500
             }
             NumberAnimation {
-                target: cardImage
+                target: cardBg
                 easing.type: Easing.InOutQuad
                 property: "rotation"; to: -20
                 duration: 500
@@ -111,25 +99,28 @@ Item {
             }
         }
 
-        SequentialAnimation {
-            id: failureAnimation
-            NumberAnimation {
-                target: cardImage
-                property: "opacity"
-                to: 1; duration: 400
-            }
-        }
-
         NumberAnimation {
             id: rotationStop
             running: !selected
-            target: cardImage
+            target: cardBg
             property: "rotation"
             to: 0
             duration: 500
             easing.type: Easing.Linear
         }
+    }
 
+    Image {
+        id: tick
+        source: "qrc:/gcompris/src/core/resource/apply.svg"
+        sourceSize.width: cardBg.width / 3
+        sourceSize.height: cardBg.width / 3
+        visible: selected
+
+        anchors {
+            leftMargin: cardItem.right - 0.01
+            bottomMargin: parent.top - 10
+        }
     }
 
     MouseArea {
@@ -141,6 +132,14 @@ Item {
         }
     }
 
+    NumberAnimation {
+        id: refreshItem
+        target: cardItem
+        property: "opacity"
+        to: 1
+        duration: 10
+    }
+
     function playWord() {
         var locale = ApplicationInfo.getVoicesLocale(items.locale)
         activity.audioVoices.append(
@@ -148,14 +147,12 @@ Item {
     }
 
     function select() {
-        if(mouseActive && !successAnimation.running) {
+        refreshItem.restart();
+        if(mouseActive) {
             if (Activity.checkWord(index)) {
                 successAnimation.restart();
                 if(selected)
                     playWord();
-            }
-            else {
-                failureAnimation.restart()
             }
         }
     }

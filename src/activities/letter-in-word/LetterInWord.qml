@@ -1,12 +1,14 @@
 /* GCompris - LetterInWord.qml
  *
- * Copyright (C) 2014 Holger Kaelberer  <holger.k@elberer.de>
- *               2016 Akshat Tandon     <akshat.tandon@research.iiit.ac.in>
+ * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de>
+ *               2016 Akshat Tandon <akshat.tandon@research.iiit.ac.in>
+ *               2020 Timothée Giet <animtim@gmail.com>
+
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de> (Click on Letter - Qt Quick port)
- *   Akshat Tandon    <akshat.tandon@research.iiit.ac.in> (Modifications to Click on Letter code
- *                                                           to make Letter in which word activity)
+ *   Akshat Tandon <akshat.tandon@research.iiit.ac.in> (Adapt Click on Letter to make Letter in which word)
+ *   Timothée Giet <animtim@gmail.com> (Refactoring, fixes and improvements)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -47,8 +49,6 @@ ActivityBase {
         property string locale: "system"
 
         property bool englishFallback: false
-
-        property bool keyboardMode: false
 
         signal start
         signal stop
@@ -290,7 +290,7 @@ ActivityBase {
                 anchors.centerIn: planeText
                 anchors.top: parent.top
                 source: Activity.resUrl + "plane.svg"
-                sourceSize.height: itemHeight
+                sourceSize.height: repeatItem.width
             }
 
             GCText {
@@ -336,10 +336,6 @@ ActivityBase {
             }
         }
 
-        Keys.onReleased: {
-            keyboardMode = true
-            event.accepted = false
-        }
         Keys.onSpacePressed: wordsView.currentItem.select();
         Keys.onTabPressed: repeatItem.clicked();
         Keys.onEnterPressed: ok.clicked();
@@ -353,8 +349,28 @@ ActivityBase {
             id: wordsModel
         }
 
-        property int itemWidth: Math.min(parent.width / 7.5, parent.height / 6.5)
-        property int itemHeight: itemWidth * 1.11
+        property int itemWidth: fitItems(wordsView.width, wordsView.height, wordsView.count);
+
+        function fitItems(x_, y_, n_) {
+            var sx
+            var sy
+
+            var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
+            if (Math.floor(px * y_ / x_) * px < n_) {
+                sx = y_ / Math.ceil(px * y_ / x_);
+            } else {
+                sx = x_ / px;
+            }
+
+            var py = Math.ceil(Math.sqrt(n_ * y_ / x_));
+            if (Math.floor(py * x_ / y_) * py < n_) {
+                sy = x_ / Math.ceil(x_ *  py / y_);
+            } else {
+                sy = y_ / py;
+            }
+
+            return Math.max(sx, sy);
+        }
 
         GridView {
             id: wordsView
@@ -362,21 +378,24 @@ ActivityBase {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: planeText.bottom
-            anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.leftMargin: 15 * ApplicationInfo.ratio
-            anchors.rightMargin: 15 * ApplicationInfo.ratio
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            cellWidth: itemWidth + 25 * ApplicationInfo.ratio
-            cellHeight: itemHeight + 15 * ApplicationInfo.ratio
+            anchors.topMargin: 0
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: bar.height * 0.5
+            cellWidth: background.itemWidth
+            cellHeight: background.itemWidth
             clip: false
             interactive: false
-            //verticalLayoutDirection: GridView.BottomToTop
             layoutDirection: Qt.LeftToRight
-
+            currentIndex: -1
+            //highlight: gridHighlight  //simulated inside the Card, see comment below...
+            highlightFollowsCurrentItem: true
             keyNavigationWraps: true
             model: wordsModel
             delegate: Card {
                 width: background.itemWidth
+                height: background.itemWidth
+                isHighlighted: wordsView.currentIndex === index
                 Connections {
                     target: bonus
                     onStart: {
@@ -387,25 +406,29 @@ ActivityBase {
                     }
                 }
             }
-
-            highlight: Rectangle {
-                width: wordsView.cellWidth - wordsView.spacing
-                height: wordsView.cellHeight - wordsView.spacing
-                color:  "#AAFFFFFF"
-                border.width: 3
-                border.color: "black"
-                visible: background.keyboardMode
-                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
-            }
         }
+
+//  The highlight is not used because it makes the rendering order of items inside the Card randomly wrong.
+//  keeping it commented in case it is fixed in Qt someday...
+//         Component {
+//             id: gridHighlight
+//             Rectangle {
+//                 width: background.itemWidth
+//                 height: background.itemWidth
+//                 color:  "#AAFFFFFF"
+//                 x: wordsView.currentItem.x
+//                 y: wordsView.currentItem.y
+//                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+//                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+//             }
+//         }
 
         BarButton {
             id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: wordsView.cellWidth*0.8
+            width: repeatItem.width
             height: width
-            sourceSize.width: wordsView.cellWidth
+            sourceSize.width: width
             anchors {
                 right: parent.right
                 rightMargin: 3 * ApplicationInfo.ratio

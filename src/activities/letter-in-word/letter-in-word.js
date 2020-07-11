@@ -2,10 +2,12 @@
  *
  * Copyright (C) 2014 Holger Kaelberer
  *               2016 Akshat Tandon
+ *               2020 Timothée Giet
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of click-on-letter)
  *   Akshat Tandon    <akshat.tandon@research.iiit.ac.in>
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -29,7 +31,6 @@
 
 var url = "qrc:/gcompris/src/activities/letter-in-word/resource/"
 var resUrl = "qrc:/gcompris/src/activities/braille_fun/resource/"
-var resUrl2 = "qrc:/gcompris/src/activities/click_on_letter/resource/"
 
 var levels;
 var currentLevel;
