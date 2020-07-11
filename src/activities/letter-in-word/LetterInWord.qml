@@ -411,12 +411,7 @@ ActivityBase {
                 rightMargin: 3 * ApplicationInfo.ratio
                 bottom: wordsView.bottom
             }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    Activity.checkAnswer();
-                }
-            }
+            onClicked: Activity.checkAnswer();
         }
 
         JsonParser {
