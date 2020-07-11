@@ -67,6 +67,10 @@ Item {
         rootItem.opacity = 1
     }
 
+    function restoreMinigameFocus() {
+        miniGameLoader.item.restoreFocus();
+    }
+
     function stop() {
         focus = false
         rootItem.opacity = 0

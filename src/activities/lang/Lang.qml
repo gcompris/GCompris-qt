@@ -36,6 +36,14 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    // When opening a dialog, it steals the focus and re set it to the activity.
+    // We need to set it back to the active item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusEventInput();
+        }
+    }
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"

@@ -217,7 +217,7 @@ Image {
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
-        
+
         Rectangle{
             id: menusMask
             visible: false

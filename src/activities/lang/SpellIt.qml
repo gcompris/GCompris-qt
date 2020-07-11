@@ -55,6 +55,11 @@ Item {
         return SpellActivity.init(loadedItems_, wordList_, mode_);
     }
 
+    function restoreFocus() {
+        if(!ApplicationInfo.isMobile)
+            answer.forceActiveFocus();
+    }
+
     onGoodWordChanged: Activity.playWord(goodWord.voice)
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }

@@ -51,6 +51,10 @@ Item {
         return QuizActivity.init(loadedItems_, wordList_, mode_)
     }
 
+    function restoreFocus() {
+        background.forceActiveFocus();
+    }
+
     onGoodWordChanged: Activity.playWord(goodWord.voice)
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
@@ -64,7 +68,7 @@ Item {
         anchors.fill: parent
 
         property bool keyNavigation: false
-        
+
         Keys.enabled: !quiz.buttonsBlocked
 
         Keys.onEscapePressed: {
