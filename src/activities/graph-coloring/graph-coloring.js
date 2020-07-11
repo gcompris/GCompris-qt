@@ -355,3 +355,8 @@ function previousLevel() {
     }
     initLevel();
 }
+
+function focusEventInput() {
+    if (items && items.eventHandler)
+        items.eventHandler.forceActiveFocus();
+}

@@ -31,6 +31,14 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    // When opening a dialog, it steals the focus and re set it to the activity.
+    // We need to set it back to the eventHandler item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusEventInput()
+        }
+    }
+
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -68,6 +76,7 @@ ActivityBase {
             property string mode: "color"
             property var currentKeyZone: graphRect
             property bool keyNavigationMode: false
+            property alias eventHandler: eventHandler
         }
 
         onStart: {
