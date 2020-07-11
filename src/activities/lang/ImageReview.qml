@@ -143,6 +143,9 @@ Item {
         imageReview.nextWord()
         event.accepted = true
     }
+    Keys.onTabPressed: {
+        repeatItem.clicked()
+    }
 
     Keys.onReleased: {
         if (event.key === Qt.Key_Back) {

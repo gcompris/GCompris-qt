@@ -67,6 +67,9 @@ Item {
     Keys.onEscapePressed: {
         imageReview.start()
     }
+    Keys.onTabPressed: {
+        repeatItem.clicked()
+    }
 
     Image {
         id: background
