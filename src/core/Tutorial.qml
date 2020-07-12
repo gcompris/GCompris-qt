@@ -106,16 +106,16 @@ Item {
     Keys.onPressed: {
         if(event.key === Qt.Key_Left && previousButton.visible) {
             previousButton.clicked();
-        }
-        if(event.key === Qt.Key_Right) {
+        } else if(event.key === Qt.Key_Right && nextButton.visible) {
+            nextButton.clicked();
+        } else if(event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+            skipButton.clicked();
+        } else if(event.key === Qt.Key_Space) {
             if(nextButton.visible) {
                 nextButton.clicked();
             } else {
                 skipButton.clicked();
             }
-        }
-        if(event.key === Qt.Key_Space || event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
-            skipButton.clicked();
         }
     }
 
