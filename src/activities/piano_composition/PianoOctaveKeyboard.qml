@@ -162,10 +162,26 @@ Item {
         id: keyRepeater
         model: whiteKeyNoteLabels.length ? whiteKeyNoteLabels[currentOctaveNb % whiteKeyNoteLabels.length].length : 0
 
+        property int keyboardOffset: piano.numberOfWhite - whiteKeyNoteLabels[0].length
+
+        function playKey(keyboardKey, color) {
+             var keyToPress;
+             if(currentOctaveNb === 0)
+                 keyToPress = keyboardKey - keyRepeater.keyboardOffset;
+             else
+                 keyToPress = keyboardKey;
+             if(itemAt(keyToPress) === null)
+                 return
+             if(color === "white")
+                itemAt(keyToPress).whiteKey.keyPressed();
+             else if(itemAt(keyToPress).blackKey.visible)
+                 itemAt(keyToPress).blackKey.keyPressed();
+        }
+
         Item {
             width: whiteWidth
             height: whiteHeight
-            x: (((currentOctaveNb === 0) ? (piano.numberOfWhite - whiteKeyNoteLabels[0].length + index) : index)) * whiteWidth
+            x: ((currentOctaveNb === 0) ? (keyRepeater.keyboardOffset + index) : index) * whiteWidth
 
             property alias whiteKey: whiteKey
             property alias blackKey: blackKey

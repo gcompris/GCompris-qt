@@ -33,26 +33,23 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Familiarity with note naming conventions, note-names activity useful to learn this notation.")
   //: Help manual
-  manual: qsTr("This activity has several levels, each level adds a new functionality to the previous level. 
+  manual: qsTr("This activity has several levels, each level adds a new functionality to the previous level.
   Level 1: Basic piano keyboard (white keys only) and students can experiment with clicking the colored rectangle keys to write music.
   Level 2: The musical staff switches to bass clef, so pitches are lower than in previous level.
   Level 3: Option to choose between treble and bass clef, addition of black keys (sharp keys).
   Level 4: Flat notation used for black keys.
   Level 5: Option to select note duration (whole, half, quarter, eighth notes).
   Level 6: Addition of rests (whole, half, quarter, eighth rests)
-  Level 7: Load children's melodies from around the world and also save your composition.
-
-The following keyboard bindings work in this game:
-- backspace: undo
-- delete: erase attempt
-- enter/return: OK button
-- space bar: play
-- left/right arrow keys: switch keyboard octave
-- number keys:
-  - 1 to 8: Corresponding white keys in the order on the displayed octave.
-  - F1 to F5: Corresponding black keys in the order on the displayed octave.
-")
-  credit: qsTr("The synthesizer original code is https://github.com/vsr83/miniSynth")
+  Level 7: Load children's melodies from around the world and also save your composition.") + ("<br><br>") +
+    qsTr("<b>Keyboard controls:</b>") + ("<br>") +
+    qsTr("-backspace: undo") + ("<br>") +
+    qsTr("-delete: erase attempt")+ ("<br>") +
+    qsTr("-enter/return: OK button") + ("<br>") +
+    qsTr("-space bar: play") + ("<br>") +
+    qsTr("-left/right arrow keys: switch keyboard octave") + ("<br>") +
+    qsTr("-numbers 1 to 7: white keys") + ("<br>") +
+    qsTr("-F2 to F7: black keys")
+  credit: qsTr("The synthesizer original code is from https://github.com/vsr83/miniSynth")
   section: "discovery music"
   createdInVersion: 9500
 }

@@ -61,18 +61,18 @@ ActivityBase {
             keyboardBindings[Qt.Key_5] = 4
             keyboardBindings[Qt.Key_6] = 5
             keyboardBindings[Qt.Key_7] = 6
-            keyboardBindings[Qt.Key_F1] = 1
-            keyboardBindings[Qt.Key_F2] = 2
-            keyboardBindings[Qt.Key_F3] = 3
-            keyboardBindings[Qt.Key_F4] = 4
-            keyboardBindings[Qt.Key_F5] = 5
+            keyboardBindings[Qt.Key_F2] = 1
+            keyboardBindings[Qt.Key_F3] = 2
+            keyboardBindings[Qt.Key_F5] = 4
+            keyboardBindings[Qt.Key_F6] = 5
+            keyboardBindings[Qt.Key_F7] = 6
 
-            if(event.key >= Qt.Key_1 && event.key <= Qt.Key_7 && keyboardBindings[event.key] < piano.whiteKeyNoteLabels.length) {
-                piano.keyRepeater.itemAt(keyboardBindings[event.key]).whiteKey.keyPressed()
+            if(event.key >= Qt.Key_1 && event.key <= Qt.Key_7) {
+                piano.keyRepeater.playKey(keyboardBindings[event.key], "white");
             }
-            else if(event.key >= Qt.Key_F1 && event.key <= Qt.Key_F5) {
+            else if(event.key >= Qt.Key_F2 && event.key <= Qt.Key_F7) {
                 if(piano.blackKeysEnabled)
-                    findBlackKey(keyboardBindings[event.key])
+                    piano.keyRepeater.playKey(keyboardBindings[event.key], "black");
             }
             if(event.key === Qt.Key_Left && shiftKeyboardLeft.visible) {
                 piano.currentOctaveNb--
@@ -88,17 +88,6 @@ ActivityBase {
             }
             if(event.key === Qt.Key_Space) {
                 multipleStaff.play()
-            }
-        }
-
-        function findBlackKey(keyNumber) {
-            for(var i = 0; keyNumber; i++) {
-                if(piano.keyRepeater.itemAt(i) === undefined)
-                    break
-                if(piano.keyRepeater.itemAt(i).blackKey.visible)
-                    keyNumber--
-                if(keyNumber === 0)
-                    piano.keyRepeater.itemAt(i).blackKey.keyPressed()
             }
         }
 
@@ -257,13 +246,13 @@ ActivityBase {
             upVisible: multipleStaff.flickableStaves.visibleArea.yPosition > 0
             downVisible: (multipleStaff.flickableStaves.visibleArea.yPosition + multipleStaff.flickableStaves.visibleArea.heightRatio) < 1
         }
-        
+
         Item {
             id: pianoLayout
             width: multipleStaff.width + multipleStaffFlickButton.width
             height: multipleStaff.height
             anchors.margins: layoutMargins
-            
+
             PianoOctaveKeyboard {
                 id: piano
                 height: parent.height
@@ -275,7 +264,7 @@ ActivityBase {
                 blackKeysEnabled: bar.level > 2
                 visible: !background.isLyricsMode
                 currentOctaveNb: (background.clefType === "Bass") ? 0 : 1
-                
+
                 onNoteClicked: {
                     parent.addMusicElementAndPushToStack(note, currentType)
                 }
@@ -286,7 +275,7 @@ ActivityBase {
                     elementType = "rest"
                     else if(elementType === undefined)
                         elementType = "note"
-                        
+
                         var tempModel = multipleStaff.createNotesBackup()
                         Activity.pushToStack(tempModel)
                         multipleStaff.addMusicElement(elementType, noteName, noteType, false, true, background.clefType)
@@ -330,7 +319,7 @@ ActivityBase {
                 height: parent.height
                 anchors.fill: pianoLayout
             }
-            
+
         }
 
         GCCreationHandler {
@@ -491,7 +480,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-        
+
         states: [
             State {
                 name: "hScreen"
@@ -557,7 +546,6 @@ ActivityBase {
                     anchors.top: multipleStaff.bottom
                 }
             }
-        
         ]
     }
 }
