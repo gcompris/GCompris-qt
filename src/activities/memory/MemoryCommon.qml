@@ -129,8 +129,9 @@ ActivityBase {
             keyNavigationWraps: true
             highlightFollowsCurrentItem: true
             highlight: Rectangle {
-                color: "#AAFFFFFF"
+                color: "#D0FFFFFF"
                 radius: 10
+                scale: 1.1
                 visible: background.keyNavigationVisible
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
