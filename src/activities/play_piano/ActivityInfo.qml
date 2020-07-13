@@ -36,8 +36,14 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Knowledge of musical notation and musical staff. Play the activity named 'Piano Composition' first.")
   //: Help manual
-  manual: qsTr("The notes you see will be played to you. Click on the corresponding keys on the keyboard that match the notes you hear and see.<br>Levels 1-5 will offer treble clef to practice and levels 6-10 will offer bass clef.")
-  credit: qsTr("The synthesizer original code is https://github.com/vsr83/miniSynth")
+  manual: qsTr("The notes you see will be played to you. Click on the corresponding keys on the keyboard that match the notes you hear and see.<br>
+            Levels 1-5 will offer treble clef to practice and levels 6-10 will offer bass clef.") + ("<br><br>") +
+            qsTr("<b>Keyboard controls:</b>") + ("<br>") +
+            qsTr("-backspace or delete: undo") + ("<br>") +
+            qsTr("-space bar: play") + ("<br>") +
+            qsTr("-numbers 1 to 7: white keys") + ("<br>") +
+            qsTr("-F2 to F7: black keys")
+  credit: qsTr("The synthesizer original code is from https://github.com/vsr83/miniSynth")
   section: "discovery music"
   createdInVersion: 9500
 }

@@ -57,20 +57,19 @@ ActivityBase {
             keyboardBindings[Qt.Key_5] = 4
             keyboardBindings[Qt.Key_6] = 5
             keyboardBindings[Qt.Key_7] = 6
-            keyboardBindings[Qt.Key_8] = 7
-            keyboardBindings[Qt.Key_F1] = 1
-            keyboardBindings[Qt.Key_F2] = 2
-            keyboardBindings[Qt.Key_F3] = 3
-            keyboardBindings[Qt.Key_F4] = 4
-            keyboardBindings[Qt.Key_F5] = 5
+            keyboardBindings[Qt.Key_F2] = 1
+            keyboardBindings[Qt.Key_F3] = 2
+            keyboardBindings[Qt.Key_F5] = 4
+            keyboardBindings[Qt.Key_F6] = 5
+            keyboardBindings[Qt.Key_F7] = 6
 
             if(piano.whiteKeysEnabled && !iAmReady.visible) {
                 if(event.key >= Qt.Key_1 && event.key <= Qt.Key_8) {
-                    piano.keyRepeater.itemAt(keyboardBindings[event.key]).whiteKey.keyPressed()
+                    piano.keyRepeater.playKey(keyboardBindings[event.key], "white");
                 }
-                else if(event.key >= Qt.Key_F1 && event.key <= Qt.Key_F5) {
+                else if(event.key >= Qt.Key_F2 && event.key <= Qt.Key_F7) {
                     if(piano.blackKeysEnabled)
-                        findBlackKey(keyboardBindings[event.key])
+                        piano.keyRepeater.playKey(keyboardBindings[event.key], "black");
                 }
                 else if(event.key === Qt.Key_Space) {
                     multipleStaff.play()
@@ -78,17 +77,9 @@ ActivityBase {
                 else if(event.key === Qt.Key_Backspace || event.key === Qt.Key_Delete) {
                     Activity.undoPreviousAnswer()
                 }
-            }
-        }
-
-        function findBlackKey(keyNumber) {
-            for(var i = 0; keyNumber; i++) {
-                if(piano.keyRepeater.itemAt(i) === undefined)
-                    break
-                if(piano.keyRepeater.itemAt(i).blackKey.visible)
-                    keyNumber--
-                if(keyNumber === 0)
-                    piano.keyRepeater.itemAt(i).blackKey.keyPressed()
+            } else if(iAmReady.visible) {
+                iAmReady.visible = false;
+                iAmReady.clicked();
             }
         }
 
@@ -220,6 +211,7 @@ ActivityBase {
                 Activity.checkAnswer(note)
             }
             useSharpNotation: true
+            playPianoActivity: true
         }
 
         Rectangle {

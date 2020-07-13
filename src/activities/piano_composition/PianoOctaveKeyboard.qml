@@ -42,6 +42,7 @@ Item {
     property real blackHeight: 2 * height / 3 // 80
 
     property bool leftOctaveVisible: false
+    property bool playPianoActivity: false //set to true to specify the offset used for keyboard controls for this activity...
 
     property var coloredKeyLabels: ['C', 'D', 'E', 'F', 'G', 'A', 'B']
     // When the labelsColor is inbuilt, the default color mapping will be done, else assign any color externally in the activity. Example: Reference keys in note_names are red colored and all other are white.
@@ -165,17 +166,17 @@ Item {
         property int keyboardOffset: piano.numberOfWhite - whiteKeyNoteLabels[0].length
 
         function playKey(keyboardKey, color) {
-             var keyToPress;
-             if(currentOctaveNb === 0)
-                 keyToPress = keyboardKey - keyRepeater.keyboardOffset;
-             else
-                 keyToPress = keyboardKey;
-             if(itemAt(keyToPress) === null)
-                 return
-             if(color === "white")
+            var keyToPress;
+            if(currentOctaveNb === 0 && !piano.playPianoActivity)
+                keyToPress = keyboardKey - keyRepeater.keyboardOffset;
+            else
+                keyToPress = keyboardKey;
+            if(itemAt(keyToPress) === null)
+                return
+            if(color === "white")
                 itemAt(keyToPress).whiteKey.keyPressed();
-             else if(itemAt(keyToPress).blackKey.visible)
-                 itemAt(keyToPress).blackKey.keyPressed();
+            else if(itemAt(keyToPress).blackKey.visible)
+                itemAt(keyToPress).blackKey.keyPressed();
         }
 
         Item {
