@@ -57,6 +57,7 @@ ActivityBase {
             keyboardBindings[Qt.Key_5] = 4
             keyboardBindings[Qt.Key_6] = 5
             keyboardBindings[Qt.Key_7] = 6
+            keyboardBindings[Qt.Key_8] = 7
             keyboardBindings[Qt.Key_F2] = 1
             keyboardBindings[Qt.Key_F3] = 2
             keyboardBindings[Qt.Key_F5] = 4
