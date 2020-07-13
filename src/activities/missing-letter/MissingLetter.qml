@@ -116,6 +116,8 @@ ActivityBase {
                     text = '';
                 }
             }
+
+            Keys.onTabPressed: Activity.playCurrentWord();
         }
 
         // Buttons with possible answers shown on the left of screen
