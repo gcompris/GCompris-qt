@@ -35,7 +35,7 @@ Item {
         GCDialogCheckBox {
             id: easyModeBox
             width: activityConfiguration.width
-            text: qsTr("Display candy counter")
+            text: qsTr("Display counters")
             checked: easyMode // This is available in all editors.
             onCheckedChanged: {
                 easyMode = checked
