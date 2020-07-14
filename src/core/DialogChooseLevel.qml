@@ -123,7 +123,7 @@ Rectangle {
         } else if(event.key === Qt.Key_Up) {
             scrollItem.up();
         } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
-            if(saveAndStartButton.visible){
+            if(saveAndStartButton.visible) {
                 saveAndStartButton.clicked();
             } else {
                 saveButton.clicked();
@@ -150,7 +150,13 @@ Rectangle {
         difficultiesModel = []
         for(var level in currentActivity.levels) {
             var data = currentActivity.getDataset(currentActivity.levels[level])
-            difficultiesModel.push({"level": currentActivity.levels[level], "enabled": data.enabled, "objective": data.objective, "difficulty": data.difficulty, "selectedInConfig": (chosenLevels.indexOf(currentActivity.levels[level]) != -1)})
+            difficultiesModel.push({
+                "level": currentActivity.levels[level],
+                "enabled": data.enabled,
+                "objective": data.objective,
+                "difficulty": data.difficulty,
+                "selectedInConfig": (chosenLevels.indexOf(currentActivity.levels[level]) != -1)
+            })
         }
         difficultiesRepeater.model = difficultiesModel
 
@@ -306,8 +312,10 @@ Rectangle {
                                 id: objective
                                 width: dialogChooseLevel.width - 30 - difficultyIcon.width - 2 * flick.anchors.margins
                                 text: modelData.objective
-                                checked: modelData.selectedInConfig
-                                onVisibleChanged: if(visible) checked = modelData.selectedInConfig
+                                checked: chosenLevels.indexOf(modelData.level) != -1
+                                onVisibleChanged: {
+                                    if(visible) checked = (chosenLevels.indexOf(modelData.level) != -1)
+                                }
                                 onClicked: {
                                     if(checked) {
                                         chosenLevels.push(modelData.level)
