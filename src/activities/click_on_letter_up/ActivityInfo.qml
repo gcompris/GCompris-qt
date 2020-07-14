@@ -34,9 +34,9 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again by clicking on the mouth icon.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Use Arrow keys to navigate") + ("<br>") +
-          qsTr("-Use Space key to select an item") + ("<br>") +
-          qsTr("-Use Tab key to repeat the question")
+          qsTr("-Arrows: navigate") + ("<br>") +
+          qsTr("-Space: select an item") + ("<br>") +
+          qsTr("-Tab: repeat the question")
   credit: ""
   section: "reading letters"
   createdInVersion: 0

@@ -34,9 +34,9 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Select a color and paint the rectangles as you like to create a drawing.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Use Arrow keys to navigate") + ("<br>") +
-          qsTr("-Use Space or Enter key to paint") + ("<br>") +
-          qsTr("-Use Tab key to switch between the color selector and the painting area")
+          qsTr("-Arrows: navigate") + ("<br>") +
+          qsTr("-Space or Enter: paint") + ("<br>") +
+          qsTr("-Tab: switch between the color selector and the painting area")
   credit: ""
   section: "fun"
   createdInVersion: 4000

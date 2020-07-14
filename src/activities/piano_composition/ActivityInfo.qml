@@ -42,12 +42,12 @@ ActivityInfo {
   Level 6: Addition of rests (whole, half, quarter, eighth rests)
   Level 7: Load children's melodies from around the world and also save your composition.") + ("<br><br>") +
     qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-    qsTr("-backspace: undo") + ("<br>") +
-    qsTr("-delete: erase attempt")+ ("<br>") +
-    qsTr("-enter/return: OK button") + ("<br>") +
-    qsTr("-space bar: play") + ("<br>") +
-    qsTr("-left/right arrow keys: switch keyboard octave") + ("<br>") +
-    qsTr("-numbers 1 to 7: white keys") + ("<br>") +
+    qsTr("-Backspace: undo") + ("<br>") +
+    qsTr("-Delete: erase attempt")+ ("<br>") +
+    qsTr("-Enter or Return: OK button") + ("<br>") +
+    qsTr("-Space: play") + ("<br>") +
+    qsTr("-Left and Right arrows: switch keyboard octave") + ("<br>") +
+    qsTr("-Numbers 1 to 7: white keys") + ("<br>") +
     qsTr("-F2 to F7: black keys")
   credit: qsTr("The synthesizer original code is from https://github.com/vsr83/miniSynth")
   section: "discovery music"

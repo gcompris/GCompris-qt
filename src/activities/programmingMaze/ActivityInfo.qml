@@ -34,17 +34,16 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Can read instructions. Thinking of the path logically")
   //: Help manual
-  manual: qsTr("Choose the instructions from given menu. Arrange the instruction in an
-                order so that they can make the Tux reach to his goal.<br><br>") +
-          qsTr("<b>Keyboard Controls:</b><br><br>") +
-          qsTr("1. <i><u>To navigate through instructions in the current code area having keyboard focus</i></u>:") +
+  manual: qsTr("Choose the instructions from the menu, and arrange them in order to make Tux reach to his goal.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
+          qsTr("1. <i><u>To navigate through instructions in the selected area</i></u>:") +
           qsTr("<ul><li><b>Arrow keys</b></li></ul><br>") +
-          qsTr("2. <i><u>To append an instruction from instruction area to the main/procedure code area</i></u>:") +
+          qsTr("2. <i><u>To append an instruction from the instruction area to the main/procedure code area</i></u>:") +
           qsTr("<ul><li>Select an instruction from the instruction area by pressing <b>SPACE</b>.</li>") +
-          qsTr("<li>Navigate to the code areas by pressing <b>TAB</b>, then press <b>SPACE</b> to append the instruction.</li></ul><br>") +
+          qsTr("<li>Navigate to the code area by pressing <b>TAB</b>, then press <b>SPACE</b> to append the instruction.</li></ul><br>") +
           qsTr("3. <i><u>To add an instruction at any particular position in the main/procedure code area</i></u>:") +
-          qsTr("<ul><li>Navigate to the instruction at that position and press <b>SPACE</b> to add the selected instruction from the instruction area.</li></ul><br>") +
-          qsTr("4. <i><u>To delete the current navigated instruction in the main/procedure code area</i></u>:") +
+          qsTr("<ul><li>Navigate to the instruction at this position and press <b>SPACE</b> to add the selected instruction from the instruction area.</li></ul><br>") +
+          qsTr("4. <i><u>To delete the selected instruction in the main/procedure code area</i></u>:") +
           qsTr("<ul><li><b>DELETE</b>.</li></ul><br>") +
           qsTr("5. <i><u>To edit an instruction in the main/procedure code area</i></u>:") +
           qsTr("<ul><li>Navigate to the instruction to edit using <b>Arrow keys</b>.</li>") +

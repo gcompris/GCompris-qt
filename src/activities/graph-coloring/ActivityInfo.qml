@@ -34,8 +34,8 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Place colors/shapes on the graph so that no two adjacent nodes have the same color. Select a node, then select an item in the list to place it on the node.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Use Right and Left arrow keys to navigate") + ("<br>") +
-          qsTr("-Use Space key to select an item")
+          qsTr("-Right and Left arrows: navigate") + ("<br>") +
+          qsTr("-Space: select an item")
   credit: ""
   section: "discovery logic"
   createdInVersion: 6000
