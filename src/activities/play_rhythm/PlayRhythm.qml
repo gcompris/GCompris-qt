@@ -74,8 +74,24 @@ ActivityBase {
         property int metronomeSpeed: 60000 / multipleStaff.bpmValue - 53
         property real weightOffset: metronome.height * multipleStaff.bpmValue * 0.004
 
-        Keys.onSpacePressed: if (!background.isRhythmPlaying && !bonus.isPlaying)
-                                tempo.tempoPressed()
+        Keys.onSpacePressed: if(!background.isRhythmPlaying && !bonus.isPlaying)
+                                tempo.tempoPressed();
+        Keys.onTabPressed: if(metronome.visible && metronomeOscillation.running)
+                             metronomeOscillation.stop();
+                          else if(metronome.visible && !metronomeOscillation.running)
+                                  metronomeOscillation.start();
+        Keys.onEnterPressed: Activity.initSubLevel();
+        Keys.onReturnPressed: Activity.initSubLevel();
+        Keys.onUpPressed: optionsRow.bpmIncreased();
+        Keys.onDownPressed: optionsRow.bpmDecreased();
+        Keys.onReleased: {
+            if(iAmReady.visible) {
+                iAmReady.visible = false;
+                Activity.initLevel();
+            } else if(event.key === Qt.Key_Up || event.key === Qt.Key_Down) {
+                bpmChangeDelay.restart();
+            }
+        }
 
         Rectangle {
             id: instructionBox
@@ -114,6 +130,15 @@ ActivityBase {
                     Activity.isIntroductoryAudioPlaying = false
                     Activity.initSubLevel()
                 }
+            }
+        }
+
+        Timer {
+            id: bpmChangeDelay
+            interval: 500
+            onTriggered: {
+                Activity.initSubLevel();
+                background.isRhythmPlaying = true;
             }
         }
 
@@ -272,7 +297,7 @@ ActivityBase {
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.verticalCenterOffset: weightOffset
                 }
-                
+
             }
             Image {
                 id: metronomeFront
@@ -283,7 +308,7 @@ ActivityBase {
                 anchors.centerIn: parent
             }
         }
-        
+
         OptionsRow {
             id: optionsRow
             anchors.verticalCenter: tempo.verticalCenter
@@ -299,8 +324,7 @@ ActivityBase {
                 multipleStaff.bpmValue++
             }
             onBpmChanged: {
-                Activity.initSubLevel()
-                background.isRhythmPlaying = true
+                bpmChangeDelay.restart();
             }
         }
 
