@@ -32,7 +32,7 @@ public:
 private:
     int *timbreAmplitudes;
     int *timbrePhases;
-    unsigned int numHarmonics;
+    int numHarmonics;
 };
 
 #endif // LINEARSYNTHESIS_H

@@ -39,7 +39,7 @@ LinearSynthesis::setTimbre(QVector<int> &amplitudes, QVector<int> &phases) {
     numHarmonics = amplitudes.size();
     timbreAmplitudes = new int[numHarmonics];
     timbrePhases = new int[numHarmonics];
-    for(unsigned int i = 0 ; i < numHarmonics ; ++ i) {
+    for(int i = 0 ; i < numHarmonics ; ++ i) {
         timbreAmplitudes[i] = amplitudes[i];
         timbrePhases[i] = phases[i];
     }
@@ -53,7 +53,7 @@ LinearSynthesis::~LinearSynthesis() {
 qreal
 LinearSynthesis::evalTimbre(qreal t) {
     qreal val = 0;
-    for (unsigned int harm = 0; harm < numHarmonics; harm++) {
+    for (int harm = 0; harm < numHarmonics; harm++) {
         int qa_int = timbreAmplitudes[harm];
         int qp_int = timbrePhases[harm];
 
