@@ -42,6 +42,7 @@ class CoreActivityInfoTest : public QObject
 private slots:
     void ActivityInfoTest();
     void ActivityInfoTest_data();
+    void levelsTest();
 };
 
 void CoreActivityInfoTest::ActivityInfoTest_data()
@@ -107,6 +108,35 @@ void CoreActivityInfoTest::ActivityInfoTest()
     ACTIVITY_INFO_TEST_ATTRIBUTE(createdInVersion, CreatedInVersion, int);
 
     delete ApplicationSettingsMock::getInstance();
+}
+
+void CoreActivityInfoTest::levelsTest()
+{
+    // called here to set the static instance object to the mock one
+    ApplicationSettingsMock::getInstance();
+
+    ActivityInfo activityinfo;
+    activityinfo.setName(QStringLiteral("activityTest"));
+    activityinfo.setLevels({QStringLiteral("1,2,3,4,5,6")});
+    QStringList expected;
+    expected << "1" << "2" << "3" << "4" << "5" << "6";
+    QCOMPARE(activityinfo.levels(), expected);
+    QCOMPARE(activityinfo.currentLevels(), expected);
+
+    for(int i = 1 ; i < 7 ; ++ i) {
+        Dataset *d = new Dataset();
+        d->setDifficulty(i);
+        activityinfo.addDataset(QString::number(i), d);
+    }
+
+    activityinfo.enableDatasetsBetweenDifficulties(3, 4);
+    QCOMPARE(activityinfo.minimalDifficulty(), 3);
+    QCOMPARE(activityinfo.maximalDifficulty(), 4);
+
+    for(int i = 1 ; i < 7 ; ++ i) {
+        QVERIFY(activityinfo.getDataset(QString::number(i))->enabled() == (i == 3 || i == 4));
+        delete activityinfo.getDataset(QString::number(i));
+    }
 }
 
 QTEST_MAIN(CoreActivityInfoTest)

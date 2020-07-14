@@ -188,6 +188,7 @@ public:
     void fillDatasets(QQmlEngine *engine);
     void enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 levelMax);
 
+    void addDataset(const QString& name, Dataset *dataset);
     Q_INVOKABLE Dataset *getDataset(const QString& name) const;
 
 signals:

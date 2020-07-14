@@ -235,7 +235,7 @@ void ActivityInfo::fillDatasets(QQmlEngine *engine)
                 dataset->setEnabled(false);
             }
 
-            m_datasets[level] = dataset;
+            addDataset(level, dataset);
         } else {
             qDebug() << "ERROR: failed to load " << m_name << " " << componentRoot.errors();
         }
@@ -262,7 +262,7 @@ void ActivityInfo::computeMinMaxDifficulty()
     quint32 minimalDifficultyFound = 100;
     quint32 maximalDifficultyFound = 0;
     for(const QString &datasetName: m_currentLevels) {
-        Dataset *data = m_datasets[datasetName];
+        Dataset *data = getDataset(datasetName);
         if(minimalDifficultyFound > data->difficulty()) {
             minimalDifficultyFound = data->difficulty();
         }
@@ -307,6 +307,10 @@ void ActivityInfo::enableDatasetsBetweenDifficulties(quint32 levelMin, quint32 l
     }
     setCurrentLevels(newLevels);
     ApplicationSettings::getInstance()->setCurrentLevels(m_name, m_currentLevels, false);
+}
+
+void ActivityInfo::addDataset(const QString& name, Dataset *dataset) {
+    m_datasets[name] = dataset;
 }
 
 Dataset *ActivityInfo::getDataset(const QString& name) const {
