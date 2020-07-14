@@ -32,7 +32,8 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Know how to count")
   //: Help manual
-  manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the middle, then drag pieces of candy to each child's rectangle.")
+  manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the middle, then drag pieces of candy to each child's rectangle.") + ("<br>") +
+    qsTr("If there is a rest, it needs to be placed inside the candy jar.")
   credit: ""
   section: "math arithmetic"
   createdInVersion: 7000
