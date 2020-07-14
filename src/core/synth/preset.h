@@ -19,7 +19,6 @@
 #define PRESET_H
 
 #include "ADSRenvelope.h"
-#include "linearSynthesis.h"
 #include "modulation.h"
 
 #include <QVector>

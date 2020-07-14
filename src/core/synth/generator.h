@@ -25,12 +25,12 @@
 
 #include <QMutex>
 #include <QList>
-#include <QMutableListIterator>
 
-#include "linearSynthesis.h"
 #include "modulation.h"
 #include "ADSRenvelope.h"
-#include "preset.h"
+
+class Preset;
+class LinearSynthesis;
 
 // The state of each active note is described with an Wave object. Wave
 // objects are assembled into the QList<Wave> waveList and removed once

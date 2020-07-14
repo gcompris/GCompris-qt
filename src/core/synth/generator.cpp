@@ -16,8 +16,11 @@
 */
 
 
+#include "preset.h"
+#include "linearSynthesis.h"
 #include "generator.h"
 #include <qendian.h>
+#include <QMutableListIterator>
 
 Generator::Generator(const QAudioFormat &_format, QObject *parent) : QIODevice(parent), format(_format) {
     linSyn = new LinearSynthesis(Waveform::MODE_SIN);
