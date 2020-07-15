@@ -31,10 +31,8 @@ Item {
 
     Rectangle {
         id: questionBg
-        x: questionText.x - 4
-        y: questionText.y - 4
-        width: questionText.width + 8
-        height: questionText.height + 8
+        width: parent.width
+        height: parent.height
         border.color: "black"
         border.width: 2
         radius: 8
@@ -47,12 +45,16 @@ Item {
 
         Behavior on opacity { NumberAnimation { duration: 100 } }
     }
-    
+
     GCText {
         id: questionText
         color: "black"
-        fontSize: largeSize
+        font.pointSize: NaN  // need to clear font.pointSize explicitly
+        fontSizeMode: Text.Fit
+        minimumPixelSize: 10
+        font.pixelSize: parent.width * 0.10
         width: parent.width
+        height: parent.height
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: TextEdit.WordWrap

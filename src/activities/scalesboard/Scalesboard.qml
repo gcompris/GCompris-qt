@@ -77,6 +77,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         property bool isHorizontal: background.width > background.height
+        property bool scoreAtBottom: bar.width * 6 + okButton.width * 1.5 + score.width < background.width
 
         Image {
             id: scaleBoard
@@ -84,6 +85,7 @@ ActivityBase {
             sourceSize.width: isHorizontal ? Math.min(parent.width - okButton.height * 2,
                                                       (parent.height - okButton.height * 2) * 2) : parent.width
             anchors.centerIn: parent
+            anchors.verticalCenterOffset: scoreAtBottom ? 0 : okButton.height * -0.5
         }
 
         Image {
@@ -234,10 +236,11 @@ ActivityBase {
         Question {
             id: question
             parent: scaleBoard
-            anchors.horizontalCenter: parent.horizontalCenter
-            y: parent.height * 0.45
+            anchors.horizontalCenter: scaleBoard.horizontalCenter
+            anchors.top: masseAreaCenter.top
+            anchors.bottom: masseAreaCenter.bottom
             z: 1000
-            width: parent.width - y
+            width: isHorizontal ? parent.width * 0.5 : background.width - 160 * ApplicationInfo.ratio
             answer: items.giftWeight
             visible: (items.question.text && background.scaleHeight === 0) ? true : false
         }
@@ -279,6 +282,7 @@ ActivityBase {
                 id: okButtonMouseArea
                 anchors.fill: parent
                 onClicked: {
+                    console.log("bar width is " + bar.width)
                     if(!bonus.isPlaying)
                         Activity.checkAnswer();
                 }
@@ -308,33 +312,7 @@ ActivityBase {
 
         states: [
             State {
-                name: "horizontalLayout"; when: background.isHorizontal
-                AnchorChanges {
-                    target: score
-                    anchors.top: okButton.bottom
-                    anchors.bottom: undefined
-                    anchors.right: background.right
-                    anchors.verticalCenter: undefined
-                }
-                PropertyChanges {
-                    target: score
-                    anchors.topMargin: 10 * ApplicationInfo.ratio
-                }
-                AnchorChanges {
-                    target: okButton
-                    anchors.horizontalCenter: score.horizontalCenter
-                    anchors.verticalCenter: background.verticalCenter
-                    anchors.bottom: undefined
-                    anchors.right: undefined
-                }
-                PropertyChanges {
-                    target: okButton
-                    anchors.rightMargin: 0
-                    anchors.bottomMargin: 0
-                }
-            },
-            State {
-                name: "verticalLayout"; when: !background.isHorizontal
+                name: "horizontalLayout"; when: background.scoreAtBottom
                 AnchorChanges {
                     target: score
                     anchors.top: undefined
@@ -342,21 +320,43 @@ ActivityBase {
                     anchors.right: okButton.left
                     anchors.verticalCenter: okButton.verticalCenter
                 }
+                AnchorChanges {
+                    target: okButton
+                    anchors.horizontalCenter: undefined
+                    anchors.verticalCenter: bar.verticalCenter
+                    anchors.bottom: undefined
+                    anchors.right: background.right
+                    anchors.left: undefined
+                }
                 PropertyChanges {
+                    target: okButton
+                    anchors.bottomMargin: 0
+                    anchors.rightMargin: okButton.width * 0.5
+                    anchors.verticalCenterOffset: -10
+                }
+            },
+            State {
+                name: "verticalLayout"; when: !background.scoreAtBottom
+                AnchorChanges {
                     target: score
-                    anchors.topMargin: 0
+                    anchors.top: undefined
+                    anchors.bottom: undefined
+                    anchors.right: okButton.left
+                    anchors.verticalCenter: okButton.verticalCenter
                 }
                 AnchorChanges {
                     target: okButton
                     anchors.horizontalCenter: undefined
                     anchors.verticalCenter: undefined
                     anchors.bottom: bar.top
-                    anchors.right: background.right
+                    anchors.right: undefined
+                    anchors.left: background.horizontalCenter
                 }
                 PropertyChanges {
                     target: okButton
-                    anchors.rightMargin: width * 0.2
-                    anchors.bottomMargin: width * 0.3
+                    anchors.bottomMargin: okButton.height * 0.5
+                    anchors.rightMargin: 0
+                    anchors.verticalCenterOffset: 0
                 }
             }
         ]
@@ -376,6 +376,12 @@ ActivityBase {
                 }
             else if(question.visible && !bonus.isPlaying) {
                     numpad.updateAnswer(event.key, true);
+            }
+        }
+
+        Keys.onReleased: {
+            if(question.visible) {
+                numpad.updateAnswer(event.key, false);
             }
         }
 
