@@ -105,6 +105,13 @@ Item {
      */
     property int columnWidth: 80 * ApplicationInfo.ratio
 
+    /**
+     * type:bool
+     *
+     * Enable or disable press input
+     */
+    property bool enableInput: true
+
     signal answer
 
     visible: ApplicationSettings.isVirtualKeyboard
@@ -142,7 +149,7 @@ Item {
                     }
                     width: parent.width * 2
                     enabled: ApplicationSettings.isVirtualKeyboard &&
-                             containerPanel.opacity > 0
+                             containerPanel.opacity > 0 && containerPanel.enableInput
 
                     onClicked: {
                         if(answer.length < maxDigit)

@@ -279,7 +279,8 @@ ActivityBase {
                 id: okButtonMouseArea
                 anchors.fill: parent
                 onClicked: {
-                    Activity.checkAnswer()
+                    if(!bonus.isPlaying)
+                        Activity.checkAnswer();
                 }
             }
         }
@@ -366,20 +367,15 @@ ActivityBase {
             maxDigit: ('' + items.giftWeight).length + 1
             opacity: question.visible ? 1 : 0
             columnWidth: 60 * ApplicationInfo.ratio
+            enableInput: !bonus.isPlaying
         }
 
         Keys.onPressed: {
-            if(okButton.visible && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
+            if(okButton.visible && !bonus.isPlaying && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return)) {
                     Activity.checkAnswer()
                 }
-            else if(question.visible) {
+            else if(question.visible && !bonus.isPlaying) {
                     numpad.updateAnswer(event.key, true);
-            }
-        }
-
-        Keys.onReleased: {
-            if(question.visible) {
-                numpad.updateAnswer(event.key, false);
             }
         }
 
