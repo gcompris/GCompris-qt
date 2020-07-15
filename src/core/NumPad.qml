@@ -36,7 +36,11 @@ import GCompris 1.0
 Item {
 
     id: containerPanel
-    anchors.fill: parent
+    anchors.top: parent.top
+    anchors.bottom: bar.top
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottomMargin: bar.height * 0.2
 
     /**
      * type:list
