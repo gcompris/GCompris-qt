@@ -30,6 +30,13 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    // When opening a dialog, it steals the focus and re set it to the activity.
+    // We need to set it back to the textinput item in order to have key events.
+    signal resetFocus
+    onFocusChanged: {
+        if(focus)
+            resetFocus();
+    }
 
     pageComponent: Image {
         id: background
@@ -41,12 +48,19 @@ ActivityBase {
         sourceSize.height: height
         signal start
         signal stop
+        signal resetFocus
+
+        onResetFocus: {
+            if (!ApplicationInfo.isMobile)
+                textInput.forceActiveFocus();
+        }
 
         property int layoutMargins: 10 * ApplicationInfo.ratio
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
+            activity.resetFocus.connect(resetFocus)
         }
 
         // Add here the QML items you need to access in javascript
