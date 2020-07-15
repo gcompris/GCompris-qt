@@ -23,4 +23,5 @@ import QtQuick 2.6
 
 Gnumch {
     type: "equality"
+    useMultipleDataset: true
 }

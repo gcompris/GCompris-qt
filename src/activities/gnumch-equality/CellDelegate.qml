@@ -23,6 +23,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
+import "gnumch-equality.js" as Activity
 
 Item {
     property Component delegate: cellDelegate
@@ -34,7 +35,7 @@ Item {
 
             property string num1: number1
             property string num2: number2
-            property string operator: activity.operator
+            property string operator: Activity._operator
 
             function setText() {
                 if (activity.type == "equality" || activity.type == "inequality") {
