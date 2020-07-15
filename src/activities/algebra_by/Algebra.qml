@@ -25,7 +25,6 @@ import "algebra.js" as Activity
 ActivityBase {
     id: activity
     property int speedSetting: 5
-    property alias operand: operand
 
     onStart: {
         focus = true;
@@ -46,7 +45,7 @@ ActivityBase {
         }
 
         Item {
-            id: coreItems
+            id: items
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -54,11 +53,20 @@ ActivityBase {
             property alias okButton: okButton
             property alias balloon: balloon
             property alias timer: timer
+            property alias iAmReady: iAmReady
+            property alias firstOp: firstOp
+            property alias secondOp: secondOp
+            property alias numpad: numpad
+            property int result
             property var levels: activity.datasetLoader.data.length !== 0 ? activity.datasetLoader.data : null
             property GCSfx audioEffects: activity.audioEffects
         }
 
-        onStart: Activity.start(coreItems, otherItems, operand, speedSetting)
+        onStart: {
+            Activity.start(items, operand, speedSetting);
+            operand.text = Activity.operandText;
+        }
+
         onStop: Activity.stop()
 
         DialogChooseLevel {
@@ -96,26 +104,22 @@ ActivityBase {
             onTriggered: Activity.run()
         }
 
-        Item {
-            width: background.width - 60 * ApplicationInfo.ratio
-            height: background.height
-            Bar {
-                id: bar
-                content: BarEnumContent { value: (help | home | level | activityConfig) }
-                onHelpClicked: {
-                    displayDialog(dialogHelpLeftRight)
-                }
-                onPreviousLevelClicked: {
-                    Activity.previousLevel()
-                }
-                onNextLevelClicked: {
-                    Activity.nextLevel()
-                }
-                onActivityConfigClicked: {
-                    displayDialog(dialogActivityConfig)
-                }
-                onHomeClicked: home()
+        Bar {
+            id: bar
+            content: BarEnumContent { value: (help | home | level | activityConfig) }
+            onHelpClicked: {
+                displayDialog(dialogHelpLeftRight)
             }
+            onPreviousLevelClicked: {
+                Activity.previousLevel()
+            }
+            onNextLevelClicked: {
+                Activity.nextLevel()
+            }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
+            onHomeClicked: home()
         }
 
         BarButton {
@@ -176,69 +180,61 @@ ActivityBase {
             currentSubLevel: 0
             numberOfSubLevels: 10
         }
-    }
 
-    Item {
-        id: otherItems
-        property alias iAmReady: iAmReady
-        property alias firstOp: firstOp
-        property alias secondOp: secondOp
-        property alias numpad: numpad
-        property int result
-    }
-
-    NumPad {
-        id: numpad
-        onAnswerChanged: Activity.coreItems.okButton.enabled = (answer != "")
-        maxDigit: ('' + otherItems.result).length + 1
-    }
-
-    ReadyButton {
-        id: iAmReady
-        onClicked: Activity.run()
-    }
-
-    Flow {
-        id: textFlow
-        x: parent.width / 2 - width / 2
-        y: 80
-        width: parent.width / 2
-        height: 100
-        anchors.margins: 4
-        spacing: 10
-
-        AlgebraText {
-            id: firstOp
-            visible: !iAmReady.visible
+        NumPad {
+            id: numpad
+            onAnswerChanged: Activity.items.okButton.enabled = (answer != "")
+            maxDigit: ('' + items.result).length + 1
         }
 
-        AlgebraText {
-            id: operand
-            visible: firstOp.visible
+        ReadyButton {
+            id: iAmReady
+            onClicked: Activity.run()
         }
 
-        AlgebraText {
-            id: secondOp
-            visible: !iAmReady.visible
+        Flow {
+            id: textFlow
+            x: parent.width / 2 - width / 2
+            y: 80
+            width: parent.width / 2
+            height: 100
+            anchors.margins: 4
+            spacing: 10
+
+            AlgebraText {
+                id: firstOp
+                visible: !iAmReady.visible
+            }
+
+            AlgebraText {
+                id: operand
+                visible: firstOp.visible
+            }
+
+            AlgebraText {
+                id: secondOp
+                visible: !iAmReady.visible
+            }
+
+            AlgebraText {
+                id: equals
+                visible: firstOp.visible
+                text: "="
+            }
+
+            AlgebraText {
+                id: result
+                visible: !iAmReady.visible
+                text: numpad.answer
+            }
         }
 
-        AlgebraText {
-            id: equals
-            visible: firstOp.visible
-            text: "="
+        Keys.onPressed: {
+            numpad.updateAnswer(event.key, true);
         }
 
-        AlgebraText {
-            id: result
-            visible: !iAmReady.visible
-            text: numpad.answer
+        Keys.onReleased: {
+            numpad.updateAnswer(event.key, false);
         }
-    }
-    Keys.onPressed: {
-        numpad.updateAnswer(event.key, true);
-    }
-
-    Keys.onReleased: {
-        numpad.updateAnswer(event.key, false);
     }
 }

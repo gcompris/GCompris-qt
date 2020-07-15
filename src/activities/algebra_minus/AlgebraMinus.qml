@@ -27,6 +27,6 @@ import "../algebra_by/algebra.js" as Activity
 
 Algebra {
     onStart: {
-        operand.text = Activity.OperandsEnum.MINUS_SIGN
+        Activity.operandText = Activity.OperandsEnum.MINUS_SIGN
     }
 }

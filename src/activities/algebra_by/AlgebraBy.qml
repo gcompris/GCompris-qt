@@ -27,6 +27,6 @@ import "algebra.js" as Activity
 
 Algebra {
     onStart: {
-        operand.text = Activity.OperandsEnum.TIMES_SIGN
+        Activity.operandText = Activity.OperandsEnum.TIMES_SIGN
     }
 }

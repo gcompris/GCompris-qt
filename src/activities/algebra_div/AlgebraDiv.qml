@@ -26,6 +26,6 @@ import "../algebra_by/algebra.js" as Activity
 
 Algebra {
     onStart: {
-        operand.text = Activity.OperandsEnum.DIVIDE_SIGN
+        Activity.operandText = Activity.OperandsEnum.DIVIDE_SIGN
     }
 }
