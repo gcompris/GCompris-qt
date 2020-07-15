@@ -30,6 +30,7 @@ ActivityBase {
 
     property string type
     property string operator
+    property bool useMultipleDataset: false
 
     focus: true
     operator: " + "
@@ -72,6 +73,8 @@ ActivityBase {
             initLevel();
         }
 
+property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
+
         function initLevel() {
             topPanel.life.opacity = 1;
             forceActiveFocus();
@@ -79,7 +82,12 @@ ActivityBase {
             operator = Activity._operator;
             topPanel.goal = Activity.getGoal();
             stopLevel();
-            if (Activity._currentLevel % 6 !== 0) {
+
+            if(useMultipleDataset){
+                if(levels[Activity._currentLevel].spawnMonsters)
+                    spawningMonsters.restart();
+            }
+            else if (Activity._currentLevel  !== 0) {
                 spawningMonsters.restart();
             }
         }
@@ -96,13 +104,15 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
         onStart: {
-            Activity.start(modelCells, topPanel.bar, bonus, type, operator);
+            Activity.start(modelCells, topPanel.bar, bonus, type, operator, levels, useMultipleDataset);
             initLevel();
+            topPanel.useMultipleDataset = useMultipleDataset
         }
         onStop: {
             monsters.destroyAll()
@@ -372,9 +382,29 @@ ActivityBase {
             }
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
+            }
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         TopPanel {
             id: topPanel
             goal: Activity.getGoal() ? Activity.getGoal() : 0
+            useMultipleDataset: useMultipleDataset
         }
 
         WarnMonster {
@@ -394,7 +424,8 @@ ActivityBase {
             id: bonus
 
             onStop: {
-                parent.nextLevel();
+                if(isWin === true)
+                    parent.nextLevel();
             }
         }
     }

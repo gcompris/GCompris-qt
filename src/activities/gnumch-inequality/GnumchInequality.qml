@@ -26,4 +26,5 @@ import "../gnumch-equality/"
 
 Gnumch {
     type: "inequality"
+    useMultipleDataset: true
 }

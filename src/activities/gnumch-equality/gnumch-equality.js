@@ -23,31 +23,35 @@
 .import QtQuick 2.6 as Quick
 
 var _currentLevel = 0
-var _numberOfLevel = 14
+var _numberOfLevel
 var _main
 var _bar
 var _bonus
 var _type
 var _operator
 var _modelCells
+var _levels
+var _useMultipleDataset
 
-function start(modelCells, bar, bonus, type, operator) {
+function start(modelCells, bar, bonus, type, operator, levels, useMultipleDataset) {
+    _levels = levels
+    _useMultipleDataset = useMultipleDataset
     _bar = bar
     _bonus = bonus
     _currentLevel = 0
     _type = type
     _operator = operator
     _modelCells = modelCells
-    if (type != "equality" && type != "inequality") {
-        _numberOfLevel = 8
-    }
+    _numberOfLevel = (_useMultipleDataset) ? levels.length : 8
 }
 
 function stop() {
 }
 
 function initLevel() {
-    _operator = _currentLevel < 7 ? " + " : " - ";
+    if(_type === "equality" || _type === "inequality") {
+    _operator = _levels[_currentLevel].operator
+    }
     fillAllGrid();
     _bar.level = _currentLevel + 1;
 }
@@ -66,11 +70,8 @@ function previousLevel() {
 
 function getGoal() {
     var goal
-    if (_type == "equality" || _type == "inequality") {
-        goal = _currentLevel + 6
-        if (_currentLevel > 6) {
-            goal = _currentLevel - 1
-        }
+    if (_type === "equality" || _type === "inequality") {
+        goal = _levels[_currentLevel].goal
     } else if (_type == "multiples") {
         goal = _currentLevel + 2
     } else if (_type == "factors") {

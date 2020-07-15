@@ -26,6 +26,7 @@ import "../../core"
 
 Rectangle {
     property int goal
+    property bool useMultipleDataset
     property var muncherLife: muncherLife
     property var life: life
     property var bar: bar
@@ -97,11 +98,12 @@ Rectangle {
         id: bar
 
         content: BarEnumContent {
-            value: help | home | level
+            value: (useMultipleDataset) ? (help | home | level | activityConfig) : (help | home | level)
         }
         onHelpClicked: displayDialog(dialogHelp)
         onPreviousLevelClicked: background.previousLevel()
         onNextLevelClicked: background.nextLevel()
         onHomeClicked: activity.home()
+        onActivityConfigClicked: displayDialog(dialogActivityConfig)
     }
 }
