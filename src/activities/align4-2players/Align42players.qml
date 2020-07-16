@@ -66,7 +66,7 @@ ActivityBase {
             property alias rows: grid.rows
             property alias trigTuxMove: trigTuxMove
             property int cellSize: background.width <= background.height ? (background.width / (columns + 3)) : (background.height / (rows + 4))
-            property bool gameDone
+            property bool gameDone: false
             property int counter
             property int nextPlayerStart: 1
         }
@@ -74,10 +74,18 @@ ActivityBase {
         onStart: { Activity.start(items, twoPlayer) }
         onStop: { Activity.stop() }
 
-        Keys.onRightPressed: Activity.moveCurrentIndexRight();
-        Keys.onLeftPressed: Activity.moveCurrentIndexLeft();
-        Keys.onDownPressed: Activity.handleDrop(Activity.currentLocation);
-        Keys.onSpacePressed: Activity.handleDrop(Activity.currentLocation);
+        Keys.onPressed: {
+            if(drop.running || bonus.isPlaying || (items.counter % 2 != 0 && !twoPlayer))
+                return
+            if(items.gameDone && !bonus.isPlaying)
+                Activity.reset();
+            if(event.key === Qt.Key_Right)
+                Activity.moveCurrentIndexRight();
+            else if(event.key === Qt.Key_Left)
+                Activity.moveCurrentIndexLeft();
+            else if(event.key === Qt.Key_Down || event.key === Qt.Key_Space)
+                Activity.handleDrop(Activity.currentLocation);
+        }
 
         ListModel {
             id: pieces
@@ -133,7 +141,7 @@ ActivityBase {
 
             Piece {
                 id: fallingPiece
-                state: items.gameDone ? "invisible" : items.counter % 2 ? "2": "1"
+                state: items.counter % 2 ? "2": "1"
                 sourceSize.width: items.cellSize
 
                 Behavior on x { PropertyAnimation { duration: 200 } }
