@@ -388,7 +388,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            level: 1
+            level: 0
             content: BarEnumContent { value: help | home | level | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
