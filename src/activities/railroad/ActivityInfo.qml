@@ -2,6 +2,7 @@
  *
  * Copyright (C) 2017 Utkarsh Tiwari <iamutkarshtiwari@kde.org>
  * Copyright (C) 2018 Amit Sagtani <asagtani06@gmail.com>
+ * Copyright (C) 2020 Timothée Giet <animtim@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -26,19 +27,19 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Railroad activity")
   //: Help title
-  description: qsTr("Rebuild the displayed train at the top of the screen by dragging the appropriate carriages and locomotive. Deselect an item by dragging it down.")
+  description: qsTr("Rebuild the displayed train at the top of the screen.")
   //intro: "Observe the train and then click on the items to set up a similar train"
   //: Help goal
   goal: qsTr("Memory training")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("A train - a locomotive and carriage(s) - is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by dragging the appropriate carriages and locomotive. Deselect an item by dragging it down.<br><br>") +
+  manual: qsTr("A train is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by dragging the appropriate items. Remove an item from the answer area by dragging it down.<br><br>") +
           qsTr("<b>Keyboard Controls:</b><br>") +
-          qsTr("-Arrows: navigate in the answer or sample area<br>") +
-          qsTr("-Enter or Return: submit the answer<br>") +
+          qsTr("-Arrows: navigate in the sample area and in the answer area<br>") +
           qsTr("-Space: add an item from the samples to the answer area, or swap two items in the answer area<br>") +
-          qsTr("-Delete: remove a wagon or locomotive from the answer area")
+          qsTr("-Delete or Backspace: remove the selected item from the answer area") +
+          qsTr("-Enter or Return: submit the answer<br>")
   credit: ""
   section: "discovery logic"
   createdInVersion: 9500

@@ -55,14 +55,15 @@ var dataset = {
 }
 
 function start(items_) {
-    items = items_
-    currentLevel = 0
+    items = items_;
+    currentLevel = 0;
     items.score.numberOfSubLevels = dataset["numberOfSubLevels"];
     items.score.currentSubLevel = 1;
-    initLevel()
+    initLevel();
 }
 
 function stop() {
+    items.trainAnimationTimer.stop();
 }
 
 function initLevel() {
@@ -101,15 +102,15 @@ function initLevel() {
         }
     }
     if(items.introMessage.visible === false && isNewLevel) {
-        items.trainAnimationTimer.start()
+        items.trainAnimationTimer.start();
     }
     items.bar.level = currentLevel + 1;
-    items.trainAnimationTimer.interval = dataset["memoryTime"][currentLevel] * 1000
+    items.trainAnimationTimer.interval = dataset["memoryTime"][currentLevel] * 1000;
 }
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
-        currentLevel = 0
+        currentLevel = 0;
     }
     items.score.currentSubLevel = 1;
     isNewLevel = true;
@@ -118,7 +119,7 @@ function nextLevel() {
 
 function previousLevel() {
     if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
+        currentLevel = numberOfLevel - 1;
     }
     items.score.currentSubLevel = 1;
     isNewLevel = true;
@@ -177,8 +178,8 @@ function addWagon(uniqueID, dropIndex) {
 function getDropIndex(x) {
     var count = items.listModel.count;
     for (var index = 0; index < count; index++) {
-        var xVal = items.answerZone.cellWidth * index
-        var itemWidth = items.answerZone.cellWidth
+        var xVal = items.answerZone.cellWidth * index;
+        var itemWidth = items.answerZone.cellWidth;
         if(x < xVal && index == 0) {
             return 0;
         }
@@ -196,9 +197,9 @@ function generateUniqueId() {
     uniqueId = [];
     var index;
     for(index = 0; index < dataset["noOfLocos"][currentLevel]; index++) {
-        uniqueId.push("loco" + index)
+        uniqueId.push("loco" + index);
     }
     for(index = 0; index < dataset["noOfWagons"][currentLevel]; index++) {
-        uniqueId.push("wagon" + index)
+        uniqueId.push("wagon" + index);
     }
 }

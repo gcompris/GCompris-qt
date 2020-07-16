@@ -7,6 +7,7 @@
  *   Pascal Georges (GTK+ version)
  *   Utkarsh Tiwari <iamutkarshtiwari@kde.org> (Qt Quick port)
  *   Amit Sagtani <asagtani06@gmail.com> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com> (controls refactoring and bugfixes)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -64,6 +65,7 @@ ActivityBase {
             property alias introMessage: introMessage
             property bool memoryMode: false
             property bool mouseEnabled: true
+            property bool controlsEnabled: false
             property var currentKeyZone: sampleList
             property bool keyNavigationMode: false
             // stores height of sampleGrid images to set rail bar support position
@@ -77,6 +79,9 @@ ActivityBase {
         Keys.onPressed: {
             items.keyNavigationMode = true;
             items.currentKeyZone.handleKeys(event);
+        }
+
+        function playSoundFX() {
             activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav');
         }
 
@@ -132,6 +137,7 @@ ActivityBase {
                 anchors.bottom: parent.bottom
                 interactive: false
                 model: listModel
+
                 delegate: Image {
                     id: wagon
                     source: Activity.resourceURL + modelData + ".svg"
@@ -219,6 +225,7 @@ ActivityBase {
                         animateFlow.stop();
                         listModel.clear();
                         items.memoryMode = true;
+                        items.controlsEnabled = true;
                     }
                 }
 
@@ -235,51 +242,52 @@ ActivityBase {
                 }
 
                 function handleKeys(event) {
-                    // Switch zones via tab key.
-                    if(event.key === Qt.Key_Tab) {
-                        items.currentKeyZone = sampleList
-                        sampleList.currentIndex = 0
-                        answerZone.currentIndex = -1
-                    }
+                    if(event.key === Qt.Key_Tab)
+                        bar.hintClicked();
+                    if(!items.controlsEnabled)
+                        return;
                     if(event.key === Qt.Key_Down) {
-                        items.currentKeyZone = sampleList
-                        answerZone.currentIndex = -1
-                        sampleList.currentIndex = 0
+                        playSoundFX();
+                        items.currentKeyZone = sampleList;
+                        answerZone.currentIndex = -1;
+                        sampleList.currentIndex = 0;
                     }
                     if(event.key === Qt.Key_Up) {
-                        items.currentKeyZone = sampleList
-                        answerZone.currentIndex = -1
-                        sampleList.currentIndex = 0
+                        playSoundFX();
+                        items.currentKeyZone = sampleList;
+                        answerZone.currentIndex = -1;
+                        sampleList.currentIndex = 0;
                     }
                     if(event.key === Qt.Key_Left) {
-                        items.currentKeyZone = answerZone
-                        answerZone.moveCurrentIndexLeft()
+                        playSoundFX();
+                        answerZone.moveCurrentIndexLeft();
                     }
                     if(event.key === Qt.Key_Right) {
-                        items.currentKeyZone = answerZone
-                        answerZone.moveCurrentIndexRight()
+                        playSoundFX();
+                        answerZone.moveCurrentIndexRight();
                     }
                     // Remove a wagon via Delete/Return key.
-                    if(event.key === Qt.Key_Delete && listModel.count > 0) {
-                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
-                        listModel.remove(answerZone.currentIndex)
+                    if((event.key === Qt.Key_Delete || event.key === Qt.Key_Backspace) && listModel.count > 0) {
+                        playSoundFX();
+                        listModel.remove(answerZone.currentIndex);
                         if(listModel.count < 2) {
                             answerZone.selectedSwapIndex = -1;
                         }
                     }
                     // Checks answer.
-                    if((event.key === Qt.Key_Return || event.key === Qt.Key_Enter) && items.mouseEnabled) {
-                        items.currentKeyZone = answerZone
-                        Activity.checkAnswer();
+                    if(event.key === Qt.Key_Return || event.key === Qt.Key_Enter) {
+                        okButton.clicked();
                     }
                     // Swaps two wagons with help of Space/Enter keys.
                     if(event.key === Qt.Key_Space) {
                         if(selectedSwapIndex === -1 && listModel.count > 1) {
+                            playSoundFX();
                             answerZone.selectedSwapIndex = answerZone.currentIndex;
                             swapHighlight.x = answerZone.currentItem.x;
                             swapHighlight.anchors.top = answerZone.top;
                         }
                         else if(answerZone.currentIndex != selectedSwapIndex && listModel.count > 1){
+                            playSoundFX();
                             var min = Math.min(selectedSwapIndex, answerZone.currentIndex);
                             var max = Math.max(selectedSwapIndex, answerZone.currentIndex);
                             listModel.move(min, max, 1);
@@ -301,7 +309,8 @@ ActivityBase {
                     color: "blue"
                     opacity: 0.3
                     radius: 5
-                    visible: (items.currentKeyZone === answerZone) && (!trainAnimationTimer.running && !animateFlow.running) && items.keyNavigationMode
+                    visible: (items.currentKeyZone === answerZone) && (!trainAnimationTimer.running && !animateFlow.running)
+                              && items.keyNavigationMode && items.controlsEnabled
                     x: (visible && answerZone.currentItem) ? answerZone.currentItem.x : 0
                     y: (visible && answerZone.currentItem) ? answerZone.currentItem.y : 0
                     Behavior on x {
@@ -352,7 +361,7 @@ ActivityBase {
 
             // No. of wagons in a row
             readonly property int columnCount: isHorizontal ? Activity.dataset["columnsInHorizontalMode"][bar.level - 1] :
-        Activity.dataset["columsInVerticalMode"][bar.level - 1]
+            Activity.dataset["columsInVerticalMode"][bar.level - 1]
 
             readonly property int rowCount: columnCount > 0 ? model / columnCount : 0
 
@@ -426,48 +435,53 @@ ActivityBase {
             }
 
             function handleKeys(event) {
-                if(event.key === Qt.Key_Tab) {
-                    if(listModel.count > 0) {
-                        items.currentKeyZone = answerZone
-                        sampleList.currentIndex = -1
-                        answerZone.currentIndex = 0
-                    }
-                }
+                if(event.key === Qt.Key_Tab)
+                    bar.hintClicked();
+                if(!items.controlsEnabled)
+                    return;
+
                 if(event.key === Qt.Key_Up) {
-                    items.currentKeyZone = sampleList
+                    playSoundFX();
                     // Checks if current highlighted element is in first row of the grid.
                     if(sampleList.currentIndex < columnCount && listModel.count > 0) {
-                        items.currentKeyZone = answerZone
-                        answerZone.currentIndex = 0
-                        sampleList.currentIndex = -1
+                        items.currentKeyZone = answerZone;
+                        answerZone.currentIndex = 0;
+                        sampleList.currentIndex = -1;
                     }
                     else {
-                        sampleList.moveCurrentIndexUp()
+                        sampleList.moveCurrentIndexUp();
                     }
                 }
                 if(event.key === Qt.Key_Down) {
-                    items.currentKeyZone = sampleList
-                    sampleList.moveCurrentIndexDown()
+                    playSoundFX();
+                    // Checks if current highlighted element is in last row of the grid.
+                    if(sampleList.model - columnCount <= sampleList.currentIndex && listModel.count > 0) {
+                        items.currentKeyZone = answerZone;
+                        answerZone.currentIndex = 0;
+                        sampleList.currentIndex = -1;
+                    }
+                    else {
+                        sampleList.moveCurrentIndexDown();
+                    }
                 }
                 if(event.key === Qt.Key_Left) {
-                    items.currentKeyZone = sampleList
-                    sampleList.moveCurrentIndexLeft()
+                    playSoundFX();
+                    sampleList.moveCurrentIndexLeft();
                 }
                 if(event.key === Qt.Key_Right) {
-                    items.currentKeyZone = sampleList
-                    sampleList.moveCurrentIndexRight()
+                    playSoundFX();
+                    sampleList.moveCurrentIndexRight();
                 }
                 if(event.key === Qt.Key_Space) {
-                    var imageId = Activity.uniqueId[sampleList.currentIndex]
+                    var imageId = Activity.uniqueId[sampleList.currentIndex];
                     // At most (current level + 2) wagons are allowed in answer row at a time.
                     if(listModel.count < Activity.dataset["WagonsInCorrectAnswers"][bar.level - 1] + 2) {
-                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                        playSoundFX();
                         Activity.addWagon(imageId, listModel.count);
                     }
                 }
-                if((event.key === Qt.Key_Enter || event.key === Qt.Key_Return) && listModel.count > 0 && items.mouseEnabled) {
-                    items.currentKeyZone = sampleList
-                    Activity.checkAnswer()
+                if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+                    okButton.clicked();
                 }
             }
 
@@ -534,11 +548,11 @@ ActivityBase {
                 id: okButtonParticles
                 clip: false
             }
-            MouseArea {
-                id: okButtonMouseArea
-                anchors.fill: parent
-                enabled: !trainAnimationTimer.running && !animateFlow.running && listModel.count > 0 && items.mouseEnabled
-                onClicked: Activity.checkAnswer()
+            onClicked: {
+                if(trainAnimationTimer.running || animateFlow.running)
+                    bar.hintClicked();
+                else if(listModel.count > 0 && items.mouseEnabled)
+                    Activity.checkAnswer();
             }
         }
 
@@ -580,9 +594,11 @@ ActivityBase {
                         }
                         items.memoryMode = true;
                         okButton.visible = true;
+                        items.controlsEnabled = true;
                     } else {
                         Activity.restoreLevel();
                         okButton.visible = false;
+                        items.controlsEnabled = false;
                     }
                 }
             }
