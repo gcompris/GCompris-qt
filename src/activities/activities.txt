@@ -9,6 +9,7 @@ algorithm
 align4
 align4-2players
 alphabet-sequence
+analog_electricity
 baby_keyboard
 babymatch
 babyshapes
