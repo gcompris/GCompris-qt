@@ -73,7 +73,7 @@ ActivityBase {
             initLevel();
         }
 
-property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
+        property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
 
         function initLevel() {
             topPanel.life.opacity = 1;
@@ -83,11 +83,11 @@ property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
             topPanel.goal = Activity.getGoal();
             stopLevel();
 
-            if(useMultipleDataset){
+            if(useMultipleDataset) {
                 if(levels[Activity._currentLevel].spawnMonsters)
                     spawningMonsters.restart();
             }
-            else if (Activity._currentLevel  !== 0) {
+            else if (Activity._currentLevel !== 0) {
                 spawningMonsters.restart();
             }
         }
@@ -109,8 +109,17 @@ property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
             activity.stop.connect(stop)
         }
 
+        QtObject {
+            id: items
+            property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
+            property alias modelCells: modelCells
+            property alias bonus: bonus
+            property alias bar: topPanel.bar
+            property string operator: operator
+        }
+
         onStart: {
-            Activity.start(modelCells, topPanel.bar, bonus, type, operator, levels, useMultipleDataset);
+            Activity.start(items, type, useMultipleDataset);
             initLevel();
             topPanel.useMultipleDataset = useMultipleDataset
         }
@@ -364,9 +373,15 @@ property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
                         if (operator == " + ") {
                             terms = Activity.splitPlusNumber(
                                         Activity.genNumber())
-                        } else {
+                        } else if (operator == " - ") {
                             terms = Activity.splitMinusNumber(
-                                    Activity.genNumber())
+                                        Activity.genNumber())
+                        } else if (operator == " * ") {
+                            terms = Activity.splitMultiplicationNumber(
+                                        Activity.genNumber())
+                        } else if (operator == " / ") {
+                            terms = Activity.splitDivisionNumber(
+                                        Activity.genNumber())
                         }
                         modelCells.setProperty(position, "number1", terms[0])
                         modelCells.setProperty(position, "number2", terms[1])
@@ -404,7 +419,6 @@ property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
         TopPanel {
             id: topPanel
             goal: Activity.getGoal() ? Activity.getGoal() : 0
-            useMultipleDataset: useMultipleDataset
         }
 
         WarnMonster {

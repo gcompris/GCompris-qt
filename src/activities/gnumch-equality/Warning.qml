@@ -54,8 +54,12 @@ Rectangle {
         if (activity.type == "equality" || activity.type == "inequality") {
             if (activity.operator == " + ") {
                 fault +=  num1 + " + " + num2 + " = " + (num1 + num2)
-            } else {
+            } else if (activity.operator == " - ") {
                 fault +=  num1 + " - " + num2 + " = " + (num1 - num2)
+            } else if (activity.operator == " * ") {
+                fault +=  num1 + " * " + num2 + " = " + (num1 * num2)
+            } else if (activity.operator == " / ") {
+                fault +=  num1 + " / " + num2 + " = " + (num1 / num2)
             }
         } else if (activity.type == "primes") {
             if (num1 === 1) {

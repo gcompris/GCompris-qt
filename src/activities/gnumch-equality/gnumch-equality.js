@@ -33,16 +33,16 @@ var _modelCells
 var _levels
 var _useMultipleDataset
 
-function start(modelCells, bar, bonus, type, operator, levels, useMultipleDataset) {
-    _levels = levels
+function start(items, type, useMultipleDataset) {
+    _levels = items.levels
     _useMultipleDataset = useMultipleDataset
-    _bar = bar
-    _bonus = bonus
+    _bar = items.bar
+    _bonus = items.bonus
     _currentLevel = 0
     _type = type
-    _operator = operator
-    _modelCells = modelCells
-    _numberOfLevel = (_useMultipleDataset) ? levels.length : 8
+    _operator = items.operator
+    _modelCells = items.modelCells
+    _numberOfLevel = (_useMultipleDataset) ? _levels.length : 8
 }
 
 function stop() {
@@ -50,7 +50,7 @@ function stop() {
 
 function initLevel() {
     if(_type === "equality" || _type === "inequality") {
-    _operator = _levels[_currentLevel].operator
+        _operator = _levels[_currentLevel].operator
     }
     fillAllGrid();
     _bar.level = _currentLevel + 1;
@@ -70,16 +70,19 @@ function previousLevel() {
 
 function getGoal() {
     var goal
-    if (_type === "equality" || _type === "inequality") {
+    if (_useMultipleDataset) {
         goal = _levels[_currentLevel].goal
-    } else if (_type == "multiples") {
-        goal = _currentLevel + 2
-    } else if (_type == "factors") {
-        var goalsFactor = [4, 6, 8, 10, 12, 15, 18, 20]
-        goal = goalsFactor[_currentLevel]
-    } else if (_type == "primes") {
-        var primenumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23]
-        goal = primenumbers[_currentLevel + 1] + 1
+    }
+    else {
+        if (_type == "multiples") {
+            goal = _currentLevel + 2
+        } else if (_type == "factors") {
+            var goalsFactor = [4, 6, 8, 10, 12, 15, 18, 20]
+            goal = goalsFactor[_currentLevel]
+        } else if (_type == "primes") {
+            var primenumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23]
+            goal = primenumbers[_currentLevel + 1] + 1
+        }
     }
 
     return goal
@@ -161,6 +164,31 @@ function genTime() {
     return time
 }
 
+function splitDivisionNumber(term) {
+    var term1 = term * Math.floor(Math.random() * 6 + 1)
+    var term2 = term1 / term
+
+    return [term1, term2]
+}
+
+function splitMultiplicationNumber(term) {
+    var factors = []
+    for (var div = 1; div < term + 1; ++div) {
+        if (getGoal() % div == 0) {
+            factors.push(div)
+        }
+    }
+    var term1 = factors[Math.floor(Math.random() * factors.length)]
+    var term2 = Math.floor(term / term1);
+
+    if (Math.random() < 0.5) {
+        return [term1, term2]
+    } else {
+        return [term2, term1]
+    }
+}
+
+
 function splitPlusNumber(term) {
     // Check if the term is odd
     var odd = term % 2
@@ -218,19 +246,25 @@ function fillAllGrid() {
     if (_type == "equality" || _type == "inequality") {
         for (var it = 0; it < 36; it++) {
             var terms
-            if (_operator == " + ") {
+            if (_operator === " + ") {
                 terms = splitPlusNumber(
                             genNumber())
-            } else {
+            } else if (_operator === " - ") {
                 terms = splitMinusNumber(
+                            genNumber())
+            } else if(_operator === " * ") {
+                terms = splitMultiplicationNumber(
+                            genNumber())
+            } else if(_operator === " / ") {
+                terms = splitDivisionNumber(
                             genNumber())
             }
 
             _modelCells.append({
-                                  number1: terms[0],
-                                  number2: terms[1],
-                                  show: true
-                              })
+                                   number1: terms[0],
+                                   number2: terms[1],
+                                   show: true
+                               })
         }
     } else if (_type == "primes") {
         for (var it = 0; it < 36; it++) {
@@ -256,9 +290,23 @@ function isAnswerCorrect(position) {
             } else {
                 return false
             }
-        } else {
+        } else if (_operator == " - ") {
             if ((_modelCells.get(position).number1 - _modelCells.get(
                      position).number2) == (getGoal())) {
+                return true
+            } else {
+                return false
+            }
+        } else if (_operator === " * ") {
+            if ((_modelCells.get(position).number1 * _modelCells.get(
+                     position).number2) === (getGoal())) {
+                return true
+            } else {
+                return false
+            }
+        } else if (_operator === " / ") {
+            if ((_modelCells.get(position).number1 / _modelCells.get(
+                     position).number2) === (getGoal())) {
                 return true
             } else {
                 return false
@@ -272,9 +320,23 @@ function isAnswerCorrect(position) {
             } else {
                 return false
             }
-        } else {
+        } else if (_operator === " - "){
             if ((_modelCells.get(position).number1 - _modelCells.get(
                      position).number2) != (getGoal())) {
+                return true
+            } else {
+                return false
+            }
+        } else if (_operator === " * ") {
+            if ((_modelCells.get(position).number1 * _modelCells.get(
+                     position).number2) !== (getGoal())) {
+                return true
+            } else {
+                return false
+            }
+        } else if (_operator === " / ") {
+            if ((_modelCells.get(position).number1 / _modelCells.get(
+                     position).number2) !== (getGoal())) {
                 return true
             } else {
                 return false
