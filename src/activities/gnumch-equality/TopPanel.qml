@@ -97,13 +97,22 @@ Rectangle {
     Bar {
         id: bar
 
-        content: BarEnumContent {
-            value: (useMultipleDataset) ? (help | home | level | activityConfig) : (help | home | level)
-        }
+        content: (useMultipleDataset) ? barWithConfig : barWithoutConfig;
         onHelpClicked: displayDialog(dialogHelp)
         onPreviousLevelClicked: background.previousLevel()
         onNextLevelClicked: background.nextLevel()
         onHomeClicked: activity.home()
         onActivityConfigClicked: displayDialog(dialogActivityConfig)
     }
+
+    BarEnumContent {
+        id: barWithoutConfig
+        value: (help | home | level)
+    }
+
+    BarEnumContent {
+        id: barWithConfig
+        value: (help | home | level | activityConfig)
+    }
+
 }

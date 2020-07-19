@@ -52,13 +52,13 @@ Rectangle {
         var num1 = modelCells.get(index).number1
         var num2 = modelCells.get(index).number2
         if (activity.type == "equality" || activity.type == "inequality") {
-            if (activity.operator == " + ") {
+            if (Activity._operator == " + ") {
                 fault +=  num1 + " + " + num2 + " = " + (num1 + num2)
-            } else if (activity.operator == " - ") {
+            } else if (Activity._operator == " - ") {
                 fault +=  num1 + " - " + num2 + " = " + (num1 - num2)
-            } else if (activity.operator == " * ") {
+            } else if (Activity._operator == " * ") {
                 fault +=  num1 + " * " + num2 + " = " + (num1 * num2)
-            } else if (activity.operator == " / ") {
+            } else if (Activity._operator == " / ") {
                 fault +=  num1 + " / " + num2 + " = " + (num1 / num2)
             }
         } else if (activity.type == "primes") {

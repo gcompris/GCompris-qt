@@ -35,6 +35,10 @@ Item {
     property int frameSize: 80
     property int animCount: 0
     property GCSfx audioEffects
+    readonly property int moveRight: 0
+    readonly property int moveLeft: 1
+    readonly property int moveDown: 2
+    readonly property int moveUp: 3
 
     function moveTo(direction) {
         if (!movable)

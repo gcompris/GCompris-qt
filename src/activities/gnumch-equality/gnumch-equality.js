@@ -69,7 +69,7 @@ function previousLevel() {
 }
 
 function getGoal() {
-    var goal
+    var goal = 0
     if (_useMultipleDataset) {
         goal = _levels[_currentLevel].goal
     }
@@ -281,74 +281,50 @@ function fillAllGrid() {
     }
 }
 
+function isExpressionEqualsToGoal(position){
+    if (_operator === " + ") {
+        if ((_modelCells.get(position).number1 + _modelCells.get(
+                 position).number2) == (getGoal())) {
+            return true
+        } else {
+            return false
+        }
+    } else if (_operator === " - ") {
+        if ((_modelCells.get(position).number1 - _modelCells.get(
+                 position).number2) == (getGoal())) {
+            return true
+        } else {
+            return false
+        }
+    } else if (_operator === " * ") {
+        if ((_modelCells.get(position).number1 * _modelCells.get(
+                 position).number2) === (getGoal())) {
+            return true
+        } else {
+            return false
+        }
+    } else if (_operator === " / ") {
+        if ((_modelCells.get(position).number1 / _modelCells.get(
+                 position).number2) === (getGoal())) {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
 function isAnswerCorrect(position) {
-    if (_type == "equality") {
-        if (_operator == " + ") {
-            if ((_modelCells.get(position).number1 + _modelCells.get(
-                     position).number2) == (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        } else if (_operator == " - ") {
-            if ((_modelCells.get(position).number1 - _modelCells.get(
-                     position).number2) == (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        } else if (_operator === " * ") {
-            if ((_modelCells.get(position).number1 * _modelCells.get(
-                     position).number2) === (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        } else if (_operator === " / ") {
-            if ((_modelCells.get(position).number1 / _modelCells.get(
-                     position).number2) === (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        }
-    } else if (_type == "inequality") {
-        if (_operator == " + ") {
-            if ((_modelCells.get(position).number1 + _modelCells.get(
-                     position).number2) != (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        } else if (_operator === " - "){
-            if ((_modelCells.get(position).number1 - _modelCells.get(
-                     position).number2) != (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        } else if (_operator === " * ") {
-            if ((_modelCells.get(position).number1 * _modelCells.get(
-                     position).number2) !== (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        } else if (_operator === " / ") {
-            if ((_modelCells.get(position).number1 / _modelCells.get(
-                     position).number2) !== (getGoal())) {
-                return true
-            } else {
-                return false
-            }
-        }
-    } else if (_type == "multiples") {
+    if (_type === "equality") {
+        return isExpressionEqualsToGoal(position)
+    } else if (_type === "inequality") {
+        return (!isExpressionEqualsToGoal(position))
+    } else if (_type === "multiples") {
         if ((_modelCells.get(position).number1 / getGoal()) % 1 == 0) {
             return true
         } else {
             return false
         }
-    } else if (_type == "factors") {
+    } else if (_type === "factors") {
         if ((getGoal() / _modelCells.get(position).number1) % 1 == 0) {
             return true
         } else {

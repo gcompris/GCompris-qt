@@ -29,11 +29,9 @@ ActivityBase {
     id: activity
 
     property string type
-    property string operator
     property bool useMultipleDataset: false
 
     focus: true
-    operator: " + "
 
     onStart: {}
     onStop: {}
@@ -73,18 +71,16 @@ ActivityBase {
             initLevel();
         }
 
-        property var levels: activity.datasetLoader ? activity.datasetLoader.data : ""
-
         function initLevel() {
             topPanel.life.opacity = 1;
             forceActiveFocus();
             Activity.initLevel();
-            operator = Activity._operator;
+            items.operator = Activity._operator;
             topPanel.goal = Activity.getGoal();
             stopLevel();
 
             if(useMultipleDataset) {
-                if(levels[Activity._currentLevel].spawnMonsters)
+                if(items.levels[Activity._currentLevel].spawnMonsters)
                     spawningMonsters.restart();
             }
             else if (Activity._currentLevel !== 0) {
@@ -115,7 +111,7 @@ ActivityBase {
             property alias modelCells: modelCells
             property alias bonus: bonus
             property alias bar: topPanel.bar
-            property string operator: operator
+            property string operator
         }
 
         onStart: {
@@ -129,10 +125,10 @@ ActivityBase {
             Activity.stop()
         }
 
-        Keys.onRightPressed: muncher.moveTo(0)
-        Keys.onLeftPressed: muncher.moveTo(1)
-        Keys.onDownPressed: muncher.moveTo(2)
-        Keys.onUpPressed: muncher.moveTo(3)
+        Keys.onRightPressed: muncher.moveTo(muncher.moveRight)
+        Keys.onLeftPressed: muncher.moveTo(muncher.moveLeft)
+        Keys.onDownPressed: muncher.moveTo(muncher.moveDown)
+        Keys.onUpPressed: muncher.moveTo(muncher.moveUp)
 
         Keys.onSpacePressed: {
             checkAnswer()
@@ -215,29 +211,29 @@ ActivityBase {
                     if(Math.abs(moveX) * ApplicationInfo.ratio > 10 &&
                             Math.abs(moveX) > Math.abs(moveY)) {
                         if(moveX > 10 * ApplicationInfo.ratio)
-                            muncher.moveTo(0)
+                            muncher.moveTo(muncher.moveRight)
                         else if(moveX < -10 * ApplicationInfo.ratio)
-                            muncher.moveTo(1)
+                            muncher.moveTo(muncher.moveLeft)
                         else
                             background.checkAnswer()
                     } else if(Math.abs(moveY) * ApplicationInfo.ratio > 10 &&
                               Math.abs(moveX) < Math.abs(moveY)) {
                         if(moveY > 10 * ApplicationInfo.ratio)
-                            muncher.moveTo(2)
+                            muncher.moveTo(muncher.moveDown)
                         else if(moveY < -10 * ApplicationInfo.ratio)
-                            muncher.moveTo(3)
+                            muncher.moveTo(muncher.moveUp)
                         else
                             background.checkAnswer()
                     } else {
                         // No move, just a tap or mouse click
                         if(point1.x > muncher.x + muncher.width)
-                            muncher.moveTo(0)
+                            muncher.moveTo(muncher.moveRight)
                         else if(point1.x < muncher.x)
-                            muncher.moveTo(1)
+                            muncher.moveTo(muncher.moveLeft)
                         else if(point1.y < muncher.y)
-                            muncher.moveTo(3)
+                            muncher.moveTo(muncher.moveDown)
                         else if(point1.y > muncher.y + muncher.height)
-                            muncher.moveTo(2)
+                            muncher.moveTo(muncher.moveUp)
                         else
                             background.checkAnswer()
                     }
@@ -368,18 +364,18 @@ ActivityBase {
                 id: modelCells
 
                 function regenCell(position) {
-                    if (type == "equality" || type == "inequality") {
+                    if (type === "equality" || type === "inequality") {
                         var terms
-                        if (operator == " + ") {
+                        if (items.operator === " + ") {
                             terms = Activity.splitPlusNumber(
                                         Activity.genNumber())
-                        } else if (operator == " - ") {
+                        } else if (items.operator === " - ") {
                             terms = Activity.splitMinusNumber(
                                         Activity.genNumber())
-                        } else if (operator == " * ") {
+                        } else if (items.operator === " * ") {
                             terms = Activity.splitMultiplicationNumber(
                                         Activity.genNumber())
-                        } else if (operator == " / ") {
+                        } else if (items.operator === " / ") {
                             terms = Activity.splitDivisionNumber(
                                         Activity.genNumber())
                         }
@@ -418,7 +414,7 @@ ActivityBase {
 
         TopPanel {
             id: topPanel
-            goal: Activity.getGoal() ? Activity.getGoal() : 0
+            goal: Activity.getGoal()
         }
 
         WarnMonster {
