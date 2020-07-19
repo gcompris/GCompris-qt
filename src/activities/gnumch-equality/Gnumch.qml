@@ -117,7 +117,6 @@ ActivityBase {
         onStart: {
             Activity.start(items, type, useMultipleDataset);
             initLevel();
-            topPanel.useMultipleDataset = useMultipleDataset
         }
         onStop: {
             monsters.destroyAll()
