@@ -391,14 +391,13 @@ ActivityBase {
             interactive: false
             layoutDirection: Qt.LeftToRight
             currentIndex: -1
-            //highlight: gridHighlight  //simulated inside the Card, see comment below...
+            highlight: gridHighlight
             highlightFollowsCurrentItem: true
             keyNavigationWraps: true
             model: wordsModel
             delegate: Card {
                 width: background.itemWidth
                 height: background.itemWidth
-                isHighlighted: wordsView.currentIndex === index
                 Connections {
                     target: bonus
                     onStart: {
@@ -411,20 +410,18 @@ ActivityBase {
             }
         }
 
-//  The highlight is not used because it makes the rendering order of items inside the Card randomly wrong.
-//  keeping it commented in case it is fixed in Qt someday...
-//         Component {
-//             id: gridHighlight
-//             Rectangle {
-//                 width: background.itemWidth
-//                 height: background.itemWidth
-//                 color:  "#AAFFFFFF"
-//                 x: wordsView.currentItem.x
-//                 y: wordsView.currentItem.y
-//                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-//                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
-//             }
-//         }
+        Component {
+            id: gridHighlight
+            Rectangle {
+                width: background.itemWidth
+                height: background.itemWidth
+                color:  "#AAFFFFFF"
+                x: wordsView.currentItem.x
+                y: wordsView.currentItem.y
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+            }
+        }
 
         BarButton {
             id: ok

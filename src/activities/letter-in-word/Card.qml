@@ -27,17 +27,10 @@ import QtGraphicalEffects 1.0
 import "../../core"
 import "letter-in-word.js" as Activity
 
-Item {
+Rectangle {
     id: cardItem
     property bool mouseActive: true
-    property bool isHighlighted
-
-    Rectangle {
-        visible: isHighlighted
-        anchors.fill: parent
-        radius: 5 * ApplicationInfo.ratio
-        color:  "#AAFFFFFF"
-    }
+    color: "#01FFFFFF"  //setting the base as not totally transparent rectangle avoids the bug of randomly overlapping images
 
     Image {
         id: wordPic
@@ -132,14 +125,6 @@ Item {
         }
     }
 
-    NumberAnimation {
-        id: refreshItem
-        target: cardItem
-        property: "opacity"
-        to: 1
-        duration: 10
-    }
-
     function playWord() {
         var locale = ApplicationInfo.getVoicesLocale(items.locale)
         activity.audioVoices.append(
@@ -147,7 +132,6 @@ Item {
     }
 
     function select() {
-        refreshItem.restart();
         if(mouseActive) {
             if (Activity.checkWord(index)) {
                 successAnimation.restart();
