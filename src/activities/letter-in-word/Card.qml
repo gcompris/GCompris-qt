@@ -30,7 +30,7 @@ import "letter-in-word.js" as Activity
 Rectangle {
     id: cardItem
     property bool mouseActive: true
-    color: "#01FFFFFF"  //setting the base as not totally transparent rectangle avoids the bug of randomly overlapping images
+    color: "#01FFFFFF"  //setting the base as not totally transparent rectangle avoids the bug of randomly overlapping images when highlight moves
 
     Image {
         id: wordPic
@@ -68,39 +68,6 @@ Rectangle {
             horizontalAlignment: Text.AlignHCenter
             styleColor: "white"
         }
-
-        SequentialAnimation {
-            id: successAnimation
-            running: selected
-            loops: 2
-            NumberAnimation {
-                target: cardBg
-                easing.type: Easing.InOutQuad
-                property: "rotation"
-                to: 20; duration: 500
-            }
-            NumberAnimation {
-                target: cardBg
-                easing.type: Easing.InOutQuad
-                property: "rotation"; to: -20
-                duration: 500
-            }
-            onRunningChanged: {
-                if(!running && selected) {
-                    rotationStop.restart()
-                }
-            }
-        }
-
-        NumberAnimation {
-            id: rotationStop
-            running: !selected
-            target: cardBg
-            property: "rotation"
-            to: 0
-            duration: 500
-            easing.type: Easing.Linear
-        }
     }
 
     Image {
@@ -125,6 +92,29 @@ Rectangle {
         }
     }
 
+    SequentialAnimation {
+        id: selectAnimation
+        NumberAnimation {
+            target: cardItem
+            easing.type: Easing.InOutQuad
+            property: "rotation"
+            to: 20; duration: 250
+        }
+        NumberAnimation {
+            target: cardItem
+            easing.type: Easing.InOutQuad
+            property: "rotation"; to: -20
+            duration: 500
+        }
+        NumberAnimation {
+            target: cardItem
+            easing.type: Easing.InOutQuad
+            property: "rotation"
+            to: 0
+            duration: 250
+        }
+    }
+
     function playWord() {
         var locale = ApplicationInfo.getVoicesLocale(items.locale)
         activity.audioVoices.append(
@@ -133,8 +123,8 @@ Rectangle {
 
     function select() {
         if(mouseActive) {
-            if (Activity.checkWord(index)) {
-                successAnimation.restart();
+            if(Activity.checkWord(index)) {
+                selectAnimation.restart();
                 if(selected)
                     playWord();
             }

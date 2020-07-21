@@ -103,8 +103,8 @@ function initLevel() {
             items.wordsModel.append({
                                         "spelling": words[i].translatedTxt,
                                         "imgurl": words[i].image,
-                                        "selected": false,
-                                        "voice": words[i].voice
+                                        "voice": words[i].voice,
+                                        "selected": false
                                     });
         }
     }
@@ -230,7 +230,7 @@ function checkAnswer() {
 }
 
 function checkWord(index) {
-    var modelEntry = items.wordsModel.get(index);
-    items.wordsModel.setProperty(index, "selected", !modelEntry.selected);
-    return modelEntry.selected;
+    var itemStatus = !items.wordsModel.get(index).selected;
+    items.wordsModel.setProperty(index, "selected", itemStatus);
+    return itemStatus;
 }

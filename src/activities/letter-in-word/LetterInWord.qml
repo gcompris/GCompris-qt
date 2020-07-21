@@ -416,8 +416,6 @@ ActivityBase {
                 width: background.itemWidth
                 height: background.itemWidth
                 color:  "#AAFFFFFF"
-                x: wordsView.currentItem.x
-                y: wordsView.currentItem.y
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
