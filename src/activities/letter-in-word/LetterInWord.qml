@@ -355,9 +355,6 @@ ActivityBase {
             var sx
             var sy
 
-            if(x_ <= 0 || y_ <= 0 || n_ <= 0)
-                return 10; // return default value that will be erased later
-
             var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
             if (Math.floor(px * y_ / x_) * px < n_) {
                 sx = y_ / Math.ceil(px * y_ / x_);
@@ -379,7 +376,7 @@ ActivityBase {
             id: wordsView
             anchors.bottom: bar.top
             anchors.left: parent.left
-            anchors.right: parent.right
+            anchors.right: ok.left
             anchors.top: planeText.bottom
             anchors.topMargin: 0
             anchors.leftMargin: 10 * ApplicationInfo.ratio
