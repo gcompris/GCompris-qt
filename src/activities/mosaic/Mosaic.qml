@@ -117,6 +117,9 @@ ActivityBase {
             var sx
             var sy
 
+            if(x_ <= 0 || y_ <= 0 || n_ <= 0)
+	                return 10; // return default value that will be erased later, to avoid crash on Android
+
             var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
             if (Math.floor(px * y_ / x_) * px < n_) {
                 sx = y_ / Math.ceil(px * y_ / x_);
