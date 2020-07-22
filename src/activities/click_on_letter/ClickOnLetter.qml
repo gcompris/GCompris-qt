@@ -246,8 +246,8 @@ ActivityBase {
         }
 
         //always calculate layout for a maximum of 24 letters per level
-        //adding +1 to px and py to include one more item (the engine) in the calculation
-        property int itemWidth: Core.fitItems(wholeTrainArea.width, wholeTrainArea.height, 24+1)
+        //adding 1 extra to px and py to include one more item (the engine) in the calculation
+        property int itemWidth: Core.fitItems(wholeTrainArea.width, wholeTrainArea.height, 24, 1)
 
         Image {
             id: engine
