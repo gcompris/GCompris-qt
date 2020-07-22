@@ -25,6 +25,7 @@ import GCompris 1.0
 
 import "../../core"
 import "findit.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -91,30 +92,6 @@ ActivityBase {
               id: containerModel
         }
 
-        function fitItems(x_, y_, n_) {
-            var sx
-            var sy
-
-            if(x_ <= 0 || y_ <= 0 || n_ <= 0)
-	                return 10; // return default value that will be erased later, to avoid crash on Android
-
-            var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
-            if (Math.floor(px * y_ / x_) * px < n_) {
-                sx = y_ / Math.ceil(px * y_ / x_);
-            } else {
-                sx = x_ / px;
-            }
-
-            var py = Math.ceil(Math.sqrt(n_ * y_ / x_));
-            if (Math.floor(py * x_ / y_) * py < n_) {
-                sy = x_ / Math.ceil(x_ *  py / y_);
-            } else {
-                sy = y_ / py;
-            }
-
-            return Math.max(sx, sy);
-        }
-
         GridView {
             id: container
             model: containerModel
@@ -128,7 +105,7 @@ ActivityBase {
             cellHeight: itemWidth
             keyNavigationWraps: true
 
-            property int itemWidth: fitItems(container.width, container.height, container.count)
+            property int itemWidth: Core.fitItems(container.width, container.height, container.count)
 
             delegate: ColorItem {
                 audioVoices: activity.audioVoices

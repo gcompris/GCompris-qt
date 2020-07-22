@@ -262,3 +262,35 @@ function resolveLocale(localeToSet) {
         return localeToSet
     }
 }
+
+/**
+ * Function that returns the best cell size for a grid of a given
+ * width and height and a number of items.
+ *
+ * @param x_: grid width
+ * @param y_: grid height
+ * @param n_: number of items to place in the grid
+ */
+function fitItems(x_, y_, n_) {
+    var sx
+    var sy
+
+    if(x_ <= 0 || y_ <= 0 || n_ <= 0)
+	return 10; // return default value that will be erased later, to avoid crash on Android
+
+    var px = Math.ceil(Math.sqrt(n_ * x_ / y_));
+    if (Math.floor(px * y_ / x_) * px < n_) {
+        sx = y_ / Math.ceil(px * y_ / x_);
+    } else {
+        sx = x_ / px;
+    }
+
+    var py = Math.ceil(Math.sqrt(n_ * y_ / x_));
+    if (Math.floor(py * x_ / y_) * py < n_) {
+        sy = x_ / Math.ceil(x_ *  py / y_);
+    } else {
+        sy = y_ / py;
+    }
+
+    return Math.max(sx, sy);
+}

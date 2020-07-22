@@ -246,32 +246,8 @@ ActivityBase {
         }
 
         //always calculate layout for a maximum of 24 letters per level
-        property int itemWidth: fitItems(wholeTrainArea.width, wholeTrainArea.height, 24)
-
-        function fitItems(x_, y_, n_) {
-            var sx
-            var sy
-
-            if(x_ <= 0 || y_ <= 0 || n_ <= 0)
-	                return 10; // return default value that will be erased later, to avoid crash on Android
-
-            //adding +1 to px and py to include one more item (the engine) in the calculation
-            var px = Math.ceil(Math.sqrt(n_ * x_ / y_)) + 1;
-            if (Math.floor(px * y_ / x_) * px < n_) {
-                sx = y_ / Math.ceil(px * y_ / x_);
-            } else {
-                sx = x_ / px;
-            }
-
-            var py = Math.ceil(Math.sqrt(n_ * y_ / x_)) + 1;
-            if (Math.floor(py * x_ / y_) * py < n_) {
-                sy = x_ / Math.ceil(x_ *  py / y_);
-            } else {
-                sy = y_ / py;
-            }
-
-            return Math.max(sx, sy);
-        }
+        //adding +1 to px and py to include one more item (the engine) in the calculation
+        property int itemWidth: Core.fitItems(wholeTrainArea.width, wholeTrainArea.height, 24+1)
 
         Image {
             id: engine
