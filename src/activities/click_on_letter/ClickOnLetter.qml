@@ -252,6 +252,9 @@ ActivityBase {
             var sx
             var sy
 
+            if(x_ <= 0 || y_ <= 0 || n_ <= 0)
+	                return 10; // return default value that will be erased later, to avoid crash on Android
+
             //adding +1 to px and py to include one more item (the engine) in the calculation
             var px = Math.ceil(Math.sqrt(n_ * x_ / y_)) + 1;
             if (Math.floor(px * y_ / x_) * px < n_) {
