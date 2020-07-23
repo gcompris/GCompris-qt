@@ -47,7 +47,7 @@
   <summary xml:lang="fr">Jeu éducatif multi-activités pour les enfants de 2 à 10 ans</summary>
   <summary xml:lang="gl">Xogo educativo con varias actividades para nenos de entre 2 e 10 anos</summary>
   <summary xml:lang="he">משחק חינוך לפלטפורמות מרובות לילדים/ות בגילאי 2-10</summary>
-  <summary xml:lang="hi">२ से १० वर्ष के बच्चों के लिओ विभिन्न क्रियाओं वाला शेक्षणिक खेल</summary>
+  <summary xml:lang="hi">२ से १० वर्ष के बच्चों के लिए विभिन्न क्रियाओं वाला शैक्षणिक खेल</summary>
   <summary xml:lang="id">Permainan Pendidikan berisi berbagai kegiatan untuk anak-anak 2 hingga 10 tahun</summary>
   <summary xml:lang="it">Gioco didattico multi-attività per bambini da 2 a 10 anni</summary>
   <summary xml:lang="ko">2-10세 어린이용 다양한 활동이 있는 교육용 게임</summary>
@@ -300,7 +300,7 @@
       <li xml:lang="fr">jeux : trouve les paires, puissance 4, morpion, sudoku, la tour d'hanoï…</li>
       <li xml:lang="gl">Xogos: memoria, conectar 4, pai nai fillo, sudoku, torre de Hanoi, etc.</li>
       <li xml:lang="he">משחקים: זכרון, 4 בשורה, איקס-עיגול, סודוקו, מגדלי האנוי...</li>
-      <li xml:lang="hi">खेल: स्मृति, कनेक्ट 4, टिक टैक टो , सुडोकू, हनोई टॉवर, ...</li>
+      <li xml:lang="hi">खेल: स्मृति, कनेक्ट ४, टिक टैक टो , सुडोकू, हनोई टॉवर, ...</li>
       <li xml:lang="id">permainan: ingatan, menyambungkan 4, tic tac toe, sudoku, menara hanoi, ...</li>
       <li xml:lang="it">giochi: memory, forza 4, filetto, sudoku, torre di hanoi, ...</li>
       <li xml:lang="ko">게임: 메모리 게임, 4개 연결하기, 삼목, 수도쿠, 하노이 탑, ...</li>
@@ -336,7 +336,7 @@
       <li xml:lang="fr">lecture : entraînement à la lecture…</li>
       <li xml:lang="gl">Lectura: práctica de lectura, etc.</li>
       <li xml:lang="he">קריאה: אימוני קריאה...</li>
-      <li xml:lang="hi">पढ़ना: पढ़ना अभ्यास, ...</li>
+      <li xml:lang="hi">पढ़ना: पढ़ने का अभ्यास, ...</li>
       <li xml:lang="id">membaca: latihan membaca, ...</li>
       <li xml:lang="it">lettura: esercitare la lettura, ...</li>
       <li xml:lang="ko">읽기: 읽기 연습, ...</li>
@@ -412,7 +412,7 @@
     <p xml:lang="fr">Actuellement, GCompris contient plus de 100 activités et d'autres sont en cours de développement. GCompris est un logiciel libre, ce qui veut dire que vous pouvez l'adapter à vos propres besoins, le modifier et, le plus important, le partager avec des enfants où que ce soit.</p>
     <p xml:lang="gl">Actualmente GCompris ofrece máis de 100 actividades e hai máis en desenvolvemento. GCompris é software libre, o que significa que pode adaptalo para axustalo ás súas necesidades, melloralo e, o máis importante, compartilo con nenos de todo o mundo.</p>
     <p xml:lang="he">כרגע מציעה חבילת ג'יקומפריס יותר מ100 פעילויות ונוספות נמצאות בפיתוח. ג'יקומפריס היא תוכנה חופשית, מה שאומר שאפשר לשנות אותה לפי הצרכים שלך, לשפר אותה והכי חשוב- לחלוק אותה עם ילדים בכל מקום.</p>
-    <p xml:lang="hi">वर्तमान में जी कॉम्पप्रस 100 गतिविधियों से अधिक प्रदान करता है और अधिक विकसित किए जा रहे हैं। जी कॉम्पप्रस मुफ्त सॉफ्टवेयर है, इसका मतलब है कि आप इसे अपनी आवश्यकताओं के अनुसार अनुकूलित कर सकते हैं, इसमें सुधार कर सकते हैं, और सबसे महत्वपूर्ण बात, इसे हर जगह बच्चों के साथ साझा कर सकते हैं।</p>
+    <p xml:lang="hi">वर्तमान में जी कॉम्पप्रस १०० गतिविधियों से अधिक प्रदान करता है और अधिक विकसित किए जा रहे हैं। जी कॉम्पप्रस मुफ्त सॉफ्टवेयर है, इसका मतलब है कि आप इसे अपनी आवश्यकताओं के अनुसार अनुकूलित कर सकते हैं, इसमें सुधार कर सकते हैं, और सबसे महत्वपूर्ण बात, इसे हर जगह बच्चों के साथ साझा कर सकते हैं।</p>
     <p xml:lang="id">Saat ini GCompris menawarkan lebih dari 100 aktivitas dan masih banyak lagi yang sedang dikembangkan. GCompris adalah perangkat lunak bebas, itu berarti kamu bisa menyesuaikannya dengan kebutuhanmu sendiri, memperbaikinya dan yang terpenting, bagikan dengan anak-anak di mana-mana.</p>
     <p xml:lang="it">Attualmente GCompris offre più di 100 attività e altre sono in fase di sviluppo. GCompris è software libero, che significa che puoi adattarlo alle tue necessità, migliorarlo e, cosa più importante, condividerlo con tutti i bambini.</p>
     <p xml:lang="ko">GCompris에는 100개 이상의 활동이 들어 있으며 더 많은 활동을 개발하고 있습니다. GCompris는 자유 소프트웨어이며, 필요에 따라서 활동을 개선할 수 있으며 전 세계의 사람들과 공유할 수 있습니다.</p>
@@ -518,6 +518,7 @@
       <caption xml:lang="fr">L'activité « Trouver l'heure »</caption>
       <caption xml:lang="gl">Actividade de «Aprender o reloxo»</caption>
       <caption xml:lang="he">פעילות "ללמוד לקרוא שעון"</caption>
+      <caption xml:lang="hi">घड़ी सीखें</caption>
       <caption xml:lang="id">Aktivitas "Mempelajari Jam"</caption>
       <caption xml:lang="it">Attività «Impara l'orologio»</caption>
       <caption xml:lang="ko">"시계 익히기" 활동</caption>
@@ -551,6 +552,7 @@
       <caption xml:lang="fr">L'activité « Mélange de la couleur de peinture »</caption>
       <caption xml:lang="gl">Actividade de «Mesturar a cor da pintura»</caption>
       <caption xml:lang="he">פעילות "לערבב צבעים עם צבע"</caption>
+      <caption xml:lang="hi">पेंट के रंग मिलाएं</caption>
       <caption xml:lang="id">Aktivitas "Mencampur warna cat"</caption>
       <caption xml:lang="it">Attività «Miscela la vernice colorata»</caption>
       <caption xml:lang="ko">"물감 색 섞기" 활동</caption>
@@ -584,6 +586,7 @@
       <caption xml:lang="fr">L'activité « Trouver la couleur »</caption>
       <caption xml:lang="gl">Actividade de «Cores»</caption>
       <caption xml:lang="he">פעילות "צבעים"</caption>
+      <caption xml:lang="hi">रंगों की गतिविधि</caption>
       <caption xml:lang="id">Aktivitas "Mewarnai"</caption>
       <caption xml:lang="it">Attività «Colori»</caption>
       <caption xml:lang="ko">"색깔" 활동</caption>
@@ -617,6 +620,7 @@
       <caption xml:lang="fr">L'activité « Reconstruire le modèle »</caption>
       <caption xml:lang="gl">Actividade de «Constrúe o mesmo modelo»</caption>
       <caption xml:lang="he">פעילות "לבנות את אותו דגם"</caption>
+      <caption xml:lang="hi">वैसा ही बनाएँ गतिविधि</caption>
       <caption xml:lang="id">Aktivitas "Bangun model yang sama"</caption>
       <caption xml:lang="it">Attività «Costruisci lo stesso modello»</caption>
       <caption xml:lang="ko">"같은 모델 만들기" 활동</caption>
@@ -650,6 +654,7 @@
       <caption xml:lang="fr">L'activité « Compter les éléments »</caption>
       <caption xml:lang="gl">Actividade de «Contar os elementos»</caption>
       <caption xml:lang="he">פעילות "למנות את הפריטים"</caption>
+      <caption xml:lang="hi">सामान गिनने की गतिविधि</caption>
       <caption xml:lang="id">Aktivitas "Menghitung benda"</caption>
       <caption xml:lang="it">Attività «Conta gli oggetti»</caption>
       <caption xml:lang="ko">"물건 개수 세기" 활동</caption>
@@ -682,6 +687,7 @@
       <caption xml:lang="fr">L'activité « Le jeu du taquin »</caption>
       <caption xml:lang="gl">Actividade de «O xogo dos quince»</caption>
       <caption xml:lang="he">פעילות "המשחק החמישהעשר"</caption>
+      <caption xml:lang="hi">पंद्रह खेलों की गतिविधि</caption>
       <caption xml:lang="id">Aktivitas "Permainan lima belas"</caption>
       <caption xml:lang="it">Attività «Il gioco del quindici»</caption>
       <caption xml:lang="ko">"15 게임" 활동</caption>
@@ -714,6 +720,7 @@
       <caption xml:lang="fr">L'activité « Localiser la fraise »</caption>
       <caption xml:lang="gl">Actividade de «Hexágono»</caption>
       <caption xml:lang="he">פעילות "מתומן"</caption>
+      <caption xml:lang="hi">षटकोण गतिविधि</caption>
       <caption xml:lang="id">Aktivitas "Segi Enam"</caption>
       <caption xml:lang="it">Attività «Esagono»</caption>
       <caption xml:lang="ko">"육각형" 활동</caption>
@@ -747,6 +754,7 @@
       <caption xml:lang="fr">L'activité « Trouver le poids »</caption>
       <caption xml:lang="gl">Actividade de «Equilibra a balanza de forma axeitada»</caption>
       <caption xml:lang="he">פעילות "לאזן את המאזניים"</caption>
+      <caption xml:lang="hi">तराजू बराबर करने की गतिविधि</caption>
       <caption xml:lang="id">Aktivitas "Seimbangkan timbangan"</caption>
       <caption xml:lang="it">Attività «Allinea correttamente i piatti della bilancia»</caption>
       <caption xml:lang="ko">"저울 균형 맞추기" 활동</caption>
