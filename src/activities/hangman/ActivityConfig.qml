@@ -34,13 +34,15 @@ Item {
     property alias easyModeAudioBox: easyModeAudioBox
     property bool easyModeImage: false
     property bool easyModeAudio: false
-    width: if(background) background.width
+    height: innerColumn.childrenRect.height
+    width: if(background) background.width - 40
     property alias availableLangs: langs.languages
     LanguageList {
         id: langs
     }
 
     Column {
+        id: innerColumn
         spacing: 10 * ApplicationInfo.ratio
         width: activityConfiguration.width
         GCComboBox {
