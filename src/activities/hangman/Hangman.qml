@@ -86,8 +86,8 @@ ActivityBase {
             property double maskThreshold
             property var goodWord
             property int goodWordIndex
-            property bool easyModeImage: false
-            property bool easyModeAudio: false
+            property bool easyModeImage: true
+            property bool easyModeAudio: true
             property alias englishFallbackDialog: englishFallbackDialog
             property alias winTimer: winTimer
             property alias goodIcon: goodIcon
@@ -274,10 +274,10 @@ ActivityBase {
                 else {
                     background.locale = Core.resolveLocale(background.locale)
                 }
-                if (activityData) {
-                    if (activityData["easyModeImage"])
+                if(activityData) {
+                    if(activityData["easyModeImage"])
                         items.easyModeImage = (activityData["easyModeImage"] === "true");
-                    else if (activityData["easyMode"])
+                    else if(activityData["easyMode"])
                         items.easyModeImage = (activityData["easyMode"] === "true");
                 }
                 if(activityData && activityData["easyModeAudio"]) {

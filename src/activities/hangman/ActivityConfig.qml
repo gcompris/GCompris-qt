@@ -27,15 +27,12 @@ import "qrc:/gcompris/src/core/core.js" as Core
 Item {
     id: activityConfiguration
     property Item background
-    property alias localeBox: localeBox
     property string locale: "system"
     property string configurationLocale: "system"
-    property alias easyModeImageBox: easyModeImageBox
-    property alias easyModeAudioBox: easyModeAudioBox
-    property bool easyModeImage: false
-    property bool easyModeAudio: false
+    property bool easyModeImage: true
+    property bool easyModeAudio: true
     height: innerColumn.childrenRect.height
-    width: if(background) background.width - 40
+    width: if(background) background.width * 0.9
     property alias availableLangs: langs.languages
     LanguageList {
         id: langs
@@ -55,18 +52,18 @@ Item {
             id: easyModeImageBox
             width: parent.width
             text: qsTr("Display image to find as hint")
-            checked: activityConfiguration.easyModeImage
+            checked: easyModeImage
             onCheckedChanged: {
-                activityConfiguration.easyModeImage = checked
+                easyModeImage = checked
             }
         }
         GCDialogCheckBox {
             id: easyModeAudioBox
             width: parent.width
             text: qsTr("Speak words to find (if available) when three attempts are remaining")
-            checked: activityConfiguration.easyModeAudio
+            checked: easyModeAudio
             onCheckedChanged: {
-                activityConfiguration.easyModeAudio = checked
+                easyModeAudio = checked
             }
         }
     }
@@ -78,37 +75,40 @@ Item {
     }
 
     property var dataToSave
-    function setDefaultValues() {
-        // Recreate the binding
-        easyModeImageBox.checked = Qt.binding(function(){return activityConfiguration.easyModeImage;})
-        easyModeAudioBox.checked = Qt.binding(function(){return activityConfiguration.easyModeAudio;})
 
+    function setDefaultValues() {
         var localeUtf8 = dataToSave.locale;
         if(localeUtf8 !== "system") {
             localeUtf8 += ".UTF-8";
         }
-        
+
         if(dataToSave.locale) {
             setLocale(localeUtf8)
         }
         else {
-            activityConfiguration.localeBox.currentIndex = 0
+            localeBox.currentIndex = 0
             setLocale(activityConfiguration.availableLangs[0].locale)
         }
 
-        activityConfiguration.easyModeImage = (dataToSave.easyModeImage ? dataToSave.easyModeImage === "true" : dataToSave.easyMode === "true")
-        activityConfiguration.easyModeAudio = (dataToSave.easyModeAudio === "true")
+        if(dataToSave["easyModeImage"] === undefined && dataToSave["easyMode"] === undefined) {
+            dataToSave["easyModeImage"] = "true";
+        }
+        easyModeImageBox.checked = (dataToSave.easyModeImage ? dataToSave.easyModeImage === "true" : dataToSave.easyMode === "true")
+        if(dataToSave["easyModeAudio"] === undefined) {
+            dataToSave["easyModeAudio"] = "true";
+        }
+        easyModeAudioBox.checked = (dataToSave.easyModeAudio === "true")
 
         for(var i = 0 ; i < activityConfiguration.availableLangs.length ; i ++) {
             if(activityConfiguration.availableLangs[i].locale === localeUtf8) {
-                activityConfiguration.localeBox.currentIndex = i;
+                localeBox.currentIndex = i;
                 break;
             }
         }
     }
 
     function saveValues() {
-        var newLocale = activityConfiguration.availableLangs[activityConfiguration.localeBox.currentIndex].locale;
+        var newLocale = activityConfiguration.availableLangs[localeBox.currentIndex].locale;
         // Remove .UTF-8
         if(newLocale.indexOf('.') != -1) {
             newLocale = newLocale.substring(0, newLocale.indexOf('.'))
@@ -116,10 +116,8 @@ Item {
 
         setLocale(newLocale);
 
-        activityConfiguration.easyModeImage = activityConfiguration.easyModeImageBox.checked
-        activityConfiguration.easyModeAudio = activityConfiguration.easyModeAudioBox.checked
         dataToSave = {"locale": newLocale, "activityLocale": activityConfiguration.locale,
-                      "easyModeImage": "" + activityConfiguration.easyModeImage,
-                      "easyModeAudio": "" + activityConfiguration.easyModeAudio}
+                      "easyModeImage": "" + easyModeImage,
+                      "easyModeAudio": "" + easyModeAudio}
     }
 }
