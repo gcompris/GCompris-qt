@@ -22,6 +22,8 @@
 import QtQuick 2.6
 import GCompris 1.0
 
+import "gnumch-equality.js" as Activity
+
 Creature {
     function getCaught(index) {
         if (!movable) {
@@ -43,7 +45,7 @@ Creature {
             bonus.bad("tux")
             monsters.destroyAll()
             spawningMonsters.restart()
-            start()
+            background.initLevel()
         }
     }
 

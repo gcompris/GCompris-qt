@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Practice Division inequality.")
+    objective: qsTr("Practice division inequality.")
     difficulty: 6
     data: [
         {

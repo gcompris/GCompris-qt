@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Practice Division equality.")
+    objective: qsTr("Practice division equality.")
     difficulty: 6
     data: [
         {
