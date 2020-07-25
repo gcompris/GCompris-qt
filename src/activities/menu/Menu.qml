@@ -465,6 +465,7 @@ ActivityBase {
                     opacity: 0.5
                 }
                 Image {
+                    id: activityIcon
                     source: "qrc:/gcompris/src/activities/" + icon
                     anchors.top: activityBackground.top
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -513,11 +514,11 @@ ActivityBase {
                         anchors.horizontalCenter: parent.horizontalCenter
                         horizontalAlignment: Text.AlignHCenter
                         width: activityBackground.width
+                        height: activityBackground.height - activityIcon.height
                         fontSizeMode: Text.Fit
-                        minimumPointSize: 7
+                        minimumPointSize: 10
                         fontSize: regularSize
                         elide: Text.ElideRight
-                        maximumLineCount: 2
                         wrapMode: Text.WordWrap
                         text: ActivityInfoTree.menuTree[index].title
                     }
