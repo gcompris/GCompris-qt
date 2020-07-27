@@ -50,6 +50,7 @@ ActivityBase {
 
         Component.onCompleted: {
             activity.start.connect(start)
+            dialogActivityConfig.initialize()
             activity.stop.connect(stop)
         }
 
@@ -66,6 +67,7 @@ ActivityBase {
             property alias modelRepeater: modelRepeater
             property alias gridRepeater: gridRepeater
             property alias showGrid1: showGrid1
+            property alias score: score
             property int selected
             property int columns
             property int rows
@@ -73,6 +75,7 @@ ActivityBase {
             property int sensivity: 80
             property bool gameFinished: false
             property bool pieceIsMoving: false
+            property var levels: activity.datasetLoader.data
         }
 
         onStart: { Activity.start(items) }
@@ -466,20 +469,50 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+            onClose: {
+                home()
+            }
+
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+            }
+
+            onStartActivity: {
+                background.stop()
+                background.start()
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | reload | activityConfig}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(Activity.nextSubLevel)
+        }
+
+        Score {
+            id: score
+            visible: true
+//            anchors.right: parent.right
+            anchors.rightMargin: {print("hey"); return 100 * ApplicationInfo.ratio }
+            anchors.bottom: bar.top
         }
     }
 

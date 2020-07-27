@@ -38,6 +38,7 @@ var levels = [{showGrid: 1, noOfItems: 2, inLine: true, columns: 4, rows: 3 },
 var currentLevel = 0
 var numberLevelsWords = 2
 var maxWordLevels = 3 * numberLevelsWords
+var currentSubLevel = 0;
 var maxImageLevels = levels.length
 var numberOfLevel = maxWordLevels + maxImageLevels
 var items
@@ -62,10 +63,14 @@ var alreadyUsed5 = []
 var names = []
 var names2 = []
 var good = []
+var levels
+var maxSubLevel
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    currentSubLevel = 0
+    levels = items.levels
     currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
 
     /*: Translators: NOTE: Word list for crane activity.
@@ -100,22 +105,23 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    Core.shuffle(words3Letters)
-    Core.shuffle(words4Letters)
-    Core.shuffle(words5Letters)
-    init()
+    maxSubLevel = levels[currentLevel].length
+    currentSubLevel = 0;
+    items.score.numberOfSubLevels = maxSubLevel
+    initSubLevel()
 }
 
-function init() {
+function initSubLevel() {
+    items.score.currentSubLevel = currentSubLevel + 1;
     // reset the arrays
     names = []
     names2 = []
 
     // set models for repeaters
-    if (currentLevel >= maxWordLevels)
+    if (!levels[currentLevel][currentSubLevel].isWord)
         setRandomModelImage()
     else
-        setRandomModelWord()
+        setModelWord()
 
     items.gameFinished = false
 
@@ -141,52 +147,20 @@ function init() {
     }
 }
 
-function getNextUnusedWord(wordsUsed, alreadyUsed) {
-    var currentIndex = Math.floor(Math.random() * wordsUsed.length)
-    while(alreadyUsed.indexOf(wordsUsed[currentIndex]) >= 0) {
-        // there are no more words to use => clear the "alreadyUsed" vector
-        if (alreadyUsed.length == wordsUsed.length)
-            alreadyUsed = []
-        // get another random index
-        currentIndex = Math.floor(Math.random() * wordsUsed.length)
-    }
-    // add the word in the "alreadyUsed" vector
-    alreadyUsed = alreadyUsed.concat(wordsUsed[currentIndex])
-    return wordsUsed[currentIndex]
-}
-
 // levels with words as items
-function setRandomModelWord() {
+function setModelWord() {
     var numbers = []
     var i
     var wordsUsed
 
-    if (currentLevel < numberLevelsWords) {
-        wordsUsed = words3Letters
-        // show or hide the grid
-        items.showGrid1.opacity = 1
-        // set the two boards in line or not
-        items.background.inLine = true
-    }
-    else if (currentLevel < numberLevelsWords * 2) {
-        wordsUsed = words4Letters
-        // show or hide the grid
-        items.showGrid1.opacity = 1
-        // set the two boards in line or not
-        items.background.inLine = false
-    }
-    else {
-        wordsUsed = words5Letters
-        // show or hide the grid
-        items.showGrid1.opacity = 0
-        // set the two boards in line or not
-        items.background.inLine = false
-    }
-    // take the first word and keep its length
-    var currentWordsLength = wordsUsed[0].length;
+    // show or hide the grid
+    items.showGrid1.opacity = levels[currentLevel][currentSubLevel].showGrid
+    // set the two boards in line or not
+    items.background.inLine = levels[currentLevel][currentSubLevel].inLine
+
     // set the number of columns and rows, be sure we have enough space to display the word
-    items.columns = currentWordsLength + 1
-    items.rows = currentWordsLength
+    items.columns = levels[currentLevel][currentSubLevel].columns
+    items.rows = levels[currentLevel][currentSubLevel].rows;
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -196,20 +170,8 @@ function setRandomModelWord() {
 
     // before: // var currentIndex = currentLevel % numberLevelsWords
 
-    // get a random word
-    var word
-
-    // use vectors to store the words already used
-    if (currentWordsLength == 3) {
-        word = getNextUnusedWord(wordsUsed, alreadyUsed3);
-    }
-    else if (currentWordsLength == 4) {
-        word = getNextUnusedWord(wordsUsed, alreadyUsed4);
-    }
-    else if (currentWordsLength == 5) {
-        word = getNextUnusedWord(wordsUsed, alreadyUsed5);
-    }
-
+    // get a word
+    var word = levels[currentLevel][currentSubLevel].word
 
     // place the word at a random position in the grid
     var randomRow = Math.floor(Math.random() * items.rows)
@@ -247,8 +209,8 @@ function setRandomModelImage() {
     var i
 
     // set the number of columns and rows from "levels"
-    items.columns = levels[currentLevel - maxWordLevels].columns
-    items.rows = levels[currentLevel - maxWordLevels].rows
+    items.columns = levels[currentLevel][currentSubLevel].columns
+    items.rows = levels[currentLevel][currentSubLevel].rows
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -262,12 +224,12 @@ function setRandomModelImage() {
     //get "levels[currentLevel].noOfItems" random numbers
     Core.shuffle(numbers)
 
-    for (i = 0; i < levels[currentLevel - maxWordLevels].noOfItems; i++)
+    for (i = 0; i < levels[currentLevel][currentSubLevel].noOfItems; i++)
         names[numbers[i]] = url + allNames[i]
 
     Core.shuffle(numbers)
 
-    for (i = 0; i < levels[currentLevel - maxWordLevels].noOfItems; i++)
+    for (i = 0; i < levels[currentLevel][currentSubLevel].noOfItems; i++)
         names2[numbers[i]] = url + allNames[i]
 
     // set model for repeaters
@@ -282,10 +244,10 @@ function setRandomModelImage() {
     }
 
     // show or hide the grid
-    items.showGrid1.opacity = levels[currentLevel - maxWordLevels].showGrid
+    items.showGrid1.opacity = levels[currentLevel][currentSubLevel].showGrid
 
     // set the two boards in line or not
-    items.background.inLine = levels[currentLevel - maxWordLevels].inLine
+    items.background.inLine = levels[currentLevel][currentSubLevel].inLine
 }
 
 // returns the next index needed for switching to another item
@@ -403,5 +365,14 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function nextSubLevel() {
+    if(++currentSubLevel >= maxSubLevel) {
+        nextLevel()
+    } else {
+        items.score.playWinAnimation();
+        initSubLevel();
+    }
 }
 
