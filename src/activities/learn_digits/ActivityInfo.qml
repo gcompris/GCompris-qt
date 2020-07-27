@@ -26,7 +26,7 @@ ActivityInfo {
   title: qsTr("Learn digits")
   //: Help title
   description: qsTr("Learn digits from 0 to 9")
-  //intro: "put here in comment the text for the intro voice"
+  //intro: "Click on the circles to match the given digit."
   //: Help goal
   goal: qsTr("Learn digits by counting their corresponding value")
   //: Help prerequisite
@@ -37,7 +37,7 @@ ActivityInfo {
           qsTr("-Arrows: navigate") + ("<br>") +
           qsTr("-Space: select or deselect a circle") + ("<br>") +
           qsTr("-Enter: validate the answer") + ("<br>") +
-          qsTr("-Tab: say the digit again)")
+          qsTr("-Tab: say the digit again")
   credit: ""
   section: "math numeration"
   createdInVersion: 9800

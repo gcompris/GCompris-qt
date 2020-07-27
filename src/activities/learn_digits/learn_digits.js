@@ -1,10 +1,9 @@
 /* GCompris - learn_digits.js
  *
- * Copyright (C) 2018 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2020 Timothée Giet <animtim@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Timothée Giet <animtim@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
