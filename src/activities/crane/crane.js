@@ -24,48 +24,28 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import GCompris 1.0 as GCompris
 
-var levels = [{showGrid: 1, noOfItems: 2, inLine: true, columns: 4, rows: 3 },
-              {showGrid: 1, noOfItems: 3, inLine: true, columns: 5, rows: 4 },
-              {showGrid: 1, noOfItems: 4, inLine: true, columns: 6, rows: 5 },
-              {showGrid: 0, noOfItems: 5, inLine: false, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 6, inLine: false, columns: 7, rows: 6 },
-              {showGrid: 1, noOfItems: 7, inLine: true, columns: 7, rows: 6 },
-              {showGrid: 1, noOfItems: 8, inLine: true, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 9, inLine: false, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 10, inLine: false, columns: 7, rows: 6 },
-              {showGrid: 0, noOfItems: 11, inLine: false, columns: 7, rows: 6 }]
-
 var currentLevel = 0
 var numberLevelsWords = 2
-var maxWordLevels = 3 * numberLevelsWords
-var maxImageLevels = levels.length
-var numberOfLevel = maxWordLevels + maxImageLevels
-var items
-var url = "qrc:/gcompris/src/activities/crane/resource/"
-
-var allNames = ["bulb.svg","letter-a.svg","letter-b.svg",
-                "rectangle1.svg","rectangle2.svg","square1.svg",
-                "square2.svg","triangle1.svg","triangle2.svg",
-                "tux.svg","water_drop1.svg","water_drop2.svg",
-                "water_spot1.svg","water_spot2.svg"]
-
-var currentLocale
-
+var currentSubLevel = 0;
+var numberOfLevel
 var words3Letters = []
 var words4Letters = []
 var words5Letters = []
-
-var alreadyUsed3 = []
-var alreadyUsed4 = []
-var alreadyUsed5 = []
-
+var items
+var url = "qrc:/gcompris/src/activities/crane/resource/"
+var currentLocale
 var names = []
 var names2 = []
 var good = []
+var levels
+var maxSubLevel
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    currentSubLevel = 0
+    levels = items.levels
+    numberOfLevel = levels.length
     currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
 
     /*: Translators: NOTE: Word list for crane activity.
@@ -74,7 +54,7 @@ function start(items_) {
         lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
     */
     words3Letters = qsTr("cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg").split(';')
-    
+
     /*: Translators: NOTE: Word list for crane activity.
         Translate this into a list of 10–20 simple 4-letter
         words separated by semi-colons. The words can only contain
@@ -83,15 +63,15 @@ function start(items_) {
     words4Letters = qsTr("blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;sand;song").split(';')
 
     /*: Translators: NOTE: Word list for crane activity.
-      Translate this into a list of 10–20 simple 5-letter
-      words separated by semi-colons. The words can only contain
-      lowercase ASCII letters (a–z). Example: happy;child;white;apple
+        Translate this into a list of 10–20 simple 5-letter
+        words separated by semi-colons. The words can only contain
+        lowercase ASCII letters (a–z). Example: happy;child;white;apple
     */
     words5Letters = qsTr("happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;shape;shirt;study").split(';')
 
-    alreadyUsed3 = []
-    alreadyUsed4 = []
-    alreadyUsed5 = []
+    Core.shuffle(words3Letters)
+    Core.shuffle(words4Letters)
+    Core.shuffle(words5Letters)
     initLevel()
 }
 
@@ -100,22 +80,23 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    Core.shuffle(words3Letters)
-    Core.shuffle(words4Letters)
-    Core.shuffle(words5Letters)
-    init()
+    maxSubLevel = levels[currentLevel].length
+    currentSubLevel = 0;
+    items.score.numberOfSubLevels = maxSubLevel
+    initSubLevel()
 }
 
-function init() {
+function initSubLevel() {
+    items.score.currentSubLevel = currentSubLevel + 1;
     // reset the arrays
     names = []
     names2 = []
 
     // set models for repeaters
-    if (currentLevel >= maxWordLevels)
-        setRandomModelImage()
+    if (!levels[currentLevel][currentSubLevel].isWord)
+        setModelImage()
     else
-        setRandomModelWord()
+        setModelWord()
 
     items.gameFinished = false
 
@@ -141,52 +122,41 @@ function init() {
     }
 }
 
-function getNextUnusedWord(wordsUsed, alreadyUsed) {
-    var currentIndex = Math.floor(Math.random() * wordsUsed.length)
-    while(alreadyUsed.indexOf(wordsUsed[currentIndex]) >= 0) {
-        // there are no more words to use => clear the "alreadyUsed" vector
-        if (alreadyUsed.length == wordsUsed.length)
-            alreadyUsed = []
-        // get another random index
-        currentIndex = Math.floor(Math.random() * wordsUsed.length)
+function getInternalWord() {
+    // function to get a word from translated lists
+    var currentWordLength = levels[currentLevel][currentSubLevel].wordLength
+    var wordsUsed
+    if (currentWordLength === 3) {
+        wordsUsed = words3Letters
     }
-    // add the word in the "alreadyUsed" vector
-    alreadyUsed = alreadyUsed.concat(wordsUsed[currentIndex])
-    return wordsUsed[currentIndex]
+    else if (currentWordLength === 4) {
+        wordsUsed = words4Letters
+    }
+    else if (currentWordLength === 5) {
+        wordsUsed = words5Letters
+    }
+    // choosing first word of a list and pushing it to the end of the list like a queue.
+    var word = wordsUsed[0]
+    wordsUsed.shift()
+    wordsUsed.push(word)
+    return word
 }
 
 // levels with words as items
-function setRandomModelWord() {
+function setModelWord() {
     var numbers = []
     var i
     var wordsUsed
+    var word = levels[currentLevel][currentSubLevel].word
 
-    if (currentLevel < numberLevelsWords) {
-        wordsUsed = words3Letters
-        // show or hide the grid
-        items.showGrid1.opacity = 1
-        // set the two boards in line or not
-        items.background.inLine = true
-    }
-    else if (currentLevel < numberLevelsWords * 2) {
-        wordsUsed = words4Letters
-        // show or hide the grid
-        items.showGrid1.opacity = 1
-        // set the two boards in line or not
-        items.background.inLine = false
-    }
-    else {
-        wordsUsed = words5Letters
-        // show or hide the grid
-        items.showGrid1.opacity = 0
-        // set the two boards in line or not
-        items.background.inLine = false
-    }
-    // take the first word and keep its length
-    var currentWordsLength = wordsUsed[0].length;
+    // show or hide the grid
+    items.showGrid1.opacity = levels[currentLevel][currentSubLevel].showGrid
+    // set the two boards in line or not
+    items.background.inLine = levels[currentLevel][currentSubLevel].inLine
+
     // set the number of columns and rows, be sure we have enough space to display the word
-    items.columns = currentWordsLength + 1
-    items.rows = currentWordsLength
+    items.columns = levels[currentLevel][currentSubLevel].columns
+    items.rows = levels[currentLevel][currentSubLevel].rows;
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -194,22 +164,9 @@ function setRandomModelWord() {
         numbers[i] = i;  // generate columns*rows numbers
     }
 
-    // before: // var currentIndex = currentLevel % numberLevelsWords
-
-    // get a random word
-    var word
-
-    // use vectors to store the words already used
-    if (currentWordsLength == 3) {
-        word = getNextUnusedWord(wordsUsed, alreadyUsed3);
+    if(word === undefined) {
+        word = getInternalWord()
     }
-    else if (currentWordsLength == 4) {
-        word = getNextUnusedWord(wordsUsed, alreadyUsed4);
-    }
-    else if (currentWordsLength == 5) {
-        word = getNextUnusedWord(wordsUsed, alreadyUsed5);
-    }
-
 
     // place the word at a random position in the grid
     var randomRow = Math.floor(Math.random() * items.rows)
@@ -242,13 +199,14 @@ function setRandomModelWord() {
 }
 
 // levels with images as items
-function setRandomModelImage() {
+function setModelImage() {
     var numbers = []
     var i
+    var imageList = levels[currentLevel][currentSubLevel].images;
 
     // set the number of columns and rows from "levels"
-    items.columns = levels[currentLevel - maxWordLevels].columns
-    items.rows = levels[currentLevel - maxWordLevels].rows
+    items.columns = levels[currentLevel][currentSubLevel].columns
+    items.rows = levels[currentLevel][currentSubLevel].rows
 
     for (i = 0; i < items.columns * items.rows; i++) {
         names[i] = ""
@@ -257,18 +215,18 @@ function setRandomModelImage() {
     }
 
     // randomize the names
-    Core.shuffle(allNames)
+    Core.shuffle(imageList)
 
     //get "levels[currentLevel].noOfItems" random numbers
     Core.shuffle(numbers)
 
-    for (i = 0; i < levels[currentLevel - maxWordLevels].noOfItems; i++)
-        names[numbers[i]] = url + allNames[i]
+    for (i = 0; i < imageList.length; i++)
+        names[numbers[i]] = imageList[i]
 
     Core.shuffle(numbers)
 
-    for (i = 0; i < levels[currentLevel - maxWordLevels].noOfItems; i++)
-        names2[numbers[i]] = url + allNames[i]
+    for (i = 0; i < imageList.length; i++)
+        names2[numbers[i]] = imageList[i]
 
     // set model for repeaters
     items.repeater.model = names.length
@@ -282,10 +240,10 @@ function setRandomModelImage() {
     }
 
     // show or hide the grid
-    items.showGrid1.opacity = levels[currentLevel - maxWordLevels].showGrid
+    items.showGrid1.opacity = levels[currentLevel][currentSubLevel].showGrid
 
     // set the two boards in line or not
-    items.background.inLine = levels[currentLevel - maxWordLevels].inLine
+    items.background.inLine = levels[currentLevel][currentSubLevel].inLine
 }
 
 // returns the next index needed for switching to another item
@@ -405,3 +363,11 @@ function previousLevel() {
     initLevel();
 }
 
+function nextSubLevel() {
+    if(++currentSubLevel >= maxSubLevel) {
+        nextLevel()
+    } else {
+        items.score.playWinAnimation();
+        initSubLevel();
+    }
+}
