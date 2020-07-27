@@ -27,11 +27,13 @@
 var currentLevel = 0;
 var numberOfLevel;
 var items;
+var questionsLeft;
+var questionsArray;
 
 function start(items_) {
     items = items_;
+    numberOfLevel = items.levels.length;
     currentLevel = 0;
-    loadDatasets();
     initLevel();
 }
 
@@ -40,22 +42,17 @@ function stop() {
     items.audioVoices.clearQueue();
 }
 
-function loadDatasets() {
-    numberOfLevel = items.levels.length;
-}
-
 function initLevel() {
     items.circlesModel = 0
-    items.questionsArray = []
-    items.questionsLeft = []
     items.question = 0
     items.answer = 0
     items.bar.level = currentLevel + 1;
+    questionsArray = items.levels[currentLevel].questionsArray;
+    questionsLeft = questionsArray.slice(0);
+    console.log("questionsLeft is " + questionsLeft)
     items.circlesModel = items.levels[currentLevel].circlesModel;
-    items.questionsArray = items.levels[currentLevel].questionsArray;
-    items.questionsLeft = items.questionsArray;
-    items.score.currentSubLevel = 0;
-    items.score.numberOfSubLevels = items.questionsArray.length;
+    items.currentSubLevel = 0;
+    items.nbSubLevel = questionsArray.length;
     initQuestion();
 }
 
@@ -63,6 +60,7 @@ function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0;
     }
+    items.currentSubLevel = 0;
     initLevel();
 }
 
@@ -70,36 +68,44 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1;
     }
+    items.currentSubLevel = 0;
     initLevel();
 }
 
 function removeLastQuestion() {
-     for(var i = 0; i < items.questionsLeft.length; i++) {
-        if(items.questionsLeft[i] === items.question)
-            items.questionsLeft.splice(i, 1);
+     for(var i = 0; i < questionsLeft.length; i++) {
+        if(questionsLeft[i] === items.question)
+            questionsLeft.splice(i, 1);
      }
 }
 
 function initQuestion() {
-    items.circlesLine.model = 0;
-    items.circlesLine.model = items.circlesModel;
+    resetCircles();
     items.answer = 0;
-    var questionIndex = Math.floor(Math.random() * Math.floor(items.questionsLeft.length - 1));
-    items.question = items.questionsLeft[questionIndex];
+    var questionIndex = Math.floor(Math.random() * Math.floor(questionsLeft.length - 1));
+    console.log("questionIndex is " + questionIndex)
+    items.question = questionsLeft[questionIndex];
     playLetter(items.question.toString());
+}
+
+function resetCircles() {
+    for(var i = 0; i < items.circlesLine.count; i++) {
+        if(items.circlesLine.itemAt(i) != undefined)
+            items.circlesLine.itemAt(i).resetCircle();
+    }
 }
 
 function checkAnswer() {
     items.inputLocked = true
     if(items.answer === items.question) {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav");
-        ++items.score.currentSubLevel;
+        ++items.currentSubLevel;
         items.score.playWinAnimation();
         removeLastQuestion();
     } else {
         items.bonus.bad('flower');
     }
-    if(items.score.currentSubLevel === items.score.numberOfSubLevels) {
+    if(items.currentSubLevel === items.nbSubLevel) {
         items.bonus.good('flower');
     }
 }

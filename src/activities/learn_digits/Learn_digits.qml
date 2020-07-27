@@ -59,11 +59,11 @@ ActivityBase {
             property alias circlesLine: circlesLine
             property alias fileId: fileId
             property alias locale: background.locale
+            property int currentSubLevel: 0
+            property int nbSubLevel
             property int answer: 0
             property int question: 0
             property int circlesModel: 3
-            property var questionsArray: []
-            property var questionsLeft: []
             property bool inputLocked: false
             property var levels: activity.datasetLoader.data
         }
@@ -123,12 +123,13 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.right: parent.right
                 anchors.bottom: undefined
-                currentSubLevel: 0
-                numberOfSubLevels: 10
+                numberOfSubLevels: items.nbSubLevel
+                currentSubLevel: items.currentSubLevel
                 onStop: {
-                    if(!bonus.isPlaying)
+                    if(!bonus.isPlaying) {
                         Activity.initQuestion();
                         items.inputLocked = false;
+                    }
                 }
             }
             BarButton {
@@ -167,19 +168,27 @@ ActivityBase {
             Repeater {
                 id: circlesLine
                 model: items.circlesModel
+                delegate: circlesComponent
+            }
+            Component {
+                id: circlesComponent
                 Item {
-                    id: circleComponent
+                    function resetCircle() {
+                        isFilled = false;
+                        circleColor = "#00ffffff";
+                    }
                     width: circlesArea.itemWidth
                     height: width
                     x: isHorizontal ? width * index : 0
                     y: isHorizontal ? 0 : width * index
                     property bool isFilled: false
+                    property string circleColor: "#00ffffff"
                     Rectangle {
                         id: circle
                         anchors.centerIn: parent
                         border.color: "#373737"
                         border.width: 5 * ApplicationInfo.ratio
-                        color: "#00ffffff"
+                        color: circleColor
                         width: parent.width * 0.9
                         height: width
                         radius: width * 0.5
@@ -190,10 +199,10 @@ ActivityBase {
                         onClicked: {
                             if(!parent.isFilled) {
                                 ++items.answer;
-                                circle.color = "#ffd2611d";
+                                circleColor = "#ffd2611d";
                             } else {
                                 --items.answer;
-                                circle.color = "#00ffffff";
+                                circleColor = "#00ffffff";
                             }
                             parent.isFilled = !parent.isFilled
                         }
