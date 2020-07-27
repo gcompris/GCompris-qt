@@ -42,6 +42,7 @@ ActivityBase {
         id: background
         source: Activity.resUrl + "hillside.svg"
         sourceSize.width: parent.width
+        sourceSize.height: parent.height
         fillMode: Image.PreserveAspectCrop
         focus: true
 
