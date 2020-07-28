@@ -30,6 +30,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    Keys.onPressed: {
+        Activity.processKey(event);
+    }
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/braille_fun/resource/hillside.svg"
@@ -64,6 +68,7 @@ ActivityBase {
             property int answer: 0
             property int question: 0
             property int circlesModel: 3
+            property int selectedCircle: -1
             property bool inputLocked: false
             property var levels: activity.datasetLoader.data
         }
@@ -190,6 +195,15 @@ ActivityBase {
             width: isHorizontal ? itemWidth * items.circlesModel : itemWidth
             height: isHorizontal ? itemWidth : itemWidth * items.circlesModel
             anchors.centerIn: circlesBackground
+            Rectangle {
+                id: circlesSelector
+                width: circlesArea.itemWidth
+                height: circlesArea.itemWidth
+                radius: 10 * ApplicationInfo.ratio
+                color: "#803ACAFF"
+                visible: items.selectedCircle > -1
+                anchors.centerIn: circlesLine.itemAt(items.selectedCircle)
+            }
             Repeater {
                 id: circlesLine
                 model: items.circlesModel
@@ -201,6 +215,16 @@ ActivityBase {
                     function resetCircle() {
                         isFilled = false;
                         circleColor = "#00ffffff";
+                    }
+                    function clickCircle() {
+                        if(!isFilled) {
+                            ++items.answer;
+                            circleColor = "#ffd2611d";
+                        } else {
+                            --items.answer;
+                            circleColor = "#00ffffff";
+                        }
+                        isFilled = !isFilled
                     }
                     width: circlesArea.itemWidth
                     height: width
@@ -221,16 +245,7 @@ ActivityBase {
                     MouseArea {
                         id: circleInput
                         anchors.fill: parent
-                        onClicked: {
-                            if(!parent.isFilled) {
-                                ++items.answer;
-                                circleColor = "#ffd2611d";
-                            } else {
-                                --items.answer;
-                                circleColor = "#00ffffff";
-                            }
-                            parent.isFilled = !parent.isFilled
-                        }
+                        onClicked: parent.clickCircle();
                     }
                 }
             }

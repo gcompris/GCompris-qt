@@ -54,6 +54,8 @@ function initLevel() {
     items.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
     initQuestion();
+    if(items.selectedCircle >= 0)
+        items.selectedCircle = 0;
 }
 
 function nextLevel() {
@@ -123,4 +125,27 @@ function playLetter(letter) {
 function stopVoice() {
     items.audioVoices.stop();
     items.audioVoices.clearQueue();
+}
+
+function processKey(event) {
+    if(items.inputLocked)
+        return;
+    if(event.key === Qt.Key_Right || event.key === Qt.Key_Down) {
+        if(items.selectedCircle < items.circlesModel - 1 )
+            ++items.selectedCircle;
+        else
+            items.selectedCircle = 0;
+    } else if(event.key === Qt.Key_Left || event.key === Qt.Key_Up) {
+        if(items.selectedCircle > 0)
+            --items.selectedCircle;
+        else
+            items.selectedCircle = items.circlesModel - 1;
+    } else if(event.key === Qt.Key_Space) {
+        if(items.selectedCircle >= 0)
+            items.circlesLine.itemAt(items.selectedCircle).clickCircle();
+    } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+        checkAnswer();
+    } else if(event.key === Qt.Key_Tab) {
+        playLetter(items.question.toString());
+    }
 }
