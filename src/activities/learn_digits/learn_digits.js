@@ -30,6 +30,7 @@ var questionsLeft;
 var questionsArray;
 
 function start(items_) {
+    Core.checkForVoices(items_.main);
     items = items_;
     numberOfLevel = items.levels.length;
     currentLevel = 0;

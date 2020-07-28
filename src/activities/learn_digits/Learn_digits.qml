@@ -70,7 +70,13 @@ ActivityBase {
         property string locale: ApplicationSettings.locale
         property bool isHorizontal: layoutArea.width >= layoutArea.height
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            if(!DownloadManager.areVoicesRegistered()) {
+                repeatItem.visible = false;
+                repeatItem.enabled = false;
+            }
+            Activity.start(items)
+        }
         onStop: { Activity.stop() }
 
         Item {
@@ -88,6 +94,25 @@ ActivityBase {
             anchors.bottom: layoutArea.verticalCenter
             anchors.left: layoutArea.left
             anchors.right: layoutArea.right
+        }
+
+        Item {
+            id: repeatArea
+            width: textArea.width
+            height: textArea.height
+            anchors.right: textArea.left
+            anchors.verticalCenter: textArea.verticalCenter
+        }
+
+        BarButton {
+            id: repeatItem
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
+            sourceSize.width: repeatArea.height > repeatArea.width ?
+                                    repeatArea.width * 0.6 : repeatArea.height * 0.6
+            anchors.centerIn: repeatArea
+            onClicked:{
+                Activity.playLetter(items.question.toString());
+            }
         }
 
         Item {
