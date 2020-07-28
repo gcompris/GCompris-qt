@@ -34,10 +34,13 @@ Rectangle {
     z: 10000
     anchors.fill: parent
     visible: false
+    focus: visible
 
     Keys.onEscapePressed: close()
 
     signal close
+
+    onClose: parent.forceActiveFocus();
 
     property bool horizontalLayout: dialogBackground.width >= dialogBackground.height
     property int margin30: Math.round(30 * ApplicationInfo.ratio)
