@@ -396,8 +396,14 @@ ActivityBase {
             onHelpClicked: {
                 displayDialog(dialogHelp);
             }
-            onPreviousLevelClicked: Activity.previousLevel();
-            onNextLevelClicked: Activity.nextLevel();
+            onPreviousLevelClicked: {
+                if(!items.inputLocked)
+                    Activity.previousLevel();
+            }
+            onNextLevelClicked: {
+                if(!items.inputLocked)
+                    Activity.nextLevel();
+            }
             onHomeClicked: activity.home();
             onActivityConfigClicked: displayDialog(dialogActivityConfig);
         }
