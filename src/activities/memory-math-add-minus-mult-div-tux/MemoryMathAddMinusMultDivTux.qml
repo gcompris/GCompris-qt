@@ -22,10 +22,8 @@
 import QtQuick 2.6
 
 import "../memory"
-import "memory-addminusmultdivdataset.js" as Dataset
 
 MemoryCommon {
-    dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
     withTux: true
 }
