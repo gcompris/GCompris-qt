@@ -63,6 +63,7 @@ ActivityBase {
             property alias circlesLine: circlesLine
             property alias fileId: fileId
             property alias locale: background.locale
+            property alias iAmReady: iAmReady
             property int currentSubLevel: 0
             property int nbSubLevel
             property int answer: 0
@@ -76,13 +77,27 @@ ActivityBase {
         property bool isHorizontal: layoutArea.width >= layoutArea.height
 
         onStart: {
-            if(!DownloadManager.areVoicesRegistered()) {
-                repeatItem.visible = false;
-                repeatItem.enabled = false;
-            }
             Activity.start(items)
         }
         onStop: { Activity.stop() }
+
+        function itemsVisible() {
+            iAmReady.visible = false;
+            if(DownloadManager.areVoicesRegistered()) {
+                repeatItem.visible = true;
+            }
+            questionText.visible = true;
+            scoreArea.visible = true;
+            circlesBackground.visible = true;
+            circlesArea.visible = true;
+            Activity.initQuestion();
+            items.inputLocked = false;
+        }
+
+        ReadyButton {
+            id: iAmReady
+            onClicked: background.itemsVisible();
+        }
 
         Item {
             id: layoutArea
@@ -107,12 +122,14 @@ ActivityBase {
 
         BarButton {
             id: repeatItem
+            visible: false
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
             sourceSize.width: repeatArea.height > repeatArea.width ?
                                     repeatArea.width * 0.6 : repeatArea.height * 0.6
             anchors.centerIn: repeatArea
             onClicked:{
-                Activity.playLetter(items.question.toString());
+                if(!items.inputLocked)
+                    Activity.playLetter(items.question.toString());
             }
         }
 
@@ -122,6 +139,7 @@ ActivityBase {
         }
         GCText {
             id: questionText
+            visible: false
             width: textArea.width
             height: textArea.height
             anchors.centerIn: textArea
@@ -140,6 +158,7 @@ ActivityBase {
             id: scoreArea
             width: textArea.width
             height: textArea.height
+            visible: false
             property int scoreItemsSize: 10
             Score {
                 id: score
@@ -161,7 +180,10 @@ ActivityBase {
                 sourceSize.height: height
                 sourceSize.width: height
                 enabled: !items.inputLocked
-                onClicked: Activity.checkAnswer();
+                onClicked: {
+                    if(!items.inputLocked)
+                        Activity.checkAnswer();
+                }
             }
             states: [
                 State {
@@ -213,6 +235,7 @@ ActivityBase {
 
         Rectangle {
             id: circlesBackground
+            visible: false
             color: "#D0FFFFFF"
             anchors.bottom: layoutArea.bottom
             anchors.right: layoutArea.right
@@ -221,6 +244,7 @@ ActivityBase {
         }
         Item {
             id: circlesArea
+            visible: false
             property int itemWidth: 10 //temp values overriden with states
             width: 10
             height: 10

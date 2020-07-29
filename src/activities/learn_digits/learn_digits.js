@@ -52,7 +52,8 @@ function initLevel() {
     items.circlesModel = items.levels[currentLevel].circlesModel;
     items.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
-    initQuestion();
+    if(!items.iAmReady.visible)
+        initQuestion();
     if(items.selectedCircle >= 0)
         items.selectedCircle = 0;
 }
@@ -128,6 +129,10 @@ function stopVoice() {
 function processKey(event) {
     if(items.inputLocked)
         return;
+    if(items.iAmReady.visible) {
+        items.iAmReady.clicked();
+        return;
+    }
     if(event.key === Qt.Key_Right || event.key === Qt.Key_Down) {
         if(items.selectedCircle < items.circlesModel - 1 )
             ++items.selectedCircle;
