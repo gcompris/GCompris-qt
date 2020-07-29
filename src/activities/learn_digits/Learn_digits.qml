@@ -96,17 +96,13 @@ ActivityBase {
         Item {
             id: questionArea
             anchors.top: layoutArea.top
-            anchors.bottom: layoutArea.verticalCenter
             anchors.left: layoutArea.left
-            anchors.right: layoutArea.right
         }
 
         Item {
             id: repeatArea
             width: textArea.width
             height: textArea.height
-            anchors.right: textArea.left
-            anchors.verticalCenter: textArea.verticalCenter
         }
 
         BarButton {
@@ -122,8 +118,6 @@ ActivityBase {
 
         Item {
             id: textArea
-            width: questionArea.width * 0.3
-            height: questionArea.height * 0.8
             anchors.centerIn: questionArea
         }
         GCText {
@@ -146,13 +140,10 @@ ActivityBase {
             id: scoreArea
             width: textArea.width
             height: textArea.height
-            anchors.left: textArea.right
+            property int scoreItemsSize: 10
             Score {
                 id: score
-                width: parent.width * 0.5
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.right: parent.right
-                anchors.bottom: undefined
+                width: scoreArea.scoreItemsSize
                 numberOfSubLevels: items.nbSubLevel
                 currentSubLevel: items.currentSubLevel
                 onStop: {
@@ -165,35 +156,74 @@ ActivityBase {
             BarButton {
                 id: okButton
                 source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.right: score.left
-                anchors.rightMargin: 0.2 * height
-                height: score.height;
-                width: height
+                height: scoreArea.scoreItemsSize
+                width: scoreArea.scoreItemsSize
                 sourceSize.height: height
                 sourceSize.width: height
                 enabled: !items.inputLocked
                 onClicked: Activity.checkAnswer();
             }
+            states: [
+                State {
+                    id: scoreHorizontal
+                    when: scoreArea.width >= scoreArea.height
+                    PropertyChanges {
+                        target: scoreArea
+                        scoreItemsSize: scoreArea.width * 0.4
+                    }
+                    AnchorChanges {
+                        target: score
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.horizontalCenter: undefined
+                        anchors.right: parent.right
+                        anchors.bottom: undefined
+                    }
+                    AnchorChanges {
+                        target: okButton
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.horizontalCenter: undefined
+                        anchors.left: parent.left
+                        anchors.top: undefined
+                    }
+                },
+                State {
+                    id: scoreVertical
+                    when: scoreArea.width < scoreArea.height
+                    PropertyChanges {
+                        target: scoreArea
+                        scoreItemsSize: scoreArea.height * 0.5
+                    }
+                    AnchorChanges {
+                        target: score
+                        anchors.verticalCenter: undefined
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.right: undefined
+                        anchors.bottom: parent.bottom
+                    }
+                    AnchorChanges {
+                        target: okButton
+                        anchors.verticalCenter: undefined
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.left: undefined
+                        anchors.top: parent.top
+                    }
+                }
+            ]
         }
 
         Rectangle {
             id: circlesBackground
             color: "#D0FFFFFF"
-            anchors.top: layoutArea.verticalCenter
             anchors.bottom: layoutArea.bottom
-            anchors.left: layoutArea.left
             anchors.right: layoutArea.right
             anchors.margins: 10 * ApplicationInfo.ratio
             radius: anchors.margins
         }
         Item {
             id: circlesArea
-            property int itemWidth: background.isHorizontal ?
-                                        Math.min(circlesBackground.width / (items.circlesModel + 1), circlesBackground.height * 0.9):
-                                        Math.min(circlesBackground.height / (items.circlesModel + 1), circlesBackground.width * 0.9)
-            width: isHorizontal ? itemWidth * items.circlesModel : itemWidth
-            height: isHorizontal ? itemWidth : itemWidth * items.circlesModel
+            property int itemWidth: 10 //temp values overriden with states
+            width: 10
+            height: 10
             anchors.centerIn: circlesBackground
             Rectangle {
                 id: circlesSelector
@@ -250,6 +280,89 @@ ActivityBase {
                 }
             }
         }
+
+        states: [
+            State {
+                id: horizontalLayout
+                when: isHorizontal
+                AnchorChanges {
+                    target: questionArea
+                    anchors.bottom: layoutArea.verticalCenter
+                    anchors.right: layoutArea.right
+                }
+                AnchorChanges {
+                    target: circlesBackground
+                    anchors.top: layoutArea.verticalCenter
+                    anchors.left: layoutArea.left
+                }
+                PropertyChanges {
+                    target: textArea
+                    width: questionArea.width * 0.3
+                    height: questionArea.height * 0.8
+                }
+                AnchorChanges {
+                    target: repeatArea
+                    anchors.right: textArea.left
+                    anchors.bottom: undefined
+                    anchors.verticalCenter: textArea.verticalCenter
+                    anchors.horizontalCenter: undefined
+                }
+                AnchorChanges {
+                    target: scoreArea
+                    anchors.left: textArea.right
+                    anchors.top: undefined
+                    anchors.verticalCenter: textArea.verticalCenter
+                    anchors.horizontalCenter: undefined
+                }
+                PropertyChanges {
+                    target: circlesArea
+                    itemWidth: Math.min(circlesBackground.width / (items.circlesModel + 1),
+                                        circlesBackground.height * 0.9)
+                    width: itemWidth * items.circlesModel
+                    height: itemWidth
+                }
+            },
+            State {
+                id: verticaleLayout
+                when: !isHorizontal
+                AnchorChanges {
+                    target: questionArea
+                    anchors.bottom: layoutArea.bottom
+                    anchors.right: layoutArea.horizontalCenter
+                }
+                AnchorChanges {
+                    target: circlesBackground
+                    anchors.top: layoutArea.top
+                    anchors.left: layoutArea.horizontalCenter
+                }
+                PropertyChanges {
+                    target: textArea
+                    width: questionArea.width * 0.8
+                    height: questionArea.height * 0.3
+                }
+                AnchorChanges {
+                    target: repeatArea
+                    anchors.right: undefined
+                    anchors.bottom: textArea.top
+                    anchors.verticalCenter: undefined
+                    anchors.horizontalCenter: textArea.horizontalCenter
+                }
+                AnchorChanges {
+                    target: scoreArea
+                    anchors.left: undefined
+                    anchors.top: textArea.bottom
+                    anchors.verticalCenter: undefined
+                    anchors.horizontalCenter: textArea.horizontalCenter
+                }
+                PropertyChanges {
+                    target: circlesArea
+                    itemWidth: Math.min(circlesBackground.height / (items.circlesModel + 1),
+                                        circlesBackground.width * 0.9)
+                    width: itemWidth
+                    height: itemWidth * items.circlesModel
+                }
+            }
+        ]
 
         File {
             id: fileId

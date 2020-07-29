@@ -49,7 +49,6 @@ function initLevel() {
     items.bar.level = currentLevel + 1;
     questionsArray = items.levels[currentLevel].questionsArray;
     questionsLeft = questionsArray.slice(0);
-    console.log("questionsLeft is " + questionsLeft)
     items.circlesModel = items.levels[currentLevel].circlesModel;
     items.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
@@ -85,7 +84,6 @@ function initQuestion() {
     resetCircles();
     items.answer = 0;
     var questionIndex = Math.floor(Math.random() * Math.floor(questionsLeft.length - 1));
-    console.log("questionIndex is " + questionIndex)
     items.question = questionsLeft[questionIndex];
     playLetter(items.question.toString());
 }
