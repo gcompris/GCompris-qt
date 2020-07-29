@@ -22,13 +22,13 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Digits from 1 to 5.")
-    difficulty: 2
+    objective: qsTr("Digits from 1 to 3.")
+    difficulty: 1
 
     data: [
         {
-            questionsArray: [1, 2, 3, 4, 5],
-            circlesModel: 5
+            questionsArray: [1, 2, 3],
+            circlesModel: 3
         }
     ]
 }

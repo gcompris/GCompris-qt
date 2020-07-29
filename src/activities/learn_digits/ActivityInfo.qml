@@ -41,5 +41,5 @@ ActivityInfo {
   credit: ""
   section: "math numeration"
   createdInVersion: 9800
-  levels: "1,2,3"
+  levels: "1,2,3,4,5,6,7,8,9"
 }
