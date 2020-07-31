@@ -1,10 +1,9 @@
-/* gcompris
+/* GCompris - Data.qml
  *
- * Copyright (C) 2014 JB BUTET <ashashiwa@gmail.com>
+ * Copyright (C) 2020 Deepak Kumar <deepakdk2431@gmail.com>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   JB BUTET <ashashiwa@gmail.com> (Qt Quick port)
+ *   Deepak Kumar <deepakdk2431@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -17,13 +16,21 @@
  *   GNU General Public License for more details.
  *
  *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <https://www.gnu.org/licenses/>.
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.6
 
-import "../memory"
+import GCompris 1.0
+import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
 
-MemoryCommon {
-    backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
-    withTux: true
+Data {
+    objective: qsTr("Table of 5.")
+    difficulty: 4
+
+    data: [
+        { // Level 1
+            columns: 5,
+            rows: 2,
+            texts: Memory.getAddMinusMultDivTable(5)
+        }
+    ]
 }
