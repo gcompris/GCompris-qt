@@ -28,6 +28,7 @@ var numberOfLevel;
 var items;
 var questionsLeft;
 var questionsArray;
+var url = ""
 
 function start(items_) {
     Core.checkForVoices(items_.main);
@@ -52,6 +53,12 @@ function initLevel() {
     items.circlesModel = items.levels[currentLevel].circlesModel;
     items.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
+    if(items.mode === 2)
+        url = "qrc:/gcompris/src/activities/learn_digits/resource/dots-";
+    else if(items.mode === 3)
+        url = "qrc:/gcompris/src/activities/learn_digits/resource/hands-";
+    else
+        url = "";
     if(!items.iAmReady.visible)
         initQuestion();
     if(items.selectedCircle >= 0)
@@ -86,7 +93,11 @@ function initQuestion() {
     items.answer = 0;
     var questionIndex = Math.floor(Math.random() * Math.floor(questionsLeft.length - 1));
     items.question = questionsLeft[questionIndex];
-    playLetter(items.question.toString());
+    var questionString = items.question.toString()
+    if(items.mode != 1) {
+        items.imageSource = url + questionString + ".svg"
+    }
+    playLetter(questionString);
 }
 
 function resetCircles() {

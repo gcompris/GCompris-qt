@@ -72,12 +72,15 @@ ActivityBase {
             property int selectedCircle: -1
             property bool inputLocked: false
             property var levels: activity.datasetLoader.data
+            property int mode: 1 // default is arabic digits
+            property string imageSource: "qrc:/gcompris/src/core/resource/empty.svg"
         }
         property string locale: ApplicationSettings.locale
         property bool isHorizontal: layoutArea.width >= layoutArea.height
 
         onStart: {
-            Activity.start(items)
+            itemsHidden();
+            Activity.start(items);
         }
         onStop: { Activity.stop() }
 
@@ -86,12 +89,26 @@ ActivityBase {
             if(DownloadManager.areVoicesRegistered()) {
                 repeatItem.visible = true;
             }
-            questionText.visible = true;
+            if(items.mode === 1) {
+                questionText.visible = true;
+            } else {
+                questionImage.visible = true;
+            }
             scoreArea.visible = true;
             circlesBackground.visible = true;
             circlesArea.visible = true;
             Activity.initQuestion();
             items.inputLocked = false;
+        }
+
+        function itemsHidden() {
+            iAmReady.visible = true;
+            repeatItem.visible = false;
+            questionText.visible = false;
+            questionImage.visible = false;
+            scoreArea.visible = false;
+            circlesBackground.visible = false;
+            circlesArea.visible = false;
         }
 
         ReadyButton {
@@ -153,6 +170,17 @@ ActivityBase {
             color: "#d2611d"
             style: Text.Outline
             styleColor: "white"
+        }
+        Image {
+            id: questionImage
+            visible: false
+            anchors.centerIn: textArea
+            height: Math.min(textArea.height, textArea.width)
+            width: height
+            sourceSize.width: height
+            sourceSize.height: height
+            fillMode: Image.PreserveAspectFit
+            source: items.imageSource
         }
         Item {
             id: scoreArea
@@ -400,6 +428,11 @@ ActivityBase {
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
+            onLoadData: {
+                if(activityData && activityData["mode"]) {
+                    items.mode = activityData["mode"];
+                }
+            }
             onSaveData: {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
