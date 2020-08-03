@@ -26,13 +26,15 @@
 var currentLevel = 0;
 var numberOfLevel;
 var items;
-var questionsLeft;
+var operationMode;
 var questionsArray;
+var answersArray;
 var url = ""
 
-function start(items_) {
+function start(items_, operationMode_) {
     Core.checkForVoices(items_.main);
     items = items_;
+    operationMode = operationMode_;
     numberOfLevel = items.levels.length;
     currentLevel = 0;
     initLevel();
@@ -46,10 +48,13 @@ function stop() {
 function initLevel() {
     items.circlesModel = 0
     items.question = 0
+    items.questionText = ""
     items.answer = 0
     items.bar.level = currentLevel + 1;
-    questionsArray = items.levels[currentLevel].questionsArray;
-    questionsLeft = questionsArray.slice(0);
+    questionsArray = items.levels[currentLevel].questionsArray.slice(0);
+    if(operationMode) {
+        answersArray = items.levels[currentLevel].answersArray.slice(0);
+    }
     items.circlesModel = items.levels[currentLevel].circlesModel;
     items.currentSubLevel = 0;
     items.nbSubLevel = questionsArray.length;
@@ -82,22 +87,31 @@ function previousLevel() {
 }
 
 function removeLastQuestion() {
-     for(var i = 0; i < questionsLeft.length; i++) {
-        if(questionsLeft[i] === items.question)
-            questionsLeft.splice(i, 1);
+     for(var i = 0; i < questionsArray.length; i++) {
+         if(questionsArray[i] === items.question)
+            questionsArray.splice(i, 1);
+         else if(questionsArray[i] === items.questionText) {
+            questionsArray.splice(i, 1);
+            answersArray.splice(i, 1);
+         }
      }
 }
 
 function initQuestion() {
     resetCircles();
     items.answer = 0;
-    var questionIndex = Math.floor(Math.random() * Math.floor(questionsLeft.length - 1));
-    items.question = questionsLeft[questionIndex];
-    var questionString = items.question.toString()
-    if(items.mode != 1) {
-        items.imageSource = url + questionString + ".svg"
+    var questionIndex = Math.floor(Math.random() * Math.floor(questionsArray.length - 1));
+    if(operationMode) {
+        items.question = answersArray[questionIndex];
+        items.questionText = questionsArray[questionIndex];
+    } else {
+        items.question = questionsArray[questionIndex];
+        items.questionText = items.question.toString()
+        playLetter(items.questionText);
     }
-    playLetter(questionString);
+    if(items.mode != 1) {
+        items.imageSource = url + items.questionText + ".svg"
+    }
 }
 
 function resetCircles() {
@@ -159,7 +173,7 @@ function processKey(event) {
             items.circlesLine.itemAt(items.selectedCircle).clickCircle();
     } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
         checkAnswer();
-    } else if(event.key === Qt.Key_Tab) {
+    } else if(event.key === Qt.Key_Tab && !operationMode) {
         playLetter(items.question.toString());
     }
 }

@@ -26,6 +26,7 @@ import "learn_digits.js" as Activity
 
 ActivityBase {
     id: activity
+    property bool operationMode: false
 
     onStart: focus = true
     onStop: {}
@@ -68,11 +69,12 @@ ActivityBase {
             property int nbSubLevel
             property int answer: 0
             property int question: 0
+            property string questionText: ""
             property int circlesModel: 3
             property int selectedCircle: -1
             property bool inputLocked: false
             property var levels: activity.datasetLoader.data
-            property int mode: 1 // default is arabic digits
+            property int mode: 1 // default is arabic numerals
             property string imageSource: "qrc:/gcompris/src/core/resource/empty.svg"
         }
         property string locale: ApplicationSettings.locale
@@ -80,13 +82,13 @@ ActivityBase {
 
         onStart: {
             itemsHidden();
-            Activity.start(items);
+            Activity.start(items, operationMode);
         }
         onStop: { Activity.stop() }
 
         function itemsVisible() {
             iAmReady.visible = false;
-            if(DownloadManager.areVoicesRegistered()) {
+            if(DownloadManager.areVoicesRegistered() && !operationMode) {
                 repeatItem.visible = true;
             }
             if(items.mode === 1) {
@@ -162,7 +164,7 @@ ActivityBase {
             anchors.centerIn: textArea
             horizontalAlignment : Text.AlignHCenter
             verticalAlignment : Text.AlignVCenter
-            text: items.question
+            text: items.questionText
             minimumPointSize: 12
             fontSize: 1024
             fontSizeMode: Text.Fit
