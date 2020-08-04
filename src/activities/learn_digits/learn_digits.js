@@ -32,9 +32,10 @@ var answersArray;
 var url = ""
 
 function start(items_, operationMode_) {
-    Core.checkForVoices(items_.main);
     items = items_;
     operationMode = operationMode_;
+    if(!operationMode)
+        Core.checkForVoices(items_.main);
     numberOfLevel = items.levels.length;
     currentLevel = 0;
     initLevel();
