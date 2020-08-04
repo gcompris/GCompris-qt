@@ -75,6 +75,7 @@ ActivityBase {
             property bool inputLocked: false
             property var levels: activity.datasetLoader.data
             property int mode: 1 // default is arabic numerals
+            property bool voicesEnabled: true
             property string imageSource: "qrc:/gcompris/src/core/resource/empty.svg"
         }
         property string locale: ApplicationSettings.locale
@@ -88,7 +89,7 @@ ActivityBase {
 
         function itemsVisible() {
             iAmReady.visible = false;
-            if(DownloadManager.areVoicesRegistered() && !operationMode) {
+            if(DownloadManager.areVoicesRegistered() && !operationMode && items.voicesEnabled) {
                 repeatItem.visible = true;
             }
             if(items.mode === 1) {
@@ -434,6 +435,9 @@ ActivityBase {
                 if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"];
                 }
+                if(activityData && activityData["voicesEnabled"]) {
+                    items.voicesEnabled = activityData["voicesEnabled"] === "true" ? true : false;
+                }
             }
             onSaveData: {
                 levelFolder = dialogActivityConfig.chosenLevels
@@ -442,7 +446,7 @@ ActivityBase {
             }
             onStartActivity: {
                 background.stop();
-                background.start()
+                background.start();
             }
 
             onClose: home()

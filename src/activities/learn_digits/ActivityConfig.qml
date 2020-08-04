@@ -27,6 +27,8 @@ Item {
     id: activityConfiguration
     property Item background
     property alias modeBox: modeBox
+    property alias enableVoicesBox: enableVoicesBox
+    property bool voicesEnabled: enableVoicesBox.checked
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Arabic numerals"), "value": 1 },
@@ -42,14 +44,26 @@ Item {
             background: activityConfiguration.background
             label: qsTr("Digits representation")
         }
+        GCDialogCheckBox {
+            id: enableVoicesBox
+            text: qsTr("Enable voices")
+            checked: voicesEnabled
+        }
     }
 
     property var dataToSave
 
     function setDefaultValues() {
+        // Recreate the binding
+        enableVoicesBox.checked = Qt.binding(function(){return activityConfiguration.voicesEnabled;});
+
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = 1;
-            modeBox.currentIndex = 0
+            modeBox.currentIndex = 0;
+        }
+        if(dataToSave["voicesEnabled"] === undefined) {
+            dataToSave["voicesEnabled"] = "true";
+            enableVoicesBox.checked = true;
         }
         for(var i = 0 ; i < availableModes.length ; i ++) {
             if(availableModes[i].value == dataToSave["mode"]) {
@@ -57,11 +71,13 @@ Item {
                 break;
             }
         }
+        voicesEnabled = (dataToSave.voicesEnabled === "true")
     }
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        dataToSave = {"mode": newMode};
+        voicesEnabled = enableVoicesBox.checked
+        dataToSave = {"mode": newMode, "voicesEnabled": "" + voicesEnabled};
     }
 }
 

@@ -34,7 +34,7 @@ var url = ""
 function start(items_, operationMode_) {
     items = items_;
     operationMode = operationMode_;
-    if(!operationMode)
+    if(!operationMode && items.voicesEnabled)
         Core.checkForVoices(items_.main);
     numberOfLevel = items.levels.length;
     currentLevel = 0;
@@ -108,7 +108,8 @@ function initQuestion() {
     } else {
         items.question = questionsArray[questionIndex];
         items.questionText = items.question.toString()
-        playLetter(items.questionText);
+        if(items.voicesEnabled)
+            playLetter(items.questionText);
     }
     if(items.mode != 1) {
         items.imageSource = url + items.questionText + ".svg"
@@ -174,7 +175,7 @@ function processKey(event) {
             items.circlesLine.itemAt(items.selectedCircle).clickCircle();
     } else if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
         checkAnswer();
-    } else if(event.key === Qt.Key_Tab && !operationMode) {
+    } else if(event.key === Qt.Key_Tab && !operationMode && items.voicesEnabled) {
         playLetter(items.question.toString());
     }
 }
