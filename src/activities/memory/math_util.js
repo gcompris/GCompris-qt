@@ -88,13 +88,6 @@ function getAddMinusTable(table) {
     return removeDuplicates(t1.concat(t2))
 }
 
-function getAddMinusMultTable(table) {
-    var t1 = getAddTable(table)
-    var t2 = getMinusTable(table)
-    var t3 = getMultTable(table)
-    return removeDuplicates(t1.concat(t2, t3))
-}
-
 function getAddMinusMultDivTable(table) {
     var t1 = getAddTable(table)
     var t2 = getMinusTable(table)
