@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Countries of Australia.")
+    objective: qsTr("Countries of Oceania.")
     difficulty: 6
     data: [
         [
