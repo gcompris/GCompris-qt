@@ -401,8 +401,8 @@ ActivityBase {
         MultiPointTouchArea {
             x: drawAndExampleArea.x
             y: drawAndExampleArea.y
-            width: drawAndExampleArea.width
-            height: drawAndExampleArea.height
+            width: drawingArea.width
+            height: drawingArea.height
             onPressed: checkTouchPoint(touchPoints)
             onTouchUpdated: checkTouchPoint(touchPoints)
 
