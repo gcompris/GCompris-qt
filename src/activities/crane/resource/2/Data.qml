@@ -21,13 +21,58 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Play with smaller grids of size 4x5.")
+    objective: qsTr("Play with words of 3 letters.")
     difficulty: 3
     data:  [
         [
+            /* To add your words, replace "wordLength" key with "word".
+              Example - replace "wordLength": 3 with "word": qsTr("happy")
+            */
             {
                 "isWord": true,
-                "word": qsTr("pen"),
+                "wordLength": 3,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 3,
+                "columns": 4
+            },
+            {
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 3,
+                "columns": 4
+            },
+            {
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 3,
+                "columns": 4
+            },
+            {
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": true,
+                "inLine": false,
+                "rows": 3,
+                "columns": 4
+            },
+            {
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": true,
+                "inLine": false,
+                "rows": 3,
+                "columns": 4
+            }
+        ],
+        [
+            {
+                "isWord": true,
+                "wordLength": 3,
                 "showGrid": true,
                 "inLine": true,
                 "rows": 4,
@@ -35,7 +80,7 @@ Data {
             },
             {
                 "isWord": true,
-                "word": qsTr("area"),
+                "wordLength": 3,
                 "showGrid": true,
                 "inLine": true,
                 "rows": 4,
@@ -43,7 +88,7 @@ Data {
             },
             {
                 "isWord": true,
-                "word": qsTr("good"),
+                "wordLength": 3,
                 "showGrid": true,
                 "inLine": true,
                 "rows": 4,
@@ -51,7 +96,7 @@ Data {
             },
             {
                 "isWord": true,
-                "word": qsTr("best"),
+                "wordLength": 3,
                 "showGrid": true,
                 "inLine": false,
                 "rows": 4,
@@ -59,7 +104,7 @@ Data {
             },
             {
                 "isWord": true,
-                "word": qsTr("coat"),
+                "wordLength": 3,
                 "showGrid": true,
                 "inLine": false,
                 "rows": 4,
@@ -68,128 +113,86 @@ Data {
         ],
         [
             {
-                "isWord": false,
-                "noOfItems": 3,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 4,
-                "columns": 5
-            },
-            {
-                "isWord": false,
-                "noOfItems": 4,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 4,
-                "columns": 5
-            },
-            {
-                "isWord": false,
-                "noOfItems": 5,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 4,
-                "columns": 5
-            },
-            {
-                "isWord": false,
-                "noOfItems": 6,
-                "showGrid": true,
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": false,
                 "inLine": false,
-                "rows": 4,
-                "columns": 5
+                "rows": 5,
+                "columns": 6
             },
             {
-                "isWord": false,
-                "noOfItems": 7,
-                "showGrid": true,
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": false,
                 "inLine": false,
-                "rows": 4,
-                "columns": 5
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 3,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 5,
+                "columns": 6
             }
         ],
         [
             {
                 "isWord": true,
-                "word": qsTr("cap"),
-                "showGrid": false,
-                "inLine": false,
-                "rows": 4,
-                "columns": 5
-            },
-            {
-                "isWord": true,
-                "word": qsTr("bell"),
-                "showGrid": false,
-                "inLine": false,
-                "rows": 4,
-                "columns": 5
-            },
-            {
-                "isWord": true,
-                "word": qsTr("easy"),
-                "showGrid": false,
-                "inLine": false,
-                "rows": 4,
-                "columns": 5
-            },
-            {
-                "isWord": true,
-                "word": qsTr("girl"),
-                "showGrid": false,
-                "inLine": false,
-                "rows": 4,
-                "columns": 5
-            },
-            {
-                "isWord": true,
-                "word": qsTr("food"),
-                "showGrid": false,
-                "inLine": false,
-                "rows": 4,
-                "columns": 5
-            }
-        ],
-        [
-            {
-                "isWord": false,
-                "noOfItems": 3,
+                "wordLength": 3,
                 "showGrid": false,
                 "inLine": true,
-                "rows": 4,
-                "columns": 5
+                "rows": 6,
+                "columns": 7
             },
             {
-                "isWord": false,
-                "noOfItems": 4,
+                "isWord": true,
+                "wordLength": 3,
                 "showGrid": false,
                 "inLine": true,
-                "rows": 4,
-                "columns": 5
+                "rows": 6,
+                "columns": 7
             },
             {
-                "isWord": false,
-                "noOfItems": 5,
+                "isWord": true,
+                "wordLength": 3,
                 "showGrid": false,
                 "inLine": true,
-                "rows": 4,
-                "columns": 5
+                "rows": 6,
+                "columns": 7
             },
             {
-                "isWord": false,
-                "noOfItems": 6,
+                "isWord": true,
+                "wordLength": 3,
                 "showGrid": false,
                 "inLine": false,
-                "rows": 4,
-                "columns": 5
+                "rows": 6,
+                "columns": 7
             },
             {
-                "isWord": false,
-                "noOfItems": 7,
+                "isWord": true,
+                "wordLength": 3,
                 "showGrid": false,
                 "inLine": false,
-                "rows": 4,
-                "columns": 5
+                "rows": 6,
+                "columns": 7
             }
         ]
     ]

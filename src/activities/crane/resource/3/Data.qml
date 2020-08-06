@@ -21,46 +21,133 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Play with smaller grids of size 5x6.")
-    difficulty: 4
+    objective: qsTr("Play with words of 4 letters.")
+    difficulty: 3
     data:  [
         [
+            /* To add your words, replace "wordLength" key with "word".
+              Example - replace "wordLength": 3 with "word": qsTr("pen")
+            */
             {
                 "isWord": true,
-                "word": qsTr("help"),
+                "wordLength": 4,
                 "showGrid": true,
                 "inLine": true,
-                "rows": 5,
-                "columns": 6
+                "rows": 3,
+                "columns": 4
             },
             {
                 "isWord": true,
-                "word": qsTr("child"),
+                "wordLength": 4,
                 "showGrid": true,
                 "inLine": true,
-                "rows": 5,
-                "columns": 6
+                "rows": 3,
+                "columns": 4
             },
             {
                 "isWord": true,
-                "word": qsTr("happy"),
+                "wordLength": 4,
                 "showGrid": true,
                 "inLine": true,
-                "rows": 5,
-                "columns": 6
+                "rows": 3,
+                "columns": 4
             },
             {
                 "isWord": true,
-                "word": qsTr("apple"),
+                "wordLength": 4,
                 "showGrid": true,
+                "inLine": false,
+                "rows": 3,
+                "columns": 4
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": true,
+                "inLine": false,
+                "rows": 3,
+                "columns": 4
+            }
+        ],
+        [
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 4,
+                "columns": 5
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 4,
+                "columns": 5
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 4,
+                "columns": 5
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": true,
+                "inLine": false,
+                "rows": 4,
+                "columns": 5
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": true,
+                "inLine": false,
+                "rows": 4,
+                "columns": 5
+            }
+        ],
+        [
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": false,
                 "inLine": false,
                 "rows": 5,
                 "columns": 6
             },
             {
                 "isWord": true,
-                "word": qsTr("brown"),
-                "showGrid": true,
+                "wordLength": 4,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 4,
+                "showGrid": false,
                 "inLine": false,
                 "rows": 5,
                 "columns": 6
@@ -68,128 +155,44 @@ Data {
         ],
         [
             {
-                "isWord": false,
-                "noOfItems": 4,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 5,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 6,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 7,
-                "showGrid": true,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 8,
-                "showGrid": true,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
-            }
-        ],
-        [
-            {
                 "isWord": true,
-                "word": qsTr("fresh"),
+                "wordLength": 4,
                 "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
+                "inLine": true,
+                "rows": 6,
+                "columns": 7
             },
             {
                 "isWord": true,
-                "word": qsTr("green"),
+                "wordLength": 4,
                 "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
+                "inLine": true,
+                "rows": 6,
+                "columns": 7
             },
             {
                 "isWord": true,
-                "word": qsTr("horse"),
+                "wordLength": 4,
                 "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
+                "inLine": true,
+                "rows": 6,
+                "columns": 7
             },
             {
                 "isWord": true,
-                "word": qsTr("shape"),
+                "wordLength": 4,
                 "showGrid": false,
                 "inLine": false,
-                "rows": 5,
-                "columns": 6
+                "rows": 6,
+                "columns": 7
             },
             {
                 "isWord": true,
-                "word": qsTr("paper"),
+                "wordLength": 4,
                 "showGrid": false,
                 "inLine": false,
-                "rows": 5,
-                "columns": 6
-            }
-        ],
-        [
-            {
-                "isWord": false,
-                "noOfItems": 4,
-                "showGrid": false,
-                "inLine": true,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 5,
-                "showGrid": false,
-                "inLine": true,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 6,
-                "showGrid": false,
-                "inLine": true,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 7,
-                "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": false,
-                "noOfItems": 8,
-                "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
+                "rows": 6,
+                "columns": 7
             }
         ]
     ]

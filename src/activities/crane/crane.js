@@ -28,15 +28,11 @@ var currentLevel = 0
 var numberLevelsWords = 2
 var currentSubLevel = 0;
 var numberOfLevel
+var words3Letters = []
+var words4Letters = []
+var words5Letters = []
 var items
 var url = "qrc:/gcompris/src/activities/crane/resource/"
-
-var allNames = ["bulb.svg","letter-a.svg","letter-b.svg",
-                "rectangle1.svg","rectangle2.svg","square1.svg",
-                "square2.svg","triangle1.svg","triangle2.svg",
-                "tux.svg","water_drop1.svg","water_drop2.svg",
-                "water_spot1.svg","water_spot2.svg"]
-
 var currentLocale
 var names = []
 var names2 = []
@@ -51,6 +47,31 @@ function start(items_) {
     levels = items.levels
     numberOfLevel = levels.length
     currentLocale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
+
+    /*: Translators: NOTE: Word list for crane activity.
+        Translate this into a list of 15–25 simple 3-letter
+        words separated by semi-colons. The words can only contain
+        lowercase ASCII letters (a–z). Example: cat;dog;win;red;yes
+    */
+    words3Letters = qsTr("cat;dog;win;red;yes;big;box;air;arm;car;bus;fun;day;eat;hat;leg;ice;old;egg").split(';')
+
+    /*: Translators: NOTE: Word list for crane activity.
+        Translate this into a list of 10–20 simple 4-letter
+        words separated by semi-colons. The words can only contain
+        lowercase ASCII letters (a–z). Example: blue;best;good;area
+    */
+    words4Letters = qsTr("blue;best;good;area;bell;coat;easy;farm;food;else;girl;give;hero;help;hour;sand;song").split(';')
+
+    /*: Translators: NOTE: Word list for crane activity.
+        Translate this into a list of 10–20 simple 5-letter
+        words separated by semi-colons. The words can only contain
+        lowercase ASCII letters (a–z). Example: happy;child;white;apple
+    */
+    words5Letters = qsTr("happy;child;white;apple;brown;truth;fresh;green;horse;hotel;house;paper;shape;shirt;study").split(';')
+
+    Core.shuffle(words3Letters)
+    Core.shuffle(words4Letters)
+    Core.shuffle(words5Letters)
     initLevel()
 }
 
@@ -73,7 +94,7 @@ function initSubLevel() {
 
     // set models for repeaters
     if (!levels[currentLevel][currentSubLevel].isWord)
-        setRandomModelImage()
+        setModelImage()
     else
         setModelWord()
 
@@ -101,11 +122,32 @@ function initSubLevel() {
     }
 }
 
+function getInternalWord(){
+    // function to get a word from translated lists
+    var currentWordLength = levels[currentLevel][currentSubLevel].wordLength
+    var wordsUsed
+    if (currentWordLength == 3) {
+        wordsUsed = words3Letters
+    }
+    else if (currentWordLength == 4) {
+        wordsUsed = words4Letters
+    }
+    else if (currentWordLength == 5) {
+        wordsUsed = words5Letters
+    }
+    // choosing first word of a list and pushing it to the end of the list like a queue.
+    var word = wordsUsed[0]
+    wordsUsed.shift()
+    wordsUsed.push(word)
+    return word
+}
+
 // levels with words as items
 function setModelWord() {
     var numbers = []
     var i
     var wordsUsed
+    var word = levels[currentLevel][currentSubLevel].word
 
     // show or hide the grid
     items.showGrid1.opacity = levels[currentLevel][currentSubLevel].showGrid
@@ -122,10 +164,9 @@ function setModelWord() {
         numbers[i] = i;  // generate columns*rows numbers
     }
 
-    // before: // var currentIndex = currentLevel % numberLevelsWords
-
-    // get a word
-    var word = levels[currentLevel][currentSubLevel].word
+    if(word === undefined) {
+        word = getInternalWord()
+    }
 
     // place the word at a random position in the grid
     var randomRow = Math.floor(Math.random() * items.rows)
@@ -158,9 +199,10 @@ function setModelWord() {
 }
 
 // levels with images as items
-function setRandomModelImage() {
+function setModelImage() {
     var numbers = []
     var i
+    var imageList = levels[currentLevel][currentSubLevel].images;
 
     // set the number of columns and rows from "levels"
     items.columns = levels[currentLevel][currentSubLevel].columns
@@ -173,18 +215,18 @@ function setRandomModelImage() {
     }
 
     // randomize the names
-    Core.shuffle(allNames)
+    Core.shuffle(imageList)
 
     //get "levels[currentLevel].noOfItems" random numbers
     Core.shuffle(numbers)
 
-    for (i = 0; i < levels[currentLevel][currentSubLevel].noOfItems; i++)
-        names[numbers[i]] = url + allNames[i]
+    for (i = 0; i < imageList.length; i++)
+        names[numbers[i]] = imageList[i]
 
     Core.shuffle(numbers)
 
-    for (i = 0; i < levels[currentLevel][currentSubLevel].noOfItems; i++)
-        names2[numbers[i]] = url + allNames[i]
+    for (i = 0; i < imageList.length; i++)
+        names2[numbers[i]] = imageList[i]
 
     // set model for repeaters
     items.repeater.model = names.length
