@@ -1,9 +1,11 @@
 /* GCompris - Data.qml
  *
  * Copyright (C) 2019 Shubham Mishra <shivam828787@gmail.com>
+ * Copyright (C) 2020 Deepak Kumar <deepakdk2431@gmail.com>
  *
  * Authors:
  *   Shubham Mishra <shivam828787@gmail.com>
+ *   Deepak Kumar <deepakdk2431@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,69 +28,57 @@ Data {
     difficulty: 1
     data: [
         {
-            "columns": 4,
+            "columns": 3,
             "image":
                 [
-                1,0,0,1,
-                0,1,1,0,
-                0,0,0,0,
-                0,0,0,0,
-                0,0,0,0
+                1,0,0,
+                0,1,1,
+                0,0,0
             ]
         },
         {
-            "columns": 4,
+            "columns": 3,
             "image":
                 [
-                1,0,0,0,
-                0,0,2,0,
-                0,0,0,0,
-                0,0,2,0,
-                1,0,0,0
+                1,0,1,
+                0,0,2,
+                2,0,0
             ]
         },
         {
-            "columns": 4,
+            "columns": 3,
             "image":
                 [
-                1,0,0,0,
-                0,0,0,0,
-                0,0,2,1,
-                0,2,0,0,
-                0,0,0,0
+                1,2,0,
+                0,1,0,
+                1,0,2
             ]
         },
         {
-            "columns": 4,
+            "columns": 3,
             "image":
                 [
-                1,0,0,1,
-                2,0,0,2,
-                0,0,1,0,
-                0,2,2,0,
-                1,0,0,1
+                1,0,2,
+                3,0,1,
+                0,3,1
             ]
         },
         {
-            "columns": 4,
+            "columns": 3,
             "image":
                 [
-                0,0,0,1,
-                2,2,2,0,
-                0,0,1,0,
-                1,0,2,0,
-                0,2,0,1
+                1,0,1,
+                2,3,2,
+                1,0,1
             ]
         },
         {
-            "columns": 4,
+            "columns": 3,
             "image":
                 [
-                0,0,0,1,
-                2,3,2,0,
-                0,0,3,0,
-                0,1,2,0,
-                0,2,0,1
+                1,0,3,
+                2,3,2,
+                1,0,3
             ]
         },
     ]
