@@ -26,55 +26,13 @@ Data {
     data:  [
         [
             /* To add your words, replace "wordLength" key with "word".
-              Example - replace "wordLength": 3 with "word": qsTr("pen")
+              Example - replace "wordLength": 3 with "word": "pen".
             */
             {
                 "isWord": true,
                 "wordLength": 5,
                 "showGrid": true,
                 "inLine": true,
-                "rows": 3,
-                "columns": 4
-            },
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 3,
-                "columns": 4
-            },
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": true,
-                "inLine": true,
-                "rows": 3,
-                "columns": 4
-            },
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": true,
-                "inLine": false,
-                "rows": 3,
-                "columns": 4
-            },
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": true,
-                "inLine": false,
-                "rows": 3,
-                "columns": 4
-            }
-        ],
-        [
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": true,
-                "inLine": true,
                 "rows": 4,
                 "columns": 5
             },
@@ -115,7 +73,31 @@ Data {
             {
                 "isWord": true,
                 "wordLength": 5,
-                "showGrid": false,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": true,
+                "inLine": true,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": true,
                 "inLine": false,
                 "rows": 5,
                 "columns": 6
@@ -123,31 +105,7 @@ Data {
             {
                 "isWord": true,
                 "wordLength": 5,
-                "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": false,
-                "inLine": false,
-                "rows": 5,
-                "columns": 6
-            },
-            {
-                "isWord": true,
-                "wordLength": 5,
-                "showGrid": false,
+                "showGrid": true,
                 "inLine": false,
                 "rows": 5,
                 "columns": 6
@@ -158,7 +116,7 @@ Data {
                 "isWord": true,
                 "wordLength": 5,
                 "showGrid": false,
-                "inLine": true,
+                "inLine": false,
                 "rows": 6,
                 "columns": 7
             },
@@ -166,7 +124,7 @@ Data {
                 "isWord": true,
                 "wordLength": 5,
                 "showGrid": false,
-                "inLine": true,
+                "inLine": false,
                 "rows": 6,
                 "columns": 7
             },
@@ -174,9 +132,51 @@ Data {
                 "isWord": true,
                 "wordLength": 5,
                 "showGrid": false,
-                "inLine": true,
+                "inLine": false,
                 "rows": 6,
                 "columns": 7
+            },
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 6,
+                "columns": 7
+            },
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": false,
+                "inLine": false,
+                "rows": 6,
+                "columns": 7
+            }
+        ],
+        [
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": false,
+                "inLine": true,
+                "rows": 4,
+                "columns": 5
+            },
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": false,
+                "inLine": true,
+                "rows": 5,
+                "columns": 6
+            },
+            {
+                "isWord": true,
+                "wordLength": 5,
+                "showGrid": false,
+                "inLine": true,
+                "rows": 5,
+                "columns": 6
             },
             {
                 "isWord": true,

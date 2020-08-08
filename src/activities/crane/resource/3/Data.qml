@@ -26,7 +26,7 @@ Data {
     data:  [
         [
             /* To add your words, replace "wordLength" key with "word".
-              Example - replace "wordLength": 3 with "word": qsTr("pen")
+              Example - replace "wordLength": 3 with "word": "pen".
             */
             {
                 "isWord": true,
