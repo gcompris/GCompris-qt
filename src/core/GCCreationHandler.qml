@@ -81,7 +81,8 @@ Rectangle {
     Loader {
         id: replaceFileDialog
         sourceComponent: GCDialog {
-            parent: activity.main
+            parent: activity
+            isDestructible: false
             message: qsTr("A file with this name already exists. Do you want to replace it?")
             button1Text: qsTr("Yes")
             button2Text: qsTr("No")

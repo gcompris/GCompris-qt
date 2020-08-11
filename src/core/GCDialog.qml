@@ -235,12 +235,19 @@ Item {
     }
 
     Keys.onEscapePressed: {
-        stop();
+        buttonCancel.close();
     }
 
     // The cancel button
     GCButtonCancel {
         id: buttonCancel
-        onClose: parent.stop()
+        onClose: {
+            if(button2.visible)
+                button2.clicked();
+            else if(button1.visible)
+                button1.clicked();
+            else
+                parent.stop();
+        }
     }
 }
