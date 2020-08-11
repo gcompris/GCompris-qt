@@ -250,7 +250,7 @@ Item {
             if (downloadDialog.reportError
                     && code != 5) {  // no error: OperationCanceledError
                 // show error message
-                var messageDialog = Core.showMessageDialog(main,
+                var messageDialog = Core.showMessageDialog(main.pageView,
                                                            qsTr("Download error (code: %1): %2").arg(code).arg(msg),
                                                            "", null,
                                                            "", null,
@@ -285,7 +285,7 @@ Item {
                 } else if (code == 2)  // NoChange
                     infText = qsTr("Your local data files are up-to-date.")
 
-                var messageDialog = Core.showMessageDialog(main,
+                var messageDialog = Core.showMessageDialog(main.pageView,
                                                            infText,
                                                            "", null,
                                                            "", null,

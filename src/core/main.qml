@@ -86,7 +86,7 @@ Window {
         }
     }
 
-    onClosing: Core.quit(main)
+    onClosing: Core.quit(pageView)
 
     GCAudio {
         id: audioVoices
@@ -186,7 +186,7 @@ Window {
         } else if(ApplicationSettings.useWordset) { // Only if external wordset is enabled
             // words.rcc has not been downloaded yet -> ask for download
             Core.showMessageDialog(
-                        main,
+                        pageView,
                         qsTr("The images for several activities are not yet installed. " +
                         "Do you want to download them now?"),
                         qsTr("Yes"),
@@ -226,7 +226,7 @@ Window {
         }
         else if(ApplicationSettings.isBackgroundMusicEnabled && !DownloadManager.haveLocalResource(music)) {
             Core.showMessageDialog(
-            main,
+            pageView,
             qsTr("The background music is not yet downloaded. ")
             + qsTr("Do you want to download it now?"),
             qsTr("Yes"),
@@ -258,7 +258,7 @@ Window {
             // first run
             var dialog;
             dialog = Core.showMessageDialog(
-                        main,
+                        pageView,
                         qsTr("Welcome to GCompris!") + '\n'
                         + qsTr("You are running GCompris for the first time.") + '\n'
                         + qsTr("You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.")
@@ -296,7 +296,7 @@ Window {
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 Core.showMessageDialog(
-                main,
+                pageView,
                 qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
                 "", null,
                 "", null,
