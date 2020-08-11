@@ -35,7 +35,7 @@ function start(items_, operationMode_) {
     items = items_;
     operationMode = operationMode_;
     if(!operationMode && items.voicesEnabled)
-        Core.checkForVoices(items_.main);
+        Core.checkForVoices(items_.activityPage);
     numberOfLevel = items.levels.length;
     currentLevel = 0;
     initLevel();

@@ -46,7 +46,7 @@ var clouds = new Array;
 var cloudsErased = new Array;
 
 function start(items_, dataset_) {
-    Core.checkForVoices(items_.background);
+    Core.checkForVoices(items_.activityPage);
 
     items = items_
     dataset = dataset_

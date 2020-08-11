@@ -40,7 +40,7 @@ ActivityBase {
     // We need to set it back to the textinput item in order to have key events.
     onFocusChanged: {
         if(focus) {
-            Activity.focusTextInput()
+            Activity.focusTextInput();
         }
     }
 
@@ -109,9 +109,10 @@ ActivityBase {
         }
 
         onStart: {
-            focus = true
-            Activity.start(items)
-            Activity.focusTextInput()
+            focus = true;
+            Activity.start(items);
+            if(!background.englishFallback)
+                Activity.focusTextInput();
         }
 
         onStop: {
@@ -402,12 +403,16 @@ ActivityBase {
         Loader {
             id: englishFallbackDialog
             sourceComponent: GCDialog {
-                parent: activity.main
+                parent: activity
+                isDestructible: false
                 message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
                          qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("https://l10n.kde.org/") +
                          "<br /> <br />" +
                          qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
-                onClose: background.englishFallback = false
+                onClose: {
+                    background.englishFallback = false;
+                    Activity.focusTextInput;
+                }
             }
             anchors.fill: parent
             focus: true

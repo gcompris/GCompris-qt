@@ -59,6 +59,7 @@ ActivityBase {
         }
         QtObject {
             id: items
+            property Item activityPage: activity
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus

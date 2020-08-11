@@ -44,7 +44,7 @@ var mode;
 
 function start(_items, _mode)
 {
-    Core.checkForVoices(_items.main);
+    Core.checkForVoices(_items.activityPage);
 
     items = _items;
     mode = _mode;

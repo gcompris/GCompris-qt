@@ -45,6 +45,7 @@ function start() {
     lessonModelIndex = 0;
     currentSubLevel = 0;
     items.imageReview.stop()
+    items.menuScreen.stop()
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
 
@@ -64,7 +65,9 @@ function start() {
     savedPropertiesToLessons(items.dialogActivityConfig.dataToSave)
     sortByFavorites();
 
-    items.menuScreen.start()
+    if(!items.background.englishFallback) {
+        items.menuScreen.start();
+    }
 }
 
 // Insert our specific properties in the lessons

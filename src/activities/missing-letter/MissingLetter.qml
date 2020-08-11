@@ -311,7 +311,8 @@ ActivityBase {
         Loader {
             id: englishFallbackDialog
             sourceComponent: GCDialog {
-                parent: activity.main
+                parent: activity
+                isDestructible: false
                 message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
                          qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("https://l10n.kde.org/") +
                          "<br /> <br />" +

@@ -47,13 +47,12 @@ var incorrectFlag = false;
 var locale;
 
 function start(_items) {
-    Core.checkForVoices(_items.main);
     items = _items;
     // register the voices for the locale
-    locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+    locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale));
     loadDataset();
-    levels = Lang.getAllLessons(dataset)
+    levels = Lang.getAllLessons(dataset);
     currentLevel = 0;
     currentSubLevel = 0;
     maxLevel = levels.length;
@@ -61,10 +60,12 @@ function start(_items) {
 }
 
 function loadDataset() {
-    var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
+    var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/";
     var data = Lang.loadDataset(items.parser, resourceUrl, locale);
     dataset = data["dataset"];
     items.background.englishFallback = data["englishFallback"];
+    if(!items.background.englishFallback)
+        Core.checkForVoices(_items.activityPage);
 }
 
 function stop() {

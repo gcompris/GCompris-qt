@@ -147,12 +147,21 @@ ActivityBase {
         Loader {
             id: englishFallbackDialog
             sourceComponent: GCDialog {
-                parent: activity.main
+                parent: activity
+                isDestructible: false
                 message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
                          qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("https://l10n.kde.org/") +
                          "<br /> <br />" +
                          qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
-                onClose: background.englishFallback = false
+                onStart: {
+                    menuScreen.stop();
+                    forceActiveFocus();
+                    parent.Keys.enabled = false;
+                }
+                onClose: {
+                    background.englishFallback = false;
+                    menuScreen.start();
+                }
             }
             anchors.fill: parent
             focus: true
@@ -233,6 +242,7 @@ ActivityBase {
 
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
+                    console.log("activity restarted")
                     Activity.stop()
                     Activity.start();
                 }

@@ -63,6 +63,12 @@ Item {
     property alias button2Text: button2.text
 
     /**
+     * type:bool
+     * Check is the dialog can be destroyed
+     */
+    property bool isDestructible: true
+
+    /**
      * Emitted when the dialog should be started.
      *
      * Triggers fading in.
@@ -94,13 +100,31 @@ Item {
     focus: true
     opacity: 0
 
+    onVisibleChanged: {
+        if(visible) {
+            gcdialog.forceActiveFocus();
+            parent.Keys.enabled = false;
+        }
+    }
+
     anchors {
         fill: parent
     }
 
-    onStart: opacity = 1
-    onStop: opacity = 0
-    onClose: destroy()
+    onStart: {
+        opacity = 1;
+        gcdialog.forceActiveFocus();
+        parent.Keys.enabled = false;
+    }
+    onStop: {
+        opacity = 0;
+        parent.Keys.enabled = true;
+        parent.forceActiveFocus();
+    }
+    onClose: {
+        if(isDestructible)
+            destroy();
+    }
 
     Behavior on opacity { NumberAnimation { duration: 200 } }
     onOpacityChanged: opacity === 0 ? close() : null
@@ -210,11 +234,8 @@ Item {
         }
     }
 
-
-    // Fixme not working, need to properly get the focus on this dialog
     Keys.onEscapePressed: {
-        stop()
-        event.accepted = true;
+        stop();
     }
 
     // The cancel button

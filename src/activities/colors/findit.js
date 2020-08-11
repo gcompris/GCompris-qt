@@ -33,7 +33,7 @@ var hasWon
 
 function start(items_, dataset_, mode_) {
     if (mode_ === "Colors")
-        Core.checkForVoices(items_.background);
+        Core.checkForVoices(items_.activityPage);
     items = items_
     dataset = dataset_.get()
     currentLevel = 0

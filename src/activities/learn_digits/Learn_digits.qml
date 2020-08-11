@@ -54,7 +54,8 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property Item main: activity.main
+            //property Item main: activity.main
+            property Item activityPage: activity
             property GCAudio audioVoices: activity.audioVoices
             property GCSfx audioEffects: activity.audioEffects
             property alias background: background
