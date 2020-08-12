@@ -47,6 +47,9 @@ ActivityBase {
         signal start
         signal stop
 
+        // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
+        property bool audioDisabled: false
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -108,7 +111,12 @@ ActivityBase {
             property alias lyricsArea: lyricsArea
         }
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            Activity.start(items);
+            if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
+                    background.audioDisabled = true;
+            }
+        }
         onStop: { Activity.stop() }
 
         property string currentType: "Quarter"
@@ -547,5 +555,24 @@ ActivityBase {
                 }
             }
         ]
+
+        Loader {
+            id: audioNeededDialog
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                message: qsTr("This activity requires audio, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
+                button1Text: qsTr("Quit")
+                button2Text: qsTr("Continue")
+                onButton1Hit: activity.home();
+                onClose: {
+                    background.audioDisabled = false;
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.audioDisabled
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
     }
 }
