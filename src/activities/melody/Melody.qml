@@ -38,6 +38,9 @@ ActivityBase {
         sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
 
+        // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
+        property bool audioDisabled: false
+
         signal start
         signal stop
 
@@ -62,9 +65,13 @@ ActivityBase {
             bar.level = 1
             score.numberOfSubLevels = 5
             score.currentSubLevel = 1
-            initLevel()
-            items.running = true
-            introDelay.start()
+            if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
+                    background.audioDisabled = true;
+            } else {
+                initLevel();
+                items.running = true;
+                introDelay.start();
+            }
         }
 
         onStop: {
@@ -270,6 +277,28 @@ ActivityBase {
                 bonus.good('lion')
             else if(items.answer.length >= items.question.length)
                 bonus.bad('lion')
+        }
+
+        Loader {
+            id: audioNeededDialog
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                message: qsTr("This activity requires audio, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
+                button1Text: qsTr("Quit")
+                button2Text: qsTr("Continue")
+                onButton1Hit: activity.home();
+                onClose: {
+                    background.audioDisabled = false;
+                    initLevel();
+                    items.running = true;
+                    introDelay.start();
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.audioDisabled
+            onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
 }
