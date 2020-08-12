@@ -50,6 +50,8 @@ ActivityBase {
 
         property alias items: items
         property bool keyNavigationVisible: false
+        // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
+        property bool audioDisabled: false
 
         Component.onCompleted: {
             dialogActivityConfig.initialize()
@@ -82,6 +84,8 @@ ActivityBase {
             Activity.start(items);
             if(activity.needsVoices === true) {
                 activity.isMusicalActivity = true
+                if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
+                    background.audioDisabled = true
             }
         }
 
@@ -275,6 +279,25 @@ ActivityBase {
             }
             else if(event.key === Qt.Key_Space || event.key === Qt.Key_Enter || event.key === Qt.Key_Return)
                 if(grid.currentItem.isBack && !grid.currentItem.isFound && !grid.currentItem.tuxTurn && items.selectionCount < 2) grid.currentItem.selected()
+        }
+
+        Loader {
+            id: audioNeededDialog
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                message: qsTr("This activity requires audio, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
+                button1Text: qsTr("Quit")
+                button2Text: qsTr("Continue")
+                onButton1Hit: activity.home();
+                onClose: {
+                    background.audioDisabled = false;
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.audioDisabled
+            onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
 }
