@@ -341,7 +341,7 @@ ActivityBase {
             sourceComponent: GCDialog {
                 parent: activity
                 isDestructible: false
-                message: qsTr("This activity requires audio, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
+                message: qsTr("This activity requires sound, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
                 button1Text: qsTr("Quit")
                 button2Text: qsTr("Continue")
                 onButton1Hit: activity.home();
