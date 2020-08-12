@@ -44,6 +44,9 @@ ActivityBase {
         signal start
         signal stop
 
+        // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
+        property bool audioDisabled: false
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)
@@ -107,7 +110,13 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/note_names/resource/dataset_01.qml"
         }
 
-        onStart: { Activity.start(items, activity.timerNormalInterval) }
+        onStart: {
+            if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
+                    introMessage.index = -1;
+                    background.audioDisabled = true;
+            }
+            Activity.start(items, activity.timerNormalInterval);
+        }
         onStop: { Activity.stop() }
 
         property string clefType: "Treble"
@@ -449,6 +458,26 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
+        }
+
+        Loader {
+            id: audioNeededDialog
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                message: qsTr("This activity requires audio, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
+                button1Text: qsTr("Quit")
+                button2Text: qsTr("Continue")
+                onButton1Hit: activity.home();
+                onClose: {
+                    background.audioDisabled = false;
+                    introMessage.index = 0;
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.audioDisabled
+            onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
 }
