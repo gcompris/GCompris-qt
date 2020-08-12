@@ -39,9 +39,11 @@ ActivityBase {
         id: background
         anchors.fill: parent
         color: "#ABCDEF"
-
         signal start
         signal stop
+
+        // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
+        property bool audioDisabled: false
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -66,7 +68,12 @@ ActivityBase {
             property bool isWrongRhythm: false
         }
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled) {
+                    background.audioDisabled = true;
+            }
+            Activity.start(items);
+        }
         onStop: { Activity.stop() }
 
         property string clefType: "Treble"
@@ -353,6 +360,25 @@ ActivityBase {
                 win.connect(Activity.nextSubLevel)
                 loose.connect(Activity.initSubLevel)
             }
+        }
+
+        Loader {
+            id: audioNeededDialog
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                message: qsTr("This activity requires audio, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
+                button1Text: qsTr("Quit")
+                button2Text: qsTr("Continue")
+                onButton1Hit: activity.home();
+                onClose: {
+                    background.audioDisabled = false;
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.audioDisabled
+            onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
 }
