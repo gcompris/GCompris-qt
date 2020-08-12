@@ -48,6 +48,9 @@ ActivityBase {
         sourceSize.width: width
         sourceSize.height: height
 
+        // if audio is disabled, we display a dialog to tell users this activity requires audio anyway
+        property bool audioDisabled: false
+
         /* In order to accept any screen ratio the play area is always a 1000x1000
          * square and is centered in a big background image that is 3000x3000
          */
@@ -131,6 +134,8 @@ ActivityBase {
             Activity.start(items, url, numberOfLevels)
             if(activity.needsVoices === true) {
                 activity.isMusicalActivity = true
+                if(!ApplicationSettings.isAudioVoicesEnabled || !ApplicationSettings.isAudioEffectsEnabled)
+                    background.audioDisabled = true
             }
         }
         onStop: { Activity.stop() }
@@ -329,6 +334,25 @@ ActivityBase {
         }
         Bonus {
             id: bonus
+        }
+
+        Loader {
+            id: audioNeededDialog
+            sourceComponent: GCDialog {
+                parent: activity
+                isDestructible: false
+                message: qsTr("This activity requires audio, so it will play some sounds even if the audio voices or effects are disabled in the main configuration.")
+                button1Text: qsTr("Quit")
+                button2Text: qsTr("Continue")
+                onButton1Hit: activity.home();
+                onClose: {
+                    background.audioDisabled = false;
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.audioDisabled
+            onStatusChanged: if (status == Loader.Ready) item.start()
         }
     }
 }
