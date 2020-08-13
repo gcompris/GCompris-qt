@@ -122,17 +122,17 @@ function initSubLevel() {
     }
 }
 
-function getInternalWord(){
+function getInternalWord() {
     // function to get a word from translated lists
     var currentWordLength = levels[currentLevel][currentSubLevel].wordLength
     var wordsUsed
-    if (currentWordLength == 3) {
+    if (currentWordLength === 3) {
         wordsUsed = words3Letters
     }
-    else if (currentWordLength == 4) {
+    else if (currentWordLength === 4) {
         wordsUsed = words4Letters
     }
-    else if (currentWordLength == 5) {
+    else if (currentWordLength === 5) {
         wordsUsed = words5Letters
     }
     // choosing first word of a list and pushing it to the end of the list like a queue.

@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Play with Images.")
+    objective: qsTr("Play with images.")
     difficulty: 2
     property var images: [
         "qrc:/gcompris/src/activities/crane/resource/bulb.svg",
