@@ -56,6 +56,9 @@ Window {
     property var rccBackgroundMusic: ApplicationInfo.getBackgroundMusicFromRcc()
     property var filteredBackgroundMusic: ApplicationSettings.filteredBackgroundMusic
     property alias backgroundMusic: backgroundMusic
+    property bool voicesDownloaded: true
+    property bool wordSetDownloaded: true
+    property bool musicDownloaded: true
 
     /**
      * type: bool
@@ -185,21 +188,10 @@ Window {
             }
         } else if(ApplicationSettings.useWordset) { // Only if external wordset is enabled
             // words.rcc has not been downloaded yet -> ask for download
-            Core.showMessageDialog(
-                        pageView,
-                        qsTr("The images for several activities are not yet installed. " +
-                        "Do you want to download them now?"),
-                        qsTr("Yes"),
-                        function() {
-                            if (DownloadManager.downloadResource(wordset))
-                                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-                        },
-                        qsTr("No"), null,
-                        function() { pageView.currentItem.focus = true }
-            );
+            wordSetDownloaded = false;
         }
 
-        //disable wordset is useWordset config is false
+        //disable wordset if useWordset config is false
         if(!ApplicationSettings.useWordset) {
             ApplicationSettings.wordset = "";
         }
@@ -225,19 +217,47 @@ Window {
             }
         }
         else if(ApplicationSettings.isBackgroundMusicEnabled && !DownloadManager.haveLocalResource(music)) {
-            Core.showMessageDialog(
-            pageView,
-            qsTr("The background music is not yet downloaded. ")
-            + qsTr("Do you want to download it now?"),
-            qsTr("Yes"),
-            function() {
-                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources())) {
-                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+            musicDownloaded = false;
+        }
+    }
+
+    function checkVoices() {
+        if(!DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+            voicesDownloaded = false;
+    }
+
+    function initialAssetsDownload() {
+        checkVoices();
+        checkWordset();
+        checkBackgroundMusic();
+        var voicesLine = voicesDownloaded ? "" : ("<br>") + "-" + qsTr("Voices for your language");
+        var wordSetLine = wordSetDownloaded ? "" : ("<br>") + "-" + qsTr("Full word image set");
+        var musicLine = musicDownloaded ? "" : ("<br>") + "-" + qsTr("Background music");
+        if(!voicesDownloaded || !wordSetDownloaded || ! musicDownloaded) {
+            var dialog;
+            dialog = Core.showMessageDialog(
+                pageView,
+                qsTr("Do you want to download the following external assets ?")
+                + ("<br>")
+                + voicesLine
+                + wordSetLine
+                + musicLine,
+                qsTr("Yes"),
+                function() {
+                    if(!voicesDownloaded)
+                        DownloadManager.downloadResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
+                    if(!wordSetDownloaded)
+                        DownloadManager.downloadResource('data2/words/words.rcc');
+                    if(!musicDownloaded)
+                        DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources());
+                    var downloadDialog = Core.showDownloadDialog(pageView, {});
+                },
+                qsTr("No"), null,
+                function() {
+                    pageView.currentItem.focus = true;
                 }
-            },
-            qsTr("No"), null,
-            function() { pageView.currentItem.focus = true }
             );
+
         }
     }
 
@@ -259,40 +279,32 @@ Window {
             var dialog;
             dialog = Core.showMessageDialog(
                         pageView,
-                        qsTr("Welcome to GCompris!") + '\n'
-                        + qsTr("You are running GCompris for the first time.") + '\n'
+                        qsTr("Welcome to GCompris!") + ("<br>")
+                        + qsTr("You are running GCompris for the first time.") + "\n"
                         + qsTr("You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.")
                         + "\n"
                         + qsTr("Have Fun!")
-                        + "\n"
+                        + ("<br><br>")
                         + qsTr("Your current language is %1 (%2).")
                           .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
-                          .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale))
-                        + "\n"
-                        + qsTr("Do you want to download the corresponding sound files now?"),
-                        qsTr("Yes"),
+                          .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)),
+                        "", null,
+                        "", null,
                         function() {
-                            if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
-                                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-                        },
-                        qsTr("No"), null,
-                        function() {
-                            pageView.currentItem.focus = true
-                            checkWordset()
-                            checkBackgroundMusic()
+                            pageView.currentItem.focus = true;
+                            initialAssetsDownload();
                         }
              );
         }
         else {
             // Register voices-resources for current locale, updates/downloads only if
             // not prohibited by the settings
-            if (!DownloadManager.areVoicesRegistered()) {
+            if(!DownloadManager.areVoicesRegistered()) {
                 DownloadManager.updateResource(
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
             }
-            checkWordset()
-            checkBackgroundMusic()
+            checkWordset();
+            checkBackgroundMusic();
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
                 Core.showMessageDialog(

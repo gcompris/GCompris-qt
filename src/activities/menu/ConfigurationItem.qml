@@ -33,6 +33,7 @@ Item {
 
     property var languages: allLangs.languages
     property int contentWidth: Math.floor(dialogConfig.width * 0.9)
+    property var parentActivity
     height: contentColumn.height
 
     LanguageList {
@@ -83,6 +84,19 @@ Item {
             value: audioEffectsVolume * 10
             onValueChanged: ApplicationSettings.audioEffectsVolume = value / 10;
             scrollEnabled: false
+        }
+
+        Button {
+            id: backgroundMusicButton
+            height: 30 * ApplicationInfo.ratio
+            visible: ApplicationInfo.isDownloadAllowed
+            text: qsTr("Download background music")
+            style: GCButtonStyle {}
+
+            onClicked: {
+                if(DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources()))
+                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+            }
         }
 
 	    GCDialogCheckBox {
@@ -355,9 +369,9 @@ Item {
 
                 onClicked: {
                     if (DownloadManager.downloadResource(
-                    DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale)))
+                            DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale)))
                     {
-                        var downloadDialog = Core.showDownloadDialog(dialogConfig.parent.rootItem, {});
+                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                     }
                 }
             }
@@ -598,86 +612,14 @@ Item {
                         ))
             {
                 // ask for downloading new voices
-                Core.showMessageDialog(main,
-                qsTr("You selected a new locale. You need to restart GCompris to play in your new locale.<br/>Do you want to download the corresponding sound files now?"),
-                qsTr("Yes"), function() {
-                    // yes -> start download
-                    if (DownloadManager.downloadResource(
-                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
-                    var downloadDialog = Core.showDownloadDialog(main, {});
-                },
-                qsTr("No"), null,
-                null
-                );
+                parentActivity.newVoicesSignal();
             } else {
                 // check for updates or/and register new voices
                 DownloadManager.updateResource(
                             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
             }
         }
-        // download words.rcc if needed
-        if(ApplicationSettings.wordset != "") {
-            // we want to use the external dataset, it is either in
-            // words/words.rcc or full-${CA}.rcc
-            if(DownloadManager.isDataRegistered("words")) {
-                // we either have it, we try to update in the background
-                // or we are downloading it
-                if(DownloadManager.haveLocalResource(wordset))
-                    DownloadManager.updateResource(wordset)
-            }
-            else {
-                // download automatically if automatic download else ask for download
-                if(isAutomaticDownloadsEnabled) {
-                    var prevAutomaticDownload = ApplicationSettings.isAutomaticDownloadsEnabled
-                    ApplicationSettings.isAutomaticDownloadsEnabled = true;
-                    DownloadManager.updateResource(wordset);
-                    ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
-                }
-                else {
-                    Core.showMessageDialog(main,
-                    qsTr("The images for several activities are not yet installed. ")
-                    + qsTr("Do you want to download them now?"),
-                    qsTr("Yes"),
-                    function() {
-                        if (DownloadManager.downloadResource(wordset))
-                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-                    },
-                    qsTr("No"), function() { ApplicationSettings.wordset = "" },
-                    null
-                    );
-                }
-            }
-        }
-
-        // download backgroundMusic.rcc if needed
-        if(DownloadManager.isDataRegistered("backgroundMusic")) {
-        // we either have it, we try to update in the background
-        // or we are downloading it
-            if(DownloadManager.haveLocalResource(DownloadManager.getBackgroundMusicResources()))
-                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources())
-            }
-        else {
-        // download automatically if automatic download else ask for download
-            if(isAutomaticDownloadsEnabled) {
-                var prevAutomaticDownload = ApplicationSettings.isAutomaticDownloadsEnabled
-                ApplicationSettings.isAutomaticDownloadsEnabled = true;
-                DownloadManager.updateResource(DownloadManager.getBackgroundMusicResources());
-                ApplicationSettings.isAutomaticDownloadsEnabled = prevAutomaticDownload
-            }
-            else if(ApplicationSettings.isBackgroundMusicEnabled) {
-                Core.showMessageDialog(main,
-                qsTr("The background music is not yet installed. ")
-                + qsTr("Do you want to download it now?"),
-                qsTr("Yes"),
-                function() {
-                    if (DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources()))
-                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-                },
-                qsTr("No"),null
-                );
-                }
-            }
-        }
+    }
 
     ListModel {
         id: fonts

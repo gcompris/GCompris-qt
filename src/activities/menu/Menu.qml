@@ -76,6 +76,30 @@ ActivityBase {
         pageView.push(toPush);
     }
 
+    //when selecting a new language in config, we need to open the newVoicesDialog,
+    //but only after the config page is closed, hence the need to have a signal calling a Timer calling the function
+    signal newVoicesSignal
+    onNewVoicesSignal: newVoicesDialogTimer.restart();
+
+    Timer {
+        id: newVoicesDialogTimer
+        interval: 250
+        onTriggered: newVoicesDialog();
+    }
+    function newVoicesDialog() {
+        Core.showMessageDialog(activity,
+                qsTr("You selected a new locale. You need to restart GCompris to play in your new locale.<br/>Do you want to download the corresponding sound files now?"),
+                qsTr("Yes"), function() {
+                    // yes -> start download
+                    if (DownloadManager.downloadResource(
+                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                },
+                qsTr("No"), null,
+                null
+                );
+    }
+
     Connections {
         // At the launch of the application, box2d check is performed after we 
         // first initialize the menu. This connection is to refresh
@@ -620,7 +644,7 @@ ActivityBase {
                 anchors.fill: activitiesGrid
             }
         }
-        
+
         // The scroll buttons
         GCButtonScroll {
             visible: !ApplicationInfo.useOpenGL
@@ -1030,7 +1054,7 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
-                
+
         DialogAbout {
             id: dialogAbout
             onClose: home()
@@ -1048,6 +1072,7 @@ ActivityBase {
             content: Component {
                 ConfigurationItem {
                     id: configItem
+                    parentActivity: activity
                     width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
                 }
             }
@@ -1061,7 +1086,7 @@ ActivityBase {
                     ActivityInfoTree.filterEnabledActivities()
                 } else
                     ActivityInfoTree.filterBySearch(searchTextField.text);
-                
+
                 backgroundMusic.clearQueue()
                 /**
                  * 1. If the current playing background music is in new filtered playlist too, continue playing it and append all the next filtered musics to backgroundMusic element.
@@ -1084,14 +1109,14 @@ ActivityBase {
                         }
                         nextMusicIndex++
                     }
-                    
+
                     while(nextMusicIndex < dialogActivityConfig.configItem.filteredBackgroundMusic.length)
                         backgroundMusic.append(ApplicationInfo.getAudioFilePath("backgroundMusic/" + dialogActivityConfig.configItem.filteredBackgroundMusic[nextMusicIndex++]))
                     backgroundMusic.nextAudio()
                 }
                 home()
             }
-            
+
             BackgroundMusicList {
                 id: backgroundMusicList
                 onClose: {

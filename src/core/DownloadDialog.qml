@@ -116,8 +116,25 @@ Item {
 
     signal finished
 
-    onStart: opacity = 1
-    onStop: opacity = 0
+    focus: true
+
+    onVisibleChanged: {
+        if(visible) {
+            downloadDialog.forceActiveFocus();
+            parent.Keys.enabled = false;
+        }
+    }
+
+    onStart: {
+        opacity = 1;
+        downloadDialog.forceActiveFocus();
+        parent.Keys.enabled = false;
+    }
+    onStop: {
+        opacity = 0;
+        parent.Keys.enabled = true;
+        parent.forceActiveFocus();
+    }
     onClose: destroy()
 
     Behavior on opacity { NumberAnimation { duration: 200 } }
@@ -241,6 +258,13 @@ Item {
 
     }
 
+    Keys.onEscapePressed: {
+        if(backgroundButtonVisible)
+            backgroundButton.clicked();
+        else if(abortButtonVisible)
+            abortButton.clicked();
+    }
+
     Connections {
         target: DownloadManager
 
@@ -250,7 +274,7 @@ Item {
             if (downloadDialog.reportError
                     && code != 5) {  // no error: OperationCanceledError
                 // show error message
-                var messageDialog = Core.showMessageDialog(main.pageView,
+                var messageDialog = Core.showMessageDialog(parent,
                                                            qsTr("Download error (code: %1): %2").arg(code).arg(msg),
                                                            "", null,
                                                            "", null,
@@ -285,7 +309,7 @@ Item {
                 } else if (code == 2)  // NoChange
                     infText = qsTr("Your local data files are up-to-date.")
 
-                var messageDialog = Core.showMessageDialog(main.pageView,
+                var messageDialog = Core.showMessageDialog(parent,
                                                            infText,
                                                            "", null,
                                                            "", null,
