@@ -249,7 +249,7 @@ function disableToolDelete() {
 }
 
 function nextColorIndex() {
-    if(colorIndex < wireColors.length)
+    if(colorIndex < wireColors.length - 1)
         ++colorIndex;
     else
         colorIndex = 0;
