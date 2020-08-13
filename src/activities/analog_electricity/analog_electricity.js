@@ -510,5 +510,4 @@ function dcAnalysis() {
 function displayWarning(message_) {
     items.infoTxt.visible = true;
     items.infoTxt.text = message_;
-    console.log(message_);
 }
