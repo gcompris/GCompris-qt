@@ -237,7 +237,7 @@ Window {
             var dialog;
             dialog = Core.showMessageDialog(
                 pageView,
-                qsTr("Do you want to download the following external assets ?")
+                qsTr("Do you want to download the following external assets?")
                 + ("<br>")
                 + voicesLine
                 + wordSetLine
