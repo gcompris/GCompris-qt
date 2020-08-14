@@ -22,19 +22,20 @@
 .pragma library
 .import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris
-.import "dataset.js" as Data
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 
 var url = "qrc:/gcompris/src/activities/guesscount/resource/"
-var defaultOperators = Data.defaultOperators
+var defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = []
 
 var currentLevel
-var numberOfLevel = Data.levelSchema.length
+var numberOfLevel
 var items
+var dataItems
+var levelSchema
 
 function start(items_) {
     items = items_
@@ -49,7 +50,11 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.currentlevel = currentLevel
     items.sublevel = 1
-    items.data = buildDataset(Data.dataset, Data.levelSchema)
+    defaultOperators = items.levels[currentLevel].defaultOperators
+    numberOfLevel = items.levels[currentLevel].levelSchema.length
+    dataItems = items.levels[currentLevel].dataItems
+    levelSchema = items.levels[currentLevel].levelSchema
+    items.data = buildDataset(dataItems, levelSchema)
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.levelchanged = false
     items.solved = false

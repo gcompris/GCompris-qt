@@ -37,7 +37,7 @@ ActivityBase {
         signal start
         signal stop
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -59,6 +59,7 @@ ActivityBase {
             property int sublevel: 0
             property alias operandRow: operandRow
             property var data
+            property var levels: activity.datasetLoader.data
             property int result: data[sublevel-1][1]
             property alias timer: timer
             property alias warningDialog: warningDialog
@@ -207,84 +208,14 @@ ActivityBase {
             onClose: home()
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias modeBox: modeBox
-                    property var availableModes: [
-                        { "text": qsTr("Admin"), "value": "admin" },
-                        { "text": qsTr("BuiltIn"), "value": "builtin" }
-                    ]
-                    Rectangle {
-                        id: flow
-                        width: dialogActivityConfig.width
-                        height: background.height
-                        GCComboBox {
-                            id: modeBox
-                            anchors {
-                                top: parent.top
-                                topMargin: 5
-                            }
+            currentActivity: activity.activityInfo
 
-                            model: availableModes
-                            background: dialogActivityConfig
-                            label: qsTr("Select your mode")
-                        }
-                        Row {
-                            id: labels
-                            spacing: 20
-                            anchors {
-                                top: modeBox.bottom
-                                topMargin: 5
-                            }
-                            visible: modeBox.currentIndex == 0
-                            Repeater {
-                                model: 2
-                                Row {
-                                    spacing: 10
-                                    Rectangle {
-                                        id: label
-                                        width: background.width*0.3
-                                        height: background.height/15
-                                        radius: 20.0;
-                                        color: modelData ? "green" : "red"
-                                        GCText {
-                                            anchors.horizontalCenter: parent.horizontalCenter
-                                            anchors.verticalCenter: parent.verticalCenter
-                                            fontSize: smallSize
-                                            text: modelData ? qsTr("Selected") : qsTr("Not Selected")
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        Rectangle {
-                            width: parent.width
-                            color: "transparent"
-                            height: parent.height/1.25-labels.height-modeBox.height
-                            anchors {
-                                top: labels.bottom
-                                topMargin: 5
-                            }
-                            ListView {
-                                anchors.fill: parent
-                                visible: modeBox.currentIndex == 0
-                                spacing: 5
-                                model: Activity.numberOfLevel
-                                clip: true
-                                delegate: Admin {
-                                    id: level
-                                    level: modelData
-                                    levelOperators: items.levelArr
-                                    width: background.width
-                                    height: background.height/10
-                                }
-                            }
-                        }
-                    }
-                }
+            onSaveData: {
+                levelFolder = dialogActivityConfig.chosenLevels
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
             }
             onClose: {
                 if(Activity.configDone(items.levelArr)){
@@ -293,41 +224,29 @@ ActivityBase {
                 }
             }
             onLoadData: {
-                if(dataToSave && dataToSave["mode"] ) {
-                    items.mode = dataToSave["mode"]
-                    if(dataToSave["levelArr"] == undefined)
-                        dataToSave["levelArr"] = Activity.defaultOperators
-                    if(dataToSave["levelArr"].length != Activity.numberOfLevel)
+                if(activityData && activityData["mode"] ) {
+                    items.mode = activityData["mode"]
+                    if(activityData["levelArr"] == undefined)
+                        activityData["levelArr"] = Activity.defaultOperators
+                    if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
                     else
-                        items.levelArr = dataToSave["levelArr"]
+                        items.levelArr = activityData["levelArr"]
                 }
                 else{
                     items.mode='builtin'
                     items.levelArr = Activity.defaultOperators
                 }
             }
-
-            onSaveData: {
-                items.mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value
-                dataToSave = {"mode": items.mode, "levelArr":items.levelArr}
-                activity.needRestart = true
-            }
-
-
-            function setDefaultValues() {
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableModes[i].value === items.mode) {
-                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
-                        break;
-                    }
-                }
+            onStartActivity: {
+                background.stop()
+                background.start()
             }
         }
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config}
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onConfigClicked: {
                 dialogActivityConfig.active = true
                 dialogActivityConfig.setDefaultValues();
@@ -344,8 +263,10 @@ ActivityBase {
                 items.levelchanged = true
                 Activity.nextLevel()
             }
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig)
+            }
             onHomeClicked: activity.home()
-
         }
 
         Bonus {
