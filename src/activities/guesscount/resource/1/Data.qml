@@ -20,7 +20,6 @@
  */
 
 import GCompris 1.0
-import GCompris 1.0 as GCompris
 
 Data {
     objective: qsTr(" Practice algebraic calculations with a single operator.")
