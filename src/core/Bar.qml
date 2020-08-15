@@ -280,7 +280,7 @@ Item {
         target: DownloadManager
 
         onDownloadStarted: content.value |= content.download
-        onDownloadFinished: content.value &= ~content.download
+        onAllDownloadsFinished: content.value &= ~content.download
         onError: content.value &= ~content.download
     }
 

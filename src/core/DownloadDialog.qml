@@ -180,7 +180,7 @@ Item {
             wrapMode: TextEdit.WordWrap
             z: 2
             height: 60 * ApplicationInfo.ratio
-            text: qsTr("Downloading ...")
+            text: qsTr("Downloading...")
         }
 
         Rectangle {
@@ -293,8 +293,8 @@ Item {
             downloadDialogProgress.value = 0;
         }
 
-        onDownloadFinished: {
-            //console.log("dialog: DM reports finished: " + code);
+        onAllDownloadsFinished: {
+            //console.log("dialog: DM all reports finished");
             downloadDialog.finished();
             if (downloadDialog.reportSuccess
                     && code != 1) // note: errors will be reported by the onError handler
@@ -317,6 +317,10 @@ Item {
                                                            );
             } else if (downloadDialog.autohide)
                 downloadDialog.shutdown();
+        }
+
+        onDownloadFinished: {
+            //console.log("dialog: DM reports finished: " + code);
         }
     }
 

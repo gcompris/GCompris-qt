@@ -87,7 +87,7 @@ void DownloadManager::abortDownloads()
         QMutableListIterator<DownloadJob*> iter(activeJobs);
         while (iter.hasNext()) {
             DownloadJob *job = iter.next();
-            if (job->reply != nullptr) {
+            if (!job->downloadFinished && job->reply != nullptr) {
                 disconnect(job->reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
                 disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
                         this, SLOT(handleError(QNetworkReply::NetworkError)));
@@ -99,6 +99,7 @@ void DownloadManager::abortDownloads()
                 }
                 job->reply->deleteLater();
             }
+            delete job;
             iter.remove();
         }
         locker.unlock();
@@ -244,7 +245,7 @@ bool DownloadManager::download(DownloadJob* job)
             this, SLOT(handleError(QNetworkReply::NetworkError)));
     if (job->url.fileName() != contentsFilename) {
         connect(reply, &QNetworkReply::downloadProgress,
-                this, &DownloadManager::downloadProgress);
+                this, &DownloadManager::downloadInProgress);
         emit downloadStarted(job->url.toString().remove(0, serverUrl.toString().length()));
     }
 
@@ -467,11 +468,33 @@ bool DownloadManager::areVoicesRegistered() const
     return isDataRegistered(resource);
 }
 
+void DownloadManager::downloadInProgress(qint64 bytesReceived, qint64 bytesTotal) {
+    QNetworkReply *reply = dynamic_cast<QNetworkReply*>(sender());
+    DownloadJob *job = nullptr;
+    // don't call getJobByReply to not cause deadlock with mutex
+    for (auto activeJob : activeJobs) {
+        if (activeJob->reply == reply) {
+            job = activeJob;
+            break;
+        }
+    }
+    job->bytesReceived = bytesReceived;
+    job->bytesTotal = bytesTotal;
+    qint64 allJobsBytesReceived = 0;
+    qint64 allJobsBytesTotal = 0;
+    for (auto activeJob : activeJobs) {
+        allJobsBytesReceived += activeJob->bytesReceived;
+        allJobsBytesTotal += activeJob->bytesTotal;
+    }
+    emit downloadProgress(allJobsBytesReceived, allJobsBytesTotal);
+}
+
 void DownloadManager::downloadFinished()
 {
     QNetworkReply* reply = dynamic_cast<QNetworkReply*>(sender());
     DownloadFinishedCode code = Success;
     DownloadJob *job = getJobByReply(reply);
+    bool allFinished = false;
     if (job->file.isOpen()) {
         job->file.flush();  // note: important, or checksums might be wrong!
         job->file.close();
@@ -570,15 +593,27 @@ void DownloadManager::downloadFinished()
         }
 
     // none left, DownloadJob finished
+    job->downloadFinished = true;
+    job->downloadResult = code;
     if (job->file.isOpen())
         job->file.close();
-    { // note: must remove before signalling downloadFinished(), otherwise race condition for the Qt.quit() case
-        QMutexLocker locker(&jobsMutex);
-        activeJobs.removeOne(job);
-    }
     emit downloadFinished(code);
     reply->deleteLater();
-    delete job;
+
+    allFinished = std::all_of(activeJobs.constBegin(), activeJobs.constEnd(),
+                              [](const DownloadJob* job) { return job->downloadFinished;});
+    if(allFinished) {
+        QMutexLocker locker(&jobsMutex);
+        DownloadFinishedCode allCode = Success;
+        std::for_each(activeJobs.constBegin(), activeJobs.constEnd(),
+                      [&allCode] (const DownloadJob *job) {
+                          if(job->downloadResult == Error)
+                              allCode = Error;
+                          delete job;
+                      });
+        activeJobs.clear();
+        emit allDownloadsFinished(allCode);
+    }
     return;
 
   outError:

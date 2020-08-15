@@ -97,8 +97,16 @@ private:
         QMap<QString,QString> contents;  ///< checksum map for download verification
         QList<QUrl> knownContentsUrls;   ///< store already tried upstream Contents files (for infinite loop protection)
 
+        qint64 bytesReceived;
+        qint64 bytesTotal;
+        bool downloadFinished;
+        int downloadResult;
         DownloadJob(const QUrl &u = QUrl()) : url(u), file(), reply(0),
-                queue(QList<QUrl>()) {}
+                                              queue(QList<QUrl>()),
+                                              bytesReceived(0),
+                                              bytesTotal(0),
+                                              downloadFinished(false),
+                                              downloadResult(0) {}
     } DownloadJob;
 
     QList<DownloadJob*> activeJobs;  ///< track active jobs to allow for parallel downloads
@@ -281,6 +289,15 @@ public:
 
 public slots:
 
+    /** Emitted when a download in progressing.
+     *
+     * Job is retrieved using sender() method.
+     *
+     * @param bytesReceived Downloaded bytes for this job.
+     * @param bytesTotal Total bytes to download for this job.
+     */
+    void downloadInProgress(qint64 bytesReceived, qint64 bytesTotal);
+
     /**
      * Updates a resource @p path from the upstream server unless prohibited
      * by the settings and registers it if possible.
@@ -363,6 +380,13 @@ signals:
      *             use QENUMS?
      */
     void downloadFinished(int code);
+
+    /** Emitted when all downloads have finished.
+     *
+     * If all downloads are successful, code is Success.
+     * Else if at least one download is in error, code is Error.
+     */
+    void allDownloadsFinished(int code);
 
     /** Emitted when a resource has been registered.
      *
