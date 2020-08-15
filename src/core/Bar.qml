@@ -509,7 +509,7 @@ Item {
                 anchors.fill: parent
                 hoverEnabled: true
                 onClicked: {
-                    var downloadDialog = Core.showDownloadDialog(bar.parent, {});
+                    var downloadDialog = Core.showDownloadDialog(activity, {});
                 }
             }
         }
