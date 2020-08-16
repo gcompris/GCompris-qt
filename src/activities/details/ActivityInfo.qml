@@ -39,4 +39,5 @@ ActivityInfo {
   credit: qsTr("The images are from Wikimedia Commons.")
   section: "discovery arts"
   createdInVersion: 4000
+  levels: "1,2,3"
 }
