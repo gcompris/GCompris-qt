@@ -195,6 +195,14 @@ Item {
             }
         }
 
+        Rectangle {
+            id: buttonSelector
+            width: 0
+            height: 0
+            color: "#803ACAFF"
+            scale: 1.1
+        }
+
         Button {
             id: button1
             width: parent.width
@@ -208,6 +216,7 @@ Item {
                 theme: "highContrast"
             }
             visible: text != ""
+            property bool selected: false;
             onClicked: {
                 gcdialog.button1Hit()
                 gcdialog.stop()
@@ -227,15 +236,66 @@ Item {
                 theme: "highContrast"
             }
             visible: text != ""
+            property bool selected: false;
             onClicked: {
                 gcdialog.button2Hit()
                 gcdialog.stop()
             }
         }
+
+        states: [
+            State {
+                name: "button1Selected"
+                when: button1.selected
+                PropertyChanges {
+                    target: buttonSelector
+                    anchors.fill: button1
+                }
+            },
+            State {
+                name: "button2Selected"
+                when: button2.selected
+                PropertyChanges {
+                    target: buttonSelector
+                    anchors.fill: button2
+                }
+            }
+        ]
     }
 
     Keys.onEscapePressed: {
         buttonCancel.close();
+    }
+
+    Keys.onPressed: {
+        console.log(event.key);
+        if(event.key === Qt.Key_Up || event.key === Qt.Key_Left) {
+            if(button2.visible && !button1.selected && !button2.selected) {
+                button2.selected = true;
+            } else if(button2.visible) {
+                button2.selected = !button2.selected;
+                button1.selected = !button2.selected;
+            } else if(button1.visible) {
+                button1.selected = true;
+            }
+        }
+        if(event.key === Qt.Key_Down || event.key === Qt.Key_Right) {
+            if(button1.visible && !button1.selected && !button2.selected) {
+                button1.selected = true;
+            } else if(button2.visible) {
+                button1.selected = !button1.selected;
+                button2.selected = !button2.selected;
+            } else if(button1.visible) {
+                button1.selected = true;
+            }
+        }
+        if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return || event.key === Qt.Key_Space) {
+            if(button1.selected) {
+                button1.clicked();
+            } else if(button2.selected) {
+                button2.clicked();
+            }
+        }
     }
 
     // The cancel button

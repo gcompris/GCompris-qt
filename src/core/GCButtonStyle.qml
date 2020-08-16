@@ -48,7 +48,7 @@ ButtonStyle {
      * Default is dark.
      */
     property string theme: "dark"
-    
+
     /**
      * type:bool
      * if there is an icon on the right, we need to add a rightMargin for the text label
@@ -121,7 +121,7 @@ ButtonStyle {
     property bool selected: false
 
     property string textSize: "regular"
-    
+
     property var textSizes: {
         "regular": {
             fontSize: 14,
