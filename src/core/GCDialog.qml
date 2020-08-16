@@ -274,7 +274,7 @@ Item {
                 button2.selected = true;
             } else if(button2.visible) {
                 button2.selected = !button2.selected;
-                button1.selected = !button2.selected;
+                button1.selected = !button1.selected;
             } else if(button1.visible) {
                 button1.selected = true;
             }
