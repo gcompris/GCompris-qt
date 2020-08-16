@@ -25,7 +25,7 @@ import "../babymatch"
 
 Babymatch {
     id: activity
-
+    useMultipleDataset: true
     onStart: focus = true
     onStop: {}
 
