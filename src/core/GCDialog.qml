@@ -293,6 +293,8 @@ Item {
                 button1.clicked();
             } else if(button2.selected) {
                 button2.clicked();
+            } else {
+                buttonCancel.close();
             }
         }
     }
