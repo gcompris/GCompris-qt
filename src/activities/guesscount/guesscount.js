@@ -22,6 +22,7 @@
 .pragma library
 .import QtQuick 2.6 as Quick
 .import GCompris 1.0 as GCompris
+.import "dataset.js" as Data
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 
@@ -50,11 +51,19 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.currentlevel = currentLevel
     items.sublevel = 1
-    defaultOperators = items.levels[currentLevel].defaultOperators
-    numberOfLevel = items.levels[currentLevel].levelSchema.length
-    dataItems = items.levels[currentLevel].dataItems
-    levelSchema = items.levels[currentLevel].levelSchema
-    items.data = buildDataset(dataItems, levelSchema)
+    if(items.levels && items.mode === 'builtin') {
+        defaultOperators = items.levels[currentLevel].defaultOperators
+        numberOfLevel = items.levels[currentLevel].levelSchema.length
+        dataItems = items.levels[currentLevel].dataItems
+        levelSchema = items.levels[currentLevel].levelSchema
+        items.data = buildDataset(dataItems, levelSchema)
+    }
+    else {
+        defaultOperators = Data.defaultOperators
+        numberOfLevel = Data.levelSchema.length
+        items.data = buildDataset(Data.dataset, Data.levelSchema)
+    }
+
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.levelchanged = false
     items.solved = false
