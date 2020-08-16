@@ -268,7 +268,6 @@ Item {
     }
 
     Keys.onPressed: {
-        console.log(event.key);
         if(event.key === Qt.Key_Up || event.key === Qt.Key_Left) {
             if(button2.visible && !button1.selected && !button2.selected) {
                 button2.selected = true;
