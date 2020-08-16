@@ -224,6 +224,8 @@ Window {
     function checkVoices() {
         if(!DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
             voicesDownloaded = false;
+        else
+            DownloadManager.registerResource(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale));
     }
 
     function initialAssetsDownload() {
@@ -236,7 +238,7 @@ Window {
         if(!voicesDownloaded || !wordSetDownloaded || ! musicDownloaded) {
             var dialog;
             dialog = Core.showMessageDialog(
-                pageView,
+                pageView.currentItem,
                 qsTr("Do you want to download the following external assets?")
                 + ("<br>")
                 + voicesLine
@@ -250,12 +252,10 @@ Window {
                         DownloadManager.downloadResource('data2/words/words.rcc');
                     if(!musicDownloaded)
                         DownloadManager.downloadResource(DownloadManager.getBackgroundMusicResources());
-                    var downloadDialog = Core.showDownloadDialog(pageView, {});
+                    var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                 },
                 qsTr("No"), null,
-                function() {
-                    pageView.currentItem.focus = true;
-                }
+                null
             );
 
         }
