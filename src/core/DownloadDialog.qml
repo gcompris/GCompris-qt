@@ -74,6 +74,19 @@ Item {
 
     /**
      * type:bool
+     * Whether a message has been displayed
+     * we don't want to display several dialogs
+     */
+    property bool messageDisplayed: false;
+
+    /**
+     * type:GCDialog
+     * The dialog displaying the result message
+     */
+    property var messageDialog: undefined;
+
+    /**
+     * type:bool
      * Whether the dialog has been created dynamically. If set to true, the
      * component takes care of destroying itself after finished.
      * Default is false.
@@ -118,24 +131,40 @@ Item {
 
     focus: true
 
-    onVisibleChanged: {
-        if(visible) {
-            downloadDialog.forceActiveFocus();
-            parent.Keys.enabled = false;
+    //We need a timer to properly get focus on this dialog and its children dialogs
+    Timer {
+        id: getFocusTimer
+        interval: 250
+        onTriggered: {
+            if(!messageDisplayed) {
+                downloadDialog.forceActiveFocus();
+                downloadDialog.parent.Keys.enabled = false;
+            } else {
+                messageDialog.forceActiveFocus();
+                downloadDialog.parent.Keys.enabled = false;
+            }
         }
     }
 
+    onVisibleChanged: {
+        if(visible) {
+            getFocusTimer.restart();
+        }
+    }
     onStart: {
         opacity = 1;
-        downloadDialog.forceActiveFocus();
-        parent.Keys.enabled = false;
+        getFocusTimer.restart();
     }
     onStop: {
         opacity = 0;
         parent.Keys.enabled = true;
         parent.forceActiveFocus();
     }
-    onClose: destroy()
+    onClose: {
+        destroy();
+        parent.Keys.enabled = true;
+        parent.forceActiveFocus();
+    }
 
     Behavior on opacity { NumberAnimation { duration: 200 } }
     onOpacityChanged: opacity === 0 ? close() : null
@@ -214,6 +243,14 @@ Item {
             value: 0
         }
 
+        Rectangle {
+            id: buttonSelector
+            width: 0
+            height: 0
+            color: "#803ACAFF"
+            scale: 1.1
+        }
+
         Button {
             id: backgroundButton
             width: parent.width
@@ -230,6 +267,7 @@ Item {
                 theme: "highContrast"
             }
             visible: true
+            property bool selected: false;
             onClicked: downloadDialog.shutdown();
         }
 
@@ -248,6 +286,7 @@ Item {
                 theme: "highContrast"
             }
             visible: true
+            property bool selected: false;
             onClicked: {
                 if (DownloadManager.downloadIsRunning())
                     DownloadManager.abortDownloads();
@@ -256,6 +295,24 @@ Item {
             }
         }
 
+        states: [
+            State {
+                name: "button1Selected"
+                when: backgroundButton.selected
+                PropertyChanges {
+                    target: buttonSelector
+                    anchors.fill: backgroundButton
+                }
+            },
+            State {
+                name: "button2Selected"
+                when: abortButton.selected
+                PropertyChanges {
+                    target: buttonSelector
+                    anchors.fill: abortButton
+                }
+            }
+        ]
     }
 
     Keys.onEscapePressed: {
@@ -265,6 +322,40 @@ Item {
             abortButton.clicked();
     }
 
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Up || event.key === Qt.Key_Left) {
+            if(abortButton.visible && !backgroundButton.selected && !abortButton.selected) {
+                abortButton.selected = true;
+            } else if(backgroundButton.visible) {
+                abortButton.selected = !abortButton.selected;
+                backgroundButton.selected = !backgroundButton.selected;
+            } else if(abortButton.visible) {
+                button1.selected = true;
+            }
+        }
+        if(event.key === Qt.Key_Down || event.key === Qt.Key_Right) {
+            if(backgroundButton.visible && !backgroundButton.selected && !abortButton.selected) {
+                backgroundButton.selected = true;
+            } else if(backgroundButton.visible) {
+                backgroundButton.selected = !backgroundButton.selected;
+                abortButton.selected = !abortButton.selected;
+            } else if(abortButton.visible) {
+                abortButton.selected = true;
+            }
+        }
+        if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return || event.key === Qt.Key_Space) {
+            if(backgroundButton.selected) {
+                backgroundButton.clicked();
+            } else if(abortButton.selected) {
+                abortButton.clicked();
+            } else if(backgroundButtonVisible) {
+                backgroundButton.clicked();
+            } else if(abortButtonVisible) {
+                abortButton.clicked();
+            }
+        }
+    }
+
     Connections {
         target: DownloadManager
 
@@ -272,9 +363,10 @@ Item {
             //console.warn("DownloadDialog: DM reports error: " + code + ": " + msg);
             downloadDialog.finished();
             if (downloadDialog.reportError
-                    && code != 5) {  // no error: OperationCanceledError
+                    && code != 5 && !messageDisplayed) {  // no error: OperationCanceledError
                 // show error message
-                var messageDialog = Core.showMessageDialog(parent,
+                messageDisplayed = true;
+                messageDialog = Core.showMessageDialog(downloadDialog.parent,
                                                            qsTr("Download error (code: %1): %2").arg(code).arg(msg),
                                                            "", null,
                                                            "", null,
@@ -282,8 +374,8 @@ Item {
                                                                downloadDialog.shutdown();
                                                            }
                                                            );
-            } else
-                downloadDialog.shutdown();
+                getFocusTimer.restart();
+            }
         }
 
         onDownloadProgress: downloadDialogProgress.value = 100 * bytesReceived / bytesTotal;
@@ -297,10 +389,10 @@ Item {
             //console.log("dialog: DM all reports finished");
             downloadDialog.finished();
             if (downloadDialog.reportSuccess
-                    && code != 1) // note: errors will be reported by the onError handler
+                    && code != 1 == !messageDisplayed) // note: errors will be reported by the onError handler
             {
                 // report success
-                downloadDialog.stop();
+                messageDisplayed = true;
                 var infText = "";
                 if (code == 0) {  // Success
                     infText = qsTr("Your download finished successfully. The data files are now available.")
@@ -309,12 +401,15 @@ Item {
                 } else if (code == 2)  // NoChange
                     infText = qsTr("Your local data files are up-to-date.")
 
-                var messageDialog = Core.showMessageDialog(parent,
+                messageDialog = Core.showMessageDialog(downloadDialog.parent,
                                                            infText,
                                                            "", null,
                                                            "", null,
-                                                           null
+                                                           function() {
+                                                               downloadDialog.shutdown();
+                                                           }
                                                            );
+                getFocusTimer.restart();
             } else if (downloadDialog.autohide)
                 downloadDialog.shutdown();
         }
