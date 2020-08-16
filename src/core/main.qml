@@ -59,6 +59,7 @@ Window {
     property bool voicesDownloaded: true
     property bool wordSetDownloaded: true
     property bool musicDownloaded: true
+    property bool welcomePlayed: false
 
     /**
      * type: bool
@@ -107,7 +108,10 @@ Window {
             }
 
             function playWelcome() {
-                audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
+                if(!welcomePlayed) {
+                    audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
+                    welcomePlayed = true;
+                }
             }
         }
 
