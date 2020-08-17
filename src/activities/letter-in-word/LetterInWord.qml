@@ -26,7 +26,6 @@
 
 import QtQuick 2.6
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 1.5
 import GCompris 1.0
 import "../../core"
 import "letter-in-word.js" as Activity
@@ -56,7 +55,7 @@ ActivityBase {
         signal voiceError
 
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -98,144 +97,28 @@ ActivityBase {
                 animateX.restart();
         }
 
-        ExclusiveGroup {
-            id: configOptions
-        }
-
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            property string configurationLocale: "system"
-
-            content: Component {
-                Item {
-                    property alias localeBox: localeBox
-                    property alias easyModeConfig: easyModeConfig
-                    property alias normalModeConfig: normalModeConfig
-                    property alias letterCaseBox: letterCaseBox
-                    height: column.height
-
-                    property alias availableLangs: langs.languages
-
-                    LanguageList {
-                        id: langs
-                    }
-
-                    Column {
-                        id: column
-                        spacing: 10
-                        width: dialogActivityConfig.width
-                        height: dialogActivityConfig.height
-
-                        GCDialogCheckBox {
-                            id: normalModeConfig
-                            width: column.width - 50
-                            text: qsTr("All words")
-                            checked: (items.currentMode === items.normalModeWordCount) ? true : false
-                            exclusiveGroup: configOptions
-                        }
-
-                        GCDialogCheckBox {
-                            id: easyModeConfig
-                            width: column.width - 50
-                            text: qsTr("Only 5 words")
-                            checked: (items.currentMode === items.easyModeWordCount) ? true : false
-                            exclusiveGroup: configOptions
-                        }
-
-                        Flow {
-                            spacing: 5
-                            width: dialogActivityConfig.width
-                            GCComboBox {
-                                id: letterCaseBox
-                                label: qsTr("Select case for letter to be searched")
-                                background: dialogActivityConfig
-                                model: [
-                                    {"text": qsTr("Mixed Case"), "value": Font.MixedCase},
-                                    {"text": qsTr("Upper Case"), "value": Font.AllUppercase},
-                                    {"text": qsTr("Lower Case"), "value": Font.AllLowercase}
-                                ]
-                                currentText: model[items.currentLetterCase].text
-                                currentIndex: items.currentLetterCase
-                            }
-                        }
-
-                        Flow {
-                            spacing: 5
-                            width: dialogActivityConfig.width
-                            GCComboBox {
-                                id: localeBox
-                                model: langs.languages
-                                background: dialogActivityConfig
-                                label: qsTr("Select your locale")
-                            }
-                        }
-                    }
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home();
             }
-
-            onClose: home()
-
-            function setLocale(localeToSet) {
-                // Store the locale as-is to be displayed in menu
-                configurationLocale = localeToSet
-                background.locale = Core.resolveLocale(localeToSet)
-            }
-
             onLoadData: {
-                if(dataToSave && dataToSave["savedMode"]) {
-                    items.currentMode = dataToSave["savedMode"] === "5" ? items.easyModeWordCount : items.normalModeWordCount
+                if(activityData && activityData["locale"]) {
+                    background.locale = activityData["locale"];
+                } else {
+                    background.locale = Core.resolveLocale(background.locale);
                 }
-
-                if(dataToSave && dataToSave["savedLetterCase"]) {
-                    items.currentLetterCase = dataToSave["savedLetterCase"]
+                if(activityData && activityData["savedLetterCase"]) {
+                    items.currentLetterCase = activityData["savedLetterCase"];
                 }
-
-                if(dataToSave && dataToSave["locale"]) {
-                    setLocale(dataToSave["locale"])
-                }
-                else {
-                    setLocale(background.locale)
+                if(activityData && activityData["savedMode"]) {
+                    items.currentMode = activityData["savedMode"];
                 }
             }
-            onSaveData: {
-                var oldLocale = configurationLocale;
-                var newLocale =
-                        dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
-                // Remove .UTF-8
-                if(newLocale.indexOf('.') != -1) {
-                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
-                }
-
-                var oldMode = items.currentMode
-                items.currentMode = dialogActivityConfig.loader.item.easyModeConfig.checked ? items.easyModeWordCount : items.normalModeWordCount
-
-                var oldLetterCase = items.currentLetterCase
-                items.currentLetterCase = dialogActivityConfig.loader.item.letterCaseBox.model[dialogActivityConfig.loader.item.letterCaseBox.currentIndex].value
-
-                dataToSave = {"locale": newLocale, "savedMode": items.currentMode, "savedLetterCase": items.currentLetterCase}
-
-                setLocale(newLocale)
-
-                // Restart the activity with new information
-                if(oldLocale !== newLocale || oldMode !== items.currentMode || oldLetterCase !== items.currentLetterCase) {
-                    background.stop();
-                    background.start();
-                }
-            }
-
-            function setDefaultValues() {
-                var localeUtf8 = configurationLocale;
-                if(configurationLocale != "system") {
-                    localeUtf8 += ".UTF-8";
-                }
-
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
-                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
-                        break;
-                    }
-                }
+            onStartActivity: {
+                background.stop();
+                background.start();
             }
         }
 
@@ -246,17 +129,15 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | config }
+            content: BarEnumContent { value: help | home | level | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
-                displayDialog(dialogActivityConfig)
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig);
             }
         }
 
