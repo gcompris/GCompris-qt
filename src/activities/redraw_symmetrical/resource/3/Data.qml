@@ -23,7 +23,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Large grids.")
+    objective: qsTr("Large grids(7x7).")
     difficulty: 5
     data: [
 
