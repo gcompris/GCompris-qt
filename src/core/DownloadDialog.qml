@@ -389,7 +389,7 @@ Item {
             //console.log("dialog: DM all reports finished");
             downloadDialog.finished();
             if (downloadDialog.reportSuccess
-                    && code != 1 == !messageDisplayed) // note: errors will be reported by the onError handler
+                    && code != 1 && !messageDisplayed) // note: errors will be reported by the onError handler
             {
                 // report success
                 messageDisplayed = true;
