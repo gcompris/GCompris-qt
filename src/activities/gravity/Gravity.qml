@@ -221,7 +221,7 @@ ActivityBase {
                      +" between the two interacting objects, more distance will"
                      +" result in weaker gravitational force."),
                 qsTr("Your goal is to move the spaceship and avoid hitting the planets until you reach the"
-                     +" space shuttle. The arrow indicates the direction and the intensity of the gravity"
+                     +" space station. The arrow indicates the direction and the intensity of the gravity"
                      +" on your ship."),
                 qsTr("Try to stay near the center of the screen, and anticipate by looking at the size"
                     +" and direction of the arrow.")
