@@ -65,7 +65,7 @@ function loadDataset() {
     dataset = data["dataset"];
     items.background.englishFallback = data["englishFallback"];
     if(!items.background.englishFallback)
-        Core.checkForVoices(_items.activityPage);
+        Core.checkForVoices(items.activityPage);
 }
 
 function stop() {
