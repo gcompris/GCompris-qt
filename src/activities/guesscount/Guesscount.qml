@@ -211,7 +211,6 @@ ActivityBase {
         DialogChooseLevel {
             id: dialogActivityConfig
             currentActivity: activity.activityInfo
-
             onSaveData: {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
@@ -226,8 +225,10 @@ ActivityBase {
             onLoadData: {
                 if(activityData && activityData["mode"] ) {
                     items.mode = activityData["mode"]
-                    if(activityData["levelArr"] == undefined)
+                    if(activityData["levelArr"] == undefined) {
                         activityData["levelArr"] = Activity.defaultOperators
+                        console.log(activityData["levelArr"])
+                    }
                     if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
                     else

@@ -33,69 +33,69 @@ Item {
         { "text": qsTr("Admin"), "value": "admin" },
         { "text": qsTr("BuiltIn"), "value": "builtin" }
     ]
+
     Column {
+        id: column
         spacing: 10 * ApplicationInfo.ratio
-        width: parent.width
+        width: activityConfiguration.width
         GCComboBox {
             id: modeBox
             model: availableModes
             background: activityConfiguration.background
             label: qsTr("Select your mode")
-        }
-    }
-
-    Row {
-        id: labels
-        spacing: 20
-        anchors {
-            top: parent.bottom
-            topMargin: 190
-        }
-        visible: modeBox.currentIndex == 0
-        Repeater {
-            model: 2
-            Row {
-                spacing: 10
-                Rectangle {
-                    id: label
-                    width: background.width*0.3
-                    height: background.height/15
-                    radius: 20.0;
-                    color: modelData ? "green" : "red"
-                    GCText {
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-                        fontSize: smallSize
-                        text: modelData ? qsTr("Selected") : qsTr("Not Selected")
+        Row {
+            id: labels
+            spacing: 20
+            anchors {
+                top: modeBox.bottom
+                topMargin: 5
+            }
+            visible: modeBox.currentIndex == 0
+            Repeater {
+                model: 2
+                Row {
+                    spacing: 10
+                    Rectangle {
+                        id: label
+                        width: column.width*0.3
+                        height: column.height/3
+                        radius: 20.0;
+                        color: modelData ? "green" : "red"
+                        GCText {
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            anchors.verticalCenter: parent.verticalCenter
+                            fontSize: smallSize
+                            text: modelData ? qsTr("Selected") : qsTr("Not Selected")
+                        }
                     }
                 }
             }
         }
-    }
-    Rectangle {
-        width: parent.width
-        color: "transparent"
-        height: parent.height/1.25-labels.height-modeBox.height
-        anchors {
-            top: labels.bottom
-            topMargin: 5
-        }
-        ListView {
-            anchors.fill: parent
-            visible: modeBox.currentIndex == 0
-            spacing: 5
-            model: Activity.numberOfLevel
-            clip: true
-            delegate: Admin {
-                id: level
-                level: modelData
-                levelOperators: items.levelArr
-                width: background.width
-                height: background.height/10
+        Rectangle {
+            width: parent.width
+            color: "transparent"
+            height: parent.height/1.25-labels.height-modeBox.height
+            anchors {
+                top: labels.bottom
+                topMargin: 5
+            }
+            ListView {
+                anchors.fill: parent
+                visible: modeBox.currentIndex == 0
+                spacing: 5
+                model: Activity.numberOfLevel
+                clip: true
+                delegate: Admin {
+                    id: level
+                    level: modelData
+                    levelOperators: items.levelArr
+                    width: background.width
+                    height: background.height/10
+                }
             }
         }
     }
-
+  }
     property var dataToSave
 
     function setDefaultValues() {
@@ -106,6 +106,7 @@ Item {
         for(var i = 0 ; i < availableModes.length ; i++) {
             if(availableModes[i].value === dataToSave["mode"]) {
                 modeBox.currentIndex = i;
+                console.log(modeBox.currentIndex)
                 break;
             }
         }

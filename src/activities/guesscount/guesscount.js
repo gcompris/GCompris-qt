@@ -51,7 +51,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.currentlevel = currentLevel
     items.sublevel = 1
-    if(items.levels && items.mode === 'builtin') {
+    if(items.levels || items.mode === 'builtin') {
         defaultOperators = items.levels[currentLevel].defaultOperators
         numberOfLevel = items.levels[currentLevel].levelSchema.length
         dataItems = items.levels[currentLevel].dataItems
