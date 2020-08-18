@@ -152,7 +152,7 @@ Image {
         height: 40 * ApplicationInfo.ratio
         radius: height * 0.5
         anchors.horizontalCenter: parent.horizontalCenter
-        anchors.bottom: parent.top
+        anchors.top: parent.bottom
         color: "#80000000"
         visible: showLabel
         rotation: electricalComponent.rotation * -1

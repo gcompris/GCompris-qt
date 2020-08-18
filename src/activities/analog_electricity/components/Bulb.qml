@@ -32,7 +32,7 @@ ElectricalComponent {
     labelText1: qsTr("V = %1V").arg(componentVoltage)
     //: I for current intensity, A for Ampere
     labelText2: qsTr("I = %1A").arg(bulbCurrent)
-    source: Activity.url + "bulb1.png"
+    source: Activity.url + "bulb.svg"
 
     property var nodeVoltages: [0, 0]
     property double componentVoltage: 0
@@ -42,7 +42,7 @@ ElectricalComponent {
     property string resistanceValue: "1000"
     property alias connectionPoints: connectionPoints
     property bool isBroken: false
-    property var connectionPointPosX: [0.2, 0.8]
+    property var connectionPointPosX: [0.1, 0.9]
     property string componentName: "Bulb"
     property var internalNetlistIndex: [0, 0]
     property var externalNetlistIndex: [0, 0]
@@ -114,21 +114,29 @@ ElectricalComponent {
             id: connectionPoint
             TerminalPoint {
                 posX: connectionPointPosX[index]
-                posY: 1
+                posY: 0.9
             }
         }
     }
 
     Image {
+        id: lightFilament
+        source: Activity.url + "bulb_light.svg"
+        anchors.fill: parent
+        fillMode: Image.PreserveAspectFit
+        opacity: lightBulb.opacity > 0 ? 1 : 0
+    }
+
+    Image {
         id: lightBulb
-        source: Activity.url + "bulb_max.png"
+        source: Activity.url + "bulb_max.svg"
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
         opacity: power < maxPower ? power * 10 : 0
     }
 
     function repairComponent() {
-        bulb.source = Activity.url + "bulb1.png";
+        bulb.source = Activity.url + "bulb.svg";
         resistanceValue = "1000";
         isBroken = false;
     }
@@ -155,7 +163,7 @@ ElectricalComponent {
         else {
             lightBulb.opacity = 0;
             // if the bulb is blown, change the resistanceValue and recalculate
-            bulb.source = Activity.url + "bulb_blown.png";
+            bulb.source = Activity.url + "bulb_blown.svg";
             resistanceValue = "100000000";
             isBroken = true;
             Activity.restartTimer();

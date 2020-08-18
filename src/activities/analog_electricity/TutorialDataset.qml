@@ -33,7 +33,7 @@ QtObject {
     }
 
     property var bulb: {
-        'imageName': 'bulb1.png',
+        'imageName': 'bulb.svg',
         'componentSource': 'Bulb.qml',
         'width': 0.2,
         'height': 0.2,

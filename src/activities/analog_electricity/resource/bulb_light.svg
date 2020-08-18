@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="160"
+   height="160"
+   viewBox="0 0 42.33333 42.333333"
+   version="1.1"
+   id="svg2706"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="bulb_light.svg">
+  <defs
+     id="defs2700">
+    <radialGradient
+       gradientTransform="translate(9.7916669e-8,1.0607365e-5)"
+       inkscape:collect="always"
+       xlink:href="#linearGradient1119"
+       id="radialGradient1121"
+       cx="21.166666"
+       cy="271.59998"
+       fx="21.166666"
+       fy="271.59998"
+       r="16.933332"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1119">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.64873415"
+         offset="0"
+         id="stop1115" />
+      <stop
+         id="stop1125"
+         offset="0.62500006"
+         style="stop-color:#efe494;stop-opacity:0" />
+      <stop
+         style="stop-color:#efe496;stop-opacity:0"
+         offset="1"
+         id="stop1117" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#b6a290"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.6219811"
+     inkscape:cx="36.104066"
+     inkscape:cy="66.654771"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:window-width="1884"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid823"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata2703">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+        <dc:date>2020</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Timothée Giet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-254.66665)">
+    <path
+       style="fill:none;stroke:#f8f0ca;stroke-width:0.5291667;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 19.21282,281.37673 c 0.08024,-2.97901 -1.302564,-7.13092 -2.279487,-9.24759 0,-1.05833 0.759994,-1.23499 1.085541,-0.88211 0.325546,0.35288 0.75967,0.88189 0.759763,1.41117 9.3e-5,0.52927 -0.433868,0.52927 -0.433887,-2.5e-4 -1.9e-5,-0.52951 0.434007,-1.58745 0.868121,-1.58733 0.434113,1.2e-4 0.868237,1.0583 0.86833,1.58758 9.3e-5,0.52927 -0.433868,0.52927 -0.433887,-2.5e-4 -1.9e-5,-0.52951 0.434007,-1.58745 0.86812,-1.58733 0.434114,1.2e-4 0.868239,1.0583 0.868331,1.58758 9.3e-5,0.52927 -0.433868,0.52927 -0.433887,-2.5e-4 -1.9e-5,-0.52951 0.434007,-1.58745 0.868121,-1.58733 0.434113,1.2e-4 0.868237,1.0583 0.86833,1.58758 9.3e-5,0.52927 -0.433868,0.52927 -0.433887,-2.5e-4 -1.9e-5,-0.52951 0.434008,-1.58745 0.868121,-1.58733 0.434113,1.2e-4 0.868238,1.0583 0.868331,1.58758 9.2e-5,0.52927 -0.433869,0.52927 -0.433888,-2.5e-4 -1.9e-5,-0.52951 0.434008,-1.05828 0.759585,-1.41091 0.325578,-0.35262 1.08541,-0.17623 1.08541,0.8821 -0.976924,2.11667 -2.422607,6.90334 -2.279488,9.24759"
+       id="path940-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccscsssssssssssssccc" />
+    <circle
+       style="opacity:1;vector-effect:none;fill:url(#radialGradient1121);fill-opacity:1;stroke:none;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path1113"
+       cx="21.166666"
+       cy="271.59998"
+       r="16.933332" />
+  </g>
+</svg>
