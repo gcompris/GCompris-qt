@@ -58,39 +58,45 @@ Item {
 
         Image {
             anchors.centerIn: parent
+            sourceSize.width: widthInColumn
+            sourceSize.height: heightInColumn
             width: widthInColumn
             height: heightInColumn
             fillMode: Image.PreserveAspectFit
+            mipmap: true
+            antialiasing: true
             source: Activity.url + imgName
         }
 
         Image {
             id: tileImage
             anchors.centerIn: parent
-            width: smallWidth
-            height: smallHeight
+            sourceSize.width: fullWidth * 0.5
+            sourceSize.height: fullHeight * 0.5
+            width: widthInColumn
+            height: heightInColumn
             fillMode: Image.PreserveAspectFit
             source: Activity.url + imgName
             mipmap: true
             antialiasing: true
+            opacity: 0
 
-            property double smallWidth: widthInColumn
-            property double smallHeight: heightInColumn
             property double fullWidth: imgWidth * playArea.width
             property double fullHeight: imgHeight * playArea.height
             property QtObject tileImageParent
-            property bool small: true
 
             function toSmall() {
-                width = smallWidth;
-                height = smallHeight;
-                small = true;
+                item.z = 1;
+                opacity = 0;
+                width = widthInColumn;
+                height = heightInColumn;
             }
 
             function toFull() {
+                item.z = 100;
                 width = fullWidth * Activity.currentZoom;
                 height = fullHeight * Activity.currentZoom;
-                small = false;
+                opacity = 1;
             }
 
             MultiPointTouchArea {
@@ -104,9 +110,9 @@ Item {
 
                 onPressed: {
                     tileImage.anchors.centerIn = undefined;
+                    tileImage.toFull();
                     startX = point1.x;
                     startY = point1.y;
-                    tileImage.toFull();
                     toolTip.show(toolTipText);
                     pressedOnce = true;
                     item.selected = true;
