@@ -88,7 +88,7 @@ Item {
                 delegate: Admin {
                     id: level
                     level: modelData
-                    levelOperators: items.levelArr
+                    levelOperators: activityData["levelArr"]
                     width: background.width
                     height: background.height/10
                 }
@@ -106,7 +106,6 @@ Item {
         for(var i = 0 ; i < availableModes.length ; i++) {
             if(availableModes[i].value === dataToSave["mode"]) {
                 modeBox.currentIndex = i;
-                console.log(modeBox.currentIndex)
                 break;
             }
         }

@@ -227,7 +227,6 @@ ActivityBase {
                     items.mode = activityData["mode"]
                     if(activityData["levelArr"] == undefined) {
                         activityData["levelArr"] = Activity.defaultOperators
-                        console.log(activityData["levelArr"])
                     }
                     if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
