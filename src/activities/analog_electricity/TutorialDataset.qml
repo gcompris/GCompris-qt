@@ -24,9 +24,9 @@ import QtQuick 2.6
 
 QtObject {
     property var battery: {
-        'imageName': 'battery.png',
+        'imageName': 'battery.svg',
         'componentSource': 'Battery.qml',
-        'width': 0.2,
+        'width': 0.1,
         'height': 0.2,
         'toolTipText': qsTr("Battery"),
         'type': "v"

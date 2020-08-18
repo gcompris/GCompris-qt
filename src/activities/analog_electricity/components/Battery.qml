@@ -32,13 +32,13 @@ ElectricalComponent {
     labelText1: qsTr("V = %1V").arg(componentVoltage)
     //: I for current intensity, A for Ampere
     labelText2: qsTr("I = %1A").arg(current)
-    source: Activity.url + "battery.png"
+    source: Activity.url + "battery.svg"
 
     property double componentVoltage: 0
     property var nodeVoltages: [0, 0]
     property double current: 0
     property alias connectionPoints: connectionPoints
-    property var connectionPointPosY: [0, 1]
+    property var connectionPointPosY: [0.1, 0.9]
     property var connectionPointType: ["positive", "negative"]
     property string componentName: "Voltage"
     property var externalNetlistIndex: [0, 0]
@@ -72,14 +72,6 @@ ElectricalComponent {
         }
     }
 
-    Image {
-        id: deadBattery
-        source: Activity.url + "battery_dead.png"
-        anchors.fill: parent
-        fillMode: Image.PreserveAspectFit
-        opacity: 0
-    }
-
     function checkConnections() {
         terminalConnected = 0;
         for(var i = 0; i < noOfConnectionPoints; i++) {
@@ -98,9 +90,10 @@ ElectricalComponent {
         current = (Math.abs(current)).toFixed(3);
         // short circuit case
         if(Math.abs(current) > 1) {
-            deadBattery.opacity = 1;
-        } else
-            deadBattery.opacity = 0;
+            battery.source = Activity.url + "battery_dead.svg";
+        } else {
+            battery.source = Activity.url + "battery.svg";
+        }
     }
 
     function initConnections() {
