@@ -50,8 +50,10 @@ Image {
 
     x: posX * parent.width
     y: posY * parent.height
-    width: imgWidth * parent.width
-    height: imgHeight * parent.height
+    sourceSize.width: imgWidth * parent.width
+    sourceSize.height: imgHeight * parent.height
+    width: sourceSize.width
+    height: sourceSize.height
     fillMode: Image.PreserveAspectFit
 
     z: 2
@@ -146,9 +148,11 @@ Image {
     Rectangle {
         id: componentLabel
         z: 100
-        width: 100
-        height: 100
-        anchors.centerIn: parent
+        width: 80 * ApplicationInfo.ratio
+        height: 40 * ApplicationInfo.ratio
+        radius: height * 0.5
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: parent.top
         color: "#80000000"
         visible: showLabel
         rotation: electricalComponent.rotation * -1
