@@ -28,6 +28,7 @@ Item {
     id: activityConfiguration
     property Item background
     property alias modeBox: modeBox
+    property var levelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
@@ -80,6 +81,7 @@ Item {
                 topMargin: 5
             }
             ListView {
+                id: adminModeLevels
                 anchors.fill: parent
                 visible: modeBox.currentIndex == 0
                 spacing: 5
@@ -99,6 +101,13 @@ Item {
     property var dataToSave
 
     function setDefaultValues() {
+
+        if(dataToSave["levelArr"] === undefined) {
+            dataToSave["levelArr"] = activityConfiguration.levelArr
+        }
+        if(dataToSave["levelArr"].length != Activity.numberOfLevel)
+            dataToSave["levelArr"] = activityConfiguration.levelArr
+
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";
             modeBox.currentIndex = 1
@@ -113,6 +122,7 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        dataToSave = {"mode": newMode};
+        var adminLevelArr = dataToSave["levelArr"];
+        dataToSave = {"mode": newMode, "levelArr": adminLevelArr};
     }
 }

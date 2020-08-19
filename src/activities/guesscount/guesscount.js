@@ -54,12 +54,11 @@ function initLevel() {
     if(items.levels || items.mode === 'builtin') {
         defaultOperators = items.levels[currentLevel].defaultOperators
         numberOfLevel = items.levels[currentLevel].levelSchema.length
-        dataItems = items.levels[currentLevel].dataItems
+        dataItems = items.levels.dataItems
         levelSchema = items.levels[currentLevel].levelSchema
         items.data = buildDataset(dataItems, levelSchema)
     }
     else {
-        defaultOperators = Data.defaultOperators
         numberOfLevel = Data.levelSchema.length
         items.data = buildDataset(Data.dataset, Data.levelSchema)
     }
@@ -204,7 +203,7 @@ function equal(levelOperators, array) {
 
 function buildDataset(data, levelSchema) {
     var level = []
-    var levelArr = items.mode == 'builtin' ? defaultOperators : items.levelArr
+    var levelArr = (items.mode == 'builtin' || items.levels) ? defaultOperators : items.levelArr
     var noOfOperators = levelArr[currentLevel].length
     var questions
     for(var j in data[noOfOperators-1]) {
