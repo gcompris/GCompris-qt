@@ -213,14 +213,14 @@ ElectricalComponent {
     function updateValues() {
         bottomCurrent = aMeter3.current;
         if(connectionPoints.itemAt(0).wires.length > 0 && connectionPoints.itemAt(2).wires.length > 0) {
-            componentVoltage = (Math.abs(nodeVoltages[2] - nodeVoltages[0])).toFixed(1);
-            current = (Math.abs(aMeter1.current)).toFixed(2);
+            componentVoltage = (Math.abs(nodeVoltages[2] - nodeVoltages[0])).toFixed(2);
+            current = (Math.abs(aMeter1.current)).toFixed(3);
         } else if(connectionPoints.itemAt(0).wires.length > 0 && connectionPoints.itemAt(1).wires.length > 0) {
-            componentVoltage = (Math.abs(nodeVoltages[1] - nodeVoltages[0])).toFixed(1);
-            current = (Math.abs(aMeter2.current)).toFixed(2);
+            componentVoltage = (Math.abs(nodeVoltages[1] - nodeVoltages[0])).toFixed(2);
+            current = (Math.abs(aMeter2.current)).toFixed(3);
         } else {
-            componentVoltage = (Math.abs(nodeVoltages[2] - nodeVoltages[1])).toFixed(1);
-            current = (Math.abs(bottomCurrent)).toFixed(2);
+            componentVoltage = (Math.abs(nodeVoltages[2] - nodeVoltages[1])).toFixed(2);
+            current = (Math.abs(bottomCurrent)).toFixed(3);
         }
     }
 
