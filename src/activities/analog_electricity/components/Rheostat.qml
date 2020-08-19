@@ -32,22 +32,22 @@ ElectricalComponent {
     labelText1: qsTr("V = %1V").arg(componentVoltage)
     //: I for current intensity, A for Ampere
     labelText2: qsTr("I = %1A").arg(current)
-    source: Activity.url + "resistor_track.png"
+    source: Activity.url + "rheostat.svg"
 
     property var nodeVoltages: [0, 0, 0]
     property double componentVoltage: 0
     property double current: 0
     property double bottomCurrent: 0
     property int wiperY: 0
-    property double topResistance: Math.max(0.001, 1000 * (wiperY / wiperArea.height))
-    property double bottomResistance: Math.max(0.001, 1000 - topResistance)
+    property double topResistance: Math.max(0, 1000 * (wiperY / wiperArea.wiperLimit))
+    property double bottomResistance: Math.max(0, 1000 - topResistance)
     property string topResistanceTxt: topResistance.toString()
     property string bottomResistanceTxt: bottomResistance.toString()
     onBottomResistanceTxtChanged: Activity.restartTimer();
     property string componentName: "Rheostat"
     property alias connectionPoints: connectionPoints
-    property var connectionPointPosX: [0, 1, 0]
-    property var connectionPointPosY: [0, 0.5, 1]
+    property var connectionPointPosX: [0.335, 0.83, 0.335]
+    property var connectionPointPosY: [0.1, 0.5, 0.9]
     property var internalNetlistIndex: [0, 0, 0]
     property var externalNetlistIndex: [0, 0, 0]
     property var netlistModel:
@@ -69,6 +69,7 @@ ElectricalComponent {
     Item {
         id: bottomResistor
         property int jsonNumber: 0
+        property double current: 0
         property var netlistModel:
         [
             "r",
@@ -167,25 +168,29 @@ ElectricalComponent {
 
     Item {
         id: wiperArea
-        width: parent.width
-        height: parent.height * 0.6
+        width: parent.width * 0.5
+        height: parent.height * 0.4
         anchors.centerIn: parent
+        anchors.horizontalCenterOffset: width * -0.33
+        property double wiperLimit: wiperArea.height * 0.8
         Rectangle {
             id: wiper
-            width: rheostat.paintedWidth * 1.1
-            height: rheostat.paintedHeight * 0.1
+            width: parent.width * 1.1
+            height: wiperArea.height * 0.2
             anchors.horizontalCenter: parent.horizontalCenter
             color: "#373737"
             radius: height * 0.2
             y: 0
             MouseArea {
-                anchors.fill: parent
+                width: parent.width
+                height: parent.height * 2
+                anchors.centerIn: parent
                 drag.target: wiper
                 onPositionChanged: {
                     if(wiper.y < 0)
                         wiper.y = 0;
-                    if(wiper.y > wiperArea.height)
-                        wiper.y = wiperArea.height;
+                    if(wiper.y > wiperArea.wiperLimit)
+                        wiper.y = wiperArea.wiperLimit;
                     wiperY = wiper.y;
                 }
             }
@@ -245,6 +250,9 @@ ElectricalComponent {
 
         netlistItem = rheostat.netlistModel;
         Activity.netlistComponents.push(rheostat);
+        if(netlistItem[2].r === "0") {
+            Activity.vSourcesList.push(rheostat);
+        }
         netlistItem[2].name = componentName;
         netlistItem[2]._json = Activity.netlist.length;
         netlistItem[3][0] = rheostat.internalNetlistIndex[0];
@@ -253,6 +261,9 @@ ElectricalComponent {
 
         netlistItem = bottomResistor.netlistModel;
         Activity.netlistComponents.push(bottomResistor);
+        if(netlistItem[2].r === "0") {
+            Activity.vSourcesList.push(bottomResistor);
+        }
         netlistItem[2].name = componentName + "-bottom";
         netlistItem[2]._json = Activity.netlist.length;
         netlistItem[3][0] = rheostat.internalNetlistIndex[1];

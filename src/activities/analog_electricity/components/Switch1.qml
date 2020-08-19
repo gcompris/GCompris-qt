@@ -28,14 +28,13 @@ ElectricalComponent {
     terminalSize: 0.2
     noOfConnectionPoints: 2
     information: qsTr("Switch can connect or disconnect the conducting path in an electrical circuit.")
-    source: Activity.url + "switch1_off.png"
+    source: Activity.url + "switch_off.svg"
 
     property double componentVoltage: 0
     property double current: 0
-    property string resistanceValueOn: "0.001"
-    property string resistanceValueOff: "100000000"
+    property bool switchOn: false
     property alias connectionPoints: connectionPoints
-    property var connectionPointPosX: [0, 1]
+    property var connectionPointPosX: [0.1, 0.9]
     property string componentName: "Switch1"
     property var externalNetlistIndex: [0, 0]
     property var netlistModel:
@@ -45,7 +44,7 @@ ElectricalComponent {
         ],
         {
             "name": componentName,
-            "r": resistanceValueOff,
+            "r": "0",
             "_json_": 0
         },
         [
@@ -62,30 +61,25 @@ ElectricalComponent {
             id: connectionPoint
             TerminalPoint {
                 posX: connectionPointPosX[index]
-                posY: 1
+                posY: 0.75
             }
         }
     }
 
-    Image {
-        id: switchButton
-        source: Activity.url + "switchButton.png"
+    MouseArea {
         height: parent.height * 0.5
-        width: parent.width * 0.3
+        width: parent.width * 0.25
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: parent.top
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                if(switch1.source == Activity.url + "switch1_off.png") {
-                    switch1.source = Activity.url + "switch1_on.png";
-                    switch1.netlistModel[2].r = resistanceValueOn;
-                } else {
-                    switch1.source = Activity.url + "switch1_off.png";
-                    switch1.netlistModel[2].r = resistanceValueOff;
-                }
-                Activity.restartTimer();
+        onClicked: {
+            if(switch1.source == Activity.url + "switch_off.svg") {
+                switch1.source = Activity.url + "switch_on.svg";
+                switchOn = true;
+            } else {
+                switch1.source = Activity.url + "switch_off.svg";
+                switchOn = false;
             }
+            Activity.restartTimer();
         }
     }
 
@@ -107,13 +101,16 @@ ElectricalComponent {
     }
 
     function addToNetlist() {
-        var netlistItem = switch1.netlistModel;
-        Activity.netlistComponents.push(switch1);
-        netlistItem[2].name = componentName;
-        netlistItem[2]._json = Activity.netlist.length;
-        netlistItem[3][0] = switch1.externalNetlistIndex[0];
-        netlistItem[3][1] = switch1.externalNetlistIndex[1];
-        Activity.netlist.push(netlistItem);
+        if(switchOn) {
+            var netlistItem = switch1.netlistModel;
+            Activity.netlistComponents.push(switch1);
+            Activity.vSourcesList.push(switch1);
+            netlistItem[2].name = componentName;
+            netlistItem[2]._json = Activity.netlist.length;
+            netlistItem[3][0] = switch1.externalNetlistIndex[0];
+            netlistItem[3][1] = switch1.externalNetlistIndex[1];
+            Activity.netlist.push(netlistItem);
+        }
     }
 }
 

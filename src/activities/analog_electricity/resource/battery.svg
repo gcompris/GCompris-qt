@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.1554953"
-     inkscape:cx="-183.20489"
-     inkscape:cy="244.19915"
+     inkscape:zoom="3.2682342"
+     inkscape:cx="-73.176675"
+     inkscape:cy="123.90879"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2020</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -86,7 +86,7 @@
        style="opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;stroke:none;stroke-width:0.23151045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path825"
        cx="8.4666672"
-       cy="258.37088"
+       cy="258.90005"
        r="3.7041671" />
     <rect
        style="opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;stroke:none;stroke-width:0.15566719;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -99,7 +99,7 @@
        style="opacity:1;vector-effect:none;fill:#535353;fill-opacity:1;stroke:none;stroke-width:0.34726563;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path831"
        cx="8.4666672"
-       cy="258.37088"
+       cy="258.90005"
        r="2.778125" />
     <path
        style="opacity:1;vector-effect:none;fill:#2a2a2a;fill-opacity:1;stroke:#2a2a2a;stroke-width:0.52916664;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -148,13 +148,13 @@
        style="opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;stroke:none;stroke-width:0.23151045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path825-7"
        cx="8.4666672"
-       cy="293.29578"
+       cy="292.7666"
        r="3.7041671" />
     <circle
        style="opacity:1;vector-effect:none;fill:#535353;fill-opacity:1;stroke:none;stroke-width:0.34726563;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path831-0"
        cx="8.4666672"
-       cy="293.29578"
+       cy="292.7666"
        r="2.778125" />
   </g>
 </svg>

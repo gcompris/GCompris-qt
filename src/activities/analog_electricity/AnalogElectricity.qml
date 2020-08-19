@@ -228,6 +228,9 @@ ActivityBase {
                        background.height * 4 - (bar.height * 1.1) :
                        background.height * 4 - (bar.height * 1.1) - items.toolsMargin
 
+            property double sizeMultiplier:
+                playArea.width > playArea.height ? playArea.width : playArea.height
+
             PinchArea {
                 id: pinchZoom
                 anchors.fill: parent

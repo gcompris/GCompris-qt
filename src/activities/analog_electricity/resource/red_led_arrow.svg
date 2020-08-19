@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="160"
-   height="64"
-   viewBox="0 0 42.333332 16.933334"
+   height="96"
+   viewBox="0 0 42.33333 25.400001"
    version="1.1"
    id="svg2706"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="connection.svg">
+   sodipodi:docname="red_led_arrow.svg">
   <defs
      id="defs2700" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.2682342"
-     inkscape:cx="-3.6717041"
-     inkscape:cy="-2.9951601"
+     inkscape:zoom="2.3109906"
+     inkscape:cx="172.73276"
+     inkscape:cy="-32.54278"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -39,7 +39,7 @@
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
-       id="grid815"
+       id="grid812"
        empspacing="4" />
   </sodipodi:namedview>
   <metadata
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2020</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -81,14 +81,11 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-280.06664)">
-    <rect
-       style="opacity:1;vector-effect:none;fill:#f2f2f2;fill-opacity:0.5;stroke:#808080;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.50196081"
-       id="rect817"
-       width="40.216667"
-       height="14.816667"
-       x="1.0583333"
-       y="281.12497"
-       ry="7.4083333" />
+     transform="translate(0,-271.59998)">
+    <path
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#373737;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 15.664513,290.12081 h 6.085417 l -0.79375,-1.5875 6.35,2.38125 -6.879167,2.38125 1.058333,-1.85209 h -6.614583 z"
+       id="path845"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

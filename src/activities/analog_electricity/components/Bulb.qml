@@ -39,7 +39,6 @@ ElectricalComponent {
     property double power: 0
     property double maxPower: 0.11
     property double bulbCurrent: 0
-    property string resistanceValue: "1000"
     property alias connectionPoints: connectionPoints
     property bool isBroken: false
     property var connectionPointPosX: [0.1, 0.9]
@@ -53,7 +52,7 @@ ElectricalComponent {
         ],
         {
             "name": componentName,
-            "r": bulb.resistanceValue,
+            "r": "1000",
             "_json_": 0
         },
         [
@@ -123,6 +122,8 @@ ElectricalComponent {
         id: lightFilament
         source: Activity.url + "bulb_light.svg"
         anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
         fillMode: Image.PreserveAspectFit
         opacity: lightBulb.opacity > 0 ? 1 : 0
     }
@@ -131,13 +132,14 @@ ElectricalComponent {
         id: lightBulb
         source: Activity.url + "bulb_max.svg"
         anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
         fillMode: Image.PreserveAspectFit
         opacity: power < maxPower ? power * 10 : 0
     }
 
     function repairComponent() {
         bulb.source = Activity.url + "bulb.svg";
-        resistanceValue = "1000";
         isBroken = false;
     }
 
@@ -147,7 +149,7 @@ ElectricalComponent {
             if(connectionPoints.itemAt(i).wires.length > 0)
                 terminalConnected += 1;
         }
-        if(terminalConnected >= 2) {
+        if(terminalConnected >= 2 && !isBroken) {
             bulb.showLabel = true;
         } else {
             bulb.showLabel = false;
@@ -162,9 +164,10 @@ ElectricalComponent {
             lightBulb.opacity  = power * 10;
         else {
             lightBulb.opacity = 0;
-            // if the bulb is blown, change the resistanceValue and recalculate
+            // if the bulb is blown, set its current to 0, hide its label and don't push it to the netlist
+            bulb.showLabel = false;
+            bulbCurrent = 0;
             bulb.source = Activity.url + "bulb_blown.svg";
-            resistanceValue = "100000000";
             isBroken = true;
             Activity.restartTimer();
         }
@@ -182,31 +185,33 @@ ElectricalComponent {
     }
 
     function addToNetlist() {
-        var netlistItem = aMeter1.netlistModel;
-        Activity.netlistComponents.push(aMeter1);
-        Activity.vSourcesList.push(aMeter1);
-        netlistItem[2].name = "aMeter1-" + componentName;
-        netlistItem[2]._json = Activity.netlist.length;
-        netlistItem[3][0] = bulb.externalNetlistIndex[0];
-        netlistItem[3][1] = bulb.internalNetlistIndex[0];
-        Activity.netlist.push(netlistItem);
+        if(!isBroken) {
+            var netlistItem = aMeter1.netlistModel;
+            Activity.netlistComponents.push(aMeter1);
+            Activity.vSourcesList.push(aMeter1);
+            netlistItem[2].name = "aMeter1-" + componentName;
+            netlistItem[2]._json = Activity.netlist.length;
+            netlistItem[3][0] = bulb.externalNetlistIndex[0];
+            netlistItem[3][1] = bulb.internalNetlistIndex[0];
+            Activity.netlist.push(netlistItem);
 
-        netlistItem = bulb.netlistModel;
-        Activity.netlistComponents.push(bulb);
-        netlistItem[2].name = componentName;
-        netlistItem[2]._json = Activity.netlist.length;
-        netlistItem[3][0] = bulb.internalNetlistIndex[0];
-        netlistItem[3][1] = bulb.internalNetlistIndex[1];
-        Activity.netlist.push(netlistItem);
+            netlistItem = bulb.netlistModel;
+            Activity.netlistComponents.push(bulb);
+            netlistItem[2].name = componentName;
+            netlistItem[2]._json = Activity.netlist.length;
+            netlistItem[3][0] = bulb.internalNetlistIndex[0];
+            netlistItem[3][1] = bulb.internalNetlistIndex[1];
+            Activity.netlist.push(netlistItem);
 
-        netlistItem = aMeter2.netlistModel;
-        Activity.netlistComponents.push(aMeter2);
-        Activity.vSourcesList.push(aMeter2);
-        netlistItem[2].name = "aMeter2-" + componentName;
-        netlistItem[2]._json = Activity.netlist.length;
-        netlistItem[3][0] = bulb.internalNetlistIndex[1];
-        netlistItem[3][1] = bulb.externalNetlistIndex[1];
-        Activity.netlist.push(netlistItem);
+            netlistItem = aMeter2.netlistModel;
+            Activity.netlistComponents.push(aMeter2);
+            Activity.vSourcesList.push(aMeter2);
+            netlistItem[2].name = "aMeter2-" + componentName;
+            netlistItem[2]._json = Activity.netlist.length;
+            netlistItem[3][0] = bulb.internalNetlistIndex[1];
+            netlistItem[3][1] = bulb.externalNetlistIndex[1];
+            Activity.netlist.push(netlistItem);
+        }
     }
 }
 

@@ -28,17 +28,16 @@ ElectricalComponent {
     terminalSize: 0.2
     noOfConnectionPoints: 2
     information: qsTr("Red LED converts electrical energy into red light energy. It can glow only if the current flow is in the direction of the arrow. Electrical energy more than a certain limit can break it.")
-    source: Activity.url + "red_led_off.png"
+    source: Activity.url + "red_led_off.svg"
 
     property var nodeVoltages: [0, 0]
     property double componentVoltage: 0
     property double power: 0
     property double powerThreshold: 0.01 //in W
     property double powerMax: 0.08
-    property string resistanceValue: "19" //in Ohm
     property alias connectionPoints: connectionPoints
     property bool isBroken: false
-    property var connectionPointPosX: [0.2, 0.8]
+    property var connectionPointPosX: [0.1, 0.9]
     property string componentName: "RedLed"
     property var internalNetlistIndex: [0, 0]
     property var externalNetlistIndex: [0, 0]
@@ -69,7 +68,7 @@ ElectricalComponent {
             ],
             {
                 "name": "resistor-",
-                "r": redLed.resistanceValue,
+                "r": "19",
                 "_json_": 0
             },
             [
@@ -108,22 +107,33 @@ ElectricalComponent {
             id: connectionPoint
             TerminalPoint {
                 posX: connectionPointPosX[index]
-                posY: 1
+                posY: 0.85
             }
         }
     }
 
     Image {
         id: ledLight
-        source: Activity.url + "red_led_on.png";
+        source: Activity.url + "red_led_on.svg"
         anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
         fillMode: Image.PreserveAspectFit
         opacity: 0
     }
 
+    Image {
+        id: ledArrow
+        source: isBroken ? Activity.url + "red_led_arrowBroken.svg" : Activity.url + "red_led_arrow.svg"
+        anchors.fill: parent
+        sourceSize.width: width
+        sourceSize.height: height
+        fillMode: Image.PreserveAspectFit
+        opacity: 1
+    }
+
     function repairComponent() {
-        redLed.source = Activity.url + "red_led_off.png";
-        resistanceValue = "19";
+        redLed.source = Activity.url + "red_led_off.svg";
         isBroken = false;
     }
 
@@ -143,8 +153,7 @@ ElectricalComponent {
             ledLight.opacity = 0;
         } else if(power >= powerMax) {
             ledLight.opacity = 0;
-            redLed.source = Activity.url + "red_led_broken.png";
-            redLed.resistanceValue = "100000000";
+            redLed.source = Activity.url + "red_led_broken.svg";
             isBroken = true;
             Activity.restartTimer();
         }
@@ -162,29 +171,31 @@ ElectricalComponent {
     }
 
     function addToNetlist() {
-        var netlistItem = redLed.netlistModel;
-        Activity.netlistComponents.push(redLed);
-        netlistItem[2].name = componentName;
-        netlistItem[2]._json = Activity.netlist.length;
-        netlistItem[3][0] = redLed.externalNetlistIndex[0];
-        netlistItem[3][1] = redLed.internalNetlistIndex[0];
-        Activity.netlist.push(netlistItem);
+        if(!isBroken) {
+            var netlistItem = redLed.netlistModel;
+            Activity.netlistComponents.push(redLed);
+            netlistItem[2].name = componentName;
+            netlistItem[2]._json = Activity.netlist.length;
+            netlistItem[3][0] = redLed.externalNetlistIndex[0];
+            netlistItem[3][1] = redLed.internalNetlistIndex[0];
+            Activity.netlist.push(netlistItem);
 
-        netlistItem = resistor.netlistModel;
-        Activity.netlistComponents.push(resistor);
-        netlistItem[2].name = "resistor-" + componentName;
-        netlistItem[2]._json = Activity.netlist.length;
-        netlistItem[3][0] = redLed.internalNetlistIndex[0];
-        netlistItem[3][1] = redLed.internalNetlistIndex[1];
-        Activity.netlist.push(netlistItem);
+            netlistItem = resistor.netlistModel;
+            Activity.netlistComponents.push(resistor);
+            netlistItem[2].name = "resistor-" + componentName;
+            netlistItem[2]._json = Activity.netlist.length;
+            netlistItem[3][0] = redLed.internalNetlistIndex[0];
+            netlistItem[3][1] = redLed.internalNetlistIndex[1];
+            Activity.netlist.push(netlistItem);
 
-        netlistItem = vSource.netlistModel;
-        Activity.netlistComponents.push(vSource);
-        Activity.vSourcesList.push(vSource);
-        netlistItem[2].name = "vSource-" + componentName;
-        netlistItem[2]._json = Activity.netlist.length;
-        netlistItem[3][0] = redLed.internalNetlistIndex[1]; //positive terminal to the resistor
-        netlistItem[3][1] = redLed.externalNetlistIndex[1];
-        Activity.netlist.push(netlistItem);
+            netlistItem = vSource.netlistModel;
+            Activity.netlistComponents.push(vSource);
+            Activity.vSourcesList.push(vSource);
+            netlistItem[2].name = "vSource-" + componentName;
+            netlistItem[2]._json = Activity.netlist.length;
+            netlistItem[3][0] = redLed.internalNetlistIndex[1]; //positive terminal to the resistor
+            netlistItem[3][1] = redLed.externalNetlistIndex[1];
+            Activity.netlist.push(netlistItem);
+        }
     }
 }

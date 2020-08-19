@@ -50,8 +50,8 @@ Image {
 
     x: posX * parent.width
     y: posY * parent.height
-    sourceSize.width: imgWidth * parent.width
-    sourceSize.height: imgHeight * parent.height
+    sourceSize.width: imgWidth * parent.sizeMultiplier
+    sourceSize.height: imgHeight * parent.sizeMultiplier
     width: sourceSize.width
     height: sourceSize.height
     fillMode: Image.PreserveAspectFit

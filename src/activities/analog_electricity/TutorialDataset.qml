@@ -26,8 +26,8 @@ QtObject {
     property var battery: {
         'imageName': 'battery.svg',
         'componentSource': 'Battery.qml',
-        'width': 0.1,
-        'height': 0.2,
+        'width': 0.06,
+        'height': 0.15,
         'toolTipText': qsTr("Battery"),
         'type': "v"
     }
@@ -35,61 +35,61 @@ QtObject {
     property var bulb: {
         'imageName': 'bulb.svg',
         'componentSource': 'Bulb.qml',
-        'width': 0.2,
-        'height': 0.2,
+        'width': 0.15,
+        'height': 0.15,
         'toolTipText': qsTr("Bulb"),
         'type': "r"
     }
 
     property var switch1: {
-        'imageName': 'switch_icon.png',
+        'imageName': 'switch_off.svg',
         'componentSource': 'Switch1.qml',
-        'width': 0.2,
-        'height': 0.2,
+        'width': 0.15,
+        'height': 0.06,
         'toolTipText': qsTr("Switch"),
         'type': "r"
     }
 
     property var switch2: {
-        'imageName': 'switch2_icon.png',
+        'imageName': 'switch2_off.svg',
         'componentSource': 'Switch2.qml',
-        'width': 0.2,
-        'height': 0.2,
+        'width': 0.15,
+        'height': 0.09,
         'toolTipText': qsTr("3 points switch"),
         'type': "r"
     }
 
     property var connection: {
-        'imageName': 'connection.svg',
+        'imageName': 'connection_icon.svg',
         'componentSource': 'Connection.qml',
-        'width': 0.2,
-        'height': 0.2,
+        'width': 0.15,
+        'height': 0.06,
         'toolTipText': qsTr("Simple connector")
     }
 
     property var rheostat: {
-        'imageName': 'resistor_track_icon.png',
+        'imageName': 'rheostat_icon.svg',
         'componentSource': 'Rheostat.qml',
-        'width': 0.2,
-        'height': 0.2,
+        'width': 0.09,
+        'height': 0.15,
         'toolTipText': qsTr("Rheostat"),
         'type': "r"
     }
 
     property var resistor: {
-        'imageName': 'resistor.png',
+        'imageName': 'resistor.svg',
         'componentSource': 'Resistor.qml',
-        'width': 0.2,
-        'height': 0.2,
+        'width': 0.15,
+        'height': 0.06,
         'toolTipText': qsTr("Resistor"),
         'type': "r"
     }
 
     property var redLed: {
-        'imageName': 'red_led_icon.png',
+        'imageName': 'red_led_off.svg',
         'componentSource': 'RedLed.qml',
-        'width': 0.2,
-        'height': 0.2,
+        'width': 0.15,
+        'height': 0.09,
         'toolTipText': qsTr("Red LED"),
         'type': "d"
     }

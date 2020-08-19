@@ -81,8 +81,8 @@ Item {
             antialiasing: true
             opacity: 0
 
-            property double fullWidth: imgWidth * playArea.width
-            property double fullHeight: imgHeight * playArea.height
+            property double fullWidth: imgWidth * playArea.sizeMultiplier
+            property double fullHeight: imgHeight * playArea.sizeMultiplier
             property QtObject tileImageParent
 
             function toSmall() {

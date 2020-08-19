@@ -15,7 +15,7 @@
    version="1.1"
    id="svg2706"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="connection.svg">
+   sodipodi:docname="connection_icon.svg">
   <defs
      id="defs2700" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.2682342"
-     inkscape:cx="-3.6717041"
+     inkscape:cx="65.478787"
      inkscape:cy="-2.9951601"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>2020</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -83,12 +83,24 @@
      id="layer1"
      transform="translate(0,-280.06664)">
     <rect
-       style="opacity:1;vector-effect:none;fill:#f2f2f2;fill-opacity:0.5;stroke:#808080;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.50196081"
+       style="opacity:1;vector-effect:none;fill:#f2f2f2;fill-opacity:0.5;stroke:#808080;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.5"
        id="rect817"
        width="40.216667"
        height="14.816667"
        x="1.0583333"
        y="281.12497"
        ry="7.4083333" />
+    <circle
+       style="opacity:1;vector-effect:none;fill:#373737;fill-opacity:1;stroke:none;stroke-width:0.23151045;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path825"
+       cx="21.166666"
+       cy="288.53329"
+       r="3.7041671" />
+    <circle
+       style="opacity:1;vector-effect:none;fill:#535353;fill-opacity:1;stroke:none;stroke-width:0.34726563;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path831"
+       cx="21.166666"
+       cy="288.53329"
+       r="2.778125" />
   </g>
 </svg>
