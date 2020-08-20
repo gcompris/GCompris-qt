@@ -28,7 +28,6 @@ Item {
     id: activityConfiguration
     property Item background
     property alias modeBox: modeBox
-    property var levelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
@@ -90,7 +89,7 @@ Item {
                 delegate: Admin {
                     id: level
                     level: modelData
-                    levelOperators: activityData["levelArr"]
+                    levelOperators: Activity.saveLevelArr()
                     width: background.width
                     height: background.height/10
                 }
@@ -101,12 +100,6 @@ Item {
     property var dataToSave
 
     function setDefaultValues() {
-
-        if(dataToSave["levelArr"] === undefined) {
-            dataToSave["levelArr"] = activityConfiguration.levelArr
-        }
-        if(dataToSave["levelArr"].length != Activity.numberOfLevel)
-            dataToSave["levelArr"] = activityConfiguration.levelArr
 
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";
@@ -122,7 +115,6 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        var adminLevelArr = dataToSave["levelArr"];
-        dataToSave = {"mode": newMode, "levelArr": adminLevelArr};
+        dataToSave = {"mode": newMode, "levelArr": Activity.saveLevelArr()};
     }
 }

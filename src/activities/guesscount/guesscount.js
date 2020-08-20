@@ -54,7 +54,7 @@ function initLevel() {
     if(items.levels || items.mode === 'builtin') {
         defaultOperators = items.levels[currentLevel].defaultOperators
         numberOfLevel = items.levels[currentLevel].levelSchema.length
-        dataItems = items.levels.dataItems
+        dataItems = items.levels[currentLevel].dataItems
         levelSchema = items.levels[currentLevel].levelSchema
         items.data = buildDataset(dataItems, levelSchema)
     }
@@ -168,6 +168,10 @@ function checkAnswer(row) {
 
 function sync(array, level) {
     items.levelArr = array
+}
+
+function saveLevelArr() {
+   return items.levelArr
 }
 
 function check(operator, array) {

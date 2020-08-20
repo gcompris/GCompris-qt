@@ -225,13 +225,16 @@ ActivityBase {
             onLoadData: {
                 if(activityData && activityData["mode"] ) {
                     items.mode = activityData["mode"]
-                    if(activityData && activityData["levelArr"]) {
-                        items.levelArr = activityData["levelArr"]
-                    }
-                    else {
-                        items.mode='builtin'
+                    if(activityData["levelArr"] == undefined)
+                        activityData["levelArr"] = Activity.defaultOperators
+                    if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
-                    }
+                    else
+                        items.levelArr = activityData["levelArr"]
+                }
+                else {
+                    items.mode='builtin'
+                    items.levelArr = Activity.defaultOperators
                 }
             }
             onStartActivity: {
