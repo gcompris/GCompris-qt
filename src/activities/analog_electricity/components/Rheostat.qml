@@ -174,11 +174,33 @@ ElectricalComponent {
         anchors.horizontalCenterOffset: width * -0.33
         property double wiperLimit: wiperArea.height * 0.8
         Rectangle {
+            id: internalWire
+            height: wiper.height * 0.4
+            radius: height * 0.5
+            color: "#535353"
+            transformOrigin: Item.Left
+
+            property double wiperXCenter: wiper.x + wiper.width * 0.5
+            property double wiperYCenter: wiper.y + wiper.height * 0.5
+            property double pointXCenter: wiperXCenter + wiperArea.width
+            property double pointYCenter: wiperArea.height * 0.5
+            property double rectangleWidth: pointXCenter - wiperXCenter
+            property double rectangleHeight: pointYCenter - wiperYCenter
+
+            x: wiperXCenter
+            y: wiperYCenter - radius
+            width: Math.sqrt(Math.pow(rectangleWidth, 2) + Math.pow(Math.abs(rectangleHeight), 2))
+            rotation: rectangleHeight >= 0 ? 90 - (Math.atan(rectangleWidth / rectangleHeight) * 57.3) :
+                                             (Math.atan(rectangleWidth / rectangleHeight) * -57.3) - 90
+        }
+        Rectangle {
             id: wiper
             width: parent.width * 1.1
             height: wiperArea.height * 0.2
             anchors.horizontalCenter: parent.horizontalCenter
-            color: "#373737"
+            color: "#535353"
+            border.width: height * 0.2
+            border.color: "#373737"
             radius: height * 0.2
             y: 0
             MouseArea {
@@ -194,6 +216,13 @@ ElectricalComponent {
                     wiperY = wiper.y;
                 }
             }
+        }
+        Rectangle {
+            height: internalWire.height * 1.5
+            width: height
+            radius: height * 0.5
+            anchors.centerIn: wiper
+            color: "#888888"
         }
     }
 
