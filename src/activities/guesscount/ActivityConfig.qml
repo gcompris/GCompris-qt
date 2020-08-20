@@ -90,8 +90,8 @@ Item {
                     id: level
                     level: modelData
                     levelOperators: Activity.saveLevelArr()
-                    width: background.width
-                    height: background.height/10
+                    width: activityConfiguration.width
+                    height: activityConfiguration.height/10
                 }
             }
         }
