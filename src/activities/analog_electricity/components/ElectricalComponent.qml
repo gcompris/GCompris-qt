@@ -157,19 +157,16 @@ Image {
         visible: showLabel
         rotation: electricalComponent.rotation * -1
         GCText {
-            anchors.top: parent.top
-            anchors.horizontalCenter: parent.horizontalCenter
-            fontSize: 10
+            anchors.centerIn: parent
+            width: parent.width
+            height: parent.height
+            font.pointSize: NaN  // need to clear font.pointSize explicitly
+            fontSizeMode: Text.Fit
+            minimumPixelSize: 10
+            font.pixelSize: componentLabel.width * 0.2
             color: "white"
-            text: labelText1
-            horizontalAlignment: Text.AlignHCenter
-        }
-        GCText {
-            anchors.bottom: parent.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            fontSize: 10
-            color: "white"
-            text: labelText2
+            text: labelText1 + "<br>" + labelText2
+            verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
     }
