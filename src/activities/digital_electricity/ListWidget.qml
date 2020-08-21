@@ -76,15 +76,6 @@ Item {
             refreshInputComponentsContainer()
         }
 
-        add: Transition {
-            NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 400 }
-            NumberAnimation { property: "scale"; from: 0; to: 1.0; duration: 400 }
-        }
-
-        move: Transition {
-            NumberAnimation { properties: "x,y"; duration: 400; easing.type: Easing.OutBounce }
-        }
-
         //For setting navigation buttons
         function setNextNavigation() {
             nextNavigation = 0
@@ -112,7 +103,7 @@ Item {
             sourceSize.height: height
             source: Activity.url + "tools.svg"
             fillMode: Image.PreserveAspectFit
-            
+
             property bool showToolBar: false
 
             MouseArea {
@@ -299,7 +290,7 @@ Item {
                         sourceSize.height: height
                         source: Activity.url + "zoomIn.svg"
                         fillMode: Image.PreserveAspectFit
-                        
+
                         MouseArea {
                             anchors.fill: parent
                             onClicked: Activity.zoomIn()
