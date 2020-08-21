@@ -30,10 +30,8 @@ Item {
     height: tile.height
 
     property string source: imgName
-    property double heightInColumn
-    property double widthInColumn
-    property double tileWidth
-    property double tileHeight
+    property double tileSize
+    property double imgSize: tileSize * 0.85
     property QtObject answer: tileImage.parent
     property bool selected: false
     property alias dropStatus: tileImage.dropStatus
@@ -66,16 +64,16 @@ Item {
             updateOkButton()
         }
     }
-    
+
     Rectangle {
         id: tile
-        width: tileWidth
-        height: tileHeight
+        width: tileSize
+        height: tileSize
         color: (parent.selected && tileImage.parent == tile) ? "#33FF294D" : "transparent"
         border.color: (parent.selected && tileImage.parent == tile) ? "white" : "transparent"
         border.width: 3
         radius: 2
-        
+
         property double xCenter: tile.x + tile.width / 2
         property double yCenter: tile.y + tile.height / 2
 
@@ -87,8 +85,8 @@ Item {
             fillMode: Image.PreserveAspectFit
             source: Activity.imagesUrl + imgName
 
-            property double smallWidth: Activity.glowEnabled ? widthInColumn * 1.1 : widthInColumn
-            property double smallHeight: Activity.glowEnabled ? heightInColumn * 1.1 : heightInColumn
+            property double smallWidth: Activity.glowEnabled ? imgSize * 1.1 : imgSize
+            property double smallHeight: Activity.glowEnabled ? imgSize * 1.1 : imgSize
             property double fullWidth: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ?
                                            tileImage.sourceSize.width :
                                            backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width)
@@ -184,7 +182,7 @@ Item {
                     Activity.highLightSpot(getClosestSpot(), tileImage)
                 }
 
-                onReleased: {                                       
+                onReleased: {
                     if (tileImage.pressedOnce) {
                         tileImage.opacity = 1
                         tileImage.pressedOnce = false
@@ -233,12 +231,12 @@ Item {
                         tileImage.dropStatus = 0
                 }
             }
-            
+
             Image {
                 id: wrongAnswer
                 anchors.centerIn: parent
-                height: heightInColumn * 0.3
-                width: widthInColumn * 0.3
+                height: imgSize * 0.3
+                width: imgSize * 0.3
                 fillMode: Image.PreserveAspectFit
                 z: 10
                 source:"qrc:/gcompris/src/activities/babymatch/resource/error.svg"
@@ -246,7 +244,7 @@ Item {
             }
 
         }
-        
+
         Glow {
             id: tileImageGlow
             parent: tileImage.parent

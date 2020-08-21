@@ -100,15 +100,6 @@ Item {
         property alias ok: ok
 
         onNbDisplayedGroupChanged: correctDisplayedGroup()
-        
-        add: Transition {
-            NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 400 }
-            NumberAnimation { property: "scale"; from: 0; to: 1.0; duration: 400 }
-        }
-
-        move: Transition {
-            NumberAnimation { properties: "x,y"; duration: 400; easing.type: Easing.OutBounce }
-        }
 
         // For correcting values of Displayed Groups when height or width is changed
         function correctDisplayedGroup() {
@@ -218,10 +209,7 @@ Item {
             DragListItem {
                 id: contactsDelegate
                 z: 1
-                heightInColumn: view.iconSize * 0.85
-                widthInColumn: view.iconSize * 0.85
-                tileWidth: view.iconSize
-                tileHeight: view.iconSize
+                tileSize: view.iconSize
                 visible: view.currentDisplayedGroup * view.nbItemsByGroup <= index &&
                          index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup-1
 
