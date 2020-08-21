@@ -227,7 +227,7 @@ ActivityBase {
                 if(activityData && activityData["mode"] ) {
                     items.mode = activityData["mode"]
                     if(activityData["levelArr"] == undefined)
-                        activityData["levelArr"] = (items.levels || items.mode == "builtin") ? items.levels[Activity.currentLevel].defaultOperators : Data.defaultOperators
+                        activityData["levelArr"] = Activity.defaultOperators
                     if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
                     else

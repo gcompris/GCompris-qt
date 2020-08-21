@@ -29,6 +29,7 @@ Item {
     property Item background
     property var defaultOperators: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     property alias modeBox: modeBox
+    property int numberOfLevel: 8
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
@@ -85,7 +86,7 @@ Item {
                 anchors.fill: parent
                 visible: modeBox.currentIndex == 0
                 spacing: 5
-                model: 8
+                model: activityConfiguration.numberOfLevel
                 clip: true
                 delegate: Admin {
                     id: levels
@@ -113,7 +114,6 @@ Item {
         for(var i = 0 ; i < availableModes.length ; i++) {
             if(availableModes[i].value === dataToSave["mode"]) {
                 modeBox.currentIndex = i;
-                console.log(levels.level)
                 break;
             }
         }
@@ -121,7 +121,6 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        activityConfiguration.defaultOperators = activityConfiguration.levels.levelOperators;
         dataToSave = {"mode": newMode, "levelArr": activityConfiguration.defaultOperators};
     }
 }

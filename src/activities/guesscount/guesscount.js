@@ -52,10 +52,10 @@ function initLevel() {
     items.currentlevel = currentLevel
     items.sublevel = 1
     if(items.levels || items.mode === 'builtin') {
-        defaultOperators = items.levels[currentLevel].defaultOperators
-        numberOfLevel = items.levels[currentLevel].levelSchema.length
-        dataItems = items.levels[currentLevel].dataItems
-        levelSchema = items.levels[currentLevel].levelSchema
+        defaultOperators = items.levels[0].defaultOperators
+        numberOfLevel = items.levels[0].levelSchema.length
+        dataItems = items.levels[0].dataItems
+        levelSchema = items.levels[0].levelSchema
         items.data = buildDataset(dataItems, levelSchema)
     }
     else {
