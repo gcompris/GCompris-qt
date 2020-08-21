@@ -170,10 +170,6 @@ function sync(array, level) {
     items.levelArr = array
 }
 
-function saveLevelArr() {
-   return items.levelArr
-}
-
 function check(operator, array) {
     for (var i in array) {
         if(array[i] == operator) {

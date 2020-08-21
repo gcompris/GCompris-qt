@@ -22,6 +22,7 @@
 import QtQuick 2.6
 import "../../core"
 import "guesscount.js" as Activity
+import "dataset.js" as Data
 
 ActivityBase {
     id: activity
@@ -226,7 +227,7 @@ ActivityBase {
                 if(activityData && activityData["mode"] ) {
                     items.mode = activityData["mode"]
                     if(activityData["levelArr"] == undefined)
-                        activityData["levelArr"] = Activity.defaultOperators
+                        activityData["levelArr"] = (items.levels || items.mode == "builtin") ? items.levels[Activity.currentLevel].defaultOperators : Data.defaultOperators
                     if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
                     else

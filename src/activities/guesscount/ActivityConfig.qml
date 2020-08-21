@@ -27,6 +27,7 @@ import "guesscount.js" as Activity
 Item {
     id: activityConfiguration
     property Item background
+    property var defaultOperators: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     property alias modeBox: modeBox
     width: if(background) background.width
     property var availableModes: [
@@ -84,12 +85,12 @@ Item {
                 anchors.fill: parent
                 visible: modeBox.currentIndex == 0
                 spacing: 5
-                model: Activity.numberOfLevel
+                model: 8
                 clip: true
                 delegate: Admin {
-                    id: level
+                    id: levels
                     level: modelData
-                    levelOperators: Activity.saveLevelArr()
+                    levelOperators: activityConfiguration.defaultOperators
                     width: activityConfiguration.width
                     height: activityConfiguration.height/10
                 }
@@ -101,6 +102,10 @@ Item {
 
     function setDefaultValues() {
 
+        if(dataToSave["levelArr"] == undefined) {
+            dataToSave["levelArr"] = activityConfiguration.defaultOperators
+        }
+
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";
             modeBox.currentIndex = 1
@@ -108,6 +113,7 @@ Item {
         for(var i = 0 ; i < availableModes.length ; i++) {
             if(availableModes[i].value === dataToSave["mode"]) {
                 modeBox.currentIndex = i;
+                console.log(levels.level)
                 break;
             }
         }
@@ -115,6 +121,7 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        dataToSave = {"mode": newMode, "levelArr": Activity.saveLevelArr()};
+        activityConfiguration.defaultOperators = activityConfiguration.levels.levelOperators;
+        dataToSave = {"mode": newMode, "levelArr": activityConfiguration.defaultOperators};
     }
 }
