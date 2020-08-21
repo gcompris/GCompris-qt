@@ -38,9 +38,9 @@ ElectricalComponent {
     property double componentVoltage: 0
     property double current: 0
     property double bottomCurrent: 0
-    property int wiperY: 0
-    property double topResistance: Math.max(0, 1000 * (wiperY / wiperArea.wiperLimit))
-    property double bottomResistance: Math.max(0, 1000 - topResistance)
+    property double wiperPosition: 0
+    property double topResistance: 1000 * wiperPosition
+    property double bottomResistance: 1000 - topResistance
     property string topResistanceTxt: topResistance.toString()
     property string bottomResistanceTxt: bottomResistance.toString()
     onBottomResistanceTxtChanged: Activity.restartTimer();
@@ -173,6 +173,10 @@ ElectricalComponent {
         anchors.centerIn: parent
         anchors.horizontalCenterOffset: width * -0.33
         property double wiperLimit: wiperArea.height * 0.8
+        //update wiper on zoom or window size changes
+        onWiperLimitChanged: {
+            wiper.y = wiperArea.wiperLimit * wiperPosition;
+        }
         Rectangle {
             id: internalWire
             height: wiper.height * 0.4
@@ -213,7 +217,7 @@ ElectricalComponent {
                         wiper.y = 0;
                     if(wiper.y > wiperArea.wiperLimit)
                         wiper.y = wiperArea.wiperLimit;
-                    wiperY = wiper.y;
+                    wiperPosition = wiper.y / wiperArea.wiperLimit;
                 }
             }
         }
