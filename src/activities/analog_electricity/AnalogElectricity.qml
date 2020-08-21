@@ -106,16 +106,6 @@ ActivityBase {
             }
         }
 
-        onHoriChanged: {
-            if (hori === true) {
-                playArea.x += items.toolsMargin;
-                playArea.y -= items.toolsMargin;
-            } else {
-                playArea.x -= items.toolsMargin;
-                playArea.y += items.toolsMargin;
-            }
-        }
-
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -152,15 +142,15 @@ ActivityBase {
         Rectangle {
             id: visibleArea
             color: "#00000000"
-            width: background.hori ? background.width - items.toolsMargin - 10 : background.width - 10
-            height: background.hori ? background.height - bar.height - items.toolsMargin - 10 : background.height - bar.height - 10
+            width:background.width - items.toolsMargin - 10
+            height: background.height - bar.height - items.toolsMargin - 10
             anchors {
                 fill: undefined
-                top: background.hori ? parent.top : inputComponentsContainer.bottom
+                top: parent.top
                 topMargin: 5
                 right: parent.right
                 rightMargin: 5
-                left: background.hori ? inputComponentsContainer.right : parent.left
+                left: inputComponentsContainer.right
                 leftMargin: 5
                 bottom: bar.top
                 bottomMargin: 20
@@ -220,13 +210,10 @@ ActivityBase {
         Rectangle {
             id: playArea
             color: "#10000000"
-            x: background.hori ? items.toolsMargin : 0
-            y: background.hori ? 0 : items.toolsMargin
-            width: background.hori ?
-                       background.width * 4 - items.toolsMargin : background.width * 4
-            height: background.hori ?
-                       background.height * 4 - (bar.height * 1.1) :
-                       background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+            x: items.toolsMargin
+            y: 0
+            width: background.width * 4 - items.toolsMargin
+            height: background.height * 4 - (bar.height * 1.1)
 
             property double sizeMultiplier:
                 playArea.width > playArea.height ? playArea.width : playArea.height
@@ -249,9 +236,9 @@ ActivityBase {
                     drag.target: playArea
                     drag.axis: Drag.XandYAxis
                     drag.minimumX: - playArea.width * items.zoomLvl
-                    drag.maximumX: background.hori ? items.toolsMargin : 0
+                    drag.maximumX: items.toolsMargin
                     drag.minimumY: - playArea.height * items.zoomLvl
-                    drag.maximumY: background.hori ? 0 : items.toolsMargin
+                    drag.maximumY: 0
                     onClicked: {
                         Activity.deselect();
                         availablePieces.hideToolbar();
@@ -262,14 +249,15 @@ ActivityBase {
 
         Rectangle {
             id: inputComponentsContainer
-            width: background.hori ? items.toolsMargin : background.width
-            height: background.hori ? background.height : items.toolsMargin
+            width: items.toolsMargin
+            height: background.height
             color: "#4A3823"
             anchors.left: parent.left
             Image {
+                id: containerTexture
                 anchors.fill: parent
-                anchors.rightMargin: background.hori ? 3 * ApplicationInfo.ratio : 0
-                anchors.bottomMargin: background.hori ? 0 : 3 * ApplicationInfo.ratio
+                anchors.rightMargin: 3 * ApplicationInfo.ratio
+                anchors.bottomMargin: 0
                 source: Activity.urlDigital + "texture01.png"
                 fillMode: Image.Tile
                 ListWidget {
@@ -337,5 +325,80 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel);
         }
+
+        states: [
+            State {
+                id: "horizontalView"
+                when: background.hori
+                PropertyChanges {
+                    target: visibleArea
+                    width: background.width - items.toolsMargin - 10
+                    height: background.height - bar.height - items.toolsMargin - 10
+                }
+                AnchorChanges {
+                    target: visibleArea
+                    anchors.top: parent.top
+                    anchors.left: inputComponentsContainer.right
+                }
+                PropertyChanges {
+                    target: playArea
+                    x: items.toolsMargin
+                    y: 0
+                    width: background.width * 4 - items.toolsMargin
+                    height: background.height * 4 - (bar.height * 1.1)
+                }
+                PropertyChanges {
+                    target: mousePan
+                    drag.maximumX: items.toolsMargin
+                    drag.maximumY: 0
+                }
+                PropertyChanges {
+                    target: inputComponentsContainer
+                    width: items.toolsMargin
+                    height: background.height
+                }
+                PropertyChanges {
+                    target: containerTexture
+                    anchors.rightMargin: 3 * ApplicationInfo.ratio
+                    anchors.bottomMargin: 0
+                }
+            },
+            State {
+                id: "verticalView"
+                when: !background.hori
+                PropertyChanges {
+                    target: visibleArea
+                    width: background.width - 10
+                    height: background.height - bar.height - 10
+                }
+                AnchorChanges {
+                    target: visibleArea
+                    anchors.top: inputComponentsContainer.bottom
+                    anchors.left: parent.left
+                }
+                PropertyChanges {
+                    target: playArea
+                    x: 0
+                    y: items.toolsMargin
+                    width: background.width * 4
+                    height: background.height * 4 - (bar.height * 1.1) - items.toolsMargin
+                }
+                PropertyChanges {
+                    target: mousePan
+                    drag.maximumX: 0
+                    drag.maximumY: items.toolsMargin
+                }
+                PropertyChanges {
+                    target: inputComponentsContainer
+                    width: background.width
+                    height: items.toolsMargin
+                }
+                PropertyChanges {
+                    target: containerTexture
+                    anchors.rightMargin: 0
+                    anchors.bottomMargin: 3 * ApplicationInfo.ratio
+                }
+            }
+        ]
     }
 }

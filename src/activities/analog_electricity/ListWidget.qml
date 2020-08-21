@@ -46,7 +46,7 @@ Item {
     signal hideToolbar
     onHideToolbar: toolButton.showToolBar = false;
 
-    property int minIconWidth: listWidget.hori ? Math.min((background.width - 1.5*view.width) / 6, 100) : Math.min((background.height - 1.5*bar.height - view.height) / 6, 100)
+    property int minIconWidth: Math.min((background.width - 1.5 * view.width) / 6, 100)
 
     ListModel {
         id: mymodel
@@ -54,19 +54,15 @@ Item {
 
     Grid {
         id: view
-        width: listWidget.hori ? inputComponentsContainer.width : 2 * bar.height
-        height: listWidget.hori ? background.height - 2 * bar.height : bar.height
+        width: inputComponentsContainer.width
+        height: background.height - 2 * bar.height
         spacing: 5
         z: 20
-        columns: listWidget.hori ? 1 : nbItemsByGroup + 2
+        columns: 1
 
         property int currentDisplayedGroup: 0
         property int setCurrentDisplayedGroup: 0
-        property int nbItemsByGroup:
-            listWidget.hori ?
-                parent.height / iconSize - 2 :
-                parent.width / iconSize - 2
-
+        property int nbItemsByGroup: parent.height / iconSize - 2
         property int nbDisplayedGroup: Math.ceil(model.count / nbItemsByGroup)
         property int iconSize: 80 * ApplicationInfo.ratio
         property int previousNavigation: 1
@@ -75,15 +71,6 @@ Item {
         onNbDisplayedGroupChanged: {
             view.setCurrentDisplayedGroup = 0;
             refreshInputComponentsContainer();
-        }
-
-        add: Transition {
-            NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 400 }
-            NumberAnimation { property: "scale"; from: 0; to: 1.0; duration: 400 }
-        }
-
-        move: Transition {
-            NumberAnimation { properties: "x,y"; duration: 400; easing.type: Easing.OutBounce }
         }
 
         //For setting navigation buttons
@@ -100,14 +87,14 @@ Item {
         }
 
         function refreshInputComponentsContainer() {
-            availablePieces.view.currentDisplayedGroup = availablePieces.view.setCurrentDisplayedGroup;
-            availablePieces.view.setNextNavigation();
-            availablePieces.view.setPreviousNavigation();
+            view.currentDisplayedGroup = view.setCurrentDisplayedGroup;
+            view.setNextNavigation();
+            view.setPreviousNavigation();
         }
 
         Image {
             id: toolButton
-            width: (listWidget.hori ? listWidget.width : listWidget.height) - listWidget.anchors.leftMargin
+            width: listWidget.width - listWidget.anchors.leftMargin
             height: width
             sourceSize.width: width
             sourceSize.height: height
@@ -124,10 +111,10 @@ Item {
             Rectangle {
                 id: toolsContainer
                 visible: toolButton.showToolBar
-                width: listWidget.hori ? (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4 : parent.width
-                height: listWidget.hori ? parent.width : (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
-                anchors.top: listWidget.hori ? parent.top : parent.bottom
-                anchors.left: listWidget.hori ? parent.right : parent.left
+                width: (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4
+                height: parent.width
+                anchors.top: parent.top
+                anchors.left: parent.right
                 color: "#2a2a2a"
                 radius: 4 * ApplicationInfo.ratio
 
@@ -141,8 +128,8 @@ Item {
 
                     anchors {
                         fill: parent
-                        leftMargin: listWidget.hori ? 8 * ApplicationInfo.ratio : tools.leftMarginAmt
-                        topMargin: listWidget.hori ? tools.topMarginAmt : 8 * ApplicationInfo.ratio
+                        leftMargin: 8 * ApplicationInfo.ratio
+                        topMargin: tools.topMarginAmt
                     }
                     spacing: 4 * ApplicationInfo.ratio
 
@@ -367,7 +354,7 @@ Item {
                 tileWidth: view.iconSize
                 tileHeight: view.iconSize * 0.85
                 visible: view.currentDisplayedGroup * view.nbItemsByGroup <= index &&
-                         index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup-1
+                          index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup - 1
 
                 onPressed: repeater.currentIndex = index;
             }
@@ -417,4 +404,75 @@ Item {
             }
         }
     }
+
+    states: [
+        State {
+            name: "horizontalList"
+            when: listWidget.hori
+            PropertyChanges {
+                target: listWidget
+                minIconWidth: Math.min((background.width - 1.5 * view.width) / 6, 100)
+            }
+            PropertyChanges {
+                target: view
+                width: inputComponentsContainer.width
+                height: background.height - 2 * bar.height
+                columns: 1
+                nbItemsByGroup: parent.height / iconSize - 2
+            }
+            PropertyChanges {
+                target: toolButton
+                width: listWidget.width - listWidget.anchors.leftMargin
+            }
+            PropertyChanges {
+                target: toolsContainer
+                width: (toolDelete.width + tools.spacing) * tools.children.length + tools.spacing * 4
+                height: parent.width
+            }
+            AnchorChanges {
+                target: toolsContainer
+                anchors.top: parent.top
+                anchors.left: parent.right
+            }
+            PropertyChanges {
+                target: tools
+                anchors.leftMargin: 8 * ApplicationInfo.ratio
+                anchors.topMargin: tools.topMarginAmt
+            }
+        },
+        State {
+            name: "verticalList"
+            when: !listWidget.hori
+            PropertyChanges {
+                target: listWidget
+                minIconWidth: Math.min((background.height - 1.5 * bar.height - view.height) / 6, 100)
+            }
+            PropertyChanges {
+                target: view
+                width: 2 * bar.height
+                height: bar.height
+                columns: nbItemsByGroup + 2
+                nbItemsByGroup: parent.width / iconSize - 2
+            }
+            PropertyChanges {
+                target: toolButton
+                width: listWidget.height - listWidget.anchors.leftMargin
+            }
+            PropertyChanges {
+                target: toolsContainer
+                width: parent.width
+                height: (toolDelete.height + tools.spacing) * tools.children.length + tools.spacing * 4
+            }
+            AnchorChanges {
+                target: toolsContainer
+                anchors.top: parent.bottom
+                anchors.left: parent.left
+            }
+            PropertyChanges {
+                target: tools
+                anchors.leftMargin: tools.leftMarginAmt
+                anchors.topMargin: 8 * ApplicationInfo.ratio
+            }
+        }
+    ]
 }
