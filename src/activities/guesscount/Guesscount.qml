@@ -20,9 +20,11 @@
  *   along with this program; if not, see <https://www.gnu.org/licenses/>.
  */
 import QtQuick 2.6
+import GCompris 1.0
 import "../../core"
 import "guesscount.js" as Activity
 import "dataset.js" as Data
+
 
 ActivityBase {
     id: activity
@@ -67,7 +69,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property bool solved
             property bool levelchanged: false
-            property var levelArr
+            property var levelArr: Data.defaultOperators
             property string mode
             property int currentlevel
         }
@@ -216,6 +218,7 @@ ActivityBase {
                 levelFolder = dialogActivityConfig.chosenLevels
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
+                activity.needRestart = true
             }
             onClose: {
                 if(Activity.configDone(items.levelArr)){
@@ -227,14 +230,14 @@ ActivityBase {
                 if(activityData && activityData["mode"] ) {
                     items.mode = activityData["mode"]
                     if(activityData["levelArr"] == undefined)
-                        activityData["levelArr"] = Activity.defaultOperators
+                        activityData["levelArr"] = Data.defaultOperators
                     if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
                     else
                         items.levelArr = activityData["levelArr"]
                 }
-                else {
-                    items.mode='builtin'
+                else if(items.mode == "builtin" || items.levels){
+                    //items.mode='builtin'
                     items.levelArr = Activity.defaultOperators
                 }
             }

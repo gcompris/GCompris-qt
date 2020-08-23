@@ -22,14 +22,14 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
-import "guesscount.js" as Activity
+import "dataset.js" as Data
 
 Item {
     id: activityConfiguration
     property Item background
-    property var defaultOperators: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     property alias modeBox: modeBox
     property int numberOfLevel: 8
+    property var levelArr: ['+', '-', '*', '/']
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
@@ -91,7 +91,7 @@ Item {
                 delegate: Admin {
                     id: levels
                     level: modelData
-                    levelOperators: activityConfiguration.defaultOperators
+                    levelOperators: activityConfiguration.levelArr
                     width: activityConfiguration.width
                     height: activityConfiguration.height/10
                 }
@@ -103,9 +103,11 @@ Item {
 
     function setDefaultValues() {
 
-        if(dataToSave["levelArr"] == undefined) {
-            dataToSave["levelArr"] = activityConfiguration.defaultOperators
+        if(dataToSave.levelArr) {
+            activityConfiguration.levelArr = dataToSave.levelArr
         }
+        else
+            activityConfiguration.levelArr = Data.defaultOperators
 
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";
@@ -121,6 +123,6 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        dataToSave = {"mode": newMode, "levelArr": activityConfiguration.defaultOperators};
+        dataToSave = {"mode": newMode, "levelArr": activityConfiguration.levelArr};
     }
 }
