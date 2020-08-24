@@ -22,14 +22,13 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
-import "dataset.js" as Data
 
 Item {
     id: activityConfiguration
     property Item background
     property alias modeBox: modeBox
     property int numberOfLevel: 8
-    property var levelArr: ['+', '-', '*', '/']
+    property var levelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
@@ -74,15 +73,14 @@ Item {
             }
         }
         Rectangle {
-            width: parent.width
+            width: column.width * 1.6
             color: "transparent"
-            height: parent.height/1.25-labels.height-modeBox.height
+            height: column.width / 7
             anchors {
                 top: labels.bottom
                 topMargin: 5
             }
             ListView {
-                id: adminModeLevels
                 anchors.fill: parent
                 visible: modeBox.currentIndex == 0
                 spacing: 5
@@ -92,8 +90,8 @@ Item {
                     id: levels
                     level: modelData
                     levelOperators: activityConfiguration.levelArr
-                    width: activityConfiguration.width
-                    height: activityConfiguration.height/10
+                    width: column.width * 1.1
+                    height: column.height / 2.5
                 }
             }
         }
@@ -103,11 +101,9 @@ Item {
 
     function setDefaultValues() {
 
-        if(dataToSave.levelArr) {
-            activityConfiguration.levelArr = dataToSave.levelArr
+        if(dataToSave["levelArr"] === undefined) {
+            dataToSave["levelArr"] = activityConfiguration.levelArr
         }
-        else
-            activityConfiguration.levelArr = Data.defaultOperators
 
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";

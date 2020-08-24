@@ -23,7 +23,6 @@ import QtQuick 2.6
 import GCompris 1.0
 import "../../core"
 import "guesscount.js" as Activity
-import "dataset.js" as Data
 
 
 ActivityBase {
@@ -69,7 +68,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property bool solved
             property bool levelchanged: false
-            property var levelArr: Data.defaultOperators
+            property var levelArr
             property string mode
             property int currentlevel
         }
@@ -97,7 +96,7 @@ ActivityBase {
 
                 Repeater {
                     id:levels
-                    model: Activity.numberOfLevel
+                    model: 8
                     Admin {
                         id:level
                         level: modelData+1
@@ -227,20 +226,21 @@ ActivityBase {
                 }
             }
             onLoadData: {
-                if(activityData && activityData["mode"] ) {
+                if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"]
-                    if(activityData["levelArr"] == undefined)
-                        activityData["levelArr"] = Data.defaultOperators
+                    if(activityData["levelArr"] == undefined) {
+                        activityData["levelArr"] = Activity.defaultOperators
+                     }
                     if(activityData["levelArr"].length != Activity.numberOfLevel)
                         items.levelArr = Activity.defaultOperators
                     else
                         items.levelArr = activityData["levelArr"]
+                   }
+                else {
+                        items.mode = "builtin"
+                        items.levelArr = Activity.defaultOperator
+                    }
                 }
-                else if(items.mode == "builtin" || items.levels){
-                    //items.mode='builtin'
-                    items.levelArr = Activity.defaultOperators
-                }
-            }
             onStartActivity: {
                 background.stop()
                 background.start()

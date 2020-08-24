@@ -27,13 +27,13 @@
 
 
 var url = "qrc:/gcompris/src/activities/guesscount/resource/"
-var defaultOperators
+var defaultOperators = Data.defaultOperators
 var baseUrl = "qrc:/gcompris/src/activities/guesscount/resource";
 var builtinFile = baseUrl + "/levels-default.json";
 var dataset = []
 
 var currentLevel
-var numberOfLevel
+var numberOfLevel = Data.levelSchema.length
 var items
 var dataItems
 var levelSchema
@@ -59,7 +59,6 @@ function initLevel() {
         items.data = buildDataset(dataItems, levelSchema)
     }
     else {
-        numberOfLevel = Data.levelSchema.length
         items.data = buildDataset(Data.dataset, Data.levelSchema)
     }
 
@@ -166,8 +165,8 @@ function checkAnswer(row) {
     }
 }
 
-function sync(array, level) {
-    items.levelArr = array
+function saveArray() {
+    return items.levelArr
 }
 
 function check(operator, array) {
@@ -203,15 +202,18 @@ function equal(levelOperators, array) {
 
 function buildDataset(data, levelSchema) {
     var level = []
-    var levelArr = (items.mode == 'builtin' || items.levels) ? defaultOperators : items.levelArr
+    var levelArr = (items.mode === 'builtin' || items.levels) ? defaultOperators : items.levelArr
     var noOfOperators = levelArr[currentLevel].length
+    var index = (items.mode === 'builtin' || items.levels) ? 0 : noOfOperators-1
     var questions
-    for(var j in data[noOfOperators-1]) {
-        if(equal(levelArr[currentLevel], data[noOfOperators-1][j][0])) {
-            questions = data[noOfOperators-1][j][1]
+
+    for(var j in data[index]) {
+        if(equal(levelArr[currentLevel], data[index][j][0])) {
+            questions = data[index][j][1]
             break
         }
     }
+
     var questions = Core.shuffle(questions)
 
     for(var m = 0 ; m < levelSchema[currentLevel] ; ++ m) {
