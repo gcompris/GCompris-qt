@@ -116,7 +116,6 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        var adminLevelArr = dataToSave["levelArr"]
-        dataToSave = {"mode": newMode, "levelArr": adminLevelArr};
+        dataToSave = {"mode": newMode, "levelArr": activityConfiguration.levelArr};
     }
 }
