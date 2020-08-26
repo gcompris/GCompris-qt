@@ -22,6 +22,7 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
+import "guesscount.js" as Activity
 
 
 Item {
@@ -74,9 +75,9 @@ Item {
             }
         }
         Rectangle {
-            width: column.width * 2.4
+            width: parent.width * 2.5
             color: "transparent"
-            height: column.width / 2
+            height:  parent.height/0.5
             anchors {
                 top: labels.bottom
                 topMargin: 5
@@ -91,8 +92,8 @@ Item {
                     id: levels
                     level: modelData
                     levelOperators: activityConfiguration.levelArr
-                    width: column.width * 1.4
-                    height: column.height / 4.5
+                    width: column.width * 1.2
+                    height: column.height / 1.5
                 }
             }
         }
@@ -101,6 +102,10 @@ Item {
     property var dataToSave
 
     function setDefaultValues() {
+
+        if(dataToSave["levelArr"] === undefined) {
+            dataToSave["levelArr"] = activityConfiguration.levelArr
+        }
 
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";
