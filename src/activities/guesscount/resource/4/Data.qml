@@ -33,7 +33,7 @@ Data {
                 ]
             ],
             "levelSchema": [3],
-            "defaultOperators": [['-',"*","+","/"]]
+            "defaultOperators": [['+','-','*','/']]
         }
 
     ]

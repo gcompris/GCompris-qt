@@ -22,7 +22,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr(" Practice algebraic calculations with two operators.")
+    objective: qsTr("Practice algebraic calculations with two operators.")
     difficulty: 4
 
     data: [

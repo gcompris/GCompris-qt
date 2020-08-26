@@ -23,6 +23,7 @@ import GCompris 1.0
 
 import "../../core"
 
+
 Item {
     id: activityConfiguration
     property Item background
@@ -73,9 +74,9 @@ Item {
             }
         }
         Rectangle {
-            width: column.width * 1.6
+            width: column.width * 2.4
             color: "transparent"
-            height: column.width / 7
+            height: column.width / 2
             anchors {
                 top: labels.bottom
                 topMargin: 5
@@ -90,8 +91,8 @@ Item {
                     id: levels
                     level: modelData
                     levelOperators: activityConfiguration.levelArr
-                    width: column.width * 1.1
-                    height: column.height / 2.5
+                    width: column.width * 1.4
+                    height: column.height / 4.5
                 }
             }
         }
@@ -100,10 +101,6 @@ Item {
     property var dataToSave
 
     function setDefaultValues() {
-
-        if(dataToSave["levelArr"] === undefined) {
-            dataToSave["levelArr"] = activityConfiguration.levelArr
-        }
 
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";
@@ -119,6 +116,7 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        dataToSave = {"mode": newMode, "levelArr": activityConfiguration.levelArr};
+        var adminLevelArr = dataToSave["levelArr"]
+        dataToSave = {"mode": newMode, "levelArr": adminLevelArr};
     }
 }

@@ -51,14 +51,28 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.currentlevel = currentLevel
     items.sublevel = 1
-    if(items.levels || items.mode === 'builtin') {
-        defaultOperators = items.levels[0].defaultOperators
-        numberOfLevel = items.levels[0].levelSchema.length
-        dataItems = items.levels[0].dataItems
-        levelSchema = items.levels[0].levelSchema
+
+    var multipleDataOperators = []
+    var multipleDataItems = []
+    var multipleDataSchema = []
+
+    if(items.levels && items.mode === 'builtin') {
+
+        for(var i = 0; i < items.levels.length; i++) {
+            multipleDataOperators = multipleDataOperators.concat(items.levels[i].defaultOperators)
+            multipleDataSchema = multipleDataSchema.concat(items.levels[i].levelSchema)
+            multipleDataItems = multipleDataItems.concat(items.levels[i].dataItems)
+        }
+
+        defaultOperators = multipleDataOperators
+        numberOfLevel = multipleDataSchema.length
+        dataItems = multipleDataItems
+        levelSchema = multipleDataSchema
         items.data = buildDataset(dataItems, levelSchema)
     }
-    else {
+    else if(items.mode === "admin") {
+        defaultOperators = Data.defaultOperators
+        numberOfLevel = Data.levelSchema.length
         items.data = buildDataset(Data.dataset, Data.levelSchema)
     }
 
@@ -165,8 +179,8 @@ function checkAnswer(row) {
     }
 }
 
-function saveArray() {
-    return items.levelArr
+function sync(array, level) {
+    items.levelArr = array
 }
 
 function check(operator, array) {
@@ -200,12 +214,26 @@ function equal(levelOperators, array) {
     return true
 }
 
+function findIndex(data) {
+
+    var index
+    var levelArr = defaultOperators
+
+    for(var i = 0; i < data.length; i++) {
+        for(var j in data[i]) {
+            if(equal(levelArr[currentLevel], data[i][j][0])) {
+                return i
+            }
+        }
+    }
+}
+
 function buildDataset(data, levelSchema) {
+
     var level = []
-    var levelArr = (items.mode === 'builtin' || items.levels) ? defaultOperators : items.levelArr
+    var levelArr = (items.mode === 'builtin' && items.levels) ? defaultOperators : items.levelArr
     var noOfOperators = levelArr[currentLevel].length
-    var index = (items.mode === 'builtin' || items.levels) ? 0 : noOfOperators-1
-    var questions
+    var index = (items.mode === 'builtin' && items.levels) ? findIndex(data) : noOfOperators - 1
 
     for(var j in data[index]) {
         if(equal(levelArr[currentLevel], data[index][j][0])) {
@@ -221,3 +249,4 @@ function buildDataset(data, levelSchema) {
     }
     return level
 }
+

@@ -237,10 +237,10 @@ ActivityBase {
                         items.levelArr = activityData["levelArr"]
                    }
                 else {
-                        items.mode = "builtin"
-                        items.levelArr = Activity.defaultOperator
-                    }
+                    items.mode = "builtin"
+                    items.levelArr = Activity.defaultOperators
                 }
+            }
             onStartActivity: {
                 background.stop()
                 background.start()
