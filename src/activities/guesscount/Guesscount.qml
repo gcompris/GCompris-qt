@@ -69,7 +69,7 @@ ActivityBase {
             property bool solved
             property bool levelchanged: false
             property var levelArr
-            property string mode
+            property string mode: "builtin"
             property int currentlevel
         }
 
@@ -239,6 +239,12 @@ ActivityBase {
                 else {
                     items.mode = "builtin"
                     items.levelArr = Activity.defaultOperators
+                }
+                if(items.mode === "admin") {
+                    datasetVisible = false
+                }
+                else if(items.mode === "builtin") {
+                    datasetVisible = true
                 }
             }
             onStartActivity: {

@@ -105,6 +105,8 @@ Rectangle {
     property bool hasConfig: activityConfigFile.exists("qrc:/gcompris/src/activities/"+activityName+"/ActivityConfig.qml")
     property bool hasDataset: currentActivity && currentActivity.levels.length !== 0
 
+    property bool datasetVisible: true
+
     color: "#696da3"
     border.color: "black"
     border.width: 1
@@ -211,6 +213,7 @@ Rectangle {
                 height: parent.height
                 width: titleRectangle.width * 0.45
                 opacity: enabled ? 1 : 0
+                visible: datasetVisible
                 property bool selected: true
                 style: GCButtonStyle {
                     theme: "settingsButton"

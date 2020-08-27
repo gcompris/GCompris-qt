@@ -85,18 +85,4 @@ Row {
             ]
         }
     }
-    Rectangle {
-        id: warning
-        visible: levelOperators[level].length == 0 ? true : false
-        width: parent.width*0.15
-        height: parent.height
-        radius: 20.0
-        color: "gray"
-        GCText {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.verticalCenter: parent.verticalCenter
-            fontSize: smallSize
-            text: qsTr("empty")
-        }
-    }
 }
