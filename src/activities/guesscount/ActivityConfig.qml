@@ -46,7 +46,12 @@ Item {
             model: availableModes
             background: activityConfiguration.background
             label: qsTr("Select your mode")
-            onCurrentIndexChanged: currentIndex === 0 ? datasetVisible = false : datasetVisible = true
+            onCurrentIndexChanged: if(currentIndex === 0) {
+                                       datasetVisible = false
+                                       optionsVisibleButton.clicked()
+                                   }
+                                    else
+                                        datasetVisible = true
         Row {
             id: labels
             spacing: 20
@@ -92,7 +97,7 @@ Item {
                 delegate: Admin {
                     id: levels
                     level: modelData
-                    levelOperators: Activity.updatedArr(activityConfiguration.levelArr)
+                    levelOperators: activityConfiguration.levelArr
                     width: column.width * 1.2
                     height: column.height / 1.5
                 }
@@ -107,8 +112,6 @@ Item {
         if(dataToSave["levelArr"] === undefined) {
             dataToSave["levelArr"] = activityConfiguration.levelArr
         }
-        else
-            dataToSave["levelArr"] = Activity.updatedArr(activityConfiguration.levelArr)
 
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";
@@ -124,7 +127,7 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        var updatedArr = Activity.updatedArr(activityConfiguration.levelArr)
+        var updatedArr = activityConfiguration.levelArr
         dataToSave = {"mode": newMode, "levelArr": updatedArr};
     }
 }

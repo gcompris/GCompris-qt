@@ -182,13 +182,6 @@ function sync(array, level) {
     items.levelArr = array
 }
 
-function updatedArr(array) {
-    if(array.length > Data.defaultOperators)
-        return array
-    else
-        return Data.defaultOperators
-}
-
 function check(operator, array) {
     for (var i in array) {
         if(array[i] == operator) {
