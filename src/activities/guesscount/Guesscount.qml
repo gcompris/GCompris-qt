@@ -23,7 +23,7 @@ import QtQuick 2.6
 import GCompris 1.0
 import "../../core"
 import "guesscount.js" as Activity
-
+import "dataset.js" as Data
 
 ActivityBase {
     id: activity
@@ -68,7 +68,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property bool solved
             property bool levelchanged: false
-            property var levelArr
+            property var levelArr: Data.defaultOperators
             property string mode: "builtin"
             property int currentlevel
         }
@@ -228,23 +228,13 @@ ActivityBase {
             onLoadData: {
                 if(activityData && activityData["mode"]) {
                     items.mode = activityData["mode"]
-                    if(activityData["levelArr"] == undefined) {
-                        activityData["levelArr"] = Activity.defaultOperators
+                     if(activityData["levelArr"]) {
+                         items.levelArr = activityData["levelArr"]
                      }
-                    if(activityData["levelArr"].length != Activity.numberOfLevel)
-                        items.levelArr = Activity.defaultOperators
-                    else
-                        items.levelArr = activityData["levelArr"]
                    }
                 else {
                     items.mode = "builtin"
                     items.levelArr = Activity.defaultOperators
-                }
-                if(items.mode === "admin") {
-                    datasetVisible = false
-                }
-                else if(items.mode === "builtin") {
-                    datasetVisible = true
                 }
             }
             onStartActivity: {
@@ -256,11 +246,6 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | level | activityConfig }
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues();
-                displayDialog(dialogActivityConfig)
-            }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

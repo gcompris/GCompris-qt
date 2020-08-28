@@ -62,14 +62,18 @@ Row {
                 anchors.fill: parent
                 onClicked: {
                     if(tile.state == "selected") {
-                        tile.state = "notselected"
-                        levelOperators[level].splice(levelOperators[level].indexOf(modelData), 1)
-                        Activity.sync(levelOperators, level)
+                        if(levelOperators[level].length > 1) {
+                            tile.state = "notselected"
+                            levelOperators[level].splice(levelOperators[level].indexOf(modelData), 1)
+                            Activity.sync(levelOperators, level)
+                            Activity.updatedArr(levelOperators)
+                        }
                     }
                     else{
                         tile.state = "selected"
                         levelOperators[level].push(modelData)
                         Activity.sync(levelOperators, level)
+                        Activity.updatedArr(levelOperators)
                     }
                 }
             }
