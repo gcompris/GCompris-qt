@@ -188,11 +188,6 @@
                         "voice": "voices-$CA/$LOCALE/words/face.$CA"
                     },
                     {
-                        "description": "feet",
-                        "image": "feet.png",
-                        "voice": "voices-$CA/$LOCALE/words/feet.$CA"
-                    },
-                    {
                         "description": "finger",
                         "image": "finger.png",
                         "voice": "voices-$CA/$LOCALE/words/finger.$CA"
