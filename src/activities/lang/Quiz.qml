@@ -230,8 +230,6 @@ Item {
 
                     width: wordListView.width
                     height: wordListView.buttonHeight
-                    anchors.right: parent.right
-                    anchors.left: parent.left
 
                     Image {
                         id: wordImageQuiz
@@ -242,7 +240,7 @@ Item {
                         z: 7
                         fillMode: Image.PreserveAspectFit
                         anchors.leftMargin: 5 * ApplicationInfo.ratio
-                        visible:  (QuizActivity.mode == 1) ? true : false  // hide images after first mini game
+                        visible: (QuizActivity.mode == 1) ? true : false  // hide images after first mini game
                     }
 
                     AnswerButton {
