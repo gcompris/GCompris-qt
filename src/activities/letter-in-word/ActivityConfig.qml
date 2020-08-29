@@ -34,6 +34,7 @@ Item {
     property alias letterCaseBox: letterCaseBox
     property int savedLetterCase: 0
     width: if(background) background.width;
+    height: childrenRect.height
     property alias availableLangs: langs.languages
 
     LanguageList {
