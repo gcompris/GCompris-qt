@@ -220,7 +220,7 @@ Item {
         GCDialogCheckBox {
             id: wordsetBox
             checked: useWordset && DownloadManager.isDataRegistered("words")
-            text: checked ? qsTr("Use full word image set") : qsTr("Full word image set is not installed")
+            text: checked ? qsTr("Full word image set is installed") : qsTr("Full word image set is not installed")
             visible: ApplicationInfo.isDownloadAllowed
             enabled: false
             onCheckedChanged: {
