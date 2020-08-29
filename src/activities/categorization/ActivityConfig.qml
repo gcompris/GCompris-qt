@@ -29,6 +29,7 @@ Item {
     property Item background
     property string mode: "easy"
     width: if(background) background.width
+    height: column.childrenRect.height
 
     Column {
         id: column
