@@ -21,12 +21,16 @@
 <authorgroup>
 <author>
 <personname>
-<firstname>This documentation was converted from the 
-<ulink url="https://gcompris.net/wiki/Manual">&gcompris; Manual</ulink> 
-page.</firstname>
+<firstname>Johnny Jazeix</firstname>
 <surname></surname>
 </personname>
 </author>
+
+<othercredit role="developer">
+<othername>The &gcompris; Team</othername>
+<contrib>Developers</contrib>
+</othercredit> 
+
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 </authorgroup>
 
@@ -36,12 +40,12 @@ page.</firstname>
 Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
-<date>2016-01-24</date>
+<date>2020-08-30</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
-<releaseinfo>0.52</releaseinfo>
+<releaseinfo>0.97</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -65,44 +69,31 @@ for example 'xx.yy.zz'
 
 <sect1 id="introduction">
 <title>Introduction</title>
-<para>&gcompris; is a completely free educational software suite which contains a wide range of activities.</para>
-<para>It offers various activities aimed at covering a variety of fields such as the functioning of the computer, 
-using the mouse and keyboard, general learning, reading, writing, foreign languages, algebra, as well as various 
-activities such as memory and logic games, scientific experiments &etc;.</para>
-<para>In &gcompris; you will find many individual software packages which together make up the complete &gcompris; 
-suite of activities. Unfortunately, it is difficult to follow and maintain them as each one offers different 
-graphic interfaces which vary widely in quality.</para>
-<para>The purpose of &gcompris; is to provide a development platform for educational activities.</para>
-<para>&gcompris; is part of &kde; project and is placed under the <ulink url="https://www.gnu.org/licenses/gpl.html">GPL license</ulink>.</para>
-</sect1>
-
-<sect1 id="minimal-configuration">
-<title>Minimal configuration</title>
-<itemizedlist>
-<listitem><para>Processor : 1.6GHz Atom CPU</para></listitem> 
-<listitem><para>Memory (RAM) : 1 Giga Byte</para></listitem> 
-<listitem><para>Disk : 300 Mega Bytes</para></listitem> 
-<listitem><para>Operating system : &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android, SailfishOS</para></listitem> 
-<listitem><para>Video : A 3D card with support of <emphasis>OpenGL 2.1</emphasis> or higher is required. 32 bits color depth mandatory</para></listitem>
-</itemizedlist>
+<para>&gcompris; is a rich educational software suite which contains a wide range of activities.</para>
+<para>It offers various activities aimed at covering a variety of fields. The topics include reading and typing, arithmetics, geography, sciences, and other topics. It is meant to be used both at home and at school.</para>
+<para>The purpose of &gcompris; is to provide playful activities but always educational.</para>
+<para>&gcompris; is part of &kde; project and is placed under the <ulink url="https://www.gnu.org/licenses/gpl.html">GPLv3 license</ulink>.</para>
+<para>&gcompris; is available on the following operating systems: &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android.
+It requires a 3D card with support of <emphasis>OpenGL 2.1</emphasis> or higher is required. 32 bits color depth mandatory</para>
 </sect1>
 
 <sect1 id="installation">
 <title>Installation</title>
 <para>The software is delivered under several forms. Follow the process according to your case. </para>
 <itemizedlist>
-<listitem><para>&GNU;/&Linux; : Use the packages delivered by your &GNU;/&Linux; distribution. You may have to install 
-the package gcompris-sound-en to have the English voices. If &gcompris; is not packaged in your &Linux; distribution, 
+<listitem><para>&GNU;/&Linux;: Use the packages delivered by your &GNU;/&Linux; distribution.
+If &gcompris; is not packaged in your &Linux; distribution, 
 please contact them to ask for the inclusion of &gcompris; in your &Linux; distribution.</para></listitem>
-<listitem><para>&Windows; : Delivered under a classic installer for &Windows;. This version requires an activation code. </para></listitem>
-<listitem><para>MacOSX : Delivered under a classic installer. This version requires an activation code.</para></listitem>
+<listitem><para>&Windows;: Delivered under a classic installer for &Windows; or via the Microsoft Store.</para></listitem>
+<listitem><para>MacOSX: Delivered under a classic installer.</para></listitem>
+<listitem><para>Android: Distributed by the F-Droid store or Google Play Store. Apk file is also available.</para></listitem>
 </itemizedlist>
 </sect1>
 
 <sect1 id="user-interface">
 <title>The User Interface</title>
-<para>The interface is designed for easy use by small children. &gcompris; is controlled with a mouse, 
-it cannot be used without a mouse or a pointing system.</para>
+<para>The interface is designed for easy use by small children. &gcompris; is controlled with a mouse.
+Keyboard navigation is also available on most of the activities.</para>
 
 <sect2 id="main-window">
 <title>Main window</title>
@@ -123,8 +114,9 @@ with a control bar at the bottom.</para>
 <para>Each icon represents an activity. Around each one, you can find small icons which give additional information 
 about the activity. A simple click on the icon will lead you to an activity or a menu of activities. There are 8 sections 
 (categories) of activities, which placed on the top or on the left (only if your orientation is portrait). For example, 
-there is section "Board games", which includes board games, like chess, tic tac toe or align four</para>
-<para>The stars indicates the age group for which each game is designed:</para> 
+there is section "Board games", which includes board games, like chess, tic tac toe or align four.</para>
+<para>Some categories have subcategories to better filter the activities. For math activities,we have three subcategories: numeration, arithmetic and measures.</para>
+<para>The stars indicate the age group for which each game is designed:</para> 
 <itemizedlist>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject>
 </inlinemediaobject>1, 2 or 3 yellow stars - for 2 to 6 years old.</para></listitem> 
@@ -132,8 +124,7 @@ there is section "Board games", which includes board games, like chess, tic tac 
 </inlinemediaobject>1, 2 or 3 red stars - greater than 6 years old.</para></listitem> 
 </itemizedlist>
 
-<para>At the bottom of the screen there is a control bar for &gcompris;. The following icons are described below from 
-the right to the left (the icons are only displayed if they are available in the activity):</para>
+<para>At the bottom of the screen there is a control bar for &gcompris;. The possible icons are: (the icons are only displayed if they are available in the activity):</para>
 <itemizedlist>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_home.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Home - Leaves the current activity, returns to the previous menu.</para></listitem> 
@@ -141,6 +132,8 @@ the right to the left (the icons are only displayed if they are available in the
 </inlinemediaobject> "OK" - Validate, confirm your answer. Some activities do not detect automatically whether or 
 not the child has completed the task. In this case, you have to click on this icon. You can also use the &Enter; 
 key on your keyboard.</para></listitem> 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_hint.svg" format="SVG"/></imageobject>
+</inlinemediaobject> Light - Display a hint for the activity. We can help the children on some activities to guide them to find the answers. </para></listitem>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject></inlinemediaobject>
 <inlinemediaobject><imageobject><imagedata fileref="bar_next.svg" format="SVG"/></imageobject></inlinemediaobject> 
 Arrows - The present level is displayed. Click on one of the arrows to select another level. 
@@ -154,10 +147,12 @@ to be described easily in the description area. In this case, this function give
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_config.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Tool box - Configuration menu. The configuration is saved in the user repository (folder) 
 under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject>
+</inlinemediaobject> List item - Display the activity settings menu. There are two possible information here. We can choose the levels of the activities depending on several objectives and we can update the configuration of the activity if available. </para></listitem>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_about.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Capital "G" - Information box on &gcompris;, presents the main contributors and the version of the software.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject>
-</inlinemediaobject> Power - Quit &gcompris;. You can also use the short cut on your keyboard 
+</inlinemediaobject> Power - Quit &gcompris;. You can also use the shortcut on your keyboard 
 <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo></para></listitem> 
 </itemizedlist>
 </sect2>
@@ -166,7 +161,8 @@ under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a te
 <title>Kiosk Mode</title>
 <para>When you use &gcompris; with small children or on a self-service kiosk, you can disable a certain number of options:</para>
 <itemizedlist>
-<listitem><para><userinput><command>gcompris --disable-quit</command></userinput> : disable the <guiicon>Quit</guiicon> button.</para></listitem> 
+<listitem><para><userinput><command>gcompris --enable-kioskmode</command></userinput> : disable the <guiicon>Quit</guiicon> and <guiicon>Configuration</guiicon> buttons.</para></listitem> 
+<listitem><para><userinput><command>gcompris --diable-kioskmode</command></userinput> : enable the <guiicon>Quit</guiicon> and <guiicon>Configuration</guiicon> buttons.</para></listitem>
 <listitem><para><userinput><command>gcompris -f</command></userinput> : run &gcompris; in fullscreen mode</para></listitem> 
 <listitem><para><userinput><command>gcompris -C</command></userinput> : disable the cursor (touch screen mode)</para></listitem> 
 </itemizedlist>
@@ -211,15 +207,10 @@ under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a te
 
 <sect1 id="internationalization">
 <title>Notes on Internationalization</title>
-<para>&gcompris; is internationalized and is available in more than 50 languages. If you want 
+<para>&gcompris; is internationalized and is available in more than 35 languages. If you want 
 to check if your language is available, you can start &gcompris; and select your language in 
 the option of configuration.</para>
-<para>Be careful, your operating system must support your language so that &gcompris; can use it. 
-If you find a red cross while selecting a language in &gcompris;, this means that your system does not 
-support it, even if a translation is available in &gcompris;.</para> 
-<para>On &GNU;/&Linux;, if your language is not available, select another language support on your 
-distribution to add it. In most cases, you have to install an additional package 'locale-xx' or 
-'language-pack-xx' - xx is a language code such as 'En' for English. </para>
+<para>Be careful, some languages need specific fonts to be displayed correctly. </para> 
 <para>If your language is not supported, you can contribute to the software and add the 
 translation of your language. If you are interested, you can contact the 
 <ulink url="https://l10n.kde.org/teams">translation team</ulink> of 
@@ -230,26 +221,35 @@ the <ulink url="https://l10n.kde.org/">&kde; translation web site</ulink>.</para
 <sect1 id="learning-language">
 <title>Language learning</title>
 <para>You can use &gcompris; in a foreign language that you are learning. Select a foreign language 
-in the configuration menu. Do not forget to install the optional audio modules for this language in 
-your &GNU;/&Linux; distribution.</para>
-<para>&Windows; version is provided with all audio support that are available. Whilst using &gcompris; 
-in another language it is possible to configure some activities more precisely using the audio set 
-through the administration module.</para>
+in the configuration menu. Do not forget to download the optional audio modules for this language.</para>
 </sect1>
 
 <sect1 id="customizing-activities">
 <title>Customizing activities</title>
-<para>You can customize some activities using tool button in them. For example, you can set lang in 
-some text activities (like wordsgame), or make it show real car images instead of filled rectangles 
-(traffic)</para>
+<para>For multiple activities, you can choose several datasets in the configuration. Each one has a specific objective which is described.</para>
 <screenshot>
-<screeninfo>Select mode of activity "Traffic"</screeninfo>
+<screeninfo>Dataset of activity "Count the items"</screeninfo>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="traffic-select-mode.png" format="PNG"/>
+      <imagedata fileref="dataset.png" format="PNG"/>
     </imageobject>
     <textobject>
-      <phrase>Select mode of activity "Traffic"</phrase>
+      <phrase>Dataset of activity "Count the items"</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+
+<para>You can customize some activities using the configuration button in them.
+For example, you can set the locale in some text activities (like wordsgame), 
+or make it show real car images instead of filled rectangles (traffic)</para>
+<screenshot>
+<screeninfo>Select mode of activity "Count the items"</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="activity-config.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase>Select mode of activity "Count the items"</phrase>
     </textobject>
   </mediaobject>
 </screenshot>
@@ -294,12 +294,20 @@ some text activities (like wordsgame), or make it show real car images instead o
 <entry>Export activities as SQL</entry>
 </row>
 <row>
-<entry>--enable-config</entry>
-<entry>Enable the config button (default)</entry>
+<entry>--enable-kioskmode</entry>
+<entry>Enable the kiosk mode (hides Quit and Configuration buttons)</entry>
 </row>
 <row>
-<entry>--disable-config</entry>
-<entry>Disable the config button</entry>
+<entry>--disable-kioskmode</entry>
+<entry>Disable the kiosk mode (default)</entry>
+</row>
+<row>
+<entry>--software-renderer</entry>
+<entry>Use software renderer instead of openGL (should work with any graphical card)</entry>
+</row>
+<row>
+<entry>--opengl-renderer</entry>
+<entry>Use openGL renderer instead of software (faster and more graphical effects but can crash with some graphical cards)</entry>
 </row>
 </tbody>
 </tgroup>
@@ -307,14 +315,14 @@ some text activities (like wordsgame), or make it show real car images instead o
 
 <sect2 id="windows-example">
 <title>&Windows; Example</title>
-<para>You can add these switches in the desktop icon properties. Here is an example that runs &gcompris; in kiosk mode in full screen, without config button and cursor:</para>
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris-qt.exe" --disable-config -f -C</command></userinput></para>
+<para>You can add these switches in the desktop icon properties. Here is an example that runs &gcompris; in kiosk mode in full screen, without Configuration button and cursor:</para>
+<para><userinput><command>"C:\Program Files\Gcompris\gcompris-qt.exe" --disable-kiosk -f -C</command></userinput></para>
 </sect2>
 
 <sect2 id="gnu-linux-example">
 <title>&GNU;/&Linux; Example</title>
-<para>Create an application launcher and configure the command line parameters. Here is an example that runs &gcompris; in kiosk mode in full screen, without config button and cursor:</para> 
-<para><userinput><command>gcompris-qt --disable-config -f -C</command></userinput></para>
+<para>Create an application launcher and configure the command line parameters. Here is an example that runs &gcompris; in kiosk mode in full screen, without Config button and cursor:</para> 
+<para><userinput><command>gcompris-qt --disable-kiosk -f -C</command></userinput></para>
 </sect2>
 
 </sect1>
@@ -328,12 +336,7 @@ some text activities (like wordsgame), or make it show real car images instead o
 &gcompris;
 </para>
 <para>
-Program copyright 2000-2018 Bruno Coudoin and others
-</para>
-
-<para>
-Documentation Copyright see the 
-<ulink url="https://gcompris.net/mediawiki-1.31.0/index.php?title=Manual&amp;action=history">Manual page history</ulink>
+Program copyright 2000-2020 Timothée Giet and others
 </para>
 
 <!-- TRANS:CREDIT_FOR_TRANSLATORS -->
