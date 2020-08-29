@@ -132,10 +132,11 @@ Item {
             id: backgroundMusicName
             height: 30 * ApplicationInfo.ratio
             width: background.width * 0.8
+            enabled: backgroundMusic.playbackState === Audio.PlayingState
             text: {
-                if(backgroundMusic.playbackState != Audio.PlayingState)
+                if(backgroundMusic.playbackState !== Audio.PlayingState)
                     return qsTr("Not playing")
-                else if (backgroundMusic.metaDataMusic[0] != undefined)
+                else if (backgroundMusic.metaDataMusic[0] !== undefined)
                     return (qsTr("Title: %1  Artist: %2").arg(backgroundMusic.metaDataMusic[0]).arg(backgroundMusic.metaDataMusic[1]))
                 else if (String(backgroundMusic.source).slice(0, 37) === "qrc:/gcompris/src/core/resource/intro")
                     return qsTr("Introduction music")
