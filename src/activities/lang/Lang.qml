@@ -82,14 +82,14 @@ ActivityBase {
 
         onStart: {
             Activity.init(items)
-            dialogActivityConfig.getInitialConfiguration()
+            dialogActivityConfig.initialize()
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
             Activity.start()
         }
 
         onStop: {
-            dialogActivityConfig.saveDatainConfiguration()
+            dialogActivityConfig.saveData()
             Activity.stop()
         }
 
@@ -115,7 +115,7 @@ ActivityBase {
             id: bar
             anchors.bottom: keyboardArea.top
             content: menuScreen.started ? withConfig : withoutConfig
-            property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
+            property BarEnumContent withConfig: BarEnumContent { value: help | home | activityConfig }
             property BarEnumContent withoutConfig: BarEnumContent { value: help | home }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -130,9 +130,7 @@ ActivityBase {
                 else
                     home()
             }
-            onConfigClicked: {
-                dialogActivityConfig.active = true
-                dialogActivityConfig.setDefaultValues()
+            onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
         }
@@ -169,100 +167,34 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 
-        DialogActivityConfig {
+        DialogChooseLevel {
             id: dialogActivityConfig
-            currentActivity: activity
-            property string configurationLocale: "system"
-
-            content: Component {
-                Item {
-                    property alias localeBox: localeBox
-                    height: column.height
-
-                    property alias availableLangs: langs.languages
-                    LanguageList {
-                        id: langs
-                    }
-
-                    Column {
-                        id: column
-                        spacing: 10
-                        width: parent.width
-
-                        Flow {
-                            spacing: 5
-                            width: dialogActivityConfig.width
-                            GCComboBox {
-                                id: localeBox
-                                model: langs.languages
-                                background: dialogActivityConfig
-                                width: dialogActivityConfig.width
-                                label: qsTr("Select your locale")
-                            }
-                        }
-                    }
-                }
-            }
-
-            function setLocale(localeToSet) {
-                // Store the locale as-is to be displayed in menu
-                configurationLocale = localeToSet
-                items.locale = Core.resolveLocale(localeToSet)
-            }
-
-            onLoadData: {
-                if(!dataToSave)
-                    return
-
-                if(dataToSave['locale']) {
-                    setLocale(dataToSave["locale"]);
-                }
-                else {
-                    setLocale(items.locale);
-                }
+            currentActivity: activity.activityInfo
+            onClose: {
+                home();
             }
             onSaveData: {
-                // Save the lessons status on the current locale
-                var oldLocale = configurationLocale
-                dataToSave[ApplicationInfo.getVoicesLocale(oldLocale)] =
-                        Activity.lessonsToSavedProperties(dataToSave)
+                // Save progress for the locale
+                activityData[ApplicationInfo.getVoicesLocale(items.locale)] =
+                                    Activity.lessonsToSavedProperties()
 
-                if(!dialogActivityConfig.loader.item)
-                    return
-
-                var newLocale =
-                        dialogActivityConfig.configItem.availableLangs[
-                            dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
-                // Remove .UTF-8
-                if(newLocale.indexOf('.') != -1) {
-                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                levelFolder = dialogActivityConfig.chosenLevels;
+                currentActivity.currentLevels = dialogActivityConfig.chosenLevels;
+                ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels);
+            }
+            onLoadData: {
+                if(activityData && activityData["activityLocale"]) {
+                    items.locale = activityData["activityLocale"];
                 }
-                dataToSave['locale'] = newLocale
-                setLocale(newLocale)
-
-                // Restart the activity with new information
-                if(oldLocale !== newLocale) {
-                    console.log("activity restarted")
-                    Activity.stop()
-                    Activity.start();
+                else {
+                    items.locale = Core.resolveLocale(items.locale);
                 }
             }
-
-
-            function setDefaultValues() {
-                var localeUtf8 = configurationLocale;
-                if(configurationLocale != "system") {
-                    localeUtf8 += ".UTF-8";
-                }
-
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
-                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
-                        break;
-                    }
-                }
+            onStartActivity: {
+                // Reload the locale information when restarting the activity
+                loadData()
+                background.start();
             }
-            onClose: home()
         }
     }
 

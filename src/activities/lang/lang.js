@@ -62,7 +62,7 @@ function start() {
 
     items.menuModel.clear()
     items.menuModel.append(lessons)
-    savedPropertiesToLessons(items.dialogActivityConfig.dataToSave)
+    savedPropertiesToLessons(items.dialogActivityConfig.activityData)
     sortByFavorites();
 
     if(!items.background.englishFallback) {
@@ -178,11 +178,11 @@ function clearVoiceQueue() {
 }
 
 function focusEventInput() {
-    if(items && items.menuScreen.opacity === 1) {
+    if(items && items.menuScreen && items.menuScreen.opacity === 1) {
         items.menuScreen.forceActiveFocus();
-    } else if(items && items.imageReview.opacity === 1 && items.imageReview.currentMiniGame === -1) {
+    } else if(items && items.imageReview && items.imageReview.opacity === 1 && items.imageReview.currentMiniGame === -1) {
         items.imageReview.forceActiveFocus();
-    } else if(items && items.imageReview.opacity === 1 && items.imageReview.currentMiniGame >= 0) {
+    } else if(items && items.imageReview && items.imageReview.opacity === 1 && items.imageReview.currentMiniGame >= 0) {
         items.imageReview.restoreMinigameFocus();
     }
 }
