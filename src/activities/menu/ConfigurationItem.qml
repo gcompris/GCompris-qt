@@ -219,10 +219,10 @@ Item {
         */
         GCDialogCheckBox {
             id: wordsetBox
-            checked: useWordset
-            text: enabled ? qsTr("Use full word image set") : qsTr("Full word image set is not installed")
+            checked: useWordset && DownloadManager.isDataRegistered("words")
+            text: checked ? qsTr("Use full word image set") : qsTr("Full word image set is not installed")
             visible: ApplicationInfo.isDownloadAllowed
-            enabled: DownloadManager.isDataRegistered("words")
+            enabled: false
             onCheckedChanged: {
                 if(checked) {
                     wordset = "data2/words/words.rcc";
@@ -234,7 +234,7 @@ Item {
             }
 
             function updateStatus() {
-                enabled = DownloadManager.isDataRegistered("words")
+                checked = DownloadManager.isDataRegistered("words")
             }
         }
 
@@ -545,7 +545,6 @@ Item {
         sectionVisibleBox.checked = sectionVisible
 
         wordset = useWordset ? ApplicationSettings.wordset : ""
-        wordsetBox.checked = useWordset
 
         baseFontSize = ApplicationSettings.baseFontSize
         fontLetterSpacing = ApplicationSettings.fontLetterSpacing
