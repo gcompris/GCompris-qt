@@ -31,7 +31,7 @@ Item {
     property string configurationLocale: "system"
     property bool easyModeImage: true
     property bool easyModeAudio: true
-    height: innerColumn.childrenRect.height
+    height: childrenRect.height
     width: if(background) background.width * 0.9
     property alias availableLangs: langs.languages
     LanguageList {
