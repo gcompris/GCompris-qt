@@ -115,7 +115,7 @@ with a control bar at the bottom.</para>
 about the activity. A simple click on the icon will lead you to an activity or a menu of activities. There are 8 sections 
 (categories) of activities, which placed on the top or on the left (only if your orientation is portrait). For example, 
 there is section "Board games", which includes board games, like chess, tic tac toe or align four.</para>
-<para>Some categories have subcategories to better filter the activities. For math activities,we have three subcategories: numeration, arithmetic and measures.</para>
+<para>Some categories have subcategories to better filter the activities. For math activities, we have three subcategories: numeration, arithmetic and measures.</para>
 <para>The stars indicate the age group for which each game is designed:</para> 
 <itemizedlist>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject>
@@ -148,7 +148,7 @@ to be described easily in the description area. In this case, this function give
 </inlinemediaobject> Tool box - Configuration menu. The configuration is saved in the user repository (folder) 
 under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_activity_config.svg" format="SVG"/></imageobject>
-</inlinemediaobject> List item - Display the activity settings menu. There are two possible information here. We can choose the levels of the activities depending on several objectives and we can update the configuration of the activity if available. </para></listitem>
+</inlinemediaobject> List item - Display the activity settings menu. There are two possible tabs here. First one, "Dataset", allows to choose the levels of the activities depending on several objectives and the second one, "Options", allows to update the configuration of the activity if available. </para></listitem>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_about.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Capital "G" - Information box on &gcompris;, presents the main contributors and the version of the software.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject>
@@ -226,6 +226,10 @@ in the configuration menu. Do not forget to download the optional audio modules 
 
 <sect1 id="customizing-activities">
 <title>Customizing activities</title>
+<para>You can customize some activities using the configuration button in them.
+For example, you can set the locale in some text activities (like wordsgame), 
+or make it show real car images instead of filled rectangles (traffic).</para>
+
 <para>For multiple activities, you can choose several datasets in the configuration. Each one has a specific objective which is described.</para>
 <screenshot>
 <screeninfo>Dataset of activity "Count the items"</screeninfo>
@@ -239,9 +243,7 @@ in the configuration menu. Do not forget to download the optional audio modules 
   </mediaobject>
 </screenshot>
 
-<para>You can customize some activities using the configuration button in them.
-For example, you can set the locale in some text activities (like wordsgame), 
-or make it show real car images instead of filled rectangles (traffic)</para>
+<para>You can choose the options for this activity.</para>
 <screenshot>
 <screeninfo>Select mode of activity "Count the items"</screeninfo>
   <mediaobject>
