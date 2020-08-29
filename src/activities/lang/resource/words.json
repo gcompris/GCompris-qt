@@ -1037,7 +1037,7 @@
                         "voice": "voices-$CA/$LOCALE/words/mauve.$CA"
                     },
                     {
-                        "description": "orange color",
+                        "description": "orange",
                         "image": "words/orange-color.png",
                         "voice": "voices-$CA/$LOCALE/words/orange-color.$CA"
                     },
