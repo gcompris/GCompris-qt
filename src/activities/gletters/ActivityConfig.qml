@@ -35,6 +35,7 @@ Item {
     property string locale: "system"
     property string configurationLocale: "system"
     width: if(background) background.width
+    height: childrenRect.height
     property alias availableLangs: langs.languages
     LanguageList {
         id: langs
