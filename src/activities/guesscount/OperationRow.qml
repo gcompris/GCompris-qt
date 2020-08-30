@@ -35,7 +35,7 @@ Row {
     property bool complete
     property bool prevComplete
     property bool reparent
-    property var prevText
+    property var prevText: ""
     property string text: endResult.text
     Component {
         id: component1
@@ -83,7 +83,7 @@ Row {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fontSize: mediumSize
-                text: ""
+                text: prevText
             }
         }
     }
