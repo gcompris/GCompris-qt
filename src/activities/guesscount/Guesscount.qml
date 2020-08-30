@@ -31,7 +31,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
     property bool needRestart: true
-    property bool dataSave: false
 
     pageComponent: Image {
         id: background
@@ -75,7 +74,7 @@ ActivityBase {
         }
 
         onStart: if (activity.needRestart) {
-                     Activity.start(items, dataSave);
+                     Activity.start(items);
                      activity.needRestart = false;
                  }
                  else
@@ -219,7 +218,6 @@ ActivityBase {
                 currentActivity.currentLevels = dialogActivityConfig.chosenLevels
                 ApplicationSettings.setCurrentLevels(currentActivity.name, dialogActivityConfig.chosenLevels)
                 activity.needRestart = true
-                activity.dataSave = true
             }
             onClose: {
                 if(Activity.configDone(items.levelArr)){

@@ -98,7 +98,6 @@ Item {
                 delegate: Admin {
                     id: levels
                     level: modelData
-                    levelOperators: activityConfiguration.adminLevelArr
                     width: column.width * 1.2
                     height: column.height / 1.5
                 }

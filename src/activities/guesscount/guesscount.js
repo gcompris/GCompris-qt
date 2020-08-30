@@ -37,12 +37,10 @@ var numberOfLevel = Data.levelSchema.length
 var items
 var dataItems
 var levelSchema
-var dataSave
 
-function start(items_, datasave_) {
+function start(items_) {
     items = items_
     currentLevel = 0
-    dataSave = datasave_
     initLevel()
 }
 

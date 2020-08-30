@@ -28,7 +28,6 @@ Row {
     id: admin
     spacing: 20
     property int level
-    property var levelOperators
     Rectangle {
         id: operator
         width: parent.width*0.23
@@ -62,12 +61,12 @@ Row {
                 anchors.fill: parent
                 onClicked: {
                     if(tile.state == "selected") {
-                        if(levelOperators[level].length > 1) {
+                        if(activityConfiguration.adminLevelArr[level].length > 1) {
                             tile.state = "notselected"
                             activityConfiguration.adminLevelArr[level].splice(activityConfiguration.adminLevelArr[level].indexOf(modelData), 1)
                         }
                     }
-                    else{
+                    else {
                         tile.state = "selected"
                         activityConfiguration.adminLevelArr[level].push(modelData)
                     }
