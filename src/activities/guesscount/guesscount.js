@@ -38,7 +38,6 @@ var items
 var dataItems
 var levelSchema
 var dataSave
-var adminLevelArr = Data.defaultOperators
 
 function start(items_, datasave_) {
     items = items_
@@ -182,9 +181,9 @@ function checkAnswer(row) {
 }
 
 function sync(array, level) {
-    if(Boolean(dataSave)) {
+    if(Boolean(dataSave))
         items.levelArr = array
-    }
+
 }
 
 function check(operator, array) {

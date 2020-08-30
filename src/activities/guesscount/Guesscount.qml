@@ -232,6 +232,7 @@ ActivityBase {
                     items.mode = activityData["mode"]
                     if(activityData["levelArr"] === undefined) {
                         items.levelArr = activityData["levelArr"]
+
                     }
                     if(activityData["levelArr"]) {
                         items.levelArr = activityData["levelArr"]

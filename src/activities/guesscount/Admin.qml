@@ -64,14 +64,14 @@ Row {
                     if(tile.state == "selected") {
                         if(levelOperators[level].length > 1) {
                             tile.state = "notselected"
-                            Activity.adminLevelArr[level].splice(Activity.adminLevelArr[level].indexOf(modelData), 1)
-                            Activity.sync(Activity.adminLevelArr, level)
+                            activityConfiguration.adminLevelArr[level].splice(activityConfiguration.adminLevelArr[level].indexOf(modelData), 1)
+                            Activity.sync(activityConfiguration.adminLevelArr, level)
                         }
                     }
                     else{
                         tile.state = "selected"
-                        Activity.adminLevelArr[level].push(modelData)
-                        Activity.sync(Activity.adminLevelArr, level)
+                        activityConfiguration.adminLevelArr[level].push(modelData)
+                        Activity.sync(activityConfiguration.adminLevelArr, level)
                     }
                 }
             }

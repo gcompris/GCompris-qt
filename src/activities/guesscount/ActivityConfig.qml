@@ -22,15 +22,13 @@ import QtQuick 2.6
 import GCompris 1.0
 
 import "../../core"
-import "guesscount.js" as Activity
-
 
 Item {
     id: activityConfiguration
     property Item background
     property alias modeBox: modeBox
     property int numberOfLevel: 8
-    property var adminLevelArr: Activity.adminLevelArr
+    property var adminLevelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
