@@ -31,10 +31,10 @@ ActivityInfo {
   goal: qsTr("Create a line of 4 tokens either horizontally (lying down), vertically (standing up) or diagonally.")
   //: Help manual
   manual: qsTr("Play with the computer. Take turns to click the line in which you want to drop a token. The first player to create a line of 4 tokens wins.") + ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Left arrow: move the token to the left") + ("<br>") +
-          qsTr("-Right arrow: move the token to the right") + ("<br>") +
-          qsTr("-Space or Down arrow: drop the token")
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Left arrow: move the token to the left") + ("</li><li>") +
+          qsTr("Right arrow: move the token to the right") + ("</li><li>") +
+          qsTr("Space or Down arrow: drop the token") + ("</li></ul>")
   credit: ""
   section: "strategy"
   createdInVersion: 0
