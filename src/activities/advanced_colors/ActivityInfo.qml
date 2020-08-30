@@ -25,12 +25,12 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Advanced colors")
   //: Help title
-  description: qsTr("Select the butterfly of the correct color")
+  description: qsTr("Select the butterfly of the correct color.")
   //intro: "click on the required color"
   //: Help goal
   goal: qsTr("Learn to recognize unusual colors.")
   //: Help prerequisite
-  prerequisite: qsTr("Can read")
+  prerequisite: qsTr("Can read.")
   //: Help manual
   manual: qsTr("You will see dancing butterflies of different colors and a question. You have to find the correct butterfly and touch it.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +
