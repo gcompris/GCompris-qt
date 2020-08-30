@@ -33,10 +33,10 @@ ActivityInfo {
   prerequisite: qsTr("Subtraction of small numbers.")
   //: Help manual
   manual: qsTr("A subtraction is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!") + ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Digits: type your answer") + ("<br>") +
-          qsTr("-Backspace: delete the last digit in your answer") + ("<br>") +
-          qsTr("-Enter: validate your answer")
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Digits: type your answer") + ("</li><li>") +
+          qsTr("Backspace: delete the last digit in your answer") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "math subtraction arithmetic"
   createdInVersion: 0
