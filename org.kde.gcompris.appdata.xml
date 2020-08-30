@@ -867,7 +867,7 @@
   </screenshots>
   <url type="homepage">https://gcompris.net/</url>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
-  <url type="help">https://gcompris.net/wiki/Manual</url>
+  <url type="help">https://docs.kde.org/?application=gcompris</url>
   <url type="donation">https://gcompris.net/donate-en.html</url>
   <url type="translate">https://gcompris.net/wiki/Developer%27s_corner#Translation</url>
   <update_contact>gcompris-devel@kde.org</update_contact>
