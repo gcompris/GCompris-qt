@@ -32,7 +32,11 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Multiplication tables from 1 to 10")
   //: Help manual
-  manual: qsTr("A multiplication is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins in their balloon land!")
+  manual: qsTr("A multiplication is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins in their balloon land!") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
+          qsTr("-Digits: type your answer") + ("<br>") +
+          qsTr("-Backspace: delete the last digit in your answer") + ("<br>") +
+          qsTr("-Enter: validate your answer")
   credit: ""
   section: "math multiplication arithmetic"
   createdInVersion: 0
