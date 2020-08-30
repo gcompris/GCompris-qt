@@ -113,6 +113,8 @@ Item {
         if(dataToSave["levelArr"] === undefined) {
             dataToSave["levelArr"] = activityConfiguration.adminLevelArr
         }
+        else
+            activityConfiguration.adminLevelArr = dataToSave["levelArr"]
 
         if(dataToSave["mode"] === undefined) {
             dataToSave["mode"] = "builtin";

@@ -51,7 +51,7 @@ Row {
             height: parent.height
             radius: 20
             opacity: 0.7
-            state: Activity.check(modelData, levelOperators[level]) ? "selected" : "notselected"
+            state: Activity.check(modelData, activityConfiguration.adminLevelArr[level]) ? "selected" : "notselected"
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -65,13 +65,11 @@ Row {
                         if(levelOperators[level].length > 1) {
                             tile.state = "notselected"
                             activityConfiguration.adminLevelArr[level].splice(activityConfiguration.adminLevelArr[level].indexOf(modelData), 1)
-                            Activity.sync(activityConfiguration.adminLevelArr, level)
                         }
                     }
                     else{
                         tile.state = "selected"
                         activityConfiguration.adminLevelArr[level].push(modelData)
-                        Activity.sync(activityConfiguration.adminLevelArr, level)
                     }
                 }
             }

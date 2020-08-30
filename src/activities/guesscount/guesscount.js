@@ -180,12 +180,6 @@ function checkAnswer(row) {
     }
 }
 
-function sync(array, level) {
-    if(Boolean(dataSave))
-        items.levelArr = array
-
-}
-
 function check(operator, array) {
     for (var i in array) {
         if(array[i] == operator) {
