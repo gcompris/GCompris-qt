@@ -25,12 +25,12 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Subtraction of numbers")
   //: Help title
-  description: qsTr("Practice the subtraction operation")
+  description: qsTr("Practice the subtraction operation.")
 //  intro: "Subtract the two numbers and type in your answer before the balloon lands in the water"
   //: Help goal
-  goal: qsTr("Learn to find the difference between two numbers within a limited period of time")
+  goal: qsTr("Learn to find the difference between two numbers within a limited period of time.")
   //: Help prerequisite
-  prerequisite: qsTr("Subtraction of small numbers")
+  prerequisite: qsTr("Subtraction of small numbers.")
   //: Help manual
   manual: qsTr("A subtraction is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +

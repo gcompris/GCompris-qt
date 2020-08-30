@@ -25,12 +25,12 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Addition of numbers")
   //: Help title
-  description: qsTr("Practice the addition of numbers")
+  description: qsTr("Practice the addition of numbers.")
 //  intro: "Add the two numbers together and type in your answer before the balloon lands in the water"
   //: Help goal
-  goal: qsTr("Learn to find the sum of two numbers within a limited period of time")
+  goal: qsTr("Learn to find the sum of two numbers within a limited period of time.")
   //: Help prerequisite
-  prerequisite: qsTr("Simple addition. Can recognize written numbers")
+  prerequisite: qsTr("Simple addition. Can recognize written numbers.")
   //: Help manual
   manual: qsTr("An addition is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins land in their balloon!") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +

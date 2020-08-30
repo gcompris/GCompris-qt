@@ -25,12 +25,12 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Division of numbers")
   //: Help title
-  description: qsTr("Practice the division operation")
+  description: qsTr("Practice the division operation.")
   //  intro: "Find the result of the division and type in your answer before the balloon lands in the water"
   //: Help goal
-  goal: qsTr("Find the result of the division within a limited period of time")
+  goal: qsTr("Find the result of the division within a limited period of time.")
   //: Help prerequisite
-  prerequisite: qsTr("Division of small numbers")
+  prerequisite: qsTr("Division of small numbers.")
   //: Help manual
   manual: qsTr("A division is displayed on the screen. Quickly find the result and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +
