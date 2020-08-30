@@ -178,15 +178,6 @@ function checkAnswer(row) {
     }
 }
 
-function check(operator, array) {
-    for (var i in array) {
-        if(array[i] == operator) {
-            return true
-        }
-    }
-    return false
-}
-
 function configDone(array) {
     for(var i in array) {
         if(array[i].length == 0) {

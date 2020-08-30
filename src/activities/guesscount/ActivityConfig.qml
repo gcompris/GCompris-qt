@@ -30,6 +30,9 @@ Item {
     property int numberOfLevel: 8
     property var adminLevelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     width: if(background) background.width
+
+    signal refreshAdmin
+
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
         { "text": qsTr("BuiltIn"), "value": "builtin" }
@@ -100,6 +103,11 @@ Item {
                     level: modelData
                     width: column.width * 1.2
                     height: column.height / 1.5
+
+                    Connections {
+                        target: activityConfiguration
+                        onRefreshAdmin: levels.refreshAllTiles();
+                    }
                 }
             }
         }
@@ -125,6 +133,7 @@ Item {
                 break;
             }
         }
+        refreshAdmin()
     }
 
     function saveValues() {

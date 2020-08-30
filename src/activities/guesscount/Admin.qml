@@ -22,7 +22,6 @@
 
 import QtQuick 2.6
 import "../../core"
-import "guesscount.js" as Activity
 
 Row {
     id: admin
@@ -43,6 +42,7 @@ Row {
         }
     }
     Repeater {
+        id: tileRepeater
         model: ['+','-','*','/']
         delegate: Rectangle {
             id: tile
@@ -50,7 +50,16 @@ Row {
             height: parent.height
             radius: 20
             opacity: 0.7
-            state: Activity.check(modelData, activityConfiguration.adminLevelArr[level]) ? "selected" : "notselected"
+            state: activityConfiguration.adminLevelArr.indexOf(modelData) != -1 ? "selected" : "notselected"
+
+            function refreshTile() {
+                if(activityConfiguration.adminLevelArr.indexOf(modelData) != -1) {
+                    state = "selected"
+                  }
+                else {
+                    state = "notselected"
+                }
+            }
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
@@ -83,5 +92,10 @@ Row {
                 }
             ]
         }
+    }
+    function refreshAllTiles() {
+       for(var i = 0; i < tileRepeater.count; i++) {
+           tileRepeater.itemAt(i).refreshTile()
+       }
     }
 }
