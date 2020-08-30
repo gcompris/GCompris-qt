@@ -33,9 +33,9 @@ ActivityInfo {
   prerequisite: qsTr("Can read.")
   //: Help manual
   manual: qsTr("You will see dancing butterflies of different colors and a question. You have to find the correct butterfly and touch it.") + ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Arrows: navigate") + ("<br>") +
-          qsTr("-Space or Enter: select an item")
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: select an item") + ("</li></ul>")
   credit: ""
   section: "reading colors vocabulary"
   createdInVersion: 0
