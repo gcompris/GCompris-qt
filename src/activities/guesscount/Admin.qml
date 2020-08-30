@@ -50,10 +50,10 @@ Row {
             height: parent.height
             radius: 20
             opacity: 0.7
-            state: activityConfiguration.adminLevelArr.indexOf(modelData) != -1 ? "selected" : "notselected"
+            state: activityConfiguration.adminLevelArr[level].indexOf(modelData) != -1 ? "selected" : "notselected"
 
             function refreshTile() {
-                if(activityConfiguration.adminLevelArr.indexOf(modelData) != -1) {
+                if(activityConfiguration.adminLevelArr[level].indexOf(modelData) != -1) {
                     state = "selected"
                   }
                 else {
