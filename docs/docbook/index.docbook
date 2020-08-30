@@ -124,7 +124,7 @@ there is section "Board games", which includes board games, like chess, tic tac 
 </inlinemediaobject>1, 2 or 3 red stars - greater than 6 years old.</para></listitem> 
 </itemizedlist>
 
-<para>At the bottom of the screen there is a control bar for &gcompris;. The possible icons are: (the icons are only displayed if they are available in the activity):</para>
+<para>At the bottom of the screen there is a control bar for &gcompris;. The possible icons are (the icons are only displayed if they are available in the activity):</para>
 <itemizedlist>
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_home.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Home - Leaves the current activity, returns to the previous menu.</para></listitem> 
@@ -162,7 +162,7 @@ under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a te
 <para>When you use &gcompris; with small children or on a self-service kiosk, you can disable a certain number of options:</para>
 <itemizedlist>
 <listitem><para><userinput><command>gcompris --enable-kioskmode</command></userinput> : disable the <guiicon>Quit</guiicon> and <guiicon>Configuration</guiicon> buttons.</para></listitem> 
-<listitem><para><userinput><command>gcompris --diable-kioskmode</command></userinput> : enable the <guiicon>Quit</guiicon> and <guiicon>Configuration</guiicon> buttons.</para></listitem>
+<listitem><para><userinput><command>gcompris --disable-kioskmode</command></userinput> : enable the <guiicon>Quit</guiicon> and <guiicon>Configuration</guiicon> buttons.</para></listitem>
 <listitem><para><userinput><command>gcompris -f</command></userinput> : run &gcompris; in fullscreen mode</para></listitem> 
 <listitem><para><userinput><command>gcompris -C</command></userinput> : disable the cursor (touch screen mode)</para></listitem> 
 </itemizedlist>
@@ -180,23 +180,23 @@ under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a te
 </row>
 <row>
 <entry>&Esc; or <keycombo action="simul">&Ctrl;<keycap>W</keycap></keycombo></entry>
-<entry>Quit the current activity or dialog then return to the main menu</entry>
+<entry>Quit the current activity or dialog then return to the main menu.</entry>
 </row>
 <row>
 <entry><keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo></entry>
-<entry>Quit &gcompris; without further notice</entry>
+<entry>Quit &gcompris; without further notice.</entry>
 </row>
 <row>
 <entry><keycombo action="simul">&Ctrl;<keycap>F</keycap></keycombo></entry>
-<entry>Toggle fullscreen mode</entry>
+<entry>Toggle fullscreen mode.</entry>
 </row>
 <row>
 <entry><keycombo action="simul">&Ctrl;<keycap>M</keycap></keycombo></entry>
-<entry>Toggle sound mute</entry>
+<entry>Toggle sound mute.</entry>
 </row>
 <row>
 <entry><keycombo action="simul">&Ctrl;<keycap>B</keycap></keycombo></entry>
-<entry>Display or Hide the control bar</entry>
+<entry>Display or Hide the control bar.</entry>
 </row>
 </tbody>
 </tgroup>
@@ -265,51 +265,51 @@ or make it show real car images instead of filled rectangles (traffic).</para>
 <tbody>
 <row>
 <entry>-f, --fullscreen</entry>
-<entry>Run &gcompris; in fullscreen mode</entry>
+<entry>Run &gcompris; in fullscreen mode.</entry>
 </row>
 <row>
 <entry>-w, --window</entry>
-<entry>Run &gcompris; in window mode</entry>
+<entry>Run &gcompris; in window mode.</entry>
 </row>
 <row>
 <entry>-s, --sound</entry>
-<entry>Run &gcompris; with sound enabled</entry>
+<entry>Run &gcompris; with sound enabled.</entry>
 </row>
 <row>
 <entry>-m, --mute</entry>
-<entry>Run &gcompris; without sound</entry>
+<entry>Run &gcompris; without sound.</entry>
 </row>
 <row>
 <entry>-c, --cursor</entry>
-<entry>Run &gcompris; with the default system cursor</entry>
+<entry>Run &gcompris; with the default system cursor.</entry>
 </row>
 <row>
 <entry>-C, --nocursor</entry>
-<entry>Run &gcompris; without cursor (touch screen mode)</entry>
+<entry>Run &gcompris; without cursor (touch screen mode).</entry>
 </row>
 <row>
 <entry>-v, --version</entry>
-<entry>Print the version of &gcompris;</entry>
+<entry>Print the version of &gcompris;.</entry>
 </row>
 <row>
 <entry>--export-activities-as-sql</entry>
-<entry>Export activities as SQL</entry>
+<entry>Export activities as SQL.</entry>
 </row>
 <row>
 <entry>--enable-kioskmode</entry>
-<entry>Enable the kiosk mode (hides Quit and Configuration buttons)</entry>
+<entry>Enable the kiosk mode (hides Quit and Configuration buttons).</entry>
 </row>
 <row>
 <entry>--disable-kioskmode</entry>
-<entry>Disable the kiosk mode (default)</entry>
+<entry>Disable the kiosk mode (default).</entry>
 </row>
 <row>
 <entry>--software-renderer</entry>
-<entry>Use software renderer instead of openGL (should work with any graphical card)</entry>
+<entry>Use software renderer instead of openGL (should work with any graphical card).</entry>
 </row>
 <row>
 <entry>--opengl-renderer</entry>
-<entry>Use openGL renderer instead of software (faster and more graphical effects but can crash with some graphical cards)</entry>
+<entry>Use openGL renderer instead of software (faster and more graphical effects but can crash with some graphical cards).</entry>
 </row>
 </tbody>
 </tgroup>
