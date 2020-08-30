@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Analog Electricity")
   //: Help title
-  description: qsTr("Create and simulate an analog electric schema")
+  description: qsTr("Create and simulate an analog electric schema.")
   //intro: "Learn how analog electricity works and create your own circuit."
   //: Help goal
   goal: qsTr("Create an analog electric schema with a real time simulation.")
