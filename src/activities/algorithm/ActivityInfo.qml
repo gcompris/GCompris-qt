@@ -25,10 +25,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Logical associations")
   //: Help title
-  description: qsTr("Complete the arrangement of fruits")
+  description: qsTr("Complete the arrangement of fruits.")
 //  intro: "Click on the missing items on the table and follow the logical sequence displayed above it."
   //: Help goal
-  goal: qsTr("Logic training activity")
+  goal: qsTr("Logic training activity.")
   //: Help manual
   manual: qsTr("Look at the two sequences. Each fruit in the first sequence has been replaced by another fruit in the second sequence. Complete the second sequence by using the correct fruits, after studying this pattern.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<br>") +
