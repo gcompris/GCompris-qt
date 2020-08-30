@@ -33,8 +33,8 @@ ActivityInfo {
     prerequisite: qsTr("Can decode letters.")
     //: Help manual
     manual: qsTr("Catch the alphabet letters. With a keyboard use the arrow keys to move the helicopter. With a pointing device you just click or tap on the target location. To know which letter you have to catch you can either remember it or check the bottom right corner.") + ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Arrows: move the helicopter")
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the helicopter") + ("</li></ul>")
     credit: ""
     section: "reading letters"
     createdInVersion: 0
