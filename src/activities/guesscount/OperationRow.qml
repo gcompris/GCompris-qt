@@ -83,7 +83,7 @@ Row {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fontSize: mediumSize
-                text: prevText
+                text: ""
             }
         }
     }
