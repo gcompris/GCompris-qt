@@ -30,7 +30,7 @@ Item {
     property Item background
     property alias modeBox: modeBox
     property int numberOfLevel: 8
-    property var levelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
+    property var adminLevelArr: Activity.adminLevelArr
     width: if(background) background.width
     property var availableModes: [
         { "text": qsTr("Admin"), "value": "admin" },
@@ -46,12 +46,15 @@ Item {
             model: availableModes
             background: activityConfiguration.background
             label: qsTr("Select your mode")
-            onCurrentIndexChanged: if(currentIndex === 0) {
-                                       datasetVisible = false
-                                       optionsVisibleButton.clicked()
-                                   }
-                                    else
-                                        datasetVisible = true
+            onCurrentIndexChanged: {
+                if(currentIndex === 0) {
+                    datasetVisible = false
+                    optionsVisibleButton.clicked()
+                }
+                else
+                    datasetVisible = true
+            }
+
         Row {
             id: labels
             spacing: 20
@@ -97,7 +100,7 @@ Item {
                 delegate: Admin {
                     id: levels
                     level: modelData
-                    levelOperators: activityConfiguration.levelArr
+                    levelOperators: activityConfiguration.adminLevelArr
                     width: column.width * 1.2
                     height: column.height / 1.5
                 }
@@ -110,7 +113,7 @@ Item {
     function setDefaultValues() {
 
         if(dataToSave["levelArr"] === undefined) {
-            dataToSave["levelArr"] = activityConfiguration.levelArr
+            dataToSave["levelArr"] = activityConfiguration.adminLevelArr
         }
 
         if(dataToSave["mode"] === undefined) {
@@ -127,7 +130,7 @@ Item {
 
     function saveValues() {
         var newMode = availableModes[modeBox.currentIndex].value;
-        var updatedArr = activityConfiguration.levelArr
+        var updatedArr = activityConfiguration.adminLevelArr
         dataToSave = {"mode": newMode, "levelArr": updatedArr};
     }
 }
