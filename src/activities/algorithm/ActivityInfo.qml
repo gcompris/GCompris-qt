@@ -30,7 +30,10 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Logic training activity")
   //: Help manual
-  manual: qsTr("Look at the two sequences. Each fruit in the first sequence has been replaced by another fruit in the second sequence. Complete the second sequence by using the correct fruits, after studying this pattern.")
+  manual: qsTr("Look at the two sequences. Each fruit in the first sequence has been replaced by another fruit in the second sequence. Complete the second sequence by using the correct fruits, after studying this pattern.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
+          qsTr("-Arrows: navigate") + ("<br>") +
+          qsTr("-Space or Enter: select an item")
   credit: ""
   section: "discovery logic"
   createdInVersion: 0
