@@ -36,6 +36,18 @@ Rectangle {
     radius: 20
     visible: false
     z: 2000
+    focus: true
+
+    onVisibleChanged: {
+        if(visible) {
+            creationHandler.forceActiveFocus();
+            parent.Keys.enabled = false;
+            dialogOpened = false;
+        } else {
+            parent.Keys.enabled = true;
+            parent.forceActiveFocus();
+        }
+    }
 
     signal close
     signal fileLoaded(var data, var filePath)
@@ -56,6 +68,7 @@ Rectangle {
 
     property var dataToSave
     property bool isSaveMode: false
+    property bool dialogOpened: false
     readonly property string activityName: ActivityInfoTree.currentActivity.name.split('/')[0]
     readonly property string sharedDirectoryPath: ApplicationSettings.userDataPath + "/" + activityName + "/"
     readonly property string fileSavePath: "file://" + sharedDirectoryPath + '/' + fileNameInput.text + ".json"
@@ -78,24 +91,20 @@ Rectangle {
         onError: console.error("Error parsing JSON: " + msg);
     }
 
-    Loader {
-        id: replaceFileDialog
-        sourceComponent: GCDialog {
-            parent: activity
-            isDestructible: false
-            message: qsTr("A file with this name already exists. Do you want to replace it?")
-            button1Text: qsTr("Yes")
-            button2Text: qsTr("No")
-            onButton1Hit: {
-                writeData()
-                active = false
-            }
-            onButton2Hit: active = false
+    Timer {
+        id: restoreFocusTimer
+        interval: 500
+        onTriggered: {
+            dialogOpened = false;
         }
-        anchors.fill: parent
-        focus: true
-        active: false
-        onStatusChanged: if (status == Loader.Ready) item.start()
+    }
+
+    Timer {
+        id: writeDataTimer
+        interval: 500
+        onTriggered:  {
+            writeData();
+        }
     }
 
     function refreshWindow(filterText) {
@@ -128,16 +137,17 @@ Rectangle {
     }
 
     function deleteFile() {
+        dialogOpened = true;
         var filePath = "file://" + sharedDirectoryPath + fileNames.get(viewContainer.selectedFileIndex).name
         if(file.rmpath(filePath)) {
             Core.showMessageDialog(creationHandler,
                                    qsTr("%1 deleted successfully!").arg(filePath),
-                                   qsTr("Ok"), null, "", null, null);
+                                   qsTr("Ok"), null, "", null, function() { restoreFocusTimer.restart(); });
         }
         else {
             Core.showMessageDialog(creationHandler,
                                    qsTr("Unable to delete %1!").arg(filePath),
-                                   qsTr("Ok"), null, "", null, null);
+                                   qsTr("Ok"), null, "", null, function() { restoreFocusTimer.restart(); });
         }
 
         viewContainer.selectedFileIndex = -1
@@ -160,18 +170,26 @@ Rectangle {
             file.mkpath(sharedDirectoryPath)
 
         if(file.exists(fileSavePath)) {
-            replaceFileDialog.active = true
+            replaceFileDialog();
         }
         else
             writeData()
     }
 
+    function replaceFileDialog() {
+        dialogOpened = true;
+        Core.showMessageDialog(creationHandler,
+                               qsTr("A file with this name already exists. Do you want to replace it?"),
+                               qsTr("Yes"), function() { writeDataTimer.restart(); }, qsTr("No"), function() { restoreFocusTimer.restart(); }, null);
+    }
+
     function writeData() {
-        file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath)
+        dialogOpened = true;
+        file.write(JSON.stringify(creationHandler.dataToSave), fileSavePath);
         Core.showMessageDialog(creationHandler,
                                qsTr("Saved successfully!"),
-                               qsTr("Ok"), null, "", null, null);
-        refreshWindow()
+                               qsTr("Ok"), null, "", null, function() { restoreFocusTimer.restart(); });
+        refreshWindow();
     }
 
     function searchFiles() {
@@ -180,16 +198,16 @@ Rectangle {
     }
 
     TextField {
-    	id: fileNameInput
-    	width: parent.width / 2
-    	font.pointSize: NaN
-    	font.pixelSize: height * 0.6
-    	height: saveButton.height
-    	anchors.verticalCenter: saveButton.verticalCenter
-    	anchors.left: parent.left
-    	anchors.leftMargin: 20
-    	verticalAlignment: TextInput.AlignVCenter
-    	selectByMouse: true
+        id: fileNameInput
+        width: parent.width / 2
+        font.pointSize: NaN
+        font.pixelSize: height * 0.6
+        height: saveButton.height
+        anchors.verticalCenter: saveButton.verticalCenter
+        anchors.left: parent.left
+        anchors.leftMargin: 20
+        verticalAlignment: TextInput.AlignVCenter
+        selectByMouse: true
         maximumLength: 15
         placeholderText: creationHandler.isSaveMode ? qsTr("Enter file name") : qsTr("Search")
         onTextChanged: {
@@ -356,5 +374,44 @@ Rectangle {
         onDown: creationsList.flick(0, -1000)
         upVisible: creationsList.visibleArea.yPosition <= 0 ? false : true
         downVisible: creationsList.visibleArea.yPosition + creationsList.visibleArea.heightRatio >= 1 ? false : true
+    }
+
+    Keys.onEscapePressed: {
+        cancelButton.close();
+    }
+
+    Keys.onTabPressed: {
+        return;
+    }
+
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Left) {
+            if(viewContainer.selectedFileIndex > 0) {
+                viewContainer.selectedFileIndex -= 1;
+            } else {
+                viewContainer.selectedFileIndex = creationsList.count - 1;
+            }
+        }
+        if(event.key === Qt.Key_Right) {
+            if(viewContainer.selectedFileIndex < creationsList.count - 1) {
+                viewContainer.selectedFileIndex += 1;
+            } else {
+                viewContainer.selectedFileIndex = 0;
+            }
+        }
+        if(event.key === Qt.Key_Up || event.key === Qt.Key_Down) {
+            if(!dialogOpened)
+                fileNameInput.forceActiveFocus();
+        }
+    }
+
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Enter || event.key === Qt.Key_Return) {
+            if(saveButton.visible && !dialogOpened) {
+                saveButton.clicked();
+            } else if(buttonRow.visible && viewContainer.selectedFileIndex != -1){
+                loadButton.clicked();
+            }
+        }
     }
 }

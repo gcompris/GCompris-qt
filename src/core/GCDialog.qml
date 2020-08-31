@@ -267,6 +267,10 @@ Item {
         buttonCancel.close();
     }
 
+    Keys.onTabPressed: {
+        return;
+    }
+
     Keys.onPressed: {
         if(event.key === Qt.Key_Up || event.key === Qt.Key_Left) {
             if(button2.visible && !button1.selected && !button2.selected) {
