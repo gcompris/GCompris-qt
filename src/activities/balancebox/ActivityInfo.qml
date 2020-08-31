@@ -35,23 +35,24 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Navigate the ball to the door. Be careful not to make it fall into the holes. Numbered-contact buttons in the box need to be touched in the correct order to unlock the door. You can move the ball by tilting your mobile device. On desktop platforms use the arrow keys to simulate tilting.
+  manual: qsTr("Navigate the ball to the door. Be careful not to make it fall into the holes. Numbered-contact buttons in the box need to be touched in the correct order to unlock the door. You can move the ball by tilting your mobile device. On desktop platforms use the arrow keys to simulate tilting.") + ("<br><br>") +
 
-In the <b>configuration dialog</b> you can choose between the default 'Built-in' level set and one that you can define yourself ('User'). A user-defined level set can be created by choosing the 'user' level set and start the level editor by clicking on the corresponding button.
+    qsTr("In the <b>Activity Settings</b> you can choose between the default 'Built-in' level set and one that you can define yourself ('User'). A user-defined level set can be created by choosing the 'user' level set and start the level editor by clicking on the corresponding button.") + ("<br><br>") +
 
-In the <b>level editor</b> you can create your own levels. Choose one of the editing tools on the left side to modify the map cells of the currently active level in the editor:
-    Cross: Clear a map cell completely
-    Horizontal Wall: Set/remove a horizontal wall on the lower edge of a cell
-    Vertical Wall: Set/remove a vertical wall on the right edge of a cell
-    Hole: Set/remove a hole on a cell
-    Ball: Set the starting position of the ball
-    Door: Set the door position
-    Contact: Set/remove a contact button. With the spin-box you can adjust the value of the contact button. It is not possible to set a value more than once on a map.
-All tools (except the clear-tool) toggle their respective target on the clicked cell: An item can be placed by clicking on an empty cell, and by clicking again on the same cell with the same tool, you can remove it again.
-You can test a modified level by clicking on the 'Test' button on the right side of the editor view. You can return from testing mode by clicking on the home-button on the bar or by pressing escape on your keyboard or the back-button on your mobile device.
-In the editor you can change the level currently edited by using the arrow buttons on the bar. Back in the editor you can continue editing the current level and test it again if needed.
-When your level is finished you can save it to the user level file by clicking on the 'Save' button on the right side.
-To return to the configuration dialog click on the home-button on the bar or press Escape on your keyboard or the back button on your mobile device.")
+    qsTr("In the <b>level editor</b> you can create your own levels. Choose one of the editing tools on the side to modify the map cells of the currently active level in the editor:")+ ("<ul><li>") +
+    qsTr("Cross: clear a map cell completely") + ("</li><li>") +
+    qsTr("Horizontal Wall: add/remove a horizontal wall on the lower edge of a cell") + ("</li><li>") +
+    qsTr("Vertical Wall: add/remove a vertical wall on the right edge of a cell") + ("</li><li>") +
+    qsTr("Hole: add/remove a hole on a cell") + ("</li><li>") +
+    qsTr("Ball: set the starting position of the ball") + ("</li><li>") +
+    qsTr("Door: Set the door position") + ("</li><li>") +
+    qsTr("Contact: add/remove a contact button. With the spin-box you can adjust the value of the contact button. It is not possible to set a value more than once on a map.") + ("</li></ul>") +
+
+    qsTr("All tools (except the clear-tool) toggle their respective target on the clicked cell: An item can be placed by clicking on an empty cell, and by clicking again on the same cell with the same tool, you can remove it again.") + ("<br><br>") +
+    qsTr("You can test a modified level by clicking on the 'Test' button on the side of the editor view. You can return from testing mode by clicking on the home-button on the bar or by pressing escape on your keyboard or the back-button on your mobile device.") + ("<br><br>") +
+    qsTr("In the editor you can change the level currently edited by using the arrow buttons on the bar. Back in the editor you can continue editing the current level and test it again if needed.") +
+    qsTr("When your level is finished you can save it to the user level file by clicking on the 'Save' button on the side.") + ("<br><br>") +
+    qsTr("To return to the activity settings click on the home-button on the bar or press Escape on your keyboard or the back button on your mobile device.")
   credit: ""
   section: "mobile fun"
   enabled: ApplicationInfo.isBox2DInstalled && (!ApplicationInfo.isMobile || ApplicationInfo.sensorIsSupported("QTiltSensor"))

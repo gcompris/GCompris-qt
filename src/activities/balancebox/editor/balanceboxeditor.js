@@ -263,7 +263,7 @@ function warnUnsavedChanges(yesFunc, noFunc)
         warningVisible = true;
         Core.showMessageDialog(props.editor,
                                qsTr("You have unsaved changes!<br/> " +
-                                    "Really leave this level and lose changes?"),
+                                    "Do you really want to leave this level and lose your changes?"),
                                qsTr("Yes"), function() {
                                    warningVisible = false;
                                    if (yesFunc !== undefined)
