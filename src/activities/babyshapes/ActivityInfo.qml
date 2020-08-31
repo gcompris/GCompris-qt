@@ -29,14 +29,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Complete the puzzle")
   //: Help title
-  description: qsTr("Drag and Drop the shapes on their respective targets")
+  description: qsTr("Drag and Drop the shapes on their respective targets.")
 //  intro: "Drag and drop the objects matching the shapes."
   //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Complete the puzzle by dragging each piece from the set of pieces on the left, to the matching space in the puzzle.")
+  manual: qsTr("Complete the puzzle by dragging each piece on the side to the matching spot.")
   credit: qsTr("The dog is provided by Andre Connes and released under the GPL")
   section: "computer"
   createdInVersion: 4000

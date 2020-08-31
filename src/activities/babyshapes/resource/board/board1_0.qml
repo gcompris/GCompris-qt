@@ -22,7 +22,7 @@
 import QtQuick 2.6
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
+   property string instruction: qsTr("Drag and Drop the items to match them.")
 
    property var levels: [
       {
