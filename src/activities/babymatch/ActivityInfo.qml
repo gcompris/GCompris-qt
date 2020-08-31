@@ -28,14 +28,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Matching Items")
   //: Help title
-  description: qsTr("Drag and Drop the items to make them match")
+  description: qsTr("Drag and Drop the items to match them.")
 //  intro: "Drag and drop the objects matching the pictures"
   //: Help goal
   goal: qsTr("Motor coordination. Conceptual matching.")
   //: Help prerequisite
   prerequisite: qsTr("Cultural references.")
   //: Help manual
-  manual: qsTr("In the main board area, a set of objects is displayed. In the vertical box (at the left of the main board) another set of objects is shown, each object in the group on the left matching exactly one object in the main board area. This game challenges you to find the logical link between these objects. How do they fit together? Drag each object to the correct red space in the main area.")
+  manual: qsTr("In the main board area, a set of objects is displayed. In the side panel, another set of objects is shown. Each object in the side panel corresponds logically to one object in the main board area. Drag each object from the side panel to the correct spot in the main area.")
   credit: ""
   section: "reading vocabulary"
   createdInVersion: 4000
