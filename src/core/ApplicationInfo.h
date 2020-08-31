@@ -343,6 +343,16 @@ public:
      */
     Q_INVOKABLE void setKeepScreenOn(bool value);
 
+    /**
+     * Ask for permissions for reading/writing in storage for android.
+     * Do nothing for other platforms.
+     *
+     * https://developer.android.com/training/permissions/requesting
+     * https://doc.qt.io/qt-5/qtandroid.html#requestPermissions
+     * Needed for android above 6.0
+     */
+    bool checkPermissions() const;
+
     /// @endcond
 
 public slots:

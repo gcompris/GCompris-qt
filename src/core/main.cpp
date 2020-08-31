@@ -184,6 +184,9 @@ int main(int argc, char *argv[])
     // Tell media players to stop playing, it's GCompris time
     ApplicationInfo::getInstance()->requestAudioFocus();
 
+    // For android, request the permissions if not already allowed
+    ApplicationInfo::getInstance()->checkPermissions();
+
     // Disable default fullscreen launch on Mac as it's a bit broken, window is behind desktop bars
 #if defined(Q_OS_MAC)
     bool isFullscreen = false;

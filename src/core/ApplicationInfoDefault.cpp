@@ -57,3 +57,7 @@ int ApplicationInfo::localeCompare(const QString& a, const QString& b,
                                                : QLocale(_locale);
     return QCollator(l).compare(a, b);
 }
+
+bool ApplicationInfo::checkPermissions() const {
+    return true;
+}

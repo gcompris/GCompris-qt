@@ -87,3 +87,23 @@ int ApplicationInfo::localeCompare(const QString& a, const QString& b,
                    QAndroidJniObject::fromString(_locale).object<jstring>());
     return res;
 }
+
+// Code adapted from https://bugreports.qt.io/browse/QTBUG-50759
+bool ApplicationInfo::checkPermissions() const {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 10, 0)
+    const QStringList permissionsRequest = QStringList(
+                                                { QString("android.permission.READ_EXTERNAL_STORAGE"),
+                                                  QString("android.permission.WRITE_EXTERNAL_STORAGE") });
+    if((QtAndroid::checkPermission(permissionsRequest[0]) == QtAndroid::PermissionResult::Denied) ||
+       (QtAndroid::checkPermission(permissionsRequest[1])) == QtAndroid::PermissionResult::Denied) {
+        auto permissionResults = QtAndroid::requestPermissionsSync(permissionsRequest);
+        for(const QString &permission: permissionsRequest) {
+            if(permissionResults[permission] == QtAndroid::PermissionResult::Denied) {
+                qDebug() << "Permission denied for" << permission;
+                return false;
+            }
+        }
+    }
+#endif
+    return true;
+}
