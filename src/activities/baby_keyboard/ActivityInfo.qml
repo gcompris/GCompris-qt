@@ -28,7 +28,7 @@ ActivityInfo {
   description: qsTr("A simple activity to discover the keyboard.")
   //intro: "Type any key on the keyboard and observe the result."
   //: Help goal
-  goal: qsTr("Discover the keyboard")
+  goal: qsTr("Discover the keyboard.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
