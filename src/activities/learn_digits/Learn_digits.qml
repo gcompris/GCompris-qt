@@ -147,9 +147,10 @@ ActivityBase {
             sourceSize.width: repeatArea.height > repeatArea.width ?
                                     repeatArea.width * 0.6 : repeatArea.height * 0.6
             anchors.centerIn: repeatArea
-            onClicked:{
-                if(!items.inputLocked)
+            onClicked: {
+                if(!items.inputLocked && !audioVoices.isPlaying()) {
                     Activity.playLetter(items.question.toString());
+                }
             }
         }
 
