@@ -131,6 +131,10 @@ Item {
             audio.play()
     }
 
+    // Helper to know if there is already an audio playing
+    function isPlaying() {
+        return playbackState === Audio.PlayingState;
+    }
     /**
      * Plays back the audio resource @p file.
      *
