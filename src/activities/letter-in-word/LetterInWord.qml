@@ -213,8 +213,10 @@ ActivityBase {
                 margins: 10
             }
             onClicked:{
-                Activity.playLetter(Activity.currentLetter);
-                animateX.restart();
+                if(!audioVoices.isPlaying()) {
+                    Activity.playLetter(Activity.currentLetter);
+                    animateX.restart();
+                }
             }
         }
 
