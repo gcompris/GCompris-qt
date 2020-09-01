@@ -35,7 +35,6 @@ ActivityBase {
     onStop: {}
 
     property bool vert: background.width <= background.height
-    property var barAtStart
 
     pageComponent: Image {
         id: background
@@ -74,35 +73,31 @@ ActivityBase {
             property var categories: activity.datasetLoader.data
         }
 
-        function hideBar() {
-            barAtStart = ApplicationSettings.isBarHidden;
-            if(categoryReview.width >= categoryReview.height)
-                ApplicationSettings.isBarHidden = false;
-            else 
-                ApplicationSettings.isBarHidden = true;
-        }
-        
         onStart: {
             Activity.init(items)
             Activity.start()
-            hideBar()
         }
 
-        onStop: {
-            ApplicationSettings.isBarHidden = barAtStart;
-        }
-        
         MenuScreen {
             id: menuScreen
 
-        File {
-            id: file
-            onError: console.error("File error: " + msg);
-        }
+            File {
+                id: file
+                onError: console.error("File error: " + msg);
+            }
         }
 
-        CategoryReview {
-            id: categoryReview
+        Rectangle {
+            id: categoryArea
+            color: "#00ffffff"
+            anchors.top: background.top
+            anchors.bottom: bar.top
+            anchors.left: background.left
+            anchors.right: background.right
+            anchors.bottomMargin: bar.height * 0.2
+            CategoryReview {
+                id: categoryReview
+            }
         }
 
         DialogChooseLevel {
@@ -136,7 +131,7 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-        
+
         Bar {
             id: bar
             content: menuScreen.started ? withConfig : withoutConfig
@@ -167,11 +162,12 @@ ActivityBase {
             id: categoriesFallbackDialog
             sourceComponent: GCDialog {
                 parent: activity.main
+                isDestructible: false
                 message: qsTr("You don't have all the images for this activity. " +
-                              "Press Update to get the complete dataset. " +
-                              "Press the Cross to play with demo version or 'Never show this dialog later' if you want to never see again this dialog.")
+                              "Click on 'Update the image set' to download the full word image set. " +
+                              "Click on the cross or on 'Never show this dialog again' to play with the demo version.")
                 button1Text: qsTr("Update the image set")
-                button2Text: qsTr("Never show this dialog later")
+                button2Text: qsTr("Never show this dialog again")
                 onClose: items.categoriesFallback = false
                 onButton1Hit: DownloadManager.downloadResource('data2/words/words.rcc')
                 onButton2Hit: { items.displayUpdateDialogAtStart = false; items.dialogActivityConfig.saveData()}

@@ -23,6 +23,8 @@ import GCompris 1.0
 
 import "../../core"
 import "categorization.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
+
 
 Item {
     id: rootItem
@@ -41,6 +43,9 @@ Item {
     property alias leftScreen: leftScreen
     property alias middleScreen: middleScreen
     property alias rightScreen: rightScreen
+    property int itemWidth: Core.fitItems(middleScreen.width * 0.95, middleScreen.height * 0.94, 12)
+    property int zoneWidth: rootItem.width / 3
+    property int zoneSpacing: 0.012 * middleScreen.width
     anchors.fill: parent
 
     Loader {
@@ -56,46 +61,53 @@ Item {
 
         Zone {
             id: leftZone
-            x: 0.012 * middleScreen.width
+            anchors.centerIn: leftScreen
+            width: zoneWidth - zoneSpacing * 2
+            height: parent.height - zoneSpacing * 2
             z: 2
-            y: 0.05 * parent.height
-            spacing: x
+            spacing: zoneSpacing
         }
 
         Rectangle {
             id: leftScreen
-            width: parent.width/3
+            width: zoneWidth
             height: parent.height
+            anchors.top: parent.top
+            anchors.left: parent.left
             x: 0
             color: leftAreaContainsDrag ? "#F9F8B4" : "#F9B4B4"
-            border.width: 5
+            border.width: zoneSpacing
             border.color: "#EC1313"
             opacity: 0.5
         }
 
         Zone {
             id: rightZone
-            spacing: leftZone.x
-            x: leftScreen.width + middleScreen.width + spacing 
+            width: zoneWidth - zoneSpacing * 2
+            spacing: zoneSpacing
             z: 2
-            anchors.top: categoryBackground.top
-            anchors.topMargin: items.mode != "expert" ? rootItem.categoryImage.height + 0.027 * rightScreen.height : 0.05 * categoryBackground.height
+            anchors.top: rightScreen.top
+            anchors.bottom: rightScreen.bottom
+            anchors.left: rightScreen.left
+            anchors.leftMargin: zoneSpacing
+            anchors.topMargin: rootItem.categoryImage.height + zoneSpacing * 2
         }
 
         Rectangle {
             id: rightScreen
-            width: parent.width/3
+            width: zoneWidth
             height: parent.height
-            x: leftScreen.width + middleScreen.width
+            anchors.top: parent.top
+            anchors.right: parent.right
             color: rightAreaContainsDrag ? "#F9F8B4" : "#B4F9C5"
-            border.width: 5
+            border.width: zoneSpacing
             border.color: "#13EC52"
             opacity: 0.5
         }
 
         Rectangle {
             id: middleScreen
-            width: parent.width/3
+            width: zoneWidth
             height: parent.height
             x: leftScreen.width
             color: "#00FFFFFF"
@@ -123,15 +135,11 @@ Item {
 
         Zone {
             id: middleZone
-            spacing: 0.012 * middleScreen.width
-            anchors {
-                left: leftScreen.right
-                right: rightScreen.left
-                top: parent.top
-                topMargin: 0.05 * parent.height
-                bottom: categoryBackground.bottom
-                leftMargin: 0.015 * middleScreen.width
-            }
+            anchors.centerIn: middleScreen
+            width: zoneWidth - zoneSpacing * 2
+            height: parent.height - zoneSpacing * 2
+            spacing: zoneSpacing
+            z: 2
         }
 
         GCText {
@@ -152,29 +160,30 @@ Item {
             id: categoryImage
             fillMode: Image.PreserveAspectFit
             source: items.details && items.details[bar.level-1] && items.details[bar.level-1].image ? items.details[bar.level-1].image : ""
-            sourceSize.width: horizontalLayout ? rightZone.width * 0.35 : rightZone.width * 0.35
+            sourceSize.width: itemWidth
             width: sourceSize.width
             height: sourceSize.width
-            y: 0.015*parent.height
             visible: items.categoryImageChecked
             anchors {
-                left: middleScreen.right
-                leftMargin: 0.15 * rightZone.width
+                top: rightScreen.top
+                left: rightScreen.left
+                topMargin: zoneSpacing
+                leftMargin: zoneSpacing
             }
         }
 
         BarButton {
             id: validate
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: horizontalLayout ? rightZone.width * 0.20 : rightZone.width * 0.35
+            width: bar.height * 0.8
             height: width
             sourceSize.width: width
             sourceSize.height: height
-            y: parent.height*0.8
-            z: 2
             anchors {
                 rightMargin: 14 * ApplicationInfo.ratio
                 right: parent.right
+                bottom: parent.bottom
+                bottomMargin: 14 * ApplicationInfo.ratio
             }
 
             MouseArea {
@@ -199,7 +208,7 @@ Item {
             id: dialogHelp
             onClose: home()
         }
-        
+
         Score {
             id: score
             visible: items.scoreChecked
