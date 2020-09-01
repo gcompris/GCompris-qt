@@ -195,9 +195,9 @@ ActivityBase {
                 margins: 10
             }
             onClicked: {
-                activity.audioVoices.clearQueue();
-                activity.audioVoices.stop();
-                Activity.playLetter(Activity.currentLetter);
+                if(!activity.audioVoices.isPlaying()) {
+                    Activity.playLetter(Activity.currentLetter);
+                }
             }
         }
 
