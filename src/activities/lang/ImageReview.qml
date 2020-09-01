@@ -213,7 +213,7 @@ Item {
                 property string nextSource
                 function changeSource(nextSource_) {
                     nextSource = nextSource_
-                    animImage.start()
+                    animImage.restart()
                 }
 
                 SequentialAnimation {
@@ -310,7 +310,7 @@ Item {
                 property string nextWord
                 function changeText(nextWord_) {
                     nextWord = nextWord_
-                    animWord.start()
+                    animWord.restart()
                 }
 
                 SequentialAnimation {
