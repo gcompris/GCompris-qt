@@ -311,7 +311,11 @@ ActivityBase {
                     sourceSize.width: 60 * ApplicationInfo.ratio
                     anchors.right: parent.right
                     visible: items.score.currentSubLevel == 2 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled
-                    onClicked: Activity.repeat();
+                    onClicked: {
+                        if(!items.audioVoices.isPlaying()) {
+                            Activity.repeat();
+                        }
+                    }
                 }
             }
         }
