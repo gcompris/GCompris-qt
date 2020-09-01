@@ -249,7 +249,6 @@ ActivityBase {
                 }
 
                 onOpacityChanged: opacity == 0 ? initQuestion() : ""
-                Behavior on opacity { PropertyAnimation { duration: 500 } }
             }
         }
 
