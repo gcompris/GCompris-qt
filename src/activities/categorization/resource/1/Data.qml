@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Very Familiar categories.")
+    objective: qsTr("Very familiar categories.")
     difficulty: 3
     data:  [
         [

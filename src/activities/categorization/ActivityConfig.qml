@@ -47,7 +47,7 @@ Item {
         GCDialogCheckBox {
             id: easyModeBox
             width: column.width - 50
-            text: qsTr("Put together all the elements from a category (with score)")
+            text: qsTr("Put together all the items from a category (with score)")
             checked: (mode === "easy") ? true : false
             exclusiveGroup: configOptions
             onCheckedChanged: {
@@ -60,7 +60,7 @@ Item {
         GCDialogCheckBox {
             id: mediumModeBox
             width: easyModeBox.width
-            text: qsTr("Put together all the elements from a category (without score)")
+            text: qsTr("Put together all the items from a category (without score)")
             checked: (mode === "medium") ? true : false
             exclusiveGroup: configOptions
             onCheckedChanged: {
@@ -73,7 +73,7 @@ Item {
         GCDialogCheckBox {
             id: expertModeBox
             width: easyModeBox.width
-            text: qsTr("Discover a category, grouping elements together")
+            text: qsTr("Discover a category, grouping items together")
             checked: (mode === "expert") ? true : false
             exclusiveGroup: configOptions
             onCheckedChanged: {

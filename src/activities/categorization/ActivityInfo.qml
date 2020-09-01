@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Categorization")
   //: Help title
-  description: qsTr("Categorize the elements into correct and incorrect groups")
-  //intro: "Categorize the elements into the correct group"
+  description: qsTr("Categorize the items into correct and incorrect groups.")
+  //intro: "Categorize the items into the correct group"
   //: Help goal
-  goal: qsTr("Build conceptual thinking and enrich knowledge")
+  goal: qsTr("Build conceptual thinking and enrich knowledge.")
   //: Help prerequisite
-  prerequisite: qsTr("Can drag elements using mouse")
+  prerequisite: qsTr("Can drag items using a mouse or touchscreen.")
   //: Help manual
-  manual: qsTr("Review the instructions and then drag and drop the elements as specified")
+  manual: qsTr("Review the instructions and then drag and drop the items as specified.")
   credit: ""
   section: "reading vocabulary"
   createdInVersion: 8000

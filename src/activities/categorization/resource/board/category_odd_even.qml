@@ -32,7 +32,7 @@ QtObject {
             "image": imagesPrefix + "11.svg",
             "content": [
                 {
-                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "instructions": qsTr("Place the EVEN Numbers to the right and the ODD Numbers to the left"),
                     "image": imagesPrefix + "16.svg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -41,7 +41,7 @@ QtObject {
                     "bad": ["01.svg","03.svg","05.svg","07.svg","09.svg","11.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "instructions": qsTr("Place the EVEN Numbers to the right and the ODD Numbers to the left"),
                     "image": imagesPrefix + "02.svg",
                     "maxNumberOfGood": 6,
                     "maxNumberOfBad": 6,
@@ -50,7 +50,7 @@ QtObject {
                     "bad": ["odd47.svg","15.svg","odd35.svg","odd23.svg","odd39.svg","odd111.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "instructions": qsTr("Place the EVEN Numbers to the right and the ODD Numbers to the left"),
                     "image": imagesPrefix + "02.svg",
                     "maxNumberOfGood": 4,
                     "maxNumberOfBad": 5,
@@ -59,7 +59,7 @@ QtObject {
                     "bad": ["odd111.svg","odd145.svg","odd39.svg","odd353.svg","odd23.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "instructions": qsTr("Place the EVEN Numbers to the right and the ODD Numbers to the left"),
                     "image": imagesPrefix + "02.svg",
                     "maxNumberOfGood": 5,
                     "maxNumberOfBad": 4,
@@ -68,7 +68,7 @@ QtObject {
                     "bad": ["odd47.svg","odd353.svg","odd35.svg","15.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "instructions": qsTr("Place the EVEN Numbers to the right and the ODD Numbers to the left"),
                     "image": imagesPrefix + "02.svg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
@@ -77,7 +77,7 @@ QtObject {
                     "bad": ["01.svg","07.svg","05.svg"]
                 },
                 {
-                    "instructions": qsTr("Place the EVEN Numbers to the right and ODD Numbers to the left"),
+                    "instructions": qsTr("Place the EVEN Numbers to the right and the ODD Numbers to the left"),
                     "image": imagesPrefix + "16.svg",
                     "maxNumberOfGood": 3,
                     "maxNumberOfBad": 3,
