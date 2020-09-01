@@ -48,6 +48,11 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Space)
+                brailleMap.clicked();
+        }
+
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items

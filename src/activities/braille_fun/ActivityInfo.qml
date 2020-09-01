@@ -25,14 +25,16 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Braille Fun")
   //: Help title
-  description: qsTr("Braille the letters")
+  description: qsTr("Practice braille letters.")
   //intro: "Create the Braille cell for the letter."
   //: Help goal
   goal: ""
   //: Help prerequisite
-  prerequisite: qsTr("Braille Alphabet Codes")
+  prerequisite: qsTr("Braille alphabet.")
   //: Help manual
-  manual: qsTr("Enter the braille code in the tile for the letters on the banner pulled by Tux in his plane across the screen. Check the braille chart by clicking on the toggle button for help.")
+  manual: qsTr("Create the braille cells for the letters on the banner. Check the braille chart by clicking on the blue braille cell icon if you need some help.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Space: open or close the braille chart") + ("</li></ul>")
   credit: ""
   section: "reading braille letters"
   createdInVersion: 4000
