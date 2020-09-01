@@ -52,7 +52,7 @@ var tutorialInstructions = [
                 "instructionQml": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial6.qml"
             },
             {
-                "instruction": qsTr("Their corresponding bits are set to 1, the others set to 0. Decimal 5 is equal to binary 101."),
+                "instruction": qsTr("Their corresponding bits are set to 1, the others are set to 0. Decimal 5 is equal to binary 101."),
                 "instructionQml": "qrc:/gcompris/src/activities/binary_bulb/resource/tutorial7.qml"
             },
             {

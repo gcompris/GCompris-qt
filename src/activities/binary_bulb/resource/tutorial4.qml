@@ -26,12 +26,12 @@ import "../../../core"
 Rectangle {
     anchors.fill: parent
     color: "#80FFFFFF"
-    
+
     Item {
         id: topBlock
         width: parent.width
         height: parent.height * 0.2
-        
+
         GCText {
             anchors {
                 right: parent.right
@@ -48,7 +48,7 @@ Rectangle {
             z: 2
         }
     }
-    
+
     Row {
         id: tableBlock1
         width: parent.width * 0.9
@@ -82,7 +82,7 @@ Rectangle {
             }
         }
     }
-    
+
     Row {
         id: bulbBlock
         width: parent.width * 0.9
@@ -106,7 +106,7 @@ Rectangle {
             }
         }
     }
-    
+
     Row {
         width: parent.width * 0.9
         height: parent.height * 0.2
