@@ -43,27 +43,27 @@ function get() {
                  ],
                  [ // Level 1 Questions
                   {
-                      "question": qsTr("Select day 23"),
+                      "question": qsTr("Select the 23rd"),
                       "answer": {"year": 2018, "month": 2, "day": 23}
                   },
                   {
-                      "question": qsTr("Select day 1"),
+                      "question": qsTr("Select the 1st"),
                       "answer": {"year": 2018, "month": 2, "day": 1}
                   },
                   {
-                      "question": qsTr("Select day 16"),
+                      "question": qsTr("Select the 16th"),
                       "answer": {"year": 2018, "month": 2, "day": 16}
                   },
                   {
-                      "question": qsTr("Select day 28"),
+                      "question": qsTr("Select the 28th"),
                       "answer": {"year": 2018, "month": 2, "day": 28}
                   },
                   {
-                      "question": qsTr("Select day 11"),
+                      "question": qsTr("Select the 11th"),
                       "answer": {"year": 2018, "month": 2, "day": 11}
                   },
                   {
-                      "question": qsTr("Select day 20"),
+                      "question": qsTr("Select the 20th"),
                       "answer": {"year": 2018, "month": 2, "day": 20}
                   }
                  ]
@@ -83,31 +83,31 @@ function get() {
                  ],
                  [ // Level 2  Questions
                   {
-                      "question": qsTr("What day of week is the 4th of given month?"),
+                      "question": qsTr("Which day of the week is the 4th of the given month?"),
                       "answer": {"dayOfWeek": 0}
                   },
                   {
-                      "question": qsTr("What day of the week is the 12th of given month?"),
+                      "question": qsTr("Which day of the week is the 12th of the given month?"),
                       "answer": {"dayOfWeek": 1}
                   },
                   {
-                      "question": qsTr("What day of the week is the 20th of given month?"),
+                      "question": qsTr("Which day of the week is the 20th of the given month?"),
                       "answer": {"dayOfWeek": 2}
                   },
                   {
-                      "question": qsTr("What day of the week is the 28th of given month?"),
+                      "question": qsTr("Which day of the week is the 28th of the given month?"),
                       "answer": {"dayOfWeek": 3}
                   },
                   {
-                      "question": qsTr("What day of the week is the 22nd of given month?"),
+                      "question": qsTr("Which day of the week is the 22nd of the given month?"),
                       "answer": {"dayOfWeek": 4}
                   },
                   {
-                      "question": qsTr("What day of the week is the 16th of given month?"),
+                      "question": qsTr("Which day of the week is the 16th of the given month?"),
                       "answer": {"dayOfWeek": 5}
                   },
                   {
-                      "question": qsTr("What day of the week is the 10th of given month?"),
+                      "question": qsTr("Which day of the week is the 10th of the given month?"),
                       "answer": {"dayOfWeek": 6}
                   }
                  ]
@@ -127,31 +127,31 @@ function get() {
 
                  [ // Level 3 Questions
                   {
-                      "question": qsTr("Select a Monday between days 1 and 7 of given month"),
+                      "question": qsTr("Select a Monday between days 1 and 7 of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 5}
                   },
                   {
-                      "question": qsTr("Select a Tuesday between days 8 and 16 of given month"),
+                      "question": qsTr("Select a Tuesday between days 8 and 16 of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 13}
                   },
                   {
-                      "question": qsTr("Select a Wednesday between days 15 and 22 of given month"),
+                      "question": qsTr("Select a Wednesday between days 15 and 22 of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 21}
                   },
                   {
-                      "question": qsTr("Select a Thursday between days 26 and 31 of given month"),
+                      "question": qsTr("Select a Thursday between days 26 and 31 of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 29}
                   },
                   {
-                      "question": qsTr("Select a Friday between days 20 and 25 of given month"),
+                      "question": qsTr("Select a Friday between days 20 and 25 of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 23}
                   },
                   {
-                      "question": qsTr("Select a Saturday between days 13 and 23 of given month"),
+                      "question": qsTr("Select a Saturday between days 13 and 23 of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 17}
                   },
                   {
-                      "question": qsTr("Select a Sunday between days 5 and 17 of given month"),
+                      "question": qsTr("Select a Sunday between days 5 and 17 of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 11}
                   }
                  ]
@@ -170,23 +170,23 @@ function get() {
                  ],
                  [ // Level 4 Questions
                   {
-                      "question": qsTr("Select second day before the 15th of given month"),
+                      "question": qsTr("Select the second day before the 15th of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 13}
                   },
                   {
-                      "question": qsTr("Select fourth Sunday of given month"),
+                      "question": qsTr("Select the fourth Sunday of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 25}
                   },
                   {
-                      "question": qsTr("Select day one week after 13th of given month"),
+                      "question": qsTr("Select the day one week after 13th of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 20}
                   },
                   {
-                      "question": qsTr("Select fifth Thursday of given month"),
+                      "question": qsTr("Select the fifth Thursday of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 29}
                   },
                   {
-                      "question": qsTr("Select third day after 27th of given month"),
+                      "question": qsTr("Select the third day after 27th of the given month"),
                       "answer": {"year": 2018, "month": 2, "day": 30}
                   }
                  ]
@@ -241,39 +241,39 @@ function get() {
                  ],
                  [ // Level 6 Questions
                   {
-                      "question": qsTr("Find the first Monday of January month of year 2019"),
+                      "question": qsTr("Find the first Monday of January in the year 2019"),
                       "answer": {"year": 2019, "month": 0, "day": 7}
                   },
                   {
-                      "question": qsTr("Find the second Wednesday of February month of year 2019"),
+                      "question": qsTr("Find the second Wednesday of February in the year 2019"),
                       "answer": {"year": 2019, "month": 1, "day": 13}
                   },
                   {
-                      "question": qsTr("Find the third Friday of March month of year 2019"),
+                      "question": qsTr("Find the third Friday of March in the year 2019"),
                       "answer": {"year": 2019, "month": 2, "day": 15}
                   },
                   {
-                      "question": qsTr("Find the fifth Sunday of April month of year 2018"),
+                      "question": qsTr("Find the fifth Sunday of April in the year 2018"),
                       "answer": {"year": 2018, "month": 3, "day": 29}
                   },
                   {
-                      "question": qsTr("Find the fourth Tuesday of July month of year 2018"),
+                      "question": qsTr("Find the fourth Tuesday of July in the year 2018"),
                       "answer": {"year": 2018, "month": 6, "day": 24}
                   },
                   {
-                      "question": qsTr("Find the first Monday of August month of year 2018"),
+                      "question": qsTr("Find the first Monday of August in the year 2018"),
                       "answer": {"year": 2018, "month": 7, "day": 6}
                   },
                   {
-                      "question": qsTr("Find the third Thursday of September month of year 2017"),
+                      "question": qsTr("Find the third Thursday of September in the year 2017"),
                       "answer": {"year": 2017, "month": 8, "day": 21}
                   },
                   {
-                      "question": qsTr("Find the fifth Sunday of October month of year 2017"),
+                      "question": qsTr("Find the fifth Sunday of October in the year 2017"),
                       "answer": {"year": 2017, "month": 9, "day": 29}
                   },
                   {
-                      "question": qsTr("Find the second Friday of December month of year 2017"),
+                      "question": qsTr("Find the second Friday of December in the year 2017"),
                       "answer": {"year": 2017, "month": 11, "day": 8}
                   }
                  ]
@@ -308,7 +308,7 @@ function get() {
                       "answer": {"year": 2018, "month": 2, "day": 8}
                   },
                   {
-                      "question": qsTr("Sports competition was held on last Friday of September 2017.<br> Select the date of sports competition on the calendar."),
+                      "question": qsTr("The sports competition was held on last Friday of September 2017.<br> Select the date of the sports competition on the calendar."),
                       "answer": {"year": 2017, "month": 8, "day": 29}
                   }
                  ]
