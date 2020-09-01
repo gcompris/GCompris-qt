@@ -55,27 +55,27 @@ function initLevel() {
             currentDataSet = dataset[0].slice()
             break
         case 1:
-            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.instructions = qsTr("Now it's a little bit harder without the reference.")
             items.brailleCodeSeen = false
             currentDataSet = dataset[0].slice()
             break
         case 2:
-            items.instructions = qsTr("Look at the Braille character map and observe how similar the first and second lines are.")
+            items.instructions = qsTr("Look at the braille character chart and observe how similar the first and second lines are.")
             items.brailleCodeSeen = true
             currentDataSet = dataset[1].slice()
             break
         case 3:
-            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.instructions = qsTr("Now it's a little bit harder without the reference.")
             items.brailleCodeSeen = false
             currentDataSet = dataset[1].slice()
             break
         case 4:
-            items.instructions = qsTr("Again, similar to the first line but take care, the 'W' letter was added afterward.")
+            items.instructions = qsTr("Again, similar to the first line in the character chart but take care, the 'W' letter was added afterward.")
             items.brailleCodeSeen = true
             currentDataSet = dataset[2].slice()
             break
         case 5:
-            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.instructions = qsTr("Now it's a little bit harder without the reference.")
             items.brailleCodeSeen = false
             currentDataSet = dataset[2].slice()
             break
@@ -85,7 +85,7 @@ function initLevel() {
             currentDataSet = dataset[3].slice()
             break
         case 7:
-            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.instructions = qsTr("Now it's a little bit harder without the reference")
             items.brailleCodeSeen = false
             currentDataSet = dataset[3].slice()
             break
@@ -95,7 +95,7 @@ function initLevel() {
             currentDataSet = dataset[4].slice()
             break
         case 9:
-            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.instructions = qsTr("Now it's a little bit harder without the reference.")
             items.brailleCodeSeen = false
             currentDataSet = dataset[4].slice()
             break

@@ -61,8 +61,8 @@ Image {
     GCText {
         id: body_text1
         z: 1
-        text: qsTr('The Braille system is a method that is used by blind people to read and write.') + '\n    \n ' +
-              qsTr('Each Braille character, or cell, is made up of six dot positions, arranged in ' +
+        text: qsTr('The braille system is a method that is used by blind people to read and write.') + '\n    \n ' +
+              qsTr('Each braille character, or cell, is made up of six dot positions, arranged in ' +
                    'a rectangle containing two columns of three dots each. As seen on the left, each ' +
                    'dot is referenced by a number from 1 to 6.')
         fontSize: regularSize
@@ -86,7 +86,7 @@ Image {
     GCText {
         id: bottom_text
         z: 2
-        text: qsTr("When you are ready, click on me and try reproducing Braille characters.")
+        text: qsTr("When you are ready, click on me and try reproducing braille characters.")
         fontSize: regularSize
         fontSizeMode: Text.Fit
         font.weight: Font.Bold
