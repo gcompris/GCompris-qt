@@ -290,7 +290,11 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onRepeatClicked: Activity.playCurrentWord()
+            onRepeatClicked: {
+                if(!audioVoices.isPlaying() && !items.buttonsBlocked) {
+                    Activity.playCurrentWord()
+                }
+            }
             onActivityConfigClicked: {
                 displayDialog(dialogActivityConfig)
             }
