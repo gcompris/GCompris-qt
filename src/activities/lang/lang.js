@@ -169,6 +169,8 @@ function markProgress() {
 
 function playWord(word) {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    items.audioVoices.stop()
+    items.audioVoices.clearQueue()
     return items.audioVoices.append(
                 GCompris.ApplicationInfo.getAudioFilePathForLocale(word, locale))
 }
