@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Bargame (against Tux)")
   //: Help title
-  description: qsTr("Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole.")
-  // intro: "Click the number of balls you wish to place in the holes and then click the OK button. The winner is the one who hasn't put a ball in the red hole."
+  description: qsTr("Select the number of balls you wish to place in the holes and then click on the OK button. The winner is the one who hasn't put a ball in the red hole.")
+  // intro: "Select the number of balls you wish to place in the holes and then click on the OK button. The winner is the one who hasn't put a ball in the red hole."
   //: Help goal
   goal: qsTr("Don't put the ball in the last hole.")
   //: Help prerequisite
   prerequisite: qsTr("Ability to count.")
   //: Help manual
-  manual: qsTr("Click on the ball icon to select a number of balls, then click the OK button to place the balls in the holes. You win if the computer has to place the last ball. If you want Tux to begin, just click on him")
+  manual: qsTr("Click on the ball icon to select a number of balls, then click on the OK button to place the balls in the holes. You win if the computer has to place the last ball. If you want Tux to begin, just click on him")
   credit: ""
   section: "strategy"
   createdInVersion: 8000
