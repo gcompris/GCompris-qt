@@ -44,7 +44,7 @@ Image {
         height: parent.height * 0.16
         wrapMode: Text.WordWrap
     }
-    
+
     Image {
         id: introChar
         source: Activity.url + "intro_braille_char.svg"
@@ -57,7 +57,7 @@ Image {
             leftMargin: 30 * ApplicationInfo.ratio
         }
     }
-    
+
     GCText {
         id: body_text1
         z: 1
@@ -82,7 +82,7 @@ Image {
         height: parent.height * 0.33
         wrapMode: Text.WordWrap
     }
-    
+
     GCText {
         id: bottom_text
         z: 2
@@ -102,7 +102,7 @@ Image {
         height: parent.height * 0.25
         width: parent.width * 0.5
     }
-    
+
     Image {
         id: introTux
         z: 3
@@ -116,7 +116,7 @@ Image {
             leftMargin: 30 * ApplicationInfo.ratio
         }
         Behavior on scale { PropertyAnimation { duration: 100 } }
-        
+
         MouseArea {
             id: tux_click
             anchors.fill: parent
@@ -126,7 +126,7 @@ Image {
             onExited: introTux.scale = 1
         }
     }
-    
+
     Rectangle {
         id: bgTux
         z: 0

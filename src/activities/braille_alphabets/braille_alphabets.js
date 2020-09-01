@@ -60,7 +60,7 @@ function initLevel() {
             currentDataSet = dataset[0]
             break
         case 2:
-            items.instructions = qsTr("Look at the Braille character map and observe how similar the first and second line are.")
+            items.instructions = qsTr("Look at the Braille character map and observe how similar the first and second lines are.")
             items.brailleCodeSeen = true
             currentDataSet = dataset[1]
             break
@@ -70,7 +70,7 @@ function initLevel() {
             currentDataSet = dataset[1]
             break
         case 4:
-            items.instructions = qsTr("Again, similar as the first line but take care, the 'W' letter was added afterwards.")
+            items.instructions = qsTr("Again, similar to the first line but take care, the 'W' letter was added afterward.")
             items.brailleCodeSeen = true
             currentDataSet = dataset[2]
             break

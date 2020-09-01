@@ -49,7 +49,7 @@ ActivityBase {
         Keys.onPressed: {
             if(first_screen.visible) {
                 // If return, we hide the screen
-                first_screen.visible = false
+                first_screen.visible = false;
                 return;
             }
             var keyValue;
@@ -75,7 +75,9 @@ ActivityBase {
                 break;
             }
             if(keyValue)
-                playableChar.switchState(keyValue)
+                playableChar.switchState(keyValue);
+            if(event.key === Qt.Key_Space)
+                braille_map.clicked();
         }
 
         // Add here the QML items you need to access in javascript

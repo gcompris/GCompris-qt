@@ -35,6 +35,22 @@ Rectangle {
     signal start
     signal stop
 
+    Keys.onPressed: {
+        if(event.key === Qt.Key_Space || event.key === Qt.Key_Escape) {
+            close();
+        }
+    }
+
+    onStart: {
+        brailleMap.forceActiveFocus();
+        activity.Keys.enabled = false;
+    }
+
+    onClose: {
+        activity.Keys.enabled = true;
+        activity.forceActiveFocus();
+    }
+
     Flickable {
         id: flick
         anchors.fill: parent
@@ -58,7 +74,7 @@ Rectangle {
                 model: [
                     "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
                     "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
-                    "U", "V", "W", "X", "Y", "Z"
+                    "U", "V", "X", "Y", "Z", "", "", "", "", "W"
                 ]
 
                 Column {
@@ -71,6 +87,7 @@ Rectangle {
                         border.width: 3
                         border.color: "black"
                         color: "white"
+                        opacity: modelData != "" ? 1 : 0
 
                         BrailleChar {
                             id: ins
