@@ -216,7 +216,7 @@ ActivityBase {
                 right: parent.right
                 margins: 10 * ApplicationInfo.ratio
             }
-            onClicked: if (ApplicationSettings.isAudioVoicesEnabled)
+            onClicked: if (!activity.audioVoices.isPlaying())
                            questionItem.initQuestion()
         }
 
