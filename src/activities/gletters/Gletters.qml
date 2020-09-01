@@ -101,6 +101,7 @@ ActivityBase {
             property GCSfx audioEffects: activity.audioEffects
             property alias locale: background.locale
             property alias textinput: textinput
+            property bool inputLocked: false
         }
 
         onStart: {

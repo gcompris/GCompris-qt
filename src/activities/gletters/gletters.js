@@ -144,6 +144,7 @@ function initLevel() {
     if(items.levels)
         items.instructionText = items.levels[currentLevel].objective
     items.audioVoices.clearQueue()
+    items.inputLocked = false;
     items.bar.level = currentLevel + 1;
     wgMaxFallingItems = 3
     successRate = 1.0
@@ -269,12 +270,14 @@ function initSubLevel() {
     }
     items.score.currentSubLevel = currentSubLevel;
     // note, last word is still fading out so better use droppedWordsCounter than droppedWords.length in this case
-    if (currentSubLevel == 0 || droppedWordsCounter == 0)
+    if ((currentSubLevel == 0 || droppedWordsCounter == 0) && !items.inputLocked)
         dropWord();
     //console.log("Gletters: initializing subLevel " + (currentSubLevel + 1) + " words=" + JSON.stringify(level.words));
 }
 
 function processKeyPress(text) {
+    if(items.inputLocked)
+        return
     var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
 
     if (currentWord !== null) {
@@ -475,7 +478,9 @@ function previousLevel() {
 
 function nextSubLevel() {
     if(++currentSubLevel >= maxSubLevel) {
-        items.bonus.good("lion")
+        items.inputLocked = true;
+        items.audioVoices.clearQueue();
+        items.bonus.good("lion");
     } else {
         items.score.playWinAnimation();
     }
