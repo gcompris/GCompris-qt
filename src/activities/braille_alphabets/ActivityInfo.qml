@@ -33,7 +33,7 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("The screen has 3 sections: an interactive braille cell, an instruction telling you the letter to reproduce, and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.") + ("<br><br>") +
-  qsTr("You can open the braille map by clicking on the blue braille cell icon") + ("<br><br>") +
+  qsTr("You can open the braille map by clicking on the blue braille cell icon.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
           qsTr("Digits: 1 to 6 select/deselect the corresponding dots") + ("</li><li>") +
           qsTr("Space: open or close the braille map") + ("</li></ul>")
