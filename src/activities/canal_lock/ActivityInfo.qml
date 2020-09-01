@@ -32,7 +32,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("You are in charge of the canal lock. Open the gates and the locks in the right order, so Tux can travel through the gates in both directions.")
+  manual: qsTr("You are in charge of the canal lock. Open the gates and the locks in the right order, so that Tux can travel through the gates in both directions.")
   credit: ""
   section: "sciences experiment"
   createdInVersion: 0
