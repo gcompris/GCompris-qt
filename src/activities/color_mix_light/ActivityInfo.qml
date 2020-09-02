@@ -23,20 +23,18 @@ ActivityInfo {
   icon: "color_mix_light/color_mix_light.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   //: Activity title
-  title: qsTr("Mixing colors of light")
+  title: qsTr("Mixing light colors")
   //: Help title
   description: qsTr("Discover light color mixing.")
 //  intro: "Match the colour by moving the sliders on the torches"
   //: Help goal
-  goal: qsTr("Mix the primary colors to match to the given color.")
+  goal: qsTr("Mix primary colors to match the given color.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("
-The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.")
-  credit: qsTr("Images from https://openclipart.org")
+  manual: qsTr("This activity teaches how mixing primary light colors works (additive mixing).") + ("<br><br>") +
+          qsTr("Mixing light colors is just the opposite of mixing paint colors. The more light you add, the lighter the resulting color becomes. Primary colors of light are red, green and blue.")
+  credit: ""
   section: "sciences experiment color"
   createdInVersion: 0
 }

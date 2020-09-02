@@ -23,21 +23,18 @@ ActivityInfo {
   icon: "color_mix/color_mix.svg"
   author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   //: Activity title
-  title: qsTr("Mixing color of paint")
+  title: qsTr("Mixing paint colors")
   //: Help title
   description: qsTr("Discover paint color mixing.")
 //  intro: "Match the colour by moving the sliders on the tubes of paint"
   //: Help goal
-  goal: qsTr("Mix the primary colors to match to the given color")
+  goal: qsTr("Mix primary colors to match the given color.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("
-The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are cyan (a special shade of blue), magenta (a special shade of pink), and yellow.
-        ")
-  credit: qsTr("Images from https://openclipart.org")
+  manual: qsTr("This activity teaches how mixing primary paint colors works (subtractive mixing).") + ("<br><br>") +
+          qsTr("Paints and inks absorb different colors of the light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the resulting color becomes. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are cyan (a special shade of blue), magenta (a special shade of pink), and yellow.")
+  credit: ""
   section: "sciences experiment color"
   createdInVersion: 0
 }
