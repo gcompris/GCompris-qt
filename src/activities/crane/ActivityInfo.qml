@@ -30,14 +30,17 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Build the same model")
   //: Help title
-  description: qsTr("Drive the crane and copy the model")
-  //intro: " Click on each item in turn, in the left frame, and move them to reproduce the pattern from the right frame."
+  description: qsTr("Drive the crane and copy the model.")
+  //intro: " Click on each item in turn, in the blue frame, and move them to reproduce the pattern from the pink frame."
   //: Help goal
-  goal: qsTr("Motor-coordination")
+  goal: qsTr("Practice motor-coordination.")
   //: Help prerequisite
-  prerequisite: qsTr("Mouse/keyboard manipulation")
+  prerequisite: qsTr("Mouse/keyboard manipulation.")
   //: Help manual
-  manual: qsTr("Move the items in the left frame to copy their position in the right model. Next to the crane itself, you will find four arrows that let you move the items. To select the item to move, just click on it. If you prefer, you can use the arrow keys and the space or tab key instead. On a mobile version, you can also swipe up/down/left/right to move the items in the left frame.")
+  manual: qsTr("Move the items in the blue frame to match their position in the model frame. To select an item, just click on it. Next to the crane, you will find four arrows that let you move the selected item. You can also swipe up/down/left/right to move the selected item.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move the selected item") + ("</li><li>") +
+          qsTr("Space or Enter or Tab: select the next item") + ("</li></ul>")
   credit: ""
   section: "puzzle"
   createdInVersion: 7000
