@@ -25,14 +25,18 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Colors")
   //: Help title
-  description: qsTr("Click on the right color")
+  description: qsTr("Click on the right color.")
 //  intro: "Click on the right color"
   //: Help goal
-  goal: qsTr("This activity teaches you to recognize different colors. When you hear the name of the color, touch the duck wearing it.")
+  goal: qsTr("This activity teaches you to recognize different colors.")
   //: Help prerequisite
-  prerequisite: qsTr("Identifying colours")
+  prerequisite: qsTr("Identifying colours.")
   //: Help manual
-  manual: qsTr("Listen to the color and touch the matching duck.")
+  manual: qsTr("Listen to the color and click on the matching duck.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: select an answer") + ("</li></li>") +
+          qsTr("Tab: repeat the question") + ("</li></li>")
   credit: ""
   section: "reading color vocabulary"
   createdInVersion: 0
