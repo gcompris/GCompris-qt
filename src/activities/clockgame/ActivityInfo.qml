@@ -25,14 +25,15 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Learning Clock")
   //: Help title
-  description: qsTr("Learn how to tell the time on an analog clock")
+  description: qsTr("Learn how to tell the time on an analog clock.")
 //  intro: "Drag and drop the needles of the clock to display the required time"
   //: Help goal
-  goal: qsTr("Distinguish between time-units (hour, minute and second). Set and display time on an analog clock.")
+  goal: qsTr("Learn units of time (hours, minutes and seconds). Set the time on an analog clock.")
   //: Help prerequisite
   prerequisite: qsTr("The concept of time.")
   //: Help manual
-  manual: qsTr("Set the clock to the given time, in the time-units shown (hours:minutes or hours:minutes:seconds). Drag the different arrows, to make the respective time unit go up or down.")
+  manual: qsTr("Set the clock to the given time. Drag the different hands to control their respective unit.") + " " +
+          qsTr("The shortest hand indicates the hours, a longer hand indicates the minutes, and the longest hand indicates the seconds.")
   credit: ""
   section: "math measures"
   createdInVersion: 0
