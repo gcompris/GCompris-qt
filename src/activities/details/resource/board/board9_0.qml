@@ -22,7 +22,7 @@
 import QtQuick 2.6
 
 QtObject {
-   property string instruction: qsTr("Notre Dame de Paris cathedral on the Île de la Cité island in Paris, France.")
+   property string instruction: qsTr("Notre Dame de Paris cathedral on the Île de la Cité in Paris, France.")
    property var levels: [
       {
          "pixmapfile" : "image/NDP_background.jpg",

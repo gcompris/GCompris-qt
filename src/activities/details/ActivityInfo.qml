@@ -28,14 +28,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Find the details")
   //: Help title
-  description: qsTr("Drag and Drop the shapes on their respective targets")
+  description: qsTr("Drag and Drop the shapes on their respective targets.")
 //  intro: "Slide the images on their respective targets"
   //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Complete the puzzle by dragging each piece from the set of pieces on the left, to the matching space in the puzzle.")
+  manual: qsTr("Complete the puzzle by dragging each piece on the side to the matching space in the puzzle.")
   credit: qsTr("The images are from Wikimedia Commons.")
   section: "discovery arts"
   createdInVersion: 4000
