@@ -71,9 +71,8 @@ Image {
         onClicked: currentStep = Math.min(currentStep + 1, maxSteps);
     }
 
-    Rectangle {
+    Item {
         id: sliderLayout
-        opacity: 0
         height: parent.height * 0.25
         anchors {
             verticalCenter: parent.verticalCenter
