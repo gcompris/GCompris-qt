@@ -33,7 +33,8 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("This activity teaches how mixing primary light colors works (additive mixing).") + ("<br><br>") +
-          qsTr("Mixing light colors is just the opposite of mixing paint colors. The more light you add, the lighter the resulting color becomes. Primary colors of light are red, green and blue.")
+          qsTr("Mixing light colors is just the opposite of mixing paint colors. The more light you add, the lighter the resulting color becomes. Primary colors of light are red, green and blue.") + ("<br><br>") +
+          qsTr("Change the color by moving the sliders on the torches or by clicking on the + and - buttons. Then click on the OK button to validate your answer.")
   credit: ""
   section: "sciences experiment color"
   createdInVersion: 0
