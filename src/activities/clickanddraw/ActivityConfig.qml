@@ -39,7 +39,7 @@ Item {
             id: modeBox
             model: availableModes
             background: activityConfiguration.background
-            label: qsTr("Go to next level")
+            label: qsTr("Go to the next level")
         }
     }
 
