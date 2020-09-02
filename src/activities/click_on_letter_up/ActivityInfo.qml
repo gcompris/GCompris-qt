@@ -25,18 +25,18 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Click on an uppercase letter")
   //: Help title
-  description: qsTr("Listen to a letter and click on the right one")
+  description: qsTr("Listen to a letter and click on it.")
 //  intro: "Click on the required letter. You can listen to it again by clicking on the mouth."
   //: Help goal
-  goal: qsTr("Letter-name recognition")
+  goal: qsTr("Letter-name recognition.")
   //: Help prerequisite
   prerequisite: qsTr("Visual letter-recognition.")
   //: Help manual
   manual: qsTr("A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again by clicking on the mouth icon.") + ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Arrows: navigate") + ("<br>") +
-          qsTr("-Space: select an item") + ("<br>") +
-          qsTr("-Tab: repeat the question")
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space: select an item") + ("</li><li>") +
+          qsTr("Tab: repeat the question") + ("</li></ul>")
   credit: ""
   section: "reading letters"
   createdInVersion: 0
