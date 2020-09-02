@@ -23,7 +23,7 @@ import QtQuick 2.6
 
 QtObject {
    property int numberOfSubLevel: 4
-   property string instruction: qsTr("Place each image in the order and on the date it was invented.")
+   property string instruction: qsTr("Place each object on the date it was invented.")
    property var levels: [
       {
           "pixmapfile": "images/fardier.svg",
