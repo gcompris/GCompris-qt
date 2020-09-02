@@ -301,7 +301,7 @@ QtObject {
             playAreaComponentPositionY: [0.25, 0.25, 0.25],
             type: [problemType.equation1Variable],
             introMessage: [
-                qsTr("Use the gates so that the bulb glows only when the switch is turned off and turns off when the switch is turned on.")
+                qsTr("Use the gates so that the bulb glows only when the switch is turned off and doesn't glow when the switch is turned on.")
             ]
         },
         // level 12
