@@ -18,22 +18,22 @@
 import GCompris 1.0
 
 ActivityInfo {
-      name: "drawletters/Drawletters.qml"
-      difficulty: 1
-      icon: "drawletters/drawletters.svg"
-      author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
-      //: Activity title
-      title: qsTr("Draw Letters")
-      //: Help title
-      description: qsTr("Connect the dots to draw letters")
-      //  intro: "Click on the selected points and draw the letter"
-      //: Help goal
-      goal: qsTr("Learning how to draw the letters in a funny way.")
-      //: Help prerequisite
-      prerequisite: ""
-      //: Help manual
-      manual: qsTr("Draw the letter by connecting the dots in the correct order")
-      credit: ""
-      section: "reading letters"
-      createdInVersion: 7000
+    name: "drawletters/Drawletters.qml"
+    difficulty: 1
+    icon: "drawletters/drawletters.svg"
+    author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
+    //: Activity title
+    title: qsTr("Draw Letters")
+    //: Help title
+    description: qsTr("Connect the dots to draw the letters.")
+    //  intro: "Click on the selected points and draw the letter"
+    //: Help goal
+    goal: qsTr("Learning how to draw letters in a funny way.")
+    //: Help prerequisite
+    prerequisite: ""
+    //: Help manual
+    manual: qsTr("Draw the letters by connecting the dots in the correct order.")
+    credit: ""
+    section: "reading letters"
+    createdInVersion: 7000
 }
