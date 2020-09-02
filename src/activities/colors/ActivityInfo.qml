@@ -30,7 +30,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("This activity teaches you to recognize different colors.")
   //: Help prerequisite
-  prerequisite: qsTr("Identifying colours.")
+  prerequisite: qsTr("Identifying colors.")
   //: Help manual
   manual: qsTr("Listen to the color and click on the matching duck.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
