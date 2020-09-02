@@ -25,14 +25,19 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Count the items")
     //: Help title
-    description: qsTr("Place the items in the best way to count them")
+    description: qsTr("Place the items in the best way to count them.")
 //  intro: "Count the elements by organising them then type the answer on your keyboard."
     //: Help goal
-    goal: qsTr("Numeration training")
+    goal: qsTr("Numeration training.")
     //: Help prerequisite
-    prerequisite: qsTr("Basic enumeration")
+    prerequisite: qsTr("Basic enumeration.")
     //: Help manual
-    manual: qsTr("First, properly organize the items so that you can count them. Then, select the item you want to answer in the top left area. Enter the answer with the keyboard.")
+    manual: qsTr("First, properly organize the items so that you can count them. Then, click on an item of the answers list in the top left area and enter the corresponding answer with the keyboard.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Up arrow: select next item") + ("</li><li>") +
+          qsTr("Down arrow: select previous item") + ("</li><li>") +
+          qsTr("Digits: enter your answer for the selected item") + ("</li><li>") +
+          qsTr("Enter: validate your answer (if the 'Validate answers' option is set to 'OK button')") + ("</li></ul>")
     credit: ""
   section: "math numeration"
   createdInVersion: 0
