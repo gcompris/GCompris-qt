@@ -37,9 +37,9 @@ ElectricalComponent {
                                "BCDTo7SegmentD_on.svg","BCDTo7SegmentE_on.svg","BCDTo7SegmentF_on.svg",
                                "BCDTo7SegmentG_on.svg"]
 
-    information: qsTr("BCD to 7 segment converter takes 4 binary inputs in its input terminals " +
+    information: qsTr("A BCD to 7 segment converter takes 4 binary inputs " +
                       "and gives 7 binary outputs which allow to light BCD number segments (binary-coded decimal) " +
-                      "to display numbers between 0 and 9. The output for BCD To 7 Segment converted is:")
+                      "to display numbers between 0 and 9. The output for a BCD To 7 Segment converter is:")
 
     truthTable: [['D','C','B','A','a','b','c','d','e','f','g'],
                  ['0','0','0','0','1','1','1','1','1','1','0'],

@@ -29,8 +29,8 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.2, 0.8]
 
-    information: qsTr("XOR gate outputs 1 if the number of '1' in input is odd, and 0 if number of '1' in " +
-                      "input is even. In this activity, a 2 input XOR gate is shown. Output for 2 input XOR gate is:")
+    information: qsTr("An XOR gate outputs 1 if the number of 1 in inputs is odd, and 0 if number of 1 in " +
+                      "inputs is even. In this activity, a 2 inputs XOR gate is shown. The output for a 2 inputs XOR gate is:")
     truthTable: [['A','B',qsTr("A XOR B")],
                  ['0','0','0'],
                  ['0','1','1'],

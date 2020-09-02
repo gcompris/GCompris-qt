@@ -28,8 +28,8 @@ ElectricalComponent {
     noOfInputs: 1
     noOfOutputs: 1
 
-    information: qsTr("Not gate (also known as inverter) outputs the opposite of the input. " +
-                      "Input 0 gives an output 1. Input 1 gives an output 0:")
+    information: qsTr("A Not gate (also known as inverter) outputs the opposite of the input. " +
+                      "An input 0 gives an output 1. An Input 1 gives an output 0:")
 
     truthTable: [['A',qsTr("NOT A")],
                  ['0','1'],

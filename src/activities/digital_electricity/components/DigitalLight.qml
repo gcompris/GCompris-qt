@@ -29,7 +29,7 @@ ElectricalComponent {
     noOfInputs: 1
     noOfOutputs: 0
 
-    information: qsTr("Digital light is used to check the output of other digital components. It turns " +
+    information: qsTr("A digital light is used to check the output of other digital components. It turns " +
                       "green if the input is 1, and turns red if the input is 0.")
 
     truthTable: []

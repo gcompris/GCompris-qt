@@ -29,8 +29,8 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.2, 0.8]
 
-    information: qsTr("AND gate outputs 1 only if all its inputs are equal to 1. " +
-                      "As soon as one input is equal to 0 the result is 0. Output for 2 input AND gate is:")
+    information: qsTr("An AND gate outputs 1 only if all its inputs are equal to 1. " +
+                      "As soon as one input is equal to 0 the result is 0. The output for a 2 inputs AND gate is:")
 
     truthTable: [['A','B',qsTr("A AND B")],
                  ['0','0','0'],

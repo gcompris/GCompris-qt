@@ -152,8 +152,9 @@ QtObject {
             playAreaComponentPositionY: [0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The digital light will glow when its terminal is connected with an input of 1."),
-                qsTr("Turn the digital light on using the inputs provided.")
+                qsTr("The digital light glows when its terminal is connected with an input of 1."),
+                qsTr("Turn on the digital light using the provided inputs.") + " " +
+                qsTr("To connect two terminals, click on a first terminal, then on a second terminal.")
             ]
         },
         // level 2
@@ -166,8 +167,8 @@ QtObject {
             playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The AND gate produces an output of one when both of its input terminals are of value 1."),
-                qsTr("Turn the digital light on using an AND gate and the inputs provided.")
+                qsTr("The AND gate produces an output of 1 when both of its input terminals are of value 1."),
+                qsTr("Turn on the digital light using an AND gate and the provided inputs.")
             ]
         },
         // level 3
@@ -181,7 +182,7 @@ QtObject {
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("The OR gate produces an output of 1 when at least one of its input terminals is of value 1."),
-                qsTr("Turn the digital light on using an OR gate and the inputs provided.")
+                qsTr("Turn on the digital light using an OR gate and the provided inputs.")
             ]
         },
         // level 4
@@ -194,7 +195,8 @@ QtObject {
             playAreaComponentPositionY: [0.0, 0.4, 0.2, 0.2, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("Note: You can draw multiple wires from the output terminal of a component.")
+                qsTr("You can draw multiple wires from the output terminal of a component."),
+                qsTr("Turn on the digital light using the provided components.")
             ]
         },
         // level 5
@@ -207,7 +209,8 @@ QtObject {
             playAreaComponentPositionY: [0.1, 0.4, 0.05, 0.45, 0.25, 0.25],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("The NOT gate takes a single binary input and flips the value in the output.")
+                qsTr("The NOT gate takes a single binary input and flips the value in the output."),
+                qsTr("Turn on the digital light using the provided inputs.")
             ]
         },
         // level 6
@@ -221,9 +224,9 @@ QtObject {
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("The NAND gate takes two binary inputs and produces one binary output."),
-                qsTr("The output of the NAND gate will be zero if both of its inputs are \"1\". Else, the output will be one."),
-                qsTr("For a more detailed description about the gate, select it and click on the info button."),
-                qsTr("Light the bulb using the NAND gate provided.")
+                qsTr("The output of the NAND gate is zero if both of its inputs are 1. Else, the output is one."),
+                qsTr("For a more detailed description about the NAND gate, select it and click on the info button."),
+                qsTr("Light the bulb using the provided NAND gate.")
             ]
         },
         // level 7
@@ -239,9 +242,7 @@ QtObject {
                 return A | (B & C)
             },
             introMessage: [
-                qsTr("Light the bulb using the components provided such that the bulb will glow under the following two circumstances:\n" +
-                     "1. The first switch is turned ON, or\n" +
-                     "2. Both of the second and the third switches are turned on.")
+                qsTr("Light the bulb using the provided components so that the bulb glows if the first switch is turned ON, or if both the second and the third switches are turned on.")
             ]
         },
         // level 8
@@ -255,8 +256,8 @@ QtObject {
             type: [problemType.lightTheBulb],
             introMessage: [
                 qsTr("The XOR Gate takes two binary inputs and produces one binary output."),
-                qsTr("The output of the XOR gate will be one if the number of \"1\" in the input is odd. Else, the output will be zero."),
-                qsTr("Light the bulb using the XOR gate provided.")
+                qsTr("The output of the XOR gate is one if the number of 1 in the input is odd. Else, the output is zero."),
+                qsTr("Light the bulb using the provided XOR gate.")
             ]
         },
         // level 9
@@ -272,7 +273,7 @@ QtObject {
                 return A ^ B ^ C
             },
             introMessage: [
-                qsTr("Light the bulb using the three switches such that the bulb glows when odd number of the switches are turned on.")
+                qsTr("Light the bulb using the three switches so that the bulb glows when odd number of the switches are turned on.")
             ]
         },
         // level 10
@@ -285,9 +286,9 @@ QtObject {
             playAreaComponentPositionY: [0.3, 0.3],
             type: [problemType.lightTheBulb],
             introMessage: [
-                qsTr("A NOR gate takes 2 binary input and outputs 1 if both of them are 0, otherwise produces an output of 0."),
-                qsTr("For a more detailed description about the gate, select it and click on the info button."),
-                qsTr("Light the bulb using the NOR gate provided.")
+                qsTr("A NOR gate takes 2 binary inputs and outputs 1 if both of them are 0, otherwise produces an output of 0."),
+                qsTr("For a more detailed description about the NOR gate, select it and click on the info button."),
+                qsTr("Light the bulb using the provided NOR gate.")
             ]
         },
         // level 11
@@ -300,7 +301,7 @@ QtObject {
             playAreaComponentPositionY: [0.25, 0.25, 0.25],
             type: [problemType.equation1Variable],
             introMessage: [
-                qsTr("Use the gates such that the bulb will glow only when the switch is turned off and remain off when the switch is turned on.")
+                qsTr("Use the gates so that the bulb glows only when the switch is turned off and turns off when the switch is turned on.")
             ]
         },
         // level 12
@@ -316,7 +317,7 @@ QtObject {
                 return A & B
             },
             introMessage: [
-                qsTr("Create a circuit using the components provided such that the bulb glows only when both of the switches are turned on.")
+                qsTr("Create a circuit using the provided components so that the bulb glows only when both of the switches are turned on.")
             ]
         },
         // level 13
@@ -332,7 +333,7 @@ QtObject {
                 return A | B
             },
             introMessage: [
-                qsTr("Create a circuit using the components provided such that the bulb glows when either of the switches are turned on.")
+                qsTr("Create a circuit using the provided components so that the bulb glows when either of the switches are turned on.")
             ]
         },
         // level 14
@@ -348,7 +349,7 @@ QtObject {
                 return !(A | B)
             },
             introMessage: [
-                qsTr("Create a circuit using the components provided such that the bulb glows only when both of the switches are turned off.")
+                qsTr("Create a circuit using the provided components so that the bulb glows only when both of the switches are turned off.")
             ]
         },
         // level 15
@@ -361,7 +362,7 @@ QtObject {
             playAreaComponentPositionY: [0.25, 0.25, 0.25],
             type: [problemType.equation1Variable],
             introMessage: [
-                qsTr("Use the gates such that the bulb will glow only when the switch is turned off and remain off when the switch is turned on.")
+                qsTr("Use the gates so that the bulb glows only when the switch is turned off and remains off when the switch is turned on.")
             ]
         },
         // level 16
@@ -377,7 +378,7 @@ QtObject {
                 return A & B
             },
             introMessage: [
-                qsTr("Create a circuit using the components provided such that the bulb glows only when both of the switches are turned on.")
+                qsTr("Create a circuit using the provided components so that the bulb glows only when both of the switches are turned on.")
             ]
         },
         // level 17
@@ -393,7 +394,7 @@ QtObject {
                 return A | B
             },
             introMessage: [
-                qsTr("Create a circuit using the components provided such that the bulb glows when either of the switches are turned on.")
+                qsTr("Create a circuit using the provided components so that the bulb glows when either of the switches are turned on.")
             ]
         },
         // level 18
@@ -409,7 +410,7 @@ QtObject {
                 return !(A & B)
             },
             introMessage: [
-                qsTr("Create a circuit using the components provided such that the bulb will glow when at least one of the switches are turned off.")
+                qsTr("Create a circuit using the provided components so that the bulb glows when at least one of the switches is turned off.")
             ]
         },
         // level 19
@@ -425,8 +426,8 @@ QtObject {
                 return A <= B
             },
             introMessage: [
-                qsTr("A comparator takes two numbers (A and B) as input and produces 3 values as output. First value is 1 if A < B, second value is 1 for A = B and third value is 1 for A > B."),
-                qsTr("Create a circuit using the components provided such that the bulb will glow when the value of the current flowing through the first switch is less than or equal to that of the second switch.")
+                qsTr("A comparator takes two numbers (A and B) as input and produces 3 values as output. The first value is 1 if A < B, the second value is 1 if A = B and the third value is 1 if A > B."),
+                qsTr("Create a circuit using the provided components so that the bulb glows when the value of the current flowing through the first switch is less than or equal to the current in the second switch.")
             ]
         },
         // level 20
@@ -442,7 +443,7 @@ QtObject {
                 qsTr("The component in the middle is a BCD to seven segment converter."),
                 qsTr("It takes 4 bits as input represented in the binary coded decimal (BCD) format and converts the BCD number into a seven segment code."),
                 qsTr("The output of the converter is connected to the seven segment display, to view the value of the input provided."),
-                qsTr("Display the number \"6\" in the seven segment display.")
+                qsTr("Display the number 6 in the seven segment display.")
             ]
         },
         // level 21
@@ -457,7 +458,7 @@ QtObject {
             introMessage: [
                 qsTr("The signal generator on the left is used to generate alternating signals between 0 and 1 in a given time period taken as input. The time period by default is 1 second, but it can be changed between 0.25 and 2s."),
                 qsTr("The BCD counter placed under it is a special type of counter which can count from 0 to 9 and back to 0 on application of a clock signal."),
-                qsTr("Connect the components to make sure that the count of 0 to 9 is visible in the seven segment display provided.")
+                qsTr("Connect the components to make sure that the count of 0 to 9 is visible in the provided seven segment display.")
             ]
         },
         // level 22
@@ -473,7 +474,7 @@ QtObject {
                 return A ^ B
             },
             introMessage: [
-                qsTr("Light the bulb using both the switches such that the bulb will glow only when either the first switch is on and the second switch is off or the first switch is off and the second switch is on.")
+                qsTr("Light the bulb using both the switches so that the bulb glows only when either the first switch is on and the second switch is off, or when the first switch is off and the second switch is on.")
             ]
         }
     ]

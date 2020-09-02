@@ -34,9 +34,9 @@ ElectricalComponent {
                                "sevenSegmentDisplayD.svg","sevenSegmentDisplayE.svg","sevenSegmentDisplayF.svg",
                                "sevenSegmentDisplayG.svg"]
 
-    information: qsTr("7 segment display takes 7 binary inputs in its input terminals. The display " +
-                      "consists of 7 segments and each segment gets lighted according to the input. " +
-                      "By generating different combination of binary inputs, the display can be used to " +
+    information: qsTr("A 7 segment display takes 7 binary inputs. The display " +
+                      "consists of 7 segments and each segment is lighted according to the input. " +
+                      "By generating different combinations of binary inputs, the display can be used to " +
                       "display numbers from 0 to 9 and a few letters. The diagram is:")
 
     property string infoImageSrc: "7SegmentDisplay.svg"

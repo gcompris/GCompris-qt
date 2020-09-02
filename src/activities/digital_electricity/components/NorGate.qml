@@ -29,7 +29,7 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.2, 0.8]
 
-    information: qsTr("NOR gate outputs the opposite of OR gate. As soon as there is a 1 in input the output is equal to 0. " +
+    information: qsTr("A NOR gate outputs the opposite of an OR gate. As soon as there is a 1 in an input the output is equal to 0. " +
                       "To obtain a 1 all the inputs must be equal to 0:")
 
     truthTable: [['A','B',qsTr("NOT (A OR B)")],

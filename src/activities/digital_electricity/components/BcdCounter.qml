@@ -33,7 +33,7 @@ ElectricalComponent {
     property int count: 0
     property int previousInput: 0
 
-    information: qsTr("BCD counter usually takes a signal generator as input. " +
+    information: qsTr("A BCD counter usually takes a signal generator as input. " +
                       "The output is a BCD number starting from 0 which is increased by one at each tick.")
 
     truthTable: []

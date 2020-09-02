@@ -30,7 +30,7 @@ ElectricalComponent {
     noOfInputs: 0
     noOfOutputs: 1
 
-    information: qsTr("Signal Generator is used to generate alternating signals of 0 and 1. " +
+    information: qsTr("A signal generator is used to generate alternating signals of 0 and 1. " +
     "The time between two changes can be modified by pressing the arrows on the generator.")
 
     property alias outputTerminals: outputTerminals

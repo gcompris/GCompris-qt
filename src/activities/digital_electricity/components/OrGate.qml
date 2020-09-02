@@ -29,7 +29,7 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.2, 0.8]
 
-    information: qsTr("OR gate outputs 1 if any of the inputs is 1, 0 otherwise:")
+    information: qsTr("An OR gate outputs 1 if any of the inputs is 1, otherwise its output is 0:")
     truthTable: [['A','B',qsTr("A OR B")],
                  ['0','0','0'],
                  ['0','1','1'],

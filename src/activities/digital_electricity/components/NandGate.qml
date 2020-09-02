@@ -29,8 +29,8 @@ ElectricalComponent {
     noOfOutputs: 1
     property var inputTerminalPosY: [0.2, 0.8]
 
-    information: qsTr("NAND gate outputs the opposite of AND gate. " +
-                      "If all inputs are 1, output is equal to 0 and as soon as one input is equal to 0 it gives a 1:")
+    information: qsTr("A NAND gate outputs the opposite of an AND gate. " +
+                      "If all the inputs are 1, the output is equal to 0 and as soon as one input is equal to 0 it gives a 1:")
 
     truthTable: [['A','B',qsTr("NOT (A AND B)")],
                  ['0','0','1'],
