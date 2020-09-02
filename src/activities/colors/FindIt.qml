@@ -96,6 +96,7 @@ ActivityBase {
         Keys.onLeftPressed: container.moveCurrentIndexLeft();
         Keys.onDownPressed: container.moveCurrentIndexDown();
         Keys.onUpPressed: container.moveCurrentIndexUp();
+        Keys.onTabPressed: if(repeatItem.visible) repeatItem.clicked();
 
         ListModel {
               id: containerModel
