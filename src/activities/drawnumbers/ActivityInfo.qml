@@ -18,22 +18,22 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "drawnumbers/Drawnumbers.qml"
-  difficulty: 1
-  icon: "drawnumbers/drawnumbers.svg"
-  author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
-  //: Activity title
-  title: qsTr("Draw Numbers")
-  //: Help title
-  description: qsTr("Connect the dots to draw numbers from 0 to 9")
-  // intro: "Draw the numbers by connecting the dots in the correct order."
-  //: Help goal
-  goal: qsTr("Learning how to draw the numbers in a funny way.")
-  //: Help prerequisite
-  prerequisite: ""
-  //: Help manual
-  manual: qsTr("Draw the numbers by connecting the dots in the correct order")
-  credit: ""
-  section: "math numeration"
-  createdInVersion: 7000
+    name: "drawnumbers/Drawnumbers.qml"
+    difficulty: 1
+    icon: "drawnumbers/drawnumbers.svg"
+    author: "Nitish Chauhan &lt;nitish.nc18@gmail.com&gt;"
+    //: Activity title
+    title: qsTr("Draw Numbers")
+    //: Help title
+    description: qsTr("Connect the dots to draw numbers from 0 to 9")
+    // intro: "Draw the numbers by connecting the dots in the correct order."
+    //: Help goal
+    goal: qsTr("Learning how to draw numbers in a funny way.")
+    //: Help prerequisite
+    prerequisite: ""
+    //: Help manual
+    manual: qsTr("Draw the numbers by connecting the dots in the correct order.")
+    credit: ""
+    section: "math numeration"
+    createdInVersion: 7000
 }
