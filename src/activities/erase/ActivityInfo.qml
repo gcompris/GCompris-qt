@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Move the mouse or touch the screen")
   //: Help title
-  description: qsTr("Move the mouse or touch the screen to erase the area and discover the background")
+  description: qsTr("Move the mouse or touch the screen to erase the area and discover the background.")
 //  intro: " Clear the window with your sponge and discover the hidden picture."
   //: Help goal
-  goal: qsTr("Motor-coordination")
+  goal: qsTr("Motor-coordination.")
   //: Help prerequisite
-  prerequisite: qsTr("Mouse-manipulation")
+  prerequisite: qsTr("Mouse-manipulation.")
   //: Help manual
-  manual: qsTr("Move the mouse or touch the screen until all the blocks disappear.")
+  manual: qsTr("Move the mouse or touch the screen on the blocks to make them disappear.")
   credit: ""
   section: "computer mouse"
   createdInVersion: 0
