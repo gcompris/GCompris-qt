@@ -25,18 +25,18 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Learn additions")
   //: Help title
-  description: qsTr("Learn additions with small numbers")
+  description: qsTr("Learn additions with small numbers.")
   //intro: "Click on the circles to give the operation's result."
   //: Help goal
-  goal: qsTr("Learn additions by counting their result")
+  goal: qsTr("Learn additions by counting their result.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("An addition is displayed on the screen. Calculate the result, fill the corresponding number of circles and validate the answer.")+ ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Arrows: navigate") + ("<br>") +
-          qsTr("-Space: select or deselect a circle") + ("<br>") +
-          qsTr("-Enter: validate the answer")
+  manual: qsTr("An addition is displayed on the screen. Calculate the result, fill the corresponding number of circles and validate your answer.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space: select or deselect a circle") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "math arithmetic"
   createdInVersion: 9800

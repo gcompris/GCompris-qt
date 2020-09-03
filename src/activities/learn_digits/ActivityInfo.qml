@@ -25,19 +25,19 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Learn digits")
   //: Help title
-  description: qsTr("Learn digits from 0 to 9")
+  description: qsTr("Learn digits from 0 to 9.")
   //intro: "Click on the circles to match the given digit."
   //: Help goal
-  goal: qsTr("Learn digits by counting their corresponding value")
+  goal: qsTr("Learn digits by counting their corresponding value.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("A digit is displayed on the screen. Fill the corresponding number of circles and validate the answer.")+ ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Arrows: navigate") + ("<br>") +
-          qsTr("-Space: select or deselect a circle") + ("<br>") +
-          qsTr("-Enter: validate the answer") + ("<br>") +
-          qsTr("-Tab: say the digit again")
+  manual: qsTr("A digit is displayed on the screen. Fill the corresponding number of circles and validate your answer.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space: select or deselect a circle") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li><li>") +
+          qsTr("Tab: say the digit again") + ("</li></ul>")
   credit: ""
   section: "math numeration"
   createdInVersion: 9800
