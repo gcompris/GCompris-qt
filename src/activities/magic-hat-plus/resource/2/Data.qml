@@ -21,18 +21,18 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn to calculate total stars up to 10.")
+    objective: qsTr("Learn to add stars up to 10.")
     difficulty: 2
     data: [
     {
         "maxValue": 10,
         "minStars" : [2, 0, 0],
-        "maxStars" : [3, 0, 0] 
+        "maxStars" : [3, 0, 0]
     },
     {
         "maxValue": 10,
         "minStars" : [2, 0, 0],
-        "maxStars" : [4, 0, 0] 
+        "maxStars" : [4, 0, 0]
     },
     {
         "maxValue": 10,

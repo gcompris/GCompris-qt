@@ -32,7 +32,7 @@ Data {
     {
         "maxValue": 10000,
         "minStars" : [2, 2, 0],
-        "maxStars" : [1000, 1000, 0] 
+        "maxStars" : [1000, 1000, 0]
     },
     {
         "maxValue": 10000,

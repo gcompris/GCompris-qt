@@ -46,7 +46,7 @@ ActivityBase {
         signal stop
 
         property var starColors : ["1", "2", "3"]
-        
+
         Component.onCompleted: {
             dialogActivityConfig.initialize()
             activity.start.connect(start)

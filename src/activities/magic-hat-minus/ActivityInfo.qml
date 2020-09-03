@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("The magician hat")
   //: Help title
-  description: qsTr("Count how many items are under the magic hat after some have got away")
+  description: qsTr("Calculate how many stars are under the magic hat.")
 //  intro: "Click on the hat. How many stars are still hiding under the hat."
   //: Help goal
-  goal: qsTr("Learn subtraction")
+  goal: qsTr("Learn subtractions.")
   //: Help prerequisite
-  prerequisite: qsTr("Subtraction")
+  prerequisite: qsTr("Subtractions.")
   //: Help manual
-  manual: qsTr("Click on the hat to open it. Stars go in and a few stars escape. You have to count how many are still under the hat. Click on the bottom area to input your answer and on the OK button to validate your answer.")
+  manual: qsTr("Click on the hat to open it. Stars go in and a few stars escape. You have to calculate how many stars are still under the hat. Click on the bottom area to input your answer and on the OK button to validate it.")
   credit: ""
   section: "math arithmetic"
   createdInVersion: 0

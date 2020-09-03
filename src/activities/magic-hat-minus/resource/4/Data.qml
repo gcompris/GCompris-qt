@@ -27,12 +27,12 @@ Data {
     {
         "maxValue": 100,
         "minStars" : [2, 2, 0],
-        "maxStars" : [20, 10, 0] 
+        "maxStars" : [20, 10, 0]
     },
     {
         "maxValue": 100,
         "minStars" : [2, 2, 2],
-        "maxStars" : [20, 20, 10] 
+        "maxStars" : [20, 20, 10]
     },
     {
         "maxValue": 100,

@@ -27,7 +27,7 @@ Data {
     {
         "maxValue": 10,
         "minStars" : [2, 0, 0],
-        "maxStars" : [3, 0, 0] 
+        "maxStars" : [3, 0, 0]
     },
     {
         "maxValue": 10,
