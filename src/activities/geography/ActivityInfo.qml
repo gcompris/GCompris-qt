@@ -29,14 +29,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Locate the countries")
   //: Help title
-  description: qsTr("Drag and Drop the items to redraw the whole map")
+  description: qsTr("Drag and Drop the items to complete the map.")
 //  intro: "Drag and drop the objects to complete the map."
   //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Drag and drop the map pieces to correct locations to redraw the whole map.")
+  manual: qsTr("Drag and drop the map pieces to their correct locations to complete the map.")
   credit: ""
   section: "sciences geography"
   createdInVersion: 4000
