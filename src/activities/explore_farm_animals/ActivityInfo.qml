@@ -34,8 +34,8 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("There are three levels in this game.") + ("<br><br>") +
           qsTr("In level one, players enjoy exploring each animal on the screen. Click on an animal and learn about it, what its name is, what sound it makes, and what it looks like. Study well this information, because you will be tested in level 2 and 3.")  + ("<br><br>") +
-          qsTr("In level two, a random animal sound is played and you must find which animal makes this sound. Click on the corresponding animal. If you'd like to hear the animal sound repeated, click on the play button. When you have matched all animals correctly, you win.") + ("<br><br>") +
-          qsTr("In level three, a random text prompt is displayed and you must click on the animal that matches the text. When you have matched all texts correctly, you win.")
+          qsTr("In level two, a random animal sound is played and you must find which animal makes this sound. Click on the corresponding animal. If you'd like to hear the animal sound repeated, click on the play button.") + ("<br><br>") +
+          qsTr("In level three, a random text prompt is displayed and you must click on the animal that matches the text.")
   credit: ""
   section: "sciences experiment"
   createdInVersion: 0
