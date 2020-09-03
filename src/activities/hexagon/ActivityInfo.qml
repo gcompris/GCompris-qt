@@ -25,10 +25,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Hexagon")
   //: Help title
-  description: qsTr("Find the strawberry by clicking on the blue fields")
+  description: qsTr("Find the strawberry by clicking on the blue fields.")
 //  intro: "Click on the hexagons to find the hidden object, the red zone indicates that you're close to it!"
   //: Help goal
-  goal: qsTr("Logic-training activity")
+  goal: qsTr("Logic-training activity.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
