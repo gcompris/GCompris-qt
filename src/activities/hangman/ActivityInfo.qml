@@ -25,14 +25,16 @@ ActivityInfo {
   //: Activity title
   title: qsTr("The classic hangman game")
   //: Help title
-  description: qsTr("Guess the letters of the given word. To help you, on every wrong try, a part of the image representing the word will be revealed.")
+  description: qsTr("Guess the letters of the given word.")
   //: Help goal
   goal: qsTr("This is a good exercise to improve reading and spelling skills.")
   //: Help prerequisite
   prerequisite: ""
   // intro: "A word is hidden, you must discover it letter by letter."
   //: Help manual
-  manual: qsTr("You can enter the letters using the virtual keyboard on the screen or with the real keyboard.")
+  manual: qsTr("You can enter the letters using the virtual keyboard on the screen or with the real keyboard.") + ("<br><br>") +
+          qsTr("If the option 'Display the image to find as hint' is activated, on every wrong try a part of the image representing the word will be revealed.") + ("<br><br>") +
+          qsTr("If the option 'Speak the words to find...' is activated, and if the corresponding voice is available, you will hear the word to find when three attempts are remaining.")
   credit: ""
   section: "keyboard reading words"
   createdInVersion: 5000
