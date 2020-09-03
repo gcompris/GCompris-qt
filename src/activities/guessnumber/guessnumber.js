@@ -70,18 +70,18 @@ function setUserAnswer(value){
     if(value === 0)
         return;
     if(value > items.levels[currentLevel].maxNumber){
-        items.infoText.text = qsTr("Number too high")
+        items.infoText.text = qsTr("Your number is too high")
         return;
     }
     if(value > numberToGuess){
-        items.infoText.text = qsTr("Number too high")
+        items.infoText.text = qsTr("Your number is too high")
     }
     if(value < numberToGuess){
-        items.infoText.text = qsTr("Number too low")
+        items.infoText.text = qsTr("Your number is too low")
     }
     items.helico.state = "advancing"
     if(value === numberToGuess) {
-        items.infoText.text = qsTr("Number found!")
+        items.infoText.text = qsTr("You found the number!")
         items.bonus.good("tux")
         items.helico.x = items.background.width
         items.helico.y = items.background.height / 2 - items.helico.height / 2

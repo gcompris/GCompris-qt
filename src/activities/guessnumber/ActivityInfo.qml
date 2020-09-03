@@ -25,14 +25,17 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Guess a number")
   //: Help title
-  description: qsTr("Help Tux escape the cave. Tux hides a number for you to find.")
+  description: qsTr("Help Tux escape the cave by finding the hidden number.")
 //  intro: "Find out the number by typing a number from the range proposed."
   //: Help goal
   goal: ""
   //: Help prerequisite
-  prerequisite: qsTr("Numbers from 1 to 1000 for the last level.")
+  prerequisite: qsTr("Numbers.")
   //: Help manual
-  manual: qsTr("Read the instructions that give you the range of the number to find. Enter a number in the top right entry box. You will be told if your number is higher or lower. Then enter another number. The distance between Tux and the escape area on the right represents how far you are from the correct number. If Tux is over or under the escape area, it means your number is over or under the correct number.")
+  manual: qsTr("Read the instructions that give you the range of the number to find. Enter a number in the top right entry box. You will be told if your number is higher or lower than the one to find. Then try again until you find the correct answer. The distance between Tux and the right side of the screen represents how far you are from the number to find. If Tux is over or under the vertical center of the screen, it means your number is over or under the number to find.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Digits: enter a number") + ("</li><li>") +
+          qsTr("Backspace: erase a number") + ("</li></ul>")
   credit: ""
   section: "math numeration"
   createdInVersion: 0
