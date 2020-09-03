@@ -285,7 +285,29 @@ function checkAnswer() {
         }
         items.bonus.good('tux')
     } else if (problemType == items.tutorialDataset.problemType.others) {
-        if (currentLevel == 20) {
+        if (currentLevel == 11) {
+            var switch1 = determiningComponents[0]
+            var digitalLight = determiningComponents[1]
+            var switch1InitialState = switch1.imgSrc
+
+            for (var A = 0; A <= 1; A++) {
+                switch1.imgSrc = A == 1 ? "switchOn.svg" : "switchOff.svg"
+
+                    updateComponent(switch1.index)
+
+                    var operationResult = A
+
+                    if (operationResult != digitalLight.inputTerminals.itemAt(0).value) {
+                        switch1.imgSrc = switch1InitialState
+                            updateComponent(switch1.index)
+                            items.bonus.bad('tux', items.bonus.checkAnswer)
+                            processingAnswer = false
+                            return
+                    }
+            }
+            items.bonus.good('tux')
+        }
+        if (currentLevel == 26) {
             var bcdToSevenSegment = determiningComponents[0]
 
             var decimalValue =
@@ -301,7 +323,7 @@ function checkAnswer() {
             items.bonus.bad('tux', items.bonus.checkAnswer)
             processingAnswer = false
             return
-        } else if (currentLevel == 21) {
+        } else if (currentLevel == 27) {
             var bcdCounter = determiningComponents[0]
 
             var bcdOutput =
@@ -350,7 +372,7 @@ function zoomIn() {
         items.availablePieces.zoomInBtn.state = "canZoomIn"
     }
     items.availablePieces.zoomOutBtn.state = "canZoomOut"
-    
+
     if (items.zoomLvl < 0.5) {
         items.zoomLvl += 0.125
     }

@@ -138,7 +138,7 @@ QtObject {
         'equation1Variable': 2,
         'equation2Variables': 3,
         'equation3Variables': 4,
-        'others': 5,
+        'others': 5
     }
     // tutorial levels
     property var tutorialLevels: [
@@ -231,7 +231,39 @@ QtObject {
         },
         // level 7
         {
-            inputComponentList: [zero, one, andGate, orGate, nandGate],
+            inputComponentList: [andGate, orGate],
+            playAreaComponentList: [one, switchKey, switchKey, digitalLight],
+            determiningComponentsIndex: [1, 2, 3],
+            wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
+            type: [problemType.equation2Variables],
+            result: function (A, B) {
+                return A & B
+            },
+            introMessage: [
+                qsTr("Create a circuit using the provided components so that the bulb glows only when both of the switches are turned on.")
+            ]
+        },
+        // level 8
+        {
+            inputComponentList: [andGate, orGate],
+            playAreaComponentList: [one, switchKey, switchKey, digitalLight],
+            determiningComponentsIndex: [1, 2, 3],
+            wires: [ [0, 0, 1, 0], [0, 0, 2, 0] ],
+            playAreaComponentPositionX: [0.0, 0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.25, 0.2, 0.35, 0.25],
+            type: [problemType.equation2Variables],
+            result: function (A, B) {
+                return A | B
+            },
+            introMessage: [
+                qsTr("Create a circuit using the provided components so that the bulb glows when either of the switch is turned on.")
+            ]
+        },
+        // level 9
+        {
+            inputComponentList: [zero, one, andGate, orGate],
             playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
             determiningComponentsIndex: [0, 1, 2, 3],
             wires: [],
@@ -239,13 +271,42 @@ QtObject {
             playAreaComponentPositionY: [0.0, 0.25, 0.55, 0.25],
             type: [problemType.equation3Variables],
             result: function (A, B, C) {
-                return A | (B & C)
+                return A & B & C
             },
             introMessage: [
-                qsTr("Light the bulb using the provided components so that the bulb glows if the first switch is turned ON, or if both the second and the third switches are turned on.")
+                qsTr("Light the bulb using the three switches so that the bulb glows only if all the three switches are turned on.")
             ]
         },
-        // level 8
+        // level 10
+        {
+            inputComponentList: [zero, one, andGate, orGate],
+            playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
+            determiningComponentsIndex: [0, 1, 2, 3],
+            wires: [],
+            playAreaComponentPositionX: [0.1, 0.1, 0.1, 0.5],
+            playAreaComponentPositionY: [0.0, 0.25, 0.55, 0.25],
+            type: [problemType.equation3Variables],
+            result: function (A, B, C) {
+                return A | B | C
+            },
+            introMessage: [
+                qsTr("Light the bulb using the three switches so that the bulb glows if any of the switches are turned on.")
+            ]
+        },
+        // level 11
+        {
+            inputComponentList: [zero, andGate, orGate, notGate],
+            playAreaComponentList: [switchKey, digitalLight],
+            determiningComponentsIndex: [0, 1],
+            wires: [],
+            playAreaComponentPositionX: [0.3, 0.6],
+            playAreaComponentPositionY: [0.25, 0.25],
+            type: [problemType.others],
+            introMessage: [
+                qsTr("Use the gates so that the bulb glows only when the switch is on.")
+            ]
+        },
+        // level 12
         {
             inputComponentList: [zero, one],
             playAreaComponentList: [xorGate, digitalLight],
@@ -260,7 +321,23 @@ QtObject {
                 qsTr("Light the bulb using the provided XOR gate.")
             ]
         },
-        // level 9
+        // level 13
+        {
+            inputComponentList: [zero, one, xorGate],
+            playAreaComponentList: [switchKey, switchKey, digitalLight],
+            determiningComponentsIndex: [0, 1, 2],
+            wires: [],
+            playAreaComponentPositionX: [0.2, 0.2, 0.6],
+            playAreaComponentPositionY: [0.2, 0.35, 0.25],
+            type: [problemType.equation2Variables],
+            result: function (A, B) {
+                return A ^ B
+            },
+            introMessage: [
+                qsTr("Light the bulb using the two switches so that the bulb glows when one of the switch is on and the other is off.")
+            ]
+        },
+        // level 14
         {
             inputComponentList: [zero, one, xorGate],
             playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
@@ -276,7 +353,7 @@ QtObject {
                 qsTr("Light the bulb using the three switches so that the bulb glows when odd number of the switches are turned on.")
             ]
         },
-        // level 10
+        // level 15
         {
             inputComponentList: [one, notGate],
             playAreaComponentList: [norGate, digitalLight],
@@ -291,7 +368,7 @@ QtObject {
                 qsTr("Light the bulb using the provided NOR gate.")
             ]
         },
-        // level 11
+        // level 16
         {
             inputComponentList: [nandGate],
             playAreaComponentList: [one, switchKey, digitalLight],
@@ -304,7 +381,7 @@ QtObject {
                 qsTr("Use the gates so that the bulb glows only when the switch is turned off and doesn't glow when the switch is turned on.")
             ]
         },
-        // level 12
+        // level 17
         {
             inputComponentList: [nandGate],
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
@@ -320,7 +397,7 @@ QtObject {
                 qsTr("Create a circuit using the provided components so that the bulb glows only when both of the switches are turned on.")
             ]
         },
-        // level 13
+        // level 18
         {
             inputComponentList: [nandGate],
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
@@ -333,10 +410,10 @@ QtObject {
                 return A | B
             },
             introMessage: [
-                qsTr("Create a circuit using the provided components so that the bulb glows when either of the switches are turned on.")
+                qsTr("Create a circuit using the provided components so that the bulb glows when either of the switch is turned on.")
             ]
         },
-        // level 14
+        // level 19
         {
             inputComponentList: [nandGate],
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
@@ -352,7 +429,23 @@ QtObject {
                 qsTr("Create a circuit using the provided components so that the bulb glows only when both of the switches are turned off.")
             ]
         },
-        // level 15
+        // level 20
+        {
+            inputComponentList: [zero, one, andGate, orGate, nandGate],
+            playAreaComponentList: [switchKey, switchKey, switchKey, digitalLight],
+            determiningComponentsIndex: [0, 1, 2, 3],
+            wires: [],
+            playAreaComponentPositionX: [0.1, 0.1, 0.1, 0.5],
+            playAreaComponentPositionY: [0.0, 0.25, 0.55, 0.25],
+            type: [problemType.equation3Variables],
+            result: function (A, B, C) {
+                return A | (B & C)
+            },
+            introMessage: [
+                qsTr("Light the bulb using the provided components so that the bulb glows if the first switch is turned ON, or if both the second and the third switches are turned on.")
+            ]
+        },
+        // level 21
         {
             inputComponentList: [norGate],
             playAreaComponentList: [one, switchKey, digitalLight],
@@ -365,7 +458,7 @@ QtObject {
                 qsTr("Use the gates so that the bulb glows only when the switch is turned off and remains off when the switch is turned on.")
             ]
         },
-        // level 16
+        // level 22
         {
             inputComponentList: [norGate],
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
@@ -381,7 +474,7 @@ QtObject {
                 qsTr("Create a circuit using the provided components so that the bulb glows only when both of the switches are turned on.")
             ]
         },
-        // level 17
+        // level 23
         {
             inputComponentList: [norGate],
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
@@ -397,7 +490,7 @@ QtObject {
                 qsTr("Create a circuit using the provided components so that the bulb glows when either of the switches are turned on.")
             ]
         },
-        // level 18
+        // level 24
         {
             inputComponentList: [norGate],
             playAreaComponentList: [one, switchKey, switchKey, digitalLight],
@@ -413,7 +506,7 @@ QtObject {
                 qsTr("Create a circuit using the provided components so that the bulb glows when at least one of the switches is turned off.")
             ]
         },
-        // level 19
+        // level 25
         {
             inputComponentList: [one, andGate, notGate, norGate, xorGate, nandGate, orGate],
             playAreaComponentList: [switchKey, switchKey, comparator, digitalLight],
@@ -430,7 +523,7 @@ QtObject {
                 qsTr("Create a circuit using the provided components so that the bulb glows when the value of the current flowing through the first switch is less than or equal to the current in the second switch.")
             ]
         },
-        // level 20
+        // level 26
         {
             inputComponentList: [one, switchKey, nandGate, norGate, andGate, orGate, notGate],
             playAreaComponentList: [bcdToSevenSegment, sevenSegmentDisplay],
@@ -446,7 +539,7 @@ QtObject {
                 qsTr("Display the number 6 in the seven segment display.")
             ]
         },
-        // level 21
+        // level 27
         {
             inputComponentList: [one, switchKey, nandGate, norGate, andGate, orGate, notGate],
             playAreaComponentList: [signalGenerator, bcdCounter, bcdToSevenSegment, sevenSegmentDisplay],
@@ -461,7 +554,7 @@ QtObject {
                 qsTr("Connect the components to make sure that the count of 0 to 9 is visible in the provided seven segment display.")
             ]
         },
-        // level 22
+        // level 28
         {
             inputComponentList: [zero, notGate, orGate, andGate],
             playAreaComponentList: [one, one, switchKey, switchKey, digitalLight],
