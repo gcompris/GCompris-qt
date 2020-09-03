@@ -25,14 +25,18 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Letter in which word")
   //: Help title
-  description: qsTr("A letter is written and/or spoken. Some words are displayed, the children must find the word or the words in which this letter appears.")
+  description: qsTr("A letter is written. Some words are displayed, and you must find the word or the words in which this letter appears.")
   //intro: "Click on all the words containing the wanted letter."
   //: Help goal
-  goal: qsTr("Select all the words which contain the spoken letter.")
+  goal: qsTr("Select all the words which contain the given letter.")
   //: Help prerequisite
-  prerequisite: qsTr("spellings, letter recognition")
+  prerequisite: qsTr("Spelling, letter recognition.")
   //: Help manual
-  manual: qsTr("A letter is displayed on the flag attached to the plane, select all the words or the objects in which the letter appears and then press OK.")
+  manual: qsTr("A letter is displayed on the flag attached to the plane. Select all the words in the list containing this letter and then press the OK button.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space: select an item") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "reading words"
   createdInVersion: 7000

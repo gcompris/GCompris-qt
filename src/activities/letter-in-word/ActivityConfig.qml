@@ -49,7 +49,7 @@ Item {
         GCDialogCheckBox {
             id: normalModeConfig
             width: column.width - 50
-            text: qsTr("All words")
+            text: qsTr("All the words")
             checked: savedMode === 11 ? true : false
             onCheckedChanged: easyModeConfig.checked = !normalModeConfig.checked;
         }
@@ -67,7 +67,7 @@ Item {
             width: activityConfiguration.width
             GCComboBox {
                 id: letterCaseBox
-                label: qsTr("Select case for letter to be searched")
+                label: qsTr("Select the case for the letters to search")
                 background: activityConfiguration.background
                 model: [
                 {"text": qsTr("Mixed Case"), "value": Font.MixedCase},
