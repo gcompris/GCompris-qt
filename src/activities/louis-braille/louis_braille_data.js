@@ -50,7 +50,7 @@ var dataset = [
                  "img": baseUrl + "night_printing.jpg"
              },
              {
-                 "text": qsTr("Louis trimmed Barbier's 12 dots into 6 and invented the Braille system."),
+                 "text": qsTr("Louis trimmed Barbier's 12 dots into 6 and invented the braille system."),
                  "year": "1824",
                  "img": baseUrl + "braille.jpg"
              },
