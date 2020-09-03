@@ -36,12 +36,9 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("There are two levels in this game.
-
-In level one, players enjoy exploring each animal on the screen. Click on the question mark, and learn about the animal, what it's name is, and what it looks like. Study well this information, because you will be tested in level 2!
-
-In level two, a random text prompt is displayed and you must click on the animal that matches the text. When you have matched all texts correctly, you win!
-")
+  manual: qsTr("There are two levels in this game.") + ("<br><br>") +
+          qsTr("In level one, players enjoy exploring each animal on the screen. Click on the question mark, and learn about the animal, what its name is, and what it looks like. Study well this information, because you will be tested in level 2.") + ("<br><br>") +
+          qsTr("In level two, a random text prompt is displayed and you must click on the animal that matches the text.")
   credit: ""
   section: "sciences experiment"
   createdInVersion: 0

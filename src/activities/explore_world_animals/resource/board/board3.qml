@@ -28,7 +28,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Crocodile"),
-            "text": qsTr("A crocodile is a large amphibious reptile. It lives mostly in large tropical rivers, where it is an ambush predator."),
+            "text": qsTr("The crocodile is a large amphibious reptile. It lives mostly in large tropical rivers, where it is an ambush predator."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/crocodile.jpg",
             "text2": qsTr("Crocodile"),
             "x": 0.525,
@@ -39,7 +39,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Komodo dragon"),
-            "text": qsTr("The Komodo dragon is the largest living lizard (up to 3 meters). It inhabits the Indonesian islands."),
+            "text": qsTr("The Komodo dragon is the largest living lizard (up to 3 meters). It lives in the Indonesian islands."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/dragon.jpg",
             "text2": qsTr("Komodo dragon"),
             "x": 0.8,
@@ -61,7 +61,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Ring-tailed lemur"),
-            "text": qsTr("Lemur is a primate that lives in the dry regions of southwest Madagascar. The striped tail makes it easy to recognize."),
+            "text": qsTr("The ring-tailed lemur is a primate that lives in the dry regions of southwest Madagascar. Its striped tail makes it easy to recognize."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/lemur.jpg",
             "text2": qsTr("Ring-tailed lemur"),
             "x": 0.595,
@@ -72,7 +72,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Panda"),
-            "text": qsTr("Panda is a bear with black and white fur that lives in a few mountain ranges in central China. Pandas mostly eat bamboo."),
+            "text": qsTr("The panda is a bear with black and white fur that lives in a few mountain ranges in central China. Pandas mostly eat bamboo."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/panda.jpg",
             "text2": qsTr("Panda"),
             "x": 0.765,
@@ -87,7 +87,7 @@ QtObject {
             "text": qsTr("Explore wild animals from around the world.")
         },
         {
-            "text": qsTr("Click on location where the given animal lives.")
+            "text": qsTr("Click on the location where the given animal lives.")
         }
     ]
 }

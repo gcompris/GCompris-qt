@@ -61,7 +61,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/question.svg",
             "title": qsTr("Bison"),
-            "text": qsTr("Bison live on the plains of North America and were hunted by the Native Americans for food."),
+            "text": qsTr("Bisons live on the plains of North America and were hunted by the Native Americans for food."),
             "image2": "qrc:/gcompris/src/activities/explore_world_animals/resource/animals/bison.jpg",
             "text2": qsTr("Bison"),
             "x": 0.215,
@@ -87,7 +87,7 @@ QtObject {
             "text": qsTr("Explore wild animals from around the world.")
         },
         {
-            "text": qsTr("Click on location where the given animal lives.")
+            "text": qsTr("Click on the location where the given animal lives.")
         }
     ]
 }
