@@ -29,14 +29,16 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Gravity")
   //: Help title
-  description: qsTr("Introduction to the concept of gravity")
+  description: qsTr("Introduction to the concept of gravity.")
   //intro: "Move the spaceship to avoid hitting the planets and reach the space station."
   //: Help goal
   goal: qsTr("Move the spaceship to avoid hitting the planets and reach the space station.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Move the spaceship with the left and right keys, or with the buttons on the screen for mobile devices. Try to stay near the center of the screen and anticipate by looking at the size and direction of the arrow showing the gravity force.")
+  manual: qsTr("Move the spaceship with the left and right keys, or with the buttons on the screen for mobile devices. Try to stay near the center of the screen and anticipate by looking at the size and direction of the arrow showing the gravity force.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Left and right arrows: move the spaceship") + ("</li></ul>")
   credit: ""
   section: "sciences experiment"
   createdInVersion: 9800
