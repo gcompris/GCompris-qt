@@ -39,7 +39,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Colosseum"),
-            "text": qsTr("The Colosseum or Coliseum is today the most recognizable of Rome's Classical buildings. Even 2,000 years after it was built, and despite centuries when the abandoned building was pillaged for building materials, it is instantly recognizable as a classical template for the stadia of today. It was the first permanent amphitheatre to be raised in Rome, and the most impressive arena the Classical world had yet seen."),
+            "text": qsTr("The Colosseum or Coliseum is today the most recognizable of Rome's Classical buildings. Even 2000 years after it was built, and despite centuries when the abandoned building was pillaged for building materials, it is instantly recognizable as a classical template for the stadia of today. It was the first permanent amphitheatre to be raised in Rome, and the most impressive arena the Classical world had yet seen."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/colosseum.jpg",
             "text2": qsTr("Colosseum"),
             "x": "0.506",
@@ -61,7 +61,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("The Great Wall of China"),
-            "text": qsTr("The Great Wall, was listed as a World Heritage by UNESCO in 1987. Just like a gigantic dragon, it winds up and down across deserts, grasslands, mountains and plateaus, stretching approximately 13,170 miles (21,196 kilometers) from east to west of China."),
+            "text": qsTr("The Great Wall was listed as a World Heritage by UNESCO in 1987. Just like a gigantic dragon, it winds up and down across deserts, grasslands, mountains and plateaus, stretching approximately 13170 miles (21196 kilometers) from east to west of China."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/greatWallofChina.jpg",
             "text2": qsTr("The Great Wall of China"),
             "x": "0.794",
@@ -72,7 +72,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Machu Picchu"),
-            "text": qsTr("Machu Picchu stands 2,430 m above sea-level, in the middle of a tropical mountain forest, in an extraordinarily beautiful setting. It was probably the most amazing urban creation of the Inca Empire at its height; its giant walls, terraces and ramps seem as if they have been cut naturally in the continuous rock escarpments. The natural setting, on the eastern slopes of the Andes, encompasses the upper Amazon basin with its rich diversity of flora and fauna."),
+            "text": qsTr("The Machu Picchu stands 2430 meters above sea-level, in the middle of a tropical mountain forest, in an extraordinarily beautiful setting. It was probably the most amazing urban creation of the Inca Empire at its height, its giant walls, terraces and ramps seem as if they had been cut naturally in the continuous rock escarpments. The natural setting, on the eastern slopes of the Andes, encompasses the upper Amazon basin with its rich diversity of flora and fauna."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/machuPicchu.jpg",
             "text2": qsTr("Machu Picchu"),
             "x": "0.272",
@@ -106,10 +106,10 @@ QtObject {
 
     property var instructions: [
         {
-            "text": qsTr("The 7 New Wonders of World.")
+            "text": qsTr("The New 7 Wonders of the World.")
         },
         {
-            "text": qsTr("Click on location where the given monument is located.")
+            "text": qsTr("Click on the location of the given monument.")
         }
     ]
 }

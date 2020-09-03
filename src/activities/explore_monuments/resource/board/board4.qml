@@ -108,7 +108,7 @@ QtObject {
             "text": qsTr("Monuments of Germany")
         },
         {
-            "text": qsTr("Click on location where the given monument is located.")
+            "text": qsTr("Click on the location of the given monument.")
         }
     ]
 }

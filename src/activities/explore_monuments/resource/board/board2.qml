@@ -38,7 +38,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Hawa Mahal"),
-            "text": qsTr("Hawa Mahal, is a palace in Jaipur, India, so named because it was essentially a high screen wall built so the women of the royal household could observe street festivals while unseen from the outside. Constructed of red and pink sandstone, the palace sits on the edge of the City Palace, and extends to the zenana, or women's chambers."),
+            "text": qsTr("Hawa Mahal is a palace in Jaipur, India, so named because it was essentially a high screen wall built so that the women of the royal household could observe street festivals while unseen from the outside. Constructed of red and pink sandstone, the palace sits on the edge of the City Palace, and extends to the zenana, or women's chambers."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/hawaMahal.jpg",
             "text2": qsTr("Hawa Mahal"),
             "x": "0.270",
@@ -137,7 +137,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Qutub Minar"),
-            "text": qsTr("Qutub Minar at 74 meters, is the tallest brick minaret in the world, and the second tallest minar in India after Fateh Burj at Mohali. Along with the ancient and medieval monuments surrounding it, they form the Qutb Complex, which is a UNESCO World Heritage Site. The tower, located in the Mehrauli area of Delhi, is made of red sandstone and marble."),
+            "text": qsTr("Qutub Minar, at 74 meters, is the tallest brick minaret in the world, and the second tallest minar in India after Fateh Burj at Mohali. Along with the ancient and medieval monuments surrounding it, they form the Qutb Complex, which is a UNESCO World Heritage Site. The tower, located in the Mehrauli area of Delhi, is made of red sandstone and marble."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/qutubMinar.jpg",
             "text2": qsTr("Qutub Minar"),
             "x": "0.310",
@@ -152,7 +152,7 @@ QtObject {
             "text": qsTr("Monuments of India")
         },
         {
-            "text": qsTr("Click on location where the given monument is located.")
+            "text": qsTr("Click on the location of the given monument.")
         }
     ]
 }

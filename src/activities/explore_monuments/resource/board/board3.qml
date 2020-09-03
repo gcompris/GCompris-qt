@@ -27,7 +27,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Mont-Saint-Michel"),
-            "text": qsTr("Mont Saint-Michel is a rocky tidal island located in Normandy, at the mouth of the Couesnon River, near the city of Avranches. The highest point of the island is the spire at the top of the Abbey’s bell tower, 170 metres above sea level. They are currently less than 50 people living on the island. The unique feature of Mont Saint-Michel is that it is completely surrounded by water and can only be accessed at low tide."),
+            "text": qsTr("Mont Saint-Michel is a rocky tidal island located in Normandy, at the mouth of the Couesnon River, near the city of Avranches. The highest point of the island is the spire at the top of the Abbey’s bell tower, 170 meters above sea level. There are currently less than 50 people living on the island. The unique feature of Mont Saint-Michel is that it is completely surrounded by water and can only be accessed at low tide."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/montStMichel.jpg",
             "text2": qsTr("Mont-Saint-Michel"),
             "x": "0.265",
@@ -49,7 +49,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Reims Cathedral"),
-            "text": qsTr("By size, Reims Cathedral is quite an extraordinary construction: designed to accommodate huge crowds, its gigantic dimensions include a surface area of 6,650 m2 and a length of 122m. A Gothic art masterpiece and the coronation site of the Kings of France, it has been listed as a UNESCO World Heritage Site since 1991. The Mecca for tourists in the Champagne region welcomes 1,500,000 visitors every year."),
+            "text": qsTr("By size, Reims Cathedral is quite an extraordinary construction: designed to accommodate huge crowds, its gigantic dimensions include a surface area of 6650 m2 and a length of 122m. A Gothic art masterpiece and the coronation site of the Kings of France, it has been listed as a UNESCO World Heritage Site since 1991. The Mecca for tourists in the Champagne region welcomes 1500000 visitors every year."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/reimsCathedral.jpg",
             "text2": qsTr("Reims Cathedral"),
             "x": "0.670",
@@ -82,7 +82,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Château de Chambord"),
-            "text": qsTr("Prestigious, majestic, colossal, extravagant are these adjectives enough to fully describe the splendour of Chambord? The largest chateau of the Loire Valley is indeed full of surprises for those who are lucky enough to explore its domain. This remarkable piece of architecture is certainly more than just a castle: it is the dream of a King, transformed into reality."),
+            "text": qsTr("Prestigious, majestic, colossal, extravagant, are these adjectives enough to fully describe the splendour of Chambord? The largest château of the Loire Valley is indeed full of surprises for those who are lucky enough to explore its domain. This remarkable piece of architecture is certainly more than just a castle: it is the dream of a king, transformed into reality."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/chateaudeChambord.jpg",
             "text2": qsTr("Château de Chambord"),
             "x": "0.456",
@@ -115,7 +115,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Château de Chenonceau"),
-            "text": qsTr("Chateau de Chenonceau is among many of Loire Valley Chateaux that boast amazing architecture and historical significance drawing thousands of tourists from all over the world. Chateau de Chenonceau is sometimes called the Ladies Castle by some historians due to feminine figures having greatly influenced the construction and development of this French Chateau over the centuries."),
+            "text": qsTr("The Château de Chenonceau is among many of Loire Valley Châteaux that boast amazing architecture and historical significance drawing thousands of tourists from all over the world. Château de Chenonceau is sometimes called the Ladies Castle by some historians due to feminine figures having greatly influenced the construction and development of this French Château over the centuries."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/chateaudeChenonceau.jpg",
             "text2": qsTr("Château de Chenonceau"),
             "x": "0.449",
@@ -141,7 +141,7 @@ QtObject {
             "text": qsTr("Monuments of France")
         },
         {
-            "text": qsTr("Click on location where the given monument is located.")
+            "text": qsTr("Click on the location of the given monument.")
         }
     ]
 }

@@ -26,7 +26,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Great Pyramid of Giza"),
-            "text": qsTr("The Great Pyramid of Giza is also known as the Pyramid of Khufu or the Pyramid of Cheops. It is considered to be the oldest of all the Seven Wonders of the Ancient World. It is also the largest of all the three pyramids in the Giza. It is situated in Giza Necropolis of Egypt. The initial construction has been started by Egyptian Pharaoh Khufu then it was continued by his son Khafre and finally completed by Menkaure. It took almost 20 years to build the pyramid and approximately 2 million blocks of stone has been used in the construction. The height of the pyramid is approximately 139 meters making it the highest pyramid of Egypt."),
+            "text": qsTr("The Great Pyramid of Giza is also known as the Pyramid of Khufu or the Pyramid of Cheops. It is considered to be the oldest of all the Seven Wonders of the Ancient World. It is also the largest of all the three pyramids in Giza. It is situated in the Giza Necropolis, in Egypt. The initial construction has been started by Egyptian Pharaoh Khufu, then it was continued by his son Khafre and finally completed by Menkaure. It took almost 20 years to build the pyramid and approximately 2 million blocks of stone have been used in the construction. The height of the pyramid is approximately 139 meters making it the highest pyramid of Egypt."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/egypt/greatPyramidOfGiza.jpg",
             "text2": qsTr("Great Pyramid of Giza"),
             "x": "0.627",
@@ -48,7 +48,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Pyramid of Meidum"),
-            "text": qsTr("Five miles south of Saqqara in Egypt stands the mysterious tower-like pyramid of Meidum, which today scarcely resembles a typical pyramid at all. The pyramid was probably built during the reign of the 4th Dynasty pharaoh Sneferu, although it is believed by some that the pyramid may have been started by Sneferu’s predecessor, Huni. At some point during its construction the steps of the pyramid were filled with limestone encasing marking the first attempt by the ancient Egyptians at the construction of a true pyramid."),
+            "text": qsTr("Five miles south of Saqqara in Egypt stands the mysterious tower-like pyramid of Meidum, which today scarcely resembles a typical pyramid at all. This pyramid was probably built during the reign of the 4th Dynasty pharaoh Sneferu, although it is believed by some that the pyramid may have been started by Sneferu’s predecessor, Huni. At some point during its construction the steps of the pyramid were filled with limestone encasing marking the first attempt by the ancient Egyptians at the construction of a true pyramid."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/egypt/meidumPyramid.jpg",
             "text2": qsTr("Pyramid of Meidum"),
             "x": "0.609",
@@ -59,7 +59,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/key.svg",
             "title": qsTr("Red Pyramid"),
-            "text": qsTr("Red Pyramid was one of the finest and successful attempts by Pharaoh Sneferu in building world’s first ever smooth sided pyramid during the Ancient Egypt period. The height of the pyramid is 104 meters making it the world’s 4th largest pyramid in Egypt. The pyramid has been built with red limestone stones and hence the name. The local people of Egypt called it as el-heram el-watwaat meaning the Bat Pyramid."),
+            "text": qsTr("The Red Pyramid was one of the finest and most successful attempts by Pharaoh Sneferu in building world’s first ever smooth sided pyramid during the Ancient Egypt period. The height of the pyramid is 104 meters making it the world’s 4th largest pyramid in Egypt. The pyramid has been built with red limestone stones, hence the name. The local people of Egypt called it as el-heram el-watwaat meaning the Bat Pyramid."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/egypt/redPyramid.jpg",
             "text2": qsTr("Red Pyramid"),
             "x": "0.535",
@@ -74,7 +74,7 @@ QtObject {
             "text": qsTr("Egyptian pyramids")
         },
         {
-            "text": qsTr("Click on location where the given pyramid is located.")
+            "text": qsTr("Click on the location of the given pyramid.")
         }
     ]
 }
