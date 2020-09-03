@@ -29,14 +29,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Locate the region")
   //: Help title
-  description: qsTr("Drag and Drop the regions to redraw the whole country")
+  description: qsTr("Drag and Drop the regions to complete the country maps.")
 //  intro: "Drag and drop the regions to complete the country maps."
   //: Help goal
   goal: ""
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Drag and drop different regions of the country to correct locations to redraw the whole country.")
+  manual: qsTr("Drag and drop different regions of the country to their correct locations to complete the map.")
   credit: ""
   section: "sciences geography"
   createdInVersion: 4000
