@@ -36,11 +36,16 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Enrich your vocabulary in your native language or in a foreign one.")
   //: Help prerequisite
-  prerequisite: qsTr("Reading")
+  prerequisite: qsTr("Reading.")
   //: Help manual
   manual: qsTr("Review a set of words. Each word is shown with a voice, a text and an image.<br/>"
-           + "When done, you are suggested an exercise in which, given the voice, "
-           + "you must find the right word. In the configuration, you can select the language you want to learn.")
+           + "When done, you will have some exercises to recognize the text from the voice and the image, then only from the voice, and finally an exercise to type the text.") + ("<br><br>") +
+          qsTr("In the configuration, you can select the language you want to learn.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: select an item from the list") + ("</li><li>") +
+          qsTr("Enter: validate your answer when the OK button is visible") + ("</li><li>") +
+          qsTr("Tab: repeat the word") + ("</li></ul>")
   credit: qsTr("The images and voices come from the Art4Apps project: https://www.art4apps.org/.")
   section: "reading vocabulary"
   createdInVersion: 5000
