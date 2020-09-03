@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("The Tower of Hanoi")
   //: Help title
-  description: qsTr("Reproduce the tower on the right side")
+  description: qsTr("Move the tower to the right side.")
   //intro: "Rebuild the model tower on the right support. Take care, no disc may be placed atop a smaller disc."
   //: Help goal
   goal: qsTr("The object of the game is to move the entire stack to another peg, obeying the following rules:

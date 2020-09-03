@@ -79,7 +79,7 @@ ActivityBase {
             }
             visible: bar.level == 1
         }
-        
+
         GCText {
             id: description
             text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
@@ -93,7 +93,6 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
             visible: bar.level == 1
         }
-        
 
         Repeater {
             id: discRepeater
@@ -127,7 +126,7 @@ ActivityBase {
                         }
                     }
                 }
-                
+
                 Rectangle {
                     id: inDisc
                     width: parent.width - 10 * ApplicationInfo.ratio
@@ -135,7 +134,7 @@ ActivityBase {
                     radius: width * 0.5
                     color: "#2AFFFFFF"
                     anchors.centerIn: parent
-                    
+
                     GCText {
                         id: textSimplified
                         visible: activityMode == "simplified"
@@ -144,9 +143,9 @@ ActivityBase {
                         anchors.rightMargin: 10 * ApplicationInfo.ratio
                         anchors.right: parent.right
                     }
-                    
+
                 }
-                
+
 
                 MouseArea {
                     id: discMouseArea
