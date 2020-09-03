@@ -28,7 +28,7 @@ ActivityInfo {
   description: qsTr("The fireman needs to stop the fire, but the hose is blocked.")
 //  intro: " Move the mouse or your finger along the pipe to stop the fire."
   //: Help goal
-  goal: qsTr("Fine motor coordination")
+  goal: qsTr("Fine motor coordination.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
