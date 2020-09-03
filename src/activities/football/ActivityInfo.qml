@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("The football game")
   //: Help title
-  description: qsTr("Kick the ball into the goal")
+  description: qsTr("Kick the ball into the goal.")
 //  intro: "Drag a line from the ball to set the speed and direction of your kick."
   //: Help goal
-  goal: qsTr("Kick the ball behind the goal keeper on the right")
+  goal: qsTr("Kick the ball behind the goal keeper on the right.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Drag a line from the ball, to set its speed and direction.")
+  manual: qsTr("Drag a line from the ball to set its speed and direction, and release it to kick the ball.")
   credit: ""
   section: "fun"
   createdInVersion: 0
