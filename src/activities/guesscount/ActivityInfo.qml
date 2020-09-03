@@ -34,7 +34,7 @@ ActivityInfo {
     //: Help goal
     goal: qsTr("Intuition and practice of algebraic-like calculations.")
     //: Help prerequisite
-    prerequisite: qsTr("knowledge of arithmetic operations.")
+    prerequisite: qsTr("Knowledge of arithmetic operations.")
     //: Help manual
     manual: qsTr("Drag the appropriate numbers and the operators to the boxes to obtain the number to guess in the instruction.")
     credit: ""
