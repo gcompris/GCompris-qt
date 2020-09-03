@@ -37,7 +37,6 @@ QtObject {
           "height": 0.25,
           "width": 0.25
       },
-      
       {
           "pixmapfile": "images/sailingboat.svg",
           "x": "0.8",
