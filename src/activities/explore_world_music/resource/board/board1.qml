@@ -77,7 +77,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_world_music/resource/music/suitcase.svg",
             "title": qsTr("Scotland and Ireland"),
-            "text": qsTr("Folk music of this region is called celtic music, often incorporates a narrative poem or story. Typical instruments include bagpipes, fiddles, flutes, harps, and accordions."),
+            "text": qsTr("Folk music of this region is called celtic music. It often incorporates a narrative poem or story. Typical instruments include bagpipes, fiddles, flutes, harps, and accordions."),
             "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/music/ireland.$CA"),
             "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/music/ireland.jpg",
             "text2": qsTr("Scotland and Ireland"),
@@ -138,7 +138,7 @@ QtObject {
 
     property var instructions : [
         {
-            "text": qsTr("Explore world music! Click on the suitcases.")
+            "text": qsTr("Explore world music. Click on the suitcases.")
         },
         {
             "text": qsTr("Click on the location that matches the music you hear.")
