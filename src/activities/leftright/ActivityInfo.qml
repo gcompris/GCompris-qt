@@ -25,14 +25,17 @@ ActivityInfo {
     //: Activity title
     title: qsTr("Find your left and right hands")
     //: Help title
-    description: qsTr("Determine if a hand is a right or a left hand")
+    description: qsTr("Determine if a hand is a right or a left hand.")
 //  intro: "Guess if the picture presents a left or right hand and click on the correct answer."
     //: Help goal
-    goal: qsTr("Distinguish right and left hands from different points of view. Spatial representation")
+    goal: qsTr("Distinguish right and left hands from different points of view. Spatial representation.")
     //: Help prerequisite
     prerequisite: ""
     //: Help manual
-    manual: qsTr("You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.")
+    manual: qsTr("You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Left arrow: left hand answer") + ("</li><li>") +
+          qsTr("Right arrow: right hand answer") + ("</li></ul>")
     credit: ""
     section: "puzzle"
     createdInVersion: 0
