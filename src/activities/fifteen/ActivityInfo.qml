@@ -32,7 +32,9 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Click or drag on any piece that has a free block beside it, and it will be swapped with the empty one.")
+  manual: qsTr("Click or drag on any piece next to the empty space, and it will move to the empty space.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: move a piece to the empty space.") + ("</li></ul>")
   credit: ""
   section: "discovery logic"
   createdInVersion: 0
