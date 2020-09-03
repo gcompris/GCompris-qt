@@ -25,22 +25,21 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Land Safe")
   //: Help title
-  description: qsTr("Understanding acceleration due to gravity.")
+  description: qsTr("Pilot the spaceship towards the green landing area.")
   // intro: "Use the arrow keys to pilot your spaceship safely onto the landing pad."
   //: Help goal
-  goal: qsTr("Pilot the spaceship towards the green landing area.")
+  goal: qsTr("Understand the acceleration caused by the gravity.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Acceleration due to gravity experienced by the spaceship is directly proportional to the mass of the planet and inversely proportional to the square of the distance from the center of the planet. Thus, with every planet the acceleration will differ and as the spaceship comes closer and closer to the planet the acceleration increases.
-
-Use the up/down keys to control the thrust and the right/left keys to control direction. On touch screens you can control the rocket through the corresponding on-screen buttons.
-
-The accelerometer on the right border shows your rocket's overall vertical acceleration including gravitational force. In the upper green area of the accelerometer your acceleration is higher than the gravitational force, in the lower red area it's lower, and on the blue baseline in the yellow middle area the two forces cancel each other out.
-
-In higher levels, you can use the right/left keys to rotate the spaceship. By rotating the spaceship you can trigger an acceleration in non-vertical direction using the up/down keys.
-
-The landing platform is green if your speed is fine for a safe landing.")
+  manual: qsTr("The acceleration caused by the gravity experienced by the spaceship is directly proportional to the mass of the planet and inversely proportional to the square of the distance from the center of the planet. Thus, with every planet the acceleration will differ and as the spaceship comes closer and closer to the planet the acceleration increases.") + ("<br><br>") +
+          qsTr("In first levels, use the up/down keys to control the thrust and the right/left keys to control the direction. On touch screens you can control the rocket through the corresponding on-screen buttons.") + ("<br><br>") +
+          qsTr("In higher levels, you can use the right/left keys to rotate the spaceship. By rotating the spaceship you can trigger an acceleration in non-vertical direction using the up/down keys.") + ("<br><br>") +
+          qsTr("The landing platform is green if your speed is fine for a safe landing.") + ("<br><br>") +
+          qsTr("The accelerometer on the right border shows your rocket's overall vertical acceleration including gravitational force. In the upper green area of the accelerometer your acceleration is higher than the gravitational force, in the lower red area it's lower, and on the blue baseline in the yellow middle area the two forces cancel each other out.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Up and down arrows: control the thrust of the rear engine") + ("</li><li>") +
+          qsTr("Left and right arrows: at first levels, move to the sides; at higher levels, rotate the spaceship") + ("</li></ul>")
   credit: ""
   section: "sciences experiment"
   enabled: ApplicationInfo.isBox2DInstalled //ApplicationInfo.hasShader

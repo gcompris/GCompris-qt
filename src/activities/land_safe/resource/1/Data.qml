@@ -33,7 +33,7 @@ Data {
                 "mode": "simple",
                 "fuel" : -1,
                 "intro": qsTr("Use the up and down keys to control the thrust."
-                           + "<br/>Use the right and left keys to control direction."
+                           + "<br/>Use the right and left keys to control the direction."
                            + "<br/>You must drive Tux's ship towards the landing platform."
                            + "<br/>The landing platform turns green when the velocity is safe to land.")
        },

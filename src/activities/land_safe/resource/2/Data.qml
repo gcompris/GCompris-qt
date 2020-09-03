@@ -34,7 +34,7 @@ Data {
                 "fuel" : -1,
                 "intro": qsTr("The up and down keys control the thrust of the rear engine."
                            + "<br/>The right and left keys now control the rotation of the ship."
-                           + "<br/>To move the ship in horizontal direction you must first rotate and then accelerate it.")
+                           + "<br/>To move the ship in horizontal direction you must first rotate and then accelerate.")
        },
        {
                 "planet": qsTr("Pluto"),
