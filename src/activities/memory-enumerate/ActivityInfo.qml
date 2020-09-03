@@ -25,14 +25,17 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Enumeration memory game")
   //: Help title
-  description: qsTr("Turn the cards over to match the number with the drawn picture.")
+  description: qsTr("Flip the cards to match a number with a picture.")
 //  intro: "Match a number card with a card displaying the same number of butterflies."
   //: Help goal
   goal: qsTr("Numeration training, memory.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of pictures, or the written number.")
+  manual: qsTr("Each card is hiding either a picture with a number of items, or a number. You have to match the numbers with the corresponding pictures.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: flip the selected card") + ("</li></ul>")
   credit: ""
   section: "math numeration"
   createdInVersion: 0

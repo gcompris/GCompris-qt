@@ -25,14 +25,17 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Audio memory game")
   //: Help title
-  description: qsTr("Click on cards and listen to find the matching sounds")
+  description: qsTr("Flip the cards to match the sound pairs.")
 //  intro: "Click on an audio card and find its double."
   //: Help goal
-  goal: qsTr("Train your audio memory and remove all the cards.")
+  goal: qsTr("Train your audio memory.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("A set of cards is shown. Each card has an associated sound, and each sound has a twin exactly the same. Click on a card to hear its hidden sound, and try to match the twins. You can only activate two cards at once, so you need to remember where a sound is, while you listen to its twin. When you turn over the twins, they both disappear.")
+  manual: qsTr("Each card plays a sound when you flip it, and each card has a twin with exactly the same sound. Click on a card to hear its hidden sound, and try to match the twins. You can only flip two cards at once, so you need to remember where a sound is, while you search for its twin. When you flip the twins, they both disappear.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: flip the selected card") + ("</li></ul>")
   credit: ""
   section: "discovery memory music"
   createdInVersion: 0

@@ -25,14 +25,17 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Case association memory game against Tux")
   //: Help title
-  description: qsTr("Turn the cards over to match the alphabet with its lower/uppercase value against Tux.")
+  description: qsTr("Flip the cards to find the uppercase and lowercase of the same letter, playing against Tux.")
   //intro: "Match the upper case card with its lower case pair."
   //: Help goal
-  goal: qsTr("Learning lower and upper case alphabets, memory.")
+  goal: qsTr("Learning lowercase and uppercase letters, memory.")
   //: Help prerequisite
   prerequisite: qsTr("Knowing alphabets")
   //: Help manual
-  manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding the lower/uppercase of an alphabet, and you have to associate all the upper case letters with its lower case and vice versa. Tux teacher does the same.")
+  manual: qsTr("Each card is hiding a letter, lowercase or uppercase. You have to match the lowercase and uppercase of the same letter.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: flip the selected card") + ("</li></ul>")
   credit: ""
   section: "reading letters"
   createdInVersion: 9000

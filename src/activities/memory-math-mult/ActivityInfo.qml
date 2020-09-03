@@ -25,16 +25,17 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Multiplication memory game")
   //: Help title
-  description: qsTr("Turn the cards over to find two numbers which multiply the same, until all the cards are gone.")
+  description: qsTr("Flip the cards to match a multiplication with its result.")
 //  intro: "Turn over two cards to match the calculation with its answer."
   //: Help goal
-  goal: qsTr("Practice multiplication, until all the cards are gone.")
+  goal: qsTr("Practice multiplications.")
   //: Help prerequisite
-  prerequisite: qsTr("Multiplication")
+  prerequisite: qsTr("Multiplications.")
   //: Help manual
-  manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found all the operations, you've won the game!")
+  manual: qsTr("Each card is hiding either a multiplication, or a result. You have to match the multiplications with their result.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: flip the selected card") + ("</li></ul>")
   credit: ""
   section: "math memory arithmetic"
   createdInVersion: 0

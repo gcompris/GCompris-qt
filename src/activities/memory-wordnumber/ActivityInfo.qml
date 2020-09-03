@@ -25,14 +25,17 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Wordnumber memory game")
   //: Help title
-  description: qsTr("Turn the cards over to match the number with the word matching it.")
+  description: qsTr("Flip the cards to match a numeral with its number name.")
 //  intro: "Match the numeric with the word."
   //: Help goal
   goal: qsTr("Reading numbers, memory.")
   //: Help prerequisite
-  prerequisite: qsTr("Reading")
+  prerequisite: qsTr("Reading.")
   //: Help manual
-  manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding the numeral form of a number, or the word to write it.")
+  manual: qsTr("Each card is hiding either a numeral (a number written in figures), or a number name (a number written in words). You have to match the numerals with the corresponding number names.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: flip the selected card") + ("</li></ul>")
   credit: ""
   section: "math numeration"
   createdInVersion: 0
