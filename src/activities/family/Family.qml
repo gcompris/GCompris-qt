@@ -243,7 +243,7 @@ ActivityBase {
                             }
                         }
                     }
-                    
+
                     Rectangle {
                         id: questionmark
                         visible: dataset.levelElements[bar.level-1].captions[1] !== undefined && activity.mode == "family"
@@ -372,7 +372,7 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             fontSize: smallSize
-            text: qsTr("Select one of the pairs denoting: %1").arg(questionTopic)
+            text: qsTr("Select one of the pairs corresponding to: %1").arg(questionTopic)
 
             Rectangle {
                 width: parent.width

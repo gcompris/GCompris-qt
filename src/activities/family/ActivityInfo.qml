@@ -25,12 +25,12 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Family")
   //: Help title
-  description: qsTr("Select the name you should call this family member")
+  description: qsTr("Select the name you should call this family member.")
   //intro: "Let us understand what to call our relatives"
   //: Help goal
-  goal: qsTr("Learn the relationships in a family, according to the lineal system used in most Western societies")
+  goal: qsTr("Learn the relationships in a family, according to the lineal system used in most Western societies.")
   //: Help prerequisite
-  prerequisite: qsTr("Reading skills")
+  prerequisite: qsTr("Reading skills.")
   //: Help manual
   manual: qsTr("A family tree is shown.\n" +
   "The circles are linked with lines to mark the relations. Married couples are marked with a ring on the link.\n" +
