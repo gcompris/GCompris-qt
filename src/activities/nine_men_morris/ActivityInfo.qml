@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Nine men's morris (against Tux)")
   //: Help title
-  description: qsTr("Reduce the opponent to two pieces, or by leaving him without a legal move.")
+  description: ""
   //intro: "Click on the dot where you wish to place your piece and try to take all Tux's pieces."
   //: Help goal
-  goal: qsTr("Form mills (line of 3 pieces) to remove pieces of Tux until Tux has only two pieces, or doesn't have a legal move")
+  goal: qsTr("Form mills (lines of 3 pieces) to remove Tux's pieces until he has only 2 pieces left or can not move anymore.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Play with the computer. First take turns to place nine pieces, and then take turns to move pieces")
+  manual: qsTr("Play with the computer. First take turns to place nine pieces, and then take turns to move your pieces.")
   credit: ""
   section: "strategy"
   createdInVersion: 7000 

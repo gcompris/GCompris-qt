@@ -37,19 +37,19 @@ var numberOfDragPoints
 var depthMax
 var tutorialInstructions = [
             {
-                "instruction": qsTr("You and Tux start with 9 pieces each, and take turns to place your pieces on to the empty spots (by clicking on the spots) on the board."),
+                "instruction": qsTr("You and Tux start with 9 pieces each, and take turns to place your pieces on the empty spots of the board (by clicking on the spots)."),
                 "instructionImage" : "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial1.svg"
             },
             {
-                "instruction": qsTr("If you form a mill (line of 3 pieces), then select a piece of Tux, and remove it. Pieces of formed mill can not be removed unless no other pieces are left on board."),
+                "instruction": qsTr("If you form a mill (line of 3 pieces), then select one of Tux's pieces to remove it. Pieces of formed mill can not be removed unless no other pieces are left on the board."),
                 "instructionImage": "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial2.svg"
             },
             {
-                "instruction": qsTr("After all the pieces are placed, you and Tux will take turns to move them. Click on one of your pieces, and then on the adjacent empty spot to move it there. Green color spot indicates where you can move."),
+                "instruction": qsTr("After all the pieces are placed, you and Tux will take turns to move them. Click on one of your pieces, and then on an adjacent empty spot to move it there. Green color spots indicates where you can move."),
                 "instructionImage": "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial3.svg"
             },
             {
-                "instruction":  qsTr("If you are left with 3 pieces, your pieces will gain the ability to 'fly' and can be moved to any vacant spot on the board."),
+                "instruction":  qsTr("If you are left with 3 pieces, they gain the ability to 'fly' and can be moved to any vacant spot on the board."),
                 "instructionImage": "qrc:/gcompris/src/activities/nine_men_morris/resource/tutorial4.svg"
             },
             {
