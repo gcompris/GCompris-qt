@@ -32,16 +32,19 @@ ActivityInfo {
   description: ""
   //intro: "Click the drum to recreate the rhythm"
   //: Help goal
-  goal: qsTr("Learn to beat rhythms precisely and accurately based on what you see and hear.")
+  goal: qsTr("Learn to follow a rhythm accurately.")
   //: Help prerequisite
-  prerequisite: qsTr("Simple understanding of musical rhythm and beat.")
+  prerequisite: qsTr("Simple understanding of musical rhythm.")
   //: Help manual
-  manual: qsTr("Listen to the rhythm played, and follow along with the music. When you're ready to perform the identical rhythm, click the drum to the rhythm. If you clicked tempo at correct times, another rhythm is displayed. If not, you must try again.<br>Odd levels display a vertical playing line when you click the drum, which helps you see when to click, to follow the rhythm. Click on the drum when the line is in the middle of the notes.<br>Even levels are harder, because there is no vertical playing line. You must read the rhythm, and click it back in tempo. Click the metronome to hear the quarter note tempos.<br>Click on the reload button to replay the rhythm.") + ("<br><br>") +
-            qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-            qsTr("-Space bar: click the drum") + ("<br>") +
-            qsTr("-Enter or Return: replay the rhythm") + ("<br>") +
-            qsTr("-Up and Down: increase or decrease the tempo") + ("<br>") +
-            qsTr("-Tab: Start or stop the metronome if it is visible")
+  manual: qsTr("Listen to the rhythm played. When you're ready, click on the drum following the same rhythm. If you clicked at correct times, another rhythm is played. If not, you must try again.") + ("<br>") +
+          qsTr("Odd levels display a vertical line on the staff following the rhythm: click on the drum when the line is in the middle of the notes.") + ("<br>") +
+          qsTr("Even levels are harder, because there is no vertical line. You must read the notes length and play the rhythm accordingly. You can also click on the metronome to hear the quarter notes as reference.") + ("<br>") +
+          qsTr("Click on the reload button if you want to replay the rhythm.") + ("<br><br>") +
+            qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+            qsTr("Space bar: click on the drum") + ("</li><li>") +
+            qsTr("Enter or Return: replay the rhythm") + ("</li><li>") +
+            qsTr("Up and Down: increase or decrease the tempo") + ("</li><li>") +
+            qsTr("Tab: Start or stop the metronome if it is visible") + ("</li></ul>")
   credit: ""
   section: "discovery music"
   createdInVersion: 9500

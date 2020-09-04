@@ -123,7 +123,7 @@ ActivityBase {
                 fontSizeMode: Text.Fit
                 wrapMode: Text.WordWrap
                 text: items.isMetronomeVisible ? qsTr("Use the metronome to estimate the time intervals and play the rhythm correctly.")
-                                               : qsTr("Follow the vertical line and click on the tempo or press space key and play the rhythm correctly.")
+                                               : qsTr("Follow the vertical line and click on the drum or press space key to play the rhythm correctly.")
             }
         }
 
