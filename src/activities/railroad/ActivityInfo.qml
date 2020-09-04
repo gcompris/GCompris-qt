@@ -27,19 +27,19 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Railroad activity")
   //: Help title
-  description: qsTr("Rebuild the displayed train at the top of the screen.")
+  description: qsTr("Rebuild the train model at the top of the screen.")
   //intro: "Observe the train and then click on the items to set up a similar train"
   //: Help goal
   goal: qsTr("Memory training")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("A train is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by dragging the appropriate items. Remove an item from the answer area by dragging it down.<br><br>") +
-          qsTr("<b>Keyboard Controls:</b><br>") +
-          qsTr("-Arrows: navigate in the sample area and in the answer area<br>") +
-          qsTr("-Space: add an item from the samples to the answer area, or swap two items in the answer area<br>") +
-          qsTr("-Delete or Backspace: remove the selected item from the answer area") +
-          qsTr("-Enter or Return: submit the answer<br>")
+  manual: qsTr("A train is displayed for a few seconds. Rebuild it at the top of the screen by dragging the appropriate items. Remove an item from the answer area by dragging it down.") + ("<br><br>") +
+          qsTr("<b>Keyboard Controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate in the sample area and in the answer area") + ("</li><li>") +
+          qsTr("Space: add an item from the samples to the answer area, or swap two items in the answer area") + ("</li><li>") +
+          qsTr("Delete or Backspace: remove the selected item from the answer area") + ("</li><li>") +
+          qsTr("Enter or Return: submit your answer") + ("</li></ul>")
   credit: ""
   section: "discovery logic"
   createdInVersion: 9500

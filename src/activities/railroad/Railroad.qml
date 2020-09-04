@@ -112,7 +112,7 @@ ActivityBase {
             }
             intro: [
                 qsTr("Observe and remember the train before the timer ends and then drag the items to set up a similar train."),
-                qsTr("If you forget the positions, you can click on the Hint button to view them again.")
+                qsTr("If you forgot the model, you can click on the Hint button to view it again.")
             ]
         }
 
