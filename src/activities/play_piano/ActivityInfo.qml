@@ -41,7 +41,7 @@ ActivityInfo {
             qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
             qsTr("Space: play") + ("</li><li>") +
             qsTr("Digits 1 to 7: white keys") + ("</li><li>") +
-            qsTr("F2 to F7: black keys") + ("</li></ul>") +
+            qsTr("F2 to F7: black keys") + ("</li><li>") +
             qsTr("Backspace or Delete: undo") + ("</li></ul>")
   credit: qsTr("The synthesizer original code is from https://github.com/vsr83/miniSynth")
   section: "discovery music"
