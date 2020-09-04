@@ -104,8 +104,8 @@ ActivityBase {
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
                 horizontalAlignment: Text.AlignHCenter
-                text: background.startedHelp ? qsTr("Drag the slider to show the differences!") :
-                                          qsTr("Click on the differences between the two images!")
+                text: background.startedHelp ? qsTr("Drag the slider to show the differences.") :
+                                          qsTr("Click on the differences between the two images.")
                 color: "white"
                 onHeightChanged: {
                     if (items.problem.z > 0)

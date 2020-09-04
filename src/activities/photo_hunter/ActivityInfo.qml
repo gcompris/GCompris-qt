@@ -25,10 +25,10 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Photo Hunter")
   //: Help title
-  description: qsTr("Find the differences between the two pictures!")
+  description: qsTr("Find the differences between the two pictures.")
   //intro: "look at the two pictures carefully and click where you see a difference"
   //: Help goal
-  goal: qsTr("Visual Discrimination")
+  goal: qsTr("Visual perception.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
