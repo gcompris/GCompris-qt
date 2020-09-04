@@ -28,15 +28,16 @@ ActivityInfo {
   description: ""
   //intro: "Learn and practice roman to arabic numerals conversion"
   //: Help goal
-  goal: ""
+  goal: "Learn how to read roman numerals and do the conversion to and from arabic numerals."
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("A Roman numeral is the name for a number when it is written in the way the Romans used to write numbers. Roman numerals are not used very often today in the west. They are used to write the names of kings and queens, or popes. For example: Queen Elizabeth II. They may be used to write the year a book or movie was made.\n
-  The building of the roman numbers is made up by an agglutination of numbers (the thousands, joined with the hundreds, joined with the tens, joined with the units → just like the arab decimal system). This agglutination of numbers is interpreted as the sum of these particular numbers (again → just like the arab decimal system: you add up thousands+hundreds+tens+units, and you write the respective figures combined).\n
-  Examples:\n
-  2394: we got a sum of 2000 (MM), 300 (CCC), 90 (XC) and 4 units (IV), so we write this combined: MMCCCXCIV\n
-  MMMCMXLIX: we got first thousands (MMM=3000), then we got hundreds (CM=1000–100=900), then we got tens (XL=50–10=40), and at last we got units (IX=10–1=9), so we write this in the decimal system: 3949.")
+  manual: qsTr("Roman numerals are a numeral system that originated in ancient Rome and remained the usual way of writing numbers throughout Europe well into the Late Middle Ages. Numbers in this system are represented by combinations of letters from the Latin alphabet.") + "<br>" +
+  qsTr("Learn the rules to read Roman numerals and practice converting numbers to and from arabic numerals. Click on the OK button to validate your answer.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Digits: type arabic numerals") + ("</li><li>") +
+          qsTr("Letters: type roman numerals (with I, V, X, L, C, D and M)") + ("</li><li>") +
+          qsTr("Enter: validate your answer") + ("</li></ul>")
   credit: ""
   section: "sciences history"
   createdInVersion: 7000
