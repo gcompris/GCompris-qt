@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Number sequence")
   //: Help title
-  description: qsTr("Touch the numbers in the right sequence.")
+  description: qsTr("Touch the numbers in the right order.")
   // intro: "Draw the picture by touching the numbers in ascending order."
   //: Help goal
-  goal: qsTr("Can count from 1 to 50.")
+  goal: qsTr("Can count.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Draw the picture by touching each number in the right sequence, or sliding your finger or dragging the mouse through the numbers in the correct sequence.")
+  manual: qsTr("Draw the picture by clicking on each number in the right order.")
   credit: ""
   section: "math numeration"
   createdInVersion: 0
