@@ -39,7 +39,7 @@ ActivityInfo {
           qsTr("You can see whether this mode is enabled or not, by looking at Tux's feet: If Tux is barefooted, \"run-fast-mode\" is disabled. And if he wears red sport shoes, \"run-fast-mode\" is enabled.") + "<br><br>" +
           qsTr("At higher levels, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on the \"barefoot / sportshoe\" icon in the upper left corner of the screen to toggle the run-fast-mode.\t") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
-          qsTr("Left and right arrows: turn left and right") + ("</li><li>") +
+          qsTr("Left and Right arrows: turn left and right") + ("</li><li>") +
           qsTr("Down arrow: turn backward") + ("</li><li>") +
           qsTr("Up arrow: move forward") + ("</li></ul>")
   credit: ""
