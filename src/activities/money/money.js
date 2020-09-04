@@ -133,8 +133,8 @@ function initLevel() {
 
     if(!backMode) {
         items.instructions.text =
-                qsTr("Click on the coins or paper money at the bottom of the screen to pay." +
-                     " If you want to remove a coin or note, click on it on the upper screen area.")
+                qsTr("Click on the coins or on the notes at the bottom of the screen to pay." +
+                     " If you want to remove a coin or a note, click on it on the upper screen area.")
     } else {
         var availableCurrency = pocket.slice()
         availableCurrency.sort(function sort(a, b) { return b.val - a.val });

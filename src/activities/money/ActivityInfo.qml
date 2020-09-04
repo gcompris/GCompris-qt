@@ -25,14 +25,18 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Money")
   //: Help title
-  description: qsTr("Practice money usage")
+  description: qsTr("Practice money usage.")
 //  intro: "Click or tap on the money to pay."
   //: Help goal
-  goal: qsTr("You must buy the different items and give the exact price. At higher levels, several items are displayed, and you must first calculate the total price.")
+  goal: qsTr("You must buy different items and give the exact price. At higher levels, several items are displayed, and you must first calculate the total price.")
   //: Help prerequisite
-  prerequisite: qsTr("Can count")
+  prerequisite: qsTr("Can count.")
   //: Help manual
-  manual: qsTr("Click or tap on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click or tap on it on the upper screen area.")
+  manual: qsTr("Click or tap on the coins or on the notes at the bottom of the screen to pay. If you want to remove a coin or a note, click or tap on it on the upper screen area.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Left and Right arrows: navigate inside an area") + ("</li><li>") +
+          qsTr("Space or Enter: select an item") + ("</li><li>") +
+          qsTr("Tab: navigate between the bottom and the top areas") + ("</li></ul>")
   credit: ""
   section: "math money measures"
   createdInVersion: 0

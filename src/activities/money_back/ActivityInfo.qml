@@ -25,14 +25,18 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Give Tux his change")
   //: Help title
-  description: qsTr("Practice money usage by giving Tux his change")
+  description: qsTr("Practice money usage by giving Tux his change.")
 //  intro: "Click on the money at the bottom of the screen to give Tux his change."
   //: Help goal
   goal: qsTr("Tux bought different items from you and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.")
   //: Help prerequisite
-  prerequisite: qsTr("Can count")
+  prerequisite: qsTr("Can count.")
   //: Help manual
-  manual: qsTr("Click on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click on it on the upper screen area.")
+  manual: qsTr("Click on the coins or on the notes at the bottom of the screen to pay. If you want to remove a coin or a note, click on it on the upper screen area.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Left and Right arrows: navigate inside an area") + ("</li><li>") +
+          qsTr("Space or Enter: select an item") + ("</li><li>") +
+          qsTr("Tab: navigate between the bottom and the top areas") + ("</li></ul>")
   credit: ""
   section: "math money measures"
   createdInVersion: 0

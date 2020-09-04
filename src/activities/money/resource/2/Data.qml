@@ -22,7 +22,7 @@ import GCompris 1.0
 import "../../../money/moneyConstants.js" as MoneyConstants
 
 Data {
-    objective: qsTr("Learn how to pay up to 100 units.")
+    objective: qsTr("Amount up to 100 units.")
     difficulty: 2
     property var moneyItems: MoneyConstants.moneyItems
     data: [

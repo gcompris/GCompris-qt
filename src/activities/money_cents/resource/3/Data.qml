@@ -23,7 +23,7 @@ import "../../../money/moneyConstants.js" as MoneyConstants
 
 
 Data {
-    objective: qsTr("Learn how to pay up to 1000 units including cents.")
+    objective: qsTr("Amount up to 1000 units.")
     difficulty: 1
     property var moneyItems: MoneyConstants.moneyItems
     data: [
@@ -49,7 +49,7 @@ Data {
             moneyItems.MONEY_COIN_1C,
             moneyItems.MONEY_COIN_1C
         ]
-    },  
+    },
     {
         "numberOfItem": 1,
         "minPrice": 200,
@@ -218,7 +218,7 @@ Data {
         "numberOfItem": 4,
         "minPrice": 600,
         "maxPrice": 1000,
-        "pocket": [ 
+        "pocket": [
              moneyItems.MONEY_PAPER_200E,
             moneyItems.MONEY_PAPER_200E,
             moneyItems.MONEY_PAPER_200E,

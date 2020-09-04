@@ -23,7 +23,7 @@ import "../../../money/moneyConstants.js" as MoneyConstants
 
 
 Data {
-    objective: qsTr("Learn how to pay up to 100 units including cents.")
+    objective: qsTr("Amount up to 100 units.")
     difficulty: 2
     property var moneyItems: MoneyConstants.moneyItems
     data: [
