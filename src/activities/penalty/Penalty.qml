@@ -255,7 +255,7 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: instruction
-                        text: qsTr("Click or tap the ball to bring it back to its former position")
+                        text: qsTr("Click or tap on the ball to bring it back to its initial position.")
                     }
                 }
             ]

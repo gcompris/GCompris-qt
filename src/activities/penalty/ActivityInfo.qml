@@ -33,9 +33,9 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("Double click or double tap on a side of the goal to kick the ball. " +
-               "You can double click the left right or middle mouse button. " +
-               "If you do not click fast enough, Tux catches the ball. " +
-               "You must click on it to bring it back to its former position.")
+               "You can double click the left, right or middle mouse button. " +
+               "If you do not double click fast enough, Tux catches the ball. " +
+               "You must click on it to bring it back to its initial position.")
   credit: ""
   section: "computer mouse"
   createdInVersion: 0
