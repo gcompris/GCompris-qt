@@ -30,7 +30,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Tux is hungry. Help him find fish by counting to the correct ice spot.")
   //: Help prerequisite
-  prerequisite: qsTr("Can read numbers on a domino, and count intervals up to 10 for the first level")
+  prerequisite: qsTr("Can read numbers on a domino.")
   //: Help manual
   manual: qsTr("Click on the domino to show how many ice spots there are between Tux and the fish. Click the domino with the right mouse button to count backwards. When done, click on the OK button or hit the Enter key.")
   credit: ""
