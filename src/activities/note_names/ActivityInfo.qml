@@ -31,11 +31,11 @@ ActivityInfo {
   description: qsTr("Learn the names of the notes, in bass and treble clef.")
   //intro: "Identify the note and press the correct piano key"
   //: Help goal
-  goal: qsTr("To develop a good understanding of note position and naming convention. To prepare for the piano player and composition activity.")
+  goal: qsTr("Develop a good understanding of note position and naming convention. Prepare for the 'Play Piano' and 'Piano Composition' activities.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("Identify the notes correctly and score a 100% to complete a level.")
+  manual: qsTr("Identify the notes correctly and score 100% to complete a level.")
   credit: ""
   section: "discovery music"
   createdInVersion: 9500
