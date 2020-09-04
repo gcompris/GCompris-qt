@@ -32,7 +32,12 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("First, select the proper color from the toolbar. Then click on the grid and drag to paint, then release the click to stop painting.")
+  manual: qsTr("First, select the proper color from the toolbar. Click on the grid and drag to paint, then release the click to stop painting.")
+          + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Digits: select a color") + ("</li><li>") +
+          qsTr("Arrows: navigate in the grid") + ("</li><li>") +
+          qsTr("Space or Enter: paint") + ("</li></ul>")
   credit: ""
   section: "puzzle"
   createdInVersion: 0
