@@ -117,7 +117,7 @@ ActivityBase {
                 }
             }
 
-            Keys.onTabPressed: Activity.playCurrentWord();
+            Keys.onTabPressed: bar.repeatClicked();
         }
 
         // Buttons with possible answers shown on the left of screen
