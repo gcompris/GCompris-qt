@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Up to 5 items are placed on single line.")
+    objective: qsTr("Up to 5 items, on a single line.")
     difficulty: 2
 
     property var images: [

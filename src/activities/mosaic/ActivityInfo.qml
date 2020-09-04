@@ -32,7 +32,11 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("First select the item you want to put then click on a spot on the empty area")
+  manual: qsTr("First select an item from the list, and then click on a spot of the mosaic to place the item.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate inside an area") + ("</li><li>") +
+          qsTr("Space or Enter: select or place an item") + ("</li><li>")
+          qsTr("Tab: navigate between the item list and the mosaic") + ("</li></ul>")
   credit: ""
   section: "puzzle"
   createdInVersion: 0
