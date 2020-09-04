@@ -38,7 +38,7 @@ ActivityInfo {
   //: Help manual
   manual: qsTr("Move the spaceship with the left and right keys, or with the buttons on the screen for mobile devices. Try to stay near the center of the screen and anticipate by looking at the size and direction of the arrow showing the gravity force.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
-          qsTr("Left and right arrows: move the spaceship") + ("</li></ul>")
+          qsTr("Left and Right arrows: move the spaceship") + ("</li></ul>")
   credit: ""
   section: "sciences experiment"
   createdInVersion: 9800
