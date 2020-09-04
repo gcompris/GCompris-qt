@@ -34,15 +34,15 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Understand how the piano keyboard can play music as written on the musical staff.")
   //: Help prerequisite
-  prerequisite: qsTr("Knowledge of musical notation and musical staff. Play the activity named 'Piano Composition' first.")
+  prerequisite: qsTr("Knowledge of musical notation and musical staff.")
   //: Help manual
-  manual: qsTr("The notes you see will be played to you. Click on the corresponding keys on the keyboard that match the notes you hear and see.<br>
-            Levels 1-5 will offer treble clef to practice and levels 6-10 will offer bass clef.") + ("<br><br>") +
-            qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-            qsTr("-Backspace or Delete: undo") + ("<br>") +
-            qsTr("-Space: play") + ("<br>") +
-            qsTr("-Numbers 1 to 7: white keys") + ("<br>") +
-            qsTr("-F2 to F7: black keys")
+  manual: qsTr("Some notes are played on the staff. Click on the keyboard keys matching the notes on the staff.") + ("<br>") +
+          qsTr("On levels 1 to 5 you will practice treble clef notes and on levels 6 to 10 you will practice bass clef notes.") + ("<br><br>") +
+            qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+            qsTr("Space: play") + ("</li><li>") +
+            qsTr("Digits 1 to 7: white keys") + ("</li><li>") +
+            qsTr("F2 to F7: black keys") + ("</li></ul>") +
+            qsTr("Backspace or Delete: undo") + ("</li></ul>")
   credit: qsTr("The synthesizer original code is from https://github.com/vsr83/miniSynth")
   section: "discovery music"
   createdInVersion: 9500
