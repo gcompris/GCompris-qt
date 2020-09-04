@@ -30,14 +30,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Assemble the puzzle")
   //: Help title
-  description: qsTr("Drag and Drop the items to rebuild the original paintings")
+  description: qsTr("Drag and Drop the pieces to rebuild the original paintings.")
   // intro: "Catch and drop each piece on the points."
   //: Help goal
-  goal: qsTr("Spatial representation")
+  goal: qsTr("Spatial representation.")
   //: Help prerequisite
-  prerequisite: qsTr("Mouse-manipulation: movement, drag and drop")
+  prerequisite: qsTr("Mouse-manipulation: movement, drag and drop.")
   //: Help manual
-  manual: qsTr("Drag the image parts from the box on the left to create a painting on the main board.")
+  manual: qsTr("Drag the pieces to the right place to rebuild the painting.")
   section: "discovery arts puzzle"
   createdInVersion: 5000
 }
