@@ -38,8 +38,8 @@ ActivityInfo {
           qsTr("The landing platform is green if your speed is fine for a safe landing.") + ("<br><br>") +
           qsTr("The accelerometer on the right border shows your rocket's overall vertical acceleration including gravitational force. In the upper green area of the accelerometer your acceleration is higher than the gravitational force, in the lower red area it's lower, and on the blue baseline in the yellow middle area the two forces cancel each other out.") + ("<br><br>") +
           qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
-          qsTr("Up and down arrows: control the thrust of the rear engine") + ("</li><li>") +
-          qsTr("Left and right arrows: at first levels, move to the sides; at higher levels, rotate the spaceship") + ("</li></ul>")
+          qsTr("Up and Down arrows: control the thrust of the rear engine") + ("</li><li>") +
+          qsTr("Left and Right arrows: at first levels, move to the sides; at higher levels, rotate the spaceship") + ("</li></ul>")
   credit: ""
   section: "sciences experiment"
   enabled: ApplicationInfo.isBox2DInstalled //ApplicationInfo.hasShader
