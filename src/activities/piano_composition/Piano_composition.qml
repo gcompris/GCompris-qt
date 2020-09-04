@@ -368,7 +368,7 @@ ActivityBase {
             }
             onClearButtonClicked: {
                 if((multipleStaff.musicElementModel.count > 1) && multipleStaff.selectedIndex === -1) {
-                    Core.showMessageDialog(main,
+                    Core.showMessageDialog(activity,
                         qsTr("You have not selected any note. Do you want to erase all the notes?"),
                         qsTr("Yes"), function() {
                             Activity.undoStack = []
