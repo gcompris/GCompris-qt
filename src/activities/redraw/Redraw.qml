@@ -123,7 +123,7 @@ ActivityBase {
                             Image {
                                 id: img
                                 source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
-                                sourceSize.width: parent.width
+                                sourceSize.width: colorSelectorFlick.width
                                 z: iAmSelected ? 10 : 1
 
                                 property bool iAmSelected: modelData == items.colorSelector
@@ -147,10 +147,10 @@ ActivityBase {
                                     },
                                     State {
                                         name: "hover"
-                                        when: mouseArea.containsMouse
+                                        when: mouseArea.containsMouse && !img.iAmSelected
                                         PropertyChanges {
                                             target: img
-                                            scale: 1.1
+                                            scale: 1
                                         }
                                     },
                                     State {
@@ -158,38 +158,10 @@ ActivityBase {
                                         when: img.iAmSelected
                                         PropertyChanges {
                                             target: img
-                                            scale: 1
+                                            scale: 1.1
                                         }
                                     }
                                 ]
-
-                                SequentialAnimation {
-                                    id: anim
-                                    running: img.iAmSelected
-                                    loops: Animation.Infinite
-                                    alwaysRunToEnd: true
-                                    NumberAnimation {
-                                        target: img
-                                        property: "rotation"
-                                        from: 0; to: 10
-                                        duration: 200
-                                        easing.type: Easing.OutQuad
-                                    }
-                                    NumberAnimation {
-                                        target: img
-                                        property: "rotation"
-                                        from: 10; to: -10
-                                        duration: 400
-                                        easing.type: Easing.InOutQuad
-                                    }
-                                    NumberAnimation {
-                                        target: img
-                                        property: "rotation"
-                                        from: -10; to: 0
-                                        duration: 200
-                                        easing.type: Easing.InQuad
-                                    }
-                                }
 
                                 Behavior on scale { NumberAnimation { duration: 70 } }
                                 MouseArea {
@@ -317,7 +289,7 @@ ActivityBase {
                                     ColorAnimation {
                                         duration: 200
                                         onRunningChanged: {
-                                            if(!running && Activity.checkModel()) bonus.good("flower")
+                                            if(!running) checkTimer.restart();
                                         }
                                     }
                                 }
@@ -396,6 +368,12 @@ ActivityBase {
                     }
                 }
             }
+        }
+
+        Timer {
+            id: checkTimer
+            interval: 500
+            onTriggered: if(Activity.checkModel()) bonus.good("flower")
         }
 
         MultiPointTouchArea {
