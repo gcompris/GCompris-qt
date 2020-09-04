@@ -28,7 +28,7 @@ ActivityInfo {
     description: qsTr("Tux has come back from fishing on his boat. Bring the electrical system back up so he can have light in his home. ")
     //intro: "Click on the different stages that go to make up the power supply."
     //: Help goal
-    goal: qsTr("Learn about an electrical system based on renewable energy")
+    goal: qsTr("Learn about an electrical system based on renewable energy.")
     //: Help manual
     manual: qsTr("Click on different active elements: sun, cloud, dam, solar array, wind farm and transformers, in order to reactivate the entire electrical system. When the system is back up and Tux is in his home, push the light button for him. To win you must switch on all the consumers while all the producers are up. ")
     //: Help prerequisite
