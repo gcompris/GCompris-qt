@@ -30,7 +30,7 @@ Rectangle {
 
     GCText {
         id: remainder
-        text: qsTr("The remainder is the amount \"left over\" after dividing the given number with the other number.\n If 6 is divided by 2 the result is 3 and the remainder is 0.\n If 7 is divided by 2 the result is 3 and the remainder is 1.")
+        text: qsTr("The remainder is the amount \"left over\" after dividing a number with another number.\n If 6 is divided by 2 the result is 3 and the remainder is 0.\n If 7 is divided by 2 the result is 3 and the remainder is 1.")
         fontSizeMode: Text.Fit
         fontSize: mediumSize
         anchors.left: tutorialRectangle.left

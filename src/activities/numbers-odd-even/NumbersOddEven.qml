@@ -48,21 +48,21 @@ Planegame {
                     "instructionQml": ""
                 },
                 {
-                    "instruction": qsTr("Even numbers are numbers which leave remainder 0 when divided by 2."),
+                    "instruction": qsTr("Even numbers are numbers which leave a remainder of 0 when divided by 2."),
                     "instructionQml": ""
                 },
 
                 {
-                    "instruction": qsTr("What is meant by remainder of a number?"),
+                    "instruction": qsTr("What is meant by remainder?"),
                     "instructionQml" : "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial1.qml"
                 },
 
                 {
-                    "instruction": qsTr("Even numbers are numbers which leave remainder 0 when divided by 2."),
+                    "instruction": qsTr("Even numbers are numbers which leave a remainder of 0 when divided by 2."),
                     "instructionQml" : "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial2.qml"
                 },
                 {
-                    "instruction": qsTr("Odd numbers are numbers which do not leave remainder 0 when divided by 2."),
+                    "instruction": qsTr("Odd numbers are numbers which do not leave a remainder of 0 when divided by 2."),
                     "instructionQml": "qrc:/gcompris/src/activities/numbers-odd-even/resource/Tutorial3.qml"
                 },
                 {

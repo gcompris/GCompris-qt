@@ -69,10 +69,10 @@ Rectangle {
                 }
                    else {
                        if(isEvenExpected) {
-                           message.text = qsTr("There is an error: when divided by 2, %1 leaves remainder as 1. Therefore this is an odd number.").arg(textLabel)
+                           message.text = qsTr("There is an error: when divided by 2, %1 leaves a remainder of 1. Therefore this is an odd number.").arg(textLabel)
                        }
                       else {
-                           message.text = qsTr("There is an error: when divided by 2, %1 leaves remainder as 0. Therefore this is an even number.").arg(textLabel)
+                           message.text = qsTr("There is an error: when divided by 2, %1 leaves a remainder of 0. Therefore this is an even number.").arg(textLabel)
                        }
                    }
                    message.visible = true
@@ -99,10 +99,10 @@ Rectangle {
                    }
                    else {
                        if(isEvenExpected) {
-                           message.text = qsTr("There is an error: when divided by 2, %1 leaves remainder as 1. Therefore this is an odd number.").arg(textLabel)
+                           message.text = qsTr("There is an error: when divided by 2, %1 leaves a remainder of 1. Therefore this is an odd number.").arg(textLabel)
                        }
                        else {
-                           message.text = qsTr("There is an error: when divided by 2, %1 leaves remainder as 0. Therefore this is an even number.").arg(textLabel)
+                           message.text = qsTr("There is an error: when divided by 2, %1 leaves a remainder of 0. Therefore this is an even number.").arg(textLabel)
                        }
                    }
                    message.visible = true

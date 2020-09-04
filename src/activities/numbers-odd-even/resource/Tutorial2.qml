@@ -30,7 +30,7 @@ Rectangle {
 
     GCText {
         id: even
-        text: qsTr("For example: 12, 38, 52, 68, 102, 118, 168, 188, 502, 532, 700, 798, 842, 892, 1000. All of these numbers are even numbers as they leave remainder 0 when divided by 2.")
+        text: qsTr("For example: 12, 38, 52, 68, 102, 118, 168, 188, 502, 532, 700, 798, 842, 892, 1000. All of these numbers are even numbers as they leave a remainder of 0 when divided by 2.")
         fontSizeMode: Text.Fit
         fontSize: mediumSize
         anchors.left: tutorialRectangle.left

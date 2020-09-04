@@ -30,7 +30,7 @@ Rectangle {
 
     GCText {
         id: odd
-        text: qsTr("For example: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, 897, 1001. All of these numbers are odd numbers as they do not leave remainder 0 when divided by 2.")
+        text: qsTr("For example: 15, 19, 51, 65, 103, 119, 169, 185, 505, 533, 701, 799, 845, 897, 1001. All of these numbers are odd numbers as they do not leave a remainder of 0 when divided by 2.")
         fontSizeMode: Text.Fit
         fontSize: mediumSize
         anchors.left: tutorialRectangle.left
