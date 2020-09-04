@@ -52,7 +52,6 @@ Item {
         anchors.centerIn: bpmBg
         fontSizeMode: Text.Fit
     }
-    
     Image {
         id: bpmDown
         source: "qrc:/gcompris/src/core/resource/bar_down.svg"
@@ -115,11 +114,9 @@ Item {
                 }
             }
         ]
-        
         Behavior on scale { NumberAnimation { duration: 70 } }
         Behavior on opacity { PropertyAnimation { duration: 200 } }
     }
-    
     Image {
         id: bpmUp
         source: "qrc:/gcompris/src/core/resource/bar_up.svg"
@@ -182,7 +179,6 @@ Item {
                 }
             }
         ]
-        
         Behavior on scale { NumberAnimation { duration: 70 } }
         Behavior on opacity { PropertyAnimation { duration: 200 } }
     }

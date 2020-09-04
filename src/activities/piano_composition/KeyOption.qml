@@ -28,11 +28,11 @@ import "../../core"
 
 Item {
     id: clefOption
-    
+
     property alias clefButtonIndex: clefButton.currentIndex
     property bool clefButtonVisible: false
     signal clefAdded
-    
+
     width: optionsRow.iconsWidth * 2
     height: optionsRow.iconsWidth
     visible: clefButtonVisible
@@ -44,7 +44,7 @@ Item {
         anchors.fill: parent
         radius: 10
     }
-    
+
     SwitchableOptions {
         id: clefButton
         nbOptions: 2
@@ -60,7 +60,7 @@ Item {
         anchors.left: parent.left
         anchors.verticalCenter: parent.verticalCenter
     }
-    
+
     BarButton {
         id: addClefButton
         width: clefButton.width
@@ -71,7 +71,7 @@ Item {
         visible: clefButton.visible
         onClicked: {
             background.clefType = !clefButton.currentIndex ? "Treble" : "Bass"
-            emitOptionMessage(!clefButton.currentIndex ? qsTr("Added Treble clef") : qsTr("Added Bass clef"))
+            emitOptionMessage(!clefButton.currentIndex ? qsTr("Treble clef added") : qsTr("Bass clef added"))
             parent.scale = 1
             clefAdded()
         }

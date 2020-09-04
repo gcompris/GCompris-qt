@@ -34,7 +34,7 @@ Grid {
     readonly property var noteLengthName: [[qsTr("Whole note"), "Whole"], [qsTr("Half note"), "Half"], [qsTr("Quarter note"), "Quarter"], [qsTr("Eighth note"), "Eighth"]]
 
     //: Whole rest, Half rest, Quarter rest and Eighth rest are the different length rests (silences) in the musical notation.
-    readonly property var restAddedMessage: [qsTr("Added whole rest"), qsTr("Added half rest"), qsTr("Added quarter rest"), qsTr("Added eighth rest")]
+    readonly property var restAddedMessage: [qsTr("Whole rest added"), qsTr("Half rest added"), qsTr("Quarter rest added"), qsTr("Eighth rest added")]
     readonly property var translatedRestNames: [qsTr("Whole rest"), qsTr("Half rest"), qsTr("Quarter rest"), qsTr("Eighth rest")]
     readonly property var lyricsOrPianoModes: [[qsTr("Piano"), "piano"], [qsTr("Lyrics"), "lyrics"]]
 

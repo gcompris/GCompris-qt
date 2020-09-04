@@ -51,7 +51,7 @@ var instructions = [{
         "text": qsTr("Rests are equivalent to notes during which silence is maintained. Click on the rest symbol to select the rest length and then click on the add button to enter it to the staff.")
     },
     {
-        "text": qsTr("Now you can load music and also save your composed one.")
+        "text": qsTr("Now you can load music and also save your compositions.")
     }
 ]
 
@@ -79,7 +79,7 @@ function saveMelody() {
             "", null, "", null, null);
     } else {
         Core.showMessageDialog(items.background,
-            qsTr("Saved melody to your file (%1)")
+            qsTr("Melody saved to your file (%1)")
             .arg(userFile),
             "", null, "", null, null);
     }
