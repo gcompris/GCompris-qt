@@ -74,7 +74,7 @@ Item {
     function setDefaultValues() {
         // Recreate the binding
         speedSlider.value = Qt.binding(function() {return activityConfiguration.speedSetting;})
-        
+
         var localeUtf8 = dataToSave.locale;
         if(localeUtf8 !== "system") {
             localeUtf8 += ".UTF-8";

@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Horizontal reading practice")
   //: Help title
-  description: qsTr("Read a list of words and work out if a given word is in it.")
+  description: qsTr("Read a list of words and say if a given word is in it.")
 //  intro: "Read a list of words and say if a given word is in it."
   //: Help goal
-  goal: qsTr("Reading training in a limited time")
+  goal: qsTr("Reading training in a limited time.")
   //: Help prerequisite
-  prerequisite: qsTr("Reading")
+  prerequisite: qsTr("Reading".)
   //: Help manual
-  manual: qsTr("A word is shown on the board. A list of words, displayed horizontally, will appear and disappear. Does the given word belong to the list?")
+  manual: qsTr("A word is shown on the board. A list of words, displayed horizontally, will appear and disappear. Did the given word appear in the list?")
   credit: ""
   section: "reading words"
   createdInVersion: 5000
