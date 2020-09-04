@@ -30,7 +30,7 @@ ActivityInfo {
   //: Help goal
   goal: qsTr("Reading training in a limited time.")
   //: Help prerequisite
-  prerequisite: qsTr("Reading".)
+  prerequisite: qsTr("Reading.")
   //: Help manual
   manual: qsTr("A word is shown on the board. A list of words, displayed horizontally, will appear and disappear. Did the given word appear in the list?")
   credit: ""
