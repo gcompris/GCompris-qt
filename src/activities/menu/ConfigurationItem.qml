@@ -50,6 +50,67 @@ Item {
             NumberAnimation { properties: "x,y"; duration: 120 }
         }
 
+        GCComboBox {
+            id: languageBox
+            model: dialogConfig.languages
+            background: dialogActivityConfig
+            onCurrentIndexChanged: voicesRow.localeChanged();
+            label: qsTr("Language selector")
+        }
+
+        Flow {
+            id: voicesRow
+            width: dialogConfig.contentWidth
+            spacing: 5 * ApplicationInfo.ratio
+
+            property bool haveLocalResource: false
+
+            function localeChanged() {
+                var language = dialogConfig.languages[languageBox.currentIndex].text;
+                voicesRow.haveLocalResource = DownloadManager.isDataRegistered(
+                            "voices-" + ApplicationInfo.CompressedAudio + "/" +
+                            ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)
+                            )
+            }
+
+            Connections {
+                target: DownloadManager
+
+                onDownloadFinished: voicesRow.localeChanged()
+            }
+
+            GCText {
+                id: voicesText
+                text: qsTr("Localized voices")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+
+            Image {
+                id: voicesImage
+                sourceSize.height: 30 * ApplicationInfo.ratio
+                source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svg" :
+                "qrc:/gcompris/src/core/resource/cancel.svg"
+            }
+
+            Button {
+                id: voicesButton
+                height: 30 * ApplicationInfo.ratio
+                visible: ApplicationInfo.isDownloadAllowed
+                text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
+                qsTr("Download")
+                style: GCButtonStyle {}
+
+                onClicked: {
+                    if (DownloadManager.downloadResource(
+                            DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale)))
+                    {
+                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                    }
+                }
+            }
+        }
+
         GCDialogCheckBox {
             id: enableAudioVoicesBox
             text: qsTr("Enable audio voices")
@@ -314,67 +375,6 @@ Item {
                 text: qsTr("Default");
                 style: GCButtonStyle {}
                 onClicked: fontLetterSpacingSlider.value = ApplicationSettings.fontLetterSpacingMin
-            }
-        }
-
-        GCComboBox {
-            id: languageBox
-            model: dialogConfig.languages
-            background: dialogActivityConfig
-            onCurrentIndexChanged: voicesRow.localeChanged();
-            label: qsTr("Language selector")
-        }
-
-        Flow {
-            id: voicesRow
-            width: dialogConfig.contentWidth
-            spacing: 5 * ApplicationInfo.ratio
-
-            property bool haveLocalResource: false
-
-            function localeChanged() {
-                var language = dialogConfig.languages[languageBox.currentIndex].text;
-                voicesRow.haveLocalResource = DownloadManager.isDataRegistered(
-                            "voices-" + ApplicationInfo.CompressedAudio + "/" +
-                            ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)
-                            )
-            }
-
-            Connections {
-                target: DownloadManager
-
-                onDownloadFinished: voicesRow.localeChanged()
-            }
-
-            GCText {
-                id: voicesText
-                text: qsTr("Localized voices")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-            }
-
-            Image {
-                id: voicesImage
-                sourceSize.height: 30 * ApplicationInfo.ratio
-                source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svg" :
-                "qrc:/gcompris/src/core/resource/cancel.svg"
-            }
-
-            Button {
-                id: voicesButton
-                height: 30 * ApplicationInfo.ratio
-                visible: ApplicationInfo.isDownloadAllowed
-                text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
-                qsTr("Download")
-                style: GCButtonStyle {}
-
-                onClicked: {
-                    if (DownloadManager.downloadResource(
-                            DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale)))
-                    {
-                        var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
-                    }
-                }
             }
         }
 
