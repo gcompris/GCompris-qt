@@ -88,7 +88,7 @@ ActivityBase {
     }
     function newVoicesDialog() {
         Core.showMessageDialog(activity,
-                qsTr("You selected a new locale. You need to restart GCompris to play in your new locale.<br/>Do you want to download the corresponding sound files now?"),
+                qsTr("You selected a new locale, you need to restart GCompris to use it.<br/>Do you want to download the corresponding sound files now?"),
                 qsTr("Yes"), function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
@@ -375,7 +375,7 @@ ActivityBase {
                     wrapMode: Text.WordWrap
                     font.weight: Font.DemiBold
                     color: 'white'
-                    text: qsTr("Put your favorite activities here by selecting the " +
+                    text: qsTr("Put your favorite activities here by clicking on the " +
                                "sun at the top right of that activity.")
                 }
                 Rectangle {

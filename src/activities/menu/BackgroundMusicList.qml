@@ -133,7 +133,7 @@ Rectangle {
                                                 );
                                             }
                                         }
-                                        
+
                                         selectedIcon.visible = !selectedIcon.visible
                                     }
                                     width: parent.width
