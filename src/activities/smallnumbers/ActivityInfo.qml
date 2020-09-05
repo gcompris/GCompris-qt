@@ -23,7 +23,7 @@ ActivityInfo {
   icon: "smallnumbers/smallnumbers.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   //: Activity title
-  title: qsTr("Numbers With Dice")
+  title: qsTr("Numbers with Dice")
   //: Help title
   description: qsTr("Count the number of dots on the dice before it reaches the ground.")
 //  intro: "Count the number on the dice and type it on your keyboard before it reaches the ground."
