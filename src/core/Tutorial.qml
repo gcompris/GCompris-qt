@@ -86,10 +86,9 @@ Item {
         if(visible) {
             getFocus();
         }
-    }
-
-    onSkipPressed: {
-        restoreFocus();
+        else {
+            restoreFocus();
+        }
     }
 
     function getFocus() {
