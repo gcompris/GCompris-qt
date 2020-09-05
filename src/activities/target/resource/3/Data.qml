@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Practice addition on targets with max value 500.")
+    objective: qsTr("Maximum value: 500.")
     difficulty: 4
     property var colors: [
         "#ff1b00",
