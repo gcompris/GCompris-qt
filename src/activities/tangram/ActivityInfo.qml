@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("The tangram puzzle game")
   //: Help title
-  description: qsTr("The objective is to form a given shape")
+  description: qsTr("The objective is to form a given shape.")
   // intro: "Click on each object to obtain the same figure. You can change their orientation by clicking on the arrows."
   //: Help goal
   goal: qsTr("From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven boards of cunning') is a Chinese puzzle. While the tangram is often said to be ancient, its existence has only been verified as far back as 1800. It consists of 7 pieces, called tans, which fit together to form a square; Using the square side as 1 unit, the 7 pieces contains:
@@ -39,7 +39,7 @@ ActivityInfo {
   //: Help prerequisite
   prerequisite: qsTr("Mouse-manipulation")
   //: Help manual
-  manual: qsTr("Select the tangram to form. Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to show the rotation you want. Check baby tangram activity for an introduction to tangram.")
+  manual: qsTr("Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to rotate selected piece. Check the activity 'Baby Puzzle' for a simpler introduction to tangram.")
   credit: ""
   section: "puzzle"
   createdInVersion: 6000
