@@ -35,7 +35,7 @@ Row {
     property bool complete
     property bool prevComplete
     property bool reparent
-    property var prevText
+    property var prevText: ""
     property string text: endResult.text
     Component {
         id: component1

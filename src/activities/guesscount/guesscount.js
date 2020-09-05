@@ -35,6 +35,8 @@ var dataset = []
 var currentLevel
 var numberOfLevel = Data.levelSchema.length
 var items
+var dataItems
+var levelSchema
 
 function start(items_) {
     items = items_
@@ -49,7 +51,30 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.currentlevel = currentLevel
     items.sublevel = 1
-    items.data = buildDataset(Data.dataset, Data.levelSchema)
+
+    var multipleDataOperators = []
+    var multipleDataItems = []
+    var multipleDataSchema = []
+
+    if(items.levels && items.mode === 'builtin') {
+
+        for(var i = 0; i < items.levels.length; i++) {
+            multipleDataOperators = multipleDataOperators.concat(items.levels[i].defaultOperators)
+            multipleDataSchema = multipleDataSchema.concat(items.levels[i].levelSchema)
+            multipleDataItems = multipleDataItems.concat(items.levels[i].dataItems)
+        }
+
+        defaultOperators = multipleDataOperators
+        numberOfLevel = multipleDataSchema.length
+        dataItems = multipleDataItems
+        levelSchema = multipleDataSchema
+        items.data = buildDataset(dataItems, levelSchema)
+    }
+    else if(items.mode === "admin") {
+        numberOfLevel = Data.levelSchema.length
+        items.data = buildDataset(Data.dataset, Data.levelSchema)
+    }
+
     items.operandRow.repeater.model = items.data[items.sublevel-1][0]
     items.levelchanged = false
     items.solved = false
@@ -153,19 +178,6 @@ function checkAnswer(row) {
     }
 }
 
-function sync(array, level) {
-    items.levelArr = array
-}
-
-function check(operator, array) {
-    for (var i in array) {
-        if(array[i] == operator) {
-            return true
-        }
-    }
-    return false
-}
-
 function configDone(array) {
     for(var i in array) {
         if(array[i].length == 0) {
@@ -188,17 +200,34 @@ function equal(levelOperators, array) {
     return true
 }
 
+function findIndex(data) {
+
+    var index
+    var levelArr = defaultOperators
+
+    for(var i = 0; i < data.length; i++) {
+        for(var j in data[i]) {
+            if(equal(levelArr[currentLevel], data[i][j][0])) {
+                return i
+            }
+        }
+    }
+}
+
 function buildDataset(data, levelSchema) {
+
     var level = []
-    var levelArr = items.mode == 'builtin' ? defaultOperators : items.levelArr
+    var levelArr = (items.mode === 'builtin' && items.levels) ? defaultOperators : items.levelArr
     var noOfOperators = levelArr[currentLevel].length
-    var questions
-    for(var j in data[noOfOperators-1]) {
-        if(equal(levelArr[currentLevel], data[noOfOperators-1][j][0])) {
-            questions = data[noOfOperators-1][j][1]
+    var index = (items.mode === 'builtin' && items.levels) ? findIndex(data) : noOfOperators - 1
+
+    for(var j in data[index]) {
+        if(equal(levelArr[currentLevel], data[index][j][0])) {
+            questions = data[index][j][1]
             break
         }
     }
+
     var questions = Core.shuffle(questions)
 
     for(var m = 0 ; m < levelSchema[currentLevel] ; ++ m) {
@@ -206,3 +235,4 @@ function buildDataset(data, levelSchema) {
     }
     return level
 }
+
