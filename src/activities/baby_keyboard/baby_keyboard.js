@@ -30,8 +30,7 @@ function start(items_) {
 }
 
 function stop() {
-    items.audioVoices.stop();
-    items.audioVoices.clearQueue();
+    stopVoice();
 }
 
 function processKeyPress(text) {
