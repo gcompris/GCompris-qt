@@ -143,9 +143,9 @@ ActivityBase {
             var obj = background.mapFromItem(mouseArea, mouseArea.mouseX, mouseArea.mouseY);
 
             if (status === Activity.STATUS_CORRECT)
-                tooltipRect.text = qsTr("This item is well placed");
+                tooltipRect.text = qsTr("This item is well placed.");
             if (status === Activity.STATUS_MISPLACED)
-                tooltipRect.text = qsTr("This item is misplaced");
+                tooltipRect.text = qsTr("This item is misplaced.");
             tooltipRect.x = obj.x - 5 - tooltipRect.width;
             tooltipRect.y = obj.y - 5 - tooltipRect.height;
             tooltipRect.opacity = 0.9;
