@@ -56,10 +56,6 @@ Item {
      */
     signal introDone
 
-    onIntroDone: {
-        restoreFocus();
-    }
-
     /**
      * Emitted when starting the intro message.
      */
@@ -74,6 +70,9 @@ Item {
     onVisibleChanged: {
         if(visible) {
             getFocus();
+        }
+        else {
+            restoreFocus();
         }
     }
 
