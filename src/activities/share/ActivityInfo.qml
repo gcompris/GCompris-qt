@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Share pieces of candy")
   //: Help title
-  description: qsTr("Try to split the pieces of candy to a given number of children")
+  description: qsTr("Try to split the pieces of candy between a given number of children")
   //intro: "Share the candies equally among the specified number of children and notice that there may be a rest left"
   //: Help goal
-  goal: qsTr("Learn the division of numbers")
+  goal: qsTr("Learn division of numbers.")
   //: Help prerequisite
-  prerequisite: qsTr("Know how to count")
+  prerequisite: qsTr("Know how to count.")
   //: Help manual
-  manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the middle, then drag pieces of candy to each child's rectangle.") + ("<br>") +
+  manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the center, then drag pieces of candy to each child's rectangle.") + ("<br>") +
     qsTr("If there is a rest, it needs to be placed inside the candy jar.")
   credit: ""
   section: "math arithmetic"
