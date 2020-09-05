@@ -30,6 +30,7 @@ Item {
     property int numberOfLevel: 8
     property var adminLevelArr: [["+"],["-"],["/"],["*"],["+","-"],["/","*"],["/","*",'+'],['-',"*","+","/"]]
     width: if(background) background.width
+    height: childrenRect.height * 7
 
     signal refreshAdmin
 
@@ -85,9 +86,9 @@ Item {
             }
         }
         Rectangle {
-            width: parent.width * 2.5
+            width: parent.width * 8.5
             color: "transparent"
-            height:  parent.height/0.5
+            height: adminRectangle.width * 12.5
             anchors {
                 top: labels.bottom
                 topMargin: 5
@@ -97,6 +98,7 @@ Item {
                 visible: modeBox.currentIndex == 0
                 spacing: 5
                 model: activityConfiguration.numberOfLevel
+                interactive: false
                 clip: true
                 delegate: Admin {
                     id: levels
