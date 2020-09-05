@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn to add stars up to 10.")
+    objective: qsTr("Add stars up to 10.")
     difficulty: 2
     data: [
     {

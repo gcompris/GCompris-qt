@@ -21,7 +21,8 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn to add stars up to 10000 with coefficients.")
+    //: Coefficients are the numbers by which the numbers of stars are multiplied to get the total
+    objective: qsTr("Add stars up to 10000 with coefficients.")
     difficulty: 6
     data: [
     {
@@ -32,7 +33,7 @@ Data {
     {
         "maxValue": 10000,
         "minStars" : [2, 2, 0],
-        "maxStars" : [1000, 1000, 0] 
+        "maxStars" : [1000, 1000, 0]
     },
     {
         "maxValue": 10000,

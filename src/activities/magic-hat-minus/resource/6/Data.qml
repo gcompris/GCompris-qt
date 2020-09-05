@@ -21,7 +21,8 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn to calculate remaining stars up to 10000 with coefficients.")
+    //: Coefficients are the numbers by which the numbers of stars are multiplied to get the total
+    objective: qsTr("Calculate remaining stars up to 10000 with coefficients.")
     difficulty: 6
     data: [
     {

@@ -21,18 +21,19 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Learn to add stars up to 100 with coefficients.")
+    //: Coefficients are the numbers by which the numbers of stars are multiplied to get the total
+    objective: qsTr("Add stars up to 100 with coefficients.")
     difficulty: 4
     data: [
     {
         "maxValue": 100,
         "minStars" : [2, 2, 0],
-        "maxStars" : [20, 10, 0] 
+        "maxStars" : [20, 10, 0]
     },
     {
         "maxValue": 100,
         "minStars" : [2, 2, 2],
-        "maxStars" : [20, 20, 10] 
+        "maxStars" : [20, 20, 10]
     },
     {
         "maxValue": 100,
