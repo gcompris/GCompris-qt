@@ -168,14 +168,14 @@ ActivityBase {
 
             readonly property var learningModeInstructions: [
                 commonInstruction,
-                qsTr("Click on the Sun or any planet to reveal questions. Each question will have 4 options, out of which one is correct."),
-                qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter, or hint which indicates the correct answer.")
+                qsTr("Click on the Sun or any planet to reveal questions. Each question has 4 options, out of which one is correct."),
+                qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter. If the hint button is visible, you can clik on it to get a hint to find the answer.")
             ]
 
             readonly property var assessmentModeInstructions: [
                 commonInstruction,
                 qsTr("There are 20 questions initially with 4 options each. The progress bar at the bottom right of the screen shows your percentage score."),
-                qsTr("If your answer is correct, your score will increase.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>Maximum 25 questions will be asked after which no more question will be added."),
+                qsTr("If your answer is correct, your score increases.<br>If your answer is wrong, your score decreases and one more question will be asked in the end along with the incorrectly answered question.<br>A maximum of 25 questions will be asked after which no more question will be added."),
                 qsTr("You should score above 90% to pass the assessment and become a Solar System expert!")
             ]
 
@@ -372,7 +372,7 @@ ActivityBase {
                 activity.forceActiveFocus()
             }
 
-            button0Text: qsTr("View solar system")
+            button0Text: qsTr("View the solar system")
 
             onButton0Hit: solarSystemImageHint.visible = true
         }

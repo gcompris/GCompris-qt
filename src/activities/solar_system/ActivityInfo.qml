@@ -36,12 +36,11 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("Click on a planet or on the Sun, and answer the corresponding questions. Each question contains 4 options. One of those is 100% correct. Try to answer the questions until you get 100% in the closeness meter.") + ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Arrows: navigate") + ("<br>") +
-          qsTr("-Space or Enter: select") + ("<br>") +
-          qsTr("-Escape: return to previous screen") + ("<br>") +
-          qsTr("-Tab: view the hint (only when the hint icon is visible)")
-
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: select") + ("</li><li>") +
+          qsTr("Escape: return to previous screen") + ("</li><li>") +
+          qsTr("Tab: view the hint (only when the hint icon is visible)") + ("</li></ul>")
   credit: ""
   section: "sciences experiment"
   createdInVersion: 9500

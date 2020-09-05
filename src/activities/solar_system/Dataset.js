@@ -89,7 +89,7 @@ function get() {
                             "hintProvided": true
                         },
                         { 	// sub-level 5
-                            "question": qsTr("How many days make a year on Mercury?"),
+                            "question": qsTr("How long is a year on Mercury?"),
                             "options": [qsTr("365 days"), qsTr("433 days"), qsTr("88 days"), qsTr("107 days")],
                             "closeness": [20.5, 1, 100, 94.5],
                             "hintProvided": true
@@ -191,7 +191,7 @@ function get() {
                             "hintProvided": false
                         },
                         { 	// sub-level 6
-                            "question": qsTr("Maximum temperature on Earth is:"),
+                            "question": qsTr("The maximum temperature on Earth is:"),
                             "options": [qsTr("100 °C"), qsTr("58 °C"), qsTr("30 °C"), qsTr("45 °C")],
                             "closeness": [1, 100, 33, 69.3],
                             "hintProvided": true
