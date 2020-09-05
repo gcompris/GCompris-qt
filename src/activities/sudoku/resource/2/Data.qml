@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Play with medium size grids using symbols.")
+    objective: qsTr("Medium grids using symbols.")
     difficulty: 4
 
     property var symbols: [

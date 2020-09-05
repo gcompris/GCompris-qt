@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Play with larger grids using numbers.")
+    objective: qsTr("Large grids using numbers.")
     difficulty: 6
 
     property var symbols: [
