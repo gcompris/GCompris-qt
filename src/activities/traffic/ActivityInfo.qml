@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("A sliding-block puzzle game")
   //: Help title
-  description: qsTr("Remove the red car from the parking lot through the gate on the right")
+  description: qsTr("Remove the red car from the parking lot through the gate on the right.")
 //  intro: "Slide the cars to make a space so that the red car can go out of the box."
   //: Help goal
   goal: ""
