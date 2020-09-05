@@ -62,14 +62,14 @@ ActivityBase {
             id: items
             property var dataset: {
                 "none": "",
-                "start": qsTr("Sun is the main component of water cycle. Click on the sun to start the water cycle."),
+                "start": qsTr("The sun is the main component of the water cycle. Click on the sun to start the water cycle."),
                 "sun": qsTr("As the sun rises, the water of the sea starts heating and evaporates."),
-                "cloud": qsTr(" Water vapor condenses to form cloud and when clouds become heavy, it rains. Click on the cloud."),
-                "rain": qsTr("Rain causes rivers to swell up and this water is transported to us via motor pumps through water-tower." +
+                "cloud": qsTr("Water vapor condenses to form cloud and when clouds become heavy, it rains. Click on the cloud."),
+                "rain": qsTr("The rain causes rivers to swell up and this water is transported to us via motor pumps through water-towers." +
                              " Click on the motor pump to supply water to residents."),
                 "tower": qsTr("See the tower filled with water. Activate the sewage treatment station by clicking on it."),
                 "shower": qsTr("Great, click on the shower, as Tux arrives home."),
-                "done":  qsTr("Fantastic, you have completed water cycle. You can continue playing.")
+                "done":  qsTr("Fantastic, you have completed the water cycle. You can continue playing.")
             }
 
             property bool cycleDone: false
@@ -96,15 +96,15 @@ ActivityBase {
                 qsTr("The water cycle (also known as the hydrologic cycle) is the journey water takes"
                      +" as it circulates from the land to the sky and back again."
                      +" The sun's heat provides energy to evaporate water from water bodies like oceans."),
-                qsTr("Plants also lose water to the air through transpiration. The water vapor eventually, "
-                     +"cools forming tiny droplets in clouds. When the clouds meet cool air over land, "
+                qsTr("Plants also lose water to the air through transpiration. The water vapor "
+                     +"cools down forming tiny droplets in clouds. When the clouds meet cool air over the land, "
                      +"precipitation is triggered and fall down as rain.") ,
                 qsTr("Some of the water is trapped between rock or clay layers, called groundwater. "
                      +"But most of the water flows as runoff, eventually returning to the seas via rivers."),
-                qsTr("Your goal is to complete water cycle before Tux reaches home. "
+                qsTr("Your goal is to complete the water cycle before Tux reaches home. "
                      +"Click on the different components which make up the water cycle. "
-                     +"First click on sun, then cloud, water pumping station near the river, "
-                     +"sewage treatment, and at last regulate the switch to provide water to Tux's shower.")
+                     +"First click on the sun, then on the cloud, the water pumping station near the river, "
+                     +"the sewage treatment, and at last regulate the switch to provide water to Tux's shower.")
             ]
         }
 
