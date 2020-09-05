@@ -85,7 +85,7 @@ function initLevel() {
             currentDataSet = dataset[3].slice()
             break
         case 7:
-            items.instructions = qsTr("Now it's a little bit harder without the reference")
+            items.instructions = qsTr("Now it's a little bit harder without the reference.")
             items.brailleCodeSeen = false
             currentDataSet = dataset[3].slice()
             break
