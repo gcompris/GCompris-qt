@@ -21,11 +21,11 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Select a number on dominoes from 0 to 9.")
+    objective: qsTr("Numbers from 0 to 9.")
     difficulty: 3
     data: [
       {
-         "objective" : qsTr("Select the number on dominoes from 0 to 9."),
+         "objective" : qsTr("Type the number on the domino, from 0 to 9."),
          "sublevels" : "24",
          "words" : [
             "0",
