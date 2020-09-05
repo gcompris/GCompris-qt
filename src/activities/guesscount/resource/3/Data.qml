@@ -22,7 +22,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr(" Practice algebraic calculations with three operators.")
+    objective: qsTr("Practice algebraic calculations with three operators.")
     difficulty: 5
 
     data: [

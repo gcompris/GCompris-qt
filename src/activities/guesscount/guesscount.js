@@ -75,7 +75,7 @@ function initLevel() {
         items.data = buildDataset(Data.dataset, Data.levelSchema)
     }
 
-    items.operandRow.repeater.model = items.data[items.sublevel-1][0]
+    items.operandRow.repeater.model = Core.shuffle(items.data[items.sublevel-1][0])
     items.levelchanged = false
     items.solved = false
     if(items.warningDialog.visible)
