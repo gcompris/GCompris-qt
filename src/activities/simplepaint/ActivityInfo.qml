@@ -25,7 +25,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("A simple drawing activity")
   //: Help title
-  description: qsTr("Create your own drawing")
+  description: qsTr("Create your own drawing.")
   // intro: "Select a color and paint the rectangles as you like to create a drawing."
   //: Help goal
   goal: qsTr("Enhance creative skills")
@@ -33,10 +33,10 @@ ActivityInfo {
   prerequisite: ""
   //: Help manual
   manual: qsTr("Select a color and paint the rectangles as you like to create a drawing.") + ("<br><br>") +
-          qsTr("<b>Keyboard controls:</b>") + ("<br>") +
-          qsTr("-Arrows: navigate") + ("<br>") +
-          qsTr("-Space or Enter: paint") + ("<br>") +
-          qsTr("-Tab: switch between the color selector and the painting area")
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Arrows: navigate") + ("</li><li>") +
+          qsTr("Space or Enter: paint") + ("</li><li>") +
+          qsTr("Tab: switch between the color selector and the painting area") + ("</li></ul>")
   credit: ""
   section: "fun"
   createdInVersion: 4000
