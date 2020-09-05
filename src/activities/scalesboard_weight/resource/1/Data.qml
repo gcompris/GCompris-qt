@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Balance the scales until 5 grams.")
+    objective: qsTr("Balance up to 5 grams.")
     difficulty: 2
 
     function g(value) {

@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Balance the scales until 50.")
+    objective: qsTr("Balance up to 50.")
     difficulty: 3
     data: [
         {

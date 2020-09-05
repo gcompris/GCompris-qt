@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Balance the scales until 20 ounces.")
+    objective: qsTr("Balance up to 20 ounces.")
     difficulty: 3
 
     function oz(value) {

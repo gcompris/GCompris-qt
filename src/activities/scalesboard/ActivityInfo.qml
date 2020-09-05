@@ -25,14 +25,14 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Balance the scales properly")
   //: Help title
-  description: qsTr("Drag and Drop weights to balance the scales")
+  description: qsTr("Drag and Drop some weights to balance the scales.")
 //  intro: "Drag the weights up to balance the scales."
   //: Help goal
-  goal: qsTr("Mental calculation, arithmetic equality")
+  goal: qsTr("Mental calculation, arithmetic equality.")
   //: Help prerequisite
   prerequisite: ""
   //: Help manual
-  manual: qsTr("To balance the scales, move the weights to the left or the right side (on higher levels). The weights can be arranged in any order.")
+  manual: qsTr("To balance the scales, move some weights to the left or the right side (on higher levels). The weights can be arranged in any order.")
   credit:""
   section: "math measures"
   createdInVersion: 0
