@@ -49,6 +49,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.initialize()
             activity.start.connect(start)
         }
         onStart: {
@@ -56,11 +57,20 @@ ActivityBase {
             Activity.start(items);
         }
 
+        onStop: {
+            Activity.stop();
+        }
+
         property bool horizontalMode: height <= width
 
         QtObject {
             id: items
             property alias edit: edit
+            property GCAudio audioVoices: activity.audioVoices
+            property GCSfx audioEffects: activity.audioEffects
+            property alias fileId: fileId
+            property bool audioMode: false
+            property string locale: ApplicationSettings.locale
         }
 
         GCCreationHandler {
@@ -206,6 +216,10 @@ ActivityBase {
                         }
                     }
                 }
+
+                Keys.onPressed: {
+                    Activity.playLetter(event.text)
+                }
                 function insertText(text) {
                     edit.insert(cursorPosition, text)
                 }
@@ -239,20 +253,43 @@ ActivityBase {
                 }
             }
         }
+
+        File {
+            id: fileId
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
 
+        DialogChooseLevel {
+            id: dialogActivityConfig
+            currentActivity: activity.activityInfo
+
+            onClose: {
+                home()
+            }
+            onLoadData: {
+                if(activityData && activityData["audioMode"]) {
+                   items.audioMode = activityData["audioMode"] === "true" ? true : false;
+                }
+            }
+        }
+
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | reload }
+            content: BarEnumContent { value: help | home | reload | activityConfig }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: activity.home()
             onReloadClicked: edit.text = ''
+            onActivityConfigClicked: {
+                displayDialog(dialogActivityConfig);
+            }
+
         }
 
         VirtualKeyboard {
@@ -262,12 +299,16 @@ ActivityBase {
             width: parent.width
             visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
             onKeypress: {
-                if(text == backspace)
-                    edit.backspace()
-                else if(text == newline)
-                    edit.newline()
-                else
-                    edit.insertText(text)
+                if(text == backspace) {
+                    edit.backspace();
+                }
+                else if(text == newline) {
+                    edit.newline();
+                }
+                else {
+                    edit.insertText(text);
+                    Activity.playLetter(text);
+                }
             }
             shiftKey: true
             onError: console.log("VirtualKeyboard error: " + msg);
