@@ -25,14 +25,16 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Numbers With Dice")
   //: Help title
-  description: qsTr("Count the number of dots on dice before they reach the ground")
-//  intro: "Count the number on your dice and type it on your keyboard before it reaches the ground."
+  description: qsTr("Count the number of dots on the dice before it reaches the ground.")
+//  intro: "Count the number on the dice and type it on your keyboard before it reaches the ground."
   //: Help goal
-  goal: qsTr("In a limited time, count the number of dots")
+  goal: qsTr("In a limited time, count the number of dots.")
   //: Help prerequisite
-  prerequisite: qsTr("Counting skills")
+  prerequisite: qsTr("Counting skills.")
   //: Help manual
-  manual: qsTr("With the keyboard, type the number of dots you see on the falling dice.")
+  manual: qsTr("Type the number of dots you see on each falling dice.") + ("<br><br>") +
+          qsTr("<b>Keyboard controls:</b>") + ("<ul><li>") +
+          qsTr("Digits: type your answer") + ("</li></ul>")
   credit: ""
   section: "computer keyboard math numeration"
   createdInVersion: 0
