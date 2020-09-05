@@ -53,17 +53,17 @@ Item {
     property alias rightBallastTankHeight : rightBallastTankDisplay.height
     property alias rotateRightFill: rotateRightFill
     property alias rotateRightFlush: rotateRightFlush
-    
+
     /* Diving Plane Controller properties */
     property bool divingPlaneVisible
     property point divingPlanePosition
     property int divingPlaneWidth
     property int divingPlaneHeight
-    
+
     property int buttonSize
     property int buttonPlusY
     property int buttonMinusY
-    
+
     property string fillColor : "#0DA5CB"
 
     Image {
@@ -123,13 +123,13 @@ Item {
             height: buttonSize
             sourceSize.width: downSpeed.width
             sourceSize.height: downSpeed.height
-            
+
             anchors {
                 right: engine.left
                 leftMargin: downSpeed.width / 2
             }
             y: buttonMinusY
-            
+
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -204,7 +204,7 @@ Item {
                 origin.y: leftBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -234,7 +234,7 @@ Item {
                 origin.y: leftBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -305,14 +305,14 @@ Item {
             sourceSize.width: buttonSize
             sourceSize.height: buttonSize
             rotation: 0
-            
+
             transform: Rotation {
                 id: rotateCentralFill;
                 origin.x: centralBallastFill.width / 2;
                 origin.y: centralBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -342,7 +342,7 @@ Item {
                 origin.y: centralBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -419,7 +419,7 @@ Item {
                 origin.y: rightBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -449,7 +449,7 @@ Item {
                 origin.y: rightBallastFill.height / 2
                 axis { x: 0; y: 0; z: 1 } angle: 0
             }
-            
+
             MouseArea {
                 anchors.fill: parent
                 enabled: !tutorial.visible
@@ -516,7 +516,6 @@ Item {
             height: divingPlaneHeight
             sourceSize.width: divingPlaneWidth
             sourceSize.height: divingPlaneHeight
-            
             x: divingPlanePosition.x
             y: divingPlanePosition.y
 
@@ -538,7 +537,6 @@ Item {
 
             anchors {
                 left: divingPlanesImage.right
-//                 bottom: divingPlanesImage.top
             }
             y: buttonPlusY
 
@@ -560,7 +558,6 @@ Item {
 
             anchors {
                 left: divingPlanesImage.right
-//                 top: divingPlanesImage.bottom
             }
             y: buttonMinusY
 
