@@ -254,7 +254,7 @@ Item {
         {
             'bid': activityConfigImage,
             'contentId': content.activityConfig,
-            'allowed': true
+            'allowed': !ApplicationSettings.isKioskMode
         },
         {
             'bid': downloadImage,
