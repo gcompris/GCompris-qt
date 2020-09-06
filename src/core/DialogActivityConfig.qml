@@ -148,6 +148,13 @@ Rectangle {
         dialogActivityContent.close();
     }
 
+    Keys.onReleased: {
+        if(event.key === Qt.Key_Back) {
+            dialogActivityContent.close();
+            event.accepted = true;
+        }
+    }
+
     onClose: activity.forceActiveFocus();
 
     function getInitialConfiguration() {
