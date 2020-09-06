@@ -169,7 +169,7 @@ ActivityBase {
             readonly property var learningModeInstructions: [
                 commonInstruction,
                 qsTr("Click on the Sun or any planet to reveal questions. Each question has 4 options, out of which one is correct."),
-                qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter. If the hint button is visible, you can clik on it to get a hint to find the answer.")
+                qsTr("After a planet is clicked, the Closeness meter at the bottom-right corner of the screen represents the degree of correctness of your selected answer. The least correct answer is represented by 1%. Try again until you reach a 100% closeness by following the closeness meter. If the hint button is visible, you can click on it to get a hint to find the answer.")
             ]
 
             readonly property var assessmentModeInstructions: [

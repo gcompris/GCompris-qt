@@ -26,8 +26,7 @@ ActivityInfo {
   //: Activity title
   title: qsTr("Programming Maze")
   //: Help title
-  description: qsTr("This activity teaches to program Tux to reach its goal using
-                    simple instructions like move forward, turn left and right.")
+  description: qsTr("This activity teaches to program Tux to reach its goal using simple instructions like move forward, turn left and right.")
   // intro: "Arrange the instructions and traverse the correct path to reach the fish."
   //: Help goal
   goal: qsTr("Tux is hungry. Help him find fish by programming him to the correct ice spot.")

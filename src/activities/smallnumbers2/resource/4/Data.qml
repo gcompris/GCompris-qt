@@ -22,7 +22,7 @@
 import GCompris 1.0
 
 Data {
-    objective: qsTr("Nubmers up to 6.")
+    objective: qsTr("Numbers up to 6.")
     difficulty: 3
     data: [
       {
